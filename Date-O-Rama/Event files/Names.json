@@ -433,6 +433,6 @@
         {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-judith-day/"}, titles: {"en": "National Judith Day"}},
         {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-rina-day/"}, titles: {"en": "National Rina Day"}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-simon-day/"}, titles: {"en": "National Simon Day"}},
-        
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-blake-day/"}, titles: {"en": "National Blake Day"}},
     ]
 }

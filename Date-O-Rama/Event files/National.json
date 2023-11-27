@@ -2134,6 +2134,8 @@
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-blue-collar-day/"}, titles: {"en": "National Blue Collar Day"}, emoji: "👷‍♂️👷‍♀️", first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-health-savings-account-day/"}, titles: {"en": "National Health Savings Account Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-salesperson-day/"}, titles: {"en": "National Salesperson Day"}, emoji: "👨‍💼👩‍💼", first: {era: 1, y: 2000}},
-
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-llama-day/"}, titles: {"en": "National Llama Day"}, emoji: "🦙"},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-opal-apples-day/"}, titles: {"en": "National Opal Apples Day"}, emoji: "🍏"},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-pastry-day/"}, titles: {"en": "National Pastry Day"}, emoji: "🥐"},
     ]
 }

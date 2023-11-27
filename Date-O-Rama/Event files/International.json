@@ -1977,5 +1977,9 @@
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/lard-day/"}, titles: {"en": "Lard Day"}},
         {type: "1D", start: {mon: 12, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/lost-found-day/"}, titles: {"en": "Lost and Found Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/take-it-in-the-ear-day/"}, titles: {"en": "Take it in the Ear Day"}, emoji: "👂"},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/international-day-of-veterinary-medicine/"}, titles: {"en": "International Day of Veterinary Medicine"}, emoji: "🐶"},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/techno-day/"}, titles: {"en": "Techno Day"}},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/weary-willie-day/"}, titles: {"en": "Weary Willie Day"}, emoji: "🤡"},
+
     ]
 }
