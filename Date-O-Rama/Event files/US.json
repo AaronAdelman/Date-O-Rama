@@ -499,6 +499,7 @@
         {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-recycling-day/"}, titles: {"en": "National Recycling Day"}, emoji: "♻️", first: {era: 1, y: 1997}, notes: {"en": "America Recycles Day"}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, titles: {"en": "National Child’s Day", "he": "יום הילד הלאומי"}, first: {era: 1, y: 2009}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-childs-day"}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.daysoftheyear.com/days/pear-month/"}, titles: {"en": "National Pear Month"}, first: {era: 1, y: 2004}, emoji: "🍐"},
+        {type: "1D", start: {mon: 12, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-re-gifting-day/"}, titles: {"en": "National Re-Gifting Day"}, first: {era: 1, y: 2008}, emoji: "🎁"},
 
 
 

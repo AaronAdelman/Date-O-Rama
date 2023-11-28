@@ -2146,5 +2146,6 @@
         {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/ice-cream-day/"}, inherits: "National Ice Cream Day"},
         {type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://nationaltoday.com/national-free-shipping-day/"}, titles: {"en": "National Free Shipping Day"}, notes: {"en": "Free Shipping Day"}, first: {era: 1, y: 2008}, emoji: "📦"},
         {type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://nationaltoday.com/national-bouillabaisse-day/"}, titles: {"en": "National Bouillabaisse Day"}, emoji: "🥣"},
+        {type: "1D", start: {mon: 12, d: 15}, urls: {"en": "https://nationaltoday.com/lemon-cupcake-day/"}, titles: {"en": "National Lemon Cupcake Day"}, notes: {"en": "Lemon Cupcake Day"}, emoji: "🧁"},
     ]
 }
