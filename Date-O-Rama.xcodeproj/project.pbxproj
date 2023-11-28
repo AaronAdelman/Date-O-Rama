@@ -416,6 +416,8 @@
 		A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
 		A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */; };
+		A5B6760C2B167B350075408E /* Roman Religion.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B6760B2B167B350075408E /* Roman Religion.json */; };
+		A5B6760D2B167B350075408E /* Roman Religion.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B6760B2B167B350075408E /* Roman Religion.json */; };
 		A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
 		A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
 		A5B6D01C25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */; };
@@ -1346,6 +1348,7 @@
 		A5B0084626CD3A0B00B63B3F /* Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
+		A5B6760B2B167B350075408E /* Roman Religion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Roman Religion.json"; sourceTree = "<group>"; };
 		A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeZones.txt; sourceTree = "<group>"; };
 		A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACapsuleBorder.swift; sourceTree = "<group>"; };
 		A5B6D03725AF294D005ECE8D /* ASAScalable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAScalable.swift; sourceTree = "<group>"; };
@@ -2047,6 +2050,7 @@
 				A502D3E128637E2800A625A9 /* RE.json */,
 				A53D608B288844020094B3F7 /* RO (Julian).json */,
 				A5EB4F942850EFC700A32FB1 /* RO.json */,
+				A5B6760B2B167B350075408E /* Roman Religion.json */,
 				A5EB4F912850EF0B00A32FB1 /* RS.json */,
 				A5C72A0D2967681700B8442A /* RU (Julian).json */,
 				A5F3B0172855FEC700865CEB /* RU.json */,
@@ -2815,6 +2819,7 @@
 				A5E49654286254AC001BF40C /* NF.json in Resources */,
 				A5E496112862505C001BF40C /* IO.json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
+				A5B6760D2B167B350075408E /* Roman Religion.json in Resources */,
 				A5E9AB642A1B4C8900433D7A /* Names.json in Resources */,
 				A5D3D7E527FA20CC0099718A /* AU.json in Resources */,
 				A5E4960928624F9A001BF40C /* GW.json in Resources */,
@@ -3363,6 +3368,7 @@
 				A5EFFF64285B61E500F2205F /* IM.json in Resources */,
 				A502D3DE28637DA900A625A9 /* PY.json in Resources */,
 				A5987C4F2A083337008A9E90 /* Theosophy.json in Resources */,
+				A5B6760C2B167B350075408E /* Roman Religion.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5171A5F2899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5759144282BE30700675058 /* DK.json in Resources */,
