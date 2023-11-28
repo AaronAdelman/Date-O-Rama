@@ -2150,7 +2150,9 @@
         {type: "1D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-device-appreciation-day/"}, titles: {"en": "National Device Appreciation Day"}, emoji: "💻⌚️📱"},
         {type: "1D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-maple-syrup-day/"}, inherits: "National Maple Syrup Day"},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-crime-junkie-day/"}, titles: {"en": "National Crime Junkie Day"}, first: {era: 1, y: 2017}},
-        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-roast-suckling-pig-day/"}, titles: {"en": "National Roast Suckling Pig Day"}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-twin-day/"}, titles: {"en": "National Twin Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-emo-day/"}, titles: {"en": "National Emo Day"}},
+        {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-oatmeal-muffin-day/"}, titles: {"en": "National Oatmeal Muffin Day"}},
+
     ]
 }

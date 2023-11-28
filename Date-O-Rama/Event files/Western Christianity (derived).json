@@ -120,6 +120,6 @@
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}, titles: {"en": "Candle Day"}, emoji: "🕯️", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/bake-cookies-day/"}, titles: {"en": "Bake Cookies Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/flake-appreciation-day/"}, titles: {"en": "Flake Appreciation Day"}, emoji: "❄️"},
-
+        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-roast-suckling-pig-day/"}, titles: {"en": "National Roast Suckling Pig Day"}},
     ]
 }

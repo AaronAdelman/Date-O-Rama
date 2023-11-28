@@ -441,5 +441,6 @@
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/national-clayton-day/"}, titles: {"en": "National Clayton Day"}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-deborah-day/"}, titles: {"en": "National Deborah Day"}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-jeremy-day/"}, titles: {"en": "National Jeremy Day"}},
+        {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-harry-day/"}, titles: {"en": "National Harry Day"}},
     ]
 }
