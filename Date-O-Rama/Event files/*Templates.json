@@ -618,6 +618,6 @@
         {template: "יום־שנה של רבי דובער שניאורי", titles: {"he": "יום־שנה של רבי דובער שניאורי (האדמו״ר האמצעי)", "en": "Tes Kislev"}, type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/9"}, inherits: "*DeathAnniv*"},
         {template: "GivingTuesday", type: "1D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, titles: {"en": "GivingTuesday"}, urls: {"en": "https://www.givingtuesday.org/"}, notes: {"en": "Giving Tuesday\nNational Day of Giving\nGlobal Day of Giving"}, emoji: "❤️"},
         {template: "National Pie Day", type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/pie-day/", "he": "https://www.daysoftheyear.co.il/2020/01/pie-day.html"}, titles: {"en": "National Pie Day", "he": "יום מאפה הפאי הלאומי"}, emoji: "🥧"},
-        {template: "National Ice Cream Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}, titles: {"en": "National Ice Cream Day", "he": "יום הגלידה הלאומי"}, emoji: "🍨"},
+        {template: "National Ice Cream Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}, titles: {"en": "National Ice Cream Day", "he": "יום הגלידה הלאומי"}, emoji: "🍨🍦"},
     ]
 }

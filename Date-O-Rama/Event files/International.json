@@ -1984,6 +1984,7 @@
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/festival-for-the-souls-of-dead-whales/"}, titles: {"en": "Festival for the Souls of Dead Whales"}, emoji: "🐳"},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/nobel-prize-day/"}, titles: {"en": "Nobel Prize Day"}, first: {era: 1, y: 1901}, emoji: "🏅"},
         {type: "1D", start: {mon: 12, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.compassionatefriends.org/"}, titles: {"en": "Worldwide Candle Lighting Day"}, emoji: "🕯️", first: {era: 1, y: 1997}},
-        {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/festival-of-unmentionable-thoughts/"}, titles: {"en": "Festival of Unmentionable Thoughts"}},
+        {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/festival-of-unmentionable-thoughts/"}, titles: {"en": "Festival of Unmentionable Thoughts"}, emoji: "🗯️"},
+        {type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://nationaltoday.com/more-good-today-day/"}, titles: {"en": "More Good Today Day"}, emoji: "🍕☕️"},
     ]
 }

@@ -2142,8 +2142,9 @@
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-lager-day/"}, titles: {"en": "National Lager Day"}, emoji: "🍻"},
         {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/national-app-day/"}, titles: {"en": "National App Day"}, emoji: "📱"},
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-ding-a-ling-day/"}, titles: {"en": "​National Ding-a-Ling Day"}, emoji: "☎️", first: {era: 1, y: 1972}},
-        {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-cream-cheese-frosting-day/"}, titles: {"en": "National Cream Cheese Frosting Day"}},
+        {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-cream-cheese-frosting-day/"}, titles: {"en": "National Cream Cheese Frosting Day"}, emoji: "🍰🧁🎂"},
         {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/ice-cream-day/"}, inherits: "National Ice Cream Day"},
-
+        {type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://nationaltoday.com/national-free-shipping-day/"}, titles: {"en": "National Free Shipping Day"}, notes: {"en": "Free Shipping Day"}, first: {era: 1, y: 2008}, emoji: "📦"},
+        {type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://nationaltoday.com/national-bouillabaisse-day/"}, titles: {"en": "National Bouillabaisse Day"}, emoji: "🥣"},
     ]
 }
