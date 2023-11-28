@@ -2139,5 +2139,6 @@
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-pastry-day/"}, titles: {"en": "National Pastry Day"}, emoji: "🥐"},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-lager-day/"}, titles: {"en": "National Lager Day"}, emoji: "🍻"},
         {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/national-app-day/"}, titles: {"en": "National App Day"}, emoji: "📱"},
+        {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-ding-a-ling-day/"}, titles: {"en": "​National Ding-a-Ling Day"}, emoji: "☎️", first: {era: 1, y: 1972}},
     ]
 }
