@@ -26,7 +26,6 @@
         {titles: {"en": "National Ambrosia Day"}, type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaldaycalendar.com/national-ambrosia-day-december-12/"}},
         {titles: {"en": "Ugly Christmas Sweater Day"}, type: "1D", start: {mon: 12, wkd: [6], wkdRecurrence: 3}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, emoji: "🦺"},
         {titles: {"en": "Roast Chestnuts Day", "he": "יום הערמונים הקלויים"}, type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/roast-chestnuts-day/", "he": "https://www.daysoftheyear.co.il/2017/12/roast-chestnuts-day.html"}, emoji: "🌰"},
-        {titles: {"en": "National Re-Gifting Day"}, type: "1D", start: {mon: 12, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/re-gifting-day/"}, emoji: "🎁"},
         {titles: {"en": "Ribbon Candy Day"}, type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/ribbon-candy-day/"}},
         {titles: {"en": "Go Caroling Day"}, type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/go-caroling-day/"}, emoji: "🎄"},
         {titles: {"en": "Gingerbread Decorating Day"}, type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 2}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/gingerbread-decorating-day/"}},
@@ -56,7 +55,6 @@
         {titles: {"en": "Distaff Day/Roc Day/Rock Day/Saint Distaff’s Day"}, type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://en.wikipedia.org/wiki/Distaff_Day"}, emoji: "🪨"},
         {titles: {"en": "Ditch New Year’s Resolutions Day"}, type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {titles: {"en": "New Year’s Resolution Recommitment Day"}, type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/new-years-resolution-recommitment-day/"}},
-        {titles: {"en": "National Re-gifting Day"}, type: "1D", start: {mon: 12, d: 18, thruD: 24, wkd: [5]}, urls: {"en": "https://nationaldaycalendar.com/national-re-gifting-day-thursday-before-christmas/"}, emoji: "🎁"},
         {titles: {"en": "National Green Juice Day"}, type: "1D", start: {mon: 1, d: 26}, first: {era: 1, y: 2016}, urls: {"en": "https://nationaldaycalendar.com/national-green-juice-day-january-26/"}, emoji: "🧃"},
         {titles: {"en": "New Year’s Resolutions Week"}, type: "nD", start: {mon: 1, d: 1}, first: {era: 1, y: 2005}, "end": {mon: 1, d: 7}, urls: {"en": "https://nationaldaycalendar.com/new-years-resolutions-week-first-week-in-january/"}},
         {titles: {"en": "National Crepe Day"}, type: "1D", start: {mon: 2, d: 2}, first: {era: 1, y: 472}, urls: {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, emoji: "🥞"},
@@ -120,6 +118,7 @@
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}, titles: {"en": "Candle Day"}, emoji: "🕯️", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/bake-cookies-day/"}, titles: {"en": "Bake Cookies Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/flake-appreciation-day/"}, titles: {"en": "Flake Appreciation Day"}, emoji: "❄️"},
+        {type: "1D", start: {mon: 12, wkd: [5], wkdRecurrence: 3}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-roast-suckling-pig-day/"}, titles: {"en": "National Roast Suckling Pig Day"}},
     ]
 }
