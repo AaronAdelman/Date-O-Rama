@@ -436,5 +436,7 @@
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/national-blake-day/"}, titles: {"en": "National Blake Day"}},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-corey-day/"}, titles: {"en": "National Corey Day"}},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-derek-day/"}, titles: {"en": "National Derek Day"}},
+        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/national-cesar-day/"}, titles: {"en": "National Caesar Day"}},
+        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/national-jon-day/"}, titles: {"en": "National Jon Day"}},
     ]
 }
