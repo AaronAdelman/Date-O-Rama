@@ -442,5 +442,8 @@
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-deborah-day/"}, titles: {"en": "National Deborah Day"}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/national-jeremy-day/"}, titles: {"en": "National Jeremy Day"}},
         {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-harry-day/"}, titles: {"en": "National Harry Day"}},
+        {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/national-gregory-day/"}, titles: {"en": "National Gregory Day"}},
+        {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/national-steven-day/"}, titles: {"en": "National Steven Day"}},
+
     ]
 }
