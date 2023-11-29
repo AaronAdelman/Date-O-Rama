@@ -2156,6 +2156,11 @@
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/mudd-day/"}, titles: {"en": "Mudd Day"}, inherits: "*BDay*", first: {era: 1, y: 1833}},
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/national-sangria-day/"}, titles: {"en": "National Sangria Day"}},
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/sacagawea-day/"}, titles: {"en": "Sacagawea Day"}},
+        {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-armagnac-day/"}, titles: {"en": "National Armagnac Day"}, emoji: "🍷"},
+        {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-flashlight-day/"}, titles: {"en": "National Flashlight Day"}, emoji: "🔦"},
+        {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-french-fried-shrimp-day/"}, titles: {"en": "National French Fried Shrimp Day"}, emoji: "🍤"},
+        {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-homeless-persons-remembrance-day/"}, titles: {"en": "National Homeless Persons’ Remembrance Day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-short-girl-appreciation-day/"}, titles: {"en": "National Short Girl Appreciation Day"}, notes: {"en": "Short Girl Appreciation Day"}},
 
     ]
 }
