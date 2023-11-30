@@ -453,5 +453,9 @@
         {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-colby-day/"}, titles: {"en": "National Colby Day"}},
         {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-eva-day/"}, titles: {"en": "National Eva Day"}},
         {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-joshua-day/"}, titles: {"en": "National Joshua Day"}},
+        {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-abigail-day/"}, titles: {"en": "National Abigail Day"}},
+        {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-case-day/"}, titles: {"en": "National Case Day"}},
+        {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-martha-day/"}, titles: {"en": "National Martha Day"}},
+        {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-samuel-day/"}, titles: {"en": "National Samuel Day"}},
     ]
 }
