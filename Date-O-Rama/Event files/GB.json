@@ -157,5 +157,6 @@
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/british-pudding-day/"}, titles: {"en": "British Pudding Day"}},
         {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/bbc-children-in-need-appeal/"}, titles: {"en": "BBC Children in Need Appeal"}, notes: {"en": "B.B.C. Children in Need Appeal"}, first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/the-nos-galan-road-races/"}, titles: {"en": "Nos Galan Road Races"}, first: {era: 1, y: 1984}},
+        {type: "nD", start: {mon: 12, d: 25}, end: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/mari-lwyd/"}, titles: {"en": "Mari Lwyd"}, emoji: "🐎"},
     ]
 }

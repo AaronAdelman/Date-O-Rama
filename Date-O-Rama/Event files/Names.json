@@ -447,5 +447,11 @@
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-lee-day/"}, titles: {"en": "National Lee Day"}},
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-ashton-day/"}, titles: {"en": "National Ashton Day"}},
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-betty-day/"}, titles: {"en": "National Betty Day"}},
+        {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/national-forest-day/"}, titles: {"en": "National Forest Day"}},
+        {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/national-laura-day/"}, titles: {"en": "National Laura Day"}},
+        {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/national-nicole-day/"}, titles: {"en": "National Nicole Day"}},
+        {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-colby-day/"}, titles: {"en": "National Colby Day"}},
+        {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-eva-day/"}, titles: {"en": "National Eva Day"}},
+        {type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/national-joshua-day/"}, titles: {"en": "National Joshua Day"}},
     ]
 }
