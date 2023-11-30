@@ -457,5 +457,8 @@
         {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-case-day/"}, titles: {"en": "National Case Day"}},
         {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-martha-day/"}, titles: {"en": "National Martha Day"}},
         {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/national-samuel-day/"}, titles: {"en": "National Samuel Day"}},
+        {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaltoday.com/national-tim-day/"}, titles: {"en": "National Tim Day"}},
+        {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/national-ha-day/"}, titles: {"en": "National Ha Day"}},
+        {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/national-paula-day/"}, titles: {"en": "National Paula Day"}},
     ]
 }
