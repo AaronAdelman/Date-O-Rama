@@ -622,6 +622,7 @@
         {template: "National Maple Syrup Day", type: "1D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-maple-syrup-day/"}, titles: {"en": "National Maple Syrup Day"}, emoji: "🧇"},
         {template: "National Re-Gifting Day", type: "1D", start: {mon: 12, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/re-gifting-day/"}, titles: {"en": "National Re-Gifting Day"}, emoji: "🎁"},
         {template: "Anne and Samantha Day", type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/anne-and-samantha-day/"}, titles: {"en": "Anne and Samantha Day"}},
+        {template: "Forefathers’ Day", type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},
 
     ]
 }

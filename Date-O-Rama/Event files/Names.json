@@ -445,6 +445,7 @@
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/national-gregory-day/"}, titles: {"en": "National Gregory Day"}},
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/national-steven-day/"}, titles: {"en": "National Steven Day"}},
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-lee-day/"}, titles: {"en": "National Lee Day"}},
-
+        {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-ashton-day/"}, titles: {"en": "National Ashton Day"}},
+        {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-betty-day/"}, titles: {"en": "National Betty Day"}},
     ]
 }
