@@ -1995,6 +1995,7 @@
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/phileas-fogg-win-a-wager-day/"}, titles: {"en": "Phileas Fogg Win a Wager Day"}, first: {era: 1, y: 1872}},
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/world-snowboard-day/"}, titles: {"en": "World Snowboard Day"}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/international-cello-day/"}, titles: {"en": "International Cello Day"}, emoji: "🎻", first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/sodium-bicarbonate-day/"}, titles: {"en": "Sodium Bicarbonate Day"}},
 
     ]
 }

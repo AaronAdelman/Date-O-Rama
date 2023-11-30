@@ -123,5 +123,6 @@
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-cookie-exchange-day/"}, titles: {"en": "National Cookie Exchange Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/make-cut-out-snowflakes-day/"}, titles: {"en": "Make Cut-Out Snowflakes Day"}, emoji: "❄️"},
         {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/national-call-a-friend-day/"}, titles: {"en": "National Call a Friend Day"}, emoji: "📱"},
+        {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/festival-of-enormous-changes-at-the-last-minute/"}, titles: {"en": "Festival of Enormous Changes at the Last Minute"}, emoji: "⚘"},
     ]
 }
