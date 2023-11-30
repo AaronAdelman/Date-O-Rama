@@ -461,6 +461,6 @@
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/national-ha-day/"}, titles: {"en": "National Ha Day"}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/national-paula-day/"}, titles: {"en": "National Paula Day"}},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/national-cheryl-day/"}, titles: {"en": "National Cheryl Day"}},
-
+        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/national-andrea-day/"}, titles: {"en": "National Andrea Day"}},
     ]
 }

@@ -1996,6 +1996,8 @@
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/world-snowboard-day/"}, titles: {"en": "World Snowboard Day"}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/international-cello-day/"}, titles: {"en": "International Cello Day"}, emoji: "🎻", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/sodium-bicarbonate-day/"}, titles: {"en": "Sodium Bicarbonate Day"}},
-
+        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/no-interruptions-day/"}, titles: {"en": "No Interruptions Day"}, emoji: "👩‍💻"},
+        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/unlucky-day/"}, titles: {"en": "Unlucky Day"}},
+        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/world-peace-meditation-day/"}, titles: {"en": "World Peace Meditation Day"}, first: {era: 1, y: 2002}},
     ]
 }
