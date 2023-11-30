@@ -2165,5 +2165,7 @@
         {type: "1D", start: {mon: 12, d: 23, wkd: [2]}, inherits: "Forefathers’ Day", first: {era: 1, y: 1620}},
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-date-nut-bread-day/"}, titles: {"en": "National Date Nut Bread Day"}},
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/national-short-person-day/"}, titles: {"en": "​National Short Person Day"}},
+        {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/national-homeowners-day/"}, titles: {"en": "National Homeowners Day"}, first: {era: 1, y: 2020}, emoji: "🏠"},
+
     ]
 }
