@@ -25,7 +25,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
         {inherits: "Palm Sunday", type: "1D", start: {"Easter": "Easter", "offsetD": -7}},
-        {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Our Lady of Suyapa", "es": "Nuestra Señora de Suyapa"}, notes: {"en": "Virgin of Suyapa’s Day"}},
+        {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Feast of Our Lady of Suyapa", "es": "Nuestra Señora de Suyapa"}, notes: {"en": "Virgin of Suyapa’s Day"}},
         {inherits: "Spanish Language Day", type: "1D", start: {mon: 4, d: 19}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 6, d: 11}, titles: {"en": "Student’s Day", "es": "Día del Estudiante"}},
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/lempira-day/"}, titles: {"en": "Lempira Day", "es": "Día de Lempira"}},

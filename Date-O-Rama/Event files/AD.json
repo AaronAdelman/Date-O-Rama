@@ -16,7 +16,7 @@
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
-        {titles: {"en": "Our Lady of Meritxell Day", "ca": "Mare de Déu de Meritxell"}, type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/our-lady-of-meritxell-day/"}, notes: {"en": "Meritxell Day"}},
+        {titles: {"en": "Feast of Our Lady of Meritxell Day", "ca": "Mare de Déu de Meritxell"}, type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/our-lady-of-meritxell-day/"}, notes: {"en": "Meritxell Day"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
