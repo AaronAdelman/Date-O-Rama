@@ -67,7 +67,6 @@
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-advent-calendar-day/"}, titles: {"en": "National Advent Calendar Day"}, first: {era: 1, y: 2020}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/month-giving/"}, titles: {"en": "Month of Giving"}},
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/coats-and-toys-for-kids-day/"}, titles: {"en": "Coats and Toys for Kids Day"}, first: {era: 1, y: 1983}, emoji: "🧥🧸"},
-        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/light-up-a-life/"}, titles: {"en": "Light up A Life"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/holiday-food-drive-for-the-needy-animals-day/"}, titles: {"en": "Holiday Food Drive for the Needy Animals Day"}},
         {type: "1D", start: {mon: 12, wkd: [1], wkdRecurrence: 2}, urls: {"en": "http://worldchoralday.org/"}, titles: {"en": "World Choral Day"}, emoji: "🎵", notes: {"en": "Choral Day"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 12, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/green-monday/"}, titles: {"en": "Green Monday"}, first: {era: 1, y: 2007}},
