@@ -407,33 +407,20 @@ struct ASAClockEventsForEach:  View {
         let shouldShowSecondaryDates = processedClock.clock.eventsShouldShowSecondaryDates
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date = processedClock.startOfNextDay
-        
-        ASAEventsForEach(events: events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation)
-    } // var body
-} // struct ASAClockEventsForEach
-
-struct ASAEventsForEach: View {
-    var events:  Array<ASAEventCompatible>
-    @Binding var now:  Date
-    var primaryClock: ASAClock
-    var shouldShowSecondaryDates: Bool
-    var rangeStart: Date
-    var rangeEnd: Date
-    var location: ASALocation
-    var usesDeviceLocation: Bool
-    
-    var body: some View {
+                
         ForEach(events, id: \.eventIdentifier) {
             event
             in
             
-            let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
-            let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? self.primaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
+            let eventIsTodayOnly   = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+            let location           = processedClock.location
+            let usesDeviceLocation = processedClock.usesDeviceLocation
+            let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? primaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
             ASALinkedEventCell(event: event, primaryClock: primaryClock, now: $now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
         } // ForEach
-    }
-}
+    } // var body
+} // struct ASAClockEventsForEach
 
 
 // MARK:  -
