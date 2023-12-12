@@ -42,8 +42,8 @@
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/sarawak/birthday-of-the-governor-of-sarawak"}, titles: {"en": "Birthday of the Governor of Sarawak", "ms": "Hari Jadi Yang di-Pertua Negeri Sarawak"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/perak/birthday-of-the-sultan-of-perak"}, titles: {"en": "Birthday of the Sultan of Perak", "ms": "Hari Keputeraan Sultan Perak"}, inherits: "*BDay*", first: {era: 1, y: 2018}},
         {type: "nD", start: {mon: 11, d: 11}, end: {mon: 11, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, titles: {"en": "Birthday of the Sultan of Kelantan", "ms": "Hari Keputeraan Sultan Kelantan"}, inherits: "*BDay*"},
-        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of The Sultan of Selangor", "ms": "Hari Keputeraan Sultan Selangor"}, inherits: "*BDay*"},
-        {type: "1D", start: {mon: 12, d: 12, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of The Sultan of Selangor (in lieu)"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of the Sultan of Selangor", "ms": "Hari Keputeraan Sultan Selangor"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 12, d: 12, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of the Sultan of Selangor (in lieu)"}, inherits: "*BDay*"},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 

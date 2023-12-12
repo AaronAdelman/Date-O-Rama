@@ -244,7 +244,7 @@
         {titles: {"en": "Feast of St. Juan Diego"}, type: "1D", start: {mon: 12, d: 9}},
         {titles: {"en": "Feast of Our Lady of Loreto"}, type: "1D", start: {mon: 12, d: 10}},
         {titles: {"en": "Feast of St. Damasus I"}, type: "1D", start: {mon: 12, d: 11}},
-        {type: "1D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe Day", first: {era: 1, y: 1531}},
+        {type: "1D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe", first: {era: 1, y: 1531}},
         {inherits: "Feast of St. Lucy of Syracuse", type: "1D", start: {mon: 12, d: 13}},
         {titles: {"en": "Feast of St. John of the Cross"}, type: "1D", start: {mon: 12, d: 14}},
         {titles: {"en": "Feast of St. Peter Canisius"}, type: "1D", start: {mon: 12, d: 21}},
