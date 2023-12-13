@@ -404,7 +404,6 @@ struct ASAClockEventsForEach:  View {
     
     var body: some View {
         let primaryClock: ASAClock = processedClock.clock
-        let shouldShowSecondaryDates = processedClock.clock.eventsShouldShowSecondaryDates
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date = processedClock.startOfNextDay
                 
