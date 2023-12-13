@@ -496,7 +496,13 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         if ApplesSmaller == nil || ApplesLarger == nil {
             return nil
         }
-        return self.ApplesCalendar.range(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+        
+        var result = self.ApplesCalendar.range(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+        if result?.lowerBound == result?.upperBound {
+            let upperBound = result?.upperBound ?? 1
+            result = Range(uncheckedBounds: (1, upperBound))
+        }
+        return result
     } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
     
     
