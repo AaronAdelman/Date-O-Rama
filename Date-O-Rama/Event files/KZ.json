@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/defenders-day"}, inherits: "Defender of the Fatherland Day", notes: {"en": "Defender’s Day", "kk": "День Защитника Отечества"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 5, d: 8, thruD: 9, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/defenders-day"}, titles: {"en": "Defender of the Fatherland Day (in lieu)"}, first: {era: 1, y: 2013}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/victory-day"}, notes: {"en": "Great Patriotic War Against Fascism Victory Day"}},
-        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/capital-city-day/"}, titles: {"en": "Capital City Day", "kk": "Астана күні"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/capital-city-day/"}, titles: {"en": "Capital City Day", "kk": "Астана күні"}, first: {era: 1, y: 2009}, emoji: "🏙️"},
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-constitution-day"}, inherits: "Constitution Day"},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-republic-day"}, inherits: "Republic Day", first: {era: 1, y: 2022}},
         {inherits: "Independence Day", type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 17}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/kazakhstan-independence-day/"}},
@@ -22,7 +22,7 @@
         
         {inherits: "National Guard Day", type: "1D", start: {mon: 1, d: 10}},
         {titles: {"en": "Day of the State Security Service of Kazakhstan"}, start: {mon: 4, d: 21}, type: "1D"},
-        {titles: {"en": "Police Day"}, type: "1D", start: {mon: 6, d: 23}},
+        {inherits: "Police Day", type: "1D", start: {mon: 6, d: 23}},
         {inherits: "Border Guards Day", type: "1D", start: {mon: 8, d: 18}, first: {era: 1, y: 1919}},
         {inherits: "Day of Remembrance of the Victims of Political Repressions", start: {mon: 10, d: 30}, type: "1D", first: {era: 1, y: 1991}},
         

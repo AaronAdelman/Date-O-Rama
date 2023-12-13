@@ -5,12 +5,33 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.24, "blue": 0.65},
     eventSpecifications: [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/martisor"}, inherits: "Martisor"},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2016}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/moldova-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/08/27.html"}},
-        {inherits: "Liberation Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1944}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Chisinau City Day"}, urls: {"en": "https://nationaltoday.com/chisinau-city-day/"}},
         {inherits: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Chisinau City Day"}, urls: {"en": "https://nationaltoday.com/chisinau-city-day/"}, emoji: "🏙️"},
+        {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/moldova-cahul/cahul-city-day"}, titles: {"en": "Cahul City Day"}, emoji: "🏙️"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        
+        {type: "1D", start: {mon: 2, d: 15}, titles: {"en": "Afghan War Veterans Day"}},
+        {type: "1D", start: {mon: 4, d: 27}, inherits: "Flag Day"},
+        {inherits: "Border Guards Day", type: "1D", start: {mon: 6, d: 10}},
+        {type: "1D", start: {mon: 6, d: 23}, inherits: "Sovereignty Day"},
+        {inherits: "Constitution Day", type: "1D", start: {mon: 7, d: 29}},
+        {inherits: "Liberation Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1944}},
+        {type: "1D", start: {mon: 9, d: 3}, inherits: "Army Day", titles: {"en": "National Army Day"}},
+        {type: "1D", start: {mon: 10, d: 8}, titles: {"en": "National Wine Day"}, emoji: "🍷"},
+        {inherits: "Police Day", type: "1D", start: {mon: 12, d: 18}},
+
+        {type: "1D", start: {mon: 5, d: 22}, titles: {"en": "Bălți Day"}, emoji: "🏙️"},
+        {type: "1D", start: {mon: 6, d: 28}, titles: {"en": "Gagauzia Liberation Day"}, emoji: "🏙️"},
+
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
     ]
 }
