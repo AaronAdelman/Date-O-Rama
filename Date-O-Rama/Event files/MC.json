@@ -5,7 +5,20 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
-        {inherits: "National Day", type: "1D", start: {mon: 11, d: 19}, emoji: "🇲🇨", urls: {"en": "https://nationaltoday.com/monaco-national-day/"}, notes: {"en": "The Sovereign Prince’s Day"}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/monaco/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 1, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/monaco/monaco-st-devota-day"}, titles: {"en": "Saint Dévote’s Day", "fr": "La Sainte Dévote"}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/monaco-national-day/"}, titles: {"en": "H.S.H. the Sovereign Prince’s Day", "fr": "La Fête du Prince"}, notes: {"en": "National Day\nThe Sovereign Prince’s Day"}},
+        {type: "1D", start: {mon: 11, d: 20, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/monaco/monaco-national-day"}, titles: {"en": "H.S.H. the Sovereign Prince’s Day (in lieu)"}},
+        {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
     ]
 }
