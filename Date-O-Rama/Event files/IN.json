@@ -249,6 +249,6 @@
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 6]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 9, d: 29, thruD: 30, wkd: [2]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 2013}},
-
+        {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
     ]
 }

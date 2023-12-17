@@ -13,5 +13,7 @@
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 5, d: 22}, first: {era: 1, y: 1819}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "National Day"},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
+
     ]
 }

@@ -10,6 +10,6 @@
         {type: "1D", start: {mon: 6, d: 27}, titles: {"en": "Attwari"}, urls: {"en": "https://nationaltoday.com/attwari/"}, first: {era: 1, y: 2021}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/nari-dibas/"}},
         {type: "1D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
-
+        {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
    ]
 }

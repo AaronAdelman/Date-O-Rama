@@ -24,5 +24,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         {titles: {"en": "Boxing Day (in lieu)"}, type: "1D", start: {mon: 12, d: 27, thruD: 28, wkd: [3]}},
+
+        {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
     ]
 }
