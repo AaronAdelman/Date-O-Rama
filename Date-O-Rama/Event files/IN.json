@@ -79,7 +79,7 @@
         {inherits: "Feast of St. Francis Xavier", type: "1D", start: {mon: 12, d: 3}},
         {titles: {"en": "Feast of St. Francis Xavier (in lieu)"}, inherits: "Feast of St. Francis Xavier", type: "1D", start: {mon: 12, d: 4, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/india/goa/feast-of-st-francis-xavier"}},
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/pa-togan-nengminza-sangma/"}, titles: {"en": "Pa Togan Nengminza Sangma"}, first: {era: 1, y: 1872}},
-        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/india/meghalaya/death-anniversary-u-soso-tham"}, titles: {"en": "Death Anniversary of U SoSo Tham"}},
+        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/india/meghalaya/death-anniversary-u-soso-tham"}, titles: {"en": "Death Anniversary of U SoSo Tham"}, inherits: "*DeathAnniv*"},
         {type: "1D", start: {d: 19, mon: 12}, titles: {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://nationaltoday.com/goa-liberation-day/"}, first: {era: 1, y: 1961}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
