@@ -213,7 +213,7 @@
         {template: "Feast of the Transfiguration", titles: {"en": "Feast of the Transfiguration"}, type: "1D", start: {mon: 8, d: 6}},
         {template: "Feast of the Visitation", titles: {"en": "Feast of the Visitation", "mt": "Il-Viżitazzjoni"}, type: "1D", start: {mon: 5, d: 31}},
         {template: "Flag Day", type: "1D", start: {d: 14, mon: 6}, titles: {"en": "Flag Day", "he": "יום הדגל", "ar": "يوم العلم", "az": "Dövlət Bayrağı günü", "es": "Día de la Bandera", "fr": "Jour du drapeau", "sq": "Dita e Flamurit"}, urls: {"en": "https://en.wikipedia.org/wiki/Flag_Day"}},
-        {template: "Forefathers’ Day", type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://nationaltoday.com/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},
+        {template: "Forefathers’ Day", type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},
         {template: "Freedom Day", type: "1D", start: {mon: 4, d: 27}, titles: {"en": "Freedom Day", "he": "יום החירות", "it": "Giorno della libertà", "mt": "Jum il-Ħelsien"}, urls: {"en": "https://en.wikipedia.org/wiki/Freedom_Day"}},
         {template: "Friendship Day", type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, titles: {"en": "Friendship Day", "es": "El dia del Amigo", "he": "יום הידידות"}, urls: {"en": "https://www.daysoftheyear.com/days/national-friendship-day/"}},
         {template: "Garifuna Settlement Day", type: "1D", start: {mon: 11, d: 19}, titles: {"en": "Garifuna Settlement Day"}, urls: {"en": "https://nationaltoday.com/garifuna-settlement-day/"}},
