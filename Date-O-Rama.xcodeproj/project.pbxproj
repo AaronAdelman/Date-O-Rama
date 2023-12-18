@@ -413,6 +413,8 @@
 		A5AAA7512657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5ABBA2C27155A2100ED7D5F /* Atheism.json */; };
 		A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5ABBA2C27155A2100ED7D5F /* Atheism.json */; };
+		A5ADF4CE2B30C894004F6166 /* ME (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5ADF4CD2B30C893004F6166 /* ME (Julian).json */; };
+		A5ADF4CF2B30C894004F6166 /* ME (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5ADF4CD2B30C893004F6166 /* ME (Julian).json */; };
 		A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */; };
 		A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
 		A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
@@ -1349,6 +1351,7 @@
 		A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEditExternalEventButton.swift; sourceTree = "<group>"; };
 		A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACompactForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A5ABBA2C27155A2100ED7D5F /* Atheism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Atheism.json; sourceTree = "<group>"; };
+		A5ADF4CD2B30C893004F6166 /* ME (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ME (Julian).json"; sourceTree = "<group>"; };
 		A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailView.swift; sourceTree = "<group>"; };
 		A5B0084626CD3A0B00B63B3F /* Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
@@ -1988,6 +1991,7 @@
 				A5E49625286252EC001BF40C /* MC.json */,
 				A57C73D32B28DEC1007DDC2C /* MD (Julian).json */,
 				A5E49628286252EC001BF40C /* MD.json */,
+				A5ADF4CD2B30C893004F6166 /* ME (Julian).json */,
 				A5E49629286252EC001BF40C /* ME.json */,
 				A5E49626286252EC001BF40C /* MF.json */,
 				A5EFFF70285B7B1300F2205F /* MG.json */,
@@ -2816,6 +2820,7 @@
 				A5D8509A280C8E7A005247BD /* BA.json in Resources */,
 				A5E95F6E286F2DB7009267AF /* AS.json in Resources */,
 				A5E495E028624DDB001BF40C /* FM.json in Resources */,
+				A5ADF4CF2B30C894004F6166 /* ME (Julian).json in Resources */,
 				A5C7793E26B8382600DD6009 /* UN.json in Resources */,
 				A5E495F828624EFE001BF40C /* GL.json in Resources */,
 				A5E292EA285A625000925EBD /* AR.json in Resources */,
@@ -3382,6 +3387,7 @@
 				A5987C4F2A083337008A9E90 /* Theosophy.json in Resources */,
 				A5B6760C2B167B350075408E /* Roman Religion.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
+				A5ADF4CE2B30C894004F6166 /* ME (Julian).json in Resources */,
 				A5171A5F2899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5759144282BE30700675058 /* DK.json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
