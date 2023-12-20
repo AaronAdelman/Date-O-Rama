@@ -9,7 +9,7 @@
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Heroes’ Day", type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/mozambican-heroes-day/"}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/mozambican-national-womens-day/"}, inherits: "Women’s Day"},
-        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mozambique/labour-day"}, titles: {"en": "Worker’s Day"}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mozambique/labour-day"}, inherits: "Worker’s Day"},
         {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/mozambique-independence-day/"}, first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/mozambique/mozambique-victory-day"}, inherits: "Victory Day", first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 9, d: 8, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/mozambique/mozambique-victory-day"}, titles: {"en": "Victory Day (in lieu)"}, first: {era: 1, y: 1974}},
