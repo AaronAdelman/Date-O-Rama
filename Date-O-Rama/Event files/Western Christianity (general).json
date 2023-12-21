@@ -247,7 +247,7 @@
         {type: "1D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe", first: {era: 1, y: 1531}},
         {inherits: "Feast of St. Lucy of Syracuse", type: "1D", start: {mon: 12, d: 13}},
         {titles: {"en": "Feast of St. John of the Cross"}, type: "1D", start: {mon: 12, d: 14}},
-        {titles: {"en": "Feast of St. Peter Canisius"}, type: "1D", start: {mon: 12, d: 21}},
+        {titles: {"en": "Feast of St. Peter Canisius", "he": "החג של פטרוס קניזיוס הקדוש"}, type: "1D", start: {mon: 12, d: 21}},
         {titles: {"en": "Feast of St. John of Kanty"}, type: "1D", start: {mon: 12, d: 23}},
 
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
