@@ -2170,7 +2170,6 @@
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/short-girl-appreciation-day/"}, titles: {"en": "National Short Girl Appreciation Day"}, notes: {"en": "Short Girl Appreciation Day"}},
         {type: "1D", start: {mon: 12, d: 22, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Forefathers’ Day", first: {era: 1, y: 1620}},
         {type: "1D", start: {mon: 12, d: 23, wkd: [2]}, inherits: "Forefathers’ Day", first: {era: 1, y: 1620}},
-        {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/date-nut-bread-day/"}, titles: {"en": "National Date Nut Bread Day"}},
         {type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/national-short-person-day/"}, titles: {"en": "​National Short Person Day"}},
         {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/national-homeowners-day/"}, titles: {"en": "National Homeowners Day"}, first: {era: 1, y: 2020}, emoji: "🏠"},
         {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaltoday.com/national-chocolate-candy-day/"}, titles: {"en": "National Chocolate Candy Day"}, emoji: "🍫"},
