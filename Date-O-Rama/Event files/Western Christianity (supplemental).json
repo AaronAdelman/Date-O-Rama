@@ -73,5 +73,6 @@
         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/be-an-angel-day/", "he": "https://www.daysoftheyear.co.il/2022/08/huo%20vnktl.html"}, titles: {"en": "Be An Angel Day", "he": "יום המלאך"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, titles: {"en": "International Blessings of the Fishing Fleet Day"}},
         {type: "1D", start: {mon: 12, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-wear-your-pearls-day/"}, titles: {"en": "National Wear Your Pearls Day"}, first: {era: 1, y: 2015}},
+        {titles: {"en": "National Whiner’s Day"}, type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/national-whiners-day//"}, first: {era: 1, y: 1986}, emoji: "😫", notes: {"en": "National Whiners Day"}},
     ]
 }
