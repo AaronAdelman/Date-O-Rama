@@ -25,7 +25,7 @@
         {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/italy/bologna/feast-of-st-petronius"}, titles: {"en": "Feast of St. Petronius"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/feast-of-st-giusto/"}, titles: {"en": "Feast of St. Giusto"}, first: {era: 1, y: 293}},
-        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/italy/bari/feast-of-st-nicholas"}, titles: {"en": "Feast of St. Nicholas"}},
+        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/italy/bari/feast-of-st-nicholas"}, inherits: "St. Nicholas Day"},
         {inherits: "Feast of St. Ambrose", type: "1D", start: {mon: 12, d: 7}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
