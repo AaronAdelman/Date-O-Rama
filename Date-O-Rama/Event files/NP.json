@@ -1,14 +1,23 @@
 {
     titles: {"*": "NP"},
     "//": "Nepal",
+    "TODO": "Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.86, "green": 0.08, "blue": 0.24},
     eventSpecifications: [
-        {type: "1D", start: {mon: 1, d: 11}, inherits: "Unity Day", urls: {"en": "https://www.daysoftheyear.co.il/2019/01/unity-day-nepal.html"}},
+        {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/prithvi-jayanti", "he": "https://www.daysoftheyear.co.il/2019/01/unity-day-nepal.html"}, titles: {"en": "Prithvi Jayanti"}, first: {era: 1, y: 1951}, inherits: "*BDay*"},
+        {type: "1D", start: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en": "Nepal National Mourning Day"}},
+        {type: "1D", start: {era: 1, y: 2019, mon: 2, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en": "Nepal National Mourning Day"}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 3, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/province-1/koshi-public-holiday"}, inherits: "Public Holiday"},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/nari-dibas/"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 6, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/sudurpashchim-pradesh/sudurpaschim-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2023, mon: 8, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/karnali/karnali-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2023, mon: 9, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/funeral-of-subhash-chandra-nembang"}, inherits: "Public Holiday"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
         {type: "1D", start: {mon: 6, d: 27}, titles: {"en": "Attwari"}, urls: {"en": "https://nationaltoday.com/attwari/"}, first: {era: 1, y: 2021}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/nari-dibas/"}},
         {type: "1D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
         {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
    ]
