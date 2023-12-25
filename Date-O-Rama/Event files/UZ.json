@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 9}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/uzbekistan-independence-day/", "he": "https://www.daysoftheyear.co.il/2017/09/1.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 1}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/uzbekistan-independence-day/", "he": "https://www.daysoftheyear.co.il/2017/09/1.html"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 3}, inherits: "Air Force Day", first: {era: 1, y: 1995}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/teachers-day-in-uzbekistan/"}, first: {era: 1, y: 1997}},

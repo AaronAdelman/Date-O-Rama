@@ -68,7 +68,7 @@
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}, titles: {"en": "National Have a Heart Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/canadas-agriculture-day/"}, titles: {"en": "Agriculture Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-flag-of-canada-day/"}, titles: {"en": "National Flag of Canada Day", "he": "יום הדגל הלאומי של קנדה", "fr": "Jour du drapeau national du Canada"}, first: {era: 1, y: 1965}, inherits: "National Flag Day"},
-        {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/pink-shirt-day/"}, titles: {"en": "Pink Shirt Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: -1}, inherits: "Pink Shirt Day", first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/yukon-heritage-day/"}, titles: {"en": "Yukon Heritage Day"}, first: {era: 1, y: 1976}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-governance-professionals-day/"}, titles: {"en": "National Governance Professionals Day"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/vimy-ridge-day/"}, titles: {"en": "Vimy Ridge Day"}, first: {era: 1, y: 2003}},
