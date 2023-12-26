@@ -127,7 +127,8 @@
         {titles: {"en": "Feast of St. Birgitta"}, type: "1D", start: {mon: 7, d: 23}},
         {titles: {"en": "Feast of St. Sharbel Makhlūf", "he": "החג של שרבל מכלוף"}, type: "1D", start: {mon: 7, d: 24}},
         {inherits: "Feast of St. James", type: "1D", start: {mon: 7, d: 25}},
-        {inherits: "Feast of Saints Joachim and Anne", type: "1D", start: {mon: 7, d: 26}},
+        {inherits: "Feast of St. Joachim", type: "1D", start: {mon: 7, d: 26}},
+        {inherits: "Feast of St. Anne", type: "1D", start: {mon: 7, d: 26}},
         {titles: {"en": "Feast of Saints Martha, Mary and Lazarus"}, type: "1D", start: {mon: 7, d: 29}},
         {titles: {"en": "Feast of St. Peter Chrysologus", "he": "החג של פטרוס כריסולוגוס הקדוש"}, type: "1D", start: {mon: 7, d: 30}},
         {titles: {"en": "Feast of St. Ignatius of Loyola", "he": "החג של איגנטיוס מלויולה הקדוש"}, type: "1D", start: {mon: 7, d: 31}},
@@ -185,7 +186,7 @@
         {titles: {"en": "Feast of St. Vincent de Paul"}, type: "1D", start: {mon: 9, d: 27}},
         {titles: {"en": "Feast of St. Lorenzo Ruiz and companions"}, type: "1D", start: {mon: 9, d: 28}},
         {titles: {"en": "Feast of Saints Michael, Gabriel and Raphael/Michaelmas"}, type: "1D", start: {mon: 9, d: 29}, notes: {"en": "International Happy Goose Day"}, urls: {"en": "https://nationaltoday.com/michaelmas/"}},
-        {titles: {"en": "Feast of St. Jerome"}, type: "1D", start: {mon: 9, d: 30}},
+        {inherits: "Feast of St. Jerome", type: "1D", start: {mon: 9, d: 30}},
 
         {titles: {"en": "Feast of St. Thérèse of the Child Jesus"}, type: "1D", start: {mon: 10, d: 1}},
         {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day"}},
