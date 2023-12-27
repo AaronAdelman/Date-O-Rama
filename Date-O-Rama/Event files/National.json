@@ -162,7 +162,7 @@
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "National Minority Donor Awareness Day", "he": "יום המודעות הלאומי לתורמים מיעוטים"}, urls: {"en": "https://nationaldaycalendar.com/national-minority-donor-awareness-day/"}},
         {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-minority-donor-awareness-week/"}, titles: {"en": "National Minority Donor Awareness Week", "he": "שבוע המודעות הלאומי לתורמים מיעוטים"}},
         {type: "1D", start: {mon: 8, d: 2}, titles: {"en": "National Coloring Book Day", "he": "יום ספר הצביעה הלאומי"}, emoji: "✍️", urls: {"en": "https://www.coloringbookday.com/", "he": "https://www.daysoftheyear.co.il/2018/08/2.html"}},
-        {type: "1D", start: {d: 3, mon: 8}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/", "he": "https://www.daysoftheyear.co.il/2018/08/3.html"}},
+        {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/", "he": "https://www.daysoftheyear.co.il/2018/08/3.html"}},
         {type: "1D", start: {d: 5, mon: 8}, titles: {"en": "National Oyster Day"}, emoji: "🦪", urls: {"en": "https://www.daysoftheyear.com/days/oyster-day/"}},
         {type: "1D", start: {d: 11, mon: 8}, titles: {"en": "National Son and Daughter Day"}, first: {era: 1, y: 2944}, emoji: "👦👧", urls: {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}},
         {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "National Whiskey Sour Day", "he": "יום הויסקי סאוור הלאומי"}, emoji: "🥃", notes: {"en": "Whiskey Sour Day", "he": "יום הויסקי סאוור"}, urls: {"en": "https://www.daysoftheyear.com/days/whiskey-sour-day/"}},
