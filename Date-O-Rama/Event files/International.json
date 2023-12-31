@@ -351,6 +351,8 @@
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/unchain-dog-month/"}, titles: {"en": "Unchain a Dog Month"}, inherits: "*Dog*"},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/veganuary/"}, titles: {"en": "Veganuary"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/walk-dog-month/"}, titles: {"en": "Walk Your Dog Month"}, inherits: "*Dog*"},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/world-health-esteem-month-january"}, titles: {"en": "World Health Esteem Month"}, inherits: "*MedicalAwareness*"},
+
         
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/car-insurance-day/"}, titles: {"en": "Car Insurance Day"}, emoji: "🚗"},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/change-your-password-day/"}, titles: {"en": "Change Your Password Day"}, first: {era: 1, y: 2012}},
@@ -713,7 +715,7 @@
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/grass-is-always-browner-on-the-other-side-of-the-fence-day/"}, titles: {"en": "Grass is Always Browner on the Other Side of the Fence Day"}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/take-walk-park-day/"}, titles: {"en": "Take a Walk in the Park Day"}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/torrents-day/"}, titles: {"en": "Torrents Day"}, first: {era: 1, y: 2011}},
-        {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/turkey-neck-soup-day/"}, titles: {"en": "Turkey Neck Soup Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/turkey-neck-soup-day/"}, titles: {"en": "Turkey Neck Soup Day"}, first: {era: 1, y: 2015}, emoji: "🥣"},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/world-bipolar-day/"}, titles: {"en": "World Bipolar Day"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/world-tb-303-appreciation-day/"}, titles: {"en": "World Tb-303 Appreciation Day"}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/anesthesia-tech-day/"}, titles: {"en": "Anesthesia Tech Day"}},

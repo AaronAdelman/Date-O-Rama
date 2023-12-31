@@ -502,6 +502,7 @@
         {type: "1D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-wreaths-across-america-day/"}, titles: {"en": "National Wreaths Across America Day"}, emoji: "🪦", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaltoday.com/pledge-of-allegiance-day/"}, titles: {"en": "Pledge of Allegiance Day"}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-blood-donor-month/"}, titles: {"en": "National Blood Donor Month"}, first: {era: 1, y: 1970}, notes: {"en": "National Volunteer Blood Donor Month"}, emoji: "🩸", inherits: "*MedicalAwareness*"},
 
 
 
