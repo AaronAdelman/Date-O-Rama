@@ -1999,7 +1999,6 @@
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/sodium-bicarbonate-day/"}, titles: {"en": "Sodium Bicarbonate Day"}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/no-interruptions-day/"}, titles: {"en": "No Interruptions Day"}, emoji: "👩‍💻"},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/unlucky-day/"}, titles: {"en": "Unlucky Day"}, emoji: "😞"},
-        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/world-peace-meditation-day/"}, titles: {"en": "World Peace Meditation Day"}, first: {era: 1, y: 2002}},
         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 1, d: 1}, urls: {"en": "https://madd.org/drunk-driving/tie-one-on-for-safety/"}, titles: {"en": "MADD Tie One On For Safety Holiday Campaign"}, first: {era: 1, y: 1983}, emoji: "🚗"},
         {type: "1M", start: {mon: 12}, titles: {"en": "Bingo’s Birthday Month"}, urls: {"en": "https://www.nationaldaycalendar.com/arts-entertainment/bingos-birthday-month-december"}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/december/root-vegetables-and-exotic-fruit-month-december"}, titles: {"en": "Root Vegetables and Exotic Fruits Month"}, emoji: "🥕🍍"},
