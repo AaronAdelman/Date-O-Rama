@@ -12,7 +12,7 @@
         {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/national-ellen-day/"}, titles: {"en": "National Ellen Day"}},
         {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/national-davis-day/"}, titles: {"en": "National Davis Day"}},
         {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/national-samantha-day/"}, titles: {"en": "National Samantha Day"}},
-        {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/national-smith-day/"}, titles: {"en": "National Smith Day"}},
+        {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/national-smith-day/"}, titles: {"en": "National Smith Day"}, first: {era: 1, y: 1994}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-austin-day/"}, titles: {"en": "National Austin Day"}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-carter-day/"}, titles: {"en": "National Carter Day"}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-faith-day/"}, titles: {"en": "National Faith Day"}},

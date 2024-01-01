@@ -13,7 +13,7 @@
         {type: "1D", start: {mon: 12, d: 21}, titles: {"en": "Humbug Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 12, d: 29}, titles: {"en": "Tick Tock Day", "he": "יום הטיק טק"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 12, d: 30}, titles: {"en": "Falling Needles Family Fest"}, inherits: "*Wellcat*"},
-        {type: "1D", start: {mon: 1, d: 2}, titles: {"en": "Happy Mew Year For Cats Day"}, inherits: "*Wellcat*"},
+        {type: "1D", start: {mon: 1, d: 2}, titles: {"en": "Happy Mew Year For Cats Day"}, inherits: "*Wellcat*", notes: {"en": "Happy Mew Year Day"}},
         {type: "1D", start: {mon: 1, d: 3}, titles: {"en": "Memento Mori"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 4}, titles: {"en": "Dimpled Chad Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 8}, titles: {"en": "Show & Tell Day at Work"}, inherits: "*Wellcat*"},

@@ -52,7 +52,7 @@
         {type: "1Y", start: {era: 1, y: 1984}, titles: {"en": "European Year for a People’s Europe"}},
         {type: "1Y", start: {era: 1, y: 1983}, titles: {"en": "European Year of SMEs and the Craft Industry"}, emoji: "🧶"},
         
-        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/euro-day/", "he": "https://www.daysoftheyear.co.il/2019/01/euro-day.html"}, titles: {"en": "Euro Day", "he": "יום האירו"}, emoji: "💶"},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/euro-day/", "he": "https://www.daysoftheyear.co.il/2019/01/euro-day.html"}, titles: {"en": "Euro Day", "he": "יום האירו"}, emoji: "💶", first: {era: 1, y: 1999}},
         {inherits: "Safer Internet Day", type: "1D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/european-day-for-victims-of-crime/"}, titles: {"en": "European Day for Victims of Crime"}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/european-antibiotic-awareness-day-november-18"}, titles: {"en": "European Antibiotic Awareness"}, first: {era: 1, y: 2008}, emoji: "💊"},

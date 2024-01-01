@@ -5,7 +5,7 @@
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
-        {titles: {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)"}, type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/saint-basils-day/"}},
+        {titles: {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)\nSt. Basil’s Day"}, type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/saint-basils-day/"}},
         {titles: {"en": "Feast of the Holy Name of Jesus"}, notes: {"en": "Christmastide (day 10)"}, type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {titles: {"en": "Feast of St. Elizabeth Ann Seton"}, notes: {"en": "Christmastide (day 11)"}, type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inherits: "Epiphany Eve", type: "1D", start: {mon: 1, d: 5}},
@@ -271,7 +271,7 @@
         {inherits: "Feast of St. Vladimir", type: "1D", start: {mon: 7, d: 15}},
         {type: "1D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
-        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/solemnity-of-mary/"}, titles: {"en": "Solemnity of Mary"}},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/solemnity-of-mary/"}, titles: {"en": "Solemnity of Mary"}},
         {type: "1D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/saint-gertrude-of-nivelles-day/"}, titles: {"en": "St. Gertrude of Nivelles Day"}, first: {era: 1, y: 1677}},
 
         {titles: {"en": "Septuagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},
