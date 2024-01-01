@@ -556,7 +556,7 @@
         {type: "1D", start: {mon: 4, d: 5}, titles: {"en": "National Nebraska Day", "he": "יום נברסקה הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-nebraska-day-april-5/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {d: 5, mon: 7}, titles: {"en": "National Hawaii Day", "he": "יום הוואי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-hawaii-day-july-5/"}},
         {type: "1D", start: {d: 7, mon: 12}, titles: {"en": "National Illinois Day", "he": "יום אילינוי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-illinois-day-december-7/"}},
-        {type: "1D", start: {d: 7, mon: 6}, titles: {"en": "National Oklahoma Day", "he": "יום אוקלהומה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oklahoma-day-june-7/"}},
+        {type: "1D", start: {mon: 6, d: 7}, titles: {"en": "National Oklahoma Day", "he": "יום אוקלהומה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oklahoma-day-june-7/"}},
         {type: "1D", start: {d: 7, mon: 9}, titles: {"en": "National New Hampshire Day", "he": "יום ניו המפשייר הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-new-hampshire-day-september-7/"}},
         {type: "1D", start: {mon: 2, d: 8}, titles: {"en": "National Iowa Day", "he": "יום איווה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-iowa-day-february-8/"}},
         {type: "1D", start: {mon: 3, d: 8}, titles: {"en": "National Oregon Day", "he": "יום אורגון הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oregon-day-march-8/"}},
