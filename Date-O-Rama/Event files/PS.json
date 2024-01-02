@@ -1,6 +1,7 @@
 {
     titles: {"*": "PS"},
     "//": "Palestinian Authority and the Gaza Strip",
+    "TODO": "Muslim holidays",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.50, "green": 0.50, "blue": 0.50},
