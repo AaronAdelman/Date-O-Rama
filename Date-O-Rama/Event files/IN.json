@@ -182,7 +182,7 @@
         {type: "1D", start: {d: 18, mon: 3}, titles: {"en": "Ordnance Factories’ Day"}},
 
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/martyrs-day/"}},
-        {inherits: "Martyrs’ Day", type: "1D", start: {d: 23, mon: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Lahore"}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Lahore"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27Day"}, locations: {"en": "Mizoram", "he": "מיזוראם"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {d: 19, mon: 5}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Assam"}, titles: {"en": "Language Martyrs Day"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Odisha"}},

@@ -41,7 +41,7 @@
         {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "Day of Revenue Service"}},
         {type: "1D", start: {mon: 2, d: 26}, titles: {"en": "Khojaly Massacre Commemoration Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Khojaly_massacre#Commemoration"}},
         {type: "1D", start: {mon: 3, d: 5}, titles: {"en": "Day of Physical Culture and Sport"}},
-        {type: "1D", start: {d: 23, mon: 3}, titles: {"en": "Day of the Ministry of Environment and Natural Resources"}},
+        {type: "1D", start: {mon: 3, d: 23}, titles: {"en": "Day of the Ministry of Environment and Natural Resources"}},
         {type: "1D", start: {d: 28, mon: 3}, titles: {"en": "Day of National Security"}},
         {type: "1D", start: {mon: 4, d: 10}, titles: {"en": "Day of the Builder"}},
         {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "Flower Festival"}},
