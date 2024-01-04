@@ -7,7 +7,7 @@
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/el-salvador/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {type: "1D", start: {"Easter": "Easter", "offsetD": -45}, inherits: "Maundy Thursday"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -3}, inherits: "Maundy Thursday"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},

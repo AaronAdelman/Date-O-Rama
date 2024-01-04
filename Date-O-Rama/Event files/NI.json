@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.13, "blue": 0.36},
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "1D", start: {"Easter": "Easter", "offsetD": -45}, inherits: "Maundy Thursday"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -3}, inherits: "Maundy Thursday"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
