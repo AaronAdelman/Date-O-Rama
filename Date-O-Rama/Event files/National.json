@@ -2007,6 +2007,7 @@
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-report-home-health-care-fraud-day/"}, titles: {"en": "National Report Home Health Care Fraud Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/saxophone-day/"}, titles: {"en": "National Saxophone Day"}, emoji: "🎷"},
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-team-manager-day/"}, titles: {"en": "National Team Manager Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-technology-day-january-6"}, inherits: "National Technology Day", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-with-almonds-day/"}, titles: {"en": "National Bittersweet Chocolate with Almonds Day"}, emoji: "🍫"},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-canine-lymphoma-awareness-day/"}, titles: {"en": "National Canine Lymphoma Awareness Day"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "National Hug a Bear Day"}, notes: {"en": "Hug a Bear Day"}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/hug-a-bear-day/"}},

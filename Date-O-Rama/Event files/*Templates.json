@@ -401,6 +401,7 @@
         {template: "National Service Dog Eye Examination Month", type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-service-dog-eye-examination-month/"}, titles: {"en": "National Service Dog Eye Examination Month"}, emoji: "🦮"},
         {template: "National Space Day", type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 1}, titles: {"en": "National Space Day", "he": "יום החלל הלאומי", "id": "Hari Keantariksaan Nasional"}, emoji: "🚀"},
         {template: "National Sports Day", type: "1D", start: {d: 29, mon: 8}, titles: {"en": "National Sports Day", "ar": "اليوم الوطني للرياضة", "id": "Hari Olahraga Nasional", "he": "יום הספורט הלאומי", "ms": "Hari Sukan Negara"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Sports_Day"}, emoji: "🏀"},
+        {template: "National Technology Day", type: "1D", start: {mon: 5, d: 11}, titles: {"en": "National Technology Day", "he": "יום הטכנולוגיה הלאומי"}, emoji: "📺📷📡"},
         {template: "National Tooth Fairy Day", type: "1D", start: {mon: 8, d: 22}, titles: {"en": "National Tooth Fairy Day", "he": "יום פיית השיניים הלאומי"}, emoji: "🦷"},
         {template: "National Tourism Day", type: "1D", start: {mon: 1, d: 25}, titles: {"en": "National Tourism Day", "he": "יום התיירות הלאומי"}},
         {template: "National Tree Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, inherits: "Arbor Day", first: {era: 1, y: 1996}, titles: {"en": "National Tree Day", "he": "יום האילן הלאומי", "it": "Giornata nazionale degli alberi"}},
