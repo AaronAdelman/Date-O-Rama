@@ -26,8 +26,8 @@
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
         
         {type: "1D", start: {mon: 1, d: 2}, notes: {"en": "National Motivation and Inspiration Day"}, titles: {"en": "Motivation and Inspiration Day"}, urls: {"en": "https://www.daysoftheyear.com/days/motivation-and-inspiration-day/"}, first: {era: 1, y: 2002}},
-        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaldaycalendar.com/korean-american-day-january-13/"}},
-        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Stephen Foster Memorial Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaldaycalendar.com/stephen-foster-memorial-day-january-13/"}},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "Korean American Day"}},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Stephen Foster Memorial Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://www.daysoftheyear.com/days/stephen-foster-memorial-day/"}},
         {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "Ratification Day"}, urls: {"en": "https://nationaldaycalendar.com/ratification-day-january-14/"}, first: {era: 1, y: 1784}},
         {type: "1D", start: {mon: 1, d: 16}, titles: {"en": "National Religious Freedom Day", "es": "Día Nacional de la Libertad Religiosa", "he": "יום חופש הדת"}, urls: {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/", "he": "https://www.daysoftheyear.co.il/2018/11/16.html"}, first: {era: 1, y: 1786}},
         {inherits: "National Sanctity of Human Life Day", type: "1D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
@@ -504,6 +504,7 @@
         {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaltoday.com/pledge-of-allegiance-day/"}, titles: {"en": "Pledge of Allegiance Day"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-blood-donor-month/"}, titles: {"en": "National Blood Donor Month"}, first: {era: 1, y: 1970}, notes: {"en": "National Volunteer Blood Donor Month"}, emoji: "🩸", inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/ellis-island-day/"}, titles: {"en": "Ellis Island Day"}, notes: {"en": "National Ellis Island Day"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Human Trafficking Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/human-trafficking-awareness-day/"}, first: {era: 1, y: 2007}},
 
 
 
@@ -515,7 +516,7 @@
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day", "he": "יום מינסוטה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
         {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "National Washington Day", "he": "יום וושינגטון הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},
         {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Connecticut Day", "he": "יום קונטיקט הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-connecticut-day-august-10/"}},
-        {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-arkansas-day/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "National Vermont Day", "he": "יום ורמונט הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-vermont-day-october-12/"}},
         {type: "1D", start: {mon: 4, d: 12}, titles: {"en": "National Colorado Day", "he": "יום קולורדו הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-colorado-day-april-12/"}},
         {type: "1D", start: {d: 13, mon: 7}, titles: {"en": "National Delaware Day", "he": "יום דלאוור הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-delaware-day-july-13-2/"}},
