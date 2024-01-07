@@ -51,7 +51,7 @@
         {titles: {"en": "Commitment Day"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, first: {era: 1, y: 1960}, emoji: "👩‍❤️‍👨"},
         {titles: {"en": "National Bloody Mary Day", "he": "יום הבלאדי מרי"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/bloody-mary-day/", "he": "https://www.daysoftheyear.co.il/2017/01/1.html"}, emoji: "🍅"},
         {titles: {"en": "National Hangover Day"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-hangover-day/"}, emoji: "🥴", first: {era: 1, y: 2016}},
-        {titles: {"en": "Distaff Day/Roc Day/Rock Day/Saint Distaff’s Day"}, type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://en.wikipedia.org/wiki/Distaff_Day"}, emoji: "🪨"},
+        {titles: {"en": "Distaff Day"}, type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://en.wikipedia.org/wiki/Distaff_Day"}, emoji: "🪨", notes: {"en": "Roc Day/Rock Day/Saint Distaff’s Day"}},
         {titles: {"en": "Ditch New Year’s Resolutions Day"}, type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {titles: {"en": "New Year’s Resolution Recommitment Day"}, type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/new-years-resolution-recommitment-day/"}},
         {titles: {"en": "National Green Juice Day"}, type: "1D", start: {mon: 1, d: 26}, first: {era: 1, y: 2016}, urls: {"en": "https://nationaldaycalendar.com/national-green-juice-day-january-26/"}, emoji: "🧃"},
