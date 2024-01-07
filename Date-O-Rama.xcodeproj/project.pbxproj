@@ -370,6 +370,7 @@
 		A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */; };
 		A59EABB12B445A73008C146B /* PK (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59EABB02B445A73008C146B /* PK (Muslim).json */; };
 		A59EABB22B445A73008C146B /* PK (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59EABB02B445A73008C146B /* PK (Muslim).json */; };
+		A59EABB32B4B0AE9008C146B /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
 		A59FB18D270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A5A1D1D92A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
@@ -3724,6 +3725,7 @@
 				A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */,
 				A5EB60E72892E4EB006009AF /* ASALocationManager.swift in Sources */,
 				A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */,
+				A59EABB32B4B0AE9008C146B /* ASASingleEvent.swift in Sources */,
 				A59D80422600C59200FD8BBF /* ASAClockArrayKey.swift in Sources */,
 				A54539DE26A990040028EAD5 /* Trigonometry.swift in Sources */,
 				A505E6E027903E3800D09A74 /* ASAClockCellDateEventVisibility.swift in Sources */,

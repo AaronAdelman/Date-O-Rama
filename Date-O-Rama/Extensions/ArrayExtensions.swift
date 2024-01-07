@@ -264,6 +264,12 @@ extension Array where Element == Int? {
             let start_i = self[i]
             let first_i = first[i]
             
+            if start_i != nil && first_i != nil {
+                if start_i! > first_i! {
+                    return true
+                }
+            }
+            
             if start_i ?? Int.max < first_i ?? 0 {
                 return false
             }

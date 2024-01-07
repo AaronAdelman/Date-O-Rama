@@ -333,6 +333,21 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "1076">
                </Location>
+               <Location
+                  uuid = "B3C9A66A-C497-4931-A4A8-C3AA7D75F645 - 5d26241cb28981d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Foundation.Calendar.weekendDays.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "Date-O-RamaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/CalendarExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1068">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -414,6 +429,22 @@
             endingLineNumber = "57"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BF145D9-A852-4230-9B70-E0637D7CDD85"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Events/ASAEventCalendar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1016"
+            endingLineNumber = "1016"
+            landmarkName = "processEventSpecification(calendar:eventSpecification:otherCalendars:components:date:locationData:startOfDay:startOfNextDay:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:regionCode:location:timeZone:requestedLocaleIdentifier:eventCalendarName:calendarTitle:clock:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
