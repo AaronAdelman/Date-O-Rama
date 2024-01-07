@@ -22,6 +22,8 @@
         {type: "1D", start: {mon: 1, d: 6}, titles: {"en": "National Cuddle Up Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cuddle-up-day/"}, emoji: "👨👩"},
         {type: "1D", start: {mon: 1, d: 7}, titles: {"en": "National Tempura Day", "he": "יום הטמפורה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/tempura-day/", "he": "https://www.daysoftheyear.co.il/2019/01/tempura-day.html"}},
         {type: "1D", start: {mon: 1, d: 8}, titles: {"en": "National Argyle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/argyle-day/"}},
+        {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-career-coach-day-january-8"}, titles: {"en": "​National Career Coach Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-clean-off-your-desk-day-second-monday-in-january"}, titles: {"en": "​National Clean Off Your Desk Day"}, emoji: "🖥️☕️🖋️"},
         {type: "1D", start: {mon: 1, d: 8}, titles: {"en": "National English Toffee Day"}, urls: {"en": "https://nationaldaycalendar.com/national-english-toffee-day-january-8/"}},
         {type: "1D", start: {mon: 1, d: 9}, titles: {"en": "National Apricot Day", "he": "יום המשמש הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/apricot-day/", "he": "https://www.daysoftheyear.co.il/2018/01/9.html"}},
         {type: "1D", start: {mon: 1, d: 9}, titles: {"en": "National Balloon Ascension Day"}, urls: {"en": "https://www.daysoftheyear.com/days/balloon-ascension-day/"}, first: {era: 1, y: 1793}},
