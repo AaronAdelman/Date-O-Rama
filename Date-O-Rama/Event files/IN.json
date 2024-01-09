@@ -132,7 +132,7 @@
         {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 30, wkd: [6]}},
         {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 26, thruD: 31, wkd: [1]}},
 
-        {type: "1D", start: {mon: 1, d: 9}, titles: {"en": "Pravasi Bharatiya Diwas/NRI (Non-Resident Indian) Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},
+        {type: "1D", start: {mon: 1, d: 9}, titles: {"en": "Pravasi Bharatiya Diwas"}, notes: {"en": "NRI (Non-Resident Indian) Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "World Hindi Day"}},
         {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "Lal Bahadur Shastri’s Death Anniversary"}, inherits: "*DeathAnniv*"},
         {inherits: "National Youth Day", type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-youth-day/"}},
