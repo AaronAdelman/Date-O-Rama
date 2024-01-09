@@ -1156,7 +1156,7 @@
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/z-day/"}, titles: {"en": "Z Day"}, emoji: "Ⓩ"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/run-up-the-flagpole-and-see-if-anyone-salutes-day/"}, titles: {"en": "Run Up the Flagpole and See If Anyone Salutes Day"}, notes: {"en": "Run It Up the Flagpole and See if Anyone Salutes Day"}, emoji: "💡"},
         {type: "nD", start: {mon: 1, d: 2}, end: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/someday-well-laugh-about-this-week/"}, titles: {"en": "Someday We’ll Laugh About This Week"}, first: {era: 1, y: 2005}, emoji: "🤣"},
-        {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, titles: {"en": "JRR Tolkien Day"}, notes: {"en": "J.R.R. Tolkien Day"}, inherits: "*BDay*", first: {era: 1, y: 1892}},
+        {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, titles: {"en": "J.R.R. Tolkien Day"}, inherits: "*BDay*", first: {era: 1, y: 1892}},
         {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/women-rock-day/"}, titles: {"en": "Women Rock! Day"}, emoji: "👩‍🎤", first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/free-flower-basket-day/"}, titles: {"en": "Free Flower Basket Day"}, emoji: "🌸"},
         {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/tom-thumb-day/"}, titles: {"en": "Tom Thumb Day"}, inherits: "*BDay*", first: {era: 1, y: 1838}},
