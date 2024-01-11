@@ -276,7 +276,7 @@
 
         {titles: {"en": "Septuagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},
         {titles: {"en": "Sexagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -56}},
-        {inherits: "Fat Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -52}, emoji: "🍩", urls: {"en": "https://www.daysoftheyear.com/days/fat-thursday/"}},
+        {inherits: "Fat Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -52}},
         {titles: {"en": "Quinquagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -49}},
         {inherits: "Shrove Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
         {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}},
