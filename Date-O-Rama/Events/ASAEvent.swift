@@ -94,6 +94,10 @@ struct ASAEvent:  ASASingleEvent {
             return [notes!]
         }
     } // var allNotes: Array<String>
+    
+    var numberOfSubevents: Int {
+        return 1
+    }
 } // struct ASAEvent
 
 

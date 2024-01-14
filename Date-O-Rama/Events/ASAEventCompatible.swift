@@ -57,6 +57,8 @@ protocol ASAEventCompatible {
     var fileEmoji: String? { get }
     
     var type: ASAEventSpecificationType { get }
+    
+    var numberOfSubevents: Int { get }
 } // protocol ASAEventCompatible
 
 

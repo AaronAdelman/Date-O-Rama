@@ -203,4 +203,8 @@ struct ASAMultiEvent:  ASAEventCompatible {
     public mutating func append(event: ASAEventCompatible) {
         self.events.append(event)
     } // func append(event: ASAEventCompatible)
+    
+    var numberOfSubevents: Int {
+        return self.events.count
+    }
 }
