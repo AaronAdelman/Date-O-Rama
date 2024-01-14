@@ -7,7 +7,7 @@
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/american-samoa/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {type: "1D", start: {mon: 1, d: 16}, inherits: "Martin Luther King Jr. Day"},
+        {type: "1D", start: {mon: 1, d: 16}, inherits: "Martin Luther King, Jr. Day"},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/american-samoa/presidents-day"}, inherits: "Presidents’ Day"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/american-samoa/american-samoa-flag-day"}, titles: {"en": "American Samoa Flag Day"}, inherits: "Flag Day"},

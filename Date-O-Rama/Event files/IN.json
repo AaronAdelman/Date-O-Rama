@@ -136,7 +136,7 @@
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "World Hindi Day"}},
         {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "Lal Bahadur Shastri’s Death Anniversary"}, inherits: "*DeathAnniv*"},
         {inherits: "National Youth Day", type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-youth-day/"}},
-        {type: "1D", start: {mon: 1, d: 15}, inherits: "Army Day", urls: {"en": "https://nationaltoday.com/indian-army-day/"}, first: {era: 1, y: 1949}},
+        {type: "1D", start: {mon: 1, d: 15}, inherits: "Army Day", urls: {"en": "https://www.daysoftheyear.com/days/indian-army-day/"}, first: {era: 1, y: 1949}},
         {type: "1D", start: {mon: 1, d: 21}, titles: {"en": "Tripura Day"}, first: {era: 1, y: 1972}},
         {type: "1D", start: {mon: 1, d: 21}, titles: {"en": "Meghalaya Day"}, first: {era: 1, y: 1972}},
         {type: "1D", start: {mon: 1, d: 21}, titles: {"en": "Manipur Day"}, first: {era: 1, y: 1972}},
