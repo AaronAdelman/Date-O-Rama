@@ -9,7 +9,7 @@
         {type: "1D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Day after New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 3, wkd: [2]}, inherits: "Day after New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 4, wkd: [2]}, inherits: "Day after New Year’s Day"},
-        {type: "1D", start: {mon: 1, d: 23, thruD: 29, wkd: [2]}, urls: {"en": "https://nationaltoday.com/wellington-anniversary-day/"}, titles: {"en": "Wellington Anniversary Day"}, first: {era: 1, y: 1865}},
+        {type: "1D", start: {mon: 1, d: 23, thruD: 29, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/wellington-anniversary-day/"}, titles: {"en": "Wellington Anniversary Day"}, first: {era: 1, y: 1865}},
         {type: "1D", start: {mon: 1, d: 29, thruMon: 2, thruD: 4, wkd: [2]}, urls: {"en": "https://nationaltoday.com/nelson-anniversary-day/"}, titles: {"en": "Nelson Anniversary Day"}},
         {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/auckland-anniversary-day/"}, titles: {"en": "Auckland Anniversary Day"}},
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/waitangi-day/"}, titles: {"en": "Waitangi Day"}, first: {era: 1, y: 1934}},

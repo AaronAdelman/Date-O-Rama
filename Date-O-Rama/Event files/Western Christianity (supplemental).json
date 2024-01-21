@@ -64,7 +64,7 @@
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/feast-of-the-ass-day/"}, titles: {"en": "Feast of the Ass Day"}, emoji: "🫏"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/blue-monday/"}, titles: {"en": "Blue Monday"}, first: {era: 1, y: 2005}, emoji: "☹️"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/brew-monday/"}, titles: {"en": "Brew Monday"}, emoji: "🍻", first: {era: 1, y: 1953}},
-        {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-bible-sunday/"}, titles: {"en": "National Bible Sunday"}, first: {era: 1, y: 1549}},
+        {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-bible-sunday/"}, titles: {"en": "National Bible Sunday"}, first: {era: 1, y: 1815}, emoji: "📖"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": 48}, urls: {"en": "https://nationaltoday.com/national-christian-t-shirt-day/"}, titles: {"en": "National Christian T-Shirt Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-black-americas-day-of-repentance/"}, titles: {"en": "National Black America’s Day of Repentance"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/forgiveness-day/"}, titles: {"en": "Forgiveness Day"}, first: {era: 1, y: 1994}},

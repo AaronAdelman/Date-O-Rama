@@ -54,7 +54,7 @@
         {titles: {"en": "Distaff Day"}, type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/distaff-day/"}, emoji: "🪨", notes: {"en": "Roc Day\nRock Day\nSaint Distaff’s Day"}},
         {titles: {"en": "Ditch New Year’s Resolutions Day"}, notes: {"en": "Ditch New Year’s Resolution Day"}, type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {titles: {"en": "New Year’s Resolution Recommitment Day"}, type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/new-years-resolution-recommitment-day/"}},
-        {titles: {"en": "National Green Juice Day"}, type: "1D", start: {mon: 1, d: 26}, first: {era: 1, y: 2016}, urls: {"en": "https://nationaldaycalendar.com/national-green-juice-day-january-26/"}, emoji: "🧃"},
+        {titles: {"en": "National Green Juice Day"}, type: "1D", start: {mon: 1, d: 26}, first: {era: 1, y: 2016}, urls: {"en": "https://www.daysoftheyear.com/days/national-green-juice-day/"}, emoji: "🧃"},
         {titles: {"en": "New Year’s Resolutions Week"}, type: "nD", start: {mon: 1, d: 1}, first: {era: 1, y: 2005}, "end": {mon: 1, d: 7}, urls: {"en": "https://nationaldaycalendar.com/new-years-resolutions-week-first-week-in-january/"}},
         {titles: {"en": "National Crepe Day"}, type: "1D", start: {mon: 2, d: 2}, first: {era: 1, y: 472}, urls: {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, emoji: "🥞"},
         {titles: {"en": "National Corned Beef and Cabbage Day"}, type: "1D", start: {mon: 3, d: 17}, emoji: "🥩🥬", urls: {"en": "https://nationaldaycalendar.com/national-corned-beef-and-cabbage-day-march-17/"}},
