@@ -112,7 +112,7 @@
         {titles: {"en": "Feast of the First Martyrs of the Church of Rome"}, type: "1D", start: {mon: 6, d: 30}},
         
         {titles: {"en": "Feast of St. Thomas the Apostle"}, type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/st-thomas-history/"}, first: {era: 1, y: 1969}},
-        {titles: {"en": "Feast of St. Elizabeth of Portugal"}, type: "1D", start: {mon: 7, d: 4}},
+        {inherits: "Feast of St. Elizabeth of Portugal", type: "1D", start: {mon: 7, d: 4}},
         {titles: {"en": "Feast of St. Anthony Zaccaria"}, type: "1D", start: {mon: 7, d: 5}},
         {titles: {"en": "Feast of St. Maria Goretti"}, type: "1D", start: {mon: 7, d: 6}},
         {titles: {"en": "Feast of St. Augustine Zhao Rong and companions"}, type: "1D", start: {mon: 7, d: 9}},
@@ -180,7 +180,7 @@
         {titles: {"en": "Feast of St. Robert Bellarmine or St. Hildegard of Bingen"}, type: "1D", start: {mon: 9, d: 17}},
         {titles: {"en": "Feast of St. Januarius"}, type: "1D", start: {mon: 9, d: 19}},
         {titles: {"en": "Feast of Saints Andrew Kim Taegon and companions", "he": "חג הקדושים אנדרו קים טאה־גון וחבריו"}, type: "1D", start: {mon: 9, d: 20}},
-        {titles: {"en": "Feast of St. Matthew the Evangelist", "he": "החג של מתי האוונגליסט"}, type: "1D", start: {mon: 9, d: 21}},
+        {inherits: "Feast of St. Matthew the Evangelist", type: "1D", start: {mon: 9, d: 21}},
         {titles: {"en": "Feast of St. Pio of Pietrelcina (Padre Pio)"}, type: "1D", start: {mon: 9, d: 23}},
         {titles: {"en": "Feast of Saints Cosmas and Damian"}, type: "1D", start: {mon: 9, d: 26}},
         {titles: {"en": "Feast of St. Vincent de Paul"}, type: "1D", start: {mon: 9, d: 27}},
