@@ -927,7 +927,6 @@
         {type: "1D", start: {mon: 1, d: 23}, titles: {"en": "National Handwriting Day", "he": "יום כתב היד הלאומי"}, notes: {"en": "Handwriting Day", "he": "יום כתב היד"}, urls: {"en": "https://www.daysoftheyear.com/days/handwriting-day/", "he": "https://www.daysoftheyear.co.il/2018/01/23.html"}, emoji: "🖋", first: {era: 1, y: 1977}},
         {type: "1D", start: {mon: 1, d: 23}, titles: {"en": "National Measure Your Feet Day"}, notes: {"en": "Measure Your Feet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/measure-your-feet-day/"}, emoji: "🦶"},
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/national-rhubarb-pie-day/"}, titles: {"en": "National Rhubarb Pie Day"}, emoji: "🥧"},
-        {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/national-just-do-it-day/"}, titles: {"en": "National “Just Do It” Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://www.daysoftheyear.com/days/national-lobster-thermidor-day/"}, titles: {"en": "National Lobster Thermidor Day"}, first: {era: 1, y: 2000}, emoji: "🦞"},
         {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/national-fish-taco-day/"}, titles: {"en": "National Fish Taco Day"}, emoji: "🌮"},
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/peanut-brittle-day/"}, titles: {"en": "National Peanut Brittle Day"}, emoji: "🥜"},
