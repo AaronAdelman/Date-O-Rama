@@ -19,7 +19,7 @@
         {type: "nD", start: {mon: 8, d: 13}, end: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/japan/obon"}, titles: {"en": "Obon"}},
         {titles: {"en": "Respect for the Aged Day", "ja": "敬老の日"}, type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaltoday.com/respect-aged-day/"}, emoji: "👴🧓"},
         {type: "1D", start: {"equinoxOrSolstice": "Sep"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/autumnal-equinox-day"}, titles: {"en": "Autumnal Equinox Day", "ja": "秋分の日"}},
-        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, inherits: "National Sports Day", titles: {"en": "Sports Day", "ja": "スポーツの日"}, first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
+        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, inherits: "Sports Day", first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/japanese-culture-day/"}, titles: {"en": "Culture Day", "ja": "文化の日"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},

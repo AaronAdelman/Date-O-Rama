@@ -13,7 +13,7 @@
         {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "Earthquake Memorial Day"}, urls: {"en": "https://nationaltoday.com/turkmenistan-earthquake-memorial-day/"}, first: {era: 1, y: 1995}, emoji: "🐂"},
         {type: "1D", start: {mon: 4, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/a-drop-of-water-is-a-grain-of-gold/"}, titles: {"en": "A Drop of Water is a Grain of Gold"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 4, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/turkmen-racing-horse-festival/"}, titles: {"en": "Turkmen Racing Horse Festival"}},
-        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, titles: {"en": "State Flag Day"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, titles: {"en": "State Flag Day"}, first: {era: 1, y: 1992}, inherits: "Flag Day"},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/day-of-turkmen-workers-of-culture-and-art/"}, titles: {"en": "Day of Turkmen Workers of Culture and Art"}, first: {era: 1, y: 2009}},
 
    ]
