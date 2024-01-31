@@ -1218,7 +1218,7 @@
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/international-lego-day/"}, titles: {"en": "International Lego Day"}, notes: {"en": "National Lego Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/international-reducing-co2-emissions-day/"}, titles: {"en": "International Reducing CO₂ Emissions Day"}},
         {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/seeing-eye-guide-dog-anniversary/"}, titles: {"en": "Seeing-Eye Guide Dog Anniversary"}, emoji: "🦮", first: {era: 1, y: 1929}},
-        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/school-day-of-non-violence-and-peace/"}, titles: {"en": "School Day of Non-violence and Peace"}, emoji: "☮️", first: {era: 1, y: 1964}},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/school-day-of-non-violence-and-peace/"}, titles: {"en": "School Day of Non-Violence and Peace"}, emoji: "☮️", first: {era: 1, y: 1964}},
         {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/yodel-for-your-neighbors-day/"}, titles: {"en": "Yodel For Your Neighbors Day"}},
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/brandy-alexander-day/"}, titles: {"en": "Brandy Alexander Day"}},
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/eat-brussel-sprouts-day/"}, titles: {"en": "Eat Brussel Sprouts Day"}, notes: {"en": "Eat Brussels Sprouts Day"}},

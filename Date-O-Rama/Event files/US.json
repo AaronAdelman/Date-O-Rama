@@ -32,7 +32,7 @@
         {type: "1D", start: {mon: 1, d: 16}, titles: {"en": "National Religious Freedom Day", "es": "Día Nacional de la Libertad Religiosa", "he": "יום חופש הדת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/", "he": "https://www.daysoftheyear.co.il/2018/11/16.html"}, first: {era: 1, y: 1786}},
         {inherits: "National Sanctity of Human Life Day", type: "1D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
         {inherits: "Data Protection Day", type: "1D", start: {mon: 1, d: 28}, first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 2, d: 1}, titles: {"en": "National Freedom Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-freedom-day/"}, first: {era: 1, y: 1949}},
+        {type: "1D", start: {mon: 2, d: 1}, titles: {"en": "National Freedom Day", "he": "יום החירות הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-freedom-day/"}, first: {era: 1, y: 1949}},
         {inherits: "Presidents’ Day", type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/presidents-day/"}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/pascua-florida-day/"}, titles: {"en": "Pascua Florida Day"}},
         {inherits: "Tartan Day", type: "1D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1998}},
