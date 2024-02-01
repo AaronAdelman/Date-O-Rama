@@ -9,5 +9,8 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {titles: {"en": "Christmas Day (in lieu)"}, type: "1D", start: {mon: 12, d: 26, wkd: [2]}},
+        
+        {inherits: "Feast of the Annunciation", type: "1D", start: {mon: 3, d: 25}},
+        {inherits: "Dormition of the Mother of God", type: "1D", start: {mon: 8, d: 15}},
     ]
 }

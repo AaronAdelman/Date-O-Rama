@@ -41,7 +41,7 @@
         {inherits: "National Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/founding-anniversary-of-the-philippine-army/"}, notes: {"en": "Founding Anniversary of the Philippine Army"}, first: {era: 1, y: 1936}, titles: {"en": "Philippine Army Day and Anniversary of the Tejeros Convention", "fil": "Araw ng Hukbong Katihan ng Pilipinas"}, inherits: "Army Day"},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/lapu-lapu-day/"}, titles: {"en": "Lapu Lapu Day", "fil": "Araw ni Lapu-Lapu"}, first: {era: 1, y: 2019}},
-        {titles: {"en": "Radio Day", "he": "יום הרדיו"}, type: "1D", start: {mon: 5, d: 8}, emoji: "📻"},
+        {inherits: "Radio Day", type: "1D", start: {mon: 5, d: 8}},
         {type: "1D", start: {mon: 5, d: 20}, inherits: "Navy Day", titles: {"en": "Philippine Navy Day", "fil": "Araw ng Hukbong Dagat ng Pilipinas"}, first: {era: 1, y: 1898}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-the-philippines/"}, inherits: "Flag Day", first: {era: 1, y: 1965}},
         {type: "1D", titles: {"en": "José Rizal’s Birthday"}, start: {mon: 6, d: 19}, first: {era: 1, y: 1961}, inherits: "*BDay*"},
