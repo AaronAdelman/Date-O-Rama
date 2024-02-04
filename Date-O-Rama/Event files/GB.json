@@ -71,7 +71,7 @@
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://www.daysoftheyear.com/days/paul-pitcher-day/"}, titles: {"en": "Paul Pitcher Day"}, emoji: "🍺"},
         {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/st-dwynwens-day/"}, titles: {"en": "St. Dwynwen’s Day"}, first: {era: 1, y: 1960}},
         {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 1}, inherits: "National Yorkshire Pudding Day", urls: {"en": "https://www.daysoftheyear.com/days/yorkshire-pudding-day/"}},
-        {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-primrose-day/"}, titles: {"en": "National Primrose Day"}},
+        {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-primrose-day/"}, titles: {"en": "National Primrose Day"}, emoji: "⚘"},
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/oatmeal-monday/"}, titles: {"en": "Oatmeal Monday"}, first: {era: 1, y: 1896}, emoji: "🥣"},
         {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/gwyl-mabsant/"}, titles: {"en": "Gwyl Mabsant"}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/welsh-language-music-day/"}, titles: {"en": "Welsh Language Music Day"}, first: {era: 1, y: 2013}, emoji: "🎼"},

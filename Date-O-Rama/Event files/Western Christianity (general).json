@@ -35,7 +35,7 @@
         {titles: {"en": "Feast of St. Scholastica"}, type: "1D", start: {mon: 2, d: 10}},
         
         {inherits: "Feast of Our Lady of Lourdes", type: "1D", start: {mon: 2, d: 11}},
-        {titles: {"en": "World Day of the Sick"}, type: "1D", start: {mon: 2, d: 11}, first: {era: 1, y: 1992}, urls: {"en": "https://nationaldaycalendar.com/world-day-of-the-sick-february-11/"}},
+        {titles: {"en": "World Day of the Sick"}, type: "1D", start: {mon: 2, d: 11}, first: {era: 1, y: 1992}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-of-the-sick/", emoji: "🤕"}},
         
         {inherits: "Feast of Saints Cyril and Methodius", type: "1D", start: {mon: 2, d: 14}},
         {titles: {"en": "Feast of the Seven Holy Founders of the Servite Order"}, type: "1D", start: {mon: 2, d: 17}},

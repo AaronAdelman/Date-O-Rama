@@ -7,7 +7,7 @@
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/coming-of-age-day/"}, titles: {"en": "Coming of Age Day", "he": "יום ההתבגרות", "ja": "成人の日"}, notes: {"en": "Coming-of-Age Day"}, first: {era: 1, y: 2000}},
-        {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-foundation-day/"}, titles: {"en": "National Foundation Day", "ja": "建国記念の日"}, notes: {"en": "Kenkoku Kinen no Hi"}},
+        {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-foundation-day/"}, titles: {"en": "National Foundation Day", "ja": "建国記念の日"}, notes: {"en": "Kenkoku Kinen no Hi"}},
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/the-emperors-birthday/"}, titles: {"en": "Emperor’s Birthday", "he": "יום הולדתו של הקיסר", "ja": "天皇誕生日"}, first: {era: 1, y: 1886}, inherits: "*BDay*"},
         {inherits: "Vernal Equinox", type: "1D", start: {"equinoxOrSolstice": "Mar"}, titles: {"en": "Vernal Equinox Day", "ja": "春分の日"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/vernal-equinox-day"}},
         {type: "1D", start: {mon: 4, d: 29}, titles: {"en": "Shōwa Day", "ja": "昭和の日"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/showa-day"}, notes: {"en": "Showa Day"}},

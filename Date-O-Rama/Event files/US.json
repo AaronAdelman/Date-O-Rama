@@ -55,7 +55,7 @@
         {type: "1D", start: {mon: 4, d: 18}, titles: {"en": "National Lineman Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lineman-appreciation-day/"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {d: 19, mon: 4}, titles: {"en": "Dutch-American Friendship Day"}, urls: {"en": "https://nlintheusa.com/dutch-american-friendship-day/"}, first: {era: 1, y: 1982}, emoji: "🇳🇱🇺🇸"},
         {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "San Jacinto Day"}, urls: {"en": "https://nationaltoday.com/san-jacinto-day/"}, first: {era: 1, y: 1836}, notes: {"en": "Battle of San Jacinto"}},
-        {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "National Inventors’ Day"}, urls: {"en": "https://nationaldaycalendar.com/national-inventors-day-february-11/"}, emoji: "⚙️", first: {era: 1, y: 1983}},
+        {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "National Inventors’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-inventors-day/"}, emoji: "⚙️", first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 2, d: 28}, titles: {"en": "National Floral Design Day"}, first: {era: 1, y: 1995}, emoji: "💐", urls: {"en": "https://www.daysoftheyear.com/days/floral-design-day/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
         {type: "1D", start: {mon: 3, d: 26}, titles: {"en": "Prince Kūhiō Day", "fr": "Journée du prince Kūhiō"}, first: {era: 1, y: 1949}, urls: {"en": "https://nationaltoday.com/prince-kuhio-day/"}, notes: {"en": "Prince Kuhio Day"}},
@@ -505,6 +505,7 @@
         {type: "1M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-blood-donor-month/"}, titles: {"en": "National Blood Donor Month"}, first: {era: 1, y: 1970}, notes: {"en": "National Volunteer Blood Donor Month"}, emoji: "🩸", inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/ellis-island-day/"}, titles: {"en": "Ellis Island Day"}, notes: {"en": "National Ellis Island Day"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Human Trafficking Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/human-trafficking-awareness-day/"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.womenssportsfoundation.org/get-involved/ngwsd/"}, titles: {"en": "National Girls and Women in Sports Day"}, emoji: "👩", first: {era: 1, y: 1987}},
 
 
 
