@@ -430,7 +430,7 @@
         {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/congenital-heart-defect-awareness-week/"}, titles: {"en": "Congenital Heart Defect Awareness Week"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/have-a-heart-for-chained-dogs-week/"}, titles: {"en": "Have a Heart for Chained Dogs Week"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-week-of-black-women-in-the-arts/"}, titles: {"en": "International Week of Black Women in the Arts"}},
-        {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/love-a-mensch-week/"}, titles: {"en": "Love a Mensch Week"}, emoji: "❤️"},
+        {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/love-a-mensch-week/"}, titles: {"en": "Love a Mensch Week"}, emoji: "❤️"},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/molasses-bar-day/"}, titles: {"en": "Molasses Bar Day"}},
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/giving-hearts-day-second-thursday-in-february/"}, titles: {"en": "Giving Hearts Day"}, first: {era: 1, y: 2008}, emoji: "❤️"},
         {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/read-in-the-bathtub-day/"}, titles: {"en": "Read in the Bathtub Day"}, emoji: "🛁"},
