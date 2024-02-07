@@ -427,7 +427,7 @@
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/time-to-talk-day/"}, titles: {"en": "Time to Talk Day"}},
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/e-day/"}, titles: {"en": "e-Day"}, emoji: "𝑒"},
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/hug-an-addict-or-alcoholic-day/"}, titles: {"en": "Hug an Addict or Alcoholic Day"}},
-        {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/congenital-heart-defect-awareness-week/"}, titles: {"en": "Congenital Heart Defect Awareness Week"}, inherits: "*MedAwareness*"},
+        {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/congenital-heart-defect-awareness-week/"}, titles: {"en": "Congenital Heart Defect Awareness Week"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/have-a-heart-for-chained-dogs-week/"}, titles: {"en": "Have a Heart for Chained Dogs Week"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-week-of-black-women-in-the-arts/"}, titles: {"en": "International Week of Black Women in the Arts"}},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/love-a-mensch-week/"}, titles: {"en": "Love a Mensch Week"}, emoji: "❤️"},
