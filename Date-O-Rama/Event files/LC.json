@@ -5,11 +5,23 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.47, "blue": 0.78},
     eventSpecifications: [
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
+        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 22}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/independence-day-saint-lucia/"}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-lucia/emancipation-day"}, inherits: "Emancipation Day"},
+        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-lucia/thanksgiving-day"}, inherits: "Thanksgiving Day"},
+        {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-day-of-saint-lucia/"}, inherits: "National Day", first: {era: 1, y: 1979}},
+        {inherits: "Feast of St. Lucy of Syracuse", type: "1D", start: {mon: 12, d: 13}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+
+        
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 22}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/independence-day-saint-lucia/"}},
-        
-        {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-day-of-saint-lucia/"}, inherits: "National Day", first: {era: 1, y: 1979}},
-        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
     ]
 }
