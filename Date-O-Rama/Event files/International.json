@@ -456,7 +456,6 @@
         {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/random-acts-of-kindness-week/"}, titles: {"en": "Random Acts of Kindness Week"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-angelman-day/"}, titles: {"en": "International Angelman Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-childhood-cancer-day/"}, titles: {"en": "International Childhood Cancer Day"}, first: {era: 1, y: 2002}, emoji: "👦👧"},
-        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni-2/"}, titles: {"en": "Lui-Ngai-Ni"}},
         {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/kyoto-protocol-day/"}, titles: {"en": "Kyoto Protocol Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-anthropology-day/"}, titles: {"en": "World Anthropology Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-cholangiocarcinoma-day/"}, titles: {"en": "World Cholangiocarcinoma Day"}, first: {era: 1, y: 2023}, inherits: "*MedAwareness*"},
