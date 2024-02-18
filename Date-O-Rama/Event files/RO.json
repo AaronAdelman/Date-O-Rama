@@ -33,7 +33,7 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, d: 15}, inherits: "Navy Day"},
 
-        {type: "1D", start: {mon: 2, d: 19}, urls: {"en": "https://nationaltoday.com/constantin-brancusi-day/"}, titles: {"en": "Constantin Brâncuși Day"}, first: {era: 1, y: 2015}, notes: {"en": "Brâncuși Day"}},
+        {type: "1D", start: {mon: 2, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, titles: {"en": "Constantin Brâncuși Day"}, first: {era: 1, y: 2015}, notes: {"en": "Brâncuși Day\nConstantin Brancusi Day"}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/dragobete/"}, titles: {"en": "Dragobete"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/flag-day-of-romania/"}, inherits: "Flag Day", first: {era: 1, y: 1998}},
         {inherits: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
