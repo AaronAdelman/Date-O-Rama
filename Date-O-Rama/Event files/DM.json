@@ -8,7 +8,7 @@
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "Carnival Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
-        {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/carnival-tuesday"}, inherits: "Carnival Tuesday"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/carnival-tuesday"}, inherits: "Carnival Tuesday"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
