@@ -279,7 +279,7 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/colorectal-cancer-education-and-awareness-month/"}, titles: {"en": "Colorectal Cancer Education and Awareness Month"}, notes: {"en": "National Colorectal Cancer Awareness Month"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-developmental-disabilities-awareness-month/"}, titles: {"en": "National Developmental Disabilities Awareness Month"}, first: {era: 1, y: 1987}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-social-work-month/"}, titles: {"en": "National Social Work Month"}, first: {era: 1, y: 1984}},
-        {type: "1D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, urls: {"en": "https://nationaltoday.com/national-read-across-america-day/"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, urls: {"en": "https://nationaltoday.com/national-read-across-america-day/"}, first: {era: 1, y: 1998}, emoji: "📖"},
         {type: "nD", start: {mon: 3, d: 2}, end: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/read-across-america-week/"}, titles: {"en": "Read Across America Week"}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-speech-and-debate-education-day/"}, titles: {"en": "National Speech and Debate Education Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/navy-reserves-birthday/"}, titles: {"en": "Navy Reserves Birthday"}, first: {era: 1, y: 1915}},
@@ -515,7 +515,7 @@
 
         
         {type: "1D", start: {mon: 2, d: 1}, titles: {"en": "National Texas Day", "he": "יום טקסס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-texas-day/"}, first: {era: 1, y: 2017}},
-        {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day", "he": "יום מינסוטה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
+        {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day", "he": "יום מינסוטה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://www.daysoftheyear.com/days/national-minnesota-day/"}},
         {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "National Washington Day", "he": "יום וושינגטון הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},
         {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Connecticut Day", "he": "יום קונטיקט הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-connecticut-day-august-10/"}},
         {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-arkansas-day/"}, first: {era: 1, y: 2017}},
