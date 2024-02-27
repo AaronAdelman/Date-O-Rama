@@ -7,6 +7,7 @@
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
     eventSpecifications: [
         {type: "1D", start: {mon: 2, d: 22}, inherits: "Founding Day", first: {era: 1, y: 1727}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, titles: {"en": "Saudi Flag Day"}, first: {era: 1, y: 1937}, inherits: "Flag Day"},
         {inherits: "National Day", type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://en.wikipedia.org/wiki/Saudi_National_Day", "he": "https://www.daysoftheyear.co.il/2019/09/23-9-saudiarabia-day.html"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day", "he": "היום הלאומי של ערב הסעודית", "ar": "اليوم الوطني للمملكة العربية السعودية"}},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
