@@ -1,0 +1,10 @@
+{
+    titles: {"*": "SN"},
+    "//": "Senegal",
+    defaultLocale: "en",
+    calendarCode: "hiq*",
+    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 2, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/senegal/grand-magal-of-touba"}, titles: {"en": "Grand Magal of Touba"}},
+    ]
+}
