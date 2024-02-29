@@ -73,7 +73,6 @@
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "World Civil Defence Day"}, first: {era: 1, y: 1990}, emoji: "▲", urls: {"en": "http://icdo.org/newslist/world-civil-defence-day-2022"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Self-Injury Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/self-injury-awareness-day-march-1/"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 3, d: 4}, titles: {"en": "World Day of the Fight Against Sexual Exploitation"}, first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Employee Appreciation Day"}, first: {era: 1, y: 1995}, emoji: "✍️", urls: {"en": "https://nationaldaycalendar.com/national-employee-appreciation-day-first-friday-in-march/"}},
         {type: "1D", start: {mon: 3, d: 8}, titles: {"en": "International Women’s Collaboration Brew Day"}, first: {era: 1, y: 2014}, emoji: "👩🍺", urls: {"en": "https://unitebrew.org/"}},
         {type: "1D", start: {mon: 3, d: 10}, titles: {"en": "Tibetan Uprising Day"}, urls: {"en": "https://nationaltoday.com/tibetan-uprising-day/"}, first: {era: 1, y: 1959}},
         {type: "1D", start: {mon: 3, d: 10}, titles: {"en": "Mario Day", "he": "יום מריו"}, first: {era: 1, y: 2016}, urls: {"en": "https://www.daysoftheyear.com/days/mario-day/", "he": "https://www.daysoftheyear.co.il/2021/03/marioday.html"}},

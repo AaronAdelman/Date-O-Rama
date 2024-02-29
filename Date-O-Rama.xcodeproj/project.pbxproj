@@ -271,6 +271,7 @@
 		A57797D12B8FC0A200F68529 /* SN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797CF2B8FC0A200F68529 /* SN (Muslim).json */; };
 		A57797D32B8FC29900F68529 /* Islam (derived).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797D22B8FC29900F68529 /* Islam (derived).json */; };
 		A57797D42B8FC29900F68529 /* Islam (derived).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797D22B8FC29900F68529 /* Islam (derived).json */; };
+		A57797D52B8FC43900F68529 /* BA (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A554AFA2294F7CED0068D8E0 /* BA (Julian).json */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A57ACC812AE566FB005269E5 /* MY (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57ACC802AE566FA005269E5 /* MY (Muslim).json */; };
@@ -2772,6 +2773,7 @@
 				A5EB85192869DBB900C9321A /* LB (Julian).json in Resources */,
 				A576C39428171F96005AC73D /* NZ.json in Resources */,
 				A5E495DE28624DDB001BF40C /* FK.json in Resources */,
+				A57797D52B8FC43900F68529 /* BA (Julian).json in Resources */,
 				A5E4963F2862538F001BF40C /* MN.json in Resources */,
 				A581B886284E580B00407D68 /* BE.json in Resources */,
 				A5EFFF63285B61E500F2205F /* JM.json in Resources */,
