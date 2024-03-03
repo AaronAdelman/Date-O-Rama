@@ -82,8 +82,8 @@
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-hare-day/"}, titles: {"en": "National Mountain Hare Day"}, emoji: "🐰", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/toddle-waddle/"}, titles: {"en": "Toddle Waddle"}, notes: {"en": "The Toddle Waddle"}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/overseas-nhs-workers-day/"}, titles: {"en": "Overseas NHS Workers Day"}, notes: {"en": "Overseas N.H.S. Workers Day"}, first: {era: 1, y: 2021}, emoji: "🫶"},
-        {type: "nD", start: {mon: 3, d: 4}, end: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-salt-awareness-week/"}, titles: {"en": "National Salt Awareness Week"}, inherits: "*MedAwareness*", emoji: "🧂"},
-        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/st-pirans-day/"}, titles: {"en": "St. Piran’s Day"}},
+        {type: "nD", start: {mon: 3, d: 4}, end: {mon: 3, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-salt-awareness-week/"}, titles: {"en": "National Salt Awareness Week"}, inherits: "*MedAwareness*", emoji: "🧂"},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/st-pirans-day/"}, titles: {"en": "St. Piran’s Day"}, notes: {"en": "Feast of St. Piran"}},
         {type: "nD", start: {mon: 3, d: 18}, end: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/english-tourism-week/"}, titles: {"en": "English Tourism Week"}},
         {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}, urls: {"en": "https://nationaltoday.com/mothering-sunday-in-the-uk/"}},
         {type: "nD", start: {mon: 4, d: 4}, end: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/discover-national-parks-fortnight/"}, titles: {"en": "Discover National Parks Fortnight"}},
@@ -158,5 +158,8 @@
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/the-nos-galan-road-races/"}, titles: {"en": "Nos Galan Road Races"}, first: {era: 1, y: 1984}},
         {type: "nD", start: {mon: 12, d: 25}, end: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/mari-lwyd/"}, titles: {"en": "Mari Lwyd"}, emoji: "🐎"},
         {type: "1D", start: {mon: 12, d: 27}, inherits: "National Leftovers Day", first: {era: 1, y: 2022}},
+        {type: "1M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/the-great-daffodil-appeal/"}, titles: {"en": "The Great Daffodil Appeal"}, notes: {"en": "Marie Curie Great Daffodil Appeal"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 3, d: 9}, titles: {"en": "Made in UK Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://makeitbritish.co.uk/madeinukday/"}},
+
     ]
 }
