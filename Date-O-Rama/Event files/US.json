@@ -290,7 +290,7 @@
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/amerigo-vespucci-day/"}, titles: {"en": "Amerigo Vespucci Day"}, first: {era: 1, y: 1959}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/311-day/"}, titles: {"en": "311 Day"}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-sbdc-day/"}, titles: {"en": "National SBDC Day"}, notes: {"en": "Small Business Development Centers Day"}},
-        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/freedom-of-information-day/", "he": "https://www.daysoftheyear.co.il/2018/03/16.html"}, titles: {"en": "Freedom of Information Day", "he": "יום חופש המידע"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://www.ala.org/advocacy/FOI-Day", "he": "https://www.daysoftheyear.co.il/2018/03/16.html"}, titles: {"en": "Freedom of Information Day", "he": "יום חופש המידע"}, notes: {"en": "National Freedom of Information Day", "he": "יום חופש המידע הלאומי"}, emoji: "🗄️"},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/vietnam-veterans-day/"}, titles: {"en": "Vietnam Veterans Day"}, first: {era: 1, y: 1973}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/mathematics-and-statistics-awareness-month/"}, titles: {"en": "Mathematics and Statistics Awareness Month"}, first: {era: 1, y: 1986}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/u-s-air-force-academy-day/"}, titles: {"en": "U.S. Air Force Academy Day"}, first: {era: 1, y: 1954}},
@@ -512,6 +512,7 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/developmental-disability-awareness-month/"}, titles: {"en": "Developmental Disability Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/nutrition-month/"}, titles: {"en": "National Nutrition Month"}, emoji: "🥦🥬🥔", first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/frozen-food-day/", "he": "https://www.daysoftheyear.co.il/2021/03/frozen-food-day.html"}, titles: {"en": "National Frozen Food Day", "he": "יום האוכל הקפוא הלאומי"}, emoji: "🧊", first: {era: 1, y: 1984}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/alloimmunization-and-hdfn-day/"}, titles: {"en": "Alloimmunization and HDFN Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
 
 
 
