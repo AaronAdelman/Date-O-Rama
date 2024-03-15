@@ -613,7 +613,6 @@
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/international-day-of-action-against-canadian-seal-slaughter/"}, titles: {"en": "International Day of Action Against Canadian Seal Slaughter"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/international-eat-an-animal-for-peta-day/"}, titles: {"en": "International Eat an Animal for PETA Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/international-redefining-wealth-day/"}, titles: {"en": "International Redefining Wealth Day"}},
-        {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/world-consumer-rights-day/", "he": "https://www.daysoftheyear.co.il/2018/03/15.html"}, titles: {"en": "World Consumer Rights Day", "he": "יום זכויות הצרכן העולמי"}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/world-essential-workers-day/"}, titles: {"en": "World Essential Workers Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://worldspeechday.com/"}, titles: {"en": "World Speech Day"}, first: {era: 1, y: 2015}, emoji: "🎤"},
         {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/downs-syndrome-awareness-week/"}, titles: {"en": "Down’s Syndrome Awareness Week"}, inherits: "*MedAwareness*"},
