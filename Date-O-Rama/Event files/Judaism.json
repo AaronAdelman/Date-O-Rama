@@ -75,7 +75,7 @@
         {titles: {"he": "ראש חודש אדר", "en": "Ro’sh Ḥodhesh ’Adhar"}, type: "nD", start: {mon: 5, d: 30, "yLengths": [353, 354, 355]}, "end": {mon: 7, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he": "ראש חודש אדר א׳", "en": "Ro’sh Ḥodhesh ’Adhar Ri’shon"}, type: "nD", start: {mon: 5, d: 30, "yLengths": [383, 384, 385]}, "end": {mon: 6, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he": "ראש חודש אדר ב׳", "en": "Ro’sh Ḥodhesh ’Adhar Sheni"}, type: "nD", start: {mon: 6, d: 30, "yLengths": [383, 384, 385]}, "end": {mon: 7, d: 1}, inherits: "*ראש חודש*"},
-        {titles: {"he": "יום־שנה של משה רבנו", "en": "Yohrtsayt of Mosheh Rabbenu"}, type: "1D", start: {mon: 7, d: 7}, inherits: "*DeathAnniv*"},
+        {type: "1D", start: {mon: 7, d: 7}, inherits: "יום־שנה של משה רבנו", first: {era: 0, y: 2489}},
         {titles: {"he": "פורים קטן", "en": "Purim Qaṭan"}, type: "1D", start: {mon: 6, d: 14}},
         {titles: {"he": "שושן פורים קטן", "en": "Shushan Purim Qaṭan"}, type: "1D", start: {mon: 6, d: 15}},
         {inherits: "תענית אסתר", type: "1D", start: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}},
