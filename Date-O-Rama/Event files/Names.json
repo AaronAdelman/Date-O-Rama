@@ -105,6 +105,7 @@
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-beverly-day/"}, titles: {"en": "National Beverly Day"}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-peter-day/"}, titles: {"en": "National Peter Day"}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-alice-day/"}, titles: {"en": "National Alice Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/national-donald-day/"}, titles: {"en": "National Donald Day"}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-jacob-day/"}, titles: {"en": "National Jacob Day"}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-stephanie-day/"}, titles: {"en": "National Stephanie Day"}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-guadalupe-day/"}, titles: {"en": "National Guadalupe Day"}},
