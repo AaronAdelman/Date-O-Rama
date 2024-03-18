@@ -18,7 +18,7 @@
         {inherits: "Black Ribbon Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2009}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}},
         {titles: {"en": "European Mobility Week", "he": "שבוע הניידות האירופי"}, type: "nD", start: {mon: 9, d: 16}, end: {mon: 9, d: 22}, first: {era: 1, y: 2002}, urls: {"en": "https://mobilityweek.eu/home/"}},
-
+        
         {type: "1Y", start: {era: 1, y: 2022}, titles: {"en": "European Year of Youth"}, urls: {"en": "https://europa.eu/youth/year-of-youth_en"}, emoji: "👦👧"},
         {type: "1Y", start: {era: 1, y: 2021}, titles: {"en": "European Year of Rail"}, emoji: "🛤"},
         {type: "1Y", start: {era: 1, y: 2018}, titles: {"en": "European Year of Cultural Heritage"}, urls: {"en": "https://en.wikipedia.org/wiki/European_Year_of_Cultural_Heritage"}},
@@ -55,6 +55,7 @@
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/euro-day/", "he": "https://www.daysoftheyear.co.il/2019/01/euro-day.html"}, titles: {"en": "Euro Day", "he": "יום האירו"}, emoji: "💶", first: {era: 1, y: 1999}},
         {inherits: "Safer Internet Day", type: "1D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/european-day-for-victims-of-crime/"}, titles: {"en": "European Day for Victims of Crime"}},
-        {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/european-antibiotic-awareness-day-november-18"}, titles: {"en": "European Antibiotic Awareness"}, first: {era: 1, y: 2008}, emoji: "💊"},
+        {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/european-antibiotic-awareness-day-november-18"}, titles: {"en": "European Antibiotic Awareness Day"}, first: {era: 1, y: 2008}, emoji: "💊"},
+        {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 9}, end: {era: 1, y: 2024, mon: 5, d: 8}, urls: {"en": "https://year-of-skills.europa.eu/about_en"}, titles: {"en": "European Year of Skills"}},
     ]
 }

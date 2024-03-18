@@ -497,6 +497,7 @@
         {type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/quilting-day/"}, titles: {"en": "National Quilting Day"}, first: {era: 1, y: 1991}, emoji: "🧵"},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/national-black-pudding-day/"}, titles: {"en": "National Black Pudding Day"}, first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/national-sloppy-joe-day/"}, titles: {"en": "National Sloppy Joe Day"}},
+        {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-certified-nurses-day-march-19"}, titles: {"en": "National Certified Nurses Day"}, notes: {"en": "Certified Nurses Day"}, first: {era: 1, y: 2008}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/national-lets-laugh-day/"}, titles: {"en": "National Let’s Laugh Day"}, emoji: "🤣"},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-automatic-door-day/"}, titles: {"en": "National Automatic Door Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-backyard-day/"}, titles: {"en": "National Backyard Day"}},
