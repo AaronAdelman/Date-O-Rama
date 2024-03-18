@@ -78,7 +78,7 @@
         {titles: {"en": "Remembrance:  Marriage of Khadijah bint Khuwaylid to Muhammad"}, type: "1D", start: {mon: 10, d: 9}, inherits: "*WeddingAnniv*"},
         {titles: {"en": "Remembrance:  Major Occultation of Muhammad al-Mahdi begins"}, type: "1D", start: {mon: 10, d: 10}, inherits: "*Remembrance*"},
         {titles: {"en": "Remembrance:  Martyrdom of Hamzah in the Battle of Uhud, 3 AH"}, type: "1D", start: {mon: 10, d: 15}, inherits: "*Remembrance*"},
-        {titles: {"en": "Remembrance:  Birth of Abu Talib"}, type: "1D", start: {mon: 10, d: 29}, inherits: "*Remembrance*"},
+        {titles: {"en": "Remembrance:  Birth of Abu Talib"}, type: "1D", start: {mon: 10, d: 29}, inherits: "*BDay*"},
         {titles: {"en": "Remembrance:  Birth of Fatimah bint Musa"}, type: "1D", start: {mon: 11, d: 1}, inherits: "*BDay*"},
         {titles: {"en": "Remembrance:  Treaty of Hudaybiyyah was executed, 6 AH"}, type: "1D", start: {mon: 11, d: 6}, inherits: "*Remembrance*"},
         {titles: {"en": "Celebration:  Birth of Ali ar-Ridha, 148 AH"}, type: "1D", start: {mon: 11, d: 11}, inherits: "*BDay*"},

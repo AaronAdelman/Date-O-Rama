@@ -254,7 +254,7 @@
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-lino-brocka/"}, titles: {"en": "Birth Anniversary of National Artist Lino Brocka"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/ncca-anniversary/"}, titles: {"en": "NCCA Anniversary"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/bataan-day/"}, titles: {"en": "Bataan Day"}},
-        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-manlilikha-ng-bayan-masino-intaray/"}, titles: {"en": "Birth anniversary of Manlilikha ng Bayan Masino Intaray"}, inherits: "*BDay*", first: {era: 1, y: 1943}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-manlilikha-ng-bayan-masino-intaray/"}, titles: {"en": "Birth Anniversary of Manlilikha ng Bayan Masino Intaray"}, inherits: "*BDay*", first: {era: 1, y: 1943}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-heritage-month/"}, titles: {"en": "National Heritage Month"}},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-fisherfolks-day/"}, titles: {"en": "National Fisherfolks Day"}, first: {era: 1, y: 2000}, emoji: "🎣"},
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/day-of-sanctity-and-protection-of-human-life/"}, titles: {"en": "Day of Sanctity and Protection of Human Life"}, first: {era: 1, y: 2003}, emoji: "👶"},
