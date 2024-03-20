@@ -139,6 +139,7 @@
         {type: "1D", start: {mon: 2, d: 24}, titles: {"en": "National Tortilla Chip Day"}, emoji: "△", urls: {"en": "https://www.daysoftheyear.com/days/tortilla-chip-day/"}},
         {type: "1D", start: {mon: 2, d: 25}, titles: {"en": "National Chocolate Covered Nut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-covered-peanuts-day/"}},
         {type: "1D", start: {mon: 2, d: 25}, titles: {"en": "National Clam Chowder Day", "he": "יום מרק הצדפות הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/clam-chowder-day/", "he": "https://www.daysoftheyear.co.il/2018/02/25.html"}, emoji: "🥣🦪"},
+        {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/carnival-day/"}, titles: {"en": "Carnival Day"}},
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/letter-elder-day/"}, titles: {"en": "Letter to an Elder Day"}, notes: {"en": "National Letter to an Elder Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 2, d: 26}, titles: {"en": "National Carpe Diem Day"}, urls: {"en": "https://www.daysoftheyear.com/days/carpe-diem-day/"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 2, d: 26}, titles: {"en": "National Pistachio Day"}, urls: {"en": "https://www.worldpistachioday.com/"}},
