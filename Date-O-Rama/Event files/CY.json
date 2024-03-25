@@ -8,7 +8,7 @@
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {inherits: "Clean Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/greek-independence-day/"}, titles: {"en": "Greek Independence Day"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}, urls: {"en": "https://www.daysoftheyear.com/days/greek-independence-day/"}, titles: {"en": "Greek Independence Day"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/cyprus-national-holiday/"}, inherits: "National Day"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/easter-saturday/"}},
