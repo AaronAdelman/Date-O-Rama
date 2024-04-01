@@ -10,7 +10,8 @@
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-san-marino/"}, inherits: "Liberation Day", first: {era: 1, y: 1740}},
         {titles: {"en": "Feast of St. Agatha"}, type: "1D", start: {mon: 2, d: 5}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-arengo/"}, titles: {"en": "Anniversary of the Arengo"}, first: {era: 1, y: 1906}},
-        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/investiture-of-the-captains-regent"}, titles: {"en": "Investiture of the Captains Regent"}},
+        {type: "1D", start: {mon: 4, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/investiture-of-the-captains-regent"}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -27,7 +28,5 @@
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         
-        {type: "1D", start: {mon: 4, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
-        {type: "1D", start: {mon: 10, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
     ]
 }
