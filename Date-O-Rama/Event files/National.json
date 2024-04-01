@@ -573,7 +573,7 @@
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-love-our-children-day/", "he": "https://www.daysoftheyear.co.il/2018/04/5.html"}, titles: {"en": "National Love Our Children Day", "he": "יום האהבה לילדים שלנו הלאומי"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/sourdough-bread-day/"}, titles: {"en": "National Sourdough Bread Day"}, emoji: "🍞"},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-trombone-players-day/"}, titles: {"en": "National Trombone Players Day"}},
-        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://www.takedowntobacco.org/day-of-action"}, titles: {"en": "Take Down Tobacco National Day of Action"}, emoji: "🚭", first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://www.takedowntobacco.org/day-of-action"}, titles: {"en": "Take Down Tobacco National Day of Action"}, emoji: "🚭", first: {era: 1, y: 1996}, notes: {"en": "Kick Butts Day"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-adopt-a-greyhound-month/"}, titles: {"en": "National Adopt a Greyhound Month"}, first: {era: 1, y: 2010}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://alcohol.org/awareness-month/"}, titles: {"en": "National Alcohol Awareness Month"}, first: {era: 1, y: 1987}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-blt-sandwich-month/"}, titles: {"en": "National BLT Sandwich Month"}},

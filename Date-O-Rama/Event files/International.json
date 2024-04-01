@@ -708,7 +708,6 @@
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/myles-day/"}, titles: {"en": "Myles Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/nickelodeon-anniversary-celebration-day/"}, titles: {"en": "Nickelodeon Anniversary Celebration Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/reading-is-funny-day/"}, titles: {"en": "Reading is Funny Day"}, emoji: "📘"},
-        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/take-down-tobacco-national-day-of-action/"}, titles: {"en": "Take Down Tobacco National Day of Action"}, notes: {"en": "Kick Butts Day"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/tatting-day/"}, titles: {"en": "Tatting Day"}, first: {era: 1, y: 1990}},
         {type: "nD", start: {mon: 4, d: 1}, end: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/be-kind-to-spiders-week/"}, titles: {"en": "Be Kind to Spiders Week"}},
         {type: "nD", start: {mon: 4, d: 1}, end: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/golden-rule-week/"}, titles: {"en": "Golden Rule Week"}},
