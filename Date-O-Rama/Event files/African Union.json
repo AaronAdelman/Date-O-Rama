@@ -6,7 +6,7 @@
     emoji: "🌍",
     eventSpecifications: [
         {type: "1D", titles: {"en": "Commemoration of the African Day of Peace and Reconciliation"}, start: {mon: 1, d: 31}, emoji: "☮️"},
-        {type: "1D", titles: {"en": "African Day of School Feeding"}, start: {d: 1, mon: 3}, emoji: "🥘"},
+        {type: "1D", titles: {"en": "African Day of School Feeding"}, start: {mon: 3, d: 1}, emoji: "🥘"},
         {type: "1D", titles: {"en": "Africa Environment and Wangari Maathai Day"}, start: {mon: 3, d: 3}, emoji: "🌱"},
         {type: "1D", titles: {"en": "African Union Day of Commemoration of the 1994 Genocide Against the Tutsi in Rwanda"}, start: {mon: 4, d: 7}},
         {type: "1D", titles: {"en": "Day of the Battle of Cuito Cuanavale"}, start: {d: 23, mon: 4}},
