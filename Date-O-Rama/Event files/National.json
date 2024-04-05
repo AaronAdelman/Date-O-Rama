@@ -621,7 +621,7 @@
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/walk-around-things-day/"}, titles: {"en": "National Walk Around Things Day"}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-body-care-day/"}, titles: {"en": "National Body Care Day"}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/caramel-day/"}, titles: {"en": "National Caramel Day", "he": "יום הקרמל הלאומי"}},
-        {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-dandelion-day/"}, titles: {"en": "National Dandelion Day"}},
+        {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-dandelion-day/"}, titles: {"en": "National Dandelion Day"}, emoji: "⚘"},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/deep-dish-pizza-day/"}, titles: {"en": "National Deep Dish Pizza Day"}, emoji: "🍕"},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-flash-drive-day/"}, titles: {"en": "National Flash Drive Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-raisin-and-spice-bar-day/"}, titles: {"en": "National Raisin and Spice Bar Day"}},
