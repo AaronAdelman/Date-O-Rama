@@ -107,7 +107,7 @@
         {titles: {"he": "יום־שנה של הרב שלמה יוסף זווין"}, type: "1D", start: {mon: 6, d: 21}, first: {era: 0, y: 5738}, inherits: "*DeathAnniv*"},
 
         {type: "1D", start: {mon: 7, d: 7}, inherits: "יום־שנה של משה רבנו", first: {era: 0, y: 2489}},
-        {titles: {"he": "יום־שנה של רבי יהודה החסיד"}, type: "1D", start: {d: 9, mon: 7}, first: {era: 0, y: 4975}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של רבי יהודה החסיד"}, type: "1D", start: {mon: 7, d: 9}, first: {era: 0, y: 4975}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של החיד״א"}, type: "1D", start: {mon: 7, d: 11}, first: {era: 0, y: 5566}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרוגוצ׳ובר"}, type: "1D", start: {mon: 7, d: 11}, first: {era: 0, y: 5596}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ חיים דוד הלוי"}, type: "1D", start: {mon: 7, d: 12}, first: {era: 0, y: 5758}, inherits: "*DeathAnniv*"},
