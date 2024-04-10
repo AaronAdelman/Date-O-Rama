@@ -9,7 +9,7 @@
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {titles: {"en": "Epiphany Holiday"}, type: "1D", start: {mon: 1, d: 6, thruD: 12, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/colombia/epiphany-latin-america"}},
         {inherits: "St. Joseph’s Day", type: "1D", start: {mon: 3, d: 19}},
-        {titles: {"en": "St. Joseph’s Day (in lieu)"}, type: "1D", start: {mon: 3, d: 19, thruD: 25, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/colombia/st-josephs-day"}},
+        {inherits: "St. Joseph’s Day (in lieu)", type: "1D", start: {mon: 3, d: 19, thruD: 25, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/colombia/st-josephs-day"}},
         {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},

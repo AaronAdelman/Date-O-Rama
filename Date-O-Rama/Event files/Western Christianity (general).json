@@ -17,7 +17,7 @@
         {titles: {"en": "Feast of St. Fabian"}, type: "1D", start: {mon: 1, d: 20}},
         {inherits: "Feast of St. Sebastian", type: "1D", start: {mon: 1, d: 20}},
         {titles: {"en": "Feast of St. Agnes"}, type: "1D", start: {mon: 1, d: 21}},
-        {titles: {"en": "Feast of St. Vincent"}, type: "1D", start: {mon: 1, d: 22}},
+        {inherits: "Feast of St. Vincent", type: "1D", start: {mon: 1, d: 22}},
         {titles: {"en": "Feast of St. Francis de Sales"}, type: "1D", start: {mon: 1, d: 24}},
         {inherits: "Conversion of St. Paul", type: "1D", start: {mon: 1, d: 25}},
         {titles: {"en": "Feast of Saints Timothy and Titus"}, type: "1D", start: {mon: 1, d: 26}},
