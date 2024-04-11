@@ -1,19 +1,26 @@
 {
     titles: {"*": "LK"},
     "//": "Sri Lanka",
+    "TODO": "Muslim, Buddhist, and Hindu holidays",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
     eventSpecifications: [
-        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 4}, first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Sri_Lanka)", "he": "https://www.daysoftheyear.co.il/2019/10/srilanka-independenceday.html"}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/pongal"}, titles: {"en": "Special Bank Holiday Holiday"}},
+        {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/", "he": "https://www.daysoftheyear.co.il/2019/10/srilanka-independenceday.html"}, inherits: "National Day", first: {era: 1, y: 1948}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/tamil-new-year"}, titles: {"en": "Sinhala and Tamil New Year Eve"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/tamil-new-year"}, titles: {"en": "Sinhala and Tamil New Year"}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 10, d: 1}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 5, d: 22}, first: {era: 1, y: 1819}},
-        {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "National Day"},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
-
     ]
 }
