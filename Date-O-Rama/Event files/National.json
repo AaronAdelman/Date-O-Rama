@@ -643,7 +643,7 @@
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/national-coffee-cake-day/"}, titles: {"en": "National Coffee Cake Day"}, emoji: "🍰"},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://www.girlmetoo.com/national-day/"}, titles: {"en": "Girl, Me Too Day"}, notes: {"en": "National Girl Me Too Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/national-pet-health-insurance-day/"}, titles: {"en": "National Pet Health Insurance Day"}},
-        {type: "nD", start: {mon: 4, d: 7}, end: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-integrated-respiratory-care-week/"}, titles: {"en": "National Integrated Respiratory Care Week", inherits: "*MedAwareness*"}, first: {era: 1, y: 2020}},
+        {type: "nD", start: {mon: 4, d: 7}, end: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-integrated-respiratory-care-week/"}, titles: {"en": "National Integrated Respiratory Care Week"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-all-is-ours-day/"}, titles: {"en": "National All is Ours Day"}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-dog-fighting-awareness-day/"}, titles: {"en": "National Dog Fighting Awareness Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-empanada-day/"}, titles: {"en": "National Empanada Day"}},

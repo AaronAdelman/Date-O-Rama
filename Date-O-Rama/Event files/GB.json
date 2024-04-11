@@ -87,7 +87,7 @@
         {type: "nD", start: {mon: 3, d: 18}, end: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/english-tourism-week/"}, titles: {"en": "English Tourism Week"}},
         {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}, urls: {"en": "https://nationaltoday.com/mothering-sunday-in-the-uk/"}},
         {type: "nD", start: {mon: 4, d: 4}, end: {mon: 4, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/discover-national-parks-fortnight/"}, titles: {"en": "Discover National Parks Fortnight"}, emoji: "🏞️"},
-        {type: "nD", start: {mon: 4, d: 5}, end: {mon: 4, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/bee-active-bee-healthy-bee-happy-week/"}, titles: {"en": "Bee Active Bee Healthy Bee Happy Week"}, first: {era: 1, y: 2018}, emoji: "🐝"},
+        {type: "nD", start: {mon: 4, d: 5}, end: {mon: 4, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/bee-active-bee-healthy-bee-happy-week/"}, titles: {"en": "Bee Active Bee Healthy Bee Happy Week"}, first: {era: 1, y: 2018}, emoji: "🐝", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 4, d: 10}, end: {mon: 4, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/parkinsons-awareness-week/"}, titles: {"en": "Parkinson’s Awareness Week"}, first: {era: 1, y: 1997}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/stephen-lawrence-day/"}, titles: {"en": "Stephen Lawrence Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/calan-mai/"}, titles: {"en": "Calan Mai"}, notes: {"en": "Calan Haf"}},
