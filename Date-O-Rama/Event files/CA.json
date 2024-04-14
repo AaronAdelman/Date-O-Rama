@@ -106,5 +106,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, titles: {"en": "National Child Day", "he": "יום הילד הלאומי"}, urls: {"en": "https://www.nationalchildday.ca/"}},
         {type: "1D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-maple-syrup-day-canada/"}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}, titles: {"en": "Weedless Wednesday"}},
+        {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2016}},
     ]
 }
