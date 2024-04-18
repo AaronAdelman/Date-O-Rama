@@ -840,7 +840,6 @@
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/world-circus-day/"}, titles: {"en": "World Circus Day"}, emoji: "🎪"},
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/adult-autism-awareness-day/"}, titles: {"en": "Adult Autism Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/international-jugglers-day/"}, titles: {"en": "International Jugglers Day"}, first: {era: 1, y: 1980}},
-        {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/pet-owners-independence-day/"}, titles: {"en": "Pet Owners Independence Day"}},
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/cleaning-for-a-reason-week/"}, titles: {"en": "Cleaning for a Reason Week"}},
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/fibroid-awareness-week/"}, titles: {"en": "Fibroid Awareness Week"}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/health-information-professionals-week/"}, titles: {"en": "Health Information Professionals Week"}, first: {era: 1, y: 1990}},

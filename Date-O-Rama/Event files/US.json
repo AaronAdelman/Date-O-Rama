@@ -189,7 +189,7 @@
         {type: "1D", start: {mon: 6, d: 10, wkd: [6]}, inherits: "King Kamehameha I Day", first: {era: 1, y: 1871}},
         {type: "1D", start: {mon: 6, d: 12, wkd: [2]}, inherits: "King Kamehameha I Day", first: {era: 1, y: 1871}},
         {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: -1}, titles: {"en": "Seward’s Day", "he": "יום סיווארד", "es": "Día de Seward", "fr": "Jour de Seward"}, first: {era: 1, y: 1867}, urls: {"en": "https://nationaltoday.com/sewards-day/"}},
-        {inherits: "Patriots’ Day", type: "1D", start: {mon: 4, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 1894}, "locations": {"en": "Connecticut, Maine, Massachusetts, North Dakota", "he": "קונטיקט, מיין מסצ׳וסטס, דקוטה הצפונית"}},
+        {inherits: "Patriots’ Day", type: "1D", start: {mon: 4, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 1894}, "locations": {"en": "Connecticut, Maine, Massachusetts, North Dakota", "he": "קונטיקט, מיין, מסצ׳וסטס, דקוטה הצפונית"}},
         {inherits: "Patriots’ Day", type: "1D", start: {mon: 4, d: 19}, first: {era: 1, y: 1894}, "locations": {"en": "Florida and Wisconsin", "he": "פלורידה וויסקונסין"}},
         {inherits: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, d: 3}, first: {era: 1, y: 1808}, inherits: "*BDay*", "locations": {"en": "Florida, Kentucky, Louisiana, Tennessee", "he": "פלורידה, קנטקי, לואיזיאנה, טנסי"}},
         {inherits: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1808}, inherits: "*BDay*", "locations": {"en": "Alabama", "he": "אלבמה"}},
