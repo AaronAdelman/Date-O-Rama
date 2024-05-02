@@ -89,7 +89,7 @@
         {type: "nD", start: {mon: 4, d: 4}, end: {mon: 4, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/discover-national-parks-fortnight/"}, titles: {"en": "Discover National Parks Fortnight"}, emoji: "🏞️"},
         {type: "nD", start: {mon: 4, d: 5}, end: {mon: 4, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/bee-active-bee-healthy-bee-happy-week/"}, titles: {"en": "Bee Active Bee Healthy Bee Happy Week"}, first: {era: 1, y: 2018}, emoji: "🐝", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 4, d: 10}, end: {mon: 4, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/parkinsons-awareness-week/"}, titles: {"en": "Parkinson’s Awareness Week"}, first: {era: 1, y: 1997}, inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/stephen-lawrence-day/"}, titles: {"en": "Stephen Lawrence Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/stephen-lawrence-day/"}, titles: {"en": "Stephen Lawrence Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/calan-mai/"}, titles: {"en": "Calan Mai"}, notes: {"en": "Calan Haf"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/local-and-community-history-month/"}, titles: {"en": "Local and Community History Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-share-a-story-month/"}, titles: {"en": "National Share a Story Month"}, first: {era: 1, y: 1998}},
@@ -165,5 +165,7 @@
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "http://abetterbreakfast.co.uk/deskfast.html"}, titles: {"en": "National Deskfast Day"}, notes: {"en": "Deskfast Day"}, emoji: "🥚🥞🥣"},
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/grand-national/"}, titles: {"en": "Grand National"}, emoji: "🏇", first: {era: 1, y: 1839}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://www.laverbreadday.co.uk/"}, titles: {"en": "National Laverbread Day"}, notes: {"en": "Deskfast Day"}},
+        {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/asparagus-day/"}, inherits: "National Asparagus Day"},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://www.helpanimals.co.uk/help-animals-day-24th-april"}, titles: {"en": "Help Animals Day"}, first: {era: 1, y: 2022}, emoji: "🐿️🐓"},
     ]
 }

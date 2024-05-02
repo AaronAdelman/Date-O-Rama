@@ -55,10 +55,10 @@
         {inherits: "International Mother Earth Day", type: "1D", start: {mon: 4, d: 22}, first: {era: 1, y: 2009}},
         {titles: {"en": "World Book and Copyright Day", "he": "יום הספר הבינלאומי"}, type: "1D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}, urls: {"en": "https://nationaldaycalendar.com/world-book-and-copyright-day-april-23/", "he": "https://www.daysoftheyear.co.il/2018/04/23.html"}, emoji: "©", notes: {"en": "Celebrating the power of greedy corporations to make money by keeping works from entering the public domain."}},
         {inherits: "Talk Like Shakespeare Day", titles: {"en": "English Language Day", "he": "יום השפה האנגלית"}, type: "1D", start: {mon: 4, d: 23}, first: {era: 1, y: 2011}, notes: {"en": "Should be Talk Like Shakespeare Day.  Celebrate it as such."}},
-        {inherits: "Spanish Language Day", type: "1D", start: {mon: 4, d: 23}, first: {era: 1, y: 2011}},
+        {inherits: "Spanish Language Day", type: "1D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}},
         {titles: {"en": "World Immunization Week", "he": "שבוע החיסונים העולמי"}, type: "nD", start: {mon: 4, d: 24}, "end": {mon: 4, d: 30}, first: {type: "nD", era: 1, y: 2012}, emoji: "💉"},
-        {titles: {"en": "International Day of Multilateralism and Diplomacy for Peace", "he": "היום הבינלאומי לרב־צדדיות ודיפלומטיה לשלום"}, type: "1D", start: {mon: 4, d: 24}, first: {era: 1, y: 2019}, emoji: "☮️", notes: {"en": "Yet another observance for the UN to pretend it knows anything about how to make peace."}, urls: {"en": "https://nationaltoday.com/international-day-of-multilateralism-and-diplomacy-for-peace/"}},
-        {titles: {"en": "World Malaria Day", "he": "יום המלריה הבינלאומי"}, type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 2008}, urls: {"en": "https://nationaldaycalendar.com/world-malaria-day-april-25/", "he": "https://www.daysoftheyear.co.il/2021/04/malaria-day.html"}, emoji: "🦟"},
+        {titles: {"en": "International Day of Multilateralism and Diplomacy for Peace", "he": "היום הבינלאומי לרב־צדדיות ודיפלומטיה לשלום"}, type: "1D", start: {mon: 4, d: 24}, first: {era: 1, y: 2019}, emoji: "☮️", notes: {"en": "Yet another observance for the UN to pretend it knows anything about how to make peace."}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-multilateralism-and-diplomacy-for-peace/"}},
+        {titles: {"en": "World Malaria Day", "he": "יום המלריה הבינלאומי"}, type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/malaria-day/", "he": "https://www.daysoftheyear.co.il/2021/04/malaria-day.html"}, emoji: "🦟"},
         {titles: {"en": "International Delegate’s Day", "he": "יום הנציגים הבינלאומי"}, type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 2019}, notes: {"en": "On the same day as World Malaria Day.  Is this a bureaucrat’s prank on the UN General Assembly?"}, urls: {"en": "https://nationaltoday.com/international-delegates-day/"}},
         {inherits: "International Chernobyl Disaster Remembrance Day", type: "1D", start: {mon: 4, d: 26}, first: {era: 1, y: 2017}},
         {inherits: "World Intellectual Property Day", type: "1D", start: {mon: 4, d: 26}, first: {era: 1, y: 2017}},
@@ -222,7 +222,7 @@
 
         {inherits: "Vesak", titles: {"en": "Vesak, the Day of the Full Moon", "he": "ווסק, יום הירח המלא"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 5}, first: {"zmoPhase": "1stFull", era: 1, y: 2000}, notes: {"en": "The birthday of the Buddha.  Whoever decided to make this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
 
-        {inherits: "World Book Day", type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 1}, first: {era: 1, y: 1996}},
+        {inherits: "World Book Day", type: "1D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}},
         {titles: {"en": "World Hearing Day", "he": "יום השמיעה הבינלאומי"}, type: "1D", start: {mon: 3, d: 3}, first: {era: 1, y: 2016}, emoji: "👂", urls: {"en": "https://worldhearingday.org/", "he": "https://www.daysoftheyear.co.il/2021/03/hearing-day.html"}},
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: -1}, inherits: "World Leprosy Day"},
         {type: "1D", start: {mon: 1, d: 30}, titles: {"en": "World Neglected Tropical Diseases Day", "he": "יום המחלות הטרופיות המוזנחות העולמי"}, notes: {"en": "World NTD Day"}, urls: {"en": "https://www.neglecteddiseases.gov/resources/events/world-ntd-day/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},

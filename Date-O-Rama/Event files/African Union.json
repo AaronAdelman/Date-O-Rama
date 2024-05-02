@@ -9,7 +9,7 @@
         {type: "1D", titles: {"en": "African Day of School Feeding"}, start: {mon: 3, d: 1}, emoji: "🥘"},
         {type: "1D", titles: {"en": "Africa Environment and Wangari Maathai Day"}, start: {mon: 3, d: 3}, emoji: "🌱"},
         {type: "1D", titles: {"en": "African Union Day of Commemoration of the 1994 Genocide Against the Tutsi in Rwanda"}, start: {mon: 4, d: 7}},
-        {type: "1D", titles: {"en": "Day of the Battle of Cuito Cuanavale"}, start: {d: 23, mon: 4}},
+        {type: "1D", titles: {"en": "Day of the Battle of Cuito Cuanavale"}, start: {mon: 4, d: 23}},
         {type: "1D", inherits: "Africa Day", start: {mon: 5, d: 25}},
         {type: "1D", titles: {"en": "Africa Border Day"}, start: {mon: 6, d: 7}},
         {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1976}},

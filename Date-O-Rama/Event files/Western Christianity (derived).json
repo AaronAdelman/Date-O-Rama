@@ -103,7 +103,7 @@
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://www.daysoftheyear.com/days/national-tartar-sauce-day/"}, titles: {"en": "National Tartar Sauce Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/cinco-de-marcho/"}, titles: {"en": "Cinco de Marcho"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {"Easter": "Easter"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}, titles: {"en": "National Baked Ham with Pineapple Day"}},
-        {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-lovers-day/"}, titles: {"en": "National Lover’s Day"}},
+        {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/national-lovers-day/"}, titles: {"en": "National Lover’s Day"}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/slay-a-dragon-day/"}, titles: {"en": "Slay a Dragon Day"}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/apple-gifting-day/"}, titles: {"en": "Apple Gifting Day"}, emoji: "🍎"},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/new-years-dishonor-list-day/"}, titles: {"en": "New Year’s Dishonor List Day"}, first: {era: 1, y: 1976}},

@@ -94,7 +94,7 @@
         {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/russia-national-flag-day/", "he": "https://www.daysoftheyear.co.il/2018/08/22.html"}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/special-operations-forces-day-2/"}, titles: {"en": "Special Operations Forces Day", "ru": "День Сил специальных операций"}, first: {era: 1, y: 2015}, notes: {"en": "Day of Special Operations Forces"}},
         {type: "nD", start: {mon: 6, d: 12}, end: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/white-nights-festival-in-st-petersburg/"}, titles: {"en": "White Nights Festival in St. Petersburg"}, emoji: "🎆", first: {era: 1, y: 1993}},
-        {type: "1D", start: {mon: 4, d: 25}, inherits: "East Meets West Day", first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 4, d: 25}, inherits: "East Meets West Day", first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 7, d: 28}, inherits: "Baptism Day of Kyivan Rus"},
         {type: "1D", start: {mon: 8, d: 14}, titles: {"en": "Honey Feast of the Savior"}, emoji: "🍯"},
         {type: "1D", start: {mon: 8, d: 29}, titles: {"en": "Nut Feast of the Savior"}, emoji: "🌰"},
