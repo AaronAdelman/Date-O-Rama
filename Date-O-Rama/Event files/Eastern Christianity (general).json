@@ -23,7 +23,7 @@
         {inherits: "Holy Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -5}},
         {inherits: "Holy Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -4}},
         {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
-        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://nationaltoday.com/orthodox-good-friday/"}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/orthodox-holy-saturday/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, notes: {"en": "Bright Week (day 1)"}, urls: {"en": "https://nationaltoday.com/orthodox-easter-day/"}},
         {notes: {"en": "Bright Week (day 2)"}, inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://nationaltoday.com/orthodox-easter-monday/"}},

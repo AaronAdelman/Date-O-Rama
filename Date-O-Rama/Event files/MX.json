@@ -45,7 +45,7 @@
         {inherits: "Carnival (day 6)", type: "1D", start: {"Easter": "Easter", "offsetD": -47}},
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 30}, first: {era: 1, y: 1925}, urls: {"en": "https://nationaltoday.com/day-of-the-child/"}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 30}, first: {era: 1, y: 1954}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-child/"}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 5, d: 15}},
         {type: "1D", start: {mon: 5, d: 23}, inherits: "Student’s Day"},
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas", "es": "Las Posadas"}},

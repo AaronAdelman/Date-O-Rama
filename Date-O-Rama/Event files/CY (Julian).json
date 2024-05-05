@@ -5,7 +5,7 @@
     calendarCode: "jul",
     calendarColor: {"red": 0.84, "green": 0.47, "blue": 0.00},
     eventSpecifications: [
-        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Easter Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": 2}},

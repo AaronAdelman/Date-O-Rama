@@ -9,7 +9,7 @@
         {titles: {"en": "World Humanist Day"}, type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}, first: {era: 1, y: 1989}},
         {titles: {"en": "Ingersoll Day"}, type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/ingersoll-day/"}},
         {titles: {"en": "HumanLight", "he": "חג האור האנושי"}, type: "1D", start: {mon: 12, d: 23}, first: {era: 1, y: 2001}, urls: {"en": "https://humanlight.org/"}, emoji: "🕯"},
-        {titles: {"en": "National Day of Reason"}, type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 1}, first: {era: 1, y: 2003}, emoji: "⍰", urls: {"en": "https://nationaldaycalendar.com/national-day-of-reason-first-thursday-in-may/"}},
+        {titles: {"en": "National Day of Reason"}, type: "1D", start: {mon: 5, d: 4}, first: {era: 1, y: 2003}, emoji: "⍰", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-day-of-reason-may-4"}},
         {titles: {"en": "New Year Reality Revival"}, type: "1M", start: {mon: 1}, urls: {"en": "https://secularseasons.org/january/reality_revival.html"}},
         {titles: {"en": "Freethinkers Day"}, type: "1D", start: {mon: 1, d: 29}, first: {era: 1, y: 1990}, urls: {"en": "https://www.daysoftheyear.com/days/freethinkers-day/"}},
         {titles: {"en": "Chevalier de la Barre Day"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://secularseasons.org/july/barre_day.html"}},
