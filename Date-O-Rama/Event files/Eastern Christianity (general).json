@@ -26,7 +26,7 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/orthodox-holy-saturday/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, notes: {"en": "Bright Week (day 1)"}, urls: {"en": "https://nationaltoday.com/orthodox-easter-day/"}},
-        {notes: {"en": "Bright Week (day 2)"}, inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://nationaltoday.com/orthodox-easter-monday/"}},
+        {notes: {"en": "Bright Week (day 2)"}, inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
         {titles: {"en": "Bright Week (day 3)"}, type: "1D", start: {"Easter": "Easter", "offsetD": 2}},
         {titles: {"en": "Bright Week (day 4)"}, type: "1D", start: {"Easter": "Easter", "offsetD": 3}},
         {titles: {"en": "Bright Week (day 5)"}, type: "1D", start: {"Easter": "Easter", "offsetD": 4}},

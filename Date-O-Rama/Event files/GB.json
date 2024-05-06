@@ -38,7 +38,7 @@
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en": "Late Summer Bank Holiday"}},
         
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, inherits: "Early May Bank Holiday", urls: {"en": "https://nationaltoday.com/early-may-bank-holiday/"}, first: {era: 1, y: 1978}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, inherits: "Early May Bank Holiday", urls: {"en": "https://www.daysoftheyear.com/days/early-may-bank-holiday/"}, first: {era: 1, y: 1978}},
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day", urls: {"en": "https://nationaltoday.com/battle-of-the-boyne/"}, first: {era: 1, y: 1690}},
         {type: "1D", start: {mon: 7, d: 13, thruD: 14, wkd: [2]}, titles: {"en": "Orangemen’s Day Holiday"}},
         {type: "1D", start: {mon: 12, d: 27, thruD: 29, wkd: [2]}, titles: {"en": "Substitute Bank Holiday for Christmas Day"}, inherits: "Bank Holiday"},

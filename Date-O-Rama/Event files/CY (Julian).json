@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
         {inherits: "Easter Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": 2}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},

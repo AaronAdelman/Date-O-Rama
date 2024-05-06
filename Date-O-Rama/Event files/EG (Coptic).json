@@ -10,7 +10,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 4, d: 29}},
         {type: "1D", start: {mon: 4, d: 30, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/coptic-christmas"}, inherits: "Christmas Holiday"},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, calendarCode: "jul"},
-        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, calendarCode: "jul", notes: {"en": "Sham El-Nessim"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, calendarCode: "jul", notes: {"en": "Sham El-Nessim"}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
         
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
     ]
