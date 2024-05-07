@@ -95,7 +95,7 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-share-a-story-month/"}, titles: {"en": "National Share a Story Month"}, first: {era: 1, y: 1998}, notes: {"en": "Storytelling Month"}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/firefighters-memorial-day/"}, titles: {"en": "Firefighters’ Memorial Day"}},
         {type: "nD", start: {mon: 5, d: 10}, end: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-mental-health-awareness-week/"}, titles: {"en": "National Mental Health Awareness Week"}, inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/somerset-day/"}, titles: {"en": "Somerset Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/somerset-day/"}, titles: {"en": "Somerset Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 12, thruD: 18, wkd: [6]}, urls: {"en": "https://nationaltoday.com/shades-day/"}, titles: {"en": "Shades Day"}},
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/spinal-cord-injury-awareness-day/"}, titles: {"en": "Spinal Cord Injury Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/waiters-day/", "he": "https://www.daysoftheyear.co.il/2018/09/25.html"}, titles: {"en": "National Waiters’ Day", "he": "יום המלצרים"}, first: {era: 1, y: 2013}},

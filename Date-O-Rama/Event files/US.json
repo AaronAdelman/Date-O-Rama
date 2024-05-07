@@ -349,7 +349,7 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-digestive-diseases-awareness-month/"}, titles: {"en": "National Digestive Diseases Awareness Month"}, first: {era: 1, y: 1988}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-duckling-month/"}, titles: {"en": "National Duckling Month"}, first: {era: 1, y: 1989}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-foster-care-month/"}, titles: {"en": "National Foster Care Month"}, first: {era: 1, y: 1988}},
-        {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/national-foster-care-day/"}, titles: {"en": "National Foster Care Day"}},
+        {type: "1D", start: {mon: 5, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-foster-care-day-first-tuesday-in-may"}, titles: {"en": "National Foster Care Day"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-inventors-month/"}, titles: {"en": "National Inventors Month"}, first: {era: 1, y: 2011}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/photo-month/"}, titles: {"en": "National Photography Month"}, notes: {"en": "National Photo Month"}, first: {era: 1, y: 1987}, emoji: "📷"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-physical-fitness-and-sports-month/"}, titles: {"en": "National Physical Fitness and Sports Month"}},
