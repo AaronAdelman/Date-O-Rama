@@ -862,7 +862,6 @@
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-packaging-design-day/"}, titles: {"en": "National Packaging Design Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-paste-up-day/"}, titles: {"en": "National Paste Up Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/roast-leg-of-lamb-day/"}, titles: {"en": "National Roast Leg of Lamb Day"}},
-        {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/donkey-week/"}, titles: {"en": "Donkey Week"}, first: {era: 1, y: 1983}, emoji: "🫏"},
         {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-amyloidosis-day/"}, titles: {"en": "National Amyloidosis Day"}, first: {era: 1, y: 2016}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/national-coconut-cream-pie-day/"}, titles: {"en": "National Coconut Cream Pie Day"}, emoji: "🥧"},

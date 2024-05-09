@@ -137,7 +137,7 @@ extension String {
         case REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Singapore, REGION_CODE_Vietnam:
             return [.Gregorian, .Chinese]
             
-        case REGION_CODE_Brunei_Darussalam, REGION_CODE_Indonesia, REGION_CODE_Malaysia, REGION_CODE_Timor_Leste, REGION_CODE_Mauritius, REGION_CODE_Philippines:
+        case REGION_CODE_Brunei_Darussalam, REGION_CODE_Indonesia, REGION_CODE_Malaysia, REGION_CODE_Timor_Leste, REGION_CODE_Mauritius, REGION_CODE_Philippines, REGION_CODE_Suriname:
             return [.Gregorian, .Chinese, .IslamicSolar]
             
         case REGION_CODE_Ethiopia:

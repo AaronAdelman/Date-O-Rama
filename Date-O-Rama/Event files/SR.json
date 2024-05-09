@@ -1,17 +1,29 @@
 {
     titles: {"*": "SR"},
     "//": "Suriname",
+    "TODO": "Muslim and Hindu observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/suriname/labour-day"}, inherits: "Worker’s Day"},
+        {titles: {"en": "Keti Koti"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day"},
+        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/suriname-indigenous-peoples-day/"}, titles: {"en": "Indigenous People’s Day", "he": "יום העמים הילידים"}},
+        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Maroons Day"}, urls: {"en": "https://nationaltoday.com/maroons-day/"}, first: {era: 1, y: 2011}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 25}, first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/suriname-independence-day/"}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/suriname/christmas-holiday"}, titles: {"en": "Day after Christmas"}},
+        
+        {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/indian-arrival-day-guyana/"}, inherits: "Indian Arrival Day", first: {era: 1, y: 1873}},
+        {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
+        
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 5}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 25}, first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/suriname-independence-day/"}},
-        {titles: {"en": "Keti Koti"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day"},
-        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Maroons Day"}, urls: {"en": "https://nationaltoday.com/maroons-day/"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/day-of-liberation-and-innovation/"}, titles: {"en": "Day of Liberation and Innovation"}, first: {era: 1, y: 2018}},
-        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/suriname-indigenous-peoples-day/"}, titles: {"en": "Indigenous People’s Day", "he": "יום העמים הילידים"}},
    ]
 }

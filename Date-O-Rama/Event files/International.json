@@ -1020,6 +1020,7 @@
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/free-trade-day/"}, titles: {"en": "Free Trade Day"}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/reward-yourself-day/"}, titles: {"en": "Reward Yourself Day"}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/world-donkey-day/", "he": "https://www.daysoftheyear.co.il/2019/05/donkey-day.html"}, titles: {"en": "World Donkey Day", "he": "יום החמור העולמי"}, first: {era: 1, y: 2018}, emoji: "🫏"},
+        {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/donkey-week/"}, titles: {"en": "Donkey Week"}, first: {era: 1, y: 1983}, emoji: "🫏"},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/ovarian-cancer-day/"}, titles: {"en": "World Ovarian Cancer Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-red-cross-and-red-crescent-day/"}, titles: {"en": "World Red Cross and Red Crescent Day"}, first: {era: 1, y: 1910}, emoji: "🏥"},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/sign-language-week/"}, titles: {"en": "Sign Language Week", "he": "השבוע לשפות הסימנים"}},
