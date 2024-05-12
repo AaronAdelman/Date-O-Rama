@@ -91,5 +91,7 @@
         {type: "1D", start: {mon: 10, d: 19, thruD: 25, wkd: [4]}, urls: {"en": "https://nationaltoday.com/geelong-cup-day/"}, titles: {"en": "Geelong Cup Day"}, first: {era: 1, y: 1872}},
         {type: "1D", start: {mon: 12, d: 26}, inherits: "National Leftovers Day", first: {era: 1, y: 2009}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/no-meat-may/"}, titles: {"en": "No Meat May"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/horse-rescue-day/"}, titles: {"en": "Horse Rescue Day"}, inherits: "*Horse*"},
+
    ]
 }

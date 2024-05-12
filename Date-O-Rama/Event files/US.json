@@ -101,10 +101,10 @@
         {type: "1D", start: {mon: 11, d: 9}, titles: {"en": "World Freedom Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
         {type: "1D", start: {mon: 12, d: 4}, titles: {"en": "World Wildlife Conservation Day", "he": "יום שימור חיות הבר העולמי"}, first: {era: 1, y: 2012}, emoji: "🏞", urls: {"en": "https://www.daysoftheyear.com/days/world-wildlife-conservation-day/", "he": "https://www.daysoftheyear.co.il/2018/12/world-wildlife-conservation-day.html"}},
         {type: "1D", start: {d: 17, mon: 12}, titles: {"en": "Wright Brothers Day", "he": "יום האחים רייט"}, first: {era: 1, y: 1959}, emoji: "🛩", urls: {"en": "https://www.daysoftheyear.com/days/wright-brothers-day/", "he": "https://www.daysoftheyear.co.il/2018/12/wright-brothers-day.html"}},
-        {type: "1D", start: {mon: 5, d: 15}, titles: {"en": "Peace Officers Memorial Day"}, first: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en": "https://nationaldaycalendar.com/national-police-officers-memorial-day-may-15/"}},
+        {type: "1D", start: {mon: 5, d: 15}, titles: {"en": "Peace Officers Memorial Day"}, first: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en": "https://www.daysoftheyear.com/days/peace-officers-memorial-day/"}},
         {inherits: "Groundhog Day", type: "1D", start: {mon: 2, d: 2}, first: {era: 1, y: 1887}},
         {inherits: "National Maritime Day", type: "1D", start: {mon: 5, d: 22}, first: {era: 1, y: 1933}, urls: {"en": "https://www.daysoftheyear.com/days/maritime-day/"}},
-        {type: "1D", start: {mon: 5, d: 17}, titles: {"en": "National Walnut Day"}, urls: {"en": "https://nationaldaycalendar.com/national-walnut-day-may-17/"}, first: {era: 1, y: 1958}},
+        {type: "1D", start: {mon: 5, d: 17}, titles: {"en": "National Walnut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-walnut-day/"}, first: {era: 1, y: 1949}},
         {inherits: "Confederate Memorial Day", type: "1D", start: {mon: 4, wkd: [2], wkdRecurrence: 4}, first: {era: 1, y: 1866}, "locations": {"en": "Alabama and Georgia", "he": "אלבמה וג׳ורג׳יה"}},
         {inherits: "Confederate Memorial Day", type: "1D", start: {mon: 4, wkd: [2], wkdRecurrence: -1}, first: {era: 1, y: 1866}, "locations": {"en": "Mississippi", "he": "מיסיסיפי"}},
         {inherits: "Confederate Memorial Day", type: "1D", start: {mon: 4, d: 10}, first: {era: 1, y: 1866}, "locations": {"en": "North Carolina and South Carolina", "he": "קרוליינה הצפונית וקרוליינה הדרומית"}},
@@ -165,7 +165,7 @@
         {type: "1M", start: {mon: 10}, titles: {"en": "Polish American Heritage Month"}, urls: {"en": "https://nationaldaycalendar.com/polish-american-heritage-month-october/"}, first: {era: 1, y: 1986}, emoji: "🇵🇱🇺🇸"},
         {type: "1M", start: {mon: 5}, titles: {"en": "Haitian Heritage Month"}, urls: {"en": "https://nationaltoday.com/haitian-heritage-month/"}, first: {era: 1, y: 1998}, emoji: "🇭🇹🇺🇸"},
         {type: "1D", start: {mon: 4, d: 13}, titles: {"en": "Thomas Jefferson’s Birthday"}, notes: {"en": "National Thomas Jefferson Day\nThomas Jefferson Day"}, inherits: "*BDay*", first: {era: 1, y: 1743}, urls: {"en": "https://www.daysoftheyear.com/days/thomas-jefferson-day/"}},
-        {inherits: "Armed Forces Day", type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/armed-forces-day/"}, first: {era: 1, y: 1950}},
+        {inherits: "Armed Forces Day", type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/us-armed-forces-day/"}, first: {era: 1, y: 1950}, notes: {"en": "Military Appreciation Day\nNational Military Day"}},
         {inherits: "Veterans Day", type: "1D", start: {mon: 3, d: 29}, titles: {"en": "Vietnam Veterans Day"}, notes: {"en": "National Vietnam War Veterans Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-vietnam-war-veterans-day-march-29?utm_source=Iterable&utm_medium=email&utm_campaign=9337083&hashed_email=e057e3635a89f24c2724e6a2dd6dcb65103adb85&lctg=301337751"}},
         {type: "nD", start: {mon: 6, d: 14}, "end": {mon: 7, d: 4}, titles: {"en": "Honor America Days"}, urls: {"en": "https://en.wikipedia.org/wiki/Honor_America_Days"}, first: {era: 1, y: 1998}},
         {titles: {"en": "National Aviation Day", "he": "יום התעופה הלאומי"}, type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://en.wikipedia.org/wiki/National_Aviation_Day"}, first: {era: 1, y: 1939}, emoji: "👨‍✈️👩‍✈️"},
@@ -391,7 +391,7 @@
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/plant-something-day/"}, titles: {"en": "Plant Something Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-river-cleanup-day/"}, titles: {"en": "National River Cleanup Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-women-in-aerospace-day/"}, titles: {"en": "National Women in Aerospace Day"}, first: {era: 1, y: 2022}, emoji: "👩"},
-        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/stepmothers-day/"}, titles: {"en": "Stepmother’s Day"}, first: {era: 1, y: 2000}, inherits: "Mother’s Day"},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/stepmothers-day/"}, titles: {"en": "Stepmother’s Day"}, first: {era: 1, y: 2000}, inherits: "Mother’s Day"},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/harvey-milk-day/"}, titles: {"en": "Harvey Milk Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/asparagus-day/"}, inherits: "National Asparagus Day"},
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-missing-childrens-day/"}, titles: {"en": "National Missing Children’s Day"}, first: {era: 1, y: 1983}, emoji: "👦👧"},
@@ -517,6 +517,7 @@
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/frozen-food-day/", "he": "https://www.daysoftheyear.co.il/2021/03/frozen-food-day.html"}, titles: {"en": "National Frozen Food Day", "he": "יום האוכל הקפוא הלאומי"}, emoji: "🧊", first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/alloimmunization-and-hdfn-day/"}, titles: {"en": "Alloimmunization and HDFN Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/sun-day/"}, titles: {"en": "Sun Day"}, notes: {"en": "International Sun Day"}, first: {era: 1, y: 1978}, emoji: "☉"},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/straw-hat-day/"}, titles: {"en": "National Straw Hat Day"}, first: {era: 1, y: 1920}, emoji: "👒"},
 
 
 
