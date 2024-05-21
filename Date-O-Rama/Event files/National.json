@@ -938,6 +938,7 @@
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://www.nationalrescuedogday.com/"}, titles: {"en": "National Rescue Dog Day"}, inherits: "*Dog*", first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-streaming-day/"}, titles: {"en": "National Streaming Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sugarbee-apple-day-may-20"}, titles: {"en": "National SugarBee® Apple Day"}, emoji: "🍎", first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/national-eat-more-fruits-and-vegetables-day/"}, titles: {"en": "National Eat More Fruits and Vegetables Day"}, notes: {"en": "Eat More Fruits and Vegetables Day"}, first: {era: 1, y: 2015}, emoji: "🍇🌽"},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/memo-day/"}, titles: {"en": "National Memo Day"}, first: {era: 1, y: 1989}, emoji: "📝"},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/national-strawberries-and-cream-day/"}, titles: {"en": "National Strawberries and Cream Day"}, emoji: "🍓"},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/national-talk-like-yoda-day/"}, titles: {"en": "National Talk Like Yoda Day"}},
