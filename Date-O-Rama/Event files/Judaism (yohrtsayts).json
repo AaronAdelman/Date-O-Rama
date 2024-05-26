@@ -98,7 +98,7 @@
         {titles: {"he": "יום־שנה של הרב איסר יהודה אונטרמן"}, type: "1D", start: {d: 24, mon: 5}, first: {era: 0, y: 5736}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ ישראל סלנטר"}, type: "1D", start: {mon: 5, d: 25}, first: {era: 0, y: 5543}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הט״ז"}, type: "1D", start: {d: 26, mon: 5}, first: {era: 0, y: 5427}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הסבא מסלבודקה"}, type: "1D", start: {d: 29, mon: 5}, first: {era: 0, y: 5587}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הסבא מסלבודקה"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 0, y: 5587}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הש״ך"}, type: "1D", start: {d: 1, mon: 6}, first: {era: 0, y: 5423}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי אברהם אבן עזרא"}, type: "1D", start: {d: 1, mon: 6}, first: {era: 0, y: 4927}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של האדר״ת"}, type: "1D", start: {d: 3, mon: 6}, first: {era: 0, y: 5565}, inherits: "*DeathAnniv*"},

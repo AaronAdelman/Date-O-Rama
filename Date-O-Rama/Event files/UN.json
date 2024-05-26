@@ -84,10 +84,10 @@
         {titles: {"en": "International Day to End Obstetric Fistula", "he": "היום הבינלאומי לסיום פיסטולה מיילדת"}, type: "1D", start: {mon: 5, d: 23}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/international-day-to-end-obstetric-fistula-may-23/"}, emoji: "🩺"},
         {titles: {"en": "Week of Solidarity with the Peoples of Non-Self-Governing Territories", "he": "שבוע של סולידריות עם עמי השטחים שאינם בשליטה עצמית"}, type: "nD", start: {mon: 5, d: 25}, "end": {mon: 5, d: 31}, first: {type: "nD", era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/international-week-of-solidarity-with-the-peoples-of-non-self-governing-territories/"}},
 
-        {titles: {"en": "International Day of UN Peacekeepers", "he": "היום הבינלאומי של שומרי השלום של האו״ם"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-un-peacekeepers-may-29/"}, emoji: "🇺🇳", notes: {"en": "Celebrating an organization set up to maintain the peace which has consistently failed in its mission"}},
+        {titles: {"en": "International Day of UN Peacekeepers", "he": "היום הבינלאומי של שומרי השלום של האו״ם"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 1, y: 2003}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-un-peacekeepers/"}, emoji: "🇺🇳", notes: {"en": "Celebrating an organization set up to maintain the peace which has consistently failed in its mission"}},
         {inherits: "World No-Tobacco Day", type: "1D", start: {mon: 5, d: 31}, first: {era: 1, y: 1989}},
 
-        {titles: {"en": "Global Day of Parents", "he": "יום ההורים העולמי"}, type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/global-day-of-parents-june-1/", "he": "https://www.daysoftheyear.co.il/2019/06/parents-day.html"}, inherits: "Parents’ Day"},
+        {titles: {"en": "Global Day of Parents", "he": "יום ההורים העולמי"}, type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/global-day-of-parents/", "he": "https://www.daysoftheyear.co.il/2019/06/parents-day.html"}, inherits: "Parents’ Day"},
         {titles: {"en": "World Bicycle Day", "he": "יום האופניים העולמי"}, type: "1D", start: {mon: 6, d: 3}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/world-bicycle-day/", "he": "https://www.daysoftheyear.co.il/2020/06/bicycle-day.html"}, emoji: "🚲"},
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "1D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {inherits: "World Environment Day", type: "1D", start: {mon: 6, d: 5}, first: {era: 1, y: 1987}},
@@ -248,6 +248,8 @@
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/world-habitat-awareness-month/"}, titles: {"en": "World Habitat Awareness Month", "he": "חודש בית הגידול העולמי"}, emoji: "🏙", first: {era: 1, y: 1986}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/universal-human-rights-month/"}, titles: {"en": "Universal Human Rights Month"}, emoji: "⚖️"},
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Global Family Day"}, urls: {"en": "https://www.daysoftheyear.com/days/global-family-day/"}, inherits: "Family Day", first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-the-potato/"}, titles: {"en": "International Day of the Potato"}, emoji: "🥔", first: {era: 1, y: 2023}},
+
 
         {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, "end": {era: 1, y: 2032}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", "end": {era: 1, y: 2030}},

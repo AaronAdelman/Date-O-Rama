@@ -33,7 +33,7 @@
         {inherits: "St. Andrew’s Day", type: "1D", start: {mon: 11, d: 30}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, inherits: "Spring Bank Holiday", notes: {"en": "Spring Holiday"}, urls: {"en": "https://nationaltoday.com/spring-bank-holiday/"}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, inherits: "Spring Bank Holiday", notes: {"en": "Spring Holiday"}, urls: {"en": "https://www.daysoftheyear.com/days/spring-bank-holiday/"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}, notes: {"en": "Late Summer Bank Holiday"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en": "Late Summer Bank Holiday"}},
         
@@ -100,12 +100,11 @@
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/spinal-cord-injury-awareness-day/"}, titles: {"en": "Spinal Cord Injury Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/waiters-day/", "he": "https://www.daysoftheyear.co.il/2018/09/25.html"}, titles: {"en": "National Waiters’ Day", "he": "יום המלצרים"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-numeracy-day-uk/"}, titles: {"en": "National Numeracy Day"}, first: {era: 1, y: 2018}},
-        {type: "nD", start: {mon: 5, d: 17}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-smile-month/"}, titles: {"en": "National Smile Month"}, emoji: "😀"},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/gloucestershire-cheese-rolling/"}, titles: {"en": "Gloucestershire Cheese Rolling", "he": "המירוץ אחר הגבינה בגבעת קופר, אנגליה"}, notes: {"en": "Cooper’s Hill Cheese Rolling and Wake"}, first: {era: 1, y: 2011}, emoji: "🧀"},
-        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-biscuit-day-uk/", "he": "https://www.daysoftheyear.co.il/2019/05/biscuit-day.html"}, titles: {"en": "National Biscuit Day", "he": "יום הביסקוויט"}, emoji: "🍪"},
-        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/oak-apple-day/"}, titles: {"en": "Oak Apple Day"}, first: {era: 1, y: 1660}, emoji: "🌳"},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-rolling-gloucester/"}, titles: {"en": "Cheese Rolling Gloucester", "he": "המירוץ אחר הגבינה בגבעת קופר, אנגליה"}, notes: {"en": "Gloucestershire Cheese Rolling\nCooper’s Hill Cheese Rolling and Wake"}, first: {era: 1, y: 2011}, emoji: "🧀"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://www.daysoftheyear.com/days/biscuit-day/", "he": "https://www.daysoftheyear.co.il/2019/05/biscuit-day.html"}, titles: {"en": "National Biscuit Day", "he": "יום הביסקוויט"}, emoji: "🍪"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://www.daysoftheyear.com/days/oak-apple-day/"}, titles: {"en": "Oak Apple Day"}, first: {era: 1, y: 1660}, emoji: "🌳"},
         {type: "nD", end: {mon: 6, d: 4}, start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, titles: {"en": "National BBQ Week"}, emoji: "🍖"},
-        {type: "nD", start: {mon: 5, d: 31}, end: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/garden-wildlife-week/"}, titles: {"en": "Garden Wildlife Week"}, emoji: "🪴"},
+        {type: "nD", start: {mon: 5, d: 31}, end: {mon: 6, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/garden-wildlife-week/"}, titles: {"en": "Garden Wildlife Week"}, emoji: "🪴"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/handsel-monday/"}, titles: {"en": "Handsel Monday"}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-first-foot-day/"}, titles: {"en": "National First Foot Day"}, first: {era: 1, y: 1902}, notes: {"en": "National First-Foot Day"}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-treasures-day/"}, titles: {"en": "Heritage Treasures Day"}, first: {era: 1, y: 2017}},
@@ -170,5 +169,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.livingstreets.org.uk/get-involved/national-walking-month"}, titles: {"en": "National Walking Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://fightbladdercancer.co.uk/"}, titles: {"en": "Bladder Cancer Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.pwsa.co.uk/"}, titles: {"en": "Prader-Willi Syndrome Awareness Month"}, inherits: "*MedAwareness*"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://www.daysoftheyear.com/days/guitars-on-the-beach/"}, titles: {"en": "Guitars On The Beach"}, emoji: "🎸"},
     ]
 }

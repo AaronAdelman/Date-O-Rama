@@ -83,7 +83,7 @@
         {type: "1D", start: {d: 24, mon: 5}, titles: {"en": "Bulgarian Language Day"}},
         {type: "1D", start: {d: 25, mon: 5}, titles: {"en": "Slovak Language Day"}},
         {type: "1D", start: {d: 27, mon: 5}, titles: {"en": "Mihai Viteazul Day"}},
-        {type: "1D", start: {d: 31, mon: 5}, titles: {"en": "Military Reserves Day"}},
+        {type: "1D", start: {mon: 5, d: 31}, titles: {"en": "Military Reserves Day"}},
         {type: "1D", start: {wkd: [1], wkdRecurrence: -1, mon: 5}, titles: {"en": "Day of the Romanians Everywhere"}},
         {type: "1D", start: {wkd: [1], wkdRecurrence: -1, mon: 5}, titles: {"en": "Romanian Businessperson Day"}},
         {type: "1D", start: {d: 1, mon: 6}, inherits: "Parents’ Day"},
