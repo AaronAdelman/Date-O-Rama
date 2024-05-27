@@ -80,7 +80,7 @@
         {type: "1D", start: {mon: 5, d: 15}, titles: {"en": "National Veterinary Day"}},
         {inherits: "International Day of Families", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 1994}},
         {inherits: "World Day for Cultural Diversity for Dialogue and Development", type: "1D", start: {mon: 5, d: 21}, first: {era: 1, y: 2002}},
-        {type: "1D", start: {d: 24, mon: 5}, titles: {"en": "Bulgarian Language Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, titles: {"en": "Bulgarian Language Day"}},
         {type: "1D", start: {d: 25, mon: 5}, titles: {"en": "Slovak Language Day"}},
         {type: "1D", start: {d: 27, mon: 5}, titles: {"en": "Mihai Viteazul Day"}},
         {type: "1D", start: {mon: 5, d: 31}, titles: {"en": "Military Reserves Day"}},

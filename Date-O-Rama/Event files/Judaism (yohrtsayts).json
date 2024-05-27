@@ -95,7 +95,7 @@
         {titles: {"he": "יום־שנה של רבי חיים פלג׳י"}, type: "1D", start: {d: 17, mon: 5}, first: {era: 0, y: 5528}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב עובדיה הדאיה"}, type: "1D", start: {d: 20, mon: 5}, first: {era: 0, y: 5729}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ מנחם מנדל מקוצק"}, type: "1D", start: {d: 22, mon: 5}, first: {era: 0, y: 5519}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב איסר יהודה אונטרמן"}, type: "1D", start: {d: 24, mon: 5}, first: {era: 0, y: 5736}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב איסר יהודה אונטרמן"}, type: "1D", start: {mon: 5, d: 24}, first: {era: 0, y: 5736}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ ישראל סלנטר"}, type: "1D", start: {mon: 5, d: 25}, first: {era: 0, y: 5543}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הט״ז"}, type: "1D", start: {d: 26, mon: 5}, first: {era: 0, y: 5427}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הסבא מסלבודקה"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 0, y: 5587}, inherits: "*DeathAnniv*"},
