@@ -976,6 +976,7 @@
         {type: "1D", start: {mon: 5, d: 23, thruD: 29, wkd: [1]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-family-fun-day-sunday-before-memorial-day"}, titles: {"en": "National Family Fun Day"}, emoji: "🧑‍🧑‍🧒‍🧒"},
         {type: "1D", start: {mon: 5, d: 19, thruD: 25, wkd: [4]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/emergency-medical-services-for-children-day"}, titles: {"en": "Emergency Medical Services for Children Day"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://www.multiplebirths.ca/national-multiple-births-awareness-day"}, titles: {"en": "National Multiple Births Awareness Day"}, notes: {"en": "NMBAD"}, first: {era: 1, y: 2005}, emoji: "👶👶👶", inherits: "*MedAwareness*"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-529-day-may-29"}, titles: {"en": "National 529 Day"}, emoji: "🐖🎓", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://www.daysoftheyear.com/days/national-coq-au-vin-day/"}, titles: {"en": "National Coq Au Vin Day"}, emoji: "🍗"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-hydroxyapatite-day/"}, titles: {"en": "National Hydroxyapatite Day"}},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, titles: {"en": "National Snail Day"}, emoji: "🐌"},
