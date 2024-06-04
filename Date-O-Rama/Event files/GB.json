@@ -170,5 +170,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://fightbladdercancer.co.uk/"}, titles: {"en": "Bladder Cancer Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.pwsa.co.uk/"}, titles: {"en": "Prader-Willi Syndrome Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://www.daysoftheyear.com/days/guitars-on-the-beach/"}, titles: {"en": "Guitars On The Beach"}, emoji: "🎸"},
+        {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://www.feeduk.org/infant-feeding-day"}, titles: {"en": "Infant Feeding Day"}, first: {era: 1, y: 2019}, emoji: "👨‍🍼👩‍🍼"},
     ]
 }
