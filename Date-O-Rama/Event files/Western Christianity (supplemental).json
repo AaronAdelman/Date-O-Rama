@@ -25,7 +25,7 @@
         {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},
         {type: "1D", start: {d: 25, mon: 3}, titles: {"en": "International Day of the Unborn Child"}, first: {era: 1, y: 1993}, urls: {"en": "https://nationaltoday.com/international-day-of-the-unborn-child/"}},
         {type: "1D", start: {d: 29, mon: 3}, titles: {"en": "Taiwan Youth Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
-        {inherits: "National Doughnut Day", type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 1}},
+        {inherits: "National Doughnut Day", type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}},
         {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
         {inherits: "Nakba Day", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 2023}, notes: {"en": "Thank the US Presbyterian Church for adopting an antisemitic hate-fest."}, titles: {"en": "Nakba Remembrance Day"}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: -1}, titles: {"en": "Social Justice Sunday", "he": "יום ראשון של צדק חברתי "}, first: {era: 1, y: 1940}, urls: {"en": "https://nationaltoday.com/social-justice-sunday/"}, emoji: "🖐"},

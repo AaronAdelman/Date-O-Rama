@@ -195,7 +195,7 @@
         {inherits: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, d: 3}, first: {era: 1, y: 1808}, inherits: "*BDay*", "locations": {"en": "Florida, Kentucky, Louisiana, Tennessee", "he": "פלורידה, קנטקי, לואיזיאנה, טנסי"}},
         {inherits: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1808}, inherits: "*BDay*", "locations": {"en": "Alabama", "he": "אלבמה"}},
         {inherits: "Statehood Day", type: "1D", start: {mon: 8, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Hawaii)"}, "locations": {"en": "Hawaii", "he": "הוואי"}, first: {era: 1, y: 1969}},
-        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 2009}, inherits: "National Children’s Day", urls: {"en": "https://nationaldaycalendar.com/childrens-day-second-sunday-in-june/"}},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 2009}, inherits: "National Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-day/"}},
         {type: "1D", start: {mon: 6, d: 14}, inherits: "Army Day", first: {era: 1, y: 1775}, emoji: "䷆", urls: {"en": "https://nationaldaycalendar.com/army-birthday-june-14/"}},
         {titles: {"en": "National Air Traffic Control Day"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-air-traffic-control-day/"}, first: {era: 1, y: 1986}, emoji: "✈️"},
         {titles: {"en": "National Atomic Veterans’ Day"}, type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-atomic-veterans-day/"}, first: {era: 1, y: 1983}, emoji: "⚛️"},
