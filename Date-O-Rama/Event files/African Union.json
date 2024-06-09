@@ -12,7 +12,7 @@
         {type: "1D", titles: {"en": "Day of the Battle of Cuito Cuanavale"}, start: {mon: 4, d: 23}},
         {type: "1D", inherits: "Africa Day", start: {mon: 5, d: 25}},
         {type: "1D", titles: {"en": "Africa Border Day"}, start: {mon: 6, d: 7}},
-        {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1976}},
+        {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
         {type: "1D", titles: {"en": "African Refugee Day", "he": "יום הפליטים האפריקאי"}, start: {d: 20, mon: 6}, inherits: "World Refugee Day"},
         {type: "1D", titles: {"en": "African Public Service Day"}, start: {mon: 6, d: 23}},
         {type: "1D", titles: {"en": "Day of Africa‘s Scientific Renaissance"}, start: {d: 30, mon: 6}, emoji: "🔭🔬🧪"},

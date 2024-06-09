@@ -24,7 +24,7 @@
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/russian-victory-day/"}, inherits: "Victory Day (May 9)", first: {era: 1, y: 1995}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 10, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/victory-day"}, titles: {"en": "Victory Day Holiday"}},
         {inherits: "Victory Day (bridge day)", type: "1D", start: {mon: 5, d: 10, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/victory-day"}},
-        {titles: {"en": "Russia Day", "he": "יום רוסיה", "ru": "День России"}, type: "1D", start: {mon: 6, d: 12}, first: {era: 1, y: 1992}, urls: {"en": "https://www.officeholidays.com/holidays/russia/russia-national-day", "he": "https://www.daysoftheyear.co.il/2016/06/12.html"}},
+        {titles: {"en": "Russia Day", "he": "יום רוסיה", "ru": "День России"}, type: "1D", start: {mon: 6, d: 12}, first: {era: 1, y: 1992}, urls: {"en": "https://www.daysoftheyear.com/days/russia-day/", "he": "https://www.daysoftheyear.co.il/2016/06/12.html"}},
         {titles: {"en": "Day off for Russia Day"}, type: "1D", start: {mon: 6, d: 13, wkd: [2]}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 11, d: 4}, inherits: "National Unity Day", urls: {"en": "https://nationaltoday.com/russias-day-of-unity/"}, first: {era: 1, y: 2005}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: -1}},
