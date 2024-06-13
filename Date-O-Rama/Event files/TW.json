@@ -1,6 +1,7 @@
 {
     titles: {"*": "TW"},
     "//": "Taiwan",
+    "TODO": "Farmer’s Day, Dongzhi Festival",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.00, "blue": 0.58},
@@ -17,12 +18,25 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 8, d: 8}},
         {type: "1D", start: {mon: 10, d: 10}, inherits: "National Day", notes: {"en": "Double Ten Day", "zh": "雙十節"}, urls: {"en": "https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, first: {era: 1, y: 1911}},
+        
+        {type: "1D", start: {mon: 3, d: 12}, inherits: "Arbor Day"},
+        {inherits: "Youth Day", type: "1D", start: {mon: 3, d: 29}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Literary_Day"}, titles: {"en": "Literary Day", "zh": "五四文藝節", "zh_CN": "五四文艺节"}},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/opium-suppression-movement-day/"}, titles: {"en": "Opium Suppression Movement Day", "zh": "禁菸節"}},
+        {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "Journalists’ Day", "zh": "記者節"}},
+        {inherits: "Armed Forces Day", type: "1D", start: {mon: 9, d: 3}},
+        {inherits: "Teacher’s Day", type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Confucius’s Birthday", "zh": "孔子誕辰紀念日"}},
+        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Overseas Chinese Day", "zh": "華僑節"}},
+        {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "Taiwan Retrocession Day", "zh": "臺灣光復節", "zh_CN": "台湾光复节"}, urls: {"en": "https://en.wikipedia.org/wiki/Retrocession_Day"}},
+        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Sun Yat-sen’s Birthday", "zh": "國父誕辰紀念日"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 12, d: 25}, inherits: "Constitution Day"},
+
 
         {type: "1D", start: {mon: 6, d: 6}, inherits: "Engineer’s Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, d: 14}, inherits: "Air Force Day"},
         {type: "1D", start: {mon: 9, d: 2}, inherits: "Navy Day"},
-        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/opium-suppression-movement-day/"}, titles: {"en": "Opium Suppression Movement Day"}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
 
   ]

@@ -14,10 +14,18 @@
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "1D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/mid-autumn-festival"}, inherits: "Mid-Autumn Festival"},
-        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"}, titles: {"en": "Double Ninth Day"}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"}, titles: {"en": "Double Ninth Day", "zh": "重陽節"}, notes: {"en": "Double Ninth Festival"}},
         
-        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/tourism-day/"}, titles: {"en": "Tourism Day"}},
-        {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/earth-gods-birthday/"}, titles: {"en": "Earth God’s Birthday"}, inherits: "*BDay*"},
-        {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/god-of-medicines-birthday/"}, titles: {"en": "God of Medicine’s Birthday"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/tourism-day/"}, titles: {"en": "Tourism Day", "zh": "觀光節"}},
+        {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/earth-gods-birthday/"}, titles: {"en": "Earth God’s Birthday", "zh": "土地公誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 2, d: 19}, titles: {"en": "Kuan Yin’s Birthday", "zh": "觀音誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/god-of-medicines-birthday/"}, titles: {"en": "God of Medicine’s Birthday", "zh": "保生大帝誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 3, d: 23}, titles: {"en": "Matsu’s Birthday", "zh": "媽祖誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 4, d: 8}, inherits: "Buddha’s Birthday"},
+        {type: "1D", start: {mon: 5, d: 13}, titles: {"en": "Kuan Kung’s Birthday", "zh": "關公誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 5, d: 13}, titles: {"en": "Cheng Huang’s Birthday", "zh": "城隍爺誕辰"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 7, d: 7}, inherits: "Qixi Festival"},
+        {type: "1D", start: {mon: 7, d: 15}, inherits: "Spirit Festival"},
+        {type: "1D", start: {mon: 10, d: 15}, titles: {"en": "Saisiat Festival", "zh": "賽夏節"}},
    ]
 }

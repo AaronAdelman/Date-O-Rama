@@ -1135,6 +1135,7 @@
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/national-weed-your-garden-day/"}, titles: {"en": "National Weed Your Garden Day"}, emoji: "🪴"},
         {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-clay-week/"}, titles: {"en": "National Clay Week"}, first: {era: 1, y: 1950}},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/national-movie-night/"}, titles: {"en": "National Movie Night"}, emoji: "🎦", first: {era: 1, y: 2022}},
+        {titles: {"en": "National Cucumber Day", "he": "יום המלפפון הלאומי"}, type: "1D", start: {mon: 6, d: 14}, emoji: "🥒", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-cucumber-day-june-14"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/national-pop-goes-weasel-day/"}, titles: {"en": "National Pop Goes The Weasel Day"}},
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/national-strawberry-shortcake-day/"}, titles: {"en": "National Strawberry Shortcake Day"}, emoji: "🍰", first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 6, d: 12, thruD: 18, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-career-nurse-assistants-day/"}, titles: {"en": "National Career Nurse Assistants Day"}, first: {era: 1, y: 1977}, emoji: "👨‍⚕️👩‍⚕️"},

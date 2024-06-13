@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftAA",
+        "repositoryURL": "https://github.com/onekiloparsec/SwiftAA",
+        "state": {
+          "branch": "master",
+          "revision": "c839366fe580327da3ab164a25202dfa5f4825e4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
