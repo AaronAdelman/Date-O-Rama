@@ -386,20 +386,3 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler([threeLineLargeClocksDescriptor, twoLineSmallClocksDescriptor, twoLineLargeClocksDescriptor, oneLineSmallClocksDescriptor, oneLineLargeClocksDescriptor])
     } // func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void)
 } // class ComplicationController: NSObject, CLKComplicationDataSource
-
-
-// MARK:  -
-
-struct ASAThreeLineLargeView:  View {
-    var line0:  String
-    var line1:  String
-    var line2:  String
-
-    var body: some View {
-        VStack(alignment:  .center) {
-            ASAClockCellText(string: line0, font: .headline, lineLimit: 1)
-            ASAClockCellText(string: line1, font: .headline, lineLimit: 1)
-            ASAClockCellText(string: line2, font: .headline, lineLimit: 1)
-        } // VStack
-    } // var body
-} // struct ASAThreeLineLargeView
