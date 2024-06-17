@@ -7,7 +7,8 @@
     eventSpecifications: [
         {type: "nD", start: {mon: 9, d: -3}, end: {mon: 9, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
-        {type: "nD", start: {mon: 12, d: 5}, end: {mon: 12, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-adha"}, titles: {"en": "Eid Al Adha"}},
+        {type: "nD", start: {mon: 12, d: 5}, end: {mon: 12, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-adha"}, inherits: "ʿĪd al-ʾAḍḥā Holiday"},
+        {type: "nD", start: {mon: 12, d: 14}, end: {mon: 12, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-adha"}, inherits: "ʿĪd al-ʾAḍḥā Holiday"},
     ]
 }
 
