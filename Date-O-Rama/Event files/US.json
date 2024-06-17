@@ -431,7 +431,7 @@
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-cancer-thriver-day/"}, titles: {"en": "National Cancer Thriver Day"}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week", "he": "שבוע הדגל הלאומי"}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/bunker-hill-day/"}, titles: {"en": "Bunker Hill Day"}, first: {era: 1, y: 1775}},
-        {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-dump-pump-day/"}, titles: {"en": "National Dump the Pump Day"}, emoji: "⛽︎", first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/dump-the-pump-day/"}, titles: {"en": "National Dump the Pump Day"}, emoji: "⛽︎", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-detroit-style-pizza-day/"}, titles: {"en": "National Detroit Style Pizza Day"}, emoji: "🍕", notes: {"en": "Buddy’s Pizza Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/pink-flamingo-day/"}, titles: {"en": "Pink Flamingo Day"}, emoji: "🦩", first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-catfish-day/"}, titles: {"en": "National Catfish Day"}, first: {era: 1, y: 1987}},
