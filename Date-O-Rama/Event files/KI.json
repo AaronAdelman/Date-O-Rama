@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/national-health-day"}, inherits: "National Health Day"},
         {type: "1D", start: {mon: 4, d: 9, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/national-health-day"}, inherits: "National Health Day (in lieu)"},
         {type: "1D", start: {mon: 4, d: 11, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/national-health-day"}, inherits: "National Health Day (in lieu)"},
-        {type: "1D", titles: {"en": "Police National Day"}, start: {mon: 6, d: 23}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/police-national-day"}, emoji: "👮‍♂️👮‍♀️"},
+        {type: "1D", titles: {"en": "Police National Day"}, start: {mon: 6, d: 23}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/police-national-day"}, inherits: "Police Day"},
         {type: "1D", start: {mon: 7, d: 8, wkd: [5, 6]}, inherits: "Gospel Day"},
         {type: "1D", start: {mon: 7, d: 10, wkd: [2, 4, 5]}, inherits: "Gospel Day"},
         {type: "1D", start: {mon: 7, d: 8, wkd: [3]}, inherits: "National Culture and Senior Citizens Day"},

@@ -32,7 +32,7 @@
         {titles: {"en": "Regional Autonomy Day", "id": "Hari Otonomi Daerah"}, type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1996}},
         {titles: {"en": "National Poetry Day", "id": "Hari Puisi Nasional"}, notes: {"en": "National Literature Day"}, type: "1D", start: {mon: 4, d: 28}, emoji: "🖋"},
         {type: "1D", start: {mon: 5, d: 2}, inherits: "National Education Day", first: {era: 1, y: 1959}, urls: {"en": "https://en.wikipedia.org/wiki/National_Education_Day_(Indonesia)"}},
-        {titles: {"en": "Day of the Military Police of the Indonesian National Armed Forces", "id": "Hari POM TNI"}, type: "1D", start: {mon: 5, d: 11}},
+        {titles: {"en": "Day of the Military Police of the Indonesian National Armed Forces", "id": "Hari POM TNI"}, type: "1D", start: {mon: 5, d: 11}, inherits: "Police Day"},
         {titles: {"en": "National Book Day", "id": "Hari Buku Nasional"}, type: "1D", start: {mon: 5, d: 17}, emoji: "📚", first: {era: 1, y: 2002}},
         {inherits: "National Awakening Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1985}},
         {titles: {"en": "National Elderly Day", "id": "Hari Lanjut Usia Nasional"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 1, y: 1996}, emoji: "👴👵"},

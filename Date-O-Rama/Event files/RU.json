@@ -59,7 +59,7 @@
         {type: "1D", start: {d: 29, mon: 10}, titles: {"en": "Day of MVD Security Services", "ru": "День вневедомственной охраны"}, first: {era: 1, y: 1952}},
         {inherits: "Day of Remembrance of the Victims of Political Repressions", start: {mon: 10, d: 30}, type: "1D", first: {era: 1, y: 1991}},
         {type: "1D", start: {d: 31, mon: 10}, titles: {"en": "Day of the Detention Centers and Prisons Workers", "ru": "День работников СИЗО и тюрем"}, first: {era: 1, y: 2006}},
-        {type: "1D", start: {d: 10, mon: 11}, titles: {"en": "Police and Internal Affairs Servicemen’s Day", "ru": "День сотрудника органов внутренних дел Российской Федерации"}},
+        {type: "1D", start: {d: 10, mon: 11}, titles: {"en": "Police and Internal Affairs Servicemen’s Day", "ru": "День сотрудника органов внутренних дел Российской Федерации"}, inherits: "Police Day"},
         {type: "1D", start: {d: 19, mon: 11}, titles: {"en": "Day of the Missile Forces and Artillery", "ru": "День ракетных войск и артиллерии"}, first: {era: 1, y: 1944}},
         {type: "1D", start: {d: 27, mon: 11}, titles: {"en": "Naval Infantry Day", "he": "חיל הנחתים", "ru": "День морской пехоты"}},
         {type: "1D", start: {d: 9, mon: 12}, titles: {"en": "Day of Heroes of the Fatherland", "ru": "День Героев Отечества"}, first: {era: 1, y: 2007}},

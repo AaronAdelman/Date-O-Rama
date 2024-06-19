@@ -35,7 +35,7 @@
         
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/first-philippine-republic-day/"}, titles: {"en": "First Philippine Republic Day", "fil": "Araw ng Unang Republika ng Pilipinas"}, first: {era: 1, y: 1899}},
         {type: "1D", start: {mon: 1, d: 25}, inherits: "National Remembrance Day", first: {era: 1, y: 2015}},
-        {type: "1D", titles: {"en": "National Police Anniversary Day", "fil": "Araw ng Pagkakatatag ng Pambansang Pulisya"}, start: {mon: 1, d: 29}, first: {era: 1, y: 1992}, emoji: "👮‍♂️👮‍♀️"},
+        {type: "1D", titles: {"en": "National Police Anniversary Day", "fil": "Araw ng Pagkakatatag ng Pambansang Pulisya"}, start: {mon: 1, d: 29}, first: {era: 1, y: 1992}, inherits: "Police Day"},
         {inherits: "Constitution Day", type: "1D", start: {mon: 2, d: 2}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/philippine-american-war-memorial-day/"}, titles: {"en": "Philippine-American War Memorial Day", "fil": "Araw ng Paggunita sa Digmaang Pilipino–Amerikano"}, emoji: "🇵🇭🇺🇸", first: {era: 1, y: 1902}},
         {inherits: "National Women’s Day", type: "1D", start: {mon: 3, d: 8}},
@@ -51,7 +51,7 @@
         {type: "1D", start: {mon: 7, d: 4}, notes: {"en": "Filipino-American Friendship Day"}, urls: {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, first: {era: 1, y: 1984}, emoji: "🇵🇭🇺🇸", titles: {"en": "Philippine-American Friendship Day", "fil": "Araw ng Pagkakaibigang Pilipino-Amerikano"}},
         {type: "1D", start: {mon: 7, d: 25}, inherits: "National Press Day", titles: {"en": "National Campus Press Freedom Day", "fil": "Pambansang Araw ng Malayang Pamamahayag sa Kampus"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Iglesia ni Cristo Day", "fil": "Araw ng Iglesia ni Cristo"}, urls: {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {era: 1, y: 2009}},
-        {type: "1D", titles: {"en": "National Police Service Day and Anniversary of the Formation of the Philippine Constabulary", "fil": "Araw ng Pambansang Serbisyong Pangpulisya"}, start: {mon: 8, d: 12}, emoji: "👮‍♂️👮‍♀️"},
+        {type: "1D", titles: {"en": "National Police Service Day and Anniversary of the Formation of the Philippine Constabulary", "fil": "Araw ng Pambansang Serbisyong Pangpulisya"}, start: {mon: 8, d: 12}, inherits: "Police Day"},
         {type: "1D", titles: {"en": "Jesse Robredo Day", "fil": "Araw ni Jesse Robredo"}, start: {mon: 8, d: 18}, first: {era: 1, y: 2016}},
         {type: "1D", titles: {"en": "National Tech-Voc Day", "fil": "Pambansang Araw ng Edukasyong Teknolohikal-Bokasyonal"}, start: {mon: 8, d: 25}, first: {era: 1, y: 2018}},
         {titles: {"en": "National Press Freedom Day", "he": "יום חופש העיתונות הלאומי", "fil": "Pambansang Araw ng Kalayaan sa Pamamahayag"}, type: "1D", start: {mon: 8, d: 30}, first: {era: 1, y: 2022}, emoji: "📰"},

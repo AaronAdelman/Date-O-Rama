@@ -113,7 +113,7 @@ extension String {
         case REGION_CODE_Thailand:
             return [.Gregorian, .Buddhist]
             
-        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine, REGION_CODE_Burundi, REGION_CODE_Burkina_Faso, REGION_CODE_Cameroon, REGION_CODE_Central_African_Republic, REGION_CODE_Chad, REGION_CODE_Comoros, REGION_CODE_Cote_dIvoire, REGION_CODE_Djibouti, REGION_CODE_Gabon, REGION_CODE_Gambia, REGION_CODE_Ghana, REGION_CODE_Guinea, REGION_CODE_Guinea_Bissau, REGION_CODE_Guyana, REGION_CODE_Azerbaijan, REGION_CODE_Bangladesh, REGION_CODE_Bahrain, REGION_CODE_Kenya, REGION_CODE_Madagascar, REGION_CODE_Malawi, REGION_CODE_Mali, REGION_CODE_Myanmar, REGION_CODE_Nepal, REGION_CODE_Niger, REGION_CODE_Nigeria, REGION_CODE_Rwanda, REGION_CODE_Samoa, REGION_CODE_Senegal, REGION_CODE_Sierra_Leone, REGION_CODE_South_Sudan, REGION_CODE_Spain, REGION_CODE_Sri_Lanka:
+        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine, REGION_CODE_Burundi, REGION_CODE_Burkina_Faso, REGION_CODE_Cameroon, REGION_CODE_Central_African_Republic, REGION_CODE_Chad, REGION_CODE_Comoros, REGION_CODE_Cote_dIvoire, REGION_CODE_Djibouti, REGION_CODE_Gabon, REGION_CODE_Gambia, REGION_CODE_Ghana, REGION_CODE_Guinea, REGION_CODE_Guinea_Bissau, REGION_CODE_Guyana, REGION_CODE_Azerbaijan, REGION_CODE_Bangladesh, REGION_CODE_Bahrain, REGION_CODE_Kenya, REGION_CODE_Madagascar, REGION_CODE_Malawi, REGION_CODE_Mali, REGION_CODE_Myanmar, REGION_CODE_Nepal, REGION_CODE_Niger, REGION_CODE_Nigeria, REGION_CODE_Rwanda, REGION_CODE_Samoa, REGION_CODE_Senegal, REGION_CODE_Sierra_Leone, REGION_CODE_South_Sudan, REGION_CODE_Spain, REGION_CODE_Sri_Lanka, REGION_CODE_Tajikistan:
             return [.Gregorian, .IslamicSolar]
             
         case REGION_CODE_Libya, REGION_CODE_Lebanon, REGION_CODE_Eritrea, REGION_CODE_Bosnia_and_Herzegovina, REGION_CODE_Jordan, REGION_CODE_Kazakhstan, REGION_CODE_Kosovo, REGION_CODE_North_Macedonia:
@@ -171,7 +171,7 @@ extension String {
         case REGION_CODE_Cook_Islands, REGION_CODE_Niue, REGION_CODE_Tokelau:
             return REGION_CODE_New_Zealand
             
-        case REGION_CODE_Anguilla, REGION_CODE_Bermuda, REGION_CODE_British_Indian_Ocean_Territory, REGION_CODE_Cayman_Islands, REGION_CODE_Gibraltar, REGION_CODE_Guernsey, REGION_CODE_Norfolk_Island, REGION_CODE_British_Virgin_Islands:
+        case REGION_CODE_Anguilla, REGION_CODE_Bermuda, REGION_CODE_British_Indian_Ocean_Territory, REGION_CODE_Cayman_Islands, REGION_CODE_Gibraltar, REGION_CODE_Guernsey, REGION_CODE_Norfolk_Island, REGION_CODE_British_Virgin_Islands, REGION_CODE_Sark:
             return REGION_CODE_United_Kingdom
             
         case REGION_CODE_Christmas_Island, REGION_CODE_Cocos_Islands, REGION_CODE_Falkland_Islands, REGION_CODE_Heard_Island_and_McDonald_Islands, REGION_CODE_Isle_of_Man, REGION_CODE_Jersey, REGION_CODE_Montserrat, REGION_CODE_Pitcairn, REGION_CODE_Saint_Helena_Ascension_and_Tristan_da_Cunha, REGION_CODE_South_Georgia_and_the_South_Sandwich_Islands, REGION_CODE_Turks_and_Caicos_Islands:
@@ -596,6 +596,7 @@ let REGION_CODE_Saint_Vincent_and_the_Grenadines    = "VC"
 let REGION_CODE_Samoa    = "WS"
 let REGION_CODE_San_Marino    = "SM"
 let REGION_CODE_Sao_Tome_and_Principe    = "ST"
+let REGION_CODE_Sark    = "CQ"
 let REGION_CODE_Saudi_Arabia    = "SA"
 let REGION_CODE_Senegal    = "SN"
 let REGION_CODE_Serbia    = "RS"

@@ -56,7 +56,7 @@
         {type: "1D", inherits: "Long Tan Day", start: {mon: 8, d: 18}, first: {era: 1, y: 2016}},
         {type: "1D", titles: {"en": "Wattle Day"}, start: {mon: 9, d: 1}, first: {era: 1, y: 1986}, urls: {"en": "https://nationaltoday.com/wattle-day/"}, emoji: "🌳"},
         {type: "1D", titles: {"en": "Australia Citizenship Day"}, start: {mon: 9, d: 17}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/australian-citizenship-day/"}},
-        {type: "1D", titles: {"en": "National Police Remembrance Day"}, start: {mon: 9, d: 29}, first: {era: 1, y: 1989}, urls: {"en": "https://nationaltoday.com/national-police-remembrance-day/"}, emoji: "👮‍♂️👮‍♀️"},
+        {type: "1D", titles: {"en": "National Police Remembrance Day"}, start: {mon: 9, d: 29}, first: {era: 1, y: 1989}, urls: {"en": "https://nationaltoday.com/national-police-remembrance-day/"}, inherits: "Police Day"},
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/melbourne-cup-day/"}, titles: {"en": "Melbourne Cup Day"}, first: {era: 1, y: 1861}},
         {inherits: "Remembrance Day", type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/remembrance-day-australia/"}},
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/genocide-prevention-day/"}, titles: {"en": "Genocide Prevention Day"}},
