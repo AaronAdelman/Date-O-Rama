@@ -62,7 +62,7 @@
         {type: "1D", start: {d: 10, mon: 11}, titles: {"en": "Police and Internal Affairs Servicemen’s Day", "ru": "День сотрудника органов внутренних дел Российской Федерации"}, inherits: "Police Day"},
         {type: "1D", start: {d: 19, mon: 11}, titles: {"en": "Day of the Missile Forces and Artillery", "ru": "День ракетных войск и артиллерии"}, first: {era: 1, y: 1944}},
         {type: "1D", start: {d: 27, mon: 11}, titles: {"en": "Naval Infantry Day", "he": "חיל הנחתים", "ru": "День морской пехоты"}},
-        {type: "1D", start: {d: 9, mon: 12}, titles: {"en": "Day of Heroes of the Fatherland", "ru": "День Героев Отечества"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 12, d: 9}, titles: {"en": "Day of Heroes of the Fatherland", "ru": "День Героев Отечества"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {d: 17, mon: 12}, titles: {"en": "Strategic Missile Troops Day", "ru": "День Ракетных войск стратегического назначения"}, first: {era: 1, y: 1995}},
         
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
