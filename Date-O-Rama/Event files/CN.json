@@ -36,7 +36,7 @@
         {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Nanking Massacre Memorial Day", "zh_CN": "南京大屠杀死难者国家公祭日"}, first: {era: 1, y: 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},
         
         {type: "nD", start: {mon: 9, d: 20}, end: {mon: 9, d: 22}, titles: {"en": "Kuò Shí jié", "zh_CN": "阔时节"}},
-        {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, titles: {"en": "Water-Sprinkling Festival", "zh_CN": "泼水节"}, notes: {"en": "Songkran"}, urls: {"en": "https://en.wikipedia.org/wiki/Water-Sprinkling_Festival"}, emoji: "💦"},
+        {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, inherits: "Songkran", urls: {"en": "https://en.wikipedia.org/wiki/Water-Sprinkling_Festival"}},
 
         {titles: {"en": "Chuxiong Prefecture Foundation Day"}, type: "1D", start: {mon: 4, d: 15}},
         {titles: {"en": "Dali Prefecture Foundation Day"}, type: "1D", start: {mon: 11, d: 22}},

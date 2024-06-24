@@ -1870,7 +1870,7 @@
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-pecan-cookie-day/"}, titles: {"en": "National Pecan Cookie Day", "he": "יום עוגיות הפקאן הלאומי"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-hobbit-day/", "he": "https://www.daysoftheyear.co.il/2016/09/22.html"}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, notes: {"en": "National Hobbit Day"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-centenarians-day/"}, titles: {"en": "National Centenarian’s Day"}},
-        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-elephant-appreciation-day/"}, titles: {"en": "National Elephant Appreciation Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-elephant-appreciation-day/"}, titles: {"en": "National Elephant Appreciation Day"}, first: {era: 1, y: 1996}, emoji: "🐘"},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-ice-cream-cone-day/"}, titles: {"en": "National Ice Cream Cone Day"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-white-chocolate-day/", "he": "https://www.daysoftheyear.co.il/2018/09/white-chocolate-day.html"}, titles: {"en": "National White Chocolate Day", "he": "יום השוקולד הלבן הלאומי"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-afm-day/"}, titles: {"en": "National AFM Day"}},
