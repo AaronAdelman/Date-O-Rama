@@ -494,7 +494,6 @@
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/thermos-bottle-day/"}, titles: {"en": "Thermos Bottle Day"}},
         {type: "1D", start: {mon: 2, d: 27}, titles: {"en": "International Polar Bear Day", "he": "יום דוב הקוטב הלאומי"}, notes: {"en": "National Polar Bear Day"}, first: {era: 1, y: 2011}, emoji: "🐻‍❄️", urls: {"en": "https://www.daysoftheyear.com/days/polar-bear-day/", "he": "https://www.daysoftheyear.co.il/2021/02/polar-bear-day.html"}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/no-brainer-day/"}, titles: {"en": "No Brainer Day"}, first: {era: 1, y: 1996}},
-        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://www.pinkshirtday.ca/"}, titles: {"en": "Pink Shirt Day"}, emoji: "🩷", notes: {"en": "National Pink Day\nAnti-Bullying Day"}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/the-big-breakfast-day/"}, titles: {"en": "The Big Breakfast Day"}, first: {era: 1, y: 2020}, emoji: "🥞🧇"},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/world-ngo-day/"}, titles: {"en": "World NGO Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/car-keys-and-small-change-day/"}, titles: {"en": "Car Keys and Small Change Day"}},
