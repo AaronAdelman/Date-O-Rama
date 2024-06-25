@@ -1,0 +1,4371 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@ (%@)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "‫%@ (%@)"
+          }
+        }
+      }
+    },
+    "%@ (week number from the end:  %i)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (מספר שבוע מהסוף:  %i)"
+          }
+        }
+      }
+    },
+    "%@ (week number:  %i)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (מספר שבוע:  %i)"
+          }
+        }
+      }
+    },
+    "%@ %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@ (%3$@)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@ (%3$@)"
+          }
+        }
+      }
+    },
+    "%@ + %d" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ + %d"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ + %d"
+          }
+        }
+      }
+    },
+    "%@ after" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ after"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ אחרי"
+          }
+        }
+      }
+    },
+    "%@ before" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ before"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ לפני"
+          }
+        }
+      }
+    },
+    "%i (from the end)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%i (מהסוף)"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "•" : {
+
+    },
+    "✉️ Aaron.Solomon.Adelman@gmail.com" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✉️ Aaron.Solomon.Adelman@gmail.com"
+          }
+        }
+      }
+    },
+    "🔍" : {
+
+    },
+    "🔺" : {
+
+    },
+    "🔻" : {
+
+    },
+    "1-line large" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גדולה של שור 1"
+          }
+        }
+      }
+    },
+    "1-line small" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "קטנה של שור 1"
+          }
+        }
+      }
+    },
+    "2-line large" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גדולה של 2 שורות"
+          }
+        }
+      }
+    },
+    "2-line small" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "קטנה של 2 שורות"
+          }
+        }
+      }
+    },
+    "3-line large" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גדולה של 3 שורות"
+          }
+        }
+      }
+    },
+    "ABOUT_TAB" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אודות"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף"
+          }
+        }
+      }
+    },
+    "Add clock" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add clock…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף שעון…"
+          }
+        }
+      }
+    },
+    "Add external event" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף אירוע חיצוני"
+          }
+        }
+      }
+    },
+    "ADDRESS_SEPARATOR" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", "
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", "
+          }
+        }
+      }
+    },
+    "All calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל לוחות"
+          }
+        }
+      }
+    },
+    "All locales" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל מיקומים"
+          }
+        }
+      }
+    },
+    "Apple calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות אפל"
+          }
+        }
+      }
+    },
+    "Apple locales" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקומי אפל"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this clock?" : {
+      "comment" : "\"By Country or Region\"       = \"By Country or Region\";",
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטוח שברצונך למחוק שעון זה?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this location?" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטוח שברצונך למחוק מיקום זה?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this new clock?" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטוח שברצונך למחוק שעון חדש זה?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this new internal event calendar?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to delete this new internal event calendar?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטוח שברצונך למחוק לוח שנה אירועים פנימי חדש זה?"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.all" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכול"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.none" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אין"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.oneDay" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום 1"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.oneMonthOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One month or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חודש 1 או פחות"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.oneWeekOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One week or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שבוע 1 או פחות"
+          }
+        }
+      }
+    },
+    "ASAClockCellDateEventVisibility.oneYearOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One year or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שנה 1 או פחות"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.all" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכול"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.allDay" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All-day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום שלם"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.future" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Future"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עתידיים"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.next" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הבאים"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.nextAndPresent" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next and present"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הבאים ועכשוויים"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.nonAllDay" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non-all-day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לא יום שלם"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.none" : {
+      "comment" : "\"Show time to next day\" = \"Show time to next day\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפס"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.past" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Past"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עבריים"
+          }
+        }
+      }
+    },
+    "ASAClockCellTimeEventVisibility.present" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Present"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עכשיוויים"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.allRegions" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Region-neutral"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שייכים לכל אזורים"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.AustraliaAndNewZealand" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Australia and New Zealand"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אוסטרליה וניו זילנד"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.centralAsia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Central Asia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מרכז אסיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.easternAsia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eastern Asia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מזרח אסיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.easternEurope" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eastern Europe"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מזרח אירופה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.international" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "International organizations and regions"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ארגונים ואזורים בינלאומיים"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.LatinAmericaAndTheCaribbean" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latin America and the Caribbean"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אמריקה הלטינית והקריביים"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.Melanesia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melanesia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מלנזיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.Micronesia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Micronesia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקרונזיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.northernAfrica" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Northern Africa"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צפון אפריקה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.northernAmerica" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Northern America"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צפון אמריקה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.northernEurope" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Northern Europe"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צפון אירופה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.Polynesia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Polynesia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פולינזיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.southEasternAsia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "South-Eastern Asia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דרום־מזרח אסיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.southernAsia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Southern Asia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דרום אסיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.southernEurope" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Southern Europe"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דרום אירופה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.subSaharanAfrica" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sub-Saharan Africa"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפריקה שמדרום לסהרה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.westernAsia" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Western Asia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מערב אסיה"
+          }
+        }
+      }
+    },
+    "ASARegionCodeRegion.westernEurope" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Western Europe"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מערב אירופה"
+          }
+        }
+      }
+    },
+    "AUTOUPDATING_CURRENT_TIME_ZONE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autoupdating current"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "נוכחי מעודכן אוטומטית"
+          }
+        }
+      }
+    },
+    "by Aaron Solomon Adelman" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "by Aaron Solomon Adelman (“Adelsoft”)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מאת אַהֲרֹן שְׁלֹמֹה אֵדֶלְמָן (״אֵדֶלְסוֹפְט״)"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "comment" : "\"Add internal event calendar\" = \"Add internal event calendar\";",
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ביטול"
+          }
+        }
+      }
+    },
+    "Cancel Changes" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטל שינויים"
+          }
+        }
+      }
+    },
+    "CANNOT_GEOLOCATE" : {
+      "comment" : "\"NO_EXTERNAL_EVENTS_PERMISSION\" = \"Sorry, but Date-O-Rama does not have permission to access your external event calendars (“Calendars”). You can change this within the Settings application.\";",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorry, but Date-O-Rama needs an Internet connection if you wish to choose a different location, because it needs to talk to Apple’s geolocation server to do so.  Please connect to the Internet."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מצטער, אבל Date-O-Rama זקוק לחיבור אינטרנט אם ברצונך לבחור מיקום אחר, מכיוון שהוא צריך לדבר עם שרת המיקום הגיאוגרפי של אפל כדי לעשות זאת.  אנא התחבר לאינטרנט."
+          }
+        }
+      }
+    },
+    "ccj" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CCSDS Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CCSDS Julian Date"
+          }
+        }
+      }
+    },
+    "chi" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chinese"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סיני"
+          }
+        }
+      }
+    },
+    "cjd" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CNES Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CNES Julian Date"
+          }
+        }
+      }
+    },
+    "Clock Details" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרטי שעון"
+          }
+        }
+      }
+    },
+    "CLOCKS_TAB" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clocks"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעונים"
+          }
+        }
+      }
+    },
+    "COMPLICATION_CLOCKS_TAB" : {
+      "comment" : "\"EVENTS_TAB\"              = \"Events\";",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעון יד"
+          }
+        }
+      }
+    },
+    "Continue Editing" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המשך עריכה"
+          }
+        }
+      }
+    },
+    "cop" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coptic"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "קופטי"
+          }
+        }
+      }
+    },
+    "Copy available address" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "העתק כתובת מוזמן"
+          }
+        }
+      }
+    },
+    "Date:" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תאריך…"
+          }
+        }
+      }
+    },
+    "DEFAULT_LOCALE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בחירת מחדל"
+          }
+        }
+      }
+    },
+    "Delete location" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete location…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחק מיקום…"
+          }
+        }
+      }
+    },
+    "Delete This Clock" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחק שעון זה"
+          }
+        }
+      }
+    },
+    "Delete this location" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחק מיקום זה"
+          }
+        }
+      }
+    },
+    "Details…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Info…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרטים…"
+          }
+        }
+      }
+    },
+    "DEVICE_LOCATION" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Device location"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקום המכשיר"
+          }
+        }
+      }
+    },
+    "djd" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dublin Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dublin Julian Date"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סיום"
+          }
+        }
+      }
+    },
+    "Done Reordering" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סיום הסדר מחדש"
+          }
+        }
+      }
+    },
+    "Earth (all locations)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כדור הארץ (כל מיקומים)"
+          }
+        }
+      }
+    },
+    "Earth (specific location)" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earth (specific location)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כדור הארץ (מיקום ספציפי)"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.@unknown default" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown default"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown default"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.busy" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busy"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עסוק/ה"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.free" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פנוי/ה"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.notSupported" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not supported"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not supported"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.tentative" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentative"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentative"
+          }
+        }
+      }
+    },
+    "EKEventAvailability.unavailable" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unavailable"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unavailable"
+          }
+        }
+      }
+    },
+    "EKEventStatus.@unknown default" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown status"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מצב לא ידוע"
+          }
+        }
+      }
+    },
+    "EKEventStatus.canceled" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Canceled"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מבוטל"
+          }
+        }
+      }
+    },
+    "EKEventStatus.confirmed" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmed"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מאושר"
+          }
+        }
+      }
+    },
+    "EKEventStatus.tentative" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentative"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הססני"
+          }
+        }
+      }
+    },
+    "EKParticipantRole.chair" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Organizer)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(המארגן/ת)"
+          }
+        }
+      }
+    },
+    "EKParticipantRole.optional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Optional)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(לא חובה)"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.accepted" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accepted"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "משתתף/ת"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.completed" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.declined" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Declined"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לא משתתף/ת"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.delegated" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delegated"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delegated"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.inProcess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Process"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Process"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.pending" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.tentative" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentative"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אולי"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.unknown" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לא ידוע"
+          }
+        }
+      }
+    },
+    "EKParticipantStatus.unknown default" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown default"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown default"
+          }
+        }
+      }
+    },
+    "EKRecurrenceFrequency_daily" : {
+      "comment" : "\"ASARecurrenceType_custom\"   = \"Custom\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daily"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פעם ביום"
+          }
+        }
+      }
+    },
+    "EKRecurrenceFrequency_monthly" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פעם בחודש"
+          }
+        }
+      }
+    },
+    "EKRecurrenceFrequency_weekly" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekly"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל שבוע"
+          }
+        }
+      }
+    },
+    "EKRecurrenceFrequency_yearly" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל שנה"
+          }
+        }
+      }
+    },
+    "EthiopicAmeteAlem" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ethiopic Amete Alem"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתיופי (שנות העולם)"
+          }
+        }
+      }
+    },
+    "EthiopicAmeteMihret" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ethiopic Amete Mihret"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתיופי"
+          }
+        }
+      }
+    },
+    "Event alarm" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarm"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התרעה"
+          }
+        }
+      }
+    },
+    "Event availability" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Availability"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תור"
+          }
+        }
+      }
+    },
+    "Event calendar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוח"
+          }
+        }
+      }
+    },
+    "Event countries and regions" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Countries and regions"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מדינות ואזורים"
+          }
+        }
+      }
+    },
+    "Event days of the month" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days of the month"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ימי החודש"
+          }
+        }
+      }
+    },
+    "Event days of the week" : {
+      "comment" : "\"First day of the week for recurrence\" = \"First day of the week for recurrence\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days of the week:"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ימי השבוע:"
+          }
+        }
+      }
+    },
+    "Event days of the year" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Days of the year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ימי השנה"
+          }
+        }
+      }
+    },
+    "Event edit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עריכה"
+          }
+        }
+      }
+    },
+    "Event excluded countries and regions" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluded countries and regions"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מדינות ואזורים שאינם כלולים"
+          }
+        }
+      }
+    },
+    "Event Frequency" : {
+      "comment" : "\"Event Recurrence\"            = \"Recurrence\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frequency"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תדירות"
+          }
+        }
+      }
+    },
+    "Event months of the year" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Months of the year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חודשי השנה"
+          }
+        }
+      }
+    },
+    "Event Recurrence" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הישנות של אירוע"
+          }
+        }
+      }
+    },
+    "Event set positions" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set positions"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עמדות קבועות"
+          }
+        }
+      }
+    },
+    "Event weeks of the year" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weeks of the year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שבועות השנה"
+          }
+        }
+      }
+    },
+    "every n days" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every %d days"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל יום"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל %d יום"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל יומיים"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "every n months" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every month"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every %d months"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל חודש"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל %d חודש"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל חודשיים"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "every n weeks" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every week"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every %d weeks"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל שבוע"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל %d שבוע"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל שבועיים"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "every n years" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every year"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Every %d years"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל שנה"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל %d שנה"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "כל שנתיים"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "External event calendars" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "External event calendars"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות שנה אירועים חיצוניים"
+          }
+        }
+      }
+    },
+    "External events" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "External events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אירועים חיצוניים"
+          }
+        }
+      }
+    },
+    "extraLarge" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two-line large complication rows"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שורות תצוגות גדולות של 2 שורות"
+          }
+        }
+      }
+    },
+    "Fall back" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start of Standard Time"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תחילת שעון חורף"
+          }
+        }
+      }
+    },
+    "fre" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "French Republican"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הרפובליקה הצרפתית"
+          }
+        }
+      }
+    },
+    "fre-r" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "French Republican (Romme)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הרפובליקה הצרפתית (רום)"
+          }
+        }
+      }
+    },
+    "gre" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gregorian"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גרגוריאני"
+          }
+        }
+      }
+    },
+    "HEADER_BuiltInEventCalendars" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Event calendars (built-in)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות שנה לאירועים (מובנים)"
+          }
+        }
+      }
+    },
+    "HEADER_Calendar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוח שנה"
+          }
+        }
+      }
+    },
+    "HEADER_Date_format" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date format"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מבנה תאריך"
+          }
+        }
+      }
+    },
+    "HEADER_iCalendarEventCalendars" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Event calendars (iCalendar/Calendar.app)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות שנה לאירועים (iCalendar/לוח שנה)"
+          }
+        }
+      }
+    },
+    "HEADER_Locale" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locale"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שפה ואזור"
+          }
+        }
+      }
+    },
+    "HEADER_LOCATION" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Location"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקום"
+          }
+        }
+      }
+    },
+    "HEADER_Row" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clock"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעון"
+          }
+        }
+      }
+    },
+    "HEADER_Time_format" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time format"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מבנה זמן"
+          }
+        }
+      }
+    },
+    "HEADER_TIME_ZONE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time zone"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעון מקומי"
+          }
+        }
+      }
+    },
+    "Hebrew" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hebrew (midnight day start)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עברי (יום מתחיל בחצות הלילה)"
+          }
+        }
+      }
+    },
+    "HebrewSolar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hebrew"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עברי"
+          }
+        }
+      }
+    },
+    "HebrewSolarMA" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hebrew (Maghen ’Avraham)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עברי (מגן אברהם)"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+
+    },
+    "his" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persian (Solar Hijri)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרסי"
+          }
+        }
+      }
+    },
+    "I have a suggestion or request." : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I have a suggestion or request."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יש לי הצעה או בקשה."
+          }
+        }
+      }
+    },
+    "ind" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indian (Shalivahana Shaka)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הודי לאומי"
+          }
+        }
+      }
+    },
+    "Internal events" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Internal events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אירועים פנימיים"
+          }
+        }
+      }
+    },
+    "Islamic" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic (midnight day start)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי (יום מתחיל בחצות הלילה)"
+          }
+        }
+      }
+    },
+    "IslamicCivil" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Civil (midnight day start)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי אזרחי (יום מתחיל בחצות הלילה)"
+          }
+        }
+      }
+    },
+    "IslamicCivilSolar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Civil"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי אזרחי"
+          }
+        }
+      }
+    },
+    "IslamicSolar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי"
+          }
+        }
+      }
+    },
+    "IslamicTabular" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Tabular (midnight day start)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי טבלאי (יום מתחיל בחצות הלילה)"
+          }
+        }
+      }
+    },
+    "IslamicTabularSolar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Tabular"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי טבלאי"
+          }
+        }
+      }
+    },
+    "IslamicUmmAlQura" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Umm Al-Qura (midnight day start)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי אום אל־קורה (יום מתחיל בחצות הלילה)"
+          }
+        }
+      }
+    },
+    "IslamicUmmAlQuraSolar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Islamic Umm Al-Qura"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוסלמי אום אל־קורה"
+          }
+        }
+      }
+    },
+    "ITEM_AbbreviatedWeekday" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbreviated Weekday"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום בשבוע מקוצר"
+          }
+        }
+      }
+    },
+    "ITEM_AbbreviatedWeekdayWithDayOfMonth" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbreviated Weekday with Day of Month"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום בשבוע מקוצר עם יום בחודש"
+          }
+        }
+      }
+    },
+    "ITEM_DayOfMonth" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Day of Month"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום בחודש"
+          }
+        }
+      }
+    },
+    "ITEM_decimal" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decimal"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עשרוני"
+          }
+        }
+      }
+    },
+    "ITEM_decimalTwelveHour" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decimal twelve-hour"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עשרוני 12 שעות"
+          }
+        }
+      }
+    },
+    "ITEM_Full" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מלא"
+          }
+        }
+      }
+    },
+    "ITEM_FullWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מלא בלי שנה"
+          }
+        }
+      }
+    },
+    "ITEM_FullWithRomanYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full with Roman Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מלא עם שנה רומנית"
+          }
+        }
+      }
+    },
+    "ITEM_hexadecimal" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hexadecimal"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הקסדצימלי"
+          }
+        }
+      }
+    },
+    "ITEM_ISO8601YearDay" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (Year-Day)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (שנה-יום)"
+          }
+        }
+      }
+    },
+    "ITEM_ISO8601YearMonthDay" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (Year-Month-Day)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (שנה-חודש-יום)"
+          }
+        }
+      }
+    },
+    "ITEM_ISO8601YearWeekDay" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (Year-Week-Day)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO 8601 (שנה-שבוע-יום)"
+          }
+        }
+      }
+    },
+    "ITEM_JewishCalendricalCalculation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jewish calendrical calculation"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יהודי, חישוב הלוח"
+          }
+        }
+      }
+    },
+    "ITEM_Long" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Long"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ארוך"
+          }
+        }
+      }
+    },
+    "ITEM_LongWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Long without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ארוך בלי שנה"
+          }
+        }
+      }
+    },
+    "ITEM_LongWithRomanYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Long with Roman Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ארוך עם שנה רומנית"
+          }
+        }
+      }
+    },
+    "ITEM_Medium" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בינוני"
+          }
+        }
+      }
+    },
+    "ITEM_MediumWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בינוני בלי שנה"
+          }
+        }
+      }
+    },
+    "ITEM_MediumWithWeekday" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium with Weekday"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בינוני עם יום־השבוע"
+          }
+        }
+      }
+    },
+    "ITEM_MediumWithWeekdayWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium with Weekday without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בינוני עם יום־השבוע בלי שנה"
+          }
+        }
+      }
+    },
+    "ITEM_None" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אין"
+          }
+        }
+      }
+    },
+    "ITEM_Short" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקוצר"
+          }
+        }
+      }
+    },
+    "ITEM_ShortWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקוצר בלי שנה"
+          }
+        }
+      }
+    },
+    "ITEM_ShortWithRomanYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short with Roman Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקוצר עם שנה רומנית"
+          }
+        }
+      }
+    },
+    "ITEM_ShortWithWeekday" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short with Weekday"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקוצר עם יום־השבוע"
+          }
+        }
+      }
+    },
+    "ITEM_ShortWithWeekdayWithoutYear" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short with Weekday without Year"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקוצר עם יום־השבוע בלי שנה"
+          }
+        }
+      }
+    },
+    "Jerusalem" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ירושלים"
+          }
+        }
+      }
+    },
+    "jld" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יום יוליאני"
+          }
+        }
+      }
+    },
+    "jul" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Julian"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יוליאני"
+          }
+        }
+      }
+    },
+    "Julian day calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות יום יוליאני"
+          }
+        }
+      }
+    },
+    "kok" : {
+      "comment" : "\"ISO8601\"               = \"ISO 8601\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Japanese"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יפני"
+          }
+        }
+      }
+    },
+    "Land of Israel" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ארץ ישראל"
+          }
+        }
+      }
+    },
+    "LAST_DEVICE_LOCATION" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Device location (last on record)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מקום המכשיר (האחרון הרשום)"
+          }
+        }
+      }
+    },
+    "lid" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lilian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lilian Date"
+          }
+        }
+      }
+    },
+    "Location Details" : {
+      "comment" : "\"Add clock for Julian date calendar\" = \"Add clock for Julian date calendar\";",
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרטי מיקום"
+          }
+        }
+      }
+    },
+    "Location Type" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סוג מיקום"
+          }
+        }
+      }
+    },
+    "Lunar calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות ירחיות"
+          }
+        }
+      }
+    },
+    "Lunisolar calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות ירחיות־שמשיות"
+          }
+        }
+      }
+    },
+    "mar" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mars Sol Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mars Sol Date"
+          }
+        }
+      }
+    },
+    "Mars (all locations)" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מאדים (כל מיקומים)"
+          }
+        }
+      }
+    },
+    "min" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Republic of China (Minguo)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "טאיוואני"
+          }
+        }
+      }
+    },
+    "mjd" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modified Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modified Julian Date"
+          }
+        }
+      }
+    },
+    "modularLarge" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Three-line large complication rows"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שורות תצוגות גדולות של 3 שורות"
+          }
+        }
+      }
+    },
+    "modularSmall" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Two-line small complication rows"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שורות תצוגות קטנות של 2 שורות"
+          }
+        }
+      }
+    },
+    "Move down" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עבור למטה"
+          }
+        }
+      }
+    },
+    "Move to bottom" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עבור לסוף"
+          }
+        }
+      }
+    },
+    "Move to top" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עבור לראש"
+          }
+        }
+      }
+    },
+    "Move up" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עבור למעלה"
+          }
+        }
+      }
+    },
+    "My status" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המצב שלי"
+          }
+        }
+      }
+    },
+    "n events" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "(1 event)"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "(%d events)"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "(אירוע 1)"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "(%d אירועים)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "n events today" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 event today"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d events today"
+                }
+              }
+            }
+          }
+        },
+        "he" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "אירוע 1 היום"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d אירועים היום"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "New Clock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Clock"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעון חדש"
+          }
+        }
+      }
+    },
+    "New Clock Details" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרטי שעון חדש"
+          }
+        }
+      }
+    },
+    "New Internal Event Calendar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Internal Event Calendar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוח שנה אירועים פנימי חדש"
+          }
+        }
+      }
+    },
+    "New location" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New location…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקום חדש…"
+          }
+        }
+      }
+    },
+    "NO_COUNTRY_OR_REGION" : {
+      "comment" : "\"NO_PLACE_NAME\"        = \"International\";",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "International"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בינלאומי"
+          }
+        }
+      }
+    },
+    "NO_DEVICE_LOCATION_PERMISSION" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorry, but Date-O-Rama does not have permission to access your device location. You can change this within the Settings application."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מצטער, אבל אין הרשאה ל־Date-O-Rama לגשת למיקום המתקן שלך. אפשר לשנות זאת ביישום ״הגדרות״."
+          }
+        }
+      }
+    },
+    "NO_SOLAR_TIME" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No solar time"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אין זמן שמשי"
+          }
+        }
+      }
+    },
+    "Now" : {
+      "comment" : "\"ASAAlarmType_minutesBefore\" = \"Minutes before\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Now"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עכשיו"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "comment" : "\"Edit location\" = \"Edit location\";",
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אישור"
+          }
+        }
+      }
+    },
+    "Open in Contacts" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open in Contacts…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג כרטיס איש קשר…"
+          }
+        }
+      }
+    },
+    "Programmer error!  Replace programmer and try again!" : {
+
+    },
+    "rad" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rata Die"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rata Die"
+          }
+        }
+      }
+    },
+    "Reorder" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סדר מחדש"
+          }
+        }
+      }
+    },
+    "Requested address" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כתובת מבוקשת"
+          }
+        }
+      }
+    },
+    "rjd" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduced Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduced Julian Date"
+          }
+        }
+      }
+    },
+    "Send E-mail" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send E-mail…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלח דוא״ל…"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הגדרות"
+          }
+        }
+      }
+    },
+    "Show All-Day Events" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג אירועי יום שלם"
+          }
+        }
+      }
+    },
+    "Show built-in event calendars:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regions"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אזורים"
+          }
+        }
+      }
+    },
+    "Show calendars:" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג לוחות:"
+          }
+        }
+      }
+    },
+    "Show Events" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Non-All-Day Events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג אירועים לא של יום שלם"
+          }
+        }
+      }
+    },
+    "Show locales:" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג מיקומים:"
+          }
+        }
+      }
+    },
+    "Show secondary dates" : {
+      "comment" : "\"INTERVAL_SEPARATOR\" = \" - \";",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show secondary dates"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצג תאריכים שניים"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.all" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing all"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה הכול"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.none" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing none"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה אין"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.oneDay" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing one-day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה יום 1"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.oneMonthOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing one month or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה חודש 1 או פחות"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.oneWeekOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing one week or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה שבוע 1 או פחות"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellDateEventVisibility.oneYearOrLess" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing one year or less"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה שנה 1 או פחות"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.all" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing all"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה הכול"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.future" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing future events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה עתידיים"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.next" : {
+      "comment" : "\"Showing ASAClockCellTimeEventVisibility.nonAllDay\" = \"Showing non-all-day events\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing next events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה הבאים"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.nextAndPresent" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing next and present"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה הבאים ועכשוויים"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.none" : {
+      "comment" : "\"Are you sure you want to delete this new event?\" = \"Are you sure you want to delete this new event?\";",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing none"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה אפס"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.past" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing past events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה עבריים"
+          }
+        }
+      }
+    },
+    "Showing ASAClockCellTimeEventVisibility.present" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Showing present events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מראה עכשיווים"
+          }
+        }
+      }
+    },
+    "Solar calendars" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לוחות שמשיות"
+          }
+        }
+      }
+    },
+    "Sort by calendar name ascending" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין לפי שם לוח שנה עולה"
+          }
+        }
+      }
+    },
+    "Sort by calendar name descending" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין לפי שם לוח השנה יורד"
+          }
+        }
+      }
+    },
+    "Sort locations by name ascending" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים לפי שם עולה"
+          }
+        }
+      }
+    },
+    "Sort locations by name descending" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים לפי שם יורד"
+          }
+        }
+      }
+    },
+    "Sort locations east to west" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים ממזרח למערב"
+          }
+        }
+      }
+    },
+    "Sort locations north to south" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים מצפון לדרום"
+          }
+        }
+      }
+    },
+    "Sort locations south to north" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים מדרום לצפון"
+          }
+        }
+      }
+    },
+    "Sort locations west to east" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מיקומים ממערב למזרח"
+          }
+        }
+      }
+    },
+    "Spring ahead" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start of Daylight Savings Time"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תחילת שעון קיץ"
+          }
+        }
+      }
+    },
+    "tha" : {
+      "comment" : "Calendar identifiers",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buddhist (Thai Solar)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בודהיסטי"
+          }
+        }
+      }
+    },
+    "Thanks to…" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Credit well-deserved"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מי שראוי לומר להם תודה"
+          }
+        }
+      }
+    },
+    "tjd" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Truncated Julian Date"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Truncated Julian Date"
+          }
+        }
+      }
+    },
+    "Today" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היום"
+          }
+        }
+      }
+    },
+    "Use device location" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "השתמש במיקום המכשיר"
+          }
+        }
+      }
+    },
+    "Use external events" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use external events"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "השתמש באירועים חיצוניים"
+          }
+        }
+      }
+    },
+    "User’s language locales" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקומי שפת המשתמש"
+          }
+        }
+      }
+    },
+    "User’s region locales" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקומי איזור המשתמש"
+          }
+        }
+      }
+    },
+    "utilitarian" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-line small complication rows"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שורות תצוגות קטנות של שור 1"
+          }
+        }
+      }
+    },
+    "utilitarianLarge" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-line large complication rows"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שורות תצוגות גדולות של שור 1"
+          }
+        }
+      }
+    },
+    "What calendar systems are currently supported?" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What calendar systems are currently supported?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "איזה לוחות שנה נתמכים כרגע?"
+          }
+        }
+      }
+    },
+    "What is Adelsoft’s policy on your personal information?" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What is Adelsoft’s policy on your personal information?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מה המדיניות של אדלסופט לגבי המידע האישי שלך?"
+          }
+        }
+      }
+    },
+    "What should I do if I have a problem with Date-O-Rama?" : {
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What should I do if I have a problem with Date-O-Rama?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מה עלי לעשות אם יש בעיה עם Date-O-Rama?"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

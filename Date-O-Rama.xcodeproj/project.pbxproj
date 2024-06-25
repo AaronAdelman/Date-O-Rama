@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -103,7 +103,6 @@
 		A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
 		A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
 		A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A40325A72889007CB54B /* ASAWatchEventsList.swift */; };
-		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
 		A5278B1E290FE06700834674 /* BY (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5278B1D290FE06700834674 /* BY (Julian).json */; };
 		A5278B1F290FE06700834674 /* BY (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5278B1D290FE06700834674 /* BY (Julian).json */; };
 		A529D3522A151404004D8799 /* Wellcat.json in Resources */ = {isa = PBXBuildFile; fileRef = A529D3512A151404004D8799 /* Wellcat.json */; };
@@ -112,6 +111,8 @@
 		A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */; };
 		A52A238A279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
 		A52A238B279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
+		A52A52392C2B457E00AAA012 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A52A52382C2B457E00AAA012 /* Localizable.xcstrings */; };
+		A52A523A2C2B457E00AAA012 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A52A52382C2B457E00AAA012 /* Localizable.xcstrings */; };
 		A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
 		A5307025279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
 		A533798124B2333500340C0B /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
@@ -284,7 +285,6 @@
 		A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
 		A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
 		A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
-		A57CA3292484E61800378EA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
 		A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32C2486474900378EA7 /* ComplicationController.swift */; };
 		A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
@@ -508,8 +508,6 @@
 		A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A5BD09CB26B17DEA00738C0B /* ASADayFractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
-		A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
-		A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
 		A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5BDE77A26661F7500F47416 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5BDE77C26677E7900F47416 /* Islam (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islam (supplemental).json */; };
@@ -1233,13 +1231,12 @@
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
 		A523A40325A72889007CB54B /* ASAWatchEventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchEventsList.swift; sourceTree = "<group>"; };
-		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A5278B1D290FE06700834674 /* BY (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BY (Julian).json"; sourceTree = "<group>"; };
 		A529D3512A151404004D8799 /* Wellcat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Wellcat.json; sourceTree = "<group>"; };
 		A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAFrenchRepublicanCalendar.swift; sourceTree = "<group>"; };
 		A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchRepublicanDateExtensions.swift; sourceTree = "<group>"; };
+		A52A52372C2B457D00AAA012 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/LaunchScreen.xcstrings; sourceTree = "<group>"; };
+		A52A52382C2B457E00AAA012 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
 		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
 		A53437502857971800F8E8AF /* ASAJulianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianCalendar.swift; sourceTree = "<group>"; };
@@ -1420,8 +1417,6 @@
 		A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADayFractionView.swift; sourceTree = "<group>"; };
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
-		A5BDE7752665594600F47416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		A5BDE7772665594D00F47416 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = he; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventSpecification.swift; sourceTree = "<group>"; };
 		A5BDE77B26677E7900F47416 /* Islam (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islam (supplemental).json"; sourceTree = "<group>"; };
 		A5BDE77E266784EE00F47416 /* Ahmadiyya.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ahmadiyya.json; sourceTree = "<group>"; };
@@ -2431,8 +2426,7 @@
 				A5BDB7C7244D9F760027704F /* Extensions */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
-				A525622C24556169009C2920 /* Localizable.strings */,
-				A5BDE7762665594600F47416 /* Localizable.stringsdict */,
+				A52A52382C2B457E00AAA012 /* Localizable.xcstrings */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A538A81626F0CAE300DBB26C /* README.md */,
 				A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */,
@@ -2713,7 +2707,6 @@
 				A5F0F7612B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */,
 				A5EF000F285B8EEB00F2205F /* IQ (Muslim).json in Resources */,
 				A501C8072861FA9C00211E33 /* SO.json in Resources */,
-				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A5E292C3285A420400925EBD /* EG.json in Resources */,
 				A5EB4F992850F6A200A32FB1 /* Sunni Islam (times, Karachi).json in Resources */,
 				A5EFFFAB285B7F2E00F2205F /* SL.json in Resources */,
@@ -2775,9 +2768,9 @@
 				A51C8579282D64A00081A11B /* Buddhism.json in Resources */,
 				A581B87D284E487200407D68 /* HU.json in Resources */,
 				A50DA51B28686272008D54AE /* SG (Chinese).json in Resources */,
-				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5FB22B428638E9200B5042B /* SZ.json in Resources */,
 				A5D85097280C8A1A005247BD /* LK.json in Resources */,
+				A52A523A2C2B457E00AAA012 /* Localizable.xcstrings in Resources */,
 				A5E292D8285A5AD600925EBD /* KZ.json in Resources */,
 				A5EB85192869DBB900C9321A /* LB (Julian).json in Resources */,
 				A576C39428171F96005AC73D /* NZ.json in Resources */,
@@ -3057,6 +3050,7 @@
 				A529D3522A151404004D8799 /* Wellcat.json in Resources */,
 				A5F3B02128565F8100865CEB /* BS.json in Resources */,
 				A5E9AB632A1B4C8900433D7A /* Names.json in Resources */,
+				A52A52392C2B457E00AAA012 /* Localizable.xcstrings in Resources */,
 				A581B876284E452400407D68 /* LT.json in Resources */,
 				A50DA52828686272008D54AE /* KR (Chinese).json in Resources */,
 				A5B999B228622B1800072FD5 /* BV.json in Resources */,
@@ -3186,7 +3180,6 @@
 				A5E292CE285A58E200925EBD /* LI.json in Resources */,
 				A5E4961D28625142001BF40C /* KI.json in Resources */,
 				A54B61B42A9267FA005CC33D /* XK (Julian).json in Resources */,
-				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5EFFF5B285B5F9B00F2205F /* GY.json in Resources */,
 				A5EE19E82805FFC700B0B9C2 /* US (Hebrew).json in Resources */,
 				A5E4965028625479001BF40C /* NC.json in Resources */,
@@ -3308,7 +3301,6 @@
 				A5EFFF8A285B7CBD00F2205F /* NA.json in Resources */,
 				A5FA44C72A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */,
 				A5EB851E2869EC7E00C9321A /* EG (Coptic).json in Resources */,
-				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5F0F7602B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */,
 				A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */,
 				A57797CD2B8E582A00F68529 /* SA (Muslim).json in Resources */,
@@ -3858,29 +3850,11 @@
 			name = "Thanks to.pdf";
 			sourceTree = "<group>";
 		};
-		A525622C24556169009C2920 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A525622B24556169009C2920 /* en */,
-				A525622E245561E3009C2920 /* he */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		A5BDE7762665594600F47416 /* Localizable.stringsdict */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5BDE7752665594600F47416 /* en */,
-				A5BDE7772665594D00F47416 /* he */,
-			);
-			name = Localizable.stringsdict;
-			sourceTree = "<group>";
-		};
 		A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A5C77C082433361900CFEE47 /* Base */,
-				A525622D245561E2009C2920 /* he */,
+				A52A52372C2B457D00AAA012 /* mul */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3911,6 +3885,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.0;
@@ -3940,6 +3915,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.0;
@@ -4001,6 +3977,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -4062,6 +4039,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -4101,6 +4079,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -4135,6 +4114,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
