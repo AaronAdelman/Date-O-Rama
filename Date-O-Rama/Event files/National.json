@@ -1946,7 +1946,7 @@
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-cookbook-month/"}, titles: {"en": "National Cookbook Month"}},
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-cookie-month/"}, titles: {"en": "National Cookie Month"}, emoji: "🍪"},
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-critical-illness-awareness-month/"}, titles: {"en": "National Critical Illness Awareness Month"}, inherits: "*MedAwareness*"},
-        {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-dental-hygiene-month/"}, titles: {"en": "National Dental Hygiene Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2009}},
+        {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-dental-hygiene-month/"}, titles: {"en": "National Dental Hygiene Month"}, inherits: "*MedAwareness*", emoji: "🦷🪥", first: {era: 1, y: 2009}},
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-depression-education-and-awareness-month/"}, titles: {"en": "National Depression Education and Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-dessert-month/"}, titles: {"en": "National Dessert Month"}},
         {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-domestic-violence-awareness-month/"}, titles: {"en": "​National Domestic Violence Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}},

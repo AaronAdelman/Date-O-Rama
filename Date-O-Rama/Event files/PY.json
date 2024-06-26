@@ -12,7 +12,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "nD", start: {mon: 5, d: 14}, end: {mon: 5, d: 15}, first: {era: 1, y: 1811}, urls: {"en": "https://nationaltoday.com/paraguay-independence-day/"}},
-        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/chaco-armistice-day/"}, titles: {"en": "Chaco Armistice Day", "es": "Día de la Paz del Chaco"}, notes: {"en": "Chaco Peace Day"}, first: {era: 1, y: 1935}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/chaco-armistice-day/"}, titles: {"en": "Chaco Armistice Day", "es": "Día de la Paz del Chaco"}, notes: {"en": "Chaco Peace Day"}, first: {era: 1, y: 1935}, emoji: "☮️"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/founding-of-asuncion-in-paraguay/"}, titles: {"en": "Founding of Asunción", "es": "Fundación de Asunción"}},
         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/paraguay/boqueron-battle-victory-day"}, titles: {"en": "Boquerón Battle Victory Day", "es": "Victoria de Boquerón"}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/paraguay/immaculate-conception-day"}, titles: {"en": "Virgin of Caacupé Day", "es": "Virgen de Caacupé"}, inherits: "Feast of the Immaculate Conception"},
