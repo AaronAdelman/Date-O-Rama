@@ -4,6 +4,6 @@
     calendarCode: "chi",
     calendarColor: {"red": 1.0, "green": 0.82, "blue": 0.41},
     eventSpecifications: [
-        {type: "1D", start: {mon: 7, d: 15}, titles: {"en": "Ghost Festival", "zh": "盂蘭盆節", "zh_CN": "盂兰盆节"}, urls: {"en": "https://nationaltoday.com/spirit-festival/"}},
+        {type: "1D", start: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en": "https://nationaltoday.com/spirit-festival/"}},
     ]
 }

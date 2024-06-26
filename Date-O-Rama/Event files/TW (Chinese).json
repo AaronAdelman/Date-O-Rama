@@ -25,7 +25,7 @@
         {type: "1D", start: {mon: 5, d: 13}, titles: {"en": "Kuan Kung’s Birthday", "zh": "關公誕辰"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 5, d: 13}, titles: {"en": "Cheng Huang’s Birthday", "zh": "城隍爺誕辰"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 7, d: 7}, inherits: "Qixi Festival"},
-        {type: "1D", start: {mon: 7, d: 15}, inherits: "Spirit Festival"},
+        {type: "1D", start: {mon: 7, d: 15}, inherits: "Ghost Festival"},
         {type: "1D", start: {mon: 10, d: 15}, titles: {"en": "Saisiat Festival", "zh": "賽夏節"}},
    ]
 }

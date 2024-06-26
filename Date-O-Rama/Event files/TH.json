@@ -1,7 +1,7 @@
 {
     titles: {"*": "TH"},
     "//": "Thailand",
-    "TODO": "Buddhist holidays, Muslim holidays",
+    "TODO": "Buddhist holidays, Muslim holidays, Thai lunar calendar observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
@@ -101,8 +101,16 @@
         {type: "1D", start: {mon: 12, d: 16}, inherits: "National Sports Day", first: {era: 1, y: 1986}},
         {type: "1D", start: {mon: 12, d: 28}, titles: {"en": "King Taksin Memorial Day", "th": "วันที่ระลึกสมเด็จพระเจ้าตากสินมหาราช"}},
 
-
-        
-        
+        {type: "1D", start: {d: 4, mon: 1}, titles: {"en": "Cavalry and Armor Day", "th": "วันทหารม้า"}},
+        {type: "1D", start: {d: 17, mon: 1}, titles: {"en": "National Dairy Day", "th": "วันโคนมแห่งชาติ"}},
+        {type: "1D", start: {d: 2, mon: 2}, titles: {"en": "National Agriculture Day", "th": "วันเกษตรแห่งชาติ"}},
+        {type: "1D", start: {d: 10, mon: 2}, titles: {"en": "Volunteer Defense’s Day", "th": "วันอาสารักษาดินแดน"}},
+        {type: "1D", start: {d: 14, mon: 2}, inherits: "Valentine’s Day"},
+        {type: "1D", start: {d: 25, mon: 2}, inherits: "National Radio Day"},
+        {type: "1D", start: {d: 5, mon: 3}, titles: {"en": "Journalist’s Day", "th": "วันนักข่าว"}},
+        {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "National Scout Organization Day", "th": "วันสถาปนาลูกเสือแห่งชาติ"}},
+        {type: "1D", start: {d: 4, mon: 9}, titles: {"en": "Royal Thai Navy Submarine Memorial Day", "th": "วันเรือดำน้ำไทย"}},
+        {type: "1D", start: {d: 15, mon: 9}, titles: {"en": "Silpa Bhirasri Day", "th": "วันศิลป์ พีระศรี"}},
+        {type: "1D", start: {d: 25, mon: 12}, inherits: "Christmas Day"},
     ]
 }
