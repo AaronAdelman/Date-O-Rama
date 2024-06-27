@@ -8,7 +8,7 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Constitution Day", type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, first: {era: 1, y: 2019}},
-        {type: "1D", start: {mon: 1, d: 8, thruD: 9, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, titles: {"en": "Constitution Day (in lieu)"}, first: {era: 1, y: 2019}, inherits: "Constitution Day"},
+        {type: "1D", start: {mon: 1, d: 8, thruD: 9, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, inherits: "Constitution Day (in lieu)", first: {era: 1, y: 2019}},
         {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 3}, first: {era: 1, y: 1957}, urls: {"en": "https://nationaltoday.com/ghana-independence-day/"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
