@@ -1205,6 +1205,7 @@
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/strawberry-parfait-day/"}, titles: {"en": "National Strawberry Parfait Day"}, emoji: "🍓"},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-barcode-day/"}, titles: {"en": "National Barcode Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-pudding-day/"}, titles: {"en": "National Chocolate Pudding Day"}},
+        {type: "1D", start: {mon: 6, d: 26}, titles: {"en": "National Coconut Day", "he": "יום הקוקוס הלאומי"}, emoji: "🥥", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-coconut-day-june-26"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/national-stitch-day/"}, titles: {"en": "National Stitch Day"}, first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/national-bingo-day/"}, titles: {"en": "National Bingo Day"}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/national-ice-cream-cake-day/"}, titles: {"en": "National Ice Cream Cake Day"}, first: {era: 1, y: 2018}, emoji: "🍰"},

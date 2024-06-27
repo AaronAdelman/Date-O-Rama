@@ -94,6 +94,7 @@
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Dental Hygiene Day", "th": "วันทันตสาธารณสุขแห่งชาติ"}, first: {era: 1, y: 1989}, inherits: "*MedAwareness*", emoji: "🦷🪥"},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 3}, inherits: "World Day of Remembrance for Road Traffic Victims", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 11, d: 20}, inherits: "Navy Day", titles: {"en": "Royal Thai Navy Day", "th": "วันกองทัพเรือ"}},
+        {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "King Vajiravudh Memorial Day", "th": "วันสมเด็จพระมหาธีรราชเจ้า"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "Primary Education Day", "th": "วันประถมศึกษาแห่งชาติ"}},
         {type: "1D", start: {mon: 11, d: 27}, titles: {"en": "National Health-Building Day", "th": "วันสร้างสุขภาพแห่งชาติ"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 12, d: 1}, titles: {"en": "Damrong Rajanubhab Day", "th": "วันดำรงราชานุภาพ"}, first: {era: 1, y: 2001}},
@@ -102,8 +103,8 @@
         {type: "1D", start: {mon: 12, d: 28}, titles: {"en": "King Taksin Memorial Day", "th": "วันที่ระลึกสมเด็จพระเจ้าตากสินมหาราช"}},
 
         {type: "1D", start: {d: 4, mon: 1}, titles: {"en": "Cavalry and Armor Day", "th": "วันทหารม้า"}},
-        {type: "1D", start: {d: 17, mon: 1}, titles: {"en": "National Dairy Day", "th": "วันโคนมแห่งชาติ"}},
-        {type: "1D", start: {d: 2, mon: 2}, titles: {"en": "National Agriculture Day", "th": "วันเกษตรแห่งชาติ"}},
+        {type: "1D", start: {d: 17, mon: 1}, titles: {"en": "National Dairy Day", "th": "วันโคนมแห่งชาติ"}, emoji: "🥛🧀🧈"},
+        {type: "1D", start: {d: 2, mon: 2}, titles: {"en": "National Agriculture Day", "th": "วันเกษตรแห่งชาติ"}, emoji: "👨‍🌾👩‍🌾"},
         {type: "1D", start: {d: 10, mon: 2}, titles: {"en": "Volunteer Defense’s Day", "th": "วันอาสารักษาดินแดน"}},
         {type: "1D", start: {d: 14, mon: 2}, inherits: "Valentine’s Day"},
         {type: "1D", start: {d: 25, mon: 2}, inherits: "National Radio Day"},
