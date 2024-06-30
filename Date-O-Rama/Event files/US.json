@@ -40,7 +40,7 @@
         {type: "1D", start: {mon: 4, d: 13}, titles: {"en": "National Borinqueneers Day"}, first: {era: 1, y: 2021}, urls: {"en": "https://nationaldaycalendar.com/national-borinqueneers-day-april-13/"}, emoji: "🇵🇷"},
         {type: "1D", start: {mon: 4, d: 14}, titles: {"en": "National Pan American Day"}, first: {era: 1, y: 1931}, urls: {"en": "https://nationaldaycalendar.com/national-pan-american-day-april-14/"}, emoji: "🌎"},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 4, d: 16}, "locations": {"en": "District of Columbia"}, urls: {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#District_of_Columbia"}, first: {era: 1, y: 2005}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 4}, first: {era: 1, y: 1776}, urls: {"en": "https://nationaltoday.com/independence-day/", "he": "https://www.daysoftheyear.co.il/2018/07/4.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 4}, first: {era: 1, y: 1776}, urls: {"en": "https://nationaltoday.com/independence-day/", "he": "https://www.daysoftheyear.co.il/2018/07/4.html"}, notes: {"en": "Fourth of July"}},
         {type: "1D", start: {d: 2, thruD: 8, mon: 11, wkd: [3]}, titles: {"en": "Election Day", "he": "יום הבחירות", "ar": "يوم الانتخابات"}, urls: {"en": "https://nationaltoday.com/election-day/"}, emoji: "🗳️"},
         {type: "1D", start: {mon: 4, d: 5}, titles: {"en": "Gold Star Spouses Day"}, notes: {"en": "Gold Star Wives Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/gold-star-spouses-day/"}, emoji: "⭐️"},
         {inherits: "Thanksgiving Day", type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 4}, first: {era: 1, y: 1942}, urls: {"en": "https://www.daysoftheyear.com/days/thanksgiving/"}},
@@ -197,7 +197,7 @@
         {inherits: "Statehood Day", type: "1D", start: {mon: 8, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Hawaii)"}, "locations": {"en": "Hawaii", "he": "הוואי"}, first: {era: 1, y: 1969}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 2009}, inherits: "National Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-day/"}},
         {type: "1D", start: {mon: 6, d: 14}, inherits: "Army Day", first: {era: 1, y: 1775}, titles: {"en": "Army Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/army-birthday/"}},
-        {titles: {"en": "National Air Traffic Control Day"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-air-traffic-control-day/"}, first: {era: 1, y: 1986}, emoji: "✈️"},
+        {titles: {"en": "National Air Traffic Control Day"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/national-air-traffic-control-day/"}, first: {era: 1, y: 1986}, emoji: "✈️"},
         {titles: {"en": "National Atomic Veterans’ Day"}, type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-atomic-veterans-day/"}, first: {era: 1, y: 1983}, emoji: "⚛️"},
         {type: "1D", start: {mon: 7, d: 31}, inherits: "Flag Day", urls: {"en": "https://nationaltoday.com/hawaii-flag-day/"}, first: {era: 1, y: 1990}, titles: {"en": "Hawaii Flag Day", "he": "יום דגל הוואי"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {era: 1, y: 2011}},
@@ -521,6 +521,8 @@
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/alloimmunization-and-hdfn-day/"}, titles: {"en": "Alloimmunization and HDFN Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/sun-day/"}, titles: {"en": "Sun Day"}, notes: {"en": "International Sun Day"}, first: {era: 1, y: 1978}, emoji: "☉"},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/straw-hat-day/"}, titles: {"en": "National Straw Hat Day"}, first: {era: 1, y: 1920}, emoji: "👒"},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://www.nifc.gov/nwffd"}, titles: {"en": "National Wildland Firefighter Day"}, notes: {"en": "NWFFD"}, emoji: "👨‍🚒👩‍🚒", first: {era: 1, y: 2022}},
+        {inherits: "Indivisible Day", type: "1D", start: {mon: 7, d: 4}, first: {era: 1, y: 2002}},
 
 
 
@@ -570,7 +572,7 @@
         {type: "1D", start: {mon: 1, d: 4}, titles: {"en": "National Missouri Day", "he": "יום מיזורי הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 5}, titles: {"en": "National Rhode Island Day", "he": "יום רוד איילנד הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-rhode-island-day-october-5/"}},
         {type: "1D", start: {mon: 4, d: 5}, titles: {"en": "National Nebraska Day", "he": "יום נברסקה הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-nebraska-day-april-5/"}, first: {era: 1, y: 2017}},
-        {type: "1D", start: {d: 5, mon: 7}, titles: {"en": "National Hawaii Day", "he": "יום הוואי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-hawaii-day-july-5/"}},
+        {type: "1D", start: {d: 5, mon: 7}, titles: {"en": "National Hawaii Day", "he": "יום הוואי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://www.daysoftheyear.com/days/national-hawaii-day/"}},
         {type: "1D", start: {d: 7, mon: 12}, titles: {"en": "National Illinois Day", "he": "יום אילינוי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-illinois-day-december-7/"}},
         {type: "1D", start: {mon: 6, d: 7}, titles: {"en": "National Oklahoma Day", "he": "יום אוקלהומה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oklahoma-day-june-7/"}},
         {type: "1D", start: {d: 7, mon: 9}, titles: {"en": "National New Hampshire Day", "he": "יום ניו המפשייר הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-new-hampshire-day-september-7/"}},
