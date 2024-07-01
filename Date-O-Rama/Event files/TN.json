@@ -12,7 +12,7 @@
         {type: "1D", start: {mon: 4, d: 9}, inherits: "Martyrs’ Day", urls: {"en": "https://www.officeholidays.com/holidays/tunisia/tunisia-martyrs-day"}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Republic Day", type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/tunisia-republic-day/"}, first: {era: 1, y: 1957}},
-        {type: "1D", start: {mon: 8, d: 13}, inherits: "Women’s Day", urls: {"en": "https://nationaltoday.com/womens-and-family-day/"}, titles: {"en": "Women's and Family Day"}, first: {era: 1, y: 2017}, notes: {"en": "Women’s Day"}},
+        {type: "1D", start: {mon: 8, d: 13}, inherits: "Women’s Day", urls: {"en": "https://nationaltoday.com/womens-and-family-day/"}, titles: {"en": "Women’s and Family Day"}, first: {era: 1, y: 2017}, notes: {"en": "Women’s Day"}},
         {inherits: "Evacuation Day", type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/tunisia-evacuation-day/"}, first: {era: 1, y: 1962}},
         {type: "1D", start: {mon: 12, d: 17}, titles: {"en": "Revolution and Youth Day"}, emoji: "䷰👦👧", first: {era: 1, y: 2010}},
 
