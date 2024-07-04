@@ -13,7 +13,7 @@
         {type: "1D", start: {mon: 1, d: 5, wkd: [3, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/day-after-new-years-day"}, inherits: "New Year’s Holiday (bridge day)"},
         {type: "1D", start: {mon: 1, d: 6, wkd: [2, 4, 6, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/day-after-new-years-day"}, inherits: "New Year’s Holiday (bridge day)"},
         {type: "1D", start: {mon: 1, d: 8, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/day-after-new-years-day"}, inherits: "New Year’s Holiday (bridge day)"},
-        {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/defence-of-the-fatherland-day/"}, notes: {"en": "Defense of the Fatherland Day\nMen’s Day", "ru": "День Мужчин"}, inherits: "International Men’s Day", first: {era: 1, y: 1919}, titles: {"en": "Defender of the Fatherland Day", "ru": "День защитника Отечествa"}},
+        {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/defence-of-the-fatherland-day/"}, notes: {"en": "Defense of the Fatherland Day\nMen’s Day", "ru": "День Мужчин"}, inherits: "Defender of the Fatherland Day", first: {era: 1, y: 1919}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {era: 1, y: 1914}},
         {type: "1D", start: {mon: 4, d: 29, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/labour-day"}, inherits: "Day of Spring and Labor Holiday"},
         {type: "1D", start: {mon: 4, d: 30, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/labour-day"}, inherits: "Day of Spring and Labor Holiday"},
