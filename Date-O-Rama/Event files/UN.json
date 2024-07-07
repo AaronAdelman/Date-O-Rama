@@ -117,7 +117,7 @@
         {titles: {"en": "International Day of Parliamentarism", "he": "יום הפרלמנטריות הבינלאומי"}, type: "1D", start: {mon: 6, d: 30}, first: {era: 1, y: 2019}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-parliamentarism-june-30/"}},
 
         {titles: {"en": "International Day of Cooperatives", "he": "יום הקואופרטיבים הבינלאומי"}, notes: {"en": "International Co-operative Day"}, type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 1}, first: {era: 1, y: 1995}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-cooperatives/"}},
-        {titles: {"en": "World Population Day", "he": "יום האוכלוסייה הבינלאומי"}, type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaldaycalendar.com/world-population-day-july-11/", "he": "https://www.daysoftheyear.co.il/2018/07/11.html"}, emoji: "🗺", first: {era: 1, y: 1991}},
+        {titles: {"en": "World Population Day", "he": "יום האוכלוסייה הבינלאומי"}, type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/population-day/", "he": "https://www.daysoftheyear.co.il/2018/07/11.html"}, emoji: "🗺", first: {era: 1, y: 1991}},
         {titles: {"en": "World Youth Skills Day", "he": "יום הכישורים הבינלאומי לנוער"}, type: "1D", start: {mon: 7, d: 15}, first: {era: 1, y: 2015}, urls: {"en": "https://nationaldaycalendar.com/world-youth-skills-day-july-15/"}, emoji: "👦👧"},
         {titles: {"en": "Nelson Mandela International Day", "he": "יום נלסון מנדלה הבינלאומי"}, type: "1D", start: {mon: 7, d: 18}, first: {era: 1, y: 2010}, urls: {"en": "https://nationaldaycalendar.com/nelson-mandela-international-day-july-18/"}, notes: {"en": "The UN simply co-opted Nelson Mandela Day from South Africa and needlessly made the name longer."}},
         {titles: {"en": "World Chess Day", "he": "יום השחמט הבינלאומי"}, type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 1967}, urls: {"en": "https://nationaldaycalendar.com/international-chess-day-july-20/"}, emoji: "♟"},
@@ -250,6 +250,7 @@
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Global Family Day"}, urls: {"en": "https://www.daysoftheyear.com/days/global-family-day/"}, inherits: "Family Day", first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-the-potato/"}, titles: {"en": "International Day of the Potato"}, emoji: "🥔", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/world-kiswahili-language-day/"}, titles: {"en": "World Kiswahili Language Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-combating-sand-and-dust-storms/"}, titles: {"en": "International Day of Combating Sand and Dust Storms"}, first: {era: 1, y: 2023}, emoji: "🏜️"},
 
 
 
@@ -389,6 +390,5 @@
         {titles: {"en": "International Co-operation Year"}, type: "1Y", start: {era: 1, y: 1965}},
         {titles: {"en": "International Health and Medical Research Year"}, type: "1Y", start: {era: 1, y: 1961}, emoji: "⚕️"},
         {titles: {"en": "World Refugee Year"}, type: "1D", start: {era: 1, y: 1959, mon: 6, d: 1}, "end": {era: 1, y: 1960, mon: 5, d: 31}},
-        
     ]
 }
