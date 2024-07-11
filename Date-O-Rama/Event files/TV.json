@@ -1,12 +1,35 @@
 {
     titles: {"*": "TV"},
     "//": "Tuvalu",
+    "TODO": "Aso o te Tala Lei for Nukulaelae",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.65, "blue": 0.87},
     eventSpecifications: [
-        {inherits: "National Children’s Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 1}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/tuvalu-independence-day/"}},
-        {type: "1D", start: {mon: 6, d: 10}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/commonwealth-day"}, titles: {"en": "Commonwealth Day"}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/tuvalu-gospel-day"}, inherits: "Gospel Day"},
+        {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 2}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/king-charles-birthday"}},
+        {inherits: "National Children’s Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/tuvalu-national-childrens-day"}},
+        {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/tuvalu-independence-day/"}, titles: {"en": "Tuvalu Day"}, inherits: "Independence Day", first: {era: 1, y: 1978}},
+        {type: "1D", start: {mon: 10, d: 3, wkd: [2, 3]}, inherits: "Tuvalu Day Holiday", first: {era: 1, y: 1978}},
+        {type: "1D", start: {mon: 10, d: 4, wkd: [3]}, inherits: "Tuvalu Day Holiday", first: {era: 1, y: 1978}},
+        {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/heir-to-the-throne-day"}, titles: {"en": "Heir to the Throne Day"}, inherits: "*BDay*"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        
+        {type: "1D", start: {mon: 1, d: 8}, locations: {"en": "Nanumea"}, titles: {"tvl": "Te Po o Tefolaha"}},
+        {type: "1D", start: {mon: 2, d: 11}, locations: {"en": "Nukufetau"}, titles: {"tvl": "Te Aso o Tutasi"}},
+        {type: "1D", start: {mon: 2, d: 16}, locations: {"en": "Nui"}, titles: {"en": "Day of the Flood", "tvl": "Bogin te Ieka"}},
+        {type: "1D", start: {mon: 4, d: 15}, locations: {"en": "Nanumaga"}, titles: {"tvl": "Aho o te Fakavae"}},
+        {type: "1D", start: {mon: 4, d: 23}, locations: {"en": "Funafuti"}, titles: {"en": "The day of the bombing", "tvl": "Te Aso o te Paula"}},
+        {type: "1D", start: {mon: 9, d: 17}, locations: {"en": "Niutao"}, titles: {"tvl": "Te Aso o te Setema"}},
+        {type: "1D", start: {mon: 10, d: 21}, locations: {"en": "Funafuti"}, titles: {"en": "Cyclone Day"}},
+        {type: "1D", start: {mon: 11, d: 25}, locations: {"en": "Vaitupu"}, titles: {"en": "Happy Day", "tvl": "Te Aso Fiafia"}},
+
     ]
 }
