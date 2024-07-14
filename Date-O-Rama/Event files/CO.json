@@ -24,7 +24,7 @@
         {inherits: "Feast of the Sacred Heart", type: "1D", start: {"Easter": "Easter", "offsetD": 68}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul"},
         {inherits: "Feast of Saints Peter and Paul (in lieu)", type: "1D", start: {mon: 6, d: 30, thruMon: 7, thruD: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/colombia-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/colombia-independence-day.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 1810}, urls: {"en": "https://www.daysoftheyear.com/days/colombias-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/colombia-independence-day.html"}},
         {type: "1D", start: {mon: 8, d: 7}, titles: {"en": "Battle of Boyacá Day"}, urls: {"en": "https://nationaltoday.com/battle-of-boyaca/"}, first: {era: 1, y: 1819}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {titles: {"en": "Assumption Day (in lieu)"}, type: "1D", start: {mon: 8, d: 15, thruD: 21, wkd: [2]}},

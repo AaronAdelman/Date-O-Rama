@@ -92,7 +92,7 @@
         {titles: {"en": "National Peacekeepers’ Day"}, type: "1D", start: {mon: 8, d: 6, thruD: 12, wkd: [1]}, urls: {"en": "https://en.wikipedia.org/wiki/National_Peacekeepers%27_Day"}},
         {inherits: "National Grandparents’ Day", type: "1D", start: {mon: 9, wkdRecurrence: 2, wkd: [1]}, first: {era: 1, y: 1978}},
         {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
-        {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/national-respect-canada-day/"}, titles: {"en": "National Respect Canada Day"}},
+        {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-respect-canada-day/"}, titles: {"en": "National Respect Canada Day"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, inherits: "Super Bowl Sunday", first: {era: 1, y: 1967}},
         {type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, inherits: "National Night Out", first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-arcadian-day/"}, titles: {"en": "National Acadian Day"}, first: {era: 1, y: 1881}},

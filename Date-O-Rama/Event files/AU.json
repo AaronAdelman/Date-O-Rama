@@ -74,7 +74,7 @@
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/mabo-day/"}, titles: {"en": "Mabo Day"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "1D", inherits: "Loud Shirt Day", start: {mon: 10, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://www.loudshirtday.com.au/"}},
-        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-lamington-day/"}, titles: {"en": "National Lamington Day"}},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/lamington-day/"}, titles: {"en": "National Lamington Day"}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/international-red-shoe-day/"}, titles: {"en": "International Red Shoe Day", "he": "יום הנעליים האדומות הבינלאומי"}, first: {era: 1, y: 2014}, emoji: "👠"},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/st-james-tg/"}, inherits: "Feast of St. James"},
         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/aged-care-employee-day/"}, titles: {"en": "Aged Care Employee Day"}, first: {era: 1, y: 2018}, emoji: "👴🧓"},

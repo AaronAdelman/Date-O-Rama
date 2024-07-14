@@ -174,5 +174,6 @@
         {titles: {"en": "Suffolk Day"}, type: "pt", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://suffolkday.co.uk/"}},
         {type: "1D", start: {mon: 6, d: 25}, titles: {"en": "Goat’s Cheese Day"}, emoji: "🧀", urls: {"en": "https://www.daysoftheyear.com/days/goats-cheese-day/"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/dream-big-day/"}, titles: {"en": "Dream Big Day"}, emoji: "☁️", first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://www.blackleadersawarenessday.org.uk/"}, titles: {"en": "Black Leaders Awareness Day"}, notes: {"en": "BLAD"}, first: {era: 1, y: 2023}},
     ]
 }
