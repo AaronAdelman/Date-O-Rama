@@ -1,17 +1,28 @@
 {
     titles: {"*": "UG"},
     "//": "Uganda",
+    "TODO": "Muslim observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/uganda/nrm-liberation-day"}, titles: {"en": "NRM Liberation Day"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/archbishop-janani-luwum-day/"}, titles: {"en": "Archbishop Janani Luwum Day"}, first: {era: 1, y: 1977}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/uganda/international-womens-day"}, inherits: "International Women’s Day"},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/uganda/labour-day"}, inherits: "Labour Day"},
+        {inherits: "Public Holiday", type: "1D", start: {era: 1, y: 2024, mon: 5, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/uganda/uganda-census-day"}},
+        {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/uganda/uganda-martyrs-day"}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, d: 9}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-uganda/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/uganda-independence-day/"}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, d: 9}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-uganda/"}},
-        {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/uganda-independence-day/"}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/archbishop-janani-luwum-day/"}, titles: {"en": "Archbishop Janani Luwum Day"}, first: {era: 1, y: 1977}},
 
         {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
     ]
