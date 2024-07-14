@@ -139,7 +139,7 @@
         {type: "1D", start: {mon: 5, d: 28}, titles: {"en": "International Day of Action for Women’s Health"}, first: {era: 1, y: 1987}, emoji: "👩‍⚕️", urls: {"en": "http://www.may28.org/"}},
         {type: "1D", start: {mon: 6, d: 19}, titles: {"en": "World Sickle Cell Day"}, urls: {"en": "https://www.sicklecelldisease.org/get-involved/events/awareness-month-and-world-sickle-day/"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 6, d: 21}, titles: {"en": "World Music Day", "he": "יום המוזיקה העולמי", "fr": "Fête de la Musique"}, first: {era: 1, y: 1982}, emoji: "🎼", urls: {"en": "https://www.makemusicday.org/", "he": "https://www.daysoftheyear.co.il/2016/06/21.html"}, notes: {"en": "Make Music\nWorld Day of Music"}},
-        {type: "1D", start: {mon: 6, d: 23}, titles: {"en": "International Olympic Day"}, first: {era: 1, y: 1948}, emoji: "🤺", notes: {"en": "Olympic Day"}, urls: {"en": "https://olympics.com/ioc/olympic-day"}},
+        {inherits: "International Olympic Day", type: "1D", start: {mon: 6, d: 23}, first: {era: 1, y: 1948}},
         {type: "1D", start: {mon: 6, d: 28}, titles: {"en": "Tau Day"}, emoji: "τ", first: {era: 1, y: 2010}, urls: {"en": "https://tauday.com/"}},
         {type: "1D", start: {mon: 7, d: 3}, titles: {"en": "International Plastic Bag Free Day", "he": "יום ללא שקיות ניילון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-plastic-bag-free-day/"}},
         {type: "1D", start: {mon: 7, d: 6}, titles: {"en": "World Zoonoses Day"}, inherits: "*MedAwareness*"},

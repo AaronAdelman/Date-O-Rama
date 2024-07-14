@@ -84,7 +84,7 @@
         {titles: {"en": "International Day to End Obstetric Fistula", "he": "היום הבינלאומי לסיום פיסטולה מיילדת"}, type: "1D", start: {mon: 5, d: 23}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/international-day-to-end-obstetric-fistula-may-23/"}, emoji: "🩺"},
         {titles: {"en": "Week of Solidarity with the Peoples of Non-Self-Governing Territories", "he": "שבוע של סולידריות עם עמי השטחים שאינם בשליטה עצמית"}, type: "nD", start: {mon: 5, d: 25}, "end": {mon: 5, d: 31}, first: {type: "nD", era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/international-week-of-solidarity-with-the-peoples-of-non-self-governing-territories/"}},
 
-        {titles: {"en": "International Day of UN Peacekeepers", "he": "היום הבינלאומי של שומרי השלום של האו״ם"}, type: "1D", start: {mon: 5, d: 29}, first: {era: 1, y: 2003}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-un-peacekeepers/"}, emoji: "🇺🇳", notes: {"en": "Celebrating an organization set up to maintain the peace which has consistently failed in its mission"}},
+        {inherits: "International Day of UN Peacekeepers", type: "1D", start: {mon: 5, d: 29}, first: {era: 1, y: 2003}},
         {inherits: "World No-Tobacco Day", type: "1D", start: {mon: 5, d: 31}, first: {era: 1, y: 1989}},
 
         {titles: {"en": "Global Day of Parents", "he": "יום ההורים העולמי"}, type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/global-day-of-parents/", "he": "https://www.daysoftheyear.co.il/2019/06/parents-day.html"}, inherits: "Parents’ Day"},

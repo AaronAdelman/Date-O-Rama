@@ -62,7 +62,7 @@
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
         {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
         {inherits: "Beheading of St. John the Baptist", type: "1D", start: {mon: 8, d: 29}},
-        {titles: {"en": "Intercession of the Theotokos"}, type: "1D", start: {mon: 10, d: 1}},
+        {inherits: "Intercession of the Theotokos", type: "1D", start: {mon: 10, d: 1}},
         
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},
         
