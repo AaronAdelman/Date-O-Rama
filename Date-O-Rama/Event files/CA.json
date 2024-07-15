@@ -26,7 +26,7 @@
         {type: "1D", start: {mon: 7, d: 1}, titles: {"en": "Canada Day", "he": "יום קנדה", "fr": "Fête du Canada"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/canada-day/", "he": "https://www.daysoftheyear.co.il/2017/07/1.html"}},
         {type: "1D", start: {mon: 7, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/canada-day"}, titles: {"en": "Canada Day (in lieu)"}, locations: {"en": "Newfoundland and Labrador, Prince Edward Island, Saskatchewan, Yukon"}},
         {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Nunavut Day", "iu": "ᓄᓇᕗᑦ ᐅᓪᓗᖓ"}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/nunavut-day/"}},
-        {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day"},
+        {type: "1D", start: {mon: 7, d: 9, thruD: 15, wkd: [2]}, inherits: "Orangemen’s Day"},
         {inherits: "Heritage Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/heritage-day-in-alberta/"}, locations: {"en": "Alberta"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d’août"}, first: {era: 1, y: 1875}, urls: {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
         {titles: {"en": "British Columbia Day", "fr": "Jour de la Colombie-Britannique"}, type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/british-columbia-day/"}},
