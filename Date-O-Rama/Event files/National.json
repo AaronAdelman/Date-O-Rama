@@ -1449,6 +1449,7 @@
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/national-football-day/"}, titles: {"en": "National Football Day"}, emoji: "🏈"},
         {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/hot-dog-day/"}, titles: {"en": "National Hot Dog Day"}, first: {era: 1, y: 1991}, emoji: "🌭"},
         {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/glioblastoma-awareness-day/"}, titles: {"en": "Glioblastoma Awareness Day"}, notes: {"en": "GBM Day\nGBM Awareness Day\nNational Glioblastoma Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-play-day-july-19"}, titles: {"en": "National Play Day"}, first: {era: 1, y: 2024}, emoji: "🛝"},
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-words-with-friends-day/"}, titles: {"en": "National Words with Friends Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-fortune-cookie-day/"}, inherits: "National Fortune Cookie Day"},
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/lollipop-day/"}, titles: {"en": "National Lollipop Day"}, emoji: "🍭"},
