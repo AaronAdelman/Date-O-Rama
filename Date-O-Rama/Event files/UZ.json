@@ -1,17 +1,24 @@
 {
     titles: {"*": "UZ"},
     "//": "Uzbekistan",
+    "TODO": "Muslim observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.45, "blue": 0.81},
     eventSpecifications: [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 1, d: 4, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/day-of-defenders-of-the-motherland"}, titles: {"en": "Day of Defenders of the Motherland"}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}, inherits: "International Women’s Day"},
+        {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/novruz"}, inherits: "Nowruz"},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/uzbekistan-memorial-day"}, inherits: "Memorial Day"},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-childrens-day"}, inherits: "Children’s Day"},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 1}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/uzbekistan-independence-day/", "he": "https://www.daysoftheyear.co.il/2017/09/1.html"}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 3}, inherits: "Air Force Day", first: {era: 1, y: 1995}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/teachers-day-in-uzbekistan/"}, first: {era: 1, y: 1997}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/uzbekistan-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 1992}},
-        {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 3}, inherits: "Air Force Day", first: {era: 1, y: 1995}},
     ]
 }
