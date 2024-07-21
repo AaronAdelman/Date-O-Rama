@@ -32,7 +32,7 @@
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}, first: {era: 1, y: 1947}},
         
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/National_Memorial_Day_of_the_Exiles_and_Foibe"}, titles: {"en": "National Memorial Day of the Exiles and Foibe", "it": "Giorno del ricordo"}, first: {era: 1, y: 2005}},
-        {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "Lateran Treaty Day", "it": "Patti Lateranensi"}},
+        {type: "1D", start: {mon: 2, d: 11}, inherits: "Lateran Treaty Day"},
         {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Day of Remembrance for Sailors Lost at Sea", "it": "Giornata della memoria dei marinai scomparsi in mare"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Four Days of Naples Day", "it": "Insurrezione popolare di Napoli contro i nazifascisti or Quattro giornate di Napoli"}},
         {type: "1D", start: {mon: 10, d: 4}, titles: {"en": "Feast of Saints Francis and Catherine", "it": "San Francesco e Santa Caterina"}, first: {era: 1, y: 1958}},

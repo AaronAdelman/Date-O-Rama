@@ -148,7 +148,7 @@
         {titles: {"en": "Feast of St. Jane Frances de Chantal"}, type: "1D", start: {mon: 8, d: 12}},
         {titles: {"en": "Feast of Saints Pontian and Hippolytus"}, type: "1D", start: {mon: 8, d: 13}},
         {titles: {"en": "Feast of St. Maximilian Mary Kolbe", "he": "החג של מקסימיליאן מריה קולבה הקדוש"}, type: "1D", start: {mon: 8, d: 14}, first: {era: 1, y: 1982}},
-        {titles: {"en": "Vigil of Assumption Day"}, type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/vigil-of-assumption-day/"}},
+        {inherits: "Vigil of Assumption Day", type: "1D", start: {mon: 8, d: 14}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Feast of St. Stephen of Hungary", type: "1D", start: {mon: 8, d: 16}},
         {titles: {"en": "St. Roch’s Day"}, type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/st-rochs-day/"}},
@@ -271,7 +271,7 @@
         {inherits: "Feast of St. Vladimir", type: "1D", start: {mon: 7, d: 15}},
         {type: "1D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
-        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/solemnity-of-mary/"}, titles: {"en": "Solemnity of Mary"}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {type: "1D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/saint-gertrude-of-nivelles-day/"}, titles: {"en": "St. Gertrude of Nivelles Day"}, first: {era: 1, y: 1677}},
 
         {titles: {"en": "Septuagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},
