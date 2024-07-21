@@ -9,7 +9,7 @@
         {titles: {"en": "International Religious Freedom Day", "he": "יום חופש הדת הבינלאומי"}, type: "1D", start: {mon: 10, d: 27}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/spiritual-wellness-month/"}, titles: {"en": "Spiritual Wellness Month", "he": "חודש הבריאות הרוחנית"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/holy-experiment-day/"}, titles: {"en": "Holy Experiment Day", "he": "יום הניסוי הקדוש"}},
-        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/one-voice-day/"}, titles: {"en": "One Voice Day", "he": "יום קול אחד"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/one-voice-day/"}, titles: {"en": "One Voice Day", "he": "יום קול אחד"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://www.belovedarise.org/qyfday"}, titles: {"en": "Queer Youth of Faith Day"}, first: {era: 1, y: 2019}},
 
     ]
