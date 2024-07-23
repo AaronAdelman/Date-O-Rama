@@ -5,7 +5,19 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.90, "green": 0.25, "blue": 0.25},
     eventSpecifications: [
-        {type: "1D", start: {mon: 4, d: 28}, titles: {"en": "Feast of St. Peter Chanel"}},
-        {inherits: "Territory Day", type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/wallis-and-futuna-territory-day/"}, first: {era: 1, y: 1961}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/wallis-and-futuna/saint-pierre-chanel-day"}, titles: {"en": "Saint Pierre-Chanel Day"}, notes: {"en": "Feast of St. Peter Chanel"}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/wallis-and-futuna/v-e-day"}, inherits: "Victory in Europe Day"},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/wallis-and-futuna/bastille-day"}, inherits: "Bastille Day"},
+        {inherits: "Territory Day", type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/wallis-and-futuna-territory-day/"}, first: {era: 1, y: 1961}, notes: {"en": "Wallis and Futuna Territory Day"}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/wallis-and-futuna/armistice-day"}, inherits: "Armistice Day"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
     ]
 }
