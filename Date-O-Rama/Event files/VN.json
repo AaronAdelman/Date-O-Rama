@@ -5,13 +5,164 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 4, d: 29, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/reunification-day"}, titles: {"en": "Reunification Day (bridge day)"}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/reunification-day"}, titles: {"en": "Reunification Day", "vi": "Ngày giải phóng miền Nam, thống nhất đất nước"}},
+        {type: "1D", start: {mon: 5, d: 2, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/reunification-day"}, titles: {"en": "Reunification Day (in lieu)"}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "1D", start: {mon: 5, d: 3, wkd: [2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/labour-day"}, inherits: "Labour Day (in lieu)"},
+        {type: "1D", start: {mon: 9, d: 1, wkd: [5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
+        {inherits: "National Day", type: "1D", start: {mon: 9, d: 2}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/national-day-of-vietnam/", "he": "https://www.daysoftheyear.co.il/2019/09/vietnam-independence-day.html"}},
+        {type: "1D", start: {mon: 9, d: 3, wkd: [1, 3, 4, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
+        {type: "1D", start: {mon: 9, d: 4, wkd: [2, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
+        {type: "1D", start: {mon: 9, d: 5, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
+        
+        {
+            "type": "1D",
+            "start": {"mon": 1, "d": 9},
+            "titles": {
+                "en": "Vietnamese Students’ Day",
+                "vi": "Ngày Học sinh - Sinh viên Việt Nam"
+            }, first: {era: 1, y: 1950}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 2, "d": 3},
+            "titles": {
+                "en": "Communist Party of Vietnam Foundation Anniversary",
+                "vi": "Ngày thành lập Đảng"
+            }, first: {era: 1, y: 1930}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 2, "d": 27},
+            "titles": {
+                "en": "Vietnamese Physicians’ Day",
+                "vi": "Ngày Thầy thuốc Việt Nam"
+            }, first: {era: 1, y: 1985}, emoji: "👨‍⚕️👩‍⚕️"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 3, "d": 8},
+            inherits: "International Women’s Day", first: {era: 1, y: 1930}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 3, "d": 26},
+            "titles": {
+                "en": "Ho Chi Minh Communist Youth Union Foundation Day",
+                "vi": "Ngày Thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh"
+            },
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 4, "d": 21},
+            "titles": {
+                "en": "Vietnam Book Day",
+                "vi": "Ngày Sách Việt Nam"
+            }, first: {era: 1, y: 2014}, emoji: "📕"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 4, "d": 27},
+            "titles": {
+                "en": "Vietnamese Architect’s Day",
+                "vi": "Ngày kiến trúc sư Việt Nam"
+            }, first: {era: 1, y: 2011}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 5, "d": 7},
+            "titles": {
+                "en": "Dien Bien Phu Victory Day",
+                "vi": "Ngày Chiến thắng Điện Biện Phủ"
+            }, first: {era: 1, y: 1954}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 5, "d": 9},
+            "titles": {
+                "en": "Victory over Fascism Day",
+                "vi": "Ngày Chiến thắng Phát xít"
+            }, inherits: "Victory Day (May 9)"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 5, "d": 19},
+            "titles": {
+                "en": "President Ho Chi Minh’s Birthday",
+                "vi": "Ngày sinh Chủ tịch Hồ Chí Minh"
+            }, inherits: "*BDay*", first: {era: 1, y: 1890}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 6, "d": 1},
+            inherits: "International Children’s Day",
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 6, "d": 28},
+            "titles": {
+                "en": "Vietnamese Family Day",
+                "vi": "Ngày Gia đình Việt Nam"
+            }, inherits: "Family Day"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 8, "d": 19},
+            "titles": {
+                "en": "August Revolution Commemoration Day",
+                "vi": "Ngày Cách mạng Tháng 8"
+            }, first: {era: 1, y: 1945}
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 10, "d": 10},
+            "titles": {
+                "en": "Capital Liberation Day",
+                "vi": "Ngày Giải phóng Thủ đô"
+            }
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 10, "d": 13},
+            "titles": {
+                "en": "Vietnamese Entrepreneur’s Day",
+                "vi": "Ngày Doanh nhân Việt Nam"
+            }
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 10, "d": 20},
+            "titles": {
+                "en": "Vietnamese Women’s Day",
+                "vi": "Ngày Phụ nữ Việt Nam"
+            }, first: {era: 1, y: 1930}, inherits: "Women’s Day"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 11, "d": 20},
+            "titles": {
+                "en": "Vietnamese Teacher’s Day",
+                "vi": "Ngày Nhà giáo Việt Nam"
+            }, inherits: "Teacher’s Day"
+        },
+        {
+            "type": "1D",
+            "start": {"mon": 12, "d": 22},
+            "titles": {
+                "en": "National Defence Day",
+                "vi": "Ngày hội quốc phòng toàn dân (ngày thành lập Quân đội nhân dân Việt Nam)"
+            }, first: {era: 1, y: 1944}
+        },
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 6, d: 28}, inherits: "Family Day", first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/vietnamese-family-day/"}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 10, d: 15}, titles: {"en": "Vietnamese Women’s Day"}},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Memorial Day for War Martyrs"}},
-        {inherits: "National Day", type: "1D", start: {mon: 9, d: 2}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/national-day-of-vietnam/", "he": "https://www.daysoftheyear.co.il/2019/09/vietnam-independence-day.html"}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Memorial Day for War Martyrs"}, notes: {"en": "Remembrance Day"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 8, d: 19}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/revolution-commemoration-day/"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", inherits: "Long Tan Day", start: {mon: 8, d: 18}, first: {era: 1, y: 2016}},
