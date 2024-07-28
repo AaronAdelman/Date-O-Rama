@@ -76,7 +76,7 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 15}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
-        {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Albariño Day"}, urls: {"en": "https://nationaltoday.com/albarino-day/"}, emoji: "🍷"},
+        {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Albariño Day"}, urls: {"en": "https://www.daysoftheyear.com/days/albarino-day/"}, emoji: "🍷", first: {era: 1, y: 1953}},
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 8, d: 5}, titles: {"en": "Feast of the White Virgin"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en": "Álava"}},
         {titles: {"en": "Day of Cantabria"}, type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/the-day-of-cantabria/"}, first: {era: 1, y: 1981}, emoji: "🏙️"},

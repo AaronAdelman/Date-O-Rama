@@ -118,7 +118,7 @@
         {titles: {"he": "יום־שנה של הב״ח"}, type: "1D", start: {d: 20, mon: 7}, first: {era: 0, y: 5400}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ אלימלך מליז׳ענסק"}, type: "1D", start: {d: 21, mon: 7}, first: {era: 0, y: 5547}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ערוך השולחן"}, type: "1D", start: {mon: 7, d: 22}, first: {era: 0, y: 5568}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של חידושי הרי״ם"}, type: "1D", start: {d: 23, mon: 7}, first: {era: 0, y: 5526}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של חידושי הרי״ם"}, type: "1D", start: {mon: 7, d: 23}, first: {era: 0, y: 5526}, inherits: "*DeathAnniv*"},
 
         {titles: {"he": "יום־שנה של רבי שלום דובער שניאורסון (אדמו״ר הרש״ב)"}, type: "1D", start: {mon: 8, d: 2}, first: {era: 0, y: 5580}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של האוהב ישראל מאפטא"}, type: "1D", start: {d: 5, mon: 8}, first: {era: 0, y: 5585}, inherits: "*DeathAnniv*"},

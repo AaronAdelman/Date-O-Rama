@@ -177,5 +177,7 @@
         {type: "1D", start: {mon: 6, d: 25}, titles: {"en": "Goat’s Cheese Day"}, emoji: "🧀", urls: {"en": "https://www.daysoftheyear.com/days/goats-cheese-day/"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/dream-big-day/"}, titles: {"en": "Dream Big Day"}, emoji: "☁️", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://www.blackleadersawarenessday.org.uk/"}, titles: {"en": "Black Leaders Awareness Day"}, notes: {"en": "BLAD"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/black-tot-day/"}, titles: {"en": "Black Tot Day"}, emoji: "🥃"},
+        {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/", "he": "https://www.daysoftheyear.co.il/2018/08/3.html"}},
     ]
 }
