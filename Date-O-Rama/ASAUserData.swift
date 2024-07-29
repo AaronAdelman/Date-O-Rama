@@ -361,7 +361,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
     } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
     
-    public func savePreferences(code:  ASAPreferencesFileCode) {
+    @MainActor public func savePreferences(code:  ASAPreferencesFileCode) {
         self.objectWillChange.send()
         
         if code == .clocks {
@@ -554,7 +554,7 @@ extension ASAUserData {
         return self.mainClocks.count
     } // var numberOfMainClocks: Int
     
-    func removeMainClock(uuid: UUID) {
+    @MainActor func removeMainClock(uuid: UUID) {
         for i in 0..<self.mainClocks.count {
             let index = self.mainClocks[i].clocks.firstIndex(where: {$0.uuid == uuid})
             if index != nil {
@@ -565,12 +565,12 @@ extension ASAUserData {
         } // for i in 0..<self.mainClocks.count
     } // func removeMainClock(uuid: UUID)
     
-    func addLocationWithClocks(_ newLocationWithClocks: ASALocationWithClocks) {
+    @MainActor func addLocationWithClocks(_ newLocationWithClocks: ASALocationWithClocks) {
         self.mainClocks.insert(newLocationWithClocks, at: 0)
         self.savePreferences(code: .clocks)
     }
     
-    func addMainClock(clock: ASAClock, location: ASALocation) {
+    @MainActor func addMainClock(clock: ASAClock, location: ASALocation) {
         for i in 0..<self.mainClocks.count {
             if self.mainClocks[i].location == location {
                 self.mainClocks[i].clocks.insert(clock, at: 0)
@@ -583,7 +583,7 @@ extension ASAUserData {
         addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock)
     
-    func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks) {
+    @MainActor func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks) {
         let index = self.mainClocks.firstIndex(of: locationWithClocks)
         if index != nil {
             self.mainClocks.remove(at: index!)

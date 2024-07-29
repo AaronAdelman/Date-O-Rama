@@ -271,32 +271,12 @@
         }
       }
     },
-    "All locales" : {
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "כל מיקומים"
-          }
-        }
-      }
-    },
     "Apple calendars" : {
       "localizations" : {
         "he" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "לוחות אפל"
-          }
-        }
-      }
-    },
-    "Apple locales" : {
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיקומי אפל"
           }
         }
       }
@@ -3737,6 +3717,16 @@
         }
       }
     },
+    "Search locales" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חפש במיקומים"
+          }
+        }
+      }
+    },
     "Send E-mail" : {
       "localizations" : {
         "en" : {
@@ -3811,16 +3801,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "הצג אירועים לא של יום שלם"
-          }
-        }
-      }
-    },
-    "Show locales:" : {
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "הצג מיקומים:"
           }
         }
       }
@@ -4257,26 +4237,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "השתמש באירועים חיצוניים"
-          }
-        }
-      }
-    },
-    "User’s language locales" : {
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיקומי שפת המשתמש"
-          }
-        }
-      }
-    },
-    "User’s region locales" : {
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיקומי איזור המשתמש"
           }
         }
       }

@@ -9,35 +9,6 @@
 import SwiftUI
 import CoreLocation
 
-let ALL_LOCALES            = 0
-let APPLE_LOCALES          = 1
-let USERS_LANGUAGE_LOCALES = 2
-let USERS_REGION_LOCALES   = 3
-
-fileprivate extension Int {
-    var localeCategoryText:  String {
-        get {
-            switch self {
-            case ALL_LOCALES:
-                return NSLocalizedString("All locales", comment: "")
-
-            case APPLE_LOCALES:
-                return NSLocalizedString("All locales", comment: "")
-
-            case USERS_LANGUAGE_LOCALES:
-                return NSLocalizedString("User’s language locales", comment: "")
-
-            case USERS_REGION_LOCALES:
-                return NSLocalizedString("User’s region locales", comment: "")
-
-            default:
-                return ""
-            }
-        } // get
-    } // var calendarCategoryText:  String
-} // extension Int
-
-
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
@@ -51,48 +22,34 @@ struct ASALocaleChooserView: View {
     
     @State var providedLocaleIdentifiers:  Array<String>?
 
-    @State var selection = 0 // All locales
-    
-    func locales(option:  Int) -> Array<ASALocaleRecord> {
-        if providedLocaleIdentifiers != nil {
-            let result: [ASALocaleRecord] = self.localeData.defaultLocaleRecords() +  self.localeData.sortedLocalizedRecords(identifiers:  providedLocaleIdentifiers!)
-            return result
-        }
+    @State var searchText = ""
+
+    func filteredLocales() -> Array<ASALocaleRecord> {
+        let allLocales = self.localeData.allRecords
         
-        switch selection {
-        case ALL_LOCALES:
-            return self.localeData.allRecords
-            
-        case APPLE_LOCALES:
-            return self.localeData.standardLocaleRecords
-            
-        case USERS_LANGUAGE_LOCALES:
-            return self.localeData.recordsForUsersLanguage
-            
-        case USERS_REGION_LOCALES:
-            return self.localeData.recordsForUsersRegion
-            
-        default:
-            return []
-        } // switch selection
-    } // func locales(option:  Int) -> Array<ASALocaleRecord>
+        if searchText.isEmpty {
+            return allLocales
+        } else {
+            return allLocales.filter {
+                $0.id.localizedCaseInsensitiveContains(searchText) ||
+                $0.nativeName.localizedCaseInsensitiveContains(searchText) ||
+                $0.localName.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
     
     var body: some View {
         List {
             if providedLocaleIdentifiers == nil {
-                Picker(selection: $selection, label:
-                        Text("Show locales:"), content: {
-                            Text("All locales").tag(ALL_LOCALES)
-                            Text("Apple locales").tag(APPLE_LOCALES)
-                            Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
-                            Text("User’s region locales").tag(USERS_REGION_LOCALES)
-                        })
+                TextField("Search locales", text: $searchText)
+//                    .padding()
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             
-            ForEach(self.locales(option: selection)) { item in
+            ForEach(self.filteredLocales()) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier, clock: clock, location: location)
-            } // ForEach(localeData.records)
-        } // List
+            }
+        }
         .navigationBarItems(trailing:
                                 Button("Cancel", action: {
                                     self.didCancel = true
@@ -107,8 +64,8 @@ struct ASALocaleChooserView: View {
                 self.clock.localeIdentifier = self.tempLocaleIdentifier
             }
         }
-    } // var body
-} // struct ASALocalePickerView
+    }
+}
 
 struct ASALocaleCell: View {
     let localeString: String
@@ -131,7 +88,7 @@ struct ASALocaleCell: View {
                     Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: clock.timeFormat, locationData: location))
                         .foregroundColor(Color.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
-                } // VStack
+                }
             } else {
                 Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: clock.dateFormat, timeFormat: clock.timeFormat, locationData: location))
                     .foregroundColor(Color.secondary)

@@ -258,7 +258,7 @@ struct ASAMainClocksSectionView: View {
 //        }
 //    }
     
-    private func onMove(source: IndexSet, destination: Int) {
+    @MainActor private func onMove(source: IndexSet, destination: Int) {
         let relevantUUID = self.locationWithClocks.location.id
         let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
         if relevantLocationWithClocksIndex != nil {
