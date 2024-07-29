@@ -49,6 +49,8 @@
 		A508C7F6283E244E00D96947 /* *Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* *Templates.json */; };
 		A50A2C3E2C580C7D00AB0F29 /* Discordianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */; };
 		A50A2C3F2C580C7D00AB0F29 /* Discordianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */; };
+		A50A2C412C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */ = {isa = PBXBuildFile; fileRef = A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */; };
+		A50A2C422C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */ = {isa = PBXBuildFile; fileRef = A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -1195,6 +1197,7 @@
 		A508C7F4283E244E00D96947 /* *Templates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "*Templates.json"; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discordianism.json; sourceTree = "<group>"; };
+		A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Church of the SubGenius.json"; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A50CD63325541B3F00B781EC /* ASAMiniClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniClockView.swift; sourceTree = "<group>"; };
@@ -1872,6 +1875,7 @@
 				A5B999BC28622BBA00072FD5 /* CG.json */,
 				A581B887284E592000407D68 /* CH.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
+				A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */,
 				A5EFFF61285B61E500F2205F /* CI.json */,
 				A5B999C528622C7100072FD5 /* CK.json */,
 				A5EFFF39285B5C5B00F2205F /* CL.json */,
@@ -2710,6 +2714,7 @@
 				A5E495FE28624EFE001BF40C /* GN.json in Resources */,
 				A5F0F7612B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */,
 				A5EF000F285B8EEB00F2205F /* IQ (Muslim).json in Resources */,
+				A50A2C422C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */,
 				A501C8072861FA9C00211E33 /* SO.json in Resources */,
 				A5E292C3285A420400925EBD /* EG.json in Resources */,
 				A5EB4F992850F6A200A32FB1 /* Sunni Islam (times, Karachi).json in Resources */,
@@ -3304,6 +3309,7 @@
 				A5EFFF82285B7BF500F2205F /* MV.json in Resources */,
 				A5E495D828624D7A001BF40C /* ER.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,
+				A50A2C412C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */,
 				A5EFFF8A285B7CBD00F2205F /* NA.json in Resources */,
 				A5FA44C72A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */,
 				A5EB851E2869EC7E00C9321A /* EG (Coptic).json in Resources */,
