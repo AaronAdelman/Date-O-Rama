@@ -19,7 +19,7 @@
         {inherits: "Arabic Language Day", type: "1D", start: {mon: 3, d: 1}, first: {era: 1, y: 2010}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 8, d: 1}},
-        {type: "1D", start: {mon: 12, d: 29}, titles: {"en": "Tree Day", "ar": "عيد الشجرة"}, first: {era: 1, y: 1996}, inherits: "National Tree Day"},
+        {type: "1D", start: {mon: 12, d: 29}, inherits: "Tree Day", first: {era: 1, y: 1996}, inherits: "National Tree Day"},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, d: 21}},
         {inherits: "St. Barbara’s Day", type: "1D", start: {mon: 12, d: 17}},
