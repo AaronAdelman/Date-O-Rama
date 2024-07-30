@@ -36,5 +36,6 @@
         {inherits: "Independence Day", type: "1D", start: {d: 26, mon: 7}, first: {era: 1, y: 1581}},
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {type: "1D", start: {mon: 9, wkd: [3], wkdRecurrence: 4}, inherits: "National Coffee Day"},
+        {inherits: "Black History Month", type: "1M", start: {mon: 10}},
    ]
 }

@@ -355,7 +355,7 @@
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/keep-kids-alive-drive-25-day/"}, titles: {"en": "Keep Kids Alive Drive 25 Day"}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/lei-day/", "he": "https://www.daysoftheyear.co.il/2019/05/lei-day.html"}, titles: {"en": "Lei Day", "he": "יום שרשרת הוואי"}, first: {era: 1, y: 1929}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/worthy-wage-day/"}, titles: {"en": "Worthy Wage Day"}, first: {era: 1, y: 1992}},
-        {type: "1M", start: {mon: 5}, urls: {"en": "https://www.als.org/awareness"}, titles: {"en": "ALS Awareness Month"}, first: {era: 1, y: 1992}, inherits: "*MedAwareness*"},
+        {type: "1M", start: {mon: 5}, urls: {"en": "https://www.als.org/awareness"}, inherits: "ALS Awareness Month", first: {era: 1, y: 1992}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/american-wetlands-month/"}, titles: {"en": "American Wetlands Month"}, first: {era: 1, y: 1991}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/indian-heritage-month/"}, titles: {"en": "National American Indian Heritage Month"}, notes: {"en": "Indian Heritage Month"}, first: {era: 1, y: 1990}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/lupus-awareness-month/"}, titles: {"en": "Lupus Awareness Month"}, first: {era: 1, y: 2009}, inherits: "*MedAwareness*"},

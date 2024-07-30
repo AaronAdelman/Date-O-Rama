@@ -272,7 +272,7 @@
         {inherits: "Kwanzaa (day 6:  Kuumba)", type: "1D", start: {mon: 12, d: 31}},
         {inherits: "Kwanzaa (day 7:  Imani)", type: "1D", start: {mon: 1, d: 1}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 5, d: 28}, titles: {"en": "World Hunger Day"}, urls: {"en": "http://www.worldhungerday.org/"}, emoji: "🍽", first: {era: 1, y: 2011}},
-        {type: "1M", start: {mon: 4}, titles: {"en": "Dalit History Month"}, urls: {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, first: {era: 1, y: 2022}},
+        {type: "1M", start: {mon: 4}, inherits: "Dalit History Month", first: {era: 1, y: 2022}},
         {inherits: "International Day for Biological Diversity", type: "1D", start: {mon: 5, d: 22}, first: {era: 1, y: 2001}},
         {inherits: "National Doughnut Day", type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaldaycalendar.com/national-donut-day-november-5/", "he": "https://www.daysoftheyear.co.il/2019/06/donut-day.html"}},
         {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 2}, titles: {"en": "World Gin Day"}, notes: {"en": "Gin Day"}, emoji: "🥃", urls: {"en": "https://worldginday.com/"}, first: {era: 1, y: 2009}},
@@ -341,7 +341,7 @@
         {type: "1M", start: {mon: 1}, urls: {"en": "https://veganuary.com/"}, titles: {"en": "Veganuary"}, emoji: "🥔🍅🍏", first: {era: 1, y: 2014}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/walk-dog-month/"}, titles: {"en": "Walk Your Dog Month"}, inherits: "*Dog*"},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/world-health-esteem-month-january"}, titles: {"en": "World Health Esteem Month"}, inherits: "*MedAwareness*"},
-
+        
         
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/car-insurance-day/"}, titles: {"en": "Car Insurance Day"}, emoji: "🚗"},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/change-your-password-day/"}, titles: {"en": "Change Your Password Day"}, first: {era: 1, y: 2012}},
@@ -1452,7 +1452,6 @@
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/lake-superior-day/"}, titles: {"en": "Lake Superior Day"}, emoji: "☱"},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/world-snake-day/"}, titles: {"en": "World Snake Day", "he": "יום הנחש העולמי"}, emoji: "🐍"},
         {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/global-hug-your-kids-day/", "he": "https://www.daysoftheyear.co.il/2017/07/16.html"}, titles: {"en": "Global Hug Your Kids Day", "he": "יום חבק את הילדים שלך הגלובלי"}, first: {era: 1, y: 2008}, emoji: "🫂"},
-        {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, titles: {"en": "South Asian Heritage Month"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/insurance-nerd-day/"}, titles: {"en": "Insurance Nerd Day"}, first: {era: 1, y: 2016}, emoji: "👨‍💼👩‍💼"},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/perfect-family-day/"}, titles: {"en": "Perfect Family Day"}, inherits: "Family Day"},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/world-listening-day/"}, titles: {"en": "World Listening Day"}, first: {era: 1, y: 2010}, emoji: "👂"},
@@ -1949,7 +1948,7 @@
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/world-pollution-prevention-day/"}, titles: {"en": "World Pollution Prevention Day"}},
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/cab-franc-day/"}, titles: {"en": "Cabernet Franc Day"}, emoji: "🍷", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/chester-greenwood-earmuff-day/"}, titles: {"en": "Chester Greenwood Day"}, notes: {"en": "Earmuff Day"}, first: {era: 1, y: 1977}},
-        {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/extraordinary-work-team-recognition-day/"}, titles: {"en": "Extraordinary Work Team Recognition Day"}},       
+        {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/extraordinary-work-team-recognition-day/"}, titles: {"en": "Extraordinary Work Team Recognition Day"}},
         {type: "1D", start: {mon: 12, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/walt-disney-day/"}, titles: {"en": "Walt Disney Day"}, first: {era: 1, y: 1977}, emoji: "🐭"},
         {type: "1D", start: {mon: 12, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/world-trick-shot-day/"}, titles: {"en": "World Trick Shot Day"}, emoji: "🏀", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/lard-day/"}, titles: {"en": "National Lard Day"}, notes: {"en": "Lard Day"}},
@@ -1958,7 +1957,7 @@
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-veterinary-medicine/"}, titles: {"en": "International Day of Veterinary Medicine"}, emoji: "🐶"},
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/lutefisk-day-december-9"}, titles: {"en": "Lutefisk Day"}},
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/weary-willie-day/"}, titles: {"en": "Weary Willie Day"}, emoji: "🤡"},
-       {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/techno-day/"}, titles: {"en": "World Techno Day"}, notes: {"en": "Techno Day"}, emoji: "🎶"},
+        {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/techno-day/"}, titles: {"en": "World Techno Day"}, notes: {"en": "Techno Day"}, emoji: "🎶"},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/dewey-decimal-system-day/"}, titles: {"en": "Dewey Decimal System Day"}, emoji: "📚"},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/festival-for-the-souls-of-dead-whales/"}, titles: {"en": "Festival for the Souls of Dead Whales"}, emoji: "🐳"},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/nobel-prize-day/"}, titles: {"en": "Nobel Prize Day"}, first: {era: 1, y: 1901}, emoji: "🏅"},
@@ -1995,5 +1994,12 @@
         {type: "1D", start: {mon: 10, d: 10}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
         {type: "1D", start: {mon: 12, d: 12}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
+        
+        { type: "1M", start: { mon: 3 }, titles: { en: "Mustache March" } },
+        { type: "1M", start: { mon: 4 }, titles: { en: "Mathematics Awareness Month" } },
+        { type: "1M", start: { mon: 4 }, titles: { en: "Second Chance Month" } },
+        { type: "1M", start: { mon: 7 }, titles: { en: "Disability Pride Month" } },
+        { type: "1M", start: { mon: 11 }, titles: { en: "Academic Writing Month" } },
+        { type: "1M", start: { mon: 11 }, titles: { en: "COPD Awareness Month" } },
     ]
 }

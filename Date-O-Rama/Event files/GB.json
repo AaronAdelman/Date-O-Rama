@@ -179,5 +179,9 @@
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://www.blackleadersawarenessday.org.uk/"}, titles: {"en": "Black Leaders Awareness Day"}, notes: {"en": "BLAD"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/black-tot-day/"}, titles: {"en": "Black Tot Day"}, emoji: "🥃"},
         {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/", "he": "https://www.daysoftheyear.co.il/2018/08/3.html"}},
+        { type: "1M", start: { mon: 2 }, titles: { en: "LGBT History Month" } },
+        { type: "1M", start: { mon: 4 }, inherits: "National Pet Month" },
+        { type: "nD", start: { mon: 5, d: 1 }, end: {mon: 6, d: 30}, titles: { en: "National Smile Month" } },
+        {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, titles: {"en": "South Asian Heritage Month"}, first: {era: 1, y: 1990}},
     ]
 }

@@ -306,7 +306,7 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-arts-month/"}, titles: {"en": "National Arts Month"}, first: {era: 1, y: 1991}, emoji: "👨‍🎨👩‍🎨"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-avocado-and-banana-month/"}, titles: {"en": "National Avocado and Banana Month"}, emoji: "🥑🍌"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/bake-for-family-fun-month/"}, titles: {"en": "National Bake For Family Fun Month"}, emoji: "👨‍🍳👩‍🍳"},
-        {type: "1M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/bird-feeding-month/"}, titles: {"en": "National Bird Feeding Month"}, emoji: "🐦", first: {era: 1, y: 1994}},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/bird-feeding-month/"}, titles: {"en": "National Bird Feeding Month"}, emoji: "🐦", first: {era: 1, y: 1994}, notes: { en: "National Bird-Feeding Month" }},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-blah-buster-month/"}, titles: {"en": "National Blah Buster Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-cancer-prevention-month/"}, titles: {"en": "National Cancer Prevention Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-care-about-your-indoor-air-month/"}, titles: {"en": "National Care About Your Indoor Air Month"}},
@@ -816,7 +816,7 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-mediterranean-diet-month/"}, titles: {"en": "National Mediterranean Diet Month"}, first: {era: 1, y: 2009}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-moving-month/"}, titles: {"en": "National Moving Month"}, first: {era: 1, y: 1997}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-osteoporosis-awareness-and-prevention-month/"}, titles: {"en": "National Osteoporosis Awareness and Prevention Month"}, emoji: "🩻", inherits: "*MedAwareness*"},
-        {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-pet-month/"}, titles: {"en": "National Pet Month"}, emoji: "🐰🐱🐶"},
+        {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-pet-month/"}, inherits: "National Pet Month"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-physiotherapy-month/"}, titles: {"en": "National Physiotherapy Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-prom-graduation-safety-month/"}, titles: {"en": "National Prom Graduation Safety Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-recommitment-month/"}, titles: {"en": "National Recommitment Month"}},
@@ -2371,5 +2371,12 @@
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/education-history/national-human-rights-month-december"}, titles: {"en": "National Human Rights Month"}, emoji: "👨👩"},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/december/national-car-donation-month-december"}, titles: {"en": "National Car Donation Month"}, emoji: "🚘", first: {era: 1, y: 2018}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/learn-a-foreign-language-month-december"}, titles: {"en": "National Learn a Foreign Language Month"}, emoji: "💬", first: {era: 1, y: 2009}},
+        { type: "1M", start: { mon: 4 }, titles: { en: "National Child Abuse Prevention Month" } },
+        { type: "1M", start: { mon: 4 }, titles: { en: "National Poetry Writing Month" } },
+        { type: "1M", start: { mon: 9 }, titles: { en: "National African Immigrant Heritage Month" } },
+        { type: "1M", start: { mon: 9 }, titles: { en: "National Prostate Health Month" }, inherits: "*MedAwareness*" },
+        { type: "1M", start: { mon: 10 }, titles: { en: "Breast Cancer Awareness Month" }, inherits: "*MedAwareness*" },
+        { type: "1M", start: { mon: 10 }, titles: { en: "National Cyber Security Awareness Month" } },
+        { type: "1M", start: { mon: 11 }, titles: { en: "Native American Indian/Alaska Native Heritage Month" } }
     ]
 }

@@ -51,7 +51,7 @@
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "1D", start: {mon: 10, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "Black History Month", type: "1M", start: {mon: 2}, first: {era: 1, y: 1995}},
         {inherits: "Women’s History Month", type: "1M", start: {mon: 10}, first: {era: 1, y: 1992}},
-        {type: "1M", start: {mon: 4}, titles: {"en": "Dalit History Month"}, urls: {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, first: {era: 1, y: 2022}},
+        {type: "1M", start: {mon: 4}, inherits: "Dalit History Month", first: {era: 1, y: 2022}},
         {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
        {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
@@ -107,5 +107,8 @@
         {type: "1D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-maple-syrup-day-canada/"}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}, titles: {"en": "Weedless Wednesday"}},
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2016}},
+        { type: "1M", start: { mon: 5 }, titles: { en: "South Asian Heritage Month" } },
+        { type: "1M", start: { mon: 6 }, inherits: "ALS Awareness Month" },
+        { type: "1M", start: { mon: 11 }, titles: { en: "Indigenous Disability Awareness Month" } },
     ]
 }

@@ -143,6 +143,7 @@
         {template: "Cyber Monday", type: "1D", start: {d: 26, thruD: 30, mon: 11, wkd: [2]}, titles: {"en": "Cyber Monday", "he": "סייבר מאנדיי"}, emoji: "🛒", urls: {"en": "https://www.daysoftheyear.com/days/cyber-monday/"}},
         {template: "Daffodil Day", titles: {"fr": "Jonquille", "en": "Daffodil Day", "he": "יום הנרקיס"}, type: "1D", start: {mon: 7, d: 8}},
         {template: "Data Protection Day", titles: {"en": "Data Privacy Day", "he": "יום הגנת הפרטיות", "es": "Día de la privacidad de la información"}, notes: {"en": "Data Protection Day"}, type: "1D", start: {mon: 1, d: 28}, emoji: "📀", urls: {"en": "https://www.daysoftheyear.com/days/data-privacy-day/", "he": "https://www.daysoftheyear.co.il/2018/01/28.html"}},
+        {template: "Dalit History Month", type: "1M", start: {mon: 4}, titles: {"en": "Dalit History Month"}, urls: {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}},
         {template: "Day after New Year’s Day (in lieu)", type: "1D", start: {mon: 1, d: 3, thruD: 4, wkd: [3]}, titles: {"en": "Day after New Year’s Day (in lieu)", "he": "יום אחרי ראש השנה האזרחית (במקומו)"}, inherits: "Day after New Year’s Day"},
         {template: "Day after New Year’s Day", type: "1D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/day-after-new-years-day/"}, titles: {"en": "Day after New Year’s Day", "he": "יום אחרי ראש השנה האזרחית"}, emoji: "🎆"},
         {template: "Day following the Mid-Autumn Festival (in lieu)", type: "1D", start: {mon: 8, d: 19, wkd: [3]}, titles: {"en": "Day following the Mid-Autumn Festival (in lieu)"}, notes: {"en": "Day following Chong Chao Festival (in lieu)"}},
@@ -450,6 +451,7 @@
         {template: "National Maritime Day", type: "1D", start: {mon: 5, d: 22}, titles: {"en": "National Maritime Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
         {template: "National Mutt Day", type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/national-mutt-day/"}, titles: {"en": "National Mutt Day", "he": "יום הכלב המעורב"}, emoji: "🐶"},
         {template: "National Night Out", type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-night-out/"}, titles: {"en": "National Night Out"}, first: {era: 1, y: 1984}},
+        {template: "National Pet Month", type: "1M", start: {mon: 5}, titles: {"en": "National Pet Month"}, emoji: "🐰🐱🐶"},
         {template: "National Philanthropy Day", type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/philanthropy-day/"}, titles: {"en": "National Philanthropy Day"}},
         {template: "National Pie Day", type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/pie-day/", "he": "https://www.daysoftheyear.co.il/2020/01/pie-day.html"}, titles: {"en": "National Pie Day", "he": "יום מאפה הפאי הלאומי"}, emoji: "🥧"},
         {template: "National Pizza Day", type: "1D", start: {mon: 2, d: 9}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הלאומי"}, emoji: "🍕"},
@@ -786,5 +788,6 @@
         {template: "ראש חודש כסלו", titles: {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, type: "nD", start: {mon: 2, d: 30, "yLengths": [355, 385]}, "end": {mon: 3, d: 1}, inherits: "*ראש חודש*"},
         {template: "תענית אסתר", titles: {"he": "תענית אסתר", "en": "Fast of ’Ester"}, type: "1D", start: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}, urls: {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
         {template: "תענית בכורות", titles: {"he": "תענית בכורות", "en": "Fast of the Firstborn"}, type: "1D", start: {mon: 8, d: 14, wkd: [1, 2, 3, 4, 5, 6]}},
+        {template: "ALS Awareness Month", type: "1M", start: {mon: 5}, titles: {"en": "ALS Awareness Month"}, inherits: "*MedAwareness*"},
     ]
 }
