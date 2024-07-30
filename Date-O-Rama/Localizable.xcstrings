@@ -3259,6 +3259,17 @@
         }
       }
     },
+    "Locations" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיקומים"
+          }
+        }
+      }
+    },
     "Lunar calendars" : {
       "localizations" : {
         "he" : {
@@ -3744,6 +3755,7 @@
       }
     },
     "Settings" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {

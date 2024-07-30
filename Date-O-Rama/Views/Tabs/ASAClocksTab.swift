@@ -10,7 +10,6 @@ import SwiftUI
 import Combine
 import CoreLocation
 
-
 struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
@@ -21,6 +20,8 @@ struct ASAClocksTab: View {
     @State var isNavigationBarHidden: Bool = true
     
     @State var isShowingNewLocationView = false
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
     var body: some View {
         NavigationView {
@@ -88,10 +89,16 @@ struct ASAClocksTab: View {
                             })
                         }
                     } label: {
-                        Image(systemName: "gear")
+//                        Image(systemName: "gear")
+//                            .symbolRenderingMode(.multicolor)
+//                        Text("Settings")
+                        Image(systemName: "mappin.circle.fill")
                             .symbolRenderingMode(.multicolor)
-                        Text("Settings")
+                        if horizontalSizeClass == .regular {
+                            Text("Locations")
+                        }
                     }
+                    .frame(minWidth: 32.0)
                     .sheet(isPresented: $isShowingNewLocationView, content: {
                         let locationWithClocks = ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
                         ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true)
