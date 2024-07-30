@@ -42,5 +42,7 @@
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/sweden-finns-day/"}, titles: {"en": "Sweden Finns Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
+        {inherits: "Waffle Day", type: "1D", start: {mon: 3, d: 25}},
+        {type: "1D", start: {mon: 10, d: 4}, titles: {"en": "National Cinnamon Bun Day", "sv": "Kanelbullens dag"}, first: {era: 1, y: 1999}},
     ]
 }

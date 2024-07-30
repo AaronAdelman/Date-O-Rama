@@ -18,5 +18,7 @@
 
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {type: "1D", start: {mon: 5, d: 8}, inherits: "Parents’ Day", first: {era: 1, y: 1973}},
+        {inherits: "Black Day", type: "1D", start: {mon: 4, d: 14}, first: {era: 1, y: 1978}},
+        {type: "1D", start: {mon: 11, d: 11}, titles: {"en": "Pepero Day"}, first: {era: 1, y: 1994}},
   ]
 }

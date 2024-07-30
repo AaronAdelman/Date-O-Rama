@@ -110,5 +110,6 @@
         { type: "1M", start: { mon: 5 }, titles: { en: "South Asian Heritage Month" } },
         { type: "1M", start: { mon: 6 }, inherits: "ALS Awareness Month" },
         { type: "1M", start: { mon: 11 }, titles: { en: "Indigenous Disability Awareness Month" } },
+        {type: "1D", start: {mon: 2, d: 23}, titles: {"en": "Jamaican Patty Day"}}
     ]
 }
