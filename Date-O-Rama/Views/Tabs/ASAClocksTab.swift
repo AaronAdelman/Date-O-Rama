@@ -97,6 +97,8 @@ struct ASAClocksTab: View {
                         if horizontalSizeClass == .regular {
                             Text("Locations")
                         }
+                        Image(systemName: "chevron.down")
+                            .symbolRenderingMode(.multicolor)
                     }
                     .frame(minWidth: 32.0)
                     .sheet(isPresented: $isShowingNewLocationView, content: {
