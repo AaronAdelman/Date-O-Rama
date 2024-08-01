@@ -1344,4 +1344,76 @@ class Date_O_RamaTests: XCTestCase {
         let first: Array<Int?> = [1, 2011, 4, nil]
         XCTAssert(start.isAfterOrEqual(first: first))
     } // func testNationalPlayOutsideDay() throws
+    
+    func testDayOfWeekOf1stDayOMonth() throws {
+        XCTAssert(weekdayOfFirstDay(day: 1, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 2, weekday: 2, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 3, weekday: 3, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 4, weekday: 4, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 5, weekday: 5, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 6, weekday: 6, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 7, weekday: 7, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 8, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 9, weekday: 2, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 10, weekday: 3, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 11, weekday: 4, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 12, weekday: 5, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 13, weekday: 6, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 14, weekday: 7, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 15, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 16, weekday: 2, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 17, weekday: 3, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 18, weekday: 4, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 19, weekday: 5, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 20, weekday: 6, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 21, weekday: 7, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 22, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 23, weekday: 2, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 24, weekday: 3, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 25, weekday: 4, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 26, weekday: 5, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 27, weekday: 6, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 28, weekday: 7, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 29, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 30, weekday: 2, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOfFirstDay(day: 31, weekday: 3, daysPerWeek: 7) == 1)
+    } // func testDayOfWeekOf1stDayOMonth() throws
+    
+    func testFullWeeks() throws {
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == (1, 7))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == (8, 14))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == (15, 21))
+        XCTAssert(daysOf(fullWeek: 4, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == (22, 28))
+    
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 2, daysPerWeek: 7) == (7, 13))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 2, daysPerWeek: 7) == (14, 20))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 2, daysPerWeek: 7) == (21, 27))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 3, daysPerWeek: 7) == (6, 12))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 3, daysPerWeek: 7) == (13, 19))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 3, daysPerWeek: 7) == (20, 26))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 4, daysPerWeek: 7) == (5, 11))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 4, daysPerWeek: 7) == (12, 18))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 4, daysPerWeek: 7) == (19, 25))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 5, daysPerWeek: 7) == (4, 10))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 5, daysPerWeek: 7) == (11, 17))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 5, daysPerWeek: 7) == (18, 24))
+        XCTAssert(daysOf(fullWeek: 4, weekdayOfFirstDayOfMonth: 5, daysPerWeek: 7) == (25, 31))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 6, daysPerWeek: 7) == (3, 9))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 6, daysPerWeek: 7) == (10, 16))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 6, daysPerWeek: 7) == (17, 23))
+        XCTAssert(daysOf(fullWeek: 4, weekdayOfFirstDayOfMonth: 6, daysPerWeek: 7) == (24, 30))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 7, daysPerWeek: 7) == (2, 8))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 7, daysPerWeek: 7) == (9, 15))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 7, daysPerWeek: 7) == (16, 22))
+        XCTAssert(daysOf(fullWeek: 4, weekdayOfFirstDayOfMonth: 7, daysPerWeek: 7) == (23, 29))
+
+        XCTAssert(daysOf(fullWeek: 1, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 10) == (1, 10))
+        XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 10) == (11, 20))
+        XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 10) == (21, 30))
+    } // func testFullWeeks() throws
 } // class Date_O_RamaTests
