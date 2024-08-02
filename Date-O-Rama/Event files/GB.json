@@ -184,5 +184,6 @@
         { type: "nD", start: { mon: 5, d: 1 }, end: {mon: 6, d: 30}, titles: { en: "National Smile Month" } },
         {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, titles: {"en": "South Asian Heritage Month"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 6, d: 3}, titles: {"en": "National Fish and Chips Day"}},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, inherits: "Children of Alcoholics Awareness Week", urls: {"en": "https://coa.nacoa.org.uk/"}},
     ]
 }

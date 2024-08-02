@@ -2394,5 +2394,17 @@
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/apple-cider-day/"}, titles: {"en": "Apple Cider Day"}, notes: {"en": "National Apple Cider Day"}},
         {type: "1D", start: {mon: 12, d: 20}, titles: {"en": "National Cortado Day"}},
         {type: "1W", start: {mon: 1, fullWeek: 3}, titles: {"en": "National Fresh Squeezed Juice Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-week/"}, emoji: "🍹"},
+        {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Boy Scouts Anniversary Week"}, urls: {"en": "https://www.daysoftheyear.com/days/boy-scout-anniversary-week/"}, first: {era: 1, y: 1910}},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Jell-O Week"}, urls: {"en": "https://www.daysoftheyear.com/days/jell-o-week/"}},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, inherits: "Children of Alcoholics Awareness Week"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Great American Pizza Bake"}, urls: {"en": "https://www.daysoftheyear.com/days/great-american-pizza-bake/"}, emoji: "🍕"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Cardiac Rehabilitation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/cardiac-rehabilitation-week/"}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Kraut and Frankfurter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/kraut-and-frankfurter-week/"}, emoji: "🌭"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Freelance Writers Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/freelance-writers-appreciation-week/"}, emoji: "👨‍💻👩‍💻", first: {era: 1, y: 2013}},
+        {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/have-a-heart-for-chained-dogs-week/"}, titles: {"en": "Have a Heart for Chained Dogs Week"}, first: {era: 1, y: 2002}, emoji: "🐕‍🦺"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Hero Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hero-week/"}, emoji: "🦸‍♂️🦸‍♀️"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Salute to Veteran Patients"}, urls: {"en": "https://www.daysoftheyear.com/days/national-salute-to-veteran-patients/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1978}},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Pickle Time Week"}, urls: {"en": "https://www.daysoftheyear.com/days/pickle-time-week/"}, emoji: "🥒"},
+
     ]
 }

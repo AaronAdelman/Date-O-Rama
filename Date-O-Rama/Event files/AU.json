@@ -93,5 +93,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/no-meat-may/"}, titles: {"en": "No Meat May"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/horse-rescue-day/"}, titles: {"en": "Horse Rescue Day"}, inherits: "*Horse*"},
         {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "National Forgiveness Week", first: {era: 1, y: 2004}},
+        {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Feeding Tube Awareness Week"}, urls: {"en": "https://www.feedingtubeaware.com.au/"}, inherits: "*MedAwareness*"},
    ]
 }

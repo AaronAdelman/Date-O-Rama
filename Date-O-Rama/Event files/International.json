@@ -404,7 +404,7 @@
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/sled-dog-day/"}, titles: {"en": "Sled Dog Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/the-record-of-a-sneeze-day/"}, titles: {"en": "Record of a Sneeze Day"}},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/play-your-ukulele-day/"}, titles: {"en": "World Play Your Ukulele Day"}, notes: {"en": "National Ukulele Day"}},
-        {type: "nD", start: {mon: 2, d: 2}, end: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/publicity-for-profit-week/"}, titles: {"en": "Publicity for Profit Week"}},
+        {type: "nD", start: {mon: 2, d: 2}, end: {mon: 2, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/publicity-for-profit-week/"}, titles: {"en": "Publicity for Profit Week"}, emoji: "📷"},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/doggy-date-night/"}, titles: {"en": "Doggy Date Night"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/elmos-birthday/"}, titles: {"en": "Elmo’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/feed-the-birds-day/"}, titles: {"en": "Feed the Birds Day"}, emoji: "🐦", first: {era: 1, y: 2016}},
@@ -429,7 +429,7 @@
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/hug-an-addict-or-alcoholic-day/"}, titles: {"en": "Hug an Addict or Alcoholic Day"}},
         {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/congenital-heart-defect-awareness-week/"}, titles: {"en": "Congenital Heart Defect Awareness Week"}, inherits: "*MedAwareness*", emoji: "❤️"},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/have-a-heart-for-chained-dogs-week/"}, titles: {"en": "Have a Heart for Chained Dogs Week"}, inherits: "*Dog*"},
-        {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-week-of-black-women-in-the-arts/"}, titles: {"en": "International Week of Black Women in the Arts"}},
+        {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/international-week-of-black-women-in-the-arts/"}, titles: {"en": "International Week of Black Women in the Arts"}},
         {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/love-a-mensch-week/"}, titles: {"en": "Love a Mensch Week"}, emoji: "❤️"},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/molasses-bar-day/"}, titles: {"en": "Molasses Bar Day"}},
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/giving-hearts-day-second-thursday-in-february/"}, titles: {"en": "Giving Hearts Day"}, first: {era: 1, y: 2008}, emoji: "❤️"},
@@ -1999,5 +1999,9 @@
         { type: "1M", start: { mon: 11 }, titles: { en: "COPD Awareness Month" } },
         {type: "1D", start: {mon: 6, d: 9}, titles: {"en": "International Lemon Drizzle Cake Day"}},
         {type: "1D", start: {mon: 9, d: 22}, titles: {"en": "International Mixed Berries Muffin Day"}},
+        {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "International Networking Week"}, urls: {"en": "https://internationalnetworkingweek.com/"}, emoji: "◸🌎", first: {era: 1, y: 2008}},
+        {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Burn Awareness Week"}, urls: {"en": "https://ameriburn.org/advocacy-and-prevention/burn-awareness-week/"}, emoji: "🔥", inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Pay Your Bills Week"}, urls: {"en": "https://www.daysoftheyear.com/days/pay-your-bills-week/"}, emoji: "🧾🧮"},
+
     ]
 }
