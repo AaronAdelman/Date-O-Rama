@@ -78,5 +78,6 @@
         {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, titles: {"en": "Paczki Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/paczki-day-day-before-ash-wednesday"}},
         { type: "1M", start: { mon: 9 }, titles: { en: "Gospel Music Heritage Month" } },
         { type: "1M", start: { mon: 11 }, titles: { en: "Black Catholic History Month" } },
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
     ]
 }

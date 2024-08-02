@@ -2002,6 +2002,7 @@
         {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "International Networking Week"}, urls: {"en": "https://internationalnetworkingweek.com/"}, emoji: "◸🌎", first: {era: 1, y: 2008}},
         {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Burn Awareness Week"}, urls: {"en": "https://ameriburn.org/advocacy-and-prevention/burn-awareness-week/"}, emoji: "🔥", inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Pay Your Bills Week"}, urls: {"en": "https://www.daysoftheyear.com/days/pay-your-bills-week/"}, emoji: "🧾🧮"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Take Your Family to School Week"}, urls: {"en": "https://www.pta.org/home/events/PTA-Take-Your-Family-to-School-Week"}, emoji: "👨‍🏫👩‍🏫"},
 
     ]
 }

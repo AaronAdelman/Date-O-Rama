@@ -541,6 +541,8 @@
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/national-whistleblower-day/"}, titles: {"en": "National Whistleblower Day", "he": "יום חושף השחיתות לאומי"}, first: {era: 1, y: 2013}},
         {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, inherits: "International Clown Week", first: {era: 1, y: 1971}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://www.cdc.gov/vaccines/events/niam/"}, titles: {"en": "National Immunization Awareness Month"}, notes: {"en": "NIAM"}, emoji: "💉", inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Heart Failure Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/heart-failure-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}},
+        {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Bird Health Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bird-health-awareness-week/"}, emoji: "🦅🦃🦆"},
 
 
 

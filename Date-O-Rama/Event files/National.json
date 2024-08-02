@@ -353,7 +353,7 @@
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-pork-rind-day/"}, titles: {"en": "National Pork Rind Day"}},
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-lame-duck-day/"}, titles: {"en": "National Lame Duck Day"}},
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/national-black-hiv-aids-awareness-day/"}, titles: {"en": "National Black HIV/AIDS Awareness Day"}, inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-marriage-week/"}, titles: {"en": "National Marriage Week"}, emoji: "⚭"},
+        {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-marriage-week/"}, titles: {"en": "National Marriage Week"}, emoji: "⚭"},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/national-boy-scout-day/"}, titles: {"en": "National Boy Scout Day"}, first: {era: 1, y: 1910}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/cream-cheese-brownie-day/"}, titles: {"en": "National Cream Cheese Brownie Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-home-warranty-day/"}, titles: {"en": "National Home Warranty Day"}, first: {era: 1, y: 2016}},
@@ -2405,6 +2405,10 @@
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Hero Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hero-week/"}, emoji: "🦸‍♂️🦸‍♀️"},
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "National Salute to Veteran Patients"}, urls: {"en": "https://www.daysoftheyear.com/days/national-salute-to-veteran-patients/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1978}},
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Pickle Time Week"}, urls: {"en": "https://www.daysoftheyear.com/days/pickle-time-week/"}, emoji: "🥒"},
+        {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Through with the Chew"}, urls: {"en": "https://www.daysoftheyear.com/days/through-with-the-chew/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1989}},
+        {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "National Pancake Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pancake-week/"}, emoji: "🥞", first: {era: 1, y: 1985}},
+        {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Brotherhood/Sisterhood Week"}, urls: {"en": "https://www.daysoftheyear.com/days/brotherhood-sisterhood-week/"}, emoji: "👦👧", first: {era: 1, y: 1934}},
+        {type: "1W", start: {mon: 2, fullWeek: 3}, notes: {"en": "National Engineers Week"}, titles: {"en": "Engineers Week"}, urls: {"en": "https://discovere.org/programs/engineers-week/"}, emoji: "👷‍♂️👷‍♀️", first: {era: 1, y: 1951}},
 
     ]
 }
