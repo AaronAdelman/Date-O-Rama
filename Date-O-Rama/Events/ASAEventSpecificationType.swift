@@ -13,6 +13,7 @@ enum ASAEventSpecificationType:  String, Codable {
     case oneYear    = "1Y"
     case multiMonth = "nM"
     case oneMonth   = "1M"
+    case oneWeek    = "1W"
     case multiDay   = "nD"
     case oneDay     = "1D"
     case span       = "span"
@@ -22,7 +23,7 @@ enum ASAEventSpecificationType:  String, Codable {
 extension ASAEventSpecificationType {
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
+        case .oneDay, .oneWeek, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
             return true
             
         default:

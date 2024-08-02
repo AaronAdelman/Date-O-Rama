@@ -34,6 +34,9 @@ struct ASADateSpecification:  Codable {
     var lengthsOfMonth: Array<Int>?
     var lengthsOfYear: Array<Int>?
     var dayOfYear: Int?
+    
+    /// The number of the full week (starting on the first day of the week) of the month
+    var fullWeek: Int?
 
     var yearDivisor:  Int?
     
@@ -77,7 +80,6 @@ struct ASADateSpecification:  Codable {
     var MoonPhase: ASAMoonPhaseType?
     
     enum CodingKeys: String, CodingKey {
-//        case type
         case pointEventType      = "ptType"
         case era
         case year                = "y"
@@ -111,6 +113,7 @@ struct ASADateSpecification:  Codable {
         case MoonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
+        case fullWeek
     } // enum CodingKeys
 } // struct ASADateSpecification
 
@@ -221,8 +224,8 @@ extension ASADateSpecification {
             }
             let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
-            
-        case .oneDay, .multiDay:
+                        
+        case .oneDay, .multiDay, .oneWeek:
             if isEndDate {
                 return calendar.startOfNextDay(date: rawDate!, locationData: revisedDateComponents.locationData )
             } else {

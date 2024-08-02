@@ -606,7 +606,7 @@ extension ASAClock {
             case .oneMonth:
                 startDateString = nil
                 endDateString = self.yearAndMonthOnlyDateString(now: event.startDate, location: location)
-            case .multiDay:
+            case .multiDay, .oneWeek:
                 startDateString = self.shortenedDateString(now: event.startDate, location: location)
                 endDateString = event.endDate == nil ? "???" : self.shortenedDateString(now: event.endDate - 1, location: location)
             case .oneDay:

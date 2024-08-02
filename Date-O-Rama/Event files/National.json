@@ -2393,5 +2393,6 @@
         {type: "1D", start: {mon: 10, d: 31}, titles: {"en": "National Candy Apple Day"}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/apple-cider-day/"}, titles: {"en": "Apple Cider Day"}, notes: {"en": "National Apple Cider Day"}},
         {type: "1D", start: {mon: 12, d: 20}, titles: {"en": "National Cortado Day"}},
+        {type: "1W", start: {mon: 1, fullWeek: 3}, titles: {"en": "National Fresh Squeezed Juice Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-week/"}, emoji: "🍹"},
     ]
 }

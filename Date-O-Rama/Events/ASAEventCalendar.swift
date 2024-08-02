@@ -412,6 +412,31 @@ class ASAEventCalendar {
         return (true, startDate, endDate)
     } // func matchMultiYear(endDateSpecification: ASADateSpecification?, components: ASADateComponents, startDateSpecification: ASADateSpecification, calendar: ASACalendar, date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
+    fileprivate func matchOneWeek(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents, type: ASAEventSpecificationType) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        let matchesOneMonth = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
+        if !matchesOneMonth {
+            return MATCH_FAILURE
+        }
+        
+        if calendar is ASACalendarSupportingWeeks {
+            let day = components.day!
+            let (startDay, endDay) = daysOf(fullWeek: tweakedStartDateSpecification.fullWeek!, day: day, weekday: components.weekday!, daysPerWeek: (calendar as! any ASACalendarSupportingWeeks as ASACalendarSupportingWeeks).daysPerWeek)
+            if startDay <= day && day <= endDay {
+                // Matches
+                var weekStartSpecification = tweakedStartDateSpecification
+                weekStartSpecification.day = startDay
+                var weekEndSpecification = tweakedStartDateSpecification
+                weekEndSpecification.day = endDay
+                
+                let startDate = weekStartSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date, type: type)
+                let endDate = weekEndSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date, type: type)
+                return (true, startDate, endDate)
+            }
+        }
+
+        return (matches: false, startDate: nil, endDate: nil)
+    } // fileprivate func matchOneWeek(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents, type: ASAEventSpecificationType) -> (matches: Bool, startDate: Date?, endDate: Date?)
+    
     fileprivate func matchOneMonth(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents, type: ASAEventSpecificationType) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
         if matches {
@@ -730,6 +755,11 @@ class ASAEventCalendar {
             // One-month events
             assert(endDateSpecification == nil)
             return matchOneMonth(date: date, calendar: calendar, locationData: locationData, tweakedStartDateSpecification: tweakedStartDateSpecification, components: components, type: type)
+            
+        case .oneWeek:
+            // One-week events
+            assert(endDateSpecification == nil)
+            return matchOneWeek(date: date, calendar: calendar, locationData: locationData, tweakedStartDateSpecification: tweakedStartDateSpecification, components: components, type: type)
             
         case .multiDay:
             // Multi-day events
