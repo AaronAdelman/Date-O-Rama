@@ -556,9 +556,16 @@ class ASAEventCalendar {
     } // func matchIslamicPrayerTime(_ tweakedStartDateSpecification: ASADateSpecification, _ date: Date, _ locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) {
+        let calendar = components.calendar
+        var daysPerWeek: Int
+        if calendar is ASACalendarSupportingWeeks {
+            daysPerWeek = (calendar as! ASACalendarSupportingWeeks).daysPerWeek
+        } else {
+            daysPerWeek = 1
+        }
         let dateEYMD: Array<Int?>      = components.EYMD
-        let startDateEYMD: Array<Int?> = startDateSpecification.EYMD
-        let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD
+        let startDateEYMD: Array<Int?> = startDateSpecification.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, daysPerWeek: daysPerWeek)
+        let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, daysPerWeek: daysPerWeek)
         let within: Bool = dateEYMD.isWithin(start: startDateEYMD, end: endDateEYMD)
         
         if !within {

@@ -312,6 +312,21 @@ extension ASADateSpecification {
         return [self.era, self.year, self.month, self.day]
     } // var EYMD
     
+    func EYMD(componentsDay: Int, componentsWeekday: Int, daysPerWeek: Int) -> Array<Int?> {
+        let era   = self.era
+        let year  = self.year
+        let month = self.month
+        var day: Int?
+        
+        if self.fullWeek != nil {
+            day = dayGiven(weekdayOfFullWeek: self.weekdays?[0].rawValue ?? 0, fullWeek: self.fullWeek!, day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek)
+        } else {
+            day   = self.day
+        }
+        
+        return [era, year, month, day]
+    } // var EYMD
+    
     func fillIn(EYMD: Array<Int?>) -> ASADateSpecification {
         var result = self
         result.era   = EYMD[0]

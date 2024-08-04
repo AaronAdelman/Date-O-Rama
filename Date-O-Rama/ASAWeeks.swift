@@ -66,7 +66,7 @@ func baseOfDaysOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> In
 ///   - weekday: The day of the week of said day of the month (for the Gregorian calendar:  Sunday = 1, Monday = 2,… Saturday = 7)
 ///   - daysPerWeek: The number of days per week (for the Gregorian calendar:  7)
 /// - Returns: The day of the month on which the specified day of the week in the specified full week falls
-func day(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int {
+func dayGiven(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int {
     let base = baseOfDaysOf(fullWeek: fullWeek, day: day, weekday: weekday, daysPerWeek: daysPerWeek)
     return base + weekdayOfFullWeek
 } // func day(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int
