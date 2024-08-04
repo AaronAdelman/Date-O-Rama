@@ -250,5 +250,6 @@
         {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "National Maritime Day", type: "1D", start: {mon: 4, d: 5}},
         {type: "1D", start: {mon: 11, d: 26}, inherits: "National Milk Day"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, titles: {"en": "Tendong Lho Rum Faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},
     ]
 }

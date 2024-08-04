@@ -12,6 +12,7 @@
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, inherits: "President’s Day"},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {type: "1D", start: {mon: 8, d: 3}, inherits: "Freedom Day", first: {era: 1, y: 1979}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/equatorial-guinea-freedom-day"}},
+        {type: "1D", start: {mon: 8, d: 5, wkd: [2]}, titles: {"en": "Freedom Day (in lieu)"}, first: {era: 1, y: 1979}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/equatorial-guinea-freedom-day"}},
         {inherits: "Constitution Day", type: "1D", start: {mon: 8, d: 15}, first: {era: 1, y: 1982}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/equatorial-guinea-constitution-day"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 12}, first: {era: 1, y: 1968}, urls: {"en": "https://nationaltoday.com/equatorial-guinea-independence-day/"}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
