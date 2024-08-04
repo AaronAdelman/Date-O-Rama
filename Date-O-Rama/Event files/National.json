@@ -2416,6 +2416,7 @@
         {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "National Pancake Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pancake-week/"}, emoji: "🥞", first: {era: 1, y: 1985}},
         {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Brotherhood/Sisterhood Week"}, urls: {"en": "https://www.daysoftheyear.com/days/brotherhood-sisterhood-week/"}, emoji: "👦👧", first: {era: 1, y: 1934}},
         {type: "1W", start: {mon: 2, fullWeek: 3}, notes: {"en": "National Engineers Week"}, titles: {"en": "Engineers Week"}, urls: {"en": "https://discovere.org/programs/engineers-week/"}, emoji: "👷‍♂️👷‍♀️", first: {era: 1, y: 1951}},
+        {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "National Secondhand Wardrobe Week"}, urls: {"en": "https://www.daysoftheyear.com/days/secondhand-wardrobe-week/"}, first: {era: 1, y: 2017}},
 
     ]
 }

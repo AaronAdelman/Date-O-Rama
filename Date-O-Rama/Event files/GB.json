@@ -185,5 +185,11 @@
         {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, titles: {"en": "South Asian Heritage Month"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 6, d: 3}, titles: {"en": "National Fish and Chips Day"}},
         {type: "1W", start: {mon: 2, fullWeek: 2}, inherits: "Children of Alcoholics Awareness Week", urls: {"en": "https://coa.nacoa.org.uk/"}},
+        {type: "nD", start: {mon: 2, fullWeek: 1, wkd: [2]}, end: {mon: 2, fullWeek: 2, wkd: [1]}, titles: {"en": "National Apprenticeship Week"}, urls: {"en": "https://nationalapprenticeshipweek.co.uk/"}, first: {era: 1, y: 2007}},
+        {type: "nD", start: {mon: 2, fullWeek: 1, wkd: [2]}, end: {mon: 2, fullWeek: 2, wkd: [1]}, titles: {"en": "Children’s Mental Health Week"}, urls: {"en": "https://www.childrensmentalhealthweek.org.uk/"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*"},
+        {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Student Volunteering Week"}, urls: {"en": "https://www.daysoftheyear.com/days/student-volunteering-week/"}, first: {era: 1, y: 2001}},
+        {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Homes for Birds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/homes-for-birds-week/"}, emoji: "🐦‍⬛🦜🪿"},
+
+
     ]
 }
