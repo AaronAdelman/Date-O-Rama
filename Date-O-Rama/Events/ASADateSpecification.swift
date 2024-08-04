@@ -148,6 +148,7 @@ extension ASADateSpecification {
         }
     } // func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASADayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date?
     
+    // NOTE:  May need updating to support new date specification types!
     func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date, type: ASAEventSpecificationType) -> Date? {
         var revisedDateComponents = dateComponents
         if self.era != nil {

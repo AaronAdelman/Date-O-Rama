@@ -8,6 +8,7 @@
 
 import Foundation
 
+// NOTE:  May need updating to support new date specification types!
 enum ASAEventSpecificationType:  String, Codable {
     case multiYear  = "nY"
     case oneYear    = "1Y"
@@ -21,6 +22,7 @@ enum ASAEventSpecificationType:  String, Codable {
 } // enum ASAEventSpecificationType
 
 extension ASAEventSpecificationType {
+    // NOTE:  May need updating to support new date specification types!
     var isAllDay: Bool {
         switch self {
         case .oneDay, .oneWeek, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:

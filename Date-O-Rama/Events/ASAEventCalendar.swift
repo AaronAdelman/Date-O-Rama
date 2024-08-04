@@ -713,6 +713,7 @@ class ASAEventCalendar {
         return (true, startDate, endDate)
     }
     
+    // NOTE:  May need updating to support new date specification types!
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, eventSpecification: ASAEventSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, type: ASAEventSpecificationType) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let startDateSpecification = eventSpecification.startDateSpecification
         let endDateSpecification = eventSpecification.endDateSpecification
