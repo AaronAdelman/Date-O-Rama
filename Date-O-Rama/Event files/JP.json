@@ -15,7 +15,7 @@
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/greenery-day-midori-no-hi/"}, titles: {"en": "Greenery Day", "ja": "みどりの日"}, first: {era: 1, y: 2007}, notes: {"en": "Midori no Hi"}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/childrens-day-kodomo-no-hi/"}, first: {era: 1, y: 1984}, notes: {"en": "Kodomo no Hi"}},
         {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Marine Day", "he": "יום הים", "ja": "海の日"}, urls: {"en": "https://nationaltoday.com/marine-day-in-japan/"}, first: {era: 1, y: 2003}, emoji: "🌊"},
-        {titles: {"en": "Mountain Day", "he": "יום ההר", "ja": "山の日"}, type: "1D", start: {mon: 8, d: 11}, first: {era: 1, y: 2016}, urls: {"en": "https://nationaltoday.com/mountain-day/"}, emoji: "🗻"},
+        {titles: {"en": "Mountain Day", "he": "יום ההר", "ja": "山の日"}, type: "1D", start: {mon: 8, d: 11}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-day/"}, emoji: "🗻"},
         {type: "nD", start: {mon: 8, d: 13}, end: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/japan/obon"}, titles: {"en": "Obon"}},
         {titles: {"en": "Respect for the Aged Day", "ja": "敬老の日"}, type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaltoday.com/respect-aged-day/"}, emoji: "👴🧓"},
         {type: "1D", start: {"equinoxOrSolstice": "Sep"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/autumnal-equinox-day"}, titles: {"en": "Autumnal Equinox Day", "ja": "秋分の日"}},

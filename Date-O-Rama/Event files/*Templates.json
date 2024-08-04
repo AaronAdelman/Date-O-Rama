@@ -453,7 +453,7 @@
         {template: "National Maritime Day", type: "1D", start: {mon: 5, d: 22}, titles: {"en": "National Maritime Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
         {template: "National Milk Day", type: "1D", start: {mon: 1, d: 11}, titles: {"en": "National Milk Day", "he": "יום החלב הלאומי"}, emoji: "🥛"},
         {template: "National Mutt Day", type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/national-mutt-day/"}, titles: {"en": "National Mutt Day", "he": "יום הכלב המעורב"}, emoji: "🐶"},
-        {template: "National Night Out", type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-night-out/"}, titles: {"en": "National Night Out"}, first: {era: 1, y: 1984}},
+        {template: "National Night Out", type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://natw.org/"}, titles: {"en": "National Night Out"}, first: {era: 1, y: 1984}},
         {template: "National Pet Month", type: "1M", start: {mon: 5}, titles: {"en": "National Pet Month"}, emoji: "🐰🐱🐶"},
         {template: "National Philanthropy Day", type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/philanthropy-day/"}, titles: {"en": "National Philanthropy Day"}},
         {template: "National Pie Day", type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/pie-day/", "he": "https://www.daysoftheyear.co.il/2020/01/pie-day.html"}, titles: {"en": "National Pie Day", "he": "יום מאפה הפאי הלאומי"}, emoji: "🥧"},
