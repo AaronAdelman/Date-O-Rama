@@ -2014,6 +2014,7 @@
         {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "Teen Tech Week"}, urls: {"en": "https://www.daysoftheyear.com/days/teen-tech-week/"}, emoji: "🖥️", first: {era: 1, y: 2007}},
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Universal Women’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/universal-womens-week/"}, inherits: "Women’s Day"},
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "World Glaucoma Week"}, urls: {"en": "https://www.worldglaucomaweek.org/"}, inherits: "*MedAwareness*", emoji: "👁️"},
+        {type: "nD", start: {mon: 3, fullWeek: 2, wkd: [2]}, end: {mon: 3, fullWeek: 3, wkd: [1]}, titles: {"en": "Nutrition and Hydration Week"}, urls: {"en": "https://www.daysoftheyear.com/days/nutrition-and-hydration-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2012}},
 
 
     ]

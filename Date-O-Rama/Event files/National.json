@@ -2433,6 +2433,7 @@
         {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "National Procrastination Week"}, urls: {"en": "https://www.daysoftheyear.com/days/procrastination-week/"}},
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Pulmonary Rehabilitation Week"}, urls: {"en": "https://www.aacvpr.org/Cardiac-Pulmonary-Rehabilitation-Weeks"}, emoji: "🩻", inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Patient Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/patient-safety-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2002}},
+        {type: "1W", start: {mon: 3, fullWeek: 3}, titles: {"en": "National Clean Out Your Closet Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-clean-out-your-closet-week/"}, first: {era: 1, y: 2000}},
 
 
     ]
