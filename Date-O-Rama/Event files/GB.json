@@ -189,6 +189,9 @@
         {type: "nD", start: {mon: 2, fullWeek: 1, wkd: [2]}, end: {mon: 2, fullWeek: 2, wkd: [1]}, titles: {"en": "Children’s Mental Health Week"}, urls: {"en": "https://www.childrensmentalhealthweek.org.uk/"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Student Volunteering Week"}, urls: {"en": "https://www.daysoftheyear.com/days/student-volunteering-week/"}, first: {era: 1, y: 2001}},
         {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Homes for Birds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/homes-for-birds-week/"}, emoji: "🐦‍⬛🦜🪿"},
+        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "British Pie Week"}, urls: {"en": "http://www.pierate.co.uk/p/british-pie-week.html"}, first: {era: 1, y: 2007}, emoji: "🥧"},
+        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [6]}, end: {mon: 3, fullWeek: 3, wkd: [1]}, titles: {"en": "National Science and Engineering Week"}, notes: {"en": "British Science Week\nNational Science Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-science-and-engineering-week/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1994}},
+        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "National Butchers’ Week"}, notes: {"en": "Butchers’ Week"}, urls: {"en": "https://www.daysoftheyear.com/days/butchers-week/"}, emoji: "🔪"},
 
 
     ]

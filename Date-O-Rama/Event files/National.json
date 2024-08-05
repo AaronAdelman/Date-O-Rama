@@ -439,7 +439,6 @@
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/poundcake-day/"}, titles: {"en": "National Pound Cake Day"}, emoji: "🍰"},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-snack-day/"}, titles: {"en": "National Snack Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-sons-day/"}, titles: {"en": "National Sons Day"}, first: {era: 1, y: 2018}, emoji: "👦"},
-        {type: "nD", start: {mon: 3, d: 4}, end: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-endometriosis-awareness-week/"}, titles: {"en": "National Endometriosis Awareness Week"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/hospitality-workers-in-healthcare-day/"}, titles: {"en": "Hospitality Workers in HealthCare Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/dentists-day/", "he": "https://www.daysoftheyear.co.il/2018/03/6.html"}, titles: {"en": "Dentist Day", "he": "יום רופאי השיניים הלאומי"}, notes: {"en": "National Dentist’s Day"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/national-oreo-cookie-day/", "he": "https://www.daysoftheyear.co.il/2019/03/6.html"}, titles: {"en": "National Oreo Cookie Day", "he": "יום הולדת לעוגיות אוראו הלאומי"}},
@@ -2422,6 +2421,19 @@
         {type: "nD", start: {mon: 2, fullWeek: 3, wkd: [2]}, end: {mon: 2, fullWeek: 4, wkd: [1]}, titles: {"en": "Hockey Week Across America"}, urls: {"en": "https://www.daysoftheyear.com/days/hockey-week-across-america/"}, first: {era: 1, y: 2008}, emoji: "🏒🥅"},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, titles: {"en": "National Summit Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-summit-day-first-saturday-in-august"}, emoji: "⛰️", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, titles: {"en": "National VFR Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-vfr-day-first-saturday-in-august"}, first: {era: 1, y: 2023}},
+        {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "National School Social Work Week"}, urls: {"en": "https://www.daysoftheyear.com/days/schools-social-work-week/"}, first: {era: 1, y: 2009}},
+        {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "Dental Assistant Recognition Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dental-assistants-recognition-week/"}},
+        {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "National Professional Pet Sitters Week"}, urls: {"en": "https://www.petsit.com/ppsweek"}, first: {era: 1, y: 2015}, emoji: "🐾"},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "Write a Letter Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/write-a-letter-appreciation-week/"}, first: {era: 1, y: 2011}, emoji: "✍️"},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 6}, titles: {"en": "National Aplastic Anemia & MDS Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aplastic-anemia-mds-awareness-week/"}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "Words Matter Week"}, urls: {"en": "https://naiwe.com/wordsmatterweek/"}, first: {era: 1, y: 2008}, emoji: "📝"},
+        {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Girl Scout Week"}, urls: {"en": "https://www.daysoftheyear.com/days/girl-scout-week/"}},
+        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "Women in Construction Week"}, urls: {"en": "https://www.daysoftheyear.com/days/women-in-construction-week/"}, emoji: "👷‍♀️"},
+        {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Sleep Awareness Week"}, urls: {"en": "https://www.thensf.org/sleep-awareness-week/"}, emoji: "🛌", inherits: "*MedAwareness*"},
+        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "National Procrastination Week"}, urls: {"en": "https://www.daysoftheyear.com/days/procrastination-week/"}},
+        {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Pulmonary Rehabilitation Week"}, urls: {"en": "https://www.aacvpr.org/Cardiac-Pulmonary-Rehabilitation-Weeks"}, emoji: "🩻", inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Patient Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/patient-safety-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2002}},
+
 
     ]
 }
