@@ -2418,6 +2418,10 @@
         {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Brotherhood/Sisterhood Week"}, urls: {"en": "https://www.daysoftheyear.com/days/brotherhood-sisterhood-week/"}, emoji: "👦👧", first: {era: 1, y: 1934}},
         {type: "1W", start: {mon: 2, fullWeek: 3}, notes: {"en": "National Engineers Week"}, titles: {"en": "Engineers Week"}, urls: {"en": "https://discovere.org/programs/engineers-week/"}, emoji: "👷‍♂️👷‍♀️", first: {era: 1, y: 1951}},
         {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "National Secondhand Wardrobe Week"}, urls: {"en": "https://www.daysoftheyear.com/days/secondhand-wardrobe-week/"}, first: {era: 1, y: 2017}},
+        {type: "nD", start: {mon: 2, d: 19}, end: {mon: 2, d: 25}, titles: {"en": "National Justice for Animals Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-justice-for-animals-week/"}},
+        {type: "nD", start: {mon: 2, fullWeek: 3, wkd: [2]}, end: {mon: 2, fullWeek: 4, wkd: [1]}, titles: {"en": "Hockey Week Across America"}, urls: {"en": "https://www.daysoftheyear.com/days/hockey-week-across-america/"}, first: {era: 1, y: 2008}, emoji: "🏒🥅"},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, titles: {"en": "National Summit Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-summit-day-first-saturday-in-august"}, emoji: "⛰️", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, titles: {"en": "National VFR Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-vfr-day-first-saturday-in-august"}, first: {era: 1, y: 2023}},
 
     ]
 }

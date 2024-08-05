@@ -318,7 +318,7 @@ extension ASADateSpecification {
         let month = self.month
         var day: Int?
         
-        // TODO:  Put in something here which handles wkd/wkdRecurrence and d/thruD/wkd.  This may involve passing (a pointer to) the calendar object as a parameter.
+        // TODO:  Put in something here which handles wkd/wkdRecurrence and mon/thruMon/d/thruD/wkd.  This may involve passing (a pointer to) the calendar object as a parameter.
         if self.fullWeek != nil {
             day = dayGiven(weekdayOfFullWeek: self.weekdays?[0].rawValue ?? 0, fullWeek: self.fullWeek!, day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek)
         } else {
