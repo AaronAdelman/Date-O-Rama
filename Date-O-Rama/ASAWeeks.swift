@@ -23,7 +23,7 @@ func weekdayOfFirstDayOfMonth(day: Int, weekday: Int, daysPerWeek: Int) -> Int {
     return firstDayWeekday
 } // func weekdayOfFirstDay(day: Int, weekday: Int, daysPerWeek: Int) -> Int
 
-func baseForDaysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> Int {
+func eveOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> Int {
     let offset = weekdayOfFirstDayOfMonth == 1 ? 0: (daysPerWeek + 1 - weekdayOfFirstDayOfMonth)
     let base = offset + (fullWeek - 1) * daysPerWeek
     return base
@@ -36,8 +36,8 @@ func baseForDaysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: In
 ///   - daysPerWeek: The number of days per week (for the Gregorian calendar:  7)
 /// - Returns: A tuple containing the starting and end days in the month for the specified full week
 func daysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> (Int, Int) {
-    let base = baseForDaysOf(fullWeek: fullWeek, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
-    return (base + 1, base + daysPerWeek)
+    let eve = eveOf(fullWeek: fullWeek, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
+    return (eve + 1, eve + daysPerWeek)
 } // func daysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> (Int, Int)
 
 /// Calculates the first and last days of a specified full week (beginning on the first day of the week) of a month.
@@ -52,10 +52,10 @@ func daysOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> (Int, In
     return daysOf(fullWeek: fullWeek, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
 } // func daysOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> (Int, Int)
 
-func baseOfDaysOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int {
+func eveOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int {
     let weekdayOfFirstDayOfMonth = weekdayOfFirstDayOfMonth(day: day, weekday: weekday, daysPerWeek: daysPerWeek)
-    let base = baseForDaysOf(fullWeek: fullWeek, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
-    return base
+    let eve = eveOf(fullWeek: fullWeek, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
+    return eve
 }
 
 /// Calculates the day of the month on which a specified day of the week in a specified full week falls.
@@ -67,6 +67,7 @@ func baseOfDaysOf(fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> In
 ///   - daysPerWeek: The number of days per week (for the Gregorian calendar:  7)
 /// - Returns: The day of the month on which the specified day of the week in the specified full week falls
 func dayGiven(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int {
-    let base = baseOfDaysOf(fullWeek: fullWeek, day: day, weekday: weekday, daysPerWeek: daysPerWeek)
-    return base + weekdayOfFullWeek
+    // TODO:  May need to put in something to handle last full week of the month.
+    let eve = eveOf(fullWeek: fullWeek, day: day, weekday: weekday, daysPerWeek: daysPerWeek)
+    return eve + weekdayOfFullWeek
 } // func day(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int

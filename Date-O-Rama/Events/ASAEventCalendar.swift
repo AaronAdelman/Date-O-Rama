@@ -912,6 +912,7 @@ class ASAEventCalendar {
             
             let supportsDay: Bool = calendar.supports(calendarComponent: .day)
             if supportsDay {
+                // TODO:  Probably should add in day of full week of month support
                 let dateSpecificationDay = dateSpecification.day
                 if dateSpecificationDay != nil {
                     let componentsDay = components.day!
@@ -1193,35 +1194,6 @@ class ASAEventCalendar {
             return self.fileName
         }
         
-        //        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
-        //
-        //        let regionCode = autolocalizableRegionCode()
-        //        if regionCode != nil {
-        //            let locale = Locale(identifier: userLocaleIdentifier)
-        //            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
-        //        }
-        //
-        //        let titles = self.eventsFile!.titles
-        //
-        //        let firstAttempt = titles[userLocaleIdentifier]
-        //        if firstAttempt != nil {
-        //            return firstAttempt!
-        //        }
-        //
-        //        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
-        //        if userLanguageCode != nil {
-        //            let secondAttempt = titles[userLanguageCode!]
-        //            if secondAttempt != nil {
-        //                return secondAttempt!
-        //            }
-        //        }
-        //
-        //        let thirdAttempt = titles["en"]
-        //        if thirdAttempt != nil {
-        //            return thirdAttempt!
-        //        }
-        //
-        //        return "???"
         return self.eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
     } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
     
