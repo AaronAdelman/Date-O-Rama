@@ -1416,12 +1416,22 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(daysOf(fullWeek: 2, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 10) == (11, 20))
         XCTAssert(daysOf(fullWeek: 3, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 10) == (21, 30))
         
-        XCTAssert(day(weekdayOfFullWeek: 1, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 1)
-        XCTAssert(day(weekdayOfFullWeek: 2, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 2)
-        XCTAssert(day(weekdayOfFullWeek: 3, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 3)
-        XCTAssert(day(weekdayOfFullWeek: 4, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 4)
-        XCTAssert(day(weekdayOfFullWeek: 5, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 5)
-        XCTAssert(day(weekdayOfFullWeek: 6, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 6)
-        XCTAssert(day(weekdayOfFullWeek: 7, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 7)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 1, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 1)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 2, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 2)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 3, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 3)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 4, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 4)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 5, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 5)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 6, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 6)
+        XCTAssert(dayGiven(weekdayOfFullWeek: 7, fullWeek: 1, day: 1, weekday: 1, daysPerWeek: 7) == 7)
     } // func testFullWeeks() throws
+    
+    func testDayOfWeek() throws {
+        XCTAssert(weekdayOf(day: 1, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 1)
+        XCTAssert(weekdayOf(day: 2, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 2)
+        XCTAssert(weekdayOf(day: 3, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 3)
+        XCTAssert(weekdayOf(day: 4, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 4)
+        XCTAssert(weekdayOf(day: 5, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 5)
+        XCTAssert(weekdayOf(day: 6, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 6)
+        XCTAssert(weekdayOf(day: 7, weekdayOfFirstDayOfMonth: 1, daysPerWeek: 7) == 7)
+    }
 } // class Date_O_RamaTests

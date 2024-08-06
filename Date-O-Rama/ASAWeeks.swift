@@ -71,3 +71,29 @@ func dayGiven(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, day
     let eve = eveOf(fullWeek: fullWeek, day: day, weekday: weekday, daysPerWeek: daysPerWeek)
     return eve + weekdayOfFullWeek
 } // func day(weekdayOfFullWeek: Int, fullWeek: Int, day: Int, weekday: Int, daysPerWeek: Int) -> Int
+
+/// Calculates the weekday of a specific day
+func weekdayOf(day: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> Int {
+    // Calculate the offset from the first day of the month to the specific day
+    let offset = (day - 1) % daysPerWeek
+    // Calculate the weekday of the specific day
+    let specificDayWeekday = (weekdayOfFirstDayOfMonth + offset - 1) % daysPerWeek + 1
+    return specificDayWeekday
+}
+
+/// Calculates the day in a run that falls on a specified weekday
+func dayInRunWithWeekday(weekdayOfFirstDayOfMonth: Int, runStart: Int, runEnd: Int, targetWeekday: Int, daysPerWeek: Int) -> Int? {
+    guard runEnd >= runStart else { return nil }
+    guard targetWeekday >= 1 && targetWeekday <= daysPerWeek else { return nil }
+
+    // Calculate the weekday of the first day in the run
+    let runStartWeekday = weekdayOf(day: runStart, weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, daysPerWeek: daysPerWeek)
+    
+    // Calculate the offset to the target weekday from the run start weekday
+    let daysToTarget = (targetWeekday - runStartWeekday + daysPerWeek) % 7
+    let targetDay = runStart + daysToTarget
+    
+    // Check if the target day is within the run bounds
+    return targetDay <= runEnd ? targetDay : nil
+}
+
