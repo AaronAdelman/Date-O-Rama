@@ -334,7 +334,7 @@ extension ASADateSpecification {
         }
         
         // Weekday in day through day
-        // TODO:  Expand for two months
+        // TODO:  Expand for two months.  This requires adding componentsMonth as a parameter or replacing componentsDay and componentsWeekday with components.  This would involve checking whether the month and (throughMonth ?? month) are equal.  If not, then we need to get the number of days in the first month and checking whether componentsMonth-componentsDay is within month-day/month-number of days in month or within throughMonth-01/throughMonth-throughDay.  This may be expanded to allow for multi-day events crossing a year boundary, though that will require checking which years make sense.
         let weekday = self.weekdays?[0].rawValue
         if self.day != nil && self.throughDay != nil && weekday != nil {
             let runStart = self.day!

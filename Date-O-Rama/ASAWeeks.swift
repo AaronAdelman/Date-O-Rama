@@ -29,6 +29,7 @@ func eveOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> In
     return base
 }
 
+// TODO:  Expand the following function to accomodate full weeks starting on an arbitrary weekday.  (Thank you Europe and ISO.)
 /// Calculates the first and last days of a specified full week (beginning on the first day of the week) of a month.
 /// - Parameters:
 ///   - fullWeek: Which full week (starting on the first weekday) of the month (on the Gregorian calendar 1…4)
