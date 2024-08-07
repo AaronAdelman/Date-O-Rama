@@ -2435,6 +2435,8 @@
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "Patient Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/patient-safety-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2002}},
         {type: "1W", start: {mon: 3, fullWeek: 3}, titles: {"en": "National Clean Out Your Closet Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-clean-out-your-closet-week/"}, first: {era: 1, y: 2000}},
         {type: "nD", start: {mon: 3, d: 3, thruD: 9, wkd: [2]}, end: {mon: 3, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "National Aardvark Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aardvark-week/"}, first: {era: 1, y: 2017}},
+        {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "National Groundwater Awareness Week"}, urls: {"en": "https://www.ngwa.org/get-involved/gwaw"}, first: {era: 1, y: 1999}, emoji: "💧🩵"},
+        {type: "nD", start: {mon: 4, d: 18, thruD: 24, wkd: [1]}, end: {mon: 4, d: 24, thruD: 30, wkd: [7]}, titles: {"en": "National Princess Week"}, urls: {"en": "https://nationaltoday.com/national-princess-week/"}, first: {era: 1, y: 2012}, emoji: "👸"},
 
 
     ]
