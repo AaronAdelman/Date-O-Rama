@@ -420,7 +420,11 @@ class ASAEventCalendar {
         
         if calendar is ASACalendarSupportingWeeks {
             let day = components.day!
-            let (startDay, endDay) = daysOf(fullWeek: tweakedStartDateSpecification.fullWeek!, day: day, weekday: components.weekday!, daysPerWeek: (calendar as! any ASACalendarSupportingWeeks as ASACalendarSupportingWeeks).daysPerWeek)
+            let daysPerWeek = (calendar as! any ASACalendarSupportingWeeks as ASACalendarSupportingWeeks).daysPerWeek
+            let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
+
+            let span = daysOf(fullWeek: tweakedStartDateSpecification.fullWeek!, day: day, weekday: components.weekday!, daysPerWeek: daysPerWeek, monthLength: daysInMonth, firstDayOfWeek: (tweakedStartDateSpecification.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue)
+            guard let (startDay, endDay) = span else { return MATCH_FAILURE }
             if startDay <= day && day <= endDay {
                 // Matches
                 var weekStartSpecification = tweakedStartDateSpecification

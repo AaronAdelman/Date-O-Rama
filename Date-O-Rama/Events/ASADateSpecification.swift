@@ -35,8 +35,12 @@ struct ASADateSpecification:  Codable {
     var lengthsOfYear: Array<Int>?
     var dayOfYear: Int?
     
-    /// The number of the full week (starting on the first day of the week) of the month
+    /// The number of the full week of the month
     var fullWeek: Int?
+    
+    /// The first day of the week.  By default, Sunday.
+    var firstDayOfWeek: ASAWeekday?
+    static let defaultFirstDayOfWeek = ASAWeekday.sunday
 
     var yearDivisor:  Int?
     
@@ -113,7 +117,8 @@ struct ASADateSpecification:  Codable {
         case MoonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
-        case fullWeek
+        case fullWeek            = "fullWeek"
+        case firstDayOfWeek      = "firstDOfWk"
     } // enum CodingKeys
 } // struct ASADateSpecification
 
@@ -329,7 +334,10 @@ extension ASADateSpecification {
                 
                 return 1
             }()
-            day = dayGiven(weekdayOfFullWeek: self.weekdays?[0].rawValue ?? 0, fullWeek: self.fullWeek!, day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek)
+            let newComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: era, year: year, month: month, day: 1)
+            let newDate = newComponents.date
+            let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: newDate!) ?? 1
+            day = dayGiven(weekdayOfFullWeek: self.weekdays?[0].rawValue ?? 0, fullWeek: self.fullWeek!, day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek, monthLength: numberOfDaysInMonth, firstDayOfWeek: (self.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue)
             return [era, year, month, day]
         }
         

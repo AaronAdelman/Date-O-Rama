@@ -193,6 +193,7 @@
         {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [6]}, end: {mon: 3, fullWeek: 3, wkd: [1]}, titles: {"en": "National Science and Engineering Week"}, notes: {"en": "British Science Week\nNational Science Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-science-and-engineering-week/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1994}},
         {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "National Butchers’ Week"}, notes: {"en": "Butchers’ Week"}, urls: {"en": "https://www.daysoftheyear.com/days/butchers-week/"}, emoji: "🔪"},
         {type: "nD", start: {mon: 1, d: 10, thruD: 16, wkd: [2]}, end: {mon: 1, d: 16, thruD: 22, wkd: [1]}, titles: {"en": "Energy Savers Week"}, notes: {"en": "Energy Saving Week\nBig Energy Saving Week"}, urls: {"en": "https://www.citizensadvice.org.uk/about-us/our-work/our-campaigns/awareness-raising-campaigns/besw/"}, emoji: "⚡️"},
+        {type: "nD", start: {mon: 3, fullWeek: 2, wkd: [6]}, end: {mon: 3, fullWeek: 4, wkd: [1]}, titles: {"en": "English Tourism Week"}, urls: {"en": "https://www.daysoftheyear.com/days/english-tourism-week/"}, emoji: "📷"},
 
 
     ]
