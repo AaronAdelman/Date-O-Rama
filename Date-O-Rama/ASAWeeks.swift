@@ -30,9 +30,24 @@ func weekdayOfFirstDayOfMonth(day: Int, weekday: Int, daysPerWeek: Int) -> Int {
 ///   - daysPerWeek: The number of days per week (for the Gregorian calendar:  7)
 /// - Returns: A tuple containing the starting and end days in the month for the specified full week
 func daysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int, monthLength: Int, firstDayOfWeek: Int) -> (Int, Int)? {
-    let fullWeekStart = nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, monthLength: monthLength, targetWeekday: firstDayOfWeek, recurrence: fullWeek, daysPerWeek: daysPerWeek)
-    guard let fullWeekStart = fullWeekStart else { return nil }
-    return (fullWeekStart, fullWeekStart + daysPerWeek - 1)
+    if fullWeek >= 1 {
+        let fullWeekStart = nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, monthLength: monthLength, targetWeekday: firstDayOfWeek, recurrence: fullWeek, daysPerWeek: daysPerWeek)
+        guard let fullWeekStart = fullWeekStart else { return nil }
+        return (fullWeekStart, fullWeekStart + daysPerWeek - 1)
+    } else {
+        // Full weeks counting from the end of the month
+        let lastFullWeekStart = nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, monthLength: monthLength, targetWeekday: firstDayOfWeek, recurrence: -1, daysPerWeek: daysPerWeek)
+        guard var lastFullWeekStart = lastFullWeekStart else { return nil }
+        var lastFullWeekEnd: Int = lastFullWeekStart + daysPerWeek - 1
+        if lastFullWeekEnd > monthLength {
+            // This is not the actual last full week
+            lastFullWeekStart -= daysPerWeek
+            lastFullWeekEnd   -= daysPerWeek
+        }
+        let fullWeekStart = lastFullWeekStart + (fullWeek + 1) * daysPerWeek
+        let fullWeekEnd = lastFullWeekEnd + (fullWeek + 1) * daysPerWeek
+        return (fullWeekStart, fullWeekEnd)
+    }
 } // func daysOf(fullWeek: Int, weekdayOfFirstDayOfMonth: Int, daysPerWeek: Int) -> (Int, Int)
 
 /// Calculates the first and last days of a specified full week (beginning on the first day of the week) of a month.
