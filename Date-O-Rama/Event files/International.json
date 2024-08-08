@@ -2019,6 +2019,8 @@
         {type: "1W", start: {mon: 3, fullWeek: 1, firstDOfWk: 7}, titles: {"en": "International Women’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-womens-week/"}, inherits: "International Women’s Day"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://blacktherapycentral.com/"}, titles: {"en": "Global Black Mental Health Awareness Month"}, inherits: "*MedAwareness*", notes: {"en": "GBMHAM"}, first: {era: 1, y: 2016}},
         {type: "1W", start: {mon: 1, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Farmhouse Breakfast Week"}, urls: {"en": "https://www.daysoftheyear.com/days/farmhouse-breakfast-week/"}, first: {era: 1, y: 2012}, emoji: "🍳"},
+        {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "International Teach Music Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-teach-music-week/"}, first: {era: 1, y: 2014}, emoji: "🥁🪘🪇"},
+        {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Global Money Week"}, notes: {"en": "GMW\nChild Finance Day and Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-launch-of-global-money-week/"}, first: {era: 1, y: 2012}, emoji: "💵💷💶"},
 
 
     ]

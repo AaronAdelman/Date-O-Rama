@@ -544,6 +544,7 @@
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Heart Failure Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/heart-failure-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}},
         {type: "1W", start: {mon: 2, fullWeek: 3}, titles: {"en": "Bird Health Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bird-health-awareness-week/"}, emoji: "🦅🦃🦆"},
         {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "Consumer Awareness Week"}},
+        {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "National Fix a Leak Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fix-a-leak-week/"}, first: {era: 1, y: 2009}},
 
 
 
