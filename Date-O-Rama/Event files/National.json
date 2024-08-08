@@ -1660,9 +1660,10 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-perler-day/"}, titles: {"en": "National Perler Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-pickleball-day/"}, titles: {"en": "National Pickleball Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-tarantula-appreciation-day/"}, titles: {"en": "National Tarantula Appreciation Day"}},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-whataburger-day-august-8"}, titles: {"en": "National Whataburger Day"}, emoji: "🍔", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-billiards-pool-day/"}, titles: {"en": "National Billiards & Pool Day Day"}, notes: {"en": "National Billiards and Pool Day Day"}, emoji: "🎱"},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-passion-fruit-day/"}, titles: {"en": "National Passion Fruit Day"}},
-        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/book-lovers-day/", "he": "https://www.daysoftheyear.co.il/2018/08/9.html"}, titles: {"en": "National Book Lovers Day", "he": "יום קריאת הספרים הלאומי"}, emoji: "📚"},
+        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/book-lovers-day/", "he": "https://www.daysoftheyear.co.il/2018/08/9.html"}, titles: {"en": "National Book Lovers Day", "he": "יום אוהבי ספרים הלאומי"}, emoji: "📚"},
         {type: "1D", start: {mon: 8, wkdRecurrence: 1, wkd: [4]}, urls: {"en": "https://www.daysoftheyear.com/days/national-psychiatric-technician-appreciation-day/"}, titles: {"en": "National Psychiatric Technician Appreciation Day", "he": "יום ההוקרה הלאומי של טכנאי פסיכיאטרי"}, notes: {"en": "Psychiatric Technicians’ Day,"}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/rice-pudding-day/"}, titles: {"en": "National Rice Pudding Day", "he": "יום פודינג אורז הלאומי"}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-veep-day/"}, titles: {"en": "National Veep Day", "he": "יום סגן נשיא הלאומי"}},
@@ -1701,6 +1702,7 @@
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-black-cat-appreciation-day/", "he": "https://www.daysoftheyear.co.il/2018/08/17.html"}, titles: {"en": "National Black Cat Appreciation Day", "he": "יום ההערכה לחתול השחור הלאומי"}, emoji: "🐈‍⬛"},
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-i-love-my-feet-day/"}, titles: {"en": "National I LOVE My Feet Day", "he": "יום ״אני אוהב את הרגליים שלי״ הלאומי"}, emoji: "👣", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-nonprofit-day/"}, titles: {"en": "National Nonprofit Day", "he": "יום המוסד ללא כוונת רווח הלאומי"}},
+        {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pineapple-juice-day-august-17"}, titles: {"en": "National Pineapple Juice Day"}, emoji: "🍍", first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-thrift-shop-day/"}, titles: {"en": "National Thrift Shop Day"}},
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-workers-comp-adjuster-day/"}, titles: {"en": "National Workers’ Comp Adjuster Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-couples-day/"}, titles: {"en": "National Couple's Day", "he": "יום הזוג הלאומי"}, emoji: "👩‍❤️‍👨"},
@@ -2437,6 +2439,7 @@
         {type: "nD", start: {mon: 3, d: 3, thruD: 9, wkd: [2]}, end: {mon: 3, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "National Aardvark Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aardvark-week/"}, first: {era: 1, y: 2017}},
         {type: "1W", start: {mon: 3, fullWeek: 2}, titles: {"en": "National Groundwater Awareness Week"}, urls: {"en": "https://www.ngwa.org/get-involved/gwaw"}, first: {era: 1, y: 1999}, emoji: "💧🩵"},
         {type: "1W", start: {mon: 4, fullWeek: -1}, titles: {"en": "National Princess Week"}, urls: {"en": "https://nationaltoday.com/national-princess-week/"}, first: {era: 1, y: 2012}, emoji: "👸"},
+        {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [6]}, end: {mon: 3, d: 3, thruD: 9, wkd: [1]}, titles: {"en": "Festival of Owls Week"}, urls: {"en": "https://www.daysoftheyear.com/days/festival-of-owls-week/"}, first: {era: 1, y: 2017}, first: {era: 1, y: 2003}, emoji: "🦉"},
 
 
     ]

@@ -254,7 +254,7 @@
 
 
 
-        {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, "end": {era: 1, y: 2032}},
+        {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, "end": {era: 1, y: 2032}, notes: {"en": "Indigenous Languages Decade"}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", "end": {era: 1, y: 2030}},
         {titles: {"en": "United Nations Decade of Healthy Ageing"}, emoji: "👴👵", type: "nY", start: {era: 1, y: 2021}, "end": {era: 1, y: 2030}},
         {titles: {"en": "United Nations Decade on Ecosystem Restoration"}, emoji: "🌱", type: "nY", start: {era: 1, y: 2021}, "end": {era: 1, y: 2030}},

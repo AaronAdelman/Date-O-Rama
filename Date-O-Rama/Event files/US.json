@@ -474,7 +474,7 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-bison-month/"}, titles: {"en": "National Bison Month"}, first: {era: 1, y: 2016}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-blueberry-month/"}, titles: {"en": "National Blueberry Month"}, emoji: "🫐"},
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-blueberry-day/"}, titles: {"en": "National Blueberry Day"}, emoji: "🫐"},
-        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}, inherits: "*MedAwareness*"},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}, inherits: "*MedAwareness*", notes: {"en": "Black, Indigenous and People of Color Mental Health Awareness Month\nBIPOC Mental Health Awareness Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}, emoji: "🍉"},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/pick-blueberries-day/"}, titles: {"en": "Pick Blueberries Day"}, first: {era: 1, y: 2003}, emoji: "🫐"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/child-support-awareness-month/"}, titles: {"en": "Child Support Awareness Month"}, first: {era: 1, y: 1995}},

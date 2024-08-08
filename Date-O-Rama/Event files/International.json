@@ -2017,6 +2017,8 @@
         {type: "nD", start: {mon: 3, fullWeek: 2, wkd: [2]}, end: {mon: 3, fullWeek: 3, wkd: [1]}, titles: {"en": "Nutrition and Hydration Week"}, urls: {"en": "https://www.daysoftheyear.com/days/nutrition-and-hydration-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2012}},
         {type: "1W", start: {mon: 3, fullWeek: 2, firstDOfWk: 2}, titles: {"en": "Brain Awareness Week"}, notes: {"en": "BAW"}, urls: {"en": "https://dana.org/brain-awareness-week/"}, inherits: "*MedAwareness*", emoji: "🧠"},
         {type: "1W", start: {mon: 3, fullWeek: 1, firstDOfWk: 7}, titles: {"en": "International Women’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-womens-week/"}, inherits: "International Women’s Day"},
+        {type: "1M", start: {mon: 8}, urls: {"en": "https://blacktherapycentral.com/"}, titles: {"en": "Global Black Mental Health Awareness Month"}, inherits: "*MedAwareness*", notes: {"en": "GBMHAM"}, first: {era: 1, y: 2016}},
+        {type: "1W", start: {mon: 1, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Farmhouse Breakfast Week"}, urls: {"en": "https://www.daysoftheyear.com/days/farmhouse-breakfast-week/"}, first: {era: 1, y: 2012}, emoji: "🍳"},
 
 
     ]
