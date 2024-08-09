@@ -317,57 +317,6 @@ extension ASADateSpecification {
         return [self.era, self.year, self.month, self.day]
     } // var EYMD
     
-    func EYMD(componentsDay: Int, componentsWeekday: Int, calendar: ASACalendar, locationData: ASALocation) -> Array<Int?> {
-        let era   = self.era
-        let year  = self.year
-        let month = self.month
-        var day: Int?
-        
-        // TODO:  Put in something here which handles wkd/wkdRecurrence, mon/thruMon/d/thruD/wkd, and week containing a specific day.  This may involve passing (a pointer to) the calendar object as a parameter.
-        
-        // Weekday in full week
-        if self.fullWeek != nil {
-            let daysPerWeek = {
-                if calendar is ASACalendarSupportingWeeks {
-                    return (calendar as! ASACalendarSupportingWeeks).daysPerWeek
-                }
-                
-                return 1
-            }()
-            let newComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: era, year: year, month: month, day: 1)
-            let newDate = newComponents.date
-            let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: newDate!) ?? 1
-            day = dayGiven(weekdayOfFullWeek: self.weekdays?[0].rawValue ?? 0, fullWeek: self.fullWeek!, day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek, monthLength: numberOfDaysInMonth, firstDayOfWeek: (self.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue)
-            return [era, year, month, day]
-        }
-        
-        // Weekday in day through day
-        // TODO:  Expand for two months.  This requires adding componentsMonth as a parameter or replacing componentsDay and componentsWeekday with components.  This would involve checking whether the month and (throughMonth ?? month) are equal.  If not, then we need to get the number of days in the first month and checking whether componentsMonth-componentsDay is within month-day/month-number of days in month or within throughMonth-01/throughMonth-throughDay.  This may be expanded to allow for multi-day events crossing a year boundary, though that will require checking which years make sense.
-        let weekday = self.weekdays?[0].rawValue
-        if self.day != nil && self.throughDay != nil && weekday != nil {
-            let runStart = self.day!
-            let runEnd   = self.throughDay!
-            let daysPerWeek = {
-                if calendar is ASACalendarSupportingWeeks {
-                    return (calendar as! ASACalendarSupportingWeeks).daysPerWeek
-                }
-                
-                return 1
-            }()
-//            let tempComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: era, year: year, yearForWeekOfYear: nil, quarter: nil, month: month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
-//            let tempDate = (calendar.date(dateComponents: tempComponents))!
-//            let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: tempDate)!
-            let weekdayOfFirstDayOfMonth = weekdayOfFirstDayOfMonth(day: componentsDay, weekday: componentsWeekday, daysPerWeek: daysPerWeek)
-            let day = dayInRunWithWeekday(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, runStart: runStart, runEnd: runEnd, targetWeekday: weekday!, daysPerWeek: daysPerWeek)
-            return [era, year, month, day]
-        }
-        
-        // Month and day
-        day   = self.day
-        
-        return [era, year, month, day]
-    } // func EYMD(componentsDay: Int, componentsWeekday: Int, calendar: ASACalendar) -> Array<Int?>
-    
     func fillIn(EYMD: Array<Int?>) -> ASADateSpecification {
         var result = self
         result.era   = EYMD[0]

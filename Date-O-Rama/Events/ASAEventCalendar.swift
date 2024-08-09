@@ -559,16 +559,101 @@ class ASAEventCalendar {
         return (true, startDate, startDate)
     } // func matchIslamicPrayerTime(_ tweakedStartDateSpecification: ASADateSpecification, _ date: Date, _ locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
+    fileprivate func dayForFullWeek(calendar: any ASACalendar, locationData: ASALocation, dateEYMD: [Int?], descriptionMonth: Int, descriptionWeekDay: Int?, descriptionFullWeek: Int?, components: ASADateComponents, daysPerWeek: Int, descriptionFirstDayOfWeek: Int) -> Int {
+        let newComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: dateEYMD[0], year: dateEYMD[1], month: descriptionMonth, day: 1)
+        let newDate = newComponents.date
+        let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: newDate!) ?? 1
+        let day = dayGiven(weekdayOfFullWeek: descriptionWeekDay ?? 0, fullWeek: descriptionFullWeek!, day: components.day ?? 0, weekday: components.weekday ?? 0, daysPerWeek: daysPerWeek, monthLength: numberOfDaysInMonth, firstDayOfWeek: descriptionFirstDayOfWeek)
+        return day
+    }
+    
+    fileprivate func dayForDayThroughDayWeekday(components: ASADateComponents, daysPerWeek: Int, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekDay: Int) -> Int? {
+        let weekdayOfFirstDayOfMonth = weekdayOfFirstDayOfMonth(day: components.day ?? 0, weekday: components.weekday ?? 0, daysPerWeek: daysPerWeek)
+        let day = dayInRunWithWeekday(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, runStart: descriptionDay, runEnd: descriptionThroughDay, targetWeekday: descriptionWeekDay, daysPerWeek: daysPerWeek)
+        return day
+    }
+    
     func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) {
         let calendar                   = components.calendar
         let locationData               = components.locationData
+        
+        // I have realized that this is the wrong approach to multi-day events with complex start and end date specifications.  This is a workable, but it violates the goal of avoiding unneeded calculations.  A better way of approaching this to do EY checking, then checking months if that passes (noting that thruMon may be in play), and if that passes then handle the more complex parts.
+        
+        let NO_MATCH: (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) = (false, nil, nil)
+        
+        // Elimination based on era and year
+        let dateEY: Array<Int?>      = components.EY
+        let startDateEY: Array<Int?> = startDateSpecification.EY
+        let endDateEY: Array<Int?>   = endDateSpecification!.EY
+        let withinEY: Bool               = dateEY.isWithin(start: startDateEY, end: endDateEY)
+        if !withinEY {
+            return NO_MATCH
+        }
+        
+        // Elimination based on month
+        let startMonth        = startDateSpecification.month ?? -1
+//        let startThroughMonth = startDateSpecification.throughMonth
+        
+        let endMonth          = endDateSpecification?.month
+        let endThroughMonth   = endDateSpecification?.throughMonth
+
+        let componentsMonth = components.month ?? 0
+        if componentsMonth < startMonth || (endThroughMonth ?? endMonth ?? 1000000) < componentsMonth {
+            return NO_MATCH
+        }
+        
         let dateEYMD: Array<Int?>      = components.EYMD
-        let startDateEYMD: Array<Int?> = startDateSpecification.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
-        let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
+        var startDateEYMD: Array<Int?> = startDateSpecification.EYMD
+        var endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD
+
+        guard let startDay            = startDateSpecification.day else { return NO_MATCH }
+        let startThroughDay     = startDateSpecification.throughDay
+        let startFullWeek       = startDateSpecification.fullWeek
+        let startFirstDayOfWeek = (startDateSpecification.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue
+        let startWeekDay        = startDateSpecification.weekdays?[0].rawValue
+        
+        let endDay            = (endDateSpecification?.day)!
+        let endThroughDay     = endDateSpecification?.throughDay
+        let endFullWeek       = endDateSpecification?.fullWeek
+        let endFirstDayOfWeek = (endDateSpecification?.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue
+        let endWeekDay        = endDateSpecification?.weekdays?[0].rawValue
+        
+        lazy var daysPerWeek = {
+            if calendar is ASACalendarSupportingWeeks {
+                return (calendar as! ASACalendarSupportingWeeks).daysPerWeek
+            }
+            
+            return 1
+        }()
+        
+        if startFullWeek != nil {
+            assert(startWeekDay != nil)
+            let day = dayForFullWeek(calendar: calendar, locationData: locationData, dateEYMD: dateEYMD, descriptionMonth: startMonth, descriptionWeekDay: startWeekDay, descriptionFullWeek: startFullWeek, components: components, daysPerWeek: daysPerWeek, descriptionFirstDayOfWeek: startFirstDayOfWeek)
+            startDateEYMD[3] = day
+        } else if startThroughDay != nil {
+            assert(startWeekDay != nil)
+            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, descriptionDay: startDay, descriptionThroughDay: startThroughDay!, descriptionWeekDay: startWeekDay!)
+            guard day != nil else { return NO_MATCH  }
+            startDateEYMD[3] = day
+        }
+        
+        if endFullWeek != nil {
+            assert(endWeekDay != nil)
+            let day = dayForFullWeek(calendar: calendar, locationData: locationData, dateEYMD: dateEYMD, descriptionMonth: endMonth ?? 0, descriptionWeekDay: endWeekDay, descriptionFullWeek: endFullWeek, components: components, daysPerWeek: daysPerWeek, descriptionFirstDayOfWeek: endFirstDayOfWeek)
+            endDateEYMD[3] = day
+        } else if endThroughDay != nil {
+            assert(endWeekDay != nil)
+            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, descriptionDay: endDay, descriptionThroughDay: endThroughDay!, descriptionWeekDay: endWeekDay!)
+            guard day != nil else { return NO_MATCH  }
+            endDateEYMD[3] = day
+        }
+
+//        let startDateEYMD: Array<Int?> = startDateSpecification.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
+//        let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
         let within: Bool               = dateEYMD.isWithin(start: startDateEYMD, end: endDateEYMD)
         
         if !within {
-            return (false, nil, nil)
+            return NO_MATCH
         }
         
         let (filledInStartDateEYMD, filledInEndDateEYMD) = dateEYMD.fillInFor(start: startDateEYMD, end: endDateEYMD)
