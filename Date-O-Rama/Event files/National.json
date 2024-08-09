@@ -2441,7 +2441,10 @@
         {type: "1W", start: {mon: 4, fullWeek: -1}, titles: {"en": "National Princess Week"}, urls: {"en": "https://nationaltoday.com/national-princess-week/"}, first: {era: 1, y: 2012}, emoji: "👸"},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [6]}, end: {mon: 3, d: 3, thruD: 9, wkd: [1]}, titles: {"en": "Festival of Owls Week"}, urls: {"en": "https://www.daysoftheyear.com/days/festival-of-owls-week/"}, first: {era: 1, y: 2017}, first: {era: 1, y: 2003}, emoji: "🦉"},
         {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "National Introverts Week"}, urls: {"en": "https://www.daysoftheyear.com/days/introverts-week/"}},
-        {type: "nD", start: {mon: 3, d: 22, thruD: 28, wkd: [6]}, end: {mon: 3, d: 24, thruD: 30, wkd: [1]}, titles: {"en": "Ultra Music Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/ultra-music-festival/"}, first: {era: 1, y: 2017}, first: {era: 1, y: 1999}, emoji: "🎸"},
+        {type: "nD", start: {mon: 3, d: 22, thruD: 28, wkd: [6]}, end: {mon: 3, d: 24, thruD: 30, wkd: [1]}, titles: {"en": "Ultra Music Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/ultra-music-festival/"}, first: {era: 1, y: 1999}, emoji: "🎸"},
+        {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "Agent Orange Awareness Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/agent-orange-awareness-day-august-10"}, inherits: "*MedAwareness*", first: {era: 1, y: 1988}},
+        {type: "1W", start: {mon: 4, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Wildlife Week"}, urls: {"en": "https://nationalwildlifeweek.nwf.org/2024/"}, emoji: "🐞🍃", first: {era: 1, y: 1938}},
+        {type: "nD", start: {mon: 4, d: 10}, end: {mon: 4, d: 15}, titles: {"en": "World Music Therapy Week"}, urls: {"en": "https://www.daysoftheyear.com/days/world-music-therapy-week/"}, emoji: "🪗🎻🪕", first: {era: 1, y: 2023}, inherits: "*MedAwareness*"},
 
     ]
 }

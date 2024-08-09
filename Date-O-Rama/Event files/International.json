@@ -2021,6 +2021,8 @@
         {type: "1W", start: {mon: 1, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Farmhouse Breakfast Week"}, urls: {"en": "https://www.daysoftheyear.com/days/farmhouse-breakfast-week/"}, first: {era: 1, y: 2012}, emoji: "🍳"},
         {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "International Teach Music Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-teach-music-week/"}, first: {era: 1, y: 2014}, emoji: "🥁🪘🪇"},
         {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Global Money Week"}, notes: {"en": "GMW\nChild Finance Day and Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-launch-of-global-money-week/"}, first: {era: 1, y: 2012}, emoji: "💵💷💶"},
+        {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Neurodiversity Celebration Week"}, urls: {"en": "https://www.neurodiversityweek.com/"}, first: {era: 1, y: 2018}, emoji: "🧠", inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 4, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Community Garden Week"}, urls: {"en": "https://www.daysoftheyear.com/days/community-garden-week/"}, emoji: "⛲️🪴"},
 
 
     ]
