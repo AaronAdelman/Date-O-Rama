@@ -2450,6 +2450,7 @@
         {type: "1W", start: {mon: 4, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Wildlife Week"}, urls: {"en": "https://nationalwildlifeweek.nwf.org/2024/"}, emoji: "🐞🍃", first: {era: 1, y: 1938}},
         {type: "nD", start: {mon: 4, d: 10}, end: {mon: 4, d: 15}, titles: {"en": "World Music Therapy Week"}, urls: {"en": "https://www.daysoftheyear.com/days/world-music-therapy-week/"}, emoji: "🪗🎻🪕", first: {era: 1, y: 2023}, inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 8, fullWeek: 2, firstDOfWk: 2}, titles: {"en": "National Bargain Hunting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bargain-hunting-week/"}, emoji: "🛒🛍️", first: {era: 1, y: 1996}},
+        {type: "nD", start: {mon: 4, d: 17, thruD: 23, wkd: [1]}, end: {mon: 4, d: 23, thruD: 29, wkd: [7]}, titles: {"en": "National Pediatric Transplant Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pediatric-transplant-week/"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
 
     ]
 }
