@@ -12,7 +12,7 @@
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {titles: {"en": "Pancasila Day", "id": "Hari Lahir Pancasila"}, type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 2, y: 2023, era: 1}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/wesak-day"}, titles: {"en": "Waisak Day Holiday"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 17, mon: 8}, urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/christmas-holiday"}, inherits: "Christmas Holiday", first: {era: 1, y: 2023}},
 

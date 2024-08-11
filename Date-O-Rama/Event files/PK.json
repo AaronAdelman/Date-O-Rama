@@ -24,7 +24,7 @@
         {type: "1D", start: {mon: 3, d: 23}, titles: {"en": "Pakistan Day", "he": "יום פקיסטן ", "ur": "یوم پاکستان"}, urls: {"en": "https://nationaltoday.com/pakistan-day/"}},
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/sindh/death-of-zulfikar-ali-bhutto"}, inherits: "*DeathAnniv*", titles: {"en": "Death Anniversary of Zulfikar Ali Bhutto"}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 14}, first: {era: 1, y: 1947}, urls: {"en": "https://nationaltoday.com/pakistan-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 14}, first: {era: 1, y: 1947}, urls: {"en": "https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 24}, inherits: "Founding Day", first: {era: 1, y: 1947}},
         {type: "1D", start: {mon: 11, d: 9}, titles: {"en": "Iqbal Day", "ur": "یوم اقبال"}, urls: {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},
         {type: "1D", start: {mon: 12, d: 25}, titles: {"en": "Quaid-e-Azam Day", "ur": "یوم ولادت قائداعظم"}, urls: {"en": "https://nationaltoday.com/quaid-e-azam-day/"}, first: {era: 1, y: 1942}, inherits: "*BDay*"},

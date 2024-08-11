@@ -104,7 +104,6 @@
         {inherits: "World Hepatitis Day", type: "1D", start: {mon: 7, d: 28}, first: {era: 1, y: 2010}},
         {type: "1D", start: {d: 29, mon: 7}, inherits: "National Anthem Day"},
         {type: "1D", start: {d: 30, mon: 7}, inherits: "Friendship Day"},
-        {type: "1D", start: {d: 15, mon: 8}, titles: {"en": "Romanian Navy Day"}, inherits: "Navy Day"},
         {type: "1D", start: {d: 1, mon: 9}, titles: {"en": "Danube Delta Biosphere Reserve Day"}},
         {type: "1D", start: {mon: 9, d: 10}, inherits: "World Suicide Prevention Day", first: {era: 1, y: 2003}},
         {type: "1D", start: {d: 13, mon: 9}, titles: {"en": "Firefighters of Romania’s Day"}, emoji: "👨‍🚒👩‍🚒"},

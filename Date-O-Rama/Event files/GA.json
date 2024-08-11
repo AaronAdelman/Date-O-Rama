@@ -15,9 +15,7 @@
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
-        {type: "1D", start: {mon: 8, d: 15, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/gabon/gabon-independence-day"}, inherits: "Independence Day Holiday"},
-        {type: "1D", start: {mon: 8, d: 16, wkd: [1, 2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/gabon/gabon-independence-day"}, inherits: "Independence Day Holiday"},
-        {inherits: "Independence Day", type: "1D", start: {d: 17, mon: 8}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/gabon-independence-day/"}},
+        {inherits: "Independence Day", type: "nD", start: {mon: 8, d: 16}, end: {mon: 8, d: 17}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/gabon-independence-day/"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 

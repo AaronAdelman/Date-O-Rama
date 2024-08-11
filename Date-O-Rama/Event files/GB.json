@@ -61,7 +61,7 @@
         {type: "1D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}, urls: {"en": "https://nationaltoday.com/trafalgar-day/"}},
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Yorkshire Day", "he": "יום יורקשייר"}, first: {era: 1, y: 1975}, urls: {"en": "https://www.daysoftheyear.com/days/yorkshire-day/"}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "National Bakewell Tart Day"}, start: {mon: 8, d: 11}, type: "1D", urls: {"en": "https://www.daysoftheyear.com/days/national-bakewell-tart-day/"}, first: {era: 1, y: 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
-        {titles: {"en": "The Glorious Twelfth"}, start: {mon: 8, d: 12}, type: "1D", urls: {"en": "https://nationaltoday.com/the-glorious-twelfth/"}, first: {era: 1, y: 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
+        {titles: {"en": "Glorious Twelfth"}, start: {mon: 8, d: 12}, type: "1D", urls: {"en": "https://www.daysoftheyear.com/days/glorious-twelfth/"}, first: {era: 1, y: 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {type: "1D", titles: {"en": "Merchant Navy Day"}, start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/merchant-navy-day/"}, first: {era: 1, y: 2000}},
         {type: "1D", titles: {"en": "Emergency Services Day"}, start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/emergency-services-day/"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Everyone Writes Day"}, urls: {"en": "https://nationaltoday.com/everyone-writes-day/"}, emoji: "✍️"},
@@ -138,8 +138,8 @@
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/bagpipe-appreciation-day/"}, titles: {"en": "Bagpipe Appreciation Day"}},
         {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/cycle-to-work-day/"}, titles: {"en": "Cycle to Work Day"}, emoji: "🚲", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/festival-monday/"}, titles: {"en": "Festival Monday"}, first: {era: 1, y: 1871}},
-        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/scottish-wildcat-day/"}, titles: {"en": "Scottish Wildcat Day"}, notes: {"en": "Wildcat Day\nHighland Tiger Day"}},
-        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/falklands-day/"}, titles: {"en": "Falklands Day", "he": "יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/scottish-wildcat-day/"}, titles: {"en": "Scottish Wildcat Day"}, notes: {"en": "Wildcat Day\nHighland Tiger Day"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"},
+        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/falklands-day/"}, titles: {"en": "Falklands Day", "he": "יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
         {type: "1D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-burger-day/"}, titles: {"en": "National Burger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-zoo-awareness-day/"}, titles: {"en": "National Zoo Awareness Day"}, emoji: "🦓"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/festival-of-learning-have-a-go-month/"}, titles: {"en": "Festival of Learning Have a Go Month"}, first: {era: 1, y: 2013}},
@@ -190,10 +190,11 @@
         {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Student Volunteering Week"}, urls: {"en": "https://www.daysoftheyear.com/days/student-volunteering-week/"}, first: {era: 1, y: 2001}},
         {type: "nD", start: {mon: 2, fullWeek: 2, wkd: [2]}, end: {mon: 2, fullWeek: 3, wkd: [1]}, titles: {"en": "Homes for Birds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/homes-for-birds-week/"}, emoji: "🐦‍⬛🦜🪿"},
         {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "British Pie Week"}, urls: {"en": "http://www.pierate.co.uk/p/british-pie-week.html"}, first: {era: 1, y: 2007}, emoji: "🥧"},
-        {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [6]}, end: {mon: 3, fullWeek: 3, wkd: [1]}, titles: {"en": "National Science and Engineering Week"}, notes: {"en": "British Science Week\nNational Science Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-science-and-engineering-week/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1994}},
+        {type: "nD", start: {mon: 3, d: 5, thruD: 11, wkd: [6]}, end: {mon: 3, d: 14, thruD: 20, wkd: [1]}, titles: {"en": "British Science Week"}, notes: {"en": "National Science and Engineering Week\nNational Science Week"}, urls: {"en": "https://www.britishscienceweek.org/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 3, fullWeek: 1, wkd: [2]}, end: {mon: 3, fullWeek: 2, wkd: [1]}, titles: {"en": "National Butchers’ Week"}, notes: {"en": "Butchers’ Week"}, urls: {"en": "https://www.daysoftheyear.com/days/butchers-week/"}, emoji: "🔪"},
         {type: "nD", start: {mon: 1, d: 10, thruD: 16, wkd: [2]}, end: {mon: 1, d: 16, thruD: 22, wkd: [1]}, titles: {"en": "Energy Savers Week"}, notes: {"en": "Energy Saving Week\nBig Energy Saving Week"}, urls: {"en": "https://www.citizensadvice.org.uk/about-us/our-work/our-campaigns/awareness-raising-campaigns/besw/"}, emoji: "⚡️"},
         {type: "nD", start: {mon: 3, fullWeek: 2, wkd: [6]}, end: {mon: 3, fullWeek: 4, wkd: [1]}, titles: {"en": "English Tourism Week"}, urls: {"en": "https://www.daysoftheyear.com/days/english-tourism-week/"}, emoji: "📷"},
+        {type: "nD", start: {mon: 8, d: 7, thruD: 13, wkd: [2]}, end: {mon: 8, d: 13, thruD: 19, wkd: [1]}, titles: {"en": "Afternoon Tea Week"}, urls: {"en": "https://afternoontea.co.uk/features/afternoon-tea-week"}, emoji: "🫖☕️"},
 
 
     ]

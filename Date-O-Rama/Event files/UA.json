@@ -74,7 +74,7 @@
         {"titles": {"en": "Anniversary of the Declaration of State Sovereignty of Ukraine"}, "type": "1D", "start": {"mon": 7, "d": 16}},
         {inherits: "Honey Feast of the Savior", "type": "1D", "start": {"mon": 8, "d": 1}},
         {inherits: "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}},
-        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 1999}},
+        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {inherits: "Dormition of the Mother of God", "type": "1D", "start": {"mon": 8, "d": 15}},
         {inherits: "Nut Feast of the Savior", "type": "1D", "start": {"mon": 8, "d": 16}},
         {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/", "he": "https://www.daysoftheyear.co.il/2019/08/ukraine-flagday.html"}},

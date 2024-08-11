@@ -129,7 +129,7 @@
 
         {titles: {"en": "World Breastfeeding Week", "he": "שבוע ההנקה העולמי"}, type: "nD", start: {mon: 8, d: 1}, "end": {mon: 8, d: 7}, first: {type: "nD", era: 1, y: 1991}, urls: {"en": "https://worldbreastfeedingweek.org/"}},
         {inherits: "International Day of the World’s Indigenous Peoples", type: "1D", start: {mon: 8, d: 9}, first: {era: 1, y: 1995}},
-        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 1999}},
+        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {titles: {"en": "World Humanitarian Day", "he": "היום ההומניטרי העולמי"}, type: "1D", start: {mon: 8, d: 19}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaldaycalendar.com/world-humanitarian-day-august-19/", "he": "https://www.daysoftheyear.co.il/2017/08/19.html"}, emoji: "❤️"},
         {titles: {"en": "International Day of Remembrance and Tribute to the Victims of Terrorism", "he": "יום הזיכרון וההוקרה הבינלאומי לקורבנות הטרור"}, type: "1D", start: {mon: 8, d: 21}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaldaycalendar.com/national-day-of-remembrance-and-tribute-to-the-victims-of-terrorism-august-21/"}, emoji: "🕯", inherits: "*Remembrance*"},
         {titles: {"en": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief", "he": "יום הנצחה הבינלאומי לקורבנות מעשי אלימות על בסיס דת או אמונה"}, type: "1D", start: {mon: 8, d: 22}, first: {era: 1, y: 2019}, urls: {"en": "https://nationaldaycalendar.com/international-day-commemorating-the-victims-of-acts-of-violence-based-on-religion-or-belief-august-22/"}, emoji: "🪔", inherits: "*Remembrance*"},

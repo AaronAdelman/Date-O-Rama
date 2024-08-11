@@ -68,7 +68,7 @@
         {inherits: "World Refugee Day", type: "1D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},
         {type: "1D", titles: {"en": "Shades for Migraine"}, start: {mon: 6, d: 21}, inherits: "*MedAwareness*"},
         {inherits: "International Day of the World’s Indigenous Peoples", type: "1D", start: {mon: 8, d: 9}, first: {era: 1, y: 1995}},
-        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 1999}},
+        {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {type: "1D", inherits: "Daffodil Day", start: {mon: 8, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://daffodilday.org.nz/", "he": "https://www.daysoftheyear.co.il/2019/08/daffodilday.html"}},
         {type: "1D", inherits: "Random Acts of Kindness Day", start: {mon: 9, d: 1}},
         {type: "1D", titles: {"en": "eDay"}, start: {mon: 9, d: 12}, urls: {"en": "http://www.eday.org.nz/"}, emoji: "♻️🖥️"},
