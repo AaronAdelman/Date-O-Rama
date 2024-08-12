@@ -113,5 +113,6 @@
         {type: "1D", start: {mon: 2, d: 23}, titles: {"en": "Jamaican Patty Day"}},
         {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Black Mental Health Day"}, urls: {"en": "https://www.blackmentalhealthday.ca/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2020}},
         {type: "1W", start: {mon: 3, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Black Mental Health Week"}, urls: {"en": "https://blackmentalhealthweek.ca/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2021}},
+        {type: "1W", start: {mon: 4, fullWeek: -1, firstDOfWk: 2}, inherits: "National Immunization Awareness Week"},
     ]
 }

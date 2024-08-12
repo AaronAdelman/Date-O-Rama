@@ -546,6 +546,7 @@
         {type: "1W", start: {mon: 3, fullWeek: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "Consumer Awareness Week"}},
         {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "National Fix a Leak Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fix-a-leak-week/"}, first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 4, d: 16, thruD: 22, wkd: [7]}, end: {mon: 4, d: 24, thruD: 30, wkd: [1]}, titles: {"en": "National Park Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-park-week/"}, first: {era: 1, y: 1991}, emoji: "🏞️"},
+        {type: "1W", start: {mon: 4, fullWeek: 3}, titles: {"en": "National Volunteer Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-volunteer-week/"}, first: {era: 1, y: 1974}},
 
 
 
