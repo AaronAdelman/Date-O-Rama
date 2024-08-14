@@ -227,7 +227,7 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://www.daysoftheyear.com/days/peach-month/"}, titles: {"en": "National Peach Month"}, emoji: "🍑", first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day"}, urls: {"en": "https://www.friendshipday.org/"}, first: {era: 1, y: 1935}},
         {inherits: "Victory Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 2}, locations: {"en": "Rhode Island", "he": "רוד איילנד"}, urls: {"en": "https://nationaltoday.com/us-victory-day/"}, first: {era: 1, y: 1966}},
-        {titles: {"en": "Navajo Code Talkers Day", "he": "יום דוברי הקוד מבני ההנאוואחו"}, type: "1D", start: {mon: 8, d: 14}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
+        {titles: {"en": "Navajo Code Talkers Day", "he": "יום דוברי הקוד מבני הנאוואחו"}, type: "1D", start: {mon: 8, d: 14}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 8, d: 27}, titles: {"en": "Lyndon Baines Johnson Day", "he": "יום לינדון ביינס ג׳ונסון"}, urls: {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, inherits: "*BDay*", first: {era: 1, y: 1908}},
         {type: "nD", titles: {"en": "National Crime Prevention Week", "he": "השבוע הלאומי למניעת פשיעה"}, start: {mon: 9, d: 1}, end: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-crime-prevention-week/"}, first: {era: 1, y: 1984}, emoji: "🐶"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Blood Cancer Awareness Month"}, urls: {"en": "https://nationaltoday.com/blood-cancer-awareness-month/"}, first: {era: 1, y: 2010}, emoji: "🩸", inherits: "*MedAwareness*"},
@@ -547,6 +547,7 @@
         {type: "1W", start: {mon: 3, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "National Fix a Leak Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fix-a-leak-week/"}, first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 4, d: 16, thruD: 22, wkd: [7]}, end: {mon: 4, d: 24, thruD: 30, wkd: [1]}, titles: {"en": "National Park Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-park-week/"}, first: {era: 1, y: 1991}, emoji: "🏞️"},
         {type: "1W", start: {mon: 4, fullWeek: 3}, titles: {"en": "National Volunteer Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-volunteer-week/"}, first: {era: 1, y: 1974}},
+        {type: "nD", start: {mon: 4, d: 21, thruD: 27, wkd: [6]}, end: {mon: 4, d: 23, thruD: 28, wkd: [1]}, titles: {"en": "Fiddlers Frolic"}, urls: {"en": "https://fiddlersfrolics.com/"}, first: {era: 1, y: 1971}, emoji: "🎻"},
 
 
 

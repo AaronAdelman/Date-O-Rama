@@ -1696,6 +1696,7 @@
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-leathercraft-day/"}, titles: {"en": "National Leathercraft Day", "he": "היום הלאומי למלאכת עור"}, emoji: "💼"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/lemon-meringue-pie-day/"}, titles: {"en": "National Lemon Meringue Pie Day", "he": "יום פאי לימון מרנג הלאומי"}, emoji: "🥧"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-relaxation-day/"}, titles: {"en": "National Relaxation Day", "he": "יום המנוחה הלאומי"}, emoji: "😎", first: {era: 1, y: 1985}},
+        {type: "1D", start: {mon: 8, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hazy-ipa-day-third-thursday-in-august?utm_source=Iterable&utm_medium=email&utm_campaign=10703576&hashed_email=e057e3635a89f24c2724e6a2dd6dcb65103adb85&email=aaron.solomon.adelman%40gmail.com"}, titles: {"en": "National National Hazy IPA Day"}, first: {era: 1, y: 2023}, emoji: "🍻"},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-authenticity-day/"}, titles: {"en": "National Authenticity Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-backflow-prevention-day/"}, titles: {"en": "National Backflow Prevention Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/world-bratwurst-day/"}, titles: {"en": "World Bratwurst Day"}},
@@ -2455,6 +2456,7 @@
         {type: "1W", start: {mon: 4, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "National Week of Conversation"}, urls: {"en": "https://conversation.us/"}, first: {era: 1, y: 2021}, emoji: "💬"},
         {type: "nD", start: {mon: 4, d: 18, thruD: 24, wkd: [2]}, end: {mon: 4, d: 22, thruD: 28, wkd: [6]}, titles: {"en": "National Playground Safety Week"}, urls: {"en": "https://nationaltoday.com/national-playground-safety-week/"}, first: {era: 1, y: 1997}, emoji: "🛝"},
         {type: "1W", start: {mon: 4, fullWeek: -1, firstDOfWk: 2}, inherits: "National Immunization Awareness Week"},
+        {type: "1W", start: {mon: 4, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "National MS Week"}, inherits: "*MedAwareness*"},
 
     ]
 }

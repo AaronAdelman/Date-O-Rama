@@ -150,7 +150,7 @@
         {type: "1D", start: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, urls: {"en": "https://nationaltoday.com/national-police-memorial-day/"}, titles: {"en": "National Police Memorial Day"}, first: {era: 1, y: 2001}, inherits: "Police Day"},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/buy-british-day/"}, titles: {"en": "Buy British Day"}, first: {era: 1, y: 2014}},
         {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/baby-loss-awareness-week/"}, titles: {"en": "Baby Loss Awareness Week"}, first: {era: 1, y: 2003}, emoji: "👶", inherits: "*MedAwareness*"},
-        {type: "nD", start: {mon: 10, d: 14}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-baking-week/"}, titles: {"en": "National Baking Week"}, first: {era: 1, y: 2007}},
+        {type: "nD", start: {mon: 10, d: 14}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-baking-week/"}, titles: {"en": "National Baking Week"}, first: {era: 1, y: 2007}, emoji: "🍞🥖🥐"},
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-roast-pheasant-day/"}, titles: {"en": "National Roast Pheasant Day"}},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/newport-wales-marathon/"}, titles: {"en": "Newport Wales Marathon"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/british-pudding-day/"}, titles: {"en": "British Pudding Day"}},
@@ -195,6 +195,7 @@
         {type: "nD", start: {mon: 1, d: 10, thruD: 16, wkd: [2]}, end: {mon: 1, d: 16, thruD: 22, wkd: [1]}, titles: {"en": "Energy Savers Week"}, notes: {"en": "Energy Saving Week\nBig Energy Saving Week"}, urls: {"en": "https://www.citizensadvice.org.uk/about-us/our-work/our-campaigns/awareness-raising-campaigns/besw/"}, emoji: "⚡️"},
         {type: "nD", start: {mon: 3, fullWeek: 2, wkd: [6]}, end: {mon: 3, fullWeek: 4, wkd: [1]}, titles: {"en": "English Tourism Week"}, urls: {"en": "https://www.daysoftheyear.com/days/english-tourism-week/"}, emoji: "📷"},
         {type: "nD", start: {mon: 8, d: 7, thruD: 13, wkd: [2]}, end: {mon: 8, d: 13, thruD: 19, wkd: [1]}, titles: {"en": "Afternoon Tea Week"}, urls: {"en": "https://afternoontea.co.uk/features/afternoon-tea-week"}, emoji: "🫖☕️"},
+        {type: "nD", start: {mon: 10, d: 14, thruD: 20, wkd: [2]}, end: {mon: 10, d: 20, thruD: 26, wkd: [1]}, titles: {"en": "UK Coffee Week"}, urls: {"en": "https://www.ukcoffeeweek.com/"}, first: {era: 1, y: 2022}, emoji: "☕️"},
 
 
     ]
