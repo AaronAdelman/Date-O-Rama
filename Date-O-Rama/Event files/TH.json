@@ -44,7 +44,7 @@
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         
         {inherits: "National Children’s Day", type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 2}, first: {era: 1, y: 1966}},
-        {inherits: "National Aviation Day", type: "1D", start: {mon: 1, d: 13}, first: {era: 1, y: 1995}, emoji: "👨‍✈️👩‍✈️"},
+        {inherits: "National Aviation Day", type: "1D", start: {mon: 1, d: 13}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "National Forest Conservation Day", "th": "วันอนุรักษ์ทรัพยากรป่าไม้ของชาติ"}, emoji: "🌲🌳🌴", first: {era: 1, y: 1990}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 1, d: 16}, first: {era: 1, y: 1957}},
         {type: "1D", start: {mon: 1, d: 17}, titles: {"en": "Ram Khamhaeng Day", "th": "วันพ่อขุนรามคำแหงมหาราช"}, first: {era: 1, y: 1989}},

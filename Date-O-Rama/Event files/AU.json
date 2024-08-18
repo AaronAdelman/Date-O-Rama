@@ -97,6 +97,7 @@
         {type: "1W", start: {mon: 2, fullWeek: 1}, titles: {"en": "Feeding Tube Awareness Week"}, urls: {"en": "https://www.feedingtubeaware.com.au/"}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 2, fullWeek: 1, wkd: [7]}, end: {mon: 2, fullWeek: 2, wkd: [2]}, titles: {"en": "Royal Hobart Regatta"}, urls: {"en": "https://www.daysoftheyear.com/days/royal-hobart-regatta/"}},
         {type: "nD", start: {mon: 8, d: 9, thruD: 15, wkd: [7]}, end: {mon: 8, d: 17, thruD: 23, wkd: [1]}, titles: {"en": "National Science Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-science-week/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-finance-brokers-day/"}, titles: {"en": "National Finance Brokers Day"}, first: {era: 1, y: 2015}, emoji: "✍️"},
 
    ]
 }
