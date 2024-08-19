@@ -2028,6 +2028,9 @@
         {type: "1W", start: {mon: 4, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Community Garden Week"}, urls: {"en": "https://www.daysoftheyear.com/days/community-garden-week/"}, emoji: "⛲️🪴"},
         {type: "1W", start: {mon: 4, fullWeek: 3}, titles: {"en": "Coin Week"}, urls: {"en": "https://www.daysoftheyear.com/days/coin-week/"}, first: {era: 1, y: 1923}, emoji: "🪙"},
         {type: "1W", start: {mon: 4, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Animal Cruelty/Human Violence Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/animal-cruelty-human-violence-awareness-week/"}},
+        {type: "1W", start: {mon: 5, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Sun Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/sun-awareness-week/"}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 5, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Dog Anxiety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-anxiety-awareness-week/"}, emoji: "🐕‍🦺🦮🐩", first: {era: 1, y: 2020}},
+        {type: "1W", start: {mon: 5, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Deaf Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/deaf-awareness-week/"}, emoji: "🧏‍♂️🧏‍♀️"},
 
 
     ]

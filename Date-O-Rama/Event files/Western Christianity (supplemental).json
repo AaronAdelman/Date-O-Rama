@@ -79,5 +79,7 @@
         { type: "1M", start: { mon: 9 }, titles: { en: "Gospel Music Heritage Month" } },
         { type: "1M", start: { mon: 11 }, titles: { en: "Black Catholic History Month" } },
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
+        {type: "1W", start: {mon: 5, fullWeek: 2}, titles: {"en": "Christian Aid Week"}, urls: {"en": "https://www.daysoftheyear.com/days/christian-aid-week/"}, first: {era: 1, y: 1957}},
+
     ]
 }

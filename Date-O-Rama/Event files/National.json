@@ -1718,6 +1718,7 @@
         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-patient-advocacy-day/"}, titles: {"en": "National Patient Advocacy Day"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/potato-day/"}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/national-soft-ice-cream-day/"}, titles: {"en": "National Soft Ice Cream Day"}, emoji: "🍦"},
+        {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-accessible-air-travel-day-august-20"}, titles: {"en": "National Accessible Air Travel Day"}, emoji: "🛩️", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/national-bacon-lovers-day/"}, titles: {"en": "National Bacon Lovers Day", "he": "יום אוהבי קותל החזיר הלאומי"}, emoji: "🥓"},
         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-pecan-pie-day/"}, titles: {"en": "National Chocolate Pecan Pie Day", "he": "יום פאי פקאן שוקולד לאומי"}, emoji: "🥧"},
         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-lemonade-day/"}, inherits: "National Lemonade Day"},
@@ -2459,6 +2460,12 @@
         {type: "nD", start: {mon: 4, d: 18, thruD: 24, wkd: [2]}, end: {mon: 4, d: 22, thruD: 28, wkd: [6]}, titles: {"en": "National Playground Safety Week"}, urls: {"en": "https://nationaltoday.com/national-playground-safety-week/"}, first: {era: 1, y: 1997}, emoji: "🛝"},
         {type: "1W", start: {mon: 4, fullWeek: -1, firstDOfWk: 2}, inherits: "National Immunization Awareness Week"},
         {type: "1W", start: {mon: 4, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "National MS Week"}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 5, fullWeek: 1}, titles: {"en": "Public Service Recognition Week"}, urls: {"en": "https://www.daysoftheyear.com/days/public-service-recognition-week/"}},
+        {type: "1W", start: {mon: 5, fullWeek: 1}, titles: {"en": "Drinking Water Week"}, urls: {"en": "https://www.daysoftheyear.com/days/drinking-water-week/"}, emoji: "🚰"},
+        {type: "1W", start: {mon: 5, fullWeek: 2}, titles: {"en": "Huntington’s Disease Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/huntingtons-disease-awareness-week/"}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 5, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Screen Free Week"}, urls: {"en": "https://www.daysoftheyear.com/days/screen-free-week/"}, first: {era: 1, y: 2010}, emoji: "📺🖥️📱", notes: {"en": "Digital Detox Week\nUnplug Week\nDevice-Free Week"}},
+        {type: "1W", start: {mon: 5, fullWeek: 2}, titles: {"en": "National Women’s Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-health-week/"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩"},
+        {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [6]}, end: {mon: 5, d: 10, thruD: 16, wkd: [1]}, titles: {"en": "National Public Gardens Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-public-gardens-week/"}, emoji: "🪴⛲️"},
 
     ]
 }
