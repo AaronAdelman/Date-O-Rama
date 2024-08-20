@@ -2034,6 +2034,7 @@
         {type: "1W", start: {mon: 5, fullWeek: 1, firstDOfWk: 2}, inherits: "Children’s Book Week"},
         {type: "1W", start: {mon: 11, fullWeek: 1, firstDOfWk: 2}, inherits: "Children’s Book Week"},
         {type: "1W", start: {mon: 5, fullWeek: 3}, titles: {"en": "International Heritage Breeds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-breeds-week/"}, emoji: "🐐🐑🐖", first: {era: 1, y: 2015}},
+        {type: "1W", start: {mon: 5, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Learning at Work Week"}, urls: {"en": "https://www.daysoftheyear.com/days/learning-at-work-week/"}},
 
     ]
 }
