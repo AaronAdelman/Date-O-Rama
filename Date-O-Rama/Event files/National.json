@@ -2471,6 +2471,8 @@
         {type: "nD", start: {mon: 5, d: 18, thruD: 24, wkd: [2]}, end: {mon: 5, d: 24, thruD: 30, wkd: [1]}, titles: {"en": "National Safe Sun Week"}, urls: {"en": "https://nationaltoday.com/national-safe-sun-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2021}},
         {type: "nD", start: {mon: 5, d: 13, thruD: 19, wkd: [2]}, end: {mon: 5, d: 19, thruD: 25, wkd: [1]}, titles: {"en": "National Vegetarian Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-vegetarian-week/"}, emoji: "🌶"},
         {type: "1W", start: {mon: 5, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Italian Beef Week"}, urls: {"en": "https://www.daysoftheyear.com/days/italian-beef-week/"}, emoji: "🥩", first: {era: 1, y: 2015}},
+        {type: "1W", start: {mon: 6, fullWeek: 1}, titles: {"en": "National Headache Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-headache-awareness-week/"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
+        {type: "1W", start: {mon: 6, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "America The Beautiful Week"}, urls: {"en": "https://www.daysoftheyear.com/days/america-the-beautiful-week/"}, emoji: "🇺🇸🌻"},
 
         
     ]

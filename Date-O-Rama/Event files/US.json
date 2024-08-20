@@ -551,6 +551,7 @@
         {type: "nD", start: {mon: 4, d: 21, thruD: 27, wkd: [6]}, end: {mon: 4, d: 23, thruD: 28, wkd: [1]}, titles: {"en": "Fiddlers Frolic"}, urls: {"en": "https://fiddlersfrolics.com/"}, first: {era: 1, y: 1971}, emoji: "🎻"},
         {type: "1W", start: {mon: 5, fullWeek: 1}, titles: {"en": "National Correctional Officer’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-correctional-officers-week/"}, first: {era: 1, y: 1984}},
         {type: "1W", start: {mon: 5, fullWeek: 2}, titles: {"en": "National Hospital Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hospital-week/"}, emoji: "🏥", inherits: "*MedAwareness*", first: {era: 1, y: 1953}},
+        {type: "1W", start: {mon: 6, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Fishing and Boating Week"}, notes: {"en": "National Fishing Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fishing-and-boating-week/"}, emoji: "🎣", first: {era: 1, y: 1979}},
 
 
 
