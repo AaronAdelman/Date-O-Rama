@@ -99,6 +99,7 @@
         {type: "nD", start: {mon: 8, d: 9, thruD: 15, wkd: [7]}, end: {mon: 8, d: 17, thruD: 23, wkd: [1]}, titles: {"en": "National Science Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-science-week/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1997}},
         {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-finance-brokers-day/"}, titles: {"en": "National Finance Brokers Day"}, first: {era: 1, y: 2015}, emoji: "✍️"},
         {type: "nD", start: {mon: 6, d: 5, thruD: 11, wkd: [2]}, end: {mon: 6, d: 11, thruD: 17, wkd: [1]}, titles: {"en": "National Business Etiquette Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-business-etiquette-week/"}, emoji: "🕴️", first: {era: 1, y: 2000}},
+        {type: "1W", start: {mon: 7, fullWeek: 1}, titles: {"en": "National NAIDOC Week"}, urls: {"en": "https://www.naidoc.org.au/about/naidoc-week"}, first: {era: 1, y: 1991}},
 
    ]
 }

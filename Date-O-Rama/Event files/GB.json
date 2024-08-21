@@ -204,6 +204,12 @@
         {type: "1W", start: {mon: 5, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Knife Crime Awareness Week"}, urls: {"en": "https://benkinsella.org.uk/knife-crime-awareness-week/"}, emoji: "🗡️", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 6, d: 15, thruD: 21, wkd: [7]}, end: {mon: 6, d: 23, thruD: 29, wkd: [1]}, titles: {"en": "English Wine Week"}, urls: {"en": "https://winegb.co.uk/english-wine-week/"}, emoji: "🍷"},
         {type: "nD", start: {mon: 6, d: 5, thruD: 11, wkd: [7]}, end: {mon: 6, d: 11, thruD: 17, wkd: [1]}, titles: {"en": "Team Green Britain Bike Week"}, urls: {"en": "https://www.daysoftheyear.com/days/team-green-britain-bike-week/"}, emoji: "🚲"},
+        {type: "1W", start: {mon: 6, fullWeek: 2, firstDOfWk: 2}, titles: {"en": "Loneliness Awareness Week"}, urls: {"en": "https://www.lonelinessawarenessweek.org/"}, first: {era: 1, y: 2017}},
+        {type: "1W", start: {mon: 6, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Learning Disability Week"}, urls: {"en": "https://www.mencap.org.uk/learningdisabilityweek"}, emoji: "💬"},
+        {type: "1W", start: {mon: 6, fullWeek: 4, firstDOfWk: 2}, titles: {"en": "Insect Week"}, notes: {"en": "National Insect Week"}, urls: {"en": "https://www.daysoftheyear.com/days/insect-week/"}, emoji: "🐜🐞🦋"},
+        {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Transplant Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-transplant-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}},
+        {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Great British Pea Week"}, urls: {"en": "https://peas.org/great-british-pea-week/"}, emoji: "🫛"},
+        {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Dyspraxia Week"}, notes: {"en": "Dyspraxia Awareness Week"}, urls: {"en": "https://dyspraxiafoundation.org.uk/news-and-events/dyspraxia-week"}, inherits: "*MedAwareness*", first: {era: 1, y: 2024}},
 
 
     ]
