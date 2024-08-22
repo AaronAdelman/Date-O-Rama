@@ -2039,7 +2039,7 @@
         {type: "1W", start: {mon: 6, fullWeek: 2}, titles: {"en": "Scleroderma Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/scleroderma-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 6, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Food Safety Week"}, urls: {"en": "https://www.daysoftheyear.com/days/food-safety-week/"}, first: {era: 1, y: 2019}, emoji: "🍛🌭🌮"},
         {type: "1W", start: {mon: 6, fullWeek: 2, firstDOfWk: 2}, titles: {"en": "Meet A Mate Week"}, urls: {"en": "https://www.daysoftheyear.com/days/meet-a-mate-week/"}, first: {era: 1, y: 2019}},
-        {type: "nD", start: {mon: 6, d: 10, thruD: 16, wkd: [2]}, end: {mon: 6, d: 16, thruD: 22, wkd: [1]}, titles: {"en": "Diabetes Week"}, urls: {"en": "https://www.daysoftheyear.com/days/diabetes-week/"}, inherits: "*MedAwareness*"},
+        {type: "nD", start: {mon: 6, d: 10, thruD: 16, wkd: [2], durationD: 7}, titles: {"en": "Diabetes Week"}, urls: {"en": "https://www.daysoftheyear.com/days/diabetes-week/"}, inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 6, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Animal Rights Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/animal-rights-awareness-week/"}, first: {era: 1, y: 1991}},
         {type: "1W", start: {mon: 6, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Refugee Week", "he": "שבוע הפליטים"}, urls: {"en": "https://www.daysoftheyear.com/days/refugee-week/"}, first: {era: 1, y: 1998}},
         {type: "1W", start: {mon: 6, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Lightning Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/lightning-safety-awareness-week/"}, first: {era: 1, y: 2001}, emoji: "⚡️"},
