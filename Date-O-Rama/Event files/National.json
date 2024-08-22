@@ -1669,7 +1669,7 @@
         {type: "1D", start: {mon: 8, wkdRecurrence: 1, wkd: [4]}, urls: {"en": "https://www.daysoftheyear.com/days/national-psychiatric-technician-appreciation-day/"}, titles: {"en": "National Psychiatric Technician Appreciation Day", "he": "יום ההוקרה הלאומי של טכנאי פסיכיאטרי"}, notes: {"en": "Psychiatric Technicians’ Day,"}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/rice-pudding-day/"}, titles: {"en": "National Rice Pudding Day", "he": "יום פודינג אורז הלאומי"}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-veep-day/"}, titles: {"en": "National Veep Day", "he": "יום סגן נשיא הלאומי"}},
-        {type: "nD", start: {mon: 8, d: 9}, end: {mon: 8, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/elvis-week/"}, titles: {"en": "Elvis Week"}, first: {era: 1, y: 1978}},
+        {type: "nD", start: {mon: 8, d: 9}, end: {mon: 8, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/elvis-week/"}, titles: {"en": "Elvis Week"}, first: {era: 1, y: 1978}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/herbert-hoover-day/"}, titles: {"en": "Herbert Hoover Day", "he": "יום הרברט הובר"}, inherits: "*BDay*", first: {era: 1, y: 1874}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/smores-day/"}, titles: {"en": "National S’mores Day", "he": "יום סמורס הלאומי"}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-ski-citrus-soda-day/"}, titles: {"en": "National SKI Citrus Soda Day"}, first: {era: 1, y: 2020}, emoji: "🥤"},
@@ -2477,6 +2477,9 @@
         {type: "1W", start: {mon: 6, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Patient Participation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-patient-participation-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}, notes: {"en": "Patient Involvement Week"}},
         {type: "nD", start: {mon: 6, d: 7, thruD: 13, wkd: [3]}, end: {mon: 6, d: 13, thruD: 19, wkd: [2]}, titles: {"en": "National Pet Wedding Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pet-wedding-week/"}, emoji: "🐕🐕‍🦺"},
         {type: "1W", start: {mon: 6, fullWeek: 3}, titles: {"en": "National Play Catch Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-play-catch-week/"}, emoji: "⚾️", first: {era: 1, y: 2013}},
+        {type: "1W", start: {mon: 7, fullWeek: -2}, titles: {"en": "Everybody Deserves a Massage Week"}, urls: {"en": "https://www.daysoftheyear.com/days/everybody-deserves-a-massage-week/"}, first: {era: 1, y: 1995}},
+        {type: "nD", start: {mon: 7, d: 17, thruD: 23, wkd: [7], durationD: 9}, titles: {"en": "National Moth Week"}, notes: {"en": "Moth Week"}, urls: {"en": "https://nationalmothweek.org/"}, first: {era: 1, y: 2012}},
+        {type: "1W", start: {mon: 7, fullWeek: 3}, titles: {"en": "National Parenting Gifted Children"}, urls: {"en": "https://www.daysoftheyear.com/days/national-parenting-gifted-children-week/"}, first: {era: 1, y: 2007}, emoji: "👦👧"},
 
         
     ]

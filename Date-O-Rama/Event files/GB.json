@@ -54,7 +54,7 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 1}, inherits: "Thank You Day", urls: {"en": "https://thankyouday.org.uk/"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 7, d: 15}, inherits: "St. Swithin’s Day", first: {era: 1, y: 990}},
-        {type: "nD", start: {mon: 7, d: 16}, "end": {mon: 7, d: 31}, titles: {"en": "Festival of British Archaeology"}, urls: {"en": "https://nationaltoday.com/festival-of-british-archaeology/"}, first: {era: 1, y: 2003}},
+        {type: "nD", start: {mon: 7, d: 10, thruD: 16, wkd: [7], durationD: 16}, titles: {"en": "Festival of British Archaeology"}, urls: {"en": "https://www.archaeologyuk.org/festival.html"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Norfolk Day"}, urls: {"en": "https://www.norfolkchamber.co.uk/norfolk-day/"}},
         {inherits: "National Children’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1954}, urls: {"en": "https://nationaltoday.com/national-childrens-day-uk/"}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 10, d: 21}, first: {era: 1, y: 2011}},

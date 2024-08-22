@@ -47,11 +47,12 @@ struct ASADateSpecification:  Codable {
     /// Matches if year mod yearDivisor = yearRemainder
     var yearRemainder: Int?
     
-    // For date-specified and Easter-related events
+    /// For date-specified and Easter-related events
     var offsetDays: Int?
     
     var throughDay: Int?
     var throughMonth: Int?
+    var durationDays: Int?
 
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
@@ -119,6 +120,7 @@ struct ASADateSpecification:  Codable {
         case throughMonth        = "thruMon"
         case fullWeek            = "fullWeek"
         case firstDayOfWeek      = "firstDOfWk"
+        case durationDays        = "durationD"
     } // enum CodingKeys
 } // struct ASADateSpecification
 

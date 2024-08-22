@@ -2043,6 +2043,10 @@
         {type: "1W", start: {mon: 6, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Animal Rights Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/animal-rights-awareness-week/"}, first: {era: 1, y: 1991}},
         {type: "1W", start: {mon: 6, fullWeek: 3, firstDOfWk: 2}, titles: {"en": "Refugee Week", "he": "שבוע הפליטים"}, urls: {"en": "https://www.daysoftheyear.com/days/refugee-week/"}, first: {era: 1, y: 1998}},
         {type: "1W", start: {mon: 6, fullWeek: -1, firstDOfWk: 2}, titles: {"en": "Lightning Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/lightning-safety-awareness-week/"}, first: {era: 1, y: 2001}, emoji: "⚡️"},
+        {titles: {"en": "Vanilla Jones Day"}, type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2023}},
+        {titles: {"en": "Ozma’s Birthday"}, type: "1D", start: {mon: 8, d: 21}, first: {era: 1, y: 1909}, inherits: "*BDay*", urls: {"en": "https://en.wikipedia.org/wiki/Princess_Ozma"}},
+        {titles: {"en": "Snuffy’s Birthday"}, type: "1D", start: {mon: 8, d: 19}, inherits: "*BDay*", urls: {"en": "https://sesameworkshop.org/our-work/shows/sesame-street/sesame-street-characters/aloysius-snuffleupagus-snuffy/"}},
+        {type: "1W", start: {mon: 8, fullWeek: 1}, titles: {"en": "International Assistance Dog Week"}, urls: {"en": "https://www.daysoftheyear.com/days/international-assistance-dog-week/"}, emoji: "🦮🐕‍🦺", first: {era: 1, y: 2009}},
 
     ]
 }
