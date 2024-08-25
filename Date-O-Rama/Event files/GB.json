@@ -23,7 +23,7 @@
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day", urls: {"en": "https://nationaltoday.com/battle-of-the-boyne/"}, first: {era: 1, y: 1690}},
         {type: "1D", start: {mon: 7, d: 13, thruD: 14, wkd: [2]}, titles: {"en": "Orangemen’s Day (in lieu)"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}},
-        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en": "Late Summer Bank Holiday"}},
         {type: "1D", inherits: "Remembrance Sunday", start: {mon: 11, wkd: [1], d: 8, thruD: 14}, urls: {"en": "https://nationaltoday.com/remembrance-sunday/"}, first: {era: 1, y: 1946}},
         {inherits: "St. Andrew’s Day", type: "1D", start: {mon: 11, d: 30}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
@@ -141,7 +141,7 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/scottish-wildcat-day/"}, titles: {"en": "Scottish Wildcat Day"}, notes: {"en": "Wildcat Day\nHighland Tiger Day"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"},
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/falklands-day/"}, titles: {"en": "Falklands Day", "he": "יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
         {type: "1D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en": "https://www.daysoftheyear.com/days/burger-day/"}, titles: {"en": "Burger Day", "he": "יום ההמבורגר"}, notes: {"en": "National Burger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
-        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-zoo-awareness-day/"}, titles: {"en": "National Zoo Awareness Day"}, emoji: "🦓"},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/national-zoo-awareness-day/"}, titles: {"en": "National Zoo Awareness Day"}, emoji: "🦓"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/festival-of-learning-have-a-go-month/"}, titles: {"en": "Festival of Learning Have a Go Month"}, first: {era: 1, y: 2013}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-organic-month/"}, titles: {"en": "National Organic Month"}, first: {era: 1, y: 2013}, notes: {"en": "Organic September"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/vascular-disease-awareness-month/"}, titles: {"en": "Vascular Disease Awareness Month"}, inherits: "*MedAwareness*"},
@@ -210,6 +210,7 @@
         {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "National Transplant Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-transplant-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}},
         {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Great British Pea Week"}, urls: {"en": "https://peas.org/great-british-pea-week/"}, emoji: "🫛"},
         {type: "1W", start: {mon: 7, fullWeek: 1, firstDOfWk: 2}, titles: {"en": "Dyspraxia Week"}, notes: {"en": "Dyspraxia Awareness Week"}, urls: {"en": "https://dyspraxiafoundation.org.uk/news-and-events/dyspraxia-week"}, inherits: "*MedAwareness*", first: {era: 1, y: 2024}},
+        {type: "1D", start: {mon: 8, d: 31}, titles: {"en": "IRONMAN Wales "}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿", urls: {"en": "https://www.daysoftheyear.com/days/ironman-wales/"}, first: {era: 1, y: 2010}},
 
 
     ]

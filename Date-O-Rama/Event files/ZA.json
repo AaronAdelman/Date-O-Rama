@@ -53,5 +53,6 @@
         {inherits: "Spring Day", type: "1D", start: {mon: 9, d: 1}},
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "1D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/farm-workers-day/"}, inherits: "National Farm Workers Day"},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/amagwinya-day/"}, titles: {"en": "Amagwinya Day"}, notes: {"en": "Vetkoek Day"}, first: {era: 1, y: 2017}},
    ]
 }

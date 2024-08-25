@@ -23,7 +23,7 @@
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, titles: {"en": "Manila Day"}},
         {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "Manuel Luis Quezón Day", "fil": "Kaarawan ni Manuel Luis Quezón", "he": "יום מנואל קזון"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/philippines/quezon/philippines-birthday-quezon"}, notes: {"en": "Birthday of Manuel L. Quezon", "he": "יום הולדת של מנואל קזון"}},
         {type: "1D", titles: {"en": "Ninoy Aquino Day", "he": "יום בניגנו אקינו הבן", "fil": "Araw ng Kabayanihan ni Ninoy Aquino"}, start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/ninoy-aquino-day/"}, first: {era: 1, y: 2004}},
-        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-heroes-day-philippines/"}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/national-heroes-day/"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/cebu/osmena-day"}, titles: {"en": "Osmeña Day", "fil": "Araw ni Pangulong Osmeña"}, first: {era: 1, y: 1990}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
