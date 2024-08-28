@@ -1,0 +1,12 @@
+{
+    titles: {"en": "National Day Calendar®"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {"red": 0.85, "green": 0.22, "blue": 0.20},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 8, d: 27}, titles: {"en": "National Peach Day"}, emoji: "🍑", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-peach-day-august-27"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {dOfY: 241}, titles: {"en": "National Sport Sampling Day"}, emoji: "🏉🏐🏀", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sport-sampling-day-241st-day-of-the-year"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 8, d: 28}, titles: {"en": "National Thoughtful Day"}, emoji: "🌼", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-thoughtful-day-august-28"}, first: {era: 1, y: 2020}},
+
+    ]
+}
