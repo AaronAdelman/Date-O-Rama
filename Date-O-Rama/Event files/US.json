@@ -496,7 +496,7 @@
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/national-spirit-of-45-day/"}, titles: {"en": "National Spirit of ’45 Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 8, d: 21}, notes: {"en": "World Senior Citizen’s Day\nNational Day of the Third Age", "he": "יום האזרח הוותיק העולמי"}, first: {era: 1, y: 1988}, emoji: "👴👵", urls: {"en": "https://www.daysoftheyear.com/days/senior-citizens-day/"}, titles: {"en": "National Senior Citizens Day", "he": "יום האזרח הוותיק הלאומי"}},
         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://www.daysoftheyear.com/days/kobe-bryant-day/"}, titles: {"en": "Kobe Bryant Day", "he": "יום קובי בראיינט"}, emoji: "🏀", first: {era: 1, y: 2016}},
-        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-sewing-month/"}, titles: {"en": "National Sewing Month"}, emoji: "🧵🪡", first: {era: 1, y: 1982}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://www.nationalsewingmonth.org/"}, titles: {"en": "National Sewing Month"}, emoji: "🧵🪡", first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-pow-mia-recognition-day/"}, titles: {"en": "National POW/MIA Recognition Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/american-business-womens-day/", "he": "https://www.daysoftheyear.co.il/2017/09/22.html"}, titles: {"en": "American Business Women’s Day", "he": "יום נשות העסקים האמריקאי"}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationalgoodneighborday.com/"}, titles: {"en": "National Good Neighbor Day"}, first: {era: 1, y: 2004}},
@@ -558,6 +558,10 @@
         {type: "1M", start: {mon: 9}, titles: {"en": "Classical Music Month"}, urls: {"en": "https://www.daysoftheyear.com/days/classical-music-month/"}, first: {era: 1, y: 1994}, emoji: "🎻"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://dystonia-foundation.org/event/dystonia-awareness-month/"}, inherits: "National Dystonia Awareness Month", first: {era: 1, y: 2016}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-childhood-obesity-awareness-month/"}, titles: {"en": "National Childhood Obesity Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
+        {type: "1M", start: {mon: 9}, titles: {"en": "Leukemia and Lymphoma Awareness Month"}, notes: {"en": "Blood Cancer Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/leukemia-and-lymphoma-awareness-month/"}, first: {era: 1, y: 2017}, emoji: "🩸", inherits: "*MedAwareness*"},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/chicken-month/"}, titles: {"en": "National Chicken Month"}, emoji: "🐓"},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/childhood-cancer-awareness-month/"}, titles: {"en": "National Childhood Cancer Awareness Month"}, notes: {"en": "Childhood Cancer Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 1990}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://www.ready.gov/september", "es": "https://www.ready.gov/es/septiembre"}, titles: {"en": "National Preparedness Month", "es": "Mes de Preparación Nacional"}, first: {era: 1, y: 2004}},
 
 
 

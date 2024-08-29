@@ -506,7 +506,6 @@
         {template: "One Health Day", type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/one-health-day-november-3"}, titles: {"en": "One Health Day"}, emoji: "🩺"},
         {template: "Orangemen’s Day", type: "1D", start: {mon: 7, d: 12}, titles: {"en": "Orangemen’s Day", "fr": "Fête des orangistes"}, urls: {"en": "https://nationaltoday.com/orangemens-day/"}, emoji: "🔥", notes: {"en": "Battle of the Boyne"}},
         {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "1D", start: {"equinoxOrSolstice": "Mar"}},
-        {template: "Ovarian Cancer Awareness Month", type: "1M", titles: {"en": "Ovarian Cancer Awareness Month"}, start: {mon: 2}, inherits: "*MedAwareness*"},
         {template: "Palm Sunday", titles: {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas", "is": "Pálmasunnudagur", "mt": "Ħadd il-Palm"}, type: "1D", start: {"Easter": "Easter", "offsetD": -7}, urls: {"en": "https://nationaltoday.com/palm-sunday/"}},
         {template: "Paratroopers’ Day", type: "1D", start: {mon: 8, d: 2}, titles: {"en": "Paratroopers’ Day", "ru": "День десантника"}, urls: {"en": "https://en.wikipedia.org/wiki/Paratroopers%27_Day"}},
         {template: "Parents’ Day", type: "1D", start: {mon: 5, d: 8}, titles: {"en": "Parents’ Day", "he": "יום ההורים", "ko": "어버이날"}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Day"}},
