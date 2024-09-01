@@ -179,7 +179,7 @@
         {type: "1D", start: {mon: 8, d: 24}, titles: {"en": "International Strange Music Day", "he": "יום המוזיקה המוזרה הבינלאומי"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/", "he": "https://www.daysoftheyear.co.il/2020/08/strange0music-day.html"}},
         {type: "1D", start: {mon: 8, d: 30}, titles: {"en": "International Whale Shark Day", "he": "יום הכריש הלווייתני הלאומי"}, first: {era: 1, y: 2012}, urls: {"en": "https://www.daysoftheyear.com/days/international-whale-shark-day/"}},
         {type: "1D", start: {mon: 8, d: 31}, titles: {"en": "International Overdose Awareness Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.overdoseday.com/"}, inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 9, d: 2}, titles: {"en": "World Coconut Day", "he": "יום הקוקוס העולמי"}, emoji: "🥥", urls: {"en": "https://nationaldaycalendar.com/world-coconut-day-september-2/", "he": "https://www.daysoftheyear.co.il/2022/09/2.html"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 9, d: 2}, titles: {"en": "World Coconut Day", "he": "יום הקוקוס העולמי"}, emoji: "🥥", urls: {"en": "https://www.daysoftheyear.com/days/world-coconut-day/", "he": "https://www.daysoftheyear.co.il/2022/09/2.html"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, titles: {"en": "World Beard Day"}, emoji: "🧔‍♂️", urls: {"en": "https://www.daysoftheyear.com/days/beard-day/"}},
         {type: "1D", start: {mon: 9, d: 8}, titles: {"en": "World Physical Therapy Day"}, first: {era: 1, y: 1996}, urls: {"en": "https://nationaldaycalendar.com/world-physical-therapy-day-september-8/"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 9, d: 10}, inherits: "World Suicide Prevention Day", first: {era: 1, y: 2003}},
@@ -1613,12 +1613,12 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-animal-remembrance-month/"}, titles: {"en": "World Animal Remembrance Month"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-candle-month/"}, titles: {"en": "World Candle Month"}, first: {era: 1, y: 2013}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/world-fun-fair-month/"}, titles: {"en": "World Fun Fair Month"}, first: {era: 1, y: 2021}},
-        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/bison-ten-yell-day/"}, titles: {"en": "Bison-ten Yell Day"}},
-        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/calendar-adjustment-day/"}, titles: {"en": "Calendar Adjustment Day"}, first: {era: 1, y: 1752}},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/bison-ten-yell-day/"}, titles: {"en": "Bison-ten Yell Day"}, emoji: "🦬"},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/calendar-adjustment-day/"}, titles: {"en": "Calendar Adjustment Day"}, first: {era: 1, y: 1752}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-bacon-day/"}, titles: {"en": "International Bacon Day"}},
         {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/spalding-baseball-day/"}, titles: {"en": "Spalding Baseball Day"}, emoji: "⚾️"},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.vultureday.org/"}, titles: {"en": "International Vulture Awareness Day", "he": "יום הנשר הבינלאומי"}, notes: {"en": "Turkey Vulture Day"}, first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/mouthguard-day/"}, titles: {"en": "Mouthguard Day"}},
+        {type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/mouthguard-day/"}, titles: {"en": "Mouthguard Day"}, emoji: "👄", first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/another-look-unlimited-day/"}, titles: {"en": "Another Look Unlimited Day"}},
         {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/telephone-tuesday/"}, titles: {"en": "Telephone Tuesday"}},
         {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/world-samosa-day/"}, titles: {"en": "World Samosa Day"}},
@@ -2048,6 +2048,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.conquerchiari.org/"}, titles: {"en": "Chiari Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/pulmonary-fibrosis-awareness-month/"}, titles: {"en": "Pulmonary Fibrosis Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/shake-month/"}, titles: {"en": "Shake Month"}, emoji: "🥤"},
+        {type: "1W", start: {mon: 9, fullWeek: 1, firstDOfWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/zero-waste-week/"}, titles: {"en": "Zero Waste Week"}, first: {era: 1, y: 2008}},
 
 
     ]

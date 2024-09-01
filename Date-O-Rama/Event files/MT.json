@@ -104,7 +104,7 @@
         {titles: {"en": "Feast of St. Dominic of Guzman", "mt": "San Duminku ta’ Guzman"}, type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: -1}},
         {titles: {"en": "Feast of St. Julian", "mt": "San Ġiljan"}, type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: -1}},
         
-        {inherits: "Nativity of Mary", type: "1D", start: {mon: 9, d: 8}},
+        {inherits: "Nativity of Mary", type: "1D", start: {mon: 9, d: 8}, notes: {"en": "Feast of Our Lady of Victories\nVictory Day"}},
         {type: "1D", start: {mon: 9, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "Feast of Our Lady of Graces", "mt": "Il-Madonna tal-Grazzja"}},
         {type: "1D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 

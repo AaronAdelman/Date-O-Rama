@@ -18,6 +18,7 @@
         {inherits: "King’s Birthday", type: "1D", start: {mon: 7, d: 24, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/swaziland/birthday-of-late-king-sobhuza"}, titles: {"en": "King Father’s Birthday (in lieu)"}, first: {era: 1, y: 1899}},
         
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}, notes: {"en": "Somhlolo Day"}},
+        {inherits: "Independence Day (in lieu)", type: "1D", start: {mon: 9, d: 7, wkd: [2]}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}, notes: {"en": "Somhlolo Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
     ]

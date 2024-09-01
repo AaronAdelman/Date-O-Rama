@@ -214,6 +214,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.dystonia.org.uk/pages/category/dystonia-awareness-month"}, inherits: "National Dystonia Awareness Month", first: {era: 1, y: 2016}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.oddfellows.co.uk/about/friendship-month/"}, notes: {"en": "Oddfellows Friendship Month"}, titles: {"en": "Friendship Month"}, first: {era: 1, y: 2010}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/sleeptember/"}, titles: {"en": "Sleeptember"}, first: {era: 1, y: 2013}, inherits: "*MedAwareness*", emoji: "🛌"},
+        {type: "1W", start: {mon: 9, fullWeek: 1, firstDOfWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/know-your-numbers-week/"}, titles: {"en": "Know Your Numbers Week"}, inherits: "*MedAwareness*", first: {era: 1, y: 2001}},
 
 
     ]
