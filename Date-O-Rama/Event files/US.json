@@ -233,7 +233,7 @@
         {type: "1M", start: {mon: 9}, titles: {"en": "National Bourbon Heritage Month"}, urls: {"en": "https://nationaltoday.com/bourbon-heritage-month/"}, first: {era: 1, y: 2007}, emoji: "🥃"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Disaster Preparedness Month"}, urls: {"en": "https://nationaltoday.com/disaster-preparedness-month/"}, first: {era: 1, y: 2004}, emoji: "⛑"},
         {type: "1M", start: {mon: 9}, titles: {"en": "National Sickle Cell Awareness Month"}, urls: {"en": "https://nationaltoday.com/national-sickle-cell-awareness-month/"}, first: {era: 1, y: 1975}, emoji: "🩸", inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 9, d: 7}, titles: {"en": "Grandma Moses Day"}, first: {era: 1, y: 1960}, emoji: "🎨", urls: {"en": "https://nationaltoday.com/grandma-moses-day/"}},
+        {type: "1D", start: {mon: 9, d: 7}, titles: {"en": "Grandma Moses Day"}, first: {era: 1, y: 1960}, emoji: "🎨", urls: {"en": "https://www.daysoftheyear.com/days/grandma-moses-day/"}},
         {type: "1D", titles: {"en": "National Hunting and Fishing Day"}, start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-hunting-and-fishing-day/"}, first: {era: 1, y: 1972}, emoji: "🎣"},
         {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/elizabeth-peratrovich-day/"}, titles: {"en": "Elizabeth Peratrovich Day"}},
         {type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/save-the-florida-panther-day/"}, titles: {"en": "Save the Florida Panther Day"}, first: {era: 1, y: 2016}},

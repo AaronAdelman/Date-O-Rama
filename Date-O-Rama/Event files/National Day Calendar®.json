@@ -70,7 +70,9 @@
         {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Burnt Ends Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-burnt-ends-day-september-1"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Forgiveness Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-forgiveness-day-september-1"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Hotel Employee Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hotel-employee-day-september-1"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 9, d: 4}, titles: {"en": "National Spice Blend Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-spice-blend-day-september-4"}, first: {era: 1, y: 2021}},
 
+        
         {type: "1M", start: {mon: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/world-health-esteem-month-january"}, titles: {"en": "World Health Esteem Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/december/national-car-donation-month-december"}, titles: {"en": "National Car Donation Month"}, emoji: "🚘", first: {era: 1, y: 2018}},
 
