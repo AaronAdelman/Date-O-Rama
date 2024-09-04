@@ -137,12 +137,6 @@
     "🔍" : {
 
     },
-    "🔺" : {
-
-    },
-    "🔻" : {
-
-    },
     "1-line large" : {
       "localizations" : {
         "he" : {
@@ -4217,6 +4211,7 @@
       }
     },
     "Today" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {

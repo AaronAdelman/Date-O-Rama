@@ -14,6 +14,27 @@ struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     @State var usingRealTime = true
+    
+    @State private var selectedCalendar = Calendar(identifier: .gregorian)
+
+       let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
+           ("gre", .gregorian),
+           ("tha", .buddhist),
+           ("chi", .chinese),
+           ("cop", .coptic),
+           ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
+           ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
+           ("Hebrew", .hebrew),
+//           ("ISO8601", .iso8601),
+           ("ind", .indian),
+           ("Islamic", .islamic),
+           ("IslamicCivil", .islamicCivil),
+           ("IslamicTabular", .islamicTabular),
+           ("IslamicUmmAlQura", .islamicUmmAlQura),
+           ("kok", .japanese),
+           ("his", .persian),
+           ("min", .republicOfChina)
+       ]
             
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -89,10 +110,7 @@ struct ASAClocksTab: View {
                             })
                         }
                     } label: {
-//                        Image(systemName: "gear")
-//                            .symbolRenderingMode(.multicolor)
-//                        Text("Settings")
-                        Image(systemName: "mappin.circle.fill")
+                        Image(systemName: "mappin")
                             .symbolRenderingMode(.multicolor)
                         if horizontalSizeClass == .regular {
                             Text("Locations")
@@ -133,6 +151,26 @@ struct ASAClocksTab: View {
                         if !self.usingRealTime {
                             DatePicker(selection:  self.$now, in:  Date.distantPast...Date.distantFuture, displayedComponents: [.date, .hourAndMinute]) {
                                 Text("")
+                            }
+                            .environment(\.calendar, selectedCalendar)
+                            .datePickerStyle(.compact)
+                            
+                            Menu {
+                                ForEach(availableCalendars, id: \.calendar) { calendarInfo in
+                                    HStack {
+                                        Button {
+                                            selectedCalendar = Calendar(identifier: calendarInfo.calendar)
+                                        } label: {
+                                            Text(NSLocalizedString(calendarInfo.name, comment: ""))
+                                            if selectedCalendar.identifier == calendarInfo.calendar {
+                                                Image(systemName: "checkmark")
+                                            }
+                                        }
+                                    } // HStack
+                                } // ForEach
+                            } label: {
+                                Image(systemName: "calendar")
+                                    .symbolRenderingMode(.multicolor)
                             }
                         }
                     } // HStack
