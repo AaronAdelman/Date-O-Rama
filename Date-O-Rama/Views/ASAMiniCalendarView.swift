@@ -161,9 +161,6 @@ struct ASAMiniCalendarView:  View {
         }
         
         var gridFirstDay = gridFirstDay()
-        
-        let preexistingDays = daysInMonth - gridFirstDay + 1
-        let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
         var gridLastDay = daysInMonth
         if gridLastDay < gridFirstDay {
             let temp = gridLastDay
