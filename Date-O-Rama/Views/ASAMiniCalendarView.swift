@@ -96,18 +96,6 @@ struct ASAWeekdayCell:  View {
 } // struct ASAWeekdayCell
 
 
-// MARK: -
-
-extension Int {
-    func weekdayFixed(daysPerWeek:  Int) -> Int {
-        if self == 0  {
-            return daysPerWeek
-        }
-        return self
-    } // func weekdayFixed(daysPerWeek:  Int) -> Int
-} // extension Int
-
-
 // MARK:  -
 
 struct ASAWeekdayData {
@@ -132,23 +120,12 @@ struct ASAMiniCalendarView:  View {
     var blankWeekdaySymbol: String?
     
     var weekdayOfDay1:  Int {
-        get {
             assert(daysPerWeek > 0)
             assert(day > 0)
             assert(weekday > 0)
             assert(weekday <= daysPerWeek)
             
-            let correspondingDayInWeek1 = (day % daysPerWeek).weekdayFixed(daysPerWeek: daysPerWeek)
-            
-            let possibility1 = (weekday - correspondingDayInWeek1 + 1).weekdayFixed(daysPerWeek: daysPerWeek)
-            if possibility1 > 0 && possibility1 <= daysPerWeek {
-                return possibility1
-            }
-            let possibility2 = possibility1 + daysPerWeek
-            assert(possibility2 > 0)
-            assert(possibility2 <= daysPerWeek)
-            return possibility2
-        } // get
+            return weekdayOfFirstDayOfMonth(day: day, weekday: weekday, daysPerWeek: daysPerWeek)
     } // var weekdayOfDay1
     
     private var processedWeekdaySymbols:  Array<ASAWeekdayData> {
@@ -187,7 +164,7 @@ struct ASAMiniCalendarView:  View {
         
         let preexistingDays = daysInMonth - gridFirstDay + 1
         let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
-        var gridLastDay = (neededDays - preexistingDays) + daysInMonth
+        var gridLastDay = daysInMonth
         if gridLastDay < gridFirstDay {
             let temp = gridLastDay
             gridLastDay = gridFirstDay
@@ -215,7 +192,6 @@ struct ASAMiniCalendarView:  View {
                                     isWeekend)
                 }
         
-            
             ForEach(self.gridRange(), id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
                     if monthIsBlank {
@@ -250,7 +226,7 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
+        ASAMiniCalendarView(daysPerWeek: 7, day: 30, weekday: 1, daysInMonth: 30, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
                             weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7],
                             numberFormat: .system, monthIsBlank: false)
     }
