@@ -6,11 +6,11 @@
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Independence Day", type: "1D", titles: {"en": "March 1st Movement Day", "he": "יום העצמאות של תנועת ה־1 במרץ", "ko": "3ㆍ1절"}, start: {mon: 3, d: 1}, first: {era: 1, y: 1919}, urls: {"en": "https://nationaltoday.com/independence-movement-day/", "he": "https://www.daysoftheyear.co.il/2016/03/1.html"}, notes: {"en": "Independence Movement Day"}},
+        {inherits: "Independence Day", type: "1D", titles: {"en": "March 1st Movement Day", "he": "יום העצמאות של תנועת ה־1 במרץ", "ko": "3ㆍ1절"}, start: {mon: 3, d: 1}, first: {era: 1, y: 1919}, urls: {"en": "https://nationaltoday.com/independence-movement-day/"}, notes: {"en": "Independence Movement Day"}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 5}, first: {era: 1, y: 1961}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-childrens-day"}},
         {inherits: "Memorial Day", type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/memorial-day-in-south-korea/"}},
-        {inherits: "Constitution Day", type: "1D", start: {mon: 7, d: 17}, first: {era: 1, y: 1949}, urls: {"en": "https://nationaltoday.com/korean-constitution-day/", "he": "https://www.daysoftheyear.co.il/2019/07/k-constitution-day.html"}},
+        {inherits: "Constitution Day", type: "1D", start: {mon: 7, d: 17}, first: {era: 1, y: 1949}, urls: {"en": "https://nationaltoday.com/korean-constitution-day/"}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 8, d: 15}, first: {era: 1, y: 1950}},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-national-foundation-day"}, inherits: "National Foundation Day"},
         {type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/south-korea-hangeul-day/"}, titles: {"en": "Hangul Day", "ko": "한글날"}},

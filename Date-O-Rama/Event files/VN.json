@@ -13,7 +13,7 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "1D", start: {mon: 5, d: 3, wkd: [2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/labour-day"}, inherits: "Labour Day (in lieu)"},
         {type: "1D", start: {mon: 9, d: 1, wkd: [5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
-        {inherits: "National Day", type: "1D", start: {mon: 9, d: 2}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/national-day-of-vietnam/", "he": "https://www.daysoftheyear.co.il/2019/09/vietnam-independence-day.html"}},
+        {inherits: "National Day", type: "1D", start: {mon: 9, d: 2}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/national-day-of-vietnam/"}},
         {type: "1D", start: {mon: 9, d: 3, wkd: [1, 3, 4, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 9, d: 4, wkd: [2, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 9, d: 5, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inherits: "National Day Holiday", first: {era: 1, y: 1945}},

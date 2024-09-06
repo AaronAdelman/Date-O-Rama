@@ -18,7 +18,7 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/austria/fathers-day"}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "St. Rupert’s Day", type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/austria/salzburg/saint-rupert"}},
-        {inherits: "National Day", type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/austrian-national-day/", "he": "https://www.daysoftheyear.co.il/2017/10/austriaday.html"}, first: {era: 1, y: 1955}},
+        {inherits: "National Day", type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/austrian-national-day/"}, first: {era: 1, y: 1955}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "St. Leopold’s Day", type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/austria/vienna/saint-leopold"}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},

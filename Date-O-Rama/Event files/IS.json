@@ -16,7 +16,7 @@
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
-        {inherits: "National Day", type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/iceland-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/06/iceland-day.html"}, first: {era: 1, y: 1944}},
+        {inherits: "National Day", type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/iceland-independence-day/"}, first: {era: 1, y: 1944}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Commerce Day", "is": "Frídagur verslunarmanna"}, first: {era: 1, y: 1931}, urls: {"en": "https://nationaltoday.com/commerce-day/"}, emoji: "💶"},
         {inherits: "Father’s Day", type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/iceland/fathers-day"}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},

@@ -11,7 +11,7 @@
         {type: "1D", start: {mon: 1, d: 3, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
         {type: "1D", start: {era: 1, y: 2023, mon: 1, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/mauritius/mauritius-bank-holiday"}, inherits: "Bank Holiday"},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/abolition-of-slavery-day/"}, titles: {"en": "Abolition of Slavery Day"}, first: {era: 1, y: 1835}},
-        {type: "1D", start: {mon: 3, d: 12}, notes: {"en": "Mauritius Day"}, first: {era: 1, y: 1968}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/mauritius-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/03/12.html"}},
+        {type: "1D", start: {mon: 3, d: 12}, notes: {"en": "Mauritius Day"}, first: {era: 1, y: 1968}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/mauritius-independence-day/"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/mauritius/tamil-new-year"}, titles: {"en": "Tamizh Puttaandu"}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},

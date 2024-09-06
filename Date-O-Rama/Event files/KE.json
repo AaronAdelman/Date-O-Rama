@@ -17,7 +17,7 @@
         {inherits: "Mashujaa Day", type: "1D", start: {mon: 10, d: 20, wkd: [2, 3, 4, 5, 6]}, first: {era: 1, y: 2010}},
         {inherits: "Mashujaa Day", type: "1D", start: {mon: 10, d: 21, wkd: [2]}, first: {era: 1, y: 2010}},
         {inherits: "Mashujaa Day", type: "1D", start: {mon: 10, d: 22, wkd: [2]}, first: {era: 1, y: 2010}},
-        {inherits: "Republic Day", type: "1D", titles: {"en": "Jamhuri Day", "he": "ג׳מהורי"}, start: {d: 12, mon: 12}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/jamhuri-day/", "he": "https://www.daysoftheyear.co.il/2018/12/jamhuri-day.html"}},
+        {inherits: "Republic Day", type: "1D", titles: {"en": "Jamhuri Day", "he": "ג׳מהורי"}, start: {d: 12, mon: 12}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/jamhuri-day/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
 

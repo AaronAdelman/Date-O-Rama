@@ -6,7 +6,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.86, "green": 0.08, "blue": 0.24},
     eventSpecifications: [
-        {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/prithvi-jayanti", "he": "https://www.daysoftheyear.co.il/2019/01/unity-day-nepal.html"}, titles: {"en": "Prithvi Jayanti"}, first: {era: 1, y: 1951}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/prithvi-jayanti"}, titles: {"en": "Prithvi Jayanti"}, first: {era: 1, y: 1951}, inherits: "*BDay*"},
         {type: "1D", start: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en": "Nepal National Mourning Day"}},
         {type: "1D", start: {era: 1, y: 2019, mon: 2, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en": "Nepal National Mourning Day"}},
         {type: "1D", start: {era: 1, y: 2023, mon: 3, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/province-1/koshi-public-holiday"}, inherits: "Public Holiday"},

@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.8, "green": 0.8, "blue": 0.98},
     eventSpecifications: [
-        {titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/", "he": "https://www.daysoftheyear.co.il/2019/01/world-religion-day.html"}},
+        {titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/"}},
         {titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, type: "1M", start: {mon: 12}, emoji: "🙏", urls: {"en": "https://nationaldaycalendar.com/spiritual-literacy-month-december/"}, first: {era: 1, y: 1996}},
         {titles: {"en": "International Religious Freedom Day", "he": "יום חופש הדת הבינלאומי"}, type: "1D", start: {mon: 10, d: 27}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/spiritual-wellness-month/"}, titles: {"en": "Spiritual Wellness Month", "he": "חודש הבריאות הרוחנית"}},

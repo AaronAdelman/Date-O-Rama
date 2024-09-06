@@ -18,7 +18,7 @@
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Constitutionalist Revolution", "pt": "Revolução Constitucionalista"}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/sao-paulo/state-rebellion-day"}, notes: {"en": "State Rebellion Day"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 9}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/09/7.html"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 9}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida", "pt": "Nossa Senhora Aparecida"}, urls: {"en": "https://nationaltoday.com/lady-of-aparecida-2/"}, first: {era: 1, y: 1717}},
         {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/civil-servants-day"}, titles: {"en": "Civil Servants Day"}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
@@ -26,7 +26,7 @@
         {type: "1D", start: {mon: 11, d: 20}, titles: {"en": "Black Consciousness Day", "pt": "Dia da Consciência Negra"}, urls: {"en": "https://nationaltoday.com/black-consciousness-day-brazil/", "pt": "https://pt.wikipedia.org/wiki/Dia_da_Consci%C3%AAncia_Negra"}, first: {era: 1, y: 1960}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
-        {type: "1D", start: {mon: 6, d: 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados", "he": "יום האוהבים ברזיל"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/", "he": "https://www.daysoftheyear.co.il/2018/06/12.html"}, first: {era: 1, y: 1948}, inherits: "Valentine’s Day"},
+        {type: "1D", start: {mon: 6, d: 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados", "he": "יום האוהבים ברזיל"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {era: 1, y: 1948}, inherits: "Valentine’s Day"},
         {inherits: "Feast of St. Anthony of Padua", type: "1D", start: {mon: 6, d: 13}},
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
         {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
@@ -67,7 +67,7 @@
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "National Pizza Day", notes: {"en": "Pizza Day"}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, titles: {"en": "World Rock Day", "he": "יום הרוק העולמי", "es": "Día Mundial del Rock", "pt": "Dia Mundial do Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
         
-        {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/", "he": "https://www.daysoftheyear.co.il/2018/02/3.html"}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, emoji: "🍰"},
+        {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, emoji: "🍰"},
         {type: "1D", start: {mon: 3, d: 21}, titles: {"en": "Pão Francês Day"}},
     ]
 }

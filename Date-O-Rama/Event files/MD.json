@@ -12,7 +12,7 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2016}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/moldova-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/08/27.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/moldova-independence-day/"}},
         {inherits: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Chisinau City Day"}, urls: {"en": "https://nationaltoday.com/chisinau-city-day/"}, emoji: "🏙️"},
         {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/moldova-cahul/cahul-city-day"}, titles: {"en": "Cahul City Day"}, emoji: "🏙️"},

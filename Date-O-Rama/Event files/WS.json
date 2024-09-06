@@ -15,7 +15,7 @@
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Anzac Day", type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/samoan-mothers-day"}, inherits: "Mother’s Day"},
-        {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/samoa-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/06/samoa-independence-day.html"}, first: {era: 1, y: 1962}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/samoa-independence-day/"}, first: {era: 1, y: 1962}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/samoan-fathers-day"}, inherits: "Father’s Day"},
         {type: "1D", start: {mon: 10, d: 9, thruD: 15, wkd: [2]}, titles: {"en": "Lotu a Tamaiti Holiday"} , urls: {"en": "https://nationaltoday.com/lotu-a-tamaiti-holiday/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

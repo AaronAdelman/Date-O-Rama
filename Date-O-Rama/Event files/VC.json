@@ -15,8 +15,8 @@
         {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en": "Vincy Mas (day 1)"}},
         {type: "1D", start: {mon: 7, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en": "Vincy Mas (day 2)"}},
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/emancipation-day"}, inherits: "Emancipation Day"},
-        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 27}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/10/27.html"}},
-        {type: "1D", start: {mon: 10, d: 28, wkd: [2]}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/10/27.html"}, inherits: "Independence Day (in lieu)"},
+        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 27}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}},
+        {type: "1D", start: {mon: 10, d: 28, wkd: [2]}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}, inherits: "Independence Day (in lieu)"},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         

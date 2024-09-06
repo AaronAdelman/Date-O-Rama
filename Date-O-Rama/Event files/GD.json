@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 7}, first: {era: 1, y: 1974}, urls: {"en": "https://www.daysoftheyear.com/days/independence-day-grenada/", "he": "https://www.daysoftheyear.co.il/2019/02/IndependenceDayGrenada.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 7}, first: {era: 1, y: 1974}, urls: {"en": "https://www.daysoftheyear.com/days/independence-day-grenada/"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},

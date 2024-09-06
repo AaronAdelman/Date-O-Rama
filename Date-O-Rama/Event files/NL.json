@@ -12,7 +12,7 @@
         {type: "1D", start: {mon: 4, d: 26, wkd: [7]}, urls: {"en": "https://nationaltoday.com/koningsdag/"}, inherits: "King’s Day", first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 4, d: 27, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/koningsdag/"}, inherits: "King’s Day", first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/national-remembrance-day"}, inherits: "National Remembrance Day"},
-        {inherits: "Liberation Day", type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-netherlands/", "he": "https://www.daysoftheyear.co.il/2017/05/5.html"}, first: {era: 1, y: 1990}},
+        {inherits: "Liberation Day", type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-netherlands/"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/mothers-day"}, inherits: "Mother’s Day"},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},

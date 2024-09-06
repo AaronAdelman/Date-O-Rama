@@ -14,7 +14,7 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/ukraine/mothers-day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/ukraine-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/ukraine/day-of-ukrainian-statehood"}, titles: {"en": "Day of Ukrainian Statehood", "uk": "День Української Державності"}, inherits: "Baptism Day of Kyivan Rus", first: {era: 1, y: 2023}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/ukraine-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/08/ukreaine-independenceday.html"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/ukraine-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Defenders of Ukraine Day", "uk": "День захисників і захисниць України"}, notes: {"en": "Day of the Defender"}, urls: {"en": "https://nationaltoday.com/day-of-the-defender/"}, first: {era: 1, y: 2022}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
@@ -77,7 +77,7 @@
         {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {inherits: "Dormition of the Mother of God", "type": "1D", "start": {"mon": 8, "d": 15}},
         {inherits: "Nut Feast of the Savior", "type": "1D", "start": {"mon": 8, "d": 16}},
-        {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/", "he": "https://www.daysoftheyear.co.il/2019/08/ukraine-flagday.html"}},
+        {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/"}},
         {"titles": {"en": "Day of Remembrance of the Defenders of Ukraine"}, "type": "1D", "start": {"mon": 8, "d": 29}},
         {inherits: "Beheading of St. John the Baptist", "type": "1D", "start": {"mon": 8, "d": 29}},
         {"titles": {"en": "Cincture of the Theotokos"}, "type": "1D", "start": {"mon": 8, "d": 31}},

@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.37},
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "National Day", type: "1D", start: {mon: 2, d: 25}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/national-day-kuwait/", "he": "https://www.daysoftheyear.co.il/2017/02/25.html"}},
+        {inherits: "National Day", type: "1D", start: {mon: 2, d: 25}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/national-day-kuwait/"}},
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/kuwait-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 1991}},
         {inherits: "Public Holiday", type: "1D", start: {mon: 6, d: 6, y: 2023, era: 1}, urls: {"en": "https://www.officeholidays.com/holidays/kuwait/kuwait-election-holiday"}},
 
