@@ -10,6 +10,14 @@
         {inherits: "Labour Day (in lieu)", type: "1D", start: {mon: 4, d: 30, wkd: [1]}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {mon: 5, d: 25}, first: {era: 1, y: 1946}, urls: {"en": "https://nationaltoday.com/jordan-independence-day/"}},
+        {type: "nD", start: {era: 1, y: 2015, mon: 1, d: 7}, end: {era: 1, y: 2015, mon: 1, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2015, mon: 2, d: 19}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2015, mon: 11, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2020, mon: 11, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2021, mon: 2, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2022, mon: 3, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2024, mon: 9, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-public-holiday"}, inherits: "Public Holiday"},
+
         {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 31}, end: {era: 1, y: 2023, mon: 6, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/jordan/jordan-royal-wedding"}, inherits: "Public Holiday"},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
