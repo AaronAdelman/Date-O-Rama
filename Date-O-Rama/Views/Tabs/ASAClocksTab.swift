@@ -118,11 +118,8 @@ struct ASAClocksTab: View {
                     })
                     
                     Spacer()
-                    
-//                    Rectangle().frame(minWidth: 1.0, idealWidth: 1.0, maxWidth: 1.0, maxHeight: 32.0)
-//                        .foregroundColor(.secondary)
-//                    
-//                    Spacer()
+                        .frame(minWidth: 0.0)
+
                     
                     Button(action: {
                         self.usingRealTime = true
