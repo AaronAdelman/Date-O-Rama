@@ -110,15 +110,8 @@ struct ASAClocksTab: View {
                             })
                         }
                     } label: {
-                        Image(systemName: "mappin")
-                            .symbolRenderingMode(.multicolor)
-                        if horizontalSizeClass == .regular {
-                            Text("Locations")
-                        }
-                        Image(systemName: "chevron.down")
-                            .symbolRenderingMode(.multicolor)
+                        ASAMenuTitle(imageSystemName: "mappin", title: "Locations")
                     }
-                    .frame(minWidth: 32.0)
                     .sheet(isPresented: $isShowingNewLocationView, content: {
                         let locationWithClocks = ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
                         ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true)
@@ -126,10 +119,10 @@ struct ASAClocksTab: View {
                     
                     Spacer()
                     
-                    Rectangle().frame(minWidth: 1.0, idealWidth: 1.0, maxWidth: 1.0, maxHeight: 32.0)
-                        .foregroundColor(.secondary)
-                    
-                    Spacer()
+//                    Rectangle().frame(minWidth: 1.0, idealWidth: 1.0, maxWidth: 1.0, maxHeight: 32.0)
+//                        .foregroundColor(.secondary)
+//                    
+//                    Spacer()
                     
                     Button(action: {
                         self.usingRealTime = true
@@ -169,8 +162,7 @@ struct ASAClocksTab: View {
                                     } // HStack
                                 } // ForEach
                             } label: {
-                                Image(systemName: "calendar")
-                                    .symbolRenderingMode(.multicolor)
+                                ASAMenuTitle(imageSystemName: "calendar")
                             }
                         }
                     } // HStack
@@ -199,6 +191,36 @@ struct ASAClocksTab: View {
         }
     } // var body
 } // struct ASAClocksTab
+
+
+// MARK:  -
+
+struct ASAMenuTitle: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
+    var imageSystemName: String
+    var title: String?
+
+    var body: some View {
+        ZStack {
+            let cornerDimension = 6.0
+            RoundedRectangle(cornerSize: CGSize(width: cornerDimension, height: cornerDimension))
+                .foregroundStyle(Color(UIColor.tertiarySystemFill))
+                .frame(height: 36.0)
+            
+            HStack {
+                Image(systemName: imageSystemName)
+                    .foregroundStyle(Color.white)
+
+                if horizontalSizeClass == .regular && title != nil {
+                    Text(NSLocalizedString(title!, comment: ""))
+                        .foregroundStyle(Color.white)
+                }
+            } // HStack
+        } // ZStack
+        .frame(minWidth: 32.0)
+    }
+}
 
 
 // MARK:  -
