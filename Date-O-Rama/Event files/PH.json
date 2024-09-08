@@ -273,5 +273,7 @@
         
         { type: "1M", start: { mon: 5 }, titles: { en: "Flores de Mayo" } },
         { type: "1M", start: { mon: 8 }, titles: { en: "Buwan ng Wika" }, notes: {"en": "Language Month"} },
+        
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1987}},
     ]
 }

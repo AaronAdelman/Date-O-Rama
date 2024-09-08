@@ -86,5 +86,7 @@
         {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/falles/"}, titles: {"en": "Falles"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/jenkins-ear-day/"}, titles: {"en": "Jenkins Ear Day"}},
         {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/la-tomatina/"}, titles: {"en": "La Tomatina", "he": "טומטינה", "es": "La Tomatina"}, emoji: "🍅", first: {era: 1, y: 1945}},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 7, d: 26}},
+
     ]
 }

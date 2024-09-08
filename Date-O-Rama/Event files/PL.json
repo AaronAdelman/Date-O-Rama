@@ -120,5 +120,7 @@
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -52}, urls: {"en": "https://nationaltoday.com/paczki-day/"}, titles: {"en": "Paczki Day"}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "1D", start: {mon: 1, d: 21}, inherits: "Grandmothers’ Day", first: {era: 1, y: 1964}},
+        {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Grandfathers’ Day", "pl": "Dzień Dziadka"}},
    ]
 }

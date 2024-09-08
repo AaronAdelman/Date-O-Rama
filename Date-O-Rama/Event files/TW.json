@@ -38,6 +38,7 @@
         {type: "1D", start: {mon: 8, d: 14}, inherits: "Air Force Day"},
         {type: "1D", start: {mon: 9, d: 2}, inherits: "Navy Day"},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 4}, first: {era: 1, y: 2010}},
 
   ]
 }

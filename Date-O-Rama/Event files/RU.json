@@ -98,5 +98,6 @@
         {type: "1D", start: {mon: 7, d: 28}, inherits: "Baptism Day of Kyivan Rus"},
         {type: "1D", start: {mon: 8, d: 14}, inherits: "Honey Feast of the Savior"},
         {type: "1D", start: {mon: 8, d: 29}, inherits: "Nut Feast of the Savior", emoji: "🌰"},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, d: 28}},
    ]
 }
