@@ -23,5 +23,7 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 4}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, first: {era: 1, y: 1945}},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1990}},
+
     ]
 }

@@ -30,5 +30,6 @@
         {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://beaujolaisnouveauday.com/"}, titles: {"en": "Beaujolais Nouveau Day"}, first: {era: 1, y: 1985}, emoji: "🍷"},
+        {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}, inherits: "Grandmothers’ Day", first: {era: 1, y: 1987}},
     ]
 }

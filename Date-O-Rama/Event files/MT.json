@@ -118,5 +118,7 @@
         {inherits: "Holy Innocents Day", type: "1D", start: {mon: 12, d: 28}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
 
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 4}, inherits: "World Day for Grandparents and the Elderly", first: {era: 1, y: 2021}},
     ]
 }

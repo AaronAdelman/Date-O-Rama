@@ -101,6 +101,7 @@
         {type: "nD", start: {mon: 6, d: 5, thruD: 11, wkd: [2], durationD: 7}, titles: {"en": "National Business Etiquette Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-business-etiquette-week/"}, emoji: "🕴️", first: {era: 1, y: 2000}},
         {type: "1W", start: {mon: 7, fullWeek: 1}, titles: {"en": "National NAIDOC Week"}, urls: {"en": "https://www.naidoc.org.au/about/naidoc-week"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 2}, urls: {"en": "http://www.ruok.org.au/r-u-ok-day"}, titles: {"en": "R U OK?Day"}, first: {era: 1, y: 2009}},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: -1}},
 
    ]
 }
