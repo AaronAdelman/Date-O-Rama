@@ -57,7 +57,7 @@
         {type: "1D", start: {mon: 4, d: 25}, inherits: "East Meets West Day", first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 6, d: 26}, inherits: "National Rat Catcher’s Day"},
         {type: "1D", start: {mon: 7, d: 22}, inherits: "National Rat Catcher’s Day"},
-        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/german-language-day/"}, titles: {"en": "German Language Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/german-language-day/"}, titles: {"en": "German Language Day", "de": "Tag der deutschen Sprache"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 19}, titles: {"en": "National Soup Day"}},
     ]
 }

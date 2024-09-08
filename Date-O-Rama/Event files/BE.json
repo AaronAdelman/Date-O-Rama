@@ -30,7 +30,7 @@
         {inherits: "Veterans Day", type: "1D", start: {mon: 4, d: 7}},
         {type: "1D", start: {mon: 5, d: 8}, titles: {"en": "Iris Festival", "nl": "Irisfeest", "fr": "Fête de l’Iris", "de": "Iris-Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/iris-day/"}, notes: {"en": "Iris Day"}},
         {titles: {"en": "Day of the Flemish Community", "nl": "Feest van de Vlaamse Gemeenschap", "fr": "Fête de la Communauté flamande", "de": "Feiertag der Flämischen Gemeinschaft"}, type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/day-flemish-community/"}, first: {era: 1, y: 1973}, notes: {"en": "Celebration of the Golden Spurs"}},
-        {titles: {"en": "Day of the Walloon Region", "nl": "Feest van het Waalse Gewest", "fr": "Fête de la Région wallonne", "de": "Festtag der Wallonischen Region"}, type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Day_of_the_Walloon_Region"}},
+        {titles: {"en": "Day of Wallonia", "nl": "Feest van het Waalse Gewest", "fr": "Fête de la Région wallonne", "de": "Festtag der Wallonischen Region"}, type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-wallonia/"}, notes: {"en": "Day of the Walloon Region"}, first: {era: 1, y: 1923}},
         {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
         {titles: {"en": "King’s Feast", "nl": "Koningsdag", "fr": "Fête du Roi", "de": "Festtag des Königs"}, type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://en.wikipedia.org/wiki/King%27s_Feast"}, first: {era: 1, y: 1866}, emoji: "🤴"},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},

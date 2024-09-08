@@ -66,6 +66,7 @@
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://www.colourblindawareness.org/about-us/campaigns/colour-blind-awareness-day/"}, notes: {"en": "National Color Blind Awareness Day"}, titles: {"en": "Colour Blind Awareness Day"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*", emoji: "🦋"},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/superhuman-day/"}, titles: {"en": "Superhuman Day"}, first: {era: 1, y: 2016}},
         {type: "1D", titles: {"en": "Emergency Services Day"}, start: {mon: 9, d: 9}, urls: {"en": "https://www.999day.org.uk/"}, first: {era: 1, y: 2016}, notes: {"en": "999 Day"}},
+        {type: "1D", start: {mon: 9, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/quiet-day/"}, titles: {"en": "National Quiet Day"}, emoji: "🤫"},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Everyone Writes Day"}, urls: {"en": "https://nationaltoday.com/everyone-writes-day/"}, emoji: "✍️"},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/calan-gaeaf/"}, titles: {"en": "Calan Gaeaf"}},
         {type: "1D", start: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", first: {era: 1, y: 1604}},

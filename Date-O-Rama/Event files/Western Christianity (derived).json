@@ -124,6 +124,6 @@
         {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/national-call-a-friend-day/"}, titles: {"en": "National Call a Friend Day"}, emoji: "📱"},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/festival-of-enormous-changes-at-the-last-minute/"}, titles: {"en": "Festival of Enormous Changes at the Last Minute"}, emoji: "⚘"},
         {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
-
+        {type: "1D", start: {mon: 9, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cross-bun-day/"}, titles: {"en": "National Hot Cross Bun Day"}},
     ]
 }
