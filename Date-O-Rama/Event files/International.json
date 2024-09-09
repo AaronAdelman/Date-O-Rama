@@ -2054,6 +2054,7 @@
         {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://en.wikipedia.org/wiki/World_Vegetarian_Day"}, titles: {"en": "Hug a Non-Meat Eater Day"}, emoji: "🥕"},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, urls: {"en": "https://en.wikipedia.org/wiki/International_Vegetarian_Week"}, titles: {"en": "International Vegetarian Week"}, notes: {"en": "IVW"}, emoji: "🥕", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 11, d: 25}, inherits: "World Vegetarian Day", titles: {"en": "International Vegetarian Day"}, notes: {"en": "SAK Meatless Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://en.wikipedia.org/wiki/World_Vegetarian_Day"}},
+        {type: "nD", start: {mon: 2, d: 14, thruD: 20, wkd: [7], durationD: 9}, titles: {"en": "Real Bread Week"}, urls: {"en": "https://www.sustainweb.org/realbread/national_real_breadmaker_week/"}, emoji: "🍞🥖🫓", first: {era: 1, y: 2021}},
 
 
     ]

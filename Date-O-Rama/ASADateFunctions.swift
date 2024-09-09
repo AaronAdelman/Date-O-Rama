@@ -199,7 +199,6 @@ func dayForDayThroughDayWeekday(components: ASADateComponents, daysPerWeek: Int,
     let newComponents = ASADateComponents(calendar: components.calendar, locationData: components.locationData, era: era, year: year, month: month, day: 1, hour: 12, minute: 0, second: 0, nanosecond: 0)
     let noonOfFirstDayOfMonth = newComponents.date!
     let weekdayOfFirstDayOfMonth = components.calendar.dateComponents([.weekday], from: noonOfFirstDayOfMonth, locationData: components.locationData).weekday!
-//        let weekdayOfFirstDayOfMonth = weekdayOfFirstDayOfMonth(day: components.day ?? 0, weekday: components.weekday ?? 0, daysPerWeek: daysPerWeek)
     let day = dayInRunWithWeekday(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, runStart: descriptionDay, runEnd: descriptionThroughDay, targetWeekday: descriptionWeekday, daysPerWeek: daysPerWeek)
     return day
 }
