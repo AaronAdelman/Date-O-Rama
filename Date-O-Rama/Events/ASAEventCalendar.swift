@@ -567,14 +567,7 @@ class ASAEventCalendar {
         return day
     }
     
-    private func dayForDayThroughDayWeekday(components: ASADateComponents, daysPerWeek: Int, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekDay: Int) -> Int? {
-        let weekdayOfFirstDayOfMonth = weekdayOfFirstDayOfMonth(day: components.day ?? 0, weekday: components.weekday ?? 0, daysPerWeek: daysPerWeek)
-        let day = dayInRunWithWeekday(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, runStart: descriptionDay, runEnd: descriptionThroughDay, targetWeekday: descriptionWeekDay, daysPerWeek: daysPerWeek)
-        return day
-    }
-    
     func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) {
-        // TODO: This function will require modification to allow multi-day events with floating starts and ends which cross month boundaries.
         let calendar                   = components.calendar
 //        let locationData               = components.locationData
                 
@@ -591,7 +584,7 @@ class ASAEventCalendar {
         
         // Elimination based on month
         let startMonth        = startDateSpecification.month ?? -1
-//        let startThroughMonth = startDateSpecification.throughMonth
+        let startThroughMonth = startDateSpecification.throughMonth
         
         let endMonth          = endDateSpecification?.month
         let endThroughMonth   = endDateSpecification?.throughMonth
@@ -607,15 +600,11 @@ class ASAEventCalendar {
 
         guard let startDay            = startDateSpecification.day else { return NO_MATCH }
         let startThroughDay     = startDateSpecification.throughDay
-//        let startFullWeek       = startDateSpecification.fullWeek
-//        let startFirstDayOfWeek = (startDateSpecification.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue
-        let startWeekDay        = startDateSpecification.weekdays?[0].rawValue
+        let startWeekday        = startDateSpecification.weekdays?[0].rawValue
         
         let endDay            = (endDateSpecification?.day) ?? startDay
         let endThroughDay     = endDateSpecification?.throughDay
-//        let endFullWeek       = endDateSpecification?.fullWeek
-//        let endFirstDayOfWeek = (endDateSpecification?.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue
-        let endWeekDay        = endDateSpecification?.weekdays?[0].rawValue
+        let endWeekday        = endDateSpecification?.weekdays?[0].rawValue
         
         lazy var daysPerWeek = {
             if calendar is ASACalendarSupportingWeeks {
@@ -625,30 +614,32 @@ class ASAEventCalendar {
             return 1
         }()
         
-//        if startFullWeek != nil {
-//            assert(startWeekDay != nil)
-//            let day = dayForFullWeek(calendar: calendar, locationData: locationData, dateEYMD: dateEYMD, descriptionMonth: startMonth, descriptionWeekDay: startWeekDay, descriptionFullWeek: startFullWeek, components: components, daysPerWeek: daysPerWeek, descriptionFirstDayOfWeek: startFirstDayOfWeek)
-//            startDateEYMD[3] = day
-//        } else 
+        if startDateEYMD[0] == nil {
+            startDateEYMD[0] = components.era
+        }
+        if startDateEYMD[1] == nil {
+            startDateEYMD[1] = components.year
+        }
+        if endDateEYMD[0] == nil {
+            endDateEYMD[0] = components.era
+        }
+        if endDateEYMD[1] == nil {
+            endDateEYMD[1] = components.year
+        }
+        
         if startThroughDay != nil {
-            assert(startWeekDay != nil)
-            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, descriptionDay: startDay, descriptionThroughDay: startThroughDay!, descriptionWeekDay: startWeekDay!)
+            assert(startWeekday != nil)
+            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: startDateEYMD[0], year: startDateEYMD[1], month: startDateEYMD[2], descriptionDay: startDay, descriptionThroughDay: startThroughDay!, descriptionWeekday: startWeekday!)
             guard day != nil else { return NO_MATCH  }
             startDateEYMD[3] = day
         }
-        
-//        if endFullWeek != nil {
-//            assert(endWeekDay != nil)
-//            let day = dayForFullWeek(calendar: calendar, locationData: locationData, dateEYMD: dateEYMD, descriptionMonth: endMonth ?? 0, descriptionWeekDay: endWeekDay, descriptionFullWeek: endFullWeek, components: components, daysPerWeek: daysPerWeek, descriptionFirstDayOfWeek: endFirstDayOfWeek)
-//            endDateEYMD[3] = day
-//        } else
-        
+                
         let durationDays = startDateSpecification.durationDays
         if durationDays != nil {
             endDateEYMD[3] = startDateEYMD[3]! + durationDays! - 1
         } else if endThroughDay != nil {
-            assert(endWeekDay != nil)
-            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, descriptionDay: endDay, descriptionThroughDay: endThroughDay!, descriptionWeekDay: endWeekDay!)
+            assert(endWeekday != nil)
+            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: endDateEYMD[0], year: endDateEYMD[1], month: endDateEYMD[2], descriptionDay: endDay, descriptionThroughDay: endThroughDay!, descriptionWeekday: endWeekday!)
             guard day != nil else { return NO_MATCH  }
             endDateEYMD[3] = day
         }

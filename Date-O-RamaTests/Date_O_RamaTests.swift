@@ -1468,4 +1468,16 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: 1, monthLength: 30, targetWeekday: 10, recurrence: 3, daysPerWeek: 10) == 30)
         XCTAssert(nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: 1, monthLength: 30, targetWeekday: 1, recurrence: 4, daysPerWeek: 10) == nil)
     } // func testNthWeekdayRecurrence() throws
+    
+    func testDayForDayThroughDayWeekday() throws {
+        let CE = 1
+        let gregorianCalendar: any ASACalendar = ASACalendarFactory.calendar(code: .Gregorian)!
+        let daysPerWeek = (gregorianCalendar as! ASACalendarSupportingWeeks).daysPerWeek
+        let components = ASADateComponents(calendar: gregorianCalendar, locationData: ASALocation.NullIsland, era: CE, year: 2024, month: 1, day: 27, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let day0 = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: 1, year: 2024, month: 1, descriptionDay: 25, descriptionThroughDay: 31, descriptionWeekday: 7)
+        assert(day0 == 27)
+        let day1 = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: 1, year: 2024, month: 2, descriptionDay: 1, descriptionThroughDay: 7, descriptionWeekday: 7)
+        assert(day1 == 3)
+
+    } // func testWeekdayOfFirstDayOfMonth() throws
 } // class Date_O_RamaTests
