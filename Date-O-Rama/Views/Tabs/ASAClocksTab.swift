@@ -81,7 +81,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
-                                Image(systemName: "arrow.left")
+                                Image(systemName: "arrow.right")
                                 Text("Sort locations west to east")
                             })
                             
@@ -89,7 +89,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
-                                Image(systemName: "arrow.right")
+                                Image(systemName: "arrow.left")
                                 Text("Sort locations east to west")
                             })
                             
