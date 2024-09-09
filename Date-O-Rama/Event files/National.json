@@ -1539,7 +1539,7 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/from-africa-to-virginia-month/"}, titles: {"en": "From Africa to Virginia Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/great-american-pie-month/"}, titles: {"en": "Great American Pie Month"}, first: {era: 1, y: 1990}, emoji: "🥧"},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/operation-iraqi-freedom-day/"}, titles: {"en": "Operation Iraqi Freedom Day"}, first: {era: 1, y: 2003}},
-        {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://nationaltoday.com/great-american-meat-out-day/"}, titles: {"en": "Great American Meat Out Day"}, first: {era: 1, y: 1985}},
+        {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://nationaltoday.com/great-american-meat-out-day/"}, titles: {"en": "Great American Meat Out Day"}, first: {era: 1, y: 1985}, notes: {"en": "Great American Meatout"}},
         {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/snowman-burning-day/"}, titles: {"en": "Snowman Burning Day"}, first: {era: 1, y: 1971}, notes: {"en": "National Snowman Burning Day"}, emoji: "⛄️"},
         {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/carver-day/"}, titles: {"en": "Carver Day"}, first: {era: 1, y: 1943}},
         {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/war-on-poverty-day/"}, titles: {"en": "War on Poverty Day"}, first: {era: 1, y: 1964}},
@@ -2451,6 +2451,7 @@
         {type: "1W", start: {mon: 9, fullWeek: 2, firstDOfWk: 2}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-biscuits-and-gravy-week-second-week-in-september"}, titles: {"en": "National Biscuit and Gravy Week"}},
         {type: "1W", start: {mon: 9, fullWeek: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-indoor-plant-week/"}, titles: {"en": "National Indoor Plant Week"}, first: {era: 1, y: 2007}, emoji: "🪴"},
         {type: "1W", start: {mon: 9, fullWeek: 3}, urls: {"en": "https://www.daysoftheyear.com/days/child-passenger-safety-awareness-week/"}, titles: {"en": "Child Passenger Safety Awareness Week"}, emoji: "👦👧", notes: {"en": "Child Passenger Safety Week\nCar Seat Safety Week"}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://fruitsandveggies.org/stories/nfvm/"}, titles: {"en": "National Fruits & Veggies Month"}, notes: {"en": "NFVM"}, first: {era: 1, y: 2019}, emoji: "🟢"},
 
     ]
 }
