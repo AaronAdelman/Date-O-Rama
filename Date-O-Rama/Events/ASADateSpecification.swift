@@ -118,7 +118,7 @@ struct ASADateSpecification:  Codable {
         case MoonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
-        case fullWeek            = "fullWeek"
+        case fullWeek            = "fullWk"
         case firstDayOfWeek      = "firstDOfWk"
         case durationDays        = "durationD"
     } // enum CodingKeys

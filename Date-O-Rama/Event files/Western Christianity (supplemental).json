@@ -78,8 +78,8 @@
         {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, titles: {"en": "Paczki Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/paczki-day-day-before-ash-wednesday"}},
         { type: "1M", start: { mon: 9 }, titles: { en: "Gospel Music Heritage Month" } },
         { type: "1M", start: { mon: 11 }, titles: { en: "Black Catholic History Month" } },
-        {type: "1W", start: {mon: 2, fullWeek: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
-        {type: "1W", start: {mon: 5, fullWeek: 2}, titles: {"en": "Christian Aid Week"}, urls: {"en": "https://www.daysoftheyear.com/days/christian-aid-week/"}, first: {era: 1, y: 1957}},
+        {type: "1W", start: {mon: 2, fullWk: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
+        {type: "1W", start: {mon: 5, fullWk: 2}, titles: {"en": "Christian Aid Week"}, urls: {"en": "https://www.daysoftheyear.com/days/christian-aid-week/"}, first: {era: 1, y: 1957}},
         {type: "nD", start: {mon: 6, d: 3, thruD: 9, wkd: [7]}, end: {mon: 6, d: 11, thruD: 17, wkd: [1]}, titles: {"en": "Love Your Burial Ground Week"}, urls: {"en": "https://www.daysoftheyear.com/days/love-your-burial-ground-week/"}, notes: {"en": "Cherishing Churchyards Week"}, first: {era: 1, y: 2013}},
 
     ]
