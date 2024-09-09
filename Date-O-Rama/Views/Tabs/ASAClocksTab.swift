@@ -207,11 +207,11 @@ struct ASAMenuTitle: View {
             
             HStack {
                 Image(systemName: imageSystemName)
-                    .foregroundStyle(Color.white)
+                    .foregroundStyle(Color.primary)
 
                 if horizontalSizeClass == .regular && title != nil {
                     Text(NSLocalizedString(title!, comment: ""))
-                        .foregroundStyle(Color.white)
+                        .foregroundStyle(Color.primary)
                 }
             } // HStack
         } // ZStack

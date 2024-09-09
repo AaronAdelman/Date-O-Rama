@@ -144,31 +144,22 @@ struct ASAMiniCalendarView:  View {
         } // get
     } // var gridLayout
     
-    
-    fileprivate func gridFirstDay() -> Int {
-        if monthIsBlank {
-            return 1
-        }
-        
-        return -(weekdayOfDay1 - 2)
-    }
-    
-    fileprivate func gridRange() -> ClosedRange<Int> {
+    fileprivate func gridRange(gridFirstDay: Int) -> ClosedRange<Int> {
         if monthIsBlank {
             assert(5 <= daysInMonth)
             assert(daysInMonth <= 6)
             return 1...daysInMonth
         }
         
-        var gridFirstDay = gridFirstDay()
-        var gridLastDay = daysInMonth
-        if gridLastDay < gridFirstDay {
-            let temp = gridLastDay
-            gridLastDay = gridFirstDay
-            gridFirstDay = temp
+        var firstDay = gridFirstDay
+        var lastDay = daysInMonth
+        if lastDay < firstDay {
+            let temp = lastDay
+            lastDay = firstDay
+            firstDay = temp
         }
         
-        return gridFirstDay...gridLastDay
+        return firstDay...lastDay
     } // func gridRange() -> ClosedRange<Int>
     
     var characterDirection:  Locale.LanguageDirection {
@@ -176,10 +167,18 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
     
     var body: some View {
-        let gridFirstDay = gridFirstDay()
+        let gridFirstDay = {
+            if monthIsBlank {
+                return 1
+            }
+            
+            return -(weekdayOfDay1 - 2)
+        }()
+        
+        let gridRange = self.gridRange(gridFirstDay: gridFirstDay)
         
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
-            let weekdayCellRange = monthIsBlank ? self.gridRange() : 0...(processedWeekdaySymbols.count - 1)
+            let weekdayCellRange = monthIsBlank ? gridRange : 0...(processedWeekdaySymbols.count - 1)
                 ForEach(weekdayCellRange, id: \.self) {
                     index
                     in
@@ -189,7 +188,7 @@ struct ASAMiniCalendarView:  View {
                                     isWeekend)
                 }
         
-            ForEach(self.gridRange(), id: \.self) {
+            ForEach(gridRange, id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
                     if monthIsBlank {
                         return true
