@@ -884,7 +884,7 @@ class ASAEventCalendar {
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfYear != nil {
-            let numberOfDaysInYear = calendar.maximumValue(of: .day, in: .year, for: date)!
+            let numberOfDaysInYear = calendar.daysInYear(for: date)!
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
             if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
                 return false

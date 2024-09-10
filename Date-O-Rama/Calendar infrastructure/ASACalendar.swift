@@ -88,7 +88,7 @@ extension ASACalendar {
     var supportsTimeFormats: Bool {
         return self.supportedTimeFormats.count > 1
     }
-
+    
     func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for date: Date) -> Int? {
         let range = self.range(of: smallComponent, in: largeComponent, for: date)
         let result = range?.count
@@ -97,5 +97,13 @@ extension ASACalendar {
     
     func daysInMonth(for date: Date) -> Int? {
         return self.maximumValue(of: .day, in: .month, for: date)
-    }
+    } // func daysInMonth(for date: Date) -> Int?
+    
+    func monthsInYear(for date: Date) -> Int? {
+        return self.maximumValue(of: .month, in: .year, for: date)
+    } // func monthsInYear(for date: Date) -> Int?
+    
+    func daysInYear(for date: Date) -> Int? {
+        return self.maximumValue(of: .day, in: .year, for: date)
+    } // func daysInYear(for date: Date) -> Int?
 } // extension ASACalendar
