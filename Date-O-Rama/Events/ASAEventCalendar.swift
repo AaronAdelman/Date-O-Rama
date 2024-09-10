@@ -851,6 +851,13 @@ class ASAEventCalendar {
             
         case .multiDay:
             // Multi-day events
+            
+            // ⬇️ Use to debug multi-day events
+            // As of this writing, weeks longer than one week are not shown by default.  In some cases, that is the problem.
+//            if eventSpecification.titles?["en"] == "March Madness" {
+//                debugPrint("Foo")
+//            }
+            
             let matchesMultiDay: (matches: Bool, startDate: Date?, endDate: Date?) = matchMultiDay(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification, calendar: calendar, date: date, locationData: locationData, type: type)
             return matchesMultiDay
             

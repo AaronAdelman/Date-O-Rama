@@ -2057,6 +2057,5 @@
         {type: "nD", start: {mon: 2, d: 14, thruD: 20, wkd: [7], durationD: 9}, titles: {"en": "Real Bread Week"}, urls: {"en": "https://www.sustainweb.org/realbread/national_real_breadmaker_week/"}, emoji: "🍞🥖🫓", first: {era: 1, y: 2021}},
         {type: "nD", start: {mon: 3, d: 2, thruD: 8, wkd: [1], durationD: 7}, titles: {"en": "No More Week"}, urls: {"en": "https://www.daysoftheyear.com/days/no-more-week/"}, emoji: "⊚", first: {era: 1, y: 2013}},
 
-
     ]
 }
