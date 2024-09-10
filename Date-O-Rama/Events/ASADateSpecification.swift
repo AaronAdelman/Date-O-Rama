@@ -203,7 +203,7 @@ extension ASADateSpecification {
                 let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
                 let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
                 let tempDate = (calendar.date(dateComponents: tempComponents))!
-                let numberOfDaysInLastMonth = calendar.maximumValue(of: .day, in: .month, for: tempDate)!
+                let numberOfDaysInLastMonth = calendar.daysInMonth(for: tempDate)!
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
             } else {
@@ -221,7 +221,7 @@ extension ASADateSpecification {
             if isEndDate {
                 let dateComponentsForFirstDayOfMonth = ASADateComponents(calendar: calendar, locationData: dateComponents.locationData, era: self.era, year: self.year, yearForWeekOfYear: nil, quarter: nil, month: self.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
                 let dateOfFirstDayOfMonth = calendar.date(dateComponents: dateComponentsForFirstDayOfMonth)
-                let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: dateOfFirstDayOfMonth!)!
+                let numberOfDaysInMonth = calendar.daysInMonth(for: dateOfFirstDayOfMonth!)!
                 revisedDateComponents.day   = numberOfDaysInMonth
             } else {
                 revisedDateComponents.day   =  1
