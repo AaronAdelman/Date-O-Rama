@@ -195,10 +195,27 @@ func nthWeekdayRecurrence(weekdayOfFirstDayOfMonth: Int, monthLength: Int, targe
 
 // MARK: -
 
-func dayForDayThroughDayWeekday(components: ASADateComponents, daysPerWeek: Int, era: Int?, year: Int?, month: Int?, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekday: Int) -> Int? {
-    let newComponents = ASADateComponents(calendar: components.calendar, locationData: components.locationData, era: era, year: year, month: month, day: 1, hour: 12, minute: 0, second: 0, nanosecond: 0)
-    let noonOfFirstDayOfMonth = newComponents.date!
-    let weekdayOfFirstDayOfMonth = components.calendar.dateComponents([.weekday], from: noonOfFirstDayOfMonth, locationData: components.locationData).weekday!
+fileprivate func delegatedRangedMonthAndDayForWeekday(_ components: ASADateComponents, era: Int?, year: Int?, month: Int, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekday: Int, daysPerWeek: Int) -> (month: Int?, day: Int?) {
+    let newComponents = ASADateComponents(calendar: components.calendar, locationData: components.locationData, era: era, year: year, month: month, day: 1, hour: 0, minute: 0, second: 0, nanosecond: 0)
+    let startOfFirstDayOfMonth = newComponents.date!
+    let weekdayOfFirstDayOfMonth = components.calendar.dateComponents([.weekday], from: startOfFirstDayOfMonth, locationData: components.locationData).weekday!
+    let month = month
     let day = dayInRunWithWeekday(weekdayOfFirstDayOfMonth: weekdayOfFirstDayOfMonth, runStart: descriptionDay, runEnd: descriptionThroughDay, targetWeekday: descriptionWeekday, daysPerWeek: daysPerWeek)
-    return day
-}
+    return (month, day)
+} // func delegatedRangedMonthAndDayForWeekday(_ components: ASADateComponents, era: Int?, year: Int?, month: Int, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekday: Int, daysPerWeek: Int) -> (month: Int?, day: Int?)
+
+func rangedMonthAndDayForWeekday(components: ASADateComponents, daysPerWeek: Int, era: Int?, year: Int?, descriptionMonth: Int, descriptionThroughMonth: Int?, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekday: Int) -> (month: Int?, day: Int?) {
+    if descriptionThroughMonth == nil {
+        return delegatedRangedMonthAndDayForWeekday(components, era: era, year: year, month: descriptionMonth, descriptionDay: descriptionDay, descriptionThroughDay: descriptionThroughDay, descriptionWeekday: descriptionWeekday, daysPerWeek: daysPerWeek)
+    } else {
+        // We need to split this up into two checks:  one for the first month and one for the last month.
+        let lastDayInFirstMonth = (components.calendar.daysInMonth(locationData: components.locationData, era: era!, year: year!, month: descriptionMonth))!
+        let (firstMonth, firstDay) = delegatedRangedMonthAndDayForWeekday(components, era: era, year: year, month: descriptionMonth, descriptionDay: descriptionDay, descriptionThroughDay: lastDayInFirstMonth, descriptionWeekday: descriptionWeekday, daysPerWeek: daysPerWeek)
+        if firstMonth != nil && firstDay != nil {
+            return (firstMonth, firstDay)
+        }
+        
+        let (lastMonth, lastDay) = delegatedRangedMonthAndDayForWeekday(components, era: era, year: year, month: descriptionThroughMonth!, descriptionDay: 1, descriptionThroughDay: descriptionThroughDay, descriptionWeekday: descriptionWeekday, daysPerWeek: daysPerWeek)
+        return (lastMonth, lastDay)
+    }
+} // func rangedMonthAndDayForWeekday(components: ASADateComponents, daysPerWeek: Int, era: Int?, year: Int?, descriptionMonth: Int, descriptionThroughMonth: Int?, descriptionDay: Int, descriptionThroughDay: Int, descriptionWeekday: Int) -> (month: Int?, day: Int?)

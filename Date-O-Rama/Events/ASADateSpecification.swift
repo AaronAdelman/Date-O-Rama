@@ -200,10 +200,11 @@ extension ASADateSpecification {
         switch type {
         case .oneYear, .multiYear:
             if isEndDate {
-                let numberOfMonthsInYear = calendar.monthsInYear(for: baseDate)!
-                let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
-                let tempDate = (calendar.date(dateComponents: tempComponents))!
-                let numberOfDaysInLastMonth = calendar.daysInMonth(for: tempDate)!
+                let numberOfMonthsInYear = calendar.lastMonthOfYear(for: baseDate)!
+//                let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
+//                let tempDate = (calendar.date(dateComponents: tempComponents))!
+//                let numberOfDaysInLastMonth = calendar.daysInMonth(for: tempDate)!
+                let numberOfDaysInLastMonth = calendar.daysInMonth(locationData: revisedDateComponents.locationData, era: revisedDateComponents.era!, year: revisedDateComponents.year!, month: numberOfMonthsInYear)
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
             } else {

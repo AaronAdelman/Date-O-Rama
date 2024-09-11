@@ -95,15 +95,27 @@ extension ASACalendar {
         return result
     } // func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for now: Date) -> Int?
     
+    // MARK: -
+    
     func daysInMonth(for date: Date) -> Int? {
         return self.maximumValue(of: .day, in: .month, for: date)
     } // func daysInMonth(for date: Date) -> Int?
     
-    func monthsInYear(for date: Date) -> Int? {
+    /// Not necessarily the same thing as the number of months in the year.
+    func lastMonthOfYear(for date: Date) -> Int? {
         return self.maximumValue(of: .month, in: .year, for: date)
-    } // func monthsInYear(for date: Date) -> Int?
+    } // func lastMonthOfYear(for date: Date) -> Int?
     
     func daysInYear(for date: Date) -> Int? {
         return self.maximumValue(of: .day, in: .year, for: date)
     } // func daysInYear(for date: Date) -> Int?
+    
+    // MARK: -
+    
+    func daysInMonth(locationData: ASALocation, era: Int, year: Int, month: Int) -> Int? {
+        let tempComponents = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: month, day: 1)
+        let tempDate = (self.date(dateComponents: tempComponents))!
+        let numberOfDaysInMonth = self.daysInMonth(for: tempDate)
+        return numberOfDaysInMonth
+    } // func daysInMonth(calendar: ASACalendar, locationData: ASALocation, era: Int, year: Int, month: Int) -> Int?
 } // extension ASACalendar

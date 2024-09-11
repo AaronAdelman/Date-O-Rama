@@ -568,8 +568,8 @@ class ASAEventCalendar {
     }
     
     func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) {
-        let calendar                   = components.calendar
-//        let locationData               = components.locationData
+        let calendar = components.calendar
+//        let locationData = components.locationData
                 
         let NO_MATCH: (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) = (false, nil, nil)
         
@@ -598,7 +598,7 @@ class ASAEventCalendar {
         var startDateEYMD: Array<Int?> = startDateSpecification.EYMD
         var endDateEYMD: Array<Int?>   = endDateSpecification?.EYMD ?? startDateEYMD
 
-        guard let startDay            = startDateSpecification.day else { return NO_MATCH }
+        guard let startDay   = startDateSpecification.day else { return NO_MATCH }
         let startThroughDay     = startDateSpecification.throughDay
         let startWeekday        = startDateSpecification.weekdays?[0].rawValue
         
@@ -629,8 +629,9 @@ class ASAEventCalendar {
         
         if startThroughDay != nil {
             assert(startWeekday != nil)
-            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: startDateEYMD[0], year: startDateEYMD[1], month: startDateEYMD[2], descriptionDay: startDay, descriptionThroughDay: startThroughDay!, descriptionWeekday: startWeekday!)
+            let (month, day) = rangedMonthAndDayForWeekday(components: components, daysPerWeek: daysPerWeek, era: startDateEYMD[0], year: startDateEYMD[1], descriptionMonth: startMonth, descriptionThroughMonth: startThroughMonth, descriptionDay: startDay, descriptionThroughDay: startThroughDay!, descriptionWeekday: startWeekday!)
             guard day != nil else { return NO_MATCH  }
+            startDateEYMD[2] = month
             startDateEYMD[3] = day
         }
                 
@@ -639,8 +640,10 @@ class ASAEventCalendar {
             endDateEYMD[3] = startDateEYMD[3]! + durationDays! - 1
         } else if endThroughDay != nil {
             assert(endWeekday != nil)
-            let day = dayForDayThroughDayWeekday(components: components, daysPerWeek: daysPerWeek, era: endDateEYMD[0], year: endDateEYMD[1], month: endDateEYMD[2], descriptionDay: endDay, descriptionThroughDay: endThroughDay!, descriptionWeekday: endWeekday!)
+            assert(endMonth != nil)
+            let (month, day) = rangedMonthAndDayForWeekday(components: components, daysPerWeek: daysPerWeek, era: endDateEYMD[0], year: endDateEYMD[1], descriptionMonth: endMonth!, descriptionThroughMonth: endThroughMonth, descriptionDay: endDay, descriptionThroughDay: endThroughDay!, descriptionWeekday: endWeekday!)
             guard day != nil else { return NO_MATCH  }
+            endDateEYMD[2] = month
             endDateEYMD[3] = day
         }
 
