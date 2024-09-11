@@ -101,6 +101,7 @@
         {type: "nD", start: {mon: 6, d: 5, thruD: 11, wkd: [2], durationD: 7}, titles: {"en": "National Business Etiquette Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-business-etiquette-week/"}, emoji: "🕴️", first: {era: 1, y: 2000}},
         {type: "1W", start: {mon: 7, fullWk: 1}, titles: {"en": "National NAIDOC Week"}, urls: {"en": "https://www.naidoc.org.au/about/naidoc-week"}, first: {era: 1, y: 1991}},
         {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: -1}},
+        {type: "nD", start: {mon: 8, d: 27, thruMon: 9, thruD: 2, wkd: [1]}, end: {mon: 9, d: 2, thruD: 8, wkd: [7]}, titles: {"en": "Legacy Week"}, urls: {"en": "https://support.legacy.com.au/event/legacyweek"}, emoji: "🔥", first: {era: 1, y: 1940}},
 
    ]
 }

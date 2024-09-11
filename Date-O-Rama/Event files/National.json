@@ -2461,6 +2461,7 @@
         {type: "nD", start: {mon: 2, d: 15, thruD: 21, wkd: [7], yLengths: [365]}, end: {mon: 2, d: 22, thruD: 28, wkd: [7]}, inherits: "National FFA Week"},
         {type: "nD", start: {mon: 2, d: 16, thruD: 22, wkd: [7], yLengths: [366]}, end: {mon: 2, d: 23, thruD: 29, wkd: [7]}, inherits: "National FFA Week"},
         {type: "nD", start: {mon: 4, d: 22, thruD: 28, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [6]}, titles: {"en": "National Youth Violence Prevention Week"}, notes: {"en": "NYVPW"}, urls: {"en": "https://www.daysoftheyear.com/days/national-youth-violence-prevention-week/"}, emoji: "🖐", first: {era: 1, y: 2001}},
+        {type: "nD", start: {mon: 7, d: 31, thruMon: 8, thruD: 6, wkd: [6]}, end: {mon: 8, d: 2, thruD: 8, wkd: [1]}, titles: {"en": "National Twins Day"}, notes: {"en": "Twins Days Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/national-twins-day/"}, emoji: "👧👧", first: {era: 1, y: 1976}},
 
     ]
 }
