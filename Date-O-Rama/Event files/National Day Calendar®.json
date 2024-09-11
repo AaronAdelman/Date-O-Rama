@@ -102,6 +102,7 @@
         {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Bow Day"}, first: {era: 1, y: 2017}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "1D", start: {mon: 8, d: 21}, titles: {"en": "National Brazilian Blowout Day"}, first: {era: 1, y: 2014}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "1D", start: {mon: 8, d: 28}, titles: {"en": "National Power Rangers Day"}, first: {era: 1, y: 2018}, notes: {"en": "This event is meant to celebrate a franchise which deserves to be lampooned on Mystery Science Theater 3000."}},
+        {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "International Legging Day"}, first: {era: 1, y: 2019}, notes: {"en": "This event is meant to promote vanity and fashion."}},
 
         
         

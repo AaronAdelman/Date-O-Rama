@@ -29,7 +29,7 @@
         {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "International Kite Day", "he": "יום העפיפון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-kite-day/"}, emoji: "🪁"},
         {type: "1D", start: {mon: 1, d: 17}, titles: {"en": "1701 Day"}, emoji: "🪐"},
         {type: "1D", start: {mon: 1, d: 17}, titles: {"en": "Cable Car Day", "he": "יום הרכבל"}, urls: {"en": "https://www.daysoftheyear.com/days/cable-car-day/"}, emoji: "🚠"},
-        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/popeye-day/"}, titles: {"en": "Popeye Day", "he": "יום פופאי המלח"}, first: {era: 1, y: 1929}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/popeye-day/"}, titles: {"en": "Popeye Day", "he": "יום פופאי המלח"}, first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 1, d: 19}, titles: {"en": "World Quark Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-quark-day/"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 1, d: 20}, titles: {"en": "International Day of Acceptance"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-acceptance/"}, emoji: "🦽", first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 1, d: 24}, titles: {"en": "Global Belly Laugh Day", "he": "יום הצחוק מהבטן הגלובלי"}, notes: {"en": "Belly Laugh Day"}, urls: {"en": "https://www.daysoftheyear.com/days/belly-laugh-day/"}, emoji: "🤭"},
