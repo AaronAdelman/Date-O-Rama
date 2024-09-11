@@ -71,6 +71,8 @@
         {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Forgiveness Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-forgiveness-day-september-1"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Hotel Employee Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hotel-employee-day-september-1"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 9, d: 4}, titles: {"en": "National Spice Blend Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-spice-blend-day-september-4"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 12}, titles: {"en": "National Just One Human Family Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/just-one-human-family-day-september-12"}, first: {era: 1, y: 2021}, emoji: "👨👩"},
+        {type: "1D", start: {mon: 9, d: 12}, titles: {"en": "National Hug & High 5 Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hug-high-5-day-september-12"}, first: {era: 1, y: 2021}, emoji: "🫂🙌"},
 
         
         {type: "1M", start: {mon: 1}, notes: {"en": "This event is meant to sell jewelry and promote woo."}, titles: {"en": "National Black Diamond Month"}, first: {era: 1, y: 2015}, urls: {"en": "https://skepdic.com/iching.html"}},
