@@ -2515,7 +2515,7 @@
         {type: "1D", start: {mon: 8, d: 27}, titles: {"en": "National Petroleum Day"}, notes: {"en": "This observance reminds us that humanity needs to stop using petroleum as quickly as possible"}},
         {type: "1D", start: {mon: 8, d: 28}, titles: {"en": "National Bow Tie Day"}, notes: {"en": "Another fashion-focused observance.  Move along."}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 8, d: 30}, titles: {"en": "National Holistic Pet Day"}, notes: {"en": "Promotes pseudoscience for pet care."}, urls: {"en": "https://skepdic.com/holistic.html"}},
-        {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Little Black Dress Day"}, notes: {"en": "Another fashion-driven observance."}},
+        {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "National Little Black Dress Day"}, urls: {"en": "https://nationaltoday.com/national-little-black-dress-day/"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 9, d: 15}, titles: {"en": "National Felt Hat Day"}, notes: {"en": "As if we needed another excuse to look ridiculous in old-timey hats."}},
     ]
 }
