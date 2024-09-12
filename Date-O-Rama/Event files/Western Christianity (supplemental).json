@@ -81,6 +81,7 @@
         {type: "1W", start: {mon: 2, fullWk: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
         {type: "1W", start: {mon: 5, fullWk: 2}, titles: {"en": "Christian Aid Week"}, urls: {"en": "https://www.daysoftheyear.com/days/christian-aid-week/"}, first: {era: 1, y: 1957}},
         {type: "nD", start: {mon: 6, d: 3, thruD: 9, wkd: [7]}, end: {mon: 6, d: 11, thruD: 17, wkd: [1]}, titles: {"en": "Love Your Burial Ground Week"}, urls: {"en": "https://www.daysoftheyear.com/days/love-your-burial-ground-week/"}, notes: {"en": "Cherishing Churchyards Week"}, first: {era: 1, y: 2013}},
+        {type: "1M", start: {mon: 11}, titles: {"en": "No Nut November"}, notes: {"en": "Promotes a bizarre obsession with self-control that no one asked for."}},
 
     ]
 }
