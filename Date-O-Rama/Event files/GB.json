@@ -230,6 +230,8 @@
         {type: "nD", start: {mon: 4, d: 24, durationD: 7}, titles: {"en": "Global Intergenerational Week"}, notes: {"en": "Intergenerational Week"}, urls: {"en": "https://generationsworkingtogether.org/global-intergenerational-week"}, first: {era: 1, y: 2023}, emoji: "❖"},
         {type: "nD", start: {mon: 6, d: 27, thruMon: 7, thruD: 3, wkd: [2]}, end: {mon: 7, d: 10, thruD: 16, wkd: [1]}, titles: {"en": "Wimbledon Championships", "he": "אליפות וימבלדון"}, urls: {"en": "https://www.wimbledon.com/"}, emoji: "🎾", first: {era: 1, y: 1877}},
         {type: "1M", start: {mon: 6}, titles: {"en": "Age Without Apology Month"}, notes: {"en": "Looks suspiciously like a campaign to sell skincare products."}, first: {era: 1, y: 2021}},
-
+        {type: "nD", start: {mon: 9, d: 15, thruD: 21, wkd: [2], durationD: 7}, inherits: "Jeans for Genes Day", urls: {"en": "https://www.jeansforgenes.org/"}, first: {era: 1, y: 1992}},
+        {type: "1W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://codingweek.org/"}, titles: {"en": "National Coding Week"}, emoji: "🌎", first: {era: 1, y: 2014}},
+        {type: "1W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.thinkingofyouweek.cards/"}, inherits: "Thinking of You Week", first: {era: 1, y: 2014}},
     ]
 }

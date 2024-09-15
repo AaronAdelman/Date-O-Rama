@@ -105,6 +105,7 @@
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "International Legging Day"}, first: {era: 1, y: 2019}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/popeye-the-sailor-man-day-january-17"}, titles: {"en": "Popeye® the Sailor Man Day", "he": "יום פופאי המלח"}, notes: {"en": "Popeye Day"}, first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-parents-day-off-september-14"}, titles: {"en": "National Parents Day Off"}, first: {era: 1, y: 2021}},
+        {type: "1W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-construction-appreciation-week-third-week-in-september-monday-through-friday"}, titles: {"en": "National Construction Appreciation Week"}, emoji: "🌎", first: {era: 1, y: 2018}},
 
         
         

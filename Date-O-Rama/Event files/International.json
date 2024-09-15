@@ -1652,13 +1652,14 @@
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/world-engineers-day/"}, titles: {"en": "World Engineers Day"}},
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/barber-day/"}, titles: {"en": "World Barber Day"}},
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/batman-day/"}, titles: {"en": "Batman Day"}, first: {era: 1, y: 2014}},
-        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/collect-rocks-day/"}, titles: {"en": "Collect Rocks Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/collect-rocks-day/"}, titles: {"en": "Collect Rocks Day"}, first: {era: 1, y: 2015}, emoji: "🪨"},
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/international-coastal-cleanup-day/"}, titles: {"en": "International Coastal Cleanup Day"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/pet-promise-day/"}, titles: {"en": "Pet Promise Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-eat-an-apple-day/"}, titles: {"en": "International Eat An Apple Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-red-panda-day/"}, titles: {"en": "International Red Panda Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/puppy-mill-awareness-day/"}, titles: {"en": "Puppy Mill Awareness Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/responsible-dog-ownership-day/"}, titles: {"en": "Responsible Dog Ownership Day"}, first: {era: 1, y: 2003}},
-        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/teenager-workout-day/"}, titles: {"en": "Teenager Workout Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/teenager-workout-day/"}, titles: {"en": "Teenager Workout Day"}, first: {era: 1, y: 2018}, notes: {"en": "Youth Fitness Day\nTeen Fitness Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/usher-syndrome-awareness-day/"}, titles: {"en": "Usher Syndrome Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/international-country-music-day/"}, titles: {"en": "International Country Music Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/international-grenache-day/"}, titles: {"en": "International Grenache Day"}, first: {era: 1, y: 2010}},
@@ -2100,5 +2101,6 @@
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "National No Beard Day"}, notes: {"en": "Let’s celebrate the unnecessary removal of facial hair for no particular reason."}},
         {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Chicken Soup for the Soul Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 11, d: 20}, titles: {"en": "Kick a Ginger Day"}, notes: {"en": "Why not celebrate bigoty with a bit of casual violence?"}},
+
     ]
 }

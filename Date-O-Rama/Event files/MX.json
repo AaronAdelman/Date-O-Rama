@@ -15,7 +15,7 @@
         {type: "1D", start: {mon: 5, d: 5}, inherits: "Cinco de Mayo", first: {era: 1, y: 1862}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/mothers-day-mexico/"}, first: {era: 1, y: 1922}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/fathers-day"}, inherits: "Father’s Day"},
-        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/mexican-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 1810}, urls: {"en": "https://www.daysoftheyear.com/days/mexican-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Day of the Pluricultural Nation", "es": "Día de la Raza"}, urls: {"en": "https://nationaltoday.com/mexico-day-of-the-pluricultural-nation/"}, first: {era: 1, y: 2020}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
