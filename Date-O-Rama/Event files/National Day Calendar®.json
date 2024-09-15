@@ -104,6 +104,7 @@
         {type: "1D", start: {mon: 8, d: 28}, titles: {"en": "National Power Rangers Day"}, first: {era: 1, y: 2018}, notes: {"en": "This event is meant to celebrate a franchise which deserves to be lampooned on Mystery Science Theater 3000."}},
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "International Legging Day"}, first: {era: 1, y: 2019}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/popeye-the-sailor-man-day-january-17"}, titles: {"en": "Popeye® the Sailor Man Day", "he": "יום פופאי המלח"}, notes: {"en": "Popeye Day"}, first: {era: 1, y: 2024}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-parents-day-off-september-14"}, titles: {"en": "National Parents Day Off"}, first: {era: 1, y: 2021}},
 
         
         

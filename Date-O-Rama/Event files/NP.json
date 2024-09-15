@@ -20,5 +20,6 @@
         {type: "1D", start: {mon: 6, d: 27}, titles: {"en": "Attwari"}, urls: {"en": "https://nationaltoday.com/attwari/"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
         {inherits: "International Tea Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
-   ]
+        {inherits: "Constitution Day", type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepali-constitution-day"}, first: {era: 1, y: 2016}},
+    ]
 }
