@@ -45,5 +45,6 @@
        {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/day-of-trees/"}, titles: {"en": "Day of Trees"}, inherits: "Arbor Day"},
        {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
        {type: "1D", start: {mon: 6, d: 27}, inherits: "National Coffee Day"},
+       {type: "nD", start: {mon: 9, d: 3}, end: {mon: 10, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/fiesta-de-san-pacho/"}, titles: {"es": "Fiesta de San Pacho"}},
   ]
 }
