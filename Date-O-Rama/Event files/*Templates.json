@@ -613,6 +613,7 @@
         {template: "Student’s Day", type: "1D", start: {mon: 6, d: 11}, titles: {"en": "Student’s Day", "es": "Día del Estudiante"}, emoji: "👨‍🎓👩‍🎓"},
         {template: "Summer Bank Holiday", type: "1D", start: {mon: 8, wkd: [2], nth: 1}, titles: {"en": "Summer Bank Holiday"}, inherits: "Bank Holiday"},
         {template: "Summer Solstice", titles: {"en": "Summer Solstice", "he": "היפוך קיץ"}, type: "pt", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://www.daysoftheyear.com/days/summer-solstice/"}},
+        {template: "Summersgiving", titles: {"en": "Summersgiving"}, type: "1D", start: {equinoxOrSolstice: "Jun", offsetD: 1, wkd: [7]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/summersgiving-saturday-after-the-summer-solstice"}, emoji: "🍹🥧"},
         {template: "Sunrise", titles: {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, emoji: "🌅"},
         {template: "Sunset", titles: {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, emoji: "🌇"},
         {template: "Super Bowl Sunday", type: "1D", start: {mon: 2, wkd: [1], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/super-bowl-sunday/"}, titles: {"en": "Super Bowl Sunday", "he": "יום ראשון של סופרבול"}, first: {era: 1, y: 1967}, emoji: "🏈"},

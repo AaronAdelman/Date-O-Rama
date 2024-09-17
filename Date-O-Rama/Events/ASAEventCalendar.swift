@@ -1076,10 +1076,6 @@ class ASAEventCalendar {
         
         let equinoxOrSolstice = dateSpecification.equinoxOrSolstice
         if equinoxOrSolstice != nil && equinoxOrSolstice! != .none {
-            if offsetDays == 15 {
-                debugPrint("Foo")
-            }
-            
             let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
             if !matchesAndStartAndEndDates.matches {
                 return NO_MATCH
