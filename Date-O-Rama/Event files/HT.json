@@ -30,8 +30,8 @@
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/army-abolition-day/"}, inherits: "Discovery Day", titles: {"en": "Discovery Day", "fr": "Découverte d’Haïti"}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: -1}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: -1}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: -1}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 12}},
         {type: "1D", start: {mon: 9, d: 20}, titles: {"en": "Dessalines’s Birthday"}, notes: {"en": "Dessalines Birthday"}, urls: {"en": "https://www.officeholidays.com/holidays/haiti/dessalines-birthday"}, first: {era: 1, y: 2021}, inherits: "*BDay*"},
     ]

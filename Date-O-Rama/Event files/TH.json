@@ -43,7 +43,7 @@
         {inherits: "Public Holiday", type: "1D", start: {mon: 12, d: 30, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/new-years-eve"}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         
-        {inherits: "National Children’s Day", type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 2}, first: {era: 1, y: 1966}},
+        {inherits: "National Children’s Day", type: "1D", start: {mon: 1, wkd: [7], nth: 2}, first: {era: 1, y: 1966}},
         {inherits: "National Aviation Day", type: "1D", start: {mon: 1, d: 13}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "National Forest Conservation Day", "th": "วันอนุรักษ์ทรัพยากรป่าไม้ของชาติ"}, emoji: "🌲🌳🌴", first: {era: 1, y: 1990}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 1, d: 16}, first: {era: 1, y: 1957}},
@@ -92,7 +92,7 @@
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Nurses’ Day", "th": "วันพยาบาลแห่งชาติ"}, first: {era: 1, y: 1990}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Annual Tree Loving Day", "th": "วันรักต้นไม้ประจำปีของชาติ"}, first: {era: 1, y: 1990}, emoji: "🌴🌲🌳"},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Dental Hygiene Day", "th": "วันทันตสาธารณสุขแห่งชาติ"}, first: {era: 1, y: 1989}, inherits: "*MedAwareness*", emoji: "🦷🪥"},
-        {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 3}, inherits: "World Day of Remembrance for Road Traffic Victims", first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 11, wkd: [1], nth: 3}, inherits: "World Day of Remembrance for Road Traffic Victims", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 11, d: 20}, inherits: "Navy Day", titles: {"en": "Royal Thai Navy Day", "th": "วันกองทัพเรือ"}},
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "King Vajiravudh Memorial Day", "th": "วันสมเด็จพระมหาธีรราชเจ้า"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "Primary Education Day", "th": "วันประถมศึกษาแห่งชาติ"}},

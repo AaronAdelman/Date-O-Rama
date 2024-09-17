@@ -50,7 +50,7 @@
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "Christmas Holiday", type: "nD", start: {era: 1, y: 2023, mon: 12, d: 27}, end: {era: 1, y: 2023, mon: 12, d: 29}},
         
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
        {inherits: "Armed Forces Day", type: "1D", start: {mon: 1, d: 15}, titles: {"en": "Armed Forces Remembrance Day"}},
    ]

@@ -15,13 +15,13 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1834}, notes: {"en": "August Monday"}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/emancipation-day"}},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, notes: {"en": "August Monday"}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/emancipation-day"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 3}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
         {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, titles: {"en": "National Day of Community Service"}, first: {era: 1, y: 1978}, notes: {"en": "Community Service Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
     ]
 }

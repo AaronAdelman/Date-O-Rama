@@ -18,7 +18,7 @@
 
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 1, d: 20}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
     ]

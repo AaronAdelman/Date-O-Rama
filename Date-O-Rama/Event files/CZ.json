@@ -12,7 +12,7 @@
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {inherits: "Feast of Saints Cyril and Methodius", type: "1D", start: {mon: 7, d: 5}},
         {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/jan-hus-day-in-czech-republic/"}},
         {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/czech-republic/day-of-memory"}, titles: {"en": "Day of Memory"}},
@@ -23,7 +23,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Kupala Night", type: "1D", start: {mon: 6, d: 23}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
    ]

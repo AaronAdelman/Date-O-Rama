@@ -25,9 +25,9 @@
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/panama/panama-national-mourning-day"}, titles: {"en": "National Mourning Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {type: "1D", start: {mon: 1, d: 26}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], nth: 3}},
         {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}, emoji: "🏙️"},
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://nationaltoday.com/day-of-the-primer-grito-de-independencia/"}, titles: {"en": "Day of the “Primer Grito de Independencia”"}},
     ]

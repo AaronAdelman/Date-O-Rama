@@ -16,13 +16,13 @@
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/caricom-day"}, inherits: "CARICOM Day"},
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/emancipation-day"}},
-        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/spicemas"}, inherits: "Carnival Monday"},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/emancipation-day"}},
+        {type: "1D", start: {mon: 8, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/spicemas"}, inherits: "Carnival Monday"},
         {type: "1D", start: {mon: 8, wkd: [3], d: 9, thruD: 15}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/spicemas"}, inherits: "Carnival Tuesday"},
         {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, d: 25}, first: {era: 1, y: 1983}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/grenada-thanksgiving"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
 
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
    ]
 }

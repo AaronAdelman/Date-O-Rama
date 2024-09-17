@@ -13,7 +13,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/girmit-day"}, titles: {"en": "Girmit Day"}, first: {era: 1, y: 2023}},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}, titles: {"en": "Ratu Sukuna Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}, titles: {"en": "Ratu Sukuna Day"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/fiji-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 2013}},
         {inherits: "Independence Day", titles: {"en": "Fiji Day", "he": "יום פיג׳י"}, type: "1D", start: {mon: 10, d: 10}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/fiji-day/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
@@ -24,8 +24,8 @@
         {type: "1D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {inherits: "National Youth Day", type: "1D", start: {mon: 5, d: 4}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], nth: 1}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "National Forgiveness Week", first: {era: 1, y: 2004}},
     ]
 }

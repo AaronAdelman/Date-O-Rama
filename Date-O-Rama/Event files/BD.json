@@ -19,8 +19,8 @@
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inherits: "Bank Holiday"},
         
         {type: "1D", start: {mon: 12, d: 14}, titles: {"en": "Martyred Intellectuals Day"}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyred-intellectuals-day/"}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "1D", start: {mon: 5, d: 7}, inherits: "Engineer’s Day"},
         {type: "1D", start: {mon: 3, d: 25}, titles: {"en": "Bengali Genocide Remembrance Day", "en": "বাঙালি গণহত্যা স্মরণ দিবস"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2017}, urls: {"en": "https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 11, d: 7}, first: {era: 1, y: 1975}},

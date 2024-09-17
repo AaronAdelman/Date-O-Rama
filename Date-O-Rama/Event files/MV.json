@@ -19,7 +19,7 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-republic-day"}, inherits: "Republic Day", first: {era: 1, y: 1968}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 10}},
    ]
 }

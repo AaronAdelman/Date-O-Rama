@@ -12,7 +12,7 @@
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, titles: {"en": "National Worker's Day"}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
-        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en": "Vincy Mas (day 1)"}},
+        {type: "1D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en": "Vincy Mas (day 1)"}},
         {type: "1D", start: {mon: 7, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en": "Vincy Mas (day 2)"}},
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/emancipation-day"}, inherits: "Emancipation Day"},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 27}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}},
@@ -20,8 +20,8 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
+        {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], nth: 1}},
    ]
 }

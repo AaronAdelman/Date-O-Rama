@@ -6,15 +6,15 @@
     calendarColor: {"red": 0.00, "green": 0.39, "blue": 0.25},
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/mexico-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1917}},
-        {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/benito-juarez-birthday-memorial/"}, notes: {"en": "Benito Juarez Birthday Memorial"}, inherits: "*BDay*", titles: {"en": "Benito Juarez’s Birthday", "es": "Natalicio de Benito Juárez"}},
+        {type: "1D", start: {mon: 2, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/mexico-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1917}},
+        {type: "1D", start: {mon: 3, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/benito-juarez-birthday-memorial/"}, notes: {"en": "Benito Juarez Birthday Memorial"}, inherits: "*BDay*", titles: {"en": "Benito Juarez’s Birthday", "es": "Natalicio de Benito Juárez"}},
         {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/labour-day"}, inherits: "Labour Day", first: {era: 1, y: 1923}},
         {type: "1D", start: {mon: 5, d: 5}, inherits: "Cinco de Mayo", first: {era: 1, y: 1862}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/mothers-day-mexico/"}, first: {era: 1, y: 1922}},
-        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/fathers-day"}, inherits: "Father’s Day"},
+        {type: "1D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/fathers-day"}, inherits: "Father’s Day"},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 1810}, urls: {"en": "https://www.daysoftheyear.com/days/mexican-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Day of the Pluricultural Nation", "es": "Día de la Raza"}, urls: {"en": "https://nationaltoday.com/mexico-day-of-the-pluricultural-nation/"}, first: {era: 1, y: 2020}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
@@ -63,6 +63,6 @@
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}, titles: {"en": "Mariachi Day"}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "Grandparents’ Day", type: "1D", start: {mon: 8, d: 28}},
-
+        {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, emoji: "🌮", first: {era: 1, y: 2007}},
     ]
 }

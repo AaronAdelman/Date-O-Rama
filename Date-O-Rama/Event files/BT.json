@@ -17,6 +17,6 @@
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 5, d: 2}},
         {type: "1D", start: {mon: 6, d: 2}, titles: {"en": "Coronation of King Jigme Singye Wangchuck"}, first: {era: 1, y: 1974}, inherits: "*Coronation*"},
         {type: "1D", start: {mon: 7, d: 10}, titles: {"en": "Birthday of King Jigme Dorji Wangchuck"}, inherits: "*BDay*"},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
   ]
 }

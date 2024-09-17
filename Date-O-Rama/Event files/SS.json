@@ -23,9 +23,9 @@
 
         {type: "1D", start: {mon: 1, d: 9}, titles: {"en": "Peace Agreement Day"}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/mothers-day-south-sudan/"}, first: {era: 1, y: 2012}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 8, wkd: [2], nth: -1}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://nationaltoday.com/mothers-day-south-sudan/"}, first: {era: 1, y: 2012}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 23}},
-        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 2013}},
+        {inherits: "Grandparents’ Day", type: "1D", start: {mon: 11, wkd: [1], nth: 2}, first: {era: 1, y: 2013}},
     ]
 }

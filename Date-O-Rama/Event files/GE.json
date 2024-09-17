@@ -17,7 +17,7 @@
         {inherits: "St. George’s Day", type: "1D", start: {mon: 11, d: 23}},
 
         {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "St. Barbara’s Day", type: "1D", start: {mon: 12, d: 17}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 4, d: 30}},

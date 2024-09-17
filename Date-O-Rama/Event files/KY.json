@@ -7,20 +7,20 @@
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 4}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 1, wkd: [2], nth: 4}},
         {inherits: "Ash Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -46}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {type: "1D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-discovery-day"}, inherits: "Discovery Day"},
+        {type: "1D", start: {mon: 5, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-discovery-day"}, inherits: "Discovery Day"},
         {type: "1D", start: {mon: 6, d: 19}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
-        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1959}},
-        {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/remembrance-day"}, inherits: "Remembrance Day", first: {era: 1, y: 1919}},
+        {type: "1D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1959}},
+        {type: "1D", start: {mon: 11, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/remembrance-day"}, inherits: "Remembrance Day", first: {era: 1, y: 1919}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 2, wkd: [1], nth: 2}},
     ]
 }

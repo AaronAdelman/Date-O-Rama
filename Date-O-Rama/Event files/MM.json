@@ -16,7 +16,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/myanmar/new-years-eve"}, inherits: "New Year’s Eve"},
         
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 2, d: 13}},
     ]
 }

@@ -21,7 +21,7 @@
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
 
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
     ]
 }

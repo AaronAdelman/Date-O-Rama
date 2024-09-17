@@ -14,7 +14,7 @@
         {titles: {"en": "Academy Day"}, type: "1D", start: {mon: 6, d: 18}, emoji: "🏫"},
         {titles: {"en": "Sea Org Day"}, type: "1D", start: {mon: 8, d: 12}, emoji: "★", first: {era: 1, y: 1967}},
         {titles: {"en": "Clear Day"}, type: "1D", start: {mon: 9, d: 4}, emoji: "⎚", first: {era: 1, y: 1965}},
-        {titles: {"en": "Auditor’s Day"}, type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}},
+        {titles: {"en": "Auditor’s Day"}, type: "1D", start: {mon: 9, wkd: [1], nth: 2}},
         {titles: {"en": "IAS Anniversary"}, type: "1D", start: {mon: 10, d: 7}, inherits: "*Remembrance*"},
         {titles: {"en": "Publications Day"}, type: "1D", start: {mon: 11, d: 27}, emoji: "📚", first: {era: 1, y: 1967}},
         {titles: {"en": "Flag Land Base Day"}, type: "1D", start: {mon: 12, d: 7}, emoji: "🏨", first: {era: 1, y: 1975}},

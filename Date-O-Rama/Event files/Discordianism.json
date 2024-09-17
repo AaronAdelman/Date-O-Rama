@@ -92,7 +92,7 @@
         
         {titles: {"en": "Erister"}, type: "1D", start: {"Easter": "Easter"}, notes: {"en": "Whollyday"}},
         {type: "1D", start: {mon: 8, d: 23, thruD: 29, wkd: [1]}, titles: {"en": "Go Topless Day"}, notes: {"en": "Whollyday"}},
-        {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 1}, titles: {"en": "No Pants Day"}, notes: {"en": "Whollyday"}},
+        {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "No Pants Day"}, notes: {"en": "Whollyday"}},
         
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Bogey’s Day"}},
         {type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Carioca Lodge Day"}},

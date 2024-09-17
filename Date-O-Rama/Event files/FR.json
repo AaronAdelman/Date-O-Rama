@@ -13,10 +13,10 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
-        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/france/mothers-day"}, inherits: "Mother’s Day"},
+        {type: "1D", start: {mon: 5, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/france/mothers-day"}, inherits: "Mother’s Day"},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/france/fathers-day"}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/france/fathers-day"}},
         {type: "1D", start: {mon: 7, d: 14}, inherits: "Bastille Day", first: {era: 1, y: 1789}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
@@ -29,7 +29,8 @@
         {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
         {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://beaujolaisnouveauday.com/"}, titles: {"en": "Beaujolais Nouveau Day"}, first: {era: 1, y: 1985}, emoji: "🍷"},
-        {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}, inherits: "Grandmothers’ Day", first: {era: 1, y: 1987}},
+        {type: "1D", start: {mon: 11, wkd: [5], nth: 3}, urls: {"en": "https://beaujolaisnouveauday.com/"}, titles: {"en": "Beaujolais Nouveau Day"}, first: {era: 1, y: 1985}, emoji: "🍷"},
+        {type: "1D", start: {mon: 3, wkd: [1], nth: 1}, inherits: "Grandmothers’ Day", first: {era: 1, y: 1987}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, titles: {"en": "Tacos Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
     ]
 }

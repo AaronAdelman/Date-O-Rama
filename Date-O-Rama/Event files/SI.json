@@ -31,7 +31,7 @@
         {inherits: "Feast of St. Martin of Tours", type: "1D", start: {mon: 11, d: 11}},
         {inherits: "St. Nicholas Day", type: "1D", start: {mon: 12, d: 6}},
         {type: "1D", start: {mon: 7, d: 22}, titles: {"en": "Insurrection Day", "sl": "dan vstaje"}},
-        {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 3}, titles: {"en": "Cow’s Ball", "sl": "Kravji Bal"}, first: {era: 1, y: 1950}, emoji: "🐄", urls: {"en": "https://www.daysoftheyear.com/days/cows-ball/"}},
+        {type: "1D", start: {mon: 9, wkd: [1], nth: 3}, titles: {"en": "Cow’s Ball", "sl": "Kravji Bal"}, first: {era: 1, y: 1950}, emoji: "🐄", urls: {"en": "https://www.daysoftheyear.com/days/cows-ball/"}},
 
   ]
 }

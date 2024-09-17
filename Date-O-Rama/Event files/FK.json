@@ -10,7 +10,7 @@
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -2}, inherits: "Good Friday"},
         {inherits: "Liberation Day", type: "1D", start: {mon: 6, d: 14}, first: {era: 1, y: 1982}, urls: {"en": "https://nationaltoday.com/falkland-islands-liberation-day/"}},
-        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/peat-cutting-monday"}, titles: {"en": "Peat Cutting Monday"}},
+        {type: "1D", start: {mon: 10, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/peat-cutting-monday"}, titles: {"en": "Peat Cutting Monday"}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/battle-day"}, titles: {"en": "Battle Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

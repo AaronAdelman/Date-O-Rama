@@ -18,8 +18,8 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/cambodia-independence-day/"}, first: {era: 1, y: 1953}},
 
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, titles: {"en": "National Day of Remembrance", "km": "ទិវាជាតិនៃការចងចាំ"}, first: {era: 1, y: 2018}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
     ]
 }
