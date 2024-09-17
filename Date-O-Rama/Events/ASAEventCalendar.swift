@@ -242,31 +242,39 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDateEquinoxOrSolstice(for: type, now: initialDate) else {
             return MATCH_FAILURE
         }
         
-        if startOfDay <= dateThisYear && dateThisYear < startOfNextDay {
-            return (true, dateThisYear, dateThisYear)
+        let offset = Double(offsetDays) * Date.SECONDS_PER_DAY
+        
+        let dateThisYearPlusOffset = dateThisYear.addingTimeInterval(offset)
+        
+        if startOfDay <= dateThisYearPlusOffset && dateThisYearPlusOffset < startOfNextDay {
+            return (true, dateThisYearPlusOffset, dateThisYearPlusOffset)
         }
         
         let NUMBER_OF_DAYS_PER_YEAR = 365.2425
         
-        if dateThisYear < startOfDay {
+        if dateThisYearPlusOffset < startOfDay {
             guard let dateLastYear = possibleDateEquinoxOrSolstice(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
-            if startOfDay <= dateLastYear && dateLastYear < startOfNextDay {
-                return (true, dateLastYear, dateLastYear)
+            let dateLastYearPlusOffset = dateLastYear.addingTimeInterval(offset)
+            
+            if startOfDay <= dateLastYearPlusOffset && dateLastYearPlusOffset < startOfNextDay {
+                return (true, dateLastYearPlusOffset, dateLastYearPlusOffset)
             }
-        } else if dateThisYear > startOfNextDay {
+        } else if dateThisYearPlusOffset > startOfNextDay {
             guard let dateNextYear = possibleDateEquinoxOrSolstice(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
-            if startOfDay <= dateNextYear && dateNextYear < startOfNextDay {
-                return (true, dateNextYear, dateNextYear)
+            let dateNextYearPlusOffset = dateNextYear.addingTimeInterval(offset)
+            if startOfDay <= dateNextYearPlusOffset && dateNextYearPlusOffset < startOfNextDay {
+                return (true, dateNextYearPlusOffset, dateNextYearPlusOffset)
             }
         }
         
@@ -980,7 +988,7 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.Easter == nil {
+        if offsetDays != 0 && dateSpecification.Easter == nil && dateSpecification.equinoxOrSolstice == nil {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1068,7 +1076,11 @@ class ASAEventCalendar {
         
         let equinoxOrSolstice = dateSpecification.equinoxOrSolstice
         if equinoxOrSolstice != nil && equinoxOrSolstice! != .none {
-            let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if offsetDays == 15 {
+                debugPrint("Foo")
+            }
+            
+            let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
             if !matchesAndStartAndEndDates.matches {
                 return NO_MATCH
             } else {
