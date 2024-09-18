@@ -52,7 +52,7 @@
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/international-check-your-wipers-day-november-16"}, titles: {"en": "National Check Your Wipers Day", "es": "Día Nacional de Revisar Tus Limpiaparabrisas"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sugarbee-apple-day-may-20"}, titles: {"en": "National SugarBee® Apple Day"}, emoji: "🍎", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 5, d: 23, thruD: 29, wkd: [1]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-family-fun-day-sunday-before-memorial-day"}, titles: {"en": "National Family Fun Day"}, emoji: "🧑‍🧑‍🧒‍🧒"},
-        {type: "1D", start: {mon: 5, d: 24}, titles: {"en": "National Yucatán Shrimp Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-yucatan-shrimp-day-may-24"}, first: {era: 1, y: 2020}, emoji: "🍤"},
+        {type: "1D", start: {mon: 5, d: 24}, titles: {"en": "National Yucatán Shrimp Day"}, notes: {"en": "National Yucatan Shrimp Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-yucatan-shrimp-day-may-24"}, first: {era: 1, y: 2020}, emoji: "🍤"},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-beef-burger-day-may-28"}, titles: {"en": "National Beef Burger Day"}, emoji: "🍔", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-529-day-may-29"}, titles: {"en": "National 529 Day"}, emoji: "🐖🎓", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/national-self-employed-day-may-4"}, titles: {"en": "National Self-Employed Day"}, first: {era: 1, y: 2022}},
@@ -86,7 +86,7 @@
         {type: "1D", start: {mon: 7, wkd: [5], nth: 3}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dole-whip-day-third-thursday-in-july"}, titles: {"en": "National Dole Whip® Day"}, first: {era: 1, y: 2023}, emoji: "🍍🍒"},
         {type: "1D", start: {mon: 7, wkd: [6], nth: 2}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-french-fry-day-second-friday-in-july"}, titles: {"en": "National French Fry Day", "he": "יום הצ׳יפס הלאומי"}, emoji: "🍟", first: {era: 1, y: 2023}, notes: {"en": "National French Fries Day"}},
         {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Shapewear Day"}, first: {era: 1, y: 2017}, notes: {"en": "This event is meant to promote vanity and fashion."}},
-        {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/global-kinetic-sand-day-august-11"}, titles: {"en": "Global Kinetic Sand™ Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/global-kinetic-sand-day-august-11"}, titles: {"en": "Global Kinetic Sand™ Day"}, notes: {"en": "Global Kinetic Sand Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pineapple-juice-day-august-17"}, titles: {"en": "National Pineapple Juice Day"}, emoji: "🍍", first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Bow Day"}, first: {era: 1, y: 2017}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-accessible-air-travel-day-august-20"}, titles: {"en": "National Accessible Air Travel Day"}, emoji: "🛩️", first: {era: 1, y: 2022}},
@@ -181,6 +181,11 @@
         {type: "1D", start: {mon: 9, wkd: [6], nth: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-chianti-day-first-friday-in-september"}, titles: {"en": "National Chianti Day", "he": "יום קיאנטי הלאומי"}, first: {era: 1, y: 2020}, emoji: "🍷"},
         {type: "nD", start: {mon: 8, d: 10, thruD: 16, wkd: [1], durationD: 7}, titles: {"en": "National Balayage Week"}, notes: {"en": "This event is meant to promote vanity."}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/global-sleep-under-the-stars-night-august-8"}, titles: {"en": "Global Sleep Under the Stars Night"}, first: {era: 1, y: 2020}, emoji: "🌌"},
+        {type: "1D", start: {mon: 9, d: 22}, titles: {"en": "National Brown Butter Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-brown-butter-day-september-22"}, first: {era: 1, y: 2024}, emoji: "🧈"},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-freezer-pop-day-july-8"}, titles: {"en": "National Freezer Pop Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-crawfish-day-april-17"}, titles: {"en": "National Crawfish Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-for-twelves-day-april-12"}, titles: {"en": "National For Twelves Day"}, emoji: "⑫", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 27}, titles: {"en": "International MSL Day"}, notes: {"en": "International Medical Science Liaison Day"}, urls: {"en": "https://themsls.org/international-msl-day/"}, first: {era: 1, y: 2020}},
 
     ]
 }
