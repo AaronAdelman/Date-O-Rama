@@ -213,7 +213,7 @@
         {type: "1D", start: {mon: 6, d: 14}, inherits: "Army Day", first: {era: 1, y: 1775}, titles: {"en": "Army Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/army-birthday/"}},
         {titles: {"en": "National Air Traffic Control Day"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/national-air-traffic-control-day/"}, first: {era: 1, y: 1986}, emoji: "✈️"},
         {titles: {"en": "National Atomic Veterans Day"}, notes: {"en": "National Atomic Veterans’ Day"}, type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/national-atomic-veterans-day/"}, first: {era: 1, y: 1983}, emoji: "⚛️"},
-        {titles: {"en": "National Lottery Day"}, type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/national-lottery-day/"}, first: {era: 1, y: 2018}, notes: {"en": "More or less official in Massachusetts, apparently a celebration on taxing people who do not realize that lotteries are scams."}},
+        {type: "1D", start: {mon: 7, d: 17}, inherits: "National Lottery Day", first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 7, d: 31}, inherits: "Flag Day", urls: {"en": "https://nationaltoday.com/hawaii-flag-day/"}, first: {era: 1, y: 1990}, titles: {"en": "Hawaii Flag Day", "he": "יום דגל הוואי"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Air Force Day", urls: {"en": "https://www.daysoftheyear.com/days/u-s-air-force-day/"}, notes: {"en": "Air Force Birthday"}, first: {era: 1, y: 1947}},
