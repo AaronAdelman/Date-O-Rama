@@ -337,7 +337,7 @@
         {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-jonathan-day/"}, titles: {"en": "National Jonathan Day"}},
         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/national-justin-day/"}, titles: {"en": "National Justin Day"}},
         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/national-lance-day/"}, titles: {"en": "National Lance Day"}},
-        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-a-kevin-day/"}, titles: {"en": "National Hug a Kevin Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-a-kevin-day/"}, titles: {"en": "National Hug a Kevin Day"}, first: {era: 1, y: 2017}, emoji: "🫂"},
         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-porter-day/"}, titles: {"en": "National Porter Day"}},
         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kim-day/"}, titles: {"en": "National Kim Day"}},
         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kimberly-day/"}, titles: {"en": "National Kimberly Day"}},
