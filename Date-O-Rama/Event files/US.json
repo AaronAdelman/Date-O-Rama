@@ -307,7 +307,7 @@
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/brain-injury-awareness-day/"}, titles: {"en": "Brain Injury Awareness Day"}, first: {era: 1, y: 2001}, inherits: "*MedAwareness*", emoji: "🧠"},
         {type: "1D", start: {mon: 3, wkd: [3], nth: 1}, urls: {"en": "https://nationaltoday.com/national-town-meeting-day/"}, titles: {"en": "National Town Meeting Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/amerigo-vespucci-day/"}, titles: {"en": "Amerigo Vespucci Day"}, first: {era: 1, y: 1959}},
-        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/311-day/"}, titles: {"en": "311 Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, inherits: "National 311 Day", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 3, wkd: [4], nth: 3}, urls: {"en": "https://nationaltoday.com/national-sbdc-day/"}, titles: {"en": "National SBDC Day"}, notes: {"en": "Small Business Development Centers Day"}},
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://www.ala.org/advocacy/FOI-Day"}, titles: {"en": "Freedom of Information Day", "he": "יום חופש המידע"}, notes: {"en": "National Freedom of Information Day", "he": "יום חופש המידע הלאומי"}, emoji: "🗄️"},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/vietnam-veterans-day/"}, titles: {"en": "Vietnam Veterans Day"}, first: {era: 1, y: 1973}},

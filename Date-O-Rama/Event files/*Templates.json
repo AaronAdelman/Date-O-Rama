@@ -413,6 +413,7 @@
          {template: "Mountain Day (in lieu)", titles: {"en": "Mountain Day (in lieu)", "he": "יום ההר (במקומו)"}, type: "1D", start: {mon: 8, d: 12, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-day/"}, emoji: "🗻"},
          {template: "Movember", type: "1M", start: {mon: 11}, titles: {"en": "Movember", "he": "מובמבר"}, urls: {"en": "https://movember.com/"}, emoji: "👨"},
         {template: "Nakba Day", titles: {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 1998}},
+        {template: "National 311 Day", type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://www.nationaldaycalendar.com/proclamations/new-day-proclamation-national-311-day-march-11"}, titles: {"en": "National 311 Day"}, notes: {"en": "311 Day"}},
         {template: "National Adoption Day", type: "1D", start: {mon: 11, d: 18}, titles: {"en": "National Adoption Day"}, emoji: "👨‍👩‍👧‍👦"},
         {template: "National Alpaca Day", type: "1D", start: {mon: 5, d: 2}, titles: {"en": "National Alpaca Day"}, emoji: "🦙"},
         {template: "National Anthem and Flag Day", type: "1D", start: {mon: 7, d: 2}, titles: {"en": "National Anthem and Flag Day"}},

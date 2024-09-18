@@ -186,6 +186,19 @@
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-crawfish-day-april-17"}, titles: {"en": "National Crawfish Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-for-twelves-day-april-12"}, titles: {"en": "National For Twelves Day"}, emoji: "⑫", first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 27}, titles: {"en": "International MSL Day"}, notes: {"en": "International Medical Science Liaison Day"}, urls: {"en": "https://themsls.org/international-msl-day/"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 3, wkd: [3], nth: 3}, urls: {"en": "https://la3dspace.wixsite.com/3-dspace/national-3-d-day"}, titles: {"en": "National 3-D Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/national-flapjack-day/"}, titles: {"en": "National Flapjack Day"}, first: {era: 1, y: 2020}, emoji: "🥞"},
+        {type: "1D", start: {mon: 2, d: 29}, titles: {"en": "National Time Refund Day"}, first: {era: 1, y: 2020}, emoji: "🤷‍♀️", urls: {"en": "https://nationaldaycalendar.com/national-time-refund-day-february-29/"}},
+        {type: "1D", start: {mon: 3, d: 11}, inherits: "National 311 Day", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-teen-mental-wellness-day-march-2"}, titles: {"en": "World Teen Mental Wellness Day"}, inherits: "*MedAwareness*"},
+        {type: "1D", start: {mon: 2, wkd: [5], nth: 2}, urls: {"en": "https://givingheartsday.org/"}, titles: {"en": "Giving Hearts Day"}, first: {era: 1, y: 2008}, emoji: "❤️"},
+        {type: "1D", start: {mon: 2, d: 9}, titles: {"en": "National Cut the Cord Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cut-the-cord-day-february-9/"}, first: {era: 1, y: 2015}, emoji: "📺"},
+        {type: "1D", start: {mon: 2, wkd: [7], nth: 2}, urls: {"en": "https://www.nationaldaycalendar.com/international/global-movie-day-second-saturday-in-february"}, titles: {"en": "Global Movie Day"}, first: {era: 1, y: 2020}, emoji: "🎞️"},
+        {type: "1D", start: {mon: 1, wkd: [7], nth: 3}, urls: {"en": "https://useyourgiftcard.com/"}, titles: {"en": "National Use Your Gift Card Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-short-film-day-december-28"}, titles: {"en": "National Short Film Day"}, emoji: "🎥", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-twin-day-december-18"}, titles: {"en": "National Twin Day", "he": "יום התאומים הלאומי"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-personal-space-day-november-30"}, titles: {"en": "National Personal Space Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-flour-day-march-20"}, titles: {"en": "World Flour Day"}, first: {era: 1, y: 2019}},
 
     ]
 }
