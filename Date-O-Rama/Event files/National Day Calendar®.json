@@ -246,6 +246,10 @@
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hemp-day-february-4"}, titles: {"en": "National Hemp Day"}, first: {era: 1, y: 2019}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/national-enrolled-agents-month-february"}, titles: {"en": "National Enrolled Agents Month"}, emoji: "🪙🐖"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://www.nationaldaycalendar.com/february/national-self-check-month-february"}, titles: {"en": "National Self-Check Month"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
+        {type: "1D", start: {mon: 1, d: 19}, titles: {"en": "World Quark Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-quark-day-january-19"}, first: {era: 1, y: 2019}, notes: {"en": "We were disappointed that this observance turned out to be about cheese and not about elementary particles.  Ask your friendly neighborhood physicist to tell you about quarks today!"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-booch-day-january-15"}, titles: {"en": "National Booch Day"}, notes: {"en": "National Kombucha Day"}, emoji: "☕️", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 1, d: 5}, titles: {"en": "National Keto Day"}, notes: {"en": "This observance is about a diet.  Ask your doctor about what diet is right for you; it may well not be the fad of the day"}, emoji: "🧀", first: {era: 1, y: 2019}},
+
 
 
     ]
