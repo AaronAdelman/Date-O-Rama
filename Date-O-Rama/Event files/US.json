@@ -535,7 +535,7 @@
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/alloimmunization-and-hdfn-day/"}, titles: {"en": "Alloimmunization and HDFN Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/sun-day/"}, titles: {"en": "Sun Day"}, notes: {"en": "International Sun Day"}, first: {era: 1, y: 1978}, emoji: "☉"},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/straw-hat-day/"}, titles: {"en": "National Straw Hat Day"}, first: {era: 1, y: 1920}, emoji: "👒"},
-        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://www.nifc.gov/nwffd"}, titles: {"en": "National Wildland Firefighter Day"}, notes: {"en": "NWFFD"}, emoji: "👨‍🚒👩‍🚒", first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 7, d: 2}, inherits: "National Wildland Firefighter Day", first: {era: 1, y: 2022}},
         {inherits: "Indivisible Day", type: "1D", start: {mon: 7, d: 4}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/national-whistleblower-day/"}, titles: {"en": "National Whistleblower Day", "he": "יום חושף השחיתות לאומי"}, first: {era: 1, y: 2013}},
         {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, inherits: "International Clown Week", first: {era: 1, y: 1971}},

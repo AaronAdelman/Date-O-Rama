@@ -2526,6 +2526,8 @@
         {type: "1W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/national-parent-teacher-home-visits-week/"}, titles: {"en": "National Parent Teacher Home Visits Week"}, notes: {"en": "National PTHV Week"}, first: {era: 1, y: 2022}},
         {type: "1W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-forensic-science-week/"}, titles: {"en": "National Forensic Science Week"}, first: {era: 1, y: 2013}, emoji: "🕵️‍♂️🕵️‍♀️"},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-africa-civility-day/"}, titles: {"en": "National Africa Civility Day"}, emoji: "🌍"},
-        {type: "1D", start: {mon: 5, d: 27, thruMon: 6, thruD: 2}, titles: {"en": "National Flip Flop Day"}, notes: {"en": "A fashion-driven observance meant to promote selling smoothies."}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 5, d: 27, thruMon: 6, thruD: 2, wkd: [4]}, titles: {"en": "National Flip Flop Day"}, notes: {"en": "A fashion-driven observance meant to sell smoothies."}, first: {era: 1, y: 2023}},
+        {type: "nD", start: {mon: 6, d: 30}, end: {mon: 7, d: 6}, titles: {"en": "Wildland Firefighter Week of Remembrance"}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/wildland-firefighter-week-remembrance-june-30-july-6-2"}, first: {era: 1, y: 2015}, inherits: "National Wildland Firefighter Day"},
+
     ]
 }
