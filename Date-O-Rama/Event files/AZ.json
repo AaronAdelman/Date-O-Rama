@@ -56,7 +56,7 @@
         {type: "1D", start: {mon: 8, d: 2}, titles: {"en": "National Day of Azerbaijani Cinema", "he": "היום הלאומי של הקולנוע האזרבייג׳אני"}},
         {type: "1D", start: {mon: 9, d: 15}, titles: {"en": "Day of Knowledge"}, urls: {"en": "https://en.wikipedia.org/wiki/Knowledge_Day"}},
         {type: "1D", start: {mon: 9, d: 18}, titles: {"en": "Day of National Music"}, emoji: "🎼"},
-        {type: "1D", start: {mon: 9, d: 20}, titles: {"en": "Day of Azerbaijani Oil", "he": "יום הנפט האזרבייג'אני"}, notes: {"en": "Oil Workers’ Day"}},
+        {type: "1D", start: {mon: 9, d: 20}, titles: {"en": "Day of Azerbaijani Oil", "he": "יום הנפט האזרבייג׳אני"}, notes: {"en": "Oil Workers’ Day"}, emoji: "🛢️"},
         {type: "1D", start: {mon: 9, d: 27}, inherits: "Memorial Day", urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Azerbaijan)"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Day of Prosecutors"}},
         {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "Day of Azerbaijani Railway"}},
