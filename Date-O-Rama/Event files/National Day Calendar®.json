@@ -249,8 +249,27 @@
         {type: "1D", start: {mon: 1, d: 19}, titles: {"en": "World Quark Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-quark-day-january-19"}, first: {era: 1, y: 2019}, notes: {"en": "We were disappointed that this observance turned out to be about cheese and not about elementary particles.  Ask your friendly neighborhood physicist to tell you about quarks today!"}},
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-booch-day-january-15"}, titles: {"en": "National Booch Day"}, notes: {"en": "National Kombucha Day"}, emoji: "☕️", first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 1, d: 5}, titles: {"en": "National Keto Day"}, notes: {"en": "This observance is about a diet.  Ask your doctor about what diet is right for you; it may well not be the fad of the day"}, emoji: "🧀", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 10, wkd: [3], nth: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-taco-day-october-4"}, inherits: "National Taco Day", first: {era: 1, y: 2024}},
+        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-french-dip-day-november-12"}, titles: {"en": "National French Dip Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-financial-crime-fighter-day-october-26"}, titles: {"en": "National Financial Crime Fighter Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-youth-confidence-day-october-20"}, titles: {"en": "National Youth Confidence Day"}, emoji: "👦👧"},
+        {type: "1D", start: {mon: 10, wkd: [4], nth: 2}, notes: {"en": "https://www.nationaldaycalendar.com/national-day/national-orange-wine-day-october-6"}, titles: {"en": "National Orange Wine Day"}, first: {era: 1, y: 2018}, emoji: "🍷"},
+        {type: "1D", start: {mon: 10, wkd: [6], nth: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-body-language-day-first-friday-in-october"}, titles: {"en": "National Body Language Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 27}, notes: {"en": "This observance seems to be meant to sell scarves."}, titles: {"en": "National Scarf Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-girls-night-september-22"}, titles: {"en": "National Girls’ Night In Day"}, notes: {"en": "National Girls’ Night"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-fried-rice-day-september-20"}, titles: {"en": "National Fried Rice Day", "he": "יום האורז המטוגן הלאומי"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-chai-day-september-21"}, titles: {"en": "National Chai Day", "he": "יום הצ׳אי הלאומי"}, first: {era: 1, y: 2018}, emoji: "🫖"},
+        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-leathercraft-day-august-15"}, titles: {"en": "National Leathercraft Day", "he": "היום הלאומי למלאכת עור"}, emoji: "💼"},
+        {type: "1M", start: {mon: 8}, titles: {"en": "National Wellness Month"}, first: {era: 1, y: 2018}, notes: {"en": "The people running this event seem to be a bit on the flaky side."}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dive-bar-day-july-7"}, titles: {"en": "National Dive Bar Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-ice-cream-cake-day-june-27"}, titles: {"en": "National Ice Cream Cake Day"}, first: {era: 1, y: 2018}, emoji: "🍰"},
+        {type: "1D", start: {mon: 6, wkd: [7], nth: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-black-bear-day-first-saturday-in-june"}, titles: {"en": "National Black Bear Day"}, emoji: "🐻", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-smile-day-may-31"}, titles: {"en": "National Smile Day"}, emoji: "😀", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-creativity-day-may-30"}, titles: {"en": "National Creativity Day"}, first: {era: 1, y: 2018}, emoji: "👩‍🎨"},
+        {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/national-solitaire-day-may-22"}, titles: {"en": "National Solitaire Day"}, emoji: "🃏", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-graduation-tassel-day-may-17"}, titles: {"en": "National Graduation Tassel Day"}, first: {era: 1, y: 2017}},
+        {type: "1M", start: {mon: 5}, titles: {"en": "National Dental Care Month"}, first: {era: 1, y: 2018}, urls: {"en": "https://www.nationaldaycalendar.com/may/national-dental-care-month-may"}, inherits: "*MedAwareness*"},
 
-
-
+        
     ]
 }
