@@ -57,7 +57,7 @@
        {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
         {inherits: "Memorial Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, first: {era: 1, y: 1917}, "locations": {"en": "Newfoundland and Labrador"}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
-        {type: "1D", start: {mon: 11, d: 21}, titles: {"en": "National Red Mitten Day"}, first: {era: 1, y: 2011}, emoji: "🇨🇦", urls: {"en": "https://www.daysoftheyear.com/days/red-mitten-day/"}},
+        {type: "1D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2011}},
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {type: "1D", start: {mon: 6, d: 4}, inherits: "Air Force Day", first: {era: 1, y: 2006}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [1], nth: 1}, first: {era: 1, y: 2002}},
