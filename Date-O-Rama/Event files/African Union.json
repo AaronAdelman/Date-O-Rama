@@ -29,7 +29,7 @@
         {type: "1D", titles: {"en": "Africa Youth Day"}, start: {mon: 11, d: 1}, emoji: "👦👧"},
         {type: "1D", titles: {"en": "African Statistics Day"}, start: {mon: 11, d: 18}, emoji: "📊"},
         {inherits: "Africa Industrialization Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 2018}},
-        {type: "1D", titles: {"en": "Africa Telecommunications and ICT Day"}, start: {d: 7, mon: 12}, emoji: "📞"},
+        {type: "1D", titles: {"en": "Africa Telecommunications and ICT Day"}, start: {mon: 12, d: 7}, emoji: "📞"},
         {type: "1D", titles: {"en": "Day of African Sport"}, start: {mon: 12, d: 14}, emoji: "🏏🏉🏐"},
     ]
 }

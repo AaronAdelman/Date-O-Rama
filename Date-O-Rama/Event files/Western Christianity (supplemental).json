@@ -24,7 +24,7 @@
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/father-damien-day/"}, titles: {"en": "Father Damien Day"}},
         {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},
         {type: "1D", start: {d: 25, mon: 3}, titles: {"en": "International Day of the Unborn Child"}, first: {era: 1, y: 1993}, urls: {"en": "https://nationaltoday.com/international-day-of-the-unborn-child/"}},
-        {type: "1D", start: {d: 29, mon: 3}, titles: {"en": "Taiwan Youth Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, titles: {"en": "Taiwan Youth Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
         {inherits: "National Doughnut Day", type: "1D", start: {mon: 6, wkd: [6], nth: 1}, urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}},
         {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
         {inherits: "Nakba Day", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 2023}, notes: {"en": "Thank the US Presbyterian Church for adopting an antisemitic hate-fest."}, titles: {"en": "Nakba Remembrance Day"}},

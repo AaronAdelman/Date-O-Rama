@@ -74,8 +74,8 @@
         {type: "1D", start: {d: 8, mon: 5}, titles: {"en": "Equality of Opportunities Between Women and Men Day"}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 1945}},
         {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 2007}},
-        {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "Monarchy Day"}, emoji: "👑"},
-        {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "Balkan Romanianness Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, titles: {"en": "Monarchy Day"}, emoji: "👑"},
+        {type: "1D", start: {mon: 5, d: 10}, titles: {"en": "Balkan Romanianness Day"}},
         {type: "1D", start: {d: 14, mon: 5}, titles: {"en": "International Humanitarian Rights Day"}},
         {type: "1D", start: {mon: 5, d: 15}, titles: {"en": "National Veterinary Day"}},
         {inherits: "International Day of Families", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 1994}},
@@ -98,7 +98,7 @@
         {type: "1D", start: {mon: 6, d: 26}, inherits: "International Day Against Drug Abuse and Illicit Trafficking"},
         {type: "1D", start: {wkd: [1], nth: 1, mon: 7}, titles: {"en": "Justice Day"}, emoji: "👨‍⚖️👩‍⚖️"},
         {type: "1D", start: {wkd: [1], nth: 2, mon: 7}, titles: {"en": "Statistician Day"}, emoji: "📊"},
-        {type: "1D", start: {d: 20, mon: 7}, titles: {"en": "Romanian Aviation and Air Force Day"}, inherits: "Air Force Day"},
+        {type: "1D", start: {mon: 7, d: 20}, titles: {"en": "Romanian Aviation and Air Force Day"}, inherits: "Air Force Day"},
         {type: "1D", start: {d: 24, mon: 7}, titles: {"en": "Romanian Border Police Day"}, inherits: "Police Day"},
         {type: "1D", start: {mon: 7, d: 28}, titles: {"en": "National Ambulance Day"}, emoji: "🚑"},
         {inherits: "World Hepatitis Day", type: "1D", start: {mon: 7, d: 28}, first: {era: 1, y: 2010}},
@@ -141,7 +141,7 @@
         {type: "1D", start: {d: 16, mon: 12}, titles: {"en": "National Solidarity Day Against Dictatorship"}},
         {type: "1D", start: {d: 18, mon: 12}, titles: {"en": "Day of the National Minorities of Romania"}},
         {inherits: "International Human Solidarity Day", type: "1D", start: {mon: 12, d: 20}, first: {era: 1, y: 2006}},
-        {type: "1D", start: {d: 21, mon: 12}, titles: {"en": "Day of Remembrance of the Victims of Communism in Romania"}},
+        {type: "1D", start: {mon: 12, d: 21}, titles: {"en": "Day of Remembrance of the Victims of Communism in Romania"}},
         {type: "1D", start: {d: 22, mon: 12}, titles: {"en": "Romanian Revolution Victory and Freedom Day"}},
    ]
 }

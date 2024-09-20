@@ -18,7 +18,7 @@
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Constitutionalist Revolution", "pt": "Revolução Constitucionalista"}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/sao-paulo/state-rebellion-day"}, notes: {"en": "State Rebellion Day"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 8, wkd: [1], nth: 2}},
-        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 9}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 7}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida", "pt": "Nossa Senhora Aparecida"}, urls: {"en": "https://nationaltoday.com/lady-of-aparecida-2/"}, first: {era: 1, y: 1717}},
         {type: "1D", start: {mon: 10, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/civil-servants-day"}, titles: {"en": "Civil Servants Day"}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
