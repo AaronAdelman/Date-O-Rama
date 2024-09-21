@@ -1799,7 +1799,7 @@
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/national-garage-condo-day/"}, titles: {"en": "National Garage Condo Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-opioid-awareness-day/"}, titles: {"en": "National Opioid Awareness Day", "he": "יום המודעות לאופיואידים הלאומי"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/pecan-cookie-day/"}, titles: {"en": "National Pecan Cookie Day", "he": "יום עוגיות הפקאן הלאומי"}, emoji: "🍪"},
-        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/hobbit-day/"}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, notes: {"en": "National Hobbit Day"}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/hobbit-day/"}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, notes: {"en": "National Hobbit Day"}, first: {era: 1, y: 1978}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-centenarians-day/"}, titles: {"en": "National Centenarian’s Day"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-appreciation-day/"}, titles: {"en": "National Elephant Appreciation Day"}, first: {era: 1, y: 1996}, emoji: "🐘"},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/ice-cream-cone-day/"}, titles: {"en": "National Ice Cream Cone Day"}, emoji: "🍦"},

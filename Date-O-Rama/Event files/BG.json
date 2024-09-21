@@ -15,6 +15,7 @@
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"}, titles: {"en": "Bulgarian Education and Culture and Slavonic Literature Day", "bg": "Ден на българската просвета и култура и на славянската писменост"}},
         {type: "1D", start: {mon: 9, d: 6}, inherits: "Unification Day", urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/bulgaria-unification-day"}, first: {era: 1, y: 1885}},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 22}, first: {era: 1, y: 1908}},
+        {inherits: "Independence Day (in lieu)", type: "1D", start: {mon: 9, d: 23}, first: {era: 1, y: 1908}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
