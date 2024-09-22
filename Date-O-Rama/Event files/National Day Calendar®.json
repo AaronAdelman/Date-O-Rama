@@ -344,5 +344,10 @@
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-mason-jar-day-november-30"}, titles: {"en": "National Mason Jar Day"}, emoji: "🫙", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-princess-day-november-18"}, titles: {"en": "National Princess Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-teal-talk-day-september-23"}, titles: {"en": "Teal Talk Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-snack-stick-day-september-23"}, titles: {"en": "National Snack Stick Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "This is an obviously fashion-promoting observance."}, titles: {"en": "National Legwear Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sock-day-december-4"}, titles: {"en": "National Sock Day"}, first: {era: 1, y: 2016}},
+
     ]
 }

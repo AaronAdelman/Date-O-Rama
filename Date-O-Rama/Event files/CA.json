@@ -115,6 +115,9 @@
         {type: "1W", start: {mon: 3, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Black Mental Health Week"}, urls: {"en": "https://blackmentalhealthweek.ca/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2021}},
         {type: "1W", start: {mon: 4, fullWk: -1, firstDOfWk: 2}, inherits: "National Immunization Awareness Week"},
         {type: "nD", start: {mon: 9, d: 4, thruD: 10, wkd: [5], durationD: 11}, urls: {"en": "https://tiff.net/"}, titles: {"en": "Toronto International Film Festival", "he": "פסטיבל הסרטים הבין־לאומי בטורונטו"}, notes: {"en": "TIFF"}, first: {era: 1, y: 1976}, emoji: "📽️"},
-
+        {type: "nD", start: {era: 1, y: 2021, mon: 10, d: 29}, end: {era: 1, y: 2021, mon: 11, d: 7}, inherits: "Ontario Garlic Week"},
+        {type: "nD", start: {era: 1, y: 2022, mon: 9, d: 23}, end: {era: 1, y: 2022, mon: 10, d: 2}, inherits: "Ontario Garlic Week"},
+        {type: "nD", start: {era: 1, y: 2023, mon: 9, d: 22}, end: {era: 1, y: 2023, mon: 10, d: 1}, inherits: "Ontario Garlic Week"},
+        {type: "nD", start: {mon: 9, d: 23}, end: {mon: 10, d: 2}, inherits: "Ontario Garlic Week", first: {era: 1, y: 2024}},
     ]
 }
