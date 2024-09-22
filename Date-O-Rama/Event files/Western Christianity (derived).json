@@ -53,7 +53,7 @@
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/books-for-treats-day/"}, titles: {"en": "Books for Treats Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/magic-day/"}, titles: {"en": "Magic Day", "he": "יום הקסמים"}, emoji: "🪄"},
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-caramel-apple-day/"}, titles: {"en": "​National Caramel Apple Day"}},
-        {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-doorbell-day/"}, titles: {"en": "National Doorbell Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 31}, inherits: "National Doorbell Day", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-knock-knock-joke-day/"}, titles: {"en": "National Knock Knock Joke Day"}},
         {type: "1D", start: {mon: 10, wkd: [1], nth: -1}, urls: {"en": "https://nationaltoday.com/visit-a-cemetery-day/"}, titles: {"en": "Visit a Cemetery Day"}, emoji: "🪦"},
         {type: "1D", start: {mon: 10, wkd: [6], nth: -1}, urls: {"en": "https://nationaltoday.com/frankenstein-friday/"}, titles: {"en": "Frankenstein Friday"}, first: {era: 1, y: 1997}},

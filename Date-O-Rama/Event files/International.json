@@ -2034,7 +2034,6 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/read-a-new-book-month/"}, titles: {"en": "Read a New Book Month"}, emoji: "📚"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/sepsis-awareness-month/"}, titles: {"en": "Sepsis Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.conquerchiari.org/"}, titles: {"en": "Chiari Awareness Month"}, inherits: "*MedAwareness*"},
-        {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/pulmonary-fibrosis-awareness-month/"}, titles: {"en": "Pulmonary Fibrosis Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/shake-month/"}, titles: {"en": "Shake Month"}, emoji: "🥤"},
         {type: "1W", start: {mon: 9, fullWk: 1, firstDOfWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/zero-waste-week/"}, titles: {"en": "Zero Waste Week"}, first: {era: 1, y: 2008}, emoji: "0️⃣"},
         {type: "1W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},

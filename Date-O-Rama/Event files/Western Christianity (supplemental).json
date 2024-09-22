@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
     eventSpecifications: [
-        {titles: {"en": "National Love People Day"}, type: "1D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}, emoji: "❤️", urls: {"en": "https://nationaldaycalendar.com/national-love-people-day-september-30/"}},
+        {inherits: "National Love People Day", type: "1D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}},
         {titles: {"en": "Church Library Month"}, type: "1M", start: {mon: 10}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/church-library-month-october/"}},
         {titles: {"en": "Church Safety and Security Month"}, type: "1M", start: {mon: 10}, emoji: "🧯🔒", urls: {"en": "https://nationaldaycalendar.com/church-safety-and-security-month-october/"}},
         {titles: {"en": "World Communion Sunday"}, type: "1D", start: {mon: 10, wkd: [1], nth: 1}, first: {era: 1, y: 1933}, urls: {"en": "https://nationaldaycalendar.com/world-communion-sunday-first-sunday-in-october/"}},
