@@ -165,7 +165,7 @@
         {inherits: "Malcolm X Day", type: "1D", start: {mon: 5, d: 19}, first: {era: 1, y: 2015}},
         {inherits: "Malcolm X Day", type: "1D", start: {mon: 5, wkd: [6], nth: 3}, first: {era: 1, y: 1979}, "locations": {"en": "Berkeley, California", "he": "ברקלי (קליפורניה)"}},
         {titles: {"en": "Susan B. Anthony Day"}, type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/susan-b-anthony-day/"}, first: {era: 1, y: 1977}},
-        {inherits: "Native American Day", type: "1D", start: {mon: 9, wkd: [6], nth: 4}, first: {era: 1, y: 1997}, "locations": {"en": "California and Nevada", "he": "קליפורניה ונבדה"}},
+        {inherits: "Native American Day", type: "1D", start: {mon: 9, wkd: [6], nth: 4}, first: {era: 1, y: 1997}, "locations": {"en": "California and Nevada", "he": "קליפורניה ונבדה"}, urls: {"en": "https://www.daysoftheyear.com/days/native-american-day/"}},
         {inherits: "Native American Day", type: "1D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 1990}, "locations": {"en": "South Dakota", "he": "דקוטה הדרומית"}, urls: {"en": "https://nationaldaycalendar.com/native-american-day-second-monday-in-october/"}},
         {inherits: "Native American Day", type: "1D", start: {mon: 9, wkd: [2], nth: 4}, first: {era: 1, y: 1994}, "locations": {"en": "Tennessee", "he": "טנסי"}},
         {titles: {"en": "National Defense Transportation Day"}, type: "1D", start: {mon: 5, wkd: [6], nth: 3}, urls: {"en": "https://nationaldaycalendar.com/national-defense-transportation-day-third-friday-in-may/"}, first: {era: 1, y: 1957}, emoji: "🛣"},

@@ -150,7 +150,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://www.daysoftheyear.com/days/vascular-disease-awareness-month/"}, titles: {"en": "Vascular Disease Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 9, d: 23}, end: {mon: 10, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/seed-gathering-season/"}, titles: {"en": "Seed Gathering Season"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 10, wkd: [5], nth: 1}, urls: {"en": "https://nationalpoetryday.co.uk/"}, titles: {"en": "National Poetry Day"}, emoji: "☂️🐢🍄"},
-        {type: "1D", start: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, urls: {"en": "https://nationaltoday.com/national-police-memorial-day/"}, titles: {"en": "National Police Memorial Day"}, first: {era: 1, y: 2001}, inherits: "Police Day"},
+        {type: "1D", start: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, urls: {"en": "https://www.daysoftheyear.com/days/national-police-memorial-day/"}, titles: {"en": "National Police Memorial Day"}, first: {era: 1, y: 2001}, inherits: "Police Day"},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/buy-british-day/"}, titles: {"en": "Buy British Day"}, first: {era: 1, y: 2014}},
         {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/baby-loss-awareness-week/"}, titles: {"en": "Baby Loss Awareness Week"}, first: {era: 1, y: 2003}, emoji: "👶", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 10, d: 14}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-baking-week/"}, titles: {"en": "National Baking Week"}, first: {era: 1, y: 2007}, emoji: "🍞🥖🥐"},
@@ -242,6 +242,7 @@
         {type: "nD", start: {mon: 9, d: 23, thruD: 29, wkd: [2]}, end: {mon: 9, d: 29, thruMon: 10, thruD: 5, wkd: [1]}, titles: {"en": "National Inclusion Week"}, urls: {"en": "https://www.inclusiveemployers.co.uk/national-inclusion-week/"}, emoji: "⭕", first: {era: 1, y: 2013}},
         {type: "1W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "National Eye Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-eye-health-week/"}, first: {era: 1, y: 2012}, inherits: "*MedAwareness*", emoji: "👁"},
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://napa-activities.co.uk/arts-in-care-homes/art-in-care-homes"}, titles: {"en": "National Day of Arts in Care Homes"}, emoji: "🎨", first: {era: 1, y: 2019}},
+        {type: "nD", start: {mon: 9, d: 27}, end: {mon: 9, d: 29}, urls: {"en": "https://elvies.co.uk/"}, titles: {"en": "Porthcawl Elvis Festival"}, notes: {"en": "Elvis Festival Porthcawl"}, first: {era: 1, y: 2024}},
 
     ]
 }
