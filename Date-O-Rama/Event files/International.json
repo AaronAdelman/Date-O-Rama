@@ -2109,6 +2109,14 @@
         {type: "1D", start: {era: 1, y: 2023, mon: 3, d: 15}, inherits: "Digital Learning Day"},
         {type: "1D", start: {mon: 2, wkd: [5], d: 11, thruD: 17}, inherits: "Digital Learning Day", first: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 3, wkd: [4], d: 20, thruD: 26}, titles: {"en": "International Data Center Day"}, urls: {"en": "https://www.internationaldatacenterday.org/"}, first: {era: 1, y: 2020}, emoji: "ℹ️"},
+        {type: "1D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2008}, last: {era: 1, y: 2016}},
+        {type: "1D", start: {era: 1, y: 2017, mon: 4, d: 22}, inherits: "Record Store Day"},
+        {type: "1D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2020}},
+        {type: "1D", start: {era: 1, y: 2021, mon: 6, d: 12}, inherits: "Record Store Day"},
+        {type: "1D", start: {mon: 4, wkd: [7], d: 20, thruD: 23}, inherits: "Record Store Day", first: {era: 1, y: 2022}, last: {era: 1, y: 2024}},
+        {type: "1D", start: {era: 1, y: 2025, mon: 4, d: 12}, inherits: "Record Store Day"},
+        {type: "1D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2026}},
+        {type: "1W", start: {mon: 5, fullWk: -1, firstDOfWk: 2}, titles: {"en": "Epilepsy Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/epilepsy-awareness-week/"}, inherits: "*MedAwareness*"},
 
     ]
 }
