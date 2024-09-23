@@ -542,7 +542,8 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://www.cdc.gov/vaccines/events/niam/"}, titles: {"en": "National Immunization Awareness Month"}, notes: {"en": "NIAM"}, emoji: "💉", inherits: "*MedAwareness*"},
         {type: "1W", start: {mon: 2, fullWk: 2}, titles: {"en": "Heart Failure Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/heart-failure-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2000}},
         {type: "1W", start: {mon: 2, fullWk: 3}, titles: {"en": "Bird Health Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bird-health-awareness-week/"}, emoji: "🦅🦃🦆"},
-        {type: "1W", start: {mon: 3, fullWk: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "Consumer Awareness Week"}},
+        {type: "1W", start: {mon: 3, fullWk: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "NCPW\nConsumer Awareness Week"}},
+        {type: "1D", start: {mon: 3, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "National Slam the Scam Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-slam-the-scam-day/"}, emoji: "💻📱", first: {era: 1, y: 2020}},
         {type: "1W", start: {mon: 3, fullWk: 3, firstDOfWk: 2}, titles: {"en": "National Fix a Leak Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fix-a-leak-week/"}, first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 4, d: 16, thruD: 22, wkd: [7], durationD: 9}, titles: {"en": "National Park Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-park-week/"}, first: {era: 1, y: 1991}, emoji: "🏞️"},
         {type: "1W", start: {mon: 4, fullWk: 3}, titles: {"en": "National Volunteer Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-volunteer-week/"}, first: {era: 1, y: 1974}},
@@ -569,5 +570,11 @@
         {type: "nD", start: {mon: 6, d: 21, thruD: 27, wkd: [1]}, end: {mon: 6, d: 27, thruMon: 7, thruD: 3, wkd: [7]}, titles: {"en": "DeafBlind Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/deafblind-awareness-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 6, wkd: [5], nth: 2}, titles: {"en": "National Seersucker Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seersucker-day/"}, first: {era: 1, y: 1996}},
         {type: "1W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.thinkingofyouweekusa.com/"}, inherits: "Thinking of You Week", first: {era: 1, y: 2018}},
+        {type: "nD", start: {mon: 2, d: 10, thruD: 16, wkd: [7], durationD: 8}, titles: {"en": "National Entrepreneurship Week"}, notes: {"en": "NatlEshipWeek"}, urls: {"en": "https://www.natleshipweek.org/"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 3, wkd: [3], nth: 3}, inherits: "National Agriculture Day", first: {era: 1, y: 1973}, urls: {"en": "https://www.agday.org/"}},
+        {type: "nD", start: {mon: 3, wkd: [1], d: 13, thruD: 19, durationD: 7}, titles: {"en": "National Agriculture Week"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.census.gov/newsroom/stories/agriculture-day-week.html"}, inherits: "National Agriculture Day"},
+        {type: "1D", start: {mon: 3, d: 17, thruD: 23, wkd: [7]}, titles: {"en": "National Corn Dog Day"}, urls: {"en": "https://www.daysoftheyear.com/days/corn-dog-day/"}, first: {era: 1, y: 2012}},
+        {type: "nD", start: {mon: 3, d: 17, thruD: 23, wkd: [2], durationD: 7}, titles: {"en": "National Drug and Alcohol Facts Week®"}, notes: {"en": "NDAFW"}, urls: {"en": "https://nida.nih.gov/research-topics/national-drug-alcohol-facts-week"}, first: {era: 1, y: 2010}},
+
     ]
 }
