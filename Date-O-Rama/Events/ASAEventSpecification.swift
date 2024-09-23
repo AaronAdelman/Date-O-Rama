@@ -26,6 +26,9 @@ struct ASAEventSpecification: Codable {
     
     /// The specification for the first occurrence of this event
     var firstDateSpecification: ASADateSpecification?
+
+    /// The specification for the last occurrence of this event
+    var lastDateSpecification: ASADateSpecification?
     
     var regionCodes:  Array<String>?
     var excludeRegionCodes:  Array<String>?
@@ -41,6 +44,7 @@ struct ASAEventSpecification: Codable {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "first"
+        case lastDateSpecification  = "last"
         case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification

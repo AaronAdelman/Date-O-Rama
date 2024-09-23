@@ -2097,7 +2097,7 @@
         {type: "1W", start: {mon: 9, fullWk: -1}, titles: {"en": "Deaf Dog Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/deaf-dog-awareness-week/"}, emoji: "🐶"},
         {type: "1D", start: {mon: 4, wkd: [5], nth: 4}, titles: {"en": "Love Your Thighs Day"}, notes: {"en": "Another observance created to sell products."}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 4, wkd: [7], nth: -1}, end: {mon: 4, d: null}, titles: {"en": "World Tai Chi and Qigong Day"}, notes: {"en": "WTCQD\nWorld T’ai Chi and Ch’i Kung Day\nThis observance was created to promote pseudoscientific nonsense."}, urls: {"en": "https://skepdic.com/chikung.html"}, first: {era: 1, y: 1999}},
-        {type: "1D", start: {mon: 4, wkd: [7], nth: -1}, end: {mon: 4, d: null}, titles: {"en": "World Healing Day"}, notes: {"en": "This observance was created to promote pseudoscientific nonsense."}, urls: {"en": "https://skepdic.com/althelth.html"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 4, wkd: [7], nth: -1}, titles: {"en": "World Healing Day"}, notes: {"en": "This observance was created to promote pseudoscientific nonsense."}, urls: {"en": "https://skepdic.com/althelth.html"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "No Pants Day", "he": "יום ללא מכנסיים"}, notes: {"en": "An observance we interpret as being for wearing dresses and kilts."}, first: {era: 1, y: 2000}, notes: {"en": "National No Pants Day"}},
         {type: "1D", start: {mon: 5, wkd: [7], nth: 1}, titles: {"en": "World Naked Gardening Day"}, notes: {"en": "An observance in which people show their dedication to growing wonderful plants by risking skin cancer."}, first: {era: 1, y: 2005}, notes: {"en": "WNGD"}},
         {type: "1D", start: {mon: 5, wkd: [7], nth: 2}, titles: {"en": "World Bellydance Day"}, notes: {"en": "An observance for celebrating the sexualization of women in the performing arts."}, first: {era: 1, y: 2008}},
@@ -2105,6 +2105,10 @@
         {type: "1D", start: {mon: 8, wkd: [6], nth: 3}, titles: {"en": "Men’s Grooming Day"}, notes: {"en": "This observance promotes men being shallow and buying grooming products."}, first: {era: 1, y: 2007}},
         {type: "1W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "World Reflexology Week"}, urls: {"en": "https://skepdic.com/reflex.html"}, first: {era: 1, y: 1999}, notes: {"en": "This observance promotes pseudoscientific nonsense."}},
         {type: "1W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "International Week of Deaf People"}, notes: {"en": "International Week of the Deaf\nIWDeaf"}, urls: {"en": "https://www.daysoftheyear.com/days/international-week-of-deaf-people/"}, emoji: "🧏‍♂️🧏‍♀️", first: {era: 1, y: 1958}},
+        {type: "1D", start: {mon: 2, wkd: [5], nth: -1}, inherits: "Digital Learning Day", first: {era: 1, y: 2012}, last: {era: 1, y: 2021}},
+        {type: "1D", start: {era: 1, y: 2022, mon: 2, d: 22}, inherits: "Digital Learning Day"},
+        {type: "1D", start: {era: 1, y: 2023, mon: 3, d: 15}, inherits: "Digital Learning Day"},
+        {type: "1D", start: {mon: 2, wkd: [5], d: 11, thruD: 17}, inherits: "Digital Learning Day", first: {era: 1, y: 2024}},
 
     ]
 }

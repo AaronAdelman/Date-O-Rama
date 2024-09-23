@@ -243,6 +243,7 @@
         {type: "1W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "National Eye Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-eye-health-week/"}, first: {era: 1, y: 2012}, inherits: "*MedAwareness*", emoji: "👁"},
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://napa-activities.co.uk/arts-in-care-homes/art-in-care-homes"}, titles: {"en": "National Day of Arts in Care Homes"}, emoji: "🎨", first: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 9, d: 27}, end: {mon: 9, d: 29}, urls: {"en": "https://elvies.co.uk/"}, titles: {"en": "Porthcawl Elvis Festival"}, notes: {"en": "Elvis Festival Porthcawl"}, first: {era: 1, y: 2024}},
+        {type: "nD", start: {mon: 1, d: 23, thruD: 29, wkd: [6], durationD: 3}, titles: {"en": "Big Garden Birdwatch"}, urls: {"en": "https://www.rspb.org.uk/whats-happening/big-garden-birdwatch"}, first: {era: 1, y: 1998}, emoji: "🐦"},
 
     ]
 }

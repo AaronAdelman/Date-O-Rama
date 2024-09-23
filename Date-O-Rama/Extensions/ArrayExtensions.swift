@@ -278,6 +278,25 @@ extension Array where Element == Int? {
         return true
     } // func isAfterOrEqual(first: Array<Int?>) -> Bool
     
+    func isBeforeOrEqual(last: Array<Int?>) -> Bool {
+        for i in 0..<self.count {
+            let start_i = self[i]
+            let last_i = last[i]
+            
+            if start_i != nil && last_i != nil {
+                if start_i! <= last_i! {
+                    return true
+                }
+            }
+            
+            if start_i ?? Int.max >= last_i ?? 0 {
+                return false
+            }
+        } // for i
+
+        return true
+    } //
+    
 } // extension Array where Element == Int
 
 

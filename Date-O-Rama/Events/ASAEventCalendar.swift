@@ -830,6 +830,17 @@ class ASAEventCalendar {
             }
         }
         
+        // Check whether the event is after the last occurrence
+        let lastDateSpecification = eventSpecification.lastDateSpecification
+        if lastDateSpecification != nil {
+            let start = tweakedStartDateSpecification.EYMD
+            let last = lastDateSpecification!.EYMD
+            
+            if !start.isBeforeOrEqual(last: last) {
+                return MATCH_FAILURE
+            }
+        }
+        
         let dateSpecificationType: ASAEventSpecificationType = eventSpecification.type
         
         switch dateSpecificationType {

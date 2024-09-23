@@ -161,6 +161,7 @@
         {template: "Defender of the Fatherland Day", type: "1D", start: {mon: 5, d: 7}, titles: {"en": "Defender of the Fatherland Day", "kk": "Отан Қорғаушы күні", "ky": "Мекенди коргоочунун күнү", "ru": "День защитника Отечествa", "tk": "Watan gününiň goragçysy"}, notes: {"en": "Fatherland Defender’s Day", "ky": "День защитника Отечества"}},
         {template: "Democracy Day", type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Democracy Day", "pt": "Dia da Liberdade e Democracia"}, emoji: "🗳"},
         {template: "Dhuhr", titles: {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, type: "pt", start: {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
+        {template: "Digital Learning Day", type: "1D", start: {mon: 2, wkd: [5], nth: -1}, titles: {"en": "Digital Learning Day"}, notes: {"en": "DLDay"}, urls: {"en": "https://all4ed.org/digital-learning-day/"}, emoji: "👨‍💻👩‍💻"},
         {template: "Disability History Month", type: "1M", start: {mon: 10}, titles: {"en": "Disability History Month"}, urls: {"en": "https://en.wikipedia.org/wiki/Disability_History_Month"}, emoji: "🩼"},
         {template: "Discovery Day", type: "1D", start: {mon: 6, d: 24}, titles: {"en": "Discovery Day", "fr": "Journée découverte"}},
         {template: "Doctor’s Day", type: "1D", start: {mon: 7, d: 1}, titles: {"en": "Doctor’s Day", "he": "יום הרופא והרופאה"}, emoji: "👨‍⚕️👩‍⚕️"},
