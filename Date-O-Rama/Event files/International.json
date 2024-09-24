@@ -1683,7 +1683,6 @@
         {type: "1D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/german-butterbrot-day/"}, titles: {"en": "German Butterbrot Day", "de": "Tag des Deutschen Butterbrotes"}, notes: {"en": "German Sandwich Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/international-ataxia-awareness-day/"}, titles: {"en": "International Ataxia Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/math-storytelling-day/"}, titles: {"en": "Math Storytelling Day"}, first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/research-administrator-day/"}, titles: {"en": "Research Administrator Day"}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://worlddreamday.org/"}, titles: {"en": "World Dream Day", "he": "יום החלומות העולמי"}, first: {era: 1, y: 2012}, emoji: "☁️🌍"},
         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/human-resource-professional-day/"}, titles: {"en": "Human Resource Professional Day"}, first: {era: 1, y: 2001}, notes: {"en": "HR Professionals Day"}},
         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/love-note-day/"}, titles: {"en": "Love Note Day", "he": "יום פתק האהבה"}, emoji: "❤️"},

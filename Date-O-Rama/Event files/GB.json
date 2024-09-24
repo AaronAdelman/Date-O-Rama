@@ -250,6 +250,7 @@
         {type: "nD", start: {mon: 2, d: 23, thruD: 29, wkd: [2], yLengths: [366]}, end: {mon: 2, d: 29, thruMon: 3, thruD: 6, wkd: [1]}, inherits: "Cornish Pasty Week", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 3, wkd: [6], nth: -1}, titles: {"en": "Wear a Hat Day"}, urls: {"en": "https://www.wearahatday.org/"}, first: {era: 1, y: 2009}, emoji: "🎩🧢👒", inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/coeliac-awareness-week/"}, titles: {"en": "Coeliac Awareness Month", "en_US": "Celiac Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2024}},
-
+        {type: "1W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "National Vegetarian Week", first: {era: 1, y: 1992}, last: {era: 1, y: 2023}},
+        {type: "nD", start: {mon: 10, d: 1, durationD: 7}, inherits: "National Vegetarian Week", first: {era: 1, y: 2024}},
     ]
 }
