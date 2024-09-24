@@ -16,10 +16,10 @@ import SwiftUI
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
-    #if os(watchOS)
-    #else
+#if os(watchOS)
+#else
     @State private var action:  EKEventEditViewAction?
-    #endif
+#endif
     @State private var showingEventView = false
     @Binding var now:  Date
     var location: ASALocation
@@ -27,27 +27,27 @@ struct ASALinkedEventCell:  View {
     
     let CLOSE_BUTTON_TITLE = "Done"
     
-    let FRAME_MIN_WIDTH:  CGFloat  = 300.0
-    let FRAME_MIN_HEIGHT:  CGFloat = 500.0
+    let FRAME_MIN_WIDTH: CGFloat  = 400.0
+    let FRAME_MIN_HEIGHT: CGFloat = 700.0
     
     var isForClock: Bool
     var eventIsTodayOnly: Bool
     var startDateString: String?
     var endDateString: String
     
-    #if os(watchOS)
+#if os(watchOS)
     let compact = true
-    #else
+#else
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
             return self.sizeClass == .compact
         } // get
     } // var compact
-    #endif
+#endif
     
     var body: some View {
-        #if os(watchOS)
+#if os(watchOS)
         NavigationLink(destination: ASAEventDetailView(event: event, clock: primaryClock, location: location, usesDeviceLocation: usesDeviceLocation), label: {
             HStack {
                 ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: false, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
@@ -55,14 +55,14 @@ struct ASALinkedEventCell:  View {
                 ASACompactForwardChevronSymbol()
             } // HStack
         })
-        #else
+#else
         HStack {
             if !isForClock {
-                #if targetEnvironment(macCatalyst)
-                #else
+#if targetEnvironment(macCatalyst)
+#else
                 Spacer()
                     .frame(width: 8.0)
-                #endif
+#endif
             }
             
             ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: isForClock, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
@@ -81,16 +81,10 @@ struct ASALinkedEventCell:  View {
                     .foregroundColor(event.color)
                     .font(.title)
             }
-            .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                VStack {
-                    HStack {
-                        Button(action: {showingEventView = false}) {
-                            ASACloseBoxImage()
-                        }
-                        Spacer()
-                    } // HStack
+            .popover(isPresented: $showingEventView) {
+                ScrollView {
                     ASAEventDetailView(event: event, clock: primaryClock, location: location, usesDeviceLocation: usesDeviceLocation, action: $action)
-                        .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                        .frame(minWidth: FRAME_MIN_WIDTH, minHeight: FRAME_MIN_HEIGHT)
                 }
             }
             .foregroundColor(.accentColor)
@@ -103,17 +97,16 @@ struct ASALinkedEventCell:  View {
             })
             
             if !isForClock {
-                #if targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
                 let SPACER_WIDTH: CGFloat = 16.0
-                #else
+#else
                 let SPACER_WIDTH: CGFloat =  8.0
-                #endif
+#endif
                 Spacer()
                     .frame(width: SPACER_WIDTH)
             }
         }
-//        .modifier(ASAEventCellStyle(event: event))
-        #endif
+#endif
     } // var body
 } // struct ASALinkedEventCell
 
