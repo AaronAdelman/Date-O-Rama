@@ -341,7 +341,7 @@ extension ASADateSpecification {
     
     var EY: Array<Int?> {
         return [self.era, self.year]
-    } // var EYM
+    } // var EY
     
     func fillIn(EY: Array<Int?>) -> ASADateSpecification {
         var temp = self

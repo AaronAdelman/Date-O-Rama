@@ -119,5 +119,9 @@
         {type: "nD", start: {era: 1, y: 2022, mon: 9, d: 23}, end: {era: 1, y: 2022, mon: 10, d: 2}, inherits: "Ontario Garlic Week"},
         {type: "nD", start: {era: 1, y: 2023, mon: 9, d: 22}, end: {era: 1, y: 2023, mon: 10, d: 1}, inherits: "Ontario Garlic Week"},
         {type: "nD", start: {mon: 9, d: 23}, end: {mon: 10, d: 2}, inherits: "Ontario Garlic Week", first: {era: 1, y: 2024}},
+        {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 1982}, last: {era: 1, y: 2023}},
+        {type: "nD", start: {era: 1, y: 2024, mon: 6, d: 2, durationD: 7}, inherits: "Canadian Environment Week"},
+        {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 2025}},
+
     ]
 }

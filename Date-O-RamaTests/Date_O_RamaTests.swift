@@ -428,13 +428,13 @@ class Date_O_RamaTests: XCTestCase {
         let start4: Array<Int?> = [1, 2019, 1, 4]
         let start5: Array<Int?> = [1, 2018, 1, 4]
         
-        XCTAssert(start1.isAfterOrEqual(first: first1))
+        XCTAssert(!start1.isBefore(first: first1))
     
-        XCTAssert(start1.isAfterOrEqual(first: first2))
-        XCTAssert(start2.isAfterOrEqual(first: first2))
-        XCTAssert(start3.isAfterOrEqual(first: first2))
-        XCTAssert(start4.isAfterOrEqual(first: first2))
-        XCTAssertFalse(start5.isAfterOrEqual(first: first2))
+        XCTAssert(!start1.isBefore(first: first2))
+        XCTAssert(!start2.isBefore(first: first2))
+        XCTAssert(!start3.isBefore(first: first2))
+        XCTAssert(!start4.isBefore(first: first2))
+        XCTAssertFalse(!start5.isBefore(first: first2))
     } // func testFirst() throws
     
     func testNthRecurrenceOfWeekdayInMonth() throws {

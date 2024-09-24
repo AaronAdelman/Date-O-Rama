@@ -259,43 +259,43 @@ extension Array where Element == Int? {
         return (start: newStart, end: newEnd)
     } // func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int>, end: Array<Int>)
     
-    func isAfterOrEqual(first: Array<Int?>) -> Bool {
+    func isBefore(first: Array<Int?>) -> Bool {
         for i in 0..<self.count {
-            let start_i = self[i]
+            let self_i  = self[i]
             let first_i = first[i]
             
-            if start_i != nil && first_i != nil {
-                if start_i! > first_i! {
+            if self_i != nil && first_i != nil {
+                if self_i! < first_i! {
                     return true
                 }
             }
             
-            if start_i ?? Int.max < first_i ?? 0 {
+            if self_i ?? Int.max > first_i ?? 0 {
                 return false
             }
         } // for i
 
         return true
-    } // func isAfterOrEqual(first: Array<Int?>) -> Bool
+    } // func isBefore(first: Array<Int?>) -> Bool
     
-    func isBeforeOrEqual(last: Array<Int?>) -> Bool {
+    func isAfter(last: Array<Int?>) -> Bool {
         for i in 0..<self.count {
-            let start_i = self[i]
+            let self_i = self[i]
             let last_i = last[i]
             
-            if start_i != nil && last_i != nil {
-                if start_i! <= last_i! {
+            if self_i != nil && last_i != nil {
+                if self_i! > last_i! {
                     return true
                 }
             }
             
-            if start_i ?? Int.max >= last_i ?? 0 {
+            if self_i ?? 0 < last_i ?? Int.max {
                 return false
             }
         } // for i
 
         return true
-    } //
+    } // func isAfter(last: Array<Int?>) -> Bool
     
 } // extension Array where Element == Int
 

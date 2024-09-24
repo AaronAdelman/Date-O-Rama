@@ -822,10 +822,15 @@ class ASAEventCalendar {
         
         // Check whether the event is before the first occurrence
         if firstDateSpecification != nil {
+//            if eventSpecification.inherits == "Canadian Environment Week" {
+//                debugPrint("Foo date \(date)")
+//                debugPrint("Foo first \(firstDateSpecification!.EYMD) self \(tweakedStartDateSpecification.EYMD)")
+//            }
             let start = tweakedStartDateSpecification.EYMD
             let first = firstDateSpecification!.EYMD
             
-            if !start.isAfterOrEqual(first: first) {
+            if start.isBefore(first: first) {
+//                debugPrint("Foo match failure first")
                 return MATCH_FAILURE
             }
         }
@@ -833,10 +838,15 @@ class ASAEventCalendar {
         // Check whether the event is after the last occurrence
         let lastDateSpecification = eventSpecification.lastDateSpecification
         if lastDateSpecification != nil {
+//            if eventSpecification.inherits == "Canadian Environment Week" {
+//                debugPrint("Foo date \(date)")
+//                debugPrint("Foo last \(lastDateSpecification!.EYMD) self \(tweakedStartDateSpecification.EYMD)")
+//            }
             let start = tweakedStartDateSpecification.EYMD
             let last = lastDateSpecification!.EYMD
             
-            if !start.isBeforeOrEqual(last: last) {
+            if start.isAfter(last: last) {
+//                debugPrint("Foo match failure last")
                 return MATCH_FAILURE
             }
         }
