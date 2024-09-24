@@ -2417,7 +2417,7 @@
         {type: "nD", start: {mon: 9, d: 21, thruD: 27, wkd: [6]}, end: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [1]}, titles: {"en": "National Drive Electric Week"}, urls: {"en": "https://driveelectricweek.org/"}, first: {era: 1, y: 2022}, emoji: "⚡"},
         {type: "1D", start: {mon: 3, wkd: [5], nth: -1}, titles: {"en": "Major League Baseball Opening Day"}, urls: {"en": "https://www.daysoftheyear.com/days/major-league-baseball-opening-day/"}, emoji: "⚾️", first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 4, d: 21, thruD: 27, wkd: [4], durationD: 4}, titles: {"en": "American Quilters Society Week"}, urls: {"en": "https://www.americanquilter.com/quiltweek/event/homepage"}, first: {era: 1, y: 2021}, emoji: "🧵🪡"},
-
-
+        {type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, inherits: "I Love My State Parks Week"},
+        {type: "1W", start: {mon: 5, fullWk: 2}, inherits: "I Love My State Parks Week", first: {era: 1, y: 2023}},
     ]
 }

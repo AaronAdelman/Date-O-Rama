@@ -252,5 +252,9 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://www.daysoftheyear.com/days/coeliac-awareness-week/"}, titles: {"en": "Coeliac Awareness Month", "en_US": "Celiac Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2024}},
         {type: "1W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "National Vegetarian Week", first: {era: 1, y: 1992}, last: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 10, d: 1, durationD: 7}, inherits: "National Vegetarian Week", first: {era: 1, y: 2024}},
+        {type: "1D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, inherits: "National Numeracy Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 5, wkd: [4], d: 18, thruD: 24}, inherits: "National Numeracy Day", first: {era: 1, y: 2024}},
+        {type: "nD", start: {mon: 5, d: 12, thruD: 18, wkd: [2]}, end: {mon: 6, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "National Smile Month"}, first: {era: 1, y: 1984}, urls: {"en": "https://www.dentalhealth.org/national-smile-month"}, emoji: "😄"},
+
     ]
 }

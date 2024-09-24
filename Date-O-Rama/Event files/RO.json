@@ -86,7 +86,7 @@
         {type: "1D", start: {mon: 5, d: 31}, titles: {"en": "Military Reserves Day"}},
         {type: "1D", start: {wkd: [1], nth: -1, mon: 5}, titles: {"en": "Day of the Romanians Everywhere"}},
         {type: "1D", start: {wkd: [1], nth: -1, mon: 5}, titles: {"en": "Romanian Businessperson Day"}},
-        {type: "1D", start: {d: 1, mon: 6}, inherits: "Parents’ Day"},
+        {type: "1D", start: {mon: 6, d: 1}, inherits: "Parents’ Day"},
         {type: "1D", start: {d: 2, mon: 6}, inherits: "National Adoption Day"},
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "1D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 6, d: 4}, titles: {"en": "Trianon Treaty Day"}},
