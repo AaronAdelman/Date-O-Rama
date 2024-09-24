@@ -255,6 +255,11 @@
         {type: "1D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, inherits: "National Numeracy Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 5, wkd: [4], d: 18, thruD: 24}, inherits: "National Numeracy Day", first: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 5, d: 12, thruD: 18, wkd: [2]}, end: {mon: 6, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "National Smile Month"}, first: {era: 1, y: 1984}, urls: {"en": "https://www.dentalhealth.org/national-smile-month"}, emoji: "😄"},
-
+        {type: "1D", start: {mon: 6, wkd: [7], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/the-big-lunch/"}, titles: {"en": "The Big Lunch"}, emoji: "👝🍱", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, wkd: [7], d: 11, thruD: 17}, inherits: "Trooping the Colour", first: {era: 1, y: 1979}, last: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, wkd: [7], d: 8, thruD: 9}, inherits: "Trooping the Colour", first: {era: 1, y: 2018}, last: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 6, wkd: [7], d: 12, thruD: 13}, inherits: "Trooping the Colour", first: {era: 1, y: 2020}, last: {era: 1, y: 2021}},
+        {type: "1D", start: {era: 1, y: 2022, mon: 6, d: 2}, inherits: "Trooping the Colour"},
+        {type: "1D", start: {mon: 6, wkd: [7], nth: 3}, inherits: "Trooping the Colour", first: {era: 1, y: 2023}},
     ]
 }
