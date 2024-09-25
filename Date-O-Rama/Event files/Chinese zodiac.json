@@ -27,6 +27,20 @@
         {type: "1M", start: {mon: 7}, titles: {"en": "Month of the Monkey", "he": "חודש הקוף"}, inherits: "*Monkey*"},
         {type: "1M", start: {mon: 8}, titles: {"en": "Month of the Rooster", "he": "חודש התרנגול"}, inherits: "*Rooster*"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Month of the Dog", "he": "חודש הכלב"}, inherits: "*Dog*"},
-        {type: "1M", start: {mon: 10}, titles: {"en": "Month of the Pig", "he": "חודש החזיר"}, inherits: "*Pig*"}
+        {type: "1M", start: {mon: 10}, titles: {"en": "Month of the Pig", "he": "חודש החזיר"}, inherits: "*Pig*"},
+        {template: "*Rooster*", type: "1D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
+        {template: "*Snake*", type: "1D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
+        {template: "*Tiger*", type: "1D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
+    ],
+    templateSpecifications: [
+        {template: "*Dog*", type: "1D", start: {}, emoji: "🐕", inherits: "*Astrology*"},
+        {template: "*Dragon*", type: "1D", start: {}, emoji: "🐉", inherits: "*Astrology*"},
+        {template: "*Goat*", type: "1D", start: {}, emoji: "🐐", inherits: "*Astrology*"},
+        {template: "*Horse*", type: "1D", start: {}, emoji: "🐎", inherits: "*Astrology*"},
+        {template: "*Monkey*", type: "1D", start: {}, emoji: "🐒", inherits: "*Astrology*"},
+        {template: "*Ox*", type: "1D", start: {}, emoji: "🐂", inherits: "*Astrology*"},
+        {template: "*Pig*", type: "1D", start: {}, emoji: "🐖", inherits: "*Astrology*"},
+        {template: "*Rabbit*", type: "1D", start: {}, emoji: "🐇", inherits: "*Astrology*"},
+        {template: "*Rat*", type: "1D", start: {}, emoji: "🐀"},
     ]
 }
