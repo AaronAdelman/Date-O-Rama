@@ -6,7 +6,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.18, "blue": 0.42},
     eventSpecifications: [
-        {inherits: "New Year’s Day", type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 2}},{type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {inherits: "New Year’s Day", type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}},{type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, wkd: [1, 2, 3, 5]}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/day-after-new-years-day"}, inherits: "New Year’s Holiday", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 1, d: 3, wkd: [2, 3, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/day-after-new-years-day"}, inherits: "New Year’s Holiday", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 1, d: 4, wkd: [2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/day-after-new-years-day"}, inherits: "New Year’s Holiday", first: {era: 1, y: 2022}},

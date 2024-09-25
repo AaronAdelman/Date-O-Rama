@@ -44,7 +44,7 @@
     {titles: {"en": "New Brunswick Day", "fr": "Jour de Nouveau Brunswick"}, type: "1D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/new-brunswick-day"}, first: {era: 1, y: 1976}},
         {titles: {"en": "Natal Day", "fr": "Jour de la Fondation"}, type: "1D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/natal-day/"}, locations: {"en": "Nova Scotia"}, first: {era: 1, y: 1906}},
         {titles: {"en": "Gold Cup Parade Day", "fr": "Défilé de la Coupe d’or"}, type: "1D", start: {mon: 8, wkd: [6], nth: 3}, urls: {"en": "https://nationaltoday.com/gold-cup-parade/"}, first: {era: 1, "year": 1962}},
-        {type: "nD", start: {mon: 2, d: 3}, "end": {mon: 2, d: 13}, titles: {"en": "Quebec Winter Carnival"}, emoji: "❄️"},
+        {type: "nD", start: {mon: 2, d: 3}, end: {mon: 2, d: 13}, titles: {"en": "Quebec Winter Carnival"}, emoji: "❄️"},
         {inherits: "Tartan Day", type: "1D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1985}},
         {inherits: "Armenian Genocide Remembrance Day", type: "1D", start: {mon: 4, d: 24}, first: {era: 1, y: 2015}},
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 3, wkd: [2], nth: 2}, first: {era: 1, y: 1958}},

@@ -168,7 +168,7 @@
         {type: "1D", start: {mon: 10, d: 24}, titles: {"en": "Raising Day of Indo-Tibetan Border Police"}, inherits: "Police Day"},
         {type: "1D", start: {mon: 9, d: 14}, titles: {"en": "Hindi Day", "he": "יום השפה ההינדית", "hi": "हिन्दी दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Hindi_Day"}},
         {type: "1D", start: {mon: 9, d: 15}, titles: {"en": "Sanchayika Day"}},
-        {type: "nD", start: {d: 1, mon: 12}, "end": {mon: 12, d: 10}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}},
+        {type: "nD", start: {d: 1, mon: 12}, end: {mon: 12, d: 10}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}},
         {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "National Civil Service Day"}},
         {type: "1D", start: {mon: 2, d: 10}, titles: {"en": "National Deworming Day"}},
         {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "World Unani Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Unani_medicine"}, first: {era: 1, y: 2017}},

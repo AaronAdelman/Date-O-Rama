@@ -16,6 +16,6 @@
     {inherits: "Capricorn", type: "1M", start: {mon: 4}},
     {inherits: "Aquarius", type: "1M", start: {mon: 5}},
     {inherits: "Pisces", type: "1M", start: {mon: 7, "yLengths": [353, 354, 355]}},
-    {inherits: "Pisces", type: "nM", start: {mon: 6, "yLengths": [383, 384, 385]}, "end": {mon: 7}}
+    {inherits: "Pisces", type: "nM", start: {mon: 6, "yLengths": [383, 384, 385]}, end: {mon: 7}}
     ]
 }

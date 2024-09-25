@@ -22,7 +22,7 @@
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, titles: {"en": "Birthday of the Raja of Perlis", "ms": "Hari Keputeraan Raja Perlis"}, inherits: "*BDay*", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/pahang/the-sultan-of-pahang-hol"}, titles: {"en": "The Sultan of Pahang Hol", "ms": "Hari Hol Pahang"}, first: {era: 1, y: 2021}, inherits: "*DeathAnniv*"},
         {type: "nD", start: {mon: 5, d: 30}, end: {mon: 5, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/pesta-kaamatan"}, titles: {"en": "Pesta Kaamatan", "ms": "Pesta Kaamatan (Pesta Menuai)"}},
-        {inherits: "Gawai Dayak", type: "nD", start: {mon: 6, d: 1}, "end": {mon: 6, d: 2}},
+        {inherits: "Gawai Dayak", type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}},
         {inherits: "*BDay*", type: "1D", start: {mon: 6, wkd: [2], nth: 1}, titles: {"en": "Yang di-Pertuan Agong’s Birthday", "ms": "Hari Keputeraan Yang di-Pertuan Agong"}, urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}, notes: {"en": "Birthday of SPB Yang di Pertuan Agong"}, inherits: "*BDay*"},
         {inherits: "*BDay*", type: "1D", start: {mon: 6, wkd: [1], nth: 3}, titles: {"en": "Birthday of the Sultan of Kedah", "ms": "Hari Keputeraan Sultan Kedah"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}, inherits: "*BDay*"},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
