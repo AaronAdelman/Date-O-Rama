@@ -384,7 +384,6 @@
         {type: "1D", start: {mon: 11, d: 24}, urls: {"en": "https://www.checkiday.com/0ed1e45d5bf90ed2a4f50224da155038/national-use-even-if-seal-is-broken-day"}, titles: {"en": "National Use Even If Seal Is Broken Day"}, notes: {"en": "Use Even If Seal Is Broken Day"}, emoji: "🫙"},
         {type: "1D", start: {mon: 11, d: 24}, urls: {"en": "https://www.daysoftheyear.com/days/sardines-day/"}, titles: {"en": "National Sardines Day"}},
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "National Parfait Day"}, urls: {"en": "https://www.daysoftheyear.com/days/parfait-day/"}},
-        {type: "1D", start: {mon: 11, d: 26, thruMon: 12, thruD: 2, wkd: [2]}, inherits: "Cyber Monday", first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-anti-obesity-day/"}, titles: {"en": "National Anti Obesity Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/cake-day/"}, titles: {"en": "National Cake Day"}, emoji: "🍰"},
         {type: "1D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inherits: "GivingTuesday", first: {era: 1, y: 2012}},
