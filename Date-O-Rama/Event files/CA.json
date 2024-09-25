@@ -122,6 +122,7 @@
         {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 1982}, last: {era: 1, y: 2023}},
         {type: "nD", start: {era: 1, y: 2024, mon: 6, d: 2, durationD: 7}, inherits: "Canadian Environment Week"},
         {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 2025}},
-
+        {type: "1D", start: {mon: 8, wkd: [4], nth: 1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 1816}, last: {era: 1, y: 2024}},
+        {type: "1D", start: {mon: 7, wkd: [4], nth: -1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 2025}},
     ]
 }
