@@ -50,7 +50,13 @@
         {inherits: "Candlelighting (18 minutes)", type: "pt", start: {mon: 8, d: 20, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}},
         {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt", start: {mon: 8, d: 21, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}},
         {inherits: "Candlelighting (18 minutes)", type: "pt", start: {mon: 10, d: 5, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}},
+    ],
+    templateSpecifications: [
+        {template: "*Candle LTG*", type: "1D", start: {}, emoji: "🕯"},
+        {template: "Candlelighting (18 minutes)", titles: {"en": "Candlelighting (18 minutes)", "he": "הדלקת נרות (18 דקות)"}, type: "pt", start: {wkd: [6], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}, inherits: "*Candle LTG*"},
+        {template: "Candlelighting (8.5°)", titles: {"en": "Candlelighting (8.5°)", "he": "הדלקת נרות (8.5°)"}, type: "pt", start: {mon: 1, d: 2, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}, inherits: "*Candle LTG*"},
         {inherits: "Candlelighting (8.5°)", type: "pt", start: {mon: 10, d: 6, wkd: [1], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}},
-        {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt", start: {mon: 10, d: 7, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}}
+        {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt", start: {mon: 10, d: 7, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}},
+        {template: "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)", titles: {"he": "סוף זמן הדלקת נרות חנוכה עם ברכה (גר״א)", "en": "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)"}, type: "pt", start: {mon: 3, d: 25, "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 3600, wkd: [1, 2, 3, 4, 5, 6]}, inherits: "*Candle LTG*"},
     ]
 }

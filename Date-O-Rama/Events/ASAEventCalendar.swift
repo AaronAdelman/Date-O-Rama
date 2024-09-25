@@ -1156,7 +1156,7 @@ class ASAEventCalendar {
         return self.eventsFile?.symbol
     } // func fileEmoji() -> String?
     
-    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock) -> ASAEvent? {
+    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEvent? {
         var appropriateCalendar:  ASACalendar = calendar
         if eventSpecification.calendarCode != nil {
             let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
@@ -1181,7 +1181,7 @@ class ASAEventCalendar {
             return nil
         }
         
-        let filledInEventSpecification = eventSpecification.filledIn
+        let filledInEventSpecification = eventSpecification.filledIn(eventsFileTemplates: eventsFileTemplates)
         
         var title: String
         if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
@@ -1286,7 +1286,7 @@ class ASAEventCalendar {
 //            assert(startOfDay <= date)
 //            assert(date < startOfNextDay)
             // TODO:  Assertion failure here!
-            let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock)
+            let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock, eventsFileTemplates: eventsFile!.templateSpecifications)
             
             if newEvent != nil {
                 if newEvent!.isAllDay {

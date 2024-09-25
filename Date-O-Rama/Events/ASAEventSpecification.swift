@@ -179,12 +179,12 @@ extension ASAEventSpecification {
         return result
     } // var recurrenceRules
     
-    func matchesTemplateEventSpecification(templateEventSpecification: ASAEventSpecification) -> Bool {
+    func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool {
         assert(self.inherits != nil)
-        assert(templateEventSpecification.template != nil)
+//        assert(templateEventSpecification.template != nil)
         
         return self.inherits == templateEventSpecification.template
-    }
+    } // func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool
     
     static var templateEventsFile: ASAEventsFile? = {
         let (file, error) = ASAEventsFile.builtIn(fileName: "*Templates")
@@ -194,24 +194,39 @@ extension ASAEventSpecification {
         return file
     }()
     
-    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification) -> ASAEventSpecification? {
+    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification? {
         if eventSpecification.inherits == nil || ASAEventSpecification.templateEventsFile == nil {
             return nil
         }
         
-        let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
-        let index = templatesEventFile.templateSpecifications!.firstIndex(where: {
-            eventSpecification.matchesTemplateEventSpecification(templateEventSpecification: $0)
-        })
-        if index != nil {
-            return templatesEventFile.templateSpecifications![index!].filledIn
+        var template: ASAEventSpecification?
+        
+        if eventsFileTemplates != nil {
+            let index = eventsFileTemplates!.firstIndex(where: {
+                eventSpecification.matchesTemplate(templateEventSpecification: $0)
+            })
+            if index != nil {
+                template = eventsFileTemplates![index!]
+            }
+        } else {
+            let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
+            let index = templatesEventFile.templateSpecifications!.firstIndex(where: {
+                eventSpecification.matchesTemplate(templateEventSpecification: $0)
+            })
+            if index != nil {
+                template = templatesEventFile.templateSpecifications![index!]
+            }
+        }
+        
+        if template != nil {
+            return template!.filledIn(eventsFileTemplates: eventsFileTemplates)
         }
         
         return nil
-    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification)
+    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification?
     
-    var filledIn: ASAEventSpecification {
-        let template = templateEventSpecification(for: self)
+    func filledIn(eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification {
+        let template = templateEventSpecification(for: self, eventsFileTemplates: eventsFileTemplates)
         
         if template == nil {
             return self
@@ -232,7 +247,7 @@ extension ASAEventSpecification {
         }
         
         return temp
-    }
+    } // func filledIn(eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification
 } // extension ASAEventSpecification
 
 
