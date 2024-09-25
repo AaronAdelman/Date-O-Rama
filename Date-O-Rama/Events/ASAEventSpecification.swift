@@ -200,11 +200,11 @@ extension ASAEventSpecification {
         }
         
         let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
-        let index = templatesEventFile.eventSpecifications.firstIndex(where: {
+        let index = templatesEventFile.templateSpecifications!.firstIndex(where: {
             eventSpecification.matchesTemplateEventSpecification(templateEventSpecification: $0)
         })
         if index != nil {
-            return templatesEventFile.eventSpecifications[index!].filledIn
+            return templatesEventFile.templateSpecifications![index!].filledIn
         }
         
         return nil
