@@ -99,7 +99,7 @@
         {type: "1D", start: {wkd: [1], nth: 1, mon: 7}, titles: {"en": "Justice Day"}, emoji: "👨‍⚖️👩‍⚖️"},
         {type: "1D", start: {wkd: [1], nth: 2, mon: 7}, titles: {"en": "Statistician Day"}, emoji: "📊"},
         {type: "1D", start: {mon: 7, d: 20}, titles: {"en": "Romanian Aviation and Air Force Day"}, inherits: "Air Force Day"},
-        {type: "1D", start: {d: 24, mon: 7}, titles: {"en": "Romanian Border Police Day"}, inherits: "Police Day"},
+        {type: "1D", start: {mon: 7, d: 24}, titles: {"en": "Romanian Border Police Day"}, inherits: "Police Day"},
         {type: "1D", start: {mon: 7, d: 28}, titles: {"en": "National Ambulance Day"}, emoji: "🚑"},
         {inherits: "World Hepatitis Day", type: "1D", start: {mon: 7, d: 28}, first: {era: 1, y: 2010}},
         {type: "1D", start: {d: 29, mon: 7}, inherits: "National Anthem Day"},

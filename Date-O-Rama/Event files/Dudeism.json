@@ -5,6 +5,6 @@
     calendarColor: {"red": 0.4, "green": 0.5, "blue": 0.6},
     eventSpecifications: [
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/day-of-the-dude/"}, titles: {"en": "Day of the Dude"}, first: {era: 1, y: 1998}
-        },
+       },
     ]
 }

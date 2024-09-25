@@ -17,41 +17,41 @@
             "titles": {
                 "vi": "Tết Nguyên Tiêu",
                 "en": "Poets’ Day"
-            }, notes: {"vi": "Tết Thượng Nguyên"},
-        },
+           }, notes: {"vi": "Tết Thượng Nguyên"},
+       },
         {
             "type": "1D",
             "start": {"mon": 3, "d": 3},
             "titles": {
                 "vi": "Tết Hàn Thực"
             }
-        },
+       },
         {
             "type": "1D",
             "start": {"mon": 4, "d": 15},
             inherits: "Buddha’s Birthday"
-        },
+       },
         {
             "type": "1D",
             "start": {"mon": 5, "d": 5},
             "titles": {
                 "vi": "Tết Đoan Ngọ"
             }
-        },
+       },
         {
             "type": "1D",
             "start": {"mon": 7, "d": 15},
             "titles": {
                 "vi": "Lễ Vu Lan"
-            }, notes: {"vi": "Tết Trung Nguyên"}
-        },
+           }, notes: {"vi": "Tết Trung Nguyên"}
+       },
         {
             "type": "1D",
             "start": {"mon": 8, "d": 12},
             "titles": {
                 "vi": "Ngày Giỗ tổ Sân khấu"
             }
-        },
+       },
         {
             "type": "1D",
             "start": {"mon": 8, "d": 15},
@@ -59,15 +59,15 @@
                 "vi": "Tết Trung Thu",
                 "en": "Children’s Festival"
             }
-        },
+       },
         {
             "type": "1D",
             "start": {"mon": 12, "d": 23},
             "titles": {
                 "vi": "Lễ cúng Ông Công"
-            }, notes: {
+           }, notes: {
                 "vi": "Ông Táo về trời"
             }
-        },
+       },
    ]
 }

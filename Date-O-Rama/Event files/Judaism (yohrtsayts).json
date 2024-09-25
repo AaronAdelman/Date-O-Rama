@@ -173,7 +173,7 @@
         {titles: {"he": "יום־שנה של המאור ושמש"}, type: "1D", start: {mon: 11, d: 1}, first: {era: 0, y: 5587}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרבי מליובוויטש"}, type: "1D", start: {mon: 11, d: 3}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב יהושע ישעיה נויבירט"}, type: "1D", start: {mon: 11, d: 3}, first: {era: 0, y: 5753}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של רבנו תם"}, type: "1D", start: {d: 4, mon: 11}, first: {era: 0, y: 4931}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של רבנו תם"}, type: "1D", start: {mon: 11, d: 4}, first: {era: 0, y: 4931}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של השפע חיים מצאנז"}, type: "1D", start: {mon: 11, d: 9}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ אלחנן וסרמן"}, type: "1D", start: {mon: 11, d: 11}, first: {era: 0, y: 571}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של בעל הטורים"}, type: "1D", start: {mon: 11, d: 12}, first: {era: 0, y: 18}, inherits: "*DeathAnniv*"},
