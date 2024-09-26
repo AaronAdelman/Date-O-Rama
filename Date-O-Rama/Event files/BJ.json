@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.13, "green": 0.53, "blue": 0.28},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {titles: {"en": "Traditional Day", "fr": "Fête du Vodoun"}, type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/benin/traditional-day"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},

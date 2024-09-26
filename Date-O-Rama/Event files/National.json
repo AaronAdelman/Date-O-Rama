@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.45, "green": 0.70, "blue": 0.95},
     emoji: "📍",
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {"equinoxOrSolstice": "Dec"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס"}, emoji: "🔦"},
         {type: "1D", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seashell-day/"}, titles: {"en": "National Seashell Day"}, emoji: "🐚", first: {era: 1, y: 2016}},

@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.34, "blue": 0.72},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

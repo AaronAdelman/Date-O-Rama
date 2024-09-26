@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

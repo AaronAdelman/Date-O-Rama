@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, wkd: [1, 2, 3, 5]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/day-after-new-years-day"}, inherits: "New Year’s Holiday (bridge day)"},
         {type: "1D", start: {mon: 1, d: 3, wkd: [2, 3, 4, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/day-after-new-years-day"}, inherits: "New Year’s Holiday (bridge day)"},

@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.75, "green": 0.05, "blue": 0.24},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Proclamation of Independence Day", type: "1D", start: {mon: 1, d: 11}, first: {era: 1, y: 1944}},
         {type: "1D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},

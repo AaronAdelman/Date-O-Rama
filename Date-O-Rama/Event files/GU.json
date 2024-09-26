@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, wkd: [2], nth: 3}, inherits: "Martin Luther King, Jr. Day"},
         {type: "1D", start: {mon: 3, wkd: [2], nth: 1}, urls: {"en": "https://nationaltoday.com/guam-history-and-chamorro-heritage-day/"}, titles: {"en": "History and Chamorro Heritage Day"}, notes: {"en": "Discovery Day"}, first: {era: 1, y: 1970}},

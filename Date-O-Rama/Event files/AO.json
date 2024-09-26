@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 2, d: 4}, titles: {"en": "Day of the Beginning of the National Liberation Armed Struggle", "pt": "Dia do Início da Luta Armada de Libertação Nacional"}, inherits: "Liberation Day", urls: {"en": "https://nationaltoday.com/angola-liberation-day/"}},
         {inherits: "Carnival (day 1)", type: "1D", start: {"Easter": "Easter", "offsetD": -52}},

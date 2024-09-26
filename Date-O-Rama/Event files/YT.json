@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.22, "green": 0.33, "blue": 0.62},
-    eventSpecifications: [
+    events: [
         
     ]
 }

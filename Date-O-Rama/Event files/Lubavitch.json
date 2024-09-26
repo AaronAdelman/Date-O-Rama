@@ -3,7 +3,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.0, "green": 0.58, "blue": 1.0},
-    eventSpecifications: [
+    events: [
         {inherits: "יום־שנה של רבי דובער שניאורי", type: "1D", start: {mon: 3, d: 9}, first: {era: 0, y: 5588}},
         {titles: {"he": "יום גאולה של רבי דובער שניאור", "en": "Yud Kislev"}, type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/10"}},
         {titles: {"he": "יום גאולה של רבי שניאור זלמן מליאדי", "en": "Yud Tes Kislev"}, type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/19"}},

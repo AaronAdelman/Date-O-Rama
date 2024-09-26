@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Plurinational State of Bolivia Anniversary", "es": "Nacimiento del Estado Plurinacional de Bolivia"}, urls: {"en": "https://nationaltoday.com/plurinational-state-foundation-day/"}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -51}, urls: {"en": "https://www.officeholidays.com/holidays/bolivia/oruro/bolivia-regional-holiday"}, titles: {"en": "Public Holiday"}, locations: {"en": "Oruro"}},

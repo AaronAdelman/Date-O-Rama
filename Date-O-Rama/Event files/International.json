@@ -5,7 +5,7 @@
     calendarColor: {"red": 0.35, "green": 0.60, "blue": 0.85},
     emoji: "🌐",
     "TODO": "World Jump Day activity at 11:39:13 GMT",
-    eventSpecifications: [
+    events: [
         {inherits: "Africa Day", type: "1D", start: {mon: 5, d: 25}},
         {inherits: "Antarctica Day", type: "1D", start: {mon: 12, d: 1}, first: {era: 1, y: 2010}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
@@ -928,7 +928,7 @@
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/metric-system-day/"}, titles: {"en": "Metric System Day"}, emoji: "📏"},
         {type: "1D", start: {mon: 4, d: 8}, titles: {"en": "World Pageant Day"}, urls: {"en": "https://nationaldaycalendar.com/international-pageant-day-april-8/"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/baby-massage-day/"}, titles: {"en": "Baby Massage Day"}, emoji: "👶"},
-        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/international-romani-day/"}, inherits: "International Romani Day", first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 4, d: 8}, inherits: "International Romani Day", first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/step-into-the-spotlight-day/"}, titles: {"en": "Step into the Spotlight Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/draw-a-picture-of-a-bird-day/"}, titles: {"en": "Draw a Picture of a Bird Day"}, notes: {"en": "Draw a Bird Day"}, first: {era: 1, y: 1947}, emoji: "🐦"},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/pygmy-hippo-day/"}, titles: {"en": "Pygmy Hippo Day"}, emoji: "🦛"},
@@ -1140,7 +1140,7 @@
         {type: "1D", start: {mon: 5, wkd: [5], nth: 3}, urls: {"en": "https://accessibility.day/"}, titles: {"en": "Global Accessibility Awareness Day"}, first: {era: 1, y: 2012}, emoji: "👨‍🦽👩‍🦽"},
         {type: "1D", start: {mon: 5, wkd: [6], nth: -1}, titles: {"en": "Tracky Dack Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tracky-dack-day/"}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 5, wkd: [6], nth: -1}, urls: {"en": "https://nationaltoday.com/european-neighbors-day/"}, titles: {"en": "European Neighbors’ Day"}, first: {era: 1, y: 2004}, emoji: "🇪🇺"},
-        {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "No Pants Day", "he": "יום ללא מכנסיים"}, notes: {"en": "An observance we interpret as being for wearing dresses and kilts."}, first: {era: 1, y: 2000}, notes: {"en": "National No Pants Day"}},
+        {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "No Pants Day", "he": "יום ללא מכנסיים"}, notes: {"en": "National No Pants Day\nAn observance we interpret as being for wearing dresses and kilts."}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, urls: {"en": "https://schoolnutrition.org/about-school-meals/school-lunch-hero-day/"}, titles: {"en": "School Lunch Hero Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/tuba-day/"}, titles: {"en": "International Tuba Day"}, notes: {"en": "Tuba Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 5, wkd: [6], nth: 2}, urls: {"en": "https://nationaltoday.com/fintastic-friday/"}, titles: {"en": "Fintastic Friday"}, first: {era: 1, y: 2015}},
@@ -1252,7 +1252,7 @@
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/insect-repellent-awareness-day/"}, titles: {"en": "Insect Repellent Awareness Day"}, emoji: "🦟", first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/love-conquers-all-day/"}, titles: {"en": "Love Conquers All Day"}, emoji: "🫶", first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/world-cider-day/"}, titles: {"en": "World Cider Day"}, emoji: "🍺"},
-        {type: "1D", start: {mon: 6, d: 30, yLengths: [366]}, inherits: "Blink 182 Day"},
+        {type: "1D", start: {dOfY: 182}, urls: {"en": "https://www.daysoftheyear.com/days/blink-182-day/"}, titles: {"en": "Blink-182 Day"}, notes: {"en": "Blink 182 Day"}},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/social-media-day/"}, titles: {"en": "Social Media Day", "he": "יום הרשת החברתית"}, first: {era: 1, y: 2010}, emoji: "📱"},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/shopping-cart-day/"}, titles: {"en": "Shopping Cart Day"}, emoji: "🛒"},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-for-assistive-technology/"}, titles: {"en": "World Day for Assistive Technology"}, emoji: "💻", first: {era: 1, y: 2024}},
@@ -1285,7 +1285,6 @@
         {type: "1D", start: {mon: 6, wkd: [7], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/doll-day/"}, titles: {"en": "Doll Day", "he": "יום הבובות"}, emoji: "🎎"},
         {type: "1D", start: {mon: 6, wkd: [7], nth: 3}, titles: {"en": "World Martini Day"}, notes: {"en": "Martini Day"}, emoji: "🍸", urls: {"en": "https://www.worldmartiniday.com/"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/surf-day/"}, titles: {"en": "International Surfing Day"}, emoji: "🌊", first: {era: 1, y: 2005}},
-        {type: "1D", start: {mon: 7, d: 1, yLengths: [365]}, inherits: "Blink 182 Day"},
         {type: "1D", start: {mon: 7, d: 1}, inherits: "International Reggae Day", first: {era: 1, y: 1994}},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/early-bird-day/"}, titles: {"en": "Early Bird Day"}, notes: {"en": "Early Risers Day\nEarly Start Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/joke-day/"}, titles: {"en": "International Joke Day", "he": "יום הבדיחות הבינלאומי"}, emoji: "😆"},
@@ -2118,5 +2117,8 @@
         {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/orchid-male-cancer-awareness-week/"}, titles: {"en": "Orchid Male Cancer Awareness Week"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 9, d: 17, thruD: 23, wkd: [6]}, end: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, titles: {"en": "Bee’s Knees Week"}, notes: {"en": "This observance appears to be a ploy to sell products."}, first: {era: 1, y: 2017}},
         {type: "nD", start: {mon: 9, d: 19, thruD: 25, wkd: [2], durationD: 5}, urls: {"en": "https://internationalweekofhappinessatwork.com/", "fr": "https://semainedubonheurautravail.be/", "de": "https://www.internationalweekofhappinessatwork.de/", "nl": "https://weekvanhetwerkgeluk.nl/"}, titles: {"en": "International Week of Happiness at Work", "he": "השבוע הבינלאומי של אושר בעבודה", "fr": "Semaine du Bonheür au Travail", "nl": "Internationale Week van het Werkgeluk"}, first: {era: 1, y: 2023}, emoji: "😀"},
+    ],
+    templates: [
+        {template: "Bonza Bottler Day", type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/bonza-bottler-day/"}, titles: {"en": "Bonza Bottler Day"}, emoji: "🎉"},
     ]
 }

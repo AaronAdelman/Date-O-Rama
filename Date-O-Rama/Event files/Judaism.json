@@ -4,7 +4,7 @@
     calendarCode: "heb*",
     "otherCalendarCodes": ["cop"],
     calendarColor: {"red": 0.0, "green": 0.0, "blue": 1.0},
-    eventSpecifications: [
+    events: [
         {type: "1Y", start: {"yDiv": 7, "yRem": 1}, titles: {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
         {type: "1Y", start: {"yDiv": 7, "yRem": 2}, titles: {"he": "שנה ב׳ לשמיטה", "en": "Year 2 in the Shemiṭṭah Cycle"}},
         {type: "1Y", start: {"yDiv": 7, "yRem": 3}, titles: {"he": "שנה ג׳ לשמיטה", "en": "Year 3 in the Shemiṭṭah Cycle"}},
@@ -574,7 +574,7 @@
         {titles: {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, calendarCode: "cop", type: "1D", start: {mon: 3, d: 26}, "excludeRegionCodes": ["IL", "PS"]},
         {titles: {"he": "ברכת החמה", "en": "Blessing of the Sun"}, calendarCode: "cop", type: "1D", start: {mon: 7, d: 30, "yDiv": 28, "yRem": 17}, urls: {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}}
     ],
-    templateSpecifications: [
+    templates: [
         {template: "*חנוכה*", type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://www.ou.org/holidays/category/chanukah/"}, emoji: "🕎"},
         {template: "*סוכות*", type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/sukkot/"}, emoji: "🍋🌴"},
         {template: "*ספירת העומר*", type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://www.ou.org/holidays/category/sefirat-haomer/"}},

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.80, "blue": 0.00},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start:  {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {inherits: "Epiphany Holiday", type: "1D", start: {mon: 1, d: 6, thruD: 12, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/colombia/epiphany-latin-america"}},

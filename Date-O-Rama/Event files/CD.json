@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.52, "blue": 0.79},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start:  {mon: 1, d: 1}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 1, d: 4}, first: {era: 1, y: 1959}},
         {titles: {"en": "Laurent-Désiré Kabila Assassination"}, type: "1D", start: {mon: 1, d: 16}, first: {era: 1, y: 2001}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},

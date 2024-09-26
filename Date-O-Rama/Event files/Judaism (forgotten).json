@@ -3,7 +3,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.27, "green": 0.32, "blue": 0.80},
-    eventSpecifications: [
+    events: [
         {titles: {"he": "שמחת כהן", "en": "Simḥath Kohen"}, type: "1D", start: {mon: 1, d: 11}, notes: {"he": "עיונים של רבן שטיינזלץ על יומא ע׳ ע״א"}},
         {titles: {"he": "יום טוב שני של יום כיפור", "en": "Yom Kippur (yom ṭov sheni)"}, type: "1D", start: {mon: 1, d: 11}, "excludeRegionCodes": ["IL", "PS"], notes: {"he": "ראש השנה כ״א ע״א"}},
         {titles: {"he": "יום טוב שני של בני פרעוש בן יהודה", "en": "Second Festival of Bene Par‘osh ben Yehudhah"}, type: "1D", start: {mon: 4, d: 1}, notes: {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},

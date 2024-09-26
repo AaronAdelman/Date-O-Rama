@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {titles: {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)\nSt. Basil’s Day"}, type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/saint-basils-day/"}},
         {titles: {"en": "Feast of the Holy Name of Jesus"}, notes: {"en": "Christmastide (day 10)"}, type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},

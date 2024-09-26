@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "xloc*",
     calendarColor: {"red": 0.89, "green": 0.89, "blue": 0.89},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "New Moon", "he": "מולד הלבנה"}, type: "pt", start: {"zmoPhase": "new"}, emoji: "🌑"},
         {titles: {"en": "First Quarter", "he": "רבע ראשון"}, type: "pt", start: {"zmoPhase": "1stQuarter"}, emoji: "🌓"},
         {titles: {"en": "Full Moon", "he": "ירח מלא"}, type: "pt", start: {"zmoPhase": "full"}, emoji: "🌕"},

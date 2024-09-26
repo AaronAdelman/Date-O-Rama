@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {"red": 0.72, "green": 0.17, "blue": 0.21},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/calennig/"}, titles: {"en": "Calennig"}},
     ]
 }

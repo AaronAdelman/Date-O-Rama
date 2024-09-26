@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.42, "green": 0.11, "blue": 0.24},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 2, wkd: [3], nth: 2}, inherits: "National Sports Day", first: {era: 1, y: 2012}, urls: {"en": "https://nationaltoday.com/national-sports-day-qatar/"}},
         {type: "1D", start: {mon: 3, nth: 1, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/qatar/early-march-bank-holiday"}, titles: {"en": "Early March Bank Holiday"}, first: {era: 1, y: 2009}, inherits: "Bank Holiday"},
         {type: "1D", start: {mon: 12, d: 18}, inherits: "National Day", titles: {"en": "Qatar National Day", "he": "חג לאומי של קטאר", "ar": "اليوم الوطني لقطر"}, urls: {"en": "https://nationaltoday.com/qatar-national-day/"}, first: {era: 1, y: 1878}},

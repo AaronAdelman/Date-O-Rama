@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "greOrJul",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "Zacchaeus Sunday"}, notes: {"en": "Sunday of the Canaanite"}, type: "1D", start: {"Easter": "Easter", "offsetD": -77}},
         {titles: {"en": "The Publican and the Pharisee"}, type: "1D", start: {"Easter": "Easter", "offsetD": -70}},
         {titles: {"en": "The Prodigal Son"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},

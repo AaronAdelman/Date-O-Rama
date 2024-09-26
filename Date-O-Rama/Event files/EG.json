@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
         {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 25}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day January 25", "he": "יום המהפכה ינואר 25", "ar": "عيد ثورة 25 يناير"}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 26, thruD: 28, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}, titles: {"en": "Revolution Day January 25 (in lieu)"}},

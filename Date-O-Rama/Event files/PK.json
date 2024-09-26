@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.10, "green": 0.25, "blue": 0.13},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {era: 1, y: 2021, mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/pakistan-bank-holiday"}, inherits: "Bank Holiday"},
         {type: "1D", start: {era: 1, y: 2021, mon: 4, d: 13}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/pakistan-bank-holiday"}, inherits: "Bank Holiday"},
         {type: "1D", start: {era: 1, y: 2021, mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/pakistan-bank-holiday"}, inherits: "Bank Holiday"},

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Carnival Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
         {inherits: "Carnival Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},

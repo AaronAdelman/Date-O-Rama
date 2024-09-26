@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Monday"},

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.80, "blue": 0.00},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/uruguay/epiphany"}, inherits: "Children’s Day"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://nationaltoday.com/uruguay-carnival/"}, inherits: "Carnival Monday"},
@@ -39,5 +39,8 @@
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/day-of-los-reyes/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+    ],
+    templates: [
+        {template: "Battle of Las Piedras", type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/battle-of-las-piedras/"}, titles: {"en": "Battle of Las Piedras", "es": "Batalla de las Piedras"}},
     ]
 }

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.88, "blue": 0.000},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/vatican-city/lateran-treaty-day"}, inherits: "Lateran Treaty Day"},

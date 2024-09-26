@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.10, "green": 0.91, "blue": 0.81},
     emoji: "📛",
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/national-shepherd-day/"}, titles: {"en": "National Shepherd Day"}},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-erika-day/"}, titles: {"en": "National Erika Day"}},
         {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/national-clara-day/"}, titles: {"en": "National Clara Day"}},

@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-ascension-day"}, inherits: "Accession Day"},
         {titles: {"en": "Renaissance Day"}, type: "1D", start: {mon: 7, d: 23}},

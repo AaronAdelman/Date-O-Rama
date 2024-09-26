@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "nD", start: {era: 1, y: 2023, mon: 1, d: 9}, end: {era: 1, y: 2023, mon: 1, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/yobe/yobe-presidential-visit"}, inherits: "Public Holiday"},

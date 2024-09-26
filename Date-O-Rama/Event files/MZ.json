@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Heroes’ Day", type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/mozambican-heroes-day/"}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/mozambican-national-womens-day/"}, inherits: "Women’s Day"},

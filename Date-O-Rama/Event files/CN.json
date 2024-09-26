@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
-    eventSpecifications: [
+    events: [
         {inherits: "Tomb-Sweeping Day", type: "1D", start: {equinoxOrSolstice: "Mar", offsetD: 15}},
 
         {inherits: "New Year’s Day", type: "1D", start:  {mon: 1, d: 1}},

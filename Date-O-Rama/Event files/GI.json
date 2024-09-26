@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.85, "green": 0.00, "blue": 0.05},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "1D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/commonwealth-day"}, titles: {"en": "Winter Midterm Bank Holiday"}, first: {era: 1, y: 2022}, inherits: "Bank Holiday"},

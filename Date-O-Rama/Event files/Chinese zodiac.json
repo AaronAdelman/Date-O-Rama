@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {"red": 0.87, "green": 0.16, "blue": 0.06},
-    eventSpecifications: [
+    events: [
         {type: "1Y", start: {"yDiv": 12, "yRem": 1}, titles: {"en": "Year of the Rat", "he": "שנת החולדה"}, inherits: "*Rat*"},
         {type: "1Y", start: {"yDiv": 12, "yRem": 2}, titles: {"en": "Year of the Ox", "he": "שנת השור"}, inherits: "*Ox*"},
         {type: "1Y", start: {"yDiv": 12, "yRem": 3}, titles: {"en": "Year of the Tiger", "he": "שנת הטיגריס"}, inherits: "*Tiger*"},
@@ -32,7 +32,7 @@
         {template: "*Snake*", type: "1D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
         {template: "*Tiger*", type: "1D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
     ],
-    templateSpecifications: [
+    templates: [
         {template: "*Dog*", type: "1D", start: {}, emoji: "🐕", inherits: "*Astrology*"},
         {template: "*Dragon*", type: "1D", start: {}, emoji: "🐉", inherits: "*Astrology*"},
         {template: "*Goat*", type: "1D", start: {}, emoji: "🐐", inherits: "*Astrology*"},

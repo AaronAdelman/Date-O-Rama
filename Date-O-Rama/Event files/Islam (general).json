@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {"red": 0.0, "green": 0.97, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "cnr": "Nova hidžretska godina", "es": "Año Nuevo Islámico", "fil": "Unang Araw ng Muharram", "ms": "Awal Tahun Hijrah"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}, notes: {"en": "Awal Muharram\nAmun Jadid", "fil": "Bagong Taong Islamiko", "ms": "Awal Muharram\nMaal Hijrah"}},
         {titles: {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎", "fil": "Araw ng Ashura", "tr": "Aşure Bayramı", "ur": "عاشوراء"}, type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/ashurah/"}, notes: {"en": "Ashura\nAshoora", "fil": "Araw ng Pagluluksa sa Buwan ng Muharram", "ur": "یوم کربلا"}},
         {titles: {"en": "Lailatu 'l-Miʿrāj", "he": "לילת אל־מעראג׳", "ar": "لیلة المعراج‎", "bn": "শবে মেরাজ", "cnr": "Lejletul Mi’radž", "fa": "شب معراج‎", "fil": "Gabi ng Isra at Mi’raj", "tr": "Miraç Kandili", "ms": "Israk dan Mikraj"}, type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Isra_and_Mi%27raj#Modern_Muslim_observance"}},

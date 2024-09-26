@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.22, "green": 0.33, "blue": 0.44},
     emoji: "🐈‍⬛",
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 12, d: 1}, titles: {"en": "Bifocals At The Monitor Liberation Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Pick A Pathologist Pal Day"}, inherits: "*Wellcat*"},
@@ -91,7 +91,7 @@
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "Blasé Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 11, d: 30}, titles: {"en": "Stay Home Because You’re Well Day"}, inherits: "*Wellcat*"},
     ],
-    templateSpecifications: [
+    templates: [
         {template: "*Wellcat*", type: "1D", start: {}, urls: {"en": "https://markusharris.com/wellcat/holidays.html"}},
     ]
 }

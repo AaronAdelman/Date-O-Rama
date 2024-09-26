@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.50, "green": 0.50, "blue": 0.50},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Mungday"}, notes: {"en": "Holyday\nChaos 5"}},
         {type: "1D", start: {mon: 2, d: 19}, titles: {"en": "Chaoflux"}, notes: {"en": "Holyday\nChaos 50"}},
         {type: "1D", start: {mon: 2, d: 29}, titles: {"en": "St. Tib’s Day"}, notes: {"en": "Holyday\nSt. Tib’s Day"}},
@@ -37,7 +37,6 @@
         {type: "1D", start: {mon: 10, d: 19}, inherits: "Eye Day"},
         {type: "1D", start: {mon: 12, d: 31}, inherits: "Eye Day"},
 
-        
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Nude Year’s Day"}, notes: {"en": "Whollyday\n1 Chaos"}},
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "Backwards Day, Reformed"}, notes: {"en": "Whollyday\n10 Chaos"}},
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "Binary Day"}, notes: {"en": "Whollyday\n10 Chaos"}},
@@ -131,25 +130,31 @@
         {type: "1D", start: {mon: 8, d: 5}, titles: {"en": "St. Otis the Elevated’s Day"}},
         {type: "1D", start: {mon: 8, d: 8}, titles: {"en": "St. Pythagoras’s Day"}},
         {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Theatre Night"}},
-        {type: "1D", start: {mon: 8, d: 23}, titles: {"en": "Nancy Fancymanner’s Birthday"}},
+        {type: "1D", start: {mon: 8, d: 23}, titles: {"en": "Nancy Fancymanner’s Birthday"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 8, d: 30}, titles: {"en": "St. Scrivener’s Day"}},
-        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Eris’s Birthday"}},
+        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Eris’s Birthday"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 9, d: 17}, titles: {"en": "Emperor Norton’s Day"}},
         {type: "1D", start: {mon: 9, d: 23}, titles: {"en": "Dog Star Day"}},
         {type: "1D", start: {mon: 9, d: 25}, titles: {"en": "Erotic Terrorism Prevention Day"}},
         {type: "1D", start: {mon: 9, d: 30}, titles: {"en": "Kokomo Dragonland’s Day"}},
         {type: "1D", start: {mon: 10, d: 5}, titles: {"en": "Inexpensive Gift Day"}},
         {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Hildegarde’s Night"}},
-        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Hugo Troy Tutlege, Jr.’s Birthday"}},
+        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Hugo Troy Tutlege, Jr.’s Birthday"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 10, d: 31}, titles: {"en": "Discordian Saints Day"}},
         {type: "1D", start: {mon: 11, d: 5}, titles: {"en": "Motion Picture Day"}},
         {type: "1D", start: {mon: 11, d: 11}, titles: {"en": "St. Yossarian’s Day"}},
         {type: "1D", start: {mon: 11, d: 23}, titles: {"en": "Romance Day"}},
         {type: "1D", start: {mon: 11, d: 25}, titles: {"en": "Literary Saints Day"}},
         {type: "1D", start: {mon: 11, d: 30}, titles: {"en": "Early Lunch Day"}},
-        {type: "1D", start: {mon: 12, d: 1}, titles: {"en": "Rosetta Stone’s Birthday"}},
+        {type: "1D", start: {mon: 12, d: 1}, titles: {"en": "Rosetta Stone’s Birthday"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 12, d: 7}, titles: {"en": "Buddy Darma’s Day"}},
         {type: "1D", start: {mon: 12, d: 23}, titles: {"en": "Dragon Clan Anniversary Evening"}},
-        {type: "1D", start: {mon: 12, d: 25}, titles: {"en": "Jay See Fitzdragon’s Birthday"}}
-      ]
+        {type: "1D", start: {mon: 12, d: 25}, titles: {"en": "Jay See Fitzdragon’s Birthday"}, inherits: "*BDay*"},
+      ],
+    templates: [
+        {template: "Apostle Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Apostle Day"}, notes: {"en": "Whollyday"}},
+        {template: "Sloth Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Sloth Day"}, notes: {"en": "Whollyday"}},
+        {template: "Flux Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Flux Day"}, notes: {"en": "Whollyday"}},
+        {template: "Eye Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Eye Day"}, notes: {"en": "Whollyday"}},
+    ]
 }

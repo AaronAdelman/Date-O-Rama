@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {inherits: "National Love People Day", type: "1D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}},
         {titles: {"en": "Church Library Month"}, type: "1M", start: {mon: 10}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/church-library-month-october/"}},
         {titles: {"en": "Church Safety and Security Month"}, type: "1M", start: {mon: 10}, emoji: "🧯🔒", urls: {"en": "https://nationaldaycalendar.com/church-safety-and-security-month-october/"}},

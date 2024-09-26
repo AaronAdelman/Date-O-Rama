@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/armed-forces-day-2/"}, first: {era: 1, y: 1957}},
         {type: "1D", start: {mon: 3, wkd: [4], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/liberia/decoration-day"}, titles: {"en": "Decoration Day"}, first: {era: 1, y: 1917}},

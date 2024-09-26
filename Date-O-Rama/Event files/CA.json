@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.77, "green": 0.24, "blue": 0.17},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, inherits: "New Year’s Day (in lieu)", locations: {"en": "Saskatchewan"}},
         {type: "1D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Islander Day", "fr": "Fête des Insulaires"}, urls: {"en": "https://nationaltoday.com/islander-day/"}, first: {era: 1, y: 2008}},
@@ -124,5 +124,8 @@
         {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 2025}},
         {type: "1D", start: {mon: 8, wkd: [4], nth: 1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 1816}, last: {era: 1, y: 2024}},
         {type: "1D", start: {mon: 7, wkd: [4], nth: -1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 2025}},
+    ],
+    templates: [
+        {template: "Canadian Environment Week", type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 6, thruD: 11, wkd: [1]}, titles: {"en": "Canadian Environment Week"}, emoji: "🌱", urls: {"en": "https://www.canada.ca/en/environment-climate-change/services/canadian-environment-week.html"}},
     ]
 }

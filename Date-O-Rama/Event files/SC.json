@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.18, "blue": 0.42},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 3, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "National Holiday"},

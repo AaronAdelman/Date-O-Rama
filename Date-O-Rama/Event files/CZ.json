@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.19, "blue": 0.53},
-    eventSpecifications: [
+    events: [
         {inherits: "Independence Day", type: "1D", start: {mon: 1, d: 1}, first: {era: 1, y: 1993}, titles: {"en": "Restoration Day", "cs": "Den obnovy samostatného českého státu"}},
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

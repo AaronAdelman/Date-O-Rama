@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 2, d: 22}, inherits: "Founding Day", first: {era: 1, y: 1727}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, titles: {"en": "Saudi Flag Day"}, first: {era: 1, y: 1937}, inherits: "Flag Day"},
         {inherits: "National Day", type: "1D", start: {mon: 9, d: 22, wkd: [1, 5]}, urls: {"en": "https://en.wikipedia.org/wiki/Saudi_National_Day"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day (bridge day)"}},

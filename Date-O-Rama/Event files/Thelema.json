@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.75},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "Feast of the Supreme Ritual"}, type: "1D", start: {mon: 3, d: 20}},
         {titles: {"en": "Equinox of the Gods"}, type: "1D", start: {"equinoxOrSolstice": "Mar"}, first: {era: 1, y: 1904}},
         {titles: {"en": "Feast of the Three Days of the Writing of the Book of the Law"}, type: "nD", start: {mon: 4, d: 8}, end: {mon: 4, d: 10}, first: {era: 1, y: 1904}},

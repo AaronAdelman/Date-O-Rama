@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {"red": 0.00, "green": 0.34, "blue": 0.72},
-    eventSpecifications: [
+    events: [
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, wkd: [2], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/coming-of-age-day/"}, titles: {"en": "Coming of Age Day", "he": "יום ההתבגרות", "ja": "成人の日"}, notes: {"en": "Coming-of-Age Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-foundation-day/"}, inherits: "National Foundation Day", notes: {"en": "Kenkoku Kinen no Hi"}},

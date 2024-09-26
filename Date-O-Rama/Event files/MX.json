@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.39, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 2, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/mexico-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1917}},
         {type: "1D", start: {mon: 3, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/benito-juarez-birthday-memorial/"}, notes: {"en": "Benito Juarez Birthday Memorial"}, inherits: "*BDay*", titles: {"en": "Benito Juarez’s Birthday", "es": "Natalicio de Benito Juárez"}},

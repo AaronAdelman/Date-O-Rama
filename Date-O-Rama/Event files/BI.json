@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.26, "green": 0.69, "blue": 0.16},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 2, d: 5}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/unity-day-burundi/"}},
         {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}, inherits: "Presidents’ Day", notes: {"en": "Cyprien Ntaryamira Day"}},

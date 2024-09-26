@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lao/international-new-years-day"}, inherits: "New Year’s Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "nD", start: {mon: 4, d: 14}, end: {mon: 4, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/lao/lao-new-year"}, titles: {"en": "Lao New Year", "lo": "ບຸນປີໃໝ່ລາວ"}},

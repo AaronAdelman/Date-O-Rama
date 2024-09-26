@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.89, "green": 0.89, "blue": 0.89},
     emoji: "🌕",
-    eventSpecifications: [
+    events: [
         {titles: {"en": "Blue Moon"}, type: "1D", start: {"zmoPhase": "2ndFull"}, emoji: "🔵"},
         {titles: {"en": "Wolf Moon"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 1}, emoji: "🐺"},
         {titles: {"en": "Snow Moon"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 2}, emoji: "❄️"},

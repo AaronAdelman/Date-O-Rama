@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "National Candy Cane Day"}, type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/candy-cane-day/"}, notes: {"en": "National Candy Cane Day"}},
         {titles: {"en": "National Champagne Day"}, type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/champagne-day/"}, emoji: "🥂"},
         {titles: {"en": "National Christmas Lights Day"}, type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-christmas-lights-day/"}, emoji: "🎄"},

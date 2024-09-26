@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {"red": 0.17, "green": 0.41, "blue": 0.31},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
         {type: "1D", start: {mon: 10, d: 3, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
         {type: "1D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/jumatul-bidah"}, titles: {"en": "Jumatul Bidah"}},

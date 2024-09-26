@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {inherits: "Ostara", type: "1D", start: {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xb"]},
         {inherits: "Beltane", type: "1D", start: {mon: 5, d: 1}, "regionCodes": ["xb"]},
         {inherits: "Litha", type: "1D", start: {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xb"]},

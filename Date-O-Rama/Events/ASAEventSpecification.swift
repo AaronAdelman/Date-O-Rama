@@ -208,7 +208,9 @@ extension ASAEventSpecification {
             if index != nil {
                 template = eventsFileTemplates![index!]
             }
-        } else {
+        }
+        
+        if template == nil {
             let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
             let index = templatesEventFile.templateSpecifications!.firstIndex(where: {
                 eventSpecification.matchesTemplate(templateEventSpecification: $0)
@@ -234,31 +236,18 @@ extension ASAEventSpecification {
         
         var temp = self
         if temp.titles == nil {
-            temp.titles = template?.titles
+            temp.titles = template!.titles
         }
         if temp.notes == nil {
-            temp.notes = template?.notes
+            temp.notes = template!.notes
         }
         if temp.urls == nil {
-            temp.urls = template?.urls
+            temp.urls = template!.urls
         }
         if temp.emoji == nil {
-            temp.emoji = template?.emoji
+            temp.emoji = template!.emoji
         }
         
         return temp
     } // func filledIn(eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification
 } // extension ASAEventSpecification
-
-
-// MARK: -
-
-enum ASAWeekday:  Int, Codable {
-    case sunday    = 1
-    case monday    = 2
-    case tuesday   = 3
-    case wednesday = 4
-    case thursday  = 5
-    case friday    = 6
-    case saturday  = 7
-} // enum ASAWeekday

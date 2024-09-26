@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "1D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, inherits: "Chakri Day"},
@@ -113,5 +113,8 @@
         {type: "1D", start: {d: 4, mon: 9}, titles: {"en": "Royal Thai Navy Submarine Memorial Day", "th": "วันเรือดำน้ำไทย"}},
         {type: "1D", start: {d: 15, mon: 9}, titles: {"en": "Silpa Bhirasri Day", "th": "วันศิลป์ พีระศรี"}},
         {type: "1D", start: {d: 25, mon: 12}, inherits: "Christmas Day"},
+    ],
+    templates: [
+        {template: "Chakri Day", type: "1D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day", "th": "วันจักรี"}, notes: {"en": "Chakri Memorial Day"}},
     ]
 }

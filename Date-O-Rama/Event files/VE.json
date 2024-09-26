@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {type: "1D", start: {mon: 1, d: 7, thruD: 11, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/epiphany-latin-america"}, inherits: "Epiphany Holiday"},

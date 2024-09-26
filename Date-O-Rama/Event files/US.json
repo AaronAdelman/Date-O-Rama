@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
-    eventSpecifications: [
+    events: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Martin Luther King, Jr. Day", type: "1D", start: {mon: 1, wkd: [2], nth: 3}, first: {era: 1, y: 1986}},
         {inherits: "Presidents’ Day", type: "1D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/presidents-day/"}, first: {era: 1, y: 1879}},

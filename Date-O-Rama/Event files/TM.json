@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/turkmenistan-memorial-day"}, inherits: "Memorial Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},

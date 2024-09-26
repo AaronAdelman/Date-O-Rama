@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/negeri-sembilan/birthday-of-the-sultan-of-negeri-sembilan"}, titles: {"en": "Birthday of the Sultan of Negeri Sembilan", "ms": "Hari Keputeraan Yang di-Pertuan Besar Negeri Sembilan"}, inherits: "*BDay*", first: {era: 1, y: 1948}},

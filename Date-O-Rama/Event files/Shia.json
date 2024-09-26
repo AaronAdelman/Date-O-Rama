@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {"red": 0.05, "green": 0.95, "blue": 0.05},
-    eventSpecifications: [
+    events: [
         {titles: {"en": "al-Arba‘īn", "he": "ארבעין", "ar": "الأربعين‎", "fa": "چهلم‎"}, type: "1D", start: {"dOfY": 50}, urls: {"en": "https://en.wikipedia.org/wiki/Arba'een"}},
         {inherits: "Mawlid", type: "1D", start: {mon: 3, d: 17}},
         {titles: {"en": "Eid al-Ghadeer (Event of Ghadir Khumm)", "he": "חדית׳ ע׳דיר ח׳ם", "ar": "حَدِيْث ٱلْغَدِيْر‎", "fa": "رویداد غدیر خم‎"}, type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/eid-e-ghadir/"}, notes: {"en": "Eid-e-Ghadir"}},

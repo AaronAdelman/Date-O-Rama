@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.61, "green": 0.80, "blue": 0.92},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-san-marino/"}, inherits: "Liberation Day", first: {era: 1, y: 1740}},

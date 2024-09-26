@@ -4,7 +4,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.01, "green": 0.2, "blue": 1.0},
-    eventSpecifications: [
+    events: [
         {titles: {"he": "יום־שנה של שרה אימנו"}, type: "1D", start: {mon: 1, d: 1}, first: {era: 0, y: 2085}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי מיימון אבי הרמב״ם"}, type: "1D", start: {mon: 1, d: 1}, first: {era: 0, y: 1111}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב סלמאן אליהו"}, type: "1D", start: {mon: 1, d: 2}, first: {era: 0, y: 5701}, inherits: "*DeathAnniv*"},

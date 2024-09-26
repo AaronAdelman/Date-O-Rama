@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.93, "green": 0.11, "blue": 0.15},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/day-after-new-years-day"}, inherits: "Day after New Year’s Day", first: {era: 1, y: 2023}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

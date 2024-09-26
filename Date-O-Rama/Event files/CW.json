@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.17, "blue": 0.50},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/carnival-monday"}, inherits: "Carnival Monday"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

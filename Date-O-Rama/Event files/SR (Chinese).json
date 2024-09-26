@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
     ]

@@ -3,7 +3,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.27, "green": 0.32, "blue": 0.80},
-    eventSpecifications: [
+    events: [
         {titles: {"he": "יום שבו נתפס רבי עקיבא והייתה שעת שמד", "en": "Day of the arrest of Rabbi ‘Aqiva’ in a time of religious persecution"}, type: "1D", start: {mon: 1, d: 5}},
         {titles: {"he": "יום שבו נגזרה גזירה על אבותינו שימותו ברעב בחרב ובדבר בשל מעשה העגל", "en": "Day of a decree that our ancestors should die by famine, the sword, and plague because of the Golden Calf"}, type: "1D", start: {mon: 1, d: 7}},
         {titles: {"he": "יום שבו עוורו את המלך צדקיהו והמיתו את בניו", "en": "Day Ṣidhqiyyahu was blinded and they killed his children"}, type: "1D", start: {mon: 2, d: 7}},

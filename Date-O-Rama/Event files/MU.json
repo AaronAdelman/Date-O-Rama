@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
-    eventSpecifications: [
+    events: [
         {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
         {type: "1D", start: {mon: 1, d: 3, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}, inherits: "New Year’s Holiday"},

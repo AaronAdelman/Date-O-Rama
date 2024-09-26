@@ -4,7 +4,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.31, "green": 0.67, "blue": 0.8},
-    eventSpecifications: [
+    events: [
         {titles: {"he": "יום זיכרון לאומי לאסון 7 באוקטובר", "en": "October 7 Massacre Memorial Day"}, type: "1D", start: {mon: 1, d: 24}, first: {era: 0, y: 5785}},
         {titles: {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, type: "1D", start: {mon: 2, d: 7}},
         {titles: {"he": "יום הזיכרון ליצחק רבין", "en": "Yiṣḥaq Rabbin Memorial Day"}, type: "1D", start: {mon: 2, d: 12, wkd: [1, 2, 3, 4, 5]}},

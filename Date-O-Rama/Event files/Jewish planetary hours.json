@@ -3,7 +3,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.5},
-    eventSpecifications: [
+    events: [
         {inherits: "Hour of Mercury", type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 0.0, "dHalf": "n"}, end: {wkd: [1], "ptType": "R2ST", "zsuH": 1.0, "dHalf": "n"}},
         {inherits: "Hour of the Moon", type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 1.0, "dHalf": "n"}, end: {wkd: [1], "ptType": "R2ST", "zsuH": 2.0, "dHalf": "n"}},
         {inherits: "Hour of Saturn", type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 2.0, "dHalf": "n"}, end: {wkd: [1], "ptType": "R2ST", "zsuH": 3.0, "dHalf": "n"}},
@@ -196,7 +196,7 @@
         {inherits: "Hour of the Sun", type: "span", start: {wkd: [7], "ptType": "R2ST", "zsuH": 10.0, "dHalf": "d"}, end: {wkd: [7], "ptType": "R2ST", "zsuH": 11.0, "dHalf": "d"}},
         {inherits: "Hour of Venus", type: "span", start: {wkd: [7], "ptType": "R2ST", "zsuH": 11.0, "dHalf": "d"}, end: {wkd: [1], "ptType": "R2ST", "zsuH": 0.0, "dHalf": "n"}},
     ],
-    templateSpecifications: [
+    templates: [
         {template: "Hour of Jupiter", titles: {"he":  "שעת צדק", "en": "Hour of Jupiter"}, type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 3.0, "dHalf": "n"}, inherits: "*zju*", inherits: "*Astrology*"},
         {template: "Hour of Mars", titles: {"he":  "שעת מאדים", "en": "Hour of Mars"}, type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 4.0, "dHalf": "n"}, inherits: "*zma*", inherits: "*Astrology*"},
         {template: "Hour of Mercury", titles: {"he":  "שעת כוכב", "en": "Hour of Mercury"}, type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 0.0, "dHalf": "n"}, inherits: "*zme*", inherits: "*Astrology*"},

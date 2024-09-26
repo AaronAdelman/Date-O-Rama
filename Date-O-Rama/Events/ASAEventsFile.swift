@@ -31,6 +31,17 @@ struct ASAEventsFile: Codable {
     var emoji: String?
     var eventSpecifications: Array<ASAEventSpecification>
     var templateSpecifications: Array<ASAEventSpecification>?
+    
+    enum CodingKeys: String, CodingKey {
+        case titles
+        case defaultLocale
+        case calendarColor
+        case calendarCode
+        case otherCalendarCodes
+        case emoji
+        case eventSpecifications = "events"
+        case templateSpecifications = "templates"
+    }
 } // struct ASAEventsFile
 
 
