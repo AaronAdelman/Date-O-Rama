@@ -583,5 +583,7 @@
         {template: "Confederate Memorial Day", titles: {"en": "Confederate Memorial Day", "fr": "Fête du mémorial des confédérés"}, type: "1D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},
         {template: "International Dadaism Month", type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://www.npr.org/templates/story/story.php?storyId=5077635"}, titles: {"en": "International Dadaism Month", "he": "חודש הדאדאיזם הבינלאומי"}},
         {template: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, d: 3}, titles: {"en": "Jefferson Davis’s Birthday", "he": "יום הולדת של ג׳פרסון דייוויס", "fr": "Anniversaire de Jefferson Davis"}, urls: {"en": "https://en.wikipedia.org/wiki/Jefferson_Davis"}, inherits: "*BDay*"},
+    ],
+    templates: [
     ]
 }

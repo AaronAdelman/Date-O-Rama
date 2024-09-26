@@ -24,5 +24,9 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 1, wkd: [6], nth: 1}},
         {type: "1D", start: {mon: 12, d: 26}, inherits: "Junkanoo", first: {era: 1, y: 1708}},
         {type: "1D", start: {mon: 1, d: 1}, inherits: "Junkanoo", first: {era: 1, y: 1709}},
-   ]
+   ],
+    templates: [
+        {template: "Junkanoo", type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/junkanoo/"}, titles: {"en": "Junkanoo"}},
+
+    ]
 }

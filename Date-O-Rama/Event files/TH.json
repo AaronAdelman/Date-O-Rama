@@ -116,5 +116,6 @@
     ],
     templates: [
         {template: "Chakri Day", type: "1D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day", "th": "วันจักรี"}, notes: {"en": "Chakri Memorial Day"}},
+        {template: "King Bhumibol’s Birthday", type: "1D", start: {mon: 12, d: 6, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/king-bhumibols-birthday/"}, titles: {"en": "King Bhumibol’s Birthday", "he": "יום הולדתו של פומיפון המלך", "th": "ภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร"}, inherits: "King’s Birthday", notes: {"en": "King Bhumibol Adulyadej’s Birthday"}},
     ]
 }

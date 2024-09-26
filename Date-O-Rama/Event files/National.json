@@ -2427,5 +2427,6 @@
     templates: [
         {template: "Forefathers’ Day", type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},
         {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, titles: {"en": "I Love My State Parks Week"}, urls: {"en": "https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️"},
+        {template: "Johnny Appleseed Day", type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/johnny-appleseed-day/"}, titles: {"en": "Johnny Appleseed Day"}, emoji: "🍎", notes: {"en": "National Johnny Appleseed Day"}},
     ]
 }
