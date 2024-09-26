@@ -88,7 +88,7 @@
         {inherits: "International Day of Persons with Disabilities", type: "1D", start: {mon: 12, d: 3}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 12, d: 5}, inherits: "International Volunteer Day", first: {era: 1, y: 1985}},
         {inherits: "Human Rights Day", type: "1D", start: {mon: 12, d: 10}, first: {era: 1, y: 1951}},
-
+        
         {type: "1M", start: {mon: 2}, titles: {"en": "Ovarian Cancer Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 3}, inherits: "Endometriosis Awareness Month", first: {era: 1, y: 1993}},
         {type: "1M", titles: {"en": "NZ Music Month"}, start: {mon: 5}, emoji: "🎶"},
@@ -99,5 +99,8 @@
         {type: "1D", start: {mon: 5, d: 2}, inherits: "National Alpaca Day", emoji: "🦙"},
         {type: "nD", start: {mon: 10, d: 27}, end: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/grandparents-week/"}, titles: {"en": "Grandparents Week"}, first: {era: 1, y: 2002}, emoji: "👴👵"},
         {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/wolfenoot/"}, titles: {"en": "Wolfenoot"}, emoji: "🐺"},
-        ]
-    }
+    ],
+    templates: [
+        {template: "Matariki", type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/matariki"}, titles: {"en": "Matariki"}, emoji: "🌌"},
+    ]
+}

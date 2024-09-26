@@ -34,5 +34,9 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, titles: {"en": "Pocky Day"}},
         {type: "1D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "1D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
+    ],
+    templates: [
+        {template: "Labor Thanksgiving Day", type: "1D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, notes: {"en": "Labor Appreciation Day"}, titles: {"en": "Labor Thanksgiving Day", "ja": "勤労感謝の日"}, first: {era: 1, y: 1948}, emoji: "㊘"},
+        {template: "Mountain Day (in lieu)", titles: {"en": "Mountain Day (in lieu)", "he": "יום ההר (במקומו)"}, type: "1D", start: {mon: 8, d: 12, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-day/"}, emoji: "🗻"},
     ]
 }

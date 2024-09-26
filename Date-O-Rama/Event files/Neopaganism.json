@@ -23,5 +23,15 @@
         {inherits: "Imbolc", type: "1D", start: {mon: 8, d: 1}, "regionCodes": ["xc"]},
         
         {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/the-night-of-hekate/"}, titles: {"en": "Night of Hekate"}},
- ]
+    ],
+    templates: [
+        {template: "Beltane", titles: {"en": "Beltane", "he": "בלטיין"}, notes: {"en": "May Day", "fi": "Vappu", "ga": "Lá Bealtaine", "hu": "Majális", "no": "Første mai", "sv": "Första maj"}, type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/beltane/"}},
+        {template: "Imbolc", titles: {"en": "Imbolc", "he": "אימבולק", "ga": "Imbolc"}, type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/imbolc/"}},
+        {template: "Litha", titles: {"en": "Litha", "he": "לית׳א"}, type: "1D", start: {"equinoxOrSolstice": "Jun"}},
+        {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "1D", start: {"equinoxOrSolstice": "Mar"}},
+        {template: "Lughnasadh", titles: {"en": "Lughnasadh", "he": "לונאסה"}, type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lughnasadh/"}},
+        {template: "Mabon", titles: {"en": "Mabon", "he": "מאבון"}, type: "1D", start: {"equinoxOrSolstice": "Sep"}, urls: {"en": "https://nationaltoday.com/mabon-day/"}},
+        {template: "Samhain", titles: {"en": "Samhain", "he": "סמהיין"}, type: "1D", start: {mon: 11, d: 1}},
+        {template: "Yule", titles: {"en": "Yule", "he": "יוּל"}, type: "1D", start: {"equinoxOrSolstice": "Dec"}, urls: {"en": "https://nationaltoday.com/yule/"}},
+    ]
 }

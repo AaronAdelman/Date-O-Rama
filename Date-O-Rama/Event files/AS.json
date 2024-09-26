@@ -26,5 +26,8 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
         {inherits: "Children’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
-   ]
+   ],
+    templates: [
+        {template: "Manu’a Cession Day (in lieu)", type: "1D", start: {mon: 7, d: 15, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, titles: {"en": "Manu’a Cession Day (in lieu)"}},
+    ]
 }
