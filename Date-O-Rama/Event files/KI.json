@@ -36,5 +36,7 @@
     ],
     templates: [
         {template: "Education Day", type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/education-day"}, titles: {"en": "Education Day"}},
+        {template: "National Culture and Senior Citizens Day", type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, titles: {"en": "National Culture and Senior Citizens Day"}, emoji: "👴👵"},
+        {template: "National Health Day (in lieu)", type: "1D", start: {mon: 4, d: 9, wkd: [6]}, inherits: "National Health Day", titles: {"en": "National Health Day (in lieu)"}},
     ]
 }

@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 6}, titles: {"en": "Korean Children’s Union Day", "ko": "조선소년단창립절"}, notes: {"en": "Children’s Union Foundation Day"}, first: {era: 1, y: 1946}},
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/day-of-victory"}, titles: {"en": "Day of Victory", "ko": "조국해방전쟁 승리 기념일"}, first: {era: 1, y: 1996}},
-        {inherits: "National Liberation Day of Korea", type: "1D", start: {mon: 8, d: 15}, first: {era: 1, y: 1950}},
+        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Liberation Day", "he": "חג השחרור הלאומי", "ko_KR": "광복절", "ko_KP": "조국해방의 날"}, urls: {"en": "https://nationaltoday.com/liberation-day-south-korea/"}, first: {era: 1, y: 1950}},
         {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Day of Songun", "ko": "광명성절"}, urls: {"en": "https://nationaltoday.com/day-of-songun/"}, first: {era: 1, y: 2013}, emoji: "🎖"},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/north-korea-national-day"}, first: {era: 1, y: 1948}, notes: {"en": "National Day"}, titles: {"en": "Day of the Foundation of the Republic", "ko": "인민정권 창건일"}},
         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/party-foundation-day"}, titles: {"en": "Party Foundation Day", "ko": "노동당 창건일"}, first: {era: 1, y: 1945}},

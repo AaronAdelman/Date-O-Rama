@@ -585,5 +585,7 @@
         {template: "Jefferson Davis’s Birthday", type: "1D", start: {mon: 6, d: 3}, titles: {"en": "Jefferson Davis’s Birthday", "he": "יום הולדת של ג׳פרסון דייוויס", "fr": "Anniversaire de Jefferson Davis"}, urls: {"en": "https://en.wikipedia.org/wiki/Jefferson_Davis"}, inherits: "*BDay*"},
         {template: "King Kamehameha I Day", type: "1D", start: {mon: 6, d: 11, wkd: [2, 3, 4, 5, 6]}, titles: {"en": "King Kamehameha I Day", "he": "יום קמהאמהה הראשון", "fr": "Journée de Kamehameha Ier"}, urls: {"en": "https://nationaltoday.com/king-kamehameha-day/"}},
         {template: "Malcolm X Day", titles: {"en": "Malcolm X Day", "he": "יום מלקולם אקס"}, type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/malcolm-x-day/"}},
+        {template: "National Prescription Drug Take Back Day", type: "1D", start: {mon: 10, wkd: [7], nth: -1}, titles: {"en": "National Prescription Drug Take Back Day"}, urls: {"en": "https://www.dea.gov/takebackday"}, emoji: "💊", inherits: "*MedAwareness*"},
+        {template: "National Read Across America Day", type: "1D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-read-across-america-day-dr-seuss-day-march-2-unless-weekend"}, first: {era: 1, y: 1998}, emoji: "📖"},
     ]
 }

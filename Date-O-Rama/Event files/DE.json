@@ -60,5 +60,8 @@
         {type: "1D", start: {mon: 9, wkd: [7], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/german-language-day/"}, titles: {"en": "German Language Day", "de": "Tag der deutschen Sprache"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 19}, titles: {"en": "National Soup Day"}},
         {type: "1D", start: {mon: 10, wkd: [1], nth: 2}, inherits: "Grandmothers’ Day", first: {era: 1, y: 2010}},
+    ],
+    templates: [
+        {template: "National Rat Catcher’s Day", type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-rat-catchers-day/"}, titles: {"en": "National Rat Catcher’s Day"}, emoji: "🪈"},
     ]
 }

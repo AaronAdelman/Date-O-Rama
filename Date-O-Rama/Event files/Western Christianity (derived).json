@@ -130,5 +130,8 @@
         {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/operation-santa-paws/"}, titles: {"en": "Operation Santa Paws"}, first: {era: 1, y: 2001}},
         {type: "nD", start: {mon: 12, d: 14}, end: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/christmas-bird-count-week/"}, titles: {"en": "Christmas Bird Count Week"}, first: {era: 1, y: 1900}, emoji: "🦃🦅🦆"},
         {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}, emoji: "🍫"},
+    ],
+    templates: [
+        {template: "National Valentine Shopping Reminder Day", type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-valentine-shopping-reminder-day/"}, titles: {"en": "National Valentine Shopping Reminder Day"}, emoji: "❤️🛍️"},
     ]
 }

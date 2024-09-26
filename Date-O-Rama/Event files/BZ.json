@@ -42,5 +42,6 @@
     ],
     templates: [
         {template: "Garifuna Settlement Day", type: "1D", start: {mon: 11, d: 19}, titles: {"en": "Garifuna Settlement Day"}, urls: {"en": "https://nationaltoday.com/garifuna-settlement-day/"}},
+        {template: "National Heroes and Benefactors Day (in lieu)", type: "1D", start: {mon: 3, d: 6, thruD: 8, wkd: [2]}, titles: {"en": "National Heroes and Benefactors Day (in lieu)"}, inherits: "National Heroes and Benefactors Day"},
     ]
 }
