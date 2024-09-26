@@ -186,13 +186,24 @@ extension ASAEventSpecification {
         return self.inherits == templateEventSpecification.template
     } // func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool
     
-    static var templateEventsFile: ASAEventsFile? = {
+    static let templateEventsFile: ASAEventsFile? = {
         let (file, error) = ASAEventsFile.builtIn(fileName: "*Templates")
         if error != nil {
             debugPrint(#file, #function, error as Any)
         }
         return file
     }()
+    
+    fileprivate func delegatedTemplateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>) -> ASAEventSpecification? {
+        var template: ASAEventSpecification?
+        let index = eventsFileTemplates.firstIndex(where: {
+            eventSpecification.matchesTemplate(templateEventSpecification: $0)
+        })
+        if index != nil {
+            template = eventsFileTemplates[index!]
+        }
+        return template
+    }
     
     fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification? {
         if eventSpecification.inherits == nil || ASAEventSpecification.templateEventsFile == nil {
@@ -202,22 +213,12 @@ extension ASAEventSpecification {
         var template: ASAEventSpecification?
         
         if eventsFileTemplates != nil {
-            let index = eventsFileTemplates!.firstIndex(where: {
-                eventSpecification.matchesTemplate(templateEventSpecification: $0)
-            })
-            if index != nil {
-                template = eventsFileTemplates![index!]
-            }
+            template = delegatedTemplateEventSpecification(for: eventSpecification, eventsFileTemplates: eventsFileTemplates!)
         }
         
         if template == nil {
             let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
-            let index = templatesEventFile.templateSpecifications!.firstIndex(where: {
-                eventSpecification.matchesTemplate(templateEventSpecification: $0)
-            })
-            if index != nil {
-                template = templatesEventFile.templateSpecifications![index!]
-            }
+            template = delegatedTemplateEventSpecification(for: eventSpecification, eventsFileTemplates: templatesEventFile.templateSpecifications!)
         }
         
         if template != nil {
