@@ -415,7 +415,6 @@
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-programmatic-advertising-day/"}, titles: {"en": "National Programmatic Advertising Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-with-almonds-day/"}, titles: {"en": "National Bittersweet Chocolate with Almonds Day"}, emoji: "🍫"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-parents-as-teachers-day/"}, titles: {"en": "National Parents as Teachers Day"}, first: {era: 1, y: 2001}},
-        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/stem-steam-day/"}, titles: {"en": "National STEM/STEAM Day"}, notes: {"en": "STEM/STEAM Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/cappuccino-day/"}, titles: {"en": "​National Cappuccino Day"}, emoji: "☕️"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/harvey-wallbanger-day/"}, titles: {"en": "National Harvey Wallbanger Day"}, first: {era: 1, y: 1971}, emoji: "🥃"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/national-dunce-day/"}, titles: {"en": "National Dunce Day"}, inherits: "*DeathAnniv*"},
@@ -2424,5 +2423,9 @@
         {type: "nD", start: {mon: 9, d: 7, thruD: 13, wkd: [1], durationD: 7}, titles: {"en": "National Assisted Living Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-assisted-living-week/"}, first: {era: 1, y: 1995}, emoji: "👴👵"},
         {type: "nD", start: {mon: 9, d: 9, thruD: 15, wkd: [7], durationD: 7}, titles: {"en": "Neonatal Nurses Week"}, urls: {"en": "https://nann.org/about/national-neonatal-nurses-week"}, notes: {"en": "National Neonatal Nurses Week"}, emoji: "♥️", first: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 9, wkd: [1], d: 8, thruD: 14, durationD: 7}, titles: {"en": "Grandparents Week"}, inherits: "Grandparents’ Day", urls: {"en": "https://grandparentsday.org/"}},
+    ],
+    templates: [
+        {template: "Forefathers’ Day", type: "1D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},
+        {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, titles: {"en": "I Love My State Parks Week"}, urls: {"en": "https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️"},
     ]
 }

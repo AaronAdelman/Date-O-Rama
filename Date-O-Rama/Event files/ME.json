@@ -29,5 +29,8 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+    ],
+    templates: [
+        {template: "Independence Day Holiday", type: "1D", start: {mon: 8, d: 15, wkd: [5]}, titles: {"en": "Independence Day Holiday"}, inherits: "Independence Day"},
     ]
 }

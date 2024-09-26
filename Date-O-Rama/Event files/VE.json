@@ -66,5 +66,8 @@
         {type: "1D", start: {mon: 12, d: 8}, titles: {"en": "Loyalty Day", "es": "Día de la Lealtad"}},
         {type: "1D", start: {mon: 12, d: 10}, inherits: "Air Force Day"},
         {type: "1D", start: {mon: 12, d: 17}, titles: {"en": "Simón Bolívar Memorial Day", "es": "Aniversario de la Muerte de Libertador Simón Bolívar"}},
+    ],
+    templates: [
+        {template: "Holy Week Holiday", type: "1D", start: {mon: 4, d: 3}, titles: {"en": "Holy Week Holiday"}},
     ]
 }

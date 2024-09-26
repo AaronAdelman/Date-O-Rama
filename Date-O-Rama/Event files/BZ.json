@@ -39,5 +39,8 @@
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 5, d: 25, wkd: [2]}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
+    ],
+    templates: [
+        {template: "Garifuna Settlement Day", type: "1D", start: {mon: 11, d: 19}, titles: {"en": "Garifuna Settlement Day"}, urls: {"en": "https://nationaltoday.com/garifuna-settlement-day/"}},
     ]
 }

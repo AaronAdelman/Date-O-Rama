@@ -16,7 +16,8 @@
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}, urls: {"en": "https://www.officeholidays.com/holidays/luxembourg/whit-monday"}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": 51}, inherits: "Whit Tuesday"},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/luxembourg/mothers-day"}},
-        {inherits: "Grand Duke’s Official Birthday", type: "1D", start: {mon: 6, d: 23}, notes: {"en": "National Day", "he": "יום הלאומי", "lb": "Nationalfeierdag"}, urls: {"en": "https://nationaltoday.com/national-day-of-luxembourg/"}},
+        {type: "1D", start: {mon: 6, d: 23}, titles: {"en": "Grand Duke’s Official Birthday", "he": "יום הולדתו של הדוכס הגדול", "lb": "Groussherzogsgebuertsdag"}, notes: {"en": "National Day", "he": "יום הלאומי", "lb": "Gehaansdag\nNationalfeierdag"}, urls: {"en": "https://nationaltoday.com/national-day-of-luxembourg/"}, inherits: "*BDay*"},
+
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/luxembourg/fathers-day"}, inherits: "Father’s Day"},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},

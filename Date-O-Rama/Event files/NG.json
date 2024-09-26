@@ -53,5 +53,8 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
        {inherits: "Armed Forces Day", type: "1D", start: {mon: 1, d: 15}, titles: {"en": "Armed Forces Remembrance Day"}},
-   ]
+   ],
+    templates: [
+        {template: "Isese Day", type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/osun-public-holiday"}, titles: {"en": "Isese Day"}, notes: {"en": "Traditional Worshippers’ Day"}},
+    ]
 }

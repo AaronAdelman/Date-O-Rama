@@ -36,7 +36,7 @@
         {type: "1D", start: {mon: 8, d: 7}, inherits: "Eye Day"},
         {type: "1D", start: {mon: 10, d: 19}, inherits: "Eye Day"},
         {type: "1D", start: {mon: 12, d: 31}, inherits: "Eye Day"},
-
+        
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Nude Year’s Day"}, notes: {"en": "Whollyday\n1 Chaos"}},
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "Backwards Day, Reformed"}, notes: {"en": "Whollyday\n10 Chaos"}},
         {type: "1D", start: {mon: 1, d: 10}, titles: {"en": "Binary Day"}, notes: {"en": "Whollyday\n10 Chaos"}},
@@ -91,7 +91,7 @@
         
         {titles: {"en": "Erister"}, type: "1D", start: {"Easter": "Easter"}, notes: {"en": "Whollyday"}},
         {type: "1D", start: {mon: 8, d: 23, thruD: 29, wkd: [1]}, titles: {"en": "Go Topless Day"}, notes: {"en": "Whollyday"}},
-        {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "No Pants Day"}, notes: {"en": "Whollyday"}},
+        {type: "1D", start: {mon: 5, wkd: [6], nth: 1}, inherits: "No Pants Day", notes: {"en": "Whollyday"}},
         
         {type: "1D", start: {mon: 1, d: 1}, titles: {"en": "Bogey’s Day"}},
         {type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Carioca Lodge Day"}},
@@ -150,7 +150,7 @@
         {type: "1D", start: {mon: 12, d: 7}, titles: {"en": "Buddy Darma’s Day"}},
         {type: "1D", start: {mon: 12, d: 23}, titles: {"en": "Dragon Clan Anniversary Evening"}},
         {type: "1D", start: {mon: 12, d: 25}, titles: {"en": "Jay See Fitzdragon’s Birthday"}, inherits: "*BDay*"},
-      ],
+    ],
     templates: [
         {template: "Apostle Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Apostle Day"}, notes: {"en": "Whollyday"}},
         {template: "Sloth Day", type: "1D", start: {mon: 1, d: 5}, titles: {"en": "Sloth Day"}, notes: {"en": "Whollyday"}},

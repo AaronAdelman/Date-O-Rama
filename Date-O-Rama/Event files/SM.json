@@ -19,7 +19,6 @@
         {type: "1D", start: {mon: 7, d: 28}, titles: {"en": "Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, first: {era: 1, y: 1943}, notes: {"en": "Liberation from Fascism"}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {type: "1D", start: {mon: 9, d: 3}, titles: {"en": "Foundation Day"}, urls: {"en": "https://nationaltoday.com/foundation-day-in-san-marino/"}, first: {era: 1, y: 301}, notes: {"en": "Feast of St. Marinus and the Republic"}},
-        {type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/investiture-of-the-captains-regent"}, titles: {"en": "Investiture of the Captains Regent"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/all-souls-day"}, titles: {"en": "Commemoration of the Dead"}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
@@ -27,6 +26,8 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
-        
+    ],
+    templates: [
+        {template: "Investiture of the New Captains Regent", type: "1D", start: {mon: 4, d: 1}, titles: {"en": "Investiture of the Captains Regent"}, notes: {"en": "Investiture of the New Captains Regent"}, urls: {"en": "https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},
     ]
 }
