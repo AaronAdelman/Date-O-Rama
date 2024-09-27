@@ -128,5 +128,6 @@
     templates: [
         {template: "Canadian Environment Week", type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 6, thruD: 11, wkd: [1]}, titles: {"en": "Canadian Environment Week"}, emoji: "🌱", urls: {"en": "https://www.canada.ca/en/environment-climate-change/services/canadian-environment-week.html"}},
         {template: "Royal St. John’s Regatta", type: "1D", start: {mon: 8, wkd: [4], nth: 1}, titles: {"en": "Royal St. John’s Regatta"}, notes: {"en": "Regatta Day"}, urls: {"en": "https://stjohnsregatta.ca/"}, emoji: "🚣‍♀️"},
+        {template: "Ontario Garlic Week", type: "nD", start: {era: 1, y: 2021, mon: 10, d: 29}, end: {era: 1, y: 2021, mon: 11, d: 7}, titles: {"en": "Ontario Garlic Week"}, urls: {"en": "https://www.daysoftheyear.com/days/ontario-garlic-week/"}, emoji: "🧄"},
     ]
 }

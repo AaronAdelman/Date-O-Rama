@@ -2123,5 +2123,6 @@
         {template: "Get to Know Your Customers Day", type: "1D", start: {mon: 1, wkd: [5], nth: 3}, urls: {"en": "https://nationaltoday.com/get-know-customers-day/"}, titles: {"en": "Get to Know Your Customers Day"}},
         {template: "Infidelity Hurts Awareness Day", type: "1D", start: {mon: 5, wkd: [7], nth: -1}, titles: {"en": "Infidelity Hurts Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/infidelity-hurts-awareness-day/"}, emoji: "💔"},
         {template: "International Caps Lock Day", type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/international-caps-lock-day/"}, titles: {"en": "International Caps Lock Day"}, emoji: "⇪"},
+        {template: "Plan Your Epitaph Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/plan-your-epitaph-day/"}, titles: {"en": "Plan Your Epitaph Day"}, emoji: "🪦"},
     ]
 }

@@ -99,5 +99,8 @@
         {type: "1D", start: {mon: 8, d: 14}, inherits: "Honey Feast of the Savior"},
         {type: "1D", start: {mon: 8, d: 29}, inherits: "Nut Feast of the Savior", emoji: "🌰"},
         {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, d: 28}},
-   ]
+   ],
+    templates: [
+        {template: "New Year’s Holiday (bridge day)", type: "1D", start: {mon: 1, d: 2}, titles: {"en": "New Year’s Holiday (bridge day)"}, emoji: "🎇"},
+    ]
 }

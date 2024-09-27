@@ -67,5 +67,8 @@
         {type: "1D", start: {d: 6, mon: 12}, titles: {"en": "Day of the Ministry of Communications and Information Technologies of Azerbaijan"}},
         {type: "1D", start: {d: 12, mon: 12}, titles: {"en": "Memorial Day of Heydar Aliyev"}},
         {type: "1D", start: {d: 16, mon: 12}, titles: {"en": "Day of Azerbaijani Ministry of Emergency Situations"}},
-   ]
+   ],
+    templates: [
+        {template: "Nowruz Holiday", type: "1D", start: {mon: 3, d: 21}, titles: {"en": "Nowruz Holiday"}, notes: {"en": "Novruz Holiday"}},
+    ]
 }
