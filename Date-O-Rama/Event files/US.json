@@ -591,5 +591,7 @@
         {template: "National Good Neighbor Day", type: "1D", start: {mon: 9, d: 28}, titles: {"en": "National Good Neighbor Day"}, urls: {"en": "https://nationalgoodneighborday.com/"}},
         {template: "Native American Day", titles: {"en": "Native American Day", "he": "יום העמים הילידים בארצות הברית"}, type: "1D", start: {mon: 9, wkd: [6], nth: 4}, urls: {"en": "https://nationaltoday.com/national-native-american-day/"}},
         {template: "Peace Corps Week", type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, titles: {"en": "Peace Corps Week"}, urls: {"en": "https://www.daysoftheyear.com/days/peace-corps-week/"}, emoji: "☮️"},
+        {template: "Robert E. Lee Day", titles: {"en": "Robert E. Lee Day", "he": "יום רוברט אדוארד לי", "fr": "Journée de Robert E. Lee"}, notes: {"en": "Lee’s Birthday"}, type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/robert-e-lee-day/"}, inherits: "*BDay*"},
+        {template: "Rosa Parks Day", titles: {"en": "Rosa Parks Day", "he": "יום רוזה פארקס"}, type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaldaycalendar.com/rosa-parks-day-december-1/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%A8%D7%95%D7%96%D7%94_%D7%A4%D7%90%D7%A8%D7%A7%D7%A1"}, emoji: "🚌"},
     ]
 }

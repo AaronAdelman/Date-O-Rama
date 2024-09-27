@@ -26,5 +26,8 @@
         {type: "1D", start: {mon: 10, wkd: [2], nth: 3}, titles: {"en": "Heroes and Forefathers Day"}, urls: {"en": "https://nationaltoday.com/heroes-and-forefathers-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Heroes and Foreparents Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+    ],
+    templates: [
+        {template: "Sovereign’s Birthday", type: "1D", start: {mon: 6, d: 16}, titles: {"en": "Sovereign’s Birthday"}, inherits: "*BDay*"},
     ]
 }

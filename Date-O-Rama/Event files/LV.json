@@ -13,9 +13,8 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Restoration of Independence Day (bridge day)", type: "1D", start: {mon: 5, d: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Restoration of Independence Day", type: "1D", start: {mon: 5, d: 4}, first: {era: 1, y: 1990}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
-        {inherits: "Restoration of Independence Day (in lieu)", type: "1D", start: {mon: 5, d: 5, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 5, d: 5, thruD: 6, wkd: [2]}, titles: {"en": "Restoration of Independence Day (in lieu)", "he": "יום שיקום העצמאות (במקומו)"}, inherits: "Restoration of Independence Day", urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Restoration of Independence Day (bridge day)", type: "1D", start: {mon: 5, d: 5, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
-        {inherits: "Restoration of Independence Day (in lieu)", type: "1D", start: {mon: 5, d: 6, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "1D", start: {era: 1, y: 2023, mon: 5, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, titles: {"en": "Day of the Bronze Medal Win"}, emoji: "🥉"},
         {inherits: "Midsummer Eve", type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/midsummer-eve"}},
@@ -30,5 +29,8 @@
         
         {titles: {"en": "Herbal Day"}, type: "1D", start: {mon: 6, d: 22}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-   ]
+   ],
+    templates: [
+        {template: "Restoration of Independence Day (bridge day)", type: "1D", start: {mon: 5, d: 5}, titles: {"en": "Restoration of Independence Day (bridge day)"}, inherits: "Restoration of Independence Day"},
+    ]
 }

@@ -143,5 +143,8 @@
         {inherits: "International Human Solidarity Day", type: "1D", start: {mon: 12, d: 20}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 12, d: 21}, titles: {"en": "Day of Remembrance of the Victims of Communism in Romania"}},
         {type: "1D", start: {d: 22, mon: 12}, titles: {"en": "Romanian Revolution Victory and Freedom Day"}},
+   ],
+    templates: [
+       {template: "Public Sector Holiday", type: "1D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en": "Public Sector Holiday"}},
    ]
 }

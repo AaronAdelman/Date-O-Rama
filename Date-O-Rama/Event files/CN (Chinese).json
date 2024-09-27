@@ -39,5 +39,6 @@
     ],
     templates: [
         {template: "Dragon Boat Festival Holiday", type: "1D", start: {mon: 6, d: 23}, titles: {"en": "Dragon Boat Festival Holiday"}},
+        {template: "Spring Festival Holiday", type: "1D", start: {mon: -1, d: -1}, titles: {"en": "Spring Festival Holiday"}},
     ]
 }
