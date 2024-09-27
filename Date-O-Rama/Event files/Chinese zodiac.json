@@ -31,8 +31,6 @@
         {template: "*Rooster*", type: "1D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
         {template: "*Snake*", type: "1D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
         {template: "*Tiger*", type: "1D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
-    ],
-    templates: [
         {template: "*Dog*", type: "1D", start: {}, emoji: "🐕", inherits: "*Astrology*"},
         {template: "*Dragon*", type: "1D", start: {}, emoji: "🐉", inherits: "*Astrology*"},
         {template: "*Goat*", type: "1D", start: {}, emoji: "🐐", inherits: "*Astrology*"},
