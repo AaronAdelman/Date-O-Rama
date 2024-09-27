@@ -1986,7 +1986,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/polycystic-ovarian-syndrome-awareness-month/"}, titles: {"en": "Polycystic Ovarian Syndrome Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/prostate-cancer-awareness-month/"}, titles: {"en": "Prostate Cancer Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/reyes-syndrome-awareness-month/"}, titles: {"en": "Reye’s Syndrome Awareness Month"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
-        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/save-your-photos-month/"}, titles: {"en": "Save Your Photos Month"}, first: {era: 1, y: 2014}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://thephotomanagers.com/save-your-photos-month/"}, titles: {"en": "Save Your Photos Month"}, first: {era: 1, y: 2014}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/sports-eye-safety-month/"}, titles: {"en": "Sports Eye Safety Month"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/urology-awareness-month/"}, titles: {"en": "Urology Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-animal-remembrance-month/"}, titles: {"en": "World Animal Remembrance Month"}},

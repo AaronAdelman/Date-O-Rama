@@ -398,7 +398,8 @@
         {type: "1D", start: {mon: 9, d: 22}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/american-business-womens-day/"}, titles: {"en": "American Business Women’s Day", "he": "יום נשות העסקים האמריקאי"}, first: {era: 1, y: 1982}, notes: {"en": "Business Women’s Day"}, emoji: "👩‍💼"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Mesothelioma Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://nationaltoday.com/national-mesothelioma-awareness-day/"}, inherits: "*MedAwareness*"},
-        {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationalgoodneighborday.com/"}, titles: {"en": "National Good Neighbor Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 9, wkd: [1], nth: 4}, inherits: "National Good Neighbor Day", first: {era: 1, y: 1978}, last: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 9, d: 28}, inherits: "National Good Neighbor Day", first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 9, d: 29}, titles: {"en": "Urban National Wildlife Refuge Day"}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaldaycalendar.com/urban-national-wildlife-refuge-day-september-29/"}, emoji: "🦌"},
         {type: "1D", start: {mon: 9, d: 6, thruD: 12, wkd: [7]}, titles: {"en": "Carl Garner Federal Lands Cleanup Day"}, notes: {"en": "Federal Lands National Cleanup Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Carl_Garner_Federal_Lands_Cleanup_Day"}, emoji: "🏞", first: {era: 1, y: 1985}},
         {type: "1D", start: {mon: 9, d: 7}, titles: {"en": "Grandma Moses Day"}, first: {era: 1, y: 1960}, emoji: "🎨", urls: {"en": "https://www.daysoftheyear.com/days/grandma-moses-day/"}},
@@ -587,5 +588,7 @@
         {template: "Malcolm X Day", titles: {"en": "Malcolm X Day", "he": "יום מלקולם אקס"}, type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/malcolm-x-day/"}},
         {template: "National Prescription Drug Take Back Day", type: "1D", start: {mon: 10, wkd: [7], nth: -1}, titles: {"en": "National Prescription Drug Take Back Day"}, urls: {"en": "https://www.dea.gov/takebackday"}, emoji: "💊", inherits: "*MedAwareness*"},
         {template: "National Read Across America Day", type: "1D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-read-across-america-day-dr-seuss-day-march-2-unless-weekend"}, first: {era: 1, y: 1998}, emoji: "📖"},
+        {template: "National Good Neighbor Day", type: "1D", start: {mon: 9, d: 28}, titles: {"en": "National Good Neighbor Day"}, urls: {"en": "https://nationalgoodneighborday.com/"}},
+
     ]
 }

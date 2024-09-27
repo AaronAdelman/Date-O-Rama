@@ -14,7 +14,7 @@
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/turks-and-caicos-islands-national-heroes-day"}, notes: {"en": "JAGS McCartney Day"}},
         {type: "1D", start: {mon: 6, d: 17, thruD: 23, wkd: [2]}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/king-charles-birthday"}},
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/emancipation-day"}, inherits: "Emancipation Day"},
-        {type: "1D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-youth-day"}, titles: {"en": "National Youth Day"}},
+        {type: "1D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-youth-day"}, inherits: "National Youth Day"},
         {type: "1D", start: {mon: 10, wkd: [2], nth: 2}, titles: {"en": "National Heritage Day"}, urls: {"en": "https://nationaltoday.com/national-heritage-day-in-turks-and-caicos/"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-heritage-day"}},
         {type: "1D", start: {mon: 11, wkd: [6], nth: 4}, urls: {"en": "https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-day-of-thanksgiving"}, titles: {"en": "National Day of Thanksgiving"}, inherits: "Thanksgiving Day"},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
