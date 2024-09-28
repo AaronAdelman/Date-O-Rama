@@ -60,9 +60,15 @@
         {type: "1D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 10, d: 31}, titles: {"es": "Día de las Brujas"}},
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "Day of the Little Angels", "es": "Día de los Inocentes"}},
-        {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}, titles: {"en": "Mariachi Day"}},
+        {type: "1D", start: {mon: 1, d: 21}, titles: {"en": "Mariachi Day"}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "Grandparents’ Day", type: "1D", start: {mon: 8, d: 28}},
-        {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, emoji: "🌮", first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 3, d: 31}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
+        {type: "1D", start: {era: 1, y: 2012, mon: 12, d: 1}, inherits: "Change of Federal Government"},
+        {type: "1D", start: {era: 1, y: 2018, mon: 12, d: 1}, inherits: "Change of Federal Government"},
+        {type: "1D", start: {era: 1, y: 2024, mon: 10, d: 1}, inherits: "Change of Federal Government"},
+    ],
+    templates: [
+        {template: "Change of Federal Government", type: "1D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en": "Change of Federal Government", "es": "Transmisión del Poder Ejecutivo Federal"}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
     ]
 }

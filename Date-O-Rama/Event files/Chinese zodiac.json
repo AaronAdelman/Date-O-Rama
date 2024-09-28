@@ -28,6 +28,8 @@
         {type: "1M", start: {mon: 8}, titles: {"en": "Month of the Rooster", "he": "חודש התרנגול"}, inherits: "*Rooster*"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Month of the Dog", "he": "חודש הכלב"}, inherits: "*Dog*"},
         {type: "1M", start: {mon: 10}, titles: {"en": "Month of the Pig", "he": "חודש החזיר"}, inherits: "*Pig*"},
+    ],
+    templates: [
         {template: "*Rooster*", type: "1D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
         {template: "*Snake*", type: "1D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
         {template: "*Tiger*", type: "1D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
