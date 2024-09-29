@@ -1,7 +1,7 @@
 {
     titles: {"*": "KH"},
     "//": "Cambodia",
-    "TODO": "Cambodian New Year, Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals",
+    "TODO": "Cambodian New Year, Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.98, "green": 0.88, "blue": 0.13},
