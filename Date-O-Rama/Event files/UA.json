@@ -15,7 +15,7 @@
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/ukraine-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/ukraine/day-of-ukrainian-statehood"}, titles: {"en": "Day of Ukrainian Statehood", "uk": "День Української Державності"}, inherits: "Baptism Day of Kyivan Rus", first: {era: 1, y: 2023}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/ukraine-independence-day/"}},
-        {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Defenders of Ukraine Day", "uk": "День захисників і захисниць України"}, notes: {"en": "Day of the Defender"}, urls: {"en": "https://nationaltoday.com/day-of-the-defender/"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Ukraine Defender Day", "uk": "День захисників і захисниць України"}, notes: {"en": "Defenders of Ukraine Day\nDay of the Defender"}, urls: {"en": "https://www.daysoftheyear.com/days/ukraine-defender-day/"}, first: {era: 1, y: 2015}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
         {"titles": {"en": "Flag of Ukraine"}, "type": "1D", "start": {"mon": 3, "d": 26}},

@@ -18,7 +18,7 @@
         {type: "1D", start: {mon: 5, d: 3, wkd: [2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
         {type: "1D", start: {mon: 5, d: 4, wkd: [2, 3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
         {type: "1D", start: {mon: 5, d: 5, wkd: [3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
-       {inherits: "National Day", type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/chinese-national-day/"}, first: {era: 1, y: 1949}},
+       {inherits: "National Day", type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/china-national-day/"}, first: {era: 1, y: 1949}},
        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-national-day"}, inherits: "National Day Holiday"},
        {type: "1D", start: {mon: 10, d: 5, wkd: [2, 3, 4, 5]}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-national-day"}, inherits: "National Day Holiday"},
        {type: "1D", start: {mon: 10, d: 6, wkd: [3, 4, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-national-day"}, inherits: "National Day Holiday"},
