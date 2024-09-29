@@ -1934,7 +1934,6 @@
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/pardon-day/"}, titles: {"en": "Pardon Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 9, d: 9}, inherits: "Teddy Bear Day", titles: {"en": "National Teddy Bear Day", "he": "יום הדובון הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/teddy-bear-day/"}},
         {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "National Wienerschnitzel Day"}, notes: {"en": "National Wiener Schnitzel Day\nWienerschnitzel Day"}},
-        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/national-wiener-schnitzel-day/"}, titles: {"en": "National Wiener Schnitzel Day"}},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/steak-au-poivre-day/"}, titles: {"en": "Steak Au Poivre Day"}, notes: {"en": "National Steak Au Poivre Day"}},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-when-pigs-fly-day/"}, titles: {"en": "National When Pigs Fly Day"}, first: {era: 1, y: 2020}, emoji: "🐷"},
         {type: "1D", start: {mon: 9, wkd: [1], nth: 1}, titles: {"en": "National Pet Rock Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pet-rock-day/"}, emoji: "🪨"},
