@@ -123,7 +123,7 @@
         {type: "1D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
         {type: "1D", start: {mon: 9, d: 11}, titles: {"en": "National Hot Cross Bun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cross-bun-day/"}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "Goose Day", urls: {"en": "https://www.checkiday.com/46e9409507ad0ab3c7496392892cd708/goose-day"}, first: {era: 1, y: 1786}},
-        {type: "1M", start: {mon: 10}, titles: {"en": "Halloween Safety Month"}, urls: {"en": "https://nationaltoday.com/halloween-safety-month/"}, first: {era: 1, y: 1970}, emoji: "🎃🦺"},
+        {type: "1M", start: {mon: 10}, titles: {"en": "Halloween Safety Month"}, urls: {"en": "https://www.daysoftheyear.com/days/halloween-safety-month/"}, first: {era: 1, y: 1970}, emoji: "🎃🦺"},
         {type: "1M", start: {mon: 12}, titles: {"en": "Destroy Dick December"}, notes: {"en": "A month of poor taste, as if we needed help finding that on the Internet.  This is a response to No Nut November."}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/month-giving/"}, titles: {"en": "Month of Giving"}},
         {type: "1W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
