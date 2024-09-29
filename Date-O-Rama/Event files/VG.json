@@ -29,5 +29,6 @@
     ],
     templates: [
         {template: "Sovereign’s Birthday", type: "1D", start: {mon: 6, d: 16}, titles: {"en": "Sovereign’s Birthday"}, inherits: "*BDay*"},
+        {template: "Virgin Islands Day", type: "1D", start: {mon: 7, d: 1, wkd: [2, 6]}, urls: {"en": "https://www.daysoftheyear.com/days/virgin-islands-day/"}, titles: {"en": "Virgin Islands Day", "he": "יום איי הבתולה"}, notes: {"en": "Territory Day"}},
     ]
 }

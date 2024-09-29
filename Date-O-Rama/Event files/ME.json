@@ -32,5 +32,6 @@
     ],
     templates: [
         {template: "Independence Day Holiday", type: "1D", start: {mon: 8, d: 15, wkd: [5]}, titles: {"en": "Independence Day Holiday"}, inherits: "Independence Day"},
+        {template: "Statehood Day Holiday", type: "1D", start: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, titles: {"en": "Statehood Day Holiday"}},
     ]
 }

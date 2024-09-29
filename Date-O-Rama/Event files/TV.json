@@ -30,6 +30,8 @@
         {type: "1D", start: {mon: 9, d: 17}, locations: {"en": "Niutao"}, titles: {"tvl": "Te Aso o te Setema"}},
         {type: "1D", start: {mon: 10, d: 21}, locations: {"en": "Funafuti"}, titles: {"en": "Cyclone Day"}},
         {type: "1D", start: {mon: 11, d: 25}, locations: {"en": "Vaitupu"}, titles: {"en": "Happy Day", "tvl": "Te Aso Fiafia"}},
-
+    ],
+    templates: [
+        {template: "Tuvalu Day Holiday", type: "1D", start: {mon: 10, d: 3, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/tuvalu-day"}, titles: {"en": "Tuvalu Day Holiday"}, inherits: "Independence Day"},
     ]
 }
