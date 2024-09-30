@@ -62,7 +62,7 @@
         {type: "1D", start: {mon: 8, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/india/kerala/ayankali-jayanthi"}, titles: {"en": "Ayyankali Jayanthi"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/india/jammu-and-kashmir/maharaja-hari-singh-birth-anniversary"}, titles: {"en": "Maharaja Hari Singh Birth Anniversary"}, inherits: "*BDay*", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/india/haryana/haryanas-heroes-martyrdom-day"}, titles: {"en": "Haryana Heroes’ Martyrdom Day"}},
-        {type: "1D", start: {mon: 10, d: 2}, titles: {"en": "Gandhi Jayanti"}, first: {era: 1, y: 1869}, urls: {"en": "https://www.officeholidays.com/holidays/india/mahatma-gandhi-birthday"}, inherits: "*BDay*", notes: {"en": "Mahatma Gandhi’s Birthday"}},
+        {type: "1D", start: {mon: 10, d: 2}, titles: {"en": "Gandhi Jayanti"}, first: {era: 1, y: 1869}, urls: {"en": "https://www.daysoftheyear.com/days/mahatma-gandhi/"}, inherits: "*BDay*", notes: {"en": "Mahatma Gandhi’s Birthday"}},
         {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/india/sikkim/birthday-of-nar-bahadur-bhandari"}, titles: {"en": "Birthday of Nar Bahadur Bhandari"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 10, d: 26}, inherits: "Accession Day", first: {era: 1, y: 2020}, urls: {"en": "https://nationaltoday.com/accession-day/"}},
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/india/gujarat/sardar-patels-birthday"}, titles: {"en": "Sardar Patel’s Birthday"}, inherits: "*BDay*"},

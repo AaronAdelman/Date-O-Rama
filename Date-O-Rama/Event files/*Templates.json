@@ -394,6 +394,7 @@
         {template: "National Pet Month", type: "1M", start: {mon: 5}, titles: {"en": "National Pet Month"}, emoji: "🐰🐱🐶"},
         {template: "National Philanthropy Day", type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/philanthropy-day/"}, titles: {"en": "National Philanthropy Day"}},
         {template: "National Pizza Day", type: "1D", start: {mon: 2, d: 9}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הלאומי"}, emoji: "🍕"},
+        {template: "National Poetry Day", titles: {"en": "National Poetry Day", "id": "Hari Puisi Nasional"}, type: "1D", start: {mon: 4, d: 28}, emoji: "🖋"},
         {template: "National Press Day", titles: {"en": "National Press Day", "id": "Hari Pers Nasional"}, type: "1D", start: {mon: 2, d: 9}, emoji: "🗞️"},
         {template: "National Radio Day", type: "1D", start: {mon: 8, d: 20}, titles: {"en": "National Radio Day", "he": "יום הרדיו הלאומי", "id": "Hari Radio Nasional", "th": "วันวิทยุกระจายเสียงแห่งชาติ"}, emoji: "📻"},
         {template: "National Re-Gifting Day", type: "1D", start: {mon: 12, wkd: [5], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/re-gifting-day/"}, titles: {"en": "National Re-Gifting Day"}, emoji: "🎁"},
