@@ -162,6 +162,7 @@
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "International Gaucher Day"}, urls: {"en": "https://gaucheralliance.org/international-gaucher-day/"}, first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "International Music Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-music-day/"}, first: {era: 1, y: 1974}, emoji: "🎼"},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "International Raccoon Appreciation Day", "he": "יום ההערכה הבינלאומי של הדביבון"}, urls: {"en": "https://www.daysoftheyear.com/days/international-raccoon-appreciation-day/"}, emoji: "🦝", first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Less Than Perfect Day"}, urls: {"en": "https://www.checkiday.com/b3555f1ce8d430be9b1c40be29342178/less-than-perfect-day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Model T Day"}, urls: {"en": "https://www.daysoftheyear.com/days/model-t-day/"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Sausage Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sausage-day/"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "World Postcard Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://worldpostcardday.com/"}},
