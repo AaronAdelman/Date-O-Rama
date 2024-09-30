@@ -56,7 +56,7 @@
         {inherits: "World Blood Donor Day", type: "1D", start: {mon: 6, d: 14}, first: {era: 1, y: 2004}},
         {inherits: "Grandparents’ Day", type: "1D", start: {mon: 10, d: 2}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "National Day in Memory of the Victims of Immigration", "it": "Giornata nazionale in memoria delle vittime dell’immigrazione"}, first: {era: 1, y: 2016}},
-        {type: "1D", start: {mon: 10, d: 4}, inherits: "World Animal Day", first: {era: 1, y: 1929}},
+        {type: "1D", start: {mon: 10, d: 4}, inherits: "World Animal Day", first: {era: 1, y: 1925}},
         {type: "1D", start: {mon: 10, d: 9}, titles: {"en": "National Day in Memory of the Victims of Environmental and Industrial Disasters Caused by Human Negligence", "it": "Giornata nazionale in memoria delle vittime dei disastri ambientali e industriali causati dall’incuria dell’uomo"}, first: {era: 1, y: 2011}},
         {inherits: "Columbus Day", type: "1D", start: {mon: 11, wkd: [2], nth: 1}, first: {era: 1, y: 2004}},
         {inherits: "United Nations Day", type: "1D", start: {mon: 10, d: 24}, first: {era: 1, y: 1948}},

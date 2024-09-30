@@ -190,7 +190,7 @@
 
         {titles: {"en": "Feast of St. Thérèse of the Child Jesus"}, type: "1D", start: {mon: 10, d: 1}},
         {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day"}},
-        {titles: {"en": "Feast of St. Francis of Assisi"}, type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/feast-of-st-francis-of-assisi/"}},
+        {titles: {"en": "St. Francis of Assisi Feast Day"}, notes: {"en": "Feast of St. Francis of Assisi"}, type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/st-francis-of-assisi-feast-day/"}, first: {era: 1, y: 1228}},
         {titles: {"en": "Feast of St. Faustina Kowalska"}, type: "1D", start: {mon: 10, d: 5}},
         {titles: {"en": "Feast of St. Bruno"}, type: "1D", start: {mon: 10, d: 6}},
         {titles: {"en": "Feast of Our Lady of the Rosary", "mt": "Il-Madonna tar-Rużarju"}, type: "1D", start: {mon: 10, d: 7}},
