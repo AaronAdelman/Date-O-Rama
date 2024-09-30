@@ -65,6 +65,7 @@
         {type: "1D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}, urls: {"en": "https://nationaltoday.com/trafalgar-day/"}},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Everyone Writes Day"}, urls: {"en": "https://nationaltoday.com/everyone-writes-day/"}, emoji: "✍️"},
         {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Buy British Day"}, urls: {"en": "https://www.daysoftheyear.com/days/buy-british-day/"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 10, d: 4}, titles: {"en": "No Disposable Cup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/no-disposable-cup-day/"}, emoji: "🥛"},
         {type: "1D", start: {mon: 10, d: 31}, inherits: "National Bug Busting Day"},
         {type: "1D", start: {mon: 10, wkd: [1], nth: 1}, inherits: "Grandparents’ Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 10, wkd: [1], nth: 4}, titles: {"en": "Newport Wales Marathon"}, urls: {"en": "https://nationaltoday.com/newport-wales-marathon/"}, first: {era: 1, y: 2018}},

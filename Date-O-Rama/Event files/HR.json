@@ -48,7 +48,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Navy Day", titles: {"en": "Day of the Croatian Navy"}},
-
+        {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Kestenijada"}, emoji: "🌰", urls: {"en": "https://www.daysoftheyear.com/days/kestenijada/"}, first: {era: 1, y: 1997}},
     ]
 }
-
