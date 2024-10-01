@@ -268,7 +268,6 @@
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "National Truckers Appreciation Day"}, urls: {"en": "https://nationaltoday.com/national-truckers-appreciation-day/"},  first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "National Truckers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-truckers-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "National Vodka Day", "he": "יום הוודקה הלאומי"}, urls: {"en": "http://www.nationalvodkaday.com/"}},
-        {type: "D", start: {mon: 10, d: 2}, titles: {"en": "National Walk and Bike to School Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-walk-and-bike-to-school-day/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "Ship in A Bottle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ship-in-a-bottle-day/"}, first: {era: 1, y: 2013}, emoji: "🚢"},
         {type: "D", start: {mon: 10, d: 5}, titles: {"en": "National Above the Bus Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-above-the-bus-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 10, d: 5}, titles: {"en": "National Apple Betty Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-apple-betty-day/"}},
