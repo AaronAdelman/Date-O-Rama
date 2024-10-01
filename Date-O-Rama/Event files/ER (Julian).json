@@ -5,11 +5,11 @@
     calendarCode: "jul",
     calendarColor: {"red": 0.89, "green": 0.00, "blue": 0.17},
     events: [
-        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
-        {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
-        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
-        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {inherits: "Beheading of St. John the Baptist", type: "1D", start: {mon: 8, d: 29}},
-        {inherits: "Feast of the Exaltation of the Holy Cross", type: "1D", start: {mon: 9, d: 14}},
+        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
+        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Beheading of St. John the Baptist", type: "D", start: {mon: 8, d: 29}},
+        {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},
     ]
 }

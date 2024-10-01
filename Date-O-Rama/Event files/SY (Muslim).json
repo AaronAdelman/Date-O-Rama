@@ -5,7 +5,7 @@
     calendarCode: "hiq*",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     events: [
-        {inherits: "Father’s Day", type: "1D", start: {mon: 7, d: 13}},
+        {inherits: "Father’s Day", type: "D", start: {mon: 7, d: 13}},
     ]
 }
 

@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.20, "green": 0.45, "blue": 0.13},
     events: [
-        {inherits: "Bounty Day", type: "1D", start: {mon: 1, d: 23}, first: {era: 1, y: 1790}},
+        {inherits: "Bounty Day", type: "D", start: {mon: 1, d: 23}, first: {era: 1, y: 1790}},
 
     ]
 }

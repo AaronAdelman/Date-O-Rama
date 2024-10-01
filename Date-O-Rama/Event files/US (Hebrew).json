@@ -4,6 +4,6 @@
     calendarCode: "heb*",
     calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
     events: [
-        {notes: {"en": "National Education and Sharing Day"}, titles: {"en": "Education and Sharing Day"}, type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://educationandsharingday.com/"}, first: {era: 0, y: 5783}},
+        {notes: {"en": "National Education and Sharing Day"}, titles: {"en": "Education and Sharing Day"}, type: "D", start: {mon: 8, d: 11}, urls: {"en": "https://educationandsharingday.com/"}, first: {era: 0, y: 5783}},
     ]
 }

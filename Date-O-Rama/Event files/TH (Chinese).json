@@ -7,10 +7,10 @@
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},
-        {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "1D", start: {d: 5, mon: 5}, titles: {"en": "Duanwu Festival", "th": "วันไหว้ขนมจ้าง"}},
-        {type: "1D", start: {d: 15, mon: 7}, inherits: "Ghost Festival"},
-        {type: "1D", start: {d: 15, mon: 8}, inherits: "Mid-Autumn Festival"},
+        {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
+        {type: "D", start: {d: 5, mon: 5}, titles: {"en": "Duanwu Festival", "th": "วันไหว้ขนมจ้าง"}},
+        {type: "D", start: {d: 15, mon: 7}, inherits: "Ghost Festival"},
+        {type: "D", start: {d: 15, mon: 8}, inherits: "Mid-Autumn Festival"},
         {type: "nD", start: {d: 1, mon: 9}, end: {d: 9, mon: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
     ]
 }

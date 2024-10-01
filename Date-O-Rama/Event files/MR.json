@@ -6,13 +6,13 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
     events: [
-        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/mauritania/african-unity-day"}, inherits: "Africa Day"},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/mauritania/african-unity-day"}, inherits: "Africa Day"},
         
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 21}},
-        {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 28}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
-        {inherits: "Armed Forces Day", type: "1D", start: {mon: 7, d: 10}, first: {era: 1, y: 1960}},
+        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 21}},
+        {type: "D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
+        {inherits: "Independence Day", type: "D", start: {mon: 11, d: 28}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
+        {inherits: "Armed Forces Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1960}},
     ]
 }

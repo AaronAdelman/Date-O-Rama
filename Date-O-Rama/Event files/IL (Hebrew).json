@@ -5,49 +5,49 @@
     calendarCode: "heb*",
     calendarColor: {"red": 0.31, "green": 0.67, "blue": 0.8},
     events: [
-        {titles: {"he": "יום זיכרון לאומי לאסון 7 באוקטובר", "en": "October 7 Massacre Memorial Day"}, type: "1D", start: {mon: 1, d: 24}, first: {era: 0, y: 5785}},
-        {titles: {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, type: "1D", start: {mon: 2, d: 7}},
-        {titles: {"he": "יום הזיכרון ליצחק רבין", "en": "Yiṣḥaq Rabbin Memorial Day"}, type: "1D", start: {mon: 2, d: 12, wkd: [1, 2, 3, 4, 5]}},
-        {titles: {"he": "יום הזיכרון ליצחק רבין (מוקדם)", "en": "Yiṣḥaq Rabbin Memorial Day (brought forward)"}, type: "1D", start: {mon: 2, d: 10, thruD: 11, wkd: [5]}},
-        {titles: {"he": "סיגד", "en": "Sighdh"}, type: "1D", start: {mon: 2, d: 29}},
-        {titles: {"he": "יום בן־גוריון", "en": "Ben Gureyon Day"}, type: "1D", start: {mon: 3, d: 6, wkd: [1, 2, 3, 4, 5]}},
-        {titles: {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, type: "1D", start: {mon: 3, d: 7, thruD: 8, wkd: [1]}},
-        {inherits: "Teacher’s Day", type: "1D", start: {mon: 3, d: 23}, urls: {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
-        {titles: {"he": "יום העליה", "en": "‘Aliyyah Day"}, type: "1D", start: {mon: 8, d: 10}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, type: "1D", start: {mon: 8, d: 27, wkd: [2, 3, 4, 5]
+        {titles: {"he": "יום זיכרון לאומי לאסון 7 באוקטובר", "en": "October 7 Massacre Memorial Day"}, type: "D", start: {mon: 1, d: 24}, first: {era: 0, y: 5785}},
+        {titles: {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, type: "D", start: {mon: 2, d: 7}},
+        {titles: {"he": "יום הזיכרון ליצחק רבין", "en": "Yiṣḥaq Rabbin Memorial Day"}, type: "D", start: {mon: 2, d: 12, wkd: [1, 2, 3, 4, 5]}},
+        {titles: {"he": "יום הזיכרון ליצחק רבין (מוקדם)", "en": "Yiṣḥaq Rabbin Memorial Day (brought forward)"}, type: "D", start: {mon: 2, d: 10, thruD: 11, wkd: [5]}},
+        {titles: {"he": "סיגד", "en": "Sighdh"}, type: "D", start: {mon: 2, d: 29}},
+        {titles: {"he": "יום בן־גוריון", "en": "Ben Gureyon Day"}, type: "D", start: {mon: 3, d: 6, wkd: [1, 2, 3, 4, 5]}},
+        {titles: {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, type: "D", start: {mon: 3, d: 7, thruD: 8, wkd: [1]}},
+        {inherits: "Teacher’s Day", type: "D", start: {mon: 3, d: 23}, urls: {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
+        {titles: {"he": "יום העליה", "en": "‘Aliyyah Day"}, type: "D", start: {mon: 8, d: 10}},
+        {titles: {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, type: "D", start: {mon: 8, d: 27, wkd: [2, 3, 4, 5]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, type: "1D", start: {mon: 8, d: 28, wkd: [2]
+        {titles: {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, type: "D", start: {mon: 8, d: 28, wkd: [2]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, type: "1D", start: {mon: 8, d: 26, wkd: [5]
+        {titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, type: "D", start: {mon: 8, d: 26, wkd: [5]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "1D", start: {mon: 9, d: 4}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "1D", start: {mon: 9, d: 5, wkd: [2]
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "D", start: {mon: 9, d: 4}},
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "D", start: {mon: 9, d: 5, wkd: [2]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, type: "1D", start: {mon: 9, d: 2, thruD: 3, wkd: [4]
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, type: "D", start: {mon: 9, d: 2, thruD: 3, wkd: [4]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
-        {inherits: "Independence Day", titles: {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, type: "1D", start: {mon: 9, d: 6, wkd: [3]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
-        {inherits: "Independence Day", titles: {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, type: "1D", start: {mon: 9, d: 3, thruD: 4, wkd: [5]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
-        {titles: {"he": "יום הרצל", "en": "Herṣel Day"}, type: "1D", start: {mon: 9, d: 10, wkd: [1, 2, 3, 4, 5, 6]}},
-        {titles: {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, type: "1D", start: {mon: 9, d: 11, wkd: [1]}},
-        {titles: {"he": "יום ירושלים", "en": "Yerushalayim Day"}, type: "1D", start: {mon: 9, d: 28
+        {inherits: "Independence Day", type: "D", start: {mon: 9, d: 5}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
+        {inherits: "Independence Day", titles: {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, type: "D", start: {mon: 9, d: 6, wkd: [3]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
+        {inherits: "Independence Day", titles: {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, type: "D", start: {mon: 9, d: 3, thruD: 4, wkd: [5]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
+        {titles: {"he": "יום הרצל", "en": "Herṣel Day"}, type: "D", start: {mon: 9, d: 10, wkd: [1, 2, 3, 4, 5, 6]}},
+        {titles: {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, type: "D", start: {mon: 9, d: 11, wkd: [1]}},
+        {titles: {"he": "יום ירושלים", "en": "Yerushalayim Day"}, type: "D", start: {mon: 9, d: 28
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
-        {titles: {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, type: "1D", start: {mon: 9, d: 29, wkd: [2]
+        {titles: {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, type: "D", start: {mon: 9, d: 29, wkd: [2]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
-        {titles: {"he": "יום ירושלים (מוקדם)", "en": "Yerushalayim Day (brought forward)"}, type: "1D", start: {mon: 9, d: 27, wkd: [5]
+        {titles: {"he": "יום ירושלים (מוקדם)", "en": "Yerushalayim Day (brought forward)"}, type: "D", start: {mon: 9, d: 27, wkd: [5]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
-        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"}, type: "1D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 7]}},
-        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (נדחה)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (postponed)"}, type: "1D", start: {mon: 9, d: 29, wkd: [2]}},
-        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (מוקדם)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (brought forward)"}, type: "1D", start: {mon: 9, d: 27, wkd: [5]}},
-        {titles: {"he": "יום ז׳בוטינסקי", "en": "Zhabboṭinsqi Day"}, type: "1D", start: {mon: 11, d: 29, wkd: [1, 2, 3, 4, 5, 6]}},
-        {titles: {"he": "יום ז׳בוטינסקי (נדחה)", "en": "Zhabboṭinsqi Day (postponed)"}, type: "1D", start: {mon: 12, d: 1, wkd: [1]}},
-        {titles: {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, type: "1D", start: {mon: 9, d: 26}},
-        {titles: {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, type: "1D", start: {mon: 1, d: 30}},
-        {titles: {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, type: "1D", start: {mon: 3, d: 17}},
-        {titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, type: "1D", start: {mon: 4, d: 21}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, type: "1D", start: {mon: 7, d: 7}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 30}, first: {era: 0, y: 5730}},
-        {inherits: "Family Day", type: "1D", start: {mon: 5, d: 30}, first: {era: 0, y: 5750}},
+        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"}, type: "D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 7]}},
+        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (נדחה)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (postponed)"}, type: "D", start: {mon: 9, d: 29, wkd: [2]}},
+        {titles: {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (מוקדם)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (brought forward)"}, type: "D", start: {mon: 9, d: 27, wkd: [5]}},
+        {titles: {"he": "יום ז׳בוטינסקי", "en": "Zhabboṭinsqi Day"}, type: "D", start: {mon: 11, d: 29, wkd: [1, 2, 3, 4, 5, 6]}},
+        {titles: {"he": "יום ז׳בוטינסקי (נדחה)", "en": "Zhabboṭinsqi Day (postponed)"}, type: "D", start: {mon: 12, d: 1, wkd: [1]}},
+        {titles: {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, type: "D", start: {mon: 9, d: 26}},
+        {titles: {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, type: "D", start: {mon: 1, d: 30}},
+        {titles: {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, type: "D", start: {mon: 3, d: 17}},
+        {titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, type: "D", start: {mon: 4, d: 21}},
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, type: "D", start: {mon: 7, d: 7}},
+        {inherits: "Mother’s Day", type: "D", start: {mon: 5, d: 30}, first: {era: 0, y: 5730}},
+        {inherits: "Family Day", type: "D", start: {mon: 5, d: 30}, first: {era: 0, y: 5750}},
 
     ]
 }

@@ -5,65 +5,65 @@
     calendarCode: "chi",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     events: [
-        {type: "1D", start: {mon: 12, d: -2}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve Holiday"}},
-        {type: "1D", start: {mon: 12, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve"}},
-        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Nguyen Dan", "vi": "Tết Nguyên Đán"}, notes: {"en": "Vietnamese New Year\nTet"}},
+        {type: "D", start: {mon: 12, d: -2}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve Holiday"}},
+        {type: "D", start: {mon: 12, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve"}},
+        {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Nguyen Dan", "vi": "Tết Nguyên Đán"}, notes: {"en": "Vietnamese New Year\nTet"}},
         {type: "nD", start: {mon: 1, d: 2}, end: {mon: 1, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Holiday"}},
-        {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/hung-kings-temple-festival"}, titles: {"en": "Hung Kings Temple Festival", "vi": "Giỗ tổ Hùng Vương"}},
+        {type: "D", start: {mon: 3, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/hung-kings-temple-festival"}, titles: {"en": "Hung Kings Temple Festival", "vi": "Giỗ tổ Hùng Vương"}},
         
         {
-            "type": "1D",
-            "start": {"mon": 1, "d": 15},
-            "titles": {
+            type: "D",
+            start: {"mon": 1, d: 15},
+            titles: {
                 "vi": "Tết Nguyên Tiêu",
                 "en": "Poets’ Day"
            }, notes: {"vi": "Tết Thượng Nguyên"},
        },
         {
-            "type": "1D",
-            "start": {"mon": 3, "d": 3},
-            "titles": {
+            type: "D",
+            start: {"mon": 3, d: 3},
+            titles: {
                 "vi": "Tết Hàn Thực"
             }
        },
         {
-            "type": "1D",
-            "start": {"mon": 4, "d": 15},
+            type: "D",
+            start: {"mon": 4, d: 15},
             inherits: "Buddha’s Birthday"
        },
         {
-            "type": "1D",
-            "start": {"mon": 5, "d": 5},
-            "titles": {
+            type: "D",
+            start: {"mon": 5, d: 5},
+            titles: {
                 "vi": "Tết Đoan Ngọ"
             }
        },
         {
-            "type": "1D",
-            "start": {"mon": 7, "d": 15},
-            "titles": {
+            type: "D",
+            start: {"mon": 7, d: 15},
+            titles: {
                 "vi": "Lễ Vu Lan"
            }, notes: {"vi": "Tết Trung Nguyên"}
        },
         {
-            "type": "1D",
-            "start": {"mon": 8, "d": 12},
-            "titles": {
+            type: "D",
+            start: {"mon": 8, d: 12},
+            titles: {
                 "vi": "Ngày Giỗ tổ Sân khấu"
             }
        },
         {
-            "type": "1D",
-            "start": {"mon": 8, "d": 15},
-            "titles": {
+            type: "D",
+            start: {"mon": 8, d: 15},
+            titles: {
                 "vi": "Tết Trung Thu",
                 "en": "Children’s Festival"
             }
        },
         {
-            "type": "1D",
-            "start": {"mon": 12, "d": 23},
-            "titles": {
+            type: "D",
+            start: {"mon": 12, d: 23},
+            titles: {
                 "vi": "Lễ cúng Ông Công"
            }, notes: {
                 "vi": "Ông Táo về trời"

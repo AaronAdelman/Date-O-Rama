@@ -11,12 +11,12 @@ import Foundation
 // NOTE:  May need updating to support new date specification types!
 enum ASAEventSpecificationType:  String, Codable {
     case multiYear  = "nY"
-    case oneYear    = "1Y"
+    case oneYear    = "Y"
     case multiMonth = "nM"
-    case oneMonth   = "1M"
-    case oneWeek    = "1W"
+    case oneMonth   = "M"
+    case oneWeek    = "W"
     case multiDay   = "nD"
-    case oneDay     = "1D"
+    case oneDay     = "D"
     case span       = "span"
     case point      = "pt"
 } // enum ASAEventSpecificationType

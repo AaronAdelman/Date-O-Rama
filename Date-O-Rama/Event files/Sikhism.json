@@ -4,6 +4,6 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.96, "green": 0.78, "blue": 0.27},
     events: [
-        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, titles: {"en": "Martyrdom of Guru Arjan Dev Sahib"}},
+        {type: "D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, titles: {"en": "Martyrdom of Guru Arjan Dev Sahib"}},
     ]
 }

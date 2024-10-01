@@ -6,17 +6,17 @@
     calendarCode: "his",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
     events: [
-        {type: "1D", start: {mon: 11, d: 22}, titles: {"en": "Islamic Revolution Day", "fa": "انقلاب اسلامی پنجاه و هفت"}, urls: {"en": "https://nationaltoday.com/islamic-revolution-day/"}, notes: {"en": "Anniversary of Islamic Revolution"}},
-        {type: "1D", start: {mon: 12, d: 29}, titles: {"en": "Oil Nationalization Day", "fa": "ملی شدن صنعت نفت"}, urls: {"en": "https://www.officeholidays.com/holidays/iran/oil-nationalisation-day"}, notes: {"en": "Nationalization of the Iranian oil industry"}},
+        {type: "D", start: {mon: 11, d: 22}, titles: {"en": "Islamic Revolution Day", "fa": "انقلاب اسلامی پنجاه و هفت"}, urls: {"en": "https://nationaltoday.com/islamic-revolution-day/"}, notes: {"en": "Anniversary of Islamic Revolution"}},
+        {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Oil Nationalization Day", "fa": "ملی شدن صنعت نفت"}, urls: {"en": "https://www.officeholidays.com/holidays/iran/oil-nationalisation-day"}, notes: {"en": "Nationalization of the Iranian oil industry"}},
         {inherits: "Nowruz", type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 4}},
-        {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/iran/islamic-republic-day"}, titles: {"en": "Islamic Republic Day", "fa": "روز جمهوری اسلامی"}, inherits: "Republic Day"},
-        {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/nature-day/"}, titles: {"en": "Sizdah Bedar", "fa": "سیزده بدر"}, notes: {"en": "Nature Day"}},
-        {type: "1D", start: {mon: 3, d: 14}, titles: {"en": "Death of Khomeini", "fa": "رحلت آیت الله خمینی"}, inherits: "*DeathAnniv*", notes: {"en": "Demise of Imam Khomeini"}},
-        {type: "1D", start: {mon: 3, d: 15}, titles: {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}, urls: {"en": "https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en": "Khordad National Uprising"}},
+        {type: "D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/iran/islamic-republic-day"}, titles: {"en": "Islamic Republic Day", "fa": "روز جمهوری اسلامی"}, inherits: "Republic Day"},
+        {type: "D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/nature-day/"}, titles: {"en": "Sizdah Bedar", "fa": "سیزده بدر"}, notes: {"en": "Nature Day"}},
+        {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Death of Khomeini", "fa": "رحلت آیت الله خمینی"}, inherits: "*DeathAnniv*", notes: {"en": "Demise of Imam Khomeini"}},
+        {type: "D", start: {mon: 3, d: 15}, titles: {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}, urls: {"en": "https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en": "Khordad National Uprising"}},
 
-        {type: "1D", start: {mon: 9, d: 16}, titles: {"en": "Student Day", "fa": "روز دانشجو"}, urls: {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
-        {type: "1D", start: {mon: 8, d: 13}, titles: {"en": "Pupil Day", "fa": "روز دانش آموز"}, urls: {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 10, d: 8}},
+        {type: "D", start: {mon: 9, d: 16}, titles: {"en": "Student Day", "fa": "روز دانشجو"}, urls: {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
+        {type: "D", start: {mon: 8, d: 13}, titles: {"en": "Pupil Day", "fa": "روز دانش آموز"}, urls: {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
+        {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 8}},
     ]
 }
 

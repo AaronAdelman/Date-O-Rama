@@ -4,8 +4,8 @@ defaultLocale: "en",
 calendarCode: "gre",
 calendarColor: {"red": 0.75, "green": 0.5, "blue": 0.5},
 events: [
-{type: "1D", start: {mon: 2, d: 17}, titles: {"en": "Adyar Day"}, notes: {"en": "Olcott Day"}},
-{type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/white-lotus-day/"}, titles: {"en": "White Lotus Day"}, emoji: "🪷"},
-{type: "1D", start: {mon: 11, d: 17}, titles: {"en": "Founders Day"}},
+{type: "D", start: {mon: 2, d: 17}, titles: {"en": "Adyar Day"}, notes: {"en": "Olcott Day"}},
+{type: "D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/white-lotus-day/"}, titles: {"en": "White Lotus Day"}, emoji: "🪷"},
+{type: "D", start: {mon: 11, d: 17}, titles: {"en": "Founders Day"}},
 ]
 }

@@ -4,6 +4,6 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.06, "green": 0.18, "blue": 0.34},
     events: [
-        {inherits: "Pioneer Day", type: "1D", start: {mon: 7, d: 24}, first: {era: 1, y: 1949}},
+        {inherits: "Pioneer Day", type: "D", start: {mon: 7, d: 24}, first: {era: 1, y: 1949}},
     ]
 }

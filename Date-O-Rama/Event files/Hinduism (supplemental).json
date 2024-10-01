@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.44, "green": 0.53, "blue": 0.62},
     events: [
-        {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/international-mind-body-wellness-day/"}, titles: {"en": "International Mind-Body Wellness Day"}},
+        {type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/international-mind-body-wellness-day/"}, titles: {"en": "International Mind-Body Wellness Day"}},
     ]
 }
 

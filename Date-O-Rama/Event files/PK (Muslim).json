@@ -5,7 +5,7 @@
     calendarCode: "hiq*",
     calendarColor: {"red": 0.10, "green": 0.25, "blue": 0.13},
     events: [
-        {type: "1D", start: {mon: 2, d: 14}, titles: {"en": "Urs of Shah Abdul Latif Bhitai"}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/sindh/urs-of-shah-abdul-latif-bhitai"}, first: {era: 0, y: 1165}},
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Urs of Shah Abdul Latif Bhitai"}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/sindh/urs-of-shah-abdul-latif-bhitai"}, first: {era: 0, y: 1165}},
 
     ]
 }

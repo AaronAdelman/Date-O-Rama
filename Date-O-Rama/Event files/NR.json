@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.14, "blue": 0.41},
     events: [
-        {inherits: "Children’s Day", type: "1D", start: {mon: 2, wkd: [1], nth: 2}},
-    {inherits: "Independence Day", type: "1D", start: {mon: 1, d: 31}, first: {era: 1, y: 1968}, urls: {"en": "https://www.daysoftheyear.com/days/nauru-independence-day/"}},
+        {inherits: "Children’s Day", type: "D", start: {mon: 2, wkd: [1], nth: 2}},
+    {inherits: "Independence Day", type: "D", start: {mon: 1, d: 31}, first: {era: 1, y: 1968}, urls: {"en": "https://www.daysoftheyear.com/days/nauru-independence-day/"}},
     ]
 }

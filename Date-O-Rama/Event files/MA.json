@@ -6,17 +6,17 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.75, "green": 0.05, "blue": 0.24},
     events: [
-        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
-        {inherits: "Proclamation of Independence Day", type: "1D", start: {mon: 1, d: 11}, first: {era: 1, y: 1944}},
-        {type: "1D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
-        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
-        {titles: {"en": "Throne Day", "he": "יום הכס"}, type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, first: {era: 1, y: 1999}, notes: {"en": "Enthronement"}},
-        {titles: {"en": "Oued Ed-Dahab Day"}, type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-recovery-oued-ed-dahab/"}, notes: {"en": "Anniversary of the Recovery Oued Ed-Dahab"}},
-        {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, titles: {"en": "Anniversary of the Revolution of the King and the People", "he": "יום השנה למהפכה של המלך והעם"}, inherits: "Revolution Day", notes: {"en": "Revolution Day"}, first: {era: 1, y: 1955}},
-        {type: "1D", start: {mon: 8, d: 21}, inherits: "Youth Day"},
-        {titles: {"en": "Green March Day"}, type: "1D", start: {mon: 11, d: 6}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 18}, first: {era: 1, y: 1955}},
+        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {inherits: "Proclamation of Independence Day", type: "D", start: {mon: 1, d: 11}, first: {era: 1, y: 1944}},
+        {type: "D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
+        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {titles: {"en": "Throne Day", "he": "יום הכס"}, type: "D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, first: {era: 1, y: 1999}, notes: {"en": "Enthronement"}},
+        {titles: {"en": "Oued Ed-Dahab Day"}, type: "D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-recovery-oued-ed-dahab/"}, notes: {"en": "Anniversary of the Recovery Oued Ed-Dahab"}},
+        {type: "D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, titles: {"en": "Anniversary of the Revolution of the King and the People", "he": "יום השנה למהפכה של המלך והעם"}, inherits: "Revolution Day", notes: {"en": "Revolution Day"}, first: {era: 1, y: 1955}},
+        {type: "D", start: {mon: 8, d: 21}, inherits: "Youth Day"},
+        {titles: {"en": "Green March Day"}, type: "D", start: {mon: 11, d: 6}},
+        {inherits: "Independence Day", type: "D", start: {mon: 11, d: 18}, first: {era: 1, y: 1955}},
 
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], nth: -1}},
+        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}},
     ]
 }

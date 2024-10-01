@@ -4,11 +4,11 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.1, "green": 0.9, "blue": 0.1},
     events: [
-        {titles: {"en": "International Shia Day"}, type: "1D", start: {mon: 6, d: 12}, urls: {"en": "http://internationalshiaday.com"}},
-        {titles: {"en": "Muslim Women’s Day"}, type: "1D", start: {mon: 3, d: 27}},
-        {inherits: "World Hijab Day", type: "1D", start: {mon: 2, d: 1}, first: {era: 1, y: 2013}},
-        {titles: {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"}, type: "1D", start: {mon: 2, nth: 2, wkd: [7]}, urls: {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}, first: {era: 1, y: 2010}},
-        {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-day-of-solidarity-with-muslim-arab-and-south-asian-immigrants/"}, titles: {"en": "National Day of Solidarity with Muslim Arab and South Asian Immigrants"}, first: {era: 1, y: 2002}},
-        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/world-day-of-muslim-culture-peace-dialogue-and-film/"}, titles: {"en": "World Day of Muslim Culture Peace Dialogue and Film"}, first: {era: 1, y: 2010}},
+        {titles: {"en": "International Shia Day"}, type: "D", start: {mon: 6, d: 12}, urls: {"en": "http://internationalshiaday.com"}},
+        {titles: {"en": "Muslim Women’s Day"}, type: "D", start: {mon: 3, d: 27}},
+        {inherits: "World Hijab Day", type: "D", start: {mon: 2, d: 1}, first: {era: 1, y: 2013}},
+        {titles: {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"}, type: "D", start: {mon: 2, nth: 2, wkd: [7]}, urls: {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-day-of-solidarity-with-muslim-arab-and-south-asian-immigrants/"}, titles: {"en": "National Day of Solidarity with Muslim Arab and South Asian Immigrants"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/world-day-of-muslim-culture-peace-dialogue-and-film/"}, titles: {"en": "World Day of Muslim Culture Peace Dialogue and Film"}, first: {era: 1, y: 2010}},
     ]
 }

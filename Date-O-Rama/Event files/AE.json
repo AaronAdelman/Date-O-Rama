@@ -6,13 +6,13 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
     events: [
-        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {titles: {"en": "Commemoration Day", "ar": "يوم الشهيد"}, type: "nD", start: {mon: 11, d: 30}, end: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
         {inherits: "National Day", type: "nD", start: {mon: 12, d: 2}, end: {mon: 12, d: 3}, first: {era: 1, y: 1971}, urls: {"en": "https://nationaltoday.com/national-day-uae/"}},
 
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, d: 21}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 21}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1D", start: {mon: 8, d: 28}, inherits: "Women’s Day", urls: {"en": "https://nationaltoday.com/emirati-womens-day/"}, first: {era: 1, y: 2015}},
+        {inherits: "Father’s Day", type: "D", start: {mon: 6, d: 21}},
+        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 21}},
+        {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}},
+        {type: "D", start: {mon: 8, d: 28}, inherits: "Women’s Day", urls: {"en": "https://nationaltoday.com/emirati-womens-day/"}, first: {era: 1, y: 2015}},
     ]
 }

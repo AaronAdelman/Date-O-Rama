@@ -4,6 +4,6 @@
     calendarCode: "chi",
     calendarColor: {"red": 1.0, "green": 0.82, "blue": 0.41},
     events: [
-        {type: "1D", start: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en": "https://nationaltoday.com/spirit-festival/"}},
+        {type: "D", start: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en": "https://nationaltoday.com/spirit-festival/"}},
     ]
 }

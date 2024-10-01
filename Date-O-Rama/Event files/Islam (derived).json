@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.1, "green": 0.9, "blue": 0.1},
     events: [
-        {titles: {"en": "No Hijab Day"}, type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://exmuslims.org/support-nohijabday-on-february-1st/"}, emoji: "👩"},
+        {titles: {"en": "No Hijab Day"}, type: "D", start: {mon: 2, d: 1}, urls: {"en": "https://exmuslims.org/support-nohijabday-on-february-1st/"}, emoji: "👩"},
     ]
 }
 
