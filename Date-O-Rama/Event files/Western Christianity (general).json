@@ -185,11 +185,11 @@
         {titles: {"en": "Feast of Saints Cosmas and Damian"}, type: "D", start: {mon: 9, d: 26}},
         {titles: {"en": "Feast of St. Vincent de Paul"}, type: "D", start: {mon: 9, d: 27}},
         {titles: {"en": "Feast of St. Lorenzo Ruiz and companions"}, type: "D", start: {mon: 9, d: 28}},
-        {titles: {"en": "Feast of Saints Michael, Gabriel and Raphael"}, type: "D", start: {mon: 9, d: 29}, notes: {"en": "Michaelmas\nInternational Happy Goose Day"}, urls: {"en": "https://www.daysoftheyear.com/days/michaelmas/"}},
+        {titles: {"en": "Michaelmas"}, type: "D", start: {mon: 9, d: 29}, notes: {"en": "Feast of Saints Michael, Gabriel and Raphael\nInternational Happy Goose Day"}, urls: {"en": "https://www.daysoftheyear.com/days/michaelmas/"}},
         {inherits: "Feast of St. Jerome", type: "D", start: {mon: 9, d: 30}},
 
         {titles: {"en": "Feast of St. Thérèse of the Child Jesus"}, type: "D", start: {mon: 10, d: 1}},
-        {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day"}},
+        {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day\nFeast of Guardian Angels\nGuardian Angel Day"}},
         {titles: {"en": "St. Francis of Assisi Feast Day"}, notes: {"en": "Feast of St. Francis of Assisi"}, type: "D", start: {mon: 10, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/st-francis-of-assisi-feast-day/"}, first: {era: 1, y: 1228}},
         {titles: {"en": "Feast of St. Faustina Kowalska"}, type: "D", start: {mon: 10, d: 5}},
         {titles: {"en": "Feast of St. Bruno"}, type: "D", start: {mon: 10, d: 6}},
