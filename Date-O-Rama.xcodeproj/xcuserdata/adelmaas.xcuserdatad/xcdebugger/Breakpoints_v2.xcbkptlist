@@ -292,5 +292,51 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB6725A0-6CAA-4F7F-832D-8AA6EEB67117"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Events/ASAEventCalendar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "925"
+            endingLineNumber = "925"
+            landmarkName = "match(date:calendar:locationData:eventSpecification:components:startOfDay:startOfNextDay:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:type:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AB6725A0-6CAA-4F7F-832D-8AA6EEB67117 - df87edde06cc486d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Date_O_Rama.ASAEventCalendar.match(date: Foundation.Date, calendar: Date_O_Rama.ASACalendar, locationData: Date_O_Rama.ASALocation, eventSpecification: Date_O_Rama.ASAEventSpecification, components: Date_O_Rama.ASADateComponents, startOfDay: Foundation.Date, startOfNextDay: Foundation.Date, previousSunset: Foundation.Date, nightHourLength: Swift.Double, sunrise: Foundation.Date, hourLength: Swift.Double, previousOtherDusk: Foundation.Date, otherNightHourLength: Swift.Double, otherDawn: Foundation.Date, otherHourLength: Swift.Double, type: Date_O_Rama.ASAEventSpecificationType) -&gt; (matches: Swift.Bool, startDate: Swift.Optional&lt;Foundation.Date&gt;, endDate: Swift.Optional&lt;Foundation.Date&gt;)"
+                  moduleName = "Date-O-Rama.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventCalendar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "924"
+                  endingLineNumber = "924">
+               </Location>
+               <Location
+                  uuid = "AB6725A0-6CAA-4F7F-832D-8AA6EEB67117 - df87edde06cc488c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Date_O_Rama.ASAEventCalendar.match(date: Foundation.Date, calendar: Date_O_Rama.ASACalendar, locationData: Date_O_Rama.ASALocation, eventSpecification: Date_O_Rama.ASAEventSpecification, components: Date_O_Rama.ASADateComponents, startOfDay: Foundation.Date, startOfNextDay: Foundation.Date, previousSunset: Foundation.Date, nightHourLength: Swift.Double, sunrise: Foundation.Date, hourLength: Swift.Double, previousOtherDusk: Foundation.Date, otherNightHourLength: Swift.Double, otherDawn: Foundation.Date, otherHourLength: Swift.Double, type: Date_O_Rama.ASAEventSpecificationType) -&gt; (matches: Swift.Bool, startDate: Swift.Optional&lt;Foundation.Date&gt;, endDate: Swift.Optional&lt;Foundation.Date&gt;)"
+                  moduleName = "Date-O-Rama.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventCalendar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "925"
+                  endingLineNumber = "925">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
