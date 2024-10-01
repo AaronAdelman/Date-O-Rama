@@ -3,7 +3,7 @@
     "//": "Brunei",
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.98, "green": 0.88, "blue": 0.13},
+    calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
     events: [
         {type: "D", start: {mon: 9, d: 17}, titles: {"en": "Nuzul Al-Quran", "ms": "Hari Nuzul Al-Quran"}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/nuzul-al-quran"}},
         {type: "D", start: {mon: 10, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/eid-al-fitr"}, titles: {"en": "ʻĪd al-Fiṭr Holiday"}},

@@ -3,7 +3,7 @@
     "//": "Ireland",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.09, "green": 0.61, "blue": 0.38},
+    calendarColor: {red: 0.09, green: 0.61, blue: 0.38},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, titles: {"en": "St. Brigid’s Day", "he": "החג של בריג׳יד הקדושה", "ga": "Lá Fhéile Bríde"}, first: {era: 1, y: 2023}},

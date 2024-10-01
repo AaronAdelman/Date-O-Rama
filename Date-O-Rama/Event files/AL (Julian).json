@@ -3,7 +3,7 @@
     "//": "Albania",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},

@@ -2,7 +2,7 @@
     titles: {"en": "Hinduism (supplemental)", "he": "הינדואיזם (נוספים)"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.44, "green": 0.53, "blue": 0.62},
+    calendarColor: {red: 0.44, green: 0.53, blue: 0.62},
     events: [
         {type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/international-mind-body-wellness-day/"}, titles: {"en": "International Mind-Body Wellness Day"}},
     ]

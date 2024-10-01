@@ -3,7 +3,7 @@
     "//": "Suriname",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
+    calendarColor: {red: 0.00, green: 0.48, blue: 0.20},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}

@@ -2,7 +2,7 @@
     titles: {"en": "Sikhism", "he": "סיקיזם"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.96, "green": 0.78, "blue": 0.27},
+    calendarColor: {red: 0.96, green: 0.78, blue: 0.27},
     events: [
         {type: "D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, titles: {"en": "Martyrdom of Guru Arjan Dev Sahib"}},
     ]

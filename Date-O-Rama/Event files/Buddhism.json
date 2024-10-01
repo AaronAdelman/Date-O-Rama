@@ -2,7 +2,7 @@
     titles: {"en": "Buddhism", "he": "בודהיזם"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.0, "green": 0.82, "blue": 0.41},
+    calendarColor: {red: 1.0, green: 0.82, blue: 0.41},
     events: [
         {type: "D", start: {mon: 12, d: 8}, inherits: "Bodhi Day"},
         {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1950}},

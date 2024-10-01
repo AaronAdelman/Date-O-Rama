@@ -3,7 +3,7 @@
     "//": "Norfolk Island",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.47, "blue": 0.20},
+    calendarColor: {red: 0.00, green: 0.47, blue: 0.20},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Australia Day", first: {era: 1, y: 1808}},

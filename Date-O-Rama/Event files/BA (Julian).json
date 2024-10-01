@@ -3,7 +3,7 @@
     "//": "Bosnia and Herzegovina",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.00, "green": 0.18, "blue": 0.42},
+    calendarColor: {red: 0.00, green: 0.18, blue: 0.42},
     events: [
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},

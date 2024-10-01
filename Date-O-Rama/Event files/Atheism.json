@@ -2,7 +2,7 @@
     titles: {"en": "Atheism", "he": "אתאיזם"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.95, "green": 0.87, "blue": 0.72},
+    calendarColor: {red: 0.95, green: 0.87, blue: 0.72},
     events: [
         {titles: {"en": "Freethought Day"}, type: "D", start: {mon: 10, d: 12}, first: {era: 1, y: 1997}, urls: {"en": "https://nationaldaycalendar.com/national-freethought-day-october-12/"}},
         {titles: {"en": "Atheist Day", "he": "יום האתאיסטים"}, type: "D", start: {mon: 3, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://www.atheistrepublic.com/atheist-day"}, notes: {"en": "National Atheist’s Day"}},

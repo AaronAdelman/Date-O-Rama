@@ -3,7 +3,7 @@
     "//": "Macau",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.06, "green": 0.46, "blue": 0.38},
+    calendarColor: {red: 0.06, green: 0.46, blue: 0.38},
     events: [
         {type: "D", start: {mon: 12, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/macau/chinese-new-year"}, inherits: "Lunar New Year’s Eve"},
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},

@@ -4,7 +4,7 @@
     "TODO": "Umhlanga reed dance, Incwala Day",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.24, "green": 0.52, "blue": 0.69},
+    calendarColor: {red: 0.24, green: 0.52, blue: 0.69},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

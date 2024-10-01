@@ -3,7 +3,7 @@
     "//": "Italy",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
+    calendarColor: {red: 0.00, green: 0.48, blue: 0.20},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

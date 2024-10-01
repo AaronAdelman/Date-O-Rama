@@ -4,7 +4,7 @@
     "TODO": "Muslim observances",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},

@@ -3,7 +3,7 @@
     "//": "Guam",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
+    calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 3}, inherits: "Martin Luther King, Jr. Day"},

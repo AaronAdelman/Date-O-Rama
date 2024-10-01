@@ -3,7 +3,7 @@
     "//": "Marshall Islands",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.19, "blue": 0.53},
+    calendarColor: {red: 0.00, green: 0.19, blue: 0.53},
     events: [
         {inherits: "Constitution Day", type: "D", start: {mon: 5, d: 1}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/marshall-islands-constitution-day/"}},
     ]

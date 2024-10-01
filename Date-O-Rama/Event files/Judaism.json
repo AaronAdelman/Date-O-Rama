@@ -3,7 +3,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     "otherCalendarCodes": ["cop"],
-    calendarColor: {"red": 0.0, "green": 0.0, "blue": 1.0},
+    calendarColor: {red: 0.0, green: 0.0, blue: 1.0},
     events: [
         {type: "Y", start: {"yDiv": 7, "yRem": 1}, titles: {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
         {type: "Y", start: {"yDiv": 7, "yRem": 2}, titles: {"he": "שנה ב׳ לשמיטה", "en": "Year 2 in the Shemiṭṭah Cycle"}},

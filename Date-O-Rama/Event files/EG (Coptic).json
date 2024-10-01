@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "cop",
     "otherCalendarCodes": ["jul"],
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {type: "D", start: {mon: 4, d: 28, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/coptic-christmas"}, inherits: "Christmas Holiday"},
         {inherits: "Christmas Day", type: "D", start: {mon: 4, d: 29}},

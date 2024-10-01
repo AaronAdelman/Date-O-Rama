@@ -3,7 +3,7 @@
     "//": "Kosovo",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.00, "green": 0.00, "blue": 0.50},
+    calendarColor: {red: 0.00, green: 0.00, blue: 0.50},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

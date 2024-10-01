@@ -2,7 +2,7 @@
     titles: {"en": "Druzism", "he": "דרוזים", "ar": "دروز"},
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.21, "green": 0.49, "blue": 0.31},
+    calendarColor: {red: 0.21, green: 0.49, blue: 0.31},
     events: [
         {inherits: "ʿĪd al-ʾAḍḥā", type: "nD", start: {mon: 12, d: 10}, end: {mon: 12, d: 13}},
         ]

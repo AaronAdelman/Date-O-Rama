@@ -4,7 +4,7 @@
     "TODO": "The fourth day of Lunar New Year, the fourth day of Lunar New Year",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.93, "green": 0.11, "blue": 0.15},
+    calendarColor: {red: 0.93, green: 0.11, blue: 0.15},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
         {type: "D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}, inherits: "Buddha’s Birthday"},

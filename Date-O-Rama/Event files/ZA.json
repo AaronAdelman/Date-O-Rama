@@ -3,7 +3,7 @@
     "//": "South Africa",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.88, "green": 0.24, "blue": 0.19},
+    calendarColor: {red: 0.88, green: 0.24, blue: 0.19},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/south-africa/international-new-years-day"}, inherits: "New Year’s Day (in lieu)", first: {era: 1, y: 1910}},

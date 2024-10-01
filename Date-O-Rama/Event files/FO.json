@@ -3,7 +3,7 @@
     "//": "Faroe Islands",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.13, "green": 0.25, "blue": 0.60},
+    calendarColor: {red: 0.13, green: 0.25, blue: 0.60},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Maundy Thursday", type: "D", start: {"Easter": "Easter", "offsetD": -3}},

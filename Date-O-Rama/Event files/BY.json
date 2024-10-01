@@ -3,7 +3,7 @@
     "//": "Belarus",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.82, "green": 0.15, "blue": 0.19},
+    calendarColor: {red: 0.82, green: 0.15, blue: 0.19},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/belarus/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},

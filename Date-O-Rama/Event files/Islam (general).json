@@ -2,7 +2,7 @@
     titles: {"en": "Islam", "he": "אסלאם", "ar": "الإسلام"},
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.0, "green": 0.97, "blue": 0.0},
+    calendarColor: {red: 0.0, green: 0.97, blue: 0.0},
     events: [
         {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "cnr": "Nova hidžretska godina", "es": "Año Nuevo Islámico", "fil": "Unang Araw ng Muharram", "ms": "Awal Tahun Hijrah"}, type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}, notes: {"en": "Awal Muharram\nAmun Jadid", "fil": "Bagong Taong Islamiko", "ms": "Awal Muharram\nMaal Hijrah"}},
         {titles: {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎", "fil": "Araw ng Ashura", "tr": "Aşure Bayramı", "ur": "عاشوراء"}, type: "D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/ashurah/"}, notes: {"en": "Ashura\nAshoora", "fil": "Araw ng Pagluluksa sa Buwan ng Muharram", "ur": "یوم کربلا"}},

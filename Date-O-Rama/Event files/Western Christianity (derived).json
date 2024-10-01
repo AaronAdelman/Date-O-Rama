@@ -2,7 +2,7 @@
     titles: {"en": "Western Christianity (derived)", "he": "נצרות מערבית (נגזרים)"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
+    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     events: [
         {titles: {"en": "National Candy Cane Day"}, type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/candy-cane-day/"}, notes: {"en": "National Candy Cane Day"}},
         {titles: {"en": "National Champagne Day"}, type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/champagne-day/"}, emoji: "🥂"},

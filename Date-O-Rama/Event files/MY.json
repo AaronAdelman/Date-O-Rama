@@ -4,7 +4,7 @@
     "TODO": "Muslim observances, Hindu observances",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
+    calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},

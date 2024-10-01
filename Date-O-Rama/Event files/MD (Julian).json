@@ -3,7 +3,7 @@
     "//": "Moldova",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.00, "green": 0.24, "blue": 0.65},
+    calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {type: "D", start: {mon: 1, d: 8, wkd: [1, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/orthodox-christmas"}, inherits: "Christmas Holiday"},

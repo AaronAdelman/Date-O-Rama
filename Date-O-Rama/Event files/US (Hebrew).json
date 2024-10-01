@@ -2,7 +2,7 @@
     titles: {"*": "US"},
     defaultLocale: "en",
     calendarCode: "heb*",
-    calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
+    calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
     events: [
         {notes: {"en": "National Education and Sharing Day"}, titles: {"en": "Education and Sharing Day"}, type: "D", start: {mon: 8, d: 11}, urls: {"en": "https://educationandsharingday.com/"}, first: {era: 0, y: 5783}},
     ]

@@ -2,7 +2,7 @@
     titles: {"en": "Rural", "he": "כפרי", "fr": "Rural"},
     defaultLocale: "en",
     calendarCode: "fre*",
-    calendarColor: {"red": 0.88, "green": 0.66, "blue": 0.38},
+    calendarColor: {red: 0.88, green: 0.66, blue: 0.38},
     events: [
         {titles: {"fr": "Raisin", "en": "Grape Day", "he": "יום הענבים"}, type: "D", start: {mon: 1, d: 1}, emoji: "🍇", urls: {"fr": "https://fr.wikipedia.org/wiki/Raisin", "en": "https://en.wikipedia.org/wiki/Grape", "he": "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%A0%D7%91"}, notes: {"en": "Vitis vinifera"}},
         {titles: {"fr": "Safran", "en": "Saffron Day", "he": "יום הזעפרן"}, type: "D", start: {mon: 1, d: 2}, urls: {"fr": "https://fr.wikipedia.org/wiki/Safran_%28%C3%A9pice%29", "en": "https://en.wikipedia.org/wiki/Saffron", "he": "https://he.wikipedia.org/wiki/%D7%96%D7%A2%D7%A4%D7%A8%D7%9F"}, notes: {"en": "Crocus sativus"}},

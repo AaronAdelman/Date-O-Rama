@@ -3,7 +3,7 @@
     "//": "Cabo Verde, i.e., Cape Verde",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.22, "blue": 0.58},
+    calendarColor: {red: 0.00, green: 0.22, blue: 0.58},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 13}, inherits: "Democracy Day", first: {era: 1, y: 1991}, emoji: "🗳"},

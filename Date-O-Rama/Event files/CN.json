@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays?, Tibetan calendar holidays, Yi calendar holidays, possibly more",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {inherits: "Tomb-Sweeping Day", type: "D", start: {equinoxOrSolstice: "Mar", offsetD: 15}},
 

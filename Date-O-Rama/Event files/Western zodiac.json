@@ -2,7 +2,7 @@
     titles: {"en": "Western zodiac", "he": "גלגל המזלות המערבי"},
     defaultLocale: "en",
     calendarCode: "gre*",
-    calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.5},
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
         {inherits: "Aries", type: "nD", start: {mon: 3, d: 21}, end: {mon: 4, d: 19}},
         {inherits: "Taurus", type: "nD", start: {mon: 4, d: 20}, end: {mon: 5, d: 20}},

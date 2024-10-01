@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.06, "green": 0.28, "blue": 0.69},
+    calendarColor: {red: 0.06, green: 0.28, blue: 0.69},
     events: [
         {type: "D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/adwa-victory-day/"}, titles: {"en": "Adwa Victory Day", "am": "የዓድዋ ድል በዓል", "om": "Ijifaannoo Adawaaa"}, first: {era: 1, y: 1896}, notes: {"en": "Victory of Adwa"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

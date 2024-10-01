@@ -3,7 +3,7 @@
     "//": "North Macedonia",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.75, "green": 0.05, "blue": 0.24},
+    calendarColor: {red: 0.75, green: 0.05, blue: 0.24},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

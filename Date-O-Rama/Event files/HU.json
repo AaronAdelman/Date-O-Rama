@@ -3,7 +3,7 @@
     "//": "Hungary",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/1848-revolution-memorial-day/"}, inherits: "Revolution Day", notes: {"en": "1848 Revolution Memorial Day"}, first: {era: 1, y: 1848}},

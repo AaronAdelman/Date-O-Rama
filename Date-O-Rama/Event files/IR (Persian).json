@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "his",
-    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     events: [
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "Islamic Revolution Day", "fa": "انقلاب اسلامی پنجاه و هفت"}, urls: {"en": "https://nationaltoday.com/islamic-revolution-day/"}, notes: {"en": "Anniversary of Islamic Revolution"}},
         {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Oil Nationalization Day", "fa": "ملی شدن صنعت نفت"}, urls: {"en": "https://www.officeholidays.com/holidays/iran/oil-nationalisation-day"}, notes: {"en": "Nationalization of the Iranian oil industry"}},

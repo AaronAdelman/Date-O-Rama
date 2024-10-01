@@ -3,7 +3,7 @@
     "//": "San Marino",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.61, "green": 0.80, "blue": 0.92},
+    calendarColor: {red: 0.61, green: 0.80, blue: 0.92},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

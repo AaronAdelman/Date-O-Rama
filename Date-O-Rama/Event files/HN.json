@@ -3,7 +3,7 @@
     "//": "Honduras",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.45, "blue": 0.81},
+    calendarColor: {red: 0.00, green: 0.45, blue: 0.81},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Father’s Day", type: "D", start: {mon: 3, d: 19}, urls: {"en": "https://www.officeholidays.com/holidays/honduras/fathers-day"}},

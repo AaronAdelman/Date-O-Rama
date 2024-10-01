@@ -3,7 +3,7 @@
     "//": "Bahamas",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.66, "blue": 0.81},
+    calendarColor: {red: 0.00, green: 0.66, blue: 0.81},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Majority Rule Day"}, first: {era: 1, y: 2014}},

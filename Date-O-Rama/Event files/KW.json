@@ -3,7 +3,7 @@
     "//": "Kuwait",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.37},
+    calendarColor: {red: 0.00, green: 0.59, blue: 0.37},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "National Day", type: "D", start: {mon: 2, d: 25}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/national-day-kuwait/"}},

@@ -4,7 +4,7 @@
     "TODO": "Muslim, Buddhist, and Hindu holidays",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
+    calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
     events: [
         {type: "D", start: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/pongal"}, titles: {"en": "Special Bank Holiday Holiday"}},
         {type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "National Day", first: {era: 1, y: 1948}},

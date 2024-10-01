@@ -2,7 +2,7 @@
     titles: {"en": "Bahá’í", "he": "האמונה הבהאית"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.96, "green": 0.76, "blue": 0.79},
+    calendarColor: {red: 0.96, green: 0.76, blue: 0.79},
     events: [
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, first: {era: 1, y: 1957}, titles: {"en": "Race Unity Day"}, urls: {"en": "https://nationaltoday.com/race-unity-day/"}, emoji: "🫶", notes: {"en": "Race Amity Day"}},
         {type: "D", start: {mon: 7, d: 9}, first: {era: 1, y: 1896}, titles: {"en": "Martyrdom of the Bab"}, urls: {"en": "https://nationaltoday.com/martyrdom-of-the-bab/"}},

@@ -2,7 +2,7 @@
     titles: {"en": "Neopaganism", "he": "נאו־פגניות"},
     defaultLocale: "en",
     calendarCode: "gre*",
-    calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.25},
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.25},
     events: [
         {inherits: "Ostara", type: "D", start: {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xb"]},
         {inherits: "Beltane", type: "D", start: {mon: 5, d: 1}, "regionCodes": ["xb"]},

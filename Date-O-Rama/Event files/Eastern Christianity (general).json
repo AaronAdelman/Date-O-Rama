@@ -2,7 +2,7 @@
     titles: {"en": "Eastern Christianity", "he": "נצרות מזרחית"},
     defaultLocale: "en",
     calendarCode: "greOrJul",
-    calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
+    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     events: [
         {titles: {"en": "Zacchaeus Sunday"}, notes: {"en": "Sunday of the Canaanite"}, type: "D", start: {"Easter": "Easter", "offsetD": -77}},
         {titles: {"en": "The Publican and the Pharisee"}, type: "D", start: {"Easter": "Easter", "offsetD": -70}},

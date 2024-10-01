@@ -3,7 +3,7 @@
     "//": "New Zealand",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.14, "green": 0.34, "blue": 0.48},
+    calendarColor: {red: 0.14, green: 0.34, blue: 0.48},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Day after New Year’s Day"},

@@ -3,7 +3,7 @@
     "//": "Heard Island and McDonald Islands",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.50, "green": 0.50, "blue": 0.50},
+    calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     events: [
         
     ]

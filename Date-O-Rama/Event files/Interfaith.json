@@ -2,7 +2,7 @@
     titles: {"en": "Interfaith", "he": "בין־דתיות"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.8, "green": 0.8, "blue": 0.98},
+    calendarColor: {red: 0.8, green: 0.8, blue: 0.98},
     events: [
         {titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, type: "D", start: {mon: 1, wkd: [1], nth: 3}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/"}},
         {titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, type: "M", start: {mon: 12}, emoji: "🙏", urls: {"en": "https://nationaldaycalendar.com/spiritual-literacy-month-december/"}, first: {era: 1, y: 1996}},

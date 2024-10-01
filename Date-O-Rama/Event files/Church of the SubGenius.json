@@ -2,7 +2,7 @@
     titles: {"en": "Church of the SubGenius"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.50, "green": 0.50, "blue": 0.50},
+    calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "St. Jesus Christ (Feast of the Human Sacrifice)"}},
         {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Failure of Will Day"}},

@@ -3,7 +3,7 @@
     "//": "Holy See, AKA Vatican City",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.00, "green": 0.88, "blue": 0.000},
+    calendarColor: {red: 1.00, green: 0.88, blue: 0.000},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

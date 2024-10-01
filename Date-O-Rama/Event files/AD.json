@@ -3,7 +3,7 @@
     "//": "Andorra",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.06, "green": 0.02, "blue": 0.62},
+    calendarColor: {red: 0.06, green: 0.02, blue: 0.62},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

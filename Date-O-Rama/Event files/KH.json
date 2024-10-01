@@ -4,7 +4,7 @@
     "TODO": "Cambodian New Year, Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.98, "green": 0.88, "blue": 0.13},
+    calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {titles: {"en": "Victory Over Genocide Day", "km": "ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}, type: "D", start: {mon: 1, d: 7}},

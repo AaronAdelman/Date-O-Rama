@@ -3,7 +3,7 @@
     "//": "Denmark",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Maundy Thursday", type: "D", start: {"Easter": "Easter", "offsetD": -3}},

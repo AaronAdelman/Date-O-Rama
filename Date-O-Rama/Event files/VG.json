@@ -3,7 +3,7 @@
     "//": "British Virgin Islands",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.07, "green": 0.36, "blue": 0.14},
+    calendarColor: {red: 0.07, green: 0.36, blue: 0.14},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},

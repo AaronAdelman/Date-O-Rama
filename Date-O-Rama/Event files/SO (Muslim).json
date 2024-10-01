@@ -3,7 +3,7 @@
     "//": "Somalia",
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {inherits: "Father’s Day", type: "D", start: {mon: 7, d: 13}},
     ]

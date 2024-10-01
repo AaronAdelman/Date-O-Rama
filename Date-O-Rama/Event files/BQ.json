@@ -3,7 +3,7 @@
     "//": "Bonaire, Sint Eustatius, and Saba",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.68, "green": 0.11, "blue": 0.16},
+    calendarColor: {red: 0.68, green: 0.11, blue: 0.16},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

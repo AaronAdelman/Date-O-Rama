@@ -4,7 +4,7 @@
     "TODO": "Hindu and Muslim holidays?, Waisak Day, Day of Silence",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

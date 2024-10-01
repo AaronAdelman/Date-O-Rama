@@ -4,7 +4,7 @@
     "TODO": "Farmer’s Day, Dongzhi Festival",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.00, "blue": 0.58},
+    calendarColor: {red: 0.00, green: 0.00, blue: 0.58},
     events: [
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inherits: "Republic Day", titles: {"en": "Founding of the Republic of China", "zh": "Founding of the Republic of China"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

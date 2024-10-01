@@ -3,7 +3,7 @@
     "//": "Saint Barthélemy, AKA Saint Barthelemy",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.15, "blue": 0.33},
+    calendarColor: {red: 0.00, green: 0.15, blue: 0.33},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

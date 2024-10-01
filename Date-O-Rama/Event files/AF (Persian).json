@@ -3,7 +3,7 @@
     "//": "Afghanistan",
     defaultLocale: "en",
     calendarCode: "his",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
            {inherits: "Martyrs’ Day", type: "D", start: {mon: 6, d: 18}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Afghanistan)"}},
     ]

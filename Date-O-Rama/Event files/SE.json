@@ -3,7 +3,7 @@
     "//": "Sweden",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.29, "blue": 0.53},
+    calendarColor: {red: 0.00, green: 0.29, blue: 0.53},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

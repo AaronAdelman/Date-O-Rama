@@ -3,7 +3,7 @@
     "//": "Aruba",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.25, "green": 0.56, "blue": 0.87},
+    calendarColor: {red: 0.25, green: 0.56, blue: 0.87},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/aruba/betico-croes-day"}, titles: {"en": "Betico Croes Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},

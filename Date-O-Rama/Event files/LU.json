@@ -3,7 +3,7 @@
     "//": "Luxembourg",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://www.officeholidays.com/holidays/luxembourg/fasching"}, titles: {"en": "Fasching"}},

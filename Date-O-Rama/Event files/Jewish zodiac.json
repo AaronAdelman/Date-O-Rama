@@ -2,7 +2,7 @@
     titles: {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
     defaultLocale: "he",
     calendarCode: "heb*",
-    calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.5},
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
     {inherits: "Aries", type: "M", start: {mon: 8}},
     {inherits: "Taurus", type: "M", start: {mon: 9}},

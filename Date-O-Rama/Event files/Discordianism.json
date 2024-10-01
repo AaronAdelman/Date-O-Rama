@@ -2,7 +2,7 @@
     titles: {"en": "Discordianism", "he": "דיסקורדיאניזם"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.50, "green": 0.50, "blue": 0.50},
+    calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     events: [
         {type: "D", start: {mon: 1, d: 5}, titles: {"en": "Mungday"}, notes: {"en": "Holyday\nChaos 5"}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Chaoflux"}, notes: {"en": "Holyday\nChaos 50"}},

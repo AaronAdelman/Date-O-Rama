@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {type: "D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
         {inherits: "Revolution Day", type: "D", start: {mon: 2, d: 17}, first: {era: 1, y: 2012}, notes: {"en": "February 17th Revolution", "ar": "ثورة 17 فبراير"}, urls: {"en": "https://nationaltoday.com/february-17th-revolution/"}},

@@ -3,7 +3,7 @@
     "//": "Malaysia",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
+    calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 3, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/chinese-new-year"}, titles: {"en": "Chinese New Year Holiday"}},

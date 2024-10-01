@@ -3,7 +3,7 @@
     "//": "British Indian Ocean Territory",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.42, "blue": 0.23},
+    calendarColor: {red: 0.00, green: 0.42, blue: 0.23},
     events: [
         
     ]

@@ -3,7 +3,7 @@
     "//": "South Korea",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", titles: {"en": "Seollal", "ko": "설날"}, urls: {"en": "https://nationaltoday.com/seollal/"}},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival", titles: {"en": "Daeboreum", "ko": "정월 대보름"}},

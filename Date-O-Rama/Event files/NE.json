@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.00, "green": 0.70, "blue": 0.36},
+    calendarColor: {red: 1.00, green: 0.70, blue: 0.36},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}},

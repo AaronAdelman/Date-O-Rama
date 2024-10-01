@@ -3,7 +3,7 @@
     "//": "French Southern Territories",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.15, "blue": 0.33},
+    calendarColor: {red: 0.00, green: 0.15, blue: 0.33},
     events: [
         
     ]

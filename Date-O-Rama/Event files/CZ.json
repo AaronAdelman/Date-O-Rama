@@ -3,7 +3,7 @@
     "//": "Czechia, AKA Czech Republic",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.19, "blue": 0.53},
+    calendarColor: {red: 0.00, green: 0.19, blue: 0.53},
     events: [
         {inherits: "Independence Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1993}, titles: {"en": "Restoration Day", "cs": "Den obnovy samostatného českého státu"}},
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},

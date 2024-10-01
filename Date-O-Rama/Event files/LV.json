@@ -4,7 +4,7 @@
     "TODO": "Latvian Song and Dance Festival",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.64, "green": 0.20, "blue": 0.23},
+    calendarColor: {red: 0.64, green: 0.20, blue: 0.23},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

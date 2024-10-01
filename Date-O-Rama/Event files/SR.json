@@ -4,7 +4,7 @@
     "TODO": "Muslim and Hindu observances",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
+    calendarColor: {red: 0.00, green: 0.48, blue: 0.20},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

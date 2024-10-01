@@ -3,7 +3,7 @@
     "//": "Serbia",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.89, "green": 0.00, "blue": 0.27},
+    calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

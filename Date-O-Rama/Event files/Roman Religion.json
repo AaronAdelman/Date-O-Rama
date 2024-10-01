@@ -2,7 +2,7 @@
     titles: {"en": "Roman Religion", "he": "דת רומה"},
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.35, "green": 0.60, "blue": 0.85},
+    calendarColor: {red: 0.35, green: 0.60, blue: 0.85},
     emoji: "🏛️",
     events: [
         {type: "nD", start: {mon: 12, d: 17}, end: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/saturnalia/"}, titles: {"en": "Saturnalia", "he": "סאטורנליה"}},

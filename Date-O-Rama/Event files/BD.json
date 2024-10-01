@@ -4,7 +4,7 @@
     "TODO": "Buddhist and Hindu holidays",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.17, "green": 0.41, "blue": 0.31},
+    calendarColor: {red: 0.17, green: 0.41, blue: 0.31},
     events: [
         {type: "D", start: {mon: 2, d: 21}, titles: {"en": "Language Martyrs’ Day", "bn": "ভাষা আন্দোলন দিবস"}, notes: {"en": "State Language Day\nLanguage Movement Day", "bn": "শহীদ দিবস"}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/language-martyrs-day/"}, first: {era: 1, y: 1955}},
         {type: "D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, titles: {"en": "Sheikh Mujibur Rahman’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1920}},

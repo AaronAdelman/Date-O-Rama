@@ -4,7 +4,7 @@
     "TODO": "Islamic and Buddist holidays, National Day",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.00, "green": 0.80, "blue": 0.00},
+    calendarColor: {red: 1.00, green: 0.80, blue: 0.00},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 1, d: 4}, first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},

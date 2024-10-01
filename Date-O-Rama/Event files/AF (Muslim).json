@@ -3,7 +3,7 @@
     "//": "Afghanistan",
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {type: "nD", start: {mon: 10, d: 2}, end: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/afghanistan/eid-al-fitr"}, titles: {"en": "ʻĪd al-Fiṭr Holiday"}, notes: {"en": "Eid al-Fitr Holiday"}},
     ]

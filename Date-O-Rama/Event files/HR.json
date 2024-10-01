@@ -3,7 +3,7 @@
     "//": "Croatia",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

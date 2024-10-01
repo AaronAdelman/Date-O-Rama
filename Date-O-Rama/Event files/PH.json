@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays, Peñafrancia Festival",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.96, "green": 0.83, "blue": 0.29},
+    calendarColor: {red: 0.96, green: 0.83, blue: 0.29},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/international-new-years-day"}, inherits: "New Year’s Day Holiday"},

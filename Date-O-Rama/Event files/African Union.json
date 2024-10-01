@@ -2,7 +2,7 @@
     titles: {"en": "African Union", "he": "האיחוד האפריקאי"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.60, "green": 0.20, "blue": 0.62},
+    calendarColor: {red: 0.60, green: 0.20, blue: 0.62},
     emoji: "🌍",
     events: [
         {type: "D", titles: {"en": "Commemoration of the African Day of Peace and Reconciliation"}, start: {mon: 1, d: 31}, emoji: "☮️"},

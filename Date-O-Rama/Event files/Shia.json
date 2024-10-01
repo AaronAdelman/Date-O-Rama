@@ -2,7 +2,7 @@
     titles: {"en": "Shia", "he": "שיעה", "ar": "الشيعة"},
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {"red": 0.05, "green": 0.95, "blue": 0.05},
+    calendarColor: {red: 0.05, green: 0.95, blue: 0.05},
     events: [
         {titles: {"en": "al-Arba‘īn", "he": "ארבעין", "ar": "الأربعين‎", "fa": "چهلم‎"}, type: "D", start: {"dOfY": 50}, urls: {"en": "https://en.wikipedia.org/wiki/Arba'een"}},
         {inherits: "Mawlid", type: "D", start: {mon: 3, d: 17}},

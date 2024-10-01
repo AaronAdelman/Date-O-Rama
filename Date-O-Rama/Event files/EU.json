@@ -3,7 +3,7 @@
     "//": "European Union",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.16, "green": 0.27, "blue": 0.52},
+    calendarColor: {red: 0.16, green: 0.27, blue: 0.52},
     events: [
         {inherits: "Data Protection Day", type: "D", start: {mon: 1, d: 28}, first: {era: 1, y: 2007}},
         {titles: {"en": "Europe Day (Committee of Ministers)", "he": "יום אירופה (ועדת השרים)"}, type: "D", start: {mon: 5, d: 5}, first: {era: 1, y: 1964}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/"}},

@@ -3,7 +3,7 @@
     "//": "New Caledonia",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.98, "green": 0.98, "blue": 0.00},
+    calendarColor: {red: 0.98, green: 0.98, blue: 0.00},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

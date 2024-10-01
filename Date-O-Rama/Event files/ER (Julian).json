@@ -3,7 +3,7 @@
     "//": "Eritrea",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.89, "green": 0.00, "blue": 0.17},
+    calendarColor: {red: 0.89, green: 0.00, blue: 0.17},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

@@ -3,7 +3,7 @@
     "//": "Martinique",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.13, "green": 0.26, "blue": 0.56},
+    calendarColor: {red: 0.13, green: 0.26, blue: 0.56},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

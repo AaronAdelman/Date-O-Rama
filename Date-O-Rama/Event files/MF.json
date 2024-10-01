@@ -3,7 +3,7 @@
     "//": "St. Martin",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.15, "blue": 0.33},
+    calendarColor: {red: 0.00, green: 0.15, blue: 0.33},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},

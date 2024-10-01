@@ -2,7 +2,7 @@
     titles: {"en": "Thelema", "he": "תלמה"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.5, "green": 0.5, "blue": 0.75},
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.75},
     events: [
         {titles: {"en": "Feast of the Supreme Ritual"}, type: "D", start: {mon: 3, d: 20}},
         {titles: {"en": "Equinox of the Gods"}, type: "D", start: {"equinoxOrSolstice": "Mar"}, first: {era: 1, y: 1904}},

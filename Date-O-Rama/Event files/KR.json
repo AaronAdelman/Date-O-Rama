@@ -3,7 +3,7 @@
     "//": "South Korea",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Independence Day", type: "D", titles: {"en": "March 1st Movement Day", "he": "יום העצמאות של תנועת ה־1 במרץ", "ko": "3ㆍ1절"}, start: {mon: 3, d: 1}, first: {era: 1, y: 1919}, urls: {"en": "https://nationaltoday.com/independence-movement-day/"}, notes: {"en": "Independence Movement Day"}},

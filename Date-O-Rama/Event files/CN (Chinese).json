@@ -4,7 +4,7 @@
     "TODO": "Dragon Boat Festival Holiday",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     events: [
         {type: "D", start: {mon: 12, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-new-year"}, inherits: "Spring Festival Holiday"},
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},

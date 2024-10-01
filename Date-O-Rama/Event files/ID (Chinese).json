@@ -3,7 +3,7 @@
     "//": "Indonesia",
     defaultLocale: "en",
     calendarCode: "chi",
-    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year", first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/chinese-new-year"}, titles: {"en": "Imlek Holiday"}},

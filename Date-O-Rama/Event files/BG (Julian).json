@@ -3,7 +3,7 @@
     "//": "Bulgaria",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.00, "green": 0.69, "blue": 0.40},
+    calendarColor: {red: 0.00, green: 0.69, blue: 0.40},
     events: [
         {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Holy Saturday", type: "D", start: {"Easter": "Easter", "offsetD": -1}},

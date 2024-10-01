@@ -3,7 +3,7 @@
     "//": "St. Kitts and Nevis",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 12, d: 30, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inherits: "Carnival"},

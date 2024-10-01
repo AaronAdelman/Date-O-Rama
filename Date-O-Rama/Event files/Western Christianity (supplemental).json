@@ -2,7 +2,7 @@
     titles: {"en": "Western Christianity (supplemental)", "he": "נצרות מערבית (נוספים)"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},
+    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     events: [
         {inherits: "National Love People Day", type: "D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}},
         {titles: {"en": "Church Library Month"}, type: "M", start: {mon: 10}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/church-library-month-october/"}},

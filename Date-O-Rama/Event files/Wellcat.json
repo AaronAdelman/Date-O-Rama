@@ -2,7 +2,7 @@
     titles: {"en": "Wellcat"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.22, "green": 0.33, "blue": 0.44},
+    calendarColor: {red: 0.22, green: 0.33, blue: 0.44},
     emoji: "🐈‍⬛",
     events: [
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Bifocals At The Monitor Liberation Day"}, inherits: "*Wellcat*"},

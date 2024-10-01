@@ -3,7 +3,7 @@
     "//": "Montenegro",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.85, "green": 0.67, "blue": 0.00},
+    calendarColor: {red: 0.85, green: 0.67, blue: 0.00},
     events: [
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},

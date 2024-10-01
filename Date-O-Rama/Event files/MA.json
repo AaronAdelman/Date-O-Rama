@@ -4,7 +4,7 @@
     "TODO": "Public holidays on the Muslim calendar?",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.75, "green": 0.05, "blue": 0.24},
+    calendarColor: {red: 0.75, green: 0.05, blue: 0.24},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Proclamation of Independence Day", type: "D", start: {mon: 1, d: 11}, first: {era: 1, y: 1944}},

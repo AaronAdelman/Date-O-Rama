@@ -2,7 +2,7 @@
     titles: {"en": "Named full moons", "he": "ירחים מלאים עם שמות"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.89, "green": 0.89, "blue": 0.89},
+    calendarColor: {red: 0.89, green: 0.89, blue: 0.89},
     emoji: "🌕",
     events: [
         {titles: {"en": "Blue Moon"}, type: "D", start: {"zmoPhase": "2ndFull"}, emoji: "🔵"},

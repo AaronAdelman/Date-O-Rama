@@ -2,7 +2,7 @@
     titles: {"en": "National", "he": "לאומי"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.45, "green": 0.70, "blue": 0.95},
+    calendarColor: {red: 0.45, green: 0.70, blue: 0.95},
     emoji: "📍",
     events: [
         {type: "D", start: {"equinoxOrSolstice": "Dec"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס"}, emoji: "🔦"},

@@ -3,7 +3,7 @@
     "//": "Wallis and Futuna",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.90, "green": 0.25, "blue": 0.25},
+    calendarColor: {red: 0.90, green: 0.25, blue: 0.25},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},

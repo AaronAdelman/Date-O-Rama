@@ -3,7 +3,7 @@
     "//": "Ethiopia",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.06, "green": 0.28, "blue": 0.69},
+    calendarColor: {red: 0.06, green: 0.28, blue: 0.69},
     events: [
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

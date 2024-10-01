@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.26, "green": 0.69, "blue": 0.16},
+    calendarColor: {red: 0.26, green: 0.69, blue: 0.16},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 2, d: 5}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/unity-day-burundi/"}},

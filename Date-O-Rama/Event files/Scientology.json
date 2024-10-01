@@ -2,7 +2,7 @@
     titles: {"en": "Scientology", "he": "סיינטולוגיה"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.56, "green": 0.56, "blue": 0.56},
+    calendarColor: {red: 0.56, green: 0.56, blue: 0.56},
     events: [
         {titles: {"en": "Celebrity Day"}, type: "D", start: {mon: 2, d: 22}, emoji: "😎", first: {era: 1, y: 1970}},
         {titles: {"en": "L. Ron Hubbard’s Birthday"}, type: "D", start: {mon: 3, d: 13}, inherits: "*BDay*", first: {era: 1, y: 1911}},

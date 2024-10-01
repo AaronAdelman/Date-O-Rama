@@ -3,7 +3,7 @@
     "//": "Estonia",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {"red": 0.00, "green": 0.45, "blue": 0.81},
+    calendarColor: {red: 0.00, green: 0.45, blue: 0.81},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Independence Day", type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/estonia-independence-day/"}, first: {era: 1, y: 1918}},
