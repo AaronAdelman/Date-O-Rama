@@ -576,6 +576,8 @@ class ASAEventCalendar {
     }
     
     func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?) {
+        // TODO:  Could use improvement to support month/day of week/occurrence of weekday events
+        
         let calendar = components.calendar
 //        let locationData = components.locationData
                 
@@ -606,6 +608,7 @@ class ASAEventCalendar {
         var startDateEYMD: Array<Int?> = startDateSpecification.EYMD
         var endDateEYMD: Array<Int?>   = endDateSpecification?.EYMD ?? startDateEYMD
 
+        // NOTE:  Month/day of week/occurrence of weekday events go awry here
         guard let startDay   = startDateSpecification.day else { return NO_MATCH }
         let startThroughDay     = startDateSpecification.throughDay
         let startWeekday        = startDateSpecification.weekdays?[0].rawValue
@@ -917,6 +920,9 @@ class ASAEventCalendar {
             }
             
         case .span:
+//            if eventSpecification.titles?["en"] == "Earth Hour" {
+//                debugPrint("Foo")
+//            }
             return matchSpan(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification, calendar: calendar, date: date, type: type)
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
