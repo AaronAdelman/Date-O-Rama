@@ -7,8 +7,8 @@
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {type: "D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
         {titles: {"en": "Bermuda Day", "he": "יום ברמודה"}, type: "D", start: {mon: 5, wkd: [6], nth: -1}, urls: {"en": "https://nationaltoday.com/bermuda-day/"}, first: {era: 1, y: 2018}},
         {inherits: "National Heroes’ Day", type: "D", start: {mon: 6, wkd: [2], nth: 3}, first: {era: 1, y: 2009}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/bermuda-national-heroes-day"}},

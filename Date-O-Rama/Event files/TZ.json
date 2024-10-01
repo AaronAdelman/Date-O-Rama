@@ -8,10 +8,10 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/tanzania/zanzibar-revolution-day"}, titles: {"en": "Zanzibar Revolution Day"}, notes: {"en": "Zanzibar Revolutionary Day"}, inherits: "Revolution Day"},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
         {type: "D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/karume-day/"}, titles: {"en": "Karume Day"}, notes: {"en": "Sheikh Abeid Amani Karume Day"}, first: {era: 1, y: 1972}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
         {type: "D", start: {mon: 4, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/tanzania/tanzania-union-day"}, inherits: "Union Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "Saba Saba Day"}, urls: {"en": "https://nationaltoday.com/saba-saba-day-in-tanzania/"}, first: {era: 1, y: 1954}, notes: {"en": "Dar es Salaam International Trade Fair Day\nIndustry’s Day"}},

@@ -7,9 +7,9 @@
     calendarColor: {red: 0.64, green: 0.20, blue: 0.23},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Restoration of Independence Day (bridge day)", type: "D", start: {mon: 5, d: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Restoration of Independence Day", type: "D", start: {mon: 5, d: 4}, first: {era: 1, y: 1990}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},

@@ -7,9 +7,9 @@
     events: [
         {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
         {inherits: "New Year’s Day (in lieu)", type: "D", start:  {mon: 1, d: 2}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Holy Saturday", type: "D", start: {"Easter": "Easter", "offsetD": -1}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 5, d: 21}, inherits: "Navy Day", urls: {"en": "https://nationaltoday.com/navy-day-chile/"}},

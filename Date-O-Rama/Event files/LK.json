@@ -8,8 +8,8 @@
     events: [
         {type: "D", start: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/pongal"}, titles: {"en": "Special Bank Holiday Holiday"}},
         {type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "National Day", first: {era: 1, y: 1948}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {type: "D", start: {mon: 4, d: 13}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/tamil-new-year"}, titles: {"en": "Sinhala and Tamil New Year Eve"}},
         {type: "D", start: {mon: 4, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/sri-lanka/tamil-new-year"}, titles: {"en": "Sinhala and Tamil New Year"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

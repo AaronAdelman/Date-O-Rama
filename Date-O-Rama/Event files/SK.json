@@ -7,9 +7,9 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/day-of-the-establishment-of-the-slovak-republic"}, titles: {"en": "Day of the Establishment of the Slovak Republic", "sk": "Deň vzniku Slovenskej republiky"}, first: {era: 1, y: 1993}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day", first: {era: 1, y: 1886}},
         {type: "D", start: {mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/v-e-day"}, titles: {"en": "Day of Victory Over Fascism", "sk": "Deň víťazstva nad fašizmom"}, first: {era: 1, y: 1945}, inherits: "Victory Day"},
         {type: "D", start: {mon: 7, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"}, inherits: "Feast of Saints Cyril and Methodius", first: {era: 1, y: 863}},

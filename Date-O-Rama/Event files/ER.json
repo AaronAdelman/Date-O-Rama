@@ -15,8 +15,8 @@
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
 
         {titles: {"en": "Fenkil Day", "ti": "ፈንቅል"}, type: "D", start: {mon: 2, d: 10}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 8}},
     ]
 }

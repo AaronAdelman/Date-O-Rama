@@ -36,7 +36,7 @@
         {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}},
         {inherits: "Victory Over Japan Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1945}},
         {inherits: "World Wetlands Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1971}},
-        {type: "D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://nationaltoday.com/world-marbles-day/"}, titles: {"en": "World Marbles Day"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, urls: {"en": "https://nationaltoday.com/world-marbles-day/"}, titles: {"en": "World Marbles Day"}},
         {type: "D", start: {dOfY: 182}, urls: {"en": "https://www.daysoftheyear.com/days/blink-182-day/"}, titles: {"en": "Blink-182 Day"}, notes: {"en": "Blink 182 Day"}},
         {type: "D", start: {dOfY: 256}, inherits: "Programmers Day", first: {era: 1, y: 2002}},
         {type: "D", start: {era: 1, y: 2009, mon: 8, d: 12}, inherits: "Information Overload Day"},

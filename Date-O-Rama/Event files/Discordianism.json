@@ -89,7 +89,7 @@
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Santa Claus Day/ Giftmas"}, notes: {"en": "Whollyday\n67 Aftermath"}},
         {type: "D", start: {mon: 12, d: 30}, titles: {"en": "New Year’s Eve Eve"}, notes: {"en": "Whollyday\n72 Aftermath"}},
         
-        {titles: {"en": "Erister"}, type: "D", start: {"Easter": "Easter"}, notes: {"en": "Whollyday"}},
+        {titles: {"en": "Erister"}, type: "D", start: {Easter:  "Easter"}, notes: {"en": "Whollyday"}},
         {type: "D", start: {mon: 8, d: 23, thruD: 29, wkd: [1]}, titles: {"en": "Go Topless Day"}, notes: {"en": "Whollyday"}},
         {type: "D", start: {mon: 5, wkd: [6], nth: 1}, inherits: "No Pants Day", notes: {"en": "Whollyday"}},
         

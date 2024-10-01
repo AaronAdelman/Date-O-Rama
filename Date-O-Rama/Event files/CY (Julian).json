@@ -5,11 +5,11 @@
     calendarCode: "jul",
     calendarColor: {red: 0.84, green: 0.47, blue: 0.00},
     events: [
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
-        {inherits: "Easter Tuesday", type: "D", start: {"Easter": "Easter", "offsetD": 2}},
-        {inherits: "Pentecost", type: "D", start: {"Easter": "Easter", "offsetD": 49}},
-        {inherits: "Whit Monday", type: "D", start: {"Easter": "Easter", "offsetD": 50}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {inherits: "Easter Tuesday", type: "D", start: {Easter:  "Easter", offsetD: 2}},
+        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
+        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
     ]
 }

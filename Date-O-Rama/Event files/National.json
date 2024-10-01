@@ -5,9 +5,9 @@
     calendarColor: {red: 0.45, green: 0.70, blue: 0.95},
     emoji: "📍",
     events: [
-        {type: "D", start: {"equinoxOrSolstice": "Dec"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס"}, emoji: "🔦"},
-        {type: "D", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
-        {type: "D", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seashell-day/"}, titles: {"en": "National Seashell Day"}, emoji: "🐚", first: {era: 1, y: 2016}},
+        {type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס"}, emoji: "🔦"},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seashell-day/"}, titles: {"en": "National Seashell Day"}, emoji: "🐚", first: {era: 1, y: 2016}},
         {type: "D", start: {equinoxOrSolstice: "Sep", offsetD: 1}, titles: {"en": "Innergize Day"}, urls: {"en": "https://nationaltoday.com/innergize-day/"}},
         {type: "D", start: {era: 1, y: 2005, mon: 4, d: 30}, inherits: "Museum Day"},
         {type: "D", start: {era: 1, y: 2022, mon: 8, d: 16}, inherits: "Start-Up Day Across America"},

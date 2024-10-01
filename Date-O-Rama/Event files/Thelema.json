@@ -5,16 +5,16 @@
     calendarColor: {red: 0.5, green: 0.5, blue: 0.75},
     events: [
         {titles: {"en": "Feast of the Supreme Ritual"}, type: "D", start: {mon: 3, d: 20}},
-        {titles: {"en": "Equinox of the Gods"}, type: "D", start: {"equinoxOrSolstice": "Mar"}, first: {era: 1, y: 1904}},
+        {titles: {"en": "Equinox of the Gods"}, type: "D", start: {equinoxOrSolstice: "Mar"}, first: {era: 1, y: 1904}},
         {titles: {"en": "Feast of the Three Days of the Writing of the Book of the Law"}, type: "nD", start: {mon: 4, d: 8}, end: {mon: 4, d: 10}, first: {era: 1, y: 1904}},
-        {inherits: "Summer Solstice", type: "D", start: {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xb"]},
-        {inherits: "Winter Solstice", type: "D", start: {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xc"]},
+        {inherits: "Summer Solstice", type: "D", start: {equinoxOrSolstice: "Jun"}, "regionCodes": ["xb"]},
+        {inherits: "Winter Solstice", type: "D", start: {equinoxOrSolstice: "Jun"}, "regionCodes": ["xc"]},
         {titles: {"en": "Feast of the Prophet and His Bride"}, type: "D", start: {mon: 8, d: 12}},
-        {inherits: "Autumnal Equinox", type: "D", start: {"equinoxOrSolstice": "Sep"}, first: {era: 1, y: 1903}, "regionCodes": ["xb"]},
-        {inherits: "Vernal Equinox", type: "D", start: {"equinoxOrSolstice": "Sep"}, "regionCodes": ["xc"]},
+        {inherits: "Autumnal Equinox", type: "D", start: {equinoxOrSolstice: "Sep"}, first: {era: 1, y: 1903}, "regionCodes": ["xb"]},
+        {inherits: "Vernal Equinox", type: "D", start: {equinoxOrSolstice: "Sep"}, "regionCodes": ["xc"]},
         {titles: {"en": "Crowleymas"}, type: "D", start: {mon: 10, d: 12}, first: {era: 1, y: 1875}},
         {titles: {"en": "Crowley’s Greater Feast"}, type: "D", start: {mon: 12, d: 1}, first: {era: 1, y: 1947}},
-        {inherits: "Winter Solstice", type: "D", start: {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xb"]},
-        {inherits: "Summer Solstice", type: "D", start: {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xc"]},
+        {inherits: "Winter Solstice", type: "D", start: {equinoxOrSolstice: "Dec"}, "regionCodes": ["xb"]},
+        {inherits: "Summer Solstice", type: "D", start: {equinoxOrSolstice: "Dec"}, "regionCodes": ["xc"]},
     ]
 }

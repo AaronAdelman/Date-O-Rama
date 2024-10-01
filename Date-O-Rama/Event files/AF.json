@@ -7,7 +7,7 @@
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {inherits: "Liberation Day", type: "D", start: {mon: 2, d: 15}, first: {era: 1, y: 1989}, urls: {"en": "https://nationaltoday.com/liberation-day-afghanistan/"}},
-        {inherits: "Nowruz", type: "D", start: {"equinoxOrSolstice": "Mar"}, urls: {"en": "https://nationaltoday.com/afghanistan-day/"}},
+        {inherits: "Nowruz", type: "D", start: {equinoxOrSolstice: "Mar"}, urls: {"en": "https://nationaltoday.com/afghanistan-day/"}},
         {inherits: "Victory Day", type: "D", start: {mon: 4, d: 28}, urls: {"en": "https://en.wikipedia.org/wiki/Mujahideen_Victory_Day"}, titles: {"en": "Mujahideen Victory Day", "fa": "سالروز پیروزی مجاهدین", "ps": "د مجاهدينو د بريا ورځ"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Victory Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 2022}, titles: {"en": "“Afghan Jihad” Victory Day"}, notes: {"en": "Victory of the Islamic Emirate"}, urls: {"en": "https://www.officeholidays.com/holidays/afghanistan/victory-of-the-islamic-emirate"}},

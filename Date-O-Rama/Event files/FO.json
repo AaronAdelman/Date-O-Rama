@@ -6,14 +6,14 @@
     calendarColor: {red: 0.13, green: 0.25, blue: 0.60},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
-        {inherits: "Maundy Thursday", type: "D", start: {"Easter": "Easter", "offsetD": -3}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {inherits: "National Flag Day", type: "D", start: {mon: 4, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
-        {type: "D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
-        {inherits: "Ascension Day", type: "D", start: {"Easter": "Easter", "offsetD": 39}},
-        {inherits: "Pentecost", type: "D", start: {"Easter": "Easter", "offsetD": 49}},
-        {inherits: "Whit Monday", type: "D", start: {"Easter": "Easter", "offsetD": 50}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
+        {inherits: "Ascension Day", type: "D", start: {Easter:  "Easter", offsetD: 39}},
+        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
+        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {inherits: "Constitution Day", type: "D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
         {titles: {"en": "St. Olav’s Eve", "fo": "Ólavsøkuaftan"}, type: "D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {era: 1, y: 1031}},
         {titles: {"en": "St. Olav’s Day", "fo": "Ólavsøkudagur"}, type: "D", start: {mon: 7, d: 29}, start: {era: 1, y: 1031}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/st-olavs-day"}},
@@ -24,7 +24,7 @@
 
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
-        {type: "D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
         
         {type: "D", inherits: "Truant’s Day", start: {mon: 3, d: 21}},
     ]

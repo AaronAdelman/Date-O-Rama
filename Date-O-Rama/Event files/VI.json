@@ -10,10 +10,10 @@
         {type: "D", start: {mon: 1, wkd: [2], nth: 3}, inherits: "Martin Luther King, Jr. Day"},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/us-virgin-islands/presidents-day"}, inherits: "Presidents’ Day"},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Transfer Day", "ar": "يوم الانتقال"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/transfer-day/"}},
-        {type: "D", start: {"Easter": "Easter", "offsetD": -3}, inherits: "Maundy Thursday"},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/us-virgin-islands/memorial-day"}, inherits: "Memorial Day"},
         {type: "D", start: {mon: 6, d: 16, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/us-virgin-islands/juneteenth"}, inherits: "Juneteenth (in lieu)", first: {era: 1, y: 1886}},
         {type: "D", start: {mon: 6, d: 18, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/us-virgin-islands/juneteenth"}, inherits: "Juneteenth (in lieu)", first: {era: 1, y: 1886}},
@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/us-virgin-islands/christmas-holiday"}, titles: {"en": "Christmas Second Day"}, inherits: "Boxing Day"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}, notes: {"en": "Old Year’s Night"}},
 
-        {inherits: "Ascension Day", type: "D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Ascension Day", type: "D", start: {Easter:  "Easter", offsetD: 39}},
         {type: "D", start: {mon: 7, wkd: [2], nth: 4}, titles: {"en": "Hurricane Supplication Day"}},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Hurricane Thanksgiving"}, emoji: "🦃🌀"},
     ]

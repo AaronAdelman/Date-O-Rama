@@ -8,8 +8,8 @@
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
+        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
     ]
 }

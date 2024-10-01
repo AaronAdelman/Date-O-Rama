@@ -16,7 +16,7 @@
 
         {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
-        {inherits: "Vardavar", type: "D", start: {"Easter": "Easter", "offsetD": 98}},
+        {inherits: "Vardavar", type: "D", start: {Easter:  "Easter", offsetD: 98}},
         {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},
 
         {type: "D", start: {mon: 5, d: 27}, titles: {"en": "Freedom and Constitution Day", "tr": "Mayıs Hürriyet ve Anayasa Bayramı"}, urls: {"en": "https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"}, first: {era: 1, y: 1963}},

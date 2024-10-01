@@ -9,8 +9,8 @@
         {type: "D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/feast-of-st-pauls-shipwreck/"}, titles: {"en": "Feast of St. Paul’s Shipwreck", "mt": "Nawfraġju ta’ San Pawl"}, notes: {"mt": "San Pawl Nawfragu"}},
         {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day"},
         {type: "D", start: {mon: 3, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/malta/malta-freedom-day"}, inherits: "Freedom Day", first: {era: 1, y: 1979}},
-        {inherits: "Good Friday", type: "D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Easter Sunday", type: "D", start: {"Easter": "Easter"}},
+        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/malta/labour-day"}, inherits: "Labour Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/sette-giugno/"}, titles: {"en": "Sette Giugno"}, first: {era: 1, y: 1989}},
@@ -35,12 +35,12 @@
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Feast of Jesus of Nazareth", "mt": "Ġesù Nazzarenu"}},
 
         {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
-        {titles: {"en": "Feast of St. Gregory", "mt": "San Girgor"}, type: "D", start: {"Easter": "Easter", "offsetD": 3}},
+        {titles: {"en": "Feast of St. Gregory", "mt": "San Girgor"}, type: "D", start: {Easter:  "Easter", offsetD: 3}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "Feast of St. Publius", "mt": "San Publju"}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
 
-        {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {"Easter": "Easter", "offsetD": -9}},
-        {inherits: "Palm Sunday", type: "D", start: {"Easter": "Easter", "offsetD": -7}},
+        {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {Easter:  "Easter", offsetD: -9}},
+        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
 
         {inherits: "Feast of St. Joseph the Worker", type: "D", start: {mon: 5, d: 1}},
         {type: "D", start: {mon: 5, d: 2}, titles: {"en": "Feast of Our Lady of Liesse", "mt": "Il-Madonna ta’ Liesse"}},
