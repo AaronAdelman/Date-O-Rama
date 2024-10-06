@@ -127,6 +127,7 @@
         {type: "M", start: {mon: 10}, titles: {"en": "Canadian Library Month"}, urls: {"en": "https://librarianship.ca/features/canadian-library-month/"}, first: {era: 1, y: 2006}, emoji: "📚"},
         {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "Canadian Library Workers Day", "fr": "Journeé canadienne des employés des bibliothéques"}, urls: {"en": "https://librarianship.ca/event/canadian-library-workers-day-2024/"}, emoji: "📚"},
         {type: "D", start: {mon: 10, wkd: [2], nth: 4}, titles: {"en": "Canadian School Library Day", "fr": "Journée nationale des bibliothèques scolaires canadiennes"}, urls: {"en": "https://www.canadianschoollibraries.ca/csld/"}, emoji: "📚"},
+        {type: "D", start: {mon: 10, d: 3, thruD: 9, wkd: [4]}, titles: {"en": "Canadian Beer Day"}, urls: {"en": "https://canadianbeerday.ca/"}, emoji: "🍺", first: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [2], durationD: 5}, inherits: "First Nation Public Library Week", first: {era: 1, y: 2006}, last: {era: 1, y: 2023}},
         {type: "nD", start: {era: 1, y: 2024, mon: 10, d: 1, durationD: 4}, inherits: "First Nation Public Library Week"},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [2], durationD: 5}, inherits: "First Nation Public Library Week", first: {era: 1, y: 2025}},
