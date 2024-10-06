@@ -95,7 +95,7 @@
         {type: "D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/valentismas/"}, titles: {"en": "Valentismas"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 2, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/teddy-day/"}, titles: {"en": "Teddy Day"}, emoji: "🧸"},
         {type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/promise-day/"}, titles: {"en": "Promise Day"}},
-        {type: "D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/hug-day/"}, titles: {"en": "Hug Day"}},
+        {type: "D", start: {mon: 2, d: 12}, inherits: "Hug Day", urls: {"en": "https://nationaltoday.com/hug-day/"}},
         {type: "D", start: {mon: 2, d: 13}, inherits: "National Valentine Shopping Reminder Day"},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Galentine’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/galentines-day/"}, emoji: "💛", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "International Condom Day"}, notes: {"en": "This observance could have been promoted with more tact."}},
