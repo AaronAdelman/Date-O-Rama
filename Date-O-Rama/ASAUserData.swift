@@ -40,7 +40,7 @@ fileprivate let TIMESTAMP_KEY = "timestamp"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
-    static let shared = ASAUserData()
+    @MainActor static let shared = ASAUserData()
     
     
     // MARK:  - Model objects

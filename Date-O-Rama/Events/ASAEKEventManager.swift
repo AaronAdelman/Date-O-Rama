@@ -11,7 +11,7 @@ import EventKit
 import SwiftUI
 
 class ASAEKEventManager:  NSObject, ObservableObject {
-    static let shared = ASAEKEventManager()
+    @MainActor static let shared = ASAEKEventManager()
     
     @Published var eventStore = EKEventStore()
     

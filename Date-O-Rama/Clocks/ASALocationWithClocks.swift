@@ -16,12 +16,6 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         willSet {
             objectWillChange.send()
         } // willSet
-        
-//        didSet {
-//            for clock in clocks {
-//                clock.locationData = location
-//            }
-//        }
     }
     @Published var clocks: Array<ASAClock>
     
@@ -29,15 +23,6 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         willSet {
             objectWillChange.send()
         } // willSet
-        
-//        didSet {
-//            for clock in clocks {
-//                clock.usesDeviceLocation = usesDeviceLocation
-//                if usesDeviceLocation {
-//                    clock.locationData = ASALocationManager.shared.deviceLocation
-//                }
-//            }
-//        }
     }
     
     let objectWillChange = PassthroughSubject<Void, Never>()
@@ -46,10 +31,6 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         self.location           = location
         self.clocks             = clocks
         self.usesDeviceLocation = usesDeviceLocation
-//        for clock in clocks {
-//            clock.locationData       = location
-//            clock.usesDeviceLocation = usesDeviceLocation
-//        }
         super.init()
         registerForLocationChangedNotifications()
     } // init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool)
@@ -75,12 +56,9 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         notificationCenter.removeObserver(self)
     } // deinit
     
-    @objc func handleLocationChanged(notification:  Notification) -> Void {
+    @MainActor @objc func handleLocationChanged(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
             let locationManager = ASALocationManager.shared
-//            for clock in clocks {
-//                clock.locationData = locationManager.deviceLocation
-//            } // for clock in clocks
             self.location = locationManager.deviceLocation
         }
     } // func handle(notification:  Notification) -> Void
@@ -97,14 +75,4 @@ extension Array where Element == ASALocationWithClocks {
         } // for entry in self
         return result
     } // var clocks: Array<ASAClock>
-    
-    func containsLocationOfType(_ type: ASALocationType) -> Bool {
-        for locationWithClocks in self {
-            if locationWithClocks.location.type == type {
-                return true
-            }
-        }
-        
-        return false
-    } // func containsLocationOfType(_ type: ASALocationType) -> Bool
 } // extension Array where Element == ASALocationWithClocks

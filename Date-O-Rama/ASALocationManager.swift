@@ -18,7 +18,7 @@ let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 // MARK: -
 
 class ASALocationManager: NSObject, ObservableObject {
-    static let shared = ASALocationManager()
+    @MainActor static let shared = ASALocationManager()
 
     private let monitor = NWPathMonitor()
     @Published var connectedToTheInternet = false {
