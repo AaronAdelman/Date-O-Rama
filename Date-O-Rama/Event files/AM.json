@@ -44,7 +44,8 @@
         
         {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
         {type: "D", start: {mon: 6, d: 26}, inherits: "Air Force Day"},
-        {type: "D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/armenian-appreciation-day/"}, titles: {"en": "Armenian Appreciation Day"}},
+        {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Armenian Appreciation Day"}, urls: {"en": "https://nationaltoday.com/armenian-appreciation-day/"}},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Tea and Coffee Festival"}, emoji: "🫖☕", urls: {"en": "https://www.daysoftheyear.com/days/tea-and-coffee-festival/"}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "Yerevan Day"}, urls: {"en": "https://www.daysoftheyear.com/days/yerevan-day/"}, first: {era: 1, y: 1968}},
     ]
 }
