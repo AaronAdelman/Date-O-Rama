@@ -36,7 +36,7 @@
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Knowledge and School Day", "he": "יום ידע ולימודים", "hy": "Գիտելիքի և դպրության օր"}, emoji: "👨‍🏫👩‍🏫"},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Sparapet Day", "hy": "Սպարապետի օր"}, urls: {"en": "https://en.wikipedia.org/wiki/Mkhitar_Sparapet#Sparapet_Day"}},
         {inherits: "Teacher’s Day", type: "D", start: {mon: 10, d: 5}},
-        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "Translators’ Day", "hy": "Թարգմանչաց տոն"}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "Translators’ Day", "hy": "Թարգմանչաց տոն"}, notes: {"en": "Holy Translators Day"}, urls: {"en": "https://www.daysoftheyear.com/days/holy-translators-day/"}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "Day of Local Self-Governance", "hy": "Տեղական ինքնակառավարման օր"}},
         {type: "D", start: {mon: 12, d: 7}, titles: {"en": "Day of Remembrance for Earthquake Victims and Disaster Resistance", "hy": "Երկրաշարժի զոհերի հիշատակի օր"}},
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Condemning and Preventing Genocides", "hy": "Ցեղասպանությունների դատապարտման եւ կանխարգելման օր"}},

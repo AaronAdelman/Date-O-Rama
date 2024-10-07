@@ -176,6 +176,8 @@
         {type: "D", start: {mon: 10, wkd: [6], nth: 1}, titles: {"en": "MFG Day"}, notes: {"en": "Manufacturing Day\nNational Manufacturing Day"}, urls: {"en": "https://mfgday.com/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, wkd: [7], nth: -1}, inherits: "National Prescription Drug Take Back Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1976}, urls: {"en": "https://www.daysoftheyear.com/days/national-chess-day/"}, emoji: "♟️"},
+        {type: "D", start: {mon: 10, d: 7, thruD: 13, wkd: [7]}, titles: {"en": "Urban Wildlife Conservation Day"}, first: {era: 1, y: 2018}, urls: {"en": "https://www.daysoftheyear.com/days/urban-wildlife-conservation-day/"}, emoji: "🦢"},
+        {type: "nD", start: {mon: 10, d: 13, thruD: 19, wkd: [1], durationD: 7}, inherits: "International Infection Prevention Week", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 3}, titles: {"en": "Sweetest Day", "he": "היום המתוק ביותר"}, urls: {"en": "https://nationaltoday.com/sweetest-day/"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Extra Mile Day"}, urls: {"en": "https://www.daysoftheyear.com/days/extra-mile-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Authors’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/authors-day/"}, first: {era: 1, y: 1949}, emoji: "✍️"},

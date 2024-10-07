@@ -106,6 +106,7 @@
         {type: "D", start: {mon: 8, wkd: [6], nth: 1}, inherits: "Jeans for Genes Day", urls: {"en": "https://fundraise.jeansforgenes.org.au/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 11, wkd: [6], nth: 3}, inherits: "National Agriculture Day", urls: {"en": "https://agday.org.au/"}},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "BPD Awareness Week"}, urls: {"en": "https://www.bpdawareness.com.au/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
+        {type: "W", start: {mon: 10, fullWk: 2}, titles: {"en": "Anti-Poverty Week"}, notes: {"en": "Anti Poverty Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-poverty-week/"}, first: {era: 1, y: 2002}}
    ],
     templates: [
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/proclamation-day/"}},

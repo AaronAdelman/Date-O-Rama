@@ -14,7 +14,7 @@
         {titles: {"en": "National Genealogy Day", "he": "יום הגנאולוגיה הלאומי"}, type: "D", start: {mon: 3, wkd: [7], nth: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, emoji: "👨‍👩‍👧‍👦"},
         {titles: {"en": "Global Forgiveness Day"}, type: "D", start: {mon: 7, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/forgiveness-day/"}, first: {era: 1, y: 1994}},
         {titles: {"en": "Clergy Appreciation Month"}, type: "M", start: {mon: 10}, urls: {"en": "https://corporate.hallmark.com/holidays-occasions/clergy-appreciation-month/"}, emoji: "👩‍💼👨‍💼", first: {era: 1, y: 2002}, notes: {"en": "Pastor Appreciation Month"}},
-        {titles: {"en": "Clergy Appreciation Day"}, type: "D", start: {mon: 10, wkd: [1], nth: 2}, first: {era: 1, y: 1992}, urls: {"en": "https://nationaldaycalendar.com/clergy-appreciation-day-second-sunday-in-october/"}, emoji: "👩‍💼👨‍💼", notes: {"en": "Pastor Appreciation Day"}},
+        {titles: {"en": "Clergy Appreciation Day"}, type: "D", start: {mon: 10, wkd: [1], nth: 2}, first: {era: 1, y: 1992}, urls: {"en": "https://www.daysoftheyear.com/days/pastor-appreciation-day/"}, emoji: "👩‍💼👨‍💼", notes: {"en": "Clergy Appreciation National Day of Honor\nPastor Appreciation Day"}},
         {titles: {"en": "World Marriage Day", "he": "יום הנישואין העולמי"}, type: "D", start: {mon: 2, wkd: [1], nth: 2}, first: {era: 1, y: 1983}, urls: {"en": "https://www.daysoftheyear.com/days/marriage-day/"}, emoji: "⚭"},
         
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},

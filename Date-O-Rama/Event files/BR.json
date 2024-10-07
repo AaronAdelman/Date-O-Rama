@@ -20,6 +20,7 @@
         {inherits: "Father’s Day", type: "D", start: {mon: 8, wkd: [1], nth: 2}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 7}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
         {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida", "pt": "Nossa Senhora Aparecida"}, urls: {"en": "https://www.daysoftheyear.com/days/lady-of-aparecida/"}, first: {era: 1, y: 1717}},
+        {type: "D", start: {mon: 10, wkd: [1], nth: 2}, titles: {"en": "Procession of Our Lady of Nazareth", "pt": "Círio de Nazaré"}, urls: {"en": "https://www.daysoftheyear.com/days/procession-of-our-lady-of-nazareth/"}, first: {era: 1, y: 1793}},
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/civil-servants-day"}, titles: {"en": "Civil Servants Day"}},
         {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
         {type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/republic-proclamation-day/"}, titles: {"en": "Republic Proclamation Day", "pt": "Proclamação da República"}, first: {era: 1, y: 1889}, notes: {"en": "Republic Day"}},
