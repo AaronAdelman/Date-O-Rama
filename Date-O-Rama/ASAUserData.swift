@@ -171,7 +171,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 #endif
     } // func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool
     
-    func locationsWithClocksArray(key:  ASAClockArrayKey) -> Array<ASALocationWithClocks> {
+    func locationsWithClocksArray(key: ASAClockArrayKey) -> Array<ASALocationWithClocks> {
         switch key {
         case .app:
             return self.mainClocks
@@ -507,53 +507,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         //        debugPrint(#file, #function)
         self.loadPreferences()
     } // func presentedItemDidChange()
-    
-    
-    // MARK:  - Events
-    
-    func mainClocksEvents(startDate:  Date, endDate:  Date, location: ASALocation, usesDeviceLocation: Bool) ->  Array<ASAEventCompatible> {
-        var unsortedEvents: [ASAEventCompatible] = []
-        for clock in self.mainClocks.clocks {
-            let clockEvents = clock.events(startDate:  startDate, endDate:  endDate, locationData: location, usesDeviceLocation: usesDeviceLocation)
-            unsortedEvents = unsortedEvents + clockEvents.dateEvents + clockEvents.timeEvents
-        } // for for clock in self.mainClocks
-        
-        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
-            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
-            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
-        })
-        return events
-    } // func mainClocksEvents(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
 } // class ASAUserData
 
 
 // MARK:  -
 
 extension ASAUserData {
-    func row(uuidString: String, backupIndex:  Int) -> ASAClock {
-        let tempUUID = UUID(uuidString: uuidString)
-        if tempUUID == nil {
-            return ASAClock.generic
-        }
-        
-        for locationWithClocks in self.mainClocks {
-            let temp = locationWithClocks.clocks.first(where: {$0.uuid == tempUUID!})
-            if temp != nil {
-                return temp!
-            }
-        }
-        
-        if self.numberOfMainClocks >= backupIndex + 1 {
-            return self.mainClocks.clocks[backupIndex]
-        }
-        
-        return ASAClock.generic
-    } // func row(backupIndex:  Int) -> ASARow
-    
-    var numberOfMainClocks: Int {
-        return self.mainClocks.count
-    } // var numberOfMainClocks: Int
-    
     @MainActor func removeMainClock(uuid: UUID) {
         for i in 0..<self.mainClocks.count {
             let index = self.mainClocks[i].clocks.firstIndex(where: {$0.uuid == uuid})
@@ -568,7 +527,7 @@ extension ASAUserData {
     @MainActor func addLocationWithClocks(_ newLocationWithClocks: ASALocationWithClocks) {
         self.mainClocks.insert(newLocationWithClocks, at: 0)
         self.savePreferences(code: .clocks)
-    }
+    } //func addLocationWithClocks(_ newLocationWithClocks: ASALocationWithClocks)
     
     @MainActor func addMainClock(clock: ASAClock, location: ASALocation) {
         for i in 0..<self.mainClocks.count {
@@ -581,7 +540,7 @@ extension ASAUserData {
         
         let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: false)
         addLocationWithClocks(newLocationWithClocks)
-    } // func addMainClock(clock: ASAClock)
+    } // func addMainClock(clock: ASAClock, location: ASALocation)
     
     @MainActor func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks) {
         let index = self.mainClocks.firstIndex(of: locationWithClocks)
@@ -589,5 +548,5 @@ extension ASAUserData {
             self.mainClocks.remove(at: index!)
             self.savePreferences(code: .clocks)
         }
-    }
+    } // func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks)
 } // extension ASAUserData
