@@ -148,38 +148,9 @@ struct ASAProcessedClock {
 // MARK:  -
 
 extension ASAProcessedClock {
-    var latitude:  CLLocationDegrees {
-        get {
-            if self.supportsLocations {
-                return self.location.location.coordinate.latitude
-            } else {
-                return 0.0
-            }
-        } // get
-    } // var latitude
-
-    var longitude:  CLLocationDegrees {
-        get {
-            if self.supportsLocations {
-                return self.location.location.coordinate.longitude
-            } else {
-                return 0.0
-            }
-        } // get
-    } // var longitude
-
     var hasValidTime:  Bool {
         get {
             return self.hour != -1
         } // get
     } // var hasValidTime
 } // extension ASAProcessedClock
-
-
-// MARK: -
-
-extension Array where Element == ASAProcessedClock {
-    fileprivate func noCountryString() -> String {
-        return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
-    }
-}
