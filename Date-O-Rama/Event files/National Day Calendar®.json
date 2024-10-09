@@ -2,7 +2,7 @@
     titles: {"en": "National Day Calendar®"},
     defaultLocale: "en",
     calendarCode: "gre*",
-    urls: {"en": "https://www.nationaldaycalendar.com/"}
+    urls: {"en": "https://www.nationaldaycalendar.com/"},
     calendarColor: {red: 0.85, green: 0.22, blue: 0.20},
     events: [
         {type: "D", start: {dOfY: 241}, titles: {"en": "National Sport Sampling Day"}, emoji: "🏉🏐🏀", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sport-sampling-day-241st-day-of-the-year"}, first: {era: 1, y: 2021}},
