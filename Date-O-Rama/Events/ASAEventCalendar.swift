@@ -1190,6 +1190,8 @@ class ASAEventCalendar {
         
         let filledInEventSpecification = eventSpecification.filledIn(eventsFileTemplates: eventsFileTemplates)
         
+        let eventsFileDefaultLocale = eventsFile!.defaultLocale
+
         var title: String
         if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
             let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
@@ -1203,13 +1205,26 @@ class ASAEventCalendar {
             }
         } else {
             let NO_TITLE = ""
-            title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
+            title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale) ?? NO_TITLE
         }
         let color = self.color
-        let locationString: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-        let url: URL? = filledInEventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+        let locationString: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
+        let url: URL? = {
+            if eventSpecification.titles?["en"] == "Bifocals At The Monitor Liberation Day" {
+                debugPrint("Foo")
+            }
+            
+            var result = filledInEventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
+            if result == nil {
+                result = eventsFile?.urls?[requestedLocaleIdentifier]
+            }
+            if result == nil {
+                result = eventsFile?.urls?[eventsFileDefaultLocale]
+            }
+            return result
+        }()
         
-        let notes: String? = filledInEventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+        let notes: String? = filledInEventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
         
         let emoji = filledInEventSpecification.emoji
         

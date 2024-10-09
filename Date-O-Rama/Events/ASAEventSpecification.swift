@@ -33,8 +33,11 @@ struct ASAEventSpecification: Codable {
     var regionCodes:  Array<String>?
     var excludeRegionCodes:  Array<String>?
         
-    var urls: Dictionary<String, URL>? // URLs for the calendar item, indexed by locale code.
-    var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
+    /// URLs for the calendar item, indexed by locale code.
+    var urls: Dictionary<String, URL>?
+    
+    /// The notes associated with the calendar item, indexed by locale code./
+    var notes: Dictionary<String, String>?
     
     var emoji: String?
     

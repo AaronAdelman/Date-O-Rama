@@ -29,6 +29,10 @@ struct ASAEventsFile: Codable {
     var calendarCode:  ASACalendarCode
     var otherCalendarCodes:  Array<ASACalendarCode>?
     var emoji: String?
+
+    /// Default URLs for calendar items, indexed by locale code.
+    var urls: Dictionary<String, URL>?
+
     var eventSpecifications: Array<ASAEventSpecification>
     var templateSpecifications: Array<ASAEventSpecification>?
     
@@ -39,6 +43,7 @@ struct ASAEventsFile: Codable {
         case calendarCode
         case otherCalendarCodes
         case emoji
+        case urls
         case eventSpecifications = "events"
         case templateSpecifications = "templates"
     }
