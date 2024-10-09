@@ -5,6 +5,7 @@
     calendarColor: {red: 0.22, green: 0.33, blue: 0.44},
     emoji: "🐈‍⬛",
     urls: {"en": "https://wellcat.com/pages/holidays"},
+    first: {era: 1, y: 1996},
     events: [
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Bifocals At The Monitor Liberation Day"}},
         {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}},

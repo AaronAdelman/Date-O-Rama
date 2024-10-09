@@ -1210,10 +1210,6 @@ class ASAEventCalendar {
         let color = self.color
         let locationString: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
         let url: URL? = {
-            if eventSpecification.titles?["en"] == "Bifocals At The Monitor Liberation Day" {
-                debugPrint("Foo")
-            }
-            
             var result = filledInEventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
             if result == nil {
                 result = eventsFile?.urls?[requestedLocaleIdentifier]

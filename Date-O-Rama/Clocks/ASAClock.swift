@@ -335,7 +335,19 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         
         let currentLocaleIdentifier: String = Locale.current.identifier
         let regionCode = locationData.regionCode
+        
+        let endDateComponents = calendar.dateComponents([.era, .year, .month, .day], from: endDate, locationData: locationData)
+        let endDateEYMD = endDateComponents.EYMD
+        
         for eventCalendar in self.builtInEventCalendars {
+            let firstDateSpecification = eventCalendar.eventsFile?.firstDateSpecification
+            if firstDateSpecification != nil {
+                let firstDateSpecificationEYMD = firstDateSpecification!.EYMD
+                if endDateEYMD.isBefore(first: firstDateSpecificationEYMD) {
+                    continue
+                }
+            }
+            
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
             let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: locationData, eventCalendarName: eventCalendarName, calendarTitle: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar, clock: self)

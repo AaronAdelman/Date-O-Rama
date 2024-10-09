@@ -36,6 +36,9 @@ struct ASAEventsFile: Codable {
     var eventSpecifications: Array<ASAEventSpecification>
     var templateSpecifications: Array<ASAEventSpecification>?
     
+    /// The specification for the first possible occurrence of any event in this events file
+    var firstDateSpecification: ASADateSpecification?
+    
     enum CodingKeys: String, CodingKey {
         case titles
         case defaultLocale
@@ -44,8 +47,9 @@ struct ASAEventsFile: Codable {
         case otherCalendarCodes
         case emoji
         case urls
-        case eventSpecifications = "events"
+        case eventSpecifications    = "events"
         case templateSpecifications = "templates"
+        case firstDateSpecification = "first"
     }
 } // struct ASAEventsFile
 
