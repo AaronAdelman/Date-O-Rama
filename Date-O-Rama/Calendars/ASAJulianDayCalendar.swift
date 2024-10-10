@@ -222,7 +222,8 @@ class ASAJulianDayCalendar:  ASACalendar {
                 result.solarHours = JDComponents.fractionOfDay
 
             default:
-                debugPrint(#file, #function, component as Any)
+//                debugPrint(#file, #function, component as Any)
+                break
             } // switch component
         }
         return result

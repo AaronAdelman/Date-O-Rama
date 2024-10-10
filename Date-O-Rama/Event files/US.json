@@ -5,6 +5,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
+    first: {era: 1, y: 1776},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States"},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Martin Luther King, Jr. Day", type: "D", start: {mon: 1, wkd: [2], nth: 3}, first: {era: 1, y: 1986}},
@@ -151,7 +153,7 @@
         {type: "D", start: {mon: 1, wkd: [2], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/idaho-human-rights-day/"}, titles: {"en": "Idaho Human Rights Day"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 1, wkd: [5], nth: -1}, urls: {"en": "https://nationaltoday.com/nasas-day-of-remembrance/"}, titles: {"en": "NASA’s Day of Remembrance"}, first: {era: 1, y: 2014}, emoji: "👨‍🚀👩‍🚀"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 10, d: 11}, titles: {"en": "General Pulaski Memorial Day"}, first: {era: 1, y: 2002}, urls: {"en": "https://nationaldaycalendar.com/general-pulaski-memorial-day-october-11/"}},
+        {type: "D", start: {mon: 10, d: 11}, titles: {"en": "General Pulaski Memorial Day"}, first: {era: 1, y: 1929}, urls: {"en": "https://nationaldaycalendar.com/general-pulaski-memorial-day-october-11/"}},
         {type: "D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/metastatic-breast-cancer-awareness-day/"}, titles: {"en": "Metastatic Breast Cancer Awareness Day"}, first: {era: 1, y: 2009}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "White Cane Safety Day"}, notes: {"en": "Blind Americans Equality Day"}, first: {era: 1, y: 1964}, emoji: "🦯", urls: {"en": "https://www.daysoftheyear.com/days/white-cane-safety-day/"}},
         {type: "D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}, emoji: "📱"},
