@@ -11,6 +11,6 @@
         {type: "D", start: {d: 5, mon: 5}, titles: {"en": "Duanwu Festival", "th": "วันไหว้ขนมจ้าง"}},
         {type: "D", start: {d: 15, mon: 7}, inherits: "Ghost Festival"},
         {type: "D", start: {d: 15, mon: 8}, inherits: "Mid-Autumn Festival"},
-        {type: "nD", start: {d: 1, mon: 9}, end: {d: 9, mon: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
+        {type: "nD", start: {d: 1, mon: 9}, end: {mon: 9, d: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
     ]
 }

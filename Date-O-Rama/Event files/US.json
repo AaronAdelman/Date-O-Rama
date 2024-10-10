@@ -128,7 +128,7 @@
         {titles: {"en": "Wright Brothers Day", "he": "יום האחים רייט"}, type: "D", start: {d: 17, mon: 12}, first: {era: 1, y: 1959}, emoji: "🛩", urls: {"en": "https://www.daysoftheyear.com/days/wright-brothers-day/"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Fasnacht Day"},
         {type: "D", start: {d: 21, mon: 4}, titles: {"en": "San Jacinto Day"}, urls: {"en": "https://nationaltoday.com/san-jacinto-day/"}, first: {era: 1, y: 1836}, notes: {"en": "Battle of San Jacinto"}},
-        {type: "D", start: {d: 4, mon: 8}, inherits: "Coast Guard Day", urls: {"en": "https://www.daysoftheyear.com/days/coast-guard-day/"}, notes: {"en": "U.S. Coast Guard Birthday\nNational Coast Guard Day"}},
+        {type: "D", start: {mon: 8, d: 4}, inherits: "Coast Guard Day", urls: {"en": "https://www.daysoftheyear.com/days/coast-guard-day/"}, notes: {"en": "U.S. Coast Guard Birthday\nNational Coast Guard Day"}},
         {type: "D", start: {d: 6, thruD: 12, mon: 5, wkd: [4]}, titles: {"en": "National School Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️"},
         {type: "D", start: {d: 6, thruD: 12, mon: 5, wkd: [6]}, titles: {"en": "National Military Spouse Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/military-spouse-appreciation-day/"}, first: {era: 1, y: 1984}},
         {type: "D", start: {d: 6, thruD: 12, mon: 5, wkd: [6]}, titles: {"en": "National Provider Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-provider-appreciation-day/"}, first: {era: 1, y: 1996}},

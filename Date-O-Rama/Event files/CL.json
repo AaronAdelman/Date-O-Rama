@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
+    first: {era: 1, y: 1810},
     events: [
         {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
         {inherits: "New Year’s Day (in lieu)", type: "D", start:  {mon: 1, d: 2}},

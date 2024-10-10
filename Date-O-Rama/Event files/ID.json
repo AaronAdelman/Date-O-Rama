@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    first: {era: 1, y: 1945},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},

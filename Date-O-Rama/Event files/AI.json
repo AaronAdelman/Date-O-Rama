@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.60, blue: 0.00},
+    first: {era: 1, y: 1667},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Anguilla"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
     {type: "D", start: {mon: 3, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/james-ronald-webster-day/"}, titles: {"en": "James Ronald Webster Day"}, first: {era: 1, y: 2010}, inherits: "*BDay*"},

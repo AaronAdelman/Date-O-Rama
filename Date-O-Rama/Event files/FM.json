@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.67, green: 0.79, blue: 0.91},
+    first: {era: 1, y: 1986},
     events: [
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 3}, first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/kosrae-constitution-day/"}, titles: {"en": "Kosrae Constitution Day"}, inherits: "Constitution Day"},

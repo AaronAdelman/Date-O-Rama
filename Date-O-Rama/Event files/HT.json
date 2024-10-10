@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
+    first: {era: 1, y: 1804},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Independence Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1804}, urls: {"en": "https://www.daysoftheyear.com/days/haitian-independence-day/"}},

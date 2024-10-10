@@ -176,6 +176,7 @@
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Tic Tac Day"}, urls: {"en": "https://www.checkiday.com/c878091eb1bf3d4cb9c6bcb23c8197b2/national-tic-tac-day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Tuxedo Day"}, notes: {"en": "We are not clear about this, but this may be a fashion observance created by butlers or fans of James Bond."}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "SHIFT10 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shift10-day/"}, first: {era: 1, y: 2016}, emoji: "🤲"},
+        {type: "D", start: {mon: 10, d: 10}, titles: {"en": "U.S. Naval Academy Day"}, urls: {"en": "https://www.checkiday.com/75dc72f0826e92132c92065373f1160a/u-s-naval-academy-day"}},
         {type: "D", start: {mon: 10, d: 11, thruD: 17, wkd: [4]}, titles: {"en": "​National Fossil Day"}, urls: {"en": "https://nationaltoday.com/national-fossil-day/"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Coming Out Day"}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Peyronie’s Disease Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-peyronies-disease-awareness-day/"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},

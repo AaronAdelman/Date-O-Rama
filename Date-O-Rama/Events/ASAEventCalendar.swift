@@ -1312,6 +1312,8 @@ class ASAEventCalendar {
                 } else {
                     timeEvents.append(newEvent!)
                 }
+                
+                // TODO:  If sub-events are implemented, they need to be implemented here.
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return (dateEvents, timeEvents)

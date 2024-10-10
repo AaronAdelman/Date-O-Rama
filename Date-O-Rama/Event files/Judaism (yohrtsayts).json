@@ -61,7 +61,7 @@
         {titles: {"he": "יום־שנה של המגיד ממעזריטש"}, type: "D", start: {mon: 3, d: 19}, first: {era: 0, y: 5533}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ צבי פסח פרנק"}, type: "D", start: {mon: 3, d: 21}, first: {era: 0, y: 5721}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב שטינמן"}, type: "D", start: {d: 24, mon: 3}, first: {era: 0, y: 5778}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הפרי חדש"}, type: "D", start: {d: 28, mon: 3}, first: {era: 0, y: 5458}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הפרי חדש"}, type: "D", start: {mon: 3, d: 28}, first: {era: 0, y: 5458}, inherits: "*DeathAnniv*"},
 
         {titles: {"he": "יום־שנה של הרב פנחס קהתי"}, type: "D", start: {d: 1, mon: 4}, first: {era: 0, y: 5737}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ חיים שמואלביץ"}, type: "D", start: {d: 3, mon: 4}, first: {era: 0, y: 5739}, inherits: "*DeathAnniv*"},
@@ -103,7 +103,7 @@
         {titles: {"he": "יום־שנה של רבי אברהם אבן עזרא"}, type: "D", start: {mon: 6, d: 1}, first: {era: 0, y: 4927}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של האדר״ת"}, type: "D", start: {d: 3, mon: 6}, first: {era: 0, y: 5565}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של האבני נזר"}, type: "D", start: {d: 13, mon: 6}, first: {era: 0, y: 5570}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של ר׳ שלמה זלמן אויערבך"}, type: "D", start: {d: 20, mon: 6}, first: {era: 0, y: 5755}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של ר׳ שלמה זלמן אויערבך"}, type: "D", start: {mon: 6, d: 20}, first: {era: 0, y: 5755}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב שלמה יוסף זווין"}, type: "D", start: {mon: 6, d: 21}, first: {era: 0, y: 5738}, inherits: "*DeathAnniv*"},
 
         {type: "D", start: {mon: 7, d: 7}, inherits: "יום־שנה של משה רבנו", first: {era: 0, y: 2489}},
@@ -146,7 +146,7 @@
         {titles: {"he": "יום־שנה של הרב יעקב יוסף"}, type: "D", start: {mon: 9, d: 2}, first: {era: 0, y: 5773}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של בית הלוי מבריסק"}, type: "D", start: {d: 4, mon: 9}, first: {era: 0, y: 5552}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הכלי יקר"}, type: "D", start: {mon: 9, d: 7}, first: {era: 0, y: 5379}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב עוזי קלכהיים"}, type: "D", start: {d: 9, mon: 9}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב עוזי קלכהיים"}, type: "D", start: {mon: 9, d: 9}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הפרי מגדים"}, type: "D", start: {mon: 9, d: 10}, first: {era: 0, y: 5552}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרי״ף"}, type: "D", start: {mon: 9, d: 10}, first: {era: 0, y: 4864}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי מאיר בעל הנס"}, type: "D", start: {mon: 9, d: 14}, inherits: "*DeathAnniv*"},

@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    first: {era: 1, y: 1960},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

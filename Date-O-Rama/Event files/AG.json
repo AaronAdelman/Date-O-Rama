@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.82, green: 0.15, blue: 0.19},
+    first: {era: 1, y: 1981},
+    urls: {"en": "https://ab.gov.ag/detail_page.php?page=4"},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/antigua-and-barbuda/international-new-years-day"}},

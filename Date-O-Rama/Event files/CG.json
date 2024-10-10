@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
+    first: {era: 1, y: 1960},
     events: [
         {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
         {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},

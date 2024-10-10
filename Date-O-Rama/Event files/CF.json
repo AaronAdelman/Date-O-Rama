@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.19, blue: 0.53},
+    first: {era: 1, y: 1960},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/commemoration-of-boganda/"}, titles: {"en": "Commemoration of Boganda"}, first: {era: 1, y: 1959}, notes: {"en": "Barthelemy Boganda Day\nBoganda Day"}},

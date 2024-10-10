@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    first: {era: 1, y: 2011},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {era: 1, y: 2023, mon: 2, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/south-sudan/papal-visit-south-sudan"}, inherits: "Public Holiday"},

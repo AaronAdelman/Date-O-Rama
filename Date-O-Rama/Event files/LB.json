@@ -5,7 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
-    events: [
+    first: {era: 1, y: 1943},    events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
         {inherits: "Christmas Day", type: "D", start: {mon: 1, d: 6}, titles: {"en": "Armenian Christmas Day", "ar": "عيد الميلاد - الأرمن الأرثودكس", "fr": "Noël Arménien", "he": "חג המולד הארמני"}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaltoday.com/armenian-christmas/"}},

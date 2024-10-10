@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    first: {era: 1, y: 1975},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Heroes’ Day", type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/mozambican-heroes-day/"}},

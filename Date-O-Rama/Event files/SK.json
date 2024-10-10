@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
+    first: {era: 1, y: 1992},
     events: [
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/day-of-the-establishment-of-the-slovak-republic"}, titles: {"en": "Day of the Establishment of the Slovak Republic", "sk": "Deň vzniku Slovenskej republiky"}, first: {era: 1, y: 1993}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

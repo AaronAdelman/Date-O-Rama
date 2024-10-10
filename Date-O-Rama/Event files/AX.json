@@ -4,7 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.39, blue: 0.68},
-    events: [
+    first: {era: 1, y: 1917},    events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
         {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
@@ -17,7 +17,7 @@
         {inherits: "Midsummer Eve", type: "D", start: {mon: 6, d: 19, thruD: 25, wkd: [6]}},
         {inherits: "Midsummer Day", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}},
         {inherits: "All Saints’ Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
-        {inherits: "Independence Day", type: "D", start: {d: 6, mon: 12}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
+        {inherits: "Independence Day", type: "D", start: {mon: 12, d: 6}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},

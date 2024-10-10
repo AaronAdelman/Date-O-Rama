@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
+    first: {era: 1, y: 1991},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, titles: {"en": "Prešeren Day", "sl": "Prešernov dan"}, first: {era: 1, y: 1944}},

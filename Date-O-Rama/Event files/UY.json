@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.0, green: 0.80, blue: 0.00},
+    first: {era: 1, y: 1825},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/uruguay/epiphany"}, inherits: "Children’s Day"},

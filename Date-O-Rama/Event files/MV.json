@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    first: {era: 1, y: 1965},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {era: 1, y: 2023, mon: 2, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}, inherits: "Public Holiday"},

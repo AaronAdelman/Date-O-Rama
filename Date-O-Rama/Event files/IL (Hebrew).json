@@ -4,6 +4,7 @@
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {red: 0.31, green: 0.67, blue: 0.8},
+    first: {era: 0, y: 5708},
     events: [
         {titles: {"he": "יום זיכרון לאומי לאסון 7 באוקטובר", "en": "October 7 Massacre Memorial Day"}, type: "D", start: {mon: 1, d: 24}, first: {era: 0, y: 5785}},
         {titles: {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, type: "D", start: {mon: 2, d: 7}},

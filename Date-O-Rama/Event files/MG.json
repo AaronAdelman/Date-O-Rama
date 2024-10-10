@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.26, blue: 0.23},
+    first: {era: 1, y: 1960},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-madagascar/"}},

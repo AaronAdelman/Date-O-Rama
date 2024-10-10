@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.42, green: 0.64, blue: 0.89},
+    first: {era: 1, y: 1816},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},

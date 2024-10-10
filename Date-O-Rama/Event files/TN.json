@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.80, green: 0.17, blue: 0.15},
+    first: {era: 1, y: 1956},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 14}, inherits: "Amazigh New Year"},

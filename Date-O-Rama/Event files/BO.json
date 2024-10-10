@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
+    first: {era: 1, y: 1825},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Plurinational State of Bolivia Anniversary", "es": "Nacimiento del Estado Plurinacional de Bolivia"}, urls: {"en": "https://nationaltoday.com/plurinational-state-foundation-day/"}},

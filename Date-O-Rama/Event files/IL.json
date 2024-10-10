@@ -4,6 +4,7 @@
     defaultLocale: "he",
     calendarCode: "gre",
     calendarColor: {red: 0.31, green: 0.67, blue: 0.8},
+    first: {era: 1, y: 1948},
     events: [
         {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 9}, urls: {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day_(Israel)", "he": "https://he.wikipedia.org/wiki/%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA_%D7%99%D7%95%D7%9D_%D7%94%D7%A0%D7%99%D7%A6%D7%97%D7%95%D7%9F_%D7%91%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C"}},
         {titles: {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, type: "D", start: {mon: 11, d: 30}, urls: {"en": "https://yomhagirush.com/index.php"}},

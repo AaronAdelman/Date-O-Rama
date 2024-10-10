@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.06, green: 0.02, blue: 0.62},
+    first: {era: 1, y: 1278},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Andorra"},
     events: [
         {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},

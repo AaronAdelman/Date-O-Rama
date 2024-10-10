@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.49, green: 0.53, blue: 0.56},
+    first: {era: 1, y: 1964},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/feast-of-st-pauls-shipwreck/"}, titles: {"en": "Feast of St. Paul’s Shipwreck", "mt": "Nawfraġju ta’ San Pawl"}, notes: {"mt": "San Pawl Nawfragu"}},

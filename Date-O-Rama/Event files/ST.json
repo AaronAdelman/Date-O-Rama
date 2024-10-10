@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    first: {era: 1, y: 1975},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4}, titles: {"en": "Day of King Amador", "pt": "Dia do Rei Amador"}, first: {era: 1, y: 2005}},

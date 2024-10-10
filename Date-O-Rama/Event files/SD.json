@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    first: {era: 1, y: 1956},
     events: [
         {inherits: "Independence Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1956}, urls: {"en": "https://nationaltoday.com/sudan-independence-day/"}},
         {inherits: "Revolution Day", type: "D", start: {mon: 12, d: 19}, first: {era: 1, y: 2018}},
