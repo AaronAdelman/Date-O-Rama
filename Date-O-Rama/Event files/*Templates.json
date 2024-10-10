@@ -399,6 +399,7 @@
         {template: "National Pizza Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הלאומי"}, emoji: "🍕"},
         {template: "National Poetry Day", titles: {"en": "National Poetry Day", "id": "Hari Puisi Nasional"}, type: "D", start: {mon: 4, d: 28}, emoji: "🖋"},
         {template: "National Press Day", titles: {"en": "National Press Day", "id": "Hari Pers Nasional"}, type: "D", start: {mon: 2, d: 9}, emoji: "🗞️"},
+        {template: "National Pumpkin Seed Day", type: "D", start: {mon: 10, wkd: [4], nth: 1}, titles: {"en": "National Pumpkin Seed Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pumpkin-seed-day-first-wednesday-in-october"}},
         {template: "National Radio Day", type: "D", start: {mon: 8, d: 20}, titles: {"en": "National Radio Day", "he": "יום הרדיו הלאומי", "id": "Hari Radio Nasional", "th": "วันวิทยุกระจายเสียงแห่งชาติ"}, emoji: "📻"},
         {template: "National Re-Gifting Day", type: "D", start: {mon: 12, wkd: [5], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/re-gifting-day/"}, titles: {"en": "National Re-Gifting Day"}, emoji: "🎁"},
         {template: "National Red Mitten Day", type: "D", start: {mon: 11, d: 21}, titles: {"en": "National Red Mitten Day"}, emoji: "🇨🇦", urls: {"en": "https://www.nationaldaycalendar.com/international/national-red-mitten-day-november-21"}},

@@ -4,6 +4,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.91, blue: 0.81},
     emoji: "📛",
+    first: {era: 1, y: 2013},
     events: [
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/national-shepherd-day/"}, titles: {"en": "National Shepherd Day"}},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-erika-day/"}, titles: {"en": "National Erika Day"}},
@@ -336,7 +337,7 @@
         {type: "D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-jonathan-day/"}, titles: {"en": "National Jonathan Day"}},
         {type: "D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/national-justin-day/"}, titles: {"en": "National Justin Day"}},
         {type: "D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/national-lance-day/"}, titles: {"en": "National Lance Day"}},
-        {type: "D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-a-kevin-day/"}, titles: {"en": "National Hug a Kevin Day"}, first: {era: 1, y: 2017}, emoji: "🫂"},
+        {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Hug-a-Kevin Day"}, urls: {"en": "https://www.broadwayworld.com/bwwtv/article/ABC-Declares-Tuesday-October-10-National-Hug-A-Kevin-Day-in-Honor-of-KEVIN-PROBABLY-SAVES-THE-WORLD-20171005"}, notes: {"en": "National Kevin Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-porter-day/"}, titles: {"en": "National Porter Day"}},
         {type: "D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kim-day/"}, titles: {"en": "National Kim Day"}},
         {type: "D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kimberly-day/"}, titles: {"en": "National Kimberly Day"}},

@@ -181,6 +181,8 @@
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Black Girl Day Off"}, urls: {"en": "https://www.daysoftheyear.com/days/black-girl-day-off/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "It’s My Party Day"}, urls: {"en": "https://nationaltoday.com/party-day/"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Kraken Day"}, notes: {"en": "Myths and Legends Day"}, urls: {"en": "https://www.checkiday.com/41c2a94f9c6d391cafc9c41139979f39/kraken-day"}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 10, d: 11}, titles: {"en": "World Biryani Day"}, urls: {"en": "https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"}},
+        {type: "D", start: {mon: 10, d: 11}, titles: {"en": "World Dulce de Leche Day"}, notes: {"en": "International Dulce de Leche Day"}, urls: {"en": "https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 10, d: 12}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/dia-de-la-raza/"}, first: {era: 1, y: 1917}},
         {type: "D", start: {mon: 10, d: 12}, inherits: "World Arthritis Day"},
         {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Fossil Day"}, urls: {"en": "https://laughingsquid.com/international-cephalopod-awareness-days/"}, first: {era: 1, y: 2007}},
