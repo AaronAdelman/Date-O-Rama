@@ -59,6 +59,7 @@
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, urls: {"en": "https://nationaltoday.com/frankenstein-friday/"}, titles: {"en": "Frankenstein Friday"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 10, wkd: [6], nth: 2}, titles: {"en": "National Haunted House Day"}, urls: {"en": "https://www.nationalhauntedhouseday.org/"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 10, wkd: [7], nth: -1}, inherits: "National Trick or Treat Day", first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "National Costume Swap Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-costume-swap-day/"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/deck-the-everything-day/"}, titles: {"en": "Deck the Everything Day"}, first: {era: 1, y: 2023}, emoji: "🎄"},
         {type: "D", start: {mon: 11, wkd: [4], nth: 1}, urls: {"en": "https://nationaltoday.com/national-advent-calendar-day/"}, titles: {"en": "National Advent Calendar Day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/peppermint-bark-day/"}, titles: {"en": "National Peppermint Bark Day"}},
