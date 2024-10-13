@@ -60,7 +60,7 @@
         {type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/plough-monday/"}, titles: {"en": "Plough Monday"}, emoji: "⽾"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 1}, urls: {"en": "https://nationaltoday.com/handsel-monday/"}, titles: {"en": "Handsel Monday"}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-roast-pheasant-day/"}, titles: {"en": "National Roast Pheasant Day"}},
+        {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Roast Pheasant Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-roast-pheasant-day/"}},
         {type: "D", start: {mon: 10, d: 21}, inherits: "National Heroes’ Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}, urls: {"en": "https://nationaltoday.com/trafalgar-day/"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "Everyone Writes Day"}, urls: {"en": "https://nationaltoday.com/everyone-writes-day/"}, emoji: "✍️"},

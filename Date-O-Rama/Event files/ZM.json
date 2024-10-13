@@ -21,7 +21,7 @@
         {inherits: "Heroes’ Day", type: "D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://nationaltoday.com/heroes-day-of-zambia/"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 7, d: 2, thruD: 8, wkd: [3]}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/zambia-unity-day/"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/zambia-farmers-day"}, inherits: "Farmers’ Day"},
-        {type: "D", start: {mon: 10, d: 18}, titles: {"en": "National Prayer Day"}, urls: {"en": "https://nationaltoday.com/national-prayer-day/"}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 10, d: 18}, titles: {"en": "National Prayer Day"}, notes: {"en": "National Day of Prayer, Fasting, Repentance and Reconciliation"}, urls: {"en": "https://www.daysoftheyear.com/days/national-prayer-day-zambia/"}, first: {era: 1, y: 2015}},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/zambia-independence-day/"}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
 

@@ -27,5 +27,6 @@
         {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
         {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}, first: {era: 1, y: 1993}},
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 10, d: 17, thruD: 23, wkd: [7]}, titles: {"en": "Rakija Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rakija-day/"}, emoji: "🍷"},
    ]
 }
