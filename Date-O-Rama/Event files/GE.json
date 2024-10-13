@@ -14,7 +14,7 @@
         {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},
         {type: "D", start: {mon: 5, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-andrew-the-first-called-day"}, inherits: "St. Andrew’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 5, d: 26}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/georgia-independence-day/"}},
-        {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Day of Svetitskovloba", "ka": "სვეტიცხოვლობა"}, urls: {"en": "https://nationaltoday.com/day-of-svetitskovloba/"}, notes: {"en": "Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
+        {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Day of Svetitskovloba", "ka": "სვეტიცხოვლობა"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-svetitskhoveli-cathedral/"}, notes: {"en": "Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 11, d: 23}},
 
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
