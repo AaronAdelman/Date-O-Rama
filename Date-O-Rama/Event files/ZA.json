@@ -54,5 +54,6 @@
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {type: "D", start: {mon: 6, wkd: [5], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/farm-workers-day/"}, inherits: "National Farm Workers Day"},
         {type: "D", start: {mon: 8, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/amagwinya-day/"}, titles: {"en": "Amagwinya Day"}, notes: {"en": "Vetkoek Day"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "Pinotage Day"}, urls: {"en": "https://pinotage.co.za/"}, emoji: "🍇", first: {era: 1, y: 2014}, notes: {"en": "National Pinotage Day\nInternational Pinotage Day"}},
    ]
 }
