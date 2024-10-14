@@ -26,7 +26,6 @@ enum ASACalendarCode:  String, Codable {
     case IslamicCivil          = "IslamicCivil"
     case IslamicTabular        = "IslamicTabular"
     case IslamicUmmAlQura      = "IslamicUmmAlQura"
-//    case ISO8601               = "ISO8601"
     case Japanese              = "kok"
     case Persian               = "his"
     case RepublicOfChina       = "min"
@@ -127,6 +126,7 @@ extension ASACalendarCode {
         switch self {
         case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate:
             return true
+            
         default:
             return false
         } // switch self
@@ -182,6 +182,16 @@ extension ASACalendarCode {
             
         default:
             return false
+        }
+    }
+    
+    var is24HourDaysMidnightStartFixedCalendar: Bool {
+        switch self {
+        case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA, .MarsSolDate, .DublinJulianDay, .ReducedJulianDay, .JulianDay:
+            return false
+
+        default:
+            return true
         }
     }
     

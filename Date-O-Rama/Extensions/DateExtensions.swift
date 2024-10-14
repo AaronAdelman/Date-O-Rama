@@ -64,12 +64,6 @@ extension Date {
         return previousMidnight(timeZoneOffset: timeZoneOffset)
     } // func previousMidnight(timeZone:  TimeZone) -> Date
 
-//    func nextMidnight(timeZone:  TimeZone) -> Date {
-//        let previousMidnight = self.previousMidnight(timeZone: timeZone)
-//        let nextMidnight =  previousMidnight.addingTimeInterval(Date.SECONDS_PER_DAY)
-//        return nextMidnight
-//    } // func nextMidnight(timeZone:  TimeZone) -> Date
-    
     func dateToCalculateSolarEventsFor(timeZone: TimeZone) -> Date {
         return self.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: self)))
     }
@@ -145,13 +139,6 @@ extension Date {
         let result = Date.date(JulianDate: thisJulianDay)
         return result
     } // var previousGMTNoon
-
-//    var nextGMTNoon: Date {
-//        let thisJulianDay = floor(self.JulianDate)
-//        let nextJulianDay = thisJulianDay + 1
-//        let result = Date.date(JulianDate: nextJulianDay)
-//        return result
-//    } // var nextGMTNoon
 } // extension Date
 
 extension Date {

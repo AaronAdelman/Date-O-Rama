@@ -143,7 +143,10 @@ struct ASAEventDetailsTitleSection: View {
                 ASAColorRectangle(colors: event.colors)
                 VStack(alignment: .leading, spacing: 8.0) {
                     Text(event.longCalendarTitle)
-                    Text(location.formattedOneLineAddress)
+                    
+                    if !event.calendarCode.is24HourDaysMidnightStartFixedCalendar {
+                        Text(location.formattedOneLineAddress)
+                    }
                 } // VStack
             } // HStack
         } // Section
