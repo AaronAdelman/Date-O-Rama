@@ -42,13 +42,15 @@ struct ASAEventSpecification: Codable {
     var emoji: String?
     
     var type: ASAEventSpecificationType
+    
+    var mutuallyExclusiveSubEvents: Array<ASAEventSpecification>?
 
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "first"
         case lastDateSpecification  = "last"
-        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type
+        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type, mutuallyExclusiveSubEvents
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

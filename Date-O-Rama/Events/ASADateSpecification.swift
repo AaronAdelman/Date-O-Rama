@@ -201,7 +201,7 @@ extension ASADateSpecification {
         case .oneYear, .multiYear:
             if isEndDate {
                 let numberOfMonthsInYear = calendar.lastMonthOfYear(for: baseDate)!
-                let numberOfDaysInLastMonth = calendar.daysInMonth(locationData: revisedDateComponents.locationData, era: revisedDateComponents.era!, year: revisedDateComponents.year!, month: numberOfMonthsInYear)
+                let numberOfDaysInLastMonth = calendar.daysInMonth(locationData: revisedDateComponents.locationData, era: revisedDateComponents.era ?? 0, year: revisedDateComponents.year!, month: numberOfMonthsInYear)
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
             } else {

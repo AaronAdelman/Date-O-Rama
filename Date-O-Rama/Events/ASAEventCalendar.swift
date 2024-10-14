@@ -1307,13 +1307,30 @@ class ASAEventCalendar {
             let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock, eventsFileTemplates: eventsFile!.templateSpecifications)
             
             if newEvent != nil {
-                if newEvent!.isAllDay {
-                    dateEvents.append(newEvent!)
-                } else {
-                    timeEvents.append(newEvent!)
+                if (eventSpecification.titles != nil || eventSpecification.inherits != nil) {
+                    if newEvent!.isAllDay {
+                        dateEvents.append(newEvent!)
+                    } else {
+                        timeEvents.append(newEvent!)
+                    }
                 }
                 
-                // TODO:  If sub-events are implemented, they need to be implemented here.
+                let mutuallyExclusiveSubEvents: [ASAEventSpecification]? = eventSpecification.mutuallyExclusiveSubEvents
+                if mutuallyExclusiveSubEvents != nil {
+                    for subEventSpecification in mutuallyExclusiveSubEvents! {
+                        let newEvent = processEventSpecification(calendar: calendar, eventSpecification: subEventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock, eventsFileTemplates: eventsFile!.templateSpecifications)
+
+                        if newEvent != nil {
+                            if newEvent!.isAllDay {
+                                dateEvents.append(newEvent!)
+                            } else {
+                                timeEvents.append(newEvent!)
+                            }
+
+                            break
+                        }
+                    } // for subEventSpecification in mutuallyExclusiveSubEvents!
+                }
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return (dateEvents, timeEvents)
