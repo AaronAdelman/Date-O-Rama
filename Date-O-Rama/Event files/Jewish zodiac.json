@@ -15,7 +15,7 @@
     {inherits: "Sagittarius", type: "M", start: {mon: 3}},
     {inherits: "Capricorn", type: "M", start: {mon: 4}},
     {inherits: "Aquarius", type: "M", start: {mon: 5}},
-    {inherits: "Pisces", type: "M", start: {mon: 7, "yLengths": [353, 354, 355]}},
-    {inherits: "Pisces", type: "nM", start: {mon: 6, "yLengths": [383, 384, 385]}, end: {mon: 7}}
+    {inherits: "Pisces", type: "M", start: {mon: 7, yLengths: [353, 354, 355]}},
+    {inherits: "Pisces", type: "nM", start: {mon: 6, yLengths: [383, 384, 385]}, end: {mon: 7}}
     ]
 }

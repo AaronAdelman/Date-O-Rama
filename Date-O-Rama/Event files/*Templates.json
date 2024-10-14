@@ -446,7 +446,7 @@
         {template: "Pi Day", type: "D", start: {mon: 3, d: 14}, titles: {"en": "Pi Day", "he": "יום פאי"}, emoji: "π", urls: {"en": "https://www.piday.org/"}},
         {template: "Pink Shirt Day", type: "D", start: {mon: 2, wkd: [4], nth: -1}, urls: {"en": "https://www.pinkshirtday.ca/"}, titles: {"en": "Pink Shirt Day"}},
         {template: "Pioneer Day", titles: {"en": "Pioneer Day", "he": "יום החלוץ"}, type: "D", start: {mon: 7, d: 24}, urls: {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
-        {template: "Pisces", titles: {"en": "Pisces", "he": "דגים"}, type: "M", start: {mon: 7, "yLengths": [353, 354, 355]}, emoji: "♓️", inherits: "*Astrology*"},
+        {template: "Pisces", titles: {"en": "Pisces", "he": "דגים"}, type: "M", start: {mon: 7, yLengths: [353, 354, 355]}, emoji: "♓️", inherits: "*Astrology*"},
         {template: "Poem in Your Pocket Day", type: "D", start: {mon: 4, wkd: [5], nth: -1}, titles: {"en": "Poem in Your Pocket Day"}, first: {era: 1, y: 2002}, emoji: "❤️", urls: {"en": "https://poets.org/national-poetry-month/poem-your-pocket-day"}},
         {template: "Police Day", titles: {"en": "Police Day", "he": "יום המשטרה", "ar": "عيد الشرطة", "pl": "Święto Policji", "ro": "Ziua Poliției"}, type: "D", start: {mon: 6, d: 23}, emoji: "👮‍♂️👮‍♂️", urls: {"en": "https://en.wikipedia.org/wiki/Police_Day"}},
         {template: "Power Engineer’s Day", type: "D", start: {mon: 12, d: 22}, inherits: "Engineer’s Day", titles: {"en": "Power Engineer’s Day"}},
