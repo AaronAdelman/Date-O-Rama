@@ -1315,9 +1315,9 @@ class ASAEventCalendar {
                     }
                 }
                 
-                let mutuallyExclusiveSubEvents: [ASAEventSpecification]? = eventSpecification.mutuallyExclusiveSubEvents
-                if mutuallyExclusiveSubEvents != nil {
-                    for subEventSpecification in mutuallyExclusiveSubEvents! {
+                let nonoverlappingSubEvents: [ASAEventSpecification]? = eventSpecification.nonoverlappingSubEvents
+                if nonoverlappingSubEvents != nil {
+                    for subEventSpecification in nonoverlappingSubEvents! {
                         let newEvent = processEventSpecification(calendar: calendar, eventSpecification: subEventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock, eventsFileTemplates: eventsFile!.templateSpecifications)
 
                         if newEvent != nil {
@@ -1329,7 +1329,22 @@ class ASAEventCalendar {
 
                             break
                         }
-                    } // for subEventSpecification in mutuallyExclusiveSubEvents!
+                    } // for subEventSpecification in nonoverlappingSubEvents!
+                }
+                
+                let overlappingSubEvents: [ASAEventSpecification]? = eventSpecification.overlappingSubEvents
+                if overlappingSubEvents != nil {
+                    for subEventSpecification in overlappingSubEvents! {
+                        let newEvent = processEventSpecification(calendar: calendar, eventSpecification: subEventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock, eventsFileTemplates: eventsFile!.templateSpecifications)
+
+                        if newEvent != nil {
+                            if newEvent!.isAllDay {
+                                dateEvents.append(newEvent!)
+                            } else {
+                                timeEvents.append(newEvent!)
+                            }
+                        }
+                    } // for subEventSpecification in overlappingSubEvents!
                 }
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications

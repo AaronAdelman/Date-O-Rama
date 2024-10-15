@@ -5,7 +5,7 @@
     calendarColor: {red: 0.89, green: 0.89, blue: 0.89},
     emoji: "🌕",
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {titles: {"en": "Blue Moon"}, type: "D", start: {"zmoPhase": "2ndFull"}, emoji: "🔵"},
             {titles: {"en": "Wolf Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 1}, emoji: "🐺"},
             {titles: {"en": "Snow Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 2}, emoji: "❄️"},

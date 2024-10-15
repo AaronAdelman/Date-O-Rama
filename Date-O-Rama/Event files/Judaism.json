@@ -5,7 +5,7 @@
     "otherCalendarCodes": ["cop"],
     calendarColor: {red: 0.0, green: 0.0, blue: 1.0},
     events: [
-        {type: "nY", start: {}, end: {}, mutuallyExclusiveSubEvents: [
+        {type: "nY", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "Y", start: {"yDiv": 7, "yRem": 1}, titles: {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
             {type: "Y", start: {"yDiv": 7, "yRem": 2}, titles: {"he": "שנה ב׳ לשמיטה", "en": "Year 2 in the Shemiṭṭah Cycle"}},
             {type: "Y", start: {"yDiv": 7, "yRem": 3}, titles: {"he": "שנה ג׳ לשמיטה", "en": "Year 3 in the Shemiṭṭah Cycle"}},
@@ -14,7 +14,7 @@
             {type: "Y", start: {"yDiv": 7, "yRem": 6}, titles: {"he": "שנה ו׳ לשמיטה", "en": "Year 6 in the Shemiṭṭah Cycle"}},
             {type: "Y", start: {"yDiv": 7, "yRem": 0}, titles: {"he": "שנת השמיטה", "en": "Shemiṭṭah Year"}},
         ]},
-        {type: "nY", start: {}, end: {}, mutuallyExclusiveSubEvents: [
+        {type: "nY", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "Y", start: {"yDiv": 19, "yRem": 1}, titles: {"he": "שנה א׳ למחזור החמה (שנה רגילה)", "en": "Year 1 in the Metonic Cycle (ordinary year)"}},
             {type: "Y", start: {"yDiv": 19, "yRem": 2}, titles: {"he": "שנה ב׳ למחזור החמה (שנה רגילה)", "en": "Year 2 in the Metonic Cycle (ordinary year)"}},
             {type: "Y", start: {"yDiv": 19, "yRem": 3}, titles: {"he": "שנה ג׳ למחזור החמה (שנה מעוברת)", "en": "Year 3 in the Metonic Cycle (leap year)"}},
@@ -108,7 +108,7 @@
         {titles: {"he": "פסח (יום טוב אחרון שני)", "en": "Pesaḥ (Passover) (yom ṭov ’aḥaron sheni)"}, "excludeRegionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 22}, inherits: "*פסח*"},
         {inherits: "מימונה/אסרו חג פסח", "regionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 22}},
         {inherits: "מימונה/אסרו חג פסח", "excludeRegionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 23}},
-        {type: "nD", start: {mon: 8, d: 16}, end: {mon: 10, d: 5}, mutuallyExclusiveSubEvents: [
+        {type: "nD", start: {mon: 8, d: 16}, end: {mon: 10, d: 5}, nonoverlappingSubEvents: [
             {titles: {"he": "א׳ בעומר", "en": "Counting of the ‘Omer (day 1)"}, type: "D", start: {mon: 8, d: 16}, inherits: "*ספירת העומר*"},
             {titles: {"he": "ב׳ בעומר", "en": "Counting of the ‘Omer (day 2)"}, type: "D", start: {mon: 8, d: 17}, inherits: "*ספירת העומר*"},
             {titles: {"he": "ג׳ בעומר", "en": "Counting of the ‘Omer (day 3)"}, type: "D", start: {mon: 8, d: 18}, inherits: "*ספירת העומר*"},

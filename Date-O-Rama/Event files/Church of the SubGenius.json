@@ -5,7 +5,7 @@
     calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     first: {era: 1, y: 1979},
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 1}, titles: {"en": "St. Jesus Christ (Feast of the Human Sacrifice)"}},
             {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Failure of Will Day"}},
             {type: "D", start: {mon: 1, d: 3}, titles: {"en": "St. Harryhausen"}},

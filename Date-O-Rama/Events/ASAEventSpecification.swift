@@ -43,14 +43,15 @@ struct ASAEventSpecification: Codable {
     
     var type: ASAEventSpecificationType
     
-    var mutuallyExclusiveSubEvents: Array<ASAEventSpecification>?
+    var nonoverlappingSubEvents: Array<ASAEventSpecification>?
+    var overlappingSubEvents: Array<ASAEventSpecification>?
 
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "first"
         case lastDateSpecification  = "last"
-        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type, mutuallyExclusiveSubEvents
+        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type, nonoverlappingSubEvents, overlappingSubEvents
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

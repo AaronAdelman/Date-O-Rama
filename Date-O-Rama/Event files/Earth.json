@@ -4,7 +4,7 @@
     calendarCode: "xloc*",
     calendarColor: {red: 0.133, green: 0.212, blue: 0.290},
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Vernal Equinox", type: "pt", start: {equinoxOrSolstice: "Mar"}, "regionCodes": ["xb"]},
             {inherits: "Summer Solstice", type: "pt", start: {equinoxOrSolstice: "Jun"}, "regionCodes": ["xb"]},
             {inherits: "Autumnal Equinox", type: "pt", start: {equinoxOrSolstice: "Sep"}, "regionCodes": ["xb"]},

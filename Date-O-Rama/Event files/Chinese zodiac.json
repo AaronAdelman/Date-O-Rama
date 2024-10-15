@@ -4,7 +4,7 @@
     calendarCode: "chi",
     calendarColor: {red: 0.87, green: 0.16, blue: 0.06},
     events: [
-        {type: "nY", start: {}, end: {}, mutuallyExclusiveSubEvents: [
+        {type: "nY", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "Y", start: {"yDiv": 12, "yRem": 1}, titles: {"en": "Year of the Rat", "he": "שנת החולדה"}, inherits: "*Rat*"},
             {type: "Y", start: {"yDiv": 12, "yRem": 2}, titles: {"en": "Year of the Ox", "he": "שנת השור"}, inherits: "*Ox*"},
             {type: "Y", start: {"yDiv": 12, "yRem": 3}, titles: {"en": "Year of the Tiger", "he": "שנת הטיגריס"}, inherits: "*Tiger*"},
@@ -18,7 +18,7 @@
             {type: "Y", start: {"yDiv": 12, "yRem": 11}, titles: {"en": "Year of the Dog", "he": "שנת הכלב"}, inherits: "*Dog*"},
             {type: "Y", start: {"yDiv": 12, "yRem": 0}, titles: {"en": "Year of the Pig", "he": "שנת החזיר"}, inherits: "*Pig*"},
         ]},
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "M", start: {mon: 11}, titles: {"en": "Month of the Rat", "he": "חודש החולדה"}, inherits: "*Rat*"},
             {type: "M", start: {mon: 12}, titles: {"en": "Month of the Ox", "he": "חודש השור"}, inherits: "*Ox*"},
             {type: "M", start: {mon: 1}, titles: {"en": "Month of the Tiger", "he": "חודש הטיגריס"}, inherits: "*Tiger*"},

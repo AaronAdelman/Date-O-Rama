@@ -205,7 +205,7 @@
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Lemon Bar Day"}, urls: {"en": "https://nationaltoday.com/national-lemon-bar-day/"}, first: {era: 1, y: 2019}, emoji: "🍋"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Mushroom Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mushroom-day/"}, emoji: "🍄🍄‍🟫"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Pug Day"}, urls: {"en": "https://www.checkiday.com/46b567fca748baceb6bce2184e3b72f6/national-pug-day"}, first: {era: 1, y: 2012}},
-        {type: "D", start: {mon: 10, d: 15, thruD: 17}, first: {era: 1, y: 1958}, mutuallyExclusiveSubEvents: [
+        {type: "D", start: {mon: 10, d: 15, thruD: 17}, first: {era: 1, y: 1958}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 15, wkd: [6]}, inherits: "National Boss’ Day"},
             {type: "D", start: {mon: 10, d: 16, wkd: [2, 3, 4, 5, 6]}, inherits: "National Boss’ Day"},
             {type: "D", start: {mon: 10, d: 17, wkd: [2]}, inherits: "National Boss’ Day"},

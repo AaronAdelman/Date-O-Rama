@@ -4,7 +4,7 @@
     calendarCode: "heb*",
     calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Aries", type: "M", start: {mon: 8}},
             {inherits: "Taurus", type: "M", start: {mon: 9}},
             {inherits: "Gemini", type: "M", start: {mon: 10}},

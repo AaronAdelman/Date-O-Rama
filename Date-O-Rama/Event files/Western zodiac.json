@@ -4,7 +4,7 @@
     calendarCode: "gre*",
     calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Aries", type: "nD", start: {mon: 3, d: 21}, end: {mon: 4, d: 19}},
             {inherits: "Taurus", type: "nD", start: {mon: 4, d: 20}, end: {mon: 5, d: 20}},
             {inherits: "Gemini", type: "nD", start: {mon: 5, d: 21}, end: {mon: 6, d: 20}},
@@ -18,7 +18,7 @@
             {inherits: "Aquarius", type: "nD", start: {mon: 1, d: 20}, end: {mon: 2, d: 18}},
             {inherits: "Pisces", type: "nD", start: {mon: 2, d: 19}, end: {mon: 3, d: 20}},
         ]},
-        {type: "nD", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "nD", start: {}, nonoverlappingSubEvents: [
             {titles: {"en": "Day of the Sun", "he": "יום השמש"}, type: "D", start: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
             {titles: {"en": "Day of the Moon", "he": "יום הירח"}, type: "D", start: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},
             {titles: {"en": "Day of Mars", "he": "יום מאדין"}, type: "D", start: {wkd: [3]}, inherits: "*zma*", inherits: "*Astrology*"},

@@ -5,7 +5,7 @@
     calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     first: {era: 1, y: 1963},
     events: [
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 5}, titles: {"en": "Mungday"}, notes: {"en": "Holyday\nChaos 5"}},
             {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Chaoflux"}, notes: {"en": "Holyday\nChaos 50"}},
             {type: "D", start: {mon: 2, d: 29}, titles: {"en": "St. Tib’s Day"}, notes: {"en": "Holyday\nSt. Tib’s Day"}},
@@ -19,7 +19,7 @@
             {type: "D", start: {mon: 12, d: 8}, titles: {"en": "Afflux"}, notes: {"en": "Holyday\nThe Aftermath 50"}},
         ]},
         
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 5}, inherits: "Apostle Day"},
             {type: "D", start: {mon: 3, d: 19}, inherits: "Apostle Day"},
             {type: "D", start: {mon: 5, d: 31}, inherits: "Apostle Day"},
@@ -42,7 +42,7 @@
             {type: "D", start: {mon: 12, d: 31}, inherits: "Eye Day"},
         ]},
         
-        {type: "Y", start: {}, mutuallyExclusiveSubEvents: [
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Nude Year’s Day"}, notes: {"en": "Whollyday\n1 Chaos"}},
             {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Backwards Day, Reformed"}, notes: {"en": "Whollyday\n10 Chaos"}},
             {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Binary Day"}, notes: {"en": "Whollyday\n10 Chaos"}},
