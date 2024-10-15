@@ -178,7 +178,7 @@
         {type: "D", start: {mon: 10, wkd: [2], nth: 1}, titles: {"en": "National Child Health Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-child-health-day/"}, first: {era: 1, y: 2017}, emoji: "👦👧"},
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, titles: {"en": "Nevada Day", "he": "יום נבדה"}, first: {era: 1, y: 1864}, urls: {"en": "http://nevadaday.com/"}},
         {type: "D", start: {mon: 10, wkd: [6], nth: 1}, titles: {"en": "MFG Day"}, notes: {"en": "Manufacturing Day\nNational Manufacturing Day"}, urls: {"en": "https://mfgday.com/"}, first: {era: 1, y: 2012}},
-        {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "National Mammography Day"}, urls: {"en": "https://nationaltoday.com/national-mammography-day/"}, notes: {"en": "Part of Breast Cancer Awareness Month"}, first: {era: 1, y: 1993}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "National Mammography Day"}, urls: {"en": "https://nationaltoday.com/national-mammography-day/"}, first: {era: 1, y: 1993}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, wkd: [7], nth: -1}, inherits: "National Prescription Drug Take Back Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1976}, urls: {"en": "https://www.daysoftheyear.com/days/national-chess-day/"}, emoji: "♟️"},
         {type: "D", start: {mon: 10, wkd: [7], nth: 3}, titles: {"en": "National Sweetest Day", "he": "היום המתוק ביותר הלאומי"}, notes: {"en": "Sweetest Day", "he": "היום המתוק ביותר"}, urls: {"en": "https://www.daysoftheyear.com/days/sweetest-day/"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},

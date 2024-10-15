@@ -171,7 +171,6 @@
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Handbag Day"}, notes: {"en": "Yet anther fashion-related observance."}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Hug a Drummer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hug-a-drummer-day/"}, emoji: "🫂", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Love Your Hair Day"}, notes: {"en": "This looks suspiciously like something meant to sell hair care products."}, first: {era: 1, y: 2017}},
-        {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, first: {era: 1, y: 1983}, emoji: "📏"},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Tic Tac Day"}, urls: {"en": "https://www.checkiday.com/c878091eb1bf3d4cb9c6bcb23c8197b2/national-tic-tac-day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Tuxedo Day"}, notes: {"en": "We are not clear about this, but this may be a fashion observance created by butlers or fans of James Bond."}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "SHIFT10 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shift10-day/"}, first: {era: 1, y: 2016}, emoji: "🤲"},
@@ -308,7 +307,6 @@
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "National Noodle Day", "he": "יום האיטריות הלאומי"}, notes: {"en": "Noodle Day"}, emoji: "🍝", urls: {"en": "https://www.daysoftheyear.com/days/noodle-day/"}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "​National PA Day"}, urls: {"en": "https://www.checkiday.com/3a5cda63cf72b04e29360e2b07e8c90b/national-pa-day"}, notes: {"en": "National Physician’s Assistant Day\nNational Physician Assistant Day\nNational Physician Assistants Day"}, first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "​National Transfer Money to Your Daughter Day"}, urls: {"en": "https://nationaltoday.com/national-transfer-money-to-your-daughter-day/"}},
-        {type: "D", start: {mon: 10, d: 7, thruD: 13, wkd: [7]}, titles: {"en": "International Newspaper Carrier Day", "he": "יום מחלקי העיתונים הבינלאומי"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, emoji: "🗞️", notes: {"en": "Part of National Newspaper Week, despite the name"}},
         {type: "D", start: {mon: 10, d: 7}, inherits: "National Flower Day", urls: {"en": "https://www.checkiday.com/c9d2b4148b61db9666de877d537848ad/national-flower-day"}},
         {type: "D", start: {mon: 10, d: 7}, titles: {"en": "National Bathtub Day", "he": "יום האמבטיה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/bathtub-day/"}},
         {type: "D", start: {mon: 10, d: 7}, titles: {"en": "National Forgiveness and Happiness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-forgiveness-and-happiness-day/"}},
@@ -2348,7 +2346,11 @@
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 9}, titles: {"en": "National Dance Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-dance-week/"}, notes: {"en": "NDW"}, first: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "National Walk Your Dog Week"},urls: {"en": "http://www.walkyourdogweek.com/"},  emoji: "🦮"},
         {type: "nD", start: {mon: 10, d: 3, thruD: 9, wkd: [1], durationD: 7}, titles: {"en": "Fire Prevention Week™"}, notes: {"en": "FPW™"}, urls: {"en": "https://www.nfpa.org/events/fire-prevention-week"}, first: {era: 1, y: 1922}},
-        {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}},
+        
+        {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
+        ]},
+        
         {type: "nD", start: {mon: 10, d: 6}, end: {mon: 10, d: 12}, titles: {"en": "PA Week"}, notes: {"en": "National Physician Assistant Week"}, urls: {"en": "https://www.aapa.org/pas-go-beyond/pa-week/"}},
         {type: "nD", start: {mon: 10, wkd: [2], d: 3, thruD: 9, durationD: 7}, titles: {"en": "Celebrate Community Week"}, urls: {"en": "https://www.daysoftheyear.com/days/celebrate-community-week/"}, first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 11, d: 7}, end: {mon: 11, d: 13}, titles: {"en": "National Book Award Week"}, urls: {"en": "https://nationaltoday.com/national-book-award-week/"}, emoji: "📚"},
@@ -2417,7 +2419,11 @@
         {type: "nD", start: {mon: 9, wkd: [1], d: 8, thruD: 14, durationD: 7}, titles: {"en": "Grandparents Week"}, inherits: "Grandparents’ Day", urls: {"en": "https://grandparentsday.org/"}},
         {type: "W", start: {mon: 1, fullWk: 3}, titles: {"en": "National Fresh Squeezed Juice Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-week/"}, emoji: "🍹"},
         {type: "W", start: {mon: 10, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Spinning and Weaving Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spinning-and-weaving-week/"}, first: {era: 1, y: 2009}},
-        {type: "W", start: {mon: 10, fullWk: 1}, titles: {"en": "National Newspaper Week"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, first: {era: 1, y: 1940}, emoji: "🗞️"},
+        
+        {type: "W", start: {mon: 10, fullWk: 1}, titles: {"en": "National Newspaper Week"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, first: {era: 1, y: 1940}, emoji: "🗞️", overlappingSubEvents: [
+            {type: "D", start: {mon: 10, d: 7, thruD: 13, wkd: [7]}, titles: {"en": "International Newspaper Carrier Day", "he": "יום מחלקי העיתונים הבינלאומי"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, emoji: "🗞️", notes: {"en": "Part of National Newspaper Week, despite the name"}},
+        ]},
+        
         {type: "W", start: {mon: 10, fullWk: 3}, titles: {"en": "National Chemistry Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chemistry-week/"}, first: {era: 1, y: 1987}, emoji: "🧪⚗️"},
         {type: "W", start: {mon: 10, fullWk: 3}, titles: {"en": "National Collegiate Alcohol Awareness Week"}, notes: {"en": "NCAAW"}, urls: {"en": "https://www.daysoftheyear.com/days/national-collegiate-alcohol-awareness-week/"}},
         {type: "W", start: {mon: 10, fullWk: 3}, titles: {"en": "National Friends of Libraries Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-friends-of-libraries-week/"}, first: {era: 1, y: 2005}},
