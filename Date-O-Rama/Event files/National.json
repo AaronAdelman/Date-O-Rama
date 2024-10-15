@@ -176,7 +176,6 @@
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Tuxedo Day"}, notes: {"en": "We are not clear about this, but this may be a fashion observance created by butlers or fans of James Bond."}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "SHIFT10 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shift10-day/"}, first: {era: 1, y: 2016}, emoji: "🤲"},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "U.S. Naval Academy Day"}, urls: {"en": "https://www.checkiday.com/75dc72f0826e92132c92065373f1160a/u-s-naval-academy-day"}},
-        {type: "D", start: {mon: 10, d: 11, thruD: 17, wkd: [4]}, titles: {"en": "​National Fossil Day"}, urls: {"en": "https://www.nps.gov/subjects/fossilday/index.htm"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "“You Go, Girl” Day"}, urls: {"en": "https://www.checkiday.com/2beee1b83126f3b6a6416dd083fa85c9/you-go-girl-day"}, first: {era: 1, y: 1984}, emoji: "👩‍🚀"},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Coming Out Day"}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Peyronie’s Disease Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-peyronies-disease-awareness-day/"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
@@ -206,7 +205,11 @@
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Lemon Bar Day"}, urls: {"en": "https://nationaltoday.com/national-lemon-bar-day/"}, first: {era: 1, y: 2019}, emoji: "🍋"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Mushroom Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mushroom-day/"}, emoji: "🍄🍄‍🟫"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Pug Day"}, urls: {"en": "https://www.checkiday.com/46b567fca748baceb6bce2184e3b72f6/national-pug-day"}, first: {era: 1, y: 2012}},
-        {type: "D", start: {mon: 10, d: 16}, titles: {"en": "National Boss’ Day", "he": "יום הבוס הלאומי"}, first: {era: 1, y: 1958}, notes: {"en": "National Boss’s Day\nBoss’s Day\nNational Boss Day`\nBosses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/boss-day/"}},
+        {type: "D", start: {mon: 10, d: 15, thruD: 17}, first: {era: 1, y: 1958}, mutuallyExclusiveSubEvents: [
+            {type: "D", start: {mon: 10, d: 15, wkd: [6]}, inherits: "National Boss’ Day"},
+            {type: "D", start: {mon: 10, d: 16, wkd: [2, 3, 4, 5, 6]}, inherits: "National Boss’ Day"},
+            {type: "D", start: {mon: 10, d: 17, wkd: [2]}, inherits: "National Boss’ Day"},
+        ]},
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "Department Store Day"}, notes: {"en": "National Department Store Day"}, urls: {"en": "https://www.daysoftheyear.com/days/department-store-day/"}},
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "National Dictionary Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dictionary-day/"}, notes: {"en": "Dictionary Day"}, emoji: "📖"},
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "National Feral Cat Day®"}, urls: {"en": "https://www.alleycat.org/take-action/national-feral-cat-day/"}, first: {era: 1, y: 2001}, last: {era: 1, y: 2016}, emoji: "🙀", notes: {"en": "This observance promoted being compassionate to feral cats by doing things to them that if done to unwilling humans would be considered criminal."}},
@@ -336,7 +339,7 @@
         {type: "D", start: {mon: 10, wkd: [4], nth: 2}, titles: {"en": "National Stop Bullying Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-stop-bullying-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 10, wkd: [4], d: 11, thruD: 17}, titles: {"en": "National Take Your Parents to Lunch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/take-your-parents-to-lunch-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 10, wkd: [4], nth: 2}, titles: {"en": "Stop America’s Violence Everywhere Today"}, notes: {"en": "SAVE Today"}, urls: {"en": "https://www.checkiday.com/5387e1321411c6518febd1f3727250eb/stop-americas-violence-everywhere-today"}},
-        {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "National BRA Day"}, urls: {"en": "https://nationaltoday.com/national-bra-day/"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 10, wkd: [4], nth: 3}, inherits: "National BRA Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "Support Your Local Chamber of Commerce Day"}, urls: {"en": "https://nationaltoday.com/support-your-local-chamber-of-commerce-day/"}},
         {type: "D", start: {mon: 10, wkd: [5], nth: 2}, titles: {"en": "Ombuds Day"}, urls: {"en": "https://www.americanbar.org/groups/dispute_resolution/events/ombuds-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "National Get Smart About Credit Day"}, urls: {"en": "https://www.daysoftheyear.com/days/get-smart-about-credit-day/"}, first: {era: 1, y: 2003}, emoji: "💳"},
@@ -2498,5 +2501,6 @@
         {template: "Start-Up Day Across America", type: "D", start: {mon: 8, d: 1}, titles: {"en": "Start-Up Day Across America"}, notes: {"en": "Startup Day Across America\nCongressional Startup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/start-up-day-across-america/"}},
         {template: "Wear a Dress Day", type: "D", start: {mon: 6, d: 1}, titles: {"en": "Wear a Dress Day"}, notes: {"en": "Another fashion-focused observance."}},
         {template: "National Metric Week", type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, titles: {"en": "National Metric Week"}, urls: {"en": "https://www.nationaldaycalendar.com/october/national-metric-week-week-of-october-10th"}, emoji: "📏"},
+        {template: "National Boss’ Day", type: "D", start: {mon: 10, d: 16}, titles: {"en": "National Boss’ Day", "he": "יום הבוס הלאומי"}, notes: {"en": "National Boss’s Day\nBoss’s Day\nNational Boss Day\nBosses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/boss-day/"}},
     ]
 }
