@@ -41,6 +41,7 @@
         {type: "D", start: {mon: 10, wkd: [1], nth: 1}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, titles: {"en": "International Blessings of the Fishing Fleet Day"}},
         {type: "D", start: {mon: 10, wkd: [1], nth: 3}, titles: {"en": "Sunday School Teacher Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sunday-school-teacher-appreciation-day/"}, first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 10, wkd: [3], nth: 3}, titles: {"en": "Pro-Life Day of Silent Solidarity"}, urls: {"en": "https://www.daysoftheyear.com/days/pro-life-day-of-silent-solidarity/"}, first: {era: 1, y: 2004}},
+        {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "World Student Day"}, urls: {"en": "https://www.checkiday.com/b66a694b533d84886947d68f786bba5c/world-student-day"}},
         {type: "D", start: {mon: 11, d: 19, thruD: 26, wkd: [1]}, urls: {"en": "https://nationaltoday.com/stir-sunday/"}, titles: {"en": "Stir-Up Sunday"}},
         {type: "D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/cities-for-life-day/"}, titles: {"en": "Cities for Life Day", "he": "יום ערים למען החיים"}, first: {era: 1, y: 2002}, emoji: "🌃"},
         {type: "D", start: {mon: 12, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-wear-your-pearls-day/"}, titles: {"en": "National Wear Your Pearls Day"}, first: {era: 1, y: 2015}},

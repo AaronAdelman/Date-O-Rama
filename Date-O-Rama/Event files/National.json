@@ -226,6 +226,7 @@
         {type: "D", start: {mon: 10, d: 18}, titles: {"en": "National Mashed Potato Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mashed-potato-day/"}, first: {era: 1, y: 2016}, emoji: "🥔"},
         {type: "D", start: {mon: 10, d: 18}, titles: {"en": "National Medical Assistants Day"}, urls: {"en": "https://nationaltoday.com/national-medical-assistants-day/"}},
         {type: "D", start: {mon: 10, d: 18}, titles: {"en": "National Sunday Day"}, urls: {"en": "https://nationaltoday.com/national-sunday-day/"}},
+        {type: "D", start: {mon: 10, d: 19}, titles: {"en": "National LGBT Center Awareness Day"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 10, d: 19}, titles: {"en": "National New Friends Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-new-friends-day/"}},
         {type: "D", start: {mon: 10, d: 19}, titles: {"en": "National Seafood Bisque Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seafood-bisque-day/"}},
         {type: "D", start: {mon: 10, d: 2}, titles: {"en": "National Custodial Worker Recognition Day"}, urls: {"en": "https://www.daysoftheyear.com/days/custodial-worker-day/"}, notes: {"en": "National Custodian Day\nCustodian Appreciation Day\nNational Custodial Worker’s Recognition Day"}},
