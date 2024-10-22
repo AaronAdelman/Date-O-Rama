@@ -172,7 +172,7 @@
         {titles: {"en": "International Day of Rural Women", "he": "היום הבינלאומי לנשים כפריות"}, type: "D", start: {mon: 10, d: 15}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-rural-women/"}, emoji: "👩‍🌾", notes: {"en": "Rural Women’s Day"}},
         {titles: {"en": "World Food Day", "he": "יום המזון העולמי"}, type: "D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/world-food-day/"}, emoji: "🍞", first: {era: 1, y: 1945}},
         {inherits: "International Day for the Eradication of Poverty", type: "D", start: {mon: 10, d: 17}, first: {era: 1, y: 1993}},
-        {titles: {"en": "Global Media and Information Literacy Week", "he": "שבוע אוריינות מדיה ומידע גלובלי"}, type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, first: {type: "nD", era: 1, y: 2012}, emoji: "🎥", urls: {"en": "https://nationaltoday.com/global-media-and-information-literacy-week/"}},
+        {titles: {"en": "Global Media and Information Literacy Week", "he": "שבוע אוריינות מדיה ומידע גלובלי"}, type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, first: {type: "nD", era: 1, y: 2012}, emoji: "🎥", urls: {"en": "https://www.daysoftheyear.com/days/global-media-and-information-literacy-week/"}},
 
         {inherits: "United Nations Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1948}},
         {titles: {"en": "Disarmament Week", "he": "שבוע הפירוק מנשק"}, type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 30}, first: {type: "nD", era: 1, y: 1978}, emoji: "☮", urls: {"en": "https://nationaldaycalendar.com/disarmament-week-week-of-october-24/"}},
