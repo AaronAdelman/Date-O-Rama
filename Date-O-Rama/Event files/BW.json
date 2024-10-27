@@ -29,5 +29,8 @@
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        
+        {inherits: "Public Holiday", type: "nD", start: {era: 1, y: 2024, mon: 10, d: 30, durationD: 2}, urls: {"en": "https://www.officeholidays.com/holidays/botswana/botswana-general-elections"}},
+
     ]
 }

@@ -254,8 +254,12 @@
         {type: "D", start: {mon: 10, d: 23}, titles: {"en": "National Slap Your Irritating Co-Worker Day"}, notes: {"en": "National Slap Your Annoying Co-Worker Day\nNational Slap Your Co-Worker Day\nAn observance for fools who are just asking to have to spend a night (or longer) in jail."}, urls: {"en": "https://www.checkiday.com/22157a7c4b5732ca3a7bcd1afed21ea6/national-slap-your-irritating-co-worker-day"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 10, d: 23}, titles: {"en": "National TV Talk Show Host Day", "he": "יום תכניות האירוח בטלויזיה הלאומי"}, notes: {"en": "T.V. Talk Show Host Day", "he": "יום תכניות האירוח בטלויזיה"}, urls: {"en": "https://www.daysoftheyear.com/days/tv-talk-show-host-day/"}},
         {type: "D", start: {mon: 10, d: 24, thruD: 30, wkd: [6]}, titles: {"en": "National Pharmacy Buyer Day"}, urls: {"en": "https://nationaltoday.com/national-pharmacy-buyer-day/"}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "40-Hour Work Week Day"}, notes: {"en": "40-Hour Workweek Day"}, urls: {"en": "https://www.checkiday.com/617ca48a748651babbb66fc3e2d92c41/40-hour-work-week-day"}, first: {era: 1, y: 2010}, emoji: "⏰"},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "Black Thursday"}, urls: {"en": "https://www.checkiday.com/7524da2246d50397ca8f20c66de36278/black-thursday"}, first: {era: 1, y: 1929}},
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Bologna Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bologna-day/"}},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Crazy Day"}, urls: {"en": "https://www.checkiday.com/10614a5f8108b7e23f10b545f5fb333c/national-crazy-day"}},
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Food Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-food-day/"}, first: {era: 1, y: 2011}, emoji: "🍈🍇🍅"},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Good & Plenty Day"}, urls: {"en": "https://www.checkiday.com/5a1283e9527e6ed0b4a3572038dcbd06/national-good-plenty-day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Jamaican Jerk Day"}, notes: {"en": "Jamaican Jerk Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-jamaican-jerk-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/national-senior-uti-awareness-day/"}, titles: {"en": "National Senior UTI Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "National Cartoonists Against Crime Day"}, urls: {"en": "https://www.checkiday.com/b88917e3648feb6ba7510f8e929a35a4/national-cartoonists-against-crime-day"}, first: {era: 1, y: 1991}},
@@ -269,8 +273,9 @@
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Mule Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mule-day/"}, first: {era: 1, y: 1930}, notes: {"en": "Breeders Day"}, emoji: "🫏"},
         {type: "D", start: {mon: 10, d: 27}, titles: {"en": "National American Beer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-american-beer-day/"}, emoji: "🍺"},
         {type: "D", start: {mon: 10, d: 27}, titles: {"en": "National Henry C. Ramos Day"}, urls: {"en": "https://nationaltoday.com/national-henry-c-ramos-day/"}},
-        {type: "D", start: {mon: 10, d: 27}, titles: {"en": "​National Mentoring Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mentoring-day/"}, first: {era: 1, y: 2014}},
+        {type: "D", start: {mon: 10, d: 27}, inherits: "National Potato Day", urls: {"en": "https://www.checkiday.com/0f0bb1e71b91734fbfb5550becda1690/national-potato-day"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 10, d: 27}, titles: {"en": "​Parmigiano Reggiano® Day"}, notes: {"en": "​National Parmigiano Reggiano Day"}, urls: {"en": "https://parmigianoreggiano.us/parmigiano-reggiano-day/"}, first: {era: 1, y: 2012}, emoji: "🧀"},
+        {type: "D", start: {mon: 10, d: 27}, titles: {"en": "Sylvia Plath Day"}, urls: {"en": "https://www.checkiday.com/d090505a8defaac0b249cf08e82eee1b/sylvia-plath-day"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 10, d: 28}, titles: {"en": "National Chocolate Day", "he": "יום השוקולד הלאומי"}, urls: {"en": "https://nationaltoday.com/national-chocolate-day/"}, emoji: "🍫"},
         {type: "D", start: {mon: 10, d: 29}, titles: {"en": "National Cat Day"}, urls: {"en": "https://nationaltoday.com/national-cat-day/"}, first: {era: 1, y: 2005}, emoji: "🐈"},
         {type: "D", start: {mon: 10, d: 29}, titles: {"en": "National Hermit Day"}, urls: {"en": "https://nationaltoday.com/national-hermit-day/"}, first: {era: 1, y: 2001}},
@@ -1708,7 +1713,7 @@
         {type: "D", start: {mon: 8, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/pinot-noir-day/"}, titles: {"en": "Pinot Noir Day", "he": "יום הפינו נואר הלאומי"}, emoji: "🍷", notes: {"en": "National Pinot Noir Day"}},
         {type: "D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-patient-advocacy-day/"}, titles: {"en": "National Patient Advocacy Day"}, first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 8, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/national-soft-ice-cream-day/"}, titles: {"en": "National Soft Ice Cream Day"}, emoji: "🍦"},
-        {type: "D", start: {mon: 8, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/potato-day/"}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
+        {type: "D", start: {mon: 8, d: 19}, inherits: "National Potato Day", urls: {"en": "https://www.daysoftheyear.com/days/potato-day/"}},
         {type: "D", start: {mon: 8, d: 2}, titles: {"en": "National Coloring Book Day", "he": "יום ספר הצביעה הלאומי"}, emoji: "✍️", urls: {"en": "https://www.coloringbookday.com/"}},
         {type: "D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/take-a-penny-leave-a-penny-day/"}, titles: {"en": "Take a Penny/Leave a Penny Day", "he": "יום ״קח פני/עזוב פני״"}, emoji: "🪙"},
         {type: "D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-lemonade-day/"}, inherits: "National Lemonade Day"},
@@ -2065,7 +2070,6 @@
         {type: "M", start: {mon: 10}, titles: {"en": "National Critical Illness Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/critical-illness-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Dental Hygiene Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-dental-hygiene-month/"}, inherits: "*MedAwareness*", emoji: "🦷🪥", first: {era: 1, y: 2009}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Depression Education and Awareness Month"}, urls: {"en": "https://nationaltoday.com/national-depression-education-and-awareness-month/"}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 10}, titles: {"en": "​National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Ergonomics Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ergonomics-month/"}, first: {era: 1, y: 2003}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Fire Prevention Month"}, urls: {"en": "https://www.daysoftheyear.com/days/fire-prevention-month/"}, first: {era: 1, y: 1900}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Learning and Development Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-learning-and-development-month/"}, first: {era: 1, y: 2016}},
@@ -2516,6 +2520,10 @@
             {type: "D", start: {mon: 10, wkd: [4], nth: 2}, inherits: "PACER Unity Day", first: {era: 1, y: 2011}, last: {era: 1, y: 2013}},
             {type: "D", start: {mon: 10, wkd: [4], d: 19, thruD: 25}, inherits: "PACER Unity Day", first: {era: 1, y: 2014}},
         ]},
+        
+        {type: "M", start: {mon: 10}, titles: {"en": "​National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 10, wkd: [5], d: 19, thruD: 25}, titles: {"en": "Wear Purple for Domestic Violence Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://www.checkiday.com/a77279e2d20fd22c809fad76d558ea43/wear-purple-for-domestic-violence-awareness-day"}, notes: {"en": "Purple Thursday"}},
+        ]},
 
     ],
     templates: [
@@ -2540,5 +2548,6 @@
         {template: "National Boss’ Day", type: "D", start: {mon: 10, d: 16}, titles: {"en": "National Boss’ Day", "he": "יום הבוס הלאומי"}, notes: {"en": "National Boss’s Day\nBoss’s Day\nNational Boss Day\nBosses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/boss-day/"}},
         {template: "Digital Parenting Week", type: "nD", start: {era: 1, y: 2020, mon: 10, d: 26, durationD: 5}, titles: {"en": "Digital Parenting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/digital-parenting-week/"}},
         {template: "PACER Unity Day", type: "D", start: {mon: 10, wkd: [4], nth: 2}, inherits: "Unity Day", urls: {"en": "https://www.pacer.org/bullying/nbpm/unity-day.asp"}},
+        {template: "National Potato Day", type: "D", start: {mon: 8, d: 19}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
     ]
 }
