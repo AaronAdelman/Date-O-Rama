@@ -17,7 +17,7 @@
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
         {inherits: "Midsummer Eve", type: "D", start: {mon: 6, d: 19, thruD: 25, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/finland/finland-midsummer-day"}},
         {inherits: "Midsummer Day", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/finland/finland-midsummer-day"}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
         {inherits: "Father’s Day", type: "D", start: {mon: 11, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/finland/fathers-day"}},
         {inherits: "Independence Day", type: "D", start: {mon: 12, d: 6}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},

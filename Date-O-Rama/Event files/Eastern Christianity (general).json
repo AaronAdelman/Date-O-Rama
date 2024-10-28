@@ -42,7 +42,7 @@
         {inherits: "Ascension Day", type: "D", start: {Easter:  "Easter", offsetD: 39}, urls: {"en": "https://nationaltoday.com/orthodox-ascension-day/"}},
         {titles: {"en": "The Fathers of the First Ecumenical Council"}, type: "D", start: {Easter:  "Easter", offsetD: 42}},
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
-        {inherits: "All Saints’ Day", type: "D", start: {Easter:  "Easter", offsetD: 56}},
+        {inherits: "All Saints Day", type: "D", start: {Easter:  "Easter", offsetD: 56}},
         
         {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
         {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},

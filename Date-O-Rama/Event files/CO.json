@@ -30,7 +30,7 @@
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {titles: {"en": "Assumption Day (in lieu)"}, type: "D", start: {mon: 8, d: 15, thruD: 21, wkd: [2]}},
         {type: "D", start: {mon: 10, wkd: [2], d: 11, thruD: 17}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/day-of-the-races/"}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {titles: {"en": "All Saints’ Day Holiday"}, type: "D", start: {mon: 11, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
         {type: "D", start: {mon: 11, wkd: [2], d: 11, thruD: 17}, titles: {"en": "Independence of Cartagena", "es": "Independencia de Cartagena"}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},

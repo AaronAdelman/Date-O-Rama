@@ -20,7 +20,7 @@
 
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {type: "D", start: {mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/luxembourg/fathers-day"}, inherits: "Father’s Day"},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},

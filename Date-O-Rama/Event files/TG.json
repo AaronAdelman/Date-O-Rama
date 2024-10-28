@@ -16,7 +16,7 @@
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-togo/"}},
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         
         {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 13}, first: {era: 1, y: 1963}},

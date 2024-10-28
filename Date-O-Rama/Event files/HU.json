@@ -19,7 +19,7 @@
         {inherits: "Feast of St. Stephen of Hungary", type: "D", start: {mon: 8, d: 19, wkd: [2]}, urls: {"en": "https://nationaltoday.com/st-stephens-day/"}, titles: {"en": "Feast of St. Stephen of Hungary (bridge day)"}},
         {inherits: "Feast of St. Stephen of Hungary", type: "D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/st-stephens-day/"}, notes: {"en": "State Foundation Day\nNational Day\nConstitution Day", "hu": "Az államalapítás ünnepe"}},
         {inherits: "Republic Day", notes: {"en": "1956 Revolution Memorial Day"}, type: "D", start: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/republic-day-hungary/"}, first: {era: 1, y: 1956}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inherits: "Boxing Day"},
         

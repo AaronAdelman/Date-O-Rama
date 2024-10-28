@@ -72,5 +72,6 @@
         {type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, emoji: "🍰"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Pão Francês Day"}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 7, d: 26}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Saci Day", first: {era: 1, y: 2004}},
     ]
 }

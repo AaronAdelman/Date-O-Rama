@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 10, d: 31, wkd: [5, 6, 7, 1, 2]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 10, d: 27, wkd: [6]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 11, d: 2, wkd: [6]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/feast-of-the-immaculate-conception-chile/"}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
 

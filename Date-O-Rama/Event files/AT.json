@@ -19,7 +19,7 @@
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {inherits: "St. Rupert’s Day", type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/austria/salzburg/saint-rupert"}},
         {inherits: "National Day", type: "D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/austrian-national-day/"}, first: {era: 1, y: 1955}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "St. Leopold’s Day", type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/austria/vienna/saint-leopold"}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},

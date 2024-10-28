@@ -33,7 +33,7 @@
         {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "D", start: {equinoxOrSolstice: "Mar"}},
         {template: "Lughnasadh", titles: {"en": "Lughnasadh", "he": "לונאסה"}, type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lughnasadh/"}},
         {template: "Mabon", titles: {"en": "Mabon", "he": "מאבון"}, type: "D", start: {equinoxOrSolstice: "Sep"}, urls: {"en": "https://nationaltoday.com/mabon-day/"}},
-        {template: "Samhain", titles: {"en": "Samhain", "he": "סמהיין"}, type: "D", start: {mon: 11, d: 1}},
+        {template: "Samhain", titles: {"en": "Samhain", "he": "סמהיין"}, type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/samhain/"}},
         {template: "Yule", titles: {"en": "Yule", "he": "יוּל"}, type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://nationaltoday.com/yule/"}},
     ]
 }

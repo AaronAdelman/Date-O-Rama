@@ -31,7 +31,7 @@
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {type: "D", start: {mon: 9, d: 11, thruD: 17, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/virgin-of-coromoto"}, titles: {"en": "Virgin of Coromoto", "es": "Dia de la Virgen de Coromoto"}, notes: {"es": "Aparicion del Virgen del Coromoto"}},
         {type: "D", start: {mon: 10, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/day-of-respect-for-cultural-diversity"}, titles: {"en": "Indigenous Resistance Day", "es": "Día de la Resistencia Indígena"}, first: {era: 1, y: 2002}},
-        {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/all-saints-day"}, inherits: "All Saints’ Day"},
+        {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/all-saints-day"}, inherits: "All Saints Day"},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},

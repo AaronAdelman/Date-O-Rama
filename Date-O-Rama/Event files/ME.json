@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-montenegro/"}, inherits: "Statehood Day", first: {era: 1, y: 1878}, notes: {"en": "Sovereignty Day"}},
         {type: "D", start: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, urls: {"en": "https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"}, inherits: "Statehood Day Holiday", notes: {"en": "Sovereignty Day Holiday"}},
         {type: "D", start: {mon: 7, d: 15, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"}, inherits: "Statehood Day Holiday", notes: {"en": "Sovereignty Day Holiday"}},
-        {inherits: "All Saints’ Day", type: "D", start: {mon: 11, d: 1}},
+        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {type: "nD", start: {mon: 11, d: 13}, end: {mon: 11, d: 14}, titles: {"en": "Njegos’s Day", "cnr": "Njegošev dan"}},
 
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},

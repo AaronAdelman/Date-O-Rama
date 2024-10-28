@@ -60,7 +60,6 @@
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 10, d: 12}, inherits: "World Arthritis Day"},
         {type: "D", start: {mon: 10, d: 28}, titles: {"en": "Rā Maumahara (New Zealand Wars Remembrance Day)"}},
-        {type: "D", start: {mon: 10, d: 29}, titles: {"en": "World Stroke Day"}},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "eDay"}, urls: {"en": "http://www.eday.org.nz/"}, emoji: "♻️🖥️", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 8}, inherits: "International Lesbian Day", first: {era: 1, y: 1990}},
