@@ -69,7 +69,7 @@
         {type: "D", start: {era: 1, y: 2018, mon: 12, d: 1}, inherits: "Change of Federal Government"},
         {type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, inherits: "Change of Federal Government"},
         {type: "D", start: {mon: 9, d: 29}, titles: {"en": "National Corn Day"}, notes: {"en": "National Maize Day"}, urls: {"en": "https://www.checkiday.com/55df041d94e4df8d9713960660ed98f9/national-corn-day-mexico"}, emoji: "🌽", first: {era: 1, y: 2019}},
-
+        {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 2}, titles: {"en": "Day of the Dead", "es": "Día de Muertos", "he": "יום המתים", "fr": "Jour des Morts"}, notes: {"es": "Día de los Muertos"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-dead/"}, emoji: "💀"},
     ],
     templates: [
         {template: "Change of Federal Government", type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en": "Change of Federal Government", "es": "Transmisión del Poder Ejecutivo Federal"}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
