@@ -34,7 +34,7 @@
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
         {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
         {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
-        {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
+        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
         {inherits: "Holocaust Memorial Day", type: "D", start: {mon: 1, d: 27}, first: {era: 1, y: 2006}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {inherits: "Constitution Day", type: "D", start: {mon: 5, d: 23}},

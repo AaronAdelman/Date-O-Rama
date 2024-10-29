@@ -41,6 +41,7 @@
         {inherits: "United Nations Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "Finnish Swedish Heritage Day", "fi": "ruotsalaisuuden päivä", "sv": "svenska dagen"}, urls: {"en": "https://en.wikipedia.org/wiki/Finnish_Swedish_Heritage_Day"}},
         {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
+        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "Kekri"}, urls: {"en": "https://www.daysoftheyear.com/days/kekri/"}},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "Birthday of Finnish composer Jean Sibelius", "fi": "Jean Sibeliuksen päivä"}, inherits: "*BDay*"},
         
         {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}, titles: {"en": "Day of Children’s Rights"}},

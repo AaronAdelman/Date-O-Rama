@@ -109,7 +109,7 @@
         {type: "D", start: {mon: 9, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "Feast of Our Lady of Graces", "mt": "Il-Madonna tal-Grazzja"}},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 
-        {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
+        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
         {inherits: "Feast of St. Martin of Tours", type: "D", start: {mon: 11, d: 11}},
         {inherits: "Feast of St. Cecilia", type: "D", start: {mon: 11, d: 22}},
         {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},

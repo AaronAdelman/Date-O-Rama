@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 10, d: 12, wkd: [7, 1, 2]}, notes: {"en": "Day of Cultural Diversity"}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, first: {era: 1, y: 1828}},
         {type: "D", start: {mon: 10, d: 15, thruD: 16, wkd: [2]}, notes: {"en": "Day of Cultural Diversity"}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, first: {era: 1, y: 1828}},
         {type: "D", start: {mon: 10, d: 10, thruD: 11, wkd: [2]}, notes: {"en": "Day of Cultural Diversity"}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, first: {era: 1, y: 1828}},
-        {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
+        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
         {type: "D", start: {mon: 12, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/uruguay/christmas-day"}, titles: {"en": "Day of the Family", "es": "Día de la Familia"}},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 2}},

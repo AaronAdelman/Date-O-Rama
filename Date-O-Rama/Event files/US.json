@@ -195,7 +195,7 @@
         {type: "D", start: {mon: 11, d: 9}, titles: {"en": "World Freedom Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
         {type: "D", start: {mon: 11, wkd: [3], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/entrepreneurs-day/"}, titles: {"en": "Entrepreneurs’ Day"}, notes: {"en": "National Entrepreneur’s Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "National Day of Mourning", first: {era: 1, y: 1970}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-mourning/"}, notes: {"en": "Unthanksgiving Day"}},
-        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, titles: {"en": "National Bison Day"}, first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "National Bison Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 12, d: 15}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, titles: {"en": "Bill of Rights Day"}, first: {era: 1, y: 1952}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},

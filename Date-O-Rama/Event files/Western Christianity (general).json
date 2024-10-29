@@ -210,7 +210,7 @@
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
-        {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
+        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
 
         {titles: {"en": "Feast of St. Martin de Porres"}, type: "D", start: {mon: 11, d: 3}},
         {titles: {"en": "Feast of St. Charles Borromeo"}, type: "D", start: {mon: 11, d: 4}},

@@ -129,7 +129,7 @@
         {type: "D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
-        {inherits: "All Souls’ Day", type: "D", start: {mon: 11, d: 2}},
+        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
         {inherits: "Feast of the Holy Family", type: "D", start: {mon: 12, d: 30, wkd: [6]}},
         {inherits: "Feast of the Holy Family", type: "D", start: {mon: 12, d: 26, thruD: 31, wkd: [1]}},
 
