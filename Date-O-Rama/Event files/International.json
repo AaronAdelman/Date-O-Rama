@@ -319,6 +319,7 @@
         {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "SUDEP Action Day"}, urls: {"en": "https://sudep.org/events/sudep-action-day/"}, first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "Weet-Bix Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weet-bix-day/"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 10, wkd: [4], nth: 4}, titles: {"en": "Lung Health Day"}, urls: {"en": "https://nationaltoday.com/lung-health-day/"}, first: {era: 1, y: 2003}, emoji: "🫁", inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 10, wkd: [5], nth: -1}, titles: {"en": "International Carignan Day"}, notes: {"en": "Carignan Day\nNational Carignan Day"}, first: {era: 1, y: 2020}, emoji: "🍷", urls: {"en": "https://www.checkiday.com/388c5e3657aa05edd3b82c5a9d419447/international-carignan-day"}},
         {type: "D", start: {mon: 10, wkd: [5], nth: 2}, titles: {"en": "World Sight Day"}, first: {era: 1, y: 1984}, emoji: "👁", urls: {"en": "https://www.daysoftheyear.com/days/sight-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, inherits: "Get to Know Your Customers Day"},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "Conflict Resolution Day"}, urls: {"en": "https://www.daysoftheyear.com/days/conflict-resolution-day/"}, first: {era: 1, y: 2005}, emoji: "♟️"},
