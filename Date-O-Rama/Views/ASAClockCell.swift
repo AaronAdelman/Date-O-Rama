@@ -174,11 +174,12 @@ struct ASAClockCellBody:  View {
                         ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedClock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: processedClock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
                     }
                     
-                    if shouldShowMiniClock() {
-                        Spacer()
-                        
-                        ASAMiniClockView(processedClock:  processedClock, numberFormatter: numberFormatter())
-                    }
+                    // TODO:  The miniclocks (except for the progress views) crash the app on iPadOS in full-screen, so I disabled them.
+//                    if shouldShowMiniClock() {
+//                        Spacer()
+//                        
+//                        ASAMiniClockView(processedClock:  processedClock, numberFormatter: numberFormatter())
+//                    }
                 }
                 
                 Spacer()
