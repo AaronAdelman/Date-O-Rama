@@ -2219,6 +2219,8 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
         
+        {type: "D", start: {era: 1, y: 2022, mon: 11, d: 19, recurrenceD: 100}, titles: {"en": "Metric Mitochondria Day"}, notes: {"en": "Meant to celebrate our obligate symbiotes, the mitochondria, and the metric system.  Invented 2010-01-24.  First attested 2022-11-19."}},
+        
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
             {inherits: "May Day", type: "D", start: {mon: 5, d: 1}},

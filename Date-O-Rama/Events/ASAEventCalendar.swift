@@ -1010,8 +1010,46 @@ class ASAEventCalendar {
         return true
     } // func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
+    /// I asked ChatGPT: “Hello. I am trying to write code to do scheduling of cyclical events. Please write a function in swift that takes a modified Julian day number, the modified Julian Day number of the first day of the first cycle, and the number of days into cycle and then it returns which day in the cycle it is.”  This is what it returned after asking for some further modification for returning the cycle number as well.
+    func dayAndCycle(mjd: Int, cycleStartMJD: Int, cycleLength: Int) -> (dayInCycle: Int, cycleNumber: Int) {
+        // Calculate the number of days since the cycle started
+        let daysSinceCycleStart = mjd - cycleStartMJD
+        
+        // Calculate which day in the cycle it is
+        let dayInCycle = (daysSinceCycleStart % cycleLength + cycleLength) % cycleLength
+        
+        // Calculate which cycle it is
+        let cycleNumber = (daysSinceCycleStart / cycleLength) + 1
+        
+        // Return 1-based day in the cycle and the cycle number
+        return (dayInCycle + 1, cycleNumber)
+    } // func dayAndCycle(mjd: Int, cycleStartMJD: Int, cycleLength: Int) -> (dayInCycle: Int, cycleNumber: Int)
+    
     func matchOneDayOrLess(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let NO_MATCH: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
+        
+        let recurrenceDays = dateSpecification.recurrenceDays
+        if recurrenceDays != nil {
+            let locationData = components.locationData
+            let timeZone: TimeZone = locationData.timeZone
+            
+            let era   = dateSpecification.era
+            let year  = dateSpecification.year
+            let month = dateSpecification.month
+            let day   =  dateSpecification.day
+            guard let era, let year, let month, let day else { return NO_MATCH }
+            let firstDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: era, year: year, month: month, day: day)
+            let firstDate = firstDateComponents.date
+            let firstMJD = firstDate!.localModifiedJulianDay(timeZone: timeZone)
+            let dateMJD = date.localModifiedJulianDay(timeZone: timeZone)
+            let (dayInCycle, cycleNumber) = dayAndCycle(mjd: dateMJD, cycleStartMJD: firstMJD, cycleLength: recurrenceDays!)
+            if dayInCycle != 1 {
+                return NO_MATCH
+            } else {
+                return (true, startOfDay, startOfNextDay)
+            }
+        }
+        
         var start = startOfDay
         var end = startOfNextDay
         

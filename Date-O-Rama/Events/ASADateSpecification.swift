@@ -84,6 +84,9 @@ struct ASADateSpecification:  Codable {
     // For Moon phase events
     var MoonPhase: ASAMoonPhaseType?
     
+    // For repeating events
+    var recurrenceDays: Int?
+    
     enum CodingKeys: String, CodingKey {
         case pointEventType      = "ptType"
         case era
@@ -121,6 +124,7 @@ struct ASADateSpecification:  Codable {
         case fullWeek            = "fullWk"
         case firstDayOfWeek      = "firstDOfWk"
         case durationDays        = "durationD"
+        case recurrenceDays      = "recurrenceD"
     } // enum CodingKeys
 } // struct ASADateSpecification
 
