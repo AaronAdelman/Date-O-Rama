@@ -166,7 +166,7 @@
         {type: "D", start: {mon: 10, d: 26}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Day of the Deployed"}, urls: {"en": "https://www.daysoftheyear.com/days/national-day-of-the-deployed/"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 27}, inherits: "Navy Day", first: {era: 1, y: 1922}, urls: {"en": "https://www.daysoftheyear.com/days/navy-day/"}},
-        {type: "D", start: {mon: 10, d: 28}, titles: {"en": "​National First Responders Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-first-responders-day/"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 10, d: 28}, titles: {"en": "​National First Responders Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-first-responders-day/"}, first: {era: 1, y: 2019}, notes: {"en": "Honoring the Nation’s First Responders Day"}},
         {type: "D", start: {mon: 10, d: 28}, titles: {"en": "​National Immigrants Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-immigrants-day/"}, first: {era: 1, y: 1987}, emoji: "🗽"},
         {type: "D", start: {mon: 10, d: 30}, titles: {"en": "Mine Rescue Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mine-rescue-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "National Coaches Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-coaches-day/"}, first: {era: 1, y: 1972}},

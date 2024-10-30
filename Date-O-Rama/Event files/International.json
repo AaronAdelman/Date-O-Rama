@@ -267,6 +267,8 @@
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "International Crumhorn Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-crumhorn-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "Look at the Leaves Day"}, urls: {"en": "https://www.checkiday.com/a2048c483680798a9f046e19ce123be1/look-at-the-leaves-day"}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "Mean Girls Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mean-girls-day/"}, first: {era: 1, y: 2004}, notes: {"en": "Mean Girls Appreciation Day"}},
+        {type: "D", start: {mon: 10, d: 30}, titles: {"en": "Buy a Doughnut Day"}, inherits: "National Doughnut Day", urls: {"en": "https://www.checkiday.com/9f71b748200a14467aa491025c1d7253/buy-a-doughnut-day"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 10, d: 30}, titles: {"en": "Sugar Addiction Awareness Day"}, urls: {"en": "https://www.checkiday.com/7fe6181655bf26216b4ecac64760c01c/sugar-addiction-awareness-day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 10, d: 30}, titles: {"en": "World Audio Drama Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/world-audio-drama-day-october-30"}, emoji: "🎙️"},
         {type: "D", start: {mon: 10, d: 31}, titles: {"en": "Girl Scout Founder’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/girl-scout-founders-day/"}},
         {type: "D", start: {mon: 10, d: 31}, titles: {"en": "World Savings Day"}, notes: {"en": "World Thrift Day"}, first: {era: 1, y: 1934}, emoji: "🪙", urls: {"en": "https://www.daysoftheyear.com/days/world-savings-day/"}},

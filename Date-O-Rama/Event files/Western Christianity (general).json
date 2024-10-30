@@ -205,7 +205,7 @@
         {titles: {"en": "Feast of St. John Paul II"}, type: "D", start: {mon: 10, d: 22}},
         {titles: {"en": "Feast of St. John of Capistrano"}, type: "D", start: {mon: 10, d: 23}},
         {titles: {"en": "Feast of St. Anthony Mary Claret"}, type: "D", start: {mon: 10, d: 24}},
-        {titles: {"en": "Feast of St. Simon and St. Jude"}, type: "D", start: {mon: 10, d: 28}},
+        {titles: {"en": "Feast of St. Simon and St. Jude"}, type: "D", start: {mon: 10, d: 28}, urls: {"en": "https://www.checkiday.com/ce61c4e0c1ee084dc238db7f89f73f0a/st-judes-feast-day"}},
         
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         
