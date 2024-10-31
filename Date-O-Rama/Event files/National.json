@@ -365,10 +365,9 @@
         {type: "D", start: {mon: 10, wkd: [7], nth: 4}, titles: {"en": "National One United Race Day"}, notes: {"en": "One Race for One Race"}, urls: {"en": "https://www.daysoftheyear.com/days/national-one-united-race-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 10, wkd: [7], nth: -1}, titles: {"en": "National Hug a Sheep Day"}, notes: {"en": "Hug a Sheep Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hug-a-sheep-day/"}, emoji: "🐑", first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Brush Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-brush-day/"}, emoji: "🪥", first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 11, d: 1}, titles: {"en": "​National Calzone Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-calzone-day/"}, first: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Cook For Your Pets Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-cook-for-your-pets-day/"}},
+        {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Cook For Your Pets Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-cook-for-your-pets-day/"}, emoji: "🐶🍲"},
+        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Fountain Pen Day"}, notes: {"en": "National Fountain Pen Day"}, urls: {"en": "https://www.daysoftheyear.com/days/fountain-pen-day/"}, first: {era: 1, y: 2012}, emoji: "✒️"},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Deep Fried Clams Day"}, urls: {"en": "https://www.daysoftheyear.com/days/french-fried-clam-day/"}, first: {era: 1, y: 2015}, notes: {"en": "National French Fried Clam Day"}},
-        {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖"},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Pâté Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pate-day/"}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Vinegar Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vinegar-day/"}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}},
@@ -492,7 +491,6 @@
         {type: "D", start: {mon: 11, wkd: [5], nth: 3}, urls: {"en": "https://nationalworkingdaughtersday.com/"}, titles: {"en": "National Working Daughters Day"}, first: {era: 1, y: 2022}, emoji: "👩"},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, urls: {"en": "https://nationaltoday.com/national-family-health-history-day/"}, titles: {"en": "National Family Health History Day"}},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, urls: {"en": "https://www.daysoftheyear.com/days/turkey-free-thanksgiving/"}, titles: {"en": "Turkey Free Thanksgiving"}, emoji: "🥦"},
-        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "National Jersey Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-jersey-day/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 11, wkd: [6], nth: 4}, urls: {"en": "https://www.daysoftheyear.com/days/flossing-day/"}, titles: {"en": "National Flossing Day"}, notes: {"en": "Flossing Day"}, first: {era: 1, y: 2000}, emoji: "🦷"},
         {type: "D", start: {mon: 12, d: 1}, inherits: "National Pie Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pie-day-december-1"}},
         {type: "D", start: {mon: 12, d: 1}, inherits: "Wear a Dress Day", first: {era: 1, y: 2010}},
@@ -2098,7 +2096,6 @@
         {type: "M", start: {mon: 11}, titles: {"en": "Gluten-Free Diet Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/gluten-free-diet-awareness-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 11}, titles: {"en": "National Adopt A Senior Pet Month"}, urls: {"en": "https://www.daysoftheyear.com/days/adopt-a-senior-pet-month/"}, emoji: "🐹🐶🐱"},
         {type: "M", start: {mon: 11}, titles: {"en": "National Family Caregivers Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-caregivers-month/"}},
-        {type: "M", start: {mon: 11}, titles: {"en": "National Family Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-month/"}, emoji: "📖", first: {era: 1, y: 1994}},
         {type: "M", start: {mon: 11}, titles: {"en": "National Fun with Fondue Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fun-with-fondue-month/"}, emoji: "🫕"},
         {type: "M", start: {mon: 11}, titles: {"en": "National Gratitude Month"}, urls: {"en": "https://nationaltoday.com/national-gratitude-month/"}, first: {era: 1, y: 2015}},
         {type: "M", start: {mon: 11}, titles: {"en": "National Healthy Skin Month®"}, urls: {"en": "https://www.aad.org/public/public-health/awareness-campaigns/national-healthy-skin-month"}, inherits: "*MedAwareness*", first: {era: 1, y: 1997}},
@@ -2527,8 +2524,7 @@
         
         {type: "M", start: {mon: 10}, titles: {"en": "​National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, wkd: [5], d: 19, thruD: 25}, titles: {"en": "Wear Purple for Domestic Violence Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://www.checkiday.com/a77279e2d20fd22c809fad76d558ea43/wear-purple-for-domestic-violence-awareness-day"}, notes: {"en": "Purple Thursday"}},
-        ]},
-
+        ]},       
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, titles: {"en": "Forefathers’ Day"}},

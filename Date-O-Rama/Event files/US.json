@@ -608,6 +608,11 @@
         {type: "W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.thinkingofyouweekusa.com/"}, inherits: "Thinking of You Week", first: {era: 1, y: 2018}},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/child-passenger-safety-awareness-week/"}, titles: {"en": "Child Passenger Safety Awareness Week"}, emoji: "👦👧", notes: {"en": "Child Passenger Safety Week\nCar Seat Safety Week"}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Chicken Fried Steak Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-fried-steak-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Texas Chicken Fried Steak Day"}},
+        
+        {type: "M", start: {mon: 11}, titles: {"en": "National Family Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-month/"}, emoji: "📖", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖"},
+        ]},
+
     ],
     templates: [
         {template: "Confederate Memorial Day", titles: {"en": "Confederate Memorial Day", "fr": "Fête du mémorial des confédérés"}, type: "D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},
