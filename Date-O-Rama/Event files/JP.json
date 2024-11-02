@@ -22,7 +22,8 @@
         {titles: {"en": "Respect for the Aged Day", "ja": "敬老の日"}, type: "D", start: {mon: 9, wkd: [2], nth: 3}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaltoday.com/respect-aged-day/"}, emoji: "👴🧓"},
         {type: "D", start: {equinoxOrSolstice: "Sep"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/autumnal-equinox-day"}, titles: {"en": "Autumnal Equinox Day", "ja": "秋分の日"}},
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, inherits: "Sports Day", first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
-        {type: "D", start: {mon: 11, d: 3}, titles: {"en": "Culture Day", "ja": "文化の日"}, urls: {"en": "https://www.daysoftheyear.com/days/japanese-culture-day/"}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 11, d: 3, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 11, d: 4, wkd: [2]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
         {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
@@ -36,6 +37,7 @@
         {type: "D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
     ],
     templates: [
+        {template: "Culture Day", type: "D", start: {mon: 11, d: 3}, titles: {"en": "Culture Day", "ja": "文化の日"}, urls: {"en": "https://www.daysoftheyear.com/days/japanese-culture-day/"}},
         {template: "Labor Thanksgiving Day", type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, notes: {"en": "Labor Appreciation Day"}, titles: {"en": "Labor Thanksgiving Day", "ja": "勤労感謝の日"}, first: {era: 1, y: 1948}, emoji: "㊘"},
         {template: "Mountain Day (in lieu)", titles: {"en": "Mountain Day (in lieu)", "he": "יום ההר (במקומו)"}, type: "D", start: {mon: 8, d: 12, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-day/"}, emoji: "🗻"},
     ]
