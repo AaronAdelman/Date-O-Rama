@@ -19,16 +19,17 @@ enum ASAEventSpecificationType:  String, Codable {
     case oneDay     = "D"
     case span       = "span"
     case point      = "pt"
+    case cycle      = "c"
 } // enum ASAEventSpecificationType
 
 extension ASAEventSpecificationType {
     // NOTE:  May need updating to support new date specification types!
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneWeek, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
+        case .oneDay, .oneWeek, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .cycle:
             return true
             
-        default:
+        case .span, .point:
             return false
         } // switch self
     } // var isAllDay

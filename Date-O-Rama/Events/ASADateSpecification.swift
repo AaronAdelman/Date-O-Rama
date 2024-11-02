@@ -262,6 +262,13 @@ extension ASADateSpecification {
                 let tempDate = (calendar.date(dateComponents: revisedDateComponents))!
                 return tempDate
             } // switch self.pointEventType
+            
+        case .cycle:
+            if isEndDate {
+                return calendar.startOfNextDay(date: rawDate!, locationData: revisedDateComponents.locationData )
+            } else {
+                return calendar.startOfDay(for: rawDate!, locationData: revisedDateComponents.locationData )
+            }
         } // switch type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 

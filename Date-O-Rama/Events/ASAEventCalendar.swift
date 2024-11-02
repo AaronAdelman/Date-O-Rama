@@ -925,6 +925,9 @@ class ASAEventCalendar {
 //                debugPrint("Foo")
 //            }
             return matchSpan(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification, calendar: calendar, date: date, type: type)
+        case .cycle:
+            // A cycle has an event for every day
+            return (true, startOfDay, startOfNextDay)
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -1042,7 +1045,7 @@ class ASAEventCalendar {
             let firstDate = firstDateComponents.date
             let firstMJD = firstDate!.localModifiedJulianDay(timeZone: timeZone)
             let dateMJD = date.localModifiedJulianDay(timeZone: timeZone)
-            let (dayInCycle, cycleNumber) = dayAndCycle(mjd: dateMJD, cycleStartMJD: firstMJD, cycleLength: recurrenceDays!)
+            let (dayInCycle, _) = dayAndCycle(mjd: dateMJD, cycleStartMJD: firstMJD, cycleLength: recurrenceDays!)
             if dayInCycle != 1 {
                 return NO_MATCH
             } else {
@@ -1202,6 +1205,11 @@ class ASAEventCalendar {
     } // func fileEmoji() -> String?
     
     fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEvent? {
+        let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
+        if !matchesRegionCode {
+            return nil
+        }
+        
         var appropriateCalendar:  ASACalendar = calendar
         if eventSpecification.calendarCode != nil {
             let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
@@ -1218,11 +1226,6 @@ class ASAEventCalendar {
                 
         let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, eventSpecification: eventSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, type: eventSpecification.type)
         if !matchesDateSpecifications {
-            return nil
-        }
-        
-        let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
-        if !matchesRegionCode {
             return nil
         }
         
@@ -1244,6 +1247,10 @@ class ASAEventCalendar {
         } else {
             let NO_TITLE = ""
             title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale) ?? NO_TITLE
+            
+            if eventSpecification.type == .cycle {
+                debugPrint("Foo")
+            }
         }
         let color = self.color
         let locationString: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale)
