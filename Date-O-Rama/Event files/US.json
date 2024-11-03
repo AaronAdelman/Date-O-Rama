@@ -80,7 +80,7 @@
         {inherits: "Constitution Day", notes: {"en": "Citizenship Day\nConstitution Day and Citizenship Day"}, type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/constitution-day/"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "World Vegetarian Day", first: {era: 1, y: 1977}},
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
-        {type: "D", start: {d: 2, thruD: 8, mon: 11, wkd: [3]}, titles: {"en": "Election Day", "he": "יום הבחירות", "ar": "يوم الانتخابات"}, urls: {"en": "https://nationaltoday.com/election-day/"}, emoji: "🗳️"},
+        {type: "D", start: {mon: 11, d: 2, thruD: 8, wkd: [3]}, titles: {"en": "Election Day", "he": "יום הבחירות", "ar": "يوم الانتخابات"}, urls: {"en": "https://www.daysoftheyear.com/days/election-day/"}, emoji: "🗳️"},
         {inherits: "Black Friday", type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, first: {era: 1, y: 1951}},
         {type: "D", start: {mon: 11, d: 26, thruMon: 12, thruD: 2, wkd: [2]}, titles: {"en": "Cyber Monday", "he": "סייבר מאנדיי"}, emoji: "🛒", urls: {"en": "https://www.daysoftheyear.com/days/cyber-monday/"}, first: {era: 1, y: 2005}},
         {titles: {"en": "National Pearl Harbor Remembrance Day", "he": "יום פרל הארבור"}, notes: {"en": "Pearl Harbor Remembrance Day\nPearl Harbor Day"}, type: "D", start: {mon: 12, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/pearl-harbor-remembrance-day/"}, first: {era: 1, y: 1994}},

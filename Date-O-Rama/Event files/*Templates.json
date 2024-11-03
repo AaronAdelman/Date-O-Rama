@@ -231,7 +231,7 @@
         {template: "Greenpeace Day", type: "D", start: {mon: 9, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/greenpeace-day/"}, titles: {"en": "Greenpeace Day"}, first: {era: 1, y: 2011}, emoji: "☮"},
         {template: "Groundhog Day", type: "D", start: {mon: 2, d: 2}, titles: {"en": "Groundhog Day", "he": "יום המרמיטה"}, urls: {"en": "https://www.daysoftheyear.com/days/groundhog-day/"}},
         {template: "Gustavus Adolphus Day", type: "D", start: {mon: 11, d: 6}, titles: {"en": "Gustavus Adolphus Day", "he": "יום גוסטב השני אדולף", "et": "Gustav Adolfi päev", "fi": "Kustaa Aadolfin päivä", "sv": "Gustav Adolfsdagen"}, urls: {"en": "https://en.wikipedia.org/wiki/Gustavus_Adolphus_Day"}, inherits: "*BDay*"},
-        {template: "Guy Fawkes Night", type: "D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/guy-fawkes-night/"}, titles: {"en": "Guy Fawkes Night", "he": "ליל גאי פוקס"}, notes: {"en": "Bonfire Night\nFireworks Night\nGunpowder Day", "he": "ליל המדורות\nליל הזיקוקים\nליל המזימה"}, emoji: "🔥"},
+        {template: "Guy Fawkes Night", type: "D", start: {mon: 11, d: 5}, titles: {"en": "Guy Fawkes Night", "he": "ליל גאי פוקס"}, urls: {"en": "https://www.daysoftheyear.com/days/guy-fawkes-night/"}, notes: {"en": "Bonfire Night\nFireworks Night\nGunpowder Day", "he": "ליל המדורות\nליל הזיקוקים\nליל המזימה"}, emoji: "🔥"},
         {template: "Halloween", titles: {"en": "Halloween", "he": "ליל כל הקדושים", "de": "Halloween", "fil": "Gabi ng Pangangaluwa", "fr": "Halloween", "nl": "Halloween"}, notes: {"en": "All Hallows’ Eve", "he": "האלווין", "da": "Allehelgensaften"}, type: "D", start: {mon: 10, d: 31}, emoji: "🎃", urls: {"en": "https://www.daysoftheyear.com/days/halloween/"}},
         {template: "Health Day", titles: {"en": "Health Day"}, type: "D", start: {mon: 4, d: 7}, emoji: "👨‍⚕️👩‍⚕️"},
         {template: "Heritage Day", type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Heritage Day", "fr": "Fête du Patrimoine"}},
@@ -621,5 +621,6 @@
         {template: "יום־שנה של רבן שמעון בן גמליאל הזקן", titles: {"he": "יום־שנה של רבן שמעון בן גמליאל הזקן", "en": "Yohrtsayt of Rabban Shim‘on ben Gamli’el hazZaqen"}, type: "D", start: {mon: 10, d: 25}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של רחל אימנו", titles: {"he": "יום־שנה של רחל אימנו", "en": "Raḥel Our Mother Memorial Day"}, type: "D", start: {mon: 2, d: 11}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של שמואל הנביא", titles: {"he": "יום־שנה של שמואל הנביא", "en": "Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
+        {template: "Dog Film Festival", type: "D", start: {era: 1, y: 2022, mon: 11, d: 6}, titles: {"en": "Dog Film Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-film-festival/"}, emoji: "🐶🍿"},
     ]
 }
