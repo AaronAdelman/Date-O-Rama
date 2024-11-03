@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 9, wkd: [2], nth: 4}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/canterbury/south-canterbury-day"}, titles: {"en": "South Canterbury Day"}},
         {type: "D", start: {mon: 10, d: 19, thruD: 25, wkd: [6]}, urls: {"en": "https://nationaltoday.com/hawkes-bay-anniversary-day/"}, titles: {"en": "Hawke’s Bay Anniversary Day"}},
         {type: "D", start: {mon: 10, wkd: [2], nth: 4}, inherits: "Labour Day", urls: {"en": "https://nationaltoday.com/new-zealand-labour-day/"}, first: {era: 1, y: 1890}},
-        {type: "D", start: {mon: 10, d: 29, thruMon: 11, thruD: 4, wkd: [2]}, urls: {"en": "https://nationaltoday.com/marlborough-anniversary-day/"}, titles: {"en": "Marlborough Anniversary Day"}, first: {era: 1, y: 1859}},
+        {type: "D", start: {mon: 10, d: 29, thruMon: 11, thruD: 4, wkd: [2]}, titles: {"en": "Marlborough Anniversary Day"}, urls: {"en": "https://www.daysoftheyear.com/days/marlborough-anniversary-day/"}, first: {era: 1, y: 1859}},
         {type: "D", start: {mon: 11, d: 11, thruD: 17, wkd: [6]}, urls: {"en": "https://nationaltoday.com/christchurch-show-day/"}, titles: {"en": "Christchurch Show Day"}, first: {era: 1, y: 1862}},
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [2]}, urls: {"en": "https://nationaltoday.com/chatham-islands-anniversary-day/"}, titles: {"en": "Chatham Islands Anniversary Day"}},
         {type: "D", start: {mon: 11, d: 28, thruMon: 12, thruD: 4, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/west-coast/westland-anniversary-day"}, titles: {"en": "Westland Anniversary Day"}},

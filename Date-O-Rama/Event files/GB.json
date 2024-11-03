@@ -210,6 +210,8 @@
         {type: "nD", start: {mon: 10, d: 5, thruD: 11, wkd: [3], durationD: 6}, titles: {"en": "Iris Film Festival"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, titles: {"en": "Baby Loss Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/baby-loss-awareness-week/"}, first: {era: 1, y: 2003}, emoji: "👶", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "National Medical Cannabis Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-medical-cannabis-week/"}, inherits: "*MedAwareness*"},
+        {type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, inherits: "Great British Game Week", first: {era: 1, y: 2022}},
+        {type: "W", start: {mon: 11, fullWk: -1, firstDOfWk: 2}, inherits: "Great British Game Week", first: {era: 1, y: 2013}, last: {era: 1, y: 2021}},
         {type: "nD", start: {mon: 12, d: 25}, end: {mon: 1, d: 6}, titles: {"en": "Mari Lwyd"}, urls: {"en": "https://nationaltoday.com/mari-lwyd/"}, emoji: "🐎"},
         {type: "nD", start: {mon: 2, d: 21, thruD: 27, wkd: [2], yLengths: [365]}, end: {mon: 2, d: 27, thruMon: 3, thruD: 5, wkd: [1]}, inherits: "Eating Disorders Awareness Week", first: {era: 1, y: 1984}, urls: {"en": "https://edaw.beateatingdisorders.org.uk/"}},
         {type: "nD", start: {mon: 2, d: 21, thruD: 27, wkd: [2], yLengths: [366]}, end: {mon: 2, d: 27, thruMon: 3, thruD: 4, wkd: [1]}, inherits: "Eating Disorders Awareness Week", first: {era: 1, y: 1984}, urls: {"en": "https://edaw.beateatingdisorders.org.uk/"}},
@@ -300,5 +302,6 @@
         {template: "Thank You Day", type: "D", start: {mon: 6, d: 5}, titles: {"en": "Thank You Day"}, first: {era: 1, y: 2021}},
         {template: "Trooping the Colour", type: "D", start: {mon: 6, wkd: [7], d: 11, thruD: 17}, titles: {"en": "Trooping the Colour"}, notes: {"en": "King’s Birthday Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/trooping-the-colour/"}, emoji: "💂"},
         {template: "Twins, Triplets and More Week", type: "W", start: {mon: 7, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Twins, Triplets and More Week"}, urls: {"en": "https://twinstrust.org/who-we-are/twins-triplets-and-more-week.html"}, emoji: "👶👶"},
+        {template: "Great British Game Week", type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Great British Game Week"}, urls: {"en": "https://www.daysoftheyear.com/days/great-british-game-week/"}},
     ]
 }
