@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "Japan Dolls Festival"}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, first: {era: 1, y: 1868}, emoji: "🎎"},
         {type: "D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, titles: {"en": "Pocky Day"}},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Pocky & Pretz Day", "ja": "ポッキー＆プリッツの日"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en": "Pocky Day"}},
         {type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
     ],

@@ -461,7 +461,7 @@
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Easy Bake Oven Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-easy-bake-oven-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Skeptics Day", "he": "יום הסקפטיים הלאומי"}, emoji: "🫤", urls: {"en": "https://www.checkiday.com/13da9434d2d1a83a4039a55286dae657/national-skeptics-day"}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Waiting for the Barbarians Day"}, urls: {"en": "https://nationaltoday.com/national-waiting-for-the-barbarians-day/"}},
-        {type: "D", start: {mon: 11, d: 5}, inherits: "National Doughnut Day", urls: {"en": "https://nationaldaycalendar.com/national-donut-day-november-5/"}},
+        {type: "D", start: {mon: 11, d: 5}, inherits: "National Doughnut Day", urls: {"en": "https://nationaldaycalendar.com/national-donut-day-november-5/"}, notes: {"en": "National Doughnut Appreciation Day"}},
         {type: "D", start: {mon: 11, d: 5}, titles: {"en": "American Football Day"}, urls: {"en": "https://www.daysoftheyear.com/days/american-football-day/"}, emoji: "🏈"},
         {type: "D", start: {mon: 11, d: 5}, titles: {"en": "National Chinese Takeout Day"}, notes: {"en": "National Chinese Take Out Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chinese-takeout-day/"}, emoji: "🥡"},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Basketball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-basketball-day/"}, emoji: "🏀"},

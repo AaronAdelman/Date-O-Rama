@@ -428,6 +428,8 @@
         {type: "D", start: {mon: 11, d: 30}, titles: {"en": "International ESG Day"}, urls: {"en": "https://www.the-esg-institute.org/international-esg-day"}, notes: {"en": "International Environmental, Social and Governance Day"}, emoji: "🟢"},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "King Tut Day"}, urls: {"en": "https://www.checkiday.com/125d7ce2b345bcaf6c2a4bf439685b83/king-tut-day"}, first: {era: 1, y: 1922}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "Use Your Common Sense Day"}, urls: {"en": "https://www.daysoftheyear.com/days/use-your-common-sense-day/"}},
+        {type: "D", start: {mon: 11, d: 5}, titles: {"en": "Bank Transfer Day"}, urls: {"en": "https://www.checkiday.com/0526994817084a5e65bc61b88a76afda/bank-transfer-day"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 11, d: 5}, titles: {"en": "Commercial TV Broadcast Day"}, urls: {"en": "https://www.checkiday.com/ef264be8d2b5e066a4ee77aad63f692d/commercial-tv-broadcast-day"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "Marooned Without a Compass Day"}, urls: {"en": "https://www.daysoftheyear.com/days/marooned-without-a-compass-day/"}, emoji: "🧭"},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "International Day of Medical Physics"}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-medical-physics-november-7/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "Notary Public Day"}, urls: {"en": "https://www.daysoftheyear.com/days/notary-public-day/"}, first: {era: 1, y: 1975}},
