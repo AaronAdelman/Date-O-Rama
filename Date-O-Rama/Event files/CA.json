@@ -100,12 +100,15 @@
         {type: "D", start: {mon: 9, d: 15}, inherits: "Greenpeace Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 9, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/national-no-excuses-day/"}, titles: {"en": "National No Excuses Day"}, first: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 10, d: 22}, end: {mon: 10, d: 28}, inherits: "Respiratory Care Week"},
-        {type: "D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-ladies-learning-code-day/"}, titles: {"en": "National Ladies Learning Code Day"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}},
+        {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Ladies Learning Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ladies-learning-code-day/"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {era: 1, y: 2022, mon: 11, d: 6}, inherits: "Dog Film Festival"},
+        {type: "D", start: {era: 1, y: 2023, mon: 10, d: 23}, inherits: "Dog Film Festival"},
+        {type: "D", start: {mon: 11, d: 6}, inherits: "Dog Film Festival", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 2012}},
-        {type: "D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/housing-day/"}, titles: {"en": "Housing Day"}, first: {era: 1, y: 1998}, emoji: "🏠"},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Housing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/housing-day/"}, first: {era: 1, y: 1998}, emoji: "🏠"},
         {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}, titles: {"en": "National Child Day", "he": "יום הילד הלאומי"}, urls: {"en": "https://www.nationalchildday.ca/"}},
-        {type: "D", start: {mon: 12, d: 17}, urls: {"en": "https://nationaltoday.com/national-maple-syrup-day-canada/"}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
-        {type: "D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}, titles: {"en": "Weedless Wednesday"}},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day", urls: {"en": "https://nationaltoday.com/national-maple-syrup-day-canada/"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, titles: {"en": "Weedless Wednesday"}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}},
         {type: "D", start: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2016}},
         {type: "M", start: {mon: 5}, titles: {"en": "South Asian Heritage Month"}},
         {type: "M", start: {mon: 6}, inherits: "ALS Awareness Month"},
@@ -145,6 +148,5 @@
         {template: "Royal St. John’s Regatta", type: "D", start: {mon: 8, wkd: [4], nth: 1}, titles: {"en": "Royal St. John’s Regatta"}, notes: {"en": "Regatta Day"}, urls: {"en": "https://stjohnsregatta.ca/"}, emoji: "🚣‍♀️"},
         {template: "Ontario Garlic Week", type: "nD", start: {era: 1, y: 2021, mon: 10, d: 29}, end: {era: 1, y: 2021, mon: 11, d: 7}, titles: {"en": "Ontario Garlic Week"}, urls: {"en": "https://www.daysoftheyear.com/days/ontario-garlic-week/"}, emoji: "🧄"},
         {template: "First Nation Public Library Week", type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "First Nation Public Library Week"}, urls: {"en": "https://resources.olservice.ca/fnplw/home"}, notes: {"en": "FNPLW"}, emoji: "📚"},
-
     ]
 }

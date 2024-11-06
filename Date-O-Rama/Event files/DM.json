@@ -18,7 +18,9 @@
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, notes: {"en": "August Monday"}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/emancipation-day"}},
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 3}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
-        {type: "D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, titles: {"en": "National Day of Community Service"}, first: {era: 1, y: 1978}, notes: {"en": "Community Service Day"}},
+        {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 11, d: 4, wkd: [2]}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
+        {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Day of Community Service"}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, first: {era: 1, y: 1978}, notes: {"en": "Community Service Day"}},
+        {type: "D", start: {mon: 11, d: 5, wkd: [3]},  titles: {"en": "National Day of Community Service (in lieu)"}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"},first: {era: 1, y: 1978}, notes: {"en": "Community Service Day (in lieu)"}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
 

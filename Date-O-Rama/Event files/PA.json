@@ -15,7 +15,7 @@
         {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/panama/labour-day"}, inherits: "Labour Day"},
         {type: "D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/separation-day/"}, titles: {"en": "Separation Day"}, inherits: "National Day", first: {era: 1, y: 1903}},
-        {type: "D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/flag-day-in-panama/"}, inherits: "Flag Day"},
+        {type: "D", start: {mon: 11, d: 4}, inherits: "Flag Day", urls: {"en": "https://www.daysoftheyear.com/days/flag-day-in-panama/"}},
         {type: "D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/colon-day/"}, titles: {"en": "Colón Day"}, first: {era: 1, y: 1903}, emoji: "🏙️"},
         {type: "D", start: {mon: 11, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/panama/colon-day"}, titles: {"en": "Colon Day (in lieu)"}},
         {type: "D", start: {mon: 11, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/panama/los-santos-uprising-day"}, titles: {"en": "Los Santos Uprising Day"}},

@@ -20,6 +20,7 @@
         {type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/usa-independence-day"}, inherits: "Independence Day"},
         {type: "D", start: {mon: 9, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/labor-day"}, inherits: "Labour Day"},
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/columbus-day"}, inherits: "Columbus Day"},
+        {type: "D", start: {era: 1, y: 2024, mon: 11, d: 5}, inherits: "National Holiday", urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-election-day"}},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/veterans-day"}, inherits: "Veterans Day"},
         {titles: {"en": "Discovery of Puerto Rico Day", "es": "Día del Descubrimiento de Puerto Rico"}, type: "D", start: {mon: 11, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/discovery-of-puerto-rico-day/"}, first: {era: 1, y: 1493}, inherits: "Discovery Day"},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, urls: {"en": "https://www.officeholidays.com/holidays/puerto-rico/thanksgiving"}, inherits: "Thanksgiving Day"},
