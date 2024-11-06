@@ -13,14 +13,16 @@ struct ASAEventSpecification: Codable {
     var template: String?
     var inherits: String?
     
-    var titles:  Dictionary<String, String>?
+    var type: ASAEventSpecificationType
+    
+    var titles: Dictionary<String, String>?
     var locations: Dictionary<String, String>?
     
-    var isAllDay:  Bool {
+    var isAllDay: Bool {
         return self.type.isAllDay
     } // var isAllDay
 
-    var calendarCode:  ASACalendarCode?
+    var calendarCode: ASACalendarCode?
     var startDateSpecification: ASADateSpecification
     var endDateSpecification: ASADateSpecification?
     
@@ -30,8 +32,8 @@ struct ASAEventSpecification: Codable {
     /// The specification for the last occurrence of this event
     var lastDateSpecification: ASADateSpecification?
     
-    var regionCodes:  Array<String>?
-    var excludeRegionCodes:  Array<String>?
+    var regionCodes: Array<String>?
+    var excludeRegionCodes: Array<String>?
         
     /// URLs for the calendar item, indexed by locale code.
     var urls: Dictionary<String, URL>?
@@ -41,10 +43,19 @@ struct ASAEventSpecification: Codable {
     
     var emoji: String?
     
-    var type: ASAEventSpecificationType
-    
+    // Sub-events
     var nonoverlappingSubEvents: Array<ASAEventSpecification>?
     var overlappingSubEvents: Array<ASAEventSpecification>?
+    
+    // Cycle ranges of sub-events
+    var cycleRanges: Array<CycleRange>?
+    var cycleRangeFirstNumber: Int?
+    
+    struct CycleRange: Codable {
+        var subtitles: Dictionary<String, String>
+        var start: Int
+        var end: Int
+    } // struct CycleRange
 
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
@@ -52,11 +63,13 @@ struct ASAEventSpecification: Codable {
         case firstDateSpecification = "first"
         case lastDateSpecification  = "last"
         case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type, nonoverlappingSubEvents, overlappingSubEvents
+        case cycleRanges = "cRanges"
+        case cycleRangeFirstNumber = "cRange1stNo"
     } // enum CodingKeys
 } // extension ASAEventSpecification
 
 
-// MARK:  -
+// MARK: -
 
 extension Array where Element == String {
     /// Matching for region code
@@ -92,7 +105,7 @@ extension Array where Element == String {
 } // extension Array where Element == String
 
 extension ASAEventSpecification {
-    func match(regionCode:  String?, latitude: CLLocationDegrees) -> Bool {
+    func match(regionCode: String?, latitude: CLLocationDegrees) -> Bool {
         if regionCode == nil {
             if self.regionCodes != nil && self.regionCodes != [] {
                 return false
@@ -112,39 +125,39 @@ extension ASAEventSpecification {
             
             return true
         }
-    } // func match(regionCode:  String?) -> Bool
+    } // func match(regionCode: String?) -> Bool
 
-    func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+    func eventTitle(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String? {
         if self.titles != nil {
             return self.titles!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
-    } // func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+    } // func eventTitle(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String?
 
-    func eventLocation(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+    func eventLocation(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String? {
         if self.locations != nil {
             return self.locations!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
-    } // func eventLocation(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+    } // func eventLocation(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String?
     
-    func eventURL(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> URL? {
+    func eventURL(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> URL? {
         if self.urls != nil {
             return self.urls!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
-    } // func eventURL(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+    } // func eventURL(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String?
     
-    func eventNotes(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+    func eventNotes(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String? {
         if self.notes != nil {
             return self.notes!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
-    } // func eventNotes(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+    } // func eventNotes(requestedLocaleIdentifier: String, eventsFileDefaultLocaleIdentifier: String) -> String?
     
     var recurrenceRules: [EKRecurrenceRule]? {
         var result: [EKRecurrenceRule] = []
