@@ -583,7 +583,7 @@
         {titles: {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, calendarCode: "cop", type: "D", start: {mon: 3, d: 26}, "excludeRegionCodes": ["IL", "PS"]},
         {titles: {"he": "ברכת החמה", "en": "Blessing of the Sun"}, calendarCode: "cop", type: "D", start: {mon: 7, d: 30, yDiv: 28, yRem: 17}, urls: {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}},
         
-        {type: "c", start: {era: 0, y: 5684, mon: 1, d: 1, recurrenceD: 2711}, titles: {"he": "דף יומי:  [[subtitle]] [[subindex]]"}, cRanges: [
+        {type: "c", start: {era: 0, y: 5780, mon: 4, d: 8, recurrenceD: 2711}, titles: {"he": "דף יומי:  [[subtitle]] [[subindex]]", "en": "Daf Yomi:  [[subtitle]] [[subindex]]"}, cRanges: [
             {subtitles: {"he": "ברכות", "en": "Berakhoth"}, start: 1, end: 63},
             {subtitles: {"he": "שבת", "en": "Shabbath"}, start: 64, end: 219},
             {subtitles: {"he": "עירובין", "en": "Eruvin"}, start: 220, end: 323},
@@ -601,7 +601,7 @@
             {subtitles: {"he": "כתובות", "en": " Kethubboth"}, start: 916, end: 1026},
             {subtitles: {"he": "נדרים", "en": "Nedharim"}, start: 1027, end: 1116},
             {subtitles: {"he": "נזיר", "en": "Nazir"}, start: 1117, end: 1181},
-            {subtitles: {"he": "סוטה ", "en": "Soṭah"}, start: 1182, end: 1229},
+            {subtitles: {"he": "סוטה", "en": "Soṭah"}, start: 1182, end: 1229},
             {subtitles: {"he": "גיטין", "en": "Giṭṭin"}, start: 1230, end: 1318},
             {subtitles: {"he": "קידושין", "en": "Qiddushin"}, start: 1319, end: 1399},
             {subtitles: {"he": "בבא קמא", "en": "Bava’ Qama’"}, start: 1400, end: 1517},

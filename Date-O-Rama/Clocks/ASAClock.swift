@@ -511,7 +511,7 @@ extension ASAClock {
 //    } // func watchShortenedTimeString(now:  Date) -> String
 
     
-    var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {
+    var miniCalendarNumberFormat: ASANumberFormat {
         return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
     } // var miniCalendarNumberFormat
 } // extension ASAClock

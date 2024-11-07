@@ -257,11 +257,19 @@ class ASAJulianDayCalendar:  ASACalendar {
         return []
     }
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
         return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
         
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
         return date.localModifiedJulianDay(timeZone: locationData.timeZone)
     } // func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int
+    
+    
+    // MARK: - Cycles
+    
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
+        return .system
+    } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
+
 } // class ASAJulianDayCalendar

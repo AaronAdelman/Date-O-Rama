@@ -15,5 +15,14 @@ extension Locale {
         } else {
             return Locale(identifier: identifier)
         }
-    }
-}
+    } // static func desiredLocale(_ identifier:  String) -> Locale
+    
+    var isHebrewLocale: Bool {
+        if #available(iOS 16, macOS 14, watchOS 9, *) {
+            return self.language.script?.identifier == "Hebr"
+        } else {
+            // Fallback on earlier versions
+            return self.languageCode == "he" || self.languageCode == "yi"
+        }
+    } // var isHebrewLocale: Bool
+} //extension Locale

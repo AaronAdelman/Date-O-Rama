@@ -365,13 +365,13 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     
     // MARK:  -
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
         if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
             return .shortHebrew
         }
         
         return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     
     // MARK:  - Time zone-dependent modified Julian day
@@ -380,4 +380,15 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
         let timeZone = locationData.timeZone
         return date.localModifiedJulianDay(timeZone: timeZone)
     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
+
+    
+    // MARK:  - Cycles
+    
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
+        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+            return .hebrew
+        }
+        
+        return .system
+    } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
 } // class ASAAppleCalendar

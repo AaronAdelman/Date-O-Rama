@@ -634,13 +634,13 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
     
     // MARK: -
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
-        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
+        if self.calendarCode.isHebrewCalendar && locale.isHebrewLocale {
             return .shortHebrew
         }
         
         return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     
     // MARK:  - Time zone-dependent modified Julian day
@@ -652,4 +652,15 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         
         return fixedDate.localModifiedJulianDay(timeZone: timeZone)
     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
+    
+    
+    // MARK: - Cycles
+    
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
+        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+            return .hebrew
+        }
+        
+        return .system
+    } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
 } // class ASASunsetTransitionCalendar

@@ -1274,7 +1274,22 @@ class ASAEventCalendar {
             title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale) ?? NO_TITLE
             
             if eventSpecification.type == .cycle {
-                debugPrint("Foo")
+                let rangeFirstNumber = eventSpecification.cycleRangeFirstNumber ?? 1
+                let dayInCycle = temp.dayInCycle!
+                let cycleNumber = temp.cycle
+                let range = eventSpecification.cycleRanges?.first(where: {                    $0.start <= dayInCycle && dayInCycle <= $0.end})
+                let dayInRange = dayInCycle - range!.start + rangeFirstNumber
+                let dayInRangeString = {
+                    let cycleRangeNumberFormat = calendar.cycleNumberFormat(locale: Locale(identifier: requestedLocaleIdentifier))
+                    if cycleRangeNumberFormat == .hebrew {
+                        return dayInRange.HebrewNumeral
+                    }
+                    
+                    return "\(dayInRange)"
+                }()
+                let subtitle = range?.subtitles.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale) ?? NO_TITLE
+                title = title.replacingOccurrences(of: "[[subtitle]]", with: subtitle).replacingOccurrences(of: "[[subindex]]", with: dayInRangeString)
+
             }
         }
         let color = self.color

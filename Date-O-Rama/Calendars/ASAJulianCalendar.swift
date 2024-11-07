@@ -540,7 +540,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
         // TODO:  May need to modify this
     }
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
         .system
     }
     
@@ -623,6 +623,14 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
     func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.GregorianCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
+    
+    
+    // MARK: - Cycles
+    
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
+        return .system
+    } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
+
 } // class ASAJulianCalendar
 
 

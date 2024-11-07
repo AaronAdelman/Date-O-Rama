@@ -17,10 +17,11 @@ public enum ASATransitionType {
     case noon
 } // enum ASATransitionType
 
-public enum ASAMiniCalendarNumberFormat {
+public enum ASANumberFormat {
     case system
     case shortHebrew
-} // public enum ASAMiniCalendarNumberFormat
+    case hebrew
+} // public enum ASANumberFormat
 
 
 // MARK: -
@@ -74,7 +75,11 @@ protocol ASACalendar {
 
     
     // MARK:  - Mini-calendars
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
+    
+    // MARK:  - Cycles
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat
+
 } // protocol ASACalendar
 
 

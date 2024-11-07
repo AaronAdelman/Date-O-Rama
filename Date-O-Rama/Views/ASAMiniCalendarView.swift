@@ -28,7 +28,7 @@ struct ASAOrdinaryCell:  View {
     var number:  Int
     var numberFormatter:  NumberFormatter
     var shouldNoteAsWeekend: Bool
-    var numberFormat: ASAMiniCalendarNumberFormat
+    var numberFormat: ASANumberFormat
     
     fileprivate func formattedNumber() -> String {
         if numberFormat == .shortHebrew {
@@ -53,7 +53,7 @@ struct ASAAccentedCell:  View {
     var number:  Int
     var numberFormatter:  NumberFormatter
     var shouldNoteAsWeekend: Bool
-    var numberFormat: ASAMiniCalendarNumberFormat
+    var numberFormat: ASANumberFormat
     
     fileprivate func formattedNumber() -> String {
         if numberFormat == .shortHebrew {
@@ -115,7 +115,7 @@ struct ASAMiniCalendarView:  View {
     var localeIdentifier:  String
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
-    var numberFormat: ASAMiniCalendarNumberFormat
+    var numberFormat: ASANumberFormat
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
     

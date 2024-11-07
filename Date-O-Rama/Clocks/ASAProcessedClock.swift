@@ -50,7 +50,7 @@ struct ASAProcessedClock {
     var weekendDays: Array<Int>?
     var regionCode: String?
     
-    var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
+    var miniCalendarNumberFormat: ASANumberFormat
     
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?

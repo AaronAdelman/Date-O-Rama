@@ -709,9 +709,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     
     // MARK:  -
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
         return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     
     // MARK:  - ASACalendarSupportingMonths
@@ -803,4 +803,11 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     var blankMonths: Array<Int> = [13]
     
     var blankWeekdaySymbol: String = "∅"
+    
+    
+    // MARK: - Cycles
+    
+    func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
+        return .system
+    } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
 } // class ASAFrenchRepublicanCalendar
