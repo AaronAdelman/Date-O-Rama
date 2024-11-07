@@ -469,6 +469,7 @@
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Report Home Health Care Fraud Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-report-home-health-care-fraud-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Team Manager Day"}, urls: {"en": "https://nationaltoday.com/national-team-manager-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Saxophone Day"}, urls: {"en": "https://www.daysoftheyear.com/days/saxophone-day/"}, emoji: "🎷"},
+        {type: "D", start: {mon: 11, d: 7}, titles: {"en": "Little League Girls Day"}, emoji: "⚾", urls: {"en": "https://www.checkiday.com/ba4e177b9f2f8f803a2d74fbeb6d5bbe/little-league-girls-day"}, first: {era: 1, y: 1973}},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "National Hug a Bear Day"}, notes: {"en": "Hug a Bear Day"}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/hug-a-bear-day/"}},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "National Programmatic Advertising Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-programmatic-advertising-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "National Bittersweet Chocolate with Almonds Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-with-almonds-day/"}, emoji: "🍫"},
