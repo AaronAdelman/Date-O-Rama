@@ -185,7 +185,7 @@
         {type: "D", start: {mon: 10, wkd: [7], nth: 3}, titles: {"en": "National Sweetest Day", "he": "היום המתוק ביותר הלאומי"}, notes: {"en": "Sweetest Day", "he": "היום המתוק ביותר"}, urls: {"en": "https://www.daysoftheyear.com/days/sweetest-day/"}, first: {era: 1, y: 1929}, emoji: "🧡🩷💚"},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Extra Mile Day"}, urls: {"en": "https://extramileamerica.org/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Authors’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/authors-day/"}, first: {era: 1, y: 1949}, emoji: "✍️"},
-        {type: "D", start: {mon: 11, d: 10}, titles: {"en": "US Marine Corps Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/united-states-marine-corps-birthday/"}, notes: {"en": "USMC Day"}, first: {era: 1, y: 1921}},
+        {type: "D", start: {mon: 11, d: 10}, titles: {"en": "US Marine Corps Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/united-states-marine-corps-birthday/"}, notes: {"en": "USMC Day\nUnited States Marine Corps Birthday"}, first: {era: 1, y: 1921}},
         {type: "D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-recycling-day/"}, titles: {"en": "National Recycling Day"}, emoji: "♻️", first: {era: 1, y: 1997}, notes: {"en": "America Recycles Day"}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, titles: {"en": "Native American Heritage Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/native-american-heritage-day/"}},
