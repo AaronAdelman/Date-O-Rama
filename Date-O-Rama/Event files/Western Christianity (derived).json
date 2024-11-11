@@ -142,10 +142,10 @@
         {type: "M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/month-giving/"}, titles: {"en": "Month of Giving"}},
         {type: "nD", start: {mon: 1, d: 1}, titles: {"en": "New Year’s Resolutions Week"}, first: {era: 1, y: 2005}, end: {mon: 1, d: 7}, urls: {"en": "https://nationaldaycalendar.com/new-years-resolutions-week-first-week-in-january/"}},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 12, d: 31}, titles: {"en": "Christmas Seal Campaign"}, emoji: "🎅", urls: {"en": "https://nationaldaycalendar.com/christmas-seal-campaign-october/"}},
-        {type: "nD", start: {mon: 11, d: 10}, end: {mon: 11, d: 16}, titles: {"en": "Dear Santa Letter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dear-santa-letter-week/"}},
         {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/operation-santa-paws/"}, titles: {"en": "Operation Santa Paws"}, first: {era: 1, y: 2001}},
         {type: "nD", start: {mon: 12, d: 14}, end: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/christmas-bird-count-week/"}, titles: {"en": "Christmas Bird Count Week"}, first: {era: 1, y: 1900}, emoji: "🦃🦅🦆"},
         {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}, emoji: "🍫"},
+        {type: "W", start: {mon: 11, fullWk: 2}, titles: {"en": "Dear Santa Letter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dear-santa-letter-week/"}, emoji: "🎅"},
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://nationaltoday.com/bat-appreciation-month/"}, emoji: "🦇", nonoverlappingSubEvents: [

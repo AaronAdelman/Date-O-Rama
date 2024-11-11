@@ -219,7 +219,7 @@
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "Infant Protection Day"}, emoji: "👶"},
         {type: "D", start: {mon: 11, d: 7}, titles: {"en": "National Cancer Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-cancer-awareness-day/"}, first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 11, d: 9}, titles: {"en": "Legal Services Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Legal_Services_Day"}, first: {era: 1, y: 1995}, emoji: "👨‍💼👩‍💼"},
-        {type: "D", start: {mon: 11, d: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-education-day/"}},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/national-education-day/"}},
         {type: "D", start: {mon: 11, d: 12}, titles: {"en": "Public Service Broadcasting Day"}},
         {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 14}, first: {era: 1, y: 1964}, urls: {"en": "https://www.daysoftheyear.com/days/childrens-day/"}},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "National Journalism Day"}},
