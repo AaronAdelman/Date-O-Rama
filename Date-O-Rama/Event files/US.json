@@ -186,6 +186,7 @@
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Extra Mile Day"}, urls: {"en": "https://extramileamerica.org/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Authors’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/authors-day/"}, first: {era: 1, y: 1949}, emoji: "✍️"},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "US Marine Corps Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/united-states-marine-corps-birthday/"}, notes: {"en": "USMC Day\nUnited States Marine Corps Birthday"}, first: {era: 1, y: 1921}},
+        {type: "D", start: {mon: 11, d: 12}, titles: {"en": "Elizabeth Cady Stanton Day"}, urls: {"en": "https://www.checkiday.com/1f960beac2e451f79b549a1c6b24cef0/elizabeth-cady-stanton-day"}, first: {era: 1, y: 1936}},
         {type: "D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-recycling-day/"}, titles: {"en": "National Recycling Day"}, emoji: "♻️", first: {era: 1, y: 1997}, notes: {"en": "America Recycles Day"}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, titles: {"en": "Native American Heritage Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/native-american-heritage-day/"}},
