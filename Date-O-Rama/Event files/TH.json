@@ -111,8 +111,10 @@
         {type: "D", start: {mon: 3, d: 5}, titles: {"en": "Journalist’s Day", "th": "วันนักข่าว"}},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en": "National Scout Organization Day", "th": "วันสถาปนาลูกเสือแห่งชาติ"}},
         {type: "D", start: {d: 4, mon: 9}, titles: {"en": "Royal Thai Navy Submarine Memorial Day", "th": "วันเรือดำน้ำไทย"}},
-        {type: "D", start: {d: 15, mon: 9}, titles: {"en": "Silpa Bhirasri Day", "th": "วันศิลป์ พีระศรี"}},
-        {type: "D", start: {d: 25, mon: 12}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Silpa Bhirasri Day", "th": "วันศิลป์ พีระศรี"}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        
+        {type: "nD", start: {mon: 11, d: 14, thruD: 20, wkd: [7], durationD: 2}, titles: {"en": "Elephant Round-Up in Surin"}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, emoji: "🐘"},
     ],
     templates: [
         {template: "Chakri Day", type: "D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day", "th": "วันจักรี"}, notes: {"en": "Chakri Memorial Day"}},

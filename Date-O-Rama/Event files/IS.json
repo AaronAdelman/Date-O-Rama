@@ -35,7 +35,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Fisherman’s Day", "is": "Sjómannadagurinn"}, emoji: "🎣"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Women's Rights Day", "is": "Kvenréttindadagurinn"}, emoji: "👩"},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en": "St. John’s Mass Day", "is": "Jónsmessa"}},
-        {type: "D", start: {mon: 11, d: 16}, titles: {"en": "Icelandic Language Day", "is": "Dagur íslenskrar tungu"}, urls: {"en": "https://en.wikipedia.org/wiki/Icelandic_Language_Day"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 11, d: 16}, titles: {"en": "Icelandic Language Day", "is": "Dagur íslenskrar tungu"}, urls: {"en": "https://www.daysoftheyear.com/days/icelandic-language-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 12, d: 1}, inherits: "Sovereignty Day"},
         {type: "D", start: {mon: 12, d: 23}, titles: {"en": "St. Thorlac’s Mass Day", "is": "Þorláksmessa"}},
 
