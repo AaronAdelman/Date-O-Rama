@@ -389,6 +389,7 @@
         {type: "D", start: {mon: 11, d: 14}, titles: {"en": "National American Teddy Bear Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-american-teddy-bear-day/"}, emoji: "🧸"},
         {type: "D", start: {mon: 11, d: 14}, titles: {"en": "National Pickle Day"}, emoji: "🥒", urls: {"en": "https://www.daysoftheyear.com/days/pickle-day/"}},
         {type: "D", start: {mon: 11, d: 14}, titles: {"en": "National Spicy Guacamole Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spicy-guacamole-day/"}, emoji: "🥑"},
+        {type: "D", start: {mon: 11, d: 14}, titles: {"en": "Spirit of National Speakers Association Day"}, notes: {"en": "NSA Day"}, urls: {"en": "https://www.checkiday.com/b13411299a819ef3aa191491d81aa20b/spirit-of-national-speakers-association-day"}, emoji: "🎙️", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "National Bundt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bundt-cake-day/"}, first: {era: 1, y: 2016}, notes: {"en": "National Bundt Cake Day"}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "National Camp T-Shirt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-camp-t-shirt-day/"}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "National Clean Out Your Refrigerator Day"}, notes: {"en": "National Clean Out Your Fridge Day"}, emoji: "🧽", urls: {"en": "https://www.daysoftheyear.com/days/clean-your-refrigerator-day/"}, first: {era: 1, y: 1999}},
