@@ -194,10 +194,10 @@
         {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Meth Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-meth-awareness-day/"}, first: {era: 1, y: 2006}, inherits: "*MedAwareness*", notes: {"en": "National Methamphetamine Awareness Day"}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Chicken Lady Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-lady-day/"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 11, d: 9}, titles: {"en": "World Freedom Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
-        {type: "D", start: {mon: 11, wkd: [3], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/entrepreneurs-day/"}, titles: {"en": "Entrepreneurs’ Day"}, notes: {"en": "National Entrepreneur’s Day"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 11, wkd: [3], nth: 3}, titles: {"en": "Entrepreneurs’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/entrepreneurs-day/"}, notes: {"en": "National Entrepreneur’s Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "National Day of Mourning", first: {era: 1, y: 1970}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-mourning/"}, notes: {"en": "Unthanksgiving Day"}},
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "National Bison Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 12, d: 15}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, titles: {"en": "Bill of Rights Day"}, first: {era: 1, y: 1952}},
+        {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, first: {era: 1, y: 1952}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Space Force Birthday"}},
@@ -611,8 +611,11 @@
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/child-passenger-safety-awareness-week/"}, titles: {"en": "Child Passenger Safety Awareness Week"}, emoji: "👦👧", notes: {"en": "Child Passenger Safety Week\nCar Seat Safety Week"}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Chicken Fried Steak Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-fried-steak-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Texas Chicken Fried Steak Day"}},
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 7}, titles: {"en": "Geography Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/geography-awareness-week/"}, first: {era: 1, y: 1987}},
-        {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}},
         {type: "nD", start: {mon: 11, d: 18}, end: {mon: 11, d: 24}, titles: {"en": "US Antibiotic Awareness Week"}, notes: {"en": "USAAW"}, urls: {"en": "https://www.cdc.gov/antimicrobial-resistance/communication-resources/usaaw.html"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*", emoji: "💬"},
+        
+        {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day"}},
+        ]},
 
         {type: "M", start: {mon: 11}, titles: {"en": "National Family Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-month/"}, emoji: "📖", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖"},
