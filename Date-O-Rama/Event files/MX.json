@@ -20,7 +20,8 @@
         {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Day of the Pluricultural Nation", "es": "Día de la Raza"}, urls: {"en": "https://nationaltoday.com/mexico-day-of-the-pluricultural-nation/"}, first: {era: 1, y: 2020}},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
-        {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
+        {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}, last: {era: 1, y: 2005}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
+        {inherits: "Revolution Day", type: "D", start: {mon: 11, wkd: [2], nth: 3}, first: {era: 1, y: 2006}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe", first: {era: 1, y: 1531}},
         {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
         
