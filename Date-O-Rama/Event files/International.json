@@ -379,12 +379,14 @@
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "International Happy Gose Day"}, emoji: "🍻", urls: {"en": "https://www.daysoftheyear.com/days/international-happy-gose-day/"}},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "International Students’ Day"}, notes: {"en": "International Students Day"}, first: {era: 1, y: 1941}, emoji: "👨‍🎓👩‍🎓", urls: {"en": "https://www.daysoftheyear.com/days/students-day/"}},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "International Day for the Elimination of Violence Against Men", "he": "יום המאבק הבינלאומי למניעת אלימות נגד גברים"}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-for-the-elimination-of-violence-against-men/"}, emoji: "👨", first: {era: 1, y: 2022}},
-        {type: "D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/mickey-mouse-day/"}, titles: {"en": "Mickey Mouse’s Birthday"}, notes: {"en": "Mickey Mouse Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
-        {type: "D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/minnie-mouses-birthday/"}, titles: {"en": "Minnie Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Mickey Mouse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mickey-mouse-day/"}, notes: {"en": "Mickey Mouse’s Birthday\nMickey Mouse Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Minnie Mouse’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/minnie-mouses-birthday/"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Occult Day"}, urls: {"en": "https://www.skepdic.com/occult.html"}, notes: {"en": "This observance promtes superstitious nonsense."}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Underwater Hockey World Day"}, urls: {"en": "https://www.daysoftheyear.com/days/underwater-hockey-world-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 11, d: 19}, inherits: "International Men’s Day"},
         {type: "D", start: {mon: 11, d: 19}, titles: {"en": "Women’s Entrepreneurship Day"}, notes: {"en": "WED"}, first: {era: 1, y: 2014}, emoji: "👩‍💼", urls: {"en": "https://www.daysoftheyear.com/days/womens-entrepreneurship-day/"}, notes: {"en": "Women Entrepreneurs Day\nWED"}},
         {type: "D", start: {mon: 11, d: 19}, titles: {"en": "World Day for Prevention of Child Abuse"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.apa.org/pi/prevent-violence/programs/international-day"}},
-        {type: "D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/international-journalists-remembrance-day/"}, titles: {"en": "International Journalist’s Remembrance Day"}, notes: {"en": "International Journalist Day"}, emoji: "🎤📰"},
+        {type: "D", start: {mon: 11, d: 19}, titles: {"en": "International Journalist’s Remembrance Day"}, urls: {"en": "https://nationaltoday.com/international-journalists-remembrance-day/"}, notes: {"en": "International Journalist Day"}, emoji: "🎤📰"},
         {type: "D", start: {mon: 11, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Traffic Directors Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "Plan Your Epitaph Day", first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 11, d: 2}, titles: {"en": "Be the Impact Day"}, urls: {"en": "https://nationaltoday.com/be-the-impact-day/"}, first: {era: 1, y: 2020}},
@@ -2231,8 +2233,8 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/sexual-health-week/"}, titles: {"en": "Sexual Health Week"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
-        
         {type: "D", start: {era: 1, y: 2022, mon: 11, d: 19, recurrenceD: 100}, titles: {"en": "Metric Mitochondria Day"}, notes: {"en": "Meant to celebrate our obligate symbiotes, the mitochondria, and the metric system.  Invented 2010-01-24.  First attested 2022-11-19."}},
+        {type: "nD", start: {mon: 11, d: 18}, end: {mon: 11, d: 24}, titles: {"en": "World AMR Awareness Week"}, urls: {"en": "https://www.who.int/campaigns/world-amr-awareness-week"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*"},
         
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},

@@ -611,7 +611,9 @@
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/child-passenger-safety-awareness-week/"}, titles: {"en": "Child Passenger Safety Awareness Week"}, emoji: "👦👧", notes: {"en": "Child Passenger Safety Week\nCar Seat Safety Week"}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Chicken Fried Steak Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-fried-steak-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Texas Chicken Fried Steak Day"}},
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 7}, titles: {"en": "Geography Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/geography-awareness-week/"}, first: {era: 1, y: 1987}},
-        
+        {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}},
+        {type: "nD", start: {mon: 11, d: 18}, end: {mon: 11, d: 24}, titles: {"en": "US Antibiotic Awareness Week"}, notes: {"en": "USAAW"}, urls: {"en": "https://www.cdc.gov/antimicrobial-resistance/communication-resources/usaaw.html"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*", emoji: "💬"},
+
         {type: "M", start: {mon: 11}, titles: {"en": "National Family Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-month/"}, emoji: "📖", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖"},
         ]},
