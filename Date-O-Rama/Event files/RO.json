@@ -83,7 +83,7 @@
         {inherits: "World Day for Cultural Diversity for Dialogue and Development", type: "D", start: {mon: 5, d: 21}, first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "Bulgarian Language Day"}},
         {type: "D", start: {d: 25, mon: 5}, titles: {"en": "Slovak Language Day"}},
-        {type: "D", start: {d: 27, mon: 5}, titles: {"en": "Mihai Viteazul Day"}},
+        {type: "D", start: {mon: 5, d: 27}, titles: {"en": "Mihai Viteazul Day"}},
         {type: "D", start: {mon: 5, d: 31}, titles: {"en": "Military Reserves Day"}},
         {type: "D", start: {wkd: [1], nth: -1, mon: 5}, titles: {"en": "Day of the Romanians Everywhere"}},
         {type: "D", start: {wkd: [1], nth: -1, mon: 5}, titles: {"en": "Romanian Businessperson Day"}},

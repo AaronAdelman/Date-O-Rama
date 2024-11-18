@@ -60,7 +60,7 @@
         {titles: {"he": "יום־שנה של הרב משה צבי נריה"}, type: "D", start: {mon: 3, d: 19}, first: {era: 0, y: 5756}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של המגיד ממעזריטש"}, type: "D", start: {mon: 3, d: 19}, first: {era: 0, y: 5533}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ צבי פסח פרנק"}, type: "D", start: {mon: 3, d: 21}, first: {era: 0, y: 5721}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב שטינמן"}, type: "D", start: {d: 24, mon: 3}, first: {era: 0, y: 5778}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב שטינמן"}, type: "D", start: {mon: 3, d: 24}, first: {era: 0, y: 5778}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הפרי חדש"}, type: "D", start: {mon: 3, d: 28}, first: {era: 0, y: 5458}, inherits: "*DeathAnniv*"},
 
         {titles: {"he": "יום־שנה של הרב פנחס קהתי"}, type: "D", start: {d: 1, mon: 4}, first: {era: 0, y: 5737}, inherits: "*DeathAnniv*"},
