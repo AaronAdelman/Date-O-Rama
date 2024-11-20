@@ -97,7 +97,7 @@
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "National Princess Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-princess-day-november-18"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 2}, titles: {"en": "National Ohio Day", "he": "יום אוהיו הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-ohio-day-november-2-2/"}},
         {type: "D", start: {mon: 11, d: 2}, titles: {"en": "International Doge Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/international-doge-day"}, emoji: "🦮", first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 25, thruMon: 12, thruD: 1, wkd: [1]}, titles: {"en": "National Secondhand Sunday"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-secondhand-sunday-sunday-after-thanksgiving"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "National Play Day with Dad"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-play-day-with-dad-november-25"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Mississippi Day", "he": "יום מיסיסיפי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-mississippi-day-november-30/"}},

@@ -65,7 +65,7 @@
         {type: "D", start: {mon: 11, d: 12, thruD: 13, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/canada-remembrance-day"}, titles: {"en": "Remembrance Day (in lieu)"}, locations: {"en": "Alberta, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Saskatchewan, Yukon"}},
         {type: "D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Housing Day"}, urls: {"en": "https://homelesshub.ca/resource/what-national-housing-day/"}, first: {era: 1, y: 1998}, emoji: "🏠"},
-        {type: "D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 6}, inherits: "Dog Film Festival", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Ladies Learning Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ladies-learning-code-day/"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "Anniversary of the Statute of Westminster"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-statute-of-westminster/"}},
