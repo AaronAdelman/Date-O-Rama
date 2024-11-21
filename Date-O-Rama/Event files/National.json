@@ -436,6 +436,7 @@
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "National Gingerbread Cookie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-gingerbread-cookie-day/"}},
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "National Stuffing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/stuffing-day/"}},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Cranberry Relish Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cranberry-relish-day/"}},
+        {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Stop the Violence Day"}, first: {era: 1, y: 1990}, urls: {"en": "https://www.checkiday.com/7ffd2a635d060ae4de023005f11162cc/national-stop-the-violence-day"}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Maize Day", urls: {"en": "https://www.daysoftheyear.com/days/maize-day/"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, titles: {"en": "Buy Nothing Day", "he": "יום ללא קניות"}, first: {era: 1, y: 1992}, emoji: "🫣", urls: {"en": "https://www.daysoftheyear.com/days/buy-nothing-day/"}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, titles: {"en": "Fur-Free Friday"}, urls: {"en": "https://nationaltoday.com/fur-free-friday/"}, first: {era: 1, y: 1986}},

@@ -20,9 +20,9 @@
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Parents’ Day", first: {era: 1, y: 1973}},
         {inherits: "Black Day", type: "D", start: {mon: 4, d: 14}, first: {era: 1, y: 1978}},
-        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Pepero Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day?fbclid=IwY2xjawGWpVlleHRuA2FlbQIxMAABHd0H-VeKedTf89-SSpOuN2sQDy3LMENpQJYiFI4rql0Y9w2YVdtptoVVLg_aem_dw1iU48Zfl1CmQaT1dztTQ"}},
-        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Garaetteok Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day?fbclid=IwY2xjawGWpVlleHRuA2FlbQIxMAABHd0H-VeKedTf89-SSpOuN2sQDy3LMENpQJYiFI4rql0Y9w2YVdtptoVVLg_aem_dw1iU48Zfl1CmQaT1dztTQ"}},
-
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Pepero Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day"}},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Garaetteok Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day"}},
+        {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Kimchi Day"}, first: {era: 1, y: 2020}, urls: {"en": "https://www.checkiday.com/c92a98fa9a6a062f461df161bd469b5e/national-kimchi-day-south-korea"}},
         {type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, inherits: "Armed Forces Day", urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-armed-forces-day"}},
   ]
 }
