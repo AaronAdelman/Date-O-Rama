@@ -411,6 +411,7 @@
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "Start Your Own Country Day"}, urls: {"en": "https://www.internationaldays.co/event/start-your-own-country-day/r/rec1QzN1d5vV7V3Rn#:~:text=November%2022nd%20is%20Start,possibility%20of%20forming%20a%20micronation."}, first: {era: 1, y: 1939}},
         {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Doctor Who Day"}, urls: {"en": "https://www.daysoftheyear.com/days/doctor-who-day/"}, first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Fibonacci Day"}, emoji: "🐚", urls: {"en": "https://www.daysoftheyear.com/days/fibonacci-day/"}},
+        {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Brownielocks Day"}, notes: {"en": "Big Hair Day\nBrunette Pride Day\nIt seems that people of every hair color want to celebrate it for some reason."}, first: {era: 1, y: 2013}, urls: {"en": "https://www.brownielocks.com/brownielocksday.html"}},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Celebrate Your Unique Talent Day"}, emoji: "🎻", urls: {"en": "https://www.daysoftheyear.com/days/celebrate-your-unique-talent-day/"}},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "D.B. Cooper Day"}, urls: {"en": "https://www.daysoftheyear.com/days/d-b-cooper-day/"}, first: {era: 1, y: 1996}, emoji: "💵"},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "International Au Pair Day"}, urls: {"en": "https://internationalaupairday.com/"}, first: {era: 1, y: 2019}},
