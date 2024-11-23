@@ -8,16 +8,16 @@
     first: {era: 1, y: 1960},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Independence Day", type: "D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/togo-independence-day-togo/"}, first: {era: 1, y: 1960}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Ascension Day", type: "D", start: {Easter:  "Easter", offsetD: 39}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-togo/"}},
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 13}, first: {era: 1, y: 1963}},
     ]

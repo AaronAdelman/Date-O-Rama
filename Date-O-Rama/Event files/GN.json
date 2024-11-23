@@ -7,13 +7,13 @@
     calendarColor: {red: 0.81, green: 0.07, blue: 0.15},
     first: {era: 1, y: 1958},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {type: "D", inherits: "Africa Day", start: {mon: 5, d: 25}},
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 2}, first: {era: 1, y: 1958}, urls: {"en": "https://nationaltoday.com/guinea-independence-day/"}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
     ]
 }

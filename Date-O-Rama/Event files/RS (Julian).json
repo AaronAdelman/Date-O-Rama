@@ -5,12 +5,12 @@
     calendarCode: "jul",
     calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
     events: [
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
         {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
     ]
 }
 

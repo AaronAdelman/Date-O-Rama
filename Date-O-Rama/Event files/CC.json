@@ -6,14 +6,14 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.50, blue: 0.00},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Australia Day", first: {era: 1, y: 1808}},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", titles: {"en": "Self Determination Day"}, start: {mon: 4, d: 6}},
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
     ]
 }

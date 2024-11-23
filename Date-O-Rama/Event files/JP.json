@@ -24,7 +24,7 @@
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, inherits: "Sports Day", first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
         {type: "D", start: {mon: 11, d: 3, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 4, wkd: [2]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Bodhi Day"},

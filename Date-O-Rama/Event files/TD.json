@@ -9,17 +9,17 @@
     events: [
         {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 11}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/chad-independence-day/"}},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "Republic Day", type: "D", start: {mon: 11, d: 28}, first: {era: 1, y: 1958}, urls: {"en": "https://www.officeholidays.com/holidays/chad/chad-republic-day"}},
         {type: "D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/freedom-and-democracy-day-in-chad/"}, titles: {"en": "Freedom and Democracy Day"}, first: {era: 1, y: 1990}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {inherits: "Africa Day", type: "D", start: {mon: 5, d: 25}},
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 25}},
    ]

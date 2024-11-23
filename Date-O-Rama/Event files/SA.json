@@ -11,7 +11,7 @@
         {inherits: "National Day", type: "D", start: {mon: 9, d: 22, wkd: [1, 5]}, urls: {"en": "https://en.wikipedia.org/wiki/Saudi_National_Day"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day (bridge day)"}},
         {inherits: "National Day", type: "D", start: {mon: 9, d: 23}, urls: {"en": "https://en.wikipedia.org/wiki/Saudi_National_Day"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day", "he": "היום הלאומי של ערב הסעודית", "ar": "اليوم الوطني للمملكة العربية السعودية"}},
 
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 21}}
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
+        {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"}
    ]
 }

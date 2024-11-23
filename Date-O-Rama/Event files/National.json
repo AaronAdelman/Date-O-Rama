@@ -411,7 +411,7 @@
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "National Take a Hike Day"}, urls: {"en": "https://www.daysoftheyear.com/days/take-a-hike-day/"}, notes: {"en": "National Hiking Day\nTake A Hike Day"}, emoji: "🏞️", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "National Testosterone Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-testosterone-awareness-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "National Unfriend Day"}, urls: {"en": "https://nationaltoday.com/national-unfriend-day/"}, first: {era: 1, y: 2014}},
-        {type: "D", start: {mon: 11, d: 18}, inherits: "National Adoption Day", notes: {"en": "World Adoption Day"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.daysoftheyear.com/days/adoption-day/"}},
+        {type: "D", start: {mon: 11, d: 17, thruD: 23, wkd: [7]}, inherits: "National Adoption Day", notes: {"en": "World Adoption Day"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.nationaladoptionday.org/"}, emoji: "♥️"},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Apple Cider Day"}, urls: {"en": "https://www.daysoftheyear.com/days/apple-cider-day/"}, notes: {"en": "National Apple Cider Day"}},
         {type: "D", start: {mon: 11, d: 18}, inherits: "National Injury Prevention Day", emoji: "☂", urls: {"en": "http://www.injuryfree.org/nationalinjurypreventionday/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "National Vichyssoise Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/vichyssoise-day/"}},

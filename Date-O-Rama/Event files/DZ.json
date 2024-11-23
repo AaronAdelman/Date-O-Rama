@@ -7,14 +7,14 @@
     calendarColor: {red: 0.0, green: 0.48, blue: 0.2},
     first: {era: 1, y: 1962},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 12}, inherits: "Amazigh New Year"},
         {type: "D", start: {mon: 2, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/algeria/february-22nd-revolution"}, titles: {"en": "Day of Fraternity and Cohesion"}},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/independence-day-in-algeria/"}, first: {era: 1, y: 1962}},
         {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 1}, first: {era: 1, y: 1954}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-revolution/"}, notes: {"en": "Anniversary of the Revolution"}},
 
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}},
         {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}},
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},

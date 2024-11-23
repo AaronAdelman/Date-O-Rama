@@ -13,9 +13,9 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -45}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Tuesday"},
         {type: "D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/spiritual-baptist-liberation-day/"}, titles: {"en": "Spiritual Baptist Liberation Day"}, first: {era: 1, y: 1996}, notes: {"en": "Spiritual Baptist Day\nSpiritual Baptist/Shouter Liberation Day"}},
         {type: "D", start: {mon: 3, d: 31, wkd: [2]}, urls: {"en": "https://nationaltoday.com/spiritual-baptist-liberation-day/"}, titles: {"en": "Spiritual Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}, first: {era: 1, y: 1996}, notes: {"en": "Spiritual Baptist Day (in lieu)"}},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/indian-arrival-day"}, titles: {"en": "Indian Arrival Day"}},
         {inherits: "Public Holiday", type: "D", start: {mon: 5, d: 31, wkd: [2, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/indian-arrival-day"}},
         {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
@@ -25,14 +25,14 @@
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 31}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/trinidad-and-toboga-independence-day/"}},
         {type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 9, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-republic-day"}, titles: {"en": "Republic Day (in lieu)"}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
         
         {type: "D", start: {era: 1, y: 2017, mon: 10, d: 13}, titles: {"en": "First Peoples’ Day"}},
 
         
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
   ]
 }

@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.69, blue: 0.40},
     first: {era: 1, y: 1908},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "Liberation Day", type: "D", start: {mon: 3, d: 3}, first: {era: 1, y: 1888}, urls: {"en": "https://www.daysoftheyear.com/days/bulgaria-liberation-day/"}, titles: {"en": "Liberation Day", "bg": "Ден на Освобождението на България от османско иго"}, notes: {"en": "Day of Liberation of Bulgaria from the Ottoman Oppression"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

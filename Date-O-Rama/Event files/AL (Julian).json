@@ -7,7 +7,7 @@
     first: {era: 0, y: 1330},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     events: [
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
     ]
 }

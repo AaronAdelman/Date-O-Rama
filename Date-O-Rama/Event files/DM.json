@@ -6,13 +6,13 @@
     calendarColor: {red: 0.00, green: 0.60, blue: 0.27},
     first: {era: 1, y: 1978},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "Carnival Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {type: "D", start: {Easter:  "Easter", offsetD: -47}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/carnival-tuesday"}, inherits: "Carnival Tuesday"},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
@@ -21,10 +21,10 @@
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 11, d: 4, wkd: [2]}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Day of Community Service"}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, first: {era: 1, y: 1978}, notes: {"en": "Community Service Day"}},
         {type: "D", start: {mon: 11, d: 5, wkd: [3]},  titles: {"en": "National Day of Community Service (in lieu)"}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"},first: {era: 1, y: 1978}, notes: {"en": "Community Service Day (in lieu)"}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
 
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
     ]
 }

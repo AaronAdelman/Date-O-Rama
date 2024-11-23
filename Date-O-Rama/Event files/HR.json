@@ -6,10 +6,10 @@
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     first: {era: 1, y: 2002},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Statehood Day", type: "D", start: {mon: 5, d: 30}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Croatia)"}, first: {era: 1, y: 1991}, notes: {"en": "National Day"}},
         {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
@@ -18,7 +18,7 @@
         {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {titles: {"en": "Day of Remembrance of the Victims of the Homeland War", "hr": "Dan sjećanja na žrtve Domovinskog rata"}, type: "D", start: {mon: 11, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, first: {era: 1, y: 2020}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
         
         {titles: {"en": "Day of Unification of Medimurje with its Parent Body Croatia", "hr": "Dan sjedinjenja Medimurja s maticom zemljom Hrvatskom"}, type: "D", start: {mon: 1, d: 9}},
@@ -41,12 +41,12 @@
 
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 3, d: 19}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 3, d: 2}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
         {type: "D", start: {mon: 9, d: 18}, inherits: "Navy Day", titles: {"en": "Day of the Croatian Navy"}},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Kestenijada"}, emoji: "🌰", urls: {"en": "https://www.daysoftheyear.com/days/kestenijada/"}, first: {era: 1, y: 1997}},

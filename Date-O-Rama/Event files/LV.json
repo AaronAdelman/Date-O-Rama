@@ -7,9 +7,9 @@
     calendarColor: {red: 0.64, green: 0.20, blue: 0.23},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Restoration of Independence Day (bridge day)", type: "D", start: {mon: 5, d: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Restoration of Independence Day", type: "D", start: {mon: 5, d: 4}, first: {era: 1, y: 1990}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
@@ -23,7 +23,7 @@
         {titles: {"en": "Proclamation Day of the Republic of Latvia", "lv": "Latvijas Republikas proklamēšanas diena"}, type: "D", start: {mon: 11, d: 18}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
         {titles: {"en": "Proclamation Day of the Republic of Latvia (in lieu)"}, type: "D", start: {mon: 11, d: 19, wkd: [1, 6]}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/christmas-holiday"}, inherits: "Boxing Day"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
         

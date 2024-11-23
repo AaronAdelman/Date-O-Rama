@@ -10,10 +10,10 @@
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 5, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/samoan-mothers-day"}, inherits: "Mother’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/samoa-independence-day/"}, first: {era: 1, y: 1962}},
@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 10, d: 9, thruD: 15, wkd: [2]}, titles: {"en": "Lotu a Tamaiti Holiday"} , urls: {"en": "https://nationaltoday.com/lotu-a-tamaiti-holiday/"}},
         {inherits: "Public Holiday", type: "D", start: {era: 1, y: 2024, mon: 11, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/samoa-public-sector-holiday"}},
         {inherits: "Public Holiday", type: "D", start: {era: 1, y: 2024, mon: 11, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/samoa-public-sector-holiday"}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
 
         

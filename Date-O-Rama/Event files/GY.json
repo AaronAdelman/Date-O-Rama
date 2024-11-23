@@ -7,24 +7,24 @@
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     first: {era: 1, y: 1966},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/guyana-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1970}},
-        {inherits: "Good Friday", type: "D", start: {Easter:  "Easter", offsetD: -2}},
-        {inherits: "Easter Sunday", type: "D", start: {Easter:  "Easter"}},
-        {inherits: "Easter Monday", type: "D", start: {Easter:  "Easter", offsetD: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {type: "D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/indian-arrival-day-guyana/"}, inherits: "Indian Arrival Day", first: {era: 1, y: 1838}},
         {inherits: "Independence Day", type: "D", start: {mon: 5, d: 26}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/independence-day-guyana/"}},
         {type: "D", start: {mon: 7, wkd: [2], nth: 1}, inherits: "CARICOM Day", urls: {"en": "https://www.officeholidays.com/holidays/guyana/caricom-day"}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/emancipation-day-guyana/"}},
 
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
         
         {type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, inherits: "Heritage Day", first: {era: 1, y: 1957}},
         {type: "M", start: {mon: 9}, urls: {"en": "https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, titles: {"en": "Amerindian Heritage Month "}, first: {era: 1, y: 1957}},
 
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/abolition-day/"}, inherits: "Abolition Day", first: {era: 1, y: 1834}},
     ]

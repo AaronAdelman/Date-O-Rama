@@ -7,17 +7,17 @@
     calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
     first: {era: 1, y: 1988},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 15}, first: {era: 1, y: 1988}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {inherits: "Nakba Day", type: "D", start: {mon: 5, d: 15}, first: {era: 1, y: 1998}},
         {titles: {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, type: "D", start: {mon: 6, d: 5}},
         {titles: {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, type: "D", start: {mon: 3, d: 30}},
         
         {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 21}},
+        {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 4, d: 5}, first: {era: 1, y: 1995}},
    ]
 }

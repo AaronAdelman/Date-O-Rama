@@ -20,7 +20,7 @@
         {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         
         {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1989}},
         
         {titles: {"en": "Holocaust, Genocide and Other Fascist Crimes Victims of the World War II Remembrance Day", "sr-Cyrl": "Дан сећања на жртве холокауста, геноцида и других жртава фашизма у Другом светском рату", "sr-Latn": "Dan sećanja na žrtve holokausta, genocida i drugih žrtava fašizma u Drugom svetskom ratu"}, type: "D", start: {mon: 4, d: 22}},
         {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},

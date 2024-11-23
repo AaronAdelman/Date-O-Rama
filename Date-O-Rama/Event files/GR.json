@@ -6,22 +6,22 @@
     calendarColor: {red: 0.00, green: 0.08, blue: 0.54},
     first: {era: 1, y: 1821},
     events: [
-        {inherits: "New Year’s Day", type: "D", start: {mon: 1, d: 1}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
         {inherits: "Independence Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}, urls: {"en": "https://www.daysoftheyear.com/days/greek-independence-day/"}},
         {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
         {inherits: "Dormition of the Mother of God", type: "D", start: {mon: 8, d: 15}},
         {type: "D", start: {mon: 10, d: 28}, inherits: "Ochi Day", first: {era: 1, y: 1942}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
 
         {titles: {"en": "The Three Holy Hierarchs", "el": "Τριών Ιεραρχών"}, type: "D", start: {mon: 1, d: 30}},
         {titles: {"en": "Polytechnio", "el": "Πολυτεχνείο"}, type: "D", start: {mon: 11, d: 17}},
 
-        {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 3}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         {type: "D", start: {mon: 3, d: 10}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1946}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1946}},
         {inherits: "Revolution Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}},
         {titles: {"en": "August Moon Festival", "he": "פסטיבל הירח באוגוסט"}, type: "D", start: {"zmoPhase": "1stFull", mon: 8}, first: {era: 1, y: 1996}, urls: {"en": "https://nationaltoday.com/august-moon-festival/"}},
     ]

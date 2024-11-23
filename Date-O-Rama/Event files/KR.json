@@ -15,7 +15,7 @@
         {inherits: "Liberation Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-national-foundation-day"}, inherits: "National Foundation Day"},
         {type: "D", start: {mon: 10, d: 9}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/south-korea-hangeul-day/"}, titles: {"en": "Hangul Day", "ko": "한글날"}},
-        {inherits: "Christmas Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Parents’ Day", first: {era: 1, y: 1973}},
