@@ -77,7 +77,7 @@
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Calan Gaeaf"}, urls: {"en": "https://www.daysoftheyear.com/days/calan-gaeaf/"}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 11, wkd: [6], nth: -1}, titles: {"en": "National Illustration Day"}, urls: {"en": "https://www.qbcentre.org.uk/quentin-blake-centre-for-illustration-national-illustration-day"}, first: {era: 1, y: 2023}, emoji: "✍️"},
-        {type: "D", start: {mon: 11, d: 24, thruD: 30, wkd: [7]}, inherits: "Small Business Saturday", first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 11, d: 24, thruD: 30, wkd: [7]}, inherits: "Small Business Saturday", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Lancashire Day"}, urls: {"en": "https://www.visitlancashire.com/happy-lancashire-day"}},
         {type: "D", start: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", first: {era: 1, y: 1604}},
         {type: "D", start: {mon: 11, d: 9}, titles: {"en": "British Pudding Day"}, urls: {"en": "https://www.daysoftheyear.com/days/british-pudding-day/"}},
@@ -303,6 +303,7 @@
         {type: "nD", start: {era: 1, y: 2021, mon: 11, d: 16}, end: {era: 1, y: 2021, mon: 11, d: 21}, inherits: "Road Safety Week"},
         {type: "nD", start: {era: 1, y: 2022, mon: 11, d: 14}, end: {era: 1, y: 2022, mon: 11, d: 20}, inherits: "Road Safety Week"},
         {type: "W", start: {mon: 11, fullWk: 3}, inherits: "Road Safety Week", first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Twin With Your Dog Day"}, first: {era: 1, y: 2021}, urls: {"en": "https://www.daysoftheyear.com/days/national-twin-with-your-dog-day/"}, emoji: "🐕"},
 
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 5}, titles: {"en": "Anti-Bullying Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en": "Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦"},

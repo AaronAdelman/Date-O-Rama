@@ -486,7 +486,6 @@
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "World Numbat Day"}, urls: {"en": "https://www.daysoftheyear.com/days/numbat-day/"}, notes: {"en": "National Numbat Day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 11, wkd: [7], nth: 2}, titles: {"en": "Wine Tourism Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/wine-tourism-day-second-saturday-in-november"}, first: {era: 1, y: 2009}, notes: {"en": "European Day of Wine Tourism"}, emoji: "🍷"},
         {type: "D", start: {mon: 11, wkd: [7], nth: 4}, titles: {"en": "International Aura Awareness Day"}, urls: {"en": "https://www.skepdic.com/auras.html"}, first: {era: 1, y: 2002}, notes: {"en": "This observance promotes belief in things which there is no reason to believe that they exist."}},
-        {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Day Without Art Day"}, urls: {"en": "https://visualaids.org/"}, emoji: "🫶", first: {era: 1, y: 1989}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Prisoners for Peace Day"}, urls: {"en": "https://nationaltoday.com/prisoners-for-peace-day/"}, emoji: "☮️"},
         {type: "D", start: {mon: 12, d: 10}, titles: {"en": "Dewey Decimal System Day"}, urls: {"en": "https://nationaltoday.com/dewey-decimal-system-day/"}, emoji: "📚"},
         {type: "D", start: {mon: 12, d: 10}, titles: {"en": "Festival for the Souls of Dead Whales"}, urls: {"en": "https://nationaltoday.com/festival-for-the-souls-of-dead-whales/"}, emoji: "🐳"},
