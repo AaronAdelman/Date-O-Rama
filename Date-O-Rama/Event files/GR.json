@@ -7,9 +7,9 @@
     first: {era: 1, y: 1821},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Independence Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}, urls: {"en": "https://www.daysoftheyear.com/days/greek-independence-day/"}},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Dormition of the Mother of God", type: "D", start: {mon: 8, d: 15}},
         {type: "D", start: {mon: 10, d: 28}, inherits: "Ochi Day", first: {era: 1, y: 1942}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

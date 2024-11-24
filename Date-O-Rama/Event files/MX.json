@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 9, d: 30}, inherits: "*BDay*", titles: {"en": "Morelos’s Birthday", "es": "Natalicio de José Mª Morelos y Pavón"}, first: {era: 1, y: 1765}},
         {type: "D", start: {mon: 11, d: 23}, inherits: "Navy Day", first: {era: 1, y: 1825}},
         
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
         {inherits: "Carnival (day 1)", type: "D", start: {Easter:  "Easter", offsetD: -52}},
         {inherits: "Carnival (day 2)", type: "D", start: {Easter:  "Easter", offsetD: -51}},
@@ -51,7 +51,7 @@
         {inherits: "Teacher’s Day", type: "D", start: {mon: 5, d: 15}},
         {type: "D", start: {mon: 5, d: 23}, inherits: "Student’s Day"},
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas", "es": "Las Posadas"}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
 

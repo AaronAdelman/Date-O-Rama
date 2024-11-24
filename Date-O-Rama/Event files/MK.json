@@ -17,8 +17,8 @@
         {type: "D", start: {mon: 10, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/macedonia/day-of-the-macedonian-revolution"}, titles: {"en": "Day of the Macedonian Revolution", "mk": "Ден на македонската револуционерна борба"}},
         {type: "D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/st-clement-of-ohrid/"}, titles: {"en": "St. Clement of Ohrid Day", "mk": "Св. Климент Охридски"}, first: {era: 1, y: 2007}},
 
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
     ]
 }

@@ -15,13 +15,13 @@
         {inherits: "Father’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 1}},
         {type: "D", start: {mon: 6, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/lithuania/st-johns-day"}, inherits: "St. John’s Day"},
         {type: "D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-coronation-of-king-mindaugas/"}, titles: {"en": "Anniversary of the Coronation of King Mindaugas", "lt": "Valstybės (Lietuvos karaliaus Mindaugo karūnavimo) ir Tautiškos giesmės diena"}, inherits: "*Coronation*", notes: {"en": "Statehood Day"}, first: {era: 1, y: 1990}},
-        {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
 
     ]
 }

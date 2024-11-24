@@ -8,7 +8,7 @@
     first: {era: 1, y: 1977},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/djibouti-independence-day/"}, first: {era: 1, y: 1977}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 

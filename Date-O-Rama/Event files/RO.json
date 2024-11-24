@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/romania/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}, first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 1, d: 7}, first: {era: 1, y: 2024}, inherits: "Synaxis of St. John the Baptist"},
         {type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/romania/romania-unification-day"}, inherits: "Public Sector Holiday"},
         {type: "D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/unification-day/"}, inherits: "Unification Day", first: {era: 1, y: 1859}, titles: {"en": "Day of the Unification of the Romanian Principalities", "ro": "Ziua Unirii Principatelor Române"}},
@@ -18,7 +18,7 @@
         {type: "D", start: {era: 1, y: 2024, mon: 5, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/romania/labour-day"}, inherits: "Public Sector Holiday"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 1}},
         {inherits: "Father’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", first: {era: 1, y: 2017}},
         {inherits: "Public Sector Holiday", type: "D", start: {mon: 6, d: 2, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/international-childrens-day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, d: 14, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/assumption-day"}, inherits: "Public Sector Holiday"},
         {inherits: "Dormition of the Mother of God", type: "D", start: {mon: 8, d: 15}},

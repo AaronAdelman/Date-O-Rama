@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 10, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/serbia-remembrance-day"}, inherits: "Remembrance Day", titles: {"en": "World War II Serbian Victims Remembrance Day", "sr-Cyrl": "Дан сећања на српске жртве у Другом светском рату", "sr-Latn": "Dan sećanja na srpske žrtve u Drugom svetskom ratu    "}},
         {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1989}},
         
         {titles: {"en": "Holocaust, Genocide and Other Fascist Crimes Victims of the World War II Remembrance Day", "sr-Cyrl": "Дан сећања на жртве холокауста, геноцида и других жртава фашизма у Другом светском рату", "sr-Latn": "Dan sećanja na žrtve holokausta, genocida i drugih žrtava fašizma u Drugom svetskom ratu"}, type: "D", start: {mon: 4, d: 22}},

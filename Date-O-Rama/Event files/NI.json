@@ -31,7 +31,7 @@
         {inherits: "Feast of St. Anne", type: "D", start: {mon: 7, d: 26}},
         {type: "D", start: {mon: 8, d: 27}, urls: {"en": "https://nationaltoday.com/crab-soup-day/"}, titles: {"en": "Crab Soup Day"}, emoji: "🥣"},
         {type: "D", start: {mon: 10, d: 12}, inherits: "Indigenous Resistance Day"},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
    ]
 }

@@ -21,7 +21,7 @@
         {titles: {"en": "Celebrations of San Salvador", "es": "Fiesta de San Salvador"}, type: "D", start: {mon: 8, d: 6}, first: {era: 1, y: 1525}, urls: {"en": "https://nationaltoday.com/celebrations-of-san-salvador/"}, notes: {"en": "Fiesta Patronales Holiday"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/el-salvador-independence-day/"}},
         {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
         

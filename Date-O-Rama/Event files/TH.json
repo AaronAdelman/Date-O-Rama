@@ -65,7 +65,7 @@
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "National Rubber Day", "th": "วันยางพาราแห่งชาติ"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "King Naresuan Day", "th": "วันสมเด็จพระนเรศวรมหาราช"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Consumer Protection Day", "th": "วันคุ้มครองผู้บริโภค"}, first: {era: 1, y: 1980}},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}, titles: {"en": "National Labour Day", "th": "วันแรงงานแห่งชาติ"}, first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day", titles: {"en": "National Labour Day", "th": "วันแรงงานแห่งชาติ"}, first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "Work Safety Day", "th": "วันความปลอดภัยในการทำงานแห่งชาติ"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Mangrove Forest Day", "th": "วันป่าชายเลนแห่งชาติ"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 5, d: 14}, titles: {"en": "Thai Buffalo Conservation Day", "th": "วันอนุรักษ์ควายไทย"}, first: {era: 1, y: 2017}},
@@ -115,6 +115,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {type: "nD", start: {mon: 11, d: 14, thruD: 20, wkd: [7], durationD: 2}, titles: {"en": "Elephant Round-Up in Surin"}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, emoji: "🐘"},
+        {type: "nD", start: {mon: 11, d: 23, thruD: 29, wkd: [6], durationD: 2}, titles: {"en": "Pattaya International Fireworks Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/pattaya-international-fireworks-festival/"}, emoji: "🎆", first: {era: 1, y: 2022}},
     ],
     templates: [
         {template: "Chakri Day", type: "D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day", "th": "วันจักรี"}, notes: {"en": "Chakri Memorial Day"}},

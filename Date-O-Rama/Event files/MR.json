@@ -13,7 +13,7 @@
         
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
-        {inherits: "Independence Day", type: "D", start: {mon: 11, d: 28}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
+        {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1960}},
     ]
 }

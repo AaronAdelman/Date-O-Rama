@@ -12,7 +12,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en": "Sir Seretse Khama Day"}, urls: {"en": "https://www.officeholidays.com/holidays/botswana/sir-seretse-khama-day"}},
         {inherits: "President’s Day", type: "D", start: {mon: 7, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, first: {era: 1, y: 2006}},
@@ -26,7 +26,7 @@
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
         {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
         

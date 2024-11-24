@@ -13,7 +13,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, notes: {"en": "August Monday"}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/emancipation-day"}},

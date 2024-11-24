@@ -14,7 +14,7 @@
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}, first: {era: 1, y: 2021}},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 2015}, notes: {"en": "Genocide Memorial Day"}},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},
         {inherits: "Republic Day", type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-day-first-republic"}, notes: {"en": "Day of the First Republic"}, first: {era: 1, y: 1918}},
         {inherits: "Constitution Day", type: "D", start: {mon: 7, d: 5}, first: {era: 1, y: 1995}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-constitution-day"}},
@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Condemning and Preventing Genocides", "hy": "Ցեղասպանությունների դատապարտման եւ կանխարգելման օր"}},
         {inherits: "Vardavar", type: "D", start: {Easter:  "Easter", offsetD: 98}},
         
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 26}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Armenian Appreciation Day"}, urls: {"en": "https://nationaltoday.com/armenian-appreciation-day/"}},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Tea and Coffee Festival"}, emoji: "🫖☕", urls: {"en": "https://www.daysoftheyear.com/days/tea-and-coffee-festival/"}},

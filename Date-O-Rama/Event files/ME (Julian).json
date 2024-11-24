@@ -5,7 +5,7 @@
     calendarCode: "jul",
     calendarColor: {red: 0.85, green: 0.67, blue: 0.00},
     events: [
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},

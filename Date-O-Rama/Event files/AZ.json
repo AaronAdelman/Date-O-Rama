@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 11, d: 9}, inherits: "Flag Day", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-flag-day"}, first: {era: 1, y: 2009}},
         {titles: {"en": "International Solidarity Day of Azerbaijanis", "az": "Dünya Azərbaycanlılarının Həmrəyliyi günü"}, type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/world-azerbaijanis-solidarity-day/"}, first: {era: 1, y: 1991}, notes: {"en": "World Azerbaijanis Solidarity Day"}},
         
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 3, d: 17}},
         {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Air Force Day"},

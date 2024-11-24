@@ -9,7 +9,7 @@
         {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},

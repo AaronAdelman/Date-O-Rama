@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 7, d: 22, y: 2022, era: 1}, urls: {"en": "https://www.officeholidays.com/holidays/iraq/iraq-regional/iraq-public-holiday"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 8, d: 4, y: 2022, era: 1}, urls: {"en": "https://www.officeholidays.com/holidays/iraq/iraq-regional/iraq-public-holiday"}, inherits: "Public Holiday"},
         {inherits: "Liberation Day", type: "D", start: {mon: 4, d: 9}, locations: {"en": "Iraqi Kurdistan"}, notes: {"en": "Baghdad Liberation Day"}},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Republic Day", type: "D", start: {mon: 7, d: 14}, first: {era: 1, y: 1958}},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 3}, first: {era: 1, y: 1932}, urls: {"en": "https://nationaltoday.com/iraq-independence-day/"}},
         {inherits: "Victory Day", type: "D", start: {mon: 12, d: 10}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaltoday.com/iraq-victory-day/"}},
@@ -43,6 +43,6 @@
 
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}, locations: {"en": "Iraqi Kurdistan"}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", locations: {"en": "Iraqi Kurdistan"}},
     ]
 }

@@ -9,7 +9,7 @@
         {titles: {"en": "Feast of the Holy Name of Jesus"}, notes: {"en": "Christmastide (day 10)"}, type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {titles: {"en": "Feast of St. Elizabeth Ann Seton"}, notes: {"en": "Christmastide (day 11)"}, type: "D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {titles: {"en": "Feast of St. Raymond of Penyafort"}, type: "D", start: {mon: 1, d: 7}},
         {titles: {"en": "Baptism of the Lord"}, type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, urls: {"en": "https://nationaltoday.com/the-baptism-of-the-lord/"}},
         {titles: {"en": "Feast of St. Hilary of Poitiers"}, type: "D", start: {mon: 1, d: 13}},
@@ -149,7 +149,7 @@
         {titles: {"en": "Feast of Saints Pontian and Hippolytus"}, type: "D", start: {mon: 8, d: 13}},
         {titles: {"en": "Feast of St. Maximilian Mary Kolbe", "he": "החג של מקסימיליאן מריה קולבה הקדוש"}, type: "D", start: {mon: 8, d: 14}, first: {era: 1, y: 1982}},
         {inherits: "Vigil of Assumption Day", type: "D", start: {mon: 8, d: 14}},
-        {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "Feast of St. Stephen of Hungary", type: "D", start: {mon: 8, d: 16}},
         {titles: {"en": "St. Roch’s Day"}, type: "D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/st-rochs-day/"}},
 
@@ -239,7 +239,7 @@
         
         {inherits: "Feast of St. Francis Xavier", type: "D", start: {mon: 12, d: 3}},
         {titles: {"en": "Feast of St. John Damascene"}, type: "D", start: {mon: 12, d: 4}},
-        {inherits: "St. Nicholas Day", type: "D", start: {mon: 12, d: 6}},
+        {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {inherits: "Feast of St. Ambrose", type: "D", start: {mon: 12, d: 7}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {titles: {"en": "Feast of St. Juan Diego"}, type: "D", start: {mon: 12, d: 9}},
@@ -251,7 +251,7 @@
         {titles: {"en": "Feast of St. Peter Canisius", "he": "החג של פטרוס קניזיוס הקדוש"}, type: "D", start: {mon: 12, d: 21}},
         {titles: {"en": "Feast of St. John of Kanty"}, type: "D", start: {mon: 12, d: 23}},
 
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
         {inherits: "Feast of St. John the Apostle", type: "D", start: {mon: 12, d: 27}},

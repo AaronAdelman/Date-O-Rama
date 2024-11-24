@@ -13,7 +13,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/new-caledonia/bastille-day"}, inherits: "Bastille Day"},
-        {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", titles: {"en": "Citizenship Day", "fr": "Fête de la citoyenneté"}, start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/new-caledonia/new-caledonia-day"}, notes: {"en": "New Caledonia Day\nFrench Treaty Day", "he": " יום קלדוניה החדשה"}, inherits: "National Day"},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/new-caledonia/armistice-day"}, inherits: "Armistice Day"},

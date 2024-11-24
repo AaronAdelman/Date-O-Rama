@@ -28,7 +28,7 @@
         {inherits: "Day of Remembrance of the Victims of Political Repressions", start: {mon: 10, d: 30}, type: "D", first: {era: 1, y: 1991}},
         
         {inherits: "Father’s Day", type: "D", start: {mon: 5, d: 7}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
         {titles: {"en": "Abai Day"}, start: {mon: 8, d: 10}, type: "D", urls: {"en": "https://nationaltoday.com/abai-day/"}, first: {era: 1, y: 1845}},
         {type: "D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/kazakhstans-first-presidents-day/"}, titles: {"en": "First President’s Day"}, first: {era: 1, y: 2011}},

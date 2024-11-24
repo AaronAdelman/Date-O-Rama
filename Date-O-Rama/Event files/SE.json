@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.29, blue: 0.53},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inherits: "Midsummer Day"},
         {type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/all-saints-day"}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/fathers-day"}, inherits: "Father’s Day"},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/christmas-holiday"}, inherits: "St. Stephen’s Day"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},

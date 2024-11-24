@@ -33,7 +33,7 @@
         {inherits: "Melon Day", type: "D", start: {mon: 8, wkd: [1], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/melon-day/"}},
         {type: "D", start: {mon: 12, wkd: [1], nth: 1}, titles: {"en": "Good Neighborliness Day"}},
 
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 4, wkd: [1], nth: 1}, urls: {"en": "https://nationaltoday.com/a-drop-of-water-is-a-grain-of-gold/"}, titles: {"en": "A Drop of Water is a Grain of Gold"}, first: {era: 1, y: 1995}, emoji: "💧"},
         {type: "D", start: {mon: 4, wkd: [1], nth: -1}, urls: {"en": "https://nationaltoday.com/turkmen-racing-horse-festival/"}, titles: {"en": "Turkmen Racing Horse Festival"}, emoji: "🏇"},
    ]

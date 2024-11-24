@@ -7,7 +7,7 @@
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "National Day", type: "D", start: {mon: 12, d: 16}, urls: {"en": "https://nationaltoday.com/bahrain-national-day/"}},
         {type: "D", start: {mon: 12, d: 17}, inherits: "Accession Day"},
 

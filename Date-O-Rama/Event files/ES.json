@@ -8,7 +8,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/spain/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}, urls: {"en": "https://www.officeholidays.com/holidays/spain/extremadura/carnival-tuesday"}},
         {type: "D", start: {mon: 2, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/spain/andalucia/andalucia-day"}, titles: {"en": "Andalucía Day", "es": "Día de Andalucía"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"}, titles: {"en": "Balearic Day", "es": "Dia de las Islas Baleares"}, first: {era: 1, y: 1999}, notes: {"en": "Day of the Balearic Islands"}},
@@ -71,7 +71,7 @@
         {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
         {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
         {titles: {"en": "Festival of the Vaquillas"}, type: "D", start: {mon: 7, d: 13}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 3, d: 19}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 4, d: 15}},
         {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},

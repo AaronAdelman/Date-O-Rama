@@ -46,7 +46,7 @@
         {type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, inherits: "Birthday of the Sultan of Kelantan", first: {era: 1, y: 2022}, last: {era: 1, y: 2023}},
         {type: "D", start: {mon: 12, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of the Sultan of Selangor", "ms": "Hari Keputeraan Sultan Selangor"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 12, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, titles: {"en": "Birthday of the Sultan of Selangor (in lieu)"}, inherits: "*BDay*"},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},

@@ -7,15 +7,15 @@
     first: {era: 1, y: 2002},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Statehood Day", type: "D", start: {mon: 5, d: 30}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Croatia)"}, first: {era: 1, y: 1991}, notes: {"en": "National Day"}},
         {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
         {type: "D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/anti-fascist-struggle-day/"}, titles: {"en": "Anti-Fascist Struggle Day", "hr": "Dan antifašističke borbe"}},
         {titles: {"en": "Victory and Homeland Thanksgiving Day", "hr": "Dan pobjede"}, type: "D", start: {mon: 8, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/croatia/victory-and-homeland-thanksgiving-day"}},
-        {inherits: "Assumption Day", type: "D", start: {mon: 8, d: 15}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
         {titles: {"en": "Day of Remembrance of the Victims of the Homeland War", "hr": "Dan sjećanja na žrtve Domovinskog rata"}, type: "D", start: {mon: 11, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
@@ -39,7 +39,7 @@
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "Feast of St. Dominus", "hr": "Sveti Duje"}},
         {inherits: "Feast of St. Blaise", type: "D", start: {mon: 2, d: 3}},
 
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
 

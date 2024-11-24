@@ -23,13 +23,13 @@
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {type: "D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/macao-sare-day/"}, titles: {"en": "Macao SARE Day", "pt": "Dia Comemorativo do estabelecimento da Região Administrativa Especial de Macau", "zh": "澳門特別行政區成立紀念日"}, first: {era: 1, y: 1999}},
         {inherits: "Winter Solstice", type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://www.officeholidays.com/holidays/macau/dongzhi"}, titles: {"en": "Dongzhi", "pt": "Solstício de Inverno", "zh": "冬至"}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/macau/christmas-eve"}, titles: {"en": "Christmas Eve (in lieu)"}},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
    ]
 }

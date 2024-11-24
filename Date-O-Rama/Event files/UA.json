@@ -44,7 +44,7 @@
         {titles: {"en": "Operational Servicemen Day"}, type: "D", start: {"mon": 12, d: 23}},
         {titles: {"en": "Anniversary of the Autocephaly of the Orthodox Church of Ukraine"}, type: "D", start: {"mon": 1, d: 5}},
         {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 6}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Synaxis of St. John the Baptist", type: "D", start: {"mon": 1, d: 7}},
         {titles: {"en": "Day of Remembrance of the Ukrainian Defenders of the Second Battle of Donetsk Airport (2014-2015)"}, type: "D", start: {"mon": 1, d: 20}},
         {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
@@ -125,7 +125,7 @@
         {titles: {"en": "Liberation of Kherson Day"}, type: "D", start: {"mon": 11, d: 11}, first: {era: 1, y: 2023}},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 1}, titles: {"en": "Day of Children’s Protection", "uk": "День захисту дітей"}, first: {era: 1, y: 1998}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", titles: {"en": "Day of Children’s Protection", "uk": "День захисту дітей"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Unity Day", first: {era: 1, y: 1971}, titles: {"en": "Day of Unity"}},
         {type: "D", start: {mon: 8, d: 6}, inherits: "Air Force Day", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 9}, inherits: "Friendship Day"},

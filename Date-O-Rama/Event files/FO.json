@@ -17,7 +17,7 @@
         {inherits: "Constitution Day", type: "D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
         {titles: {"en": "St. Olav’s Eve", "fo": "Ólavsøkuaftan"}, type: "D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {era: 1, y: 1031}},
         {titles: {"en": "St. Olav’s Day", "fo": "Ólavsøkudagur"}, type: "D", start: {mon: 7, d: 29}, start: {era: 1, y: 1031}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/st-olavs-day"}},
-        {inherits: "Christmas Eve", type: "D", start: {mon: 12, d: 24}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},

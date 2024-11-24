@@ -21,7 +21,7 @@
         
         {type: "D", start: {mon: 3, d: 12}, inherits: "Arbor Day"},
         {inherits: "Youth Day", type: "D", start: {mon: 3, d: 29}},
-        {inherits: "Labour Day", type: "D", start: {mon: 5, d: 1}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Literary_Day"}, titles: {"en": "Literary Day", "zh": "五四文藝節", "zh_CN": "五四文艺节"}},
         {type: "D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/opium-suppression-movement-day/"}, titles: {"en": "Opium Suppression Movement Day", "zh": "禁菸節"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Journalists’ Day", "zh": "記者節"}},
