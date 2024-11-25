@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.52, blue: 0.79},
     first: {era: 1, y: 1960},
     events: [
-        {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
+        {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 1, d: 4}, first: {era: 1, y: 1959}},
         {titles: {"en": "Laurent-Désiré Kabila Assassination"}, type: "D", start: {mon: 1, d: 16}, first: {era: 1, y: 2001}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},
         {titles: {"en": "Patrice Lumumba Assassination"}, type: "D", start: {mon: 1, d: 17}, first: {era: 1, y: 1961}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},
@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {inherits: "Army Day", type: "D", start: {mon: 11, d: 17}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 25}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Children’s Day"},
    ]
 }

@@ -24,7 +24,7 @@
         {titles: {"en": "Zero Discrimination Day", "he": "יום אפס אפליה"}, type: "D", start: {mon: 3, d: 1}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaldaycalendar.com/zero-discrimination/"}, emoji: "0️⃣", notes: {"en": "Yet another observance paying lip service to something that the UN has utterly failed to promote."}},
         {titles: {"en": "World Wildlife Day", "he": "יום חיות הבר העולמי"}, type: "D", start: {mon: 3, d: 3}, first: {era: 1, y: 2014}, urls: {"en": "https://www.wildlifeday.org/"}, emoji: "🦅"},
         {titles: {"en": "World Engineering Day for Sustainable Development", "he": "יום ההנדסה העולמי לפיתוח בר קיימא"}, type: "D", start: {mon: 3, d: 4}, first: {era: 1, y: 2014}, emoji: "🦾"},
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}, first: {era: 1, y: 2021}, urls: {"en": "https://nationaltoday.com/united-nations-day-for-womens-rights-and-international-peace/"}, notes: {"en": "United Nations Day for Women’s Rights and International Peace"}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}, urls: {"en": "https://nationaltoday.com/united-nations-day-for-womens-rights-and-international-peace/"}, notes: {"en": "United Nations Day for Women’s Rights and International Peace"}},
         {titles: {"en": "International Day of Women Judges", "he": "יום השופטות הבינלאומי"}, type: "D", start: {mon: 3, d: 10}, first: {era: 1, y: 2022}, urls: {"en": "https://nationaldaycalendar.com/international-womens-day-march-8/"}, emoji: "👩‍⚖️"},
         {inherits: "Pi Day", titles: {"en": "International Day of Mathematics", "he": "יום הבינלאומי למתמטיקה"}, type: "D", start: {mon: 3, d: 14}, first: {era: 1, y: 2020}, notes: {"en": "The name “Pi Day” was just too cool and well-known for the UN."}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-mathematics/"}},
         {inherits: "International Day of Happiness", type: "D", start: {mon: 3, d: 20}, first: {era: 1, y: 2012}},
@@ -248,13 +248,12 @@
         {type: "D", start: {mon: 3, d: 18}, urls: {"en": "https://www.globalrecyclingday.com/"}, titles: {"en": "Global Recycling Day"}, first: {era: 1, y: 2015}, emoji: "♻️"},
         {type: "D", start: {mon: 5, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-plant-health/"}, titles: {"en": "International Day of Plant Health"}, emoji: "🌱", first: {era: 1, y: 2022}},
         {type: "M", start: {mon: 10}, titles: {"en": "World Habitat Awareness Month", "he": "חודש בית הגידול העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/world-habitat-awareness-month/"}, emoji: "🏙", first: {era: 1, y: 1986}},
-        {type: "M", start: {mon: 12}, titles: {"en": "Universal Human Rights Month"}, urls: {"en": "https://nationaltoday.com/universal-human-rights-month/"}, emoji: "⚖️"},
+        {type: "M", start: {mon: 12}, titles: {"en": "Universal Human Rights Month"}, urls: {"en": "https://www.daysoftheyear.com/days/human-rights-month/"}, emoji: "⚖️"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Global Family Day"}, urls: {"en": "https://www.daysoftheyear.com/days/global-family-day/"}, inherits: "Family Day", first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"en": "International Day of the Potato"}, emoji: "🥔", urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-the-potato/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "World Kiswahili Language Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-kiswahili-language-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-combating-sand-and-dust-storms/"}, titles: {"en": "International Day of Combating Sand and Dust Storms"}, first: {era: 1, y: 2023}, emoji: "🏜️"},
         {type: "D", start: {mon: 10, d: 29}, titles: {"en": "International Day of Care and Support"}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-care-and-support/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
-
 
         {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, end: {era: 1, y: 2032}, notes: {"en": "Indigenous Languages Decade"}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", end: {era: 1, y: 2030}},

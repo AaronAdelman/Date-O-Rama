@@ -23,7 +23,7 @@
         {inherits: "Mother’s Day", type: "D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
         {inherits: "Mother’s Day (in lieu)", type: "D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {titles: {"en": "Boxing Day (in lieu)"}, type: "D", start: {mon: 12, d: 27, thruD: 28, wkd: [3]}},
 
         {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},

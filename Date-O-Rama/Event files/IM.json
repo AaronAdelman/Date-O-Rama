@@ -7,7 +7,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/isle-of-man/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "Mothering Sunday", type: "D", start: {Easter:  "Easter", offsetD: -21}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -21}, inherits: "Mothering Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/isle-of-man/august-bank-holiday"}, inherits: "August Bank Holiday"},
         {type: "D", start: {mon: 11, d: 8, thruD: 14, wkd: [1]}, inherits: "Remembrance Sunday", first: {era: 1, y: 1939}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [
         {template: "Tynwald Day", type: "D", start: {mon: 7, d: 5, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/tynwald-day/"}, titles: {"en": "Tynwald Day"}},

@@ -14,6 +14,6 @@
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {inherits: "Territory Day", type: "D", start: {mon: 10, d: 6}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

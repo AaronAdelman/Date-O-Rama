@@ -33,13 +33,13 @@
         {type: "D", start: {mon: 11, d: 19}, inherits: "Garifuna Settlement Day", first: {era: 1, y: 1943}},
         {type: "D", start: {mon: 11, d: 20, wkd: [2]}, inherits: "Garifuna Settlement Day", first: {era: 1, y: 1943}, titles: {"en": "Garifuna Settlement Day (in lieu)"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 27, wkd: [2]}, titles: {"en": "Boxing Day Holiday"}},
 
         {inherits: "Commonwealth Day", type: "D", start: {mon: 5, d: 24, wkd: [2, 3, 4, 5, 6, 7]}},
         {inherits: "Commonwealth Day", type: "D", start: {mon: 5, d: 25, wkd: [2]}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ],
     templates: [
         {template: "Garifuna Settlement Day", type: "D", start: {mon: 11, d: 19}, titles: {"en": "Garifuna Settlement Day"}, urls: {"en": "https://nationaltoday.com/garifuna-settlement-day/"}},

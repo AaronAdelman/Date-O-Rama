@@ -6,7 +6,7 @@
     emoji: "🌐",
     "TODO": "World Jump Day activity at 11:39:13 GMT",
     events: [
-        {inherits: "Africa Day", type: "D", start: {mon: 5, d: 25}},
+        {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day"},
         {inherits: "Antarctica Day", type: "D", start: {mon: 12, d: 1}, first: {era: 1, y: 2010}},
         {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 1919}},
@@ -414,6 +414,7 @@
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Brownielocks Day"}, notes: {"en": "Big Hair Day\nBrunette Pride Day\nIt seems that people of every hair color want to celebrate it for some reason."}, first: {era: 1, y: 2013}, urls: {"en": "https://www.brownielocks.com/brownielocksday.html"}},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Celebrate Your Unique Talent Day"}, emoji: "🎻", urls: {"en": "https://www.daysoftheyear.com/days/celebrate-your-unique-talent-day/"}},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "D.B. Cooper Day"}, urls: {"en": "https://www.daysoftheyear.com/days/d-b-cooper-day/"}, first: {era: 1, y: 1996}, emoji: "💵"},
+        {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Evolution Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Evolution_Day"}, first: {era: 1, y: 1997}, emoji: "🧬"},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "International Au Pair Day"}, urls: {"en": "https://internationalaupairday.com/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "Gazpacho Soup Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/gazpacho-soup-day/"}, first: {era: 1, y: 1987}, notes: {"en": "This observance celebrates the episode “Me²” of Red Dwarf."}},
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "International Vegetarian Day"}, inherits: "World Vegetarian Day", notes: {"en": "SAK Meatless Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://en.wikipedia.org/wiki/World_Vegetarian_Day"}},
@@ -1821,9 +1822,7 @@
         {type: "M", start: {mon: 11}, titles: {"en": "World Vegan Month", "he": "חודש הטבעונות העולמי"}, urls: {"en": "https://www.vegansociety.com/get-involved/world-vegan-month"}, emoji: "🌻", first: {era: 1, y: 1994}, notes: {"en": "Vegan Awareness Month"}},
         {type: "M", start: {mon: 11}, titles: {"en": "Worldwide Bereaved Siblings Month"}, urls: {"en": "https://www.daysoftheyear.com/days/worldwide-bereaved-siblings-month/"}},
         {type: "M", start: {mon: 12}, titles: {"en": "Bingo’s Birthday Month"}, urls: {"en": "https://www.nationaldaycalendar.com/arts-entertainment/bingos-birthday-month-december"}},
-        {type: "M", start: {mon: 12}, titles: {"en": "Worldwide Food Service Safety Month", "he": "חודש בטיחות שירותי המזון העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/food-service-safety-month/"}, emoji: "👨‍🍳👩‍🍳"},
         {type: "M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/december/root-vegetables-and-exotic-fruit-month-december"}, titles: {"en": "Root Vegetables and Exotic Fruits Month"}, emoji: "🥕🍍"},
-        {type: "M", start: {mon: 12}, urls: {"en": "https://www.nationaldaycalendar.com/december/worldwide-food-service-safety-month-december"}, titles: {"en": "Worldwide Food Service Safety Month"}, emoji: "🗡️", first: {era: 1, y: 1994}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/adopt-a-rescued-rabbit-month/"}, titles: {"en": "Adopt a Rescued Rabbit Month"}, first: {era: 1, y: 2002}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/an-affair-to-remember-month/"}, titles: {"en": "An Affair to Remember Month"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/barley-month/"}, titles: {"en": "Barley Month"}, emoji: "𐂏"},
@@ -2131,7 +2130,6 @@
         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 1, d: 1}, titles: {"en": "MADD Tie One On For Safety Holiday Campaign"}, urls: {"en": "https://madd.org/drunk-driving/tie-one-on-for-safety/"}, first: {era: 1, y: 1983}, emoji: "🚗"},
         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "World Communication Week"}, notes: {"en": "Global Communication Week"}, urls: {"en": "https://www.daysoftheyear.com/days/world-communication-week/"}, first: {era: 1, y: 1988}},
         {type: "nD", start: {mon: 11, d: 13}, end: {mon: 11, d: 19}, titles: {"en": "Transgender Awareness Week"}, first: {era: 1, y: 1999}},
-        {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/crohns-and-colitis-awareness-week/"}, titles: {"en": "Crohn’s and Colitis Awareness Week"}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/african-heritage-and-health-week/"}, titles: {"en": "African Heritage and Health Week"}, emoji: "🌍"},
         {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/solo-diners-eat-out-week/"}, titles: {"en": "Solo Diners Eat Out Week"}, emoji: "🍽️"},
         {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/womens-heart-week/"}, titles: {"en": "Women’s Heart Week"}, emoji: "❤️"},
@@ -2253,7 +2251,7 @@
         
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-            {inherits: "May Day", type: "D", start: {mon: 5, d: 1}},
+            {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
         ]},
         
         {type: "M", start: {mon: 10}, titles: {"en": "World Lemur Festival"}, urls: {"en": "https://www.lemurconservationnetwork.org/world-lemur-day/"}, first: {era: 1, y: 2014}, nonoverlappingSubEvents: [

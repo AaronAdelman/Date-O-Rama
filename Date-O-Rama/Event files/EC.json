@@ -28,7 +28,7 @@
 
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "Galapagos Day", "es": "Día de la Provincia de Galápagos"}, notes: {"en": "Amazon and Galapagos Day\nOrient Day", "es": "Día del Oriente)"}, emoji: "🐢"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 29}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 7, d: 25}, inherits: "Navy Day"},

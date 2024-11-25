@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 10, d: 4, wkd: [3]}, inherits: "Tuvalu Day Holiday", first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 11, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/tuvalu/heir-to-the-throne-day"}, titles: {"en": "Heir to the Throne Day"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 1, d: 8}, locations: {"en": "Nanumea"}, titles: {"tvl": "Te Po o Tefolaha"}},
         {type: "D", start: {mon: 2, d: 11}, locations: {"en": "Nukufetau"}, titles: {"tvl": "Te Aso o Tutasi"}},

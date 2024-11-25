@@ -5,7 +5,7 @@
     calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     events: [
         {inherits: "1st Advent Sunday", type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}, titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {inherits: "Nakba Day", type: "D", start: {mon: 5, d: 15}, first: {era: 1, y: 2023}, notes: {"en": "Thank the US Presbyterian Church for adopting an antisemitic hate-fest."}, titles: {"en": "Nakba Remembrance Day"}},
         {inherits: "National Doughnut Day", type: "D", start: {mon: 6, wkd: [6], nth: 1}, urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}},
         {inherits: "National Love People Day", type: "D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}},

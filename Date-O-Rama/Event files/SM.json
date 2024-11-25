@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 7, d: 28}, titles: {"en": "Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, first: {era: 1, y: 1943}, notes: {"en": "Liberation from Fascism"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 3}, titles: {"en": "Foundation Day"}, urls: {"en": "https://nationaltoday.com/foundation-day-in-san-marino/"}, first: {era: 1, y: 301}, notes: {"en": "Feast of St. Marinus and the Republic"}},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/all-souls-day"}, titles: {"en": "Commemoration of the Dead"}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},

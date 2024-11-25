@@ -16,6 +16,6 @@
         {type: "D", start: {mon: 6, wkd: [2], nth: 2}, inherits: "King’s Birthday", first: {era: 1, y: 2023}},
         {inherits: "Thanksgiving Day", type: "D", start: {mon: 11, wkd: [4], nth: -1}, first: {era: 1, y: 1957}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

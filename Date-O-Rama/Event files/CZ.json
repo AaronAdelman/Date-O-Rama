@@ -13,7 +13,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Feast of Saints Cyril and Methodius", type: "D", start: {mon: 7, d: 5}},
         {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/jan-hus-day-in-czech-republic/"}},
         {type: "D", start: {mon: 8, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/czech-republic/day-of-memory"}, titles: {"en": "Day of Memory"}},

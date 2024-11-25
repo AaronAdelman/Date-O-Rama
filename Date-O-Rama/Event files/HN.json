@@ -16,7 +16,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/americas-day/"}, titles: {"en": "Americas Day", "es": "Día de la Americas"}, notes: {"en": "Pan American"}, first: {era: 1, y: 1931}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/honduras/mothers-day"}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/honduras/mothers-day"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/honduras-independence-day/"}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "Francisco Morazán’s Day", "es": "Día del Soldado"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}, notes: {"en": "Francisco Morazan’s Birthday\nSoldier’s Day", "he": "יום החייל"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 10, d: 5}, inherits: "Francisco Morazán’s Day (in lieu)", first: {era: 1, y: 2022}, last: {era: 1, y: 2024}},

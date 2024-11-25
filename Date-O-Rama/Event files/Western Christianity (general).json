@@ -49,7 +49,7 @@
         {titles: {"en": "Feast of Saints Perpetua and Felicity"}, type: "D", start: {mon: 3, d: 7}},
         {titles: {"en": "Feast of St. John of God"}, type: "D", start: {mon: 3, d: 8}},
         {titles: {"en": "Feast of St. Frances of Rome"}, type: "D", start: {mon: 3, d: 9}},
-        {inherits: "St. Patrick’s Day", type: "D", start: {mon: 3, d: 17}},
+        {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {titles: {"en": "Feast of St. Cyril of Jerusalem"}, type: "D", start: {mon: 3, d: 18}},
 
         {inherits: "St. Joseph’s Day", type: "D", start: {mon: 3, d: 19}},
@@ -209,7 +209,7 @@
         
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
 
         {titles: {"en": "Feast of St. Martin de Porres"}, type: "D", start: {mon: 11, d: 3}},
@@ -229,7 +229,7 @@
         {titles: {"en": "Feast of St. Clement I or St. Columban"}, type: "D", start: {mon: 11, d: 23}},
         {titles: {"en": "Feast of St. Andrew Dung-Lac and his companions"}, type: "D", start: {mon: 11, d: 24}},
         {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},
-        {inherits: "St. Andrew’s Day", type: "D", start: {mon: 11, d: 30}},
+        {type: "D", start: {mon: 11, d: 30}, inherits: "St. Andrew’s Day"},
         
         {inherits: "Feast of Christ the King", type: "D", start: {mon: 11, d: 20, thruD: 26, wkd: [1]}},
         {inherits: "1st Advent Sunday", type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}},
@@ -341,8 +341,8 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {titles: {"en": "Seventh Sunday of Easter"}, type: "D", start: {Easter:  "Easter", offsetD: 42}},
         {inherits: "Whit Saturday", type: "D", start: {Easter:  "Easter", offsetD: 48}},
-        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
-        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {inherits: "Whit Tuesday", type: "D", start: {Easter:  "Easter", offsetD: 51}},
         {titles: {"en": "Whit Wednesday"}, type: "D", start: {Easter:  "Easter", offsetD: 52}, emoji: "⚪️"},
         {titles: {"en": "Whit Thursday"}, type: "D", start: {Easter:  "Easter", offsetD: 53}, emoji: "⚪️"},

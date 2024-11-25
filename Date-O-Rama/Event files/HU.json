@@ -13,13 +13,13 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/hungary/mothers-day"}, inherits: "Mother’s Day"},
-        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
-        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/hungary/fathers-day"}, inherits: "Father’s Day"},
         {inherits: "Feast of St. Stephen of Hungary", type: "D", start: {mon: 8, d: 19, wkd: [2]}, urls: {"en": "https://nationaltoday.com/st-stephens-day/"}, titles: {"en": "Feast of St. Stephen of Hungary (bridge day)"}},
         {inherits: "Feast of St. Stephen of Hungary", type: "D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/st-stephens-day/"}, notes: {"en": "State Foundation Day\nNational Day\nConstitution Day", "hu": "Az államalapítás ünnepe"}},
         {inherits: "Republic Day", notes: {"en": "1956 Revolution Memorial Day"}, type: "D", start: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/republic-day-hungary/"}, first: {era: 1, y: 1956}},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inherits: "Boxing Day"},
         
@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Memorial Day for the Martyrs of Arad", "hu": "Az aradi vértanúk emléknapja"}},
         
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
         

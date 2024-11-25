@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 9, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/fiji-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 2013}},
         {inherits: "Independence Day", titles: {"en": "Fiji Day", "he": "יום פיג׳י"}, type: "D", start: {mon: 10, d: 10}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/fiji-day/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
         {titles: {"en": "Children’s Sunday"}, type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Children’s Day"},
@@ -26,7 +26,7 @@
         {inherits: "National Youth Day", type: "D", start: {mon: 5, d: 4}},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 9, wkd: [1], nth: 1}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "National Forgiveness Week", first: {era: 1, y: 2004}},
     ]
 }

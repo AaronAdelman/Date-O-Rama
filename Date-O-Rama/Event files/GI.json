@@ -20,6 +20,6 @@
         {type: "D", start: {mon: 8, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/august-bank-holiday"}, titles: {"en": "Late Summer Bank Holiday"}, inherits: "Bank Holiday"},
         {inherits: "National Day", type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/gibraltar-independence-day/"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

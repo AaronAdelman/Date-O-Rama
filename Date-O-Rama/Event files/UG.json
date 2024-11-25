@@ -20,10 +20,10 @@
         {inherits: "National Heroes’ Day", type: "D", start: {mon: 6, d: 9}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-uganda/"}},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 9}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/uganda-independence-day/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
 
         {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
     ]

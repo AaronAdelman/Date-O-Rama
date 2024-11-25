@@ -9,7 +9,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
         {inherits: "Heroes’ Day", type: "D", start: {Easter: "Easter", offsetD: 39}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
-        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
     ]
 }

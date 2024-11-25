@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Prince Louis Rwagasore Day"}, urls: {"en": "https://nationaltoday.com/prince-louis-rwagasore-day/"}, first: {era: 1, y: 1961}, notes: {"en": "Rwagasore Day"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {era: 1, y: 1993}, inherits: "Presidents’ Day", notes: {"en": "Ndadaye Day"}},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},

@@ -24,7 +24,7 @@
         {inherits: "St. Vardanian’s Day", type: "D", start: {Easter:  "Easter", offsetD: -52}},
         {inherits: "Teacher’s Day", type: "D", start: {mon: 3, d: 9}},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
         {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},

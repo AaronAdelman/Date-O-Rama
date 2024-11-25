@@ -21,6 +21,6 @@
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}, notes: {"en": "Somhlolo Day"}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 9, d: 7, wkd: [2]}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}, notes: {"en": "Somhlolo Day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

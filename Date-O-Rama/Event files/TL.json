@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 5, d: 20}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/east-timor-independence-day/"}, inherits: "Independence Restoration Day"},
         {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
         {titles: {"en": "Popular Consultation Day", "he": "יום הייעוץ הפופולרי"}, type: "D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/popular-consultation-day/"}, first: {era: 1, y: 1999}},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
         {inherits: "National Youth Day", type: "D", start: {mon: 11, d: 12}, first: {era: 1, y: 1991}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, notes: {"en": "Youth National Day"}},
         {inherits: "Proclamation of Independence Day", type: "D", start: {mon: 11, d: 28}, first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},

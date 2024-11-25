@@ -41,7 +41,7 @@
         {titles: {"en": "The Leave-Taking of Pascha"}, type: "D", start: {Easter:  "Easter", offsetD: 38}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day", urls: {"en": "https://nationaltoday.com/orthodox-ascension-day/"}},
         {titles: {"en": "The Fathers of the First Ecumenical Council"}, type: "D", start: {Easter:  "Easter", offsetD: 42}},
-        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost", urls: {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
         {inherits: "All Saints Day", type: "D", start: {Easter:  "Easter", offsetD: 56}},
         
         {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
@@ -53,7 +53,7 @@
         {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
         {inherits: "Feast of the Annunciation", type: "D", start: {mon: 3, d: 25}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {inherits: "Pentecost", type: "D", start: {Easter:  "Easter", offsetD: 49}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {inherits: "Feast of the Transfiguration", type: "D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},
         {inherits: "Dormition of the Mother of God", type: "D", start: {mon: 8, d: 15}},
         {type: "D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
@@ -64,7 +64,7 @@
         {inherits: "Beheading of St. John the Baptist", type: "D", start: {mon: 8, d: 29}},
         {inherits: "Intercession of the Theotokos", type: "D", start: {mon: 10, d: 1}},
         
-        {inherits: "Whit Monday", type: "D", start: {Easter:  "Easter", offsetD: 50}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},
         
         {inherits: "St. Florian’s Day", type: "D", start: {mon: 5, d: 4}},
         {inherits: "St. Rupert’s Day", type: "D", start: {mon: 3, d: 27}},

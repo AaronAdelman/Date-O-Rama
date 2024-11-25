@@ -19,6 +19,6 @@
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/christmas-holiday"}, titles: {"en": "Day after Christmas"}},
         {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ]
 }

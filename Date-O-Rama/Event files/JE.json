@@ -6,7 +6,7 @@
     calendarColor: {red: 0.81, green: 0.08, blue: 0.17},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Mothering Sunday", type: "D", start: {Easter:  "Easter", offsetD: -21}, notes: {"en": "Mother’s Day"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -21}, inherits: "Mothering Sunday", notes: {"en": "Mother’s Day"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

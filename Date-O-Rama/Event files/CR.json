@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.13, blue: 0.36},
     first: {era: 1, y: 1821},
     events: [
-        {inherits: "New Year’s Day", type: "D", start:  {mon: 1, d: 1}},
+        {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
         {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},

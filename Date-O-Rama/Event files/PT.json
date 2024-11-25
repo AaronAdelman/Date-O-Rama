@@ -21,7 +21,7 @@
         {titles: {"en": "Madeira Day", "pt": "Dia da Região Autónoma da Madeira e das Comunidades Madeirenses"}, type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/madeira-day/"}, first: {era: 1, y: 1976}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "Republic Day", type: "D", start: {mon: 10, d: 5}, first: {era: 1, y: 1910}, urls: {"en": "https://nationaltoday.com/portugal-republic-day/"}},
-        {inherits: "All Saints Day", type: "D", start: {mon: 11, d: 1}},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {inherits: "Restoration of Independence Day", type: "D", start: {d: 1, mon: 12}, first: {era: 1, y: 1668}, urls: {"en": "https://nationaltoday.com/portugal-independence-day/"}},
         {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

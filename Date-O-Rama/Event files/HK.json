@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 12, d: 27, thruD: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/christmas-holiday"}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 4, d: 4}},
         {inherits: "Liberation Day", type: "D", start: {mon: 8, wkd: [2], nth: -1}, first: {era: 1, y: 1945}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 10, wkd: [1], nth: 2}, first: {era: 1, y: 1990}},

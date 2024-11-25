@@ -23,11 +23,11 @@
         {type: "D", start: {mon: 9, d: 23, wkd: [2]}, inherits: "Kwame Nkrumah Memorial Day (in lieu)"},
         {type: "D", start: {mon: 12, wkd: [6], nth: 1}, inherits: "Farmers’ Day", urls: {"en": "https://nationaltoday.com/ghana-farmers-day/"}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "Boxing Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/ghana-republic-day/"}, inherits: "Republic Day", notes: {"en": "Senior Citizens’ Day"}, first: {era: 1, y: 1960}, emoji: "👴👵"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Republic Day", type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/ghana-republic-day/"}, first: {era: 1, y: 1960}},
         {type: "nD", start: {mon: 7, d: 23}, end: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/panafest/"}, titles: {"en": "PANAFEST", "he": "פרוייקט התיאטרון ההיסטורי הפאן־אפריקאי"}, first: {era: 1, y: 1991}, notes: {"en": "Pan African Historical Theatre Project"}},
    ],

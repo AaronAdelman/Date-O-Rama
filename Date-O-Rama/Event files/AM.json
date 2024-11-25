@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "Christmas Day", type: "D", start: {mon: 1, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {type: "D", start: {mon: 1, d: 28}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-national-army-day"}, notes: {"en": "National Army Day"}, first: {era: 1, y: 2001}},
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}, first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 2015}, notes: {"en": "Genocide Memorial Day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

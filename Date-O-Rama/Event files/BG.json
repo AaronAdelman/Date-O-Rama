@@ -24,7 +24,7 @@
 
         {inherits: "National Awakening Day", type: "D", start: {mon: 11, d: 1}},
         {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/baba-marta/"}, titles: {"en": "Baba Marta", "bg": "Баба Марта"}},
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         

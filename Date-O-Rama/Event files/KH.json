@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {titles: {"en": "Victory Over Genocide Day", "km": "ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}, type: "D", start: {mon: 1, d: 7}},
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {titles: {"en": "King Sihamoni’s Birthday", "km": "ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, type: "D", start: {mon: 5, d: 14}, inherits: "*BDay*"},
         {titles: {"en": "King Mother’s Birthday", "km": "ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះមហាក្សត្រី នរោត្ដម មុនីនាថ សីហនុ"}, type: "D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/kings-mothers-birthday/"}, first: {era: 1, y: 2004}, inherits: "*BDay*", notes: {"en": "Queen Mother’s Birthday"}},
@@ -20,7 +20,7 @@
 
         {type: "D", start: {mon: 5, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, titles: {"en": "National Day of Remembrance", "km": "ទិវាជាតិនៃការចងចាំ"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
     ]
 }

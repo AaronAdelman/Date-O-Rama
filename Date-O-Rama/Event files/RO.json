@@ -31,7 +31,7 @@
         {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Engineer’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 1877}, titles: {"en": "State Independence Day of Romania", "ro": "Ziua Independenței de Stat a României"}},
-        {inherits: "International Women’s Day", type: "D", start: {mon: 3, d: 8}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Navy Day"},
 
         {type: "D", start: {mon: 2, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, titles: {"en": "Constantin Brâncuși Day"}, first: {era: 1, y: 2015}, notes: {"en": "Brâncuși Day\nConstantin Brancusi Day"}},
