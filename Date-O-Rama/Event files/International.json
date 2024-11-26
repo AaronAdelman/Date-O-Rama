@@ -423,6 +423,7 @@
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "International Cake Day"}, urls: {"en": "https://nationaltoday.com/international-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "World Lewis Day"}, urls: {"en": "https://nationaltoday.com/world-lewis-day/"}, emoji: "🐨"},
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [4]}, titles: {"en": "Choose Women Wednesday"}, urls: {"en": "https://nationaltoday.com/choose-women-wednesday/"}, first: {era: 1, y: 2016}, emoji: "👩‍💼", notes: {"en": "Women on Wednesday\nWomen Owned Wednesday\n#WomenWOW\nWomenWednesday\nWomen Wednesday"}},
+        {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Pie in the Face Day"}, urls: {"en": "https://www.checkiday.com/bf57a06e98b6d0c2d2941866097a2053/pie-in-the-face-day"}, emoji: "🥧"},
         {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Pins and Needles Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pins-and-needles-day/"}, emoji: "🪡", notes: {"en": "Needle Day\nSewing Day"}},
         {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Turtle Adoption Day"}, urls: {"en": "https://www.daysoftheyear.com/days/turtle-adoption-day/"}, emoji: "🐢", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 11, d: 28}, titles: {"en": "Mediterranean Day"}, notes: {"en": "International Day of the Mediterranean\nDay of the Mediterranean"}, urls: {"en": "https://mediterraneanday.com/"}, first: {era: 1, y: 2021}, emoji: "🌍"},
