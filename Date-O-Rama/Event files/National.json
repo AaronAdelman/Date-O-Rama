@@ -472,7 +472,7 @@
         {type: "D", start: {mon: 11, d: 3}, titles: {"en": "National Accessory Day"}, notes: {"en": "Another fashion-related observance.  Nothing to see here.  Move along."}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 11, d: 3}, titles: {"en": "National Homemaker Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-homemaker-day/"}, notes: {"en": "National Housewife Day\nNational Housewife’s Day"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 11, d: 3}, titles: {"en": "National Sandwich Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sandwich-day/"}, emoji: "🥪", notes: {"en": "Sandwich Day"}},
-        {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Computer Security Day"}, urls: {"en": "https://www.daysoftheyear.com/days/computer-security-day/"}, emoji: "💻", first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Computer Security Day"}, notes: {"en": "Computer Security Day"}, urls: {"en": "https://www.daysoftheyear.com/days/computer-security-day/"}, emoji: "💻", first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Mousse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mousse-day/"}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Candy Day"}, emoji: "🍬", urls: {"en": "https://www.daysoftheyear.com/days/candy-day/"}},
         {type: "D", start: {mon: 11, d: 4}, titles: {"en": "National Easy Bake Oven Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-easy-bake-oven-day/"}, first: {era: 1, y: 2017}},
