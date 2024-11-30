@@ -33,7 +33,7 @@
         {type: "D", start: {mon: 9, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/appenzell-innerrhoden/st-mauritius-day"}, titles: {"en": "St. Mauritius’ Day"}, notes: {"en": "Mauritius Day"}},
         {type: "D", start: {mon: 9, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/obwalden/saint-nicholas-of-fl252e"}, titles: {"en": "St. Nicholas of Flüe Day"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},

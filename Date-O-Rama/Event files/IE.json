@@ -27,7 +27,7 @@
         
         {inherits: "Public Holiday", type: "D", start: {mon: 12, d: 31, y: 1999, era: 1}},
         {inherits: "Public Holiday", type: "D", start: {mon: 9, d: 14, y: 2001, era: 1}},
-        {inherits: "Public Holiday", type: "D", start: {mon: 3, d: 18, y: 2022, era: 1}},
+        {inherits: "Public Holiday", type: "D", start: {mon: 3, d: 18, era: 1, y: 2022}},
 
         {inherits: "Black History Month", type: "M", start: {mon: 2}, first: {era: 1, y: 2010}},
         {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
@@ -43,7 +43,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/irish-heart-month/"}, titles: {"en": "Irish Heart Month"}, inherits: "*MedAwareness*", emoji: "🫀"},
         {type: "D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/shine-a-light-night/"}, titles: {"en": "Shine a Light Night"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/light-up-a-life/"}, titles: {"en": "Light Up a Life"}, first: {era: 1, y: 1996}, emoji: "🎄"},

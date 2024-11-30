@@ -22,7 +22,7 @@
         {inherits: "National Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1886}, urls: {"en": "https://nationaltoday.com/liechtenstein-national-day/"}},
         {type: "D", start: {mon: 9, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/liechtenstein/feast-of-our-lady-of-victories"}, inherits: "Nativity of Mary"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},

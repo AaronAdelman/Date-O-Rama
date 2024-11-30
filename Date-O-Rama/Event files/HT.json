@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 17}, titles: {"en": "Dessalines Day", "fr": "Anniversaire de la mort de Dessalines"}, urls: {"en": "https://nationaltoday.com/dessalines-day/"}, first: {era: 1, y: 1806}, inherits: "*DeathAnniv*"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
+        {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 11, d: 18}, inherits: "Army Day", titles: {"fr": "Le Jour de la Battaille des Vertières", "en": "Battle of Vertières Day"}, urls: {"en": "https://nationaltoday.com/battle-of-vertieres-day/"}, notes: {"fr": "Vertières"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         

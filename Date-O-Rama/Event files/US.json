@@ -38,7 +38,7 @@
         {inherits: "Evacuation Day", type: "D", start: {mon: 11, d: 25}, locations: {"en": "New York", "he": "ניו יורק"}, first: {era: 1, y: 1787}, urls: {"en": "https://en.wikipedia.org/wiki/Evacuation_Day_(New_York)"}},
         {inherits: "Evacuation Day", type: "D", start: {mon: 3, d: 17}, locations: {"en": "Massachusetts", "he": "מסצ׳וסטס"}, first: {era: 1, y: 1901}, urls: {"en": "https://nationaltoday.com/evacuation-day-in-massachusetts/"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", first: {era: 1, y: 1910}, urls: {"en": "https://nationaldaycalendar.com/fathers-day-third-sunday-in-june/"}},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 9, d: 7, thruD: 13, wkd: [1]}, notes: {"en": "National Grandparents Day"}, urls: {"en": "https://grandparentsday.org/"}, first: {era: 1, y: 1978}},
         {inherits: "Groundhog Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1887}},

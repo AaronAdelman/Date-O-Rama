@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-coronation-of-king-mindaugas/"}, titles: {"en": "Anniversary of the Coronation of King Mindaugas", "lt": "Valstybės (Lietuvos karaliaus Mindaugo karūnavimo) ir Tautiškos giesmės diena"}, inherits: "*Coronation*", notes: {"en": "Statehood Day"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
+        {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         

@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, notes: {"en": "Feast of Our Lady of Victories"}, inherits: "Victory Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/malta-independence-day/"}},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/malta-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
@@ -109,7 +109,7 @@
         {type: "D", start: {mon: 9, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "Feast of Our Lady of Graces", "mt": "Il-Madonna tal-Grazzja"}},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 
-        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
+        {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {inherits: "Feast of St. Martin of Tours", type: "D", start: {mon: 11, d: 11}},
         {inherits: "Feast of St. Cecilia", type: "D", start: {mon: 11, d: 22}},
         {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},

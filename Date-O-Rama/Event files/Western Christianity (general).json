@@ -210,7 +210,7 @@
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}},
+        {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
 
         {titles: {"en": "Feast of St. Martin de Porres"}, type: "D", start: {mon: 11, d: 3}},
         {titles: {"en": "Feast of St. Charles Borromeo"}, type: "D", start: {mon: 11, d: 4}},
@@ -241,7 +241,7 @@
         {titles: {"en": "Feast of St. John Damascene"}, type: "D", start: {mon: 12, d: 4}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {inherits: "Feast of St. Ambrose", type: "D", start: {mon: 12, d: 7}},
-        {inherits: "Feast of the Immaculate Conception", type: "D", start: {mon: 12, d: 8}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {titles: {"en": "Feast of St. Juan Diego"}, type: "D", start: {mon: 12, d: 9}},
         {titles: {"en": "Feast of Our Lady of Loreto"}, type: "D", start: {mon: 12, d: 10}},
         {titles: {"en": "Feast of St. Damasus I"}, type: "D", start: {mon: 12, d: 11}},

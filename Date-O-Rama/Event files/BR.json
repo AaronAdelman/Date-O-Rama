@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida", "pt": "Nossa Senhora Aparecida"}, urls: {"en": "https://www.daysoftheyear.com/days/lady-of-aparecida/"}, first: {era: 1, y: 1717}},
         {type: "D", start: {mon: 10, wkd: [1], nth: 2}, titles: {"en": "Procession of Our Lady of Nazareth", "pt": "Círio de Nazaré"}, urls: {"en": "https://www.daysoftheyear.com/days/procession-of-our-lady-of-nazareth/"}, first: {era: 1, y: 1793}},
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/civil-servants-day"}, titles: {"en": "Civil Servants Day"}},
-        {inherits: "All Souls Day", type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
+        {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day", urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
         {type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/republic-proclamation-day/"}, titles: {"en": "Republic Proclamation Day", "pt": "Proclamação da República"}, first: {era: 1, y: 1889}, notes: {"en": "Republic Day"}},
         {type: "D", start: {mon: 11, d: 20}, titles: {"en": "Black Consciousness Day", "pt": "Dia da Consciência Negra"}, urls: {"en": "https://www.daysoftheyear.com/days/black-consciousness-day/", "pt": "https://pt.wikipedia.org/wiki/Dia_da_Consci%C3%AAncia_Negra"}, first: {era: 1, y: 1960}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
