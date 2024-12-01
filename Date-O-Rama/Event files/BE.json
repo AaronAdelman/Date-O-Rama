@@ -22,7 +22,7 @@
         {titles: {"en": "Day of the French Community", "nl": "Dag van de Franse Gemeenschap", "fr": "Fête de la Communauté française", "de": "Feiertag der Französischen Gemeinschaft"}, type: "D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/day-of-the-french-community-belgium/"}, first: {era: 1, y: 1975}, notes: {"en": "French Community Holiday"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
-        {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}, urls: {"en": "https://www.officeholidays.com/holidays/belgium/remembrance-day"}},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}, urls: {"en": "https://www.officeholidays.com/holidays/belgium/remembrance-day"}},
         {titles: {"en": "Day of the German-speaking Community", "nl": "Dag van de Duitstalige Gemeenschap", "fr": "Fête de la Communauté germanophone", "de": "Tag der Deutschsprachigen Gemeinschaft"}, type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/belgium/liege/german-community-day"}, notes: {"en": "German Community Day"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

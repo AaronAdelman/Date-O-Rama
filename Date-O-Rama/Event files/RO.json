@@ -28,7 +28,7 @@
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 12, d: 27, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/christmas-holiday"}, inherits: "Public Sector Holiday"},
 
-        {inherits: "Armistice Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Engineer’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 1877}, titles: {"en": "State Independence Day of Romania", "ro": "Ziua Independenței de Stat a României"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
