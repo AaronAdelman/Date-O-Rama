@@ -193,6 +193,7 @@
         {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, first: {era: 1, y: 1952}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
+        {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, urls: {"en": "https://nationaltoday.com/special-education-day/"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Space Force Birthday"}},
         {type: "D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaltoday.com/pledge-of-allegiance-day/"}, titles: {"en": "Pledge of Allegiance Day"}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "World Wildlife Conservation Day", "he": "יום שימור חיות הבר העולמי"}, first: {era: 1, y: 2012}, emoji: "🏞", urls: {"en": "https://www.daysoftheyear.com/days/world-wildlife-conservation-day/"}},
