@@ -117,7 +117,7 @@
 
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
         {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 10, wkd: [1], nth: 2}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 7, wkd: [1], nth: 4}, inherits: "World Day for Grandparents and the Elderly", first: {era: 1, y: 2021}},

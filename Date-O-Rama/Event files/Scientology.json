@@ -19,7 +19,7 @@
         {titles: {"en": "Publications Day"}, type: "D", start: {mon: 11, d: 27}, emoji: "📚", first: {era: 1, y: 1967}},
         {titles: {"en": "Flag Land Base Day"}, type: "D", start: {mon: 12, d: 7}, emoji: "🏨", first: {era: 1, y: 1975}},
         {inherits: "Freedom Day", type: "D", start: {mon: 12, d: 30}, inherits: "*Remembrance*", first: {era: 1, y: 1974}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {titles: {"en": "Criminon Day"}, type: "D", start: {mon: 1, d: 25}, first: {era: 1, y: 1970}},
         {titles: {"en": "Founding of the Church in New Zealand"}, type: "D", start: {mon: 1, d: 28}, inherits: "*Remembrance*"},
         {titles: {"en": "Narconon Day"}, type: "D", start: {mon: 2, d: 19}, first: {era: 1, y: 1966}},

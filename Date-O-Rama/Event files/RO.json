@@ -132,7 +132,7 @@
         {type: "D", start: {d: 28, mon: 11}, titles: {"en": "Bukovina Day"}},
         {type: "D", start: {wkd: [5], nth: 3, mon: 11}, titles: {"en": "National Day Without Tobacco"}},
         {inherits: "World Day of Remembrance for Road Traffic Victims", type: "D", start: {mon: 11, wkd: [1], nth: 3}, first: {era: 1, y: 2006}},
-        {type: "D", start: {d: 1, mon: 12}, inherits: "World AIDS Day"},
+        {type: "D", start: {mon: 12, d: 1}, inherits: "World AIDS Day"},
         {inherits: "International Day for the Abolition of Slavery", type: "D", start: {mon: 12, d: 2}, first: {era: 1, y: 1995}},
         {type: "D", start: {d: 3, mon: 12}, inherits: "International Day of Persons with Disabilities"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Constitution Day"},

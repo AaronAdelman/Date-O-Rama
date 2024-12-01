@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/iceland/christmas-holiday"}, inherits: "Boxing Day"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 1, wkd: [6], d: 19, thruD: 25}, titles: {"en": "Husband’s Day", "he": "יום האיש", "is": "Bóndadagur"}, emoji: "👨"},

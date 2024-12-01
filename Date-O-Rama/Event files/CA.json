@@ -33,7 +33,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/canada/mothers-day"}},
         {inherits: "National Grandparents’ Day", type: "D", start: {mon: 9, nth: 2, wkd: [1]}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "D", start: {mon: 10, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "Remembrance Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},

@@ -53,7 +53,7 @@
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas", "es": "Las Posadas"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
 
         {type: "D", start: {mon: 7, d: 12}, titles: {"en": "Lawyer’s Day"}, urls: {"en": "https://nationaltoday.com/mexico-lawyers-day/"}, first: {era: 1, y: 1960}, emoji: "👨‍💼👩‍💼"},

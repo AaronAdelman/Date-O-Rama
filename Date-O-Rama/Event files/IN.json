@@ -74,7 +74,7 @@
         {type: "D", start: {mon: 11, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/india/punjab/kartar-singh-sarabha-martyrdom-day"}, titles: {"en": "Kartar Singh Sarabha Martyrdom Day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 11, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/india/meghalaya/seng-kut-snem"}, titles: {"en": "Seng Kut Snem"}},
         {type: "D", start: {mon: 11, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/lachit-divas"}, titles: {"en": "Lachit Divas"}},
-        {type: "D", start: {d: 1, mon: 12}, titles: {"en": "State Inauguration Day"}, notes: {"en": "Nagaland Day"}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/state-inauguration-day-in-nagaland/"}, locations: {"en": "Nagaland"}},
+        {type: "D", start: {mon: 12, d: 1}, titles: {"en": "State Inauguration Day"}, notes: {"en": "Nagaland Day"}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/state-inauguration-day-in-nagaland/"}, locations: {"en": "Nagaland"}},
         {type: "D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/indigenous-faith-day-in-arunachal-pradesh/"}, titles: {"en": "Indigenous Faith Day"}, locations: {"en": "Arunachal Pradesh"}},
         {type: "D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/asom-divas/"}, titles: {"en": "Asom Divas"}, first: {era: 1, y: 1996}},
         {inherits: "Feast of St. Francis Xavier", type: "D", start: {mon: 12, d: 3}},
@@ -87,7 +87,7 @@
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {type: "D", start: {mon: 12, d: 27, wkd: [4]}, urls: {"en": "https://www.officeholidays.com/holidays/india/nagaland/christmas-holiday"}, titles: {"en": "Christmas Festival"}},
         {type: "D", start: {mon: 12, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/india/meghalaya/u-kiang-nangbah"}, titles: {"en": "U Kiang Nangbah"}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
 
 
@@ -169,8 +169,8 @@
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "Raising Day of Indo-Tibetan Border Police"}, inherits: "Police Day"},
         {type: "D", start: {mon: 9, d: 14}, titles: {"en": "Hindi Day", "he": "יום השפה ההינדית", "hi": "हिन्दी दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Hindi_Day"}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Sanchayika Day"}},
-        {type: "nD", start: {d: 1, mon: 12}, end: {mon: 12, d: 10}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}, first: {era: 1, y: 2000}},
-        {type: "D", start: {d: 21, mon: 4}, titles: {"en": "National Civil Service Day"}},
+        {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 10}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}, first: {era: 1, y: 2000}},
+        {type: "D", start: {mon: 4, d: 21}, titles: {"en": "National Civil Service Day"}},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "National Deworming Day"}},
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "World Unani Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Unani_medicine"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "National Productivity Day"}},

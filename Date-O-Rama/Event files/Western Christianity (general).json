@@ -258,7 +258,7 @@
         {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
         {inherits: "Feast of St. Thomas Becket", type: "D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inherits: "Feast of St. Egwin of Worcester", type: "D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {inherits: "Feast of the Holy Family", type: "D", start: {mon: 12, d: 30, wkd: [6]}},
         {inherits: "Feast of the Holy Family", type: "D", start: {mon: 12, d: 26, thruD: 31, wkd: [1]}},
         {titles: {"en": "Lammas Day"}, type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},

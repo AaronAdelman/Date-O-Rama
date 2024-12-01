@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/rizal-day/"}, titles: {"en": "Rizal Day", "fil": "Paggunita sa Kamatayan ni Dr. Jose Rizal"}, first: {era: 1, y: 1902}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/first-philippine-republic-day/"}, titles: {"en": "First Philippine Republic Day", "fil": "Araw ng Unang Republika ng Pilipinas"}, first: {era: 1, y: 1899}},
         {type: "D", start: {mon: 1, d: 25}, inherits: "National Remembrance Day", first: {era: 1, y: 2015}},
@@ -74,7 +74,7 @@
         {type: "D", start: {mon: 1, wkd: [2], nth: -1}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day", "fil": "Pambansang Araw ng Bibliya"}, first: {era: 1, y: 2019}},
         {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 2001}},
         {inherits: "Thanksgiving Day", type: "D", start: {mon: 11, wkd: [5], nth: -1}},
-        {inherits: "Black Friday", type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 2019}},
 
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Bataan Foundation Day", "fil": "Araw ng Pagkakatatag ng Bataan"}},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Valencia City Charter Day", "fil": "Araw ng Pribilehiyo ng Lungsod ng Valencia"}},

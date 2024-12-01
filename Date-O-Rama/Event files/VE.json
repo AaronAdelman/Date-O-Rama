@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {type: "D", start: {mon: 10, d: 28}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 6, d: 24}, inherits: "Army Day"},

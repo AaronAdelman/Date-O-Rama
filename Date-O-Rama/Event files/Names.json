@@ -422,7 +422,7 @@
         {type: "D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/national-katherine-day/"}, titles: {"en": "National Katherine Day"}},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-dorothy-day/"}, titles: {"en": "National Dorothy Day"}},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-harley-day/"}, titles: {"en": "National Harley Day"}},
-        {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-heather-day/"}, titles: {"en": "National Heather Day"}},
+        {type: "D", start: {mon: 12, d: 3}, titles: {"en": "National Heather Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-heather-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-isaac-day/"}, titles: {"en": "National Isaac Day"}},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-lisa-day/"}, titles: {"en": "National Lisa Day"}},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-ronald-day/"}, titles: {"en": "National Ronald Day"}},

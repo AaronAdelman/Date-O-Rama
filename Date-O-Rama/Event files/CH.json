@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
         {type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, inherits: "Restoration Day", locations: {"en": "Geneva"}},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {inherits: "Carnival", type: "D", start: {Easter:  "Easter", offsetD: -55}, locations: {"en": "Schwyz"}},
         {inherits: "Fat Thursday", type: "D", start: {Easter:  "Easter", offsetD: -52}},

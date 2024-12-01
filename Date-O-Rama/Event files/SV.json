@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
 

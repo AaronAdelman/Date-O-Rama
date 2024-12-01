@@ -73,7 +73,7 @@
         {titles: {"he": "יום־שנה של קצות החושן"}, type: "D", start: {mon: 4, d: 19}, first: {era: 0, y: 5573}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי יעקב אבוחצירא"}, type: "D", start: {d: 20, mon: 4}, first: {era: 0, y: 5540}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רמב״ם"}, type: "D", start: {d: 20, mon: 4}, first: {era: 0, y: 4965}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב מצליח מאזוז"}, type: "D", start: {d: 21, mon: 4}, first: {era: 0, y: 5731}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב מצליח מאזוז"}, type: "D", start: {mon: 4, d: 21}, first: {era: 0, y: 5731}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של בעל התניא"}, type: "D", start: {mon: 4, d: 24}, first: {era: 0, y: 5573}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב אליהו דסלר"}, type: "D", start: {mon: 4, d: 24}, first: {era: 0, y: 5714}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של השם משמואל"}, type: "D", start: {mon: 4, d: 24}, first: {era: 0, y: 5586}, inherits: "*DeathAnniv*"},

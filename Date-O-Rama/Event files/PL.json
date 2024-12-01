@@ -115,7 +115,7 @@
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Miners’ Day", "he": "יום הכורים", "pl": "Barbórka"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Kashubian Unity Day"}, first: {era: 1, y: 2005}, urls: {"en": "https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},
         {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},

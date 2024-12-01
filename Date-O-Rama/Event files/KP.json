@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Anniversary of Kim Jong Il’s commencement of work in the Workers’ Party Central Committee"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "Day of the Strategic Forces", "ko": "전략군절"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 12, d: 24}, titles: {"en": "Kim Jong-suk’s Birthday"}, inherits: "*BDay*"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
   ]

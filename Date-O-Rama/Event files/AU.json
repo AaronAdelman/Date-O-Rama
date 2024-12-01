@@ -25,7 +25,7 @@
         {inherits: "King’s Birthday", type: "D", start: {mon: 9, wkd: [2], d: 23, thruD: 29}, locations: {"en": "Western Australia"}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/australia/western-australia/australia-kings-birthday"}},
         {inherits: "Labour Day", type: "D", start: {mon: 10, wkd: [2], nth: 1}, locations: {"en": "Australian Capital Territory, New South Wales, and South Australia"}, urls: {"en": "https://nationaltoday.com/labour-day/"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "New Year’s Eve", type: "D", start: {mon: 12, d: 31}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "D", start: {mon: 10, d: 15}, first: {era: 1, y: 2014}},
         {inherits: "Proclamation Day", type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, locations: {"en": "South Australia"}, first: {era: 1, y: 1836}},
         {inherits: "Proclamation Day", type: "D", start: {mon: 12, d: 28, wkd: [2, 3]}, locations: {"en": "South Australia"}, first: {era: 1, y: 1836}},
