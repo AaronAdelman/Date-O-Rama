@@ -124,6 +124,7 @@
         {type: "D", start: {mon: 12, d: 7}, titles: {"en": "National Illinois Day", "he": "יום אילינוי הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-illinois-day-december-7/"}},
         {type: "D", start: {mon: 12, d: 7}, titles: {"en": "National Slime Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-slime-day/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Crossword Solvers Day"}, urls: {"en": "https://www.nationaldaycalendar.com/december/national-crossword-solvers-day-december-8"}, first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 12, wkd: [3], nth: 1}, titles: {"en": "World Trick Shot Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-trick-shot-day-first-tuesday-in-december"}, emoji: "🏀", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Texas Day", "he": "יום טקסס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-texas-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "National Break Up With Your Carrier Day"}, urls: {"en": "https://nationaltoday.com/national-break-up-with-your-carrier-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "National Cheddar Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-cheddar-day-february-13"}, emoji: "🧀", first: {era: 1, y: 2019}},
