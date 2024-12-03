@@ -202,6 +202,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     public mutating func append(event: ASAEventCompatible) {
         self.events.append(event)
+        self.events.sort(by: { $0.calendarTitle < $1.calendarTitle })
     } // func append(event: ASAEventCompatible)
     
     var numberOfSubevents: Int {
