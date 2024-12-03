@@ -87,6 +87,7 @@
         {type: "D", start: {mon: 12, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/national-call-a-friend-day/"}, titles: {"en": "National Call a Friend Day"}, emoji: "📱"},
         {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Still Need to Do Day"}, urls: {"en": "https://nationaltoday.com/still-need-day/"}},
         {type: "D", start: {mon: 12, d: 3}, titles: {"en": "Make a Gift Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-gift-day/"}, emoji: "🎁"},
+        {type: "D", start: {mon: 12, d: 3}, titles: {"en": "National Peppermint Latte Day"}, urls: {"en": "https://www.checkiday.com/55867553cd16127075837f3ba1c26dfc/national-peppermint-latte-day"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 12, d: 30}, titles: {"en": "Festival of Enormous Changes at the Last Minute"}, urls: {"en": "https://nationaltoday.com/festival-of-enormous-changes-at-the-last-minute/"}, emoji: "⚘"},
         {type: "D", start: {mon: 12, d: 30}, titles: {"en": "National Resolution Planning Day"}, urls: {"en": "https://nationaltoday.com/national-resolution-planning-day/"}},
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "National Champagne Day"}, urls: {"en": "https://www.daysoftheyear.com/days/champagne-day/"}, emoji: "🥂"},
