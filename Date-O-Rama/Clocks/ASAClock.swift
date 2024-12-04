@@ -373,7 +373,15 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
                 return true
             }
             
-            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+            if e2.numberOfSubevents > e1.numberOfSubevents {
+                return false
+            }
+            
+            if e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending {
+                return true
+            }
+            
+            return e1.title < e2.title
         })
         let timeEvents = unsortedTimeEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
