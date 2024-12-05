@@ -381,6 +381,10 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
                 return true
             }
             
+            if e1.startDate.compare(e2.startDate) == ComparisonResult.orderedDescending {
+                return false
+            }
+            
             return e1.title < e2.title
         })
         let timeEvents = unsortedTimeEvents.sorted(by: {
