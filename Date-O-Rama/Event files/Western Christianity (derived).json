@@ -153,6 +153,7 @@
         {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}, emoji: "🍫"},
         {type: "W", start: {mon: 11, fullWk: 2}, titles: {"en": "Dear Santa Letter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dear-santa-letter-week/"}, emoji: "🎅"},
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
+        {type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Christmas Tree Day"}, urls: {"en": "https://www.checkiday.com/2e2a58a06269bc06cefe283f22b8173e/national-christmas-tree-day"}, emoji: "🎄", first: {era: 1, y: 2015}},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://nationaltoday.com/bat-appreciation-month/"}, emoji: "🦇", nonoverlappingSubEvents: [
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}},
