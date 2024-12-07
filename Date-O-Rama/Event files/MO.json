@@ -21,6 +21,7 @@
         {inherits: "Public Holiday", type: "D", start: {mon: 11, d: 3, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/macau/all-souls-day"}},
         {inherits: "Public Holiday", type: "D", start: {mon: 11, d: 4, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/macau/all-souls-day"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Feast of the Immaculate Conception (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/macau/immaculate-conception-day"}},
         {type: "D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/macao-sare-day/"}, titles: {"en": "Macao SARE Day", "pt": "Dia Comemorativo do estabelecimento da Região Administrativa Especial de Macau", "zh": "澳門特別行政區成立紀念日"}, first: {era: 1, y: 1999}},
         {inherits: "Winter Solstice", type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://www.officeholidays.com/holidays/macau/dongzhi"}, titles: {"en": "Dongzhi", "pt": "Solstício de Inverno", "zh": "冬至"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},

@@ -626,5 +626,6 @@
         {template: "יום־שנה של רחל אימנו", titles: {"he": "יום־שנה של רחל אימנו", "en": "Raḥel Our Mother Memorial Day"}, type: "D", start: {mon: 2, d: 11}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של שמואל הנביא", titles: {"he": "יום־שנה של שמואל הנביא", "en": "Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
         {template: "Dog Film Festival", type: "D", start: {era: 1, y: 2022, mon: 11, d: 6}, titles: {"en": "Dog Film Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-film-festival/"}, emoji: "🐶🍿"},
+        {template: "Feast of the Immaculate Conception (in lieu)", titles: {"en": "Feast of the Immaculate Conception (in lieu)"}, type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Feast of the Immaculate Conception"},
     ]
 }

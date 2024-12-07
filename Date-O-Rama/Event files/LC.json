@@ -1,6 +1,6 @@
 {
     titles: {"*": "LC"},
-    "//": "Saint Lucia",
+    "//": "Saint Lucia, AKA St. Luica",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.47, blue: 0.78},
