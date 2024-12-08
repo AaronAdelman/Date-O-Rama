@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-lucia/emancipation-day"}, inherits: "Emancipation Day"},
         {type: "D", start: {mon: 10, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-lucia/thanksgiving-day"}, inherits: "Thanksgiving Day"},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-day-of-saint-lucia/"}, inherits: "National Day", first: {era: 1, y: 1979}},
-        {inherits: "Feast of St. Lucy of Syracuse", type: "D", start: {mon: 12, d: 13}},
+        {inherits: "St. Lucia Day", type: "D", start: {mon: 12, d: 13}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 

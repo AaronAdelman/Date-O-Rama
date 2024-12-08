@@ -7,7 +7,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/south-africa/international-new-years-day"}, inherits: "New Year’s Day (in lieu)", first: {era: 1, y: 1910}},
-        {type: "D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/south-africa-human-rights-day/"}, inherits: "Human Rights Day"},
+        {type: "D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/south-africa-human-rights-day/"}, inherits: "Human Rights Day", first: {era: 1, y: 1950}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday", first: {era: 1, y: 1910}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://www.officeholidays.com/holidays/south-africa/easter-monday"}, inherits: "Family Day", first: {era: 1, y: 1980}},

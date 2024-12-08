@@ -38,7 +38,7 @@
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         {titles: {"en": "The eve before Saint Martin’s Day", "da": "Mortensaften"}, type: "D", start: {mon: 11, d: 10}},
         {inherits: "Feast of St. Martin of Tours", type: "D", start: {mon: 11, d: 11}},
-        {inherits: "Feast of St. Lucy of Syracuse", type: "D", start: {mon: 12, d: 13}},
+        {inherits: "St. Lucia Day", type: "D", start: {mon: 12, d: 13}},
 
         {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Birthday of Prince Henrik"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=57737"}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},

@@ -137,7 +137,7 @@
         {type: "D", start: {d: 3, mon: 12}, inherits: "International Day of Persons with Disabilities"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Constitution Day"},
         {inherits: "International Anti-Corruption Day", type: "D", start: {mon: 12, d: 9}, first: {era: 1, y: 2003}},
-        {type: "D", start: {d: 10, mon: 12}, inherits: "Human Rights Day"},
+        {type: "D", start: {d: 10, mon: 12}, inherits: "Human Rights Day", first: {era: 1, y: 1950}},
         {type: "D", start: {d: 13, mon: 12}, titles: {"en": "Day of the Tatar Ethnicity of Romania"}},
         {type: "D", start: {mon: 12, d: 16}, titles: {"en": "National Solidarity Day Against Dictatorship"}},
         {type: "D", start: {d: 18, mon: 12}, titles: {"en": "Day of the National Minorities of Romania"}},

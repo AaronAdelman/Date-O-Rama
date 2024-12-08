@@ -246,7 +246,7 @@
         {titles: {"en": "Feast of Our Lady of Loreto"}, type: "D", start: {mon: 12, d: 10}},
         {titles: {"en": "Feast of St. Damasus I"}, type: "D", start: {mon: 12, d: 11}},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe", first: {era: 1, y: 1531}},
-        {inherits: "Feast of St. Lucy of Syracuse", type: "D", start: {mon: 12, d: 13}},
+        {inherits: "St. Lucia Day", type: "D", start: {mon: 12, d: 13}},
         {titles: {"en": "Feast of St. John of the Cross"}, type: "D", start: {mon: 12, d: 14}},
         {titles: {"en": "Feast of St. Peter Canisius", "he": "החג של פטרוס קניזיוס הקדוש"}, type: "D", start: {mon: 12, d: 21}},
         {titles: {"en": "Feast of St. John of Kanty"}, type: "D", start: {mon: 12, d: 23}},

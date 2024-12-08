@@ -68,7 +68,7 @@
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "National Students’ Day", "fil": "Pambansang Araw ng mga Mag-aaral"}, first: {era: 1, y: 2019}, emoji: "👨‍🎓👩‍🎓"},
         {inherits: "National Children’s Day", type: "D", start: {mon: 11, d: 20}},
-        {type: "D", start: {mon: 12, d: 10}, inherits: "Human Rights Day", first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 12, d: 10}, inherits: "Human Rights Day", first: {era: 1, y: 1950}},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 12, d: 21}, titles: {"en": "Philippine Armed Forces Day", "fil": "Araw ng Hukbong Sandatahang Lakas ng Pilipinas"}, first: {era: 1, y: 1935}},
 
         {type: "D", start: {mon: 1, wkd: [2], nth: -1}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day", "fil": "Pambansang Araw ng Bibliya"}, first: {era: 1, y: 2019}},

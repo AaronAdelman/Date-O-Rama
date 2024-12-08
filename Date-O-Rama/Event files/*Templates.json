@@ -193,7 +193,7 @@
         {template: "Feast of St. John the Apostle", titles: {"en": "Feast of St. John the Apostle"}, notes: {"en": "Christmastide (day 3)"}, type: "D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/st-john-history/"}},
         {template: "Feast of St. Joseph the Worker", titles: {"en": "Feast of St. Joseph the Worker", "it": "San Giuseppe lavoratore", "mt": "San Ġużepp Ħaddiem"}, type: "D", start: {mon: 5, d: 1}},
         {template: "Feast of St. Lawrence", titles: {"en": "Feast of St. Lawrence", "mt": "San Lawrenz"}, type: "D", start: {mon: 8, d: 10}},
-        {template: "Feast of St. Lucy of Syracuse", titles: {"en": "Feast of St. Lucy of Syracuse", "da": "Luciadag"}, type: "D", start: {mon: 12, d: 13}},
+        {template: "St. Lucia Day", titles: {"en": "St. Lucia Day", "da": "Luciadag"}, type: "D", start: {mon: 12, d: 13}, notes: {"en": "Feast of St. Lucy of Syracuse\nSaint Lucy’s Day\nFeast of St. Lucy\nSt. Lucia’s Day"}},
         {template: "Feast of St. Mark the Evangelist", titles: {"en": "Feast of St. Mark the Evangelist"}, type: "D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/the-feast-of-st-mark-italy/"}},
         {template: "Feast of St. Martin of Tours", titles: {"en": "Feast of St. Martin of Tours", "de": "Martin", "mt": "San Martin", "sl": "martinovanje"}, type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/saint-martins-day/"}},
         {template: "Feast of St. Matthew the Evangelist", titles: {"en": "Feast of St. Matthew the Evangelist", "he": "החג של מתי האוונגליסט", "pt": "Dia de São Mateus"}, type: "D", start: {mon: 9, d: 21}, notes: {"en": "St. Matthew’s Day"}},
@@ -627,5 +627,7 @@
         {template: "יום־שנה של שמואל הנביא", titles: {"he": "יום־שנה של שמואל הנביא", "en": "Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
         {template: "Dog Film Festival", type: "D", start: {era: 1, y: 2022, mon: 11, d: 6}, titles: {"en": "Dog Film Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-film-festival/"}, emoji: "🐶🍿"},
         {template: "Feast of the Immaculate Conception (in lieu)", titles: {"en": "Feast of the Immaculate Conception (in lieu)"}, type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Feast of the Immaculate Conception"},
+        {template: "Christmas Jumper Day", type: "D", start: {mon: 12, d: 6, thruD: 12, wkd: [5]}, titles: {"en": "Christmas Jumper Day"}, urls: {"en": "https://www.savethechildren.org.uk/christmas-jumper-day/"}},
+        {template: "Poinsettia Day", type: "D", start: {mon: 12, d: 12}, titles: {"en": "Poinsettia Day"}, urls: {"en": "http://poinsettiaday.com/index.html"}, notes: {"en": "National Poinsettia Day"}},
     ]
 }

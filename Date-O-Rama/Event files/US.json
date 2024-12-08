@@ -72,7 +72,7 @@
         {inherits: "Memorial Day", type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/memorial-day/"}, first: {era: 1, y: 1971}, notes: {"en": "Decoration Day"}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", first: {era: 1, y: 1914}, urls: {"en": "https://www.daysoftheyear.com/days/mothers-day/"}},
         {inherits: "National Aviation Day", type: "D", start: {mon: 8, d: 19}, first: {era: 1, y: 1939}, urls: {"en": "https://www.daysoftheyear.com/days/aviation-day/"}},
-        {inherits: "National Guard Day", type: "D", start: {mon: 12, d: 13}},
+        {inherits: "National Guard Day", type: "D", start: {mon: 12, d: 13}, notes: {"en": "U.S. National Guard Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/u-s-national-guard/"}},
         {inherits: "National Lobster Day", type: "D", start: {mon: 9, d: 25}, first: {era: 1, y: 2014}},
         {inherits: "National Maritime Day", type: "D", start: {mon: 5, d: 22}, first: {era: 1, y: 1933}, urls: {"en": "https://www.daysoftheyear.com/days/maritime-day/"}},
         {inherits: "National Sanctity of Human Life Day", type: "D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
@@ -191,7 +191,7 @@
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {"en": "Unthanksgiving Day"}, inherits: "National Day of Mourning", first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/unthanksgiving-day/"}, notes: {"en": "Indigenous Peoples Sunrise Ceremony"}},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {"en": "National Family Health History Day"}, notes: {"en": "Family History Initiative"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-health-history-day/"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "National Bison Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, first: {era: 1, y: 1952}},
+        {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bill-of-rights-day/"}, first: {era: 1, y: 1941}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, urls: {"en": "https://www.daysoftheyear.com/days/special-education-day/"}, first: {era: 1, y: 2005}},
@@ -620,6 +620,8 @@
         {type: "W", start: {mon: 8, fullWk: 1}, titles: {"en": "Farmers Market Week"}, urls: {"en": "https://www.daysoftheyear.com/days/farmers-market-week/"}, emoji: "👨‍🌾👩‍🌾", first: {era: 1, y: 1999}},
         {type: "W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.thinkingofyouweekusa.com/"}, inherits: "Thinking of You Week", first: {era: 1, y: 2018}},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/child-passenger-safety-awareness-week/"}, titles: {"en": "Child Passenger Safety Awareness Week"}, emoji: "👦👧", notes: {"en": "Child Passenger Safety Week\nCar Seat Safety Week"}},
+        {type: "D", start: {mon: 12, d: 12}, inherits: "Poinsettia Day", first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Day of the Horse", "he": "יום הסוס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-horse/"}, notes: {"en": "National Horse Day"}, emoji: "🐴", first: {era: 1, y: 2004}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},

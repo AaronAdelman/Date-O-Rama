@@ -58,6 +58,7 @@
         {type: "D", start: {mon: 9, d: 21}, inherits: "Student’s Day", urls: {"en": "https://www.daysoftheyear.com/days/students-day-in-argentina/"}, first: {era: 1, y: 1902}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Tradition Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-tradition-day-in-argentina/"}},
         {type: "D", start: {mon: 11, d: 30}, titles: {"en": "National Mate Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mate-day/"}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 12, d: 11}, titles: {"en": "National Tango Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-tango-day/"}, first: {era: 1, y: 1977}},
   ],
     templates: [
         {template: "Day of Respect for Cultural Diversity (in lieu)", type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en": "Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en": "https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
