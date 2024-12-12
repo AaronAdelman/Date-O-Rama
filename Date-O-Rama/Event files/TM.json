@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1991},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Turkmenistan"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/turkmenistan-memorial-day"}, inherits: "Memorial Day"},
@@ -14,7 +15,8 @@
         {type: "D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, titles: {"en": "State Flag Day"}, first: {era: 1, y: 1992}, inherits: "Flag Day", notes: {"en": "Constitution and Flag Day\nState Flag and Constitution Day\nDay of the State Flag of Turkmenistan"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/turkmenistan-independence-day/"}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Earthquake Memorial Day"}, urls: {"en": "https://nationaltoday.com/turkmenistan-earthquake-memorial-day/"}, first: {era: 1, y: 1995}, emoji: "🐂", notes: {"en": "Day of Remembrance"}},
-        {type: "D", start: {mon: 12, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/neutrality-day"}, titles: {"en": "Neutrality Day"}},
+        {type: "D", start: {mon: 12, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/neutrality-day"}, titles: {"en": "Neutrality Day", "tk": "Bitaraplyk baýramy", "he": "יום הנייטרליות"}, notes: {"en": "Day of Neutrality"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 12, d: 12}, titles: {"en": "Students Day"}, first: {era: 1, y: 2003}, emoji: "👨‍🎓👩‍🎓"},
         
         {type: "D", start: {mon: 1, d: 12}, inherits: "Memorial Day", urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Turkmenistan)"}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Defender of the Fatherland Day", urls: {"en": "https://en.wikipedia.org/wiki/Defender_of_the_Fatherland_Day_(Turkmenistan)"}},

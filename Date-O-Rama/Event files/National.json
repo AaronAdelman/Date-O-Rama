@@ -530,6 +530,7 @@
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "National Have a Bagel Day"}, urls: {"en": "https://www.daysoftheyear.com/days/have-a-bagel-day/"}, emoji: "🥯"},
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "National Noodle Ring Day"}, notes: {"en": "Noodle Ring Day"}, urls: {"en": "https://www.daysoftheyear.com/days/noodle-ring-day/"}},
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "National Ding-a-Ling Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ding-a-ling-day/"}, emoji: "☎️", first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 12, d: 12}, titles: {"en": "National 12-Hour Fresh Breath Day"}, urls: {"en": "https://www.checkiday.com/45a72a8ea2f69f72bd76484879acd92a/national-12-hour-fresh-breath-day"}, emoji: "🪥", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 12, d: 13}, inherits: "National Ice Cream Day", urls: {"en": "https://nationaltoday.com/ice-cream-day/"}},
         {type: "D", start: {mon: 12, d: 13}, titles: {"en": "National Cocoa Day", "he": "יום השוקו החם הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cocoa-day/"}, emoji: "☕️", notes: {"en": "Hot Cocoa Day"}},
         {type: "D", start: {mon: 12, d: 13}, titles: {"en": "National Violin Day"}, emoji: "🎻", urls: {"en": "https://www.daysoftheyear.com/days/violin-day/"}},
