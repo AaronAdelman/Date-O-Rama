@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 8, d: 4, thruD: 10, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/anguilla/august-thursday"}, titles: {"en": "August Thursday"}},
         {type: "D", start: {mon: 8, d: 5, thruD: 11, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/anguilla/anguilla-constitution-day"}, inherits: "Constitution Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-heroes-and-heroines-day/"}, titles: {"en": "National Heroes and Heroines Day"}, first: {era: 1, y: 1967}, notes: {"en": "National Heroes Day"}},
+        {type: "D", start: {mon: 12, d: 19}, titles: {"en": "National Heroes and Heroines Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-heroes-and-heroines-day/"}, first: {era: 1, y: 1967}, notes: {"en": "National Heroes Day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]

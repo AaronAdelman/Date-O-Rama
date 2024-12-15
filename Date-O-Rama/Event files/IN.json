@@ -231,7 +231,7 @@
         {type: "D", start: {mon: 12, d: 2}, titles: {"en": "National Pollution Control Day"}},
         {type: "D", start: {mon: 12, d: 14}, titles: {"en": "National Energy Conservation Day"}, first: {era: 1, y: 1991}, emoji: "⚡️", urls: {"en": "https://nationaltoday.com/national-energy-conservation-day/"}},
         {type: "D", start: {d: 18, mon: 12}, titles: {"en": "Minorities Rights Day"}},
-        {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Mathematics Day"}, first: {era: 1, y: 2012}, emoji: "🧮", urls: {"en": "https://www.daysoftheyear.com/days/mathematics-day/"}, notes: {"en": "National Mathematics Day"}},
+        {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Mathematics Day"}, first: {era: 1, y: 2012}, emoji: "🧮", urls: {"en": "https://www.daysoftheyear.com/days/mathematics-day/"}, notes: {"en": "National Mathematics Day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {d: 24, mon: 12}, inherits: "National Consumer Day", urls: {"en": "https://nationaltoday.com/national-consumer-rights-day/"}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Good Governance Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Good_Governance_Day"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

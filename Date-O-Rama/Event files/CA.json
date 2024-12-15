@@ -70,7 +70,7 @@
         {type: "D", start: {mon: 11, d: 6}, inherits: "Dog Film Festival", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Ladies Learning Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ladies-learning-code-day/"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "Anniversary of the Statute of Westminster"}, urls: {"en": "https://www.daysoftheyear.com/days/anniversary-of-the-statute-of-westminster/"}, first: {era: 1, y: 1931}},
-        {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day", urls: {"en": "https://nationaltoday.com/national-maple-syrup-day-canada/"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, first: {era: 1, y: 1991}, emoji: "👩"},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Donair Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-donair-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "National Have a Heart Day"}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}},

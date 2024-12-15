@@ -219,6 +219,7 @@
         {titles: {"en": "International Migrants Day", "he": "יום המהגרים"}, type: "D", start: {mon: 12, d: 18}, first: {era: 1, y: 2000}, urls: {"en": "https://www.daysoftheyear.com/days/international-migrants-day/"}, emoji: "👨‍👩‍👧‍👦"},
         {inherits: "Arabic Language Day", type: "D", start: {mon: 12, d: 18}, first: {era: 1, y: 2010}},
         {inherits: "International Human Solidarity Day", type: "D", start: {mon: 12, d: 20}, first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "World Basketball Day"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.daysoftheyear.com/days/world-basketball-day/"}, emoji: "🏀"},
         {titles: {"en": "International Day of Epidemic Preparedness", "he": "יום ההיערכות הבינלאומי למגפה"}, type: "D", start: {mon: 12, d: 27}, first: {era: 1, y: 2020}, emoji: "😷"},
         {titles: {"en": "Swahili Language Day", "sw": "Siku ya Kiswahili ya Umoja wa Mataifa", "he": "יום השפה הסוואהילית"}, type: "D", start: {mon: 7, d: 20}, first: {era: 1, y: 2022}, urls: {"en": "https://en.wikipedia.org/wiki/UN_Swahili_Language_Day"}},
 
