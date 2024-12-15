@@ -543,6 +543,7 @@
         {type: "D", start: {mon: 12, d: 14}, titles: {"en": "National Screwdriver Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-screwdriver-day/"}},
         {type: "D", start: {mon: 12, d: 15}, titles: {"en": "National Cupcake Day", "he": "יום הקאפקייק הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/cupcake-day/"}, emoji: "🧁"},
         {type: "D", start: {mon: 12, d: 15}, titles: {"en": "National Lemon Cupcake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lemon-cupcake-day/"}, notes: {"en": "Lemon Cupcake Day"}, emoji: "🧁"},
+        {type: "D", start: {mon: 12, d: 16}, titles: {"en": "Boston Tea Party Day"}, urls: {"en": "https://www.checkiday.com/e8effc1e065688e247ca3e4ea9c592c9/boston-tea-party-day"}, first: {era: 1, y: 1773}},
         {type: "D", start: {mon: 12, d: 16}, titles: {"en": "National Chocolate Covered Anything Day", "he": "יום מצופה בשוקולד הלאומי"}, notes: {"en": "National Chocolate-Covered Anything Day"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-covered-anything-day/"}, emoji: "🍩"},
         {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day"},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "National Device Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-device-appreciation-day/"}, emoji: "💻⌚️📱"},
