@@ -72,6 +72,7 @@
         {type: "D", start: {mon: 12, d: 18}, titles: {"en": "Bake Cookies Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bake-cookies-day/"}, emoji: "🍪"},
         {type: "D", start: {mon: 12, d: 18}, titles: {"en": "Flake Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/flake-appreciation-day/"}, emoji: "❄️"},
         {type: "D", start: {mon: 12, d: 18}, titles: {"en": "National Roast Suckling Pig Day"}, urls: {"en": "https://www.daysoftheyear.com/days/roast-suckling-pig-day/"}},
+        {type: "D", start: {mon: 12, d: 19}, titles: {"en": "Holly Day"}, urls: {"en": "https://www.checkiday.com/4568dc3dfc1fcbb8d6dffbea0457d146/holly-day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 12, d: 19}, titles: {"en": "Look for an Evergreen Day"}, urls: {"en": "https://www.daysoftheyear.com/days/look-for-an-evergreen-day/"}, emoji: "🌲"},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Go Caroling Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-caroling-day/"}, emoji: "🎄"},
         {type: "D", start: {mon: 12, d: 21}, inherits: "Humbug Day"},
