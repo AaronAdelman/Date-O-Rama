@@ -193,7 +193,7 @@
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "National Bison Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bill-of-rights-day/"}, first: {era: 1, y: 1941}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
-        {type: "D", start: {mon: 12, d: 18}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
+        {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, urls: {"en": "https://www.daysoftheyear.com/days/special-education-day/"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Space Force Birthday"}},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "Pledge of Allegiance Day"}, urls: {"en": "https://nationaltoday.com/pledge-of-allegiance-day/"}},
