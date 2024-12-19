@@ -74,7 +74,8 @@
         {type: "D", start: {mon: 12, d: 18}, titles: {"en": "National Roast Suckling Pig Day"}, urls: {"en": "https://www.daysoftheyear.com/days/roast-suckling-pig-day/"}},
         {type: "D", start: {mon: 12, d: 19}, titles: {"en": "Holly Day"}, urls: {"en": "https://www.checkiday.com/4568dc3dfc1fcbb8d6dffbea0457d146/holly-day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 12, d: 19}, titles: {"en": "Look for an Evergreen Day"}, urls: {"en": "https://www.daysoftheyear.com/days/look-for-an-evergreen-day/"}, emoji: "🌲"},
-        {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Go Caroling Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-caroling-day/"}, emoji: "🎄"},
+        {type: "D", start: {mon: 12, d: 19}, inherits: "Go Caroling Day", first: {era: 1, y: 2001}, end: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 12, d: 20}, inherits: "Go Caroling Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, d: 21}, inherits: "Humbug Day"},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Coquito Day"}, urls: {"en": "https://www.daysoftheyear.com/days/coquito-day/"}, emoji: "🥛", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Ribbon Candy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ribbon-candy-day/"}},
@@ -110,7 +111,7 @@
         {type: "D", start: {mon: 12, wkd: [2], nth: 2}, titles: {"en": "Green Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/green-monday/"}, first: {era: 1, y: 2007}, emoji: "🎁"},
         {type: "D", start: {mon: 12, wkd: [4], nth: 1}, titles: {"en": "Special Kids Day"}, urls: {"en": "https://www.specialkidsday.org/"}, first: {era: 1, y: 1990}, emoji: "👦👧"},
         {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
-        {type: "D", start: {mon: 12, wkd: [6], nth: 3}, titles: {"en": "National Ugly Christmas Sweater Day"}, notes: {"en": "Ugly Christmas Sweater Day"}, first: {era: 1, y: 2012}, urls: {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, emoji: "🦺"},
+        {type: "D", start: {mon: 12, wkd: [6], nth: 3}, titles: {"en": "National Ugly Christmas Sweater Day"}, notes: {"en": "Ugly Christmas Sweater Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, emoji: "🦺"},
         {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Candle Day"}, notes: {"en": "This observance is geared to sell people candles."}, emoji: "🕯️", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Coats and Toys for Kids Day"}, urls: {"en": "https://www.daysoftheyear.com/days/coats-and-toys-for-kids-day/"}, first: {era: 1, y: 1983}, emoji: "🧥🧸"},
         {type: "D", start: {mon: 12, wkd: [7], nth: 2}, titles: {"en": "Gingerbread Decorating Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/gingerbread-decorating-day/"}},
@@ -175,5 +176,6 @@
     ],
     templates: [
         {template: "National Valentine Shopping Reminder Day", type: "D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-valentine-shopping-reminder-day/"}, titles: {"en": "National Valentine Shopping Reminder Day"}, emoji: "❤️🛍️"},
+        {template: "Go Caroling Day", type: "D", start: {mon: 12, d: 20}, titles: {"en": "Go Caroling Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-caroling-day/"}, emoji: "📖🔔"},
     ]
 }
