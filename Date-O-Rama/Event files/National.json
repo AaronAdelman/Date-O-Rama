@@ -6,6 +6,7 @@
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
     events: [
+        {type: "D", start: {equinoxOrSolstice: "Dec"}, titles: {"en": "National Kiwi Fruit Day"}, urls: {"en": "https://www.checkiday.com/b35f55e6faccd149cdf57fe5e845ff50/national-kiwi-fruit-day"}, emoji: "🥝", first: {era: 1, y: 2012}},
         {type: "D", start: {equinoxOrSolstice: "Dec"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, emoji: "🔦"},
         {type: "D", start: {equinoxOrSolstice: "Jun"}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
         {type: "D", start: {equinoxOrSolstice: "Jun"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seashell-day/"}, titles: {"en": "National Seashell Day"}, emoji: "🐚", first: {era: 1, y: 2016}},
@@ -565,7 +566,7 @@
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Sacagawea Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sacagawea-day/"}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Armagnac Day", "he": "יום ארמניאק הלאומי"}, urls: {"en": "https://nationaltoday.com/national-armagnac-day/"}, emoji: "🍷"},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Homeless Persons’ Remembrance Day"}, urls: {"en": "https://nationaltoday.com/national-homeless-persons-remembrance-day/"}, first: {era: 1, y: 1990}},
-        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Crossword Puzzle Day", "he": "יום הולדת לתשבץ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/crossword-puzzle-day/"}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Crossword Puzzle Day", "he": "יום הולדת לתשבץ הלאומי"}, notes: {"en": "Crossword Puzzle Day", "he": "יום הולדת לתשבץ"}, urls: {"en": "https://www.daysoftheyear.com/days/crossword-puzzle-day/"}, first: {era: 1, y: 1913}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National French Fried Shrimp Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-french-fried-shrimp-day/"}, emoji: "🍤", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Short Girl Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/short-girl-appreciation-day/"}, notes: {"en": "Short Girl Appreciation Day"}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Short Story Day", "he": "יום הסיפור הקצר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/short-story-day/"}, emoji: "✍️", first: {era: 1, y: 2013}},
@@ -1258,7 +1259,10 @@
         {type: "D", start: {mon: 5, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/sun-screen-day/"}, titles: {"en": "National Sunscreen Day"}},
         {type: "D", start: {mon: 5, d: 27}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-grape-day-may-27"}, titles: {"en": "National Grape Day"}, emoji: "🍇"},
         {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/brisket-day/"}, titles: {"en": "National Brisket Day"}, emoji: "🥩"},
-        {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/hamburger-day/"}, titles: {"en": "National Hamburger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
+        {type: "D", start: {mon: 5, d: 28}, inherits: "National Hamburger Day", urls: {"en": "https://www.daysoftheyear.com/days/hamburger-day/"}},
+        {type: "D", start: {mon: 7, d: 28}, inherits: "National Hamburger Day", urls: {"en": "https://www.thenews-messenger.com/story/news/local/2023/07/28/today-is-national-hamburger-day/70462329007/"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 12, d: 21}, inherits: "National Hamburger Day", urls: {"en": "https://mobile-cuisine.com/did-you-know/national-hamburger-day/"}, first: {era: 1, y: 2011}},
+
         {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.multiplebirths.ca/national-multiple-births-awareness-day"}, titles: {"en": "National Multiple Births Awareness Day"}, notes: {"en": "NMBAD"}, first: {era: 1, y: 2005}, emoji: "👶👶👶", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-hydroxyapatite-day/"}, titles: {"en": "National Hydroxyapatite Day"}},
         {type: "D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, titles: {"en": "National Snail Day"}, emoji: "🐌"},
@@ -2554,6 +2558,7 @@
         {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Singles Week"}, first: {era: 1, y: 1980}, notes: {"en": "An observance which seems to trying to put a positive spin on a non-ideal situation."}},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-forensic-science-week/"}, titles: {"en": "National Forensic Science Week"}, first: {era: 1, y: 2013}, emoji: "🕵️‍♂️🕵️‍♀️"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-indoor-plant-week/"}, titles: {"en": "National Indoor Plant Week"}, first: {era: 1, y: 2007}, emoji: "🪴"},
+        {type: "D", start: {mon: 12, d: 17, thruD: 23, wkd: [7]}, inherits: "Super Saturday"},
 
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
@@ -2579,7 +2584,7 @@
         ]},       
     ],
     templates: [
-        {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}},
+        {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
         {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, titles: {"en": "I Love My State Parks Week"}, urls: {"en": "https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️"},
         {template: "Johnny Appleseed Day", type: "D", start: {mon: 9, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/johnny-appleseed-day/"}, titles: {"en": "Johnny Appleseed Day"}, emoji: "🍎", notes: {"en": "National Johnny Appleseed Day"}},
         {template: "Museum Day", type: "D", start: {era: 1, y: 2005, mon: 4, d: 30}, titles: {"en": "Museum Day", "he": "יום המוזיאונים", "fr": "Journée des musées"}, notes: {"en": "Smithsonian Museum Day"}, urls: {"en": "https://www.checkiday.com/531c14130407ae2eefbc5d35e34c5895/museum-day"}, emoji: "🏛"},
@@ -2602,5 +2607,6 @@
         {template: "PACER Unity Day", type: "D", start: {mon: 10, wkd: [4], nth: 2}, inherits: "Unity Day", urls: {"en": "https://www.pacer.org/bullying/nbpm/unity-day.asp"}},
         {template: "National Potato Day", type: "D", start: {mon: 8, d: 19}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
         {template: "National Apple Pie Day", type: "D", start: {mon: 5, d: 13}, titles: {"en": "National Apple Pie Day", "he": "יום הפאי תפוחים הלאומי"}, emoji: "🥧"},
+        {template: "National Hamburger Day", type: "D", start: {mon: 5, d: 28}, titles: {"en": "National Hamburger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
     ]
 }

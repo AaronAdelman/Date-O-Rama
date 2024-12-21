@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "National Anthem and Flag Day", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day", "he": "יום קוראסאו"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/christmas-holiday"}, titles: {"en": "Day after Christmas"}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Day after Christmas", urls: {"en": "https://www.officeholidays.com/holidays/curacao/christmas-holiday"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

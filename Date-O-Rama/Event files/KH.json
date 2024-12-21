@@ -22,5 +22,6 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
+        {type: "D", start: {mon: 12, d: 29}, inherits: "Peace Day", urls: {"en": "https://www.officeholidays.com/holidays/cambodia/cambodia-peace-day"}, first: {era: 1, y: 2024}},
     ]
 }

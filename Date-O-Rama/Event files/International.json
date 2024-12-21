@@ -2256,6 +2256,7 @@
         {type: "nD", start: {mon: 11, d: 18}, end: {mon: 11, d: 24}, titles: {"en": "World AMR Awareness Week"}, urls: {"en": "https://www.who.int/campaigns/world-amr-awareness-week"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 12, d: 3}, inherits: "International Spirit of the Game Day", first: {era: 1, y: 2014}, last: {era: 1, y: 2018}},
         {type: "D", start: {mon: 12, wkd: [7], nth: 1}, inherits: "International Spirit of the Game Day", first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Abilities Day"}, urls: {"en": "https://www.checkiday.com/dc25be7d7cab7d9fcb7daee2ff2a7de1/abilities-day"}, first: {era: 1, y: 1999}},
         
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -2296,6 +2297,5 @@
         {template: "International Raw Milk Cheese Appreciation Day", type: "D", start: {mon: 4, wkd: [7], nth: 3}, titles: {"en": "International Raw Milk Cheese Appreciation Day"}, urls: {"en": "https://www.checkiday.com/5e0c4ac7f812a95c726eea0a6cf9384a/international-raw-milk-cheese-appreciation-day"}, emoji: "🧀"},
         {template: "International Stand Up to Bullying Day", type: "D", start: {mon: 2, wkd: [6], nth: -1}, titles: {"en": "International Stand Up to Bullying Day"}, urls: {"en": "https://nationaltoday.com/international-stand-up-to-bullying-day/"}},
         {template: "International Spirit of the Game Day", type: "D", start: {mon: 12, d: 3}, titles: {"en": "International Spirit of the Game Day"}, urls: {"en": "https://www.checkiday.com/87b377773b734bd27a925eb216c5ff12/international-spirit-of-the-game-day"}, emoji: "🎳", notes: {"en": "E.R.I.C. Awareness Day\nERIC Awareness Day\niSOTG Day"}},
-
     ]
 }
