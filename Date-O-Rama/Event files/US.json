@@ -196,7 +196,7 @@
         {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "National Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, urls: {"en": "https://www.daysoftheyear.com/days/special-education-day/"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Space Force Birthday"}},
-        {type: "D", start: {mon: 12, d: 28}, titles: {"en": "Pledge of Allegiance Day"}, urls: {"en": "https://nationaltoday.com/pledge-of-allegiance-day/"}},
+        {type: "D", start: {mon: 12, d: 28}, titles: {"en": "Pledge of Allegiance Day"}, notes: {"en": "Allegiance Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pledge-of-allegiance-day/"}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Extraordinary Work Team Recognition Day"}, urls: {"en": "https://www.daysoftheyear.com/days/extraordinary-work-team-recognition-day/"}, first: {era: 1, y: 1990}, notes: {"en": "Capturing the Spirit of America’s Workplace\nNational Teamwork Day"}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "World Wildlife Conservation Day", "he": "יום שימור חיות הבר העולמי"}, first: {era: 1, y: 2012}, emoji: "🏞", urls: {"en": "https://www.daysoftheyear.com/days/world-wildlife-conservation-day/"}},
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National Miners’ Day", "he": "יום הכורים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/miners-day/"}, first: {era: 1, y: 2009}},
