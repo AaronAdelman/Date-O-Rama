@@ -22,6 +22,5 @@
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
-
     ]
 }

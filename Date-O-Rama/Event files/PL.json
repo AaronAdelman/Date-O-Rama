@@ -73,7 +73,7 @@
         {type: "D", start: {d: 17, mon: 9}, titles: {"en": "Sybirak’s Day", "pl": "Dzień Sybiraka"}, first: {era: 1, y: 1998}},
         {type: "D", start: {d: 27, mon: 9}, titles: {"en": "Polish Underground State’s Day", "pl": "Dzień Podziemnego Państwa Polskiego"}, first: {era: 1, y: 2013}},
         {type: "D", start: {d: 4, mon: 10}, titles: {"en": "Animals’ Day", "pl": "Dzień Zwierząt"}, first: {era: 1, y: 2006}},
-        {type: "D", start: {d: 13, mon: 12}, titles: {"en": "Martial Law Victims Remembrance Day", "pl": "Dzień Pamięci Ofiar Stanu Wojennego"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Martial Law Victims Remembrance Day", "pl": "Dzień Pamięci Ofiar Stanu Wojennego"}, first: {era: 1, y: 2002}},
         
         {type: "D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/grandmas-day/"}, titles: {"en": "Grandma’s Day"}, first: {era: 1, y: 1964}, emoji: "👵"},
         {type: "D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/grandpas-day/"}, titles: {"en": "Grandpa’s Day"}, emoji: "👴", first: {era: 1, y: 1964}},

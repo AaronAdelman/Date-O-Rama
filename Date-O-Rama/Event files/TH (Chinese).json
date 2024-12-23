@@ -8,9 +8,9 @@
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "D", start: {d: 5, mon: 5}, titles: {"en": "Duanwu Festival", "th": "วันไหว้ขนมจ้าง"}},
+        {type: "D", start: {mon: 5, d: 5}, titles: {"en": "Duanwu Festival", "th": "วันไหว้ขนมจ้าง"}},
         {type: "D", start: {d: 15, mon: 7}, inherits: "Ghost Festival"},
         {type: "D", start: {d: 15, mon: 8}, inherits: "Mid-Autumn Festival"},
-        {type: "nD", start: {d: 1, mon: 9}, end: {mon: 9, d: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
+        {type: "nD", start: {mon: 9, d: 1}, end: {mon: 9, d: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
     ]
 }

@@ -25,7 +25,7 @@
         {inherits: "Restoration of Independence Day", type: "D", start: {mon: 12, d: 1}, first: {era: 1, y: 1668}, urls: {"en": "https://nationaltoday.com/portugal-independence-day/"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/portugal/madeira/christmas-holiday"}, inherits: "Boxing Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day", urls: {"en": "https://www.officeholidays.com/holidays/portugal/madeira/christmas-holiday"}},
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 5, d: 20}, inherits: "Navy Day", first: {era: 1, y: 1998}},
@@ -64,6 +64,5 @@
         {titles: {"pt": "Dia do Concelho"}, type: "D", start: {mon: 11, d: 19}, locations: {"en": "Odivelas and Trofa"}},
         {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 7, d: 26}},
-
     ]
 }
