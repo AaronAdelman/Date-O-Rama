@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Judaism (Gregorian)", "he": "יהדות (גרגוריאני)"},
+    titles: {"en": "Judaism", "he": "יהדות"},
     defaultLocale: "he",
     calendarCode: "gre",
     calendarColor: {red: 0.0, green: 0.0, blue: 1.0},
