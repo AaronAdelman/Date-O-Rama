@@ -228,6 +228,8 @@
 		A567001A2C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
+		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
+		A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC952D1C437000E64598 /* ASAMenuTitle.swift */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
@@ -1297,6 +1299,8 @@
 		A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAThreeLineLargeView.swift; sourceTree = "<group>"; };
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
+		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
+		A568FC952D1C437000E64598 /* ASAMenuTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMenuTitle.swift; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (minor fasts).json"; sourceTree = "<group>"; };
@@ -2496,8 +2500,10 @@
 				A507794128915A0700A98D01 /* ASALocationTypeCell.swift */,
 				A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */,
 				A53D608E2888805D0094B3F7 /* ASAMainClocksViewSectionHeader.swift */,
+				A568FC952D1C437000E64598 /* ASAMenuTitle.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
+				A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */,
 				A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */,
 				A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */,
 				A59C436425A33E5B009C7F7C /* ASATimeText.swift */,
@@ -3604,6 +3610,7 @@
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5EB60EE2892ECFB006009AF /* ASAPicker.swift in Sources */,
+				A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
@@ -3674,6 +3681,7 @@
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */,
 				A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */,
+				A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedClock.swift in Sources */,
 				A56700192C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */,
 				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,
