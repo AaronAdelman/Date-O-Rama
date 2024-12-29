@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.29, blue: 0.53},
     first: {era: 1, y: 1868},
     events: [
-        {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, notes: {"en": "Triumph of the Revolution"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
+        {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, titles: {"en": "Triumph of the Revolution"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
         {inherits: "Victory Day", type: "D", start: {mon: 1, d: 2}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
