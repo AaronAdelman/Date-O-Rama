@@ -32,7 +32,8 @@ class ASALocationManager: NSObject, ObservableObject {
     public func setUp() {
         self.locationManager.delegate = self
         
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         
         self.locationManager.requestAlwaysAuthorization()
         
@@ -114,11 +115,11 @@ extension ASALocationManager: CLLocationManagerDelegate {
         //        print(#file, #function, location)
         self.lastError = nil
         
-        let Δ = self.lastDeviceLocation?.distance(from: location)
-        
-        if Δ == nil || Δ! >= 10.0 {
+//        let Δ = self.lastDeviceLocation?.distance(from: location)
+//        
+//        if Δ == nil || Δ! >= 10.0 {
             self.reverseGeocode(location)
-        }
+//        }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     
     fileprivate func reverseGeocode(_ location: CLLocation) {
