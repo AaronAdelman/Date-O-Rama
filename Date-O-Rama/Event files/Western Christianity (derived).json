@@ -9,7 +9,7 @@
         {type: "D", start: {Easter:  "Easter"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}, titles: {"en": "National Baked Ham with Pineapple Day"}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Commitment Day"}, urls: {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, first: {era: 1, y: 1960}, emoji: "👩‍❤️‍👨"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "National Bloody Mary Day", "he": "יום הבלאדי מרי הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/bloody-mary-day/"}, emoji: "🍅"},
-        {type: "D", start: {mon: 1, d: 1}, titles: {"en": "National Hangover Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hangover-day/"}, emoji: "🥴", first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "National Hangover Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Ring a Bell Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ring-a-bell-day/"}, emoji: "🔔"},
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/apple-gifting-day/"}, titles: {"en": "Apple Gifting Day"}, emoji: "🍎"},
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/new-years-dishonor-list-day/"}, titles: {"en": "New Year’s Dishonor List Day"}, first: {era: 1, y: 1976}},

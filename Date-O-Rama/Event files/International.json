@@ -528,9 +528,12 @@
         {type: "D", start: {mon: 12, d: 3}, titles: {"en": "Let’s Hug Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lets-hug-day/"}, emoji: "🫂"},
         {type: "D", start: {mon: 12, d: 3}, titles: {"en": "World Coati Day"}, urls: {"en": "https://worldcoatiday.org/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 12, d: 30}, titles: {"en": "Sodium Bicarbonate Day"}, urls: {"en": "https://nationaltoday.com/sodium-bicarbonate-day/"}},
+        {type: "D", start: {mon: 6, d: 30}, inherits: "Leap Second Time Adjustment Day", first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "Leap Second Time Adjustment Day", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Make Up Your Mind Day"}, emoji: "🤷‍♀️", urls: {"en": "https://www.daysoftheyear.com/days/make-up-your-mind-day/"}},
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "No Interruptions Day"}, urls: {"en": "https://nationaltoday.com/no-interruptions-day/"}, emoji: "👩‍💻", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Unlucky Day"}, urls: {"en": "https://www.daysoftheyear.com/days/unlucky-day/"}, emoji: "😞"},
+        {type: "D", start: {mon: 12, d: 31}, titles: {"en": "World Peace Meditation Day"}, urls: {"en": "https://nationaltoday.com/world-peace-meditation-day/"}, first: {era: 1, y: 1986}, notes: {"en": "This observance sounds sort of flaky."}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Cabernet Franc Day"}, urls: {"en": "https://dracaenawines.com/heres-why-we-should-celebrate-cabernet-franc-day/"}, emoji: "🍷", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "International Cheetah Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://internationalcheetahday.com/"}},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Wear Brown Shoes Day"}, notes: {"en": "A fashion observance for…  I really don’t know who cares enough about brown shoes to celebrate them."}},
@@ -2299,5 +2302,6 @@
         {template: "International Raw Milk Cheese Appreciation Day", type: "D", start: {mon: 4, wkd: [7], nth: 3}, titles: {"en": "International Raw Milk Cheese Appreciation Day"}, urls: {"en": "https://www.checkiday.com/5e0c4ac7f812a95c726eea0a6cf9384a/international-raw-milk-cheese-appreciation-day"}, emoji: "🧀"},
         {template: "International Stand Up to Bullying Day", type: "D", start: {mon: 2, wkd: [6], nth: -1}, titles: {"en": "International Stand Up to Bullying Day"}, urls: {"en": "https://nationaltoday.com/international-stand-up-to-bullying-day/"}},
         {template: "International Spirit of the Game Day", type: "D", start: {mon: 12, d: 3}, titles: {"en": "International Spirit of the Game Day"}, urls: {"en": "https://www.checkiday.com/87b377773b734bd27a925eb216c5ff12/international-spirit-of-the-game-day"}, emoji: "🎳", notes: {"en": "E.R.I.C. Awareness Day\nERIC Awareness Day\niSOTG Day"}},
+        {template: "Leap Second Time Adjustment Day", type: "D", start: {mon: 12, d: 31}, titles: {"en": "Leap Second Time Adjustment Day"}, emoji: "🕰️", urls: {"en": "https://www.nationaldaycalendar.com/national-day/leap-second-time-adjustment-day-december-31"}, first: {era: 1, y: 1972}},
     ]
 }
