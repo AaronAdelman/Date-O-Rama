@@ -23,8 +23,13 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 3}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 12, d: 2}},
-        {type: "D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/jose-martis-birthday-memorial/"}, titles: {"en": "José Martí's Birthday Memorial"}, first: {era: 1, y: 1853}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/jose-martis-birthday-memorial/"}, titles: {"en": "José Martí’s Birthday Memorial"}, first: {era: 1, y: 1853}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 8}, urls: {"en": "https://en.wikipedia.org/wiki/Treaty_of_Chaguaramas#CARICOM_Day"}, titles: {"en": "CARICOM-Cuba Day"}},
         {type: "D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/the-beginning-of-the-ten-years-war/"}, titles: {"en": "The Beginning of the Ten Years’ War"}},
+        {type: "D", start: {mon: 1, d: 3}, first: {era: 1, y: 2024}, inherits: "People’s Effort Day"},
+        {type: "D", start: {mon: 1, d: 4, wkd: [7]}, first: {era: 1, y: 2025}, inherits: "People’s Effort Day"},
+    ],
+    templates: [
+        {template: "People’s Effort Day", type: "D", start: {mon: 1, d: 3}, titles: {"en": "People’s Effort Day"}, urls: {"en": "https://www.officeholidays.com/holidays/cuba/peoples-effort-day"}},
     ]
 }
