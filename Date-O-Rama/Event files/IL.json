@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 5, d: 14}, titles: {"he": "יום ההכרזה על הקמת מדינת ישראל", "en": "Day of the Declaration of the Establishment of the State of Israel"}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 5, d: 26}, titles: {"he": "יום הולדת לצה״ל", "en": "Birthday of the IDF"}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"he": "הטבח בנמל התעופה לוד", "en": "Anniversary of the Lod Airport Massacre"}, first: {era: 1, y: 1972}},
-        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day_(Israel)", "he": "https://he.wikipedia.org/wiki/%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA_%D7%99%D7%95%D7%9D_%D7%94%D7%A0%D7%99%D7%A6%D7%97%D7%95%D7%9F_%D7%91%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"he": "https://haluzhaivri.org.il/page/36474"}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, urls: {"en": "http://www.thefarhud.com/"}},
         {type: "D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {type: "D", start: {mon: 7, d: 17}, titles: {"he": "יום הפרגון הבינלאומי", "en": "International Firgun Day"}, urls: {"en": "https://firgunday.firgunator.com/"}},

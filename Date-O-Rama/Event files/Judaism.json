@@ -75,7 +75,7 @@
         {inherits: "ראש חודש טבת", type: "D", start: {mon: 4, d: 1, yLengths: [353, 383]}},
         {titles: {"he": "צום טבת", "en": "Fast of Ṭeveth"}, type: "D", start: {mon: 4, d: 10}, urls: {"en": "https://www.ou.org/holidays/category/asarah-btevet/"}},
         {titles: {"he": "ראש חודש שבט", "en": "Ro’sh Ḥodhesh Shevaṭ"}, type: "D", start: {mon: 5, d: 1}, inherits: "*ראש חודש*"},
-        {titles: {"he": "ראש השנה לאילן", "en": "Ro’sh hashShanah (New Year) for Trees (Ṭu biShvaṭ)"}, type: "D", start: {mon: 5, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/tu-bshevat/"}},
+        {titles: {"he": "ראש השנה לאילן", "en": "Ro’sh hashShanah (New Year) for Trees (Ṭu biShvaṭ)"}, type: "D", start: {mon: 5, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/tu-bshevat/"}, notes: {"he": "מלידה"}},
         {titles: {"he": "ראש חודש אדר", "en": "Ro’sh Ḥodhesh ’Adhar"}, type: "nD", start: {mon: 5, d: 30, yLengths: [353, 354, 355]}, end: {mon: 7, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he": "ראש חודש אדר א׳", "en": "Ro’sh Ḥodhesh ’Adhar Ri’shon"}, type: "nD", start: {mon: 5, d: 30, yLengths: [383, 384, 385]}, end: {mon: 6, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he": "ראש חודש אדר ב׳", "en": "Ro’sh Ḥodhesh ’Adhar Sheni"}, type: "nD", start: {mon: 6, d: 30, yLengths: [383, 384, 385]}, end: {mon: 7, d: 1}, inherits: "*ראש חודש*"},
@@ -89,11 +89,11 @@
         {titles: {"he": "שושן פורים", "en": "Shushan Purim"}, type: "D", start: {mon: 7, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/shushan-purim/"}},
         {titles: {"he": "פורים משולש", "en": "Purim Meshullash"}, type: "D", start: {mon: 7, d: 16, wkd: [1]}},
         {titles: {"he": "ראש חודש ניסן", "en": "Ro’sh Ḥodhesh Nisan"}, type: "D", start: {mon: 8, d: 1}, inherits: "*ראש חודש*"},
-        {titles: {"he": "ראש השנה למלכים ולרגלים", "en": "Ro’sh hashShanah (New Year) for Kings and Festivals"}, type: "D", start: {mon: 8, d: 1}},
+        {titles: {"he": "ראש השנה למלכים ולרגלים", "en": "Ro’sh hashShanah (New Year) for Kings and Festivals"}, type: "D", start: {mon: 8, d: 1}, notes: {"he": "ליל הבסיסה/nסדר אל-תווחִיד\nסדר הייחוד"}},
         {inherits: "תענית בכורות", type: "D", start: {mon: 8, d: 14, wkd: [1, 2, 3, 4, 5, 6]}},
         {inherits: "תענית בכורות", type: "D", start: {mon: 8, d: 12, wkd: [5]}},
         {titles: {"he": "ערב פסח", "en": "Eve of Pesaḥ (Passover)"}, type: "D", start: {mon: 8, d: 14}, urls: {"en": "https://www.ou.org/holidays/category/passover/"}},
-        {titles: {"he": "פסח (יום טוב ראשון)", "en": "Pesaḥ (Passover) (yom ṭov ri’shon)"}, type: "D", start: {mon: 8, d: 15}, inherits: "*פסח*"},
+        {titles: {"he": "פסח (יום טוב ראשון)", "en": "Pesaḥ (Passover) (yom ṭov ri’shon)"}, type: "D", start: {mon: 8, d: 15}, inherits: "*פסח*", notes: {"he": "סעודת אסתר"}},
         {inherits: "פסח (חול המועד, יום א׳)", "regionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 16}},
         {inherits: "פסח (חול המועד, יום ב׳)", "regionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 17}},
         {inherits: "פסח (חול המועד, יום ג׳)", "regionCodes": ["IL", "PS"], type: "D", start: {mon: 8, d: 18}},
@@ -583,7 +583,10 @@
         {titles: {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, calendarCode: "cop", type: "D", start: {mon: 3, d: 26}, "excludeRegionCodes": ["IL", "PS"]},
         {titles: {"he": "ברכת החמה", "en": "Blessing of the Sun"}, calendarCode: "cop", type: "D", start: {mon: 7, d: 30, yDiv: 28, yRem: 17}, urls: {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}},
         
+        {type: "D", start: {mon: 2, d: 7}, titles: {"he": "החזרת הספרים להיכל"}, notes: {"he": "קיאמן אל-ספרים"}, urls: {"he": "https://haluzhaivri.org.il/page/34094"}},
         {type: "D", start: {mon: 4, d: 1}, titles: {"he": "חג הבנות", "en": "Festival of the Daughters", "ar": "عيد البنات", "fr": "Fête des Filles"}, notes: {"he": "ראש חודש לבנות", "en": "Girls’ Day"}, urls: {"he": "https://haluzhaivri.org.il/page/30320"}},
+        {type: "D", start: {mon: 5, d: 18}, titles: {"he": "סעודת יתרו"}, notes: {"he": "חג הבנים"}, urls: {"he": "https://haluzhaivri.org.il/page/32659"}},
+        {type: "D", start: {mon: 10, d: 1}, titles: {"he": "חג החינוך"}, urls: {"he": "https://haluzhaivri.org.il/page/30481"}},
 
         
         {type: "c", start: {era: 0, y: 5780, mon: 4, d: 8, recurrenceD: 2711}, titles: {"he": "דף יומי:  [[subtitle]] [[subindex]]", "en": "Daf Yomi:  [[subtitle]] [[subindex]]"}, cRanges: [
@@ -634,7 +637,7 @@
         {template: "*ראש השנה*", type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.ou.org/holidays/category/rosh-hashanah/"}, emoji: "🍎🍯"},
         {template: "*ראש חודש*", type: "D", start: {}, emoji: "🔥"},
         {template: "*שבת*", type: "D", start: {}, emoji: "🍷"},
-        {template: "מימונה/אסרו חג פסח", titles: {"he": "מימונה/אסרו חג פסח", "en": "Mimunah/’Isru Ḥagh Pesaḥ (Passover)"}, type: "D", start: {mon: 8, d: 22}},
+        {template: "מימונה/אסרו חג פסח", titles: {"he": "מימונה/אסרו חג פסח", "en": "Mimunah/’Isru Ḥagh Pesaḥ (Passover)"}, type: "D", start: {mon: 8, d: 22}, notes: {"he": "סִיזְדָה בְּדָר - רוּזֶה בָּאע׳"}},
         {template: "סוכות (חול המועד, יום א׳)", inherits: "*סוכות*", titles: {"he": "סוכות (חול המועד, יום א׳)", "en": "Sukkoth (ḥol hammo‘edh, day 1)"}, type: "D", start: {mon: 1, d: 16}},
         {template: "סוכות (חול המועד, יום ב׳)", inherits: "*סוכות*", titles: {"he": "סוכות (חול המועד, יום ב׳)", "en": "Sukkoth (ḥol hammo‘edh, day 2)"}, type: "D", start: {mon: 1, d: 17}},
         {template: "סוכות (חול המועד, יום ג׳)", inherits: "*סוכות*", titles: {"he": "סוכות (חול המועד, יום ג׳)", "en": "Sukkoth (ḥol hammo‘edh, day 3)"}, type: "D", start: {mon: 1, d: 18}},
