@@ -52,11 +52,10 @@ struct ASAMainClocksViewSectionHeader: View {
                         .lineLimit(sectionHeaderLineLimit)
                         .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
                 }
-                .font(sectionHeaderFont)
                 
                 Text(sectionTimeZoneString)
-                    .font(sectionHeaderFont)
             }
+            .font(sectionHeaderFont)
         } else {
             HStack {
                 if locationWithClocks.usesDeviceLocation {
