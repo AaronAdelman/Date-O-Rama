@@ -49,6 +49,7 @@ struct ASAMainClocksViewSectionHeader: View {
                     }
                     Text(sectionHeaderEmoji)
                     Text(sectionHeaderTitle)
+                        .textCase(.uppercase)
                         .lineLimit(sectionHeaderLineLimit)
                         .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
                 }
@@ -63,6 +64,7 @@ struct ASAMainClocksViewSectionHeader: View {
                 }
                 Text(sectionHeaderEmoji)
                 Text(sectionHeaderTitle)
+                    .textCase(.uppercase)
                     .lineLimit(sectionHeaderLineLimit)
                     .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
                 

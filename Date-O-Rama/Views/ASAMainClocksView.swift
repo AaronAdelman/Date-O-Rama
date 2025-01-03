@@ -222,8 +222,7 @@ struct ASAMainClocksSectionView: View {
                 ])
             }
 #endif
-        }
-        ) {
+        }) {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation
             ForEach(locationWithClocks.clocks.indices, id: \.self) {
@@ -244,9 +243,10 @@ struct ASAMainClocksSectionView: View {
                     ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
                 }
             }
-//            .onDelete(perform: onDelete)
+            //            .onDelete(perform: onDelete)
             .onMove(perform: onMove)
         }
+        .textCase(nil)
     }
     
 //    private func onDelete(offsets: IndexSet) {
