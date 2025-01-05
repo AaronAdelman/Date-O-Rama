@@ -53,6 +53,7 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 1}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, inherits: "National Sports Day", first: {era: 1, y: 2015}},
+        {inherits: "Public Holiday", type: "D", start: {era: 1, y: 2025, mon: 1, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/johor-weekend-adjustment"}, locations: {"en": "Johor"}},
     ],
     templates: [
         {template: "Birthday of the Sultan of Kelantan", type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, titles: {"en": "Birthday of the Sultan of Kelantan", "ms": "Hari Keputeraan Sultan Kelantan"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, inherits: "*BDay*"},
