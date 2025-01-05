@@ -139,7 +139,7 @@
             {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Nancy Fancymanner’s Birthday"}, inherits: "*BDay*"},
             {type: "D", start: {mon: 8, d: 30}, titles: {"en": "St. Scrivener’s Day"}},
             {type: "D", start: {mon: 9, d: 9}, titles: {"en": "Eris’s Birthday"}, inherits: "*BDay*"},
-            {type: "D", start: {mon: 9, d: 17}, titles: {"en": "Emperor Norton’s Day"}},
+            {type: "D", start: {mon: 9, d: 17}, inherits: "Emperor Norton’s Day"},
             {type: "D", start: {mon: 9, d: 23}, titles: {"en": "Dog Star Day"}},
             {type: "D", start: {mon: 9, d: 25}, titles: {"en": "Erotic Terrorism Prevention Day"}},
             {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Kokomo Dragonland’s Day"}},
