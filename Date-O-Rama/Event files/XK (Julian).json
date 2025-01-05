@@ -5,8 +5,8 @@
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.00, blue: 0.50},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

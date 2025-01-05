@@ -5,9 +5,9 @@
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.69, blue: 0.40},
     events: [
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-good-friday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

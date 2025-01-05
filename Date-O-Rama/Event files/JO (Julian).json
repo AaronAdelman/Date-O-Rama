@@ -7,6 +7,6 @@
     events: [
         {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

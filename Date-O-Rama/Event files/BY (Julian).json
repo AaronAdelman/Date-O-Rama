@@ -5,7 +5,7 @@
     calendarCode: "jul",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {titles: {"en": "Radonitsa", "be": "Радунiца"}, type: "D", start: {Easter:  "Easter", offsetD: 9}, urls: {"en": "https://www.officeholidays.com/holidays/belarus/commemoration-day"}, emoji: "🪦", notes: {"en": "Commemoration Day"}},
     ]

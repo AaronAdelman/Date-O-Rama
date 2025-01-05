@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "National Fruitcake Toss Day"}, notes: {"en": "Fruitcake Toss Day\nSome sources claim this observance happens on the first Saturday in January."}, urls: {"en": "https://www.daysoftheyear.com/days/fruitcake-toss-day/"}, emoji: "🍰", first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Take Down the Christmas Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-down-the-christmas-tree-day/"}, emoji: "🎄"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Distaff Day"}, urls: {"en": "https://nationaltoday.com/distaff-day/"}, emoji: "🪨", notes: {"en": "Roc Day\nRock Day\nSaint Distaff’s Day"}},
-        {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en": "Weigh-In Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/weigh-in-day/"}},
+        {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en": "Weigh-In Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weigh-in-day/"}},
         {type: "D", start: {mon: 1, wkd: [6], nth: 2}, urls: {"en": "https://nationaltoday.com/quitters-day/"}, titles: {"en": "Quitters Day"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "National Pumpkin Cheesecake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pumpkin-cheesecake-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 10, d: 23}, titles: {"en": "International Swallows Depart from San Juan Capistrano Day"}, urls: {"en": "https://nationaltoday.com/international-swallows-depart-from-san-juan-capistrano-day/"}},

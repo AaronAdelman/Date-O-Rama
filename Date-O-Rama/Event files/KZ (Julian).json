@@ -5,6 +5,6 @@
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.68, blue: 0.78},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
     ]
 }

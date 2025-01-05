@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.13, blue: 0.41},
     events: [
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-easter-monday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {inherits: "Heroes’ Day", type: "D", start: {Easter: "Easter", offsetD: 39}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},

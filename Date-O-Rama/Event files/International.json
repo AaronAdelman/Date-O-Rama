@@ -50,8 +50,6 @@
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/z-day/"}, titles: {"en": "Z Day"}, emoji: "Ⓩ"},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Peculiar People Day", "he": "יום האנשים המוזרים"}, urls: {"en": "https://www.daysoftheyear.com/days/peculiar-people-day/"}, emoji: "🍉"},
         {type: "D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/league-of-nations-day/"}, titles: {"en": "League of Nations Day"}, emoji: "✮", first: {era: 1, y: 1920}},
-        {type: "D", start: {mon: 1, d: 11}, titles: {"en": "International Thank-You Day"}, urls: {"en": "https://happydays365.org/international-days/international-thank-you-day-january-11/"}, emoji: "🖋"},
-        {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Learn Your Name in Morse Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/learn-your-name-in-morse-code-day/"}, emoji: "·-"},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/cigarettes-are-hazardous-to-your-health-day/"}, titles: {"en": "Cigarettes are Hazardous to Your Health Day"}},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://paget.org.uk/get-involved/pagets-awareness-day/"}, titles: {"en": "Paget’s Awareness Day"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/international-parity-at-work-day/"}, titles: {"en": "International Parity at Work Day"}, first: {era: 1, y: 2017}},
@@ -129,7 +127,7 @@
         {type: "D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/free-flower-basket-day/"}, titles: {"en": "Free Flower Basket Day"}, emoji: "🌸"},
         {type: "D", start: {mon: 1, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/tom-thumb-day/"}, titles: {"en": "Tom Thumb Day"}, inherits: "*BDay*", first: {era: 1, y: 1838}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "Apple Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/apple-tree-day/"}, emoji: "🍎"},
-        {type: "D", start: {mon: 1, d: 6}, titles: {"en": "World Day for War Orphans"}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-for-war-orphans/"}, emoji: "👦👧"},
+        {type: "D", start: {mon: 1, d: 6}, titles: {"en": "World Day for War Orphans"}, notes: {"en": "World Day of War Orphans"}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-for-war-orphans/"}, emoji: "👦👧"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Harlem Globetrotter’s Day"}, notes: {"en": "Harlem Globetrotters Day"}, urls: {"en": "https://www.daysoftheyear.com/days/harlem-globetrotters-day/"}, emoji: "🏀"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "I’m Not Going To Take It Anymore Day", "he": "יום ״אני לא מוכן לסבול את זה יותר״"}, urls: {"en": "https://www.daysoftheyear.com/days/im-not-going-to-take-it-anymore-day/"}, emoji: "😠"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Old Rock Day"}, urls: {"en": "https://www.daysoftheyear.com/days/old-rock-day/"}, emoji: "🪨"},
@@ -576,7 +574,7 @@
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Stamp Collectors Day"}, urls: {"en": "http://www.giftypedia.com/Stamp_Collectors_Day"}},
         {type: "D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/international-epilepsy-day/"}, titles: {"en": "International Epilepsy Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 2, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/employee-legal-awareness-day/"}, titles: {"en": "Employee Legal Awareness Day"}},
-        {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/gold-heart-day/"}, titles: {"en": "Gold Heart Day"}, first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Gold Heart Day"}, urls: {"en": "https://nationaltoday.com/gold-heart-day/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/read-to-your-child-day/"}, titles: {"en": "Read to Your Child Day"}, emoji: "👦👧"},
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/world-bonobo-day/"}, titles: {"en": "World Bonobo Day"}},
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/world-congenital-heart-defect-awareness-day/"}, titles: {"en": "World Congenital Heart Defect Awareness Day"}, inherits: "*MedAwareness*"},
@@ -1780,7 +1778,7 @@
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/apple-and-apricot-month/"}, titles: {"en": "Apple and Apricot Month"}, emoji: "🍎"},
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/brainteaser-month/"}, titles: {"en": "International Brainteaser Month"}, notes: {"en": "International Brain Teaser Month"}},
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/bread-machine-baking-month/"}, titles: {"en": "Bread Machine Baking Month"}, emoji: "🍞"},
-        {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/celebration-of-life-month/"}, titles: {"en": "Celebration Of Life Month"}, emoji: "🥂"},
+        {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/celebration-of-life-month/"}, titles: {"en": "Celebration of Life Month"}, emoji: "🥂"},
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/creativity-month/"}, titles: {"en": "International Creativity Month"}, emoji: "💭👓"},
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/get-organized-month/"}, titles: {"en": "Get Organized Month"}, first: {era: 1, y: 2005}},
         {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/ginuary/"}, titles: {"en": "Ginuary"}, emoji: "🍸🍋"},
@@ -2126,7 +2124,7 @@
         {type: "M", start: {mon: 9}, urls: {"en": "https://www.nicuawareness.org/"}, titles: {"en": "NICU Awareness Month"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "M", start: {mon: 9}, urls: {"en": "https://www.sustainweb.org/realbread/sourdough_september/"}, titles: {"en": "Sourdough September"}, emoji: "🍞", first: {era: 1, y: 2013}},
         {type: "nD", start: {era: 1, y: 2019, mon: 10, d: 1, durationD: 6}, inherits: "Active Aging Week"},
-        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/celebration-of-life-week/"}, titles: {"en": "Celebration Of Life Week"}, emoji: "🥂"},
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 7}, titles: {"en": "Celebration of Life Week"}, urls: {"en": "https://nationaltoday.com/celebration-of-life-week/"}, emoji: "🥂"},
         {type: "nD", start: {mon: 1, d: 17, thruD: 23, wkd: [2]}, end: {mon: 1, d: 26, thruMon: 2, thruD: 1, wkd: [4]}, titles: {"en": "International Snow Sculpture Championships"}, notes: {"en": "Snow Sculpting Week"}, urls: {"en": "https://gobreck.com/event/international-snow-sculpture-championships"}, emoji: "⛄️", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 1, d: 2}, end: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/someday-well-laugh-about-this-week/"}, titles: {"en": "Someday We’ll Laugh About This Week"}, first: {era: 1, y: 2005}, emoji: "🤣"},
         {type: "nD", start: {mon: 10, d: 24, thruD: 30, wkd: [2]}, end: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [1]}, titles: {"en": "Shampoo Week"}, notes: {"en": "Yet another observance celebrating the beauty industry."}},
@@ -2282,6 +2280,10 @@
       
       {type: "M", start: {mon: 11}, titles: {"en": "COPD Awareness Month"}, notes: {"en": "Chronic Obstructive Pulmonary Disease Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/copd-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*", nonoverlappingSubEvents: [
           {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "World COPD Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-copd-day/"}, notes: {"en": "World C.O.P.D. Day"}, emoji: "🫁", first: {era: 1, y: 2002}},
+      ]},
+      
+      {type: "nD", start: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", titles: {"en": "Thank You Days"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
+          {type: "D", start: {mon: 1, d: 11}, inherits: "Thank You Day", notes: {"en": "International Thank-You Day"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}},
       ]},
       
     ],

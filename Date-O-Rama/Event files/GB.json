@@ -323,12 +323,10 @@
         {template: "National Numeracy Day", type: "D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, titles: {"en": "National Numeracy Day"}, urls: {"en": "https://www.nationalnumeracy.org.uk/numeracyday"}},
         {template: "National Vegetarian Week", type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "National Vegetarian Week"}, urls: {"en": "https://vegsoc.org/national-vegetarian-week/"}, emoji: "🌶"},
         {template: "Pride Cymru", type: "nD", start: {mon: 8, d: 21, thruD: 27, wkd: [7], durationD: 2}, titles: {"en": "Pride Cymru"}, notes: {"en": "Cardiff Mardi Gras"}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
-        {template: "Thank You Day", type: "D", start: {mon: 6, d: 5}, titles: {"en": "Thank You Day"}, first: {era: 1, y: 2021}},
         {template: "Trooping the Colour", type: "D", start: {mon: 6, wkd: [7], d: 11, thruD: 17}, titles: {"en": "Trooping the Colour"}, notes: {"en": "King’s Birthday Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/trooping-the-colour/"}, emoji: "💂"},
         {template: "Twins, Triplets and More Week", type: "W", start: {mon: 7, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Twins, Triplets and More Week"}, urls: {"en": "https://twinstrust.org/who-we-are/twins-triplets-and-more-week.html"}, emoji: "👶👶"},
         {template: "Great British Game Week", type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Great British Game Week"}, urls: {"en": "https://www.daysoftheyear.com/days/great-british-game-week/"}},
         {template: "Wales International Film Festival", type: "D", start: {mon: 9, d: 13, thruD: 19, wkd: [6]}, titles: {"en": "Wales International Film Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/wales-international-film-festival/"}, emoji: "📽️"},
-        {template: "Road Safety Week", type: "W", start: {mon: 11, fullWk: -1, firstDOfWk: 2}, titles: {"en": "Road Safety Week", "he": "שבוע הבטיחות בדרכים"}, emoji: "🛣"},
         {template: "Nos Galan Road Races", type: "D", start: {mon: 12, d: 31}, titles: {"en": "Nos Galan Road Races"}, urls: {"en": "https://www.rctcbc.gov.uk/EN/Events/NosGalan/NosGalanRoadRace.aspx"}},
 
     ]
