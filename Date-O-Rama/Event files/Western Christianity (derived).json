@@ -20,6 +20,7 @@
         {type: "D", start: {mon: 1, d: 2}, inherits: "Happy Mew Year For Cats Day"},
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "National Green Juice Day"}, first: {era: 1, y: 2016}, urls: {"en": "https://www.daysoftheyear.com/days/national-green-juice-day/"}, emoji: "🧃"},
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "National Fruitcake Toss Day"}, notes: {"en": "Fruitcake Toss Day\nSome sources claim this observance happens on the first Saturday in January."}, urls: {"en": "https://www.daysoftheyear.com/days/fruitcake-toss-day/"}, emoji: "🍰", first: {era: 1, y: 1996}},
+        {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National King Cake Day"}, urls: {"en": "https://www.checkiday.com/77fb0ac068baf6198239f6df1dffa5a7/national-king-cake-day"}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Take Down the Christmas Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-down-the-christmas-tree-day/"}, emoji: "🎄"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Distaff Day"}, urls: {"en": "https://nationaltoday.com/distaff-day/"}, emoji: "🪨", notes: {"en": "Roc Day\nRock Day\nSaint Distaff’s Day"}},
         {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en": "Weigh-In Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weigh-in-day/"}},
