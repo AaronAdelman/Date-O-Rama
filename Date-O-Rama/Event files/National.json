@@ -137,7 +137,6 @@
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Take a Poet to Lunch Day"}, urls: {"en": "https://nationaltoday.com/national-take-a-poet-to-lunch-day/"}},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "National Pass Gas Day"}, notes: {"en": "This observance encourages poor manners and immature humor."}},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "National Tempura Day", "he": "יום הטמפורה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/tempura-day/"}},
-        {type: "D", start: {mon: 1, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/bobblehead-day/"}, titles: {"en": "National Bobblehead Day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 1, d: 8}, titles: {"en": "National Argyle Day"}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "D", start: {mon: 1, d: 8}, titles: {"en": "National Bubble Bath Day", "he": "יום אמבטיית הבועות הלאומי"}, notes: {"en": "Bubble Bath Day"}, emoji: "🛁", urls: {"en": "https://www.daysoftheyear.com/days/bubble-bath-day/"}},
         {type: "D", start: {mon: 1, d: 8}, titles: {"en": "National English Toffee Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-english-toffee-day/"}, emoji: "🍬"},
@@ -2565,6 +2564,8 @@
         {type: "nD", start: {mon: 1, d: 8, thruD: 14, wkd: [1], durationD: 7}, titles: {"en": "National Pizza Week", "he": "חודש הפיצה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pizza-week/"}, emoji: "🍕", first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Learn Your Name in Morse Code Day"}, notes: {"en": "National Learn Your Name in Morse Code Day\nMorse Code Day\nLearn Morse Code Day"}, urls: {"en": "https://www.brownielocks.com/learnyournameinmcday.html"}, emoji: "·-"},
         {type: "D", start: {mon: 1, d: 8}, inherits: "Emperor Norton’s Day", first: {era: 1, y: 1880}, urls: {"en": "https://emperornortontrust.org/blog/2015/1/5/remember-the-emperor-on-his-day"}},
+        {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Harlem Globetrotter’s Day"}, notes: {"en": "Harlem Globetrotters Day"}, urls: {"en": "https://www.daysoftheyear.com/days/harlem-globetrotters-day/"}, emoji: "🏀"},
+        {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Old Rock Day"}, urls: {"en": "https://www.daysoftheyear.com/days/old-rock-day/"}, emoji: "🪨"},
 
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
