@@ -45,6 +45,8 @@ class ASALocationManager: NSObject, ObservableObject {
             desiredAccuracy = kCLLocationAccuracyBest
         }
         self.locationManager.desiredAccuracy = desiredAccuracy
+        let generator = UIImpactFeedbackGenerator()
+        generator.impactOccurred(intensity: 1.0)
 #endif
     }
     
