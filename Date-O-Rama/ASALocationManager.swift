@@ -11,6 +11,10 @@ import Foundation
 import Combine
 import CoreLocation
 import Network
+#if os(watchOS)
+#else
+import UIKit
+#endif
 
 let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 
@@ -19,7 +23,7 @@ let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 
 class ASALocationManager: NSObject, ObservableObject {
     @MainActor static let shared = ASALocationManager()
-
+    
     private let monitor = NWPathMonitor()
     @Published var connectedToTheInternet = false {
         willSet {
@@ -28,12 +32,33 @@ class ASALocationManager: NSObject, ObservableObject {
             } // DispatchQueue.main.async
         } // willSet
     } // var connectedToTheInternet
-
+    
+    fileprivate func updateDesiredAccuracy() {
+#if os(watchOS)
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyReduced
+#else
+        let batteryState = UIDevice.current.batteryState
+        var desiredAccuracy: CLLocationAccuracy
+        if batteryState == .unplugged || batteryState == .unknown {
+            desiredAccuracy = kCLLocationAccuracyReduced
+        } else {
+            desiredAccuracy = kCLLocationAccuracyBest
+        }
+        self.locationManager.desiredAccuracy = desiredAccuracy
+#endif
+    }
+    
     public func setUp() {
         self.locationManager.delegate = self
         
-//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+#if os(watchOS)
+#else
+        NotificationCenter.default.addObserver(forName: UIDevice.batteryStateDidChangeNotification, object: nil, queue: nil, using: {notificaton in
+            self.updateDesiredAccuracy()
+        })
+#endif
+        
+        updateDesiredAccuracy()
         
         self.locationManager.requestAlwaysAuthorization()
         
@@ -41,14 +66,14 @@ class ASALocationManager: NSObject, ObservableObject {
         
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
-//                debugPrint(#file, #function, "We’re connected!")
+                //                debugPrint(#file, #function, "We’re connected!")
                 self.connectedToTheInternet = true
             } else {
-//                debugPrint(#file, #function, "No connection.")
+                //                debugPrint(#file, #function, "No connection.")
                 self.connectedToTheInternet = false
             }
             
-//            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
+            //            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
         }
         
         let queue = DispatchQueue(label: "Monitor")
@@ -61,7 +86,7 @@ class ASALocationManager: NSObject, ObservableObject {
     } // init()
     
     let notificationCenter = NotificationCenter.default
-
+    
     @Published var locationAuthorizationStatus: CLAuthorizationStatus? {
         willSet {
             DispatchQueue.main.async {
@@ -79,11 +104,11 @@ class ASALocationManager: NSObject, ObservableObject {
             objectWillChange.send()
         } // willSet
     } // var deviceLocation
-
+    
     let objectWillChange = PassthroughSubject<Void, Never>()
-
+    
     private let locationManager = CLLocationManager()
-
+    
     var lastError:  Error?
 } // class ASALocationManager
 
@@ -93,15 +118,15 @@ class ASALocationManager: NSObject, ObservableObject {
 extension ASALocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationAuthorizationStatus = status
-//        print(#file, #function, status)
+        //        print(#file, #function, status)
         self.lastError = nil
         self.locationManager.startUpdatingLocation()
     } // func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
-
+    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
         self.lastError = error
-//        self.locationManager.requestWhenInUseAuthorization()
+        //        self.locationManager.requestWhenInUseAuthorization()
         self.setUp()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     
@@ -115,11 +140,11 @@ extension ASALocationManager: CLLocationManagerDelegate {
         //        print(#file, #function, location)
         self.lastError = nil
         
-//        let Δ = self.lastDeviceLocation?.distance(from: location)
-//        
-//        if Δ == nil || Δ! >= 10.0 {
-            self.reverseGeocode(location)
-//        }
+        //        let Δ = self.lastDeviceLocation?.distance(from: location)
+        //
+        //        if Δ == nil || Δ! >= 10.0 {
+        self.reverseGeocode(location)
+        //        }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     
     fileprivate func reverseGeocode(_ location: CLLocation) {
@@ -128,15 +153,15 @@ extension ASALocationManager: CLLocationManagerDelegate {
             let place = placemarks?.last;
             
             if place == nil || error != nil {
-//                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
+                //                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
                 
                 var tempLocation = ASALocation(type: .EarthLocation)
                 tempLocation.location  = location
                 tempLocation.timeZone  = TimeZone.autoupdatingCurrent
-
+                
                 tempLocation.country    = self.lastDevicePlacemark?.country
                 tempLocation.regionCode = self.lastDevicePlacemark?.isoCountryCode
-
+                
                 self.finishDidUpdateLocations(tempLocation)
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
@@ -151,23 +176,23 @@ extension ASALocationManager: CLLocationManagerDelegate {
             self.finishDidUpdateLocations(tempLocationData)
         }
     } // fileprivate func reverseGeocode(_ location: CLLocation)
-
+    
     fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocation) {
         self.deviceLocation = tempLocationData
         self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION_NAME), object: nil)
         
-//        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
+        //        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
     } // func finishDidUpdateLocations(_ tempLocationData: ASALocation)
-
-    #if os(watchOS)
-    #else
+    
+#if os(watchOS)
+#else
     func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-//        debugPrint(#file, #function)
+        //        debugPrint(#file, #function)
     } // func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager)
-
+    
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
-//        debugPrint(#file, #function)
-//        self.locationManager.requestWhenInUseAuthorization()
+        //        debugPrint(#file, #function)
+        //        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestAlwaysAuthorization()
     } // func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager)
     
@@ -175,5 +200,5 @@ extension ASALocationManager: CLLocationManagerDelegate {
         debugPrint(#file, #function, error.debugDescription)
         self.locationManager.requestAlwaysAuthorization()
     } // func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?)
-    #endif
+#endif
 } // extension ASALocationManager
