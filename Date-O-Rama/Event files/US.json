@@ -122,7 +122,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Fasnacht Day"},
         {type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/ellis-island-day/"}, titles: {"en": "Ellis Island Day"}, notes: {"en": "National Ellis Island Day"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Human Trafficking Awareness Day"}, notes: {"en": "National Human Trafficking Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/human-trafficking-awareness-day/"}, first: {era: 1, y: 2007}, emoji: "⛓️"},
-        {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "Korean American Day"}},
+        {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://www.daysoftheyear.com/days/korean-american-day/"}, emoji: "🇰🇷🇺🇸"},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Stephen Foster Memorial Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://www.daysoftheyear.com/days/stephen-foster-memorial-day/"}},
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "Ratification Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ratification-day/"}, first: {era: 1, y: 1784}},
         {type: "D", start: {mon: 1, d: 16}, titles: {"en": "National Religious Freedom Day", "es": "Día Nacional de la Libertad Religiosa", "he": "יום חופש הדת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/"}, first: {era: 1, y: 1786}},
@@ -624,6 +624,7 @@
         {type: "D", start: {mon: 12, d: 12}, inherits: "Poinsettia Day", first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Day of the Horse", "he": "יום הסוס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-horse/"}, notes: {"en": "National Horse Day\nNational Day of the Horse"}, emoji: "🐴", first: {era: 1, y: 2004}},
         {type: "D", start: {era: 1, y: 2025, mon: 1, d: 9}, inherits: "Day of Mourning", urls: {"en": "https://www.officeholidays.com/holidays/usa/day-of-mourning"}},
+        {type: "M", start: {mon: 1}, titles: {"en": "National Mentoring Month"}, urls: {"en": "https://www.mentoring.org/campaigns/national-mentoring-month/"}, first: {era: 1, y: 2025}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},

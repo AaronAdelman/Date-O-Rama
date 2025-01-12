@@ -5,7 +5,7 @@
     calendarCode: "jul",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://nationaltoday.com/novy-god-russian-new-year/"}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day", urls: {"en": "https://nationaltoday.com/novy-god-russian-new-year/"}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {titles: {"en": "Christmas Day (in lieu)"}, type: "D", start: {mon: 12, d: 26, wkd: [2]}},

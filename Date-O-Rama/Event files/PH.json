@@ -276,5 +276,6 @@
         {type: "M", start: {mon: 8}, titles: {"en": "Buwan ng Wika"}, notes: {"en": "Language Month"}},
         
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 9, wkd: [1], nth: 2}, first: {era: 1, y: 1987}},
+        {type: "D", start: {mon: 1, wkd: [1], nth: 3}, urls: {"en": "https://nationaltoday.com/puerto-princesa-underground-river-day/"}, titles: {"en": "Feast of the Holy Child"}, urls: {"en": "https://www.daysoftheyear.com/days/feast-of-the-holy-child/"}},
     ]
 }

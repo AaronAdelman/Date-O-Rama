@@ -23,6 +23,6 @@
         {type: "D", start: {mon: 6, d: 1}, titles: {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, urls: {"en": "http://www.thefarhud.com/"}},
         {type: "D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {type: "D", start: {mon: 7, d: 17}, titles: {"he": "יום הפרגון הבינלאומי", "en": "International Firgun Day"}, urls: {"en": "https://firgunday.firgunator.com/"}},
-        {type: "D", start: {mon: 7, d: 8}, titles: {"he": "יום הולדת לויקיפדיה העברית", "en": "Hebrew Wikipedia Day"}, first: {era: 1, y: 2003}, emoji: "🌐"},
+        {type: "D", start: {mon: 7, d: 8}, titles: {"he": "יום ויקיפדיה העברית", "en": "Hebrew Wikipedia Day"}, first: {era: 1, y: 2003}, emoji: "🌐"},
     ]
 }
