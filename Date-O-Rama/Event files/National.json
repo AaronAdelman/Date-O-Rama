@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Cut Your Energy Costs Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cut-your-energy-costs-day/"}},
         {type: "D", start: {mon: 1, d: 11}, inherits: "National Milk Day", urls: {"en": "https://www.daysoftheyear.com/days/milk-day/"}, first: {era: 1, y: 1915}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Hot Toddy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-toddy-day/"}, emoji: "☕️"},
-        {type: "D", start: {mon: 1, d: 11}, https://www.daysoftheyear.com/days/national-girl-hug-boy-day/"}, titles: {"en": "National Girl Hug Boy Day"}, urls: {"en": "emoji: "🫂"},
+        {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Girl Hug Boy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-girl-hug-boy-day/"}, emoji: "🫂"},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Step in a Puddle and Splash Your Friends Day"}, urls: {"en": "https://www.daysoftheyear.com/days/step-in-a-puddle-and-splash-your-friends-day/"}, first: {era: 1, y: 2012}, emoji: "💦"},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "National Marzipan Day", "he": "יום המרציפן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-day/"}},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "National Kettlebell Day"}, urls: {"en": "https://nationaltoday.com/national-kettlebell-day/"}, first: {era: 1, y: 2021}},
