@@ -145,7 +145,6 @@
         {type: "D", start: {mon: 1, wkd: [2], nth: 4}, urls: {"en": "https://nationaltoday.com/better-business-communication-day/"}, titles: {"en": "Better Business Communication Day"}},
         {type: "D", start: {mon: 1, wkd: [2], nth: 4}, urls: {"en": "https://www.daysoftheyear.com/days/community-manager-appreciation-day/"}, titles: {"en": "Community Manager Appreciation Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 1, wkd: [3], d: 13, thruD: 19}, urls: {"en": "https://nationaltoday.com/printing-ink-day/"}, titles: {"en": "Printing Ink Day"}, first: {era: 1, y: 1977}},
-        {type: "D", start: {mon: 1, wkd: [3], nth: 2}, titles: {"en": "Poetry at Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖"},
         {type: "D", start: {mon: 1, wkd: [3], nth: 4}, urls: {"en": "https://nationaltoday.com/speak-up-and-succeed-day/"}, titles: {"en": "Speak Up and Succeed Day"}, emoji: "🗣️"},
         {type: "D", start: {mon: 1, wkd: [4], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/museum-selfie-day/"}, titles: {"en": "Museum Selfie Day"}},
         {type: "D", start: {mon: 1, wkd: [4], nth: 4}, urls: {"en": "https://nationaltoday.com/library-shelfie-day/"}, titles: {"en": "Library Shelfie Day"}, first: {era: 1, y: 2014}, emoji: "📚"},
