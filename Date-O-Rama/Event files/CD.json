@@ -8,7 +8,7 @@
     events: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 1, d: 4}, first: {era: 1, y: 1959}},
-        {titles: {"en": "Laurent-Désiré Kabila Assassination"}, type: "D", start: {mon: 1, d: 16}, first: {era: 1, y: 2001}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},
+        {inherits: "Heroes’ Day", notes: {"en": "Laurent-Désiré Kabila Assassination"}, type: "nD", start: {mon: 1, d: 16, durationD: 2}, first: {era: 1, y: 2001}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},
         {titles: {"en": "Patrice Lumumba Assassination"}, type: "D", start: {mon: 1, d: 17}, first: {era: 1, y: 1961}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},
         {type: "D", start: {era: 1, y: 2023, mon: 2, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/dr-congo-papal-visit"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 4, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/dr-congo/kimbangu-day"}, titles: {"en": "Kimbangu Day"}, first: {era: 1, y: 2023}},
