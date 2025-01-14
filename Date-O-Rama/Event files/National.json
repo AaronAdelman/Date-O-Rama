@@ -50,7 +50,7 @@
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "National Hot Pastrami Sandwich Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-pastrami-sandwich-day/"}, emoji: "🥪"},
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "National Organize Your Home Day", "he": "יום סידור הבית הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/organize-your-home-day/"}, notes: {"en": "Organize Your Home Day", "he": "יום סידור הבית"}, emoji: "🧹"},
         {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Bagel Day", "he": "יום הבייגל הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/bagel-day/"}, first: {era: 1, y: 2000}, emoji: "🥯"},
-        {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Hat Day"}, notes: {"en": "This event is meant to promote fashion."}},
+        {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Hat Day"}, notes: {"en": "This event is meant to promote fashion."}, first: {era: 1, y: 1985}, urls: {"en": "https://www.daysoftheyear.com/days/hat-day/"}},
         {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Strawberry Ice Cream Day", "he": "יום גלידת התות הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/strawberry-ice-cream-day/"}, emoji: "🍨", first: {era: 1, y: 1932}},
         {type: "D", start: {mon: 1, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-day/"}, titles: {"en": "National Fresh Squeezed Juice Day"}},
         {type: "D", start: {mon: 1, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/pothole-day/"}, titles: {"en": "National Pothole Day"}},
