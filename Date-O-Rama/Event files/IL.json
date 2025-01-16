@@ -7,7 +7,7 @@
     first: {era: 1, y: 1948},
     events: [
         {type: "D", start: {mon: 1, d: 11}, inherits: "Doctor’s Day", first: {era: 1, y: 1912}, emoji: "👨‍⚕️👩‍⚕️"},
-        {type: "D", start: {mon: 1, d: 18}, titles: {"he": "מבצע דוגו", "en": "Operation Dogo"}, emoji: "🧆", urls: {"he": "https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F", "en": "https://brave-together.com/en/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F"}},
+        {type: "D", start: {mon: 1, d: 18}, titles: {"he": "מבצע דוגו", "en": "Operation Dogo"}, emoji: "🧆", urls: {"he": "https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F", "en": "https://jr.co.il/dugo-day.htm"}, notes: {"en": "Dugo Day"}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Engineer’s Day", titles: {"en": "Israeli Engineer’s Day", "he": "יום המהנדס/ת הישראלי/ת"}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 2020}},
