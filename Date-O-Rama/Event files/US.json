@@ -567,6 +567,7 @@
         {type: "M", start: {mon: 9}, urls: {"en": "https://www.nationalsewingmonth.org/"}, titles: {"en": "National Sewing Month"}, emoji: "🧵🪡", first: {era: 1, y: 1982}},
         {type: "M", start: {mon: 9}, urls: {"en": "https://www.ready.gov/september", "es": "https://www.ready.gov/es/septiembre"}, titles: {"en": "National Preparedness Month", "es": "Mes de Preparación Nacional"}, first: {era: 1, y: 2004}},
         {type: "nD", start: {mon: 1, d: 24}, end: {mon: 1, d: 29}, titles: {"en": "National Cowboy Poetry Gathering Week"}, urls: {"en": "https://www.nationalcowboypoetrygathering.org/"}, first: {era: 1, y: 1985}, emoji: "🤠"},
+        {type: "nD", start: {mon: 1, d: 20, thruD: 26, wkd: [1]}, end: {mon: 1, d: 26, thruMon: 2, thruD: 1, wkd: [7]}, titles: {"en": "National School Choice Week"}, urls: {"en": "https://schoolchoiceweek.com/"}, first: {era: 1, y: 2011}},
         {type: "nD", start: {mon: 10, d: 13, thruD: 19, wkd: [1], durationD: 7}, inherits: "International Infection Prevention Week", first: {era: 1, y: 1986}},
         {type: "nD", start: {mon: 10, d: 22}, end: {mon: 10, d: 28}, titles: {"en": "Respiratory Care Week"}, emoji: "🫁", urls: {"en": "https://nationaltoday.com/respiratory-care-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1982}},
         {type: "nD", start: {mon: 10, d: 23}, end: {mon: 10, d: 31}, titles: {"en": "Red Ribbon Week"}, urls: {"en": "https://www.daysoftheyear.com/days/red-ribbon-week/"}, first: {era: 1, y: 1985}},
