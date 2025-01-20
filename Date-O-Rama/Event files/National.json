@@ -87,7 +87,7 @@
         {type: "D", start: {mon: 1, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/national-coffee-break-day/"}, titles: {"en": "National Coffee Break Day"}, emoji: "☕️"},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Cheesy Socks Day"}, notes: {"en": "This observance celebrates bad fashion choices that should remain hidden."}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Granola Bar Day"}, urls: {"en": "https://www.daysoftheyear.com/days/granola-bar-day/"}},
-        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Hugging Day", "he": "יום החיבוקים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/hugging-day/"}, emoji: "🫂", first: {era: 1, y: 1986}},
+        {type: "D", start: {mon: 1, d: 21}, inherits: "National Hugging Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Squirrel Appreciation Day", "he": "יום ההערכה לסנאי הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/squirrel-appreciation-day/"}, emoji: "🐿"},
         {type: "D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-bakers-crafters-makers-day/"}, titles: {"en": "National Bakers-Crafters-Makers Day"}, emoji: "🍞🍩🍪", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-conscious-uncoupling-day/"}, titles: {"en": "National Conscious Uncoupling Day"}, first: {era: 1, y: 2020}},

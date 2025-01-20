@@ -57,7 +57,7 @@
         {type: "D", start: {mon: 1, d: 16}, inherits: "National Nothing Day", first: {era: 1, y: 1973}, urls: {"en": "https://www.fsofcabal.com/holydays/01-16-nothing-day"}},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Joshmas"}, urls: {"en": "https://www.fsofcabal.com/holydays/01-17-joshmas"}, first: {era: 1, y: 1815}},
         {type: "D", start: {mon: 1, d: 18}, titles: {"en": "Pat Pineapple Day"}, notes: {"en": "Whollyday\n18 Chaos"}, inherits: "EDH"},
-        {type: "D", start: {mon: 1, d: 21}, inherits: "Hug Day", notes: {"en": "Whollyday\n21 Chaos"}, urls: {"en": "https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}},
+        {type: "D", start: {mon: 1, d: 21}, inherits: "National Hugging Day", notes: {"en": "Hug Day\nWhollyday\n21 Chaos"}, urls: {"en": "https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}},
         {type: "D", start: {mon: 1, d: 23}, titles: {"en": "Chaomas"}, urls: {"en": "https://www.fsofcabal.com/holydays/01-23-chaomas"}},
         {type: "D", start: {mon: 1, d: 23}, titles: {"en": "St. Bobcat’s Day"}},
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "Liter Label Lark Day"}},
