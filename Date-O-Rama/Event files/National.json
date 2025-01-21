@@ -97,6 +97,7 @@
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Blonde Brownie Day", "he": "יום הזהוביות־בלונדיז הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/blonde-brownie-day/"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Hot Sauce Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-sauce-day/"}, emoji: "🌶"},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Polka Dot Day"}, notes: {"en": "Yet another fashion-related observance.  Nothing worth celebrating."}, emoji: "⋅", first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Southern Food Day"}, urls: {"en": "https://www.checkiday.com/4c963a5f417a44f3bfdfe1323f03de25/national-southern-food-day"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, wkd: [4], nth: 4}, titles: {"en": "National Library Shelfie Day"}, notes: {"en": "Library Shelfie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-library-shelfie-day/"}, first: {era: 1, y: 2014}, emoji: "📚"},
         {type: "D", start: {mon: 1, d: 23}, inherits: "National Pie Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 1, d: 23}, titles: {"en": "National Handwriting Day", "he": "יום כתב היד הלאומי"}, notes: {"en": "Handwriting Day", "he": "יום כתב היד"}, urls: {"en": "https://www.daysoftheyear.com/days/handwriting-day/"}, emoji: "🖋", first: {era: 1, y: 1977}},

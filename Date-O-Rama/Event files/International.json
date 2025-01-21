@@ -94,6 +94,7 @@
         {type: "D", start: {mon: 1, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/one-liners-day/"}, titles: {"en": "One-Liners Day"}},
         {type: "D", start: {mon: 1, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/playdate-day/"}, titles: {"en": "International Playdate Day"}, notes: {"en": "Playdate Day"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/come-in-from-the-cold-day/"}, titles: {"en": "Come in from the Cold Day"}},
+        {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Dance of the Seven Veils Day"}, urls: {"en": "https://www.checkiday.com/a68a4b0191742b2d3daa75a008cecf49/dance-of-the-seven-veils-day"}, first: {era: 1, y: 2022}, notes: {"en": "I don’t know why this deserves an observance.  Go celebrate lichens or something instead."}},
         {type: "D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/international-sticky-toffee-pudding-day/"}, titles: {"en": "International Sticky Toffee Pudding Day"}},
         {type: "D", start: {mon: 1, d: 24}, titles: {"en": "Global Belly Laugh Day", "he": "יום הצחוק מהבטן הגלובלי"}, notes: {"en": "Belly Laugh Day"}, urls: {"en": "https://www.daysoftheyear.com/days/belly-laugh-day/"}, emoji: "🤭"},
         {type: "D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/change-a-pets-life-day/"}, titles: {"en": "Change a Pet’s Life Day"}, emoji: "🐰🐱🐶"},
