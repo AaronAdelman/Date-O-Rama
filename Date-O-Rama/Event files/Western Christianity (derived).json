@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/stick-to-your-new-years-resolution-day/"}, titles: {"en": "Stick to Your New Year's Resolution Day"}, emoji: "📝"},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Ditch New Year’s Resolutions Day"}, notes: {"en": "Ditch New Year’s Resolution Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {type: "D", start: {mon: 1, d: 2}, inherits: "Happy Mew Year For Cats Day"},
-        {type: "D", start: {mon: 1, d: 26}, titles: {"en": "National Green Juice Day"}, first: {era: 1, y: 2016}, urls: {"en": "https://www.daysoftheyear.com/days/national-green-juice-day/"}, emoji: "🧃"},
+        {type: "D", start: {mon: 1, d: 26}, inherits: "National Green Juice Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "National Fruitcake Toss Day"}, notes: {"en": "Fruitcake Toss Day\nSome sources claim this observance happens on the first Saturday in January."}, urls: {"en": "https://www.daysoftheyear.com/days/fruitcake-toss-day/"}, emoji: "🍰", first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National King Cake Day"}, urls: {"en": "https://www.checkiday.com/77fb0ac068baf6198239f6df1dffa5a7/national-king-cake-day"}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Take Down the Christmas Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-down-the-christmas-tree-day/"}, emoji: "🎄"},
