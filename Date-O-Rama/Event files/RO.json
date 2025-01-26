@@ -41,7 +41,7 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         
         {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Culture Day"}},
-        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day"},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {inherits: "World Day of Social Justice", type: "D", start: {mon: 2, d: 20}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Women’s Day"},
         {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Anti-Communist Political Prisoners’ Day"}},

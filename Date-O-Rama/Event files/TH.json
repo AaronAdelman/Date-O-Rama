@@ -116,6 +116,7 @@
         
         {type: "nD", start: {mon: 11, d: 14, thruD: 20, wkd: [7], durationD: 2}, titles: {"en": "Elephant Round-Up in Surin"}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, emoji: "🐘"},
         {type: "nD", start: {mon: 11, d: 23, thruD: 29, wkd: [6], durationD: 2}, titles: {"en": "Pattaya International Fireworks Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/pattaya-international-fireworks-festival/"}, emoji: "🎆", first: {era: 1, y: 2022}},
+        {type: "nD", start: {mon: 2, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Chiang Mai Flower Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/chiang-mai-flower-festival/"}, emoji: "💐"},
     ],
     templates: [
         {template: "Chakri Day", type: "D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day", "th": "วันจักรี"}, notes: {"en": "Chakri Memorial Day"}},

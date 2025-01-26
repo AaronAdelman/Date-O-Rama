@@ -37,16 +37,21 @@ class ASALocationManager: NSObject, ObservableObject {
 #if os(watchOS)
         self.locationManager.desiredAccuracy = kCLLocationAccuracyReduced
 #else
-        let batteryState = UIDevice.current.batteryState
-        var desiredAccuracy: CLLocationAccuracy
-        if batteryState == .unplugged || batteryState == .unknown {
-            desiredAccuracy = kCLLocationAccuracyReduced
-        } else {
-            desiredAccuracy = kCLLocationAccuracyBest
+        DispatchQueue.main.async {
+            let batteryState = UIDevice.current.batteryState
+            var desiredAccuracy: CLLocationAccuracy
+            if batteryState == .unplugged || batteryState == .unknown {
+                desiredAccuracy = kCLLocationAccuracyReduced
+            } else {
+                desiredAccuracy = kCLLocationAccuracyBest
+            }
+            self.locationManager.desiredAccuracy = desiredAccuracy
+            let generator = UIImpactFeedbackGenerator()
+            generator.prepare()
+            for _ in 1...4 {
+                generator.impactOccurred(intensity: 1.0)
+            }
         }
-        self.locationManager.desiredAccuracy = desiredAccuracy
-        let generator = UIImpactFeedbackGenerator()
-        generator.impactOccurred(intensity: 1.0)
 #endif
     }
     

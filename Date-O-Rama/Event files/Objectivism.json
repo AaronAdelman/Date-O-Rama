@@ -1,0 +1,11 @@
+{
+    titles: {"en": "Objectivism", "he": "אובייקטיביזם"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.4, green: 0.4, blue: 0.4},
+    events: [
+        {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Ayn Rand Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ayn-rand-day/"}, first: {era: 1, y: 1905}, inherits: "*DeathAnniv*", notes: {"en": "“There are two novels that can change a bookish fourteen-year old’s life: The Lord of the Rings and Atlas Shrugged. One is a childish fantasy that often engenders a lifelong obsession with its unbelievable heroes, leading to an emotionally stunted, socially crippled adulthood, unable to deal with the real world. The other, of course, involves orcs.”\n\nJohn Rogers, Kung Fu Monkey—Ephemera, blog post, March 19, 2009"},
+       },
+    ]
+}
+
