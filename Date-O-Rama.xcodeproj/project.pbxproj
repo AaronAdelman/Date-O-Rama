@@ -395,6 +395,8 @@
 		A59EABB32B4B0AE9008C146B /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
 		A59FB18D270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
+		A5A132922D49681800152EA9 /* Asatru Alliance.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132912D49680B00152EA9 /* Asatru Alliance.json */; };
+		A5A132932D49681800152EA9 /* Asatru Alliance.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132912D49680B00152EA9 /* Asatru Alliance.json */; };
 		A5A1D1D92A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
 		A5A1D1DA2A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
 		A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */; };
@@ -1368,6 +1370,7 @@
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		A59EABB02B445A73008C146B /* PK (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PK (Muslim).json"; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
+		A5A132912D49680B00152EA9 /* Asatru Alliance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Asatru Alliance.json"; sourceTree = "<group>"; };
 		A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TL (Chinese).json"; sourceTree = "<group>"; };
 		A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (yohrtsayts).json"; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
@@ -1839,6 +1842,7 @@
 				A5E04AAF2851CA5F001A4911 /* AQ.json */,
 				A5E292E8285A625000925EBD /* AR.json */,
 				A5E95F6C286F2DB7009267AF /* AS.json */,
+				A5A132912D49680B00152EA9 /* Asatru Alliance.json */,
 				A581B896284E60D800407D68 /* AT.json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A5D3D7E327FA20CC0099718A /* AU.json */,
@@ -3029,6 +3033,7 @@
 				A5B999AA28622A4000072FD5 /* BJ.json in Resources */,
 				A5EFFF55285B5F1500F2205F /* GE.json in Resources */,
 				A5EFFFC1285B811A00F2205F /* UA.json in Resources */,
+				A5A132932D49681800152EA9 /* Asatru Alliance.json in Resources */,
 				A5EFFF97285B7DB700F2205F /* PA.json in Resources */,
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
 				A5FB22B928638EE000B5042B /* TF.json in Resources */,
@@ -3365,6 +3370,7 @@
 				A5A62D3C2A36582400EDBB6D /* ER (Julian).json in Resources */,
 				A5E49648286253D0001BF40C /* MP.json in Resources */,
 				A581B882284E570500407D68 /* PT.json in Resources */,
+				A5A132922D49681800152EA9 /* Asatru Alliance.json in Resources */,
 				A575914D282BE43900675058 /* SK.json in Resources */,
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
