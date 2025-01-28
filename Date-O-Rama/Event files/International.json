@@ -1871,6 +1871,8 @@
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/return-shopping-carts-to-the-supermarket-month/"}, titles: {"en": "Return Shopping Carts to the Supermarket Month"}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/spunky-old-broads-month/"}, titles: {"en": "Spunky Old Broads Month"}, first: {era: 1, y: 2002}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/wise-health-care-consumer-month/"}, titles: {"en": "Wise Health Care Consumer Month"}, inherits: "*MedAwareness*"},
+        {type: "M", start: {mon: 2}, titles: {"en": "Worldwide Renaissance of the Heart Month"}, urls: {"en": "https://www.daysoftheyear.com/days/renaissance-of-the-heart-month/"}, first: {era: 1, y: 2009}, emoji: "❤️"},
+        {type: "M", start: {mon: 2}, titles: {"en": "Return Shopping Carts to the Supermarket Month"}, urls: {"en": "https://www.daysoftheyear.com/days/return-shopping-carts-to-the-supermarket-month/"}, first: {era: 1, y: 1969}, emoji: "🛒"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/youth-leadership-month/"}, titles: {"en": "Youth Leadership Month"}, first: {era: 1, y: 1989}, emoji: "👦👧"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/canned-food-month/"}, titles: {"en": "Canned Food Month"}, emoji: "🥫"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/harley-quinn-month/"}, titles: {"en": "Harley Quinn Month"}, first: {era: 1, y: 2015}},

@@ -11,5 +11,6 @@
         {type: "D", start: {mon: 7, d: 26}, titles: {"en": "One Voice Day", "he": "יום קול אחד"}, urls: {"en": "https://www.daysoftheyear.com/days/one-voice-day/"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 12}, titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, emoji: "🙏", urls: {"en": "https://www.daysoftheyear.com/days/spiritual-literacy-month/"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 3}, titles: {"en": "Spiritual Wellness Month", "he": "חודש הבריאות הרוחנית"}, urls: {"en": "https://nationaltoday.com/spiritual-wellness-month/"}},
+        {type: "M", start: {mon: 2}, titles: {"en": "Spiritual Teachers Month"}, urls: {"en": "https://www.daysoftheyear.com/days/spiritual-teachers-month/"}},
     ]
 }
