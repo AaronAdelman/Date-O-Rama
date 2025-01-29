@@ -6,53 +6,55 @@
     urls: {"en": "https://www.asatru.org/holidays.php"},
     first: {era: 1, y: 1988},
     events: [
-        {type: "D", start: {mon: 1, d: 3}, titles: {"en": "Charming of the Plow"}},
-        {type: "D", start: {mon: 1, d: 9}, titles: {"en": "Day of Remembrance for Raud the Strong"}},
-        {type: "D", start: {mon: 1, d: 14}, inherits: "Thorrablot"},
-
-        {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Barri"}},
-        {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Day of Remembrance for Eyvind Kinnrifi"}},
-        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Feast of Vali"}},
-
-        {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Day of Remembrance for Oliver the Martyr"}},
-        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "High Feast of Ostara"}},
-        {type: "D", start: {mon: 3, d: 28}, titles: {"en": "Ragnar Lodbrok Day"}},
-
-        {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Day of Remembrance for Jarl Hakon of Norway"}},
-        {type: "D", start: {mon: 4, d: 15}, titles: {"en": "Sigrblot/Sumarsdag"}},
-        {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Yggdrasil Day"}},
-        {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Walburg"}},
-
-        {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
-        {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Day of Remembrance for Guthroth"}},
-        {type: "D", start: {mon: 5, d: 20}, titles: {"en": "Frigga Blot"}},
-
-        {type: "D", start: {mon: 6, d: 8}, titles: {"en": "Lindisfarne Day"}},
-        {type: "D", start: {mon: 6, d: 9}, titles: {"en": "Day of Remembrance for Sigurd the Volsung"}},
-        {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Asatru Alliance Founding Day"}},
-        {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Midsummer"}},
-
-        {type: "D", start: {mon: 7, d: 4}, titles: {"en": "Founder’s Day"}},
-        {type: "D", start: {mon: 7, d: 9}, titles: {"en": "Day of Remembrance for Unn the Deep Minded"}},
-        {type: "D", start: {mon: 7, d: 29}, titles: {"en": "Stikklestad Day"}},
-
-        {type: "D", start: {mon: 8, d: 9}, titles: {"en": "Day of Remembrance for Radbod"}},
-        {type: "D", start: {mon: 8, d: 19}, titles: {"en": "Freyfaxi"}},
-
-        {type: "D", start: {mon: 9, d: 9}, titles: {"en": "Day of Remembrance for Herman of the Cherusci"}},
-        {type: "D", start: {mon: 9, d: 23}, titles: {"en": "Winter Finding"}},
-
-        {type: "D", start: {mon: 10, d: 8}, titles: {"en": "Day of Remembrance for Erik the Red"}},
-        {type: "D", start: {mon: 10, d: 9}, titles: {"en": "Day of Remembrance for Leif Erikson"}},
-        {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Winter Nights/Vetrablot"}},
-
-        {type: "D", start: {mon: 11, d: 9}, titles: {"en": "Day of Remembrance for Queen Sigrith of Sweden"}},
-        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Feast of the Einherjar"}},
-        {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Feast of Ullr"}},
-
-        {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Remembrance for Egil Skallagrimsson"}},
-        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Mother Night"}},
-        {type: "D", start: {mon: 12, d: 22}, titles: {"en": "High Feast of Yule"}},
-        {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Twelfth Night"}},
+        {type: "Y", start: {}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 1, d: 3}, titles: {"en": "Charming of the Plow"}},
+            {type: "D", start: {mon: 1, d: 9}, titles: {"en": "Day of Remembrance for Raud the Strong"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 1, d: 14}, inherits: "Thorrablot"},
+            
+            {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Barri"}},
+            {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Day of Remembrance for Eyvind Kinnrifi"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Feast of Vali"}},
+            
+            {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Day of Remembrance for Oliver the Martyr"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 3, d: 20}, inherits: "Ostara", notes: {"en": "High Feast of Ostara"}},
+            {type: "D", start: {mon: 3, d: 28}, titles: {"en": "Ragnar Lodbrok Day"}},
+            
+            {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Day of Remembrance for Jarl Hakon of Norway"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 4, d: 15}, titles: {"en": "Sigrblot"}, notes: {"en": "Sumarsdag"}},
+            {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Yggdrasil Day"}},
+            {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Walburg"}},
+            
+            {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
+            {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Day of Remembrance for Guthroth"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 5, d: 20}, titles: {"en": "Frigga Blot"}},
+            
+            {type: "D", start: {mon: 6, d: 8}, titles: {"en": "Lindisfarne Day"}},
+            {type: "D", start: {mon: 6, d: 9}, titles: {"en": "Day of Remembrance for Sigurd the Volsung"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Asatru Alliance Founding Day"}},
+            {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Midsummer"}},
+            
+            {type: "D", start: {mon: 7, d: 4}, titles: {"en": "Founder’s Day"}},
+            {type: "D", start: {mon: 7, d: 9}, titles: {"en": "Day of Remembrance for Unn the Deep Minded"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 7, d: 29}, titles: {"en": "Stikklestad Day"}},
+            
+            {type: "D", start: {mon: 8, d: 9}, titles: {"en": "Day of Remembrance for Radbod"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 8, d: 19}, titles: {"en": "Freyfaxi"}},
+            
+            {type: "D", start: {mon: 9, d: 9}, titles: {"en": "Day of Remembrance for Herman of the Cherusci"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 9, d: 23}, titles: {"en": "Winter Finding"}},
+            
+            {type: "D", start: {mon: 10, d: 8}, titles: {"en": "Day of Remembrance for Erik the Red"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 10, d: 9}, titles: {"en": "Day of Remembrance for Leif Erikson"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Winter Nights"}, notes: {"en": "Vetrablot"}},
+            
+            {type: "D", start: {mon: 11, d: 9}, titles: {"en": "Day of Remembrance for Queen Sigrith of Sweden"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Feast of the Einherjar"}},
+            {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Feast of Ullr"}},
+            
+            {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Remembrance for Egil Skallagrimsson"}, inherits: "*Remembrance*"},
+            {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Mother Night"}},
+            {type: "D", start: {mon: 12, d: 22}, inherits: "Yule", notes: {"en": "High Feast of Yule"}},
+            {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Twelfth Night"}},
+        ]},
     ]
 }

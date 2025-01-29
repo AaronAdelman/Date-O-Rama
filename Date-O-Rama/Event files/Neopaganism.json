@@ -30,10 +30,8 @@
         {template: "Beltane", titles: {"en": "Beltane", "he": "בלטיין"}, notes: {"en": "May Day", "fi": "Vappu", "ga": "Lá Bealtaine", "hu": "Majális", "no": "Første mai", "sv": "Första maj"}, type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/beltane/"}},
         {template: "Imbolc", titles: {"en": "Imbolc", "he": "אימבולק", "ga": "Imbolc"}, type: "D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/imbolc/"}},
         {template: "Litha", titles: {"en": "Litha", "he": "לית׳א"}, type: "D", start: {equinoxOrSolstice: "Jun"}},
-        {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "D", start: {equinoxOrSolstice: "Mar"}},
         {template: "Lughnasadh", titles: {"en": "Lughnasadh", "he": "לונאסה"}, type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lughnasadh/"}},
         {template: "Mabon", titles: {"en": "Mabon", "he": "מאבון"}, type: "D", start: {equinoxOrSolstice: "Sep"}, urls: {"en": "https://nationaltoday.com/mabon-day/"}},
         {template: "Samhain", titles: {"en": "Samhain", "he": "סמהיין"}, type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/samhain/"}},
-        {template: "Yule", titles: {"en": "Yule", "he": "יוּל"}, type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://www.daysoftheyear.com/days/yule/"}},
     ]
 }
