@@ -397,6 +397,8 @@
 		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A5A132922D49681800152EA9 /* Asatru Alliance.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132912D49680B00152EA9 /* Asatru Alliance.json */; };
 		A5A132932D49681800152EA9 /* Asatru Alliance.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132912D49680B00152EA9 /* Asatru Alliance.json */; };
+		A5A132FD2D4BFF5F00152EA9 /* Sesame Street.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132FC2D4BFF5600152EA9 /* Sesame Street.json */; };
+		A5A132FE2D4BFF5F00152EA9 /* Sesame Street.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A132FC2D4BFF5600152EA9 /* Sesame Street.json */; };
 		A5A1D1D92A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
 		A5A1D1DA2A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
 		A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */; };
@@ -1371,6 +1373,7 @@
 		A59EABB02B445A73008C146B /* PK (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PK (Muslim).json"; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
 		A5A132912D49680B00152EA9 /* Asatru Alliance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Asatru Alliance.json"; sourceTree = "<group>"; };
+		A5A132FC2D4BFF5600152EA9 /* Sesame Street.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sesame Street.json"; sourceTree = "<group>"; };
 		A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TL (Chinese).json"; sourceTree = "<group>"; };
 		A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (yohrtsayts).json"; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
@@ -2121,6 +2124,7 @@
 				A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */,
 				A5EF0004285B8EEA00F2205F /* SD (Muslim).json */,
 				A5759146282BE36500675058 /* SE.json */,
+				A5A132FC2D4BFF5600152EA9 /* Sesame Street.json */,
 				A5EFFF9C285B7F2E00F2205F /* SG.json */,
 				A50DA50A28686271008D54AE /* SG (Chinese).json */,
 				A5FB22A428638D2B00B5042B /* SH.json */,
@@ -2867,6 +2871,7 @@
 				A50DA51F28686272008D54AE /* SR (Chinese).json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */,
+				A5A132FE2D4BFF5F00152EA9 /* Sesame Street.json in Resources */,
 				A5C72A122969EE6600B8442A /* Sikhism.json in Resources */,
 				A50A2C3F2C580C7D00AB0F29 /* Discordianism.json in Resources */,
 				A5EF0011285B8EEB00F2205F /* SD (Muslim).json in Resources */,
@@ -3178,6 +3183,7 @@
 				A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */,
 				A5EB4F982850F6A200A32FB1 /* Sunni Islam (times, Karachi).json in Resources */,
 				A5EFFF59285B5F9B00F2205F /* GG.json in Resources */,
+				A5A132FD2D4BFF5F00152EA9 /* Sesame Street.json in Resources */,
 				A5B999A2286229A300072FD5 /* AX.json in Resources */,
 				A50DA52228686272008D54AE /* VN (Chinese).json in Resources */,
 				A5A6405B285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
