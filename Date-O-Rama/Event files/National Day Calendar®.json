@@ -365,7 +365,8 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-compassionate-leadership-week-second-full-week-in-september"}, titles: {"en": "National Compassionate Leadership Week"}, first: {era: 1, y: 2022}},
         {type: "W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-construction-appreciation-week-third-week-in-september-monday-through-friday"}, titles: {"en": "National Construction Appreciation Week"}, emoji: "🌎", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "National Bobblehead Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-bobblehead-day-january-7"}, first: {era: 1, y: 2015}},
-        
+        {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Get Up Day"}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/national-get-up-day-february-1"}, first: {era: 1, y: 2017}, emoji: "⛸"},
+
         {type: "nD", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-arkansas-day/"}, first: {era: 1, y: 2017}},
             {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Michigan Day", "he": "יום מישיגן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-michigan-day/"}, first: {era: 1, y: 2017}},
