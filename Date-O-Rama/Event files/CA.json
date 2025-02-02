@@ -22,7 +22,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", urls: {"en": "https://www.officeholidays.com/holidays/canada/fathers-day"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Groundhog Day", type: "D", start: {mon: 2, d: 2}},
+        {inherits: "Groundhog Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1841}},
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
         {inherits: "Heritage Day", type: "D", start: {mon: 2, wkd: [2], nth: 3}, first: {era: 1, y: 2015}, locations: {"en": "Nova Scotia"}, urls: {"en": "https://nationaltoday.com/nova-scotia-heritage-day/"}},
         {inherits: "Heritage Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-day-in-alberta/"}, locations: {"en": "Alberta"}},

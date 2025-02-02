@@ -69,13 +69,18 @@
         {type: "D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "National Pizza Day", notes: {"en": "Pizza Day"}},
         {type: "D", start: {mon: 7, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, titles: {"en": "World Rock Day", "he": "יום הרוק העולמי", "es": "Día Mundial del Rock", "pt": "Dia Mundial do Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
         
-        {type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, emoji: "🍰"},
+        {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Pão Francês Day"}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 7, d: 26}},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Saci Day", first: {era: 1, y: 2004}},
-        {inherits: "Public Holiday", type: "nD", start: {era: 1, y: 2024, mon: 11, d: 18, durationD: 2}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/rio-g20-holiday"}, locations: {"en": "Rio de Janeiro"}},
+        {type: "nD", start: {era: 1, y: 2024, mon: 11, d: 18, durationD: 2}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/brazil/rio-g20-holiday"}, locations: {"en": "Rio de Janeiro"}},
         {type: "D", start: {mon: 1, d: 11, thruD: 17, wkd: [5]}, titles: {"en": "Washing of the Bonfim", "pt": "Lavagem do Bonfim"}, urls: {"en": "https://www.daysoftheyear.com/days/the-washing-of-bonfim/"}},
         {type: "D", start: {mon: 1, d: 14, thruD: 20, wkd: [1]}, titles: {"en": "Feast of Bonfim", "pt": "Festa do Bonfim"}, urls: {"en": "https://www.daysoftheyear.com/days/feast-of-bonfim/"}},
         {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Festival of Lemanjá"}, urls: {"en": "https://www.daysoftheyear.com/days/the-festival-of-lemanja/"}, first: {era: 1, y: 1920}},
+        {type: "D", start: {mon: 2, d: 9}, inherits: "Frevo Day", first: {era: 1, y: 1909}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Frevo Day", first: {era: 1, y: 1909}},
+    ],
+    templates: [
+        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}},
     ]
 }

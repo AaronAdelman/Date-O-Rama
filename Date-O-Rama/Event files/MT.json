@@ -29,7 +29,7 @@
         {inherits: "Conversion of St. Paul", type: "D", start: {mon: 1, d: 25}},
         
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
-        {inherits: "Feast of St. Blaise", type: "D", start: {mon: 2, d: 3}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "Feast of St. Blaise", first: {era: 1, y: 972}},
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         
         {inherits: "Feast of the Annunciation", type: "D", start: {mon: 3, d: 25}},

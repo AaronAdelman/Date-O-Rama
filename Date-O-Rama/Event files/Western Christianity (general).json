@@ -28,7 +28,7 @@
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         
         {titles: {"en": "Feast of St. Ansgar"}, type: "D", start: {mon: 2, d: 3}},
-        {inherits: "Feast of St. Blaise", type: "D", start: {mon: 2, d: 3}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "Feast of St. Blaise", first: {era: 1, y: 972}},
         {titles: {"en": "Feast of St. Agatha"}, type: "D", start: {mon: 2, d: 5}},
         {titles: {"en": "Feast of Saints Paul Miki and companions"}, type: "D", start: {mon: 2, d: 6}},
         {titles: {"en": "Feast of St. Jerome Emiliani or St. Josephine Bakhita"}, type: "D", start: {mon: 2, d: 8}},
