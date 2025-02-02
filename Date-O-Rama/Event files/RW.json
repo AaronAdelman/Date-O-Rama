@@ -8,7 +8,8 @@
     first: {era: 1, y: 1962},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
-        {inherits: "National Heroes’ Day", type: "D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
+        {type: "D", start: {mon: 2, d: 1}, inherits: "National Heroes’ Day", urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
+        {type: "D", start: {mon: 2, d: 3, wkd: [2, 3]}, titles: {"en": "National Heroes’ Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {mon: 4, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/genocide-against-the-tutsi-memorial-day"}, titles: {"en": "Genocide against the Tutsi Memorial Day"}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
