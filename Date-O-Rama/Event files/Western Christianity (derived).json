@@ -138,7 +138,6 @@
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/love-reset-day/"}, titles: {"en": "Love Reset Day"}},
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/st-skeletors-day/"}, titles: {"en": "St. Skeletor’s Day"}, first: {era: 1, y: 1998}, emoji: "💀"},
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/singles-awareness-day/"}, titles: {"en": "Singles Awareness Day"}, notes: {"en": "Singles Appreciation Day"}},
-        {type: "D", start: {mon: 2, d: 2}, titles: {"en": "National Crepe Day"}, first: {era: 1, y: 472}, urls: {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, emoji: "🥞"},
         {type: "D", start: {mon: 2, d: 6}, inherits: "National Valentine Shopping Reminder Day"},
         {type: "D", start: {mon: 2, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/rose-day-2/"}, inherits: "Rose Day"},
         {type: "D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/propose-day/"}, titles: {"en": "Propose Day"}},

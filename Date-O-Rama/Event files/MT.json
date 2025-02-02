@@ -28,7 +28,7 @@
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Feast of St. Anthony the Abbot", "mt": "San Anton Abbati"}},
         {inherits: "Conversion of St. Paul", type: "D", start: {mon: 1, d: 25}},
         
-        {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         {inherits: "Feast of St. Blaise", type: "D", start: {mon: 2, d: 3}},
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         

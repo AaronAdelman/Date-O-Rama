@@ -25,7 +25,7 @@
         {titles: {"en": "Feast of St. Thomas Aquinas"}, type: "D", start: {mon: 1, d: 28}},
         {titles: {"en": "Feast of St. John Bosco"}, type: "D", start: {mon: 1, d: 31}},
 
-        {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         
         {titles: {"en": "Feast of St. Ansgar"}, type: "D", start: {mon: 2, d: 3}},
         {inherits: "Feast of St. Blaise", type: "D", start: {mon: 2, d: 3}},

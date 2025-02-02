@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Synaxis of St. John the Baptist", type: "D", start: {"mon": 1, d: 7}},
         {titles: {"en": "Day of Remembrance of the Ukrainian Defenders of the Second Battle of Donetsk Airport (2014-2015)"}, type: "D", start: {"mon": 1, d: 20}},
-        {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         {titles: {"en": "Day of Unity"}, type: "D", start: {"mon": 2, d: 16}},
         {titles: {"en": "Day of Remembrance of the Fallen Martyrs of Euromaidan, the Heavenly Hundred Heroes"}, type: "D", start: {"mon": 2, d: 20}},
         {titles: {"en": "Anniversary of the 2014 victory of the Revolution of Dignity"}, type: "D", start: {"mon": 2, d: 21}},

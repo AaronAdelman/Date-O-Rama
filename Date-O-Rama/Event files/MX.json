@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 11, d: 23}, inherits: "Navy Day", first: {era: 1, y: 1825}},
         
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {inherits: "Candlemas", type: "D", start: {mon: 2, d: 2}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         {inherits: "Carnival (day 1)", type: "D", start: {Easter:  "Easter", offsetD: -52}},
         {inherits: "Carnival (day 2)", type: "D", start: {Easter:  "Easter", offsetD: -51}},
         {inherits: "Carnival (day 3)", type: "D", start: {Easter:  "Easter", offsetD: -50}},
