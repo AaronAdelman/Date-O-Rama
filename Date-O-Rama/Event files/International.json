@@ -648,7 +648,6 @@
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "Take a Cruise Day"}, urls: {"en": "https://www.daysoftheyear.com/days/take-a-cruise-day/"}, emoji: "🛳️"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "The Day the Music Died"}, notes: {"en": "National The Day the Music Died Day"}, urls: {"en": "https://www.daysoftheyear.com/days/the-day-the-music-died/"}, first: {era: 1, y: 1959}, emoji: "🥧", inherits: "*DeathAnniv*"},
         {type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/doggy-date-night/"}, titles: {"en": "Doggy Date Night"}, emoji: "🐕"},
-        {type: "D", start: {mon: 2, d: 4}, titles: {"en": "Create a Vacuum Day"}, urls: {"en": "https://nationaltoday.com/create-a-vacuum-day/"}},
         {type: "D", start: {mon: 2, d: 4}, titles: {"en": "Facebook’s Birthday", "he": "יום הולדת לפייסבוק"}, urls: {"en": "https://nationaltoday.com/facebooks-birthday/"}},
         {type: "D", start: {mon: 2, d: 4}, titles: {"en": "World Cancer Day", "he": "יום הסרטן העולמי"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.worldcancerday.org/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 2, d: 4}, titles: {"en": "Liberace Day"}, urls: {"en": "https://nationaltoday.com/liberace-day/"}},
