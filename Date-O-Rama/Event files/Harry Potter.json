@@ -1,0 +1,25 @@
+//
+//  Harry Potter.json
+//  Date-O-Rama
+//
+//  Created by אהרן שלמה אדלמן on 06/02/2025.
+//  Copyright © 2025 Adelsoft. All rights reserved.
+//
+{
+    titles: {"en": "Harry Potter", "he": "הארי פוטר"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.1, green: 0.1, blue: 0.1},
+    events: [
+        {type: "D", start: {mon: 10, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Harry Potter Book Day"}, notes: {"en": "Harry Potter Book Night"}, urls: {"en": "https://www.bloomsbury.com/uk/discover/harry-potter/harry-potter-book-day/"}, first: {era: 1, y: 2023}, emoji: "📚"},
+        {type: "D", start: {mon: 10, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Harry Potter Book Night"}, urls: {"en": "https://www.daysoftheyear.com/days/harry-potter-book-day/"}, first: {era: 1, y: 2014}, last: {era: 1, y: 2022}, emoji: "📚"},
+        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Hufflepuff Pride Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hufflepuff-pride-day/"}},
+        {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Slytherin Pride Day"}, urls: {"en": "https://www.daysoftheyear.com/days/slytherin-pride-day/"}},
+        {type: "D", start: {mon: 3, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/gryffindor-pride-day/"}, titles: {"en": "Gryffindor Pride Day"}},
+        {type: "D", start: {mon: 3, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/ravenclaw-pride-day/"}, titles: {"en": "Ravenclaw Pride Day"}},
+        {type: "D", start: {mon: 5, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/international-harry-potter-day/"}, titles: {"en": "International Harry Potter Day", "he": "יום הארי פוטר הבינלאומי"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/harry-potters-birthday/"}, titles: {"en": "Harry Potter’s Birthday", "he": "יומולדת להארי פוטר"}, inherits: "*BDay*"},
+    ]
+}
+
+

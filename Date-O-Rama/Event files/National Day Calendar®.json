@@ -368,6 +368,8 @@
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Get Up Day"}, urls: {"en": "https://www.nationaldaycalendar.com/pop-culture-lifestyle/national-get-up-day-february-1"}, first: {era: 1, y: 2017}, emoji: "⛸"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Women Physicians Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-women-physicians-day-february-3"}, first: {era: 1, y: 2016}, emoji: "👩‍⚕️"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Missing Persons Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-missing-persons-day-february-3"}, first: {era: 1, y: 2018}, emoji: "🫥"},
+        {type: "D", start: {mon: 2, d: 7}, titles: {"en": "National Periodic Table Day"}, urls: {"en": "https://www.periodictableday.org/"}, first: {era: 1, y: 2016}, emoji: "🧪"},
+
 
         {type: "nD", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-arkansas-day/"}, first: {era: 1, y: 2017}},
