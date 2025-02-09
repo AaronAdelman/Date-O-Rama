@@ -74,7 +74,10 @@
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, first: {era: 1, y: 1991}, emoji: "👩"},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Donair Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-donair-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "National Have a Heart Day"}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}},
-        {type: "D", start: {mon: 2, d: 15}, titles: {"en": "Agriculture Day"}, urls: {"en": "https://nationaltoday.com/canadas-agriculture-day/"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 2, wkd: [3], nth: 2}, inherits: "Canada’s Agriculture Day", first: {era: 1, y: 2017}, last: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 2, wkd: [3], nth: 4}, inherits: "Canada’s Agriculture Day", first: {era: 1, y: 2021}, last: {era: 1, y: 2022}},
+        {type: "D", start: {era: 1, y: 2023, mon: 2, d: 15}, inherits: "Canada’s Agriculture Day"},
+        {type: "D", start: {mon: 2, wkd: [3], nth: 2}, inherits: "Canada’s Agriculture Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-flag-of-canada-day/"}, titles: {"en": "National Flag of Canada Day", "he": "יום הדגל הלאומי של קנדה", "fr": "Jour du drapeau national du Canada"}, first: {era: 1, y: 1965}, inherits: "National Flag Day"},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Jamaican Patty Day"}},
         {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/yukon-heritage-day/"}, titles: {"en": "Yukon Heritage Day"}, first: {era: 1, y: 1976}},
@@ -152,5 +155,6 @@
         {template: "Royal St. John’s Regatta", type: "D", start: {mon: 8, wkd: [4], nth: 1}, titles: {"en": "Royal St. John’s Regatta"}, notes: {"en": "Regatta Day"}, urls: {"en": "https://stjohnsregatta.ca/"}, emoji: "🚣‍♀️"},
         {template: "Ontario Garlic Week", type: "nD", start: {era: 1, y: 2021, mon: 10, d: 29}, end: {era: 1, y: 2021, mon: 11, d: 7}, titles: {"en": "Ontario Garlic Week"}, urls: {"en": "https://www.daysoftheyear.com/days/ontario-garlic-week/"}, emoji: "🧄"},
         {template: "First Nation Public Library Week", type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "First Nation Public Library Week"}, urls: {"en": "https://resources.olservice.ca/fnplw/home"}, notes: {"en": "FNPLW"}, emoji: "📚"},
+        {template: "Canada’s Agriculture Day", type: "D", start: {mon: 2, d: 15}, titles: {"en": "Canada’s Agriculture Day"}, urls: {"en": "https://agriculturemorethanever.ca/cdn-ag-day/"}, first: {era: 1, y: 2017}, inherits: "National Agriculture Day", notes: {"en": "CdnAgDay\nCanada’s Ag Day"}},
     ]
 }

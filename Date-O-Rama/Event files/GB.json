@@ -285,11 +285,13 @@
         {type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, inherits: "Great British Game Week", first: {era: 1, y: 2022}},
         {type: "W", start: {mon: 11, fullWk: 3}, inherits: "Road Safety Week", first: {era: 1, y: 2023}},
         {type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Children’s Mental Health Week"}, urls: {"en": "https://www.childrensmentalhealthweek.org.uk/"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*"},
-        {type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Apprenticeship Week"}, urls: {"en": "https://nationalapprenticeshipweek.co.uk/"}, first: {era: 1, y: 2007}},
+        {type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, inherits: "National Apprenticeship Week", first: {era: 1, y: 2007}, last: {era: 1, y: 2024}},
+        {type: "nD", start: {era: 1, y: 2025, mon: 2, d: 10}, end: {era: 1, y: 2025, mon: 2, d: 14}, inherits: "National Apprenticeship Week"},
+        {type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, inherits: "National Apprenticeship Week", first: {era: 1, y: 2026}},
         {type: "W", start: {mon: 2, fullWk: 2, firstDOfWk: 2}, titles: {"en": "British Pie Week"}, urls: {"en": "http://www.pierate.co.uk/p/british-pie-week.html"}, first: {era: 1, y: 2007}, emoji: "🥧"},
         {type: "W", start: {mon: 2, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Homes for Birds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/homes-for-birds-week/"}, emoji: "🐦‍⬛🦜🪿"},
         {type: "W", start: {mon: 2, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Butchers’ Week"}, notes: {"en": "Butchers’ Week"}, urls: {"en": "https://www.daysoftheyear.com/days/butchers-week/"}, emoji: "🔪"},
-        {type: "W", start: {mon: 2, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Student Volunteering Week"}, urls: {"en": "https://www.daysoftheyear.com/days/student-volunteering-week/"}, first: {era: 1, y: 2001}},
+        {type: "W", start: {mon: 2, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Student Volunteering Week"}, urls: {"en": "https://studentvolunteeringnetwork.com/student-volunteering-week/"}, first: {era: 1, y: 2001}},
         {type: "W", start: {mon: 2, fullWk: 2}, inherits: "Children of Alcoholics Awareness Week", urls: {"en": "https://coa.nacoa.org.uk/"}},
         {type: "W", start: {mon: 5, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Dying Matters Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dying-matters-awareness-week/"}},
         {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "National Vegetarian Week", first: {era: 1, y: 1992}, last: {era: 1, y: 2023}},
@@ -347,5 +349,6 @@
         {template: "Wales International Film Festival", type: "D", start: {mon: 9, d: 13, thruD: 19, wkd: [6]}, titles: {"en": "Wales International Film Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/wales-international-film-festival/"}, emoji: "📽️"},
         {template: "Nos Galan Road Races", type: "D", start: {mon: 12, d: 31}, titles: {"en": "Nos Galan Road Races"}, urls: {"en": "https://www.rctcbc.gov.uk/EN/Events/NosGalan/NosGalanRoadRace.aspx"}},
         {template: "Family Mediation Week", type: "nD", start: {mon: 1, d: 16, thruD: 22, wkd: [2], durationD: 5}, titles: {"en": "Family Mediation Week"}, urls: {"en": "https://thefma.co.uk/family-mediation-week/"}},
+        {template: "National Apprenticeship Week", type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Apprenticeship Week"}, urls: {"en": "https://nationalapprenticeshipweek.co.uk/"}},
     ]
 }
