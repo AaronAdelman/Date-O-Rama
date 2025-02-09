@@ -754,6 +754,8 @@
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "National Toothache Day"}, urls: {"en": "https://www.daysoftheyear.com/days/toothache-day/"}, emoji: "🦷"},
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "National Read in the Bathtub Day"}, urls: {"en": "https://www.daysoftheyear.com/days/read-in-the-bathtub-day/"}, emoji: "🛀", notes: {"en": "Read in the Bathtub Day"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, titles: {"en": "National Homegating Day"}, urls: {"en": "https://nationaltoday.com/national-homegating-day/"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 2, wkd: [1], nth: 3}, titles: {"en": "Daytona 500"}, urls: {"en": "https://en.wikipedia.org/wiki/Daytona_500"}, first: {era: 1, y: 2022}, emoji: "🏎"},
+        {type: "D", start: {mon: 2, d: 11, thruD: 17, wkd: [4]}, titles: {"en": "Daytona Pole Day"}, urls: {"en": "https://www.daysoftheyear.com/days/daytona-pole-day/"}, first: {era: 1, y: 2022}, emoji: "🏎"},
         {type: "D", start: {mon: 2, wkd: [2], nth: 1}, titles: {"en": "National Sickie Day"}, notes: {"en": "This observance encourages dishonest behavior.  You may get disciplined or fired if you observe it."}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 2}, titles: {"en": "National Clean Out Your Computer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/clean-out-your-computer-day/"}, first: {era: 1, y: 2000}, emoji: "🖥️"},
         {type: "D", start: {mon: 2, wkd: [2], nth: 2}, titles: {"en": "National Poop Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-poop-day/"}, first: {era: 1, y: 2016}, notes: {"en": "I cannot make up something like this."}},

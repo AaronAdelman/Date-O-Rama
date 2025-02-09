@@ -73,7 +73,7 @@
         {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, first: {era: 1, y: 1991}, emoji: "👩"},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Donair Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-donair-day/"}, first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "National Have a Heart Day"}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}},
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Have a Heart Day"}, notes: {"en": "National Have a Heart Day"}, urls: {"en": "https://fncaringsociety.com/events/have-heart-day"}, first: {era: 1, y: 2012}, emoji: "🧸"},
         {type: "D", start: {mon: 2, wkd: [3], nth: 2}, inherits: "Canada’s Agriculture Day", first: {era: 1, y: 2017}, last: {era: 1, y: 2020}},
         {type: "D", start: {mon: 2, wkd: [3], nth: 4}, inherits: "Canada’s Agriculture Day", first: {era: 1, y: 2021}, last: {era: 1, y: 2022}},
         {type: "D", start: {era: 1, y: 2023, mon: 2, d: 15}, inherits: "Canada’s Agriculture Day"},

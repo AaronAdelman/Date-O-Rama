@@ -581,6 +581,7 @@
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/read-to-your-child-day/"}, titles: {"en": "Read to Your Child Day"}, emoji: "👦👧"},
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/world-bonobo-day/"}, titles: {"en": "World Bonobo Day"}},
         {type: "D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/world-congenital-heart-defect-awareness-day/"}, titles: {"en": "World Congenital Heart Defect Awareness Day"}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "World Sound Healing Day"}, notes: {"en": "This observance promotes pseudo-scientific nonsense about sound, meditation, and “healing”."}},
         {type: "D", start: {mon: 2, d: 15}, titles: {"en": "World Hippo Day", "he": "יום ההיפופוטם העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/hippo-day/"}, emoji: "🦛"},
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-angelman-day/"}, titles: {"en": "International Angelman Day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-childhood-cancer-day/"}, titles: {"en": "International Childhood Cancer Day"}, first: {era: 1, y: 2002}, emoji: "👦👧"},
