@@ -1,6 +1,6 @@
 # Date-O-Rama
 
-This is a date/time program which does things which Apple’s software does not do.  
+This is an in-progress date/time program for macOS, iOS, iPadOS, and watchOS which does things which Apple’s software does not do.  
 
 * Localized dates and times in every supported language
 * Multiple locations, including Mars
