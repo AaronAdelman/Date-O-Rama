@@ -9,3 +9,6 @@ This is an in-progress date/time program for macOS, iOS, iPadOS, and watchOS whi
 * Multiple variants on Julian dates
 * Over 5,000 observances (national, international, religious, cultural, and astronomical) built-in
 * Intelligent event collation
+
+![iPadOS screenshot](./IMG_0046.PNG)
+![iOS screenshot](./IMG_2182.PNG)
