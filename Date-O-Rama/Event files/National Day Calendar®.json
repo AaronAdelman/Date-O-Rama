@@ -127,6 +127,7 @@
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Vet Girls Rock Day"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "National Comfy Day"}, first: {era: 1, y: 2021}, emoji: "😌", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-comfy-day-february-20"}},
         {type: "D", start: {mon: 2, d: 20}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-leadership-day-february-20"}, titles: {"en": "National Leadership Day"}, first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 2, d: 21}, titles: {"en": "National Boiled Peanuts Day"}, first: {era: 1, y: 2025}, emoji: "🥜", urls: {"en": "https://www.nationaldaycalendar.com/february/national-boiled-peanuts-day-february-21"}},
         {type: "D", start: {mon: 2, d: 21}, titles: {"en": "National Grain-Free Day"}, first: {era: 1, y: 2019}, emoji: "🥑", urls: {"en": "https://nationaldaycalendar.com/national-grain-free-day-february-21/"}},
         {type: "D", start: {mon: 2, d: 22}, notes: {"en": "Supermarket Employee Day"}, titles: {"en": "National Supermarket Employee Day"}, first: {era: 1, y: 2022}, emoji: "🍅", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-supermarket-employee-day-february-22"}},
         {type: "D", start: {mon: 2, d: 26}, inherits: "National Set a Good Example Day", first: {era: 1, y: 2022}},
