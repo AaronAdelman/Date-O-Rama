@@ -406,7 +406,7 @@
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "Lyndon Baines Johnson Day", "he": "יום לינדון ביינס ג׳ונסון"}, urls: {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, inherits: "*BDay*", first: {era: 1, y: 1908}},
         {type: "D", start: {mon: 8, d: 4}, inherits: "Coast Guard Day", urls: {"en": "https://www.daysoftheyear.com/days/coast-guard-day/"}, notes: {"en": "U.S. Coast Guard Birthday\nNational Coast Guard Day"}},
         {type: "D", start: {mon: 8, d: 7}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 8, wkd: [1], nth: 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day"}, urls: {"en": "https://www.friendshipday.org/"}, first: {era: 1, y: 1935}},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day", "he": "יום הידידות הלאומי"}, urls: {"en": "https://www.friendshipday.org/"}, first: {era: 1, y: 1935}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/american-family-day/"}, titles: {"en": "American Family Day"}, first: {era: 1, y: 1978}, inherits: "Family Day"},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "Patriot Day", "he": "יום הפטריוט"}, urls: {"en": "https://www.daysoftheyear.com/days/patriot-day/"}, first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 9, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/september-11-national-day-of-service/"}, titles: {"en": "September 11 National Day of Service"}, first: {era: 1, y: 2009}},

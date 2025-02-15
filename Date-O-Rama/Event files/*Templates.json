@@ -229,7 +229,7 @@
         {template: "Flag Day", type: "D", start: {mon: 6, d: 14}, titles: {"en": "Flag Day", "he": "יום הדגל", "ar": "يوم العلم", "az": "Dövlət Bayrağı günü", "es": "Día de la Bandera", "fil": "Araw ng Pambansang Watawat", "fr": "Jour du drapeau", "sq": "Dita e Flamurit"}, urls: {"en": "https://en.wikipedia.org/wiki/Flag_Day"}},
         {template: "Founding Day", type: "D", start: {mon: 2, d: 22}, titles: {"en": "Founding Day"}},
         {template: "Freedom Day", type: "D", start: {mon: 4, d: 27}, titles: {"en": "Freedom Day", "he": "יום החירות", "it": "Giorno della libertà", "mt": "Jum il-Ħelsien", "pt": "Dia da Liberdade"}, urls: {"en": "https://en.wikipedia.org/wiki/Freedom_Day"}},
-        {template: "Friendship Day", type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Friendship Day", "es": "El dia del Amigo", "he": "יום הידידות"}, urls: {"en": "https://www.daysoftheyear.com/days/national-friendship-day/"}},
+        {template: "Friendship Day", type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Friendship Day", "es": "El dia del Amigo", "he": "יום הידידות"}},
         {template: "Gawai Dayak", type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}, titles: {"en": "Gawai Dayak", "ms": "Perayaan Hari Gawai Dayak"}, urls: {"en": "https://nationaltoday.com/gawai-dayak/"}},
         {template: "Gemini", titles: {"en": "Gemini", "he": "תאומים"}, type: "M", start: {mon: 10}, emoji: "♊️", inherits: "*Astrology*"},
         {template: "General Prayer Day", type: "D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/general-prayer-day/"}, titles: {"en": "General Prayer Day", "da": "Store Bededag"}},
