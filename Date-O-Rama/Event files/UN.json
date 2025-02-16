@@ -256,6 +256,7 @@
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "World Kiswahili Language Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-kiswahili-language-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 12}, titles: {"en": "International Day of Combating Sand and Dust Storms"}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-combating-sand-and-dust-storms/"}, first: {era: 1, y: 2023}, emoji: "🏜️"},
         {type: "D", start: {mon: 10, d: 29}, titles: {"en": "International Day of Care and Support"}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-care-and-support/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 2, d: 17}, titles: {"en": "Global Tourism Resilience Day"}, urls: {"en": "https://www.daysoftheyear.com/days/global-tourism-resilience-day/"}, first: {era: 1, y: 2023}},
 
         {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, end: {era: 1, y: 2032}, notes: {"en": "Indigenous Languages Decade"}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", end: {era: 1, y: 2030}},
