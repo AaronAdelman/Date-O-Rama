@@ -21,5 +21,6 @@
         {type: "D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
         {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "Constitution Day", type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/nepali-constitution-day"}, first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Prajatantra Diwas"}, urls: {"en": "https://www.officeholidays.com/holidays/nepal/prajatantra-diwas"}, first: {era: 1, y: 1951}},
     ]
 }

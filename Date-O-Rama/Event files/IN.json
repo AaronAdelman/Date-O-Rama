@@ -254,13 +254,14 @@
         {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "National Maritime Day", type: "D", start: {mon: 4, d: 5}},
         {type: "D", start: {mon: 11, d: 26}, inherits: "National Milk Day"},
-        {type: "D", start: {mon: 8, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, titles: {"en": "Tendong Lho Rum Faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},
-        {type: "D", start: {mon: 9, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/india/sree-narayana-guru-samadhi"}, titles: {"en": "Sree Narayana Guru Samadhi"}, locations: {"en": "Kerala"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Tendong Lho Rum Faat"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},
+        {type: "D", start: {mon: 9, d: 21}, titles: {"en": "Sree Narayana Guru Samadhi"}, urls: {"en": "https://www.officeholidays.com/holidays/india/sree-narayana-guru-samadhi"}, locations: {"en": "Kerala"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1928}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 13}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
         {type: "D", start: {era: 1, y: 2019, mon: 10, d: 21}, inherits: "Public Holiday", locations: {"en": "Haryana and Maharashtra"}, urls: {"en": "https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 20}, inherits: "Public Holiday", locations: {"en": "Maharashtra"}, urls: {"en": "https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
         {type: "nD", start: {mon: 1, d: 11}, end: {mon: 1, d: 17}, inherits: "Road Safety Week", urls: {"en": "https://www.daysoftheyear.com/days/road-safety-week-india/"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "Magh Bihu"}, notes: {"en": "Bhogali Bihu"}, urls: {"en": "https://www.daysoftheyear.com/days/magh-bihu/"}},
         {type: "D", start: {era: 1, y: 2025, mon: 2, d: 5}, inherits: "Public Holiday", locations: {"en": "Delhi"}, urls: {"en": "https://www.officeholidays.com/holidays/india/delhi-legislative-assembly-elections"}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Chahhtrapati Shivaji Maharaj Jayanti"}, urls: {"en": "https://www.officeholidays.com/holidays/india/chhatrapati-shivaji-maharaj-jayanti"}, locations: {"en": "Maharashtra"}, inherits: "*BDay*", first: {era: 1, y: 1630}},
     ]
 }

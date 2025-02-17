@@ -33,7 +33,7 @@
         {titles: {"en": "Birthday of Don Luis Muñoz Rivera", "es": "Natalicio de Don Luis Muñoz Rivera"}, type: "D", start: {mon: 7, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/birthday-of-don-luis-munoz-rivera/"}, inherits: "*BDay*"},
         {inherits: "Constitution Day", type: "D", start: {mon: 7, d: 25}, first: {era: 1, y: 1953}, urls: {"en": "https://nationaltoday.com/puerto-rican-constitution-day/"}, titles: {"en": "Puerto Rico Constitution Day", "es": "Constitución de Puerto Rico"}},
         {titles: {"en": "Birthday of Dr. José Celso Barbosa", "es": "Natalicio de Dr. José Celso Barbosa"}, type: "D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en": "The Day of Illustrious Puerto Ricans"}},
+        {type: "D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en": "Day of Illustrious Puerto Ricans"}},
 
         {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
