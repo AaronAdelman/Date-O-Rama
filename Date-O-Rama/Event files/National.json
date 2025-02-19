@@ -684,6 +684,7 @@
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Iwo Jima Day"}, urls: {"en": "https://nationaltoday.com/iwo-jima-day/"}, first: {era: 1, y: 1945}},
         {type: "nD", start: {mon: 2, d: 19, thruD: 25, wkd: [5], durationD: 4}, titles: {"en": "Whooping Crane Festival"}, urls: {"en": "https://www.portaransas.org/whooping-crane-festival/"}, first: {era: 1, y: 1996}},
         {type: "nD", start: {mon: 2, d: 19, thruD: 25, wkd: [5], durationD: 3}, titles: {"en": "Simplot Games"}, urls: {"en": "https://simplotgames.com/"}, first: {era: 1, y: 1979}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Boston Terrier Day"}, urls: {"en": "https://www.checkiday.com/42c4d3d2742a678c6c9c0f712bbafe44/national-boston-terrier-day"}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Chocolate Mint Day", "he": "יום השוקולד מנטה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-mint-day/"}, emoji: "🍫"},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Hickey Day"}, notes: {"en": "This observance is silly and probably best forgotten."}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Lash Day"}, urls: {"en": "https://nationaldaycalendar.com/national-lash-day-february-19/"}, emoji: "👁", first: {era: 1, y: 2015}},

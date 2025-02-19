@@ -593,7 +593,7 @@
         {type: "D", start: {mon: 2, d: 18}, titles: {"en": "Thumb Appreciation Day"}, urls: {"en": "https://nationaltoday.com/thumb-appreciation-day/"}, emoji: "👍"},
         {type: "D", start: {mon: 2, d: 18}, titles: {"en": "Pluto Day", "he": "יום פלוטו"}, emoji: "♇", urls: {"en": "https://www.daysoftheyear.com/days/pluto-day/"}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Temporary Insanity Day", "he": "יום האי שפיות הזמנית"}, urls: {"en": "https://www.bestmessage.org/temporary-insanity-day-messages/"}},
-        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Prevent Plagiarism Day"}, urls: {"en": "https://nationaltoday.com/prevent-plagiarism-day/"}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Prevent Plagiarism Day"}, urls: {"en": "https://nationaltoday.com/prevent-plagiarism-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Tug of War Day", "he": "יום משיכת החבל הבינלאומי"}, urls: {"en": "https://nationaltoday.com/tug-war-day/"}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "International Tug of War Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-tug-of-war-day/"}, notes: {"en": "Tug of War Day"}},
         {type: "D", start: {mon: 2, d: 2}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
