@@ -21,7 +21,7 @@ let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 
 // MARK: -
 
-class ASALocationManager: NSObject, ObservableObject {
+final class ASALocationManager: NSObject, ObservableObject, Sendable {
     @MainActor static let shared = ASALocationManager()
     
     private let monitor = NWPathMonitor()

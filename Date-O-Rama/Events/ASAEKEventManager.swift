@@ -10,7 +10,7 @@ import Foundation
 import EventKit
 import SwiftUI
 
-class ASAEKEventManager:  NSObject, ObservableObject {
+final class ASAEKEventManager:  NSObject, ObservableObject, Sendable {
     @MainActor static let shared = ASAEKEventManager()
     
     @Published var eventStore = EKEventStore()

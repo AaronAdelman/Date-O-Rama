@@ -10,8 +10,8 @@ import UIKit
 import WatchConnectivity
 
 
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, ObservableObject {
-    static let shared = AppDelegate()
+final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, ObservableObject, Sendable {
+    @MainActor static let shared = AppDelegate()
     
     public let session = WCSession.default
     

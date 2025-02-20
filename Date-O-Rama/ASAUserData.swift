@@ -39,7 +39,7 @@ fileprivate let TIMESTAMP_KEY = "timestamp"
 // MARK: -
 
 
-final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
+final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable {
     @MainActor static let shared = ASAUserData()
     
     
