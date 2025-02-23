@@ -131,7 +131,7 @@
         {type: "D", start: {mon: 2, d: 21}, titles: {"en": "National Grain-Free Day"}, notes: {"en": "National Grain Free Day"}, first: {era: 1, y: 2019}, emoji: "🥑", urls: {"en": "https://nationaldaycalendar.com/national-grain-free-day-february-21/"}},
         {type: "D", start: {mon: 2, d: 22}, titles: {"en": "Supermarket Employee Day"}, notes: {"en": "National Supermarket Employee Day"}, first: {era: 1, y: 2022}, emoji: "🍅", urls: {"en": "https://www.fmi.org/get-involved/supermarket-employee-day"}},
         {type: "D", start: {mon: 2, d: 26}, inherits: "National Set a Good Example Day", first: {era: 1, y: 2022}},
-        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Retro Day"}, first: {era: 1, y: 2018}, emoji: "🪩", urls: {"en": "https://nationaldaycalendar.com/national-retro-day-february-27/"}},
+        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Retro Day"}, notes: {"en": "Retro Day"}, first: {era: 1, y: 2018}, emoji: "🪩", urls: {"en": "https://nationaldaycalendar.com/national-retro-day-february-27/"}},
         {type: "D", start: {mon: 2, d: 29}, titles: {"en": "National Time Refund Day"}, first: {era: 1, y: 2020}, emoji: "🤷‍♀️", urls: {"en": "https://nationaldaycalendar.com/national-time-refund-day-february-29/"}},
         {type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hemp-day-february-4"}, titles: {"en": "National Hemp Day"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "National Shower with a Friend Day"}, first: {era: 1, y: 2015}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/shower-with-a-friend-day-february-5"}, notes: {"en": "Poorly chosen name."}},
