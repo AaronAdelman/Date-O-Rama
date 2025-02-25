@@ -792,6 +792,7 @@
         {type: "D", start: {mon: 2, wkd: [6], nth: 3}, titles: {"en": "National Caregivers Day"}, urls: {"en": "https://nationaltoday.com/national-caregivers-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 2, wkd: [6], nth: 4}, titles: {"en": "National Skip the Straw Day"}, notes: {"en": "Skip the Straw Day"}, urls: {"en": "https://www.daysoftheyear.com/days/skip-the-straw-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Barista Day"}, first: {era: 1, y: 2019}, emoji: "🍷🥃🍺", urls: {"en": "https://www.daysoftheyear.com/days/barista-day/"}},
+        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Hotel Slipper Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hotel-slipper-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Peanut Butter Lovers Day"}, notes: {"en": "National Peanut Butter Lover’s Day"}, first: {era: 1, y: 1990}, emoji: "🥜", urls: {"en": "https://www.daysoftheyear.com/days/national-peanut-butter-lovers-day/"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Pig Day", "he": "יום החזיר הלאומי"}, first: {era: 1, y: 1972}, emoji: "🐷", urls: {"en": "https://www.daysoftheyear.com/days/pig-day/"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Horse Protection Day"}, urls: {"en": "http://www.horseprotectionday.com/"}, notes: {"en": "World Horse Day"}, first: {era: 1, y: 2005}, emoji: "🐴"},
@@ -973,12 +974,13 @@
         {type: "D", start: {mon: 3, wkd: [5], nth: 3}, urls: {"en": "https://nationaltoday.com/national-farm-rescuer-day/"}, titles: {"en": "National Farm Rescuer Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, wkd: [6], nth: 1}, inherits: "National Salesperson Day", first: {era: 1, y: 2000}, last: {era: 1, y: 2009}},
         {type: "D", start: {mon: 3, wkd: [6], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/dress-in-blue-day/"}, titles: {"en": "National Dress in Blue Day", "he": "יום לובשים כחול הלאומי"}, first: {era: 1, y: 2006}, inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 3, wkd: [6], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/employee-appreciation-day/"}, titles: {"en": "National Employee Appreciation Day"}, notes: {"en": "Employee Appreciation Day"}, first: {era: 1, y: 2022}, emoji: "✍️"},
+        {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"en": "National Employee Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/employee-appreciation-day/"}, notes: {"en": "Employee Appreciation Day"}, first: {era: 1, y: 2022}, emoji: "✍️"},
         {type: "D", start: {mon: 3, wkd: [6], nth: 2}, titles: {"en": "National Freelancers Day"}, urls: {"en": "https://go.robinhood.com/nfd"}, emoji: "👨‍💻👩‍💻"},
         {type: "D", start: {mon: 3, wkd: [6], nth: 2}, urls: {"en": "https://nationaltoday.com/national-preschoolers-day/"}, titles: {"en": "National Preschooler’s Day"}},
-        {type: "D", start: {mon: 3, wkd: [6], nth: 3}, urls: {"en": "https://nationaltoday.com/national-day-of-action-against-bullying-and-violence/"}, titles: {"en": "National Day of Action Against Bullying and Violence"}},
-        {type: "D", start: {mon: 3, wkd: [6], nth: 3}, urls: {"en": "https://nationaltoday.com/national-preschool-teachers-appreciation-day/"}, titles: {"en": "National Preschool Teachers Appreciation Day"}},
-        {type: "D", start: {mon: 3, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/quilting-day/"}, titles: {"en": "National Quilting Day"}, first: {era: 1, y: 1991}, emoji: "🧵"},
+        {type: "D", start: {mon: 3, wkd: [6], nth: 3}, titles: {"en": "National Day of Action Against Bullying and Violence"}, urls: {"en": "https://nationaltoday.com/national-day-of-action-against-bullying-and-violence/"}},
+        {type: "D", start: {mon: 3, wkd: [6], nth: 3}, titles: {"en": "National Preschool Teachers Appreciation Day"}, urls: {"en": "https://nationaltoday.com/national-preschool-teachers-appreciation-day/"}},
+        {type: "D", start: {mon: 3, wkd: [7], nth: 1}, titles: {"en": "Iditarod Trail Sled Dog Race"}, urls: {"en": "https://www.daysoftheyear.com/days/iditarod-trail-sled-dog-race/"}, emoji: "🐶", notes: {"en": "The Last Great Race on Earth"}, first: {era: 1, y: 1973}},
+        {type: "D", start: {mon: 3, wkd: [7], nth: 3}, titles: {"en": "National Quilting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quilting-day/"}, first: {era: 1, y: 1991}, emoji: "🧵"},
         {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/edible-book-day/"}, titles: {"en": "Edible Book Day"}, notes: {"en": "National Edible Book Festival"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-fun-day/"}, titles: {"en": "Fun Day"}, notes: {"en": "National Fun Day"}},
         {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-trombone-players-day/"}, titles: {"en": "National Trombone Players Day"}},
@@ -2617,7 +2619,9 @@
         {type: "nD", start: {mon: 2, d: 23, thruD: 29, wkd: [2], yLengths: [366]}, end: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [3]}, inherits: "Museums Advocacy Day", first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 2, d: 22, thruD: 28, wkd: [2]}, end: {mon: 2, d: 26, thruMon: 3, thruD: 4, wkd: [6], yLengths: [365]}, inherits: "National Invasive Species Awareness Week", first: {era: 1, y: 2010}},
         {type: "nD", start: {mon: 2, d: 23, thruD: 29, wkd: [2]}, end: {mon: 2, d: 27, thruMon: 3, thruD: 4, wkd: [6], yLengths: [366]}, inherits: "National Invasive Species Awareness Week", first: {era: 1, y: 2010}},
-
+        {type: "D", start: {mon: 3, wkd: [7], nth: 1}, inherits: "Georgia Beer Day", first: {era: 1, y: 2021}, last: {era: 1, y: 2023}},
+        {type: "D", start: {era: 1, y: 2024, mon: 3, d: 9}, inherits: "Georgia Beer Day"},
+        {type: "D", start: {mon: 3, wkd: [7], nth: 1}, inherits: "Georgia Beer Day", first: {era: 1, y: 2025}},
 
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
@@ -2671,5 +2675,6 @@
         {template: "National New Friends Day", type: "D", start: {mon: 10, d: 19}, titles: {"en": "National New Friends Day"}, notes: {"en": "New Friends Day"}, urls: {"en": "https://www.checkiday.com/68a382e2cddd3fba37df2937ad565620/new-friends-day"}},
         {template: "Museums Advocacy Day", type: "nD", start: {mon: 2, d: 22, thruD: 28, wkd: [2], durationD: 2, yLengths: [365]}, titles: {"en": "Museums Advocacy Day"}, notes: {"en": "Museums Advocacy Days"}, urls: {"en": "https://www.aam-us.org/programs/museums-advocacy-day/"}, emoji: "🏛️📢"},
         {template: "National Invasive Species Awareness Week", type: "nD", start: {mon: 2, d: 22, thruD: 28, wkd: [2]}, end: {mon: 2, d: 26, thruMon: 3, thruD: 4, wkd: [6], yLengths: [365]}, titles: {"en": "National Invasive Species Awareness Week"}, notes: {"en": "NISAW"}, urls: {"en": "https://naisma.org/programs/nisaw/"}, emoji: "🏛️"},
+        {template: "Georgia Beer Day", type: "D", start: {mon: 3, wkd: [7], nth: 1}, titles: {"en": "Georgia Beer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/georgia-beer-day/"}, emoji: "🍺"},
     ]
 }
