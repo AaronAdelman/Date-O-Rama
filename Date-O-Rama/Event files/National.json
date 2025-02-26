@@ -2252,23 +2252,23 @@
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/national-embroidery-month/"}, titles: {"en": "National Embroidery Month"}, emoji: "🧵🪡", first: {era: 1, y: 1992}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/national-grapefruit-month/"}, titles: {"en": "National Grapefruit Month"}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/national-snack-food-month/"}, titles: {"en": "National Snack Food Month"}, emoji: "🍘🍟🥟"},
-       {type: "M", start: {mon: 3}, titles: {"en": "National Cheerleading Safety Month"}, notes: {"en": "While safety is important, this observance is tied to an overly sexualized activity."}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/cheerleading-safety-month/"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Cheerleading Safety Month"}, notes: {"en": "While safety is important, this observance is tied to an overly sexualized activity."}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/cheerleading-safety-month/"}},
         {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/greek-american-heritage-month/"}, titles: {"en": "Greek-American Heritage Month"}, emoji: "🇬🇷🇺🇸"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/middle-level-education-month/"}, titles: {"en": "Middle Level Education Month"}, first: {era: 1, y: 2019}},
         {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-celery-month/"}, titles: {"en": "National Celery Month"}},
         {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-cerebral-palsy-awareness-month/"}, titles: {"en": "National Cerebral Palsy Awareness Month"}, first: {era: 1, y: 2006}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-chronic-fatigue-syndrome-awareness-month/"}, titles: {"en": "National Chronic Fatigue Syndrome Awareness Month"}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-crochet-month/"}, titles: {"en": "National Crochet Month"}, first: {era: 1, y: 2005}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-essential-tremor-awareness-month/"}, titles: {"en": "National Essential Tremor Awareness Month"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-ethics-awareness-month/"}, titles: {"en": "National Ethics Awareness Month"}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-eye-donor-month/"}, titles: {"en": "National Eye Donor Month"}, first: {era: 1, y: 1983}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-flour-month/"}, titles: {"en": "National Flour Month"}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-frozen-food-month/"}, titles: {"en": "National Frozen Food Month"}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-kidney-month/"}, titles: {"en": "National Kidney Month"}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-march-into-literacy-month/"}, titles: {"en": "National March Into Literacy Month"}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-noodle-month/"}, titles: {"en": "National Noodle Month"}, emoji: "🍝"},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-optimism-month/"}, titles: {"en": "National Optimism Month"}},
-        {type: "M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-professional-social-workers-month/"}, titles: {"en": "National Professional Social Worker’s Month"}, first: {era: 1, y: 2010}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Crochet Month"}, urls: {"en": "https://nationaltoday.com/national-crochet-month/"}, first: {era: 1, y: 2005}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Essential Tremor Awareness Month"}, notes: {"en": "NETA\nEssential Tremor Awareness Month"}, urls: {"en": "https://essentialtremor.org/what-we-do/et-awareness/"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*"},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Caffeine Awareness Month"}, notes: {"en": "This observance encourages people to worry about caffeine, which is relatively harmless, instead of focusing on more dangerous substances."}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Ethics Awareness Month"}, urls: {"en": "https://nationaltoday.com/national-ethics-awareness-month/"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Eye Donor Month"}, urls: {"en": "https://nationaltoday.com/national-eye-donor-month/"}, first: {era: 1, y: 1983}, inherits: "*MedAwareness*"},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Flour Month"}, urls: {"en": "https://nationaltoday.com/national-flour-month/"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "Frozen Food Month"}, notes: {"en": "National Frozen Food Month"}, urls: {"en": "https://www.daysoftheyear.com/days/frozen-food-month/"}, first: {era: 1, y: 1984}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Kidney Month"}, urls: {"en": "https://nationaltoday.com/national-kidney-month/"}, inherits: "*MedAwareness*"},
+        {type: "M", start: {mon: 3}, titles: {"en": "National March Into Literacy Month"}, urls: {"en": "https://nationaltoday.com/national-march-into-literacy-month/"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Noodle Month"}, urls: {"en": "https://nationaltoday.com/national-noodle-month/"}, emoji: "🍝"},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Optimism Month"}, urls: {"en": "https://nationaltoday.com/national-optimism-month/"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "National Professional Social Worker’s Month"}, urls: {"en": "https://nationaltoday.com/national-professional-social-workers-month/"}, first: {era: 1, y: 2010}},
         {type: "M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/craft-month/"}, titles: {"en": "National Craft Month"}, notes: {"en": "National Crafting Month"}, emoji: "🖼️", first: {era: 1, y: 1994}},
         {type: "M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/credit-education-month/"}, titles: {"en": "National Credit Education Month"}, emoji: "💳"},
         {type: "M", start: {mon: 3}, urls: {"en": "https://www.daysoftheyear.com/days/hemophilia-awareness-month/"}, titles: {"en": "National Hemophilia Awareness Month"}, inherits: "*MedAwareness*", emoji: "🧪"},
@@ -2490,12 +2490,13 @@
         {type: "nD", start: {mon: 2, d: 8, thruD: 14, wkd: [2], durationD: 5}, titles: {"en": "Love Data Week"}, notes: {"en": "Love Your Data Week"}, urls: {"en": "https://www.icpsr.umich.edu/web/about/cms/3799"}, first: {era: 1, y: 2016}, emoji: "💻"},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Festival of Owls Week"}, urls: {"en": "https://www.daysoftheyear.com/days/festival-of-owls-week/"}, first: {era: 1, y: 2017}, first: {era: 1, y: 2003}, emoji: "🦉"},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 6}, titles: {"en": "National Aplastic Anemia & MDS Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aplastic-anemia-mds-awareness-week/"}, inherits: "*MedAwareness*"},
-        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "National Cheerleading Week"}, notes: {"en": "This observance celebrates the sexualization of young women while pretending it’s more about athleticism."}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "National Cheerleading Week"}, notes: {"en": "Cheerleading Week\nThis observance celebrates the sexualization of young women while pretending it’s more about athleticism."}, first: {era: 1, y: 2005}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "Write a Letter Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/write-a-letter-appreciation-week/"}, first: {era: 1, y: 2011}, emoji: "✍️"},
-        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-ghostwriters-week/"}, titles: {"en": "National Ghostwriters Week"}},
-        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-will-eisner-week/"}, titles: {"en": "National Will Eisner Week"}, first: {era: 1, y: 2016}},
-        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-write-a-letter-of-appreciation-week/"}, titles: {"en": "National Write a Letter of Appreciation Week"}},
-        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/national-invest-in-veterans-week/"}, titles: {"en": "National Invest in Veterans Week"}, first: {era: 1, y: 2017}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "National Ghostwriters Week"}, urls: {"en": "https://nationaltoday.com/national-ghostwriters-week/"}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "National Write a Letter of Appreciation Week"}, urls: {"en": "https://nationaltoday.com/national-write-a-letter-of-appreciation-week/"}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "National Invest in Veterans Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-invest-in-veterans-week/"}, first: {era: 1, y: 2017}},
+        {type: "M", start: {mon: 3}, titles: {"en": "Brain Injury Awareness Month"}, notes: {"en": "National Brain Injury Awareness Month"}, urls: {"en": "https://biausa.org/public-affairs/public-awareness/brain-injury-awareness"}, inherits: "*MedAwareness*", emoji: "🧠"},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "Will Eisner Week"}, notes: {"en": "National Will Eisner Week"}, urls: {"en": "http://www.willeisner.com/"}, first: {era: 1, y: 2016}},
         {type: "nD", start: {mon: 3, d: 11}, end: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/turkey-vultures-return-to-the-living-sign/"}, titles: {"en": "Turkey Vultures Return to the Living Sign Week"}},
         {type: "nD", start: {mon: 3, d: 13, thruD: 19, wkd: [3]}, end: {mon: 4, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/march-madness/"}, titles: {"en": "March Madness"}, first: {era: 1, y: 1939}, emoji: "🏀"},
         {type: "nD", start: {mon: 3, d: 13}, end: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-deaf-history-month/"}, titles: {"en": "National Deaf History Month"}, first: {era: 1, y: 1997}},
@@ -2622,17 +2623,17 @@
         {type: "D", start: {mon: 3, wkd: [7], nth: 1}, inherits: "Georgia Beer Day", first: {era: 1, y: 2021}, last: {era: 1, y: 2023}},
         {type: "D", start: {era: 1, y: 2024, mon: 3, d: 9}, inherits: "Georgia Beer Day"},
         {type: "D", start: {mon: 3, wkd: [7], nth: 1}, inherits: "Georgia Beer Day", first: {era: 1, y: 2025}},
-
+        
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
         ]},
-
+        
         {type: "D", start: {mon: 10, d: 15, thruD: 17}, first: {era: 1, y: 1958}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 15, wkd: [6]}, inherits: "National Boss’ Day"},
             {type: "D", start: {mon: 10, d: 16, wkd: [2, 3, 4, 5, 6]}, inherits: "National Boss’ Day"},
             {type: "D", start: {mon: 10, d: 17, wkd: [2]}, inherits: "National Boss’ Day"},
         ]},
-
+        
         {type: "W", start: {mon: 10, fullWk: 1}, titles: {"en": "National Newspaper Week"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, first: {era: 1, y: 1940}, emoji: "🗞️", overlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 7, thruD: 13, wkd: [7]}, titles: {"en": "International Newspaper Carrier Day", "he": "יום מחלקי העיתונים הבינלאומי"}, urls: {"en": "https://www.nationalnewspaperweek.com/"}, emoji: "🗞️", notes: {"en": "Part of National Newspaper Week, despite the name"}},
         ]},
@@ -2644,7 +2645,12 @@
         
         {type: "M", start: {mon: 10}, titles: {"en": "​National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1987}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, wkd: [5], d: 19, thruD: 25}, titles: {"en": "Wear Purple for Domestic Violence Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://www.checkiday.com/a77279e2d20fd22c809fad76d558ea43/wear-purple-for-domestic-violence-awareness-day"}, notes: {"en": "Purple Thursday"}},
-        ]},       
+        ]},
+        
+        {type: "M", start: {mon: 3}, titles: {"en": "Play-the-Recorder Month"}, notes: {"en": "Play the Recorder Month\nNational Play the Recorder Month"}, urls: {"en": "https://americanrecorder.org/play_the_recorder_month.php"}, first: {era: 1, y: 1992}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 3, wkd: [7], nth: 3}, titles: {"en": "Play-the-Recorder Day"}, notes: {"en": "Play the Recorder Day"}, urls: {"en": "https://americanrecorder.org/play_the_recorder_month.php"}},
+        ]},
+        
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
