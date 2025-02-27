@@ -40,7 +40,7 @@
         {type: "D", start: {mon: 12, d: 23}, titles: {"en": "St. Thorlac’s Mass Day", "is": "Þorláksmessa"}},
 
         {type: "D", start: {mon: 4, d: 10}, inherits: "Engineer’s Day"},
-        {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Book Flood", first: {era: 1, y: 1945}},
         

@@ -30,7 +30,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 6, d: 7}, first: {era: 1, y: 1905}, urls: {"en": "https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
         {titles: {"en": "Crown Princess Mette-Marit’s Day"}, type: "D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/crown-princess-mette-marits-day/"}, first: {era: 1, y: 2002}, inherits: "*BDay*"},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Sami National Day"}, notes: {"en": "Sámi National Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sami-national-day/"}, first: {era: 1, y: 1993}},
-        {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/king-harald-vs-day/"}, titles: {"en": "King Harald V’s Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"}, titles: {"en": "Dissolution of Union between Norway and Sweden"}, emoji: "🇳🇴🇸🇪", first: {era: 1, y: 1905}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},

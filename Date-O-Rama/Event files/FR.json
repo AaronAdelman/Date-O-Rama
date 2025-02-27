@@ -25,7 +25,7 @@
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
 
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 2019}},
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {inherits: "International Francophonie Day", type: "D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},

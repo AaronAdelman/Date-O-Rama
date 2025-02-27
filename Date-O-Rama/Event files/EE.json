@@ -37,7 +37,7 @@
 
        {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", first: {era: 1, y: 2021}, titles: {"en": "Day for Protection of Children", "et": "lastekaitsepäev"}},
        {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
-       {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+       {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
        {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
        {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},
     ]

@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", titles: {"en": "Day of Children’s Rights"}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, titles: {"en": "National Emergency Number Day"}, first: {era: 1, y: 1997}},
-        {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 6, d: 6}, inherits: "National Coffee Day"},
     ]
 }

@@ -118,7 +118,7 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Kashubian Unity Day"}, first: {era: 1, y: 2005}, urls: {"en": "https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -52}, urls: {"en": "https://nationaltoday.com/paczki-day/"}, titles: {"en": "Paczki Day"}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 12, d: 18, thruD: 24, wkd: [7]}, inherits: "Super Saturday"},

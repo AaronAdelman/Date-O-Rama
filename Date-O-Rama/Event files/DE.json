@@ -44,7 +44,7 @@
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://en.wikipedia.org/wiki/Rosenmontag"}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
 
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {inherits: "Black History Month", type: "M", start: {mon: 2}, first: {era: 1, y: 1990}},
         {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
         {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}},

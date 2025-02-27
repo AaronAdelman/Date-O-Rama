@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.77, green: 0.24, blue: 0.17},
     events: [
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 6, wkd: [1], nth: 1}, first: {era: 1, y: 2002}},
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},

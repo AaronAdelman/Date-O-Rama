@@ -25,8 +25,8 @@
 
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Crown Princess Mary’s Birthday", "da": "Kronprinsesse Marys fødselsdag"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Princess Marie’s Birthday", "da": "Prinsesse Maries fødselsdag"}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 2, d: 19}, inherits: "Fastelavn", "da": "Fastelavn"},
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "German invasion of Denmark", "da": "Danmarks besættelse"}, first: {era: 1, y: 1940}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Birthday of Queen Margrethe II", "da": "Dronningens fødselsdag"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},

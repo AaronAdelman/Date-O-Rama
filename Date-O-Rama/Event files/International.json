@@ -7,7 +7,7 @@
     "TODO": "World Jump Day activity at 11:39:13 GMT",
     events: [
         {inherits: "Antarctica Day", type: "D", start: {mon: 12, d: 1}, first: {era: 1, y: 2010}},
-        {inherits: "April Fools’ Day", type: "D", start: {mon: 4, d: 1}},
+        {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 1919}},
         {inherits: "Commonwealth Day", type: "D", start: {mon: 3, wkd: [2], nth: 2}, first: {era: 1, y: 1958}},
         {inherits: "Earth Day", type: "D", start: {mon: 4, d: 22}, first: {era: 1, y: 1970}},
@@ -624,7 +624,7 @@
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Diesel Engine Day"}, urls: {"en": "https://nationaltoday.com/diesel-engine-day/"}},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Pinocchio Day"}, urls: {"en": "https://nationaltoday.com/pinocchio-day/"}},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Tootsie Roll Day"}, urls: {"en": "https://nationaltoday.com/tootsie-roll-day/"}, first: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 2, d: 23}, titles: {"en": "International Dog Biscuit Appreciation Day", "he": "יום הביסקוויט לכלבים הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-biscuit-appreciation-day/"}, notes: {"en": "National Dog Biscuit Appreciation Day", "he": "יום הביסקוויט לכלבים הלאומי"}, emoji: "🐕"},
+        {type: "D", start: {mon: 2, d: 23}, titles: {"en": "International Dog Biscuit Appreciation Day", "he": "יום הביסקוויט לכלבים הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dog-biscuit-appreciation-day/"}, notes: {"en": "National Dog Biscuit Appreciation Day\nNational Dog Biscuit Day", "he": "יום הביסקוויט לכלבים הלאומי"}, emoji: "🐕"},
         {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/discover-girl-day/"}, titles: {"en": "Discover Girl Day"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "Twin Peaks Day"}, urls: {"en": "https://nationaltoday.com/twin-peaks-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "International I Hate Coriander Day"}, urls: {"en": "https://www.daysoftheyear.com/days/i-hate-coriander-day/"}, notes: {"en": "I Hate Coriander Day"}, first: {era: 1, y: 2013}},
