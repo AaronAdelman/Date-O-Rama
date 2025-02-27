@@ -27,6 +27,6 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {era: 1, y: 2019, mon: 11, d: 27}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-elections"}},
         {type: "D", start: {era: 1, y: 2020, mon: 11, d: 25}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-elections"}},
-        {type: "D", start: {era: 1, y: 2024, mon: 11, d: 27}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-elections"}},
+        {type: "D", start: {era: 1, y: 2025, mon: 3, d: 1}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-nujoma-funeral"}},
     ]
 }

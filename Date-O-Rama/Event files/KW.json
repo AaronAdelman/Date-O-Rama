@@ -8,6 +8,8 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "National Day", type: "D", start: {mon: 2, d: 25}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/national-day-kuwait/"}},
         {type: "D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/kuwait-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 2, d: 27, wkd: [5]}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"}, first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 2, d: 28, wkd: [2]}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"}, first: {era: 1, y: 1991}},
         {type: "D", start: {era: 1, y: 2023, mon: 6, d: 6}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/kuwait/kuwait-election-holiday"}},
         {type: "D", start: {era: 1, y: 2024, mon: 12, d: 1}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/kuwait/kuwait-gcc-summit-public-holiday"}},
 

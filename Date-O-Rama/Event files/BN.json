@@ -9,6 +9,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "National Day", type: "D", start: {mon: 2, d: 23}, first: {era: 1, y: 1984}, urls: {"en": "https://nationaltoday.com/national-day-brunei/"}},
+        {inherits: "National Day (in lieu)", type: "D", start: {mon: 2, d: 24, wkd: [2, 7]}, first: {era: 1, y: 1984}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/brunei-national-day"}},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 1981}, notes: {"en": "Royal Brunei Armed Forces Day"}},
         {type: "D", start: {mon: 7, d: 15}, titles: {"en": "Sultan’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1946}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/hm-the-sultans-birthday"}, notes: {"en": "H.M. The Sultan’s Birthday"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

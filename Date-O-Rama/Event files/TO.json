@@ -14,7 +14,7 @@
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 6, d: 2, thruD: 8, wkd: [2]}, first: {era: 1, y: 1970}, urls: {"en": "https://www.officeholidays.com/holidays/tonga/tonga-emancipation-day"}},
         {titles: {"en": "Official Birthday of His Majesty King Tupou VI"}, type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, first: {era: 1, y: 2015}, inherits: "*BDay*", notes: {"en": "Official Birthday of HM King Tupou VI"}},
-        {titles: {"en": "Public holiday"}, type: "D", start: {mon: 7, d: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, first: {era: 1, y: 2015}},
+        {inherits: "Public holiday", type: "D", start: {mon: 7, d: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}, titles: {"en": "Birthday of HRH Crown Prince"}},
         {type: "D", start: {mon: 9, d: 18, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}, titles: {"en": "Birthday of HRH Crown Prince (in lieu)"}},
         {type: "D", start: {mon: 11, d: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}, inherits: "Constitution Day (in lieu)"},
