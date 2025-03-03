@@ -120,6 +120,7 @@
         {type: "D", start: {mon: 11, wkd: [3], nth: 2},titles: {"en": "National Survivors’ Day"},  urls: {"en": "https://www.daysoftheyear.com/days/national-survivors-day/"}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Gravy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gravy-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Carols by Candlelight", first: {era: 1, y: 1938}},
+        {type: "nD", start: {mon: 3, d: 6, thruD: 12, wkd: [5], durationD: 5}, titles: {"en": "Moomba Festival"}, urls: {"en": "https://moomba.melbourne.vic.gov.au/"}, first: {era: 1, y: 1955}},
    ],
     templates: [
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},

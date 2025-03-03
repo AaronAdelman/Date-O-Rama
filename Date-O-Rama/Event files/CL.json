@@ -49,6 +49,7 @@
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 24}, inherits: "Municipal Elections"},
         {type: "D", start: {era: 1, y: 2025, mon: 10, d: 25}, inherits: "Municipal Elections"},
         {type: "nD", start: {mon: 2, d: 3, thruD: 9, wkd: [6], durationD: 9}, titles: {"en": "Tapati Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/tapati-festival/"}, first: {era: 1, y: 1960}},
+        {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Colchagua Wine Festival"}, notes: {"en": "Colchagua Grape Harvest Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/colchagua-wine-festival/"}, emoji: "🍷🍇", first: {era: 1, y: 2000}},
 
   ],
     templates: [

@@ -128,7 +128,8 @@
         {type: "D", start: {mon: 1, d: 16}, titles: {"en": "National Religious Freedom Day", "es": "Día Nacional de la Libertad Religiosa", "he": "יום חופש הדת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/"}, first: {era: 1, y: 1786}},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Benjamin Franklin Day"}, urls: {"en": "https://www.daysoftheyear.com/days/benjamin-franklin-day/"}, inherits: "*BDay*", first: {era: 1, y: 1706}},
         {type: "D", start: {mon: 1, d: 2}, notes: {"en": "National Motivation and Inspiration Day"}, titles: {"en": "Motivation and Inspiration Day"}, urls: {"en": "https://www.daysoftheyear.com/days/motivation-and-inspiration-day/"}, first: {era: 1, y: 2002}},
-        {type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}, titles: {"en": "Inauguration Day"}, first: {era: 1, y: 1933}},
+        {type: "D", start: {mon: 3, d: 4, yDiv: 4, yRem: 1}, inherits: "Inauguration Day", first: {era: 1, y: 1793}, last: {era: 1, y: 1929}, urls: {"en": "https://www.daysoftheyear.com/days/old-inauguration-day/"}},
+        {type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, inherits: "Inauguration Day", first: {era: 1, y: 1933}},
         {type: "D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/roe-vs-wade-day/"}, titles: {"en": "Roe vs. Wade Day"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Celebration of Life Day", "he": "יום חגיגת החיים"}, urls: {"en": "https://www.daysoftheyear.com/days/celebration-of-life-day/"}, first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "National IV Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-iv-nurse-day/"}, first: {era: 1, y: 1980}, emoji: "👨‍⚕️👩‍⚕️"},
@@ -655,5 +656,6 @@
         {template: "Truman Day", type: "D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/truman-day/"}, titles: {"en": "Truman Day", "he": "יום טרומן"}, inherits: "*BDay*"},
         {template: "National PrepareAthon! Day", type: "D", start: {mon: 4, d: 30}, titles: {"en": "National PrepareAthon! Day"}, urls: {"en": "https://nationaldaycalendar.com/national-prepareathon-day-april-30/"}},
         {template: "Earned Income Tax Credit Awareness Day", type: "D", start: {mon: 1, d: 17}, titles: {"en": "Earned Income Tax Credit Awareness Day"}, urls: {"en": "https://www.checkiday.com/a278c27ff0d32308d4c24630415a9f01/earned-income-tax-credit-awareness-day"}, notes: {"en": "EITC Awareness Day"}, emoji: "🧮"},
+        {template: "Inauguration Day", type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, titles: {"en": "Inauguration Day"}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}},
     ]
 }

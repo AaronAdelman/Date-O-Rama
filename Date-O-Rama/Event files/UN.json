@@ -224,10 +224,11 @@
         {titles: {"en": "International Day of Epidemic Preparedness", "he": "יום ההיערכות הבינלאומי למגפה"}, type: "D", start: {mon: 12, d: 27}, first: {era: 1, y: 2020}, emoji: "😷"},
         {titles: {"en": "Swahili Language Day", "sw": "Siku ya Kiswahili ya Umoja wa Mataifa", "he": "יום השפה הסוואהילית"}, type: "D", start: {mon: 7, d: 20}, first: {era: 1, y: 2022}, urls: {"en": "https://en.wikipedia.org/wiki/UN_Swahili_Language_Day"}},
 
-        {inherits: "Vesak", titles: {"en": "Vesak, the Day of the Full Moon", "he": "ווסק, יום הירח המלא"}, type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {"zmoPhase": "1stFull", era: 1, y: 2000}, notes: {"en": "The birthday of the Buddha.  Whoever decided to make this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
+        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", titles: {"en": "Vesak, the Day of the Full Moon", "he": "ווסק, יום הירח המלא"}, first: {"zmoPhase": "1stFull", era: 1, y: 2000}, notes: {"en": "The birthday of the Buddha.  Whoever decided to make this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
 
-        {inherits: "World Book Day", type: "D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}},
-        {titles: {"en": "World Hearing Day", "he": "יום השמיעה הבינלאומי"}, type: "D", start: {mon: 3, d: 3}, first: {era: 1, y: 2016}, emoji: "👂", urls: {"en": "https://worldhearingday.org/"}},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "World Book Day", first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 3, d: 3}, titles: {"en": "World Hearing Day", "he": "יום השמיעה הבינלאומי"}, first: {era: 1, y: 2016}, emoji: "👂", urls: {"en": "https://worldhearingday.org/"}},
+        {type: "D", start: {mon: 3, d: 5}, titles: {"en": "International Day for Disarmament and Non-Proliferation Awareness"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-for-disarmament-and-non-proliferation-awareness/"}},
         {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "World Leprosy Day"},
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "World Neglected Tropical Diseases Day", "he": "יום המחלות הטרופיות המוזנחות העולמי"}, notes: {"en": "World NTD Day"}, urls: {"en": "https://www.neglecteddiseases.gov/resources/events/world-ntd-day/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "International Day For Monuments and Sites", "he": "היום הבינלאומי לאנדרטאות ואתרים"}, notes: {"en": "World Heritage Day", "he": "יום המורשת הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-for-monuments-and-sites/"}, first: {era: 1, y: 1982}, emoji: "🏛"},
