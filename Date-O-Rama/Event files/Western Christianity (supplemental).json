@@ -10,7 +10,7 @@
         {inherits: "National Doughnut Day", type: "D", start: {mon: 6, wkd: [6], nth: 1}, urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}},
         {inherits: "National Love People Day", type: "D", start: {mon: 9, d: 30}, first: {era: 1, y: 2017}},
         {inherits: "National Sanctity of Human Life Day", type: "D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
-        {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}, titles: {"en": "Paczki Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/paczki-day-day-before-ash-wednesday"}},
+        {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Paczki Day"},
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {titles: {"en": "Bring Your Bible Day"}, notes: {"en": "Bring Your Bible to School Day"}, type: "D", start: {mon: 10, wkd: [5], nth: 1}, first: {era: 1, y: 2014}, urls: {"en": "https://www.focusonthefamily.com/live-it/bring-your-bible/"}, emoji: "📖"},
         {titles: {"en": "Church Library Month"}, type: "M", start: {mon: 10}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/church-library-month-october/"}},
