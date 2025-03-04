@@ -34,6 +34,7 @@
         {inherits: "Armed Forces Day", type: "D", start: {mon: 9, d: 24}},
         {inherits: "Air Force Day", type: "D", start: {mon: 7, d: 23}},
         {type: "D", start: {mon: 7, wkd: [7], nth: 1}, inherits: "Friendship Day", first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 8, d: 22}, inherits: "National Coffee Day"},
         {inherits: "Non-Working Day", type: "D", start: {mon: 10, d: 11, era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},

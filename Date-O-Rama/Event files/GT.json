@@ -33,5 +33,7 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 1}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/bank-employee-day-guatemala/"}, titles: {"en": "Bank Employee Day"}},
         {type: "D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/armed-forces-day-guatemala/"}, inherits: "Armed Forces Day"},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
+
     ]
 }

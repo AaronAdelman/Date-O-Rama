@@ -469,7 +469,7 @@
         {template: "Orthodox Holy Saturday", inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}, urls: {"en": "https://nationaltoday.com/orthodox-holy-saturday/"}},
         {template: "Orthodox New Year’s Day", type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://www.daysoftheyear.com/days/old-new-years-day/"}, notes: {"en": "Old New Year’s Day\nOrthodox New Year\nJulian New Year"}},
         {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "D", start: {equinoxOrSolstice: "Mar"}},
-        {template: "Paczki Day", type: "D", start: {Easter:  "Easter", offsetD: -52}, titles: {"en": "Paczki Day"}, urls: {"en": "https://nationaltoday.com/paczki-day/"}},
+        {template: "Paczki Day", type: "D", start: {Easter:  "Easter", offsetD: -52}, titles: {"en": "Paczki Day"}, notes: {"en": "Pączki Day"}, urls: {"en": "https://nationaltoday.com/paczki-day/"}},
         {template: "Palm Sunday", titles: {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas", "is": "Pálmasunnudagur", "mt": "Ħadd il-Palm"}, type: "D", start: {Easter:  "Easter", offsetD: -7}, urls: {"en": "https://nationaltoday.com/palm-sunday/"}},
         {template: "Paratroopers’ Day", type: "D", start: {mon: 8, d: 2}, titles: {"en": "Paratroopers’ Day", "ru": "День десантника"}, urls: {"en": "https://en.wikipedia.org/wiki/Paratroopers%27_Day"}},
         {template: "Parents’ Day", type: "D", start: {mon: 5, d: 8}, titles: {"en": "Parents’ Day", "he": "יום ההורים", "ko": "어버이날"}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Day"}},

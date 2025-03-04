@@ -847,7 +847,6 @@
         {type: "D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/reel-film-day/"}, titles: {"en": "Reel Film Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, d: 2, thruD: 8, wkd: [7]}, titles: {"en": "World Information Architecture Day"}, notes: {"en": "World IA Day\nWIAD"}, urls: {"en": "https://www.worldiaday.org/"}, emoji: "🗺", first: {era: 1, y: 2012}},
         {type: "nD", start: {mon: 3, d: 2, thruD: 8, wkd: [7], durationD: 2}, titles: {"en": "Rumba Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/rumba-festival/"}, first: {era: 1, y: 1950}},
-        {type: "D", start: {mon: 3, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/dissociative-identity-disorder-awareness-day/"}, titles: {"en": "Dissociative Identity Disorder Awareness Day", "he": "יום פיצול האישיות"}, notes: {"en": "Multiple Personality Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 6}, inherits: "National Heroes and Benefactors Day"},
         {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Casimir Pulaski Day"}, urls: {"en": "https://nationaltoday.com/casimir-pulaski-day/"}},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [5], durationD: 4}, titles: {"en": "Ted Fest"}, urls: {"en": "https://tedfest.org/"}},
