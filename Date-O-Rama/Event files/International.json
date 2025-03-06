@@ -940,7 +940,7 @@
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "International Amateur Radio Day"}, urls: {"en": "https://www.daysoftheyear.com/days/amateur-radio-day/"}, emoji: "📻"},
         {type: "D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/adult-autism-awareness-day/"}, titles: {"en": "Adult Autism Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/international-jugglers-day/"}, titles: {"en": "International Jugglers Day"}, first: {era: 1, y: 1980}},
-        {type: "D", start: {mon: 4, d: 19}, titles: {"en": "Bicycle Day", "he": "יום האופניים"}, urls: {"en": "https://www.daysoftheyear.com/days/bicycle-day/"}, emoji: "🚲"},
+        {type: "D", start: {mon: 4, d: 19}, inherits: "Bicycle Day", first: {era: 1, y: 1943}},
         {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/congenital-diaphragmatic-hernia-action-day/"}, titles: {"en": "Congenital Diaphragmatic Hernia Action Day"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/refresh-your-goals-day/"}, titles: {"en": "Refresh Your Goals Day"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/youth-homelessness-matters-day/"}, titles: {"en": "Youth Homelessness Matters Day"}, first: {era: 1, y: 1990}, emoji: "👦👧"},
