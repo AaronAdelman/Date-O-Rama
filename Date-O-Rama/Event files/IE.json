@@ -49,6 +49,7 @@
         {type: "D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/light-up-a-life/"}, titles: {"en": "Light Up a Life"}, first: {era: 1, y: 1996}, emoji: "🎄"},
         {type: "nD", start: {mon: 7, d: 11, thruD: 17, wkd: [2], durationD: 14}, titles: {"en": "Galway International Arts Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/galway-international-arts-festival/"}, first: {era: 1, y: 1978}, emoji: "🎭🎨"},
         {type: "D", start: {mon: 2, d: 29}, titles: {"en": "Bachelor’s Day"}, notes: {"en": "This observance feels socially outdated and awkward."}, urls: {"en": "https://en.wikipedia.org/wiki/Bachelor%27s_Day_(tradition)"}},
+        {type: "D", start: {mon: 3, wkd: [5], nth: 1}, inherits: "World Book Day UK & Ireland", first: {era: 1, y: 1998}},
    ],
     templates: [
         {template: "St. Brigid’s Day (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, titles: {"en": "St. Brigid’s Day (in lieu)"}},
