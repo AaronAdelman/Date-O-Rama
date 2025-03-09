@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 1, d: 2}, inherits: "Day after New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {mon: 1, d: 3, thruD: 4, wkd: [3]}, inherits: "Day after New Year’s Day (in lieu)"},
-        {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Summer Day", "sq": "Dita e Verës"}},
+        {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Dita e Verës", "sq": "Dita e Verës"}, notes: {"en": "Summer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dita-e-veres/"}},
         {type: "D", start: {mon: 3, d: 22}, inherits: "Nowruz", first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/nevruz-day/"}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},

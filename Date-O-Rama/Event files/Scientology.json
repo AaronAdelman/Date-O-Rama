@@ -3,9 +3,10 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.56, green: 0.56, blue: 0.56},
+    first: {era: 1, y: 1950},
     events: [
         {titles: {"en": "Celebrity Day"}, type: "D", start: {mon: 2, d: 22}, emoji: "😎", first: {era: 1, y: 1970}},
-        {titles: {"en": "L. Ron Hubbard’s Birthday"}, type: "D", start: {mon: 3, d: 13}, inherits: "*BDay*", first: {era: 1, y: 1911}},
+        {type: "D", start: {mon: 3, d: 13}, titles: {"en": "L. Ron Hubbard Day"}, notes: {"en": "L. Ron Hubbard’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1911}},
         {titles: {"en": "Student Day"}, type: "D", start: {mon: 3, d: 24}, emoji: "👨‍🎓👩🏼‍🎓", first: {era: 1, y: 1961}},
         {titles: {"en": "L. Ron Hubbard Exhibition Day"}, type: "D", start: {mon: 4, d: 20}, emoji: "🎪", first: {era: 1, y: 1991}},
         {titles: {"en": "Anniversary of Dianetics"}, type: "D", start: {mon: 5, d: 9}, inherits: "*Remembrance*", first: {era: 1, y: 1950}},

@@ -54,7 +54,7 @@
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Muay Thai’s Day", "th": "วันมวยไทย"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "National Artist Day", "he": "יום האמנים הלאומי", "th": "วันศิลปินแห่งชาติ"}, emoji: "👨‍🎨👩‍🎨"},
         {titles: {"en": "Cooperatives Day", "he": "יום הקואופרטיבים", "th": "วันสหกรณ์"}, type: "D", start: {mon: 2, d: 26}, first: {era: 1, y: 1967}},
-        {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Elephant Day", "th": "วันช้างไทย"}, first: {era: 1, y: 1999}, emoji: "🐘"},
+        {type: "D", start: {mon: 3, d: 13}, titles: {"en": "Thai Elephant Day", "th": "วันช้างไทย"}, notes: {"en": "National Elephant Day\nElephant Day\nThai National Elephant Day\nChang Thai Day"}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-day-in-thailand/"}, first: {era: 1, y: 1998}, emoji: "🐘"},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Memorial Day of Phra Nangklao Chaoyuhua", "th": "วันที่ระลึกพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว พระมหาเจษฎาราชเจ้า"}, notes: {"en": "King Nangklao Memorial Day"}, first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 4, d: 1}, inherits: "Civil Service Day", first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "Thai Heritage Conservation Day", "th": "วันอนุรักษ์มรดกไทย"}, first: {era: 1, y: 1995}},
