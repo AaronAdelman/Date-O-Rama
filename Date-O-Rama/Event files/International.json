@@ -736,6 +736,7 @@
         {type: "D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/dribble-to-work-day/"}, titles: {"en": "Dribble to Work Day"}, first: {era: 1, y: 2015}, emoji: "🏀"},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Genius Day"}, urls: {"en": "https://nationaltoday.com/genius-day/"}, first: {era: 1, y: 1897}},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Legal Assistants Day"}, urls: {"en": "https://nationaltoday.com/legal-assistance-day/"}, notes: {"en": "Legal Assistance Day"}, emoji: "👨‍⚖️👩‍⚖️"},
+        {type: "W", start: {mon: 3, fullWk: 3}, titles: {"en": "World Folktales & Fables Week"}, urls: {"en": "https://www.daysoftheyear.com/days/world-folktales-fables-week/"}},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Crowdfunding Day", "he": "יום מימון ההמונים"}, urls: {"en": "https://www.daysoftheyear.com/days/crowdfunding-day/"}, emoji: "🪙"},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "International Ask a Question Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-ask-a-question-day/"}, emoji: "🙋"},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "Moth-er Day"}, urls: {"en": "https://www.daysoftheyear.com/days/moth-er-day/"}, emoji: "🦋"},
