@@ -45,5 +45,7 @@
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", locations: {"en": "Iraqi Kurdistan"}},
+        
+        {type: "D", start: {mon: 3, d: 16}, inherits: "Public Holiday", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/iraq/halabja-chemical-attack"}},
     ]
 }

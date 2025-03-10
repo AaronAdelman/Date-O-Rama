@@ -147,6 +147,7 @@
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Sunkist® Citrus Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sunkist-citrus-day-march-1"}, first: {era: 1, y: 2023}, emoji: "🍊🍋"},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Dadgum That’s Good Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dadgum-thats-good-day-march-1"}, first: {era: 1, y: 2015}, emoji: "🌽🍖"},
         {type: "D", start: {mon: 3, d: 11}, inherits: "National 311 Day", first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 3, d: 11}, titles: {"en": "National Promposal Day"}, urls: {"en": "https://www.nationaldaycalendar.com/march/national-promposal-day-march-11"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 3, d: 12}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-working-moms-day-march-12"}, titles: {"en": "National Working Moms Day"}, notes: {"en": "National Working Mom’s Day"}, first: {era: 1, y: 2020}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Dermatologist Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dermatologist-day-march-13"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 3, d: 14}, titles: {"en": "National Write Your Story Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-write-down-your-story-day-march-14"}, first: {era: 1, y: 2017}, emoji: "✍️"},

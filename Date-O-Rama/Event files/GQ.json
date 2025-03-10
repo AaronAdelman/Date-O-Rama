@@ -23,5 +23,8 @@
 
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Children’s Day"},
+        
+        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 1977}},
+        {type: "D", start: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "International Women’s Day (in lieu)", first: {era: 1, y: 1977}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/international-womens-day"}},
   ]
 }
