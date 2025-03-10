@@ -825,6 +825,7 @@
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "National Baked Scallops Day"}, urls: {"en": "https://www.daysoftheyear.com/days/baked-scallops-day/"}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "National Girl Scout Day"}, urls: {"en": "https://www.daysoftheyear.com/days/girl-scout-day/"}, first: {era: 1, y: 1912}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "National Plant a Flower Day", "he": "יום שתילת הפרחים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/plant-a-flower-day/"}, emoji: "🌸🌺🌹"},
+        {type: "D", start: {mon: 3, d: 12}, titles: {"en": "National Skin Barrier Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-skin-barrier-day-march-12"}, notes: {"en": "This event looks suspiciously like an attempt to sell skin products"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Coconut Torte Day"}, urls: {"en": "https://www.daysoftheyear.com/days/coconut-torte-day/"}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Earmuff Day"}, urls: {"en": "https://www.daysoftheyear.com/days/earmuffs-day/"}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Jewel Day"}, notes: {"en": "This observance is anexcuse to buy or promote jewelry."}},

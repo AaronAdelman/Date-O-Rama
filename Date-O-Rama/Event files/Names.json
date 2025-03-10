@@ -1,5 +1,5 @@
 {
-    titles: {"en": "National Name Days", "he": "ימי שמות לאומיים"},
+    titles: {"en": "Names", "he": "שמות"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.91, blue: 0.81},
