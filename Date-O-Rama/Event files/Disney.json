@@ -1,0 +1,14 @@
+{
+    titles: {"en": "Disney", "he": "דיסני"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.4, green: 0.5, blue: 0.6},
+    events: [
+        {type: "D", start: {mon: 6, d: 9}, titles: {"en": "National Donald Duck Day", "he": "יום הולדת לדונלד דאק"}, urls: {"en": "https://www.daysoftheyear.com/days/donald-duck-day/"}, inherits: "*BDay*", first: {era: 1, y: 1934}},
+        {type: "D", start: {mon: 3, d: 13}, titles: {"en": "Donald Duck Day", "he": "יום דונלד דאק"}, urls: {"en": "https://www.checkiday.com/1c32c83a7b9565f0ec103dbd9ea00d00/donald-duck-day"}, inherits: "*BDay*", first: {era: 1, y: 1934}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Mickey Mouse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mickey-mouse-day/"}, notes: {"en": "Mickey Mouse’s Birthday\nMickey Mouse Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Minnie Mouse’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/minnie-mouses-birthday/"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 12, wkd: [2], nth: 1}, titles: {"en": "Walt Disney Day"}, urls: {"en": "https://www.daysoftheyear.com/days/walt-disney-day/"}, first: {era: 1, y: 1977}, emoji: "🐭"},
+        {type: "D", start: {mon: 11, d: 17}, titles: {"en": "The Little Mermaid Day"}, urls: {"en": "https://www.checkiday.com/113423fff3705964ea6131b6ad9cd043/the-little-mermaid-day"}, first: {era: 1, y: 1989}},
+    ]
+}

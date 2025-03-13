@@ -630,6 +630,7 @@
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Freedom Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-freedom-day/"}, first: {era: 1, y: 1949}},
         {type: "D", start: {mon: 2, d: 19, thruD: 25, wkd: [5]}, titles: {"en": "Great American Spit Out"}, urls: {"en": "https://www.daysoftheyear.com/days/great-american-spit-out/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1970}},
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "National Women and Girls HIV/AIDS Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-women-and-girls-hiv-aids-awareness-day/"}, inherits: "*MedAwareness*"},
+        {inherits: "Pi Day", type: "D", start: {mon: 3, d: 14}, first: {era: 1, y: 2009}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},
@@ -639,11 +640,9 @@
             {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖"},
         ]},
         
-        
         {type: "M", start: {mon: 2}, titles: {"en": "American Heart Month"}, urls: {"en": "https://www.daysoftheyear.com/days/american-heart-month/"}, first: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", nonoverlappingSubEvents: [
             {type: "D", start: {mon: 2, wkd: [6], nth: 3}, titles: {"en": "National Woman’s Heart Day"}, urls: {"en": "https://www.checkiday.com/b8f7d5258330d540b707e5002590888c/national-womans-heart-day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2001}, emoji: "🫀"},
         ]},
-        
         
         {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "NCPW\nConsumer Awareness Week"}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 3, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "National Slam the Scam Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-slam-the-scam-day/"}, emoji: "💻📱", first: {era: 1, y: 2020}},

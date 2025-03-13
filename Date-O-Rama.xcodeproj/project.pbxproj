@@ -87,6 +87,12 @@
 		A51128072887381100476792 /* AF (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A51128062887381000476792 /* AF (Persian).json */; };
 		A51128082887381100476792 /* AF (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A51128062887381000476792 /* AF (Persian).json */; };
 		A513896C2875A8630069F2AB /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513896B2875A8630069F2AB /* ASALocationChooserView.swift */; };
+		A514B9B92D830B42000046CC /* Disney.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9B82D830B42000046CC /* Disney.json */; };
+		A514B9BA2D830B42000046CC /* Disney.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9B82D830B42000046CC /* Disney.json */; };
+		A514B9BD2D830EB3000046CC /* Star Wars.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BC2D830EB3000046CC /* Star Wars.json */; };
+		A514B9BE2D830EB3000046CC /* Star Wars.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BC2D830EB3000046CC /* Star Wars.json */; };
+		A514B9C02D8310F0000046CC /* Star Trek.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BF2D8310F0000046CC /* Star Trek.json */; };
+		A514B9C12D8310F0000046CC /* Star Trek.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BF2D8310F0000046CC /* Star Trek.json */; };
 		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
 		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
 		A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */; };
@@ -1231,6 +1237,9 @@
 		A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocks.swift; sourceTree = "<group>"; };
 		A51128062887381000476792 /* AF (Persian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AF (Persian).json"; sourceTree = "<group>"; };
 		A513896B2875A8630069F2AB /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
+		A514B9B82D830B42000046CC /* Disney.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Disney.json; sourceTree = "<group>"; };
+		A514B9BC2D830EB3000046CC /* Star Wars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Star Wars.json"; sourceTree = "<group>"; };
+		A514B9BF2D8310F0000046CC /* Star Trek.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Star Trek.json"; sourceTree = "<group>"; };
 		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
 		A5150F0625C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
@@ -1916,6 +1925,7 @@
 				A581B893284E5FD300407D68 /* CZ.json */,
 				A5D850BF280C9B5F005247BD /* DE.json */,
 				A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */,
+				A514B9B82D830B42000046CC /* Disney.json */,
 				A5B999D428622E0D00072FD5 /* DJ.json */,
 				A5759143282BE30700675058 /* DK.json */,
 				A5EFFF4C285B5D7E00F2205F /* DM.json */,
@@ -2155,6 +2165,8 @@
 				A50DA50C28686271008D54AE /* SR (Chinese).json */,
 				A5EFFFEF285B88C200F2205F /* SS.json */,
 				A5FB22AB28638E1200B5042B /* ST.json */,
+				A514B9BF2D8310F0000046CC /* Star Trek.json */,
+				A514B9BC2D830EB3000046CC /* Star Wars.json */,
 				A533798024B2333400340C0B /* Sun.json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5364D982850F9EE00054BC2 /* Sunni Islam (times, Egypt).json */,
@@ -2779,6 +2791,7 @@
 				A5B999AF28622AB100072FD5 /* BQ.json in Resources */,
 				A54B61AF2A92455B005CC33D /* JO (Julian).json in Resources */,
 				A5FB22A828638D2B00B5042B /* SJ.json in Resources */,
+				A514B9BE2D830EB3000046CC /* Star Wars.json in Resources */,
 				A5E4964B286253D0001BF40C /* MS.json in Resources */,
 				A5EFFFAD285B7F2E00F2205F /* QA.json in Resources */,
 				A5EF0000285B8DF900F2205F /* BH (Muslim).json in Resources */,
@@ -2821,6 +2834,7 @@
 				A576994D259EDCC000757B0F /* Islam (general).json in Resources */,
 				A5364D9C2850FC7E00054BC2 /* Shia (times, Tehran).json in Resources */,
 				A5E49634286252EC001BF40C /* ME.json in Resources */,
+				A514B9BA2D830B42000046CC /* Disney.json in Resources */,
 				A50DA52928686272008D54AE /* KR (Chinese).json in Resources */,
 				A5F3B0192855FEC700865CEB /* RU.json in Resources */,
 				A5E4962E286252EC001BF40C /* MF.json in Resources */,
@@ -2842,6 +2856,7 @@
 				A5B999CA28622CB900072FD5 /* CM.json in Resources */,
 				A5EFFF91285B7D4600F2205F /* NG.json in Resources */,
 				A5EE19E62804A92600B0B9C2 /* GB.json in Resources */,
+				A514B9C12D8310F0000046CC /* Star Trek.json in Resources */,
 				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5EF0017285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A5E04AB32851CA6D001A4911 /* Sunni Islam (times, Egypt).json in Resources */,
@@ -3162,6 +3177,7 @@
 				A5EFFFAA285B7F2E00F2205F /* SL.json in Resources */,
 				A5B6AB6B2B20BB8A00C4AACB /* MU (Chinese).json in Resources */,
 				A581B87F284E55E500407D68 /* GR.json in Resources */,
+				A514B9B92D830B42000046CC /* Disney.json in Resources */,
 				A5B999B428622B1800072FD5 /* BT.json in Resources */,
 				A57C73D42B28DEC1007DDC2C /* MD (Julian).json in Resources */,
 				A5EFFFF3285B895500F2205F /* FJ.json in Resources */,
@@ -3279,6 +3295,7 @@
 				A5EFFFB3285B808E00F2205F /* TZ.json in Resources */,
 				A5EFFF31285B5B9E00F2205F /* BN.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
+				A514B9C02D8310F0000046CC /* Star Trek.json in Resources */,
 				A581B897284E60D900407D68 /* AT.json in Resources */,
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
 				A5D850B7280C98FD005247BD /* ID.json in Resources */,
@@ -3318,6 +3335,7 @@
 				A5E292E3285A616500925EBD /* AL.json in Resources */,
 				A5EF0014285B8EEB00F2205F /* QA (Muslim).json in Resources */,
 				A5EB4F8F2850D5DF00A32FB1 /* PS.json in Resources */,
+				A514B9BD2D830EB3000046CC /* Star Wars.json in Resources */,
 				A5EFFFF6285B89B300F2205F /* PG.json in Resources */,
 				A5B999C328622BBA00072FD5 /* CG.json in Resources */,
 				A5E292DA285A5D7D00925EBD /* TO.json in Resources */,
