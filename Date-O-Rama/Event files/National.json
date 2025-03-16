@@ -883,7 +883,6 @@
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Renewable Energy Day"}, urls: {"en": "https://nationaltoday.com/national-renewable-energy-day/"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Single Parent Day", "he": "יום ההורים היחידנים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/single-parents-day/"}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Teenager Day"}, urls: {"en": "https://nationaltoday.com/national-teenager-day/"}},
-        {type: "D", start: {mon: 3, d: 22}, titles: {"en": "National Corndog Day"}},
         {type: "D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-tamale-day/"}, titles: {"en": "National Tamale Day"}},
         {type: "D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/near-miss-day/"}, titles: {"en": "National Near Miss Day"}, notes: {"en": "Near Miss Day"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 3, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/chip-and-dip-day/"}, notes: {"en": "Chips and Dip Day"}, titles: {"en": "National Chip and Dip Day\nNational Chips and Dip Day"}},
