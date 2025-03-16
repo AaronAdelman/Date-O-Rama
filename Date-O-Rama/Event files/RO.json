@@ -1,7 +1,6 @@
 {
     titles: {"*": "RO"},
     "//": "Romania",
-    "TODO": "Earth Hour",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.13, blue: 0.41},
@@ -144,6 +143,12 @@
         {inherits: "International Human Solidarity Day", type: "D", start: {mon: 12, d: 20}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Day of Remembrance of the Victims of Communism in Romania"}},
         {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Romanian Revolution Victory and Freedom Day"}},
+        {type: "span", start: {era: 1, y: 2008, mon: 3, d: 29, h: 20, min: 0, s: 0, ns: 0}, end: {era: 1, y: 2008, mon: 3, d: 29, h: 21, min: 0, s: 0, ns: 0}, inherits: "Earth Hour"},
+        {type: "span", start: {mon: 3, d: 19, thruD: 25, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 19, thruD: 25, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2016}, last: {era: 1, y: 2018}},
+        {type: "span", start: {mon: 3, d: 22, thruD: 28, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 22, thruD: 28, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2024}},
+        {type: "span", start: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2013}, last: {era: 1, y: 2015}},
+        {type: "span", start: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2019}, last: {era: 1, y: 2023}},
+        {type: "span", start: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2009}, last: {era: 1, y: 2012}},
    ],
     templates: [
        {template: "Public Sector Holiday", type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en": "Public Sector Holiday"}},
