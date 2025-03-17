@@ -24,7 +24,7 @@
             {inherits: "Imbolc", type: "D", start: {mon: 8, d: 1}, "regionCodes": ["xc"]},
             
             {type: "D", start: {mon: 11, d: 16}, titles: {"en": "Night of Hekate"}, urls: {"en": "https://www.daysoftheyear.com/days/the-night-of-hekate/"}},
-            {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Goddess of Fertility Day"}, notes: {"en": "Fertility Goddess Day\nDay of Fertility"}, urls: {"en": "https://www.daysoftheyear.com/days/goddess-of-fertility-day/"}},
+            {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Goddess of Fertility Day"}, notes: {"en": "Fertility Goddess Day\nDay of Fertility"}, urls: {"en": "https://www.daysoftheyear.com/days/goddess-of-fertility-day/"}, first: {era: 1, y: 2012}},
 
         ]},
     ],
