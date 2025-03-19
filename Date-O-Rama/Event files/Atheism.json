@@ -16,5 +16,11 @@
         {titles: {"en": "Freethought Month"}, type: "M", start: {mon: 10}, urls: {"en": "https://secularseasons.org/october/freethought_month.html"}},
         {titles: {"en": "Thomas Paine Day"}, type: "D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/thomas-paine-day/"}},
         {inherits: "Indivisible Day", type: "D", start: {mon: 7, d: 4}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 6, d: 6}, inherits: "Atheist Pride Day", first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 3, d: 20}, inherits: "Atheist Pride Day", first: {era: 1, y: 2013}},
+    ],
+    templates: [
+        {template: "Atheist Pride Day", titles: {"en": "Atheist Pride Day"}, type: "D", start: {mon: 6, d: 6}, urls: {"en": "https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
+
     ]
 }
