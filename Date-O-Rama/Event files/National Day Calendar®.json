@@ -155,6 +155,7 @@
         {type: "D", start: {mon: 3, d: 2}, titles: {"en": "World Teen Mental Wellness Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-teen-mental-wellness-day-march-2"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "World Flour Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-flour-day-march-20"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Countdown Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-countdown-day-march-21"}, first: {era: 1, y: 2018}, emoji: "⏱️"},
+        {type: "D", start: {mon: 3, d: 23}, titles: {"en": "National Chia Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-chia-day-march-23"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 3, d: 15}, titles: {"en": "National Shoe the World Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-shoe-the-world-day-march-15"}, first: {era: 1, y: 2014}, emoji: "🥾"},
         {type: "D", start: {mon: 3, d: 16}, titles: {"en": "National Curl Crush Day"}, first: {era: 1, y: 2021}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "International MSL Day"}, notes: {"en": "International Medical Science Liaison Day"}, urls: {"en": "https://themsls.org/international-msl-day/"}, first: {era: 1, y: 2020}},
