@@ -104,6 +104,7 @@
         {type: "D", start: {mon: 11, d: 11}, inherits: "Veterans Day", urls: {"en": "https://department.va.gov/veterans-day/"}, first: {era: 1, y: 1954}, notes: {"en": "Remembrance Day"}},
         {type: "D", start: {mon: 3, d: 29}, titles: {"en": "National Vietnam War Veterans Day"}, notes: {"en": "Vietnam Veterans Day"}, inherits: "Veterans Day", urls: {"en": "https://www.daysoftheyear.com/days/national-vietnam-war-veterans-day/"}, first: {era: 1, y: 2012}},
         {inherits: "Victory Day", type: "D", start: {mon: 8, wkd: [2], nth: 2}, locations: {"en": "Rhode Island", "he": "רוד איילנד"}, urls: {"en": "https://nationaltoday.com/us-victory-day/"}, first: {era: 1, y: 1966}},
+        {inherits: "Greek Independence Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 2009}, urls: {"en": "https://en.wikisource.org/wiki/Greek_Independence_Day:_A_National_Day_of_Celebration_of_Greek_and_American_Democracy,_2009"}},
         {type: "D", start: {mon: 9, d: 2}, inherits: "Victory Over Japan Day", first: {era: 1, y: 1945}, urls: {"en": "https://www.daysoftheyear.com/days/vj-day/"}},
         {type: "M", start: {mon: 3}, inherits: "Women’s History Month", first: {era: 1, y: 1986}, urls: {"en": "https://womenshistorymonth.gov/"}},
         {type: "D", start: {mon: 2, d: 1}, inherits: "World Hijab Day", first: {era: 1, y: 2017}},
