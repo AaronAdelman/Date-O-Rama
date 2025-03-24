@@ -39,6 +39,6 @@
         {type: "D", start: {mon: 9, wkd: [3], nth: 4}, inherits: "National Coffee Day"},
         {inherits: "Black History Month", type: "M", start: {mon: 10}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 6, d: 4}},
-
+        {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Bitterballen Day", "nl": "Dag van de Bitterbal"}, notes: {"nl": "Bitterballendag"}, urls: {"en": "https://www.daysoftheyear.com/days/bitterballen-day/"}, first: {era: 1, y: 2020}},
    ]
 }

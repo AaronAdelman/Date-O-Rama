@@ -12,6 +12,8 @@
         {inherits: "Carnival Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://nationaltoday.com/argentina-carnival/"}},
         {inherits: "Carnival Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {mon: 3, d: 24}, titles: {"en": "Day of Remembrance for Truth and Justice", "es": "Día Nacional de la Memoria por la Verdad y la Justicia"}, urls: {"en": "https://nationaltoday.com/day-of-remembrance-for-truth-and-justice/"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day"}},
+        {type: "D", start: {mon: 3, d: 25, wkd: [6]}, titles: {"en": "Day of Remembrance for Truth and Justice (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/truth-and-justice-memorial-day"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day (in lieu)"}},
+
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "Day of the Veterans and Fallen of the Falklands War", "es": "Día del Veterano y de los Caídos en la Guerra de Malvinas"}, urls: {"en": "https://nationaltoday.com/day-of-the-veterans/"}, first: {era: 1, y: 2001}, notes: {"en": "Day of the Veterans\nMalvinas Day"}},
         {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
