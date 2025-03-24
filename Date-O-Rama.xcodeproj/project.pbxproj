@@ -822,6 +822,8 @@
 		A5E4966428625585001BF40C /* PN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E4966128625585001BF40C /* PN.json */; };
 		A5E4966528625585001BF40C /* PM.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E4966228625585001BF40C /* PM.json */; };
 		A5E4966628625585001BF40C /* PM.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E4966228625585001BF40C /* PM.json */; };
+		A5E5DA762D913EE100043182 /* Middle-Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E5DA752D913ED200043182 /* Middle-Earth.json */; };
+		A5E5DA772D913EE100043182 /* Middle-Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E5DA752D913ED200043182 /* Middle-Earth.json */; };
 		A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E713DE2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
@@ -1618,6 +1620,7 @@
 		A5E4965E28625540001BF40C /* PF.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PF.json; sourceTree = "<group>"; };
 		A5E4966128625585001BF40C /* PN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PN.json; sourceTree = "<group>"; };
 		A5E4966228625585001BF40C /* PM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PM.json; sourceTree = "<group>"; };
+		A5E5DA752D913ED200043182 /* Middle-Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Middle-Earth.json"; sourceTree = "<group>"; };
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
 		A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ML (Muslim).json"; sourceTree = "<group>"; };
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
@@ -2056,6 +2059,7 @@
 				A5E49626286252EC001BF40C /* MF.json */,
 				A5EFFF70285B7B1300F2205F /* MG.json */,
 				A5E496382862535D001BF40C /* MH.json */,
+				A5E5DA752D913ED200043182 /* Middle-Earth.json */,
 				A5E496372862535D001BF40C /* MK.json */,
 				A58B5EF12AE020EE001C2A6E /* MK (Julian).json */,
 				A5EFFF6C285B7B1300F2205F /* ML.json */,
@@ -3011,6 +3015,7 @@
 				A5E292E4285A616500925EBD /* AL.json in Resources */,
 				A5EFFFE2285B85B500F2205F /* NI.json in Resources */,
 				A5EE2FA22815DB9800B6E81E /* JP.json in Resources */,
+				A5E5DA762D913EE100043182 /* Middle-Earth.json in Resources */,
 				A5CF46592810C9780088738D /* LS.json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
 				A581B880284E55E500407D68 /* GR.json in Resources */,
@@ -3165,6 +3170,7 @@
 				A581B88E284E5CB800407D68 /* AD.json in Resources */,
 				A5EFFFC8285B81BD00F2205F /* ZW.json in Resources */,
 				A5E4960B28624FDC001BF40C /* HM.json in Resources */,
+				A5E5DA772D913EE100043182 /* Middle-Earth.json in Resources */,
 				A5E292EF285A644000925EBD /* BH.json in Resources */,
 				A5EFFF76285B7B1300F2205F /* KW.json in Resources */,
 				A5B999A928622A4000072FD5 /* BJ.json in Resources */,

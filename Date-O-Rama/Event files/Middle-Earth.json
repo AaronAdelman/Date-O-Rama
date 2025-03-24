@@ -1,0 +1,11 @@
+{
+    titles: {"en": "Middle-Earth", "he": "הארץ התיכונה"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.3, green: 1.0, blue: 0.3},
+    events: [
+        {type: "D", start: {mon: 1, d: 3}, titles: {"en": "J.R.R. Tolkien Day"}, urls: {"en": "https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inherits: "*BDay*", first: {era: 1, y: 1892}},
+        {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Tolkien Reading Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tolkien-reading-day/"}, first: {era: 1, y: 2003}, emoji: "📚"},
+        {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, urls: {"en": "https://www.daysoftheyear.com/days/hobbit-day/"}, notes: {"en": "National Hobbit Day"}, first: {era: 1, y: 1978}},
+    ]
+}
