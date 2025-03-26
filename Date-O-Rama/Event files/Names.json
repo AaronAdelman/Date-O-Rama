@@ -112,6 +112,7 @@
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "National Guadalupe Day"}},
         {type: "D", start: {mon: 3, d: 26}, titles: {"en": "National Landon Day"}},
         {type: "D", start: {mon: 3, d: 26}, titles: {"en": "National Wayne Day"}},
+        {type: "D", start: {mon: 3, d: 27}, titles: {"en": "National Joe Day"}, urls: {"en": "https://nationaltoday.com/national-joe-day/"}},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Amber Day"}},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Ram Day"}},
         {type: "D", start: {mon: 3, d: 30}, titles: {"en": "National Julia Day"}},

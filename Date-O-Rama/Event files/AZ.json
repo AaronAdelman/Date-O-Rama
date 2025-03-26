@@ -71,6 +71,5 @@
         {type: "nD", start: {mon: 10, d: 26}, end: {mon: 11, d: 10}, titles: {"en": "Pomegranate Festival"}, notes: {"en": "Nar Bayrami"}, urls: {"en": "https://www.daysoftheyear.com/days/pomegranate-festival/"}, first: {era: 1, y: 2006}},
    ],
     templates: [
-        {template: "Nowruz Holiday", type: "D", start: {mon: 3, d: 21}, titles: {"en": "Nowruz Holiday"}, notes: {"en": "Novruz Holiday"}},
     ]
 }
