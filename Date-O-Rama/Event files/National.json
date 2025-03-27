@@ -916,6 +916,8 @@
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "National Viagra Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-viagra-day/"}, notes: {"en": "Is the person who invented this observance advertising having a personal problem?"}},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Black Forest Cake Day", "he": "יום עוגת היער השחור הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/black-forest-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Hot Tub Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hot-tub-day/"}, first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 4, wkd: [4], nth: 1}, inherits: "A Whole Day for Whole Grain", first: {era: 1, y: 2012}, end: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 3, wkd: [4], nth: -1}, inherits: "A Whole Day for Whole Grain", first: {era: 1, y: 2016}},
         {type: "nD", start: {mon: 3, d: 25, thruD: 31, wkd: [7]}, end: {mon: 4, d: 2, thruD: 8, wkd: [1]}, titles: {"en": "NanoDays"}, urls: {"en": "https://www.daysoftheyear.com/days/nanodays/"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Something On a Stick Day"}, urls: {"en": "https://www.daysoftheyear.com/days/something-on-a-stick-day/"}, emoji: "🍡🍢"},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Weed Appreciation Day", "he": "יום העשבים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/weed-appreciation-day/"}},
@@ -2721,5 +2723,6 @@
         {template: "Eating Disorder Awareness Week", type: "nD", start: {mon: 2, d: 22, thruD: 28, wkd: [2], yLengths: [365]}, end: {mon: 2, d: 28, thruMon: 3, thruD: 6, wkd: [1]}, titles: {"en": "Eating Disorder Awareness Week"}, notes: {"en": "National Eating Disorder Awareness Week"}, urls: {"en": "https://www.nationaleatingdisorders.org/edaw/"}, inherits: "*MedAwareness*"},
         {template: "School Breakfast Week", type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "School Breakfast Week"}, urls: {"en": "https://schoolnutrition.org/about-school-meals/national-school-breakfast-week/"}, emoji: "🍎"},
         {template: "​National Wildlife Day", type: "D", start: {mon: 9, d: 4}, titles: {"en": "​National Wildlife Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
+        {template: "A Whole Day for Whole Grain", type: "D", start: {mon: 4, wkd: [4], nth: 1}, titles: {"en": "A Whole Day for Whole Grain"}, urls: {"en": "https://www.checkiday.com/37f9b0872d527b69abc42966830c7c3c/a-whole-day-for-whole-grain"}, emoji: "🌾"},
     ]
 }
