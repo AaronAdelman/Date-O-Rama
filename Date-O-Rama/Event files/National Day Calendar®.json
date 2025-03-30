@@ -164,6 +164,7 @@
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Triglycerides Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-triglycerides-day-march-28"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "National Soup it Forward Day"}, urls: {"en": "https://www.soupsisters.org/national-soupitforward-day"}, first: {era: 1, y: 2018}, emoji: "🥣"},
         {type: "D", start: {mon: 3, d: 30}, titles: {"en": "National Virtual Vacation Day"}, urls: {"en": "https://terrancetalkstravel.com/virtual-vacation-day/"}, first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 3, d: 31}, titles: {"en": "National Prom Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-prom-day-march-31"}, first: {era: 1, y: 2016}, emoji: "🥂"},
         {type: "D", start: {mon: 3, d: 6}, inherits: "National Dress Day", first: {era: 1, y: 2016}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "D", start: {Easter:  "Easter", offsetD: -44}, inherits: "National Tartar Sauce Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, d: 7}, titles: {"en": "National Flapjack Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-flapjack-day-march-7"}, first: {era: 1, y: 2020}, emoji: "🥞"},

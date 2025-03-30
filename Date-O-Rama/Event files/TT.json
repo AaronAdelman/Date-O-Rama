@@ -12,7 +12,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -44}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Monday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -45}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Tuesday"},
         {type: "D", start: {mon: 3, d: 30}, titles: {"en": "Spiritual Baptist Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, first: {era: 1, y: 1996}, notes: {"en": "Spiritual Baptist Liberation Day\nSpiritual Baptist/Shouter Liberation Day"}},
-        {type: "D", start: {mon: 3, d: 31, wkd: [2]}, urls: {"en": "https://nationaltoday.com/spiritual-baptist-liberation-day/"}, titles: {"en": "Spiritual Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}, first: {era: 1, y: 1996}, notes: {"en": "Spiritual Baptist Day (in lieu)"}},
+        {type: "D", start: {mon: 3, d: 31, wkd: [2]}, urls: {"en": "https://nationaltoday.com/spiritual-baptist-liberation-day/"}, titles: {"en": "Spiritual Baptist Day (in lieu)"}, first: {era: 1, y: 1996}, notes: {"en": "Spiritual Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
