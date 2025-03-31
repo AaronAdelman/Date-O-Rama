@@ -487,7 +487,7 @@
         {type: "M", start: {mon: 3}, titles: {"en": "National Social Work Month"}, urls: {"en": "https://www.daysoftheyear.com/days/social-work-month/"}, first: {era: 1, y: 1984}},
         {type: "M", start: {mon: 4}, titles: {"en": "Arab American Heritage Month"}, urls: {"en": "https://nationaltoday.com/arab-american-heritage-month/"}, first: {era: 1, y: 2014}},
         {type: "M", start: {mon: 4}, titles: {"en": "Cancer Control Month"}, urls: {"en": "https://nationaltoday.com/cancer-control-month/", inherits: "*MedAwareness*"}, first: {era: 1, y: 2009}},
-        {type: "M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/financial-literacy-month/"}, titles: {"en": "Financial Literacy Month"}, first: {era: 1, y: 2004}},
+        {type: "M", start: {mon: 4}, titles: {"en": "Financial Capability Month"}, notes: {"en": "National Financial Capability Month\nFinancial Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/financial-capability-month/"}, first: {era: 1, y: 2004}},
         {type: "M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/keep-america-beautiful-month/"}, titles: {"en": "Keep America Beautiful Month"}},
         {type: "M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/mathematics-and-statistics-awareness-month/"}, titles: {"en": "Mathematics and Statistics Awareness Month"}, first: {era: 1, y: 1986}},
         {type: "M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-card-and-letter-writing-month/"}, titles: {"en": "National Card and Letter Writing Month"}},
