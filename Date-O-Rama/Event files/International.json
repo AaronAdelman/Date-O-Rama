@@ -2255,6 +2255,7 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/sexual-health-week/"}, titles: {"en": "Sexual Health Week"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
+        {type: "D", start: {mon: 4, d: 1}, titles: {"en": "International Edible Book Festival"}, urls: {"en": "http://www.books2eat.beatricecoron.com/"}, notes: {"en": "International Edible Book Day\nEdible Book Festival\nNational Edible Book Festival"}, first: {era: 1, y: 2000}},
         
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
