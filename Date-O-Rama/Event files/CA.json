@@ -39,7 +39,7 @@
         {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
         {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
-        {inherits: "Tartan Day", type: "D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1985}},
+        {inherits: "Tartan Day", type: "D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1987}},
         {inherits: "Thanksgiving Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 1957}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},

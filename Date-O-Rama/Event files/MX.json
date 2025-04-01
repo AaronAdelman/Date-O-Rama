@@ -65,7 +65,7 @@
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "Mariachi Day"}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 8, d: 28}},
-        {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, notes: {"en": "International Taco Day", "es": "Día Internacional del Taco"}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
         {type: "D", start: {era: 1, y: 2012, mon: 12, d: 1}, inherits: "Change of Federal Government"},
         {type: "D", start: {era: 1, y: 2018, mon: 12, d: 1}, inherits: "Change of Federal Government"},
         {type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, inherits: "Change of Federal Government"},
