@@ -1,0 +1,11 @@
+{
+    titles: {"en": "Doctor Who", "he": "דוקטור הו"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.1, green: 0.1, blue: 0.6},
+    events: [
+        {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Fish Fingers and Custard Day"}, urls: {"en": "https://www.daysoftheyear.com/days/fish-fingers-and-custard-day/"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "International Dalek Remembrance Day"}, first: {era: 1, y: 1963}, urls: {"en": "https://www.daysoftheyear.com/days/dalek-remembrance-day/"}},
+        {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Doctor Who Day"}, urls: {"en": "https://www.daysoftheyear.com/days/doctor-who-day/"}, first: {era: 1, y: 1963}},
+    ]
+}
