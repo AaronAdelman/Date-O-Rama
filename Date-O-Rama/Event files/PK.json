@@ -40,7 +40,7 @@
         {type: "D", start: {mon: 2, d: 104}, titles: {"en": "Azad Kashmir Day", "ur": "یومِ تاسیس آزاد کشمیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Azad_Kashmir_Day"}, first: {era: 1, y: 1947}},
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Kashmir Solidarity Day", "ur": "یوم یکجحتی کشمیر"}, urls: {"en": "https://nationaltoday.com/kashmir-solidarity-day/"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 3, d: 23}, titles: {"en": "Pakistan Day", "he": "יום פקיסטן ", "ur": "یوم پاکستان"}, urls: {"en": "https://nationaltoday.com/pakistan-day/"}},
-        {type: "D", start: {mon: 4, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/sindh/death-of-zulfikar-ali-bhutto"}, inherits: "*DeathAnniv*", titles: {"en": "Death Anniversary of Zulfikar Ali Bhutto"}},
+        {type: "D", start: {mon: 4, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/sindh/death-of-zulfikar-ali-bhutto"}, inherits: "*DeathAnniv*", titles: {"en": "Death Anniversary of Zulfikar Ali Bhutto"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 5, d: 28}, titles: {"en": "Day of Greatness", "ur": "یوم تکبیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Youm-e-Takbir"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 7, d: 19}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
