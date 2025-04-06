@@ -1189,6 +1189,7 @@
         {type: "D", start: {mon: 4, d: 8}, titles: {"en": "National Empanada Day"}, urls: {"en": "https://nationaltoday.com/national-empanada-day/"}},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "National Unicorn Day", "he": "יום החד קרן הלאומי"}, emoji: "🦄", urls: {"en": "https://www.daysoftheyear.com/days/unicorn-day/"}},
         {type: "D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chicken-little-awareness-day/"}, titles: {"en": "National Chicken Little Awareness Day"}},
+        {type: "D", start: {mon: 4, d: 7}, titles: {"en": "National Making the First Move Day"}, urls: {"en": "https://www.daysoftheyear.com/days/making-the-first-move-day/"}, notes: {"en": "Make the First Move Day"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chinese-almond-cookie-day/"}, titles: {"en": "National Chinese Almond Cookie Day"}},
         {type: "D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-gin-and-tonic-day/"}, titles: {"en": "National Gin and Tonic Day"}},
         {type: "D", start: {mon: 4, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/cherish-an-antique-day/"}, titles: {"en": "National Cherish an Antique Day", "he": "יום העתיקות הלאומי"}, emoji: "🏺"},
