@@ -886,7 +886,7 @@
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "International Safety Pin Day", "he": "יום סיכת הביטחון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-safety-pin-day/"}, emoji: "🧷"},
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "World Baton Twirling Day"}, notes: {"en": "WBTD"}, urls: {"en": "https://www.ibtf-batontwirling.org/world-baton-twirling-day.html"}},
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "Global Work From Home Day"}, urls: {"en": "https://nationaltoday.com/global-work-from-home-day/"}},
-        {type: "D", start: {mon: 4, d: 10}, titles: {"en": "Golfer’s Day", emoji: "⛳️"}, urls: {"en": "https://nationaltoday.com/golfers-day/"}},
+        {type: "D", start: {mon: 4, d: 10}, titles: {"en": "Golfer’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/golfers-day/"}, emoji: "⛳️"},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "International Louie Louie Day"}, urls: {"en": "http://www.louieday.org/default.htm"}, first: {era: 1, y: 1985}, emoji: "🦙"},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "World Parkinson’s Day", "he": "יום מחלת פרקינסון העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/world-parkinsons-disease-day/"}, emoji: "💊", first: {era: 1, y: 1997}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/dog-therapy-appreciation-day/"}, titles: {"en": "Dog Therapy Appreciation Day"}, emoji: "🐕"},
