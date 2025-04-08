@@ -12,7 +12,7 @@
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
         {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/americas-day/"}, titles: {"en": "Americas Day", "es": "Día de la Americas"}, notes: {"en": "Pan American"}, first: {era: 1, y: 1931}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

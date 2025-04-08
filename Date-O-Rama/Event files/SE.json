@@ -28,7 +28,7 @@
         
         {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
         {type: "D", start: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [6]}, titles: {"en": "All Saints’ Eve", "sv": "Alla helgons afton"}},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {inherits: "Whit Saturday", type: "D", start: {Easter:  "Easter", offsetD: 48}},

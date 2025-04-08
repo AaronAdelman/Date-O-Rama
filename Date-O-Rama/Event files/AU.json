@@ -20,7 +20,7 @@
         {inherits: "Feast of St. James", type: "D", start: {mon: 7, d: 25}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 10, wkd: [1], nth: -1}},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {inherits: "King’s Birthday", type: "D", start: {mon: 9, wkd: [2], d: 23, thruD: 29}, locations: {"en": "Western Australia"}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/australia/western-australia/australia-kings-birthday"}},
         {inherits: "Labour Day", type: "D", start: {mon: 10, wkd: [2], nth: 1}, locations: {"en": "Australian Capital Territory, New South Wales, and South Australia"}, urls: {"en": "https://nationaltoday.com/labour-day/"}},

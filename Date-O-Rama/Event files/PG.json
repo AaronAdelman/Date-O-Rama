@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 2, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "National Remembrance Day"},
         {type: "D", start: {mon: 2, d: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "National Remembrance Day (in lieu)"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {era: 1, y: 2023, mon: 4, d: 18}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-public-holiday"}, inherits: "Public Holiday"},

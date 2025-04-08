@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},

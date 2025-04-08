@@ -92,7 +92,7 @@
         {type: "D", titles: {"en": "ABW Day"}, start: {mon: 4, d: 6}, first: {era: 1, y: 2004}},
         {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day", "pl": "Śmigus Dyngus"}, inherits: "Easter Monday"},
         {type: "D", titles: {"en": "Warsaw Ghetto Uprising"}, start: {mon: 4, d: 19}},
         {inherits: "International Mother Earth Day", type: "D", start: {mon: 4, d: 22}, first: {era: 1, y: 2009}},
