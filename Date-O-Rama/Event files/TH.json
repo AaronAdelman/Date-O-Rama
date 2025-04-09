@@ -13,6 +13,7 @@
         {type: "D", start: {mon: 4, d: 8, wkd: [2]}, inherits: "Chakri Day"},
         {type: "D", start: {mon: 4, d: 12, wkd: [2, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/songkran-festival"}, titles: {"en": "Extra holiday for Songkran"}, inherits: "Songkran"},
         {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/songkran-water-festival/"}, inherits: "Songkran"},
+        {type: "D", start: {mon: 4, d: 16, wkd: [3, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/songkran-festival"}, titles: {"en": "Extra holiday for Songkran"}, inherits: "Songkran"},
         {type: "D", start: {mon: 4, d: 17, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/songkran-festival"}, titles: {"en": "Extra holiday for Songkran"}, inherits: "Songkran"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/thai-kings-coronation"}, titles: {"en": "Coronation Day", "th": "วันฉัตรมงคล"}, inherits: "*Coronation*"},

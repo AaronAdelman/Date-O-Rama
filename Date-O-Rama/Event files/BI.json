@@ -9,7 +9,8 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 5}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/unity-day-burundi/"}},
-        {type: "D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}, inherits: "Presidents’ Day", notes: {"en": "Cyprien Ntaryamira Day"}},
+        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "President Ntaryamira Day"}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, inherits: "Presidents’ Day", notes: {"en": "Cyprien Ntaryamira Day"}},
+        {type: "D", start: {mon: 4, d: 7, wkd: [2]}, titles: {"en": "President Ntaryamira Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, inherits: "Presidents’ Day", notes: {"en": "Cyprien Ntaryamira Day (in lieu)"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/burundi-independence-day/"}, first: {era: 1, y: 1962}},

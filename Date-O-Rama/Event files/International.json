@@ -898,7 +898,7 @@
         {type: "D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/teak-awareness-day/"}, titles: {"en": "Teak Awareness Day"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/wear-a-star-day/"}, titles: {"en": "Wear a Star Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 4, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/yuris-night/"}, titles: {"en": "Yuri’s Night", "he": "הלילה של יורי"}, first: {era: 1, y: 2000}, notes: {"en": "World Space Party"}, emoji: "🚀"},
-        {type: "D", start: {mon: 4, d: 13}, titles: {"en": "International FND Awareness Day", "he": "יום המודעות הבינלאומי להפרעה נוירולוגית תפקודית"}, urls: {"en": "https://www.daysoftheyear.com/days/international-fnd-awareness-day/"}, first: {era: 1, y: 2012}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 4, d: 13}, titles: {"en": "International FND Awareness Day", "he": "יום המודעות הבינלאומי להפרעה נוירולוגית תפקודית"}, urls: {"en": "https://fndhope.org/fndaware/"}, first: {era: 1, y: 2012}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 13}, titles: {"en": "World Sarcoidosis Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/world-awareness-sarcoidosis-day-april-13/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/consumer-awareness-week/"}, titles: {"en": "Consumer Awareness Week"}},
         {type: "D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/global-days-of-action-on-military-spending/"}, titles: {"en": "Global Days of Action on Military Spending"}},
