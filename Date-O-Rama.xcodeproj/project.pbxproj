@@ -238,6 +238,8 @@
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
 		A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC952D1C437000E64598 /* ASAMenuTitle.swift */; };
+		A56B3FE32DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
+		A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
@@ -1325,6 +1327,7 @@
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
 		A568FC952D1C437000E64598 /* ASAMenuTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMenuTitle.swift; sourceTree = "<group>"; };
+		A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Looney Tunes.json"; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (minor fasts).json"; sourceTree = "<group>"; };
@@ -1852,6 +1855,7 @@
 		A533798224B2425900340C0B /* Event files */ = {
 			isa = PBXGroup;
 			children = (
+				A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */,
 				A508C7F4283E244E00D96947 /* *Templates.json */,
 				A581B88D284E5CB800407D68 /* AD.json */,
 				A5EFFFD8285B855E00F2205F /* AE.json */,
@@ -2720,6 +2724,7 @@
 				A5FED7EA276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5E49618286250DC001BF40C /* KG.json in Resources */,
 				A5E49645286253D0001BF40C /* MQ.json in Resources */,
+				A56B3FE32DAEBD840041E9B0 /* Looney Tunes.json in Resources */,
 				A5E495D928624D7A001BF40C /* ER.json in Resources */,
 				A575914B282BE3BE00675058 /* LU.json in Resources */,
 				A54B61B22A9248A9005CC33D /* KZ (Julian).json in Resources */,
@@ -3396,6 +3401,7 @@
 				A5E4962B286252EC001BF40C /* MC.json in Resources */,
 				A5EFFF4D285B5D7E00F2205F /* EC.json in Resources */,
 				A5B321FA2D7A118F004E0460 /* Matrixism.json in Resources */,
+				A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */,
 				A5D850C0280C9B5F005247BD /* DE.json in Resources */,
 				A50DA51E28686272008D54AE /* SR (Chinese).json in Resources */,
 				A5E49644286253D0001BF40C /* MQ.json in Resources */,

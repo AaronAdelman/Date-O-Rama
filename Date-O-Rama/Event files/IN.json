@@ -1,7 +1,7 @@
 {
     titles: {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
@@ -35,7 +35,6 @@
         {type: "D", start: {mon: 4, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/mahatma-jyotiba-phule-jayanti"}, titles: {"en": "Mahatma Jyotiba Phule Jayanti"}, inherits: "*BDay*", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/india/tripura/biju-festival"}, titles: {"en": "Biju Festival"}, notes: {"en": "Bishu\nBizu"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Dr. Babasaheb Ambedkar Jayanti"}, notes: {"en": "Bhim Jayanti\nDr. Ambedkar Jayanti"}, urls: {"en": "https://en.wikipedia.org/wiki/Ambedkar_Jayanti"}},
-        {type: "nD", start: {mon: 4, d: 14}, end: {mon: 4, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/bohag-bihu"}, titles: {"en": "Bohag Bihu Holiday"}},
         {type: "D", start: {mon: 4, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/india/tamil-new-year"}, titles: {"en": "Tamil New Year"}},
         {type: "D", start: {mon: 4, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/india/himachal-pradesh/himachal-day"}, titles: {"en": "Himachal Day"}},
         {type: "D", start: {mon: 4, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/sati-sadhani-divas"}, titles: {"en": "Sati Sadhani Divas"}},

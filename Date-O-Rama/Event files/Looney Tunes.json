@@ -1,0 +1,17 @@
+//
+//  Looney Tunes.json
+//  Date-O-Rama
+//
+//  Created by אהרן שלמה אדלמן on 15/04/2025.
+//  Copyright © 2025 Adelsoft. All rights reserved.
+//
+{
+    titles: {"en": "Looney Tunes/Merrie Melodies", "he": "לוני טונס"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.6, green: 0.1, blue: 0.1},
+    events: [
+        {type: "D", start: {mon: 4, d: 30}, titles: {"en": "National Bugs Bunny Day", "he": "יום באגס באני הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bugs-bunny-day/"}, first: {era: 1, y: 1938}},
+        {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/sylvester-the-cat-birthday/"}, titles: {"en": "Sylvester the Cat’s Birthday"}, notes: {"en": "Sylvester the Cat Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1939}},
+    ]
+}
