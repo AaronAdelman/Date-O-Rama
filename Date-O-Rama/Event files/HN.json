@@ -14,7 +14,9 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {mon: 4, d: 14}, inherits: "Pan-American Day", first: {era: 1, y: 1931}, urls: {"en": "https://nationaltoday.com/americas-day/"}},
+        {type: "D", start: {mon: 4, d: 14}, inherits: "Pan American Day", first: {era: 1, y: 1931}, urls: {"en": "https://nationaltoday.com/americas-day/"}},
+        {type: "D", start: {mon: 4, d: 18}, inherits: "Pan American Day (in lieu)", first: {era: 1, y: 2024}, end: {era: 1, y: 2025}},
+        {type: "D", start: {mon: 4, d: 13, wkd: [2]}, inherits: "Pan American Day (in lieu)", first: {era: 1, y: 1931}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/honduras/mothers-day"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/honduras-independence-day/"}},
@@ -49,6 +51,6 @@
         {template: "Discovery of America Day (in lieu)", type: "D", start: {era: 1, y: 2022, mon: 10, d: 6}, titles: {"en": "Discovery of America Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
         {template: "Francisco Morazán’s Day (in lieu)", type: "D", start: {mon: 10, d: 5}, titles: {"en": "Francisco Morazán’s Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, inherits: "*BDay*"},
         {template: "Army Day (in lieu)", type: "D", start: {mon: 10, d: 21}, titles: {"en": "Army Day (in lieu)"}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, notes: {"en": "National Army Day"}},
-
+        {template: "Pan American Day (in lieu)", type: "D", start: {mon: 4, d: 18}, titles: {"en": "Pan American Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/americas-day/"}},
     ]
 }

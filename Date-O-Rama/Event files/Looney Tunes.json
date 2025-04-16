@@ -11,7 +11,10 @@
     calendarCode: "gre*",
     calendarColor: {red: 0.6, green: 0.1, blue: 0.1},
     events: [
-        {type: "D", start: {mon: 4, d: 30}, titles: {"en": "National Bugs Bunny Day", "he": "יום באגס באני הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bugs-bunny-day/"}, first: {era: 1, y: 1938}},
-        {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/sylvester-the-cat-birthday/"}, titles: {"en": "Sylvester the Cat’s Birthday"}, notes: {"en": "Sylvester the Cat Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1939}},
+        {type: "D", start: {mon: 11, d: 21}, titles: {"en": "Tweety Bird Day"}, urls: {"en": "https://happyhivehomeschooling.com/what-is-todays-holiday/tweety-bird-day/"}, inherits: "*BDay*", first: {era: 1, y: 1942}, emoji: "🐦"},
+        {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Porky Pig’s Birthday"}, urls: {"en": "https://cartoonnetwork.fandom.com/wiki/Porky%27s_Birthday_Weekend"}, inherits: "*BDay*", first: {era: 1, y: 1935}, emoji: "🐖"},
+        {type: "D", start: {mon: 4, d: 17}, titles: {"en": "Daffy Duck’s Birthday"}, urls: {"en": "https://www.theintelligencer.com/news/article/daffy-duck-made-looney-tunes-debut-86-years-ago-17902203.php"}, inherits: "*BDay*", first: {era: 1, y: 1937}, emoji: "🦆"},
+        {type: "D", start: {mon: 4, d: 19}, titles: {"en": "Sylvester the Cat’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/sylvester-the-cat-birthday/"}, notes: {"en": "Sylvester the Cat Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1939}, emoji: "🐈‍⬛"},
+        {type: "D", start: {mon: 4, d: 30}, titles: {"en": "National Bugs Bunny Day", "he": "יום באגס באני הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bugs-bunny-day/"}, first: {era: 1, y: 1938}, emoji: "🐇"},
     ]
 }

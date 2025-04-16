@@ -185,6 +185,7 @@
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "National Orchid Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-orchid-day-april-16"}, first: {era: 1, y: 2015}, emoji: "🀣"},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "National Pathway Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pathway-day-april-16"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Crawfish Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-crawfish-day-april-17"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: -1}, titles: {"en": "National Dueling Dinosaurs Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dueling-dinosaurs-day-last-saturday-in-april"}, first: {era: 1, y: 2025}, emoji: "🦖🦕"},
         {type: "D", start: {mon: 4, d: 21}, titles: {"en": "National Rendering Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-rendering-day-april-21"}, emoji: "🐄", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Bucket List Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-bucket-list-day-april-24"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 4, d: 26}, titles: {"en": "National Dissertation Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dissertation-day-april-26"}, first: {era: 1, y: 2018}, emoji: "🎓"},
@@ -387,7 +388,6 @@
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Women Physicians Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-women-physicians-day-february-3"}, first: {era: 1, y: 2016}, emoji: "👩‍⚕️"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Missing Persons Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-missing-persons-day-february-3"}, first: {era: 1, y: 2018}, emoji: "🫥"},
         {type: "D", start: {mon: 2, d: 7}, titles: {"en": "National Periodic Table Day"}, urls: {"en": "https://www.periodictableday.org/"}, first: {era: 1, y: 2016}, emoji: "🧪"},
-
 
         {type: "nD", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Arkansas Day", "he": "יום ארקנסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-arkansas-day/"}, first: {era: 1, y: 2017}},

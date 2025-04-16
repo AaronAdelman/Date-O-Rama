@@ -67,7 +67,7 @@
         
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Internal Troops and National Guard Servicemen’s Day"}},
-        {type: "D", start: {mon: 4, d: 12}, titles: {"en": "Cosmonautics Day", "he": "יום הקוסמונאוטיקה", "ru": "День Космонавтики"}, urls: {"en": "https://nationaltoday.com/cosmonautics-day/"}, emoji: "🚀", first: {era: 1, y: 1962}},
+        {type: "D", start: {mon: 4, d: 12}, titles: {"en": "Cosmonautics Day", "he": "יום הקוסמונאוטיקה", "ru": "День Космонавтики"}, urls: {"en": "https://nationaltoday.com/cosmonautics-day/"}, emoji: "🚀", first: {era: 1, y: 1962}, notes: {"en": "Russian Cosmonaut Day\nCosmonaut Day"}},
         {type: "D", start: {mon: 4, wkd: [1], nth: 2}, titles: {"en": "Soviet Air Defense Forces Day"}},
         {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Russian State Fire Service Day"}},
         {inherits: "Radio Day", type: "D", start: {mon: 5, d: 7}},

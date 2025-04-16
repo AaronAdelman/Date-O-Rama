@@ -1,7 +1,7 @@
 {
     titles: {"*": "NP"},
     "//": "Nepal",
-    "TODO": "Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays",
+    "TODO": "Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.86, green: 0.08, blue: 0.24},

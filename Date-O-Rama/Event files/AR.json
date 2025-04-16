@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {inherits: "Armenian Genocide Remembrance Day", type: "D", start: {mon: 4, d: 24}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2015}},
 
         {type: "D", start: {mon: 6, d: 16}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 8, wkd: [1], nth: 3}, first: {era: 1, y: 2013}},

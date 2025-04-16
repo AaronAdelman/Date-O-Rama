@@ -1,7 +1,7 @@
 {
     titles: {"*": "LK"},
     "//": "Sri Lanka",
-    "TODO": "Muslim, Buddhist, and Hindu holidays",
+    "TODO": "Muslim, Buddhist, and Hindu holidays, Tamil New Year",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
