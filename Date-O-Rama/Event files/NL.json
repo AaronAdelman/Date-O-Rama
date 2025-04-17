@@ -34,7 +34,7 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 9, d: 25}, locations: {"en": "Oosterhout"}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 5, d: 4}, titles: {"en": "Remembrance of the Dead", "nl": "Dodenherdenking", "he": "יום הזיכרון למתים"}, urls: {"en": "https://nationaltoday.com/national-remembrance-day-in-netherlands/"}, first: {era: 1, y: 1945}},
-        {inherits: "Independence Day", type: "D", start: {d: 26, mon: 7}, first: {era: 1, y: 1581}},
+        {inherits: "Independence Day", type: "D", start: {mon: 7, d: 26}, first: {era: 1, y: 1581}},
         {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {type: "D", start: {mon: 9, wkd: [3], nth: 4}, inherits: "National Coffee Day"},
         {inherits: "Black History Month", type: "M", start: {mon: 10}},
