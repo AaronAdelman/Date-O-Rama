@@ -8,7 +8,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 2, wkd: [1], nth: 2}, urls: {"en": "https://nationaltoday.com/mothers-day-norway/"}},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},

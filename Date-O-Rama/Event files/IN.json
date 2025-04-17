@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/india/india-bank-holiday"}, inherits: "Bank Holiday"},
         {type: "D", start: {mon: 4, d: 1}, titles: {"en": "Odisha Day"}, notes: {"en": "Utkal Dibasa"}, urls: {"en": "https://nationaltoday.com/odisha-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 4, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/india/babu-jagjivan-ram-birthday"}, titles: {"en": "Babu Jagjivan Ram’s Birthday"}, inherits: "*BDay*"},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 4, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/mahatma-jyotiba-phule-jayanti"}, titles: {"en": "Mahatma Jyotiba Phule Jayanti"}, inherits: "*BDay*", first: {era: 1, y: 2023}},
@@ -265,6 +265,7 @@
         {type: "D", start: {mon: 4, d: 24}, inherits: "Panchayati Raj Diwas", locations: {"en": "Odisha"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"en": "Chapchar Kut"}, locations: {"en": "Mizoram"}, urls: {"en": "https://www.officeholidays.com/holidays/india/chapchar-kut"}},
         {type: "D", start: {mon: 4, d: 8}, titles: {"en": "Birthday of Sri Guru Nabha Dass Ji"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/india/birthday-of-sri-guru-nabha-dass-ji"}, first: {era: 1, y: 1537}},
+        {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Veer Kunvar Singh Jayanti"}, urls: {"en": "https://www.officeholidays.com/holidays/india/veer-kunvar-singh-jayanti"}, first: {era: 1, y: 1858}},
     ], templates: [
         {template: "Panchayati Raj Diwas", type: "D", start: {mon: 3, d: 5}, titles: {"en": "Panchayati Raj Diwas"}, urls: {"en": "https://www.officeholidays.com/holidays/india/panchayati-raj-diwas"}, locations: {"en": "Odisha"}},
     ]

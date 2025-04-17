@@ -8,10 +8,10 @@
     first: {era: 1, y: 1991},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, titles: {"en": "Prešeren Day", "sl": "Prešernov dan"}, first: {era: 1, y: 1944}},
+        {type: "D", start: {mon: 2, d: 8}, titles: {"en": "Prešeren Day", "sl": "Prešernov dan"}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, first: {era: 1, y: 1944}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/day-of-uprising-against-occupation/"}, titles: {"en": "Day of Uprising Against Occupation", "sl": "dan upora proti okupatorju"}, notes: {"en": "Resistance Day"}},
+        {type: "D", start: {mon: 4, d: 27}, titles: {"en": "Day of Uprising Against Occupation", "sl": "dan upora proti okupatorju"}, urls: {"en": "https://nationaltoday.com/day-of-uprising-against-occupation/"}, notes: {"en": "Resistance Day"}},
         {type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inherits: "Labour Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/statehood-day/"}, inherits: "Statehood Day", first: {era: 1, y: 1991}},

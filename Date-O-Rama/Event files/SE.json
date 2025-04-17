@@ -37,7 +37,7 @@
         {inherits: "3rd Advent Sunday", type: "D", start: {mon: 12, d: 11, thruD: 17, wkd: [1]}},
         {inherits: "4th Advent Sunday", type: "D", start: {mon: 12, d: 18, thruD: 24, wkd: [1]}},
         {inherits: "Children’s Day", type: "D", start: {mon: 10, wkd: [2], nth: 1}},
-        {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/sweden-finns-day/"}, titles: {"en": "Sweden Finns Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},

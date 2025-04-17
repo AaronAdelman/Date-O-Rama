@@ -24,6 +24,6 @@
         
         {type: "D", start: {mon: 6, d: 21}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
     ]
 }

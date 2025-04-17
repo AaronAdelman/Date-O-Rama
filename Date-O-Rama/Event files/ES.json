@@ -75,7 +75,7 @@
         {type: "D", start: {mon: 3, d: 19}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 4, d: 15}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
-        {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {type: "D", start: {mon: 8, d: 1}, titles: {"en": "Albariño Day"}, urls: {"en": "https://www.daysoftheyear.com/days/albarino-day/"}, emoji: "🍷", first: {era: 1, y: 1953}},
         {type: "D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 8, d: 5}, titles: {"en": "Feast of the White Virgin"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en": "Álava"}},

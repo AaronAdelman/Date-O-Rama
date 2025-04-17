@@ -6,7 +6,7 @@
     calendarColor: {red: 0.13, green: 0.25, blue: 0.60},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {inherits: "National Flag Day", type: "D", start: {mon: 4, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},

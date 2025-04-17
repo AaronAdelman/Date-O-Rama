@@ -50,7 +50,7 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {inherits: "International Youth Day", type: "D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
-        {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {inherits: "World Book Day", type: "D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}},
         {inherits: "World No-Tobacco Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 1989}},
         {inherits: "World Refugee Day", type: "D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},

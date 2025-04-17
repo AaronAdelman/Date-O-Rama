@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
         {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},

@@ -96,7 +96,7 @@
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {inherits: "World Environment Day", type: "D", start: {mon: 6, d: 5}, first: {era: 1, y: 1987}},
         {titles: {"en": "International Day for the Fight against Illegal, Unreported and Unregulated Fishing", "he": "היום הבינלאומי למאבק בדיג לא חוקי, לא מדווח ולא מוסדר"}, type: "D", start: {mon: 6, d: 5}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaldaycalendar.com/international-day-for-the-fight-against-illegal-unreported-and-unregulated-fishing-june-5/"}, emoji: "🎣", notes: {"en": "International Day for the Fight against Illegal, Unreported, and Unregulated Fishing"}},
-        {inherits: "Russian Language Day", type: "D", start: {mon: 6, d: 6}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 6, d: 6}, inherits: "Russian Language Day", first: {era: 1, y: 2011}},
         {titles: {"en": "World Food Safety Day", "he": "יום בטיחות המזון העולמי"}, type: "D", start: {mon: 6, d: 7}, first: {era: 1, y: 2020}, urls: {"en": "https://www.daysoftheyear.com/days/world-food-safety-day/"}, emoji: "🥘"},
         {titles: {"en": "World Oceans Day", "he": "יום האוקיינוסים העולמי"}, type: "D", start: {mon: 6, d: 8}, first: {era: 1, y: 1992}, urls: {"en": "https://worldoceanday.org/"}, emoji: "🌊"},
         {titles: {"en": "World Day Against Child Labour", "he": "היום העולמי נגד עבודת ילדים"}, type: "D", start: {mon: 6, d: 12}, first: {era: 1, y: 2002}, urls: {"en": "https://www.ilo.org/topics/child-labour/campaign-and-advocacy-child-labour/world-day-against-child-labour"}, emoji: "🚫"},

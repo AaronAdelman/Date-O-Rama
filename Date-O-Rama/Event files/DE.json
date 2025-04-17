@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 11, wkd: [1], nth: 2}, inherits: "Day of Mourning", urls: {"en": "https://nationaltoday.com/day-of-mourning/"}, notes: {"en": "Memorial Day"}, first: {era: 1, y: 1922}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {inherits: "Holocaust Memorial Day", type: "D", start: {mon: 1, d: 27}, first: {era: 1, y: 2006}},

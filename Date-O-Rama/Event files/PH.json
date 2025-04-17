@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/people-power-anniversary/"}, titles: {"en": "EDSA Revolution Anniversary", "fil": "Anibersaryo ng Rebolusyon sa EDSA"}, first: {era: 1, y: 2019}, notes: {"en": "People Power Revolution"}},
         {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/cebu/cebu-city-charter-day"}, titles: {"en": "Cebu City Charter Day", "fil": "Araw ng Pribilehiyo ng Lungsod ng Cebu"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 3, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/davao/davao-city-day"}, titles: {"en": "Davao City Day", "fil": "Araw ng Dabaw"}, first: {era: 1, y: 1936}},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday", urls: {"en": "https://www.daysoftheyear.com/days/black-saturday/"}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

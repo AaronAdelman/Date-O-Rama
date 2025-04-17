@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
-        {inherits: "Valentine’s Day", type: "D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {inherits: "Veterans Day", type: "D", start: {mon: 4, d: 7}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en": "Iris Festival", "nl": "Irisfeest", "fr": "Fête de l’Iris", "de": "Iris-Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/iris-day/"}, notes: {"en": "Iris Day"}},
         {titles: {"en": "Day of the Flemish Community", "nl": "Feest van de Vlaamse Gemeenschap", "fr": "Fête de la Communauté flamande", "de": "Feiertag der Flämischen Gemeinschaft"}, type: "D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/day-flemish-community/"}, first: {era: 1, y: 1973}, notes: {"en": "Celebration of the Golden Spurs"}},

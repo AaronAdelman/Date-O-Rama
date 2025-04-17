@@ -23,7 +23,7 @@
 
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 4, d: 30}},
         {type: "D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/soviet-occupation-day/"}, titles: {"en": "Soviet Occupation Day"}, first: {era: 1, y: 2010}},

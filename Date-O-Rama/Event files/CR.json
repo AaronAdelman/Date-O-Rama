@@ -10,7 +10,7 @@
         {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
         {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "Anniversary of the Battle of Rivas"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-battle-of-rivas/"}, notes: {"en": "Juan Santamaria Day"}},

@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 12, d: 29}, inherits: "Tree Day", first: {era: 1, y: 1996}, inherits: "National Tree Day"},
 
         {type: "D", start: {mon: 6, d: 21}, inherits: "Father’s Day"},
-        {inherits: "St. Barbara’s Day", type: "D", start: {mon: 12, d: 17}},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 6, d: 25}},
         {inherits: "Assyrian New Year", type: "D", start: {mon: 4, d: 1}},
     ]

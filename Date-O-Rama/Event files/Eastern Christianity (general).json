@@ -22,7 +22,7 @@
         {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
         {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
-        {inherits: "Maundy Thursday", type: "D", start: {Easter:  "Easter", offsetD: -3}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {inherits: "Orthodox Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday", notes: {"en": "Bright Week (day 1)"}, urls: {"en": "https://nationaltoday.com/orthodox-easter-day/"}},
