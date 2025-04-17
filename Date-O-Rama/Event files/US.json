@@ -284,9 +284,9 @@
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "Pascua Florida Day"}, urls: {"en": "https://nationaltoday.com/pascua-florida-day/"}},
         {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Oklahoma Day", "he": "יום אוקלהומה"}, urls: {"en": "https://nationaltoday.com/oklahoma-day/"}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Army Reserves Birthday"}, urls: {"en": "https://nationaltoday.com/army-reserves-birthday/"}},
-        {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/asparagus-day/"}, inherits: "National Asparagus Day"},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "National Asparagus Day", urls: {"en": "https://www.daysoftheyear.com/days/asparagus-day/"}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "East Meets West Day", first: {era: 1, y: 1945}},
-        {type: "D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-drug-take-back-day/"}, titles: {"en": "​National Drug Take Back Day"}},
+        {type: "D", start: {mon: 4, d: 25}, titles: {"en": "​National Drug Take Back Day"}, urls: {"en": "https://nationaltoday.com/national-drug-take-back-day/"}, emoji: "💊"},
         {type: "D", start: {mon: 4, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/dna-day/"}, titles: {"en": "National DNA Day", "he": "יום הדנ״א"}, first: {era: 1, y: 2003}, emoji: "🧬"},
         {type: "D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/confederate-heroes-day/"}, titles: {"en": "Confederate Heroes’ Day"}},
         {type: "D", start: {mon: 4, d: 27}, first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/usa/ohio/ulysses-s-grant-day"}, titles: {"en": "Ulysses S. Grant Day"}},
@@ -651,7 +651,7 @@
             {type: "D", start: {mon: 3, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "National Slam the Scam Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-slam-the-scam-day/"}, emoji: "💻📱", first: {era: 1, y: 2020}},
         ]},
 
-        {type: "M", start: {mon: 4}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-month/"}, titles: {"en": "National Poetry Month"}, first: {era: 1, y: 1996}, emoji: "📝", nonoverlappingSubEvents: [
+        {type: "M", start: {mon: 4}, titles: {"en": "National Poetry Month"}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-month/"}, first: {era: 1, y: 1996}, emoji: "📝", nonoverlappingSubEvents: [
             {type: "D", start: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2002}, end: {era: 1, y: 2024}},
             {type: "D", start: {era: 1, y: 2024, mon: 4, d: 18}, inherits: "Poem in Your Pocket Day"},
             {type: "D", start: {era: 1, y: 2025, mon: 4, d: 10}, inherits: "Poem in Your Pocket Day"},
