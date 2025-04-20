@@ -110,6 +110,8 @@
 		A51C8579282D64A00081A11B /* Buddhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A51C8577282D64A00081A11B /* Buddhism.json */; };
 		A51CFB242D46B50600B37226 /* Objectivism.json in Resources */ = {isa = PBXBuildFile; fileRef = A51CFB232D46B4FB00B37226 /* Objectivism.json */; };
 		A51CFB252D46B50600B37226 /* Objectivism.json in Resources */ = {isa = PBXBuildFile; fileRef = A51CFB232D46B4FB00B37226 /* Objectivism.json */; };
+		A5201CBB2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */ = {isa = PBXBuildFile; fileRef = A5201CB82DB5790600D5D490 /* Winnie the Pooh.json */; };
+		A5201CBC2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */ = {isa = PBXBuildFile; fileRef = A5201CB82DB5790600D5D490 /* Winnie the Pooh.json */; };
 		A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
@@ -1266,6 +1268,7 @@
 		A51A083A245B079A00135AA6 /* ASALocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationCell.swift; sourceTree = "<group>"; };
 		A51C8577282D64A00081A11B /* Buddhism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Buddhism.json; sourceTree = "<group>"; };
 		A51CFB232D46B4FB00B37226 /* Objectivism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Objectivism.json; sourceTree = "<group>"; };
+		A5201CB82DB5790600D5D490 /* Winnie the Pooh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Winnie the Pooh.json"; sourceTree = "<group>"; };
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
 		A523A40325A72889007CB54B /* ASAWatchEventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchEventsList.swift; sourceTree = "<group>"; };
@@ -2241,6 +2244,7 @@
 				A5BC61452709B11800888611 /* Western Christianity (supplemental).json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 				A5FB22D2286390E500B5042B /* WF.json */,
+				A5201CB82DB5790600D5D490 /* Winnie the Pooh.json */,
 				A5F3B01A28563CB000865CEB /* WS.json */,
 				A5746302299C23A600896FC7 /* XK.json */,
 				A54B61B32A9267FA005CC33D /* XK (Julian).json */,
@@ -2933,6 +2937,7 @@
 				A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
 				A5A6405C285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
 				A5E292CF285A58E200925EBD /* LI.json in Resources */,
+				A5201CBC2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5FB22DA2863912500B5042B /* YT.json in Resources */,
 				A5E49654286254AC001BF40C /* NF.json in Resources */,
 				A5E496112862505C001BF40C /* IO.json in Resources */,
@@ -3118,6 +3123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5FB22D02863908600B5042B /* VG.json in Resources */,
+				A5201CBB2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5E495F528624EFE001BF40C /* GP.json in Resources */,
 				A5E495ED28624E9E001BF40C /* GF.json in Resources */,
 				A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,

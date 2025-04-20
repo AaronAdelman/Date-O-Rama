@@ -24,7 +24,7 @@
         {template: "2nd Advent Sunday", titles: {"en": "Second Sunday of Advent"}, notes: {"en": "Second Advent Sunday"}, type: "D", start: {mon: 12, d: 4, thruD: 10, wkd: [1]}, emoji: "🕯"},
         {template: "2nd Sunday of Easter", titles: {"en": "Second Sunday of Easter"}, notes: {"en": "Divine Mercy Sunday"}, type: "D", start: {Easter:  "Easter", offsetD: 7}, urls: {"en": "https://nationaltoday.com/divine-mercy-sunday/"}},
         {template: "3rd Advent Sunday", titles: {"en": "Third Sunday of Advent"}, notes: {"en": "Third Advent Sunday\nGaudete Sunday"}, type: "D", start: {mon: 12, d: 11, thruD: 17, wkd: [1]}, emoji: "🕯"},
-        {template: "420", type: "D", start: {mon: 4, d: 20}, titles: {"en": "420"}, notes: {"en": "4:20\nThis observance promotes drug use and has dubious cultural value."}},
+        {template: "420", type: "D", start: {mon: 4, d: 20}, titles: {"en": "420"}, notes: {"en": "4:20\n420 Day\nThis observance promotes drug use and has dubious cultural value."}},
         {template: "4th Advent Sunday", titles: {"en": "Fourth Sunday of Advent"}, notes: {"en": "Fourth Advent Sunday"}, type: "D", start: {mon: 12, d: 18, thruD: 24, wkd: [1]}, emoji: "🕯"},
         {template: "Abolition Day", type: "D", start: {mon: 5, d: 28}, titles: {"en": "Abolition Day", "fr": "Jour d’abolition"}, notes: {"fr": "Abolition de l’Esclavage"}},
         {template: "Accession Day", type: "D", start: {mon: 12, d: 17}, titles: {"en": "Accession Day", "ar": "يوم الجلوس"}},
