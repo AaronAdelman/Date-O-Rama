@@ -9,7 +9,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States"},
     events: [
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 5, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/us-armed-forces-day/"}, first: {era: 1, y: 1950}, notes: {"en": "Military Appreciation Day\nNational Military Day"}},
+        {type: "D", start: {mon: 5, wkd: [7], nth: 3}, inherits: "Armed Forces Day", urls: {"en": "https://www.daysoftheyear.com/days/us-armed-forces-day/"}, first: {era: 1, y: 1950}, notes: {"en": "Military Appreciation Day\nNational Military Day"}},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 1997}},
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 1951}},
@@ -301,7 +301,7 @@
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Appomattox Day"}, urls: {"en": "https://nationaltoday.com/appomattox-day/"}, notes: {"en": "Confederate Surrender Day"}},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "National Winston Churchill Day"}, urls: {"en": "https://www.daysoftheyear.com/days/winston-churchill-day/"}, first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 4, wkd: [3], nth: 4}, titles: {"en": "School Bus Driver Appreciation Day"}, urls: {"en": "https://nationaltoday.com/school-bus-drivers-day/"}, first: {era: 1, y: 2009}, emoji: "🚌", notes: {"en": "There may be some confusion of this event with School Bus Drivers Day and maybe some confusion on the date."}},
-        {type: "D", start: {mon: 4, wkd: [6], nth: -1}, inherits: "Arbor Day", first: {era: 1, y: 1872}, urls: {"en": "https://www.arborday.org/"}},
+        {type: "D", start: {mon: 4, wkd: [6], nth: -1}, inherits: "Arbor Day", first: {era: 1, y: 1872}, urls: {"en": "https://www.arborday.org/"}, notes: {"en": "National Arbor Day"}},
         {type: "D", start: {mon: 4, wkd: [7], nth: -1}, inherits: "National Prescription Drug Take Back Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "Law Day"}, first: {era: 1, y: 1958}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://www.americanbar.org/groups/public_education/law-day/"}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "National Loyalty Day"}, urls: {"en": "https://nationaldaycalendar.com/national-loyalty-day-may-1/"}, first: {era: 1, y: 1959}},
@@ -633,7 +633,9 @@
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Freedom Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-freedom-day/"}, first: {era: 1, y: 1949}},
         {type: "D", start: {mon: 2, d: 19, thruD: 25, wkd: [5]}, titles: {"en": "Great American Spit Out"}, urls: {"en": "https://www.daysoftheyear.com/days/great-american-spit-out/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1970}},
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "National Women and Girls HIV/AIDS Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-women-and-girls-hiv-aids-awareness-day/"}, inherits: "*MedAwareness*"},
-        {inherits: "Pi Day", type: "D", start: {mon: 3, d: 14}, first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 3, d: 14}, inherits: "Pi Day", first: {era: 1, y: 2009}},
+        {type: "nD", start: {mon: 4, d: 8, thruD: 14, wkd: [1], durationD: 7}, titles: {"en": "Pan American Week"}, first: {era: 1, y: 2017}, emoji: "🌎"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, titles: {"en": "White House Easter Egg Roll"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/white-house-easter-egg-roll/"}, first: {era: 1, y: 1878}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},
@@ -657,8 +659,6 @@
             {type: "D", start: {era: 1, y: 2025, mon: 4, d: 10}, inherits: "Poem in Your Pocket Day"},
             {type: "D", start: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2026}},
         ]},
-
-        {type: "nD", start: {mon: 4, d: 8, thruD: 14, wkd: [1], durationD: 7}, titles: {"en": "Pan American Week"}, first: {era: 1, y: 2017}, emoji: "🌎"},
     ],
     templates: [
         {template: "Confederate Memorial Day", titles: {"en": "Confederate Memorial Day", "fr": "Fête du mémorial des confédérés"}, type: "D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},

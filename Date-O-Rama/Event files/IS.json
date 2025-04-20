@@ -10,7 +10,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 4, d: 19, thruD: 25, wkd: [5]}, titles: {"en": "First Day of Summer", "is": "Sumardagurinn fyrsti"}, urls: {"en": "https://www.officeholidays.com/holidays/iceland/first-day-of-summer"}},
+        {type: "D", start: {mon: 4, d: 19, thruD: 25, wkd: [5]}, titles: {"en": "First Day of Summer", "is": "Sumardagurinn fyrsti"}, urls: {"en": "https://www.daysoftheyear.com/days/the-first-day-of-summer-in-iceland/"}},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/iceland/labour-day"}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/iceland/mothers-day"}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
