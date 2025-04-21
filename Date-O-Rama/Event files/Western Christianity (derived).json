@@ -153,6 +153,7 @@
         {type: "D", start: {mon: 3, d: 17}, titles: {"en": "National Corned Beef and Cabbage Day"}, emoji: "🥩🥬", urls: {"en": "https://www.daysoftheyear.com/days/national-corned-beef-and-cabbage-day/"}, inherits: "St. Patrick’s Day"},
         {type: "D", start: {mon: 3, d: 25}, inherits: "Waffle Day"},
         {type: "D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/cinco-de-marcho/"}, titles: {"en": "Cinco de Marcho"}, first: {era: 1, y: 2007}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, titles: {"en": "National Egg Salad Sandwich Day"}, urls: {"en": "https://www.checkiday.com/8c71416664532d45805f521f2c8ddc8c/national-egg-salad-sandwich-day"}},
         {type: "D", start: {mon: 4, d: 14}, inherits: "Black Day", first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/slay-a-dragon-day/"}, titles: {"en": "Slay a Dragon Day"}},
         {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/national-lovers-day/"}, titles: {"en": "National Lover’s Day"}},

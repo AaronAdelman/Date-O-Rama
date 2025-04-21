@@ -1202,6 +1202,9 @@
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "National Unicorn Day", "he": "יום החד קרן הלאומי"}, emoji: "🦄", urls: {"en": "https://www.daysoftheyear.com/days/unicorn-day/"}},
         {type: "D", start: {mon: 4, wkd: [1], nth: -1}, urls: {"en": "https://nationaltoday.com/national-pet-parents-day/"}, titles: {"en": "National Pet Parents Day"}},
         {type: "D", start: {mon: 4, wkd: [2], nth: 1}, titles: {"en": "Sweet Potato Day"}, urls: {"en": "https://www.checkiday.com/56e003a5d1fbe9c70cf9db850f338c9a/sweet-potato-day"}, notes: {"en": "Tater Day"}},
+        {type: "D", start: {mon: 4, wkd: [2], nth: 3}, inherits: "Boston Marathon Day", first: {era: 1, y: 1969}, end: {era: 1, y: 2019}},
+        {type: "D", start: {era: 1, y: 2021, mon: 10, d: 11}, inherits: "Boston Marathon Day"},
+        {type: "D", start: {mon: 4, wkd: [2], nth: 3}, inherits: "Boston Marathon Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 4, wkd: [3], nth: 1}, titles: {"en": "National Sexual Assault Awareness Month’s Day of Action"}, urls: {"en": "https://nationaltoday.com/national-sexual-assault-awareness-months-day-of-action/"}},
         {type: "D", start: {mon: 4, wkd: [4], nth: -1}, inherits: "Whole Grain Sampling Day", first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 1}, inherits: "A Whole Day for Whole Grain", first: {era: 1, y: 2012}, end: {era: 1, y: 2015}},
@@ -2755,5 +2758,6 @@
         {template: "​National Wildlife Day", type: "D", start: {mon: 9, d: 4}, titles: {"en": "​National Wildlife Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
         {template: "A Whole Day for Whole Grain", type: "D", start: {mon: 4, wkd: [4], nth: 1}, titles: {"en": "A Whole Day for Whole Grain"}, urls: {"en": "https://www.checkiday.com/37f9b0872d527b69abc42966830c7c3c/a-whole-day-for-whole-grain"}, emoji: "🌾"},
         {template: "Whole Grain Sampling Day", type: "D", start: {mon: 3, wkd: [4], nth: -1}, titles: {"en": "Whole Grain Sampling Day"}, urls: {"en": "https://wholegrainscouncil.org/get-involved/spring-whole-grain-academy-session"}},
+        {template: "Boston Marathon Day", type: "D", start: {mon: 4, wkd: [2], nth: 3}, titles: {"en": "Boston Marathon Day"}, urls: {"en": "https://www.checkiday.com/aa5afe57b39737287bd96562368b2e16/boston-marathon-day"}},
     ]
 }
