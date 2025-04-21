@@ -71,5 +71,5 @@ enum ASAClockCellDateEventVisibility: Int, CaseIterable {
         return NSLocalizedString(raw, comment: "")
     } // var text
     
-    static var defaultValue = ASAClockCellDateEventVisibility.oneWeekOrLess
+    static let defaultValue = ASAClockCellDateEventVisibility.oneWeekOrLess
 } // enum ASAClockCellDateEventVisibility
