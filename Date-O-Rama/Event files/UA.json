@@ -55,7 +55,7 @@
         {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day"},
         {inherits: "Feast of the Annunciation", type: "D", start: {mon: 3, d: 25}},
         {titles: {"en": "Day of the Security Service of Ukraine"}, type: "D", start: {"mon": 3, d: 25}},
-        {inherits: "Earth Day", type: "D", start: {mon: 4, d: 22}, first: {era: 1, y: 1970}},
+        {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
         {titles: {"en": "Beginning of the Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War"}, type: "D", start: {"mon": 5, d: 7}, first: {era: 1, y: 2023}},
         {titles: {"en": "Second World War Remembrance Day"}, type: "D", start: {"mon": 5, d: 7}, first: {era: 1, y: 2023}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
