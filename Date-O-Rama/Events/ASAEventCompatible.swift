@@ -73,7 +73,7 @@ extension Array where Element == ASAEventCompatible {
             temp = []
             
         case .all:
-            debugPrint(#file, #function, "Ignore this.")
+            return temp
             
         default:
             let maximumDuration = dateEventVisibility.cutoff
@@ -105,7 +105,7 @@ extension Array where Element == ASAEventCompatible {
             temp = temp.pastOnly(now: now)
             
         case .all:
-            debugPrint(#file, #function, "Ignore this.")
+            return temp
             
         case .nextAndPresent:
             temp = temp.nextAndPresentEvents(now: now)

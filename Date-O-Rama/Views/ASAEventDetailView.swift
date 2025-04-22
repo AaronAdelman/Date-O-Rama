@@ -509,6 +509,8 @@ struct ASAEKParticipantView: View {
                 print("You need to request authorization via the API now.")
         case .authorized:
                 print("You are already authorized.")
+        case .limited:
+            print("⚠️ Authorization status is “limited”.  What does this mean?")
         @unknown default:
             return nil
         } // switch authStatus

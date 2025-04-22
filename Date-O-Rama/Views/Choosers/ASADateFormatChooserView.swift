@@ -48,12 +48,6 @@ struct ASADateFormatChooserView: View {
                 }
             } // Section
         } // List
-//            .navigationBarItems(trailing:
-//                Button("Cancel", action: {
-//                    self.didCancel = true
-//                    self.presentationMode.wrappedValue.dismiss()
-//                })
-//        )
             .onAppear() {
                 self.tempDateFormat = self.clock.dateFormat
                 self.calendarCode        = self.clock.calendar.calendarCode

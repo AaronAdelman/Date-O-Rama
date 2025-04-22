@@ -98,5 +98,5 @@ enum ASAClockCellTimeEventVisibility:  String, CaseIterable {
         } // switch self
     } // var symbolName
     
-    static var defaultValue = ASAClockCellTimeEventVisibility.nextAndPresent
+    static let defaultValue = ASAClockCellTimeEventVisibility.nextAndPresent
 } // enum ASAClockCellTimeEventVisibility

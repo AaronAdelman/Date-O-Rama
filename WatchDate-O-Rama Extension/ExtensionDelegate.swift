@@ -121,10 +121,6 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
                 var locationsWithClocks: Array<ASALocationWithClocks> = self.userData.locationsWithClocksArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                    //                    for i in 0..<key.minimumNumberOfClocks {
-                    //                        let newClock: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
-                    //                        clockArray[i] = newClock
-                    //                    } // for i in 0..<key.minimumNumberOfClocks
                     locationsWithClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(array: valueAsArray, key: key)
                 }
                 userData.setLocationsWithClocksArray(locationsWithClocksArray: locationsWithClocks, key: key)
@@ -159,23 +155,6 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
     
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-//        var activationStateString:  String
-//        switch activationState {
-//        case .notActivated:
-//            activationStateString = "notActivated"
-//
-//        case .inactive:
-//            activationStateString = "inactive"
-//
-//        case .activated:
-//            activationStateString = "activated"
-//        @unknown default:
-//            activationStateString = "unknownDefault"
-//        } // switch
-//        debugPrint("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
-        
-//        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
-        
         requestUserData()
     } // func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)
     

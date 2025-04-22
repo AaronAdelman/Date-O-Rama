@@ -105,7 +105,7 @@ struct ASAComplicationSectionView: View {
             ForEach(locationWithClocks.clocks, id:  \.uuid) {
                 clock
                 in
-                ASAClockCell(processedClock: ASAProcessedClock(clock: clock, now: now, isForComplications: true, location: location, usesDeviceLocation: usesDeviceLocation), now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)
+                ASAClockCell(processedClock: ASAProcessedClock(clock: clock, now: now, isForComplications: true, location: location, usesDeviceLocation: usesDeviceLocation), now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false, clock: clock)
             }
         })
     }

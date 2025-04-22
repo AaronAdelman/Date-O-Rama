@@ -27,24 +27,25 @@ struct ASAClockCell: View {
     var indexIsOdd: Bool
     
     @State var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
-    @State var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
+    
+    @ObservedObject var clock:  ASAClock
     
     var body: some View {
 #if os(watchOS)
-        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, clock: clock)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, clock: clock)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, clock: clock)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
@@ -75,11 +76,12 @@ struct ASAClockCellBody:  View {
     var isForComplications:  Bool
     
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
-    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     
     @State var showingDetailView: Bool = false
     @State var detailType = ASAClockCellBodyDetailType.none
     
+    @ObservedObject var clock:  ASAClock
+        
 #if os(watchOS)
     let compact = true
 #else
@@ -111,32 +113,14 @@ struct ASAClockCellBody:  View {
                     ASAClockCellText(string:  processedClock.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
                     
                     if canSplitTimeFromDate {
-                        //#if os(watchOS)
-                        //                        let LINE_LIMIT = 1
-                        //#else
                         let LINE_LIMIT = 2
-                        //#endif
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                         if shouldShowTime {
-                            HStack {
-                                //                                if processedClock.usesDeviceLocation {
-                                //                                    ASALocationSymbol()
-                                //                                }
-                                
-                                let timeString: String = processedClock.timeString ?? ""
-//                                let string = processedClock.supportsTimeZones ? timeString + " · " + processedClock.timeZoneString : timeString
-//                                ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  2)
-                                ASAClockCellText(string: timeString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
-                            }
+                            let timeString: String = processedClock.timeString ?? ""
+                            ASAClockCellText(string: timeString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                         }
                     } else {
-                        HStack {
-                            //                            if processedClock.usesDeviceLocation {
-                            //                                ASALocationSymbol()
-                            //                            }
-                            
-                            ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
-                        }
+                        ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                     }
                     
 #if os(watchOS)
@@ -175,16 +159,16 @@ struct ASAClockCellBody:  View {
                     }
                     
                     // TODO:  The miniclocks (except for the progress views) crash the app on iPadOS in full-screen, so I disabled them.
-//                    if shouldShowMiniClock() {
-//                        Spacer()
-//                        
-//                        ASAMiniClockView(processedClock:  processedClock, numberFormatter: numberFormatter())
-//                    }
+                    //                    if shouldShowMiniClock() {
+                    //                        Spacer()
+                    //
+                    //                        ASAMiniClockView(processedClock:  processedClock, numberFormatter: numberFormatter())
+                    //                    }
                 }
                 
                 Spacer()
                     .frame(width: 32.0)
-                                
+                
                 if isForComplications {
                     Spacer()
                     
@@ -229,7 +213,7 @@ struct ASAClockCellBody:  View {
                         let numberOfTimeEvents = processedClock.timeEvents.count
                         if numberOfDateEvents > 0 {
                             Menu {
-                                ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
+                                ASAClockAllDayEventVisibilityForEach(eventVisibility: $clock.allDayEventVisibility)
                             } label: {
                                 Text("Show All-Day Events")
                             }
@@ -270,7 +254,7 @@ struct ASAClockCellBody:  View {
 #if os(watchOS)
 #else
             if !isForComplications {
-                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility)
             }
 #endif
         } // VStack
@@ -407,7 +391,7 @@ struct ASAClockEventsForEach:  View {
         let primaryClock: ASAClock = processedClock.clock
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date = processedClock.startOfNextDay
-                
+        
         ForEach(events, id: \.eventIdentifier) {
             event
             in
@@ -427,6 +411,6 @@ struct ASAClockEventsForEach:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true, eventVisibility: .all, clock: ASAClock.generic)
     }
 } // struct ASAClockCell_Previews

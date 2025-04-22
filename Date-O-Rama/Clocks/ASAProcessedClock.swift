@@ -60,6 +60,8 @@ struct ASAProcessedClock {
     var usesDeviceLocation: Bool
     
     var supportsExternalEvents: Bool
+    
+    var allDayEventVisibility: ASAClockCellDateEventVisibility
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
         self.clock = clock
@@ -141,6 +143,8 @@ struct ASAProcessedClock {
         self.timeFormat = clock.timeFormat
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
+        
+        self.allDayEventVisibility = clock.allDayEventVisibility
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
 

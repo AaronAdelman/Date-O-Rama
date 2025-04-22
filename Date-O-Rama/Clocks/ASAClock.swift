@@ -30,13 +30,14 @@ let THOROUGHFARE_KEY: String           = "thoroughfare"
 let SUBTHOROUGHFARE_KEY: String        = "subThoroughfare"
 let TYPE_KEY: String                   = "type"
 
-let UUID_KEY: String                      = "UUID"
-let LOCALE_KEY: String                    = "locale"
-let CALENDAR_KEY: String                  = "calendar"
-let DATE_FORMAT_KEY: String               = "dateFormat"
-let TIME_FORMAT_KEY: String               = "timeFormat"
-let BUILT_IN_EVENT_CALENDARS_KEY: String  = "builtInEventCalendars"
-let ICALENDAR_EVENT_CALENDARS_KEY: String = "iCalendarEventCalendars"
+let UUID_KEY: String                       = "UUID"
+let LOCALE_KEY: String                     = "locale"
+let CALENDAR_KEY: String                   = "calendar"
+let DATE_FORMAT_KEY: String                = "dateFormat"
+let TIME_FORMAT_KEY: String                = "timeFormat"
+let BUILT_IN_EVENT_CALENDARS_KEY: String   = "builtInEventCalendars"
+let ICALENDAR_EVENT_CALENDARS_KEY: String  = "iCalendarEventCalendars"
+let CELL_DATE_EVENT_VISIBILITY_KEY: String = "cellDateEventVisibility"
 
 
 // MARK:  -
@@ -135,6 +136,14 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         } // didSet
     } // var iCalendarEventCalendars
     
+    @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue {
+        didSet {
+            DispatchQueue.main.async {
+                ASAUserData.shared.savePreferences(code: .clocks)
+            }
+        }
+    }
+    
 
     // MARK:  -
 
@@ -170,7 +179,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             TIME_FORMAT_KEY:  timeFormat.rawValue ,
             TIME_ZONE_KEY:  location.timeZone.identifier,
             BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
-            USES_DEVICE_LOCATION_KEY:  usesDeviceLocation
+            USES_DEVICE_LOCATION_KEY:  usesDeviceLocation,
+            CELL_DATE_EVENT_VISIBILITY_KEY:  allDayEventVisibility.rawValue
         ] as [String : Any]
 
         if self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && !forComplication {
@@ -283,6 +293,11 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if newClock.calendar.usesISOTime {
             let iCalendarEventCalendarsTitles = dictionary[ICALENDAR_EVENT_CALENDARS_KEY] as? Array<String>
             newClock.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
+        }
+        
+        let rawEventVisibility = dictionary[CELL_DATE_EVENT_VISIBILITY_KEY] as? Int
+        if rawEventVisibility != nil {
+            newClock.allDayEventVisibility = ASAClockCellDateEventVisibility(rawValue: rawEventVisibility!) ?? .defaultValue
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
@@ -433,11 +448,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             return nil
         }
     } // func weekendDays(location: ASALocation) -> Array<Int>?
-    
-//    var workDays: Array<Int> {
-//        return self.calendar.workDays
-//    }
-    
+        
     var daysPerWeek: Int? {
         if self.calendar is ASACalendarSupportingWeeks {
             let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks

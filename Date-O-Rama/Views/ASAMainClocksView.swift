@@ -240,7 +240,7 @@ struct ASAMainClocksSectionView: View {
                     let shouldShowMiniCalendar = true
                     let indexIsOdd             = index % 2 == 1
 #endif
-                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock)
                 }
             }
             //            .onDelete(perform: onDelete)
@@ -248,15 +248,6 @@ struct ASAMainClocksSectionView: View {
         }
         .textCase(nil)
     }
-    
-//    private func onDelete(offsets: IndexSet) {
-//        let relevantUUID = self.locationWithClocks.location.id
-//        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
-//        if relevantLocationWithClocksIndex != nil {
-//            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.remove(atOffsets: offsets)
-//            ASAUserData.shared.savePreferences(code: .clocks)
-//        }
-//    }
     
     @MainActor private func onMove(source: IndexSet, destination: Int) {
         let relevantUUID = self.locationWithClocks.location.id
