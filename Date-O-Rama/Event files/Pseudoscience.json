@@ -1,0 +1,25 @@
+{
+    titles: {"en": "Pseudoscience", "he": "פסאודו־מדע"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.60, green: 0.20, blue: 0.26},
+    events: [
+        {type: "D", start: {equinoxOrSolstice: "Mar"}, titles: {"en": "International Astrology Day"}, first: {era: 1, y: 1993}, notes: {"en": "This observance promotes pseudoscience."}},
+        {type: "D", start: {mon: 10, d: 16}, titles: {"en": "World Spine Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.skepdic.com/chiro.html"}, notes: {"en": "This observance promotes pseudoscience which can result in damage to one’s neck."}},
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "World Sound Healing Day"}, notes: {"en": "This observance promotes pseudoscientific nonsense about sound, meditation, and “healing”."}},
+        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Alien Abduction Day"}, notes: {"en": "Extraterrestrial Abduction Day\nAnother day dedicated to pseudoscience and fringe ideas."}, first: {era: 1, y: 2008}, urls: {"en": "https://skepdic.com/aliens.html"}},
+        {type: "D", start: {mon: 4, d: 1}, titles: {"en": "Harmonize Your Health Day"}, notes: {"en": "This observance is tied to pseudoscientific wellness claims and geared to sell quackery products."}, urls: {"en": "https://skepdic.com/ayurvedic.html"}},
+        {type: "D", start: {mon: 4, d: 8}, titles: {"en": "International Feng Shui Awareness Day"}, urls: {"en": "https://skepdic.com/fengshui.html"}, notes: {"en": "This observance promotes pseudoscientific nonsense."}, first: {era: 1, y: 1999}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: -1}, titles: {"en": "World Healing Day"}, notes: {"en": "This observance was created to promote pseudoscientific nonsense."}, urls: {"en": "https://skepdic.com/althelth.html"}, first: {era: 1, y: 2004}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: -1}, titles: {"en": "World Tai Chi and Qigong Day"}, notes: {"en": "WTCQD\nWorld T’ai Chi and Ch’i Kung Day\nThis observance was created to promote pseudoscientific nonsense."}, urls: {"en": "https://skepdic.com/chikung.html"}, first: {era: 1, y: 1999}},
+        {type: "D", start: {mon: 5, d: 1}, titles: {"en": "Therapeutic Massage Awareness Day"}, notes: {"en": "This observance promotes pseudoscience."}, urls: {"en": "https://skepdic.com/massage.html"}, first: {era: 1, y: 2014}},
+        {type: "D", start: {mon: 5, d: 21}, titles: {"en": "World Meditation Day"}, notes: {"en": "While meditation can be calming, the founder, Will Williams, promotes Transcendental Meditation, a pseudoscientific movement.  Be careful!"}, urls: {"en": "https://skepdic.com/tm.html"}},
+        {type: "D", start: {mon: 7, d: 11}, titles: {"en": "International Essential Oils Day"}, notes: {"en": "IEOD\nPromotes pseudoscience and questionable health claims."}, first: {era: 1, y: 2018}, urls: {"en": "https://skepdic.com/aroma.html"}},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Psychic Day"}, notes: {"en": "This observance promotes pseudoscientific nonsense."}, first: {era: 1, y: 2021}, urls: {"en": "https://skepdic.com/psychic.html"}},
+        {type: "M", start: {mon: 3}, titles: {"en": "Color Therapy Month"}, notes: {"en": "This observance promotes pseudoscience."}, first: {era: 1, y: 2011}},
+        {type: "W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "World Reflexology Week"}, urls: {"en": "https://skepdic.com/reflex.html"}, first: {era: 1, y: 1999}, notes: {"en": "This observance promotes pseudoscientific nonsense."}},
+        {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Paranormal Day"}, notes: {"en": "Promotes pseudoscience and fringe beliefs."}, first: {era: 1, y: 2013}, urls: {"en": "https://skepdic.com/paranormal.html"}},
+        {type: "D", start: {mon: 7, d: 26}, titles: {"en": "Holistic Therapy Day"}, notes: {"en": "Promotes pseudoscientific practices."}, urls: {"en": "https://skepdic.com/holistic.html"}},
+        {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Holistic Pet Day"}, notes: {"en": "Promotes pseudoscience for pet care."}, urls: {"en": "https://skepdic.com/holistic.html"}},
+    ]
+}
