@@ -11,7 +11,8 @@ import SwiftUI
 struct ASAWatchEventsList: View {
     var processedClock:  ASAProcessedClock
     @State var eventVisibility:  ASAClockCellTimeEventVisibility = .defaultValue
-    @State var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
+//    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
+    @ObservedObject var clock:  ASAClock
     @State var now:  Date
 
     var body: some View {
@@ -27,7 +28,7 @@ struct ASAWatchEventsList: View {
                 } // ForEach
             }
             
-            Picker(selection: $allDayEventVisibility, label: Text("Show All-Day Events")) {
+            Picker(selection: $clock.allDayEventVisibility, label: Text("Show All-Day Events")) {
                 ForEach(ASAClockCellDateEventVisibility.allCases, id: \.self) {
                     possibility
                     in
@@ -39,7 +40,7 @@ struct ASAWatchEventsList: View {
             }
             let numberOfDateEvents: Int = processedClock.dateEvents.count
             if numberOfDateEvents > 0 {
-                let dateEvents = processedClock.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+                let dateEvents = processedClock.dateEvents.trimmed(dateEventVisibility: clock.allDayEventVisibility, now: now)
                 ASAClockEventsForEach(processedClock: processedClock, events: dateEvents, now: $now)
             }
             let numberOfTimeEvents: Int = processedClock.timeEvents.count

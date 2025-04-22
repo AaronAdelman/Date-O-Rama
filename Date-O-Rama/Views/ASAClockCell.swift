@@ -146,7 +146,7 @@ struct ASAClockCellBody:  View {
                 
 #if os(watchOS)
                 if processedClock.dateEvents.count > 0 || processedClock.timeEvents.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, now: now)) {
+                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: eventVisibility, clock: clock, now: now)) {
                         ASACompactForwardChevronSymbol()
                     }
                 }
