@@ -1105,7 +1105,7 @@
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National Email Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-email-day/"}, first: {era: 1, y: 2022}, emoji: "📧"},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National English Muffin Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-english-muffin-day/"}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National Take a Chance Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-a-chance-day/"}},
-        {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Pig in a Blanket Day", "he": "יום משה בתיבה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pig-in-a-blanket-day/"}, notes: {"en": "National Pigs in a Blanket Day"}},
+        {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Pig in a Blanket Day", "he": "יום משה בתיבה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pig-in-a-blanket-day/"}, notes: {"en": "National Pigs in a Blanket Day\nNational Pigs-in-a-Blanket Day"}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Skipping Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-skipping-day/"}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "National Hairstylist Appreciation Day"},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "National Financial Awareness Day", "he": "יום המודעות הפיננסית הלאומי"}, notes: {"en": "Financial Independence Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/financial-independence-awareness-day/"}, first: {era: 1, y: 2019}, emoji: "💵🪙"},
