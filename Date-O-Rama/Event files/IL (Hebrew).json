@@ -31,6 +31,7 @@
         {inherits: "Independence Day", titles: {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, type: "D", start: {mon: 9, d: 3, thruD: 4, wkd: [5]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {titles: {"he": "יום הרצל", "en": "Herṣel Day"}, type: "D", start: {mon: 9, d: 10, wkd: [1, 2, 3, 4, 5, 6]}},
         {titles: {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, type: "D", start: {mon: 9, d: 11, wkd: [1]}},
+        {titles: {"he": "יום פטירת הרצל", "en": "Herṣel’s Death Day"}, type: "D", start: {mon: 11, d: 20}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום ירושלים", "en": "Yerushalayim Day"}, type: "D", start: {mon: 9, d: 28
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {titles: {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, type: "D", start: {mon: 9, d: 29, wkd: [2]
