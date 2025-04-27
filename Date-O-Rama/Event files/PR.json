@@ -40,6 +40,6 @@
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
         {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
         {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},
-        {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
+        {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
     ]
 }

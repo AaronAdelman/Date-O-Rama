@@ -255,7 +255,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
         {inherits: "Feast of St. John the Apostle", type: "D", start: {mon: 12, d: 27}},
-        {inherits: "Holy Innocents Day", type: "D", start: {mon: 12, d: 28}},
+        {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
         {inherits: "Feast of St. Thomas Becket", type: "D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inherits: "Feast of St. Egwin of Worcester", type: "D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
