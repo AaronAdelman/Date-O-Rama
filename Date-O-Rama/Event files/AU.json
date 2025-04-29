@@ -12,7 +12,7 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 8, d: 4}, titles: {"en": "National Aboriginal and Torres Strait Islander Children’s Day"}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {inherits: "Commonwealth Day", type: "D", start: {mon: 3, wkd: [2], nth: 2}, first: {era: 1, y: 1958}},
+        {type: "D", start: {mon: 3, wkd: [2], nth: 2}, inherits: "Commonwealth Day", first: {era: 1, y: 1958}},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {inherits: "Easter Tuesday", type: "D", start: {Easter:  "Easter", offsetD: 2}},

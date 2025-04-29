@@ -359,8 +359,8 @@
 		A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */; };
 		A5987C4F2A083337008A9E90 /* Theosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = A5987C4E2A083337008A9E90 /* Theosophy.json */; };
 		A5987C502A083338008A9E90 /* Theosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = A5987C4E2A083337008A9E90 /* Theosophy.json */; };
-		A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */; };
-		A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */; };
+		A599FEED269AD0CF00DB3124 /* Judaism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (supplemental).json */; };
+		A599FEEE269AD0CF00DB3124 /* Judaism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (supplemental).json */; };
 		A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
@@ -1394,7 +1394,7 @@
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
 		A5987C4E2A083337008A9E90 /* Theosophy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Theosophy.json; sourceTree = "<group>"; };
-		A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (Gregorian).json"; sourceTree = "<group>"; };
+		A599FEEC269AD0CF00DB3124 /* Judaism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (supplemental).json"; sourceTree = "<group>"; };
 		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
@@ -2034,8 +2034,8 @@
 				A5EE2FA02815DB9800B6E81E /* JP.json */,
 				A5E3606324C71FBC0000A268 /* Judaism.json */,
 				A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */,
-				A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */,
 				A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */,
+				A599FEEC269AD0CF00DB3124 /* Judaism (supplemental).json */,
 				A584C8FF24B646210014CE2E /* Judaism (times).json */,
 				A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */,
 				A5EFFF6F285B7B1300F2205F /* KE.json */,
@@ -3029,7 +3029,7 @@
 				A5F3B01C28563CB000865CEB /* WS.json in Resources */,
 				A5EFFF45285B5CE800F2205F /* CY.json in Resources */,
 				A5EB4F962850EFC700A32FB1 /* RO.json in Resources */,
-				A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
+				A599FEEE269AD0CF00DB3124 /* Judaism (supplemental).json in Resources */,
 				A5FB22CB2863903600B5042B /* UM.json in Resources */,
 				A529D3532A1514B1004D8799 /* Wellcat.json in Resources */,
 				A5E495FC28624EFE001BF40C /* GM.json in Resources */,
@@ -3131,7 +3131,7 @@
 				A5201CBB2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5E495F528624EFE001BF40C /* GP.json in Resources */,
 				A5E495ED28624E9E001BF40C /* GF.json in Resources */,
-				A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
+				A599FEED269AD0CF00DB3124 /* Judaism (supplemental).json in Resources */,
 				A5759147282BE36500675058 /* SE.json in Resources */,
 				A502D3E228637E2800A625A9 /* RE.json in Resources */,
 				A5EB4F922850EF0B00A32FB1 /* RS.json in Resources */,

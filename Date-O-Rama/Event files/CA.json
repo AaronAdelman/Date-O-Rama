@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", titles: {"en": "National Child Day", "he": "יום הילד הלאומי"}, urls: {"en": "https://www.nationalchildday.ca/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {inherits: "Commonwealth Day", type: "D", start: {mon: 3, wkd: [2], nth: 2}, first: {era: 1, y: 1958}},
+        {type: "D", start: {mon: 3, wkd: [2], nth: 2}, inherits: "Commonwealth Day", first: {era: 1, y: 1958}},
         {inherits: "Discovery Day", type: "D", start: {mon: 8, wkd: [2], nth: 3}, locations: {"en": "Yukon"}, urls: {"en": "https://nationaltoday.com/discovery-day/"}, first: {era: 1, y: 1911}},
         {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
