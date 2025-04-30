@@ -9,9 +9,22 @@
 import Foundation
 
 public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingEras, ASACalendarSupportingEaster {
+    public let BCE = 0
+    public let CE  = 1
+    
     func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
+        switch era {
+        case BCE:
+            return nil
+            
+        case CE:
             return JulianCalculateEaster(year: year)
+            
+        default:
+            return nil
+        } // switch era
     }
+
     
     init() {
         self.calendarCode = .Julian
