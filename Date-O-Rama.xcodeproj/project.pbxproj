@@ -352,6 +352,9 @@
 		A58F39F72DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
 		A58F39F82DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
 		A58F39F92DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
+		A58F39FB2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarSupportingEaster.swift */; };
+		A58F39FC2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarSupportingEaster.swift */; };
+		A58F39FD2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarSupportingEaster.swift */; };
 		A59125E12A3F270F000497D7 /* AF (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125E02A3F270F000497D7 /* AF (Muslim).json */; };
 		A59125E22A3F270F000497D7 /* AF (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125E02A3F270F000497D7 /* AF (Muslim).json */; };
 		A59125FE2A419144000497D7 /* AZ (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125FD2A419143000497D7 /* AZ (Muslim).json */; };
@@ -1393,6 +1396,7 @@
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A58CB7262DB77FFB00A724D5 /* Pseudoscience.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pseudoscience.json; sourceTree = "<group>"; };
 		A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGregorianCalendar.swift; sourceTree = "<group>"; };
+		A58F39FA2DC27E1400F2D8E2 /* ASACalendarSupportingEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingEaster.swift; sourceTree = "<group>"; };
 		A59125E02A3F270F000497D7 /* AF (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AF (Muslim).json"; sourceTree = "<group>"; };
 		A59125FD2A419143000497D7 /* AZ (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AZ (Muslim).json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
@@ -2417,6 +2421,7 @@
 				A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */,
 				A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */,
 				A5A6FD4C27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift */,
+				A58F39FA2DC27E1400F2D8E2 /* ASACalendarSupportingEaster.swift */,
 				A5D135C027C545AE00A1A525 /* ASACalendarSupportingEras.swift */,
 				A5D135B827C41C2200A1A525 /* ASACalendarSupportingMonths.swift */,
 				A5D135BC27C537C500A1A525 /* ASACalendarSupportingQuarters.swift */,
@@ -3577,6 +3582,7 @@
 				A53B50CA2C5BFEEF003FA2D4 /* ASADateFunctions.swift in Sources */,
 				A5BDE7B02667FBFE00F47416 /* DictionaryExtensions.swift in Sources */,
 				A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */,
+				A58F39FD2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */,
 				A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */,
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
@@ -3743,6 +3749,7 @@
 				A5DC8EBE2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5BDE7AF2667FBFE00F47416 /* DictionaryExtensions.swift in Sources */,
+				A58F39FC2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */,
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
 				A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */,
 				A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */,
@@ -3823,6 +3830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58F39FB2DC27E1500F2D8E2 /* ASACalendarSupportingEaster.swift in Sources */,
 				A505E6DB27903D7F00D09A74 /* ASAMoonPhaseType.swift in Sources */,
 				A557AD1525DD495400A264B6 /* IntExtensions.swift in Sources */,
 				A59D805D2600C6F900FD8BBF /* ASAEvent.swift in Sources */,

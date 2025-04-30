@@ -8,7 +8,11 @@
 
 import Foundation
 
-public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingEras {
+public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingEras, ASACalendarSupportingEaster {
+    func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
+            return JulianCalculateEaster(year: year)
+    }
+    
     init() {
         self.calendarCode = .Julian
     } // init(calendarCode:  ASACalendarCode)

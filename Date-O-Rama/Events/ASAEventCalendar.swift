@@ -496,22 +496,39 @@ class ASAEventCalendar {
     } // func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> ASAMatchResult
     
     func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> ASAMatchResult {
-        var forGregorianCalendar: Bool
-        switch calendar.calendarCode {
-        case .Gregorian:
-            forGregorianCalendar = true
+        if calendar is ASACalendarSupportingEaster {
             
-        case .Julian:
-            forGregorianCalendar = false
-            
-        default:
-            return MATCH_FAILURE // Calculating the date of Easter is currently irrelevant for other calendars
-        } // switch calendar.calendarCode
-        
-        guard let componentsYear = components.year else {
+        } else {
             return MATCH_FAILURE
         }
-        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
+        
+//        var forGregorianCalendar: Bool
+//        switch calendar.calendarCode {
+//        case .Gregorian:
+//            forGregorianCalendar = true
+//            
+//        case .Julian:
+//            forGregorianCalendar = false
+//            
+//        default:
+//            return MATCH_FAILURE // Calculating the date of Easter is currently irrelevant for other calendars
+//        } // switch calendar.calendarCode
+        
+        guard let componentsEra = components.era else {
+            return MATCH_FAILURE
+        }
+        
+        guard let componentsYear = components.year else {
+                return MATCH_FAILURE
+            }
+            
+//        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
+            let easterStuff = (calendar as! ASACalendarSupportingEaster).calculateEaster(era: componentsEra, year: componentsYear)
+        if easterStuff == nil {
+            return MATCH_FAILURE
+        }
+        let (EasterMonth, EasterDay) = (easterStuff!.0, easterStuff!.1)
+        
         guard let componentsMonth = components.month else {
             return MATCH_FAILURE
         }

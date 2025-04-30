@@ -8,7 +8,23 @@
 
 import Foundation
 
-class ASAGregorianCalendar: ASAAppleCalendar {
+class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarSupportingEaster {
+    public let BCE = 0
+    public let CE  = 1
+    
+    func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
+        switch era {
+        case BCE:
+            return nil
+            
+        case CE:
+            return GregorianCalculateEaster(year: year)
+            
+        default:
+            return nil
+        } // switch era
+    }
+    
     init() {
         super.init(calendarCode: .Gregorian)
     } // init(calendarCode:  ASACalendarCode)
