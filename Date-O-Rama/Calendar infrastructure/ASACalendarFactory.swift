@@ -22,7 +22,9 @@ class ASACalendarFactory {
         
         assert(!revisedCode.isAbstract)
         
-        if revisedCode.isAppleCalendar {
+        if revisedCode == .Gregorian {
+            return ASAGregorianCalendar()
+        } else if revisedCode.isAppleCalendar {
             return ASAAppleCalendar(calendarCode:  revisedCode)
         } else if revisedCode.isJulianDayCalendar {
             return ASAJulianDayCalendar(calendarCode:  revisedCode)

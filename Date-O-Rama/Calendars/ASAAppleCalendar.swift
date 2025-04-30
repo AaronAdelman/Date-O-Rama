@@ -102,61 +102,29 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     var supportsTimes: Bool = true
     
     var supportedDateFormats: Array<ASADateFormat> {
-        if self.calendarCode == .Gregorian {
-            return [
-                .full,
-                .ISO8601YearMonthDay,
-                .ISO8601YearWeekDay,
-                .ISO8601YearDay
-            ]
-        } else {
-            return [
-                .full
-            ]
-        }
+        return [
+            .full
+        ]
     }
 
     var supportedWatchDateFormats: Array<ASADateFormat> {
-        if self.calendarCode == .Gregorian {
-            return [
-                .full,
-                .ISO8601YearMonthDay,
-                .ISO8601YearWeekDay,
-                .ISO8601YearDay,
-                .long,
-                .medium,
-                .mediumWithWeekday,
-                .short,
-                .shortWithWeekday,
-                .abbreviatedWeekday,
-                .dayOfMonth,
-                .abbreviatedWeekdayWithDayOfMonth,
-                .shortWithWeekdayWithoutYear,
-                .mediumWithWeekdayWithoutYear,
-                .fullWithoutYear,
-                .longWithoutYear,
-                .mediumWithoutYear,
-                .shortWithoutYear
-            ]
-        } else {
-            return [
-                .full,
-                .long,
-                .medium,
-                .mediumWithWeekday,
-                .short,
-                .shortWithWeekday,
-                .abbreviatedWeekday,
-                .dayOfMonth,
-                .abbreviatedWeekdayWithDayOfMonth,
-                .shortWithWeekdayWithoutYear,
-                .mediumWithWeekdayWithoutYear,
-                .fullWithoutYear,
-                .longWithoutYear,
-                .mediumWithoutYear,
-                .shortWithoutYear
-            ]
-        }
+        return [
+            .full,
+            .long,
+            .medium,
+            .mediumWithWeekday,
+            .short,
+            .shortWithWeekday,
+            .abbreviatedWeekday,
+            .dayOfMonth,
+            .abbreviatedWeekdayWithDayOfMonth,
+            .shortWithWeekdayWithoutYear,
+            .mediumWithWeekdayWithoutYear,
+            .fullWithoutYear,
+            .longWithoutYear,
+            .mediumWithoutYear,
+            .shortWithoutYear
+        ]
     }
     
     var supportedTimeFormats: Array<ASATimeFormat> = [
@@ -166,6 +134,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     var canSplitTimeFromDate:  Bool = true
     
     var defaultTimeFormat:  ASATimeFormat = .medium
+    
     
     // MARK: - Date components
     
