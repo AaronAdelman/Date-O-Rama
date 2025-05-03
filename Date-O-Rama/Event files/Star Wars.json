@@ -5,7 +5,7 @@
     calendarColor: {red: 0.6, green: 0.6, blue: 0.6},
     events: [
         {type: "D", start: {mon: 11, d: 17}, titles: {"en": "Life Day"}, urls: {"en": "https://starwars.fandom.com/wiki/Life_Day"}, first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Star Wars Day", "he": "יום מלחמת הכוכבים"}, urls: {"en": "https://www.starwars.com/star-wars-day"}, emoji: "🪐", first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Star Wars Day", "he": "יום מלחמת הכוכבים"}, urls: {"en": "https://www.starwars.com/star-wars-day"}, emoji: "🪐", first: {era: 1, y: 2001}, notes: {"en": "National Star Wars Day\nMay the Fourth Be With You"}},
         {type: "D", start: {mon: 5, d: 5}, titles: {"en": "Revenge of the Fifth"}, first: {era: 1, y: 2011}, urls: {"en": "https://revengeofthe5th.com/"}, emoji: "🪐"},
         {type: "D", start: {mon: 5, d: 6}, titles: {"en": "Revenge of the Sixth"}, urls: {"en": "https://en.wiktionary.org/wiki/Revenge_of_the_Sixth"}, emoji: "🪐"},
     ]
