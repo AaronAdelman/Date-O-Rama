@@ -1,0 +1,17 @@
+{
+    titles: {"en": "Western planetary days", "he": "ימי כוכבי־לכת מערביות"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
+    events: [
+        {type: "nD", start: {}, nonoverlappingSubEvents: [
+            {titles: {"en": "Day of the Sun", "he": "יום השמש"}, type: "D", start: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of the Moon", "he": "יום הירח"}, type: "D", start: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of Mars", "he": "יום מאדין"}, type: "D", start: {wkd: [3]}, inherits: "*zma*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of Mercury", "he": "יום כוכב"}, type: "D", start: {wkd: [4]}, inherits: "*zme*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of Jupiter", "he": "יום צדק"}, type: "D", start: {wkd: [5]}, inherits: "*zju*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of Venus", "he": "יום נוגה"}, type: "D", start: {wkd: [6]}, inherits: "*zve*", inherits: "*Astrology*"},
+            {titles: {"en": "Day of Saturn", "he": "יום שבתי"}, type: "D", start: {wkd: [7]}, inherits: "*zsa*", inherits: "*Astrology*"},
+        ]},
+    ]
+}
