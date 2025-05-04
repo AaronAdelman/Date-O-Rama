@@ -251,7 +251,7 @@
         {type: "nD", start: {mon: 5, d: 29}, end: {mon: 6, d: 4}, titles: {"en": "National BBQ Week"}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, emoji: "🍖"},
         {type: "nD", start: {mon: 5, d: 31}, end: {mon: 6, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/garden-wildlife-week/"}, titles: {"en": "Garden Wildlife Week"}, emoji: "🪴"},
         {type: "nD", start: {mon: 5, d: 8, thruD: 14, wkd: [7], durationD: 2}, titles: {"en": "National Mills Weekend"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mills-weekend/"}, first: {era: 1, y: 1984}},
-        {type: "nD", start: {mon: 5, d: 9, thruD: 15, wkd: [2], durationD: 14}, titles: {"en": "Foster Care Fortnight"}, urls: {"en": "https://www.daysoftheyear.com/days/foster-care-fortnight/"}},
+        {type: "nD", start: {mon: 5, d: 9, thruD: 15, wkd: [2], durationD: 14}, titles: {"en": "Foster Care Fortnight"}, urls: {"en": "https://www.thefosteringnetwork.org.uk/get-involved/foster-care-fortnight"}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/rspca-week/"}, titles: {"en": "RSPCA Week"}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/volunteers-week/"}, titles: {"en": "Volunteers’ Week"}},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/oxfam-water-week/"}, titles: {"en": "Oxfam Water Week"}, emoji: "💦"},

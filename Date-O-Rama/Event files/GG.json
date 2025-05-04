@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {type: "D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/guernsey-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 1945}, locations: {"en": "Sark"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Liberation Day", urls: {"en": "https://www.daysoftheyear.com/days/guernsey-liberation-day/"}, first: {era: 1, y: 1945}},
        {type: "D", start: {mon: 8, wkd: [2], nth: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Alderney"}},
        {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Homecoming Day"}, locations: {"en": "Alderney"}},
 
