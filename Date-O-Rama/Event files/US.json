@@ -330,7 +330,6 @@
         {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-missing-childrens-day/"}, titles: {"en": "National Missing Children’s Day"}, first: {era: 1, y: 1983}, emoji: "👦👧"},
         {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/tap-dance-day/"}, titles: {"en": "National Tap Dance Day", "he": "יום הסטפס"}, first: {era: 1, y: 1989}, emoji: "👞"},
         {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/julia-pierpont-day/"}, titles: {"en": "Julia Pierpont Day"}},
-        {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [4]}, titles: {"en": "Bike & Roll to School Day"}, urls: {"en": "https://www.walkbiketoschool.org/"}, first: {era: 1, y: 2012}, notes: {"en": "There seems to be some disagreement on when this event is."}},
         {type: "D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/sun-day/"}, titles: {"en": "Sun Day"}, notes: {"en": "International Sun Day"}, first: {era: 1, y: 1978}, emoji: "☉"},
         {type: "D", start: {mon: 5, d: 4, thruD: 10, wkd: [4]}, urls: {"en": "https://nationaltoday.com/occupational-safety-and-health-professional-day/"}, titles: {"en": "Occupational Safety and Health Professional Day"}, first: {era: 1, y: 2006}},
@@ -640,6 +639,7 @@
         {type: "D", start: {mon: 3, d: 14}, inherits: "Pi Day", first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 4, d: 8, thruD: 14, wkd: [1], durationD: 7}, titles: {"en": "Pan American Week"}, first: {era: 1, y: 2017}, emoji: "🌎"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, titles: {"en": "White House Easter Egg Roll"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/white-house-easter-egg-roll/"}, first: {era: 1, y: 1878}},
+        {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "Air Quality Awareness Week"}, urls: {"en": "https://www.epa.gov/air-quality/air-quality-awareness-week"}, first: {era: 1, y: 1999}, emoji: "⚘"},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},
@@ -662,6 +662,10 @@
             {type: "D", start: {era: 1, y: 2024, mon: 4, d: 18}, inherits: "Poem in Your Pocket Day"},
             {type: "D", start: {era: 1, y: 2025, mon: 4, d: 10}, inherits: "Poem in Your Pocket Day"},
             {type: "D", start: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2026}},
+        ]},
+        
+        {type: "nD", start: {mon: 5, d: 2, thruD: 8, wkd: [2], durationD: 5}, titles: {"en": "Teacher Appreciation Week"}, notes: {"en": "National Teacher Appreciation Week"}, urls: {"en": "https://www.nea.org/TAW"}, first: {era: 1, y: 1980}, emoji: "👨‍🏫👩‍🏫", nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", first: {era: 1, y: 1985}, emoji: "👨‍🏫👩‍🏫"},
         ]},
     ],
     templates: [

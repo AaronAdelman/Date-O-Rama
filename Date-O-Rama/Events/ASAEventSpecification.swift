@@ -225,7 +225,8 @@ extension ASAEventSpecification {
     }
     
     fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification? {
-        if eventSpecification.inherits == nil || ASAEventSpecification.templateEventsFile == nil {
+        let inherits: String? = eventSpecification.inherits
+        if inherits == nil || ASAEventSpecification.templateEventsFile == nil {
             return nil
         }
         
@@ -242,6 +243,10 @@ extension ASAEventSpecification {
         
         if template != nil {
             return template!.filledIn(eventsFileTemplates: eventsFileTemplates)
+        }
+        
+        if inherits != nil && template == nil {
+            debugPrint(#file, #function, "Template “\(inherits!)” not found!")
         }
         
         return nil
