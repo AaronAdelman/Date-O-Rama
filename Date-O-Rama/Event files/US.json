@@ -639,6 +639,8 @@
         {type: "nD", start: {mon: 4, d: 8, thruD: 14, wkd: [1], durationD: 7}, titles: {"en": "Pan American Week"}, first: {era: 1, y: 2017}, emoji: "🌎"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, titles: {"en": "White House Easter Egg Roll"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/white-house-easter-egg-roll/"}, first: {era: 1, y: 1878}},
         {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "Air Quality Awareness Week"}, urls: {"en": "https://www.epa.gov/air-quality/air-quality-awareness-week"}, first: {era: 1, y: 1999}, emoji: "⚘"},
+        {type: "D", start: {era: 1, y: 1980, mon: 3, d: 7}, inherits: "National Teacher Day"},
+        {type: "D", start: {mon: 3, wkd: [3], nth: 1}, inherits: "National Teacher Day", first: {era: 1, y: 1981}, last: {era: 1, y: 1984}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},
@@ -662,12 +664,13 @@
             {type: "D", start: {era: 1, y: 2025, mon: 4, d: 10}, inherits: "Poem in Your Pocket Day"},
             {type: "D", start: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", first: {era: 1, y: 2026}},
         ]},
-        
+                
         {type: "nD", start: {mon: 5, d: 2, thruD: 8, wkd: [2], durationD: 5}, titles: {"en": "Teacher Appreciation Week"}, notes: {"en": "National Teacher Appreciation Week"}, urls: {"en": "https://www.nea.org/TAW"}, first: {era: 1, y: 1980}, emoji: "👨‍🏫👩‍🏫", nonoverlappingSubEvents: [
-            {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", first: {era: 1, y: 1985}, emoji: "👨‍🏫👩‍🏫"},
+            {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, inherits: "National Teacher Day", first: {era: 1, y: 1985}},
         ]},
     ],
     templates: [
+        {template: "National Teacher Day", type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫"},
         {template: "Confederate Memorial Day", titles: {"en": "Confederate Memorial Day", "fr": "Fête du mémorial des confédérés"}, type: "D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},
         {template: "International Dadaism Month", type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://www.npr.org/templates/story/story.php?storyId=5077635"}, titles: {"en": "International Dadaism Month", "he": "חודש הדאדאיזם הבינלאומי"}},
         {template: "Jefferson Davis’s Birthday", type: "D", start: {mon: 6, d: 3}, titles: {"en": "Jefferson Davis’s Birthday", "he": "יום הולדת של ג׳פרסון דייוויס", "fr": "Anniversaire de Jefferson Davis"}, urls: {"en": "https://en.wikipedia.org/wiki/Jefferson_Davis"}, inherits: "*BDay*"},
