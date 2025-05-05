@@ -246,7 +246,7 @@ extension ASAEventSpecification {
         }
         
         if inherits != nil && template == nil {
-            debugPrint(#file, #function, "Template “\(inherits!)” not found!")
+            debugPrint(#file, #function, "🚨 Template “\(inherits!)” not found!")
         }
         
         return nil

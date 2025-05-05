@@ -14,6 +14,7 @@ import UIKit
 #if os(watchOS)
 import ClockKit
 #endif
+import WatchConnectivity
 
 enum ASAPreferencesFileCode {
     case clocks
@@ -221,11 +222,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
             
         case .oneLineSmall:
             return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
-            ], usesDeviceLocation: true)
+                                                                           ], usesDeviceLocation: true)
             
         case .oneLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
-            ], usesDeviceLocation: true)
+                                                                           ], usesDeviceLocation: true)
         } // switch key
     } // func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks
     
@@ -286,11 +287,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
                         //                        debugPrint(#file, #function, jsonResult)
                         let timestamp: Date? = Date.date(timeIntervalSince1970: jsonResult[TIMESTAMP_KEY] as? TimeInterval)
                         if timestamp == nil || timestamp! > self.complicationsTimestamp {
-                        self.threeLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .threeLineLarge, dictionary: jsonResult)[0]
-                        self.twoLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .twoLineLarge, dictionary: jsonResult)[0]
-                        self.twoLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .twoLineSmall, dictionary: jsonResult)[0]
-                        self.oneLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .oneLineLarge, dictionary: jsonResult)[0]
-                        self.oneLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .oneLineSmall, dictionary: jsonResult)[0]
+                            self.threeLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .threeLineLarge, dictionary: jsonResult)[0]
+                            self.twoLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .twoLineLarge, dictionary: jsonResult)[0]
+                            self.twoLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .twoLineSmall, dictionary: jsonResult)[0]
+                            self.oneLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .oneLineLarge, dictionary: jsonResult)[0]
+                            self.oneLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .oneLineSmall, dictionary: jsonResult)[0]
                         }
                         complicationsSuccess = true
                     }
@@ -397,12 +398,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
         }
         
 #if os(iOS)
-#if targetEnvironment(macCatalyst)
-        
-#else
-        let appDelegate: AppDelegate = AppDelegate.shared
-        appDelegate.sendUserData(appDelegate.session)
-#endif
+        if WCSession.isSupported() {
+            let appDelegate: AppDelegate = AppDelegate.shared
+            appDelegate.sendUserData(appDelegate.session)
+        }
 #endif
     } // func savePreferences()
     
