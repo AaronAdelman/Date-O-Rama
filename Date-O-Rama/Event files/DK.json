@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "German invasion of Denmark", "da": "Danmarks besættelse"}, first: {era: 1, y: 1940}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Birthday of Queen Margrethe II", "da": "Dronningens fødselsdag"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
-        {inherits: "Liberation Day", type: "D", start: {mon: 5, d: 5}, titles: {"en": "Liberation Day", "da": "Danmarks befrielse"}},
+        {start: {mon: 5, d: 5}, inherits: "Liberation Day", type: "D", titles: {"en": "Liberation of Denmark", "da": "Danmarks befrielse"}},
         {type: "D", start: {mon: 5, d: 26}, titles: {"en": "Birthday of Crown Prince Frederik", "da": "Kronprins Frederiks fødselsdag"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "Birthday of Prince Joachim", "da": "Prins Joachims fødselsdag"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=56335"}},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "Day of Valdemar and Reunion Day", "da": "Valdemarsdag og Genforeningsdag"}, urls: {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, first: {era: 1, y: 1219}},
