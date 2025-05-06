@@ -7,7 +7,8 @@
     calendarColor: {red: 0.93, green: 0.11, blue: 0.15},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
-        {type: "D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}, inherits: "Buddha’s Birthday"},
+        {type: "D", start: {mon: 4, d: 8}, inherits: "Buddha’s Birthday", urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}},
+        {type: "D", start: {mon: 4, d: 9, wkd: [2]}, inherits: "Buddha’s Birthday (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/macau/buddha-purnima"}},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
         {type: "D", start: {mon: 8, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival"},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},

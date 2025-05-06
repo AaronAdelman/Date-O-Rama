@@ -18,6 +18,7 @@
         {type: "D", start: {mon: 4, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-of-the-peoples-april-revolution"}, titles: {"en": "Day of the People’s April Revolution", "ky": "Элдик Апрель революциясы күнү"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/labour-day"}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/kyrgyzstan-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1993}},
+        {type: "nD", start: {era: 1, y: 2025, mon: 5, d: 5}, end: {era: 1, y: 2025, mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/kyrgyzstan-constitution-day"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 5, d: 8, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/victory-day"}, inherits: "Public Holiday (bridge day)"},
         {type: "D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/victory-day"}, inherits: "Victory Day (May 9)"},
         {type: "D", start: {mon: 5, d: 10, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/victory-day"}, inherits: "Public Holiday (bridge day)"},
