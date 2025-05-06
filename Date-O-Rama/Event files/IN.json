@@ -256,6 +256,8 @@
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Tendong Lho Rum Faat"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "Sree Narayana Guru Samadhi"}, urls: {"en": "https://www.officeholidays.com/holidays/india/sree-narayana-guru-samadhi"}, locations: {"en": "Kerala"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1928}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 13}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
+        {type: "D", start: {era: 1, y: 2025, mon: 5, d: 2}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
+        {type: "D", start: {era: 1, y: 2025, mon: 5, d: 7}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
         {type: "D", start: {era: 1, y: 2019, mon: 10, d: 21}, inherits: "Public Holiday", locations: {"en": "Haryana and Maharashtra"}, urls: {"en": "https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 20}, inherits: "Public Holiday", locations: {"en": "Maharashtra"}, urls: {"en": "https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
         {type: "nD", start: {mon: 1, d: 11}, end: {mon: 1, d: 17}, inherits: "Road Safety Week", urls: {"en": "https://www.daysoftheyear.com/days/road-safety-week-india/"}, first: {era: 1, y: 1989}},

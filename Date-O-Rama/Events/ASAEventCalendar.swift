@@ -23,9 +23,9 @@ struct ASAMatchResult {
 // MARK: -
 
 class ASAEventCalendar {
-    var fileName:  String
-    var eventsFile:  ASAEventsFile?
-    var error:  Error?
+    let fileName:  String
+    let eventsFile:  ASAEventsFile?
+    let error:  Error?
     var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
     
     init(fileName:  String) {
@@ -1478,11 +1478,11 @@ class ASAEventCalendar {
 // MARK: -
 
 struct ASABuiltInEventCalendarFileRecord {
-    var fileName: String
-    var emoji: String?
-    var eventCalendarNameWithoutPlaceName: String
-    var numberOfEventSpecifications: Int
-    var color: SwiftUI.Color
+    let fileName: String
+    let emoji: String?
+    let eventCalendarNameWithoutPlaceName: String
+    let numberOfEventSpecifications: Int
+    let color: SwiftUI.Color
 }
 
 class ASABuiltInEventCalendarFileData {
@@ -1490,7 +1490,7 @@ class ASABuiltInEventCalendarFileData {
 }
 
 extension ASAEventCalendar {
-    fileprivate static var builtInEventCalendarFileNamesCache = NSCache<NSString, ASABuiltInEventCalendarFileData>()
+    fileprivate static let builtInEventCalendarFileNamesCache = NSCache<NSString, ASABuiltInEventCalendarFileData>()
 
     class func builtInEventCalendarFileRecords(calendarCode:  ASACalendarCode) -> ASABuiltInEventCalendarFileData {
         let temp = ASAEventCalendar.builtInEventCalendarFileNamesCache.object(forKey: NSString(string: calendarCode.rawValue))
@@ -1513,7 +1513,7 @@ extension ASAEventCalendar {
                     unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier), numberOfEventSpecifications: eventsFile!.eventSpecifications.count, color: eventsFile!.calendarColor))
                 }
             }
-        }
+        } // for fileName
         let records = unsortedRecords.sorted(by: {$0.eventCalendarNameWithoutPlaceName < $1.eventCalendarNameWithoutPlaceName})
         let result = ASABuiltInEventCalendarFileData()
         result.records = records

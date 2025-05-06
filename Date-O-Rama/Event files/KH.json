@@ -1,7 +1,7 @@
 {
     titles: {"*": "KH"},
     "//": "Cambodia",
-    "TODO": "Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances",
+    "TODO": "Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances, Visak Bochea Day",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.88, blue: 0.13},

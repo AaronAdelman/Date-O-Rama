@@ -42,7 +42,7 @@
         {inherits: "Tartan Day", type: "D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1987}},
         {inherits: "Thanksgiving Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 1957}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
-        {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day", first: {era: 1, y: 1945}},
         {inherits: "Women’s History Month", type: "M", start: {mon: 10}, first: {era: 1, y: 1992}},
         {titles: {"en": "British Columbia Day", "fr": "Jour de la Colombie-Britannique"}, type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/british-columbia-day/"}},
         {titles: {"en": "Canadian Multiculturalism Day"}, type: "D", start: {mon: 6, d: 27}},

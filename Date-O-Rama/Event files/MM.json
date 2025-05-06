@@ -1,7 +1,7 @@
 {
     titles: {"*": "MM"},
     "//": "Myanmar, AKA Burma",
-    "TODO": "Islamic and Buddist holidays, National Day",
+    "TODO": "Islamic and Buddist holidays, National Day, Full Moon Day of Kasong",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.80, blue: 0.00},

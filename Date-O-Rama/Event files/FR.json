@@ -11,7 +11,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Victory in Europe Day", type: "D", start: {mon: 5, d: 8}},
+        {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/france/mothers-day"}, inherits: "Mother’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
