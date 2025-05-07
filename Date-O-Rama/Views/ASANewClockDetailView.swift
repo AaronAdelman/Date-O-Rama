@@ -29,7 +29,10 @@ struct ASANewClockDetailView: View {
         VStack {
             NavigationView {
                 List {
-                    ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
+                    let calendarCode = selectedClock.calendar.calendarCode
+                    
+                    let builtInEventCalendarFileData: ASABuiltInEventCalendarFileData = ASAEventCalendar.builtInEventCalendarFileRecords(calendarCode: calendarCode)
+                    ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation, builtInEventCalendarFileData: builtInEventCalendarFileData)
                 } // List
                 .onAppear() {
                     self.selectedClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full, regionCode: location.regionCode ?? "")

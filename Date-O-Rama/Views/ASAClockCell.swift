@@ -66,14 +66,14 @@ enum ASAClockCellBodyDetailType {
 }
 
 struct ASAClockCellBody:  View {
-    var processedClock:  ASAProcessedClock
+    let processedClock:  ASAProcessedClock
     @Binding var now:  Date
     
-    var shouldShowTime:  Bool
-    var shouldShowMiniCalendar:  Bool
-    var canSplitTimeFromDate:  Bool
+    let shouldShowTime:  Bool
+    let shouldShowMiniCalendar:  Bool
+    let canSplitTimeFromDate:  Bool
     
-    var isForComplications:  Bool
+    let isForComplications:  Bool
     
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
     
@@ -244,12 +244,15 @@ struct ASAClockCellBody:  View {
                     } label: {
                         ASAClockMenuSymbol()
                     }
-                    .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
+                    .sheet(isPresented: $showingDetailView, onDismiss: {
+//                        debugPrint("❎ Clock cell detail view was dismissed.")
+                    }, content: {
                         ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType)
                     })
                 }
 #endif
             } // HStack
+            .frame(height: 100.0)
             
 #if os(watchOS)
 #else
@@ -402,6 +405,7 @@ struct ASAClockEventsForEach:  View {
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? primaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
             ASALinkedEventCell(event: event, primaryClock: primaryClock, now: $now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
+//                .frame(height: 32.0)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach

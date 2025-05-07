@@ -12,11 +12,11 @@ import EventKit
 
 struct ASAClockDetailView: View {
     @ObservedObject var selectedClock:  ASAClock
-    var location: ASALocation
-    var usesDeviceLocation: Bool
-    var now:  Date
+    let location: ASALocation
+    let usesDeviceLocation: Bool
+    let now:  Date
     
-    var shouldShowTime:  Bool
+    let shouldShowTime:  Bool
     
     @EnvironmentObject var userData:  ASAUserData
     
@@ -24,20 +24,23 @@ struct ASAClockDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    var deletable:  Bool
+    let deletable:  Bool
     
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
     
-    var forAppleWatch:  Bool
+    let forAppleWatch:  Bool
     
-    var tempLocation: ASALocation
+    let tempLocation: ASALocation
     
     var body: some View {
         NavigationView {
             List {
-                ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation)
+                let calendarCode = selectedClock.calendar.calendarCode
+                
+                let builtInEventCalendarFileData: ASABuiltInEventCalendarFileData = ASAEventCalendar.builtInEventCalendarFileRecords(calendarCode: calendarCode)
+                ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation, builtInEventCalendarFileData: builtInEventCalendarFileData)
                 
                 if deletable {
                     Section {
@@ -73,47 +76,52 @@ struct ASAClockDetailView: View {
 
 struct ASAClockDetailEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
-    var location: ASALocation
-    var usesDeviceLocation: Bool
-    var now:  Date
-    var shouldShowTime:  Bool
-    var forAppleWatch:  Bool
-    var tempLocation: ASALocation
-    
-    fileprivate func dateFormats() -> [ASADateFormat] {
-        if forAppleWatch {
-            return selectedClock.calendar.supportedWatchDateFormats
-        }
-        
-        return selectedClock.calendar.supportedDateFormats
-    }
+    let location: ASALocation
+    let usesDeviceLocation: Bool
+    let now:  Date
+    let shouldShowTime:  Bool
+    let forAppleWatch:  Bool
+    let tempLocation: ASALocation
+    let builtInEventCalendarFileData: ASABuiltInEventCalendarFileData
     
     var body: some View {
+        let numberOfDateFormats: Int = {
+            if forAppleWatch {
+                return selectedClock.calendar.supportedWatchDateFormats.count
+            }
+            
+            return selectedClock.calendar.supportedDateFormats.count
+        }()
+        
+        let calendarCode = selectedClock.calendar.calendarCode
+                
+        let localeIdentifier = selectedClock.localeIdentifier
+
         Group {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: self.selectedClock.calendar.calendarCode, locationType: location.type)) {
-                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedClock.calendar.calendarCode.localizedName)
+                NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: calendarCode, locationType: location.type)) {
+                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: calendarCode.localizedName)
                 }
                 
                 if selectedClock.supportsLocales {
-                    NavigationLink(destination: ASALocaleChooserView(clock: selectedClock, location: location, tempLocaleIdentifier: selectedClock.localeIdentifier)) {
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedClock.localeIdentifier.localeCountryCodeFlag + " " + selectedClock.localeIdentifier.asSelfLocalizedLocaleIdentifier)
+                    NavigationLink(destination: ASALocaleChooserView(clock: selectedClock, location: location, tempLocaleIdentifier: localeIdentifier)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  localeIdentifier.localeCountryCodeFlag + " " + localeIdentifier.asSelfLocalizedLocaleIdentifier)
                     }
                 }
-                if selectedClock.calendar.supportsDateFormats && dateFormats().count > 1 {
-                    NavigationLink(destination: ASADateFormatChooserView(clock: selectedClock, location: location, tempDateFormat: selectedClock.dateFormat, calendarCode: selectedClock.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
+                if selectedClock.calendar.supportsDateFormats && numberOfDateFormats > 1 {
+                    NavigationLink(destination: ASADateFormatChooserView(clock: selectedClock, location: location, tempDateFormat: selectedClock.dateFormat, calendarCode: calendarCode, forAppleWatch: forAppleWatch)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedClock.dateFormat.localizedItemName)
                     }
                 }
                 if selectedClock.calendar.supportsTimeFormats && shouldShowTime && selectedClock.calendar.supportedTimeFormats.count > 1 {
-                    NavigationLink(destination: ASATimeFormatChooserView(clock: selectedClock, location: location, tempTimeFormat: selectedClock.timeFormat, calendarCode: selectedClock.calendar.calendarCode)) {
+                    NavigationLink(destination: ASATimeFormatChooserView(clock: selectedClock, location: location, tempTimeFormat: selectedClock.timeFormat, calendarCode: calendarCode)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedClock.timeFormat.localizedItemName)
                     }
                 }
             } // Section
-            
+                    
             if !forAppleWatch {
-                ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileRecords(calendarCode: selectedClock.calendar.calendarCode))
+                ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileData: builtInEventCalendarFileData)
                 
                 ASAICalendarEventCalendarsEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation)
             }
@@ -126,12 +134,12 @@ struct ASAClockDetailEditingSection:  View {
 
 struct ASABuiltInEventCalendarsEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
-    var builtInEventCalendarFileNames:  ASABuiltInEventCalendarFileData
+    var builtInEventCalendarFileData:  ASABuiltInEventCalendarFileData
     
     @State var selection = ASARegionCodeRegion.regionNeutral
     
     var body:  some View {
-        if builtInEventCalendarFileNames.records.count > 0 {
+        if builtInEventCalendarFileData.records.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
                 if selectedClock.calendar.calendarCode == .Gregorian {
                     Picker(selection: $selection, label:
@@ -142,7 +150,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                     })
                 }
                 
-                let records = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.records.filter({$0.fileName.regionCodeRegion == selection}) : builtInEventCalendarFileNames.records
+                let records = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileData.records.filter({$0.fileName.regionCodeRegion == selection}) : builtInEventCalendarFileData.records
                 ForEach(records, id: \.fileName) {
                     record
                     in
