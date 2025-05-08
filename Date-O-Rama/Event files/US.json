@@ -118,6 +118,7 @@
         {type: "D", start: {mon: 4, d: 21}, titles: {"en": "San Jacinto Day"}, urls: {"en": "https://nationaltoday.com/san-jacinto-day/"}, first: {era: 1, y: 1836}, notes: {"en": "Battle of San Jacinto"}},
         {type: "D", start: {mon: 5, d: 6, thruD: 12, wkd: [4]}, titles: {"en": "National School Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 5, d: 6, thruD: 12, wkd: [6]}, titles: {"en": "National Military Spouse Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/military-spouse-appreciation-day/"}, first: {era: 1, y: 1984}},
+        {type: "D", start: {mon: 5, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "Children’s Mental Health Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/childrens-mental-health-awareness-day/"}, notes: {"en": "CMHAD"}, first: {era: 1, y: 2005}, emoji: "👦👧", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Barrier Awareness Day", "he": "יום המודעות למחסומים"}, first: {era: 1, y: 1986}, emoji: "🦼", urls: {"en": "https://www.daysoftheyear.com/days/national-barrier-awareness-day/"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Fasnacht Day"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Ellis Island Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ellis-island-day/"}, notes: {"en": "National Ellis Island Day"}, first: {era: 1, y: 1992}},
