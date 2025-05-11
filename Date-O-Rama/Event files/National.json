@@ -2653,7 +2653,7 @@
         {type: "W", start: {mon: 4, fullWk: 3, firstDOfWk: 2}, titles: {"en": "National Week of Conversation"}, urls: {"en": "https://conversation.us/"}, first: {era: 1, y: 2021}, emoji: "💬"},
         {type: "W", start: {mon: 5, fullWk: -1, firstDOfWk: 2}, titles: {"en": "Italian Beef Week"}, urls: {"en": "https://www.daysoftheyear.com/days/italian-beef-week/"}, emoji: "🥩", first: {era: 1, y: 2015}},
         {type: "W", start: {mon: 5, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Screen Free Week"}, urls: {"en": "https://www.daysoftheyear.com/days/screen-free-week/"}, first: {era: 1, y: 2010}, emoji: "📺🖥️📱", notes: {"en": "Digital Detox Week\nUnplug Week\nDevice-Free Week"}},
-        {type: "W", start: {mon: 5, fullWk: 1, firstDOfWk: 6}, titles: {"en": "National Public Gardens Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-public-gardens-week/"}, emoji: "🪴⛲️"},
+        {type: "nD", start: {mon: 5, d: 6, thruD: 12, wkd: [6], durationD: 10}, titles: {"en": "National Public Gardens Week"}, urls: {"en": "https://www.publicgardens.org/go-public-gardens/"}, emoji: "🪴⛲️"},
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "Drinking Water Week"}, urls: {"en": "https://www.awwa.org/communications-and-outreach/drinking-water-week"}, emoji: "🚰"},
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Pet Week"}, urls: {"en": "https://www.avma.org/events/national-pet-week"}, first: {era: 1, y: 1981}, emoji: "👨‍💻🐈"},
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Wildflower Week"}, urls: {"en": "https://www.wildflower.org/nationalwildflowerweek"}, first: {era: 1, y: 1987}, emoji: "🌺🌼🪻"},
