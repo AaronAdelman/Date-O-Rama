@@ -1253,14 +1253,13 @@
         {type: "D", start: {mon: 5, d: 12}, titles: {"en": "National YA DIG Day"}, urls: {"en": "https://nationaltoday.com/national-ya-dig-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 5, d: 13}, inherits: "National Apple Pie Day", urls: {"en": "https://www.daysoftheyear.com/days/apple-pie-day/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 5, d: 13}, titles: {"en": "Leprechaun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/leprechaun-day/"}, notes: {"en": "National Leprechaun Day"}, emoji: "🍀"},
-        {type: "D", start: {mon: 5, d: 13}, titles: {"en": "National Crouton Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-crouton-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 5, d: 13}, titles: {"en": "National Frog Jumping Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frog-jumping-day/"}, emoji: "🐸"},
         {type: "D", start: {mon: 5, d: 13}, titles: {"en": "National Fruit Cocktail Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fruit-cocktail-day/"}, emoji: "🍊🍌🍍"},
         {type: "D", start: {mon: 5, d: 14}, titles: {"en": "Do Dah Day"}, urls: {"en": "https://nationaltoday.com/do-dah-day/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 5, d: 14}, titles: {"en": "National Travel Insurance Claims Day"}, urls: {"en": "https://nationaltoday.com/national-travel-insurance-claims-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-underground-america-day/"}, titles: {"en": "National Underground America Day"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/the-stars-and-stripes-forever-day/"}, titles: {"en": "The Stars and Stripes Forever Day"}, first: {era: 1, y: 1987}},
-        {type: "D", start: {mon: 5, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/chicken-dance-day/"}, titles: {"en": "National Dance Like a Chicken Day", "he": "יום ריקוד הציפורים הלאומי"}, notes: {"en": "National Chicken Dance Day\nDanceLikeaChickenDay"}, emoji: "🐓"},
+        {type: "D", start: {mon: 5, d: 14}, titles: {"en": "National Dance Like a Chicken Day", "he": "יום ריקוד התרנגולים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chicken-dance-day/"}, notes: {"en": "National Chicken Dance Day\nDanceLikeaChickenDay"}, emoji: "🐓"},
         {type: "D", start: {mon: 5, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/national-buttermilk-biscuit-day/"}, titles: {"en": "National Buttermilk Biscuit Day"}},
         {type: "D", start: {mon: 5, d: 15, thruD: 21, wkd: [1]}, urls: {"en": "https://www.daysoftheyear.com/days/ride-a-unicycle-day/"}, titles: {"en": "Ride a Unicycle Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 5, d: 15}, titles: {"en": "National Nylon Stocking Day"}, notes: {"en": "A superficial, fashion-driven observance."}},
@@ -2560,7 +2559,6 @@
         {type: "nD", start: {mon: 4, d: 6, thruD: 12, wkd: [5], durationD: 4}, titles: {"en": "Masters Tournament", "he": "טורניר המאסטרס"}, urls: {"en": "https://www.masters.com/"}, first: {era: 1, y: 2021}, emoji: "⛳"},
         {type: "nD", start: {mon: 4, d: 7}, end: {mon: 4, d: 13}, titles: {"en": "National Integrated Respiratory Care Week"}, urls: {"en": "https://nationaltoday.com/national-integrated-respiratory-care-week/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "Well-Being Week in Law"}, notes: {"en": "WWIL\nNational Lawyer Well-Being Week\nLawyer Well-Being Week"}, urls: {"en": "https://lawyerwellbeing.net/well-being-week-in-law/"}, emoji: "👩‍💼👨‍💼", first: {era: 1, y: 2019}},
-        {type: "nD", start: {mon: 5, d: 15}, end: {mon: 5, d: 21}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://nationaltoday.com/national-stationery-week/"}, first: {era: 1, y: 2013}, emoji: "📄"},
         {type: "nD", start: {mon: 5, d: 10, thruD: 16, wkd: [2], durationD: 7}, titles: {"en": "American Craft Beer Week"}, notes: {"en": "National American Craft Beer Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-craft-beer-week/"}, first: {era: 1, y: 2006}, emoji: "🍺"},
         {type: "nD", start: {mon: 5, d: 18, thruD: 24, wkd: [2], durationD: 7}, titles: {"en": "National Safe Sun Week"}, urls: {"en": "https://nationaltoday.com/national-safe-sun-week/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2021}},
         {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},
@@ -2658,7 +2656,6 @@
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Pet Week"}, urls: {"en": "https://www.avma.org/events/national-pet-week"}, first: {era: 1, y: 1981}, emoji: "👨‍💻🐈"},
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Wildflower Week"}, urls: {"en": "https://www.wildflower.org/nationalwildflowerweek"}, first: {era: 1, y: 1987}, emoji: "🌺🌼🪻"},
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "Public Service Recognition Week"}, urls: {"en": "https://www.daysoftheyear.com/days/public-service-recognition-week/"}},
-        {type: "W", start: {mon: 5, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎"},
         {type: "W", start: {mon: 5, fullWk: 2}, inherits: "I Love My State Parks Week", first: {era: 1, y: 2023}},
         {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "Huntington’s Disease Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/huntingtons-disease-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "National Women’s Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-health-week/"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩"},
@@ -2718,6 +2715,11 @@
 
         {type: "nD", start: {mon: 4, d: 20, thruD: 26, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [1]}, titles: {"en": "Lesbian Visibility Week"}, first: {era: 1, y: 1990}, overlappingSubEvents: [
             {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Lesbian Visibility Day"}, first: {era: 1, y: 2008}},
+        ]},
+        
+        
+        {type: "W", start: {mon: 5, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [4]}, titles: {"en": "World Stationery Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-stationery-day/"}, emoji: "📄"},
         ]},
         
     ],

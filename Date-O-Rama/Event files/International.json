@@ -1036,7 +1036,6 @@
         {type: "D", start: {mon: 4, wkd: [4], nth: -1}, titles: {"en": "Denim Day"}, urls: {"en": "https://denimday.org/"}, emoji: "👖", first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 4, wkd: [4], nth: -1}, titles: {"en": "International Guide Dog Day"}, urls: {"en": "https://www.igdf.org.uk/about-us/international-guide-dog-day/"}, emoji: "🐕", first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 4, wkd: [4], nth: -1}, titles: {"en": "Stop Food Waste Day"}, urls: {"en": "https://www.stopfoodwasteday.com/en/index.html"}, emoji: "🍊🍅🍋", first: {era: 1, y: 2017}},
-        {type: "D", start: {mon: 4, wkd: [4], nth: -1}, titles: {"en": "World Stationery Day"}, urls: {"en": "https://nationaltoday.com/world-stationery-day/"}, emoji: "📄"},
         {type: "D", start: {mon: 4, wkd: [4], nth: 1}, inherits: "Global Day of the Engineer", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 1}, titles: {"en": "Paraprofessional Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/paraprofessional-appreciation-day/"}, notes: {"en": "Para Appreciation Day"}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 2}, titles: {"en": "Day of Pink", "fr": "Journée Rose"}, notes: {"en": "International Day of Pink"}, urls: {"en": "https://www.dayofpink.org/en/home-2023"}, emoji: "🩷"},
