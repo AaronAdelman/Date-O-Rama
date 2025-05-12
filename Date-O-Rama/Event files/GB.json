@@ -116,7 +116,9 @@
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "Oak Apple Day"}, urls: {"en": "https://www.daysoftheyear.com/days/oak-apple-day/"}, first: {era: 1, y: 1660}, emoji: "🌳"},
         {type: "D", start: {mon: 5, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/firefighters-memorial-day/"}, titles: {"en": "Firefighters’ Memorial Day"}},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
-        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "National Children’s Day UK"}, notes: {"en": "NCDUK"}, inherits: "National Children’s Day", first: {era: 1, y: 1954}, urls: {"en": "https://www.nationalchildrensdayuk.com/"}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "NCDUK", first: {era: 1, y: 1954}, last: {era: 1, y: 2024}},
+        {type: "D", start: {era: 1, y: 2025, mon: 5, d: 18}, inherits: "NCDUK"},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "NCDUK", first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-rolling-gloucester/"}, titles: {"en": "Cheese Rolling Gloucester", "he": "המירוץ אחר הגבינה בגבעת קופר, אנגליה"}, notes: {"en": "Gloucestershire Cheese Rolling\nCooper’s Hill Cheese Rolling and Wake"}, first: {era: 1, y: 2011}, emoji: "🧀"},
         {type: "D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, inherits: "National Numeracy Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2023}},
         {type: "D", start: {mon: 5, wkd: [4], d: 18, thruD: 24}, inherits: "National Numeracy Day", first: {era: 1, y: 2024}},
@@ -362,5 +364,6 @@
         {template: "Family Mediation Week", type: "nD", start: {mon: 1, d: 16, thruD: 22, wkd: [2], durationD: 5}, titles: {"en": "Family Mediation Week"}, urls: {"en": "https://thefma.co.uk/family-mediation-week/"}},
         {template: "National Apprenticeship Week", type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Apprenticeship Week"}, urls: {"en": "https://nationalapprenticeshipweek.co.uk/"}},
         {template: "National Toast Day", type: "D", start: {mon: 2, wkd: [5], nth: -1}, titles: {"en": "National Toast Day", "he": "יום הטוסט הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/toast-day/"}},
+        {template: "NCDUK", type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "National Children’s Day UK"}, notes: {"en": "NCDUK"}, inherits: "National Children’s Day", urls: {"en": "https://www.nationalchildrensdayuk.com/"}},
     ]
 }
