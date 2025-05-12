@@ -736,6 +736,10 @@
 		A5E292F9285A65FB00925EBD /* BM.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E292F7285A65FB00925EBD /* BM.json */; };
 		A5E2E4EB2A388011000E8049 /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
 		A5E2E4EC2A388011000E8049 /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
+		A5E3222D2DD20C63009EBFC0 /* National months.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3222C2DD20C63009EBFC0 /* National months.json */; };
+		A5E3222E2DD20C63009EBFC0 /* National months.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3222C2DD20C63009EBFC0 /* National months.json */; };
+		A5E322302DD20F42009EBFC0 /* International months.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3222F2DD20F42009EBFC0 /* International months.json */; };
+		A5E322312DD20F43009EBFC0 /* International months.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3222F2DD20F42009EBFC0 /* International months.json */; };
 		A5E3606424C71FBC0000A268 /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
 		A5E3606624C756FF0000A268 /* IL (Hebrew).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* IL (Hebrew).json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
@@ -1593,6 +1597,8 @@
 		A5E292F4285A658200925EBD /* BZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BZ.json; sourceTree = "<group>"; };
 		A5E292F7285A65FB00925EBD /* BM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BM.json; sourceTree = "<group>"; };
 		A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASingleEvent.swift; sourceTree = "<group>"; };
+		A5E3222C2DD20C63009EBFC0 /* National months.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National months.json"; sourceTree = "<group>"; };
+		A5E3222F2DD20F42009EBFC0 /* International months.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "International months.json"; sourceTree = "<group>"; };
 		A5E3606324C71FBC0000A268 /* Judaism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Judaism.json; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* IL (Hebrew).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IL (Hebrew).json"; sourceTree = "<group>"; };
 		A5E3606724C7571A0000A268 /* Lubavitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lubavitch.json; sourceTree = "<group>"; };
@@ -2028,6 +2034,7 @@
 				A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
+				A5E3222F2DD20F42009EBFC0 /* International months.json */,
 				A5E4960D2862505C001BF40C /* IO.json */,
 				A5E4960E2862505C001BF40C /* IQ.json */,
 				A5EF0003285B8EEA00F2205F /* IQ (Muslim).json */,
@@ -2125,6 +2132,7 @@
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A575A8052A4B11F100E77142 /* National.json */,
 				A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */,
+				A5E3222C2DD20C63009EBFC0 /* National months.json */,
 				A5E4964F28625479001BF40C /* NC.json */,
 				A5D850B3280C9823005247BD /* NE.json */,
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
@@ -2903,6 +2911,7 @@
 				A5EFFF91285B7D4600F2205F /* NG.json in Resources */,
 				A5EE19E62804A92600B0B9C2 /* GB.json in Resources */,
 				A514B9C12D8310F0000046CC /* Star Trek.json in Resources */,
+				A5E3222E2DD20C63009EBFC0 /* National months.json in Resources */,
 				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5EF0017285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A5E04AB32851CA6D001A4911 /* Sunni Islam (times, Egypt).json in Resources */,
@@ -2947,6 +2956,7 @@
 				A50A2C3F2C580C7D00AB0F29 /* Discordianism.json in Resources */,
 				A5EF0011285B8EEB00F2205F /* SD (Muslim).json in Resources */,
 				A502D3DF28637DA900A625A9 /* PY.json in Resources */,
+				A5E322312DD20F43009EBFC0 /* International months.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5D8509A280C8E7A005247BD /* BA.json in Resources */,
 				A5E95F6E286F2DB7009267AF /* AS.json in Resources */,
@@ -3414,6 +3424,7 @@
 				A5E4964D2862544A001BF40C /* MW.json in Resources */,
 				A5EFFF82285B7BF500F2205F /* MV.json in Resources */,
 				A5E495D828624D7A001BF40C /* ER.json in Resources */,
+				A5E3222D2DD20C63009EBFC0 /* National months.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,
 				A50A2C412C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */,
 				A5EFFF8A285B7CBD00F2205F /* NA.json in Resources */,
@@ -3494,6 +3505,7 @@
 				A5E292D7285A5AD600925EBD /* KZ.json in Resources */,
 				A5E4963E2862538F001BF40C /* MN.json in Resources */,
 				A581B891284E5E1800407D68 /* ES.json in Resources */,
+				A5E322302DD20F42009EBFC0 /* International months.json in Resources */,
 				A5EFFF87285B7CA200F2205F /* MX.json in Resources */,
 				A5BA03C82A4227940039B9FC /* BD (Muslim).json in Resources */,
 				A51EF5B22DC7C24D00372212 /* Western planentary days.json in Resources */,
