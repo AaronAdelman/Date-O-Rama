@@ -46,7 +46,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     
     var supportsTimeZones: Bool = true
     
-    var transitionType: ASATransitionType = .midnight
+//    var transitionType: ASATransitionType = .midnight
     
     var usesISOTime: Bool = true
     

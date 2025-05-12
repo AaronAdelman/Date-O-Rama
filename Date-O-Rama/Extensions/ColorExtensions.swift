@@ -12,36 +12,36 @@ import SwiftUI
 
 // MARK: - Utility functions
 
-public func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
-    switch transitionType {
-    case .sunset, .dusk:
-        if transitionType == .dusk {
-            if hour == 23 || hour == 12 {
-                return false
-            }
-        }
-
-        if hour >= 0 && hour <= 11 {
-            return true
-        } else {
-            return false
-        }
-
-    case .midnight:
-        if hour <= 5 || hour >= 18 {
-            return true
-        } else {
-            return false
-        }
-
-    case .noon:
-        if 6 <= hour && hour <= 17 {
-            return true
-        } else {
-            return false
-        }
-    } // switch transitionType
-} // func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool
+//public func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
+//    switch transitionType {
+//    case .sunset, .dusk:
+//        if transitionType == .dusk {
+//            if hour == 23 || hour == 12 {
+//                return false
+//            }
+//        }
+//
+//        if hour >= 0 && hour <= 11 {
+//            return true
+//        } else {
+//            return false
+//        }
+//
+//    case .midnight:
+//        if hour <= 5 || hour >= 18 {
+//            return true
+//        } else {
+//            return false
+//        }
+//
+//    case .noon:
+//        if 6 <= hour && hour <= 17 {
+//            return true
+//        } else {
+//            return false
+//        }
+//    } // switch transitionType
+//} // func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool
 
 
 // MARK:  -

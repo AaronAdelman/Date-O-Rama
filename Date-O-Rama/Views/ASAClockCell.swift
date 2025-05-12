@@ -96,9 +96,9 @@ struct ASAClockCellBody:  View {
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
     
-    fileprivate func shouldShowMiniClock() -> Bool {
-        return !compact && shouldShowTime && processedClock.hasValidTime
-    } //func shouldShowMiniClock() -> Bool
+//    fileprivate func shouldShowMiniClock() -> Bool {
+//        return !compact && shouldShowTime && processedClock.hasValidTime
+//    } //func shouldShowMiniClock() -> Bool
     
     fileprivate func numberFormatter() -> NumberFormatter {
         let temp = NumberFormatter()

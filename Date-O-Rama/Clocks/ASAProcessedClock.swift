@@ -25,14 +25,14 @@ struct ASAProcessedClock {
     var daysInMonth:  Int
     var supportsMonths:  Bool
 
-    var hour:  Int?
-    var minute:  Int?
-    var second:  Int?
-    var fractionalHour: Double?
-    var dayHalf: ASADayHalf?
+//    var hour:  Int?
+//    var minute:  Int?
+//    var second:  Int?
+//    var fractionalHour: Double?
+//    var dayHalf: ASADayHalf?
 
-    var transitionType:  ASATransitionType
-    var calendarType:  ASACalendarType
+//    var transitionType:  ASATransitionType
+//    var calendarType:  ASACalendarType
 
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
@@ -72,7 +72,7 @@ struct ASAProcessedClock {
         self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
-        let timeZone = location.timeZone
+//        let timeZone = location.timeZone
         self.supportsLocations = clock.calendar.supportsLocations
         
         self.daysPerWeek = clock.daysPerWeek
@@ -93,20 +93,20 @@ struct ASAProcessedClock {
         
         assert(!(location.type != .EarthLocation && self.supportsMonths))
 
-        if clock.timeFormat == .decimal {
-            let decimalTime = DecimalTime(base: now, timeZone: timeZone)
-            self.hour   = decimalTime.hour
-            self.minute = decimalTime.minute
-            self.second = decimalTime.second
-        } else {
-            self.hour   = dateComponents.hour
-            self.minute = dateComponents.minute
-            self.second = dateComponents.second
-            self.fractionalHour = dateComponents.solarHours
-            self.dayHalf = dateComponents.dayHalf
-        }
+//        if clock.timeFormat == .decimal {
+//            let decimalTime = DecimalTime(base: now, timeZone: timeZone)
+//            self.hour   = decimalTime.hour
+//            self.minute = decimalTime.minute
+//            self.second = decimalTime.second
+//        } else {
+//            self.hour   = dateComponents.hour
+//            self.minute = dateComponents.minute
+//            self.second = dateComponents.second
+//            self.fractionalHour = dateComponents.solarHours
+//            self.dayHalf = dateComponents.dayHalf
+//        }
 
-        self.transitionType = clock.calendar.transitionType
+//        self.transitionType = clock.calendar.transitionType
 
         if clock.localeIdentifier == "" {
             self.localeIdentifier = Locale.current.identifier
@@ -115,7 +115,7 @@ struct ASAProcessedClock {
         }
         self.calendarCode = clock.calendar.calendarCode
 
-        self.calendarType = clock.calendar.calendarCode.type
+//        self.calendarType = clock.calendar.calendarCode.type
         self.supportsTimes = clock.calendar.supportsTimes
 
         self.month = dateComponents.month ?? 0
@@ -151,10 +151,10 @@ struct ASAProcessedClock {
 
 // MARK:  -
 
-extension ASAProcessedClock {
-    var hasValidTime:  Bool {
-        get {
-            return self.hour != -1
-        } // get
-    } // var hasValidTime
-} // extension ASAProcessedClock
+//extension ASAProcessedClock {
+//    var hasValidTime:  Bool {
+//        get {
+//            return self.hour != -1
+//        } // get
+//    } // var hasValidTime
+//} // extension ASAProcessedClock

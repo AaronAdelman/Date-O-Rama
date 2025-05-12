@@ -10,12 +10,12 @@ import Foundation
 import CoreLocation
 import UIKit
 
-public enum ASATransitionType {
-    case sunset
-    case dusk
-    case midnight
-    case noon
-} // enum ASATransitionType
+//public enum ASATransitionType {
+//    case sunset
+//    case dusk
+//    case midnight
+//    case noon
+//} // enum ASATransitionType
 
 public enum ASANumberFormat {
     case system
@@ -38,7 +38,7 @@ protocol ASACalendar {
     var supportsLocations: Bool { get }
     var supportsTimes: Bool { get }
     var supportsTimeZones: Bool { get }
-    var transitionType:  ASATransitionType { get }
+//    var transitionType:  ASATransitionType { get }
     var usesISOTime:  Bool { get }
     
     func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String

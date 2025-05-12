@@ -527,20 +527,20 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
     
     // MARK: -
     
-    public var transitionType:  ASATransitionType {
-        get {
-            switch self.dayEnd {
-            case .sunset:
-                return .sunset
-                
-            case .dusk72Minutes:
-                return .dusk
-                
-            default:
-                return .midnight
-            }
-        }
-    }
+//    public var transitionType:  ASATransitionType {
+//        get {
+//            switch self.dayEnd {
+//            case .sunset:
+//                return .sunset
+//                
+//            case .dusk72Minutes:
+//                return .dusk
+//                
+//            default:
+//                return .midnight
+//            }
+//        }
+//    }
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
