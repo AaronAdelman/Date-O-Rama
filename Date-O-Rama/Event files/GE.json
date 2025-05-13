@@ -31,5 +31,7 @@
         {type: "nD", start: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, titles: {"en": "Tbilisoba"}, urls: {"en": "https://www.daysoftheyear.com/days/tbilisoba/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Lamproba"}, notes: {"en": "Festival of Lights"}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Day of Victory Over Fascism", urls: {"en": "https://www.officeholidays.com/holidays/georgia/victory-day"}, first: {era: 1, y: 1965}},
+        
+        {type: "D", start: {mon: 5, d: 17}, titles: {"en": "Day of Family Purity"}, first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/day-of-family-purity"}},
     ]
 }
