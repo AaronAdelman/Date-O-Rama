@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/portugal/mothers-day"}},
         {type: "D", start: {mon: 5, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/portugal/azores/day-of-the-azores"}, titles: {"en": "Day of the Azores", "pt": "Dia da Região Autónoma dos Açores"}, first: {era: 1, y: 1976}, notes: {"pt": "Dia da Pombinha\nDia do Bodo"}},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {titles: {"en": "Portugal Day", "he": "יום פורטוגל", "pt": "Dia de Portugal, de Camões e das Comunidades Portuguesas"}, type: "D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/portugal-day/"}},
         {inherits: "Feast of St. Anthony of Padua", type: "D", start: {mon: 6, d: 13}},
         {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},

@@ -21,7 +21,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/fathers-day"}, inherits: "Father’s Day"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/jura-independence-day/"}, inherits: "Independence Day", first: {era: 1, y: 1979}, locations: {"en": "Jura"}},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/saint-peter-and-saint-paul"}, inherits: "Feast of Saints Peter and Paul"},
         {inherits: "National Day", type: "D", start: {mon: 8, d: 1}, first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},

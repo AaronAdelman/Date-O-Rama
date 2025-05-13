@@ -19,7 +19,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {titles: {"en": "Ascension Day Holiday"}, type: "D", start: {Easter:  "Easter", offsetD: 43}},
         {type: "D", start: {Easter:  "Easter", offsetD: 64}, urls: {"en": "https://nationaltoday.com/columbia-corpus-christi-holiday/"}, titles: {"en": "Corpus Christi Holiday"}},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {titles: {"en": "Feast of the Sacred Heart (in lieu)"}, type: "D", start: {Easter:  "Easter", offsetD: 71}},
         {inherits: "Feast of the Sacred Heart", type: "D", start: {Easter:  "Easter", offsetD: 68}},

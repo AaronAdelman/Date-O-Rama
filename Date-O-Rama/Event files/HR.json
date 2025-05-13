@@ -12,7 +12,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Statehood Day", type: "D", start: {mon: 5, d: 30}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Croatia)"}, first: {era: 1, y: 1991}, notes: {"en": "National Day"}},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/anti-fascist-struggle-day/"}, titles: {"en": "Anti-Fascist Struggle Day", "hr": "Dan antifašističke borbe"}},
         {titles: {"en": "Victory and Homeland Thanksgiving Day", "hr": "Dan pobjede"}, type: "D", start: {mon: 8, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/croatia/victory-and-homeland-thanksgiving-day"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},

@@ -18,7 +18,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "World Children’s Day", type: "D", start: {mon: 9, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/germany/thuringia/international-childrens-day"}, notes: {"en": "German World Children’s Day"}},
         {type: "D", start: {mon: 10, d: 3}, inherits: "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/national-unity-day/"}, titles: {"en": "German Unity Day", "he": "יום האחדות הגרמנית", "de": "Tag der Deutschen Einheit"}},

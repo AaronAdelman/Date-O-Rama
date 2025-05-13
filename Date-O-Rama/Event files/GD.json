@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/caricom-day"}, inherits: "CARICOM Day"},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/emancipation-day"}},
         {type: "D", start: {mon: 8, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/grenada/spicemas"}, inherits: "Carnival Monday"},

@@ -68,7 +68,7 @@
         {inherits: "World AIDS Day", type: "D", start: {mon: 12, d: 1}, first: {era: 1, y: 1988}},
         
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "Engineer’s Day"},

@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/mothers-day"}, inherits: "Mother’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/fathers-day"}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/st-johns-day-venezuela/"}, inherits: "St. John’s Day"},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/saint-peter-and-saint-paul"}, inherits: "Feast of Saints Peter and Paul"},

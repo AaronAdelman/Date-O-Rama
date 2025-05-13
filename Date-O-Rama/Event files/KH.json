@@ -1,7 +1,7 @@
 {
     titles: {"*": "KH"},
     "//": "Cambodia",
-    "TODO": "Buddhist observances, Royal Ploughing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances, Visak Bochea Day",
+    "TODO": "Buddhist observances, Royal Ploughing Ceremony/Royal Plowing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances, Visak Bochea Day",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
@@ -18,7 +18,7 @@
         {titles: {"en": "Coronation Day of King Sihamoni", "km": "ព្រះរាជពិធីគ្រងព្រះបរមរាជសម្បត្តិរបស់ព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, type: "D", start: {mon: 10, d: 29}, inherits: "*Coronation*"},
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/cambodia-independence-day/"}, first: {era: 1, y: 1953}},
 
-        {type: "D", start: {mon: 5, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, titles: {"en": "National Day of Remembrance", "km": "ទិវាជាតិនៃការចងចាំ"}, first: {era: 1, y: 2018}},
+        {type: "D", start: {mon: 5, d: 20}, titles: {"en": "National Day of Remembrance", "km": "ទិវាជាតិនៃការចងចាំ"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},

@@ -18,7 +18,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/liechtenstein/pentecost-sunday"}, titles: {"en": "Whitsunday"}},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "National Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1886}, urls: {"en": "https://nationaltoday.com/liechtenstein-national-day/"}},
         {type: "D", start: {mon: 9, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/liechtenstein/feast-of-our-lady-of-victories"}, inherits: "Nativity of Mary"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},

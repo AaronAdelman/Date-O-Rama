@@ -14,7 +14,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "Constitution Day", type: "D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/seychelles-constitution-day/"}, first: {era: 1, y: 1993}, notes: {"en": "Constitutional Day"}},
         {inherits: "Independence Day", type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/seychelles-independence-day/"}, first: {era: 1, y: 1976}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
