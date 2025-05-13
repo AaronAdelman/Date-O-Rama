@@ -18,6 +18,6 @@
         {titles: {"en": "Green March Day"}, type: "D", start: {mon: 11, d: 6}},
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 18}, first: {era: 1, y: 1955}},
 
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
     ]
 }

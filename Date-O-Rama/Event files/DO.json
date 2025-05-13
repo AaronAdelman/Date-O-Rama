@@ -15,7 +15,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/mothers-day"}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/mothers-day"}},
         {inherits: "Corpus Christi", type: "D", start: {Easter:  "Easter", offsetD: 60}},
         {inherits: "Father’s Day", type: "D", start: {mon: 7, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/fathers-day"}},
         {type: "D", start: {mon: 8, d: 16}, inherits: "Restoration Day", urls: {"en": "https://nationaltoday.com/restoration-day-dominican-republic/"}},

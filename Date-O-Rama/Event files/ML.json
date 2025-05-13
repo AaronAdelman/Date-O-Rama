@@ -18,6 +18,6 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}},
+        {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
     ]
 }

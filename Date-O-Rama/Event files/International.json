@@ -9,7 +9,7 @@
         {inherits: "GivingTuesday", type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, first: {era: 1, y: 2012}},
         {inherits: "International Day Against Homophobia, Transphobia, and Biphobia", type: "D", start: {mon: 5, d: 17}},
         {inherits: "International Day for Biological Diversity", type: "D", start: {mon: 5, d: 22}, first: {era: 1, y: 2001}},
-        {inherits: "International Francophonie Day", type: "D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 3, d: 20}, inherits: "International Francophonie Day", first: {era: 1, y: 1988}},
         {inherits: "International Olympic Day", type: "D", start: {mon: 6, d: 23}, first: {era: 1, y: 1948}},
         {inherits: "Kwanzaa (day 1:  Umoja)", type: "D", start: {mon: 12, d: 26}, first: {era: 1, y: 1966}},
         {inherits: "Kwanzaa (day 2:  Kujichagulia)", type: "D", start: {mon: 12, d: 27}, first: {era: 1, y: 1966}},
