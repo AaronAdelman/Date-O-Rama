@@ -1241,9 +1241,11 @@
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "National Purebred Dog Day"}, urls: {"en": "https://nationalpurebreddogday.com/"}, emoji: "🐕", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "National Rotate Your Beer Day"}, urls: {"en": "https://nationaltoday.com/national-rotate-your-beer-day/"}, first: {era: 1, y: 2019}, emoji: "🍺"},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Clean Your Room Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-clean-your-room-day/"}, notes: {"en": "Clean Your Room Day\nNational Clean Up Your Room Day"}, emoji: "🧹"},
+        {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Liver and Onions Day"}, urls: {"en": "https://www.checkiday.com/eb8d1af575fa41612ba17562871905e1/national-liver-and-onions-day"}, first: {era: 1, y: 2016}, emoji: "🧅"},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Ship Via Rail Day"}, urls: {"en": "https://nationaltoday.com/national-ship-via-rail-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Shrimp Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-shrimp-day/"}, emoji: "🦐"},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "National Small Business Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-small-business-day/"}},
+        {type: "D", start: {mon: 5, d: 11}, titles: {"en": "National Mocha Torte Day"}, notes: {"en": "Mocha Torte Day"}, urls: {"en": "https://www.checkiday.com/bdec5daeb68d7869ca96ebec56a73d74/national-mocha-torte-day"}},
         {type: "D", start: {mon: 5, d: 11}, titles: {"en": "National Twilight Zone Day"}, urls: {"en": "https://www.daysoftheyear.com/days/twilight-zone-day/"}, emoji: "꩜"},
         {type: "D", start: {mon: 5, d: 12}, titles: {"en": "National Fibromyalgia Awareness Day", "he": "יום המודעות לפיברומיאלגיה הלאומי"}, urls: {"en": "https://nationaltoday.com/national-fibromyalgia-awareness-day/"}, first: {era: 1, y: 1992}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 5, d: 12}, titles: {"en": "National Limerick Day"}, emoji: "🖋", notes: {"en": "Limerick Day"}, urls: {"en": "https://www.daysoftheyear.com/days/limerick-day/"}, first: {era: 1, y: 1984}},
@@ -1395,6 +1397,7 @@
         {type: "D", start: {mon: 5, wkd: [3], nth: 1}, titles: {"en": "Childhood Depression Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/childhood-depression-awareness-day/"}, first: {era: 1, y: 1997}, inherits: "*MedAwareness*", notes: {"en": "Green Ribbon Day"}},
         {type: "D", start: {mon: 5, d: 6, thruD: 12, wkd: [6]}, titles: {"en": "Provider Appreciation Day®"}, urls: {"en": "https://www.providerappreciation.org/"}, notes: {"en": "Child Care Provider Day\nNational Provider Appreciation Day\nNational Child Care Provider Day"}, first: {era: 1, y: 1996}, emoji: "👦👧👧"},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Cosmopolitan Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cosmopolitan-day/"}, emoji: "🍸"},
+        {type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "National Veal Ban Action Day"}, urls: {"en": "https://www.checkiday.com/cb5c4c6f06b7ff919aa51b83e7f089eb/national-veal-ban-action-day"}, first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 5, wkd: [7], nth: 2}, titles: {"en": "National Wanna Have A Catch Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-wanna-have-a-catch-day-second-saturday-in-may"}, first: {era: 1, y: 2025}, emoji: "⚾", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Roast Leg of Lamb Day"}, urls: {"en": "https://www.daysoftheyear.com/days/roast-leg-of-lamb-day/"}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en": "National Amyloidosis Day"}, urls: {"en": "https://nationaltoday.com/national-amyloidosis-day/"}, first: {era: 1, y: 2016}, inherits: "*MedAwareness*"},
@@ -2374,6 +2377,10 @@
         
         {type: "W", start: {mon: 5, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [4]}, titles: {"en": "World Stationery Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-stationery-day/"}, emoji: "📄"},
+        ]},
+        
+        {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Family Reading Week"}, emoji: "📚", first: {era: 1, y: 1995}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [5]}, titles: {"en": "Make a Book Day"}, notes: {"en": "Make-A-Book Day"}, urls: {"en": "https://nationaltoday.com/make-a-book-day/"}, emoji: "📖"},
         ]},
         
     ],

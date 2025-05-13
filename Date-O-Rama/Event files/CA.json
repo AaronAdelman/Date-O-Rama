@@ -121,7 +121,7 @@
         {type: "M", start: {mon: 11}, titles: {"en": "Indigenous Disability Awareness Month"}},
         {type: "M", start: {mon: 4}, inherits: "Dalit History Month", first: {era: 1, y: 2022}},
         {type: "M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}, emoji: "🐕‍🦺"},
-        {type: "M", start: {mon: 5}, titles: {"en": "South Asian Heritage Month"}},
+        {type: "M", start: {mon: 5}, titles: {"en": "Asian Heritage Month", "fr": "Mois du patrimoine asiatique"}, notes: {"en": "South Asian Heritage Month"}, urls: {"en": "https://www.canada.ca/en/canadian-heritage/campaigns/asian-heritage-month.html", "fr": "https://www.canada.ca/fr/patrimoine-canadien/campagnes/mois-patrimoine-asiatique.html"}},
         {type: "M", start: {mon: 6}, inherits: "ALS Awareness Month"},
         {type: "nD", start: {era: 1, y: 2021, mon: 10, d: 29}, end: {era: 1, y: 2021, mon: 11, d: 7}, inherits: "Ontario Garlic Week"},
         {type: "nD", start: {era: 1, y: 2022, mon: 9, d: 23}, end: {era: 1, y: 2022, mon: 10, d: 2}, inherits: "Ontario Garlic Week"},
@@ -144,6 +144,7 @@
         {type: "D", start: {mon: 4, d: 11}, inherits: "National Poutine Day", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 3, d: 5}, inherits: "National Poutine Day", first: {era: 1, y: 2014}},
         {type: "W", start: {mon: 5, fullWk: 1}, inherits: "North American Occupational Safety and Health Week", first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 5, d: 5}, titles: {"en": "Dutch Heritage Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://en.wikipedia.org/wiki/Canada–Netherlands_relations"}, emoji: "🇳🇱🇨🇦"},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Canadian Library Month"}, urls: {"en": "https://librarianship.ca/features/canadian-library-month/"}, first: {era: 1, y: 2006}, emoji: "📚", overlappingSubEvents: [
             {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "Canadian Library Workers Day", "fr": "Journeé canadienne des employés des bibliothéques"}, urls: {"en": "https://librarianship.ca/event/canadian-library-workers-day-2024/"}, emoji: "📚"},
