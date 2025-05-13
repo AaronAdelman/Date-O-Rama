@@ -39,7 +39,7 @@ struct ASAProcessedClock {
 
     var veryShortStandaloneWeekdaySymbols:  Array<String>?
 
-    var month:  Int
+//    var month:  Int
 
     var dateEvents:  Array<ASAEventCompatible>
     var timeEvents:  Array<ASAEventCompatible>
@@ -118,7 +118,8 @@ struct ASAProcessedClock {
 //        self.calendarType = clock.calendar.calendarCode.type
         self.supportsTimes = clock.calendar.supportsTimes
 
-        self.month = dateComponents.month ?? 0
+//        self.month = dateComponents.month ?? 0
+        let month = dateComponents.month ?? 0
 
         let startOfDay: Date = clock.startOfDay(date: now, location: location)
         let startOfNextDay: Date   = clock.startOfNextDay(date: now, location: location)
