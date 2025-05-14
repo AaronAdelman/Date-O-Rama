@@ -81,7 +81,7 @@ struct ASAClockCellBody:  View {
     @State var detailType = ASAClockCellBodyDetailType.none
     
     @ObservedObject var clock:  ASAClock
-        
+    
 #if os(watchOS)
     let compact = true
 #else
@@ -96,16 +96,10 @@ struct ASAClockCellBody:  View {
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
     
-//    fileprivate func shouldShowMiniClock() -> Bool {
-//        return !compact && shouldShowTime && processedClock.hasValidTime
-//    } //func shouldShowMiniClock() -> Bool
-    
-    fileprivate func numberFormatter() -> NumberFormatter {
-        let temp = NumberFormatter()
-        temp.locale = Locale(identifier: processedClock.clock.localeIdentifier)
-        return temp
-    } // func numberFormatter() -> NumberFormatter
-    
+    //    fileprivate func shouldShowMiniClock() -> Bool {
+    //        return !compact && shouldShowTime && processedClock.hasValidTime
+    //    } //func shouldShowMiniClock() -> Bool
+      
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
@@ -155,7 +149,7 @@ struct ASAClockCellBody:  View {
                     if processedClock.supportsMonths && shouldShowMiniCalendar {
                         Spacer()
                         
-                        ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedClock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: processedClock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
+                        ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth,  localeIdentifier: clock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: processedClock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
                     }
                     
                     // TODO:  The miniclocks (except for the progress views) crash the app on iPadOS in full-screen, so I disabled them.
@@ -193,11 +187,12 @@ struct ASAClockCellBody:  View {
                                 }
                                 Spacer()
                             } // HStack
-                            ASAClockDetailView(selectedClock: processedClock.clock, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true, tempLocation: processedClock.location)
-                                .onReceive(processedClock.clock.objectWillChange) { _ in
-                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                    ASAUserData.shared.savePreferences(code: .complications)
-                                }
+                            ASAClockDetailView(selectedClock: clock, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true, tempLocation: processedClock.location)
+                                .onReceive(
+                                    clock.objectWillChange) { _ in
+                                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                        ASAUserData.shared.savePreferences(code: .complications)
+                                    }
                         }
                     })
                 } else {
@@ -245,7 +240,7 @@ struct ASAClockCellBody:  View {
                         ASAClockMenuSymbol()
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {
-//                        debugPrint("❎ Clock cell detail view was dismissed.")
+                        //                        debugPrint("❎ Clock cell detail view was dismissed.")
                     }, content: {
                         ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType)
                     })
@@ -405,7 +400,7 @@ struct ASAClockEventsForEach:  View {
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? primaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
             ASALinkedEventCell(event: event, primaryClock: primaryClock, now: $now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
-//                .frame(height: 32.0)
+            //                .frame(height: 32.0)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach

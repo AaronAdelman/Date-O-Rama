@@ -34,7 +34,7 @@ struct ASAProcessedClock {
 //    var transitionType:  ASATransitionType
 //    var calendarType:  ASACalendarType
 
-    var localeIdentifier:  String
+//    var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
 
     var veryShortStandaloneWeekdaySymbols:  Array<String>?
@@ -108,11 +108,11 @@ struct ASAProcessedClock {
 
 //        self.transitionType = clock.calendar.transitionType
 
-        if clock.localeIdentifier == "" {
-            self.localeIdentifier = Locale.current.identifier
-        } else {
-            self.localeIdentifier = clock.localeIdentifier
-        }
+//        if clock.localeIdentifier == "" {
+//            self.localeIdentifier = Locale.current.identifier
+//        } else {
+//            self.localeIdentifier = clock.localeIdentifier
+//        }
         self.calendarCode = clock.calendar.calendarCode
 
 //        self.calendarType = clock.calendar.calendarCode.type

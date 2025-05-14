@@ -111,7 +111,6 @@ struct ASAMiniCalendarView:  View {
     var day:  Int
     var weekday:  Int
     var daysInMonth:  Int
-    var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
@@ -167,6 +166,13 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
     
     var body: some View {
+        let numberFormatter:  NumberFormatter = {
+            let temp = NumberFormatter()
+            temp.locale = Locale(identifier:
+                                    localeIdentifier)
+            return temp
+        }()
+        
         let gridFirstDay = {
             if monthIsBlank {
                 return 1
@@ -222,8 +228,6 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 30, weekday: 1, daysInMonth: 30, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
-                            weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7],
-                            numberFormat: .system, monthIsBlank: false)
+        ASAMiniCalendarView(daysPerWeek: 7, day: 30, weekday: 1, daysInMonth: 30, localeIdentifier: "en_US", weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], numberFormat: .system, monthIsBlank: false)
     }
 }
