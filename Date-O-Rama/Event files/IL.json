@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 12, d: 8}, titles: {"he": "יום המחזור", "en": "Recycling Day"}, emoji: "♻️", urls: {"he": "https://b.tmir.org.il/recycle-day/"}},
         {type: "D", start: {mon: 3, d: 24}, titles: {"he": "יום הולדת להפועל חיפה", "en": "HapPo‘el Ḥayfah Day"}, emoji: "⚽️"},
         {type: "D", start: {mon: 3, d: 24}, titles: {"he": "יום הולדת לטלוויזיה החינוכית", "en": "Channel 23 Day"}, emoji: "📺"},
-        {type: "D", start: {mon: 5, d: 14}, titles: {"he": "יום ההכרזה על הקמת מדינת ישראל", "en": "Day of the Declaration of the Establishment of the State of Israel"}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 5, d: 14}, inherits: "Declaration Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 5, d: 26}, titles: {"he": "יום הולדת לצה״ל", "en": "Birthday of the IDF"}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"he": "הטבח בנמל התעופה לוד", "en": "Anniversary of the Lod Airport Massacre"}, first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"he": "https://haluzhaivri.org.il/page/36474"}},
@@ -24,6 +24,5 @@
         {type: "D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {type: "D", start: {mon: 7, d: 17}, titles: {"he": "יום הפרגון הבינלאומי", "en": "International Firgun Day"}, urls: {"en": "https://firgunday.firgunator.com/"}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"he": "יום ויקיפדיה העברית", "en": "Hebrew Wikipedia Day"}, first: {era: 1, y: 2003}, emoji: "🌐"},
-        {type: "D", start: {mon: 5, d: 14}, inherits: "Declaration Day", first: {era: 1, y: 2025}},
     ]
 }
