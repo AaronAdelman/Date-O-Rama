@@ -56,7 +56,7 @@ struct ASAProcessedClock {
     var blankWeekdaySymbol: String?
     var timeFormat: ASATimeFormat
     
-    var location: ASALocation
+//    var location: ASALocation
     var usesDeviceLocation: Bool
     
     var supportsExternalEvents: Bool
@@ -65,7 +65,7 @@ struct ASAProcessedClock {
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
 //        self.clock = clock
-        self.location = location
+//        self.location = location
         self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now, location: location)

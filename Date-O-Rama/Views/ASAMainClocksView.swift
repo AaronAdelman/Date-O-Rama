@@ -240,7 +240,7 @@ struct ASAMainClocksSectionView: View {
                     let shouldShowMiniCalendar = true
                     let indexIsOdd             = index % 2 == 1
 #endif
-                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock)
+                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock, location: locationWithClocks.location)
                 }
             }
             //            .onDelete(perform: onDelete)
