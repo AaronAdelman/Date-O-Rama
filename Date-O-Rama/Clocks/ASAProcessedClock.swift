@@ -15,7 +15,7 @@ struct ASAProcessedClock {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
-    var canSplitTimeFromDate:  Bool
+//    var canSplitTimeFromDate:  Bool
     var supportsLocations:  Bool
     var supportsTimes:  Bool
 
@@ -69,7 +69,7 @@ struct ASAProcessedClock {
         self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now, location: location)
-        self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
+//        self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
 //        let timeZone = location.timeZone
