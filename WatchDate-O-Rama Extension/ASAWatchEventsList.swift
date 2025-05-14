@@ -41,12 +41,12 @@ struct ASAWatchEventsList: View {
             let numberOfDateEvents: Int = processedClock.dateEvents.count
             if numberOfDateEvents > 0 {
                 let dateEvents = processedClock.dateEvents.trimmed(dateEventVisibility: clock.allDayEventVisibility, now: now)
-                ASAClockEventsForEach(processedClock: processedClock, events: dateEvents, now: $now)
+                ASAClockEventsForEach(processedClock: processedClock, events: dateEvents, now: $now, clock: clock)
             }
             let numberOfTimeEvents: Int = processedClock.timeEvents.count
             if numberOfTimeEvents > 0 {
                 let timeEvents = processedClock.timeEvents.trimmed(timeEventVisibility: eventVisibility, now: now)
-                ASAClockEventsForEach(processedClock: processedClock, events: timeEvents, now: $now)
+                ASAClockEventsForEach(processedClock: processedClock, events: timeEvents, now: $now, clock: clock)
             }
         } // List
     } // var body

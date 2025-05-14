@@ -11,7 +11,7 @@ import CoreLocation
 import FrenchRepublicanCalendarCore
 
 struct ASAProcessedClock {
-    var clock:  ASAClock
+//    var clock:  ASAClock
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
@@ -64,7 +64,7 @@ struct ASAProcessedClock {
     var allDayEventVisibility: ASAClockCellDateEventVisibility
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
-        self.clock = clock
+//        self.clock = clock
         self.location = location
         self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
@@ -132,8 +132,8 @@ struct ASAProcessedClock {
         self.regionCode               = location.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         
-        if self.clock.calendar is ASACalendarSupportingBlankMonths {
-            let cal = self.clock.calendar as! ASACalendarSupportingBlankMonths
+        if clock.calendar is ASACalendarSupportingBlankMonths {
+            let cal = clock.calendar as! ASACalendarSupportingBlankMonths
             self.monthIsBlank = cal.blankMonths.contains(month)
             self.blankWeekdaySymbol = cal.blankWeekdaySymbol
         } else {
