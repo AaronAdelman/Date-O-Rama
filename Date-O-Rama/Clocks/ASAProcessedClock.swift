@@ -50,7 +50,7 @@ struct ASAProcessedClock {
     var weekendDays: Array<Int>?
     var regionCode: String?
     
-    var miniCalendarNumberFormat: ASANumberFormat
+//    var miniCalendarNumberFormat: ASANumberFormat
     
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
@@ -130,7 +130,7 @@ struct ASAProcessedClock {
         self.startOfDay               = startOfDay
         self.startOfNextDay           = startOfNextDay
         self.regionCode               = location.regionCode
-        self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
+//        self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         
         if clock.calendar is ASACalendarSupportingBlankMonths {
             let cal = clock.calendar as! ASACalendarSupportingBlankMonths
