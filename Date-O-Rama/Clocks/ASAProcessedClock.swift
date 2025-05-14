@@ -54,7 +54,7 @@ struct ASAProcessedClock {
     
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
-    var timeFormat: ASATimeFormat
+//    var timeFormat: ASATimeFormat
     
 //    var location: ASALocation
     var usesDeviceLocation: Bool
@@ -141,7 +141,7 @@ struct ASAProcessedClock {
             self.blankWeekdaySymbol = nil
         }
  
-        self.timeFormat = clock.timeFormat
+//        self.timeFormat = clock.timeFormat
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
