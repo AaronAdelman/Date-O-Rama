@@ -12,7 +12,7 @@ import EventKit
 
 struct ASAClockDetailView: View {
     @ObservedObject var selectedClock:  ASAClock
-    let location: ASALocation
+    @ObservedObject var location: ASALocation
     let usesDeviceLocation: Bool
     let now:  Date
     
@@ -76,7 +76,7 @@ struct ASAClockDetailView: View {
 
 struct ASAClockDetailEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
-    let location: ASALocation
+    @ObservedObject var location: ASALocation
     let usesDeviceLocation: Bool
     let now:  Date
     let shouldShowTime:  Bool

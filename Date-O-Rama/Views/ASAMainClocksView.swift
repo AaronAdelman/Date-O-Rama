@@ -22,20 +22,18 @@ struct ASAMainClocksView: View {
     }
 } // struct ASAMainClocksView
 
-
-enum ASAMainClocksSectionDetail {
-    case none
-    case newClock
-    case locationInfo
-} // enum ASAMainClocksSectionDetail
-
-
 struct ASAMainClocksSectionView: View {
+    enum Detail {
+        case none
+        case newClock
+        case locationInfo
+    } // enum ASAMainClocksSectionDetail
+
     @Binding var now:  Date
     @Binding var locationWithClocks: ASALocationWithClocks
     
     @State private var showingDetailView = false
-    @State private var detail: ASAMainClocksSectionDetail = .none
+    @State private var detail: Detail = .none
     
     @State private var showingActionSheet = false
     

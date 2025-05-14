@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct ASALocation:  Equatable, Identifiable, Hashable {
+class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject {
     var id = UUID()
     var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
@@ -26,7 +26,24 @@ struct ASALocation:  Equatable, Identifiable, Hashable {
     
     var timeZone:  TimeZone = TimeZone.GMT
     
-    var type: ASALocationType
+    var type: ASALocationType = .EarthUniversal
+    
+    init(id: UUID = UUID(), location: CLLocation, name: String? = nil, locality: String? = nil, country: String? = nil, regionCode: String? = nil, postalCode: String? = nil, administrativeArea: String? = nil, subAdministrativeArea: String? = nil, subLocality: String? = nil, thoroughfare: String? = nil, subThoroughfare: String? = nil, timeZone: TimeZone, type: ASALocationType) {
+        self.id = id
+        self.location = location
+        self.name = name
+        self.locality = locality
+        self.country = country
+        self.regionCode = regionCode
+        self.postalCode = postalCode
+        self.administrativeArea = administrativeArea
+        self.subAdministrativeArea = subAdministrativeArea
+        self.subLocality = subLocality
+        self.thoroughfare = thoroughfare
+        self.subThoroughfare = subThoroughfare
+        self.timeZone = timeZone
+        self.type = type
+    }
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(location.coordinate.latitude)
@@ -357,4 +374,19 @@ extension ASALocation {
             return ASALocation.NullIsland
         }
     } // static var currentTimeZoneDefault
+    
+    func updateWith(_ otherLocation: ASALocation) {
+        self.location              = otherLocation.location
+        self.name                  = otherLocation.name
+        self.country               = otherLocation.country
+        self.locality              = otherLocation.locality
+        self.regionCode            = otherLocation.regionCode
+        self.postalCode            = otherLocation.postalCode
+        self.administrativeArea    = otherLocation.administrativeArea
+        self.subAdministrativeArea = otherLocation.subAdministrativeArea
+        self.subLocality           = otherLocation.subLocality
+        self.thoroughfare          = otherLocation.thoroughfare
+        self.subThoroughfare       = otherLocation.subThoroughfare
+        self.timeZone              = otherLocation.timeZone
+    }
 } // extension ASALocation

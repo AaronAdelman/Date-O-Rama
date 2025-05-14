@@ -133,7 +133,6 @@ extension ASALocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
         self.lastError = error
-        //        self.locationManager.requestWhenInUseAuthorization()
         self.setUp()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     
@@ -146,12 +145,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
         }
         //        print(#file, #function, location)
         self.lastError = nil
-        
-        //        let Δ = self.lastDeviceLocation?.distance(from: location)
-        //
-        //        if Δ == nil || Δ! >= 10.0 {
         self.reverseGeocode(location)
-        //        }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     
     fileprivate func reverseGeocode(_ location: CLLocation) {
@@ -161,13 +155,8 @@ extension ASALocationManager: CLLocationManagerDelegate {
             
             if place == nil || error != nil {
                 //                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
-                
-                var tempLocation = ASALocation(type: .EarthLocation)
-                tempLocation.location  = location
-                tempLocation.timeZone  = TimeZone.autoupdatingCurrent
-                
-                tempLocation.country    = self.lastDevicePlacemark?.country
-                tempLocation.regionCode = self.lastDevicePlacemark?.isoCountryCode
+                                
+                let tempLocation = ASALocation(location: location, country: self.lastDevicePlacemark?.country, regionCode: self.lastDevicePlacemark?.isoCountryCode, timeZone: TimeZone.autoupdatingCurrent, type: .EarthLocation)
                 
                 self.finishDidUpdateLocations(tempLocation)
                 
@@ -199,7 +188,6 @@ extension ASALocationManager: CLLocationManagerDelegate {
     
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
         //        debugPrint(#file, #function)
-        //        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestAlwaysAuthorization()
     } // func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager)
     

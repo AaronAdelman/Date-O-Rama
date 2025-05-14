@@ -11,7 +11,7 @@ import CoreLocation
 
 struct ASALocationCell:  View {
     @Binding var usesDeviceLocation:  Bool
-    @Binding var locationData:  ASALocation
+    @ObservedObject var locationData:  ASALocation
     @ObservedObject var locationManager = ASALocationManager.shared
     
     func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
@@ -127,8 +127,8 @@ struct ASALocationCell:  View {
     } // body
 } // struct ASALocationCell
 
-struct ASALocationCell_Previews: PreviewProvider {
-    static var previews: some View {
-        ASALocationCell(usesDeviceLocation: .constant(true), locationData: .constant(ASALocation(type: .EarthLocation)))
-    }
-}
+//struct ASALocationCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ASALocationCell(usesDeviceLocation: .constant(true), locationData: .constant(ASALocation(type: .EarthLocation)))
+//    }
+//}

@@ -16,11 +16,12 @@ struct ASALocationChooserView: View {
 
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
-    @State var tempLocationData:  ASALocation = ASALocation(type: .EarthLocation)
+    @StateObject var tempLocationData:  ASALocation = ASALocation.NullIsland
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {
-                tempLocationData = ASALocationManager.shared.deviceLocation
+                let deviceLocation = ASALocationManager.shared.deviceLocation
+                tempLocationData.updateWith(deviceLocation)
             }
         } // didSet
     } // var tempUsesDeviceLocation
@@ -98,7 +99,7 @@ struct ASALocationChooserView: View {
             
             Form {
                 Section {
-                    ASALocationCell(usesDeviceLocation: $tempUsesDeviceLocation, locationData: $tempLocationData)
+                    ASALocationCell(usesDeviceLocation: $tempUsesDeviceLocation, locationData: tempLocationData)
                     ASATimeZoneCell(timeZone: $tempLocationData.timeZone, now: Date())
                 }
                 
@@ -143,9 +144,9 @@ struct ASALocationChooserView: View {
                             ForEach(self.locationDataArray, id: \.id) {
                                 locationData
                                 in
-                                ASALocationChooserViewCell(location: locationData, selectedLocation: self.$tempLocationData)
+                                ASALocationChooserViewCell(location: locationData, selectedLocation: self.tempLocationData)
                                     .onTapGesture {
-                                        self.tempLocationData = locationData
+                                        self.tempLocationData.updateWith(locationData)
                                     }
                             }
                         } // Section
@@ -164,8 +165,8 @@ struct ASALocationChooserView: View {
             .font(Font.body)
             .onAppear() {
                 self.tempUsesDeviceLocation = self.locationWithClocks.usesDeviceLocation
-                self.tempLocationData = self.locationWithClocks.location
-            }
+                self.tempLocationData.updateWith(self.locationWithClocks.location)
+          }
             .onDisappear() {
             }
         }
@@ -196,7 +197,7 @@ struct ASALocationChooserView: View {
 struct ASALocationChooserViewCell:  View {
     var location: ASALocation
     
-    @Binding var selectedLocation: ASALocation
+    @ObservedObject var selectedLocation: ASALocation
     
     var body: some View {
         HStack {
