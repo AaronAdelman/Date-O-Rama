@@ -149,7 +149,7 @@ struct ASAClockCellBody:  View {
                     }
                 }
 #else
-                if processedClock.supportsTimes {
+                if clock.calendar.supportsTimes {
                     if processedClock.supportsMonths && shouldShowMiniCalendar {
                         Spacer()
                         

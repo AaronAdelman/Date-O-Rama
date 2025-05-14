@@ -16,8 +16,8 @@ struct ASAProcessedClock {
     var dateString:  String
     var timeString:  String?
 //    var canSplitTimeFromDate:  Bool
-    var supportsLocations:  Bool
-    var supportsTimes:  Bool
+//    var supportsLocations:  Bool
+//    var supportsTimes:  Bool
 
     var daysPerWeek: Int?
     var day:  Int
@@ -73,7 +73,7 @@ struct ASAProcessedClock {
         self.dateString = dateString
         self.timeString = timeString
 //        let timeZone = location.timeZone
-        self.supportsLocations = clock.calendar.supportsLocations
+//        self.supportsLocations = clock.calendar.supportsLocations
         
         self.daysPerWeek = clock.daysPerWeek
         
@@ -116,7 +116,7 @@ struct ASAProcessedClock {
         self.calendarCode = clock.calendar.calendarCode
 
 //        self.calendarType = clock.calendar.calendarCode.type
-        self.supportsTimes = clock.calendar.supportsTimes
+//        self.supportsTimes = clock.calendar.supportsTimes
 
 //        self.month = dateComponents.month ?? 0
         let month = dateComponents.month ?? 0
