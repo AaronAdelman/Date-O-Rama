@@ -1,5 +1,5 @@
 //
-//  ASACalendarSupportingEras.swift
+//  ASACalendarWithEras.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/02/2022.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ASACalendarSupportingEras: ASACalendar {
+protocol ASACalendarWithEras: ASACalendar {
     // Symbols
     
     mutating func eraSymbols(localeIdentifier: String) -> Array<String>

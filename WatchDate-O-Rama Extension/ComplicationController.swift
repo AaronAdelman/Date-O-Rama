@@ -10,7 +10,7 @@ import ClockKit
 import WatchKit
 import SwiftUI
 
-extension ASAUserData {
+extension ASAModel {
     func locationWithClocks(for complicationFamily:  CLKComplicationFamily) -> ASALocationWithClocks? {
         switch complicationFamily {
         case .modularLarge, .graphicRectangular:
@@ -32,7 +32,7 @@ extension ASAUserData {
             return nil
         } // switch complicationFamily
     } // func locationWithClocks(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>?
-} // extension ASAUserData
+} // extension ASAModel
 
 
 // MARK: -
@@ -40,7 +40,7 @@ extension ASAUserData {
 class ComplicationController: NSObject, CLKComplicationDataSource {
 //    public var complication:  CLKComplication?
     
-    let  userData = ASAUserData.shared
+    let  userData = ASAModel.shared
 
     
     // MARK: - Timeline Configuration

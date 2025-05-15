@@ -18,7 +18,7 @@ struct ASAClockDetailView: View {
     
     let shouldShowTime:  Bool
     
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     
     @State private var showingActionSheet = false
     

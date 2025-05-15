@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters, ASACalendarSupportingEras {
+class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
     var defaultDateFormat:  ASADateFormat = .full
     
     var calendarCode:  ASACalendarCode
@@ -275,7 +275,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     
-    // MARK:  - ASACalendarSupportingMonths
+    // MARK:  - ASACalendarWithMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
@@ -302,7 +302,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     }
     
     
-    // MARK:  - ASACalendarSupportingQuarters
+    // MARK:  - ASACalendarWithQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
@@ -321,7 +321,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     }
  
     
-    // MARK:  - ASACalendarSupportingEras
+    // MARK:  - ASACalendarWithEras
     
     func eraSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.eraSymbols(localeIdentifier: localeIdentifier)

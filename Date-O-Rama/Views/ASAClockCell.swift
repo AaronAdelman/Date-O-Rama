@@ -195,7 +195,7 @@ struct ASAClockCellBody:  View {
                                 .onReceive(
                                     clock.objectWillChange) { _ in
                                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                        ASAUserData.shared.savePreferences(code: .complications)
+                                        ASAModel.shared.savePreferences(code: .complications)
                                     }
                         }
                     })
@@ -292,7 +292,7 @@ struct ASAClockCellMenuView: View {
                 ASAClockDetailView(selectedClock: clock, location: location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false, tempLocation: location)
                     .onReceive(clock.objectWillChange) { _ in
                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }
             }
         } else if detailType == .newEvent {

@@ -1,5 +1,5 @@
 //
-//  ASACalendarSupportingQuarters.swift
+//  ASACalendarWithQuarters.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/02/2022.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol ASACalendarSupportingQuarters: ASACalendar {
+protocol ASACalendarWithQuarters: ASACalendar {
     // Symbols
     
     mutating func quarterSymbols(localeIdentifier: String) -> Array<String>
     mutating func shortQuarterSymbols(localeIdentifier: String) -> Array<String>
    mutating func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String>
     mutating func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String>
-} // protocol ASACalendarSupportingQuarters
+} // protocol ASACalendarWithQuarters

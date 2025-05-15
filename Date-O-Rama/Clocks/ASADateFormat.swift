@@ -14,8 +14,6 @@ enum ASADateFormat:  String {
     case medium                           = "medium"
     case long                             = "long"
     case full                             = "full"
-//    case localizedLDML                    = "loc"
-    //    case rawLDML                    = "raw"
     case ISO8601YearMonthDay              = "ISO8601YearMonthDay"
     case ISO8601YearWeekDay               = "ISO8601YearWeekDay"
     case ISO8601YearDay                   = "ISO8601YearDay"
@@ -33,7 +31,7 @@ enum ASADateFormat:  String {
     
     case shortYearOnly                    = "SYO"
     case shortYearAndMonthOnly            = "SYAMO"
-
+    
     case fullWithRomanYear                = "FWRY"
     case longWithRomanYear                = "LWRY"
     case shortWithRomanYear               = "SWRY"
@@ -51,10 +49,6 @@ extension ASADateFormat {
             unlocalizedString = "ITEM_Long"
         case .full:
             unlocalizedString = "ITEM_Full"
-//        case .localizedLDML:
-//            unlocalizedString = "ITEM_Components"
-//        case .rawLDML:
-//            unlocalizedString = "ITEM_Raw_LDML"
         case .none:
             unlocalizedString = "ITEM_None"
         case .ISO8601YearMonthDay:
@@ -104,11 +98,11 @@ extension ASADateFormat {
         case .ISO8601YearDay, .ISO8601YearWeekDay, .ISO8601YearMonthDay :
             return true
             
-            default:
+        default:
             return false
         } // switch self
     } // var isIOS8601: Bool
-
+    
     var shortened:  ASADateFormat {
         get {
             switch self {
@@ -123,30 +117,6 @@ extension ASADateFormat {
             } // switch self
         } // get
     } // var shortened
-
-//    var watchShortened:  ASADateFormat {
-//        get {
-//            switch self {
-//            case .full, .mediumWithWeekday:
-//                return .shortWithWeekday
-//
-//            case .long, .medium:
-//                return .short
-//                
-//            case .fullWithoutYear:
-//                return .shortWithWeekdayWithoutYear
-//                
-//            case .longWithoutYear, .mediumWithoutYear:
-//                return .shortWithoutYear
-//                
-//            case .fullWithRomanYear, .longWithRomanYear:
-//                return .shortWithRomanYear
-//
-//            default:
-//                return self
-//            } // switch self
-//        } // get
-//    } // var watchShortened
     
     var isRomanYear: Bool {
         switch self {

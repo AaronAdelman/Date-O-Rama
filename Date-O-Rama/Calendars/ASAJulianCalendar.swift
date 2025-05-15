@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingEras, ASACalendarSupportingEaster {
+public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras, ASACalendarWithEaster {
     public let BCE = 0
     public let CE  = 1
     

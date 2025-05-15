@@ -1,5 +1,5 @@
 //
-//  ASACalendarSupportingEaster.swift
+//  ASACalendarWithEaster.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 30/04/2025.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ASACalendarSupportingEaster: ASACalendarSupportingEras, ASACalendarSupportingMonths
+protocol ASACalendarWithEaster: ASACalendarWithEras, ASACalendarWithMonths
 {
     func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)?
 }

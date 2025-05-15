@@ -19,7 +19,7 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingBlankMonths, ASACalendarSupportingEras {
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithBlankMonths, ASACalendarWithEras {
     var calendarCode: ASACalendarCode
     
     init(calendarCode:  ASACalendarCode) {
@@ -650,7 +650,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
     
     
-    // MARK:  - ASACalendarSupportingWeeks
+    // MARK:  - ASACalendarWithWeeks
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         switch localeIdentifier.localeLanguageCode {
@@ -714,7 +714,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     
-    // MARK:  - ASACalendarSupportingMonths
+    // MARK:  - ASACalendarWithMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
         switch localeIdentifier.localeLanguageCode {
@@ -756,7 +756,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     
-    // MARK:  - ASACalendarSupportingQuarters
+    // MARK:  - ASACalendarWithQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
         switch localeIdentifier.localeLanguageCode {
@@ -786,7 +786,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     
-    // MARK:  - ASACalendarSupportingEras
+    // MARK:  - ASACalendarWithEras
     
     func eraSymbols(localeIdentifier: String) -> Array<String> {
         return [""]
@@ -798,7 +798,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
 
  
     
-    // MARK:  - ASACalendarSupportingBlankMonths
+    // MARK:  - ASACalendarWithBlankMonths
     
     var blankMonths: Array<Int> = [13]
     

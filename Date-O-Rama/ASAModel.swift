@@ -1,5 +1,5 @@
 //
-//  ASAUserData.swift
+//  ASAModel.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-02.
@@ -40,8 +40,8 @@ fileprivate let TIMESTAMP_KEY = "timestamp"
 // MARK: -
 
 
-final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable {
-    @MainActor static let shared = ASAUserData()
+final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
+    @MainActor static let shared = ASAModel()
     
     
     // MARK:  - Model objects
@@ -256,7 +256,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
                     
                     let timestamp: Date? = Date.date(timeIntervalSince1970: jsonResult[TIMESTAMP_KEY] as? TimeInterval)
                     if timestamp == nil || timestamp! > self.clocksTimestamp {
-                        self.mainClocks = ASAUserData.locationsWithClocksArray(key: .app, dictionary: jsonResult)
+                        self.mainClocks = ASAModel.locationsWithClocksArray(key: .app, dictionary: jsonResult)
                     }
                     
                     genericSuccess = true
@@ -287,11 +287,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
                         //                        debugPrint(#file, #function, jsonResult)
                         let timestamp: Date? = Date.date(timeIntervalSince1970: jsonResult[TIMESTAMP_KEY] as? TimeInterval)
                         if timestamp == nil || timestamp! > self.complicationsTimestamp {
-                            self.threeLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .threeLineLarge, dictionary: jsonResult)[0]
-                            self.twoLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .twoLineLarge, dictionary: jsonResult)[0]
-                            self.twoLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .twoLineSmall, dictionary: jsonResult)[0]
-                            self.oneLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .oneLineLarge, dictionary: jsonResult)[0]
-                            self.oneLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .oneLineSmall, dictionary: jsonResult)[0]
+                            self.threeLineLargeClocks = ASAModel.locationsWithClocksArray(key: .threeLineLarge, dictionary: jsonResult)[0]
+                            self.twoLineLargeClocks = ASAModel.locationsWithClocksArray(key: .twoLineLarge, dictionary: jsonResult)[0]
+                            self.twoLineSmallClocks = ASAModel.locationsWithClocksArray(key: .twoLineSmall, dictionary: jsonResult)[0]
+                            self.oneLineLargeClocks = ASAModel.locationsWithClocksArray(key: .oneLineLarge, dictionary: jsonResult)[0]
+                            self.oneLineSmallClocks = ASAModel.locationsWithClocksArray(key: .oneLineSmall, dictionary: jsonResult)[0]
                         }
                         complicationsSuccess = true
                     }
@@ -322,7 +322,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
     override init() {
         super.init()
         
-        self.containerURL = ASAUserData.checkForContainerExistence()
+        self.containerURL = ASAModel.checkForContainerExistence()
         self.presentedItemURL = self.containerURL
         
         NSFileCoordinator.addFilePresenter(self)
@@ -506,12 +506,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter, Sendable 
         //        debugPrint(#file, #function)
         self.loadPreferences()
     } // func presentedItemDidChange()
-} // class ASAUserData
+} // class ASAModel
 
 
 // MARK:  -
 
-extension ASAUserData {
+extension ASAModel {
     @MainActor func removeMainClock(uuid: UUID) {
         for i in 0..<self.mainClocks.count {
             let index = self.mainClocks[i].clocks.firstIndex(where: {$0.uuid == uuid})
@@ -548,4 +548,4 @@ extension ASAUserData {
             self.savePreferences(code: .clocks)
         }
     } // func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks)
-} // extension ASAUserData
+} // extension ASAModel

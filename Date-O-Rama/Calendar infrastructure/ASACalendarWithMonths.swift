@@ -1,5 +1,5 @@
 //
-//  ASACalendarSupportingMonths.swift
+//  ASACalendarWithMonths.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 21/02/2022.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ASACalendarSupportingMonths: ASACalendar {
+protocol ASACalendarWithMonths: ASACalendar {
     // Symbols
     
     mutating func monthSymbols(localeIdentifier: String) -> Array<String>
@@ -17,4 +17,4 @@ protocol ASACalendarSupportingMonths: ASACalendar {
     mutating func standaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     mutating func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     mutating func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
-} // protocol ASACalendarSupportingMonths
+} // protocol ASACalendarWithMonths

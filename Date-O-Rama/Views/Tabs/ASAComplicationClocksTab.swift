@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAComplicationClocksTab: View {
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     @State var now = Date()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var isNavigationBarHidden:  Bool = true
@@ -48,7 +48,7 @@ struct ASAComplicationSectionView: View {
     var complicationKey: ASAClockArrayKey
     @Binding var now: Date
     
-    let userData = ASAUserData.shared
+    let userData = ASAModel.shared
     
     func locationWithClocksArray(with key: ASAClockArrayKey) -> ASALocationWithClocks {
         switch key {

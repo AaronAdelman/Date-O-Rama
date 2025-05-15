@@ -11,7 +11,7 @@ import Combine
 import CoreLocation
 
 struct ASAClocksTab: View {
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     @State var now = Date()
     @State var usingRealTime = true
     
@@ -197,6 +197,6 @@ struct ASAClocksTab: View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksTab().environmentObject(ASAUserData.shared)
+        ASAClocksTab().environmentObject(ASAModel.shared)
     }
 }

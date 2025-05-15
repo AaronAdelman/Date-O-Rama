@@ -8,14 +8,14 @@
 
 import Foundation
 
-/// The type of a component of a date format string
-enum ASADateFormatPatternComponentType {
-    case symbol
-    case literal
-} // enum ASADateFormatPatternComponentType
-
 /// Encoding of a part of a date format string
 struct ASADateFormatPatternComponent {
-    var type: ASADateFormatPatternComponentType
+    /// The type of a component of a date format string
+    enum ComponentType {
+        case symbol
+        case literal
+    } // enum ComponentType
+    
+    var type: ComponentType
     var string: String
 } // struct ASADateFormatPatternComponent

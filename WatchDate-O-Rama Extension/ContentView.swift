@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ASAWatchClocksView().environmentObject(ASAUserData.shared)
+        ASAWatchClocksView().environmentObject(ASAModel.shared)
     }
 }
 

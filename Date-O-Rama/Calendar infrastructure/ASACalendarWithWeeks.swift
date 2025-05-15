@@ -1,5 +1,5 @@
 //
-//  ASACalendarSupportingWeeks.swift
+//  ASACalendarWithWeeks.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 20/02/2022.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ASACalendarSupportingWeeks: ASACalendar {
+protocol ASACalendarWithWeeks: ASACalendar {
     var daysPerWeek: Int { get }
 
     // MARK:  - Symbols
@@ -22,4 +22,4 @@ protocol ASACalendarSupportingWeeks: ASACalendar {
     
     // MARK:  - Workdays and weekends
     func weekendDays(for regionCode: String?) -> Array<Int>
-} // protocol ASACalendarSupportingWeeks
+} // protocol ASACalendarWithWeeks

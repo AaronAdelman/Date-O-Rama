@@ -17,7 +17,7 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
     var locationManager = ASALocationManager.shared
     let notificationCenter = NotificationCenter.default
 
-    let userData = ASAUserData.shared
+    let userData = ASAModel.shared
 
     override init() {
         super.init()
@@ -121,12 +121,12 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
                 var locationsWithClocks: Array<ASALocationWithClocks> = self.userData.locationsWithClocksArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                    locationsWithClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(array: valueAsArray, key: key)
+                    locationsWithClocks = ASAModel.arrayOfDictionariesToArrayOfLocationsWithClocks(array: valueAsArray, key: key)
                 }
                 userData.setLocationsWithClocksArray(locationsWithClocksArray: locationsWithClocks, key: key)
             } // for
-            ASAUserData.shared.savePreferences(code: .clocks)
-            ASAUserData.shared.savePreferences(code: .complications)
+            ASAModel.shared.savePreferences(code: .clocks)
+            ASAModel.shared.savePreferences(code: .complications)
 
 //            if complicationController.complication != nil {
 //                CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
@@ -144,10 +144,10 @@ class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
 //                    let (itemAsClock, location, usesDeviceLocation) = ASAClock.new(dictionary: item)
 //                    mainClocks.append(itemAsClock)
 //                }
-                let mainClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(array: tempAsArray, key: .app)
+                let mainClocks = ASAModel.arrayOfDictionariesToArrayOfLocationsWithClocks(array: tempAsArray, key: .app)
                 DispatchQueue.main.async {
-                    ASAUserData.shared.mainClocks = mainClocks
-                    ASAUserData.shared.savePreferences(code: .clocks)
+                    ASAModel.shared.mainClocks = mainClocks
+                    ASAModel.shared.savePreferences(code: .clocks)
                 }
             }
         }

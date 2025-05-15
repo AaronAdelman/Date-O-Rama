@@ -52,7 +52,7 @@ struct ASANewClockDetailView: View {
                     }
                     ToolbarItemGroup(placement: .confirmationAction) {
                         Button("Add") {
-                            let userData = ASAUserData.shared
+                            let userData = ASAModel.shared
                             userData.addMainClock(clock: self.selectedClock, location: location)
                             self.dismiss()
                         }

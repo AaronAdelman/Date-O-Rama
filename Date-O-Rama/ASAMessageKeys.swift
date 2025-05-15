@@ -1,5 +1,5 @@
 //
-//  ASAConfiguration.swift
+//  ASAMessageKeys.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-06-02.
@@ -11,4 +11,3 @@ import Foundation
 let ASAMessageKeyType            = "type"
 let ASAMessageKeyRequestUserData = "requestUserData"
 let ASAMessageKeyUpdateUserData  = "updateUserData"
-

@@ -88,7 +88,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, 
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
     func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
-        let locationsWithClocksArray: Array<ASALocationWithClocks> = ASAUserData.shared.locationsWithClocksArray(key: key)
+        let locationsWithClocksArray: Array<ASALocationWithClocks> = ASAModel.shared.locationsWithClocksArray(key: key)
         
         var temp:  Array<Dictionary<String, Any>> = []
         for locationWithClocks in locationsWithClocksArray {

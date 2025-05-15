@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarSupportingEaster {
+class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
     public let BCE = 0
     public let CE  = 1
     

@@ -139,7 +139,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue {
         didSet {
             DispatchQueue.main.async {
-                ASAUserData.shared.savePreferences(code: .clocks)
+                ASAModel.shared.savePreferences(code: .clocks)
             }
         }
     }
@@ -430,8 +430,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     // MARK:  - Weeks
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>? {
-        if self.calendar is ASACalendarSupportingWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
+        if self.calendar is ASACalendarWithWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
             let result = calendarSupportingWeeks.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
             return result
         }
@@ -440,8 +440,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>?
     
     func weekendDays(location: ASALocation) -> Array<Int>? {
-        if self.calendar is ASACalendarSupportingWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
+        if self.calendar is ASACalendarWithWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
             return calendarSupportingWeeks.weekendDays(for: location.regionCode)
 
         } else {
@@ -450,8 +450,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // func weekendDays(location: ASALocation) -> Array<Int>?
         
     var daysPerWeek: Int? {
-        if self.calendar is ASACalendarSupportingWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
+        if self.calendar is ASACalendarWithWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
             
             return calendarSupportingWeeks.daysPerWeek
         }

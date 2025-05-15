@@ -436,9 +436,9 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         
-        if calendar is ASACalendarSupportingWeeks {
+        if calendar is ASACalendarWithWeeks {
             let day = components.day!
-            let daysPerWeek = (calendar as! any ASACalendarSupportingWeeks as ASACalendarSupportingWeeks).daysPerWeek
+            let daysPerWeek = (calendar as! any ASACalendarWithWeeks as ASACalendarWithWeeks).daysPerWeek
             let daysInMonth = calendar.daysInMonth(for: date) ?? 1
 
             let span = daysOf(fullWeek: tweakedStartDateSpecification.fullWeek!, day: day, weekday: components.weekday!, daysPerWeek: daysPerWeek, monthLength: daysInMonth, firstDayOfWeek: (tweakedStartDateSpecification.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue)
@@ -496,7 +496,7 @@ class ASAEventCalendar {
     } // func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> ASAMatchResult
     
     func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> ASAMatchResult {
-        if calendar is ASACalendarSupportingEaster {
+        if calendar is ASACalendarWithEaster {
             
         } else {
             return MATCH_FAILURE
@@ -523,7 +523,7 @@ class ASAEventCalendar {
             }
             
 //        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
-            let easterStuff = (calendar as! ASACalendarSupportingEaster).calculateEaster(era: componentsEra, year: componentsYear)
+            let easterStuff = (calendar as! ASACalendarWithEaster).calculateEaster(era: componentsEra, year: componentsYear)
         if easterStuff == nil {
             return MATCH_FAILURE
         }
@@ -646,8 +646,8 @@ class ASAEventCalendar {
         let endWeekday        = endDateSpecification?.weekdays?[0].rawValue
         
         lazy var daysPerWeek = {
-            if calendar is ASACalendarSupportingWeeks {
-                return (calendar as! ASACalendarSupportingWeeks).daysPerWeek
+            if calendar is ASACalendarWithWeeks {
+                return (calendar as! ASACalendarWithWeeks).daysPerWeek
             }
             
             return 1
@@ -1164,8 +1164,8 @@ class ASAEventCalendar {
         if dateSpecification.weekdayRecurrence != nil && dateSpecification.weekdays != nil {
             let daysInMonth = calendar.daysInMonth(for: date) ?? 1
 
-            if calendar is ASACalendarSupportingWeeks {
-                let calendarSupportingWeeks = calendar as! ASACalendarSupportingWeeks
+            if calendar is ASACalendarWithWeeks {
+                let calendarSupportingWeeks = calendar as! ASACalendarWithWeeks
                 let daysPerWeek = calendarSupportingWeeks.daysPerWeek
                 
                 if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: daysPerWeek, lengthOfMonth: daysInMonth)) {

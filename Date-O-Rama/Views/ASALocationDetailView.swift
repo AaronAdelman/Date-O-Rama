@@ -15,7 +15,7 @@ struct ASALocationDetailView: View {
     
     @State private var showingActionSheet = false
     
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     
     @Environment(\.presentationMode) var presentationMode
     

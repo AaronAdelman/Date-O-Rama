@@ -14,7 +14,7 @@ struct ASADateORamaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            let userData = ASAUserData.shared
+            let userData = ASAModel.shared
 
             TabView {
                 ASAClocksTab().environmentObject(userData)

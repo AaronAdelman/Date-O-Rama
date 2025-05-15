@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAMainClocksView: View {
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     @Binding var mainClocks:  Array<ASALocationWithClocks>
     @Binding var now:  Date
     
@@ -101,15 +101,15 @@ struct ASAMainClocksSectionView: View {
                 }
 #endif
                 
-                if ASAUserData.shared.mainClocks.count > 1 {
+                if ASAModel.shared.mainClocks.count > 1 {
                     Divider()
                     
                     Button(action: {
-                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        let index = ASAModel.shared.mainClocks.firstIndex(of: locationWithClocks)
                         guard index != nil else { return }
-                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
-                        ASAUserData.shared.mainClocks.insert(item, at: 0)
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        let item = ASAModel.shared.mainClocks.remove(at: index!)
+                        ASAModel.shared.mainClocks.insert(item, at: 0)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Label {
                             Text("Move to top")
@@ -119,12 +119,12 @@ struct ASAMainClocksSectionView: View {
                     })
                     
                     Button(action: {
-                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        let index = ASAModel.shared.mainClocks.firstIndex(of: locationWithClocks)
                         guard index != nil else { return }
                         guard index! != 0 else { return }
-                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
-                        ASAUserData.shared.mainClocks.insert(item, at: index! - 1)
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        let item = ASAModel.shared.mainClocks.remove(at: index!)
+                        ASAModel.shared.mainClocks.insert(item, at: index! - 1)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Label {
                             Text("Move up")
@@ -134,12 +134,12 @@ struct ASAMainClocksSectionView: View {
                     })
                     
                     Button(action: {
-                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        let index = ASAModel.shared.mainClocks.firstIndex(of: locationWithClocks)
                         guard index != nil else { return }
-                        guard index! != ASAUserData.shared.mainClocks.count - 1 else { return }
-                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
-                        ASAUserData.shared.mainClocks.insert(item, at: index! + 1)
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        guard index! != ASAModel.shared.mainClocks.count - 1 else { return }
+                        let item = ASAModel.shared.mainClocks.remove(at: index!)
+                        ASAModel.shared.mainClocks.insert(item, at: index! + 1)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Label {
                             Text("Move down")
@@ -149,11 +149,11 @@ struct ASAMainClocksSectionView: View {
                     })
                     
                     Button(action: {
-                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        let index = ASAModel.shared.mainClocks.firstIndex(of: locationWithClocks)
                         guard index != nil else { return }
-                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
-                        ASAUserData.shared.mainClocks.append(item)
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        let item = ASAModel.shared.mainClocks.remove(at: index!)
+                        ASAModel.shared.mainClocks.append(item)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Label {
                             Text("Move to bottom")
@@ -169,7 +169,7 @@ struct ASAMainClocksSectionView: View {
                     
                     Button(action: {
                         locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Image(systemName: "arrow.down")
                         Text("Sort by calendar name ascending")
@@ -177,7 +177,7 @@ struct ASAMainClocksSectionView: View {
                     
                     Button(action: {
                         locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
-                        ASAUserData.shared.savePreferences(code: .clocks)
+                        ASAModel.shared.savePreferences(code: .clocks)
                     }, label: {
                         Image(systemName: "arrow.up")
                         Text("Sort by calendar name descending")
@@ -214,7 +214,7 @@ struct ASAMainClocksSectionView: View {
             .actionSheet(isPresented: self.$showingActionSheet) {
                 ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
                     .destructive(Text("Delete this location")) {
-                        ASAUserData.shared.removeLocationWithClocks(locationWithClocks)
+                        ASAModel.shared.removeLocationWithClocks(locationWithClocks)
                     },
                     .default(Text("Cancel")) {  }
                 ])
@@ -249,10 +249,10 @@ struct ASAMainClocksSectionView: View {
     
     @MainActor private func onMove(source: IndexSet, destination: Int) {
         let relevantUUID = self.locationWithClocks.location.id
-        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+        let relevantLocationWithClocksIndex = ASAModel.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
         if relevantLocationWithClocksIndex != nil {
-            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
-            ASAUserData.shared.savePreferences(code: .clocks)
+            ASAModel.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
+            ASAModel.shared.savePreferences(code: .clocks)
         }
     }
 }

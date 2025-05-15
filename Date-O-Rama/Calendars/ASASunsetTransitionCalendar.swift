@@ -13,7 +13,7 @@ import SwiftUI
 
 // MARK: -
 
-public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters, ASACalendarSupportingEras {
+public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
     var calendarCode: ASACalendarCode
     
 #if os(watchOS)
@@ -575,7 +575,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     
-    // MARK:  - ASACalendarSupportingMonths
+    // MARK:  - ASACalendarWithMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
@@ -602,7 +602,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     
-    // MARK:  - ASACalendarSupportingQuarters
+    // MARK:  - ASACalendarWithQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
@@ -621,7 +621,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     
-    // MARK:  - ASACalendarSupportingEras
+    // MARK:  - ASACalendarWithEras
     
     func eraSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.eraSymbols(localeIdentifier: localeIdentifier)

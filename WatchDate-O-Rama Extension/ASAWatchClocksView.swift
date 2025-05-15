@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAWatchClocksView: View {
-    @EnvironmentObject var userData:  ASAUserData
+    @EnvironmentObject var userData:  ASAModel
     @State var now = Date()
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
