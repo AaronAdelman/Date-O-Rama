@@ -36,5 +36,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 9, d: 20}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 5, d: 5}, inherits: "Holocaust Memorial Day", titles: {"en": "Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de": "Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}},
+
     ]
 }

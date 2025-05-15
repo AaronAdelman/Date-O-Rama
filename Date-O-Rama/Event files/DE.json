@@ -35,7 +35,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
-        {inherits: "Holocaust Memorial Day", type: "D", start: {mon: 1, d: 27}, first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {inherits: "Constitution Day", type: "D", start: {mon: 5, d: 23}},
         {titles: {"en": "Remembrance of 17 June"}, type: "D", start: {mon: 6, d: 17}, first: {era: 1, y: 1990}},

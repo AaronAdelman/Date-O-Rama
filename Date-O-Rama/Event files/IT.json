@@ -41,7 +41,7 @@
 
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Tricolour Day", "it": "Giornata Nazionale della Bandiera"}, first: {era: 1, y: 1997}, inherits: "National Flag Day", notes: {"en": "National Flag Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Tricolour_Day"}},
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "National Day of Remembrance and Sacrifice of the Alpini", "it": "Giornata nazionale della memoria e del sacrificio degli Alpini"}, first: {era: 1, y: 2023}},
-        {inherits: "Holocaust Memorial Day", type: "D", start: {mon: 1, d: 27}, first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "National Day of Civilian Victims of Wars and Conflicts in the World", "it": "Giornata nazionale delle vittime civili delle guerre e dei conflitti nel mondo"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "National Day of Health, Social and Social Care and Voluntary Workers", "it": "Giornata nazionale del personale sanitario, sociosanitario, socioassistenziale e del volontariato"}, first: {era: 1, y: 2021}},
         {titles: {"en": "National Braille Day", "he": "יום הברייל הלאומי", "it": "Giornata nazionale del Braille"}, type: "D", start: {mon: 2, d: 21}, emoji: "⠃", first: {era: 1, y: 2008}},

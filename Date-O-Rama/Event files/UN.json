@@ -11,7 +11,7 @@
         {titles: {"en": "International Day of Education", "he": "יום החינוך הבינלאומי"}, type: "D", start: {mon: 1, d: 24}, emoji: "📚", first: {era: 1, y: 2019}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-education-january-24/"}, notes: {"en": "Education Day", "he": "יום החינוך"}},
         {titles: {"en": "World Day for African and Afrodescendant Culture", "he": "היום העולמי לתרבות אפריקה ותרבות צאצאי אפריקאים"}, type: "D", start: {mon: 1, d: 24}, emoji: "🌍", first: {era: 1, y: 2020}},
         {titles: {"en": "International Day of Clean Energy"}, notes: {"en": "Clean Energy Day\nRenewable Energy Day"}, type: "D", start: {mon: 1, d: 26}, first: {era: 1, y: 2024}, urls: {"en": "https://www.daysoftheyear.com/days/international-day-of-clean-energy/"}},
-        {inherits: "Holocaust Memorial Day", type: "D", start: {mon: 1, d: 27}, first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         
         {titles: {"en": "World Interfaith Harmony Week", "he": "שבוע ההרמוניה הבין־דתית העולמי"}, type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, first: {type: "nD", era: 1, y: 2011}, notes: {"en": "The brainchild of King Abdullah II of Jordan, a man who has utterly failed to live up to his country’s commitments to freedom of religion on the Temple Mount"}},
         {titles: {"en": "International Day of Human Fraternity", "he": "היום העולמי לאחווה האנושית"}, type: "D", start: {mon: 2, d: 4}, first: {era: 1, y: 2021}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-human-fraternity-february-4/"}},

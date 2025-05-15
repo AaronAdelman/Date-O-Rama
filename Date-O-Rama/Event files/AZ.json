@@ -69,6 +69,7 @@
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "Memorial Day of Heydar Aliyev"}},
         {type: "D", start: {mon: 12, d: 16}, titles: {"en": "Day of Azerbaijani Ministry of Emergency Situations"}},
         {type: "nD", start: {mon: 10, d: 26}, end: {mon: 11, d: 10}, titles: {"en": "Pomegranate Festival"}, notes: {"en": "Nar Bayrami"}, urls: {"en": "https://www.daysoftheyear.com/days/pomegranate-festival/"}, first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 1, d: 27}, titles: {"en": "Day of the Tragedy and Heroism of the Jews"}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
    ],
     templates: [
     ]
