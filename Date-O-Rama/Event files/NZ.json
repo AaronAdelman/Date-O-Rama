@@ -100,8 +100,12 @@
         {type: "nD", start: {mon: 10, d: 27}, end: {mon: 11, d: 1}, titles: {"en": "Grandparents Week"}, urls: {"en": "https://nationaltoday.com/grandparents-week/"}, first: {era: 1, y: 2002}, emoji: "👴👵"},
         {type: "nD", start: {mon: 3, d: 5}, end: {mon: 3, d: 13}, titles: {"en": "Sea Week"}, urls: {"en": "https://nationaltoday.com/sea-week/"}, first: {era: 1, y: 1992}},
         {type: "W", start: {mon: 5, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Sign Language Week", "he": "השבוע לשפות הסימנים"}, urls: {"en": "https://nzsignlanguage.nz/"}, first: {era: 1, y: 2007}},
+        {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2016}, last: {era: 1, y: 2022}},
+        {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 13}, end: {era: 1, y: 2023, mon: 5, d: 20}, inherits: "Techweek"},
+        {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2024}},
     ],
     templates: [
+        {template: "Techweek", type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Techweek"}, urls: {"en": "https://techweek.co.nz/"}, emoji: "🥽"},
         {template: "Matariki", type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/matariki"}, titles: {"en": "Matariki"}, emoji: "🌌"},
         {template: "Otago Anniversary Day (in lieu)", type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, titles: {"en": "Otago Anniversary Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/otago-anniversary-day/"}},
     ]
