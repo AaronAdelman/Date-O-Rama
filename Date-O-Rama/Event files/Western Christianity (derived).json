@@ -157,7 +157,7 @@
         {type: "D", start: {mon: 4, d: 14}, inherits: "Black Day", first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/slay-a-dragon-day/"}, titles: {"en": "Slay a Dragon Day"}},
         {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/national-lovers-day/"}, titles: {"en": "National Lover’s Day"}},
-        {type: "D", start: {mon: 5, d: 21}, titles: {"en": "End of the World and Rapture Party Day"}, notes: {"en": "A mean-spirited observance poking fun at a prediction which turned out to be wrong, even though the person who made the prediction decided to stop promoting kookiness."}},
+        {type: "D", start: {mon: 5, d: 21}, titles: {"en": "End of the World"}, notes: {"en": "Rapture Party Day\nA mean-spirited observance poking fun at a prediction which turned out to be wrong, even though the person who made the prediction decided to stop promoting kookiness."}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "New Year’s Resolution Recommitment Day"}, urls: {"en": "https://nationaltoday.com/new-years-resolution-recommitment-day/"}, notes: {"en": "Some think this event happens on January 17."}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Hot Cross Bun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cross-bun-day/"}},
