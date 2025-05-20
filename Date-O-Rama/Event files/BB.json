@@ -25,7 +25,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {titles: {"en": "Anniversary of Bussa’s Rebellion"}, type: "D", start: {mon: 4, d: 14}},
-        {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day"},
+        {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {titles: {"en": "Day of National Significance", "he": "יום של משמעות לאומית"}, type: "D", start: {mon: 7, d: 26}},
         {type: "D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey", "he": "יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
         {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},

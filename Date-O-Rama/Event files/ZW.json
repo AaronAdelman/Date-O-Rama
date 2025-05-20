@@ -15,7 +15,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Independence Day", type: "D", start: {mon: 4, d: 18}, first: {era: 1, y: 1980}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/zimbabwe-independence-day"}},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/labour-day"}, inherits: "Worker’s Day"},
-        {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/african-unity-day"}, inherits: "Africa Day"},
+        {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/african-unity-day"}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {inherits: "Heroes’ Day", type: "D", start: {mon: 8, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/zimbabwe-heroes-day"}},
         {type: "D", start: {mon: 8, wkd: [3], d: 9, thruD: 15}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/defence-forces-day"}, titles: {"en": "Defence Forces Day"}},
         {type: "D", start: {mon: 12, d: 22}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/zimbabwe-unity-day/"}, first: {era: 1, y: 1987}},

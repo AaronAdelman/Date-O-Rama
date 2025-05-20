@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 4, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/kenneth-kaunda-day"}, titles: {"en": "Kenneth Kaunda Day"}},
         {type: "D", start: {mon: 4, d: 29, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/kenneth-kaunda-day"}, titles: {"en": "Kenneth Kaunda Day (in lieu)"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/african-unity-day"}, inherits: "Africa Day"},
+        {type: "D", start: {mon: 5, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/african-unity-day"}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {inherits: "Heroes’ Day", type: "D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://nationaltoday.com/heroes-day-of-zambia/"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 7, d: 2, thruD: 8, wkd: [3]}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/zambia-unity-day/"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/zambia/zambia-farmers-day"}, inherits: "Farmers’ Day"},
