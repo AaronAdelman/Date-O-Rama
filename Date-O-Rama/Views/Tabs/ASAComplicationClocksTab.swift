@@ -22,7 +22,7 @@ struct ASAComplicationClocksTab: View {
                     ForEach(ASAClockArrayKey.complicationSections, id:  \.self) {
                         complicationKey
                         in
-                        ASAComplicationSectionView(complicationKey: complicationKey, now: $now)
+                        ASAComplicationSectionView(complicationKey: complicationKey, now: $now).environmentObject(userData)
                     }
                 } // List
                 .listStyle(InsetGroupedListStyle())
@@ -45,11 +45,11 @@ struct ASAComplicationClocksTab: View {
 
 
 struct ASAComplicationSectionView: View {
+    @EnvironmentObject var userData:  ASAModel
+
     var complicationKey: ASAClockArrayKey
     @Binding var now: Date
-    
-    let userData = ASAModel.shared
-    
+        
     func locationWithClocksArray(with key: ASAClockArrayKey) -> ASALocationWithClocks {
         switch key {
         case .threeLineLarge:
