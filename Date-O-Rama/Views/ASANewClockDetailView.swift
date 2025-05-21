@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ASANewClockDetailView: View {
+    @EnvironmentObject var userData:  ASAModel
     @State var selectedClock:  ASAClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
     var location: ASALocation
     var usesDeviceLocation: Bool
@@ -52,7 +53,7 @@ struct ASANewClockDetailView: View {
                     }
                     ToolbarItemGroup(placement: .confirmationAction) {
                         Button("Add") {
-                            let userData = ASAModel.shared
+//                            let userData = ASAModel.shared
                             userData.addMainClock(clock: self.selectedClock, location: location)
                             self.dismiss()
                         }

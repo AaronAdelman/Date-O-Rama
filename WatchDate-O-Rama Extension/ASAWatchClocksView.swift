@@ -17,7 +17,9 @@ struct ASAWatchClocksView: View {
     var body: some View {
         NavigationView {
             Form {
-                ASAMainClocksView(mainClocks: $userData.mainClocks, now: $now)
+                ASAMainClocksView(
+//                    mainClocks: $userData.mainClocks,
+                    now: $now).environmentObject(userData)
             }
         }
         .onReceive(timer) { input in
