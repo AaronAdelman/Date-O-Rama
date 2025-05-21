@@ -11,6 +11,8 @@ import SwiftUI
 import MapKit
 
 struct ASALocationChooserView: View {
+    @EnvironmentObject var userData:  ASAModel
+
     @ObservedObject var locationWithClocks: ASALocationWithClocks
     var shouldCreateNewLocationWithClocks: Bool
 
@@ -58,7 +60,6 @@ struct ASALocationChooserView: View {
     
     fileprivate func createNewLocationWithClocks() {
         debugPrint(#file, #function, "Create new location with clocks")
-        let userData: ASAModel = ASAModel.shared
         let newLocationWithClocks = ASALocationWithClocks.generic(location: tempLocationData, usesDeviceLocation: tempUsesDeviceLocation)
         userData.addLocationWithClocks(newLocationWithClocks)
     }

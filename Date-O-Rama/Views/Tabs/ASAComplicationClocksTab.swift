@@ -95,7 +95,7 @@ struct ASAComplicationSectionView: View {
                     }
                     .sheet(isPresented: self.$showingDetailView, onDismiss: {
                     }) {
-                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData)
                     }
                 }
             } // HStack
@@ -106,7 +106,7 @@ struct ASAComplicationSectionView: View {
                 clock
                 in
                 let processedClock: ASAProcessedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: true, location: location, usesDeviceLocation: usesDeviceLocation)
-                ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false, clock: clock, location: location)
+                ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false, clock: clock, location: location).environmentObject(userData)
             }
         })
     }

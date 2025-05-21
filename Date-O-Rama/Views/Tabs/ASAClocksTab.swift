@@ -114,7 +114,7 @@ struct ASAClocksTab: View {
                     }
                     .sheet(isPresented: $isShowingNewLocationView, content: {
                         let locationWithClocks = ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
-                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true)
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true).environmentObject(userData)
                     })
                     
                     Spacer()

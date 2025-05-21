@@ -16,6 +16,8 @@ import EventKitUI
 // MARK:  -
 
 struct ASAClockCell: View {
+    @EnvironmentObject var userData:  ASAModel
+
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     
@@ -35,13 +37,14 @@ struct ASAClockCell: View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         
 #if os(watchOS)
-        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, clock: clock, location: location)
+        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, clock: clock, location: location).environmentObject(userData)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
                 ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, clock: clock, location: location)
+                    .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
             }
@@ -49,6 +52,7 @@ struct ASAClockCell: View {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
                 ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, clock: clock, location: location)
+                    .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
@@ -69,6 +73,8 @@ enum ASAClockCellBodyDetailType {
 }
 
 struct ASAClockCellBody:  View {
+    @EnvironmentObject var userData:  ASAModel
+
     let processedClock:  ASAProcessedClock
     @Binding var now:  Date
     
@@ -195,7 +201,7 @@ struct ASAClockCellBody:  View {
                                 .onReceive(
                                     clock.objectWillChange) { _ in
                                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                        ASAModel.shared.savePreferences(code: .complications)
+                                        userData.savePreferences(code: .complications)
                                     }
                         }
                     })
@@ -246,7 +252,7 @@ struct ASAClockCellBody:  View {
                     .sheet(isPresented: $showingDetailView, onDismiss: {
                         //                        debugPrint("❎ Clock cell detail view was dismissed.")
                     }, content: {
-                        ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location)
+                        ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
                     })
                 }
 #endif
@@ -267,6 +273,8 @@ struct ASAClockCellBody:  View {
 #if os(watchOS)
 #else
 struct ASAClockCellMenuView: View {
+    @EnvironmentObject var userData:  ASAModel
+
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     @Binding var showingDetailView: Bool
@@ -292,7 +300,7 @@ struct ASAClockCellMenuView: View {
                 ASAClockDetailView(selectedClock: clock, location: location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false, tempLocation: location)
                     .onReceive(clock.objectWillChange) { _ in
                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                        ASAModel.shared.savePreferences(code: .clocks)
+                        userData.savePreferences(code: .clocks)
                     }
             }
         } else if detailType == .newEvent {

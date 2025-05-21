@@ -30,7 +30,7 @@ struct ASALocationDetailView: View {
         NavigationView {
             List {
                 Section {
-                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
+                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData), label: {
                         ASALocationCell(usesDeviceLocation: $locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
                     })
                     
