@@ -66,13 +66,13 @@ struct ASAClockCell: View {
 
 // MARK: -
 
-enum ASAClockCellBodyDetailType {
-    case none
-    case clockDetail
-    case newEvent
-}
-
 struct ASAClockCellBody:  View {
+    enum DetailType {
+        case none
+        case clockDetail
+        case newEvent
+    }
+
     @EnvironmentObject var userData:  ASAModel
 
     let processedClock:  ASAProcessedClock
@@ -87,7 +87,7 @@ struct ASAClockCellBody:  View {
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
     
     @State var showingDetailView: Bool = false
-    @State var detailType = ASAClockCellBodyDetailType.none
+    @State var detailType = DetailType.none
     
     @ObservedObject var clock:  ASAClock
     @ObservedObject var location: ASALocation
@@ -278,7 +278,7 @@ struct ASAClockCellMenuView: View {
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     @Binding var showingDetailView: Bool
-    @Binding var detailType: ASAClockCellBodyDetailType
+    @Binding var detailType: ASAClockCellBody.DetailType
     
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
