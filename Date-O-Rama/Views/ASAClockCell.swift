@@ -266,7 +266,6 @@ struct ASAClockCellBody:  View {
                 }
 #endif
             } // HStack
-            .frame(height: 100.0)
             
 #if os(watchOS)
 #else
