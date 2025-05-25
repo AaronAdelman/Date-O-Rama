@@ -1230,7 +1230,7 @@
         {type: "D", start: {mon: 5, wkd: [5], nth: 3}, titles: {"en": "Brown Bag It Thursday"}, urls: {"en": "https://www.checkiday.com/2d703a6a7bb5257cf43b9bab5235d791/brown-bag-it-thursday"}, first: {era: 1, y: 2018}, emoji: "👝🐈"},
         {type: "D", start: {mon: 5, wkd: [5], nth: 3}, titles: {"en": "Global Accessibility Awareness Day"}, urls: {"en": "https://accessibility.day/"}, first: {era: 1, y: 2012}, emoji: "👨‍🦽👩‍🦽"},
         {type: "D", start: {mon: 5, wkd: [6], nth: -1}, titles: {"en": "European Neighbors’ Day"}, urls: {"en": "https://nationaltoday.com/european-neighbors-day/"}, first: {era: 1, y: 2004}, emoji: "🇪🇺"},
-        {type: "D", start: {mon: 5, wkd: [6], nth: -1}, titles: {"en": "Tracky Dack Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tracky-dack-day/"}, inherits: "*MedAwareness*"},
+        {type: "M", start: {mon: 5}, titles: {"en": "Tracky Dack Day"}, urls: {"en": "https://trackydackday.com/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 5, wkd: [6], nth: 1}, inherits: "No Pants Day", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "Sauvignon Blanc Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sauvignon-blanc-day/"}, first: {era: 1, y: 2010}, emoji: "🍷"},
         {type: "D", start: {mon: 5, wkd: [6], nth: 1}, titles: {"en": "School Lunch Hero Day"}, urls: {"en": "https://schoolnutrition.org/about-school-meals/school-lunch-hero-day/"}, first: {era: 1, y: 2012}, emoji: "🍛"},
