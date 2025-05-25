@@ -251,10 +251,17 @@ struct ASAClockCellBody:  View {
                     } label: {
                         ASAClockMenuSymbol()
                     }
+                    .onReceive(
+                        clock.objectWillChange) { _ in
+                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                            DispatchQueue.main.async {
+                                userData.savePreferences(code: isForComplications ? .complications : .clocks)
+                            }
+                        }
                     .sheet(isPresented: $showingDetailView, onDismiss: {
                         //                        debugPrint("❎ Clock cell detail view was dismissed.")
                     }, content: {
-                        ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
+                        ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
                     })
                 }
 #endif
@@ -274,7 +281,7 @@ struct ASAClockCellBody:  View {
 
 #if os(watchOS)
 #else
-struct ASAClockCellMenuView: View {
+struct ASAClockCellDetailView: View {
     @EnvironmentObject var userData:  ASAModel
 
     var processedClock:  ASAProcessedClock
