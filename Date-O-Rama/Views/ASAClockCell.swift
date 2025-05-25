@@ -31,7 +31,7 @@ struct ASAClockCell: View {
     @State var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
     
     @ObservedObject var clock:  ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
     
     var body: some View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
@@ -90,7 +90,7 @@ struct ASAClockCellBody:  View {
     @State var detailType = DetailType.none
     
     @ObservedObject var clock:  ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
     
 #if os(watchOS)
     let compact = true
@@ -283,7 +283,7 @@ struct ASAClockCellMenuView: View {
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
     @ObservedObject var clock:  ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
     
     var body: some View {
         if detailType == .clockDetail {
@@ -369,7 +369,7 @@ struct ASAClockEventsSubcell: View {
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     @ObservedObject var clock: ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
     
     var body: some View {
 #if os(watchOS)
@@ -401,7 +401,7 @@ struct ASAClockEventsForEach:  View {
     var events:  Array<ASAEventCompatible>
     @Binding var now:  Date
     @ObservedObject var clock:  ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
     
     var body: some View {
         let rangeStart: Date = processedClock.startOfDay
