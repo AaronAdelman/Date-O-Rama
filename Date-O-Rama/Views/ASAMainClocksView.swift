@@ -210,7 +210,7 @@ struct ASAMainClocksSectionView: View {
                             }
                             Spacer()
                         } // HStack
-                        ASALocationDetailView(locationWithClocks: $locationWithClocks, now: $now)
+                        ASALocationDetailView(locationWithClocks: $locationWithClocks, now: now)
                     }
                     .font(.body)
                 } // switch detail

@@ -21,7 +21,7 @@ struct ASALinkedEventCell:  View {
     @State private var action:  EKEventEditViewAction?
 #endif
     @State private var showingEventView = false
-    @Binding var now:  Date
+    var now:  Date
     var location: ASALocation
     var usesDeviceLocation: Bool
     
@@ -50,7 +50,7 @@ struct ASALinkedEventCell:  View {
 #if os(watchOS)
         NavigationLink(destination: ASAEventDetailView(event: event, clock: primaryClock, location: location, usesDeviceLocation: usesDeviceLocation), label: {
             HStack {
-                ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: false, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+                ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: false, now: now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
                 Spacer()
                 ASACompactForwardChevronSymbol()
             } // HStack
@@ -65,7 +65,7 @@ struct ASALinkedEventCell:  View {
 #endif
             }
             
-            ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: isForClock, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+            ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: isForClock, now: now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
             
             Spacer()
             

@@ -370,7 +370,7 @@ struct ASAClockEventsSubcell: View {
     @State private var showingEvents:  Bool = true
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
-    @ObservedObject var clock: ASAClock
+    var clock: ASAClock
     var location: ASALocation
     
     var body: some View {
@@ -402,12 +402,12 @@ struct ASAClockEventsForEach:  View {
     var processedClock:  ASAProcessedClock
     var events:  Array<ASAEventCompatible>
     @Binding var now:  Date
-    @ObservedObject var clock:  ASAClock
+    var clock:  ASAClock
     var location: ASALocation
     
     var body: some View {
         let rangeStart: Date = processedClock.startOfDay
-        let rangeEnd: Date = processedClock.startOfNextDay
+        let rangeEnd: Date   = processedClock.startOfNextDay
         
         ForEach(events, id: \.eventIdentifier) {
             event
@@ -417,8 +417,7 @@ struct ASAClockEventsForEach:  View {
             let usesDeviceLocation = processedClock.usesDeviceLocation
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? clock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
-            ASALinkedEventCell(event: event, primaryClock: clock, now: $now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
-            //                .frame(height: 32.0)
+            ASALinkedEventCell(event: event, primaryClock: clock, now: now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach

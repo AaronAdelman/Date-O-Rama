@@ -14,7 +14,7 @@ struct ASAWatchEventsList: View {
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     @State var now:  Date
     var clock: ASAClock
-    @ObservedObject var location: ASALocation
+    var location: ASALocation
 
     var body: some View {
         List {

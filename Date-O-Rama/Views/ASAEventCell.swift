@@ -12,7 +12,7 @@ struct ASAEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
     var isForClock:  Bool
-    @Binding var now:  Date
+    var now:  Date
     var location: ASALocation
     
 #if os(watchOS)

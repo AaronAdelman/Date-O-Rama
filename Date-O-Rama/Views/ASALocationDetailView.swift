@@ -11,7 +11,7 @@ import MapKit
 
 struct ASALocationDetailView: View {
     @Binding var locationWithClocks:  ASALocationWithClocks
-    @Binding var now:  Date
+    var now:  Date
     
     @State private var showingActionSheet = false
     
