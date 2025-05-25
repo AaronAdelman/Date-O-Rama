@@ -37,13 +37,13 @@ struct ASAClockCell: View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         
 #if os(watchOS)
-        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, clock: clock, location: location).environmentObject(userData)
+        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock).environmentObject(userData)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, clock: clock, location: location)
+                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
                     .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
@@ -51,7 +51,7 @@ struct ASAClockCell: View {
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, clock: clock, location: location)
+                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
                     .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
@@ -89,8 +89,10 @@ struct ASAClockCellBody:  View {
     @State var showingDetailView: Bool = false
     @State var detailType = DetailType.none
     
-    @ObservedObject var clock:  ASAClock
+    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
+
     var location: ASALocation
+    var clock: ASAClock
     
 #if os(watchOS)
     let compact = true
@@ -150,7 +152,7 @@ struct ASAClockCellBody:  View {
                 
 #if os(watchOS)
                 if processedClock.dateEvents.count > 0 || processedClock.timeEvents.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: eventVisibility, clock: clock, now: now, location: location)) {
+                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: eventVisibility, allDayEventVisibility: $allDayEventVisibility, now: now, clock: clock, location: location)) {
                         ASACompactForwardChevronSymbol()
                     }
                 }
@@ -218,7 +220,7 @@ struct ASAClockCellBody:  View {
                         let numberOfTimeEvents = processedClock.timeEvents.count
                         if numberOfDateEvents > 0 {
                             Menu {
-                                ASAClockAllDayEventVisibilityForEach(eventVisibility: $clock.allDayEventVisibility)
+                                ASAClockAllDayEventVisibilityForEach(allDayEventVisibility: $allDayEventVisibility)
                             } label: {
                                 Text("Show All-Day Events")
                             }
@@ -262,7 +264,7 @@ struct ASAClockCellBody:  View {
 #if os(watchOS)
 #else
             if !isForComplications {
-                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, clock: clock, location: location)
+                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, clock: clock, location: location)
             }
 #endif
         } // VStack
@@ -331,16 +333,16 @@ struct ASAClockEventVisibilityForEach: View {
 
 
 struct ASAClockAllDayEventVisibilityForEach: View {
-    @Binding var eventVisibility: ASAClockCellDateEventVisibility
+    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     
     var body: some View {
         ForEach(ASAClockCellDateEventVisibility.allCases, id: \.self) {
             visibility
             in
             Button(action: {
-                eventVisibility = visibility
+                allDayEventVisibility = visibility
             }) {
-                ASAClockMenuVisibilityLabel(text: visibility.text, shouldShowCheckmark: visibility == eventVisibility)
+                ASAClockMenuVisibilityLabel(text: visibility.text, shouldShowCheckmark: visibility == allDayEventVisibility)
             }
         } // ForEach
     } // var body
