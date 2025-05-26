@@ -319,7 +319,7 @@
         {titles: {"en": "Lent (day 32)"}, type: "D", start: {Easter:  "Easter", offsetD: -10}},
         {titles: {"en": "Lent (day 33)"}, type: "D", start: {Easter:  "Easter", offsetD: -9}},
         {titles: {"en": "Lent (day 34)"}, type: "D", start: {Easter:  "Easter", offsetD: -8}},
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
         {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},

@@ -41,7 +41,7 @@
         {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
 
         {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {Easter:  "Easter", offsetD: -9}},
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
 
         {inherits: "Feast of St. Joseph the Worker", type: "D", start: {mon: 5, d: 1}},
         {type: "D", start: {mon: 5, d: 2}, titles: {"en": "Feast of Our Lady of Liesse", "mt": "Il-Madonna ta’ Liesse"}},

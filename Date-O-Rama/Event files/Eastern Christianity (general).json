@@ -18,7 +18,7 @@
         {titles: {"en": "Saturday of the Akathist"}, notes: {"en": "Lent (day 28)"}, type: "D", start: {Easter:  "Easter", offsetD: -15}},
         {titles: {"en": "Feast of St. Mary of Egypt"}, type: "D", start: {Easter:  "Easter", offsetD: -14}},
         {type: "D", start: {Easter:  "Easter", offsetD: -8}, titles: {"en": "St. Lazarus Day"}, notes: {"en": "Lent (day 34)\nLazarus Saturday\nRaising of Lazarus"}, urls: {"en": "https://www.daysoftheyear.com/days/st-lazarus-day/"}, first: {era: 1, y: 300}},
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}, urls: {"en": "https://nationaltoday.com/orthodox-palm-sunday/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday", urls: {"en": "https://nationaltoday.com/orthodox-palm-sunday/"}},
         {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
         {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},

@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.38, green: 0.71, blue: 0.90},
     first: {era: 1, y: 1970},
+    urls: {"en": "https://www.fiji.gov.fj/About-Fiji/Public-Holidays"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
@@ -14,19 +15,24 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 11, thruD: 17, wkd: [2]}, titles: {"en": "Girmit Day"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/girmit-day"}, inherits: "Indian Arrival Day"},
-        {type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}, titles: {"en": "Ratu Sukuna Day"}, first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 9, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/fiji-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 2013}},
-        {inherits: "Independence Day", titles: {"en": "Fiji Day", "he": "יום פיג׳י"}, type: "D", start: {mon: 10, d: 10}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/fiji-day/"}},
+        {type: "D", start: {mon: 5, wkd: [2], nth: -1}, inherits: "Ratu Sukuna Day", first: {era: 1, y: 2010}, last: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 5, wkd: [6], nth: -1}, inherits: "Ratu Sukuna Day", first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 9, d: 7}, inherits: "Constitution Day", urls: {"en": "https://www.officeholidays.com/holidays/fiji/fiji-constitution-day"}, first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 10, d: 10}, inherits: "Independence Day", titles: {"en": "Fiji Day", "he": "יום פיג׳י"}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/fiji-day/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
-        {titles: {"en": "Children’s Sunday"}, type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Children’s Day"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, titles: {"en": "Children’s Sunday"}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {inherits: "National Youth Day", type: "D", start: {mon: 5, d: 4}},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 9, wkd: [1], nth: 1}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "National Forgiveness Week", first: {era: 1, y: 2004}},
+    ],
+    templates: [
+        {template: "Ratu Sukuna Day", type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en": "Ratu Sukuna Day"}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
+
     ]
 }

@@ -31,7 +31,7 @@
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Fisherman’s Day", "is": "Sjómannadagurinn"}, emoji: "🎣"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Women's Rights Day", "is": "Kvenréttindadagurinn"}, emoji: "👩"},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en": "St. John’s Mass Day", "is": "Jónsmessa"}},

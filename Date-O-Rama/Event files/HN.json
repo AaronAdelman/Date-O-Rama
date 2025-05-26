@@ -32,7 +32,7 @@
         {inherits: "Armed Forces Day", type: "D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/armed-forces-day-in-honduras/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Feast of Our Lady of Suyapa", "es": "Nuestra Señora de Suyapa"}, notes: {"en": "Virgin of Suyapa’s Day"}},
         {inherits: "Spanish Language Day", type: "D", start: {mon: 4, d: 19}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Student’s Day"},

@@ -125,7 +125,7 @@
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Lakshadweep Day"}, first: {era: 1, y: 1956}},
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Bodoland Day"}, first: {era: 1, y: 2003}},
 
-        {inherits: "Palm Sunday", type: "D", start: {Easter:  "Easter", offsetD: -7}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {titles: {"en": "Feast of St. Thomas the Apostle"}, type: "D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/st-thomas-history/"}, first: {era: 1, y: 1969}},
         {type: "D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},

@@ -67,5 +67,6 @@
         {type: "D", start: {mon: 4, d: 23}, inherits: "Navy Day"},
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "Peach Blossom Day"}, urls: {"en": "https://nationaltoday.com/peach-blossom-day/"}},
         {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Cap Go Meh"}, urls: {"en": "https://www.daysoftheyear.com/days/cap-go-meh/"}},
+        {type: "M", start: {mon: 6}, titles: {"en": "Care For Your Grandparents Month"}, urls: {"en": "https://www.daysoftheyear.com/days/care-for-your-grandparents-month/"}, emoji: "👴👵"},
     ]
 }
