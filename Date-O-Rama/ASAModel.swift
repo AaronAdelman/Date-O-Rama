@@ -16,31 +16,31 @@ import ClockKit
 #endif
 import WatchConnectivity
 
-enum ASAPreferencesFileCode {
-    case clocks
-    case complications
-    
-    var suffix:  String {
-        get {
-            switch self {
-            case .clocks:
-                return "/Documents/Clock Preferences.json"
-                
-            case .complications:
-                return "/Documents/Complication Preferences.json"
-            } // switch self
-        } // get
-    } // var suffix
-} // enum ASAPreferencesFileCode
-
-
-fileprivate let TIMESTAMP_KEY = "timestamp"
-
 
 // MARK: -
 
 
 final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
+    fileprivate let TIMESTAMP_KEY = "timestamp"
+
+    enum PreferencesFileCode {
+        case clocks
+        case complications
+        
+        var suffix:  String {
+            get {
+                switch self {
+                case .clocks:
+                    return "/Documents/Clock Preferences.json"
+                    
+                case .complications:
+                    return "/Documents/Complication Preferences.json"
+                } // switch self
+            } // get
+        } // var suffix
+    } // enum PreferencesFileCode
+
+    
     @MainActor static let shared = ASAModel()
     
     
@@ -134,7 +134,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         return nil
     } // func checkForContainerExistence()
     
-    fileprivate func preferencesFilePath(code:  ASAPreferencesFileCode) -> String? {
+    fileprivate func preferencesFilePath(code:  PreferencesFileCode) -> String? {
         if self.containerURL == nil {
             return nil
         }
@@ -152,9 +152,9 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         }
         
         return possibilityPath
-    } // func func preferencesFilePath(code:  ASAPreferencesFileCode) -> String?
+    } // func func preferencesFilePath(code:  PreferencesFileCode) -> String?
     
-    private func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool {
+    private func preferenceFileExists(code:  PreferencesFileCode) -> Bool {
 #if os(watchOS)
         let defaults = UserDefaults.standard
         return defaults.object(forKey: code.suffix) != nil
@@ -170,7 +170,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         let result = FileManager.default.fileExists(atPath: path!)
         return result
 #endif
-    } // func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool
+    } // func preferenceFileExists(code:  PreferencesFileCode) -> Bool
     
     func locationsWithClocksArray(key: ASAClockArrayKey) -> Array<ASALocationWithClocks> {
         switch key {
@@ -243,7 +243,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
             //            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
             do {
 #if os(watchOS)
-                let data = defaults.object(forKey:  ASAPreferencesFileCode.clocks.suffix) as! Data
+                let data = defaults.object(forKey:  PreferencesFileCode.clocks.suffix) as! Data
 #else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
 #endif
@@ -275,7 +275,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
                 //                debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
                 do {
 #if os(watchOS)
-                    let data = defaults.object(forKey:  ASAPreferencesFileCode.complications.suffix) as! Data
+                    let data = defaults.object(forKey:  PreferencesFileCode.complications.suffix) as! Data
 #else
                     let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
 #endif
@@ -334,7 +334,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         NSFileCoordinator.removeFilePresenter(self)
     } // deinit
     
-    fileprivate func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode) {
+    fileprivate func writePreferences(_ dictionary: [String : Any], code:  PreferencesFileCode) {
         let data = (try? JSONSerialization.data(withJSONObject: dictionary, options: []))
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data != nil {
@@ -360,9 +360,9 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         } else {
             //            debugPrint(#file, #function, "Data is nil")
         }
-    } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
+    } // func writePreferences(_ dictionary: [String : Any], code:  PreferencesFileCode)
     
-    @MainActor public func savePreferences(code:  ASAPreferencesFileCode) {
+    @MainActor public func savePreferences(code:  PreferencesFileCode) {
         self.objectWillChange.send()
         
         if code == .clocks {

@@ -136,13 +136,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         } // didSet
     } // var iCalendarEventCalendars
     
-    @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue {
-        didSet {
-//            DispatchQueue.main.async {
-//                ASAModel.shared.savePreferences(code: .clocks)
-//            }
-        }
-    }
+    @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
     
 
     // MARK:  -
