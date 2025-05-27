@@ -95,7 +95,7 @@ struct ASAComplicationSectionView: View {
                     }
                     .sheet(isPresented: self.$showingDetailView, onDismiss: {
                     }) {
-                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData)
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData).environmentObject(userData).environmentObject(ASALocationManager.shared)
                     }
                 }
             } // HStack

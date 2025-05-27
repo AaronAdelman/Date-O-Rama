@@ -27,6 +27,8 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
     
     let objectWillChange = PassthroughSubject<Void, Never>()
     
+    let locationManager = ASALocationManager.shared
+    
     init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool) {
         self.location           = location
         self.clocks             = clocks
@@ -58,7 +60,6 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
     
     @MainActor @objc func handleLocationChanged(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-            let locationManager = ASALocationManager.shared
             self.location = locationManager.deviceLocation
         }
     } // func handle(notification:  Notification) -> Void

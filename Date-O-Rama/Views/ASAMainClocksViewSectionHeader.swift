@@ -45,7 +45,7 @@ struct ASAMainClocksViewSectionHeader: View {
             VStack(alignment: .leading) {
                 HStack {
                     if locationWithClocks.usesDeviceLocation {
-                        ASALocationSymbol()
+                        ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                     }
                     Text(sectionHeaderEmoji)
                     Text(sectionHeaderTitle)
@@ -60,7 +60,7 @@ struct ASAMainClocksViewSectionHeader: View {
         } else {
             HStack {
                 if locationWithClocks.usesDeviceLocation {
-                    ASALocationSymbol()
+                    ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                 }
                 Text(sectionHeaderEmoji)
                 Text(sectionHeaderTitle)

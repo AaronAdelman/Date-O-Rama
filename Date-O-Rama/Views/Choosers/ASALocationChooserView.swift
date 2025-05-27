@@ -12,6 +12,8 @@ import MapKit
 
 struct ASALocationChooserView: View {
     @EnvironmentObject var userData:  ASAModel
+    @EnvironmentObject var locationManager: ASALocationManager
+
 
     @ObservedObject var locationWithClocks: ASALocationWithClocks
     var shouldCreateNewLocationWithClocks: Bool
@@ -22,12 +24,11 @@ struct ASALocationChooserView: View {
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {
-                let deviceLocation = ASALocationManager.shared.deviceLocation
+                let deviceLocation = locationManager.deviceLocation
                 tempLocationData.updateWith(deviceLocation)
             }
         } // didSet
     } // var tempUsesDeviceLocation
-    @ObservedObject var locationManager = ASALocationManager.shared
 
     @Environment(\.dismiss) var dismiss
     
@@ -49,7 +50,7 @@ struct ASALocationChooserView: View {
         let usesDeviceLocation = self.tempUsesDeviceLocation && tempLocationData.type == .EarthLocation
         self.locationWithClocks.usesDeviceLocation = usesDeviceLocation
         if usesDeviceLocation {
-            self.locationWithClocks.location = ASALocationManager.shared.deviceLocation
+            self.locationWithClocks.location = locationManager.deviceLocation
         } else {
             self.locationWithClocks.location = self.tempLocationData
         }
@@ -100,7 +101,7 @@ struct ASALocationChooserView: View {
             
             Form {
                 Section {
-                    ASALocationCell(usesDeviceLocation: $tempUsesDeviceLocation, locationData: tempLocationData)
+                    ASALocationCell(usesDeviceLocation: $tempUsesDeviceLocation, locationData: tempLocationData).environmentObject(locationWithClocks.locationManager)
                     ASATimeZoneCell(timeZone: $tempLocationData.timeZone, now: Date())
                 }
                 

@@ -49,7 +49,7 @@ extension CLAuthorizationStatus {
 } // extension CLAuthorizationStatus
 
 struct ASALocationSymbol:  View {
-    @ObservedObject var locationManager = ASALocationManager.shared
+    @ObservedObject var locationManager: ASALocationManager
 
     var body:  some View {
         let SCALE: Image.Scale = .small

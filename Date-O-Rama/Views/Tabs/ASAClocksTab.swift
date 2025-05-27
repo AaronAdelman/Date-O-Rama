@@ -113,8 +113,9 @@ struct ASAClocksTab: View {
                         ASAMenuTitle(imageSystemName: "mappin", title: "Locations")
                     }
                     .sheet(isPresented: $isShowingNewLocationView, content: {
-                        let locationWithClocks = ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
-                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true).environmentObject(userData)
+                        let locationManager: ASALocationManager = ASALocationManager.shared
+                        let locationWithClocks = ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true).environmentObject(userData).environmentObject(userData).environmentObject(locationManager)
                     })
                     
                     Spacer()

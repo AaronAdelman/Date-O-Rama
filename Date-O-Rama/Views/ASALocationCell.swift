@@ -12,8 +12,8 @@ import CoreLocation
 struct ASALocationCell:  View {
     @Binding var usesDeviceLocation:  Bool
     @ObservedObject var locationData:  ASALocation
-    @ObservedObject var locationManager = ASALocationManager.shared
-    
+    @EnvironmentObject var locationManager: ASALocationManager
+
     func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
         if authorizationStatus == nil {
             return "LAST_DEVICE_LOCATION"
@@ -51,7 +51,7 @@ struct ASALocationCell:  View {
                         if usesDeviceLocation {
                             HStack {
                                 Spacer()
-                                ASALocationSymbol()
+                                ASALocationSymbol(locationManager: locationManager)
                                 Text(NSLocalizedString(rawDeviceLocationString(authorizationStatus: locationManager.locationAuthorizationStatus), comment:  "")).multilineTextAlignment(.trailing)
                             } // HStack
                             if !(locationManager.locationAuthorizationStatus?.authorizedAtLeastWhenInUse ?? false) {

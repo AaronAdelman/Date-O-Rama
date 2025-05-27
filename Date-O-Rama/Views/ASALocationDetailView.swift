@@ -30,8 +30,8 @@ struct ASALocationDetailView: View {
         NavigationView {
             List {
                 Section {
-                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData), label: {
-                        ASALocationCell(usesDeviceLocation: $locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
+                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData).environmentObject(locationWithClocks.locationManager), label: {
+                        ASALocationCell(usesDeviceLocation: $locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location).environmentObject(locationWithClocks.locationManager)
                     })
                     
                     ASATimeZoneCell(timeZone: $locationWithClocks.location.timeZone, now: now)
