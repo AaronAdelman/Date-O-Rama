@@ -27,24 +27,26 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
     
     let objectWillChange = PassthroughSubject<Void, Never>()
     
-    let locationManager = ASALocationManager.shared
+    var locationManager: ASALocationManager
     
-    init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool) {
+    init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool, locationManager: ASALocationManager) {
         self.location           = location
         self.clocks             = clocks
         self.usesDeviceLocation = usesDeviceLocation
+        self.locationManager    = locationManager
         super.init()
         registerForLocationChangedNotifications()
     } // init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool)
     
     static func generic(location: ASALocation, usesDeviceLocation: Bool) -> ASALocationWithClocks {
         let locationType = location.type
+        let locationManager: ASALocationManager = ASALocationManager.shared
         switch locationType {
         case .EarthUniversal, .MarsUniversal:
-            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: false)
+            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: false, locationManager: locationManager)
             
         case .EarthLocation:
-            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: usesDeviceLocation)
+            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: usesDeviceLocation, locationManager: locationManager)
         }
     }
     

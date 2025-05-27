@@ -46,7 +46,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
     
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASALocationManager.shared)]
     
     private func reloadComplicationTimelines() {
 #if os(watchOS)
@@ -58,27 +58,27 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
 #endif
     }
     
-    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
+    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASALocationManager.shared) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
+    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASALocationManager.shared) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
+    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASALocationManager.shared) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
+    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASALocationManager.shared) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
+    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASALocationManager.shared) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
@@ -199,34 +199,34 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         
         switch key {
         case .app:
-            return ASALocationWithClocks(location: deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
+            return ASALocationWithClocks(location: deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
             
         case .threeLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat: .full),
                 ASAClock.generic(calendarCode: .IslamicSolar, dateFormat: .full)
-            ], usesDeviceLocation: true)
+            ], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
             
         case .twoLineSmall:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekday),
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .dayOfMonth)
-            ], usesDeviceLocation: true)
+            ], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
             
         case .twoLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
-            ], usesDeviceLocation: true)
+            ], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
             
         case .oneLineSmall:
             return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
-                                                                           ], usesDeviceLocation: true)
+                                                                           ], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
             
         case .oneLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
-                                                                           ], usesDeviceLocation: true)
+                                                                           ], usesDeviceLocation: true, locationManager: ASALocationManager.shared)
         } // switch key
     } // func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks
     
@@ -455,7 +455,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
                     return $0.location == location && $0.usesDeviceLocation == usesDeviceLocation
                 })
                 if index == nil {
-                    tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation))
+                    tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation, locationManager: ASALocationManager.shared))
                 } else {
                     tempArray[index!].clocks.append(clock)
                 }
@@ -537,7 +537,7 @@ extension ASAModel {
             }
         } // for i in 0..<self.mainClocks.count
         
-        let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: false)
+        let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: false, locationManager: ASALocationManager.shared)
         addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock, location: ASALocation)
     
