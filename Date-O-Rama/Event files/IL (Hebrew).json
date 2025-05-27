@@ -15,12 +15,9 @@
         {titles: {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, type: "D", start: {mon: 3, d: 7, thruD: 8, wkd: [1]}},
         {inherits: "Teacher’s Day", type: "D", start: {mon: 3, d: 23}, urls: {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
         {titles: {"he": "יום העליה", "en": "‘Aliyyah Day"}, type: "D", start: {mon: 8, d: 10}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, type: "D", start: {mon: 8, d: 27, wkd: [2, 3, 4, 5]
-       }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, type: "D", start: {mon: 8, d: 28, wkd: [2]
-       }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, type: "D", start: {mon: 8, d: 26, wkd: [5]
-       }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
+        {type: "D", start: {mon: 8, d: 27, wkd: [2, 3, 4, 5]}, inherits: "Holocaust Day"},
+        {type: "D", start: {mon: 8, d: 28, wkd: [2]}, titles: {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
+        {type: "D", start: {mon: 8, d: 26, wkd: [5]}, titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "D", start: {mon: 9, d: 4}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "D", start: {mon: 9, d: 5, wkd: [2]
        }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
