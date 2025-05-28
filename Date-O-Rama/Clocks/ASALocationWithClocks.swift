@@ -38,9 +38,8 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         registerForLocationChangedNotifications()
     } // init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool)
     
-    static func generic(location: ASALocation, usesDeviceLocation: Bool) -> ASALocationWithClocks {
+    static func generic(location: ASALocation, usesDeviceLocation: Bool, locationManager: ASALocationManager) -> ASALocationWithClocks {
         let locationType = location.type
-        let locationManager: ASALocationManager = ASALocationManager.shared
         switch locationType {
         case .EarthUniversal, .MarsUniversal:
             return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: false, locationManager: locationManager)
