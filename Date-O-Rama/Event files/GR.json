@@ -25,5 +25,6 @@
         {inherits: "Revolution Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}},
         {titles: {"en": "August Moon Festival", "he": "פסטיבל הירח באוגוסט"}, type: "D", start: {"zmoPhase": "1stFull", mon: 8}, first: {era: 1, y: 1996}, urls: {"en": "https://nationaltoday.com/august-moon-festival/"}},
         {type: "D", start: {mon: 5, d: 21}, inherits: "Firewalking Festival"},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2004}, titles: {"en": "National Holocaust Memorial Day", "el": "Εθνική Ημέρα Μνήμης Ολοκαυτώματος"}},
     ]
 }

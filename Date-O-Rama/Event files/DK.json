@@ -43,5 +43,6 @@
         {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Birthday of Prince Henrik"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=57737"}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 5, d: 6}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 1, d: 27}, titles: {"en": "Auschwitz Day of Holocaust and Genocide Remembrance"}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
    ]
 }

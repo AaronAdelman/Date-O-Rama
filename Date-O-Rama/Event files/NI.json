@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 6, d: 23}},
-        {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
         {type: "D", start: {mon: 2, d: 1}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 5, d: 27}, inherits: "Army Day"},
         {type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/santo-domingo-celebrations-start/"}, titles: {"en": "Descent of St. Dominic", "he": "תחילת חגיגת סנטו דומינגו"}},

@@ -40,5 +40,7 @@
        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
        {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
        {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},
+       {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
+
     ]
 }

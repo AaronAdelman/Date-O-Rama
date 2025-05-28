@@ -14,7 +14,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inherits: "Labour Day"},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {inherits: "St. Vitus Day", type: "D", start: {mon: 6, d: 28}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "General Framework Agreement Day", "bs": "Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"}, notes: {"en": "Dayton Agreement Day"}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},

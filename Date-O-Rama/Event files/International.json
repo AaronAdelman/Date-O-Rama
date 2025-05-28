@@ -19,7 +19,7 @@
         {inherits: "Kwanzaa (day 6:  Kuumba)", type: "D", start: {mon: 12, d: 31}},
         {inherits: "Kwanzaa (day 7:  Imani)", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1966}},
         {inherits: "Safer Internet Day", type: "D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
         {inherits: "Victory Over Japan Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1945}},
         {inherits: "World Wetlands Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1971}},

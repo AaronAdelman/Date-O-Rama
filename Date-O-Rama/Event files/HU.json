@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Day of the Hungarian Culture", "hu": "A magyar kultúra napja"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Memorial Day of the Republic", "hu": "A köztársaság emléknapja"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 25}, titles: {"en": "Memorial Day for the Victims of the Communist Dictatorships", "hu": "A kommunista diktatúrák áldozatainak emléknapja"}, first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Memorial Day for the Victims of the Holocaust", "hu": "A holokauszt áldozatainak emléknapja"}, first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Memorial Day for the Victims of the Holocaust", "hu": "A holokauszt áldozatainak emléknapja"}, first: {era: 1, y: 2001}, inherits: "Holocaust Memorial Day"},
         {type: "D", start: {mon: 5, d: 21}, titles: {"en": "National Defense Day", "he": "יום ההגנה הלאומי", "hu": "Honvédelmi nap"}},
         {type: "D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},

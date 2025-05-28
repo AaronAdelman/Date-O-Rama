@@ -19,12 +19,12 @@
         {inherits: "Midsummer Day", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/finland/finland-midsummer-day"}},
         {inherits: "All Saints Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
         {inherits: "Father’s Day", type: "D", start: {mon: 11, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/finland/fathers-day"}},
-        {inherits: "Independence Day", type: "D", start: {mon: 12, d: 6}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
+        {type: "D", start: {mon: 12, d: 6}, inherits: "Independence Day", first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {type: "D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, titles: {"en": "Kalevala Day", "fi": "Kalevalan päivä"}, notes: {"en": "Finnish Culture Day"}},
+        {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Kalevala Day", "fi": "Kalevalan päivä"}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, notes: {"en": "Finnish Culture Day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Walpurgis Night"},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Flag Day of the Finnish Defence Forces", "fi": "puolustusvoimain lippujuhlan päivä"}, inherits: "Flag Day"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "Day of Finnish Architecture and Design", "fi": "Arkkitehtuurin ja muotoilun päiviä"}},
@@ -46,8 +46,9 @@
         
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", titles: {"en": "Day of Children’s Rights"}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
-        {type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, titles: {"en": "National Emergency Number Day"}, first: {era: 1, y: 1997}},
+        {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National Emergency Number Day"}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, first: {era: 1, y: 1997}},
         {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 6, d: 6}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Memorial Day for the Victims of the Holocaust", "fi": "Vainojen uhrien muistopäivä"}},
     ]
 }

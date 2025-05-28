@@ -20,7 +20,7 @@
         
         {type: "D", start: {mon: 1, d: 12}, inherits: "Memorial Day", urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Turkmenistan)"}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Defender of the Fatherland Day", urls: {"en": "https://en.wikipedia.org/wiki/Defender_of_the_Fatherland_Day_(Turkmenistan)"}},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}, titles: {"en": "Day of Remembrance of National Heroes of Turkmenistan in the 1941-1945 World War"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)", titles: {"en": "Day of Remembrance of National Heroes of Turkmenistan in the 1941-1945 World War"}},
         {type: "nD", start: {mon: 5, d: 18}, end: {mon: 5, d: 19}, titles: {"en": "Day of Revival, Unity, and the Poetry of Magtymguly"}},
         {type: "D", start: {mon: 5, wkd: [1], nth: -1}, titles: {"en": "Carpet Day"}},
         {type: "D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/day-of-turkmen-workers-of-culture-and-art/"}, titles: {"en": "Day of Turkmen Workers of Culture and Art"}, first: {era: 1, y: 2009}, emoji: "👨‍🎨👩‍🎨"},

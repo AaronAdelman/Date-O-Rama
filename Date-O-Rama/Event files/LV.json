@@ -31,6 +31,7 @@
         
         {titles: {"en": "Herbal Day"}, type: "D", start: {mon: 6, d: 22}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
+        {type: "D", start: {mon: 11, d: 7}, inherits: "Border Guards Day", first: {era: 1, y: 2015}, titles: {"en": "Day of the State Border Guard of Latvia"}},
    ],
     templates: [
         {template: "Restoration of Independence Day (bridge day)", type: "D", start: {mon: 5, d: 5}, titles: {"en": "Restoration of Independence Day (bridge day)"}, inherits: "Restoration of Independence Day"},

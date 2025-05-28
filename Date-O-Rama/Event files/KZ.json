@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 5, d: 2, wkd: [2]}, inherits: "Unity Day", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-people-solidarity-holiday"}, titles: {"en": "Kazakhstan People’s Unity Day (in lieu)"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 5, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/defenders-day"}, inherits: "Defender of the Fatherland Day", notes: {"en": "Defender’s Day", "kk": "День Защитника Отечества"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 5, d: 8, thruD: 9, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/defenders-day"}, titles: {"en": "Defender of the Fatherland Day (in lieu)"}, first: {era: 1, y: 2013}},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/victory-day"}, notes: {"en": "Great Patriotic War Against Fascism Victory Day"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/victory-day"}, notes: {"en": "Great Patriotic War Against Fascism Victory Day"}},
         {type: "D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/capital-city-day/"}, inherits: "Capital City Day", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 8, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-constitution-day"}, inherits: "Constitution Day"},
         {type: "D", start: {mon: 10, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-republic-day"}, inherits: "Republic Day", first: {era: 1, y: 2022}},
@@ -29,7 +29,7 @@
         
         {inherits: "Father’s Day", type: "D", start: {mon: 5, d: 7}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
-        {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
         {titles: {"en": "Abai Day"}, start: {mon: 8, d: 10}, type: "D", urls: {"en": "https://nationaltoday.com/abai-day/"}, first: {era: 1, y: 1845}},
         {type: "D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/kazakhstans-first-presidents-day/"}, titles: {"en": "First President’s Day"}, first: {era: 1, y: 2011}},
 

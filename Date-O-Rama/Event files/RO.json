@@ -72,7 +72,7 @@
         {inherits: "World Press Freedom Day", type: "D", start: {mon: 5, d: 3}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 5, d: 5}, titles: {"en": "Day of the Tatar Language"}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en": "Equality of Opportunities Between Women and Men Day"}},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)", first: {era: 1, y: 1945}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "Monarchy Day"}, emoji: "👑"},
         {type: "D", start: {mon: 5, d: 10}, titles: {"en": "Balkan Romanianness Day"}},

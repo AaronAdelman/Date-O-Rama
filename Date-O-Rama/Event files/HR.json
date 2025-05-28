@@ -27,7 +27,7 @@
         {titles: {"en": "Day of founding of the People’s Protection", "hr": "Dan osnivanja Narodne zaštite"}, type: "D", start: {mon: 3, d: 15}},
         {titles: {"en": "Day of the Death of Zrinski and Frankopan", "hr": "Dan pogibije Zrinskog i Frankopana"}, type: "D", start: {mon: 4, d: 30}, inherits: "*DeathAnniv*"},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
-        {inherits: "Victory Day (May 9)", type: "D", start: {mon: 5, d: 9}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {inherits: "Day of Remembrance of Croatian Victims in the Fight for Freedom and Independence", type: "D", start: {mon: 5, d: 15, thruD: 18, wkd: [7]}},
         {inherits: "Day of Remembrance of Croatian Victims in the Fight for Freedom and Independence", type: "D", start: {mon: 5, d: 13, thruD: 15, wkd: [1]}},
         {inherits: "Independence Day", type: "D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/croatia-independence-day/"}, first: {era: 1, y: 2002}},

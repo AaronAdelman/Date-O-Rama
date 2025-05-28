@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 12, d: 24}, titles: {"en": "Kim Jong-suk’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
-        {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
   ]
 }

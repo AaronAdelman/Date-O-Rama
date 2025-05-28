@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 23}},
-        {inherits: "International Children’s Day", type: "D", start: {mon: 6, d: 1}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 17}, first: {era: 1, y: 1992}},
         {titles: {"en": "Matica Slovenská Day"}, type: "D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/matice-slovenska-day/"}},
         {type: "D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/struggle-for-human-rights-day/"}, titles: {"en": "Struggle For Human Rights Day"}, first: {era: 1, y: 1988}},
