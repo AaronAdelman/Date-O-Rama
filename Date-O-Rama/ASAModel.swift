@@ -47,7 +47,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
     
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASALocationManager.shared)]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASAModel.locationManager)]
     
     private func reloadComplicationTimelines() {
 #if os(watchOS)

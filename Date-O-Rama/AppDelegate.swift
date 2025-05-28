@@ -80,9 +80,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, 
     func sessionReachabilityDidChange(_ session: WCSession) {
 //        debugPrint("\(#file) \(#function)")
         
-        if session.isReachable && session.isPaired && session.isWatchAppInstalled
-//            && session.isComplicationEnabled
-        {
+        if session.isReachable && session.isPaired && session.isWatchAppInstalled {
             self.sendUserData(session)
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
