@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/fathers-day"}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 11, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/all-saints-day"}, titles: {"en": "All Saints' Day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
         {titles: {"en": "Saint Nicholas’s Eve", "nl": "Sinterklaasavond"}, type: "D", start: {mon: 12, d: 5}, emoji: "🎅", notes: {"en": "Pakjesavond"}},
         {inherits: "Carnival (day 1)", type: "D", start: {Easter:  "Easter", offsetD: -49}},
@@ -40,5 +40,6 @@
         {inherits: "Black History Month", type: "M", start: {mon: 10}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 6, d: 4}},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Bitterballen Day", "nl": "Dag van de Bitterbal"}, notes: {"nl": "Bitterballendag"}, urls: {"en": "https://www.daysoftheyear.com/days/bitterballen-day/"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 1957}, titles: {"en": "National Holocaust Remembrance", "nl": "Nationale Holocaust Herdenking"}, notes: {"en": "Auschwitz Remembrance", "nl": "Auschwitzherdenking"}, urls: {"en": "https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
    ]
 }

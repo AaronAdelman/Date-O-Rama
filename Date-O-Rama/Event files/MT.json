@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {titles: {"en": "Feast of St. Gregory", "mt": "San Girgor"}, type: "D", start: {Easter:  "Easter", offsetD: 3}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "Feast of St. Publius", "mt": "San Publju"}},
-        {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "St. George’s Day"},
 
         {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {Easter:  "Easter", offsetD: -9}},
         {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
@@ -110,12 +110,12 @@
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
-        {inherits: "Feast of St. Martin of Tours", type: "D", start: {mon: 11, d: 11}},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "Feast of St. Martin of Tours"},
         {inherits: "Feast of St. Cecilia", type: "D", start: {mon: 11, d: 22}},
         {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},
         {inherits: "Feast of Christ the King", type: "D", start: {mon: 11, d: 26, thruMon: 12, thruD: 2, wkd: [1]}},
 
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 

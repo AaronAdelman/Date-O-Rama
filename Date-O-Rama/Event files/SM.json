@@ -24,7 +24,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
     ],
     templates: [

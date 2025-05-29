@@ -23,5 +23,7 @@
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 6, d: 29}, inherits: "Border Guards Day", titles: {"en": "Day of the State Border Guard of Lithuania"}},
+        {type: "D", start: {mon: 9, d: 23}, inherits: "Holocaust Memorial Day", titles: {"en": "Day of the Genocide of Lithuania’s Jews", "lt": "Lietuvos žydų genocido diena"}},
+        {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2011}},
     ]
 }

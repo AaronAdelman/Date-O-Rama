@@ -149,6 +149,8 @@
         {type: "span", start: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2013}, last: {era: 1, y: 2015}},
         {type: "span", start: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2019}, last: {era: 1, y: 2023}},
         {type: "span", start: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2009}, last: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 10, d: 9}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2004}, titles: {"en": "National Day of Commemorating the Holocaust", "ro": "Ziua Naţională de Comemorare a Holocaustului", "he": "היום הלאומי לציון השואה ברומניה", "fr": "Journée nationale de commémoration de l’Holocauste"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Commemorating_the_Holocaust", "ro": "https://ro.wikipedia.org/wiki/Ziua_Națională_de_Comemorare_a_Holocaustului", "he": "https://he.wikipedia.org/wiki/היום_הלאומי_לציון_השואה_ברומניה", "fr": "https://fr.wikipedia.org/wiki/Journée_nationale_de_commémoration_de_l%27Holocauste"}},
+
    ],
     templates: [
        {template: "Public Sector Holiday", type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en": "Public Sector Holiday"}},

@@ -36,7 +36,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         {type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, inherits: "Restoration Day", locations: {"en": "Geneva"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
@@ -56,5 +56,6 @@
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1925}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "D", start: {mon: 9, d: 28}, inherits: "National Coffee Day"},
-  ]
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
+    ]
 }

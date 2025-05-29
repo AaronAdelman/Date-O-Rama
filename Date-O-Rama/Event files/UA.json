@@ -135,5 +135,8 @@
         {type: "span", start: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2013}, last: {era: 1, y: 2015}},
         {type: "span", start: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2019}, last: {era: 1, y: 2023}},
         {type: "span", start: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inherits: "Earth Hour", first: {era: 1, y: 2009}, last: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2004}},
+
   ]
 }

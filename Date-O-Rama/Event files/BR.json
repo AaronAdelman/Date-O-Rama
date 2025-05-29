@@ -40,7 +40,7 @@
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Founding of Santos", "pt": "Aniversário de Santos"}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "Founding of Recife and Olinda", "pt": "Aniversário de Recife e Olinda"}},
         {type: "D", start: {mon: 4, d: 21}, titles: {"en": "Founding of Brasília", "pt": "Aniversário de Brasília"}},
-        {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "St. George’s Day"},
         {type: "D", start: {mon: 7, d: 2}, titles: {"en": "Bahia Independence Day"}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"en": "Sergipe Political Emancipation Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Feast of Our Lady of the Good Voyage", "pt": "Nossa Senhora da Boa Viagem"}},
@@ -71,7 +71,7 @@
         
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Pão Francês Day"}},
-        {inherits: "Grandparents’ Day", type: "D", start: {mon: 7, d: 26}},
+        {type: "D", start: {mon: 7, d: 26}, inherits: "Grandparents’ Day"},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Saci Day", first: {era: 1, y: 2004}},
         {type: "nD", start: {era: 1, y: 2024, mon: 11, d: 18, durationD: 2}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/brazil/rio-g20-holiday"}, locations: {"en": "Rio de Janeiro"}},
         {type: "D", start: {mon: 1, d: 11, thruD: 17, wkd: [5]}, titles: {"en": "Washing of the Bonfim", "pt": "Lavagem do Bonfim"}, urls: {"en": "https://www.daysoftheyear.com/days/the-washing-of-bonfim/"}},

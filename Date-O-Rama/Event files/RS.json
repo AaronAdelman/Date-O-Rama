@@ -26,5 +26,7 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {titles: {"en": "Day of Serb Unity, Freedom and the National Flag", "sr-Cyrl": "Дан српског јединства, слободе и националне заставе", "sr-Latn": "Dan srpskog jedinstva, slobode i nacionalne zastave"}, type: "D", start: {mon: 9, d: 15}, urls: {"en": "https://en.wikipedia.org/wiki/Day_of_Serb_Unity,_Freedom_and_the_National_Flag"}},
         {type: "D", start: {mon: 2, d: 17, wkd: [2]}, titles: {"en": "Statehood Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/sovereignty-day-of-serbia"}, first: {era: 1, y: 2001}, notes: {"en": "Sovereignty Day (in lieu)"}},
+        {type: "D", start: {mon: 4, d: 2}, inherits: "Holocaust Memorial Day", titles: {"en": "Holocaust Remembrance Day", "sr": "Dan sećanja na žrtve holokausta"}},
+        {type: "D", start: {mon: 12, d: 16}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2009}},
    ]
 }

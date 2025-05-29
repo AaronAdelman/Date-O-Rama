@@ -22,7 +22,6 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/norway/christmas-holiday"}, inherits: "Boxing Day"},
 
-        
         {titles: {"en": "Queen Sonja’s Day"}, type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/queen-sonjas-day/"}, first: {era: 1, y: 1991}, inherits: "*BDay*"},
         {type: "D", start: {mon: 7, d: 2}, inherits: "St. Swithin’s Day", first: {era: 1, y: 990}},
         {titles: {"en": "Crown Prince Haakon’s Day"}, type: "D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/crown-prince-haakons-day/"}, first: {era: 1, y: 1973}, inherits: "*BDay*"},
@@ -34,5 +33,6 @@
         {type: "D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/king-harald-vs-day/"}, titles: {"en": "King Harald V’s Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"}, titles: {"en": "Dissolution of Union between Norway and Sweden"}, emoji: "🇳🇴🇸🇪", first: {era: 1, y: 1905}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
     ]
 }

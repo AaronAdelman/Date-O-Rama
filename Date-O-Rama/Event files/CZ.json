@@ -22,11 +22,12 @@
         {type: "D", start: {mon: 11, d: 17}, inherits: "Struggle for Freedom and Democracy Day", urls: {"en": "https://www.daysoftheyear.com/days/struggle-for-freedom-and-democracy-day/"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 23}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Memorial Day for the Victims of the Holocaust and Prevention of Crimes against Humanity", "cs": "Den památky obětí holocaustu a předcházení zločinu proti lidskosti"}},
+        {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2011}},
    ]
 }

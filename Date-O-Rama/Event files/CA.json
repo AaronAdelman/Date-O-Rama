@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "D", start: {mon: 10, d: 15}, first: {era: 1, y: 2005}},
         {inherits: "Remembrance Day", type: "D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
-        {inherits: "St. George’s Day", type: "D", start: {mon: 4, d: 23}},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "St. George’s Day"},
         {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {inherits: "Tartan Day", type: "D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1987}},

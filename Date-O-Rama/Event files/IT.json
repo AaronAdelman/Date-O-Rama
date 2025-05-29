@@ -29,7 +29,7 @@
         {inherits: "Feast of St. Ambrose", type: "D", start: {mon: 12, d: 7}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 26}, first: {era: 1, y: 1947}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day", first: {era: 1, y: 1947}},
         
         {type: "D", start: {mon: 2, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/National_Memorial_Day_of_the_Exiles_and_Foibe"}, titles: {"en": "National Memorial Day of the Exiles and Foibe", "it": "Giorno del ricordo"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 2, d: 11}, inherits: "Lateran Treaty Day"},

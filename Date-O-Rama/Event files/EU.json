@@ -25,6 +25,8 @@
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "European 112 Day"}, emoji: "☎️", urls: {"en": "https://en.wikipedia.org/wiki/European_112_Day"}},
         {type: "D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/european-day-for-victims-of-crime/"}, titles: {"en": "European Day for Victims of Crime"}},
         {type: "D", start: {mon: 3, d: 6}, titles: {"en": "European Day of the Righteous"}},
+        {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", notes: {"en": "Genocide Remembrance Day of the Roma and Sinti", "pl": "Dzień Pamięci o Zagładzie Romów"}, first: {era: 1, y: 2015}},
+        
         {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 9}, end: {era: 1, y: 2024, mon: 5, d: 8}, urls: {"en": "https://year-of-skills.europa.eu/about_en"}, titles: {"en": "European Year of Skills"}},
         {type: "Y", start: {era: 1, y: 1983}, titles: {"en": "European Year of SMEs and the Craft Industry"}, emoji: "🧶"},
         {type: "Y", start: {era: 1, y: 1984}, titles: {"en": "European Year for a People’s Europe"}},
