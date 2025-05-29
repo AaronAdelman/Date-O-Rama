@@ -1360,7 +1360,7 @@
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Hydroxyapatite Day"}, urls: {"en": "https://nationaltoday.com/national-hydroxyapatite-day/"}},
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Snail Day"}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, emoji: "🐌"},
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Alligator Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-alligator-day/"}, emoji: "🐊", first: {era: 1, y: 2021}},
-        {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Coq Au Vin Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-coq-au-vin-day/"}, emoji: "🍗"},
+        {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Coq Au Vin Day"}, notes: {"en": "International Coq Au Vin Day\nInternational Rooster with Wine Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-coq-au-vin-day/"}, emoji: "🍗"},
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Paperclip Day"}, urls: {"en": "https://www.daysoftheyear.com/days/paper-clip-day/"}, notes: {"en": "Paper Clip Day"}, emoji: "📎"},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Raspberry Popover Day"}, notes: {"en": "Raspberry Tart Day\nNational Raspberry Pop Over Day"}, urls: {"en": "https://nationaltoday.com/national-raspberry-pop-over-day/"}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Garden Meditation Day", "he": "יום המדיטציה בגינה הלאומי"}, urls: {"en": "https://nationaltoday.com/national-garden-meditation-day/"}, first: {era: 1, y: 2000}},
