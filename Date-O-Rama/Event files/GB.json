@@ -141,7 +141,7 @@
         {type: "D", start: {mon: 6, wkd: [7], d: 12, thruD: 13}, inherits: "Trooping the Colour", first: {era: 1, y: 2020}, last: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, wkd: [7], d: 8, thruD: 9}, inherits: "Trooping the Colour", first: {era: 1, y: 2018}, last: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, wkd: [7], nth: -1}, inherits: "Armed Forces Day", urls: {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}, first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 6, wkd: [7], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/the-big-lunch/"}, titles: {"en": "The Big Lunch"}, emoji: "👝🍱", first: {era: 1, y: 2009}},
+        {type: "nD", start: {mon: 6, wkd: [7], d: 1, thruD: 7, durationD: 2}, titles: {"en": "The Big Lunch"}, urls: {"en": "https://www.edenprojectcommunities.com/the-big-lunch"}, emoji: "👝🍱", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, wkd: [7], nth: 3}, inherits: "Trooping the Colour", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-wrong-trousers-day/"}, titles: {"en": "National Wrong Trousers Day"}, notes: {"en": "Wallace & Gromit’s Wrong Trousers Day"}, first: {era: 1, y: 1997}, emoji: "👖"},
         {type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/emmeline-pankhurst-day/"}, titles: {"en": "Emmeline Pankhurst Day"}, inherits: "*BDay*", first: {era: 1, y: 1858}},
