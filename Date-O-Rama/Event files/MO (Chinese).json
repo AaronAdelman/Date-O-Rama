@@ -12,6 +12,7 @@
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/macau/buddha-purnima"}, inherits: "Buddha’s Birthday"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
+        {type: "D", start: {mon: 5, d: 7, wkd: [2]}, inherits: "Dragon Boat Festival Holiday", urls: {"en": "https://www.officeholidays.com/holidays/macau/dragon-boat-festival"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
         {type: "D", start: {mon: 8, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival"},
         {type: "D", start: {mon: 8, d: 17, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival (in lieu)"},

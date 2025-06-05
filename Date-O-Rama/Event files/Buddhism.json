@@ -5,7 +5,7 @@
     calendarColor: {red: 1.0, green: 0.82, blue: 0.41},
     events: [
         {type: "D", start: {mon: 12, d: 8}, inherits: "Bodhi Day"},
-        {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1950}},
+        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 2, d: 15}, inherits: "Parinirvana Day"},
         {type: "D", start: {mon: 2, d: 8}, inherits: "Parinirvana Day"},
         {type: "D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/world-day-of-metta/"}, titles: {"en": "World Day of Metta"}},

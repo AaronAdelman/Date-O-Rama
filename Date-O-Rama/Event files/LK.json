@@ -23,6 +23,6 @@
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
         
-        {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1950}},
+        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
     ]
 }

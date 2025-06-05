@@ -15,13 +15,14 @@
         {type: "D", start: {mon: 1, d: 6, wkd: [2, 4, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-new-year"}, inherits: "Spring Festival Holiday"},
         {type: "D", start: {mon: 1, d: 7, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-new-year"}, inherits: "Spring Festival Holiday"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
-        {type: "D", start: {mon: 5, d: 6, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/china/dragon-boat-festival"}, inherits: "Dragon Boat Festival Holiday"},
+        {type: "D", start: {mon: 5, d: 6, wkd: [1, 6]}, inherits: "Dragon Boat Festival Holiday", urls: {"en": "https://www.officeholidays.com/holidays/china/dragon-boat-festival"}},
+        {type: "D", start: {mon: 5, d: 7, wkd: [2, 7]}, inherits: "Dragon Boat Festival Holiday", urls: {"en": "https://www.officeholidays.com/holidays/china/dragon-boat-festival"}},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},
 
         {type: "D", start: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
 
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, titles: {"en": "Zhonge Festival", "zh_CN": "中和节"}, emoji: "🐲"},
+        {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Zhonge Festival", "zh_CN": "中和节"}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, emoji: "🐲"},
 
         {type: "D", start: {mon: 7, d: 7}, inherits: "Qixi Festival"},
         {type: "D", start: {mon: 7, d: 15}, inherits: "Ghost Festival"},

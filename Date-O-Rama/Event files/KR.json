@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-national-foundation-day"}, inherits: "National Foundation Day"},
         {type: "D", start: {mon: 10, d: 9}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/south-korea-hangeul-day/"}, titles: {"en": "Hangul Day", "ko": "한글날"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-
+        
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Parents’ Day", first: {era: 1, y: 1973}},
         {inherits: "Black Day", type: "D", start: {mon: 4, d: 14}, first: {era: 1, y: 1978}},
@@ -24,5 +24,13 @@
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Garaetteok Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day"}},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Kimchi Day"}, first: {era: 1, y: 2020}, urls: {"en": "https://www.checkiday.com/c92a98fa9a6a062f461df161bd469b5e/national-kimchi-day-south-korea"}},
         {type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, inherits: "Armed Forces Day", urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-armed-forces-day"}},
-  ]
+        {type: "D", start: {era: 1, y: 2018, mon: 6, d: 13}, inherits: "South Korea Election Day"},
+        {type: "D", start: {era: 1, y: 2020, mon: 4, d: 15}, inherits: "South Korea Election Day"},
+        {type: "D", start: {era: 1, y: 2022, mon: 3, d: 9}, inherits: "South Korea Election Day"},
+        {type: "D", start: {era: 1, y: 2024, mon: 4, d: 10}, inherits: "South Korea Election Day"},
+        {type: "D", start: {era: 1, y: 2025, mon: 6, d: 3}, inherits: "South Korea Election Day"},
+    ],
+    templates: [
+        {template: "South Korea Election Day", type: "D", start: {era: 1, y: 2018, mon: 6, d: 13}, inherits: "Election Day", urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-presidential-election-day"}},
+    ]
 }

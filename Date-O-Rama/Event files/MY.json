@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/declaration-of-malacca-as-a-historical-city/"}, titles: {"en": "Declaration of Malacca as a Historical City", "ms": "Hari Perisytiharan Bandar Melaka sebagai Bandaraya Bersejarah"}, first: {era: 1, y: 2006}, emoji: "🏙️"},
         {type: "D", start: {mon: 4, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/terengganu/birthday-of-the-sultan-of-terengganu"}, titles: {"en": "Birthday of the Sultan of Terengganu", "ms": "Hari Keputeraan Sultan Terengganu"}, inherits: "*BDay*", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1950}},
+        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 5, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, titles: {"en": "Birthday of the Raja of Perlis", "ms": "Hari Keputeraan Raja Perlis"}, inherits: "*BDay*", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 5, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/pahang/the-sultan-of-pahang-hol"}, titles: {"en": "The Sultan of Pahang Hol", "ms": "Hari Hol Pahang"}, first: {era: 1, y: 2021}, inherits: "*DeathAnniv*"},

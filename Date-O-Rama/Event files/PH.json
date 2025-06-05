@@ -72,7 +72,7 @@
         {inherits: "Armed Forces Day", type: "D", start: {mon: 12, d: 21}, titles: {"en": "Philippine Armed Forces Day", "fil": "Araw ng Hukbong Sandatahang Lakas ng Pilipinas"}, first: {era: 1, y: 1935}},
 
         {type: "D", start: {mon: 1, wkd: [2], nth: -1}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day", "fil": "Pambansang Araw ng Bibliya"}, first: {era: 1, y: 2019}},
-        {inherits: "Vesak", type: "D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 2001}},
+        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 2001}},
         {inherits: "Thanksgiving Day", type: "D", start: {mon: 11, wkd: [5], nth: -1}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 2019}},
 
