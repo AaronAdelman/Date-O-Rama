@@ -280,6 +280,7 @@
         {type: "M", start: {mon: 6}, urls: {"en": "https://www.daysoftheyear.com/days/soul-food-month/"}, titles: {"en": "National Soul Food Month"}, emoji: "🥘"},
         {type: "M", start: {mon: 6}, urls: {"en": "https://www.daysoftheyear.com/days/sports-america-kids-month/"}, titles: {"en": "Sports America Kids Month"}, emoji: "🥎🥏🏀", first: {era: 1, y: 2006}},
         {type: "M", start: {mon: 6}, urls: {"en": "https://www.daysoftheyear.com/days/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
+        {type: "M", start: {mon: 6}, titles: {"en": "National Frozen Yogurt Month", "he": "חודש הפרוזן יוגורט הלאומי"}, first: {era: 1, y: 1993}, urls: {"en": "https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}},
         {type: "M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/family-golf-month/"}, titles: {"en": "Family Golf Month"}, emoji: "⛳️"},
         {type: "M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/french-american-heritage-month/"}, titles: {"en": "French-American Heritage Month"}, emoji: "🇫🇷🇺🇸", first: {era: 1, y: 1998}},
         {type: "M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/hitchhiking-month/"}, titles: {"en": "Hitchhiking Month"}, first: {era: 1, y: 2020}},

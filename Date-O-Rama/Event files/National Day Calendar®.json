@@ -279,7 +279,7 @@
         {type: "D", start: {mon: 6, d: 30}, titles: {"en": "National OOTD Day"}, first: {era: 1, y: 2018}, notes: {"en": "National Outfit-of-the-Day Day\nThis event is meant to promote fashion."}},
         {type: "D", start: {mon: 6, d: 4}, inherits: "National Clean Beauty Day", first: {era: 1, y: 2020}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-clean-beauty-day-june-4"}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Start Over Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-start-over-day-june-5"}, first: {era: 1, y: 2023}, emoji: "💮"},
-        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Veggie Burger Day", "he": "יום ההמבורגר הצמחי הלאומי"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-veggie-burger-day-june-5"}, emoji: "🍔", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Veggie Burger Day", "he": "יום ההמבורגר הצמחי"}, notes: {"en": "National Veggie Burger Day", "he": "יום ההמבורגר הצמחי הלאומי"}, urls: {"en": "https://www.amys.com/veggieburgerday"}, emoji: "🍔", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 6}, titles: {"en": "National Eyewear Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-eyewear-day-june-6"}, emoji: "👓", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "World Caring Day"}, urls: {"en": "https://www.caringbridge.org/wcd/"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 6, wkd: [4], nth: -1}, titles: {"en": "National Parchment Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-parchment-day-last-wednesday-in-june"}, first: {era: 1, y: 2016}},
