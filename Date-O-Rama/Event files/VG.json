@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.07, green: 0.36, blue: 0.14},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_British_Virgin_Islands"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
@@ -14,8 +15,7 @@
         {type: "D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", start: {mon: 6, d: 16, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/king-charles-birthday"}, inherits: "Sovereign’s Birthday"},
-        {type: "D", start: {mon: 6, d: 10, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/king-charles-birthday"}, inherits: "Sovereign’s Birthday"},
+        {type: "D", start: {mon: 6, wkd: [6], nth: 2}, inherits: "Sovereign’s Birthday", urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/king-charles-birthday"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 7, d: 1, wkd: [2, 6]}, inherits: "Virgin Islands Day", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 3, wkd: [2]}, inherits: "Virgin Islands Day", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 5, wkd: [2]}, inherits: "Virgin Islands Day", first: {era: 1, y: 2021}},
