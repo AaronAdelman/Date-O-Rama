@@ -129,7 +129,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {titles: {"en": "Feast of St. Thomas the Apostle"}, type: "D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/st-thomas-history/"}, first: {era: 1, y: 1969}},
         {type: "D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {inherits: "Feast of the Holy Family", type: "D", start: {mon: 12, d: 30, wkd: [6]}},

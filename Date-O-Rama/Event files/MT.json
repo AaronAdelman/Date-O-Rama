@@ -105,14 +105,14 @@
         {titles: {"en": "Feast of St. Dominic of Guzman", "mt": "San Duminku ta’ Guzman"}, type: "D", start: {mon: 8, wkd: [1], nth: -1}},
         {titles: {"en": "Feast of St. Julian", "mt": "San Ġiljan"}, type: "D", start: {mon: 8, wkd: [1], nth: -1}},
         
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}, notes: {"en": "Feast of Our Lady of Victories\nVictory Day"}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary", notes: {"en": "Feast of Our Lady of Victories\nVictory Day"}},
         {type: "D", start: {mon: 9, d: 9, thruD: 15, wkd: [1]}, titles: {"en": "Feast of Our Lady of Graces", "mt": "Il-Madonna tal-Grazzja"}},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Feast of St. Martin of Tours"},
         {inherits: "Feast of St. Cecilia", type: "D", start: {mon: 11, d: 22}},
-        {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},
+        {type: "D", start: {mon: 11, d: 25}, inherits: "Feast of St. Catherine of Alexandria"},
         {inherits: "Feast of Christ the King", type: "D", start: {mon: 11, d: 26, thruMon: 12, thruD: 2, wkd: [1]}},
 
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

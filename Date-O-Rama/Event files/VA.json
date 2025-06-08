@@ -22,6 +22,6 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
     ]
 }

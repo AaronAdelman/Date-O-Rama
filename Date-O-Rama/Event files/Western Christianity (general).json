@@ -167,7 +167,7 @@
 
         {titles: {"en": "Feast of St. Gregory the Great"}, type: "D", start: {mon: 9, d: 3}},
 
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
 
         {titles: {"en": "Feast of St. Peter Claver"}, type: "D", start: {mon: 9, d: 9}},
         {titles: {"en": "Holy Name of the Blessed Virgin Mary"}, type: "D", start: {mon: 9, d: 12}},
@@ -180,7 +180,7 @@
         {titles: {"en": "Feast of St. Robert Bellarmine or St. Hildegard of Bingen"}, type: "D", start: {mon: 9, d: 17}},
         {titles: {"en": "Feast of St. Januarius"}, type: "D", start: {mon: 9, d: 19}},
         {titles: {"en": "Feast of Saints Andrew Kim Taegon and companions", "he": "חג הקדושים אנדרו קים טאה־גון וחבריו"}, type: "D", start: {mon: 9, d: 20}},
-        {inherits: "Feast of St. Matthew the Evangelist", type: "D", start: {mon: 9, d: 21}},
+        {type: "D", start: {mon: 9, d: 21}, inherits: "Feast of St. Matthew the Evangelist"},
         {titles: {"en": "Feast of St. Pio of Pietrelcina (Padre Pio)"}, type: "D", start: {mon: 9, d: 23}},
         {titles: {"en": "Feast of Saints Cosmas and Damian"}, type: "D", start: {mon: 9, d: 26}},
         {titles: {"en": "Feast of St. Vincent de Paul"}, type: "D", start: {mon: 9, d: 27}},
@@ -228,7 +228,7 @@
         {inherits: "Feast of St. Cecilia", type: "D", start: {mon: 11, d: 22}},
         {titles: {"en": "Feast of St. Clement I or St. Columban"}, type: "D", start: {mon: 11, d: 23}},
         {titles: {"en": "Feast of St. Andrew Dung-Lac and his companions"}, type: "D", start: {mon: 11, d: 24}},
-        {inherits: "Feast of St. Catherine of Alexandria", type: "D", start: {mon: 11, d: 25}},
+        {type: "D", start: {mon: 11, d: 25}, inherits: "Feast of St. Catherine of Alexandria"},
         {type: "D", start: {mon: 11, d: 30}, inherits: "St. Andrew’s Day"},
         
         {inherits: "Feast of Christ the King", type: "D", start: {mon: 11, d: 20, thruD: 26, wkd: [1]}},
@@ -347,7 +347,7 @@
         {titles: {"en": "Whit Wednesday"}, type: "D", start: {Easter:  "Easter", offsetD: 52}, emoji: "⚪️"},
         {titles: {"en": "Whit Thursday"}, type: "D", start: {Easter:  "Easter", offsetD: 53}, emoji: "⚪️"},
         {titles: {"en": "Whit Friday"}, type: "D", start: {Easter:  "Easter", offsetD: 54}, emoji: "⚪️"},
-        {titles: {"en": "Trinity Sunday", "he": "חג השילוש הקדוש"}, type: "D", start: {Easter:  "Easter", offsetD: 56}, urls: {"en": "https://nationaltoday.com/trinity-sunday/"}},
+        {titles: {"en": "Trinity Sunday", "he": "חג השילוש הקדוש"}, type: "D", start: {Easter:  "Easter", offsetD: 56}, urls: {"en": "https://www.daysoftheyear.com/days/trinity-sunday/"}},
         {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "Feast of the Sacred Heart", type: "D", start: {Easter:  "Easter", offsetD: 68}},
         {titles: {"en": "Feast of the Immaculate Heart of Mary"}, type: "D", start: {Easter:  "Easter", offsetD: 69}, emoji: "❤️"},

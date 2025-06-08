@@ -1372,6 +1372,7 @@
         {type: "D", start: {mon: 6, d: 8}, titles: {"en": "World Brain Tumor Day"}, urls: {"en": "https://www.braintumour.ca/get-involved/raising-awareness/world-awareness-day/"}, first: {era: 1, y: 2000}, emoji: "🧠", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "International Lemon Drizzle Cake Day"}},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "International Dark ’n Stormy® Day"}, urls: {"en": "https://nationaltoday.com/international-dark-n-stormy-day/"}, emoji: "🥃"},
+        {type: "D", start: {mon: 6, d: 9}, titles: {"en": "World Antiphospholipid Antibody Syndrome Day"}, notes: {"en": "APS Day\nWorld APS Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-antiphospholipid-antibody-syndrome-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/boxkart-bash-day/"}, titles: {"en": "Burghfield BoxKart Bash Day"}, notes: {"en": "BoxKart Bash Day"}},
         {type: "D", start: {mon: 6, wkd: [2], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/please-take-my-children-to-work-day/"}, titles: {"en": "Please Take My Children to Work Day"}, first: {era: 1, y: 2008}, emoji: "👦👧"},
         {type: "D", start: {mon: 6, wkd: [4], nth: 1}, urls: {"en": "https://globalrunningday.org/"}, titles: {"en": "Global Running Day"}, notes: {"en": "National Running Day"}, first: {era: 1, y: 2016}, emoji: "👟"},
@@ -1382,7 +1383,7 @@
         {type: "D", start: {mon: 6, wkd: [7], nth: 1}, titles: {"en": "International Tabletop Games Day"}, notes: {"en": "International Tabletop Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tabletop-day/"}, first: {era: 1, y: 2013}, emoji: "🎲♟️🀄️"},
         {type: "D", start: {mon: 6, wkd: [7], nth: 2}, titles: {"en": "World Gin Day"}, notes: {"en": "Gin Day"}, emoji: "🥃", urls: {"en": "https://worldginday.com/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, wkd: [7], nth: 2}, urls: {"en": "http://www.wwkipday.com/"}, titles: {"en": "Worldwide Knit in Public Day"}, first: {era: 1, y: 2005}, emoji: "🧶"},
-        {type: "D", start: {mon: 6, wkd: [7], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/doll-day/"}, titles: {"en": "Doll Day", "he": "יום הבובות"}, emoji: "🎎"},
+        {type: "D", start: {mon: 6, wkd: [7], nth: 2}, titles: {"en": "World Doll Day", "he": "יום הבובות העולמי"}, urls: {"en": "https://www.ufdc.org/world-doll-day/"}, notes: {"en": "Doll Day", "he": "יום הבובות"}, emoji: "🎎", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 6, wkd: [7], nth: 3}, titles: {"en": "World Martini Day"}, notes: {"en": "Martini Day"}, emoji: "🍸", urls: {"en": "https://www.worldmartiniday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/surf-day/"}, titles: {"en": "International Surfing Day"}, emoji: "🌊", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 7, d: 1}, inherits: "International Reggae Day", first: {era: 1, y: 1994}},
@@ -1817,7 +1818,8 @@
         {type: "nD", start: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en": "https://bk2hk.org/"}, titles: {"en": "Be Kind to Humankind Week", "he": "השבוע להיות אדיב למין האנושי"}, first: {era: 1, y: 1988}, notes: {"en": "BK2HK"}, emoji: "👨👩"},
         {type: "nD", start: {mon: 8, d: 29}, end: {mon: 9, d: 4}, titles: {"en": "Literacy & Numeracy Week"}, urls: {"en": "https://www.daysoftheyear.com/days/literacy-numeracy-week/"}, emoji: "📒"},
         {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/orchid-male-cancer-awareness-week/"}, titles: {"en": "Orchid Male Cancer Awareness Week"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*"},
-        {type: "nD", start: {mon: 9, d: 17, thruD: 23, wkd: [6]}, end: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, titles: {"en": "Bee’s Knees Week"}, notes: {"en": "This observance appears to be a ploy to sell products."}, first: {era: 1, y: 2017}},
+        {type: "nD", start: {mon: 9, d: 17, thruD: 23, wkd: [6]}, end: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, inherits: "Bee’s Knees Week", first: {era: 1, y: 2017}, last: {era: 1, y: 2024}},
+        {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 22}, inherits: "Bee’s Knees Week", first: {era: 1, y: 2025}},
         {type: "nD", start: {mon: 9, d: 19, thruD: 25, wkd: [2], durationD: 5}, urls: {"en": "https://internationalweekofhappinessatwork.com/", "fr": "https://semainedubonheurautravail.be/", "de": "https://www.internationalweekofhappinessatwork.de/", "nl": "https://weekvanhetwerkgeluk.nl/"}, titles: {"en": "International Week of Happiness at Work", "he": "השבוע הבינלאומי של אושר בעבודה", "fr": "Semaine du Bonheür au Travail", "nl": "Internationale Week van het Werkgeluk"}, first: {era: 1, y: 2023}, emoji: "😀"},
         {type: "nD", start: {mon: 9, d: 21, thruD: 27, wkd: [1]}, end: {mon: 9, d: 27, thruMon: 10, thruD: 3, wkd: [7]}, inherits: "Active Aging Week", first: {era: 1, y: 2013}, last: {era: 1, y: 2018}},
         {type: "nD", start: {mon: 9, d: 29, thruMon: 10, thruD: 5, wkd: [2]}, end: {mon: 10, d: 5, thruD: 11, wkd: [1]}, inherits: "Active Aging Week", first: {era: 1, y: 2019}},
@@ -1868,7 +1870,8 @@
         {type: "W", start: {mon: 5, fullWk: 3}, titles: {"en": "International Heritage Breeds Week"}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-breeds-week/"}, emoji: "🐐🐑🐖", first: {era: 1, y: 2015}},
         {type: "W", start: {mon: 6, fullWk: -1, firstDOfWk: 2}, titles: {"en": "Lightning Safety Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/lightning-safety-awareness-week/"}, first: {era: 1, y: 2001}, emoji: "⚡️"},
         {type: "W", start: {mon: 6, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Food Safety Week"}, urls: {"en": "https://www.daysoftheyear.com/days/food-safety-week/"}, first: {era: 1, y: 2019}, emoji: "🍛🌭🌮"},
-        {type: "W", start: {mon: 6, fullWk: 1}, titles: {"en": "Community Health Improvement Week"}, urls: {"en": "https://www.daysoftheyear.com/days/community-health-improvement-week/"}, inherits: "*MedAwareness*"},
+        {type: "W", start: {mon: 6, fullWk: 1}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2021}, last: {era: 1, y: 2022}},
+        {type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2023}},
         {type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Meet A Mate Week"}, urls: {"en": "https://www.daysoftheyear.com/days/meet-a-mate-week/"}, first: {era: 1, y: 2019}},
         {type: "W", start: {mon: 6, fullWk: 2}, titles: {"en": "Scleroderma Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/scleroderma-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 6, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Animal Rights Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/animal-rights-awareness-week/"}, first: {era: 1, y: 1991}},
@@ -1882,6 +1885,7 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/sexual-health-week/"}, titles: {"en": "Sexual Health Week"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
+        {type: "D", start: {mon: 6, wkd: [3], nth: 2}, titles: {"en": "World Pet Memorial Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-pet-memorial-day/"}, emoji: "🐕‍🦺"},
         
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -1933,5 +1937,7 @@
         {template: "International Design Day", type: "D", start: {mon: 4, d: 27}, titles: {"en": "International Design Day"}, urls: {"en": "https://www.theicod.org/activities/international-design-day"}, notes: {"en": "IDD\nWorld Design Day\nWorld Communication Design Day\nWorld Graphics Day", "he": "יום העיצוב הגרפי העולמי"}, emoji: "💐👀"},
         {template: "Phone in Sick Day", type: "D", start: {mon: 5, d: 1}, titles: {"en": "Phone in Sick Day"}, notes: {"en": "Call in Sick Day\nWorld Phone in Sick Day"}, urls: {"en": "https://www.checkiday.com/d13d5ed331ab61d9a70ed95f9c6771ea/phone-in-sick-day"}, emoji: "☎️"},
         {template: "Sun Awareness Week", type: "W", start: {mon: 5, fullWk: 1, firstDOfWk: 2}, titles: {"en": "Sun Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/sun-awareness-week/"}, inherits: "*MedAwareness*"},
+        {template: "Community Health Improvement Week", type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Community Health Improvement Week"}, notes: {"en": "CHI Week"}, urls: {"en": "https://www.aha.org/center/community-health-improvement-week"}, inherits: "*MedAwareness*"},
+        {template: "Bee’s Knees Week", type: "nD", start: {mon: 9, d: 17, thruD: 23, wkd: [6]}, end: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, titles: {"en": "Bee’s Knees Week"}, notes: {"en": "This observance appears to be a ploy to sell products."}},
     ]
 }

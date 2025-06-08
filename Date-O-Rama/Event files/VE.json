@@ -61,7 +61,7 @@
         {type: "D", start: {mon: 7, d: 25}, titles: {"en": "Caracas City Foundation Day", "es": "Aniversario del Fundación del Caracas"}},
         {type: "D", start: {mon: 8, d: 3}, inherits: "Flag Day"},
         {inherits: "National Guard Day", type: "D", start: {mon: 8, d: 4}},
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
         {type: "D", start: {mon: 9, d: 8}, titles: {"en": "Feast of the Virgen del Valle", "es": "Día del Virgen del Valle"}},
         {type: "D", start: {mon: 9, d: 24}, inherits: "Feast of Our Lady of Mercy"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},

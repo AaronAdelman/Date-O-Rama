@@ -58,7 +58,7 @@
         {titles: {"en": "National Press Freedom Day", "he": "יום חופש העיתונות הלאומי", "fil": "Pambansang Araw ng Kalayaan sa Pamamahayag"}, type: "D", start: {mon: 8, d: 30}, first: {era: 1, y: 2022}, emoji: "📰"},
         {titles: {"en": "Official first day and beginning of the Philippine Christmas season", "fil": "Unang araw at pagsisimula ng panahon ng Kapaskuhan sa Pilipinas"}, type: "D", start: {mon: 9, d: 1}, first: {era: 1, y: 1989}, emoji: "🎄🎅🤶"},
         {type: "D", notes: {"en": "Yamashita Surrender Day"}, start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/yamashita-surrender-day/"}, first: {era: 1, y: 2019}, inherits: "Victory Over Japan Day", titles: {"en": "Surrender of General Tomoyuki Yamashita Day", "fil": "Araw ng Pagsuko ni Heneral Tomoyuki Yamashita"}},
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary", first: {era: 1, y: 2019}},
         {titles: {"en": "Anniversary of the Formal Declaration of Martial Law in the Philippines", "fil": "Anibersaryo ng pagsisimula ng Batas Militar sa Republika ng Pilipinas"}, type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 17}, inherits: "Coast Guard Day", titles: {"en": "Philippine Coast Guard Day", "fil": "Araw ng Tanod Baybabin ng Pilipinas"}, first: {era: 1, y: 1901}},
         {titles: {"en": "Television Day", "he": "יום הטלוויזיה", "fil": "Araw ng Telebisyong Pilipino"}, type: "D", start: {mon: 10, d: 23}, first: {era: 1, y: 1953}, emoji: "📺"},

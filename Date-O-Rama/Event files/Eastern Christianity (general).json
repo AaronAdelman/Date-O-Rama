@@ -44,7 +44,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost", urls: {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
         {inherits: "All Saints Day", type: "D", start: {Easter:  "Easter", offsetD: 56}},
         
-        {inherits: "Nativity of Mary", type: "D", start: {mon: 9, d: 8}},
+        {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
         {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},
         {inherits: "Presentation of the Blessed Virgin Mary", type: "D", start: {mon: 11, d: 21}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-christmas-day/"}},
