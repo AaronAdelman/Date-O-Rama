@@ -207,6 +207,7 @@
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "National Alexandra Day"}},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "National Benjamin Day"}},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "National Elias Day"}},
+        {type: "D", start: {mon: 6, d: 8}, titles: {"en": "Betty Picnic Day"}, first: {era: 1, y: 1987}, urls: {"en": "https://www.checkiday.com/421d35dc048861bc926e8cd4d52d5a71/betty-picnic-day"}},
         {type: "D", start: {mon: 6, d: 8}, titles: {"en": "National Karen Day"}},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "National Earl Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-earl-day-june-9"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "National Helen Day"}},
