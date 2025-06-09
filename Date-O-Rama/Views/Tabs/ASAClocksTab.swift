@@ -198,8 +198,8 @@ struct ASAClocksTab: View {
 
 
 
-struct ASAClocksView_Previews: PreviewProvider {
-    static var previews: some View {
-        ASAClocksTab().environmentObject(ASAModel.shared)
-    }
-}
+//struct ASAClocksView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ASAClocksTab().environmentObject(ASAModel.shared)
+//    }
+//}
