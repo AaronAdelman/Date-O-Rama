@@ -85,30 +85,17 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, 
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
-    func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
-        let locationsWithClocksArray: Array<ASALocationWithClocks> = ASAModel.shared.locationsWithClocksArray(key: key)
-        
-        var temp:  Array<Dictionary<String, Any>> = []
-        for locationWithClocks in locationsWithClocksArray {
-            for clock in locationWithClocks.clocks {
-                let dictionary = clock.dictionary(forComplication: forComplication, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
-                temp.append(dictionary)
-            }
-        }
-        
-        return temp
-    } // func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>>
-    
     public func sendUserData(_ session: WCSession) {
 //        debugPrint(#file, #function)
                 
-        let threeLineLargeTemp = self.locationsWithClocksArrayDictionary(key: .threeLineLarge, forComplication: true)
-        let twoLineLargeTemp   = self.locationsWithClocksArrayDictionary(key: .twoLineLarge, forComplication: true)
-        let twoLineSmallTemp   = self.locationsWithClocksArrayDictionary(key: .twoLineSmall, forComplication: true)
-        let oneLineLargeTemp   = self.locationsWithClocksArrayDictionary(key: .oneLineLarge, forComplication: true)
-        let oneLineSmallTemp   = self.locationsWithClocksArrayDictionary(key: .oneLineSmall, forComplication: true)
+        let model = ASAModel.shared
+        let threeLineLargeTemp = model.locationsWithClocksArrayDictionary(key: .threeLineLarge, forComplication: true)
+        let twoLineLargeTemp   = model.locationsWithClocksArrayDictionary(key: .twoLineLarge, forComplication: true)
+        let twoLineSmallTemp   = model.locationsWithClocksArrayDictionary(key: .twoLineSmall, forComplication: true)
+        let oneLineLargeTemp   = model.locationsWithClocksArrayDictionary(key: .oneLineLarge, forComplication: true)
+        let oneLineSmallTemp   = model.locationsWithClocksArrayDictionary(key: .oneLineSmall, forComplication: true)
   
-        let mainClocksTemp = self.locationsWithClocksArrayDictionary(key: .app, forComplication: false)
+        let mainClocksTemp = model.locationsWithClocksArrayDictionary(key: .app, forComplication: false)
 
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,

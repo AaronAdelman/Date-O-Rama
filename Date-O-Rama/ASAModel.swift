@@ -547,4 +547,18 @@ extension ASAModel {
             self.savePreferences(code: .clocks)
         }
     } // func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks)
+    
+    func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
+        let locationsWithClocksArray: Array<ASALocationWithClocks> = self.locationsWithClocksArray(key: key)
+        
+        var temp:  Array<Dictionary<String, Any>> = []
+        for locationWithClocks in locationsWithClocksArray {
+            for clock in locationWithClocks.clocks {
+                let dictionary = clock.dictionary(forComplication: forComplication, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
+                temp.append(dictionary)
+            }
+        }
+        
+        return temp
+    } // func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>>
 } // extension ASAModel
