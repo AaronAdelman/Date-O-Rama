@@ -1266,6 +1266,7 @@
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Dinosaur Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dinosaur-day/"}, emoji: "🦕🦖", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Flip a Coin Day"}, urls: {"en": "https://www.daysoftheyear.com/days/flip-a-coin-day/"}, emoji: "🪙"},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en": "International Lynx Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-lynx-day/"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Pizza Margherita Day"}, urls: {"en": "https://www.checkiday.com/c25ea60c83a95ba59f7c1e20681bc507/pizza-margherita-day"}, emoji: "🍕"},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Yarn Bombing Day", "he": "יום היארן בומבינג"}, urls: {"en": "https://www.daysoftheyear.com/days/yarn-bombing-day/"}, emoji: "🧶", first: {era: 1, y: 2011}, notes: {"en": "International Yarn Bombing Day"}},
         {type: "D", start: {mon: 6, d: 11}, urls: {"en": "https://kbgfoundation.org/awareness-day"}, titles: {"en": "KBG Syndrome Awareness Day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/say-hi-day/"}, titles: {"en": "Say Hi Day"}, first: {era: 1, y: 2004}, emoji: "🗣️"},
