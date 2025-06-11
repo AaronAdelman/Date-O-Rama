@@ -55,8 +55,9 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
 #endif
     }
     
-    public func setUp() {
+    public func setUp() async {
         self.locationManager.delegate = self
+        self.deviceLocation = await ASALocation.currentTimeZoneDefault
         
 #if os(watchOS)
 #else
@@ -89,7 +90,9 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
     
     override init() {
         super.init()
-        self.setUp()
+        Task {
+            await self.setUp()
+        }
     } // init()
     
     let notificationCenter = NotificationCenter.default
@@ -106,7 +109,7 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocation: ASALocation = ASALocation.currentTimeZoneDefault {
+    @Published var deviceLocation: ASALocation = ASALocation.NullIsland {
         willSet {
             objectWillChange.send()
         } // willSet
@@ -133,7 +136,9 @@ extension ASALocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
         self.lastError = error
-        self.setUp()
+        Task {
+            await self.setUp()
+        }
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

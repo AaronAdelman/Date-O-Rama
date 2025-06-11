@@ -1293,7 +1293,7 @@ class ASAEventCalendar {
             if eventSpecification.type == .cycle {
                 let rangeFirstNumber = eventSpecification.cycleRangeFirstNumber ?? 1
                 let dayInCycle = temp.dayInCycle!
-                let cycleNumber = temp.cycle
+//                let cycleNumber = temp.cycle
                 let range = eventSpecification.cycleRanges?.first(where: {                    $0.start <= dayInCycle && dayInCycle <= $0.end})
                 let dayInRange = dayInCycle - range!.start + rangeFirstNumber
                 let dayInRangeString = {

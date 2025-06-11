@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject {
+class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject, @unchecked Sendable {
     var id = UUID()
     var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
@@ -324,57 +324,77 @@ fileprivate func localityAndAdministrativeArea(name:  String) -> (String, String
     return (locality, administrativeArea)
 } // fileprivate func localityAndAdministrativeArea(name:  String) -> (String, String?)
 
-extension ASALocation {
-    static var cachedCurrentTimeZoneDefaultIdentifier:  String?
-    static var cachedCurrentTimeZoneDefaultLocation:  ASALocation?
+actor ASALocationCache {
+    static let shared = ASALocationCache()
 
-    static var currentTimeZoneDefault:  ASALocation {
-        let currentTimeZone: TimeZone = TimeZone.current
+    private var cachedIdentifier: String?
+    private var cachedLocation: ASALocation?
+
+    func currentTimeZoneDefault() async -> ASALocation {
+        let currentTimeZone = TimeZone.current
         let currentTimeZoneIdentifier = currentTimeZone.identifier
-        if cachedCurrentTimeZoneDefaultIdentifier != nil && cachedCurrentTimeZoneDefaultLocation != nil {
-            if currentTimeZoneIdentifier == cachedCurrentTimeZoneDefaultIdentifier! {
-                // Used cached info
-                return cachedCurrentTimeZoneDefaultLocation!
-            }
+
+        if let cachedIdentifier, let cachedLocation,
+           cachedIdentifier == currentTimeZoneIdentifier {
+            return cachedLocation
         }
 
         do {
-            let fileURL = Bundle.main.url(forResource:"TimeZones", withExtension: "txt")
-            if fileURL == nil {
+            guard let fileURL = Bundle.main.url(forResource: "TimeZones", withExtension: "txt") else {
                 debugPrint(#file, #function, "Could not open!")
+                return ASALocation.NullIsland
             }
 
-            let jsonData = (try? Data(contentsOf: fileURL!))!
+            let jsonData = try Data(contentsOf: fileURL)
             let newJSONDecoder = JSONDecoder()
             newJSONDecoder.allowsJSON5 = true
 
             let timeZoneDatabase = try newJSONDecoder.decode(ASATimeZoneDatabase.self, from: jsonData)
-            let entry:  ASATimeZoneEntry? = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZoneIdentifier })
-
-            if entry == nil {
+            guard let entry = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZoneIdentifier }) else {
                 return ASALocation.NullIsland
             }
 
-            let countryCode: String = entry!.ISOCountryCode ?? ""
-            let name:  String = entry!.name
+            let countryCode = entry.ISOCountryCode ?? ""
+            let name = entry.name
             let country = countryName(countryCode: countryCode)
             let (locality, administrativeArea) = localityAndAdministrativeArea(name: name)
-            let latitude: CLLocationDegrees = entry!.latitude
-            let longitude: CLLocationDegrees = entry!.longitude
+            let latitude = entry.latitude
+            let longitude = entry.longitude
 
-            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, regionCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone, type: .EarthLocation)
+            let result = ASALocation(
+                id: UUID(),
+                location: CLLocation(latitude: latitude, longitude: longitude),
+                name: nil,
+                locality: locality,
+                country: country,
+                regionCode: countryCode,
+                postalCode: nil,
+                administrativeArea: administrativeArea,
+                subAdministrativeArea: nil,
+                subLocality: nil,
+                thoroughfare: nil,
+                subThoroughfare: nil,
+                timeZone: currentTimeZone,
+                type: .EarthLocation
+            )
 
-            // Store result in cache
-            ASALocation.cachedCurrentTimeZoneDefaultIdentifier = currentTimeZoneIdentifier
-            ASALocation.cachedCurrentTimeZoneDefaultLocation = result
-
+            cachedIdentifier = currentTimeZoneIdentifier
+            cachedLocation = result
             return result
         } catch {
             debugPrint(#file, #function, error)
             return ASALocation.NullIsland
         }
-    } // static var currentTimeZoneDefault
-    
+    }
+}
+
+extension ASALocation {
+    static var currentTimeZoneDefault: ASALocation {
+        get async {
+            await ASALocationCache.shared.currentTimeZoneDefault()
+        }
+    }
+
     func updateWith(_ otherLocation: ASALocation) {
         self.location              = otherLocation.location
         self.name                  = otherLocation.name
@@ -389,4 +409,4 @@ extension ASALocation {
         self.subThoroughfare       = otherLocation.subThoroughfare
         self.timeZone              = otherLocation.timeZone
     }
-} // extension ASALocation
+}
