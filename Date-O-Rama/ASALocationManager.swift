@@ -25,13 +25,7 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
     @MainActor static let shared = ASALocationManager()
     
     private let monitor = NWPathMonitor()
-    @Published var connectedToTheInternet = false {
-        willSet {
-            DispatchQueue.main.async {
-                self.objectWillChange.send()
-            } // DispatchQueue.main.async
-        } // willSet
-    } // var connectedToTheInternet
+    @MainActor @Published var connectedToTheInternet = false
     
     fileprivate func updateDesiredAccuracy() {
 #if os(watchOS)
@@ -72,16 +66,10 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
         
         self.locationManager.startUpdatingLocation()
         
-        monitor.pathUpdateHandler = { path in
-            if path.status == .satisfied {
-                //                debugPrint(#file, #function, "We’re connected!")
-                self.connectedToTheInternet = true
-            } else {
-                //                debugPrint(#file, #function, "No connection.")
-                self.connectedToTheInternet = false
+        monitor.pathUpdateHandler = { [weak self] path in
+            Task { @MainActor in
+                self?.connectedToTheInternet = (path.status == .satisfied)
             }
-            
-            //            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
         }
         
         let queue = DispatchQueue(label: "Monitor")
@@ -111,7 +99,9 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
     
     @Published var deviceLocation: ASALocation = ASALocation.NullIsland {
         willSet {
-            objectWillChange.send()
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            } // DispatchQueue.main.async
         } // willSet
     } // var deviceLocation
     
