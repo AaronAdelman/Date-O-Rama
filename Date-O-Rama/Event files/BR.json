@@ -82,6 +82,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -50}, titles: {"en": "Bloco da Lama", "pt": "Bloco da Lama"}, notes: {"en": "Mud Carnival"}, urls: {"en": "https://www.daysoftheyear.com/days/bloco-da-lama/"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 4, d: 13}, inherits: "National Anthem Day", urls: {"en": "https://www.daysoftheyear.com/days/national-anthem-day-in-brazil/"}, first: {era: 1, y: 1934}},
         {type: "nD", start: {mon: 6, d: 1, thruD: 7, wkd: [5], durationD: 3}, titles: {"en": "Cuscuz Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/cuscuz-festival/"}, first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 9, d: 13}, titles: {"en": "National Cachaça Day", "pt": "Dia Nacional da Cachaça"}, urls: {"en": "https://www.diffordsguide.com/on-this-day/september/13"}, emoji: "🥃"},
     ],
     templates: [
         {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}},
