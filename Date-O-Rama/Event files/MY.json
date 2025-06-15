@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
     first: {era: 1, y: 1957},
+    urls: {"en": "https://publicholidays.com.my/", "ms": "https://publicholidays.com.my/ms/", "zh": "https://publicholidays.com.my/zh/"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/international-new-years-day"}},
@@ -27,7 +28,7 @@
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}, inherits: "Gawai Dayak", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, inherits: "Gawai Dayak", titles: {"en": "Gawai Dayak (in lieu)"}, first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, inherits: "*BDay*", titles: {"en": "Yang di-Pertuan Agong’s Birthday", "ms": "Hari Keputeraan Yang di-Pertuan Agong"}, urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}, notes: {"en": "Birthday of SPB Yang di Pertuan Agong"}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, titles: {"en": "Birthday of the Sultan of Kedah", "ms": "Hari Keputeraan Sultan Kedah"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "Birthday of the Sultan of Kedah", "ms": "Hari Keputeraan Sultan Kedah"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "George Town Heritage Day", "ms": "Hari Ulang Tahun Perisytiharan Tapak Warisan Dunia"}, locations: {"en": "Penang"}, urls: {"en": "https://nationaltoday.com/george-town-heritage-day-in-penang/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 7, wkd: [7], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/penang/birthday-of-the-governor-of-penang"}, titles: {"en": "Birthday of the Governor of Penang", "ms": "Hari Jadi Yang di-Pertua Negeri Pulau Pinang"}, inherits: "*BDay*", first: {era: 1, y: 2001}},

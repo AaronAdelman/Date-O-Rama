@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 5, d: 21}, inherits: "Navy Day", urls: {"en": "https://nationaltoday.com/navy-day-chile/"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", start: {mon: 6, d: 21}, titles: {"en": "National Day of Aboriginal Peoples", "es": "Día Nacional de los Pueblos Indígenas"}, notes: {"en": "Indigenous People’s Day"}},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "National Day of Aboriginal Peoples", "es": "Día Nacional de los Pueblos Indígenas"}, notes: {"en": "Indigenous People’s Day"}},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul"},
         {type: "D", start: {mon: 6, d: 26, thruMon: 7, thruD: 2, wkd: [2]}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul (in lieu)"},
         {inherits: "Feast of Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 16}, first: {era: 1, y: 2007}},
