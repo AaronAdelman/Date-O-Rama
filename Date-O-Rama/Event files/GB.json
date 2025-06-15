@@ -127,11 +127,12 @@
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "National Bug Busting Day"},
         {type: "D", start: {mon: 6, d: 15}, urls: {"en": "https://www.beerdaybritain.co.uk/"}, titles: {"en": "Beer Day Britain"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 6, d: 19}, titles: {"en": "National Thank a Teacher Day"}, emoji: "👨‍🏫👩‍🏫", urls: {"en": "https://thankateacher.co.uk/"}, first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 6, d: 22, thruD: 28, wkd: [4]}, urls: {"en": "https://nationaltoday.com/reserves-day/"}, titles: {"en": "Reserves Day"}, first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 6, wkd: [4], nth: 3}, titles: {"en": "National Thank a Teacher Day"}, emoji: "👨‍🏫👩‍🏫", urls: {"en": "https://thankateacher.co.uk/"}, first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "Burghfield BoxKart Bash Day"}, urls: {"en": "https://boxkart.org.uk/"}, notes: {"en": "BoxKart Bash Day"}},
+        {type: "D", start: {mon: 6, d: 22, thruD: 28, wkd: [4]}, titles: {"en": "Reserves Day"}, urls: {"en": "https://nationaltoday.com/reserves-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Windrush Day"}, urls: {"en": "https://www.daysoftheyear.com/days/windrush-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "Goat’s Cheese Day"}, emoji: "🧀", urls: {"en": "https://www.daysoftheyear.com/days/goats-cheese-day/"}, first: {era: 1, y: 1998}},
-        {type: "D", start: {mon: 6, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/dream-big-day/"}, titles: {"en": "Dream Big Day"}, emoji: "☁️", first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 6, d: 28}, titles: {"en": "Dream Big Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dream-big-day/"}, emoji: "☁️", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en": "National Fish and Chips Day"}},
         {type: "D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/thank-you-day/"}, inherits: "Thank You Day", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, d: 6}, urls: {"en": "https://www.feeduk.org/infant-feeding-day"}, titles: {"en": "Infant Feeding Day"}, first: {era: 1, y: 2019}, emoji: "👨‍🍼👩‍🍼"},
@@ -288,7 +289,6 @@
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/oxfam-water-week/"}, titles: {"en": "Oxfam Water Week"}, emoji: "💦"},
         {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/national-school-grounds-week/"}, titles: {"en": "National School Grounds Week"}},
         {type: "nD", start: {mon: 6, d: 15, thruD: 21, wkd: [7], durationD: 9}, titles: {"en": "English Wine Week"}, urls: {"en": "https://winegb.co.uk/english-wine-week/"}, emoji: "🍷"},
-        {type: "nD", start: {mon: 6, d: 20}, end: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/refugee-week/"}, titles: {"en": "Refugee Week", "he": "שבוע הפליטים"}, first: {era: 1, y: 1998}},
         {type: "nD", start: {mon: 6, d: 21, thruD: 27, wkd: [7], durationD: 2}, inherits: "Pride Cymru", first: {era: 1, y: 2025}},
         {type: "nD", start: {mon: 6, d: 24, thruD: 30, wkd: [2]}, end: {mon: 6, d: 30, thruMon: 7, thruD: 6, wkd: [1]}, inherits: "Twins, Triplets and More Week", first: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 6, d: 27, thruMon: 7, thruD: 3, wkd: [2]}, end: {mon: 7, d: 10, thruD: 16, wkd: [1]}, titles: {"en": "Wimbledon Championships", "he": "אליפות וימבלדון"}, urls: {"en": "https://www.wimbledon.com/"}, emoji: "🎾", first: {era: 1, y: 1877}},
@@ -356,6 +356,8 @@
         {type: "nD", start: {mon: 11, d: 6, thruD: 12, wkd: [2], durationD: 5}, titles: {"en": "National School Meals Week"}, notes: {"en": "NSMW"}, urls: {"en": "https://www.lacansmw.co.uk/"}, emoji: "🍛", nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], d: 8, thruD: 14}, titles: {"en": "Roast Dinner Day"}, urls: {"en": "https://www.daysoftheyear.com/days/roast-dinner-day/"}, emoji: "🍠🥩"},
         ]},
+        
+        {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [2], durationD: 7}, titles: {"en": "Refugee Week", "he": "שבוע הפליטים"}, urls: {"en": "https://refugeeweek.org.uk/"}, first: {era: 1, y: 1998}, inherits: "World Refugee Day"},
     ],
     templates: [
         {template: "National Pothole Day", type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Pothole Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pothole-day/"}},

@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 8, d: 23}, inherits: "Black Ribbon Day", first: {era: 1, y: 2009}},
         {inherits: "Data Protection Day", type: "D", start: {mon: 1, d: 28}, first: {era: 1, y: 2007}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
-        {inherits: "International Day Against Homophobia, Transphobia, and Biphobia", type: "D", start: {mon: 5, d: 17}},
+        {type: "D", start: {mon: 5, d: 17}, inherits: "International Day Against Homophobia, Transphobia, and Biphobia"},
         {inherits: "Safer Internet Day", type: "D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
         {titles: {"en": "Europe Day (Committee of Ministers)", "he": "יום אירופה (ועדת השרים)"}, type: "D", start: {mon: 5, d: 5}, first: {era: 1, y: 1964}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/"}},

@@ -86,7 +86,7 @@
         {type: "D", start: {mon: 9, d: 19}, titles: {"en": "Suffrage Day"}, emoji: "🗳️"},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "AIDS Foundation “Red Ribbon Day”"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 12, wkd: [6], nth: 1}, titles: {"en": "National Jandal Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-jandal-day-in-new-zealand/"}, emoji: "🩴", first: {era: 1, y: 2007}},
-        {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Shades for Migraine"}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Shades for Migraine"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 19}, titles: {"en": "World Day for the Prevention of Abuse and Violence Against Children"}},
         {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Gumboot Friday"}, urls: {"en": "https://www.gumbootfriday.org.nz/"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*", emoji: "👢"},
         {type: "M", start: {mon: 11}, inherits: "Movember", first: {era: 1, y: 2004}},
