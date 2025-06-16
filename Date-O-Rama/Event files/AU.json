@@ -41,7 +41,7 @@
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/australia/international-new-years-day"}, inherits: "New Year’s Day Holiday"},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Australia Day", first: {era: 1, y: 1808}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 10, d: 18}, titles: {"en": "Ride to Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ride-to-work-day/"}, first: {era: 1, y: 1994}},
+        {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "National Ride2Work Day"}, urls: {"en": "https://bicyclenetwork.com.au/rides-and-events/ride2work/"}, first: {era: 1, y: 1994}, emoji: "🚲"},
         {type: "D", start: {mon: 10, d: 19, thruD: 25, wkd: [4]}, titles: {"en": "Geelong Cup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/geelong-cup-day/"}, first: {era: 1, y: 1872}, emoji: "🐴"},
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Kangaroo Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-kangaroo-awareness-day/"}, emoji: "🦘", first: {era: 1, y: 1985}},
         {type: "D", start: {mon: 10, d: 8}, inherits: "International Lesbian Day", first: {era: 1, y: 1990}},
