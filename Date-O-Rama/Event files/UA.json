@@ -66,7 +66,7 @@
         {titles: {"en": "Slavonic Literature and Culture Day"}, type: "D", start: {"mon": 5, d: 24}},
         {inherits: "International Day of UN Peacekeepers", type: "D", start: {mon: 5, d: 29}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 6, d: 22}, inherits: "Day of Remembrance and Sorrow", first: {era: 1, y: 1996}},
-        {inherits: "International Olympic Day", type: "D", start: {mon: 6, d: 23}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 6, d: 23}, inherits: "International Olympic Day", first: {era: 1, y: 1948}},
         {titles: {"en": "Day of the Ukrainian Civil Service"}, type: "D", start: {"mon": 6, d: 23}},
         {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 24}},
         {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},

@@ -233,7 +233,7 @@
         {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "World Leprosy Day"},
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "World Neglected Tropical Diseases Day", "he": "יום המחלות הטרופיות המוזנחות העולמי"}, notes: {"en": "World NTD Day"}, urls: {"en": "https://www.neglecteddiseases.gov/resources/events/world-ntd-day/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "World Heritage Day", "he": "יום המורשת הבינלאומי"}, notes: {"en": "International Day For Monuments and Sites", "he": "היום הבינלאומי לאנדרטאות ואתרים"}, urls: {"en": "https://www.daysoftheyear.com/days/world-heritage-day/"}, first: {era: 1, y: 1982}, emoji: "🏛"},
-        {inherits: "World Wetlands Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "World Wetlands Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 12}, titles: {"en": "Malala Day", "he": "יום מלאלה"}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/malala-day-july-12/"}},
         {type: "D", start: {mon: 9, d: 26}, titles: {"en": "World Contraception Day", "he": "יום אמצעי המניעה העולמי"}},
         {type: "D", start: {mon: 10, d: 7}, titles: {"en": "World Cotton Day", "he": "יום הכותנה העולמי"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.worldcottonday.com/"}},
