@@ -40,7 +40,7 @@ extension ASAModel {
 class ComplicationController: NSObject, CLKComplicationDataSource {
 //    public var complication:  CLKComplication?
     
-    @EnvironmentObject var userData:  ASAModel
+    let userData = ASAModel.shared
 
     
     // MARK: - Timeline Configuration
