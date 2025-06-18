@@ -133,4 +133,24 @@ extension ASAEventsFile {
 
         return "???"
     } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
+    
+    var numberOfEventSpecifications: Int {
+        var sum = 0
+        
+        for eventSpecification in self.eventSpecifications {
+            if eventSpecification.titles != nil {
+                sum += 1
+            }
+            
+            if eventSpecification.nonoverlappingSubEvents != nil {
+                sum += eventSpecification.nonoverlappingSubEvents!.count
+            }
+            
+            if eventSpecification.overlappingSubEvents != nil {
+                sum += eventSpecification.overlappingSubEvents!.count
+            }
+        } // for eventSpecification
+        
+        return sum
+    }
 } // extension ASAEventsFile
