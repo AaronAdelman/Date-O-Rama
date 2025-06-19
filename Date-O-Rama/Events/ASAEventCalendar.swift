@@ -1479,6 +1479,7 @@ class ASAEventCalendar {
 
 struct ASABuiltInEventCalendarFileRecord {
     let fileName: String
+    let error: Error?
     let emoji: String?
     let eventCalendarNameWithoutPlaceName: String
     let numberOfEventSpecifications: Int
@@ -1507,11 +1508,11 @@ extension ASAEventCalendar {
         var unsortedRecords: Array<ASABuiltInEventCalendarFileRecord> = []
         let localeIdentifier: String = Locale.current.identifier
         for fileName in rawFileNames {
-            let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
+            let (eventsFile, error) = ASAEventsFile.builtIn(fileName: fileName)
             if eventsFile != nil {
                 if eventsFile!.calendarCode.matches(calendarCode) {
                     let numberOfEventSpecifications: Int = eventsFile!.numberOfEventSpecifications
-                    unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier), numberOfEventSpecifications: numberOfEventSpecifications, color: eventsFile!.calendarColor))
+                    unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, error: error, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier), numberOfEventSpecifications: numberOfEventSpecifications, color: eventsFile!.calendarColor))
                 }
             }
         } // for fileName
@@ -1522,7 +1523,7 @@ extension ASAEventCalendar {
         ASAEventCalendar.builtInEventCalendarFileNamesCache.setObject(result, forKey: NSString(string: calendarCode.rawValue))
         
         return result
-    } // static var builtInEventCalendarFileNames
+    } // func builtInEventCalendarFileRecords(calendarCode:  ASACalendarCode) -> ASABuiltInEventCalendarFileData
 } // extension ASAEventCalendar
 
 extension Array where Element == ASAEvent {

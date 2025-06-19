@@ -236,6 +236,10 @@ struct ASABuiltInEventCalendarCell:  View {
                     }
                     Text(verbatim: record.eventCalendarNameWithoutPlaceName)
                         .font(.headline)
+                } // HStack
+                
+                if record.error != nil {
+                    Text(record.error!.localizedDescription)
                 }
             } // VStack
             Spacer()
