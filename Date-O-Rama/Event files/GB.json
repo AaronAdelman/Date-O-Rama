@@ -132,6 +132,7 @@
         {type: "D", start: {mon: 6, d: 22, thruD: 28, wkd: [4]}, titles: {"en": "Reserves Day"}, urls: {"en": "https://nationaltoday.com/reserves-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Windrush Day"}, urls: {"en": "https://www.daysoftheyear.com/days/windrush-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "Goat’s Cheese Day"}, emoji: "🧀", urls: {"en": "https://www.daysoftheyear.com/days/goats-cheese-day/"}, first: {era: 1, y: 1998}},
+        {type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [6]}, inherits: "National Take Your Dog to Work Day", first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 6, d: 28}, titles: {"en": "Dream Big Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dream-big-day/"}, emoji: "☁️", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en": "National Fish and Chips Day"}},
         {type: "D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/thank-you-day/"}, inherits: "Thank You Day", first: {era: 1, y: 2021}},

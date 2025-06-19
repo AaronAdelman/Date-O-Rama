@@ -7,6 +7,7 @@
     first: {era: 1, y: 2013},
     events: [
         {type: "D", start: {dOfY: 241}, titles: {"en": "National Sport Sampling Day"}, emoji: "🏉🏐🏀", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-sport-sampling-day-241st-day-of-the-year"}, first: {era: 1, y: 2021}},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "National Seashell Day"}, urls: {"en": "https://www.visitfortmyers.com/national-seashell-day"}, emoji: "🐚", first: {era: 1, y: 2016}},
         {type: "D", start: {equinoxOrSolstice: "Jun", wkd: [7]}, inherits: "Summersgiving",  first: {era: 1, y: 2019}},
        {type: "D", start: {equinoxOrSolstice: "Jun", offsetD: 1, wkd: [7]}, inherits: "Summersgiving",  first: {era: 1, y: 2019}},
         {type: "D", start: {equinoxOrSolstice: "Jun", offsetD: 2, wkd: [7]}, inherits: "Summersgiving",  first: {era: 1, y: 2019}},
@@ -269,6 +270,8 @@
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "National FreeBSD Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-freebsd-day-june-19"}, first: {era: 1, y: 2017}, emoji: "🌎"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "National Watch Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-watch-day-june-19"}, emoji: "⌚️", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en": "International Volkswagen® Bus Day"}, notes: {"en": "International Volkswagen Bus Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/international-volkswagen-day-june-2"}, emoji: "🚙", first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 6, d: 20}, titles: {"en": "National Hike with a Geek Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hike-with-a-geek-day-june-20"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, d: 20}, titles: {"en": "National Kouign Amann Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-kouign-amann-day-june-20-2"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "National Day of the Gong"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-day-of-the-gong-june-21"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "National Wagyu Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-wagyu-day-june-21"}, notes: {"en": "Wagyu Day"}, emoji: "🥩", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 22}, inherits: "International Being You Day", first: {era: 1, y: 2024}},

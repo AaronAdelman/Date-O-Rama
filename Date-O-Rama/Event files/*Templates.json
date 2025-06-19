@@ -467,6 +467,7 @@
         {template: "National Stress Awareness Day", type: "D", start: {mon: 11, wkd: [4], nth: 1}, titles: {"en": "National Stress Awareness Day"}, inherits: "*MedAwareness*"},
         {template: "National Sweater Day", type: "D", start: {mon: 2, d: 4}, titles: {"en": "National Sweater Day"}},
         {template: "National Taco Day", type: "D", start: {mon: 10, d: 4}, titles: {"en": "National Taco Day"}, emoji: "🌮", notes: {"en": "There is a dispute on when this event is supposed to occur.  Blame Taco Bell for deciding that this event will happen on the first Tuesday of October rather than October 4."}},
+        {template: "National Take Your Dog to Work Day", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [6]}, titles: {"en": "National Take Your Dog to Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/take-your-dog-to-work-day/"}, emoji: "🐶"},
         {template: "National Tartar Sauce Day", type: "D", start: {Easter:  "Easter", offsetD: -44}, titles: {"en": "National Tartar Sauce Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-tartar-sauce-day-friday-after-lent-begins"}, notes: {"en": "This event may be a ploy to sell food."}},
         {template: "National Technology Day", type: "D", start: {mon: 5, d: 11}, titles: {"en": "National Technology Day", "he": "יום הטכנולוגיה הלאומי"}, emoji: "📺📷📡"},
         {template: "National Tourism Day", type: "D", start: {mon: 1, d: 25}, titles: {"en": "National Tourism Day", "he": "יום התיירות הלאומי"}},
