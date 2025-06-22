@@ -84,6 +84,7 @@
         {type: "nD", start: {mon: 6, d: 1, thruD: 7, wkd: [5], durationD: 3}, titles: {"en": "Cuscuz Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/cuscuz-festival/"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 9, d: 13}, titles: {"en": "National Cachaça Day", "pt": "Dia Nacional da Cachaça"}, urls: {"en": "https://www.diffordsguide.com/on-this-day/september/13"}, emoji: "🥃"},
         {type: "D", start: {mon: 6, d: 24}, titles: {"pt": "Festa Junina"}, urls: {"en": "https://www.daysoftheyear.com/days/festa-junina/"}, first: {era: 1, y: 1500}, inherits: "St. John’s Day"},
+        {type: "nD", start: {mon: 6, d: 24, thruD: 30, wkd: [6]}, end: {mon: 6, d: 26, thruMon: 7, thruD: 2, wkd: [1]}, titles: {"en": "Bumba Meu Boi"}, urls: {"en": "https://www.daysoftheyear.com/days/bumba-meu-boi/"}, first: {era: 1, y: 1700}},
     ],
     templates: [
         {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}},
