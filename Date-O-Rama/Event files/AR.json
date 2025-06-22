@@ -65,10 +65,10 @@
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "National Tango Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-tango-day/"}, first: {era: 1, y: 1977}},
         {type: "D", start: {d: 29}, titles: {"en": "Gnocchi Day", "es": "Día de Ñoquis"}, urls: {"en": "https://www.checkiday.com/a15aa37566fabec0b51ea3ab024d0266/gnocchi-day-argentina"}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en": "Day of the Virgin of Luján"}, urls: {"en": "https://www.daysoftheyear.com/days/the-day-of-the-virgin-of-lujan/"}, first: {era: 1, y: 1887}},
+        {type: "D", start: {mon: 6, d: 24}, titles: {"en": "Patagonian New Year"}, urls: {"en": "https://www.daysoftheyear.com/days/patagonian-new-year/"}},
   ],
     templates: [
         {template: "Day of Respect for Cultural Diversity (in lieu)", type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en": "Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en": "https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
         {template: "Commemoration of General Don Martín Miguel de Güemes", type: "D", start: {mon: 6, d: 17}, titles: {"en": "Commemoration of General Don Martín Miguel de Güemes", "es": "Paso a la Inmortalidad del General Martín Miguel de Güemes"}, urls: {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, inherits: "*DeathAnniv*", notes: {"en": "Martin Miguel de Guemes Day"}},
-
     ]
 }

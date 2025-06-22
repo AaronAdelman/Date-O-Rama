@@ -102,7 +102,7 @@
         {titles: {"en": "Feast of St. Aloysius Gonzaga"}, type: "D", start: {mon: 6, d: 21}},
         {titles: {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, type: "D", start: {mon: 6, d: 22}},
         {inherits: "St. John’s Eve", type: "D", start: {mon: 6, d: 23}},
-        {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},
+        {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
         
         {titles: {"en": "Feast of St. Cyril of Alexandria"}, type: "D", start: {mon: 6, d: 27}},
         {titles: {"en": "Feast of St. Irenaeus"}, type: "D", start: {mon: 6, d: 28}},

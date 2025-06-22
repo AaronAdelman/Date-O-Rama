@@ -69,7 +69,7 @@
         {type: "D", start: {mon: 6, d: 23}, inherits: "International Olympic Day", first: {era: 1, y: 1948}},
         {titles: {"en": "Day of the Ukrainian Civil Service"}, type: "D", start: {"mon": 6, d: 23}},
         {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 24}},
-        {inherits: "St. John’s Day", type: "D", start: {mon: 6, d: 24}},
+        {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
         {inherits: "Feast of Saints Peter and Paul", type: "D", start: {"mon": 6, d: 29}},
         {titles: {"en": "Anniversary of the Declaration of State Sovereignty of Ukraine"}, type: "D", start: {"mon": 7, d: 16}},
         {inherits: "Honey Feast of the Savior", type: "D", start: {"mon": 8, d: 1}},
