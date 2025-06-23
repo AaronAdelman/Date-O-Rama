@@ -14,7 +14,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-discovery-day"}, inherits: "Discovery Day"},
-        {type: "D", start: {mon: 6, d: 19}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
+        {type: "D", start: {mon: 6, d: 17, thruD: 23, wkd: [2]}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
         {type: "D", start: {mon: 7, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 1959}},
         {type: "D", start: {mon: 11, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/remembrance-day"}, inherits: "Remembrance Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
