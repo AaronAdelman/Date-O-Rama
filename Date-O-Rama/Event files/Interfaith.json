@@ -4,10 +4,12 @@
     calendarCode: "gre",
     calendarColor: {red: 0.8, green: 0.8, blue: 0.98},
     events: [
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "World Peace & Prayer Day"}, notes: {"en": "World Peace and Prayer Day"}, urls: {"en": "https://www.worldpeaceandprayer.com/"}, emoji: "⭕", first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 1, wkd: [1], nth: 3}, titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/"}},
         {type: "D", start: {mon: 10, d: 27}, titles: {"en": "International Religious Freedom Day", "he": "יום חופש הדת הבינלאומי"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "Holy Experiment Day", "he": "יום הניסוי הקדוש"}, urls: {"en": "https://nationaltoday.com/holy-experiment-day/"}},
         {type: "D", start: {mon: 6, d: 30}, titles: {"en": "Queer Youth of Faith Day"}, urls: {"en": "https://www.belovedarise.org/qyfday"}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 6, wkd: [6], nth: 3}, titles: {"en": "National Day of Prayer for Law Enforcement Officers"}, urls: {"en": "https://www.checkiday.com/0a5c3c705144ae00af55b7e349e05a2a/national-day-of-prayer-for-law-enforcement-officers"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 7, d: 26}, titles: {"en": "One Voice Day", "he": "יום קול אחד"}, urls: {"en": "https://www.daysoftheyear.com/days/one-voice-day/"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 12}, titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, emoji: "🙏", urls: {"en": "https://www.daysoftheyear.com/days/spiritual-literacy-month/"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 3}, titles: {"en": "Spiritual Wellness Month", "he": "חודש הבריאות הרוחנית"}, urls: {"en": "https://www.daysoftheyear.com/days/spiritual-wellness-month/"}},

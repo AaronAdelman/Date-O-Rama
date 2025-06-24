@@ -373,7 +373,7 @@
         {type: "D", start: {mon: 6, d: 23}, titles: {"en": "Pink Flamingo Day"}, urls: {"en": "https://nationaltoday.com/pink-flamingo-day/"}, emoji: "🦩", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "National Catfish Day"}, urls: {"en": "https://www.daysoftheyear.com/days/catfish-day/"}, first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 6, d: 27}, titles: {"en": "Helen Keller Day"}, urls: {"en": "https://www.daysoftheyear.com/days/helen-keller-day/"}, first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-hiv-testing-day/"}, titles: {"en": "National HIV Testing Day"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 6, d: 27}, titles: {"en": "National HIV Testing Day"}, urls: {"en": "https://nationaltoday.com/national-hiv-testing-day/"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 6, d: 27}, titles: {"en": "PTSD Awareness Day"}, notes: {"en": "National PTSD Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ptsd-awareness-day/"}, first: {era: 1, y: 2011}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 30}, titles: {"en": "National Corvette Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/national-corvette-day/"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, first: {era: 1, y: 2009}, inherits: "National Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-day/"}},
