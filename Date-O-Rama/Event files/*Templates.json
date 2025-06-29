@@ -705,5 +705,6 @@
         {template: "יום־שנה של רבן שמעון בן גמליאל הזקן", titles: {"he": "יום־שנה של רבן שמעון בן גמליאל הזקן", "en": "Yohrtsayt of Rabban Shim‘on ben Gamli’el hazZaqen"}, type: "D", start: {mon: 10, d: 25}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של רחל אימנו", titles: {"he": "יום־שנה של רחל אימנו", "en": "Raḥel Our Mother Memorial Day"}, type: "D", start: {mon: 2, d: 11}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של שמואל הנביא", titles: {"he": "יום־שנה של שמואל הנביא", "en": "Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
+        {template: "יום־שנה של רבי מנחם מנדל שניאורסון", titles: {"he": "יום־שנה של רבי מנחם מנדל שניאורסון", "en": "Gimmel Tammuz"}, type: "D", start: {mon: 11, d: 3}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/3"}, inherits: "*DeathAnniv*", notes: {"he": "יום־שנה של הרבי מליובוויטש"}},
     ]
 }

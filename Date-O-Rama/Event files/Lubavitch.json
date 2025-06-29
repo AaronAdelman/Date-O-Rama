@@ -13,7 +13,7 @@
         {titles: {"he": "יום־שנה של חיה מושקא שניאורסון", "en": "Chof Beis Shvat"}, type: "D", start: {mon: 5, d: 22}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=11/22"}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום הולדת של רבי מנחם מנדל שניאורסון", "en": "Yud Aleph Nissan"}, type: "D", start: {mon: 8, d: 11}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=1/11"}, inherits: "*BDay*"},
         {titles: {"he": "יום הולדת של רבי שמואל שניאורסון", "en": "Beis Iyar"}, type: "D", start: {mon: 9, d: 2}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=2/2"}, inherits: "*BDay*"},
-        {titles: {"he": "יום־שנה של רבי מנחם מנדל שניאורסון", "en": "Gimmel Tammuz"}, type: "D", start: {mon: 11, d: 3}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/3"}, inherits: "*DeathAnniv*"},
+        {type: "D", start: {mon: 11, d: 3}, inherits: "יום־שנה של רבי מנחם מנדל שניאורסון", first: {era: 0, y: 5754}},
         {titles: {"he": "יום גאולה של יוסף יצחק שניאורסאהן", "en": "Yud Beis-Yud Gimmel Tammuz"}, type: "nD", start: {mon: 11, d: 12}, end: {mon: 11, d: 13}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/12"}},
         {titles: {"he": "יום היווסדות של ישיבות תומכי תמימים ליובאוויטש", "en": "Tes Vav Elul"}, type: "D", start: {mon: 13, d: 15
            }},

@@ -66,6 +66,7 @@
         {type: "D", start: {d: 29}, titles: {"en": "Gnocchi Day", "es": "Día de Ñoquis"}, urls: {"en": "https://www.checkiday.com/a15aa37566fabec0b51ea3ab024d0266/gnocchi-day-argentina"}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en": "Day of the Virgin of Luján"}, urls: {"en": "https://www.daysoftheyear.com/days/the-day-of-the-virgin-of-lujan/"}, first: {era: 1, y: 1887}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en": "Patagonian New Year"}, urls: {"en": "https://www.daysoftheyear.com/days/patagonian-new-year/"}},
+        {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 7}, titles: {"en": "Sweetness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/sweetness-week/"}, first: {era: 1, y: 1989}, emoji: "🍫"},
   ],
     templates: [
         {template: "Day of Respect for Cultural Diversity (in lieu)", type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en": "Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en": "https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},

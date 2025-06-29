@@ -170,7 +170,7 @@
         {titles: {"he": "יום־שנה של יונתן בן עוזיאל"}, type: "D", start: {mon: 10, d: 26}, first: {era: 0, y: 3800}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של יוסף הצדיק"}, type: "D", start: {mon: 11, d: 1}, first: {era: 0, y: 2310}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של המאור ושמש"}, type: "D", start: {mon: 11, d: 1}, first: {era: 0, y: 5587}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרבי מליובוויטש"}, type: "D", start: {mon: 11, d: 3}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
+        {type: "D", start: {mon: 11, d: 3}, inherits: "יום־שנה של רבי מנחם מנדל שניאורסון", first: {era: 0, y: 5754}},
         {titles: {"he": "יום־שנה של הרב יהושע ישעיה נויבירט"}, type: "D", start: {mon: 11, d: 3}, first: {era: 0, y: 5753}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבנו תם"}, type: "D", start: {mon: 11, d: 4}, first: {era: 0, y: 4931}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של השפע חיים מצאנז"}, type: "D", start: {mon: 11, d: 9}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},

@@ -1570,7 +1570,7 @@
         {type: "D", start: {mon: 6, d: 3}, titles: {"en": "National Itch Day"}, urls: {"en": "https://www.checkiday.com/911dd3c0861f360a6bc5aa3096c17249/national-itch-day"}},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en": "National Repeat Day", "he": "יום החזרה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/repeat-day/"}, notes: {"en": "Repeat Day", "he": "יום החזרה"}, emoji: "🔁"},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en": "National Simp Day"}, urls: {"en": "https://nationaltoday.com/national-simp-day/"}},
-        {type: "D", start: {mon: 6, d: 30}, titles: {"en": "National Meteor Watch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/meteor-watch-day/"}, emoji: "☄️"},
+        {type: "D", start: {mon: 6, d: 30}, titles: {"en": "National Meteor Watch Day"}, notes: {"en": "National Meteor Day"}, urls: {"en": "https://www.daysoftheyear.com/days/meteor-watch-day/"}, emoji: "☄️"},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Audacity to Hope Day"}, urls: {"en": "https://nationaltoday.com/audacity-to-hope-day/"}},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "National Cheese Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-day/"}, emoji: "🧀"},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "National Cognac Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cognac-day/"}, emoji: "🥃"},
