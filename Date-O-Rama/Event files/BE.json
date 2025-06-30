@@ -33,7 +33,7 @@
         {titles: {"en": "Day of the Flemish Community", "nl": "Feest van de Vlaamse Gemeenschap", "fr": "Fête de la Communauté flamande", "de": "Feiertag der Flämischen Gemeinschaft"}, type: "D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/day-flemish-community/"}, first: {era: 1, y: 1973}, notes: {"en": "Celebration of the Golden Spurs"}},
         {titles: {"en": "Day of Wallonia", "nl": "Feest van het Waalse Gewest", "fr": "Fête de la Région wallonne", "de": "Festtag der Wallonischen Region"}, type: "D", start: {mon: 9, wkd: [1], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-wallonia/"}, notes: {"en": "Day of the Walloon Region"}, first: {era: 1, y: 1923}},
         {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
-        {titles: {"en": "King’s Feast", "nl": "Koningsdag", "fr": "Fête du Roi", "de": "Festtag des Königs"}, type: "D", start: {mon: 11, d: 15}, urls: {"en": "https://en.wikipedia.org/wiki/King%27s_Feast"}, first: {era: 1, y: 1866}, emoji: "🤴"},
+        {type: "D", start: {mon: 11, d: 15}, titles: {"en": "King’s Feast", "nl": "Koningsdag", "fr": "Fête du Roi", "de": "Festtag des Königs"}, urls: {"en": "https://en.wikipedia.org/wiki/King%27s_Feast"}, first: {era: 1, y: 1866}, emoji: "🤴"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {inherits: "Mother’s Day", type: "D", start: {mon: 8, d: 15}, locations: {"en": "Antwerp"}},
@@ -41,5 +41,6 @@
         {type: "D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
+        {type: "nD", start: {mon: 6, d: 28, thruMon: 7, thruD: 4, wkd: [4]}, end: {mon: 6, d: 30, thruMon: 7, thruD: 6, wkd: [6]}, titles: {"en": "Ommegang Pageant", "fr": "Ommegang"}, urls: {"en": "https://www.daysoftheyear.com/days/ommegang-pageant/", "fr": "https://ommegang.be/"}, first: {era: 1, y: 1549}},
     ]
 }

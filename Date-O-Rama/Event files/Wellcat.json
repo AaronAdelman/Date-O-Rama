@@ -59,7 +59,7 @@
             {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Stupid Guy Thing Day"}},
             {type: "D", start: {mon: 6, d: 23}, titles: {"en": "Let It Go Day", "he": "יום השחרור"}},
             {type: "D", start: {mon: 6, d: 24}, titles: {"en": "Celebration of the Senses"}},
-            {type: "D", start: {mon: 7, d: 3}, titles: {"en": "Stay Out of the Sun Day"}},
+            {type: "D", start: {mon: 7, d: 3}, titles: {"en": "Stay Out of the Sun Day"}, notes: {"en": "National Stay Out of the Sun Day"}},
             {type: "D", start: {mon: 7, d: 6}, titles: {"en": "Take Your Webmaster to Lunch Day"}},
             {type: "D", start: {mon: 7, d: 10}, titles: {"en": "Don’t Step on a Bee Day"}},
             {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Embrace Your Geekness Day"}},
