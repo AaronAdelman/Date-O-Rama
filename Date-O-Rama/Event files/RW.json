@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.47, blue: 0.78},
     first: {era: 1, y: 1962},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Rwanda"},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 1}, inherits: "National Heroes’ Day", urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
@@ -16,11 +17,16 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Worker’s Day", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/labour-day"}},
         {type: "D", start: {mon: 5, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/labour-day"}, titles: {"en": "Worker’s Day (in lieu)"}},
-        {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"}, inherits: "Independence Day", first: {era: 1, y: 1962}},
-        {inherits: "Liberation Day", type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {era: 1, y: 1994}},
+        {type: "D", start: {mon: 7, d: 1}, inherits: "Independence Day", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"}, first: {era: 1, y: 1962}},
+        {type: "D", start: {mon: 7, d: 2, wkd: [4]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"}, first: {era: 1, y: 1962}},
+        {type: "D", start: {mon: 7, d: 3, wkd: [5]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"}, first: {era: 1, y: 1962}},
+        {type: "D", start: {mon: 7, d: 4}, inherits: "Liberation Day", urls: {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 8, wkd: [6], nth: 1}, titles: {"en": "Umuganura Day"}, urls: {"en": "https://nationaltoday.com/umuganura-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
+        
+        {type: "D", start: {wkd: [7], nth: -1}, titles: {"en": "Umuganda", "zh": "乌姆甘达", "id": "Umuganda", "rw": "Umuganda", "nl": "Umuganda"}, urls: {"en": "https://en.wikipedia.org/wiki/Umuganda"}, first: {era: 1, y: 2009}},
+
     ]
 }

@@ -310,7 +310,7 @@
         {type: "D", start: {mon: 7, d: 19}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-words-with-friends-day-july-19"}, titles: {"en": "National Words with Friends Day"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 2}, inherits: "National Wildland Firefighter Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 23}, titles: {"en": "National Lemon Day"}, emoji: "🍋", urls: {"en": "https://www.nationaldaycalendar.com/july/national-lemon-day-july-23"}, first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 7, d: 27}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-love-is-kind-day-july-27"}, titles: {"en": "National Love is Kind Day"}, first: {era: 1, y: 2017}, emoji: "❤️"},
+        {type: "D", start: {mon: 7, d: 27}, titles: {"en": "National Love is Kind Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-love-is-kind-day-july-27"}, first: {era: 1, y: 2017}, emoji: "❤️"},
         {type: "D", start: {mon: 7, d: 29}, titles: {"en": "National Lipstick Day"}, first: {era: 1, y: 2016}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "National Hand Roll Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hand-roll-day-july-6"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 7, d: 7}, inherits: "National Dive Bar Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dive-bar-day-july-7"}, first: {era: 1, y: 2018}},
