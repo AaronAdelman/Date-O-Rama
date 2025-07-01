@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", urls: {"en": "https://www.officeholidays.com/holidays/france/fathers-day"}},
         {type: "D", start: {mon: 7, d: 14}, inherits: "Bastille Day", first: {era: 1, y: 1789}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {inherits: "All Saints Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
+        {type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", urls: {"en": "https://www.daysoftheyear.com/days/armistice-day-in-france/"}, first: {era: 1, y: 1922}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
@@ -32,6 +32,7 @@
         {type: "D", start: {mon: 11, wkd: [5], nth: 3}, urls: {"en": "https://beaujolaisnouveauday.com/"}, titles: {"en": "Beaujolais Nouveau Day"}, first: {era: 1, y: 1985}, emoji: "🍷"},
         {type: "D", start: {mon: 3, wkd: [1], nth: 1}, inherits: "Grandmothers’ Day", first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 7, d: 31}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, titles: {"en": "Tacos Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
-        {type: "D", start: {mon: 7, d: 16}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Anniversary of the Vel’ d’Hiv Roundup", "fr": "Anniversaire de la rafle du Vélodrome d’hiver"}},
+        {type: "D", start: {mon: 7, d: 16}, titles: {"en": "Anniversary of the Vel’ d’Hiv Roundup", "fr": "Anniversaire de la rafle du Vélodrome d’hiver"}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
+        {type: "nD", start: {mon: 6, d: 29, thruMon: 7, thruD: 21, wkd: [7]}, end: {mon: 7, d: 21, thruD: 27, wkd: [1]}, titles: {"en": "Tour de France", "fr": "Tour de France", "he": "טור דה פראנס", "yi": "טור דע פראנס", "es": "Tour de Francia", "de": "Tour de France"}, first: {era: 1, y: 1903}, emoji: "🚲", urls: {"en": "https://www.letour.fr/en", "fr": "https://www.letour.fr/fr/", "de": "https://www.letour.fr/de/", "es": "https://www.letour.fr/es/"}},
     ]
 }

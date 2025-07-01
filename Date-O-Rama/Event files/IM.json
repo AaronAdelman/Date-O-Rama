@@ -16,14 +16,14 @@
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/isle-of-man/spring-bank-holiday"}, inherits: "Spring Bank Holiday", first: {era: 1, y: 1967}},
         {type: "D", start: {mon: 6, d: 6, thruD: 12, wkd: [6]}, urls: {"en": "https://nationaltoday.com/t-t-bank-holiday/"}, titles: {"en": "T. T. Bank Holiday"}, notes: {"en": "Senior Race Day"}, first: {era: 1, y: 2022}, inherits: "Bank Holiday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", start: {mon: 7, d: 5, wkd: [2, 3, 4, 5, 6]}, inherits: "Tynwald Day"},
-        {type: "D", start: {mon: 7, d: 6, thruD: 7, wkd: [2]}, inherits: "Tynwald Day"},
+        {type: "D", start: {mon: 7, d: 5}, inherits: "Tynwald Day"},
+        {type: "D", start: {mon: 7, d: 6, thruD: 7, wkd: [2]}, titles: {"en": "Tynwald Day (in lieu)"}, inherits: "Tynwald Day"},
         {type: "D", start: {mon: 8, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/isle-of-man/august-bank-holiday"}, inherits: "August Bank Holiday"},
         {type: "D", start: {mon: 11, d: 8, thruD: 14, wkd: [1]}, inherits: "Remembrance Sunday", first: {era: 1, y: 1939}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [
-        {template: "Tynwald Day", type: "D", start: {mon: 7, d: 5, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/tynwald-day/"}, titles: {"en": "Tynwald Day"}},
+        {template: "Tynwald Day", type: "D", start: {mon: 7, d: 5}, titles: {"en": "Tynwald Day"}, urls: {"en": "https://www.tynwald.org.im/tynwald-day"}},
     ]
 }
