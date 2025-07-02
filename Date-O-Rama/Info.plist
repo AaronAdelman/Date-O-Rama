@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Date-O-Rama needs authorization to access your calendar to display preexisting calendar information.</string>
+	<string>Date-O-Rama needs authorization to access your event calendars.</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your contacts.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
