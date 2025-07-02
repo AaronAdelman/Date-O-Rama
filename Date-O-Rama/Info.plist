@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Date-O-Rama needs authorization to access your events.</string>
+	<string>Date-O-Rama needs authorization to access your calendar to display preexisting calendar information.</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your contacts.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -85,8 +85,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
