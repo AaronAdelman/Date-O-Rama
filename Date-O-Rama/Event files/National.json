@@ -1758,7 +1758,6 @@
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Chocolate Wafer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-wafer-day/"}},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Compliment Your Mirror Day"}, urls: {"en": "https://nationaltoday.com/national-compliment-mirror-day/"}, emoji: "🪞"},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Eat Your Beans Day"}, urls: {"en": "https://www.daysoftheyear.com/days/eat-beans-day/"}, notes: {"en": "National Eat Beans Day"}, emoji: "🫘"},
-        {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Fried Clam Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fried-clam-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Independent Beer Run Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-independent-beer-run-day/"}, first: {era: 1, y: 2019}, emoji: "🍺"},
         {type: "D", start: {mon: 7, d: 30}, titles: {"en": "National Cheesecake Day", "he": "יום עוגת הגבינה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/cheesecake-day/"}, first: {era: 1, y: 1985}, emoji: "🍰"},
         {type: "D", start: {mon: 7, d: 30}, titles: {"en": "National Father-in-Law Day", "he": "יום החותן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/father-in-law-day/"}},
