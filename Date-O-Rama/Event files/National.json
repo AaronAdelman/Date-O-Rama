@@ -1272,7 +1272,9 @@
         {type: "D", start: {mon: 5, d: 15}, titles: {"en": "National Tuberous Sclerosis Day"}, urls: {"en": "https://nationaltoday.com/national-tuberous-sclerosis-day/"}, inherits: "*MedAwareness*"},
       {type: "D", start: {mon: 5, d: 15}, titles: {"en": "Relive Your Past By Listening to the First Music You Ever Bought No Matter What It Was No Excuses Day"}, urls: {"en": "https://www.checkiday.com/fc7c86be67f848602a61d297b35f616e/relive-your-past-by-listening-to-the-first-music-you-ever-bought-no-matter-what-it-was-no-excuses-day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 5, d: 16}, inherits: "National Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Barbecue Day"}, urls: {"en": "https://www.daysoftheyear.com/days/barbecue-day/"}, emoji: "🍖"},
+        {type: "D", start: {mon: 5, d: 16}, inherits: "National Barbecue Day", urls: {"en": "https://www.daysoftheyear.com/days/barbecue-day/"}, notes: {"en": "National BBQ Day\nBBQ Day"}},
+        {type: "D", start: {mon: 7, d: 4}, inherits: "National Barbecue Day", urls: {"en": "https://www.holidaysmart.com/holidays/daily/barbecue-day-us"}, notes: {"en": "Barbecue Day"}},
+        {type: "D", start: {mon: 7, d: 4}, titles: {"en": "National Country Music Day"}, urls: {"en": "https://www.holidayinsights.com/moreholidays/july/countrymusicday.htm"}, emoji: "🎸"},
         {type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Biographers Day", "he": "יום הביוגרפים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/biographers-day/"}, notes: {"en": "National Biographer’s Day"}, emoji: "⌨️"},
         {type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Chartreuse Day"}, first: {era: 1, y: 2005}, urls: {"en": "https://www.checkiday.com/41c9c1230243a6aaf893639d2f209dc4/national-chartreuse-day"}, emoji: "🍷"},
         {type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Coquilles Saint Jacques Day"}, urls: {"en": "https://nationaltoday.com/national-coquilles-saint-jacques-day/"}},
@@ -2455,5 +2457,6 @@
         {template: "National Gun Violence Awareness Day", type: "D", start: {mon: 6, d: 2}, titles: {"en": "National Gun Violence Awareness Day"}, urls: {"en": "https://www.checkiday.com/1c233495a56f3370617ffaa4fffc317a/national-gun-violence-awareness-day"}},
         {template: "Belmont Stakes", type: "D", start: {mon: 6, d: 5, thruD: 11, wkd: [7]}, titles: {"en": "Belmont Stakes", "zh": "貝蒙錦標", "ja": "ベルモントステークス", "da": "Belmont Stakes", "es": "Belmont Stakes", "eo": "Vetaĵo Belmont", "fr": "Belmont Stakes", "pl": "Belmont Stakes", "pt": "Belmont Stakes", "sv": "Belmont Stakes", "cs": "Belmont Stakes"}, urls: {"en": "https://www.checkiday.com/678ae0f32af8c80983d488146d998704/belmont-stakes"}, emoji: "🏇"},
         {template: "Own Your Share of America Day", type: "D", start: {mon: 6, d: 14, wkd: [2, 3, 4, 5, 6]}, titles: {"en": "Own Your Share of America Day"}, urls: {"en": "https://www.checkiday.com/2c41de37d234c90716313aec94968c61/own-your-share-of-america-day"}, emoji: "💵"},
+        {template: "National Barbecue Day", type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Barbecue Day"}, emoji: "🍖"},
     ]
 }
