@@ -35,7 +35,7 @@
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "Birthday of Prince Joachim", "da": "Prins Joachims fødselsdag"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=56335"}},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "Day of Valdemar and Reunion Day", "da": "Valdemarsdag og Genforeningsdag"}, urls: {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, first: {era: 1, y: 1219}},
         {inherits: "St. John’s Eve", type: "D", start: {mon: 6, d: 23}},
-        {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         {titles: {"en": "The eve before Saint Martin’s Day", "da": "Mortensaften"}, type: "D", start: {mon: 11, d: 10}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Feast of St. Martin of Tours"},
         {inherits: "St. Lucia Day", type: "D", start: {mon: 12, d: 13}},

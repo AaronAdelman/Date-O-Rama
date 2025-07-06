@@ -46,7 +46,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 9, d: 7, thruD: 13, wkd: [1]}, notes: {"en": "National Grandparents Day"}, urls: {"en": "https://grandparentsday.org/"}, first: {era: 1, y: 1978}},
         {inherits: "Groundhog Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1841}},
-        {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 7, d: 3, wkd: [6]}, first: {era: 1, y: 1776}, urls: {"en": "https://nationaltoday.com/independence-day/"}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 7, d: 5, wkd: [1]}, first: {era: 1, y: 1776}, urls: {"en": "https://nationaltoday.com/independence-day/"}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 7, d: 5, wkd: [6]}, first: {era: 1, y: 1776}, urls: {"en": "https://nationaltoday.com/independence-day/"}, locations: {"en": "West Virginia"}},

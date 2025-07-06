@@ -109,7 +109,7 @@
         {titles: {"en": "Boy’s Day", "pl": "Dzień Chłopaka"}, type: "D", start: {mon: 9, d: 30}},
         {titles: {"en": "Polish Post Day"}, type: "D", start: {mon: 10, d: 18}, notes: {"en": "Postman’s Day"}, emoji: "📮"},
         {titles: {"en": "Mongrel’s Day"}, type: "D", start: {mon: 10, d: 25}, emoji: "🐶"},
-        {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Civil Service Day"},
         {type: "D", start: {mon: 11, d: 30}, inherits: "St. Andrew’s Day"},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Miners’ Day", "he": "יום הכורים", "pl": "Barbórka"}},

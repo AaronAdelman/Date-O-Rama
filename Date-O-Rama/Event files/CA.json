@@ -24,7 +24,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", urls: {"en": "https://www.officeholidays.com/holidays/canada/fathers-day"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Groundhog Day", type: "D", start: {mon: 2, d: 2}, first: {era: 1, y: 1841}},
-        {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Nova Scotia Heritage Day"}, urls: {"en": "https://heritageday.novascotia.ca/"}, first: {era: 1, y: 2013}, inherits: "Heritage Day"},
         {inherits: "Heritage Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-day-in-alberta/"}, locations: {"en": "Alberta"}},
         {type: "D", start: {mon: 3, d: 20}, inherits: "International Francophonie Day", first: {era: 1, y: 1988}},

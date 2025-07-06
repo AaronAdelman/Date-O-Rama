@@ -207,7 +207,7 @@
         {titles: {"en": "Feast of St. Anthony Mary Claret"}, type: "D", start: {mon: 10, d: 24}},
         {titles: {"en": "Feast of St. Simon and St. Jude"}, type: "D", start: {mon: 10, d: 28}, urls: {"en": "https://www.checkiday.com/ce61c4e0c1ee084dc238db7f89f73f0a/st-judes-feast-day"}},
         
-        {inherits: "Halloween", type: "D", start: {mon: 10, d: 31}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
