@@ -88,6 +88,7 @@
         {type: "D", start: {mon: 8, wkd: [4], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/la-tomatina/"}, titles: {"en": "La Tomatina", "he": "טומטינה", "es": "La Tomatina"}, emoji: "🍅", first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 7, d: 26}, inherits: "Grandparents’ Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Day for Holocaust Remembrance and for the Prevention of Crimes against Humanity", "es": "Día Oficial de la Memoria del Holocausto y la Prevención de los Crímenes contra la Humanidad"}},
+        {type: "nD", start: {mon: 7, d: 7}, end: {mon: 7, d: 14}, titles: {"en": "Running of the Bulls"}, urls: {"en": "https://www.runningofthebulls.com/"}, first: {era: 1, y: 1300}, emoji: "🐂"},
 
     ]
 }

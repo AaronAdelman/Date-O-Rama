@@ -63,7 +63,6 @@
             {type: "D", start: {mon: 7, d: 6}, titles: {"en": "Take Your Webmaster to Lunch Day"}},
             {type: "D", start: {mon: 7, d: 10}, titles: {"en": "Don’t Step on a Bee Day"}},
             {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Embrace Your Geekness Day"}},
-            {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Gruntled Workers Day"}},
             {type: "D", start: {mon: 7, d: 15}, titles: {"en": "Be a Dork Day"}},
             {type: "D", start: {mon: 7, d: 23}, titles: {"en": "Hot Enough For Ya Day"}},
             {type: "D", start: {mon: 7, d: 27}, titles: {"en": "Take Your Houseplants for a Walk Day"}},
@@ -94,5 +93,6 @@
             {type: "D", start: {mon: 11, d: 30}, titles: {"en": "Stay Home Because You’re Well Day"}},
         ]},
         {type: "D", start: {mon: 3, d: 15}, titles: {"en": "True Confessions Day", "he": "יום וידויי האמת"}},
+        {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Gruntled Workers Day"}},
     ]
 }
