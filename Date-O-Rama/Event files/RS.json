@@ -6,15 +6,15 @@
     calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
-        {type: "D", start: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
-        {type: "D", start: {mon: 1, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/st-savas-day"}, titles: {"en": "St. Sava’s Day", "sr-Cyrl": "Савиндан", "sr-Latn": "Savindan"}, notes: {"en": "Spirituality Day"}},
-        {type: "nD", start: {mon: 2, d: 15}, end: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-serbia/"}, inherits: "Statehood Day", first: {era: 1, y: 2001}, notes: {"en": "Sovereignty Day"}},
+        {type: "D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
+        {type: "D", start: {mon: 1, d: 3, wkd: [2, 3]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
+        {type: "D", start: {mon: 1, d: 27}, titles: {"en": "St. Sava’s Day", "sr-Cyrl": "Савиндан", "sr-Latn": "Savindan"}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/st-savas-day"}, notes: {"en": "Spirituality Day"}},
+        {type: "nD", start: {mon: 2, d: 15}, end: {mon: 2, d: 16}, inherits: "Statehood Day", urls: {"en": "https://nationaltoday.com/sovereignty-day-of-serbia/"}, first: {era: 1, y: 2001}, notes: {"en": "Sovereignty Day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 5, d: 2, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}, inherits: "Labour Day Holiday"},
-        {type: "D", start: {mon: 5, d: 3, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}, inherits: "Labour Day Holiday"},
-        {type: "D", start: {mon: 5, d: 4, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}, inherits: "Labour Day Holiday"},
-        {type: "D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/victory-day"}, inherits: "Europe Day"},
+        {type: "D", start: {mon: 5, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Labour Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}},
+        {type: "D", start: {mon: 5, d: 3, wkd: [3]}, inherits: "Labour Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}},
+        {type: "D", start: {mon: 5, d: 4, wkd: [3]}, inherits: "Labour Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", urls: {"en": "https://www.officeholidays.com/holidays/serbia/victory-day"}},
         {inherits: "St. Vitus Day", type: "D", start: {mon: 6, d: 28}},
         {type: "D", start: {mon: 10, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/serbia-remembrance-day"}, inherits: "Remembrance Day", titles: {"en": "World War II Serbian Victims Remembrance Day", "sr-Cyrl": "Дан сећања на српске жртве у Другом светском рату", "sr-Latn": "Dan sećanja na srpske žrtve u Drugom svetskom ratu    "}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
@@ -28,5 +28,6 @@
         {type: "D", start: {mon: 2, d: 17, wkd: [2]}, titles: {"en": "Statehood Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/sovereignty-day-of-serbia"}, first: {era: 1, y: 2001}, notes: {"en": "Sovereignty Day (in lieu)"}},
         {type: "D", start: {mon: 4, d: 2}, inherits: "Holocaust Memorial Day", titles: {"en": "Holocaust Remembrance Day", "sr": "Dan sećanja na žrtve holokausta"}},
         {type: "D", start: {mon: 12, d: 16}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2009}},
-   ]
+        {type: "nD", start: {mon: 7, d: 14, thruD: 20, wkd: [2], durationD: 5}, titles: {"en": "Drina Regatta"}, urls: {"en": "https://www.daysoftheyear.com/days/drina-regatta/"}, first: {era: 1, y: 1994}, emoji: "⛵"},
+    ]
 }
