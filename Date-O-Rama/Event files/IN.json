@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
     first: {era: 1, y: 1947},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/india/kerala/mannam-jayanthi"}, titles: {"en": "Mannam Jayanthi"}, first: {era: 1, y: 1878}},
@@ -250,7 +251,7 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 6]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 9, d: 29, thruD: 30, wkd: [2]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 2013}},
-        {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
         {inherits: "National Maritime Day", type: "D", start: {mon: 4, d: 5}},
         {type: "D", start: {mon: 11, d: 26}, inherits: "National Milk Day"},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Tendong Lho Rum Faat"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},

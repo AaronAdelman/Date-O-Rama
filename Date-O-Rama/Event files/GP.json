@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.95, blue: 0.0},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guadeloupe"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/carnival-monday"}, inherits: "Carnival Monday"},
@@ -17,7 +18,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/slavery-abolition-day-guadeloupe/"}, inherits: "Abolition Day", notes: {"en": "Slavery Abolition Day\nEmancipation Day"}},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/bastille-day"}, inherits: "Bastille Day"},
+        {type: "D", start: {mon: 7, d: 14}, inherits: "Bastille Day", urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/bastille-day"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/armistice-day"}, inherits: "Armistice Day"},

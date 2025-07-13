@@ -43,5 +43,6 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {type: "nD", start: {mon: 6, d: 28, thruMon: 7, thruD: 4, wkd: [4]}, end: {mon: 6, d: 30, thruMon: 7, thruD: 6, wkd: [6]}, titles: {"en": "Ommegang Pageant", "fr": "Ommegang"}, urls: {"en": "https://www.daysoftheyear.com/days/ommegang-pageant/", "fr": "https://ommegang.be/"}, first: {era: 1, y: 1549}},
+        {type: "nD", start: {mon: 7, d: 14, thruD: 20, wkd: [6], durationD: 10}, titles: {"en": "Gentse Feesten", "nl": "Gentse Feesten", "fr": "Gentse Feesten"}, urls: {"en": "https://gentsefeesten.stad.gent/en", "nl": "https://gentsefeesten.stad.gent/nl", "fr": "https://gentsefeesten.stad.gent/fr"}, first: {era: 1, y: 1843}},
     ]
 }

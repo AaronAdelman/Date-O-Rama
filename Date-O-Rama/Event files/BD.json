@@ -6,11 +6,12 @@
     calendarCode: "gre",
     calendarColor: {red: 0.17, green: 0.41, blue: 0.31},
     first: {era: 1, y: 1971},
+    urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"},
     events: [
         {type: "D", start: {mon: 2, d: 21}, titles: {"en": "Language Martyrs’ Day", "bn": "ভাষা আন্দোলন দিবস"}, notes: {"en": "State Language Day\nLanguage Movement Day", "bn": "শহীদ দিবস"}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/language-martyrs-day/"}, first: {era: 1, y: 1955}},
-        {type: "D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, titles: {"en": "Sheikh Mujibur Rahman’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1920}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 3, d: 17}},
-        {inherits: "Independence Day", type: "D", start: {mon: 3, d: 26}, first: {era: 1, y: 1971}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)"}, urls: {"en": "https://nationaltoday.com/independence-day-of-bangladesh/"}},
+        {type: "D", start: {mon: 3, d: 17}, titles: {"en": "Sheikh Mujibur Rahman’s Birthday"}, urls: {"en": "https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, inherits: "*BDay*", first: {era: 1, y: 1920}},
+        {type: "D", start: {mon: 3, d: 17}, inherits: "Children’s Day"},
+        {type: "D", start: {mon: 3, d: 26}, inherits: "Independence Day", first: {era: 1, y: 1971}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)"}, urls: {"en": "https://nationaltoday.com/independence-day-of-bangladesh/"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Bengali New Year (Pôhela Boishakh)", "bn": "পহেলা বৈশাখ"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inherits: "Bank Holiday", first: {era: 1, y: 2023}},
@@ -24,12 +25,12 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 5, d: 7}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Bengali Genocide Remembrance Day", "en": "বাঙালি গণহত্যা স্মরণ দিবস"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2017}, urls: {"en": "https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
-        {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 7}, first: {era: 1, y: 1975}},
+        {type: "D", start: {mon: 11, d: 7}, inherits: "Revolution Day", first: {era: 1, y: 1975}},
         {type: "D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 11, d: 21}},
+        {type: "D", start: {mon: 11, d: 21}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
-        {inherits: "National Grandparents’ Day", type: "D", start: {mon: 9, d: 9}},
-
+        {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 9, d: 9}, inherits: "National Grandparents’ Day"},
+        {type: "D", start: {mon: 7, d: 16}, titles: {"en": "Martyr Abu Sayeed Day"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"}},
     ]
 }

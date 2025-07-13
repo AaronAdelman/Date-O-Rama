@@ -166,6 +166,6 @@
         {inherits: "Revolution Day", type: "D", start: {mon: 8, d: 19}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/revolution-commemoration-day/"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", inherits: "Long Tan Day", start: {mon: 8, d: 18}, first: {era: 1, y: 2016}},
-        {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
    ]
 }

@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},

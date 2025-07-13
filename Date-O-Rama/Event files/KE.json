@@ -23,6 +23,6 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
-        {inherits: "International Tea Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
    ],
 }
