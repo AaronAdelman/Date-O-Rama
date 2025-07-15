@@ -1958,6 +1958,10 @@
       {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [2], durationD: 7}, titles: {"en": "Global Entrepreneurship Week"}, notes: {"en": "Enterprise Week"}, urls: {"en": "https://www.genglobal.org/gew"}, first: {era: 1, y: 2008}, nonoverlappingSubEvents: [
           {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "Social Enterprise Day"}, urls: {"en": "https://www.daysoftheyear.com/days/social-enterprise-day/"}, emoji: "🤝"},
       ]},
+      
+      {type: "nD", start: {mon: 7, d: 7, thruD: 13, wkd: [2], durationD: 8}, titles: {"en": "World Orca Week"}, notes: {"en": "WOW"}, urls: {"en": "https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", first: {era: 1, y: 2014}, nonoverlappingSubEvents: [
+          {type: "D", start: {mon: 7, d: 14}, titles: {"en": "World Orca Day"}, urls: {"en": "https://www.worldorcaday.org/"}, emoji: "🌎"},
+      ]},
  
     ],
     templates: [
