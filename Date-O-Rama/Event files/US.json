@@ -385,7 +385,7 @@
         {type: "D", start: {mon: 7, d: 15}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 7, d: 16}, titles: {"en": "National Atomic Veterans Day"}, notes: {"en": "National Atomic Veterans’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-atomic-veterans-day/"}, first: {era: 1, y: 1983}, emoji: "⚛️"},
         {type: "D", start: {mon: 7, d: 17}, inherits: "National Lottery Day", first: {era: 1, y: 2018}},
-        {type: "D", start: {mon: 7, d: 17}, titles: {"en": "Wrong Way Corrigan Day"}, urls: {"en": "https://nationaltoday.com/wrong-way-corrigan-day/"}, first: {era: 1, y: 1987}, emoji: "🛩️"},
+        {type: "D", start: {mon: 7, d: 17}, titles: {"en": "Wrong Way Corrigan Day"}, notes: {"en": "National Wrong Way Corrigan Day"}, urls: {"en": "https://nationaltoday.com/wrong-way-corrigan-day/"}, first: {era: 1, y: 1987}, emoji: "🛩️"},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en": "Flight Attendant Safety Professionals’ Day"}, urls: {"en": "https://nationaltoday.com/flight-attendant-safety-professionals-day/"}, first: {era: 1, y: 1990}, emoji: "💺"},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en": "National Urban Beekeeping Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-urban-beekeeping-day/"}, emoji: "🐝", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 7, d: 2}, inherits: "National Wildland Firefighter Day", first: {era: 1, y: 2022}},
