@@ -38,6 +38,7 @@ let TIME_FORMAT_KEY: String                = "timeFormat"
 let BUILT_IN_EVENT_CALENDARS_KEY: String   = "builtInEventCalendars"
 let ICALENDAR_EVENT_CALENDARS_KEY: String  = "iCalendarEventCalendars"
 let CELL_DATE_EVENT_VISIBILITY_KEY: String = "cellDateEventVisibility"
+let CELL_TIME_EVENT_VISIBILITY_KEY: String = "cellTimeEventVisibility"
 
 
 // MARK:  -
@@ -137,7 +138,9 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // var iCalendarEventCalendars
     
     @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
-    
+
+    @Published var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
+
 
     // MARK:  -
 
@@ -174,7 +177,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             TIME_ZONE_KEY:  location.timeZone.identifier,
             BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
             USES_DEVICE_LOCATION_KEY:  usesDeviceLocation,
-            CELL_DATE_EVENT_VISIBILITY_KEY:  allDayEventVisibility.rawValue
+            CELL_DATE_EVENT_VISIBILITY_KEY:  allDayEventVisibility.rawValue,
+            CELL_TIME_EVENT_VISIBILITY_KEY: eventVisibility.rawValue,
         ] as [String : Any]
 
         if self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && !forComplication {
@@ -289,9 +293,14 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             newClock.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
         }
         
-        let rawEventVisibility = dictionary[CELL_DATE_EVENT_VISIBILITY_KEY] as? Int
-        if rawEventVisibility != nil {
-            newClock.allDayEventVisibility = ASAClockCellDateEventVisibility(rawValue: rawEventVisibility!) ?? .defaultValue
+        let rawDateEventVisibility = dictionary[CELL_DATE_EVENT_VISIBILITY_KEY] as? Int
+        if rawDateEventVisibility != nil {
+            newClock.allDayEventVisibility = ASAClockCellDateEventVisibility(rawValue: rawDateEventVisibility!) ?? .defaultValue
+        }
+        
+        let rawTimeEventVisibility = dictionary[CELL_TIME_EVENT_VISIBILITY_KEY] as? String
+        if rawTimeEventVisibility != nil {
+            newClock.eventVisibility = ASAClockCellTimeEventVisibility(rawValue: rawTimeEventVisibility!) ?? .defaultValue
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool

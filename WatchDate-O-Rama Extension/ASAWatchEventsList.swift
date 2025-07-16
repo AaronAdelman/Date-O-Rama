@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASAWatchEventsList: View {
     var processedClock:  ASAProcessedClock
-    @State var eventVisibility:  ASAClockCellTimeEventVisibility = .defaultValue
+    @Binding var eventVisibility:  ASAClockCellTimeEventVisibility
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     @State var now:  Date
     var clock: ASAClock
