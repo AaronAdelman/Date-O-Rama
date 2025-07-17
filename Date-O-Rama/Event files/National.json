@@ -1700,7 +1700,6 @@
         {type: "D", start: {mon: 7, d: 17}, titles: {"en": "National Yellow Pig Day", "he": "יום החזיר הצהוב הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/yellow-pig-day/"}, notes: {"en": "Yellow Pig Day", "he": "יום החזיר הצהוב"}, first: {era: 1, y: 1960}, emoji: "⑰"},
         {type: "D", start: {mon: 7, d: 18}, titles: {"en": "National Caviar Day", "he": "יום הקוויאר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/caviar-day/"}},
         {type: "D", start: {mon: 7, d: 18}, titles: {"en": "National Dapper Your Data Day"}, urls: {"en": "https://nationaltoday.com/national-dapper-your-data-day/"}, first: {era: 1, y: 2020}, emoji: "📀💿💽"},
-        {type: "D", start: {mon: 7, d: 18}, titles: {"en": "National Sour Candy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-sour-candy-day/"}, first: {era: 1, y: 2015}, emoji: "🍬"},
         {type: "D", start: {mon: 7, d: 19}, inherits: "National New Friends Day"},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en": "National Daiquiri Day", "he": "יום הדאקירי הלאומי"}, notes: {"en": "Daiquiri Day"}, emoji: "🍹", urls: {"en": "https://www.daysoftheyear.com/days/daiquiri-day/"}},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en": "National Football Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-football-day/"}, emoji: "🏈"},
