@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.14, green: 0.34, blue: 0.48},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Australia"},
+    first: {era: 1, y: 1901},
     events: [
         {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
