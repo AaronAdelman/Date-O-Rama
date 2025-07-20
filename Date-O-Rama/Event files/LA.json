@@ -14,6 +14,8 @@
         {type: "D", start: {mon: 4, d: 18, wkd: [3, 5]}, inherits: "Lao New Year Holiday"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lao/labour-day"}, inherits: "Labour Day"},
         {titles: {"en": "Women’s Union Establishment Day"}, type: "D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/womens-union-establishment-day/"}, first: {era: 1, y: 1955}, emoji: "👩"},
+        {titles: {"en": "Women’s Union Establishment Day (in lieu)"}, type: "D", start: {mon: 7, d: 21, thruD: 22, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/lao/lao-women-union-establishment-day"}, first: {era: 1, y: 1955}, emoji: "👩"},
+
         {type: "D", start: {mon: 10, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, titles: {"en": "BOL Establishment Day"}, emoji: "🏦", first: {era: 1, y: 1968}},
         {type: "D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/lao-national-day/"}, inherits: "National Day", first: {era: 1, y: 1975}},
 

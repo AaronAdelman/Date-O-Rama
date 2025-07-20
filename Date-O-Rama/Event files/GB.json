@@ -300,7 +300,7 @@
         {type: "nD", start: {mon: 7, d: 12, thruD: 18, wkd: [6]}, end: {mon: 8, d: 4, thruD: 10, wkd: [1]}, titles: {"en": "Big Butterfly Count"}, urls: {"en": "https://bigbutterflycount.butterfly-conservation.org/"}, emoji: "🦋"},
         {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, titles: {"en": "South Asian Heritage Month"}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, first: {era: 1, y: 1990}},
         {type: "nD", start: {mon: 7, d: 23, thruD: 29, wkd: [6]}, end: {mon: 8, d: 1, thruD: 7, wkd: [1]}, titles: {"en": "Love Parks Week"}, urls: {"en": "https://www.keepbritaintidy.org/get-involved/support-our-campaigns/love-parks-2024"}, emoji: "🏞️", first: {era: 1, y: 2023}},
-        {type: "nD", start: {mon: 7, d: 24}, end: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-marine-week/"}, titles: {"en": "National Marine Week"}, emoji: "🦀🦈🦑"},
+        {type: "nD", start: {mon: 7, d: 21, thruD: 27, wkd: [7]}, end: {mon: 8, d: 5, thruD: 11, wkd: [1]}, titles: {"en": "National Marine Week"}, urls: {"en": "https://www.wildlifetrusts.org/national-marine-week"}, emoji: "🦀🦈🦑"},
         {type: "nD", start: {mon: 8, d: 1, thruD: 7, wkd: [7], durationD: 8}, titles: {"en": "National Eisteddfod of Wales", "cy": "Eisteddfod Genedlaethol Cymru"}, first: {era: 1, y: 1861}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
         {type: "nD", start: {mon: 8, d: 21, thruD: 27, wkd: [7], durationD: 2}, inherits: "Pride Cymru", first: {era: 1, y: 1999}, last: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 8, d: 23, thruD: 29, wkd: [7], durationD: 3}, titles: {"en": "Notting Hill Carnival", "he": "קרנבל נוטינג היל"}, urls: {"en": "https://nhcarnival.org/"}, emoji: "🟡"},
@@ -352,6 +352,7 @@
         {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [2], durationD: 7}, titles: {"en": "Refugee Week", "he": "שבוע הפליטים"}, urls: {"en": "https://refugeeweek.org.uk/"}, first: {era: 1, y: 1998}, inherits: "World Refugee Day"},
         {type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durationD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 1993}, last: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 7, d: 6, thruD: 12, wkd: [6], durationD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 2025}},
+        {type: "nD", start: {mon: 7, d: 18, thruD: 24, wkd: [2], durationD: 4}, titles: {"en": "Royal Welsh Show"}, urls: {"en": "https://rwas.wales/royal-welsh/"}, first: {era: 1, y: 1904}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿🌾🐮"},
 
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 5}, titles: {"en": "Anti-Bullying Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en": "Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦"},
