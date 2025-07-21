@@ -1465,7 +1465,7 @@
         {type: "D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/no-pet-store-puppies-day/"}, titles: {"en": "No Pet Store Puppies Day"}, emoji: "🐶"},
         {type: "D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/take-a-monkey-to-lunch-day/"}, titles: {"en": "Take a Monkey to Lunch Day"}, first: {era: 1, y: 2000}, emoji: "🐒"},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Pi Approximation Day", "he": "יום קירוב פאי"}, emoji: "≈π", notes: {"en": "Casual Pi Day"}, urls: {"en": "https://nationaltoday.com/pi-approximation-day/"}},
-        {type: "D", start: {mon: 7, d: 22}, titles: {"en": "World Fragile X Day"}, notes: {"en": "Fragile X Awareness Day"}, urls: {"en": "https://worldfragilexday.com/"}, first: {era: 1, y: 2000}, emoji: "🧬", inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 7, d: 22}, titles: {"en": "World Fragile X Day"}, notes: {"en": "Fragile X Awareness Day\nNational Fragile X Awareness Day"}, urls: {"en": "https://worldfragilexday.com/"}, first: {era: 1, y: 2000}, emoji: "🧬", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Lion’s Share Day"}, urls: {"en": "https://nationaltoday.com/lions-share-day/"}},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "World Brain Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-brain-day/"}, notes: {"en": "World Federation of Neurology Day"}, emoji: "🧠", inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 7, d: 23}, titles: {"en": "World Sjogren’s Day"}, urls: {"en": "https://sjogrens.org/get-involved/world-sjogrens-day"}, inherits: "*MedAwareness*"},
