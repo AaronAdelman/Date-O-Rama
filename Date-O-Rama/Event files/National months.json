@@ -260,7 +260,7 @@
         {type: "M", start: {mon: 6}, titles: {"en": "Aphasia Awareness Month"}, notes: {"en": "National Aphasia Awareness Month"}, urls: {"en": "https://aphasia.org/stories/june-aphasia-awareness-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 6}, titles: {"en": "Black Lives Matter Month"}, urls: {"en": "https://www.daysoftheyear.com/days/black-lives-matter-month/"}},
         {type: "M", start: {mon: 6}, titles: {"en": "National Camping Month"}, urls: {"en": "https://www.daysoftheyear.com/days/camping-month/"}, first: {era: 1, y: 1970}, emoji: "🏕️"},
-        {type: "M", start: {mon: 6}, titles: {"en": "National Candy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/candy-month/"}, emoji: "🍭🍬🍫"},
+        {type: "M", start: {mon: 6}, titles: {"en": "National Candy Month"}, urls: {"en": "https://alwaysatreat.com/candy-moments/national-candy-month-central/"}, emoji: "🍭🍬🍫"},
         {type: "M", start: {mon: 6}, titles: {"en": "Children’s Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/childrens-awareness-month/"}, first: {era: 1, y: 1997}, emoji: "👦👧", inherits: "*MedAwareness*", notes: {"en": "June for Kids\nUSA for Kids"}},
         {type: "M", start: {mon: 6}, titles: {"en": "National Country Cooking Month"}, urls: {"en": "https://www.daysoftheyear.com/days/country-cooking-month/"}, emoji: "🥘"},
         {type: "M", start: {mon: 6}, titles: {"en": "National Dairy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/dairy-month/"}, notes: {"en": "National Milk Month"}, first: {era: 1, y: 1937}, emoji: "🥛🧀🧈"},

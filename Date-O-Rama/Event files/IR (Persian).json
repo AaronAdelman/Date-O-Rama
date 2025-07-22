@@ -17,6 +17,7 @@
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "Student Day", "fa": "روز دانشجو"}, urls: {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
         {type: "D", start: {mon: 8, d: 13}, titles: {"en": "Pupil Day", "fa": "روز دانش آموز"}, urls: {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
         {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 8}},
+        {type: "D", start: {mon: 8, d: 5}, titles: {"en": "National Saffron Day"}, first: {era: 0, y: 1403}},
     ]
 }
 

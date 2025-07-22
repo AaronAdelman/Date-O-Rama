@@ -201,7 +201,7 @@
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Community Media Day"}, urls: {"en": "https://www.communitymediaday.org/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "International Chefs Day"}, first: {era: 1, y: 2004}, emoji: "👨‍🍳👩‍🍳", urls: {"en": "https://worldchefs.org/internationalchefsday/"}},
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "International Day of the Air Traffic Controller"}, first: {era: 1, y: 1961}, emoji: "✈️", urls: {"en": "https://nationaldaycalendar.com/international-day-of-the-air-traffic-controller-october-20/"}},
-        {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Office Chocolate Day"}, urls: {"en": "https://www.daysoftheyear.com/days/office-chocolate-day/"}, emoji: "🍫"},
+        {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Office Chocolate Day"}, urls: {"en": "https://www.daysoftheyear.com/days/office-chocolate-day/"}, inherits: "*Chocolate*"},
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Suspender’s Day"}, notes: {"en": "Suspenders Day\nSuspenders Appreciation Day"}, first: {era: 1, y: 1996}, notes: {"en": "Yet another fashion-related event.  Move along.  Nothing to see here."}},
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Talent Transformation Day"}, urls: {"en": "https://nationaltoday.com/talent-transformation-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "World Calvados Day"}, urls: {"en": "https://www.checkiday.com/25226a7a605a9b17926a5727dbd5e014/world-calvados-day"}, first: {era: 1, y: 2020}, emoji: "🍷"},
@@ -583,6 +583,7 @@
         {type: "D", start: {mon: 2, d: 2}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
         {type: "D", start: {mon: 2, d: 2}, inherits: "World Wetlands Day", first: {era: 1, y: 1971}},
         {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Lung Leavin’ Day"}, urls: {"en": "https://www.mesothelioma.com/heather/lungleavinday/"}, first: {era: 1, y: 2006}, emoji: "☁️🐤"},
+        {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Chupacabra Appreciation Day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 2, d: 2}, titles: {"en": "World Play Your Ukulele Day"}, urls: {"en": "https://www.daysoftheyear.com/days/play-your-ukulele-day/"}, notes: {"en": "National Ukulele Day\nWorld Ukulele Day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/california-kiwifruit-day/"}, titles: {"en": "California Kiwifruit Day"}, emoji: "🥝"},
         {type: "D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/groundhog-job-shadow-day/"}, titles: {"en": "Groundhog Job Shadow Day"}, first: {era: 1, y: 1996}},
@@ -706,6 +707,7 @@
         {type: "D", start: {mon: 3, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-awesomeness/"}, titles: {"en": "International Day of Awesomeness"}, first: {era: 1, y: 2008}, emoji: "🖋️"},
         {type: "D", start: {mon: 3, d: 11}, titles: {"en": "Debunking Day"}, urls: {"en": "https://www.daysoftheyear.com/days/debunking-day/"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 3, d: 11}, titles: {"en": "World Plumbing Day", "he": "יום השרברבים העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/world-plumbing-day/"}, first: {era: 1, y: 2010}, emoji: "🔧"},
+        {type: "D", start: {mon: 3, d: 12}, titles: {"en": "International Day of Ceramics"}, urls: {"en": "https://www.ceramic-applications.com/march-12-the-new-international-day-of-ceramics/"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "World Day Against Cyber Censorship"}, urls: {"en": "https://nationaltoday.com/world-day-against-cyber-censorship/"}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "World Glaucoma Day"}, urls: {"en": "https://nationaltoday.com/world-glaucoma-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 13, thruD: 19, wkd: [6]}, inherits: "World Sleep Day", first: {era: 1, y: 2008}},
@@ -819,7 +821,6 @@
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Trans Day of Visibility"}, notes: {"en": "International Transgender Day of Visibility\nTDoV"}, urls: {"en": "https://transstudent.org/tdov/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "World Backup Day"}, emoji: "⟲", urls: {"en": "https://www.worldbackupday.com/en", "cn": "https://www.worldbackupday.com/cn", "de": "https://www.worldbackupday.com/de", "es": "https://www.worldbackupday.com/es", "fr": "https://www.worldbackupday.com/fr", "it": "https://www.worldbackupday.com/it", "ja": "https://www.worldbackupday.com/ja", "nl": "https://www.worldbackupday.com/nl", "pl": "https://www.worldbackupday.com/pl", "pt": "https://www.worldbackupday.com/pt"}},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "World Backup Day"}, urls: {"en": "https://www.worldbackupday.com/en", "cn": "https://www.worldbackupday.com/cn", "de": "https://www.worldbackupday.com/de", "es": "https://www.worldbackupday.com/es", "fr": "https://www.worldbackupday.com/fr", "it": "https://www.worldbackupday.com/it", "ja": "https://www.worldbackupday.com/ja", "nl": "https://www.worldbackupday.com/nl", "pl": "https://www.worldbackupday.com/pl", "pt": "https://www.worldbackupday.com/pt"}},
-        {type: "D", start: {mon: 3, d: 4, thruD: 10, wkd: [4]}, titles: {"en": "Discover What Your Name Means Day", "he": "יום גלה מה אומר השם שלך"}, urls: {"en": "https://nationaltoday.com/discover-what-your-name-means-day/"}, first: {era: 1, y: 1997}, notes: {"en": "Learn What Your Name Means Day"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "Courageous Follower Day"}, urls: {"en": "https://nationaltoday.com/courageous-follower-day/"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "HPV Awareness Day"}, urls: {"en": "https://nationaltoday.com/hpv-awareness-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "International GM’s Day"}, urls: {"en": "https://nationaltoday.com/international-gms-day/"}, first: {era: 1, y: 2002}},
@@ -834,9 +835,8 @@
         {type: "D", start: {mon: 3, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/alexander-graham-bell-day/"}, titles: {"en": "Alexander Graham Bell Day"}, emoji: "📞"},
         {type: "D", start: {mon: 3, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/plant-power-day/"}, titles: {"en": "Plant Power Day"}, first: {era: 1, y: 2018}, emoji: "🌱"},
         {type: "D", start: {mon: 3, d: 8}, titles: {"en": "International Women’s Collaboration Brew Day"}, first: {era: 1, y: 2014}, emoji: "👩🍺", urls: {"en": "https://unitebrew.org/"}},
+        {type: "D", start: {mon: 3, d: 2, thruD: 7, wkd: [2]}, titles: {"en": "International Name Day"}, first: {era: 1, y: 2025}, emoji: "📛", urls: {"en": "https://www.internationalnameday.org/"}},
         {type: "D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/joe-franklin-day/"}, titles: {"en": "Joe Franklin Day"}, first: {era: 1, y: 1926}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 3, nth: 1, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/fun-facts-about-names-day/"}, titles: {"en": "Fun Facts About Names Day", "he": "יום העובדות המהנות על השם שלך"}, first: {era: 1, y: 1997}},
-        {type: "D", start: {mon: 3, wkd: [1], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/namesake-day/"}, titles: {"en": "Namesake Day", "he": "יום השמות"}, first: {era: 1, y: 1997}, emoji: "📛"},
         {type: "D", start: {mon: 3, wkd: [1], nth: 2}, titles: {"en": "Check Your Batteries Day"}, urls: {"en": "https://www.daysoftheyear.com/days/check-your-batteries-day/"}, emoji: "🪫"},
         {type: "D", start: {mon: 3, wkd: [2], nth: 1}, titles: {"en": "World Tennis Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-tennis-day/"}, first: {era: 1, y: 2013}, emoji: "🎾"},
         {type: "D", start: {mon: 3, wkd: [2], nth: 2}, inherits: "Commonwealth Day", first: {era: 1, y: 1958}},
@@ -1395,7 +1395,7 @@
         {type: "D", start: {mon: 6, d: 8}, titles: {"en": "International Day of Action for Elephants in Zoos"}, urls: {"en": "https://nationaltoday.com/international-day-of-action-for-elephants-in-zoos/"}, emoji: "🐘", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, d: 8}, titles: {"en": "World Brain Tumor Day"}, urls: {"en": "https://www.braintumour.ca/get-involved/raising-awareness/world-awareness-day/"}, first: {era: 1, y: 2000}, emoji: "🧠", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "Bill & Ted Day"}, urls: {"en": "https://www.billandtedday.com/"}, emoji: "🎸", first: {era: 1, y: 2012}},
-       {type: "D", start: {mon: 6, d: 9}, titles: {"en": "International Dark ’n Stormy® Day"}, urls: {"en": "https://nationaltoday.com/international-dark-n-stormy-day/"}, emoji: "🥃"},
+        {type: "D", start: {mon: 6, d: 9}, titles: {"en": "International Dark ’n Stormy® Day"}, urls: {"en": "https://nationaltoday.com/international-dark-n-stormy-day/"}, emoji: "🥃"},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "International Lemon Drizzle Cake Day"}, urls: {"en": "https://foodiecalendar.co.uk/events/international-lemon-drizzle-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "World Antiphospholipid Antibody Syndrome Day"}, notes: {"en": "APS Day\nWorld APS Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-antiphospholipid-antibody-syndrome-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, titles: {"en": "Abused Women and Children’s Awareness Day"}, urls: {"en": "https://www.checkiday.com/077329a28ab02b095f01d4bbff98dbce/abused-women-and-childrens-awareness-day"}, first: {era: 1, y: 2015}},
@@ -1462,9 +1462,10 @@
         {type: "D", start: {mon: 7, d: 20}, titles: {"en": "Nap Day"}, urls: {"en": "https://www.checkiday.com/ae095c1bc2b09fbb25beb4c17dc480f6/nap-day"}, first: {era: 1, y: 2013}, emoji: "😴"},
         {type: "D", start: {mon: 7, d: 20}, urls: {"en": "https://www.daysoftheyear.com/days/world-jump-day/"}, titles: {"en": "World Jump Day"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 7, d: 21}, titles: {"en": "Invite an Alien to Live with You Day"}, urls: {"en": "https://www.daysoftheyear.com/days/invite-an-alien-to-live-with-you-day/"}, notes: {"en": "This observance celebrates the TV show Mork & Mindy."}, first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/no-pet-store-puppies-day/"}, titles: {"en": "No Pet Store Puppies Day"}, emoji: "🐶"},
-        {type: "D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/take-a-monkey-to-lunch-day/"}, titles: {"en": "Take a Monkey to Lunch Day"}, first: {era: 1, y: 2000}, emoji: "🐒"},
+        {type: "D", start: {mon: 7, d: 21}, titles: {"en": "No Pet Store Puppies Day"}, urls: {"en": "https://nationaltoday.com/no-pet-store-puppies-day/"}, emoji: "🐶"},
+        {type: "D", start: {mon: 7, d: 21}, titles: {"en": "Take a Monkey to Lunch Day"}, urls: {"en": "https://nationaltoday.com/take-a-monkey-to-lunch-day/"}, first: {era: 1, y: 2000}, emoji: "🐒"},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Pi Approximation Day", "he": "יום קירוב פאי"}, emoji: "≈π", notes: {"en": "Casual Pi Day"}, urls: {"en": "https://nationaltoday.com/pi-approximation-day/"}},
+        {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Summer Leisure Day"}, emoji: "🍻🌅", urls: {"en": "https://www.checkiday.com/e11e23795e62252258520e4e4faa4fbc/summer-leisure-day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "World Fragile X Day"}, notes: {"en": "Fragile X Awareness Day\nNational Fragile X Awareness Day"}, urls: {"en": "https://worldfragilexday.com/"}, first: {era: 1, y: 2000}, emoji: "🧬", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Lion’s Share Day"}, urls: {"en": "https://nationaltoday.com/lions-share-day/"}},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "World Brain Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-brain-day/"}, notes: {"en": "World Federation of Neurology Day"}, emoji: "🧠", inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
@@ -1503,7 +1504,7 @@
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "World Zoonoses Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "Virtually Hug a Virtual Assistant Day"}, urls: {"en": "https://www.daysoftheyear.com/days/virtually-hug-a-virtual-assistant-day/"}, notes: {"en": "Virtual Assistant Appreciation Day"}, emoji: "🎧"},
         {type: "D", start: {mon: 7, d: 7}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
-        {type: "D", start: {mon: 7, d: 7}, titles: {"en": "World Chocolate Day", "he": "יום השוקולד העולמי"}, emoji: "🍫", urls: {"en": "https://www.daysoftheyear.com/days/chocolate-day/"}},
+        {type: "D", start: {mon: 7, d: 7}, titles: {"en": "World Chocolate Day", "he": "יום השוקולד העולמי", "ar": "اليوم العالمي للشوكولاتة", "fa": "روز جهانی شکلات", "zh": "世界巧克力日", "zh-yue": "世界朱古力日", "be-tarask": "Сусьветны дзень чакаляды", "ky": "Бүткүл дүйнөлүк шоколад күнү", "ce": "Дерриг дуьненан шоколадан де", "ru": "Всемирный день шоколада", "sr": "Светски дан чоколаде", "tt": "Халыкара шоколад көне", "uk": "Всесвітній день шоколаду", "hu": "A csokoládé világnapja", "ro": "Ziua Mondială a Ciocolatei", "mr": "जागतिक चॉकलेट दिवस", "bn": "বিশ্ব চকলেট দিবস", "or": "ବିଶ୍ୱ ଚକୋଲେଟ ଦିବସ", "te": "ప్రపంచ చాక్లెట్ దినోత్సవం", "hy": "Շոկոլադի համաշխարհային օր"}, inherits: "*Chocolate*", urls: {"en": "https://www.daysoftheyear.com/days/chocolate-day/", "ar": "https://ar.wikipedia.org/wiki/اليوم_العالمي_للشوكولاتة", "fa": "https://fa.wikipedia.org/wiki/روز_جهانی_شکلات", "zh": "https://zh.wikipedia.org/wiki/世界巧克力日", "zh-yue": "https://zh-yue.wikipedia.org/wiki/世界朱古力日", "be-tarask": "https://be-tarask.wikipedia.org/wiki/Сусьветны_дзень_чакаляды", "ky": "https://ky.wikipedia.org/wiki/Бүткүл_дүйнөлүк_шоколад_күнү", "ce": "https://ce.wikipedia.org/wiki/Дерриг_дуьненан_шоколадан_де", "ru": "https://ru.wikipedia.org/wiki/Всемирный_день_шоколада", "sr": "https://sr.wikipedia.org/wiki/Светски_дан_чоколаде", "tt": "https://tt.wikipedia.org/wiki/Халыкара_шоколад_көне", "uk": "https://uk.wikipedia.org/wiki/Всесвітній_день_шоколаду", "hu": "https://hu.wikipedia.org/wiki/A_csokoládé_világnapja", "ro": "https://ro.wikipedia.org/wiki/Ziua_Mondială_a_Ciocolatei", "he": "https://he.wikipedia.org/wiki/יום_השוקולד_העולמי", "mr": "https://mr.wikipedia.org/wiki/जागतिक_चॉकलेट_दिवस", "bn": "https://bn.wikipedia.org/wiki/বিশ্ব_চকলেট_দিবস", "or": "https://or.wikipedia.org/wiki/ବିଶ୍ୱ_ଚକୋଲେଟ_ଦିବସ", "te": "https://te.wikipedia.org/wiki/ప్రపంచ_చాక్లెట్_దినోత్సవం", "hy": "https://hy.wikipedia.org/wiki/Շոկոլադի_համաշխարհային_օր"}, first: {era: 1, y: 2009}, notes: {"en": "Chocolate Day"}},
         {type: "D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/international-peace-love-day/"}, titles: {"en": "International Peace & Love Day"}, first: {era: 1, y: 2008}, emoji: "☮️💟"},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "Tell the Truth Day", "he": "יום אמירת האמת"}, urls: {"en": "https://www.daysoftheyear.com/days/tell-the-truth-day/"}, emoji: "⊨"},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "World Change Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-change-day/"}, emoji: "🌎", first: {era: 1, y: 2017}},
@@ -1649,11 +1650,10 @@
         {type: "D", start: {mon: 9, d: 10}, titles: {"en": "World Top Up Day"}, urls: {"en": "https://blog.mobilerecharge.com/world-top-up-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 9, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/gym-day/"}, titles: {"en": "Gym Day"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 9, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/world-dolphin-day/"}, titles: {"en": "World Dolphin Day", "he": "יום הדולפין העולמי"}, emoji: "🐬", first: {era: 1, y: 2022}},
-        {type: "D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/pet-birth-defect-awareness-day/"}, titles: {"en": "Pet Birth Defect Awareness Day", "he": "יום המודעות למומים מולדים של חיות מחמד"}, first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/positive-thinking-day/", emoji: "💭"}, titles: {"en": "Positive Thinking Day", "he": "יום החשיבה החיובית"}, first: {era: 1, y: 2003}},
-        {type: "D", start: {mon: 9, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/international-chocolate-day/"}, titles: {"en": "International Chocolate Day", "he": "יום השוקולד הבינלאומי"}, emoji: "🍫"},
-        {type: "D", start: {mon: 9, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/roald-dahl-day/"}, titles: {"en": "Roald Dahl Day", "he": "יום רואלד דאל"}, emoji: "🍫🍑", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 9, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/gobstopper-day/"}, titles: {"en": "Gobstopper Day", "he": "יום הגובסטופר"}},
+        {type: "D", start: {mon: 9, d: 13}, titles: {"en": "Pet Birth Defect Awareness Day", "he": "יום המודעות למומים מולדים של חיות מחמד"}, urls: {"en": "https://nationaltoday.com/pet-birth-defect-awareness-day/"}, first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 9, d: 13}, titles: {"en": "Positive Thinking Day", "he": "יום החשיבה החיובית"}, urls: {"en": "https://nationaltoday.com/positive-thinking-day/", emoji: "💭"}, first: {era: 1, y: 2003}},
+        {type: "D", start: {mon: 9, d: 13}, titles: {"en": "Roald Dahl Day", "he": "יום רואלד דאל"}, urls: {"en": "https://www.daysoftheyear.com/days/roald-dahl-day/"}, emoji: "🍫🍑", first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 9, d: 14}, titles: {"en": "Gobstopper Day", "he": "יום הגובסטופר"}, urls: {"en": "https://www.daysoftheyear.com/days/gobstopper-day/"}},
         {type: "D", start: {mon: 9, d: 15}, inherits: "Greenpeace Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Make a Hat Day"}, notes: {"en": "Celebrate your inner milliner, because fashion just isn’t weird enough already."}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "World Afro Day"}, urls: {"en": "https://www.worldafroday.com/"}, first: {era: 1, y: 2017}},
@@ -1925,7 +1925,7 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.daysoftheyear.com/days/sexual-health-week/"}, titles: {"en": "Sexual Health Week"}, first: {era: 1, y: 2000}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
-
+        
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
             {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
@@ -1942,29 +1942,40 @@
         {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [2], durationD: 7}, inherits: "Waste & Recycling Workers Week", first: {era: 1, y: 2026}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 6, d: 17}, inherits: "Global Garbage Man Day", first: {era: 1, y: 2011}},
         ]},
-      
-      {type: "nD", start: {mon: 10, d: 8, durationD: 5}, titles: {"en": "International Cephalopod Awareness Days"}, urls: {"en": "https://laughingsquid.com/international-cephalopod-awareness-days/"}, first: {era: 1, y: 2007}, emoji: "🐙🦑", nonoverlappingSubEvents: [
-          {type: "D", start: {mon: 10, d: 8}, titles: {"en": "World Octopus Day", "he": "יום התמנון העולמי"}, notes: {"en": "Octopus Day", "he": "יום התמנון"}, urls: {"en": "https://www.daysoftheyear.com/days/world-octopus-day/"}, first: {era: 1, y: 2006}, emoji: "🐙"},
-          {type: "D", start: {mon: 10, d: 9}, titles: {"en": "Nautilus Night"}, urls: {"en": "https://www.checkiday.com/d68f7e302383207b9c48a66f0fa8f191/nautilus-night"}, first: {era: 1, y: 2007}},
-          {type: "D", start: {mon: 10, d: 10}, titles: {"en": "Squid and Cuttlefish Day"}, notes: {"en": "Squidturday\nSquittle Day"}, urls: {"en": "https://www.checkiday.com/d3c8609e87ff2dd71e14fad0d4151b30/squid-and-cuttlefish-day"}, first: {era: 1, y: 2007}, emoji: "🦑"},
-          {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Kraken Day"}, notes: {"en": "Myths and Legends Day"}, urls: {"en": "https://www.checkiday.com/41c2a94f9c6d391cafc9c41139979f39/kraken-day"}, first: {era: 1, y: 2007}},
-          {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Fossil Day"}, urls: {"en": "https://laughingsquid.com/international-cephalopod-awareness-days/"}, first: {era: 1, y: 2007}},
-      ]},
-      
-      {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "World COPD Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-copd-day/"}, notes: {"en": "World C.O.P.D. Day"}, emoji: "🫁", first: {era: 1, y: 2002}},
-      
-      {type: "nD", start: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", titles: {"en": "Thank You Days"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
-          {type: "D", start: {mon: 1, d: 11}, inherits: "Thank You Day", notes: {"en": "International Thank-You Day"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}},
-      ]},
-      
-      {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [2], durationD: 7}, titles: {"en": "Global Entrepreneurship Week"}, notes: {"en": "Enterprise Week"}, urls: {"en": "https://www.genglobal.org/gew"}, first: {era: 1, y: 2008}, nonoverlappingSubEvents: [
-          {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "Social Enterprise Day"}, urls: {"en": "https://www.daysoftheyear.com/days/social-enterprise-day/"}, emoji: "🤝"},
-      ]},
-      
-      {type: "nD", start: {mon: 7, d: 7, thruD: 13, wkd: [2], durationD: 8}, titles: {"en": "World Orca Week"}, notes: {"en": "WOW"}, urls: {"en": "https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", first: {era: 1, y: 2014}, nonoverlappingSubEvents: [
-          {type: "D", start: {mon: 7, d: 14}, titles: {"en": "World Orca Day"}, urls: {"en": "https://www.worldorcaday.org/"}, emoji: "🌎"},
-      ]},
- 
+        
+        {type: "nD", start: {mon: 10, d: 8, durationD: 5}, titles: {"en": "International Cephalopod Awareness Days"}, urls: {"en": "https://laughingsquid.com/international-cephalopod-awareness-days/"}, first: {era: 1, y: 2007}, emoji: "🐙🦑", nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 10, d: 8}, titles: {"en": "World Octopus Day", "he": "יום התמנון העולמי"}, notes: {"en": "Octopus Day", "he": "יום התמנון"}, urls: {"en": "https://www.daysoftheyear.com/days/world-octopus-day/"}, first: {era: 1, y: 2006}, emoji: "🐙"},
+            {type: "D", start: {mon: 10, d: 9}, titles: {"en": "Nautilus Night"}, urls: {"en": "https://www.checkiday.com/d68f7e302383207b9c48a66f0fa8f191/nautilus-night"}, first: {era: 1, y: 2007}},
+            {type: "D", start: {mon: 10, d: 10}, titles: {"en": "Squid and Cuttlefish Day"}, notes: {"en": "Squidturday\nSquittle Day"}, urls: {"en": "https://www.checkiday.com/d3c8609e87ff2dd71e14fad0d4151b30/squid-and-cuttlefish-day"}, first: {era: 1, y: 2007}, emoji: "🦑"},
+            {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Kraken Day"}, notes: {"en": "Myths and Legends Day"}, urls: {"en": "https://www.checkiday.com/41c2a94f9c6d391cafc9c41139979f39/kraken-day"}, first: {era: 1, y: 2007}},
+            {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Fossil Day"}, urls: {"en": "https://laughingsquid.com/international-cephalopod-awareness-days/"}, first: {era: 1, y: 2007}},
+        ]},
+        
+        {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "World COPD Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-copd-day/"}, notes: {"en": "World C.O.P.D. Day"}, emoji: "🫁", first: {era: 1, y: 2002}},
+        
+        {type: "nD", start: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", titles: {"en": "Thank You Days"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 1, d: 11}, inherits: "Thank You Day", notes: {"en": "International Thank-You Day"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", first: {era: 1, y: 1994}},
+        ]},
+        
+        {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [2], durationD: 7}, titles: {"en": "Global Entrepreneurship Week"}, notes: {"en": "Enterprise Week"}, urls: {"en": "https://www.genglobal.org/gew"}, first: {era: 1, y: 2008}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "Social Enterprise Day"}, urls: {"en": "https://www.daysoftheyear.com/days/social-enterprise-day/"}, emoji: "🤝"},
+        ]},
+        
+        {type: "nD", start: {mon: 7, d: 7, thruD: 13, wkd: [2], durationD: 8}, titles: {"en": "World Orca Week"}, notes: {"en": "WOW"}, urls: {"en": "https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", first: {era: 1, y: 2014}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 7, d: 14}, titles: {"en": "World Orca Day"}, urls: {"en": "https://www.worldorcaday.org/"}, emoji: "🌎"},
+        ]},
+        
+        
+        {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "Celebrate Your Name Week"}, notes: {"en": "CYNW"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "📛", first: {era: 1, y: 1997}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [1]}, titles: {"en": "Namesake Day", "he": "יום השמות"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "📛"},
+            {type: "D", start: {wkd: [2]}, titles: {"en": "Fun Facts Day", "he": "יום העובדות המהנות"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, notes: {"en": "Fun Facts About Names Day", "he": "יום העובדות המהנות על השם שלך"}},
+            {type: "D", start: {wkd: [3]}, titles: {"en": "The Wide World of Names Day"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "📛"},
+            {type: "D", start: {wkd: [4]}, titles: {"en": "Learn What Your Name Means Day"}, notes: {"en": "Discover What Your Name Means Day", "he": "יום גלה מה אומר השם שלך"}, urls: {"en": "https://www.celebrateyournameweek.org/"}},
+            {type: "D", start: {wkd: [5]}, titles: {"en": "Also Known As/Alias Day"}, urls: {"en": "https://www.celebrateyournameweek.org/"}},
+            {type: "D", start: {wkd: [6]}, titles: {"en": "Middle Name Pride Day", "he": "יום גאוות השם האמצעי"}, notes: {"en": "National Middle Name Pride Day", "he": "יום גאוות השם האמצעי הלאומי"}, urls: {"en": "https://www.celebrateyournameweek.org/"}},
+            {type: "D", start: {wkd: [7]}, titles: {"en": "Genealogy Day", "he": "יום הגנאולוגיה"}, notes: {"en": "National Genealogy Day", "he": "יום הגנאולוגיה הלאומי"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "👨‍👩‍👧‍👦"},
+        ]},
+        
     ],
     templates: [
         {template: "Bonza Bottler Day", type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/bonza-bottler-day/"}, titles: {"en": "Bonza Bottler Day"}, emoji: "🎉"},

@@ -96,7 +96,7 @@
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/an-affair-to-remember-month/"}, titles: {"en": "An Affair to Remember Month"}, first: {era: 1, y: 1996}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/barley-month/"}, titles: {"en": "Barley Month"}, emoji: "𐂏"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/berry-fresh-month/"}, titles: {"en": "Berry Fresh Month"}, emoji: "🍓🫐"},
-        {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/celebration-of-chocolate-month/"}, titles: {"en": "Celebration of Chocolate Month"}, emoji: "🍫"},
+        {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/celebration-of-chocolate-month/"}, titles: {"en": "Celebration of Chocolate Month"}, inherits: "*Chocolate*"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/cholangiocarcinoma-awareness-month/"}, titles: {"en": "Cholangiocarcinoma Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/creative-romance-month/"}, titles: {"en": "Creative Romance Month"}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/declutter-for-a-cause-month/"}, titles: {"en": "Declutter for a Cause Month"}},

@@ -8,6 +8,7 @@
     templates: [
         {template: "*Astrology*", type: "M", start: {}, urls: {"en": "http://skepdic.com/astrology.html"}},
         {template: "*BDay*", type: "D", start: {}, emoji: "🎂"},
+        {template: "*Chocolate*", type: "D", start: {mon: 2, d: 9}, urls: {"en": "https://en.wikipedia.org/wiki/World_Chocolate_Day"}, emoji: "🍫"},
         {template: "*Coronation*", type: "D", start: {}, emoji: "👑"},
         {template: "*DeathAnniv*", type: "D", start: {}, emoji: "🪦"},
         {template: "*MedAwareness*", type: "D", start: {}, emoji: "🎗️"},
@@ -400,6 +401,7 @@
         {template: "National BRA Day", type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "National BRA Day"}, notes: {"en": "BRA Day USA\nBreast Reconstruction Awareness Day USA"}, urls: {"en": "https://nationaltoday.com/national-bra-day/"}},
         {template: "National Broadcasting Day", titles: {"en": "National Broadcasting Day", "id": "Hari Penyiaran Nasional", "he": "יום השידור הלאומי"}, type: "D", start: {mon: 4, d: 1}, emoji: "📺"},
         {template: "National Children’s Day", type: "D", start: {mon: 10, d: 8}, titles: {"en": "National Children’s Day", "id": "Hari Anak Nasional", "he": "יום הילדים הלאומי", "fil": "Pambansang Araw ng mga Bata", "it": "Giornata nazionale dei diritti dell’infanzia e dell’adolescenza", "th": "วันเด็กแห่งชาติ", "tvl": "Aso Tamaliki"}, inherits: "Children’s Day"},
+        {template: "National Chocolate Day", type: "D", start: {mon: 10, d: 28}, titles: {"en": "National Chocolate Day", "he": "יום השוקולד הלאומי"}, inherits: "*Chocolate*"},
         {template: "National Christmas Tree Day", type: "D", start: {mon: 12, d: 8}, titles: {"en": "National Christmas Tree Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2015/12/08/National-Christmas-Tree-Day"}, emoji: "🎄"},
         {template: "National Clean Beauty Day", type: "D", start: {mon: 6, d: 4}, titles: {"en": "National Clean Beauty Day"}},
         {template: "National Coffee Day", type: "D", start: {mon: 9, d: 29}, titles: {"en": "National Coffee Day", "he": "יום הקפה הלאומי"}, emoji: "☕️", urls: {"en": "https://en.wikipedia.org/wiki/International_Coffee_Day"}},
