@@ -172,16 +172,15 @@ struct ASAClocksTab: View {
                 List {
 //                    ASAMainClocksView(now: $now).environmentObject(userData)
                     
-                    ForEach(userData.mainClocks, id: \.self.id) {
+                    ForEach(userData.mainClocks) {
                         locationWithClocks
                         in
                         
-                        let fillColor = Color.init(white: 0.90)
                         let location = locationWithClocks.location
 
                         ZStack {
                             RoundedRectangle(cornerRadius: 8.0)
-                            .fill(fillColor)
+                                .fill(Color.secondary)
                             
                             HStack {
                                 Text(location.flag)
@@ -191,6 +190,7 @@ struct ASAClocksTab: View {
                                 Spacer()
                                 Text(location.abbreviatedTimeZoneString(for: now))
                             } // HStack
+                            .foregroundStyle(Color.primary)
                             .padding()
                         } // ZStack
                     } // ForEach(userData.mainClocks, id: \.self.id)
