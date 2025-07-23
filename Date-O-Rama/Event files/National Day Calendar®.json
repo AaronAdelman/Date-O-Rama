@@ -312,6 +312,8 @@
         {type: "D", start: {mon: 7, d: 2}, inherits: "National Wildland Firefighter Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 21}, titles: {"en": "National Be Someone Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-be-someone-day-july-21"}, first: {era: 1, y: 2021}, emoji: "🤝"},
         {type: "D", start: {mon: 7, d: 23}, titles: {"en": "National Lemon Day"}, emoji: "🍋", urls: {"en": "https://www.nationaldaycalendar.com/july/national-lemon-day-july-23"}, first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 7, d: 24}, titles: {"en": "National Thermal Engineer Day", "he": "יום המהנדס התרמי הלאומי"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/thermal-engineer-day-july-24"}, first: {era: 1, y: 2014}, emoji: "👷‍♂️👷‍♀️"},
+        {type: "D", start: {mon: 7, wkd: [5], nth: 4}, titles: {"en": "National Refreshment Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-refreshment-day-fourth-thursday-in-july"}, first: {era: 1, y: 2015}, emoji: "🍹"},
         {type: "D", start: {mon: 7, d: 27}, titles: {"en": "National Love is Kind Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-love-is-kind-day-july-27"}, first: {era: 1, y: 2017}, emoji: "❤️"},
         {type: "D", start: {mon: 7, d: 29}, titles: {"en": "National Lipstick Day"}, first: {era: 1, y: 2016}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Fried Clam Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-fried-clam-day-july-3"}, first: {era: 1, y: 2015}},
