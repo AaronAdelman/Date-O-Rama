@@ -170,7 +170,30 @@ struct ASAClocksTab: View {
                 .zIndex(1.0) // This line from https://stackoverflow.com/questions/63934037/swiftui-navigationlink-cell-in-a-form-stays-highlighted-after-detail-pop to get rid of unwanted highlighting.
                 
                 List {
-                    ASAMainClocksView(now: $now).environmentObject(userData)
+//                    ASAMainClocksView(now: $now).environmentObject(userData)
+                    
+                    ForEach(userData.mainClocks, id: \.self.id) {
+                        locationWithClocks
+                        in
+                        
+                        let fillColor = Color.init(white: 0.90)
+                        let location = locationWithClocks.location
+
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 8.0)
+                            .fill(fillColor)
+                            
+                            HStack {
+                                Text(location.flag)
+                                Spacer()
+                                Text(location.formattedOneLineAddress)
+                                    .font(.title2)
+                                Spacer()
+                                Text(location.abbreviatedTimeZoneString(for: now))
+                            } // HStack
+                            .padding()
+                        } // ZStack
+                    } // ForEach(userData.mainClocks, id: \.self.id)
                 }
                 .listStyle(GroupedListStyle())
                 .navigationBarHidden(self.isNavigationBarHidden)
