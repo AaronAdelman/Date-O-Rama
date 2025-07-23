@@ -188,6 +188,7 @@
       }
     },
     "ABOUT_TAB" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1034,6 +1035,7 @@
       }
     },
     "CLOCKS_TAB" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1051,6 +1053,7 @@
     },
     "COMPLICATION_CLOCKS_TAB" : {
       "comment" : "\"EVENTS_TAB\"              = \"Events\";",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

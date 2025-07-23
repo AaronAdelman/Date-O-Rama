@@ -898,6 +898,7 @@
 		A5EB851F2869EC7E00C9321A /* EG (Coptic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB851D2869EC7E00C9321A /* EG (Coptic).json */; };
 		A5EB8521286A08A900C9321A /* UZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB8520286A08A800C9321A /* UZ.json */; };
 		A5EB8522286A08AA00C9321A /* UZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB8520286A08A800C9321A /* UZ.json */; };
+		A5ED6E702E3117CA00CC2481 /* ASALocationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */; };
 		A5EE116E26C563F10050495C /* ASAEventSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */; };
 		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
@@ -1671,6 +1672,7 @@
 		A5EB851A2869E9F700C9321A /* SY (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SY (Julian).json"; sourceTree = "<group>"; };
 		A5EB851D2869EC7E00C9321A /* EG (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "EG (Coptic).json"; sourceTree = "<group>"; };
 		A5EB8520286A08A800C9321A /* UZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UZ.json; sourceTree = "<group>"; };
+		A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationTab.swift; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EE19E42804A92600B0B9C2 /* GB.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GB.json; sourceTree = "<group>"; };
 		A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sikhism (supplemental).json"; sourceTree = "<group>"; };
@@ -2544,6 +2546,7 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */,
 				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
@@ -3704,6 +3707,7 @@
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5EB60EE2892ECFB006009AF /* ASAPicker.swift in Sources */,
+				A5ED6E702E3117CA00CC2481 /* ASALocationTab.swift in Sources */,
 				A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,

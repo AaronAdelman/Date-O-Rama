@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ASAMainClocksView: View {
     @EnvironmentObject var userData:  ASAModel
-//    @Binding var mainClocks:  Array<ASALocationWithClocks>
     @Binding var now:  Date
     
     var body: some View {

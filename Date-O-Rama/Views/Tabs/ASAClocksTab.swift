@@ -12,8 +12,8 @@ import CoreLocation
 
 struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAModel
-    @State var now = Date()
-    @State var usingRealTime = true
+    @Binding var now: Date
+    @Binding var usingRealTime: Bool
     
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
 
