@@ -28,13 +28,11 @@ struct ASADateORamaApp: App {
                         .tabItem { symbol }
                         .tag(index)
                 }
-                
+
                 ASALocationsTab(now: $now, usingRealTime: $usingRealTime, selectedTabIndex: $userData.selectedTabIndex)
                     .environmentObject(userData)
-                    .tabItem {
-                        Image(systemName: "list.bullet")
-                    }
-                    .tag(userData.mainClocks.count) // Locations tab is always last
+                    .tabItem { Image(systemName: "list.bullet") }
+                    .tag(userData.mainClocks.count)
 
                 if appDelegate.session.isPaired {
                     ASAComplicationClocksTab().environmentObject(userData)
@@ -46,6 +44,7 @@ struct ASADateORamaApp: App {
                     .tabItem { Image(systemName: "info.circle.fill") }
                     .tag(userData.mainClocks.count + 2)
             } // TabView
+            .id(userData.mainClocksVersion) // 🔁 Trigger refresh when reordering
         } // WindowGroup
     } // body
 }

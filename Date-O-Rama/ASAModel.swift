@@ -507,6 +507,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
     } // func presentedItemDidChange()
     
     @Published var selectedTabIndex: Int = 0
+    @Published var mainClocksVersion: Int = 0
 } // class ASAModel
 
 

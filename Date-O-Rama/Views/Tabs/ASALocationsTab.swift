@@ -218,6 +218,7 @@ struct ASALocationsTab: View {
     private func moveClock(from source: IndexSet, to destination: Int) {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)
         userData.savePreferences(code: .clocks)
+        userData.mainClocksVersion += 1 // 🔄 Force update
     }
 } // struct ASALocationsTab
 
