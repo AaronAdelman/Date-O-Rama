@@ -505,6 +505,8 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         //        debugPrint(#file, #function)
         self.loadPreferences()
     } // func presentedItemDidChange()
+    
+    @Published var selectedTabIndex: Int = 0
 } // class ASAModel
 
 

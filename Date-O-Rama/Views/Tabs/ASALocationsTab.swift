@@ -11,9 +11,10 @@ import Combine
 import CoreLocation
 
 struct ASALocationsTab: View {
-    @EnvironmentObject var userData:  ASAModel
+    @EnvironmentObject var userData: ASAModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
+    @Binding var selectedTabIndex: Int
     
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
 
@@ -172,24 +173,29 @@ struct ASALocationsTab: View {
                 List {
 //                    ASAMainClocksView(now: $now).environmentObject(userData)
                     
-                    ForEach(userData.mainClocks) { locationWithClocks in
+                    ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
                         let location = locationWithClocks.location
                         
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 8.0)
-                                .fill(Color.secondary)
-                            
-                            HStack {
-                                Text(location.flag)
-                                Spacer()
-                                Text(location.formattedOneLineAddress)
-                                    .font(.title2)
-                                Spacer()
-                                Text(location.abbreviatedTimeZoneString(for: now))
+                        Button(action: {
+                            selectedTabIndex = index
+                        }) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 8.0)
+                                    .fill(Color.secondary)
+                                
+                                HStack {
+                                    Text(location.flag)
+                                    Spacer()
+                                    Text(location.formattedOneLineAddress)
+                                        .font(.title2)
+                                    Spacer()
+                                    Text(location.abbreviatedTimeZoneString(for: now))
+                                }
+                                .foregroundStyle(Color.primary)
+                                .padding()
                             }
-                            .foregroundStyle(Color.primary)
-                            .padding()
                         }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     .onMove(perform: moveClock)
                 }
@@ -213,12 +219,10 @@ struct ASALocationsTab: View {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)
         userData.savePreferences(code: .clocks)
     }
-} // struct ASAClocksTab
+} // struct ASALocationsTab
 
 
 // MARK:  -
-
-
 
 
 //struct ASAClocksView_Previews: PreviewProvider {
