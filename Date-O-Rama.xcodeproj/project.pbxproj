@@ -581,7 +581,7 @@
 		A5C7793D26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C7793E26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
-		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
+		A5C77C012433361400CFEE47 /* ASALocationsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASALocationsTab.swift */; };
 		A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
 		A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C052433361900CFEE47 /* Preview Assets.xcassets */; };
 		A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */; };
@@ -1502,7 +1502,7 @@
 		A5C7793C26B8382600DD6009 /* UN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UN.json; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5C77C002433361400CFEE47 /* ASAClocksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksTab.swift; sourceTree = "<group>"; };
+		A5C77C002433361400CFEE47 /* ASALocationsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationsTab.swift; sourceTree = "<group>"; };
 		A5C77C022433361900CFEE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C77C052433361900CFEE47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5C77C082433361900CFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -2323,8 +2323,8 @@
 			isa = PBXGroup;
 			children = (
 				A5629CD825B8646200C6D062 /* ASAAboutTab.swift */,
-				A5C77C002433361400CFEE47 /* ASAClocksTab.swift */,
 				A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */,
+				A5C77C002433361400CFEE47 /* ASALocationsTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -2546,7 +2546,6 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */,
 				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
@@ -2559,6 +2558,7 @@
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
+				A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */,
 				A507794128915A0700A98D01 /* ASALocationTypeCell.swift */,
 				A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */,
 				A53D608E2888805D0094B3F7 /* ASAMainClocksViewSectionHeader.swift */,
@@ -3820,7 +3820,7 @@
 				A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */,
 				A5D135BD27C537C500A1A525 /* ASACalendarWithQuarters.swift in Sources */,
 				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
-				A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */,
+				A5C77C012433361400CFEE47 /* ASALocationsTab.swift in Sources */,
 				A577066D2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */,
 				A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5EB60EB2892E4EC006009AF /* ASALocation.swift in Sources */,

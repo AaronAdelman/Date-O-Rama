@@ -1,5 +1,5 @@
 //
-//  ASAClocksTab.swift
+//  ASALocationsTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import CoreLocation
 
-struct ASAClocksTab: View {
+struct ASALocationsTab: View {
     @EnvironmentObject var userData:  ASAModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
@@ -172,12 +172,9 @@ struct ASAClocksTab: View {
                 List {
 //                    ASAMainClocksView(now: $now).environmentObject(userData)
                     
-                    ForEach(userData.mainClocks) {
-                        locationWithClocks
-                        in
-                        
+                    ForEach(userData.mainClocks) { locationWithClocks in
                         let location = locationWithClocks.location
-
+                        
                         ZStack {
                             RoundedRectangle(cornerRadius: 8.0)
                                 .fill(Color.secondary)
@@ -189,11 +186,12 @@ struct ASAClocksTab: View {
                                     .font(.title2)
                                 Spacer()
                                 Text(location.abbreviatedTimeZoneString(for: now))
-                            } // HStack
+                            }
                             .foregroundStyle(Color.primary)
                             .padding()
-                        } // ZStack
-                    } // ForEach(userData.mainClocks, id: \.self.id)
+                        }
+                    }
+                    .onMove(perform: moveClock)
                 }
                 .listStyle(GroupedListStyle())
                 .navigationBarHidden(self.isNavigationBarHidden)
@@ -210,6 +208,11 @@ struct ASAClocksTab: View {
             }
         }
     } // var body
+    
+    private func moveClock(from source: IndexSet, to destination: Int) {
+        userData.mainClocks.move(fromOffsets: source, toOffset: destination)
+        userData.savePreferences(code: .clocks)
+    }
 } // struct ASAClocksTab
 
 

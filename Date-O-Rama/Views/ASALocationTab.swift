@@ -116,7 +116,7 @@ struct ASALocationTab: View {
             }
         }
     } // var body
-} // struct ASAClocksTab
+} // struct ASALocationsTab
 
 
 // MARK:  -
@@ -126,6 +126,6 @@ struct ASALocationTab: View {
 
 //struct ASAClocksView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAClocksTab().environmentObject(ASAModel.shared)
+//        ASALocationsTab().environmentObject(ASAModel.shared)
 //    }
 //}

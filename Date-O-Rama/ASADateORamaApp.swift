@@ -31,7 +31,7 @@ struct ASADateORamaApp: App {
                         }
                 } // ForEach($userData.mainClocks)
                 
-                ASAClocksTab(now: $now, usingRealTime: $usingRealTime).environmentObject(userData)
+                ASALocationsTab(now: $now, usingRealTime: $usingRealTime).environmentObject(userData)
                     .tabItem {
 //                        Image(systemName: "globe")
 //                        Text("CLOCKS_TAB")
