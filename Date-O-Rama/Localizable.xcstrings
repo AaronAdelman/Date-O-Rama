@@ -3383,6 +3383,7 @@
       }
     },
     "Move down" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -3393,6 +3394,7 @@
       }
     },
     "Move to bottom" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -3403,6 +3405,7 @@
       }
     },
     "Move to top" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -3413,6 +3416,7 @@
       }
     },
     "Move up" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {

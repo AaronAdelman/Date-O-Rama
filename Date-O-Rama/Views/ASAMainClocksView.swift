@@ -103,68 +103,68 @@ struct ASAMainClocksSectionView: View {
                 }
 #endif
                 
-                if userData.mainClocks.count > 1 {
-                    Divider()
-                    
-                    Button(action: {
-                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-                        guard index != nil else { return }
-                        let item = userData.mainClocks.remove(at: index!)
-                        userData.mainClocks.insert(item, at: 0)
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Label {
-                            Text("Move to top")
-                        } icon: {
-                            Image(systemName: "arrow.up.to.line")
-                        }
-                    })
-                    
-                    Button(action: {
-                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-                        guard index != nil else { return }
-                        guard index! != 0 else { return }
-                        let item = userData.mainClocks.remove(at: index!)
-                        userData.mainClocks.insert(item, at: index! - 1)
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Label {
-                            Text("Move up")
-                        } icon: {
-                            Image(systemName: "arrow.up")
-                        }
-                    })
-                    
-                    Button(action: {
-                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-                        guard index != nil else { return }
-                        guard index! != userData.mainClocks.count - 1 else { return }
-                        let item = userData.mainClocks.remove(at: index!)
-                        userData.mainClocks.insert(item, at: index! + 1)
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Label {
-                            Text("Move down")
-                        } icon: {
-                            Image(systemName: "arrow.down")
-                        }
-                    })
-                    
-                    Button(action: {
-                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-                        guard index != nil else { return }
-                        let item = userData.mainClocks.remove(at: index!)
-                        userData.mainClocks.append(item)
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Label {
-                            Text("Move to bottom")
-                        } icon: {
-                            Image(systemName: "arrow.down.to.line")
-                        }
-                    })
-                    
-                }
+//                if userData.mainClocks.count > 1 {
+//                    Divider()
+//                    
+//                    Button(action: {
+//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
+//                        guard index != nil else { return }
+//                        let item = userData.mainClocks.remove(at: index!)
+//                        userData.mainClocks.insert(item, at: 0)
+//                        userData.savePreferences(code: .clocks)
+//                    }, label: {
+//                        Label {
+//                            Text("Move to top")
+//                        } icon: {
+//                            Image(systemName: "arrow.up.to.line")
+//                        }
+//                    })
+//                    
+//                    Button(action: {
+//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
+//                        guard index != nil else { return }
+//                        guard index! != 0 else { return }
+//                        let item = userData.mainClocks.remove(at: index!)
+//                        userData.mainClocks.insert(item, at: index! - 1)
+//                        userData.savePreferences(code: .clocks)
+//                    }, label: {
+//                        Label {
+//                            Text("Move up")
+//                        } icon: {
+//                            Image(systemName: "arrow.up")
+//                        }
+//                    })
+//                    
+//                    Button(action: {
+//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
+//                        guard index != nil else { return }
+//                        guard index! != userData.mainClocks.count - 1 else { return }
+//                        let item = userData.mainClocks.remove(at: index!)
+//                        userData.mainClocks.insert(item, at: index! + 1)
+//                        userData.savePreferences(code: .clocks)
+//                    }, label: {
+//                        Label {
+//                            Text("Move down")
+//                        } icon: {
+//                            Image(systemName: "arrow.down")
+//                        }
+//                    })
+//                    
+//                    Button(action: {
+//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
+//                        guard index != nil else { return }
+//                        let item = userData.mainClocks.remove(at: index!)
+//                        userData.mainClocks.append(item)
+//                        userData.savePreferences(code: .clocks)
+//                    }, label: {
+//                        Label {
+//                            Text("Move to bottom")
+//                        } icon: {
+//                            Image(systemName: "arrow.down.to.line")
+//                        }
+//                    })
+//                    
+//                }
                 
                 if locationWithClocks.clocks.count > 1 {
                     Divider()
