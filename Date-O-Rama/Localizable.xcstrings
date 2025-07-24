@@ -938,6 +938,12 @@
     "Cancel" : {
       "comment" : "\"Add internal event calendar\" = \"Add internal event calendar\";",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1139,6 +1145,22 @@
         }
       }
     },
+    "Delete" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחק"
+          }
+        }
+      }
+    },
     "Delete location" : {
       "localizations" : {
         "en" : {
@@ -1151,6 +1173,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "מחק מיקום…"
+          }
+        }
+      }
+    },
+    "Delete Location?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Location?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחק מיקום?"
           }
         }
       }
@@ -2257,6 +2295,9 @@
           }
         }
       }
+    },
+    "Go to Tab" : {
+
     },
     "gre" : {
       "extractionState" : "migrated",

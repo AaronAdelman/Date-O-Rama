@@ -15,7 +15,7 @@ struct ASALocationsTab: View {
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
-    
+    @State private var locationToDelete: ASALocationWithClocks? = nil
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
 
        let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
@@ -175,14 +175,14 @@ struct ASALocationsTab: View {
                     
                     ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
                         let location = locationWithClocks.location
-                        
+
                         Button(action: {
                             selectedTabIndex = index
                         }) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 8.0)
                                     .fill(Color(white: 0.85))
-                                
+
                                 HStack {
                                     Text(location.flag)
                                     Spacer()
@@ -193,9 +193,41 @@ struct ASALocationsTab: View {
                                 }
                                 .foregroundStyle(Color.black)
                                 .padding()
+                            } // ZStack
+                            .confirmationDialog("Delete Location?",
+                                isPresented: Binding<Bool>(
+                                    get: { locationToDelete != nil },
+                                    set: { if !$0 { locationToDelete = nil } }
+                                ),
+                                titleVisibility: .visible
+                            ) {
+                                Button("Delete", role: .destructive) {
+                                    if let doomed = locationToDelete,
+                                       let index = userData.mainClocks.firstIndex(where: { $0.id == doomed.id }) {
+                                        userData.mainClocks.remove(at: index)
+                                        userData.savePreferences(code: .clocks)
+                                    }
+                                    locationToDelete = nil
+                                }
+
+                                Button("Cancel", role: .cancel) {
+                                    locationToDelete = nil
+                                }
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
+                        .contextMenu {
+                            Button("Go to Tab") {
+                                selectedTabIndex = index
+                            }
+
+                            Button(role: .destructive) {
+                                locationToDelete = locationWithClocks
+                            } label: {
+                                Text("Delete")
+                                Image(systemName: "trash")
+                            }
+                        }
                     }
                     .onMove(perform: moveClock)
                 }
