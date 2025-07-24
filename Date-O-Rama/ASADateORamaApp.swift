@@ -21,7 +21,7 @@ struct ASADateORamaApp: App {
             TabView(selection: $userData.selectedTabIndex) {
                 ForEach(Array(zip(userData.mainClocks.indices, $userData.mainClocks)), id: \.1.id) { index, locationWithClocks in
                     let usesDeviceLocation = locationWithClocks.usesDeviceLocation.wrappedValue
-                    let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "mappin")
+                    let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
                     
                     ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: locationWithClocks)
                         .environmentObject(userData)
@@ -44,6 +44,8 @@ struct ASADateORamaApp: App {
                     .tabItem { Image(systemName: "info.circle.fill") }
                     .tag(userData.mainClocks.count + 2)
             } // TabView
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
             .id(userData.mainClocksVersion) // 🔁 Trigger refresh when reordering
         } // WindowGroup
     } // body
