@@ -181,7 +181,7 @@ struct ASALocationsTab: View {
                         }) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 8.0)
-                                    .fill(Color.secondary)
+                                    .fill(Color(white: 0.85))
                                 
                                 HStack {
                                     Text(location.flag)
@@ -191,7 +191,7 @@ struct ASALocationsTab: View {
                                     Spacer()
                                     Text(location.abbreviatedTimeZoneString(for: now))
                                 }
-                                .foregroundStyle(Color.primary)
+                                .foregroundStyle(Color.black)
                                 .padding()
                             }
                         }
