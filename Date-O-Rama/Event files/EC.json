@@ -38,5 +38,6 @@
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 7, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
     ]
 }

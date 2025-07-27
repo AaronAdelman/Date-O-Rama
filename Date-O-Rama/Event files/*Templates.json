@@ -509,6 +509,7 @@
         {template: "Orthodox Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-holy-saturday/"}},
         {template: "Orthodox New Year’s Day", type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://www.daysoftheyear.com/days/old-new-years-day/"}, notes: {"en": "Old New Year’s Day\nOrthodox New Year\nJulian New Year"}},
         {template: "Ostara", titles: {"en": "Ostara", "he": "אוסטרה"}, type: "D", start: {equinoxOrSolstice: "Mar"}},
+        {template: "Pachamama Day", type: "D", start: {mon: 8, d: 1}, titles: {"en": "Pachamama Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pachamama-day/"}},
         {template: "Paczki Day", type: "D", start: {Easter:  "Easter", offsetD: -52}, titles: {"en": "Paczki Day"}, notes: {"en": "Pączki Day"}, urls: {"en": "https://nationaltoday.com/paczki-day/"}},
         {template: "Palm Sunday", titles: {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas", "is": "Pálmasunnudagur", "mt": "Ħadd il-Palm"}, type: "D", start: {Easter:  "Easter", offsetD: -7}, urls: {"en": "https://nationaltoday.com/palm-sunday/"}},
         {template: "Pan American Day", type: "D", start: {mon: 4, d: 14}, titles: {"en": "Pan American Day", "es": "Día de la Americas"}, notes: {"en": "Pan-American Day\nNational Pan American Day\nAmericas Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pan-american-day/"}, emoji: "🌎"},

@@ -33,5 +33,6 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Day of Victory Over Fascism", urls: {"en": "https://www.officeholidays.com/holidays/georgia/victory-day"}, first: {era: 1, y: 1965}},
         
         {type: "D", start: {mon: 5, d: 17}, titles: {"en": "Day of Family Purity"}, first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/day-of-family-purity"}},
+        {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "Tushetoba"}, first: {era: 1, y: 1990}, urls: {"en": "https://www.daysoftheyear.com/days/tushetoba/"}},
     ]
 }
