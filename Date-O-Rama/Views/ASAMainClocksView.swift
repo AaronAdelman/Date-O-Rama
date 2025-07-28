@@ -8,20 +8,6 @@
 
 import SwiftUI
 
-//struct ASAMainClocksView: View {
-//    @EnvironmentObject var userData:  ASAModel
-//    @Binding var now:  Date
-//    
-//    var body: some View {
-//        ForEach($userData.mainClocks, id: \.self.id) {
-//            section
-//            in
-//            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
-//                .environmentObject(userData)
-//        }
-//    }
-//} // struct ASAMainClocksView
-
 struct ASAMainClocksSectionView: View {
     enum Detail {
         case none
@@ -90,81 +76,6 @@ struct ASAMainClocksSectionView: View {
                         Text("Add clock")
                     } // HStack
                 }
-                
-//#if os(watchOS)
-//#else
-//                // Based on https://developer.apple.com/forums/thread/662860
-//                Button(action: {
-//                    editMode?.wrappedValue = editMode?.wrappedValue == .active ? .inactive : .active
-//                }) {
-//                    let editingNow: Bool = editMode?.wrappedValue == .active
-//                    Image(systemName: editingNow ? "xmark" : "arrow.triangle.swap")
-//                    Text(editingNow ? "Done Reordering" : "Reorder")
-//                }
-//#endif
-                
-//                if userData.mainClocks.count > 1 {
-//                    Divider()
-//                    
-//                    Button(action: {
-//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-//                        guard index != nil else { return }
-//                        let item = userData.mainClocks.remove(at: index!)
-//                        userData.mainClocks.insert(item, at: 0)
-//                        userData.savePreferences(code: .clocks)
-//                    }, label: {
-//                        Label {
-//                            Text("Move to top")
-//                        } icon: {
-//                            Image(systemName: "arrow.up.to.line")
-//                        }
-//                    })
-//                    
-//                    Button(action: {
-//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-//                        guard index != nil else { return }
-//                        guard index! != 0 else { return }
-//                        let item = userData.mainClocks.remove(at: index!)
-//                        userData.mainClocks.insert(item, at: index! - 1)
-//                        userData.savePreferences(code: .clocks)
-//                    }, label: {
-//                        Label {
-//                            Text("Move up")
-//                        } icon: {
-//                            Image(systemName: "arrow.up")
-//                        }
-//                    })
-//                    
-//                    Button(action: {
-//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-//                        guard index != nil else { return }
-//                        guard index! != userData.mainClocks.count - 1 else { return }
-//                        let item = userData.mainClocks.remove(at: index!)
-//                        userData.mainClocks.insert(item, at: index! + 1)
-//                        userData.savePreferences(code: .clocks)
-//                    }, label: {
-//                        Label {
-//                            Text("Move down")
-//                        } icon: {
-//                            Image(systemName: "arrow.down")
-//                        }
-//                    })
-//                    
-//                    Button(action: {
-//                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
-//                        guard index != nil else { return }
-//                        let item = userData.mainClocks.remove(at: index!)
-//                        userData.mainClocks.append(item)
-//                        userData.savePreferences(code: .clocks)
-//                    }, label: {
-//                        Label {
-//                            Text("Move to bottom")
-//                        } icon: {
-//                            Image(systemName: "arrow.down.to.line")
-//                        }
-//                    })
-//                    
-//                }
                 
                 if locationWithClocks.clocks.count > 1 {
                     Divider()
