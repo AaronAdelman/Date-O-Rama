@@ -626,6 +626,7 @@
 		A5D3D7E527FA20CC0099718A /* AU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E327FA20CC0099718A /* AU.json */; };
 		A5D3D7E727FA2C7E0099718A /* CA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E627FA2C7E0099718A /* CA.json */; };
 		A5D3D7E827FA2C7E0099718A /* CA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E627FA2C7E0099718A /* CA.json */; };
+		A5D546C52E37EF7E00205F14 /* ASALocationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */; };
 		A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
 		A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASADateFormat.swift */; };
 		A5D85096280C8A1A005247BD /* LK.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D85095280C8A1A005247BD /* LK.json */; };
@@ -1539,6 +1540,7 @@
 		A5D3D7E027FA18460099718A /* IN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IN.json; sourceTree = "<group>"; };
 		A5D3D7E327FA20CC0099718A /* AU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AU.json; sourceTree = "<group>"; };
 		A5D3D7E627FA2C7E0099718A /* CA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CA.json; sourceTree = "<group>"; };
+		A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationMenu.swift; sourceTree = "<group>"; };
 		A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatChooserView.swift; sourceTree = "<group>"; };
 		A5D62861243B80F100F3CC19 /* ASADateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormat.swift; sourceTree = "<group>"; };
 		A5D85095280C8A1A005247BD /* LK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LK.json; sourceTree = "<group>"; };
@@ -2328,6 +2330,7 @@
 				A5629CD825B8646200C6D062 /* ASAAboutTab.swift */,
 				A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */,
 				A5C77C002433361400CFEE47 /* ASALocationsTab.swift */,
+				A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -2561,7 +2564,7 @@
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
-				A5ED6E6E2E3117C100CC2481 /* ASALocationTab.swift */,
+				A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */,
 				A507794128915A0700A98D01 /* ASALocationTypeCell.swift */,
 				A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */,
 				A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */,
@@ -3753,6 +3756,7 @@
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
 				A52BAE792CA59B610006A178 /* ASAWeekday.swift in Sources */,
+				A5D546C52E37EF7E00205F14 /* ASALocationMenu.swift in Sources */,
 				A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */,
 				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */,

@@ -16,26 +16,30 @@ struct ASALocationsTab: View {
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
     @State private var locationToDelete: ASALocationWithClocks? = nil
+    
+    @State private var showingGetInfoView = false
+    @State private var showingActionSheet = false
+    
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
-
-       let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
-           ("gre", .gregorian),
-           ("tha", .buddhist),
-           ("chi", .chinese),
-           ("cop", .coptic),
-           ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
-           ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
-           ("Hebrew", .hebrew),
-           ("ind", .indian),
-           ("Islamic", .islamic),
-           ("IslamicCivil", .islamicCivil),
-           ("IslamicTabular", .islamicTabular),
-           ("IslamicUmmAlQura", .islamicUmmAlQura),
-           ("kok", .japanese),
-           ("his", .persian),
-           ("min", .republicOfChina)
-       ]
-            
+    
+    let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
+        ("gre", .gregorian),
+        ("tha", .buddhist),
+        ("chi", .chinese),
+        ("cop", .coptic),
+        ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
+        ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
+        ("Hebrew", .hebrew),
+        ("ind", .indian),
+        ("Islamic", .islamic),
+        ("IslamicCivil", .islamicCivil),
+        ("IslamicTabular", .islamicTabular),
+        ("IslamicUmmAlQura", .islamicUmmAlQura),
+        ("kok", .japanese),
+        ("his", .persian),
+        ("min", .republicOfChina)
+    ]
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State var isNavigationBarHidden: Bool = true
@@ -120,7 +124,7 @@ struct ASALocationsTab: View {
                     
                     Spacer()
                         .frame(minWidth: 0.0)
-
+                    
                     
                     Button(action: {
                         self.usingRealTime = true
@@ -176,50 +180,12 @@ struct ASALocationsTab: View {
                         Button(action: {
                             selectedTabIndex = index
                         }) {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 8.0)
-                                    .fill(Color(white: 0.85))
-
-                                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
-                                .padding()
-                            } // ZStack
-                            .confirmationDialog("Delete Location?",
-                                isPresented: Binding<Bool>(
-                                    get: { locationToDelete != nil },
-                                    set: { if !$0 { locationToDelete = nil } }
-                                ),
-                                titleVisibility: .visible
-                            ) {
-                                Button("Delete", role: .destructive) {
-                                    if let doomed = locationToDelete,
-                                       let index = userData.mainClocks.firstIndex(where: { $0.id == doomed.id }) {
-                                        userData.mainClocks.remove(at: index)
-                                        userData.savePreferences(code: .clocks)
-                                    }
-                                    locationToDelete = nil
-                                }
-
-                                Button("Cancel", role: .cancel) {
-                                    locationToDelete = nil
-                                }
-                            }
+                            ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                                .environmentObject(userData)
                         }
-                        .buttonStyle(PlainButtonStyle())
-                        .contextMenu {
-                            Button("Go to Tab") {
-                                selectedTabIndex = index
-                            }
-
-                            Button(role: .destructive) {
-                                locationToDelete = locationWithClocks
-                            } label: {
-                                Text("Delete")
-                                Image(systemName: "trash")
-                            }
-                        }
-                    }
+                    } // ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id)
                     .onMove(perform: moveClock)
-                }
+                } // List
                 .listStyle(GroupedListStyle())
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
@@ -229,11 +195,11 @@ struct ASALocationsTab: View {
                 }
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
-        .onReceive(timer) { input in
-            if usingRealTime {
-                self.now = Date()
+            .onReceive(timer) { input in
+                if usingRealTime {
+                    self.now = Date()
+                }
             }
-        }
     } // var body
     
     private func moveClock(from source: IndexSet, to destination: Int) {
@@ -242,6 +208,57 @@ struct ASALocationsTab: View {
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
 } // struct ASALocationsTab
+
+
+struct ASALocationWithClocksCell: View {
+    @EnvironmentObject var userData: ASAModel
+    @ObservedObject var locationWithClocks: ASALocationWithClocks
+    @Binding var now: Date
+    @State private var showingGetInfoView = false
+    @State private var showingActionSheet = false
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 8.0)
+                .fill(Color(white: 0.85))
+            
+            HStack {
+                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
+                
+                Spacer()
+                ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
+                    self.showingActionSheet = true
+                } infoAction: {
+                    self.showingGetInfoView = true
+                } newClockAction: {debugPrint("Foo!")}
+                    .environmentObject(userData)
+                    .sheet(isPresented: self.$showingGetInfoView) {
+                        VStack {
+                            HStack {
+                                Button(action: {
+                                    showingGetInfoView = false
+                                }) {
+                                    ASACloseBoxImage()
+                                }
+                                Spacer()
+                            } // HStack
+                            ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+                        }
+                        .font(.body)
+                    }
+                    .actionSheet(isPresented: self.$showingActionSheet) {
+                        ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
+                            .destructive(Text("Delete this location")) {
+                                userData.removeLocationWithClocks(locationWithClocks)
+                            },
+                            .default(Text("Cancel")) {  }
+                        ])
+                    }
+            } // HStack
+            .padding()
+        } // ZStack
+    }
+}
 
 
 // MARK:  -

@@ -1146,6 +1146,7 @@
       }
     },
     "Delete" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1178,6 +1179,7 @@
       }
     },
     "Delete Location?" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2296,9 +2298,6 @@
           }
         }
       }
-    },
-    "Go to Tab" : {
-
     },
     "gre" : {
       "extractionState" : "migrated",

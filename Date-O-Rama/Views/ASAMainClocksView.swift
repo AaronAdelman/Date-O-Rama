@@ -38,67 +38,17 @@ struct ASAMainClocksSectionView: View {
 #if os(watchOS)
 #else
             Spacer()
-            Menu {
-                Button(
-                    action: {
-                        self.detail = .locationInfo
-                        self.showingDetailView = true
-                    }
-                ) {
-                    ASAGetInfoLabel()
-                }
-                
-                Button(
-                    action: {
-                        self.showingActionSheet = true
-                    }
-                ) {
-                    Label {
-                        Text("Delete location")
-                    } icon: {
-                        Image(systemName: "minus.circle.fill")
-                            .symbolRenderingMode(.multicolor)
-                    }
-                }
-                
-                Divider()
-                
-                Button(
-                    action: {
-                        self.detail = .newClock
-                        self.showingDetailView = true
-                        
-                    }
-                ) {
-                    HStack {
-                        Image(systemName: "plus.circle.fill")
-                            .symbolRenderingMode(.multicolor)
-                        Text("Add clock")
-                    } // HStack
-                }
-                
-                if locationWithClocks.clocks.count > 1 {
-                    Divider()
-                    
-                    Button(action: {
-                        locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Image(systemName: "arrow.down")
-                        Text("Sort by calendar name ascending")
-                    })
-                    
-                    Button(action: {
-                        locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
-                        userData.savePreferences(code: .clocks)
-                    }, label: {
-                        Image(systemName: "arrow.up")
-                        Text("Sort by calendar name descending")
-                    })
-                }
-            } label: {
-                ASALocationMenuSymbol()
+            
+            ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: true) {
+                self.showingActionSheet = true
+            } infoAction: {
+                self.detail = .locationInfo
+                self.showingDetailView = true
+            } newClockAction: {
+                self.detail = .newClock
+                self.showingDetailView = true
             }
+            .environmentObject(userData)
             .sheet(isPresented: self.$showingDetailView, onDismiss: {
                 detail = .none
             }) {
@@ -120,7 +70,7 @@ struct ASAMainClocksSectionView: View {
                             }
                             Spacer()
                         } // HStack
-                        ASALocationDetailView(locationWithClocks: $locationWithClocks, now: now)
+                        ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
                     }
                     .font(.body)
                 } // switch detail

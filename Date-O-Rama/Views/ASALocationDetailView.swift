@@ -10,7 +10,7 @@ import SwiftUI
 import MapKit
 
 struct ASALocationDetailView: View {
-    @Binding var locationWithClocks:  ASALocationWithClocks
+    @ObservedObject var locationWithClocks:  ASALocationWithClocks
     var now:  Date
     
     @State private var showingActionSheet = false
