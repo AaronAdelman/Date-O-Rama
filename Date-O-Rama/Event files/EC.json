@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
     first: {era: 1, y: 1809},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ecuador"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Carnival Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
@@ -38,5 +39,6 @@
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 7, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
     ]
 }

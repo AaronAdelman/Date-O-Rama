@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.82, green: 0.15, blue: 0.19},
     first: {era: 1, y: 1989},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Poland"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/poland/epiphany"}, inherits: "Epiphany", first: {era: 1, y: 2011}},
@@ -123,5 +124,7 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 12, d: 18, thruD: 24, wkd: [7]}, inherits: "Super Saturday"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-   ]
+        {type: "nD", start: {mon: 7, d: 29, thruMon: 8, thruD: 5, wkd: [5]}, end: {mon: 8, d: 1, thruD: 7, wkd: [7]}, titles: {"en": "Pol’and’Rock Festival"}, notes: {"en": "Woodstock Festival Poland"}, urls: {"en": "https://en.polandrockfestival.pl/"}, emoji: "🎸", first: {era: 1, y: 1995}},
+
+    ]
 }

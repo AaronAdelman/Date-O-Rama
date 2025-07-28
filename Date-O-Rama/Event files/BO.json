@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     first: {era: 1, y: 1825},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bolivia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Plurinational State of Bolivia Anniversary", "es": "Nacimiento del Estado Plurinacional de Bolivia"}, urls: {"en": "https://nationaltoday.com/plurinational-state-foundation-day/"}, notes: {"en": "Plurinational State Foundation Day"}},
@@ -38,5 +39,6 @@
         {inherits: "Armed Forces Day", type: "D", start: {mon: 8, d: 7}},
         {type: "D", start: {mon: 7, d: 23}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 10, d: 17}, titles: {"en": "Day of Dignity"}, urls: {"en": "https://nationaltoday.com/day-of-dignity-bolivia/"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
    ]
 }

@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     first: {era: 1, y: 1821},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Peru"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
@@ -71,7 +72,7 @@
         {type: "D", start: {mon: 8, d: 1}, inherits: "National Alpaca Day"},
         
         {inherits: "Public Holiday", type: "nD", start: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
-
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
     ],
     templates: [
         {template: "Non-Working Day", titles: {"en": "Non-Working Day", "es": "Día no laborable en el sector público"}, type: "D", start: {mon: 10, d: 11, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day/"}},

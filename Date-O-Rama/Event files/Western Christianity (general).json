@@ -128,7 +128,7 @@
         {titles: {"en": "Feast of St. Sharbel Makhlūf", "he": "החג של שרבל מכלוף"}, type: "D", start: {mon: 7, d: 24}},
         {inherits: "Feast of St. James", type: "D", start: {mon: 7, d: 25}},
         {inherits: "Feast of St. Joachim", type: "D", start: {mon: 7, d: 26}},
-        {inherits: "Feast of St. Anne", type: "D", start: {mon: 7, d: 26}},
+        {type: "D", start: {mon: 7, d: 26}, inherits: "Feast of St. Anne"},
         {titles: {"en": "Feast of Saints Martha, Mary and Lazarus"}, type: "D", start: {mon: 7, d: 29}},
         {titles: {"en": "Feast of St. Peter Chrysologus", "he": "החג של פטרוס כריסולוגוס הקדוש"}, type: "D", start: {mon: 7, d: 30}},
         {titles: {"en": "Feast of St. Ignatius of Loyola", "he": "החג של איגנטיוס מלויולה הקדוש"}, type: "D", start: {mon: 7, d: 31}},
