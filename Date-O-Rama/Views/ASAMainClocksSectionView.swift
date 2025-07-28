@@ -1,5 +1,5 @@
 //
-//  ASAMainClocksView.swift
+//  ASAMainClocksSectionView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
