@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.61, green: 0.80, blue: 0.92},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_San_Marino"},
+    first: {era: 1, y: 301},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

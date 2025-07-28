@@ -1529,6 +1529,7 @@
         {type: "D", start: {mon: 7, wkd: [6], nth: 2}, titles: {"en": "World Kebab Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kebab-day/"}, notes: {"en": "Kebab Day"}, first: {era: 1, y: 2018}, emoji: "🍡"},
         {type: "D", start: {mon: 7, d: 9}, inherits: "No Bra Day", first: {era: 1, y: 2011}, last: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, d: 13}, inherits: "No Bra Day", first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 7, wkd: [7], nth: -1}, titles: {"en": "International Decora Day"}, urls: {"en": "https://www.checkiday.com/383bb800697585a9df49c058cf7d8ff7/international-decora-day"}, first: {era: 1, y: 2021}, notes: {"en": "Yet another in a long line of fashion-related observances."}},
         {type: "D", start: {mon: 7, wkd: [7], nth: -1}, titles: {"en": "Paddle for Perthes Disease Awareness Day"}, urls: {"en": "https://nationaltoday.com/paddle-for-perthes-disease-awareness-day/"}, first: {era: 1, y: 2010}, emoji: "🛶", inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 7, wkd: [7], nth: 1}, titles: {"en": "International Cherry Pit Spitting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-cherry-pit-spitting-day/"}, emoji: "🍒", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 7, wkd: [7], nth: 2}, titles: {"en": "World Rum Day"}, emoji: "🥃", urls: {"en": "https://www.world-rum-day.com/"}, first: {era: 1, y: 2019}},

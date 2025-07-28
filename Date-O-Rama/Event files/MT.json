@@ -84,7 +84,7 @@
         {inherits: "Feast of Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 19}, first: {era: 1, y: 1726}, locations: {"en": "Mdina and Birkirkara"}},
         {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {mon: 7, d: 20}, locations: {"en": "San Pawl Il-Baħar"}},
         {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {mon: 7, d: 26}, locations: {"en": "Balluta Bay"}},
-        {inherits: "Feast of St. Anne", type: "D", start: {mon: 7, d: 26}},
+        {type: "D", start: {mon: 7, d: 26}, inherits: "Feast of St. Anne"},
         {inherits: "St. Joseph’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 2}, locations: {"en": "Kirkop"}},
         {inherits: "Feast of the Annunciation", type: "D", start: {mon: 7, wkd: [1], nth: 2}, locations: {"en": "Balzan"}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 3}, locations: {"en": "Victoria"}},
