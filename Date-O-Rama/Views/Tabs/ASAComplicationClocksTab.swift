@@ -77,7 +77,7 @@ struct ASAComplicationSectionView: View {
             Text(NSLocalizedString(complicationKey.rawValue, comment: ""))
                 .lineLimit(2)
             HStack {
-                ASAMainClocksViewSectionHeader(locationWithClocks: locationWithClocks, now: now)
+                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: true)
 
                 if location.type == .EarthLocation {
                     Spacer()

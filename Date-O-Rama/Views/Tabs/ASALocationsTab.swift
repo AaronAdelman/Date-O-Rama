@@ -171,8 +171,6 @@ struct ASALocationsTab: View {
                 .zIndex(1.0) // This line from https://stackoverflow.com/questions/63934037/swiftui-navigationlink-cell-in-a-form-stays-highlighted-after-detail-pop to get rid of unwanted highlighting.
                 
                 List {
-//                    ASAMainClocksView(now: $now).environmentObject(userData)
-                    
                     ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
                         let location = locationWithClocks.location
 
@@ -183,15 +181,16 @@ struct ASALocationsTab: View {
                                 RoundedRectangle(cornerRadius: 8.0)
                                     .fill(Color(white: 0.85))
 
-                                HStack {
-                                    Text(location.flag)
-                                    Spacer()
-                                    Text(location.formattedOneLineAddress)
-                                        .font(.title2)
-                                    Spacer()
-                                    Text(location.abbreviatedTimeZoneString(for: now))
-                                }
-                                .foregroundStyle(Color.black)
+//                                HStack {
+//                                    Text(location.flag)
+//                                    Spacer()
+//                                    Text(location.formattedOneLineAddress)
+//                                        .font(.title2)
+//                                    Spacer()
+//                                    Text(location.abbreviatedTimeZoneString(for: now))
+//                                }
+//                                .foregroundStyle(Color.black)
+                                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
                                 .padding()
                             } // ZStack
                             .confirmationDialog("Delete Location?",

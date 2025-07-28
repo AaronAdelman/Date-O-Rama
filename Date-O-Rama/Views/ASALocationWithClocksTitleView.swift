@@ -1,54 +1,20 @@
 //
-//  ASAMainClocksView.swift
+//  ASALocationWithClocksTitleView.swift
 //  Date-O-Rama
 //
-//  Created by אהרן שלמה אדלמן on 22/10/2020.
-//  Copyright © 2020 Adelsoft. All rights reserved.
+//  Created by אהרן שלמה אדלמן on 28/07/2025.
+//  Copyright © 2025 Adelsoft. All rights reserved.
 //
 
 import SwiftUI
 
-//struct ASAMainClocksView: View {
-//    @EnvironmentObject var userData:  ASAModel
-//    @Binding var now:  Date
-//    
-//    var body: some View {
-//        ForEach($userData.mainClocks, id: \.self.id) {
-//            section
-//            in
-//            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
-//                .environmentObject(userData)
-//        }
-//    }
-//} // struct ASAMainClocksView
-
-struct ASAMainClocksSectionView: View {
-    enum Detail {
-        case none
-        case newClock
-        case locationInfo
-    } // enum ASAMainClocksSectionDetail
-    
-    @EnvironmentObject var userData:  ASAModel
-
-    @Binding var now:  Date
-    @Binding var locationWithClocks: ASALocationWithClocks
-    
-    @State private var showingDetailView = false
-    @State private var detail: Detail = .none
-    
-    @State private var showingActionSheet = false
-    
-#if os(watchOS)
-#else
-    @Environment(\.editMode) var editMode
-#endif
+struct ASALocationWithClocksTitleView: View {
+    @ObservedObject private var locationWithClocks: ASALocationWithClocks
+    @Binding var now: Date
     
     var body: some View {
-        let location = locationWithClocks.location
-        
-        Section(header: HStack {
-            ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: true)
+        HStack {
+            ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now)
 #if os(watchOS)
 #else
             Spacer()
@@ -105,7 +71,7 @@ struct ASAMainClocksSectionView: View {
                 
 //                if userData.mainClocks.count > 1 {
 //                    Divider()
-//                    
+//
 //                    Button(action: {
 //                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
 //                        guard index != nil else { return }
@@ -119,7 +85,7 @@ struct ASAMainClocksSectionView: View {
 //                            Image(systemName: "arrow.up.to.line")
 //                        }
 //                    })
-//                    
+//
 //                    Button(action: {
 //                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
 //                        guard index != nil else { return }
@@ -134,7 +100,7 @@ struct ASAMainClocksSectionView: View {
 //                            Image(systemName: "arrow.up")
 //                        }
 //                    })
-//                    
+//
 //                    Button(action: {
 //                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
 //                        guard index != nil else { return }
@@ -149,7 +115,7 @@ struct ASAMainClocksSectionView: View {
 //                            Image(systemName: "arrow.down")
 //                        }
 //                    })
-//                    
+//
 //                    Button(action: {
 //                        let index = userData.mainClocks.firstIndex(of: locationWithClocks)
 //                        guard index != nil else { return }
@@ -163,7 +129,7 @@ struct ASAMainClocksSectionView: View {
 //                            Image(systemName: "arrow.down.to.line")
 //                        }
 //                    })
-//                    
+//
 //                }
                 
                 if locationWithClocks.clocks.count > 1 {
@@ -223,46 +189,9 @@ struct ASAMainClocksSectionView: View {
                 ])
             }
 #endif
-        }) {
-            let location = locationWithClocks.location
-            let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-            ForEach(locationWithClocks.clocks.indices, id: \.self) {
-                index
-                in
-                
-                if index < locationWithClocks.clocks.count {
-                    let clock = locationWithClocks.clocks[index]
-                    let processedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-                    
-#if os(watchOS)
-                    let shouldShowMiniCalendar = false
-                    let indexIsOdd             = false
-#else
-                    let shouldShowMiniCalendar = true
-                    let indexIsOdd             = index % 2 == 1
-#endif
-                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock, location: locationWithClocks.location).environmentObject(userData)
-                }
-            }
-            //            .onDelete(perform: onDelete)
-            .onMove(perform: onMove)
-        }
-        .textCase(nil)
-    }
-    
-    @MainActor private func onMove(source: IndexSet, destination: Int) {
-        let relevantUUID = self.locationWithClocks.location.id
-        let relevantLocationWithClocksIndex = userData.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
-        if relevantLocationWithClocksIndex != nil {
-            userData.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
-            userData.savePreferences(code: .clocks)
-        }
-    }
+        }    }
 }
 
-
-//struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ASAMainClocksView(mainClocks: .constant(ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])), now: .constant(Date()))
-//    }
-//}
+#Preview {
+    ASALocationWithClocksTitleView()
+}

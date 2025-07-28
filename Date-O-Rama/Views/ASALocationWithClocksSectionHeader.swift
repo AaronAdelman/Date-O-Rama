@@ -1,5 +1,5 @@
 //
-//  ASAMainClocksViewSectionHeader.swift
+//  ASALocationWithClocksSectionHeader.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 20/07/2022.
@@ -8,9 +8,10 @@
 
 import SwiftUI
 
-struct ASAMainClocksViewSectionHeader: View {
+struct ASALocationWithClocksSectionHeader: View {
     var locationWithClocks: ASALocationWithClocks
     var now: Date
+    var shouldCapitalize: Bool
     
 #if os(watchOS)
     let compact = true
@@ -48,10 +49,8 @@ struct ASAMainClocksViewSectionHeader: View {
                         ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                     }
                     Text(sectionHeaderEmoji)
-                    Text(sectionHeaderTitle)
-                        .textCase(.uppercase)
-                        .lineLimit(sectionHeaderLineLimit)
-                        .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
+                    
+                    ASALocationWithClocksSectionHeaderTitle(title: sectionHeaderTitle, lineLimit: sectionHeaderLineLimit, minimumScaleFactor: sectionHeaderMinimumScaleFactor, shouldCapitalize: shouldCapitalize)
                 }
                 
                 Text(sectionTimeZoneString)
@@ -63,10 +62,7 @@ struct ASAMainClocksViewSectionHeader: View {
                     ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                 }
                 Text(sectionHeaderEmoji)
-                Text(sectionHeaderTitle)
-                    .textCase(.uppercase)
-                    .lineLimit(sectionHeaderLineLimit)
-                    .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
+                ASALocationWithClocksSectionHeaderTitle(title: sectionHeaderTitle, lineLimit: sectionHeaderLineLimit, minimumScaleFactor: sectionHeaderMinimumScaleFactor, shouldCapitalize: shouldCapitalize)
                 
                 Spacer()
                 
@@ -77,8 +73,28 @@ struct ASAMainClocksViewSectionHeader: View {
     }
 }
 
+struct ASALocationWithClocksSectionHeaderTitle: View {
+    var title: String
+    var lineLimit: Int
+    var minimumScaleFactor: Double
+    var shouldCapitalize: Bool
+
+    var body: some View {
+        if shouldCapitalize {
+            Text(title)
+                .textCase(.uppercase)
+                .lineLimit(lineLimit)
+                .minimumScaleFactor(minimumScaleFactor)
+        } else {
+            Text(title)
+                .lineLimit(lineLimit)
+                .minimumScaleFactor(minimumScaleFactor)
+        }
+    }
+}
+
 //struct ASAMainClocksViewSectionHeader_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAMainClocksViewSectionHeader()
+//        ASALocationWithClocksSectionHeader()
 //    }
 //}
