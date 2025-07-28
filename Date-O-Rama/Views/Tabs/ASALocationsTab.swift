@@ -177,12 +177,11 @@ struct ASALocationsTab: View {
                 List {
                     ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
                         
-                        Button(action: {
-                            selectedTabIndex = index
-                        }) {
-                            ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                                .environmentObject(userData)
-                        }
+                        ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                            .environmentObject(userData)
+                            .onTapGesture {
+                                selectedTabIndex = index
+                            }
                     } // ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id)
                     .onMove(perform: moveClock)
                 } // List
