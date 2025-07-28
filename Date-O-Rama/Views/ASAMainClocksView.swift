@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct ASAMainClocksView: View {
-    @EnvironmentObject var userData:  ASAModel
-    @Binding var now:  Date
-    
-    var body: some View {
-        ForEach($userData.mainClocks, id: \.self.id) {
-            section
-            in
-            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
-                .environmentObject(userData)
-        }
-    }
-} // struct ASAMainClocksView
+//struct ASAMainClocksView: View {
+//    @EnvironmentObject var userData:  ASAModel
+//    @Binding var now:  Date
+//    
+//    var body: some View {
+//        ForEach($userData.mainClocks, id: \.self.id) {
+//            section
+//            in
+//            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
+//                .environmentObject(userData)
+//        }
+//    }
+//} // struct ASAMainClocksView
 
 struct ASAMainClocksSectionView: View {
     enum Detail {
