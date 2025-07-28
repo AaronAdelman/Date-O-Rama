@@ -172,8 +172,7 @@ struct ASALocationsTab: View {
                 
                 List {
                     ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                        let location = locationWithClocks.location
-
+                        
                         Button(action: {
                             selectedTabIndex = index
                         }) {
@@ -181,15 +180,6 @@ struct ASALocationsTab: View {
                                 RoundedRectangle(cornerRadius: 8.0)
                                     .fill(Color(white: 0.85))
 
-//                                HStack {
-//                                    Text(location.flag)
-//                                    Spacer()
-//                                    Text(location.formattedOneLineAddress)
-//                                        .font(.title2)
-//                                    Spacer()
-//                                    Text(location.abbreviatedTimeZoneString(for: now))
-//                                }
-//                                .foregroundStyle(Color.black)
                                 ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
                                 .padding()
                             } // ZStack
