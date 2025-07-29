@@ -23,9 +23,7 @@ struct ASALocationsTab: View {
     @Binding var showLocationsSheet: Bool
         
     @State var isShowingNewLocationView = false
-    
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    
+        
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
