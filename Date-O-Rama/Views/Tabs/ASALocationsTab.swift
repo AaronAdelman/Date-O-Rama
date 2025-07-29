@@ -21,13 +21,12 @@ struct ASALocationsTab: View {
     @State private var showingActionSheet = false
     
     @Binding var showLocationsSheet: Bool
-        
+    
     @State var isShowingNewLocationView = false
-        
+    
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
-                
                 Menu {
                     Button(action: {
                         self.isShowingNewLocationView = true
@@ -92,13 +91,18 @@ struct ASALocationsTab: View {
                 }
                 
                 Spacer()
+                    .frame(maxWidth: .infinity)
             } // HStack
-            .border(Color.gray)
+            .padding([.top, .horizontal])
+            .background(Color(.systemBackground)) // Optional: ensures a visible background
+            .zIndex(1) // Makes sure it stays above the list when scrolling
             .sheet(isPresented: $isShowingNewLocationView, content: {
                 let locationManager: ASALocationManager = ASALocationManager.shared
                 let locationWithClocks = ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: locationManager)
                 ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true).environmentObject(userData).environmentObject(userData).environmentObject(locationManager)
             })
+            
+            Divider()
             
             List {
                 ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
@@ -112,6 +116,7 @@ struct ASALocationsTab: View {
                 } // ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id)
                 .onMove(perform: moveClock)
             } // List
+            .listStyle(.plain)
         } // VStack
     } // var body
     
