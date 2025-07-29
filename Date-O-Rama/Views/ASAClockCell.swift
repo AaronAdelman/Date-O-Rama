@@ -27,9 +27,7 @@ struct ASAClockCell: View {
     var isForComplications:  Bool
     
     var indexIsOdd: Bool
-    
-//    @State var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
-    
+        
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
     
@@ -107,11 +105,7 @@ struct ASAClockCellBody:  View {
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
-    
-    //    fileprivate func shouldShowMiniClock() -> Bool {
-    //        return !compact && shouldShowTime && processedClock.hasValidTime
-    //    } //func shouldShowMiniClock() -> Bool
-      
+          
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
@@ -157,19 +151,11 @@ struct ASAClockCellBody:  View {
                     }
                 }
 #else
+                Spacer()
                 if clock.calendar.supportsTimes {
                     if processedClock.supportsMonths && shouldShowMiniCalendar {
-                        Spacer()
-                        
                         ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth,  localeIdentifier: clock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: clock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
                     }
-                    
-                    // TODO:  The miniclocks (except for the progress views) crash the app on iPadOS in full-screen, so I disabled them.
-                    //                    if shouldShowMiniClock() {
-                    //                        Spacer()
-                    //
-                    //                        ASAMiniClockView(processedClock:  processedClock, numberFormatter: numberFormatter())
-                    //                    }
                 }
                 
                 Spacer()

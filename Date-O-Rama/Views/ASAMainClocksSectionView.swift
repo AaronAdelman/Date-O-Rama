@@ -105,7 +105,6 @@ struct ASAMainClocksSectionView: View {
                     ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock, location: locationWithClocks.location).environmentObject(userData)
                 }
             }
-            //            .onDelete(perform: onDelete)
             .onMove(perform: onMove)
         }
         .textCase(nil)
