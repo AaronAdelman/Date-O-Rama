@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.18, blue: 0.42},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
     first: {era: 1, y: 1992},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
