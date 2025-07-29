@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.00, green: 0.18, blue: 0.42},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Azerbaijan"},
     events: [
         {type: "D", start: {mon: 10, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
         {type: "D", start: {mon: 10, d: 3, wkd: [1]}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},

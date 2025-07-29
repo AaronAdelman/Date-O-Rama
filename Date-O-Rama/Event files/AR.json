@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
-        {inherits: "Carnival Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://nationaltoday.com/argentina-carnival/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Carnival Monday", urls: {"en": "https://nationaltoday.com/argentina-carnival/"}},
         {inherits: "Carnival Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {mon: 3, d: 24}, titles: {"en": "Day of Remembrance for Truth and Justice", "es": "Día Nacional de la Memoria por la Verdad y la Justicia"}, urls: {"en": "https://nationaltoday.com/day-of-remembrance-for-truth-and-justice/"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day"}},
         {type: "D", start: {mon: 3, d: 25, wkd: [6]}, titles: {"en": "Day of Remembrance for Truth and Justice (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/truth-and-justice-memorial-day"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day (in lieu)"}},

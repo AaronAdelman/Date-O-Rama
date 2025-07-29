@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Austria"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
@@ -34,9 +35,8 @@
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 9, d: 20}},
+        {type: "D", start: {mon: 9, d: 20}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Holocaust Memorial Day", titles: {"en": "Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de": "Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}},
-
     ]
 }
