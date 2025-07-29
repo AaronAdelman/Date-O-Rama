@@ -16,8 +16,9 @@ struct ASADateORamaApp: App {
     @State var now               = Date()
     @State var usingRealTime     = true
 
-    @State private var showLocationsSheet = false
-    @State private var showAboutSheet     = false
+    @State private var showLocationsSheet     = false
+    @State private var showAboutSheet         = false
+    @State private var showComplicationsSheet = false
 
     var body: some Scene {
         WindowGroup {
@@ -37,12 +38,12 @@ struct ASADateORamaApp: App {
                         .tabItem { symbol }
                     }
 
-                    if appDelegate.session.isPaired {
-                        ASAComplicationClocksTab()
-                            .environmentObject(userData)
-                            .tag(userData.mainClocks.count)
-                            .tabItem { Image(systemName: "applewatch.watchface") }
-                    }
+//                    if appDelegate.session.isPaired {
+//                        ASAComplicationClocksTab()
+//                            .environmentObject(userData)
+//                            .tag(userData.mainClocks.count)
+//                            .tabItem { Image(systemName: "applewatch.watchface") }
+//                    }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
@@ -50,6 +51,14 @@ struct ASADateORamaApp: App {
                 .navigationTitle("")
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        if appDelegate.session.isPaired {
+                            Button {
+                                showComplicationsSheet = true
+                            } label: {
+                                Image(systemName: "applewatch.watchface")
+                            }
+                        }
+                        
                         Button {
                             showAboutSheet = true
                         } label: {
@@ -61,6 +70,7 @@ struct ASADateORamaApp: App {
                         } label: {
                             Image(systemName: "list.bullet")
                         }
+                        
                     }
                 }
                 .fullScreenCover(isPresented: $showLocationsSheet) {
@@ -74,6 +84,10 @@ struct ASADateORamaApp: App {
                 }
                 .sheet(isPresented: $showAboutSheet) {
                     ASAAboutTab()
+                }
+                .sheet(isPresented: $showComplicationsSheet) {
+                    ASAComplicationClocksTab()
+                        .environmentObject(userData)
                 }
             }
         }
