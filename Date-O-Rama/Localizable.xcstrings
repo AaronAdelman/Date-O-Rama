@@ -1040,23 +1040,6 @@
         }
       }
     },
-    "CLOCKS_TAB" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Clocks"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "שעונים"
-          }
-        }
-      }
-    },
     "COMPLICATION_CLOCKS_TAB" : {
       "comment" : "\"EVENTS_TAB\"              = \"Events\";",
       "extractionState" : "stale",
@@ -1145,23 +1128,6 @@
         }
       }
     },
-    "Delete" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מחק"
-          }
-        }
-      }
-    },
     "Delete location" : {
       "localizations" : {
         "en" : {
@@ -1174,23 +1140,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "מחק מיקום…"
-          }
-        }
-      }
-    },
-    "Delete Location?" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Location?"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מחק מיקום?"
           }
         }
       }
@@ -1278,17 +1227,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "סיום"
-          }
-        }
-      }
-    },
-    "Done Reordering" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "סיום הסדר מחדש"
           }
         }
       }
@@ -3423,50 +3361,6 @@
         }
       }
     },
-    "Move down" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "עבור למטה"
-          }
-        }
-      }
-    },
-    "Move to bottom" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "עבור לסוף"
-          }
-        }
-      }
-    },
-    "Move to top" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "עבור לראש"
-          }
-        }
-      }
-    },
-    "Move up" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "עבור למעלה"
-          }
-        }
-      }
-    },
     "My status" : {
       "localizations" : {
         "he" : {
@@ -3733,17 +3627,6 @@
         }
       }
     },
-    "Reorder" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "סדר מחדש"
-          }
-        }
-      }
-    },
     "Requested address" : {
       "localizations" : {
         "he" : {
@@ -3793,17 +3676,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "שלח דוא״ל…"
-          }
-        }
-      }
-    },
-    "Settings" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "הגדרות"
           }
         }
       }
@@ -4255,17 +4127,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Truncated Julian Date"
-          }
-        }
-      }
-    },
-    "Today" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "היום"
           }
         }
       }
