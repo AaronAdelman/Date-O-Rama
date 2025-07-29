@@ -37,13 +37,6 @@ struct ASADateORamaApp: App {
                         .tag(index)
                         .tabItem { symbol }
                     }
-
-//                    if appDelegate.session.isPaired {
-//                        ASAComplicationClocksTab()
-//                            .environmentObject(userData)
-//                            .tag(userData.mainClocks.count)
-//                            .tabItem { Image(systemName: "applewatch.watchface") }
-//                    }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
