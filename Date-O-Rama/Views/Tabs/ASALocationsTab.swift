@@ -21,26 +21,6 @@ struct ASALocationsTab: View {
     @State private var showingActionSheet = false
     
     @Binding var showLocationsSheet: Bool
-    
-    @State private var selectedCalendar = Calendar(identifier: .gregorian)
-    
-    let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
-        ("gre", .gregorian),
-        ("tha", .buddhist),
-        ("chi", .chinese),
-        ("cop", .coptic),
-        ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
-        ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
-        ("Hebrew", .hebrew),
-        ("ind", .indian),
-        ("Islamic", .islamic),
-        ("IslamicCivil", .islamicCivil),
-        ("IslamicTabular", .islamicTabular),
-        ("IslamicUmmAlQura", .islamicUmmAlQura),
-        ("kok", .japanese),
-        ("his", .persian),
-        ("min", .republicOfChina)
-    ]
         
     @State var isShowingNewLocationView = false
     

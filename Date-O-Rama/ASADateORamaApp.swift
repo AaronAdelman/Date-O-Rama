@@ -87,7 +87,7 @@ struct ASADateORamaApp: App {
                     .frame(height: 24.0)
                 }
             }
-            .sheet(isPresented: $showLocationsSheet) {
+            .fullScreenCover(isPresented: $showLocationsSheet) {
                 ASALocationsTab(
                     now: $now,
                     usingRealTime: $usingRealTime,
