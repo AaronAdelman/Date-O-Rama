@@ -4202,7 +4202,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4237,7 +4237,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

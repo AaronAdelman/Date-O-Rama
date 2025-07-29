@@ -11,22 +11,22 @@ import SwiftUI
 @main
 struct ASADateORamaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
+
     @ObservedObject var userData = ASAModel.shared
     @State var now               = Date()
     @State var usingRealTime     = true
-    
+
     @State private var showLocationsSheet = false
     @State private var showAboutSheet     = false
-        
+
     var body: some Scene {
         WindowGroup {
-            ZStack {
+            NavigationStack {
                 TabView(selection: $userData.selectedTabIndex) {
                     ForEach(Array(zip(userData.mainClocks.indices, $userData.mainClocks)), id: \.1.id) { index, locationWithClocks in
                         let usesDeviceLocation = locationWithClocks.usesDeviceLocation.wrappedValue
                         let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
-                        
+
                         ASALocationTab(
                             now: $now,
                             usingRealTime: $usingRealTime,
@@ -36,7 +36,7 @@ struct ASADateORamaApp: App {
                         .tag(index)
                         .tabItem { symbol }
                     }
-                    
+
                     if appDelegate.session.isPaired {
                         ASAComplicationClocksTab()
                             .environmentObject(userData)
@@ -47,57 +47,34 @@ struct ASADateORamaApp: App {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .id(userData.mainClocksVersion)
-                
-                // Overlay buttons
-                VStack {
-                    Spacer()
-                    HStack {
-                        let BUTTON_STYLE: BorderedProminentButtonStyle = .borderedProminent
-                        let BUTTON_FONT: Font            = .title2
-                        let BUTTON_SHAPE: ButtonBorderShape = .capsule
-                        let BUTTON_TINT = Color(white: 0.95)
-                        let BUTTON_IMAGE_COLOR = Color.gray
-
+                .navigationTitle("")
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
                         Button {
                             showAboutSheet = true
                         } label: {
-                            Image(systemName: "info.circle.fill")
-                                .font(BUTTON_FONT)
-                                .foregroundStyle(BUTTON_IMAGE_COLOR)
-                                .padding()
+                            Image(systemName: "info.circle")
                         }
-                        .buttonStyle(BUTTON_STYLE)
-                        .buttonBorderShape(BUTTON_SHAPE)
-                        .tint(BUTTON_TINT)
-                        
-                        Spacer()
-                        
+
                         Button {
                             showLocationsSheet = true
                         } label: {
                             Image(systemName: "list.bullet")
-                                .font(BUTTON_FONT)
-                                .foregroundStyle(BUTTON_IMAGE_COLOR)
-                                .padding()
                         }
-                        .buttonStyle(BUTTON_STYLE)
-                        .buttonBorderShape(BUTTON_SHAPE)
-                        .tint(BUTTON_TINT)
                     }
-                    .frame(height: 24.0)
                 }
-            }
-            .fullScreenCover(isPresented: $showLocationsSheet) {
-                ASALocationsTab(
-                    now: $now,
-                    usingRealTime: $usingRealTime,
-                    selectedTabIndex: $userData.selectedTabIndex,
-                    showLocationsSheet: $showLocationsSheet
-                )
-                .environmentObject(userData)
-            }
-            .sheet(isPresented: $showAboutSheet) {
-                ASAAboutTab()
+                .fullScreenCover(isPresented: $showLocationsSheet) {
+                    ASALocationsTab(
+                        now: $now,
+                        usingRealTime: $usingRealTime,
+                        selectedTabIndex: $userData.selectedTabIndex,
+                        showLocationsSheet: $showLocationsSheet
+                    )
+                    .environmentObject(userData)
+                }
+                .sheet(isPresented: $showAboutSheet) {
+                    ASAAboutTab()
+                }
             }
         }
     }

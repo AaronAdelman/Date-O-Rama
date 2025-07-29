@@ -4003,7 +4003,17 @@
         }
       }
     },
+    "Sort by name ↑" : {
+
+    },
+    "Sort by name ↓" : {
+
+    },
+    "Sort east to west" : {
+
+    },
     "Sort locations by name ascending" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4014,6 +4024,7 @@
       }
     },
     "Sort locations by name descending" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4024,6 +4035,7 @@
       }
     },
     "Sort locations east to west" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4034,6 +4046,7 @@
       }
     },
     "Sort locations north to south" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4044,6 +4057,7 @@
       }
     },
     "Sort locations south to north" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4054,6 +4068,7 @@
       }
     },
     "Sort locations west to east" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -4062,6 +4077,15 @@
           }
         }
       }
+    },
+    "Sort north to south" : {
+
+    },
+    "Sort south to north" : {
+
+    },
+    "Sort west to east" : {
+
     },
     "Spring ahead" : {
       "localizations" : {

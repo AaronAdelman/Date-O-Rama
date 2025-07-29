@@ -15,117 +15,108 @@ struct ASALocationsTab: View {
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
-    @State private var locationToDelete: ASALocationWithClocks? = nil
-    
-    @State private var showingGetInfoView = false
-    @State private var showingActionSheet = false
-    
     @Binding var showLocationsSheet: Bool
-    
-    @State var isShowingNewLocationView = false
-    
+
+    @State private var isShowingNewLocationView = false
+
     var body: some View {
-        VStack(spacing: 0.0) {
-            HStack {
-                Menu {
-                    Button(action: {
-                        self.isShowingNewLocationView = true
-                    }, label: {
-                        Image(systemName: "plus.circle.fill")
-                        Text("New location")
-                    })
-                    
-                    Divider()
-                    
-                    Group {
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.down")
-                            Text("Sort locations by name ascending")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.up")
-                            Text("Sort locations by name descending")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.right")
-                            Text("Sort locations west to east")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.left")
-                            Text("Sort locations east to west")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.up")
-                            Text("Sort locations south to north")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Image(systemName: "arrow.down")
-                            Text("Sort locations north to south")
-                        })
-                    }
-                } label: {
-                    ASAMenuTitle(imageSystemName: "mappin", title: "Locations")
-                }
-                
-                Spacer()
-                    .frame(maxWidth: .infinity)
-            } // HStack
-            .padding([.top, .horizontal])
-            .background(Color(.systemBackground)) // Optional: ensures a visible background
-            .zIndex(1) // Makes sure it stays above the list when scrolling
-            .sheet(isPresented: $isShowingNewLocationView, content: {
-                let locationManager: ASALocationManager = ASALocationManager.shared
-                let locationWithClocks = ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: locationManager)
-                ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: true).environmentObject(userData).environmentObject(userData).environmentObject(locationManager)
-            })
-            
-            Divider()
-            
+        NavigationStack {
             List {
                 ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                    
                     ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
                         .environmentObject(userData)
                         .onTapGesture {
                             selectedTabIndex = index
                             showLocationsSheet = false
                         }
-                } // ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id)
+                }
                 .onMove(perform: moveClock)
             } // List
             .listStyle(.plain)
-        } // VStack
-    } // var body
-    
+            .navigationTitle("")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Menu {
+                        Button(action: {
+                            isShowingNewLocationView = true
+                        }) {
+                            Label("New location", systemImage: "plus.circle.fill")
+                        }
+                        
+                        Divider()
+                        
+                        Group {
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort by name ↑", systemImage: "arrow.down")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort by name ↓", systemImage: "arrow.up")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort west to east", systemImage: "arrow.right")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort east to west", systemImage: "arrow.left")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort south to north", systemImage: "arrow.up")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sort(by: { $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort north to south", systemImage: "arrow.down")
+                            }
+                        }
+                    } label: {
+                        Label("Locations", systemImage: "mappin")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $isShowingNewLocationView) {
+            let locationManager = ASALocationManager.shared
+            let locationWithClocks = ASALocationWithClocks(
+                location: locationManager.deviceLocation,
+                clocks: [ASAClock.generic],
+                usesDeviceLocation: true,
+                locationManager: locationManager
+            )
+            ASALocationChooserView(
+                locationWithClocks: locationWithClocks,
+                shouldCreateNewLocationWithClocks: true
+            )
+            .environmentObject(userData)
+            .environmentObject(locationManager)
+        }
+    }
+
     private func moveClock(from source: IndexSet, to destination: Int) {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)
         userData.savePreferences(code: .clocks)
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
-} // struct ASALocationsTab
+}
 
 
 struct ASALocationWithClocksCell: View {
