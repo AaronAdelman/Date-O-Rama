@@ -35,9 +35,7 @@ struct ASALocationTab: View {
            ("his", .persian),
            ("min", .republicOfChina)
        ]
-            
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+                
     @State var isNavigationBarHidden: Bool = true
     
     @State var isShowingNewLocationView = false
@@ -134,11 +132,6 @@ struct ASALocationTab: View {
                 }
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
-        .onReceive(timer) { input in
-            if usingRealTime {
-                self.now = Date()
-            }
-        }
     } // var body
 } // struct ASALocationsTab
 

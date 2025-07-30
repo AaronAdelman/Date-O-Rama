@@ -19,6 +19,8 @@ struct ASADateORamaApp: App {
     @State private var showLocationsSheet     = false
     @State private var showAboutSheet         = false
     @State private var showComplicationsSheet = false
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some Scene {
         WindowGroup {
@@ -79,8 +81,13 @@ struct ASADateORamaApp: App {
                     ASAAboutTab()
                 }
                 .sheet(isPresented: $showComplicationsSheet) {
-                    ASAComplicationClocksTab()
+                    ASAComplicationClocksTab(now: $now)
                         .environmentObject(userData)
+                }
+            }
+            .onReceive(timer) { input in
+                if usingRealTime {
+                    self.now = Date()
                 }
             }
         }

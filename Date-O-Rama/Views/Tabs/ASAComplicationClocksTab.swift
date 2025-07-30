@@ -10,8 +10,7 @@ import SwiftUI
 
 struct ASAComplicationClocksTab: View {
     @EnvironmentObject var userData:  ASAModel
-    @State var now = Date()
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @Binding var now: Date
     @State var isNavigationBarHidden:  Bool = true
     
     var body: some View {
@@ -37,9 +36,6 @@ struct ASAComplicationClocksTab: View {
             self.isNavigationBarHidden = true
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .onReceive(timer) { input in
-            self.now = Date()
-        }
     }
 } // struct ASAComplicationClocksTab
 
@@ -112,8 +108,8 @@ struct ASAComplicationSectionView: View {
     }
 }
 
-struct ASAComplicationClocksView_Previews: PreviewProvider {
-    static var previews: some View {
-        ASAComplicationClocksTab()
-    }
-}
+//struct ASAComplicationClocksView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ASAComplicationClocksTab()
+//    }
+//}
