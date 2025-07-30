@@ -49,6 +49,30 @@ struct ASALocationTab: View {
             VStack(spacing: 0.0) {
                 HStack {
                     Spacer()
+                    
+                    if horizontalSizeClass != .compact {
+                        Button (action: {
+                            self.usingRealTime = false
+                            now = now.oneDayBefore
+                        }, label: {
+                            Image(systemName: "arrowtriangle.backward.fill")
+                                .imageScale(.large)
+                        })
+                        .buttonStyle(.bordered)
+                        
+                        Spacer()
+                        
+                        Button (action: {
+                            self.usingRealTime = false
+                            now = now.oneDayAfter
+                        }, label: {
+                            Image(systemName: "arrowtriangle.forward.fill")
+                                .imageScale(.large)
+                        })
+                        .buttonStyle(.bordered)
+                        
+                        Spacer()
+                    }
 
                     Button(action: {
                         self.usingRealTime = true
