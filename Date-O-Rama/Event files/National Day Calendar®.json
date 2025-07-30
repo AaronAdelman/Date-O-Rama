@@ -321,6 +321,7 @@
         {type: "D", start: {mon: 7, d: 29}, titles: {"en": "National Lipstick Day"}, first: {era: 1, y: 2016}, notes: {"en": "This event is meant to promote vanity and fashion."}},
         {type: "D", start: {mon: 7, d: 3}, titles: {"en": "National Fried Clam Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-fried-clam-day-july-3"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 7, d: 30}, titles: {"en": "National Climb A Mountain Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-climb-a-mountain-day-july-30"}, first: {era: 1, y: 2023}, emoji: "⛰"},
+        {type: "D", start: {mon: 7, d: 31}, titles: {"en": "National Avocado Day", "he": "יום האבוקדו הלאומי"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-avocado-day-july-31"}, emoji: "🥑", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "National Hand Roll Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hand-roll-day-july-6"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 7, d: 7}, inherits: "National Dive Bar Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-dive-bar-day-july-7"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"en": "National Raspberry Day"}, urls: {"en": "https://www.nationaldaycalendar.com/july/national-raspberry-day-july-8"}, first: {era: 1, y: 2023}},
