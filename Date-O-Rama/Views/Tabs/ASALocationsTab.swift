@@ -33,6 +33,7 @@ struct ASALocationsTab: View {
                 .onMove(perform: moveClock)
             } // List
             .listStyle(.plain)
+            .listRowBackground(Color.clear)
             .navigationTitle("")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -129,7 +130,7 @@ struct ASALocationWithClocksCell: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8.0)
-                .fill(Color(white: 0.85))
+                .fill(Color("unknownBackground"))
             
             HStack {
                 ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
@@ -164,6 +165,7 @@ struct ASALocationWithClocksCell: View {
                         ])
                     }
             } // HStack
+            .foregroundStyle(Color.white)
             .padding()
         } // ZStack
     }
