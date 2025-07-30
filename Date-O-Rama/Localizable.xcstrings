@@ -1096,7 +1096,7 @@
       }
     },
     "Date:" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -3563,7 +3563,7 @@
     },
     "Now" : {
       "comment" : "\"ASAAlarmType_minutesBefore\" = \"Minutes before\";",
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
