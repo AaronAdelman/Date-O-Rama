@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import CoreLocation
-//import FrenchRepublicanCalendarCore
+//import CoreLocation
 
-struct ASAProcessedClock {
+struct ASAProcessedClock: ASAClockDistilation {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
@@ -24,13 +23,13 @@ struct ASAProcessedClock {
     var daysInMonth:  Int
     var supportsMonths:  Bool
 
-//    var hour:  Int?
-//    var minute:  Int?
-//    var second:  Int?
-//    var fractionalHour: Double?
-//    var dayHalf: ASADayHalf?
+    var hour:  Int?
+    var minute:  Int?
+    var second:  Int?
+    var fractionalHour: Double?
+    var dayHalf: ASADayHalf?
 
-//    var transitionType:  ASATransitionType
+    var transitionType:  ASATransitionType
 //    var calendarType:  ASACalendarType
 
 //    var localeIdentifier:  String
@@ -90,20 +89,14 @@ struct ASAProcessedClock {
         
         assert(!(location.type != .EarthLocation && self.supportsMonths))
 
-//        if clock.timeFormat == .decimal {
-//            let decimalTime = DecimalTime(base: now, timeZone: timeZone)
-//            self.hour   = decimalTime.hour
-//            self.minute = decimalTime.minute
-//            self.second = decimalTime.second
-//        } else {
-//            self.hour   = dateComponents.hour
-//            self.minute = dateComponents.minute
-//            self.second = dateComponents.second
-//            self.fractionalHour = dateComponents.solarHours
-//            self.dayHalf = dateComponents.dayHalf
-//        }
 
-//        self.transitionType = clock.calendar.transitionType
+            self.hour   = dateComponents.hour
+            self.minute = dateComponents.minute
+            self.second = dateComponents.second
+            self.fractionalHour = dateComponents.solarHours
+            self.dayHalf = dateComponents.dayHalf
+
+        self.transitionType = clock.calendar.transitionType
 
 //        if clock.localeIdentifier == "" {
 //            self.localeIdentifier = Locale.current.identifier
