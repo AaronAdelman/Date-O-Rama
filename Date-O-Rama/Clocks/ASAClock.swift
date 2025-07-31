@@ -309,7 +309,6 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let altitude = dictionary[ALTITUDE_KEY] as? Double
         let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
-//        newClock.usesDeviceLocation = usesDeviceLocation ?? true
         var newLocation = CLLocation()
         if latitude != nil && longitude != nil {
             newLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
@@ -497,10 +496,6 @@ extension ASAClock {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
 
-//    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, location: ASALocation) -> ASADateComponents {
-//        self.calendar.dateComponents(components, from: date, locationData: location)
-//    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
-
     public func shortenedDateTimeString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let timeFormat: ASATimeFormat = self.timeFormat
@@ -523,19 +518,6 @@ extension ASAClock {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearAndMonthOnly, timeFormat: .none, locationData: location)
         return result
     } // public func yearAndMonthOnlyDateString(now:  Date) -> String
-
-//    public func watchShortenedDateString(now:  Date) -> String {
-//        let dateFormat: ASADateFormat = self.dateFormat.watchShortened
-//        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: self.locationData)
-//        return result
-//    } // func watchShortenedDateString(now:  Date) -> String
-
-//    public func watchShortenedTimeString(now:  Date) -> String {
-//        let timeFormat: ASATimeFormat = self.timeFormat
-//        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: self.locationData)
-//        return result
-//    } // func watchShortenedTimeString(now:  Date) -> String
-
     
     var miniCalendarNumberFormat: ASANumberFormat {
         return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
@@ -578,15 +560,6 @@ extension ASAClock {
         return ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
     } // static var generic:  ASAClock
 } // extension ASAClock
-
-//extension ASAClock {
-//    public func countryCodeEmoji(date:  Date) -> String {
-//        let regionCode: String = self.locationData.regionCode ?? ""
-//        let result: String = regionCode.flag
-////        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
-//        return result
-//    } // public func countryCodeEmoji(date:  Date) -> String
-//} // extension ASAClock
 
 class ASAStartAndEndDateStrings {
     var startDateString: String?
@@ -679,23 +652,3 @@ extension ASAClock {
         return self.calendar.calendarCode != .Gregorian
     }
 } // extension ASAClock
-
-
-// MARK:  -
-
-extension Array where Element == ASAClock {
-    func processed(now:  Date, location: ASALocation, usesDeviceLocation: Bool) -> Array<ASAProcessedClock> {
-        var result:  Array<ASAProcessedClock> = []
-
-        for row in self {
-            let processedClock = ASAProcessedClock(clock: row, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-            result.append(processedClock)
-        }
-
-        return result
-    } // func processed(now:  Date) -> Array<ASAProcessedClock>
-
-    fileprivate func noCountryString() -> String {
-        return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
-    }
-} // extension Array where Element == ASAClock

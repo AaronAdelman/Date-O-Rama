@@ -3514,6 +3514,7 @@
     },
     "NO_COUNTRY_OR_REGION" : {
       "comment" : "\"NO_PLACE_NAME\"        = \"International\";",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
