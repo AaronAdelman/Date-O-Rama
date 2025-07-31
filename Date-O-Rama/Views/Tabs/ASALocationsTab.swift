@@ -16,9 +16,9 @@ struct ASALocationsTab: View {
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
     @Binding var showLocationsSheet: Bool
-
+    
     @State private var isShowingNewLocationView = false
-
+    
     var body: some View {
         NavigationStack {
             List {
@@ -111,7 +111,7 @@ struct ASALocationsTab: View {
             .environmentObject(locationManager)
         }
     }
-
+    
     private func moveClock(from source: IndexSet, to destination: Int) {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)
         userData.savePreferences(code: .clocks)
@@ -128,43 +128,52 @@ struct ASALocationWithClocksCell: View {
     @State private var showingActionSheet = false
     
     var body: some View {
+        let processed = locationWithClocks.clocks.map {ASAProcessedTime(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
+        let times: Array<String> = processed.compactMap { $0.timeString }.uniqueElements.map { $0! }
+        let timeString = times.joined(separator: " • ")
+        
         ZStack {
             RoundedRectangle(cornerRadius: 8.0)
                 .fill(Color("unknownBackground"))
             
-            HStack {
-                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
-                
-                Spacer()
-                ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
-                    self.showingActionSheet = true
-                } infoAction: {
-                    self.showingGetInfoView = true
-                } newClockAction: {debugPrint("Foo!")}
-                    .environmentObject(userData)
-                    .sheet(isPresented: self.$showingGetInfoView) {
-                        VStack {
-                            HStack {
-                                Button(action: {
-                                    showingGetInfoView = false
-                                }) {
-                                    ASACloseBoxImage()
-                                }
-                                Spacer()
-                            } // HStack
-                            ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+            VStack {
+                HStack {
+                    ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
+                    
+                    Spacer()
+                    ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
+                        self.showingActionSheet = true
+                    } infoAction: {
+                        self.showingGetInfoView = true
+                    } newClockAction: {debugPrint("Foo!")}
+                        .environmentObject(userData)
+                        .sheet(isPresented: self.$showingGetInfoView) {
+                            VStack {
+                                HStack {
+                                    Button(action: {
+                                        showingGetInfoView = false
+                                    }) {
+                                        ASACloseBoxImage()
+                                    }
+                                    Spacer()
+                                } // HStack
+                                ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+                            }
+                            .font(.body)
                         }
-                        .font(.body)
-                    }
-                    .actionSheet(isPresented: self.$showingActionSheet) {
-                        ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
-                            .destructive(Text("Delete this location")) {
-                                userData.removeLocationWithClocks(locationWithClocks)
-                            },
-                            .default(Text("Cancel")) {  }
-                        ])
-                    }
-            } // HStack
+                        .actionSheet(isPresented: self.$showingActionSheet) {
+                            ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
+                                .destructive(Text("Delete this location")) {
+                                    userData.removeLocationWithClocks(locationWithClocks)
+                                },
+                                .default(Text("Cancel")) {  }
+                            ])
+                        }
+                } // HStack
+                
+                Text(timeString)
+                    .font(.largeTitle)
+            } // VStack
             .foregroundStyle(Color.white)
             .padding()
         } // ZStack

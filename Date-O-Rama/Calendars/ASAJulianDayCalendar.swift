@@ -245,7 +245,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     // MARK: -
 
-//    public var transitionType:  ASATransitionType = .noon
+    public var transitionType:  ASATransitionType = .noon
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         return []

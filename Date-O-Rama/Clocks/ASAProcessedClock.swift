@@ -8,10 +8,9 @@
 
 import Foundation
 import CoreLocation
-import FrenchRepublicanCalendarCore
+//import FrenchRepublicanCalendarCore
 
 struct ASAProcessedClock {
-//    var clock:  ASAClock
     var calendarString:  String
     var dateString:  String
     var timeString:  String?

@@ -18,6 +18,13 @@ extension Array {
     }
 }
 
+extension Array where Element == String? {
+    var uniqueElements: [String?] {
+        var uniqueValues: Set<Element> = []
+        return self.filter { uniqueValues.insert($0).inserted }
+    }
+}
+
 // MARK:  - Array where Element == EKRecurrenceDayOfWeek
 extension Array where Element == EKRecurrenceDayOfWeek {
     mutating func remove(_ element:  Element) {

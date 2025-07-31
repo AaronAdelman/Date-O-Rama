@@ -66,7 +66,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     
     var supportsTimeZones: Bool = true
     
-//    var transitionType: ASATransitionType = .midnight
+    var transitionType: ASATransitionType = .midnight
     
     var usesISOTime: Bool = true
     

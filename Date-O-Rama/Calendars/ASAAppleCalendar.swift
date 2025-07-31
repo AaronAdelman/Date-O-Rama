@@ -240,7 +240,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
 
     // MARK: -
 
-//    public var transitionType:  ASATransitionType = .midnight
+    public var transitionType:  ASATransitionType = .midnight
 
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
