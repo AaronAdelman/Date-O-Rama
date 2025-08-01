@@ -128,7 +128,7 @@ struct ASALocationWithClocksCell: View {
     @State private var showingActionSheet = false
     
     var body: some View {
-        let processed = locationWithClocks.clocks.map {ASAProcessedTime(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
+        let processed = locationWithClocks.clocks.map {ASAMiniProcessedClock(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
         let times: Array<String> = processed.compactMap { $0.timeString }.uniqueElements.map { $0! }
         let timeString = times.joined(separator: " • ")
         

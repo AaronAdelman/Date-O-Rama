@@ -8,10 +8,9 @@
 
 import Foundation
 
-
-
-struct ASAProcessedTime: ASAClockDistilation {
+struct ASAMiniProcessedClock: ASAProcessedClockProtocol {
     var timeString:  String?
+    var calendarType: ASACalendarType
     var transitionType:  ASATransitionType
     var hour:  Int?
     var minute:  Int?
@@ -28,5 +27,6 @@ struct ASAProcessedTime: ASAClockDistilation {
         self.dayHalf = dateComponents.dayHalf
         self.timeString = timeString ?? dateString
         self.transitionType = clock.calendar.transitionType
+        self.calendarType = clock.calendar.calendarCode.type
     }
-} // struct ASAProcessedTimes
+} // struct ASAMiniProcessedClock

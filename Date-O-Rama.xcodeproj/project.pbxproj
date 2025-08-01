@@ -850,12 +850,12 @@
 		A5E5DA772D913EE100043182 /* Middle-Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E5DA752D913ED200043182 /* Middle-Earth.json */; };
 		A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
-		A5E638CE2E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAProcessedTime.swift */; };
-		A5E638CF2E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAProcessedTime.swift */; };
-		A5E638D02E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAProcessedTime.swift */; };
-		A5E638D62E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAClockDistilation.swift */; };
-		A5E638D72E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAClockDistilation.swift */; };
-		A5E638D82E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAClockDistilation.swift */; };
+		A5E638CE2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */; };
+		A5E638CF2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */; };
+		A5E638D02E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */; };
+		A5E638D62E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
+		A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
+		A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
 		A5E713DE2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E713DF2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E7590E2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
@@ -1661,8 +1661,8 @@
 		A5E4966228625585001BF40C /* PM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PM.json; sourceTree = "<group>"; };
 		A5E5DA752D913ED200043182 /* Middle-Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Middle-Earth.json"; sourceTree = "<group>"; };
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
-		A5E638CD2E3BEB91007F53D2 /* ASAProcessedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedTime.swift; sourceTree = "<group>"; };
-		A5E638D52E3BFD09007F53D2 /* ASAClockDistilation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDistilation.swift; sourceTree = "<group>"; };
+		A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniProcessedClock.swift; sourceTree = "<group>"; };
+		A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedClockProtocol.swift; sourceTree = "<group>"; };
 		A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ML (Muslim).json"; sourceTree = "<group>"; };
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
 		A5E759102768D0F8008D7D57 /* EU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EU.json; sourceTree = "<group>"; };
@@ -2348,11 +2348,11 @@
 			children = (
 				A5C77C2E2433371700CFEE47 /* ASAClock.swift */,
 				A5C77C302433371800CFEE47 /* ASAClockArrayKey.swift */,
-				A5E638D52E3BFD09007F53D2 /* ASAClockDistilation.swift */,
 				A5D62861243B80F100F3CC19 /* ASADateFormat.swift */,
 				A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */,
+				A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */,
 				A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */,
-				A5E638CD2E3BEB91007F53D2 /* ASAProcessedTime.swift */,
+				A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */,
 				A5E4719D2463F938002BB471 /* ASATimeFormat.swift */,
 			);
 			path = Clocks;
@@ -3613,7 +3613,7 @@
 				A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
 				A5C72A14296F0F4900B8442A /* HostingController.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
-				A5E638CF2E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */,
+				A5E638CF2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A5365A7E278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */,
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
@@ -3669,7 +3669,7 @@
 				A566F47F2483D7CF000A05B5 /* ASAClockArrayKey.swift in Sources */,
 				A5A6FD5827BEC981003595D5 /* StringExtensions.swift in Sources */,
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
-				A5E638D82E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */,
+				A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
 				A5DB52D9278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
@@ -3730,7 +3730,7 @@
 				A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
-				A5E638D72E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */,
+				A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A5BC4DDD26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */,
@@ -3768,7 +3768,7 @@
 				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
-				A5E638CE2E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */,
+				A5E638CE2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A52BAE792CA59B610006A178 /* ASAWeekday.swift in Sources */,
 				A5D546C52E37EF7E00205F14 /* ASALocationMenu.swift in Sources */,
 				A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */,
@@ -3866,7 +3866,7 @@
 				A505E6DC27903D7F00D09A74 /* ASAEasterType.swift in Sources */,
 				A5A6FD5527BEC88E003595D5 /* ASADateFormatPatternComponent.swift in Sources */,
 				A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */,
-				A5E638D62E3BFD09007F53D2 /* ASAClockDistilation.swift in Sources */,
+				A5E638D62E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A557AD1025DD495400A264B6 /* SolarEvents.swift in Sources */,
 				A557AD2925DD49A900A264B6 /* ASAMessageKeys.swift in Sources */,
 				A5C77C142433361900CFEE47 /* Date_O_RamaTests.swift in Sources */,
@@ -3886,7 +3886,7 @@
 				A59D802C2600C57A00FD8BBF /* ASACalendar.swift in Sources */,
 				A59D80402600C59200FD8BBF /* ASAProcessedClock.swift in Sources */,
 				A557AD0F25DD495400A264B6 /* LocaleExtensions.swift in Sources */,
-				A5E638D02E3BEB91007F53D2 /* ASAProcessedTime.swift in Sources */,
+				A5E638D02E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A557AD5525DD4BA200A264B6 /* ASADateFormat.swift in Sources */,
 				A5EB60E82892E4EB006009AF /* ASALocation.swift in Sources */,
 				A59D805A2600C6F900FD8BBF /* ASAEKEventManager.swift in Sources */,

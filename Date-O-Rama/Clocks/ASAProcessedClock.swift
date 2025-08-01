@@ -9,7 +9,7 @@
 import Foundation
 //import CoreLocation
 
-struct ASAProcessedClock: ASAClockDistilation {
+struct ASAProcessedClock: ASAProcessedClockProtocol {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
@@ -30,7 +30,7 @@ struct ASAProcessedClock: ASAClockDistilation {
     var dayHalf: ASADayHalf?
 
     var transitionType:  ASATransitionType
-//    var calendarType:  ASACalendarType
+    var calendarType:  ASACalendarType
 
 //    var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
@@ -134,6 +134,8 @@ struct ASAProcessedClock: ASAClockDistilation {
 //        self.timeFormat = clock.timeFormat
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
+        
+        self.calendarType = self.calendarCode.type
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
 
