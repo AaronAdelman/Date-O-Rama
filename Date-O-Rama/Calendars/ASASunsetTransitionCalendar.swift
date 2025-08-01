@@ -657,7 +657,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     // MARK: - Cycles
     
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
-        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+        if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {
             return .hebrew
         }
         

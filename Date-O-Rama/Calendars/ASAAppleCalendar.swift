@@ -335,7 +335,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     // MARK:  -
     
     func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+        if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {
             return .shortHebrew
         }
         
@@ -354,7 +354,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     // MARK:  - Cycles
     
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
-        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+        if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {
             return .hebrew
         }
         
