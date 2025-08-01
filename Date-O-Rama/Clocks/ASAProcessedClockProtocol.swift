@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 protocol ASAProcessedClockProtocol {
     var timeString:  String? { get }
@@ -25,7 +26,7 @@ enum ASADayPart {
     case unknown
 } // enum ASADayPart
 
-extension Array where Element == ASAProcessedClockProtocol {
+extension Array where Element: ASAProcessedClockProtocol {
     var dayPart: ASADayPart {
         // NOTE:  At some point I may want to make this based on the position of the Sun in the sky rather than clock time.
         
@@ -41,5 +42,19 @@ extension Array where Element == ASAProcessedClockProtocol {
         }
         
         return .unknown
-    }
+    } // var dayPart: ASADayPart
 } // extension Array where Element == ASAProcessedClockProtocol
+
+extension ASADayPart {
+    var cellColor: Color {
+        switch self {
+        case .day:
+            return Color("dayBackground")
+        case .night:
+            return Color("nightBackground")
+
+        case .unknown:
+            return Color("unknownBackground")
+        }
+    }
+}
