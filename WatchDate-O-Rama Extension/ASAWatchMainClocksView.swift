@@ -16,7 +16,7 @@ struct ASAMainClocksView: View {
         ForEach($userData.mainClocks, id: \.self.id) {
             section
             in
-            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
+            ASALocationWithClocksSectionView(now: $now, locationWithClocks: section)
                 .environmentObject(userData)
         }
     }

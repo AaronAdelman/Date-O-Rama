@@ -21,7 +21,7 @@ struct ASALocationTab: View {
     var body: some View {
         NavigationView  {
             List {
-                ASAMainClocksSectionView(now: $now, locationWithClocks: $locationWithClocks).environmentObject(userData)
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks).environmentObject(userData)
             }
             .listStyle(GroupedListStyle())
             .navigationBarHidden(self.isNavigationBarHidden)

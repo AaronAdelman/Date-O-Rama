@@ -46,7 +46,7 @@ extension Array where Element: ASAProcessedClockProtocol {
 } // extension Array where Element == ASAProcessedClockProtocol
 
 extension ASADayPart {
-    var cellColor: Color {
+    var locationColor: Color {
         switch self {
         case .day:
             return Color("dayBackground")

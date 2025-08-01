@@ -132,7 +132,7 @@ struct ASALocationWithClocksCell: View {
         let times: Array<String> = processed.compactMap { $0.timeString }.uniqueElements.map { $0! }
         let timeString = times.joined(separator: " • ")
         
-        let cellBackground = processed.dayPart.cellColor
+        let cellBackground = processed.dayPart.locationColor
         ZStack {
             RoundedRectangle(cornerRadius: 8.0)
                 .fill(cellBackground)

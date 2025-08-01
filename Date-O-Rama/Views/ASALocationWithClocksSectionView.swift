@@ -1,5 +1,5 @@
 //
-//  ASAMainClocksSectionView.swift
+//  ASALocationWithClocksSectionView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct ASAMainClocksSectionView: View {
+struct ASALocationWithClocksSectionView: View {
     enum Detail {
         case none
         case newClock
         case locationInfo
-    } // enum ASAMainClocksSectionDetail
+    } // enum Detail
     
     @EnvironmentObject var userData:  ASAModel
 
@@ -32,9 +32,15 @@ struct ASAMainClocksSectionView: View {
     
     var body: some View {
         let location = locationWithClocks.location
+        let usesDeviceLocation = locationWithClocks.usesDeviceLocation
+        let processed: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
+            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
+        }
+        let headerColor = processed.dayPart.locationColor
         
         Section(header: HStack {
             ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: true)
+            
 #if os(watchOS)
 #else
             Spacer()
@@ -84,16 +90,23 @@ struct ASAMainClocksSectionView: View {
                 ])
             }
 #endif
-        }) {
-            let location = locationWithClocks.location
-            let usesDeviceLocation = locationWithClocks.usesDeviceLocation
+        } // HStack
+            .padding()
+            .foregroundStyle(Color.white)
+            .background(headerColor)
+            .listRowInsets(EdgeInsets(
+                top: 0,
+                leading: 0,
+                bottom: 0,
+                trailing: 0))
+        ) {
             ForEach(locationWithClocks.clocks.indices, id: \.self) {
                 index
                 in
                 
                 if index < locationWithClocks.clocks.count {
                     let clock = locationWithClocks.clocks[index]
-                    let processedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
+                    let processedClock = processed[index]
                     
 #if os(watchOS)
                     let shouldShowMiniCalendar = false
