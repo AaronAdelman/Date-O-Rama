@@ -1907,6 +1907,7 @@
         {type: "D", start: {mon: 8, d: 29}, titles: {"en": "National Chop Suey Day"}, urls: {"en": "https://www.daysoftheyear.com/days/chop-suey-day/"}},
         {type: "D", start: {mon: 8, d: 29}, titles: {"en": "Individual Rights Day", "he": "יום זכויות הפרט"}, urls: {"en": "https://www.daysoftheyear.com/days/individual-rights-day/"}},
         {type: "D", start: {mon: 8, d: 29}, titles: {"en": "National Lemon Juice Day", "he": "יום מיץ הלימונים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/lemon-juice-day/"}, emoji: "🍋"},
+        {type: "D", start: {mon: 8, d: 3}, titles: {"en": "Airplane Crop Duster Day"}, urls: {"en": "https://www.checkiday.com/cce48b0a3e78089c16c4c38a15deb1fe/airplane-crop-duster-day"}, emoji: "🛩️"},
         {type: "D", start: {mon: 8, d: 3}, titles: {"en": "Big Forehead Day"}, urls: {"en": "https://www.daysoftheyear.com/days/big-forehead-day/"}, notes: {"en": "National Big Forehead Day"}},
         {type: "D", start: {mon: 8, d: 3}, titles: {"en": "National Grab Some Nuts Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-grab-some-nuts-day/"}, emoji: "🌰🥜"},
         {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Grief Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/grief-awareness-day/", "he": "יום המודעות הלאומי לצער"}, emoji: "☹️", first: {era: 1, y: 2014}, inherits: "*MedAwareness*"},

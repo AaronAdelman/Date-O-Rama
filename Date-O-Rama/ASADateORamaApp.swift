@@ -50,23 +50,23 @@ struct ASADateORamaApp: App {
                         HStack {
                             Spacer()
                             
-                            Button(action: {
-                                now = now.oneDayBefore
-                            }) {
-                                Image(systemName: "arrowtriangle.backward.fill")
-                            }
-                            .buttonStyle(.bordered)
-                            
-                            Spacer()
-                            
-                            Button(action: {
-                                now = now.oneDayAfter
-                            }) {
-                                Image(systemName: "arrowtriangle.forward.fill")
-                            }
-                            .buttonStyle(.bordered)
-                            
-                            Spacer()
+//                            Button(action: {
+//                                now = now.oneDayBefore
+//                            }) {
+//                                Image(systemName: "arrowtriangle.backward.fill")
+//                            }
+//                            .buttonStyle(.bordered)
+//                            
+//                            Spacer()
+//                            
+//                            Button(action: {
+//                                now = now.oneDayAfter
+//                            }) {
+//                                Image(systemName: "arrowtriangle.forward.fill")
+//                            }
+//                            .buttonStyle(.bordered)
+//                            
+//                            Spacer()
                             
                             DatePicker(
                                 selection: $now,
@@ -145,6 +145,22 @@ struct ASADateORamaApp: App {
                                     if !usingRealTime {
                                         Image(systemName: "checkmark")
                                     }
+                                }
+                                
+                                Divider()
+                                
+                                Button(action: {
+                                    usingRealTime = false
+                                    now = now.oneDayBefore
+                                }) {
+                                    Label("Previous day", systemImage: "arrowtriangle.backward.fill")
+                                }
+                                
+                                Button(action: {
+                                    usingRealTime = false
+                                    now = now.oneDayAfter
+                                }) {
+                                    Label("Next day", systemImage: "arrowtriangle.forward.fill")
                                 }
                             } label: {
                                 Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)

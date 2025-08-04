@@ -3512,6 +3512,23 @@
         }
       }
     },
+    "Next day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היום הבא"
+          }
+        }
+      }
+    },
     "NO_COUNTRY_OR_REGION" : {
       "comment" : "\"NO_PLACE_NAME\"        = \"International\";",
       "extractionState" : "stale",
@@ -3604,6 +3621,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "הצג כרטיס איש קשר…"
+          }
+        }
+      }
+    },
+    "Previous day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous day"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היום שעבר"
           }
         }
       }
