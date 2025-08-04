@@ -51,6 +51,7 @@
         {type: "D", start: {mon: 2, d: 29}, titles: {"en": "Bachelor’s Day"}, notes: {"en": "This observance feels socially outdated and awkward."}, urls: {"en": "https://en.wikipedia.org/wiki/Bachelor%27s_Day_(tradition)"}},
         {type: "D", start: {mon: 3, wkd: [5], nth: 1}, inherits: "World Book Day UK & Ireland", first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 1, d: 24, thruD: 30, wkd: [1]}, inherits: "Holocaust Memorial Day", titles: {"en": "International Day of Remembrance for the Victims of the Holocaust", "ga": "An Lá Idirnáisiúnta Cuimhneacháin ar íospartaigh an Uileloiscthe"}},
+        {type: "nD", start: {mon: 8, d: 10, durationD: 3}, titles: {"en": "Puck Fair"}, urls: {"en": "https://puckfair.ie/"}, first: {era: 1, y: 1603}, emoji: "🐐"},
    ],
     templates: [
         {template: "St. Brigid’s Day (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, titles: {"en": "St. Brigid’s Day (in lieu)"}},

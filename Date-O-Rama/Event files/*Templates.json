@@ -449,7 +449,7 @@
         {template: "National Maple Syrup Day", type: "D", start: {mon: 12, d: 17}, titles: {"en": "National Maple Syrup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/maple-syrup-day/"}, emoji: "🧇🥞"},
         {template: "National Maritime Day", type: "D", start: {mon: 5, d: 22}, titles: {"en": "National Maritime Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
         {template: "National Milk Day", type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Milk Day", "he": "יום החלב הלאומי"}, emoji: "🥛"},
-        {template: "National Night Out", type: "D", start: {mon: 8, wkd: [3], nth: 1}, urls: {"en": "https://natw.org/"}, titles: {"en": "National Night Out"}, first: {era: 1, y: 1984}},
+        {template: "National Night Out", type: "D", start: {mon: 8, wkd: [3], nth: 1}, titles: {"en": "National Night Out"}, notes: {"en": "National Night Out Day"}, urls: {"en": "https://natw.org/"}, first: {era: 1, y: 1984}},
         {template: "National Nothing Day", type: "D", start: {mon: 1, d: 16}, titles: {"en": "National Nothing Day", "he": "יום הלא כלום הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/nothing-day/"}, emoji: "0️⃣", notes: {"en": "Nothingday"}},
         {template: "National Pastor’s Spouses Day", type: "D", start: {mon: 9, wkd: [1], nth: 1}, titles: {"en": "National Pastor’s Spouses Day"}, urls: {"en": "https://nationaldaycalendar.com/national-pastors-spouses-day-first-sunday-in-september/"}, emoji: "📖🤍"},
         {template: "National Pet Month", type: "M", start: {mon: 5}, titles: {"en": "National Pet Month"}, emoji: "🐰🐱🐶"},

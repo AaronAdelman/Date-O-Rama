@@ -80,7 +80,7 @@
         {type: "D", start: {mon: 8, d: 1}, titles: {"en": "Albariño Day"}, urls: {"en": "https://www.daysoftheyear.com/days/albarino-day/"}, emoji: "🍷", first: {era: 1, y: 1953}},
         {type: "D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 8, d: 5}, titles: {"en": "Feast of the White Virgin"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en": "Álava"}},
-        {titles: {"en": "Day of Cantabria"}, type: "D", start: {mon: 8, wkd: [1], nth: 2}, urls: {"en": "https://nationaltoday.com/the-day-of-cantabria/"}, first: {era: 1, y: 1981}, emoji: "🏙️"},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 2}, titles: {"en": "Day of Cantabria", "es": "Día de Cantabria"}, notes: {"en": "Cantabria Day"}, urls: {"en": "https://diadecantabria.com/en/", "es": "https://diadecantabria.com/"}, first: {era: 1, y: 1967}, emoji: "🏙️"},
         {type: "D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/day-of-navarre/"}, titles: {"en": "Day of Navarre"}, emoji: "🏙️"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/reconquest-day/"}, titles: {"en": "Reconquest Day"}},
         {type: "D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/andalusia-day/"}, titles: {"en": "Andalusia Day"}, first: {era: 1, y: 1980}},

@@ -31,8 +31,8 @@
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, titles: {"en": "Turkmen Bakhshi Day"}},
         {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Day of the Worker in the Organs of National Security"}},
         {type: "D", start: {mon: 10, d: 9}, inherits: "Navy Day"},
-        {inherits: "Health Day", type: "D", start: {mon: 11, wkd: [7], nth: 1}},
-        {inherits: "Melon Day", type: "D", start: {mon: 8, wkd: [1], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/melon-day/"}},
+        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, inherits: "Health Day"},
+        {type: "D", start: {mon: 8, d: 9}, inherits: "Melon Day", urls: {"en": "https://www.daysoftheyear.com/days/melon-day/"}},
         {type: "D", start: {mon: 12, wkd: [1], nth: 1}, titles: {"en": "Good Neighborliness Day"}},
 
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},

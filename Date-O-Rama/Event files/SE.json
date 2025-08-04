@@ -44,7 +44,6 @@
         {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
         {type: "D", start: {mon: 3, d: 25}, inherits: "Waffle Day"},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "Cinnamon Roll Day", "sv": "Kanelbullens dag"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/cinnamon-roll-day/"}, notes: {"en": "​National Cinnamon Bun Day\nCinnamon Roll Day\nNational Cinnamon Roll Day"}},
-        {type: "D", start: {mon: 8, wkd: [4], nth: 1}, titles: {"en": "Crayfish Party"}, urls: {"en": "https://www.daysoftheyear.com/days/crayfish-party/"}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
     ]
 }
