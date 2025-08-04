@@ -140,6 +140,8 @@
 		A53437512857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
 		A53437522857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
 		A53437532857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
+		A536371A2E408D460038956A /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
+		A536371B2E408D570038956A /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
 		A53639A026EF7A000083C571 /* Western Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Western Christianity (general).json */; };
 		A53639A126EF7A000083C571 /* Western Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Western Christianity (general).json */; };
 		A5364D972850F9D500054BC2 /* Sunni Islam (times, MWL).json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D962850F9D500054BC2 /* Sunni Islam (times, MWL).json */; };
@@ -856,6 +858,8 @@
 		A5E638D62E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
 		A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
 		A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
+		A5E638DA2E408464007F53D2 /* AHA.json in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
+		A5E638DB2E408464007F53D2 /* AHA.json in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
 		A5E713DE2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E713DF2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E7590E2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
@@ -1663,6 +1667,7 @@
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
 		A5E638CD2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniProcessedClock.swift; sourceTree = "<group>"; };
 		A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedClockProtocol.swift; sourceTree = "<group>"; };
+		A5E638D92E40845C007F53D2 /* AHA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AHA.json; sourceTree = "<group>"; };
 		A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ML (Muslim).json"; sourceTree = "<group>"; };
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
 		A5E759102768D0F8008D7D57 /* EU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EU.json; sourceTree = "<group>"; };
@@ -1901,6 +1906,7 @@
 				A5E292E2285A616500925EBD /* AL.json */,
 				A5FB22DB286462FB00B5042B /* AL (Julian).json */,
 				A5B9999E286228DF00072FD5 /* AM.json */,
+				A5E638D92E40845C007F53D2 /* AHA.json */,
 				A5E292C4285A446000925EBD /* AO.json */,
 				A5E04AAF2851CA5F001A4911 /* AQ.json */,
 				A5E292E8285A625000925EBD /* AR.json */,
@@ -2743,6 +2749,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A536371B2E408D570038956A /* AHA.json in Resources */,
 				A5FB22D72863910C00B5042B /* YE.json in Resources */,
 				A57797D12B8FC0A200F68529 /* SN (Muslim).json in Resources */,
 				A5BDE7A12667B66800F47416 /* IL.json in Resources */,
@@ -3156,6 +3163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A536371A2E408D460038956A /* AHA.json in Resources */,
 				A5FB22D02863908600B5042B /* VG.json in Resources */,
 				A5201CBB2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5E495F528624EFE001BF40C /* GP.json in Resources */,
@@ -3671,6 +3679,7 @@
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
+				A5E638DA2E408464007F53D2 /* AHA.json in Sources */,
 				A5DB52D9278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAMessageKeys.swift in Sources */,
@@ -3838,6 +3847,7 @@
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A59D80222600C57800FD8BBF /* ASACalendar.swift in Sources */,
+				A5E638DB2E408464007F53D2 /* AHA.json in Sources */,
 				A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */,
 				A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */,
 				A5D135BD27C537C500A1A525 /* ASACalendarWithQuarters.swift in Sources */,

@@ -1,0 +1,15 @@
+{
+    titles: {"en": "American Homebrewers Association"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.60, green: 0.20, blue: 0.0},
+    first: {era: 1, y: 1998},
+    urls: {"en": "https://homebrewersassociation.org/"},
+    emoji: "🍻",
+    events: [
+        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "Learn to Homebrew Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/learn-to-homebrew-day/"}, first: {era: 1, y: 1999}},
+        {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "Home Fermentation Day"}, notes: {"en": "National Mead Day\nMead Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/home-fermentation-day/"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 5, wkd: [7], nth: 1}, titles: {"en": "National Homebrew Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/big-brew-national-homebrew-day/"}, first: {era: 1, y: 1998}},
+    ]
+}
+
