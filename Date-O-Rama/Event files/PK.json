@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.25, blue: 0.13},
     first: {era: 1, y: 1947},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Pakistan"},
     events: [
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2015}},
