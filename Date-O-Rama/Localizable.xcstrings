@@ -187,23 +187,6 @@
         }
       }
     },
-    "ABOUT_TAB" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "About"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "אודות"
-          }
-        }
-      }
-    },
     "Add" : {
       "localizations" : {
         "he" : {
@@ -1036,24 +1019,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "פרטי שעון"
-          }
-        }
-      }
-    },
-    "COMPLICATION_CLOCKS_TAB" : {
-      "comment" : "\"EVENTS_TAB\"              = \"Events\";",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Watch"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "שעון יד"
           }
         }
       }
@@ -3529,24 +3494,6 @@
         }
       }
     },
-    "NO_COUNTRY_OR_REGION" : {
-      "comment" : "\"NO_PLACE_NAME\"        = \"International\";",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "International"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "בינלאומי"
-          }
-        }
-      }
-    },
     "NO_DEVICE_LOCATION_PERMISSION" : {
       "localizations" : {
         "en" : {
@@ -4039,88 +3986,64 @@
       }
     },
     "Sort by name ↑" : {
-
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין לפי שם ↑"
+          }
+        }
+      }
     },
     "Sort by name ↓" : {
-
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין לפי שם ↓"
+          }
+        }
+      }
     },
     "Sort east to west" : {
-
-    },
-    "Sort locations by name ascending" : {
-      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "מיין מיקומים לפי שם עולה"
-          }
-        }
-      }
-    },
-    "Sort locations by name descending" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיין מיקומים לפי שם יורד"
-          }
-        }
-      }
-    },
-    "Sort locations east to west" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיין מיקומים ממזרח למערב"
-          }
-        }
-      }
-    },
-    "Sort locations north to south" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיין מיקומים מצפון לדרום"
-          }
-        }
-      }
-    },
-    "Sort locations south to north" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיין מיקומים מדרום לצפון"
-          }
-        }
-      }
-    },
-    "Sort locations west to east" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיין מיקומים ממערב למזרח"
+            "value" : "מיין מזרח למערב"
           }
         }
       }
     },
     "Sort north to south" : {
-
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין צפון לדרום"
+          }
+        }
+      }
     },
     "Sort south to north" : {
-
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין דרום לצפון"
+          }
+        }
+      }
     },
     "Sort west to east" : {
-
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מיין מערב למזרח"
+          }
+        }
+      }
     },
     "Spring ahead" : {
       "localizations" : {
