@@ -81,12 +81,12 @@ struct ASALocationsTab: View {
                                 userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
                                     return false
                                 }
-                                
-                                if $1.location.type == .MarsUniversal {
-                                    return true
-                                }
-                                
-                                return $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
+                                    
+                                    if $1.location.type == .MarsUniversal {
+                                        return true
+                                    }
+                                    
+                                    return $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort east to west", systemImage: "arrow.left")
@@ -96,12 +96,12 @@ struct ASALocationsTab: View {
                                 userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
                                     return false
                                 }
-                                
-                                if $1.location.type == .MarsUniversal {
-                                    return true
-                                }
-                                
-                                return $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
+                                    
+                                    if $1.location.type == .MarsUniversal {
+                                        return true
+                                    }
+                                    
+                                    return $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort south to north", systemImage: "arrow.up")
@@ -111,12 +111,12 @@ struct ASALocationsTab: View {
                                 userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
                                     return false
                                 }
-                                
-                                if $1.location.type == .MarsUniversal {
-                                    return true
-                                }
-                                
-                                return $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
+                                    
+                                    if $1.location.type == .MarsUniversal {
+                                        return true
+                                    }
+                                    
+                                    return $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort north to south", systemImage: "arrow.down")
@@ -166,51 +166,50 @@ struct ASALocationWithClocksCell: View {
         let timeString = times.joined(separator: " • ")
         
         let cellBackground = processed.dayPart.locationColor
-        ZStack {
-            RoundedRectangle(cornerRadius: 8.0)
-                .fill(cellBackground)
-            
-            VStack {
-                HStack {
-                    ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
-                    
-                    Spacer()
-                    ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
-                        self.showingActionSheet = true
-                    } infoAction: {
-                        self.showingGetInfoView = true
-                    } newClockAction: {debugPrint("Foo!")}
-                        .environmentObject(userData)
-                        .sheet(isPresented: self.$showingGetInfoView) {
-                            VStack {
-                                HStack {
-                                    Button(action: {
-                                        showingGetInfoView = false
-                                    }) {
-                                        ASACloseBoxImage()
-                                    }
-                                    Spacer()
-                                } // HStack
-                                ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
-                            }
-                            .font(.body)
-                        }
-                        .actionSheet(isPresented: self.$showingActionSheet) {
-                            ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
-                                .destructive(Text("Delete this location")) {
-                                    userData.removeLocationWithClocks(locationWithClocks)
-                                },
-                                .default(Text("Cancel")) {  }
-                            ])
-                        }
-                } // HStack
+        
+        VStack {
+            HStack {
+                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
                 
-                Text(timeString)
-                    .font(.largeTitle)
-            } // VStack
-            .foregroundStyle(Color.white)
-            .padding()
-        } // ZStack
+                Spacer()
+                ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
+                    self.showingActionSheet = true
+                } infoAction: {
+                    self.showingGetInfoView = true
+                } newClockAction: {debugPrint("Foo!")}
+                    .environmentObject(userData)
+                    .sheet(isPresented: self.$showingGetInfoView) {
+                        VStack {
+                            HStack {
+                                Button(action: {
+                                    showingGetInfoView = false
+                                }) {
+                                    ASACloseBoxImage()
+                                }
+                                Spacer()
+                            } // HStack
+                            ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+                        }
+                        .font(.body)
+                    }
+                    .actionSheet(isPresented: self.$showingActionSheet) {
+                        ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
+                            .destructive(Text("Delete this location")) {
+                                userData.removeLocationWithClocks(locationWithClocks)
+                            },
+                            .default(Text("Cancel")) {  }
+                        ])
+                    }
+            } // HStack
+            
+            Text(timeString)
+                .font(.largeTitle)
+        } // VStack
+        .foregroundStyle(Color.white)
+        .padding()
+        .background(cellBackground)
+        .clipShape(RoundedRectangle(cornerRadius: 8.0))
+        .listRowSeparator(.hidden)
     }
 }
 
