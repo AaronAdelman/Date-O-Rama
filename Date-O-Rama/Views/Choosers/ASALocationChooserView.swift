@@ -155,10 +155,8 @@ struct ASALocationChooserView: View {
                     }
                     
                     Section {
-                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
-                            tempLocationData
-                            in
-                            MapPin(coordinate: tempLocationData.location.coordinate )
+                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) { tempLocationData in
+                            MapMarker(coordinate: tempLocationData.location.coordinate)
                         }
                         .aspectRatio(1.0, contentMode: .fit)
                     } // Section

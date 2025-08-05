@@ -40,10 +40,8 @@ struct ASALocationDetailView: View {
                 Section {
                     if locationWithClocks.location.type == .EarthLocation {
                         let METERS = 1000000.0
-                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: METERS, longitudinalMeters: METERS)), annotationItems:  [locationWithClocks.location]) {
-                            tempLocationData
-                            in
-                            MapPin(coordinate: tempLocationData.location.coordinate )
+                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: METERS, longitudinalMeters: METERS)), annotationItems:  [locationWithClocks.location]) { tempLocationData in
+                            MapMarker(coordinate: tempLocationData.location.coordinate)
                         }
                         .aspectRatio(1.0, contentMode: .fit)
                         .padding()
