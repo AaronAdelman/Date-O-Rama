@@ -50,24 +50,6 @@ struct ASADateORamaApp: App {
                         HStack {
                             Spacer()
                             
-//                            Button(action: {
-//                                now = now.oneDayBefore
-//                            }) {
-//                                Image(systemName: "arrowtriangle.backward.fill")
-//                            }
-//                            .buttonStyle(.bordered)
-//                            
-//                            Spacer()
-//                            
-//                            Button(action: {
-//                                now = now.oneDayAfter
-//                            }) {
-//                                Image(systemName: "arrowtriangle.forward.fill")
-//                            }
-//                            .buttonStyle(.bordered)
-//                            
-//                            Spacer()
-                            
                             DatePicker(
                                 selection: $now,
                                 in: Date.distantPast...Date.distantFuture,
@@ -153,14 +135,14 @@ struct ASADateORamaApp: App {
                                     usingRealTime = false
                                     now = now.oneDayBefore
                                 }) {
-                                    Label("Previous day", systemImage: "arrowtriangle.backward.fill")
+                                    Label("Previous day", systemImage: "chevron.backward")
                                 }
                                 
                                 Button(action: {
                                     usingRealTime = false
                                     now = now.oneDayAfter
                                 }) {
-                                    Label("Next day", systemImage: "arrowtriangle.forward.fill")
+                                    Label("Next day", systemImage: "chevron.forward")
                                 }
                             } label: {
                                 Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
