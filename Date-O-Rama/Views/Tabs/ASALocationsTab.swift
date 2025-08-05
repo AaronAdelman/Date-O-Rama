@@ -62,28 +62,61 @@ struct ASALocationsTab: View {
                             }
                             
                             Button {
-                                userData.mainClocks.sort(by: { $0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude })
+                                userData.mainClocks.sort(by: {
+                                    if $0.location.type == .MarsUniversal {
+                                        return false
+                                    }
+                                    
+                                    if $1.location.type == .MarsUniversal {
+                                        return true
+                                    }
+                                    
+                                    return $0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort west to east", systemImage: "arrow.right")
                             }
                             
                             Button {
-                                userData.mainClocks.sort(by: { $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
+                                userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
+                                    return false
+                                }
+                                
+                                if $1.location.type == .MarsUniversal {
+                                    return true
+                                }
+                                
+                                return $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort east to west", systemImage: "arrow.left")
                             }
                             
                             Button {
-                                userData.mainClocks.sort(by: { $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
+                                userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
+                                    return false
+                                }
+                                
+                                if $1.location.type == .MarsUniversal {
+                                    return true
+                                }
+                                
+                                return $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort south to north", systemImage: "arrow.up")
                             }
                             
                             Button {
-                                userData.mainClocks.sort(by: { $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
+                                userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
+                                    return false
+                                }
+                                
+                                if $1.location.type == .MarsUniversal {
+                                    return true
+                                }
+                                
+                                return $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
                                 userData.savePreferences(code: .clocks)
                             } label: {
                                 Label("Sort north to south", systemImage: "arrow.down")
