@@ -1,5 +1,5 @@
 //
-//  ASAWatchMainClocksView.swift
+//  ASAWatchLocationsView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 28/07/2025.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainClocksView: View {
+struct ASAWatchLocationsView: View {
     @EnvironmentObject var userData:  ASAModel
     @Binding var now:  Date
     
@@ -16,8 +16,10 @@ struct ASAMainClocksView: View {
         ForEach($userData.mainClocks, id: \.self.id) {
             section
             in
-            ASALocationWithClocksSectionView(now: $now, locationWithClocks: section)
-                .environmentObject(userData)
+            Form {
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: section)
+                    .environmentObject(userData)
+            }
         }
     }
-} // struct ASAMainClocksView
+} // struct ASAWatchLocationsView

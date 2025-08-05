@@ -1,5 +1,5 @@
 //
-//  ASAWatchClocksView.swift
+//  ASAWatchOmnibusView.swift
 //  WatchDate-O-Rama Extension
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-31.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAWatchClocksView: View {
+struct ASAWatchOmnibusView: View {
     @EnvironmentObject var userData:  ASAModel
     @State var now = Date()
     
@@ -16,10 +16,8 @@ struct ASAWatchClocksView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                ASAMainClocksView(
-//                    mainClocks: $userData.mainClocks,
-                    now: $now).environmentObject(userData)
+            TabView {
+                ASAWatchLocationsView(now: $now).environmentObject(userData)
             }
         }
         .onReceive(timer) { input in
@@ -31,8 +29,8 @@ struct ASAWatchClocksView: View {
     }
 }
 
-struct ASAWatchClocksView_Previews: PreviewProvider {
+struct ASAWatchOmnibusView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAWatchClocksView()
+        ASAWatchOmnibusView()
     }
 }
