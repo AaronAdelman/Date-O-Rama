@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ASACompactForwardChevronSymbol: View {
     var characterDirection:  Locale.LanguageDirection {
-        return Locale.characterDirection(forLanguage: Locale.current.identifier)
+//        return Locale.characterDirection(forLanguage: Locale.current.identifier)
+        return Locale.Language(identifier: Locale.current.identifier).characterDirection
     } // var characterDirection
     
     var body: some View {

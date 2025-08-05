@@ -162,8 +162,9 @@ struct ASAMiniCalendarView:  View {
     } // func gridRange() -> ClosedRange<Int>
     
     var characterDirection:  Locale.LanguageDirection {
-        return Locale.characterDirection(forLanguage: localeIdentifier)
-    } // var characterDirection
+//        return Locale.characterDirection(forLanguage: localeIdentifier)
+        return Locale.Language(identifier: localeIdentifier).characterDirection
+  } // var characterDirection
     
     var body: some View {
         let numberFormatter:  NumberFormatter = {
