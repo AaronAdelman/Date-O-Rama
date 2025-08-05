@@ -49,18 +49,6 @@ func GregorianCalculateEaster(year: Int) -> (month: Int, day: Int) {
     return (n, day)
 }
 
-func JulianCalculateEaster(year: Int) -> (month: Int, day: Int) {
-    let a: Int = year % 4
-    let b: Int = year % 7
-    let c: Int = year % 19
-    let d: Int = ((19 * c) + 15) % 30
-    let e: Int = ((2 * a) + (4 * b) - d + 34) % 7
-    let f: Int = (d + e + 114) / 31
-    let g: Int = (d + e + 114) % 31
-    let day: Int = g + 1
-    return (f, day)
-}
-
 
 // MARK:  -
 

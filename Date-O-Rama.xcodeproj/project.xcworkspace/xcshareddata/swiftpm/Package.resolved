@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "JulianDayNumber",
+        "repositoryURL": "https://github.com/sbooth/JulianDayNumber?tab=readme-ov-file",
+        "state": {
+          "branch": null,
+          "revision": "bf9e525b0de6eef158d9e0ed77836ea12e528d49",
+          "version": "0.7.0"
+        }
+      },
+      {
         "package": "SwiftAA",
         "repositoryURL": "https://github.com/onekiloparsec/SwiftAA",
         "state": {

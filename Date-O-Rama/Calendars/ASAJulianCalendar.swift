@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JulianDayNumber
 
 public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras, ASACalendarWithEaster {
     public let BCE = 0
@@ -18,7 +19,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
             return nil
             
         case CE:
-            return JulianCalculateEaster(year: year)
+            return JulianCalendar.easter(year: year)
             
         default:
             return nil
@@ -288,7 +289,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
     
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let rawComponents = JulianComponents(date: now, timeZone: locationData.timeZone)
+        let rawComponents = julianComponents(date: now, timeZone: locationData.timeZone)
         
         let era: Int     = rawComponents.era
         let year: Int    = rawComponents.year
@@ -424,15 +425,15 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let timeZone = locationData.timeZone
-        let JulianComponents = JulianComponents(date: date, timeZone: timeZone)
-        let era = JulianComponents.era
-        let year = JulianComponents.year
-        let month: Int = JulianComponents.month
-        let weekday = day_of_week(year: JulianComponents.year, mo: month, day: JulianComponents.day)
+        let components = julianComponents(date: date, timeZone: timeZone)
+        let era = components.era
+        let year = components.year
+        let month: Int = components.month
+        let weekday = components.weekday
         let isLeapMonth = isLeapMonth(era: era, year: year, month: month)
-        let day: Int = JulianComponents.day
-        let components = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: JulianComponents.month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: nil, minute: nil, second: nil, nanosecond: nil)
-        return components
+        let day: Int = components.day
+        let result = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: components.month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: nil, minute: nil, second: nil, nanosecond: nil)
+        return result
     }
     
     let MONTHS_PER_YEAR = 12
@@ -651,155 +652,9 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
 } // class ASAJulianCalendar
 
 
-// MARK: - Low-level functions
-
-// Based on “Algorithms for Julian Dates” by Richard L. Branham, Jr. (https://dl.acm.org/doi/pdf/10.1145/219340.219343).
-// Comments are left intact to make it easier to figure out what is going on.
-
-/// Routine to calculate a Julian day number for a year, month, and day given on the Julian calendar. Dates B.C. should be expressed in astronomical format (i.e.) dateB.C. = -(date - 1). Thus, 747B.C. = -746. Input to routine are the year, month, and day expressed as integers; output is the Julian day number as a double-precision floating-point number.
-/// - Parameters:
-///   - year: Year
-///   - mo: Month
-///   - day: Day
-/// - Returns: A Double encoding the Julian date
-func julian(year: Int, mo: Int, day: Int) -> Double {
-    var jd: Double
-    var sum = 0
-    var begin_year: Int
-    
-    /* Correct for difference between astronomical and civil time */
-    var dayAsDouble: Double = Double(day)
-    dayAsDouble -= 0.5
-    /* Calculate Julian day number for the beginning of the year. */
-    begin_year = ((1461*(4712 + year) - 1)/4)
-    jd = Double(begin_year)
-    if (year == -4712) {
-        jd -= 1
-    }
-    /* Add the number of days in the month */
-    jd += dayAsDouble
-    /* Sum the number of days in the preceding months */
-    for i in 1..<mo {
-        if (i == 2) {
-            sum += 28
-        } else {
-            if i == 4 || i == 6 || i == 9 || i == 11 {
-                sum += 30
-            } else {
-                sum += 31
-            }
-        }
-    }
-    jd += Double(sum)
-    
-    /* Add one more day if a leap year */
-    if (mo > 2 && (4 * (year / 4) - year ) == 0 ) {
-        jd += 1
-    }
-    return jd
-} // func julian(year: Int, mo: Int, day: Int) -> Double
-
-/// Function to take a Julian date and convert it to a day, month and year on the Julian calendar. The program or function that calls this routine must pass the addresses of the integer variables yr (year) and mo (month) and the double-precision variable day.
-/// - Parameter jd: Julian date
-/// - Returns: A tuple containing the equivalent year, month, and day on the Julian calendar
-func julian_ymd(jd: Double) -> (yr: Int, mo: Int, day: Double) {
-    var begin_year: Int
-    var jdhold: Double
-    var yr: Int
-    var mo: Int
-    var day: Double
-    
-    if (fabs(jd) < 1e-15) { /* Consider JD 0 a special case */
-        yr = -4712;
-        mo = 1
-        day = 0.5
-        return (yr, mo, day)
-    }
-    
-    jdhold = jd;
-    /* Find number of Julian years in the Julian date */
-    var JulianDate = jd
-    JulianDate /= 365.25
-    JulianDate -= 4712.0 // Subtract origin of Julian date
-    /* Calculate the year */
-    yr = Int(JulianDate);
-    if (JulianDate < 0.0) {
-        yr -= 1
-    }
-    /* Find Julian day number of beginning of year */
-    begin_year = (1461 * (4712 + yr) - 1) / 4
-    /* Find number of days since beginning of year */
-    day = jdhold - Double(begin_year) + 0.5
-    mo = 1  /* Calculate the month and day */
-    if (day > 31.0) {
-        while(day > 31.0) {
-            if (mo == 2) {
-                if (yr % 4 == 0) {
-                    day -= 29.0
-                } else {
-                    day -= 28.0
-                }
-            } else {
-                if (mo == 4 || mo == 6 || mo == 9 || mo == 11) {
-                    day -= 30.0
-                } else {
-                    day -= 31.0
-                }
-            }
-            mo += 1
-        }
-    }
-    
-    if mo > 12 {
-        mo -= 12
-        yr +=  1
-    }
-    
-    if mo.is30DayMonth && day >= 30.0 {
-        mo  = mo  +  1
-        day = day - 30.0
-    }
-    
-    return (yr, mo, day)
-} // func julian_ymd(jd: Double) -> (yr: Int, mo: Int, day: Double)
-
-/// Function to calculate the day of the week that corresponds with a day, month, and year on the Julian calendar. The routine returns a pointer to a string. The calling program or function should declare a pointer-to-string variable to receive the value return.
-/// - Parameters:
-///   - inYear: Year
-///   - inMo: Month
-///   - day: Day
-/// - Returns: Day of the week (1 = Sunday, 2 = Monday, 3 = Tuesday, etc.)
-func day_of_week(year inYear: Int, mo inMo: Int, day: Int) -> Int {
-    var year = inYear
-    var mo   = inMo
-    
-    var m: Int
-    var n: Int
-    year += 4732 /* Make all years positive */
-    if (mo == 1 || mo == 2) { /* January and February are months 13 and 14 of the preceding year */
-        mo += 12
-        year -= 1
-    }
-   /* Calculate a parameter "n" that gives the day of the week */
-    m = day + 2 * mo + (3 * mo + 3) / 5 + year + year / 4 + 6
-    n = m % 7 + 1
-    assert(n >= 1)
-    assert(n <= 7)
-    return n
-} // func day_of_week(year inYear: Int, mo inMo: Int, day: Int) -> Int
-
-
 // MARK: - Stuff I wrote above and beyond these
 
 extension Int {
-//    var isLeapYear: Bool {
-//        return self % 4 == 0
-//    }
-    
-    var is30DayMonth: Bool {
-        return self == 4 || self == 6 || self == 9 || self == 11
-    }
-    
     var eraAndYearFromAstronomicalYear: (era: Int, year: Int) {
         if self > 0 {
             return (1, self)
@@ -811,7 +666,7 @@ extension Int {
 
 func isLeapYear(era: Int, year: Int) -> Bool {
     guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
-    return astronomicalYear % 4 == 0
+    return JulianCalendar.isLeapYear(astronomicalYear)
 }
 
 func astronomicalYear(era: Int, year: Int) -> Int? {
@@ -827,34 +682,29 @@ func astronomicalYear(era: Int, year: Int) -> Int? {
     }
 }
 
-func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
+func julianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
     var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).JulianDate
     
-    var GregorianCalendar = Calendar.gregorian
-    GregorianCalendar.timeZone = timeZone
-    let GregorianComponents = GregorianCalendar.dateComponents([.hour, .minute, .second, .nanosecond], from: date)
-    if GregorianComponents.hour == 0 && GregorianComponents.minute == 0 && GregorianComponents.second == 0 && GregorianComponents.nanosecond == 0 {
+    var gregorian = Calendar.gregorian
+    gregorian.timeZone = timeZone
+    let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: date)
+    if gregorianComponents.hour == 0 && gregorianComponents.minute == 0 && gregorianComponents.second == 0 && gregorianComponents.nanosecond == 0 {
         dateAsJulianDate += 1
     }
     
-    let JulianComponents = julian_ymd(jd: dateAsJulianDate)
-    let day: Int = Int(ceil(JulianComponents.day))
-    let astronomicalYear: Int = JulianComponents.yr
-    let JulianDayOfWeek = day_of_week(year: astronomicalYear, mo: JulianComponents.mo, day: day)
+    let julianYMD = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
+
+    let day = julianYMD.day
+    let astronomicalYear: Int = julianYMD.year
+    let weekday = gregorianComponents.weekday!
     let (era, year) = astronomicalYear.eraAndYearFromAstronomicalYear
-    let month: Int = JulianComponents.mo
+    let month: Int = julianYMD.month
 //    assert(isValidJulianDate(era: era, year: year, month: month, day: day))
-    return (era, year, month, day, JulianDayOfWeek, GregorianComponents.hour!, GregorianComponents.minute!, GregorianComponents.second!, GregorianComponents.nanosecond!)
+    return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
 } // func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
 
 func daysForMonthInJulianDate(era: Int, year: Int, month: Int) -> Int {
-    if month.is30DayMonth {
-        return 30
-    } else if month == 2 {
-        return isLeapYear(era: era, year: year) ? 29 : 28
-    } else {
-        return 31
-    }
+    return JulianCalendar.numberOfDaysIn(month: month, year: year)
 }
 
 func isValidJulianDate(era: Int, year: Int, month: Int, day: Int) -> Bool {
@@ -879,10 +729,10 @@ func isValidJulianDate(era: Int, year: Int, month: Int, day: Int) -> Bool {
 func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
     guard isValidJulianDate(era: era, year: year, month: month, day: day) else { return nil }
     guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return nil }
-    let JulianDate = julian(year: astronomicalYear, mo: month, day: day)
+    let julianDate = JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
     let secondsFromGMT = timeZone.secondsFromGMT()
     let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
-    let date = Date.date(JulianDate: JulianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
+    let date = Date.date(JulianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
     return date
 } // func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date?
 
