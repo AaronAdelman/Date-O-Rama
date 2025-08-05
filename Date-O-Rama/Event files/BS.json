@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.66, blue: 0.81},
     first: {era: 1, y: 1973},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Bahamas"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Majority Rule Day"}, first: {era: 1, y: 2014}},

@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.40, blue: 0.12},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bhutan"},
     events: [
         {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Nyinlong", "dz": "ཉིན་ལོང"}, urls: {"en": "https://www.officeholidays.com/holidays/bhutan/winter-solstice-in-bhutan"}, titles: {"en": "Winter Solstice\nNyilo"}},
         {type: "nD", start: {mon: 2, d: 21}, end: {mon: 2, d: 23}, titles: {"en": "Birthday of King Jigme Khesar Namgyel Wangchuck", inherits: "*BDay*"}, first: {era: 1, y: 1980}},

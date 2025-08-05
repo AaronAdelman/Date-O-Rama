@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Belarus"},
+    first: {era: 1, y: 1991},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

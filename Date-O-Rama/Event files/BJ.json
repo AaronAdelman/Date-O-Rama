@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.13, green: 0.53, blue: 0.28},
     first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Benin"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {titles: {"en": "Traditional Day", "fr": "Fête du Vodoun"}, type: "D", start: {mon: 1, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/benin/traditional-day"}},

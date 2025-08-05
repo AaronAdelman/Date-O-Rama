@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.67, green: 0.79, blue: 0.91},
     first: {era: 1, y: 1966},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Botswana"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/botswana/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
