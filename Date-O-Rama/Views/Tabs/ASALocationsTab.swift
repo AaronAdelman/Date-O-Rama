@@ -27,8 +27,10 @@ struct ASALocationsTab: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0.0) {
+                    let frameHeight: CGFloat? = (UIDevice.current.userInterfaceIdiom == .phone && (UIDevice.current.orientation == .portrait || UIDevice.current.orientation == .faceUp)) ? 0.0 : 44.0 // This is a hack to get the layout to work right on the iPhone.
+
                     Spacer()
-                        .frame(height: 44.0)
+                        .frame(height: frameHeight)
                     
                     List {
                         ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
@@ -41,6 +43,7 @@ struct ASALocationsTab: View {
                         }
                         .onMove(perform: moveClock)
                     } // List
+                    .frame(maxWidth: UIScreen.main.bounds.width - 8.0) // This is a hack to get the layout to work right on the iPhone.
                     .listStyle(.plain)
                     .scrollContentBackground(.hidden)
                     .listRowBackground(Color.clear)
@@ -219,6 +222,8 @@ struct ASALocationWithClocksCell: View {
             
             Text(timeString)
                 .font(.largeTitle)
+                .minimumScaleFactor(0.5)
+                .lineLimit(3)
         } // VStack
         .foregroundStyle(Color.white)
         .padding()
