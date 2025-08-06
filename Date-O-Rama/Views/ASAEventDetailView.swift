@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-//import MapKit
 import EventKit
 import Contacts
 #if os(watchOS)
@@ -23,7 +22,6 @@ struct ASAEventDetailView: View {
     var clock:  ASAClock
     var location: ASALocation
     var usesDeviceLocation: Bool
-//    @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     @State var showingEventEditView = false
     
@@ -76,17 +74,6 @@ struct ASAEventDetailView: View {
             
             ASAEventDetailsNotesAndURLSection(event: event)
             
-//            #if os(watchOS)
-//            #else
-//            let geoLocation = event.geoLocation
-//            if geoLocation != nil {
-//                Section {
-//                    Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
-//                        .aspectRatio(1.0, contentMode: .fit)
-//                } // Section
-//            }
-//            #endif
-            
             let currentUser: EKParticipant? = event.currentUser
             if currentUser != nil {
                 Section {
@@ -96,7 +83,6 @@ struct ASAEventDetailView: View {
                             .foregroundColor(Color.secondary)
                         Spacer()
                         Image(systemName: status.systemName)
-//                            .foregroundColor(status.color)
                             .symbolRenderingMode(.multicolor)
                         Text(status.text)
                     } // HStack
@@ -105,16 +91,6 @@ struct ASAEventDetailView: View {
         } // List
         .listStyle(DefaultListStyle())
         .foregroundColor(.primary)
-        .onAppear() {
-            #if os(watchOS)
-            #else
-//            let geoLocation: CLLocation? = event.geoLocation
-//            if geoLocation != nil {
-//                let meters = 1000.0
-//                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
-//            }
-            #endif
-        }
     } // body
 } // struct ASAEventDetailView
 
@@ -249,9 +225,6 @@ struct ASAEKEventRecurrenceFrequencyView: View {
 
         case .weekly:
             ASAEventFrequencyView(key: "every n weeks", interval: interval)
-//            let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
-//            let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
-//            ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
 
         case .monthly:
             ASAEventFrequencyView(key: "every n months", interval: interval)
@@ -389,17 +362,15 @@ struct ASAEventDetailDateTimeSection: View {
             ASAEventPropertyView(key: "Event calendar", value: event.calendarCode.localizedName)
             
             let (startDateString, endDateString) = clock.longStartAndEndDateStrings(event: event, eventIsTodayOnly: false, location: location)
-
+            
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
-//                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
                 if !(clock.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && location.timeZone.isCurrent) {
-                  Text(dateFormatter().string(from: event.startDate))
+                    Text(dateFormatter().string(from: event.startDate))
                 }
             } else {
                 let DASH = " — "
                 Text(startDateString + DASH + endDateString)
-//                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
                 if !(clock.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && location.timeZone.isCurrent) {
                   let dateFormatter = dateFormatter()
                     let startDateString = dateFormatter.string(from: event.startDate)
@@ -441,11 +412,9 @@ struct ASAEventAlarmView: View {
     var location: ASALocation
     
     func value() -> String {
-//        var strings: Array<String> = []
         
         if alarm.absoluteDate != nil {
             let absoluteDateString: String = row.dateTimeString(now:  alarm.absoluteDate!, location: location)
-//            strings.append(absoluteDateString)
             return absoluteDateString
         } else {
             let offset = abs(alarm.relativeOffset)
@@ -454,12 +423,8 @@ struct ASAEventAlarmView: View {
             let format = before ? "%@ before" : "%@ after"
             let localizedFormat = NSLocalizedString(format, comment: "")
             let filledInFormat: String = String(format: localizedFormat, formattedOffset)
-//            strings.append(filledInFormat)
             return filledInFormat
         }
-                
-//        let joined = ListFormatter.localizedString(byJoining: strings)
-//        return joined
     }
     
     var body: some View {
@@ -528,19 +493,16 @@ struct ASAEKParticipantView: View {
         let keys = [CNContactIdentifierKey, CNContactPhoneNumbersKey]
 
              var contacts = [CNContact]()
-//             var message: String!
 
 
              do {
                 contacts = try contactsStore.unifiedContacts(matching: predicate, keysToFetch: keys as Array<CNKeyDescriptor>)
 
                  if contacts.count == 0 {
-//                     message = "No contacts were found matching the given name."
                     return nil
                  }
              }
              catch {
-//                 message = "Unable to fetch contacts."
                 return nil
              }
 
@@ -553,7 +515,6 @@ struct ASAEKParticipantView: View {
             let contact = self.contactWithPredicate(predicate: participant.contactPredicate)
             
             Image(systemName: status.systemName)
-//                .foregroundColor(status.color)
                 .symbolRenderingMode(.multicolor)
             let name: String = participant.name ?? "???"
             #if os(watchOS)
