@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JulianDayNumber
 
 class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
     public let BCE = 0
@@ -18,7 +19,7 @@ class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
             return nil
             
         case CE:
-            return GregorianCalculateEaster(year: year)
+            return GregorianCalendar.easter(year: year)
             
         default:
             return nil
