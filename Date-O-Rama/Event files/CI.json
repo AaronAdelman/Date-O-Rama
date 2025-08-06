@@ -5,7 +5,8 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.92, green: 0.46, blue: 0.0},
-    first: {era: 1, y: 1960}, 
+    first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ivory_Coast"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

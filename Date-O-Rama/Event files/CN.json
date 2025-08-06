@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_China"},
     events: [
         {inherits: "Tomb-Sweeping Day", type: "D", start: {equinoxOrSolstice: "Mar", offsetD: 15}},
 

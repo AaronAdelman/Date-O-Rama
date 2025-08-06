@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.29, blue: 0.53},
     first: {era: 1, y: 1868},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cuba"},
     events: [
         {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, titles: {"en": "Triumph of the Revolution"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
         {inherits: "Victory Day", type: "D", start: {mon: 1, d: 2}},

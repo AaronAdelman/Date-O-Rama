@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.19, blue: 0.53},
     first: {era: 1, y: 1918},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Czech_Republic"},
     events: [
         {inherits: "Independence Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1993}, titles: {"en": "Restoration Day", "cs": "Den obnovy samostatného českého státu"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

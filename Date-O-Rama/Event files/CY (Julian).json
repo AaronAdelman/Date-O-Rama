@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.84, green: 0.47, blue: 0.00},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},
     events: [
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
