@@ -21,20 +21,34 @@ struct ASALocationsTab: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                    ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                        .environmentObject(userData)
-                        .onTapGesture {
-                            selectedTabIndex = index
-                            showLocationsSheet = false
+            ZStack {
+                Color("locationsBackground")
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                VStack(spacing: 0.0) {
+                    Spacer()
+                        .frame(height: 44.0)
+                    
+                    List {
+                        ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                            ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                                .environmentObject(userData)
+                                .onTapGesture {
+                                    selectedTabIndex = index
+                                    showLocationsSheet = false
+                                }
                         }
-                }
-                .onMove(perform: moveClock)
-            } // List
-            .listStyle(.plain)
-            .listRowBackground(Color.clear)
-            .navigationTitle("")
+                        .onMove(perform: moveClock)
+                    } // List
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
+                    .listRowBackground(Color.clear)
+                    .navigationTitle("Locations")
+                    .navigationBarTitleDisplayMode(.inline)
+                } // Vstack
+                
+            } // ZStack
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Menu {
@@ -127,6 +141,7 @@ struct ASALocationsTab: View {
                     }
                 }
             }
+            .toolbarBackgroundVisibility(.visible, for: .navigationBar)
         }
         .sheet(isPresented: $isShowingNewLocationView) {
             let locationManager = ASALocationManager.shared
@@ -210,6 +225,7 @@ struct ASALocationWithClocksCell: View {
         .background(cellBackground)
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
         .listRowSeparator(.hidden)
+        .listRowBackground(Color.clear)
     }
 }
 
