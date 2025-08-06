@@ -11,7 +11,6 @@ import SwiftUI
 struct ASAComplicationClocksTab: View {
     @EnvironmentObject var userData:  ASAModel
     @Binding var now: Date
-    @State var isNavigationBarHidden:  Bool = true
     
     var body: some View {
         NavigationView {
@@ -27,13 +26,10 @@ struct ASAComplicationClocksTab: View {
                 .listStyle(InsetGroupedListStyle())
                 
                 .colorScheme(.dark)
-                .navigationBarHidden(self.isNavigationBarHidden)
-                .navigationBarTitle("", displayMode: .inline)
+                .navigationTitle("Watch")
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarBackButtonHidden(true)
             }
-        }
-        .onAppear {
-            self.isNavigationBarHidden = true
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

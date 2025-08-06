@@ -4174,6 +4174,23 @@
         }
       }
     },
+    "Watch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעון יד"
+          }
+        }
+      }
+    },
     "What calendar systems are currently supported?" : {
       "extractionState" : "migrated",
       "localizations" : {
