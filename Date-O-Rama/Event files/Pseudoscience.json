@@ -23,6 +23,7 @@
         {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Holistic Pet Day"}, notes: {"en": "Promotes pseudoscience for pet care."}, urls: {"en": "https://skepdic.com/holistic.html"}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, inherits: "HerbDay", first: {era: 1, y: 2006}, last: {era: 1, y: 2011}},
         {type: "D", start: {mon: 5, wkd: [7], nth: 1}, inherits: "HerbDay", first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 8, d: 6}, titles: {"en": "National Ghost Day"}, urls: {"en": "https://skepdic.com/ghosts.html"}, first: {era: 1, y: 2015}},
     ], templates: [
         {template: "HerbDay", type: "D", start: {mon: 5, wkd: [7], nth: 1}, titles: {"en": "HerbDay"}, notes: {"en": "Promotes pseudoscience about herbal medicine."}, urls: {"en": "https://skepdic.com/vitacon.html"}},
 
