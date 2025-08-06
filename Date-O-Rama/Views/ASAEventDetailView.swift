@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import MapKit
+//import MapKit
 import EventKit
 import Contacts
 #if os(watchOS)
@@ -23,7 +23,7 @@ struct ASAEventDetailView: View {
     var clock:  ASAClock
     var location: ASALocation
     var usesDeviceLocation: Bool
-    @State private var region: MKCoordinateRegion = MKCoordinateRegion()
+//    @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     @State var showingEventEditView = false
     
@@ -76,16 +76,16 @@ struct ASAEventDetailView: View {
             
             ASAEventDetailsNotesAndURLSection(event: event)
             
-            #if os(watchOS)
-            #else
-            let geoLocation = event.geoLocation
-            if geoLocation != nil {
-                Section {
-                    Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
-                        .aspectRatio(1.0, contentMode: .fit)
-                } // Section
-            }
-            #endif
+//            #if os(watchOS)
+//            #else
+//            let geoLocation = event.geoLocation
+//            if geoLocation != nil {
+//                Section {
+//                    Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
+//                        .aspectRatio(1.0, contentMode: .fit)
+//                } // Section
+//            }
+//            #endif
             
             let currentUser: EKParticipant? = event.currentUser
             if currentUser != nil {
@@ -108,11 +108,11 @@ struct ASAEventDetailView: View {
         .onAppear() {
             #if os(watchOS)
             #else
-            let geoLocation: CLLocation? = event.geoLocation
-            if geoLocation != nil {
-                let meters = 1000.0
-                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
-            }
+//            let geoLocation: CLLocation? = event.geoLocation
+//            if geoLocation != nil {
+//                let meters = 1000.0
+//                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
+//            }
             #endif
         }
     } // body
