@@ -1,0 +1,10 @@
+{
+    titles: {"en": "Sunrise and Sunset", "he": "זריחה ושקיעה"},
+    defaultLocale: "en",
+    calendarCode: "xloc*",
+    calendarColor: {red: 1.0, green: 1.0, blue: 0.0},
+    events: [
+        {inherits: "Sunrise", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}},
+        {inherits: "Sunset", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}},
+    ]
+}

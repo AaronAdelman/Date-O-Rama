@@ -1,0 +1,11 @@
+{
+    titles: {"en": "Moonrise and Moonset", "he": "זריחה ושקיעה של הירח"},
+    defaultLocale: "en",
+    calendarCode: "xloc*",
+    calendarColor: {red: 0.89, green: 0.89, blue: 0.89},
+    events: [
+        {titles: {"en": "Moonrise", "he": "זריחת הירח"}, type: "pt", start: {ptType: "rise", "body": "zmo"}, emoji: "☽↑"},
+        {titles: {"en": "Moonset", "he": "שקיעת הירח"}, type: "pt", start: {ptType: "set", "body": "zmo"}, emoji: "☽↓"},
+    ]
+}
+

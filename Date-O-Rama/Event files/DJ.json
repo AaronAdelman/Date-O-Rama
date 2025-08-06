@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.41, green: 0.70, blue: 0.91},
     first: {era: 1, y: 1977},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Djibouti"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
