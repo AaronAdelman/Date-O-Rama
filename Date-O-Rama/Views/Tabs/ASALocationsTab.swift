@@ -21,41 +21,37 @@ struct ASALocationsTab: View {
     
     var body: some View {
         GeometryReader { proxy in
-            let size = proxy.size // -> screen size
-            
             NavigationStack {
                 ZStack {
                     Color("locationsBackground")
-                        .scaledToFill()
                         .ignoresSafeArea()
                     
-                    VStack(spacing: 0.0) {
-//                        let frameHeight: CGFloat? = (UIDevice.current.userInterfaceIdiom == .phone && (UIDevice.current.orientation == .portrait || UIDevice.current.orientation == .faceUp)) ? 0.0 : 44.0 // This is a hack to get the layout to work right on the iPhone.
-                        let frameHeight: CGFloat? = proxy.safeAreaInsets.top
-                        
-                        Spacer()
-                            .frame(height: frameHeight)
-                        
-                        List {
-                            ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                                ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                                    .environmentObject(userData)
-                                    .onTapGesture {
-                                        selectedTabIndex = index
-                                        showLocationsSheet = false
-                                    }
-                            }
-                            .onMove(perform: moveClock)
-                        } // List
-                        .frame(maxWidth: size.width)
-                        .listStyle(.plain)
-                        .scrollContentBackground(.hidden)
-                        .listRowBackground(Color.clear)
-                        .navigationTitle("Locations")
-                        .navigationBarTitleDisplayMode(.inline)
-                    } // Vstack
+                    let frameHeight: CGFloat? = proxy.safeAreaInsets.top
                     
+                    Spacer()
+                        .frame(height: frameHeight)
+                    
+                    List {
+                        ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                            ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                                .environmentObject(userData)
+                                .onTapGesture {
+                                    selectedTabIndex = index
+                                    showLocationsSheet = false
+                                }
+                        }
+                        .onMove(perform: moveClock)
+                    } // List
+                    .scrollContentBackground(.hidden)
+                    .listRowBackground(Color.clear)
+                    .listStyle(.plain)
+                    .safeAreaInset(edge: .top) {
+                        // This ensures the list content respects the toolbar
+                        Color.clear.frame(height: 0)
+                    }
                 } // ZStack
+                .navigationTitle("Locations")
+                .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Menu {
