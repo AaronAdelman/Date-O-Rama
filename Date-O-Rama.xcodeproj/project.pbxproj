@@ -121,6 +121,8 @@
 		A522A2D62E439D5B00F8AAEB /* Moon phases.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D42E439D5B00F8AAEB /* Moon phases.json */; };
 		A522A2D82E439E1500F8AAEB /* Sunrise and Sunset.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sunrise and Sunset.json */; };
 		A522A2D92E439E1500F8AAEB /* Sunrise and Sunset.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sunrise and Sunset.json */; };
+		A522A2DE2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */; };
+		A522A2DF2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */; };
 		A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
@@ -1305,6 +1307,7 @@
 		A522A2D22E42792B00F8AAEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A522A2D42E439D5B00F8AAEB /* Moon phases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Moon phases.json"; sourceTree = "<group>"; };
 		A522A2D72E439E1500F8AAEB /* Sunrise and Sunset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sunrise and Sunset.json"; sourceTree = "<group>"; };
+		A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "C. Daniel Rhodes.json"; sourceTree = "<group>"; };
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
 		A523A40325A72889007CB54B /* ASAWatchEventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchEventsList.swift; sourceTree = "<group>"; };
@@ -1960,6 +1963,7 @@
 				A5B999B628622B4F00072FD5 /* BY.json */,
 				A5278B1D290FE06700834674 /* BY (Julian).json */,
 				A5E292F4285A658200925EBD /* BZ.json */,
+				A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */,
 				A5D3D7E627FA2C7E0099718A /* CA.json */,
 				A5B999BB28622BBA00072FD5 /* CC.json */,
 				A5B999B928622BBA00072FD5 /* CD.json */,
@@ -2938,6 +2942,7 @@
 				A5FB22B028638E5100B5042B /* SX.json in Resources */,
 				A5B999CA28622CB900072FD5 /* CM.json in Resources */,
 				A5EFFF91285B7D4600F2205F /* NG.json in Resources */,
+				A522A2DE2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */,
 				A5EE19E62804A92600B0B9C2 /* GB.json in Resources */,
 				A514B9C12D8310F0000046CC /* Star Trek.json in Resources */,
 				A5E3222E2DD20C63009EBFC0 /* National months.json in Resources */,
@@ -3249,6 +3254,7 @@
 				A5EF523827959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5B75CF62A2F52300010AD55 /* BN (Muslim).json in Resources */,
 				A5E49658286254FA001BF40C /* NU.json in Resources */,
+				A522A2DF2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */,
 				A5CF46552810C4EB0088738D /* VU.json in Resources */,
 				A5EFFFA4285B7F2E00F2205F /* SA.json in Resources */,
 				A5F43E272786113400FCDB88 /* Thelema.json in Resources */,
