@@ -1823,7 +1823,8 @@
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "National Fufu Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fufu-day/"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "National Face Mask Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-face-mask-day/"}, first: {era: 1, y: 2019}, notes: {"en": "Ugh.  Enough of the beauty-related observances!"}},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "National Presidential Joke Day", "he": "יום הבדיחה הנשיאותית הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-presidential-joke-day/"}, first: {era: 1, y: 1984}},
-        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Zucchini Day"}},
+        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Zucchini Day"}, urls: {"en": "https://www.checkiday.com/778e08321fc0ca4ec38fbf507c0e6c26/national-zucchini-day"}, first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "The Date to Create"}, urls: {"en": "https://www.checkiday.com/dfa1b94c685b4d87cba67b3c6bf1976a/the-date-to-create"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "National Raspberry Bombe Day"}, urls: {"en": "https://nationaltoday.com/national-raspberry-bombe-day/"}},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "National Son and Daughter Day", "he": "יום הבן והבת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}, emoji: "👦👧", notes: {"en": "National Son’s and Daughter’s Day"}, first: {era: 1, y: 1944}},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "National Gooey Butter Cake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-gooey-butter-cake-day/"}, first: {era: 1, y: 2019}},
@@ -1951,6 +1952,7 @@
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Billiards & Pool Day Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-billiards-pool-day/"}, notes: {"en": "National Billiards and Pool Day Day"}, emoji: "🎱"},
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Rice Pudding Day", "he": "יום פודינג אורז הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/rice-pudding-day/"}},
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Veep Day", "he": "יום סגן נשיא הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-veep-day/"}, first: {era: 1, y: 1974}},
+        {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Polka Day"}, urls: {"en": "https://www.checkiday.com/4208365f3760a1c967abde51f45203fb/national-polka-day"}, emoji: "🪗", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, nth: 1, wkd: [4]}, titles: {"en": "National Psychiatric Technician Appreciation Day", "he": "יום ההוקרה הלאומי של טכנאי פסיכיאטרי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-psychiatric-technician-appreciation-day/"}, notes: {"en": "Psychiatric Technicians’ Day\nThere is a spurious opinion that this event happens on January 16."}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "National Doll Day", "he": "יום הבובות הלאומי"}, urls: {"en": "https://www.checkiday.com/1fee16dcc888411e3dbf1fd1c5a1a6ef/national-doll-day"}, notes: {"en": "Doll Day", "he": "יום הבובות"}, emoji: "🎎", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "National KidsDay"}, urls: {"en": "https://www.checkiday.com/5bf9f2e3701fb155564bbca64d8fcdf5/national-kidsday"}, emoji: "👦👧", first: {era: 1, y: 1994}},
@@ -1964,7 +1966,7 @@
         {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "National Summit Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-summit-day-first-saturday-in-august"}, emoji: "⛰️", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "Taxpayer Appreciation Day"}, urls: {"en": "https://www.rgbfinancial.com/blog/taxpayer-appreciation-dayrecognizing-taxpayers-contributions"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, wkd: [7], nth: 2}, titles: {"en": "National Bowling Day", "he": "יום הבאולינג הלאומי"}, urls: {"en": "https://www.bowlero.com/national-bowling-day"}, emoji: "🎳", first: {era: 1, y: 2011}},
-        {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National Little Black Dress Day"}, urls: {"en": "https://nationaltoday.com/national-little-black-dress-day/"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National Little Black Dress Day"}, urls: {"en": "https://nationaltoday.com/national-little-black-dress-day/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National Child Identity Theft Awareness Day", "he": "יום המודעות הלאומי לגניבת זהות ילד"}, urls: {"en": "https://nationaltoday.com/national-child-identity-theft-awareness-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National No Rhyme Nor Reason Day"}, urls: {"en": "https://nationaltoday.com/national-no-rhyme-nor-reason-day/"}, notes: {"en": "National No Rhyme (Nor Reason) Day"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "American Chess Day", "he": "יום השחמט האמריקאי"}, urls: {"en": "https://www.daysoftheyear.com/days/american-chess-day/"}},
@@ -2023,12 +2025,12 @@
         {type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/apple-dumpling-day/"}, titles: {"en": "National Apple Dumpling Day"}},
         {type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/monte-cristo-sandwich-day/"}, titles: {"en": "National Monte Cristo Day"}, notes: {"en": "National Monte Cristo Sandwich Day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/national-pet-bird-day/"}, titles: {"en": "National Pet Bird Day"}, emoji: "🐦", first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 9, d: 17}, urls: {"en": "https://www.daysoftheyear.com/days/smithsonian-day/"}, titles: {"en": "Smithsonian Day"}, notes: {"en": "Indigenous Peoples’ Day", "he": "יום העמים הילידים"}, first: {era: 1, y: 1990}},
-        {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-cartonnage-day/"}, titles: {"en": "National Cartonnage Day"}},
-        {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-hiv-aids-and-aging-awareness-day/"}, titles: {"en": "National HIV/AIDS and Aging Awareness Day"}, inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-report-kickback-fraud-day/"}, titles: {"en": "National Report Kickback Fraud Day"}},
-        {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/cheeseburger-day/"}, titles: {"en": "National Cheeseburger Day"}, emoji: "🍔"},
-        {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/first-love-day/"}, titles: {"en": "National First Love Day", "he": "יום האהבה הראשונה הלאומי"}, first: {era: 1, y: 2015}, emoji: "🖤"},
+        {type: "D", start: {mon: 9, d: 17}, titles: {"en": "Smithsonian Day"}, urls: {"en": "https://www.daysoftheyear.com/days/smithsonian-day/"}, notes: {"en": "Indigenous Peoples’ Day", "he": "יום העמים הילידים"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Cartonnage Day"}, urls: {"en": "https://nationaltoday.com/national-cartonnage-day/"}},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National HIV/AIDS and Aging Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-hiv-aids-and-aging-awareness-day/"}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Report Kickback Fraud Day"}, urls: {"en": "https://nationaltoday.com/national-report-kickback-fraud-day/"}},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Cheeseburger Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheeseburger-day/"}, emoji: "🍔"},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National First Love Day", "he": "יום האהבה הראשונה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/first-love-day/"}, first: {era: 1, y: 2015}, emoji: "🖤"},
         {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/national-ceiling-fan-day/"}, titles: {"en": "National Ceiling Fan Day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 9, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/respect-day/"}, titles: {"en": "National Respect Day", "he": "יום הכבוד הלאומי"}, emoji: "🤝"},
         {type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-cat-dna-day/"}, titles: {"en": "National Cat DNA Day"}, first: {era: 1, y: 2020}},
@@ -2423,6 +2425,12 @@
         {type: "W", start: {mon: 6, fullWk: 1}, titles: {"en": "National Frozen Yogurt Week", "he": "שבוע הפרוזן יוגורט הלאומי"}, first: {era: 1, y: 1993}, urls: {"en": "https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 6, wkd: [1], nth: 1}, inherits: "National Frozen Yogurt Day", urls: {"en": "https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}},
         ]},
+        
+        {type: "M", start: {mon: 8}, titles: {"en": "National Model Aviation Month"}, inherits: "National Model Aviation Day", urls: {"en": "https://amablog.modelaircraft.org/modelaviationday/"}, first: {era: 1, y: 2013}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 8, wkd: [7], nth: 3}, inherits: "National Model Aviation Day", first: {era: 1, y: 2013}, end: {era: 1, y: 2015}},
+            {type: "D", start: {mon: 8, wkd: [7], nth: 2}, inherits: "National Model Aviation Day", first: {era: 1, y: 2016}},
+        ]},
+        
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
@@ -2464,5 +2472,6 @@
         {template: "Belmont Stakes", type: "D", start: {mon: 6, d: 5, thruD: 11, wkd: [7]}, titles: {"en": "Belmont Stakes", "zh": "貝蒙錦標", "ja": "ベルモントステークス", "da": "Belmont Stakes", "es": "Belmont Stakes", "eo": "Vetaĵo Belmont", "fr": "Belmont Stakes", "pl": "Belmont Stakes", "pt": "Belmont Stakes", "sv": "Belmont Stakes", "cs": "Belmont Stakes"}, urls: {"en": "https://www.checkiday.com/678ae0f32af8c80983d488146d998704/belmont-stakes"}, emoji: "🏇"},
         {template: "Own Your Share of America Day", type: "D", start: {mon: 6, d: 14, wkd: [2, 3, 4, 5, 6]}, titles: {"en": "Own Your Share of America Day"}, urls: {"en": "https://www.checkiday.com/2c41de37d234c90716313aec94968c61/own-your-share-of-america-day"}, emoji: "💵"},
         {template: "National Barbecue Day", type: "D", start: {mon: 5, d: 16}, titles: {"en": "National Barbecue Day"}, emoji: "🍖"},
+        {template: "National Model Aviation Day", type: "D", start: {mon: 8, wkd: [7], nth: 3}, titles: {"en": "National Model Aviation Day"}, urls: {"en": "https://www.checkiday.com/ac42e6821b3834aaed47e3156548c292/national-model-aviation-day"}, emoji: "🛩️"},
     ]
 }

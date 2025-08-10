@@ -1069,7 +1069,6 @@
         {type: "D", start: {mon: 8, d: 31}, titles: {"en": "National Matchmaker Day"}},
         {type: "D", start: {mon: 8, d: 31}, titles: {"en": "National Trail Mix Day"}},
         {type: "D", start: {mon: 8, d: 31}, titles: {"en": "National Yeezus Day"}},
-        {type: "D", start: {mon: 8, d: 4}, titles: {"en": "National Watermelon Day"}},
         {type: "D", start: {mon: 8, d: 5}, titles: {"en": "National Oyster Day"}},
         {type: "D", start: {mon: 8, d: 5}, titles: {"en": "National Sisters Day"}},
         {type: "D", start: {mon: 8, d: 5}, titles: {"en": "National Underwear Day"}},
@@ -1408,5 +1407,6 @@
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Pig Day"}},
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "National Mario Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadian Day"}},
+        {type: "D", start: {mon: 8, d: 4}, titles: {"en": "National Watermelon Day"}},
     ]
 }

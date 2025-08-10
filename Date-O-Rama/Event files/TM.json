@@ -32,11 +32,11 @@
         {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Day of the Worker in the Organs of National Security"}},
         {type: "D", start: {mon: 10, d: 9}, inherits: "Navy Day"},
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, inherits: "Health Day"},
-        {type: "D", start: {mon: 8, d: 9}, inherits: "Melon Day", urls: {"en": "https://www.daysoftheyear.com/days/melon-day/"}},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 2}, titles: {"fr": "Melon", "en": "Melon Day", "he": "יום המלון", "zh": "甜瓜", "ja": "メロンの日", "ko": "멜론의 날", "ru": "День туркменской дыни", "az": "Yemiş günü", "de": "Tag der turkmenischen Melone", "uz": "Turkman qovunlari kuni", "pa": "ਤਰਬੂਜ ਦਿਵਸ"}, inherits: "Melon Day", urls: {"en": "https://www.daysoftheyear.com/days/melon-day/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 12, wkd: [1], nth: 1}, titles: {"en": "Good Neighborliness Day"}},
 
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
-        {type: "D", start: {mon: 4, wkd: [1], nth: 1}, urls: {"en": "https://nationaltoday.com/a-drop-of-water-is-a-grain-of-gold/"}, titles: {"en": "A Drop of Water is a Grain of Gold"}, first: {era: 1, y: 1995}, emoji: "💧"},
-        {type: "D", start: {mon: 4, wkd: [1], nth: -1}, urls: {"en": "https://nationaltoday.com/turkmen-racing-horse-festival/"}, titles: {"en": "Turkmen Racing Horse Festival"}, emoji: "🏇"},
+        {type: "D", start: {mon: 4, wkd: [1], nth: 1}, titles: {"en": "A Drop of Water is a Grain of Gold"}, urls: {"en": "https://nationaltoday.com/a-drop-of-water-is-a-grain-of-gold/"}, first: {era: 1, y: 1995}, emoji: "💧"},
+        {type: "D", start: {mon: 4, wkd: [1], nth: -1}, titles: {"en": "Turkmen Racing Horse Festival"}, urls: {"en": "https://nationaltoday.com/turkmen-racing-horse-festival/"}, emoji: "🏇"},
    ]
 }

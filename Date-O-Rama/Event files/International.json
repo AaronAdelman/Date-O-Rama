@@ -1549,7 +1549,7 @@
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "Skyscraper Appreciation Day"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-appreciation-day/"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "World Lion Day", "he": "יום האריה העולמי"}, first: {era: 1, y: 2013}, emoji: "🦁", urls: {"en": "https://www.daysoftheyear.com/days/lion-day/"}},
         {type: "D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/update-your-bio-day/"}, titles: {"en": "Update Your Bio Day"}, emoji: "📄"},
-        {type: "D", start: {mon: 8, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/vlogging-day/"}, titles: {"en": "Vlogging Day"}, first: {era: 1, y: 2018}},
+        {type: "D", start: {mon: 8, d: 10}, titles: {"en": "Vlogging Day"}, notes: {"en": "International Vlogging Day Vlogging Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vlogging-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/hip-hop-day/"}, titles: {"en": "Hip Hop Day"}, emoji: "🎤"},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "Play in the Sand Day", "he": "יום המשחק בחול"}, urls: {"en": "https://www.daysoftheyear.com/days/play-in-the-sand-day/"}, emoji: "🏖️"},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "World Elephant Day", "he": "יום הפיל העולמי"}, first: {era: 1, y: 2012}, emoji: "🐘", urls: {"en": "https://worldelephantday.org/"}},
