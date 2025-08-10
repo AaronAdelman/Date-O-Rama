@@ -988,7 +988,6 @@
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Griztroncis Day"}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Jennifer Day"}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Naruto Run Day"}},
-        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadian Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadien Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Liberation Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Navajo Code Talkers Day"}},
@@ -1408,5 +1407,6 @@
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "National Toothache Day"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Pig Day"}},
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "National Mario Day"}},
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadian Day"}},
     ]
 }

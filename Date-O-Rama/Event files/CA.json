@@ -112,7 +112,7 @@
         {type: "D", start: {mon: 7, d: 9, thruD: 15, wkd: [2]}, inherits: "Orangemen’s Day"},
         {type: "D", start: {mon: 7, d: 9}, titles: {"en": "Nunavut Day", "iu": "ᓄᓇᕗᑦ ᐅᓪᓗᖓ"}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/nunavut-day/"}},
         {type: "D", start: {mon: 7, wkd: [4], nth: -1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 2025}},
-        {type: "D", start: {mon: 8, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/acadian-day/"}, titles: {"en": "National Acadian Day"}, first: {era: 1, y: 1881}},
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadian Day"}, urls: {"en": "https://www.daysoftheyear.com/days/acadian-day/"}, first: {era: 1, y: 1881}},
         {type: "D", start: {mon: 8, wkd: [2], nth: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d’août"}, first: {era: 1, y: 1875}, urls: {"en": "https://www.daysoftheyear.com/days/civic-holiday/"}, notes: {"en": "Simcoe Day\nCivic Day"}},
         {type: "D", start: {mon: 8, wkd: [3], nth: 1}, inherits: "National Night Out", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 8, wkd: [4], nth: 1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 1816}, last: {era: 1, y: 2024}},

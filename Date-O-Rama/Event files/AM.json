@@ -53,5 +53,6 @@
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Pumpkin Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/pumpkin-festival/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 4, d: 26}, inherits: "Border Guards Day", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 24, thruD: 30, wkd: [7]}, titles: {"en": "Haybuis Armenian Herb Festival"}, notes: {"en": "HayBuis Festival\nHayBuis"}, urls: {"en": "https://www.daysoftheyear.com/days/haybuis-armenian-herb-festival/"}, first: {era: 1, y: 2015}, emoji: "🌿💐"},
+        {type: "nD", start: {mon: 8, d: 11}, end: {mon: 9, d: 9}, titles: {"en": "Navasard", "fa": "ناواسارد", "ru": "Навасард", "ca": "Navasard", "pt": "Navassarde", "cs": "Navasard", "hyw": "Նաւասարդ", "hy": "Նավասարդ"}, urls: {"en": "https://www.daysoftheyear.com/days/navasard/"}},
     ]
 }

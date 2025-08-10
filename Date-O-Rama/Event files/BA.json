@@ -30,5 +30,6 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 10, d: 17, thruD: 23, wkd: [7]}, titles: {"en": "Rakija Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rakija-day/"}, emoji: "🍷"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-   ]
+        {type: "nD", start: {mon: 8, d: 10, thruD: 16, wkd: [6], durationD: 8}, titles: {"en": "Sarajevo Film Festival"}, urls: {"en": "https://www.sff.ba/en", "bs": "https://www.sff.ba/"}, emoji: "💟"},
+    ]
 }

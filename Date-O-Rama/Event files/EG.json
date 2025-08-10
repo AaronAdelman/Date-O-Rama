@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 6, d: 21}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day", urls: {"en": "https://nationaltoday.com/egypt-mothers-day/"}, first: {era: 1, y: 1957}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
-        {type: "nD", start: {mon: 8, d: 15}, end: {mon: 8, d: 28}, titles: {"en": "Flooding of the Nile", "he": "הצפה של הנילוס", "cop": "ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, urls: {"en": "https://nationaltoday.com/flooding-of-the-nile/"}, notes: {"en": "Wafaa El-Nil"}},
+        {type: "nD", start: {mon: 8, d: 15}, end: {mon: 8, d: 28}, titles: {"en": "The Nile Festival", "he": "הצפה של הנילוס", "cop": "ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, notes: {"en": "Flooding of the Nile"}, urls: {"en": "https://www.daysoftheyear.com/days/the-nile-festival/"}, notes: {"en": "Wafaa El-Nil"}},
         {type: "D", start: {mon: 2, d: 22}, inherits: "Abu Simbel Festival"},
         {type: "D", start: {mon: 10, d: 22}, inherits: "Abu Simbel Festival"},
         {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Pharaohs’ Golden Parade"}, first: {era: 1, y: 2021}, urls: {"en": "https://www.daysoftheyear.com/days/the-pharaohs-golden-parade/"}},
