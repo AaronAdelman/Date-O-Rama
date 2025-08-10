@@ -117,7 +117,7 @@
         {type: "D", start: {mon: 8, wkd: [3], nth: 1}, inherits: "National Night Out", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 8, wkd: [4], nth: 1}, inherits: "Royal St. John’s Regatta", first: {era: 1, y: 1816}, last: {era: 1, y: 2024}},
         {type: "D", start: {mon: 9, d: 15}, inherits: "Greenpeace Day", first: {era: 1, y: 2011}},
-        {type: "D", start: {mon: 9, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/national-no-excuses-day/"}, titles: {"en": "National No Excuses Day"}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 9, d: 27}, titles: {"en": "National No Excuses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-no-excuses-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Orange Shirt Day", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.orangeshirtday.org/"}, notes: {"en": "National Day for Truth and Reconciliation\nTruth and Reconciliation Day"}},
         {type: "M", start: {mon: 11}, titles: {"en": "Indigenous Disability Awareness Month"}},
