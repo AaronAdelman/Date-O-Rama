@@ -406,6 +406,8 @@
         {type: "D", start: {mon: 8, wkd: [1], nth: 2}, titles: {"en": "National Spirit of ’45 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spirit-of-45-day/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 8, d: 16}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "Bennington Battle Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
+        {type: "D", start: {mon: 8, d: 15, wkd: [6]}, inherits: "Bennington Battle Day (in lieu)", first: {era: 1, y: 1977}},
+        {type: "D", start: {mon: 8, d: 17, wkd: [2]}, inherits: "Bennington Battle Day (in lieu)", first: {era: 1, y: 1977}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "National Airborne Day"}, urls: {"en": "https://www.daysoftheyear.com/days/airborne-day/"}, first: {era: 1, y: 2002}, emoji: "🪂"},
         {type: "D", start: {mon: 8, d: 2}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Senior Citizens Day", "he": "יום האזרח הוותיק הלאומי"}, notes: {"en": "World Senior Citizen’s Day\nNational Day of the Third Age", "he": "יום האזרח הוותיק העולמי"}, first: {era: 1, y: 1988}, emoji: "👴👵", urls: {"en": "https://www.daysoftheyear.com/days/senior-citizens-day/"}},
@@ -698,5 +700,6 @@
         {template: "National PrepareAthon! Day", type: "D", start: {mon: 4, d: 30}, titles: {"en": "National PrepareAthon! Day"}, urls: {"en": "https://nationaldaycalendar.com/national-prepareathon-day-april-30/"}},
         {template: "Earned Income Tax Credit Awareness Day", type: "D", start: {mon: 1, d: 17}, titles: {"en": "Earned Income Tax Credit Awareness Day"}, urls: {"en": "https://www.checkiday.com/a278c27ff0d32308d4c24630415a9f01/earned-income-tax-credit-awareness-day"}, notes: {"en": "EITC Awareness Day"}, emoji: "🧮"},
         {template: "Inauguration Day", type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, titles: {"en": "Inauguration Day"}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}},
+        {template: "Bennington Battle Day (in lieu)", type: "D", start: {mon: 8, d: 15, wkd: [6]}, titles: {"en": "Bennington Battle Day (in lieu)"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
     ]
 }

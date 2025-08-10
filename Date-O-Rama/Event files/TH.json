@@ -33,7 +33,8 @@
         {type: "D", start: {mon: 7, d: 29, thruD: 30, wkd: [2]}, titles: {"en": "King Rama X’s Birthday (in lieu)"}, notes: {"en": "H.M. King’s Birthday (in lieu)"}, inherits: "King’s Birthday", urls: {"en": "https://nationaltoday.com/h-m-kings-birthday/"}, first: {era: 1, y: 2019}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/thailand-mothers-day/"}},
         {type: "D", start: {mon: 8, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/hm-queen-mothers-birthday"}, titles: {"en": "H.M. Queen Mother’s Birthday", "th": "วันเฉลิมพระชนมพรรษาสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง", "he": "יום הולדת למלכה סיריקיט קיטיאקון"}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 8, d: 14, wkd: [2]}, titles: {"en": "H.M. Queen Mother’s Birthday (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/hm-queen-mothers-birthday"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 8, d: 14, wkd: [2]}, inherits: "H.M. Queen Mother’s Birthday (in lieu)"},
+        {type: "D", start: {mon: 8, d: 11, wkd: [2]}, inherits: "H.M. Queen Mother’s Birthday (in lieu)"},
         {type: "D", start: {mon: 9, d: 24}, titles: {"en": "Mahidol Day", "th": "วันมหิดล", "he": "יום מהידול"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/prince-mahidol-day"}, notes: {"en": "Prince Mahidol Day"}},
         {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Navamindra Maharaj Day", "th": "วันนวมินทรมหาราช"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/king-bhumibols-passing"}, notes: {"en": "Passing of King Bhumibol", "he": "יום השנה למותו של המלך פומיפון אדוניאדט"}},
         {type: "D", start: {mon: 10, d: 14, wkd: [2, 6]}, titles: {"en": "Passing of King Bhumibol (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/king-bhumibols-passing"}},
@@ -127,5 +128,6 @@
         {template: "Royal Ploughing Ceremony", type: "D", start: {mon: 5, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/royal-ploughing-ceremony"}, titles: {"en": "Royal Ploughing Ceremony", "th": "วันพืชมงคล", "he": "טקס החרישה המלכותי"}, notes: {"en": "Farmer’s Day", "he": "יום האיכר"}},
         {template: "H.M. Queen’s Birthday (in lieu)", inherits: "*BDay*", type: "D", start: {mon: 6, d: 5, wkd: [2]}, titles: {"en": "H.M. Queen’s Birthday (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/hm-queens-birthday"}, inherits: "*BDay*"},
         {template: "Chulalongkorn Day", type: "D", start: {mon: 10, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, titles: {"en": "Chulalongkorn Day", "th": "วันปิยมหาราช", "he": "יום המלך צ׳ולאלונגקורן"}, notes: {"en": "Piyamararaj Day\nKing Chulalongkorn Day"}, urls: {"en": "https://nationaltoday.com/chulalongkorn-day-piyamararaj-day/"}, first: {era: 1, y: 1868}},
+        {template: "H.M. Queen Mother’s Birthday (in lieu)", type: "D", start: {mon: 8, d: 14, wkd: [2]}, titles: {"en": "H.M. Queen Mother’s Birthday (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/hm-queen-mothers-birthday"}, inherits: "*BDay*"},
     ]
 }

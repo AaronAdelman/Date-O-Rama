@@ -999,7 +999,6 @@
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Duran Duran Appreciation Day"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Fall Tour Announcement Day"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Jojo Day"}},
-        {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Lexi Day"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Smores Day"}},
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Tv On Opeming Day"}},
@@ -1148,7 +1147,6 @@
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Sista Day"}},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Steeplechase Day"}},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Twin Day"}},
-        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Zucchini Day"}},
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Book Lovers Day"}},
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Catra Day"}},
         {type: "D", start: {mon: 8, d: 9}, titles: {"en": "National Daniel Day"}},
@@ -1408,5 +1406,7 @@
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "National Love Your Pet Day"}},
         {type: "D", start: {mon: 2, d: 22}, titles: {"en": "National Margarita Day"}},
         {type: "D", start: {mon: 2, d: 22}, titles: {"en": "National Rec Day"}},
+        {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day"}},
+        {type: "D", start: {mon: 8, d: 8}, titles: {"en": "National Zucchini Day"}},
     ]
 }

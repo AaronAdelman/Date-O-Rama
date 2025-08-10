@@ -123,8 +123,6 @@
 		A522A2D92E439E1500F8AAEB /* Sunrise and Sunset.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sunrise and Sunset.json */; };
 		A522A2DE2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */; };
 		A522A2DF2E45CF1C00F8AAEB /* C. Daniel Rhodes.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */; };
-		A522A2E12E460F9900F8AAEB /* WhatNationalDayIsIt.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2E02E460F9900F8AAEB /* WhatNationalDayIsIt.json */; };
-		A522A2E22E460F9900F8AAEB /* WhatNationalDayIsIt.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2E02E460F9900F8AAEB /* WhatNationalDayIsIt.json */; };
 		A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
@@ -2861,7 +2859,6 @@
 				A5EFFFD3285B849900F2205F /* GT.json in Resources */,
 				A5B999D628622E0F00072FD5 /* DJ.json in Resources */,
 				A5BC61472709B11800888611 /* Western Christianity (supplemental).json in Resources */,
-				A522A2E22E460F9900F8AAEB /* WhatNationalDayIsIt.json in Resources */,
 				A585D6D329A6B3290033BCB9 /* GR (Julian).json in Resources */,
 				A5E495FA28624EFE001BF40C /* GI.json in Resources */,
 				A5E04AB22851CA6D001A4911 /* Sunni Islam (times, MWL).json in Resources */,
@@ -3373,7 +3370,6 @@
 				A5EFFF54285B5F1500F2205F /* GE.json in Resources */,
 				A5F3B01B28563CB000865CEB /* WS.json in Resources */,
 				A5E495FD28624EFE001BF40C /* GN.json in Resources */,
-				A522A2E12E460F9900F8AAEB /* WhatNationalDayIsIt.json in Resources */,
 				A5FB22AF28638E5100B5042B /* SX.json in Resources */,
 				A5EFFF7E285B7B1300F2205F /* LA.json in Resources */,
 				A5E495F728624EFE001BF40C /* GL.json in Resources */,

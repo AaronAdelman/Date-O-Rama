@@ -6,9 +6,10 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Senegal"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Independence Day", type: "D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/senegal-independence-day/"}, first: {era: 1, y: 1960}},
+        {type: "D", start: {mon: 4, d: 4}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/senegal-independence-day/"}, first: {era: 1, y: 1960}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
