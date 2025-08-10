@@ -106,7 +106,7 @@ struct ASADateORamaApp: App {
                             }
 
                             // 🔁 Dynamic menu for time control
-                            let NOW_NAME  = "clock"
+                            let NOW_NAME  = "arrow.trianglehead.clockwise"
                             let DATE_NAME = "calendar"
                             
                             Menu {
