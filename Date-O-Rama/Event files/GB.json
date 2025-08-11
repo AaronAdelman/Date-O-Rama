@@ -17,7 +17,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 4, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/united-kingdom/england/england-st-georges-day"}, inherits: "St. George’s Day"},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "St. George’s Day", urls: {"en": "https://www.officeholidays.com/holidays/united-kingdom/england/england-st-georges-day"}},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, inherits: "Early May Bank Holiday", urls: {"en": "https://www.daysoftheyear.com/days/early-may-bank-holiday/"}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, inherits: "Spring Bank Holiday", notes: {"en": "Spring Holiday"}, urls: {"en": "https://www.daysoftheyear.com/days/spring-bank-holiday/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -1555,7 +1555,7 @@
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "World Elephant Day", "he": "יום הפיל העולמי"}, first: {era: 1, y: 2012}, emoji: "🐘", urls: {"en": "https://worldelephantday.org/"}},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "IBM PC Day"}, urls: {"en": "https://nationaltoday.com/ibm-pc-day/"}, first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "Milkman Day"}, urls: {"en": "https://nationaltoday.com/milkman-day/"}, emoji: "🥛"},
-        {type: "D", start: {mon: 8, d: 12}, titles: {"en": "Baseball Fans Day"}, urls: {"en": "https://www.daysoftheyear.com/days/baseball-fans-day/"}, inherits: "⚾️"},
+        {type: "D", start: {mon: 8, d: 12}, titles: {"en": "Baseball Fans Day"}, urls: {"en": "https://www.daysoftheyear.com/days/baseball-fans-day/"}, emoji: "⚾️"},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "Interational Financial Awareness Day", "he": "יום המודעות הפיננסית הבינלאומי"}, notes: {"en": "Financial Independence Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/financial-independence-awareness-day/"}, first: {era: 1, y: 2019}, emoji: "💵🪙"},
         {type: "D", start: {mon: 8, d: 13}, titles: {"en": "International Lefthanders Day", "he": "יום השמאליים הבינלאומי"}, first: {era: 1, y: 1976}, emoji: "🫲", urls: {"en": "http://www.lefthandersday.com/"}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "World Lizard Day", "he": "יום הלטאה העולמי"}, emoji: "🦎", urls: {"en": "https://www.daysoftheyear.com/days/world-lizard-day/"}},
