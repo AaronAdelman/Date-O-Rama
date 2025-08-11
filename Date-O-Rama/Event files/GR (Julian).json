@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.08, blue: 0.54},
+    first: {era: 1, y: 1821},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Greece"},
     events: [
         {inherits: "Clean Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},

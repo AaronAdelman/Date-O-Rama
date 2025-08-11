@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     first: {era: 1, y: 1957},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ghana"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Constitution Day", type: "D", start: {mon: 1, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, first: {era: 1, y: 2019}},

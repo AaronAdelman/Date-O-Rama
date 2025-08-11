@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.91, green: 0.07, blue: 0.18},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guernsey"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -21}, inherits: "Mothering Sunday", notes: {"en": "Mother’s Day"}},
