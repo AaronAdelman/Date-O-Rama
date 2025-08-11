@@ -162,7 +162,7 @@
         {titles: {"en": "Feast of St. Louis or St. Joseph of Calasanz"}, type: "D", start: {mon: 8, d: 25}},
         {titles: {"en": "Feast of St. Monica"}, type: "D", start: {mon: 8, d: 27}},
         {titles: {"en": "Feast of St. Augustine of Hippo"}, type: "D", start: {mon: 8, d: 28}},
-        {inherits: "Beheading of St. John the Baptist", type: "D", start: {mon: 8, d: 29}},
+        {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of St. John the Baptist"},
         {inherits: "Feast of St. Rose of Lima", type: "D", start: {mon: 8, d: 30}, locations: {"en": "Latin America"}},
 
         {titles: {"en": "Feast of St. Gregory the Great"}, type: "D", start: {mon: 9, d: 3}},
@@ -173,7 +173,7 @@
         {titles: {"en": "Holy Name of the Blessed Virgin Mary"}, type: "D", start: {mon: 9, d: 12}},
         {titles: {"en": "Feast of St. John Chrysostom", "he": "החג של יוחנן כריסוסטומוס"}, type: "D", start: {mon: 9, d: 13}},
 
-        {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Feast of the Exaltation of the Holy Cross"},
         
         {inherits: "Feast of Our Lady of Sorrows", type: "D", start: {mon: 9, d: 15}},
         {titles: {"en": "Feast of Saints Cornelius and Cyprian"}, type: "D", start: {mon: 9, d: 16}},

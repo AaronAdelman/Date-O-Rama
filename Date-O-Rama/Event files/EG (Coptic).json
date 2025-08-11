@@ -5,6 +5,7 @@
     calendarCode: "cop",
     "otherCalendarCodes": ["jul"],
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
     events: [
         {type: "D", start: {mon: 4, d: 28, wkd: [5]}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
         {type: "D", start: {mon: 4, d: 29}, inherits: "Coptic Christmas Day"},

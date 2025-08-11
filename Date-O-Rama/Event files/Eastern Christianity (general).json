@@ -24,7 +24,7 @@
         {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {inherits: "Orthodox Holy Saturday", type: "D", start: {Easter:  "Easter", offsetD: -1}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday", notes: {"en": "Bright Week (day 1)"}, urls: {"en": "https://nationaltoday.com/orthodox-easter-day/"}},
         {notes: {"en": "Bright Week (day 2)"}, type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {titles: {"en": "Bright Week (day 3)"}, type: "D", start: {Easter:  "Easter", offsetD: 2}},
@@ -45,7 +45,7 @@
         {inherits: "All Saints Day", type: "D", start: {Easter:  "Easter", offsetD: 56}},
         
         {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
-        {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Feast of the Exaltation of the Holy Cross"},
         {inherits: "Presentation of the Blessed Virgin Mary", type: "D", start: {mon: 11, d: 21}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-christmas-day/"}},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 27}},
@@ -61,7 +61,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://nationaltoday.com/orthodox-new-year/"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
         {inherits: "Feast of Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
-        {inherits: "Beheading of St. John the Baptist", type: "D", start: {mon: 8, d: 29}},
+        {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of St. John the Baptist"},
         {inherits: "Intercession of the Theotokos", type: "D", start: {mon: 10, d: 1}},
         
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},

@@ -4,12 +4,13 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.06, green: 0.28, blue: 0.69},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {mon: 9, d: 14}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Feast of the Exaltation of the Holy Cross"},
 
     ]
 }

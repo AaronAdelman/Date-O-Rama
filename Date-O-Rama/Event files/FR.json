@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.0, green: 0.33, blue: 0.64},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_France"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},

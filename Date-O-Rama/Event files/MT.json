@@ -101,7 +101,7 @@
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "Feast of St. Roque", "mt": "Santu Rokku"}},
         {type: "D", start: {mon: 8, d: 15, thruD: 21, wkd: [1]}, titles: {"en": "Feast of St. Helen", "mt": "Santa Elena"}},
         {titles: {"en": "Feast of Our Lady Star of the Sea"}, type: "D", start: {mon: 8, wkd: [1], nth: 3}, notes: {"en": "Stella Maris"}},
-        {inherits: "Beheading of St. John the Baptist", type: "D", start: {mon: 8, d: 29}},
+        {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of St. John the Baptist"},
         {titles: {"en": "Feast of St. Dominic of Guzman", "mt": "San Duminku ta’ Guzman"}, type: "D", start: {mon: 8, wkd: [1], nth: -1}},
         {titles: {"en": "Feast of St. Julian", "mt": "San Ġiljan"}, type: "D", start: {mon: 8, wkd: [1], nth: -1}},
         

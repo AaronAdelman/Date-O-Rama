@@ -5,11 +5,12 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.16, green: 0.50, blue: 1.00},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Falkland_Islands"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {inherits: "Liberation Day", type: "D", start: {mon: 6, d: 14}, first: {era: 1, y: 1982}, urls: {"en": "https://nationaltoday.com/falkland-islands-liberation-day/"}},
+        {type: "D", start: {mon: 6, d: 14}, inherits: "Liberation Day", first: {era: 1, y: 1982}, urls: {"en": "https://nationaltoday.com/falkland-islands-liberation-day/"}},
         {type: "D", start: {mon: 10, wkd: [2], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/peat-cutting-monday"}, titles: {"en": "Peat Cutting Monday"}},
         {type: "D", start: {mon: 11, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "D", start: {mon: 12, d: 8}, titles: {"en": "Battle Day"}, urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/battle-day"}, first: {era: 1, y: 1914}},
@@ -21,7 +22,6 @@
         {type: "D", start: {mon: 12, d: 29, wkd: [2, 3, 4, 5, 6]}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
         {type: "D", start: {mon: 12, d: 30, wkd: [2, 3, 6]}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
         {type: "D", start: {mon: 12, d: 31, wkd: [3, 4]}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
-
 
         {inherits: "Children’s Day", type: "D", start: {Easter:  "Easter", offsetD: 39}},
     ]
