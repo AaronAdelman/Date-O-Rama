@@ -21,7 +21,7 @@
 
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
-        {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {inherits: "Mid-Lent", type: "D", start: {Easter:  "Easter", offsetD: -31}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
 

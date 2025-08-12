@@ -7,7 +7,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Australia"},
     first: {era: 1, y: 1901},
     events: [
-        {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
+        {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 10, wkd: [4], nth: 4}},

@@ -3,6 +3,7 @@
     "//": "Jordan",
     defaultLocale: "en",
     calendarCode: "jul",
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     events: [
         {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},

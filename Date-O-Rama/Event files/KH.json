@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
     first: {era: 1, y: 1953},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cambodia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en": "Victory Over Genocide Day", "km": "ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}},

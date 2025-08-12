@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.75, green: 0.06, blue: 0.24},
     first: {era: 1, y: 1948},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 16}, titles: {"en": "Day of the Shining Star"}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/birth-day-of-kim-jong-il"}, notes: {"en": "Birthday of Kim Jong Il"}, inherits: "*BDay*", first: {era: 1, y: 1968}},

@@ -5,7 +5,9 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
-    first: {era: 1, y: 1943},    events: [
+    first: {era: 1, y: 1943},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Lebanon"},
+    events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Christmas Day", type: "D", start: {mon: 1, d: 6}, titles: {"en": "Armenian Christmas Day", "ar": "عيد الميلاد - الأرمن الأرثودكس", "fr": "Noël Arménien", "he": "חג המולד הארמני"}, first: {era: 1, y: 2003}, urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},

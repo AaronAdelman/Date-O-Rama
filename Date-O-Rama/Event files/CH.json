@@ -45,7 +45,7 @@
         {inherits: "Fat Thursday", type: "D", start: {Easter:  "Easter", offsetD: -52}},
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
-        {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {titles: {"en": "Lent (day 3)"}, type: "D", start: {Easter:  "Easter", offsetD: -44}},
         {titles: {"en": "Lent (day 5)"}, type: "D", start: {Easter:  "Easter", offsetD: -41}},
         {titles: {"en": "Lent (day 6)"}, type: "D", start: {Easter:  "Easter", offsetD: -40}},

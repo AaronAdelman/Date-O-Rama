@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.17, green: 0.41, blue: 0.31},
+    first: {era: 1, y: 1947},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     events: [
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, inherits: "Jumatul Bidah", urls: {"en": "https://www.officeholidays.com/holidays/india/jumatul-bidah"}},
     ]

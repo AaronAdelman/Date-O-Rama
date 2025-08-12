@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iran"},
     events: [
         {titles: {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, type: "D", start: {mon: 9, nth: -1, wkd: [6]}},
         {inherits: "Father’s Day", type: "D", start: {mon: 7, d: 13}},

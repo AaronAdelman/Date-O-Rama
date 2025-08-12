@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.89, green: 0.00, blue: 0.17},
     first: {era: 1, y: 1932},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iraq"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 5, era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/iraq/iraq-public-holiday"}, inherits: "Public Holiday"},

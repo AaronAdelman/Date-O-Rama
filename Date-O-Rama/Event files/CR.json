@@ -8,9 +8,9 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Costa_Rica"},
     events: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
-        {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
-        {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -6}, inherits: "Holy Monday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -5}, inherits: "Holy Tuesday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -4}, inherits: "Holy Wednesday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

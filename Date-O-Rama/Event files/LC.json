@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.47, blue: 0.78},
     first: {era: 1, y: 1979},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Lucia"},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 2, d: 22}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/independence-day-saint-lucia/"}},

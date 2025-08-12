@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.89, green: 0.00, blue: 0.17},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iraq"},
     events: [
         {inherits: "Father’s Day", type: "D", start: {mon: 7, d: 13}},
     ]

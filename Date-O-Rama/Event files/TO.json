@@ -11,7 +11,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
+        {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 6, d: 2, thruD: 8, wkd: [2]}, first: {era: 1, y: 1970}, urls: {"en": "https://www.officeholidays.com/holidays/tonga/tonga-emancipation-day"}},
         {titles: {"en": "Official Birthday of His Majesty King Tupou VI"}, type: "D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, first: {era: 1, y: 2015}, inherits: "*BDay*", notes: {"en": "Official Birthday of HM King Tupou VI"}},
         {inherits: "Public holiday", type: "D", start: {mon: 7, d: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, first: {era: 1, y: 2015}},

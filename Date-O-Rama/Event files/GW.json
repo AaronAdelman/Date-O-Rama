@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     first: {era: 1, y: 1974},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guinea-Bissau"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "National Heroes’ Day", type: "D", start: {mon: 1, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/guinea-bissau/guinea-bissau-national-heroes-day"}},

@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_South_Korea"},
+
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", titles: {"en": "Korean New Year"}, notes: {"en": "Seollal\nKorean Lunar New Year", "ko": "설날"}, urls: {"en": "https://www.daysoftheyear.com/days/korean-new-year/"}},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival", titles: {"en": "Daeboreum", "ko": "정월 대보름"}},

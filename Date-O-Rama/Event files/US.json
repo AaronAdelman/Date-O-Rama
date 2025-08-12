@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 5, wkd: [7], nth: 3}, inherits: "Armed Forces Day", urls: {"en": "https://www.daysoftheyear.com/days/us-armed-forces-day/"}, first: {era: 1, y: 1950}, notes: {"en": "Military Appreciation Day\nNational Military Day"}},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 1997}},
-        {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 1951}},
         {type: "M", start: {mon: 2}, inherits: "Black History Month", notes: {"en": "African-American History Month"}, first: {era: 1, y: 1976}},
         {type: "D", start: {mon: 8, d: 23}, inherits: "Black Ribbon Day", first: {era: 1, y: 2014}},

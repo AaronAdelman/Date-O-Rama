@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
     first: {era: 1, y: 1847},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Liberia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/armed-forces-day-2/"}, first: {era: 1, y: 1957}},

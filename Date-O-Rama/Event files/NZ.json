@@ -21,7 +21,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 2}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, titles: {"en": "Southland Anniversary Day"}, first: {era: 1, y: 2011}},
-        {inherits: "Anzac Day", type: "D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
+        {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, inherits: "King’s Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/new-zealand-kings-birthday"}},
         {type: "D", start: {era: 1, y: 2022, mon: 6, d: 24}, inherits: "Matariki"},

@@ -4,7 +4,13 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.42, blue: 0.23},
+    urls: {"en": "https://theworkcalendar.com/holidays/country/British-Indian-Ocean-Territory?countryCode=IO"},
     events: [
-        
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

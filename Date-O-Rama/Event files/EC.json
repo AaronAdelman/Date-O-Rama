@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Carnival Monday", urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
-        {inherits: "Carnival Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}, urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Carnival Tuesday", urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

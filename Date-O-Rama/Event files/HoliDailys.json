@@ -1,6 +1,6 @@
 {
     titles: {"en": "HoliDailys"},
-    // Jace Shoemaker-Galloway the “Queen of Holidays”
+    "//": "Jace Shoemaker-Galloway the “Queen of Holidays”",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.18, green: 0.80, blue: 0.71},

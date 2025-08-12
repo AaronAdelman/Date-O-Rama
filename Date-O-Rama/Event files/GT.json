@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.64, blue: 0.88},
     first: {era: 1, y: 1821},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guatemala"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
@@ -24,9 +25,9 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
-        {inherits: "Holy Monday", type: "D", start: {Easter:  "Easter", offsetD: -6}},
-        {inherits: "Holy Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -5}},
-        {inherits: "Holy Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -4}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -6}, inherits: "Holy Monday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -5}, inherits: "Holy Tuesday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: -4}, inherits: "Holy Wednesday"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, d: 10}},
         {inherits: "Father’s Day", type: "D", start: {mon: 6, d: 17}},
         {type: "D", start: {mon: 1, d: 30}, inherits: "Engineer’s Day"},

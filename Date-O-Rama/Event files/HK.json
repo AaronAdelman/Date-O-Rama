@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.93, green: 0.11, blue: 0.15},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/day-after-new-years-day"}, inherits: "Day after New Year’s Day", first: {era: 1, y: 2023}},
@@ -12,7 +13,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Hong Kong Special Administrative Region Establishment Day", type: "D", start: {mon: 7, d: 1}, first: {era: 1, y: 1997}, notes: {"en": "Special Administration Region (SAR) Day"}},
+        {type: "D", start: {mon: 7, d: 1}, inherits: "Hong Kong Special Administrative Region Establishment Day", first: {era: 1, y: 1997}, notes: {"en": "Special Administration Region (SAR) Day"}},
         {type: "D", start: {mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, inherits: "National Day"},
         {type: "D", start: {mon: 10, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, inherits: "National Day (in lieu)"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

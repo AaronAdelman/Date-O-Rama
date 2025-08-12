@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.45, blue: 0.81},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iceland"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
@@ -30,7 +31,7 @@
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Beer Day", "he": "יום הבירה", "is": "Bjórdagurinn"}, emoji: "🍺", urls: {"en": "https://en.wikipedia.org/wiki/Beer_Day_(Iceland)"}, first: {era: 1, y: 1989}},
         {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
-        {inherits: "Ash Wednesday", type: "D", start: {Easter:  "Easter", offsetD: -46}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter:  "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Fisherman’s Day", "is": "Sjómannadagurinn"}, emoji: "🎣"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Women's Rights Day", "is": "Kvenréttindadagurinn"}, emoji: "👩"},
