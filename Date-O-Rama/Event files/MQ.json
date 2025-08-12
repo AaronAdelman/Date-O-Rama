@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.13, green: 0.26, blue: 0.56},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Martinique"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.14, green: 0.34, blue: 0.48},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_New_Zealand"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Day after New Year’s Day"},
@@ -20,7 +21,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 2}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, titles: {"en": "Southland Anniversary Day"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {Easter:  "Easter", offsetD: 2}, titles: {"en": "Southland Anniversary Day"}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, inherits: "King’s Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/new-zealand-kings-birthday"}},

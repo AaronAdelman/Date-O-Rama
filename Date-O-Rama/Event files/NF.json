@@ -4,10 +4,11 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.47, blue: 0.20},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Norfolk_Island"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Australia Day", first: {era: 1, y: 1808}},
-        {titles: {"en": "Norfolk Island Foundation Day"}, type: "D", start: {mon: 3, d: 6}, urls: {"en": "https://en.wikipedia.org/wiki/Norfolk_Island_Foundation_Day"}, first: {era: 1, y: 1788}},
+        {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Norfolk Island Foundation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Norfolk_Island_Foundation_Day"}, first: {era: 1, y: 1788}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},

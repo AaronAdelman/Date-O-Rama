@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
+    urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
 

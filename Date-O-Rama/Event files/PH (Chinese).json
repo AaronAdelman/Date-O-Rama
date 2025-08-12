@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.96, green: 0.83, blue: 0.29},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},

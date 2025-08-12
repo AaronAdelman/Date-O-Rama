@@ -4,8 +4,9 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Oman"},
     events: [
-        {inherits: "Father’s Day", type: "D", start: {mon: 7, d: 13}},
+        {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
     ]
 }
 

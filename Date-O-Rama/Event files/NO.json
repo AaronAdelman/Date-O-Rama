@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.73, green: 0.05, blue: 0.18},
     first: {era: 1, y: 1905},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Norway"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 2, wkd: [1], nth: 2}, urls: {"en": "https://nationaltoday.com/mothers-day-norway/"}},

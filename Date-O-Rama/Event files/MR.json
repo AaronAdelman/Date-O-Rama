@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Mauritania"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -14,6 +15,6 @@
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1960}},
+        {type: "D", start: {mon: 7, d: 10}, inherits: "Armed Forces Day", first: {era: 1, y: 1960}},
     ]
 }

@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.72, green: 0.17, blue: 0.21},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Montserrat"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [3]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/montserrat/international-new-years-day"}},

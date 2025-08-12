@@ -6,12 +6,13 @@
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.70, blue: 0.36},
     first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Niger"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "Concord Day", "fr": "Fête nationale de la Concorde"}, notes: {"en": "National Day of Concorde", "fr": "Journée nationale de la Concorde"}, urls: {"en": "https://www.officeholidays.com/holidays/niger/concord-day"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 8, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/niger/niger-independence-day"}, inherits: "Independence Day", first: {era: 1, y: 1960}},
+        {type: "D", start: {mon: 8, d: 3}, inherits: "Independence Day", urls: {"en": "https://www.officeholidays.com/holidays/niger/niger-independence-day"}, first: {era: 1, y: 1960}},
         {type: "D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/republic-day-of-niger/"}, inherits: "Republic Day", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
