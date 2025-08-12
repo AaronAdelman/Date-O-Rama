@@ -63,7 +63,7 @@
         {titles: {"en": "Anniversary of the Formal Declaration of Martial Law in the Philippines", "fil": "Anibersaryo ng pagsisimula ng Batas Militar sa Republika ng Pilipinas"}, type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 17}, inherits: "Coast Guard Day", titles: {"en": "Philippine Coast Guard Day", "fil": "Araw ng Tanod Baybabin ng Pilipinas"}, first: {era: 1, y: 1901}},
         {titles: {"en": "Television Day", "he": "יום הטלוויזיה", "fil": "Araw ng Telebisyong Pilipino"}, type: "D", start: {mon: 10, d: 23}, first: {era: 1, y: 1953}, emoji: "📺"},
-        {inherits: "United Nations Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 10, d: 24}, inherits: "United Nations Day", first: {era: 1, y: 1945}},
         {titles: {"en": "Foundation Anniversary of the Boy Scouts of the Philippines", "fil": "Anibersaryo ng Kapatirang Scout ng Pilipinas"}, type: "D", start: {mon: 10, d: 24}},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Reformation Day"},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},

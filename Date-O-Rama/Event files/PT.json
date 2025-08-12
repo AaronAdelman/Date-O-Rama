@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.02, green: 0.42, blue: 0.22},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Portugal"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Carnival Tuesday"},

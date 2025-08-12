@@ -39,7 +39,7 @@
         {inherits: "Remembrance Day", type: "D", start: {mon: 5, wkd: [1], nth: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Commemoration_Day_of_Fallen_Soldiers"}, notes: {"en": "Commemoration Day of Fallen Soldiers"}},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "Birthday of the poet Eino Leino", "fi": "Leinon päivä"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "Birthday of the national writer Aleksis Kivi", "fi": "Aleksis Kiven päivä"}, inherits: "*BDay*", notes: {"en": "Day of Finnish Literature"}},
-        {inherits: "United Nations Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 10, d: 24}, inherits: "United Nations Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 6}, titles: {"en": "Finnish Swedish Heritage Day", "fi": "ruotsalaisuuden päivä", "sv": "svenska dagen"}, urls: {"en": "https://en.wikipedia.org/wiki/Finnish_Swedish_Heritage_Day"}},
         {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "Kekri"}, urls: {"en": "https://www.daysoftheyear.com/days/kekri/"}},

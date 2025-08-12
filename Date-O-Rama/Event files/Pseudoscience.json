@@ -3,8 +3,9 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.60, green: 0.20, blue: 0.26},
+    urls: {"en": "https://www.skepdic.com/"}, 
     events: [
-        {type: "D", start: {equinoxOrSolstice: "Mar"}, titles: {"en": "International Astrology Day"}, first: {era: 1, y: 1993}, notes: {"en": "This observance promotes pseudoscience."}},
+        {type: "D", start: {equinoxOrSolstice: "Mar"}, titles: {"en": "International Astrology Day"}, first: {era: 1, y: 1993}, notes: {"en": "This observance promotes pseudoscience."}, inherits: "*Astrology*"},
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "World Spine Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.skepdic.com/chiro.html"}, notes: {"en": "This observance promotes pseudoscience which can result in damage to one’s neck."}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "World Sound Healing Day"}, notes: {"en": "This observance promotes pseudoscientific nonsense about sound, meditation, and “healing”."}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Alien Abduction Day"}, notes: {"en": "Extraterrestrial Abduction Day\nAnother day dedicated to pseudoscience and fringe ideas."}, first: {era: 1, y: 2008}, urls: {"en": "https://skepdic.com/aliens.html"}},

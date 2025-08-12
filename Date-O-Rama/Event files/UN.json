@@ -176,7 +176,7 @@
         {inherits: "International Day for the Eradication of Poverty", type: "D", start: {mon: 10, d: 17}, first: {era: 1, y: 1993}},
         {titles: {"en": "Global Media and Information Literacy Week", "he": "שבוע אוריינות מדיה ומידע גלובלי"}, type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, first: {type: "nD", era: 1, y: 2012}, emoji: "🎥", urls: {"en": "https://www.daysoftheyear.com/days/global-media-and-information-literacy-week/"}},
 
-        {inherits: "United Nations Day", type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 10, d: 24}, inherits: "United Nations Day", first: {era: 1, y: 1948}},
         {titles: {"en": "Disarmament Week", "he": "שבוע הפירוק מנשק"}, type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 30}, first: {type: "nD", era: 1, y: 1978}, emoji: "☮", urls: {"en": "https://nationaldaycalendar.com/disarmament-week-week-of-october-24/"}},
         {titles: {"en": "World Development Information Day", "he": "יום המודעות לפיתוח העולמי"}, type: "D", start: {mon: 10, d: 24}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaldaycalendar.com/world-development-information-day-october-24/"}, emoji: "🌏"},
         {titles: {"en": "World Day for Audiovisual Heritage", "he": "היום העולמי למורשת אודיו־ויזואלית"}, type: "D", start: {mon: 10, d: 27}, first: {era: 1, y: 2005}, urls: {"en": "https://nationaldaycalendar.com/world-day-for-audiovisual-heritage-october-27/"}, emoji: "📷"},
