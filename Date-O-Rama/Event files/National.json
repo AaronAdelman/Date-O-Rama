@@ -1837,7 +1837,6 @@
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "Truck Driver Day"}, urls: {"en": "https://www.checkiday.com/88942d51ed839755cf33625442701da2/truck-driver-day"}, first: {era: 1, y: 2013}, emoji: "🚛"},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en": "National Vinyl Record Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vinyl-record-day/"}},
         {type: "D", start: {mon: 8, d: 13}, titles: {"en": "National Filet Mignon Day"}, urls: {"en": "https://www.daysoftheyear.com/days/filet-mignon-day/"}},
-        {type: "D", start: {mon: 8, d: 13}, titles: {"en": "National Prosecco Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-prosecco-day/"}, emoji: "🥂"},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Creamsicle Day", "he": "יום הארטיק הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/creamsicle-day/"}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Social Security Day"}, urls: {"en": "https://www.daysoftheyear.com/days/social-security-day/"}, emoji: "👓🖋️"},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "National Tattoo Removal Day", "he": "יום הסרת הקעקועים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/tattoo-removal-day/"}, first: {era: 1, y: 2017}},
