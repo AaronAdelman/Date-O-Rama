@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
+    first: {era: 1, y: 1991},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Moldova"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {mon: 12, d: 26, wkd: [1, 4, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/orthodox-christmas"}, inherits: "Christmas Holiday"},

@@ -8,7 +8,7 @@
     urls: {"en": "https://www.coe.int/en/web/portal/international-and-european-days"},
     events: [
         {type: "D", start: {mon: 8, d: 23}, inherits: "Black Ribbon Day", first: {era: 1, y: 2009}},
-        {inherits: "Data Protection Day", type: "D", start: {mon: 1, d: 28}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 1, d: 28}, inherits: "Data Protection Day", first: {era: 1, y: 2007}},
         {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 5, d: 17}, inherits: "International Day Against Homophobia, Transphobia, and Biphobia"},
         {type: "D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, inherits: "Safer Internet Day", first: {era: 1, y: 2012}},

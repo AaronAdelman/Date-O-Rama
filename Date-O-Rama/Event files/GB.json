@@ -184,7 +184,7 @@
         {type: "D", start: {mon: 9, wkd: [4], nth: 4}, inherits: "National Fitness Day", urls: {"en": "https://www.nationalfitnessday.com/"}, first: {era: 1, y: 2000}, last: {era: 1, y: 2020}},
         {type: "D", start: {mon: 9, wkd: [6], nth: 3}, titles: {"en": "Raspberry Day"}, urls: {"en": "https://cavernomasociety.org.uk/raspberry-day"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*"},
 
-        {inherits: "Tartan Day", type: "D", start: {mon: 4, d: 6}, first: {era: 1, "year": 1987}},
+        {type: "D", start: {mon: 4, d: 6}, inherits: "Tartan Day", first: {era: 1, "year": 1987}},
         {type: "D", start: {era: 1, y: 2018, mon: 3, d: 8}, inherits: "National Pothole Day"},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Calennig"}, notes: {"en": "Welsh New Year"}, inherits: "New Year’s Day", urls: {"en": "https://www.daysoftheyear.com/days/calennig/"}, emoji: "🍏"},
         {type: "D", start: {mon: 1, d: 14, wkd: [6]}, inherits: "National Pothole Day", first: {era: 1, y: 2015}, last: {era: 1, y: 2017}},

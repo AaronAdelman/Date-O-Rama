@@ -5,6 +5,6 @@
     calendarColor: {red: 0.06, green: 0.18, blue: 0.34},
     events: [
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "Church of Jesus Christ of Latter-day Saints Day"}, notes: {"en": "Church of Latter-day Saints Day"}, urls: {"en": "https://www.checkiday.com/613ab23a90aaf485f8a384f0d937b66d/church-of-jesus-christ-of-latter-day-saints-day"}, first: {era: 1, y: 1830}},
-        {inherits: "Pioneer Day", type: "D", start: {mon: 7, d: 24}, first: {era: 1, y: 1949}},
+        {type: "D", start: {mon: 7, d: 24}, inherits: "Pioneer Day", first: {era: 1, y: 1949}},
     ]
 }

@@ -5,8 +5,8 @@
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
     events: [
-        {inherits: "Baptism of the Prophet", type: "D", start: {mon: 3, d: 19}, urls: {"en": "https://publicholidays.africa/mali/baptism-of-the-prophet/"}},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "Baptism of the Prophet", urls: {"en": "https://publicholidays.africa/mali/baptism-of-the-prophet/"}},
     ]
 }
-

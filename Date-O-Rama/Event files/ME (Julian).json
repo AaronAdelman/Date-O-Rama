@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.85, green: 0.67, blue: 0.00},
+    first: {era: 1, y: 2006},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     events: [
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Orthodox Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},

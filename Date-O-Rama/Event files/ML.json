@@ -6,10 +6,11 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1960},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/mali/mali-army-day"}, inherits: "Armed Forces Day", notes: {"en": "Army Day"}},
-        {inherits: "Martyrs’ Day", type: "D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-mali/"}},
+        {type: "D", start: {mon: 3, d: 26}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyrs-day-in-mali/"}},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mali/labour-day"}, inherits: "Labour Day"},
