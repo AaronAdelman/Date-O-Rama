@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
+    first: {era: 1, y: 1952},
     events: [
         {type: "nD", start: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
         {inherits: "Revolution Day", type: "D", start: {mon: 1, d: 25}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day January 25", "he": "יום המהפכה ינואר 25", "ar": "عيد ثورة 25 يناير"}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}},

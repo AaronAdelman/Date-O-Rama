@@ -6,6 +6,7 @@
     calendarColor: {red: 0.00, green: 0.00, blue: 1.00},
     "TODO": "King’s Birthday",
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_South_Georgia_and_the_South_Sandwich_Islands"},
+    first: {era: 1, y: 1985},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Possession Day"}, first: {era: 1, y: 1775}},

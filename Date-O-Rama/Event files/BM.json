@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    first: {era: 1, y: 1609},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bermuda"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

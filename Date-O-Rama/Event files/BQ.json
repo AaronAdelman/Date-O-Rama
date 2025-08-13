@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.68, green: 0.11, blue: 0.16},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bonaire"},
+    first: {era: 1, y: 2010},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},

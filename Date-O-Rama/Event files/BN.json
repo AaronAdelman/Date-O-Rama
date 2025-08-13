@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Brunei"},
+    first: {era: 1, y: 1984},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2, 7]}, urls: {"en": "https://www.officeholidays.com/holidays/brunei/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},

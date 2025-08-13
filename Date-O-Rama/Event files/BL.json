@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.15, blue: 0.33},
+    first: {era: 1, y: 1648},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
@@ -15,7 +16,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/whit-monday-saint-barthelemy/"}},
         {inherits: "National Day", type: "D", start: {mon: 7, d: 14}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {type: "D", start: {mon: 10, d: 9}, first: {era: 1, y: 1847}, urls: {"en": "https://nationaltoday.com/saint-barthelemy-abolition-day/"}, inherits: "Abolition Day"},
+        {type: "D", start: {mon: 10, d: 9}, inherits: "Abolition Day", first: {era: 1, y: 1847}, urls: {"en": "https://nationaltoday.com/saint-barthelemy-abolition-day/"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/armistice-day-saint-barthelemy/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},

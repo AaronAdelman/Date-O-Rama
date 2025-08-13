@@ -6,6 +6,7 @@
     "otherCalendarCodes": ["Hebrew"],
     calendarColor: {red: 0.77, green: 0.24, blue: 0.17},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Canada"},
+    first: {era: 1, y: 1867},
     events: [
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, inherits: "Armed Forces Day", first: {era: 1, y: 2002}},

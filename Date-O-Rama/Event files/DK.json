@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Denmark"},
+    first: {era: 1, y: 900},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
