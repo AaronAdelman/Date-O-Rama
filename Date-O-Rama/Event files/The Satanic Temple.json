@@ -1,0 +1,15 @@
+{
+    titles: {"en": "The Satanic Temple", "ta": "சாத்தானியக் கோயில்", "zh": "撒旦聖殿", "id": "Kuil Setan", "es": "El Templo Satánico", "pt": "O Templo Satânico", "ru": "Сатанинский храм", "de": "The Satanic Temple", "fr": "Le temple satanique", "pl": "Świątynia Sataniczna", "bg": "Сатанинският храм", "sr": "Сатанистички храм", "uk": "Сатанинський храм", "ca": "Temple satànic", "eu": "Tenplu Satanikoa", "gl": "The Satanic Temple", "it": "Tempio Satanico", "lt": "Šėtono šventykla", "fi": "The Satanic Temple", "sv": "The Satanic Temple", "tr": "Satanist Tapınak", "cs": "The Satanic Temple", "hy": "Սատանայական տաճար", "ur": "شیطانی مندر", "fa": "معبد شیطانی", "ko": "사탄의 성전", "he": "המקדש השטני"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.5, green: 0.5, blue: 0.57},
+    first: {era: 1, y: 2013},
+    urls: {"en": "https://thesatanictemple.com/pages/holidays"},
+    events: [
+        {type: "D", start: {mon: 2, d: 15}, inherits: "Lupercalia"},
+        {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Hexennacht"}, inherits: "Walpurgis Night"},
+        {type: "D", start: {mon: 7, d: 25}, titles: {"en": "Unveiling Day"}},
+        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Sol Invictus"}},
+    ]
+}

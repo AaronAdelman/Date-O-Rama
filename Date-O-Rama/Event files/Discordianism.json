@@ -59,7 +59,7 @@
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "Liter Label Lark Day"}, inherits: "HDH"},
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Backwards Day, Traditional"}, notes: {"en": "Whollyday\n26 Chaos"}, inherits: "EDH"},
         {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Renew Old Acquaintances Day"}, notes: {"en": "Old-Ack Day"}, urls: {"en": "https://www.fsofcabal.com/holydays/01-33-old-ack-day"}},
-        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Lupercalia"}, urls: {"en": "https://www.fsofcabal.com/holydays/01-45-lupercalia"}},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "Lupercalia", urls: {"en": "https://www.fsofcabal.com/holydays/01-45-lupercalia"}},
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Dadanova Day"}, notes: {"en": "Dadanova"}, urls: {"en": "https://www.fsofcabal.com/holydays/01-36-dadanova"}},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Aaron Burr’s Birthday"}, notes: {"en": "Whollyday\n37 Chaos"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "St. Heat’s Day"}, inherits: "HDH"},

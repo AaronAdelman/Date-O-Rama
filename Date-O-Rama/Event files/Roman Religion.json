@@ -45,7 +45,7 @@
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Temple of Juno Sospita; Grove of Alernus Rites"}},
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Temple of Concord Anniversary"}},
         {type: "nD", start: {mon: 2, d: 13}, end: {mon: 2, d: 22}, titles: {"en": "Parentalia"}},
-        {type: "D", start: {mon: 2, d: 15}, titles: {"en": "Lupercalia"}},
+        {type: "D", start: {mon: 2, d: 15}, inherits: "Lupercalia"},
         {type: "D", start: {mon: 2, d: 17}, titles: {"en": "Fornacalia and Quirinalia"}},
         {type: "D", start: {mon: 2, d: 21}, titles: {"en": "Feralia"}},
         {type: "D", start: {mon: 2, d: 22}, titles: {"en": "Caristia (Dear Kindred Day)"}},
