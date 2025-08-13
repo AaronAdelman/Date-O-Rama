@@ -201,6 +201,7 @@
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F094226D57FF70093E13F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
+		A5545CFA2E4CE4B5003B26FA /* ASALocationWithClocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */; };
 		A554AFA3294F7CED0068D8E0 /* BA (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A554AFA2294F7CED0068D8E0 /* BA (Julian).json */; };
 		A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A557ACE025DD488B00A264B6 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -1349,6 +1350,7 @@
 		A54B61B32A9267FA005CC33D /* XK (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "XK (Julian).json"; sourceTree = "<group>"; };
 		A54B61B62A93F25E005CC33D /* KG (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KG (Julian).json"; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
+		A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocksCell.swift; sourceTree = "<group>"; };
 		A554AFA2294F7CED0068D8E0 /* BA (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BA (Julian).json"; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
@@ -2601,6 +2603,7 @@
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
 				A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */,
 				A507794128915A0700A98D01 /* ASALocationTypeCell.swift */,
+				A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */,
 				A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */,
 				A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */,
 				A568FC952D1C437000E64598 /* ASAMenuTitle.swift */,
@@ -3826,6 +3829,7 @@
 				A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */,
 				A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */,
 				A5A6FD5727BEC97C003595D5 /* StringExtensions.swift in Sources */,
+				A5545CFA2E4CE4B5003B26FA /* ASALocationWithClocksCell.swift in Sources */,
 				A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */,
 				A57706702896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */,
 				A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */,

@@ -18,8 +18,11 @@ struct ASALocationsTab: View {
     @Binding var showLocationsSheet: Bool
     
     @State private var isShowingNewLocationView = false
+    @State private var animatingTabSwitch = false
     
     var body: some View {
+        let ANIMATION_DURATION = 0.5
+        
         GeometryReader { proxy in
             NavigationStack {
                 ZStack {
@@ -33,20 +36,32 @@ struct ASALocationsTab: View {
                     
                     List {
                         ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                            ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                                .environmentObject(userData)
-                                .onTapGesture {
+                            ASALocationWithClocksCell(
+                                locationWithClocks: locationWithClocks,
+                                now: $now,
+                                animatingSelection: animatingTabSwitch && selectedTabIndex == index
+                            )
+                            .environmentObject(userData)
+                            .onTapGesture {
+                                // Animate the cell first
+                                withAnimation(.easeInOut(duration: ANIMATION_DURATION)) {
+                                    animatingTabSwitch = true
                                     selectedTabIndex = index
-                                    showLocationsSheet = false
                                 }
+                                
+                                // Then switch tabs after a brief delay
+                                DispatchQueue.main.asyncAfter(deadline: .now() + ANIMATION_DURATION - 0.05) {
+                                    showLocationsSheet = false
+                                    animatingTabSwitch = false
+                                }
+                            }
                         }
                         .onMove(perform: moveClock)
-                    } // List
+                    }
                     .scrollContentBackground(.hidden)
                     .listRowBackground(Color.clear)
                     .listStyle(.plain)
                     .safeAreaInset(edge: .top) {
-                        // This ensures the list content respects the toolbar
                         Color.clear.frame(height: 0)
                     }
                 } // ZStack
@@ -168,70 +183,6 @@ struct ASALocationsTab: View {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)
         userData.savePreferences(code: .clocks)
         userData.mainClocksVersion += 1 // 🔄 Force update
-    }
-}
-
-
-struct ASALocationWithClocksCell: View {
-    @EnvironmentObject var userData: ASAModel
-    @ObservedObject var locationWithClocks: ASALocationWithClocks
-    @Binding var now: Date
-    @State private var showingGetInfoView = false
-    @State private var showingActionSheet = false
-    
-    var body: some View {
-        let processed = locationWithClocks.clocks.map {ASAMiniProcessedClock(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
-        let times: Array<String> = processed.compactMap { $0.timeString }.uniqueElements.map { $0! }
-        let timeString = times.joined(separator: " • ")
-        
-        let cellBackground = processed.dayPart.locationColor
-        
-        VStack {
-            HStack {
-                ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: false)
-                
-                Spacer()
-                ASALocationMenu(locationWithClocks: locationWithClocks, now: $now, includeClockOptions: false) {
-                    self.showingActionSheet = true
-                } infoAction: {
-                    self.showingGetInfoView = true
-                } newClockAction: {debugPrint("Foo!")}
-                    .environmentObject(userData)
-                    .sheet(isPresented: self.$showingGetInfoView) {
-                        VStack {
-                            HStack {
-                                Button(action: {
-                                    showingGetInfoView = false
-                                }) {
-                                    ASACloseBoxImage()
-                                }
-                                Spacer()
-                            } // HStack
-                            ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
-                        }
-                        .font(.body)
-                    }
-                    .actionSheet(isPresented: self.$showingActionSheet) {
-                        ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
-                            .destructive(Text("Delete this location")) {
-                                userData.removeLocationWithClocks(locationWithClocks)
-                            },
-                            .default(Text("Cancel")) {  }
-                        ])
-                    }
-            } // HStack
-            
-            Text(timeString)
-                .font(.largeTitle)
-                .minimumScaleFactor(0.5)
-                .lineLimit(3)
-        } // VStack
-        .foregroundStyle(Color.white)
-        .padding()
-        .background(cellBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 8.0))
-        .listRowSeparator(.hidden)
-        .listRowBackground(Color.clear)
     }
 }
 
