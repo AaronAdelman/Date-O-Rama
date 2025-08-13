@@ -4,7 +4,21 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.15, blue: 0.33},
+    urls: {"en": "https://time.now/holidays/french-southern-territories/"},
     events: [
-        
+        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
+        {type: "D", start: {mon: 7, d: 14}, inherits: "Bastille Day", first: {era: 1, y: 1789}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
+        {type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inherits: "All Saints Day"},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", urls: {"en": "https://www.daysoftheyear.com/days/armistice-day-in-france/"}, first: {era: 1, y: 1922}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+
     ]
 }

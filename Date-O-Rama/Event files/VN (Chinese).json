@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Vietnam"},
     events: [
         {type: "D", start: {mon: 12, d: -2}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve Holiday"}},
         {type: "D", start: {mon: 12, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, titles: {"en": "Tet Eve"}},

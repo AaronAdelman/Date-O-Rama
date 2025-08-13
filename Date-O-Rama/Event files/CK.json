@@ -21,6 +21,6 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {inherits: "Children’s Day", type: "D", start: {mon: 2, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Children’s Day"},
     ]
 }

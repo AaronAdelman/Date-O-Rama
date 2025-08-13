@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 2, wkd: [1], nth: 2}},
+        {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, inherits: "Emancipation Day", urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-emancipation-day"}, first: {era: 1, y: 2024}},
     ]
 }

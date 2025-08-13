@@ -5,6 +5,7 @@
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Thailand", "he": "https://he.wikipedia.org/wiki/חגים_ומועדים_בתאילנד"},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},

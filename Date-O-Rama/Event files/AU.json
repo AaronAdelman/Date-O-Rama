@@ -18,7 +18,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {inherits: "Easter Tuesday", type: "D", start: {Easter:  "Easter", offsetD: 2}},
-        {inherits: "Father’s Day", type: "D", start: {mon: 9, wkd: [1], nth: 1}},
+        {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {inherits: "Feast of St. James", type: "D", start: {mon: 7, d: 25}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 10, wkd: [1], nth: -1}},

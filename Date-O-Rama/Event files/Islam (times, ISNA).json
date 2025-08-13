@@ -5,8 +5,8 @@
     calendarColor: {red: 0.01, green: 1.0, blue: 0.2},
     emoji: "🌎",
     events: [
-        {inherits: "Sunrise", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}},
-        {inherits: "Sunset", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}},
+        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
 
         {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "ISNA"}, notes: {"en": "Islamic Society of North America"}},
         {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "ISNA"}, notes: {"en": "Islamic Society of North America"}},

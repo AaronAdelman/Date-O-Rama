@@ -5,10 +5,11 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1975},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_São_Tomé_and_Príncipe"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4}, titles: {"en": "Day of King Amador", "pt": "Dia do Rei Amador"}, first: {era: 1, y: 2005}},
-        {inherits: "Martyrs’ Day", type: "D", start: {mon: 2, d: 3}, titles: {"es": "Dia dos Mártires da Liberdade", "en": "Commemoration of the Batepá Massacre"}, urls: {"en": "https://www.officeholidays.com/holidays/sao-tome-and-principe/sao-tome-and-principe-martyrs-day"}, first: {era: 1, y: 1953}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "Martyrs’ Day", titles: {"es": "Dia dos Mártires da Liberdade", "en": "Commemoration of the Batepá Massacre"}, urls: {"en": "https://www.officeholidays.com/holidays/sao-tome-and-principe/sao-tome-and-principe-martyrs-day"}, first: {era: 1, y: 1953}},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

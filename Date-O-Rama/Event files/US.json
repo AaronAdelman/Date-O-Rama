@@ -274,7 +274,7 @@
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Air Force Reserve Birthday"}, urls: {"en": "https://nationaltoday.com/air-force-reserve-birthday/"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "National Look up at the Sky Day"}, notes: {"en": "Look up at the Sky Day"}, emoji: "🐦✈️", urls: {"en": "https://www.daysoftheyear.com/days/look-up-at-the-sky-day/"}, first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 4, d: 14}, inherits: "Pan American Day", first: {era: 1, y: 1931}},
-        {type: "D", start: {mon: 4, d: 15}, inherits: "Tax Day", urls: {"en": "https://www.daysoftheyear.com/days/waitangi-day/"}},
+        {type: "D", start: {mon: 4, d: 15}, inherits: "Tax Day", urls: {"en": "https://www.daysoftheyear.com/days/tax-day/"}, first: {era: 1, y: 1913}},
         {type: "D", start: {mon: 4, d: 15}, titles: {"en": "One Boston Day"}, urls: {"en": "https://nationaltoday.com/one-boston-day/"}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Selena Day"}, urls: {"en": "https://www.daysoftheyear.com/days/selena-day/"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Ellis Island Family History Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ellis-island-family-history-day/"}, first: {era: 1, y: 2001}, emoji: "🗽"},

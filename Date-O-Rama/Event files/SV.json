@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.37, blue: 0.72},
     first: {era: 1, y: 1821},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_El_Salvador"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/el-salvador/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},

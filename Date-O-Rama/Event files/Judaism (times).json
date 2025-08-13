@@ -4,8 +4,8 @@
     calendarCode: "heb-solar*",
     calendarColor: {red: 0.01, green: 0.2, blue: 1.0},
     events: [
-        {inherits: "Sunrise", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}},
-        {inherits: "Sunset", type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}},
+        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
         {titles: {"en": "Mishsheyyakir (11°)", "he": "משיכיר (11°)"}, type: "pt", start: {ptType: "twilight", degBelowHorizon: 11.0, rising: true, offset: 0}},
         {titles: {"en": "Ṣe’th hakkokhavim (8.5°)", "he": "צאת הכוכבים (8.5°)"}, type: "pt", start: {ptType: "twilight", degBelowHorizon: 8.5, rising: false, offset: 0}, emoji: "🌌"},
         {"localizableTitle": "otherDawn", titles: {"en": "‘Aloth hashshaḥar (72 minutes)", "he": "עלות השחר (72 דקות)"}, type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: -4320.0}},

@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {inherits: "Father’s Day", type: "D", start: {mon: 9, wkd: [1], nth: 1}},
+        {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ],
     templates: [

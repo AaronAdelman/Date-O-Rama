@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
     first: {era: 1, y: 1776},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States_Virgin_Islands"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

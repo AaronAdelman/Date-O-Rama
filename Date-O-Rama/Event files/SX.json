@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.38, green: 0.69, blue: 0.88},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sint_Maarten"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},

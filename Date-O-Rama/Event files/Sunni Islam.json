@@ -4,8 +4,7 @@
     calendarCode: "hiq*",
     calendarColor: {red: 0.15, green: 0.85, blue: 0.15},
     events: [
-        {inherits: "Mawlid", type: "D", start: {mon: 3, d: 12}},
-        {inherits: "Laylat al-Qadr", type: "D", start: {mon: 9, d: 29}
-        }
+        {type: "D", start: {mon: 3, d: 12}, inherits: "Mawlid"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Laylat al-Qadr"},
     ]
 }

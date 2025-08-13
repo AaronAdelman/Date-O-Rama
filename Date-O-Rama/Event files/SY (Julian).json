@@ -4,6 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    first: {era: 1, y: 1946},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
     events: [
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
 
