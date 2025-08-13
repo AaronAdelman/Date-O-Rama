@@ -4,7 +4,8 @@
     defaultLocale: "en",
     calendarCode: "jul",
     calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
-    events: [
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
+   events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},

@@ -17,7 +17,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {inherits: "St. Andrew’s Day", type: "D", start: {mon: 4, d: 29}},
-        {inherits: "Dormition of the Mother of God", type: "D", start: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God", urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
         {type: "D", start: {mon: 8, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}, titles: {"en": "St. Mary’s Day"}},
 
         {type: "D", start: {Easter:  "Easter"}, titles: {"en": "Lelo Burti"}, urls: {"en": "https://www.daysoftheyear.com/days/lelo-burti/"}},

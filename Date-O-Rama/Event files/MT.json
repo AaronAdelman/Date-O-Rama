@@ -33,7 +33,7 @@
         {type: "D", start: {mon: 2, d: 3}, inherits: "Feast of St. Blaise", first: {era: 1, y: 972}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         
-        {inherits: "Feast of the Annunciation", type: "D", start: {mon: 3, d: 25}},
+        {type: "D", start: {mon: 3, d: 25}, inherits: "Feast of the Annunciation"},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Feast of Jesus of Nazareth", "mt": "Ġesù Nazzarenu"}},
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},

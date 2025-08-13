@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 1, y: 1956},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     events: [
         {inherits: "National Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1956}, urls: {"en": "https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en": "Independence Day"}},
         {inherits: "Revolution Day", type: "D", start: {mon: 12, d: 19}, first: {era: 1, y: 2018}},

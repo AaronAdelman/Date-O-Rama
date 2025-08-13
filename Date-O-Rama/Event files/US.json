@@ -402,7 +402,7 @@
         {type: "D", start: {mon: 7, d: 28}, titles: {"en": "Buffalo Soldiers Day"}, urls: {"en": "https://nationaltoday.com/buffalo-soldiers-day/"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 7, wkd: [6], nth: 2}, titles: {"en": "Collector Car Appreciation Day"}, urls: {"en": "https://www.semasan.com/collector-car-appreciation-day"}, notes: {"en": "CCAD"}, first: {era: 1, y: 2010}, emoji: "🚗"},
         {type: "D", start: {mon: 8, d: 1}, titles: {"en": "Colorado Day", "he": "יום קולורדו"}, first: {era: 1, y: 1907}, urls: {"en": "https://www.daysoftheyear.com/days/colorado-day/"}},
-        {type: "D", start: {mon: 8, d: 14}, titles: {"en": "Navajo Code Talkers Day", "he": "יום דוברי הקוד מבני הנאוואחו"}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
+        {type: "D", start: {mon: 8, d: 14}, titles: {"en": "Navajo Code Talkers Day", "he": "יום דוברי הקוד מבני הנאוואחו"}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}, notes: {"en": "National Navajo Code Talkers Day"}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 2}, titles: {"en": "National Spirit of ’45 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spirit-of-45-day/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 8, d: 16}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "Bennington Battle Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},

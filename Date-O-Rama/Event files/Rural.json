@@ -374,10 +374,10 @@
             {titles: {"fr": "Jour des récompenses", "en": "Honors Day", "he": "יום ההצטיינות"}, type: "D", start: {mon: 13, d: 5}, emoji: "🎖", urls: {"fr": "https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire", "en": "https://en.wikipedia.org/wiki/Sansculottides"}},
             {inherits: "Revolution Day", type: "D", start: {mon: 13, d: 6}, urls: {"fr": "https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire", "en": "https://en.wikipedia.org/wiki/Sansculottides"}},
         ]},
-        {titles: {"en": "Autumn", "he": "סתיו", "fr": "Automne"}, type: "nM", start: {mon: 1}, end: {mon: 3}, emoji: "🍁"},
-        {titles: {"en": "Winter", "he": "חורף", "fr": "Hiver"}, type: "nM", start: {mon: 4}, end: {mon: 6}, emoji: "❄️"},
-        {titles: {"en": "Spring", "he": "אביב", "fr": "Printemps"}, type: "nM", start: {mon: 7}, end: {mon: 9}, emoji: "🌷"},
-        {titles: {"en": "Summer", "he": "קיץ", "fr": "Été"}, type: "nM", start: {mon: 10}, end: {mon: 12}, emoji: "🕶"},
-        {titles: {"en": "Sansculottides", "he": "עיבור השנה", "fr": "Sansculottides"}, type: "M", start: {mon: 13}, emoji: "🎉"},
+//        {titles: {"en": "Autumn", "he": "סתיו", "fr": "Automne"}, type: "nM", start: {mon: 1}, end: {mon: 3}, emoji: "🍁"},
+//        {titles: {"en": "Winter", "he": "חורף", "fr": "Hiver"}, type: "nM", start: {mon: 4}, end: {mon: 6}, emoji: "❄️"},
+//        {titles: {"en": "Spring", "he": "אביב", "fr": "Printemps"}, type: "nM", start: {mon: 7}, end: {mon: 9}, emoji: "🌷"},
+//        {titles: {"en": "Summer", "he": "קיץ", "fr": "Été"}, type: "nM", start: {mon: 10}, end: {mon: 12}, emoji: "🕶"},
+//        {titles: {"en": "Sansculottides", "he": "עיבור השנה", "fr": "Sansculottides"}, type: "M", start: {mon: 13}, emoji: "🎉"},
     ]
 }
