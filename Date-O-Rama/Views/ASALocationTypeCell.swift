@@ -23,6 +23,6 @@ struct ASALocationTypeCell: View {
 
 struct ASALocationTypeCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationTypeCell(type: .EarthLocation)
+        ASALocationTypeCell(type: .earthLocation)
     }
 }

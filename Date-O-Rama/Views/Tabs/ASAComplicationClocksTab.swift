@@ -71,7 +71,7 @@ struct ASAComplicationSectionView: View {
             HStack {
                 ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: true)
 
-                if location.type == .EarthLocation {
+                if location.type == .earthLocation {
                     Spacer()
                     Menu {
                         Button(

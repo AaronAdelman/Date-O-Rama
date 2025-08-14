@@ -26,7 +26,7 @@ class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject, @unchec
     
     var timeZone:  TimeZone = TimeZone.GMT
     
-    var type: ASALocationType = .EarthUniversal
+    var type: ASALocationType = .earthUniversal
     
     init(id: UUID = UUID(), location: CLLocation, name: String? = nil, locality: String? = nil, country: String? = nil, regionCode: String? = nil, postalCode: String? = nil, administrativeArea: String? = nil, subAdministrativeArea: String? = nil, subLocality: String? = nil, thoroughfare: String? = nil, subThoroughfare: String? = nil, timeZone: TimeZone, type: ASALocationType) {
         self.id = id
@@ -56,7 +56,7 @@ class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject, @unchec
             return false
         }
         
-        if lhs.type == .EarthLocation {
+        if lhs.type == .earthLocation {
         return lhs.location.coordinate.latitude == rhs.location.coordinate.latitude && lhs.location.coordinate.longitude == rhs.location.coordinate.longitude && lhs.location.altitude == rhs.location.altitude
         }
         
@@ -127,20 +127,20 @@ extension ASALocation {
             }
         }
         
-        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, regionCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone, type: .EarthLocation)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, regionCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone, type: .earthLocation)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocation
     
     var formattedOneLineAddress:  String {
         switch self.type {
-        case .EarthUniversal:
+        case .earthUniversal:
             return NSLocalizedString("Earth (all locations)", comment: "")
             
-        case .MarsUniversal:
+        case .marsUniversal:
             return NSLocalizedString("Mars (all locations)", comment: "")
             
-        case .EarthLocation:
+        case .earthLocation:
             let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
             
             var temp: Array<String> = []
@@ -158,10 +158,10 @@ extension ASALocation {
 
     var shortFormattedOneLineAddress:  String {
         switch self.type {
-        case .EarthUniversal, .MarsUniversal:
+        case .earthUniversal, .marsUniversal:
             return self.formattedOneLineAddress
             
-        case .EarthLocation:
+        case .earthLocation:
             if self.locality != nil {
                 return self.locality!
             }
@@ -183,10 +183,10 @@ extension ASALocation {
 
     var longFormattedOneLineAddress:  String {
         switch self.type {
-        case .EarthUniversal, .MarsUniversal:
+        case .earthUniversal, .marsUniversal:
             return self.formattedOneLineAddress
             
-        case .EarthLocation:
+        case .earthLocation:
             let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
 
             var temp: Array<String> = []
@@ -204,27 +204,27 @@ extension ASALocation {
     } // var longFormattedOneLineAddress
 
     static var NullIsland: ASALocation {
-        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT, type: .EarthLocation)
+        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT, type: .earthLocation)
     } // static var NullIsland: ASALocation
     
     static var EarthUniversal: ASALocation {
-        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .EarthUniversal)
+        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .earthUniversal)
     } // static var EarthUniversal: ASALocation
     
     static var MarsUniversal: ASALocation {
-        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .MarsUniversal)
+        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .marsUniversal)
     } // static var MarsUniversal: ASALocation
     
     var flag: String {
         var code: String
         switch self.type {
-        case .EarthUniversal:
+        case .earthUniversal:
             code = REGION_CODE_Earth
             
-        case .MarsUniversal:
+        case .marsUniversal:
             code = REGION_CODE_Mars
         
-        case .EarthLocation:
+        case .earthLocation:
             code = (self.regionCode ?? "")
         }
         return code.flag
@@ -232,39 +232,39 @@ extension ASALocation {
     
     func abbreviatedTimeZoneString(for now: Date) -> String {
         switch self.type {
-        case .EarthLocation:
+        case .earthLocation:
             return self.timeZone.abbreviation(for: now) ?? ""
             
-        case .EarthUniversal:
+        case .earthUniversal:
             return TimeZone.GMT.abbreviation() ?? ""
             
-        case .MarsUniversal:
+        case .marsUniversal:
             return "MTC"
         } // switch self.type
     } // func abbreviatedTimeZoneString(for now: Date) -> String
     
     func localizedTimeZoneName(for now: Date) -> String {
         switch self.type {
-        case .EarthLocation:
+        case .earthLocation:
             return self.timeZone.localizedName(for: now) 
             
-        case .EarthUniversal:
+        case .earthUniversal:
             return TimeZone.GMT.localizedName(for: now) 
             
-        case .MarsUniversal:
+        case .marsUniversal:
             return "Coordinated Martian Time"
         } // switch self.type
     } // func localizedTimeZoneName(for now: Date) -> String
     
     var properName: String? {
         switch self.type {
-        case .EarthLocation:
+        case .earthLocation:
             return name
 
-        case .EarthUniversal:
+        case .earthUniversal:
             return NSLocalizedString("Earth (all locations)", comment: "")
             
-        case .MarsUniversal:
+        case .marsUniversal:
             return NSLocalizedString("Mars (all locations)", comment: "")
         } // switch self.type
     } // var properName
@@ -273,7 +273,7 @@ extension ASALocation {
         let locationType = self.type
 
         switch locationType {
-        case .EarthLocation:
+        case .earthLocation:
             let regionCode: (String) = (self.regionCode ?? "")
             let clocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
                 let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
@@ -281,7 +281,7 @@ extension ASALocation {
             }
             return clocks
 
-        case .EarthUniversal, .MarsUniversal:
+        case .earthUniversal, .marsUniversal:
             return [ASAClock.generic(calendarCode: locationType.defaultCalendarCode, dateFormat: .full)]
         }
     }
@@ -375,7 +375,7 @@ actor ASALocationCache {
                 thoroughfare: nil,
                 subThoroughfare: nil,
                 timeZone: currentTimeZone,
-                type: .EarthLocation
+                type: .earthLocation
             )
 
             cachedIdentifier = currentTimeZoneIdentifier

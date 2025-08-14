@@ -38,7 +38,7 @@ struct ASALocationDetailView: View {
                 } // Section
                 
                 Section {
-                    if locationWithClocks.location.type == .EarthLocation {
+                    if locationWithClocks.location.type == .earthLocation {
                         let METERS = 1000000.0
                         Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: METERS, longitudinalMeters: METERS)), annotationItems:  [locationWithClocks.location]) { tempLocationData in
                             MapMarker(coordinate: tempLocationData.location.coordinate)
@@ -90,11 +90,11 @@ struct ASALocationDetailView: View {
 extension ASALocationType {
     var image: Image? {
         switch self {
-        case .EarthLocation:
+        case .earthLocation:
             return nil
-        case .EarthUniversal:
+        case .earthUniversal:
             return Image("Earth")
-        case .MarsUniversal:
+        case .marsUniversal:
             return Image("Mars")
         }
     }

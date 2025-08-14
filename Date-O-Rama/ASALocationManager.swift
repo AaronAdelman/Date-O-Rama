@@ -151,7 +151,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             if place == nil || error != nil {
                 //                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
                                 
-                let tempLocation = ASALocation(location: location, country: self.lastDevicePlacemark?.country, regionCode: self.lastDevicePlacemark?.isoCountryCode, timeZone: TimeZone.autoupdatingCurrent, type: .EarthLocation)
+                let tempLocation = ASALocation(location: location, country: self.lastDevicePlacemark?.country, regionCode: self.lastDevicePlacemark?.isoCountryCode, timeZone: TimeZone.autoupdatingCurrent, type: .earthLocation)
                 
                 self.finishDidUpdateLocations(tempLocation)
                 

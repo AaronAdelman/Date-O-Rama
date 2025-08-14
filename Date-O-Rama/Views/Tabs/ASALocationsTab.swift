@@ -80,78 +80,45 @@ struct ASALocationsTab: View {
                             
                             Group {
                                 Button {
-                                    userData.mainClocks.sort(by: { $0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress })
+                                    userData.mainClocks.sortByNameAscending()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort by name ↑", systemImage: "arrow.down")
+                                    Text("Sort by name ascending")
                                 }
                                 
                                 Button {
-                                    userData.mainClocks.sort(by: { $0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress })
+                                    userData.mainClocks.sortByNameDescending()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort by name ↓", systemImage: "arrow.up")
+                                    Text("Sort by name descending")
                                 }
                                 
                                 Button {
-                                    userData.mainClocks.sort(by: {
-                                        if $0.location.type == .MarsUniversal {
-                                            return false
-                                        }
-                                        
-                                        if $1.location.type == .MarsUniversal {
-                                            return true
-                                        }
-                                        
-                                        return $0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude })
+                                    userData.mainClocks.sortWestToEast()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort west to east", systemImage: "arrow.right")
+                                    Label("Sort west to east", systemImage: "arrow.right.circle")
                                 }
                                 
                                 Button {
-                                    userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
-                                        return false
-                                    }
-                                        
-                                        if $1.location.type == .MarsUniversal {
-                                            return true
-                                        }
-                                        
-                                        return $0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude })
+                                    userData.mainClocks.sortEastToWest()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort east to west", systemImage: "arrow.left")
+                                    Label("Sort east to west", systemImage: "arrow.left.circle")
                                 }
                                 
                                 Button {
-                                    userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
-                                        return false
-                                    }
-                                        
-                                        if $1.location.type == .MarsUniversal {
-                                            return true
-                                        }
-                                        
-                                        return $0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude })
+                                    userData.mainClocks.sortSouthToNorth()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort south to north", systemImage: "arrow.up")
+                                    Label("Sort south to north", systemImage: "arrow.up.circle")
                                 }
                                 
                                 Button {
-                                    userData.mainClocks.sort(by: { if $0.location.type == .MarsUniversal {
-                                        return false
-                                    }
-                                        
-                                        if $1.location.type == .MarsUniversal {
-                                            return true
-                                        }
-                                        
-                                        return $0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude })
+                                    userData.mainClocks.sortNorthToSouth()
                                     userData.savePreferences(code: .clocks)
                                 } label: {
-                                    Label("Sort north to south", systemImage: "arrow.down")
+                                    Label("Sort north to south", systemImage: "arrow.down.circle")
                                 }
                             }
                         } label: {
@@ -185,6 +152,91 @@ struct ASALocationsTab: View {
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
 }
+
+let EARTH_UNIVERSAL_LATITUDE = 0.0
+let EARTH_UNIVERSAL_LONGITUDE = 0.0
+
+extension Array where Element == ASALocationWithClocks {
+    mutating func sortByNameAscending() {
+        self.sort(by: { $0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress })
+    }
+    
+    mutating func sortByNameDescending() {
+        self.sort(by: { $0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress })
+    }
+    
+    mutating func sortWestToEast() {
+        self.sort(by: {
+            let leftType  = $0.location.type
+            let rightType = $1.location.type
+            
+            if leftType == .marsUniversal {
+                return false
+            }
+            
+            if rightType == .marsUniversal {
+                return true
+            }
+            
+            let leftLongitude: CLLocationDegrees  = (leftType == .earthUniversal) ? EARTH_UNIVERSAL_LONGITUDE :  $0.location.location.coordinate.longitude
+            let rightLongitude: CLLocationDegrees = (rightType == .earthUniversal) ? EARTH_UNIVERSAL_LONGITUDE : $1.location.location.coordinate.longitude
+            return leftLongitude < rightLongitude })
+    }
+    
+    mutating func sortEastToWest() {
+        self.sort(by: {
+            let leftType  = $0.location.type
+            let rightType = $1.location.type
+            
+            if leftType == .marsUniversal {
+                return false
+            }
+            
+            if rightType == .marsUniversal {
+                return true
+            }
+            
+            let leftLongitude: CLLocationDegrees  = (leftType == .earthUniversal) ? EARTH_UNIVERSAL_LONGITUDE :  $0.location.location.coordinate.longitude
+            let rightLongitude: CLLocationDegrees = (rightType == .earthUniversal) ? EARTH_UNIVERSAL_LONGITUDE : $1.location.location.coordinate.longitude
+            return leftLongitude > rightLongitude })
+    }
+    
+    mutating func sortSouthToNorth() {
+        self.sort(by: {
+            let leftType  = $0.location.type
+            let rightType = $1.location.type
+            
+            if leftType == .marsUniversal {
+                return false
+            }
+            
+            if rightType == .marsUniversal {
+                return true
+            }
+
+            let leftLatitude: CLLocationDegrees  = (leftType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE :  $0.location.location.coordinate.latitude
+            let rightLatitude: CLLocationDegrees = (rightType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE : $1.location.location.coordinate.latitude
+            return leftLatitude < rightLatitude })
+    }
+    
+    mutating func sortNorthToSouth() {
+        self.sort(by: {
+            let leftType  = $0.location.type
+            let rightType = $1.location.type
+            
+            if leftType == .marsUniversal {
+                return false
+            }
+            
+            if rightType == .marsUniversal {
+                return true
+            }
+            
+            let leftLatitude: CLLocationDegrees  = (leftType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE :  $0.location.location.coordinate.latitude
+            let rightLatitude: CLLocationDegrees = (rightType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE : $1.location.location.coordinate.latitude
+            return leftLatitude > rightLatitude })
+    }
+} // extension Array where Element == ASALocationWithClocks
 
 
 // MARK:  -

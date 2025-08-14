@@ -11,19 +11,19 @@ import Foundation
 enum ASALocationType: String, CaseIterable, Identifiable {
     var id: Self { self }
     
-    case EarthLocation  = "xl"
-    case EarthUniversal = "xj"
-    case MarsUniversal  = "zmaj"
+    case earthLocation  = "xl"
+    case earthUniversal = "xj"
+    case marsUniversal  = "zmaj"
     
     var defaultCalendarCode: ASACalendarCode {
         switch self {
-        case .EarthLocation:
+        case .earthLocation:
             return .Gregorian
             
-        case .EarthUniversal:
+        case .earthUniversal:
             return .JulianDay
             
-        case .MarsUniversal:
+        case .marsUniversal:
             return .MarsSolDate
         } // switch self
     } // var defaultCalendarCode
@@ -31,11 +31,11 @@ enum ASALocationType: String, CaseIterable, Identifiable {
     var localizedName: String {
         var rawName: String
         switch self {
-        case .EarthLocation:
+        case .earthLocation:
             rawName = "Earth (specific location)"
-        case .EarthUniversal:
+        case .earthUniversal:
             rawName = "Earth (all locations)"
-        case .MarsUniversal:
+        case .marsUniversal:
             rawName = "Mars (all locations)"
         }
         

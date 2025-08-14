@@ -328,7 +328,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         
         let rawType = dictionary[TYPE_KEY] as? String
-        let type: ASALocationType = (rawType == nil) ? .EarthLocation : ASALocationType(rawValue: rawType!)!
+        let type: ASALocationType = (rawType == nil) ? .earthLocation : ASALocationType(rawValue: rawType!)!
 
         let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT, type: type)
 

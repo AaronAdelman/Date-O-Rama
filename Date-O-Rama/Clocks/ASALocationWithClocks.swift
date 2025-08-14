@@ -42,10 +42,10 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
     static func generic(location: ASALocation, usesDeviceLocation: Bool, locationManager: ASALocationManager) -> ASALocationWithClocks {
         let locationType = location.type
         switch locationType {
-        case .EarthUniversal, .MarsUniversal:
+        case .earthUniversal, .marsUniversal:
             return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: false, locationManager: locationManager)
             
-        case .EarthLocation:
+        case .earthLocation:
             return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: usesDeviceLocation, locationManager: locationManager)
         }
     }

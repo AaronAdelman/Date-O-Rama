@@ -3985,22 +3985,34 @@
         }
       }
     },
-    "Sort by name ↑" : {
+    "Sort by name ascending" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort by name ascending"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "מיין לפי שם ↑"
+            "value" : "מיין לפי שם עולה"
           }
         }
       }
     },
-    "Sort by name ↓" : {
+    "Sort by name descending" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort by name descending"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "מיין לפי שם ↓"
+            "value" : "מיין לפי שם יורד"
           }
         }
       }

@@ -296,12 +296,12 @@ extension ASACalendarCode {
     
     static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
         switch locationType {
-        case .EarthLocation:
+        case .earthLocation:
             return [.Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
                     .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar]
-        case .EarthUniversal:
+        case .earthUniversal:
             return [.JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie]
-        case .MarsUniversal:
+        case .marsUniversal:
             return [.MarsSolDate]
         } // switch locationType
     } // static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode>
@@ -358,13 +358,13 @@ extension ASACalendarCode {
     var locationType: ASALocationType {
         switch self {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return .EarthUniversal
+            return .earthUniversal
             
         case .MarsSolDate:
-            return .MarsUniversal
+            return .marsUniversal
             
         default:
-            return .EarthLocation
+            return .earthLocation
         }
     } // var locationType
     

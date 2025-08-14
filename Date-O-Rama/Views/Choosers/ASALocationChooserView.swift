@@ -47,7 +47,7 @@ struct ASALocationChooserView: View {
         debugPrint(#file, #function, "Propagate info back to parent")
         let changingLocationType = (self.tempLocationData.type != self.locationWithClocks.location.type)
         
-        let usesDeviceLocation = self.tempUsesDeviceLocation && tempLocationData.type == .EarthLocation
+        let usesDeviceLocation = self.tempUsesDeviceLocation && tempLocationData.type == .earthLocation
         self.locationWithClocks.usesDeviceLocation = usesDeviceLocation
         if usesDeviceLocation {
             self.locationWithClocks.location = locationManager.deviceLocation
@@ -115,7 +115,7 @@ struct ASALocationChooserView: View {
                     .modifier(ASAPicker(compact: compact))
                 }
                 
-                if tempLocationData.type == .EarthLocation {
+                if tempLocationData.type == .earthLocation {
                     Section {
                         if !locationManager.connectedToTheInternet {
                             Text("CANNOT_GEOLOCATE").foregroundColor(.gray)

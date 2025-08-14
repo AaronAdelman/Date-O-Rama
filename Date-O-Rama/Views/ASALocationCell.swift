@@ -40,7 +40,7 @@ struct ASALocationCell:  View {
     var body: some View {
         VStack {
             ASALocationTypeCell(type: locationData.type)
-            if locationData.type == .EarthLocation {
+            if locationData.type == .earthLocation {
                 Divider()
                 
                 HStack {
@@ -64,7 +64,7 @@ struct ASALocationCell:  View {
                                 }
                             }
                         }
-                        if locationData.type == .EarthLocation {
+                        if locationData.type == .earthLocation {
                             HStack {
                                 Spacer()
                                 Text(verbatim: locationData.location.humanInterfaceRepresentation).multilineTextAlignment(.trailing)

@@ -87,7 +87,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.supportsMonths = false
         }
         
-        assert(!(location.type != .EarthLocation && self.supportsMonths))
+        assert(!(location.type != .earthLocation && self.supportsMonths))
 
 
             self.hour   = dateComponents.hour
