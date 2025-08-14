@@ -105,82 +105,84 @@ struct ASADateORamaApp: App {
                         .id(userData.mainClocksVersion)
                         .navigationTitle("")
                         .toolbar {
-                            ToolbarItemGroup(placement: .topBarLeading) {
-                                Button {
-                                    // Start the shrinking animation
-                                    withAnimation(.easeInOut(duration: 0.4)) {
-                                        animatingToLocationsList = true
-                                    }
-                                    
-                                    // Show locations overlay after animation starts
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                        withAnimation(.easeInOut(duration: 0.3)) {
-                                            showLocationsOverlay = true
-                                        }
-                                        animatingToLocationsList = false
-                                    }
-                                } label: {
-                                    Image(systemName: "list.bullet")
-                                }
-
-                                // Dynamic menu for time control
-                                let NOW_NAME  = "arrow.trianglehead.clockwise"
-                                let DATE_NAME = "calendar"
-                                
-                                Menu {
+                            if !showLocationsOverlay {
+                                ToolbarItemGroup(placement: .topBarLeading) {
                                     Button {
-                                        usingRealTime = true
-                                    } label: {
-                                        Label("Now", systemImage: NOW_NAME)
-                                        if usingRealTime {
-                                            Image(systemName: "checkmark")
+                                        // Start the shrinking animation
+                                        withAnimation(.easeInOut(duration: 0.4)) {
+                                            animatingToLocationsList = true
                                         }
+                                        
+                                        // Show locations overlay after animation starts
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                            withAnimation(.easeInOut(duration: 0.3)) {
+                                                showLocationsOverlay = true
+                                            }
+                                            animatingToLocationsList = false
+                                        }
+                                    } label: {
+                                        Image(systemName: "list.bullet")
+                                    }
+                                    
+                                    // Dynamic menu for time control
+                                    let NOW_NAME  = "arrow.trianglehead.clockwise"
+                                    let DATE_NAME = "calendar"
+                                    
+                                    Menu {
+                                        Button {
+                                            usingRealTime = true
+                                        } label: {
+                                            Label("Now", systemImage: NOW_NAME)
+                                            if usingRealTime {
+                                                Image(systemName: "checkmark")
+                                            }
+                                        }
+                                        
+                                        Button {
+                                            usingRealTime = false
+                                            now = Date()
+                                        } label: {
+                                            Label("Date:", systemImage: DATE_NAME)
+                                            if !usingRealTime {
+                                                Image(systemName: "checkmark")
+                                            }
+                                        }
+                                        
+                                        Divider()
+                                        
+                                        Button(action: {
+                                            usingRealTime = false
+                                            now = now.oneDayBefore
+                                        }) {
+                                            Label("Previous day", systemImage: "chevron.backward")
+                                        }
+                                        
+                                        Button(action: {
+                                            usingRealTime = false
+                                            now = now.oneDayAfter
+                                        }) {
+                                            Label("Next day", systemImage: "chevron.forward")
+                                        }
+                                    } label: {
+                                        Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
                                     }
                                     
                                     Button {
-                                        usingRealTime = false
-                                        now = Date()
+                                        showAboutSheet = true
                                     } label: {
-                                        Label("Date:", systemImage: DATE_NAME)
-                                        if !usingRealTime {
-                                            Image(systemName: "checkmark")
+                                        Image(systemName: "info.circle")
+                                    }
+                                    
+                                    if appDelegate.session.isPaired {
+                                        Button {
+                                            showComplicationsSheet = true
+                                        } label: {
+                                            Image(systemName: "applewatch.watchface")
                                         }
-                                    }
-                                    
-                                    Divider()
-                                    
-                                    Button(action: {
-                                        usingRealTime = false
-                                        now = now.oneDayBefore
-                                    }) {
-                                        Label("Previous day", systemImage: "chevron.backward")
-                                    }
-                                    
-                                    Button(action: {
-                                        usingRealTime = false
-                                        now = now.oneDayAfter
-                                    }) {
-                                        Label("Next day", systemImage: "chevron.forward")
-                                    }
-                                } label: {
-                                    Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
-                                }
-                                
-                                Button {
-                                    showAboutSheet = true
-                                } label: {
-                                    Image(systemName: "info.circle")
-                                }
-                                
-                                if appDelegate.session.isPaired {
-                                    Button {
-                                        showComplicationsSheet = true
-                                    } label: {
-                                        Image(systemName: "applewatch.watchface")
                                     }
                                 }
                             }
-                        }
+                        } // toolbar
                         .sheet(isPresented: $showAboutSheet) {
                             ASAAboutTab()
                         }

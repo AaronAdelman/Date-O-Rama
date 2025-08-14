@@ -73,7 +73,7 @@ struct ASALocationsTab: View {
                 .navigationTitle("Locations")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
+                    ToolbarItem(placement: .topBarLeading) {
                         Menu {
                             Button(action: {
                                 isShowingNewLocationView = true
@@ -132,13 +132,13 @@ struct ASALocationsTab: View {
                     }
                     
                     // Add close button to toolbar
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("Done") {
-                            onDismiss()
-                        }
-                    }
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        Button("Done") {
+//                            onDismiss()
+//                        }
+//                    }
                 }
-                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+//                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
                 .onAppear {
                     // Highlight the currently selected location when coming from tab view
                     highlightedLocationIndex = currentlySelectedLocationIndex
