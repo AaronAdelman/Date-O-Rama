@@ -1324,6 +1324,7 @@
         {type: "D", start: {mon: 8, d: 13}, titles: {"en": "National Prosecco Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Navajo Code Talkers Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Acadian Day"}},
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Failure Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Relaxation Day"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Sunflower Day"}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "National Airborne Day"}},

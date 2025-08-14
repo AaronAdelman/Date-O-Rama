@@ -36,5 +36,7 @@
         {type: "D", start: {mon: 7, d: 31}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, titles: {"en": "Tacos Day"}, emoji: "🌮", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 7, d: 16}, titles: {"en": "Anniversary of the Vel’ d’Hiv Roundup", "fr": "Anniversaire de la rafle du Vélodrome d’hiver"}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {type: "nD", start: {mon: 6, d: 29, thruMon: 7, thruD: 21, wkd: [7]}, end: {mon: 7, d: 21, thruD: 27, wkd: [1]}, titles: {"en": "Tour de France", "fr": "Tour de France", "he": "טור דה פראנס", "yi": "טור דע פראנס", "es": "Tour de Francia", "de": "Tour de France"}, first: {era: 1, y: 1903}, emoji: "🚲", urls: {"en": "https://www.letour.fr/en", "fr": "https://www.letour.fr/fr/", "de": "https://www.letour.fr/de/", "es": "https://www.letour.fr/es/"}},
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Chauvin Day"}, notes: {"en": "Nicolas Chauvin Day"}, first: {era: 1, y: 1978}, urls: {"en": "https://www.checkiday.com/c53a63f50f4b0f2c0edca824075f752f/chauvin-day"}},
+
     ]
 }
