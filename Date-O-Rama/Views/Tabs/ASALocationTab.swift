@@ -22,11 +22,56 @@ struct ASALocationTab: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks)
-                    .environmentObject(userData)
+            let location = locationWithClocks.location
+            let usesDeviceLocation = locationWithClocks.usesDeviceLocation
+            let processed: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
+                ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
             }
-            .listStyle(GroupedListStyle())
+            
+            let dayPart: ASADayPart = processed.dayPart
+            let headerColor = dayPart.locationColor
+            let imageName: String = {
+                switch location.type {
+                case .earthUniversal:
+                    return "Earth"
+                    
+                case .marsUniversal:
+                    return "Mars"
+                    
+                case .earthLocation:
+                    switch dayPart {
+                    case .day:
+                        return "dayImage"
+                    case .night:
+                        return "nightImage"
+                    case .unknown:
+                        return "unknownBackground"
+                    }
+                }
+            }()
+            
+            GeometryReader { geo in
+                ZStack(alignment: .top) {
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                    
+                    List {
+                        ASALocationWithClocksSectionView(
+                            now: $now,
+                            locationWithClocks: $locationWithClocks,
+                            headerColor: headerColor,
+                            processed: processed
+                        )
+                        .environmentObject(userData)
+                    }
+                    .listStyle(.grouped)
+                    .scrollContentBackground(.hidden)
+                    .padding(.top, geo.safeAreaInsets.top) // Dynamically match toolbar/nav bar height
+                }
+                .edgesIgnoringSafeArea(.bottom) // keep background full bleed
+            }
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarItems(trailing: EditButton())

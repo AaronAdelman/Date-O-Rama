@@ -17,7 +17,15 @@ struct ASAWatchLocationsView: View {
             section
             in
             Form {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: section)
+                let location = section.location
+                let usesDeviceLocation = section.usesDeviceLocation
+                let processed: Array<ASAProcessedClock> = section.clocks.map {
+                    ASAProcessedClock(clock: $0.wrappedValue, now: now, isForComplications: false, location: location.wrappedValue, usesDeviceLocation: usesDeviceLocation.wrappedValue)
+                }
+                
+                let headerColor = processed.dayPart.locationColor
+
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: section, headerColor: headerColor, processed: processed)
                     .environmentObject(userData)
             }
         }

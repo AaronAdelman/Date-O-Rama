@@ -25,18 +25,16 @@ struct ASALocationWithClocksSectionView: View {
     
     @State private var showingActionSheet = false
     
+    let headerColor: Color
+    let processed: Array<ASAProcessedClock>
+    
 #if os(watchOS)
 #else
     @Environment(\.editMode) var editMode
 #endif
     
     var body: some View {
-        let location = locationWithClocks.location
-        let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-        let processed: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
-            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-        }
-        let headerColor = processed.dayPart.locationColor
+        let location: ASALocation = locationWithClocks.location
         
         Section(header: HStack {
             ASALocationWithClocksSectionHeader(locationWithClocks: locationWithClocks, now: now, shouldCapitalize: true)
