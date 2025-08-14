@@ -11,17 +11,20 @@ import Combine
 import CoreLocation
 
 struct ASALocationTab: View {
-    @EnvironmentObject var userData:  ASAModel
+    @EnvironmentObject var userData: ASAModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var locationWithClocks: ASALocationWithClocks
-                
+    
+    let isAnimatingToList: Bool
+    
     @State var isNavigationBarHidden: Bool = true
-            
+    
     var body: some View {
-        NavigationView  {
+        NavigationView {
             List {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks).environmentObject(userData)
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks)
+                    .environmentObject(userData)
             }
             .listStyle(GroupedListStyle())
             .navigationBarHidden(self.isNavigationBarHidden)
@@ -30,9 +33,13 @@ struct ASALocationTab: View {
             .onAppear {
                 self.isNavigationBarHidden = true
             }
+            // Add shrinking animation for reverse transition
+            .scaleEffect(isAnimatingToList ? 0.85 : 1.0)
+            .opacity(isAnimatingToList ? 0.7 : 1.0)
+            .animation(.easeInOut(duration: 0.3), value: isAnimatingToList)
         }
         .navigationViewStyle(StackNavigationViewStyle())
-    } // var body
+    }
 } // struct ASALocationsTab
 
 

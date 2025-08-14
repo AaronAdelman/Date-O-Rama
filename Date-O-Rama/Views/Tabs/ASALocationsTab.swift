@@ -17,8 +17,12 @@ struct ASALocationsTab: View {
     @Binding var selectedTabIndex: Int
     @Binding var showLocationsSheet: Bool
     
+    let currentlySelectedLocationIndex: Int
+    let onDismiss: () -> Void // Callback for dismissing the overlay
+    
     @State private var isShowingNewLocationView = false
     @State private var animatingTabSwitch = false
+    @State private var highlightedLocationIndex: Int? = nil
     
     var body: some View {
         let ANIMATION_DURATION = 0.5
@@ -39,19 +43,20 @@ struct ASALocationsTab: View {
                             ASALocationWithClocksCell(
                                 locationWithClocks: locationWithClocks,
                                 now: $now,
-                                animatingSelection: animatingTabSwitch && selectedTabIndex == index
+                                animatingSelection: animatingTabSwitch && selectedTabIndex == index,
+                                isHighlighted: highlightedLocationIndex == index
                             )
                             .environmentObject(userData)
                             .onTapGesture {
-                                // Animate the cell first
+                                // Animate the cell expanding (forward direction)
                                 withAnimation(.easeInOut(duration: ANIMATION_DURATION)) {
                                     animatingTabSwitch = true
                                     selectedTabIndex = index
                                 }
                                 
-                                // Then switch tabs after a brief delay
-                                DispatchQueue.main.asyncAfter(deadline: .now() + ANIMATION_DURATION - 0.05) {
-                                    showLocationsSheet = false
+                                // Dismiss overlay after animation
+                                DispatchQueue.main.asyncAfter(deadline: .now() + ANIMATION_DURATION - 0.1) {
+                                    onDismiss()
                                     animatingTabSwitch = false
                                 }
                             }
@@ -64,7 +69,7 @@ struct ASALocationsTab: View {
                     .safeAreaInset(edge: .top) {
                         Color.clear.frame(height: 0)
                     }
-                } // ZStack
+                }
                 .navigationTitle("Locations")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
@@ -125,8 +130,29 @@ struct ASALocationsTab: View {
                             Label("Locations", systemImage: "mappin")
                         }
                     }
+                    
+                    // Add close button to toolbar
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Done") {
+                            onDismiss()
+                        }
+                    }
                 }
                 .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+                .onAppear {
+                    // Highlight the currently selected location when coming from tab view
+                    highlightedLocationIndex = currentlySelectedLocationIndex
+                    
+                    // Add a subtle pulse animation to show which location we came from
+                    withAnimation(.easeInOut(duration: 0.6).repeatCount(2, autoreverses: true)) {
+                        // The cell will handle the visual animation
+                    }
+                    
+                    // Clear highlight after animation
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        highlightedLocationIndex = nil
+                    }
+                }
             }
             .sheet(isPresented: $isShowingNewLocationView) {
                 let locationManager = ASALocationManager.shared
@@ -151,7 +177,7 @@ struct ASALocationsTab: View {
         userData.savePreferences(code: .clocks)
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
-}
+} // struct ASALocationsTab
 
 let EARTH_UNIVERSAL_LATITUDE = 0.0
 let EARTH_UNIVERSAL_LONGITUDE = 0.0

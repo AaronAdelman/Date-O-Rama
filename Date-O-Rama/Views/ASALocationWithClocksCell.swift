@@ -16,6 +16,7 @@ struct ASALocationWithClocksCell: View {
     @State private var showingActionSheet = false
     
     let animatingSelection: Bool
+    let isHighlighted: Bool
     
     var body: some View {
         let processed = locationWithClocks.clocks.map {ASAMiniProcessedClock(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
@@ -44,7 +45,7 @@ struct ASALocationWithClocksCell: View {
                                     ASACloseBoxImage()
                                 }
                                 Spacer()
-                            } // HStack
+                            }
                             ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
                         }
                         .font(.body)
@@ -57,24 +58,25 @@ struct ASALocationWithClocksCell: View {
                             .default(Text("Cancel")) {  }
                         ])
                     }
-            } // HStack
+            }
             
             Text(timeString)
                 .font(.largeTitle)
                 .minimumScaleFactor(0.5)
                 .lineLimit(3)
-        } // VStack
+        }
         .foregroundStyle(Color.white)
         .padding()
         .background(cellBackground)
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
-        .scaleEffect(animatingSelection ? 1.1 : 1.0)
+        .scaleEffect(animatingSelection ? 1.1 : (isHighlighted ? 1.03 : 1.0))
         .opacity(animatingSelection ? 0.8 : 1.0)
         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: animatingSelection)
+        .animation(.easeInOut(duration: 0.6), value: isHighlighted)
         .listRowSeparator(.hidden)
         .listRowBackground(Color.clear)
     }
-}
+} // struct ASALocationWithClocksCell
 
 //#Preview {
 //    ASALocationWithClocksCell()

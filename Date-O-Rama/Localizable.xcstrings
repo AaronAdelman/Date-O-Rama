@@ -1180,14 +1180,7 @@
       }
     },
     "Done" : {
-      "extractionState" : "migrated",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
-          }
-        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
