@@ -51,10 +51,13 @@ struct ASALocationTab: View {
             }()
             
             GeometryReader { geo in
-                ZStack(alignment: .top) {
+                ZStack
+//                (alignment: .top)
+                {
                     Image(imageName)
                         .resizable()
-                        .scaledToFill()
+//                        .scaledToFill()
+                        .scaledToFit()
                         .ignoresSafeArea()
                     
                     List {
@@ -69,8 +72,9 @@ struct ASALocationTab: View {
                     .listStyle(.grouped)
                     .scrollContentBackground(.hidden)
                     .padding(.top, geo.safeAreaInsets.top) // Dynamically match toolbar/nav bar height
+                    .padding(.bottom, geo.safeAreaInsets.bottom) // Dynamically match toolbar/nav bar height
                 }
-                .edgesIgnoringSafeArea(.bottom) // keep background full bleed
+//                .edgesIgnoringSafeArea(.bottom) // keep background full bleed
             }
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
