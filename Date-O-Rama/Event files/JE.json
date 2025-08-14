@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.81, green: 0.08, blue: 0.17},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Jersey"},
+    first: {era: 1, y: 1204},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -21}, inherits: "Mothering Sunday", notes: {"en": "Mother’s Day"}},

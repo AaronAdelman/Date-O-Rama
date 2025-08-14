@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
     urls: {"en": "https://publicholidays.asia/northern-mariana-islands/"},
+    first: {era: 1, y: 1978},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 3}, inherits: "Martin Luther King, Jr. Day", first: {era: 1, y: 1986}},

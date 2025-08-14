@@ -10,6 +10,7 @@
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {red: 0.6, green: 0.1, blue: 0.1},
+    first: {era: 1, y: 1935},
     events: [
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "Tweety Bird Day"}, urls: {"en": "https://happyhivehomeschooling.com/what-is-todays-holiday/tweety-bird-day/"}, inherits: "*BDay*", first: {era: 1, y: 1942}, emoji: "🐦"},
         {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Porky Pig’s Birthday"}, urls: {"en": "https://cartoonnetwork.fandom.com/wiki/Porky%27s_Birthday_Weekend"}, inherits: "*BDay*", first: {era: 1, y: 1935}, emoji: "🐖"},

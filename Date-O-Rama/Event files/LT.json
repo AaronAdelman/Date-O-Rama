@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.72, blue: 0.11},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Lithuania"},
+    first: {era: 1, y: 1918},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "National Day", type: "D", start: {mon: 2, d: 16}, first: {era: 1, y: 1918}, titles: {"en": "Restoration of the State Day in Lithuania", "lt": "Lietuvos valstybės atkūrimo diena"}, urls: {"en": "https://nationaltoday.com/restoration-of-the-state-day-in-lithuania/"}},

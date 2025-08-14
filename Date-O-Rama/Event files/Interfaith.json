@@ -3,6 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.8, green: 0.8, blue: 0.98},
+    first: {era: 1, y: 1950},
     events: [
         {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "World Peace & Prayer Day"}, notes: {"en": "World Peace and Prayer Day"}, urls: {"en": "https://www.worldpeaceandprayer.com/"}, emoji: "⭕", first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 1, wkd: [1], nth: 3}, titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/"}},

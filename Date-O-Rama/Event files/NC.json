@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.98, blue: 0.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_New_Caledonia"},
+    first: {era: 1, y: 19853},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
