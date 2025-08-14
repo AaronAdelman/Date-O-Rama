@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.98, green: 0.83, blue: 0.31},
     urls: {"en": "https://publicholidays.africa/reunion/"},
+    first: {era: 1, y: 1946},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.29, blue: 0.53},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sweden"},
+    first: {era: 1, y: 1523},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

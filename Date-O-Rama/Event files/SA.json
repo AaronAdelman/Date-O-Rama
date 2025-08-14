@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Saudi_Arabia"},
+    first: {era: 1, y: 1727},
     events: [
         {type: "D", start: {mon: 2, d: 22}, inherits: "Founding Day", first: {era: 1, y: 1727}},
         {type: "D", start: {mon: 2, d: 23, wkd: [1, 2, 5]}, inherits: "National Holiday", first: {era: 1, y: 1727}},

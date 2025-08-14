@@ -1,6 +1,7 @@
 {
     titles: {"*": "SD"},
     "//": "Sudan",
+    "TODO": "Muslim observances",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},

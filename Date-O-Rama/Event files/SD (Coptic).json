@@ -1,7 +1,6 @@
 {
     titles: {"*": "SD"},
     "//": "Sudan",
-    "TODO": "Muslim observances",
     defaultLocale: "en",
     calendarCode: "cop",
     "otherCalendarCodes": ["jul"],

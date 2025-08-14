@@ -3,6 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {red: 0.3, green: 0.6, blue: 0.8},
+    first: {era: 1, y: 1966},
     events: [
         {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Ancestors’ Eve"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Ancestors%27_Eve"}, notes: {"en": "From Star Trek:  Voyager."}, emoji: "🚀", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 4, d: 5}, titles: {"en": "First Contact Day"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/First_Contact_Day"}, notes: {"en": "Star Trek First Contact Day"}, emoji: "🚀", first: {era: 1, y: 2021}},

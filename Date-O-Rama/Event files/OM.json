@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Oman"},
+    first: {era: 1, y: 751}, 
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-ascension-day"}, inherits: "Accession Day"},

@@ -7,6 +7,7 @@
     calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
     first: {era: 1, y: 1991},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Slovenia"},
+    first: {era: 1, y: 1990},
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 8}, titles: {"en": "Prešeren Day", "sl": "Prešernov dan"}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, first: {era: 1, y: 1944}},

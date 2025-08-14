@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.87, blue: 0.00},
+    first: {era: 1, y: 1974},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Takai Commission Holiday"}},

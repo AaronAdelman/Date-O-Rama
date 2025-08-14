@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.47, blue: 0.20},
+    first: {era: 1, y: 1788},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Norfolk_Island"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
