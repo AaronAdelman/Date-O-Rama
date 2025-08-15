@@ -3,7 +3,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.5, green: 0.5, blue: 0.57},
-    first: {era: 1, y: 2013},
+    first: {era: 1, y: 2012},
     urls: {"en": "https://thesatanictemple.com/pages/holidays"},
     events: [
         {type: "D", start: {mon: 2, d: 15}, inherits: "Lupercalia"},

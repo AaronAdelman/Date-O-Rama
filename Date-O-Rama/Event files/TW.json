@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.00, blue: 0.58},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Taiwan"},
+    first: {era: 1, y: 1949},
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Founding of the Republic of China"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

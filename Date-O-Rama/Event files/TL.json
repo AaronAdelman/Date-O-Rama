@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Timor-Leste"},
+    first: {era: 1, y: 1975},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},

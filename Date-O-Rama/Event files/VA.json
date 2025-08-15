@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.88, blue: 0.000},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Vatican_City"},
+    first: {era: 1, y: 756},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

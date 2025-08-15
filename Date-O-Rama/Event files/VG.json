@@ -4,6 +4,7 @@
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.07, green: 0.36, blue: 0.14},
+    first: {era: 1, y: 1960},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_British_Virgin_Islands"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

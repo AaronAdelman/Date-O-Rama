@@ -6,6 +6,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Turkey"},
+    first: {era: 1, y: 1923},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National Sovereignty and Children’s Day", "tr": "Ulusal Egemenlik ve Çocuk Bayramı"}, urls: {"en": "https://www.daysoftheyear.com/days/national-sovereignty-and-childrens-day/"}, first: {era: 1, y: 1981}, emoji: "👦👧"},

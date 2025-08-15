@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.22, green: 0.33, blue: 0.62},
     urls: {"en": "https://publicholidays.africa/mayotte/"},
+    first: {era: 1, y: 1974},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

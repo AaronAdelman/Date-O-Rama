@@ -5,6 +5,7 @@
     calendarCode: "jul",
     calendarColor: {red: 0.00, green: 0.00, blue: 0.50},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
+    first: {era: 1, y: 2008},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.90, green: 0.25, blue: 0.25},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Wallis_and_Futuna"},
+    first: {era: 1, y: 1961},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},

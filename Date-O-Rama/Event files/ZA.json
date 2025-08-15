@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.88, green: 0.24, blue: 0.19},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa"},
+    first: {era: 1, y: 1910},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/south-africa/international-new-years-day"}, first: {era: 1, y: 1910}},
