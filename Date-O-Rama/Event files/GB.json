@@ -354,6 +354,8 @@
         {type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durationD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 1993}, last: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 7, d: 6, thruD: 12, wkd: [6], durationD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 2025}},
         {type: "nD", start: {mon: 7, d: 18, thruD: 24, wkd: [2], durationD: 4}, titles: {"en": "Royal Welsh Show"}, urls: {"en": "https://rwas.wales/royal-welsh/"}, first: {era: 1, y: 1904}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿🌾🐮"},
+        {type: "D", start: {era: 1, y: 2023, mon: 9, d: 1}, inherits: "National Moving Day"},
+        {type: "D", start: {mon: 8, d: 19}, inherits: "National Moving Day", first: {era: 1, y: 2024}},
 
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 5}, titles: {"en": "Anti-Bullying Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en": "Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦"},
@@ -379,5 +381,6 @@
         {template: "National Toast Day", type: "D", start: {mon: 2, wkd: [5], nth: -1}, titles: {"en": "National Toast Day", "he": "יום הטוסט הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/toast-day/"}},
         {template: "NCDUK", type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "National Children’s Day UK"}, notes: {"en": "NCDUK"}, inherits: "National Children’s Day", urls: {"en": "https://www.nationalchildrensdayuk.com/"}},
         {template: "Conwy River Festival", type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durationD: 3}, titles: {"en": "Conwy River Festival"}, urls: {"en": "https://conwyriverfestival.org/"}, emoji: "🏰"},
+        {template: "National Moving Day", type: "D", start: {era: 1, y: 2023, mon: 9, d: 1}, titles: {"en": "National Moving Day"}, urls: {"en": "https://www.nationalmovingday.co.uk/"}, emoji: "📦🏠"},
     ]
 }

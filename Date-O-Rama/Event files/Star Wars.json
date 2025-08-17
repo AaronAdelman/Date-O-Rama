@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 5, d: 5}, titles: {"en": "Revenge of the Fifth"}, first: {era: 1, y: 2011}, urls: {"en": "https://revengeofthe5th.com/"}, emoji: "🪐"},
         {type: "D", start: {mon: 5, d: 6}, titles: {"en": "Revenge of the Sixth"}, urls: {"en": "https://en.wiktionary.org/wiki/Revenge_of_the_Sixth"}, emoji: "🪐"},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "National Kiss a Wookiee Day"}, urls: {"en": "https://www.checkiday.com/e6f7cfbd7e233096a869e053b2dbdc21/national-kiss-a-wookiee-day"}, first: {era: 1, y: 2005}},
-        {type: "D", start: {mon: 8, d: 19}, titles: {"en": "International Talk Like Jar Jar Binks Day"}, notes: {"en": "ITLJJBD"}, urls: {"en": "https://talklikejarjarday.com/"}, first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 8, d: 19}, titles: {"en": "International Talk Like Jar Jar Binks Day"}, notes: {"en": "ITLJJBD\nTalk Like Jar Jar Binks Day"}, urls: {"en": "https://talklikejarjarday.com/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 5, d: 21}, titles: {"en": "National Talk Like Yoda Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-talk-like-yoda-day/"}, first: {era: 1, y: 2003}},
     ]
 }

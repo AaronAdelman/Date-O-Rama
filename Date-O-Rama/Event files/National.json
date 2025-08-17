@@ -1864,6 +1864,7 @@
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "National Ice Cream Pie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ice-cream-pie-day/"}, emoji: "🥧"},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Pinot Noir Day", "he": "יום הפינו נואר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pinot-noir-day/"}, emoji: "🍷", notes: {"en": "National Pinot Noir Day"}},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "National Mail Order Catalog Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mail-order-catalog-day/"}, emoji: "📦"},
+        {type: "nD", start: {mon: 8, d: 19, durationD: 7}, titles: {"en": "National Aviation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aviation-week/"}, first: {era: 1, y: 1939}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "National Couple’s Day", "he": "יום הזוג הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-couples-day/"}, emoji: "👩‍❤️‍👨"},
         {type: "D", start: {mon: 8, d: 19}, inherits: "National Potato Day", urls: {"en": "https://www.daysoftheyear.com/days/potato-day/"}},
         {type: "D", start: {mon: 8, d: 19}, titles: {"en": "National Patient Advocacy Day"}, urls: {"en": "https://nationaltoday.com/national-patient-advocacy-day/"}, first: {era: 1, y: 1993}},
