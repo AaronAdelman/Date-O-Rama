@@ -1562,7 +1562,7 @@
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "Color Book Day"}, emoji: "📚", urls: {"en": "https://www.checkiday.com/485e0b6d25c95e99c230f4086fd22d77/color-book-day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "World Lizard Day", "he": "יום הלטאה העולמי"}, emoji: "🦎", urls: {"en": "https://www.daysoftheyear.com/days/world-lizard-day/"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Victory Over Japan Day", first: {era: 1, y: 1945}},
-        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "World Greatness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-greatness-day/"}, first: {era: 1, y: 2016}, emoji: "🦸‍♂️🦸‍♀️"},
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "World Greatness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-greatness-day/"}, first: {era: 1, y: 2019}, emoji: "🦸‍♂️🦸‍♀️", notes: {"en": "Created by Patrick Businge via National Day Archives."}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "Surveillance Day", "he": "יום נפנף למצלמות המעקב"}, notes: {"en": "Wave at the Surveillance Cameras Day"}, notes: {"en": "Wave At the Surveillance Cameras Day"}, emoji: "👋", urls: {"en": "https://www.daysoftheyear.com/days/surveillance-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Never Give Up Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.nevergiveupday.com/"}},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "World Breast Cancer Research Day"}, urls: {"en": "https://nationaltoday.com/world-breast-cancer-research-day/"}, inherits: "*MedAwareness*"},
