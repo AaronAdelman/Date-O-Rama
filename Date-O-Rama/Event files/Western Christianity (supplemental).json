@@ -89,5 +89,6 @@
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "Chastity Week"}, urls: {"en": "https://www.daysoftheyear.com/days/chastity-week/"}, first: {era: 1, y: 1998}},
         {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "Christian Aid Week"}, urls: {"en": "https://www.daysoftheyear.com/days/christian-aid-week/"}, first: {era: 1, y: 1957}},
         {type: "W", start: {mon: 10, fullWk: 3, firstDOfWk: 2}, titles: {"en": "YWCA Week Without Violence"}, urls: {"en": "https://www.ywcaweekwithoutviolence.org/"}, first: {era: 1, y: 1995}, emoji: "🌎❤️"},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 3}, titles: {"en": "God’s Preeminence Day"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.checkiday.com/7b7d5768dfe571539b565dd3f9f10d55/gods-preeminence-day"}},
     ]
 }
