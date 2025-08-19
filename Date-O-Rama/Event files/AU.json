@@ -137,6 +137,7 @@
         {type: "nD", start: {mon: 7, d: 21, thruD: 27, wkd: [5], durationD: 4}, titles: {"en": "Royal Darwin Show"}, notes: {"en": "Darwin Show Day"}, first: {era: 1, y: 1951}, urls: {"en": "https://darwinshow.com.au/"}, emoji: "🐮"},
         {type: "D", start: {mon: 10, d: 22}, titles: {"en": "Saffron Day"}, first: {era: 0, y: 2018}, urls: {"en": "https://saffronday.org/"}, inherits: "*MedAwareness*", emoji: "🧡"},
         {type: "D", start: {mon: 7, wkd: [5], nth: 4}, titles: {"en": "Shiraz Day"}, notes: {"en": "Shiraz Wine Day\nNational Shiraz Day"}, urls: {"en": "https://www.mastermindconsulting.com.au/blog/shirazday/"}, first: {era: 1, y: 2020}, emoji: "🍷"},
+        {type: "D", start: {mon: 8, wkd: [2], nth: 3}, titles: {"en": "Cupcake Day", "he": "יום הקאפקייק"}, notes: {"en": "RSPCA Cupcake Day"}, urls: {"en": "https://www.rspcacupcakeday.com.au/"}, emoji: "🐶🧁🐱", first: {era: 1, y: 2008}},
     ],
     templates: [
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},

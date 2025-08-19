@@ -1569,6 +1569,7 @@
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Never Give Up Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.nevergiveupday.com/"}},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "World Breast Cancer Research Day"}, urls: {"en": "https://nationaltoday.com/world-breast-cancer-research-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "International Delivery Driver Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-delivery-driver-appreciation-day/"}, first: {era: 1, y: 2023}},
+        {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Helium Discovery Day"}, urls: {"en": "https://www.checkiday.com/25489da6ac9b9d80ce467bb095e2a3e1/helium-discovery-day"}, first: {era: 1, y: 1868}, emoji: "🎈"},
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Serendipity Day", "he": "יום הסרנדיפיות"}, urls: {"en": "https://www.madeleinekay.com/serendipity-day-holiday"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 8, d: 19}, titles: {"en": "International Orangutan Day", "he": "יום האורנגאוטן הבינלאומי"}, emoji: "🦧", urls: {"en": "http://www.worldorangutanevents.org/international-orangutan-day.php"}},
         {type: "D", start: {mon: 8, d: 19}, titles: {"en": "World Photography Day"}, emoji: "📷", notes: {"en": "World Photo Day"}, urls: {"en": "https://www.worldphotographyday.com/"}, notes: {"en": "National Photography Day\nWorld Photo Day"}},

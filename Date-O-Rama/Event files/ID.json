@@ -13,9 +13,10 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day", first: {era: 1, y: 1953}},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 40}, titles: {"en": "Ascension Day (in lieu)"}, first: {era: 1, y: 2023}},
-        {titles: {"en": "Pancasila Day", "id": "Hari Lahir Pancasila"}, type: "D", start: {mon: 6, d: 1}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Pancasila Day", "id": "Hari Lahir Pancasila"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 2, era: 1, y: 2023}, titles: {"en": "Waisak Day Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/wesak-day"}},
-        {inherits: "Independence Day", type: "D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 8, d: 17}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 8, d: 18, wkd: [2]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/indonesia/christmas-holiday"}, first: {era: 1, y: 2023}},
 
