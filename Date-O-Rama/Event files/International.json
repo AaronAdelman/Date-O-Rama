@@ -751,7 +751,7 @@
         {type: "D", start: {mon: 3, d: 20}, inherits: "International Francophonie Day", first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Bibliomania Day"}, urls: {"en": "https://nationaltoday.com/bibliomania-day/"}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Bock Beer Day"}, urls: {"en": "https://nationaltoday.com/bock-beer-day/"}, emoji: "🍺"},
-        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Won’t You Be My Neighbor Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wont-you-be-my-neighbor-day/"}},
+        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Won’t You Be My Neighbor Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wont-you-be-my-neighbor-day/"}, notes: {"en": "This observance celebrates Fred Rogers and his public television show, Mister Rogers’ Neighborhood"}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "World Behavior Analysis Day"}, urls: {"en": "https://nationaltoday.com/world-behavior-analysis-day/"}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "World Day of Theatre for Children and Young People"}, urls: {"en": "https://nationaltoday.com/world-day-of-theatre-for-children-and-young-people/"}, first: {era: 1, y: 2021}, emoji: "👦👧"},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "World Frog Day", "he": "יום הצפרדע העולמי"}, urls: {"en": "https://nationaltoday.com/world-frog-day/"}, first: {era: 1, y: 2014}, emoji: "🐸"},

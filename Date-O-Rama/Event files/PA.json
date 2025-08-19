@@ -32,5 +32,6 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 3}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}, emoji: "🏙️"},
         {type: "D", start: {mon: 11, d: 10}, urls: {"en": "https://nationaltoday.com/day-of-the-primer-grito-de-independencia/"}, titles: {"en": "Day of the “Primer Grito de Independencia”"}},
+        {type: "D", start: {mon: 8, d: 14}, titles: {"en": "Panamanian Golden Frog National Day"}, emoji: "🐸", urls: {"en": "https://www.amphibians.org/news/join-us-in-celebrating-the-panamanian-golden-frog-national-day/"}, first: {era: 1, y: 2014}},
     ]
 }
