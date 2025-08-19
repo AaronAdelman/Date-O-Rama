@@ -687,6 +687,8 @@
 		A5DC9C7F27285D2100047F64 /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DC9C7D27285D2100047F64 /* Planets.json */; };
 		A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
+		A5DDAFC42E54CE4400093307 /* SpongeBob SquarePants.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */; };
+		A5DDAFC52E54CE4400093307 /* SpongeBob SquarePants.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */; };
 		A5DEFE8B2822FE9600EF1651 /* KR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* KR.json */; };
 		A5DEFE8C2822FE9600EF1651 /* KR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* KR.json */; };
 		A5DEFE8E2822FF4900EF1651 /* KP.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8D2822FF4900EF1651 /* KP.json */; };
@@ -1593,6 +1595,7 @@
 		A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventAvailabilityExtensions.swift; sourceTree = "<group>"; };
 		A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAICalendarIndexPickerView.swift; sourceTree = "<group>"; };
 		A5DC9C7D27285D2100047F64 /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
+		A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SpongeBob SquarePants.json"; sourceTree = "<group>"; };
 		A5DEFE8A2822FE9600EF1651 /* KR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KR.json; sourceTree = "<group>"; };
 		A5DEFE8D2822FF4900EF1651 /* KP.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KP.json; sourceTree = "<group>"; };
 		A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorCircle.swift; sourceTree = "<group>"; };
@@ -2241,6 +2244,7 @@
 				A57797CF2B8FC0A200F68529 /* SN (Muslim).json */,
 				A501C8052861FA9C00211E33 /* SO.json */,
 				A5EF0005285B8EEA00F2205F /* SO (Muslim).json */,
+				A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */,
 				A5EFFFB1285B808E00F2205F /* SR.json */,
 				A50DA50C28686271008D54AE /* SR (Chinese).json */,
 				A5EFFFEF285B88C200F2205F /* SS.json */,
@@ -3085,6 +3089,7 @@
 				A50DA51D28686272008D54AE /* TH (Chinese).json in Resources */,
 				A5EFFFB4285B808E00F2205F /* TZ.json in Resources */,
 				A5E292DB285A5D7D00925EBD /* TO.json in Resources */,
+				A5DDAFC52E54CE4400093307 /* SpongeBob SquarePants.json in Resources */,
 				A5E49649286253D0001BF40C /* MP.json in Resources */,
 				A5C528882E0D866E0016C8EA /* HoliDailys.json in Resources */,
 				A5278B1F290FE06700834674 /* BY (Julian).json in Resources */,
@@ -3393,6 +3398,7 @@
 				A50DA51A28686272008D54AE /* SG (Chinese).json in Resources */,
 				A5E292C2285A420400925EBD /* EG.json in Resources */,
 				A5372CB82C9B4805009149E1 /* Western Christianity (derived).json in Resources */,
+				A5DDAFC42E54CE4400093307 /* SpongeBob SquarePants.json in Resources */,
 				A5EFFF66285B61E500F2205F /* CI.json in Resources */,
 				A5EF0016285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A501C800285F7F4200211E33 /* TG.json in Resources */,
