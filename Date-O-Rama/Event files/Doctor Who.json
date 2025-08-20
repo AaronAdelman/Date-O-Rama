@@ -8,5 +8,6 @@
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Impossible Astronaut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/impossible-astronaut-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 11, d: 23}, titles: {"en": "Doctor Who Day"}, urls: {"en": "https://www.daysoftheyear.com/days/doctor-who-day/"}, first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "International Dalek Remembrance Day"}, first: {era: 1, y: 1963}, urls: {"en": "https://www.daysoftheyear.com/days/dalek-remembrance-day/"}},
+        {type: "D", start: {mon: 11, d: 23}, titles: {"en": "TARDIS Day"}, notes: {"en": "From Doctor Who"}},
     ]
 }

@@ -129,7 +129,7 @@
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "Hug Day"}, urls: {"en": "https://nationaltoday.com/hug-day/"}, emoji: "🫂"},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "National Freedom to Marry Day"}, urls: {urls: "https://www.daysoftheyear.com/days/national-freedom-to-marry-day/"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 2, d: 13}, inherits: "National Valentine Shopping Reminder Day"},
-        {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Galentine’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/galentines-day/"}, emoji: "💛", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Galentine’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/galentines-day/"}, emoji: "💛", first: {era: 1, y: 2017}, notes: {"en": "From Parks and Recreation"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "International Condom Day"}, notes: {"en": "This observance could have been promoted with more tact."}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "International Natural Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-natural-day/"}, notes: {"en": "International Day of Self Love\nSelf-Love Day\nMadly in Love With Me Day\nSelf Love Day\nInternational Natural Day", "he": "יום מאוהב/ת בעצמי בטירוף"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Kiss Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kiss-day/"}},

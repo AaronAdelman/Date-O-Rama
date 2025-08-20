@@ -1302,7 +1302,7 @@
         {type: "D", start: {mon: 6, d: 15}, urls: {"en": "https://internationalwim.org/idwim/"}, titles: {"en": "International Women in Mining Day"}, notes: {"en": "IDWIM\nInternational Day of Women in Mining"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Arborist Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/arborist-appreciation-day/"}, emoji: "🌴🌳🌲"},
-        {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Bloomsday", "he": "בלומסדיי"}, urls: {"en": "https://www.daysoftheyear.com/days/bloomsday/"}, first: {era: 1, y: 1954}, emoji: "📘"},
+        {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Bloomsday", "he": "בלומסדיי"}, urls: {"en": "https://www.daysoftheyear.com/days/bloomsday/"}, first: {era: 1, y: 1954}, emoji: "📘", notes: {"en": "This observace celebrates Ulysses"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Fresh Veggies Day", "he": "יום הירקות הטריים"}, urls: {"en": "https://www.daysoftheyear.com/days/fresh-veggies-day/"}, emoji: "🥦🥬🧄"},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "International Waterfall Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-waterfall-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Wish Fulfillment Day"}, urls: {"en": "https://www.checkiday.com/1da511caaf306bff9343132dd5e48095/wish-fulfillment-day"}},
@@ -1937,6 +1937,88 @@
         {type: "W", start: {mon: 9, fullWk: 2}, urls: {"en": "https://www.ieha.org/ihw"}, titles: {"en": "International Housekeeping and Environmental Services Week"}, notes: {"en": "Housekeepers Week\nEnvironmental Services Week"}, first: {era: 1, y: 1981}, emoji: "🌎"},
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, titles: {"en": "Farm Animal Awareness Week"}, emoji: "🐄"},
         
+        // January
+        {type: "D", start: {mon: 1, d: 8}, titles: {"en": "Roy Batty Inception Day"}, notes: {"en": "From Blade Runner"}},
+        {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Activation of HAL 9000"}, notes: {"en": "From 2001: A Space Odyssey"}},
+        {type: "D", start: {mon: 1, d: 19}, titles: {"en": "Buffy Summers’ Birthday"}, notes: {"en": "From Buffy The Vampire Slayer"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 1, d: 24}, titles: {"en": "Dean Winchester’s Birthday"}, notes: {"en": "From Supernatural"}, inherits: "*BDay*"},
+
+        // February
+        {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Pris Inception Day"}, notes: {"en": "From Blade Runner"}},
+        {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Robonzaa"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+        {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Dana Scully’s Birthday"}, notes: {"en": "From The X-Files"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 2, d: 24}, titles: {"en": "Anniversary of Laura Palmer’s Murder"}, notes: {"en": "From Twin Peaks"}, inherits: "*DeathAnniv*"},
+
+        // March
+        {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Babylon 5 Launch Day"}, notes: {"en": "From Babylon 5"}},
+        {type: "D", start: {mon: 3, d: 11}, titles: {"en": "Frankenstein’s Day"}, notes: {"en": "From Frankenstein"}},
+        {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Colonial Day"}, notes: {"en": "From Battlestar Galactica"}},
+        {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Number Six’s Birthday"}, notes: {"en": "From The Prisoner"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Robomadan"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+        {type: "nD", start: {mon: 3, d: 21}, end: {mon: 3, d: 22}, titles: {"en": "The Purge"}, notes: {"en": "From The Purge"}},
+        {type: "D", start: {mon: 3, d: 24}, titles: {"en": "Breakfast Club Day"}, notes: {"en": "From The Breakfast Club"}},
+
+        // April
+        {type: "D", start: {mon: 4, d: 4}, titles: {"en": "1984 Day"}, notes: {"en": "From 1984"}},
+        {type: "D", start: {mon: 4, d: 8}, titles: {"en": "Rex Manning Day!"}, notes: {"en": "From Empire Records"}},
+        {type: "nD", start: {mon: 4, d: 20}, end: {mon: 5, d: 3}, titles: {"en": "Robanukah"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+
+        // May
+        {type: "D", start: {mon: 5, d: 2}, titles: {"en": "Sam Winchester’s Birthday"}, notes: {"en": "From Supernatural"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Anniversary of the Battle of New York"}, notes: {"en": "From The Avengers"}},
+        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Cinco de Cuatro"}, notes: {"en": "From Arrested Development"}},
+        {type: "D", start: {mon: 5, d: 8}, titles: {"en": "Katniss Everdeen’s Birthday"}, notes: {"en": "From The Hunger Games"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 5, d: 10}, titles: {"en": "Whacking Day"}, notes: {"en": "From The Simpsons"}},
+        {type: "D", start: {mon: 5, d: 15}, titles: {"en": "Miracle Monday"}, notes: {"en": "From Superman: Miracle Monday"}},
+        {type: "D", start: {mon: 5, d: 20}, titles: {"en": "Eliza Doolittle Day"}, notes: {"en": "From My Fair Lady"}},
+        {type: "D", start: {mon: 5, d: 25}, titles: {"en": "The Glorious 25th of May"}, notes: {"en": "From Discworld"}},
+
+        // June
+        {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Winterfair"}, notes: {"en": "From The Vorkosigan Saga"}},
+        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Ferris Bueller’s Day Off"}, notes: {"en": "From Ferris Bueller’s Day Off"}},
+        {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Summerween"}, notes: {"en": "From Gravity Falls"}},
+        {type: "D", start: {mon: 6, d: 23}, titles: {"en": "Longest Night"}, notes: {"en": "From Kushiel’s Legacy"}},
+        {type: "D", start: {mon: 6, d: 25}, titles: {"en": "Half-Christmas"}, notes: {"en": "From Workaholics"}},
+        {type: "D", start: {mon: 6, d: 26}, titles: {"en": "Murder of Thomas and Martha Wayne"}, notes: {"en": "From Batman"}, inherits: "*DeathAnniv*"},
+
+        // July
+        {type: "D", start: {mon: 7, d: 4}, titles: {"en": "Lunar Independence Day"}, notes: {"en": "From The Moon Is A Harsh Mistress"}, inherits: "Independence Day"},
+
+        // August
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Klordny"}, notes: {"en": "From Legion of Superheroes"}},
+        {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Percy Jackson’s Birthday"}, notes: {"en": "From Percy Jackson and the Olympians"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 8, d: 29}, titles: {"en": "Judgement Day"}, notes: {"en": "From Terminator 2: Judgment Day"}},
+
+        // September
+        {type: "D", start: {mon: 9, d: 13}, titles: {"en": "Breakaway"}, notes: {"en": "From Space 1999"}},
+        {type: "D", start: {mon: 9, d: 20}, titles: {"en": "Unification Day"}, notes: {"en": "From Firefly"}, inherits: "Unification Day"},
+        {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Anniversary of the Crash of Oceanic Flight 815"}, notes: {"en": "From Lost"}},
+
+        // October
+        {type: "D", start: {mon: 10, d: 8}, titles: {"en": "Rory Gilmore’s Birthday"}, notes: {"en": "From Gilmore Girls"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Fox Mulder’s Birthday"}, notes: {"en": "From The X-Files"}},
+        {type: "D", start: {mon: 10, d: 14}, titles: {"en": "The Sudden Departure"}, notes: {"en": "From The Leftovers"}},
+        {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Grouch Day"}, notes: {"en": "From Sesame Street"}},
+        {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Durin’s Day"}, notes: {"en": "From The Lord of the Rings"}},
+        {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Back To The Future Day"}, notes: {"en": "From Back to the Future"}},
+
+        // November
+        {type: "D", start: {mon: 11, d: 7}, titles: {"en": "N7 Day"}, notes: {"en": "From Mass Effect"}},
+        {type: "D", start: {mon: 11, d: 12}, titles: {"en": "Anniversary of the Hill Valley Lightning Strike"}, notes: {"en": "From Back to the Future"}},
+        {type: "D", start: {mon: 11, d: 13}, titles: {"en": "Odd Couple Day"}, notes: {"en": "From The Odd Couple"}},
+        {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Anniversary of Samantha Mulder’s Abduction"}, notes: {"en": "From The X-Files"}},
+        {type: "D", start: {mon: 11, d: 29}, titles: {"en": "St. Pancake Day"}, notes: {"en": "From Jack, Jacky and the Juniors"}},
+
+        // December
+        {type: "D", start: {mon: 12, d: 16}, titles: {"en": "The Feast of Winter Veil Begins"}, notes: {"en": "From World of Warcraft"}},
+        {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Merlinpeen"}, notes: {"en": "From 30 Rock"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Hogswatch"}, notes: {"en": "From Discworld"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Refrigerator Day"}, notes: {"en": "From Dinosaurs"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Smekday"}, notes: {"en": "From The True Meaning of Smekday"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Decemberween"}, notes: {"en": "From Homestar Runner"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Holiday Number 11"}, notes: {"en": "From Quark"}},
+        {type: "D", start: {mon: 12, d: 30}, titles: {"en": "International Alliance Day"}, notes: {"en": "From Babylon 5"}},
+
         {type: "D", start: {mon: 5, d: 1}, overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
             {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
@@ -1975,7 +2057,6 @@
         {type: "nD", start: {mon: 7, d: 7, thruD: 13, wkd: [2], durationD: 8}, titles: {"en": "World Orca Week"}, notes: {"en": "WOW"}, urls: {"en": "https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", first: {era: 1, y: 2014}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 7, d: 14}, titles: {"en": "World Orca Day"}, urls: {"en": "https://www.worldorcaday.org/"}, emoji: "🌎"},
         ]},
-        
         
         {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "Celebrate Your Name Week"}, notes: {"en": "CYNW"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "📛", first: {era: 1, y: 1997}, nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [1]}, titles: {"en": "Namesake Day", "he": "יום השמות"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "📛"},

@@ -344,9 +344,8 @@
         {type: "D", start: {mon: 8, d: 18}, titles: {"en": "World Never Give Up Day"}, urls: {"en": "https://www.nationaldaycalendar.com/international/world-never-give-up-day-august-18"}, emoji: "❤️", first: {era: 1, y: 2019}, notes: {"en": "Never Give Up Day"}},
         {type: "D", start: {mon: 8, d: 19}, titles: {"en": "International Bow Day"}, first: {era: 1, y: 2017}, notes: {"en": "This event is meant to promote fashion."}},
         {type: "D", start: {mon: 8, d: 20}, titles: {"en": "National Accessible Air Travel Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-accessible-air-travel-day-august-20"}, emoji: "🛩️", first: {era: 1, y: 2022}},
-        {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Brazilian Blowout Day"}, first: {era: 1, y: 2014}, notes: {"en": "This event is meant to promote vanity and fashion."}},
+        {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Brazilian Blowout Day"}, first: {era: 1, y: 2014}, notes: {"en": "We at Adelsoft interpret this event as an awareness day for tire damage in Brazil."}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "National Surgical Oncologist Day", "he": "יום האונקולוג הכירורגי הלאומי"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-surgical-oncologist-day-august-22"}, first: {era: 1, y: 2019}, emoji: "👨‍⚕️👩‍⚕️"},
-
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Got Checked Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-got-checked-day-august-26"}, first: {era: 1, y: 2021}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "National Peach Day"}, emoji: "🍑", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-peach-day-august-27"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 8, d: 28}, titles: {"en": "National Power Rangers Day"}, first: {era: 1, y: 2018}, notes: {"en": "This event is meant to celebrate a franchise which deserves to be lampooned on Mystery Science Theater 3000."}},
