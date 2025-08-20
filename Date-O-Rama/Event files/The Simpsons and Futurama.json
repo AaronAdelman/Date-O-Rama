@@ -1,0 +1,15 @@
+{
+    titles: {"en": "The Simpsons and Futurama", "he": "משפחת סימפסון ופיוצ׳רמה"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.2, green: 0.3, blue: 0.1},
+    first: {era: 1, y: 1989},
+    events: [
+        {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Robonzaa"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+        {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Robomadan"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+        {type: "nD", start: {mon: 4, d: 20}, end: {mon: 5, d: 3}, titles: {"en": "Robanukah"}, notes: {"en": "From Futurama"}, urls: {"en": "https://futurama.fandom.com/wiki/Robanukah"}},
+        {type: "D", start: {mon: 5, d: 10}, titles: {"en": "Whacking Day"}, notes: {"en": "From The Simpsons"}, urls: {"en": "https://simpsons.fandom.com/wiki/Whacking_Day_(holiday)"}},
+        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "We Hate Springfield Day"}, urls: {"en": "https://simpsons.fandom.com/wiki/We_Hate_Springfield_Day"}, first: {era: 1, y: 2004}},
+        {type: "D", start: {mon: 4, d: 19}, titles: {"en": "World Simpsons Day"}, urls: {"en": "https://blog.lewolang.com/en/posts/129/today-19-april-we-remember-the-simpsons"}, first: {era: 1, y: 2021}},
+    ]
+}

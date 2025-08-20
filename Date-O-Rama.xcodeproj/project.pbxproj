@@ -689,6 +689,12 @@
 		A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
 		A5DDAFC42E54CE4400093307 /* SpongeBob SquarePants.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */; };
 		A5DDAFC52E54CE4400093307 /* SpongeBob SquarePants.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */; };
+		A5DDAFC72E564A8700093307 /* Supernatural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC62E564A8700093307 /* Supernatural.json */; };
+		A5DDAFC82E564A8700093307 /* Supernatural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC62E564A8700093307 /* Supernatural.json */; };
+		A5DDAFCA2E564CA300093307 /* The Simpsons and Futurama.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC92E564CA300093307 /* The Simpsons and Futurama.json */; };
+		A5DDAFCB2E564CA300093307 /* The Simpsons and Futurama.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFC92E564CA300093307 /* The Simpsons and Futurama.json */; };
+		A5DDAFCD2E56505000093307 /* The X-Files.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFCC2E56505000093307 /* The X-Files.json */; };
+		A5DDAFCE2E56505000093307 /* The X-Files.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDAFCC2E56505000093307 /* The X-Files.json */; };
 		A5DEFE8B2822FE9600EF1651 /* KR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* KR.json */; };
 		A5DEFE8C2822FE9600EF1651 /* KR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* KR.json */; };
 		A5DEFE8E2822FF4900EF1651 /* KP.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8D2822FF4900EF1651 /* KP.json */; };
@@ -1596,6 +1602,9 @@
 		A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAICalendarIndexPickerView.swift; sourceTree = "<group>"; };
 		A5DC9C7D27285D2100047F64 /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
 		A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SpongeBob SquarePants.json"; sourceTree = "<group>"; };
+		A5DDAFC62E564A8700093307 /* Supernatural.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Supernatural.json; sourceTree = "<group>"; };
+		A5DDAFC92E564CA300093307 /* The Simpsons and Futurama.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "The Simpsons and Futurama.json"; sourceTree = "<group>"; };
+		A5DDAFCC2E56505000093307 /* The X-Files.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "The X-Files.json"; sourceTree = "<group>"; };
 		A5DEFE8A2822FE9600EF1651 /* KR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KR.json; sourceTree = "<group>"; };
 		A5DEFE8D2822FF4900EF1651 /* KP.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KP.json; sourceTree = "<group>"; };
 		A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorCircle.swift; sourceTree = "<group>"; };
@@ -2257,6 +2266,7 @@
 				A5364D962850F9D500054BC2 /* Sunni Islam (times, MWL).json */,
 				A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */,
 				A522A2D72E439E1500F8AAEB /* Sunrise and Sunset.json */,
+				A5DDAFC62E564A8700093307 /* Supernatural.json */,
 				A5EFFFCE285B845700F2205F /* SV.json */,
 				A5FB22AE28638E5100B5042B /* SX.json */,
 				A5EFFFD7285B855E00F2205F /* SY.json */,
@@ -2271,6 +2281,8 @@
 				A5F3B01D285644A100865CEB /* TH.json */,
 				A50DA50B28686271008D54AE /* TH (Chinese).json */,
 				A50750EC2E4CEBAE00A09037 /* The Satanic Temple.json */,
+				A5DDAFC92E564CA300093307 /* The Simpsons and Futurama.json */,
+				A5DDAFCC2E56505000093307 /* The X-Files.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
 				A5987C4E2A083337008A9E90 /* Theosophy.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
@@ -2915,6 +2927,7 @@
 				A5E292C9285A456600925EBD /* BO.json in Resources */,
 				A5364D9F2851001500054BC2 /* VI.json in Resources */,
 				A5C2B48C2AA775A00045C28C /* MV (Muslim).json in Resources */,
+				A5DDAFC82E564A8700093307 /* Supernatural.json in Resources */,
 				A5E13C472A38B166009EDEFA /* GE (Julian).json in Resources */,
 				A50DA51728686272008D54AE /* BN (Chinese).json in Resources */,
 				A51C8579282D64A00081A11B /* Buddhism.json in Resources */,
@@ -2936,6 +2949,7 @@
 				A50750EE2E4CEBAE00A09037 /* The Satanic Temple.json in Resources */,
 				A5E49634286252EC001BF40C /* ME.json in Resources */,
 				A514B9BA2D830B42000046CC /* Disney.json in Resources */,
+				A5DDAFCD2E56505000093307 /* The X-Files.json in Resources */,
 				A50DA52928686272008D54AE /* KR (Chinese).json in Resources */,
 				A5F3B0192855FEC700865CEB /* RU.json in Resources */,
 				A5E4962E286252EC001BF40C /* MF.json in Resources */,
@@ -3021,6 +3035,7 @@
 				A5E292CF285A58E200925EBD /* LI.json in Resources */,
 				A5201CBC2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5FB22DA2863912500B5042B /* YT.json in Resources */,
+				A5DDAFCB2E564CA300093307 /* The Simpsons and Futurama.json in Resources */,
 				A5E49654286254AC001BF40C /* NF.json in Resources */,
 				A5E496112862505C001BF40C /* IO.json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
@@ -3251,6 +3266,7 @@
 				A5A1D1D92A643FCA00DE345A /* TL (Chinese).json in Resources */,
 				A57797D02B8FC0A200F68529 /* SN (Muslim).json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
+				A5DDAFC72E564A8700093307 /* Supernatural.json in Resources */,
 				A5E496392862535D001BF40C /* MK.json in Resources */,
 				A5FB22BE28638F7700B5042B /* TK.json in Resources */,
 				A5E292F2285A650100925EBD /* BB.json in Resources */,
@@ -3360,6 +3376,7 @@
 				A5E292CE285A58E200925EBD /* LI.json in Resources */,
 				A5E4961D28625142001BF40C /* KI.json in Resources */,
 				A54B61B42A9267FA005CC33D /* XK (Julian).json in Resources */,
+				A5DDAFCE2E56505000093307 /* The X-Files.json in Resources */,
 				A5EFFF5B285B5F9B00F2205F /* GY.json in Resources */,
 				A5E4965028625479001BF40C /* NC.json in Resources */,
 				A554AFA3294F7CED0068D8E0 /* BA (Julian).json in Resources */,
@@ -3397,6 +3414,7 @@
 				A5EFFFE1285B85B500F2205F /* NI.json in Resources */,
 				A50DA51A28686272008D54AE /* SG (Chinese).json in Resources */,
 				A5E292C2285A420400925EBD /* EG.json in Resources */,
+				A5DDAFCA2E564CA300093307 /* The Simpsons and Futurama.json in Resources */,
 				A5372CB82C9B4805009149E1 /* Western Christianity (derived).json in Resources */,
 				A5DDAFC42E54CE4400093307 /* SpongeBob SquarePants.json in Resources */,
 				A5EFFF66285B61E500F2205F /* CI.json in Resources */,

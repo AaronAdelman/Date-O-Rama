@@ -1,0 +1,13 @@
+{
+    titles: {"en": "The X-Files", "he": "תיקים באפלה"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.3, green: 0.1, blue: 0.2},
+    first: {era: 1, y: 1993},
+    events: [
+        {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Dana Scully’s Birthday"}, notes: {"en": "From The X-Files"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Fox Mulder’s Birthday"}, notes: {"en": "From The X-Files"}},
+        {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Anniversary of Samantha Mulder’s Abduction"}, notes: {"en": "From The X-Files"}},
+    ]
+}
+

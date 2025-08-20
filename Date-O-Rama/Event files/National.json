@@ -1882,6 +1882,7 @@
         {type: "D", start: {mon: 8, d: 20}, titles: {"en": "National Chocolate Pecan Pie Day", "he": "יום פאי פקאן שוקולד לאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-pecan-pie-day/"}, emoji: "🥧"},
         {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Report Upcoding Fraud Day"}, urls: {"en": "https://nationaltoday.com/national-report-upcoding-fraud-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Spumoni Day", "he": "יום הספומוני הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/spumoni-day/"}, emoji: "🍨"},
+        {type: "D", start: {mon: 8, d: 21}, titles: {"en": "National Sweet Tea Day"}, first: {era: 1, y: 2016}, urls: {"en": "https://www.checkiday.com/f7785bfcbc6580752bf9eec2428151cd/national-sweet-tea-day"}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "National Eat a Peach Day"}, emoji: "🍑", urls: {"en": "https://www.daysoftheyear.com/days/eat-a-peach-day/"}},
         {type: "D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-rainbow-baby-day/"}, titles: {"en": "National Rainbow Baby Day"}, first: {era: 1, y: 2018}, emoji: "👶"},
         {type: "D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-tooth-fairy-day/"}, inherits: "National Tooth Fairy Day"},

@@ -9,5 +9,6 @@
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Tolkien Reading Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tolkien-reading-day/"}, first: {era: 1, y: 2003}, emoji: "📚"},
         {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, urls: {"en": "https://www.daysoftheyear.com/days/hobbit-day/"}, notes: {"en": "National Hobbit Day"}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Gondorian New Year"}, notes: {"en": "From The Lord of the Rings"}},
+        {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Durin’s Day"}, notes: {"en": "From The Lord of the Rings"}},
     ]
 }

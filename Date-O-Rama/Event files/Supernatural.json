@@ -1,0 +1,12 @@
+{
+    titles: {"en": "Supernatural", "he": "על טבעי"},
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.1, green: 0.2, blue: 0.3},
+    first: {era: 1, y: 2005},
+    events: [
+        {type: "D", start: {mon: 5, d: 2}, titles: {"en": "Sam Winchester’s Birthday"}, notes: {"en": "From Supernatural"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 1, d: 24}, titles: {"en": "Dean Winchester’s Birthday"}, notes: {"en": "From Supernatural"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 9, d: 13}, inherits: "Supernatural Day", first: {era: 1, y: 2018}},
+    ]
+}
