@@ -7,7 +7,7 @@
     first: {era: 1, y: 1969},
     events: [
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "Sesame Street Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sesame-street-day/"}, first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 10, d: 15}, titles: {"en": "National Grouch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-grouch-day/"}, emoji: "🗑", first: {era: 1, y: 1976}, notes: {"en": "Celebrating Oscar the Grouch from Sesame Street."}},
+        {type: "D", start: {mon: 10, d: 15}, inherits: "National Grouch Day", first: {era: 1, y: 1976}},
         
         {type: "D", start: {mon: 1, d: 5}, titles: {"en": "Hoots the Owl’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Rubber Duckie’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},

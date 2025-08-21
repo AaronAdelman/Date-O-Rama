@@ -250,6 +250,8 @@
 		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A56700192C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
 		A567001A2C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
+		A56767572E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
+		A56767582E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
@@ -1377,6 +1379,7 @@
 		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAThreeLineLargeView.swift; sourceTree = "<group>"; };
+		A56767562E56F492001F108C /* Chase’s Calendar of Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chase’s Calendar of Events.json"; sourceTree = "<group>"; };
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
@@ -2335,6 +2338,7 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
+				A56767562E56F492001F108C /* Chase’s Calendar of Events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -2956,6 +2960,7 @@
 				A5D850B8280C98FD005247BD /* ID.json in Resources */,
 				A5B75CFA2A2F5A900010AD55 /* BG (Julian).json in Resources */,
 				A5EFFF8F285B7D4600F2205F /* OM.json in Resources */,
+				A56767572E56F493001F108C /* Chase’s Calendar of Events.json in Resources */,
 				A5759142282BE28800675058 /* NO.json in Resources */,
 				A502D3EC286380E700A625A9 /* SD.json in Resources */,
 				A5EFFFA1285B7F2E00F2205F /* PE.json in Resources */,
@@ -3294,6 +3299,7 @@
 				A50DA51C28686272008D54AE /* TH (Chinese).json in Resources */,
 				A581B88E284E5CB800407D68 /* AD.json in Resources */,
 				A5EFFFC8285B81BD00F2205F /* ZW.json in Resources */,
+				A56767582E56F493001F108C /* Chase’s Calendar of Events.json in Resources */,
 				A5E4960B28624FDC001BF40C /* HM.json in Resources */,
 				A51EF5B82DCA2E5F00372212 /* UN Years and Decades.json in Resources */,
 				A5B17C652D9C43F500329F57 /* Doctor Who.json in Resources */,
