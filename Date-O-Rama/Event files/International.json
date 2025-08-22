@@ -1580,7 +1580,6 @@
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "World Plant Milk Day", "he": "יום החלב הצמחי"}, urls: {"en": "https://www.daysoftheyear.com/days/world-plant-milk-day/"}, first: {era: 1, y: 2017}, emoji: "🥛"},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Vanilla Jones Day"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "International Hashtag Day"}, first: {era: 1, y: 2018}, urls: {"en": "https://www.daysoftheyear.com/days/international-hashtag-day/"}, emoji: "#️⃣", notes: {"en": "This observance was created by Twitter."}},
-        {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Find Your Inner Nerd Day"}, urls: {"en": "https://nationaltoday.com/find-your-inner-nerd-day/"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Hug Your Sweetheart Day"}, urls: {"en": "https://www.listofnationaldays.com/hug-your-sweetheart-day/"}, first: {era: 1, y: 2022}},
       {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Health Unit Coordinators Day", "he": "יום רכזי יחידות הבריאות"}, urls: {"en": "https://nationaltoday.com/health-unit-coordinators-day/"}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "International Blind Dog Day", "he": "יום הכלב העיוור הבינלאומי"}, urls: {"en": "https://nationaltoday.com/international-blind-dog-day/"}, emoji: "🐶", first: {era: 1, y: 2017}},

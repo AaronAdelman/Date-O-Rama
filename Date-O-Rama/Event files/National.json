@@ -1884,7 +1884,7 @@
         {type: "D", start: {mon: 8, d: 22}, inherits: "National Tooth Fairy Day", urls: {"en": "https://nationaltoday.com/national-tooth-fairy-day/"}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "National Pecan Torte Day", "he": "יום טורט הפקאנים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pecan-torte-day/"}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "National Take Your Cat to the Vet Day", "he": "יום ״קח את החתול שלך לווטרינר״ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/take-your-cat-to-the-vet-day/"}, emoji: "🐈", notes: {"en": "National Bring Your Cat to the Vet Day"}},
-        {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Cuban Sandwich Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cuban-sandwich-day/"}},
+        {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Cuban Sandwich Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cuban-sandwich-day/"}, first: {era: 1, y: 2016}, notes: {"en": "This observance was reportedly created by Christopher Spata."}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Ride the Wind Day", "he": "יום ״רכב ברוח״ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/ride-the-wind-day/"}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Sponge Cake Day", "he": "יום עוגת הספוג הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/sponge-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Valentino Day", "he": "יום ולנטינו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/valentino-day/"}, first: {era: 1, y: 1923}, inherits: "*DeathAnniv*"},
