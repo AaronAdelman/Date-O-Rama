@@ -1,0 +1,15 @@
+{
+    titles: {"en": "National Day Archives"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.91, green: 0.93, blue: 0.75},
+    first: {era: 1, y: 2019},
+    urls: {"en": "https://www.nationaldayarchives.com/"},
+    events: [
+        {type: "D", start: {mon: 8, d: 15}, titles: {"en": "World Greatness Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/world-greatness-day/"}, first: {era: 1, y: 2019}, emoji: "🦸‍♂️🦸‍♀️", notes: {"en": "Created by Patrick Businge."}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "National Fatherless Children’s Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-fatherless-childrens-day/"}, inherits: "Children’s Day", first: {era: 1, y: 2020}, notes: {"en": "Created by Donald R. Adams II of Finding Fathers Inc."}},
+        {type: "D", start: {mon: 7, d: 11}, titles: {"en": "National Polyphenol Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-polyphenol-day/"}, first: {era: 1, y: 2021}, emoji: "🍎🫐☕", notes: {"en": "Created by Gundry MD."}},
+        {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Say Hi Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/say-hi-day/"}, first: {era: 1, y: 2021}, emoji: "🗣️", notes: {"en": "Created by Summer Luciani."}},
+
+    ]
+}

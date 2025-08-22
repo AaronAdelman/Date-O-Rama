@@ -252,6 +252,8 @@
 		A567001A2C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
 		A56767572E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
 		A56767582E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
+		A567675D2E5840C9001F108C /* National Day Archives.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675C2E5840C9001F108C /* National Day Archives.json */; };
+		A567675E2E5840C9001F108C /* National Day Archives.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675C2E5840C9001F108C /* National Day Archives.json */; };
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
@@ -1380,6 +1382,7 @@
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAThreeLineLargeView.swift; sourceTree = "<group>"; };
 		A56767562E56F492001F108C /* Chase’s Calendar of Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chase’s Calendar of Events.json"; sourceTree = "<group>"; };
+		A567675C2E5840C9001F108C /* National Day Archives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National Day Archives.json"; sourceTree = "<group>"; };
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
@@ -1991,6 +1994,7 @@
 				A5B999BA28622BBA00072FD5 /* CF.json */,
 				A5B999BC28622BBA00072FD5 /* CG.json */,
 				A581B887284E592000407D68 /* CH.json */,
+				A56767562E56F492001F108C /* Chase’s Calendar of Events.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
 				A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */,
 				A5EFFF61285B61E500F2205F /* CI.json */,
@@ -2180,6 +2184,7 @@
 				A5E9AB622A1B4C8900433D7A /* Names.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A575A8052A4B11F100E77142 /* National.json */,
+				A567675C2E5840C9001F108C /* National Day Archives.json */,
 				A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */,
 				A5E3222C2DD20C63009EBFC0 /* National months.json */,
 				A5E4964F28625479001BF40C /* NC.json */,
@@ -2338,7 +2343,6 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
-				A56767562E56F492001F108C /* Chase’s Calendar of Events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -3139,6 +3143,7 @@
 				A5E292E4285A616500925EBD /* AL.json in Resources */,
 				A5EFFFE2285B85B500F2205F /* NI.json in Resources */,
 				A5EE2FA22815DB9800B6E81E /* JP.json in Resources */,
+				A567675E2E5840C9001F108C /* National Day Archives.json in Resources */,
 				A5E5DA762D913EE100043182 /* Middle-Earth.json in Resources */,
 				A5CF46592810C9780088738D /* LS.json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
@@ -3495,6 +3500,7 @@
 				A5FB22C728638FFB00B5042B /* TV.json in Resources */,
 				A5CF465B2810D29A0088738D /* PL.json in Resources */,
 				A5E4966528625585001BF40C /* PM.json in Resources */,
+				A567675D2E5840C9001F108C /* National Day Archives.json in Resources */,
 				A5E49631286252EC001BF40C /* MD.json in Resources */,
 				A5EFFFB5285B808E00F2205F /* SR.json in Resources */,
 				A5EFFF72285B7B1300F2205F /* MO.json in Resources */,
