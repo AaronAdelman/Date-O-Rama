@@ -10,6 +10,9 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "National Fatherless Children’s Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-fatherless-childrens-day/"}, inherits: "Children’s Day", first: {era: 1, y: 2020}, notes: {"en": "Created by Donald R. Adams II of Finding Fathers Inc."}},
         {type: "D", start: {mon: 7, d: 11}, titles: {"en": "National Polyphenol Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-polyphenol-day/"}, first: {era: 1, y: 2021}, emoji: "🍎🫐☕", notes: {"en": "Created by Gundry MD."}},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en": "Say Hi Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/say-hi-day/"}, first: {era: 1, y: 2021}, emoji: "🗣️", notes: {"en": "Created by Summer Luciani."}},
+        {type: "D", start: {mon: 10, d: 30}, titles: {"en": "Uplift Someone Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/uplift-someone-day/"}, first: {era: 1, y: 2024}, notes: {"en": "National UPlift Someone Day\nCreated by UP Entertainment."}},
+        {type: "D", start: {mon: 10, d: 8}, titles: {"en": "National Day of the Cowboy Boot"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-day-of-the-cowboy-boot/"}, first: {era: 1, y: 2023}, notes: {"en": "National Cowboy Boot Day\nCreated by Justin Boots."}},
+        {type: "D", start: {mon: 2, d: 6}, titles: {"en": "National Eighties Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-eighties-day/"}, first: {era: 1, y: 2022}, notes: {"en": "Created by Donovan Dau."}},
 
     ]
 }
