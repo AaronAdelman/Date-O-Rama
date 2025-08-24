@@ -378,9 +378,10 @@
         {type: "M", start: {mon: 9}, titles: {"en": "NICU Awareness Month"}, urls: {"en": "https://www.nicuawareness.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "M", start: {mon: 9}, titles: {"en": "Sourdough September"}, urls: {"en": "https://www.sustainweb.org/realbread/sourdough_september/"}, emoji: "🍞", first: {era: 1, y: 2013}},
         
+        {type: "M", start: {mon: 10}, titles: {"en": "Right Brainers Rule! Month"}, urls: {"en": "https://www.daysoftheyear.com/days/right-brainers-rule-month/"}},
         {type: "M", start: {mon: 10}, titles: {"en": "World Lemur Festival"}, urls: {"en": "https://www.lemurconservationnetwork.org/world-lemur-day/"}, first: {era: 1, y: 2014}},
-      
-      {type: "M", start: {mon: 11}, titles: {"en": "COPD Awareness Month"}, notes: {"en": "Chronic Obstructive Pulmonary Disease Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/copd-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*"},
 
+        {type: "M", start: {mon: 11}, titles: {"en": "COPD Awareness Month"}, notes: {"en": "Chronic Obstructive Pulmonary Disease Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/copd-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*"},
+        
     ]
 }
