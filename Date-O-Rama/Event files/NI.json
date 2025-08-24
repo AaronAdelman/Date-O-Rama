@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 9, d: 30}, inherits: "Feast of St. Jerome", urls: {"en": "https://nationaltoday.com/fiesta-de-san-jeronimo-nicaragua/"}, first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/fiesta-de-santiago-nicaragua/"}, inherits: "Feast of St. James"},
         {type: "D", start: {mon: 7, d: 26}, inherits: "Feast of St. Anne"},
-        {type: "D", start: {mon: 8, d: 27}, urls: {"en": "https://nationaltoday.com/crab-soup-day/"}, titles: {"en": "Crab Soup Day"}, emoji: "🥣"},
+        {type: "D", start: {mon: 8, d: 27}, titles: {"en": "Crab Soup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/crab-soup-day/"}, emoji: "🥣"},
         {type: "D", start: {mon: 10, d: 12}, inherits: "Indigenous Resistance Day"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
