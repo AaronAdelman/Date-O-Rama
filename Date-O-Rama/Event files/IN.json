@@ -156,7 +156,7 @@
         {type: "D", start: {mon: 2, d: 28}, inherits: "National Science Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Science_Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "National Safe Motherhood Day"}, urls: {"en": "https://newsonair.gov.in/News?title=National-Safe-Motherhood-Day-is-being-observed-today&id=438954"}, emoji: "🤰"},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Quit India Movement Day"}},
-        {type: "D", start: {mon: 8, d: 29}, inherits: "National Sports Day", urls: {"en": "https://nationaltoday.com/national-sports-day/"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 8, d: 29}, inherits: "National Sports Day", urls: {"en": "https://www.daysoftheyear.com/days/national-sports-day/"}, first: {era: 1, y: 2012}, notes: {"en": "Created by the government of India."}},
         {type: "D", start: {mon: 10, d: 8}, inherits: "Air Force Day", urls: {"en": "https://nationaltoday.com/indian-air-force-day/"}},
         {type: "D", start: {mon: 10, d: 9}, titles: {"en": "Foreign Service Day"}},
         {inherits: "Constitution Day", type: "D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-law-day/"}, first: {era: 1, y: 1950}, emoji: "⚖️"},
