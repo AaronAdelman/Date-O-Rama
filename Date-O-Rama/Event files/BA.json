@@ -31,5 +31,6 @@
         {type: "D", start: {mon: 10, d: 17, thruD: 23, wkd: [7]}, titles: {"en": "Rakija Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rakija-day/"}, emoji: "🍷"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {type: "nD", start: {mon: 8, d: 10, thruD: 16, wkd: [6], durationD: 8}, titles: {"en": "Sarajevo Film Festival"}, urls: {"en": "https://www.sff.ba/en", "bs": "https://www.sff.ba/"}, emoji: "💟"},
+        {type: "nD", start: {mon: 8, d: 22, thruD: 28, wkd: [4], durationD: 4}, titles: {"en": "International Plum Fair"}, notes: {"en": "Plum Fair"}, urls: {"en": "https://www.daysoftheyear.com/days/international-plum-fair/"}, first: {era: 1, y: 1969}},
     ]
 }
