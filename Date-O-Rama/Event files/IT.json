@@ -54,7 +54,7 @@
         {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
         {type: "D", start: {mon: 5, d: 5}, titles: {"en": "National Day Against Pedophilia and Child Pornography", "it": "Giornata nazionale contro la pedofilia e la pedopornografia"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Remembrance Day Dedicated to Victims of Terrorism", "it": "Giorno della memoria dedicato alle vittime del terrorismo"}, first: {era: 1, y: 2007}},
-        {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", first: {era: 1, y: 2019}},
         {inherits: "World Blood Donor Day", type: "D", start: {mon: 6, d: 14}, first: {era: 1, y: 2004}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 10, d: 2}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "National Day in Memory of the Victims of Immigration", "it": "Giornata nazionale in memoria delle vittime dell’immigrazione"}, first: {era: 1, y: 2016}},

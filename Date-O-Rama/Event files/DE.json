@@ -38,7 +38,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Memorial Day for the Victims of National Socialism", "he": "יום הזיכרון לקורבנות המשטר הנאצי בגרמניה", "de": "Tag des Gedenkens an die Opfer des Nationalsozialismus", "es": "Día Conmemorativo de las Víctimas del Nacionalsocialismo", "ru": "День памяти жертв национал-социализма", "als": "Dag vum Mahnen an d Opfer vum Nationalsozialismus"}},
-        {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", first: {era: 1, y: 2019}},
         {inherits: "Constitution Day", type: "D", start: {mon: 5, d: 23}},
         {titles: {"en": "Remembrance of 17 June"}, type: "D", start: {mon: 6, d: 17}, first: {era: 1, y: 1990}},
         {inherits: "World Refugee Day", type: "D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},

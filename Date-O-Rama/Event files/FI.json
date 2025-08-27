@@ -34,7 +34,7 @@
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Day of Equality", "fi": "Tasa-arvon päivä"}},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Day of the Finnish Language", "fi": "suomen kielen päivä"}},
         {type: "D", start: {mon: 4, d: 27}, titles: {"en": "National War Veterans’ Day", "fi": "kansallinen veteraanipäivä"}},
-        {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 5, d: 12}, titles: {"en": "Finnish Identity Day", "fi": "suomalaisuuden päivä"}},
         {inherits: "Remembrance Day", type: "D", start: {mon: 5, wkd: [1], nth: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Commemoration_Day_of_Fallen_Soldiers"}, notes: {"en": "Commemoration Day of Fallen Soldiers"}},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en": "Birthday of the poet Eino Leino", "fi": "Leinon päivä"}, inherits: "*BDay*"},

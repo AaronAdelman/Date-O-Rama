@@ -22,11 +22,11 @@
         {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Day of Svetitskovloba", "ka": "სვეტიცხოვლობა"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-svetitskhoveli-cathedral/"}, notes: {"en": "Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 11, d: 23}},
 
-        {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 4, d: 30}},
+        {type: "D", start: {mon: 4, d: 30}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/soviet-occupation-day/"}, titles: {"en": "Soviet Occupation Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "Khachapuri Day"}, notes: {"en": "National Khachapuri Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/khachapuri-day/"}},
         {type: "nD", start: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, titles: {"en": "Tbilisoba"}, urls: {"en": "https://www.daysoftheyear.com/days/tbilisoba/"}, first: {era: 1, y: 1979}},

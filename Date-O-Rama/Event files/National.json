@@ -1882,7 +1882,6 @@
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Toilet Paper Day"}, notes: {"en": "In bad taste, not a day worth celebrating."}},
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Spark the World Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spark-the-world-day/"}, first: {era: 1, y: 2020}, emoji: "❇️"},
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Cherry Popsicle Day", "he": "יום הארטיק בטעם דובדבן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/cherry-popsicle-day/"}, emoji: "🍒"},
-        {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National WebMistress Day", "he": "יום מנהלת האתרים הלאומי"}, urls: {"en": "https://www.nationalwebmistressday.com/"}, emoji: "👩‍💻", notes: {"en": "Created by Kat Valentine."}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "National Petroleum Day"}, notes: {"en": "This observance reminds us that humanity needs to stop using petroleum as quickly as possible"}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "National Tug of War Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tug-of-war-day/"}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "National Just Because Day", "he": "יום ״סתם בגלל״ הלאומי"}, urls: {"en": "https://nationaltoday.com/national-just-because-day/"}, first: {era: 1, y: 1950}, notes: {"en": "Created by Joseph J. Goodwin."}},

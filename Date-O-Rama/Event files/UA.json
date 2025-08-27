@@ -59,7 +59,7 @@
         {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
         {titles: {"en": "Beginning of the Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War"}, type: "D", start: {"mon": 5, d: 7}, first: {era: 1, y: 2023}},
         {titles: {"en": "Second World War Remembrance Day"}, type: "D", start: {"mon": 5, d: 7}, first: {era: 1, y: 2023}},
-        {inherits: "Europe Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", first: {era: 1, y: 2019}},
         {titles: {"en": "Anniversary of the 1920 Kyiv Polish-Ukrainian Victory Parade"}, type: "D", start: {"mon": 5, d: 9}},
         {titles: {"en": "Memorial Day of the Ukrainian Fallen of the Second World War"}, type: "D", start: {"mon": 5, d: 14}},
         {inherits: "International Day of Families", type: "D", start: {"mon": 5, d: 15}},
