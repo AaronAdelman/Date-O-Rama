@@ -71,7 +71,6 @@
             {type: "D", start: {mon: 8, d: 18}, titles: {"en": "Bad Poetry Day"}},
             {type: "D", start: {mon: 8, d: 22}, titles: {"en": "Southern Hemisphere Hoodie-Hoo Day"}},
             {type: "D", start: {mon: 8, d: 28}, titles: {"en": "Race Your Mouse Around the Icons Day"}},
-            {type: "D", start: {mon: 8, d: 28}, titles: {"en": "Crackers Over The Keyboard Day"}},
             {type: "D", start: {mon: 8, d: 29}, titles: {"en": "More Herbs, Less Salt Day"}},
             {type: "D", start: {mon: 8, d: 31}, titles: {"en": "Love Litigating Lawyers Day"}},
             {type: "D", start: {mon: 9, d: 9}, titles: {"en": "Wonderful Weirdos Day"}},
@@ -94,5 +93,6 @@
         ]},
         {type: "D", start: {mon: 3, d: 15}, titles: {"en": "True Confessions Day", "he": "יום וידויי האמת"}},
         {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Gruntled Workers Day"}},
+        {type: "D", start: {mon: 8, d: 28}, titles: {"en": "Crackers Over The Keyboard Day"}},
     ]
 }

@@ -1583,10 +1583,16 @@
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "International Blind Dog Day", "he": "יום הכלב העיוור הבינלאומי"}, urls: {"en": "https://nationaltoday.com/international-blind-dog-day/"}, emoji: "🐶", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Cheap Flight Day", "he": "יום הטיסות הזולות"}, urls: {"en": "https://www.daysoftheyear.com/days/cheap-flight-day/"}, emoji: "🛩️", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Internaut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/internaut-day/"}, emoji: "🌎", first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 8, d: 24}, titles: {"en": "Can Opener Day"}, urls: {"en": "https://www.checkiday.com/932013450d89302696d0e492468a314f/can-opener-day"}},
+        {type: "D", start: {mon: 8, d: 24}, titles: {"en": "International Day Against Intolerance, Discrimination and Violence Based on Musical Preferences, Lifestyle and Dress Code"}, urls: {"en": "https://www.checkiday.com/70907a4679ffea9f934aa9bfef577c67/international-day-against-intolerance-discrimination-and-violence-based-on-musical-preferences-lifestyle-and-dress-code"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 8, d: 24}, titles: {"en": "Shooting Star Day"}, urls: {"en": "https://www.checkiday.com/4d8f02b0f57a2c874fbc88b6cfe5c0b1/shooting-star-day"}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 8, d: 24}, titles: {"en": "Weather Complaint Day"}, urls: {"en": "https://www.checkiday.com/c638b5bf860cd2def48d2ba03e09e5b0/weather-complaint-day"}},
         {type: "D", start: {mon: 8, d: 24}, titles: {"en": "International Strange Music Day", "he": "יום המוזיקה המוזרה הבינלאומי"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/"}},
         {type: "D", start: {mon: 8, d: 24}, titles: {"en": "William Wilberforce Day", "he": "יום ויליאם וילברפורס"}, urls: {"en": "https://nationaltoday.com/william-wilberforce-day/"}, inherits: "*BDay*", first: {era: 1, y: 1759}},
         {type: "D", start: {mon: 8, d: 24}, titles: {"en": "Pluto Demoted Day", "he": "יום הורדת פלוטו בדרגה"}, urls: {"en": "https://www.daysoftheyear.com/days/pluto-demoted-day/"}, emoji: "♇", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 8, d: 24}, titles: {"en": "Vesuvius Day", "he": "יום וזוב"}, urls: {"en": "https://www.daysoftheyear.com/days/vesuvius-day/"}, emoji: "🌋", first: {era: 1, y: 79}},
+        {type: "D", start: {mon: 8, d: 26}, titles: {"en": "Make Your Own Luck Day"}, urls: {"en": "https://www.checkiday.com/0af14592c25ce6dd2967978d32a1eba1/make-your-own-luck-day"}, notes: {"en": "Created by J. Richard Falls of Irving, Texas"}},
+        {type: "D", start: {mon: 8, d: 26}, titles: {"en": "Musical Yoga Day"}, urls: {"en": "https://www.checkiday.com/5b69316e648af4063809e98eee7ed8e7/musical-yoga-day"}},
         {type: "D", start: {mon: 8, d: 27, thruMon: 9, thruD: 2}, titles: {"en": "International Cabernet Day", "he": "יום הקברנה הבינלאומי"}, urls: {"en": "https://nationaltoday.com/international-cabernet-day/"}, emoji: "🍷", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "International Lottery Day"}, notes: {"en": "This observance promotes special taxes for fools."}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "World Rock Paper Scissors Day"}, urls: {"en": "https://wrpsa.com/world-rock-paper-scissors-day/"}, notes: {"en": "World RPS Day"}, emoji: "🪨📄✂️", first: {era: 1, y: 2015}, notes: {"en": "Created by the World Rock Paper Scissors Association."}},
@@ -1862,7 +1868,6 @@
         {type: "nD", start: {mon: 6, d: 7}, end: {mon: 6, d: 13}, titles: {"en": "World Heart Rhythm Week"}, urls: {"en": "https://nationaltoday.com/world-heart-rhythm-week/"}, emoji: "🫀", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 7, d: 26}, end: {mon: 8, d: 1}, titles: {"en": "Hepatitis Awareness Week", "he": "שבוע המודעות להפטיטיס"}, urls: {"en": "https://nationaltoday.com/hepatitis-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, inherits: "International Clown Week", first: {era: 1, y: 1950}},
-        {type: "nD", start: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en": "https://bk2hk.org/"}, titles: {"en": "Be Kind to Humankind Week", "he": "השבוע להיות אדיב למין האנושי"}, first: {era: 1, y: 1988}, notes: {"en": "BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey."}, emoji: "👨👩"},
         {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/orchid-male-cancer-awareness-week/"}, titles: {"en": "Orchid Male Cancer Awareness Week"}, first: {era: 1, y: 2008}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 9, d: 17, thruD: 23, wkd: [6]}, end: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, inherits: "Bee’s Knees Week", first: {era: 1, y: 2017}, last: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 9, d: 19, thruD: 25, wkd: [2], durationD: 5}, urls: {"en": "https://internationalweekofhappinessatwork.com/", "fr": "https://semainedubonheurautravail.be/", "de": "https://www.internationalweekofhappinessatwork.de/", "nl": "https://weekvanhetwerkgeluk.nl/"}, titles: {"en": "International Week of Happiness at Work", "he": "השבוע הבינלאומי של אושר בעבודה", "fr": "Semaine du Bonheür au Travail", "nl": "Internationale Week van het Werkgeluk"}, first: {era: 1, y: 2023}, emoji: "😀"},
@@ -2038,6 +2043,17 @@
             {type: "D", start: {wkd: [7]}, titles: {"en": "Genealogy Day", "he": "יום הגנאולוגיה"}, notes: {"en": "National Genealogy Day", "he": "יום הגנאולוגיה הלאומי"}, urls: {"en": "https://www.celebrateyournameweek.org/"}, emoji: "👨‍👩‍👧‍👦"},
         ]},
         
+        {type: "nD", start: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en": "https://bk2hk.org/"}, titles: {"en": "Be Kind to Humankind Week", "he": "השבוע להיות אדיב למין האנושי"}, first: {era: 1, y: 1988}, notes: {"en": "BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey."}, emoji: "👨👩", nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [2]}, titles: {"en": "Motorist Consideration Monday"}, urls: {"en": "https://bk2hk.org/week/monday/"}, emoji: "🛞"},
+            {type: "D", start: {wkd: [3]}, titles: {"en": "Touch-a-Heart Tuesday"}, urls: {"en": "https://bk2hk.org/week/tuesday/"}, emoji: "❤️"},
+            {type: "D", start: {wkd: [4]}, titles: {"en": "Willing to Lend a Hand Wednesday"}, urls: {"en": "https://bk2hk.org/week/wednesday/"}, emoji: "✋"},
+            {type: "D", start: {wkd: [5]}, titles: {"en": "Thoughtful Thursday"}, urls: {"en": "https://bk2hk.org/week/thursday/"}, emoji: "🧠"},
+            {type: "D", start: {wkd: [6]}, titles: {"en": "Forgive Your Foe Friday"}, urls: {"en": "https://bk2hk.org/week/friday/"}, emoji: "⚔️"},
+            {type: "D", start: {wkd: [7]}, titles: {"en": "Speak Kind Words Saturday"}, urls: {"en": "https://bk2hk.org/week/saturday/"}, emoji: "👄"},
+            {type: "D", start: {wkd: [1]}, titles: {"en": "Sacrifice Our Wants for Others’ Needs Sunday"}, urls: {"en": "https://bk2hk.org/week/sunday/"}, emoji: "💥"},
+
+        ]},
+
     ],
     templates: [
         {template: "Bonza Bottler Day", type: "D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/bonza-bottler-day/"}, titles: {"en": "Bonza Bottler Day"}, emoji: "🎉"},
