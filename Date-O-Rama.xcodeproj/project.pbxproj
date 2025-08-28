@@ -256,6 +256,8 @@
 		A567675E2E5840C9001F108C /* National Day Archives.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675C2E5840C9001F108C /* National Day Archives.json */; };
 		A56767602E5B630C001F108C /* Colleen Paige.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675F2E5B630C001F108C /* Colleen Paige.json */; };
 		A56767612E5B630C001F108C /* Colleen Paige.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675F2E5B630C001F108C /* Colleen Paige.json */; };
+		A56767632E60E266001F108C /* The Realist Society of Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767622E60E266001F108C /* The Realist Society of Canada.json */; };
+		A56767642E60E267001F108C /* The Realist Society of Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767622E60E266001F108C /* The Realist Society of Canada.json */; };
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
@@ -1386,6 +1388,7 @@
 		A56767562E56F492001F108C /* Chase’s Calendar of Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chase’s Calendar of Events.json"; sourceTree = "<group>"; };
 		A567675C2E5840C9001F108C /* National Day Archives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National Day Archives.json"; sourceTree = "<group>"; };
 		A567675F2E5B630C001F108C /* Colleen Paige.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Colleen Paige.json"; sourceTree = "<group>"; };
+		A56767622E60E266001F108C /* The Realist Society of Canada.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "The Realist Society of Canada.json"; sourceTree = "<group>"; };
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
@@ -2347,6 +2350,7 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
+				A56767622E60E266001F108C /* The Realist Society of Canada.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -3056,6 +3060,7 @@
 				A5B6760D2B167B350075408E /* Roman Religion.json in Resources */,
 				A5E9AB642A1B4C8900433D7A /* Names.json in Resources */,
 				A58CB7272DB7800600A724D5 /* Pseudoscience.json in Resources */,
+				A56767632E60E266001F108C /* The Realist Society of Canada.json in Resources */,
 				A5D3D7E527FA20CC0099718A /* AU.json in Resources */,
 				A5E4960928624F9A001BF40C /* GW.json in Resources */,
 				A5FB22AD28638E1200B5042B /* ST.json in Resources */,
@@ -3434,6 +3439,7 @@
 				A5DDAFCA2E564CA300093307 /* The Simpsons and Futurama.json in Resources */,
 				A5372CB82C9B4805009149E1 /* Western Christianity (derived).json in Resources */,
 				A5DDAFC42E54CE4400093307 /* SpongeBob SquarePants.json in Resources */,
+				A56767642E60E267001F108C /* The Realist Society of Canada.json in Resources */,
 				A5EFFF66285B61E500F2205F /* CI.json in Resources */,
 				A5EF0016285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A501C800285F7F4200211E33 /* TG.json in Resources */,
