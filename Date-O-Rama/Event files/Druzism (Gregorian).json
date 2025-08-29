@@ -4,8 +4,9 @@
     calendarCode: "gre",
     calendarColor: {red: 0.21, green: 0.49, blue: 0.31},
     events: [
-        {titles: {"he": "חג הנביא אל־ח׳דר", "ar": "زيارة سيدنا النبي الخضر", "en": "Feast of the Prophet al-Khader"}, type: "D", start: {mon: 1, d: 25}},
-        {titles: {"he": "חג נבי שועייב", "ar": "زيارة مقام النبي شعيب", "en": "Ziyarat al-Nabi Shu'ayb"}, type: "nD", start: {mon: 4, d: 25}, end: {mon: 4, d: 28}},
-        {titles: {"he": "חג הנביא סבלאן"}, type: "D", start: {mon: 9, d: 10}, urls: {"he": "https://he.wikipedia.org/wiki/%D7%A0%D7%91%D7%99_%D7%A1%D7%91%D7%9C%D7%90%D7%9F"}, first: {era: 1, y: 1969}},
+        {type: "D", start: {mon: 1, d: 25}, titles: {"he": "חג הנביא אל־ח׳דר", "ar": "زيارة سيدنا النبي الخضر", "en": "Feast of the Prophet al-Khader"}},
+        {type: "nD", start: {mon: 4, d: 25}, end: {mon: 4, d: 28}, titles: {"he": "חג נבי שועייב", "ar": "زيارة مقام النبي شعيب", "en": "Ziyarat al-Nabi Shu'ayb"}},
+        {type: "D", start: {mon: 9, d: 10}, titles: {"he": "חג הנביא סבלאן"}, urls: {"he": "https://he.wikipedia.org/wiki/%D7%A0%D7%91%D7%99_%D7%A1%D7%91%D7%9C%D7%90%D7%9F"}, first: {era: 1, y: 1969}},
+        {type: "D", start: {mon: 8, d: 25}, titles: {"he": "יום העלייה לרגל אל קברו של יעפורי"}, urls: {"he": "https://he.wikipedia.org/wiki/נבי_יעפורי"}},
     ]
 }
