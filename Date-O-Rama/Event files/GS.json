@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [
-        {templates: "Toothfish Day", type: "D", start: {mon: 9, d: 14}, titles: {"en": "Toothfish Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Toothfish_Day"}, notes: {"en": "Toothfish (end of season) Day"}},
+        {template: "Toothfish Day", type: "D", start: {mon: 9, d: 14}, titles: {"en": "Toothfish Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Toothfish_Day"}, notes: {"en": "Toothfish (end of season) Day"}},
     ]
 }
