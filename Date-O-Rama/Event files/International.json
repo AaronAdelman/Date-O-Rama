@@ -1693,7 +1693,6 @@
         {type: "D", start: {mon: 9, d: 19}, inherits: "International Talk Like a Pirate Day", first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/aortic-dissection-awareness-day/"}, titles: {"en": "Aortic Dissection Awareness Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://www.daysoftheyear.com/days/telephone-tuesday/"}, titles: {"en": "Telephone Tuesday"}, emoji: "☎️"},
-        {type: "D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-another-look-unlimited-day-day-after-labor-day"}, titles: {"en": "National Another Look Unlimited Day"}},
         {type: "D", start: {mon: 9, d: 2}, titles: {"en": "Pierce Your Ears Day"}, notes: {"en": "A fashion choice that involves putting holes in one’s body and risking infection."}},
         {type: "D", start: {mon: 9, d: 2}, titles: {"en": "World Coconut Day", "he": "יום הקוקוס העולמי"}, emoji: "🥥", urls: {"en": "https://www.daysoftheyear.com/days/world-coconut-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/spalding-baseball-day/"}, titles: {"en": "Spalding Baseball Day"}, emoji: "⚾️"},
