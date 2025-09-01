@@ -2021,7 +2021,7 @@
         {type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-meow-like-pirate-day/"}, titles: {"en": "National Meow Like a Pirate Day"}, first: {era: 1, y: 2015}, emoji: "🐱🏴‍☠️"},
         {type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-woman-road-warrior-day/"}, titles: {"en": "National Woman Road Warrior Day"}},
         {type: "D", start: {mon: 9, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/butterscotch-pudding-day/"}, titles: {"en": "National Butterscotch Pudding Day"}},
-        {type: "D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/national-live-fearless-day/"}, titles: {"en": "National Live Fearless Day"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 9, d: 2}, titles: {"en": "National Live Fearless Day"}, urls: {"en": "https://nationaltoday.com/national-live-fearless-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Landry Champlin."}},
         {type: "D", start: {mon: 9, d: 2}, titles: {"en": "National Spalding Baseball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spalding-baseball-day/"}, emoji: "⚾"},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Rum Punch Day"}},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Crime and Intelligence Analyst Appreciation Day", "he": "יום ההוקרה הלאומי למנתחי פשע ומודיעין"}, urls: {"en": "https://nationaltoday.com/national-crime-and-intelligence-analyst-appreciation-day/"}, first: {era: 1, y: 2021}},
@@ -2086,8 +2086,8 @@
         {type: "D", start: {mon: 9, d: 29}, titles: {"en": "V.F.W. DAY"}, urls: {"en": "https://nationaltoday.com/vfw-day/"}, notes: {"en": "National V.F.W. DAY\nNational VFW Day"}, first: {era: 1, y: 1899}},
         {type: "D", start: {mon: 9, d: 29}, urls: {"en": "https://www.daysoftheyear.com/days/biscotti-day/"}, titles: {"en": "National Biscotti Day"}},
         {type: "D", start: {mon: 9, d: 29}, urls: {"en": "https://www.daysoftheyear.com/days/national-silent-movie-day/"}, titles: {"en": "National Silent Movie Day"}, first: {era: 1, y: 2021}, emoji: "📽️", notes: {"en": "Silent Movie Day\nInternational Silent Movie Day"}},
-        {type: "D", start: {mon: 9, d: 3}, titles: {"en": "National Skyscraper Day", "he": "יום גורדי השחקים הלאומי"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/"}},
-        {type: "D", start: {mon: 9, d: 3}, titles: {"en": "National Welsh Rarebit Day"}, urls: {"en": "https://www.daysoftheyear.com/days/welsh-rarebit-day/"}},
+        {type: "D", start: {mon: 9, d: 3}, titles: {"en": "National Skyscraper Day", "he": "יום גורדי השחקים הלאומי"}, emoji: "🏙", urls: {"en": "https://www.skyscraperday.com/"}},
+        {type: "D", start: {mon: 9, d: 3}, titles: {"en": "National Welsh Rarebit Day"}, urls: {"en": "https://www.daysoftheyear.com/days/welsh-rarebit-day/"}, notes: {"en": "You may remember the dish commemorated by this day from a Bugs Bunny cartoon."}},
         {type: "D", start: {mon: 9, d: 3}, titles: {"en": "US Bowling League Day"}, urls: {"en": "https://www.daysoftheyear.com/days/us-bowling-league-day/"}, emoji: "🎳"},
         {type: "D", start: {mon: 9, d: 30}, titles: {"en": "National Chewing Gum Day", "he": "יום המסטיק הלאומי"}, notes: {"en": "Chewing Gum Day", "he": "יום המסטיק"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chewing-gum-day/"}},
         {type: "D", start: {mon: 9, d: 30}, titles: {"en": "National Day of Remembrance for Indian Boarding Schools"}, notes: {"en": "National Day of Remembrance for U.S. Indian Boarding Schools"}, urls: {"en": "https://boardingschoolhealing.org/national-day-of-remembrance-for-us-indian-boarding-schools/"}, emoji: "🐦", first: {era: 1, y: 2013}},
@@ -2132,7 +2132,7 @@
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, titles: {"en": "National Hug Your Hound Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hug-your-hound-day/"}, notes: {"en": "Hug Your Hound Day"}, emoji: "🐶"},
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, titles: {"en": "National Pet Memorial Day"}, urls: {"en": "https://nationaltoday.com/national-pet-memorial-day/"}},
         {type: "D", start: {mon: 9, wkd: [2], nth: 1}, titles: {"en": "The West Indian Day Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/the-west-indian-day-parade/"}, first: {era: 1, y: 1920}, notes: {"en": "Created by immigrants from the Caribbean."}},
-        {type: "D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, titles: {"en": "National Another Look Unlimited Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-another-look-unlimited-day-day-after-labor-day"}},
+        {type: "D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, titles: {"en": "National Another Look Unlimited Day"}, urls: {"en": "https://www.daysoftheyear.com/days/another-look-unlimited-day/"}},
         {type: "D", start: {mon: 9, wkd: [2], nth: 4}, inherits: "National Family Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-family-day-fourth-monday-in-september"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 9, wkd: [3], nth: 2}, titles: {"en": "National Ants on a Log Day"}, urls: {"en": "https://nationaltoday.com/national-ants-on-a-log-day/"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 9, wkd: [3], nth: 3}, titles: {"en": "Get Ready Day"}, urls: {"en": "https://aphagetready.org/"}, first: {era: 1, y: 2006}, emoji: "🏠🧑‍🧑‍🧒"},
@@ -2367,6 +2367,8 @@
         {type: "W", start: {mon: 9, fullWk: 3}, urls: {"en": "https://www.daysoftheyear.com/days/national-indoor-plant-week/"}, titles: {"en": "National Indoor Plant Week"}, first: {era: 1, y: 2007}, emoji: "🪴"},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "Kiss Me Day"}, notes: {"en": "First Kiss Day\nThis observance commemorates the first kiss of Popeye and Olive Oyl."}, urls: {"en": "https://www.checkiday.com/29fb4a76e0b5b8612f33b7bc1a79764c/kiss-me-day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "Tarzan Day"}, notes: {"en": "National Tarzan Day"}, urls: {"en": "https://www.checkiday.com/3b6d488d813517dce8c8c6e1ce2bcef9/tarzan-day"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, titles: {"en": "Telephone Tuesday"}, urls: {"en": "https://www.daysoftheyear.com/days/telephone-tuesday/"}, emoji: "☎️"},
+        {type: "D", start: {mon: 9, d: 2}, titles: {"en": "National Spalding Baseball Day"}, notes: {"en": "Spalding Baseball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-spalding-baseball-day/"}, emoji: "⚾️"},
 
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durationD: 7}, inherits: "National Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
@@ -2413,9 +2415,11 @@
             {type: "D", start: {mon: 8, wkd: [7], nth: 3}, inherits: "National Model Aviation Day", first: {era: 1, y: 2013}, end: {era: 1, y: 2015}},
             {type: "D", start: {mon: 8, wkd: [7], nth: 2}, inherits: "National Model Aviation Day", first: {era: 1, y: 2016}},
         ]},
+        
         {type: "M", start: {mon: 9}, titles: {"en": "National Blueberry Popsicle Month"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-blueberry-popsicle-day-september-2"}, emoji: "🫐", nonoverlappingSubEvents: [
             {type: "D", start: {mon: 9, d: 2}, titles: {"en": "National Blueberry Popsicle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blueberry-popsicle-day/"}, emoji: "🫐"},
         ]},
+        
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},

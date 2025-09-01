@@ -104,7 +104,7 @@
         {type: "D", start: {mon: 8, wkd: [6], nth: 1}, inherits: "Jeans for Genes Day", urls: {"en": "https://fundraise.jeansforgenes.org.au/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Footy Colours Day"}, notes: {"en": "Footy Colors Day"}, urls: {"en": "https://www.footycoloursday.com.au/"}, first: {era: 1, y: 1995}, inherits: "*MedAwareness*", emoji: "🏉"},
         {type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/white-balloon-day/"}, titles: {"en": "White Balloon Day"}, first: {era: 1, y: 1997}},
-        {type: "D", start: {mon: 9, wkd: [4], nth: 1}, urls: {"en": "https://www.daysoftheyear.com/days/indigenous-literacy-day/"}, titles: {"en": "Indigenous Literacy Day"}, first: {era: 1, y: 2004}},
+        {type: "D", start: {mon: 9, wkd: [4], nth: 1}, titles: {"en": "Indigenous Literacy Day"}, urls: {"en": "https://www.indigenousliteracyfoundation.org.au/ILD"}, first: {era: 1, y: 2004}, notes: {"en": "Created by Suzy Wilson of Riverbend Books."}},
         {type: "D", start: {mon: 9, wkd: [5], nth: 2}, urls: {"en": "http://www.ruok.org.au/r-u-ok-day"}, titles: {"en": "R U OK?Day", "he": "יום ״האם אתה בסדר״"}, notes: {"en": "Are You Okay Day"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/afl-grand-final-friday/"}, titles: {"en": "AFL Grand Final Friday"}, notes: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, urls: {"en": "https://www.daysoftheyear.com/days/save-the-koala-day/"}, titles: {"en": "Save the Koala Day"}, emoji: "🐨"},

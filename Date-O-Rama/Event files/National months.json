@@ -324,7 +324,7 @@
         {type: "M", start: {mon: 8}, urls: {"en": "https://www.daysoftheyear.com/days/water-quality-month/"}, titles: {"en": "National Water Quality Month"}, emoji: "💦"},
         {type: "M", start: {mon: 8}, urls: {"en": "https://www.roadpeace.org/remembering-lives-lost/national-road-victim-month/"}, titles: {"en": "National Road Victim Month"}, emoji: "🛣️", inherits: "*MedAwareness*", first: {era: 1, y: 1998}},
         {type: "M", start: {mon: 9}, inherits: "National Guide Dog Month", first: {era: 1, y: 2010}},
-        {type: "M", start: {mon: 9}, titles: {"en": "Hunger Action Month"}, urls: {"en": "https://www.feedingamerica.org/take-action/hunger-action-month"}, emoji: "🍌", first: {era: 1, y: 2008}},
+        {type: "M", start: {mon: 9}, titles: {"en": "Hunger Action Month"}, urls: {"en": "https://www.feedingamerica.org/take-action/hunger-action-month"}, emoji: "🍌", first: {era: 1, y: 2008}, notes: {"Created by Feeding America."}},
         {type: "M", start: {mon: 9}, titles: {"en": "National African Immigrant Heritage Month"}},
         {type: "M", start: {mon: 9}, titles: {"en": "National Honey Month"}, urls: {"en": "https://www.honey.com/"}, emoji: "🍯", notes: {"en": "Created by the National Honey Board."}, first: {era: 1, y: 1989}},
         {type: "M", start: {mon: 9}, titles: {"en": "National Prostate Health Month"}, inherits: "*MedAwareness*", notes: {"en": "Created by the American Foundation for Urological Disease."}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/prostate-health-month/"}},
