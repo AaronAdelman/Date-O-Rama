@@ -199,7 +199,7 @@
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "SHIFT10 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shift10-day/"}, first: {era: 1, y: 2016}, emoji: "🤲"},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "U.S. Naval Academy Day"}, urls: {"en": "https://www.checkiday.com/75dc72f0826e92132c92065373f1160a/u-s-naval-academy-day"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "“You Go, Girl” Day"}, urls: {"en": "https://www.checkiday.com/2beee1b83126f3b6a6416dd083fa85c9/you-go-girl-day"}, first: {era: 1, y: 1984}, emoji: "👩‍🚀"},
-        {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Coming Out Day"}, first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}, notes: {"en": "Created by Robert Eichberg and Jean O’Leary."}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Peyronie’s Disease Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-peyronies-disease-awareness-day/"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Sausage Pizza Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sausage-pizza-day/"}, emoji: "🍕"},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Spread Joy Day"}, urls: {"en": "https://nationaltoday.com/national-spread-joy-day/"}, first: {era: 1, y: 2018}},
@@ -2039,7 +2039,6 @@
         {type: "D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-appreciation-day/"}, titles: {"en": "National Elephant Appreciation Day"}, first: {era: 1, y: 1996}, emoji: "🐘"},
         {type: "D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/ice-cream-cone-day/"}, titles: {"en": "National Ice Cream Cone Day"}, emoji: "🍦"},
         {type: "D", start: {mon: 9, d: 22}, urls: {"en": "https://www.daysoftheyear.com/days/white-chocolate-day/"}, titles: {"en": "National White Chocolate Day", "he": "יום השוקולד הלבן הלאומי"}},
-        {type: "D", start: {mon: 9, d: 23}, titles: {"en": "Celebrate Bisexuality Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 9, d: 23}, titles: {"en": "National AFM Day"}, urls: {"en": "https://nationaltoday.com/national-afm-day/"}},
         {type: "D", start: {mon: 9, d: 23}, titles: {"en": "National Apple Cider Vinegar Day"}, urls: {"en": "https://nationaltoday.com/national-apple-cider-vinegar-day/"}},
         {type: "D", start: {mon: 9, d: 23}, titles: {"en": "National Go With Your Gut Day"}, urls: {"en": "https://nationaltoday.com/national-go-with-your-gut-day/"}, first: {era: 1, y: 2021}},
@@ -2396,10 +2395,6 @@
             {type: "D", start: {mon: 4, d: 11, thruD: 17, wkd: [4]}, titles: {"en": "National Library Outreach Day"}, notes: {"en": "National Bookmobile Day"}, urls: {"en": "https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek/national-library-outreach-day"}, first: {era: 1, y: 2003}, emoji: "📚"},
             {type: "D", start: {mon: 4, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "National Support Teen Literature Day"}, notes: {"en": "Support Teen Literature Day\nCelebrate Teen Literature Day"}, urls: {"en": "https://nationaltoday.com/national-support-teen-literature-day/"}, first: {era: 1, y: 2007}, emoji: "📚"},
             {type: "D", start: {mon: 4, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Take Action for Libraries Day"}, urls: {"en": "https://www.checkiday.com/11e9b7621a3281baea1e2e6d370a78ae/take-action-for-libraries-day"}, first: {era: 1, y: 2017}, emoji: "📚"},
-        ]},
-
-        {type: "nD", start: {mon: 4, d: 20, thruD: 26, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [1]}, titles: {"en": "Lesbian Visibility Week"}, first: {era: 1, y: 1990}, overlappingSubEvents: [
-            {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Lesbian Visibility Day"}, first: {era: 1, y: 2008}},
         ]},
         
         {type: "W", start: {mon: 5, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", nonoverlappingSubEvents: [

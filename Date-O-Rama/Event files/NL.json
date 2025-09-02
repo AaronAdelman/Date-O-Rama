@@ -43,5 +43,6 @@
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Bitterballen Day", "nl": "Dag van de Bitterbal"}, notes: {"nl": "Bitterballendag"}, urls: {"en": "https://www.daysoftheyear.com/days/bitterballen-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 1957}, titles: {"en": "National Holocaust Remembrance", "nl": "Nationale Holocaust Herdenking"}, notes: {"en": "Auschwitz Remembrance", "nl": "Auschwitzherdenking"}, urls: {"en": "https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "No Orange Clothes Day"}, urls: {"en": "https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, first: {era: 1, y: 1784}, emoji: "🟠"},
+        {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
     ]
 }
