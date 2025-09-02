@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 5, d: 7, thruD: 8, wkd: [2]}, inherits: "St. George’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/day-of-the-bulgarian-army"}},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "Bulgarian Education and Culture and Slavonic Literature Day", "bg": "Ден на българската просвета и култура и на славянската писменост"}, urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"}, notes: {"en": "Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture"}},
         {type: "D", start: {mon: 5, d: 26, wkd: [2, 3]}, titles: {"en": "Bulgarian Education and Culture and Slavonic Literature Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"}, notes: {"en": "Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"}},
-        {type: "D", start: {mon: 9, d: 6}, inherits: "Unification Day", urls: {"en": "https://www.officeholidays.com/holidays/bulgaria/bulgaria-unification-day"}, first: {era: 1, y: 1885}},
+        {type: "D", start: {mon: 9, d: 6}, inherits: "Unification Day", urls: {"en": "https://www.daysoftheyear.com/days/unification-day-in-bulgaria/"}, first: {era: 1, y: 1885}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 22}, first: {era: 1, y: 1908}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 9, d: 23}, first: {era: 1, y: 1908}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
