@@ -1660,6 +1660,8 @@
         {type: "D", start: {mon: 8, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/homeless-animals-day/"}, titles: {"en": "International Homeless Animals Day"}, notes: {"en": "IHAD"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 8, wkd: [7], nth: 3}, urls: {"en": "https://www.daysoftheyear.com/days/world-honey-bee-day/"}, titles: {"en": "World Honey Bee Day"}, emoji: "🐝", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Building and Code Staff Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/building-and-code-staff-appreciation-day/"}},
+        {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Toy Tips Executive Toy Test Day"}, urls: {"en": "https://www.checkiday.com/d038f6a50081fe81e226f5985ac436fe/toy-tips-executive-toy-test-day"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Roblox Day"}, urls: {"en": "https://www.listofnationaldays.com/september-1st-roblox-day/"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Rosolio Day"}, urls: {"en": "https://rosolioitalicus.com/the-art-of-italicus/rosolio-day/"}, first: {era: 1, y: 2024}, notes: {"en": "Created by Italicus Ltd."}, emoji: "🥂"},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Ginger Cat Appreciation Day", "he": "יום ההוקרה לחתול הג׳ינג׳י"}, urls: {"en": "https://www.daysoftheyear.com/days/ginger-cat-appreciation-day/"}, emoji: "🐈"},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "International Primate Day"}, emoji: "🐒🦍🦧", urls: {"en": "https://en.wikipedia.org/wiki/International_Primate_Day"}, first: {era: 1, y: 2005}},

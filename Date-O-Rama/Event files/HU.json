@@ -41,5 +41,6 @@
         {inherits: "Heroes’ Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 2001}},
         {inherits: "Independence Day", type: "D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], nth: -1, mon: 6}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "M", start: {mon: 3}, inherits: "LGBTQ History Month", first: {era: 1, y: 2013}},
     ]
 }

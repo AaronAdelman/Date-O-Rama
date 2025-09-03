@@ -141,6 +141,7 @@
         {type: "nD", start: {mon: 8, d: 29}, end: {mon: 9, d: 4}, titles: {"en": "Literacy & Numeracy Week"}, urls: {"en": "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/resources-for-schools/literacy-and-numeracy-week"}, emoji: "📒"},
         {type: "D", start: {mon: 9, d: 4}, titles: {"en": "Macadamia Nut Day"}, notes: {"en": "National Macadamia Nut Day"}, urls: {"en": "https://www.australian-macadamias.org/lets-celebrate-macadamia-nut-day/"}},
         {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
+        {type: "M", start: {mon: 10}, inherits: "LGBTQ History Month", first: {era: 1, y: 2016}},
     ],
     templates: [
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},
