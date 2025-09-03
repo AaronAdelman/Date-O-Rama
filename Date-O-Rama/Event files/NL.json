@@ -24,8 +24,8 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
-        {titles: {"en": "Saint Nicholas’s Eve", "nl": "Sinterklaasavond"}, type: "D", start: {mon: 12, d: 5}, emoji: "🎅", notes: {"en": "Pakjesavond"}},
-        {inherits: "Carnival (day 1)", type: "D", start: {Easter:  "Easter", offsetD: -49}},
+        {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Saint Nicholas’s Eve", "nl": "Sinterklaasavond"}, emoji: "🎅", notes: {"en": "Pakjesavond"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -49}, inherits: "Carnival (day 1)",},
         {inherits: "Carnival (day 2)", type: "D", start: {Easter:  "Easter", offsetD: -48}},
         {inherits: "Carnival (day 3)", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         
@@ -44,5 +44,6 @@
         {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 1957}, titles: {"en": "National Holocaust Remembrance", "nl": "Nationale Holocaust Herdenking"}, notes: {"en": "Auschwitz Remembrance", "nl": "Auschwitzherdenking"}, urls: {"en": "https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "No Orange Clothes Day"}, urls: {"en": "https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, first: {era: 1, y: 1784}, emoji: "🟠"},
         {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 12, wkd: [6], nth: 2}, titles: {"en": "Purple Friday", "nl": "Paarse Vrijdag"}, first: {era: 1, y: 2010}},
     ]
 }

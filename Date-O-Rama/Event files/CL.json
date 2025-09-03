@@ -54,6 +54,7 @@
         {type: "D", start: {mon: 5, d: 24}, titles: {"es": "Día del Completo"}, emoji: "🌭", urls: {"en": "https://www.daysoftheyear.com/days/dia-del-completo/"}, first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 7, d: 10}, end: {mon: 7, d: 16}, titles: {"en": "Fiesta de la Tirana", "es": "Fiesta de la Tirana"}, urls: {"en": "https://www.daysoftheyear.com/days/fiesta-de-la-tirana/"}, first: {era: 1, y: 1500}},
         {type: "D", start: {mon: 8, d: 18}, inherits: "Solidarity Day", urls: {"en": "https://www.daysoftheyear.com/days/solidarity-day-in-chile/"}, first: {era: 1, y: 1978}},
+        {type: "D", start: {mon: 7, d: 9}, inherits: "Lesbian Visibility Day", first: {era: 1, y: 2015}},
   ],
     templates: [
         {template: "Meeting of the Worlds", titles: {"en": "Meeting of the Worlds", "es": "Encuentro de Dos Mundos"}, urls: {"en": "https://www.officeholidays.com/holidays/chile/day-of-respect-for-cultural-diversity"}, inherits: "Columbus Day", type: "D", start: {mon: 10, d: 12, wkd: [7, 1, 2]}},

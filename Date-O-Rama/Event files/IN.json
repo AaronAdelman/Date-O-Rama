@@ -269,6 +269,7 @@
         {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"en": "Chapchar Kut"}, locations: {"en": "Mizoram"}, urls: {"en": "https://www.officeholidays.com/holidays/india/chapchar-kut"}},
         {type: "D", start: {mon: 4, d: 8}, titles: {"en": "Birthday of Sri Guru Nabha Dass Ji"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/india/birthday-of-sri-guru-nabha-dass-ji"}, first: {era: 1, y: 1537}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Veer Kunvar Singh Jayanti"}, urls: {"en": "https://www.officeholidays.com/holidays/india/veer-kunvar-singh-jayanti"}, first: {era: 1, y: 1858}},
+        {type: "D", start: {mon: 7, d: 2}, titles: {"en": "Indian Coming Out Day", "bn": "ভারতীয় বেরিয়ে আসা দিবস"}, first: {era: 1, y: 2012}},
     ], templates: [
         {template: "Panchayati Raj Diwas", type: "D", start: {mon: 3, d: 5}, titles: {"en": "Panchayati Raj Diwas"}, urls: {"en": "https://www.officeholidays.com/holidays/india/panchayati-raj-diwas"}, locations: {"en": "Odisha"}},
     ]

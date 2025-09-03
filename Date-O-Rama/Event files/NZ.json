@@ -109,6 +109,7 @@
         {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2016}, last: {era: 1, y: 2022}},
         {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 13}, end: {era: 1, y: 2023, mon: 5, d: 20}, inherits: "Techweek"},
         {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2024}},
+        {type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Schools Pride Week"}, first: {era: 1, y: 2019}},
     ],
     templates: [
         {template: "Techweek", type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Techweek"}, urls: {"en": "https://techweek.co.nz/"}, emoji: "🥽"},

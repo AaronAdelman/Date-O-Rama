@@ -305,7 +305,7 @@
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "Conflict Resolution Day"}, urls: {"en": "https://www.daysoftheyear.com/days/conflict-resolution-day/"}, first: {era: 1, y: 2005}, emoji: "♟️"},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "International Credit Union Day"}, notes: {"en": "ICU Day"}, urls: {"en": "https://www.woccu.org/member_services/engagement/icuday"}, first: {era: 1, y: 1948}, emoji: "💵"},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "International ShakeOut Day"}, urls: {"en": "https://nationaltoday.com/international-shakeout-day/"}},
-        {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "Spirit Day"}, urls: {"en": "https://nationaltoday.com/spirit-day/"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 10, wkd: [5], nth: 3}, inherits: "Spirit Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 10, wkd: [5], nth: 3}, titles: {"en": "World Values Day"}, urls: {"en": "https://www.worldvaluesday.com/"}, emoji: "🫶", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, titles: {"en": "World Lemur Day"}, urls: {"en": "https://www.lemurconservationnetwork.org/world-lemur-day/"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 10, wkd: [6], nth: 1}, titles: {"en": "Kids Music Day"}, urls: {"en": "https://www.keepmusicalive.org/kids-music-day"}, first: {era: 1, y: 2016}},
@@ -1383,7 +1383,6 @@
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "World Day for Assistive Technology"}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-for-assistive-technology/"}, emoji: "💻", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Apple II Day"}, urls: {"en": "https://www.checkiday.com/09883ea595101a828e8898b625cc3944/apple-ii-day"}, first: {era: 1, y: 1977}, emoji: "🍎"},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Festival of Popular Delusions Day"}, urls: {"en": "https://www.checkiday.com/856092439f2a353f21e6d1187018d675/festival-of-popular-delusions-day"}, first: {era: 1, y: 1945}},
-        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "HIV Long-Term Survivors Day"}, urls: {"en": "https://www.hltsad.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Hot Air Balloon Day", "he": "יום הכדור הפורח"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-air-balloon-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Random Acts of Cardness"}, urls: {"en": "https://www.randomactsofcardness.org/random-acts-of-cardness-day"}, emoji: "✉️"},
         {type: "D", start: {mon: 6, d: 6}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
@@ -2016,7 +2015,7 @@
         {type: "D", start: {mon: 11, wkd: [1], nth: 1}, titles: {"en": "Trans Parent Day"}, first: {era: 1, y: 2009}},
 
         {type: "nD", start: {mon: 4, d: 20, thruD: 26, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [1]}, titles: {"en": "Lesbian Visibility Week", "ja": "レズビアン可視化週間", "uk": "Тиждень видимості лесбійок", "es": "Semana de la Visibilidad Lésbica", "pa": "ਲੈਸਬੀਅਨ ਵਿਜ਼ੀਬਿਲਟੀ ਵੀਕ"}, first: {era: 1, y: 1990}, overlappingSubEvents: [
-            {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Lesbian Visibility Day"}, first: {era: 1, y: 2008}},
+            {type: "D", start: {mon: 4, d: 26}, inherits: "Lesbian Visibility Day", first: {era: 1, y: 2008}},
         ]},
         
         {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [2], durationD: 7}, inherits: "Waste & Recycling Workers Week", first: {era: 1, y: 2011}, last: {era: 1, y: 2024}, nonoverlappingSubEvents: [
