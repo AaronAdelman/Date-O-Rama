@@ -66,6 +66,7 @@
         {template: "Bank Holiday", type: "D", start: {mon: 7, d: 1}, titles: {"en": "Bank Holiday", "he": "יום־חג", "es": "Día del Empleado Bancario"}, emoji: "🏦"},
         {template: "Baptism Day of Kyivan Rus", type: "D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/baptism-day-of-kyivan-rus/"}, titles: {"en": "Baptism Day of Kyivan Rus"}},
         {template: "Baptism of the Prophet", titles: {"en": "Baptism of the Prophet"}, type: "D", start: {mon: 3, d: 19}, notes: {"en": "Prophet’s Baptism"}},
+        {template: "Barbie and Barney Backlash Day", type: "D", start: {mon: 12, d: 16}, titles: {"en": "Barbie and Barney Backlash Day"}, notes: {"en": "Created by Tom and Ruth Roy."}, urls: {"en": "https://wellcat.com/pages/holidays"}, first: {era: 1, y: 1996}},
         {template: "Bastille Day", type: "D", start: {mon: 7, d: 14}, titles: {"en": "Bastille Day", "he": "יום הבסטיליה", "fr": "Fête nationale française"}, urls: {"en": "https://www.daysoftheyear.com/days/bastille-day/"}, emoji: "🇫🇷"},
         {template: "Battle of Arica", type: "D", start: {mon: 6, d: 7}, titles: {"en": "Battle of Arica", "es": "Asalto y Toma del Morro de Arica"}},
         {template: "Beheading of St. John the Baptist", titles: {"en": "Beheading of St. John the Baptist", "mt": "Il-Martirju ta’ San Ġwann"}, type: "D", start: {mon: 8, d: 29}, notes: {"en": "Keddus Johannes\nMartyrdom of Saint John the Baptist"}},

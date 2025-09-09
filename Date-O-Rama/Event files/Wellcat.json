@@ -13,7 +13,7 @@
             {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}},
             {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Pick A Pathologist Pal Day"}},
             {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Cat Herders’ Day"}},
-            {type: "D", start: {mon: 12, d: 16}, titles: {"en": "Barbie and Barney Backlash Day"}},
+            {type: "D", start: {mon: 12, d: 16}, inherits: "Barbie and Barney Backlash Day"},
             {type: "D", start: {mon: 12, d: 21}, inherits: "Humbug Day"},
             {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Tick Tock Day", "he": "יום הטיק טק"}},
             {type: "D", start: {mon: 12, d: 30}, inherits: "Falling Needles Family Fest"},
