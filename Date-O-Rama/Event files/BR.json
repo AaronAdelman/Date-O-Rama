@@ -78,8 +78,8 @@
         {type: "D", start: {mon: 1, d: 11, thruD: 17, wkd: [5]}, titles: {"en": "Washing of the Bonfim", "pt": "Lavagem do Bonfim"}, urls: {"en": "https://www.daysoftheyear.com/days/the-washing-of-bonfim/"}},
         {type: "D", start: {mon: 1, d: 14, thruD: 20, wkd: [1]}, titles: {"en": "Feast of Bonfim", "pt": "Festa do Bonfim"}, urls: {"en": "https://www.daysoftheyear.com/days/feast-of-bonfim/"}},
         {type: "D", start: {mon: 2, d: 2}, titles: {"en": "Festival of Lemanjá"}, urls: {"en": "https://www.daysoftheyear.com/days/the-festival-of-lemanja/"}, first: {era: 1, y: 1920}},
-        {type: "D", start: {mon: 2, d: 9}, inherits: "Frevo Day", first: {era: 1, y: 1909}},
-        {type: "D", start: {mon: 9, d: 14}, inherits: "Frevo Day", first: {era: 1, y: 1909}},
+        {type: "D", start: {mon: 2, d: 9}, inherits: "Frevo Day", first: {era: 1, y: 1907}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Frevo Day", first: {era: 1, y: 1907}},
         {type: "D", start: {Easter:  "Easter", offsetD: -50}, titles: {"en": "Bloco da Lama", "pt": "Bloco da Lama"}, notes: {"en": "Mud Carnival"}, urls: {"en": "https://www.daysoftheyear.com/days/bloco-da-lama/"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 4, d: 13}, inherits: "National Anthem Day", urls: {"en": "https://www.daysoftheyear.com/days/national-anthem-day-in-brazil/"}, first: {era: 1, y: 1934}},
         {type: "nD", start: {mon: 6, d: 1, thruD: 7, wkd: [5], durationD: 3}, titles: {"en": "Cuscuz Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/cuscuz-festival/"}, first: {era: 1, y: 2024}},
@@ -94,6 +94,6 @@
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Trans Men and Transmasculine Day"}, first: {era: 1, y: 2015}},
     ],
     templates: [
-        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}},
+        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}, notes: {"en": "Created by Osvaldo da Silva Almeida."}},
     ]
 }

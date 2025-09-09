@@ -60,7 +60,7 @@
         {type: "D", start: {mon: 6, d: 26}, inherits: "National Rat Catcher’s Day"},
         {type: "D", start: {mon: 6, d: 3}, inherits: "European Bicycle Day", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 7, d: 22}, inherits: "National Rat Catcher’s Day"},
-        {type: "D", start: {mon: 9, wkd: [7], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/german-language-day/"}, titles: {"en": "German Language Day", "de": "Tag der deutschen Sprache"}, first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 9, wkd: [7], nth: 2}, titles: {"en": "German Language Day", "de": "Tag der deutschen Sprache"}, urls: {"en": "https://www.daysoftheyear.com/days/german-language-day/"}, first: {era: 1, y: 2001}},
         {type: "D", titles: {"en": "Day of the Homeland"}, start: {mon: 9, wkd: [1], nth: 2}, urls: {"en": "https://nationaltoday.com/day-of-the-homeland/"}, first: {era: 1, y: 1949}},
         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "Marzipan Week", "he": "שבוע המרציפן"}, notes: {"en": "National Marzipan Week", "he": "שבוע המרציפן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-week/"}},
         {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
