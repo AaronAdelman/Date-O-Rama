@@ -30,51 +30,44 @@ struct ASALocationTab: View {
             
             let dayPart: ASADayPart = processed.dayPart
             let headerColor = dayPart.locationColor
-            let imageName: String = {
+            
+            let dayTop      = Color("dayTop")
+            let dayBottom   = Color("dayBottom")
+            let nightTop    = Color("nightTop")
+            let nightBottom = Color("nightBottom")
+            
+            let gradient: Gradient = {
                 switch location.type {
-                case .earthUniversal:
-                    return "Earth"
-                    
-                case .marsUniversal:
-                    return "Mars"
+                case .earthUniversal, .marsUniversal:
+                    return Gradient(colors: [.gray])
                     
                 case .earthLocation:
                     switch dayPart {
                     case .day:
-                        return "dayImage"
+                        return Gradient(colors: [dayTop, dayTop, dayBottom])
                     case .night:
-                        return "nightImage"
+                        return Gradient(colors: [nightTop, nightTop, nightBottom])
                     case .unknown:
-                        return "unknownBackground"
+                        return Gradient(colors: [.brown])
                     }
                 }
             }()
             
             GeometryReader { geo in
-                ZStack
-//                (alignment: .top)
-                {
-                    Image(imageName)
-                        .resizable()
-//                        .scaledToFill()
-                        .scaledToFit()
-                        .ignoresSafeArea()
-                    
-                    List {
-                        ASALocationWithClocksSectionView(
-                            now: $now,
-                            locationWithClocks: $locationWithClocks,
-                            headerColor: headerColor,
-                            processed: processed
-                        )
-                        .environmentObject(userData)
-                    }
-                    .listStyle(.grouped)
-                    .scrollContentBackground(.hidden)
-                    .padding(.top, geo.safeAreaInsets.top) // Dynamically match toolbar/nav bar height
-                    .padding(.bottom, geo.safeAreaInsets.bottom) // Dynamically match toolbar/nav bar height
+                List {
+                    ASALocationWithClocksSectionView(
+                        now: $now,
+                        locationWithClocks: $locationWithClocks,
+                        headerColor: headerColor,
+                        processed: processed
+                    )
+                    .environmentObject(userData)
                 }
-//                .edgesIgnoringSafeArea(.bottom) // keep background full bleed
+                .listStyle(.grouped)
+                .scrollContentBackground(.hidden)
+                .padding(.top, geo.safeAreaInsets.top) // Dynamically match toolbar/nav bar height
+                .padding(.bottom, geo.safeAreaInsets.bottom) // Dynamically match toolbar/nav bar height
+                .background(gradient)
             }
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
