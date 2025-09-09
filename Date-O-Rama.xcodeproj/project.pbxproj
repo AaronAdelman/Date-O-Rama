@@ -634,6 +634,8 @@
 		A5D135C127C545AE00A1A525 /* ASACalendarWithEras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135C027C545AE00A1A525 /* ASACalendarWithEras.swift */; };
 		A5D135C227C545AE00A1A525 /* ASACalendarWithEras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135C027C545AE00A1A525 /* ASACalendarWithEras.swift */; };
 		A5D135C327C545AE00A1A525 /* ASACalendarWithEras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135C027C545AE00A1A525 /* ASACalendarWithEras.swift */; };
+		A5D149392E6FF7FB00752B48 /* Robert Birch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D149382E6FF7FB00752B48 /* Robert Birch.json */; };
+		A5D1493A2E6FF7FB00752B48 /* Robert Birch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D149382E6FF7FB00752B48 /* Robert Birch.json */; };
 		A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islam (general).json */; };
 		A5D3D7DB27F8DB950099718A /* International.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7DA27F8DB940099718A /* International.json */; };
 		A5D3D7DC27F8DB950099718A /* International.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7DA27F8DB940099718A /* International.json */; };
@@ -1581,6 +1583,7 @@
 		A5D135B827C41C2200A1A525 /* ASACalendarWithMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithMonths.swift; sourceTree = "<group>"; };
 		A5D135BC27C537C500A1A525 /* ASACalendarWithQuarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithQuarters.swift; sourceTree = "<group>"; };
 		A5D135C027C545AE00A1A525 /* ASACalendarWithEras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithEras.swift; sourceTree = "<group>"; };
+		A5D149382E6FF7FB00752B48 /* Robert Birch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Robert Birch.json"; sourceTree = "<group>"; };
 		A5D3015A24EBDFF8003E79E9 /* Islam (general).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islam (general).json"; sourceTree = "<group>"; };
 		A5D3D7DA27F8DB940099718A /* International.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = International.json; sourceTree = "<group>"; };
 		A5D3D7DD27FA14640099718A /* US.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = US.json; sourceTree = "<group>"; };
@@ -2351,6 +2354,7 @@
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
 				A56767622E60E266001F108C /* The Realist Society of Canada.json */,
+				A5D149382E6FF7FB00752B48 /* Robert Birch.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -3136,6 +3140,7 @@
 				A50DA52528686272008D54AE /* PH (Chinese).json in Resources */,
 				A5EFFFCB285B81BD00F2205F /* ZM.json in Resources */,
 				A5EFFFC9285B81BD00F2205F /* ZW.json in Resources */,
+				A5D149392E6FF7FB00752B48 /* Robert Birch.json in Resources */,
 				A5EFFF3B285B5C5B00F2205F /* TD.json in Resources */,
 				A5EFFFB8285B808E00F2205F /* TT.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
@@ -3617,6 +3622,7 @@
 				A533798124B2333500340C0B /* Twilight.json in Resources */,
 				A5E292C5285A446000925EBD /* AO.json in Resources */,
 				A5EB851B2869E9F700C9321A /* SY (Julian).json in Resources */,
+				A5D1493A2E6FF7FB00752B48 /* Robert Birch.json in Resources */,
 				A5E46B2E2D9488CE0084FB36 /* IN (Muslim).json in Resources */,
 				A5EFFF90285B7D4600F2205F /* NG.json in Resources */,
 				A5E495E428624E22001BF40C /* GA.json in Resources */,

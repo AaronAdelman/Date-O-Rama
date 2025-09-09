@@ -8,7 +8,9 @@
         {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 2, d: 15}, inherits: "Parinirvana Day"},
         {type: "D", start: {mon: 2, d: 8}, inherits: "Parinirvana Day"},
-        {type: "D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/world-day-of-metta/"}, titles: {"en": "World Day of Metta"}},
+        {type: "D", start: {mon: 3, d: 22}, titles: {"en": "World Day of Metta"}, urls: {"en": "https://nationaltoday.com/world-day-of-metta/"}},
+        {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Mindfulness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mindfulness-day/"}, notes: {"en": "Created by Wisdom Publications."}},
+
     ],
     templates: [
         {template: "Parinirvana Day", type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/parinirvana-day-nirvana-day/"}, titles: {"en": "Parinirvana Day"}, notes: {"en": "Nirvana Day"}},

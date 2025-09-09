@@ -143,6 +143,11 @@
         {type: "D", start: {mon: 9, d: 4}, titles: {"en": "Macadamia Nut Day"}, notes: {"en": "National Macadamia Nut Day"}, urls: {"en": "https://www.australian-macadamias.org/lets-celebrate-macadamia-nut-day/"}},
         {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 10}, inherits: "LGBTQ History Month", first: {era: 1, y: 2016}},
+        
+        {type: "W", start: {mon: 9, fullWk: 1}, titles: {"en": "National Child Protection Week"}, urls: {"en": "https://www.napcan.org.au/ncpw/"}, first: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en": "Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)."}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [6]}, titles: {"en": "Bravehearts Day"}, urls: {"en": "https://bravehearts.org.au/support-us/bravehearts-day"}, emoji: "💟", notes: {"en": "White Balloon Day\nCreated by Bravehearts."}, first: {era: 1, y: 1997}},
+        ]},
+
     ],
     templates: [
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},
