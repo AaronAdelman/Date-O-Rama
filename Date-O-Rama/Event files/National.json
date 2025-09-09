@@ -1963,7 +1963,7 @@
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National Emma M. Nutt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/emma-m-nutt-day/"}, notes: {"en": "Emma M. Nutt Day"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "National Chicken Boy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-boy-day/"}, notes: {"en": "Chicken Boy Day"}},
         {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National Anti-Junk Light Day"}, notes: {"en": "Stop Junk Light Day\nCreated by TrueDark."}, urls: {"en": "https://www.daysoftheyear.com/days/national-anti-junk-light-day/"}, first: {era: 1, y: 2018}},
-        {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National TV Dinner Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tv-dinner-day/"}, emoji: "🍲📺"},
+        {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National TV Dinner Day"}, notes: {"en": "TV Dinner Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tv-dinner-day/"}, emoji: "🍲📺"},
         {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National Port Wine Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-port-wine-day/"}, first: {era: 1, y: 2014}, emoji: "🍷", notes: {"en": "Created by the Douro and Port Wine Institute."}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "Libraries Remember Day"}, urls: {"en": "https://www.daysoftheyear.com/days/libraries-remember-day/"}, first: {era: 1, y: 2011}, emoji: "📚", notes: {"en": "Created by Bill Erbes."}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Make Your Bed Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-your-bed-day/"}, emoji: "🛏"},

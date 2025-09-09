@@ -181,7 +181,8 @@
         {type: "D", start: {mon: 9, d: 7}, titles: {"en": "Superhuman Day"}, urls: {"en": "https://www.daysoftheyear.com/days/superhuman-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by Channel 4, the British television network, in celebration of the Summer Paralympic Games."}},
         {type: "D", start: {mon: 9, d: 9}, titles: {"en": "Emergency Services Day"}, urls: {"en": "https://www.999day.org.uk/"}, first: {era: 1, y: 2016}, notes: {"en": "999 Day\nCreated by Tom Scholes-Fogg."}},
         {type: "D", start: {mon: 9, wkd: [4], d: 18, thruD: 24}, inherits: "National Fitness Day", urls: {"en": "https://www.nationalfitnessday.com/"}, first: {era: 1, y: 2021}},
-        {type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "National Quiet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quiet-day/"}, emoji: "🤫", notes: {"en": "Created by Whirlpool."}},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "National Quiet Day", first: {era: 1, y: 2016}, last: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 9, wkd: [4], nth: 2}, inherits: "National Quiet Day", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 9, wkd: [4], nth: 4}, inherits: "National Fitness Day", urls: {"en": "https://www.nationalfitnessday.com/"}, first: {era: 1, y: 2000}, last: {era: 1, y: 2020}},
         {type: "D", start: {mon: 9, wkd: [6], nth: 3}, titles: {"en": "Raspberry Day"}, urls: {"en": "https://cavernomasociety.org.uk/raspberry-day"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*"},
 
@@ -385,5 +386,6 @@
         {template: "NCDUK", type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "National Children’s Day UK"}, notes: {"en": "NCDUK"}, inherits: "National Children’s Day", urls: {"en": "https://www.nationalchildrensdayuk.com/"}},
         {template: "Conwy River Festival", type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durationD: 3}, titles: {"en": "Conwy River Festival"}, urls: {"en": "https://conwyriverfestival.org/"}, emoji: "🏰"},
         {template: "National Moving Day", type: "D", start: {era: 1, y: 2023, mon: 9, d: 1}, titles: {"en": "National Moving Day"}, urls: {"en": "https://www.nationalmovingday.co.uk/"}, emoji: "📦🏠"},
+        {template: "National Quiet Day", type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "National Quiet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quiet-day/"}, emoji: "🤫", notes: {"en": "Created by Whirlpool."}},
     ]
 }
