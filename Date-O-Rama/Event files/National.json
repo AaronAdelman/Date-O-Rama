@@ -1969,6 +1969,8 @@
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Make Your Bed Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-your-bed-day/"}, emoji: "🛏"},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National SUP Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-sup-day/"}, notes: {"en": "Created by AquaPaddle.\nThis observance celebrates stand up paddleboarding."}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "No News is Good News Day"}, urls: {"en": "https://www.daysoftheyear.com/days/no-news-is-good-news-day/"}, first: {era: 1, y: 2021}, emoji: "📰"},
+        {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Emergency Responders Day"}, urls: {"en": "https://www.checkiday.com/54d9b4cbd5c8a313c72d3a8d65bf38cf/national-emergency-responders-day"}, first: {era: 1, y: 2011}, emoji: "🚔"},
+        {type: "D", start: {mon: 9, d: 11}, titles: {"en": "Women’s Baseball Day"}, urls: {"en": "https://www.checkiday.com/6a586e079c3116241496a76c81af697c/womens-baseball-day"}, first: {era: 1, y: 2010}, emoji: "⚾"},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "National Chocolate Milkshake Day", "he": "יום המילקשייק שוקולד הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-milkshake-day/"}},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "National Police Woman Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-police-woman-day/"}, emoji: "👮‍♀️"},
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "National Video Games Day", "he": "יום משחקי הוידאו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/video-games-day/"}, emoji: "👾"},
