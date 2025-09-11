@@ -2008,6 +2008,7 @@
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "Anne Bradstreet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/anne-bradstreet-day/"}, notes: {"en": "Bradstreet Day\nBradstreet’s Anniversary\nNational Anne Bradstreet Day"}, first: {era: 1, y: 1672}, inherits: "*DeathAnniv*"},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Cinnamon Raisin Bread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cinnamon-raisin-bread-day/"}, notes: {"en": "National Cinnamon-Raisin Bread Day"}, emoji: "🍞"},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Guacamole Day", "he": "יום הגואקמולי הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/guacamole-day/"}, emoji: "🥑"},
+        {type: "D", start: {mon: 9, d: 10}, titles: {"en": "International Canned Cocktail Day"}, urls: {"en": "https://www.splashmags.com/2024/09/international-canned-cocktail-day/"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "Mayflower Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mayflower-day/"}},
         {type: "D", start: {mon: 9, d: 17}, titles: {"en": "National Arielle K. Sterrett Day"}, urls: {"en": "https://nationaltoday.com/national-arielle-k-sterrett-day/"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 9, d: 17}, titles: {"en": "National Monte Cristo Sandwich Day"}},
