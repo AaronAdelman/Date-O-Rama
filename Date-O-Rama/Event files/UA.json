@@ -85,7 +85,7 @@
         {inherits: "Knowledge Day", type: "D", start: {"mon": 9, d: 1}},
         {titles: {"en": "Eastern Rite Ecclesiastical New Year"}, type: "D", start: {"mon": 9, d: 1}},
         {inherits: "Nativity of Mary", type: "D", start: {"mon": 9, d: 8}},
-        {inherits: "Feast of the Cross", type: "D", start: {"mon": 9, d: 14}},
+        {inherits: "Feast of the Exaltation of the Holy Cross", type: "D", start: {"mon": 9, d: 14}},
         {titles: {"en": "Adoption Day"}, type: "D", start: {"mon": 9, d: 17}},
         {titles: {"en": "All-Ukrainian Day of Libraries"}, type: "D", start: {"mon": 9, d: 30}},
         {inherits: "Intercession of the Theotokos", type: "D", start: {mon: 10, d: 1}},

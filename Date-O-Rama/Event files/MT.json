@@ -46,7 +46,7 @@
 
         {inherits: "Feast of St. Joseph the Worker", type: "D", start: {mon: 5, d: 1}},
         {type: "D", start: {mon: 5, d: 2}, titles: {"en": "Feast of Our Lady of Liesse", "mt": "Il-Madonna ta’ Liesse"}},
-        {type: "D", start: {mon: 5, d: 3}, inherits: "Feast of the Cross"},
+        {type: "D", start: {mon: 5, d: 3}, titles: {"en": "Feast of the Cross", "mt": "Santu Kruċ"}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "Feast of St. Augustine", "mt": "Santu Wistin"}},
         {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Feast of St. George Preca", "mt": "San Ġorġ Preca"}},
         {type: "D", start: {mon: 5, d: 31}, titles: {"en": "Feast of the Holy Trinity", "mt": "Trinità Mqaddsa"}},

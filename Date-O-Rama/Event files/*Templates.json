@@ -229,7 +229,6 @@
         {template: "Feast of St. Vincent", titles: {"en": "Feast of St. Vincent"}, type: "D", start: {mon: 1, d: 22}},
         {template: "Feast of St. Vladimir", titles: {"en": "Feast of St. Vladimir"}, type: "D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/baptism-day-of-kyivan-rus/"}},
         {template: "Feast of the Annunciation", titles: {"en": "Feast of the Annunciation", "ar": "عيد البشارة", "el": "Ο Ευαγγελισμός της Θεοτόκου", "fr": "Fête de l’Annonciation", "mt": "Il-Lunzjata"}, type: "D", start: {mon: 3, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/feast-of-the-annunciation/"}},
-        {template: "Feast of the Cross", type: "D", start: {mon: 5, d: 3}, titles: {"en": "Feast of the Cross", "mt": "Santu Kruċ"}},
         {template: "Feast of the Exaltation of the Holy Cross", titles: {"en": "Feast of the Exaltation of the Holy Cross", "he": "חג הצלב", "am": "መስቀል", "om": "Masqalaa"}, type: "D", start: {mon: 9, d: 14}, notes: {"en": "Exaltation of the Holy Cross\nMeskel\nFeast of the Holy Cross\nFeast of the Cross"}, urls: {"en": "https://www.daysoftheyear.com/days/feast-of-the-exaltation-of-the-holy-cross/"}},
         {template: "Feast of the Holy Family", titles: {"en": "Feast of the Holy Family", "he": "חג המשפחה הקדושה"}, type: "D", start: {mon: 12, d: 30, wkd: [6]}},
         {template: "Feast of the Immaculate Conception (in lieu)", titles: {"en": "Feast of the Immaculate Conception (in lieu)"}, type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Feast of the Immaculate Conception"},

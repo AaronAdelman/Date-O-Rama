@@ -30,14 +30,14 @@
 
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Engineer’s Day"},
-        {inherits: "Independence Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 1877}, titles: {"en": "State Independence Day of Romania", "ro": "Ziua Independenței de Stat a României"}},
+        {type: "D", start: {mon: 5, d: 9}, inherits: "Independence Day", first: {era: 1, y: 1877}, titles: {"en": "State Independence Day of Romania", "ro": "Ziua Independenței de Stat a României"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Navy Day"},
 
-        {type: "D", start: {mon: 2, d: 19}, urls: {"en": "https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, titles: {"en": "Constantin Brâncuși Day"}, first: {era: 1, y: 2015}, notes: {"en": "Brâncuși Day\nConstantin Brancusi Day"}},
-        {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/dragobete/"}, titles: {"en": "Dragobete"}},
-        {type: "D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/flag-day-of-romania/"}, inherits: "Flag Day", first: {era: 1, y: 1998}},
-        {inherits: "Romanian Language Day", type: "D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Constantin Brâncuși Day"}, urls: {"en": "https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, first: {era: 1, y: 2015}, notes: {"en": "Brâncuși Day\nConstantin Brancusi Day"}},
+        {type: "D", start: {mon: 2, d: 24}, titles: {"en": "Dragobete"}, urls: {"en": "https://nationaltoday.com/dragobete/"}},
+        {type: "D", start: {mon: 6, d: 26}, inherits: "Flag Day", urls: {"en": "https://nationaltoday.com/flag-day-of-romania/"}, first: {era: 1, y: 1998}},
+        {type: "D", start: {mon: 8, d: 31}, inherits: "Romanian Language Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         
         {type: "D", start: {mon: 1, d: 15}, titles: {"en": "National Culture Day"}},
@@ -108,7 +108,6 @@
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Danube Delta Biosphere Reserve Day"}},
         {type: "D", start: {mon: 9, d: 10}, inherits: "World Suicide Prevention Day", first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 9, d: 13}, titles: {"en": "Firefighters of Romania’s Day"}, emoji: "👨‍🚒👩‍🚒"},
-        {type: "D", start: {mon: 9, d: 14}, titles: {"en": "Romanian Engineer’s Day"}, inherits: "Engineer’s Day"},
         {inherits: "International Day of Democracy", type: "D", start: {mon: 9, d: 15}, first: {era: 1, y: 2008}},
         {inherits: "International Day of Peace", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1982}},
         {type: "D", start: {mon: 9, d: 28}, titles: {"en": "Czech Language Day"}},
