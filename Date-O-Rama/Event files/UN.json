@@ -198,7 +198,7 @@
         {titles: {"en": "World Philosophy Day", "he": "יום הפילוסופיה העולמי"}, type: "D", start: {mon: 11, wkd: [5], nth: 3}, first: {era: 1, y: 2006}, emoji: "👤", urls: {"en": "https://www.daysoftheyear.com/days/world-philosophy-day/"}},
         {titles: {"en": "International Day of Islamic Art", "he": "היום הבינלאומי לאמנות האסלאמית"}, type: "D", start: {mon: 11, d: 18}, first: {era: 1, y: 2020}, emoji: "☪️"},
         {titles: {"en": "World Toilet Day", "he": "יום השירותים העולמי"}, type: "D", start: {mon: 11, d: 19}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/world-toilet-day/"}},
-        {inherits: "Africa Industrialization Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 2018}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Africa Industrialization Day", first: {era: 1, y: 2018}},
         {inherits: "World Day of Remembrance for Road Traffic Victims", type: "D", start: {mon: 11, wkd: [1], nth: 3}, first: {era: 1, y: 2006}},
         {titles: {"en": "World Television Day", "he": "יום הטלוויזיה העולמי"}, type: "D", start: {mon: 11, d: 21}, first: {era: 1, y: 1997}, urls: {"en": "https://www.daysoftheyear.com/days/world-television-day/"}, emoji: "📺"},
         {inherits: "International Day for the Elimination of Violence Against Women", type: "D", start: {mon: 11, d: 25}, first: {era: 1, y: 2000}},

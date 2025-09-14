@@ -1985,19 +1985,14 @@
         {type: "D", start: {mon: 9, d: 13}, titles: {"en": "National Scooby-Doo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-scooby-doo-day/"}, first: {era: 1, y: 1969}},
         {type: "D", start: {mon: 9, d: 14}, titles: {"en": "National Food Is Medicine Day", "he": "יום ״אוכל זה רפואה״ הלאומי"}, urls: {"en": "https://nationaltoday.com/national-food-is-medicine-day/"}},
         {type: "D", start: {mon: 9, d: 14}, titles: {"en": "National Rosa Tequila Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-rosa-tequila-day/"}, first: {era: 1, y: 2022}, emoji: "🍸", notes: {"en": "Created by Calirosa Tequila."}},
-        {type: "D", start: {mon: 9, d: 14}, titles: {"en": "National Live Creative Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-live-creative-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by Creative Promotional Products."}},
         {type: "D", start: {mon: 9, d: 14}, titles: {"en": "National Cream Filled Donut Day", "he": "יום הסופגניה במילוי קרם לאומי"}, notes: {"en": "National Cream-Filled Donut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cream-filled-doughnut-day/"}},
         {type: "D", start: {mon: 9, d: 14}, titles: {"en": "National Eat a Hoagie Day", "he": "יום ״אכול כריך סאב״"}, urls: {"en": "https://www.daysoftheyear.com/days/eat-a-hoagie-day/"}},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Africa Civility Day"}, urls: {"en": "https://nationaltoday.com/national-africa-civility-day/"}, emoji: "🌍"},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Cheese Toast Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-toast-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Crème de Menthe Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-creme-de-menthe-day/"}, notes: {"en": "National Creme de Menthe Day"}, emoji: "🥃"},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Double Cheeseburger Day"}, urls: {"en": "https://www.daysoftheyear.com/days/double-cheeseburger-day/"}, emoji: "🍔"},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Felt Hat Day"}, notes: {"en": "As if we needed another excuse to look ridiculous in old-timey hats."}},
+        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Felt Hat Day"}, notes: {"en": "As if we needed another excuse to look ridiculous in old-timey hats."}, urls: {"en": "https://www.daysoftheyear.com/days/felt-hat-day/"}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Linguine Day"}, urls: {"en": "https://www.daysoftheyear.com/days/linguine-day/"}, emoji: "🍜"},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Custom Framing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-custom-framing-day/"}, first: {era: 1, y: 2021}, emoji: "🖼️"},
+        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Custom Framing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-custom-framing-day/"}, first: {era: 1, y: 2021}, emoji: "🖼️", notes: {"en": "Created by Roma Moulding."}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Google.com Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-google-com-day/"}, first: {era: 1, y: 1997}, emoji: "🔍"},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "National Online Learning Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-online-learning-day/"}, first: {era: 1, y: 2016}, emoji: "👨‍💻👩‍💻"},
-        {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Neonatal Nurses Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-neonatal-nurses-day-september-15"}, notes: {"en": "National Neonatal Nurses Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Choose Your Chocolate Day", "he": "יום ״בחר את השוקולד שלך״ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-choose-your-chocolate-day/"}, inherits: "*Chocolate*", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Play-Doh Day"}, urls: {"en": "https://www.daysoftheyear.com/days/play-doh-day/"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Stepfamily Day"}, urls: {"en": "https://www.daysoftheyear.com/days/stepfamily-day/"}, first: {era: 1, y: 1997}},
@@ -2296,7 +2291,7 @@
         {type: "nD", start: {mon: 9, d: 12}, end: {mon: 10, d: 12}, titles: {"en": "National Drive Electric Month"}, urls: {"en": "https://driveelectricmonth.org/"}, first: {era: 1, y: 2025}, emoji: "⚡", notes: {"en": "Created by Plug In America."}},
         {type: "W", start: {mon: 9, fullWk: 2}, titles: {"en": "National Assisted Living Week"}, urls: {"en": "https://www.ahcancal.org/Education-Events/Pages/NALW.aspx"}, first: {era: 1, y: 1995}, emoji: "👴👵", notes: {"en": "Created by the National Center for Assisted Living (NCAL)."}},
         {type: "W", start: {mon: 9, fullWk: 2}, titles: {"en": "Biscuits and Gravy Week"}, urls: {"en": "https://www.daysoftheyear.com/days/biscuits-and-gravy-week/"}},
-        {type: "nD", start: {mon: 9, d: 9, thruD: 15, wkd: [7], durationD: 7}, titles: {"en": "Neonatal Nurses Week"}, urls: {"en": "https://nann.org/about/national-neonatal-nurses-week"}, notes: {"en": "National Neonatal Nurses Week"}, emoji: "♥️", first: {era: 1, y: 2019}, notes: {"en": "Created by the National Association of Neonatal Nurses."}},
+        {type: "D", start: {mon: 9, d: 15}, inherits: "Neonatal Nurses Day", first: {era: 1, y: 2000}, last: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 9, wkd: [1], d: 8, thruD: 14, durationD: 7}, titles: {"en": "Grandparents Week"}, inherits: "Grandparents’ Day", urls: {"en": "https://grandparentsday.org/"}},
         {type: "W", start: {mon: 1, fullWk: 3}, titles: {"en": "National Fresh Squeezed Juice Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-week/"}, emoji: "🍹"},
         {type: "W", start: {mon: 10, fullWk: -1, firstDOfWk: 2}, titles: {"en": "National Temperature Check Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-temperature-check-week/"}, first: {era: 1, y: 2020}, inherits: "*MedAwareness*", emoji: "🌡️"},
@@ -2382,7 +2377,7 @@
         {type: "W", start: {mon: 8, fullWk: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-exercise-with-your-child-week/"}, titles: {"en": "National Exercise With Your Child Week"}, emoji: "🥏", first: {era: 1, y: 2010}},
         {type: "W", start: {mon: 8, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Bargain Hunting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bargain-hunting-week/"}, emoji: "🛒🛍️", first: {era: 1, y: 1996}},
         {type: "W", start: {mon: 9, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Biscuit and Gravy Week"}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-biscuits-and-gravy-week-second-week-in-september"}},
-        {type: "W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, titles: {"en": "National Parent Teacher Home Visits Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-parent-teacher-home-visits-week/"}, notes: {"en": "National PTHV Week"}, first: {era: 1, y: 2022}},
+        {type: "W", start: {mon: 9, fullWk: 3, firstDOfWk: 2}, titles: {"en": "National PTHV Week"}, notes: {"en": "National Parent Teacher Home Visits Week\nPTHV Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-parent-teacher-home-visits-week/"}, first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 9, d: 13, thruD: 19, wkd: [1], durationD: 7}, titles: {"en": "National Forensic Science Week"}, urls: {"en": "https://www.ascld.org/national-forensic-science-week/"}, first: {era: 1, y: 2013}, emoji: "🕵️‍♂️🕵️‍♀️"},
         {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Singles Week"}, first: {era: 1, y: 1980}, notes: {"en": "An observance which seems to trying to put a positive spin on a non-ideal situation."}},
         {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Indoor Plant Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-indoor-plant-week/"}, first: {era: 1, y: 2007}, emoji: "🪴"},
@@ -2440,6 +2435,10 @@
             {type: "D", start: {mon: 9, d: 2}, titles: {"en": "National Blueberry Popsicle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blueberry-popsicle-day/"}, emoji: "🫐"},
         ]},
         
+        {type: "nD", start: {mon: 9, d: 9, thruD: 15, wkd: [7], durationD: 7}, titles: {"en": "Neonatal Nurses Week"}, urls: {"en": "https://nann.org/about/national-neonatal-nurses-week"}, notes: {"en": "National Neonatal Nurses Week"}, emoji: "♥️", first: {era: 1, y: 2019}, notes: {"en": "Created by the National Association of Neonatal Nurses."}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 9, d: 15}, inherits: "Neonatal Nurses Day"},
+        ]},
+        
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
@@ -2482,5 +2481,6 @@
         {template: "National Model Aviation Day", type: "D", start: {mon: 8, wkd: [7], nth: 3}, titles: {"en": "National Model Aviation Day"}, urls: {"en": "https://www.checkiday.com/ac42e6821b3834aaed47e3156548c292/national-model-aviation-day"}, emoji: "🛩️"},
         {template: "Bunks Across America", type: "D", start: {mon: 9, wkd: [7], nth: 2}, titles: {"en": "Bunks Across America"}, urls: {"en": "https://shpbeds.org/bunks-across-america/"}, notes: {"en": "Created by Luke Mickelson."}, emoji: "🛏️"},
         {template: "Day of Silence", type: "D", start: {mon: 4, wkd: [6], nth: 2}, titles: {"en": "Day of Silence", "ko": "침묵의 날", "ru": "День молчания", "uk": "День мовчання", "es": "Día del Silencio", "eo": "Tago de Silento", "pl": "Dzień Milczenia", "sv": "Day of Silence", "cs": "Den mlčení", "he": "יום השתיקה", "hy": "Լռության օր"}},
+        {template: "Neonatal Nurses Day", type: "D", start: {mon: 9, d: 15}, titles: {"en": "Neonatal Nurses Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-neonatal-nurses-day-september-15"}, notes: {"en": "National Neonatal Nurses Day\nCreated by the National Association of Neonatal Nurses."}, emoji: "👨‍⚕️👩‍⚕️"},
     ]
 }
