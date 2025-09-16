@@ -167,7 +167,7 @@
         {type: "D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en": "https://www.daysoftheyear.com/days/burger-day/"}, titles: {"en": "Burger Day", "he": "יום ההמבורגר"}, notes: {"en": "National Burger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
         {type: "D", start: {mon: 8, d: 3}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/"}},
         {type: "D", start: {mon: 8, wkd: [5], nth: 1}, titles: {"en": "Cycle to Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cycle-to-work-day/"}, emoji: "🚲", first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 8, d: 31}, titles: {"en": "IRONMAN Wales "}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿", urls: {"en": "https://www.daysoftheyear.com/days/ironman-wales/"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 8, d: 31}, titles: {"en": "IRONMAN Wales "}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿", urls: {"en": "https://www.daysoftheyear.com/days/ironman-wales/"}, first: {era: 1, y: 2010}, notes: {"en": "Created by the IRONMAN Group"}},
         {type: "D", start: {mon: 8, d: 31}, titles: {"en": "National Zoo Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-zoo-awareness-day/"}, emoji: "🦓", first: {era: 1, y: 1982}},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Scottish Wildcat Day"}, urls: {"en": "https://www.daysoftheyear.com/days/scottish-wildcat-day/"}, notes: {"en": "Wildcat Day\nHighland Tiger Day"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"},
         {type: "D", start: {mon: 8, wkd: [2], nth: -1}, titles: {"en": "Gravy Wrestling Championship"}, notes: {"en": "A stupid waste of food in bad taste."}, first: {era: 1, y: 2007}},

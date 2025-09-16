@@ -278,7 +278,7 @@
         {titles: {"en": "Sexagesima"}, type: "D", start: {Easter:  "Easter", offsetD: -56}},
         {inherits: "Fat Thursday", type: "D", start: {Easter:  "Easter", offsetD: -52}},
         {titles: {"en": "Quinquagesima"}, type: "D", start: {Easter:  "Easter", offsetD: -49}},
-        {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Shrove Monday"},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {titles: {"en": "Lent (day 2)"}, type: "D", start: {Easter:  "Easter", offsetD: -45}},

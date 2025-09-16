@@ -8,8 +8,8 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Armenia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "Christmas Day", type: "D", start: {mon: 1, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},
+        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/armenia/international-new-years-day"}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Christmas Day", urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {type: "D", start: {mon: 1, d: 28}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-national-army-day"}, notes: {"en": "National Army Day"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -20,7 +20,7 @@
         {inherits: "Republic Day", type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-day-first-republic"}, notes: {"en": "Day of the First Republic"}, first: {era: 1, y: 1918}},
         {inherits: "Constitution Day", type: "D", start: {mon: 7, d: 5}, first: {era: 1, y: 1995}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-constitution-day"}},
         {type: "D", start: {mon: 9, d: 12, thruD: 18, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-exaltation-of-the-holy-cross"}, inherits: "Feast of the Exaltation of the Holy Cross"},
-        {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/armenia-independence-day/"}, first: {era: 1, y: 1991}},
+        {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/independence-day-in-armenia/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {inherits: "International Mother Language Day", type: "D", start: {mon: 2, d: 21}, first: {era: 1, y: 2000}},

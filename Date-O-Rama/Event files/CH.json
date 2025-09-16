@@ -43,7 +43,7 @@
         
         {inherits: "Carnival", type: "D", start: {Easter:  "Easter", offsetD: -55}, locations: {"en": "Schwyz"}},
         {inherits: "Fat Thursday", type: "D", start: {Easter:  "Easter", offsetD: -52}},
-        {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Shrove Monday"},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {titles: {"en": "Lent (day 3)"}, type: "D", start: {Easter:  "Easter", offsetD: -44}},

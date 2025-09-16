@@ -43,7 +43,7 @@
         {titles: {"en": "Remembrance of 17 June"}, type: "D", start: {mon: 6, d: 17}, first: {era: 1, y: 1990}},
         {inherits: "World Refugee Day", type: "D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},
         {titles: {"en": "Remembrance of 20 July"}, type: "D", start: {mon: 7, d: 20}},
-        {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}, urls: {"en": "https://en.wikipedia.org/wiki/Rosenmontag"}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Shrove Monday", urls: {"en": "https://en.wikipedia.org/wiki/Rosenmontag"}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},

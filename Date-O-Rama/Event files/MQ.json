@@ -24,7 +24,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/whit-monday-martinique/"}},
         {type: "D", start: {mon: 7, d: 21}, inherits: "Abolition Day", titles: {"en": "Schoelcher Day", "fr": "Fête Victor Schœlcher"}},
-        {inherits: "Shrove Monday", type: "D", start: {Easter:  "Easter", offsetD: -48}},
+        {type: "D", start: {Easter:  "Easter", offsetD: -48}, inherits: "Shrove Monday"},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {Easter:  "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {inherits: "Mid-Lent", type: "D", start: {Easter:  "Easter", offsetD: -31}},
