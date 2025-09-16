@@ -8,7 +8,7 @@
 
 import Foundation
 import Combine
-import SwiftUICore
+import SwiftUI
 
 class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
     var id = UUID()

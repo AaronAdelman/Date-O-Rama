@@ -6,7 +6,7 @@
 //  Copyright © 2024 Adelsoft. All rights reserved.
 //
 
-import SwiftUICore
+import SwiftUI
 import UIKit
 
 
