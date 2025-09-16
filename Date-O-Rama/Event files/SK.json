@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 7, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"}, inherits: "Saints Cyril and Methodius", first: {era: 1, y: 863}},
         {type: "D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-uprising-day/"}, titles: {"en": "Slovak National Uprising Day", "sk": "Výročie Slovenského národného povstania"}, first: {era: 1, y: 1944}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Day of the Constitution of the Slovak Republic", "sk": "Deň Ústavy Slovenskej republiky"}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/slovakia-constitution-day/"}, first: {era: 1, y: 1992}},
-        {type: "D", start: {mon: 9, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/day-of-our-lady-of-sorrows"}, inherits: "Our Lady of Sorrows"},
+        {type: "D", start: {mon: 9, d: 15}, inherits: "Our Lady of Sorrows", urls: {"en": "https://www.officeholidays.com/holidays/slovakia/day-of-our-lady-of-sorrows"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, inherits: "Struggle for Freedom and Democracy Day", notes: {"en": "Day of Freedom and Democracy"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},

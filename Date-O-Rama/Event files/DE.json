@@ -22,7 +22,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {type: "D", start: {mon: 9, d: 20}, inherits: "World Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/german-world-childrens-day/"}, notes: {"en": "German World Children’s Day"}, first: {era: 1, y: 1954}},
+        {type: "D", start: {mon: 9, d: 20}, inherits: "World Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/german-world-childrens-day/"}, first: {era: 1, y: 1954}},
         {type: "D", start: {mon: 10, d: 3}, inherits: "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/national-unity-day/"}, titles: {"en": "German Unity Day", "he": "יום האחדות הגרמנית", "de": "Tag der Deutschen Einheit"}},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Reformation Day", first: {era: 1, y: 1717}, urls: {"en": "https://www.officeholidays.com/holidays/germany/reformation-day"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},

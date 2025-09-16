@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Feast of Our Lady of the Good Voyage", "pt": "Nossa Senhora da Boa Viagem"}},
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "Emancipation of Campo Grande"}},
         {type: "D", start: {mon: 9, d: 8}, titles: {"en": "Feast of Our Lady of the Light in the Pine", "pt": "Nossa Senhora da Luz dos Pinhais"}},
-        {type: "D", start: {mon: 9, d: 20}, titles: {"en": "Farroupilha’s Revolution", "pt": "Revolução Farroupilha"}},
+        {type: "D", start: {mon: 9, d: 20}, titles: {"en": "Farroupilha’s Revolution", "pt": "Revolução Farroupilha"}, notes: {"en": "Ragamuffin War Anniversary"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Creation of the State of Mato Grosso do Sul"}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "Uruaçú and Cunhaú Martyrs Day"}},
         {type: "D", start: {mon: 10, d: 24}, titles: {"en": "Founding of Goiânia"}},

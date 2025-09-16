@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 2}, titles: {"en": "Virgin of Los Angeles Day", "es": "Fiesta de Nuestra Señora de los Ángeles"}, notes: {"en": "Feast of Our Lady of the Angels"}, urls: {"en": "https://nationaltoday.com/virgin-of-los-angeles-day/"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, titles: {"en": "Day of the Black Person and Afro-Costa Rican Culture"}, urls: {"en": "https://www.officeholidays.com/holidays/costa-rica/day-of-the-black-person-and-afro-costa-rican-culture"}},
-        {inherits: "Independence Day", type: "D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/costa-rica-independence-day/"}},
+        {type: "D", start: {mon: 9, d: 15}, inherits: "Independence Day", first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/costa-rica-independence-day/"}},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Army Abolition Day", "es": "Día de la Abolición del Ejército"}, first: {era: 1, y: 1948}, urls: {"en": "https://www.officeholidays.com/holidays/costa-rica/army-abolition-day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
