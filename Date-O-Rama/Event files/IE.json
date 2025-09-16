@@ -45,7 +45,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/irish-heart-month/"}, titles: {"en": "Irish Heart Month"}, inherits: "*MedAwareness*", emoji: "🫀"},
         {type: "D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/shine-a-light-night/"}, titles: {"en": "Shine a Light Night"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/light-up-a-life/"}, titles: {"en": "Light Up a Life"}, first: {era: 1, y: 1996}, emoji: "🎄"},

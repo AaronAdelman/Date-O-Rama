@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Republic Day", type: "D", start: {mon: 6, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/republic-day-italy/"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day", urls: {"en": "https://www.daysoftheyear.com/days/feast-of-san-giovanni/"}},
-        {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/italy/rome/the-feast-of-st-peter-and-st-paul"}, inherits: "Feast of Saints Peter and Paul"},
+        {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/italy/rome/the-feast-of-st-peter-and-st-paul"}, inherits: "Saints Peter and Paul"},
         {inherits: "St. Rosalia", type: "nD", start: {mon: 7, d: 10}, end: {mon: 7, d: 15}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/italy/ferragosto"}, titles: {"en": "Ferragosto"}},
@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/feast-of-st-giusto/"}, titles: {"en": "Feast of St. Giusto"}, first: {era: 1, y: 293}},
         {type: "D", start: {mon: 12, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/italy/bari/feast-of-st-nicholas"}, inherits: "St. Nicholas Day"},
         {inherits: "St. Ambrose", type: "D", start: {mon: 12, d: 7}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day", first: {era: 1, y: 1947}},
         

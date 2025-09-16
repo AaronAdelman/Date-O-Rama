@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {mon: 9, d: 14}, inherits: "Feast of the Exaltation of the Holy Cross"},
+        {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
 
     ]
 }

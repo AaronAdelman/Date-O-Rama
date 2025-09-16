@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "Aviation and Air Force Day"}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 8, wkd: [1], nth: 2}, inherits: "Navy Day"},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Day of Remembrance and Respect to Victims of the Communist Regime"}, urls: {"en": "https://nationaltoday.com/day-of-remembrance-and-respect-to-victims-of-the-communist-regime/"}},
-        {type: "D", start: {mon: 7, d: 5}, inherits: "Feast of Saints Cyril and Methodius"},
+        {type: "D", start: {mon: 7, d: 5}, inherits: "Saints Cyril and Methodius"},
         {type: "nD", start: {mon: 12, d: 3, thruD: 8, wkd: [7], durationD: 2}, titles: {"en": "Rakia & Spirits Fest Sofia"}, notes: {"en": "Rakia and Spirits Festival"}, urls: {"en": "https://balkanrakiafest.com"}, first: {era: 1, y: 2013}, emoji: "🥃"},
         {type: "nD", start: {mon: 1, d: 13}, end: {mon: 1, d: 14}, titles: {"en": "Surova Folk Feast"}, notes: {"en": "Survakari\nSurva\nSurova\nSirova"}, urls: {"en": "https://survakari.com/en/"}},
         {type: "nD", start: {mon: 1, d: 21, thruD: 27, wkd: [6], durationD: 3}, titles: {"en": "Surva Mummers Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/surva-mummers-festival/"}, first: {era: 1, y: 1966}},

@@ -20,7 +20,7 @@
         {type: "D", start: {Easter:  "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "Father’s Day", type: "D", start: {mon: 7, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/fathers-day"}},
         {type: "D", start: {mon: 8, d: 16}, inherits: "Restoration Day", urls: {"en": "https://nationaltoday.com/restoration-day-dominican-republic/"}},
-        {type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}, inherits: "Feast of Our Lady of Mercy"},
+        {type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}, inherits: "Our Lady of Mercy"},
         {type: "D", start: {mon: 11, d: 3, thruD: 9, wkd: [2]}, urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, inherits: "Constitution Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 

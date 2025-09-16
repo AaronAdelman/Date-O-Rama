@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 10, d: 8}, titles: {"en": "Day of the Croatian Parliament", "hr": "Dan Hrvatskoga sabora"}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "Feast of St. Dominus", "hr": "Sveti Duje"}},
-        {type: "D", start: {mon: 2, d: 3}, inherits: "Feast of St. Blaise", first: {era: 1, y: 972}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "St. Blaise", first: {era: 1, y: 972}},
 
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},

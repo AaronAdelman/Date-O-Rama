@@ -17,7 +17,7 @@
         {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", urls: {"en": "https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
+        {type: "D", start: {mon: 9, d: 5}, inherits: "St. Teresa of Calcutta", urls: {"en": "https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1912}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-independence-day/"}},
         {type: "D", start: {mon: 11, d: 29}, inherits: "Liberation Day", first: {era: 1, y: 1944}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-liberation-day/"}},
         {type: "D", start: {mon: 8, d: 12}, inherits: "National Youth Day", first: {era: 1, y: 2010}},
@@ -41,5 +41,10 @@
         {type: "D", start: {mon: 10, d: 17, thruD: 23, wkd: [1]}, titles: {"en": "Tirana Marathon"}, urls: {"en": "https://www.daysoftheyear.com/days/tirana-marathon/"}, first: {era: 1, y: 2016}},
         
         {type: "nD", start: {era: 1, y: 2025, mon: 5, d: 15, durationD: 2}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/albania/albania-epc-summit"}},
+        {type: "W", start: {mon: 9, fullWk: -1, firstDOfWk: 7}, inherits: "Tirana International Film Festival", first: {era: 1, y: 2003}, last: {era: 1, y: 2023}},
+        {type: "W", start: {mon: 9, fullWk: -1}, inherits: "Tirana International Film Festival", first: {era: 1, y: 2024}},
+    ],
+    templates: [
+        {template: "Tirana International Film Festival", type: "W", start: {mon: 9, fullWk: -1, firstDOfWk: 7}, titles: {"en": "Tirana International Film Festival"}, notes: {"en": "TIFF"}, urls: {"en": "https://tiranafilmfest.org/"}, emoji: "📽️"}
     ]
 }

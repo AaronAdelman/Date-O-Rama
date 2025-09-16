@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 8}, inherits: "Victory Day", urls: {"en": "https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, notes: {"en": "Feast of Our Lady of Victories"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/malta-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/malta-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
@@ -30,10 +30,10 @@
         {inherits: "Conversion of St. Paul", type: "D", start: {mon: 1, d: 25}},
         
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
-        {type: "D", start: {mon: 2, d: 3}, inherits: "Feast of St. Blaise", first: {era: 1, y: 972}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "St. Blaise", first: {era: 1, y: 972}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         
-        {type: "D", start: {mon: 3, d: 25}, inherits: "Feast of the Annunciation"},
+        {type: "D", start: {mon: 3, d: 25}, inherits: "the Annunciation"},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Feast of Jesus of Nazareth", "mt": "Ġesù Nazzarenu"}},
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
@@ -81,11 +81,11 @@
         {inherits: "Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 5}, first: {era: 1, y: 1726}, locations: {"en": "Qrendi and Fleur-de-Lys"}},
         {inherits: "Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 12}, first: {era: 1, y: 1726}, locations: {"en": "Fgura"}},
         {inherits: "Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 13}, first: {era: 1, y: 1726}, locations: {"en": "Gżira"}},
-        {type: "D", start: {mon: 7, d: 16}, inherits: "Feast of Our Lady of Mount Carmel", first: {era: 1, y: 1726}},
+        {type: "D", start: {mon: 7, d: 16}, inherits: "Our Lady of Mount Carmel", first: {era: 1, y: 1726}},
         {inherits: "Our Lady of Mount Carmel", type: "D", start: {mon: 7, d: 19}, first: {era: 1, y: 1726}, locations: {"en": "Mdina and Birkirkara"}},
         {inherits: "Our Lady of Sorrows", type: "D", start: {mon: 7, d: 20}, locations: {"en": "San Pawl Il-Baħar"}},
         {inherits: "Our Lady of Sorrows", type: "D", start: {mon: 7, d: 26}, locations: {"en": "Balluta Bay"}},
-        {type: "D", start: {mon: 7, d: 26}, inherits: "Feast of St. Anne"},
+        {type: "D", start: {mon: 7, d: 26}, inherits: "St. Anne"},
         {inherits: "St. Joseph’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 2}, locations: {"en": "Kirkop"}},
         {inherits: "Annunciation", type: "D", start: {mon: 7, wkd: [1], nth: 2}, locations: {"en": "Balzan"}},
         {inherits: "St. George’s Day", type: "D", start: {mon: 7, wkd: [1], nth: 3}, locations: {"en": "Victoria"}},
@@ -96,7 +96,7 @@
         {inherits: "Christ the King", type: "D", start: {mon: 7, wkd: [1], nth: -1}, locations: {"en": "Paola"}},
 
         {titles: {"en": "Feast of St. Peter in Chains", "mt": "San Pietru fil-Ktajjen"}, type: "D", start: {mon: 8, wkd: [1], nth: 1}},
-        {type: "D", start: {mon: 8, d: 10}, inherits: "Feast of St. Lawrence"},
+        {type: "D", start: {mon: 8, d: 10}, inherits: "St. Lawrence"},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en": "St. Gaetan", "mt": "San Gejtanu"}},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Feast of the Seven St. Marys", "mt": "Is-Seba’ Santa Marijiet"}},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "Feast of St. Roque", "mt": "Santu Rokku"}},
@@ -111,9 +111,9 @@
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Feast of the Name of Mary", "mt": "L-Isem ta’ Marija"}},
 
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
-        {type: "D", start: {mon: 11, d: 11}, inherits: "Feast of St. Martin of Tours"},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "St. Martin of Tours"},
         {inherits: "St. Cecilia", type: "D", start: {mon: 11, d: 22}},
-        {type: "D", start: {mon: 11, d: 25}, inherits: "Feast of St. Catherine of Alexandria"},
+        {type: "D", start: {mon: 11, d: 25}, inherits: "St. Catherine of Alexandria"},
         {inherits: "Christ the King", type: "D", start: {mon: 11, d: 26, thruMon: 12, thruD: 2, wkd: [1]}},
 
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

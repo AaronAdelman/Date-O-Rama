@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 9, d: 3}, titles: {"en": "Foundation Day"}, urls: {"en": "https://nationaltoday.com/foundation-day-in-san-marino/"}, first: {era: 1, y: 301}, notes: {"en": "Feast of St. Marinus and the Republic"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/san-marino/all-souls-day"}, titles: {"en": "Commemoration of the Dead"}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

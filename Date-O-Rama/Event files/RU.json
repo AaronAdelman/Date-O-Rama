@@ -68,7 +68,7 @@
         {type: "D", start: {mon: 4, d: 27}, titles: {"en": "Day of Russian Parliamentarism", "ru": "День российского парламентаризма"}},
         {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Russian State Fire Service Day"}},
         {type: "D", start: {mon: 4, wkd: [1], nth: 2}, titles: {"en": "Soviet Air Defense Forces Day"}},
-        {type: "D", start: {mon: 5, d: 24}, inherits: "Feast of Saints Cyril and Methodius"},
+        {type: "D", start: {mon: 5, d: 24}, inherits: "Saints Cyril and Methodius"},
         {type: "D", start: {mon: 5, d: 28}, inherits: "Border Guards Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 5, d: 7}, inherits: "Radio Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", first: {era: 1, y: 1949}},

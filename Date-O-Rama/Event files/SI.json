@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 3, d: 7}, inherits: "National Maritime Day", titles: {"en": "Slovenian Maritime Day"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 4, d: 23}, inherits: "St. George’s Day"},
-        {type: "D", start: {mon: 11, d: 11}, inherits: "Feast of St. Martin of Tours"},
+        {type: "D", start: {mon: 11, d: 11}, inherits: "St. Martin of Tours"},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {type: "D", start: {mon: 7, d: 22}, titles: {"en": "Insurrection Day", "sl": "dan vstaje"}},
         {type: "D", start: {mon: 9, wkd: [1], nth: 3}, titles: {"en": "Cow’s Ball", "sl": "Kravji Bal"}, first: {era: 1, y: 1950}, emoji: "🐄", urls: {"en": "https://www.daysoftheyear.com/days/cows-ball/"}},

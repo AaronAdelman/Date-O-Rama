@@ -89,7 +89,7 @@
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, titles: {"en": "Western Australia Day"}, urls: {"en": "https://nationaltoday.com/western-australia-day/"}},
         {type: "D", start: {mon: 6, wkd: [2], nth: 2}, inherits: "King’s Birthday", locations: {"en": "Australian Capital Territory, New South Wales, South Australia, Tasmania, and Victoria"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/australia/australia-kings-birthday"}},
         {type: "D", start: {mon: 7, d: 21}, titles: {"en": "National Lamington Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lamington-day/"}, first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 7, d: 25}, inherits: "Feast of St. James", urls: {"en": "https://nationaltoday.com/st-james-tg/"}},
+        {type: "D", start: {mon: 7, d: 25}, inherits: "St. James", urls: {"en": "https://nationaltoday.com/st-james-tg/"}},
         {type: "D", start: {mon: 7, d: 25}, titles: {"en": "International Red Shoe Day", "he": "יום הנעליים האדומות הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-red-shoe-day/"}, first: {era: 1, y: 2014}, emoji: "👠"},
         {type: "D", start: {mon: 7, wkd: [1], nth: -1}, inherits: "National Tree Day", first: {era: 1, y: 1996}, urls: {"en": "https://www.daysoftheyear.com/days/national-tree-day/"}},
         {type: "D", start: {mon: 7, wkd: [6], nth: -1}, inherits: "Arbor Day", first: {era: 1, y: 1996}, titles: {"en": "National Schools Tree Day", "he": "יום האילן הלאומי לבתי ספר"}, urls: {"en": "https://nationaltoday.com/national-tree-day/"}},

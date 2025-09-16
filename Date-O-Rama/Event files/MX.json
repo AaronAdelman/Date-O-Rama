@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}, last: {era: 1, y: 2005}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
         {inherits: "Revolution Day", type: "D", start: {mon: 11, wkd: [2], nth: 3}, first: {era: 1, y: 2006}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
-        {type: "D", start: {mon: 12, d: 12}, inherits: "Feast of Our Lady of Guadalupe", first: {era: 1, y: 1531}},
+        {type: "D", start: {mon: 12, d: 12}, inherits: "Our Lady of Guadalupe", first: {era: 1, y: 1531}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {inherits: "Army Day", type: "D", start: {mon: 2, d: 20}, first: {era: 1, y: 1913}},

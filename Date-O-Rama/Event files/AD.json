@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {titles: {"en": "Feast of Our Lady of Meritxell Day", "ca": "Mare de Déu de Meritxell"}, type: "D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/our-lady-of-meritxell-day/"}, notes: {"en": "Meritxell Day"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "Feast of the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
 
