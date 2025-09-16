@@ -26,7 +26,7 @@
         {inherits: "Confederate Memorial Day", type: "D", start: {mon: 4, d: 10}, first: {era: 1, y: 1866}, locations: {"en": "North Carolina and South Carolina", "he": "קרוליינה הצפונית וקרוליינה הדרומית"}},
         {inherits: "Confederate Memorial Day", type: "D", start: {mon: 4, wkd: [2], nth: -1}, first: {era: 1, y: 1866}, locations: {"en": "Mississippi", "he": "מיסיסיפי"}},
         {inherits: "Confederate Memorial Day", type: "D", start: {mon: 4, wkd: [2], nth: 4}, first: {era: 1, y: 1866}, locations: {"en": "Alabama and Georgia", "he": "אלבמה וג׳ורג׳יה"}},
-        {type: "D", start: {mon: 9, d: 17}, inherits: "Constitution Day", notes: {"en": "Citizenship Day\nConstitution Day and Citizenship Day"}, urls: {"en": "https://www.daysoftheyear.com/days/constitution-day/"}, first: {era: 1, y: 2004}},
+        {type: "D", start: {mon: 9, d: 17}, inherits: "Constitution Day", notes: {"en": "Citizenship Day\nConstitution Day and Citizenship Day"}, urls: {"en": "https://www.constitutionday.com/"}, first: {era: 1, y: 2004}, notes: {"en": "Created by Robert Byrd."}},
         {type: "D", start: {mon: 1, d: 28}, inherits: "Data Protection Day", first: {era: 1, y: 2009}},
         {type: "M", start: {mon: 10}, inherits: "Disability History Month", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
