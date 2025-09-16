@@ -91,8 +91,10 @@
         {type: "D", start: {mon: 4, d: 19}, titles: {"en": "National Primrose Day"}, notes: {"en": "Primrose Day\nSome think this observance falls on February 5."}, urls: {"en": "https://www.daysoftheyear.com/days/national-primrose-day/"}, emoji: "⚘", inherits: "*DeathAnniv*", first: {era: 1, y: 1920}},
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Gwyl Mabsant"}, urls: {"en": "https://nationaltoday.com/gwyl-mabsant/"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 1}, inherits: "National Yorkshire Pudding Day", urls: {"en": "https://www.daysoftheyear.com/days/yorkshire-pudding-day/"}},
-        {type: "D", start: {mon: 2, wkd: [2], nth: 2}, urls: {"en": "https://nationaltoday.com/oatmeal-monday/"}, titles: {"en": "Oatmeal Monday"}, first: {era: 1, y: 1896}, emoji: "🥣"},
-        {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-hare-day/"}, titles: {"en": "Mountain Hare Day"}, notes: {"en": "National Mountain Hare Day"}, emoji: "🐰", first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Racial Justice Sunday", first: {era: 1, y: 1995}, last: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 9, wkd: [1], nth: 2}, inherits: "Racial Justice Sunday", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 2, wkd: [2], nth: 2}, titles: {"en": "Oatmeal Monday"}, urls: {"en": "https://nationaltoday.com/oatmeal-monday/"}, first: {era: 1, y: 1896}, emoji: "🥣"},
+        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Mountain Hare Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-hare-day/"}, notes: {"en": "National Mountain Hare Day"}, emoji: "🐰", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 3, d: 2}, titles: {"en": "Toddle Waddle"}, urls: {"en": "https://www.daysoftheyear.com/days/toddle-waddle/"}, notes: {"en": "The Toddle Waddle"}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "National #DogsInYellow Day"}, urls: {"en": "https://myanxiousdog.co.uk/pages/national-dogsinyellow"}, first: {era: 1, y: 2022}, emoji: "🐕"},
         {type: "D", start: {mon: 3, d: 5}, titles: {"en": "St. Piran’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/st-pirans-day/"}, notes: {"en": "Feast of St. Piran"}},
@@ -389,5 +391,6 @@
         {template: "Conwy River Festival", type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durationD: 3}, titles: {"en": "Conwy River Festival"}, urls: {"en": "https://conwyriverfestival.org/"}, emoji: "🏰"},
         {template: "National Moving Day", type: "D", start: {era: 1, y: 2023, mon: 9, d: 1}, titles: {"en": "National Moving Day"}, urls: {"en": "https://www.nationalmovingday.co.uk/"}, emoji: "📦🏠"},
         {template: "National Quiet Day", type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "National Quiet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quiet-day/"}, emoji: "🤫", notes: {"en": "Created by Whirlpool"}},
+        {template: "Racial Justice Sunday", type: "D", start: {mon: 2, wkd: [1], nth: 2}, titles: {"en": "Racial Justice Sunday"}, urls: {"en": "https://en.wikipedia.org/wiki/Racial_Justice_Sunday"}},
     ]
 }
