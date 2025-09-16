@@ -143,6 +143,7 @@
         {type: "M", start: {mon: 9}, titles: {"en": "National Potato Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-potato-month/"}},
         {type: "M", start: {mon: 9}, titles: {"en": "National Disease Literacy Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-disease-literacy-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 9}, titles: {"en": "National Little League Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-little-league-month/"}, first: {era: 1, y: 1939}, notes: {"en": "Created by Carl E. Stotz"}},
+        {type: "M", start: {mon: 9}, titles: {"en": "National CleanUp Month"}, notes: {"en": "Created by Steve Jewett and Bill Willoughby"}, urls: {"en": "https://www.nationalcleanupday.org/"}, first: {era: 1, y: 2017}},
         {type: "M", start: {mon: 2}, titles: {"en": "National Therapeutic Recreation Month"}, urls: {"en": "https://nationaltoday.com/national-therapeutic-recreation-month/"}},
         {type: "M", start: {mon: 2}, titles: {"en": "National Weddings Month"}, urls: {"en": "https://nationaltoday.com/national-weddings-month/"}},
         {type: "M", start: {mon: 2}, titles: {"en": "National Bake For Family Fun Month"}, urls: {"en": "https://www.daysoftheyear.com/days/bake-for-family-fun-month/"}, emoji: "👨‍🍳👩‍🍳"},

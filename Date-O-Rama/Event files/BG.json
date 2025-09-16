@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
-        {inherits: "Feast of St. John the Apostle", type: "D", start: {mon: 12, d: 27}},
+        {inherits: "St. John the Apostle", type: "D", start: {mon: 12, d: 27}},
         {inherits: "Christmas Holiday", type: "D", start: {mon: 12, d: 28, wkd: [4]}},
 
         {inherits: "National Awakening Day", type: "D", start: {mon: 11, d: 1}},

@@ -54,13 +54,13 @@
         {type: "D", start: {mon: 3, d: 25}, inherits: "Feast of the Annunciation"},
         {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
-        {inherits: "Feast of the Transfiguration", type: "D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},
+        {inherits: "Transfiguration", type: "D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God"},
         {type: "D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
 
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://nationaltoday.com/orthodox-new-year/"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
-        {inherits: "Feast of Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
+        {inherits: "Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
         {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of St. John the Baptist"},
         {inherits: "Intercession of the Theotokos", type: "D", start: {mon: 10, d: 1}},
         
@@ -68,9 +68,9 @@
         
         {inherits: "St. Florian’s Day", type: "D", start: {mon: 5, d: 4}},
         {inherits: "St. Rupert’s Day", type: "D", start: {mon: 3, d: 27}},
-        {inherits: "Feast of St. Martin of Tours", type: "D", start: {mon: 10, d: 12}},
+        {inherits: "St. Martin of Tours", type: "D", start: {mon: 10, d: 12}},
         {inherits: "St. Maroun Day", type: "D", start: {mon: 2, d: 14}},
-        {inherits: "Feast of St. Vladimir", type: "D", start: {mon: 7, d: 15}},
+        {inherits: "St. Vladimir", type: "D", start: {mon: 7, d: 15}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
     ]
 }
