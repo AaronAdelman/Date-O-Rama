@@ -104,11 +104,11 @@
         {type: "D", start: {mon: 8, wkd: [6], nth: -1}, titles: {"en": "Wear it Purple Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 8, wkd: [6], nth: 1}, inherits: "Jeans for Genes Day", urls: {"en": "https://fundraise.jeansforgenes.org.au/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Footy Colours Day"}, notes: {"en": "Footy Colors Day"}, urls: {"en": "https://www.footycoloursday.com.au/"}, first: {era: 1, y: 1995}, inherits: "*MedAwareness*", emoji: "🏉"},
-        {type: "D", start: {mon: 9, wkd: [4], nth: 1}, titles: {"en": "Indigenous Literacy Day"}, urls: {"en": "https://www.indigenousliteracyfoundation.org.au/ILD"}, first: {era: 1, y: 2004}, notes: {"en": "Created by Suzy Wilson of Riverbend Books."}},
+        {type: "D", start: {mon: 9, wkd: [4], nth: 1}, titles: {"en": "Indigenous Literacy Day"}, urls: {"en": "https://www.indigenousliteracyfoundation.org.au/ILD"}, first: {era: 1, y: 2004}, notes: {"en": "Created by Suzy Wilson of Riverbend Books"}},
         {type: "D", start: {mon: 9, wkd: [5], nth: 2}, titles: {"en": "R U OK?Day", "he": "יום ״האם אתה בסדר״"}, urls: {"en": "http://www.ruok.org.au/r-u-ok-day"}, notes: {"en": "R U OK? Day\nAre You Okay Day\nCreated by Gavin Larkin of R U OK?"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, titles: {"en": "AFL Grand Final Friday"}, urls: {"en": "https://www.daysoftheyear.com/days/afl-grand-final-friday/"}, notes: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, titles: {"en": "Save the Koala Day"}, urls: {"en": "https://www.daysoftheyear.com/days/save-the-koala-day/"}, emoji: "🐨"},
-        {type: "D", titles: {"en": "Australian Citizenship Day"}, notes: {"en": "Australia Citizenship Day\nCreated by the Government of Australia."}, start: {mon: 9, d: 17}, first: {era: 1, y: 2001}, urls: {"en": "https://immi.homeaffairs.gov.au/citizenship/celebrating-citizenship/australian-citizenship-day"}},
+        {type: "D", titles: {"en": "Australian Citizenship Day"}, notes: {"en": "Australia Citizenship Day\nCreated by the Government of Australia"}, start: {mon: 9, d: 17}, first: {era: 1, y: 2001}, urls: {"en": "https://immi.homeaffairs.gov.au/citizenship/celebrating-citizenship/australian-citizenship-day"}},
         {type: "D", titles: {"en": "National Police Remembrance Day"}, start: {mon: 9, d: 29}, first: {era: 1, y: 1989}, urls: {"en": "https://www.daysoftheyear.com/days/national-police-remembrance-day/"}, inherits: "Police Day"},
         {type: "D", titles: {"en": "Wattle Day"}, start: {mon: 9, d: 1}, first: {era: 1, y: 1910}, urls: {"en": "https://wattleday.asn.au/"}, emoji: "🌳"},
         {type: "M", start: {mon: 4}, titles: {"en": "SunSmart Skin Cancer Prevention"}, urls: {"en": "https://nationaltoday.com/sunsmart-skin-cancer-prevention/"}, first: {era: 1, y: 1988}},
@@ -143,8 +143,8 @@
         {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 10}, inherits: "LGBTQ History Month", first: {era: 1, y: 2016}},
         
-        {type: "W", start: {mon: 9, fullWk: 1}, titles: {"en": "National Child Protection Week"}, urls: {"en": "https://www.napcan.org.au/ncpw/"}, first: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en": "Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)."}, nonoverlappingSubEvents: [
-            {type: "D", start: {wkd: [6]}, titles: {"en": "Bravehearts Day"}, urls: {"en": "https://bravehearts.org.au/support-us/bravehearts-day"}, emoji: "💟", notes: {"en": "White Balloon Day\nCreated by Bravehearts."}, first: {era: 1, y: 1997}},
+        {type: "W", start: {mon: 9, fullWk: 1}, titles: {"en": "National Child Protection Week"}, urls: {"en": "https://www.napcan.org.au/ncpw/"}, first: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en": "Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [6]}, titles: {"en": "Bravehearts Day"}, urls: {"en": "https://bravehearts.org.au/support-us/bravehearts-day"}, emoji: "💟", notes: {"en": "White Balloon Day\nCreated by Bravehearts"}, first: {era: 1, y: 1997}},
         ]},
 
     ],

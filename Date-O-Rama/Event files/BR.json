@@ -94,6 +94,6 @@
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Trans Men and Transmasculine Day"}, first: {era: 1, y: 2015}},
     ],
     templates: [
-        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}, notes: {"en": "Created by Osvaldo da Silva Almeida."}},
+        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en": "Frevo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/frevo-day/"}, notes: {"en": "Created by Osvaldo da Silva Almeida"}},
     ]
 }

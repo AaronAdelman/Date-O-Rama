@@ -9,7 +9,7 @@
         {type: "D", start: {mon: 4, d: 5}, titles: {"en": "First Contact Day"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/First_Contact_Day"}, notes: {"en": "Star Trek First Contact Day"}, emoji: "🚀", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "The Sisko Day"}, urls: {"en": "https://www.virtualtrekcon.com/thesiskoday"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Captain Picard Day"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Captain_Picard_Day"}, first: {era: 1, y: 1994}, emoji: "👨‍🦲", notes: {"en": "From Star Trek:  The Next Generation."}},
-        {type: "D", start: {mon: 9, d: 8}, titles: {"en": "Star Trek Day"}, urls: {"en": "https://www.daysoftheyear.com/days/star-trek-day/"}, first: {era: 1, y: 2020}, emoji: "🚀", notes: {"en": "Trek Day\nStar Trek Anniversary\nCreated by Gene Roddenberry."}},
+        {type: "D", start: {mon: 9, d: 8}, titles: {"en": "Star Trek Day"}, urls: {"en": "https://www.daysoftheyear.com/days/star-trek-day/"}, first: {era: 1, y: 2020}, emoji: "🚀", notes: {"en": "Trek Day\nStar Trek Anniversary\nCreated by Gene Roddenberry"}},
         {type: "D", start: {mon: 3, d: 26}, titles: {"en": "Live Long and Prosper Day"}, urls: {"en": "https://www.daysoftheyear.com/days/live-long-and-prosper-day/"}, emoji: "🖖"},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Federation Day"}, notes: {"en": "From Star Trek"}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Prixin"}, notes: {"en": "From Star Trek"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Prixin"}},

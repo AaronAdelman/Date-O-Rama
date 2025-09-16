@@ -9,7 +9,7 @@
         {type: "D", start: {mon: 2, d: 15}, inherits: "Parinirvana Day"},
         {type: "D", start: {mon: 2, d: 8}, inherits: "Parinirvana Day"},
         {type: "D", start: {mon: 3, d: 22}, titles: {"en": "World Day of Metta"}, urls: {"en": "https://nationaltoday.com/world-day-of-metta/"}},
-        {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Mindfulness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mindfulness-day/"}, notes: {"en": "Created by Wisdom Publications."}},
+        {type: "D", start: {mon: 9, d: 12}, titles: {"en": "Mindfulness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mindfulness-day/"}, notes: {"en": "Created by Wisdom Publications"}},
 
     ],
     templates: [

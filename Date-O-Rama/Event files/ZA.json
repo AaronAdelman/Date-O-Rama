@@ -55,7 +55,7 @@
         {inherits: "Spring Day", type: "D", start: {mon: 9, d: 1}},
         {inherits: "International Day of Innocent Children Victims of Aggression", type: "D", start: {mon: 6, d: 4}, first: {era: 1, y: 1983}},
         {type: "D", start: {mon: 6, wkd: [5], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/farm-workers-day/"}, inherits: "National Farm Workers Day"},
-        {type: "D", start: {mon: 8, d: 30}, titles: {"en": "Amagwinya Day"}, urls: {"en": "https://www.daysoftheyear.com/days/amagwinya-day/"}, notes: {"en": "Vetkoek Day\nCreated by Olive Pride."}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 8, d: 30}, titles: {"en": "Amagwinya Day"}, urls: {"en": "https://www.daysoftheyear.com/days/amagwinya-day/"}, notes: {"en": "Vetkoek Day\nCreated by Olive Pride"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "Pinotage Day"}, urls: {"en": "https://pinotage.co.za/"}, emoji: "🍇", first: {era: 1, y: 2014}, notes: {"en": "National Pinotage Day\nInternational Pinotage Day"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Cap Classique Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cap-classique-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Cap Classique Producers Association."}},
    ]
