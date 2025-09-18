@@ -149,8 +149,6 @@
 		A53437512857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
 		A53437522857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
 		A53437532857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
-		A536371A2E408D460038956A /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
-		A536371B2E408D570038956A /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
 		A53639A026EF7A000083C571 /* Western Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Western Christianity (general).json */; };
 		A53639A126EF7A000083C571 /* Western Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Western Christianity (general).json */; };
 		A5364D972850F9D500054BC2 /* Sunni Islam (times, MWL).json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D962850F9D500054BC2 /* Sunni Islam (times, MWL).json */; };
@@ -203,6 +201,8 @@
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F094226D57FF70093E13F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
+		A54F561B2E7BE79900079BC0 /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
+		A54F561C2E7BE79900079BC0 /* AHA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
 		A5545CFA2E4CE4B5003B26FA /* ASALocationWithClocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */; };
 		A554AFA3294F7CED0068D8E0 /* BA (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A554AFA2294F7CED0068D8E0 /* BA (Julian).json */; };
 		A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
@@ -887,8 +887,6 @@
 		A5E638D62E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
 		A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
 		A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D52E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift */; };
-		A5E638DA2E408464007F53D2 /* AHA.json in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
-		A5E638DB2E408464007F53D2 /* AHA.json in Sources */ = {isa = PBXBuildFile; fileRef = A5E638D92E40845C007F53D2 /* AHA.json */; };
 		A5E713DE2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E713DF2B0A7DE500DBAFAE /* ML (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E713DD2B0A7DE500DBAFAE /* ML (Muslim).json */; };
 		A5E7590E2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
@@ -2773,7 +2771,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = ASA;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = Adelsoft;
 				TargetAttributes = {
 					A566F4412483D6E6000A05B5 = {
@@ -2825,7 +2823,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A536371B2E408D570038956A /* AHA.json in Resources */,
 				A5FB22D72863910C00B5042B /* YE.json in Resources */,
 				A57797D12B8FC0A200F68529 /* SN (Muslim).json in Resources */,
 				A5BDE7A12667B66800F47416 /* IL.json in Resources */,
@@ -3103,6 +3100,7 @@
 				A59125E22A3F270F000497D7 /* AF (Muslim).json in Resources */,
 				A5EFFF67285B61E500F2205F /* CI.json in Resources */,
 				A5E4960328624F55001BF40C /* GS.json in Resources */,
+				A54F561C2E7BE79900079BC0 /* AHA.json in Resources */,
 				A5EFFF43285B5CE800F2205F /* CR.json in Resources */,
 				A5BA03C92A4227940039B9FC /* BD (Muslim).json in Resources */,
 				A5D850BE280C9A69005247BD /* MY.json in Resources */,
@@ -3253,7 +3251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A536371A2E408D460038956A /* AHA.json in Resources */,
 				A5FB22D02863908600B5042B /* VG.json in Resources */,
 				A5201CBB2DB57B5B00D5D490 /* Winnie the Pooh.json in Resources */,
 				A5E495F528624EFE001BF40C /* GP.json in Resources */,
@@ -3530,6 +3527,7 @@
 				A5DEFE8B2822FE9600EF1651 /* KR.json in Resources */,
 				A5E292E6285A61D900925EBD /* AG.json in Resources */,
 				A5E8BAE628047B9E0018CD36 /* LR.json in Resources */,
+				A54F561B2E7BE79900079BC0 /* AHA.json in Resources */,
 				A5EFFF78285B7B1300F2205F /* JE.json in Resources */,
 				A5E4964D2862544A001BF40C /* MW.json in Resources */,
 				A5EFFF82285B7BF500F2205F /* MV.json in Resources */,
@@ -3783,7 +3781,6 @@
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
-				A5E638DA2E408464007F53D2 /* AHA.json in Sources */,
 				A5DB52D9278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAMessageKeys.swift in Sources */,
@@ -3952,7 +3949,6 @@
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A59D80222600C57800FD8BBF /* ASACalendar.swift in Sources */,
-				A5E638DB2E408464007F53D2 /* AHA.json in Sources */,
 				A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */,
 				A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */,
 				A5D135BD27C537C500A1A525 /* ASACalendarWithQuarters.swift in Sources */,
@@ -4249,6 +4245,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4311,6 +4308,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -4329,8 +4327,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -4364,8 +4368,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
