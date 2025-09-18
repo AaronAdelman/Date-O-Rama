@@ -2021,6 +2021,7 @@
         {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Report Kickback Fraud Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-report-kickback-fraud-day/"}, first: {era: 1, y: 2017}, notes: {"en": "Created by Joel D. Hesch"}},
         {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Cheeseburger Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheeseburger-day/"}, emoji: "🍔"},
         {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National First Love Day", "he": "יום האהבה הראשונה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/first-love-day/"}, first: {era: 1, y: 2015}, emoji: "🖤"},
+        {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Red Velvet Cake Day"}, urls: {"en": "https://www.checkiday.com/d8e21b2d43728129de77480e62e02e2d/national-red-velvet-cake-day"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Ceiling Fan Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ceiling-fan-day/"}, first: {era: 1, y: 2013}, notes: {"en": "Created by Fanimation"}},
         {type: "D", start: {mon: 9, d: 18}, titles: {"en": "National Respect Day", "he": "יום הכבוד הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/respect-day/"}, emoji: "🤝"},
         {type: "D", start: {mon: 9, d: 19}, titles: {"en": "National Cat DNA Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cat-dna-day/"}, first: {era: 1, y: 2020}, emoji: "🐱🧬", notes: {"en": "Created by Basepaws"}},
@@ -2033,6 +2034,8 @@
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Crime and Intelligence Analyst Appreciation Day", "he": "יום ההוקרה הלאומי למנתחי פשע ומודיעין"}, urls: {"en": "https://fciaa.org/nciaad/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Florida Crime and Intelligence Analyst Association (FCIAA)"}},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National School Backpack Awareness Day", "he": "יום המודעות הלאומי לתרמיל בית הספר"}, urls: {"en": "https://www.daysoftheyear.com/days/national-school-backpack-awareness-day/"}, first: {era: 1, y: 2001}, emoji: "🎒", notes: {"en": "Created by the American Occupational Therapy Association (AOTA)"}},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Queso Day", "he": "יום הצ׳ילי קון קסו הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-queso-day/"}, emoji: "🧀"},
+        {type: "D", start: {mon: 7, wkd: [4], nth: 3}, inherits: "Free Queso Day", first: {era: 1, y: 2010}, last: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 9, wkd: [5], nth: 3}, inherits: "Free Queso Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Pepperoni Pizza Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pepperoni-pizza-day/"}, emoji: "🍕"},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Punch Day", "he": "יום הפונץ׳ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/punch-day/"}},
         {type: "D", start: {mon: 9, d: 21, thruD: 27, wkd: [7]}, titles: {"en": "National Singles Day"}, first: {era: 1, y: 2017}, notes: {"en": "An observance which seems to trying to put a positive spin on a non-ideal situation."}},
@@ -2486,5 +2489,6 @@
         {template: "Bunks Across America", type: "D", start: {mon: 9, wkd: [7], nth: 2}, titles: {"en": "Bunks Across America"}, urls: {"en": "https://shpbeds.org/bunks-across-america/"}, notes: {"en": "Created by Luke Mickelson"}, emoji: "🛏️"},
         {template: "Day of Silence", type: "D", start: {mon: 4, wkd: [6], nth: 2}, titles: {"en": "Day of Silence", "ko": "침묵의 날", "ru": "День молчания", "uk": "День мовчання", "es": "Día del Silencio", "eo": "Tago de Silento", "pl": "Dzień Milczenia", "sv": "Day of Silence", "cs": "Den mlčení", "he": "יום השתיקה", "hy": "Լռության օր"}},
         {template: "Neonatal Nurses Day", type: "D", start: {mon: 9, d: 15}, titles: {"en": "Neonatal Nurses Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-neonatal-nurses-day-september-15"}, notes: {"en": "National Neonatal Nurses Day\nCreated by the National Association of Neonatal Nurses"}, emoji: "👨‍⚕️👩‍⚕️"},
+        {template: "Free Queso Day", type: "D", start: {mon: 7, wkd: [4], nth: 3}, titles: {"en": "Free Queso Day"}, urls: {"en": "https://www.checkiday.com/de21fe53a50367e44ee46de2c7c7ba25/free-queso-day"}, emoji: "🧀"},
     ]
 }
