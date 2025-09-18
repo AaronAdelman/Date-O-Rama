@@ -155,7 +155,7 @@ extension Calendar.Component {
             return nil
         case .dayOfYear:
             return nil // TODO:  Is this right?
-        @unknown default:
+        default:
             return nil
         } // switch self
     } // func ASACalendarComponent() -> ASACalendarComponent?
