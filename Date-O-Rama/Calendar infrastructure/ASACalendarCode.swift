@@ -10,6 +10,7 @@ import Foundation
 
 // Calendar codes
 // I would prefer to use a standard, but ISO has not released one as of this writing.
+// Many codes come from https://github.com/CalConnect/cc-calendar-systems
 enum ASACalendarCode:  String, Codable {
     case none                = "  "
     
@@ -48,6 +49,18 @@ enum ASACalendarCode:  String, Codable {
     case FrenchRepublicanRomme = "fre-r"
     case Julian                = "jul"
     case MarsSolDate           = "mar"
+    
+    case bangla     = "bangla"
+    case dangi      = "dangi"
+    case gujarati   = "gujarati"
+    case kannada    = "kannada"
+    case malayalam  = "malayalam"
+    case marathi    = "marathi"
+    case odia       = "odia"
+    case tamil      = "tamil"
+    case telugu     = "telugu"
+    case vietnamese = "vietnamese"
+    case vikram     = "vikram"
     
     case allEarth              = "*"
     case allHebrew             = "heb*"
@@ -96,6 +109,11 @@ enum ASACalendarType {
 
 extension ASACalendarCode {
     var localizedName:  String {
+        let identifier = self.equivalentCalendarIdentifier
+        if identifier != nil {
+            return Locale.current.localizedString(for: identifier!) ?? "???"
+        }
+        
         return NSLocalizedString(self.rawValue, comment: "")
     } // var localizedName
 
@@ -115,7 +133,18 @@ extension ASACalendarCode {
              .IslamicUmmAlQura,
              .Japanese,
              .Persian,
-             .RepublicOfChina:
+             .RepublicOfChina,
+             .bangla,
+             .dangi,
+             .gujarati,
+             .kannada,
+             .malayalam,
+             .marathi,
+             .odia,
+             .tamil,
+             .telugu,
+             .vietnamese,
+             .vikram:
             return true
         default:
             return false
@@ -215,8 +244,8 @@ extension ASACalendarCode {
         } // switch self
     } // var isFrenchRepublicanCalendar: Bool
 
-    var equivalentCalendarIdentifier:  Calendar.Identifier {
-           var identifier:  Calendar.Identifier
+    var equivalentCalendarIdentifier:  Calendar.Identifier? {
+           var identifier:  Calendar.Identifier?
            switch self {
            case ASACalendarCode.Buddhist:
                identifier = .buddhist
@@ -263,8 +292,79 @@ extension ASACalendarCode {
            case ASACalendarCode.RepublicOfChina:
                identifier = .republicOfChina
                
+           case .bangla:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .bangla
+               } else {
+                   identifier = nil
+               }
+               
+           case .dangi:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .dangi
+               } else {
+                   identifier = nil
+               }
+           case .gujarati:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .gujarati
+               } else {
+                   identifier = nil
+               }
+           case .kannada:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .kannada
+               } else {
+                   identifier = nil
+               }
+           case .malayalam:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .malayalam
+               } else {
+                   identifier = nil
+               }
+           case .marathi:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .marathi
+               } else {
+                   identifier = nil
+               }
+           case .odia:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .odia
+               } else {
+                   identifier = nil
+               }
+           case .tamil:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .tamil
+               } else {
+                   identifier = nil
+               }
+               
+           case .telugu:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .telugu
+               } else {
+                   identifier = nil
+               }
+               
+           case .vietnamese:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .vietnamese
+               } else {
+                   identifier = nil
+               }
+               
+           case .vikram:
+               if #available(iOS 26.0, watchOS 26.0, *) {
+                   identifier = .vikram
+               } else {
+                   identifier = nil
+               }
+               
            default:
-               identifier = .gregorian
+               identifier = nil
            } // switch calendarCode
            
            return identifier
@@ -276,10 +376,10 @@ extension ASACalendarCode {
         get {
             switch self {
             case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian:
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .bangla, .malayalam, .odia, .tamil:
                 return .solar
                 
-            case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:
+            case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .vietnamese, .vikram:
                 return .lunisolar
                 
             case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
@@ -298,7 +398,7 @@ extension ASACalendarCode {
         switch locationType {
         case .earthLocation:
             return [.Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar]
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
         case .earthUniversal:
             return [.JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie]
         case .marsUniversal:
