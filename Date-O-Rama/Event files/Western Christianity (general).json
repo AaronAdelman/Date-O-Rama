@@ -8,7 +8,7 @@
         {titles: {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)\nSt. Basil’s Day"}, type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/saint-basils-day/"}},
         {titles: {"en": "Feast of the Holy Name of Jesus"}, notes: {"en": "Christmastide (day 10)"}, type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {titles: {"en": "Feast of St. Elizabeth Ann Seton"}, notes: {"en": "Christmastide (day 11)"}, type: "D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
+        {type: "D", start: {mon: 1, d: 5}, inherits: "Epiphany Eve"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {titles: {"en": "Feast of St. Raymond of Penyafort"}, type: "D", start: {mon: 1, d: 7}},
         {titles: {"en": "Baptism of the Lord"}, type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, urls: {"en": "https://nationaltoday.com/the-baptism-of-the-lord/"}},

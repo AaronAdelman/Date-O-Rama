@@ -43,7 +43,7 @@
         {titles: {"en": "Ground Forces Day"}, type: "D", start: {"mon": 12, d: 12}},
         {titles: {"en": "Operational Servicemen Day"}, type: "D", start: {"mon": 12, d: 23}},
         {titles: {"en": "Anniversary of the Autocephaly of the Orthodox Church of Ukraine"}, type: "D", start: {"mon": 1, d: 5}},
-        {inherits: "Epiphany Eve", type: "D", start: {mon: 1, d: 5}},
+        {type: "D", start: {mon: 1, d: 5}, inherits: "Epiphany Eve"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Synaxis of St. John the Baptist", type: "D", start: {"mon": 1, d: 7}},
         {titles: {"en": "Day of Remembrance of the Ukrainian Defenders of the Second Battle of Donetsk Airport (2014-2015)"}, type: "D", start: {"mon": 1, d: 20}},
