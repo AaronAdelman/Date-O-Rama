@@ -256,6 +256,7 @@
         {type: "D", start: {mon: 11, d: 26}, inherits: "National Milk Day"},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Tendong Lho Rum Faat"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, notes: {"en": "Prayer of the Tendong Mountain"}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "Sree Narayana Guru Samadhi"}, urls: {"en": "https://www.officeholidays.com/holidays/india/sree-narayana-guru-samadhi"}, locations: {"en": "Kerala"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1928}},
+        {type: "D", start: {mon: 9, d: 25}, titles: {"en": "National Daughter Day"}, notes: {"en": "National Daughters Day"}, first: {era: 1, y: 2007}, emoji: "👨‍👩‍👧", urls: {"en": "https://www.daysoftheyear.com/days/national-daughter-day/"}, notes: {"en": "Created by Archies Ltd"}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 13}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
         {type: "D", start: {era: 1, y: 2025, mon: 5, d: 2}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
         {type: "D", start: {era: 1, y: 2025, mon: 5, d: 7}, inherits: "Public Holiday", locations: {"en": "Assam"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
