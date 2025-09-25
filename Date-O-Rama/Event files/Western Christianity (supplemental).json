@@ -79,6 +79,7 @@
         {type: "D", start: {mon: 9, d: 24}, titles: {"en": "Schwenkfelder Thanksgiving"}, first: {era: 1, y: 1734}, urls: {"en": "https://www.daysoftheyear.com/days/schwenkfelder-thanksgiving/"}, inherits: "Thanksgiving Day", notes: {"en": "Created by the Schwenkfelders"}},
         {type: "D", start: {mon: 9, d: 26}, titles: {"en": "National Day of Praise and Worship"}, first: {era: 1, y: 2020}, urls: {"en": "https://www.daysoftheyear.com/days/national-day-of-praise-and-worship/"}, emoji: "🙏", notes: {"en": "Created by Derrick Wallace"}},
         {type: "D", start: {mon: 9, d: 26}, titles: {"en": "World Day of Migrants and Refugees"}, first: {era: 1, y: 1914}, urls: {"en": "https://nationaltoday.com/world-day-of-migrants-and-refugees/"}},
+        {type: "D", start: {mon: 9, wkd: [1], nth: -1}, titles: {"en": "Priesthood Sunday"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.daysoftheyear.com/days/priesthood-sunday/"}},
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "National Pastor’s Spouses Day", first: {era: 1, y: 2022}},
         {type: "M", start: {mon: 11}, titles: {"en": "Black Catholic History Month"}},
         {type: "M", start: {mon: 11}, titles: {"en": "No Nut November"}, notes: {"en": "Promotes a bizarre obsession with self-control that no one asked for."}},
