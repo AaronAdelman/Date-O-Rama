@@ -132,7 +132,7 @@
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Galentine’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/galentines-day/"}, emoji: "💛", first: {era: 1, y: 2017}, notes: {"en": "From Parks and Recreation"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "International Condom Day"}, notes: {"en": "This observance could have been promoted with more tact."}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "International Natural Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-natural-day/"}, notes: {"en": "International Day of Self Love\nSelf-Love Day\nMadly in Love With Me Day\nSelf Love Day\nInternational Natural Day", "he": "יום מאוהב/ת בעצמי בטירוף"}, first: {era: 1, y: 2008}},
-        {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Kiss Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kiss-day/"}},
+        {type: "D", start: {mon: 2, d: 13}, inherits: "Kiss Day", urls: {"en": "https://www.daysoftheyear.com/days/kiss-day/"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "Self Love Day"}, notes: {"en": "Madly In Love With Me Day\nSelf Love Day\nInternational Day of Self-Love\nThis observance seems to be meant to sell products."}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/desperation-day/"}, titles: {"en": "Desperation Day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/dream-your-sweet-day/"}, titles: {"en": "Dream Your Sweet Day"}},

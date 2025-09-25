@@ -677,6 +677,9 @@
         {type: "D", start: {mon: 8, wkd: [7], nth: 2}, titles: {"en": "Celebrate Your Lakes Day"}, urls: {"en": "https://www.checkiday.com/7fbf3c0647f4cf79be3671b8b2f24026/celebrate-your-lakes-day"}, first: {era: 1, y: 1995}, emoji: "☱"},
         {type: "D", start: {mon: 8, d: 16}, titles: {"en": "National Bratwurst Day"}, notes: {"en": "World Bratwurst Day\nTony Evers, Governor of Wisconsin, made this a state holiday in 2024."}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-bratwurst-day-august-16"}, first: {era: 1, y: 2005}},
         {type: "M", start: {mon: 10}, inherits: "LGBTQ History Month", first: {era: 1, y: 1994}},
+        {type: "D", start: {mon: 10, d: 14}, titles: {"en": "National Day of Remembrance for Charlie Kirk"}, first: {era: 1, y: 2025}, notes: {"en": "Created by the US Congress"}},
+        {type: "D", start: {mon: 9, d: 21}, titles: {"en": "National Farm Safety Day for Kids"}, urls: {"en": "https://www.checkiday.com/1a385e080f011638f81151b539f3ba77/national-farm-safety-day-for-kids"}, first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 9, d: 25}, titles: {"en": "“If You See Something, Say Something” Awareness Day"}, urls: {"en": "https://www.checkiday.com/9ab307f72956169daae19fa9e5a139c7/if-you-see-something-say-something-awareness-day"}, first: {era: 1, y: 2018}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day"}, first: {era: 1, y: 1987}},
