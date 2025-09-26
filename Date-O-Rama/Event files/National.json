@@ -2044,7 +2044,6 @@
         {type: "D", start: {mon: 9, wkd: [5], nth: 3}, inherits: "Free Queso Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 9, d: 20}, titles: {"en": "National Pepperoni Pizza Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pepperoni-pizza-day/"}, emoji: "🍕"},
         {type: "D", start: {mon: 1, d: 11}, inherits: "National Singles Day", first: {era: 1, y: 2014}, last: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 9, d: 21, thruD: 27, wkd: [7]}, inherits: "National Singles Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "National Opioid Awareness Day", "he": "יום המודעות לאופיואידים הלאומי"}, urls: {"en": "https://www.opioidawarenessfoundation.org/post/national-opioid-awareness-day-sept-21-how-to-participate-and-make-impact"}, inherits: "*MedAwareness*", emoji: "💊", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "National Cat & Dog Gut Health Awareness Day", "he": "יום המודעות הלאומי לבריאות המעיים של החתול והכלב"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cat-dog-gut-health-awareness-day/"}, first: {era: 1, y: 2022}, inherits: "*MedAwareness*", emoji: "🐶🐱", notes: {"en": "Created by AnimalBiome"}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "National Garage Condo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-garage-condo-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Garage Condos"}},
@@ -2461,6 +2460,10 @@
             {type: "D", start: {mon: 9, d: 15}, inherits: "Neonatal Nurses Day"},
         ]},
         
+        {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Singles Week"}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-singles-week-third-full-week-in-september"}, notes: {"en": "Created by the Buckeye Singles Council of Columbus, Ohio"}, first: {era: 1, y: 1980}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [7]}, inherits: "National Singles Day", first: {era: 1, y: 2017}},
+        ]},
+        
     ],
     templates: [
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
@@ -2505,7 +2508,7 @@
         {template: "Day of Silence", type: "D", start: {mon: 4, wkd: [6], nth: 2}, titles: {"en": "Day of Silence", "ko": "침묵의 날", "ru": "День молчания", "uk": "День мовчання", "es": "Día del Silencio", "eo": "Tago de Silento", "pl": "Dzień Milczenia", "sv": "Day of Silence", "cs": "Den mlčení", "he": "יום השתיקה", "hy": "Լռության օր"}},
         {template: "Neonatal Nurses Day", type: "D", start: {mon: 9, d: 15}, titles: {"en": "Neonatal Nurses Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-neonatal-nurses-day-september-15"}, notes: {"en": "National Neonatal Nurses Day\nCreated by the National Association of Neonatal Nurses"}, emoji: "👨‍⚕️👩‍⚕️"},
         {template: "Free Queso Day", type: "D", start: {mon: 7, wkd: [4], nth: 3}, titles: {"en": "Free Queso Day"}, urls: {"en": "https://www.checkiday.com/de21fe53a50367e44ee46de2c7c7ba25/free-queso-day"}, emoji: "🧀"},
-        {template: "National Singles Day", type: "D", start: {mon: 9, d: 21, thruD: 27, wkd: [7]}, titles: {"en": "National Singles Day"}, notes: {"en": "An observance which seems to trying to put a positive spin on a non-ideal situation.\nCreated by Karen Reed"}, urls: {"en": "https://www.daysoftheyear.com/days/national-singles-day/"}},
+        {template: "National Singles Day", type: "D", start: {mon: 9, d: 21, thruD: 27, wkd: [7]}, titles: {"en": "National Singles Day"}, notes: {"en": "An observance which seems to trying to put a positive spin on a non-ideal situation.\nCreated by Karen Reed"}, urls: {"en": "https://nationalsinglesday.us/"}},
         {template: "National Proposal Day", type: "D", start: {mon: 3, d: 20}, titles: {"en": "National Proposal Day"}, urls: {"en": "https://www.daysoftheyear.com/days/proposal-day/"}, emoji: "💍", notes: {"en": "Created by John Michael O’Loughlin"}},
         {template: "See You at the Pole", type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "See You at the Pole"}, urls: {"en": "https://syatp.com/"}},
     ]
