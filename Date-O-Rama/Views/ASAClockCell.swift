@@ -400,6 +400,8 @@ struct ASAClockEventsForEach:  View {
     var body: some View {
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date   = processedClock.startOfNextDay
+        let bodyLineHeight: CGFloat = UIFont.preferredFont(forTextStyle: .body).lineHeight
+        let linkedEventCellHeight: CGFloat = bodyLineHeight * 1.5
         
         ForEach(events, id: \.eventIdentifier) {
             event
@@ -410,6 +412,7 @@ struct ASAClockEventsForEach:  View {
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? clock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
             ASALinkedEventCell(event: event, primaryClock: clock, now: now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
+                .frame(height: linkedEventCellHeight)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
@@ -422,3 +425,4 @@ struct ASAClockEventsForEach:  View {
 //        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true, eventVisibility: .all, clock: ASAClock.generic, location: ASALocation.EarthUniversal)
 //    }
 //} // struct ASAClockCell_Previews
+
