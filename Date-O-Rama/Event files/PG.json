@@ -31,6 +31,7 @@
         
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}},
     ],
     templates: [
         {template: "National Remembrance Day (in lieu)", type: "D", start: {mon: 2, d: 24, wkd: [6]}, titles: {"en": "National Remembrance Day (in lieu)"}},

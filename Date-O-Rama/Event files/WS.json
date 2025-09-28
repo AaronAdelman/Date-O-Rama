@@ -28,5 +28,6 @@
 
         
         {type: "D", start: {mon: 10, wkd: [1], nth: 2}, inherits: "White Sunday"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}},
     ]
 }

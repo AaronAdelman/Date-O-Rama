@@ -110,6 +110,7 @@
         {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 13}, end: {era: 1, y: 2023, mon: 5, d: 20}, inherits: "Techweek"},
         {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2024}},
         {type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Schools Pride Week"}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}, urls: {"en": "https://www.police.govt.nz/about-us/history/memorial/remembrance-day?nondesktop"}},
     ],
     templates: [
         {template: "Techweek", type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Techweek"}, urls: {"en": "https://techweek.co.nz/"}, emoji: "🥽"},

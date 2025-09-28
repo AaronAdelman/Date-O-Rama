@@ -45,7 +45,7 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
         {type: "D", start: {mon: 3, d: 25}, inherits: "Waffle Day"},
-        {type: "D", start: {mon: 10, d: 4}, titles: {"en": "Cinnamon Roll Day", "sv": "Kanelbullens dag"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/cinnamon-roll-day/"}, notes: {"en": "​National Cinnamon Bun Day\nCinnamon Roll Day\nNational Cinnamon Roll Day"}},
+        {type: "D", start: {mon: 10, d: 4}, titles: {"ar":"يوم لفة القرفة","de":"Tag der Zimtschnecke","en":"Cinnamon Bun Day","es":"Día del Rollo de Canela","fa":"روز رول دارچینی","fr":"Kanelbullens dag","he":"יום שבלול הקינמון","sv":"Kanelbullens dag","zh":"肉桂卷日"}, first: {era: 1, y: 1999}, urls: {"en": "https://kanelbullensdag.se/en/", "sv": "https://kanelbullensdag.se/"}, notes: {"en": "​Cinnamon Roll Day\nNational Cinnamon Bun Day\nNational Cinnamon Roll Day"}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
     ]
 }

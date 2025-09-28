@@ -109,7 +109,7 @@
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, titles: {"en": "AFL Grand Final Friday"}, urls: {"en": "https://www.daysoftheyear.com/days/afl-grand-final-friday/"}, notes: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 9, wkd: [6], nth: -1}, titles: {"en": "Save the Koala Day"}, urls: {"en": "https://www.daysoftheyear.com/days/save-the-koala-day/"}, emoji: "🐨", notes: {"en": "Created by the Australian Koala Foundation"}},
         {type: "D", start: {mon: 9, d: 17}, titles: {"en": "Australian Citizenship Day"}, notes: {"en": "Australia Citizenship Day\nCreated by the Government of Australia"}, first: {era: 1, y: 2001}, urls: {"en": "https://immi.homeaffairs.gov.au/citizenship/celebrating-citizenship/australian-citizenship-day"}},
-        {type: "D", start: {mon: 9, d: 29}, titles: {"en": "National Police Remembrance Day"}, first: {era: 1, y: 1989}, urls: {"en": "https://www.daysoftheyear.com/days/national-police-remembrance-day/"}, inherits: "Police Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}, urls: {"en": "https://npm.org.au/about/remembrance-day-services/"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Wattle Day"}, first: {era: 1, y: 1910}, urls: {"en": "https://wattleday.asn.au/"}, emoji: "🌳"},
         {type: "M", start: {mon: 4}, titles: {"en": "SunSmart Skin Cancer Prevention"}, urls: {"en": "https://nationaltoday.com/sunsmart-skin-cancer-prevention/"}, first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 5}, titles: {"en": "Lung Health Awareness Month"}, urls: {"en": "https://nationaltoday.com/lung-health-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*"},
