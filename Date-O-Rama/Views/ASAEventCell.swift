@@ -49,31 +49,6 @@ struct ASAEventCell:  View {
         return basicFont.weight(.semibold)
     } // var titleFont
         
-    fileprivate func eventSymbolView() -> ModifiedContent<Text, ASAScalable> {
-        return Text(event.symbol!)
-            .font(titleFont)
-            .modifier(ASAScalable(lineLimit: 1))
-    }
-    
-    fileprivate func eventTitleView() -> ModifiedContent<Text, ASAScalable> {
-        let LINE_LIMIT = compact ? 3 : 2
-        
-        let titleText: String = {
-            let title: String = event.title ?? ""
-            let location: String? = event.location
-            if location != nil {
-                if !location!.isEmpty {
-                    return String.localizedStringWithFormat(NSLocalizedString("%@ (%@)", comment: ""), title, location!)
-                }
-            }
-            
-            return title
-        }()
-        return Text(titleText)
-            .font(titleFont)
-            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-    }
-    
     var body: some View {
         let eventSymbol = event.symbol
         let eventsViewShouldShowSecondaryDates = primaryClock.eventsShouldShowSecondaryDates
@@ -121,20 +96,20 @@ struct ASAEventCell:  View {
                 VStack(alignment: .leading) {
                     
                     HStack(alignment: .top) {
-                        if eventSymbol != nil {
-                            eventSymbolView()
+                        if let symbol = eventSymbol {
+                            ASAEventSymbolView(symbol: symbol, font: titleFont)
                         }
-                        eventTitleView()
+                        ASAEventTitleView(event: event, font: titleFont, compact: compact)
                     }
                                         
                     ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 } // VStack
             } else {
                 HStack(alignment: .top) {     
-                    if eventSymbol != nil {
-                        eventSymbolView()
+                    if let symbol = eventSymbol {
+                        ASAEventSymbolView(symbol: symbol, font: titleFont)
                     }
-                    eventTitleView()
+                    ASAEventTitleView(event: event, font: titleFont, compact: compact)
                 }
                                 
                 ASADottedLine()
@@ -149,6 +124,40 @@ struct ASAEventCell:  View {
     } // var body
 } // struct ASAEventCell
 
+
+struct ASAEventSymbolView: View {
+    let symbol: String
+    let font: Font
+
+    var body: some View {
+        Text(symbol)
+            .font(font)
+            .modifier(ASAScalable(lineLimit: 1))
+    }
+}
+
+struct ASAEventTitleView: View {
+    let event: ASAEventCompatible
+    let font: Font
+    let compact: Bool
+
+    var body: some View {
+        let LINE_LIMIT = compact ? 3 : 2
+
+        let titleText: String = {
+            let title: String = event.title ?? ""
+            let location: String? = event.location
+            if let location = location, !location.isEmpty {
+                return String.localizedStringWithFormat(NSLocalizedString("%@ (%@)", comment: ""), title, location)
+            }
+            return title
+        }()
+
+        return Text(titleText)
+            .font(font)
+            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+    }
+}
 
 struct ASADottedLine: View {
     var body: some View {
@@ -190,3 +199,4 @@ struct ASAEventCellCalendarTitle:  View {
 //        ASAEventCell()
 //    }
 //}
+
