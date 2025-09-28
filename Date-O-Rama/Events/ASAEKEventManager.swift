@@ -93,33 +93,19 @@ final class ASAEKEventManager:  NSObject, ObservableObject, Sendable {
             self.handleAccessDenied()
             
         case .notDetermined:
-            eventStore.requestAccess(to: .event, completion:
-                                        {(granted: Bool, error: Error?) -> Void in
-                                            if granted {
-//                                                debugPrint(#file, #function, "Access granted")
-                                                self.handleAccessGranted()
-                                            } else {
-                                                debugPrint(#file, #function, "Access denied")
-                                                self.handleAccessDenied()
-                                            }
-                                        })
+            if #available(iOS 17.0, watchOS 10.0, *) {
+                self.eventStore.requestFullAccessToEvents { (accessGranted: Bool, error: Error?) in
+                    self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
+                }
+            } else {
+                self.eventStore.requestAccess(to: .event) { (accessGranted: Bool, error: Error?) in
+                    self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
+                }
+            }
             
 //            debugPrint(#file, #function, "Not Determined")
         default:
             debugPrint(#file, #function, "Case Default")
-        }
-        
-        if #available(iOS 17.0, watchOS 10.0, *) {
-            eventStore.requestFullAccessToEvents(completion: {
-                (accessGranted: Bool, error: Error?) in
-                self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
-            })
-        } else {
-            // Fallback on earlier versions
-            eventStore.requestAccess(to: EKEntityType.event) {
-                (accessGranted: Bool, error: Error?) in
-                self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
-            }
         }
     } // func requestAccessToEKCalendars()
     
