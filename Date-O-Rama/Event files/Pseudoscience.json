@@ -19,6 +19,7 @@
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Psychic Day"}, notes: {"en": "This observance promotes pseudoscientific nonsense."}, first: {era: 1, y: 2021}, urls: {"en": "https://skepdic.com/psychic.html"}},
         {type: "M", start: {mon: 3}, titles: {"en": "Color Therapy Month"}, notes: {"en": "This observance promotes pseudoscience."}, first: {era: 1, y: 2011}},
         {type: "W", start: {mon: 9, fullWk: -1, firstDOfWk: 2}, titles: {"en": "World Reflexology Week"}, urls: {"en": "https://skepdic.com/reflex.html"}, first: {era: 1, y: 1999}, notes: {"en": "This observance promotes pseudoscientific nonsense.\nCreated by International Council of Reflexologists."}},
+        {type: "M", start: {mon: 10}, titles: {"en": "National Chiropractic Health Month"}, notes: {"en": "This observance promotes potentially harmful quackery."}, urls: {"en": "https://www.skepdic.com/chiro.html"}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Paranormal Day"}, notes: {"en": "Promotes pseudoscience and fringe beliefs."}, first: {era: 1, y: 2013}, urls: {"en": "https://skepdic.com/paranormal.html"}},
         {type: "D", start: {mon: 7, d: 26}, titles: {"en": "Holistic Therapy Day"}, notes: {"en": "Promotes pseudoscientific practices."}, urls: {"en": "https://skepdic.com/holistic.html"}},
         {type: "D", start: {mon: 10, wkd: [7], nth: 2}, inherits: "HerbDay", first: {era: 1, y: 2006}, last: {era: 1, y: 2011}},
