@@ -163,7 +163,7 @@
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Hot Cross Bun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cross-bun-day/"}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "Goose Day", urls: {"en": "https://www.checkiday.com/46e9409507ad0ab3c7496392892cd708/goose-day"}, first: {era: 1, y: 1786}},
-        {type: "M", start: {mon: 10}, titles: {"en": "Black Cat Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/black-cat-awareness-month/"}, first: {era: 1, y: 2013}, emoji: "🐈‍⬛"},
+        {type: "M", start: {mon: 10}, titles: {"en": "Black Cat Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/black-cat-awareness-month/"}, first: {era: 1, y: 2013}, emoji: "🐈‍⬛", notes: {"en": "Created by Layla Morgan Wilde"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Halloween Safety Month"}, urls: {"en": "https://www.daysoftheyear.com/days/halloween-safety-month/"}, first: {era: 1, y: 1970}, emoji: "🎃🦺"},
         {type: "M", start: {mon: 12}, titles: {"en": "Destroy Dick December"}, notes: {"en": "A month of poor taste, as if we needed help finding that on the Internet.  This is a response to No Nut November."}},
         {type: "M", start: {mon: 12}, titles: {"en": "National Giving Month"}, urls: {"en": "https://nationalgivingmonth.org/"}, notes: {"en": "Month of Giving"}, emoji: "🎁"},
@@ -179,7 +179,7 @@
         {type: "W", start: {mon: 11, fullWk: 2}, titles: {"en": "Dear Santa Letter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dear-santa-letter-week/"}, emoji: "🎅"},
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
 
-        {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://nationaltoday.com/bat-appreciation-month/"}, emoji: "🦇", nonoverlappingSubEvents: [
+        {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en": "Created by Merlin Tuttle"}, nonoverlappingSubEvents: [
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}},
         ]},
         

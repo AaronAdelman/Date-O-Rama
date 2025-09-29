@@ -114,6 +114,7 @@
         {type: "M", start: {mon: 4}, titles: {"en": "SunSmart Skin Cancer Prevention"}, urls: {"en": "https://nationaltoday.com/sunsmart-skin-cancer-prevention/"}, first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 5}, titles: {"en": "Lung Health Awareness Month"}, urls: {"en": "https://nationaltoday.com/lung-health-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 5}, titles: {"en": "No Meat May"}, urls: {"en": "https://www.daysoftheyear.com/days/no-meat-may/"}, first: {era: 1, y: 2013}},
+        {type: "M", start: {mon: 10}, titles: {"en": "Mental Health Month"}, urls: {"en": "https://wayahead.org.au/mentalhealthmonth/"}, first: {era: 1, y: 1949}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "BPD Awareness Week"}, urls: {"en": "https://www.bpdawareness.com.au/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "nD", start: {mon: 2, d: 8, thruD: 14, wkd: [7], durationD: 3}, titles: {"en": "Royal Hobart Regatta"}, urls: {"en": "https://www.daysoftheyear.com/days/royal-hobart-regatta/"}, emoji: "🚣‍♀️"},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en": "Hearing Awareness Week"}, urls: {"en": "https://nationaltoday.com/hearing-awareness-week/"}, emoji: "👂", inherits: "*MedAwareness*"},
