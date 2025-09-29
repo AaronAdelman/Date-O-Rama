@@ -120,7 +120,7 @@
         {type: "D", start: {mon: 9, d: 15}, inherits: "Greenpeace Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 9, d: 27}, titles: {"en": "National No Excuses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-no-excuses-day/"}, first: {era: 1, y: 2019}, notes: {"en": "Created by SCENE"}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Orange Shirt Day", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://orangeshirtday.org/orange-shirt-day/"}, notes: {"en": "National Day for Truth and Reconciliation\nTruth and Reconciliation Day"}},
+        {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Orange Shirt Day", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://orangeshirtday.org/orange-shirt-day/"}, notes: {"en": "National Day for Truth and Reconciliation\nTruth and Reconciliation Day\nCreated by Phyllis Webstad"}},
         {type: "M", start: {mon: 11}, titles: {"en": "Indigenous Disability Awareness Month"}},
         {type: "M", start: {mon: 4}, inherits: "Dalit History Month", first: {era: 1, y: 2022}},
         {type: "M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}, emoji: "🐕‍🦺"},
