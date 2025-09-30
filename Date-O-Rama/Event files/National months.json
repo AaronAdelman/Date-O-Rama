@@ -67,6 +67,7 @@
         {type: "M", start: {mon: 10}, titles: {"en": "National Arts and Humanities Month"}, urls: {"en": "https://www.americansforthearts.org/events/national-arts-and-humanities-month"}, first: {era: 1, y: 1993}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Toilet Tank Repair Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-toilet-tank-repair-month/"}, notes: {"en": "Created by Fluidmaster"}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Seafood Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seafood-month/"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "National Cryptocurrency Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cryptocurrency-month/"}, first: {era: 1, y: 2022}, notes: {"en": "Created by Guy Gotslak"}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Medical Librarians Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-medical-librarians-month/"}, first: {era: 1, y: 1997}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Non-GMO Month"}, urls: {"en": "https://skepdic.com/gmo.html"}, first: {era: 1, y: 2010}, notes: {"en": "This observance looks like it is geared to promote paranoia about GMOs."}},
         {type: "M", start: {mon: 10}, titles: {"en": "National Orthodontic Health Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-orthodontic-health-month/"}, inherits: "*MedAwareness*"},

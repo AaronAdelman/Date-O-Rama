@@ -69,6 +69,7 @@
         {type: "M", start: {mon: 10}, titles: {"en": "Long-Term Care Planning Month"}, notes: {"en": "Long Term Care Planning Month"}, urls: {"en": "https://www.daysoftheyear.com/days/long-term-care-planning-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 10}, titles: {"en": "Medical Ultrasound Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/ultrasound-awareness-month/"},  inherits: "*MedAwareness*", first: {era: 1, y: 1990}},
         {type: "M", start: {mon: 10}, titles: {"en": "Photographer Appreciation Month"}, urls: {"en": "https://www.daysoftheyear.com/days/photographer-appreciation-month/"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "International Starman Month"}, urls: {"en": "https://www.daysoftheyear.com/days/international-starman-month/"}, first: {era: 1, y: 2023}},
         {type: "M", start: {mon: 10}, titles: {"en": "Prenatal-Onset GBS Disease Recognition Month"}, urls: {"en": "https://nationaltoday.com/prenatal-onset-gbs-disease-recognition-month/"},  inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 10}, titles: {"en": "Rett Syndrome Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/rett-syndrome-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1980}},
         {type: "M", start: {mon: 10}, titles: {"en": "Sensory Awareness Month"}, notes: {"en": "Sensory Processing Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/sensory-awareness-month/"}, first: {era: 1, y: 2018}, inherits: "*MedAwareness*"},
