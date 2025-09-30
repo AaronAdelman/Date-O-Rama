@@ -217,6 +217,7 @@
         {type: "M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}},
         {type: "M", start: {mon: 10}, titles: {"en": "Porktober"}, urls: {"en": "https://www.daysoftheyear.com/days/porktober/"}, first: {era: 1, y: 2022}, emoji: "🐷"},
         {type: "M", start: {mon: 10}, titles: {"en": "Unblocktober"}, urls: {"en": "https://www.unblocktober.org/"}, first: {era: 1, y: 2019}, notes: {"en": "Created by by Lanes Group, PLC"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "Go Sober for October"}, notes: {"en": "Sober October\nCreated by Macmillan Cancer Support"}, urls: {"en": "https://www.gosober.org.uk/"}, first: {era: 1, y: 2014}},
         {type: "M", start: {mon: 12}, titles: {"en": "Decembeard"}, urls: {"en": "https://www.daysoftheyear.com/days/decembeard/"}, first: {era: 1, y: 2012}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 2}, inherits: "Black History Month", first: {era: 1, y: 1987}},
         {type: "M", start: {mon: 2}, inherits: "LGBTQ History Month", first: {era: 1, y: 2005}},
