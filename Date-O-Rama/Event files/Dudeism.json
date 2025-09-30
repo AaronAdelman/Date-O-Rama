@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Dudeism"},
+    titles: {"as":"ড্যুডিজম","az":"Dudeizm","br":"Dudeegezh","ca":"Dudeisme","cs":"Dudeismus","de":"Dudeismus","en":"Dudeism","es":"Dudeísmo","eu":"Dudeismo","fa":"دودیسم","fi":"Dudeismi","fr":"Dudéisme","he":"דודיזם","hr":"Dudeizam","id":"Dudeisme","it":"Dudeismo","ko":"듀드주의","nl":"Dudeïsme","ru":"Дудеизм","sh":"Dudizam","sk":"Dudeizmus","th":"ลัทธิดู๊ด","zh":"都得主义"},
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {red: 0.4, green: 0.5, blue: 0.6},

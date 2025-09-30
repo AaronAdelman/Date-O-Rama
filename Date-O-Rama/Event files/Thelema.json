@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Thelema", "he": "תלמה"},
+    titles: {"ar":"ثيليما","arz":"ثيليما","bg":"Телема","ca":"Thelema","cs":"Theléma","cy":"Thelema","de":"Thelema","en":"Thelema","es":"Thelema","et":"Thelema","fa":"تلما","fi":"Thelema","fr":"Thelema","gl":"Thelema","he":"תלמה","hr":"Thelema","hu":"Thelema","id":"Thelema","it":"Thelema","ja":"セレマ","ko":"텔레마","la":"Thelema (Crowley)","lv":"Telema","mk":"Телема","ms":"Thelema","nl":"Thelema","pl":"Thelema","pt":"Thelema","ro":"Thelema","ru":"Телема","simple":"Thelema","sk":"Theléma","sl":"Thelema","so":"Thelema","sr":"Телема","sv":"Thelema","th":"เธลีมา","tr":"Telema","uk":"Телема","zh":"泰勒瑪"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.5, green: 0.5, blue: 0.75},

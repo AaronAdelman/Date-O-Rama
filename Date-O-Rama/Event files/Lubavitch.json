@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Lubavitch", "he": "חב״ד"},
+    titles: {"ar":"حركة حباد","arz":"حركة حباد","br":"Chabad","ca":"Habad Lubavitx","cs":"Chabad Lubavič","cv":"Хабад","de":"Chabad","en":"Lubavitch","eo":"Ĥabad Lubaviĉ","es":"Jabad-Lubavitch","fa":"خبد","fi":"Chabad-Lubavitch","fr":"Dynastie hassidique Habad-Loubavitch","he":"חב״ד","hu":"Chábád Lubavics","it":"Chabad Lubavitch","lad":"Habad-Lubavitch","lt":"Chabad Lubavitč","nl":"Chabad","pl":"Chabad-Lubawicz","ps":"د چاباد غورځنګ","pt":"Chabad Lubavitch","ro":"Habad","ru":"Хабад","simple":"Chabad","sk":"Chabad Ľubavič","sr":"Хабад","uk":"ХаБаД","yi":"ליובאוויטש","zh":"哈巴德"},
     defaultLocale: "he",
     calendarCode: "heb*",
     calendarColor: {red: 0.0, green: 0.58, blue: 1.0},

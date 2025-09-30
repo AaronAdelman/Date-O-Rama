@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Barbie", "he": "ברבי"},
+    titles: {"af":"Barbie","ar":"باربي","arz":"باربى","ast":"Barbie","az":"Barbi","ban":"Barbie","bcl":"Barbie","bg":"Барби","bs":"Barbie","ca":"Barbie","ckb":"باربی","cs":"Barbie","cv":"Барби","cy":"Barbie","da":"Barbiedukke","de":"Barbie","el":"Barbie","en":"Barbie","eo":"Pupo Barbie","es":"Barbie","et":"Barbie","eu":"Barbie","fa":"باربی","fi":"Barbie","fo":"Barbie","fr":"Barbie (poupée)","ga":"Barbie","gl":"Barbie","he":"ברבי","hi":"बार्बी","hr":"Barbie","hu":"Barbie (divatbaba)","hy":"Բարբի (տիկնիկ)","hyw":"Պարպի Պուպրիկը","id":"Barbie","io":"Barbie","is":"Barbie","it":"Barbie","ja":"バービー","jv":"Golekan Barbie","ka":"ბარბი","kk":"Барби","kn":"ಬಾರ್ಬಿ","ko":"바비","kw":"Dolli Barbie","lt":"Barbė","lv":"Bārbija","mg":"Barbie","mk":"Барби (кукла)","ml":"ബാർബി","mr":"बार्बी","ms":"Barbie","mwl":"Barbie","nan":"Barbie","nb":"Barbie","nl":"Barbie (pop)","nn":"Barbie","pa":"ਬਾਰਬੀ","pl":"Barbie","pt":"Barbie","ro":"Barbie","ru":"Барби","sgs":"Barbe","sh":"Barbie","simple":"Barbie","sr":"Барби","su":"Barbie","sv":"Barbiedocka","syl":"ꠛꠣꠞꠛꠤ","ta":"பார்பி","te":"బార్బీ","th":"บาร์บี้","tl":"Barbie","tr":"Barbie","uk":"Барбі","uz":"Barbie","vi":"Barbie","war":"Barbie","wuu":"芭比娃娃","yue":"Barbie","zh":"芭比娃娃"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.75, blue: 0.80},

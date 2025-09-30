@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Theosophy", "he": "תאוסופיה"},
+    titles: {"ar":"ثيوصوفية","az":"Teosofiya","be":"Тэасофія","bg":"Теософия","bn":"দিব্যজ্ঞান","ca":"Teosofia","cs":"Teosofie","cy":"Theosoffi","da":"Teosofi","de":"Theosophie (Blavatsky)","el":"Θεοσοφία","en":"Theosophy","eo":"Teozofio","es":"Teosofía","et":"Teosoofia","eu":"Teosofia","fa":"حکمت الاهی","fi":"Teosofia","fr":"Théosophie","gl":"Teosofía","gsw":"Theosophie","hi":"थियोसोफी","hr":"Teozofija","hu":"Teozófia","hy":"Թեոսոֆիա","ia":"Theosophia","id":"Teosofi","io":"Teozofio","is":"Guðspeki","it":"Teosofia","ja":"神智学","ka":"თეოსოფია","kk":"Теософия","ko":"신지학","ky":"Теософия","la":"Theosophia","lt":"Teosofija","lv":"Teozofija","mg":"Teôzôfia","mk":"Теозофија","mn":"Теософи","nb":"Teosofi","nl":"Theosofie","pl":"Teozofia","pt":"Teosofia","ro":"Teosofie","ru":"Теософия","sh":"Teozofija","si":"පරමවිඥානාර්ථවාදය","simple":"Theosophy","sk":"Teozofia","sl":"Teozofija","sr":"Теозофија","stq":"Theosophie","sv":"Teosofi","ta":"பிரம்மஞானம்","tg":"Ҳикмати илоҳӣ","th":"เทวญาณ","tr":"Teozofi","uk":"Теософія","ur":"تھیوصوفی","uz":"Teosofiya","vi":"Thông thiên học","zh":"神智学","he": "תאוסופיה"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.75, green: 0.5, blue: 0.5},

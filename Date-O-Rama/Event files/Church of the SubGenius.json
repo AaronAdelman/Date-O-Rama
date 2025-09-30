@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Church of the SubGenius"},
+    titles: {"ca":"Església dels SubGenis","en":"Church of the SubGenius","es":"Iglesia de los subgenios","fi":"Church of the SubGenius","fr":"Church of the SubGenius","it":"Chiesa del SubGenio","nb":"Church of the SubGenius","pl":"Kościół SubGeniuszu","pt":"Igreja do Subgênio","ro":"Biserica SubGenius","ru":"Церковь недомудреца","simple":"Church of the SubGenius","uk":"Церква НедоМудреця","vi":"Giáo hội SubGenius"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.50, green: 0.50, blue: 0.50},

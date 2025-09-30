@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Chinese zodiac", "he": "גלגל המזלות הסיני"},
+    titles: {"ar":"الأبراج الصينية","ba":"Мөсәл","ban":"Shio","bew":"Sio","bo":"ལོ་སྐོར་བཅུ་གཉིས་","cdo":"Săng-sáiu","cs":"Čínský zvěrokruh","dz":"ལོཁོར་ཆུཉེ","el":"Κινεζικός ζωδιακός κύκλος","en":"Chinese zodiac","eo":"Ĉina zodiako","eu":"Txinatar horoskopo","fa":"گاه‌شماری جانوری","fi":"Kiinalainen horoskooppi","ga":"Stoidiaca Síneach","gan":"生肖","hak":"Sâng-sêu","hi":"चीनी राशि","hy":"Չինական հորոսկոպ","id":"Shio","ja":"生肖","jv":"Shio","ka":"ჩინური ზოდიაქო","kk":"Мүшел","ko":"띠 (생초)","kw":"Zodiak chinek","ky":"Мүчөл","lt":"Kinų zodiakas","lzh":"生肖","mg":"Zôdiaka sinoa","mn":"Арван хоёр жил","ms":"Zodiak Cina","my":"တရုတ် ဆယ့်နှစ်ရာသီခွင်","mzn":"جوندارون تمنکا","nan":"Seⁿ-siùⁿ","pl":"Zodiak chiński","pt":"Horóscopo chinês","ro":"Zodiacul chinezesc","ru":"Китайский зодиак","simple":"Chinese zodiac","th":"ปีนักษัตร","tr":"Çin burcu","tt":"Мөчәл","ug":"12 مۆچەل","uk":"Китайський зодіак","uz":"Muchal","vi":"Mười hai con giáp","wuu":"生肖","yue":"生肖","za":"Sengsiu","zh":"生肖纪年","he": "גלגל המזלות הסיני"},
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.87, green: 0.16, blue: 0.06},
