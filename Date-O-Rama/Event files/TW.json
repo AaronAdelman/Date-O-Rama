@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/opium-suppression-movement-day/"}, titles: {"en": "Opium Suppression Movement Day", "zh": "禁菸節"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Journalists’ Day", "zh": "記者節"}},
         {type: "D", start: {mon: 9, d: 3}, inherits: "Armed Forces Day"},
-        {type: "D", start: {mon: 9, d: 28}, titles: {"en": "Confucius’s Birthday", "zh": "孔子誕辰紀念日"}, inherits: "Teacher’s Day", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
+        {type: "D", start: {mon: 9, d: 28}, titles: {"en":"Confucius’s Birthday","nl":"Verjaardag van Confucius","uk":"День народження Конфуція","yue":"孔聖誕","zh":"孔子誕辰日"}, inherits: "Teacher’s Day", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {type: "D", start: {mon: 9, d: 29, wkd: [2]}, titles: {"en": "Confucius’s Birthday (in lieu)"}, inherits: "Teacher’s Day", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "Overseas Chinese Day", "zh": "華僑節"}},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Taiwan Retrocession Day", "zh": "臺灣光復節", "zh_CN": "台湾光复节"}, urls: {"en": "https://en.wikipedia.org/wiki/Retrocession_Day"}},
