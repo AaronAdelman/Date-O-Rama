@@ -248,7 +248,6 @@
 		A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
 		A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
-		A56700192C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
 		A567001A2C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */; };
 		A56767572E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
 		A56767582E56F493001F108C /* Chase’s Calendar of Events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767562E56F492001F108C /* Chase’s Calendar of Events.json */; };
@@ -2382,6 +2381,7 @@
 		A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */,
 				A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */,
 				A523A40325A72889007CB54B /* ASAWatchEventsList.swift */,
 				A51B892F2E37C6A1009A8EE1 /* ASAWatchLocationsView.swift */,
@@ -2660,7 +2660,6 @@
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
 				A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */,
-				A56700182C209797002FC870 /* ASAThreeLineLargeView.swift */,
 				A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */,
 				A59C436425A33E5B009C7F7C /* ASATimeText.swift */,
 				A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */,
@@ -3924,7 +3923,6 @@
 				A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */,
 				A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedClock.swift in Sources */,
-				A56700192C209797002FC870 /* ASAThreeLineLargeView.swift in Sources */,
 				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
 				A5B6D01C25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
