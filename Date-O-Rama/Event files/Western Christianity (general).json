@@ -189,7 +189,7 @@
         {type: "D", start: {mon: 9, d: 30}, inherits: "St. Jerome"},
 
         {type: "D", start: {mon: 10, d: 1}, titles: {"en": "Feast of St. Thérèse of the Child Jesus"}},
-        {type: "D", start: {mon: 10, d: 2}, titles: {"en": "Memorial of the Holy Guardian Angels"}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day\nFeast of Guardian Angels\nGuardian Angel Day"}},
+        {type: "D", start: {mon: 10, d: 2}, titles: {"en": "Guardian Angel Day"}, urls: {"en": "https://www.daysoftheyear.com/days/guardian-angel-day/"}, notes: {"en": "Memorial of the Holy Guardian Angels\nGuardian Angels Day\nFeast of Guardian Angels"}},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en": "St. Francis of Assisi Feast Day"}, notes: {"en": "Feast of St. Francis of Assisi"}, urls: {"en": "https://www.daysoftheyear.com/days/st-francis-of-assisi-feast-day/"}, first: {era: 1, y: 1228}},
         {type: "D", start: {mon: 10, d: 5}, titles: {"en": "Feast of St. Faustina Kowalska"}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Feast of St. Bruno"}},

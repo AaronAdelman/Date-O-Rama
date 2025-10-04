@@ -12,7 +12,7 @@
         {inherits: "National Sanctity of Human Life Day", type: "D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
         {inherits: "Shrove Tuesday", type: "D", start: {Easter:  "Easter", offsetD: -47}, inherits: "Paczki Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
-        {titles: {"en": "Bring Your Bible Day"}, notes: {"en": "Bring Your Bible to School Day"}, type: "D", start: {mon: 10, wkd: [5], nth: 1}, first: {era: 1, y: 2014}, urls: {"en": "https://www.focusonthefamily.com/live-it/bring-your-bible/"}, emoji: "📖"},
+        {type: "D", start: {mon: 10, wkd: [5], nth: 1}, titles: {"en": "Bring Your Bible to School Day"}, notes: {"en": "Bring Your Bible Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.focusonthefamily.com/live-it/bring-your-bible/"}, emoji: "📖", notes: {"en": "Created by Focus on the Family"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Church Library Month"}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/church-library-month-october/"}, first: {era: 1, y: 1970}, notes: {"en": "Created by the Evangelical Church Library Association"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Church Safety and Security Month"}, emoji: "🧯🔒", urls: {"en": "https://nationaldaycalendar.com/church-safety-and-security-month-october/"}},
         {type: "D", start: {mon: 10, wkd: [1], nth: 2}, titles: {"en": "Clergy Appreciation Day"}, first: {era: 1, y: 1992}, urls: {"en": "https://www.daysoftheyear.com/days/pastor-appreciation-day/"}, emoji: "👩‍💼👨‍💼", notes: {"en": "Clergy Appreciation National Day of Honor\nPastor Appreciation Day"}},
