@@ -324,7 +324,7 @@
         {type: "nD", start: {mon: 9, d: 27}, end: {mon: 9, d: 29}, titles: {"en": "Porthcawl Elvis Festival"}, urls: {"en": "https://elvies.co.uk/"}, notes: {"en": "Elvis Festival Porthcawl"}, first: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 9, d: 6, thruD: 12, wkd: [6], durationD: 10}, titles: {"en": "Heritage Open Days"}, urls: {"en": "https://www.heritageopendays.org.uk/"}, emoji: "🏰", first: {era: 1, y: 1994}},
         {type: "W", start: {mon: 1, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Energy Savers Week"}, notes: {"en": "Energy Saving Week\nBig Energy Saving Week"}, urls: {"en": "https://www.citizensadvice.org.uk/about-us/our-work/our-campaigns/awareness-raising-campaigns/besw/"}, emoji: "⚡️"},
-        {type: "W", start: {mon: 10, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Curry Week"}, urls: {"en": "https://www.nationalcurryweek.co.uk/"}, first: {era: 1, y: 1998}},
+        {type: "W", start: {mon: 10, fullWk: 1, firstDOfWk: 2}, titles: {"en": "National Curry Week"}, urls: {"en": "https://www.nationalcurryweek.co.uk/"}, first: {era: 1, y: 1998}, notes: {"en": "Created by Peter Grove"}},
         {type: "W", start: {mon: 11, fullWk: -1, firstDOfWk: 2}, inherits: "Great British Game Week", first: {era: 1, y: 2013}, last: {era: 1, y: 2021}, emoji: "🥩🍖"},
         {type: "W", start: {mon: 11, fullWk: -1, firstDOfWk: 2}, inherits: "Road Safety Week", first: {era: 1, y: 1997}, last: {era: 1, y: 2019}},
         {type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, inherits: "Great British Game Week", first: {era: 1, y: 2022}},

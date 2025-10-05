@@ -1968,6 +1968,7 @@
         {type: "W", start: {mon: 1, fullWk: -1}, titles: {"en": "Global Crayola Creativity Week"}, urls: {"en": "https://www.nationaldaycalendar.com/international/global-crayola-creativity-week-last-full-week-in-january"}, first: {era: 1, y: 2025}},
         {type: "W", start: {mon: 1, fullWk: 3}, titles: {"en": "Hunt for Happiness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/hunt-for-happiness-week/"}, emoji: "😄", first: {era: 1, y: 2001}},
         {type: "W", start: {mon: 10, fullWk: -1}, titles: {"en": "Ace Week"}, notes: {"en": "Asexual Awareness Week\nCreated by Sara Beth Brooks"}, first: {era: 1, y: 2010}},
+        {type: "W", start: {mon: 10, fullWk: 1, firstDOfWk: 2}, titles: {"en": "International Plasma Awareness Week"}, notes: {"en": "Created by the Plasma Protein Therapeutics Association (PPTA)"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/international-plasma-awareness-week/"}},
         {type: "W", start: {mon: 10, fullWk: 4}, titles: {"en": "Chicken Soup for the Soul Week"}},
         {type: "W", start: {mon: 11, fullWk: -1}, titles: {"en": "Better Conversations Week"}, urls: {"en": "https://www.daysoftheyear.com/days/better-conversations-week/"}, first: {era: 1, y: 2022}},
         {type: "W", start: {mon: 11, fullWk: 1, firstDOfWk: 2}, inherits: "Children’s Book Week", first: {era: 1, y: 1919}},
