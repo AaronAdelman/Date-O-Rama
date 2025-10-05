@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 4, d: 30}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/soviet-occupation-day/"}, titles: {"en": "Soviet Occupation Day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "Khachapuri Day"}, notes: {"en": "National Khachapuri Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/khachapuri-day/"}},
-        {type: "nD", start: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, titles: {"en": "Tbilisoba"}, urls: {"en": "https://www.daysoftheyear.com/days/tbilisoba/"}, first: {era: 1, y: 1979}},
+        {type: "nD", start: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, titles: {"az":"Tbilisoba","en":"Tbilisoba","eo":"Tbilisoba","fa":"تبیلیسوبا (جشن روز تفلیس)","he":"טביליסובה","hy":"Թբիլիսոբա","ka":"თბილისობა","ru":"Тбилисоба","uk":"Тбілісоба"}, urls: {"en": "https://www.daysoftheyear.com/days/tbilisoba/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Lamproba"}, notes: {"en": "Festival of Lights"}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Day of Victory Over Fascism", urls: {"en": "https://www.officeholidays.com/holidays/georgia/victory-day"}, first: {era: 1, y: 1965}},
         

@@ -7,9 +7,10 @@
     urls: {"en": "https://homebrewersassociation.org/"},
     emoji: "🍻",
     events: [
-        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "Learn to Homebrew Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/learn-to-homebrew-day/"}, first: {era: 1, y: 1999}},
-        {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "Home Fermentation Day"}, notes: {"en": "National Mead Day\nMead Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/home-fermentation-day/"}, first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 5, wkd: [7], nth: 1}, titles: {"en": "National Homebrew Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/big-brew-national-homebrew-day/"}, first: {era: 1, y: 1998}},
+        {type: "D", start: {mon: 8, wkd: [7], nth: 1}, titles: {"en": "Home Fermentation Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/home-fermentation-day/"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 1}, titles: {"en": "National Mead Day"}, notes: {"en": "Mead Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mead-day/"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "Learn to Homebrew Day"}, urls: {"en": "https://homebrewersassociation.org/aha-events/learn-to-homebrew-day/"}, first: {era: 1, y: 1999}},
     ]
 }
 

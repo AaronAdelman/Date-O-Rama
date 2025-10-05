@@ -65,7 +65,7 @@
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "Buy British Day"}, urls: {"en": "https://www.daysoftheyear.com/days/buy-british-day/"}, first: {era: 1, y: 2014}, notes: {"en": "Created by Best of Britannia"}},
         {type: "D", start: {mon: 10, d: 3}, titles: {"en": "British Carrot Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/british-carrot-awareness-day/"}, first: {era: 1, y: 2024}, notes: {"en": "Created by the British Carrot Growers Association (BCGA)"}, emoji: "🥕"},
         {type: "D", start: {mon: 10, d: 31}, inherits: "National Bug Busting Day"},
-        {type: "D", start: {mon: 10, d: 4}, titles: {"en": "No Disposable Cup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/no-disposable-cup-day/"}, emoji: "🥛"},
+        {type: "D", start: {mon: 10, d: 4}, titles: {"en": "No Disposable Cup Day"}, notes: {"en": "No Disposable Cup"}, urls: {"en": "https://www.daysoftheyear.com/days/no-disposable-cup-day/"}, emoji: "🥛"},
         {type: "D", start: {mon: 10, d: 7}, titles: {"en": "Team Margot Stem Cell and Bone Marrow Awareness Day"}, notes: {"en": "Bone Marrow Awareness Day\nTeam Margot Donor Registration Day"}, urls: {"en": "https://www.teammargot.com/team-margot-stem-cell-and-bone-marrow-awareness-day/"}, first: {era: 1, y: 2015}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 10, wkd: [1], nth: 1}, inherits: "Grandparents’ Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 10, wkd: [5], nth: 1}, inherits: "National Poetry Day", urls: {"en": "https://forwardartsfoundation.org/national-poetry-day/"}, emoji: "☂️🐢🍄", first: {era: 1, y: 1994}, notes: {"en": "Created by William Sieghart"}},
