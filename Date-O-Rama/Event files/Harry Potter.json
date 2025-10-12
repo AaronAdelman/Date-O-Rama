@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.1, green: 0.1, blue: 0.1},
     events: [
-        {type: "D", start: {mon: 10, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Harry Potter Book Day"}, notes: {"en": "Harry Potter Book Night"}, urls: {"en": "https://www.bloomsbury.com/uk/discover/harry-potter/harry-potter-book-day/"}, first: {era: 1, y: 2023}, emoji: "📚"},
+        {type: "D", start: {mon: 10, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Harry Potter Book Day"}, notes: {"en": "Harry Potter Book Night\nCreated by Bloomsbury Publishing"}, urls: {"en": "https://www.bloomsbury.com/uk/discover/harry-potter/harry-potter-book-day/"}, first: {era: 1, y: 2023}, emoji: "📚"},
         {type: "D", start: {mon: 10, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Harry Potter Book Night"}, urls: {"en": "https://www.daysoftheyear.com/days/harry-potter-book-day/"}, first: {era: 1, y: 2014}, last: {era: 1, y: 2022}, emoji: "📚"},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en": "Hufflepuff Pride Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hufflepuff-pride-day/"}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Slytherin Pride Day"}, urls: {"en": "https://www.daysoftheyear.com/days/slytherin-pride-day/"}},

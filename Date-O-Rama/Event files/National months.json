@@ -364,8 +364,8 @@
         {type: "M", start: {mon: 9}, titles: {"en": "National Ovarian Cancer Awareness Month"}, urls: {"en": "https://www.aacr.org/patients-caregivers/awareness-months/ovarian-cancer-awareness-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 9}, titles: {"en": "National Piano Month"}, urls: {"en": "https://www.daysoftheyear.com/days/piano-month/"}, emoji: "🎹"},
         {type: "M", start: {mon: 9}, titles: {"en": "National Suicide Prevention Month", "he": "החודש הלאומי למניעת התאבדויות"}, urls: {"en": "https://afsp.org/national-suicide-prevention-month/"}, first: {era: 1, y: 1979}, inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 10}, titles: {"en": "​National Bullying Prevention Month"}, urls: {"en": "https://www.pacer.org/bullying/nbpm/"}, notes: {"en": "Anti-Bullying Month\nBullying Awareness Month\nCreated by PACER"}, first: {era: 1, y: 2006}},
-        {type: "M", start: {mon: 10}, titles: {"en": "​National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1981}, notes: {"en": "Created by the National Coalition Against Domestic Violence"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "National Bullying Prevention Month"}, urls: {"en": "https://www.pacer.org/bullying/nbpm/"}, notes: {"en": "Anti-Bullying Month\nBullying Awareness Month\nCreated by PACER"}, first: {era: 1, y: 2006}},
+        {type: "M", start: {mon: 10}, titles: {"en": "National Domestic Violence Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/domestic-violence-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1981}, notes: {"en": "Created by the National Coalition Against Domestic Violence"}},
         {type: "M", start: {mon: 3}, titles: {"en": "Play-the-Recorder Month"}, notes: {"en": "Play the Recorder Month\nNational Play the Recorder Month"}, urls: {"en": "https://americanrecorder.org/play_the_recorder_month.php"}, first: {era: 1, y: 1992}},
     ],
     templates: [
