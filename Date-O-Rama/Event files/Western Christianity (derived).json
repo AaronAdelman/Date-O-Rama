@@ -54,7 +54,7 @@
         {type: "D", start: {mon: 10, wkd: [6], nth: -1}, titles: {"en": "Frankenstein Friday"}, notes: {"en": "National Frankenstein Friday"}, urls: {"en": "https://www.daysoftheyear.com/days/frankenstein-friday/"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 10, wkd: [6], nth: 2}, titles: {"en": "National Haunted House Day"}, urls: {"en": "https://www.nationalhauntedhouseday.org/"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 10, wkd: [7], nth: -1}, inherits: "National Trick or Treat Day", first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "National Costume Swap Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-costume-swap-day/"}, first: {era: 1, y: 2010}, notes: {"en": "Created by GreenHalloween.org"}},
+        {type: "D", start: {mon: 10, wkd: [7], nth: 2}, titles: {"en": "National Costume Swap Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-costume-swap-day/"}, first: {era: 1, y: 2010}, notes: {"en": "Created by Green Halloween"}},
         {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/deck-the-everything-day/"}, titles: {"en": "Deck the Everything Day"}, first: {era: 1, y: 2023}, emoji: "🎄"},
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "Shopping Reminder Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shopping-reminder-day/"}, emoji: "🎁"},
         {type: "D", start: {mon: 11, d: 28, thruMon: 12, thruD: 4, wkd: [4]}, inherits: "Rockefeller Center Christmas Tree Lighting", first: {era: 1, y: 1931}},
