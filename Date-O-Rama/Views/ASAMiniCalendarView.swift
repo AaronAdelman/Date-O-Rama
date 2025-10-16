@@ -44,7 +44,7 @@ struct ASAOrdinaryCell:  View {
             .padding(1.0)
             .foregroundColor(shouldNoteAsWeekend ? .secondary : .primary)
             .lineLimit(1)
-            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
+//            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAOrdinaryCell
@@ -73,7 +73,7 @@ struct ASAAccentedCell:  View {
                 .padding(1.0)
                 .foregroundColor(.white)
                 .lineLimit(1)
-                .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
+//                .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
     } // var body
@@ -91,7 +91,7 @@ struct ASAWeekdayCell:  View {
             .foregroundColor(isWeekend ? .secondary : .primary)
             .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
-            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
+//            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
     } // var body
 } // struct ASAWeekdayCell
 
@@ -118,6 +118,13 @@ struct ASAMiniCalendarView:  View {
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
     
+    // These control the maximum grid size based on cell/font assumptions
+    private var maxColumns: Int { 10 }
+    private var maxRows: Int { 5 }
+    private var estimatedCellSize: CGFloat { 22 } // Slightly above MINIMUM_CELL_DIMENSION to allow for font/padding
+    private var maxGridWidth: CGFloat { estimatedCellSize * CGFloat(maxColumns) }
+    private var maxGridHeight: CGFloat { estimatedCellSize * CGFloat(maxRows) }
+    
     var weekdayOfDay1:  Int {
             assert(daysPerWeek > 0)
             assert(day > 0)
@@ -138,6 +145,7 @@ struct ASAMiniCalendarView:  View {
     private var gridLayout:  Array<GridItem> {
         get {
             let daysPerRow = monthIsBlank ? daysInMonth : daysPerWeek
+//            let temp:  Array<GridItem> = Array(repeating: GridItem(.fixed(estimatedCellSize)), count: daysPerRow)
             let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerRow)
             return temp
         } // get
@@ -223,6 +231,7 @@ struct ASAMiniCalendarView:  View {
             }
         }
         .environment(\.layoutDirection, (self.characterDirection == Locale.LanguageDirection.leftToRight ? .leftToRight :  .rightToLeft))
+        .frame(maxWidth: maxGridWidth, maxHeight: maxGridHeight, alignment: .center)
     }
 } // struct ASAMiniCalendarView
 
@@ -232,3 +241,4 @@ struct ASAMiniCalendarView_Previews: PreviewProvider {
         ASAMiniCalendarView(daysPerWeek: 7, day: 30, weekday: 1, daysInMonth: 30, localeIdentifier: "en_US", weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], numberFormat: .system, monthIsBlank: false)
     }
 }
+
