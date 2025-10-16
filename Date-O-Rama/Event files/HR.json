@@ -51,7 +51,7 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 9, d: 18}, inherits: "Navy Day", titles: {"en": "Day of the Croatian Navy"}},
         {type: "nD", start: {mon: 10, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Kestenijada"}, emoji: "🌰", urls: {"en": "https://www.daysoftheyear.com/days/kestenijada/"}, first: {era: 1, y: 1997}},
-        {type: "D", start: {mon: 10, d: 18}, titles: {"en": "Interational Necktie Day"}, notes: {"en": "Cravat Day\nAn celebration of a totally useless fashion accessory that may reduce blood flow to the brain."}, first: {era: 1, y: 2008}},
+        {type: "D", start: {mon: 10, d: 18}, titles: {"en": "Interational Necktie Day"}, notes: {"en": "Cravat Day\nAn celebration of a totally useless fashion accessory that may reduce blood flow to the brain."}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/necktie-day/"}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Day of Remembrance of the Holocaust and for the Prevention of Crimes against Humanity"}},
         {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Sinjska Alka"}, urls: {"en": "https://www.alka.hr/en"}, first: {era: 1, y: 1715}},
