@@ -1112,6 +1112,8 @@
 		A5F0F7612B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */; };
 		A5F1ECDF2E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
 		A5F1ECE02E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
+		A5F1ECE42EA2051B000CAB75 /* KP (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */; };
+		A5F1ECE52EA2051B000CAB75 /* KP (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */; };
 		A5F284792E42426200EE4F0C /* JulianDayNumber in Frameworks */ = {isa = PBXBuildFile; productRef = A5F284782E42426200EE4F0C /* JulianDayNumber */; };
 		A5F2847C2E42428000EE4F0C /* JulianDayNumber in Frameworks */ = {isa = PBXBuildFile; productRef = A5F2847B2E42428000EE4F0C /* JulianDayNumber */; };
 		A5F2BE8C287C803E00E7ED0F /* SD (Coptic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */; };
@@ -1821,6 +1823,7 @@
 		A5EFFFFE285B8DF800F2205F /* BH (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BH (Muslim).json"; sourceTree = "<group>"; };
 		A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National Day Calendar®.json"; sourceTree = "<group>"; };
 		A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "NG (Muslim).json"; sourceTree = "<group>"; };
+		A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KP (Chinese).json"; sourceTree = "<group>"; };
 		A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SD (Coptic).json"; sourceTree = "<group>"; };
 		A5F3B0172855FEC700865CEB /* RU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RU.json; sourceTree = "<group>"; };
 		A5F3B01A28563CB000865CEB /* WS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WS.json; sourceTree = "<group>"; };
@@ -2132,6 +2135,7 @@
 				A5E496192862511C001BF40C /* KM.json */,
 				A5E4961F2862522F001BF40C /* KN.json */,
 				A5DEFE8D2822FF4900EF1651 /* KP.json */,
+				A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */,
 				A5DEFE8A2822FE9600EF1651 /* KR.json */,
 				A50DA51128686272008D54AE /* KR (Chinese).json */,
 				A5EFFF6D285B7B1300F2205F /* KW.json */,
@@ -3078,6 +3082,7 @@
 				A5BDE77D26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A502D3E628637E7000A625A9 /* RW.json in Resources */,
 				A5B999BE28622BBA00072FD5 /* CD.json in Resources */,
+				A5F1ECE52EA2051B000CAB75 /* KP (Chinese).json in Resources */,
 				A5746304299C23A600896FC7 /* XK.json in Resources */,
 				A5EFFFCD285B81BD00F2205F /* VN.json in Resources */,
 				A5EFFFBD285B811A00F2205F /* TR.json in Resources */,
@@ -3303,6 +3308,7 @@
 				A5FB22CD2863906100B5042B /* VA.json in Resources */,
 				A54B61B12A9248A9005CC33D /* KZ (Julian).json in Resources */,
 				A581B879284E475600407D68 /* EE.json in Resources */,
+				A5F1ECE42EA2051B000CAB75 /* KP (Chinese).json in Resources */,
 				A5EFFFBC285B811A00F2205F /* TR.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5D8509F280C9139005247BD /* GH.json in Resources */,

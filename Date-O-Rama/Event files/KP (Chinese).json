@@ -1,0 +1,13 @@
+{
+    titles: {"*": "KP"},
+    "//": "North Korea",
+    "TODO": "Korean calendar observances, Chungmyung Day",
+    defaultLocale: "en",
+    calendarCode: "chi",
+    calendarColor: {red: 0.75, green: 0.06, blue: 0.24},
+    first: {era: 1, y: 1948},
+    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
+    events: [
+        {type: "D", start: {mon: 8, d: 14}, inherits: "Chuseok"},
+    ]
+}

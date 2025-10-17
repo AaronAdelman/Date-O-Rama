@@ -38,7 +38,7 @@
         {inherits: "Public Holiday", type: "D", start: {mon: 10, d: 13, era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {inherits: "Public Holiday", type: "D", start: {mon: 10, d: 12, era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 10, wkd: [1], nth: 3}},
-        {type: "D", start: {mon: 10, d: 10, wkd: [2]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 10, d: 10, wkd: [2, 6]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 12}, titles: {"en": "Day of Respect for Cultural Diversity", "es": "Día del Respeto a la Diversidad Cultural"}, urls: {"en": "https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}, first: {era: 1, y: 2010}, notes: {"es": "Día de la Raza"}},
         {type: "D", start: {mon: 10, d: 13, wkd: [2]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 13, wkd: [6]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
