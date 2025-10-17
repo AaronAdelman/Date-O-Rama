@@ -154,7 +154,9 @@
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/"}, first: {era: 1, y: 2011}, emoji: "📱", notes: {"en": "Created by Jerry Brown, Governor of California"}},
         {type: "D", start: {mon: 10, d: 17}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 17}, titles: {"en": "Black Poetry Day"}, urls: {"en": "https://americanwritersmuseum.org/black-poetry-day-resources/"}, first: {era: 1, y: 1985}},
-         {type: "D", start: {mon: 10, d: 18}, titles: {"en": " Alaska Day", "he": "יום אלסקה", "es": "Día de Alaska", "fr": "Jour de l’Alaska"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/national-alaska-day/"}},
+        {type: "D", start: {mon: 10, d: 18}, titles: {"az":"Alyaska günü","bg":"Ден на Аляска","de":"Alaska Day","en":"Alaska Day","es":"Día de Alaska","et":"Alaska päev","he":"יום אלסקה","hu":"Alaszka napja","hy":"Ալյասկայի օր","id":"Hari Alaska","ja":"アラスカの日","ms":"Hari Alaska","pnb":"یوم الاسکا","ru":"День Аляски","ta":"அலாஸ்கா நாள்","tl":"Araw ng Alaska","tr":"Alaska Günü","uk":"День Аляски","ur":"یوم الاسکا", "fr": "Jour de l’Alaska"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/national-alaska-day/"}},
+        {type: "D", start: {mon: 10, d: 17, wkd: [6]}, inherits: "Alaska Day (in lieu)", first: {era: 1, y: 1917}},
+        {type: "D", start: {mon: 10, d: 19, wkd: [2]}, inherits: "Alaska Day (in lieu)", first: {era: 1, y: 1917}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "National Check Your Meds Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-check-your-meds-day/"}, first: {era: 1, y: 2017}, emoji: "💊"},
         {type: "D", start: {mon: 10, d: 26}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Chicken Fried Steak Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chicken-fried-steak-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Texas Chicken Fried Steak Day"}},
@@ -731,5 +733,6 @@
         {template: "Earned Income Tax Credit Awareness Day", type: "D", start: {mon: 1, d: 17}, titles: {"en": "Earned Income Tax Credit Awareness Day"}, urls: {"en": "https://www.checkiday.com/a278c27ff0d32308d4c24630415a9f01/earned-income-tax-credit-awareness-day"}, notes: {"en": "EITC Awareness Day"}, emoji: "🧮"},
         {template: "Inauguration Day", type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, titles: {"en": "Inauguration Day"}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}},
         {template: "Bennington Battle Day (in lieu)", type: "D", start: {mon: 8, d: 15, wkd: [6]}, titles: {"en": "Bennington Battle Day (in lieu)"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
+        {template: "Alaska Day (in lieu)", type: "D", start: {mon: 10, d: 17, wkd: [6]}, titles: {"en":"Alaska Day (in lieu)","he":"יום אלסקה (במקומו)"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/alaska-day"}},
     ]
 }
