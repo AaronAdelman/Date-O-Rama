@@ -58,7 +58,7 @@
         {type: "M", start: {mon: 10}, titles: {"en": "Emotional Wellness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/emotional-wellness-month/"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Eye Injury Prevention Month"}, urls: {"en": "https://nationaltoday.com/eye-injury-prevention-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 10}, titles: {"en": "Financial Planning Month"}, urls: {"en": "https://www.daysoftheyear.com/days/financial-planning-month/"}, first: {era: 1, y: 2002}, notes: {"en": "Created by the Financial Planning Association (FPA)"}},
-        {type: "M", start: {mon: 10}, titles: {"en": "​Global Diversity Awareness Month"}, urls: {"en": "https://thediversitymovement.com/global-diversity-awareness-month/"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "Global Diversity Awareness Month"}, urls: {"en": "https://thediversitymovement.com/global-diversity-awareness-month/"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Health Literacy Month"}, urls: {"en": "https://healthliteracymonth.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 1999}, notes: {"en": "Created by Helen Osborne"}},
         {type: "M", start: {mon: 10}, titles: {"en": "Healthy Lung Month"}, inherits: "*MedAwareness*", urls: {"en": "https://www.daysoftheyear.com/days/healthy-lung-month/"}, emoji: "🫁"},
         {type: "M", start: {mon: 10}, titles: {"en": "International AAC Awareness Month"}, urls: {"en": "https://isaac-online.org/english/aac-awareness/"}, first: {era: 1, y: 2007}},

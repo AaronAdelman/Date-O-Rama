@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Founding of the Republic of China"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, titles: {"en": "Republic Day Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
+        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "Republic Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
         {type: "D", start: {mon: 2, d: 27, wkd: [2]}, titles: {"en": "Peace Memorial Day Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "228 Memorial Day", "zh": "228和平紀念日"}, urls: {"en": "https://nationaltoday.com/228-memorial-day/"}, first: {era: 1, y: 1995}, notes: {"en": "Peace Memorial Day"}},
         {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}, titles: {"en": "Peace Memorial Day (in lieu)"}},
