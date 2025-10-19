@@ -49,7 +49,7 @@
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 10, wkd: [4], nth: 3}, titles: {"en": "National Ride2Work Day"}, urls: {"en": "https://bicyclenetwork.com.au/rides-and-events/ride2work/"}, first: {era: 1, y: 1994}, emoji: "🚲"},
         {type: "D", start: {mon: 10, d: 19, thruD: 25, wkd: [4]}, titles: {"en": "Geelong Cup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/geelong-cup-day/"}, first: {era: 1, y: 1872}, emoji: "🐴"},
-        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Kangaroo Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-kangaroo-awareness-day/"}, emoji: "🦘", first: {era: 1, y: 1985}},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "National Kangaroo Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-kangaroo-awareness-day/"}, emoji: "🦘", first: {era: 1, y: 1985}, notes: {"en": "Save Kangaroos Day\nCreated by Friends of Mother Earth Inc"}},
         {type: "D", start: {mon: 10, d: 8}, inherits: "International Lesbian Day", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 10, wkd: [2], nth: 1}, inherits: "King’s Birthday", urls: {"en": "https://www.officeholidays.com/holidays/australia/queensland/australia-kings-birthday"}, locations: {"en": "Queensland"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 10, wkd: [3], nth: 2}, titles: {"en": "Headspace Day"}, first: {era: 1, y: 2016}, urls: {"en": "https://www.checkiday.com/b5b51bd1a3fc15bcb01959a412e83542/headspace-day-australia"}},

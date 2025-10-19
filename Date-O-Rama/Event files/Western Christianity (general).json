@@ -265,7 +265,7 @@
 
         
         {inherits: "St. Florian’s Day", type: "D", start: {mon: 5, d: 4}},
-        {inherits: "St. Leopold’s Day", type: "D", start: {mon: 11, d: 15}},
+        {type: "D", start: {mon: 11, d: 15}, inherits: "St. Leopold’s Day"},
         {inherits: "St. Maroun Day", type: "D", start: {mon: 2, d: 9}},
         {inherits: "St. Rosalia", type: "D", start: {mon: 7, d: 14}},
         {inherits: "St. Vladimir", type: "D", start: {mon: 7, d: 15}},

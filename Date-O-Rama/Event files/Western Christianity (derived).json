@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Chucky, the Notorious Killer Doll Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/chucky-the-notorious-killer-doll-day-october-25"}},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Crisp Sandwich Day"}, urls: {"en": "https://vole.wtf/crisp-sandwich-day/"}, first: {era: 1, y: 2022}, emoji: "🥪"},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Pumpkin Day", "he": "יום הדלעת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pumpkin-day/"}, emoji: "🎃"},
-        {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Worldwide Howl at the Moon Night"}, notes: {"en": "Howl at the Moon Day"}, urls: {"en": "https://nationaltoday.com/worldwide-howl-at-the-moon-night/"}, first: {era: 1, y: 2009}, emoji: "🐺"},
+        {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Howl at the Moon Day"}, notes: {"en": "Worldwide Howl at the Moon Night\nCreated by Johnny DePalma"}, urls: {"en": "https://www.daysoftheyear.com/days/howl-at-the-moon-day/"}, first: {era: 1, y: 2009}, emoji: "🐺"},
         {type: "D", start: {mon: 10, d: 27}, inherits: "National Black Cat Day"},
         {type: "D", start: {mon: 10, d: 30}, inherits: "Haunted Refrigerator Night"},
         {type: "D", start: {mon: 10, d: 30}, titles: {"en": "Create a Great Funeral Day"}, urls: {"en": "https://www.daysoftheyear.com/days/create-a-great-funeral-day/"}, first: {era: 1, y: 1999}, emoji: "⚰️⚱️⚱"},
@@ -180,7 +180,7 @@
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en": "Created by Merlin Tuttle"}, nonoverlappingSubEvents: [
-            {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}},
+            {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}, notes: {"en": "Created by Bat Conservation International"}},
         ]},
         
         {type: "nD", start: {mon: 12, d: 1, durationD: 7}, titles: {"en": "National Cookie Cutter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, first: {era: 1, y: 1996}, nonoverlappingSubEvents: [
