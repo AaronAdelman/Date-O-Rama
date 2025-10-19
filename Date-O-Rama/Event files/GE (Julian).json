@@ -12,15 +12,15 @@
 
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Alilo Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/alilo-parade/"}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {inherits: "St. Andrew’s Day", type: "D", start: {mon: 4, d: 29}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God", urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God", urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
 
-        {type: "D", start: {Easter:  "Easter"}, titles: {"en": "Lelo Burti"}, urls: {"en": "https://www.daysoftheyear.com/days/lelo-burti/"}},
+        {type: "D", start: {Easter: "Easter"}, titles: {"en": "Lelo Burti"}, urls: {"en": "https://www.daysoftheyear.com/days/lelo-burti/"}},
 
     ]
 }

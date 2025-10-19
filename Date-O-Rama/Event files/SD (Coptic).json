@@ -8,6 +8,6 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     events: [
         {type: "D", start: {mon: 4, d: 29}, inherits: "Coptic Christmas Day"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday", calendarCode: "jul"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday", calendarCode: "jul"},
     ]
 }

@@ -8,11 +8,11 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
 
-        {type: "D", start: {Easter:  "Easter", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 50}, inherits: "Whit Monday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
     ]
 }
 

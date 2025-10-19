@@ -38,7 +38,7 @@
             {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Maleye"}, urls: {"en": "https://www.fsofcabal.com/holydays/05-73-maleye"}, inherits: "Eye Day"},
         ]},
         
-        {type: "D", start: {Easter:  "Easter"}, titles: {"en": "Erister"}, notes: {"en": "Whollyday"}},
+        {type: "D", start: {Easter: "Easter"}, titles: {"en": "Erister"}, notes: {"en": "Whollyday"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://www.fsofcabal.com/holydays/01-01-new-years-day"}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Bogey’s Day"}, inherits: "HDH"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Nude Year’s Day"}, notes: {"en": "Whollyday\n1 Chaos"}, inherits: "EDH"},

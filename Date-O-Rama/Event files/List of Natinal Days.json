@@ -12,6 +12,6 @@ events: [
 {type: "D", start: {mon: 10, d: 1}, titles: {"en": "FellowPino Day"}, urls: {"en": "https://www.listofnationaldays.com/october-1st-fellowpino-day/"}, first: {era: 1, y: 2022}, emoji: "🇵🇭🇺🇸"},
 {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Pancit Day"}, urls: {"en": "https://www.listofnationaldays.com/april-9th-pancit-day/"}, first: {era: 1, y: 2022}},
 {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Lumpia Day"}, urls: {"en": "https://www.listofnationaldays.com/march-16th-lumpia-day/"}, first: {era: 1, y: 2023}},
-{type: "D", start: {Easter:  "Easter", offsetD: 6}, titles: {"en": "Kain Tayo Day"}, urls: {"en": "https://www.listofnationaldays.com/kain-tayo/"}, notes: {"en": "Created by Willy Santos"}, first: {era: 1, y: 2025}},
+{type: "D", start: {Easter: "Easter", offsetD: 6}, titles: {"en": "Kain Tayo Day"}, urls: {"en": "https://www.listofnationaldays.com/kain-tayo/"}, notes: {"en": "Created by Willy Santos"}, first: {era: 1, y: 2025}},
 ]
 }
