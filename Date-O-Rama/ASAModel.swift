@@ -533,7 +533,7 @@ extension ASAModel {
     @MainActor func addMainClock(clock: ASAClock, location: ASALocation) {
         for i in 0..<self.mainClocks.count {
             if self.mainClocks[i].location == location {
-                self.mainClocks[i].clocks.insert(clock, at: 0)
+                self.mainClocks[i].clocks.append(clock)
                 self.savePreferences(code: .clocks)
                 return
             }

@@ -28,23 +28,35 @@ struct ASADateORamaApp: App {
     
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
     
-    let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
-        ("gre", .gregorian),
-        ("tha", .buddhist),
-        ("chi", .chinese),
-        ("cop", .coptic),
-        ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
-        ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
-        ("Hebrew", .hebrew),
-        ("ind", .indian),
-        ("Islamic", .islamic),
-        ("IslamicCivil", .islamicCivil),
-        ("IslamicTabular", .islamicTabular),
-        ("IslamicUmmAlQura", .islamicUmmAlQura),
-        ("kok", .japanese),
-        ("his", .persian),
-        ("min", .republicOfChina)
+    let availableCalendars: [ASACalendarCode] = [
+        .Gregorian,
+        .Buddhist,
+        .Chinese,
+        .Coptic,
+        .EthiopicAmeteAlem,
+        .EthiopicAmeteMihret,
+        .Hebrew,
+        .Indian,
+        .Islamic,
+        .IslamicCivil,
+        .IslamicTabular,
+        .IslamicUmmAlQura,
+        .Japanese,
+        .Persian,
+        .RepublicOfChina,
+        .bangla,
+        .dangi,
+        .gujarati,
+        .kannada,
+        .malayalam,
+        .marathi,
+        .odia,
+        .tamil,
+//        .telugu,
+        .vietnamese,
+//        .vikram,
     ]
+    // TODO:  Selecting the Telugu and Vikram calendars causes a crash due to some sort of range error.  Why?
     
     var body: some Scene {
         WindowGroup {
@@ -67,12 +79,13 @@ struct ASADateORamaApp: App {
                                 .datePickerStyle(.compact)
                                 
                                 Menu {
-                                    ForEach(availableCalendars, id: \.calendar) { calendarInfo in
+                                    ForEach(availableCalendars, id: \.self) { calendarInfo in
                                         Button {
-                                            selectedCalendar = Calendar(identifier: calendarInfo.calendar)
+                                            selectedCalendar = Calendar(identifier: calendarInfo.equivalentCalendarIdentifier!)
                                         } label: {
-                                            Label(NSLocalizedString(calendarInfo.name, comment: ""), systemImage:
-                                                    selectedCalendar.identifier == calendarInfo.calendar ? "checkmark" : "")
+                                            Label(
+                                                NSLocalizedString(calendarInfo.localizedName, comment: ""), systemImage:
+                                                    selectedCalendar.identifier == calendarInfo.equivalentCalendarIdentifier ? "checkmark" : "")
                                         }
                                     }
                                 } label: {

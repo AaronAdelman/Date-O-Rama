@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Discordianism", "he": "דיסקורדיאניזם"},
+    titles: {"ar":"ديسكوردية","arz":"الديسكورديه","az":"Diskordianizm","bg":"Дискордианство","ca":"Discordianisme","cs":"Diskordianismus","da":"Discordianisme","de":"Diskordianismus","en":"Discordianism","eo":"Diskordianismo","es":"Discordianismo","et":"Diskordiaanlus","fi":"Diskordianismi","fr":"Discordianisme","gl":"Discordianismo","he":"דיסקורדיאניזם","hr":"Diskordijanizam","it":"Discordianesimo","ja":"ディスコーディアニズム","ka":"დისკორდიანიზმი","la":"Discordianismus","mk":"Дискордијанизам","ml":"ഡിസ്കോർഡിയനിസം","nl":"Discordianisme","pl":"Dyskordianizm","pt":"Discordianismo","ru":"Дискордианизм","sh":"Diskordijanizam","sv":"Discordianism","tr":"Discordianizm","uk":"Дискордіанізм","zh":"狄斯科蒂亚信仰"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
@@ -38,7 +38,7 @@
             {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Maleye"}, urls: {"en": "https://www.fsofcabal.com/holydays/05-73-maleye"}, inherits: "Eye Day"},
         ]},
         
-        {type: "D", start: {Easter:  "Easter"}, titles: {"en": "Erister"}, notes: {"en": "Whollyday"}},
+        {type: "D", start: {Easter: "Easter"}, titles: {"en": "Erister"}, notes: {"en": "Whollyday"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://www.fsofcabal.com/holydays/01-01-new-years-day"}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Bogey’s Day"}, inherits: "HDH"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Nude Year’s Day"}, notes: {"en": "Whollyday\n1 Chaos"}, inherits: "EDH"},

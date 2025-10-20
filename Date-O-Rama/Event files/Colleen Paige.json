@@ -32,6 +32,6 @@
     ],
     templates: [
         {template: "National Mutt Day", type: "D", start: {mon: 7, d: 31}, titles: {"en": "National Mutt Day", "he": "יום הכלב המעורב"}, urls: {"en": "https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en": "National Mixed Breed Dog Day"}},
-        {template: "​National Wildlife Day", type: "D", start: {mon: 9, d: 4}, titles: {"en": "​National Wildlife Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
+        {template: "​National Wildlife Day", type: "D", start: {mon: 9, d: 4}, titles: {"en": "National Wildlife Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
     ]
 }

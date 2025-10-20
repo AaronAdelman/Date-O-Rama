@@ -339,7 +339,7 @@
         {type: "D", start: {mon: 10, d: 7}, titles: {"en": "National Jonathan Day"}},
         {type: "D", start: {mon: 10, d: 8}, titles: {"en": "National Justin Day"}},
         {type: "D", start: {mon: 10, d: 8}, titles: {"en": "National Lance Day"}},
-        {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Hug-a-Kevin Day"}, urls: {"en": "https://www.broadwayworld.com/bwwtv/article/ABC-Declares-Tuesday-October-10-National-Hug-A-Kevin-Day-in-Honor-of-KEVIN-PROBABLY-SAVES-THE-WORLD-20171005"}, notes: {"en": "National Kevin Day"}, first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Hug a Kevin Day"}, notes: {"en": "National Hug-a-Kevin Day\nNational Kevin Day\nThis is a promotional event for the show Kevin (Probably) Saves the World.\nCreated by ABC"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hug-a-kevin-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Porter Day"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Kim Day"}},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "National Kimberly Day"}},

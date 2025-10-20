@@ -109,12 +109,14 @@ enum ASACalendarType {
 
 extension ASACalendarCode {
     var localizedName:  String {
-        let identifier = self.equivalentCalendarIdentifier
-        if identifier != nil {
+        switch self {
+        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate, .FrenchRepublican, .FrenchRepublicanRomme, .Hebrew, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .Julian:
+            return NSLocalizedString(self.rawValue, comment: "")
+
+        default:
+            let identifier = self.equivalentCalendarIdentifier
             return Locale.current.localizedString(for: identifier!) ?? "???"
         }
-        
-        return NSLocalizedString(self.rawValue, comment: "")
     } // var localizedName
 
     var isAppleCalendar:  Bool {

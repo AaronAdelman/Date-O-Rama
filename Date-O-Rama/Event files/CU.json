@@ -9,8 +9,8 @@
     events: [
         {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, titles: {"en": "Triumph of the Revolution"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
         {inherits: "Victory Day", type: "D", start: {mon: 1, d: 2}},
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
         {type: "D", start: {mon: 7, d: 25}, titles: {"en": "Day before the Commemoration of the Assault of the Moncada Garrison", "es": "Conmemoración del asalto a Moncada"}, notes: {"en": "Revolution Anniversary Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/cuba/revolution-anniversary-holiday"}},
         {type: "D", start: {mon: 7, d: 26}, titles: {"en": "National Rebellion Day", "he": "יום המרד הלאומי", "es": "Día de la Rebeldía Nacional"}, notes: {"en": "Commemoration of the Assault of the Moncada Garrison\nNational Revolution Day"}, urls: {"en": "https://nationaltoday.com/national-rebellion-day-cuba/"}},

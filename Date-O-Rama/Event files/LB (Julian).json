@@ -6,8 +6,8 @@
     calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Lebanon"},
     events: [
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         
     ]
 }

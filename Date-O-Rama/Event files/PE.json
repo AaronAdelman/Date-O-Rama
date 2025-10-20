@@ -8,9 +8,9 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Peru"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {Easter:  "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 6, d: 7}, inherits: "Battle of Arica", urls: {"en": "https://www.officeholidays.com/holidays/peru/battle-of-arica-and-flag-day"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 7}, inherits: "Flag Day", urls: {"en": "https://www.officeholidays.com/holidays/peru/battle-of-arica-and-flag-day"}, first: {era: 1, y: 2024}},

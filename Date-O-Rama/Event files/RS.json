@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 5, d: 4, wkd: [3]}, inherits: "Labour Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/serbia/labour-day"}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day", urls: {"en": "https://www.officeholidays.com/holidays/serbia/victory-day"}},
         {inherits: "St. Vitus Day", type: "D", start: {mon: 6, d: 28}},
-        {type: "D", start: {mon: 10, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/serbia-remembrance-day"}, inherits: "Remembrance Day", titles: {"en": "World War II Serbian Victims Remembrance Day", "sr-Cyrl": "Дан сећања на српске жртве у Другом светском рату", "sr-Latn": "Dan sećanja na srpske žrtve u Drugom svetskom ratu    "}},
+        {type: "D", start: {mon: 10, d: 21}, titles: {"en": "World War II Serbian Victims Remembrance Day", "sr-Cyrl": "Дан сећања на српске жртве у Другом светском рату", "sr-Latn": "Dan sećanja na srpske žrtve u Drugom svetskom ratu"}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/serbia-remembrance-day"}, inherits: "Remembrance Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},

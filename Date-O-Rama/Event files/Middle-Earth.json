@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Middle-Earth", "he": "הארץ התיכונה"},
+    titles: {"af":"Middelaarde","an":"Tierra Meya","ar":"الأرض الوسطى","az":"Orta Dünya","azb":"اورتا دونیا","bar":"Mittlerdn","be":"Серадзем’е","be-tarask":"Міжзем’е","bg":"Средна земя","br":"Douar-ar-C'hreiz","bs":"Srednja zemlja","ca":"Terra Mitjana","cs":"Středozem","cy":"Middle Earth","da":"Midgård (Tolkien)","diq":"Cihano Miyanên","el":"Μέση Γη","en":"Middle-earth","eo":"Mez-Tero","es":"Tierra Media","et":"Keskmaa","eu":"Erdialdeko Lurraldea","fa":"سرزمین میانه","fi":"Keski-Maa","fr":"Terre du Milieu","ga":"An Meán-domhan","gd":"Meadhan-talmhainn (Tolkien)","gl":"Terra Media","he":"הארץ התיכונה","hr":"Međuzemlje","hu":"Középfölde","hy":"Միջերկիր","ia":"Terra Medie","id":"Dunia Tengah","io":"Mezotero","is":"Miðgarður (Tolkien)","it":"Terra di Mezzo","ja":"中つ国 (トールキン)","ka":"შუახმელეთი","kk":"Ортадүние","ko":"가운데땅","ku":"Cîhana Navîn","la":"Terra Media","lfn":"Tera Media","lt":"Viduržemis","lv":"Viduszeme","mk":"Средна земја","nb":"Midgard (Tolkien)","nl":"Midden-aarde","nn":"Midgard i Tolkien-verda","oc":"Tèrra Mejana","pl":"Śródziemie","pt":"Terra Média","ro":"Pământul de Mijloc","ru":"Средиземье","sh":"Međuzemlje","sk":"Stredozem","sl":"Srednji svet","sq":"Toka e mesme","sr":"Средња земља","sv":"Midgård (Tolkien)","ta":"மத்திய-பூமி","th":"มิดเดิลเอิร์ธ","tr":"Orta Dünya","uk":"Середзем'я","vi":"Trung Địa","vro":"Keskmaa","wuu":"中土大陆","yue":"中土世界","zh":"中土大陸"},
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {red: 0.3, green: 1.0, blue: 0.3},
@@ -7,8 +7,11 @@
     events: [
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "J.R.R. Tolkien Day"}, urls: {"en": "https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inherits: "*BDay*", first: {era: 1, y: 1892}},
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Tolkien Reading Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tolkien-reading-day/"}, first: {era: 1, y: 2003}, emoji: "📚"},
-        {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, urls: {"en": "https://www.daysoftheyear.com/days/hobbit-day/"}, notes: {"en": "National Hobbit Day"}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Gondorian New Year"}, notes: {"en": "From The Lord of the Rings"}},
         {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Durin’s Day"}, notes: {"en": "From The Lord of the Rings"}},
+
+        {type: "nD", start: {mon: 9, d: 16, thruD: 22, wkd: [1], durationD: 7}, titles: {"en": "Tolkien Week"}, urls: {"en": "https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en": "Created by the American Tolkien Society"}, first: {era: 1, y: 1978}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, urls: {"en": "https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en": "National Hobbit Day\nCreated by the American Tolkien Society"}, first: {era: 1, y: 1978}},
+        ]},
     ]
 }

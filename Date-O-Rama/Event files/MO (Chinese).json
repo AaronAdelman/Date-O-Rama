@@ -1,6 +1,6 @@
 {
     titles: {"*": "MO"},
-    "//": "Macau",
+    "//": "Macau, AKA Macao",
     defaultLocale: "en",
     calendarCode: "chi",
     calendarColor: {red: 0.06, green: 0.46, blue: 0.38},

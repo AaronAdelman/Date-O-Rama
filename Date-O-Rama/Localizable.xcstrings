@@ -2167,13 +2167,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "French Republican"
+            "value" : "French Republican Calendar"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הרפובליקה הצרפתית"
+            "value" : "לוח השנה הרפובליקני הצרפתי"
           }
         }
       }
@@ -2184,13 +2184,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "French Republican (Romme)"
+            "value" : "French Republican Calendar (Romme)"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הרפובליקה הצרפתית (רום)"
+            "value" : "לוח השנה הרפובליקני הצרפתי (רום)"
           }
         }
       }
@@ -2368,7 +2368,7 @@
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "עברי (יום מתחיל בחצות הלילה)"
+            "value" : "לוח השנה העברי (יום מתחיל בחצות הלילה)"
           }
         }
       }
@@ -2402,7 +2402,7 @@
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "עברי (מגן אברהם)"
+            "value" : "לוח השנה העברי (מגן אברהם)"
           }
         }
       }
@@ -2484,13 +2484,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Islamic (midnight day start)"
+            "value" : "Islamic Calendar (midnight day start)"
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "מוסלמי (יום מתחיל בחצות הלילה)"
+            "state" : "needs_review",
+            "value" : "לוח השנה ההיג׳רי (יום מתחיל בחצות הלילה)"
           }
         }
       }
@@ -2501,13 +2501,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Islamic Civil (midnight day start)"
+            "value" : "Islamic Civil Calendar (midnight day start)"
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "מוסלמי אזרחי (יום מתחיל בחצות הלילה)"
+            "state" : "needs_review",
+            "value" : "לוח השנה ההיג׳רי האזרחי (יום מתחיל בחצות הלילה)"
           }
         }
       }
@@ -2552,13 +2552,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Islamic Tabular (midnight day start)"
+            "value" : "Islamic Tabular Calendar (midnight day start)"
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "מוסלמי טבלאי (יום מתחיל בחצות הלילה)"
+            "state" : "needs_review",
+            "value" : "לוח השנה ההיג׳רי (טבלאי) (יום מתחיל בחצות הלילה)"
           }
         }
       }
@@ -2586,13 +2586,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Islamic Umm Al-Qura (midnight day start)"
+            "value" : "Islamic Umm Al-Qura Calendar (midnight day start)"
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "מוסלמי אום אל־קורה (יום מתחיל בחצות הלילה)"
+            "state" : "needs_review",
+            "value" : "לוח השנה ההיג׳רי (אום אל־קורה) (יום מתחיל בחצות הלילה)"
           }
         }
       }
@@ -3095,7 +3095,7 @@
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "יוליאני"
+            "value" : "לוח השנה היוליאני"
           }
         }
       }

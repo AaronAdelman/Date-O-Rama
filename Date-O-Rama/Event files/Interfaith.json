@@ -5,6 +5,7 @@
     calendarColor: {red: 0.8, green: 0.8, blue: 0.98},
     first: {era: 1, y: 1950},
     events: [
+        {type: "D", start: {mon: 9, d: 30}, titles: {"en": "Blasphemy Day"}, first: {era: 1, y: 2009}, urls: {"en": "https://www.daysoftheyear.com/days/blasphemy-day/"}, notes: {"en": "International Blasphemy Rights Day\nInternational Blasphemy Day\nCreated by the Center for Inquiry"}},
         {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "World Peace & Prayer Day"}, notes: {"en": "World Peace and Prayer Day"}, urls: {"en": "https://www.worldpeaceandprayer.com/"}, emoji: "⭕", first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 1, wkd: [1], nth: 3}, titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/religion-day/"}},
         {type: "D", start: {mon: 10, d: 27}, titles: {"en": "International Religious Freedom Day", "he": "יום חופש הדת הבינלאומי"}},

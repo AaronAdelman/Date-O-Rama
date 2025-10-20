@@ -1,0 +1,9 @@
+{
+    titles: {"en": "Confucianism (supplemental)", "he": "קונפוציאניזם (נוספים)"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.2, green: 0.79, blue: 0.25},
+    events: [
+        {type: "D", start: {mon: 9, d: 29}, titles: {"en": "Confucius Day"}, urls: {"en": "https://www.daysoftheyear.com/days/confucius-day/"}},
+    ]
+}

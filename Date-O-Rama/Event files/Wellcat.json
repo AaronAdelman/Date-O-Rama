@@ -80,7 +80,7 @@
             {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Dear Diary Day"}},
             {type: "D", start: {mon: 9, d: 28}, titles: {"en": "Fish Tank Floorshow Night"}},
             {type: "D", start: {mon: 10, d: 12}, titles: {"en": "International Moment of Frustration Scream Day"}},
-            {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Be Bald and Be Free Day", "he": "יום תהיה קרח וחופשי"}},
+            {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Be Bald and Be Free Day", "he": "יום תהיה קרח וחופשי"}, notes: {"en": "Be Bald and Free Day"}},
             {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Evaluate Your Life Day", "he": "יום ״הערך את החיים שלך״"}},
             {type: "D", start: {mon: 10, d: 27}, titles: {"en": "Cranky Co-Workers Day", "he": "יום השותפים העצבנים לעבודה"}},
             {type: "D", start: {mon: 10, d: 30}, inherits: "Haunted Refrigerator Night"},

@@ -9,13 +9,13 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Eswatini"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 19}, inherits: "King’s Birthday", first: {era: 1, y: 1968}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "National Flag Day", urls: {"en": "https://www.officeholidays.com/holidays/swaziland/swaziland-flag-day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 39}, inherits: "Ascension Day"},
+        {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 7, d: 22}, inherits: "King’s Birthday", titles: {"en": "King Father’s Birthday"}, first: {era: 1, y: 1899}, urls: {"en": "https://www.officeholidays.com/holidays/swaziland/birthday-of-late-king-sobhuza"}},
         {type: "D", start: {mon: 7, d: 24, wkd: [2]}, inherits: "King’s Birthday", urls: {"en": "https://www.officeholidays.com/holidays/swaziland/birthday-of-late-king-sobhuza"}, titles: {"en": "King Father’s Birthday (in lieu)"}, first: {era: 1, y: 1899}},
         

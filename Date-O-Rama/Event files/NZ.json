@@ -19,10 +19,10 @@
         {type: "D", start: {mon: 3, d: 23}, titles: {"en": "Otago Anniversary Day"}, urls: {"en": "https://nationaltoday.com/otago-anniversary-day/"}, first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, inherits: "Otago Anniversary Day (in lieu)", first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 3, d: 24, thruD: 26, wkd: [2]}, inherits: "Otago Anniversary Day (in lieu)", first: {era: 1, y: 1981}},
-        {type: "D", start: {Easter:  "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter:  "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {Easter:  "Easter", offsetD: 2}, titles: {"en": "Southland Anniversary Day"}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 2}, titles: {"en": "Southland Anniversary Day"}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, inherits: "King’s Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/new-zealand-kings-birthday"}},
@@ -110,10 +110,12 @@
         {type: "nD", start: {era: 1, y: 2023, mon: 5, d: 13}, end: {era: 1, y: 2023, mon: 5, d: 20}, inherits: "Techweek"},
         {type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, inherits: "Techweek", first: {era: 1, y: 2024}},
         {type: "W", start: {mon: 6, fullWk: 2, firstDOfWk: 2}, titles: {"en": "Schools Pride Week"}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}, urls: {"en": "https://www.police.govt.nz/about-us/history/memorial/remembrance-day?nondesktop"}},
+        {type: "D", start: {mon: 10, wkd: [6], nth: 2}, titles: {"en": "Vet Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vet-nurse-day/"}, emoji: "👨‍⚕️👩‍⚕️", notes: {"en": "Created by the New Zealand Veterinary Nursing Association"}},
     ],
     templates: [
         {template: "Techweek", type: "W", start: {mon: 5, fullWk: 3, firstDOfWk: 2}, titles: {"en": "Techweek"}, urls: {"en": "https://techweek.co.nz/"}, emoji: "🥽"},
-        {template: "Matariki", type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/matariki"}, titles: {"en": "Matariki"}, emoji: "🌌"},
+        {template: "Matariki", type: "D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/matariki"}, titles: {"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki (cosmologie maorie)","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"}, emoji: "🌌"},
         {template: "Otago Anniversary Day (in lieu)", type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, titles: {"en": "Otago Anniversary Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/otago-anniversary-day/"}},
     ]
 }

@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 11}, inherits: "Proclamation of Independence Day", first: {era: 1, y: 1944}},
-        {type: "nD", start: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inherits: "Amazigh New Year"},
+        {type: "nD", start: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inherits: "Yennayer"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 30}, inherits: "Throne Day", first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 8, d: 14}, inherits: "Oued Ed-Dahab Day"},

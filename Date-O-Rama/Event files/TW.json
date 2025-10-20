@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Founding of the Republic of China"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, titles: {"en": "Republic Day Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
+        {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "Republic Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
         {type: "D", start: {mon: 2, d: 27, wkd: [2]}, titles: {"en": "Peace Memorial Day Holiday"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "228 Memorial Day", "zh": "228和平紀念日"}, urls: {"en": "https://nationaltoday.com/228-memorial-day/"}, first: {era: 1, y: 1995}, notes: {"en": "Peace Memorial Day"}},
         {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}, titles: {"en": "Peace Memorial Day (in lieu)"}},
@@ -28,10 +28,13 @@
         {type: "D", start: {mon: 5, d: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Literary_Day"}, titles: {"en": "Literary Day", "zh": "五四文藝節", "zh_CN": "五四文艺节"}},
         {type: "D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/opium-suppression-movement-day/"}, titles: {"en": "Opium Suppression Movement Day", "zh": "禁菸節"}},
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Journalists’ Day", "zh": "記者節"}},
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 9, d: 3}},
-        {inherits: "Teacher’s Day", type: "D", start: {mon: 9, d: 28}, titles: {"en": "Confucius’s Birthday", "zh": "孔子誕辰紀念日"}},
+        {type: "D", start: {mon: 9, d: 3}, inherits: "Armed Forces Day"},
+        {type: "D", start: {mon: 9, d: 28}, titles: {"en":"Confucius’s Birthday","nl":"Verjaardag van Confucius","uk":"День народження Конфуція","yue":"孔聖誕","zh":"孔子誕辰日"}, inherits: "Teacher’s Day", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
+        {type: "D", start: {mon: 9, d: 29, wkd: [2]}, titles: {"en": "Confucius’s Birthday (in lieu)"}, inherits: "Teacher’s Day", urls: {"en": "https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "Overseas Chinese Day", "zh": "華僑節"}},
-        {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Taiwan Retrocession Day", "zh": "臺灣光復節", "zh_CN": "台湾光复节"}, urls: {"en": "https://en.wikipedia.org/wiki/Retrocession_Day"}},
+        {type: "D", start: {mon: 10, d: 25}, titles: {"de":"Taiwan-Rückgabe-Tag","en":"Retrocession Day","es":"Adhesión de Taiwán a la República de China","fr":"Jour de la Rétrocession","id":"Hari Penyerahan Kembali","ja":"台湾光復節","ko":"대만광복절","ms":"Hari Penyerahan Kembali","si":"යටත්ව සිටීමෙන් මිදීමේ දිනය","uk":"День ретроцесії Тайваню","vi":"Ngày Tái Độc lập","yue":"臺灣光復節","zh":"臺灣光復節"}, notes: {"en": "Taiwan Retrocession Day"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
+        {type: "D", start: {mon: 10, d: 24, wkd: [6]}, inherits: "Retrocession Day (in lieu)"},
+        {type: "D", start: {mon: 10, d: 26, wkd: [2]}, inherits: "Retrocession Day (in lieu)"},
         {type: "D", start: {mon: 11, d: 12}, titles: {"en": "Sun Yat-sen’s Birthday", "zh": "國父誕辰紀念日"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Constitution Day"},
 
@@ -42,5 +45,9 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 8, wkd: [1], nth: 4}, inherits: "Grandparents’ Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-  ]
+  ],
+    templates: [
+        {template: "Retrocession Day (in lieu)", type: "D", start: {mon: 10, d: 24}, titles: {"en":"Retrocession Day (in lieu)"}, notes: {"en": "Taiwan Retrocession Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
+
+    ]
 }

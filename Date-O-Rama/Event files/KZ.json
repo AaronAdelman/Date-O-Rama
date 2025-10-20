@@ -21,6 +21,7 @@
         {type: "D", start: {mon: 8, d: 30}, inherits: "Constitution Day", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-constitution-day"}},
         {type: "D", start: {mon: 8, d: 31, thruMon: 9, thruD: 1, wkd: [2]}, inherits: "Constitution Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-constitution-day"}},
         {type: "D", start: {mon: 10, d: 25}, inherits: "Republic Day", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-republic-day"}, first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 10, d: 27, wkd: [2]}, inherits: "Republic Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/kazakhstan/kazakhstan-republic-day"}, first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 17}, inherits: "Independence Day", first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/kazakhstan-independence-day/"}},
         {type: "D", start: {mon: 12, d: 18, wkd: [2]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://nationaltoday.com/kazakhstan-independence-day/"}},
         

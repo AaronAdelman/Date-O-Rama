@@ -88,13 +88,11 @@ struct ASALinkedEventCell:  View {
                 }
             }
             .foregroundColor(.accentColor)
-            .onChange(of: action, perform: {
-                newValue
-                in
-                if action == .deleted {
+            .onChange(of: action) { _, newValue in
+                if newValue == .deleted {
                     self.showingEventView = false
                 }
-            })
+            }
             
             if !isForClock {
 #if targetEnvironment(macCatalyst)
@@ -115,3 +113,4 @@ struct ASALinkedEventCell:  View {
 //        ASALinkedEventCell()
 //    }
 //}
+
