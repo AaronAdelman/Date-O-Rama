@@ -8,7 +8,6 @@
 
 import Foundation
 import CoreLocation
-//import UIKit
 import SwiftUI
 
 // MARK: -
@@ -74,7 +73,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
                 return .sunset
             } // switch self.calendarCode
         } // get
-    } //
+    }
     
     fileprivate func invalidTimeString() -> String {
         return NSLocalizedString("NO_SOLAR_TIME", comment: "")
@@ -107,7 +106,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
 //            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Nighttime, transition is at the start of the nighttime")
-            //            let nextDate = now.oneDayAfter
             let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
             let nextEvents = nextDate.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
@@ -120,9 +118,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
             daytime = false
         } else {
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
-            // now < deoptionalizedTransition
-//            let events = now.noon(timeZone: timeZone).solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
-//            let dateToCalculateSolarEventsFor = now.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: now)))
             let dateToCalculateSolarEventsFor = now
           let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
@@ -182,15 +177,10 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
     
     func timeString(
-        hours:  Double, daytime:  Bool, valid:  Bool,
-//        now: Date,
-        localeIdentifier: String, timeFormat: ASATimeFormat
-//        , locationData: ASALocation, transition:  Date??
-    ) -> String {
+        hours:  Double, daytime:  Bool, valid:  Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
         
-//        let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
 //        debugPrint("⌛️", #file, #function, "hours:", hours, "daytime:", daytime as Any, "valid:", valid)
         if !valid {
             return invalidTimeString()
@@ -204,15 +194,8 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         switch timeFormat {
         case .decimalTwelveHour:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
-            
-            //        case .JewishCalendricalCalculation:
-            //            result = self.JewishCalendricalCalculationTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
-            
-        case
-            //            .short,
-                .medium
-            //            , .long, .full
-            :
+                        
+        case .medium:
             result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
             
         default:
@@ -237,11 +220,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
-    
-    //    func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
-    //        return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  1080.0, secondsPerMinutes:  76.0, minimumHourDigits:  1, minimumMinuteDigits:  4, minimumSecondDigits:  2)
-    //    } // func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
-    
+        
     func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  60.0, secondsPerMinute:  60.0, minimumHourDigits:  1, minimumMinuteDigits:  2, minimumSecondDigits:  2)
     } // func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
@@ -291,7 +270,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         
         var timeString:  String = ""
         if timeFormat != .none {
-//            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
             let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
             timeString = self.timeString(hours: hours, daytime: daytime, valid: valid, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
