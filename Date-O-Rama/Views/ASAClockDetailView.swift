@@ -141,7 +141,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     var body:  some View {
         if builtInEventCalendarFileData.records.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
-                if selectedClock.calendar.calendarCode == .Gregorian {
+                if selectedClock.calendar.calendarCode == .gregorian {
                     Picker(selection: $selection, label:
                             Text("Show built-in event calendars:").bold().underline(), content: {
                         ForEach(ASARegionCodeRegion.allCases) {
@@ -150,7 +150,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                     })
                 }
                 
-                let records = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileData.records.filter({$0.fileName.regionCodeRegion == selection}) : builtInEventCalendarFileData.records
+                let records = selectedClock.calendar.calendarCode == .gregorian ? builtInEventCalendarFileData.records.filter({$0.fileName.regionCodeRegion == selection}) : builtInEventCalendarFileData.records
                 ForEach(records, id: \.fileName) {
                     record
                     in

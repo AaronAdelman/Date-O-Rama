@@ -99,52 +99,52 @@ extension String {
     var defaultCalendarCodes: Array<ASACalendarCode> {
         switch self {
         case REGION_CODE_Afghanistan, REGION_CODE_Iran:
-            return [.Gregorian, .Persian, .IslamicSolar]
+            return [.gregorian, .persian, .islamicSolarTime]
             
         case REGION_CODE_Ethiopia:
-            return [.Gregorian, .EthiopicAmeteMihret]
+            return [.gregorian, .ethiopicAmeteMihret]
             
         case REGION_CODE_Japan:
-            return [.Gregorian, .Japanese]
+            return [.gregorian, .japanese]
             
         case REGION_CODE_Taiwan:
-            return [.Gregorian, .RepublicOfChina, .Chinese]
+            return [.gregorian, .republicOfChina, .chinese]
             
         case REGION_CODE_Thailand:
-            return [.Gregorian, .Buddhist, .IslamicSolar]
+            return [.gregorian, .buddhist, .islamicSolarTime]
             
         case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine, REGION_CODE_Burundi, REGION_CODE_Burkina_Faso, REGION_CODE_Cameroon, REGION_CODE_Central_African_Republic, REGION_CODE_Chad, REGION_CODE_Comoros, REGION_CODE_Cote_dIvoire, REGION_CODE_Djibouti, REGION_CODE_Gabon, REGION_CODE_Gambia, REGION_CODE_Ghana, REGION_CODE_Guinea, REGION_CODE_Guinea_Bissau, REGION_CODE_Guyana, REGION_CODE_Azerbaijan, REGION_CODE_Bangladesh, REGION_CODE_Bahrain, REGION_CODE_Kenya, REGION_CODE_Madagascar, REGION_CODE_Malawi, REGION_CODE_Mali, REGION_CODE_Myanmar, REGION_CODE_Nepal, REGION_CODE_Niger, REGION_CODE_Nigeria, REGION_CODE_Rwanda, REGION_CODE_Samoa, REGION_CODE_Senegal, REGION_CODE_Sierra_Leone, REGION_CODE_South_Sudan, REGION_CODE_Spain, REGION_CODE_Sri_Lanka, REGION_CODE_Tajikistan, REGION_CODE_Tanzania, REGION_CODE_Togo, REGION_CODE_Trinidad_and_Tobago, REGION_CODE_Turkey, REGION_CODE_Turkmenistan, REGION_CODE_Uganda, REGION_CODE_Uzbekistan:
-            return [.Gregorian, .IslamicSolar]
+            return [.gregorian, .islamicSolarTime]
             
         case REGION_CODE_Libya, REGION_CODE_Lebanon, REGION_CODE_Eritrea, REGION_CODE_Bosnia_and_Herzegovina, REGION_CODE_Jordan, REGION_CODE_Kazakhstan, REGION_CODE_Kosovo, REGION_CODE_North_Macedonia:
-            return [.Gregorian, .IslamicSolar, .Julian]
+            return [.gregorian, .islamicSolarTime, .julian]
 
         case REGION_CODE_Egypt, REGION_CODE_Sudan:
-            return [.Gregorian, .IslamicSolar, .Coptic]
+            return [.gregorian, .islamicSolarTime, .coptic]
             
         case REGION_CODE_India:
-            return [.Gregorian, .Indian]
+            return [.gregorian, .indian]
             
         case REGION_CODE_Israel:
-            return [.Gregorian, .HebrewGRA]
+            return [.gregorian, .hebrewGRA]
             
         case REGION_CODE_Saudi_Arabia:
-            return [.Gregorian, .IslamicUmmAlQuraSolar]
+            return [.gregorian, .islamicUmmAlQuraSolarTime]
             
         case REGION_CODE_Albania, REGION_CODE_Romania, REGION_CODE_Bulgaria, REGION_CODE_Georgia, REGION_CODE_Greece, REGION_CODE_Ukraine, REGION_CODE_Cyprus, REGION_CODE_Kyrgyzstan, REGION_CODE_Moldova, REGION_CODE_Montenegro, REGION_CODE_Serbia:
-            return [.Gregorian, .Julian]
+            return [.gregorian, .julian]
             
         case REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Singapore, REGION_CODE_Vietnam:
-            return [.Gregorian, .Chinese]
+            return [.gregorian, .chinese]
             
         case REGION_CODE_Brunei_Darussalam, REGION_CODE_Indonesia, REGION_CODE_Malaysia, REGION_CODE_Timor_Leste, REGION_CODE_Mauritius, REGION_CODE_Philippines, REGION_CODE_Suriname:
-            return [.Gregorian, .Chinese, .IslamicSolar]
+            return [.gregorian, .chinese, .islamicSolarTime]
             
         case REGION_CODE_Ethiopia:
-            return [.Gregorian, .Julian, .IslamicSolar, .EthiopicAmeteMihret]
+            return [.gregorian, .julian, .islamicSolarTime, .ethiopicAmeteMihret]
 
         default:
-            return [.Gregorian]
+            return [.gregorian]
         } // switch self
     } // var defaultCalendarCodes
     

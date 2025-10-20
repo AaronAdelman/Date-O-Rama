@@ -58,7 +58,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
     
     var genericOptions: FrenchRepublicanDateOptions {
-        let variant: FrenchRepublicanDateOptions.Variant = self.calendarCode == .FrenchRepublicanRomme ? .romme : .original
+        let variant: FrenchRepublicanDateOptions.Variant = self.calendarCode == .frenchRepublicanRomme ? .romme : .original
         return FrenchRepublicanDateOptions(romanYear: true, variant: variant, treatSansculottidesAsAMonth: true)
     }
     

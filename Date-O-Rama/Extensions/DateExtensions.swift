@@ -12,31 +12,31 @@ import CoreLocation
 fileprivate extension ASACalendarCode {
     var offsetFromJulianDay:  Double {
         switch self {
-        case .JulianDay:
+        case .julianDay:
             return 0.0
             
-        case .ReducedJulianDay:
+        case .reducedJulianDay:
             return 2400000.0
             
-        case .ModifiedJulianDay:
+        case .modifiedJulianDay:
             return 2400000.5
             
-        case .TruncatedJulianDay:
+        case .truncatedJulianDay:
             return 2440000.5
             
-        case .DublinJulianDay:
+        case .dublinJulianDay:
             return 2415020.0
             
-        case .CNESJulianDay:
+        case .cnesJulianDay:
             return 2433282.5
             
-        case .CCSDSJulianDay:
+        case .ccsdsJulianDay:
             return 2436204.5
             
-        case .LilianDate:
+        case .lilianDate:
             return 2299159.5
             
-        case .RataDie:
+        case .rataDie:
             return 1721424.5
             
         default:
@@ -81,7 +81,7 @@ extension Date {
     } // static func date(JulianDate:  Double) -> Date
 
     func JulianDateWithTime(calendarCode: ASACalendarCode) -> Double {
-        if calendarCode == .MarsSolDate {
+        if calendarCode == .marsSolDate {
             return self.MarsSolDate
         }
         
@@ -96,11 +96,11 @@ extension Date {
     func localModifiedJulianDay(timeZone: TimeZone) -> Int {
         let seconds = timeZone.secondsFromGMT(for: self)
         let adjustedDate = self.addingTimeInterval(Double(seconds))
-        return adjustedDate.JulianDateWithoutTime(calendarCode: .ModifiedJulianDay)
+        return adjustedDate.JulianDateWithoutTime(calendarCode: .modifiedJulianDay)
     }
     
     static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
-        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .ModifiedJulianDay)
+        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .modifiedJulianDay)
         let seconds = timeZone.secondsFromGMT(for: rawDate)
         let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
         return adjustedDate
@@ -125,7 +125,7 @@ extension Date {
     } // func JulianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double)
 
     static func date(JulianDate:  Double, calendarCode: ASACalendarCode) -> Date {
-        if calendarCode == .MarsSolDate {
+        if calendarCode == .marsSolDate {
             return Date.date(MarsSolDate: JulianDate)
         }
         

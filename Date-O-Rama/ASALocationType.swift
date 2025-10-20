@@ -18,13 +18,13 @@ enum ASALocationType: String, CaseIterable, Identifiable {
     var defaultCalendarCode: ASACalendarCode {
         switch self {
         case .earthLocation:
-            return .Gregorian
+            return .gregorian
             
         case .earthUniversal:
-            return .JulianDay
+            return .julianDay
             
         case .marsUniversal:
-            return .MarsSolDate
+            return .marsSolDate
         } // switch self
     } // var defaultCalendarCode
     

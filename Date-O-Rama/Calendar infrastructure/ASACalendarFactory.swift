@@ -12,27 +12,19 @@ import CoreLocation
 
 class ASACalendarFactory {
     class func calendar(code:  ASACalendarCode) -> ASACalendar? {
-        var revisedCode: ASACalendarCode
-        switch code {
-        case .Gregorian_Old:
-            revisedCode = .Gregorian
-        default:
-            revisedCode = code
-        } // switch code
+        assert(!code.isAbstract)
         
-        assert(!revisedCode.isAbstract)
-        
-        if revisedCode == .Gregorian {
+        if code == .gregorian {
             return ASAGregorianCalendar()
-        } else if revisedCode.isAppleCalendar {
-            return ASAAppleCalendar(calendarCode:  revisedCode)
-        } else if revisedCode.isJulianDayCalendar {
-            return ASAJulianDayCalendar(calendarCode:  revisedCode)
-        } else if revisedCode.isSunsetTransitionCalendar {
-            return ASASunsetTransitionCalendar(calendarCode: revisedCode)
-        } else if revisedCode.isFrenchRepublicanCalendar {
-            return ASAFrenchRepublicanCalendar(calendarCode: revisedCode)
-        } else if revisedCode == .Julian {
+        } else if code.isAppleCalendar {
+            return ASAAppleCalendar(calendarCode:  code)
+        } else if code.isJulianDayCalendar {
+            return ASAJulianDayCalendar(calendarCode:  code)
+        } else if code.isSunsetTransitionCalendar {
+            return ASASunsetTransitionCalendar(calendarCode: code)
+        } else if code.isFrenchRepublicanCalendar {
+            return ASAFrenchRepublicanCalendar(calendarCode: code)
+        } else if code == .julian {
             return ASAJulianCalendar()
         }
      

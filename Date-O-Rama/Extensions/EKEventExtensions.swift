@@ -42,7 +42,7 @@ extension EKEvent:  ASASingleEvent {
 
     var calendarCode: ASACalendarCode {
         get {
-            return .Gregorian
+            return .gregorian
         } // get
     } // var calendarCode
     

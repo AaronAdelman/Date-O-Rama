@@ -12,64 +12,62 @@ import Foundation
 // I would prefer to use a standard, but ISO has not released one as of this writing.
 // Many codes come from https://github.com/CalConnect/cc-calendar-systems
 enum ASACalendarCode:  String, Codable {
-    case none                = "  "
+    case none                      = "  "
     
-    case Buddhist              = "tha"
-    case Chinese               = "chi"
-    case Coptic                = "cop"
-    case EthiopicAmeteAlem     = "EthiopicAmeteAlem"
-    case EthiopicAmeteMihret   = "EthiopicAmeteMihret"
-    case Gregorian             = "gre"
-    case Gregorian_Old         = "Gregorian"
-    case Hebrew                = "Hebrew"
-    case Indian                = "ind"
-    case Islamic               = "Islamic"
-    case IslamicCivil          = "IslamicCivil"
-    case IslamicTabular        = "IslamicTabular"
-    case IslamicUmmAlQura      = "IslamicUmmAlQura"
-    case Japanese              = "kok"
-    case Persian               = "his"
-    case RepublicOfChina       = "min"
-    case JulianDay             = "jld"
-    case ReducedJulianDay      = "rjd"
-    case DublinJulianDay       = "djd"
-    case ModifiedJulianDay     = "mjd"
-    case TruncatedJulianDay    = "tjd"
-    case CNESJulianDay         = "cjd"
-    case CCSDSJulianDay        = "ccj"
-    case LilianDate            = "lid"
-    case RataDie               = "rad"
-    case HebrewGRA             = "HebrewSolar"
-    case IslamicSolar          = "IslamicSolar"
-    case IslamicCivilSolar     = "IslamicCivilSolar"
-    case IslamicTabularSolar   = "IslamicTabularSolar"
-    case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
-    case HebrewMA              = "HebrewSolarMA"
-    case FrenchRepublican      = "fre"
-    case FrenchRepublicanRomme = "fre-r"
-    case Julian                = "jul"
-    case MarsSolDate           = "mar"
+    case buddhist                  = "tha"
+    case chinese                   = "chi"
+    case coptic                    = "cop"
+    case ethiopicAmeteAlem         = "EthiopicAmeteAlem"
+    case ethiopicAmeteMihret       = "EthiopicAmeteMihret"
+    case gregorian                 = "gre"
+    case hebrew                    = "Hebrew"
+    case indian                    = "ind"
+    case islamic                   = "Islamic"
+    case islamicCivil              = "IslamicCivil"
+    case islamicTabular            = "IslamicTabular"
+    case islamicUmmAlQura          = "IslamicUmmAlQura"
+    case japanese                  = "kok"
+    case persian                   = "his"
+    case republicOfChina           = "min"
+    case julianDay                 = "jld"
+    case reducedJulianDay          = "rjd"
+    case dublinJulianDay           = "djd"
+    case modifiedJulianDay         = "mjd"
+    case truncatedJulianDay        = "tjd"
+    case cnesJulianDay             = "cjd"
+    case ccsdsJulianDay            = "ccj"
+    case lilianDate                = "lid"
+    case rataDie                   = "rad"
+    case hebrewGRA                 = "HebrewSolar"
+    case islamicSolarTime          = "IslamicSolar"
+    case islamicCivilSolarTime     = "IslamicCivilSolar"
+    case islamicTabularSolarTime   = "IslamicTabularSolar"
+    case islamicUmmAlQuraSolarTime = "IslamicUmmAlQuraSolar"
+    case hebrewMA                  = "HebrewSolarMA"
+    case frenchRepublican          = "fre"
+    case frenchRepublicanRomme     = "fre-r"
+    case julian                    = "jul"
+    case marsSolDate               = "mar"
+    case bangla                    = "bangla"
+    case dangi                     = "dangi"
+    case gujarati                  = "gujarati"
+    case kannada                   = "kannada"
+    case malayalam                 = "malayalam"
+    case marathi                   = "marathi"
+    case odia                      = "odia"
+    case tamil                     = "tamil"
+    case telugu                    = "telugu"
+    case vietnamese                = "vietnamese"
+    case vikram                    = "vikram"
     
-    case bangla     = "bangla"
-    case dangi      = "dangi"
-    case gujarati   = "gujarati"
-    case kannada    = "kannada"
-    case malayalam  = "malayalam"
-    case marathi    = "marathi"
-    case odia       = "odia"
-    case tamil      = "tamil"
-    case telugu     = "telugu"
-    case vietnamese = "vietnamese"
-    case vikram     = "vikram"
-    
-    case allEarth              = "*"
-    case allHebrew             = "heb*"
-    case allHebrewSolarTime    = "heb-solar*"
-    case allIslamic            = "hiq*"
-    case allIslamicSolarTime   = "hiq-solar*"
-    case allFrenchRepublican   = "fre*"
-    case GregorianOrJulian     = "greOrJul"
-    case allEthiopic           = "Ethiopic*"
+    case allEarth                  = "*"
+    case allHebrew                 = "heb*"
+    case allHebrewSolarTime        = "heb-solar*"
+    case allIslamic                = "hiq*"
+    case allIslamicSolarTime       = "hiq-solar*"
+    case allFrenchRepublican       = "fre*"
+    case gregorianOrJulian         = "greOrJul"
+    case allEthiopic               = "Ethiopic*"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
@@ -110,7 +108,7 @@ enum ASACalendarType {
 extension ASACalendarCode {
     var localizedName:  String {
         switch self {
-        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate, .FrenchRepublican, .FrenchRepublicanRomme, .Hebrew, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .Julian:
+        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .frenchRepublicanRomme, .hebrew, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .julian:
             return NSLocalizedString(self.rawValue, comment: "")
 
         default:
@@ -121,21 +119,21 @@ extension ASACalendarCode {
 
     var isAppleCalendar:  Bool {
         switch self {
-        case .Buddhist,
-             .Chinese,
-             .Coptic,
-             .EthiopicAmeteAlem,
-             .EthiopicAmeteMihret,
-             .Gregorian,
-             .Hebrew,
-             .Indian,
-             .Islamic,
-             .IslamicCivil,
-             .IslamicTabular,
-             .IslamicUmmAlQura,
-             .Japanese,
-             .Persian,
-             .RepublicOfChina,
+        case .buddhist,
+             .chinese,
+             .coptic,
+             .ethiopicAmeteAlem,
+             .ethiopicAmeteMihret,
+             .gregorian,
+             .hebrew,
+             .indian,
+             .islamic,
+             .islamicCivil,
+             .islamicTabular,
+             .islamicUmmAlQura,
+             .japanese,
+             .persian,
+             .republicOfChina,
              .bangla,
              .dangi,
              .gujarati,
@@ -155,7 +153,7 @@ extension ASACalendarCode {
     
     var isJulianDayCalendar:  Bool {
         switch self {
-        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate:
+        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
             return true
             
         default:
@@ -165,7 +163,7 @@ extension ASACalendarCode {
     
     var isSunsetTransitionCalendar:  Bool {
         switch self {
-        case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA:
+        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA:
             return true
         default:
             return false
@@ -175,7 +173,7 @@ extension ASACalendarCode {
     var isHebrewCalendar: Bool {
         get {
             switch self {
-            case .Hebrew, .HebrewMA, .HebrewGRA:
+            case .hebrew, .hebrewMA, .hebrewGRA:
                 return true
 
             default:
@@ -187,7 +185,7 @@ extension ASACalendarCode {
     var isHebrewSolarTimeCalendar: Bool {
         get {
             switch self {
-            case .HebrewMA, .HebrewGRA:
+            case .hebrewMA, .hebrewGRA:
                 return true
 
             default:
@@ -198,7 +196,7 @@ extension ASACalendarCode {
     
     var isIslamicCalendar: Bool {
         switch self {
-        case .Islamic, .IslamicCivil, .IslamicSolar, .IslamicTabular, .IslamicUmmAlQura, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+        case .islamic, .islamicCivil, .islamicSolarTime, .islamicTabular, .islamicUmmAlQura, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
             return true
             
         default:
@@ -208,7 +206,7 @@ extension ASACalendarCode {
     
     var isIslamicSolarTimeCalendar: Bool {
         switch self {
-        case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+        case .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
             return true
             
         default:
@@ -218,7 +216,7 @@ extension ASACalendarCode {
     
     var is24HourDaysMidnightStartFixedCalendar: Bool {
         switch self {
-        case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA, .MarsSolDate, .DublinJulianDay, .ReducedJulianDay, .JulianDay:
+        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA, .marsSolDate, .dublinJulianDay, .reducedJulianDay, .julianDay:
             return false
 
         default:
@@ -228,7 +226,7 @@ extension ASACalendarCode {
     
     var isGregorianMonthWeeksDaysCalendar: Bool {
         switch self {
-        case .Gregorian, .Buddhist, .Japanese, .RepublicOfChina:
+        case .gregorian, .buddhist, .japanese, .republicOfChina:
             return true
             
         default:
@@ -238,7 +236,7 @@ extension ASACalendarCode {
     
     var isFrenchRepublicanCalendar: Bool {
         switch self {
-        case .FrenchRepublican, .FrenchRepublicanRomme:
+        case .frenchRepublican, .frenchRepublicanRomme:
             return true
             
         default:
@@ -249,49 +247,49 @@ extension ASACalendarCode {
     var equivalentCalendarIdentifier:  Calendar.Identifier? {
            var identifier:  Calendar.Identifier?
            switch self {
-           case ASACalendarCode.Buddhist:
+           case ASACalendarCode.buddhist:
                identifier = .buddhist
                
-           case ASACalendarCode.Chinese:
+           case ASACalendarCode.chinese:
                identifier = .chinese
                
-           case ASACalendarCode.Coptic:
+           case ASACalendarCode.coptic:
                identifier = .coptic
                
-           case ASACalendarCode.EthiopicAmeteAlem:
+           case ASACalendarCode.ethiopicAmeteAlem:
                identifier = .ethiopicAmeteAlem
                
-           case ASACalendarCode.EthiopicAmeteMihret:
+           case ASACalendarCode.ethiopicAmeteMihret:
                identifier = .ethiopicAmeteMihret
                
-           case ASACalendarCode.Gregorian:
+           case ASACalendarCode.gregorian:
                identifier = .gregorian
                
-           case ASACalendarCode.Hebrew, .HebrewGRA, .HebrewMA:
+           case ASACalendarCode.hebrew, .hebrewGRA, .hebrewMA:
                identifier = .hebrew
                
-           case ASACalendarCode.Indian:
+           case ASACalendarCode.indian:
                identifier = .indian
                
-           case ASACalendarCode.Islamic, .IslamicSolar:
+           case ASACalendarCode.islamic, .islamicSolarTime:
                identifier = .islamic
                
-           case ASACalendarCode.IslamicCivil, .IslamicCivilSolar:
+           case ASACalendarCode.islamicCivil, .islamicCivilSolarTime:
                identifier = .islamicCivil
                
-           case ASACalendarCode.IslamicTabular, .IslamicTabularSolar:
+           case ASACalendarCode.islamicTabular, .islamicTabularSolarTime:
                identifier = .islamicTabular
                
-           case ASACalendarCode.IslamicUmmAlQura, .IslamicUmmAlQuraSolar:
+           case ASACalendarCode.islamicUmmAlQura, .islamicUmmAlQuraSolarTime:
                identifier = .islamicUmmAlQura
                
-           case ASACalendarCode.Japanese:
+           case ASACalendarCode.japanese:
                identifier = .japanese
                
-           case ASACalendarCode.Persian:
+           case ASACalendarCode.persian:
                identifier = .persian
                
-           case ASACalendarCode.RepublicOfChina:
+           case ASACalendarCode.republicOfChina:
                identifier = .republicOfChina
                
            case .bangla:
@@ -377,17 +375,17 @@ extension ASACalendarCode {
     var type:  ASACalendarType {
         get {
             switch self {
-            case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .bangla, .malayalam, .odia, .tamil:
+            case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
+                    .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .bangla, .malayalam, .odia, .tamil:
                 return .solar
                 
-            case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .vietnamese, .vikram:
+            case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
                 return .lunisolar
                 
-            case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+            case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
                 return .lunar
                 
-            case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate:
+            case .julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
                 return .JulianDay
                 
             default:
@@ -399,12 +397,12 @@ extension ASACalendarCode {
     static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
         switch locationType {
         case .earthLocation:
-            return [.Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
+            return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
+                    .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .chinese, .hebrew, .hebrewGRA, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
         case .earthUniversal:
-            return [.JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie]
+            return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:
-            return [.MarsSolDate]
+            return [.marsSolDate]
         } // switch locationType
     } // static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode>
 
@@ -442,15 +440,15 @@ extension ASACalendarCode {
         }
         
         if self == .allEarth {
-            return self != .MarsSolDate
+            return self != .marsSolDate
             // TODO:  Needs to be modified when adding calendars for other planets, e.g., the Darian calendar for Mars.
         }
         
-        if self == .GregorianOrJulian && (otherCalendarCode == .Gregorian || otherCalendarCode == .Julian) {
+        if self == .gregorianOrJulian && (otherCalendarCode == .gregorian || otherCalendarCode == .julian) {
             return true
         }
         
-        if self == .allEthiopic && (otherCalendarCode == .EthiopicAmeteAlem || otherCalendarCode == .EthiopicAmeteMihret) {
+        if self == .allEthiopic && (otherCalendarCode == .ethiopicAmeteAlem || otherCalendarCode == .ethiopicAmeteMihret) {
             return true
         }
 
@@ -459,10 +457,10 @@ extension ASACalendarCode {
     
     var locationType: ASALocationType {
         switch self {
-        case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+        case .julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie:
             return .earthUniversal
             
-        case .MarsSolDate:
+        case .marsSolDate:
             return .marsUniversal
             
         default:
@@ -472,47 +470,47 @@ extension ASACalendarCode {
     
     func genericBuiltInEventCalendarNames(regionCode: String) -> Array<String> {
         switch self {
-        case .Buddhist:
+        case .buddhist:
             return [regionCode + " (Buddhist)"]
 
-        case .Chinese:
+        case .chinese:
             return [regionCode + " (Chinese)"]
             
-        case .Coptic:
+        case .coptic:
             return [regionCode + " (Coptic)"]
             
-        case .EthiopicAmeteAlem, .EthiopicAmeteMihret:
+        case .ethiopicAmeteAlem, .ethiopicAmeteMihret:
             return [regionCode + " (Ethiopic)"]
             
-        case .Gregorian:
+        case .gregorian:
             return [regionCode]
 
-        case .Indian:
+        case .indian:
             return [regionCode + " (Indian)"]
             
-        case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+        case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
             return [regionCode + " (Muslim)", "Islam (general)"]
             
-        case .Japanese:
+        case .japanese:
             return [regionCode + " (Japanese)"]
             
-        case .Persian:
+        case .persian:
             return [regionCode + " (Persian)"]
             
-        case .RepublicOfChina:
+        case .republicOfChina:
             return [regionCode + " (ROC)"]
 
-        case .HebrewGRA, .HebrewMA, .Hebrew:
+        case .hebrewGRA, .hebrewMA, .hebrew:
             var result: [String] = [regionCode + " (Hebrew)", "Judaism"]
             if regionCode != REGION_CODE_Israel {
                 result.append("IL (Hebrew)")
             }
             return result
 
-        case .FrenchRepublican, .FrenchRepublicanRomme:
+        case .frenchRepublican, .frenchRepublicanRomme:
             return ["Rural"]
             
-        case .Julian:
+        case .julian:
             return [regionCode + " (Julian)"]
             
         default:

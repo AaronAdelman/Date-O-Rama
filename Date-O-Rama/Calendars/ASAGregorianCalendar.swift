@@ -27,7 +27,7 @@ class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
     }
     
     init() {
-        super.init(calendarCode: .Gregorian)
+        super.init(calendarCode: .gregorian)
     } // init(calendarCode:  ASACalendarCode)
     
     override var supportedDateFormats: Array<ASADateFormat> {

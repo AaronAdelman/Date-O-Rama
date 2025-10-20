@@ -55,7 +55,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     var dayStart:  ASASolarEvent {
         get {
             switch self.calendarCode {
-            case .HebrewMA:
+            case .hebrewMA:
                 return .dawn72Minutes
                 
             default:
@@ -67,7 +67,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     var dayEnd:  ASASolarEvent {
         get {
             switch self.calendarCode {
-            case .HebrewMA:
+            case .hebrewMA:
                 return .dusk72Minutes
                 
             default:

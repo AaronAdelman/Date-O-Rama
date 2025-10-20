@@ -28,7 +28,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
 
     
     init() {
-        self.calendarCode = .Julian
+        self.calendarCode = .julian
     } // init(calendarCode:  ASACalendarCode)
     
     var canSplitTimeFromDate: Bool = true

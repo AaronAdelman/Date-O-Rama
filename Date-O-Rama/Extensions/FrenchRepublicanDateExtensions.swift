@@ -23,7 +23,7 @@ extension FrenchRepublicanDate {
         
         var variant: FrenchRepublicanDateOptions.Variant
         switch calendarCode {
-        case .FrenchRepublicanRomme:
+        case .frenchRepublicanRomme:
             variant = .romme
             
         default:
