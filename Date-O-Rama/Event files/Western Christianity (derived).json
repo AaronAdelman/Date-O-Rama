@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 1, wkd: [6], nth: 2}, urls: {"en": "https://nationaltoday.com/quitters-day/"}, titles: {"en": "Quitters Day"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "National Pumpkin Cheesecake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pumpkin-cheesecake-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 10, d: 23}, titles: {"en": "International Swallows Depart from San Juan Capistrano Day"}, urls: {"en": "https://nationaltoday.com/international-swallows-depart-from-san-juan-capistrano-day/"}},
-        {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Chucky, the Notorious Killer Doll Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/chucky-the-notorious-killer-doll-day-october-25"}},
+        {type: "D", start: {mon: 10, d: 25}, titles: {"en": "National Chucky Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chucky-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Chucky, the Notorious Killer Doll Day\nChucky Day\nThis observance celebrates the Child’s Play films."}},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Crisp Sandwich Day"}, urls: {"en": "https://vole.wtf/crisp-sandwich-day/"}, first: {era: 1, y: 2022}, emoji: "🥪"},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "National Pumpkin Day", "he": "יום הדלעת הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pumpkin-day/"}, emoji: "🎃"},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Howl at the Moon Day"}, notes: {"en": "Worldwide Howl at the Moon Night\nCreated by Johnny DePalma"}, urls: {"en": "https://www.daysoftheyear.com/days/howl-at-the-moon-day/"}, first: {era: 1, y: 2009}, emoji: "🐺"},
