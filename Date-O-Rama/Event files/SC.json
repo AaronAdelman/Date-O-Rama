@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 3, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "National Holiday"},
+        {type: "D", start: {mon: 1, d: 3, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},

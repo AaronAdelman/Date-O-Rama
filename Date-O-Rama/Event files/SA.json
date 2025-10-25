@@ -9,7 +9,7 @@
     first: {era: 1, y: 1727},
     events: [
         {type: "D", start: {mon: 2, d: 22}, inherits: "Founding Day", first: {era: 1, y: 1727}},
-        {type: "D", start: {mon: 2, d: 23, wkd: [1, 2, 5]}, inherits: "National Holiday", first: {era: 1, y: 1727}},
+        {type: "D", start: {mon: 2, d: 23, wkd: [1, 2, 5]}, inherits: "Public Holiday", first: {era: 1, y: 1727}},
         {type: "D", start: {mon: 3, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, titles: {"en": "Saudi Flag Day"}, first: {era: 1, y: 1937}, inherits: "Flag Day"},
         {type: "D", start: {mon: 9, d: 22, wkd: [1, 5]}, inherits: "National Day", urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day (bridge day)"}},
         {type: "D", start: {mon: 9, d: 23}, inherits: "National Day", urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, first: {era: 1, y: 2005}, titles: {"en": "Saudi National Day", "he": "היום הלאומי של ערב הסעודית", "ar": "اليوم الوطني للمملكة العربية السعودية"}},

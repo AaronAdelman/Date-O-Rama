@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
         {type: "D", start: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/mid-autumn-festival"}, inherits: "Mid-Autumn Festival"},
-        {type: "D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"}, titles: {"en": "Double Ninth Day", "zh": "重陽節"}, notes: {"en": "Double Ninth Festival"}},
+        {type: "D", start: {mon: 9, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"}, inherits: "Chung Yeung Festival"},
         
         {type: "D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/tourism-day/"}, titles: {"en": "Tourism Day", "zh": "觀光節"}},
         {type: "D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/earth-gods-birthday/"}, titles: {"en": "Earth God’s Birthday", "zh": "土地公誕辰"}, inherits: "*BDay*"},

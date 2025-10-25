@@ -283,5 +283,6 @@
         {type: "D", start: {era: 1, y: 2019, mon: 5, d: 13}, inherits: "Election Day", urls: {"en": "https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {type: "D", start: {era: 1, y: 2025, mon: 5, d: 12}, inherits: "Election Day", urls: {"en": "https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {type: "D", start: {mon: 7, d: 27}, titles: {"en": "Founding Anniversary of the INC"}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/founding-anniversary-of-the-inc"}, first: {era: 1, y: 2025}},
+        {type: "D", start: {mon: 20, d: 31, wkd: [6]}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/philippines/all-saints-day"}},
     ]
 }
