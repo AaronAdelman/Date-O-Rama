@@ -34,6 +34,6 @@
         {template: "Litha", titles: {"en": "Litha", "he": "לית׳א"}, type: "D", start: {equinoxOrSolstice: "Jun"}},
         {template: "Lughnasadh", titles: {"en": "Lughnasa", "he": "לונאסה"}, notes: {"en": "Lughnasadh\nLúnasa"}, type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/lughnasa/"}},
         {template: "Mabon", titles: {"en": "Mabon", "he": "מאבון"}, type: "D", start: {equinoxOrSolstice: "Sep"}, urls: {"en": "https://nationaltoday.com/mabon-day/"}},
-        {template: "Samhain", titles: {"en": "Samhain", "he": "סמהיין"}, type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/samhain/"}},
+        {template: "Samhain", titles: {"af":"Samhain","an":"Samain","ast":"Samain","be":"Самайн","bg":"Сауин","br":"Samhain","ca":"Samhain","cs":"Samhain","cy":"Samhain","da":"Samhain","de":"Samhain","diq":"Samhain","el":"Σόουιν","en":"Samhain","eo":"Saveno","es":"Samhain","eu":"Samhain","fa":"سوون","fi":"Samhain","fr":"Samain","ga":"Lá Samhna","gl":"Samaín","hu":"Samhain","id":"Samhain","it":"Samhain","ja":"サウィン祭","ko":"서우인","lfn":"Samhain","lmo":"Samóne","lt":"Samhain","ms":"Samhain","mzn":"سمهین","nb":"Samhain","nds-nl":"Samhain","nl":"Samhain","nn":"Samhain","pl":"Samhain","pt":"Samhain","pwn":"Samhain","ro":"Samhain","ru":"Самайн","sq":"Samhain","sr":"Самаин","sv":"Samhain","tr":"Samhain","uk":"Савань","yue":"夏末節","zh":"夏末节", "he": "סמהיין"}, type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/samhain/"}},
     ]
 }

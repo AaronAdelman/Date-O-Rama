@@ -27,7 +27,7 @@
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "National Walk Your Dog Week"},urls: {"en": "http://www.walkyourdogweek.com/"},  emoji: "🦮", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 1}, titles: {"en": "National Black Dog Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-black-dog-day/"}, first: {era: 1, y: 2011}, emoji: "🐕‍🦺"},
         {type: "D", start: {mon: 10, d: 2}, titles: {"en": "Canine Companion Day"}, urls: {"en": "https://www.daysoftheyear.com/days/canine-companion-day/"}, first: {era: 1, y: 2004}, emoji: "🐶"},
-        {type: "D", start: {mon: 10, d: 29}, titles: {"en": "National Cat Day"}, urls: {"en": "https://www.nationalcatday.com/"}, first: {era: 1, y: 2005}, emoji: "🐈"},
+        {type: "D", start: {mon: 10, d: 29}, titles: {"az":"Milli Pişik Günü","bn":"জাতীয় বিড়াল দিবস","en":"National Cat Day","fr":"Journée nationale du chat","hy":"Կատուների ազգային օր","id":"Hari Kucing","it":"Festa del gatto","ja":"猫の日","pl":"Światowy Dzień Kota","sat":"ᱡᱟᱹᱛᱤᱭᱟᱹᱨᱤ ᱯᱩᱥᱤ ᱢᱟᱦᱟᱸ","th":"วันแมวแห่งชาติ","uk":"Національний день кота","ur":"بلیوں کا قومی دن","vi":"Ngày loài mèo","zh":"貓節日"}, urls: {"en": "https://www.nationalcatday.com/"}, first: {era: 1, y: 2005}, emoji: "🐈"},
         {type: "D", start: {mon: 12, d: 2}, inherits: "National Mutt Day", first: {era: 1, y: 2005}},
     ],
     templates: [
