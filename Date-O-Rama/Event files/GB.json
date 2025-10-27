@@ -266,7 +266,7 @@
         {type: "nD", start: {mon: 10, d: 5, thruD: 11, wkd: [3], durationD: 6}, titles: {"en": "Iris Film Festival"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, titles: {"en": "Baby Loss Awareness Week"}, urls: {"en": "https://babyloss-awareness.org/"}, first: {era: 1, y: 2011}, emoji: "👶", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 10, d: 16, thruD: 22, wkd: [5], durationD: 3}, titles: {"en": "Sŵn Festival"}, urls: {"en": "https://swnfest.com/"}, first: {era: 1, y: 2007}, notes: {"en": "Created by Huw Stephens and Jon Rostron"}},
-        {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "National Medical Cannabis Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-medical-cannabis-week/"}, inherits: "*MedAwareness*"},
+        {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "National Medical Cannabis Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-medical-cannabis-week/"}, inherits: "*MedAwareness*", notes: {"en": "Created by Patient-Led Engagement for Access (PLEA)"}},
         {type: "nD", start: {mon: 11, d: 13, thruD: 19, wkd: [2], durationD: 7}, titles: {"en": "Book Week Scotland"}, urls: {"en": "https://www.scottishbooktrust.com/book-week-scotland"}, emoji: "📚", first: {era: 1, y: 2012}},
         {type: "nD", start: {mon: 11, d: 2, thruD: 8, wkd: [2], durationD: 5}, titles: {"en": "Talk Money Week"}, urls: {"en": "https://www.daysoftheyear.com/days/talk-money-week/"}, emoji: "💷"},
         {type: "nD", start: {mon: 11, d: 22}, end: {mon: 12, d: 22}, inherits: "Disability History Month", first: {era: 1, y: 2010}},

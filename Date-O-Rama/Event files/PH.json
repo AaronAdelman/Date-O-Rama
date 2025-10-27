@@ -207,7 +207,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 7}, titles: {"en": "National Culture Consciousness Week"}, urls: {"en": "https://nationaltoday.com/national-culture-consciousness-week/"}},
         {type: "M", start: {mon: 7}, titles: {"en": "Nutrition Month Philippines"}, urls: {"en": "https://nationaltoday.com/nutrition-month-philippines/"}, emoji: "🍲"},
-        {type: "M", start: {mon: 11}, titles: {"en": "National Children’s Month"}, inherits: "Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-month/"}, first: {era: 1, y: 2015}},
+        {type: "M", start: {mon: 11}, titles: {"en": "National Children’s Month"}, inherits: "Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-month/"}, first: {era: 1, y: 2015}, notes: {"en": "Created by Benigno Aquino III"}},
         {type: "M", start: {mon: 8}, titles: {"en": "National Language Month", "fil": "Buwan ng Wikang Pambansa"}, urls: {"en": "https://nationaltoday.com/national-language-month/"}, emoji: "🗣", first: {era: 1, y: 1997}},
         {type: "nD", start: {mon: 8, d: 17}, end: {mon: 8, d: 23}, titles: {"en": "Made in the Philippines Product Week", "he": "שבוע המוצרים של ״תוצרת הפיליפינים״"}, urls: {"en": "https://nationaltoday.com/made-in-the-philippines-product-week/"}, first: {era: 1, y: 1997}},
         {type: "nD", start: {mon: 8, d: 23}, end: {mon: 8, d: 30}, titles: {"en": "National Coconut Week", "he": "שבוע הקוקוס הלאומי"}, urls: {"en": "https://nationaltoday.com/national-coconut-week/"}, emoji: "🥥", first: {era: 1, y: 1987}},
