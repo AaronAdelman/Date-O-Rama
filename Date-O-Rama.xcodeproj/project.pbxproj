@@ -548,6 +548,7 @@
 		A5B999D628622E0F00072FD5 /* DJ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B999D428622E0D00072FD5 /* DJ.json */; };
 		A5BA03C82A4227940039B9FC /* BD (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA03C72A4227940039B9FC /* BD (Muslim).json */; };
 		A5BA03C92A4227940039B9FC /* BD (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA03C72A4227940039B9FC /* BD (Muslim).json */; };
+		A5BA221F2EB08D74005F1586 /* ASAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BA221E2EB08D74005F1586 /* ASAList.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC24BF2796EABE00D14B21 /* Jewish planetary hours.json */; };
@@ -1520,6 +1521,7 @@
 		A5B999D128622D8300072FD5 /* CX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CX.json; sourceTree = "<group>"; };
 		A5B999D428622E0D00072FD5 /* DJ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DJ.json; sourceTree = "<group>"; };
 		A5BA03C72A4227940039B9FC /* BD (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BD (Muslim).json"; sourceTree = "<group>"; };
+		A5BA221E2EB08D74005F1586 /* ASAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAList.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
@@ -2641,6 +2643,7 @@
 				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
 				A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
+				A5BA221E2EB08D74005F1586 /* ASAList.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
 				A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */,
@@ -3840,6 +3843,7 @@
 				A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
+				A5BA221F2EB08D74005F1586 /* ASAList.swift in Sources */,
 				A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
