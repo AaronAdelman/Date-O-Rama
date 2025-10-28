@@ -91,7 +91,8 @@ struct ASALocationWithClocksSectionView: View {
         } // HStack
             .padding()
             .foregroundStyle(Color.white)
-            .background(headerColor)
+//            .background(headerColor)
+            .background(.clear)
             .listRowInsets(EdgeInsets(
                 top: 0,
                 leading: 0,
