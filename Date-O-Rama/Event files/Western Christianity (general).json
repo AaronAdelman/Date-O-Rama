@@ -204,16 +204,16 @@
         {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Feast of St. Jean de Brébeuf, Isaac Jogues, and their companions or St. Paul of the Cross"}},
         {titles: {"en": "Feast of St. John Paul II"}, type: "D", start: {mon: 10, d: 22}},
         {titles: {"en": "Feast of St. John of Capistrano"}, type: "D", start: {mon: 10, d: 23}},
-        {titles: {"en": "Feast of St. Anthony Mary Claret"}, type: "D", start: {mon: 10, d: 24}},
-        {titles: {"en": "Feast of St. Simon and St. Jude"}, type: "D", start: {mon: 10, d: 28}, urls: {"en": "https://www.checkiday.com/ce61c4e0c1ee084dc238db7f89f73f0a/st-judes-feast-day"}},
+        {type: "D", start: {mon: 10, d: 24}, titles: {"en": "Feast of St. Anthony Mary Claret"}},
+        {type: "D", start: {mon: 10, d: 28}, titles: {"en": "Feast of St. Simon and St. Jude"}, urls: {"en": "https://www.checkiday.com/ce61c4e0c1ee084dc238db7f89f73f0a/st-judes-feast-day"}},
         
         {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
         
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
 
-        {titles: {"en": "Feast of St. Martin de Porres"}, type: "D", start: {mon: 11, d: 3}},
-        {titles: {"en": "Feast of St. Charles Borromeo"}, type: "D", start: {mon: 11, d: 4}},
+        {type: "D", start: {mon: 11, d: 3}, titles: {"en": "Feast of St. Martin de Porres"}},
+        {type: "D", start: {mon: 11, d: 4}, titles: {"en": "Feast of St. Charles Borromeo"}},
         {titles: {"en": "Dedication of the Lateran Basilica"}, type: "D", start: {mon: 11, d: 9}},
         {titles: {"en": "Feast of St. Leo the Great"}, type: "D", start: {mon: 11, d: 10}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "St. Martin of Tours"},

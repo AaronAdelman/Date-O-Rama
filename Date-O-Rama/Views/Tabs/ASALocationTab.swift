@@ -19,6 +19,7 @@ struct ASALocationTab: View {
     let isAnimatingToList: Bool
     
     @State var isNavigationBarHidden: Bool = true
+    @Environment(\.horizontalSizeClass) private var hSizeClass
     
     var body: some View {
         NavigationView {
@@ -54,7 +55,43 @@ struct ASALocationTab: View {
             }()
             
             GeometryReader { geo in
-                List {
+                #if os(iOS)
+                if hSizeClass == .regular {
+                    // iPadOS: use Form
+                    Form {
+                        ASALocationWithClocksSectionView(
+                            now: $now,
+                            locationWithClocks: $locationWithClocks,
+                            headerColor: headerColor,
+                            processed: processed
+                        )
+                        .environmentObject(userData)
+                    }
+                    .listStyle(.grouped)
+                    .scrollContentBackground(.hidden)
+                    .padding(.top, geo.safeAreaInsets.top)
+                    .padding(.bottom, geo.safeAreaInsets.bottom)
+                    .background(gradient)
+                } else {
+                    // iOS (iPhone): use List
+                    List {
+                        ASALocationWithClocksSectionView(
+                            now: $now,
+                            locationWithClocks: $locationWithClocks,
+                            headerColor: headerColor,
+                            processed: processed
+                        )
+                        .environmentObject(userData)
+                    }
+                    .listStyle(.grouped)
+                    .scrollContentBackground(.hidden)
+                    .padding(.top, geo.safeAreaInsets.top)
+                    .padding(.bottom, geo.safeAreaInsets.bottom)
+                    .background(gradient)
+                }
+                #else
+                // Non-iOS platforms: keep Form
+                Form {
                     ASALocationWithClocksSectionView(
                         now: $now,
                         locationWithClocks: $locationWithClocks,
@@ -65,9 +102,10 @@ struct ASALocationTab: View {
                 }
                 .listStyle(.grouped)
                 .scrollContentBackground(.hidden)
-                .padding(.top, geo.safeAreaInsets.top) // Dynamically match toolbar/nav bar height
-                .padding(.bottom, geo.safeAreaInsets.bottom) // Dynamically match toolbar/nav bar height
+                .padding(.top, geo.safeAreaInsets.top)
+                .padding(.bottom, geo.safeAreaInsets.bottom)
                 .background(gradient)
+                #endif
             }
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
@@ -93,3 +131,4 @@ struct ASALocationTab: View {
 //        ASALocationsTab().environmentObject(ASAModel.shared)
 //    }
 //}
+
