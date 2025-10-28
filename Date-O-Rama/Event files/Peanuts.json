@@ -1,0 +1,24 @@
+{
+    titles: {"am":"ፒነትስ","ar":"بينوتس","ast":"Peanuts","bcl":"Peanuts","be-tarask":"Peanuts","bew":"Peanuts","bg":"Пийнътс","ca":"Peanuts","ceb":"Peanuts","cs":"Peanuts","da":"Radiserne","de":"Die Peanuts","el":"Peanuts","en":"Peanuts","eo":"Peanuts","es":"Peanuts","fa":"بادام زمینی‌ها","fi":"Tenavat","fr":"Peanuts","gl":"Peanuts","he":"פינאטס","hr":"Peanuts","hu":"Peanuts","hy":"Peanuts","ia":"Peanuts","id":"Peanuts","is":"Smáfólkið","it":"Peanuts","ja":"ピーナッツ","jv":"Peanuts","ko":"피너츠","la":"Peanuts","map-bms":"Peanuts","ms":"Peanuts","nb":"Knøttene","nl":"Peanuts","nn":"Knøttene","pcd":"Peanuts","pl":"Fistaszki","pt":"Peanuts","ro":"Peanuts","ru":"Peanuts","sn":"Peanuts","sq":"Peanuts","sr":"Peanuts","sv":"Snobben","tl":"Peanuts","tr":"Peanuts","uk":"Peanuts","vec":"Peanuts","war":"Peanuts","yue":"花生漫畫","zh":"花生漫畫"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 1.0, green: 1.0, blue: 0.0},
+    first: {era: 1, y: 1950},
+    urls: {"en": "https://www.peanuts.com/"},
+    events: [
+        {type: "D", start: {mon: 11, d: 26}, titles: {"en": "Good Grief Day"}, urls: {"en": "https://www.daysoftheyear.com/days/good-grief-day/"}, notes: {"en": "Charles Schulz’s Birthday"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 10, d: 2}, titles: {"en": "National Charlie Brown Day"}, first: {era: 1, y: 1950}, urls: {"en": "https://www.peanuts.com/about/charlie-brown"}},
+        {type: "D", start: {mon: 10, d: 4}, titles: {"en": "National Snoopy Day"}, first: {era: 1, y: 1950}, urls: {"en": "https://www.peanuts.com/about/snoopy"}},
+        {type: "D", start: {mon: 5, d: 30}, titles: {"en": "National Schroeder Day"}, first: {era: 1, y: 1951}, urls: {"en": "https://www.peanuts.com/about/schroeder"}},
+        {type: "D", start: {mon: 3, d: 3}, titles: {"en": "National Lucy van Pelt Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://www.peanuts.com/about/lucy"}},
+        {type: "D", start: {mon: 9, d: 19}, titles: {"en": "National Linus van Pelt Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://www.peanuts.com/about/linus"}},
+        {type: "D", start: {mon: 8, d: 23}, titles: {"en": "National Sally Brown Day"}, first: {era: 1, y: 1959}, urls: {"en": "https://www.peanuts.com/about/sally"}},
+        {type: "D", start: {mon: 4, d: 4}, titles: {"en": "National Woodstock Day"}, first: {era: 1, y: 1967}, urls: {"en": "https://www.peanuts.com/about/woodstock"}},
+        {type: "D", start: {mon: 8, d: 22}, titles: {"en": "National Peppermint Patty Day"}, first: {era: 1, y: 1966}, urls: {"en": "https://www.peanuts.com/about/peppermint-patty"}},
+        {type: "D", start: {mon: 7, d: 20}, titles: {"en": "National Marcie Day"}, first: {era: 1, y: 1971}, urls: {"en": "https://www.peanuts.com/about/marcie"}},
+        {type: "D", start: {mon: 3, d: 26}, titles: {"en": "National Rerun van Pelt Day"}, first: {era: 1, y: 1973}, urls: {"en": "https://www.peanuts.com/about/rerun"}},
+        {type: "D", start: {mon: 8, d: 12}, titles: {"en": "National Spike Day"}, first: {era: 1, y: 1975}},
+        {type: "D", start: {mon: 7, d: 31}, titles: {"en": "National Franklin Day"}, urls: {"en": "https://www.peanuts.com/about/franklin"}, first: {era: 1, y: 1968}},
+        {type: "D", start: {mon: 7, d: 13}, titles: {"en": "National Pigpen Day"}, urls: {"en": "https://www.peanuts.com/about/pigpen"}, first: {era: 1, y: 1954}},
+    ]
+}

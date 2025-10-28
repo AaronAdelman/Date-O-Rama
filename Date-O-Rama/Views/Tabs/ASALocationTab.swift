@@ -70,9 +70,12 @@ struct ASALocationTab: View {
                 .padding(.bottom, geo.safeAreaInsets.bottom)
                 .background(gradient)
             }
+            .listStyle(.grouped)
+            .scrollContentBackground(.hidden)
+            .background(gradient)
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
-            .navigationBarItems(trailing: EditButton())
+//            .navigationBarItems(trailing: EditButton())
             .onAppear {
                 self.isNavigationBarHidden = true
             }

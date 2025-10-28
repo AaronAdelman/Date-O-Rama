@@ -415,7 +415,6 @@
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "Gazpacho Soup Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/gazpacho-soup-day/"}, first: {era: 1, y: 1987}, notes: {"en": "This observance celebrates the episode “Me²” of Red Dwarf."}},
         {type: "D", start: {mon: 11, d: 25}, titles: {"en": "International Vegetarian Day"}, inherits: "World Vegetarian Day", notes: {"en": "SAK Meatless Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://en.wikipedia.org/wiki/World_Vegetarian_Day"}},
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "Coton de Tulear Day"}, urls: {"en": "https://www.cotondetulearday.com/"}, emoji: "🐾"},
-        {type: "D", start: {mon: 11, d: 26}, titles: {"en": "Good Grief Day"}, urls: {"en": "https://www.daysoftheyear.com/days/good-grief-day/"}, notes: {"en": "Charles Schulz’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "International Cake Day"}, urls: {"en": "https://nationaltoday.com/international-cake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "World Lewis Day"}, urls: {"en": "https://nationaltoday.com/world-lewis-day/"}, emoji: "🐨"},
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inherits: "GivingTuesday", first: {era: 1, y: 2012}},
