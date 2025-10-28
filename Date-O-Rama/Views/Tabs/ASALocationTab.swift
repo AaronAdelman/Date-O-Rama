@@ -55,43 +55,7 @@ struct ASALocationTab: View {
             }()
             
             GeometryReader { geo in
-                #if os(iOS)
-                if hSizeClass == .regular {
-                    // iPadOS: use Form
-                    Form {
-                        ASALocationWithClocksSectionView(
-                            now: $now,
-                            locationWithClocks: $locationWithClocks,
-                            headerColor: headerColor,
-                            processed: processed
-                        )
-                        .environmentObject(userData)
-                    }
-                    .listStyle(.grouped)
-                    .scrollContentBackground(.hidden)
-                    .padding(.top, geo.safeAreaInsets.top)
-                    .padding(.bottom, geo.safeAreaInsets.bottom)
-                    .background(gradient)
-                } else {
-                    // iOS (iPhone): use List
-                    List {
-                        ASALocationWithClocksSectionView(
-                            now: $now,
-                            locationWithClocks: $locationWithClocks,
-                            headerColor: headerColor,
-                            processed: processed
-                        )
-                        .environmentObject(userData)
-                    }
-                    .listStyle(.grouped)
-                    .scrollContentBackground(.hidden)
-                    .padding(.top, geo.safeAreaInsets.top)
-                    .padding(.bottom, geo.safeAreaInsets.bottom)
-                    .background(gradient)
-                }
-                #else
-                // Non-iOS platforms: keep Form
-                Form {
+                ASAList {
                     ASALocationWithClocksSectionView(
                         now: $now,
                         locationWithClocks: $locationWithClocks,
@@ -105,7 +69,6 @@ struct ASALocationTab: View {
                 .padding(.top, geo.safeAreaInsets.top)
                 .padding(.bottom, geo.safeAreaInsets.bottom)
                 .background(gradient)
-                #endif
             }
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
