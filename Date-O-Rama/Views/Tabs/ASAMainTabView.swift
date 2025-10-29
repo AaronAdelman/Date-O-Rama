@@ -8,24 +8,23 @@ struct ASAMainTabView: View {
     @State private var showLocationsOverlay = false
     @State private var showAboutSheet = false
     @State private var showComplicationsSheet = false
-    @Environment(\.calendar) private var envCalendar
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
-    let availableCalendars: [(name: String, calendar: Calendar.Identifier)] = [
-        ("gre", .gregorian),
-        ("tha", .buddhist),
-        ("chi", .chinese),
-        ("cop", .coptic),
-        ("EthiopicAmeteAlem", .ethiopicAmeteAlem),
-        ("EthiopicAmeteMihret", .ethiopicAmeteMihret),
-        ("Hebrew", .hebrew),
-        ("ind", .indian),
-        ("Islamic", .islamic),
-        ("IslamicCivil", .islamicCivil),
-        ("IslamicTabular", .islamicTabular),
-        ("IslamicUmmAlQura", .islamicUmmAlQura),
-        ("kok", .japanese),
-        ("his", .persian),
-        ("min", .republicOfChina)
+    let availableCalendars: [ASACalendarCode] = [
+     .Gregorian,
+     .Buddhist,
+     .Chinese,
+     .Coptic,
+     .EthiopicAmeteAlem,
+     .EthiopicAmeteMihret,
+     .Hebrew,
+     .Indian,
+     .Islamic,
+     .IslamicCivil,
+     .IslamicTabular,
+     .IslamicUmmAlQura,
+     .Japanese,
+     .Persian,
+     .RepublicOfChina,
     ]
     
     var body: some View {
@@ -47,12 +46,12 @@ struct ASAMainTabView: View {
                         .datePickerStyle(.compact)
                         
                         Menu {
-                            ForEach(availableCalendars, id: \.calendar) { calendarInfo in
+                            ForEach(availableCalendars, id: \.self) { calendar in
                                 Button {
-                                    selectedCalendar = Calendar(identifier: calendarInfo.calendar)
+                                    selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier)
                                 } label: {
-                                    Label(NSLocalizedString(calendarInfo.name, comment: ""), systemImage:
-                                            selectedCalendar.identifier == calendarInfo.calendar ? "checkmark" : "")
+                                    Label(calendar.localizedName, systemImage:
+                                            selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
                                 }
                             }
                         } label: {
@@ -177,7 +176,7 @@ struct ASAMainTabView: View {
                     Button {
                         showComplicationsSheet = true
                     } label: {
-                        Label("Complications", systemImage: "square.split.2x2")
+                        Label("Complications", systemImage: "applewatch")
                     }
                 }
             }
@@ -185,7 +184,7 @@ struct ASAMainTabView: View {
         .sheet(isPresented: $showAboutSheet) {
             ASAAboutTab()
         }
-        .sheet(isPresented: $showComplicationsSheet) {
+        .fullScreenCover(isPresented: $showComplicationsSheet) {
             ASAComplicationClocksTab(now: $now)
         }
     }
