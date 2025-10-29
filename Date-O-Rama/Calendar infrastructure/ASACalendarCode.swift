@@ -106,24 +106,6 @@ enum ASACalendarType {
 // MARK: -
 
 extension ASACalendarCode {
-    static let datePickerSafeCalendars: [ASACalendarCode] = [
-        .gregorian,
-        .buddhist,
-        .chinese,
-        .coptic,
-        .ethiopicAmeteAlem,
-        .ethiopicAmeteMihret,
-        .hebrew,
-        .indian,
-        .islamic,
-        .islamicCivil,
-        .islamicTabular,
-        .islamicUmmAlQura,
-        .japanese,
-        .persian,
-        .republicOfChina,
-    ]
-
     var localizedName:  String {
         switch self {
         case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .frenchRepublicanRomme, .hebrew, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .julian:
@@ -415,13 +397,35 @@ extension ASACalendarCode {
     static func allForClocksOfLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
         switch locationType {
         case .earthLocation:
-            return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .chinese, .hebrew, .hebrewGRA, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
+            return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .chinese,
+//                    .hebrew,
+                    .hebrewGRA, .hebrewMA,
+//                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
+                .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:
             return [.marsSolDate]
         } // switch locationType
     } // static func allForClocksOfLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode>
+    
+    static let datePickerSafeCalendars: [ASACalendarCode] = [
+        .gregorian,
+        .buddhist,
+        .chinese,
+        .coptic,
+        .ethiopicAmeteAlem,
+        .ethiopicAmeteMihret,
+        .hebrew,
+        .indian,
+        .islamic,
+        .islamicCivil,
+        .islamicTabular,
+        .islamicUmmAlQura,
+        .japanese,
+        .persian,
+        .republicOfChina,
+    ]
 
     func matches(_ otherCalendarCode: ASACalendarCode) -> Bool {
         if self == .allHebrew && otherCalendarCode.isHebrewCalendar {
