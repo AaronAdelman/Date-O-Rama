@@ -204,29 +204,29 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
             
         case .threeLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
-                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full),
-                ASAClock.generic(calendarCode: .HebrewGRA, dateFormat: .full),
-                ASAClock.generic(calendarCode: .IslamicSolar, dateFormat: .full)
+                ASAClock.generic(calendarCode: .gregorian, dateFormat: .full),
+                ASAClock.generic(calendarCode: .hebrewGRA, dateFormat: .full),
+                ASAClock.generic(calendarCode: .islamicSolarTime, dateFormat: .full)
             ], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .twoLineSmall:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
-                ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekday),
-                ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .dayOfMonth)
+                ASAClock.generic(calendarCode: .gregorian, dateFormat:  .abbreviatedWeekday),
+                ASAClock.generic(calendarCode: .gregorian, dateFormat:  .dayOfMonth)
             ], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .twoLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
-                ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
-                ASAClock.generic(calendarCode: .HebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
+                ASAClock.generic(calendarCode: .gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
+                ASAClock.generic(calendarCode: .hebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
             ], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .oneLineSmall:
-            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
+            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
                                                                            ], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .oneLineLarge:
-            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
+            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .gregorian, dateFormat: .mediumWithWeekday)
                                                                            ], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
         } // switch key
     } // func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks

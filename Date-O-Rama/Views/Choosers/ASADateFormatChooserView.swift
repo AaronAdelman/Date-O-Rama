@@ -95,6 +95,6 @@ struct ASADateFormatCell: View {
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(clock: ASAClock.generic, location: .NullIsland, tempDateFormat: .full, calendarCode: .Gregorian, forAppleWatch: true)
+        ASADateFormatChooserView(clock: ASAClock.generic, location: .NullIsland, tempDateFormat: .full, calendarCode: .gregorian, forAppleWatch: true)
     }
 }

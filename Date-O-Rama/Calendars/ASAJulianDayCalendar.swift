@@ -13,7 +13,7 @@ import UIKit
 //let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
 
 class ASAJulianDayCalendar:  ASACalendar {
-    var calendarCode: ASACalendarCode = .JulianDay
+    var calendarCode: ASACalendarCode = .julianDay
     var defaultDateFormat:  ASADateFormat = .full
     
     init(calendarCode: ASACalendarCode) {
@@ -94,7 +94,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsTimes: Bool {
         get {
             switch self.calendarCode {
-            case .TruncatedJulianDay, .LilianDate, .RataDie:
+            case .truncatedJulianDay, .lilianDate, .rataDie:
                 return false
                 
             default:

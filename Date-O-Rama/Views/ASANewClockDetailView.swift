@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASANewClockDetailView: View {
     @EnvironmentObject var userData:  ASAModel
-    @State var selectedClock:  ASAClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
+    @State var selectedClock:  ASAClock = ASAClock.generic(calendarCode: .gregorian, dateFormat: .full)
     var location: ASALocation
     var usesDeviceLocation: Bool
     
@@ -36,7 +36,7 @@ struct ASANewClockDetailView: View {
                     ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation, builtInEventCalendarFileData: builtInEventCalendarFileData)
                 } // List
                 .onAppear() {
-                    self.selectedClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full, regionCode: location.regionCode ?? "")
+                    self.selectedClock = ASAClock.generic(calendarCode: .gregorian, dateFormat: .full, regionCode: location.regionCode ?? "")
                 }
                 .navigationTitle("New Clock Details")
                 .toolbar(content: {

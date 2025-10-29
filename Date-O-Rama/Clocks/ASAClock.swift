@@ -81,7 +81,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         }
     }
     
-    @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
+    @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .gregorian) {
         didSet {
             enforceDateAndTimeFormatSelfConsistency()
 
@@ -262,7 +262,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
             if code == nil {
-                newClock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+                newClock.calendar = ASACalendarFactory.calendar(code: .gregorian)!
             } else {
                 newClock.calendar = ASACalendarFactory.calendar(code: code!)!
             }
@@ -557,7 +557,7 @@ extension ASAClock {
     } // static func generic(calendarCode:  ASACalendarCode) ->  ASAClock
 
     static var generic:  ASAClock {
-        return ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
+        return ASAClock.generic(calendarCode: .gregorian, dateFormat: .full)
     } // static var generic:  ASAClock
 } // extension ASAClock
 
@@ -649,6 +649,6 @@ extension ASAClock {
     }
     
     var eventsShouldShowSecondaryDates: Bool {
-        return self.calendar.calendarCode != .Gregorian
+        return self.calendar.calendarCode != .gregorian
     }
 } // extension ASAClock

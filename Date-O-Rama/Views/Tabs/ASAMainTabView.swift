@@ -10,21 +10,21 @@ struct ASAMainTabView: View {
     @State private var showComplicationsSheet = false
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
     let availableCalendars: [ASACalendarCode] = [
-     .Gregorian,
-     .Buddhist,
-     .Chinese,
-     .Coptic,
-     .EthiopicAmeteAlem,
-     .EthiopicAmeteMihret,
-     .Hebrew,
-     .Indian,
-     .Islamic,
-     .IslamicCivil,
-     .IslamicTabular,
-     .IslamicUmmAlQura,
-     .Japanese,
-     .Persian,
-     .RepublicOfChina,
+     .gregorian,
+     .buddhist,
+     .chinese,
+     .coptic,
+     .ethiopicAmeteAlem,
+     .ethiopicAmeteMihret,
+     .hebrew,
+     .indian,
+     .islamic,
+     .islamicCivil,
+     .islamicTabular,
+     .islamicUmmAlQura,
+     .japanese,
+     .persian,
+     .republicOfChina,
     ]
     
     var body: some View {
