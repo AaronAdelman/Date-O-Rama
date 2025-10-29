@@ -48,7 +48,7 @@ struct ASAMainTabView: View {
                         Menu {
                             ForEach(availableCalendars, id: \.self) { calendar in
                                 Button {
-                                    selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier)
+                                    selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
                                 } label: {
                                     Label(calendar.localizedName, systemImage:
                                             selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")

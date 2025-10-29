@@ -116,7 +116,7 @@ extension ASADateComponents {
     func ApplesDateComponents() -> DateComponents {
         let title = self.calendar.calendarCode.equivalentCalendarIdentifier
         
-        let calendar = Calendar(identifier: title)
+        let calendar = Calendar(identifier: title!)
         var dateComponents = DateComponents()
         
         dateComponents.calendar = calendar

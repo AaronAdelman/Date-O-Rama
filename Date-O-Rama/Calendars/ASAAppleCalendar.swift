@@ -23,7 +23,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
         let title = self.calendarCode.equivalentCalendarIdentifier
-        ApplesCalendar = Calendar(identifier: title)
+        ApplesCalendar = Calendar(identifier: title!)
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)
 
