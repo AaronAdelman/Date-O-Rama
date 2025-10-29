@@ -26,7 +26,7 @@ struct ASAClockCell: View {
     
     var isForComplications:  Bool
     
-    var indexIsOdd: Bool
+//    var indexIsOdd: Bool
         
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
@@ -47,15 +47,15 @@ struct ASAClockCell: View {
                     .colorScheme(.dark)
             }
         } else {
-            let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
-            HStack(alignment: .firstTextBaseline) {
+//            let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
+//            HStack(alignment: .firstTextBaseline) {
                 ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
                     .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-            }
-            .listRowBackground(backgroundColor
-                .ignoresSafeArea(edges: .all)
-            )
+//            }
+//            .listRowBackground(backgroundColor
+//                .ignoresSafeArea(edges: .all)
+//            )
         }
 #endif
     } // var body

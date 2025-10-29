@@ -98,7 +98,9 @@ struct ASAComplicationSectionView: View {
                 clock
                 in
                 let processedClock: ASAProcessedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: true, location: location, usesDeviceLocation: usesDeviceLocation)
-                ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false, clock: clock, location: location).environmentObject(userData)
+                ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true,
+//                             indexIsOdd: false,
+                             clock: clock, location: location).environmentObject(userData)
             }
         })
     }

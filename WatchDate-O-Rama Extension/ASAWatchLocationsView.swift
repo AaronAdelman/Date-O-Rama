@@ -23,9 +23,9 @@ struct ASAWatchLocationsView: View {
                     ASAProcessedClock(clock: $0.wrappedValue, now: now, isForComplications: false, location: location.wrappedValue, usesDeviceLocation: usesDeviceLocation.wrappedValue)
                 }
                 
-                let headerColor = processed.dayPart.locationColor
+                let cellColor = processed.dayPart.locationColor
 
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: section, headerColor: headerColor, processed: processed)
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: section,cellColor: cellColor, processed: processed)
                     .environmentObject(userData)
             }
         }

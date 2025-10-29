@@ -35,7 +35,7 @@ struct ASALocationWithClocksSectionHeader: View {
         let sectionHeaderMinimumScaleFactor = 0.50
 #else
         let sectionHeaderTitle = location.formattedOneLineAddress
-        let sectionHeaderFont: Font = Font.title2
+        let sectionHeaderFont: Font = Font.title2.bold()
         let sectionHeaderLineLimit = 2
         let sectionHeaderMinimumScaleFactor = 1.0
 #endif

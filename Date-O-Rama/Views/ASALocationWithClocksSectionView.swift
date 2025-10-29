@@ -25,7 +25,7 @@ struct ASALocationWithClocksSectionView: View {
     
     @State private var showingActionSheet = false
     
-    let headerColor: Color
+    let cellColor: Color
     let processed: Array<ASAProcessedClock>
     
 #if os(watchOS)
@@ -90,9 +90,9 @@ struct ASALocationWithClocksSectionView: View {
 #endif
         } // HStack
             .padding()
-            .foregroundStyle(Color.white)
+//            .foregroundStyle(Color.white)
 //            .background(headerColor)
-            .background(.clear)
+//            .background(.clear)
             .listRowInsets(EdgeInsets(
                 top: 0,
                 leading: 0,
@@ -114,7 +114,12 @@ struct ASALocationWithClocksSectionView: View {
                     let shouldShowMiniCalendar = true
                     let indexIsOdd             = index % 2 == 1
 #endif
-                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd, clock: clock, location: locationWithClocks.location).environmentObject(userData)
+                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false,
+//                                 indexIsOdd: indexIsOdd,
+                                 clock: clock, location: locationWithClocks.location).environmentObject(userData)
+                        .colorScheme(.dark)
+                        .background(cellColor, ignoresSafeAreaEdges: .all)
+                        .listRowBackground(cellColor)
                 }
             }
             .onMove(perform: onMove)

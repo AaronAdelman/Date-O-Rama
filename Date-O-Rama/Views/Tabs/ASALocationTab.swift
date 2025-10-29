@@ -30,7 +30,7 @@ struct ASALocationTab: View {
             }
             
             let dayPart: ASADayPart = processed.dayPart
-            let headerColor = dayPart.locationColor
+            let cellColor = dayPart.locationColor
             
             let dayTop      = Color("dayTop")
             let dayBottom   = Color("dayBottom")
@@ -59,7 +59,7 @@ struct ASALocationTab: View {
                     ASALocationWithClocksSectionView(
                         now: $now,
                         locationWithClocks: $locationWithClocks,
-                        headerColor: headerColor,
+                       cellColor:cellColor,
                         processed: processed
                     )
                     .environmentObject(userData)
