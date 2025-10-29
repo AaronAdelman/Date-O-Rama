@@ -46,43 +46,6 @@ fileprivate extension Int {
 } // extension Int
 
 struct ASACalendarChooserView: View {
-//    let calendarCodes:  Array<ASACalendarCode> = [
-//        .Gregorian,
-//        .Buddhist,
-//        //        .CCSDSJulianDay,
-//        .Chinese,
-//        //        .CNESJulianDay,
-//        .Coptic,
-//        //        .DublinJulianDay,
-//        .EthiopicAmeteAlem,
-//        .EthiopicAmeteMihret,
-//        .FrenchRepublican,
-//        .FrenchRepublicanRomme,
-//        .Hebrew,
-//        .HebrewGRA,
-//        .HebrewMA,
-//        .Indian,
-//        .Islamic,
-//        .IslamicSolar,
-//        .IslamicCivil,
-//        .IslamicCivilSolar,
-//        .IslamicTabular,
-//        .IslamicTabularSolar,
-//        .IslamicUmmAlQura,
-//        .IslamicUmmAlQuraSolar,
-//        .Japanese,
-//        .Julian,
-//        //        .JulianDay,
-//        //        .LilianDate,
-//        //        .MarsSolDate,
-//        //        .ModifiedJulianDay,
-//            .Persian,
-//        //        .RataDie,
-//        //        .ReducedJulianDay,
-//            .RepublicOfChina,
-//        //        .TruncatedJulianDay
-//    ]
-    
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
     var usesDeviceLocation: Bool
@@ -96,7 +59,7 @@ struct ASACalendarChooserView: View {
     var locationType: ASALocationType
     
     var calendarCodes: Array<ASACalendarCode> {
-        return ASACalendarCode.allForLocationType(self.locationType)
+        return ASACalendarCode.allForClocksOfLocationType(self.locationType)
     }
     
     func calendarCodes(option:  Int) -> Array<ASACalendarCode> {
@@ -107,7 +70,6 @@ struct ASACalendarChooserView: View {
                 
             case APPLE_CALENDARS:
                 return $0.isAppleCalendar
-                //                    || $0.isISO8601Calendar
                 
             case SOLAR_CALENDARS:
                 return $0.type == .solar
@@ -141,7 +103,6 @@ struct ASACalendarChooserView: View {
                 Text("Solar calendars").tag(SOLAR_CALENDARS)
                 Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
                 Text("Lunar calendars").tag(LUNAR_CALENDARS)
-                //                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
             })
             
             ForEach(self.calendarCodes(option: selection), id: \.self) {
