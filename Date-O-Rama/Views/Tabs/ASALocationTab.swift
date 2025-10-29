@@ -40,7 +40,7 @@ struct ASALocationTab: View {
             let gradient: Gradient = {
                 switch location.type {
                 case .earthUniversal, .marsUniversal:
-                    return Gradient(colors: [.gray])
+                    return Gradient(colors: [.brown])
                     
                 case .earthLocation:
                     switch dayPart {
