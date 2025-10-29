@@ -40,7 +40,7 @@ struct ASALocationTab: View {
             let gradient: Gradient = {
                 switch location.type {
                 case .earthUniversal, .marsUniversal:
-                    return Gradient(colors: [.brown])
+                    return Gradient(colors: [.black, .brown])
                     
                 case .earthLocation:
                     switch dayPart {
@@ -49,7 +49,7 @@ struct ASALocationTab: View {
                     case .night:
                         return Gradient(colors: [nightTop, nightTop, nightBottom])
                     case .unknown:
-                        return Gradient(colors: [.brown])
+                        return Gradient(colors: [.black, .brown])
                     }
                 }
             }()
@@ -65,14 +65,14 @@ struct ASALocationTab: View {
                     .environmentObject(userData)
                 }
                 .listStyle(.grouped)
-                .scrollContentBackground(.hidden)
+//                .scrollContentBackground(.hidden)
                 .padding(.top, geo.safeAreaInsets.top)
                 .padding(.bottom, geo.safeAreaInsets.bottom)
-                .background(gradient)
+//                .background(gradient)
             }
             .listStyle(.grouped)
             .scrollContentBackground(.hidden)
-            .background(gradient)
+            .background(gradient, ignoresSafeAreaEdges: .vertical)
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
 //            .navigationBarItems(trailing: EditButton())
