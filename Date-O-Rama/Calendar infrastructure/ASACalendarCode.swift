@@ -106,6 +106,24 @@ enum ASACalendarType {
 // MARK: -
 
 extension ASACalendarCode {
+    static let datePickerSafeCalendars: [ASACalendarCode] = [
+        .gregorian,
+        .buddhist,
+        .chinese,
+        .coptic,
+        .ethiopicAmeteAlem,
+        .ethiopicAmeteMihret,
+        .hebrew,
+        .indian,
+        .islamic,
+        .islamicCivil,
+        .islamicTabular,
+        .islamicUmmAlQura,
+        .japanese,
+        .persian,
+        .republicOfChina,
+    ]
+
     var localizedName:  String {
         switch self {
         case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .frenchRepublicanRomme, .hebrew, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .julian:
@@ -518,3 +536,4 @@ extension ASACalendarCode {
         } // switch self
     } // func genericBuiltInEventCalendarNames(regionCode: String) -> Array<String>
 } // extension ASACalendarCode
+

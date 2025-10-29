@@ -9,23 +9,6 @@ struct ASAMainTabView: View {
     @State private var showAboutSheet = false
     @State private var showComplicationsSheet = false
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
-    let availableCalendars: [ASACalendarCode] = [
-     .gregorian,
-     .buddhist,
-     .chinese,
-     .coptic,
-     .ethiopicAmeteAlem,
-     .ethiopicAmeteMihret,
-     .hebrew,
-     .indian,
-     .islamic,
-     .islamicCivil,
-     .islamicTabular,
-     .islamicUmmAlQura,
-     .japanese,
-     .persian,
-     .republicOfChina,
-    ]
     
     var body: some View {
         ZStack {
@@ -46,7 +29,7 @@ struct ASAMainTabView: View {
                         .datePickerStyle(.compact)
                         
                         Menu {
-                            ForEach(availableCalendars, id: \.self) { calendar in
+                            ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
                                 Button {
                                     selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
                                 } label: {
