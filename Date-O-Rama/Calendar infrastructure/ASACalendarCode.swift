@@ -59,7 +59,17 @@ enum ASACalendarCode:  String, Codable {
     case telugu                    = "telugu"
     case vietnamese                = "vietnamese"
     case vikram                    = "vikram"
-    
+    case banglaSolarTime           = "bangla-s"
+    case dangiSolarTime            = "dangi-s"
+    case gujaratiSolarTime         = "gujarati-s"
+    case kannadaSolarTime          = "kannada-s"
+    case malayalamSolarTime        = "malayalam-s"
+    case marathiSolarTime          = "marathi-s"
+    case odiaSolarTime             = "odia-s"
+    case tamilSolarTime            = "tamil-s"
+    case teluguSolarTime           = "telugu-s"
+    case vietnameseSolarTime       = "vietnamese-s"
+    case vikramSolarTime           = "vikram-s"
     case allEarth                  = "*"
     case allHebrew                 = "heb*"
     case allHebrewSolarTime        = "heb-solar*"
@@ -108,8 +118,17 @@ enum ASACalendarType {
 extension ASACalendarCode {
     var localizedName:  String {
         switch self {
-        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .frenchRepublicanRomme, .hebrew, .hebrewMA, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .julian:
+        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .frenchRepublicanRomme,
+//                .hebrew,
+                .hebrewMA,
+//                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
+                .julian:
             return NSLocalizedString(self.rawValue, comment: "")
+            
+        case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:
+            let identifier = self.equivalentCalendarIdentifier
+            let shortVersion: String = Locale.current.localizedString(for: identifier!) ?? "???"
+            return String.localizedStringWithFormat(NSLocalizedString("%@ (midnight date start)", comment: ""), shortVersion)
 
         default:
             let identifier = self.equivalentCalendarIdentifier
@@ -369,29 +388,25 @@ extension ASACalendarCode {
            
            return identifier
        } // var equivalentCalendarIdentifier
-} // extension ASACalendarCode
 
-extension ASACalendarCode {
     var type:  ASACalendarType {
-        get {
-            switch self {
-            case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
-                    .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .bangla, .malayalam, .odia, .tamil:
-                return .solar
-                
-            case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
-                return .lunisolar
-                
-            case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
-                return .lunar
-                
-            case .julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
-                return .JulianDay
-                
-            default:
-                return .invalid
-            } // switch self
-        } // get
+        switch self {
+        case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
+                .japanese ,.persian, .republicOfChina, .frenchRepublican, .frenchRepublicanRomme, .julian, .bangla, .malayalam, .odia, .tamil:
+            return .solar
+            
+        case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
+            return .lunisolar
+            
+        case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
+            return .lunar
+            
+        case .julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
+            return .JulianDay
+            
+        default:
+            return .invalid
+        } // switch self
     } // var type
     
     static func allForClocksOfLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
@@ -409,6 +424,7 @@ extension ASACalendarCode {
         } // switch locationType
     } // static func allForClocksOfLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode>
     
+    // TODO:  Some Indian calendars crash the date picker.  This is likely Apple’s fault.
     static let datePickerSafeCalendars: [ASACalendarCode] = [
         .gregorian,
         .buddhist,
@@ -425,6 +441,17 @@ extension ASACalendarCode {
         .japanese,
         .persian,
         .republicOfChina,
+        .bangla,
+        .dangi,
+//        .gujarati,
+//        .kannada,
+        .malayalam,
+//        .marathi,
+        .odia,
+        .tamil,
+//        .telugu,
+        .vietnamese,
+//        .vikram
     ]
 
     func matches(_ otherCalendarCode: ASACalendarCode) -> Bool {
