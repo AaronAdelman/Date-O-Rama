@@ -17,7 +17,7 @@ import EventKitUI
 
 struct ASAClockCell: View {
     @EnvironmentObject var userData:  ASAModel
-
+    
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     
@@ -26,8 +26,6 @@ struct ASAClockCell: View {
     
     var isForComplications:  Bool
     
-//    var indexIsOdd: Bool
-        
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
     
@@ -35,29 +33,13 @@ struct ASAClockCell: View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         
 #if os(watchOS)
-        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock).environmentObject(userData)
+        let MINIMUM_HEIGHT: CGFloat? = nil
 #else
-        let MINIMUM_HEIGHT: CGFloat = 40.0
-        
-        if isForComplications {
-            HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  true, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
-                    .environmentObject(userData)
-                    .frame(minHeight:  MINIMUM_HEIGHT)
-//                    .colorScheme(.dark)
-            }
-        } else {
-//            let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
-//            HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
-                    .environmentObject(userData)
-                    .frame(minHeight:  MINIMUM_HEIGHT)
-//            }
-//            .listRowBackground(backgroundColor
-//                .ignoresSafeArea(edges: .all)
-//            )
-        }
+        let MINIMUM_HEIGHT: CGFloat? = 40.0
 #endif
+        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
+            .environmentObject(userData)
+            .frame(minHeight:  MINIMUM_HEIGHT)
     } // var body
 } // struct ASAClockCell
 
@@ -70,9 +52,9 @@ struct ASAClockCellBody:  View {
         case clockDetail
         case newEvent
     }
-
+    
     @EnvironmentObject var userData:  ASAModel
-
+    
     let processedClock:  ASAProcessedClock
     @Binding var now:  Date
     
@@ -88,7 +70,7 @@ struct ASAClockCellBody:  View {
     @State var detailType = DetailType.none
     
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
-
+    
     var location: ASALocation
     var clock: ASAClock
     
@@ -105,7 +87,7 @@ struct ASAClockCellBody:  View {
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
-          
+    
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
@@ -244,11 +226,11 @@ struct ASAClockCellBody:  View {
                                 userData.savePreferences(code: isForComplications ? .complications : .clocks)
                             }
                         }
-                    .sheet(isPresented: $showingDetailView, onDismiss: {
-                        //                        debugPrint("❎ Clock cell detail view was dismissed.")
-                    }, content: {
-                        ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
-                    })
+                        .sheet(isPresented: $showingDetailView, onDismiss: {
+                            //                        debugPrint("❎ Clock cell detail view was dismissed.")
+                        }, content: {
+                            ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
+                        })
                 }
 #endif
             } // HStack
@@ -268,7 +250,7 @@ struct ASAClockCellBody:  View {
 #else
 struct ASAClockCellDetailView: View {
     @EnvironmentObject var userData:  ASAModel
-
+    
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     @Binding var showingDetailView: Bool
