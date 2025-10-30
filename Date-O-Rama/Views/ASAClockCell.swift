@@ -44,7 +44,7 @@ struct ASAClockCell: View {
                 ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  true, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
                     .environmentObject(userData)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-                    .colorScheme(.dark)
+//                    .colorScheme(.dark)
             }
         } else {
 //            let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")

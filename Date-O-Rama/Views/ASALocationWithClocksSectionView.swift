@@ -90,7 +90,7 @@ struct ASALocationWithClocksSectionView: View {
 #endif
         } // HStack
             .padding()
-            .colorScheme(.dark)
+//            .colorScheme(.dark)
             .foregroundStyle(Color.white)
 //            .background(headerColor)
 //            .background(.clear)
@@ -110,15 +110,15 @@ struct ASALocationWithClocksSectionView: View {
                     
 #if os(watchOS)
                     let shouldShowMiniCalendar = false
-                    let indexIsOdd             = false
+//                    let indexIsOdd             = false
 #else
                     let shouldShowMiniCalendar = true
-                    let indexIsOdd             = index % 2 == 1
+//                    let indexIsOdd             = index % 2 == 1
 #endif
                     ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false,
 //                                 indexIsOdd: indexIsOdd,
                                  clock: clock, location: locationWithClocks.location).environmentObject(userData)
-                        .colorScheme(.dark)
+//                        .colorScheme(.dark)
                         .background(cellColor, ignoresSafeAreaEdges: .all)
                         .listRowBackground(cellColor)
                 }

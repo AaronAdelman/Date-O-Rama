@@ -65,6 +65,7 @@ struct ASAMainTabView: View {
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                .colorScheme(.dark)
             }
             
             if showLocationsOverlay {
