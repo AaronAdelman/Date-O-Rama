@@ -35,7 +35,7 @@
         {type: "D", start: {era: 1, y: 2025, mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/pakistan/pakistan-bank-holiday"}, inherits: "Bank Holiday"},
         {type: "D", start: {mon: 10, d: 24}, inherits: "Founding Day", first: {era: 1, y: 1947}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Gilgit-Baltistan Day", "ur": "یومِ تاسیس گِلگِت بَلتِسْتان"}},
-        {type: "D", start: {mon: 11, d: 9}, titles: {"en": "Iqbal Day", "ur": "یوم اقبال"}, urls: {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},
+        {type: "D", start: {mon: 11, d: 9}, titles: {"ar":"يوم إقبال","az":"İqbal günü","en":"Iqbal Day","jv":"Dina Iqbal","ms":"Hari Iqbal","pa":"ਇਕਬਾਲ ਦਿਵਸ","ta":"இக்பால் நாள்","ur":"یوم اقبال"}, urls: {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Quaid-e-Azam Day", "ur": "یوم ولادت قائداعظم"}, urls: {"en": "https://nationaltoday.com/quaid-e-azam-day/"}, first: {era: 1, y: 1942}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/anniversary-of-benazir-bhuttos-death/"}, titles: {"en": "Anniversary of Benazir Bhutto’s Death"}, first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 2, d: 104}, titles: {"en": "Azad Kashmir Day", "ur": "یومِ تاسیس آزاد کشمیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Azad_Kashmir_Day"}, first: {era: 1, y: 1947}},
