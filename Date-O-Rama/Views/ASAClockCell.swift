@@ -29,53 +29,16 @@ struct ASAClockCell: View {
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
     
-    var body: some View {
-        let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
-        
-#if os(watchOS)
-        let MINIMUM_HEIGHT: CGFloat? = nil
-#else
-        let MINIMUM_HEIGHT: CGFloat? = 40.0
-#endif
-        ASAClockCellBody(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, location: location, clock: clock)
-            .environmentObject(userData)
-            .frame(minHeight:  MINIMUM_HEIGHT)
-    } // var body
-} // struct ASAClockCell
-
-
-// MARK: -
-
-struct ASAClockCellBody:  View {
     enum DetailType {
         case none
         case clockDetail
         case newEvent
     }
     
-    @EnvironmentObject var userData:  ASAModel
-    
-    let processedClock:  ASAProcessedClock
-    @Binding var now:  Date
-    
-    let shouldShowTime:  Bool
-    let shouldShowMiniCalendar:  Bool
-    let canSplitTimeFromDate:  Bool
-    
-    let isForComplications:  Bool
-    
-    @Binding var eventVisibility: ASAClockCellTimeEventVisibility
-    
-    @State var showingDetailView: Bool = false
-    @State var detailType = DetailType.none
-    
-    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
-    
-    var location: ASALocation
-    var clock: ASAClock
+    @State private var showingDetailView: Bool = false
+    @State private var detailType: DetailType = .none
     
 #if os(watchOS)
-    let compact = true
 #else
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
@@ -87,8 +50,16 @@ struct ASAClockCellBody:  View {
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
-    
+
     var body: some View {
+        let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
+        
+#if os(watchOS)
+        let MINIMUM_HEIGHT: CGFloat? = nil
+#else
+        let MINIMUM_HEIGHT: CGFloat? = 40.0
+#endif
+        
         VStack(spacing: 0.0) {
             HStack {
                 VStack(alignment: .leading) {
@@ -128,7 +99,7 @@ struct ASAClockCellBody:  View {
                 
 #if os(watchOS)
                 if processedClock.dateEvents.count > 0 || processedClock.timeEvents.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, now: now, clock: clock, location: location)) {
+                    NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, now: now, clock: clock, location: location)) {
                         ASACompactForwardChevronSymbol()
                     }
                 }
@@ -188,7 +159,7 @@ struct ASAClockCellBody:  View {
                         let numberOfTimeEvents = processedClock.timeEvents.count
                         if numberOfDateEvents > 0 {
                             Menu {
-                                ASAClockAllDayEventVisibilityForEach(allDayEventVisibility: $allDayEventVisibility)
+                                ASAClockAllDayEventVisibilityForEach(allDayEventVisibility: $clock.allDayEventVisibility)
                             } label: {
                                 Text("Show All-Day Events")
                             }
@@ -196,7 +167,7 @@ struct ASAClockCellBody:  View {
                         if numberOfTimeEvents > 0 {
                             
                             Menu {
-                                ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
+                                ASAClockEventVisibilityForEach(eventVisibility: $clock.eventVisibility)
                             } label: {
                                 Text("Show Events")
                             }
@@ -229,7 +200,11 @@ struct ASAClockCellBody:  View {
                         .sheet(isPresented: $showingDetailView, onDismiss: {
                             //                        debugPrint("❎ Clock cell detail view was dismissed.")
                         }, content: {
-                            ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType, clock: clock, location: location).environmentObject(userData)
+                            ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: Binding(get: { () -> ASAClockCell.DetailType in
+                                return self.detailType
+                            }, set: { newValue in
+                                self.detailType = newValue
+                            }), clock: clock, location: location).environmentObject(userData)
                         })
                 }
 #endif
@@ -238,12 +213,13 @@ struct ASAClockCellBody:  View {
 #if os(watchOS)
 #else
             if !isForComplications {
-                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, clock: clock, location: location)
+                ASAClockEventsSubcell(processedClock: processedClock, now: $now, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, clock: clock, location: location)
             }
 #endif
         } // VStack
+        .frame(minHeight:  MINIMUM_HEIGHT)
     } // var body
-} // struct ASAClockCellBody
+} // struct ASAClockCell
 
 
 #if os(watchOS)
@@ -254,7 +230,7 @@ struct ASAClockCellDetailView: View {
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     @Binding var showingDetailView: Bool
-    @Binding var detailType: ASAClockCellBody.DetailType
+    @Binding var detailType: ASAClockCell.DetailType
     
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
