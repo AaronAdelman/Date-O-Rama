@@ -94,7 +94,7 @@
         {type: "D", start: {mon: 12, wkd: [6], nth: 1}, titles: {"en": "National Jandal Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-jandal-day-in-new-zealand/"}, emoji: "🩴", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Shades for Migraine"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 19}, titles: {"en": "World Day for the Prevention of Abuse and Violence Against Children"}},
-        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Gumboot Friday"}, urls: {"en": "https://www.gumbootfriday.org.nz/"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*", emoji: "👢"},
+        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Gumboot Friday"}, urls: {"en": "https://www.gumbootfriday.org.nz/"}, first: {era: 1, y: 2019}, inherits: "*MedAwareness*", emoji: "👢", notes: {"en": "Created by Mike King of I Am Hope"}},
         {type: "M", start: {mon: 11}, inherits: "Movember", first: {era: 1, y: 2004}},
         {type: "M", start: {mon: 2}, titles: {"en": "Ovarian Cancer Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/bike-to-work-month/"}, titles: {"en": "Bike to Work Month"}, emoji: "🚲"},

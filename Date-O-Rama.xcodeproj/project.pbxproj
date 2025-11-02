@@ -485,6 +485,8 @@
 		A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
 		A5B17C652D9C43F500329F57 /* Doctor Who.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B17C642D9C43EE00329F57 /* Doctor Who.json */; };
 		A5B17C662D9C43F500329F57 /* Doctor Who.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B17C642D9C43EE00329F57 /* Doctor Who.json */; };
+		A5B1A7442EB7BEED00FF26BE /* NCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A7432EB7BEED00FF26BE /* NCA.json */; };
+		A5B1A7452EB7BEED00FF26BE /* NCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A7432EB7BEED00FF26BE /* NCA.json */; };
 		A5B321F92D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B321FA2D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
@@ -1491,6 +1493,7 @@
 		A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailView.swift; sourceTree = "<group>"; };
 		A5B0084626CD3A0B00B63B3F /* Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
 		A5B17C642D9C43EE00329F57 /* Doctor Who.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Doctor Who.json"; sourceTree = "<group>"; };
+		A5B1A7432EB7BEED00FF26BE /* NCA.json */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCA.json; sourceTree = "<group>"; };
 		A5B321F82D7A118F004E0460 /* Matrixism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Matrixism.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
@@ -2208,6 +2211,7 @@
 				A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */,
 				A5E3222C2DD20C63009EBFC0 /* National months.json */,
 				A5E4964F28625479001BF40C /* NC.json */,
+				A5B1A7432EB7BEED00FF26BE /* NCA.json */,
 				A5D850B3280C9823005247BD /* NE.json */,
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
 				A5E49652286254AC001BF40C /* NF.json */,
@@ -3197,6 +3201,7 @@
 				A5EFFF8B285B7CBD00F2205F /* NA.json in Resources */,
 				A5EFFF88285B7CA200F2205F /* MX.json in Resources */,
 				A5E4966628625585001BF40C /* PM.json in Resources */,
+				A5B1A7442EB7BEED00FF26BE /* NCA.json in Resources */,
 				A5D3D7DC27F8DB950099718A /* International.json in Resources */,
 				A502D3E928637F5000A625A9 /* SB.json in Resources */,
 				A5E292D5285A59BB00925EBD /* MZ.json in Resources */,
@@ -3610,6 +3615,7 @@
 				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BDE78526678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5EFFFED285B878900F2205F /* TW.json in Resources */,
+				A5B1A7452EB7BEED00FF26BE /* NCA.json in Resources */,
 				A5E292E9285A625000925EBD /* AR.json in Resources */,
 				A5EB85182869DBB900C9321A /* LB (Julian).json in Resources */,
 				A5EFFFBE285B811A00F2205F /* UG.json in Resources */,

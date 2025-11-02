@@ -30,7 +30,8 @@
 
         {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 1}},
         {type: "D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/signing-of-the-peace-accords/"}, titles: {"en": "Signing of the Peace Accords"}, first: {era: 1, y: 1992}},
-        {type: "D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/national-day-of-life-peace-and-justice/"}, titles: {"en": "National Day of Life, Peace and Justice"}, first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/cross-day-el-salvador/"}, titles: {"en": "Cross Day"}, notes: {"en": "Day of the Cross"}},
+        {type: "D", start: {mon: 3, d: 26}, titles: {"en": "National Day of Life, Peace and Justice"}, urls: {"en": "https://nationaltoday.com/national-day-of-life-peace-and-justice/"}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 5, d: 3}, titles: {"en": "Cross Day"}, urls: {"en": "https://nationaltoday.com/cross-day-el-salvador/"}, notes: {"en": "Day of the Cross"}},
+        {type: "D", start: {mon: 11, wkd: [1], nth: 2}, titles: {"en": "National Pupusa Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pupusa-day/"}, notes: {"en": "Created by the government of El Salvador"}},
    ]
 }

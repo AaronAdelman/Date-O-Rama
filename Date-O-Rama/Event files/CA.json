@@ -71,7 +71,7 @@
         {type: "D", start: {mon: 11, d: 21}, inherits: "National Red Mitten Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Housing Day"}, urls: {"en": "https://www.checkiday.com/fb7da8c7f1164ec81d22a7d89b783843/national-housing-day-canada"}, emoji: "🏠", notes: {"en": "National Housing Strategy Day"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 11, d: 6}, inherits: "Dog Film Festival", first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Ladies Learning Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ladies-learning-code-day/"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 11, d: 6}, titles: {"en": "National Ladies Learning Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ladies-learning-code-day/"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day\nCreated by Ladies Learning Code"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 11}, titles: {"en": "Anniversary of the Statute of Westminster"}, urls: {"en": "https://www.daysoftheyear.com/days/anniversary-of-the-statute-of-westminster/"}, first: {era: 1, y: 1931}},
         {type: "D", start: {mon: 12, d: 17}, inherits: "National Maple Syrup Day", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, first: {era: 1, y: 1991}, emoji: "👩"},

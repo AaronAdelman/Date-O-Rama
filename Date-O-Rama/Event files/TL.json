@@ -21,14 +21,15 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {inherits: "National Youth Day", type: "D", start: {mon: 11, d: 12}, first: {era: 1, y: 1991}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, notes: {"en": "Youth National Day"}},
-        {inherits: "Proclamation of Independence Day", type: "D", start: {mon: 11, d: 28}, first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},
+        {type: "D", start: {mon: 11, d: 28}, inherits: "Proclamation of Independence Day", first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},
         {type: "D", start: {mon: 12, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/east-timor-memorial-day"}, inherits: "Memorial Day"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
-        {inherits: "National Heroes’ Day", type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
+        {type: "D", start: {mon: 12, d: 31}, inherits: "National Heroes’ Day", urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
 
-        {inherits: "Mother’s Day", type: "D", start: {mon: 11, d: 3}},
+        {type: "D", start: {mon: 11, d: 3}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/memorial-day-in-east-timor/"}, inherits: "Memorial Day", first: {era: 1, y: 1975}},
+        {type: "D", start: {mon: 11, d: 3}, inherits: "National Women’s Day", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/east-timor-national-womens-day"}},
     ]
 }

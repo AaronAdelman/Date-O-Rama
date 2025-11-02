@@ -1,0 +1,21 @@
+{
+    titles: {"en": "National Confectioners Association"},
+    // NCA
+    defaultLocale: "en",
+    calendarCode: "gre*",
+    calendarColor: {red: 0.48, green: 0.25, blue: 0.0},
+    first: {era: 1, y: 2009},
+    events: [
+        {type: "D", start: {mon: 1, d: 8}, titles: {"en": "National English Toffee Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-english-toffee-day/"}, emoji: "🍬", notes: {"en": "Created by the National Confectioners Association(?)"}},
+        {type: "D", start: {mon: 10, d: 28}, inherits: "National Chocolate Day", urls: {"en": "https://www.daysoftheyear.com/days/national-chocolate-day/"}, notes: {"en": "Created by the National Confectioners Association (NCA)"}},
+        {type: "D", start: {mon: 11, d: 7}, titles: {"en": "National Bittersweet Chocolate with Almonds Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-with-almonds-day/"}, inherits: "*Chocolate*", notes: {"en": "Created by the National Confectioners Association"}},
+        {type: "D", start: {mon: 4, d: 5}, titles: {"en": "National Peeps Day"}, notes: {"en": "Peeps Day\nCreated by the National Confectioners Association"}, urls: {"en": "https://www.daysoftheyear.com/days/national-peeps-day/"}, first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 2, d: 19}, titles: {"en": "National Chocolate Mint Day", "he": "יום השוקולד מנטה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-mint-day/"}, inherits: "*Chocolate*", notes: {"en": "Created by the US National Confectioners Association"}},
+        {type: "D", start: {mon: 4, d: 12}, titles: {"en": "National Licorice Day", "he": "יום הליקריץ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/licorice-day/"}, first: {era: 1, y: 2004}, notes: {"en": "Created by the National Confectioners Association"}},
+        {type: "D", start: {mon: 8, d: 10}, titles: {"en": "National S’mores Day", "he": "יום סמורס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/smores-day/"}, notes: {"en": "Created by the National Confectioners Association(?)"}},
+        {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Toasted Marshmallow Day", "he": "יום המרשמלו הקלוי הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/toasted-marshmallow-day/"}, notes: {"en": "Created by the National Confectioners Association"}},
+        {type: "M", start: {mon: 10}, titles: {"en": "National Caramel Month"}, urls: {"en": "https://www.daysoftheyear.com/days/national-caramel-month/"}, notes: {"en": "Created by the National Confectioners Association"}},
+        {type: "M", start: {mon: 6}, titles: {"en": "National Candy Month"}, urls: {"en": "https://alwaysatreat.com/candy-moments/national-candy-month-central/"}, emoji: "🍭🍬🍫", notes: {"en": "Created by the National Confectioners Association (NCA)"}},
+        {type: "D", start: {mon: 10, d: 31}, titles: {"en": "National Caramel Apple Day"}, urls: {"en": "https://www.daysoftheyear.com/days/caramel-apple-day/"}, emoji: "🍎", notes: {"en": "Created by the National Confectioner’s Association"}},
+    ]
+}
