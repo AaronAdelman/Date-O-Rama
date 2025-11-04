@@ -1,5 +1,5 @@
 //
-//  ASALocationsTab.swift
+//  ASAAllLocationsTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -10,12 +10,12 @@ import SwiftUI
 import Combine
 import CoreLocation
 
-struct ASALocationsTab: View {
+struct ASAAllLocationsTab: View {
     @EnvironmentObject var userData: ASAModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
-    @Binding var showLocationSheet: Bool
+    @Binding var isShowingLocationSheet: Bool
     
     let currentlySelectedLocationIndex: Int
     let onDismiss: () -> Void // Callback for dismissing the overlay
@@ -52,7 +52,7 @@ struct ASALocationsTab: View {
                                 withAnimation(.easeInOut(duration: ANIMATION_DURATION)) {
                                     animatingTabSwitch = true
                                     selectedTabIndex = index
-                                    showLocationSheet = true
+                                    isShowingLocationSheet = true
                                 }
                                 
                                 // Dismiss overlay after animation
@@ -131,15 +131,7 @@ struct ASALocationsTab: View {
                             Label("Locations", systemImage: "mappin")
                         }
                     }
-                    
-                    // Add close button to toolbar
-//                    ToolbarItem(placement: .navigationBarTrailing) {
-//                        Button("Done") {
-//                            onDismiss()
-//                        }
-//                    }
                 }
-//                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
                 .onAppear {
                     // Highlight the currently selected location when coming from tab view
                     highlightedLocationIndex = currentlySelectedLocationIndex
@@ -170,7 +162,7 @@ struct ASALocationsTab: View {
                 .environmentObject(userData)
                 .environmentObject(locationManager)
             }
-            .fullScreenCover(isPresented: $showLocationSheet, onDismiss: {}, content: {
+            .fullScreenCover(isPresented: $isShowingLocationSheet, onDismiss: {}, content: {
                 NavigationStack {
                     ASAMainTabView(now: $now, usingRealTime: $usingRealTime)
                         .navigationBarTitleDisplayMode(.inline)
@@ -185,7 +177,7 @@ struct ASALocationsTab: View {
         userData.savePreferences(code: .clocks)
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
-} // struct ASALocationsTab
+} // struct ASAAllLocationsTab
 
 let EARTH_UNIVERSAL_LATITUDE = 0.0
 let EARTH_UNIVERSAL_LONGITUDE = 0.0
@@ -247,7 +239,7 @@ extension Array where Element == ASALocationWithClocks {
             if rightType == .marsUniversal {
                 return true
             }
-
+            
             let leftLatitude: CLLocationDegrees  = (leftType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE :  $0.location.location.coordinate.latitude
             let rightLatitude: CLLocationDegrees = (rightType == .earthUniversal) ? EARTH_UNIVERSAL_LATITUDE : $1.location.location.coordinate.latitude
             return leftLatitude < rightLatitude })

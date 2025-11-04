@@ -75,7 +75,7 @@ struct ASALocationTab: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-} // struct ASALocationsTab
+} // struct ASAAllLocationsTab
 
 
 // MARK:  -
@@ -83,7 +83,7 @@ struct ASALocationTab: View {
 
 //struct ASAClocksView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASALocationsTab().environmentObject(ASAModel.shared)
+//        ASAAllLocationsTab().environmentObject(ASAModel.shared)
 //    }
 //}
 

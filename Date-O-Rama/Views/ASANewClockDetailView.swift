@@ -39,7 +39,7 @@ struct ASANewClockDetailView: View {
                     self.selectedClock = ASAClock.generic(calendarCode: .gregorian, dateFormat: .full, regionCode: location.regionCode ?? "")
                 }
                 .navigationTitle("New Clock Details")
-                .toolbar(content: {
+                .toolbar {
                     ToolbarItemGroup(placement: .cancellationAction) {
                         Button("Cancel") {
                             self.showingActionSheet = true
@@ -57,7 +57,7 @@ struct ASANewClockDetailView: View {
                             self.dismiss()
                         }
                     }
-                })
+                }
             } // NavigationView
             .navigationViewStyle(StackNavigationViewStyle())
         } // VStack
