@@ -40,13 +40,6 @@ struct ASAClockCell: View {
     
 #if os(watchOS)
 #else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    var compact:  Bool {
-        get {
-            return self.sizeClass == .compact
-        } // get
-    } // var compact
-    
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
