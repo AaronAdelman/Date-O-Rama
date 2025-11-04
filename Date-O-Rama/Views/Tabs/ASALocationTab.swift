@@ -16,9 +16,6 @@ struct ASALocationTab: View {
     @Binding var usingRealTime: Bool
     @Binding var locationWithClocks: ASALocationWithClocks
     
-    let isAnimatingToList: Bool
-    
-//    @State var isNavigationBarHidden: Bool = true
     @Environment(\.horizontalSizeClass) private var hSizeClass
     
     var body: some View {
@@ -65,24 +62,13 @@ struct ASALocationTab: View {
                     .environmentObject(userData)
                 }
                 .listStyle(.grouped)
-//                .scrollContentBackground(.hidden)
                 .padding(.top, geo.safeAreaInsets.top)
                 .padding(.bottom, geo.safeAreaInsets.bottom)
-//                .background(gradient)
             }
             .listStyle(.grouped)
             .scrollContentBackground(.hidden)
             .background(gradient, ignoresSafeAreaEdges: .vertical)
-//            .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
-//            .navigationBarItems(trailing: EditButton())
-//            .onAppear {
-//                self.isNavigationBarHidden = true
-//            }
-            // Add shrinking animation for reverse transition
-            .scaleEffect(isAnimatingToList ? 0.85 : 1.0)
-            .opacity(isAnimatingToList ? 0.7 : 1.0)
-            .animation(.easeInOut(duration: 0.3), value: isAnimatingToList)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

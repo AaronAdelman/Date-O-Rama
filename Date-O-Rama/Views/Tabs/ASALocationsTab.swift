@@ -15,7 +15,7 @@ struct ASALocationsTab: View {
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var selectedTabIndex: Int
-    @Binding var showLocationsSheet: Bool
+    @Binding var showLocationSheet: Bool
     
     let currentlySelectedLocationIndex: Int
     let onDismiss: () -> Void // Callback for dismissing the overlay
@@ -52,6 +52,7 @@ struct ASALocationsTab: View {
                                 withAnimation(.easeInOut(duration: ANIMATION_DURATION)) {
                                     animatingTabSwitch = true
                                     selectedTabIndex = index
+                                    showLocationSheet = true
                                 }
                                 
                                 // Dismiss overlay after animation
@@ -70,7 +71,7 @@ struct ASALocationsTab: View {
                         Color.clear.frame(height: 0)
                     }
                 }
-                .navigationTitle("Locations")
+                .navigationTitle("")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
@@ -169,6 +170,13 @@ struct ASALocationsTab: View {
                 .environmentObject(userData)
                 .environmentObject(locationManager)
             }
+            .fullScreenCover(isPresented: $showLocationSheet, onDismiss: {}, content: {
+                NavigationStack {
+                    ASAMainTabView(now: $now, usingRealTime: $usingRealTime)
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+            })
         } // GeometryReader
     } // body
     
@@ -273,3 +281,4 @@ extension Array where Element == ASALocationWithClocks {
 //        ASAClocksTab().environmentObject(ASAModel.shared)
 //    }
 //}
+

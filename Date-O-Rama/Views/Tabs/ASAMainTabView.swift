@@ -4,97 +4,66 @@ struct ASAMainTabView: View {
     @EnvironmentObject var userData: ASAModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
-    @State private var animatingToLocationsList = false
-    @State private var showLocationsOverlay = false
+//    @State private var animatingToLocationsList = false
     @State private var showAboutSheet = false
     @State private var showComplicationsSheet = false
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 0) {
-                // Date picker and calendar picker — show only when not using real time
-                if !usingRealTime {
-                    HStack {
-                        Spacer()
-                        
-                        DatePicker(
-                            selection: $now,
-                            in: Date.distantPast...Date.distantFuture,
-                            displayedComponents: [.date, .hourAndMinute]
-                        ) {
-                            Text("")
-                        }
-                        .environment(\.calendar, selectedCalendar)
-                        .datePickerStyle(.compact)
-                        
-                        Menu {
-                            ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
-                                Button {
-                                    selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
-                                } label: {
-                                    Label(calendar.localizedName, systemImage:
-                                            selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
-                                }
+        VStack(spacing: 0) {
+            // Date picker and calendar picker — show only when not using real time
+            if !usingRealTime {
+                HStack {
+                    Spacer()
+                    
+                    DatePicker(
+                        selection: $now,
+                        in: Date.distantPast...Date.distantFuture,
+                        displayedComponents: [.date, .hourAndMinute]
+                    ) {
+                        Text("")
+                    }
+                    .environment(\.calendar, selectedCalendar)
+                    .datePickerStyle(.compact)
+                    
+                    Menu {
+                        ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
+                            Button {
+                                selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
+                            } label: {
+                                Label(calendar.localizedName, systemImage:
+                                        selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
                             }
-                        } label: {
-                            Image(systemName: "calendar")
                         }
-                        
-                        Spacer()
+                    } label: {
+                        Image(systemName: "calendar")
                     }
-                    .padding(.vertical, 8)
+                    
+                    Spacer()
                 }
-                
-                TabView(selection: $userData.selectedTabIndex) {
-                    ForEach(userData.mainClocks.indices, id: \.self) { index in
-                        
-                        let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
-                        let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                        let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
-                        
-                        ASALocationTab(
-                            now: $now,
-                            usingRealTime: $usingRealTime,
-                            locationWithClocks: $userData.mainClocks[index],
-                            isAnimatingToList: animatingToLocationsList && userData.selectedTabIndex == index
-                        )
-                        .environmentObject(userData)
-                        .tag(index)
-                        .tabItem { symbol }
-                    }
-                }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                .colorScheme(.dark)
+                .padding(.vertical, 8)
             }
             
-            if showLocationsOverlay {
-                Color.black.opacity(0.5)
-                    .ignoresSafeArea()
-                    .transition(.opacity)
-                    .onTapGesture {
-                        withAnimation {
-                            showLocationsOverlay = false
-                        }
-                    }
-                
-                ASALocationsTab(
-                    now: $now,
-                    usingRealTime: $usingRealTime,
-                    selectedTabIndex: $userData.selectedTabIndex,
-                    showLocationsSheet: $showLocationsOverlay,
-                    currentlySelectedLocationIndex: userData.selectedTabIndex,
-                    onDismiss: { withAnimation { showLocationsOverlay = false } }
-                )
-                .environmentObject(userData)
-                .frame(maxWidth: 600, maxHeight: 700)
-                .background(.ultraThinMaterial)
-                .cornerRadius(20)
-                .shadow(radius: 20)
-                .padding()
-                .transition(.scale.combined(with: .opacity))
+            TabView(selection: $userData.selectedTabIndex) {
+                ForEach(userData.mainClocks.indices, id: \.self) { index in
+                    
+                    let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
+                    let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
+                    let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
+                    
+                    ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index])
+                    .environmentObject(userData)
+                    .tag(index)
+                    .tabItem { symbol }
+                }
             }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .colorScheme(.dark)
         }
+        .toolbarBackground(.clear, for: .navigationBar)
+        .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+        .toolbarBackground(.clear, for: .tabBar)
+        .toolbarBackgroundVisibility(.visible, for: .tabBar)
         .toolbar {
             ToolbarItemGroup(placement: .navigation) {
                 // Now/Calendar menu — always visible when the TabView is visible
@@ -142,7 +111,7 @@ struct ASAMainTabView: View {
             }
             ToolbarItem(placement: .navigation) {
                 Button {
-                    showLocationsOverlay = true
+                    userData.shouldShowLocationTab = false
                 } label: {
                     Label("Locations", systemImage: "list.bullet")
                 }
