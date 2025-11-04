@@ -13,17 +13,6 @@ struct ASALocationWithClocksSectionHeader: View {
     var now: Date
     var shouldCapitalize: Bool
     
-#if os(watchOS)
-    let compact = true
-#else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    var compact:  Bool {
-        get {
-            return self.sizeClass == .compact
-        } // get
-    } // var compact
-#endif
-    
     var body: some View {
         let location = locationWithClocks.location
         
@@ -42,31 +31,48 @@ struct ASALocationWithClocksSectionHeader: View {
         
         let sectionTimeZoneString = location.abbreviatedTimeZoneString(for: now)
         
-        if compact {
-            VStack(alignment: .leading) {
-                HStack {
-                    if locationWithClocks.usesDeviceLocation {
-                        ASALocationSymbol(locationManager: locationWithClocks.locationManager)
-                    }
-                    Text(sectionHeaderEmoji)
-                    
-                    ASALocationWithClocksSectionHeaderTitle(title: sectionHeaderTitle, lineLimit: sectionHeaderLineLimit, minimumScaleFactor: sectionHeaderMinimumScaleFactor, shouldCapitalize: shouldCapitalize)
-                }
-                
-                Text(sectionTimeZoneString)
-            }
-            .font(sectionHeaderFont)
-        } else {
+        ViewThatFits(in: .horizontal) {
+            // Regular/wide layout candidate
             HStack {
                 if locationWithClocks.usesDeviceLocation {
                     ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                 }
                 Text(sectionHeaderEmoji)
-                ASALocationWithClocksSectionHeaderTitle(title: sectionHeaderTitle, lineLimit: sectionHeaderLineLimit, minimumScaleFactor: sectionHeaderMinimumScaleFactor, shouldCapitalize: shouldCapitalize)
-                
-                Spacer()
-                
+
+                ASALocationWithClocksSectionHeaderTitle(
+                    title: sectionHeaderTitle,
+                    lineLimit: sectionHeaderLineLimit,
+                    minimumScaleFactor: sectionHeaderMinimumScaleFactor,
+                    shouldCapitalize: shouldCapitalize
+                )
+                .layoutPriority(1)
+
+                Spacer(minLength: 8)
+
                 Text(sectionTimeZoneString)
+                    .foregroundStyle(.secondary)
+            }
+            .font(sectionHeaderFont)
+
+            // Compact/narrow layout fallback
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    if locationWithClocks.usesDeviceLocation {
+                        ASALocationSymbol(locationManager: locationWithClocks.locationManager)
+                    }
+                    Text(sectionHeaderEmoji)
+
+                    ASALocationWithClocksSectionHeaderTitle(
+                        title: sectionHeaderTitle,
+                        lineLimit: sectionHeaderLineLimit,
+                        minimumScaleFactor: sectionHeaderMinimumScaleFactor,
+                        shouldCapitalize: shouldCapitalize
+                    )
+                    .layoutPriority(1)
+                }
+
+                Text(sectionTimeZoneString)
+                    .foregroundStyle(.secondary)
             }
             .font(sectionHeaderFont)
         }
