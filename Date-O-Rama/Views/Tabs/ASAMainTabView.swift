@@ -45,56 +45,60 @@ struct ASAMainTabView: View {
         ZStack {
             gradient
                 .ignoresSafeArea(.all)
-            VStack(spacing: 0) {
-                // Date picker and calendar picker — show only when not using real time
-                if !usingRealTime {
-                    HStack {
-                        Spacer()
-                        
-                        DatePicker(
-                            selection: $now,
-                            in: Date.distantPast...Date.distantFuture,
-                            displayedComponents: [.date, .hourAndMinute]
-                        ) {
-                            Text("")
-                        }
-                        .environment(\.calendar, selectedCalendar)
-                        .datePickerStyle(.compact)
-                        
-                        Menu {
-                            ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
-                                Button {
-                                    selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
-                                } label: {
-                                    Label(calendar.localizedName, systemImage:
-                                            selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
-                                }
+            GeometryReader { geo in
+                VStack(spacing: 0) {
+                    // Date picker and calendar picker — show only when not using real time
+                    if !usingRealTime {
+                        HStack {
+                            Spacer()
+                            
+                            DatePicker(
+                                selection: $now,
+                                in: Date.distantPast...Date.distantFuture,
+                                displayedComponents: [.date, .hourAndMinute]
+                            ) {
+                                Text("")
                             }
-                        } label: {
-                            Image(systemName: "calendar")
+                            .environment(\.calendar, selectedCalendar)
+                            .datePickerStyle(.compact)
+                            
+                            Menu {
+                                ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
+                                    Button {
+                                        selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
+                                    } label: {
+                                        Label(calendar.localizedName, systemImage:
+                                                selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
+                                    }
+                                }
+                            } label: {
+                                Image(systemName: "calendar")
+                            }
+                            
+                            Spacer()
                         }
-                        
-                        Spacer()
+                        .padding(.vertical, 8)
+                        .padding(.top, geo.safeAreaInsets.top)
                     }
-                    .padding(.vertical, 8)
-                }
-                
-                TabView(selection: $userData.selectedTabIndex) {
-                    ForEach(userData.mainClocks.indices, id: \.self) { index in
-                        
-                        let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
-                        let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                        let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
-                        
-                        ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index])
-                        .environmentObject(userData)
-                        .tag(index)
-                        .tabItem { symbol }
+                    
+                    TabView(selection: $userData.selectedTabIndex) {
+                        ForEach(userData.mainClocks.indices, id: \.self) { index in
+                            
+                            let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
+                            let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
+                            let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
+                            
+                            ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index])
+                            .environmentObject(userData)
+                            .tag(index)
+                            .tabItem { symbol }
+                        }
                     }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                    .colorScheme(.dark)
+                    .ignoresSafeArea(.container, edges: .bottom)
+                    .padding(.bottom, geo.safeAreaInsets.bottom)
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                .colorScheme(.dark)
-                .ignoresSafeArea(.container, edges: .bottom)
             }
         }
         .toolbarBackground(.clear, for: .navigationBar)
