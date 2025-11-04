@@ -12,11 +12,15 @@
         {type: "M", start: {mon: 5}, titles: {"en": "International Victorious Woman Month"}, urls: {"en": "https://www.daysoftheyear.com/days/international-victorious-woman-month/"}, first: {era: 1, y: 2006}, notes: {"en": "Created by Annmarie Kelly"}},
         {type: "D", start: {mon: 10, d: 15}, inherits: "National Grouch Day", first: {era: 1, y: 1976}},
         {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "Return Borrowed Books Week"}, urls: {"en": "https://www.daysoftheyear.com/days/return-borrowed-books-week/"}, emoji: "📚", notes: {"en": "Created by Al Kaelin"}},
-        {type: "D", start: {mon: 3, wkd: [2], nth: 2}, titles: {"en": "Fill Our Staplers Day"}, urls: {"en": "https://dullmensclub.com/event/fill-staplers-day/"}, first: {era: 1, y: 2013}, notes: {"en": "Created by the Dull Men’s Club"}},
+        {type: "D", start: {mon: 3, wkd: [2], d: 9, thruD: 15}, inherits: "Fill Our Staplers Day", first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 11, wkd: [2], d: 2, thruD: 8}, inherits: "Fill Our Staplers Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 9, wkd: [1], nth: 3}, titles: {"en": "Wife Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wife-appreciation-day/"}, first: {era: 1, y: 2006}, emoji: "👩"},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "National Relaxation Day", "he": "יום המנוחה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/relaxation-day/"}, emoji: "😎", first: {era: 1, y: 1985}, notes: {"en": "Created by Sean Moeller"}},
         {type: "D", start: {mon: 4, d: 20}, titles: {"en": "National Look-Alike Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-look-alike-day/"}, notes: {"en": "Look Alike Day\nNational Look Alike Day\nCreated by Jack Etzel"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "National Ferret Day", "he": "יום החמוס הלאומי"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/ferret-day/"}},
+    ],
+    templates: [
+        {template: "Fill Our Staplers Day", type: "D", start: {mon: 3, wkd: [2], nth: 2}, titles: {"en": "Fill Our Staplers Day"}, urls: {"en": "https://dullmensclub.com/event/fill-staplers-day/"}, notes: {"en": "Created by the Dull Men’s Club"}},
 
     ]
 }
