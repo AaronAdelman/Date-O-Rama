@@ -77,7 +77,7 @@
         {inherits: "Father’s Day", type: "D", start: {mon: 11, d: 12}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 11, d: 12}, inherits: "National Health Day", first: {era: 1, y: 1959}},
         {type: "D", start: {mon: 11, d: 14}, titles: {"en": "Mobile Brigade Day", "id": "Hari Brigade Mobil"}, first: {era: 1, y: 1946}},
-        {inherits: "World Diabetes Day", type: "D", start: {mon: 11, d: 14}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 11, d: 14}, inherits: "World Diabetes Day", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "Marine Corps Day", "id": "Hari Juang Korps Marinir"}, first: {era: 1, y: 1951}},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Fishery Day", "id": "Hari Ikan Nasional"}, emoji: "🎣", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 11, d: 25}, inherits: "Teacher’s Day", notes: {"en": "Anniversary of the Teachers’ Union of the Republic of Indonesia", "id": "Hari Ulang Tahun Persatuan Guru Republik Indonesia"}, first: {era: 1, y: 1945}},

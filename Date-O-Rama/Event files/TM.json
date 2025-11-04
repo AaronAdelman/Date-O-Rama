@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, titles: {"en": "State Flag Day"}, first: {era: 1, y: 1992}, inherits: "Flag Day", notes: {"en": "Constitution and Flag Day\nState Flag and Constitution Day\nDay of the State Flag of Turkmenistan"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/turkmenistan-independence-day/"}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Earthquake Memorial Day"}, urls: {"en": "https://nationaltoday.com/turkmenistan-earthquake-memorial-day/"}, first: {era: 1, y: 1995}, emoji: "🐂", notes: {"en": "Day of Remembrance"}},
-        {type: "D", start: {mon: 12, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/neutrality-day"}, titles: {"en": "Neutrality Day", "tk": "Bitaraplyk baýramy", "he": "יום הנייטרליות"}, notes: {"en": "Day of Neutrality"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 12, d: 12}, titles: {"ar":"يوم الحياد","en":"Day of Neutrality","ru":"День нейтралитета Туркменистана","th":"วันแห่งความเป็นกลาง", "tk": "Bitaraplyk baýramy", "he": "יום הנייטרליות"}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/neutrality-day"}, notes: {"en": "Neutrality Day"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "Students Day"}, first: {era: 1, y: 2003}, emoji: "👨‍🎓👩‍🎓"},
         
         {type: "D", start: {mon: 1, d: 12}, inherits: "Memorial Day", urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Turkmenistan)"}},
