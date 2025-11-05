@@ -168,6 +168,7 @@ struct ASAAllLocationsTab: View {
                 .toolbarBackgroundVisibility(.visible, for: .navigationBar)
             })
         } // GeometryReader
+        .preferredColorScheme(.dark)
     } // body
     
     private func moveClock(from source: IndexSet, to destination: Int) {
