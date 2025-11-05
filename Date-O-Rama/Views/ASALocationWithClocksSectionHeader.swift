@@ -75,7 +75,30 @@ struct ASALocationWithClocksSectionHeader: View {
                     .foregroundStyle(.secondary)
             }
             .font(sectionHeaderFont)
-        }
+            
+            // Very compact/narrow layout fallback
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    if locationWithClocks.usesDeviceLocation {
+                        ASALocationSymbol(locationManager: locationWithClocks.locationManager)
+                    }
+                    Text(sectionHeaderEmoji)
+                }
+                HStack {
+                    ASALocationWithClocksSectionHeaderTitle(
+                        title: sectionHeaderTitle,
+                        lineLimit: sectionHeaderLineLimit,
+                        minimumScaleFactor: sectionHeaderMinimumScaleFactor,
+                        shouldCapitalize: shouldCapitalize
+                    )
+                    .layoutPriority(1)
+                }
+
+                Text(sectionTimeZoneString)
+                    .foregroundStyle(.secondary)
+            }
+            .font(sectionHeaderFont)
+        } // ViewThatFits(in: .horizontal)
     }
 }
 
