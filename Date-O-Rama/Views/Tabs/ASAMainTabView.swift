@@ -6,7 +6,13 @@ struct ASAMainTabView: View {
     @Binding var usingRealTime: Bool
     @State private var showAboutSheet = false
     @State private var showComplicationsSheet = false
-    @State private var selectedCalendar = Calendar(identifier: .gregorian)
+    @State var selectedCalendar = Calendar(identifier: .gregorian)
+    
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        return self.sizeClass == .compact
+    } // var compact
+
     
     var body: some View {
         let currentIndex = min(max(userData.selectedTabIndex, 0), max(userData.mainClocks.count - 1, 0))
@@ -31,37 +37,8 @@ struct ASAMainTabView: View {
                 
                 VStack(spacing: 0) {
                     // Date picker and calendar picker — show only when not using real time
-                    if !usingRealTime {
-                        HStack {
-                            Spacer()
-                            
-                            DatePicker(
-                                selection: $now,
-                                in: Date.distantPast...Date.distantFuture,
-                                displayedComponents: [.date, .hourAndMinute]
-                            ) {
-                                Text("")
-                            }
-                            .environment(\.calendar, selectedCalendar)
-                            .datePickerStyle(.compact)
-                            
-                            Menu {
-                                ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
-                                    Button {
-                                        selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
-                                    } label: {
-                                        Label(calendar.localizedName, systemImage:
-                                                selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
-                                    }
-                                }
-                            } label: {
-                                Image(systemName: "calendar")
-                                    .symbolRenderingMode(.multicolor)
-                            }
-                            
-                            Spacer()
-                        }
-                        .colorScheme(.dark)
+                    if !usingRealTime && compact {
+                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
                     }
                     
                     TabView(selection: $userData.selectedTabIndex) {
@@ -157,6 +134,11 @@ struct ASAMainTabView: View {
                     }
                 }
             }
+            ToolbarItem(placement: .navigation) {
+                if !usingRealTime && !compact {
+                    ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+                }
+            }
         }
         .sheet(isPresented: $showAboutSheet) {
             ASAAboutTab()
@@ -165,6 +147,43 @@ struct ASAMainTabView: View {
             ASAComplicationClocksTab(now: $now)
         }
     }
+}
+
+struct ASADatePickerEnsemble: View {
+    @Binding var now: Date
+    @Binding var selectedCalendar: Calendar
+                                                    
+    var body: some View {
+        HStack {
+            Spacer()
+            
+            DatePicker(
+                selection: $now,
+                in: Date.distantPast...Date.distantFuture,
+                displayedComponents: [.date, .hourAndMinute]
+            ) {
+                Text("")
+            }
+            .environment(\.calendar, selectedCalendar)
+            .datePickerStyle(.compact)
+            
+            Menu {
+                ForEach(ASACalendarCode.datePickerSafeCalendars, id: \.self) { calendar in
+                    Button {
+                        selectedCalendar = Calendar(identifier: calendar.equivalentCalendarIdentifier!)
+                    } label: {
+                        Label(calendar.localizedName, systemImage:
+                                selectedCalendar.identifier == calendar.equivalentCalendarIdentifier ? "checkmark" : "")
+                    }
+                }
+            } label: {
+                Image(systemName: "calendar")
+                    .symbolRenderingMode(.multicolor)
+            }
+            
+            Spacer()
+        }
+        .colorScheme(.dark)    }
 }
 
 #Preview {
