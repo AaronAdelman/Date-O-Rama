@@ -21,17 +21,8 @@ struct ASADateORamaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ASAAllLocationsTab(
-                    now: $now,
-                    usingRealTime: $usingRealTime,
-                    selectedTabIndex: $userData.selectedTabIndex,
-                    isShowingLocationSheet: $userData.shouldShowLocationTab,
-                    currentlySelectedLocationIndex: userData.selectedTabIndex,
-                    onDismiss: {
-                        //                        withAnimation { showLocationsOverlay = false }
-                    }
-                )
-                .environmentObject(userData)
+                ASAAllLocationsTab(now: $now, usingRealTime: $usingRealTime, selectedTabIndex: $userData.selectedTabIndex, isShowingLocationSheet: $userData.shouldShowLocationTab, currentlySelectedLocationIndex: userData.selectedTabIndex)
+                    .environmentObject(userData)
             }
             .onReceive(timer) { input in
                 if usingRealTime {

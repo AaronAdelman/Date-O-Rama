@@ -65,12 +65,11 @@ struct ASALocationTab: View {
                     .environmentObject(userData)
                 }
                 .listStyle(.grouped)
+                .scrollContentBackground(.hidden)
+                .background(gradient.ignoresSafeArea(.all))
                 .padding(.top, geo.safeAreaInsets.top)
                 .padding(.bottom, geo.safeAreaInsets.bottom)
             }
-            .listStyle(.grouped)
-            .scrollContentBackground(.hidden)
-            .background(gradient.ignoresSafeArea(.all))
             .navigationBarTitle("", displayMode: .inline)
         }
         .navigationViewStyle(StackNavigationViewStyle())

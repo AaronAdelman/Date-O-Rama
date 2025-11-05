@@ -18,7 +18,6 @@ struct ASAAllLocationsTab: View {
     @Binding var isShowingLocationSheet: Bool
     
     let currentlySelectedLocationIndex: Int
-    let onDismiss: () -> Void // Callback for dismissing the overlay
     
     @State private var isShowingNewLocationView = false
     @State private var animatingTabSwitch = false
@@ -57,7 +56,6 @@ struct ASAAllLocationsTab: View {
                                 
                                 // Dismiss overlay after animation
                                 DispatchQueue.main.asyncAfter(deadline: .now() + ANIMATION_DURATION - 0.1) {
-                                    onDismiss()
                                     animatingTabSwitch = false
                                 }
                             }
