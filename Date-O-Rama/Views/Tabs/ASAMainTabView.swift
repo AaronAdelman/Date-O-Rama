@@ -56,12 +56,12 @@ struct ASAMainTabView: View {
                                 }
                             } label: {
                                 Image(systemName: "calendar")
+                                    .symbolRenderingMode(.multicolor)
                             }
                             
                             Spacer()
                         }
-                        .padding(.vertical, 8)
-                        .padding(.top, geo.safeAreaInsets.top)
+                        .colorScheme(.dark)
                     }
                     
                     TabView(selection: $userData.selectedTabIndex) {
