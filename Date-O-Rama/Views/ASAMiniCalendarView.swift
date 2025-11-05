@@ -143,12 +143,9 @@ struct ASAMiniCalendarView:  View {
     }
     
     private var gridLayout:  Array<GridItem> {
-        get {
-            let daysPerRow = monthIsBlank ? daysInMonth : daysPerWeek
-//            let temp:  Array<GridItem> = Array(repeating: GridItem(.fixed(estimatedCellSize)), count: daysPerRow)
-            let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerRow)
-            return temp
-        } // get
+        let daysPerRow = monthIsBlank ? daysInMonth : daysPerWeek
+        let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerRow)
+        return temp
     } // var gridLayout
     
     fileprivate func gridRange(gridFirstDay: Int) -> ClosedRange<Int> {

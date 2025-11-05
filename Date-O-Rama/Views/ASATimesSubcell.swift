@@ -17,14 +17,11 @@ let compact = true
 #else
 @Environment(\.horizontalSizeClass) var sizeClass
 var compact:  Bool {
-    get {
-        return self.sizeClass == .compact
-    } // get
+    return self.sizeClass == .compact
 } // var compact
 #endif
     
     var timeWidth:  CGFloat {
-        get {
             #if os(watchOS)
             return 90.0
             #else
@@ -38,7 +35,6 @@ var compact:  Bool {
                 return 120.00
             }
             #endif
-        } // get
     } // var timeWidth
     let timeFontSize = Font.subheadlineMonospacedDigit
     

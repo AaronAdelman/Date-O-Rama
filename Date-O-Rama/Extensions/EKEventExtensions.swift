@@ -20,14 +20,12 @@ extension EKEvent:  ASASingleEvent {
     }
 
     var color: Color {
-        get {
-            let calendarColor = self.calendar.cgColor
-            if calendarColor == nil {
-                return Color("genericCalendar")
-            }
-
-            return Color(UIColor(cgColor: calendarColor!))
-        } // get
+        let calendarColor = self.calendar.cgColor
+        if calendarColor == nil {
+            return Color("genericCalendar")
+        }
+        
+        return Color(UIColor(cgColor: calendarColor!))
     } // var color
     
     var colors: Array<Color> {
@@ -35,15 +33,11 @@ extension EKEvent:  ASASingleEvent {
     }
 
     var calendarTitleWithLocation:  String {
-        get {
-            return self.calendar.title
-        } // get
+        return self.calendar.title
     } // var calendarTitleWithLocation
 
     var calendarCode: ASACalendarCode {
-        get {
-            return .gregorian
-        } // get
+        return .gregorian
     } // var calendarCode
     
     var geoLocation: CLLocation? {

@@ -104,18 +104,16 @@ extension ASADateFormat {
     } // var isIOS8601: Bool
     
     var shortened:  ASADateFormat {
-        get {
-            switch self {
-            case .long, .full, .medium:
-                return .short
-                
-            case .fullWithRomanYear, .longWithRomanYear:
-                return .shortWithRomanYear
-                
-            default:
-                return self
-            } // switch self
-        } // get
+        switch self {
+        case .long, .full, .medium:
+            return .short
+            
+        case .fullWithRomanYear, .longWithRomanYear:
+            return .shortWithRomanYear
+            
+        default:
+            return self
+        } // switch self
     } // var shortened
     
     var isRomanYear: Bool {

@@ -53,27 +53,23 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
     var dayStart:  ASASolarEvent {
-        get {
-            switch self.calendarCode {
-            case .hebrewMA:
-                return .dawn72Minutes
-                
-            default:
-                return .sunrise
-            } // switch self.calendarCode
-        } // get
+        switch self.calendarCode {
+        case .hebrewMA:
+            return .dawn72Minutes
+            
+        default:
+            return .sunrise
+        } // switch self.calendarCode
     } // var dayStart
     
     var dayEnd:  ASASolarEvent {
-        get {
-            switch self.calendarCode {
-            case .hebrewMA:
-                return .dusk72Minutes
-                
-            default:
-                return .sunset
-            } // switch self.calendarCode
-        } // get
+        switch self.calendarCode {
+        case .hebrewMA:
+            return .dusk72Minutes
+            
+        default:
+            return .sunset
+        } // switch self.calendarCode
     } //
     
     fileprivate func invalidTimeString() -> String {
@@ -528,17 +524,15 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     // MARK: -
     
     public var transitionType:  ASATransitionType {
-        get {
-            switch self.dayEnd {
-            case .sunset:
-                return .sunset
-                
-            case .dusk72Minutes:
-                return .dusk
-                
-            default:
-                return .midnight
-            }
+        switch self.dayEnd {
+        case .sunset:
+            return .sunset
+            
+        case .dusk72Minutes:
+            return .dusk
+            
+        default:
+            return .midnight
         }
     }
     

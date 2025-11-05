@@ -195,15 +195,11 @@ extension Date {
 
 extension Date {
     var oneDayBefore:  Date {
-        get {
-            return self.addingTimeInterval(-Date.SECONDS_PER_DAY)
-        } // get
+        return self.addingTimeInterval(-Date.SECONDS_PER_DAY)
     } // var oneDayBefore
-
+    
     var oneDayAfter:  Date {
-        get {
-            return self.addingTimeInterval(Date.SECONDS_PER_DAY)
-        } // get
+        return self.addingTimeInterval(Date.SECONDS_PER_DAY)
     } // var oneDayAfter
 } // extension Date
 

@@ -28,15 +28,13 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         case complications
         
         var suffix:  String {
-            get {
-                switch self {
-                case .clocks:
-                    return "/Documents/Clock Preferences.json"
-                    
-                case .complications:
-                    return "/Documents/Complication Preferences.json"
-                } // switch self
-            } // get
+            switch self {
+            case .clocks:
+                return "/Documents/Clock Preferences.json"
+                
+            case .complications:
+                return "/Documents/Complication Preferences.json"
+            } // switch self
         } // var suffix
     } // enum PreferencesFileCode
 

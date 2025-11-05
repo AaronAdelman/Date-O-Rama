@@ -11,17 +11,15 @@ import Foundation
 
 public extension CLAuthorizationStatus {
     var authorizedAtLeastWhenInUse:  Bool {
-        get {
-            switch self {
-            case .authorizedAlways, .authorizedWhenInUse:
-                return true
-            case .notDetermined:
-                return true // Provisional
-            case .restricted, .denied:
-                return false
-            @unknown default:
-                return false
-            } // switch self
-        } // get
+        switch self {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return true
+        case .notDetermined:
+            return true // Provisional
+        case .restricted, .denied:
+            return false
+        @unknown default:
+            return false
+        } // switch self
     } // var authorizedAtLeastWhenInUse
 } // extension CLAuthorizationStatus

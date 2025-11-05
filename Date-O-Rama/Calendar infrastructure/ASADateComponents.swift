@@ -18,9 +18,7 @@ struct ASADateComponents:  Equatable {
     // MARK:  - Validating a Date
     
     var date: Date? {
-        get {
-            return self.calendar.date(dateComponents: self)
-        } // get
+        return self.calendar.date(dateComponents: self)
     } // var date
     // The date calculated from the current components using the stored calendar.
     

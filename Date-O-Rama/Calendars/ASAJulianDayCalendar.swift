@@ -92,15 +92,13 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsLocations: Bool = false
         
     var supportsTimes: Bool {
-        get {
-            switch self.calendarCode {
-            case .truncatedJulianDay, .lilianDate, .rataDie:
-                return false
-                
-            default:
-                return true
-            } // switch self.calendarCode
-        } // get
+        switch self.calendarCode {
+        case .truncatedJulianDay, .lilianDate, .rataDie:
+            return false
+            
+        default:
+            return true
+        } // switch self.calendarCode
     } // var supportsTimes: Bool
     
     var supportedDateFormats: Array<ASADateFormat> = [

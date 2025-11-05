@@ -190,27 +190,23 @@ extension ASACalendarCode {
     } // var isSunsetTransitionCalendar
 
     var isHebrewCalendar: Bool {
-        get {
-            switch self {
-            case .hebrew, .hebrewMA, .hebrewGRA:
-                return true
-
-            default:
-                return false
-            } // switch self
-        } // get
+        switch self {
+        case .hebrew, .hebrewMA, .hebrewGRA:
+            return true
+            
+        default:
+            return false
+        } // switch self
     } // var isHebrewCalendar
     
     var isHebrewSolarTimeCalendar: Bool {
-        get {
-            switch self {
-            case .hebrewMA, .hebrewGRA:
-                return true
-
-            default:
-                return false
-            } // switch self
-        } // get
+        switch self {
+        case .hebrewMA, .hebrewGRA:
+            return true
+            
+        default:
+            return false
+        } // switch self
     } // var isHebrewSolarTimeCalendar
     
     var isIslamicCalendar: Bool {

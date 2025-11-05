@@ -138,14 +138,3 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         self.calendarType = self.calendarCode.type
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
-
-
-// MARK:  -
-
-//extension ASAProcessedClock {
-//    var hasValidTime:  Bool {
-//        get {
-//            return self.hour != -1
-//        } // get
-//    } // var hasValidTime
-//} // extension ASAProcessedClock

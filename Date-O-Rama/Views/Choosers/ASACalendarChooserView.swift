@@ -18,30 +18,28 @@ let JULIAN_DAY_CALENDARS = 5
 
 fileprivate extension Int {
     var calendarCategoryText:  String {
-        get {
-            switch self {
-            case ALL_CALENDARS:
-                return NSLocalizedString("All calendars", comment: "")
-                
-            case APPLE_CALENDARS:
-                return NSLocalizedString("Apple calendars", comment: "")
-                
-            case SOLAR_CALENDARS:
-                return NSLocalizedString("Solar calendars", comment: "")
-                
-            case LUNISOLAR_CALENDARS:
-                return NSLocalizedString("Lunisolar calendars", comment: "")
-                
-            case LUNAR_CALENDARS:
-                return NSLocalizedString("Lunar calendars", comment: "")
-                
-            case JULIAN_DAY_CALENDARS:
-                return NSLocalizedString("Julian day calendars", comment: "")
-                
-            default:
-                return ""
-            }
-        } // get
+        switch self {
+        case ALL_CALENDARS:
+            return NSLocalizedString("All calendars", comment: "")
+            
+        case APPLE_CALENDARS:
+            return NSLocalizedString("Apple calendars", comment: "")
+            
+        case SOLAR_CALENDARS:
+            return NSLocalizedString("Solar calendars", comment: "")
+            
+        case LUNISOLAR_CALENDARS:
+            return NSLocalizedString("Lunisolar calendars", comment: "")
+            
+        case LUNAR_CALENDARS:
+            return NSLocalizedString("Lunar calendars", comment: "")
+            
+        case JULIAN_DAY_CALENDARS:
+            return NSLocalizedString("Julian day calendars", comment: "")
+            
+        default:
+            return ""
+        }
     } // var calendarCategoryText:  String
 } // extension Int
 

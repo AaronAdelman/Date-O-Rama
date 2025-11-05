@@ -12,39 +12,35 @@ import CoreLocation
 
 extension CLAuthorizationStatus {
     var symbolName:  String {
-        get {
-            switch self {
-            case .authorizedAlways, .authorizedWhenInUse:
-                return "location.fill"
-
-            case .notDetermined:
-                return "location"
-
-            default:
-                return "location.slash.fill"
-            } // switch self
-        } // get
+        switch self {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return "location.fill"
+            
+        case .notDetermined:
+            return "location"
+            
+        default:
+            return "location.slash.fill"
+        } // switch self
     } // var symbolName
-
+    
     var symbolColor:  Color {
-        get {
-            switch self {
-            case .authorizedAlways, .authorizedWhenInUse:
-                return Color.green
-
-            case .notDetermined:
-                return Color.yellow
-
-            case .restricted:
-                return Color.orange
-
-            case .denied:
-                return Color.red
-
-            @unknown default:
-                return Color.gray
-            } // switch self
-        } // get
+        switch self {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return Color.green
+            
+        case .notDetermined:
+            return Color.yellow
+            
+        case .restricted:
+            return Color.orange
+            
+        case .denied:
+            return Color.red
+            
+        @unknown default:
+            return Color.gray
+        } // switch self
     } // var symbolColor
 } // extension CLAuthorizationStatus
 

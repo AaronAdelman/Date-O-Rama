@@ -37,9 +37,7 @@ struct ASALocationChooserView: View {
 #else
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
-        get {
-            return self.sizeClass == .compact
-        } // get
+        return self.sizeClass == .compact
     } // var compact
 #endif
     

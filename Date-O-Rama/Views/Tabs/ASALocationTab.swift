@@ -33,19 +33,14 @@ struct ASALocationTab: View {
             
             GeometryReader { geo in
                 ASAList {
-                    ASALocationWithClocksSectionView(
-                        now: $now,
-                        locationWithClocks: $locationWithClocks,
-                       cellColor:cellColor,
-                        processed: processed
-                    )
+                    ASALocationWithClocksSectionView(now: $now,
+                        locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processed)
                     .environmentObject(userData)
                 }
                 .listStyle(.grouped)
                 .scrollContentBackground(.hidden)
                 .background(gradient.ignoresSafeArea(.all))
                 .padding(.top, geo.safeAreaInsets.top)
-//                .padding(.bottom, geo.safeAreaInsets.bottom)
             }
             .navigationBarTitle("", displayMode: .inline)
         }

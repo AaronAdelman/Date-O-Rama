@@ -11,14 +11,10 @@ import SwiftUI
 
 extension Font {
     static var headlineMonospacedDigit:  Font {
-        get {
-            return Font.headline.monospacedDigit()
-        } // get
+        return Font.headline.monospacedDigit()
     }
-
+    
     static var subheadlineMonospacedDigit:  Font {
-        get {
-            return Font.subheadline.monospacedDigit()
-        } // get
+        return Font.subheadline.monospacedDigit()
     }
 }
