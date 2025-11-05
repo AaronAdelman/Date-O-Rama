@@ -8,29 +8,6 @@ struct ASAMainTabView: View {
     @State private var showComplicationsSheet = false
     @State private var selectedCalendar = Calendar(identifier: .gregorian)
     
-    private func backgroundGradient(for location: ASALocation, dayPart: ASADayPart) -> LinearGradient {
-        let dayTop      = Color("dayTop")
-        let dayBottom   = Color("dayBottom")
-        let nightTop    = Color("nightTop")
-        let nightBottom = Color("nightBottom")
-        let colors: [Color] = {
-            switch location.type {
-            case .earthUniversal, .marsUniversal:
-                return [.black, .brown]
-            case .earthLocation:
-                switch dayPart {
-                case .day:
-                    return [dayTop, dayTop, dayBottom]
-                case .night:
-                    return [nightTop, nightTop, nightBottom]
-                case .unknown:
-                    return [.black, .brown]
-                }
-            }
-        }()
-        return LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom)
-    }
-    
     var body: some View {
         let currentIndex = min(max(userData.selectedTabIndex, 0), max(userData.mainClocks.count - 1, 0))
         let currentLocationWithClocks = userData.mainClocks.isEmpty ? nil : userData.mainClocks[currentIndex]
@@ -40,12 +17,18 @@ struct ASAMainTabView: View {
             ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: currentLocationWithClocks!.location, usesDeviceLocation: usesDeviceLocation)
         } ?? []
         let dayPart = processedClocks.dayPart
-        let gradient = (currentLocation != nil) ? backgroundGradient(for: currentLocation!, dayPart: dayPart) : LinearGradient(colors: [.black, .brown], startPoint: .top, endPoint: .bottom)
+        let gradient = (currentLocation != nil) ? currentLocation!.backgroundGradient(dayPart: dayPart) : LinearGradient(colors: [.black, .brown], startPoint: .top, endPoint: .bottom)
         
-        ZStack {
-            gradient
-                .ignoresSafeArea(.all)
-            GeometryReader { geo in
+        GeometryReader { geo in
+            ZStack {
+                gradient
+                    .ignoresSafeArea()
+                
+                let frameHeight: CGFloat? = geo.safeAreaInsets.top
+                
+                Spacer()
+                    .frame(height: frameHeight)
+                
                 VStack(spacing: 0) {
                     // Date picker and calendar picker — show only when not using real time
                     if !usingRealTime {
@@ -89,18 +72,18 @@ struct ASAMainTabView: View {
                             let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
                             
                             ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index])
-                            .environmentObject(userData)
-                            .tag(index)
-                            .tabItem { symbol }
+                                .environmentObject(userData)
+                                .tag(index)
+                                .tabItem { symbol }
                         }
-                    }
+                    } // TabView
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                     .colorScheme(.dark)
                     .ignoresSafeArea(.container, edges: .bottom)
-                    .padding(.bottom, geo.safeAreaInsets.bottom)
+//                    .padding(.bottom, geo.safeAreaInsets.bottom)
                 }
-            }
-        }
+            } // ZStack
+        } // GeometryReader
         .toolbarBackground(.clear, for: .navigationBar)
         .toolbarBackgroundVisibility(.visible, for: .navigationBar)
         .toolbarBackground(.clear, for: .tabBar)

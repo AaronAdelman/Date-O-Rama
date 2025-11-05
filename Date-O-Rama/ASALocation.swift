@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject, @unchecked Sendable {
     var id = UUID()
@@ -286,6 +287,31 @@ extension ASALocation {
         }
     }
 } // extension ASALocation
+
+extension ASALocation {
+     func backgroundGradient(dayPart: ASADayPart) -> LinearGradient {
+        let dayTop      = Color("dayTop")
+        let dayBottom   = Color("dayBottom")
+        let nightTop    = Color("nightTop")
+        let nightBottom = Color("nightBottom")
+        let colors: [Color] = {
+            switch self.type {
+            case .earthUniversal, .marsUniversal:
+                return [.black, .brown]
+            case .earthLocation:
+                switch dayPart {
+                case .day:
+                    return [dayTop, dayTop, dayBottom]
+                case .night:
+                    return [nightTop, nightTop, nightBottom]
+                case .unknown:
+                    return [.black, .brown]
+                }
+            }
+        }()
+        return LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom)
+    }
+}
 
 
 // MARK:  -

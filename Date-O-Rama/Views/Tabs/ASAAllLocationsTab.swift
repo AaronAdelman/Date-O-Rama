@@ -61,14 +61,14 @@ struct ASAAllLocationsTab: View {
                             }
                         }
                         .onMove(perform: moveClock)
-                    }
+                    } // List
                     .scrollContentBackground(.hidden)
                     .listRowBackground(Color.clear)
                     .listStyle(.plain)
                     .safeAreaInset(edge: .top) {
                         Color.clear.frame(height: 0)
                     }
-                }
+                } // ZStack
                 .navigationTitle("")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {

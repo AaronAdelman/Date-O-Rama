@@ -18,29 +18,6 @@ struct ASALocationTab: View {
     
     @Environment(\.horizontalSizeClass) private var hSizeClass
     
-    private func backgroundGradient(for location: ASALocation, dayPart: ASADayPart) -> LinearGradient {
-        let dayTop      = Color("dayTop")
-        let dayBottom   = Color("dayBottom")
-        let nightTop    = Color("nightTop")
-        let nightBottom = Color("nightBottom")
-        let colors: [Color] = {
-            switch location.type {
-            case .earthUniversal, .marsUniversal:
-                return [.black, .brown]
-            case .earthLocation:
-                switch dayPart {
-                case .day:
-                    return [dayTop, dayTop, dayBottom]
-                case .night:
-                    return [nightTop, nightTop, nightBottom]
-                case .unknown:
-                    return [.black, .brown]
-                }
-            }
-        }()
-        return LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom)
-    }
-    
     var body: some View {
         NavigationView {
             let location = locationWithClocks.location
@@ -52,7 +29,7 @@ struct ASALocationTab: View {
             let dayPart: ASADayPart = processed.dayPart
             let cellColor = dayPart.locationColor
             
-            let gradient = backgroundGradient(for: location, dayPart: dayPart)
+            let gradient = location.backgroundGradient(dayPart: dayPart)
             
             GeometryReader { geo in
                 ASAList {
@@ -68,7 +45,7 @@ struct ASALocationTab: View {
                 .scrollContentBackground(.hidden)
                 .background(gradient.ignoresSafeArea(.all))
                 .padding(.top, geo.safeAreaInsets.top)
-                .padding(.bottom, geo.safeAreaInsets.bottom)
+//                .padding(.bottom, geo.safeAreaInsets.bottom)
             }
             .navigationBarTitle("", displayMode: .inline)
         }
