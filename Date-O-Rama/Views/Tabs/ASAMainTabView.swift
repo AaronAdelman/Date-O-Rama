@@ -55,9 +55,7 @@ struct ASAMainTabView: View {
                         }
                     } // TabView
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                    .colorScheme(.dark)
                     .ignoresSafeArea(.container, edges: .bottom)
-//                    .padding(.bottom, geo.safeAreaInsets.bottom)
                 }
             } // ZStack
         } // GeometryReader
@@ -183,7 +181,7 @@ struct ASADatePickerEnsemble: View {
             
             Spacer()
         }
-        .colorScheme(.dark)    }
+    }
 }
 
 #Preview {

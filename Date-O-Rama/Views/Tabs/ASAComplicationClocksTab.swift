@@ -24,8 +24,6 @@ struct ASAComplicationClocksTab: View {
                     }
                 } // List
                 .listStyle(InsetGroupedListStyle())
-                
-                .colorScheme(.dark)
                 .navigationTitle("Watch")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarBackButtonHidden(true)
