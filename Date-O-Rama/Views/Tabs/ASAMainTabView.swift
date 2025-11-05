@@ -107,15 +107,13 @@ struct ASAMainTabView: View {
                 } label: {
                     Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
                 }
-            }
-            ToolbarItem(placement: .navigation) {
+
                 Button {
                     userData.shouldShowLocationTab = false
                 } label: {
                     Label("Locations", systemImage: "list.bullet")
                 }
-            }
-            ToolbarItem(placement: .navigation) {
+
                 Button {
                     showAboutSheet = true
                 } label: {
