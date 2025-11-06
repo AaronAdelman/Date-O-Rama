@@ -81,6 +81,7 @@ struct ASAWeekdayCell:  View {
 struct ASAWeekdayData {
     var symbol:  String
     var index:  Int
+    var isWeekend: Bool
 }
 
 
@@ -104,8 +105,7 @@ struct ASAMiniCalendarView:  View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
             // Weekday header row
             ForEach(weekdayItems, id: \.index) { item in
-                let isWeekend = item.index >= 0 ? false : false // weekend flag should be part of ASAWeekdayData in the future
-                ASAWeekdayCell(symbol: item.symbol, isWeekend: isWeekend)
+                ASAWeekdayCell(symbol: item.symbol, isWeekend: item.isWeekend)
             }
 
             // Day cells
@@ -159,3 +159,4 @@ struct ASAMiniCalendarView_Previews: PreviewProvider {
         */
     }
 }
+

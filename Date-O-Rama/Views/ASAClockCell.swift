@@ -114,8 +114,12 @@ struct ASAClockCell: View {
 
                     // Weekday items: very short standalone symbols mapped to ASAWeekdayData with indices 0..<(daysPerWeek)
                     let rawWeekdaySymbols: [String] = processedClock.veryShortStandaloneWeekdaySymbols ?? []
+                    let weekendDaysSet: Set<Int> = Set(processedClock.weekendDays ?? [])
+                    // Map 0-based index to 1-based weekday number expected by weekendDays
                     let weekdayItems: [ASAWeekdayData] = rawWeekdaySymbols.enumerated().map { (idx, sym) in
-                        ASAWeekdayData(symbol: sym, index: idx)
+                        let weekdayNumber = idx + 1
+                        let isWeekend = weekendDaysSet.contains(weekdayNumber)
+                        return ASAWeekdayData(symbol: sym, index: idx, isWeekend: isWeekend)
                     }
 
                     let numberFormatter: NumberFormatter = {
@@ -440,5 +444,6 @@ struct ASAClockEventsForEach:  View {
 //        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true, eventVisibility: .all, clock: ASAClock.generic, location: ASALocation.EarthUniversal)
 //    }
 //} // struct ASAClockCell_Previews
+
 
 
