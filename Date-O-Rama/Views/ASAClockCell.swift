@@ -98,10 +98,9 @@ struct ASAClockCell: View {
                 }
 #else
                 Spacer()
-                if clock.calendar.supportsTimes {
-                    if processedClock.supportsMonths && shouldShowMiniCalendar {
-                        ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth,  localeIdentifier: clock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: clock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
-                    }
+
+                if processedClock.supportsMonths && shouldShowMiniCalendar {
+                    ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth,  localeIdentifier: clock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: clock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
                 }
                 
                 Spacer()
