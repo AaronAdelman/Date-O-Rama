@@ -43,6 +43,14 @@ struct ASAClockCell: View {
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
+    
+    // Build cell items array aligned to the grid
+    func weekdayOfFirstDayOfMonth(day: Int, weekday: Int, daysPerWeek: Int) -> Int {
+            let offset = day - 1
+            var result = (weekday - offset) % daysPerWeek
+            if result <= 0 { result += daysPerWeek }
+            return result
+        }
 
     var body: some View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
@@ -100,7 +108,64 @@ struct ASAClockCell: View {
                 Spacer()
 
                 if processedClock.supportsMonths && shouldShowMiniCalendar {
-                    ASAMiniCalendarView(daysPerWeek:  processedClock.daysPerWeek ?? 7, day:  processedClock.day, weekday:  processedClock.weekday, daysInMonth:  processedClock.daysInMonth,  localeIdentifier: clock.localeIdentifier, weekdaySymbols: processedClock.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedClock.weekendDays ?? [], numberFormat: clock.miniCalendarNumberFormat, monthIsBlank: processedClock.monthIsBlank, blankWeekdaySymbol: processedClock.blankWeekdaySymbol)
+                    // Precompute weekday items and cell items for the mini calendar
+                    let daysPerWeek = processedClock.daysPerWeek ?? 7
+                    let localeIdentifier = clock.localeIdentifier
+
+                    // Weekday items: very short standalone symbols mapped to ASAWeekdayData with indices 0..<(daysPerWeek)
+                    let rawWeekdaySymbols: [String] = processedClock.veryShortStandaloneWeekdaySymbols ?? []
+                    let weekdayItems: [ASAWeekdayData] = rawWeekdaySymbols.enumerated().map { (idx, sym) in
+                        ASAWeekdayData(symbol: sym, index: idx)
+                    }
+
+                    let numberFormatter: NumberFormatter = {
+                        let nf = NumberFormatter()
+                        nf.locale = Locale(identifier: localeIdentifier)
+                        return nf
+                    }()
+
+                    let numberFormat: ASANumberFormat = clock.miniCalendarNumberFormat
+                    let formatNumber: (Int) -> String = { number in
+                        if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
+                        return numberFormatter.string(from: NSNumber(value: number)) ?? ""
+                    }
+
+                    let daysInMonth = processedClock.daysInMonth
+                    let day = processedClock.day
+                    let weekday = processedClock.weekday
+                    let monthIsBlank = processedClock.monthIsBlank
+                    let weekendDays = processedClock.weekendDays ?? []
+
+                    let weekdayOfDay1 = weekdayOfFirstDayOfMonth(day: day, weekday: weekday, daysPerWeek: daysPerWeek)
+                    let gridFirstDay: Int = monthIsBlank ? 1 : -(weekdayOfDay1 - 2)
+
+                    // Compute grid range identical to previous logic
+                    let gridRange: ClosedRange<Int> = {
+                        if monthIsBlank {
+                            assert(5 <= daysInMonth && daysInMonth <= 6)
+                            return 1...daysInMonth
+                        }
+                        var firstDay = gridFirstDay
+                        var lastDay = daysInMonth
+                        if lastDay < firstDay { swap(&firstDay, &lastDay) }
+                        return firstDay...lastDay
+                    }()
+
+                    let cellItems: [ASAMiniCalendarView.CellItem] = gridRange.map { value in
+                        if value < 1 || value > daysInMonth {
+                            return ASAMiniCalendarView.CellItem(text: "", isWeekend: false, isAccented: false)
+                        }
+                        let isWeekend: Bool = monthIsBlank ? true : weekendDays.contains(((value - gridFirstDay) % daysPerWeek) + 1)
+                        let isAccented = (value == day)
+                        return ASAMiniCalendarView.CellItem(text: formatNumber(value), isWeekend: isWeekend, isAccented: isAccented)
+                    }
+
+                    ASAMiniCalendarView(
+                        daysPerWeek: processedClock.daysPerWeek ?? 7,
+                        characterDirection: Locale.Language(identifier: clock.localeIdentifier).characterDirection,
+                        weekdayItems: weekdayItems,
+                        cellItems: cellItems
+                    )
                 }
                 
                 Spacer()
@@ -375,4 +440,5 @@ struct ASAClockEventsForEach:  View {
 //        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true, eventVisibility: .all, clock: ASAClock.generic, location: ASALocation.EarthUniversal)
 //    }
 //} // struct ASAClockCell_Previews
+
 

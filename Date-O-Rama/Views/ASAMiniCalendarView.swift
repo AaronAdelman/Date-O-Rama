@@ -87,140 +87,75 @@ struct ASAWeekdayData {
 // MARK: -
 
 struct ASAMiniCalendarView:  View {
-    var daysPerWeek:  Int
-    var day:  Int
-    var weekday:  Int
-    var daysInMonth:  Int
-    var localeIdentifier:  String
-    var weekdaySymbols:  Array<String>
-    var weekendDays: Array<Int>
-    var numberFormat: ASANumberFormat
-    var monthIsBlank: Bool
-    var blankWeekdaySymbol: String?
+    var daysPerWeek: Int
+    var characterDirection: Locale.LanguageDirection
+    var weekdayItems: [ASAWeekdayData]
+    var cellItems: [CellItem]
     
-    // These control the maximum grid size based on cell/font assumptions
-    private var maxColumns: Int { 10 }
-    private var maxRows: Int { 5 }
-    private var estimatedCellSize: CGFloat { 22 } // Slightly above MINIMUM_CELL_DIMENSION to allow for font/padding
-    private var maxGridWidth: CGFloat { estimatedCellSize * CGFloat(maxColumns) }
-    private var maxGridHeight: CGFloat { estimatedCellSize * CGFloat(maxRows) }
+    private var gridLayout: [GridItem] { Array(repeating: GridItem(), count: daysPerWeek) }
     
-    var weekdayOfDay1:  Int {
-            assert(daysPerWeek > 0)
-            assert(day > 0)
-            assert(weekday > 0)
-            assert(weekday <= daysPerWeek)
-            
-            return weekdayOfFirstDayOfMonth(day: day, weekday: weekday, daysPerWeek: daysPerWeek)
-    } // var weekdayOfDay1
-    
-    private var processedWeekdaySymbols:  Array<ASAWeekdayData> {
-        var result:  Array<ASAWeekdayData> = []
-        for i in 0..<self.weekdaySymbols.count {
-            result.append(ASAWeekdayData(symbol: self.weekdaySymbols[i], index: i))
-        } // for i
-        return result
-    }
-    
-    private var gridLayout:  Array<GridItem> {
-        let daysPerRow = monthIsBlank ? daysInMonth : daysPerWeek
-        let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerRow)
-        return temp
-    } // var gridLayout
-    
-    fileprivate func gridRange(gridFirstDay: Int) -> ClosedRange<Int> {
-        if monthIsBlank {
-            assert(5 <= daysInMonth)
-            assert(daysInMonth <= 6)
-            return 1...daysInMonth
-        }
-        
-        var firstDay = gridFirstDay
-        var lastDay = daysInMonth
-        if lastDay < firstDay {
-            let temp = lastDay
-            lastDay = firstDay
-            firstDay = temp
-        }
-        
-        return firstDay...lastDay
-    } // func gridRange() -> ClosedRange<Int>
-    
-    var characterDirection:  Locale.LanguageDirection {
-        return Locale.Language(identifier: localeIdentifier).characterDirection
-  } // var characterDirection
-
     struct CellItem {
         let text: String
         let isWeekend: Bool
         let isAccented: Bool
     }
-
+    
     var body: some View {
-        let numberFormatter: NumberFormatter = {
-            let numberFormatter = NumberFormatter()
-            numberFormatter.locale = Locale(identifier: localeIdentifier)
-            return numberFormatter
-        }()
-
-        let formatNumber: (Int) -> String = {
-            return { number in
-                if numberFormat == .shortHebrew {
-                    return number.shortHebrewNumeral
-                }
-                return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
-            }
-        }()
-        
-        let gridFirstDay = {
-            if monthIsBlank {
-                return 1
-            }
-            
-            return -(weekdayOfDay1 - 2)
-        }()
-        
-        let gridRange = self.gridRange(gridFirstDay: gridFirstDay)
-        
-        let cellItems: [CellItem?] = gridRange.map { value in
-            if value < 1 || value > daysInMonth { return nil }
-            let isWeekend: Bool = monthIsBlank ? true : weekendDays.contains(((value - gridFirstDay) % daysPerWeek) + 1)
-            let isAccented = (value == day)
-            return CellItem(text: formatNumber(value), isWeekend: isWeekend, isAccented: isAccented)
-        }
-        
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
-            let weekdayCellRange = monthIsBlank ? gridRange : 0...(processedWeekdaySymbols.count - 1)
-                ForEach(weekdayCellRange, id: \.self) {
-                    index
-                    in
-                    let symbol: String = monthIsBlank ? self.blankWeekdaySymbol! : processedWeekdaySymbols[index].symbol
-                    let isWeekend: Bool = monthIsBlank ? true : weekendDays.contains(index + 1)
-                    ASAWeekdayCell(symbol: symbol, isWeekend:
-                                    isWeekend)
-                }
-        
+            // Weekday header row
+            ForEach(weekdayItems, id: \.index) { item in
+                let isWeekend = item.index >= 0 ? false : false // weekend flag should be part of ASAWeekdayData in the future
+                ASAWeekdayCell(symbol: item.symbol, isWeekend: isWeekend)
+            }
+
+            // Day cells
             ForEach(cellItems.indices, id: \.self) { idx in
-                if let item = cellItems[idx] {
-                    if item.isAccented {
-                        ASAAccentedCell(text: item.text, shouldNoteAsWeekend: item.isWeekend)
-                    } else {
-                        ASAOrdinaryCell(text: item.text, shouldNoteAsWeekend: item.isWeekend)
-                    }
-                } else {
+                let item = cellItems[idx]
+                if item.text == ""{
                     ASABlankCell()
+                } else if item.isAccented {
+                    ASAAccentedCell(text: item.text, shouldNoteAsWeekend: item.isWeekend)
+                } else {
+                    ASAOrdinaryCell(text: item.text, shouldNoteAsWeekend: item.isWeekend)
                 }
             }
         }
         .environment(\.layoutDirection, (self.characterDirection == Locale.LanguageDirection.leftToRight ? .leftToRight :  .rightToLeft))
-        .frame(maxWidth: maxGridWidth, maxHeight: maxGridHeight, alignment: .center)
+        .frame(maxWidth: CGFloat(daysPerWeek) * 22, maxHeight: 22 * 5, alignment: .center)
     }
 } // struct ASAMiniCalendarView
 
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 30, weekday: 1, daysInMonth: 30, localeIdentifier: "en_US", weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], numberFormat: .system, monthIsBlank: false)
+        // TODO: Update with new initializer parameters: daysPerWeek, characterDirection, weekdayItems, cellItems
+        /*
+        ASAMiniCalendarView(daysPerWeek: 7,
+                            characterDirection: .leftToRight,
+                            weekdayItems: [ASAWeekdayData(symbol: "S", index: 0), ASAWeekdayData(symbol: "M", index: 1), ASAWeekdayData(symbol: "T", index: 2), ASAWeekdayData(symbol: "W", index: 3), ASAWeekdayData(symbol: "T", index: 4), ASAWeekdayData(symbol: "F", index: 5), ASAWeekdayData(symbol: "S", index: 6)],
+                            cellItems: [
+                                ASAMiniCalendarView.CellItem(text: "1", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "2", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "3", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "4", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "5", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "6", isWeekend: true, isAccented: false),
+                                ASAMiniCalendarView.CellItem(text: "7", isWeekend: true, isAccented: true),
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                                nil,
+                            ])
+        */
     }
 }
-
