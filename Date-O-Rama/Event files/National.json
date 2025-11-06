@@ -550,7 +550,7 @@
         {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "National Rural Health Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-rural-health-day/"}, emoji: "🩺", inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "National Working Daughters Day"}, urls: {"en": "https://nationalworkingdaughtersday.com/"}, first: {era: 1, y: 2022}, emoji: "👩"},
         {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {"en": "Turkey Free Thanksgiving"}, urls: {"en": "https://www.daysoftheyear.com/days/turkey-free-thanksgiving/"}, emoji: "🥦"},
-        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Fountain Pen Day"}, notes: {"en": "National Fountain Pen Day"}, urls: {"en": "https://www.daysoftheyear.com/days/fountain-pen-day/"}, first: {era: 1, y: 2012}, emoji: "✒️"},
+        {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "Fountain Pen Day"}, notes: {"en": "National Fountain Pen Day"}, urls: {"en": "https://www.fountainpenday.com/"}, first: {era: 1, y: 2012}, emoji: "✒️"},
         {type: "D", start: {mon: 11, wkd: [6], nth: 4}, titles: {"en": "National Flossing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/flossing-day/"}, notes: {"en": "Flossing Day"}, first: {era: 1, y: 2000}, emoji: "🦷"},
         {type: "D", start: {mon: 12, d: 1}, inherits: "National Pie Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-pie-day-december-1"}},
         {type: "D", start: {mon: 12, d: 1}, inherits: "Wear a Dress Day", first: {era: 1, y: 2010}},
