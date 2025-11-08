@@ -30,13 +30,13 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         
         {type: "D", start: {mon: 6, d: 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados", "he": "יום האוהבים ברזיל"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {era: 1, y: 1948}, inherits: "Valentine’s Day"},
-        {inherits: "St. Anthony of Padua", type: "D", start: {mon: 6, d: 13}},
+        {type: "D", start: {mon: 6, d: 13}, inherits: "St. Anthony of Padua"},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
-        {inherits: "Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 10, d: 12}},
+        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul"},
+        {type: "D", start: {mon: 10, d: 12}, inherits: "Children’s Day"},
         
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Founding of Belém"}},
-        {inherits: "St. Sebastian", type: "D", start: {mon: 1, d: 20}},
+        {type: "D", start: {mon: 1, d: 20}, inherits: "St. Sebastian"},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Founding of São Vicente"}},
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Founding of Santos", "pt": "Aniversário de Santos"}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "Founding of Recife and Olinda", "pt": "Aniversário de Recife e Olinda"}},

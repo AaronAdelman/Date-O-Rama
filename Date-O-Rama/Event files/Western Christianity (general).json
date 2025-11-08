@@ -15,7 +15,7 @@
         {titles: {"en": "Feast of St. Hilary of Poitiers"}, type: "D", start: {mon: 1, d: 13}},
         {titles: {"en": "Feast of St. Anthony of Egypt"}, type: "D", start: {mon: 1, d: 17}},
         {titles: {"en": "Feast of St. Fabian"}, type: "D", start: {mon: 1, d: 20}},
-        {inherits: "St. Sebastian", type: "D", start: {mon: 1, d: 20}},
+        {type: "D", start: {mon: 1, d: 20}, inherits: "St. Sebastian"},
         {titles: {"en": "Feast of St. Agnes"}, type: "D", start: {mon: 1, d: 21}},
         {inherits: "St. Vincent", type: "D", start: {mon: 1, d: 22}},
         {titles: {"en": "Feast of St. Francis de Sales"}, type: "D", start: {mon: 1, d: 24}},
@@ -97,7 +97,7 @@
         {titles: {"en": "Feast of St. Norbert"}, type: "D", start: {mon: 6, d: 6}},
         {titles: {"en": "Feast of St. Ephrem"}, type: "D", start: {mon: 6, d: 9}},
         {titles: {"en": "Feast of St. Barnabas the Apostle"}, type: "D", start: {mon: 6, d: 11}},
-        {inherits: "St. Anthony of Padua", type: "D", start: {mon: 6, d: 13}},
+        {type: "D", start: {mon: 6, d: 13}, inherits: "St. Anthony of Padua"},
         {titles: {"en": "Feast of St. Romuald"}, type: "D", start: {mon: 6, d: 19}},
         {titles: {"en": "Feast of St. Aloysius Gonzaga"}, type: "D", start: {mon: 6, d: 21}},
         {titles: {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, type: "D", start: {mon: 6, d: 22}},
@@ -107,7 +107,7 @@
         {titles: {"en": "Feast of St. Cyril of Alexandria"}, type: "D", start: {mon: 6, d: 27}},
         {titles: {"en": "Feast of St. Irenaeus"}, type: "D", start: {mon: 6, d: 28}},
 
-        {inherits: "Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
+        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul"},
 
         {titles: {"en": "Feast of the First Martyrs of the Church of Rome"}, type: "D", start: {mon: 6, d: 30}},
         

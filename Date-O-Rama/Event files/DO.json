@@ -20,12 +20,13 @@
         {type: "D", start: {Easter: "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "Father’s Day", type: "D", start: {mon: 7, wkd: [1], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/fathers-day"}},
         {type: "D", start: {mon: 8, d: 16}, inherits: "Restoration Day", urls: {"en": "https://nationaltoday.com/restoration-day-dominican-republic/"}},
-        {type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}, inherits: "Our Lady of Mercy"},
-        {type: "D", start: {mon: 11, d: 3, thruD: 9, wkd: [2]}, urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, inherits: "Constitution Day", first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 9, d: 24}, inherits: "Our Lady of Mercy", urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}},
+        {type: "D", start: {mon: 11, d: 5, thruD: 7, wkd: [6]}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 11, d: 4, thruD: 7, wkd: [2]}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
-        {inherits: "Armed Forces Day", type: "D", start: {mon: 2, d: 25}},
+        {type: "D", start: {mon: 2, d: 25}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
-        {type: "D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-larimar-day/"}, titles: {"en": "National Larimar Day"}, first: {era: 1, y: 2018}},
+        {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Larimar Day"}, urls: {"en": "https://nationaltoday.com/national-larimar-day/"}, first: {era: 1, y: 2018}},
     ]
 }

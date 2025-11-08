@@ -60,7 +60,7 @@
 
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day", urls: {"en": "https://nationaltoday.com/orthodox-new-year/"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
-        {inherits: "Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
+        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul"},
         {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of St. John the Baptist"},
         {inherits: "Intercession of the Theotokos", type: "D", start: {mon: 10, d: 1}},
         

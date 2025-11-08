@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/sette-giugno/"}, titles: {"en": "Sette Giugno"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Saints Peter and Paul", type: "D", start: {mon: 6, d: 29}},
+        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 8}, inherits: "Victory Day", urls: {"en": "https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, notes: {"en": "Feast of Our Lady of Victories"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/malta-independence-day/"}},
