@@ -2192,13 +2192,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "French Republican"
+            "value" : "French Republican Calendar"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הרפובליקה הצרפתית"
+            "value" : "לוח השנה הרפובליקה הצרפתית"
           }
         }
       }
@@ -2209,13 +2209,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "French Republican (Romme)"
+            "value" : "French Republican Calendar (Romme)"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הרפובליקה הצרפתית (רום)"
+            "value" : "לוח השנה הרפובליקה הצרפתית (רום)"
           }
         }
       }
@@ -3114,13 +3114,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Julian"
+            "value" : "Julian Calendar"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "יוליאני"
+            "value" : "לוח השנה היוליאני"
           }
         }
       }
