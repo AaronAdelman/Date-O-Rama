@@ -14,9 +14,6 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
-//    var canSplitTimeFromDate:  Bool
-//    var supportsLocations:  Bool
-//    var supportsTimes:  Bool
 
     var daysPerWeek: Int?
     var day:  Int
@@ -33,12 +30,9 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
     var transitionType:  ASATransitionType
     var calendarType:  ASACalendarType
 
-//    var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
 
     var veryShortStandaloneWeekdaySymbols:  Array<String>?
-
-//    var month:  Int
 
     var dateEvents:  Array<ASAEventCompatible>
     var timeEvents:  Array<ASAEventCompatible>
@@ -49,32 +43,23 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
     var weekendDays: Array<Int>?
     var regionCode: String?
     
-//    var miniCalendarNumberFormat: ASANumberFormat
-    
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
-//    var timeFormat: ASATimeFormat
-    
-//    var location: ASALocation
+
     var usesDeviceLocation: Bool
     
     var supportsExternalEvents: Bool
     
     var miniCalendarWeekdayItems: [ASAMiniCalendarWeekdayModel]?
-    var miniCalendarCellItems: [ASAMiniCalendarDayModel]?
+    var miniCalendarDayItems: [ASAMiniCalendarDayModel]?
     var characterDirection: Locale.LanguageDirection
     
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
-//        self.clock = clock
-//        self.location = location
         self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now, location: location)
-//        self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
-//        let timeZone = location.timeZone
-//        self.supportsLocations = clock.calendar.supportsLocations
         
         self.daysPerWeek = clock.daysPerWeek
         
@@ -102,18 +87,9 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.dayHalf = dateComponents.dayHalf
 
         self.transitionType = clock.calendar.transitionType
-
-//        if clock.localeIdentifier == "" {
-//            self.localeIdentifier = Locale.current.identifier
-//        } else {
-//            self.localeIdentifier = clock.localeIdentifier
-//        }
+        
         self.calendarCode = clock.calendar.calendarCode
 
-//        self.calendarType = clock.calendar.calendarCode.type
-//        self.supportsTimes = clock.calendar.supportsTimes
-
-//        self.month = dateComponents.month ?? 0
         let month = dateComponents.month ?? 0
 
         let startOfDay: Date = clock.startOfDay(date: now, location: location)
@@ -125,8 +101,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         self.startOfDay               = startOfDay
         self.startOfNextDay           = startOfNextDay
         self.regionCode               = location.regionCode
-//        self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
-        
+   
         if clock.calendar is ASACalendarWithBlankMonths {
             let cal = clock.calendar as! ASACalendarWithBlankMonths
             self.monthIsBlank = cal.blankMonths.contains(month)
@@ -135,22 +110,19 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.monthIsBlank = false
             self.blankWeekdaySymbol = nil
         }
- 
-//        self.timeFormat = clock.timeFormat
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
         if self.supportsMonths {
-            let (weekdayItems, cellItems) = clock.miniCalendarData(day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, location: location)
+            let (weekdayItems, dayItems) = clock.miniCalendarData(day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, location: location)
             self.miniCalendarWeekdayItems = weekdayItems
-            self.miniCalendarCellItems = cellItems
+            self.miniCalendarDayItems = dayItems
         } else {
             self.miniCalendarWeekdayItems = nil
-            self.miniCalendarCellItems = nil
+            self.miniCalendarDayItems = nil
         }
         self.characterDirection = Locale.Language(identifier: clock.localeIdentifier).characterDirection
         
         self.calendarType = self.calendarCode.type
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
-

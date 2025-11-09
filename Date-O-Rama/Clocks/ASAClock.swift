@@ -463,7 +463,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // var daysPerWeek
 
     // MARK: - Mini Calendar Data
-    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], cellItems: [ASAMiniCalendarDayModel]) {
+    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
+        
         let daysPerWeekValue = self.daysPerWeek ?? 7
         let localeIdentifier = self.localeIdentifier
         let rawWeekdaySymbols: [String] = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
@@ -498,7 +499,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             if lastDay < firstDay { swap(&firstDay, &lastDay) }
             return firstDay...lastDay
         }()
-        let cellItems: [ASAMiniCalendarDayModel] = gridRange.map { value in
+        let dayItems: [ASAMiniCalendarDayModel] = gridRange.map { value in
             if value < 1 || value > daysInMonth {
                 return ASAMiniCalendarDayModel(text: "", isWeekend: false, isAccented: false)
             }
@@ -506,7 +507,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let isAccented = (value == day)
             return ASAMiniCalendarDayModel(text: formatNumber(value), isWeekend: isWeekend, isAccented: isAccented)
         }
-        return (weekdayItems, cellItems)
+        return (weekdayItems, dayItems)
     }
 
 } // class ASAClock
