@@ -65,23 +65,22 @@ struct ASAMainTabView: View {
         .toolbarBackgroundVisibility(.visible, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .navigation) {
-                HStack {
-                    Button {
-                        userData.shouldShowLocationTab = false
-                    } label: {
-                        Label("Locations", systemImage: "list.bullet")
-                    }
-
-                    Button {
-                        showAboutSheet = true
-                    } label: {
-                        Label("About", systemImage: "info.circle")
-                    }
+                Button {
+                    userData.shouldShowLocationTab = false
+                } label: {
+                    Label("Locations", systemImage: "list.bullet")
                 }
             }
             ToolbarItem(placement: .navigation) {
-                if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
-                   appDelegate.session.isPaired {
+                Button {
+                    showAboutSheet = true
+                } label: {
+                    Label("About", systemImage: "info.circle")
+                }
+            }
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+               appDelegate.session.isPaired {
+                ToolbarItem(placement: .navigation) {
                     Button {
                         showComplicationsSheet = true
                     } label: {
@@ -90,47 +89,45 @@ struct ASAMainTabView: View {
                 }
             }
             ToolbarItem(placement: .navigation) {
-                if !compact {
-                    HStack(spacing: 12) {
-                        // Now/Calendar menu
-                        let NOW_NAME  = "arrow.trianglehead.clockwise"
-                        let DATE_NAME = "calendar"
-                        Menu {
-                            Button {
-                                usingRealTime = true
-                            } label: {
-                                Label("Now", systemImage: NOW_NAME)
-                                if usingRealTime { Image(systemName: "checkmark") }
-                            }
-                            Button {
-                                usingRealTime = false
-                                now = Date()
-                            } label: {
-                                Label("Date:", systemImage: DATE_NAME)
-                                if !usingRealTime { Image(systemName: "checkmark") }
-                            }
-                            Divider()
-                            Button(action: {
-                                usingRealTime = false
-                                now = now.oneDayBefore
-                            }) {
-                                Label("Previous day", systemImage: "chevron.backward")
-                            }
-                            Button(action: {
-                                usingRealTime = false
-                                now = now.oneDayAfter
-                            }) {
-                                Label("Next day", systemImage: "chevron.forward")
-                            }
-                        } label: {
-                            Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
-                        }
-
-                        // Date picker ensemble (only when not using real time)
-                        if !usingRealTime {
-                            ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
-                        }
+                // Now/Calendar menu
+                let NOW_NAME  = "clock"
+                let DATE_NAME = "ellipsis.calendar"
+                Menu {
+                    Button {
+                        usingRealTime = true
+                    } label: {
+                        Label("Now", systemImage: NOW_NAME)
+                        if usingRealTime { Image(systemName: "checkmark") }
                     }
+                    Button {
+                        usingRealTime = false
+                        now = Date()
+                    } label: {
+                        Label("Date:", systemImage: DATE_NAME)
+                        if !usingRealTime { Image(systemName: "checkmark") }
+                    }
+                    Divider()
+                    Button(action: {
+                        usingRealTime = false
+                        now = now.oneDayBefore
+                    }) {
+                        Label("Previous day", systemImage: "chevron.backward")
+                    }
+                    Button(action: {
+                        usingRealTime = false
+                        now = now.oneDayAfter
+                    }) {
+                        Label("Next day", systemImage: "chevron.forward")
+                    }
+                } label: {
+                    Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
+                }
+            }
+            
+            if !compact && !usingRealTime {
+                ToolbarItem(placement: .navigation) {
+                    // Date picker ensemble (only when not using real time)
+                    ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
                 }
             }
         }
