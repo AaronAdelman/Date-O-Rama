@@ -127,7 +127,7 @@
         {type: "W", start: {mon: 10, fullWk: 2}, titles: {"en": "Anti-Poverty Week"}, notes: {"en": "Anti Poverty Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-poverty-week/"}, first: {era: 1, y: 2002}},
         {type: "W", start: {mon: 2, fullWk: 1}, titles: {"en": "Feeding Tube Awareness Week"}, urls: {"en": "https://www.feedingtubeaware.com.au/"}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 7, fullWk: 1}, titles: {"en": "National NAIDOC Week"}, urls: {"en": "https://www.naidoc.org.au/about/naidoc-week"}, first: {era: 1, y: 1991}},
-        {type: "W", start: {mon: 11, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Recycling Week"}, urls: {"en": "https://planetark.org/programs/national-recycling-week"}, first: {era: 1, y: 1996}, emoji: "♻️"},
+        {type: "W", start: {mon: 11, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Recycling Week"}, urls: {"en": "https://planetark.org/programs/national-recycling-week"}, first: {era: 1, y: 1996}, emoji: "♻️", notes: {"en": "Created by Planet Ark"}},
         {type: "D", start: {mon: 11, wkd: [3], nth: 2},titles: {"en": "National Survivors’ Day"},  urls: {"en": "https://www.daysoftheyear.com/days/national-survivors-day/"}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Gravy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gravy-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Carols by Candlelight", first: {era: 1, y: 1938}},

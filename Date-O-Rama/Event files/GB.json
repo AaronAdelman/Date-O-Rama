@@ -379,8 +379,8 @@
         {type: "D", start: {mon: 9, d: 12}, titles: {"en": "National Blackberry Day", "he": "יום האוסנה הלאומי"}, urls: {"en": "https://heritagefinefoods.co.uk/national-blackberry-day/"}},
         {type: "W", start: {mon: 10, fullWk: 3}, titles: {"en": "Map Reading Week"}, urls: {"en": "https://www.daysoftheyear.com/days/map-reading-week/"}, notes: {"en": "Created by Ordnance Survey"}, emoji: "🗺🧭"},
 
-        {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 5}, titles: {"en": "Anti-Bullying Week"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
-            {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en": "Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦"},
+        {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durationD: 5}, titles: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en": "https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en": "Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦", notes: {"en": "Created by the Anti-Bullying Alliance"}},
         ]},
         
         {type: "nD", start: {mon: 11, d: 6, thruD: 12, wkd: [2], durationD: 5}, titles: {"en": "National School Meals Week"}, notes: {"en": "NSMW"}, urls: {"en": "https://www.lacansmw.co.uk/"}, emoji: "🍛", nonoverlappingSubEvents: [
