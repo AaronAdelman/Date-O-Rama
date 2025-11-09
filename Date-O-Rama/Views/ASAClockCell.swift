@@ -111,13 +111,14 @@ struct ASAClockCell: View {
                     // Precompute weekday items and cell items for the mini calendar
                     let daysPerWeek = processedClock.daysPerWeek ?? 7
                     let weekdayItems = processedClock.miniCalendarWeekdayItems ?? []
-                    let ASAMiniCalendarDayModels = processedClock.miniCalendarASAMiniCalendarDayModels ?? []
+                    let dayItems = processedClock.miniCalendarCellItems ?? []
+                    let characterDirection = processedClock.characterDirection
 
                     ASAMiniCalendarView(
-                        daysPerWeek: processedClock.daysPerWeek ?? 7,
-                        characterDirection: Locale.Language(identifier: clock.localeIdentifier).characterDirection,
+                        daysPerWeek: daysPerWeek,
+                        characterDirection: characterDirection,
                         weekdayItems: weekdayItems,
-                        ASAMiniCalendarDayModels: ASAMiniCalendarDayModels
+                        dayItems: dayItems
                     )
                 }
                 

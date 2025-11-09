@@ -77,7 +77,7 @@ struct ASAMiniCalendarView:  View {
     var daysPerWeek: Int
     var characterDirection: Locale.LanguageDirection
     var weekdayItems: [ASAMiniCalendarWeekdayModel]
-    var ASAMiniCalendarDayModels: [ASAMiniCalendarDayModel]
+    var dayItems: [ASAMiniCalendarDayModel]
     
     private var gridLayout: [GridItem] { Array(repeating: GridItem(), count: daysPerWeek) }
         
@@ -89,8 +89,8 @@ struct ASAMiniCalendarView:  View {
             }
 
             // Day cells
-            ForEach(ASAMiniCalendarDayModels.indices, id: \.self) { idx in
-                let item = ASAMiniCalendarDayModels[idx]
+            ForEach(dayItems.indices, id: \.self) { idx in
+                let item = dayItems[idx]
                 if item.text == ""{
                     ASABlankCell()
                 } else if item.isAccented {
@@ -108,7 +108,7 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        // TODO: Update with new initializer parameters: daysPerWeek, characterDirection, weekdayItems, ASAMiniCalendarDayModels
+        // TODO: Update with new initializer parameters: daysPerWeek, characterDirection, weekdayItems, dayItems
         /*
         ASAMiniCalendarView(daysPerWeek: 7,
                             characterDirection: .leftToRight,

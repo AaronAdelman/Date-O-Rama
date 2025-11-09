@@ -61,7 +61,8 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
     var supportsExternalEvents: Bool
     
     var miniCalendarWeekdayItems: [ASAMiniCalendarWeekdayModel]?
-    var miniCalendarASAMiniCalendarDayModels: [ASAMiniCalendarDayModel]?
+    var miniCalendarCellItems: [ASAMiniCalendarDayModel]?
+    var characterDirection: Locale.LanguageDirection
     
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
 //        self.clock = clock
@@ -139,61 +140,15 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
-        // Compute mini calendar data if months are supported
         if self.supportsMonths {
-            let daysPerWeekValue = clock.daysPerWeek
-            let localeIdentifier = clock.localeIdentifier
-            let rawWeekdaySymbols: [String] = clock.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
-            let weekendDaysArray = clock.weekendDays(location: location) ?? []
-            let weekendDaysSet = Set(weekendDaysArray)
-            // Weekday header items with weekend flags
-            self.miniCalendarWeekdayItems = rawWeekdaySymbols.enumerated().map { (idx, sym) in
-                let weekdayNumber = idx + 1
-                let isWeekend = weekendDaysSet.contains(weekdayNumber)
-                return ASAMiniCalendarWeekdayModel(symbol: sym, index: idx, isWeekend: isWeekend)
-            }
-            // Number formatting for day numbers
-            let numberFormat = clock.miniCalendarNumberFormat
-            let numberFormatter = NumberFormatter()
-            numberFormatter.locale = Locale(identifier: localeIdentifier)
-            let formatNumber: (Int) -> String = { number in
-                if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
-                return numberFormatter.string(from: NSNumber(value: number)) ?? ""
-            }
-            // Grid computation
-            let daysInMonth = self.daysInMonth
-            let day = self.day
-            let weekday = self.weekday
-            let monthIsBlank = self.monthIsBlank
-            let weekdayOfDay1: Int = {
-                let offset = day - 1
-                var result = (weekday - offset) % (daysPerWeekValue ?? 7)
-                if result <= 0 { result += daysPerWeekValue ?? 7 }
-                return result
-            }()
-            let gridFirstDay: Int = monthIsBlank ? 1 : -(weekdayOfDay1 - 2)
-            let gridRange: ClosedRange<Int> = {
-                if monthIsBlank {
-                    assert(5 <= daysInMonth && daysInMonth <= 6)
-                    return 1...daysInMonth
-                }
-                var firstDay = gridFirstDay
-                var lastDay = daysInMonth
-                if lastDay < firstDay { swap(&firstDay, &lastDay) }
-                return firstDay...lastDay
-            }()
-            self.miniCalendarASAMiniCalendarDayModels = gridRange.map { value in
-                if value < 1 || value > daysInMonth {
-                    return ASAMiniCalendarDayModel(text: "", isWeekend: false, isAccented: false)
-                }
-                let isWeekend: Bool = monthIsBlank ? true : weekendDaysArray.contains(((value - gridFirstDay) % (daysPerWeekValue ?? 7)) + 1)
-                let isAccented = (value == day)
-                return ASAMiniCalendarDayModel(text: formatNumber(value), isWeekend: isWeekend, isAccented: isAccented)
-            }
+            let (weekdayItems, cellItems) = clock.miniCalendarData(day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, location: location)
+            self.miniCalendarWeekdayItems = weekdayItems
+            self.miniCalendarCellItems = cellItems
         } else {
             self.miniCalendarWeekdayItems = nil
-            self.miniCalendarASAMiniCalendarDayModels = nil
+            self.miniCalendarCellItems = nil
         }
+        self.characterDirection = Locale.Language(identifier: clock.localeIdentifier).characterDirection
         
         self.calendarType = self.calendarCode.type
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)

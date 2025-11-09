@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import EventKit
 import Foundation
+import SwiftUI
 
 let TIME_ZONE_KEY: String              = "timeZone"
 let USES_DEVICE_LOCATION_KEY: String   = "usesDeviceLocation"
@@ -460,7 +461,54 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         
         return nil
     } // var daysPerWeek
-    
+
+    // MARK: - Mini Calendar Data
+    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], cellItems: [ASAMiniCalendarDayModel]) {
+        let daysPerWeekValue = self.daysPerWeek ?? 7
+        let localeIdentifier = self.localeIdentifier
+        let rawWeekdaySymbols: [String] = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
+        let weekendDaysArray = self.weekendDays(location: location) ?? []
+        let weekendDaysSet = Set(weekendDaysArray)
+        let weekdayItems: [ASAMiniCalendarWeekdayModel] = rawWeekdaySymbols.enumerated().map { (idx, sym) in
+            let weekdayNumber = idx + 1
+            let isWeekend = weekendDaysSet.contains(weekdayNumber)
+            return ASAMiniCalendarWeekdayModel(symbol: sym, index: idx, isWeekend: isWeekend)
+        }
+        let numberFormat: ASANumberFormat = self.miniCalendarNumberFormat
+        let numberFormatter = NumberFormatter()
+        numberFormatter.locale = Locale(identifier: localeIdentifier)
+        let formatNumber: (Int) -> String = { number in
+            if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
+            return numberFormatter.string(from: NSNumber(value: number)) ?? ""
+        }
+        let weekdayOfDay1: Int = {
+            let offset = day - 1
+            var result = (weekday - offset) % daysPerWeekValue
+            if result <= 0 { result += daysPerWeekValue }
+            return result
+        }()
+        let gridFirstDay: Int = monthIsBlank ? 1 : -(weekdayOfDay1 - 2)
+        let gridRange: ClosedRange<Int> = {
+            if monthIsBlank {
+                assert(5 <= daysInMonth && daysInMonth <= 6)
+                return 1...daysInMonth
+            }
+            var firstDay = gridFirstDay
+            var lastDay = daysInMonth
+            if lastDay < firstDay { swap(&firstDay, &lastDay) }
+            return firstDay...lastDay
+        }()
+        let cellItems: [ASAMiniCalendarDayModel] = gridRange.map { value in
+            if value < 1 || value > daysInMonth {
+                return ASAMiniCalendarDayModel(text: "", isWeekend: false, isAccented: false)
+            }
+            let isWeekend: Bool = monthIsBlank ? true : weekendDaysArray.contains(((value - gridFirstDay) % daysPerWeekValue) + 1)
+            let isAccented = (value == day)
+            return ASAMiniCalendarDayModel(text: formatNumber(value), isWeekend: isWeekend, isAccented: isAccented)
+        }
+        return (weekdayItems, cellItems)
+    }
+
 } // class ASAClock
 
 
@@ -652,3 +700,4 @@ extension ASAClock {
         return self.calendar.calendarCode != .gregorian
     }
 } // extension ASAClock
+
