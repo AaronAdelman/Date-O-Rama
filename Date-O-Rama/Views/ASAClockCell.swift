@@ -44,14 +44,6 @@ struct ASAClockCell: View {
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
     
-    // Build cell items array aligned to the grid
-    func weekdayOfFirstDayOfMonth(day: Int, weekday: Int, daysPerWeek: Int) -> Int {
-            let offset = day - 1
-            var result = (weekday - offset) % daysPerWeek
-            if result <= 0 { result += daysPerWeek }
-            return result
-        }
-
     var body: some View {
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         
