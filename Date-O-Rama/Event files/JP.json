@@ -27,6 +27,7 @@
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, inherits: "Sports Day", first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
         {type: "D", start: {mon: 11, d: 3, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 4, wkd: [2]}, inherits: "Culture Day", first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Origami Day", "ja": "折り紙の日"}, urls: {"en": "https://worldorigamiday.org/origami-day/"}, first: {era: 1, y: 1980}, notes: {"en": "National Origami Day\nCreated by the Nippon Origami Association (NOA)"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
@@ -35,14 +36,14 @@
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "Japan Dolls Festival"}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, first: {era: 1, y: 1868}, emoji: "🎎"},
         {type: "D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Pocky & Pretz Day", "ja": "ポッキー＆プリッツの日"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en": "Pocky Day"}},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en":"Pocky & Pretz Day","id":"Hari Pocky & Pretz","ja":"ポッキー&プリッツの日","ko":"포키 & 프리츠의 날","ms":"Hari Pocky & Pretz","th":"วันป๊อกกี้และวันเพรทซ์","zh":"百奇与百力滋日"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en": "Pocky Day\nCreated by Glico"}},
         {type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 8, d: 25}, titles: {"en": "Instant Ramen Day"}, urls: {"en": "https://www.checkiday.com/bddae326d979a08a8736afad5c4d7a8f/instant-ramen-day-japan"}, emoji: "🍜"},
     ],
     templates: [
         {template: "Culture Day", type: "D", start: {mon: 11, d: 3}, titles: {"ar":"يوم الثقافة","az":"Mədəniyyət günü","be":"Дзень культуры","de":"Bunka no Hi","en":"Culture Day","es":"Bunka no hi","fa":"روز فرهنگ","fr":"Bunka no hi","gu":"સંસ્કૃતિ દિવસ","hi":"संस्कृति दिवस","hy":"Մշակույթի օր","id":"Hari Kebudayaan","ja":"文化の日","ko":"문화의 날","ms":"Hari Kebudayaan","pt":"Dia da Cultura","ru":"День культуры","sd":"جاپان جو ثقافتي ڏينهن","th":"วันวัฒนธรรม","tr":"Kültür Günü","uk":"День культури","uz":"Madaniyat kuni","vi":"Ngày văn hóa","zh":"文化之日"}, urls: {"en": "https://www.daysoftheyear.com/days/japanese-culture-day/"}},
-        {template: "Labor Thanksgiving Day", type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, notes: {"en": "Labor Appreciation Day"}, titles: {"en": "Labor Thanksgiving Day", "ja": "勤労感謝の日"}, first: {era: 1, y: 1948}, emoji: "㊘"},
+        {template: "Labor Thanksgiving Day", type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, notes: {"en": "Labor Appreciation Day"}, titles: {"bcl":"Aldaw nin Pagpasalamat sa Pagtrabaho","de":"Tag des Dankes für die Arbeit","dtp":"Tadau Monongkotoluod Kukumaraja","en":"Labor Thanksgiving Day","es":"Kinrō Kansha no Hi","fa":"روز تقدیر از زحمتکشان","fr":"Kinrō kansha no hi","id":"Hari Pekerja","ja":"勤労感謝の日","ko":"근로감사의 날","ms":"Hari Kesyukuran Buruh","ru":"День благодарности труду","th":"วันขอบคุณแรงงาน","uk":"День подяки за працю","vi":"Ngày cảm tạ lao động","zh":"勤勞感謝之日"}, first: {era: 1, y: 1948}, emoji: "㊘"},
         {template: "Mountain Day (in lieu)", titles: {"en": "Mountain Day (in lieu)", "he": "יום ההר (במקומו)"}, type: "D", start: {mon: 8, d: 12, wkd: [2]}, urls: {"en": "https://www.daysoftheyear.com/days/mountain-day/"}, emoji: "🗻"},
     ]
 }

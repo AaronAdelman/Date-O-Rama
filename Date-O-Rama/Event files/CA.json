@@ -87,7 +87,7 @@
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Super Bowl Sunday", first: {era: 1, y: 1967}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, inherits: "National Family Day", first: {era: 1, y: 1990}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-day/"}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Islander Day", "fr": "Fête des Insulaires"}, urls: {"en": "https://nationaltoday.com/islander-day/"}, first: {era: 1, y: 2008}},
-        {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Louis Riel Day", "fr": "Journée Louis Riel"}, urls: {"en": "https://louisrielday.com/"}, first: {era: 1, y: 2008}},
+        {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en":"Louis Riel Day","fi":"Louis Riel -päivä", "fr": "Journée Louis Riel"}, urls: {"en": "https://louisrielday.com/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 2, wkd: [4], nth: -1}, inherits: "Pink Shirt Day", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 3, wkd: [2], nth: 1}, titles: {"en": "Black Mental Health Day"}, urls: {"en": "https://www.blackmentalhealthday.ca/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 3, wkd: [4], nth: -1}, titles: {"en": "National Governance Professionals Day"}, urls: {"en": "https://nationaltoday.com/national-governance-professionals-day/"}, first: {era: 1, y: 2023}},
