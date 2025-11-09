@@ -71,31 +71,16 @@ struct ASAWeekdayCell:  View {
 } // struct ASAWeekdayCell
 
 
-// MARK:  -
-
-struct ASAWeekdayData {
-    var symbol:  String
-    var index:  Int
-    var isWeekend: Bool
-}
-
-
 // MARK: -
 
 struct ASAMiniCalendarView:  View {
     var daysPerWeek: Int
     var characterDirection: Locale.LanguageDirection
-    var weekdayItems: [ASAWeekdayData]
-    var cellItems: [CellItem]
+    var weekdayItems: [ASAMiniCalendarWeekdayModel]
+    var ASAMiniCalendarDayModels: [ASAMiniCalendarDayModel]
     
     private var gridLayout: [GridItem] { Array(repeating: GridItem(), count: daysPerWeek) }
-    
-    struct CellItem {
-        let text: String
-        let isWeekend: Bool
-        let isAccented: Bool
-    }
-    
+        
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
             // Weekday header row
@@ -104,8 +89,8 @@ struct ASAMiniCalendarView:  View {
             }
 
             // Day cells
-            ForEach(cellItems.indices, id: \.self) { idx in
-                let item = cellItems[idx]
+            ForEach(ASAMiniCalendarDayModels.indices, id: \.self) { idx in
+                let item = ASAMiniCalendarDayModels[idx]
                 if item.text == ""{
                     ASABlankCell()
                 } else if item.isAccented {
@@ -123,19 +108,19 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        // TODO: Update with new initializer parameters: daysPerWeek, characterDirection, weekdayItems, cellItems
+        // TODO: Update with new initializer parameters: daysPerWeek, characterDirection, weekdayItems, ASAMiniCalendarDayModels
         /*
         ASAMiniCalendarView(daysPerWeek: 7,
                             characterDirection: .leftToRight,
-                            weekdayItems: [ASAWeekdayData(symbol: "S", index: 0), ASAWeekdayData(symbol: "M", index: 1), ASAWeekdayData(symbol: "T", index: 2), ASAWeekdayData(symbol: "W", index: 3), ASAWeekdayData(symbol: "T", index: 4), ASAWeekdayData(symbol: "F", index: 5), ASAWeekdayData(symbol: "S", index: 6)],
-                            cellItems: [
-                                ASAMiniCalendarView.CellItem(text: "1", isWeekend: false, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "2", isWeekend: false, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "3", isWeekend: false, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "4", isWeekend: false, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "5", isWeekend: false, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "6", isWeekend: true, isAccented: false),
-                                ASAMiniCalendarView.CellItem(text: "7", isWeekend: true, isAccented: true),
+                            weekdayItems: [ASAMiniCalendarWeekdayModel(symbol: "S", index: 0), ASAMiniCalendarWeekdayModel(symbol: "M", index: 1), ASAMiniCalendarWeekdayModel(symbol: "T", index: 2), ASAMiniCalendarWeekdayModel(symbol: "W", index: 3), ASAMiniCalendarWeekdayModel(symbol: "T", index: 4), ASAMiniCalendarWeekdayModel(symbol: "F", index: 5), ASAMiniCalendarWeekdayModel(symbol: "S", index: 6)],
+                            ASAMiniCalendarDayModels: [
+                                ASAMiniCalendarDayModel(text: "1", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "2", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "3", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "4", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "5", isWeekend: false, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "6", isWeekend: true, isAccented: false),
+                                ASAMiniCalendarDayModel(text: "7", isWeekend: true, isAccented: true),
                                 nil,
                                 nil,
                                 nil,
