@@ -64,60 +64,19 @@ struct ASAMainTabView: View {
         .toolbarBackground(.clear, for: .tabBar)
         .toolbarBackgroundVisibility(.visible, for: .tabBar)
         .toolbar {
-            ToolbarItemGroup(placement: .navigation) {
-                // Now/Calendar menu — always visible when the TabView is visible
-                let NOW_NAME  = "arrow.trianglehead.clockwise"
-                let DATE_NAME = "calendar"
-                
-                Menu {
+            ToolbarItem(placement: .navigation) {
+                HStack {
                     Button {
-                        usingRealTime = true
+                        userData.shouldShowLocationTab = false
                     } label: {
-                        Label("Now", systemImage: NOW_NAME)
-                        if usingRealTime {
-                            Image(systemName: "checkmark")
-                        }
+                        Label("Locations", systemImage: "list.bullet")
                     }
-                    
+
                     Button {
-                        usingRealTime = false
-                        now = Date()
+                        showAboutSheet = true
                     } label: {
-                        Label("Date:", systemImage: DATE_NAME)
-                        if !usingRealTime {
-                            Image(systemName: "checkmark")
-                        }
+                        Label("About", systemImage: "info.circle")
                     }
-                    
-                    Divider()
-                    
-                    Button(action: {
-                        usingRealTime = false
-                        now = now.oneDayBefore
-                    }) {
-                        Label("Previous day", systemImage: "chevron.backward")
-                    }
-                    
-                    Button(action: {
-                        usingRealTime = false
-                        now = now.oneDayAfter
-                    }) {
-                        Label("Next day", systemImage: "chevron.forward")
-                    }
-                } label: {
-                    Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
-                }
-
-                Button {
-                    userData.shouldShowLocationTab = false
-                } label: {
-                    Label("Locations", systemImage: "list.bullet")
-                }
-
-                Button {
-                    showAboutSheet = true
-                } label: {
-                    Label("About", systemImage: "info.circle")
                 }
             }
             ToolbarItem(placement: .navigation) {
@@ -131,8 +90,47 @@ struct ASAMainTabView: View {
                 }
             }
             ToolbarItem(placement: .navigation) {
-                if !usingRealTime && !compact {
-                    ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+                if !compact {
+                    HStack(spacing: 12) {
+                        // Now/Calendar menu
+                        let NOW_NAME  = "arrow.trianglehead.clockwise"
+                        let DATE_NAME = "calendar"
+                        Menu {
+                            Button {
+                                usingRealTime = true
+                            } label: {
+                                Label("Now", systemImage: NOW_NAME)
+                                if usingRealTime { Image(systemName: "checkmark") }
+                            }
+                            Button {
+                                usingRealTime = false
+                                now = Date()
+                            } label: {
+                                Label("Date:", systemImage: DATE_NAME)
+                                if !usingRealTime { Image(systemName: "checkmark") }
+                            }
+                            Divider()
+                            Button(action: {
+                                usingRealTime = false
+                                now = now.oneDayBefore
+                            }) {
+                                Label("Previous day", systemImage: "chevron.backward")
+                            }
+                            Button(action: {
+                                usingRealTime = false
+                                now = now.oneDayAfter
+                            }) {
+                                Label("Next day", systemImage: "chevron.forward")
+                            }
+                        } label: {
+                            Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
+                        }
+
+                        // Date picker ensemble (only when not using real time)
+                        if !usingRealTime {
+                            ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+                        }
+                    }
                 }
             }
         }
@@ -186,3 +184,4 @@ struct ASADatePickerEnsemble: View {
     ASAMainTabView(now: .constant(Date()), usingRealTime: .constant(true))
         .environmentObject(ASAModel.shared)
 }
+
