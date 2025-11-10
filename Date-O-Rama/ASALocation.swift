@@ -301,9 +301,9 @@ extension ASALocation {
             case .earthLocation:
                 switch dayPart {
                 case .day:
-                    return [dayTop, dayTop, dayBottom]
+                    return [dayTop, dayBottom]
                 case .night:
-                    return [nightTop, nightTop, nightBottom]
+                    return [nightTop, nightBottom]
                 case .unknown:
                     return [.black, .brown]
                 }
