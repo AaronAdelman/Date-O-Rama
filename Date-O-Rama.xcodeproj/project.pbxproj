@@ -366,6 +366,8 @@
 		A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A58CB7272DB7800600A724D5 /* Pseudoscience.json in Resources */ = {isa = PBXBuildFile; fileRef = A58CB7262DB77FFB00A724D5 /* Pseudoscience.json */; };
 		A58CB7282DB7800600A724D5 /* Pseudoscience.json in Resources */ = {isa = PBXBuildFile; fileRef = A58CB7262DB77FFB00A724D5 /* Pseudoscience.json */; };
+		A58DFAD12EC1B2C900979AD1 /* UNITED.json in Resources */ = {isa = PBXBuildFile; fileRef = A58DFAD02EC1B2C800979AD1 /* UNITED.json */; };
+		A58DFAD22EC1B2C900979AD1 /* UNITED.json in Resources */ = {isa = PBXBuildFile; fileRef = A58DFAD02EC1B2C800979AD1 /* UNITED.json */; };
 		A58F39F72DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
 		A58F39F82DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
 		A58F39F92DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */; };
@@ -1459,6 +1461,7 @@
 		A58B5EF12AE020EE001C2A6E /* MK (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MK (Julian).json"; sourceTree = "<group>"; };
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A58CB7262DB77FFB00A724D5 /* Pseudoscience.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pseudoscience.json; sourceTree = "<group>"; };
+		A58DFAD02EC1B2C800979AD1 /* UNITED.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UNITED.json; sourceTree = "<group>"; };
 		A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGregorianCalendar.swift; sourceTree = "<group>"; };
 		A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithEaster.swift; sourceTree = "<group>"; };
 		A59125E02A3F270F000497D7 /* AF (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AF (Muslim).json"; sourceTree = "<group>"; };
@@ -2373,6 +2376,7 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
+				A58DFAD02EC1B2C800979AD1 /* UNITED.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -2863,6 +2867,7 @@
 				A581B898284E60D900407D68 /* AT.json in Resources */,
 				A57C73D52B28DEC1007DDC2C /* MD (Julian).json in Resources */,
 				A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */,
+				A58DFAD22EC1B2C900979AD1 /* UNITED.json in Resources */,
 				A5B999CE28622D4800072FD5 /* CU.json in Resources */,
 				A5CF465C2810D29A0088738D /* PL.json in Resources */,
 				A5D850AC280C9565005247BD /* NL.json in Resources */,
@@ -3394,6 +3399,7 @@
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5EFFF42285B5CE800F2205F /* CR.json in Resources */,
 				A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */,
+				A58DFAD12EC1B2C900979AD1 /* UNITED.json in Resources */,
 				A5EB4F982850F6A200A32FB1 /* Sunni Islam (times, Karachi).json in Resources */,
 				A5EFFF59285B5F9B00F2205F /* GG.json in Resources */,
 				A5A132FD2D4BFF5F00152EA9 /* Sesame Street.json in Resources */,
