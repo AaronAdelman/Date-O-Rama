@@ -13,7 +13,6 @@ struct ASAMainTabView: View {
         return self.sizeClass == .compact
     } // var compact
 
-    
     var body: some View {
         let currentIndex = min(max(userData.selectedTabIndex, 0), max(userData.mainClocks.count - 1, 0))
         let currentLocationWithClocks = userData.mainClocks.isEmpty ? nil : userData.mainClocks[currentIndex]
@@ -60,7 +59,7 @@ struct ASAMainTabView: View {
             } // ZStack
         } // GeometryReader
         .toolbarBackground(.clear, for: .navigationBar)
-        .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+        .toolbarBackgroundVisibility(.hidden, for: .navigationBar)
         .toolbarBackground(.clear, for: .tabBar)
         .toolbarBackgroundVisibility(.visible, for: .tabBar)
         .toolbar {

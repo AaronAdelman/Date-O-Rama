@@ -21,9 +21,21 @@ struct ASADateORamaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ASAAllLocationsTab(now: $now, usingRealTime: $usingRealTime, selectedTabIndex: $userData.selectedTabIndex, isShowingLocationSheet: $userData.shouldShowLocationTab, currentlySelectedLocationIndex: userData.selectedTabIndex)
+                if userData.shouldShowLocationTab {
+                    ASAMainTabView(now: $now, usingRealTime: $usingRealTime)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .environmentObject(userData)
+                } else {
+                    ASAAllLocationsTab(
+                        now: $now,
+                        usingRealTime: $usingRealTime,
+                        selectedTabIndex: $userData.selectedTabIndex,
+                        isShowingLocationSheet: $userData.shouldShowLocationTab
+                    )
                     .environmentObject(userData)
+                }
             }
+            .preferredColorScheme(.dark)
             .onReceive(timer) { input in
                 if usingRealTime {
                     self.now = Date()
@@ -32,3 +44,4 @@ struct ASADateORamaApp: App {
         }
     }
 }
+

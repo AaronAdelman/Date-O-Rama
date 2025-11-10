@@ -91,25 +91,20 @@ struct ASAEventCell:  View {
             ASAColorRectangle(colors: event.colors)
             
             if compact {
+                if let symbol = eventSymbol {
+                    ASAEventSymbolView(symbol: symbol, font: titleFont)
+                }
+
                 VStack(alignment: .leading) {
-                    
-                    HStack(alignment: .top) {
-                        if let symbol = eventSymbol {
-                            ASAEventSymbolView(symbol: symbol, font: titleFont)
-                        }
-                        ASAEventTitleView(event: event, font: titleFont, compact: compact)
-                    }
-                                        
+                    ASAEventTitleView(event: event, font: titleFont, compact: compact)
                     ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 } // VStack
             } else {
-                HStack(alignment: .top) {     
-                    if let symbol = eventSymbol {
-                        ASAEventSymbolView(symbol: symbol, font: titleFont)
-                    }
-                    ASAEventTitleView(event: event, font: titleFont, compact: compact)
+                if let symbol = eventSymbol {
+                    ASAEventSymbolView(symbol: symbol, font: titleFont)
                 }
-                                
+                ASAEventTitleView(event: event, font: titleFont, compact: compact)
+                
                 ASADottedLine()
                 
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)

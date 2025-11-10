@@ -17,131 +17,97 @@ struct ASAAllLocationsTab: View {
     @Binding var selectedTabIndex: Int
     @Binding var isShowingLocationSheet: Bool
     
-    let currentlySelectedLocationIndex: Int
-    
     @State private var isShowingNewLocationView = false
-    @State private var animatingTabSwitch = false
-    @State private var highlightedLocationIndex: Int? = nil
     
     var body: some View {
-        let ANIMATION_DURATION = 0.5
-        
         GeometryReader { proxy in
-            NavigationStack {
-                ZStack {
-                    Color("locationsBackground")
-                        .ignoresSafeArea()
-                    
-                    let frameHeight: CGFloat? = proxy.safeAreaInsets.top
-                    
-                    Spacer()
-                        .frame(height: frameHeight)
-                    
-                    List {
-                        ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                            ASALocationWithClocksCell(
-                                locationWithClocks: locationWithClocks,
-                                now: $now,
-                                animatingSelection: animatingTabSwitch && selectedTabIndex == index,
-                                isHighlighted: highlightedLocationIndex == index
-                            )
-                            .environmentObject(userData)
-                            .onTapGesture {
-                                // Animate the cell expanding (forward direction)
-                                withAnimation(.easeInOut(duration: ANIMATION_DURATION)) {
-                                    animatingTabSwitch = true
-                                    selectedTabIndex = index
-                                    isShowingLocationSheet = true
-                                }
-                                
-                                // Dismiss overlay after animation
-                                DispatchQueue.main.asyncAfter(deadline: .now() + ANIMATION_DURATION - 0.1) {
-                                    animatingTabSwitch = false
-                                }
-                            }
-                        }
-                        .onMove(perform: moveClock)
-                    } // List
-                    .scrollContentBackground(.hidden)
-                    .listRowBackground(Color.clear)
-                    .listStyle(.plain)
-                    .safeAreaInset(edge: .top) {
-                        Color.clear.frame(height: 0)
-                    }
-                } // ZStack
-                .navigationTitle("")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Menu {
-                            Button(action: {
-                                isShowingNewLocationView = true
-                            }) {
-                                Label("New location", systemImage: "plus.circle.fill")
-                            }
-                            
-                            Divider()
-                            
-                            Group {
-                                Button {
-                                    userData.mainClocks.sortByNameAscending()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Text("Sort by name ascending")
-                                }
-                                
-                                Button {
-                                    userData.mainClocks.sortByNameDescending()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Text("Sort by name descending")
-                                }
-                                
-                                Button {
-                                    userData.mainClocks.sortWestToEast()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Label("Sort west to east", systemImage: "arrow.right.circle")
-                                }
-                                
-                                Button {
-                                    userData.mainClocks.sortEastToWest()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Label("Sort east to west", systemImage: "arrow.left.circle")
-                                }
-                                
-                                Button {
-                                    userData.mainClocks.sortSouthToNorth()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Label("Sort south to north", systemImage: "arrow.up.circle")
-                                }
-                                
-                                Button {
-                                    userData.mainClocks.sortNorthToSouth()
-                                    userData.savePreferences(code: .clocks)
-                                } label: {
-                                    Label("Sort north to south", systemImage: "arrow.down.circle")
-                                }
-                            }
-                        } label: {
-                            Label("Locations", systemImage: "mappin")
+            ZStack {
+                Color("locationsBackground")
+                    .ignoresSafeArea()
+                
+                let frameHeight: CGFloat? = proxy.safeAreaInsets.top
+                
+                Spacer()
+                    .frame(height: frameHeight)
+                
+                List {
+                    ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                        ASALocationWithClocksCell(
+                            locationWithClocks: locationWithClocks,
+                            now: $now)
+                        .environmentObject(userData)
+                        .onTapGesture {
+                            selectedTabIndex = index
+                            isShowingLocationSheet = true
                         }
                     }
+                    .onMove(perform: moveClock)
+                } // List
+                .scrollContentBackground(.hidden)
+                .listRowBackground(Color.clear)
+                .listStyle(.plain)
+                .safeAreaInset(edge: .top) {
+                    Color.clear.frame(height: 0)
                 }
-                .onAppear {
-                    // Highlight the currently selected location when coming from tab view
-                    highlightedLocationIndex = currentlySelectedLocationIndex
-                    
-                    // Add a subtle pulse animation to show which location we came from
-                    withAnimation(.easeInOut(duration: 0.6).repeatCount(2, autoreverses: true)) {
-                        // The cell will handle the visual animation
-                    }
-                    
-                    // Clear highlight after animation
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        highlightedLocationIndex = nil
+            } // ZStack
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Menu {
+                        Button(action: {
+                            isShowingNewLocationView = true
+                        }) {
+                            Label("New location", systemImage: "plus.circle.fill")
+                        }
+                        
+                        Divider()
+                        
+                        Group {
+                            Button {
+                                userData.mainClocks.sortByNameAscending()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Text("Sort by name ascending")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sortByNameDescending()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Text("Sort by name descending")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sortWestToEast()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort west to east", systemImage: "arrow.right.circle")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sortEastToWest()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort east to west", systemImage: "arrow.left.circle")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sortSouthToNorth()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort south to north", systemImage: "arrow.up.circle")
+                            }
+                            
+                            Button {
+                                userData.mainClocks.sortNorthToSouth()
+                                userData.savePreferences(code: .clocks)
+                            } label: {
+                                Label("Sort north to south", systemImage: "arrow.down.circle")
+                            }
+                        }
+                    } label: {
+                        Label("Locations", systemImage: "mappin")
                     }
                 }
             }
@@ -160,13 +126,6 @@ struct ASAAllLocationsTab: View {
                 .environmentObject(userData)
                 .environmentObject(locationManager)
             }
-            .fullScreenCover(isPresented: $isShowingLocationSheet, onDismiss: {}, content: {
-                NavigationStack {
-                    ASAMainTabView(now: $now, usingRealTime: $usingRealTime)
-                        .navigationBarTitleDisplayMode(.inline)
-                }
-                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
-            })
         } // GeometryReader
         .preferredColorScheme(.dark)
     } // body
