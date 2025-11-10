@@ -289,15 +289,16 @@ extension ASALocation {
 } // extension ASALocation
 
 extension ASALocation {
-     func backgroundGradient(dayPart: ASADayPart) -> LinearGradient {
+    func backgroundGradient(dayPart: ASADayPart) -> LinearGradient {
         let dayTop      = Color("dayTop")
         let dayBottom   = Color("dayBottom")
         let nightTop    = Color("nightTop")
         let nightBottom = Color("nightBottom")
+        let generic: [Color] = [.black, .brown]
         let colors: [Color] = {
             switch self.type {
             case .earthUniversal, .marsUniversal:
-                return [.black, .brown]
+                return generic
             case .earthLocation:
                 switch dayPart {
                 case .day:
@@ -305,7 +306,7 @@ extension ASALocation {
                 case .night:
                     return [nightTop, nightBottom]
                 case .unknown:
-                    return [.black, .brown]
+                    return generic
                 }
             }
         }()
