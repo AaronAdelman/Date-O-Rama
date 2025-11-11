@@ -412,6 +412,7 @@
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "Area Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/area-code-day/"}},
     {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}, notes: {"en": "Created by Judge Robert S. Marx"}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Vanilla Cupcake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vanilla-cupcake-day/"}, emoji: "🧁"},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Air Day"}, urls: {"en": "https://www.checkiday.com/22d1e1a820d1271f6fb99efd1a51533f/air-day"}, first: {era: 1, y: 1929}, emoji: "✈️", notes: {"en": "Created by Lawrence Judd"}},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "National Metal Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-metal-day/"}, first: {era: 1, y: 2011}, emoji: "🎸", notes: {"en": "Created by VH1 Classic"}},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "National Sundae Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sundae-day/"}, emoji: "🍨"},
         {type: "D", start: {mon: 11, d: 12}, titles: {"en": "National Chicken Soup for the Soul Day"}, notes: {"en": "Chicken Soup for the Soul Day"}, first: {era: 1, y: 2002}},
