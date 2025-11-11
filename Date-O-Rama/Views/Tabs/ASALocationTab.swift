@@ -15,29 +15,21 @@ struct ASALocationTab: View {
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @Binding var locationWithClocks: ASALocationWithClocks
+    let processedClocks: Array<ASAProcessedClock>
     
     @Environment(\.horizontalSizeClass) private var hSizeClass
     
     var body: some View {
-        let location = locationWithClocks.location
-        let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-        let processed: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
-            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-        }
-        
-        let dayPart: ASADayPart = processed.dayPart
+        let dayPart: ASADayPart = processedClocks.dayPart
         let cellColor = dayPart.locationColor
-        
-        let gradient = location.backgroundGradient(dayPart: dayPart)
-        
+                
         GeometryReader { geo in
             ASAList {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processed)
+                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
                 .environmentObject(userData)
             }
             .listStyle(.grouped)
             .scrollContentBackground(.hidden)
-            .background(gradient.ignoresSafeArea(.all))
             .padding(.top, geo.safeAreaInsets.top)
         }
         .navigationBarTitle("", displayMode: .inline)
