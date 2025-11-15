@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en":"Pocky & Pretz Day","id":"Hari Pocky & Pretz","ja":"ポッキー&プリッツの日","ko":"포키 & 프리츠의 날","ms":"Hari Pocky & Pretz","th":"วันป๊อกกี้และวันเพรทซ์","zh":"百奇与百力滋日"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en": "Pocky Day\nCreated by Glico"}},
         {type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
-        {type: "D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 11, d: 24, wkd: [2]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 8, d: 25}, titles: {"en": "Instant Ramen Day"}, urls: {"en": "https://www.checkiday.com/bddae326d979a08a8736afad5c4d7a8f/instant-ramen-day-japan"}, emoji: "🍜"},
     ],
     templates: [

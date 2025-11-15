@@ -1,7 +1,7 @@
 {
     titles: {"*": "MN"},
     "//": "Mongolia",
-    "TODO": "Buddha Purnima, lunar calendar observances, National literary culture and book days, Environment Safety Day",
+    "TODO": "Buddha Purnima, lunar calendar observances, National literary culture and book days, Environment Safety Day, Genghis Khan’s birthday",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 1.00, green: 0.85, blue: 0.00},

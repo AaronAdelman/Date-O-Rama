@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Day of the Constitution of the Slovak Republic", "sk": "Deň Ústavy Slovenskej republiky"}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/slovakia-constitution-day/"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 9, d: 15}, inherits: "Our Lady of Sorrows", urls: {"en": "https://www.officeholidays.com/holidays/slovakia/day-of-our-lady-of-sorrows"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 11, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, inherits: "Struggle for Freedom and Democracy Day", notes: {"en": "Day of Freedom and Democracy"}},
+        {type: "D", start: {mon: 11, d: 17}, inherits: "Struggle for Freedom and Democracy Day", urls: {"en": "https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, notes: {"en": "Day of Freedom and Democracy"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

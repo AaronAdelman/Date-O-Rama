@@ -1,17 +1,18 @@
 {
-titles: {"en": "List of National Days"},
-defaultLocale: "en",
-calendarCode: "gre",
-calendarColor: {red: 0.26, green: 0.86, blue: 0.30},
-urls: {"en": "https://www.listofnationaldays.com/"},
-events: [
-{type: "D", start: {mon: 6, d: 12}, titles: {"en": "International Filipino Adobo Day"}, urls: {"en": "https://www.listofnationaldays.com/june-12th-international-adobo-day/"}, first: {era: 1, y: 2024}},
-{type: "D", start: {mon: 6, d: 3}, titles: {"en": "Impersonate Authority Day"}, urls: {"en": "https://www.listofnationaldays.com/impersonate-authority-day/"}},
-{type: "D", start: {mon: 8, d: 23}, titles: {"en": "Hug Your Sweetheart Day"}, urls: {"en": "https://www.listofnationaldays.com/hug-your-sweetheart-day/"}, first: {era: 1, y: 2022}},
-{type: "D", start: {mon: 9, d: 1}, titles: {"en": "Roblox Day"}, urls: {"en": "https://www.listofnationaldays.com/september-1st-roblox-day/"}, first: {era: 1, y: 2019}},
-{type: "D", start: {mon: 10, d: 1}, titles: {"en": "FellowPino Day"}, urls: {"en": "https://www.listofnationaldays.com/october-1st-fellowpino-day/"}, first: {era: 1, y: 2022}, emoji: "🇵🇭🇺🇸"},
-{type: "D", start: {mon: 4, d: 9}, titles: {"en": "Pancit Day"}, urls: {"en": "https://www.listofnationaldays.com/april-9th-pancit-day/"}, first: {era: 1, y: 2022}},
-{type: "D", start: {mon: 3, d: 16}, titles: {"en": "Lumpia Day"}, urls: {"en": "https://www.listofnationaldays.com/march-16th-lumpia-day/"}, first: {era: 1, y: 2023}},
-{type: "D", start: {Easter: "Easter", offsetD: 6}, titles: {"en": "Kain Tayo Day"}, urls: {"en": "https://www.listofnationaldays.com/kain-tayo/"}, notes: {"en": "Created by Willy Santos"}, first: {era: 1, y: 2025}},
-]
+    titles: {"en": "List of National Days"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.26, green: 0.86, blue: 0.30},
+    urls: {"en": "https://www.listofnationaldays.com/"},
+    events: [
+        {type: "D", start: {mon: 6, d: 12}, titles: {"en": "International Filipino Adobo Day"}, urls: {"en": "https://www.listofnationaldays.com/june-12th-international-adobo-day/"}, first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 6, d: 3}, titles: {"en": "Impersonate Authority Day"}, urls: {"en": "https://www.listofnationaldays.com/impersonate-authority-day/"}},
+        {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Hug Your Sweetheart Day"}, urls: {"en": "https://www.listofnationaldays.com/hug-your-sweetheart-day/"}, first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Roblox Day"}, urls: {"en": "https://www.listofnationaldays.com/september-1st-roblox-day/"}, first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 10, d: 1}, titles: {"en": "FellowPino Day"}, urls: {"en": "https://www.listofnationaldays.com/october-1st-fellowpino-day/"}, first: {era: 1, y: 2022}, emoji: "🇵🇭🇺🇸"},
+        {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Pancit Day"}, urls: {"en": "https://www.listofnationaldays.com/april-9th-pancit-day/"}, first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Lumpia Day"}, urls: {"en": "https://www.listofnationaldays.com/march-16th-lumpia-day/"}, first: {era: 1, y: 2023}},
+        {type: "D", start: {Easter: "Easter", offsetD: 6}, titles: {"en": "Kain Tayo Day"}, urls: {"en": "https://www.listofnationaldays.com/kain-tayo/"}, notes: {"en": "Created by Willy Santos"}, first: {era: 1, y: 2025}},
+        {type: "D", start: {mon: 11, d: 22}, titles: {"en": "Love Your Freckles Day"}, urls: {"en": "https://www.listofnationaldays.com/love-your-freckles-day/"}, first: {era: 1, y: 2022}},
+    ]
 }

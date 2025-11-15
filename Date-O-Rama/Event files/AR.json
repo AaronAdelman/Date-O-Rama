@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 10, d: 13, wkd: [6]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 16, wkd: [2]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 10, d: 7, wkd: [6]}, inherits: "Day of Respect for Cultural Diversity (in lieu)", first: {era: 1, y: 2010}},
-        {type: "D", start: {mon: 11, d: 20}, titles: {"en": "National Sovereignty Day", "es": "Día de la Soberanía Nacional"}, urls: {"en": "https://nationaltoday.com/national-sovereignty-day/"}, notes: {"en": "Day of National Sovereignty"}},
+        {type: "D", start: {mon: 11, d: 20}, titles: {"en":"National Sovereignty Day","es":"Día de la Soberanía Nacional","id":"Hari Kedaulatan Nasional","pl":"Dzień Suwerenności Narodowej","pt":"Dia da Soberania Nacional"}, urls: {"en": "https://nationaltoday.com/national-sovereignty-day/"}, notes: {"en": "Day of National Sovereignty"}, first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 

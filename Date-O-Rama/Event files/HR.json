@@ -55,5 +55,6 @@
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}, titles: {"en": "Day of Remembrance of the Holocaust and for the Prevention of Crimes against Humanity"}},
         {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, wkd: [1], nth: 1}, titles: {"en": "Sinjska Alka"}, urls: {"en": "https://www.alka.hr/en"}, first: {era: 1, y: 1715}},
+        {type: "D", start: {mon: 11, d: 18}, inherits: "Remembrance Day", urls: {"en": "https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, first: {era: 1, y: 2020}},
     ]
 }
