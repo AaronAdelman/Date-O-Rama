@@ -9,23 +9,9 @@
 import Foundation
 import JulianDayNumber
 
-public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras, ASACalendarWithEaster {
+public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras {
     public let BCE = 0
     public let CE  = 1
-    
-    func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
-        switch era {
-        case BCE:
-            return nil
-            
-        case CE:
-            return JulianCalendar.easter(year: year)
-            
-        default:
-            return nil
-        } // switch era
-    }
-
     
     init() {
         self.calendarCode = .julian
@@ -701,7 +687,7 @@ func julianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, m
     let month: Int = julianYMD.month
 //    assert(isValidJulianDate(era: era, year: year, month: month, day: day))
     return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
-} // func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
+} // func julianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
 
 func daysForMonthInJulianDate(era: Int, year: Int, month: Int) -> Int {
     return JulianCalendar.numberOfDaysIn(month: month, year: year)
@@ -745,4 +731,19 @@ fileprivate func dayOfYear(era: Int, year: Int, month: Int, day: Int) -> Int {
         }
     }
     return dayOfYear
+}
+
+extension ASAJulianCalendar: ASACalendarWithEaster {
+    func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
+        switch era {
+        case BCE:
+            return nil
+            
+        case CE:
+            return JulianCalendar.easter(year: year)
+            
+        default:
+            return nil
+        } // switch era
+    }
 }
