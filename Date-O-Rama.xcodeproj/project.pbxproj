@@ -257,7 +257,6 @@
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
-		A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC952D1C437000E64598 /* ASAMenuTitle.swift */; };
 		A56B3FE32DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
@@ -1403,7 +1402,6 @@
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
-		A568FC952D1C437000E64598 /* ASAMenuTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMenuTitle.swift; sourceTree = "<group>"; };
 		A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Looney Tunes.json"; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
@@ -2671,7 +2669,6 @@
 				A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */,
 				A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */,
 				A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */,
-				A568FC952D1C437000E64598 /* ASAMenuTitle.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
 				A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */,
@@ -3867,7 +3864,6 @@
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5EB60EE2892ECFB006009AF /* ASAPicker.swift in Sources */,
 				A5ED6E702E3117CA00CC2481 /* ASALocationTab.swift in Sources */,
-				A568FC962D1C43AB00E64598 /* ASAMenuTitle.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
 				A5BA221F2EB08D74005F1586 /* ASAList.swift in Sources */,
