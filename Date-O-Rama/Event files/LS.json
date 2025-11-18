@@ -12,7 +12,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lesotho/labour-day"}, inherits: "International Workers’ Day"},
+        {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lesotho/labour-day"}, inherits: "Intl Workers’ Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 7, d: 17}, inherits: "King’s Birthday", urls: {"en": "https://nationaltoday.com/kings-birthday-in-lesotho/"}, first: {era: 1, y: 1997}},

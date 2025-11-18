@@ -28,7 +28,7 @@
 
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
-        {type: "D", start: {mon: 3, d: 20}, inherits: "International Francophonie Day", first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 3, d: 20}, inherits: "Intl Francophonie Day", first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 11, wkd: [5], nth: 3}, titles: {"en": "Beaujolais Nouveau Day"}, urls: {"en": "https://beaujolaisnouveauday.com/"}, first: {era: 1, y: 1985}, emoji: "🍷"},

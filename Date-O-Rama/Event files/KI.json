@@ -9,7 +9,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kiribati"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},

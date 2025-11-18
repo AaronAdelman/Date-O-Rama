@@ -25,7 +25,7 @@
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 6, d: 16}, inherits: "Intl Day of the African Child", first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 5, d: 26, wkd: [2]}, inherits: "Africa Day (in lieu)", first: {era: 1, y: 1963}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/african-unity-day"}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Munhumutapa Day"}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/munhumutapa-day"}, first: {era: 1, y: 2025}},
   ]

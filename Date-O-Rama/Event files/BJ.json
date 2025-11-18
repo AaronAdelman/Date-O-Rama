@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
 
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 10, d: 26}},
         {inherits: "Natl Day", type: "D", start: {mon: 11, d: 30}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},

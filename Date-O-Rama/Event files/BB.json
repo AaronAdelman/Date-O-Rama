@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {titles: {"en": "Day of National Significance", "he": "יום של משמעות לאומית"}, type: "D", start: {mon: 7, d: 26}},
         {type: "D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey", "he": "יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
-        {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
+        {inherits: "Intl Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
     ]
 }

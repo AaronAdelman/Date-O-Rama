@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
         {type: "D", start: {mon: 11, d: 21}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
-        {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 12, d: 15}, inherits: "Intl Tea Day", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Natl Grandparents’ Day"},
         {type: "D", start: {mon: 7, d: 16}, titles: {"en": "Martyr Abu Sayeed Day"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"}},
     ]

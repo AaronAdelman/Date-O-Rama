@@ -23,6 +23,6 @@
 
         {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Children’s Day", first: {era: 1, y: 1990}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
     ]
 }

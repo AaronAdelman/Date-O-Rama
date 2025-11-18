@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 5, d: 26}, titles: {"he": "יום הולדת לצה״ל", "en": "Birthday of the IDF"}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"he": "הטבח בנמל התעופה לוד", "en": "Anniversary of the Lod Airport Massacre"}, first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"he": "https://haluzhaivri.org.il/page/36474"}},
-        {type: "D", start: {mon: 6, d: 1}, inherits: "International Farhud Day", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Farhud Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {type: "D", start: {mon: 7, d: 17}, titles: {"he": "יום הפרגון הבינלאומי", "en": "International Firgun Day"}, urls: {"en": "https://firgunday.firgunator.com/"}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"he": "יום ויקיפדיה העברית", "en": "Hebrew Wikipedia Day"}, first: {era: 1, y: 2003}, emoji: "🌐"},

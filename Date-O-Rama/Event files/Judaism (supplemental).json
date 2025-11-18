@@ -5,7 +5,7 @@
     calendarColor: {red: 0.0, green: 0.0, blue: 1.0},
     events: [
         {type: "D", start: {mon: 1, d: 15}, inherits: "Natl Bagel Day", first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 11, d: 9}, inherits: "International Day against Fascism and Antisemitism", first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 11, d: 9}, inherits: "Intl Day against Fascism and Antisemitism", first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 12, d: 11}, inherits: "Natl Have a Bagel Day"},
         {type: "D", start: {mon: 12, d: 24}, titles: {"de":"Nittel Nacht","en":"Nittel Nacht","es":"Nittel Nacht","fr":"Nittel Nacht","he":"ניטל","yi":"בלינדע נאכט"}, emoji: "0️⃣"},
         {type: "D", start: {mon: 2, d: 9}, inherits: "Natl Bagel and Lox Day"},
@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 4, d: 29}, inherits: "Natl Rugelach Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 5, d: 13}, inherits: "Hummus Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 5, d: 14}, inherits: "Declaration Day", first: {era: 1, y: 2025}},
-        {type: "D", start: {mon: 6, d: 1}, inherits: "International Farhud Day", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Farhud Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 12}, inherits: "Falafel Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Holocaust Survivor Day"}, inherits: "Holocaust Memorial Day", urls: {"en": "https://www.holocaustsurvivorday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 26}, inherits: "Natl Bagelfest Day", first: {era: 1, y: 1986}},

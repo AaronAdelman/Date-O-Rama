@@ -51,7 +51,7 @@
         {type: "D", start: {mon: 1, d: 15},  inherits: "Teacher’s Day"},
         {type: "D", start: {mon: 2, d: 12}, inherits: "Youth Day"},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Federation Day", "es": "Día de la Federación"}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Slavery Abolition Anniversary", "es": "Día del Abolición de la Esclavitud"}},
         {type: "D", start: {mon: 3, d: 28}, titles: {"en": "National Cultural Patrimonies Day", "es": "Día Nacional del Patrimonio Cultural"}},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Foundation Anniversary Day of San Cristóbal, Táchira", "es": "Aniversario del Fundación del San Cristóbal"}},

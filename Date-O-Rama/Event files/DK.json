@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "German invasion of Denmark", "da": "Danmarks besættelse"}, first: {era: 1, y: 1940}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Birthday of Queen Margrethe II", "da": "Dronningens fødselsdag"}, inherits: "*BDay*"},
-        {type: "D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Intl Workers’ Day"},
         {start: {mon: 5, d: 5}, inherits: "Liberation Day", type: "D", titles: {"en": "Liberation of Denmark", "da": "Danmarks befrielse"}},
         {type: "D", start: {mon: 5, d: 26}, titles: {"en": "Birthday of Crown Prince Frederik", "da": "Kronprins Frederiks fødselsdag"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "Birthday of Prince Joachim", "da": "Prins Joachims fødselsdag"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=56335"}},

@@ -39,7 +39,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Constitution Day"},
 
         {type: "D", start: {mon: 6, d: 6}, inherits: "Engineer’s Day"},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 8, d: 14}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 9, d: 2}, inherits: "Navy Day"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},

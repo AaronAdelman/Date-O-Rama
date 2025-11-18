@@ -96,7 +96,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day", "pl": "Śmigus Dyngus"}, inherits: "Easter Monday"},
         {type: "D", titles: {"en": "Warsaw Ghetto Uprising"}, start: {mon: 4, d: 19}},
-        {inherits: "International Mother Earth Day", type: "D", start: {mon: 4, d: 22}, first: {era: 1, y: 2009}},
+        {inherits: "Intl Mother Earth Day", type: "D", start: {mon: 4, d: 22}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day"},
         {inherits: "World No-Tobacco Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", first: {era: 1, y: 1952}},

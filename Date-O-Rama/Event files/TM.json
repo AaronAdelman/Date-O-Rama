@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/turkmenistan-memorial-day"}, inherits: "Memorial Day"},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {inherits: "Nowruz", type: "nD", start: {mon: 3, d: 21}, end: {mon: 3, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/turkmenistan/novruz"}},
         {type: "D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, titles: {"en": "State Flag Day"}, first: {era: 1, y: 1992}, inherits: "Flag Day", notes: {"en": "Constitution and Flag Day\nState Flag and Constitution Day\nDay of the State Flag of Turkmenistan"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 27}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/turkmenistan-independence-day/"}},

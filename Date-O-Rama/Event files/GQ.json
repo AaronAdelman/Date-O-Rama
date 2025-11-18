@@ -25,8 +25,8 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Children’s Day"},
         
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 1977}},
-        {type: "D", start: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "International Women’s Day (in lieu)", first: {era: 1, y: 1977}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/international-womens-day"}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 1977}},
+        {type: "D", start: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "Intl Women’s Day (in lieu)", first: {era: 1, y: 1977}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/international-womens-day"}},
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 5, d: 26, thruD: 27, wkd: [2]}, inherits: "Africa Day (in lieu)", first: {era: 1, y: 1963}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/african-unity-day"}},
   ]

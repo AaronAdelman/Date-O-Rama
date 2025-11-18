@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 1, d: 2, inherits: "New Year’s Day (in lieu)", thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 4, wkd: [3]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "Day of Defenders of the Motherland"}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/day-of-defenders-of-the-motherland"}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Nowruz", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/novruz"}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Memorial Day", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/uzbekistan-memorial-day"}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-childrens-day"}},
@@ -22,7 +22,7 @@
 
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 8, wkd: [1], nth: 3}, inherits: "Air Force Day", first: {era: 1, y: 1995}},
-        {type: "D", start: {mon: 3, d: 10, wkd: [2]}, inherits: "International Women’s Day (in lieu)", first: {era: 1, y: 1977}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},
+        {type: "D", start: {mon: 3, d: 10, wkd: [2]}, inherits: "Intl Women’s Day (in lieu)", first: {era: 1, y: 1977}, urls: {"en": "https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},
 
     ]
 }

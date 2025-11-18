@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 16}, titles: {"de":"Tag des strahlenden Sterns","el":"Ημέρα του Λαμπερού Αστεριού","en":"Day of the Shining Star","es":"Día de la Estrella Luz","fr":"Jour de l’étoile brillante","id":"Hari Bintang Bersinar","ja":"光明星節","ko":"광명성절","ms":"Hari Bintang Bersinar","pt":"Dia da Estrela Brilhante","ru":"День сияющей звезды","th":"วันแห่งดาวจรัสแสง","uk":"День сяючої зірки","vi":"Tiết Quang Minh Tinh","zh":"光明星节"}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/birth-day-of-kim-jong-il"}, notes: {"en": "Birthday of Kim Jong Il"}, inherits: "*BDay*", first: {era: 1, y: 1968}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", urls: {"en": "https://www.officeholidays.com/holidays/north-korea/international-womens-day"}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", urls: {"en": "https://www.officeholidays.com/holidays/north-korea/international-womens-day"}},
         {type: "D", start: {mon: 4, d: 15}, titles: {"ar":"عطلة يوم الشمس","az":"Günəş günü","ca":"Dia del Sol","ce":"Мелхан де","de":"Tag der Sonne","el":"Ημέρα του Ήλιου","en":"Day of the Sun","es":"Día del Sol","fr":"Jour du Soleil","hy":"Արևի օր","id":"Hari Matahari","it":"Giorno del Sole","ja":"太陽節","ko":"태양절","pt":"Dia do Sol","ru":"День Солнца","th":"วันแห่งสุริยะ","tl":"Araw ng Araw","tr":"Güneş Günü","uk":"День Сонця","uz":"Quyosh kuni","zh":"太陽節"}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/birth-date-of-kim-il-sung"}, notes: {"en": "Birthday of Kim Il Sung"}, inherits: "*BDay*", first: {era: 1, y: 1968}},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en":"Military Foundation Day","fr":"Jour de la fondation de l’armée","zh":"朝鲜人民军创建日", "ko": "인민군 창건일"}, urls: {"en": "https://www.officeholidays.com/holidays/north-korea/military-foundation-day"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "Korean Children’s Union Day", "ko": "조선소년단창립절"}, inherits: "Labour Day"},
@@ -30,6 +30,6 @@
         {type: "D", start: {mon: 12, d: 24}, titles: {"en": "Kim Jong-suk’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
-        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Children’s Day"},
   ]
 }

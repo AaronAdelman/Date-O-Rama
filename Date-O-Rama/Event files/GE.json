@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 1, d: 5, wkd: [6]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/georgia/day-after-new-years-day"}},
         {type: "D", start: {mon: 1, d: 6, wkd: [2]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/georgia/day-after-new-years-day"}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/mothers-day-in-georgia/"}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {inherits: "Day of National Unity", type: "D", start: {mon: 4, d: 9}, first: {era: 1, y: 1991}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/day-of-national-unity"}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", start: {mon: 5, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-andrew-the-first-called-day"}, inherits: "St. Andrew’s Day"},

@@ -29,7 +29,7 @@
 
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
     ],
     templates: [
         {template: "Statehood Day Holiday", type: "D", start: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, titles: {"en": "Statehood Day Holiday"}},

@@ -274,7 +274,7 @@
         {type: "D", start: {mon: 6, d: 20}, titles: {"en": "National Kouign Amann Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-kouign-amann-day-june-20-2"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "National Day of the Gong"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-day-of-the-gong-june-21"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "National Wagyu Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-wagyu-day-june-21"}, notes: {"en": "Wagyu Day"}, emoji: "🥩", first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 6, d: 22}, inherits: "International Being You Day", first: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 6, d: 22}, inherits: "Intl Being You Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en": "National HVAC Tech Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hvac-tech-day-june-22"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en": "National Detroit-Style Pizza Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-detroit-style-pizza-day-june-23"}, first: {era: 1, y: 2021}, emoji: "🍕", notes: {"en": "National Detroit Style Pizza Day\nBuddy’s Pizza Day"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en": "National Hydration Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-hydration-day-june-23"}, emoji: "🚰", first: {era: 1, y: 2016}},

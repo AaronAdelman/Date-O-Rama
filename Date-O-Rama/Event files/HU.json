@@ -34,7 +34,7 @@
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Memorial Day for the Martyrs of Arad", "hu": "Az aradi vértanúk emléknapja"}},
         
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         

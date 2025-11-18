@@ -14,8 +14,8 @@
         {type: "D", start: {mon: 1, d: 4, wkd: [2, 3, 4]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/day-after-new-years-day"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 1, d: 6, wkd: [2]}, inherits: "New Year’s Holiday", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/day-after-new-years-day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 1, d: 20}, inherits: "Martyrs’ Day", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-martyrs-day"}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}},
-        {type: "D", start: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "International Women’s Day (in lieu)", first: {era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/international-womens-day"}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "Intl Women’s Day (in lieu)", first: {era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/international-womens-day"}},
         {start: {mon: 3, d: 20}, inherits: "Nowruz", type: "D"},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Nowruz Holiday", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-novruz"}},
         {type: "D", start: {mon: 3, d: 22}, inherits: "Nowruz Holiday", urls: {"en": "https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-novruz"}},
@@ -40,7 +40,7 @@
         
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 3, d: 17}, inherits: "Children’s Day"},
-        {type: "D", start: {mon: 6, d: 1}, inherits: "International Children’s Day"},
+        {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Children’s Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Air Force Day"},
         
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "Day of Azerbaijani Customs"}},

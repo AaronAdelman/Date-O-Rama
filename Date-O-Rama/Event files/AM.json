@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/armenia/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Christmas Day", urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {type: "D", start: {mon: 1, d: 28}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-national-army-day"}, notes: {"en": "National Army Day"}, first: {era: 1, y: 2001}},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day", first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2015}, notes: {"en": "Genocide Memorial Day"}},
         {type: "D", start: {mon: 4, d: 25, wkd: [6, 7]}, titles: {"en": "Armenian Genocide Remembrance Day (in lieu)"}, first: {era: 1, y: 2015}},
@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 9, d: 21}, inherits: "Independence Day", urls: {"en": "https://www.daysoftheyear.com/days/independence-day-in-armenia/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
-        {type: "D", start: {mon: 2, d: 21}, inherits: "International Mother Language Day", first: {era: 1, y: 2000}},
+        {type: "D", start: {mon: 2, d: 21}, inherits: "Intl Mother Language Day", first: {era: 1, y: 2000}},
         {type: "D", start: {Easter: "Easter", offsetD: -52}, inherits: "St. Vardanian’s Day"},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Day of Remembrance for Victims of Massacres Organized in Azerbaijan SSR and Protection of Rights of Armenian Refugees", "hy": "Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
         {type: "D", start: {mon: 4, d: 7}, titles: {"en": "Motherhood and Beauty Day", "hy": "Մայրության և գեղեցկության օր"}, urls: {"en": "https://nationaltoday.com/motherhood-and-beauty-day/"}, inherits: "Mother’s Day"},

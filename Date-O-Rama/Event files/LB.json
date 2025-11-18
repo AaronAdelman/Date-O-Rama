@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 3, d: 25}, inherits: "the Annunciation"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Intl Workers’ Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 5, d: 6}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {era: 1, y: 1916}},
         {titles: {"en": "Liberation and Resistance Day", "ar": "عيد المقاومة و التحرير", "fr": "Fête de la Libération et Résistance"}, type: "D", start: {mon: 5, d: 25}, first: {era: 1, y: 2000}},
         {titles: {"en": "Beirut Explosion Memorial Day "}, type: "D", start: {mon: 8, d: 4}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/lebanon/beirut-explosion-memorial-day"}},
