@@ -10,5 +10,7 @@ This is an in-progress date/time program for macOS, iOS, iPadOS, and watchOS whi
 * Over 5,000 observances (national, international, religious, cultural, and astronomical) built-in
 * Intelligent event collation
 
+NOTE:  As of this writing, the UI of Date-O-Rama is being revised (along with various other parts of the program).  If you compile the program, expect it to look different that the images below.
+
 ![iPadOS screenshot](./IMG_0046.PNG)
 ![iOS screenshot](./IMG_2182.PNG)
