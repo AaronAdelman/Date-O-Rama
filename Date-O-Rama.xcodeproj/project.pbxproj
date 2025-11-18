@@ -914,7 +914,6 @@
 		A5E9AB642A1B4C8900433D7A /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AB622A1B4C8900433D7A /* Names.json */; };
 		A5EB29192865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
 		A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
-		A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */; };
 		A5EB4F8F2850D5DF00A32FB1 /* PS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F8E2850D5DE00A32FB1 /* PS.json */; };
 		A5EB4F902850D5DF00A32FB1 /* PS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F8E2850D5DE00A32FB1 /* PS.json */; };
 		A5EB4F922850EF0B00A32FB1 /* RS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F912850EF0B00A32FB1 /* RS.json */; };
@@ -1118,6 +1117,8 @@
 		A5F0EAC22C7FA0FD003E1FED /* National Day Calendar®.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */; };
 		A5F0F7602B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */; };
 		A5F0F7612B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */; };
+		A5F154A72ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */; };
+		A5F154A82ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */; };
 		A5F1ECDF2E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
 		A5F1ECE02E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
 		A5F1ECE42EA2051B000CAB75 /* KP (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */; };
@@ -1737,7 +1738,6 @@
 		A5E95F6C286F2DB7009267AF /* AS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AS.json; sourceTree = "<group>"; };
 		A5E9AB622A1B4C8900433D7A /* Names.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Names.json; sourceTree = "<group>"; };
 		A5EB29182865F98500A1FBF4 /* CX (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CX (Chinese).json"; sourceTree = "<group>"; };
-		A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACloseBoxImage.swift; sourceTree = "<group>"; };
 		A5EB4F8E2850D5DE00A32FB1 /* PS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PS.json; sourceTree = "<group>"; };
 		A5EB4F912850EF0B00A32FB1 /* RS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RS.json; sourceTree = "<group>"; };
 		A5EB4F942850EFC700A32FB1 /* RO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RO.json; sourceTree = "<group>"; };
@@ -1835,6 +1835,7 @@
 		A5EFFFFE285B8DF800F2205F /* BH (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BH (Muslim).json"; sourceTree = "<group>"; };
 		A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National Day Calendar®.json"; sourceTree = "<group>"; };
 		A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "NG (Muslim).json"; sourceTree = "<group>"; };
+		A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACloseButton.swift; sourceTree = "<group>"; };
 		A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KP (Chinese).json"; sourceTree = "<group>"; };
 		A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SD (Coptic).json"; sourceTree = "<group>"; };
 		A5F3B0172855FEC700865CEB /* RU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RU.json; sourceTree = "<group>"; };
@@ -2655,7 +2656,7 @@
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
-				A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */,
+				A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */,
 				A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */,
 				A5A9667B25A31EC900CF158F /* ASAEventCell.swift */,
 				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
@@ -3782,6 +3783,7 @@
 				A59D80362600C57D00FD8BBF /* ASACalendar.swift in Sources */,
 				A57706712896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */,
 				A579019E259263F900224666 /* EKEventExtensions.swift in Sources */,
+				A5F154A72ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */,
 				A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */,
@@ -3908,7 +3910,6 @@
 				A5E638CE2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A52BAE792CA59B610006A178 /* ASAWeekday.swift in Sources */,
 				A5D546C52E37EF7E00205F14 /* ASALocationMenu.swift in Sources */,
-				A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */,
 				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A5DC8EBE2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift in Sources */,
@@ -3934,6 +3935,7 @@
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A54539DB26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
+				A5F154A82ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */,
 				A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */,

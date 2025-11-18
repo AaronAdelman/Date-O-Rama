@@ -37,16 +37,13 @@ struct ASALocationWithClocksCell: View {
                 } newClockAction: {debugPrint("Foo!")}
                     .environmentObject(userData)
                     .sheet(isPresented: self.$showingGetInfoView) {
-                        VStack {
-                            HStack {
-                                Button(action: {
-                                    showingGetInfoView = false
-                                }) {
-                                    ASACloseBoxImage()
-                                }
-                                Spacer()
-                            }
+                        NavigationStack {
                             ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+                                .toolbar {
+                                    ASACloseButton(action: {
+                                        showingGetInfoView = false
+                                    })
+                                }
                         }
                         .font(.body)
                     }

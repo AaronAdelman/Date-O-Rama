@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct ASALocationDetailView: View {
     @ObservedObject var locationWithClocks:  ASALocationWithClocks
@@ -35,23 +34,6 @@ struct ASALocationDetailView: View {
                     })
                     
                     ASATimeZoneCell(timeZone: $locationWithClocks.location.timeZone, now: now)
-                } // Section
-                
-                Section {
-                    if locationWithClocks.location.type == .earthLocation {
-                        let METERS = 1000000.0
-                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: METERS, longitudinalMeters: METERS)), annotationItems:  [locationWithClocks.location]) { tempLocationData in
-                            MapMarker(coordinate: tempLocationData.location.coordinate)
-                        }
-                        .aspectRatio(1.0, contentMode: .fit)
-                        .padding()
-                    } else {
-                        HStack(alignment: .center) {
-                            Spacer()
-                            ASAQuasiLocationImage(locationType: locationWithClocks.location.type)
-                            Spacer()
-                        }
-                    }
                 } // Section
                 
                 Section {
@@ -84,36 +66,6 @@ struct ASALocationDetailView: View {
     }
 }
 
-
-//  -
-
-extension ASALocationType {
-    var image: Image? {
-        switch self {
-        case .earthLocation:
-            return nil
-        case .earthUniversal:
-            return Image("Earth")
-        case .marsUniversal:
-            return Image("Mars")
-        }
-    }
-}
-
-
-//  -
-
-struct ASAQuasiLocationImage: View {
-    var locationType: ASALocationType
-    
-    var body: some View {
-        let DIMENSION = 350.0
-        (locationType.image ?? Image(systemName: "photo"))
-            .resizable()
-            .scaledToFit()
-            .frame(width: DIMENSION, height: DIMENSION, alignment: .center)
-    }
-}
 
 //struct ASALocationDetailView_Previews: PreviewProvider {
 //    static var previews: some View {

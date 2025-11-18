@@ -64,17 +64,14 @@ struct ASALocationWithClocksSectionView: View {
                         .environmentObject(userData)
                     
                 case .locationInfo:
-                    VStack {
-                        HStack {
-                            Button(action: {
-                                showingDetailView = false
-                                detail = .none
-                            }) {
-                                ASACloseBoxImage()
-                            }
-                            Spacer()
-                        } // HStack
+                    NavigationStack {
                         ASALocationDetailView(locationWithClocks: locationWithClocks, now: now)
+                            .toolbar {
+                                ASACloseButton(action: {
+                                    showingDetailView = false
+                                    detail = .none
+                                })
+                            }
                     }
                     .font(.body)
                 } // switch detail
