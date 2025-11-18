@@ -31,6 +31,6 @@
         {type: "D", start: {mon: 11, d: 7}, inherits: "October Revolution Day"},
         {titles: {"en": "Democracy and Human Rights Day"}, type: "D", start: {mon: 12, d: 10}, emoji: "🗳️"},
 
-        {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
     ]
 }

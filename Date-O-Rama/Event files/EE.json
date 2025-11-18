@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {titles: {"en": "Anniversary of the Tartu Peace Treaty", "et": "Tartu rahulepingu aastapäev"}, type: "D", start: {mon: 2, d: 2}},
         {titles: {"en": "Native Language Day", "et": "emakeelepäev"}, type: "D", start: {mon: 3, d: 14}},
-        {inherits: "National Flag Day", type: "D", start: {mon: 6, d: 4}, first: {era: 1, y: 1884}},
+        {inherits: "Natl Flag Day", type: "D", start: {mon: 6, d: 4}, first: {era: 1, y: 1884}},
         {titles: {"en": "Day of Mourning and Commemoration", "et": "leinapäev"}, type: "D", start: {mon: 6, d: 14}},
         {type: "D", start: {mon: 8, d: 23}, inherits: "Black Ribbon Day", first: {era: 1, y: 2009}},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 9, wkd: [1], nth: 2}},

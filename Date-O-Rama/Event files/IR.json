@@ -10,8 +10,8 @@
         {inherits: "Public Holiday", type: "nD", start: {mon: 8, d: 2, era: 1, y: 2023}, end: {mon: 8, d: 3, era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/iran/iran-heatwave"}},
 
         {type: "D", start: {mon: 2, d: 24}, inherits: "Engineer’s Day"},
-        {type: "D", start: {mon: 10, d: 17}, titles: {"en": "Physical Education and Sports Day"}, inherits: "National Sports Day"},
-        {type: "nD", start: {mon: 10, d: 17}, end: {mon: 10, d: 23}, titles: {"en": "Physical Education and Sports Week"}, inherits: "National Sports Day"},
+        {type: "D", start: {mon: 10, d: 17}, titles: {"en": "Physical Education and Sports Day"}, inherits: "Natl Sports Day"},
+        {type: "nD", start: {mon: 10, d: 17}, end: {mon: 10, d: 23}, titles: {"en": "Physical Education and Sports Week"}, inherits: "Natl Sports Day"},
         {type: "D", start: {mon: 11, d: 28}, inherits: "Navy Day"},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Demise of Imam Khomeini"}, inherits: "*DeathAnniv*", urls: {"en": "https://www.officeholidays.com/holidays/iran/demise-of-imam-khomeini"}, first: {era: 1, y: 1989}},
     ]

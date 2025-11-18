@@ -9,7 +9,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guinea-Bissau"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "National Heroes’ Day", type: "D", start: {mon: 1, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/guinea-bissau/guinea-bissau-national-heroes-day"}},
+        {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 1, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/guinea-bissau/guinea-bissau-national-heroes-day"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 8, d: 3}, titles: {"en": "Pidjiguiti Day"}, urls: {"en": "https://nationaltoday.com/pidjiguiti-day/"}},

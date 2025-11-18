@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 7, wkd: [2], nth: 1}, inherits: "CARICOM Day"},
-        {type: "D", start: {mon: 9, d: 12}, inherits: "National Day of Prayer", first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
-        {type: "D", start: {mon: 9, d: 9, thruD: 11, wkd: [5]}, titles: {"en": "National Day of Prayer (in lieu)"}, first: {era: 1, y: 2024}, inherits: "National Day of Prayer", urls: {"en": "https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
+        {type: "D", start: {mon: 9, d: 12}, inherits: "Natl Day of Prayer", first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
+        {type: "D", start: {mon: 9, d: 9, thruD: 11, wkd: [5]}, titles: {"en": "National Day of Prayer (in lieu)"}, first: {era: 1, y: 2024}, inherits: "Natl Day of Prayer", urls: {"en": "https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
     ]
 }

@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 6, d: 29}, titles: {"en": "Central Province Day"}, urls: {"en": "https://nationaltoday.com/central-province-day/"}, notes: {"en": "Second Appointed Day in the Central Province"}, first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 7, d: 20}, titles: {"en": "Rennell and Bellona Province Day"}, first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 12, d: 7}, titles: {"en": "Western Province Day"}},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Police Remembrance Day", first: {era: 1, y: 1989}},
     ],
     templates: [
         {template: "Isabel Province Day", type: "D", start: {mon: 6, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/isabel-province-day/"}, titles: {"en": "Isabel Province Day"}},

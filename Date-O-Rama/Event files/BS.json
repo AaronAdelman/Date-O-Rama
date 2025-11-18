@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 6, wkd: [6], nth: 1}, titles: {"en": "Randol Fawkes Labour Day"}, urls: {"en": "https://nationaltoday.com/randol-fawkes-labour-day/"}, first: {era: 1, y: 2013}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/bahamas-independence-day/"}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/emancipation-day"}},
-        {inherits: "National Heroes’ Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
+        {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 

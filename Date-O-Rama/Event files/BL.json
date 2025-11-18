@@ -14,7 +14,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 39}, urls: {"en": "https://nationaltoday.com/ascencion-day-saint-barthelemy/"}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/whit-monday-saint-barthelemy/"}},
-        {inherits: "National Day", type: "D", start: {mon: 7, d: 14}},
+        {inherits: "Natl Day", type: "D", start: {mon: 7, d: 14}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 9}, inherits: "Abolition Day", first: {era: 1, y: 1847}, urls: {"en": "https://nationaltoday.com/saint-barthelemy-abolition-day/"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},

@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 4, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/netherlands-kings-birthday"}, inherits: "King’s Birthday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {type: "D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "National Anthem and Flag Day", first: {era: 1, y: 1984}},
+        {type: "D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "Natl Anthem and Flag Day", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day", "he": "יום קוראסאו"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Day after Christmas", urls: {"en": "https://www.officeholidays.com/holidays/curacao/christmas-holiday"}},

@@ -17,7 +17,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", start: {equinoxOrSolstice: "Jun"}, inherits: "National Day", first: {era: 1, y: 1985}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}, notes: {"en": "Ullortuneq"}},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, inherits: "Natl Day", first: {era: 1, y: 1985}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}, notes: {"en": "Ullortuneq"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

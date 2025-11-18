@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 2}, urls: {"en": "https://www.daysoftheyear.com/days/coming-of-age-day/"}, titles: {"en": "Coming of Age Day", "he": "יום ההתבגרות", "ja": "成人の日"}, notes: {"en": "Coming-of-Age Day"}, first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-foundation-day/"}, inherits: "National Foundation Day", notes: {"en": "Kenkoku Kinen no Hi"}},
+        {type: "D", start: {mon: 2, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-foundation-day/"}, inherits: "Natl Foundation Day", notes: {"en": "Kenkoku Kinen no Hi"}},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Emperor’s Birthday", "he": "יום הולדתו של הקיסר", "ja": "天皇誕生日"}, urls: {"en": "https://nationaltoday.com/the-emperors-birthday/"}, first: {era: 1, y: 1886}, inherits: "*BDay*"},
         {type: "D", start: {equinoxOrSolstice: "Mar"}, inherits: "Vernal Equinox", titles: {"en": "Vernal Equinox Day", "ja": "春分の日"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/vernal-equinox-day"}},
         {type: "D", start: {mon: 4, d: 29}, titles: {"en": "Shōwa Day", "ja": "昭和の日"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/showa-day"}, notes: {"en": "Showa Day"}},
@@ -35,7 +35,7 @@
         {type: "D", start: {mon: 12, d: 23}, titles: {"en": "Birthday of Emperor Akihito"}, urls: {"en": "https://nationaltoday.com/birthday-of-emperor-akihito/"}, inherits: "*BDay*", first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "Japan Dolls Festival"}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, first: {era: 1, y: 1868}, emoji: "🎎"},
         {type: "D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
-        {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en":"Pocky & Pretz Day","id":"Hari Pocky & Pretz","ja":"ポッキー&プリッツの日","ko":"포키 & 프리츠의 날","ms":"Hari Pocky & Pretz","th":"วันป๊อกกี้และวันเพรทซ์","zh":"百奇与百力滋日"}, first: {era: 1, y: 1999}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en": "Pocky Day\nCreated by Glico"}},
         {type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 24, wkd: [2]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},

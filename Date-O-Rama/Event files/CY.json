@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {inherits: "Clean Monday", type: "D", start: {Easter: "Easter", offsetD: -48}},
         {inherits: "Greek Independence Day", type: "D", start: {mon: 3, d: 25}, first: {era: 1, y: 1821}},
-        {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/cyprus-national-holiday/"}, inherits: "National Day"},
+        {type: "D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/cyprus-national-holiday/"}, inherits: "Natl Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday", urls: {"en": "https://nationaltoday.com/easter-saturday/"}},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},

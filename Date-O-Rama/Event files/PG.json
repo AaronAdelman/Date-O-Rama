@@ -9,9 +9,9 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {type: "D", start: {mon: 2, d: 24, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "National Remembrance Day (in lieu)"},
-        {type: "D", start: {mon: 2, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "National Remembrance Day"},
-        {type: "D", start: {mon: 2, d: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "National Remembrance Day (in lieu)"},
+        {type: "D", start: {mon: 2, d: 24, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "Natl Remembrance Day (in lieu)"},
+        {type: "D", start: {mon: 2, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "Natl Remembrance Day"},
+        {type: "D", start: {mon: 2, d: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inherits: "Natl Remembrance Day (in lieu)"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
@@ -21,7 +21,7 @@
         {type: "D", start: {era: 1, y: 2023, mon: 6, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "D", start: {era: 1, y: 2024, mon: 6, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "D", start: {era: 1, y: 2025, mon: 6, d: 13}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
-        {type: "D", start: {mon: 7, d: 23}, inherits: "National Remembrance Day", urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-national-remembrance-day"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 7, d: 23}, inherits: "Natl Remembrance Day", urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-national-remembrance-day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Repentance Day"}, urls: {"en": "https://nationaltoday.com/national-day-of-repentance/"}, first: {era: 1, y: 2011}, notes: {"en": "National Day of Repentance"}},
         {type: "D", start: {mon: 9, d: 16}, inherits: "Independence Day", first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/papua-new-guinea-independence-day/"}},
         {type: "D", start: {mon: 9, d: 15, wkd: [2, 6]}, inherits: "Independence Day Holiday", first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-independence-day"}},
@@ -31,9 +31,9 @@
         
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Police Remembrance Day", first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Police Remembrance Day", first: {era: 1, y: 1989}},
     ],
     templates: [
-        {template: "National Remembrance Day (in lieu)", type: "D", start: {mon: 2, d: 24, wkd: [6]}, titles: {"en": "National Remembrance Day (in lieu)"}},
+        {template: "Natl Remembrance Day (in lieu)", type: "D", start: {mon: 2, d: 24, wkd: [6]}, titles: {"en": "National Remembrance Day (in lieu)"}},
     ]
 }

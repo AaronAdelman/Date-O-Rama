@@ -46,7 +46,7 @@
        {type: "D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/secretaries-day-colombia/"}, titles: {"en": "Secretaries’ Day"}},
        {type: "D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/day-of-trees/"}, titles: {"en": "Day of Trees"}, inherits: "Arbor Day"},
        {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
-       {type: "D", start: {mon: 6, d: 27}, inherits: "National Coffee Day"},
+       {type: "D", start: {mon: 6, d: 27}, inherits: "Natl Coffee Day"},
        {type: "nD", start: {mon: 9, d: 3}, end: {mon: 10, d: 5}, titles: {"es": "Fiesta de San Pacho"}, urls: {"en": "https://www.daysoftheyear.com/days/fiesta-de-san-pacho/"}},
   ]
 }

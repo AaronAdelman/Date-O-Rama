@@ -28,6 +28,6 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 9, d: 9}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 7, d: 20}, inherits: "Engineer’s Day"},
-        {type: "D", start: {mon: 9, wkd: [6], nth: 2}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, wkd: [6], nth: 2}, inherits: "Natl Coffee Day"},
     ]
 }

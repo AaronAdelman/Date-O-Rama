@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 7, wkd: [7], nth: 1}, inherits: "Friendship Day", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 8, d: 22}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 8, d: 22}, inherits: "Natl Coffee Day"},
         {inherits: "Non-Working Day", type: "D", start: {mon: 10, d: 11, era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inherits: "Non-Working Day", type: "D", start: {mon: 11, d: 2, era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inherits: "Non-Working Day", type: "D", start: {mon: 12, d: 24, era: 1, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
@@ -69,7 +69,7 @@
         {inherits: "Non-Working Day", type: "D", start: {era: 1, y: 2024, mon: 12, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inherits: "Non-Working Day", type: "D", start: {era: 1, y: 2024, mon: 12, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
 
-        {type: "D", start: {mon: 8, d: 1}, inherits: "National Alpaca Day"},
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Natl Alpaca Day"},
         
         {inherits: "Public Holiday", type: "nD", start: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
         {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},

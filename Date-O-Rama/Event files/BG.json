@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 12, d: 27}, inherits: "St. John the Apostle"},
         {type: "D", start: {mon: 12, d: 28, wkd: [4]}, inherits: "Christmas Holiday"},
 
-        {type: "D", start: {mon: 11, d: 1}, inherits: "National Awakening Day"},
+        {type: "D", start: {mon: 11, d: 1}, inherits: "Natl Awakening Day"},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Baba Marta Day", "bg": "Баба Марта"}, notes: {"en": "Baba Marta"}, urls: {"en": "https://www.daysoftheyear.com/days/baba-marta-day/"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},

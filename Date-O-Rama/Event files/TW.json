@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/taiwan/labour-day"}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Father’s Day", type: "D", start: {mon: 8, d: 8}},
-        {type: "D", start: {mon: 10, d: 10}, inherits: "National Day", notes: {"en": "Double Ten Day", "zh": "雙十節"}, urls: {"en": "https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, first: {era: 1, y: 1911}},
+        {type: "D", start: {mon: 10, d: 10}, inherits: "Natl Day", notes: {"en": "Double Ten Day", "zh": "雙十節"}, urls: {"en": "https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, first: {era: 1, y: 1911}},
         
         {type: "D", start: {mon: 3, d: 12}, inherits: "Arbor Day"},
         {inherits: "Youth Day", type: "D", start: {mon: 3, d: 29}},
@@ -42,7 +42,7 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "International Women’s Day"},
         {type: "D", start: {mon: 8, d: 14}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 9, d: 2}, inherits: "Navy Day"},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 8, wkd: [1], nth: 4}, inherits: "Grandparents’ Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
   ],

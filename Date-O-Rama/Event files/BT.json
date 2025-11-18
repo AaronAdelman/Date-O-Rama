@@ -14,7 +14,7 @@
         {inherits: "Autumnal Equinox", type: "D", start: {equinoxOrSolstice: "Sep"}, urls: {"en": "https://www.officeholidays.com/holidays/bhutan/blessed-rainy-day"}, titles: {"en": "Blessed Rainy Day"}, notes: {"en": "Thrue Bab"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/coronation-day-of-his-majesty-the-king/"}, titles: {"en": "Coronation Day of His Majesty the King"}, first: {era: 1, y: 2008}, inherits: "*Coronation*"},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/bhutan/birth-anniversary-of-the-4th-druk-gyalpo"}, titles: {"en": "Birth Anniversary of the 4th Druk Gyalpo"}, first: {era: 1, y: 1955}, inherits: "*BDay*"},
-        {inherits: "National Day", type: "D", start: {mon: 12, d: 17}, first: {era: 1, y: 1907}, urls: {"en": "https://nationaltoday.com/bhutan-national-day/"}},
+        {inherits: "Natl Day", type: "D", start: {mon: 12, d: 17}, first: {era: 1, y: 1907}, urls: {"en": "https://nationaltoday.com/bhutan-national-day/"}},
 
         {inherits: "Teacher’s Day", type: "D", start: {mon: 5, d: 2}},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en": "Coronation of King Jigme Singye Wangchuck"}, first: {era: 1, y: 1974}, inherits: "*Coronation*"},

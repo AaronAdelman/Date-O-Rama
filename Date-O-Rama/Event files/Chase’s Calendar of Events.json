@@ -10,7 +10,7 @@
         {type: "M", start: {mon: 11}, titles: {"en": "Banana Pudding Lovers Month"}, urls: {"en": "https://www.daysoftheyear.com/days/banana-pudding-lovers-month/"}, emoji: "🍌", first: {era: 1, y: 2011}, notes: {"en": "Created by Rodgers’ Puddings"}},
         {type: "M", start: {mon: 2}, titles: {"en": "An Affair to Remember Month"}, urls: {"en": "https://www.daysoftheyear.com/days/an-affair-to-remember-month/"}, first: {era: 1, y: 1996}, notes: {"en": "This observance was inspired by the movie An Affair to Remember."}},
         {type: "M", start: {mon: 5}, titles: {"en": "International Victorious Woman Month"}, urls: {"en": "https://www.daysoftheyear.com/days/international-victorious-woman-month/"}, first: {era: 1, y: 2006}, notes: {"en": "Created by Annmarie Kelly"}},
-        {type: "D", start: {mon: 10, d: 15}, inherits: "National Grouch Day", first: {era: 1, y: 1976}},
+        {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Grouch Day", first: {era: 1, y: 1976}},
         {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "Return Borrowed Books Week"}, urls: {"en": "https://www.daysoftheyear.com/days/return-borrowed-books-week/"}, emoji: "📚", notes: {"en": "Created by Al Kaelin"}},
         {type: "D", start: {mon: 3, wkd: [2], d: 9, thruD: 15}, inherits: "Fill Our Staplers Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 11, wkd: [2], d: 2, thruD: 8}, inherits: "Fill Our Staplers Day", first: {era: 1, y: 2013}},

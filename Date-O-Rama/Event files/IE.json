@@ -44,7 +44,7 @@
         {type: "M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/bealtaine-festival/"}, titles: {"en": "Bealtaine Festival"}, first: {era: 1, y: 2009}},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/irish-heart-month/"}, titles: {"en": "Irish Heart Month"}, inherits: "*MedAwareness*", emoji: "🫀"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "Shine a Light Night"}, urls: {"en": "https://www.daysoftheyear.com/days/shine-a-light-night/"}, first: {era: 1, y: 2012}, notes: {"en": "Created by Focus Ireland"}},

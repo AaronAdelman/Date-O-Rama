@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, inherits: "Father’s Day", urls: {"en": "https://www.officeholidays.com/holidays/austria/fathers-day"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 24}, inherits: "St. Rupert’s Day", urls: {"en": "https://www.officeholidays.com/holidays/austria/salzburg/saint-rupert"}},
-        {type: "D", start: {mon: 10, d: 26}, inherits: "National Day", urls: {"en": "https://www.archive.austria.org/national-day"}, first: {era: 1, y: 1955}, notes: {"en": "Created by the Austrian Parliament"}},
+        {type: "D", start: {mon: 10, d: 26}, inherits: "Natl Day", urls: {"en": "https://www.archive.austria.org/national-day"}, first: {era: 1, y: 1955}, notes: {"en": "Created by the Austrian Parliament"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 15}, inherits: "St. Leopold’s Day", urls: {"en": "https://www.officeholidays.com/holidays/austria/vienna/saint-leopold"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
@@ -37,7 +37,7 @@
         
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 9, d: 20}, inherits: "Children’s Day"},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Holocaust Memorial Day", titles: {"en": "Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de": "Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}},
     ]
 }

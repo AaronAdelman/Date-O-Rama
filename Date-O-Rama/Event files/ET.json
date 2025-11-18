@@ -12,13 +12,13 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Ethiopian Patriots’ Victory Day", first: {era: 1, y: 1941}, end: {era: 1, y: 2024}},
         {type: "D", start: {mon: 4, d: 20}, inherits: "Ethiopian Patriots’ Victory Day", first: {era: 1, y: 2025}},
-        {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-day-of-ethiopia/"}, inherits: "National Day", titles: {"en": "Downfall of the Derg"}, first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-day-of-ethiopia/"}, inherits: "Natl Day", titles: {"en": "Downfall of the Derg"}, first: {era: 1, y: 1991}},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
  ], templates: [
      {template: "Ethiopian Patriots’ Victory Day", type: "D", start: {mon: 5, d: 5}, titles: {"en": "Ethiopian Patriots’ Victory Day", "am": "የአርበኞች ቀን", "om": "Guyyaa Bajalbajaa"}, urls: {"en": "https://www.officeholidays.com/holidays/ethiopia/patriots-victory-day"}},
  ]

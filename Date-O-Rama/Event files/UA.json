@@ -78,7 +78,7 @@
         {inherits: "International Youth Day", type: "D", start: {mon: 8, d: 12}, first: {era: 1, y: 2000}},
         {inherits: "Dormition of the Mother of God", type: "D", start: {"mon": 8, d: 15}},
         {inherits: "Nut Feast of the Savior", type: "D", start: {"mon": 8, d: 16}},
-        {inherits: "National Flag Day", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/"}},
+        {inherits: "Natl Flag Day", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/"}},
         {titles: {"en": "Day of Remembrance of the Defenders of Ukraine"}, type: "D", start: {"mon": 8, d: 29}},
         {inherits: "Beheading of St. John the Baptist", type: "D", start: {"mon": 8, d: 29}},
         {titles: {"en": "Cincture of the Theotokos"}, type: "D", start: {"mon": 8, d: 31}},

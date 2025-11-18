@@ -222,7 +222,7 @@
         {type: "M", start: {mon: 4}, urls: {"en": "https://www.daysoftheyear.com/days/stress-awareness-month/"}, titles: {"en": "Stress Awareness Month"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 4}, urls: {"en": "https://www.daysoftheyear.com/days/summer-tire-changeover-month/"}, titles: {"en": "Summer Tire Changeover Month"}, emoji: "🛞"},
         {type: "M", start: {mon: 4}, urls: {"en": "https://www.pointsoflight.org/global-volunteer-month/"}, titles: {"en": "Global Volunteer Month"}, emoji: "✻", first: {era: 1, y: 2020}},
-        {type: "M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
+        {type: "M", start: {mon: 5}, inherits: "Natl Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
         {type: "M", start: {mon: 5}, titles: {"en": "Family Wellness Month"}, urls: {"en": "https://nationaltoday.com/family-wellness-month/"}, inherits: "Family Day"},
         {type: "M", start: {mon: 5}, titles: {"en": "Fibromyalgia Education and Awareness Month"}, urls: {"en": "https://nationaltoday.com/fibromyalgia-education-and-awareness-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 5}, titles: {"en": "Food Allergy Action Month"}, notes: {"en": "Food Allergy Awareness and Action Month\nFood Allergy Action Month"}, urls: {"en": "https://www.daysoftheyear.com/days/food-allergy-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2018}},

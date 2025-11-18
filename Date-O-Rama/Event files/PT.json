@@ -31,7 +31,7 @@
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 5, d: 20}, inherits: "Navy Day", first: {era: 1, y: 1998}},
-        {type: "D", start: {mon: 4, d: 14}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 4, d: 14}, inherits: "Natl Coffee Day"},
         
         {titles: {"pt": "Dia do Concelho"}, type: "D", start: {mon: 1, d: 15}, locations: {"en": "Santa Cruz"}},
         {titles: {"pt": "Dia do S. Sebastião"}, type: "D", start: {mon: 1, d: 20}, locations: {"en": "Santa Maria da Feira, Aveiro"}},

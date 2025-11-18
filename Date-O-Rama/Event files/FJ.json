@@ -25,12 +25,12 @@
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, titles: {"en": "Children’s Sunday"}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
-        {inherits: "National Youth Day", type: "D", start: {mon: 5, d: 4}},
+        {inherits: "Natl Youth Day", type: "D", start: {mon: 5, d: 4}},
 
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "National Forgiveness Week", first: {era: 1, y: 2004}},
-        {type: "nD", start: {mon: 6, d: 27}, end: {mon: 6, d: 29}, inherits: "National Forgiveness Week", first: {era: 1, y: 2025}},
+        {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2004}},
+        {type: "nD", start: {mon: 6, d: 27}, end: {mon: 6, d: 29}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2025}},
     ],
     templates: [
         {template: "Ratu Sukuna Day", type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en": "Ratu Sukuna Day"}, urls: {"en": "https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},

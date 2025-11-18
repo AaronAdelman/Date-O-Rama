@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/spring-bank-holiday"}, inherits: "Spring Bank Holiday"},
         {type: "D", start: {mon: 6, wkd: [2], nth: 3}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/king-charles-birthday"}},
         {type: "D", start: {mon: 8, wkd: [2], nth: -1}, urls: {"en": "https://www.officeholidays.com/holidays/gibraltar/august-bank-holiday"}, titles: {"en": "Late Summer Bank Holiday"}, inherits: "Bank Holiday"},
-        {inherits: "National Day", type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/gibraltar-independence-day/"}, first: {era: 1, y: 1992}},
+        {inherits: "Natl Day", type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/gibraltar-independence-day/"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]

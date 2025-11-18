@@ -8,7 +8,7 @@
     emoji: "🐶🕶🥳",
     first: {era: 1, y: 2001},
     events: [
-        {type: "D", start: {mon: 1, d: 6}, inherits: "National Take Down the Christmas Tree Day"},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Natl Take Down the Christmas Tree Day"},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "One-Liners Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016-1-21-oneliners-day"}, emoji: "🎞️"},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Prevent Plagiarism Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/02/19/Prevent-Plagiarism-Day"}, first: {era: 1, y: 2015}, emoji: "✍️"},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Snack Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/03/04/National-Snack-Day"}, first: {era: 1, y: 2015}, emoji: "🥨"},
@@ -30,9 +30,9 @@
         {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Silly Sayings Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2015/10/13/Silly-Sayings-Day"}, first: {era: 1, y: 2015}, emoji: "🤪"},
         {type: "D", start: {mon: 10, d: 30}, inherits: "Pumpkin Bread Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 11, wkd: [7], nth: 1}, titles: {"en": "National Wine Tasting Day"}, notes: {"en": "NWTD"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2015/11/07/National-Wine-Tasting-Day"}, first: {era: 1, y: 2015}, emoji: "🍷"},
-        {type: "D", start: {mon: 12, d: 3}, inherits: "National Green Bean Casserole Day", first: {era: 1, y: 2001}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "National Christmas Tree Day", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 12, d: 3}, inherits: "Natl Green Bean Casserole Day", first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Natl Christmas Tree Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 12, d: 19}, inherits: "Holly Day", first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 12, d: 22}, inherits: "National Cookie Exchange Day", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 12, d: 22}, inherits: "Natl Cookie Exchange Day", first: {era: 1, y: 2015}},
     ]
 }

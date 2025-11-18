@@ -25,7 +25,7 @@
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 17}, inherits: "Independence Day", first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/kazakhstan-independence-day/"}},
         {type: "D", start: {mon: 12, d: 18, wkd: [2]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://nationaltoday.com/kazakhstan-independence-day/"}},
         
-        {inherits: "National Guard Day", type: "D", start: {mon: 1, d: 10}},
+        {inherits: "Natl Guard Day", type: "D", start: {mon: 1, d: 10}},
         {titles: {"en": "Day of the State Security Service of Kazakhstan"}, start: {mon: 4, d: 21}, type: "D"},
         {inherits: "Police Day", type: "D", start: {mon: 6, d: 23}},
         {inherits: "Border Guards Day", type: "D", start: {mon: 8, d: 18}, first: {era: 1, y: 1919}},

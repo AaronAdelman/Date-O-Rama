@@ -25,7 +25,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/jura-independence-day/"}, inherits: "Independence Day", first: {era: 1, y: 1979}, locations: {"en": "Jura"}},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/saint-peter-and-saint-paul"}, inherits: "Saints Peter and Paul"},
-        {type: "D", start: {mon: 8, d: 1}, inherits: "National Day", first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},
+        {type: "D", start: {mon: 8, d: 1}, inherits: "Natl Day", first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "Jeûne genevois"}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/geneva/genevan-fast"}},
         {type: "D", start: {mon: 9, d: 9, thruD: 15, wkd: [2]}, titles: {"en": "Knabenschiessen"}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/zurich/knabenschiessen"}},
@@ -56,8 +56,8 @@
         {type: "D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1925}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
-        {type: "D", start: {mon: 9, d: 28}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, d: 28}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 10, d: 11}, inherits: "National Coming Out Day", first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 10, d: 11}, inherits: "Natl Coming Out Day", first: {era: 1, y: 1988}},
     ]
 }

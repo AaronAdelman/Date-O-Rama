@@ -13,7 +13,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {inherits: "National Heroes’ Day", type: "D", start: {mon: 4, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/barbados/barbados-national-heroes-day"}},
+        {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 4, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/barbados/barbados-national-heroes-day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},

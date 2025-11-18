@@ -33,7 +33,7 @@
         {titles: {"en": "Matica Slovenská Day"}, type: "D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/matice-slovenska-day/"}},
         {type: "D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/struggle-for-human-rights-day/"}, titles: {"en": "Struggle For Human Rights Day"}, first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/unfairly-prosecuted-persons-day/"}, titles: {"en": "Unfairly Prosecuted Persons Day"}},
-        {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/foreign-slovaks-day/"}, titles: {"en": "Foreign Slovaks Day"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 10, d: 28}, titles: {"en": "Day of the Establishment of an Independent Czecho-Slovak State", "sk": "Deň vzniku samostatného česko-slovenského štátu"}, first: {era: 1, y: 1918}},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Holocaust Memorial Day", titles: {"en": "Holocaust Victims and Racial Hatred Day"}},

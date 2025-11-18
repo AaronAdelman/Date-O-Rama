@@ -28,7 +28,7 @@
         {inherits: "Victory Day (bridge day)", type: "D", start: {mon: 5, d: 10, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/russia/victory-day"}},
         {titles: {"en": "Russia Day", "he": "יום רוסיה", "ru": "День России"}, type: "D", start: {mon: 6, d: 12}, first: {era: 1, y: 1992}, urls: {"en": "https://www.daysoftheyear.com/days/russia-day/"}},
         {titles: {"en": "Day off for Russia Day"}, type: "D", start: {mon: 6, d: 13, wkd: [2]}, first: {era: 1, y: 1992}},
-        {type: "D", start: {mon: 11, d: 4}, inherits: "National Unity Day", urls: {"en": "https://nationaltoday.com/russias-day-of-unity/"}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 11, d: 4}, inherits: "Natl Unity Day", urls: {"en": "https://nationaltoday.com/russias-day-of-unity/"}, first: {era: 1, y: 2005}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 11, wkd: [1], nth: -1}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
@@ -85,7 +85,7 @@
         {type: "D", start: {mon: 8, d: 14}, inherits: "Honey Feast of the Savior"},
         {type: "D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, titles: {"en": "Saviours of the Apple Feast Day"}, emoji: "🍎"},
         {type: "D", start: {mon: 8, d: 2}, inherits: "Paratroopers’ Day"},
-        {type: "D", start: {mon: 8, d: 22}, inherits: "National Flag Day", urls: {"en": "https://nationaltoday.com/russia-national-flag-day/"}},
+        {type: "D", start: {mon: 8, d: 22}, inherits: "Natl Flag Day", urls: {"en": "https://nationaltoday.com/russia-national-flag-day/"}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "Russian State Flag Day", "ru": "День Государственного флага Российской Федерации"}, inherits: "Flag Day", first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 8, d: 27}, titles: {"en": "Films and Movies Day", "ru": "День российского кино"}},
         {type: "D", start: {mon: 8, d: 29}, inherits: "Nut Feast of the Savior", emoji: "🌰"},

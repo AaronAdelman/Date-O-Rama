@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 2, d: 25}, titles: {"en": "Memorial Day for the Victims of the Communist Dictatorships", "hu": "A kommunista diktatúrák áldozatainak emléknapja"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Memorial Day for the Victims of the Holocaust", "hu": "A holokauszt áldozatainak emléknapja"}, first: {era: 1, y: 2001}, inherits: "Holocaust Memorial Day"},
         {type: "D", start: {mon: 5, d: 21}, titles: {"en": "National Defense Day", "he": "יום ההגנה הלאומי", "hu": "Honvédelmi nap"}},
-        {type: "D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
+        {type: "D", start: {mon: 6, d: 4}, inherits: "Natl Unity Day"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 10, d: 6}, titles: {"en": "Memorial Day for the Martyrs of Arad", "hu": "Az aradi vértanúk emléknapja"}},
         
@@ -41,7 +41,7 @@
         {inherits: "Children’s Day", type: "D", start: {mon: 5, wkd: [1], nth: -1}, first: {era: 1, y: 1950}},
         {inherits: "Heroes’ Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 2001}},
         {inherits: "Independence Day", type: "D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], nth: -1, mon: 6}, first: {era: 1, y: 1991}},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
         {type: "M", start: {mon: 3}, inherits: "LGBTQ History Month", first: {era: 1, y: 2013}},
     ]
 }

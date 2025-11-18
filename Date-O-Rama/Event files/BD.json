@@ -15,7 +15,7 @@
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Bengali New Year (Pôhela Boishakh)", "bn": "পহেলা বৈশাখ"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inherits: "Bank Holiday", first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 8, d: 15}, inherits: "National Day of Mourning", notes: {"en": "National Mourning Day"}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/national-mourning-day"}},
+        {type: "D", start: {mon: 8, d: 15}, inherits: "Natl Day of Mourning", notes: {"en": "National Mourning Day"}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/national-mourning-day"}},
         {inherits: "Victory Day", type: "D", start: {mon: 12, d: 16}, urls: {"en": "https://nationaltoday.com/bangladesh-victory-day/"}, first: {era: 1, y: 1971}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
         {type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inherits: "Bank Holiday", first: {era: 1, y: 2023}},
@@ -28,9 +28,9 @@
         {type: "D", start: {mon: 11, d: 7}, inherits: "Revolution Day", first: {era: 1, y: 1975}},
         {type: "D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
         {type: "D", start: {mon: 11, d: 21}, inherits: "Armed Forces Day"},
-        {type: "D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 12, d: 15}, inherits: "International Tea Day", first: {era: 1, y: 2005}},
-        {type: "D", start: {mon: 9, d: 9}, inherits: "National Grandparents’ Day"},
+        {type: "D", start: {mon: 9, d: 9}, inherits: "Natl Grandparents’ Day"},
         {type: "D", start: {mon: 7, d: 16}, titles: {"en": "Martyr Abu Sayeed Day"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"}},
     ]
 }
