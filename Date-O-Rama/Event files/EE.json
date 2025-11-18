@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 24}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/estonia-independence-day/"}, first: {era: 1, y: 1918}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Spring Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},

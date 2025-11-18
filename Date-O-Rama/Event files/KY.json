@@ -12,7 +12,7 @@
         {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 1, wkd: [2], nth: 4}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/cayman-islands/cayman-islands-discovery-day"}, inherits: "Discovery Day"},

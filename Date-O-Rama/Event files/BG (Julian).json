@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

@@ -12,7 +12,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -48}, inherits: "Carnival Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: -47}, urls: {"en": "https://www.officeholidays.com/holidays/dominica/carnival-tuesday"}, inherits: "Carnival Tuesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},

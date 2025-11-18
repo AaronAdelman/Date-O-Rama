@@ -326,7 +326,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "Easter Tuesday", type: "D", start: {Easter: "Easter", offsetD: 2}},
         {titles: {"en": "Easter Wednesday", "he": "יום רביעי לפסחא"}, type: "D", start: {Easter: "Easter", offsetD: 3}},

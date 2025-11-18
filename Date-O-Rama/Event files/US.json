@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 1, d: 28}, inherits: "Data Protection Day", first: {era: 1, y: 2009}},
         {type: "M", start: {mon: 10}, inherits: "Disability History Month", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 4, d: 22}, inherits: "Earth Day", first: {era: 1, y: 1970}},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 20}, inherits: "Emancipation Day", locations: {"en": "Florida", "he": "פלורידה"}, urls: {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Florida"}, first: {era: 1, y: 1865}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "Emancipation Day", locations: {"en": "Maryland", "he": "מרילנד"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 4, d: 16}, inherits: "Emancipation Day", locations: {"en": "District of Columbia"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/us-emancipation-day"}, first: {era: 1, y: 2005}},

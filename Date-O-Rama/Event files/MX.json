@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 3, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/benito-juarez-birthday-memorial/"}, notes: {"en": "Benito Juarez Birthday Memorial"}, inherits: "*BDay*", titles: {"en": "Benito Juarez’s Birthday", "es": "Natalicio de Benito Juárez"}},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/mexico/labour-day"}, inherits: "Labour Day", first: {era: 1, y: 1923}},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Cinco de Mayo", first: {era: 1, y: 1862}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/mothers-day-mexico/"}, first: {era: 1, y: 1922}},

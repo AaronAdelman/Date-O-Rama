@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Possession Day"}, first: {era: 1, y: 1775}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         
         {type: "D", start: {mon: 4, d: 25}, inherits: "Liberation Day", first: {era: 1, y: 1982}},

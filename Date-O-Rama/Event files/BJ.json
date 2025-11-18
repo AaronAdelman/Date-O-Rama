@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {titles: {"en": "Traditional Day", "fr": "Fête du Vodoun"}, type: "D", start: {mon: 1, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/benin/traditional-day"}},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},

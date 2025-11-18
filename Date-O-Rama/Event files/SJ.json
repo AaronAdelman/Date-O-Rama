@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 17}, inherits: "Constitution Day", urls: {"en": "https://www.officeholidays.com/holidays/norway/norway-constitution-day"}},

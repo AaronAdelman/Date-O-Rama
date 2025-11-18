@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 23}, inherits: "Bounty Day", first: {era: 1, y: 1790}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "King’s Birthday", type: "D", start: {mon: 6, wkd: [7], nth: 2}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},

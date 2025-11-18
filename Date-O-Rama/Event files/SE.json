@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 30}, inherits: "Walpurgis Night", urls: {"en": "https://www.officeholidays.com/holidays/sweden/walpurgis-night"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

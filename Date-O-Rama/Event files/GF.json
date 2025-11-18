@@ -12,7 +12,7 @@
         {inherits: "Shrove Tuesday", type: "D", start: {Easter: "Easter", offsetD: -47}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/carnival-tuesday"}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/v-e-day"}, inherits: "Victory in Europe Day"},

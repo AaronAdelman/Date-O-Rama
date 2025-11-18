@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 3, d: 11}, titles: {"en": "Moshoeshoe Day"}, first: {era: 1, y: 1870}, urls: {"en": "https://nationaltoday.com/moshoeshoes-birthday/"}, inherits: "*BDay*", notes: {"en": "Moshoeshoe I’s Day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lesotho/labour-day"}, inherits: "Intl Workers’ Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},

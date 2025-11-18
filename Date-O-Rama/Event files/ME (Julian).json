@@ -11,7 +11,7 @@
         {inherits: "Orthodox Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

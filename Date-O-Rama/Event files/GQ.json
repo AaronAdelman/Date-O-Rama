@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, inherits: "President’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 60}, inherits: "Corpus Christi"},

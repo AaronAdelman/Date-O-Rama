@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -21}, inherits: "Mothering Sunday", urls: {"en": "https://www.officeholidays.com/holidays/ireland/mothering-sunday"}, notes: {"en": "Mother’s Day"}, inherits: "Mother’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, inherits: "May Day", first: {era: 1, y: 1994}, notes: {"en": "May Bank Holiday"}},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, titles: {"en": "June Bank Holiday", "ga": "Lá Saoire i mí an Mheithimh"}, urls: {"en": "https://nationaltoday.com/june-bank-holiday/"}, inherits: "Bank Holiday", notes: {"en": "June Holiday"}, first: {era: 1, y: 1973}},

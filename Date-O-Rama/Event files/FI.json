@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "May Day", urls: {"en": "https://www.officeholidays.com/holidays/finland/vappu"}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/finland/mothers-day"}},

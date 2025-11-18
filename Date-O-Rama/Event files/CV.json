@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 13}, inherits: "Democracy Day", first: {era: 1, y: 1991}, emoji: "🗳"},
         {inherits: "Heroes’ Day", type: "D", start: {mon: 1, d: 20}, notes: {"en": "Heroes’ Day", "pt": "Dia da Nacionalidade e dos Heróis Nacionais"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Youth Day", type: "D", start: {mon: 6, d: 1}, titles: {"en": "Youth Day", "pt": "Dia Mundial da Criança"}},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 5}, first: {era: 1, y: 1975}},

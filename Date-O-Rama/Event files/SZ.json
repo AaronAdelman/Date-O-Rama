@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 19}, inherits: "King’s Birthday", first: {era: 1, y: 1968}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Natl Flag Day", urls: {"en": "https://www.officeholidays.com/holidays/swaziland/swaziland-flag-day"}},

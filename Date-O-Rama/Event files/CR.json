@@ -13,7 +13,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -4}, inherits: "Holy Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "Anniversary of the Battle of Rivas"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-battle-of-rivas/"}, notes: {"en": "Juan Santamaria Day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 25}, titles: {"en": "Annexation of the Party of Nicoya Day", "es": "La Anexión del Partido de Nicoya"}, notes: {"en": "Annexation of Guanacaste Day\nAnnexation of Nicoya Day\nGuanacaste Day"}, urls: {"en": "https://nationaltoday.com/annexation-of-guanacaste/"}, first: {era: 1, y: 1824}},

@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 4, d: 4}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/senegal-independence-day/"}, first: {era: 1, y: 1960}},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},

@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 2, d: 3, wkd: [2, 3]}, inherits: "Natl Heroes’ Day (in lieu)", urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {mon: 4, d: 7}, titles: {"en": "Genocide against the Tutsi Memorial Day"}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/genocide-against-the-tutsi-memorial-day"}},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Worker’s Day", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/labour-day"}},
         {type: "D", start: {mon: 5, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/labour-day"}, titles: {"en": "Worker’s Day (in lieu)"}},

@@ -8,7 +8,7 @@
     first: {era: 1, y: 1961},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/wallis-and-futuna/saint-pierre-chanel-day"}, titles: {"en": "Saint Pierre-Chanel Day"}, notes: {"en": "Feast of St. Peter Chanel"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

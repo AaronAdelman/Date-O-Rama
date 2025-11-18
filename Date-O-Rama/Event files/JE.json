@@ -11,7 +11,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -21}, inherits: "Mothering Sunday", notes: {"en": "Mother’s Day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, inherits: "Early May Bank Holiday", first: {era: 1, y: 1995}, urls: {"en": "https://www.officeholidays.com/holidays/jersey/early-may-bank-holiday"}},
         {type: "D", start: {era: 1, y: 2023, mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/jersey/king-charles-iiis-coronation"}, inherits: "King Charles III’s Coronation"},
         {inherits: "Liberation Day", type: "D", start: {mon: 5, d: 9}, first: {era: 1, y: 1945}, urls: {"en": "https://www.officeholidays.com/holidays/jersey/channel-islands-liberation-day"}},

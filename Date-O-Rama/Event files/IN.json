@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 4, d: 5}, urls: {"en": "https://www.officeholidays.com/holidays/india/babu-jagjivan-ram-birthday"}, titles: {"en": "Babu Jagjivan Ram’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 4, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/mahatma-jyotiba-phule-jayanti"}, titles: {"en": "Mahatma Jyotiba Phule Jayanti"}, inherits: "*BDay*", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, titles: {"en": "Biju Festival"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tripura/biju-festival"}, notes: {"en": "Bishu\nBizu"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Dr. Babasaheb Ambedkar Jayanti"}, notes: {"en": "Bhim Jayanti\nDr. Ambedkar Jayanti"}, urls: {"en": "https://en.wikipedia.org/wiki/Ambedkar_Jayanti"}},

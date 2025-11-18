@@ -18,7 +18,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -4}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/venezuela-holy-week-holiday"}, inherits: "Holy Week Holiday"},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 4, d: 19}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/independence-declaration-day"}, titles: {"en": "Independence Declaration Day", "es": "Diecinueve de abril"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/venezuela/mothers-day"}, inherits: "Mother’s Day"},

@@ -13,7 +13,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Carnival Tuesday", urls: {"en": "https://www.officeholidays.com/holidays/haiti/carnival-tuesday"}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/labour-and-agriculture-day/"}, titles: {"en": "Labour and Agriculture Day", "fr": "Fête du Travail"}, first: {era: 1, y: 1890}, inherits: "Labour Day", notes: {"fr": "Fête des Travailleurs"}},
         {type: "D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/haitian-flag-day/"}, inherits: "Flag Day"},
         {type: "D", start: {mon: 5, d: 18}, titles: {"en": "Flag and Universities’ Day", "fr": "Jour du Drapeau et de l’Université"}, notes: {"en": "Universities Day", "fr": "Jour de l’Université"}, emoji: "🏫"},

@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 3, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/saint-vincent-and-the-grenadines-national-heroes-day"}, inherits: "Natl Heroes’ Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, titles: {"en": "National Worker's Day"}},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},

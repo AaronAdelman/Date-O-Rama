@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, inherits: "Otago Anniversary Day (in lieu)", first: {era: 1, y: 1981}},
         {type: "D", start: {mon: 3, d: 24, thruD: 26, wkd: [2]}, inherits: "Otago Anniversary Day (in lieu)", first: {era: 1, y: 1981}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: 2}, titles: {"en": "Southland Anniversary Day"}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},

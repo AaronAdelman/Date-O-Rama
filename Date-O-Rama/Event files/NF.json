@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 26}, inherits: "Australia Day", first: {era: 1, y: 1808}},
         {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Norfolk Island Foundation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Norfolk_Island_Foundation_Day"}, first: {era: 1, y: 1788}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {inherits: "Bounty Day", type: "D", start: {mon: 6, d: 8}, first: {era: 1, y: 1856}},

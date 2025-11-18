@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 26, wkd: [7]}, titles: {"af":"Koningsdag","ar":"يوم الملك","bg":"Ден на краля","ca":"Koningsdag","da":"Koningsdag","de":"Koningsdag","en":"Koningsdag","eo":"Reĝotago en Nederlando","es":"Día del Rey","fa":"روز پادشاه","fr":"Fête du Roi","fy":"Keningsdei","he":"יום המלך","hu":"Koningsdag","hy":"Թագավորի օր","id":"Koningsdag","io":"Koningsdag","it":"Koningsdag","ja":"国王誕生日","ko":"국왕탄생일","li":"Keuningsdaag","ms":"Koningsdag","nb":"Koningsdag","nl":"Koningsdag","pap":"Dia di Rey","pl":"Dzień Króla","pt":"Dia do Rei (Países Baixos)","ru":"День короля","sr":"Kraljev dan","sv":"Koningsdag","th":"โกนิงส์ดัค","tr":"Koningsdag","uk":"День короля","vls":"Keunienksdag","zh":"國王日"}, urls: {"en": "https://nationaltoday.com/koningsdag/"}, inherits: "King’s Day", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 4, d: 27, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/koningsdag/"}, inherits: "King’s Day", first: {era: 1, y: 2014}},

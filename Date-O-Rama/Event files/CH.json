@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 3, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/neuchatel/switzerland-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, wkd: [5], nth: 1}, urls: {"en": "https://nationaltoday.com/nafelser-fahrt/"}, titles: {"en": "Näfelser Fahrt"}, notes: {"en": "Näfels Ride"}},
         {type: "D", start: {mon: 4, wkd: [2], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/switzerland/zurich/sechselauten"}, titles: {"en": "Sechseläuten"}},

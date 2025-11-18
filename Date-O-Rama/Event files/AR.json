@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "Day of the Veterans and Fallen of the Falklands War", "es": "Día del Veterano y de los Caídos en la Guerra de Malvinas"}, urls: {"en": "https://nationaltoday.com/day-of-the-veterans/"}, first: {era: 1, y: 2001}, notes: {"en": "Day of the Veterans\nMalvinas Day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
+        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 25}, titles: {"en": "May Revolution Day", "es": "Día de la Revolución de Mayo"}, urls: {"en": "https://nationaltoday.com/may-revolution-day/"}, notes: {"en": "May Day Revolution"}},
         {type: "D", start: {mon: 5, d: 26, wkd: [6]}, titles: {"en": "May Day Revolution (bridge day)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/may-day-revolution"}},
