@@ -24,9 +24,7 @@ struct ASALinkedEventCell:  View {
     var now:  Date
     var location: ASALocation
     var usesDeviceLocation: Bool
-    
-    let CLOSE_BUTTON_TITLE = "Done"
-    
+        
     let FRAME_MIN_WIDTH: CGFloat  = 400.0
     let FRAME_MIN_HEIGHT: CGFloat = 700.0
     
