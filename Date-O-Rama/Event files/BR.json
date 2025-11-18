@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day", urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "Republic Proclamation Day", "pt": "Proclamação da República"}, urls: {"en": "https://www.daysoftheyear.com/days/republic-day-in-brazil/"}, first: {era: 1, y: 1889}, notes: {"en": "Republic Day"}},
         {type: "D", start: {mon: 11, d: 20}, titles: {"ar":"يوم التوعية بالسود","ca":"Dia de la Consciència Negra","en":"National Day of Zumbi and Black Consciousness","es":"Día de la Conciencia Negra","fr":"Jour de la conscience noire","it":"Giornata della Coscienza Nera","ms":"Hari Kesedaran Kulit Hitam","pt":"Dia Nacional de Zumbi e da Consciência Negra","zh":"黑人意識日"}, urls: {"en": "https://www.daysoftheyear.com/days/black-consciousness-day/"}, first: {era: 1, y: 1960}, notes: {"en": "Black Consciousness Day\nBlack Awareness Day\nZumbi Day", "pt": "Dia da Consciência Negra"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", start: {mon: 6, d: 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados", "he": "יום האוהבים ברזיל"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {era: 1, y: 1948}, inherits: "Valentine’s Day"},
         {type: "D", start: {mon: 6, d: 13}, inherits: "St. Anthony of Padua"},

@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Independence Day", urls: {"en": "https://www.daysoftheyear.com/days/polands-independence-day/"}, first: {era: 1, y: 1989}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
         {type: "D", titles: {"en": "Public Employment Services Worker’s Day", "pl": "Dzień Pracownika Publicznych Służb Zatrudnienia"}, start: {mon: 1, d: 27}, first: {era: 1, y: 2020}},
@@ -115,7 +115,7 @@
         {type: "D", start: {mon: 11, d: 30}, inherits: "St. Andrew’s Day"},
         {type: "D", start: {mon: 12, d: 4}, titles: {"en": "Miners’ Day", "he": "יום הכורים", "pl": "Barbórka"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Kashubian Unity Day"}, first: {era: 1, y: 2005}, urls: {"en": "https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},

@@ -6,7 +6,7 @@
     calendarColor: {red: 0.89, green: 0.00, blue: 0.17},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},

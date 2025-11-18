@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", urls: {"en": "https://www.daysoftheyear.com/days/armistice-day-in-france/"}, first: {era: 1, y: 1922}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
 
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2019}},

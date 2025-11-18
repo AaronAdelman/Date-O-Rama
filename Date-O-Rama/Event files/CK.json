@@ -19,7 +19,7 @@
         {inherits: "Constitution Day (in lieu)", type: "D", start: {mon: 8, d: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/cook-islands-constitution-day/"}},
         {type: "D", start: {mon: 10, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/cook-islands-gospel-day"}, inherits: "Gospel Day"},
         {type: "D", start: {mon: 10, d: 27, thruD: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/cook-islands-gospel-day"}, titles: {"en": "Gospel Day (in lieu)"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Children’s Day"},

@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 11}, first: {era: 1, y: 1958}, inherits: "Proclamation of Independence Day", urls: {"en": "https://nationaltoday.com/burkina-faso-republic-day/"}, notes: {"en": "Burkina Faso Republic Day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 10, d: 31}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 7, d: 4}, inherits: "Liberation Day", urls: {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 8, wkd: [6], nth: 1}, titles: {"en": "Umuganura Day"}, urls: {"en": "https://nationaltoday.com/umuganura-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {wkd: [7], nth: -1}, titles: {"en": "Umuganda", "zh": "乌姆甘达", "id": "Umuganda", "rw": "Umuganda", "nl": "Umuganda"}, urls: {"en": "https://en.wikipedia.org/wiki/Umuganda"}, first: {era: 1, y: 2009}},

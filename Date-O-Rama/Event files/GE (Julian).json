@@ -7,8 +7,8 @@
     first: {era: 1, y: 1918},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Georgia"},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
-        {type: "nD", start: {era: 1, y: 2024, mon: 12, d: 26}, end: {era: 1, y: 2024, mon: 12, d: 28}, inherits: "Christmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/georgia/orthodox-christmas"}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
+        {type: "nD", start: {era: 1, y: 2024, mon: 12, d: 26}, end: {era: 1, y: 2024, mon: 12, d: 28}, inherits: "Xmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/georgia/orthodox-christmas"}},
 
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Alilo Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/alilo-parade/"}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

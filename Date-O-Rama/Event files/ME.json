@@ -19,8 +19,8 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "nD", start: {mon: 11, d: 13}, end: {mon: 11, d: 14}, titles: {"en": "Njegos’s Day", "cnr": "Njegošev dan"}},
 
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {inherits: "Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},

@@ -23,7 +23,7 @@
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 7, d: 7, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/malawi-independence-day/"}, first: {era: 1, y: 1964}},
         {inherits: "Mother’s Day", type: "D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
         {inherits: "Mother’s Day (in lieu)", type: "D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {titles: {"en": "Boxing Day (in lieu)"}, type: "D", start: {mon: 12, d: 27, thruD: 28, wkd: [3]}},
 

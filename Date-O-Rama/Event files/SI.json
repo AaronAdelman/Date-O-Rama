@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/slovenia/reformation-day"}, inherits: "Reformation Day", first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 11, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/slovenia/all-saints-day"}, titles: {"en": "Day of Remembrance of the Dead", "sl": "dan spomina na mrtve"}, notes: {"en": "Day of the Dead", "sl": "dan mrtvih"}, first: {era: 1, y: 1991}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {inherits: "Independence Day", type: "D", start: {mon: 12, d: 26}, first: {era: 1, y: 1991}, titles: {"en": "Independence and Unity Day", "sl": "dan samostojnosti in enotnosti"}, urls: {"en": "https://nationaltoday.com/slovenia-independence-and-unity-day/"}, emoji: "🎇𝌻"},
 
         {inherits: "Mother’s Day", type: "D", start: {mon: 3, d: 25}},

@@ -15,6 +15,6 @@
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 10, d: 2}, inherits: "Independence Day", first: {era: 1, y: 1958}, urls: {"en": "https://nationaltoday.com/guinea-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
     ]
 }

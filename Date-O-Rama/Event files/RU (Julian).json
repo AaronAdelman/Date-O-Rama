@@ -8,7 +8,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day", urls: {"en": "https://nationaltoday.com/novy-god-russian-new-year/"}},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 12, d: 26, wkd: [2]}, titles: {"en": "Christmas Day (in lieu)"}},
         
         {type: "D", start: {mon: 3, d: 25}, inherits: "the Annunciation"},

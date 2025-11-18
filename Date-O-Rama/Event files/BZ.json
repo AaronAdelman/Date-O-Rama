@@ -33,7 +33,7 @@
         {type: "D", start: {mon: 10, d: 13, thruD: 15, wkd: [2]}, inherits: "Day of the Races (in lieu)", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 11, d: 19}, inherits: "Garifuna Settlement Day", first: {era: 1, y: 1943}},
         {type: "D", start: {mon: 11, d: 20, wkd: [2]}, inherits: "Garifuna Settlement Day", first: {era: 1, y: 1943}, titles: {"en": "Garifuna Settlement Day (in lieu)"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {type: "D", start: {mon: 12, d: 27, wkd: [2]}, inherits: "Boxing Day", titles: {"en": "Boxing Day Holiday"}},
 

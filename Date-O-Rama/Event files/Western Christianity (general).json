@@ -251,8 +251,8 @@
         {titles: {"en": "Feast of St. Peter Canisius", "he": "החג של פטרוס קניזיוס הקדוש"}, type: "D", start: {mon: 12, d: 21}},
         {titles: {"en": "Feast of St. John of Kanty"}, type: "D", start: {mon: 12, d: 23}},
 
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         {type: "D", start: {mon: 12, d: 27}, inherits: "St. John the Apostle"},
         {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},

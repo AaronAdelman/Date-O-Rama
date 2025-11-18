@@ -20,8 +20,8 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {inherits: "Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 6, d: 29}, inherits: "Border Guards Day", titles: {"en": "Day of the State Border Guard of Lithuania"}},

@@ -40,7 +40,7 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany", urls: {"en": "https://nationaltoday.com/day-of-los-reyes/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
     ],
     templates: [
         {template: "Battle of Las Piedras", type: "D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/battle-of-las-piedras/"}, titles: {"en": "Battle of Las Piedras", "es": "Batalla de las Piedras"}},

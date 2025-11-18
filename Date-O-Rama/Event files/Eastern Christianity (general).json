@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
         {inherits: "Presentation of the Blessed Virgin Mary", type: "D", start: {mon: 11, d: 21}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-christmas-day/"}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas", urls: {"en": "https://www.daysoftheyear.com/days/orthodox-christmas-day/"}},
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 27}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},

@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 7, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/ukraine/day-of-ukrainian-statehood"}, titles: {"en": "Day of Ukrainian Statehood", "uk": "День Української Державності"}, inherits: "Baptism Day of Kyivan Rus", first: {era: 1, y: 2023}},
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 24}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/ukraine-independence-day/"}},
         {type: "D", start: {mon: 10, d: 1}, titles: {"en": "Ukraine Defender Day", "uk": "День захисників і захисниць України"}, notes: {"en": "Defenders Day\nDefenders of Ukraine Day\nDay of the Defender"}, urls: {"en": "https://www.daysoftheyear.com/days/ukraine-defender-day/"}, first: {era: 1, y: 2015}, notes: {"en": "Created by Petro Poroshenko"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {titles: {"en": "Flag of Ukraine"}, type: "D", start: {"mon": 3, d: 26}},
         {titles: {"en": "National Guard Day"}, type: "D", start: {"mon": 3, d: 26}},
@@ -103,7 +103,7 @@
         {type: "D", start: {mon: 11, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/ukraine/dignity-and-freedom-day"}, titles: {"en": "Dignity and Freedom Day"}},
         {inherits: "Immaculate Conception", type: "D", start: {"mon": 12, d: 8}},
         {titles: {"en": "Feast of the Conception of the Virgin Mary"}, type: "D", start: {"mon": 12, d: 9}},
-        {inherits: "Christmas Eve", type: "D", start: {"mon": 12, d: 24}},
+        {inherits: "Xmas Eve", type: "D", start: {"mon": 12, d: 24}},
         {titles: {"en": "Day of the State Emergency Service of Ukraine"}, type: "D", start: {"mon": 12, d: 24}},
         {inherits: "Boxing Day", type: "D", start: {"mon": 12, d: 26}},
         {inherits: "Synaxis of the Mother of God", type: "D", start: {"mon": 12, d: 26}},

@@ -28,7 +28,7 @@
         {type: "D", start: {mon: 12, d: 2, thruD: 3, wkd: [2]}, inherits: "Tupou I Day (in lieu)", first: {era: 1, y: 1797}},
         {type: "D", start: {mon: 12, d: 4}, inherits: "Tupou I Day", first: {era: 1, y: 1797}},
         {type: "D", start: {mon: 12, d: 5, thruD: 8, wkd: [2]}, inherits: "Tupou I Day (in lieu)", first: {era: 1, y: 1797}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {inherits: "Father’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 3}},

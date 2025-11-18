@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 10, d: 5}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/vanuatu-constitution-day/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 10, d: 6, wkd: [2]}, inherits: "Constitution Day (in lieu)", urls: {"en": "https://nationaltoday.com/vanuatu-constitution-day/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 11, d: 29}, inherits: "Unity Day", urls: {"en": "https://www.officeholidays.com/holidays/vanuatu/vanuatu-unity-day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Family Day", urls: {"en": "https://www.officeholidays.com/holidays/vanuatu/boxing-day"}},
 
         {type: "D", start: {mon: 3, d: 20}, inherits: "Intl Francophonie Day", first: {era: 1, y: 1988}},

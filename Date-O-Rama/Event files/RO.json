@@ -25,7 +25,7 @@
         {type: "D", start: {mon: 8, d: 16, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/assumption-day"}, inherits: "Public Sector Holiday"},
         {type: "D", start: {mon: 11, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/romania/st-andrews-day"}, inherits: "St. Andrew’s Day"},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Day of Romania\nGreat Union Day", "ro": "Ziua Națională a României\nZiua Marii Uniri"}, inherits: "Natl Day", urls: {"en": "https://www.daysoftheyear.com/days/romania-national-day/"}, first: {era: 1, y: 1990}},
-        {inherits: "Christmas Day", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
+        {inherits: "Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 12, d: 27, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/christmas-holiday"}, inherits: "Public Sector Holiday"},
 
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},

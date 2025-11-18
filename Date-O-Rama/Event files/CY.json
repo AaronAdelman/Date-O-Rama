@@ -23,8 +23,8 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God"},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/cyprus-independence-day/"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 10, d: 28}, inherits: "Ochi Day", first: {era: 1, y: 1942}},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day", urls: {"en": "https://nationaltoday.com/orthodox-christmas-day/"}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas", urls: {"en": "https://nationaltoday.com/orthodox-christmas-day/"}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

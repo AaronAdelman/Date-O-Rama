@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/fathers-day"}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Saints Day", urls: {"en": "https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
         {type: "D", start: {mon: 11, d: 3, thruD: 5, wkd: [1]}, titles: {"en": "All Saints Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
         {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Saint Nicholas’s Eve", "nl": "Sinterklaasavond"}, emoji: "🎅", notes: {"en": "Pakjesavond"}},
@@ -31,7 +31,7 @@
         {inherits: "Carnival (day 3)", type: "D", start: {Easter: "Easter", offsetD: -47}},
         
         {titles: {"en": "Queen’s Day", "he": "יום המלכה", "nl": "Koninginnedag"}, type: "D", start: {mon: 4, d: 30}, emoji: "👸", urls: {"en": "https://nationaltoday.com/queens-day/"}},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 3, wkd: [4], nth: 3}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 9, d: 25}, locations: {"en": "Oosterhout"}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day"},

@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {inherits: "Revolution Day", type: "D", start: {mon: 7, d: 22}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

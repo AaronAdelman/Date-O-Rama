@@ -20,14 +20,14 @@
         {type: "D", start: {mon: 7, d: 16, thruD: 22, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/botswana/botswana-presidents-day"}, titles: {"en": "President’s Day Holiday"}, inherits: "President’s Day"},
         {type: "nD", start: {mon: 9, d: 30}, end: {mon: 10, d: 1}, inherits: "Independence Day", first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/botswana-day/"}, titles: {"en": "Botswana Day", "he": "יום בוצוואנה"}},
         {type: "D", start: {mon: 10, d: 2, wkd: [2]}, titles: {"en": "Botswana Day (in lieu)"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         

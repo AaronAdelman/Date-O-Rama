@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 5, d: 24}, inherits: "Independence Day", first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/independence-day-in-eritrea/"}},
         {type: "D", start: {mon: 6, d: 20}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyrs-day-in-eritrea/"}},
         {type: "D", start: {mon: 9, d: 1}, inherits: "Revolution Day", first: {era: 1, y: 1961}, urls: {"en": "https://www.officeholidays.com/holidays/eritrea/eritrea-revolution-day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {titles: {"en": "Fenkil Day", "ti": "ፈንቅል"}, type: "D", start: {mon: 2, d: 10}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},

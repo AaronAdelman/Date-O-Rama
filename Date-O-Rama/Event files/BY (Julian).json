@@ -7,7 +7,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Belarus"},
     first: {era: 1, y: 1991},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {titles: {"en": "Radonitsa", "be": "Радунiца"}, type: "D", start: {Easter: "Easter", offsetD: 9}, urls: {"en": "https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en": "Day of Rejoicing\nCommemoration Day"}},
     ]

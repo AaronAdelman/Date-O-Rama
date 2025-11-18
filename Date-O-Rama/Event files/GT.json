@@ -20,8 +20,8 @@
         {type: "D", start: {mon: 10, d: 12}, inherits: "Day of the Races", first: {era: 1, y: 1917}},
         {inherits: "Revolution Day", type: "D", start: {mon: 10, d: 20}, first: {era: 1, y: 1944}, urls: {"en": "https://nationaltoday.com/revolution-day-guatemala/"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},

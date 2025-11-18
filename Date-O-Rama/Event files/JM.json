@@ -18,7 +18,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 6}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/jamaica-independence-day/"}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 8, d: 7, wkd: [2]}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/jamaica-independence-day/"}},
         {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 10, wkd: [2], nth: 3}, first: {era: 1, y: 1969}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-jamaica/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

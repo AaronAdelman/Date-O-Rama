@@ -16,9 +16,9 @@
         {inherits: "Liberation Day", type: "D", start: {mon: 8, d: 15}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-national-foundation-day"}, inherits: "Natl Foundation Day"},
         {type: "D", start: {mon: 10, d: 9}, titles: {"ar":"يوم الهانغل","az":"Hanqıl günü","be":"Дзень хангыля","br":"Deiz an Hangeul","ca":"Diada de l’alfabet coreà","cs":"Den hangulu","de":"Hangeul-Tag","en":"Hangul Day","eo":"Tago de Hangul","es":"Día del alfabeto coreano","fa":"روز هانگول","fr":"Jour du hangeul","he":"יום הנגול","hr":"Dan hangeula","hu":"Hangulnap","id":"Hari Hangeul","it":"Giorno dell’hangul","ja":"ハングルの日","jv":"Dina Hangul","ki":"Mũthenya wa Hangul","ko":"한글날","ms":"Hari Hangul","nan":"Ko-lê-jī Ji̍t","nb":"Hanguldagen","os":"Хангылы бон","pt":"Dia de Hangul","ru":"День хангыля","sv":"Hanguldagen","tl":"Araw ng Alpabetong Koreano","uk":"День хангилю","vi":"Ngày Hangul","wuu":"谚文日","zh":"韓文日"}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/south-korea-hangeul-day/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Parents’ Day", first: {era: 1, y: 1973}},
         {inherits: "Black Day", type: "D", start: {mon: 4, d: 14}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Pepero Day"}, first: {era: 1, y: 1994}, urls: {"en": "https://en.wikipedia.org/wiki/Pepero_Day"}},

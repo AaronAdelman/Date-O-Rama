@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1912}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-independence-day/"}},
         {type: "D", start: {mon: 11, d: 29}, inherits: "Liberation Day", first: {era: 1, y: 1944}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-liberation-day/"}},
         {type: "D", start: {mon: 8, d: 12}, inherits: "Natl Youth Day", first: {era: 1, y: 2010}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 3, d: 2}, titles: {"en": "League of Lezhë Day", "sq": "Dita e Besëlidhjes së Lezhës"}},
@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "Alphabet Day", "sq": "Dita e Alfabetit"}},
         {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", notes: {"en": "Constitution Day"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},

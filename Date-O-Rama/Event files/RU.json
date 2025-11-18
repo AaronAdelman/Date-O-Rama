@@ -53,7 +53,7 @@
         {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Strategic Missile Troops Day", "ru": "День Ракетных войск стратегического назначения"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 12, d: 22}, inherits: "Power Engineer’s Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Heroes of the Fatherland", "ru": "День Героев Отечества"}, first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {type: "D", start: {mon: 2, d: 15}, titles: {"en": "International Duties Memorial Day", "ru": "День памяти воинов-интернационалистов"}},

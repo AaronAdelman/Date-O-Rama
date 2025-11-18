@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/belarus-independence-day/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 11, d: 7}, inherits: "October Revolution Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Defender of the Fatherland and Armed Forces Day", "be": "Дзень абаронцы Айчыны і Дзень Узброеных Сіл"}, notes: {"en": "Fatherland Defenders Day"}, urls: {"en": "https://www.daysoftheyear.com/days/fatherland-defenders-day/"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "Day of the Police of Belarus", "be": "Дзень паліцыі Беларусі", "ru": "День белорусской милиции"}, urls: {"en": "https://en.wikipedia.org/wiki/Day_of_the_Police_of_Belarus"}, inherits: "Police Day", first: {era: 1, y: 1999}},

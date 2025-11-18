@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 7, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/sint-maarten/dutch-emancipation-day"}, inherits: "Emancipation Day"},
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/sint-maarten/sint-maarten-constitution-day"}, inherits: "Constitution Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/sint-maarten/sint-maartens-day"}, titles: {"en": "Sint Maarten’s Day", "he": "יום סנט מארטן"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
         
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

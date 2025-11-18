@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 11, d: 3}, titles: {"en": "Independence of Cuenca", "es": "Independencia de Cuenca"}, urls: {"en": "https://nationaltoday.com/independence-of-cuenca-holiday/"}, first: {era: 1, y: 1820}},
         {type: "D", start: {mon: 11, d: 4, wkd: [2]}, titles: {"en": "Independence of Cuenca (in lieu)"}, urls: {"en": "https://nationaltoday.com/independence-of-cuenca-holiday/"}, first: {era: 1, y: 1820}},
         {type: "D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/foundation-of-quito-day/"}, titles: {"en": "Foundation of Quito Day", "es": "Primer Grito de Independencia"}, first: {era: 1, y: 1534}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "Galapagos Day", "es": "Día de la Provincia de Galápagos"}, notes: {"en": "Amazon and Galapagos Day\nOrient Day", "es": "Día del Oriente)"}, emoji: "🐢"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -7,8 +7,8 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
     first: {era: 1, y: 1992},
     events: [
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},

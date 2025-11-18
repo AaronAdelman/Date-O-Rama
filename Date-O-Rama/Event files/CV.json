@@ -17,7 +17,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 5}, first: {era: 1, y: 1975}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {inherits: "Mother’s Day", type: "D", start: {mon: 5, wkd: [1], nth: 1}},
     ]

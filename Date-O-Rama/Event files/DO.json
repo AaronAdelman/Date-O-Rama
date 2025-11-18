@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 9, d: 24}, inherits: "Our Lady of Mercy", urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}},
         {type: "D", start: {mon: 11, d: 5, thruD: 7, wkd: [6]}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 11, d: 4, thruD: 7, wkd: [2]}, inherits: "Constitution Day", urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, first: {era: 1, y: 2011}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {mon: 2, d: 25}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},

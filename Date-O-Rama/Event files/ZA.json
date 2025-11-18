@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 9, d: 24}, inherits: "Heritage Day", first: {era: 1, y: 1996}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-day/"}},
         {type: "D", start: {mon: 9, d: 25, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/south-africa/heritage-day"}, titles: {"en": "Heritage Day (in lieu)"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 12, d: 16}, titles: {"en": "Day of Reconciliation"}, first: {era: 1, y: 1995}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, emoji: "🫶"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day", first: {era: 1, y: 1910}},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/day-of-goodwill/"}, titles: {"en": "Day of Goodwill"}, first: {era: 1, y: 1994}, first: {era: 1, y: 1910}},
         
         {inherits: "Public Holiday", type: "D", start: {mon: 6, d: 2, y: 1999, era: 1}},
@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 7, d: 18}, inherits: "Mandela Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Engineer’s Day"},
         {inherits: "Natl Children’s Day", type: "D", start: {mon: 11, wkd: [7], nth: 1}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 12, d: 1}},

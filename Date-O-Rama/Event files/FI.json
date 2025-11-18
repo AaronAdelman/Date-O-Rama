@@ -21,8 +21,8 @@
         {inherits: "All Saints Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
         {inherits: "Father’s Day", type: "D", start: {mon: 11, wkd: [1], nth: 2}, urls: {"en": "https://www.officeholidays.com/holidays/finland/fathers-day"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "Independence Day", first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Kalevala Day", "fi": "Kalevalan päivä"}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, notes: {"en": "Finnish Culture Day"}},

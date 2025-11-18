@@ -18,7 +18,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 7}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/cote-divoire-independence-day/"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {titles: {"en": "National Peace Day"}, type: "D", start: {mon: 11, d: 15}, first: {era: 1, y: 1996}, emoji: "☮️"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

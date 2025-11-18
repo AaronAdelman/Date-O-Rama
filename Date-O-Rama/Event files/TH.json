@@ -117,7 +117,7 @@
         {type: "D", start: {mon: 7, d: 1}, titles: {"en": "National Scout Organization Day", "th": "วันสถาปนาลูกเสือแห่งชาติ", "he": "יום הארגון הלאומי לצופים"}},
         {type: "D", start: {mon: 9, d: 4}, titles: {"en": "Royal Thai Navy Submarine Memorial Day", "th": "วันเรือดำน้ำไทย"}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en": "Silpa Bhirasri Day", "th": "วันศิลป์ พีระศรี"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "nD", start: {mon: 11, d: 14, thruD: 20, wkd: [7], durationD: 2}, titles: {"en":"Surin Elephant Round-up","ml":"സുരിൻ എലിഫന്റ് റൗണ്ട്-അപ്പ്"}, notes: {"en": "Elephant Round-Up in Surin\nSurin Elephant Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, emoji: "🐘"},
         {type: "nD", start: {mon: 11, d: 23, thruD: 29, wkd: [6], durationD: 2}, titles: {"en": "Pattaya International Fireworks Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/pattaya-international-fireworks-festival/"}, emoji: "🎆", first: {era: 1, y: 2022}},

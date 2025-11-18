@@ -13,7 +13,7 @@
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter Sunday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {inherits: "King’s Birthday", type: "D", start: {mon: 6, wkd: [7], nth: 2}, first: {era: 1, y: 2022}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]
 }

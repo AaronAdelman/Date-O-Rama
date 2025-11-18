@@ -18,7 +18,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/bahamas-independence-day/"}},
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/emancipation-day"}},
         {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -29,7 +29,7 @@
         {type: "D", start: {mon: 8, wkd: [2], nth: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en": "Late Summer Bank Holiday\nAugust Bank Holiday"}},
         {type: "D", inherits: "Remembrance Sunday", start: {mon: 11, wkd: [1], d: 8, thruD: 14}, first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 11, d: 30}, inherits: "St. Andrew’s Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {type: "D", start: {mon: 12, d: 27, thruD: 28, wkd: [2]}, inherits: "Bank Holiday"},
 
@@ -210,7 +210,7 @@
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Dundee Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dundee-day/"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿", first: {era: 1, y: 1889}},
         {type: "D", start: {mon: 1, d: 29}, titles: {"en": "RNLI SOS Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rnli-sos-day/"}, first: {era: 1, y: 1891}},
         {type: "D", start: {mon: 11, wkd: [4], nth: 1}, inherits: "Natl Stress Awareness Day", urls: {"en": "https://www.daysoftheyear.com/days/stress-awareness-day/"}, first: {era: 1, y: 1998}, inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 12, d: 6, thruD: 12, wkd: [5]}, inherits: "Christmas Jumper Day", first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 12, d: 6, thruD: 12, wkd: [5]}, inherits: "Xmas Jumper Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 2, d: 10, thruD: 16, wkd: [7]}, titles: {"en": "Support an Independent Pub Day"}, urls: {"en": "https://www.daysoftheyear.com/days/support-an-independent-pub-day/"}, first: {era: 1, y: 2024}, emoji: "🍺"},
         {type: "D", start: {mon: 2, wkd: [3], nth: -1}, inherits: "Natl Toast Day", first: {era: 1, y: 2014}, last: {era: 1, y: 2016}},
         {type: "D", start: {mon: 2, wkd: [5], nth: -1}, inherits: "Natl Toast Day", first: {era: 1, y: 2017}},

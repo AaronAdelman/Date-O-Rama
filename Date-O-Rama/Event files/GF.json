@@ -23,6 +23,6 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/french-guiana-armistice-day/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"}
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"}
     ]
 }

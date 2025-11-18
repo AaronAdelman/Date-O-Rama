@@ -25,7 +25,7 @@
         {inherits: "Mother’s Day", type: "D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/panama-mothers-day/"}, first: {era: 1, y: 1930}},
         {inherits: "Mother’s Day (in lieu)", type: "D", start: {mon: 12, d: 9, wkd: [2]}, urls: {"en": "https://nationaltoday.com/panama-mothers-day/"}, first: {era: 1, y: 1930}},
         {type: "D", start: {mon: 12, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/panama/panama-national-mourning-day"}, titles: {"en": "National Mourning Day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Engineer’s Day"},

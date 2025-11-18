@@ -32,7 +32,7 @@
         {type: "D", start: {era: 1, y: 2025, mon: 10, d: 1}, inherits: "Discovery of America Day (in lieu)"},
         {type: "D", start: {era: 1, y: 2026, mon: 10, d: 2}, inherits: "Discovery of America Day (in lieu)"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/armed-forces-day-in-honduras/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Feast of Our Lady of Suyapa", "es": "Nuestra Señora de Suyapa"}, notes: {"en": "Virgin of Suyapa’s Day"}},

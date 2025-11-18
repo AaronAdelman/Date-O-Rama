@@ -25,7 +25,7 @@
         {type: "D", start: {mon: 9, d: 4}, inherits: "Toothfish Day", first: {era: 1, y: 2017}, end: {era: 1, y: 2021}},
         {type: "D", start: {era: 1, y: 2022, mon: 9, d: 5}, inherits: "Toothfish Day"},
         {type: "D", start: {mon: 9, d: 4}, inherits: "Toothfish Day", first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [

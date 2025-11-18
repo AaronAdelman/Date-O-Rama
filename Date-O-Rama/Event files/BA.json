@@ -20,8 +20,8 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "General Framework Agreement Day", "bs": "Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"}, notes: {"en": "Dayton Agreement Day"}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},
         {type: "D", start: {mon: 11, d: 25}, inherits: "Statehood Day", urls: {"en": "https://www.daysoftheyear.com/days/statehood-day-in-bosnia-and-herzegovina/"}, notes: {"en": "National Day"}},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {inherits: "Republic Day", type: "D", start: {mon: 1, d: 9}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

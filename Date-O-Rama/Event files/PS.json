@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 11, d: 15}, first: {era: 1, y: 1988}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", start: {mon: 5, d: 15}, inherits: "Nakba Day", first: {era: 1, y: 1998}},
         {titles: {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, type: "D", start: {mon: 6, d: 5}},

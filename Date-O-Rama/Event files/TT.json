@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 8, d: 31}, inherits: "Independence Day", first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/trinidad-and-toboga-independence-day/"}},
         {type: "D", start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-republic-day"}, inherits: "Republic Day"},
         {type: "D", start: {mon: 9, d: 25}, inherits: "Republic Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-republic-day"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {era: 1, y: 2017, mon: 10, d: 13}, titles: {"en": "First Peoples’ Day"}},

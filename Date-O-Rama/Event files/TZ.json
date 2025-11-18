@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/peasants-day-2/"}, titles: {"en": "Nane Nane Day"}, notes: {"en": "Peasants’ Day\nWorkers’ Day\nIndustry’s Day\nFarmer’s Day\nWakulima ya Nane Nane"}, inherits: "Farmer Day"},
         {type: "D", start: {mon: 10, d: 14}, titles: {"en": "Mwalimu Nyerere Day"}, notes: {"en": "Nyerere Day\nMwalimu Julius Nyerere Day"}, urls: {"en": "https://nationaltoday.com/mwalimu-nyerere-day/"}, first: {era: 1, y: 1999}},
         {inherits: "Independence Day", type: "D", start: {mon: 12, d: 9}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/tanzania-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

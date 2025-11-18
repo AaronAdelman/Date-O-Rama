@@ -24,7 +24,7 @@
         {inherits: "Revolution Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}, last: {era: 1, y: 2005}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
         {inherits: "Revolution Day", type: "D", start: {mon: 11, wkd: [2], nth: 3}, first: {era: 1, y: 2006}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Our Lady of Guadalupe", first: {era: 1, y: 1531}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {inherits: "Army Day", type: "D", start: {mon: 2, d: 20}, first: {era: 1, y: 1913}},
         {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/flag-day-mexico/"}, inherits: "Flag Day", first: {era: 1, y: 1937}},
@@ -52,7 +52,7 @@
         {type: "D", start: {mon: 5, d: 15}, inherits: "Teacher’s Day"},
         {type: "D", start: {mon: 5, d: 23}, inherits: "Student’s Day"},
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas", "es": "Las Posadas"}},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Christmas Eve"},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 

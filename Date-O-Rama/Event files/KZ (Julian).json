@@ -7,6 +7,6 @@
     first: {era: 1, y: 1991},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kazakhstan"},
     events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
     ]
 }

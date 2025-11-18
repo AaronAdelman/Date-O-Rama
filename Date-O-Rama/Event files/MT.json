@@ -23,7 +23,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/malta-independence-day/"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/malta-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1974}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {inherits: "Epiphany", type: "D", start: {mon: 1, d: 2, thruD: 8, wkd: [1]}},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Feast of St. Anthony the Abbot", "mt": "San Anton Abbati"}},

@@ -19,7 +19,7 @@
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 1}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/benin-independence-day/"}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {inherits: "Armed Forces Day", type: "D", start: {mon: 10, d: 26}},

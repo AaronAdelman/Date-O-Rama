@@ -10,7 +10,7 @@
     events: [
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 8, d: 14}, first: {era: 1, y: 1947}, urls: {"en": "https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

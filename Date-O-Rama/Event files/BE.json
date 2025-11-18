@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}, urls: {"en": "https://www.officeholidays.com/holidays/belgium/remembrance-day"}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"de":"Tag der Deutschsprachigen Gemeinschaft","en":"Day of the German-speaking Community","fr":"Fête de la Communauté germanophone","hu":"A belgiumi német nyelvi közösség napja","it":"Festa della Comunità germanofona","lmo":"Festa de la Comunità Germanofona del Belgi","nl":"Dag van de Duitstalige Gemeenschap"}, urls: {"en": "https://www.officeholidays.com/holidays/belgium/liege/german-community-day"}, notes: {"en": "German Community Day"}},
         {type: "D", start: {mon: 12, d: 6}, inherits: "St. Nicholas Day"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Christmas Day"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {type: "D", start: {mon: 4, d: 7}, inherits: "Veterans Day"},
