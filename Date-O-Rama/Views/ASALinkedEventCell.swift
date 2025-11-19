@@ -73,7 +73,7 @@ struct ASALinkedEventCell:  View {
                 }
                 
             } label: {
-                Image(systemName: "chevron.down.circle.fill")
+                ASAGlassSymbol(systemName: "chevron.down.circle.fill")
                     .foregroundColor(event.color)
                     .font(.title)
             }

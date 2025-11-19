@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASAClockMenuSymbol: View {
     var body: some View {
-        Image(systemName: "arrow.down.circle.fill")
+        ASAGlassSymbol(systemName: "arrow.down.circle.fill")
             .font(.title)
             .foregroundStyle(Color.white)
     }
