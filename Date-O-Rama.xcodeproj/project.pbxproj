@@ -256,7 +256,6 @@
 		A56767642E60E267001F108C /* The Realist Society of Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767622E60E266001F108C /* The Realist Society of Canada.json */; };
 		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
-		A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */; };
 		A56B3FE32DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
@@ -1403,7 +1402,6 @@
 		A56767622E60E266001F108C /* The Realist Society of Canada.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "The Realist Society of Canada.json"; sourceTree = "<group>"; };
 		A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrenchRepublicanCalendarCore; path = ../FrenchRepublicanCalendarCore; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
-		A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonLabel.swift; sourceTree = "<group>"; };
 		A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Looney Tunes.json"; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
@@ -2675,7 +2673,6 @@
 				A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
-				A568FC932D1C42A400E64598 /* ASARadioButtonLabel.swift */,
 				A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */,
 				A59C436425A33E5B009C7F7C /* ASATimeText.swift */,
 				A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */,
@@ -3943,7 +3940,6 @@
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */,
 				A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */,
-				A568FC942D1C42C500E64598 /* ASARadioButtonLabel.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedClock.swift in Sources */,
 				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
