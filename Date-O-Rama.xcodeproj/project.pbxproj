@@ -1119,6 +1119,7 @@
 		A5F0F7612B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */; };
 		A5F154A72ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */; };
 		A5F154A82ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */; };
+		A5F154AF2ECD961500A22FCF /* ASADatePickerEnsemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F154AE2ECD94D900A22FCF /* ASADatePickerEnsemble.swift */; };
 		A5F1ECDF2E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
 		A5F1ECE02E9ED70B000CAB75 /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A522A2D72E439E1500F8AAEB /* Sun.json */; };
 		A5F1ECE42EA2051B000CAB75 /* KP (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */; };
@@ -3950,6 +3951,7 @@
 				A5B816452541A3A200E309E0 /* ASALocationWithClocksSectionView.swift in Sources */,
 				A5A6FD5027BEC504003595D5 /* ASADateFormatPatternComponent.swift in Sources */,
 				A53437512857971800F8E8AF /* ASAJulianCalendar.swift in Sources */,
+				A5F154AF2ECD961500A22FCF /* ASADatePickerEnsemble.swift in Sources */,
 				A5D135B927C41C2200A1A525 /* ASACalendarWithMonths.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocaleChooserView.swift in Sources */,
 				A5FFBD3A2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */,
