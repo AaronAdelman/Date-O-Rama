@@ -1836,6 +1836,7 @@
 		A5F0EAC02C7FA0FD003E1FED /* National Day Calendar®.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "National Day Calendar®.json"; sourceTree = "<group>"; };
 		A5F0F75F2B3DFB5A00A8BB12 /* NG (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "NG (Muslim).json"; sourceTree = "<group>"; };
 		A5F154A62ECC9BAB00A22FCF /* ASACloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACloseButton.swift; sourceTree = "<group>"; };
+		A5F154AE2ECD94D900A22FCF /* ASADatePickerEnsemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePickerEnsemble.swift; sourceTree = "<group>"; };
 		A5F1ECE12EA202C1000CAB75 /* KP (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KP (Chinese).json"; sourceTree = "<group>"; };
 		A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SD (Coptic).json"; sourceTree = "<group>"; };
 		A5F3B0172855FEC700865CEB /* RU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RU.json; sourceTree = "<group>"; };
@@ -2453,6 +2454,7 @@
 			children = (
 				A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */,
 				A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */,
+				A5F154AE2ECD94D900A22FCF /* ASADatePickerEnsemble.swift */,
 				A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */,
 				A513896B2875A8630069F2AB /* ASALocationChooserView.swift */,
