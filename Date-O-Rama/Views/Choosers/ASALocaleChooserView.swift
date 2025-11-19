@@ -51,7 +51,7 @@ struct ASALocaleChooserView: View {
             }
         }
         .navigationBarItems(trailing:
-                                Button("Cancel", action: {
+                                Button("Cancel", role: .cancel, action: {
                                     self.didCancel = true
                                     self.presentationMode.wrappedValue.dismiss()
                                 })

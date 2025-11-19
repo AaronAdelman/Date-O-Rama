@@ -41,7 +41,7 @@ struct ASANewClockDetailView: View {
                 .navigationTitle("New Clock Details")
                 .toolbar {
                     ToolbarItemGroup(placement: .cancellationAction) {
-                        Button("Cancel") {
+                        Button("Cancel", role: .cancel) {
                             self.showingActionSheet = true
                         }
                         .actionSheet(isPresented: self.$showingActionSheet) {

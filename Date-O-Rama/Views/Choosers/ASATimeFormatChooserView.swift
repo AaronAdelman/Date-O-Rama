@@ -12,17 +12,16 @@ import CoreLocation
 struct ASATimeFormatChooserView: View {
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
-
+    
     @State var tempTimeFormat:  ASATimeFormat
     @State var calendarCode:  ASACalendarCode
-
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-//    @State var didCancel = false
     
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
-
+    
     
     var body: some View {
         List {
@@ -39,20 +38,12 @@ struct ASATimeFormatChooserView: View {
                 }
             } // Section
         } // List
-//            .navigationBarItems(trailing:
-//                Button("Cancel", action: {
-//                    self.didCancel = true
-//                    self.presentationMode.wrappedValue.dismiss()
-//                })
-//        )
-            .onAppear() {
-                self.tempTimeFormat = self.clock.timeFormat
-                self.calendarCode        = self.clock.calendar.calendarCode
+        .onAppear() {
+            self.tempTimeFormat = self.clock.timeFormat
+            self.calendarCode        = self.clock.calendar.calendarCode
         }
         .onDisappear() {
-//            if !self.didCancel {
-                self.clock.timeFormat = self.tempTimeFormat
-//            }
+            self.clock.timeFormat = self.tempTimeFormat
         }
     }
 }
@@ -64,10 +55,10 @@ struct ASATimeFormatCell: View {
     let timeFormat: ASATimeFormat
     
     @Binding var selectedTimeFormat:  ASATimeFormat
-
+    
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
-
+    
     var body: some View {
         HStack {
             Text(verbatim:  timeFormat.localizedItemName)
@@ -80,9 +71,6 @@ struct ASATimeFormatCell: View {
                 ASACheckmarkSymbol()
             }
         }
-//        .onTapGesture {
-//            self.selectedTimeFormat = self.timeFormat
-//        }
     }
 } // struct ASATimeFormatCell
 

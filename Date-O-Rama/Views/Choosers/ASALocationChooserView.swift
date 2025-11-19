@@ -74,8 +74,8 @@ struct ASALocationChooserView: View {
                 Spacer()
                     .frame(width: SIDE_SPACER_WIDTH)
                 
-                Button("OK", action: {
-                    debugPrint(#file, #function, "OK button")
+                ASAOKButton(action: {
+                  debugPrint(#file, #function, "OK button")
                     if shouldCreateNewLocationWithClocks {
                         createNewLocationWithClocks()
                     } else {
@@ -87,7 +87,7 @@ struct ASALocationChooserView: View {
                 
                 Spacer()
                 
-                Button("Cancel", action: {
+                Button("Cancel", role: .cancel, action: {
                     debugPrint(#file, #function, "Cancel button")
                     self.dismiss()
                 })
@@ -152,12 +152,12 @@ struct ASALocationChooserView: View {
                         } // Section
                     }
                     
-                    Section {
-                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) { tempLocationData in
-                            MapMarker(coordinate: tempLocationData.location.coordinate)
-                        }
-                        .aspectRatio(1.0, contentMode: .fit)
-                    } // Section
+//                    Section {
+//                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) { tempLocationData in
+//                            MapMarker(coordinate: tempLocationData.location.coordinate)
+//                        }
+//                        .aspectRatio(1.0, contentMode: .fit)
+//                    } // Section
                 }
             }
             .font(Font.body)
