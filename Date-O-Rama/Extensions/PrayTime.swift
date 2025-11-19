@@ -78,7 +78,7 @@ extension Date {
         //        debugPrint(#file, #function, year, month, day, latitude, longitude
         //        )
         
-        var JDate = self.JulianDate
+        var JDate = self.julianDate
         var baseDate: Date
         if self.addingTimeInterval(1.0).previousMidnight(timeZoneOffset: 0.0) == self {
             baseDate = self

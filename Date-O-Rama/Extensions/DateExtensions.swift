@@ -70,13 +70,13 @@ extension Date {
 } // extension Date
 
 extension Date {
-    var JulianDate: Double {
+    var julianDate: Double {
         let seconds = self.timeIntervalSince1970
         return ( seconds / 86400.0 ) + 2440587.5
-    } // var JulianDate
+    } // var julianDate
 
-    static func date(JulianDate:  Double) -> Date {
-        let seconds = (JulianDate - 2440587.5) * 86400.0
+    static func date(julianDate:  Double) -> Date {
+        let seconds = (julianDate - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
     } // static func date(JulianDate:  Double) -> Date
 
@@ -86,7 +86,7 @@ extension Date {
         }
         
         let offsetFromJulianDay = calendarCode.offsetFromJulianDay
-        return self.JulianDate - offsetFromJulianDay
+        return self.julianDate - offsetFromJulianDay
     } // func JulianDateWithTime(calendarCode: ASACalendarCode) -> Double
 
     func JulianDateWithoutTime(calendarCode: ASACalendarCode) -> Int {
@@ -135,8 +135,8 @@ extension Date {
     } // static func date(JulianDate:  Double, calendarCode: ASACalendarCode) -> Date
     
     var previousGMTNoon: Date {
-        let thisJulianDay = floor(self.JulianDate)
-        let result = Date.date(JulianDate: thisJulianDay)
+        let thisJulianDay = floor(self.julianDate)
+        let result = Date.date(julianDate: thisJulianDay)
         return result
     } // var previousGMTNoon
 } // extension Date
@@ -242,14 +242,14 @@ fileprivate let MarsSolDateFudge   =       0.00200 // Fudged to get the same val
 
 extension Date {
     var MarsSolDate: Double {
-        let JD: Double = self.JulianDate
+        let JD: Double = self.julianDate
         let result = (JD - MarsSolDateOffset) / MarsSolDateDivisor - MarsSolDateFudge
         return result
     }
     
     static func date(MarsSolDate: Double) -> Date {
         let JD = MarsSolDateDivisor * (MarsSolDate + MarsSolDateFudge) + MarsSolDateOffset
-        return Date.date(JulianDate: JD)
+        return Date.date(julianDate: JD)
     }
 }
 
