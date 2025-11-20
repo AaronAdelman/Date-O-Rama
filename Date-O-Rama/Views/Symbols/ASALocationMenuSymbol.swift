@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASALocationMenuSymbol: View {
     var body: some View {
-        ASAGlassSymbol(systemName: "arrow.down.square.fill")
+        ASAGlassSymbol(systemName: "arrowtriangle.down.circle.fill")
             .font(.title)
     }
 }
