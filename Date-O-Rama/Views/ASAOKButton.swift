@@ -13,7 +13,7 @@ struct ASAOKButton: View {
     
     var body: some View {
         if #available(iOS 26.0, watchOS 26.0, *) {
-            Button(role: .confirm, action: action)
+            Button("OK", role: .confirm, action: action)
         } else {
             Button("OK", action: action)
         }

@@ -15,9 +15,6 @@ struct ASALocationWithClocksCell: View {
     @State private var showingGetInfoView = false
     @State private var showingActionSheet = false
     
-//    let animatingSelection: Bool
-//    let isHighlighted: Bool
-    
     var body: some View {
         let processed = locationWithClocks.clocks.map {ASAMiniProcessedClock(clock: $0, now: now, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)}
         let times: Array<String> = processed.compactMap { $0.timeString }.uniqueElements.map { $0! }
@@ -66,10 +63,6 @@ struct ASALocationWithClocksCell: View {
         .padding()
         .background(cellBackground)
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
-//        .scaleEffect(animatingSelection ? 1.1 : (isHighlighted ? 1.03 : 1.0))
-//        .opacity(animatingSelection ? 0.8 : 1.0)
-//        .animation(.spring(response: 0.4, dampingFraction: 0.8), value: animatingSelection)
-//        .animation(.easeInOut(duration: 0.6), value: isHighlighted)
         .listRowSeparator(.hidden)
         .listRowBackground(Color.clear)
     }
