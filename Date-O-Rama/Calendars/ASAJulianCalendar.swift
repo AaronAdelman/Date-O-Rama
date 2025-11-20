@@ -13,8 +13,8 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     public let BCE = 0
     public let CE  = 1
     
-    init() {
-        self.calendarCode = .julian
+    init(calendarCode:  ASACalendarCode) {
+        self.calendarCode = calendarCode
     } // init(calendarCode:  ASACalendarCode)
     
     var canSplitTimeFromDate: Bool = true
