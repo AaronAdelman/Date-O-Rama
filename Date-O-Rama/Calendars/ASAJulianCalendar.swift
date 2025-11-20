@@ -209,17 +209,17 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
                     
                 case "D":
                     let era = dateComponents.era!
-                    let dayInYear = dayOfYear(era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 1)
 
                 case "DD":
                     let era = dateComponents.era!
-                    let dayInYear = dayOfYear(era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 2)
 
                 case "DDD":
                     let era = dateComponents.era!
-                    let dayInYear = dayOfYear(era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 3)
 
                 case "E", "EE", "EEE", "eee":
@@ -344,13 +344,13 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     func isValidDate(dateComponents: ASADateComponents) -> Bool {
         guard let era = dateComponents.era, let year = dateComponents.year, let month = dateComponents.month, let day = dateComponents.day else { return false }
         
-        return isValidBoothCalendarDate(era: era, year: year, month: month, day: day)
+        return isValidBoothCalendarDate(calendarCode: dateComponents.calendar.calendarCode, era: era, year: year, month: month, day: day)
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
     func date(dateComponents: ASADateComponents) -> Date? {
         guard let era = dateComponents.era, let year = dateComponents.year, let month = dateComponents.month, let day = dateComponents.day else { return nil }
         let timeZone = dateComponents.locationData.timeZone
-        let result = dateFromBoothComponents(era: era, year: year, month: month, day: day, hour: dateComponents.hour ?? 0, minute: dateComponents.minute ?? 0, second: dateComponents.second ?? 0, nanosecond: dateComponents.nanosecond ?? 0, timeZone: timeZone)
+        let result = dateFromBoothComponents(calendarCode: calendarCode, era: era, year: year, month: month, day: day, hour: dateComponents.hour ?? 0, minute: dateComponents.minute ?? 0, second: dateComponents.second ?? 0, nanosecond: dateComponents.nanosecond ?? 0, timeZone: timeZone)
         return result
     }
     
@@ -526,7 +526,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
                 let month = components.month ?? -1
                 let year  = components.year ?? -1
                 let era   = components.era ?? -1
-                return Range(1...daysForMonthInBoothCalendar(era: era, year: year, month: month))
+                return Range(1...daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month))
                 
             default:
                 return nil
@@ -730,11 +730,11 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
     return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
 } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 
-func daysForMonthInBoothCalendar(era: Int, year: Int, month: Int) -> Int {
+func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int) -> Int {
     return JulianCalendar.numberOfDaysIn(month: month, year: year)
-}
+} // func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int)
 
-func isValidBoothCalendarDate(era: Int, year: Int, month: Int, day: Int) -> Bool {
+func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
     guard era >= 0 else { return false }
 //    guard era <= 1 else { return false }
     
@@ -745,16 +745,16 @@ func isValidBoothCalendarDate(era: Int, year: Int, month: Int, day: Int) -> Bool
         return false
     }
     
-    let daysInMonth = daysForMonthInBoothCalendar(era: era, year: year, month: month)
+    let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month)
     if day > daysInMonth {
         return false
     }
     
     return true
-}
+} // func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool
 
-func dateFromBoothComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
-    guard isValidBoothCalendarDate(era: era, year: year, month: month, day: day) else { return nil }
+func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
+    guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
     guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return nil }
     let julianDate = JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
     let secondsFromGMT = timeZone.secondsFromGMT()
@@ -763,16 +763,16 @@ func dateFromBoothComponents(era: Int, year: Int, month: Int, day: Int, hour: In
     return date
 } // func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date?
 
-fileprivate func dayOfYear(era: Int, year: Int, month: Int, day: Int) -> Int {
+fileprivate func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int {
     var dayOfYear = day
     if month > 1 {
         for m in 1..<month {
-            let daysInMonth = daysForMonthInBoothCalendar(era: era, year: year, month: m)
+            let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: m)
             dayOfYear += daysInMonth
         }
     }
     return dayOfYear
-}
+} // func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int
 
 extension ASAJulianCalendar: ASACalendarWithEaster {
     func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
