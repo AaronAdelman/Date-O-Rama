@@ -10,6 +10,8 @@ import Foundation
 import JulianDayNumber
 
 public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras {
+    var calendarCode: ASACalendarCode
+    
     public let BCE = 0
     public let CE  = 1
     
@@ -268,7 +270,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     } // func dateString(dateComponents: ASADateComponents, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
     fileprivate func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        self.dateFormatter.calendar = GregorianCalendar
+        self.dateFormatter.calendar = gregorianCalendar
         self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: locationData.timeZone)
         self.dateFormatter.apply(dateFormat: .none)
         return self.dateFormatter.string(from: now)
@@ -310,16 +312,16 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         return (dateString, timeString, components)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
-    private lazy var GregorianCalendar = Calendar.gregorian
+    private lazy var gregorianCalendar = Calendar.gregorian
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
-        GregorianCalendar.timeZone = locationData.timeZone
-        return GregorianCalendar.startOfDay(for: date)
+        gregorianCalendar.timeZone = locationData.timeZone
+        return gregorianCalendar.startOfDay(for: date)
     } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
     func startOfNextDay(date: Date, locationData: ASALocation) -> Date {
-        GregorianCalendar.timeZone = locationData.timeZone
-        return GregorianCalendar.startOfDay(for: date.oneDayAfter)
+        gregorianCalendar.timeZone = locationData.timeZone
+        return gregorianCalendar.startOfDay(for: date.oneDayAfter)
     } // func startOfNextDay(date: Date, locationData: ASALocation) -> Date
     
     func supports(calendarComponent: ASACalendarComponent) -> Bool {
@@ -524,6 +526,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
                 let era = components.era
                 let year = components.year
                 let isLeapYear = era != nil && year != nil ?  isLeapYear(calendarCode: self.calendarCode, era: era!, year: year!) : false
+                // TODO: This will need to be changed if implementing a calendar which has years which are not 365 or 366 days long.
                 let DAYS_IN_YEAR_IN_LEAP_YEAR = 366
                 let DAYS_IN_YEAR = 365
                 return isLeapYear ? Range(1...DAYS_IN_YEAR_IN_LEAP_YEAR) : Range(1...DAYS_IN_YEAR)
@@ -588,81 +591,182 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     } // var numberOfMonthsInYear
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
-    }
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            switch localeIdentifier.localeLanguageCode {
+            case "he":
+                return ["יום ראשון", "יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי", "יום שביעי", "יום שמיני", "יום תשעי", "יום עשירי"]
+
+            case "ar":
+                return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
+
+            default:
+                return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
+            } // switch localeIdentifier.localeLanguageCode
+            
+        default:
+            return []
+        } // switch calendarCode
+    } // func weekdaySymbols(localeIdentifier: String) -> Array<String>
     
     func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            switch localeIdentifier.localeLanguageCode {
+            case "he":
+                return ["יום א׳", "יום ב׳", "יום ג׳", "יום ד׳", "יום ה׳", "יום ו׳", "יום ז׳", "יום ח׳", "יום ט׳", "יום י׳"]
+                
+            case "ar":
+                return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
+
+                
+            default:
+                return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+            } // switch localeIdentifier.localeLanguageCode
+            
+        default:
+            return []
+        } // switch calendarCode
     }
     
     func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            switch localeIdentifier.localeLanguageCode {
+            case "he":
+                return ["א׳", "ב׳", "ג׳", "ד׳", "ה׳", "ו׳", "ז׳", "ח׳", "ט׳", "י׳"]
+                
+            default:
+                return self.weekdaySymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
+            } // switch localeIdentifier.localeLanguageCode
+            
+        default:
+            return []
+        } // switch calendarCode
     }
     
     func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.weekdaySymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     }
     
     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     }
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        return self.GregorianCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
-        self.GregorianCalendar.weekendDays(for: regionCode)
-    }
+        switch calendarCode {
+        case .frenchRepublican:
+            return [5, 10]
+
+            // TODO:  More cases may need to be added if Booth implemented more calendars with a week length other than 7.
+        default:
+            return         self.gregorianCalendar.weekendDays(for: regionCode)
+        } // switch calendarCode
+    } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.monthSymbols(localeIdentifier: localeIdentifier)
-    }
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.monthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            switch localeIdentifier.localeLanguageCode {
+            case "he":
+                return ["ונדמייר", "בּרויּמֶר", "פרִימֶר", "ניבוז", "פּלויּביוז", "ונטוז", "ז׳רמינאל", "פלוראל", "פּרריאל", "מסידור", "תרמידור", "פרוקטידור", "עיבור השנה"]
+                
+            case "ar":
+                return ["فنديميير", "برومير", "فريمير", "نيفوز", "بلوفيوز", "فنتوز", "جرمينال", "فلوريال", "بريريال", "ميسيدور", "تيرميدور", "فروكتيدور", "الأيام الستة في نهاية السنة"]
+
+            default:
+                return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
+            } // case localeIdentifier.localeLanguageCode
+        default:
+            return []
+        } // switch calendarCode
+    } // func monthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
+    } // func shortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+    } // func veryShortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+    } // func standaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+    } // func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+    } // func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
         
     func eraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
-    }
+        return self.gregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
+    } // func eraSymbols(localeIdentifier: String) -> Array<String>
     
     func longEraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
-    }
-    
-    var calendarCode: ASACalendarCode
-    
+        return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
+    } //func longEraSymbols(localeIdentifier: String) -> Array<String>
+        
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
+        return self.gregorianCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.gregorianCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.gregorianCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.GregorianCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.gregorianCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     
