@@ -406,8 +406,17 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
     
     fileprivate func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
-        return month == 2 && isLeapYear(calendarCode: self.calendarCode, era: era, year: year)
-    }
+        switch self.calendarCode {
+        case .julian:
+            return month == 2 && isLeapYear(calendarCode: .julian, era: era, year: year)
+            
+        case .frenchRepublican:
+            return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
+
+        default:
+            return false
+        } // switch self.calendarCode
+    } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let timeZone = locationData.timeZone
@@ -421,10 +430,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         let result = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: components.month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: nil, minute: nil, second: nil, nanosecond: nil)
         return result
     }
-    
-    let MONTHS_PER_YEAR = 12
-    let DAYS_PER_WEEK   =  7
-    
+        
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
@@ -436,17 +442,22 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         case .quarter:
             return Range(4...4)
         case .month:
-            return Range(MONTHS_PER_YEAR...MONTHS_PER_YEAR)
+            let monthsPerYear = self.numberOfMonthsInYear
+            return Range(monthsPerYear...monthsPerYear)
         case .weekOfYear:
             return Range(53...53)
         case .weekOfMonth:
             return Range(5...5)
         case .weekday:
-            return Range(DAYS_PER_WEEK...DAYS_PER_WEEK)
+            let daysPerWeek = self.daysPerWeek
+            return Range(daysPerWeek...daysPerWeek)
         case .weekdayOrdinal:
-            return Range(6...6)
+            let ordinalDaysPerWeek = self.daysPerWeek - 1
+            return Range(ordinalDaysPerWeek...ordinalDaysPerWeek)
         case .day:
             return Range(31...31)
+            
+            // TODO: Need to change to support decimal time
         case .hour:
             return Range(23...23)
         case .minute:
@@ -455,6 +466,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
             return Range(59...59)
         case .nanosecond:
             return Range(999999...999999)
+            
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
@@ -485,11 +497,11 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         case .hour:
             return Range(1...1)
         case .minute:
-            return Range(1...1)
+            return Range(0...0)
         case .second:
-            return Range(1...1)
+            return Range(0...0)
         case .nanosecond:
-            return Range(1...1)
+            return Range(0...0)
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
@@ -506,7 +518,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         case .year:
             switch smaller {
             case .month:
-                return Range(1...MONTHS_PER_YEAR)
+                return Range(1...self.numberOfMonthsInYear)
                 
             case .day:
                 let era = components.era
@@ -548,7 +560,32 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         .system
     }
     
-    var daysPerWeek: Int = 7
+    var daysPerWeek: Int {
+        switch calendarCode {
+        case .julian:
+            return 7
+            
+        case .frenchRepublican:
+            return 10
+            
+        default:
+            return -1
+        }
+    } // var daysPerWeek
+    
+    // TODO:  This computed variable will need to be edited if one of Booth’s calendars does not have constant number of months in the year.
+    var numberOfMonthsInYear: Int {
+        switch self.calendarCode {
+        case .julian:
+            return JulianCalendar.numberOfMonthsInYear
+            
+        case .frenchRepublican:
+            return FrenchRepublicanCalendar.numberOfMonthsInYear
+            
+        default:
+            return -1
+        }
+    } // var numberOfMonthsInYear
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.GregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
@@ -663,13 +700,25 @@ extension Int {
 }
 
 func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
+    var usedYear: Int
     if calendarCode.shouldUseAstronomicalYears {
         guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
-        return JulianCalendar.isLeapYear(astronomicalYear)
+        usedYear = astronomicalYear
     } else {
-        return JulianCalendar.isLeapYear(year)
+        usedYear = year
     }
-}
+    
+    switch calendarCode {
+    case .julian:
+        return JulianCalendar.isLeapYear(usedYear)
+        
+    case .frenchRepublican:
+        return FrenchRepublicanCalendar.isLeapYear(usedYear)
+        
+    default:
+        return false
+    } // switch calendarCode
+} // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
 
 func astronomicalYear(era: Int, year: Int) -> Int? {
     switch era {
