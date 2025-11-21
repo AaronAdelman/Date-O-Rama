@@ -34,36 +34,6 @@
             endingLineNumber = "823"
             landmarkName = "isLeapYear(calendarCode:era:year:)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "D33E83BE-BEC0-4DD6-B652-62AF7862B0BD - fc0cdadac07473c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.isLeapYear(calendarCode: Date_O_Rama.ASACalendarCode, era: Swift.Int, year: Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "799"
-                  endingLineNumber = "799">
-               </Location>
-               <Location
-                  uuid = "D33E83BE-BEC0-4DD6-B652-62AF7862B0BD - fc0cdadac07474a1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.isLeapYear(calendarCode: Date_O_Rama.ASACalendarCode, era: Swift.Int, year: Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "823"
-                  endingLineNumber = "823">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,36 +50,6 @@
             endingLineNumber = "419"
             landmarkName = "isLeapMonth(era:year:month:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2FBD53E0-C285-49C7-9E93-63A77C98227F - beb28e45e2496f87"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAJulianCalendar.isLeapMonth(era: Swift.Int, year: Swift.Int, month: Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "417"
-                  endingLineNumber = "417">
-               </Location>
-               <Location
-                  uuid = "2FBD53E0-C285-49C7-9E93-63A77C98227F - beb28e45e2496f59"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAJulianCalendar.isLeapMonth(era: Swift.Int, year: Swift.Int, month: Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "419"
-                  endingLineNumber = "419">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,36 +66,6 @@
             endingLineNumber = "611"
             landmarkName = "weekdaySymbols(localeIdentifier:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD05A538-E136-4103-AA94-A371C295BDD4 - 1c0a50c8cfec606b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAJulianCalendar.weekdaySymbols(localeIdentifier: Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "609"
-                  endingLineNumber = "609">
-               </Location>
-               <Location
-                  uuid = "BD05A538-E136-4103-AA94-A371C295BDD4 - 1c0a50c8cfec6035"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAJulianCalendar.weekdaySymbols(localeIdentifier: Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJulianCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "611"
-                  endingLineNumber = "611">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
