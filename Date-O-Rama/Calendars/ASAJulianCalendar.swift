@@ -720,37 +720,107 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
             default:
                 return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
             } // case localeIdentifier.localeLanguageCode
+            
         default:
             return []
         } // switch calendarCode
     } // func monthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            switch localeIdentifier.localeLanguageCode {
+            case "he":
+                return ["ונד׳", "בּרו׳", "פרִי׳", "ניב׳", "פּלו׳", "ונט׳", "ז׳רמ׳", "פלו׳", "פּרר׳", "מסי׳", "תרמ׳", "פרו׳", "עה״ש"]
+
+            default:
+                return ["Vend.r", "Brum.r", "Frim.r", "Niv.ô", "Pluv.ô", "Vent.ô", "Germ.l", "Flo.l", "Prai.l", "Mes.or", "Ther.or", "Fru.or", "Ss.cu"]
+            } // case localeIdentifier.localeLanguageCode
+
+        default:
+            return []
+        } // switch calendarCode
     } // func shortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return monthSymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
+
+        default:
+            return []
+        } // switch calendarCode
     } // func veryShortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.monthSymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     } // func standaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.shortMonthSymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     } // func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+
+        default:
+            return []
+        } // switch calendarCode
     } // func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
         
     func eraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return [""]
+            
+        default:
+            return []
+        }
     } // func eraSymbols(localeIdentifier: String) -> Array<String>
     
     func longEraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
+        switch calendarCode {
+        case .julian:
+            return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
+
+        case .frenchRepublican:
+            return [""]
+            
+        default:
+            return []
+        }
     } //func longEraSymbols(localeIdentifier: String) -> Array<String>
         
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
