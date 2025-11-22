@@ -448,7 +448,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let timeZone = locationData.timeZone
-        var gregorian = Calendar(identifier: .gregorian)
         let components = boothComponents(calendarCode: self.calendarCode, date: date, timeZone: timeZone)
         let era = components.era
         let year = components.year
@@ -621,18 +620,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            switch localeIdentifier.localeLanguageCode {
-            case "he":
-                return ["יום ראשון", "יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי", "יום שביעי", "יום שמיני", "יום תשעי", "יום עשירי"]
-
-            case "ar":
-                return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
-
-            default:
-                return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
-            } // switch localeIdentifier.localeLanguageCode
             
         default:
             return []
@@ -643,19 +630,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            switch localeIdentifier.localeLanguageCode {
-            case "he":
-                return ["יום א׳", "יום ב׳", "יום ג׳", "יום ד׳", "יום ה׳", "יום ו׳", "יום ז׳", "יום ח׳", "יום ט׳", "יום י׳"]
-                
-            case "ar":
-                return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
-
-                
-            default:
-                return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
-            } // switch localeIdentifier.localeLanguageCode
             
         default:
             return []
@@ -666,16 +640,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            switch localeIdentifier.localeLanguageCode {
-            case "he":
-                return ["א׳", "ב׳", "ג׳", "ד׳", "ה׳", "ו׳", "ז׳", "ח׳", "ט׳", "י׳"]
-                
-            default:
-                return self.weekdaySymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
-            } // switch localeIdentifier.localeLanguageCode
-            
+                            
         default:
             return []
         } // switch calendarCode
@@ -685,9 +650,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            return self.weekdaySymbols(localeIdentifier: localeIdentifier)
 
         default:
             return []
@@ -699,9 +661,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
-
         default:
             return []
         } // switch calendarCode
@@ -712,41 +671,20 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
-
         default:
             return []
         } // switch calendarCode
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
-        switch calendarCode {
-        case .frenchRepublican:
-            return [5, 10]
-
             // TODO:  More cases may need to be added if Booth implemented more calendars with a week length other than 7.
-        default:
             return         self.gregorianCalendar.weekendDays(for: regionCode)
-        } // switch calendarCode
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.monthSymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            switch localeIdentifier.localeLanguageCode {
-            case "he":
-                return ["ונדמייר", "בּרויּמֶר", "פרִימֶר", "ניבוז", "פּלויּביוז", "ונטוז", "ז׳רמינאל", "פלוראל", "פּרריאל", "מסידור", "תרמידור", "פרוקטידור", "עיבור השנה"]
-                
-            case "ar":
-                return ["فنديميير", "برومير", "فريمير", "نيفوز", "بلوفيوز", "فنتوز", "جرمينال", "فلوريال", "بريريال", "ميسيدور", "تيرميدور", "فروكتيدور", "الأيام الستة في نهاية السنة"]
-
-            default:
-                return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
-            } // case localeIdentifier.localeLanguageCode
             
         default:
             return []
@@ -758,15 +696,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            switch localeIdentifier.localeLanguageCode {
-            case "he":
-                return ["ונד׳", "בּרו׳", "פרִי׳", "ניב׳", "פּלו׳", "ונט׳", "ז׳רמ׳", "פלו׳", "פּרר׳", "מסי׳", "תרמ׳", "פרו׳", "עה״ש"]
-
-            default:
-                return ["Vend.r", "Brum.r", "Frim.r", "Niv.ô", "Pluv.ô", "Vent.ô", "Germ.l", "Flo.l", "Prai.l", "Mes.or", "Ther.or", "Fru.or", "Ss.cu"]
-            } // case localeIdentifier.localeLanguageCode
-
         default:
             return []
         } // switch calendarCode
@@ -776,9 +705,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            return monthSymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
 
         default:
             return []
@@ -790,9 +716,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return self.monthSymbols(localeIdentifier: localeIdentifier)
-
         default:
             return []
         } // switch calendarCode
@@ -802,9 +725,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         switch calendarCode {
         case .julian:
             return self.gregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
-
-        case .frenchRepublican:
-            return self.shortMonthSymbols(localeIdentifier: localeIdentifier)
 
         default:
             return []
@@ -816,9 +736,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
-
         default:
             return []
         } // switch calendarCode
@@ -829,9 +746,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return [""]
-            
         default:
             return []
         }
@@ -842,9 +756,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .julian:
             return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
 
-        case .frenchRepublican:
-            return [""]
-            
         default:
             return []
         }
