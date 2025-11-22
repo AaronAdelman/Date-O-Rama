@@ -11,8 +11,10 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-ascension-day"}, inherits: "Accession Day"},
         {type: "D", start: {mon: 7, d: 23}, titles: {"en": "Renaissance Day"}},
-        {type: "D", start: {mon: 11, d: 18}, inherits: "Natl Day", first: {era: 1, y: 1650}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {type: "D", start: {mon: 11, d: 19}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {type: "D", start: {mon: 11, d: 18}, inherits: "Natl Day", first: {era: 1, y: 1650}, last: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "Natl Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {type: "D", start: {mon: 11, d: 19}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}, last: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 11, d: 21}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
 
