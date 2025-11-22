@@ -463,11 +463,17 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // var daysPerWeek
 
     // MARK: - Mini Calendar Data
-    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
+    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, blankWeekdaySymbol: String?, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
         
         let daysPerWeekValue = self.daysPerWeek ?? 7
         let localeIdentifier = self.localeIdentifier
-        let rawWeekdaySymbols: [String] = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
+        let rawWeekdaySymbols: [String] = {
+            if monthIsBlank {
+                return Array(repeating: blankWeekdaySymbol ?? "_", count: max(daysInMonth, daysPerWeekValue))
+            }
+            
+            return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
+        }()
         let weekendDaysArray = self.weekendDays(location: location) ?? []
         let weekendDaysSet = Set(weekendDaysArray)
         let weekdayItems: [ASAMiniCalendarWeekdayModel] = rawWeekdaySymbols.enumerated().map { (idx, sym) in

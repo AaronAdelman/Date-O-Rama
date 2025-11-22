@@ -1,25 +1,33 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "JulianDayNumber",
-        "repositoryURL": "https://github.com/sbooth/JulianDayNumber?tab=readme-ov-file",
-        "state": {
-          "branch": null,
-          "revision": "bf9e525b0de6eef158d9e0ed77836ea12e528d49",
-          "version": "0.7.0"
-        }
-      },
-      {
-        "package": "SwiftAA",
-        "repositoryURL": "https://github.com/onekiloparsec/SwiftAA",
-        "state": {
-          "branch": "master",
-          "revision": "c839366fe580327da3ab164a25202dfa5f4825e4",
-          "version": null
-        }
+  "originHash" : "d7fa3523d7c2d9d32e934041607df0696a24e5612a582b05a28ba9ffe70d1775",
+  "pins" : [
+    {
+      "identity" : "frenchrepublicancalendarcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AaronAdelman/FrenchRepublicanCalendarCore",
+      "state" : {
+        "branch" : "main",
+        "revision" : "eaa8905c915c847d554dd88390bd1c9fa68b08f3"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "juliandaynumber?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbooth/JulianDayNumber?tab=readme-ov-file",
+      "state" : {
+        "revision" : "bf9e525b0de6eef158d9e0ed77836ea12e528d49",
+        "version" : "0.7.0"
+      }
+    },
+    {
+      "identity" : "swiftaa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onekiloparsec/SwiftAA",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c839366fe580327da3ab164a25202dfa5f4825e4"
+      }
+    }
+  ],
+  "version" : 3
 }

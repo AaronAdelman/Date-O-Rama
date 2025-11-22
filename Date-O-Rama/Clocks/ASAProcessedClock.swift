@@ -114,7 +114,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
         if self.supportsMonths {
-            let (weekdayItems, dayItems) = clock.miniCalendarData(day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, location: location)
+            let (weekdayItems, dayItems) = clock.miniCalendarData(day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, blankWeekdaySymbol: blankWeekdaySymbol, location: location)
             self.miniCalendarWeekdayItems = weekdayItems
             self.miniCalendarDayItems = dayItems
         } else {

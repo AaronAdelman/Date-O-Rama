@@ -22,10 +22,10 @@ class ASACalendarFactory {
             return ASAJulianDayCalendar(calendarCode:  code)
         } else if code.isSunsetTransitionCalendar {
             return ASASunsetTransitionCalendar(calendarCode: code)
-        } else if code.isFrenchRepublicanCalendar {
+        } else if code == .frenchRepublican {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
         } else if code == .julian {
-            return ASAJulianCalendar(calendarCode: code)
+            return ASABoothCalendar(calendarCode: code)
         }
      
         return nil

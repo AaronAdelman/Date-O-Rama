@@ -1,5 +1,5 @@
 //
-//  ASAJulianCalendar.swift
+//  ASABoothCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 13/06/2022.
@@ -9,7 +9,7 @@
 import Foundation
 import JulianDayNumber
 
-public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras {
+public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras {
     var calendarCode: ASACalendarCode
     
     public let BCE = 0
@@ -225,16 +225,28 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 3)
 
                 case "E", "EE", "EEE", "eee":
-                    let symbols = self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
 
                 case "EEEE", "eeee":
-                    let symbols = self.weekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
-
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.weekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
+                    
                 case "EEEEE", "eeeee":
-                    let symbols = self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
                     
                 case "e", "c":
                     let dayOfWeek = dateComponents.weekday!
@@ -245,17 +257,29 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
                     symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 2)
                     
                 case "ccc":
-                    let symbols = self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
-
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
+                    
                 case "cccc":
-                    let symbols = self.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
-
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
+                    
                 case "ccccc":
-                    let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-                    symbol = symbols[dateComponents.weekday! - 1]
-
+                    if dateComponents.weekday! == 0 {
+                        symbol = "_"
+                    } else {
+                        let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                        symbol = symbols[dateComponents.weekday! - 1]
+                    }
+                    
                 case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg", "r", "rr", "rrr", "rrrr", "rrrrr": // TODO:  Implement these!
                     symbol = "<\(component.string)>"
                     
@@ -312,7 +336,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         return (dateString, timeString, components)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
-    private lazy var gregorianCalendar = Calendar.gregorian
+    private lazy var gregorianCalendar = Foundation.Calendar(identifier: .gregorian)
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         gregorianCalendar.timeZone = locationData.timeZone
@@ -350,7 +374,9 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
     func date(dateComponents: ASADateComponents) -> Date? {
-        guard let era = dateComponents.era, let year = dateComponents.year, let month = dateComponents.month, let day = dateComponents.day else { return nil }
+        guard let era = dateComponents.era, let year = dateComponents.year, let month = dateComponents.month, let day = dateComponents.day else {
+            return nil
+        }
         let timeZone = dateComponents.locationData.timeZone
         let result = dateFromBoothComponents(calendarCode: calendarCode, era: era, year: year, month: month, day: day, hour: dateComponents.hour ?? 0, minute: dateComponents.minute ?? 0, second: dateComponents.second ?? 0, nanosecond: dateComponents.nanosecond ?? 0, timeZone: timeZone)
         return result
@@ -422,6 +448,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let timeZone = locationData.timeZone
+        var gregorian = Calendar(identifier: .gregorian)
         let components = boothComponents(calendarCode: self.calendarCode, date: date, timeZone: timeZone)
         let era = components.era
         let year = components.year
@@ -846,7 +873,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarW
         return .system
     } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
 
-} // class ASAJulianCalendar
+} // class ASABoothCalendar
 
 
 // MARK: - Stuff I wrote above and beyond these
@@ -911,7 +938,7 @@ func astronomicalYear(era: Int, year: Int) -> Int? {
 func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
     var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
     
-    var gregorian = Calendar.gregorian
+    var gregorian = Calendar(identifier: .gregorian)
     gregorian.timeZone = timeZone
     let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: date)
     if gregorianComponents.hour == 0 && gregorianComponents.minute == 0 && gregorianComponents.second == 0 && gregorianComponents.nanosecond == 0 {
@@ -937,9 +964,27 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
     assert(boothYMD != INVALID_YMD)
 
     let day = boothYMD.day
+    let month: Int = boothYMD.month
     let boothYear: Int = boothYMD.year
-    let weekday = gregorianComponents.weekday!
-    
+//    let weekday = gregorianComponents.weekday!
+    let weekday = {
+        switch calendarCode {
+        case .julian:
+            return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
+        
+        case .frenchRepublican:
+            if month == 13 {
+                return 0
+            } else {
+                let temp: Int = day % 10
+                return temp == 0 ? 10 : temp
+            }
+            
+        default:
+            return -1
+        }
+    }()
+
     let (era, year) = {
         if calendarCode.shouldUseAstronomicalYears {
             return boothYear.eraAndYearFromAstronomicalYear
@@ -948,13 +993,21 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
         }
     }()
     
-    let month: Int = boothYMD.month
 //    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
     return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
 } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 
 func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int) -> Int {
-    return JulianCalendar.numberOfDaysIn(month: month, year: year)
+    switch calendarCode {
+    case .julian:
+        return JulianCalendar.numberOfDaysIn(month: month, year: year)
+
+    case .frenchRepublican:
+        return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
+        
+    default:
+        return -1
+    }
 } // func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int)
 
 func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
@@ -997,7 +1050,7 @@ fileprivate func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, m
     return dayOfYear
 } // func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int
 
-extension ASAJulianCalendar: ASACalendarWithEaster {
+extension ASABoothCalendar: ASACalendarWithEaster {
     func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
         switch era {
         case BCE:
@@ -1011,3 +1064,4 @@ extension ASAJulianCalendar: ASACalendarWithEaster {
         } // switch era
     }
 }
+

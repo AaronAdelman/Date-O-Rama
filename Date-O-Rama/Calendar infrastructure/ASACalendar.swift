@@ -119,6 +119,7 @@ extension ASACalendar {
     
     func daysInMonth(locationData: ASALocation, era: Int, year: Int, month: Int) -> Int? {
         let tempComponents = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: month, day: 1)
+                
         let tempDate = (self.date(dateComponents: tempComponents))!
         let numberOfDaysInMonth = self.daysInMonth(for: tempDate)
         return numberOfDaysInMonth
