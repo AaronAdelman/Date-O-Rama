@@ -11,6 +11,15 @@ import JulianDayNumber
 
 public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlankMonths {
     
+    override var daysPerWeek: Int { return 10 }
+    
+    override var numberOfMonthsInYear: Int { return FrenchRepublicanCalendar.numberOfMonthsInYear }
+    
+    override func daysInMonth(era: Int, year: Int, month: Int) -> Int {
+        return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
+
+    } // func daysInMonth(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int
+    
     override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
         return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
     } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool

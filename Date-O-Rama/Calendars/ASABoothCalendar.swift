@@ -556,7 +556,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 let month = components.month ?? -1
                 let year  = components.year ?? -1
                 let era   = components.era ?? -1
-                return Range(1...daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month))
+                return Range(1...daysInMonth(era: era, year: year, month: month))
                 
             default:
                 return nil
@@ -578,32 +578,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         .system
     }
     
-    var daysPerWeek: Int {
-        switch calendarCode {
-        case .julian:
-            return 7
-            
-        case .frenchRepublican:
-            return 10
-            
-        default:
-            return -1
-        }
-    } // var daysPerWeek
+    // TODO:  Override when implementing a new calendar.
+    var daysPerWeek: Int { return -1 }
     
-    // TODO:  This computed variable will need to be edited if one of Booth’s calendars does not have constant number of months in the year.
-    var numberOfMonthsInYear: Int {
-        switch self.calendarCode {
-        case .julian:
-            return JulianCalendar.numberOfMonthsInYear
-            
-        case .frenchRepublican:
-            return FrenchRepublicanCalendar.numberOfMonthsInYear
-            
-        default:
-            return -1
-        }
-    } // var numberOfMonthsInYear
+    // TODO:  Override when implementing a new calendar.
+    var numberOfMonthsInYear: Int { return -1 }
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return []
@@ -757,18 +736,10 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
     } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 
-    func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int) -> Int {
-        switch calendarCode {
-        case .julian:
-            return JulianCalendar.numberOfDaysIn(month: month, year: year)
-            
-        case .frenchRepublican:
-            return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
-            
-        default:
-            return -1
-        }
-    } // func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int)
+    // TODO: Override when implementing a new calendar
+    func daysInMonth(era: Int, year: Int, month: Int) -> Int {
+        return -1
+    } // func daysInMonth(era: Int, year: Int, month: Int)
 
     func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
         guard era >= 0 else { return false }
@@ -781,7 +752,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             return false
         }
         
-        let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month)
+        let daysInMonth = daysInMonth(era: era, year: year, month: month)
         if day > daysInMonth {
             return false
         }
@@ -816,7 +787,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         var dayOfYear = day
         if month > 1 {
             for m in 1..<month {
-                let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: m)
+                let daysInMonth = daysInMonth(era: era, year: year, month: m)
                 dayOfYear += daysInMonth
             }
         }

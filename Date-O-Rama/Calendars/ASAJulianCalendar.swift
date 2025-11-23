@@ -16,6 +16,16 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
     
     // MARK: -
     
+    override var daysPerWeek: Int { return 7 }
+    
+    override var numberOfMonthsInYear: Int { return JulianCalendar.numberOfMonthsInYear }
+    
+    override func daysInMonth(era: Int, year: Int, month: Int) -> Int {
+        guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return -1 }
+
+        return JulianCalendar.numberOfDaysIn(month: month, year: astronomicalYear)
+    } // func daysInMonth(era: Int, year: Int, month: Int)
+    
     override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
         return month == 2 && isLeapYear(calendarCode: .julian, era: era, year: year)
     } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
