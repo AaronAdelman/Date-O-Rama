@@ -696,10 +696,173 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return .system
     } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
     
+    func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
+        var usedYear: Int
+        if calendarCode.shouldUseAstronomicalYears {
+            guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
+            usedYear = astronomicalYear
+        } else {
+            usedYear = year
+        }
+        
+        switch calendarCode {
+        case .julian:
+            return JulianCalendar.isLeapYear(usedYear)
+            
+        case .frenchRepublican:
+            return FrenchRepublicanCalendar.isLeapYear(usedYear)
+            
+        default:
+            return false
+        } // switch calendarCode
+    } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
+
+    func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
+        var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
+        
+        var gregorian = Calendar(identifier: .gregorian)
+        gregorian.timeZone = timeZone
+        let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: date)
+        if gregorianComponents.hour == 0 && gregorianComponents.minute == 0 && gregorianComponents.second == 0 && gregorianComponents.nanosecond == 0 {
+            dateAsJulianDate += 1
+        }
+        
+        let INVALID_YMD: (year: Int, month: Int, day: Int) = (-1, -1, -1)
+        
+        let boothYMD: (year: Int, month: Int, day: Int) = {
+            switch calendarCode {
+            case .julian:
+                let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
+                return (temp.year, temp.month, temp.day)
+                
+            case .frenchRepublican:
+                let temp =  GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: FrenchRepublicanCalendar.self)
+                return (temp.year, temp.month, temp.day)
+                
+            default:
+                return INVALID_YMD
+            }
+        }()
+        assert(boothYMD != INVALID_YMD)
+        
+        let day = boothYMD.day
+        let month: Int = boothYMD.month
+        let boothYear: Int = boothYMD.year
+        //    let weekday = gregorianComponents.weekday!
+        let weekday = {
+            switch calendarCode {
+            case .julian:
+                return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
+                
+            case .frenchRepublican:
+                if month == 13 {
+                    return 0
+                } else {
+                    let temp: Int = day % 10
+                    return temp == 0 ? 10 : temp
+                }
+                
+            default:
+                return -1
+            }
+        }()
+        
+        let (era, year) = {
+            if calendarCode.shouldUseAstronomicalYears {
+                return boothYear.eraAndYearFromAstronomicalYear
+            } else {
+                return (0, boothYear)
+            }
+        }()
+        
+        //    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
+        return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
+    } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
+
+    func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int) -> Int {
+        switch calendarCode {
+        case .julian:
+            return JulianCalendar.numberOfDaysIn(month: month, year: year)
+            
+        case .frenchRepublican:
+            return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
+            
+        default:
+            return -1
+        }
+    } // func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int)
+
+    func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
+        guard era >= 0 else { return false }
+        //    guard era <= 1 else { return false }
+        
+        guard month >=  1 else { return false }
+        //    guard month <= 12 else { return false }
+        
+        if day < 1 {
+            return false
+        }
+        
+        let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month)
+        if day > daysInMonth {
+            return false
+        }
+        
+        return true
+    } // func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool
+
+    func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
+        guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
+        
+        let julianDate: JulianDate = {
+            switch calendarCode {
+            case .julian:
+                guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return JulianDate.nan }
+                return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
+                
+            case .frenchRepublican:
+                return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
+
+            default:
+                return JulianDate.nan
+            }
+        }()
+        
+        let secondsFromGMT = timeZone.secondsFromGMT()
+        let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
+        let date = Date.date(julianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
+        return date
+    } // func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date?
+
+    fileprivate func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int {
+        var dayOfYear = day
+        if month > 1 {
+            for m in 1..<month {
+                let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: m)
+                dayOfYear += daysInMonth
+            }
+        }
+        return dayOfYear
+    } // func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int
+
 } // class ASABoothCalendar
 
 
 // MARK: - Stuff I wrote above and beyond these
+
+func astronomicalYear(era: Int, year: Int) -> Int? {
+    switch era {
+    case 0:
+        return -(year - 1)
+        
+    case 1:
+        return year
+        
+    default:
+        return nil
+    }
+}
+
 
 extension ASACalendarCode {
     var shouldUseAstronomicalYears: Bool {
@@ -722,166 +885,3 @@ extension Int {
         }
     }
 }
-
-func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
-    var usedYear: Int
-    if calendarCode.shouldUseAstronomicalYears {
-        guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
-        usedYear = astronomicalYear
-    } else {
-        usedYear = year
-    }
-    
-    switch calendarCode {
-    case .julian:
-        return JulianCalendar.isLeapYear(usedYear)
-        
-    case .frenchRepublican:
-        return FrenchRepublicanCalendar.isLeapYear(usedYear)
-        
-    default:
-        return false
-    } // switch calendarCode
-} // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
-
-func astronomicalYear(era: Int, year: Int) -> Int? {
-    switch era {
-    case 0:
-        return -(year - 1)
-        
-    case 1:
-        return year
-        
-    default:
-        return nil
-    }
-}
-
-// TODO:  This function must be modified to add more calendar systems.
-func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
-    var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
-    
-    var gregorian = Calendar(identifier: .gregorian)
-    gregorian.timeZone = timeZone
-    let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: date)
-    if gregorianComponents.hour == 0 && gregorianComponents.minute == 0 && gregorianComponents.second == 0 && gregorianComponents.nanosecond == 0 {
-        dateAsJulianDate += 1
-    }
-    
-    let INVALID_YMD: (year: Int, month: Int, day: Int) = (-1, -1, -1)
-    
-    let boothYMD: (year: Int, month: Int, day: Int) = {
-        switch calendarCode {
-        case .julian:
-            let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
-            return (temp.year, temp.month, temp.day)
-            
-        case .frenchRepublican:
-            let temp =  GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: FrenchRepublicanCalendar.self)
-            return (temp.year, temp.month, temp.day)
-            
-        default:
-            return INVALID_YMD
-        }
-    }()
-    assert(boothYMD != INVALID_YMD)
-    
-    let day = boothYMD.day
-    let month: Int = boothYMD.month
-    let boothYear: Int = boothYMD.year
-    //    let weekday = gregorianComponents.weekday!
-    let weekday = {
-        switch calendarCode {
-        case .julian:
-            return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
-            
-        case .frenchRepublican:
-            if month == 13 {
-                return 0
-            } else {
-                let temp: Int = day % 10
-                return temp == 0 ? 10 : temp
-            }
-            
-        default:
-            return -1
-        }
-    }()
-    
-    let (era, year) = {
-        if calendarCode.shouldUseAstronomicalYears {
-            return boothYear.eraAndYearFromAstronomicalYear
-        } else {
-            return (0, boothYear)
-        }
-    }()
-    
-    //    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
-    return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
-} // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
-
-func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int) -> Int {
-    switch calendarCode {
-    case .julian:
-        return JulianCalendar.numberOfDaysIn(month: month, year: year)
-        
-    case .frenchRepublican:
-        return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
-        
-    default:
-        return -1
-    }
-} // func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int)
-
-func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
-    guard era >= 0 else { return false }
-    //    guard era <= 1 else { return false }
-    
-    guard month >=  1 else { return false }
-    //    guard month <= 12 else { return false }
-    
-    if day < 1 {
-        return false
-    }
-    
-    let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: month)
-    if day > daysInMonth {
-        return false
-    }
-    
-    return true
-} // func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool
-
-func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
-    guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
-    
-    let julianDate: JulianDate = {
-        switch calendarCode {
-        case .julian:
-            guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return JulianDate.nan }
-            return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
-            
-        case .frenchRepublican:
-            return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
-
-        default:
-            return JulianDate.nan
-        }
-    }()
-    
-    let secondsFromGMT = timeZone.secondsFromGMT()
-    let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
-    let date = Date.date(julianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
-    return date
-} // func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date?
-
-fileprivate func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int {
-    var dayOfYear = day
-    if month > 1 {
-        for m in 1..<month {
-            let daysInMonth = daysForMonthInBoothCalendar(calendarCode: calendarCode, era: era, year: year, month: m)
-            dayOfYear += daysInMonth
-        }
-    }
-    return dayOfYear
-} // func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int
