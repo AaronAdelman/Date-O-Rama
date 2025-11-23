@@ -7,8 +7,18 @@
 //
 
 import Foundation
+import JulianDayNumber
 
 public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlankMonths {
+    
+    override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
+        return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
+    } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
+    
+    override func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
+        return FrenchRepublicanCalendar.isLeapYear(year)
+    } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
+    
     // MARK:  - ASACalendarWithWeeks
     
     override func weekdaySymbols(localeIdentifier: String) -> Array<String> {

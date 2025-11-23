@@ -430,17 +430,9 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         } // switch component
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
     
-    fileprivate func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
-        switch self.calendarCode {
-        case .julian:
-            return month == 2 && isLeapYear(calendarCode: .julian, era: era, year: year)
-            
-        case .frenchRepublican:
-            return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
-            
-        default:
-            return false
-        } // switch self.calendarCode
+    func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
+        // TODO:  Must override when subclassing
+        return false
     } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
@@ -696,25 +688,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return .system
     } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
     
+    // MARK: -
+    
     func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
-        var usedYear: Int
-        if calendarCode.shouldUseAstronomicalYears {
-            guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
-            usedYear = astronomicalYear
-        } else {
-            usedYear = year
-        }
-        
-        switch calendarCode {
-        case .julian:
-            return JulianCalendar.isLeapYear(usedYear)
-            
-        case .frenchRepublican:
-            return FrenchRepublicanCalendar.isLeapYear(usedYear)
-            
-        default:
-            return false
-        } // switch calendarCode
+        // TODO:  Override when implementing a new calendar
+        return false
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
 
     func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {

@@ -13,6 +13,21 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
     public let BCE = 0
     public let CE  = 1
     
+    
+    // MARK: -
+    
+    override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
+        return month == 2 && isLeapYear(calendarCode: .julian, era: era, year: year)
+    } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
+    
+    override func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
+        guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return false }
+        
+        return JulianCalendar.isLeapYear(astronomicalYear)
+    } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
+    
+    // MARK: -
+    
     override func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.gregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
     } // override func weekdaySymbols(localeIdentifier: String) -> Array<String>
