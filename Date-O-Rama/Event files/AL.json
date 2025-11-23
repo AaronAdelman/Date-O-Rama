@@ -18,7 +18,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 9, d: 5}, inherits: "St. Teresa of Calcutta", urls: {"en": "https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
-        {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1912}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-independence-day/"}},
+        {type: "D", start: {mon: 11, d: 28}, inherits: "Independence Day", first: {era: 1, y: 1912}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-independence-day/"}, notes: {"en": "Albania Flag Day"}},
         {type: "D", start: {mon: 11, d: 29}, inherits: "Liberation Day", first: {era: 1, y: 1944}, urls: {"en": "https://www.daysoftheyear.com/days/albanian-liberation-day/"}},
         {type: "D", start: {mon: 8, d: 12}, inherits: "Natl Youth Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
