@@ -69,7 +69,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     
     private var dateFormatter = DateFormatter()
     private var formatter = NumberFormatter()
-
+    
     fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String {
         
         formatter.minimumIntegerDigits = minimumIntegerDigits
@@ -109,7 +109,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "G", "GG", "GGG":
                     let symbols = self.eraSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[0]
-
+                    
                 case "GGGG":
                     let symbols = self.longEraSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[0]
@@ -126,7 +126,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                     let year = dateComponents.year!
                     let revisedYear = year % 100
                     symbol = stringFromInteger(revisedYear, minimumIntegerDigits: 2)
-
+                    
                 case "yyy", "YYY", "uuu", "UUU":
                     let year = dateComponents.year!
                     symbol = stringFromInteger(year, minimumIntegerDigits: 3)
@@ -134,7 +134,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "yyyy", "YYYY", "uuuu", "UUUU":
                     let year = dateComponents.year!
                     symbol = stringFromInteger(year, minimumIntegerDigits: 4)
-
+                    
                 case "yyyyy", "YYYYY", "uuuuu", "UUUUU":
                     let year = dateComponents.year!
                     symbol = stringFromInteger(year, minimumIntegerDigits: 5)
@@ -147,22 +147,22 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                     let quarter = dateComponents.quarter!
                     let symbols = self.shortQuarterSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[quarter - 1]
-
+                    
                 case "QQQQ":
                     let quarter = dateComponents.quarter!
                     let symbols = self.quarterSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[quarter - 1]
-
+                    
                 case "qqq":
                     let quarter = dateComponents.quarter!
                     let symbols = self.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[quarter - 1]
-
+                    
                 case "qqqq":
                     let quarter = dateComponents.quarter!
                     let symbols = self.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[quarter - 1]
-
+                    
                 case "M", "MM":
                     let month = dateComponents.month!
                     symbol = stringFromInteger(month, minimumIntegerDigits: 2)
@@ -170,11 +170,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "MMM":
                     let symbols = self.shortMonthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
-
+                    
                 case "MMMM":
                     let symbols = self.monthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
-
+                    
                 case "MMMMM":
                     let symbols = self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
@@ -186,11 +186,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "LLL":
                     let symbols = self.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
-
+                    
                 case "LLLL":
                     let symbols = self.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
-
+                    
                 case "LLLLL":
                     let symbols = self.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[dateComponents.month! - 1]
@@ -201,7 +201,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "d":
                     let day = dateComponents.day!
                     symbol = stringFromInteger(day, minimumIntegerDigits: 1)
-
+                    
                 case "dd":
                     let day = dateComponents.day!
                     symbol = stringFromInteger(day, minimumIntegerDigits: 2)
@@ -210,17 +210,17 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                     let era = dateComponents.era!
                     let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 1)
-
+                    
                 case "DD":
                     let era = dateComponents.era!
                     let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 2)
-
+                    
                 case "DDD":
                     let era = dateComponents.era!
                     let dayInYear = dayOfYear(calendarCode: dateComponents.calendar.calendarCode, era: era, year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
                     symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 3)
-
+                    
                 case "E", "EE", "EEE", "eee":
                     if dateComponents.weekday! == 0 {
                         symbol = "_"
@@ -228,7 +228,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                         let symbols = self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
                         symbol = symbols[dateComponents.weekday! - 1]
                     }
-
+                    
                 case "EEEE", "eeee":
                     if dateComponents.weekday! == 0 {
                         symbol = "_"
@@ -248,7 +248,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 case "e", "c":
                     let dayOfWeek = dateComponents.weekday!
                     symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 1)
-
+                    
                 case "ee", "cc":
                     let dayOfWeek = dateComponents.weekday!
                     symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 2)
@@ -317,7 +317,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case 7, 8, 9:
             quarter = 3
             
-        case 10, 11, 12:
+        case 10, 11, 12, 13:
             quarter = 4
             
         default:
@@ -333,7 +333,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return (dateString, timeString, components)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
-    private lazy var gregorianCalendar = Foundation.Calendar(identifier: .gregorian)
+    lazy var gregorianCalendar = Foundation.Calendar(identifier: .gregorian)
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         gregorianCalendar.timeZone = locationData.timeZone
@@ -363,7 +363,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             return false
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
-
+    
     func isValidDate(dateComponents: ASADateComponents) -> Bool {
         guard let era = dateComponents.era, let year = dateComponents.year, let month = dateComponents.month, let day = dateComponents.day else { return false }
         
@@ -424,7 +424,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             
         case .nanosecond:
             return components.nanosecond ?? -1
-             
+            
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return -1
         } // switch component
@@ -437,7 +437,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             
         case .frenchRepublican:
             return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
-
+            
         default:
             return false
         } // switch self.calendarCode
@@ -455,7 +455,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         let result = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: components.month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: nil, minute: nil, second: nil, nanosecond: nil)
         return result
     }
-        
+    
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
@@ -614,150 +614,65 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     } // var numberOfMonthsInYear
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
-            
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func weekdaySymbols(localeIdentifier: String) -> Array<String>
     
     func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
-            
-        default:
-            return []
-        } // switch calendarCode
+        return []
     }
     
     func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
-                            
-        default:
-            return []
-        } // switch calendarCode
+        return []
     }
     
     func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     }
     
     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     }
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
-            // TODO:  More cases may need to be added if Booth implemented more calendars with a week length other than 7.
-            return         self.gregorianCalendar.weekendDays(for: regionCode)
+        return         self.gregorianCalendar.weekendDays(for: regionCode)
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.monthSymbols(localeIdentifier: localeIdentifier)
-            
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func monthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func shortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func veryShortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func standaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        } // switch calendarCode
+        return []
     } // func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
-        
+    
     func eraSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.eraSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        }
+        return []
     } // func eraSymbols(localeIdentifier: String) -> Array<String>
     
     func longEraSymbols(localeIdentifier: String) -> Array<String> {
-        switch calendarCode {
-        case .julian:
-            return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
-
-        default:
-            return []
-        }
+        return []
     } //func longEraSymbols(localeIdentifier: String) -> Array<String>
-        
+    
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.gregorianCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
     }
@@ -780,7 +695,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
         return .system
     } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
-
+    
 } // class ASABoothCalendar
 
 
@@ -854,32 +769,32 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
     }
     
     let INVALID_YMD: (year: Int, month: Int, day: Int) = (-1, -1, -1)
-
+    
     let boothYMD: (year: Int, month: Int, day: Int) = {
         switch calendarCode {
         case .julian:
             let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
             return (temp.year, temp.month, temp.day)
-
+            
         case .frenchRepublican:
             let temp =  GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: FrenchRepublicanCalendar.self)
             return (temp.year, temp.month, temp.day)
-
+            
         default:
             return INVALID_YMD
         }
     }()
     assert(boothYMD != INVALID_YMD)
-
+    
     let day = boothYMD.day
     let month: Int = boothYMD.month
     let boothYear: Int = boothYMD.year
-//    let weekday = gregorianComponents.weekday!
+    //    let weekday = gregorianComponents.weekday!
     let weekday = {
         switch calendarCode {
         case .julian:
             return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
-        
+            
         case .frenchRepublican:
             if month == 13 {
                 return 0
@@ -892,7 +807,7 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
             return -1
         }
     }()
-
+    
     let (era, year) = {
         if calendarCode.shouldUseAstronomicalYears {
             return boothYear.eraAndYearFromAstronomicalYear
@@ -901,7 +816,7 @@ func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZo
         }
     }()
     
-//    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
+    //    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
     return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
 } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 
@@ -909,7 +824,7 @@ func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: 
     switch calendarCode {
     case .julian:
         return JulianCalendar.numberOfDaysIn(month: month, year: year)
-
+        
     case .frenchRepublican:
         return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
         
@@ -920,10 +835,10 @@ func daysForMonthInBoothCalendar(calendarCode: ASACalendarCode, era: Int, year: 
 
 func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
     guard era >= 0 else { return false }
-//    guard era <= 1 else { return false }
+    //    guard era <= 1 else { return false }
     
     guard month >=  1 else { return false }
-//    guard month <= 12 else { return false }
+    //    guard month <= 12 else { return false }
     
     if day < 1 {
         return false
@@ -939,8 +854,21 @@ func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int
 
 func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
     guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
-    guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return nil }
-    let julianDate = JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
+    
+    let julianDate: JulianDate = {
+        switch calendarCode {
+        case .julian:
+            guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return JulianDate.nan }
+            return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
+            
+        case .frenchRepublican:
+            return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
+
+        default:
+            return JulianDate.nan
+        }
+    }()
+    
     let secondsFromGMT = timeZone.secondsFromGMT()
     let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
     let date = Date.date(julianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
