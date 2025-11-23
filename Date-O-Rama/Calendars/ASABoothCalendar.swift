@@ -12,9 +12,6 @@ import JulianDayNumber
 public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithEras {
     var calendarCode: ASACalendarCode
     
-    public let BCE = 0
-    public let CE  = 1
-    
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
     } // init(calendarCode:  ASACalendarCode)
@@ -960,19 +957,3 @@ fileprivate func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, m
     }
     return dayOfYear
 } // func dayOfYear(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Int
-
-extension ASABoothCalendar: ASACalendarWithEaster {
-    func calculateEaster(era: Int, year: Int) -> (month: Int, day: Int)? {
-        switch era {
-        case BCE:
-            return nil
-            
-        case CE:
-            return JulianCalendar.easter(year: year)
-            
-        default:
-            return nil
-        } // switch era
-    }
-}
-

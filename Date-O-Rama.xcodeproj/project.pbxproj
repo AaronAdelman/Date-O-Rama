@@ -193,6 +193,9 @@
 		A54B61B52A9267FA005CC33D /* XK (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A54B61B32A9267FA005CC33D /* XK (Julian).json */; };
 		A54B61B72A93F25E005CC33D /* KG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A54B61B62A93F25E005CC33D /* KG (Julian).json */; };
 		A54B61B82A93F25E005CC33D /* KG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A54B61B62A93F25E005CC33D /* KG (Julian).json */; };
+		A54BFD892ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */; };
+		A54BFD8A2ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */; };
+		A54BFD8B2ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F094226D57FF70093E13F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
@@ -1377,6 +1380,7 @@
 		A54B61B02A9248A9005CC33D /* KZ (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KZ (Julian).json"; sourceTree = "<group>"; };
 		A54B61B32A9267FA005CC33D /* XK (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "XK (Julian).json"; sourceTree = "<group>"; };
 		A54B61B62A93F25E005CC33D /* KG (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "KG (Julian).json"; sourceTree = "<group>"; };
+		A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianCalendar.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocksCell.swift; sourceTree = "<group>"; };
 		A554AFA2294F7CED0068D8E0 /* BA (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BA (Julian).json"; sourceTree = "<group>"; };
@@ -1942,6 +1946,7 @@
 				A53437502857971800F8E8AF /* ASABoothCalendar.swift */,
 				A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */,
 				A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */,
+				A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */,
 				A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */,
 				A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */,
 			);
@@ -3782,6 +3787,7 @@
 				A5F154A72ECC9BAC00A22FCF /* ASACloseButton.swift in Sources */,
 				A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
+				A54BFD8A2ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */,
 				A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */,
 				A5D135B727C2C2A100A1A525 /* ASACalendarWithWeeks.swift in Sources */,
 				A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */,
@@ -3948,6 +3954,7 @@
 				A5FFBD3A2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */,
 				A5DB52D8278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A507794228915A0700A98D01 /* ASALocationTypeCell.swift in Sources */,
+				A54BFD8B2ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */,
 				A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */,
 				A58F39F92DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
@@ -4059,6 +4066,7 @@
 				A5E75B382EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */,
 				A557AD1625DD495400A264B6 /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A557AD0825DD495400A264B6 /* EKCalendarExtensions.swift in Sources */,
+				A54BFD892ED37E3900C1F608 /* ASAJulianCalendar.swift in Sources */,
 				A5E1CC5E2631A10C00D55B00 /* ASAClockCellTimeEventVisibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,7 @@ class ASACalendarFactory {
         } else if code == .frenchRepublican {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
         } else if code == .julian {
-            return ASABoothCalendar(calendarCode: code)
+            return ASAJulianCalendar(calendarCode: code)
         }
      
         return nil

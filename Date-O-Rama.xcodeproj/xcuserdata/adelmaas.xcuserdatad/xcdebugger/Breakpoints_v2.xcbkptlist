@@ -31,9 +31,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "893"
-            endingLineNumber = "893"
-            landmarkName = "isLeapYear(calendarCode:era:year:)"
-            landmarkType = "9">
+            endingLineNumber = "893">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -47,9 +45,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "419"
-            endingLineNumber = "419"
-            landmarkName = "isLeapMonth(era:year:month:)"
-            landmarkType = "7">
+            endingLineNumber = "419">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,9 +59,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "611"
-            endingLineNumber = "611"
-            landmarkName = "weekdaySymbols(localeIdentifier:)"
-            landmarkType = "7">
+            endingLineNumber = "611">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
