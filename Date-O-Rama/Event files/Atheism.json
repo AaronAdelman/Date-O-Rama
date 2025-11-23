@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 4, wkd: [5], nth: 3}, titles: {"en": "National Ask An Atheist Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.checkiday.com/53d2694bbec4e3822a559a21dc5e599f/national-ask-an-atheist-day"}},
         {type: "D", start: {mon: 5, d: 4}, titles: {"en": "National Day of Reason"}, first: {era: 1, y: 2003}, emoji: "⍰", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-day-of-reason-may-4"}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Atheist Solidarity Day"}, urls: {"en": "https://www.checkiday.com/47fa1203f5066bda3c8532a43e0e6efb/atheist-solidarity-day"}, first: {era: 1, y: 2010}},
-        {type: "D", start: {mon: 6, d: 21}, titles: {"en": "World Humanist Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}, first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 6, d: 21}, titles: {"cs":"Světový den humanistů","en":"World Humanist Day","nl":"Wereldhumanismedag","nn":"Verdshumanistdagen","pt":"Dia Humanista Mundial","sh":"Svjetski humanistički dan","sk":"Svetový deň humanistov","uk":"Всесвітній день гуманізму"}, urls: {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 6, wkd: [6], nth: 1}, titles: {"en": "Hug an Atheist Day"}, first: {era: 1, y: 2009}, urls: {"en": "https://www.checkiday.com/f9ab5c74a08770fa4511b65d6e1b7a23/hug-an-atheist-day"}},
         {type: "D", start: {mon: 6, d: 6}, inherits: "Atheist Pride Day", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 6, d: 8}, titles: {"en": "Thomas Paine Day"}, urls: {"en": "https://nationaltoday.com/thomas-paine-day/"}},

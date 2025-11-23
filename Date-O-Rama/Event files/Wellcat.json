@@ -90,7 +90,7 @@
             {type: "D", start: {mon: 11, d: 19}, titles: {"en": "Have a Bad Day Day"}},
             {type: "D", start: {mon: 11, d: 20}, titles: {"en": "Name Your PC Day"}},
             {type: "D", start: {mon: 11, d: 25}, titles: {"en": "Blasé Day"}},
-            {type: "D", start: {mon: 11, d: 30}, titles: {"en": "Stay Home Because You’re Well Day"}},
+            {type: "D", start: {mon: 11, d: 30}, titles: {"en": "Stay Home Because You’re Well Day"}, notes: {"en": "National Stay Home Because You’re Well Day\nNational Stay at Home Because You’re Well Day"}},
         ]},
         {type: "D", start: {mon: 3, d: 15}, titles: {"en": "True Confessions Day", "he": "יום וידויי האמת"}},
         {type: "D", start: {mon: 7, d: 13}, titles: {"en": "Gruntled Workers Day"}},
