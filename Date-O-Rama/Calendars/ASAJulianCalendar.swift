@@ -45,6 +45,11 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
         return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
     }
     
+    override func boothYMD(gregorianComponents: DateComponents) -> (year: Int, month: Int, day: Int) {
+        let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
+        return (temp.year, temp.month, temp.day)
+    }
+    
     // MARK: -
     
     override func weekdaySymbols(localeIdentifier: String) -> Array<String> {

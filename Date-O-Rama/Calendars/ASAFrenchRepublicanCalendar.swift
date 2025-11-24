@@ -41,6 +41,11 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
         return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
     }
     
+    override func boothYMD(gregorianComponents: DateComponents) -> (year: Int, month: Int, day: Int) {
+        let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: FrenchRepublicanCalendar.self)
+        return (temp.year, temp.month, temp.day)
+    }
+    
     
     // MARK:  - ASACalendarWithWeeks
     

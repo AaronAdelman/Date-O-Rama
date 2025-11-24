@@ -674,14 +674,19 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     
     // MARK: -
     
+    // TODO:  Override when implementing a new calendar
     func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool {
-        // TODO:  Override when implementing a new calendar
         return false
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
 
     // TODO:  Override when implementing new calendars
     func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
         return -1
+    }
+    
+    // TODO:  Override when implementing new calendars
+    func boothYMD(gregorianComponents: DateComponents) -> (year: Int, month: Int, day: Int) {
+        return (-1, -1, -1)
     }
     
     func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
@@ -694,23 +699,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             dateAsJulianDate += 1
         }
         
-        let INVALID_YMD: (year: Int, month: Int, day: Int) = (-1, -1, -1)
-        
-        let boothYMD: (year: Int, month: Int, day: Int) = {
-            switch calendarCode {
-            case .julian:
-                let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
-                return (temp.year, temp.month, temp.day)
-                
-            case .frenchRepublican:
-                let temp =  GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: FrenchRepublicanCalendar.self)
-                return (temp.year, temp.month, temp.day)
-                
-            default:
-                return INVALID_YMD
-            }
-        }()
-        assert(boothYMD != INVALID_YMD)
+        let boothYMD: (year: Int, month: Int, day: Int) = boothYMD(gregorianComponents: gregorianComponents)
         
         let day = boothYMD.day
         let month: Int = boothYMD.month
