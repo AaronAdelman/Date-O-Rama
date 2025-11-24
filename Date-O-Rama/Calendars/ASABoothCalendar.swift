@@ -70,7 +70,10 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     private var dateFormatter = DateFormatter()
     private var formatter = NumberFormatter()
     
-    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String {
+    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int, isRoman: Bool = false) -> String {
+        if isRoman {
+            return integerValue.RomanNumeral
+        }
         
         formatter.minimumIntegerDigits = minimumIntegerDigits
         let symbol = self.formatter.string(from: NSNumber(value: integerValue))!
@@ -295,11 +298,60 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return result
     } // func dateString(dateComponents: ASADateComponents, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
-    fileprivate func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        self.dateFormatter.calendar = gregorianCalendar
-        self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: locationData.timeZone)
-        self.dateFormatter.apply(dateFormat: .none)
-        return self.dateFormatter.string(from: now)
+    fileprivate func timeString(dateComponents: ASADateComponents, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+        self.dateFormatter.timeStyle = .medium // As of this writing, only the medium time style (more or less) is supported.
+        self.dateFormatter.dateStyle = .none
+        let timeFormatPattern = self.dateFormatter.dateFormat ?? ""
+        let components = timeFormatPattern.dateFormatPatternComponents
+                var result = ""
+                formatter.locale = Locale(identifier: localeIdentifier)
+
+        for component in components {
+            switch component.type {
+            case .literal:
+                result.append(component.string)
+                
+            case .symbol:
+                var symbol = ""
+                switch component.string {
+                case "a", "aa", "aaa", "aaaa", "aaaaa", "b", "bb", "bbb", "bbbb", "bbbbb", "B", "BB", "BBB", "BBBB", "BBBBB":
+                    symbol = "" // The French Republican Calendar does not divide the day into two periods.
+                    
+                case "h", "hh", "H", "HH", "k", "kk", "K", "KK", "j", "jj", "jjj", "jjjj", "jjjjj", "jjjjjj", "J", "JJ", "C", "CC", "CCC", "CCCC", "CCCCC", "CCCCCC":
+                    let hour = dateComponents.hour!
+                    symbol = stringFromInteger(hour, minimumIntegerDigits: 1, isRoman: false)
+                    
+                case "m":
+                    let minute = dateComponents.minute!
+                    symbol = stringFromInteger(minute, minimumIntegerDigits: 1, isRoman: false)
+
+                case "mm":
+                    let minute = dateComponents.minute!
+                    symbol = stringFromInteger(minute, minimumIntegerDigits: 2, isRoman: false)
+
+                case "s":
+                    let second = dateComponents.second!
+                    symbol = stringFromInteger(second, minimumIntegerDigits: 1, isRoman: false)
+
+                case "ss":
+                    let second = dateComponents.second!
+                    symbol = stringFromInteger(second, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "S", "SS", "SSS", "SSSS", "A", "AA", "AAA", "AAAA":
+                    symbol = component.string // TODO:  Implement these?
+                    
+                case "z", "zz", "zzz", "zzzz", "Z", "ZZ", "ZZZ", "ZZZZ", "ZZZZZ", "O", "OOOO", "v", "vvvv", "V", "VV", "VVV", "VVVV", "X", "XX", "XXX", "XXXX", "XXXXX", "x", "xx", "xxx", "xxxx", "xxxxx":
+                    symbol = "" // Time zone is not handled here.
+
+                default:
+                    symbol = component.string
+                }
+                result.append(symbol)
+            } // switch component.type
+        } // for component in components
+        
+        return result
+
     } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
     
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
@@ -341,7 +393,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         
         let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, quarter: quarter, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
         let dateString = dateString(dateComponents: components, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
-        let timeString = timeString(now: now, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
+        let timeString = timeString(dateComponents: components, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
         return (dateString, timeString, components)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
