@@ -36,6 +36,15 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
         return JulianCalendar.isLeapYear(astronomicalYear)
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
     
+    override func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
+        return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
+    }
+    
+    override func julianDateFrom(era: Int, year: Int, month: Int, day: Int) -> JulianDate {
+        guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return JulianDate.nan }
+        return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
+    }
+    
     // MARK: -
     
     override func weekdaySymbols(localeIdentifier: String) -> Array<String> {

@@ -28,6 +28,20 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
         return FrenchRepublicanCalendar.isLeapYear(year)
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
     
+    override func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
+        if month == 13 {
+            return 0
+        } else {
+            let temp: Int = day % 10
+            return temp == 0 ? 10 : temp
+        }
+    }
+    
+    override func julianDateFrom(era: Int, year: Int, month: Int, day: Int) -> JulianDate {
+        return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
+    }
+    
+    
     // MARK:  - ASACalendarWithWeeks
     
     override func weekdaySymbols(localeIdentifier: String) -> Array<String> {

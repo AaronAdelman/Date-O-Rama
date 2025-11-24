@@ -679,6 +679,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return false
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
 
+    // TODO:  Override when implementing new calendars
+    func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
+        return -1
+    }
+    
     func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
         var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
         
@@ -710,24 +715,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         let day = boothYMD.day
         let month: Int = boothYMD.month
         let boothYear: Int = boothYMD.year
-        //    let weekday = gregorianComponents.weekday!
-        let weekday = {
-            switch calendarCode {
-            case .julian:
-                return JulianCalendar.dayOfWeek(JulianDayNumber(dateAsJulianDate))
-                
-            case .frenchRepublican:
-                if month == 13 {
-                    return 0
-                } else {
-                    let temp: Int = day % 10
-                    return temp == 0 ? 10 : temp
-                }
-                
-            default:
-                return -1
-            }
-        }()
+        let weekday = dayOfWeek(dateAsJulianDate: dateAsJulianDate, month: month, day: day)
         
         let (era, year) = {
             if calendarCode.shouldUseAstronomicalYears {
@@ -765,24 +753,18 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return true
     } // func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool
 
+    // TODO: Override when implementing new calendars
+    func julianDateFrom(era: Int, year: Int, month: Int, day: Int) -> JulianDate {
+        return JulianDate.nan
+    }
+    
     func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
         guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
         
-        let julianDate: JulianDate = {
-            switch calendarCode {
-            case .julian:
-                guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return JulianDate.nan }
-                return JulianCalendar.julianDateFrom(year: astronomicalYear, month: month, day: day)
-                
-            case .frenchRepublican:
-                return FrenchRepublicanCalendar.julianDateFrom(year: year, month: month, day: day)
-
-            default:
-                return JulianDate.nan
-            }
-        }()
+        let julianDate: JulianDate = julianDateFrom(era: era, year: year, month: month, day: day)
         
         let secondsFromGMT = timeZone.secondsFromGMT()
+        // TODO:  POINT OF INTERVENTION WHEN IMPLEMENTING DECIMAL TIME
         let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
         let date = Date.date(julianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
         return date
