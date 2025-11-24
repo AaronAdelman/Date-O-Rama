@@ -86,6 +86,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         self.dateFormatter.apply(dateFormat: dateFormat)
         dateFormatPattern = self.dateFormatter.dateFormat ?? ""
         
+        if dateComponents.weekday == 0 {
+            // Handle “blank” days not part of any week
+            dateFormatPattern = dateFormatPattern.removingWeekdayFromLDML
+        }
+        
         var components: Array<ASADateFormatPatternComponent>
         let candidateComponents = self.datePatternComponentCache.object(forKey: dateFormatPattern as NSString)
         if candidateComponents == nil {
@@ -512,7 +517,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         case .day:
             return Range(1...1)
         case .hour:
-            return Range(1...1)
+            return Range(0...0)
         case .minute:
             return Range(0...0)
         case .second:
@@ -832,5 +837,54 @@ extension Int {
         } else {
             return (0, 1 - self)
         }
+    }
+}
+
+extension String {
+    /// Removes weekday fields (E/e/c series) from an LDML date pattern,
+    /// along with any immediately trailing punctuation or whitespace.
+    /// Preserves LDML quoting rules and leaves all other fields intact.
+    var removingWeekdayFromLDML: String {
+        // Regex explanation:
+        // 1. (?<!')'(?:''|[^'])*'  → Match a quoted literal; we keep it unchanged.
+        // 2. (E{1,6}|e{1,6}|c{1,6}) → Any weekday field token.
+        // 3. [\\p{P}\\s\\u202F]*     → Trailing punctuation/whitespace/NBSP.
+        //
+        // We process via a regex that alternates between literals and tokens.
+        
+        let regex = try! NSRegularExpression(
+            pattern: "(?<!')'(?:''|[^'])*'|(E{1,6}|e{1,6}|c{1,6})[\\p{P}\\s\\u202F]*",
+            options: []
+        )
+        
+        let ns = self as NSString
+        var result = ""
+        var lastIndex = 0
+        
+        for match in regex.matches(in: self, range: NSRange(location: 0, length: ns.length)) {
+            let range = match.range
+            let token = ns.substring(with: range)
+            
+            // Append any gap between previous match and this one.
+            if range.location > lastIndex {
+                result += ns.substring(with: NSRange(location: lastIndex, length: range.location - lastIndex))
+            }
+            
+            if token.hasPrefix("'") {
+                // Quoted literal → copy verbatim
+                result += token
+            } else {
+                // Weekday token + punctuation → remove entirely (append nothing)
+            }
+            
+            lastIndex = range.location + range.length
+        }
+        
+        // Append any trailing remainder
+        if lastIndex < ns.length {
+            result += ns.substring(with: NSRange(location: lastIndex, length: ns.length - lastIndex))
+        }
+        
+        return result
     }
 }
