@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 2, wkd: [1], d: 18, thruD: 24}, titles: {"en": "Woman’s Day", "he": "יום האישה", "is": "Konudagur"}, emoji: "👩"},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Beer Day", "he": "יום הבירה", "is": "Bjórdagurinn"}, emoji: "🍺", urls: {"en": "https://en.wikipedia.org/wiki/Beer_Day_(Iceland)"}, first: {era: 1, y: 1989}},
         {type: "D", start: {Easter: "Easter", offsetD: -48}, inherits: "Shrove Monday"},
-        {inherits: "Shrove Tuesday", type: "D", start: {Easter: "Easter", offsetD: -47}},
+        {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Shrove Tuesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Fisherman’s Day", "is": "Sjómannadagurinn"}, emoji: "🎣"},
