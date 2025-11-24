@@ -1,15 +1,6 @@
 {
-  "originHash" : "d7fa3523d7c2d9d32e934041607df0696a24e5612a582b05a28ba9ffe70d1775",
+  "originHash" : "694d55cf6c9e09a42c73a5d76b07db2e9e7ebc7025ead9286fe4db915238c248",
   "pins" : [
-    {
-      "identity" : "frenchrepublicancalendarcore",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AaronAdelman/FrenchRepublicanCalendarCore",
-      "state" : {
-        "branch" : "main",
-        "revision" : "eaa8905c915c847d554dd88390bd1c9fa68b08f3"
-      }
-    },
     {
       "identity" : "juliandaynumber?tab=readme-ov-file",
       "kind" : "remoteSourceControl",

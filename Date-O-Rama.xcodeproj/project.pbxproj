@@ -255,7 +255,6 @@
 		A56767612E5B630C001F108C /* Colleen Paige.json in Resources */ = {isa = PBXBuildFile; fileRef = A567675F2E5B630C001F108C /* Colleen Paige.json */; };
 		A56767632E60E266001F108C /* The Realist Society of Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767622E60E266001F108C /* The Realist Society of Canada.json */; };
 		A56767642E60E267001F108C /* The Realist Society of Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A56767622E60E266001F108C /* The Realist Society of Canada.json */; };
-		A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A56B3FE32DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
 		A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */ = {isa = PBXBuildFile; fileRef = A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */; };
@@ -290,7 +289,6 @@
 		A575A8072A4B11F100E77142 /* National.json in Resources */ = {isa = PBXBuildFile; fileRef = A575A8052A4B11F100E77142 /* National.json */; };
 		A5765A38279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
 		A5765A39279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
-		A5765A3C27A02BE400BF1F7E /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5765A3B27A02BE400BF1F7E /* FrenchRepublicanCalendarCore */; };
 		A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */; };
 		A576994C259EDCC000757B0F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
 		A576994D259EDCC000757B0F /* Islam (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islam (general).json */; };
@@ -1883,7 +1881,6 @@
 			files = (
 				A545D85F2924235C0055F457 /* SwiftAA in Frameworks */,
 				A5F2847C2E42428000EE4F0C /* JulianDayNumber in Frameworks */,
-				A567C0ED27A02F6F0008C69A /* FrenchRepublicanCalendarCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1893,7 +1890,6 @@
 			files = (
 				A545D8592924234C0055F457 /* SwiftAA in Frameworks */,
 				A5F284792E42426200EE4F0C /* JulianDayNumber in Frameworks */,
-				A5765A3C27A02BE400BF1F7E /* FrenchRepublicanCalendarCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2734,7 +2730,6 @@
 			);
 			name = "Date-O-Rama";
 			packageProductDependencies = (
-				A5765A3B27A02BE400BF1F7E /* FrenchRepublicanCalendarCore */,
 				A545D8582924234C0055F457 /* SwiftAA */,
 				A5F284782E42426200EE4F0C /* JulianDayNumber */,
 			);
@@ -2822,7 +2817,6 @@
 			);
 			mainGroup = A5C77BF02433361400CFEE47;
 			packageReferences = (
-				A5765A3A27A02BE400BF1F7E /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */,
 				A545D84F292422690055F457 /* XCRemoteSwiftPackageReference "SwiftAA" */,
 				A5F284772E42426200EE4F0C /* XCRemoteSwiftPackageReference "JulianDayNumber" */,
 			);
@@ -4571,14 +4565,6 @@
 				kind = branch;
 			};
 		};
-		A5765A3A27A02BE400BF1F7E /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AaronAdelman/FrenchRepublicanCalendarCore";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		A5F284772E42426200EE4F0C /* XCRemoteSwiftPackageReference "JulianDayNumber" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sbooth/JulianDayNumber?tab=readme-ov-file";
@@ -4604,15 +4590,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A545D84F292422690055F457 /* XCRemoteSwiftPackageReference "SwiftAA" */;
 			productName = SwiftAA;
-		};
-		A567C0EC27A02F6F0008C69A /* FrenchRepublicanCalendarCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FrenchRepublicanCalendarCore;
-		};
-		A5765A3B27A02BE400BF1F7E /* FrenchRepublicanCalendarCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A5765A3A27A02BE400BF1F7E /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */;
-			productName = FrenchRepublicanCalendarCore;
 		};
 		A5F284782E42426200EE4F0C /* JulianDayNumber */ = {
 			isa = XCSwiftPackageProductDependency;
