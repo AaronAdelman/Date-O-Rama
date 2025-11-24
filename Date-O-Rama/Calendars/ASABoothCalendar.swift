@@ -328,10 +328,17 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         default:
             quarter = nil
         }
-        let hour       = rawComponents.hour  // TODO:  Fix the time components
+        let hour       = rawComponents.hour
         let minute     = rawComponents.minute
         let second     = rawComponents.second
         let nanosecond = rawComponents.nanosecond
+        
+        if calendarCode == .frenchRepublican {
+            assert(hour < 10)
+            assert(minute < 100)
+            assert(second < 100)
+        }
+        
         let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, quarter: quarter, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
         let dateString = dateString(dateComponents: components, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
         let timeString = timeString(now: now, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
@@ -689,6 +696,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return (-1, -1, -1)
     }
     
+    // TODO:  Override when implementing calendars which do not use the standard 24-hour clock
+    func gregorianTimeToCalendarTime(hour: Int, minute: Int, second: Int, nanosecond: Int) -> (hour: Int, minute: Int, second: Int, nanosecond: Int) {
+        return (hour, minute, second, nanosecond)
+    }
+    
     func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
         var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
         
@@ -715,7 +727,15 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         }()
         
         //    assert(isValidBoothCalendarDate(era: era, year: year, month: month, day: day))
-        return (era, year, month, day, weekday, gregorianComponents.hour!, gregorianComponents.minute!, gregorianComponents.second!, gregorianComponents.nanosecond!)
+        
+        let (hour, minute, second, nanosecond) = gregorianTimeToCalendarTime(hour: gregorianComponents.hour!, minute: gregorianComponents.minute!, second: gregorianComponents.second!, nanosecond: gregorianComponents.nanosecond!)
+        
+        if calendarCode == .frenchRepublican {
+            assert(hour < 10)
+            assert(minute < 100)
+            assert(second < 100)
+        }
+        return (era, year, month, day, weekday, hour, minute, second, nanosecond)
     } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 
     // TODO: Override when implementing a new calendar
@@ -747,14 +767,17 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return JulianDate.nan
     }
     
+    var secondsInMinute: Int {60}
+    var minutesInHour: Int {60}
+    var isoSecondsInCalendarSeconds: Double {1.0}
+    
     func dateFromBoothComponents(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date? {
         guard isValidBoothCalendarDate(calendarCode: calendarCode, era: era, year: year, month: month, day: day) else { return nil }
         
         let julianDate: JulianDate = julianDateFrom(era: era, year: year, month: month, day: day)
         
         let secondsFromGMT = timeZone.secondsFromGMT()
-        // TODO:  POINT OF INTERVENTION WHEN IMPLEMENTING DECIMAL TIME
-        let secondsFromMidnight: Double = Double(60 * 60 * hour + 60 * minute + second) + Double(nanosecond) / 1000000000.0
+        let secondsFromMidnight: Double = (Double(secondsInMinute * minutesInHour * hour + secondsInMinute * minute + second) + Double(nanosecond) / 1000000000.0) * isoSecondsInCalendarSeconds
         let date = Date.date(julianDate: julianDate).addingTimeInterval(TimeInterval(secondsFromGMT) + secondsFromMidnight)
         return date
     } // func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, nanosecond: Int, timeZone: TimeZone) -> Date?

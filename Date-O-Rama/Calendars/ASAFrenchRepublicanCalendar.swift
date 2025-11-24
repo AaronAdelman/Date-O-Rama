@@ -46,6 +46,42 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
         return (temp.year, temp.month, temp.day)
     }
     
+    override var secondsInMinute: Int {100}
+    override var minutesInHour: Int {100}
+    override var isoSecondsInCalendarSeconds: Double {0.864}
+
+    override func gregorianTimeToCalendarTime(hour: Int, minute: Int, second: Int, nanosecond: Int) -> (hour: Int, minute: Int, second: Int, nanosecond: Int) {
+        // SI seconds since midnight
+        let gregSeconds =
+            Double(hour * 3600 + minute * 60 + second) +
+            Double(nanosecond) / 1_000_000_000.0
+
+        // Decimal seconds (100000 per day)
+        let decTotal = gregSeconds * (100000.0 / 86400.0)
+
+        // Split into integer + fractional parts
+        let decTotalInt = floor(decTotal)
+        let decFraction = decTotal - decTotalInt
+
+        // Extract hour, minute, second
+        let calendarHour = Int(decTotalInt / 10000.0)
+        let remAfterHour = decTotalInt - Double(calendarHour * 10000)
+
+        let calendarMinute = Int(remAfterHour / 100.0)
+        let calendarSecond = Int(remAfterHour - Double(calendarMinute * 100))
+
+        // FRC fractional part → FRC nanoseconds
+        let calendarNanoseconds = Int((decFraction * 1_000_000_000.0).rounded())
+        
+        assert(calendarHour < 10)
+        assert(calendarMinute < 100)
+        assert(calendarSecond < 100)
+        return (hour: calendarHour,
+                minute: calendarMinute,
+                second: calendarSecond,
+                nanosecond: calendarNanoseconds)
+    }
+
     
     // MARK:  - ASACalendarWithWeeks
     
