@@ -32,9 +32,9 @@ enum ASADateFormat:  String {
     case shortYearOnly                    = "SYO"
     case shortYearAndMonthOnly            = "SYAMO"
     
-    case fullWithRomanYear                = "FWRY"
-    case longWithRomanYear                = "LWRY"
-    case shortWithRomanYear               = "SWRY"
+//    case fullWithRomanYear                = "FWRY"
+//    case longWithRomanYear                = "LWRY"
+//    case shortWithRomanYear               = "SWRY"
 } // enum ASADateFormat
 
 extension ASADateFormat {
@@ -77,12 +77,12 @@ extension ASADateFormat {
             unlocalizedString = "SYO"
         case .shortYearAndMonthOnly:
             unlocalizedString = "SYAMO"
-        case .fullWithRomanYear:
-            unlocalizedString = "ITEM_FullWithRomanYear"
-        case .longWithRomanYear:
-            unlocalizedString = "ITEM_LongWithRomanYear"
-        case .shortWithRomanYear:
-            unlocalizedString = "ITEM_ShortWithRomanYear"
+//        case .fullWithRomanYear:
+//            unlocalizedString = "ITEM_FullWithRomanYear"
+//        case .longWithRomanYear:
+//            unlocalizedString = "ITEM_LongWithRomanYear"
+//        case .shortWithRomanYear:
+//            unlocalizedString = "ITEM_ShortWithRomanYear"
         case .longWithoutYear:
             unlocalizedString = "ITEM_LongWithoutYear"
         case .mediumWithoutYear:
@@ -108,21 +108,21 @@ extension ASADateFormat {
         case .long, .full, .medium:
             return .short
             
-        case .fullWithRomanYear, .longWithRomanYear:
-            return .shortWithRomanYear
+//        case .fullWithRomanYear, .longWithRomanYear:
+//            return .shortWithRomanYear
             
         default:
             return self
         } // switch self
     } // var shortened
     
-    var isRomanYear: Bool {
-        switch self {
-        case .fullWithRomanYear, .longWithRomanYear, .shortWithRomanYear:
-            return true
-            
-        default:
-            return false
-        } // switch self
-    } // var isRomanYear
+//    var isRomanYear: Bool {
+//        switch self {
+//        case .fullWithRomanYear, .longWithRomanYear, .shortWithRomanYear:
+//            return true
+//            
+//        default:
+//            return false
+//        } // switch self
+//    } // var isRomanYear
 } // extension ASADateFormat

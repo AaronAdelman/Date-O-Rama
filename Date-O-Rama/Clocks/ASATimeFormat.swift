@@ -17,8 +17,8 @@ enum ASATimeFormat:  String {
 //    case localizedLDML                = "loc"
     case decimalTwelveHour            = "decimalTwelveHour" // 12 Night|Day
 //    case JewishCalendricalCalculation = "JewishCalendricalCalculation" // 12:1080:76 Night|Day
-    case decimal                      = "decimal" // 10:100:100
-    case hexadecimal                  = "hexadecimal" // 16:256:16
+//    case decimal                      = "decimal" // 10:100:100
+//    case hexadecimal                  = "hexadecimal" // 16:256:16
 } // enum ASATimeFormat
 
 extension ASATimeFormat {
@@ -41,10 +41,10 @@ extension ASATimeFormat {
             unlocalizedString = "ITEM_decimalTwelveHour"
 //        case .JewishCalendricalCalculation:
 //            unlocalizedString = "ITEM_JewishCalendricalCalculation"
-        case .decimal:
-            unlocalizedString = "ITEM_decimal"
-        case .hexadecimal:
-            unlocalizedString = "ITEM_hexadecimal"
+//        case .decimal:
+//            unlocalizedString = "ITEM_decimal"
+//        case .hexadecimal:
+//            unlocalizedString = "ITEM_hexadecimal"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName

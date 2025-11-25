@@ -67,16 +67,22 @@ extension DateFormatter {
         case .none:
             self.dateStyle = .none
             
-        case .full, .fullWithRomanYear:
+        case .full
+//            , .fullWithRomanYear
+            :
             self.dateStyle = .full
             
-        case .long, .longWithRomanYear:
+        case .long
+//            , .longWithRomanYear
+            :
             self.dateStyle = .long
             
         case .medium:
             self.dateStyle = .medium
             
-        case .short, .shortWithRomanYear:
+        case .short
+//            , .shortWithRomanYear
+            :
             self.dateStyle = .short
 
         case .shortWithWeekday:

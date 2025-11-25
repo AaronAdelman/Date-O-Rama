@@ -70,11 +70,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     private var dateFormatter = DateFormatter()
     private var formatter = NumberFormatter()
     
-    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int, isRoman: Bool = false) -> String {
-        if isRoman {
-            return integerValue.RomanNumeral
-        }
-        
+    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String {
         formatter.minimumIntegerDigits = minimumIntegerDigits
         let symbol = self.formatter.string(from: NSNumber(value: integerValue))!
         return symbol
@@ -319,23 +315,23 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                     
                 case "h", "hh", "H", "HH", "k", "kk", "K", "KK", "j", "jj", "jjj", "jjjj", "jjjjj", "jjjjjj", "J", "JJ", "C", "CC", "CCC", "CCCC", "CCCCC", "CCCCCC":
                     let hour = dateComponents.hour!
-                    symbol = stringFromInteger(hour, minimumIntegerDigits: 1, isRoman: false)
+                    symbol = stringFromInteger(hour, minimumIntegerDigits: 1)
                     
                 case "m":
                     let minute = dateComponents.minute!
-                    symbol = stringFromInteger(minute, minimumIntegerDigits: 1, isRoman: false)
+                    symbol = stringFromInteger(minute, minimumIntegerDigits: 1)
 
                 case "mm":
                     let minute = dateComponents.minute!
-                    symbol = stringFromInteger(minute, minimumIntegerDigits: 2, isRoman: false)
+                    symbol = stringFromInteger(minute, minimumIntegerDigits: 2)
 
                 case "s":
                     let second = dateComponents.second!
-                    symbol = stringFromInteger(second, minimumIntegerDigits: 1, isRoman: false)
+                    symbol = stringFromInteger(second, minimumIntegerDigits: 1)
 
                 case "ss":
                     let second = dateComponents.second!
-                    symbol = stringFromInteger(second, minimumIntegerDigits: 2, isRoman: false)
+                    symbol = stringFromInteger(second, minimumIntegerDigits: 2)
                     
                 case "S", "SS", "SSS", "SSSS", "A", "AA", "AAA", "AAAA":
                     symbol = component.string // TODO:  Implement these?

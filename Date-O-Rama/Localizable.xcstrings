@@ -2693,7 +2693,7 @@
       }
     },
     "ITEM_decimal" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2761,7 +2761,7 @@
       }
     },
     "ITEM_FullWithRomanYear" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2778,7 +2778,7 @@
       }
     },
     "ITEM_hexadecimal" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2897,7 +2897,7 @@
       }
     },
     "ITEM_LongWithRomanYear" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -3033,7 +3033,7 @@
       }
     },
     "ITEM_ShortWithRomanYear" : {
-      "extractionState" : "migrated",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
