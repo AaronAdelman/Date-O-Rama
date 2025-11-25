@@ -20,6 +20,14 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
     
     override var numberOfMonthsInYear: Int { return JulianCalendar.numberOfMonthsInYear }
     
+    override var maximumNumberOfWeeksInYear: Int { return 53 }
+ 
+    override var maximumNumberOfWeeksInMonth: Int { return 5 }
+    
+    override var maximumNumberOfDaysInMonth: Int { return 31 }
+    
+    override var maximumEra: Int { return CE }
+    
     override func daysInMonth(era: Int, year: Int, month: Int) -> Int {
         guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return -1 }
 
@@ -49,6 +57,7 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
         let temp = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: JulianCalendar.self)
         return (temp.year, temp.month, temp.day)
     }
+
     
     // MARK: -
     

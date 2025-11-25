@@ -508,10 +508,32 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return result
     }
     
+    // TODO:  Override when implementing a new calendar.
+    var maximumNumberOfWeeksInYear: Int { return 53 }
+ 
+    // TODO:  Override when implementing a new calendar.
+    var maximumNumberOfWeeksInMonth: Int { return 5 }
+    
+    // TODO:  Override when implementing a new calendar.
+    var maximumNumberOfDaysInMonth: Int { return 31 }
+
+    // TODO:  Override when implementing a new calendar.
+    var maximumHour: Int { return 23 }
+
+    // TODO:  Override when implementing a new calendar.
+    var maximumMinute: Int { return 59 }
+
+    // TODO:  Override when implementing a new calendar.
+    var maximumSecond: Int { return 59 }
+    
+    // TODO:  Override when implementing a new calendar.
+    var maximumEra: Int { return 0 }
+
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
-            return Range(1...1)
+            let maxiumEra = self.maximumEra
+            return Range(maxiumEra...maxiumEra)
         case .year:
             return Range(15300...15300)
         case .yearForWeekOfYear:
@@ -522,9 +544,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             let monthsPerYear = self.numberOfMonthsInYear
             return Range(monthsPerYear...monthsPerYear)
         case .weekOfYear:
-            return Range(53...53)
+            let maximumNumberOfWeeksInYear = self.maximumNumberOfWeeksInYear
+            return Range(maximumNumberOfWeeksInYear...maximumNumberOfWeeksInYear)
         case .weekOfMonth:
-            return Range(5...5)
+            let maximumNumberOfWeeksInMonth = self.maximumNumberOfWeeksInMonth
+            return Range(maximumNumberOfWeeksInMonth...maximumNumberOfWeeksInMonth)
         case .weekday:
             let daysPerWeek = self.daysPerWeek
             return Range(daysPerWeek...daysPerWeek)
@@ -532,15 +556,18 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
             let ordinalDaysPerWeek = self.daysPerWeek - 1
             return Range(ordinalDaysPerWeek...ordinalDaysPerWeek)
         case .day:
-            return Range(31...31)
+            let maximumNumberOfDaysInMonth = self.maximumNumberOfDaysInMonth
+            return Range(maximumNumberOfDaysInMonth...maximumNumberOfDaysInMonth)
             
-            // TODO: Need to change to support decimal time
         case .hour:
-            return Range(23...23)
+            let maximumHour = self.maximumHour
+            return Range(maximumHour...maximumHour)
         case .minute:
-            return Range(59...59)
+            let maximumMinute = self.maximumMinute
+            return Range(maximumMinute...maximumMinute)
         case .second:
-            return Range(59...59)
+            let maximumSecond = self.maximumSecond
+            return Range(maximumSecond...maximumSecond)
         case .nanosecond:
             return Range(999999...999999)
             

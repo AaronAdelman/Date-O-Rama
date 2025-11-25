@@ -15,6 +15,18 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
     
     override var numberOfMonthsInYear: Int { return FrenchRepublicanCalendar.numberOfMonthsInYear }
     
+    override var maximumNumberOfWeeksInYear: Int { return 37 }
+ 
+    override var maximumNumberOfWeeksInMonth: Int { return 4 }
+    
+    override var maximumNumberOfDaysInMonth: Int { return 30 }
+    
+    override var maximumHour: Int { return 10 }
+
+    override var maximumMinute: Int { return 100 }
+
+    override var maximumSecond: Int { return 100 }
+    
     override func daysInMonth(era: Int, year: Int, month: Int) -> Int {
         return FrenchRepublicanCalendar.numberOfDaysIn(month: month, year: year)
 
