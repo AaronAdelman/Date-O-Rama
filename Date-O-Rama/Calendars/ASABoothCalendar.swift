@@ -619,13 +619,10 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
                 return Range(1...self.numberOfMonthsInYear)
                 
             case .day:
-                let era = components.era
-                let year = components.year
-                let isLeapYear = era != nil && year != nil ?  isLeapYear(calendarCode: self.calendarCode, era: era!, year: year!) : false
-                // TODO: This will need to be changed if implementing a calendar which has years which are not 365 or 366 days long.
-                let DAYS_IN_YEAR_IN_LEAP_YEAR = 366
-                let DAYS_IN_YEAR = 365
-                return isLeapYear ? Range(1...DAYS_IN_YEAR_IN_LEAP_YEAR) : Range(1...DAYS_IN_YEAR)
+                guard let era = components.era else { return Range(-1 ... -1) }
+                guard let year = components.year else { return Range(-1 ... -1) }
+                let daysInYear = self.daysInYear(era: era, year: year)
+                return Range(1...daysInYear)
                 
             default:
                 return nil
@@ -802,6 +799,11 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     func daysInMonth(era: Int, year: Int, month: Int) -> Int {
         return -1
     } // func daysInMonth(era: Int, year: Int, month: Int)
+    
+    // TODO: Override when implementing a new calendar
+    func daysInYear(era: Int, year: Int) -> Int {
+        return -1
+    } // func daysInYear(era: Int, year: Int) -> Int
 
     func isValidBoothCalendarDate(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int, day: Int) -> Bool {
         guard era >= 0 else { return false }

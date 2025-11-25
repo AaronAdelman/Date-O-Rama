@@ -32,6 +32,10 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
 
     } // func daysInMonth(calendarCode: ASACalendarCode, era: Int, year: Int, month: Int
     
+    override func daysInYear(era: Int, year: Int) -> Int {
+        return FrenchRepublicanCalendar.numberOfDays(inYear: year)
+    } // func daysInYear(era: Int, year: Int) -> Int
+    
     override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
         return month == 13 && isLeapYear(calendarCode: .frenchRepublican, era: era, year: year)
     } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool

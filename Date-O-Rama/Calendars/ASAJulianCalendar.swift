@@ -34,6 +34,12 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
         return JulianCalendar.numberOfDaysIn(month: month, year: astronomicalYear)
     } // func daysInMonth(era: Int, year: Int, month: Int)
     
+    override func daysInYear(era: Int, year: Int) -> Int {
+        guard let astronomicalYear = astronomicalYear(era: era, year: year) else { return -1 }
+
+        return JulianCalendar.numberOfDays(inYear: astronomicalYear)
+    } // func daysInYear(era: Int, year: Int) -> Int
+    
     override func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
         return month == 2 && isLeapYear(calendarCode: .julian, era: era, year: year)
     } // func isLeapMonth(era: Int, year: Int, month: Int) -> Bool
