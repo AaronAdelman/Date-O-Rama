@@ -75,7 +75,7 @@ protocol ASACalendar {
 
     
     // MARK:  - Mini-calendars
-    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
+//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     // MARK:  - Cycles
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat

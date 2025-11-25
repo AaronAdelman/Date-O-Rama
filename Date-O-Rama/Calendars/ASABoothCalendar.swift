@@ -58,10 +58,10 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         let (dateString, timeString, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
-        if dateString.isEmpty {
+        if dateString == "" || dateFormat == .none {
             return timeString
         }
-        if timeString.isEmpty {
+        if timeString == "" || timeFormat == .none {
             return dateString
         }
         return dateString + " · " + timeString
@@ -380,13 +380,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         let minute     = rawComponents.minute
         let second     = rawComponents.second
         let nanosecond = rawComponents.nanosecond
-        
-        if calendarCode == .frenchRepublican {
-            assert(hour < 10)
-            assert(minute < 100)
-            assert(second < 100)
-        }
-        
+                
         let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, quarter: quarter, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
         let dateString = dateString(dateComponents: components, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
         let timeString = timeString(dateComponents: components, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
@@ -661,9 +655,9 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         // TODO:  May need to modify this
     }
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-        .system
-    }
+//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
+//        .system
+//    }
     
     // TODO:  Override when implementing a new calendar.
     var daysPerWeek: Int { return -1 }
@@ -805,11 +799,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         
         let (hour, minute, second, nanosecond) = gregorianTimeToCalendarTime(hour: gregorianComponents.hour!, minute: gregorianComponents.minute!, second: gregorianComponents.second!, nanosecond: gregorianComponents.nanosecond!)
         
-        if calendarCode == .frenchRepublican {
-            assert(hour < 10)
-            assert(minute < 100)
-            assert(second < 100)
-        }
         return (era, year, month, day, weekday, hour, minute, second, nanosecond)
     } // func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int)
 

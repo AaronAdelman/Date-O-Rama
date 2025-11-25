@@ -30,7 +30,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let dateString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: locationData)
         let timeString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: locationData)
-        let dateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
+        let dateComponents = self.dateComponents([.era, .year, .month, .day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
@@ -334,13 +334,13 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     
     // MARK:  -
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-        if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {
-            return .shortHebrew
-        }
-        
-        return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
+//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
+//        if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {
+//            return .shortHebrew
+//        }
+//        
+//        return .system
+//    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
     
     
     // MARK:  - Time zone-dependent modified Julian day

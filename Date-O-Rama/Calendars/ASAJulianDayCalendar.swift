@@ -255,9 +255,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         return []
     }
     
-    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-        return .system
-    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
+//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
+//        return .system
+//    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
         
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
         return date.localModifiedJulianDay(timeZone: locationData.timeZone)

@@ -80,6 +80,8 @@ struct ASAMiniCalendarView:  View {
     var dayItems: [ASAMiniCalendarDayModel]
     
     private var gridLayout: [GridItem] { Array(repeating: GridItem(), count: daysPerWeek) }
+    
+    let magicHeight = 1.80 * UIFont.preferredFont(forTextStyle: .caption2).lineHeight
         
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
@@ -101,7 +103,7 @@ struct ASAMiniCalendarView:  View {
             }
         }
         .environment(\.layoutDirection, (self.characterDirection == Locale.LanguageDirection.leftToRight ? .leftToRight :  .rightToLeft))
-        .frame(maxWidth: CGFloat(daysPerWeek) * 22, maxHeight: 22 * 5, alignment: .center)
+        .frame(maxWidth: CGFloat(daysPerWeek) * magicHeight, maxHeight: magicHeight * 5, alignment: .center)
     }
 } // struct ASAMiniCalendarView
 

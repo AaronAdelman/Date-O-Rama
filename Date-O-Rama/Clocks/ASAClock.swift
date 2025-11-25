@@ -463,7 +463,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // var daysPerWeek
 
     // MARK: - Mini Calendar Data
-    func miniCalendarData(day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, blankWeekdaySymbol: String?, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
+    func miniCalendarData(era: Int, year: Int, month: Int, day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, blankWeekdaySymbol: String?, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
         
         let daysPerWeekValue = self.daysPerWeek ?? 7
         let localeIdentifier = self.localeIdentifier
@@ -481,12 +481,17 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let isWeekend = weekendDaysSet.contains(weekdayNumber)
             return ASAMiniCalendarWeekdayModel(symbol: sym, index: idx, isWeekend: isWeekend)
         }
-        let numberFormat: ASANumberFormat = self.miniCalendarNumberFormat
-        let numberFormatter = NumberFormatter()
-        numberFormatter.locale = Locale(identifier: localeIdentifier)
+//        let numberFormat: ASANumberFormat = self.miniCalendarNumberFormat
+//        let numberFormatter = NumberFormatter()
+//        numberFormatter.locale = Locale(identifier: localeIdentifier)
         let formatNumber: (Int) -> String = { number in
-            if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
-            return numberFormatter.string(from: NSNumber(value: number)) ?? ""
+            let components = ASADateComponents(calendar: self.calendar, locationData: location, era: era, year: year, month: month, day: number)
+            let date = components.date
+            guard let date = date else { return "?"}
+            return self.dayOfMonthDateString(now: date, location: location)
+            
+//            if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
+//            return numberFormatter.string(from: NSNumber(value: number)) ?? ""
         }
         let weekdayOfDay1: Int = {
             let offset = day - 1
@@ -574,9 +579,14 @@ extension ASAClock {
         return result
     } // public func yearAndMonthOnlyDateString(now:  Date) -> String
     
-    var miniCalendarNumberFormat: ASANumberFormat {
-        return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
-    } // var miniCalendarNumberFormat
+    public func dayOfMonthDateString(now:  Date, location: ASALocation) -> String {
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .dayOfMonth, timeFormat: .none, locationData: location)
+        return result
+    } // public func dayOfMonthDateString(now:  Date, location: ASALocation) -> String
+    
+//    var miniCalendarNumberFormat: ASANumberFormat {
+//        return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
+//    } // var miniCalendarNumberFormat
 } // extension ASAClock
 
 
