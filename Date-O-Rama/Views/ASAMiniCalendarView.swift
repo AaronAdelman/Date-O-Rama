@@ -43,7 +43,7 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(shouldNoteAsWeekend ? .pink : .red)
+                .foregroundColor(shouldNoteAsWeekend ? Color("accentedCellWeekend") : Color("accentedCell"))
             
             Text(text)
                 .font(CELL_FONT)

@@ -38,6 +38,17 @@ struct ASAClockCell: View {
     @State private var showingDetailView: Bool = false
     @State private var detailType: DetailType = .none
     
+    let DEFAULT_DAYS_PER_WEEK = 7
+    
+#if os(watchOS)
+    let compact = true
+#else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        return self.sizeClass == .compact
+    } // var compact
+#endif
+    
 #if os(watchOS)
 #else
     @State private var action:  EKEventEditViewAction? = nil
@@ -67,6 +78,21 @@ struct ASAClockCell: View {
                         }
                     } else {
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                    }
+                    
+                    if processedClock.supportsMonths && shouldShowMiniCalendar && compact {
+                        // Precompute weekday items and cell items for the mini calendar
+                        let daysPerWeek = processedClock.daysPerWeek ?? DEFAULT_DAYS_PER_WEEK
+                        let weekdayItems = processedClock.miniCalendarWeekdayItems ?? []
+                        let dayItems = processedClock.miniCalendarDayItems ?? []
+                        let characterDirection = processedClock.characterDirection
+
+                        ASAMiniCalendarView(
+                            daysPerWeek: daysPerWeek,
+                            characterDirection: characterDirection,
+                            weekdayItems: weekdayItems,
+                            dayItems: dayItems
+                        )
                     }
                     
 #if os(watchOS)
@@ -99,9 +125,9 @@ struct ASAClockCell: View {
 #else
                 Spacer()
 
-                if processedClock.supportsMonths && shouldShowMiniCalendar {
+                if processedClock.supportsMonths && shouldShowMiniCalendar && !compact {
                     // Precompute weekday items and cell items for the mini calendar
-                    let daysPerWeek = processedClock.daysPerWeek ?? 7
+                    let daysPerWeek = processedClock.daysPerWeek ?? DEFAULT_DAYS_PER_WEEK
                     let weekdayItems = processedClock.miniCalendarWeekdayItems ?? []
                     let dayItems = processedClock.miniCalendarDayItems ?? []
                     let characterDirection = processedClock.characterDirection

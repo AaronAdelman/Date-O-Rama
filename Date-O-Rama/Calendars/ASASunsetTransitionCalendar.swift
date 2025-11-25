@@ -626,17 +626,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     }
     
     
-    // MARK: -
-    
-//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-//        if self.calendarCode.isHebrewCalendar && locale.isHebrewLocale {
-//            return .shortHebrew
-//        }
-//        
-//        return .system
-//    } // func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
-    
-    
     // MARK:  - Time zone-dependent modified Julian day
     
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {

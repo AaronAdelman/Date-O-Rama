@@ -357,6 +357,7 @@
 		A584C90024B646210014CE2E /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
 		A585D6D229A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
 		A585D6D329A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
+		A587549F2ED6023B0033A861 /* ASAMiniCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */; };
 		A58B5EF22AE020EE001C2A6E /* MK (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A58B5EF12AE020EE001C2A6E /* MK (Julian).json */; };
 		A58B5EF32AE020EE001C2A6E /* MK (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A58B5EF12AE020EE001C2A6E /* MK (Julian).json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
@@ -3735,6 +3736,7 @@
 				A5D135C327C545AE00A1A525 /* ASACalendarWithEras.swift in Sources */,
 				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
 				A53B50CA2C5BFEEF003FA2D4 /* ASADateFunctions.swift in Sources */,
+				A587549F2ED6023B0033A861 /* ASAMiniCalendarView.swift in Sources */,
 				A5BDE7B02667FBFE00F47416 /* DictionaryExtensions.swift in Sources */,
 				A566F4732483D7CF000A05B5 /* ASAModel.swift in Sources */,
 				A58F39FD2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */,

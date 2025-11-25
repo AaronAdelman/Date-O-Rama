@@ -73,10 +73,7 @@ protocol ASACalendar {
     /// - Returns: A time zone-dependent modified Julian day as an integer
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int
 
-    
-    // MARK:  - Mini-calendars
-//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat
-    
+        
     // MARK:  - Cycles
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat
 

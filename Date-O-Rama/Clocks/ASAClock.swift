@@ -481,18 +481,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let isWeekend = weekendDaysSet.contains(weekdayNumber)
             return ASAMiniCalendarWeekdayModel(symbol: sym, index: idx, isWeekend: isWeekend)
         }
-//        let numberFormat: ASANumberFormat = self.miniCalendarNumberFormat
-//        let numberFormatter = NumberFormatter()
-//        numberFormatter.locale = Locale(identifier: localeIdentifier)
-        let formatNumber: (Int) -> String = { number in
+    let formatNumber: (Int) -> String = { number in
             let components = ASADateComponents(calendar: self.calendar, locationData: location, era: era, year: year, month: month, day: number)
             let date = components.date
             guard let date = date else { return "?"}
             return self.dayOfMonthDateString(now: date, location: location)
-            
-//            if numberFormat == .shortHebrew { return number.shortHebrewNumeral }
-//            return numberFormatter.string(from: NSNumber(value: number)) ?? ""
-        }
+    }
         let weekdayOfDay1: Int = {
             let offset = day - 1
             var result = (weekday - offset) % daysPerWeekValue
@@ -531,11 +525,11 @@ extension ASAClock {
         let properDateFormat = self.dateFormat
         return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
     }
-
+    
     public func dateString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: location)
     } // func dateTimeString(now:  Date) -> String
-
+    
     public func dateTimeString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: location)
     } // func dateTimeString(now:  Date) -> String
@@ -543,11 +537,11 @@ extension ASAClock {
     func startOfDay(date:  Date, location: ASALocation) -> Date {
         return self.calendar.startOfDay(for: date, locationData: location)
     } // func startODay(date:  Date) -> Date
-
+    
     func startOfNextDay(date:  Date, location: ASALocation) -> Date {
         return self.calendar.startOfNextDay(date: date, locationData: location)
     } // func startOfNextDay(now:  Date) -> Date
-
+    
     public func timeString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: self.timeFormat, locationData: location)
     } // func timeString(now:  Date) -> String
@@ -555,14 +549,14 @@ extension ASAClock {
     public var supportsLocales:  Bool {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
-
+    
     public func shortenedDateTimeString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let timeFormat: ASATimeFormat = self.timeFormat
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: location)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
-
+    
     public func shortenedDateString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: location)
@@ -583,10 +577,6 @@ extension ASAClock {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .dayOfMonth, timeFormat: .none, locationData: location)
         return result
     } // public func dayOfMonthDateString(now:  Date, location: ASALocation) -> String
-    
-//    var miniCalendarNumberFormat: ASANumberFormat {
-//        return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
-//    } // var miniCalendarNumberFormat
 } // extension ASAClock
 
 

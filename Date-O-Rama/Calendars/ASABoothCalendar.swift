@@ -655,10 +655,6 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         // TODO:  May need to modify this
     }
     
-//    func miniCalendarNumberFormat(locale: Locale) -> ASANumberFormat {
-//        .system
-//    }
-    
     // TODO:  Override when implementing a new calendar.
     var daysPerWeek: Int { return -1 }
     
