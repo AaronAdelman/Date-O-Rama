@@ -123,7 +123,15 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.miniCalendarWeekdayItems = nil
             self.miniCalendarDayItems = nil
         }
-        self.characterDirection = Locale.Language(identifier: clock.localeIdentifier).characterDirection
+        let localeLanguage = {
+            let clockLocaleIdentifier = clock.localeIdentifier
+            if clockLocaleIdentifier == "" {
+                return Locale.current.language
+            }
+            
+            return Locale.Language(identifier: clockLocaleIdentifier)
+        }()
+        self.characterDirection = localeLanguage.characterDirection
         
         self.calendarType = self.calendarCode.type
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
