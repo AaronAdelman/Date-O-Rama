@@ -6,7 +6,7 @@
     events: [
         {type: "D", start: {Easter: "Easter", offsetD: -44}, urls: {"en": "https://nationaltoday.com/friday-fish-fry-day/"}, titles: {"en": "Friday Fish Fry Day"}, first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: -44}, inherits: "Natl Tartar Sauce Day", first: {era: 1, y: 2017}},
-        {type: "D", start: {Easter: "Easter"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}, titles: {"en": "National Baked Ham with Pineapple Day"}},
+        {type: "D", start: {Easter: "Easter"}, titles: {"en": "National Baked Ham with Pineapple Day"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Natl Hangover Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Commitment Day"}, urls: {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, first: {era: 1, y: 1960}, emoji: "👩‍❤️‍👨"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "National Black Eyed Pea Day"}, notes: {"en": "National Black-Eyed Pea Day"}, urls: {"en": "https://www.checkiday.com/bee7823f06b13815efec718f8d7a2a2a/national-black-eyed-pea-day"}},
@@ -160,6 +160,7 @@
         {type: "D", start: {mon: 5, d: 21}, titles: {"en": "End of the World"}, notes: {"en": "Rapture Party Day\nA mean-spirited observance poking fun at a prediction which turned out to be wrong, even though the person who made the prediction decided to stop promoting kookiness."}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "New Year’s Resolution Recommitment Day"}, urls: {"en": "https://nationaltoday.com/new-years-resolution-recommitment-day/"}, notes: {"en": "Some think this event happens on January 17."}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
+        {type: "D", start: {mon: 7, d: 25}, titles: {"en":"Christmas in July","he":"חג המולד ביולי","id":"Natal di bulan Juli","sv":"Jul i juli"}, urls: {"en": "https://en.wikipedia.org/wiki/Christmas_in_July"}, inherits: "Xmas", first: {era: 1, y: 1935}},
         {type: "D", start: {mon: 9, d: 11}, titles: {"en": "National Hot Cross Bun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-cross-bun-day/"}},
         {type: "D", start: {mon: 9, d: 29}, inherits: "Goose Day", urls: {"en": "https://www.checkiday.com/46e9409507ad0ab3c7496392892cd708/goose-day"}, first: {era: 1, y: 1786}},
         {type: "M", start: {mon: 10}, titles: {"en": "Black Cat Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/black-cat-awareness-month/"}, first: {era: 1, y: 2013}, emoji: "🐈‍⬛", notes: {"en": "Created by Layla Morgan Wilde"}},
