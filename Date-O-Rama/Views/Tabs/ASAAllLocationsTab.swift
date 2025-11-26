@@ -107,7 +107,7 @@ struct ASAAllLocationsTab: View {
                             }
                         }
                     } label: {
-                        Label("Locations", systemImage: "mappin")
+                        Label("Locations", systemImage: "ellipsis")
                     }
                 }
             }
