@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 6, wkd: [7], nth: 3}, titles: {"en": "National Dog Party Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-dog-party-day/"}, emoji: "🦮🐕‍🦺🐩", first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 7, d: 10}, titles: {"en": "National Kitten Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-kitten-day/"}, emoji: "🐱", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 7, d: 31}, inherits: "Natl Mutt Day", first: {era: 1, y: 2005}},
-        {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Dog Day", "he": "יום הכלב הלאומי"}, first: {era: 1, y: 2004}, emoji: "🦮", urls: {"en": "https://www.nationaldogday.com/"}, notes: {"en": "Created by Colleen Paige"}},
+        {type: "D", start: {mon: 8, d: 26}, titles: {"en": "National Dog Day", "he": "יום הכלב הלאומי", "nl": "Hondendag"}, notes: {"en": "International Dog Day"}, first: {era: 1, y: 2004}, emoji: "🦮", urls: {"en": "https://www.nationaldogday.com/"}, notes: {"en": "Created by Colleen Paige"}},
         {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Beach Day", "he": "יום החוף הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-beach-day/"}, first: {era: 1, y: 2014}, emoji: "🏖️"},
         {type: "D", start: {mon: 8, d: 30}, titles: {"en": "National Holistic Pet Day"}, notes: {"en": "Promotes pseudoscience for pet care."}, urls: {"en": "https://skepdic.com/holistic.html"}},
         {type: "D", start: {mon: 7, d: 31}, inherits: "​National Wildlife Day", first: {era: 1, y: 2006}},

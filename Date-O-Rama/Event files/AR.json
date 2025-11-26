@@ -68,6 +68,7 @@
         {type: "D", start: {mon: 6, d: 24}, titles: {"en": "Patagonian New Year"}, urls: {"en": "https://www.daysoftheyear.com/days/patagonian-new-year/"}},
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 7}, titles: {"en": "Sweetness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/sweetness-week/"}, first: {era: 1, y: 1989}, emoji: "🍫"},
         {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 4, wkd: [6], nth: -1}, titles: {"en": "Día de la Chupina", "es": "Día de la Chupina"}, urls: {"en": "https://en.wikipedia.org/wiki/Día_de_la_Chupina"}, first: {era: 1, y: 2001}, notes: {"en": "Hooky Day"}},
   ],
     templates: [
         {template: "Day of Respect for Cultural Diversity (in lieu)", type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en": "Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en": "https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},

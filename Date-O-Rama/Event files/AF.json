@@ -20,5 +20,6 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 6, d: 14}},
+        {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "Ginani"}, urls: {"en": "https://en.wikipedia.org/wiki/Ginani"}},
     ]
 }

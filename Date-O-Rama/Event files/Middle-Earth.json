@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 10, d: 19}, titles: {"en": "Durin’s Day"}, notes: {"en": "From The Lord of the Rings"}},
 
         {type: "nD", start: {mon: 9, d: 16, thruD: 22, wkd: [1], durationD: 7}, titles: {"en": "Tolkien Week"}, urls: {"en": "https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en": "Created by the American Tolkien Society"}, first: {era: 1, y: 1978}, nonoverlappingSubEvents: [
-            {type: "D", start: {mon: 9, d: 22}, titles: {"en": "Hobbit Day", "he": "יום ההוביט"}, urls: {"en": "https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en": "National Hobbit Day\nCreated by the American Tolkien Society"}, first: {era: 1, y: 1978}},
+            {type: "D", start: {mon: 9, d: 22}, titles: {"cs":"Hobbit Day","de":"Hobbit Day","en":"Hobbit Day","fr":"Journée du Hobbit","ja":"ホビットデー","ko":"호빗 데이","sc":"Die de su Hobbit","zh":"霍比特节", "he": "יום ההוביט"}, urls: {"en": "https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en": "National Hobbit Day\nCreated by the American Tolkien Society"}, first: {era: 1, y: 1978}},
         ]},
     ]
 }
