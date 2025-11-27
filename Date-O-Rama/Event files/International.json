@@ -417,7 +417,6 @@
         {type: "D", start: {mon: 11, d: 26}, titles: {"en": "World Lewis Day"}, urls: {"en": "https://nationaltoday.com/world-lewis-day/"}, emoji: "🐨"},
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inherits: "GivingTuesday", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Pie in the Face Day"}, urls: {"en": "https://www.checkiday.com/bf57a06e98b6d0c2d2941866097a2053/pie-in-the-face-day"}, emoji: "🥧"},
-        {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Pins and Needles Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pins-and-needles-day/"}, emoji: "🪡", notes: {"en": "Needle Day\nSewing Day\nThis observance started as a celebration of the Broadway show Pins and Needles"}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Buy Nothing Day", first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 11, d: 27}, titles: {"en": "Turtle Adoption Day"}, urls: {"en": "https://www.daysoftheyear.com/days/turtle-adoption-day/"}, emoji: "🐢", first: {era: 1, y: 2011}, notes: {"en": "Created by Christine Shaw"}},
         {type: "D", start: {mon: 11, d: 28, thruMon: 12, thruD: 5, wkd: [4]}, titles: {"en": "Choose Women Wednesday"}, urls: {"en": "https://choosewomen.org/"}, first: {era: 1, y: 2016}, emoji: "👩‍💼", notes: {"en": "Women on Wednesday\nWomen Owned Wednesday\n#WomenWOW\nWomenWednesday\nWomen Wednesday"}},

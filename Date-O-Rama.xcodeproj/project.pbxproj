@@ -358,6 +358,8 @@
 		A585D6D229A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
 		A585D6D329A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
 		A587549F2ED6023B0033A861 /* ASAMiniCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */; };
+		A58754A12ED81FFD0033A861 /* Richard Ankli.json in Resources */ = {isa = PBXBuildFile; fileRef = A58754A02ED81FFD0033A861 /* Richard Ankli.json */; };
+		A58754A22ED81FFD0033A861 /* Richard Ankli.json in Resources */ = {isa = PBXBuildFile; fileRef = A58754A02ED81FFD0033A861 /* Richard Ankli.json */; };
 		A58B5EF22AE020EE001C2A6E /* MK (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A58B5EF12AE020EE001C2A6E /* MK (Julian).json */; };
 		A58B5EF32AE020EE001C2A6E /* MK (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A58B5EF12AE020EE001C2A6E /* MK (Julian).json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
@@ -1456,6 +1458,7 @@
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Judaism (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (times).json"; sourceTree = "<group>"; };
 		A585D6D129A6B3290033BCB9 /* GR (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GR (Julian).json"; sourceTree = "<group>"; };
+		A58754A02ED81FFD0033A861 /* Richard Ankli.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Richard Ankli.json"; sourceTree = "<group>"; };
 		A58B5EF12AE020EE001C2A6E /* MK (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MK (Julian).json"; sourceTree = "<group>"; };
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A58CB7262DB77FFB00A724D5 /* Pseudoscience.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pseudoscience.json; sourceTree = "<group>"; };
@@ -2253,6 +2256,7 @@
 				A5EFFF9E285B7F2E00F2205F /* QA.json */,
 				A5EF0006285B8EEA00F2205F /* QA (Muslim).json */,
 				A502D3E128637E2800A625A9 /* RE.json */,
+				A58754A02ED81FFD0033A861 /* Richard Ankli.json */,
 				A5EB4F942850EFC700A32FB1 /* RO.json */,
 				A53D608B288844020094B3F7 /* RO (Julian).json */,
 				A5D149382E6FF7FB00752B48 /* Robert Birch.json */,
@@ -2344,6 +2348,7 @@
 				A5FB22C92863903600B5042B /* UM.json */,
 				A5C7793C26B8382600DD6009 /* UN.json */,
 				A51EF5B62DCA2E5F00372212 /* UN Years and Decades.json */,
+				A58DFAD02EC1B2C800979AD1 /* UNITED.json */,
 				A5D3D7DD27FA14640099718A /* US.json */,
 				A5EFFFE6285B870A00F2205F /* UY.json */,
 				A5EB8520286A08A800C9321A /* UZ.json */,
@@ -2373,7 +2378,6 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
-				A58DFAD02EC1B2C800979AD1 /* UNITED.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -3030,6 +3034,7 @@
 				A581B89B284E61F600407D68 /* LV.json in Resources */,
 				A5E759122768D0F8008D7D57 /* EU.json in Resources */,
 				A5E496132862505C001BF40C /* IQ.json in Resources */,
+				A58754A22ED81FFD0033A861 /* Richard Ankli.json in Resources */,
 				A5765A39279ED15900BF1F7E /* Rural.json in Resources */,
 				A53D608D288844020094B3F7 /* RO (Julian).json in Resources */,
 				A581B895284E5FD300407D68 /* CZ.json in Resources */,
@@ -3661,6 +3666,7 @@
 				A5E4965A286254FA001BF40C /* NR.json in Resources */,
 				A5E495DD28624DDB001BF40C /* FK.json in Resources */,
 				A5D850A2280C9250005247BD /* MU.json in Resources */,
+				A58754A12ED81FFD0033A861 /* Richard Ankli.json in Resources */,
 				A5E13C4C2A399139009EDEFA /* UA (Julian).json in Resources */,
 				A5EF000E285B8EEB00F2205F /* IQ (Muslim).json in Resources */,
 				A5EFFF3A285B5C5B00F2205F /* TD.json in Resources */,

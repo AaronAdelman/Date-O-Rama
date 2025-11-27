@@ -1,0 +1,12 @@
+{
+    titles: {"en": "Richard Ankli"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {red: 0.74, green: 0.04, blue: 0.29},
+    first: {era: 1, y: 1977},
+    events: [
+        {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Sourest Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sourest-day/"}, first: {era: 1, y: 1977}, notes: {"en": "Created by Richard Ankli"}},
+        {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, titles: {"en": "You’re Welcome Giving Day"}, urls: {"en": "https://www.daysoftheyear.com/days/youre-welcome-giving-day/"}, first: {era: 1, y: 1977}, notes: {"en": "You’re Welcomegiving Day\nCreated by Richard Ankli"}},
+        {type: "D", start: {mon: 5, d: 19}, titles: {"en": "National May Ray Day"}, urls: {"en": "https://www.daysoftheyear.com/days/may-ray-day/"}, notes: {"en": "Created by Richard Ankli"}},
+    ]
+}
