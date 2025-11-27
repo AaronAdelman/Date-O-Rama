@@ -63,6 +63,7 @@
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, inherits: "New Year’s Day (in lieu)", locations: {"en": "Saskatchewan"}},
         {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Shawarma Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 18}, titles: {"en": "Health Care Aide Day"}, urls: {"en": "https://www.daysoftheyear.com/days/health-care-aide-day/"}, first: {era: 1, y: 2012}},
+        {type: "D", start: {mon: 10, d: 18}, titles: {"en":"Persons Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Persons_Day"}, first: {era: 1, y: 1979}},
         {type: "D", start: {mon: 10, d: 3, thruD: 9, wkd: [4]}, titles: {"en": "Canadian Beer Day"}, urls: {"en": "https://canadianbeerday.ca/"}, emoji: "🍺", first: {era: 1, y: 2019}, notes: {"en": "Created by Beer Canada"}},
         {type: "D", start: {mon: 10, wkd: [4], nth: 3}, inherits: "Natl BRA Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 11, d: 12, thruD: 13, wkd: [2]}, titles: {"en": "Remembrance Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/canada/canada-remembrance-day"}, locations: {"en": "Alberta, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, Saskatchewan, Yukon"}},

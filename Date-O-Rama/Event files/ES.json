@@ -95,6 +95,7 @@
         {type: "nD", start: {mon: 7, d: 7}, end: {mon: 7, d: 14}, titles: {"en": "Running of the Bulls"}, urls: {"en": "https://www.runningofthebulls.com/"}, first: {era: 1, y: 1300}, emoji: "🐂"},
         {type: "D", start: {Easter: "Easter"}, titles: {"ca":"Aberri Eguna","en":"Aberri Eguna","es":"Aberri Eguna","eu":"Aberri Eguna","fr":"Aberri Eguna","gl":"Aberri Eguna","nb":"Aberri Eguna","sv":"Aberri Eguna"}, urls: {"en": "https://en.wikipedia.org/wiki/Aberri_Eguna"}, notes: {"en": "Fatherland Day"}, first: {era: 1, y: 1932}},
         {type: "nD", start: {mon: 6, d: 19}, end: {mon: 6, d: 24}, titles: {"ca":"Fogueres de Sant Joan","de":"Hogueras de San Juan","en":"Hogueras de Alicante","eo":"Fajroj de Alakanto","es":"Hogueras de Alicante","la":"Pyrae Lucenti","ru":"Костры святого Иоанна Крестителя","sr":"Ноћ Сан Хуана"}, urls: {"en": "https://en.wikipedia.org/wiki/Hogueras_de_Alicante"}, notes: {"en": "Bonfires of St. John"}, first: {era: 1, y: 1983}, emoji: "🔥"},
+        {type: "D", start: {Easter: "Easter", offsetD: -47}, titles: {"en":"Powder Day", "es": "Día de los Polvos"}, notes: {"en":"Day of the Powder"}, locations: {"en": "Tolox"}, urls: {"en": "https://en.wikipedia.org/wiki/Powder_Day"}},
 
     ]
 }

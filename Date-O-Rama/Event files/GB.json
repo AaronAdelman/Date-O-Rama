@@ -51,6 +51,7 @@
         {type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, titles: {"en": "Plough Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/plough-monday/"}, emoji: "⽾"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en":"Handsel Monday","es":"Handsel Monday","sco":"Handsel Monanday","uk":"Понеділок Гензеля"}, urls: {"en": "https://nationaltoday.com/handsel-monday/"}, notes: {"en": "Hansel Monday"}},
         {type: "D", start: {mon: 1, d: 13, thruD: 19, wkd: [2]}, titles: {"en":"Auld Hansel Monday"}, urls: {"en": "https://en.wikipedia.org/wiki/Handsel_Monday"}},
+        {type: "D", start: {Easter: "Easter", offsetD: -48}, titles: {"en": "Nickanan Night"}, notes: {"en": "Hall Monday\nPeasen Monday"}, urls: {"en": "https://en.wikipedia.org/wiki/Nickanan_Night"}},
         {type: "D", start: {mon: 1, wkd: [3], nth: -1}, titles: {"en": "Up Helly Aa"}, notes: {"en": "Up-Helly-Aa"}, urls: {"en": "https://www.uphellyaa.org/"}, first: {era: 1, y: 1870}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 10, d: 1}, titles: {"en": "Lincolnshire Day"}, first: {era: 1, y: 2006}, urls: {"en": "https://www.daysoftheyear.com/days/lincolnshire-day/"}},
