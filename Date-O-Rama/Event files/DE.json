@@ -68,6 +68,6 @@
         {type: "M", start: {mon: 5}, inherits: "LGBTQ History Month", first: {era: 1, y: 2014}},
     ],
     templates: [
-        {template: "Natl Rat Catcher’s Day", type: "D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-rat-catchers-day/"}, titles: {"en": "National Rat Catcher’s Day"}, emoji: "🪈"},
+        {template: "Natl Rat Catcher’s Day", type: "D", start: {mon: 7, d: 22}, titles: {"en": "National Rat Catcher’s Day"}, urls: {"en": "https://nationaltoday.com/national-rat-catchers-day/"}, notes: {"en": "Ratcatcher’s Day"}, emoji: "🪈"},
     ]
 }

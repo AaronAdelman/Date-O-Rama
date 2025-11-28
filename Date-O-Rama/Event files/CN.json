@@ -61,7 +61,7 @@
         {titles: {"en": "Xishuangbanna Prefecture Foundation Day"}, type: "D", start: {mon: 1, d: 23}},
         {titles: {"en": "Yanbian Prefecture Foundation Day"}, type: "D", start: {mon: 9, d: 3}},
         {type: "D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/serfs-emancipation-day/"}, titles: {"en": "Serfs’ Emancipation Day"}},
-        {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Singles Day", "he": "חג הרווקים", "zh_CN": "光棍节", "zh": "光棍節"}, urls: {"en": "https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en": "Double 11\nBachelors’ Day", "zh_CN": "双11", "zh": "雙11"}, first: {era: 1, y: 1993}},
+        {type: "D", start: {mon: 11, d: 11}, titles: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en": "https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en": "Singles Day\nDouble 11\nBachelors’ Day", "zh_CN": "双11", "zh": "雙11"}, first: {era: 1, y: 1993}},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
