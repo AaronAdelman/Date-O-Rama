@@ -24,8 +24,8 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God"},
         {type: "D", start: {mon: 8, d: 16, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/assumption-day"}, inherits: "Public Sector Holiday"},
         {type: "D", start: {mon: 11, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/romania/st-andrews-day"}, inherits: "St. Andrew’s Day"},
-        {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Day of Romania\nGreat Union Day", "ro": "Ziua Națională a României\nZiua Marii Uniri"}, inherits: "Natl Day", urls: {"en": "https://www.daysoftheyear.com/days/romania-national-day/"}, first: {era: 1, y: 1990}},
-        {inherits: "Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 1}, titles: {"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日 (罗马尼亚)"}, notes: {"en": "National Day of Romania", "ro": "Ziua Marii Uniri"}, inherits: "Natl Day", urls: {"en": "https://www.daysoftheyear.com/days/romania-national-day/"}, first: {era: 1, y: 1990}},
+        {type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 27, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/christmas-holiday"}, inherits: "Public Sector Holiday"},
 
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
