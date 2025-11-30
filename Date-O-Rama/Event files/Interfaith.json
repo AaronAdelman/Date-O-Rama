@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 6, d: 30}, titles: {"en": "Queer Youth of Faith Day"}, urls: {"en": "https://www.belovedarise.org/qyfday"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, wkd: [6], nth: 3}, titles: {"en": "National Day of Prayer for Law Enforcement Officers"}, urls: {"en": "https://www.checkiday.com/0a5c3c705144ae00af55b7e349e05a2a/national-day-of-prayer-for-law-enforcement-officers"}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 7, d: 26}, titles: {"en": "One Voice Day", "he": "יום קול אחד"}, urls: {"en": "https://www.daysoftheyear.com/days/one-voice-day/"}, first: {era: 1, y: 1996}},
-        {type: "M", start: {mon: 12}, titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, emoji: "🙏", urls: {"en": "https://www.daysoftheyear.com/days/spiritual-literacy-month/"}, first: {era: 1, y: 1996}},
+        {type: "M", start: {mon: 12}, titles: {"en": "Spiritual Literacy Month", "he": "חודש האוריינות הרוחנית"}, emoji: "🙏", urls: {"en": "https://www.daysoftheyear.com/days/spiritual-literacy-month/"}, first: {era: 1, y: 1996}, notes: {"en": "Created by Frederic and Mary Ann Brussat"}},
         {type: "M", start: {mon: 3}, titles: {"en": "Spiritual Wellness Month", "he": "חודש הבריאות הרוחנית"}, urls: {"en": "https://www.daysoftheyear.com/days/spiritual-wellness-month/"}},
         {type: "M", start: {mon: 2}, titles: {"en": "Spiritual Teachers Month"}, urls: {"en": "https://www.daysoftheyear.com/days/spiritual-teachers-month/"}},
     ]
