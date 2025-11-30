@@ -184,7 +184,7 @@
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}, notes: {"en": "Created by Bat Conservation International"}},
         ]},
         
-        {type: "nD", start: {mon: 12, d: 1, durationD: 7}, titles: {"en": "National Cookie Cutter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, first: {era: 1, y: 1996}, nonoverlappingSubEvents: [
+        {type: "nD", start: {mon: 12, d: 1, durationD: 7}, titles: {"en": "National Cookie Cutter Week"}, notes: {"en": "Cookie Cutter Week\nCreated by Paula Mullins"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, first: {era: 1, y: 1996}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Cookie Cutter Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-day/"}, first: {era: 1, y: 2019}},
         ]},
         
