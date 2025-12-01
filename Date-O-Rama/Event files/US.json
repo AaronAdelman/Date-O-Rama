@@ -206,7 +206,7 @@
         {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Bill of Rights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bill-of-rights-day/"}, first: {era: 1, y: 1941}},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Pan American Aviation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Aviation_Day"}, emoji: "👨‍✈️👩‍✈️"},
         {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "Natl Re-Gifting Day", first: {era: 1, y: 2008}},
-        {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, urls: {"en": "https://www.daysoftheyear.com/days/special-education-day/"}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 12, d: 2}, titles: {"en": "Special Education Day"}, notes: {"en": "National Special Education Day"}, urls: {"en": "https://www.daysoftheyear.com/days/special-education-day/"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Space Force Birthday"}},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "Pledge of Allegiance Day"}, notes: {"en": "Allegiance Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pledge-of-allegiance-day/"}, first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 9, d: 8}, titles: {"en": "National Pledge of Allegiance Day"}, notes: {"en": "Created by George Bush"}, urls: {"en": "https://www.checkiday.com/6462f8e0b8223187719934b262c05792/national-pledge-of-allegiance-day"}, first: {era: 1, y: 1989}},
