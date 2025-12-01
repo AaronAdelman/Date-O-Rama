@@ -9,7 +9,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_United_Arab_Emirates"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "nD", start: {mon: 11, d: 30}, end: {mon: 12, d: 1}, titles: {"en": "Commemoration Day", "ar": "يوم الشهيد"}, urls: {"en": "https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
+        {type: "nD", start: {mon: 11, d: 30}, end: {mon: 12, d: 1}, titles: {"ar":"يوم الشهيد","en":"Commemoration Day","fa":"روز شهید","ta":"தியாகிகள் நாள் (ஐக்கிய அரபு அமீரகம்)"}, urls: {"en": "https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
         {type: "nD", start: {mon: 12, d: 2}, end: {mon: 12, d: 3}, first: {era: 1, y: 1971}, inherits: "Natl Day", urls: {"en": "https://nationaltoday.com/national-day-uae/"}},
 
         {type: "D", start: {mon: 6, d: 21}, inherits: "Father’s Day"},
