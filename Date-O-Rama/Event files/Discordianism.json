@@ -133,7 +133,7 @@
         {type: "D", start: {mon: 8, d: 10}, titles: {"en": "Multiversal Underwear Day"}, notes: {"en": "Whollyday\n3 Bureaucracy"}, inherits: "EDH"},
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "Theatre Night"}, inherits: "HDH"},
         {type: "D", start: {mon: 8, d: 17}, titles: {"en": "St. Cecil Day"}, notes: {"en": "Whollyday\n10 Bureaucracy"}},
-        {type: "D", start: {mon: 8, d: 23, thruD: 29, wkd: [1]}, titles: {"en": "Go Topless Day"}, notes: {"en": "Whollyday"}},
+        {type: "D", start: {mon: 8, d: 23, thruD: 29, wkd: [1]}, titles: {"ar":"يوم تعري الصدر","bn":"গো টপলেস দিবস","ca":"Go Topless Day","en":"Go Topless Day","es":"Go Topless Day","hy":"Կիսամերկ լինելու օր","id":"Go Topless Day","ja":"ゴー・トップレス・デー","nl":"Toplessdag","pt":"Go Topless Day","sk":"Go Topless Day"}, notes: {"en": "Whollyday"}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en": "Nancy Fancymanner’s Birthday"}, inherits: "*BDay*", urls: {"en": "http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {type: "D", start: {mon: 8, d: 25}, titles: {"en": "Festival of Hanky-Panky Spankies"}, notes: {"en": "Whollyday\n18 Bureaucracy"}, inherits: "EDH"},
         {type: "D", start: {mon: 8, d: 29}, inherits: "St. Scrivener’s Day", urls: {"en": "https://www.fsofcabal.com/holydays/04-22-saint-scriveners-day"}},
