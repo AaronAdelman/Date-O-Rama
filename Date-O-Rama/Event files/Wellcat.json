@@ -10,7 +10,7 @@
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Bifocals At The Monitor Liberation Day"}},
-            {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}},
+            {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}, first: {era: 1, y: 2000}},
             {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Pick A Pathologist Pal Day"}},
             {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Cat Herders’ Day"}},
             {type: "D", start: {mon: 12, d: 16}, inherits: "Barbie and Barney Backlash Day"},
