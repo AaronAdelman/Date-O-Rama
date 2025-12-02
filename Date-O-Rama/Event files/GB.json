@@ -97,7 +97,7 @@
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Hogmanay"}, urls: {"en": "https://www.daysoftheyear.com/days/hogmanay/"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "Nos Galan Road Races", first: {era: 1, y: 1958}, last: {era: 1, y: 1972}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "Nos Galan Road Races", first: {era: 1, y: 1984}},
-        {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Tree Dressing Day"}, urls: {"en": "https://www.commonground.org.uk/tree-dressing-day/"}, first: {era: 1, y: 1990}, emoji: "🎄"},
+        {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Tree Dressing Day"}, urls: {"en": "https://www.commonground.org.uk/tree-dressing-day/"}, first: {era: 1, y: 1990}, emoji: "🎄", notes: {"en": "Created by Common Ground UK"}},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "Welsh Language Music Day"}, urls: {"en": "https://nationaltoday.com/welsh-language-music-day/"}, first: {era: 1, y: 2013}, emoji: "🎼"},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Global Scouse Day"}, urls: {"en": "https://globalscouseday.com/"}},
         {type: "D", start: {mon: 4, d: 19}, titles: {"en": "National Primrose Day"}, notes: {"en": "Primrose Day\nSome think this observance falls on February 5."}, urls: {"en": "https://www.daysoftheyear.com/days/national-primrose-day/"}, emoji: "⚘", inherits: "*DeathAnniv*", first: {era: 1, y: 1920}},

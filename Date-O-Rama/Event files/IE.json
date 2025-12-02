@@ -48,7 +48,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
         {type: "M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/irish-heart-month/"}, titles: {"en": "Irish Heart Month"}, inherits: "*MedAwareness*", emoji: "🫀"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en": "Shine a Light Night"}, urls: {"en": "https://www.daysoftheyear.com/days/shine-a-light-night/"}, first: {era: 1, y: 2012}, notes: {"en": "Created by Focus Ireland"}},
-        {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Light Up a Life"}, urls: {"en": "https://nationaltoday.com/light-up-a-life/"}, first: {era: 1, y: 1996}, emoji: "🎄"},
+        {type: "D", start: {mon: 12, d: 5}, inherits: "Light Up a Life Day", first: {era: 1, y: 1984}},
         {type: "nD", start: {mon: 7, d: 11, thruD: 17, wkd: [2], durationD: 14}, titles: {"en": "Galway International Arts Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/galway-international-arts-festival/"}, first: {era: 1, y: 1978}, emoji: "🎭🎨"},
         {type: "D", start: {mon: 2, d: 29}, titles: {"en": "Bachelor’s Day"}, notes: {"en": "This observance feels socially outdated and awkward."}, urls: {"en": "https://en.wikipedia.org/wiki/Bachelor%27s_Day_(tradition)"}},
         {type: "D", start: {mon: 3, wkd: [5], nth: 1}, inherits: "World Book Day UK & Ireland", first: {era: 1, y: 1998}},
