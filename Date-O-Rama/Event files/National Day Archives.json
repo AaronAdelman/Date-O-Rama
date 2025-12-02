@@ -20,5 +20,6 @@
         {type: "D", start: {mon: 8, d: 15}, titles: {"en": "World Greatness Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/world-greatness-day/"}, first: {era: 1, y: 2019}, emoji: "🦸‍♂️🦸‍♀️", notes: {"en": "Created by Patrick Businge"}},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National GED Day"}, urls: {"en": "https://www.ged.com/nationalgedday/"}, first: {era: 1, y: 2023}, notes: {"en": "Created by the GED Testing Service"}, emoji: "🎓"},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Sit With a Stranger Day"}, notes: {"en": "National SWAS Day\nCreated by BDOPE LLC"}, urls: {"en": "https://www.bdope.today/sit-with-a-stranger-day.html#/"}, first: {era: 1, y: 2000}},
+        {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Zinc Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-zinc-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Balchem"}},
     ]
 }

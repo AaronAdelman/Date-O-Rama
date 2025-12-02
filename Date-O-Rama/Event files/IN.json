@@ -277,6 +277,7 @@
         {type: "D", start: {era: 1, y: 2025, mon: 11, d: 6}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/india/india-bihar-elections"}, locations: {"en": "Bihar"}},
         {type: "D", start: {era: 1, y: 2025, mon: 11, d: 11}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/india/india-bihar-elections"}, locations: {"en": "Bihar"}},
         {type: "D", start: {mon: 11, d: 15}, titles: {"en": "Birsa Munda Birth Anniversary"}, urls: {"en": "https://www.officeholidays.com/holidays/india/birsa-munda-birth-anniversary"}, first: {era: 1, y: 2021}, locations: {"en": "Madhya Pradesh"}, inherits: "*BDay*"},
+        {type: "D", start: {mon: 10, d: 30}, titles: {"en":"Thevar Jayanthi","hi":"थेवर जयंती","id":"Thevar Jayanthi","si":"තේවර් ජයන්ති","ta":"தேவர் செயந்தி"}, first: {era: 1, y: 1979}, urls: {"en": "https://en.wikipedia.org/wiki/Thevar_Jayanthi"}},
     ],
     templates: [
         {template: "Panchayati Raj Diwas", type: "D", start: {mon: 3, d: 5}, titles: {"en": "Panchayati Raj Diwas"}, urls: {"en": "https://www.officeholidays.com/holidays/india/panchayati-raj-diwas"}, locations: {"en": "Odisha"}},
