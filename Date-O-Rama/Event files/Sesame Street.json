@@ -85,7 +85,7 @@
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Isabel’s Birthday"}, inherits: "*BDay*"},
         
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "Zoe’s Birthday"}, inherits: "*BDay*", notes: {"en": "Some think Zoe was born on September 30 or in January."}, first: {era: 1, y: 1998}},
-        {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Kermit the Frog’s Birthday"}, inherits: "*BDay*", notes: {"en": "It is unclear when Kermit the Frog was born; the one used here is simply one frequently used.  February 29 has also been suggested."}, first: {era: 1, y: 1955}, urls: {"en": "https://muppet.fandom.com/wiki/Kermit%27s_Birthday"}},
+        {type: "D", start: {mon: 5, d: 9}, titles: {"en": "Kermit the Frog’s Birthday"}, inherits: "*BDay*", notes: {"en": "It is unclear when Kermit the Frog was born; the birthday given here is simply one frequently used.  February 29 has also been suggested."}, first: {era: 1, y: 1955}, urls: {"en": "https://muppet.fandom.com/wiki/Kermit%27s_Birthday"}},
+        {type: "D", start: {mon: 11, d: 26}, inherits: "Natl Cookie Day", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-cookie-day-december-4"}, first: {era: 1, y: 1976}},
     ]
 }
-
