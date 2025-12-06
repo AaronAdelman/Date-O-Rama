@@ -27,6 +27,6 @@
         {type: "D", start: {mon: 5, d: 13}, titles: {"en": "Cheng Huang’s Birthday", "zh": "城隍爺誕辰"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 7, d: 7}, inherits: "Qixi Festival"},
         {type: "D", start: {mon: 7, d: 15}, inherits: "Ghost Festival"},
-        {type: "D", start: {mon: 10, d: 15}, titles: {"en": "Saisiat Festival", "zh": "賽夏節"}},
+        {type: "D", start: {mon: 10, d: 15}, titles: {"en":"Pas-ta’ai","id":"Pas-ta’ai","ig":"Pas-ta’ai","nan":"Pas-taai","zh":"巴斯達隘"}, notes: {"en": "Saisiat Festival", "zh": "賽夏節"}, urls: {"en": "https://en.wikipedia.org/wiki/Pas-ta%27ai"}},
    ]
 }
