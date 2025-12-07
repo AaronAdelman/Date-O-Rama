@@ -113,7 +113,7 @@
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "Mitten Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mitten-tree-day/"}, emoji: "🧤"},
         {type: "D", start: {mon: 12, d: 6}, titles: {"en": "National “Cook for Christmas” Day"}, urls: {"en": "https://www.checkiday.com/d230c484c886805e326988ea818fc006/national-cook-for-christmas-day"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Natl Christmas Tree Day", first: {era: 1, y: 2015}},
-        {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Christmas Card Day"}, urls: {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
+        {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Christmas Card Day"}, notes: {"en": "National Christmas Card Day"}, urls: {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Lutefisk Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lutefisk-day/"}, notes: {"en": "Anna’s Day"}},
         {type: "D", start: {mon: 12, wkd: [1], nth: 2}, titles: {"en": "World Choral Day"}, urls: {"en": "http://worldchoralday.org/"}, emoji: "🎵", notes: {"en": "Choral Day"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 12, wkd: [2], nth: 2}, titles: {"ar":"الإثنين الأخضر","en":"Green Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/green-monday/"}, first: {era: 1, y: 2007}, emoji: "🎁", notes: {"en": "Not to be confused with Clean Monay.  This is a shopping “holiday”.\nCreated by Shopping.com"}},

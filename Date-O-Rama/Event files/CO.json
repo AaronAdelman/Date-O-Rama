@@ -48,6 +48,6 @@
        {type: "D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
        {type: "D", start: {mon: 6, d: 27}, inherits: "Natl Coffee Day"},
        {type: "nD", start: {mon: 9, d: 3}, end: {mon: 10, d: 5}, titles: {"es": "Fiesta de San Pacho"}, urls: {"en": "https://www.daysoftheyear.com/days/fiesta-de-san-pacho/"}},
-       {type: "D", start: {mon: 12, d: 7}, titles: {"ar":"يوم الشموع الصغيرة","en":"Day of the Little Candles","eo":"Tago de la Kandeletoj","es":"Día de las velitas","fa":"روز شمع‌های کوچک","fr":"Día de las Velitas","id":"Hari Lilin Kecil","jv":"Dina Lilin Cilik","ms":"Día de las Velitas","si":"කුඩා ඉටිපහන් දිනය","tr":"Día de las Velitas"}, notes: {"en": "Little Candles Day\nImmaculate Conception Eve"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-little-candles/"}, emoji: "🕯️"},
+       {type: "D", start: {mon: 12, d: 7}, titles: {"ar":"يوم الشموع الصغيرة","en":"Day of the Little Candles","eo":"Tago de la Kandeletoj","es":"Día de las velitas","fa":"روز شمع‌های کوچک","fr":"Día de las Velitas","id":"Hari Lilin Kecil","jv":"Dina Lilin Cilik","ms":"Día de las Velitas","si":"කුඩා ඉටිපහන් දිනය","tr":"Día de las Velitas"}, notes: {"en": "Little Candles Day\nImmaculate Conception Eve", "es": "Noche de las Velitas"}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-the-little-candles/"}, emoji: "🕯️"},
   ]
 }
