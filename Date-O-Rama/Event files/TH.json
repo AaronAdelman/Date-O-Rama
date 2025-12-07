@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 12, d: 5}, inherits: "King Bhumibol’s Birthday"},
         {type: "D", start: {mon: 12, d: 6, wkd: [2]}, inherits: "King Bhumibol’s Birthday", titles: {"en": "King Bhumibol’s Birthday (in lieu)"}},
         {inherits: "Father’s Day", type: "D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-fathers-day-in-thailand/"}},
-        {type: "D", start: {mon: 12, d: 10}, inherits: "Constitution Day", urls: {"en": "https://www.daysoftheyear.com/days/constitution-day-in-thailand/"}, first: {era: 1, y: 1932}},
+        {type: "D", start: {mon: 12, d: 10}, inherits: "Constitution Day", urls: {"en": "https://www.daysoftheyear.com/days/constitution-day-in-thailand/"}, first: {era: 1, y: 1932}, notes: {"en": "Wan Ratthathammanun\nThailand Constitution Day\nCreated by Khana Ratsadon (The People’s Party)"}},
         {inherits: "Public Holiday", type: "D", start: {mon: 12, d: 30, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/new-years-eve"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         

@@ -61,7 +61,7 @@
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Christmas Book Day"}, urls: {"en": "https://www.daysoftheyear.com/days/christmas-book-day/"}, emoji: "📖", first: {era: 1, y: 2021}, notes: {"en": "Created by Jill Roman Lord"}},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Christmas Lights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-christmas-lights-day/"}, emoji: "🎄"},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Peppermint Bark Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-peppermint-bark-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Williams Sonoma"}},
-        {type: "D", start: {mon: 12, d: 11}, titles: {"en": "Holiday Food Drive for Needy Animals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/holiday-food-drive-for-needy-animals-day/"}, notes: {"en": "Holiday Food Drive for the Needy Animals Day"}, emoji: "🐱"},
+        {type: "D", start: {mon: 12, d: 11}, titles: {"en": "Holiday Food Drive for Needy Animals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/holiday-food-drive-for-needy-animals-day/"}, notes: {"en": "National Food Drive for Needy Animals Day\nFood Drive for Needy Animals Day\nNeedy Animals Day"}, emoji: "🐱"},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Poinsettia Day", first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "Gingerbread House Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gingerbread-house-day/"}},
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "National Ambrosia Day"}, urls: {"en": "https://nationaldaycalendar.com/national-ambrosia-day-december-12/"}},
