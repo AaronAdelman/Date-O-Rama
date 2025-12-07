@@ -44,7 +44,7 @@ public class ASAFrenchRepublicanCalendar: ASABoothCalendar, ASACalendarWithBlank
         return FrenchRepublicanCalendar.isLeapYear(year)
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
     
-    override func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
+    override func dayOfWeek(gregorianWeekday: Int, month: Int, day: Int) -> Int {
         if month == 13 {
             return 0
         } else {

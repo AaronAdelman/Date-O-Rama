@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 9, d: 8}, inherits: "Victory Day", urls: {"en": "https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, notes: {"en": "Feast of Our Lady of Victories"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/malta-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/malta-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
@@ -33,7 +33,7 @@
         {type: "D", start: {mon: 2, d: 3}, inherits: "St. Blaise", first: {era: 1, y: 972}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         
-        {type: "D", start: {mon: 3, d: 25}, inherits: "the Annunciation"},
+        {type: "D", start: {mon: 3, d: 25}, inherits: "Annunciation"},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Feast of Jesus of Nazareth", "mt": "Ġesù Nazzarenu"}},
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},

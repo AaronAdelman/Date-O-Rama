@@ -18,8 +18,8 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Constitution Day", first: {era: 1, y: 1982}, urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/equatorial-guinea-constitution-day"}},
         {type: "D", start: {mon: 10, d: 12}, inherits: "Independence Day", first: {era: 1, y: 1968}, urls: {"en": "https://nationaltoday.com/equatorial-guinea-independence-day/"}},
         {inherits: "Independence Day (in lieu)", type: "D", start: {mon: 10, d: 13, thruD: 14, wkd: [2]}, first: {era: 1, y: 1968}, urls: {"en": "https://nationaltoday.com/equatorial-guinea-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
-        {type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "the Immaculate Conception (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/immaculate-conception-day"}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Immaculate Conception (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/equatorial-guinea/immaculate-conception-day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

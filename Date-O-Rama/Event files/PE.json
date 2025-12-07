@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 8, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/peru/santa-rosa-de-lima"}, inherits: "St. Rose of Lima"},
         {titles: {"en": "Battle of Angamos", "es": "Combate naval de Angamos"}, type: "D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/battle-of-angamos/"}, start: {era: 1, y: 1879}, notes: {"es": "Combate de Angamos"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/peru/battle-of-ayacucho"}, titles: {"en": "Battle of Ayacucho", "es": "Batalla de Ayacucho"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 

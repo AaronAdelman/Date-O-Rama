@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 6, d: 30, wkd: [2, 3]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://nationaltoday.com/seychelles-independence-day/"}, first: {era: 1, y: 1976}},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/immaculate-conception-day"}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/immaculate-conception-day"}},
 
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
    ]

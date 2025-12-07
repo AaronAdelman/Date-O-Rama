@@ -51,7 +51,7 @@
         {inherits: "St. Stephen’s Day", type: "D", start: {mon: 12, d: 27}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
-        {type: "D", start: {mon: 3, d: 25}, inherits: "the Annunciation"},
+        {type: "D", start: {mon: 3, d: 25}, inherits: "Annunciation"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {inherits: "Transfiguration", type: "D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},

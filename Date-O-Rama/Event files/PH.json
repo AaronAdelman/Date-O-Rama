@@ -30,7 +30,7 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Souls Day"},
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3}, titles: {"en": "Bonifacio Day", "fil": "Araw ng Kapanganakan ni Andrés Bonifacio"}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/bonifacio-day"}, first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/rizal-day/"}, titles: {"en": "Rizal Day", "fil": "Paggunita sa Kamatayan ni Dr. Jose Rizal"}, first: {era: 1, y: 1902}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},

@@ -23,7 +23,7 @@
         {inherits: "Natl Youth Day", type: "D", start: {mon: 11, d: 12}, first: {era: 1, y: 1991}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, notes: {"en": "Youth National Day"}},
         {type: "D", start: {mon: 11, d: 28}, inherits: "Proclamation of Independence Day", first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},
         {type: "D", start: {mon: 12, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/east-timor-memorial-day"}, inherits: "Memorial Day"},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "Natl Heroes’ Day", urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
 

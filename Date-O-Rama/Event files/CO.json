@@ -34,7 +34,7 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day", urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
         {titles: {"en": "All Saints Day Holiday"}, type: "D", start: {mon: 11, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/colombia/all-saints-day"}},
         {type: "D", start: {mon: 11, wkd: [2], d: 11, thruD: 17}, titles: {"en": "Independence of Cartagena", "es": "Independencia de Cartagena"}},
-        {type: "D", start: {mon: 12, d: 8}, inherits: "the Immaculate Conception"},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {inherits: "Carnival", type: "D", start: {Easter: "Easter", offsetD: -48}, titles: {"en": "Monday of Carnival"}},

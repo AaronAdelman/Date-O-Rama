@@ -749,8 +749,8 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
     } // func isLeapYear(calendarCode: ASACalendarCode, era: Int, year: Int) -> Bool
 
     // TODO:  Override when implementing new calendars
-    func dayOfWeek(dateAsJulianDate: Double, month: Int, day: Int) -> Int {
-        return -1
+    func dayOfWeek(gregorianWeekday: Int, month: Int, day: Int) -> Int {
+        return gregorianWeekday
     }
     
     // TODO:  Override when implementing new calendars
@@ -778,7 +778,7 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         let day = boothYMD.day
         let month: Int = boothYMD.month
         let boothYear: Int = boothYMD.year
-        let weekday = dayOfWeek(dateAsJulianDate: dateAsJulianDate, month: month, day: day)
+        let weekday = dayOfWeek(gregorianWeekday: gregorianComponents.weekday!, month: month, day: day)
         
         let (era, year) = {
             if calendarCode.shouldUseAstronomicalYears {
