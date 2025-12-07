@@ -116,7 +116,7 @@
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Christmas Card Day"}, urls: {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
         {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Lutefisk Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lutefisk-day/"}, notes: {"en": "Anna’s Day"}},
         {type: "D", start: {mon: 12, wkd: [1], nth: 2}, titles: {"en": "World Choral Day"}, urls: {"en": "http://worldchoralday.org/"}, emoji: "🎵", notes: {"en": "Choral Day"}, first: {era: 1, y: 1990}},
-        {type: "D", start: {mon: 12, wkd: [2], nth: 2}, titles: {"en": "Green Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/green-monday/"}, first: {era: 1, y: 2007}, emoji: "🎁"},
+        {type: "D", start: {mon: 12, wkd: [2], nth: 2}, titles: {"ar":"الإثنين الأخضر","en":"Green Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/green-monday/"}, first: {era: 1, y: 2007}, emoji: "🎁", notes: {"en": "Not to be confused with Clean Monay.  This is a shopping “holiday”.\nCreated by Shopping.com"}},
         {type: "D", start: {mon: 12, wkd: [4], nth: 1}, titles: {"en": "Special Kids Day"}, urls: {"en": "https://www.specialkidsday.org/"}, first: {era: 1, y: 1990}, emoji: "👦👧"},
         {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "Natl Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, wkd: [6], nth: 3}, titles: {"en": "National Ugly Christmas Sweater Day"}, notes: {"en": "Ugly Christmas Sweater Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, emoji: "🦺"},
