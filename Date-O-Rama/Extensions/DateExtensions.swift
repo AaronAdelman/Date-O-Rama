@@ -80,23 +80,23 @@ extension Date {
         return Date(timeIntervalSince1970: seconds)
     } // static func date(JulianDate:  Double) -> Date
 
-    func JulianDateWithTime(calendarCode: ASACalendarCode) -> Double {
+    func julianDateWithTime(calendarCode: ASACalendarCode) -> Double {
         if calendarCode == .marsSolDate {
             return self.MarsSolDate
         }
         
         let offsetFromJulianDay = calendarCode.offsetFromJulianDay
         return self.julianDate - offsetFromJulianDay
-    } // func JulianDateWithTime(calendarCode: ASACalendarCode) -> Double
+    } // func julianDateWithTime(calendarCode: ASACalendarCode) -> Double
 
-    func JulianDateWithoutTime(calendarCode: ASACalendarCode) -> Int {
-        return Int(floor(JulianDateWithTime(calendarCode: calendarCode)))
-    } // func JulianDateWithoutTime(calendarCode: ASACalendarCode) -> Int
+    func julianDateWithoutTime(calendarCode: ASACalendarCode) -> Int {
+        return Int(floor(julianDateWithTime(calendarCode: calendarCode)))
+    } // func julianDateWithoutTime(calendarCode: ASACalendarCode) -> Int
     
     func localModifiedJulianDay(timeZone: TimeZone) -> Int {
         let seconds = timeZone.secondsFromGMT(for: self)
         let adjustedDate = self.addingTimeInterval(Double(seconds))
-        return adjustedDate.JulianDateWithoutTime(calendarCode: .modifiedJulianDay)
+        return adjustedDate.julianDateWithoutTime(calendarCode: .modifiedJulianDay)
     }
     
     static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
@@ -106,23 +106,23 @@ extension Date {
         return adjustedDate
     } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
-    func JulianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double) {
-        let full = self.JulianDateWithTime(calendarCode: calendarCode)
+    func julianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double) {
+        let full = self.julianDateWithTime(calendarCode: calendarCode)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
         
         return (day: day, fractionOfDay: fractionOfDay)
-    } // func JulianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double)
+    } // func julianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double)
 
-    func JulianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double) {
-        let full = self.JulianDateWithTime(calendarCode: calendarCode)
+    func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double) {
+        let full = self.julianDateWithTime(calendarCode: calendarCode)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
 
         let day = Int(dayAsDouble)
 
         return (JulianDate: full, day:  day, fractionOfDay: fractionOfDay)
-    } // func JulianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double)
+    } // func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double)
 
     static func date(JulianDate:  Double, calendarCode: ASACalendarCode) -> Date {
         if calendarCode == .marsSolDate {

@@ -42,13 +42,13 @@ class ASAJulianDayCalendar:  ASACalendar {
         var components = ASADateComponents(calendar: self, locationData: locationData)
 
         if self.supportsTimes {
-            let (JulianDate, day, fractionOfDay) = now.JulianDateWithComponents(calendarCode: self.calendarCode)
+            let (JulianDate, day, fractionOfDay) = now.julianDateWithComponents(calendarCode: self.calendarCode)
             let dateString = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             components.day        = day
             components.solarHours = fractionOfDay
             return (dateString, "", components)
         } else {
-            let day = now.JulianDateWithoutTime(calendarCode: self.calendarCode)
+            let day = now.julianDateWithoutTime(calendarCode: self.calendarCode)
             let dateString = self.dateString(JulianDay: day, localeIdentifier: localeIdentifier)
             components.day        = 0
             components.solarHours = 0.0
@@ -58,11 +58,11 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         if self.supportsTimes && timeFormat != .none {
-            let JulianDate = now.JulianDateWithTime(calendarCode: self.calendarCode)
+            let JulianDate = now.julianDateWithTime(calendarCode: self.calendarCode)
             let result = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             return result
         } else {
-            let JulianDay = now.JulianDateWithoutTime(calendarCode: self.calendarCode)
+            let JulianDay = now.julianDateWithoutTime(calendarCode: self.calendarCode)
             let result = self.dateString(JulianDay: JulianDay, localeIdentifier: localeIdentifier)
             return result
         }
@@ -71,14 +71,14 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsLocales: Bool = true
         
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
-        let JulianDate = date.JulianDateWithTime(calendarCode: self.calendarCode)
+        let JulianDate = date.julianDateWithTime(calendarCode: self.calendarCode)
         let startAsJulianDate = floor(JulianDate)
         return Date.date(JulianDate: startAsJulianDate, calendarCode: self.calendarCode)
     } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
     
     func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
-        let JulianDate = date.JulianDateWithTime(calendarCode: self.calendarCode)
+        let JulianDate = date.julianDateWithTime(calendarCode: self.calendarCode)
         let startAsJulianDate = floor(JulianDate)
         return Date.date(JulianDate: startAsJulianDate + 1.0, calendarCode: self.calendarCode)
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
@@ -154,7 +154,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
          // Returns the value for one component of a date.
-        let components = date.JulianDateComponents(calendarCode: self.calendarCode)
+        let components = date.julianDateComponents(calendarCode: self.calendarCode)
 
         switch component {
         case .day:
@@ -169,7 +169,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
-        let JDComponents = date.JulianDateComponents(calendarCode: self.calendarCode)
+        let JDComponents = date.julianDateComponents(calendarCode: self.calendarCode)
         var result = ASADateComponents(calendar: self, locationData: locationData)
         for component in components {
             switch component {
