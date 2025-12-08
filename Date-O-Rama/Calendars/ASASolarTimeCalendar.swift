@@ -1,5 +1,5 @@
 //
-//  ASASunsetTransitionCalendar.swift
+//  ASASolarTimeCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-22.
@@ -8,11 +8,10 @@
 
 import Foundation
 import CoreLocation
-import SwiftUI
 
 // MARK: -
 
-public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
+public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
     var calendarCode: ASACalendarCode
     
 #if os(watchOS)
@@ -621,4 +620,4 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         
         return .system
     } // func cycleNumberFormat(locale: Locale) -> ASANumberFormat
-} // class ASASunsetTransitionCalendar
+} // class ASASolarTimeCalendar

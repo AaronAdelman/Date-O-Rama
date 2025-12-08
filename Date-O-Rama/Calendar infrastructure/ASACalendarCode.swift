@@ -45,7 +45,6 @@ enum ASACalendarCode:  String, Codable {
     case islamicUmmAlQuraSolarTime = "IslamicUmmAlQuraSolar"
     case hebrewMA                  = "HebrewSolarMA"
     case frenchRepublican          = "fre"
-//    case frenchRepublicanRomme     = "fre-r"
     case julian                    = "jul"
     case marsSolDate               = "mar"
     case bangla                    = "bangla"
@@ -119,7 +118,6 @@ extension ASACalendarCode {
     var localizedName:  String {
         switch self {
         case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican,
-//                .frenchRepublicanRomme,
 //                .hebrew,
                 .hebrewMA,
 //                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
@@ -252,9 +250,7 @@ extension ASACalendarCode {
     
     var isFrenchRepublicanCalendar: Bool {
         switch self {
-        case .frenchRepublican
-//            , .frenchRepublicanRomme
-            :
+        case .frenchRepublican:
             return true
             
         default:
@@ -391,9 +387,7 @@ extension ASACalendarCode {
     var type:  ASACalendarType {
         switch self {
         case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
-                .japanese ,.persian, .republicOfChina, .frenchRepublican,
-//                .frenchRepublicanRomme,
-                .julian, .bangla, .malayalam, .odia, .tamil:
+                .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil:
             return .solar
             
         case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
@@ -413,9 +407,7 @@ extension ASACalendarCode {
     static func allForClocksOfLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
         switch locationType {
         case .earthLocation:
-            return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican,
-//                    .frenchRepublicanRomme,
-                .julian, .chinese,
+            return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .chinese,
 //                    .hebrew,
                     .hebrewGRA, .hebrewMA,
 //                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
@@ -558,9 +550,7 @@ extension ASACalendarCode {
             }
             return result
 
-        case .frenchRepublican
-//            , .frenchRepublicanRomme
-            :
+        case .frenchRepublican:
             return ["Rural"]
             
         case .julian:

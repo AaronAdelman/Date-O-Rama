@@ -21,7 +21,7 @@ class ASACalendarFactory {
         } else if code.isJulianDayCalendar {
             return ASAJulianDayCalendar(calendarCode:  code)
         } else if code.isSunsetTransitionCalendar {
-            return ASASunsetTransitionCalendar(calendarCode: code)
+            return ASASolarTimeCalendar(calendarCode: code)
         } else if code == .frenchRepublican {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
         } else if code == .julian {
