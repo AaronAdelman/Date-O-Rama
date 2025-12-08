@@ -8,7 +8,6 @@
 
 import Foundation
 import CoreLocation
-//import UIKit
 import SwiftUI
 
 // MARK: -
@@ -35,7 +34,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let timeZone = locationData.timeZone
-        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedNow >= now)
 //        debugPrint("📅", #file, #function, "fixedNow:", fixedNow.formattedFor(timeZone: timeZone) as Any, "transition:", transition.formattedFor(timeZone: timeZone) as Any)
         
@@ -52,7 +51,8 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
-    var dayStart:  ASASolarEvent {
+    /// For a Jewish or Islamic calendar, night precedes day, so this is Sunrise or dawn.  For a South Asian calendar, day precedes night, so this is Sunset.
+    var midPointTransition:  ASASolarEvent {
         switch self.calendarCode {
         case .hebrewMA:
             return .dawn72Minutes
@@ -60,9 +60,10 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         default:
             return .sunrise
         } // switch self.calendarCode
-    } // var dayStart
+    } // var midPointTransition
     
-    var dayEnd:  ASASolarEvent {
+    /// For a Jewish or Islamic calendar, this is Sunset or dusk.  For a South Asian calendar, this is Sunrise.
+    var dateTransition:  ASASolarEvent {
         switch self.calendarCode {
         case .hebrewMA:
             return .dusk72Minutes
@@ -71,10 +72,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
             return .sunset
         } // switch self.calendarCode
     } //
-    
-    fileprivate func invalidTimeString() -> String {
-        return NSLocalizedString("NO_SOLAR_TIME", comment: "")
-    }
     
     func solarTimeComponents(now: Date, locationData:  ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
         let location = locationData.location
@@ -103,11 +100,10 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
 //            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Nighttime, transition is at the start of the nighttime")
-            //            let nextDate = now.oneDayAfter
             let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
-            let nextEvents = nextDate.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
-            nextDayHalfStart = nextEvents[self.dayStart]!!
+            let nextEvents = nextDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
+            nextDayHalfStart = nextEvents[self.midPointTransition]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
             
 //            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition.formattedFor(timeZone: timeZone) as Any, "Nighttime end:", nextDayHalfStart.formattedFor(timeZone: timeZone) as Any)
@@ -116,14 +112,11 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
             daytime = false
         } else {
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
-            // now < deoptionalizedTransition
-//            let events = now.noon(timeZone: timeZone).solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
-//            let dateToCalculateSolarEventsFor = now.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: now)))
             let dateToCalculateSolarEventsFor = now
-          let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
+            let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
 
-            let rawDayHalfStart: Date?? = events[self.dayStart]
+            let rawDayHalfStart: Date?? = events[self.midPointTransition]
             
             if rawDayHalfStart == nil {
                 return (hours:  -1.0, daytime:  false, valid:  false)
@@ -139,9 +132,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
 //                debugPrint(#file, #function, "Need to jigger")
                 // Uh-oh.  It found the day half start for the wrong day!
                 jiggeredNow = now - Date.SECONDS_PER_DAY
-                let events = jiggeredNow.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
+                let events = jiggeredNow.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
                 
-                let rawDayHalfStart: Date?? = events[self.dayStart]
+                let rawDayHalfStart: Date?? = events[self.midPointTransition]
                 
                 if rawDayHalfStart == nil {
                     return (hours:  -1.0, daytime:  false, valid:  false)
@@ -177,19 +170,13 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         return (hours:  hours, daytime:  daytime, valid:  true)
     } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
     
-    func timeString(
-        hours:  Double, daytime:  Bool, valid:  Bool,
-//        now: Date,
-        localeIdentifier: String, timeFormat: ASATimeFormat
-//        , locationData: ASALocation, transition:  Date??
-    ) -> String {
+    func timeString(hours:  Double, daytime:  Bool, valid:  Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
         
-//        let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
 //        debugPrint("⌛️", #file, #function, "hours:", hours, "daytime:", daytime as Any, "valid:", valid)
         if !valid {
-            return invalidTimeString()
+            return NSLocalizedString("NO_SOLAR_TIME", comment: "")
         }
         assert(hours >= 0.0)
         assert(hours < 12.0)
@@ -200,15 +187,8 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         switch timeFormat {
         case .decimalTwelveHour:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
-            
-            //        case .JewishCalendricalCalculation:
-            //            result = self.JewishCalendricalCalculationTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
-            
-        case
-            //            .short,
-                .medium
-            //            , .long, .full
-            :
+                    
+        case .medium:
             result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
             
         default:
@@ -233,11 +213,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
-    
-    //    func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
-    //        return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  1080.0, secondsPerMinutes:  76.0, minimumHourDigits:  1, minimumMinuteDigits:  4, minimumSecondDigits:  2)
-    //    } // func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
-    
+        
     func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  60.0, secondsPerMinute:  60.0, minimumHourDigits:  1, minimumMinuteDigits:  2, minimumSecondDigits:  2)
     } // func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
@@ -282,12 +258,11 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         let timeZone = locationData.timeZone
-        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedNow >= now)
         
         var timeString:  String = ""
         if timeFormat != .none {
-//            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
             let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
             timeString = self.timeString(hours: hours, daytime: daytime, valid: valid, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
@@ -312,9 +287,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         let location = locationData.location
         let timeZone = locationData.timeZone
         let yesterday: Date = date.oneDayBefore
-        let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-        let events = fixedYesterday.solarEvents(location: location, events: [self.dayEnd], timeZone: timeZone )
-        let rawDayEnd: Date?? = events[self.dayEnd]
+        let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
+        let events = fixedYesterday.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
+        let rawDayEnd: Date?? = events[self.dateTransition]
         if rawDayEnd == nil {
             return date.sixPMYesterday(timeZone: timeZone)
         }
@@ -329,9 +304,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         let location = locationData.location
         let timeZone = locationData.timeZone
         
-        let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-        let events = fixedNow.solarEvents(location: location, events: [self.dayEnd], timeZone: timeZone )
-        let rawDayEnd: Date?? = events[self.dayEnd]
+        let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
+        let events = fixedNow.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
+        let rawDayEnd: Date?? = events[self.dateTransition]
         if rawDayEnd == nil {
             return date.sixPM(timeZone: timeZone)
         }
@@ -412,7 +387,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
         
         var calendar = self.ApplesCalendar
         calendar.timeZone = locationData.timeZone
-        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
@@ -447,7 +422,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         
         let result = dateComponents(fixedDate: fixedDate, transition: transition, components: components, from: date, locationData: locationData)
         return result
@@ -524,7 +499,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     // MARK: -
     
     public var transitionType:  ASATransitionType {
-        switch self.dayEnd {
+        switch self.dateTransition {
         case .sunset:
             return .sunset
             
@@ -630,7 +605,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarWithWeeks, AS
     
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
         let timeZone = locationData.timeZone
-        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedDate >= date)
         
         return fixedDate.localModifiedJulianDay(timeZone: timeZone)
