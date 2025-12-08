@@ -9,7 +9,7 @@
             {type: "Y", start: {yDiv: 12, yRem: 2}, titles: {"en": "Year of the Ox", "he": "שנת השור"}, inherits: "*Ox*"},
             {type: "Y", start: {yDiv: 12, yRem: 3}, titles: {"en": "Year of the Tiger", "he": "שנת הטיגריס"}, inherits: "*Tiger*"},
             {type: "Y", start: {yDiv: 12, yRem: 4}, titles: {"en": "Year of the Rabbit", "he": "שנת הארנב"}, inherits: "*Rabbit*"},
-            {type: "Y", start: {yDiv: 12, yRem: 5}, titles: {"en": "Year of the Dragon", "he": "שנת הדרקון"}, inherits: "*Dragon*"},
+            {type: "Y", start: {yDiv: 12, yRem: 5}, titles: {"en":"Year of the Dragon","he":"שנת הדרקון","ru":"Год дракона","uk":"Рік Дракона"}, inherits: "*Dragon*"},
             {type: "Y", start: {yDiv: 12, yRem: 6}, titles: {"en": "Year of the Snake", "he": "שנת הנחש"}, inherits: "*Snake*"},
             {type: "Y", start: {yDiv: 12, yRem: 7}, titles: {"en": "Year of the Horse", "he": "שנת הסוס"}, inherits: "*Horse*"},
             {type: "Y", start: {yDiv: 12, yRem: 8}, titles: {"en": "Year of the Goat", "he": "שנת העז"}, inherits: "*Goat*"},
