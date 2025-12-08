@@ -8,7 +8,6 @@
 
 import Foundation
 import CoreLocation
-import UIKit
 
 class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
     var defaultDateFormat:  ASADateFormat = .full

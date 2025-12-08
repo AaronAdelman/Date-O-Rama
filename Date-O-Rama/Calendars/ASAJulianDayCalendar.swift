@@ -8,9 +8,6 @@
 
 import Foundation
 import CoreLocation
-import UIKit
-
-//let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .julianDay
