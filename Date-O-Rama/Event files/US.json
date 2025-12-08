@@ -76,7 +76,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day", first: {era: 1, y: 1914}, urls: {"en": "https://www.daysoftheyear.com/days/mothers-day/"}},
         {type: "D", start: {mon: 8, d: 19}, inherits: "Natl Aviation Day", first: {era: 1, y: 1939}, urls: {"en": "https://www.daysoftheyear.com/days/aviation-day/"}},
         {type: "D", start: {mon: 5, d: 23}, titles: {"en": "143 Day"}, urls: {"en": "https://afors.org/2024/05/15/may-23-is-the-perfect-day-to-model-mr-rogers-call-to-neighborliness/"}, notes: {"en": "This observance celebrates Fred Rogers and his public television show, Mister Rogers’ Neighborhood"}, first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 12, d: 13}, inherits: "Natl Guard Day", notes: {"en": "U.S. National Guard Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/u-s-national-guard/"}},
+        {type: "D", start: {mon: 12, d: 13}, inherits: "Natl Guard Day", notes: {"en": "U.S. National Guard Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/u-s-national-guard/"}, first: {era: 1, y: 1636}},
         {type: "D", start: {mon: 9, d: 25}, inherits: "Natl Lobster Day", first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/lobster-day/"}, notes: {"en": "Created by Angus King and Susan Collins"}},
         {type: "D", start: {mon: 5, d: 22}, inherits: "Natl Maritime Day", first: {era: 1, y: 1933}, urls: {"en": "https://www.daysoftheyear.com/days/maritime-day/"}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Natl Sanctity of Human Life Day", first: {era: 1, y: 1984}},

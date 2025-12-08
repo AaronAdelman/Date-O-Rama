@@ -123,6 +123,7 @@
         {type: "nD", start: {mon: 12, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Candle Day"}, notes: {"en": "This observance is geared to sell people candles.\nCreated by Bath & Body Works"}, emoji: "🕯️", first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}},
         {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Coats and Toys for Kids Day"}, notes: {"en": "Coats & Toys for Kids Day\nCreated by the Salvation Army"}, urls: {"en": "https://www.daysoftheyear.com/days/coats-and-toys-for-kids-day/"}, first: {era: 1, y: 1983}, emoji: "🧥🧸"},
         {type: "D", start: {mon: 12, wkd: [7], nth: 2}, titles: {"en": "Gingerbread Decorating Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/gingerbread-decorating-day/"}},
+        {type: "D", start: {mon: 12, d: 13, thruD: 19, wkd: [7]}, titles: {"en": "National Wreaths Across America Day"}, first: {era: 1, y: 1992}, notes: {"en": "Created by Morril Worcester"}, urls: {"en": "https://www.wreathsacrossamerica.org/"}},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Holiday Hugs Day"}, urls: {"en": "https://nationaltoday.com/holiday-hugs-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "Teddy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teddy-day/"}, emoji: "🧸"},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "Valentismas"}, urls: {"en": "https://nationaltoday.com/valentismas/"}, first: {era: 1, y: 2019}},
