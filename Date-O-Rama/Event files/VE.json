@@ -70,7 +70,7 @@
         {type: "D", start: {mon: 11, d: 3, thruD: 4, wkd: [2]}, inherits: "All Souls Day (in lieu)"},
         {type: "nD", start: {mon: 11, d: 17}, end: {"mon": 11, d: 19}, titles: {"en": "Feria of La Chinita", "es": "Feria de la Chinita"}},
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "University Students’ Day", "es": "Día del Estudiante Universitario"}},
-        {type: "D", start: {mon: 12, d: 8}, titles: {"en": "Loyalty Day", "es": "Día de la Lealtad"}},
+        {type: "D", start: {mon: 12, d: 8}, inherits: "Loyalty Day"},
         {type: "D", start: {mon: 12, d: 10}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Simón Bolívar Memorial Day", "es": "Aniversario de la Muerte de Libertador Simón Bolívar"}},
     ],

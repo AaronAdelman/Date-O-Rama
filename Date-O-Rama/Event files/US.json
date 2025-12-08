@@ -312,7 +312,7 @@
         {type: "D", start: {mon: 4, wkd: [6], nth: -1}, inherits: "Arbor Day", first: {era: 1, y: 1872}, urls: {"en": "https://www.arborday.org/"}, notes: {"en": "National Arbor Day"}},
         {type: "D", start: {mon: 4, wkd: [7], nth: -1}, inherits: "Natl Prescription Drug Take Back Day", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "Law Day"}, first: {era: 1, y: 1958}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://www.americanbar.org/groups/public_education/law-day/"}},
-        {type: "D", start: {mon: 5, d: 1}, titles: {"en": "National Loyalty Day"}, urls: {"en": "https://nationaldaycalendar.com/national-loyalty-day-may-1/"}, first: {era: 1, y: 1959}},
+        {type: "D", start: {mon: 5, d: 1}, inherits: "Loyalty Day", notes: {"en": "National Loyalty Day"}, urls: {"en": "https://nationaldaycalendar.com/national-loyalty-day-may-1/"}, first: {era: 1, y: 1959}},
         {type: "nD", start: {mon: 4, d: 28, durationD: 2}, inherits: "Days of Remembrance of the Victims of the Holocaust", first: {era: 1, y: 1979}, last: {era: 1, y: 2024}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "School Bus Drivers Day"}, first: {era: 1, y: 2009}, emoji: "🚌", urls: {"en": "https://www.daysoftheyear.com/days/school-bus-drivers-day/"}, notes: {"en": "There may be some confusion of this event with School Bus Driver Appreciation Day and maybe some confusion on the date."}},
         {type: "D", start: {mon: 5, d: 1}, titles: {"en": "Silver Star Service Banner Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://nationaldaycalendar.com/silver-star-service-banner-day-may-1/"}, emoji: "☆"},
