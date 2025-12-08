@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CoreLocation
 
 class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
     var defaultDateFormat:  ASADateFormat = .full
@@ -83,7 +82,6 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     var supportsLocales: Bool = true
     
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
-        //        return date.previousMidnight(timeZone:  timeZone)
         let timeZone = locationData.timeZone
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date)
