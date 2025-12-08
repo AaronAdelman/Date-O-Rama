@@ -39,7 +39,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         formatter.allowsFloats = false
         let dateString = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
         return dateString
-    } // func dateString(JulianDay: Int) -> String
+    } // func dateString(julianDay: Int) -> String
 
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         formatter.locale = Locale(identifier: localeIdentifier)

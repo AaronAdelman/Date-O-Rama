@@ -79,7 +79,7 @@ struct ASACalendarChooserView: View {
                 return $0.type == .lunar
                 
             case JULIAN_DAY_CALENDARS:
-                return $0.type == .JulianDay
+                return $0.type == .julianDay
                 
             default:
                 return false

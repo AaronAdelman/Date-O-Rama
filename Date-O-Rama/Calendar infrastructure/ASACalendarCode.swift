@@ -11,7 +11,7 @@ import Foundation
 // Calendar codes
 // I would prefer to use a standard, but ISO has not released one as of this writing.
 // Many codes come from https://github.com/CalConnect/cc-calendar-systems
-enum ASACalendarCode:  String, Codable {
+enum ASACalendarCode: String, Codable {
     case none                      = "  "
     
     case buddhist                  = "tha"
@@ -106,7 +106,7 @@ enum ASACalendarType {
     case solar
     case lunisolar
     case lunar
-    case JulianDay
+    case julianDay
     
     case invalid
 } // enum ASACalendarType
@@ -397,7 +397,7 @@ extension ASACalendarCode {
             return .lunar
             
         case .julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
-            return .JulianDay
+            return .julianDay
             
         default:
             return .invalid
