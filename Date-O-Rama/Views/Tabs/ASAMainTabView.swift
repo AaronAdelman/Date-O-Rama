@@ -20,38 +20,34 @@ struct ASAMainTabView: View {
             Spacer()
                 .frame(height: frameHeight)
             
-            TabView(selection: $userData.selectedTabIndex) {
-                ForEach(userData.mainClocks.indices, id: \.self) { index in
-                    
-                    let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
-                    let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                    let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
-                    let location = locationWithClocks.location
-                    let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
-                        ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-                    }
-                    
-                    ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index], processedClocks: processedClocks)
-                        .environmentObject(userData)
-                        .tag(index)
-                        .tabItem { symbol }
+            VStack(spacing: 0.0) {
+                if compact && !usingRealTime {
+                        // Date picker ensemble (only when not using real time)
+                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
                 }
-            } // TabView
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-            .background { LinearGradient(colors: [.black, .blue], startPoint: .top, endPoint: .bottom) }
-            .ignoresSafeArea(.all, edges: .bottom)
-            .toolbarBackground(.clear, for: .navigationBar)
-            .toolbarBackgroundVisibility(.hidden, for: .navigationBar)
-            .toolbarBackground(.clear, for: .tabBar)
-            .toolbarBackgroundVisibility(.hidden, for: .tabBar)
+                
+                TabView(selection: $userData.selectedTabIndex) {
+                    ForEach(userData.mainClocks.indices, id: \.self) { index in
+                        
+                        let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
+                        let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
+                        let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
+                        let location = locationWithClocks.location
+                        let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
+                            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
+                        }
+                        
+                        ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index], processedClocks: processedClocks)
+                            .environmentObject(userData)
+                            .tag(index)
+                            .tabItem { symbol }
+                    }
+                } // TabView
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                .background { LinearGradient(colors: [.black, .blue], startPoint: .top, endPoint: .bottom) }
+                .ignoresSafeArea(.all, edges: .bottom)
+            } // VStack
             .toolbar {
-                ToolbarItem(placement: .navigation) {
-                    Button {
-                        userData.shouldShowLocationTab = false
-                    } label: {
-                        Label("Locations", systemImage: "list.bullet")
-                    }
-                }
                 ToolbarItem(placement: .navigation) {
                     Button {
                         showAboutSheet = true
@@ -111,7 +107,14 @@ struct ASAMainTabView: View {
                         ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
                     }
                 }
-            }
+                ToolbarItem(placement: .navigation) {
+                    Button {
+                        userData.shouldShowLocationTab = false
+                    } label: {
+                        Label("Locations", systemImage: "list.bullet")
+                    }
+                }
+            } // toolbar
             .sheet(isPresented: $showAboutSheet) {
                 ASAAboutTab()
             }
