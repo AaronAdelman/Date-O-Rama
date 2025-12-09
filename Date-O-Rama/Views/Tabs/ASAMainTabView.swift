@@ -13,66 +13,33 @@ struct ASAMainTabView: View {
         return self.sizeClass == .compact
     } // var compact
     
-    // Background gradient for the currently selected tab
-    private var selectedBackgroundGradient: LinearGradient {
-        // Safely resolve the selected index
-        let idx = min(max(userData.selectedTabIndex, 0), max(userData.mainClocks.count - 1, 0))
-        guard userData.mainClocks.indices.contains(idx) else {
-            // Fallback neutral gradient
-            return LinearGradient(colors: [.black, .black], startPoint: .top, endPoint: .bottom)
-        }
-        let locationWithClocks = userData.mainClocks[idx]
-        let location = locationWithClocks.location
-        let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-        // Recreate processed clocks for gradient parity with ASALocationTab
-        let processedClocks: [ASAProcessedClock] = locationWithClocks.clocks.map {
-            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-        }
-        let dayPart: ASADayPart = processedClocks.dayPart
-        // ASALocationTab uses: location.backgroundGradient(dayPart: dayPart)
-        return location.backgroundGradient(dayPart: dayPart)
-    }
-    
     var body: some View {
-        ZStack {
-            // Background gradient visible under toolbar and safe areas
-            selectedBackgroundGradient
-                .ignoresSafeArea(.all)
-
-            GeometryReader { geo in
-                let frameHeight: CGFloat? = geo.safeAreaInsets.top
-
-                Spacer()
-                    .frame(height: frameHeight)
-
-                VStack(spacing: 0) {
-                    // Date picker and calendar picker — show only when not using real time
-                    if !usingRealTime && compact {
-                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+        GeometryReader { geo in
+            let frameHeight: CGFloat? = geo.safeAreaInsets.top
+            
+            Spacer()
+                .frame(height: frameHeight)
+            
+            TabView(selection: $userData.selectedTabIndex) {
+                ForEach(userData.mainClocks.indices, id: \.self) { index in
+                    
+                    let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
+                    let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
+                    let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
+                    let location = locationWithClocks.location
+                    let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
+                        ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
                     }
-
-                    TabView(selection: $userData.selectedTabIndex) {
-                        ForEach(userData.mainClocks.indices, id: \.self) { index in
-
-                            let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
-                            let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                            let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
-                            let location = locationWithClocks.location
-                            let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
-                                ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-                            }
-
-                            ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index], processedClocks: processedClocks)
-                                .environmentObject(userData)
-                                .tag(index)
-                                .tabItem { symbol }
-                        }
-                    } // TabView
-                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                    
+                    ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index], processedClocks: processedClocks)
+                        .environmentObject(userData)
+                        .tag(index)
+                        .tabItem { symbol }
                 }
-            } // GeometryReader
-        } // ZStack
-        .ignoresSafeArea(.container, edges: .bottom)
+            } // TabView
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .ignoresSafeArea(.container, edges: .bottom)
+        } // GeometryReader
         .toolbarBackground(.clear, for: .navigationBar)
         .toolbarBackgroundVisibility(.hidden, for: .navigationBar)
         .toolbarBackground(.clear, for: .tabBar)
