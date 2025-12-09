@@ -38,87 +38,88 @@ struct ASAMainTabView: View {
                 }
             } // TabView
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-            .ignoresSafeArea(.container, edges: .bottom)
+            .background { LinearGradient(colors: [.black, .blue], startPoint: .top, endPoint: .bottom) }
+            .ignoresSafeArea(.all, edges: .bottom)
+            .toolbarBackground(.clear, for: .navigationBar)
+            .toolbarBackgroundVisibility(.hidden, for: .navigationBar)
+            .toolbarBackground(.clear, for: .tabBar)
+            .toolbarBackgroundVisibility(.hidden, for: .tabBar)
+            .toolbar {
+                ToolbarItem(placement: .navigation) {
+                    Button {
+                        userData.shouldShowLocationTab = false
+                    } label: {
+                        Label("Locations", systemImage: "list.bullet")
+                    }
+                }
+                ToolbarItem(placement: .navigation) {
+                    Button {
+                        showAboutSheet = true
+                    } label: {
+                        Label("About", systemImage: "info.circle")
+                    }
+                }
+                if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+                   appDelegate.session.isPaired {
+                    ToolbarItem(placement: .navigation) {
+                        Button {
+                            showComplicationsSheet = true
+                        } label: {
+                            Label("Complications", systemImage: "applewatch")
+                        }
+                    }
+                }
+                ToolbarItem(placement: .navigation) {
+                    // Now/Calendar menu
+                    let NOW_NAME  = "clock"
+                    let DATE_NAME = "ellipsis.calendar"
+                    Menu {
+                        Button {
+                            usingRealTime = true
+                        } label: {
+                            Label("Now", systemImage: NOW_NAME)
+                            if usingRealTime { Image(systemName: "checkmark") }
+                        }
+                        Button {
+                            usingRealTime = false
+                            now = Date()
+                        } label: {
+                            Label("Date:", systemImage: DATE_NAME)
+                            if !usingRealTime { Image(systemName: "checkmark") }
+                        }
+                        Divider()
+                        Button(action: {
+                            usingRealTime = false
+                            now = now.oneDayBefore
+                        }) {
+                            Label("Previous day", systemImage: "chevron.backward")
+                        }
+                        Button(action: {
+                            usingRealTime = false
+                            now = now.oneDayAfter
+                        }) {
+                            Label("Next day", systemImage: "chevron.forward")
+                        }
+                    } label: {
+                        Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
+                    }
+                }
+                
+                if !compact && !usingRealTime {
+                    ToolbarItem(placement: .navigation) {
+                        // Date picker ensemble (only when not using real time)
+                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+                    }
+                }
+            }
+            .sheet(isPresented: $showAboutSheet) {
+                ASAAboutTab()
+            }
+            .fullScreenCover(isPresented: $showComplicationsSheet) {
+                ASAComplicationClocksTab(now: $now)
+            }
         } // GeometryReader
-        .toolbarBackground(.clear, for: .navigationBar)
-        .toolbarBackgroundVisibility(.hidden, for: .navigationBar)
-        .toolbarBackground(.clear, for: .tabBar)
-        .toolbarBackgroundVisibility(.hidden, for: .tabBar)
-        .toolbar {
-            ToolbarItem(placement: .navigation) {
-                Button {
-                    userData.shouldShowLocationTab = false
-                } label: {
-                    Label("Locations", systemImage: "list.bullet")
-                }
-            }
-            ToolbarItem(placement: .navigation) {
-                Button {
-                    showAboutSheet = true
-                } label: {
-                    Label("About", systemImage: "info.circle")
-                }
-            }
-            if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
-               appDelegate.session.isPaired {
-                ToolbarItem(placement: .navigation) {
-                    Button {
-                        showComplicationsSheet = true
-                    } label: {
-                        Label("Complications", systemImage: "applewatch")
-                    }
-                }
-            }
-            ToolbarItem(placement: .navigation) {
-                // Now/Calendar menu
-                let NOW_NAME  = "clock"
-                let DATE_NAME = "ellipsis.calendar"
-                Menu {
-                    Button {
-                        usingRealTime = true
-                    } label: {
-                        Label("Now", systemImage: NOW_NAME)
-                        if usingRealTime { Image(systemName: "checkmark") }
-                    }
-                    Button {
-                        usingRealTime = false
-                        now = Date()
-                    } label: {
-                        Label("Date:", systemImage: DATE_NAME)
-                        if !usingRealTime { Image(systemName: "checkmark") }
-                    }
-                    Divider()
-                    Button(action: {
-                        usingRealTime = false
-                        now = now.oneDayBefore
-                    }) {
-                        Label("Previous day", systemImage: "chevron.backward")
-                    }
-                    Button(action: {
-                        usingRealTime = false
-                        now = now.oneDayAfter
-                    }) {
-                        Label("Next day", systemImage: "chevron.forward")
-                    }
-                } label: {
-                    Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
-                }
-            }
-            
-            if !compact && !usingRealTime {
-                ToolbarItem(placement: .navigation) {
-                    // Date picker ensemble (only when not using real time)
-                    ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
-                }
-            }
-        }
-        .sheet(isPresented: $showAboutSheet) {
-            ASAAboutTab()
-        }
-        .fullScreenCover(isPresented: $showComplicationsSheet) {
-            ASAComplicationClocksTab(now: $now)
-        }
-    }
+    } // body
 }
 
 
