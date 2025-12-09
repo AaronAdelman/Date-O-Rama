@@ -20,11 +20,11 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inherits: "Bank Holiday", first: {era: 1, y: 2023}},
         
-        {type: "D", start: {mon: 12, d: 14}, titles: {"en": "Martyred Intellectuals Day"}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyred-intellectuals-day/"}},
+        {type: "D", start: {mon: 12, d: 14}, titles: {"bn":"শহীদ বুদ্ধিজীবী দিবস","en":"Martyred Intellectuals Day","fr":"Journée des intellectuels martyrs","id":"Hari Martir Intelektual","ki":"Mũthenya wa kũrirkana Andũ Ago"}, inherits: "Martyrs’ Day", urls: {"en": "https://www.daysoftheyear.com/days/martyred-intellectuals-day/"}, notes: {"en": "Martyred Intellectuals Memorial Day\nShaheed Buddhijibi Dibos"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 5, d: 7}, inherits: "Engineer’s Day"},
-        {type: "D", start: {mon: 3, d: 25}, titles: {"en": "Bengali Genocide Remembrance Day", "en": "বাঙালি গণহত্যা স্মরণ দিবস"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2017}, urls: {"en": "https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
+        {type: "D", start: {mon: 3, d: 25}, titles: {"bn":"জাতীয় গণহত্যা স্মরণ দিবস","en":"Genocide Remembrance Day"}, notes: {"en": "Bengali Genocide Remembrance Day", "en": "বাঙালি গণহত্যা স্মরণ দিবস"}, inherits: "Martyrs’ Day", first: {era: 1, y: 2017}, urls: {"en": "https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
         {type: "D", start: {mon: 11, d: 7}, inherits: "Revolution Day", first: {era: 1, y: 1975}},
         {type: "D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
         {type: "D", start: {mon: 11, d: 21}, inherits: "Armed Forces Day"},

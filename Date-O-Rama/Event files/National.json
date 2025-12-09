@@ -579,7 +579,7 @@
         {type: "D", start: {mon: 12, d: 13}, titles: {"en": "National Popcorn String Day"}, emoji: "🍿", urls: {"en": "https://www.checkiday.com/ac72ddb5192f981830772f41e75b3a10/national-popcorn-string-day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 12, d: 13}, titles: {"en": "National Violin Day"}, notes: {"en": "Violin Day"}, emoji: "🎻", urls: {"en": "https://www.daysoftheyear.com/days/violin-day/"}},
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/cream-cheese-frosting-day/"}, emoji: "🍰🧁🎂"},
-        {type: "D", start: {mon: 12, d: 14}, titles: {"en": "More Good Today Day"}, urls: {"en": "https://www.moregood.today/"}, emoji: "🍕☕️", first: {era: 1, y: 2019}},
+        {type: "D", start: {mon: 12, d: 14}, titles: {"en": "More Good Today Day"}, urls: {"en": "https://www.moregood.today/"}, emoji: "🍕☕️", first: {era: 1, y: 2019}, notes: {"en": "Created by Mary Latham"}},
         {type: "D", start: {mon: 12, d: 14}, titles: {"en": "National Biscuits and Gravy Day"}, urls: {"en": "https://www.checkiday.com/bdd9fcc05cdb1a10f5dd253f1ad43464/national-biscuits-and-gravy-day"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 12, d: 14}, titles: {"en": "National Bouillabaisse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bouillabaisse-day/"}, emoji: "🥣", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 12, d: 14}, titles: {"en": "National Ceramics Day"}, urls: {"en": "https://whatnationaldayisit.com/day/ceramics/"}, first: {era: 1, y: 2015}},
