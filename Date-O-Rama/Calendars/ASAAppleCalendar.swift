@@ -8,31 +8,31 @@
 
 import Foundation
 
-class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras, ASACalendarWithAMAndPM {
-    var defaultDateFormat:  ASADateFormat = .full
+class ASAAppleCalendar: ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras, ASACalendarWithAMAndPM {
+    var defaultDateFormat: ASADateFormat = .full
     
-    var calendarCode:  ASACalendarCode
+    var calendarCode: ASACalendarCode
     
     var dateFormatter = DateFormatter()
     lazy var ISODateFormatter = ISO8601DateFormatter()
 
-    private var ApplesCalendar:  Calendar
+    private var ApplesCalendar: Calendar
     
-    init(calendarCode:  ASACalendarCode) {
+    init(calendarCode: ASACalendarCode) {
         self.calendarCode = calendarCode
-        let title = self.calendarCode.equivalentCalendarIdentifier
-        ApplesCalendar = Calendar(identifier: title!)
+        let identifier = self.calendarCode.equivalentCalendarIdentifier
+        ApplesCalendar = Calendar(identifier: identifier!)
         dateFormatter.calendar = ApplesCalendar
-    } // init(calendarCode:  ASACalendarCode)
+    } // init(calendarCode: ASACalendarCode)
 
-    func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
+    func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let dateString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: locationData)
         let timeString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: locationData)
         let dateComponents = self.dateComponents([.era, .year, .month, .day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
-    } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
+    } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: locationData.timeZone)
         
         switch dateFormat {
@@ -44,12 +44,12 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         } // switch dateFormat
         
         return self.dateFormatter.string(from: now)
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
     
-    func ISODateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        var dateString:  String
+    func ISODateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
+        var dateString: String
         
-        var formatterOptions:  ISO8601DateFormatter.Options = []
+        var formatterOptions: ISO8601DateFormatter.Options = []
         switch dateFormat {
         case .none:
             formatterOptions = []
@@ -81,16 +81,16 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
 
     var supportsLocales: Bool = true
     
-    func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
+    func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         let timeZone = locationData.timeZone
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date)
-    } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
+    } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
-    func startOfNextDay(date:  Date, locationData:  ASALocation) -> Date {
+    func startOfNextDay(date: Date, locationData: ASALocation) -> Date {
         self.ApplesCalendar.timeZone = locationData.timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
-    } // func startOfNextDay(now:  Date, locationData:  ASALocation) -> Date
+    } // func startOfNextDay(now: Date, locationData: ASALocation) -> Date
         
     var supportsTimeZones: Bool = true
     
@@ -128,9 +128,9 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         .medium
     ]
         
-    var canSplitTimeFromDate:  Bool = true
+    var canSplitTimeFromDate: Bool = true
     
-    var defaultTimeFormat:  ASATimeFormat = .medium
+    var defaultTimeFormat: ASATimeFormat = .medium
     
     
     // MARK: - Date components
@@ -147,8 +147,8 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     } // func date(dateComponents: ASADateComponents) -> Date?
     
     
-    // MARK:  - Extracting Components
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
+    // MARK: - Extracting Components
+    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
         // Returns the value for one component of a date.
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
@@ -158,9 +158,9 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         var calendar = self.ApplesCalendar
         calendar.timeZone = locationData.timeZone 
         return calendar.component(ApplesComponent!, from: date)
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
 
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         // Returns all the date components of a date.
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
@@ -176,7 +176,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     
-    // MARK:  - Getting Calendar Information
+    // MARK: - Getting Calendar Information
     
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
@@ -219,7 +219,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     
     // MARK: -
     
-    func supports(calendarComponent:  ASACalendarComponent) -> Bool {
+    func supports(calendarComponent: ASACalendarComponent) -> Bool {
         switch calendarComponent {
         case .era, .year, .yearForWeekOfYear, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .weekdayOrdinal, .day:
             return true
@@ -232,12 +232,12 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         case .fractionalHour, .dayHalf:
             return false
         } // switch calendarComponent
-    } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
+    } // func supports(calendarComponent: ASACalendarComponent) -> Bool
 
 
     // MARK: -
 
-    public var transitionType:  ASATransitionType = .midnight
+    public var transitionType: ASATransitionType = .midnight
 
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
@@ -259,9 +259,9 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         return self.ApplesCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
-    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     func amSymbol(localeIdentifier: String) -> String {
         return self.ApplesCalendar.amSymbol(localeIdentifier: localeIdentifier)
@@ -271,7 +271,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
         return self.ApplesCalendar.pmSymbol(localeIdentifier: localeIdentifier)
     }
 
-    var usesISOTime:  Bool = true
+    var usesISOTime: Bool = true
 
     var daysPerWeek: Int = 7
     
@@ -280,7 +280,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     
-    // MARK:  - ASACalendarWithMonths
+    // MARK: - ASACalendarWithMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
@@ -307,7 +307,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     }
     
     
-    // MARK:  - ASACalendarWithQuarters
+    // MARK: - ASACalendarWithQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
@@ -326,7 +326,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     }
  
     
-    // MARK:  - ASACalendarWithEras
+    // MARK: - ASACalendarWithEras
     
     func eraSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.eraSymbols(localeIdentifier: localeIdentifier)
@@ -337,15 +337,15 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     }
 
     
-    // MARK:  - Time zone-dependent modified Julian day
+    // MARK: - Time zone-dependent modified Julian day
     
-    func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
+    func localModifiedJulianDay(date: Date, locationData: ASALocation) -> Int {
         let timeZone = locationData.timeZone
         return date.localModifiedJulianDay(timeZone: timeZone)
     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
 
     
-    // MARK:  - Cycles
+    // MARK: - Cycles
     
     func cycleNumberFormat(locale: Locale) -> ASANumberFormat {
         if self.calendarCode.isHebrewCalendar && locale.language.languageCode?.identifier == "he" {

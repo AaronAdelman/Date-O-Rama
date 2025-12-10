@@ -25,8 +25,8 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     
     init(calendarCode: ASACalendarCode) {
         self.calendarCode = calendarCode
-        let title = self.calendarCode.equivalentCalendarIdentifier
-        applesCalendar = Calendar(identifier: title!)
+        let identifier = self.calendarCode.equivalentCalendarIdentifier
+        applesCalendar = Calendar(identifier: identifier!)
         dateFormatter.calendar = applesCalendar
     } // init(calendarCode: ASACalendarCode)
     
