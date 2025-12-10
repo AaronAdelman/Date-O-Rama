@@ -136,12 +136,12 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     // MARK: - Date components
     
     func isValidDate(dateComponents: ASADateComponents) -> Bool {
-        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        let ApplesDateComponents = dateComponents.applesDateComponents()
         return ApplesDateComponents.isValidDate
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
     func date(dateComponents: ASADateComponents) -> Date? {
-        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        let ApplesDateComponents = dateComponents.applesDateComponents()
 
         return ApplesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?

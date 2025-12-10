@@ -14,23 +14,23 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     var calendarCode: ASACalendarCode
     
 #if os(watchOS)
-    var defaultDateFormat:  ASADateFormat = .short
+    var defaultDateFormat: ASADateFormat = .short
 #else
-    var defaultDateFormat:  ASADateFormat = .full
+    var defaultDateFormat: ASADateFormat = .full
 #endif
     
     public var dateFormatter = DateFormatter()
     
-    private var ApplesCalendar:  Calendar
+    private var applesCalendar: Calendar
     
     init(calendarCode: ASACalendarCode) {
         self.calendarCode = calendarCode
         let title = self.calendarCode.equivalentCalendarIdentifier
-        ApplesCalendar = Calendar(identifier: title!)
-        dateFormatter.calendar = ApplesCalendar
+        applesCalendar = Calendar(identifier: title!)
+        dateFormatter.calendar = applesCalendar
     } // init(calendarCode: ASACalendarCode)
     
-    func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
+    func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedNow >= now)
@@ -38,7 +38,7 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         
         let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.era, .year, .month, .day, .weekday, .fractionalHour, .dayHalf], from: now, locationData: locationData)
 
-        var timeString:  String = ""
+        var timeString: String = ""
         if timeFormat != .none {
             let solarHours: Double = dateComponents.solarHours ?? -1
             timeString = self.timeString(hours: solarHours, daytime: dateComponents.dayHalf == .day, valid: solarHours >= 0, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
@@ -47,10 +47,10 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
         
         return (dateString, timeString, dateComponents)
-    } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
+    } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
     /// For a Jewish or Islamic calendar, night precedes day, so this is Sunrise or dawn.  For a South Asian calendar, day precedes night, so this is Sunset.
-    var midPointTransition:  ASASolarEvent {
+    var midPointTransition: ASASolarEvent {
         switch self.calendarCode {
         case .hebrewMA:
             return .dawn72Minutes
@@ -61,7 +61,7 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     } // var midPointTransition
     
     /// For a Jewish or Islamic calendar, this is Sunset or dusk.  For a South Asian calendar, this is Sunrise.
-    var dateTransition:  ASASolarEvent {
+    var dateTransition: ASASolarEvent {
         switch self.calendarCode {
         case .hebrewMA:
             return .dusk72Minutes
@@ -71,7 +71,7 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         } // switch self.calendarCode
     } //
     
-    func solarTimeComponents(now: Date, locationData:  ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
+    func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -83,14 +83,14 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
             existsSolarTime = false
         }
         if !existsSolarTime {
-            return (hours:  -1.0, daytime:  false, valid:  false)
+            return (hours: -1.0, daytime: false, valid: false)
         }
 //        debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, location, timeZone, "Transition:", transition?.formattedFor(timeZone: timeZone) as Any)
         
-        var dayHalfStart:  Date
+        var dayHalfStart: Date
         
-        var hours:  Double
-        var daytime:  Bool
+        var hours: Double
+        var daytime: Bool
         let NUMBER_OF_HOURS = 12.0
         
         let deoptionalizedTransition: Date = transition!!
@@ -98,15 +98,15 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
 //            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Nighttime, transition is at the start of the nighttime")
-            let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
-            var nextDayHalfStart:  Date
+            let nextDate = now.noon(timeZone: timeZone).oneDayAfter
+            var nextDayHalfStart: Date
             let nextEvents = nextDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
             nextDayHalfStart = nextEvents[self.midPointTransition]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
             
 //            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition.formattedFor(timeZone: timeZone) as Any, "Nighttime end:", nextDayHalfStart.formattedFor(timeZone: timeZone) as Any)
             
-            hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate: deoptionalizedTransition, endDate: nextDayHalfStart, numberOfHoursPerDay: NUMBER_OF_HOURS)
             daytime = false
         } else {
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
@@ -117,10 +117,10 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
             let rawDayHalfStart: Date?? = events[self.midPointTransition]
             
             if rawDayHalfStart == nil {
-                return (hours:  -1.0, daytime:  false, valid:  false)
+                return (hours: -1.0, daytime: false, valid: false)
             }
             if rawDayHalfStart! == nil {
-                return (hours:  -1.0, daytime:  false, valid:  false)
+                return (hours: -1.0, daytime: false, valid: false)
             }
             
             dayHalfStart = rawDayHalfStart!!
@@ -135,10 +135,10 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
                 let rawDayHalfStart: Date?? = events[self.midPointTransition]
                 
                 if rawDayHalfStart == nil {
-                    return (hours:  -1.0, daytime:  false, valid:  false)
+                    return (hours: -1.0, daytime: false, valid: false)
                 }
                 if rawDayHalfStart! == nil {
-                    return (hours:  -1.0, daytime:  false, valid:  false)
+                    return (hours: -1.0, daytime: false, valid: false)
                 }
                 
                 dayHalfStart = rawDayHalfStart!!
@@ -150,25 +150,25 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
                 // Daytime
 //                debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Daytime")
                 assert(deoptionalizedTransition > dayHalfStart)
-                hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+                hours = now.fractionalHours(startDate: dayHalfStart, endDate: deoptionalizedTransition, numberOfHoursPerDay: NUMBER_OF_HOURS)
                 daytime = true
             } else {
                 // Previous nighttime
 //                debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Previous nighttime")
-                var previousDayHalfEnd:  Date
+                var previousDayHalfEnd: Date
                 previousDayHalfEnd = self.startOfDay(for: jiggeredNow, locationData: locationData)
                 assert(dayHalfStart > previousDayHalfEnd)
 //                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd.formattedFor(timeZone: timeZone) as Any, "Day half start:", dayHalfStart.formattedFor(timeZone: timeZone) as Any)
-                hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+                hours = now.fractionalHours(startDate: previousDayHalfEnd, endDate: dayHalfStart, numberOfHoursPerDay: NUMBER_OF_HOURS)
                 daytime = false
             }
         }
         
         assert(!(hours == 12.0 && daytime == true))
-        return (hours:  hours, daytime:  daytime, valid:  true)
-    } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
+        return (hours: hours, daytime: daytime, valid: true)
+    } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool)
     
-    func timeString(hours:  Double, daytime:  Bool, valid:  Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
+    func timeString(hours: Double, daytime: Bool, valid: Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
         
@@ -184,18 +184,18 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         var result = ""
         switch timeFormat {
         case .decimalTwelveHour:
-            result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+            result = self.fractionalHoursTimeString(hours: hours, symbol: symbol, localeIdentifier: localeIdentifier)
                     
         case .medium:
-            result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+            result = self.sexagesimalTimeString(hours: hours, symbol: symbol, localeIdentifier: localeIdentifier)
             
         default:
-            result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+            result = self.fractionalHoursTimeString(hours: hours, symbol: symbol, localeIdentifier: localeIdentifier)
         }
         return result
-    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation, transition:  Date??) -> String
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation, transition: Date??) -> String
     
-    func fractionalHoursTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
+    func fractionalHoursTimeString(hours: Double, symbol: String, localeIdentifier: String) -> String {
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
@@ -207,16 +207,16 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         } else {
             revisedHours = hours
         }
-        result = "\(numberFormatter.string(from: NSNumber(value:  revisedHours)) ?? "") \(symbol)"
+        result = "\(numberFormatter.string(from: NSNumber(value: revisedHours)) ?? "") \(symbol)"
         assert(result != "12.0000 ☼")
         return result
-    } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
+    } // func fractionalHoursTimeString(hours: Double, symbol: String) -> String
         
-    func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
-        return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  60.0, secondsPerMinute:  60.0, minimumHourDigits:  1, minimumMinuteDigits:  2, minimumSecondDigits:  2)
-    } // func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
+    func sexagesimalTimeString(hours: Double, symbol: String, localeIdentifier: String) -> String {
+        return self.hoursMinutesSecondsTimeString(hours: hours, symbol: symbol, localeIdentifier: localeIdentifier, minutesPerHour: 60.0, secondsPerMinute: 60.0, minimumHourDigits: 1, minimumMinuteDigits: 2, minimumSecondDigits: 2)
+    } // func sexagesimalTimeString(hours: Double, symbol: String, localeIdentifier: String) -> String
     
-    func hoursMinutesSecondsComponents(hours:  Double, minutesPerHour:  Double, secondsPerMinute:  Double) -> (hour:  Int, minute:  Int, second:  Int, nanosecond:  Int) {
+    func hoursMinutesSecondsComponents(hours: Double, minutesPerHour: Double, secondsPerMinute: Double) -> (hour: Int, minute: Int, second: Int, nanosecond: Int) {
         let integralHours = floor(hours)
         let fractionalHours = hours - integralHours
         let totalMinutes = fractionalHours * minutesPerHour
@@ -225,10 +225,10 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         let totalSeconds = fractionalMinutes * secondsPerMinute
         let integralSeconds = floor(totalSeconds)
         let nanoseconds = (totalSeconds - integralSeconds) * 1000000000
-        return (hour:  Int(integralHours), minute:  Int(integralMinutes), second:  Int(integralSeconds), nanosecond:  Int(nanoseconds))
+        return (hour: Int(integralHours), minute: Int(integralMinutes), second: Int(integralSeconds), nanosecond: Int(nanoseconds))
     }
     
-    func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinute:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String {
+    func hoursMinutesSecondsTimeString(hours: Double, symbol: String, localeIdentifier: String, minutesPerHour: Double, secondsPerMinute: Double, minimumHourDigits: Int, minimumMinuteDigits: Int, minimumSecondDigits: Int) -> String {
         let (integralHours, integralMinutes, integralSeconds, _) = self .hoursMinutesSecondsComponents(hours: hours, minutesPerHour: minutesPerHour, secondsPerMinute: secondsPerMinute)
         
         var result = ""
@@ -236,14 +236,14 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         numberFormatter.maximumFractionDigits = 0
         numberFormatter.locale = Locale.desiredLocale(localeIdentifier)
         numberFormatter.minimumIntegerDigits = minimumHourDigits
-        let hourString = numberFormatter.string(from: NSNumber(value:  integralHours))
+        let hourString = numberFormatter.string(from: NSNumber(value: integralHours))
         numberFormatter.minimumIntegerDigits = minimumMinuteDigits
-        let minuteString = numberFormatter.string(from: NSNumber(value:  integralMinutes))
+        let minuteString = numberFormatter.string(from: NSNumber(value: integralMinutes))
         numberFormatter.minimumIntegerDigits = minimumSecondDigits
-        let secondString = numberFormatter.string(from: NSNumber(value:  integralSeconds))
+        let secondString = numberFormatter.string(from: NSNumber(value: integralSeconds))
         result = "\(hourString ?? ""):\(minuteString ?? ""):\(secondString ?? "") \(symbol)"
         return result
-    } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
+    } // func hoursMinutesSecondsTimeString(hours: Double, symbol: String, localeIdentifier: String, minutesPerHour: Double, secondsPerMinutes: Double, minimumHourDigits: Int, minimumMinuteDigits: Int, minimumSecondDigits: Int) -> String
     
     func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
         self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: timeZone)
@@ -254,12 +254,12 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         return dateString
     }
     
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedNow >= now)
         
-        var timeString:  String = ""
+        var timeString: String = ""
         if timeFormat != .none {
             let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
             timeString = self.timeString(hours: hours, daytime: daytime, valid: valid, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
@@ -275,13 +275,13 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
             let SEPARATOR = ", "
             return dateString + SEPARATOR + timeString
         }
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
     
     public var supportsLocales: Bool = true
     
     public var supportsTimeZones: Bool = false
     
-    func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
+    func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         let location = locationData.location
         let timeZone = locationData.timeZone
         let yesterday: Date = date.oneDayBefore
@@ -294,11 +294,11 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         if rawDayEnd! == nil {
             return date.sixPMYesterday(timeZone: timeZone)
         }
-        let dayEnd:  Date = rawDayEnd!! // שקיעה
+        let dayEnd: Date = rawDayEnd!! // שקיעה
         return dayEnd
-    } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
+    } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
-    func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
+    func startOfNextDay(date: Date, locationData: ASALocation) -> Date {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -311,9 +311,9 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         if rawDayEnd! == nil {
             return date.sixPM(timeZone: timeZone)
         }
-        let dayEnd:  Date = rawDayEnd!!
+        let dayEnd: Date = rawDayEnd!!
         return dayEnd
-    } // func transitionToNextDay(now: Date, locationData:  ASALocation) -> Date
+    } // func transitionToNextDay(now: Date, locationData: ASALocation) -> Date
     
     public var supportsLocations: Bool = true
     
@@ -346,66 +346,66 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         .decimalTwelveHour
     ]
     
-    public var canSplitTimeFromDate:  Bool = true
+    public var canSplitTimeFromDate: Bool = true
     
-    var defaultTimeFormat:  ASATimeFormat = .decimalTwelveHour
+    var defaultTimeFormat: ASATimeFormat = .decimalTwelveHour
     
     
     // MARK: - Date components
     
-    func isValidDate(dateComponents: ASADateComponents) -> Bool { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        let ApplesDateComponents = dateComponents.ApplesDateComponents()
-        return ApplesDateComponents.isValidDate
+    func isValidDate(dateComponents: ASADateComponents) -> Bool { // TODO: FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        let applesDateComponents = dateComponents.applesDateComponents()
+        return applesDateComponents.isValidDate
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
-    func date(dateComponents: ASADateComponents) -> Date? { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        var ApplesDateComponents = dateComponents.ApplesDateComponents()
+    func date(dateComponents: ASADateComponents) -> Date? { // TODO: FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        var applesDateComponents = dateComponents.applesDateComponents()
         // The next part is to ensure we get the right day and don't screw up Sunrise/Sunset calculations
-        ApplesDateComponents.hour       = 12
-        ApplesDateComponents.minute     =  0
-        ApplesDateComponents.second     =  0
-        ApplesDateComponents.nanosecond =  0
+        applesDateComponents.hour       = 12
+        applesDateComponents.minute     =  0
+        applesDateComponents.second     =  0
+        applesDateComponents.nanosecond =  0
         
-        return ApplesDateComponents.date
+        return applesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
     
-    // MARK:  - Extracting Components
+    // MARK: - Extracting Components
     
-    func timeComponents(date: Date, transition:  Date??, locationData:  ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf) {
+    func timeComponents(date: Date, transition: Date??, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf) {
         let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
         if !solarTimeComponents.valid {
             return (fractionalHour: -1.0, dayHalf: ASADayHalf.night)
         }
         return (solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
-    } // func hoursMinutesSecondsComponents(date: Date, transition:  Date, locationData:  ASALocation) -> (hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
+    } // func hoursMinutesSecondsComponents(date: Date, transition: Date, locationData: ASALocation) -> (hour: Int, minute: Int, second: Int, nanosecond: Int)
     
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
+    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
         // Returns the value for one component of a date.
         
-        var calendar = self.ApplesCalendar
+        var calendar = self.applesCalendar
         calendar.timeZone = locationData.timeZone
         let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         
-        let ApplesComponent = component.calendarComponent()
-        if ApplesComponent == nil {
+        let applesComponent = component.calendarComponent()
+        if applesComponent == nil {
             return -1
         }
         
-        return calendar.component(ApplesComponent!, from: fixedDate)
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
+        return calendar.component(applesComponent!, from: fixedDate)
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
     
-    fileprivate func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
-        var ApplesComponents = Set<Calendar.Component>()
+    fileprivate func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+        var applesComponents = Set<Calendar.Component>()
         for component in components {
-            let ApplesCalendarComponent = component.calendarComponent()
-            if ApplesCalendarComponent != nil {
-                ApplesComponents.insert(ApplesCalendarComponent!)
+            let applesCalendarComponent = component.calendarComponent()
+            if applesCalendarComponent != nil {
+                applesComponents.insert(applesCalendarComponent!)
             }
         } // for component in components
         
-        let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
-        var result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+        let applesDateComponents = applesCalendar.dateComponents(applesComponents, from: fixedDate)
+        var result = ASADateComponents.new(with: applesDateComponents, calendar: self, locationData: locationData)
 //                        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
         
@@ -416,10 +416,10 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
             result.dayHalf = timeComponents.dayHalf
         }
         return result
-    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
+    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
-        // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+        // TODO: FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
         let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         
         let result = dateComponents(fixedDate: fixedDate, transition: transition, components: components, from: date, locationData: locationData)
@@ -427,46 +427,46 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     
     
-    // MARK:  - Getting Calendar Information
-    // TODO:  Need to modify these to deal with non-ISO times!
+    // MARK: - Getting Calendar Information
+    // TODO: Need to modify these to deal with non-ISO times!
     
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
-        let ApplesComponent = component.calendarComponent()
-        if ApplesComponent == nil {
+        let applesComponent = component.calendarComponent()
+        if applesComponent == nil {
             return nil
         }
-        return self.ApplesCalendar.maximumRange(of: ApplesComponent!)
+        return self.applesCalendar.maximumRange(of: applesComponent!)
     } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
-        let ApplesComponent = component.calendarComponent()
-        if ApplesComponent == nil {
+        let applesComponent = component.calendarComponent()
+        if applesComponent == nil {
             return nil
         }
-        return self.ApplesCalendar.minimumRange(of: ApplesComponent!)
+        return self.applesCalendar.minimumRange(of: applesComponent!)
     } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
-        let ApplesSmaller = smaller.calendarComponent()
-        let ApplesLarger = larger.calendarComponent()
-        if ApplesSmaller == nil || ApplesLarger == nil {
+        let applesSmaller = smaller.calendarComponent()
+        let applesLarger  = larger.calendarComponent()
+        if applesSmaller == nil || applesLarger == nil {
             return nil
         }
-        return self.ApplesCalendar.ordinality(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+        return self.applesCalendar.ordinality(of: applesSmaller!, in: applesLarger!, for: date)
     } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
     
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
         // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
-        let ApplesSmaller = smaller.calendarComponent()
-        let ApplesLarger = larger.calendarComponent()
-        if ApplesSmaller == nil || ApplesLarger == nil {
+        let applesSmaller = smaller.calendarComponent()
+        let applesLarger  = larger.calendarComponent()
+        if applesSmaller == nil || applesLarger == nil {
             return nil
         }
         
-        var result = self.ApplesCalendar.range(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+        var result = self.applesCalendar.range(of: applesSmaller!, in: applesLarger!, for: date)
         if result?.lowerBound == result?.upperBound {
             let upperBound = result?.upperBound ?? 1
             result = Range(uncheckedBounds: (1, upperBound))
@@ -477,7 +477,7 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     
     // MARK: -
     
-    func supports(calendarComponent:  ASACalendarComponent) -> Bool {
+    func supports(calendarComponent: ASACalendarComponent) -> Bool {
         switch calendarComponent {
         case .era, .year, .yearForWeekOfYear, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .weekdayOrdinal, .day:
             return true
@@ -491,12 +491,12 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         default:
             return false
         } // switch calendarComponent
-    } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
+    } // func supports(calendarComponent: ASACalendarComponent) -> Bool
     
     
     // MARK: -
     
-    public var transitionType:  ASATransitionType {
+    public var transitionType: ASATransitionType {
         switch self.dateTransition {
         case .sunset:
             return .sunset
@@ -510,98 +510,98 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     }
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
-    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
-    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.applesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
-    var usesISOTime:  Bool = false
+    var usesISOTime: Bool = false
     
     var daysPerWeek: Int = 7
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
-        self.ApplesCalendar.weekendDays(for: regionCode)
+        self.applesCalendar.weekendDays(for: regionCode)
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
     
-    // MARK:  - ASACalendarWithMonths
+    // MARK: - ASACalendarWithMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
     }
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
     }
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
     }
     
     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
     }
     
     
-    // MARK:  - ASACalendarWithQuarters
+    // MARK: - ASACalendarWithQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
     
     
-    // MARK:  - ASACalendarWithEras
+    // MARK: - ASACalendarWithEras
     
     func eraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.eraSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.eraSymbols(localeIdentifier: localeIdentifier)
     }
     
     func longEraSymbols(localeIdentifier: String) -> Array<String> {
-        return self.ApplesCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
+        return self.applesCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
     }
     
     
-    // MARK:  - Time zone-dependent modified Julian day
+    // MARK: - Time zone-dependent modified Julian day
     
-    func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
+    func localModifiedJulianDay(date: Date, locationData: ASALocation) -> Int {
         let timeZone = locationData.timeZone
         let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         assert(fixedDate >= date)

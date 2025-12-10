@@ -111,7 +111,7 @@ struct ASADateComponents:  Equatable {
 // MARK: -
 
 extension ASADateComponents {
-    func ApplesDateComponents() -> DateComponents {
+    func applesDateComponents() -> DateComponents {
         let title = self.calendar.calendarCode.equivalentCalendarIdentifier
         
         let calendar = Calendar(identifier: title!)
@@ -144,7 +144,7 @@ extension ASADateComponents {
     static func new(with ApplesDateComponents:  DateComponents, calendar:  ASACalendar, locationData:  ASALocation) -> ASADateComponents {
         let result = ASADateComponents(calendar: calendar, locationData: locationData, era: ApplesDateComponents.era, year: ApplesDateComponents.year, yearForWeekOfYear: ApplesDateComponents.yearForWeekOfYear, quarter: ApplesDateComponents.quarter, month: ApplesDateComponents.month, isLeapMonth: ApplesDateComponents.isLeapMonth, weekOfMonth: ApplesDateComponents.weekOfMonth, weekOfYear: ApplesDateComponents.weekOfYear, weekday: ApplesDateComponents.weekday, weekdayOrdinal: ApplesDateComponents.weekdayOrdinal, day: ApplesDateComponents.day, hour: ApplesDateComponents.hour, minute: ApplesDateComponents.minute, second: ApplesDateComponents.second, nanosecond: ApplesDateComponents.nanosecond)
         return result
-    } // static func new(with ApplesDateComponents:  DateComponents, calendar:  ASACalendar, locationData:  ASALocation) -> ASADateComponents
+    } // static func new(with applesDateComponents:  DateComponents, calendar:  ASACalendar, locationData:  ASALocation) -> ASADateComponents
 } // extension ASADateComponents
 
 
