@@ -116,50 +116,6 @@ extension ASACalendarComponent {
     } // func calendarComponent() -> Calendar.Component?
 } // extension ASACalendarComponent
 
-extension Calendar.Component {
-    func ASACalendarComponent() -> ASACalendarComponent? {
-        switch self {
-        case .era:
-            return .era
-        case .year:
-            return .year
-        case .yearForWeekOfYear:
-            return .yearForWeekOfYear
-        case .quarter:
-            return .quarter
-        case .month:
-            return .month
-        case .weekOfYear:
-            return .weekOfYear
-        case .weekOfMonth:
-            return .weekOfMonth
-        case .weekday:
-            return .weekday
-        case .weekdayOrdinal:
-            return .weekdayOrdinal
-        case .day:
-            return .day
-        case .hour:
-            return .hour
-        case .minute:
-            return .minute
-        case .second:
-            return .second
-        case .nanosecond:
-            return .nanosecond
-        case .calendar:
-            return .calendar
-        case .timeZone:
-            return .timeZone
-        case .isLeapMonth:
-            return nil
-        case .dayOfYear:
-            return nil // TODO:  Is this right?
-        default:
-            return nil
-        } // switch self
-    } // func ASACalendarComponent() -> ASACalendarComponent?
-} // extension Calendar.Component
 
 extension String {
     func calendarComponent() -> ASACalendarComponent? {

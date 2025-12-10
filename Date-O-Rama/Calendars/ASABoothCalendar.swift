@@ -67,14 +67,17 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return dateString + " · " + timeString
     }
     
+    
+    // MARK: - LDML Stuff
+    
     private var dateFormatter = DateFormatter()
-    private var formatter = NumberFormatter()
+    private var formatter     = NumberFormatter()
     
     fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String {
         formatter.minimumIntegerDigits = minimumIntegerDigits
         let symbol = self.formatter.string(from: NSNumber(value: integerValue))!
         return symbol
-    }
+    } // fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String
     
     let datePatternComponentCache = NSCache<NSString, NSArray>()
     
@@ -349,6 +352,9 @@ public class ASABoothCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWi
         return result
 
     } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    
+    // MARK: - End LDML stuff
+    
     
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let rawComponents = boothComponents(calendarCode: self.calendarCode, date: now, timeZone: locationData.timeZone)
