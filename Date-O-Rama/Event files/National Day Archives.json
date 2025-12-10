@@ -21,5 +21,11 @@
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National GED Day"}, urls: {"en": "https://www.ged.com/nationalgedday/"}, first: {era: 1, y: 2023}, notes: {"en": "Created by the GED Testing Service"}, emoji: "🎓"},
         {type: "D", start: {mon: 9, d: 16}, titles: {"en": "National Sit With a Stranger Day"}, notes: {"en": "National SWAS Day\nCreated by BDOPE LLC"}, urls: {"en": "https://www.bdope.today/sit-with-a-stranger-day.html#/"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Zinc Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-zinc-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Balchem"}},
+        {type: "D", start: {mon: 12, d: 10}, titles: {"en": "National 3DMIRACL Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-3dmiracl-day/"}, first: {era: 1, y: 2025}, notes: {"en": "Created by Acclaro Medical"}},
+        {type: "D", start: {mon: 12, d: 12}, titles: {"en": "National Dirty Dozen Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-dirty-dozen-day/"}, first: {era: 1, y: 2022}, notes: {"en": "Created by Dirty Dozen"}},
+        {type: "D", start: {mon: 12, wkd: [7], nth: 2}, titles: {"en": "National SISmas Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-sismas-day/"}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Forge Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-forge-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Trinity Heights"}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Joe Terrell Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/joe-terrell-day/"}, first: {era: 1, y: 2023}, notes: {"en": "Created by Perry Fair"}},
+        {type: "D", start: {mon: 12, d: 23}, titles: {"en": "National Falon Marie Morris “Be Kind” Day"}, urls: {"en": "https://www.nationaldayarchives.com/day/national-falon-marie-morris-be-kind-day/"}, first: {era: 1, y: 2022}, notes: {"en": "Created by Shannon Morris"}},
     ]
 }
