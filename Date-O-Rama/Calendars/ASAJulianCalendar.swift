@@ -9,7 +9,7 @@
 import Foundation
 import JulianDayNumber
 
-public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
+public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster, ASACalendarWithAMAndPM {
     public let BCE = 0
     public let CE  = 1
     
@@ -118,6 +118,14 @@ public class ASAJulianCalendar: ASABoothCalendar, ASACalendarWithEaster {
     override func longEraSymbols(localeIdentifier: String) -> Array<String> {
         return self.gregorianCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
     } // func longEraSymbols(localeIdentifier: String) -> Array<String>
+    
+    func amSymbol(localeIdentifier: String) -> String {
+        self.gregorianCalendar.amSymbol
+    }
+    
+    func pmSymbol(localeIdentifier: String) -> String {
+        self.gregorianCalendar.pmSymbol
+    }
     
     
     // MARK: - ASACalendarWithEaster

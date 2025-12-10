@@ -61,5 +61,4 @@ class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
             .shortWithoutYear
         ]
     }
-    
 }

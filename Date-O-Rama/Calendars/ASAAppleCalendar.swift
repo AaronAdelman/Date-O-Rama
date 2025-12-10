@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras {
+class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths, ASACalendarWithQuarters, ASACalendarWithEras, ASACalendarWithAMAndPM {
     var defaultDateFormat:  ASADateFormat = .full
     
     var calendarCode:  ASACalendarCode
@@ -262,6 +262,14 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonth
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    func amSymbol(localeIdentifier: String) -> String {
+        return self.ApplesCalendar.amSymbol(localeIdentifier: localeIdentifier)
+    }
+    
+    func pmSymbol(localeIdentifier: String) -> String {
+        return self.ApplesCalendar.pmSymbol(localeIdentifier: localeIdentifier)
+    }
 
     var usesISOTime:  Bool = true
 

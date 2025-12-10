@@ -146,4 +146,14 @@ extension Calendar {
         self.locale = Locale.desiredLocale(localeIdentifier)
         return self.longEraSymbols
     } // func longEraSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func amSymbol(localeIdentifier: String) -> String {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.amSymbol
+    }
+    
+    mutating func pmSymbol(localeIdentifier: String) -> String {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.pmSymbol
+    }
 } // extension Calendar
