@@ -23,12 +23,12 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     
     private var ApplesCalendar:  Calendar
     
-    init(calendarCode:  ASACalendarCode) {
+    init(calendarCode: ASACalendarCode) {
         self.calendarCode = calendarCode
         let title = self.calendarCode.equivalentCalendarIdentifier
         ApplesCalendar = Calendar(identifier: title!)
         dateFormatter.calendar = ApplesCalendar
-    } // init(calendarCode:  ASACalendarCode)
+    } // init(calendarCode: ASACalendarCode)
     
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let timeZone = locationData.timeZone

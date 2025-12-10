@@ -17,9 +17,9 @@ class ASACalendarFactory {
         if code == .gregorian {
             return ASAGregorianCalendar()
         } else if code.isAppleCalendar {
-            return ASAAppleCalendar(calendarCode:  code)
+            return ASAAppleCalendar(calendarCode: code)
         } else if code.isJulianDayCalendar {
-            return ASAJulianDayCalendar(calendarCode:  code)
+            return ASAJulianDayCalendar(calendarCode: code)
         } else if code.isSunsetTransitionCalendar {
             return ASASolarTimeCalendar(calendarCode: code)
         } else if code == .frenchRepublican {
@@ -28,6 +28,6 @@ class ASACalendarFactory {
             return ASAJulianCalendar(calendarCode: code)
         }
      
-        return nil
+        return ASAUnknownCalendar(calendarCode: code)
     } // class func calendar(code:  ASACalendarCode) -> ASACalendar?
 } // class ASACalendarFactory
