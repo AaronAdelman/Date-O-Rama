@@ -20,8 +20,8 @@ class ASACalendarFactory {
             return ASAAppleCalendar(calendarCode: code)
         } else if code.isJulianDayCalendar {
             return ASAJulianDayCalendar(calendarCode: code)
-        } else if code.isSunsetTransitionCalendar {
-            return ASASolarTimeCalendar(calendarCode: code)
+        } else if code.isHebrewSolarTimeCalendar || code.isIslamicSolarTimeCalendar {
+            return ASAJudeoIslamicCalendar(calendarCode: code)
         } else if code == .frenchRepublican {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
         } else if code == .julian {
