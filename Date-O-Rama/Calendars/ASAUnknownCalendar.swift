@@ -67,10 +67,6 @@ public class ASAUnknownCalendar: ASACalendar {
         return nil
     }
     
-    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
-        return -1
-    }
-    
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         return ASADateComponents(calendar: self, locationData: locationData)
     }

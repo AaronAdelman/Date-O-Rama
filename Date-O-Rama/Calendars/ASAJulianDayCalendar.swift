@@ -152,22 +152,6 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     // MARK:  - Extracting Components
 
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
-         // Returns the value for one component of a date.
-        let components = date.julianDateComponents(calendarCode: self.calendarCode)
-
-        switch component {
-        case .day:
-            return components.day
-            
-        case .fractionalHour:
-            return Int(components.fractionOfDay)
-
-        default:
-            return -1
-        } // switch component
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
-
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         let JDComponents = date.julianDateComponents(calendarCode: self.calendarCode)
         var result = ASADateComponents(calendar: self, locationData: locationData)

@@ -353,12 +353,14 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
     
     // MARK: - Date components
     
-    func isValidDate(dateComponents: ASADateComponents) -> Bool { // TODO: FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+    // TODO: Point of expansion
+    func isValidDate(dateComponents: ASADateComponents) -> Bool {
         let applesDateComponents = dateComponents.applesDateComponents()
         return applesDateComponents.isValidDate
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
-    func date(dateComponents: ASADateComponents) -> Date? { // TODO: FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+    // TODO: Point of expansion
+    func date(dateComponents: ASADateComponents) -> Date? {
         var applesDateComponents = dateComponents.applesDateComponents()
         // The next part is to ensure we get the right day and don't screw up Sunrise/Sunset calculations
         applesDateComponents.hour       = 12
@@ -379,23 +381,6 @@ public class ASASolarTimeCalendar:  ASACalendar, ASACalendarWithWeeks, ASACalend
         }
         return (solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
     } // func hoursMinutesSecondsComponents(date: Date, transition: Date, locationData: ASALocation) -> (hour: Int, minute: Int, second: Int, nanosecond: Int)
-    
-    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
-        // Returns the value for one component of a date.
-        
-        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
-
-        // TODO: Point of expansion
-        var calendar = self.applesCalendar
-        calendar.timeZone = locationData.timeZone
-
-        let applesComponent = component.calendarComponent()
-        if applesComponent == nil {
-            return -1
-        }
-        
-        return calendar.component(applesComponent!, from: fixedDate)
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
     
     // TODO: Point of expansion
     fileprivate func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {

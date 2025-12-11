@@ -148,18 +148,7 @@ class ASAAppleCalendar: ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths
     
     
     // MARK: - Extracting Components
-    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
-        // Returns the value for one component of a date.
-        let ApplesComponent = component.calendarComponent()
-        if ApplesComponent == nil {
-            return -1
-        }
-        
-        var calendar = self.ApplesCalendar
-        calendar.timeZone = locationData.timeZone 
-        return calendar.component(ApplesComponent!, from: date)
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
-
+    
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         // Returns all the date components of a date.
         var ApplesComponents = Set<Calendar.Component>()

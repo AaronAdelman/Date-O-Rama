@@ -152,57 +152,6 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
         return result
     }
     
-    func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int {
-        let components: ASADateComponents = self.dateComponents([component], from: date, locationData: locationData)
-        
-        switch component {
-        case .era:
-            return components.era ?? -1
-            
-        case .year:
-            return components.year ?? -1
-            
-        case .yearForWeekOfYear:
-            return components.yearForWeekOfYear ?? -1
-            
-        case .quarter:
-            return components.quarter ?? -1
-            
-        case .month:
-            return components.month ?? -1
-            
-        case .weekOfYear:
-            return components.weekOfYear ?? -1
-            
-        case .weekOfMonth:
-            return components.weekOfMonth ?? -1
-            
-        case .weekday:
-            return components.weekday ?? -1
-            
-        case .weekdayOrdinal:
-            return components.weekdayOrdinal ?? -1
-            
-        case .day:
-            return components.day ?? -1
-            
-        case .hour:
-            return components.hour ?? -1
-            
-        case .minute:
-            return components.minute ?? -1
-            
-        case .second:
-            return components.second ?? -1
-            
-        case .nanosecond:
-            return components.nanosecond ?? -1
-            
-        case .fractionalHour, .dayHalf, .calendar, .timeZone:
-            return -1
-        } // switch component
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
-    
     func isLeapMonth(era: Int, year: Int, month: Int) -> Bool {
         // TODO:  Must override when subclassing
         return false
