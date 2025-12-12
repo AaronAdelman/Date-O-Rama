@@ -24,6 +24,9 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     } // func date(dateComponents: ASADateComponents) -> Date?
     
     override func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+        
+        
+        
         return ASADateComponents(calendar: self, locationData: locationData)
     } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
