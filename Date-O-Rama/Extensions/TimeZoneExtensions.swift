@@ -9,25 +9,9 @@
 import Foundation
 
 extension TimeZone {
-    static var GMT:  TimeZone {
+    static var gmt:  TimeZone {
         return TimeZone(secondsFromGMT: 0)!
     } // static var GMT
-
-//    func extremeAbbreviation(for date: Date) -> String {
-//        let secondsFromGMT = self.secondsFromGMT(for: date)
-//        let hoursFromGMT: Double = Double(secondsFromGMT) / (60.0 * 60.0)
-//        let formatter = NumberFormatter()
-//        formatter.numberStyle = .decimal
-//        formatter.maximumFractionDigits = 2
-//        formatter.minimumFractionDigits = 0
-//        if hoursFromGMT > 0 {
-//            formatter.positivePrefix = formatter.plusSign
-//        }
-//        
-//        let number = NSNumber(value: hoursFromGMT)
-//        let formattedValue = formatter.string(from: number)!
-//        return formattedValue
-//    } // func extremeAbbreviation(for date: Date) -> String
     
     func localizedName(for now: Date) -> String {
         let nameStyle: NSTimeZone.NameStyle = self.isDaylightSavingTime(for: now) ? .daylightSaving : .standard

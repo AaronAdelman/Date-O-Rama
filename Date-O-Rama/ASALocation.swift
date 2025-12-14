@@ -25,7 +25,7 @@ class ASALocation:  Equatable, Identifiable, Hashable, ObservableObject, @unchec
     var thoroughfare: String?
     var subThoroughfare: String?
     
-    var timeZone:  TimeZone = TimeZone.GMT
+    var timeZone:  TimeZone = TimeZone.gmt
     
     var type: ASALocationType = .earthUniversal
     
@@ -107,7 +107,7 @@ extension ASALocation {
         let usedLocation = location != nil ? location! : (placemark?.location ?? CLLocation.nullIsland)
         var country: String? = placemark?.country
         var ISOCountryCode: String? = placemark?.isoCountryCode
-        var timeZone: TimeZone = placemark?.timeZone ?? TimeZone.GMT
+        var timeZone: TimeZone = placemark?.timeZone ?? TimeZone.gmt
         var locality: String? = placemark?.locality
         
         if ISOCountryCode == nil {
@@ -205,15 +205,15 @@ extension ASALocation {
     } // var longFormattedOneLineAddress
 
     static var NullIsland: ASALocation {
-        return ASALocation(id: UUID(), location: CLLocation.nullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT, type: .earthLocation)
+        return ASALocation(id: UUID(), location: CLLocation.nullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.gmt, type: .earthLocation)
     } // static var NullIsland: ASALocation
     
     static var EarthUniversal: ASALocation {
-        return ASALocation(id: UUID(), location: .nullIsland, timeZone: .GMT, type: .earthUniversal)
+        return ASALocation(id: UUID(), location: .nullIsland, timeZone: .gmt, type: .earthUniversal)
     } // static var EarthUniversal: ASALocation
     
     static var MarsUniversal: ASALocation {
-        return ASALocation(id: UUID(), location: .nullIsland, timeZone: .GMT, type: .marsUniversal)
+        return ASALocation(id: UUID(), location: .nullIsland, timeZone: .gmt, type: .marsUniversal)
     } // static var MarsUniversal: ASALocation
     
     var flag: String {
@@ -237,7 +237,7 @@ extension ASALocation {
             return self.timeZone.abbreviation(for: now) ?? ""
             
         case .earthUniversal:
-            return TimeZone.GMT.abbreviation() ?? ""
+            return TimeZone.gmt.abbreviation() ?? ""
             
         case .marsUniversal:
             return "MTC"
@@ -250,7 +250,7 @@ extension ASALocation {
             return self.timeZone.localizedName(for: now) 
             
         case .earthUniversal:
-            return TimeZone.GMT.localizedName(for: now) 
+            return TimeZone.gmt.localizedName(for: now) 
             
         case .marsUniversal:
             return "Coordinated Martian Time"

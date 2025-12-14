@@ -522,11 +522,11 @@ struct ASAEKParticipantView: View {
             #else
             Menu {
                 
-                Text(participant.EMailAddress)
+                Text(participant.eMailAddress)
                 
                 Button(action: {
                     let pasteboard = UIPasteboard.general
-                    pasteboard.string = participant.EMailAddress
+                    pasteboard.string = participant.eMailAddress
                 }, label: {
                     Text("Copy available address")
                 })

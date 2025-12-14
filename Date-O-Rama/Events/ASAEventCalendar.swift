@@ -1299,7 +1299,7 @@ class ASAEventCalendar {
                 let dayInRangeString = {
                     let cycleRangeNumberFormat = calendar.cycleNumberFormat(locale: Locale(identifier: requestedLocaleIdentifier))
                     if cycleRangeNumberFormat == .hebrew {
-                        return dayInRange.HebrewNumeral
+                        return dayInRange.hebrewNumeral
                     }
                     
                     return "\(dayInRange)"
