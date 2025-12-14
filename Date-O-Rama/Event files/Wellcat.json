@@ -12,7 +12,7 @@
             {type: "D", start: {mon: 12, d: 1}, titles: {"en": "Bifocals At The Monitor Liberation Day"}},
             {type: "D", start: {mon: 12, d: 5}, titles: {"en": "Bathtub Party Day"}, first: {era: 1, y: 2000}},
             {type: "D", start: {mon: 12, d: 13}, titles: {"en": "Pick A Pathologist Pal Day"}, notes: {"en": "Pick A Pathologist Day"}},
-            {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Cat Herders’ Day"}, notes: {"en": "National Cat Herders Day"}},
+            {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Cat Herders’ Day"}, notes: {"en": "National Cat Herders Day\nCat Herders Day"}},
             {type: "D", start: {mon: 12, d: 16}, inherits: "Barbie and Barney Backlash Day"},
             {type: "D", start: {mon: 12, d: 21}, inherits: "Humbug Day"},
             {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Tick Tock Day", "he": "יום הטיק טק"}},

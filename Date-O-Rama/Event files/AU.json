@@ -129,7 +129,7 @@
         {type: "W", start: {mon: 7, fullWk: 1}, titles: {"en": "National NAIDOC Week"}, urls: {"en": "https://www.naidoc.org.au/about/naidoc-week"}, first: {era: 1, y: 1991}},
         {type: "W", start: {mon: 11, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Recycling Week"}, urls: {"en": "https://planetark.org/programs/national-recycling-week"}, first: {era: 1, y: 1996}, emoji: "♻️", notes: {"en": "Created by Planet Ark"}},
         {type: "D", start: {mon: 11, wkd: [3], nth: 2},titles: {"en": "National Survivors’ Day"},  urls: {"en": "https://www.daysoftheyear.com/days/national-survivors-day/"}, notes: {"en": "Created by In Good Faith Foundation (IGFF), and LOUD Fence Inc."}},
-        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Gravy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gravy-day/"}, first: {era: 1, y: 1996}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Gravy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gravy-day/"}, first: {era: 1, y: 1996}, notes: {"en": "This observance celebrates the song “How to Make Gravy” by Paul Kelly."}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Carols by Candlelight", first: {era: 1, y: 1938}},
         {type: "nD", start: {mon: 3, d: 6, thruD: 12, wkd: [5], durationD: 5}, titles: {"en": "Moomba Festival"}, urls: {"en": "https://moomba.melbourne.vic.gov.au/"}, first: {era: 1, y: 1955}},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
