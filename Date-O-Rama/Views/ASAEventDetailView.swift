@@ -590,6 +590,6 @@ struct ASAEKParticipantView: View {
 
 //struct ASAEventDetailView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitle: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
+//        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitle: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.nullIsland, category: .generic), row: ASARow.generic)
 //    }
 //}

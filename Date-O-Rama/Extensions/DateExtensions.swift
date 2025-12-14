@@ -43,8 +43,7 @@ fileprivate extension ASACalendarCode {
             return 0.0
         } // switch calendarCode
     } // var offsetFromJulianDay
-    
-}
+} // extension ASACalendarCode
 
 extension Date {
     static let SECONDS_PER_DAY:  TimeInterval  = 24.0 * 60.0 * 60.0
@@ -66,7 +65,7 @@ extension Date {
 
     func dateToCalculateSolarEventsFor(timeZone: TimeZone) -> Date {
         return self.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: self)))
-    }
+    } // func dateToCalculateSolarEventsFor(timeZone: TimeZone) -> Date
 } // extension Date
 
 extension Date {
@@ -82,7 +81,7 @@ extension Date {
 
     func julianDateWithTime(calendarCode: ASACalendarCode) -> Double {
         if calendarCode == .marsSolDate {
-            return self.MarsSolDate
+            return self.marsSolDate
         }
         
         let offsetFromJulianDay = calendarCode.offsetFromJulianDay
@@ -97,14 +96,14 @@ extension Date {
         let seconds = timeZone.secondsFromGMT(for: self)
         let adjustedDate = self.addingTimeInterval(Double(seconds))
         return adjustedDate.julianDateWithoutTime(calendarCode: .modifiedJulianDay)
-    }
+    } // func localModifiedJulianDay(timeZone: TimeZone) -> Int
     
-    static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
-        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .modifiedJulianDay)
-        let seconds = timeZone.secondsFromGMT(for: rawDate)
-        let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
-        return adjustedDate
-    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
+//    static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
+//        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .modifiedJulianDay)
+//        let seconds = timeZone.secondsFromGMT(for: rawDate)
+//        let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
+//        return adjustedDate
+//    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
     func julianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double) {
         let full = self.julianDateWithTime(calendarCode: calendarCode)
@@ -213,43 +212,25 @@ extension Date {
         let hours = seconds / hourLength
         return hours
     } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
-
-    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
-        assert(endDate > startDate)
-        assert(numberOfHoursPerDay > 0.0)
-        assert(numberOfMinutesPerHour > 0.0)
-        assert(numberOfSecondsPerMinute > 0.0)
-
-        let totalSISeconds = self.timeIntervalSince(startDate)
-        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
-        let hours = floor(totalSISeconds / hourLength)
-        let nonHourSISeconds = totalSISeconds - hours * hourLength
-        let minuteLength = hourLength / numberOfMinutesPerHour
-        let minutes = floor(nonHourSISeconds  / minuteLength)
-        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
-        let secondLength = minuteLength / numberOfSecondsPerMinute
-        let seconds = nonMinuteSISeconds / secondLength
-        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
-    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
 } // extension Date
 
 
 // -  Mars Sol Date
 
-fileprivate let MarsSolDateOffset  = 2405522.0
-fileprivate let MarsSolDateDivisor =       1.027491252
-fileprivate let MarsSolDateFudge   =       0.00200 // Fudged to get the same value, more or less as https://marsclock.com/
+fileprivate let marsSolDateOffset  = 2405522.0
+fileprivate let marsSolDateDivisor =       1.027491252
+fileprivate let marsSolDateFudge   =       0.00200 // Fudged to get the same value, more or less as https://marsclock.com/
 
 extension Date {
-    var MarsSolDate: Double {
-        let JD: Double = self.julianDate
-        let result = (JD - MarsSolDateOffset) / MarsSolDateDivisor - MarsSolDateFudge
+    var marsSolDate: Double {
+        let jd: Double = self.julianDate
+        let result = (jd - marsSolDateOffset) / marsSolDateDivisor - marsSolDateFudge
         return result
     }
     
     static func date(MarsSolDate: Double) -> Date {
-        let JD = MarsSolDateDivisor * (MarsSolDate + MarsSolDateFudge) + MarsSolDateOffset
-        return Date.date(julianDate: JD)
+        let jd = marsSolDateDivisor * (MarsSolDate + marsSolDateFudge) + marsSolDateOffset
+        return Date.date(julianDate: jd)
     }
 }
 
@@ -263,38 +244,5 @@ extension Date {
         }
         
         return Date(timeIntervalSince1970: timeIntervalSince1970!)
-    }
-}
-
-
-// -
-
-extension Date {
-    func formattedFor(timeZone: TimeZone) -> String? {
-        let localDateFormatter = DateFormatter()
-        localDateFormatter.dateStyle = .medium
-        localDateFormatter.timeStyle = .medium
-        localDateFormatter.timeZone = timeZone
-        return localDateFormatter.string(from: self)
-    }
-}
-
-extension Date? {
-    func formattedFor(timeZone: TimeZone) -> String? {
-        if self != nil {
-            return self!.formattedFor(timeZone: timeZone)
-        } else {
-            return nil
-        }
-    }
-}
-
-extension Date?? {
-    func formattedFor(timeZone: TimeZone) -> String? {
-        if self != nil {
-            return self!.formattedFor(timeZone: timeZone)
-        } else {
-            return nil
-        }
-    }
-}
+    } // static func date(timeIntervalSince1970: TimeInterval?) -> Date?
+} // extension Date

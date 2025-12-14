@@ -9,36 +9,11 @@
 import EventKit
 import Foundation
 
-// From https://www.hackingwithswift.com/example-code/language/how-to-split-an-array-into-chunks
-extension Array {
-    func chunked(into size: Int) -> [[Element]] {
-        return stride(from: 0, to: count, by: size).map {
-            Array(self[$0 ..< Swift.min($0 + size, count)])
-        }
-    }
-}
 
 extension Array where Element == String? {
     var uniqueElements: [String?] {
         var uniqueValues: Set<Element> = []
         return self.filter { uniqueValues.insert($0).inserted }
-    }
-}
-
-// MARK:  - Array where Element == EKRecurrenceDayOfWeek
-extension Array where Element == EKRecurrenceDayOfWeek {
-    mutating func remove(_ element:  Element) {
-        let index = self.firstIndex(of: element)
-        self.remove(at: index!)
-    }
-}
-
-
-// MARK:  - Array where Element == NSNumber
-extension Array where Element == NSNumber {
-    mutating func remove(_ element:  Element) {
-        let index = self.firstIndex(of: element)
-        self.remove(at: index!)
     }
 }
 
