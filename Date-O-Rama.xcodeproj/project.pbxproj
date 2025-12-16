@@ -444,7 +444,6 @@
 		A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
 		A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
-		A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */; };
 		A59D90672E8C081B0057D110 /* Confucianism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A59D90662E8C081B0057D110 /* Confucianism (supplemental).json */; };
 		A59D90682E8C081B0057D110 /* Confucianism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A59D90662E8C081B0057D110 /* Confucianism (supplemental).json */; };
 		A59EABB12B445A73008C146B /* PK (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59EABB02B445A73008C146B /* PK (Muslim).json */; };
@@ -1497,7 +1496,6 @@
 		A599FEEC269AD0CF00DB3124 /* Judaism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (supplemental).json"; sourceTree = "<group>"; };
 		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
-		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		A59D90662E8C081B0057D110 /* Confucianism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Confucianism (supplemental).json"; sourceTree = "<group>"; };
 		A59EABB02B445A73008C146B /* PK (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PK (Muslim).json"; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
@@ -2522,7 +2520,6 @@
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
 				A57083F2254818B200904E7C /* DateFormatterExtensions.swift */,
 				A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */,
-				A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */,
 				A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */,
 				A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */,
 				A579019C259263F900224666 /* EKEventExtensions.swift */,
@@ -3941,7 +3938,6 @@
 				A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */,
 				A5E2E4EB2A388011000E8049 /* ASASingleEvent.swift in Sources */,
 				A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */,
-				A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,

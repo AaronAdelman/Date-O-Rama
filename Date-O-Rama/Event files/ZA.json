@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 8, d: 9}, inherits: "Natl Women’s Day", first: {era: 1, y: 1995}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-day/"}},
         {type: "D", start: {mon: 9, d: 24}, inherits: "Heritage Day", first: {era: 1, y: 1996}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-day/"}},
         {type: "D", start: {mon: 9, d: 25, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/south-africa/heritage-day"}, titles: {"en": "Heritage Day (in lieu)"}, first: {era: 1, y: 1995}},
-        {type: "D", start: {mon: 12, d: 16}, titles: {"en": "Day of Reconciliation"}, first: {era: 1, y: 1995}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, emoji: "🫶"},
+        {type: "D", start: {mon: 12, d: 16}, titles: {"af":"Versoeningsdag","ar":"يوم المصالحة","en":"Day of Reconciliation","es":"Día de la Reconciliación","id":"Hari Rekonsiliasi","nl":"Verzoeningsdag","pt":"Dia da Reconciliação","ru":"День примирения","sv":"Day of Reconciliation","zu":"Usuku lokubuyisana"}, first: {era: 1, y: 1995}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, emoji: "🫶", notes: {"en": "Created by the government of South Africa"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/day-of-goodwill/"}, titles: {"en": "Day of Goodwill"}, first: {era: 1, y: 1994}, first: {era: 1, y: 1910}},
         

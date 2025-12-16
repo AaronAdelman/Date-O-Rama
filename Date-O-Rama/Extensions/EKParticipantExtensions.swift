@@ -10,7 +10,7 @@ import Foundation
 import EventKit
 
 extension EKParticipant {
-    var EMailAddress: String {
+    var eMailAddress: String {
         return self.url.relativeString.replacingOccurrences(of: "mailto:", with: "")
-    } // var EMailAddress: String
+    } // var eMailAddress: String
 } // extension EKParticipant

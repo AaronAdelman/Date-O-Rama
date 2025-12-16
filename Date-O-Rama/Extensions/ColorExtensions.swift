@@ -6,13 +6,9 @@
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
-import CoreLocation
 import Foundation
 import SwiftUI
 
-// MARK: - Utility functions
-
-// MARK:  -
 
 // From http://brunowernimont.me/howtos/make-swiftui-color-codable
 // Creative Commons

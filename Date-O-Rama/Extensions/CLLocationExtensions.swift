@@ -51,10 +51,10 @@ extension CLLocation {
 // MARK:  -
 
 extension CLLocation {
-    static var NullIsland:  CLLocation {
+    static var nullIsland:  CLLocation {
         // Default, filler location value that keeps being used in this program
         return CLLocation(latitude: 0.0, longitude: 0.0)
-    } // static var NullIsland:  CLLocation
+    } // static var nullIsland:  CLLocation
 } // extension CLLocation
 
 

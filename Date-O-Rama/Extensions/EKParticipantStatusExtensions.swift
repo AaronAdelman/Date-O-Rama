@@ -41,23 +41,7 @@ extension EKParticipantStatus {
             return "questionmark"
         } // switch self
     } // var systemName
-    
-    var color: Color {
-        switch self {
-        case .accepted:
-            return .green
-            
-        case .tentative:
-            return .orange
-            
-        case .declined:
-            return .red
-            
-        default:
-            return .black
-        } // switch self
-    } // var color: Color
-    
+        
     var text: String {
         var rawValue = ""
         

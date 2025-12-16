@@ -12,34 +12,6 @@ import SwiftAA
 
 // MARK: - Sunrise/Sunset Algorithm
 
-// Based on http://edwilliams.org/sunrise_sunset_algorithm.htm?fbclid=IwAR1xVwKgo6rHtb42u0kl7IE3BA04dUAJfO3EN5JXlNXpV-CEH7JpIo9dys4
-// Includes original text to allow more easily checking against the original.
-
-// Source:
-//     Almanac for Computers, 1990
-//     published by Nautical Almanac Office
-//     United States Naval Observatory
-//     Washington, DC 20392
-//
-// Inputs:
-//     day, month, year:      date of sunrise/sunset
-//     latitude, longitude:   location for sunrise/sunset
-//     zenith:                Sun's zenith for sunrise/sunset
-//       offical      = 90 degrees 50'
-//       civil        = 96 degrees
-//       nautical     = 102 degrees
-//       astronomical = 108 degrees
-//
-//     NOTE: longitude is positive for East and negative for West
-//         NOTE: the algorithm assumes the use of a calculator with the
-//         trig functions in "degree" (rather than "radian") mode. Most
-//         programming languages assume radian arguments, requiring back
-//         and forth convertions. The factor is 180/pi. So, for instance,
-//         the equation RA = atan(0.91764 * tan(L)) would be coded as RA
-//         = (180/pi)*atan(0.91764 * tan((pi/180)*L)) to give a degree
-//         answer with a degree input for L.
-
-//fileprivate let SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON = (50.0 / 60.0)
 fileprivate let SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON = 0.833
 
 /// This struct encapsulates parameters for Solar events of interest

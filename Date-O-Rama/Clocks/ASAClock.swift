@@ -331,7 +331,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let rawType = dictionary[TYPE_KEY] as? String
         let type: ASALocationType = (rawType == nil) ? .earthLocation : ASALocationType(rawValue: rawType!)!
 
-        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT, type: type)
+        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.gmt, type: type)
 
         newClock.startingUp = false
         newClock.enforceSelfConsistency(location: newLocationData, usesDeviceLocation: usesDeviceLocation ?? false)
