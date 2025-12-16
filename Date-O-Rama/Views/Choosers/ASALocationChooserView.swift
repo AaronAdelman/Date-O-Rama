@@ -20,7 +20,7 @@ struct ASALocationChooserView: View {
 
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
-    @StateObject var tempLocationData:  ASALocation = ASALocation.NullIsland
+    @StateObject var tempLocationData:  ASALocation = ASALocation.nullIsland
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {

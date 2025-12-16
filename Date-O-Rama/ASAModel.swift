@@ -57,27 +57,27 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
 #endif
     }
     
-    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
+    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .nullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
+    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .nullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
+    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .nullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
+    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .nullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
+    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .nullIsland, clocks: [], usesDeviceLocation: true, locationManager: ASAModel.locationManager) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet

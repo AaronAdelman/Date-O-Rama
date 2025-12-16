@@ -68,6 +68,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedClock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, now: Date(), tempLocation: ASALocation.NullIsland)
+        ASANewClockDetailView(selectedClock: ASAClock.generic, location: .nullIsland, usesDeviceLocation: false, now: Date(), tempLocation: ASALocation.nullIsland)
     }
 }

@@ -246,3 +246,13 @@ extension Date {
         return Date(timeIntervalSince1970: timeIntervalSince1970!)
     } // static func date(timeIntervalSince1970: TimeInterval?) -> Date?
 } // extension Date
+
+extension Date {
+    func gregorianDateComponents(timeZone: TimeZone) -> DateComponents {
+        var gregorian = Calendar(identifier: .gregorian)
+        gregorian.timeZone = timeZone
+        let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: self)
+        
+        return gregorianComponents
+    }
+} // extension Date

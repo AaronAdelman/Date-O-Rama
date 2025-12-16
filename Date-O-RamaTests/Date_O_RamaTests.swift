@@ -63,7 +63,7 @@ class Date_O_RamaTests: XCTestCase {
         let TIME_FORMAT       = ASATimeFormat.medium
 
         let calendar = ASACalendarFactory.calendar(code: code)
-        let result = calendar?.dateTimeString(now: testDate, localeIdentifier: LOCALE_IDENTIFIER, dateFormat: DATE_FORMAT, timeFormat: TIME_FORMAT, locationData: ASALocation.NullIsland)
+        let result = calendar?.dateTimeString(now: testDate, localeIdentifier: LOCALE_IDENTIFIER, dateFormat: DATE_FORMAT, timeFormat: TIME_FORMAT, locationData: ASALocation.nullIsland)
         XCTAssert(result == expectedResult)
     } // func examineJulianDayCalendar(code:  ASACalendarCode, expectedResult:  String)
     
@@ -134,7 +134,7 @@ class Date_O_RamaTests: XCTestCase {
         //        let BCE = 0
         let CE = 1
         
-        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.nullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
         let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         
@@ -1186,7 +1186,7 @@ class Date_O_RamaTests: XCTestCase {
         let eventStartDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 11, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         let eventEndDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         
-        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitle: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.NullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
+        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitle: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.nullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
         
         XCTAssertFalse(event.relevant(startDate: startDate, endDate: endDate))
     }

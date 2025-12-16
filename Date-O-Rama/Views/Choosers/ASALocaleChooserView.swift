@@ -107,7 +107,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleChooserView(clock: ASAClock.generic, location: .NullIsland, tempLocaleIdentifier: "en_US")
+        ASALocaleChooserView(clock: ASAClock.generic, location: .nullIsland, tempLocaleIdentifier: "en_US")
     }
 }
 

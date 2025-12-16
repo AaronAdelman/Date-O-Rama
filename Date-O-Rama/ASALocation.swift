@@ -204,9 +204,9 @@ extension ASALocation {
         } // switch self.type
     } // var longFormattedOneLineAddress
 
-    static var NullIsland: ASALocation {
+    static var nullIsland: ASALocation {
         return ASALocation(id: UUID(), location: CLLocation.nullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.gmt, type: .earthLocation)
-    } // static var NullIsland: ASALocation
+    } // static var nullIsland: ASALocation
     
     static var EarthUniversal: ASALocation {
         return ASALocation(id: UUID(), location: .nullIsland, timeZone: .gmt, type: .earthUniversal)
@@ -369,7 +369,7 @@ actor ASALocationCache {
         do {
             guard let fileURL = Bundle.main.url(forResource: "TimeZones", withExtension: "txt") else {
                 debugPrint(#file, #function, "Could not open!")
-                return ASALocation.NullIsland
+                return ASALocation.nullIsland
             }
 
             let jsonData = try Data(contentsOf: fileURL)
@@ -378,7 +378,7 @@ actor ASALocationCache {
 
             let timeZoneDatabase = try newJSONDecoder.decode(ASATimeZoneDatabase.self, from: jsonData)
             guard let entry = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZoneIdentifier }) else {
-                return ASALocation.NullIsland
+                return ASALocation.nullIsland
             }
 
             let countryCode = entry.ISOCountryCode ?? ""
@@ -410,7 +410,7 @@ actor ASALocationCache {
             return result
         } catch {
             debugPrint(#file, #function, error)
-            return ASALocation.NullIsland
+            return ASALocation.nullIsland
         }
     }
 }

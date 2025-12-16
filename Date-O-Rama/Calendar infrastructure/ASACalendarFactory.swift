@@ -26,6 +26,8 @@ class ASACalendarFactory {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
         } else if code == .julian {
             return ASAJulianCalendar(calendarCode: code)
+        } else if code == .bahaiSolarTime {
+            return ASABahaiCalendar(calendarCode: code)
         }
      
         return ASAUnknownCalendar(calendarCode: code)

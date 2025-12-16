@@ -69,6 +69,9 @@ enum ASACalendarCode: String, Codable {
     case teluguSolarTime           = "telugu-s"
     case vietnameseSolarTime       = "vietnamese-s"
     case vikramSolarTime           = "vikram-s"
+    case bahai                     = "badi"
+    case bahaiSolarTime            = "badi-s"
+    
     case allEarth                  = "*"
     case allHebrew                 = "heb*"
     case allHebrewSolarTime        = "heb-solar*"
@@ -181,7 +184,7 @@ extension ASACalendarCode {
     
     var isSunsetTransitionCalendar:  Bool {
         switch self {
-        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA:
+        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA, .bahaiSolarTime:
             return true
         default:
             return false
@@ -230,7 +233,7 @@ extension ASACalendarCode {
     
     var is24HourDaysMidnightStartFixedCalendar: Bool {
         switch self {
-        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA, .marsSolDate, .dublinJulianDay, .reducedJulianDay, .julianDay:
+        case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA, .marsSolDate, .dublinJulianDay, .reducedJulianDay, .julianDay, .bahaiSolarTime:
             return false
 
         default:
@@ -387,7 +390,7 @@ extension ASACalendarCode {
     var type:  ASACalendarType {
         switch self {
         case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
-                .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil:
+                .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .bahai, .bahaiSolarTime:
             return .solar
             
         case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
@@ -411,7 +414,7 @@ extension ASACalendarCode {
 //                    .hebrew,
                     .hebrewGRA, .hebrewMA,
 //                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
-                .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram]
+                    .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram, .bahaiSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:

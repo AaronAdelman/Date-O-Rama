@@ -923,6 +923,23 @@
         }
       }
     },
+    "badi" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bahá’í Calendar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "לוח השנה הבהאית"
+          }
+        }
+      }
+    },
     "by Aaron Solomon Adelman" : {
       "localizations" : {
         "en" : {
@@ -1200,17 +1217,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dublin Julian Date"
-          }
-        }
-      }
-    },
-    "Done" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "סיום"
           }
         }
       }
@@ -1888,17 +1894,6 @@
         }
       }
     },
-    "Event Recurrence" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "הישנות של אירוע"
-          }
-        }
-      }
-    },
     "Event set positions" : {
       "extractionState" : "migrated",
       "localizations" : {
@@ -2423,13 +2418,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hebrew (Maghen ’Avraham)"
+            "value" : "Hebrew calendar (Maghen ’Avraham)"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "עברי (מגן אברהם)"
+            "value" : "לוח השנה העברי (מגן אברהם)"
           }
         }
       }

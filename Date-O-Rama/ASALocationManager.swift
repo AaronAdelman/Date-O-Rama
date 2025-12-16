@@ -97,7 +97,7 @@ final class ASALocationManager: NSObject, ObservableObject, Sendable {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocation: ASALocation = ASALocation.NullIsland {
+    @Published var deviceLocation: ASALocation = ASALocation.nullIsland {
         willSet {
             DispatchQueue.main.async {
                 self.objectWillChange.send()

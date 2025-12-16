@@ -130,6 +130,6 @@ struct ASALocationWithClocksSectionView: View {
 
 //struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAWatchLocationsView(mainClocks: .constant(ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])), now: .constant(Date()))
+//        ASAWatchLocationsView(mainClocks: .constant(ASALocationWithClocks(location: ASALocation.nullIsland, clocks: [ASAClock.generic])), now: .constant(Date()))
 //    }
 //}

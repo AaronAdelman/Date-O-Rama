@@ -236,7 +236,7 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    }
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
@@ -271,14 +271,14 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    }
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
         return nil // TODO:  Fill in!
-    }
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
     
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
-        let components = dateComponents([], from: date, locationData: ASALocation.NullIsland)
+        let components = dateComponents([], from: date, locationData: ASALocation.nullIsland)
         
         switch larger {
         case .year:
@@ -432,14 +432,7 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
     }
     
     func boothComponents(calendarCode: ASACalendarCode, date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int, hour: Int, minute: Int, second: Int, nanosecond: Int) {
-        var dateAsJulianDate = date.addingTimeInterval(-18.0 * 60.0 * 60.0 - Double(timeZone.secondsFromGMT(for: date))).julianDate
-        
-        var gregorian = Calendar(identifier: .gregorian)
-        gregorian.timeZone = timeZone
-        let gregorianComponents = gregorian.dateComponents([.hour, .minute, .second, .nanosecond, .era, .year, .month, .day, .weekday], from: date)
-        if gregorianComponents.hour == 0 && gregorianComponents.minute == 0 && gregorianComponents.second == 0 && gregorianComponents.nanosecond == 0 {
-            dateAsJulianDate += 1
-        }
+        let gregorianComponents = date.gregorianDateComponents(timeZone: timeZone)
         
         let boothYMD: (year: Int, month: Int, day: Int) = boothYMD(gregorianComponents: gregorianComponents)
         

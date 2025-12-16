@@ -275,6 +275,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedClock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true, tempLocation: ASALocation.NullIsland)
+        ASAClockDetailView(selectedClock: ASAClock.generic, location: .nullIsland, usesDeviceLocation: false, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true, tempLocation: ASALocation.nullIsland)
     }
 }

@@ -150,6 +150,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(clock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, tempCalendarCode: .gregorian, locationType: .earthLocation)
+        ASACalendarChooserView(clock: ASAClock.generic, location: .nullIsland, usesDeviceLocation: false, tempCalendarCode: .gregorian, locationType: .earthLocation)
     }
 }
