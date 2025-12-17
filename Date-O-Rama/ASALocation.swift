@@ -208,13 +208,13 @@ extension ASALocation {
         return ASALocation(id: UUID(), location: CLLocation.nullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.gmt, type: .earthLocation)
     } // static var nullIsland: ASALocation
     
-    static var EarthUniversal: ASALocation {
+    static var earthUniversal: ASALocation {
         return ASALocation(id: UUID(), location: .nullIsland, timeZone: .gmt, type: .earthUniversal)
-    } // static var EarthUniversal: ASALocation
+    } // static var earthUniversal: ASALocation
     
-    static var MarsUniversal: ASALocation {
+    static var marsUniversal: ASALocation {
         return ASALocation(id: UUID(), location: .nullIsland, timeZone: .gmt, type: .marsUniversal)
-    } // static var MarsUniversal: ASALocation
+    } // static var marsUniversal: ASALocation
     
     var flag: String {
         var code: String
