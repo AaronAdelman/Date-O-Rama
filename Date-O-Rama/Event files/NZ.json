@@ -54,7 +54,7 @@
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day", first: {era: 1, y: 496}},
         {inherits: "World Book Day", type: "D", start: {mon: 4, d: 23}, first: {era: 1, y: 1995}},
-        {inherits: "World No-Tobacco Day", type: "D", start: {mon: 5, d: 31}, first: {era: 1, y: 1989}},
+        {type: "D", start: {mon: 5, d: 31}, inherits: "World No-Tobacco Day", first: {era: 1, y: 1989}},
         {inherits: "World Refugee Day", type: "D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},
         {titles: {"en": "Dominion Status Day"}, type: "D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/dominion-status-day/"}, first: {era: 1, y: 1907}},
         {titles: {"en": "National Disco Day"}, type: "D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-disco-day/"}, emoji: "🪩"},
