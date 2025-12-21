@@ -604,10 +604,11 @@
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "National Sangria Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sangria-day/"}},
         {type: "D", start: {mon: 12, d: 20}, titles: {"en": "Sacagawea Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sacagawea-day/"}, notes: {"en": "Sacajawea Day\nSakakawea Day"}},
         {type: "D", start: {mon: 12, d: 21}, inherits: "Natl Hamburger Day", urls: {"en": "https://mobile-cuisine.com/did-you-know/national-hamburger-day/"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Look On the Bright Side Day"}, urls: {"en": "https://www.daysoftheyear.com/days/look-on-the-bright-side-day/"}, emoji: "🌲🌳🌴"},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Armagnac Day", "he": "יום ארמניאק הלאומי"}, urls: {"en": "https://nationaltoday.com/national-armagnac-day/"}, emoji: "🍷", notes: {"en": "Created by Ming Luke"}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Crossword Puzzle Day", "he": "יום הולדת לתשבץ הלאומי"}, notes: {"en": "Crossword Puzzle Day", "he": "יום הולדת לתשבץ"}, urls: {"en": "https://www.daysoftheyear.com/days/crossword-puzzle-day/"}, first: {era: 1, y: 1913}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National French Fried Shrimp Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-french-fried-shrimp-day/"}, emoji: "🍤", first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Homeless Persons’ Remembrance Day"}, notes: {"en": "National Homeless Persons’ Memorial Day"}, urls: {"en": "https://nationaltoday.com/national-homeless-persons-remembrance-day/"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Homeless Persons’ Remembrance Day"}, notes: {"en": "National Homeless Persons’ Memorial Day\nCreated by the National Health Care for the Homeless Council"}, urls: {"en": "https://nationaltoday.com/national-homeless-persons-remembrance-day/"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Short Girl Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/short-girl-appreciation-day/"}, notes: {"en": "Short Girl Appreciation Day"}},
         {type: "D", start: {mon: 12, d: 21}, titles: {"en": "National Short Story Day", "he": "יום הסיפור הקצר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/short-story-day/"}, emoji: "✍️", first: {era: 1, y: 2013}, notes: {"en": "Short Fiction Day"}},
         {type: "D", start: {mon: 12, d: 22, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Forefathers’ Day", first: {era: 1, y: 1769}},
@@ -2486,7 +2487,7 @@
         
     ],
     templates: [
-        {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"en": "Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
+        {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"ar":"يوم الأجداد","en":"Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
         {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, titles: {"en": "I Love My State Parks Week"}, urls: {"en": "https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️"},
         {template: "Johnny Appleseed Day", type: "D", start: {mon: 9, d: 26}, titles: {"en": "National Johnny Appleseed Day"}, urls: {"en": "https://www.daysoftheyear.com/days/johnny-appleseed-day/"}, emoji: "🍎", notes: {"en": "Johnny Appleseed Day"}},
         {template: "Museum Day", type: "D", start: {era: 1, y: 2005, mon: 4, d: 30}, titles: {"en": "Museum Day", "he": "יום המוזיאונים", "fr": "Journée des musées"}, notes: {"en": "Smithsonian Museum Day"}, urls: {"en": "https://www.checkiday.com/531c14130407ae2eefbc5d35e34c5895/museum-day"}, emoji: "🏛"},
