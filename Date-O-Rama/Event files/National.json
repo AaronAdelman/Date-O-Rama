@@ -617,7 +617,7 @@
         {type: "D", start: {mon: 12, d: 23, wkd: [2]}, inherits: "Forefathers’ Day", first: {era: 1, y: 1769}},
         {type: "D", start: {mon: 12, d: 23}, titles: {"en": "National Bake Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://www.checkiday.com/f6406cccbc429f6ad6bbc41b053d19af/national-bake-day"}, emoji: "👩‍🍳👨‍🍳"},
         {type: "D", start: {mon: 12, d: 23}, titles: {"en": "National Roots Day"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/roots-day/"}, emoji: "👨‍👩‍👧‍👦"},
-        {type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/national-homeowners-day/"}, titles: {"en": "National Homeowners Day"}, first: {era: 1, y: 2020}, emoji: "🏠"},
+        {type: "D", start: {mon: 12, d: 26}, titles: {"en": "National Homeowners Day"}, urls: {"en": "https://nationaltoday.com/national-homeowners-day/"}, first: {era: 1, y: 2020}, emoji: "🏠"},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "National Card Playing Day", "he": "יום משחקי הקלפים הלאומי"}, emoji: "🃞🃝🃋", urls: {"en": "https://www.daysoftheyear.com/days/card-playing-day/"}, notes: {"en": "Card Playing Day"}},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "National Chocolate Candy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-chocolate-candy-day/"}, inherits: "*Chocolate*"},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "National Download Day"}, urls: {"en": "https://nationaltoday.com/national-download-day/"}, emoji: "⬇️"},

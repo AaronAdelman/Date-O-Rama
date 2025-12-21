@@ -25,7 +25,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 9, wkd: [2]}, inherits: "Immaculate Conception (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/macau/immaculate-conception-day"}},
         {type: "D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/macao-sare-day/"}, titles: {"en": "Macao SARE Day", "pt": "Dia Comemorativo do estabelecimento da Região Administrativa Especial de Macau", "zh": "澳門特別行政區成立紀念日"}, first: {era: 1, y: 1999}},
-        {inherits: "Winter Solstice", type: "D", start: {equinoxOrSolstice: "Dec"}, urls: {"en": "https://www.officeholidays.com/holidays/macau/dongzhi"}, titles: {"en": "Dongzhi", "pt": "Solstício de Inverno", "zh": "冬至"}},
+        {type: "D", start: {equinoxOrSolstice: "Dec"}, inherits: "Winter Solstice", urls: {"en": "https://www.officeholidays.com/holidays/macau/dongzhi"}, titles: {"as":"ডংজি উৎসৱ","cdo":"Dĕ̤ng-cáik","en":"Dongzhi Festival","fr":"Solstice d’hiver (fête chinoise)","hak":"Tûng-chiet","hu":"Tungcse-fesztivál","id":"Dongzhi","it":"Festa di Dongzhi","lt":"Dongdži festivalis","nan":"Tang-cheh","nl":"Winterfeest","ru":"Дунчжи","sv":"Dongjinal","th":"เทศกาลตังโจ่ย","ug":"قىشلىق كۈن توختاش كۈنى","uk":"Дунчжі", "pt": "Solstício de Inverno", "zh": "冬至"}},
         {type: "D", start: {mon: 12, d: 23, wkd: [2, 3]}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/macau/dongzhi"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
