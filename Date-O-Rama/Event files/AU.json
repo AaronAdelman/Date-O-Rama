@@ -65,7 +65,7 @@
         {type: "D", start: {mon: 11, wkd: [6], nth: 1}, titles: {"en": "National Jersey Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-jersey-day/"}, first: {era: 1, y: 2012}, notes: {"en": "Created by Sportsmart"}},
         {type: "D", start: {mon: 11, wkd: [6], nth: 3}, inherits: "Natl Agriculture Day", urls: {"en": "https://agday.org.au/"}},
         {type: "D", start: {mon: 12, d: 24}, titles: {"en": "Carols by Candlelight"}, urls: {"en": "https://carols.visionaustralia.org/"}, emoji: "🕯️", first: {era: 1, y: 1938}},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "Natl Leftovers Day", first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Natl Leftovers Day", first: {era: 1, y: 2009}, notes: {"en": "Created by Do Something"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en": "National Apology Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-apology-day/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en": "Library Lovers’ Day"}, urls: {"en": "https://www.nla.gov.au/stories/blog/library-lovers-day"}, notes: {"en": "National Library Lover’s Day"}, first: {era: 1, y: 2006}, emoji: "📚"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Harmony Day"}, urls: {"en": "https://www.daysoftheyear.com/days/harmony-day/"}, first: {era: 1, y: 1999}},
@@ -151,7 +151,7 @@
 
     ],
     templates: [
-        {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},
+        {template: "Proclamation Day", titles: {"af":"Proklamasiedag","en":"Proclamation Day","fr":"Proclamation Day","ru":"День провозглашения"}, type: "D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://publicholidays.com.au/proclamation-day/"}},
         {template: "Love Your Bookshop Day", type: "D", start: {mon: 10, wkd: [7], nth: 1}, titles: {"en": "Love Your Bookshop Day", "he": "יום אהבת חנויות ספרים"}, urls: {"en": "https://www.loveyourbookshop.com.au/"}, notes: {"en": "LYBD\nCreated by BookPeople"}, emoji: "📚"},
         {template: "Bandanna Day", type: "D", start: {mon: 10, wkd: [6], nth: -1}, titles: {"en": "Bandanna Day"}, notes: {"en": "National Bandana Day"}, first: {era: 1, y: 2014}, end: {era: 1, y: 2023}, urls: {"en": "https://www.bandannaday.org.au/"}, inherits: "*MedAwareness*"},
         {template: "Walk Safely to School Day", type: "D", start: {mon: 5, d: 10, thruD: 16, wkd: [6]}, titles: {"en": "Walk Safely to School Day"}, urls: {"en": "https://www.daysoftheyear.com/days/walk-safely-to-school-day/"}},

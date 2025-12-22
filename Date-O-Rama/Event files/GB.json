@@ -93,7 +93,7 @@
         {type: "D", start: {mon: 9, d: 29, thruD: 30, wkd: [2]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 11, wkd: [6], nth: 3}, titles: {"en": "Children in Need Day"}, urls: {"en": "https://www.bbcchildreninneed.co.uk/"}, notes: {"en": "BBC Children in Need Appeal\nB.B.C. Children in Need Appeal\nCreated by the BBC"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Twin With Your Dog Day"}, first: {era: 1, y: 2021}, urls: {"en": "https://leocharleyandme.co.uk/pages/twin-with-your-dog-day"}, emoji: "🐕", notes: {"en": "Created by Kim O’Donnell"}},
-        {type: "D", start: {mon: 12, d: 27}, inherits: "Natl Leftovers Day", first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 12, d: 27}, inherits: "Natl Leftovers Day", first: {era: 1, y: 2022}, notes: {"en": "Created by Aldi Scotland"}},
         {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Hogmanay"}, urls: {"en": "https://www.daysoftheyear.com/days/hogmanay/"}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "Nos Galan Road Races", first: {era: 1, y: 1958}, last: {era: 1, y: 1972}},
         {type: "D", start: {mon: 12, d: 31}, inherits: "Nos Galan Road Races", first: {era: 1, y: 1984}},

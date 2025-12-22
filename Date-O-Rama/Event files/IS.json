@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 4, d: 10}, inherits: "Engineer’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -49}, inherits: "Fastelavn"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Book Flood", first: {era: 1, y: 1945}},
+        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Book Flood", first: {era: 1, y: 1944}},
         
         {type: "D", start: {mon: 1, d: 20, thruD: 26, wkd: [6]}, inherits: "Thorrablot", first: {era: 1, y: 1873}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Seamen’s Day", "is": "Sjómannadagurinn"}, urls: {"en": "https://www.daysoftheyear.com/days/seamens-day/"}, notes: {"en": "Fishermen’s Day"}, first: {era: 1, y: 1930}, emoji: "🎣"},
