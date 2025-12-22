@@ -68,10 +68,10 @@ protocol ASACalendar {
     
     
     // MARK: - Getting Calendar Information
-    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? // The maximum range limits of the values that a given component can take on.
-    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? // Returns the minimum range limits of the values that a given component can take on.
-    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
-    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.    
+    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? // The maximum range limits of the values that a given component can take on.
+    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? // Returns the minimum range limits of the values that a given component can take on.
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.    
     
     
     // MARK: -
@@ -98,25 +98,25 @@ extension ASACalendar {
         return self.supportedTimeFormats.count > 1
     }
     
-    func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for date: Date) -> Int? {
-        let range = self.range(of: smallComponent, in: largeComponent, for: date)
+    func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
+        let range = self.range(of: smallComponent, in: largeComponent, for: date, locationData: locationData)
         let result = range?.count
         return result
     } // func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for now: Date) -> Int?
     
     // MARK: -
     
-    func daysInMonth(for date: Date) -> Int? {
-        return self.maximumValue(of: .day, in: .month, for: date)
+    func daysInMonth(for date: Date, locationData: ASALocation) -> Int? {
+        return self.maximumValue(of: .day, in: .month, for: date, locationData: locationData)
     } // func daysInMonth(for date: Date) -> Int?
     
     /// Not necessarily the same thing as the number of months in the year.
-    func lastMonthOfYear(for date: Date) -> Int? {
-        return self.maximumValue(of: .month, in: .year, for: date)
+    func lastMonthOfYear(for date: Date, locationData: ASALocation) -> Int? {
+        return self.maximumValue(of: .month, in: .year, for: date, locationData: locationData)
     } // func lastMonthOfYear(for date: Date) -> Int?
     
-    func daysInYear(for date: Date) -> Int? {
-        return self.maximumValue(of: .day, in: .year, for: date)
+    func daysInYear(for date: Date, locationData: ASALocation) -> Int? {
+        return self.maximumValue(of: .day, in: .year, for: date, locationData: locationData)
     } // func daysInYear(for date: Date) -> Int?
     
     // MARK: -
@@ -125,7 +125,7 @@ extension ASACalendar {
         let tempComponents = ASADateComponents(calendar: self, locationData: locationData, era: era, year: year, month: month, day: 1)
                 
         let tempDate = (self.date(dateComponents: tempComponents))!
-        let numberOfDaysInMonth = self.daysInMonth(for: tempDate)
+        let numberOfDaysInMonth = self.daysInMonth(for: tempDate, locationData: locationData)
         return numberOfDaysInMonth
     } // func daysInMonth(calendar: ASACalendar, locationData: ASALocation, era: Int, year: Int, month: Int) -> Int?
 } // extension ASACalendar

@@ -10,9 +10,14 @@ import Foundation
 import JulianDayNumber
 
 class ASABahaiCalendar: ASASolarTimeCalendar {
-    override func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
-        return ""
-    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String
+    let ldmlApplier = ASALDMLApplier()
+
+    override func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String {
+        
+        let dateString = ldmlApplier.dateString(ldmlCalendar: self, dateComponents: dateComponents, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
+
+        return dateString
+    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String
     
     // MARK: -
     
@@ -70,7 +75,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     
     let numberOfMonthsInYear = 20
     
-    override func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    override func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         switch component {
         case .era:
             let maxiumEra = self.maximumEra
@@ -115,9 +120,9 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    override func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    override func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         switch component {
         case .era:
             return Range(0...0)
@@ -150,17 +155,51 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+    override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
         return nil
-    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int?
     
-    override func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+    override func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>? {
         // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
-        return nil
-    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
+
+        let components = dateComponents([], from: fixedDate, locationData: locationData)
+        
+        switch larger {
+        case .year:
+            switch smaller {
+            case .month:
+                return Range(1...self.numberOfMonthsInYear)
+                
+            case .day:
+                guard let era = components.era else { return Range(-1 ... -1) }
+                guard let year = components.year else { return Range(-1 ... -1) }
+                let daysInYear = self.daysInYear(era: era, year: year)
+                return Range(1...daysInYear)
+                
+            default:
+                return nil
+            } // switch smaller
+            
+        case .month:
+            switch smaller {
+            case .day:
+                let month = components.month ?? -1
+                let year  = components.year ?? -1
+                let era   = components.era ?? -1
+                return Range(1...daysInMonth(era: era, year: year, month: month))
+                
+            default:
+                return nil
+            } // switch smaller
+            
+        default:
+            return nil
+        } // switch larger
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>?
     
     
     // MARK: -

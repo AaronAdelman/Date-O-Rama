@@ -124,7 +124,7 @@ extension ASACalendarCode {
 //                .hebrew,
                 .hebrewMA,
 //                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
-                .julian:
+                .julian, .bahaiSolarTime:
             return NSLocalizedString(self.rawValue, comment: "")
             
         case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:

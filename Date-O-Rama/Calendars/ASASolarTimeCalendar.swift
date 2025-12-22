@@ -37,7 +37,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             timeString = self.timeString(hours: solarHours, daytime: dateComponents.dayHalf == .day, valid: solarHours >= 0, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
         
-        let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
+        let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat, dateComponents: dateComponents)
         
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
@@ -227,23 +227,12 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     } // func hoursMinutesSecondsTimeString(hours: Double, symbol: String, localeIdentifier: String, minutesPerHour: Double, secondsPerMinutes: Double, minimumHourDigits: Int, minimumMinuteDigits: Int, minimumSecondDigits: Int) -> String
     
     // TODO: Point of expansion
-    func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
+    func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String {
         return ""
-    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String
+    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
-        let timeZone = locationData.timeZone
-        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
-        assert(fixedNow >= now)
-        
-        var timeString: String = ""
-        if timeFormat != .none {
-            let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
-            timeString = self.timeString(hours: hours, daytime: daytime, valid: valid, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
-        }
-        
-        let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
-        
+        let (dateString, timeString, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
         if dateString == "" {
             return timeString
         } else if timeString == "" {
@@ -367,28 +356,28 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     // MARK: - Getting Calendar Information
     
     // TODO: Point of expansion
-    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
        return nil
-    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
     // TODO: Point of expansion
-    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         return nil
-    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
     // TODO: Point of expansion
-    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
         return nil
-    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int?
     
     // TODO: Point of expansion
-    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>? {
         // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
         return nil
-    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>?
     
     
     // MARK: -

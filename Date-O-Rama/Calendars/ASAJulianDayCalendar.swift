@@ -173,33 +173,33 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     
     // MARK:  - Getting Calendar Information
-    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
         if component == .day {
             return Int.max..<Int.max
         } else {
             return nil
         }
-    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         if component == .day {
             return Int.min..<Int.min
         } else {
             return nil
         }
-    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
         return nil
-    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int?
     
-    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>? {
         // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
         return nil
-    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>?
 
     
     // MARK: -

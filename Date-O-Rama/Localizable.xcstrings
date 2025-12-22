@@ -923,7 +923,7 @@
         }
       }
     },
-    "badi" : {
+    "badi-s" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {

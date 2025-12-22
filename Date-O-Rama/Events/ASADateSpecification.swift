@@ -204,7 +204,7 @@ extension ASADateSpecification {
         switch type {
         case .oneYear, .multiYear:
             if isEndDate {
-                let numberOfMonthsInYear = calendar.lastMonthOfYear(for: baseDate)!
+                let numberOfMonthsInYear = calendar.lastMonthOfYear(for: baseDate, locationData: revisedDateComponents.locationData)!
                 let numberOfDaysInLastMonth = calendar.daysInMonth(locationData: revisedDateComponents.locationData, era: revisedDateComponents.era ?? 0, year: revisedDateComponents.year!, month: numberOfMonthsInYear)
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
@@ -223,7 +223,7 @@ extension ASADateSpecification {
             if isEndDate {
                 let dateComponentsForFirstDayOfMonth = ASADateComponents(calendar: calendar, locationData: dateComponents.locationData, era: self.era, year: self.year, yearForWeekOfYear: nil, quarter: nil, month: self.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
                 let dateOfFirstDayOfMonth = calendar.date(dateComponents: dateComponentsForFirstDayOfMonth)
-                let numberOfDaysInMonth = calendar.daysInMonth(for: dateOfFirstDayOfMonth!)!
+                let numberOfDaysInMonth = calendar.daysInMonth(for: dateOfFirstDayOfMonth!, locationData: dateComponents.locationData)!
                 revisedDateComponents.day   = numberOfDaysInMonth
             } else {
                 revisedDateComponents.day   =  1

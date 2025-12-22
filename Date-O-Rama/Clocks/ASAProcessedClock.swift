@@ -70,7 +70,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
         if clock.calendar.supports(calendarComponent: .month) {
-            self.daysInMonth = clock.calendar.daysInMonth(for: now) ?? 1
+            self.daysInMonth = clock.calendar.daysInMonth(for: now, locationData: location) ?? 1
             self.supportsMonths = true
         } else {
             self.daysInMonth = 1

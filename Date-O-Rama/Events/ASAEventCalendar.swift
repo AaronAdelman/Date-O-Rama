@@ -111,7 +111,7 @@ class ASAEventCalendar {
         if tweakedDateSpecification.day! < 0 {
             let tweakedDate = calendar.date(dateComponents: ASADateComponents(calendar: calendar, locationData: templateDateComponents.locationData, era: tweakedDateSpecification.era, year: tweakedDateSpecification.year, yearForWeekOfYear: nil, quarter: nil, month: tweakedDateSpecification.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil))
             if tweakedDate != nil {
-                let numberOfDaysInMonth = calendar.daysInMonth(for: tweakedDate!)!
+                let numberOfDaysInMonth = calendar.daysInMonth(for: tweakedDate!, locationData: templateDateComponents.locationData)!
                 tweakedDateSpecification.day = tweakedDateSpecification.day! + (numberOfDaysInMonth + 1)
                 
                 //            debugPrint(#file, #function, "📆 Date:", date, "🔴 Original date specification:", dateSpecification, "🟢 Tweaked date specification:", tweakedDateSpecification, "🗓 Calendar:", calendar, "Template date components:", templateDateComponents)
@@ -439,7 +439,7 @@ class ASAEventCalendar {
         if calendar is ASACalendarWithWeeks {
             let day = components.day!
             let daysPerWeek = (calendar as! any ASACalendarWithWeeks as ASACalendarWithWeeks).daysPerWeek
-            let daysInMonth = calendar.daysInMonth(for: date) ?? 1
+            let daysInMonth = calendar.daysInMonth(for: date, locationData: components.locationData) ?? 1
 
             let span = daysOf(fullWeek: tweakedStartDateSpecification.fullWeek!, day: day, weekday: components.weekday!, daysPerWeek: daysPerWeek, monthLength: daysInMonth, firstDayOfWeek: (tweakedStartDateSpecification.firstDayOfWeek ?? ASADateSpecification.defaultFirstDayOfWeek).rawValue)
             guard let (startDay, endDay) = span else { return MATCH_FAILURE }
@@ -597,7 +597,7 @@ class ASAEventCalendar {
     fileprivate func dayForFullWeek(calendar: any ASACalendar, locationData: ASALocation, dateEYMD: [Int?], descriptionMonth: Int, descriptionWeekDay: Int?, descriptionFullWeek: Int?, components: ASADateComponents, daysPerWeek: Int, descriptionFirstDayOfWeek: Int) -> Int {
         let newComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: dateEYMD[0], year: dateEYMD[1], month: descriptionMonth, day: 1)
         let newDate = newComponents.date
-        let numberOfDaysInMonth = calendar.daysInMonth(for: newDate!) ?? 1
+        let numberOfDaysInMonth = calendar.daysInMonth(for: newDate!, locationData: locationData) ?? 1
         let day = dayGiven(weekdayOfFullWeek: descriptionWeekDay ?? 0, fullWeek: descriptionFullWeek!, day: components.day ?? 0, weekday: components.weekday ?? 0, daysPerWeek: daysPerWeek, monthLength: numberOfDaysInMonth, firstDayOfWeek: descriptionFirstDayOfWeek)
         return day
     }
@@ -974,7 +974,7 @@ class ASAEventCalendar {
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfYear != nil {
-            let numberOfDaysInYear = calendar.daysInYear(for: date)!
+            let numberOfDaysInYear = calendar.daysInYear(for: date, locationData: components.locationData)!
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
             if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
                 return false
@@ -982,7 +982,7 @@ class ASAEventCalendar {
         }
         
         if dateSpecification.dayOfYear != nil {
-            let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+            let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date, locationData: components.locationData)
             if dayOfYear == nil {
                 return false
             }
@@ -1004,7 +1004,7 @@ class ASAEventCalendar {
     
     func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfMonth != nil {
-            let numberOfDaysInMonth = calendar.daysInMonth(for: date)!
+            let numberOfDaysInMonth = calendar.daysInMonth(for: date, locationData: components.locationData)!
           if !numberOfDaysInMonth.matches(values: dateSpecification.lengthsOfMonth) {
                 return false
             }
@@ -1162,7 +1162,7 @@ class ASAEventCalendar {
         }
         
         if dateSpecification.weekdayRecurrence != nil && dateSpecification.weekdays != nil {
-            let daysInMonth = calendar.daysInMonth(for: date) ?? 1
+            let daysInMonth = calendar.daysInMonth(for: date, locationData: components.locationData) ?? 1
 
             if calendar is ASACalendarWithWeeks {
                 let calendarSupportingWeeks = calendar as! ASACalendarWithWeeks

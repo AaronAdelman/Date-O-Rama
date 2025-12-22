@@ -49,14 +49,14 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
         } // switch self.calendarCode
     } // var dateTransition: ASASolarEvent
     
-    override func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
+    override func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String {
         self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: timeZone)
         
         self.dateFormatter.apply(dateFormat: dateFormat)
         
         let dateString = self.dateFormatter.string(from: fixedNow)
         return dateString
-    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String
+    } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String
     
     // MARK: -
     
@@ -102,35 +102,39 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
     
     // MARK: -
     
-    override func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    override func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
         let applesComponent = component.calendarComponent()
         if applesComponent == nil {
             return nil
         }
         return self.applesCalendar.maximumRange(of: applesComponent!)
-    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    override func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+    override func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         let applesComponent = component.calendarComponent()
         if applesComponent == nil {
             return nil
         }
         return self.applesCalendar.minimumRange(of: applesComponent!)
-    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
     
-    override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+    override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
+
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
         let applesSmaller = smaller.calendarComponent()
         let applesLarger  = larger.calendarComponent()
         if applesSmaller == nil || applesLarger == nil {
             return nil
         }
-        return self.applesCalendar.ordinality(of: applesSmaller!, in: applesLarger!, for: date)
-    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+        return self.applesCalendar.ordinality(of: applesSmaller!, in: applesLarger!, for: fixedDate)
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int?
     
-    override func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+    override func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>? {
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
+
         // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
         let applesSmaller = smaller.calendarComponent()
         let applesLarger  = larger.calendarComponent()
@@ -138,13 +142,13 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
             return nil
         }
         
-        var result = self.applesCalendar.range(of: applesSmaller!, in: applesLarger!, for: date)
+        var result = self.applesCalendar.range(of: applesSmaller!, in: applesLarger!, for: fixedDate)
         if result?.lowerBound == result?.upperBound {
             let upperBound = result?.upperBound ?? 1
             result = Range(uncheckedBounds: (1, upperBound))
         }
         return result
-    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>?
     
     
     // MARK: -

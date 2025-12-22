@@ -101,6 +101,7 @@ struct ASALocationWithClocksSectionView: View {
                 if index < locationWithClocks.clocks.count {
                     let clock = locationWithClocks.clocks[index]
                     let processedClock = processed[index]
+                    // TODO: Something weird going on here when adding a new clock
                     
 #if os(watchOS)
                     let shouldShowMiniCalendar = false
