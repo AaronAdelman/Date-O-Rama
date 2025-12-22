@@ -57,7 +57,7 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {type: "D", start: {mon: 7, d: 12}, titles: {"en": "Lawyer’s Day"}, urls: {"en": "https://nationaltoday.com/mexico-lawyers-day/"}, first: {era: 1, y: 1960}, emoji: "👨‍💼👩‍💼"},
-        {type: "D", start: {mon: 3, d: 12}, titles: {"en":"Aztec New Year","hy":"Ացտեկական նոր տարի","ru":"Ацтекский новый год","uz":"Atstek Yangi yili"}, urls: {"en": "https://nationaltoday.com/aztec-new-year/"}},
+        {type: "D", start: {mon: 3, d: 12}, titles: {"en":"Aztec New Year", "es": "Año Nuevo Azteca","hy":"Ացտեկական նոր տարի", "nah": "Yancuic Xīhuitl","ru":"Ацтекский новый год","uz":"Atstek Yangi yili"}, urls: {"en": "https://nationaltoday.com/aztec-new-year/"}, notes: {"es": "Año Nuevo Mexicano"}},
         {type: "D", start: {mon: 7, d: 1}, inherits: "Engineer’s Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 10, d: 31}, titles: {"es": "Día de las Brujas"}},
