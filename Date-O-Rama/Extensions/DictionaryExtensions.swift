@@ -12,7 +12,8 @@ extension Dictionary where Key == String, Value == String {
     func value(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
         // Attempt to get an appropriate localized string out of a dictionary where the keys are locale identifiers
         
-        let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
+//        let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
+        let userLocaleIdentifier = requestedLocaleIdentifier.effectiveIdentifier
         let firstAttempt = self[userLocaleIdentifier]
         if firstAttempt != nil {
             return firstAttempt

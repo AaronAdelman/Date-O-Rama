@@ -103,8 +103,9 @@ extension ASAEventsFile {
     }
     
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
-        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
-
+//        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+        let userLocaleIdentifier = localeIdentifier.effectiveIdentifier
+        
         let regionCode = autolocalizableRegionCode()
         if regionCode != nil {
             let locale = Locale(identifier: userLocaleIdentifier)

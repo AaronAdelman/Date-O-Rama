@@ -523,15 +523,15 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 extension ASAClock {
     public func dateStringTimeStringDateComponents(now: Date, location: ASALocation) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
         let properDateFormat = self.dateFormat
-        return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
+        return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
     }
     
     public func dateString(now:  Date, location: ASALocation) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: location)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: location)
     } // func dateTimeString(now:  Date) -> String
     
     public func dateTimeString(now:  Date, location: ASALocation) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: location)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: location)
     } // func dateTimeString(now:  Date) -> String
     
     func startOfDay(date:  Date, location: ASALocation) -> Date {

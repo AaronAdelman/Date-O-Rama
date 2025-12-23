@@ -1137,3 +1137,10 @@ extension String {
         return self.replacingOccurrences(of: "‘", with: "'").replacingOccurrences(of: "’", with: "'").replacingOccurrences(of: "“", with: "").replacingOccurrences(of: "”", with: "")
     }
 } // extension String
+
+extension String {
+    var effectiveIdentifier: String {
+        let userLocaleIdentifier = self == "" ? Locale.autoupdatingCurrent.identifier : self
+        return userLocaleIdentifier
+    }
+} // extension String

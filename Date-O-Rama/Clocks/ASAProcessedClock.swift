@@ -63,7 +63,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         
         self.daysPerWeek = clock.daysPerWeek
         
-        self.veryShortStandaloneWeekdaySymbols = clock.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier)
+        self.veryShortStandaloneWeekdaySymbols = clock.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier.effectiveIdentifier)
         
         self.weekendDays = clock.weekendDays(location: location)
         
@@ -122,14 +122,15 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.miniCalendarWeekdayItems = nil
             self.miniCalendarDayItems = nil
         }
-        let localeLanguage = {
-            let clockLocaleIdentifier = clock.localeIdentifier
-            if clockLocaleIdentifier == "" {
-                return Locale.current.language
-            }
-            
-            return Locale.Language(identifier: clockLocaleIdentifier)
-        }()
+//        let localeLanguage = {
+//            let clockLocaleIdentifier = clock.localeIdentifier
+//            if clockLocaleIdentifier == "" {
+//                return Locale.current.language
+//            }
+//            
+//            return Locale.Language(identifier: clockLocaleIdentifier)
+//        }()
+        let localeLanguage = Locale.Language(identifier: clock.localeIdentifier.effectiveIdentifier)
         self.characterDirection = localeLanguage.characterDirection
         
         self.calendarType = self.calendarCode.type

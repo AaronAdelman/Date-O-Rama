@@ -244,23 +244,23 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     } // func weekdaySymbols(localeIdentifier: String) -> Array<String>
     
     override func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.weekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.weekdaySymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func shortWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     override func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.weekdaySymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
+        return self.weekdaySymbols(localeIdentifier: localeIdentifier.effectiveIdentifier).firstCharacterOfEachElement
     } // func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     override func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return weekdaySymbols(localeIdentifier: localeIdentifier)
+        return weekdaySymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     override func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return shortWeekdaySymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     override func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return veryShortWeekdaySymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
         
     
@@ -343,23 +343,23 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     } // func monthSymbols(localeIdentifier: String) -> Array<String>
     
     override func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return monthSymbols(localeIdentifier: localeIdentifier)
+        return monthSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func shortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     override func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return monthSymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
+        return monthSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier).firstCharacterOfEachElement
     } // func veryShortMonthSymbols(localeIdentifier: String) -> Array<String>
     
     override func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return monthSymbols(localeIdentifier: localeIdentifier)
+        return monthSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func standaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     override func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return shortMonthSymbols(localeIdentifier: localeIdentifier)
+        return shortMonthSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     override func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+        return veryShortMonthSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String>
     
     
@@ -389,7 +389,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     } // func eraSymbols(localeIdentifier: String) -> Array<String>
     
     override func longEraSymbols(localeIdentifier: String) -> Array<String> {
-        return eraSymbols(localeIdentifier: localeIdentifier)
+        return eraSymbols(localeIdentifier: localeIdentifier.effectiveIdentifier)
     } // func longEraSymbols(localeIdentifier: String) -> Array<String>
     
     
