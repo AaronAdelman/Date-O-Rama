@@ -71,11 +71,11 @@ public class ASAUnknownCalendar: ASACalendar {
         return ASADateComponents(calendar: self, locationData: locationData)
     }
     
-    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         return nil
     }
     
-    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         return nil
     }
     

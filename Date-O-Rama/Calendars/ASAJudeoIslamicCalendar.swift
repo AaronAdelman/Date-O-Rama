@@ -102,23 +102,23 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
     
     // MARK: -
     
-    override func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    override func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
         let applesComponent = component.calendarComponent()
         if applesComponent == nil {
             return nil
         }
         return self.applesCalendar.maximumRange(of: applesComponent!)
-    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
-    override func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    override func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         let applesComponent = component.calendarComponent()
         if applesComponent == nil {
             return nil
         }
         return self.applesCalendar.minimumRange(of: applesComponent!)
-    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)

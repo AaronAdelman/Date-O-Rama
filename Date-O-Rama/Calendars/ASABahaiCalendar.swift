@@ -77,7 +77,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
     
     let numberOfMonthsInYear = 20
     
-    override func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    override func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
             let maxiumEra = self.maximumEra
@@ -122,9 +122,9 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
-    override func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    override func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
             return Range(0...0)
@@ -157,7 +157,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     override func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).

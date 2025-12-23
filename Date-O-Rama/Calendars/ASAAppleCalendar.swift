@@ -167,23 +167,23 @@ class ASAAppleCalendar: ASACalendar, ASACalendarWithWeeks, ASACalendarWithMonths
     
     // MARK: - Getting Calendar Information
     
-    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
             return nil
         }
         return self.ApplesCalendar.maximumRange(of: ApplesComponent!)
-    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
-    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
             return nil
         }
         return self.ApplesCalendar.minimumRange(of: ApplesComponent!)
-    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).

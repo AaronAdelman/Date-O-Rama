@@ -191,7 +191,7 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
     // TODO:  Override when implementing a new calendar.
     var maximumEra: Int { return 0 }
 
-    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
             let maxiumEra = self.maximumEra
@@ -236,9 +236,9 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
-    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         switch component {
         case .era:
             return Range(0...0)
@@ -271,7 +271,7 @@ public class ASABoothCalendar:  ASACalendar, ASALDMLCalendar {
         case .fractionalHour, .dayHalf, .calendar, .timeZone:
             return nil
         } // switch component
-    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
         return nil // TODO:  Fill in!

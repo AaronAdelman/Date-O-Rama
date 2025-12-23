@@ -356,16 +356,16 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     // MARK: - Getting Calendar Information
     
     // TODO: Point of expansion
-    func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
        return nil
-    } // func maximumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     // TODO: Point of expansion
-    func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>? {
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // Returns the minimum range limits of the values that a given component can take on.
         return nil
-    } // func minimumRange(of component: ASACalendarComponent, locationData: ASALocation) -> Range<Int>?
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
     
     // TODO: Point of expansion
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Int? {
