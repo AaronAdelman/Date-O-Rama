@@ -98,7 +98,7 @@ struct ASALocationWithClocksSectionView: View {
                 index
                 in
                 
-                if index < locationWithClocks.clocks.count {
+                if index < locationWithClocks.clocks.count && index < processed.count {
                     let clock = locationWithClocks.clocks[index]
                     let processedClock = processed[index]
                     // TODO: Something weird going on here when adding a new clock

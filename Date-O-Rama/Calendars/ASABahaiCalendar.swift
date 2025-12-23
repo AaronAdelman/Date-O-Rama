@@ -67,7 +67,9 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
 
         let bahaiComponents = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: BahaiCalendar.self)
 
-        return ASADateComponents(calendar: self, locationData: locationData, era: 0, year: bahaiComponents.year, month: bahaiComponents.month, weekday: gregorianComponents.weekday, day: bahaiComponents.day, hour: gregorianComponents.hour, minute: gregorianComponents.minute, second: gregorianComponents.second, nanosecond: gregorianComponents.nanosecond)
+        let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
+        
+        return ASADateComponents(calendar: self, locationData: locationData, era: 0, year: bahaiComponents.year, month: bahaiComponents.month, weekday: gregorianComponents.weekday, day: bahaiComponents.day, solarHours: timeComponents.fractionalHour, dayHalf: timeComponents.dayHalf)
     } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
     
