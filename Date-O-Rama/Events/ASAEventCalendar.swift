@@ -191,7 +191,7 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
-        switch startDateSpecification.MoonPhase {
+        switch startDateSpecification.moonPhase {
         case .firstFullMoon:
             if componentsDay < 30 {
                 return ASAMatchResult(matches: true, startDate: nil, endDate: nil, cycle: nil, dayInCycle: nil)
@@ -1204,9 +1204,9 @@ class ASAEventCalendar {
             }
         }
         
-        let MoonPhase = dateSpecification.MoonPhase
-        if MoonPhase != nil && MoonPhase! != .none {
-            let matchesAndStartAndEndDates = matchMoonPhase(type: MoonPhase!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateSpecification: dateSpecification, components: components)
+        let moonPhase = dateSpecification.moonPhase
+        if moonPhase != nil && moonPhase! != .none {
+            let matchesAndStartAndEndDates = matchMoonPhase(type: moonPhase!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateSpecification: dateSpecification, components: components)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
             } else {

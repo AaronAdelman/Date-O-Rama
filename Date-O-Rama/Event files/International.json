@@ -523,7 +523,6 @@
         {type: "D", start: {mon: 12, d: 22}, titles: {"en": "Merlinpeen"}, notes: {"en": "From 30 Rock"}},
         {type: "D", start: {mon: 12, d: 23}, titles: {"de":"Festivus","en":"Festivus","eo":"Festivus","es":"Festivus","fa":"فستیوس","fr":"Festivus","he":"פסטיבוס","id":"Festivus","it":"Festivus","ja":"フェスティバス","la":"Festivus","nb":"Festivus","pt":"Festivus","ru":"Фестивус","sh":"Festivus","sv":"Festivus","tr":"Festivus"}, urls: {"en": "https://festivusweb.com/"}, emoji: "👨‍🦲", first: {era: 1, y: 1997}, notes: {"en": "This observance was popularized by (but did not actually originate in) the situation comedy Seinfeld.\nCreated by Daniel O’Keefe Sr. and Dan O’Keefe"}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Decemberween"}, notes: {"en": "From Homestar Runner"}},
-        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Hogswatch"}, notes: {"en": "From Discworld"}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Holiday Number 11"}, notes: {"en": "From Quark"}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Refrigerator Day"}, notes: {"en": "From Dinosaurs"}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Smekday"}, notes: {"en": "From The True Meaning of Smekday"}},

@@ -92,7 +92,7 @@
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "National “Kiss the Cook” Day"}, urls: {"en": "https://www.checkiday.com/4eaafbcb68c16a1648b3576806c49ec9/national-kiss-the-cook-day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 12, d: 25}, titles: {"en": "National Pumpkin Pie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pumpkin-pie-day/"}, emoji: "🥧", notes: {"en": "Pumpkin Pie Day"}},
         {type: "D", start: {mon: 12, d: 26}, titles: {"en": "National Candy Cane Day"}, urls: {"en": "https://www.daysoftheyear.com/days/candy-cane-day/"}},
-        {type: "D", start: {mon: 12, d: 26}, titles: {"en": "National Thank You Note Day"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-note-day/"}, notes: {"en": "Thank You Note Day"}},
+        {type: "D", start: {mon: 12, d: 26}, titles: {"en": "National Thank You Note Day"}, urls: {"en": "https://www.daysoftheyear.com/days/thank-you-note-day/"}, notes: {"en": "Thank You Note Day\nNational Thank-You Note Day"}},
         {type: "D", start: {mon: 12, d: 27}, titles: {"en": "Make Cut-Out Snowflakes Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-cut-out-snowflakes-day/"}, emoji: "❄️"},
         {type: "D", start: {mon: 12, d: 27}, titles: {"en": "National Fruitcake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/fruitcake-day/"}, notes: {"en": "Fruitcake Day"}, emoji: "🍰"},
         {type: "D", start: {mon: 12, d: 28}, titles: {"en": "Good Riddance Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Good_Riddance_Day"}, first: {era: 1, y: 2007}},

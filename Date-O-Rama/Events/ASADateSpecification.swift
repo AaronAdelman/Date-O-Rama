@@ -82,7 +82,7 @@ struct ASADateSpecification:  Codable {
     var timeChange: ASATimeChangeType?
     
     // For Moon phase events
-    var MoonPhase: ASAMoonPhaseType?
+    var moonPhase: ASAMoonPhaseType?
     
     // For repeating events
     var recurrenceDays: Int?
@@ -118,7 +118,7 @@ struct ASADateSpecification:  Codable {
         case offsetDays          = "offsetD"
         case equinoxOrSolstice
         case timeChange
-        case MoonPhase           = "zmoPhase"
+        case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
         case fullWeek            = "fullWk"
