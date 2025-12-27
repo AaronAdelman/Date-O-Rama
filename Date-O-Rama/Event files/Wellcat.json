@@ -15,7 +15,7 @@
             {type: "D", start: {mon: 12, d: 15}, titles: {"en": "Cat Herders’ Day"}, notes: {"en": "National Cat Herders Day\nCat Herders Day"}},
             {type: "D", start: {mon: 12, d: 16}, inherits: "Barbie and Barney Backlash Day"},
             {type: "D", start: {mon: 12, d: 21}, inherits: "Humbug Day"},
-            {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Tick Tock Day", "he": "יום הטיק טק"}},
+            {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Tick Tock Day", "he": "יום הטיק טק"}, notes: {"en": "Still Need To Do Day"}},
             {type: "D", start: {mon: 12, d: 30}, inherits: "Falling Needles Family Fest"},
             {type: "D", start: {mon: 1, d: 2}, inherits: "Happy Mew Year For Cats Day"},
             {type: "D", start: {mon: 1, d: 3}, titles: {"en": "Memento Mori"}},
