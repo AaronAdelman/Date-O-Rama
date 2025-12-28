@@ -8,7 +8,7 @@
     first: {era: 1, y: 1956},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     events: [
-        {inherits: "Natl Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1956}, urls: {"en": "https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en": "Independence Day"}},
+        {inherits: "Natl Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1956}, urls: {"en": "https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en": "Independence Day\nSudanese Independence Day\nSudan Independence Day"}},
         {inherits: "Revolution Day", type: "D", start: {mon: 12, d: 19}, first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 

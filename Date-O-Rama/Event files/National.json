@@ -34,7 +34,8 @@
         {type: "D", start: {era: 1, y: 2024, mon: 3, d: 9}, inherits: "Georgia Beer Day"},
         {type: "D", start: {era: 1, y: 2024, mon: 8, d: 5}, inherits: "Start-Up Day Across America"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Mummer’s Parade"}, notes: {"en": "Mummers Parade\nThe Mummers\nCreated by the City of Philadelphia"}, urls: {"en": "https://www.daysoftheyear.com/days/mummers-parade/"}, first: {era: 1, y: 1901}},
-        {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Rose Bowl Game"}, urls: {"en": "https://www.daysoftheyear.com/days/rose-bowl-game/"}, first: {era: 1, y: 1902}},
+        {type: "D", start: {mon: 1, d: 1, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Rose Bowl Game", first: {era: 1, y: 1902}},
+        {type: "D", start: {mon: 1, d: 3, wkd: [2]}, inherits: "Rose Bowl Game", first: {era: 1, y: 1902}},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Bittersweet Chocolate Day", "he": "יום השוקולד המריר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-day/"}, inherits: "*Chocolate*"},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Cut Your Energy Costs Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cut-your-energy-costs-day/"}},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Houseplant Appreciation Day"}, notes: {"en": "Houseplant Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/houseplant-appreciation-day/"}, emoji: "🌱", first: {era: 1, y: 2012}},
@@ -2534,5 +2535,6 @@
         {template: "See You at the Pole", type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "See You at the Pole"}, urls: {"en": "https://syatp.com/"}},
         {template: "Natl Sons Day", type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Sons Day"}, emoji: "👦"},
         {template: "Love Your Body Day", type: "D", start: {era: 1, y: 1998, mon: 10, d: 25}, titles: {"en": "Love Your Body Day"}, urls: {"en": "https://www.checkiday.com/6c9cba32d25fdcc212e9c70bf434e16b/love-your-body-day"}, notes: {"en": "Created by the National Organization for Women (NOW) Foundation"}},
+        {template: "Rose Bowl Game", type: "D", start: {mon: 1, d: 1}, titles: {"de":"Rose Bowl","en":"Rose Bowl Game","es":"Rose Bowl","fi":"Rose Bowl","fr":"Rose Bowl Game","it":"Rose Bowl Game","ja":"ローズボウル","ko":"로즈볼","pl":"Rose Bowl Game","ru":"Роуз Боул","sv":"Rose Bowl","zh":"玫瑰碗"}, urls: {"en": "https://rosebowlgame.com/"}, emoji: "🏈", notes: {"en": "Created by the City of Pasadena"}},
     ]
 }

@@ -7,8 +7,8 @@
     first: {era: 1, y: 1868},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cuba"},
     events: [
-        {inherits: "Liberation Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, titles: {"en": "Triumph of the Revolution"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
-        {inherits: "Victory Day", type: "D", start: {mon: 1, d: 2}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "Liberation Day", first: {era: 1, y: 1959}, titles: {"en":"Triumph of the Revolution", "es": "Triunfo de la Revolución","it":"Trionfo della Rivoluzione","ru":"Триумф революции","uk":"Тріумф революції","uz":"Inqilob gʻalabasi","vi":"Cách mạng Thắng lợi","zh":"革命胜利"}, urls: {"en": "https://www.daysoftheyear.com/days/triumph-of-the-revolution/"}},
+        {type: "D", start: {mon: 1, d: 2}, inherits: "Victory Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Intl Workers’ Day"},
