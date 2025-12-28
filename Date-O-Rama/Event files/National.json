@@ -33,7 +33,7 @@
         {type: "D", start: {era: 1, y: 2023, mon: 8, d: 1}, inherits: "Start-Up Day Across America"},
         {type: "D", start: {era: 1, y: 2024, mon: 3, d: 9}, inherits: "Georgia Beer Day"},
         {type: "D", start: {era: 1, y: 2024, mon: 8, d: 5}, inherits: "Start-Up Day Across America"},
-        {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Mummer’s Parade"}, notes: {"en": "The Mummers"}, urls: {"en": "https://www.daysoftheyear.com/days/mummers-parade/"}, first: {era: 1, y: 1901}},
+        {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Mummer’s Parade"}, notes: {"en": "Mummers Parade\nThe Mummers\nCreated by the City of Philadelphia"}, urls: {"en": "https://www.daysoftheyear.com/days/mummers-parade/"}, first: {era: 1, y: 1901}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Rose Bowl Game"}, urls: {"en": "https://www.daysoftheyear.com/days/rose-bowl-game/"}, first: {era: 1, y: 1902}},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Bittersweet Chocolate Day", "he": "יום השוקולד המריר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/bittersweet-chocolate-day/"}, inherits: "*Chocolate*"},
         {type: "D", start: {mon: 1, d: 10}, titles: {"en": "National Cut Your Energy Costs Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cut-your-energy-costs-day/"}},
