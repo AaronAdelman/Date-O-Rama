@@ -36,7 +36,7 @@
         {type: "M", start: {mon: 1}, titles: {"en": "International Brainteaser Month"}, urls: {"en": "https://www.daysoftheyear.com/days/brainteaser-month/"}, notes: {"en": "International Brain Teaser Month"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Bread Machine Baking Month"}, urls: {"en": "https://www.daysoftheyear.com/days/bread-machine-baking-month/"}, emoji: "🍞"},
         {type: "M", start: {mon: 1}, titles: {"en": "Celebration of Life Month"}, urls: {"en": "https://www.daysoftheyear.com/days/celebration-of-life-month/"}, emoji: "🥂"},
-        {type: "M", start: {mon: 1}, urls: {"en": "https://www.daysoftheyear.com/days/creativity-month/"}, titles: {"en": "International Creativity Month"}, emoji: "💭👓"},
+        {type: "M", start: {mon: 1}, titles: {"en": "International Creativity Month"}, urls: {"en": "https://www.daysoftheyear.com/days/creativity-month/"}, emoji: "💭👓"},
         {type: "M", start: {mon: 1}, titles: {"en": "Get Organized Month"}, urls: {"en": "https://www.daysoftheyear.com/days/get-organized-month/"}, first: {era: 1, y: 2005}},
         {type: "M", start: {mon: 1}, titles: {"en": "Ginuary"}, urls: {"en": "https://www.daysoftheyear.com/days/ginuary/"}, emoji: "🍸🍋", first: {era: 1, y: 2012}, notes: {"en": "Created by Miss Ginuary"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Manuary"}, urls: {"en": "https://www.daysoftheyear.com/days/manuary/"}, first: {era: 1, y: 2010}, emoji: "🧔‍♂️"},
