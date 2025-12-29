@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {red: 0.44, green: 0.53, blue: 0.62},
     events: [
-        {type: "D", start: {mon: 1, d: 3}, titles: {"en": "International Mind-Body Wellness Day"}, urls: {"en": "https://nationaltoday.com/international-mind-body-wellness-day/"}},
+        {type: "D", start: {mon: 1, d: 3}, titles: {"en": "International Mind-Body Wellness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-mind-body-wellness-day/"}},
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "World Gratitude Day", "he": "יום הכרת תודה העולמי"}, urls: {"en": "https://www.srichinmoy.org/service/united_nations/world-gratitude-day"}, first: {era: 1, y: 1966}, notes: {"en": "Created by Edna Fuerth Lemle"}},
     ]
 }

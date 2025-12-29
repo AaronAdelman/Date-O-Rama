@@ -34,7 +34,7 @@
         {type: "M", start: {mon: 1}, titles: {"en": "Apple and Apricot Month"}, urls: {"en": "https://www.daysoftheyear.com/days/apple-and-apricot-month/"}, emoji: "🍎"},
         {type: "M", start: {mon: 1}, titles: {"en": "International Brainteaser Month"}, urls: {"en": "https://www.daysoftheyear.com/days/brainteaser-month/"}, notes: {"en": "International Brain Teaser Month"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Bread Machine Baking Month"}, urls: {"en": "https://www.daysoftheyear.com/days/bread-machine-baking-month/"}, emoji: "🍞"},
-        {type: "M", start: {mon: 1}, titles: {"en": "International Creativity Month"}, urls: {"en": "https://www.daysoftheyear.com/days/creativity-month/"}, emoji: "💭👓", notes: {"Created by Randall Munson"}},
+        {type: "M", start: {mon: 1}, titles: {"en": "International Creativity Month"}, urls: {"en": "https://www.daysoftheyear.com/days/creativity-month/"}, emoji: "💭👓", notes: {"en": "Created by Randall Munson"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Get Organized Month"}, urls: {"en": "https://www.napo.net/page/GOmonth"}, first: {era: 1, y: 2005}, notes: {"en": "Created by the National Association of Productivity & Organizing Professionals (NAPO)"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Ginuary"}, urls: {"en": "https://www.daysoftheyear.com/days/ginuary/"}, emoji: "🍸🍋", first: {era: 1, y: 2012}, notes: {"en": "Created by Miss Ginuary"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Manuary"}, urls: {"en": "https://www.daysoftheyear.com/days/manuary/"}, first: {era: 1, y: 2010}, emoji: "🧔‍♂️"},

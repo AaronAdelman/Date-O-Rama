@@ -1,0 +1,12 @@
+{
+titles: {"en": "Bob Matthews"},
+defaultLocale: "en",
+calendarCode: "gre",
+calendarColor: {red: 0.5, green: 0.28, blue: 0.56},
+first: {era: 1, y: 2015},
+events: [
+{type: "D", start: {mon: 1, d: 2}, titles: {"en": "Stop Spam Day"}, notes: {"en": "International Stop Spam Day"}, urls: {"en": "https://www.daysoftheyear.com/days/stop-spam-day/"}, emoji: "📚", first: {era: 1, y: 2020}, notes: {"en": "Created by Bob Matthews of Holiday Insights"}},
+{type: "D", start: {mon: 6, d: 14}, titles: {"en": "Monkey Around Day"}, urls: {"en": "https://www.daysoftheyear.com/days/monkey-around-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by Bob Matthews"}},
+{type: "D", start: {mon: 12, d: 14}, inherits: "Roast Chestnuts Day", first: {era: 1, y: 2015}},
+]
+}
