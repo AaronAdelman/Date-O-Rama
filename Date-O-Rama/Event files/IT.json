@@ -74,7 +74,7 @@
 
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "Engineer’s Day"},
-        {inherits: "World Children’s Day", type: "D", start: {mon: 11, d: 20}, first: {era: 1, y: 1997}},
+        {type: "D", start: {mon: 11, d: 20}, inherits: "World Children’s Day", first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 6, d: 10}, inherits: "Navy Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-dante-day/"}, titles: {"en": "National Dante Day"}, first: {era: 1, y: 2020}},
