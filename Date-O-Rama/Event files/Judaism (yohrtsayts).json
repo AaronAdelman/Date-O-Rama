@@ -67,7 +67,7 @@
         {titles: {"he": "יום־שנה של ר׳ חיים שמואלביץ"}, type: "D", start: {mon: 4, d: 3}, first: {era: 0, y: 5739}, inherits: "*DeathAnniv*"},
         {inherits: "יום־שנה של עזרא הסופר ונחמיה בן חכליה", type: "D", start: {mon: 4, d: 9}, first: {era: 0, y: 1111}},
         {titles: {"he": "יום־שנה של ר׳ נתן מברסלב"}, type: "D", start: {mon: 4, d: 10}, first: {era: 0, y: 5505}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של יום הקדיש הכללי"}, type: "D", start: {mon: 4, d: 10}, first: {era: 0, y: 5711}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום הקדיש הכללי"}, type: "D", start: {mon: 4, d: 10}, first: {era: 0, y: 5711}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של המגיד מדובנה"}, type: "D", start: {mon: 4, d: 17}, first: {era: 0, y: 5565}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי משה כלפון הכהן"}, type: "D", start: {mon: 4, d: 18}, first: {era: 0, y: 5710}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של קצות החושן"}, type: "D", start: {mon: 4, d: 19}, first: {era: 0, y: 5573}, inherits: "*DeathAnniv*"},
