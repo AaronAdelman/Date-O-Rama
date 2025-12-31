@@ -108,8 +108,8 @@
         {inherits: "Boxing Day", type: "D", start: {"mon": 12, d: 26}},
         {inherits: "Synaxis of the Mother of God", type: "D", start: {"mon": 12, d: 26}},
         {inherits: "St. Stephen’s Day", type: "D", start: {"mon": 12, d: 26}},
-        {inherits: "New Year’s Eve", type: "D", start: {"mon": 12, d: 31}},
-        {titles: {"en": "Malanka"}, notes: {"en": "Bounteous Evening"}, type: "D", start: {"mon": 12, d: 31}},
+        {type: "D", start: {"mon": 12, d: 31}, inherits: "New Year’s Eve"},
+        {type: "D", start: {"mon": 12, d: 31}, titles: {"be":"Шчодры вечар","be-tarask":"Шчодры вечар","en":"Malanka","fr":"Malanka","hy":"Մալանիա","ml":"മലങ്ക","ru":"Маланья","sl":"Malanka","sr":"Маланка","tl":"Malanka","uk":"Маланка"}, notes: {"en": "Bounteous Evening"}},
 
         {titles: {"en": "Victory Day in the Battles of Voznesensk"}, type: "D", start: {"mon": 3, d: 13}, first: {era: 1, y: 2023}},
         {titles: {"en": "Victory Day in the Battle of Okhtyrka"}, type: "D", start: {"mon": 3, d: 26}, first: {era: 1, y: 2023}},
