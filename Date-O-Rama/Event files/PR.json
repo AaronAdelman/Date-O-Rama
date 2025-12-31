@@ -38,7 +38,7 @@
         {titles: {"en": "Birthday of Dr. José Celso Barbosa", "es": "Natalicio de Dr. José Celso Barbosa"}, type: "D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, urls: {"en": "https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en": "Day of Illustrious Puerto Ricans"}},
 
-        {type: "D", start: {mon: 1, d: 5}, inherits: "Epiphany Eve"},
+        {type: "D", start: {mon: 1, d: 5}, inherits: "12th Night"},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},

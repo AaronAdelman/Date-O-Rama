@@ -16,7 +16,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {mon: 6, d: 9}, urls: {"en": "https://en.wikipedia.org/wiki/%C3%85land%2527s_Autonomy_Day"}, titles: {"en": "Autonomy Day", "sv": "Självstyrelsedagen"}},
         {inherits: "Midsummer Eve", type: "D", start: {mon: 6, d: 19, thruD: 25, wkd: [6]}},
-        {inherits: "Midsummer Day", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}},
+        {inherits: "Midsummer", type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}},
         {inherits: "All Saints Day", type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
         {inherits: "Independence Day", type: "D", start: {mon: 12, d: 6}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},

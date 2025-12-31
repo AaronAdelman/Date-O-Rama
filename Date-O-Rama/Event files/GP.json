@@ -11,7 +11,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -48}, urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/carnival-monday"}, inherits: "Carnival Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Shrove Tuesday", urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/carnival-tuesday"}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
-        {type: "D", start: {Easter: "Easter", offsetD: -31}, urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/mid-lent"}, inherits: "Mid-Lent"},
+        {type: "D", start: {Easter: "Easter", offsetD: -31}, inherits: "Mid-Lent", urls: {"en": "https://www.officeholidays.com/holidays/guadeloupe/mid-lent"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

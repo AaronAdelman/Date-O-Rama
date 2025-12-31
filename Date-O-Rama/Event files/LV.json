@@ -21,7 +21,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {era: 1, y: 2023, mon: 5, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, titles: {"en": "Day of the Bronze Medal Win"}, emoji: "🥉"},
         {type: "D", start: {mon: 6, d: 23}, inherits: "Midsummer Eve", urls: {"en": "https://www.officeholidays.com/holidays/latvia/midsummer-eve"}},
-        {type: "D", start: {mon: 6, d: 24}, inherits: "Midsummer Day", urls: {"en": "https://nationaltoday.com/jani/"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 6, d: 24}, inherits: "Midsummer", urls: {"en": "https://nationaltoday.com/jani/"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en": "Proclamation Day of the Republic of Latvia", "lv": "Latvijas Republikas proklamēšanas diena"}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
         {titles: {"en": "Proclamation Day of the Republic of Latvia (in lieu)"}, type: "D", start: {mon: 11, d: 19, wkd: [1, 6]}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},

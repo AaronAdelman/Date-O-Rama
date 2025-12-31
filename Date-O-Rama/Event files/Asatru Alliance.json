@@ -31,7 +31,7 @@
             {type: "D", start: {mon: 6, d: 8}, titles: {"en": "Lindisfarne Day"}},
             {type: "D", start: {mon: 6, d: 9}, titles: {"en": "Day of Remembrance for Sigurd the Volsung"}, inherits: "*Remembrance*"},
             {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Asatru Alliance Founding Day"}},
-            {type: "D", start: {mon: 6, d: 21}, titles: {"en": "Midsummer"}},
+            {type: "D", start: {mon: 6, d: 21}, inherits: "Midsummer"},
             
             {type: "D", start: {mon: 7, d: 4}, titles: {"en": "Founder’s Day"}},
             {type: "D", start: {mon: 7, d: 9}, titles: {"en": "Day of Remembrance for Unn the Deep Minded"}, inherits: "*Remembrance*"},
@@ -54,7 +54,7 @@
             {type: "D", start: {mon: 12, d: 9}, titles: {"en": "Day of Remembrance for Egil Skallagrimsson"}, inherits: "*Remembrance*"},
             {type: "D", start: {mon: 12, d: 21}, titles: {"en": "Mother Night"}},
             {type: "D", start: {mon: 12, d: 22}, inherits: "Yule", notes: {"en": "High Feast of Yule"}},
-            {type: "D", start: {mon: 12, d: 31}, titles: {"en": "Twelfth Night"}},
+            {type: "D", start: {mon: 12, d: 31}, inherits: "12th Night"},
         ]},
     ]
 }
