@@ -6,7 +6,7 @@
     first: {era: 1, y: 1945},
     urls: {"en": "https://en.wikipedia.org/wiki/Outline_of_the_United_Nations#United_Nations_observances"},
     events: [
-        {titles: {"en":"International Decade of Indigenous Languages","es":"Decenio Internacional de las Lenguas Indígenas","eu":"Hizkuntza Indigenen Nazioarteko Hamarkada","hi":"स्वदेशी भाषाओं का अंतर्राष्ट्रीय दशक","nb":"FNs tiår for urfolksspråk","pt":"Década Internacional das Línguas Indígenas","se":"ON eamiálbmotgielaid logijahki","xh":"Ishumi leminyaka leHlabathi leeLwimi zesiNtu"}, type: "nY", start: {era: 1, y: 2022}, end: {era: 1, y: 2032}, notes: {"en": "Indigenous Languages Decade"}},
+        {type: "nY", start: {era: 1, y: 2022}, end: {era: 1, y: 2032}, titles: {"en":"International Decade of Indigenous Languages","es":"Decenio Internacional de las Lenguas Indígenas","eu":"Hizkuntza Indigenen Nazioarteko Hamarkada","hi":"स्वदेशी भाषाओं का अंतर्राष्ट्रीय दशक","nb":"FNs tiår for urfolksspråk","pt":"Década Internacional das Línguas Indígenas","se":"ON eamiálbmotgielaid logijahki","xh":"Ishumi leminyaka leHlabathi leeLwimi zesiNtu"}, notes: {"en": "Indigenous Languages Decade"}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", end: {era: 1, y: 2030}},
         {titles: {"en": "United Nations Decade of Healthy Ageing"}, emoji: "👴👵", type: "nY", start: {era: 1, y: 2021}, end: {era: 1, y: 2030}},
         {titles: {"cs":"Dekáda OSN pro obnovu ekosystému","en":"UN Decade on Ecosystem Restoration","es":"Decenio de las Naciones Unidas para la Restauración de los Ecosistemas","fr":"Décennie des Nations unies pour la restauration des écosystèmes"}, notes: {"en": "United Nations Decade on Ecosystem Restoration"}, emoji: "🌱", type: "nY", start: {era: 1, y: 2021}, end: {era: 1, y: 2030}},
@@ -57,11 +57,21 @@
         {titles: {"en": "Disarmament Decade"}, type: "nY", start: {era: 1, y: 1970}, end: {era: 1, y: 1979}},
         {titles: {"en": "United Nations Development Decade"}, type: "nY", start: {era: 1, y: 1960}, end: {era: 1, y: 1970}},
         
-        {titles: {"en": "International Year of Camelids"}, type: "Y", start: {era: 1, y: 2024}, emoji: "🐪"},
+        {type: "Y", start: {era: 1, y: 2029}, titles: {"ar": "السنة الدولية للتوعية بالكويكبات وللدفاع الكوكبي", "en": "International Year of Asteroid Awareness and Planetary Defence", "es": "Año Internacional de la Concienciación sobre los Asteroides y de la Defensa Planetaria", "fr": "Année internationale de la sensibilisation aux astéroïdes et de la défense planétaire", "ru": "Международный год информирования об астероидах и планетарной защиты", "zh": "认识小行星和行星防御国际年"}, emoji: "🌎☄️"},
+        {type: "Y", start: {era: 1, y: 2027}, titles: {"en": "International Year of Legal Literacy"}, emoji: "👩‍⚖️👨‍⚖️"},
+        {type: "Y", start: {era: 1, y: 2027}, titles: {"en": "International Year of Sustainable and Resilient Tourism"}},
+        {type: "Y", start: {era: 1, y: 2026}, titles: {"ar": "السنة الدولية للمزارعات", "en": "International Year of the Woman Farmer", "es": "Año Internacional de la Agricultora", "fr": "Année internationale des agricultrices", "ru": "Международный год женщин-фермеров", "zh": "国际女农民年"}, notes: {"en": "IYWF"}, emoji: "👩‍🌾"},
+        {type: "Y", start: {era: 1, y: 2026}, titles: {"en": "International Year of Volunteers for Sustainable Development"}, notes: {"en": "International Volunteer Year\nIVY"}},
+        {type: "Y", start: {era: 1, y: 2026}, titles: {"ar": "السنة الدولية للمراعي ورعاة الماشية", "en": "International Year of Rangelands and Pastoralists", "es": "Año Internacional de los Pastizales y los Pastores", "fr": "Année internationale des parcours et des éleveurs pastoraux", "ru": "Международным годом пастбищных земель и пастбищных животноводов", "zh": "国际牧场和牧民年"}, notes: {"en": "IYRP", "ru": "МГПЗПЖ"}},
+        {type: "Y", start: {era: 1, y: 2025}, titles: {"en": "International Year of Quantum Science and Technology"}},
+        {type: "Y", start: {era: 1, y: 2025}, titles: {"en": "International Year Of Cooperatives"}},
+        {type: "Y", start: {era: 1, y: 2025}, titles: {"en": "International Year of Glaciers’ Preservation", "es": "Año Internacional de la Conservación de los Glaciares", "fr": "Année internationale de la préservation des glaciers", "zh": "国际冰川保护年"}},
+        {type: "Y", start: {era: 1, y: 2025}, inherits: "International Year of Peace and Trust"},
+        {type: "Y", start: {era: 1, y: 2024}, titles: {"en": "International Year of Camelids"}, emoji: "🐪"},
         {titles: {"en": "International Year of Millets"}, type: "Y", start: {era: 1, y: 2023}, emoji: "⿉"},
         {titles: {"en": "International Year of Glass"}, type: "Y", start: {era: 1, y: 2022}, emoji: "🥃"},
         {titles: {"en": "International Year of Artisanal Fisheries and Aquaculture"}, type: "Y", start: {era: 1, y: 2022}, emoji: "🐟"},
-        {titles: {"en": "International Year of Peace and Trust"}, type: "Y", start: {era: 1, y: 2021}, emoji: "☮️"},
+        {type: "Y", start: {era: 1, y: 2021}, inherits: "International Year of Peace and Trust"},
         {titles: {"en": "International Year of Creative Economy for Sustainable Development"}, type: "Y", start: {era: 1, y: 2021}, emoji: "💰"},
         {titles: {"en": "International Year of Fruits and Vegetables"}, type: "Y", start: {era: 1, y: 2021}, emoji: "🍅"},
         {titles: {"en": "International Year for the Elimination of Child Labour"}, type: "Y", start: {era: 1, y: 2021}},
@@ -142,5 +152,8 @@
         {titles: {"en": "International Co-operation Year"}, type: "Y", start: {era: 1, y: 1965}},
         {titles: {"en": "International Health and Medical Research Year"}, type: "Y", start: {era: 1, y: 1961}, emoji: "⚕️"},
         {titles: {"en": "World Refugee Year"}, type: "D", start: {era: 1, y: 1959, mon: 6, d: 1}, end: {era: 1, y: 1960, mon: 5, d: 31}},
+    ],
+    templates: [
+        {template: "International Year of Peace and Trust", type: "Y", start: {era: 1, y: 2025}, titles: {"en": "International Year of Peace and Trust", "es": "Año Internacional de la Paz y la Confianza", "fr": "Année internationale de la paix et de la confiance"}, emoji: "☮️"},
     ]
 }
