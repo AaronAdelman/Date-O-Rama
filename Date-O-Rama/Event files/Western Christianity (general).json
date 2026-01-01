@@ -5,7 +5,8 @@
     calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)\nSt. Basil’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/saint-basils-day/"}},
+        {type: "D", start: {mon: 1, d: 2}, titles: {"en": "Feast of St. Gregory Nazianzen"}, notes: {"en": "Christmastide (day 9)"}},
+        {type: "D", start: {mon: 1, d: 2}, inherits: "St. Basil’s Day", notes: {"en": "Christmastide (day 9)\nFeast of St. Basil the Great"}},
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "Feast of the Holy Name of Jesus"}, notes: {"en": "Christmastide (day 10)"}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {type: "D", start: {mon: 1, d: 4}, titles: {"en": "Feast of St. Elizabeth Ann Seton"}, notes: {"en": "Christmastide (day 11)"}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {type: "D", start: {mon: 1, d: 5}, inherits: "12th Night"},

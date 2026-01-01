@@ -72,5 +72,6 @@
         {inherits: "St. Maroun Day", type: "D", start: {mon: 2, d: 14}},
         {inherits: "St. Vladimir", type: "D", start: {mon: 7, d: 15}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "St. Basil’s Day", notes: {"en": "Christmastide (day 8)\nFeast of St. Basil the Great"}},
     ]
 }
