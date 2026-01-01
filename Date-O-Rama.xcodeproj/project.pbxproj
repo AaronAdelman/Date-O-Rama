@@ -608,6 +608,8 @@
 		A5BDE7A12667B66800F47416 /* IL.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE79F2667B66800F47416 /* IL.json */; };
 		A5BDE7AF2667FBFE00F47416 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
 		A5BDE7B02667FBFE00F47416 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
+		A5C175032F06A95000FE601D /* Discworld.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C175022F06A95000FE601D /* Discworld.json */; };
+		A5C175042F06A95000FE601D /* Discworld.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C175022F06A95000FE601D /* Discworld.json */; };
 		A5C2347B2ECE1B7800C79C9D /* ASAGlassSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2347A2ECE1B7800C79C9D /* ASAGlassSymbol.swift */; };
 		A5C2347C2ECE1B7800C79C9D /* ASAGlassSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2347A2ECE1B7800C79C9D /* ASAGlassSymbol.swift */; };
 		A5C2347E2ECE210D00C79C9D /* ASAOKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2347D2ECE210D00C79C9D /* ASAOKButton.swift */; };
@@ -1587,6 +1589,7 @@
 		A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
+		A5C175022F06A95000FE601D /* Discworld.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discworld.json; sourceTree = "<group>"; };
 		A5C2347A2ECE1B7800C79C9D /* ASAGlassSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGlassSymbol.swift; sourceTree = "<group>"; };
 		A5C2347D2ECE210D00C79C9D /* ASAOKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAOKButton.swift; sourceTree = "<group>"; };
 		A5C2B48A2AA775A00045C28C /* MV (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MV (Muslim).json"; sourceTree = "<group>"; };
@@ -2077,6 +2080,7 @@
 				A581B893284E5FD300407D68 /* CZ.json */,
 				A5D850BF280C9B5F005247BD /* DE.json */,
 				A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */,
+				A5C175022F06A95000FE601D /* Discworld.json */,
 				A514B9B82D830B42000046CC /* Disney.json */,
 				A5B999D428622E0D00072FD5 /* DJ.json */,
 				A5759143282BE30700675058 /* DK.json */,
@@ -3155,6 +3159,7 @@
 				A541945828749D5200C93496 /* IR (Persian).json in Resources */,
 				A5EFFFFD285B8AF700F2205F /* IS.json in Resources */,
 				A5E292C6285A446000925EBD /* AO.json in Resources */,
+				A5C175032F06A95000FE601D /* Discworld.json in Resources */,
 				A5B999A0286228E000072FD5 /* AM.json in Resources */,
 				A5D850AF280C95F6005247BD /* ZA.json in Resources */,
 				A59125E22A3F270F000497D7 /* AF (Muslim).json in Resources */,
@@ -3338,6 +3343,7 @@
 				A56F0DA125F1705200301969 /* Jewish zodiac.json in Resources */,
 				A50DA52C28686272008D54AE /* TW (Chinese).json in Resources */,
 				A5E495D628624D7A001BF40C /* EH.json in Resources */,
+				A5C175042F06A95000FE601D /* Discworld.json in Resources */,
 				A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5B999CD28622D4700072FD5 /* CU.json in Resources */,
 				A50A2C3E2C580C7D00AB0F29 /* Discordianism.json in Resources */,
