@@ -28,5 +28,7 @@
         {type: "D", start: {mon: 2, d: 25}, inherits: "Armed Forces Day"},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en": "National Larimar Day"}, urls: {"en": "https://nationaltoday.com/national-larimar-day/"}, first: {era: 1, y: 2018}},
+        {type: "D", start: {mon: 1, d: 5, wkd: [2]}, inherits: "Epiphany (in lieu)"},
+        {type: "D", start: {mon: 1, d: 7, thruD: 11, wkd: [2]}, inherits: "Epiphany (in lieu)"},
     ]
 }
