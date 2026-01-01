@@ -15,20 +15,20 @@
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 6, wkd: [6], nth: 1}, titles: {"en": "Randol Fawkes Labour Day"}, urls: {"en": "https://nationaltoday.com/randol-fawkes-labour-day/"}, first: {era: 1, y: 2013}, inherits: "Labour Day"},
-        {inherits: "Independence Day", type: "D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/bahamas-independence-day/"}},
-        {inherits: "Emancipation Day", type: "D", start: {mon: 8, wkd: [2], nth: 1}, first: {era: 1, y: 1834}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/emancipation-day"}},
-        {inherits: "Natl Heroes’ Day", type: "D", start: {mon: 10, wkd: [2], nth: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
+        {type: "D", start: {mon: 7, d: 10}, inherits: "Independence Day", first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/bahamas-independence-day/"}},
+        {type: "D", start: {mon: 8, wkd: [2], nth: 1}, inherits: "Emancipation Day", first: {era: 1, y: 1834}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/emancipation-day"}},
+        {type: "D", start: {mon: 10, wkd: [2], nth: 2}, inherits: "Natl Heroes’ Day", first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 1, wkd: [6], nth: 1}},
+        {type: "D", start: {mon: 1, wkd: [6], nth: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Junkanoo", first: {era: 1, y: 1708}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Junkanoo", first: {era: 1, y: 1709}},
    ],
     templates: [
-        {template: "Junkanoo", type: "D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/junkanoo/"}, titles: {"en": "Junkanoo"}},
+        {template: "Junkanoo", type: "D", start: {mon: 12, d: 26}, titles: {"da":"Junkanoo","de":"Junkanoo Parade","en":"Junkanoo","es":"Junkanoo","et":"Junkanoo","fr":"Junkanoo","ig":"Junkanoo","it":"Junkanoo","nl":"Junkanoo","nn":"Junkanoo","pl":"Junkanoo","sv":"Junkanoo","tr":"Junkanoo"}, urls: {"en": "https://nationaltoday.com/junkanoo/"}},
 
     ]
 }
