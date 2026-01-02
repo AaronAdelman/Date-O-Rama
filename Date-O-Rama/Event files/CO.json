@@ -23,7 +23,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: 60}, inherits: "Corpus Christi"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {titles: {"en": "Feast of the Sacred Heart (in lieu)"}, type: "D", start: {Easter: "Easter", offsetD: 71}},
-        {inherits: "Sacred Heart", type: "D", start: {Easter: "Easter", offsetD: 68}},
+        {type: "D", start: {Easter: "Easter", offsetD: 68}, inherits: "Sacred Heart"},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Saints Peter and Paul"},
         {inherits: "Saints Peter and Paul (in lieu)", type: "D", start: {mon: 6, d: 30, thruMon: 7, thruD: 5, wkd: [2]}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}},
         {inherits: "Independence Day", type: "D", start: {mon: 7, d: 20}, first: {era: 1, y: 1810}, urls: {"en": "https://www.daysoftheyear.com/days/colombias-independence-day/"}},
