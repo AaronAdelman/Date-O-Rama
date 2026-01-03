@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National King Cake Day"}, urls: {"en": "https://www.checkiday.com/77fb0ac068baf6198239f6df1dffa5a7/national-king-cake-day"}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Natl Take Down the Christmas Tree Day"},
         {type: "D", start: {mon: 1, d: 7}, titles: {"en":"Distaff Day","fr":"Fête de la quenouille"}, urls: {"en": "https://nationaltoday.com/distaff-day/"}, emoji: "🪨", notes: {"en": "Roc Day\nRock Day\nSt. Distaff’s Day"}},
-        {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en": "Weigh-In Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weigh-in-day/"}},
+        {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en": "Weigh-In Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weigh-in-day/"}, notes: {"en": "National Weigh-In Day\nKellogg’s"}},
         {type: "D", start: {mon: 1, wkd: [6], nth: 2}, titles: {"en": "Quitters Day"}, urls: {"en": "https://nationaltoday.com/quitters-day/"}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "National Pumpkin Cheesecake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pumpkin-cheesecake-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 10, d: 23}, titles: {"en": "International Swallows Depart from San Juan Capistrano Day"}, urls: {"en": "https://nationaltoday.com/international-swallows-depart-from-san-juan-capistrano-day/"}},

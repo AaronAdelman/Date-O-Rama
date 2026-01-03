@@ -7,7 +7,7 @@
     events: [
         {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National Swap Ideas Day"}, urls: {"en": "https://www.daysoftheyear.com/days/swap-ideas-day/"}, notes: {"en": "Swap Ideas Day\nCreated by Robert Birch"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Lumpy Rug Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lumpy-rug-day/"}},
-        {type: "D", start: {mon: 1, d: 4}, titles: {"en": "National Trivia Day", "he": "יום הטריוויה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/trivia-day/"}, emoji: "🧠", first: {era: 1, y: 1980}},
+        {type: "D", start: {mon: 1, d: 4}, titles: {"en": "National Trivia Day", "he": "יום הטריוויה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/trivia-day/"}, emoji: "🧠", first: {era: 1, y: 1980}, notes: {"en": "Created by Robert L Birch of Puns Corps"}},
         {type: "D", start: {mon: 1, d: 16}, inherits: "Natl Nothing Day", first: {era: 1, y: 1973}},
     ]
 }
