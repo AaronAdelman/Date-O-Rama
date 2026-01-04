@@ -62,6 +62,7 @@
         {type: "D", start: {era: 1, y: 2025, mon: 1, d: 6}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/johor-weekend-adjustment"}, locations: {"en": "Johor"}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Declaration of Independence Day"}, first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/declaration-of-independence-in-malacca"}, inherits: "Independence Day"},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en": "Internet Blackout Day"}, first: {era: 1, y: 2012}, urls: {"en": "https://www.daysoftheyear.com/days/internet-blackout-day-in-malaysia/"}},
+        {type: "D", start: {mon: 1, d: 8}, titles: {"en": "World Typing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-typing-day/"}, first: {era: 1, y: 2011}, emoji: "⌨️", notes: {"en": "International Typing Day\nTyping Day"}},
     ],
     templates: [
         {template: "Birthday of the Sultan of Kelantan", type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, titles: {"en": "Birthday of the Sultan of Kelantan", "ms": "Hari Keputeraan Sultan Kelantan"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, inherits: "*BDay*"},
