@@ -25,7 +25,9 @@
         {type: "D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/malta-republic-day/"}, inherits: "Republic Day", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {inherits: "Epiphany", type: "D", start: {mon: 1, d: 2, thruD: 8, wkd: [1]}},
+        {type: "D", start: {mon: 1, d: 2, thruD: 5, wkd: [1]}, inherits: "Epiphany (in lieu)"},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
+        {type: "D", start: {mon: 1, d: 7, thruD: 8, wkd: [1]}, inherits: "Epiphany (in lieu)"},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Feast of St. Anthony the Abbot", "mt": "San Anton Abbati"}},
         {type: "D", start: {mon: 1, d: 25}, inherits: "Conversion of St. Paul"},
         
