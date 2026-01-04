@@ -110,7 +110,7 @@
         {inherits: "St. Stephen’s Day", type: "D", start: {"mon": 12, d: 26}},
         {type: "D", start: {"mon": 12, d: 31}, inherits: "New Year’s Eve"},
         {type: "D", start: {"mon": 12, d: 31}, titles: {"be":"Шчодры вечар","be-tarask":"Шчодры вечар","en":"Malanka","fr":"Malanka","hy":"Մալանիա","ml":"മലങ്ക","ru":"Маланья","sl":"Malanka","sr":"Маланка","tl":"Malanka","uk":"Маланка"}, notes: {"en": "Bounteous Evening"}},
-
+        
         {titles: {"en": "Victory Day in the Battles of Voznesensk"}, type: "D", start: {"mon": 3, d: 13}, first: {era: 1, y: 2023}},
         {titles: {"en": "Victory Day in the Battle of Okhtyrka"}, type: "D", start: {"mon": 3, d: 26}, first: {era: 1, y: 2023}},
         {titles: {"en": "Victory Day in the Battle of Irpin"}, type: "D", start: {"mon": 3, d: 28}, first: {era: 1, y: 2023}},
@@ -123,7 +123,7 @@
         {titles: {"en": "Liberation of Kupiansk Day"}, type: "D", start: {"mon": 9, d: 16}, first: {era: 1, y: 2023}},
         {titles: {"en": "Victory Day in the Second Battle of Lyman"}, type: "D", start: {"mon": 10, d: 2}, first: {era: 1, y: 2023}},
         {titles: {"en": "Liberation of Kherson Day"}, type: "D", start: {"mon": 11, d: 11}, first: {era: 1, y: 2023}},
-
+        
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", titles: {"en": "Day of Children’s Protection", "uk": "День захисту дітей"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Unity Day", first: {era: 1, y: 1971}, titles: {"en": "Day of Unity"}},
@@ -139,5 +139,6 @@
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 12, d: 12}, titles: {"en": "Day of Remembrance of Homosexuals in Ukraine"}, first: {era: 1, y: 2006}},
-  ]
+        {type: "D", start: {mon: 1, d: 7}, inherits: "Programmers Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.timeanddate.com/holidays/world/international-programmers-day"}},
+    ]
 }
