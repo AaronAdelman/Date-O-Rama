@@ -30,7 +30,7 @@ struct ASADateSpecification:  Codable {
     var weekdays:  Array<ASAWeekday>?
     
     /// If non-nil, the number of the recurrence of the first weekday given in the month.  If negative, then -1 is the last recurrence, -2 is the next to last recurrence, etc.
-    var weekdayRecurrence: Int?
+    var recurrence: Int?
     var lengthsOfMonth: Array<Int>?
     var lengthsOfYear: Array<Int>?
     var dayOfYear: Int?
@@ -98,7 +98,7 @@ struct ASADateSpecification:  Codable {
         case second              = "s"
         case nanosecond          = "ns"
         case weekdays            = "wkd"
-        case weekdayRecurrence   = "nth"
+        case recurrence          = "nth"
         case lengthsOfMonth      = "monLengths"
         case lengthsOfYear       = "yLengths"
         case dayOfYear           = "dOfY"
