@@ -82,7 +82,7 @@ struct ASADateSpecification:  Codable {
     var timeChange: ASATimeChangeType?
     
     // For Moon phase events
-    var moonPhase: ASAMoonPhaseType?
+    var moonPhase: ASAMoonPhase?
     
     // For repeating events
     var recurrenceDays: Int?
