@@ -58,9 +58,7 @@ struct ASAEventCell:  View {
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
-                        Text(eventSymbol!)
-                            .font(titleFont)
-                            .modifier(ASAScalable(lineLimit: 2))
+                        ASAEventSymbolView(symbol: eventSymbol!, font: titleFont)
                     }
                     Text(event.title)
                         .font(titleFont)
@@ -123,9 +121,38 @@ struct ASAEventSymbolView: View {
     let font: Font
 
     var body: some View {
-        Text(symbol)
-            .font(font)
-            .modifier(ASAScalable(lineLimit: 1))
+        let LINE_LIMIT = 1
+        
+        let raw = symbol.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        if raw.hasPrefix("[[") && raw.hasSuffix("]]") {
+            let start = raw.index(raw.startIndex, offsetBy: 2)
+            let end = raw.index(raw.endIndex, offsetBy: -2)
+            let sfName = String(raw[start..<end])
+            return AnyView(
+                Image(systemName: sfName)
+                    .symbolRenderingMode(.multicolor)
+                    .font(font)
+                    .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+            )
+        }
+
+        let revisedSymbol: String = {
+            let count = symbol.count
+            if count <= 4{
+                return symbol
+            } else {
+                let subSymbol: String = String(symbol.prefix(3))
+                let extraCount = count - 3
+                return String.localizedStringWithFormat("%@ + %d", subSymbol, extraCount)
+            }
+        }()
+        
+        return AnyView(
+            Text(revisedSymbol)
+                .font(font)
+                .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+        )
     }
 }
 
