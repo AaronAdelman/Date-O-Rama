@@ -6,7 +6,7 @@
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iran"},
     events: [
-        {type: "D", start: {mon: 9, nth: -1, wkd: [6]}, titles: {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}},
+        {type: "D", start: {mon: 9, nth: -1, wkd: [6]}, titles: {"ar":"يوم القدس","ast":"Día d’Al-Quds","az":"Qüds günü","bn":"আল-কুদ্‌স দিবস","ckb":"ڕۆژی قودس","da":"Den internationale Quds dag","de":"Al-Quds-Tag","el":"Ημέρα του Αλ-Κοντς","en":"Quds Day","es":"Día de Al-Quds","fa":"روز قدس","fr":"Journée mondiale d’Al-Quds","ha":"Ranar Qudus","he":"יום ירושלים","id":"Hari Quds","it":"Giornata di Quds","ja":"コッズの日","ms":"Hari Quds","pnb":"یوم القدس","ro":"Ziua Qods","ru":"День Аль-Кудс","sd":"يوم القدس","si":"කඩ්ස් දිනය","sr":"Дан Кудса","sv":"Quds-dagen","th":"วันกุดส์","tr":"Dünya Kudüs Günü","ur":"یوم القدس","zh":"聖城日"}},
         {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 6, d: 20}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Martyrdom of Imam Sadeq"}, urls: {"en": "https://nationaltoday.com/martyrdom-of-imam-sadeq/"}, inherits: "*DeathAnniv*"},
