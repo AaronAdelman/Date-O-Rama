@@ -35,8 +35,8 @@
         {type: "D", start: {mon: 18, d: 1}, inherits: "19 Day Feast"},
         {type: "D", start: {mon: 20, d: 1}, inherits: "19 Day Feast"},
         {type: "M", start: {mon: 20}, titles: {"ar":"صوم بهائي","az":"On doqquz günlük oruc","bn":"ঊনিশদিনের উপবাস","cs":"Sijám","en":"Nineteen-Day Fast","eo":"Bahaa fasto","fa":"عید صیام","he":"צום תשעה עשר הימים","id":"Puasa Sembilan Belas Hari","ms":"Puasa 19 Hari","nl":"Bahai-vasten","nn":"Månaden ala","pt":"Jejum bahá’í","ru":"Пост бахаи","zh":"巴哈伊信仰的斋戒"}, urls: {"en": "https://en.wikipedia.org/wiki/Nineteen-Day_Fast"}},
-        {type: "D", start: {mon: 1, d: 1, zmoPhase: "new", nth: 8, offsetD: 1}, titles: {"en": "Birth of the Báb", "he": "יום הולדת הבאב"}},
-        {type: "D", start: {mon: 1, d: 1, zmoPhase: "new", nth: 8, offsetD: 2}, titles: {"en":"Birth of Baháʼu’lláh","he":"הולדת בהאא אללה","ms":"Kelahiran Bahá’u’lláh"}},
+        {type: "D", start: {mon: 1, d: 1, zmoPhase: "new", nth: 8, offsetD: 1}, inherits: "Birth of the Báb", first: {era: 0, y: 172}},
+        {type: "D", start: {mon: 1, d: 1, zmoPhase: "new", nth: 8, offsetD: 2}, inherits: "Birth of Baháʼu’lláh", first: {era: 0, y: 172}},
         
         {type: "nY", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "Y", start: {yDiv: 19, yRem: 1}, titles: {"en": "Alif", "ar": "أ", "he": "אלִף"}},
