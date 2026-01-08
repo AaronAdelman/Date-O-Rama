@@ -10,7 +10,7 @@
         {titles: {"en": "Last Quarter", "he": "רבע אחרון"}, type: "pt", start: {"zmoPhase": "lastQuarter"}, emoji: "[[moonphase.last.quarter]]"},
         
         {titles: {"de":"Mondaufgang","en":"Moonrise", "he": "זריחת הירח"}, type: "pt", start: {ptType: "rise", "body": "zmo"}, emoji: "[[moonrise.fill]]"},
-        {titles: {"de":"Monduntergang","en":"Moonset", "he": "שקיעת הירח"}, type: "pt", start: {ptType: "set", "body": "zmo"}, emoji: "[[moonset.fill]]]"},
+        {titles: {"de":"Monduntergang","en":"Moonset", "he": "שקיעת הירח"}, type: "pt", start: {ptType: "set", "body": "zmo"}, emoji: "[[moonset.fill]]"},
     ]
 }
 
