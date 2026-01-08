@@ -67,7 +67,7 @@ struct ASAMainTabView: View {
                 }
                 ToolbarItem(placement: .navigation) {
                     // Now/Calendar menu
-                    let NOW_NAME  = "clock"
+                    let NOW_NAME  = "progress.indicator"
                     let DATE_NAME = "ellipsis.calendar"
                     Menu {
                         Button {
@@ -97,7 +97,11 @@ struct ASAMainTabView: View {
                             Label("Next day", systemImage: "chevron.forward")
                         }
                     } label: {
-                        Image(systemName: usingRealTime ? NOW_NAME : DATE_NAME)
+                        if usingRealTime {
+                            ProgressView()
+                        } else {
+                            Image(systemName: DATE_NAME)
+                        }
                     }
                 }
                 
