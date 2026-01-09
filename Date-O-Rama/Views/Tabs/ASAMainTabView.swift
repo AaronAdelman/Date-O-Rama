@@ -99,8 +99,10 @@ struct ASAMainTabView: View {
                     } label: {
                         if usingRealTime {
                             ProgressView()
+                                .tint(.green)
                         } else {
                             Image(systemName: DATE_NAME)
+                                .foregroundStyle(.yellow)
                         }
                     }
                 }
