@@ -49,7 +49,7 @@
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "St. Dwynwen’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/st-dwynwens-day/"}, first: {era: 1, y: 1960}},
         {type: "D", start: {mon: 1, d: 31}, inherits: "Natl Bug Busting Day"},
         {type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, titles: {"en": "Plough Sunday"}, urls: {"en": "https://en.wikipedia.org/wiki/Plough_Sunday"}, emoji: "⽾"},
-        {type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, titles: {"en": "Plough Monday"}, urls: {"en": "https://www.daysoftheyear.com/days/plough-monday/"}, emoji: "⽾"},
+        {type: "D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, titles: {"en":"Plough Monday","fa":"دوشنبه گاوآهن"}, urls: {"en": "https://www.daysoftheyear.com/days/plough-monday/"}, emoji: "⽾"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 1}, titles: {"en":"Handsel Monday","es":"Handsel Monday","sco":"Handsel Monanday","uk":"Понеділок Гензеля"}, urls: {"en": "https://www.daysoftheyear.com/days/handsel-monday/"}, notes: {"en": "Auld Handsel Monday\nNew Handsel Monday"}},
         {type: "D", start: {mon: 1, d: 13, thruD: 19, wkd: [2]}, titles: {"en":"Auld Hansel Monday"}, urls: {"en": "https://en.wikipedia.org/wiki/Handsel_Monday"}},
         {type: "D", start: {Easter: "Easter", offsetD: -48}, titles: {"en": "Nickanan Night"}, notes: {"en": "Hall Monday\nPeasen Monday"}, urls: {"en": "https://en.wikipedia.org/wiki/Nickanan_Night"}},
