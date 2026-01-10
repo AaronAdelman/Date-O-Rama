@@ -9,7 +9,7 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {type: "D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/robert-gabriel-mugabe-national-youth-day/"}, notes: {"en": "Robert Gabriel Mugabe National Youth Day"}, inherits: "Natl Youth Day", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 2, d: 21}, inherits: "Natl Youth Day", urls: {"en": "https://nationaltoday.com/robert-gabriel-mugabe-national-youth-day/"}, notes: {"en": "Robert Gabriel Mugabe National Youth Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday", urls: {"en": "https://www.officeholidays.com/holidays/zimbabwe/easter-saturday"}},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},

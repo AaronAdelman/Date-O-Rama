@@ -39,7 +39,7 @@
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Activation of HAL 9000"}, notes: {"en": "From 2001: A Space Odyssey"}},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Feast of Fabulous Wild Men Day"}, urls: {"en": "https://nationaltoday.com/feast-of-fabulous-wild-men-day/"}},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "International French Onion Soup Day"}, notes: {"en": "French Onion Soup Day"}, urls: {"en": "https://www.checkiday.com/7ba970fa03a59f114a5fa6f55ed71c79/international-french-onion-soup-day"}, emoji: "🍲", first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Kiss a Ginger Day", "he": "יום נשק ג׳ינג׳י"}, urls: {"en": "https://www.daysoftheyear.com/days/kiss-a-ginger-day/"}, emoji: "👨‍🦰👩‍🦰", first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Kiss a Ginger Day", "he": "יום נשק ג׳ינג׳י"}, urls: {"en": "https://www.daysoftheyear.com/days/kiss-a-ginger-day/"}, emoji: "👨‍🦰👩‍🦰", first: {era: 1, y: 2009}, notes: {"en": "Created by Derek Forgie"}},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Work Harder Day"}, urls: {"en": "https://www.daysoftheyear.com/days/work-harder-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Make Your Dream Come True Day"}, notes: {"en": "Make Your Dreams Come True Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-your-dream-come-true-day/"}, emoji: "💤"},
         {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Public Radio Broadcasting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/public-radio-broadcasting-day/"}, emoji: "🎙"},
