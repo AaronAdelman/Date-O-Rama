@@ -5,6 +5,7 @@
     calendarColor: {red: 0.3, green: 0.6, blue: 0.8},
     first: {era: 1, y: 1966},
     events: [
+        {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Enterprise Day"}, notes: {"en": "1701 Day"}, emoji: "🪐", urls: {"en": "https://continuingmissionsta.com/2020/01/17/happy-enterprise-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Ancestors’ Eve"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Ancestors%27_Eve"}, notes: {"en": "From Star Trek:  Voyager."}, emoji: "🚀", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 4, d: 5}, titles: {"en":"First Contact Day","fr":"Jour du Premier Contact"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/First_Contact_Day"}, notes: {"en": "Star Trek First Contact Day"}, emoji: "🚀", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "The Sisko Day"}, urls: {"en": "https://www.virtualtrekcon.com/thesiskoday"}, first: {era: 1, y: 2023}},

@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "New Year’s Dishonor List Day"}, urls: {"en": "https://www.daysoftheyear.com/days/new-years-dishonor-list-day/"}, first: {era: 1, y: 1976}, notes: {"en": "Created by Wilmer T. “Bill” Rabe of LSSU"}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "No Longer New Year’s Day"}, urls: {"en": "https://nationaltoday.com/no-longer-new-years-day/"}, emoji: "✨"},
         {type: "D", start: {mon: 1, d: 12}, titles: {"en": "Stick to Your New Year's Resolution Day"}, urls: {"en": "https://nationaltoday.com/stick-to-your-new-years-resolution-day/"}, emoji: "📝"},
-        {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Ditch New Year’s Resolutions Day"}, notes: {"en": "Ditch New Year’s Resolution Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
+        {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Ditch New Year’s Resolutions Day"}, notes: {"en": "Ditch New Year’s Resolution Day\nNew Year’s Resolution Ditch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {type: "D", start: {mon: 1, d: 2}, inherits: "Happy Mew Year For Cats Day"},
         {type: "D", start: {mon: 1, d: 26}, inherits: "Natl Green Juice Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "National Fruitcake Toss Day"}, notes: {"en": "Fruitcake Toss Day\nSome sources claim this observance happens on the first Saturday in January.\nCreated by Manitou Springs, Colorado"}, urls: {"en": "https://www.daysoftheyear.com/days/fruitcake-toss-day/"}, emoji: "🍰", first: {era: 1, y: 1996}},
