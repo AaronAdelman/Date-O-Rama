@@ -80,7 +80,7 @@
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "National Lose the Jet Lag Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-lose-the-jet-lag-day/"}, first: {era: 1, y: 2023}, notes: {"en": "Created by the United Family of Cards from Chase"}},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en": "National Bootlegger’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bootleggers-day/"}, emoji: "🥃", first: {era: 1, y: 2015}, notes: {"en": "National Bootlegger Day\nBootlegger’s Day\nCreated by Infinium Spirits"}},
         {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Gourmet Coffee Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-gourmet-coffee-day/"}, emoji: "☕️"},
-        {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Peking Duck Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-peking-duck-day/"}},
+        {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Peking Duck Day"}, notes: {"en": "Peking Duck Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-peking-duck-day/"}},
         {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Thesaurus Day", "he": "יום התזאורוס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/thesaurus-day/"}, emoji: "📖"},
         {type: "D", start: {mon: 1, d: 19}, inherits: "Natl New Friends Day"},
         {type: "D", start: {mon: 1, d: 19}, titles: {"en": "Gun Appreciation Day"}, notes: {"en": "National Gun Appreciation Day\nThis observance celebrates the imaginary right to bear arms even if one knows nothing of how to handle a gun, is dangerously irresponsible, or plans to kill someone with it."}, first: {era: 1, y: 2013}},

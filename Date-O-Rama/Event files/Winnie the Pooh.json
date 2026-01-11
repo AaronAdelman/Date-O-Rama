@@ -4,7 +4,7 @@
     calendarCode: "gre*",
     calendarColor: {red: 0.4, green: 0.3, blue: 0.1},
     events: [
-        {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Winnie the Pooh Day", "he": "יום פו הדוב הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/winnie-the-pooh-day/"}, first: {era: 1, y: 1986}, emoji: "🧸"},
+        {type: "D", start: {mon: 1, d: 18}, titles: {"en": "National Winnie the Pooh Day", "he": "יום פו הדוב הלאומי"}, notes: {"en": "Winnie the Pooh Day", "he": "יום פו הדוב"}, urls: {"en": "https://www.daysoftheyear.com/days/winnie-the-pooh-day/"}, first: {era: 1, y: 1986}, emoji: "🧸"},
         {type: "D", start: {mon: 4, wkd: [7], nth: -1}, titles: {"en": "Eeyore’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/eeyores-birthday/"}, inherits: "*BDay*"},
     ]
 }
