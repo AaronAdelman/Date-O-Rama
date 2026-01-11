@@ -15,6 +15,7 @@ struct ASADateORamaApp: App {
     @ObservedObject var userData = ASAModel.shared
     @State var now               = Date()
     @State var usingRealTime     = true
+    @StateObject private var watchModel = WatchConnectivityModel()
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -25,6 +26,7 @@ struct ASADateORamaApp: App {
                     ASAMainTabView(now: $now, usingRealTime: $usingRealTime)
                         .navigationBarTitleDisplayMode(.inline)
                         .environmentObject(userData)
+                        .environmentObject(watchModel)
                 } else {
                     ASAAllLocationsTab(
                         now: $now,
@@ -33,6 +35,7 @@ struct ASADateORamaApp: App {
                         isShowingLocationSheet: $userData.shouldShowLocationTab
                     )
                     .environmentObject(userData)
+                    .environmentObject(watchModel)
                 }
             }
             .preferredColorScheme(.dark)

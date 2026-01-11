@@ -55,6 +55,7 @@
 		A50A2C422C581E8B00AB0F29 /* Church of the SubGenius.json in Resources */ = {isa = PBXBuildFile; fileRef = A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */; };
 		A50C4FCD2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FCC2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json */; };
 		A50C4FCE2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FCC2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json */; };
+		A50C4FD02F13AA58001D4EF2 /* WatchConnectivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FCF2F13AA57001D4EF2 /* WatchConnectivityModel.swift */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -1322,6 +1323,7 @@
 		A50A2C3D2C580C7D00AB0F29 /* Discordianism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discordianism.json; sourceTree = "<group>"; };
 		A50A2C402C581E8B00AB0F29 /* Church of the SubGenius.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Church of the SubGenius.json"; sourceTree = "<group>"; };
 		A50C4FCC2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Bahá’í Faith (Muslim).json"; sourceTree = "<group>"; };
+		A50C4FCF2F13AA57001D4EF2 /* WatchConnectivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityModel.swift; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A50DA50728686271008D54AE /* HK (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "HK (Chinese).json"; sourceTree = "<group>"; };
@@ -2610,10 +2612,10 @@
 				A5C77BFB2433361400CFEE47 /* Date-O-Rama */,
 				A5C77C122433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
+				A5F2847A2E42428000EE4F0C /* Frameworks */,
 				A5C77BFA2433361400CFEE47 /* Products */,
 				A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */,
 				A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */,
-				A5F2847A2E42428000EE4F0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2660,6 +2662,7 @@
 				A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */,
 				A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */,
 				A5B6D01A25AEEFCA005ECE8D /* View modifiers */,
+				A50C4FCF2F13AA57001D4EF2 /* WatchConnectivityModel.swift */,
 				A5C77C452434723300CFEE47 /* Views */,
 				A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */,
 			);
@@ -4020,6 +4023,7 @@
 				A5166C742EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */,
 				A5166C832EEB3CDC00F23048 /* ASABahaiCalendar.swift in Sources */,
 				A58F39F92DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */,
+				A50C4FD02F13AA58001D4EF2 /* WatchConnectivityModel.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
 				A513896C2875A8630069F2AB /* ASALocationChooserView.swift in Sources */,
 				A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,

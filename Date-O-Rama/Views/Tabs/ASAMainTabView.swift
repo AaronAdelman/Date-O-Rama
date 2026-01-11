@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ASAMainTabView: View {
     @EnvironmentObject var userData: ASAModel
+    @EnvironmentObject var watchModel: WatchConnectivityModel
     @Binding var now: Date
     @Binding var usingRealTime: Bool
     @State private var showAboutSheet = false
@@ -55,8 +56,8 @@ struct ASAMainTabView: View {
                         Label("About", systemImage: "info.circle")
                     }
                 }
-                if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
-                   appDelegate.session.isPaired {
+                
+                if watchModel.isPaired {
                     ToolbarItem(placement: .navigation) {
                         Button {
                             showComplicationsSheet = true
@@ -65,6 +66,7 @@ struct ASAMainTabView: View {
                         }
                     }
                 }
+                
                 ToolbarItem(placement: .navigation) {
                     // Now/Calendar menu
                     let NOW_NAME  = "progress.indicator"
@@ -124,7 +126,7 @@ struct ASAMainTabView: View {
             .sheet(isPresented: $showAboutSheet) {
                 ASAAboutTab()
             }
-            .fullScreenCover(isPresented: $showComplicationsSheet) {
+            .sheet(isPresented: $showComplicationsSheet) {
                 ASAComplicationClocksTab(now: $now)
             }
         } // GeometryReader
@@ -136,5 +138,6 @@ struct ASAMainTabView: View {
 #Preview {
     ASAMainTabView(now: .constant(Date()), usingRealTime: .constant(true))
         .environmentObject(ASAModel.shared)
+        .environmentObject(WatchConnectivityModel())
 }
 

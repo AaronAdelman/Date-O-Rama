@@ -38,30 +38,49 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, 
     // MARK: - WCSessionDelegate
 
     nonisolated func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        let activationStateString = {
+            switch activationState {
+            case .notActivated:
+                return "not activated"
+            case .inactive:
+                return "inactive"
+            case .activated:
+                return "activated"
+            @unknown default:
+                return "unknown activation state"
+            }
+        }()
+        debugPrint(#file, #function, activationStateString, error as Any, "isReachable:", session.isReachable, "isPaired:", session.isPaired, "isWatchAppInstalled:", session.isWatchAppInstalled)
         sendUserData(session)
     }
 
     nonisolated func sessionDidDeactivate(_ session: WCSession) {
         // Optionally handle
+        debugPrint(#file, #function)
     }
 
     nonisolated func sessionDidBecomeInactive(_ session: WCSession) {
         // Optionally handle
+        debugPrint(#file, #function)
     }
 
     nonisolated func sessionWatchStateDidChange(_ session: WCSession) {
+        debugPrint(#file, #function, session.isReachable, session.isPaired, session.isWatchAppInstalled)
         if session.isReachable && session.isPaired && session.isWatchAppInstalled {
             sendUserData(session)
         }
     }
 
     nonisolated func sessionReachabilityDidChange(_ session: WCSession) {
+        debugPrint(#file, #function, session.isReachable, session.isPaired, session.isWatchAppInstalled)
         if session.isReachable && session.isPaired && session.isWatchAppInstalled {
             sendUserData(session)
         }
     }
 
     public nonisolated func sendUserData(_ session: WCSession) {
+        debugPrint(#file, #function)
+
         Task { @MainActor in
             let model = ASAModel.shared
 
@@ -95,6 +114,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, 
     }
 
     nonisolated func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        debugPrint(#file, #function, message)
+        
         if message[ASAMessageKeyType] as? String == ASAMessageKeyRequestUserData {
             sendUserData(session)
         }
