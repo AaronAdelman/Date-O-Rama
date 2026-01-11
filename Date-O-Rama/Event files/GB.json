@@ -205,7 +205,7 @@
 
         {type: "D", start: {mon: 4, d: 6}, inherits: "Tartan Day", first: {era: 1, "year": 1987}},
         {type: "D", start: {era: 1, y: 2018, mon: 3, d: 8}, inherits: "Natl Pothole Day"},
-        {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Calennig"}, notes: {"en": "Welsh New Year"}, inherits: "New Year’s Day", urls: {"en": "https://www.daysoftheyear.com/days/calennig/"}, emoji: "🍏"},
+        {type: "D", start: {mon: 1, d: 13}, titles: {"cy":"Calennig","en":"Calennig","uk":"Каленніг"}, notes: {"en": "Welsh New Year"}, inherits: "New Year’s Day", urls: {"en": "https://www.daysoftheyear.com/days/calennig/"}, emoji: "🍏"},
         {type: "D", start: {mon: 1, d: 14, wkd: [6]}, inherits: "Natl Pothole Day", first: {era: 1, y: 2015}, last: {era: 1, y: 2017}},
         {type: "D", start: {mon: 1, d: 14, wkd: [6]}, inherits: "Natl Pothole Day", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 1, d: 15, wkd: [2, 3, 4, 5, 6]}, inherits: "Natl Pothole Day", first: {era: 1, y: 2015}, last: {era: 1, y: 2017}},
