@@ -8,7 +8,8 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Bahamas"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Majority Rule Day"}, first: {era: 1, y: 2014}},
+        {type: "D", start: {mon: 1, d: 10}, titles: {"en": "Majority Rule Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/majority-rule-day-holiday"}},
+        {type: "D", start: {mon: 1, d: 11, thruD: 12, wkd: [2]}, titles: {"en": "Majority Rule Day (in lieu)"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/majority-rule-day-holiday"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
