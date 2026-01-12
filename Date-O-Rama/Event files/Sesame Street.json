@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Grouch Day", first: {era: 1, y: 1976}},
         
         {type: "D", start: {mon: 1, d: 5}, titles: {"en": "Hoots the Owl’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 2005}},
-        {type: "D", start: {mon: 1, d: 13}, titles: {"en": "Rubber Duckie’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 1, d: 13}, inherits: "National Rubber Ducky Day", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 1, d: 24}, titles: {"en": "Julia’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 1, d: 28}, titles: {"en": "Ernie’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "Elmo’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/elmos-birthday/"}, inherits: "*BDay*", first: {era: 1, y: 1980}},
