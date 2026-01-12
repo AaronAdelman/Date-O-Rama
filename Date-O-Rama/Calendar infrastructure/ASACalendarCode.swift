@@ -559,6 +559,9 @@ extension ASACalendarCode {
         case .julian:
             return [regionCode + " (Julian)"]
             
+        case .bahaiSolarTime:
+            return ["Baháʼí Faith"]
+            
         default:
             return []
         } // switch self
