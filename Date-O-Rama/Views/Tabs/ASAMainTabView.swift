@@ -32,7 +32,7 @@ struct ASAMainTabView: View {
                         
                         let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
                         let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                        let symbol = usesDeviceLocation ? Image(systemName: "location.fill") : Image(systemName: "circle.fill")
+                        let symbol: Image? = usesDeviceLocation ? Image(systemName: "location.fill") : nil
                         let location = locationWithClocks.location
                         let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
                             ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
