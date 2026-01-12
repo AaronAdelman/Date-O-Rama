@@ -7,6 +7,7 @@
         {type: "D", start: {mon: 10, d: 20}, inherits: "Birth of the Báb", last: {era: 1, y: 2014}},
         {type: "D", start: {mon: 11, d: 12}, inherits: "Birth of Baháʼu’lláh", last: {era: 1, y: 2014}},
         
+        {type: "D", start: {mon: 1, wkd: [1], nth: 3}, inherits: "World Religion Day", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, titles: {"en": "Race Unity Day"}, first: {era: 1, y: 1957}, urls: {"en": "https://nationaltoday.com/race-unity-day/"}, emoji: "🫶", notes: {"en": "Race Amity Day\nCreated by the Bahá’í National Spiritual Assembly"}},
     ]
 }

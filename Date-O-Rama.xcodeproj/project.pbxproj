@@ -58,6 +58,8 @@
 		A50C4FD02F13AA58001D4EF2 /* WatchConnectivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FCF2F13AA57001D4EF2 /* WatchConnectivityModel.swift */; };
 		A50C4FD22F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FD12F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json */; };
 		A50C4FD32F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FD12F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json */; };
+		A50C4FD52F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FD42F155AE2001D4EF2 /* Slavic Native Faith.json */; };
+		A50C4FD62F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FD42F155AE2001D4EF2 /* Slavic Native Faith.json */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -1327,6 +1329,7 @@
 		A50C4FCC2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Bahá’í Faith (Muslim).json"; sourceTree = "<group>"; };
 		A50C4FCF2F13AA57001D4EF2 /* WatchConnectivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityModel.swift; sourceTree = "<group>"; };
 		A50C4FD12F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western Christianity (derived) (Julian).json"; sourceTree = "<group>"; };
+		A50C4FD42F155AE2001D4EF2 /* Slavic Native Faith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Slavic Native Faith.json"; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A50DA50728686271008D54AE /* HK (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "HK (Chinese).json"; sourceTree = "<group>"; };
@@ -2336,6 +2339,7 @@
 				A5FB22A328638D2B00B5042B /* SJ.json */,
 				A575914C282BE43900675058 /* SK.json */,
 				A5EFFF9D285B7F2E00F2205F /* SL.json */,
+				A50C4FD42F155AE2001D4EF2 /* Slavic Native Faith.json */,
 				A581B88A284E5B9C00407D68 /* SM.json */,
 				A5EFFF99285B7F2E00F2205F /* SN.json */,
 				A57797CF2B8FC0A200F68529 /* SN (Muslim).json */,
@@ -3298,6 +3302,7 @@
 				A5A132932D49681800152EA9 /* Asatru Alliance.json in Resources */,
 				A5EFFF97285B7DB700F2205F /* PA.json in Resources */,
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
+				A50C4FD52F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */,
 				A5FB22B928638EE000B5042B /* TF.json in Resources */,
 				A50DA52D28686272008D54AE /* TW (Chinese).json in Resources */,
 				A57ACC822AE566FB005269E5 /* MY (Muslim).json in Resources */,
@@ -3672,6 +3677,7 @@
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
+				A50C4FD62F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */,
 				A5278B1E290FE06700834674 /* BY (Julian).json in Resources */,
 				A5F0EAC12C7FA0FD003E1FED /* National Day Calendar®.json in Resources */,
 				A57ACC812AE566FB005269E5 /* MY (Muslim).json in Resources */,
