@@ -156,9 +156,10 @@ struct ASAClockCell: View {
                     } label: {
                         ASAClockMenuSymbol()
                     }
-                    .sheet(isPresented: $showingDetailView, onDismiss: {}) {
+                    .popover(isPresented: $showingDetailView) {
                         NavigationStack {
                             ASAClockDetailView(selectedClock: clock, location: location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true, tempLocation: location)
+                                .frame(minWidth: 400.0, minHeight: 600.0)
                                 .toolbar {
                                     ASACloseButton(action: {
                                         showingDetailView = false
@@ -223,14 +224,13 @@ struct ASAClockCell: View {
                                 userData.savePreferences(code: isForComplications ? .complications : .clocks)
                             }
                         }
-                        .sheet(isPresented: $showingDetailView, onDismiss: {
-                            //                        debugPrint("❎ Clock cell detail view was dismissed.")
-                        }, content: {
+                        .popover(isPresented: $showingDetailView, content: {
                             ASAClockCellDetailView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: Binding(get: { () -> ASAClockCell.DetailType in
                                 return self.detailType
                             }, set: { newValue in
                                 self.detailType = newValue
                             }), clock: clock, location: location).environmentObject(userData)
+                                .frame(minWidth: 400.0, minHeight: 600.0)
                         })
                 }
 #endif
