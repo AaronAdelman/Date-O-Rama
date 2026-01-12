@@ -120,11 +120,7 @@ enum ASACalendarType {
 extension ASACalendarCode {
     var localizedName:  String {
         switch self {
-        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican,
-//                .hebrew,
-                .hebrewMA,
-//                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
-                .julian, .bahaiSolarTime:
+        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .hebrewMA, .julian, .bahaiSolarTime:
             return NSLocalizedString(self.rawValue, comment: "")
             
         case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:
@@ -138,7 +134,7 @@ extension ASACalendarCode {
         }
     } // var localizedName
 
-    var isAppleCalendar:  Bool {
+    var isAppleCalendar: Bool {
         switch self {
         case .buddhist,
              .chinese,
@@ -172,7 +168,7 @@ extension ASACalendarCode {
         } // switch self
     } // var isAppleCalendar
     
-    var isJulianDayCalendar:  Bool {
+    var isJulianDayCalendar: Bool {
         switch self {
         case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate:
             return true
@@ -182,7 +178,7 @@ extension ASACalendarCode {
         } // switch self
     } // var isJulianDayCalendar
     
-    var isSunsetTransitionCalendar:  Bool {
+    var isSunsetTransitionCalendar: Bool {
         switch self {
         case .hebrewGRA, .islamicSolarTime, .islamicTabularSolarTime, .islamicCivilSolarTime, .islamicUmmAlQuraSolarTime, .hebrewMA, .bahaiSolarTime:
             return true
@@ -190,6 +186,26 @@ extension ASACalendarCode {
             return false
         } // switch self
     } // var isSunsetTransitionCalendar
+    
+    var isSunriseTransitionCalendar: Bool {
+        switch self {
+            case .banglaSolarTime,
+                .dangiSolarTime,
+                .gujaratiSolarTime,
+                .kannadaSolarTime,
+                .malayalamSolarTime,
+                .marathiSolarTime,
+                .odiaSolarTime,
+                .tamilSolarTime,
+                .teluguSolarTime,
+                .vietnameseSolarTime,
+                .vikramSolarTime:
+            return true
+            
+        default:
+            return false
+        } // switch self
+    } // var isSunriseTransitionCalendar
 
     var isHebrewCalendar: Bool {
         switch self {
@@ -390,10 +406,10 @@ extension ASACalendarCode {
     var type:  ASACalendarType {
         switch self {
         case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
-                .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .bahai, .bahaiSolarTime:
+                .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .banglaSolarTime, .malayalamSolarTime, .odiaSolarTime, .tamilSolarTime, .bahai, .bahaiSolarTime:
             return .solar
             
-        case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu:
+        case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu, .vietnameseSolarTime, .vikramSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .teluguSolarTime:
             return .lunisolar
             
         case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
@@ -411,10 +427,10 @@ extension ASACalendarCode {
         switch locationType {
         case .earthLocation:
             return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .chinese,
-//                    .hebrew,
                     .hebrewGRA, .hebrewMA,
-//                .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura,
-                    .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram, .bahaiSolarTime]
+                    .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime,
+//                .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram,
+                    .bahaiSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:

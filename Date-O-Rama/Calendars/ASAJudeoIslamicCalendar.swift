@@ -67,7 +67,7 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
     
     override func date(dateComponents: ASADateComponents) -> Date? {
         var applesDateComponents = dateComponents.applesDateComponents()
-        // The next part is to ensure we get the right day and don't screw up Sunrise/Sunset calculations
+        // The next part is to ensure we get the right day and don’t screw up Sunrise/Sunset calculations
         applesDateComponents.hour       = 12
         applesDateComponents.minute     =  0
         applesDateComponents.second     =  0
@@ -100,8 +100,8 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
     } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
     
-    // MARK: -
-    
+    // MARK: - Getting calendar information
+
     override func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
         // The maximum range limits of the values that a given component can take on.
         let applesComponent = component.calendarComponent()

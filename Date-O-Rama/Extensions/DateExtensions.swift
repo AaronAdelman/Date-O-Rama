@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 fileprivate extension ASACalendarCode {
-    var offsetFromJulianDay:  Double {
+    var offsetFromJulianDay: Double {
         switch self {
         case .julianDay:
             return 0.0
@@ -46,8 +46,8 @@ fileprivate extension ASACalendarCode {
 } // extension ASACalendarCode
 
 extension Date {
-    static let SECONDS_PER_DAY:  TimeInterval  = 24.0 * 60.0 * 60.0
-    static let SECONDS_PER_HOUR:  TimeInterval = 60.0 * 60.0
+    static let SECONDS_PER_DAY: TimeInterval  = 24.0 * 60.0 * 60.0
+    static let SECONDS_PER_HOUR: TimeInterval = 60.0 * 60.0
 
     func previousMidnight(timeZoneOffset: TimeInterval) -> Date {
         let secondsSinceGlobalEpoch = self.timeIntervalSince1970
@@ -59,9 +59,9 @@ extension Date {
     } // func previousMidnight(timeZoneOffset: TimeInterval) -> Date
 
     func previousMidnight(timeZone: TimeZone) -> Date {
-        let timeZoneOffset:  TimeInterval = TimeInterval(timeZone.secondsFromGMT(for: self))
+        let timeZoneOffset: TimeInterval = TimeInterval(timeZone.secondsFromGMT(for: self))
         return previousMidnight(timeZoneOffset: timeZoneOffset)
-    } // func previousMidnight(timeZone:  TimeZone) -> Date
+    } // func previousMidnight(timeZone: TimeZone) -> Date
 
     func dateToCalculateSolarEventsFor(timeZone: TimeZone) -> Date {
         return self.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: self)))
@@ -74,10 +74,10 @@ extension Date {
         return ( seconds / 86400.0 ) + 2440587.5
     } // var julianDate
 
-    static func date(julianDate:  Double) -> Date {
+    static func date(julianDate: Double) -> Date {
         let seconds = (julianDate - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
-    } // static func date(JulianDate:  Double) -> Date
+    } // static func date(JulianDate: Double) -> Date
 
     func julianDateWithTime(calendarCode: ASACalendarCode) -> Double {
         if calendarCode == .marsSolDate {
@@ -105,25 +105,25 @@ extension Date {
 //        return adjustedDate
 //    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
-    func julianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double) {
+    func julianDateComponents(calendarCode: ASACalendarCode) -> (day: Int, fractionOfDay: Double) {
         let full = self.julianDateWithTime(calendarCode: calendarCode)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
         
         return (day: day, fractionOfDay: fractionOfDay)
-    } // func julianDateComponents(calendarCode: ASACalendarCode) -> (day:  Int, fractionOfDay: Double)
+    } // func julianDateComponents(calendarCode: ASACalendarCode) -> (day: Int, fractionOfDay: Double)
 
-    func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double) {
+    func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day: Int, fractionOfDay: Double) {
         let full = self.julianDateWithTime(calendarCode: calendarCode)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
 
         let day = Int(dayAsDouble)
 
-        return (JulianDate: full, day:  day, fractionOfDay: fractionOfDay)
-    } // func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day:  Int, fractionOfDay: Double)
+        return (JulianDate: full, day: day, fractionOfDay: fractionOfDay)
+    } // func julianDateWithComponents(calendarCode: ASACalendarCode) -> (JulianDate: Double, day: Int, fractionOfDay: Double)
 
-    static func date(JulianDate:  Double, calendarCode: ASACalendarCode) -> Date {
+    static func date(JulianDate: Double, calendarCode: ASACalendarCode) -> Date {
         if calendarCode == .marsSolDate {
             return Date.date(MarsSolDate: JulianDate)
         }
@@ -131,7 +131,7 @@ extension Date {
         let offsetFromJulianDay = calendarCode.offsetFromJulianDay
         let seconds = ((JulianDate + offsetFromJulianDay) - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
-    } // static func date(JulianDate:  Double, calendarCode: ASACalendarCode) -> Date
+    } // static func date(JulianDate: Double, calendarCode: ASACalendarCode) -> Date
     
     var previousGMTNoon: Date {
         let thisJulianDay = floor(self.julianDate)
@@ -141,13 +141,18 @@ extension Date {
 } // extension Date
 
 extension Date {
-    func solarCorrected(locationData:  ASALocation, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
+    // TODO:  This needs to be updated to also handle Sunrise transition calendars.  Note the transition happens on the Sunrise after ISO midnight.
+    func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date??) {
+        if transitionEvent == .sunrise {
+            debugPrint(#file, #function, "This needs to be updated to also handle Sunrise transition calendars.")
+        }
+        
         let timeZone = locationData.timeZone
         let events = self.solarEvents(location: locationData.location, events: [transitionEvent], timeZone: timeZone)
 
         let sunset = events[transitionEvent]
 //        debugPrint("🔧", #file, #function, "self:", self, "sunset:", sunset as Any)
-        var result: (date:  Date, transition:  Date??)
+        var result: (date: Date, transition: Date??)
         if sunset == nil {
             // Guarding against there being no Sunset
             let sixPM: Date = self.sixPM(timeZone: timeZone)
@@ -171,21 +176,21 @@ extension Date {
         }
 
         return result
-    } // func solarCorrected(location:  CLLocation) -> Date
+    } // func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date??)
 
-    func noon(timeZone:  TimeZone) -> Date {
+    func noon(timeZone: TimeZone) -> Date {
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(12 * Date.SECONDS_PER_HOUR)
         return result
-    } // func noon(timeZone:  TimeZone) -> Date
+    } // func noon(timeZone: TimeZone) -> Date
 
-    func sixPM(timeZone:  TimeZone) -> Date {
+    func sixPM(timeZone: TimeZone) -> Date {
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(18 * Date.SECONDS_PER_HOUR)
         return result
-    } // func sixPM(timeZone:  TimeZone) -> Date
+    } // func sixPM(timeZone: TimeZone) -> Date
 
-    func sixPMYesterday(timeZone:  TimeZone) -> Date {
+    func sixPMYesterday(timeZone: TimeZone) -> Date {
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(6 * Date.SECONDS_PER_HOUR)
         return result
@@ -193,17 +198,17 @@ extension Date {
 } // extension Date
 
 extension Date {
-    var oneDayBefore:  Date {
+    var oneDayBefore: Date {
         return self.addingTimeInterval(-Date.SECONDS_PER_DAY)
     } // var oneDayBefore
     
-    var oneDayAfter:  Date {
+    var oneDayAfter: Date {
         return self.addingTimeInterval(Date.SECONDS_PER_DAY)
     } // var oneDayAfter
 } // extension Date
 
 extension Date {
-    func fractionalHours(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double) -> Double {
+    func fractionalHours(startDate: Date, endDate: Date, numberOfHoursPerDay: Double) -> Double {
         assert(endDate > startDate)
         assert(numberOfHoursPerDay > 0.0)
 
@@ -211,7 +216,7 @@ extension Date {
         let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
         let hours = seconds / hourLength
         return hours
-    } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
+    } // func fractionalHours(startDate: Date, endDate: Date) -> Double
 } // extension Date
 
 

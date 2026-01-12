@@ -52,6 +52,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         return .sunset
     } // var dateTransition: ASASolarEvent
     
+    // TODO:  This needs to be updated to also handle Sunrise transition calendars.
     func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -147,7 +148,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         
         assert(!(hours == 12.0 && daytime == true))
         return (hours: hours, daytime: daytime, valid: true)
-    } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool)
+    } // func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool)
     
     func timeString(hours: Double, daytime: Bool, valid: Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
         let NIGHT_SYMBOL    = "☽"
@@ -243,10 +244,11 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         }
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
     
-    public var supportsLocales: Bool = true
+    public var supportsLocales: Bool   = true
     
     public var supportsTimeZones: Bool = false
     
+    // TODO:  Needs to be updated to support Sunrise transition calendars
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -264,6 +266,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         return dayEnd
     } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
+    // TODO:  Needs to be updated to support Sunrise transition calendars
     func startOfNextDay(date: Date, locationData: ASALocation) -> Date {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -283,7 +286,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     
     public var supportsLocations: Bool = true
     
-    public var supportsTimes: Bool = true
+    public var supportsTimes: Bool     = true
     
     var supportedDateFormats: Array<ASADateFormat> = [
         .full
@@ -338,7 +341,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             return (fractionalHour: -1.0, dayHalf: ASADayHalf.night)
         }
         return (solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
-    } // func hoursMinutesSecondsComponents(date: Date, transition: Date, locationData: ASALocation) -> (hour: Int, minute: Int, second: Int, nanosecond: Int)
+    } // func timeComponents(date: Date, transition: Date??, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf)
     
     // TODO: Point of expansion
     func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
@@ -353,7 +356,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     
     
-    // MARK: - Getting Calendar Information
+    // MARK: - Getting calendar information
     
     // TODO: Point of expansion
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
@@ -416,6 +419,9 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             return .midnight
         }
     }
+    
+    
+    // MARK: - ASACalendarWithWeeks
     
     // TODO: Point of expansion
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
