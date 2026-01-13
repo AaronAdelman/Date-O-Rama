@@ -11,7 +11,11 @@ import SwiftUI
 
 // MARK: - Cells
 
-fileprivate let MINIMUM_SCALE_FACTOR: CGFloat =  0.7
+#if targetEnvironment(macCatalyst)
+fileprivate let MINIMUM_SCALE_FACTOR: CGFloat = 1.0
+#else
+fileprivate let MINIMUM_SCALE_FACTOR: CGFloat = 0.7
+#endif
 fileprivate let CELL_FONT: Font               = .caption2
 
 
@@ -103,7 +107,11 @@ struct ASAMiniCalendarView:  View {
             }
         }
         .environment(\.layoutDirection, (self.characterDirection == Locale.LanguageDirection.leftToRight ? .leftToRight :  .rightToLeft))
+#if targetEnvironment(macCatalyst)
+        .frame(width: CGFloat(daysPerWeek + 1) * magicHeight, height: magicHeight * 5, alignment: .center)
+#else
         .frame(maxWidth: CGFloat(daysPerWeek) * magicHeight, maxHeight: magicHeight * 5, alignment: .center)
+#endif
     }
 } // struct ASAMiniCalendarView
 
