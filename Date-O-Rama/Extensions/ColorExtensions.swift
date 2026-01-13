@@ -77,18 +77,6 @@ extension Color: Codable {
         case "gray":
             return .gray
 
-        case "primary":
-            return .primary
-
-        case "secondary":
-            return .secondary
-
-        case "accent":
-          return Color.accentColor
-
-        case "clear":
-            return .clear
-
         case "orange":
             return .orange
 
@@ -112,6 +100,12 @@ extension Color: Codable {
 
         case "teal":
             return Color.teal
+            
+        case "indigo":
+            return Color.indigo
+            
+        case "magenta":
+            return Color(uiColor: .magenta)
 
         default:
             return nil
