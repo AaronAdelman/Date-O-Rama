@@ -2,7 +2,7 @@
     titles: {"en": "Shia (times, Jafari)", "he": "שיעה (זמנים, ג׳עפארי)"},
     defaultLocale: "en",
     calendarCode: "hiq-solar*",
-    calendarColor: {red: 0.01, green: 1.0, blue: 0.2},
+    calendarColor: {name: "green"},
     events: [
         {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
         {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},

@@ -2,7 +2,7 @@
     titles: {"en": "Judaism (times)", "he": "יהדות (זמנים)"},
     defaultLocale: "he",
     calendarCode: "heb-solar*",
-    calendarColor: {red: 0.01, green: 0.2, blue: 1.0},
+    calendarColor: {name: "blue"},
     events: [
         {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
         {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},

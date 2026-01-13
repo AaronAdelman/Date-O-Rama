@@ -2,7 +2,7 @@
     titles: {"en": "Jewish planetary hours", "he": "שעות כוכבי־לכת יהודיות"},
     defaultLocale: "he",
     calendarCode: "heb*",
-    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
+    calendarColor: {name: "blue"},
     events: [
         {inherits: "Hour of Mercury", type: "span", start: {wkd: [1], ptType: "R2ST", zsuH: 0.0, dHalf:  "n"}, end: {wkd: [1], ptType: "R2ST", zsuH: 1.0, dHalf:  "n"}},
         {inherits: "Hour of the Moon", type: "span", start: {wkd: [1], ptType: "R2ST", zsuH: 1.0, dHalf:  "n"}, end: {wkd: [1], ptType: "R2ST", zsuH: 2.0, dHalf:  "n"}},

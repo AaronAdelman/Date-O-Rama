@@ -3,7 +3,7 @@
     "//": "Israel",
     defaultLocale: "he",
     calendarCode: "gre",
-    calendarColor: {red: 0.31, green: 0.67, blue: 0.8},
+    calendarColor: {name: "blue"},
     first: {era: 1, y: 1948},
     events: [
         {type: "D", start: {mon: 1, d: 11}, inherits: "Doctor’s Day", first: {era: 1, y: 1912}, emoji: "👨‍⚕️👩‍⚕️"},

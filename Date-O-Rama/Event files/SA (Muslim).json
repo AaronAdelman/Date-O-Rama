@@ -3,7 +3,7 @@
     "//": "Saudi Arabia",
     defaultLocale: "en",
     calendarCode: "hiq*",
-    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    calendarColor: {name: "green"},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Saudi_Arabia"},
     events: [
         {type: "nD", start: {mon: 9, d: -3}, end: {mon: 9, d: -1}, urls: {"en": "https://www.officeholidays.com/holidays/saudi-arabia/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},

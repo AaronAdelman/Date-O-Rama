@@ -2,7 +2,7 @@
     titles: {"en": "Western Christianity-derived", "he": "נגזרים מנצרות מערבית"},
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
+    calendarColor: {name: "red"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"az":"Köhnə Yeni il","be":"Стары Новы год","cy":"Hen Galan","de":"Alter Silvester","en":"Old New Year","es":"Año nuevo viejo","eu":"Urteberri zahar","fr":"Nouvel An orthodoxe","hr":"Julijanska Nova godina","hy":"Հին Նոր տարի","hyw":"Հին Նոր Տարին","id":"Tahun Baru Lama","it":"Capodanno ortodosso","ka":"ძველით ახალი წელი","kk":"Ескі Жаңа Жыл","lv":"Vecais Jaunais gads","mk":"Јулијанска нова година","pl":"Stary Nowy Rok","pt":"Velho ano-novo","ru":"Старый Новый год","si":"පැරණි නව වසර","sr":"Јулијанска нова година","th":"วันขึ้นปีใหม่เดิม","tr":"Eski Yeni Yıl","tt":"Иске Яңа ел","uk":"Старий Новий рік","xmf":"ჯვეშით ახალი წანა"}, notes: {"en": "Old New Year’s Day\nOrthodox New Year\nJulian New Year"}, urls: {"en": "https://www.daysoftheyear.com/days/old-new-years-day/"}},
     ]

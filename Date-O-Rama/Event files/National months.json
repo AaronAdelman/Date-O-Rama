@@ -2,7 +2,7 @@
     titles: {"en": "National months", "he": "חודשים לאומיים"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {red: 0.45, green: 0.70, blue: 0.95},
+    calendarColor: {name: "indigo"},
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
     events: [

@@ -4,7 +4,7 @@
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    calendarColor: {name: "green"},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Saudi_Arabia"},
     first: {era: 1, y: 1727},
     events: [

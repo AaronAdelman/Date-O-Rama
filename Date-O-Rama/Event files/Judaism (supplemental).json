@@ -2,7 +2,7 @@
     titles: {"en": "Judaism (supplemental)", "he": "יהדות (נוספים)"},
     defaultLocale: "he",
     calendarCode: "gre",
-    calendarColor: {red: 0.0, green: 0.0, blue: 1.0},
+    calendarColor: {name: "blue"},
     events: [
         {type: "D", start: {mon: 1, d: 15}, inherits: "Natl Bagel Day", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 11, d: 9}, inherits: "Intl Day against Fascism and Antisemitism", first: {era: 1, y: 2001}},

@@ -2,7 +2,7 @@
     titles: {"en": "Roman Religion", "he": "דת רומה"},
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {red: 0.35, green: 0.60, blue: 0.85},
+    calendarColor: {name: "gray"},
     urls: {"en": "https://en.wikipedia.org/wiki/Roman_festivals"},
     events: [
         {type: "D", start: {d: 1}, titles: {"ar":"غرة (تقويم)","bg":"Календи","br":"Calendae","ca":"Calendas","co":"Calenda","cs":"Římská datace#Kalendy","de":"Kalenden","el":"Καλένδες","en":"Calends","eo":"Kalendoj","es":"Calendas","et":"Kalendid","eu":"Kalenda","fr":"Calendes","it":"Calende","ka":"კალენდები","la":"Kalendae","mg":"Kalenda","mk":"Календи","nb":"Kalendae","nl":"Kalenden","nn":"Kalendae","oc":"Calendas","pl":"Kalendy","pt":"Calendas","ru":"Календы","sh":"Kalende","sk":"Kalendy","sl":"Kalende","sq":"Kalendat","sv":"Calends","uk":"Календи"}, notes: {"en": "Kalends"}},

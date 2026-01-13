@@ -3,7 +3,7 @@
     "BASED ON": "https://www.yeshiva.org.il/events/memorial",
     defaultLocale: "he",
     calendarCode: "heb*",
-    calendarColor: {red: 0.01, green: 0.2, blue: 1.0},
+    calendarColor: {name: "blue"},
     events: [
         {titles: {"he": "יום־שנה של שרה אימנו"}, type: "D", start: {mon: 1, d: 1}, first: {era: 0, y: 2085}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי מיימון אבי הרמב״ם"}, type: "D", start: {mon: 1, d: 1}, first: {era: 0, y: 1111}, inherits: "*DeathAnniv*"},

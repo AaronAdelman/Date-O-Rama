@@ -2,7 +2,7 @@
     titles: {"en": "Judaism (forgotten)", "he": "יהדות (נשכחים)"},
     defaultLocale: "he",
     calendarCode: "heb*",
-    calendarColor: {red: 0.27, green: 0.32, blue: 0.80},
+    calendarColor: {name: "blue"},
     events: [
         {titles: {"he": "שמחת כהן", "en": "Simḥath Kohen"}, type: "D", start: {mon: 1, d: 11}, notes: {"he": "עיונים של רבן שטיינזלץ על יומא ע׳ ע״א"}},
         {titles: {"he": "יום טוב שני של יום כיפור", "en": "Yom Kippur (yom ṭov sheni)"}, type: "D", start: {mon: 1, d: 11}, "excludeRegionCodes": ["IL", "PS"], notes: {"he": "ראש השנה כ״א ע״א"}},

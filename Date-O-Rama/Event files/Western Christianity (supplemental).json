@@ -2,7 +2,7 @@
     titles: {"en": "Western Christianity (supplemental)", "he": "נצרות מערבית (נוספים)"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
+    calendarColor: {name: "red"},
     events: [
         {inherits: "1st Advent Sunday", type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}, titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
