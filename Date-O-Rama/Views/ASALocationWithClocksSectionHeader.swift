@@ -33,7 +33,7 @@ struct ASALocationWithClocksSectionHeader: View {
         
         ViewThatFits(in: .horizontal) {
             // Regular/wide layout candidate
-            HStack {
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
                 if locationWithClocks.usesDeviceLocation {
                     ASALocationSymbol(locationManager: locationWithClocks.locationManager)
                 }
@@ -46,8 +46,7 @@ struct ASALocationWithClocksSectionHeader: View {
                     shouldCapitalize: shouldCapitalize
                 )
                 .layoutPriority(1)
-
-                Spacer(minLength: 8)
+                .fixedSize(horizontal: false, vertical: true)
 
                 Text(sectionTimeZoneString)
                     .foregroundStyle(.secondary)
@@ -69,6 +68,7 @@ struct ASALocationWithClocksSectionHeader: View {
                         shouldCapitalize: shouldCapitalize
                     )
                     .layoutPriority(1)
+                    .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Text(sectionTimeZoneString)
@@ -92,6 +92,7 @@ struct ASALocationWithClocksSectionHeader: View {
                         shouldCapitalize: shouldCapitalize
                     )
                     .layoutPriority(1)
+                    .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Text(sectionTimeZoneString)
@@ -114,10 +115,12 @@ struct ASALocationWithClocksSectionHeaderTitle: View {
                 .textCase(.uppercase)
                 .lineLimit(lineLimit)
                 .minimumScaleFactor(minimumScaleFactor)
+                .fixedSize(horizontal: false, vertical: true)
         } else {
             Text(title)
                 .lineLimit(lineLimit)
                 .minimumScaleFactor(minimumScaleFactor)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
@@ -127,3 +130,4 @@ struct ASALocationWithClocksSectionHeaderTitle: View {
 //        ASALocationWithClocksSectionHeader()
 //    }
 //}
+
