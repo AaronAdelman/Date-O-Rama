@@ -18,6 +18,36 @@
             endingLineNumber = "249"
             landmarkName = "templateEventSpecification(for:eventsFileTemplates:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F3BD254-6467-4E7A-96AA-00CF23481B1A - 48942b28b3620e89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Date_O_Rama.ASAEventSpecification.templateEventSpecification(for: Date_O_Rama.ASAEventSpecification, eventsFileTemplates: Swift.Optional&lt;Swift.Array&lt;Date_O_Rama.ASAEventSpecification&gt;&gt;) -&gt; Swift.Optional&lt;Date_O_Rama.ASAEventSpecification&gt;"
+                  moduleName = "Date-O-Rama.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventSpecification.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249">
+               </Location>
+               <Location
+                  uuid = "0F3BD254-6467-4E7A-96AA-00CF23481B1A - 48942b28b3620e89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Date_O_Rama.ASAEventSpecification.templateEventSpecification(for: Date_O_Rama.ASAEventSpecification, eventsFileTemplates: Swift.Optional&lt;Swift.Array&lt;Date_O_Rama.ASAEventSpecification&gt;&gt;) -&gt; Swift.Optional&lt;Date_O_Rama.ASAEventSpecification&gt;"
+                  moduleName = "Date-O-Rama.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventSpecification.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

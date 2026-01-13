@@ -57,47 +57,62 @@ extension Color: Codable {
     }
 
     // Known named colors map (add more as needed)
-    private static func color(forName raw: String) -> Color? {
-        let name = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+    private static func color(forName name: String) -> Color? {
         switch name {
-        case "black": return .black
-        case "white": return .white
-        case "red": return .red
-        case "green": return .green
-        case "blue": return .blue
-        case "gray", "grey": return .gray
-        case "primary": return .primary
-        case "secondary": return .secondary
-        case "accent", "tint":
-            #if os(iOS) || os(watchOS)
-            return Color.accentColor
-            #else
-            return nil
-            #endif
-        case "clear", "transparent": return .clear
-        case "orange": return .orange
-        case "yellow": return .yellow
-        case "pink": return .pink
-        case "purple": return .purple
-        case "brown": return .brown
+        case "black":
+            return .black
+
+        case "white":
+            return .white
+
+        case "red":
+            return .red
+
+        case "green":
+            return .green
+
+        case "blue":
+            return .blue
+
+        case "gray":
+            return .gray
+
+        case "primary":
+            return .primary
+
+        case "secondary":
+            return .secondary
+
+        case "accent":
+          return Color.accentColor
+
+        case "clear":
+            return .clear
+
+        case "orange":
+            return .orange
+
+        case "yellow":
+            return .yellow
+
+        case "pink":
+            return .pink
+
+        case "purple":
+            return .purple
+
+        case "brown":
+            return .brown
+
         case "cyan":
-            #if os(iOS) || os(watchOS)
             return Color.cyan
-            #else
-            return nil
-            #endif
+
         case "mint":
-            #if os(iOS) || os(watchOS)
             return Color.mint
-            #else
-            return nil
-            #endif
+
         case "teal":
-            #if os(iOS) || os(watchOS)
             return Color.teal
-            #else
-            return nil
-            #endif
+
         default:
             return nil
         }
