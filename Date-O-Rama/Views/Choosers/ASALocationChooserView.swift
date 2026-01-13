@@ -110,7 +110,7 @@ struct ASALocationChooserView: View {
                             Text($0.localizedName).tag($0.rawValue)
                         }
                     })
-                    .modifier(ASAPicker(compact: compact))
+                    .pickerStyle(SegmentedPickerStyle())
                 }
                 
                 if tempLocationData.type == .earthLocation {

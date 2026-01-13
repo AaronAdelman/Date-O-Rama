@@ -69,7 +69,7 @@ struct ASALocationCell:  View {
                                 Spacer()
                                 Text(verbatim: locationData.location.humanInterfaceRepresentation).multilineTextAlignment(.trailing)
                             }
-                        }
+                        
                         let name = locationData.properName
                         if name != nil {
                             HStack {
@@ -120,6 +120,7 @@ struct ASALocationCell:  View {
                                 Text((locationData.regionCode ?? "").flag)
                             }
                         }
+                    }
                     } // VStack
                 } // HStack
             }

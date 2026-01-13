@@ -963,8 +963,6 @@
 		A5EB60EA2892E4EC006009AF /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A5EB60EB2892E4EC006009AF /* ASALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocation.swift */; };
 		A5EB60EC2892E4EC006009AF /* ASALocationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516D4F128805B0500DF7639 /* ASALocationType.swift */; };
-		A5EB60EE2892ECFB006009AF /* ASAPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB60ED2892ECFB006009AF /* ASAPicker.swift */; };
-		A5EB60EF2892ECFB006009AF /* ASAPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB60ED2892ECFB006009AF /* ASAPicker.swift */; };
 		A5EB85182869DBB900C9321A /* LB (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB85172869DBB900C9321A /* LB (Julian).json */; };
 		A5EB85192869DBB900C9321A /* LB (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB85172869DBB900C9321A /* LB (Julian).json */; };
 		A5EB851B2869E9F700C9321A /* SY (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB851A2869E9F700C9321A /* SY (Julian).json */; };
@@ -1786,7 +1784,6 @@
 		A5EB4F912850EF0B00A32FB1 /* RS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RS.json; sourceTree = "<group>"; };
 		A5EB4F942850EFC700A32FB1 /* RO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RO.json; sourceTree = "<group>"; };
 		A5EB4F972850F6A200A32FB1 /* Sunni Islam (times, Karachi).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, Karachi).json"; sourceTree = "<group>"; };
-		A5EB60ED2892ECFB006009AF /* ASAPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPicker.swift; sourceTree = "<group>"; };
 		A5EB85172869DBB900C9321A /* LB (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "LB (Julian).json"; sourceTree = "<group>"; };
 		A5EB851A2869E9F700C9321A /* SY (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SY (Julian).json"; sourceTree = "<group>"; };
 		A5EB851D2869EC7E00C9321A /* EG (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "EG (Coptic).json"; sourceTree = "<group>"; };
@@ -2530,7 +2527,6 @@
 			isa = PBXGroup;
 			children = (
 				A5B6D03725AF294D005ECE8D /* ASAScalable.swift */,
-				A5EB60ED2892ECFB006009AF /* ASAPicker.swift */,
 			);
 			path = "View modifiers";
 			sourceTree = "<group>";
@@ -3906,7 +3902,6 @@
 				A566F47E2483D7CF000A05B5 /* ASAClock.swift in Sources */,
 				A59C436625A33E5B009C7F7C /* ASATimeText.swift in Sources */,
 				A5C2347E2ECE210D00C79C9D /* ASAOKButton.swift in Sources */,
-				A5EB60EF2892ECFB006009AF /* ASAPicker.swift in Sources */,
 				A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */,
 				A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */,
 				A5D135BB27C41C2200A1A525 /* ASACalendarWithMonths.swift in Sources */,
@@ -3940,7 +3935,6 @@
 				A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
-				A5EB60EE2892ECFB006009AF /* ASAPicker.swift in Sources */,
 				A5ED6E702E3117CA00CC2481 /* ASALocationTab.swift in Sources */,
 				A5166C782EE9DE8000F23048 /* ASALDMLApplier.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
