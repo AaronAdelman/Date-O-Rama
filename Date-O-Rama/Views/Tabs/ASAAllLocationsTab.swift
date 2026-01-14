@@ -17,7 +17,10 @@ struct ASAAllLocationsTab: View {
     @Binding var selectedTabIndex: Int
     @Binding var isShowingLocationSheet: Bool
     
-    @State private var isShowingNewLocationView = false
+    @State private var searchText: String = ""
+    @State private var searchResults: [CLPlacemark] = []
+//    @State private var isSearching: Bool = false
+    private let geocoder = CLGeocoder()
     
     var body: some View {
         GeometryReader { proxy in
@@ -31,21 +34,53 @@ struct ASAAllLocationsTab: View {
                     .frame(height: frameHeight)
                 
                 List {
-                    ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                        ASALocationWithClocksCell(
-                            locationWithClocks: locationWithClocks,
-                            now: $now)
-                        .environmentObject(userData)
-                        .onTapGesture {
-                            selectedTabIndex = index
-                            isShowingLocationSheet = true
+//                    if isSearching {
+                    if searchText.trimmingCharacters(in: .whitespacesAndNewlines).count > 2 {
+                        // Search results section
+                        Section(header: Text("Search Results")) {
+                            if searchResults.isEmpty {
+                                HStack {
+                                    ProgressView()
+                                    Text("Searching…")
+                                }
+                            } else {
+                                ForEach(searchResults, id: \.self) { placemark in
+                                    Button(action: {
+                                        handleSelection(of: placemark)
+                                    }) {
+                                        VStack(alignment: .leading, spacing: 2) {
+                                            Text(placemark.name ?? placemark.locality ?? "Unknown")
+                                                .font(.headline)
+                                            Text(formatSubtitle(for: placemark))
+                                                .font(.subheadline)
+                                                .foregroundStyle(.secondary)
+                                        }
+                                    }
+                                }
+                            }
+                        } // Section
+                    } else {
+                        // Existing locations list
+                        ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                            ASALocationWithClocksCell(
+                                locationWithClocks: locationWithClocks,
+                                now: $now)
+                            .environmentObject(userData)
+                            .onTapGesture {
+                                selectedTabIndex = index
+                                isShowingLocationSheet = true
+                            }
                         }
+                        .onMove(perform: moveClock)
                     }
-                    .onMove(perform: moveClock)
                 } // List
                 .scrollContentBackground(.hidden)
                 .listRowBackground(Color.clear)
                 .listStyle(.plain)
+                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search for a place")
+                .onChange(of: searchText) { oldValue, newValue in
+                    performGeocode(for: newValue)
+                }
                 .safeAreaInset(edge: .top) {
                     Color.clear.frame(height: 0)
                 }
@@ -55,12 +90,6 @@ struct ASAAllLocationsTab: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Menu {
-                        Button(action: {
-                            isShowingNewLocationView = true
-                        }) {
-                            Label("New location", systemImage: "plus.circle.fill")
-                        }
-                        
                         let existsDeviceLocation = userData.mainClocks.containsDeviceLocation
                         
                         if !existsDeviceLocation {
@@ -148,24 +177,57 @@ struct ASAAllLocationsTab: View {
                     }
                 }
             }
-            .sheet(isPresented: $isShowingNewLocationView) {
-                let locationManager = ASALocationManager.shared
-                let locationWithClocks = ASALocationWithClocks(
-                    location: locationManager.deviceLocation,
-                    clocks: [ASAClock.generic],
-                    usesDeviceLocation: false,
-                    locationManager: locationManager
-                )
-                ASALocationChooserView(
-                    locationWithClocks: locationWithClocks,
-                    shouldCreateNewLocationWithClocks: true
-                )
-                .environmentObject(userData)
-                .environmentObject(locationManager)
-            }
         } // GeometryReader
         .preferredColorScheme(.dark)
     } // body
+    
+    private func performGeocode(for query: String) {
+        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else {
+            // Clear state when query is empty
+//            isSearching = false
+            searchResults = []
+            geocoder.cancelGeocode()
+            return
+        }
+//        isSearching = true
+        searchResults = []
+        geocoder.cancelGeocode()
+        geocoder.geocodeAddressString(trimmed) { placemarks, error in
+            DispatchQueue.main.async {
+                if let error = error as? CLError, error.code == .geocodeFoundNoResult {
+                    self.searchResults = []
+//                    self.isSearching = false
+                    return
+                }
+                self.searchResults = placemarks ?? []
+//                self.isSearching = false
+            }
+        }
+    }
+
+    private func handleSelection(of placemark: CLPlacemark) {
+        // Build a location candidate from the placemark
+        guard let location = placemark.location else { return }
+ 
+        let locationManager = ASALocationManager.shared
+        let asaLocation = ASALocation.create(placemark: placemark, location: location)
+         let newLocationWithClocks = ASALocationWithClocks.generic(location: asaLocation, usesDeviceLocation: false, locationManager: locationManager)
+         userData.addLocationWithClocks(newLocationWithClocks)
+
+        self.searchText = ""
+        self.searchResults = []
+//        self.isSearching = false
+    }
+
+    private func formatSubtitle(for placemark: CLPlacemark) -> String {
+        let parts: [String] = [
+            placemark.locality,
+            placemark.administrativeArea,
+            placemark.country
+        ].compactMap { $0 }
+        return parts.joined(separator: ", ")
+    }
     
     private func moveClock(from source: IndexSet, to destination: Int) {
         userData.mainClocks.move(fromOffsets: source, toOffset: destination)

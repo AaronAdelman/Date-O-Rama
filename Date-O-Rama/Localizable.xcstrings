@@ -3534,6 +3534,7 @@
       }
     },
     "New location" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -3709,6 +3710,9 @@
         }
       }
     },
+    "Search for a place" : {
+
+    },
     "Search locales" : {
       "localizations" : {
         "he" : {
@@ -3718,6 +3722,12 @@
           }
         }
       }
+    },
+    "Search Results" : {
+
+    },
+    "Searching…" : {
+
     },
     "Send E-mail" : {
       "localizations" : {
