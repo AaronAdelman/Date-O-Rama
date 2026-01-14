@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 import CoreLocation
+import MapKit
 
 struct ASAAllLocationsTab: View {
     @EnvironmentObject var userData: ASAModel
@@ -78,8 +79,13 @@ struct ASAAllLocationsTab: View {
                 .listRowBackground(Color.clear)
                 .listStyle(.plain)
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search for a place")
-                .onChange(of: searchText) { oldValue, newValue in
-                    performGeocode(for: newValue)
+                .task(id: searchText) {
+                    let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+                    // Debounce: wait 350 ms after the latest change
+                    try? await Task.sleep(nanoseconds: 350_000_000)
+                    await MainActor.run {
+                        performGeocode(for: query)
+                    }
                 }
                 .safeAreaInset(edge: .top) {
                     Color.clear.frame(height: 0)
@@ -183,25 +189,35 @@ struct ASAAllLocationsTab: View {
     
     private func performGeocode(for query: String) {
         let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else {
-            // Clear state when query is empty
-//            isSearching = false
+        guard trimmed.count > 2 else {
             searchResults = []
             geocoder.cancelGeocode()
             return
         }
-//        isSearching = true
-        searchResults = []
+
+        // Cancel any in-flight CoreLocation geocoding
         geocoder.cancelGeocode()
-        geocoder.geocodeAddressString(trimmed) { placemarks, error in
+
+        // Build a local search request for multiple results
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = trimmed
+
+        // Prefer to bias results near the first saved location, if available
+//        if let firstCoord = userData.mainClocks.first?.location.location.coordinate {
+//            request.region = MKCoordinateRegion(
+//                center: firstCoord,
+//                span: MKCoordinateSpan(latitudeDelta: 60.0, longitudeDelta: 60.0)
+//            )
+//        }
+
+        let search = MKLocalSearch(request: request)
+        search.start { response, error in
             DispatchQueue.main.async {
-                if let error = error as? CLError, error.code == .geocodeFoundNoResult {
+                guard error == nil, let response = response else {
                     self.searchResults = []
-//                    self.isSearching = false
                     return
                 }
-                self.searchResults = placemarks ?? []
-//                self.isSearching = false
+                self.searchResults = response.mapItems.map { $0.placemark }
             }
         }
     }
