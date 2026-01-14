@@ -234,12 +234,69 @@
         }
       }
     },
+    "Add device location" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add device location"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף מיקום המתקן הזה"
+          }
+        }
+      }
+    },
     "Add external event" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add external event"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "הוסף אירוע חיצוני"
+          }
+        }
+      }
+    },
+    "Add universal Earth location" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add universal Earth location"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף מיקום כדור־הארץ אוניברסלי"
+          }
+        }
+      }
+    },
+    "Add universal Mars location" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add universal Mars location"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף מיקום מאדים אוניברסלי"
           }
         }
       }

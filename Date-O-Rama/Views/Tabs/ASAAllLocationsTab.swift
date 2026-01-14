@@ -61,6 +61,43 @@ struct ASAAllLocationsTab: View {
                             Label("New location", systemImage: "plus.circle.fill")
                         }
                         
+                        let existsDeviceLocation = userData.mainClocks.containsDeviceLocation
+                        
+                        if !existsDeviceLocation {
+                            Button(action: {
+                                let locationManager = ASALocationManager.shared
+                                let deviceLocation = locationManager.deviceLocation
+                                let newLocationWithClocks = ASALocationWithClocks.generic(location: deviceLocation, usesDeviceLocation: true, locationManager: locationManager)
+                                userData.addLocationWithClocks(newLocationWithClocks)
+                            }) {
+                                Label("Add device location", systemImage: "plus.circle.fill")
+                            }
+                        }
+                        
+                        let existsEarthUniversalLocation = userData.mainClocks.containsLocationOf(type: .earthUniversal)
+                        
+                        if !existsEarthUniversalLocation {
+                            Button(action: {
+                                let locationManager = ASALocationManager.shared
+                                let newLocationWithClocks = ASALocationWithClocks.generic(location: .earthUniversal, usesDeviceLocation: false, locationManager: locationManager)
+                                userData.addLocationWithClocks(newLocationWithClocks)
+                            }) {
+                                Label("Add universal Earth location", systemImage: "plus.circle.fill")
+                            }
+                        }
+                        
+                        let existsMarsUniversalLocation = userData.mainClocks.containsLocationOf(type: .marsUniversal)
+
+                        if !existsMarsUniversalLocation {
+                            Button(action: {
+                                let locationManager = ASALocationManager.shared
+                                let newLocationWithClocks = ASALocationWithClocks.generic(location: .marsUniversal, usesDeviceLocation: false, locationManager: locationManager)
+                                userData.addLocationWithClocks(newLocationWithClocks)
+                            }) {
+                                Label("Add universal Mars location", systemImage: "plus.circle.fill")
+                            }
+                        }
+                        
                         Divider()
                         
                         Group {
@@ -116,7 +153,7 @@ struct ASAAllLocationsTab: View {
                 let locationWithClocks = ASALocationWithClocks(
                     location: locationManager.deviceLocation,
                     clocks: [ASAClock.generic],
-                    usesDeviceLocation: true,
+                    usesDeviceLocation: false,
                     locationManager: locationManager
                 )
                 ASALocationChooserView(

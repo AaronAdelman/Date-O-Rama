@@ -78,4 +78,14 @@ extension Array where Element == ASALocationWithClocks {
         } // for entry in self
         return result
     } // var clocks: Array<ASAClock>
+    
+    var containsDeviceLocation: Bool {
+        let index = self.firstIndex(where: {$0.usesDeviceLocation})
+        return index != nil
+    } // var containsDeviceLocation: Bool
+    
+    func containsLocationOf(type: ASALocationType) -> Bool {
+        let index = self.firstIndex(where: {$0.location.type == type})
+        return index != nil
+    } // func containsLocationOf(type: ASALocationType) -> Bool
 } // extension Array where Element == ASALocationWithClocks
