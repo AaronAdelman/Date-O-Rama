@@ -18,6 +18,7 @@
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Holocaust Survivor Day"}, inherits: "Holocaust Memorial Day", urls: {"en": "https://www.holocaustsurvivorday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 7, d: 26}, inherits: "Natl Bagelfest Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en": "Entebbe Rescue Day"}, first: {era: 1, y: 1976}},
+        {type: "M", start: {mon: 1}, titles: {"en": "Matzo Ball Soup Month"}, first: {era: 1, y: 2026}, notes: {"en": "First reported on 2026-01-15 in a post by Marcy Hubelbank Kaufman in the Facebook group Two Jews Who Love Food."}, urls: {"en": "https://www.facebook.com/groups/145296007804683/posts/1219297540404519/"}, emoji: "🍲"},
         {type: "M", start: {mon: 11}, titles: {"en": "Mizrahi Heritage Month"}, notes: {"en": "Mizrahi Remembrance Month"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.jimena.org/mizrahi-remembrance-month/"}},
         {type: "M", start: {mon: 5}, inherits: "Jewish American Heritage Month", first: {era: 1, y: 2006}},
         {type: "nD", start: {mon: 2, d: 24, thruMon: 3, thruD: 2, wkd: [7], yLengths: [365]}, end: {mon: 3, d: 4, thruD: 10, wkd: [1]}, inherits: "Jewish Book Week", first: {era: 1, y: 1952}},
