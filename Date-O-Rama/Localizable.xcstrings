@@ -3711,7 +3711,20 @@
       }
     },
     "Search for a place" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חיפוש"
+          }
+        }
+      }
     },
     "Search locales" : {
       "localizations" : {
@@ -3723,11 +3736,21 @@
         }
       }
     },
-    "Search Results" : {
-
-    },
     "Searching…" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searching…"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחפש…"
+          }
+        }
+      }
     },
     "Send E-mail" : {
       "localizations" : {

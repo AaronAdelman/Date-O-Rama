@@ -38,7 +38,9 @@ struct ASAAllLocationsTab: View {
 //                    if isSearching {
                     if searchText.trimmingCharacters(in: .whitespacesAndNewlines).count > 2 {
                         // Search results section
-                        Section(header: Text("Search Results")) {
+                        Section(
+//                            header: Text("Search Results")
+                        ) {
                             if searchResults.isEmpty {
                                 HStack {
                                     ProgressView()
