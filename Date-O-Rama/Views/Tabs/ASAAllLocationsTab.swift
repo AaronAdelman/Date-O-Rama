@@ -20,8 +20,20 @@ struct ASAAllLocationsTab: View {
     
     @State private var searchText: String = ""
     @State private var searchResults: [CLPlacemark] = []
-//    @State private var isSearching: Bool = false
+    @State private var searchCompletions: [MKLocalSearchCompletion] = []
+    private let searchCompleter = MKLocalSearchCompleter()
     private let geocoder = CLGeocoder()
+    
+    private class CompleterDelegate: NSObject, MKLocalSearchCompleterDelegate {
+        var onUpdate: (([MKLocalSearchCompletion]) -> Void)?
+        func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
+            onUpdate?(completer.results)
+        }
+        func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
+            onUpdate?([])
+        }
+    }
+    @State private var completerDelegate = CompleterDelegate()
     
     var body: some View {
         GeometryReader { proxy in
@@ -35,33 +47,32 @@ struct ASAAllLocationsTab: View {
                     .frame(height: frameHeight)
                 
                 List {
-//                    if isSearching {
                     if searchText.trimmingCharacters(in: .whitespacesAndNewlines).count > 2 {
-                        // Search results section
-                        Section(
-//                            header: Text("Search Results")
-                        ) {
-                            if searchResults.isEmpty {
+                        // Suggestions section
+                        Section {
+                            if searchCompletions.isEmpty {
                                 HStack {
                                     ProgressView()
                                     Text("Searching…")
                                 }
                             } else {
-                                ForEach(searchResults, id: \.self) { placemark in
+                                ForEach(searchCompletions, id: \.self) { completion in
                                     Button(action: {
-                                        handleSelection(of: placemark)
+                                        resolveCompletion(completion)
                                     }) {
                                         VStack(alignment: .leading, spacing: 2) {
-                                            Text(placemark.name ?? placemark.locality ?? "Unknown")
+                                            Text(completion.title)
                                                 .font(.headline)
-                                            Text(formatSubtitle(for: placemark))
-                                                .font(.subheadline)
-                                                .foregroundStyle(.secondary)
+                                            if !completion.subtitle.isEmpty {
+                                                Text(completion.subtitle)
+                                                    .font(.subheadline)
+                                                    .foregroundStyle(.secondary)
+                                            }
                                         }
                                     }
                                 }
                             }
-                        } // Section
+                        }
                     } else {
                         // Existing locations list
                         ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
@@ -76,23 +87,36 @@ struct ASAAllLocationsTab: View {
                         }
                         .onMove(perform: moveClock)
                     }
-                } // List
+                }
                 .scrollContentBackground(.hidden)
                 .listRowBackground(Color.clear)
                 .listStyle(.plain)
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search for a place")
+                .onAppear {
+                    searchCompleter.delegate = completerDelegate
+                    // Prefer cities/localities. If you want broader results, comment this out.
+                    searchCompleter.resultTypes = [.address, .query]
+                    completerDelegate.onUpdate = { results in
+                        // Filter to likely city-like results by preferring those with non-empty subtitle
+                        self.searchCompletions = results
+                    }
+                }
                 .task(id: searchText) {
                     let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-                    // Debounce: wait 350 ms after the latest change
                     try? await Task.sleep(nanoseconds: 350_000_000)
                     await MainActor.run {
-                        performGeocode(for: query)
+                        if query.count > 2 {
+                            searchCompleter.queryFragment = query
+                        } else {
+                            searchCompletions = []
+                            searchResults = []
+                        }
                     }
                 }
                 .safeAreaInset(edge: .top) {
                     Color.clear.frame(height: 0)
                 }
-            } // ZStack
+            }
             .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -185,10 +209,25 @@ struct ASAAllLocationsTab: View {
                     }
                 }
             }
-        } // GeometryReader
+        }
         .preferredColorScheme(.dark)
-    } // body
+    }
     
+    private func resolveCompletion(_ completion: MKLocalSearchCompletion) {
+        let request = MKLocalSearch.Request(completion: completion)
+        // Optionally, set a broad region bias if desired in future
+        let search = MKLocalSearch(request: request)
+        search.start { response, error in
+            DispatchQueue.main.async {
+                guard error == nil, let item = response?.mapItems.first, let placemark = item.placemark as CLPlacemark? else {
+                    return
+                }
+                // Use existing selection flow
+                self.handleSelection(of: placemark)
+            }
+        }
+    }
+
     private func performGeocode(for query: String) {
         let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
         guard trimmed.count > 2 else {
@@ -230,11 +269,12 @@ struct ASAAllLocationsTab: View {
  
         let locationManager = ASALocationManager.shared
         let asaLocation = ASALocation.create(placemark: placemark, location: location)
-         let newLocationWithClocks = ASALocationWithClocks.generic(location: asaLocation, usesDeviceLocation: false, locationManager: locationManager)
-         userData.addLocationWithClocks(newLocationWithClocks)
+        let newLocationWithClocks = ASALocationWithClocks.generic(location: asaLocation, usesDeviceLocation: false, locationManager: locationManager)
+        userData.addLocationWithClocks(newLocationWithClocks)
 
         self.searchText = ""
         self.searchResults = []
+        self.searchCompletions = []
 //        self.isSearching = false
     }
 
