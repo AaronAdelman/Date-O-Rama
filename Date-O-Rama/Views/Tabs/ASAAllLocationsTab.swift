@@ -75,17 +75,19 @@ struct ASAAllLocationsTab: View {
                         }
                     } else {
                         // Existing locations list
-                        ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                            ASALocationWithClocksCell(
-                                locationWithClocks: locationWithClocks,
-                                now: $now)
-                            .environmentObject(userData)
-                            .onTapGesture {
-                                selectedTabIndex = index
-                                isShowingLocationSheet = true
+                        Section {
+                            ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                                ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                                .environmentObject(userData)
+                                .onTapGesture {
+                                    selectedTabIndex = index
+                                    isShowingLocationSheet = true
+                                }
                             }
-                        }
-                        .onMove(perform: moveClock)
+                            .onMove(perform: moveClock)
+                        } // Section
+                        .listRowSpacing(0.0)
+                        .listRowSeparator(.hidden)
                     }
                 }
                 .scrollContentBackground(.hidden)

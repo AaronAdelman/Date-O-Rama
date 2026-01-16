@@ -57,14 +57,13 @@ struct ASALocationWithClocksCell: View {
             Text(timeString)
                 .font(.largeTitle)
                 .minimumScaleFactor(0.5)
-                .lineLimit(3)
+                .lineLimit(1)
         }
         .foregroundStyle(Color.white)
-        .padding()
+        .padding(.all, 4.0)
         .background(cellBackground)
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
-        .listRowSeparator(.hidden)
-        .listRowBackground(Color.clear)
+        .frame(minHeight: 40.0)
     }
 } // struct ASALocationWithClocksCell
 
