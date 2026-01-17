@@ -146,7 +146,7 @@
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "National Write to Congress Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-write-to-congress-day/"}, first: {era: 1, y: 2006}, emoji: "✉️✍️", notes: {"en": "Created by Brian Higgins"}},
         {type: "D", start: {mon: 1, d: 3}, titles: {"en": "Humiliation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/humiliation-day/"}, first: {era: 1, y: 1863}, notes: {"en": "Created by Abraham Lincoln"}},
         {type: "D", start: {mon: 1, d: 8}, titles: {"en": "War on Poverty Day"}, urls: {"en": "https://www.daysoftheyear.com/days/war-on-poverty-day/"}, first: {era: 1, y: 1964}, notes: {"en": "Created by Lyndon B. Johnson"}},
-        {type: "D", start: {mon: 1, wkd: [2], nth: 3}, titles: {"en": "Idaho Human Rights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/idaho-human-rights-day/"}, first: {era: 1, y: 1990}},
+        {type: "D", start: {mon: 1, wkd: [2], nth: 3}, titles: {"en": "Idaho Human Rights Day"}, urls: {"en": "https://www.daysoftheyear.com/days/idaho-human-rights-day/"}, first: {era: 1, y: 1990}, notes: {"en": "Created by the Idaho Legislature"}},
         {type: "D", start: {mon: 1, wkd: [5], nth: -1}, titles: {"en": "NASA’s Day of Remembrance"}, urls: {"en": "https://nationaltoday.com/nasas-day-of-remembrance/"}, first: {era: 1, y: 2014}, emoji: "👨‍🚀👩‍🚀"},
         {type: "D", start: {mon: 10, d: 1}, inherits: "Intl Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "World Vegetarian Day", first: {era: 1, y: 1977}},
