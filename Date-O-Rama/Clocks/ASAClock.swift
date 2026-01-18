@@ -169,6 +169,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     public func dictionary(forComplication:  Bool, location: ASALocation, usesDeviceLocation: Bool) ->  Dictionary<String, Any> {
         //        debugPrint(#file, #function)
 
+        let builtInEventCalendarsFileNames = {
+            let temp = self.builtInEventCalendars.map{ $0.fileName }
+            
+            return Array(Set(temp))
+        }()
+        
         var result = [
             UUID_KEY:  uuid.uuidString,
             LOCALE_KEY:  localeIdentifier,
@@ -176,7 +182,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             DATE_FORMAT_KEY:  dateFormat.rawValue ,
             TIME_FORMAT_KEY:  timeFormat.rawValue ,
             TIME_ZONE_KEY:  location.timeZone.identifier,
-            BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
+            BUILT_IN_EVENT_CALENDARS_KEY:  builtInEventCalendarsFileNames,
             USES_DEVICE_LOCATION_KEY:  usesDeviceLocation,
             CELL_DATE_EVENT_VISIBILITY_KEY:  allDayEventVisibility.rawValue,
             CELL_TIME_EVENT_VISIBILITY_KEY: eventVisibility.rawValue,
@@ -258,7 +264,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if localeIdentifier != nil {
             newClock.localeIdentifier = localeIdentifier!
         }
-
+        
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
@@ -273,7 +279,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if dateFormat != nil {
             newClock.dateFormat = ASADateFormat(rawValue: dateFormat! )!
         }
-
+        
         let timeFormat = dictionary[TIME_FORMAT_KEY] as? String
         if timeFormat != nil {
             newClock.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
@@ -281,7 +287,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
         let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
         if builtInEventCalendarsFileNames != nil {
-            for fileName in builtInEventCalendarsFileNames! {
+            let temp = Set(builtInEventCalendarsFileNames!)
+            for fileName in temp {
                 let newEventCalendar = ASAEventCalendar(fileName: fileName)
                 if newEventCalendar.eventsFile != nil {
                     newClock.builtInEventCalendars.append(newEventCalendar)
