@@ -44,7 +44,6 @@ struct ASAEvent:  ASASingleEvent {
     var locationData:  ASALocation
     
     var geoLocation: CLLocation? {
-//        return self.locationData.location
         return nil
     } // var geoLocation: CLLocation?
     

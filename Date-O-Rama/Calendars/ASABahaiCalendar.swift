@@ -62,7 +62,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         return date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
-    override func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+    override func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let gregorianComponents = fixedDate.gregorianDateComponents(timeZone: locationData.timeZone)
 
         let bahaiComponents = GregorianCalendar.convert(year: gregorianComponents.year!, month: gregorianComponents.month!, day: gregorianComponents.day!, to: BahaiCalendar.self)
@@ -70,7 +70,7 @@ class ASABahaiCalendar: ASASolarTimeCalendar {
         let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
         
         return ASADateComponents(calendar: self, locationData: locationData, era: 0, year: bahaiComponents.year, month: bahaiComponents.month, weekday: gregorianComponents.weekday, day: bahaiComponents.day, solarHours: timeComponents.fractionalHour, dayHalf: timeComponents.dayHalf)
-    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
+    } // func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
     
     // MARK: -

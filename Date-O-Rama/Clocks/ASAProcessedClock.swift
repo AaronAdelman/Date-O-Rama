@@ -122,14 +122,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.miniCalendarWeekdayItems = nil
             self.miniCalendarDayItems = nil
         }
-//        let localeLanguage = {
-//            let clockLocaleIdentifier = clock.localeIdentifier
-//            if clockLocaleIdentifier == "" {
-//                return Locale.current.language
-//            }
-//            
-//            return Locale.Language(identifier: clockLocaleIdentifier)
-//        }()
+
         let localeLanguage = Locale.Language(identifier: clock.localeIdentifier.effectiveIdentifier)
         self.characterDirection = localeLanguage.characterDirection
         

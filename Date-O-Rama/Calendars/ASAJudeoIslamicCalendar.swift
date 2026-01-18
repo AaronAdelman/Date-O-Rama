@@ -76,7 +76,7 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
         return applesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
-    override func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+    override func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         var applesComponents = Set<Calendar.Component>()
         for component in components {
             let applesCalendarComponent = component.calendarComponent()
@@ -97,7 +97,7 @@ class ASAJudeoIslamicCalendar: ASASolarTimeCalendar {
             result.dayHalf = timeComponents.dayHalf
         }
         return result
-    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
+    } // func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
     
     // MARK: - Getting calendar information

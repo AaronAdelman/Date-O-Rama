@@ -1419,12 +1419,12 @@ class ASAEventCalendar {
             
             // According to the מגן אברהם
             otherDawn = solarEvents[.dawn72Minutes]!! // עלות השחר
-            let otherDusk = solarEvents[.dusk72Minutes]!! // צאת הכוכבים
+            let otherDusk = solarEvents[.dusk72Minutes]! // צאת הכוכבים
             
             let otherNightLength = otherDawn.timeIntervalSince(previousOtherDusk)
             otherNightHourLength = otherNightLength / HOURS_PER_DAY_HALF
             
-            let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
+            let otherDayLength = otherDusk!.timeIntervalSince(otherDawn)
             otherHourLength = otherDayLength / HOURS_PER_DAY_HALF
         }
         

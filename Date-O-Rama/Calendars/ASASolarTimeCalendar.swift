@@ -53,7 +53,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     } // var dateTransition: ASASolarEvent
     
     // TODO:  This needs to be updated to also handle Sunrise transition calendars.
-    func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool) {
+    func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -61,9 +61,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         if transition == nil {
             existsSolarTime = false
         }
-        if transition! == nil {
-            existsSolarTime = false
-        }
+
         if !existsSolarTime {
             return (hours: -1.0, daytime: false, valid: false)
         }
@@ -75,7 +73,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         var daytime: Bool
         let NUMBER_OF_HOURS = 12.0
         
-        let deoptionalizedTransition: Date = transition!!
+        let deoptionalizedTransition: Date = transition!
         if deoptionalizedTransition <= now  {
 //            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
@@ -96,16 +94,13 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
 
-            let rawDayHalfStart: Date?? = events[self.midPointTransition]
+            let rawDayHalfStart: Date? = events[self.midPointTransition] ?? nil
             
             if rawDayHalfStart == nil {
                 return (hours: -1.0, daytime: false, valid: false)
             }
-            if rawDayHalfStart! == nil {
-                return (hours: -1.0, daytime: false, valid: false)
-            }
             
-            dayHalfStart = rawDayHalfStart!!
+            dayHalfStart = rawDayHalfStart!
             
             var jiggeredNow = now
             if dayHalfStart > deoptionalizedTransition {
@@ -114,16 +109,13 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
                 jiggeredNow = now - Date.SECONDS_PER_DAY
                 let events = jiggeredNow.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
                 
-                let rawDayHalfStart: Date?? = events[self.midPointTransition]
+                let rawDayHalfStart: Date? = events[self.midPointTransition] ?? nil
                 
                 if rawDayHalfStart == nil {
                     return (hours: -1.0, daytime: false, valid: false)
                 }
-                if rawDayHalfStart! == nil {
-                    return (hours: -1.0, daytime: false, valid: false)
-                }
                 
-                dayHalfStart = rawDayHalfStart!!
+                dayHalfStart = rawDayHalfStart!
             }
             
 //            debugPrint(#file, #function, "Day half start:", dayHalfStart.formattedFor(timeZone: timeZone) as Any)
@@ -148,7 +140,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         
         assert(!(hours == 12.0 && daytime == true))
         return (hours: hours, daytime: daytime, valid: true)
-    } // func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date??) -> (hours: Double, daytime: Bool, valid: Bool)
+    } // func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date?) -> (hours: Double, daytime: Bool, valid: Bool)
     
     func timeString(hours: Double, daytime: Bool, valid: Bool, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
         let NIGHT_SYMBOL    = "☽"
@@ -175,7 +167,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             result = self.fractionalHoursTimeString(hours: hours, symbol: symbol, localeIdentifier: localeIdentifier)
         }
         return result
-    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation, transition: Date??) -> String
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation, transition: Date?) -> String
     
     func fractionalHoursTimeString(hours: Double, symbol: String, localeIdentifier: String) -> String {
         var result = ""
@@ -255,14 +247,12 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         let yesterday: Date = date.oneDayBefore
         let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         let events = fixedYesterday.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
-        let rawDayEnd: Date?? = events[self.dateTransition]
+        let rawDayEnd: Date? = events[self.dateTransition] ?? nil
         if rawDayEnd == nil {
             return date.sixPMYesterday(timeZone: timeZone)
         }
-        if rawDayEnd! == nil {
-            return date.sixPMYesterday(timeZone: timeZone)
-        }
-        let dayEnd: Date = rawDayEnd!! // שקיעה
+
+        let dayEnd: Date = rawDayEnd! // שקיעה
         return dayEnd
     } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
@@ -273,14 +263,12 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         
         let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         let events = fixedNow.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
-        let rawDayEnd: Date?? = events[self.dateTransition]
+        let rawDayEnd: Date? = events[self.dateTransition] ?? nil
         if rawDayEnd == nil {
             return date.sixPM(timeZone: timeZone)
         }
-        if rawDayEnd! == nil {
-            return date.sixPM(timeZone: timeZone)
-        }
-        let dayEnd: Date = rawDayEnd!!
+
+        let dayEnd: Date = rawDayEnd!
         return dayEnd
     } // func transitionToNextDay(now: Date, locationData: ASALocation) -> Date
     
@@ -335,18 +323,18 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     
     // MARK: - Extracting Components
     
-    func timeComponents(date: Date, transition: Date??, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf) {
+    func timeComponents(date: Date, transition: Date?, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf) {
         let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
         if !solarTimeComponents.valid {
             return (fractionalHour: -1.0, dayHalf: ASADayHalf.night)
         }
         return (solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
-    } // func timeComponents(date: Date, transition: Date??, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf)
+    } // func timeComponents(date: Date, transition: Date?, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf)
     
     // TODO: Point of expansion
-    func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
+    func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         return ASADateComponents(calendar: self, locationData: locationData)
-    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
+    } // func dateComponents(fixedDate: Date, transition: Date?, components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
         let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)

@@ -142,7 +142,7 @@ extension Date {
 
 extension Date {
     // TODO:  This needs to be updated to also handle Sunrise transition calendars.  Note the transition happens on the Sunrise after ISO midnight.
-    func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date??) {
+    func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date?) {
         if transitionEvent == .sunrise {
             debugPrint(#file, #function, "This needs to be updated to also handle Sunrise transition calendars.")
         }
@@ -152,7 +152,7 @@ extension Date {
 
         let sunset = events[transitionEvent]
 //        debugPrint("🔧", #file, #function, "self:", self, "sunset:", sunset as Any)
-        var result: (date: Date, transition: Date??)
+        var result: (date: Date, transition: Date?)
         if sunset == nil {
             // Guarding against there being no Sunset
             let sixPM: Date = self.sixPM(timeZone: timeZone)
@@ -168,15 +168,15 @@ extension Date {
             }
             assert(result.date >= self)
         } else if self >= sunset!! {
-            result = (self.noon(timeZone: timeZone).oneDayAfter, sunset)
+            result = (self.noon(timeZone: timeZone).oneDayAfter, sunset!)
             assert(result.date >= self)
         } else {
-            result = (self, sunset)
+            result = (self, sunset!)
             assert(result.date >= self)
         }
 
         return result
-    } // func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date??)
+    } // func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date?)
 
     func noon(timeZone: TimeZone) -> Date {
         let midnightToday = self.previousMidnight(timeZone: timeZone)

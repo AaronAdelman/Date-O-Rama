@@ -1196,11 +1196,11 @@ class Date_O_RamaTests: XCTestCase {
         let date = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 12, minute: 00, second: 00, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         let previousEvents = previousDate.solarEvents(location: location, events: [ASASolarEvent.sunrise, ASASolarEvent.sunset], timeZone: timeZone)
         let events = date.solarEvents(location: location, events: [ASASolarEvent.sunrise, ASASolarEvent.sunset], timeZone: timeZone)
-        let previousSunrise: Date?? = previousEvents[.sunrise]
-        let previousSunset: Date?? = previousEvents[.sunset]
-        let sunrise: Date?? = events[.sunrise]
-        let sunset: Date?? = events[.sunset]
-        debugPrint("🔹 \(name):", "Offset from GMT:", Double(timeZone.secondsFromGMT(for: date))/Date.SECONDS_PER_HOUR, "Previous Sunrise:", previousSunrise!!, "Previous Sunset:", previousSunset!!, "Sunrise:", sunrise!!, "Sunset:", sunset!!)
+        let previousSunrise: Date? = previousEvents[.sunrise]
+        let previousSunset: Date? = previousEvents[.sunset]
+        let sunrise: Date? = events[.sunrise]
+        let sunset: Date? = events[.sunset]
+        debugPrint("🔹 \(name):", "Offset from GMT:", Double(timeZone.secondsFromGMT(for: date))/Date.SECONDS_PER_HOUR, "Previous Sunrise:", previousSunrise!, "Previous Sunset:", previousSunset!, "Sunrise:", sunrise!, "Sunset:", sunset!)
     }
     
     func testSolarEvents() throws {
