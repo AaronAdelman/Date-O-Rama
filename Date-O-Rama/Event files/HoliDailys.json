@@ -3,7 +3,7 @@
     "//": "Jace Shoemaker-Galloway the “Queen of Holidays”",
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {red: 0.18, green: 0.80, blue: 0.71},
+    calendarColor: {name: "red"},
     urls: {"en": "https://jacegalloway.wixsite.com/holidays/jaces-holidailys"},
     emoji: "🐶🕶🥳",
     first: {era: 1, y: 2001},

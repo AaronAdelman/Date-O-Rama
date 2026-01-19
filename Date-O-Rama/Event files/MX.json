@@ -62,7 +62,7 @@
         {type: "D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
         {type: "D", start: {mon: 10, d: 31}, titles: {"es": "Día de las Brujas"}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "Day of the Little Angels", "es": "Día de los Inocentes"}},
-        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "Mariachi Day"}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}},
+        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "Mariachi Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mariachi-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Created by UNESCO (but not listed by them)"}},
         {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
         {inherits: "Grandparents’ Day", type: "D", start: {mon: 8, d: 28}},
         {type: "D", start: {mon: 3, d: 31}, titles: {"en": "Day of the Taco", "es": "Día del Taco"}, notes: {"en": "International Taco Day", "es": "Día Internacional del Taco"}, urls: {"en": "https://en.wikipedia.org/wiki/Taco_Day"}, emoji: "🌮", first: {era: 1, y: 2007}},

@@ -60,7 +60,7 @@
         {type: "D", start: {era: 1, y: 2022, mon: 11, d: 6}, inherits: "Dog Film Festival"},
         {type: "D", start: {era: 1, y: 2023, mon: 10, d: 23}, inherits: "Dog Film Festival"},
         {type: "D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, titles: {"en": "Weedless Wednesday"}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}},
-        {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, inherits: "New Year’s Day (in lieu)", locations: {"en": "Saskatchewan"}},
+        {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, locations: {"en": "Saskatchewan"}},
         {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Shawarma Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 10, d: 18}, titles: {"en": "Health Care Aide Day"}, urls: {"en": "https://www.daysoftheyear.com/days/health-care-aide-day/"}, first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 10, d: 18}, titles: {"en":"Persons Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Persons_Day"}, first: {era: 1, y: 1979}},
@@ -156,6 +156,7 @@
         {type: "D", start: {mon: 10, d: 11}, inherits: "Natl Coming Out Day", first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 10}, inherits: "LGBTQ History Month", first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Buy Nothing Day", first: {era: 1, y: 1997}},
+        {type: "D", start: {mon: 1, d: 21, thruD: 27, wkd: [4]}, titles: {"ar":"بيل: لنتحدث","en":"Bell Let’s Talk", "fr": "Bell Cause pour la cause"}, urls: {"en": "https://letstalk.bell.ca/"}, emoji: "💬🙂", first: {era: 1, y: 2011}, notes: {"en": "Bell Let’s Talk Day\nCreated by Bell Canada"}, inherits: "*MedAwareness*"},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Canadian Library Month"}, urls: {"en": "https://librarianship.ca/features/canadian-library-month/"}, first: {era: 1, y: 2006}, emoji: "📚", notes: {"en": "Created by Canadian Library Association"}, overlappingSubEvents: [
             {type: "D", start: {mon: 10, wkd: [6], nth: 3}, titles: {"en": "Canadian Library Workers Day", "fr": "Journeé canadienne des employés des bibliothéques"}, urls: {"en": "https://librarianship.ca/event/canadian-library-workers-day-2024/"}, emoji: "📚"},
