@@ -17,11 +17,11 @@ public class ASAUnknownCalendar: ASACalendar {
     
     var defaultTimeFormat: ASATimeFormat = .medium
     
-    var supportedDateFormats: Array<ASADateFormat> = []
+    var supportedDateFormats: Array<ASADateFormat> = [.full]
     
-    var supportedWatchDateFormats: Array<ASADateFormat> = []
+    var supportedWatchDateFormats: Array<ASADateFormat> = [.full]
     
-    var supportedTimeFormats: Array<ASATimeFormat> = []
+    var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
     
     var supportsLocales: Bool = false
     

@@ -325,71 +325,71 @@ extension ASACalendarCode {
            case ASACalendarCode.republicOfChina:
                identifier = .republicOfChina
                
-           case .bangla:
+           case .bangla, .banglaSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .bangla
                } else {
                    identifier = nil
                }
                
-           case .dangi:
+           case .dangi, .dangiSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .dangi
                } else {
                    identifier = nil
                }
-           case .gujarati:
+           case .gujarati, .gujaratiSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .gujarati
                } else {
                    identifier = nil
                }
-           case .kannada:
+           case .kannada, .kannadaSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .kannada
                } else {
                    identifier = nil
                }
-           case .malayalam:
+           case .malayalam, .malayalamSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .malayalam
                } else {
                    identifier = nil
                }
-           case .marathi:
+           case .marathi, .marathiSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .marathi
                } else {
                    identifier = nil
                }
-           case .odia:
+           case .odia, .odiaSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .odia
                } else {
                    identifier = nil
                }
-           case .tamil:
+           case .tamil, .tamilSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .tamil
                } else {
                    identifier = nil
                }
                
-           case .telugu:
+           case .telugu, .teluguSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .telugu
                } else {
                    identifier = nil
                }
                
-           case .vietnamese:
+           case .vietnamese, .vietnameseSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .vietnamese
                } else {
                    identifier = nil
                }
                
-           case .vikram:
+           case .vikram, .vikramSolarTime:
                if #available(iOS 26.0, watchOS 26.0, *) {
                    identifier = .vikram
                } else {
