@@ -28,6 +28,8 @@ class ASACalendarFactory {
             return ASAJulianCalendar(calendarCode: code)
         } else if code == .bahaiSolarTime {
             return ASABahaiCalendar(calendarCode: code)
+        } else if code == .vikramSolarTime {
+            return ASASouthIndianCalendar(calendarCode: code)
         }
      
         return ASAUnknownCalendar(calendarCode: code)

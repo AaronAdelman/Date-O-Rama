@@ -505,6 +505,9 @@
 		A5AAA7502657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5AAA7512657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5AB79462F181CC6008E2F31 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB79452F181CC6008E2F31 /* ASALocationChooserView.swift */; };
+		A5AB79772F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB79762F1FC27A008E2F31 /* ASASouthIndianCalendar.swift */; };
+		A5AB79782F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB79762F1FC27A008E2F31 /* ASASouthIndianCalendar.swift */; };
+		A5AB79792F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB79762F1FC27A008E2F31 /* ASASouthIndianCalendar.swift */; };
 		A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5ABBA2C27155A2100ED7D5F /* Atheism.json */; };
 		A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5ABBA2C27155A2100ED7D5F /* Atheism.json */; };
 		A5ADF4CE2B30C894004F6166 /* ME (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5ADF4CD2B30C893004F6166 /* ME (Julian).json */; };
@@ -1534,6 +1537,7 @@
 		A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEditExternalEventButton.swift; sourceTree = "<group>"; };
 		A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACompactForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A5AB79452F181CC6008E2F31 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
+		A5AB79762F1FC27A008E2F31 /* ASASouthIndianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASouthIndianCalendar.swift; sourceTree = "<group>"; };
 		A5ABBA2C27155A2100ED7D5F /* Atheism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Atheism.json; sourceTree = "<group>"; };
 		A5ADF4CD2B30C893004F6166 /* ME (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ME (Julian).json"; sourceTree = "<group>"; };
 		A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailView.swift; sourceTree = "<group>"; };
@@ -1990,6 +1994,7 @@
 				A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */,
 				A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */,
 				A53A5B032451AFDC005F9876 /* ASASolarTimeCalendar.swift */,
+				A5AB79762F1FC27A008E2F31 /* ASASouthIndianCalendar.swift */,
 				A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */,
 			);
 			path = Calendars;
@@ -3869,6 +3874,7 @@
 				A5E75B392EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */,
 				A566F47C2483D7CF000A05B5 /* ASADateFormat.swift in Sources */,
 				A5166C752EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */,
+				A5AB79792F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */,
 				A5DC147226C4488E00A109B6 /* ASAEventSpecificationType.swift in Sources */,
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A576C3952819762E005AC73D /* Line.swift in Sources */,
@@ -4016,6 +4022,7 @@
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
 				A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
 				A5B816452541A3A200E309E0 /* ASALocationWithClocksSectionView.swift in Sources */,
+				A5AB79772F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */,
 				A5A6FD5027BEC504003595D5 /* ASADateFormatPatternComponent.swift in Sources */,
 				A53437512857971800F8E8AF /* ASABoothCalendar.swift in Sources */,
 				A5F154AF2ECD961500A22FCF /* ASADatePickerEnsemble.swift in Sources */,
@@ -4110,6 +4117,7 @@
 				A5EB60E82892E4EB006009AF /* ASALocation.swift in Sources */,
 				A59D805A2600C6F900FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A5166C7D2EE9E47400F23048 /* ASACalendarWithAMAndPM.swift in Sources */,
+				A5AB79782F1FC27A008E2F31 /* ASASouthIndianCalendar.swift in Sources */,
 				A557AD1225DD495400A264B6 /* ArrayExtensions.swift in Sources */,
 				A505E6DA27903D7F00D09A74 /* ASAPointEventType.swift in Sources */,
 				A557AD0B25DD495400A264B6 /* TimeZoneExtensions.swift in Sources */,

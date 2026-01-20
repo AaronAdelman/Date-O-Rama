@@ -430,7 +430,7 @@ extension ASACalendarCode {
                     .hebrewGRA, .hebrewMA,
                     .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime,
 //                .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram,
-                    .bahaiSolarTime]
+                    .bahaiSolarTime, .vikramSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:
