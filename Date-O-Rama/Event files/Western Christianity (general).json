@@ -53,7 +53,7 @@
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {titles: {"en": "Feast of St. Cyril of Jerusalem"}, type: "D", start: {mon: 3, d: 18}},
 
-        {inherits: "St. Joseph’s Day", type: "D", start: {mon: 3, d: 19}},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day"},
 
         {titles: {"en": "Feast of St. Turibius of Mogrovejo"}, type: "D", start: {mon: 3, d: 23}},
 

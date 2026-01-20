@@ -101,7 +101,7 @@
         {type: "D", start: {mon: 3, d: 7}, titles: {"en": "Tagum City Day", "fil": "Araw ng Tagum"}},
         {type: "D", start: {mon: 3, d: 8}, titles: {"en": "Davao de Oro Foundation Day", "fil": "Araw ng Davao de Oro"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Panay Liberation Day", "fil": "Araw ng Liberasyon ng Panay"}, first: {era: 1, y: 1945}, urls: {"en": "https://en.wikipedia.org/wiki/Panay_Liberation_Day"}},
-        {inherits: "St. Joseph’s Day", type: "D", start: {mon: 3, d: 19}, notes: {"en": "Sulyog Festival"}},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day", notes: {"en": "Sulyog Festival"}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "San Fabian Day", "fil": "Araw ng San Fabian"}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Calapan City Foundation Day", "fil": "Araw ng Pagkakatatag ng Syudad ng Calapan"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 3, d: 22}, titles: {"en": "Malaybalay City Charter Day", "fil": "Araw ng Pribilehiyo ng Lungsod ng Malaybalay"}},
