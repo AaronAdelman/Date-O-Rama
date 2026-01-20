@@ -46,53 +46,24 @@ struct ASAAllLocationsTab: View {
                 Spacer()
                     .frame(height: frameHeight)
                 
-                List {
+                Group {
                     if searchText.trimmingCharacters(in: .whitespacesAndNewlines).count > 2 {
-                        // Suggestions section
-                        Section {
-                            if searchCompletions.isEmpty {
-                                HStack {
-                                    ProgressView()
-                                    Text("Searching…")
-                                }
-                            } else {
-                                ForEach(searchCompletions, id: \.self) { completion in
-                                    Button(action: {
-                                        resolveCompletion(completion)
-                                    }) {
-                                        VStack(alignment: .leading, spacing: 2) {
-                                            Text(completion.title)
-                                                .font(.headline)
-                                            if !completion.subtitle.isEmpty {
-                                                Text(completion.subtitle)
-                                                    .font(.subheadline)
-                                                    .foregroundStyle(.secondary)
-                                            }
-                                        }
-                                    }
-                                }
+                        SearchingLocationsListView(
+                            searchText: $searchText,
+                            searchCompletions: $searchCompletions,
+                            onSelectCompletion: { completion in
+                                resolveCompletion(completion)
                             }
-                        }
+                        )
                     } else {
-                        // Existing locations list
-                        Section {
-                            ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                                ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                                .environmentObject(userData)
-                                .onTapGesture {
-                                    selectedTabIndex = index
-                                    isShowingLocationSheet = true
-                                }
-                            }
-                            .onMove(perform: moveClock)
-                        } // Section
-                        .listRowSpacing(0.0)
-                        .listRowSeparator(.hidden)
+                        SavedLocationsListView(
+                            now: $now,
+                            selectedTabIndex: $selectedTabIndex,
+                            isShowingLocationSheet: $isShowingLocationSheet
+                        )
+                        .environmentObject(userData)
                     }
                 }
-                .scrollContentBackground(.hidden)
-                .listRowBackground(Color.clear)
-                .listStyle(.plain)
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search for a place")
                 .onAppear {
                     searchCompleter.delegate = completerDelegate
@@ -295,6 +266,84 @@ struct ASAAllLocationsTab: View {
         userData.mainClocksVersion += 1 // 🔄 Force update
     }
 } // struct ASAAllLocationsTab
+
+
+// MARK: -
+
+private struct SearchingLocationsListView: View {
+    @Binding var searchText: String
+    @Binding var searchCompletions: [MKLocalSearchCompletion]
+    var onSelectCompletion: (MKLocalSearchCompletion) -> Void
+
+    var body: some View {
+        List {
+            if searchCompletions.isEmpty {
+                HStack {
+                    ProgressView()
+                    Text("Searching…")
+                }
+            } else {
+                ForEach(searchCompletions, id: \.self) { completion in
+                    Button(action: {
+                        onSelectCompletion(completion)
+                    }) {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(completion.title)
+                                .font(.headline)
+                            if !completion.subtitle.isEmpty {
+                                Text(completion.subtitle)
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scrollContentBackground(.hidden)
+        .listRowBackground(Color.clear)
+        .listStyle(.plain)
+    }
+}
+
+
+// MARK: -
+
+private struct SavedLocationsListView: View {
+    @EnvironmentObject var userData: ASAModel
+    @Binding var now: Date
+    @Binding var selectedTabIndex: Int
+    @Binding var isShowingLocationSheet: Bool
+
+    var body: some View {
+        List {
+            ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
+                ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                    .environmentObject(userData)
+                    .onTapGesture {
+                        selectedTabIndex = index
+                        isShowingLocationSheet = true
+                    }
+                    .listRowSeparator(.hidden)
+                    .listRowSpacing(0.0)
+            }
+            .onMove { indices, newOffset in
+                // Delegate move to parent via environment
+                userData.mainClocks.move(fromOffsets: indices, toOffset: newOffset)
+                userData.savePreferences(code: .clocks)
+                userData.mainClocksVersion += 1
+            }
+        }
+        .scrollContentBackground(.hidden)
+        .listRowBackground(Color.clear)
+        .listStyle(.plain)
+//        .listSectionSeparator(.hidden)
+//        .listRowSpacing(0.0)
+    }
+}
+
+
+// MARK: -
 
 let EARTH_UNIVERSAL_LATITUDE = 0.0
 let EARTH_UNIVERSAL_LONGITUDE = 0.0

@@ -62,7 +62,7 @@ struct ASALocationWithClocksCell: View {
         .foregroundStyle(Color.white)
         .padding(.all, 4.0)
         .background(cellBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 8.0))
+        .clipShape(RoundedRectangle(cornerRadius: 16.0))
         .frame(minHeight: 40.0)
     }
 } // struct ASALocationWithClocksCell
