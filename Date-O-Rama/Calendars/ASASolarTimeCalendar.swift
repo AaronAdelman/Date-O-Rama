@@ -26,7 +26,16 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
-        assert(fixedNow >= now)
+        
+//        switch self.dateTransition {
+//        case .dawn72Minutes, .sunrise:
+//            assert(fixedNow < now)
+//        case .sunset, .dusk72Minutes:
+//            assert(fixedNow >= now)
+//        default:
+//            assert(0 == 0)
+//        }
+        
 //        debugPrint("📅", #file, #function, "fixedNow:", fixedNow.formattedFor(timeZone: timeZone) as Any, "transition:", transition.formattedFor(timeZone: timeZone) as Any)
         
         let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.era, .year, .month, .day, .weekday, .fractionalHour, .dayHalf], from: now, locationData: locationData)

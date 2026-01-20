@@ -112,10 +112,16 @@ struct ASADateComponents:  Equatable {
 
 extension ASADateComponents {
     func applesDateComponents() -> DateComponents {
-        let title = self.calendar.calendarCode.equivalentCalendarIdentifier
+        let identifier = self.calendar.calendarCode.equivalentCalendarIdentifier
         
-        let calendar = Calendar(identifier: title!)
         var dateComponents = DateComponents()
+
+        guard let identifier = identifier else {
+            debugPrint(#file, #function, "Calendar code \(self.calendar.calendarCode) has no equivalent calendar identifier!")
+            return dateComponents
+        }
+        
+        let calendar = Calendar(identifier: identifier)
         
         dateComponents.calendar = calendar
         dateComponents.timeZone = self.locationData.timeZone

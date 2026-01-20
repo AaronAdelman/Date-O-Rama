@@ -141,42 +141,68 @@ extension Date {
 } // extension Date
 
 extension Date {
-    // TODO:  This needs to be updated to also handle Sunrise transition calendars.  Note the transition happens on the Sunrise after ISO midnight.
+    // This function is meant to report what Date to use when asking Apple's Calendar object what date it is.
     func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date?) {
-        if transitionEvent == .sunrise {
-            debugPrint(#file, #function, "This needs to be updated to also handle Sunrise transition calendars.")
-        }
-        
         let timeZone = locationData.timeZone
         let events = self.solarEvents(location: locationData.location, events: [transitionEvent], timeZone: timeZone)
+        let transitionTimeOptional = events[transitionEvent] // Date?
 
-        let sunset = events[transitionEvent]
-//        debugPrint("🔧", #file, #function, "self:", self, "sunset:", sunset as Any)
+        // Unified handling for both sunset and sunrise transitions.
+        // For sunset-transition calendars: if self >= sunset, advance to next civil day for Apple Calendar queries.
+        // For sunrise-transition calendars: if self < sunrise, regress to previous civil day for Apple Calendar queries.
         var result: (date: Date, transition: Date?)
-        if sunset == nil {
-            // Guarding against there being no Sunset
-            let sixPM: Date = self.sixPM(timeZone: timeZone)
-            result = (sixPM, sixPM)
-//            assert(result.date >= self)
-        } else if sunset! == nil {
-            // Guarding against there being no Sunset
-            let sixPM: Date = self.sixPM(timeZone: timeZone)
-            result = (sixPM, sixPM)
-            if self < sixPM {
-//                debugPrint(#file, #function, result, self)
-                result.date = self
-            }
-            assert(result.date >= self)
-        } else if self >= sunset!! {
-            result = (self.noon(timeZone: timeZone).oneDayAfter, sunset!)
-            assert(result.date >= self)
-        } else {
-            result = (self, sunset!)
-            assert(result.date >= self)
-        }
 
-        return result
+        switch transitionEvent {
+        case .sunset, .dusk72Minutes:
+            guard let transitionTime = transitionTimeOptional else {
+                // No sunset available; use 6 PM today as a reasonable fallback anchor
+                let sixPM = self.sixPM(timeZone: timeZone)
+                result = (sixPM, sixPM)
+                return result
+            }
+            if self >= transitionTime! {
+                // After sunset -> treat as next civil day for calendar queries
+                result = (self.noon(timeZone: timeZone).oneDayAfter, transitionTime)
+            } else {
+                // Before sunset -> remain on current civil day
+                result = (self, transitionTime)
+            }
+            return result
+
+        case .sunrise:
+            guard let transitionTime = transitionTimeOptional else {
+                // No sunrise available; use 6 PM yesterday as a safe fallback anchor
+                let sixPMYesterday = self.sixPMYesterday(timeZone: timeZone)
+                result = (sixPMYesterday, sixPMYesterday)
+                return result
+            }
+            if self < transitionTime! {
+                // Before sunrise -> treat as previous civil day, and there is no sunrise yet for that day
+                let previousNoon = self.noon(timeZone: timeZone).oneDayBefore
+                result = (previousNoon, nil)
+            } else {
+                // On/after sunrise -> remain on current civil day
+                result = (self, transitionTime)
+            }
+            return result
+
+        default:
+            // Fallback: behave like standard civil day (no shift). Keep transition if available.
+            if let t = transitionTimeOptional {
+                result = (self, t)
+            } else {
+                // If no transition info, fall back to noon of current day
+                result = (self.noon(timeZone: timeZone), nil)
+            }
+            return result
+        }
     } // func solarCorrected(locationData: ASALocation, transitionEvent: ASASolarEvent) -> (date: Date, transition: Date?)
+
+    func sixAM(timeZone: TimeZone) -> Date {
+        let midnightToday = self.previousMidnight(timeZone: timeZone)
+        let result = midnightToday.addingTimeInterval(6 * Date.SECONDS_PER_HOUR)
+        return result
+    } // func sixPM(timeZone: TimeZone) -> Date
 
     func noon(timeZone: TimeZone) -> Date {
         let midnightToday = self.previousMidnight(timeZone: timeZone)

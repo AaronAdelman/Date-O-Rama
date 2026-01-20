@@ -33,7 +33,6 @@ struct ASASolarEvent:  Hashable {
 
 
 extension Date {
-
     func solarEvents(location: CLLocation, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
         var solarEventsGregorianCalendar = Calendar(identifier: .gregorian)
 
