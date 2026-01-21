@@ -20,7 +20,7 @@ struct ASALocaleChooserView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
     
-    @State var providedLocaleIdentifiers:  Array<String>?
+//    @State var providedLocaleIdentifiers:  Array<String>?
 
     @State var searchText = ""
 
@@ -40,11 +40,11 @@ struct ASALocaleChooserView: View {
     
     var body: some View {
         List {
-            if providedLocaleIdentifiers == nil {
+//            if providedLocaleIdentifiers == nil {
                 TextField("Search locales", text: $searchText)
 //                    .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
+//            }
             
             ForEach(self.filteredLocales()) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier, clock: clock, location: location)
