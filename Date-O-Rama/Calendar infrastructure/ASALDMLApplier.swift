@@ -243,8 +243,6 @@ struct ASALDMLApplier {
     } // func dateString(ldmlCalendar: ASALDMLCalendar, dateComponents: ASADateComponents, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
     func timeString(ldmlCalendar: ASALDMLCalendar, dateComponents: ASADateComponents, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        var calendar = ldmlCalendar
-        
         self.dateFormatter.timeStyle = .medium // As of this writing, only the medium time style (more or less) is supported.
         self.dateFormatter.dateStyle = .none
         let timeFormatPattern = self.dateFormatter.dateFormat ?? ""
