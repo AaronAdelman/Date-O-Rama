@@ -120,7 +120,7 @@ enum ASACalendarType {
 extension ASACalendarCode {
     var localizedName:  String {
         switch self {
-        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .hebrewMA, .julian, .bahaiSolarTime, .dangiSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .malayalamSolarTime, .marathiSolarTime, .odiaSolarTime, .tamilSolarTime, .teluguSolarTime, .vietnameseSolarTime, .vikramSolarTime:
+        case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .hebrewMA, .julian, .bahaiSolarTime:
             return NSLocalizedString(self.rawValue, comment: "")
             
         case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:

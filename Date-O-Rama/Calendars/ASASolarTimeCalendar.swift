@@ -27,14 +27,18 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         
-//        switch self.dateTransition {
-//        case .dawn72Minutes, .sunrise:
-//            assert(fixedNow < now)
-//        case .sunset, .dusk72Minutes:
-//            assert(fixedNow >= now)
-//        default:
-//            assert(0 == 0)
-//        }
+        switch self.dateTransition {
+        case .dawn72Minutes, .sunrise:
+            if !(fixedNow <= now) {
+                debugPrint(#file, #function, "!(fixedNow <= now)", calendarCode, fixedNow, now)
+            }
+        case .sunset, .dusk72Minutes:
+            if !(fixedNow >= now) {
+                debugPrint(#file, #function, "!(fixedNow >= now)", calendarCode, fixedNow, now)
+            }
+        default:
+            debugPrint(#file, #function, "Unknown date transition!")
+        }
         
 //        debugPrint("📅", #file, #function, "fixedNow:", fixedNow.formattedFor(timeZone: timeZone) as Any, "transition:", transition.formattedFor(timeZone: timeZone) as Any)
         

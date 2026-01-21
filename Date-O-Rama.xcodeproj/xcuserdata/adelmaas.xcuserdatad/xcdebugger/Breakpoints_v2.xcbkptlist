@@ -94,51 +94,5 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9CC9F1E0-3FCF-43AF-8C0D-69B4CC2F653F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/Calendars/ASASolarTimeCalendar.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "dateStringTimeStringDateComponents(now:localeIdentifier:dateFormat:timeFormat:locationData:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9CC9F1E0-3FCF-43AF-8C0D-69B4CC2F653F - eeeed607f6aa9742"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASASolarTimeCalendar.dateStringTimeStringDateComponents(now: Foundation.Date, localeIdentifier: Swift.String, dateFormat: Date_O_Rama.ASADateFormat, timeFormat: Date_O_Rama.ASATimeFormat, locationData: Date_O_Rama.ASALocation) -&gt; (dateString: Swift.String, timeString: Swift.String, dateComponents: Date_O_Rama.ASADateComponents)"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASASolarTimeCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36">
-               </Location>
-               <Location
-                  uuid = "9CC9F1E0-3FCF-43AF-8C0D-69B4CC2F653F - eeeed607f6aa96ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASASolarTimeCalendar.dateStringTimeStringDateComponents(now: Foundation.Date, localeIdentifier: Swift.String, dateFormat: Date_O_Rama.ASADateFormat, timeFormat: Date_O_Rama.ASATimeFormat, locationData: Date_O_Rama.ASALocation) -&gt; (dateString: Swift.String, timeString: Swift.String, dateComponents: Date_O_Rama.ASADateComponents)"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASASolarTimeCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
