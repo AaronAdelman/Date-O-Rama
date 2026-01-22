@@ -32,16 +32,24 @@ struct ASAMainTabView: View {
                         
                         let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
                         let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                        let symbol: Image? = usesDeviceLocation ? Image(systemName: "location.fill") : nil
                         let location = locationWithClocks.location
-                        let processedClocks: Array<ASAProcessedClock> = locationWithClocks.clocks.map {
-                            ASAProcessedClock(clock: $0, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
+                        let processedClocks: [ASAProcessedClock] = locationWithClocks.clocks.map { clock in
+                            ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
                         }
                         
-                        ASALocationTab(now: $now, usingRealTime: $usingRealTime, locationWithClocks: $userData.mainClocks[index], processedClocks: processedClocks)
+                        Tab(
+                            location.shortFormattedOneLineAddress,
+                            systemImage: usesDeviceLocation ? "location.fill" : "circle.fill",
+                            value: index
+                        ) {
+                            ASALocationTab(
+                                now: $now,
+                                usingRealTime: $usingRealTime,
+                                locationWithClocks: $userData.mainClocks[index],
+                                processedClocks: processedClocks
+                            )
                             .environmentObject(userData)
-                            .tag(index)
-                            .tabItem { symbol }
+                        }
                     }
                 } // TabView
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
@@ -134,10 +142,8 @@ struct ASAMainTabView: View {
 }
 
 
-
 #Preview {
     ASAMainTabView(now: .constant(Date()), usingRealTime: .constant(true))
         .environmentObject(ASAModel.shared)
         .environmentObject(WatchConnectivityModel())
 }
-
