@@ -429,7 +429,8 @@ extension ASACalendarCode {
             return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .chinese,
                     .hebrewGRA, .hebrewMA,
                     .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime,
-//                .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram,
+//                .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese,
+                    .vikram,
                     .bahaiSolarTime, .vikramSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
