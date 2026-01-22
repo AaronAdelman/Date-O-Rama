@@ -260,13 +260,12 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         let yesterday: Date = date.oneDayBefore
         let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         let events = fixedYesterday.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
-        let rawDayEnd: Date? = events[self.dateTransition] ?? nil
-        if rawDayEnd == nil {
+        let rawDayTransition: Date? = events[self.dateTransition] ?? nil
+        if rawDayTransition == nil {
             return date.sixPMYesterday(timeZone: timeZone)
         }
 
-        let dayEnd: Date = rawDayEnd! // שקיעה
-        return dayEnd
+       return rawDayTransition!
     } // func startOfDay(for date: Date, locationData: ASALocation) -> Date
     
     // TODO:  Needs to be updated to support Sunrise transition calendars
@@ -276,13 +275,12 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         
         let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dateTransition)
         let events = fixedNow.solarEvents(location: location, events: [self.dateTransition], timeZone: timeZone )
-        let rawDayEnd: Date? = events[self.dateTransition] ?? nil
-        if rawDayEnd == nil {
+        let rawDayTransition: Date? = events[self.dateTransition] ?? nil
+        if rawDayTransition == nil {
             return date.sixPM(timeZone: timeZone)
         }
 
-        let dayEnd: Date = rawDayEnd!
-        return dayEnd
+        return rawDayTransition!
     } // func transitionToNextDay(now: Date, locationData: ASALocation) -> Date
     
     public var supportsLocations: Bool = true
