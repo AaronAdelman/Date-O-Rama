@@ -100,11 +100,12 @@
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Cheesy Socks Day"}, notes: {"en": "This observance celebrates bad fashion choices that should remain hidden."}, urls: {"en": "https://www.daysoftheyear.com/days/national-cheesy-socks-day/"}, notes: {"en": "Created by Kimberly Coleman"}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Granola Bar Day"}, urls: {"en": "https://www.daysoftheyear.com/days/granola-bar-day/"}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Hug Your Puppy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hug-your-puppy-day/"}, emoji: "🐶", first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National New England Clam Chowder Day"}, urls: {"en": "https://www.checkiday.com/148ba68f14f5d7a28e138368432e5cc5/national-new-england-clam-chowder-day"}, first: {era: 1, y: 2010}},
+        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National New England Clam Chowder Day"}, urls: {"en": "https://dayspedia.com/us/calendar/holiday/1106/"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Squirrel Appreciation Day", "he": "יום ההערכה לסנאי הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/squirrel-appreciation-day/"}, emoji: "🐿", first: {era: 1, y: 2001}, notes: {"en": "Created by Christy Hargrove of the Western North Carolina Nature Center"}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Bakers-Crafters-Makers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bakers-crafters-makers-day/"}, emoji: "🍞🍩🍪", first: {era: 1, y: 2021}, notes: {"en": "Created by Sue Monhait of Gift Biz Unwrapped"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Blonde Brownie Day", "he": "יום הזהוביות־בלונדיז הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/blonde-brownie-day/"}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Conscious Uncoupling Day"}, urls: {"en": "https://nationaltoday.com/national-conscious-uncoupling-day/"}, first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Personalized Learning Day"}, urls: {"en": "https://www.fusionacademy.com/national-personalized-learning-day/"}, first: {era: 1, y: 2025}, notes: {"en": "Created by Fusion Academy"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Hot Sauce Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-sauce-day/"}, emoji: "🌶"},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Southern Food Day"}, urls: {"en": "https://www.checkiday.com/4c963a5f417a44f3bfdfe1323f03de25/national-southern-food-day"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 23}, inherits: "Natl Pie Day", first: {era: 1, y: 1986}, urls: {"en": "https://www.daysoftheyear.com/days/pie-day/"}, notes: {"en": "Created by Charlie Papazian"}},
@@ -187,7 +188,6 @@
         {type: "D", start: {mon: 1, wkd: [3], nth: 2}, titles: {"en": "Poetry at Work Day"}, notes: {"en": "National Poetry at Work Day\nCreated by Tweetspeak Poetry"}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 1, wkd: [4], nth: 2}, titles: {"en": "National Take the Stairs Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-the-stairs-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by the American Lung Association"}},
         {type: "D", start: {mon: 1, wkd: [4], nth: 4}, titles: {"en": "National Library Shelfie Day"}, notes: {"en": "Library Shelfie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-library-shelfie-day/"}, first: {era: 1, y: 2014}, emoji: "📚"},
-        {type: "D", start: {mon: 1, wkd: [5], nth: 3}, titles: {"en": "Women’s Healthy Weight Day"}, urls: {"en": "https://www.daysoftheyear.com/days/womens-healthy-weight-day/"}, emoji: "👩", first: {era: 1, y: 1994}, notes: {"en": "National Women’s Healthy Weight Day\nCreated by Francie Berg of the Healthy Weight Network"}},
         {type: "D", start: {mon: 1, wkd: [6], nth: -1}, titles: {"en": "National Fun at Work Day", "he": "יום הכיף בעבודה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/fun-at-work-day/"}, emoji: "🤗"},
         {type: "D", start: {mon: 1, wkd: [6], nth: -1}, titles: {"en": "National Preschool Health and Fitness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-preschool-health-fitness-day/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 1, wkd: [6], nth: 4}, titles: {"en": "National Activity Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-activity-professionals-day/"}, first: {era: 1, y: 1984}, notes: {"en": "Created by the National Association of Activity Professionals (NAAP)"}},
@@ -2482,6 +2482,11 @@
         {type: "nD", start: {mon: 10, d: 6}, end: {mon: 10, d: 12}, titles: {"en": "PA Week"}, urls: {"en": "https://www.aapa.org/pas-go-beyond/pa-week/"}, first: {era: 1, y: 1987}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 6}, titles: {"en": "National PA Day"}, urls: {"en": "https://www.daysoftheyear.com/days/physician-assistant-day/"}, notes: {"en": "National Physician’s Assistant Day\nNational Physician Assistant Day\nNational Physician Assistants Day\nCreated by Duke University"}, first: {era: 1, y: 1987}},
         ]},
+        
+        {type: "W", start: {mon: 1, fullWk: 3}, titles: {"en": "Women’s Healthy Weight"}, urls: {"en": "https://www.healthyweight.net/hww.htm"}, first: {era: 1, y: 1994}, notes: {"en": "Created by Francie Berg"}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [3]}, titles: {"en": "Rid the World of Fad Diets & Gimmicks Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rid-the-world-of-fad-diets-gimmicks-day/"}, emoji: "🥕🍓🥑", notes: {"en": "Created by Francie Berg"}, first: {era: 1, y: 1990}},
+            {type: "D", start: {wkd: [5]}, titles: {"en": "Women’s Healthy Weight Day"}, urls: {"en": "https://nationaltoday.com/womens-healthy-weight-day/"}, emoji: "👩", first: {era: 1, y: 1994}, notes: {"en": "National Women’s Healthy Weight Day\nSome people think this event falls on the third Thursday in January.\nCreated by Francie Berg of the Healthy Weight Network"}},
+        ]}
         
     ],
     templates: [
