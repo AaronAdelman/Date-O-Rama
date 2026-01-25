@@ -98,7 +98,7 @@
         {type: "D", start: {wkd: [1], nth: 2, mon: 8}, titles: {"en": "Builders’ Day", "ru": "День строителя"}},
         {type: "D", start: {wkd: [1], nth: 3, mon: 6}, titles: {"en": "Medical Worker Day", "ru": "День медицинского работника"}, first: {era: 1, y: 1988}},
         {type: "D", start: {wkd: [7], nth: 2, mon: 8}, inherits: "Sports Day"},
-        {type: "nD", start: {mon: 6, d: 12}, end: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/white-nights-festival-in-st-petersburg/"}, titles: {"en": "White Nights Festival in St. Petersburg"}, emoji: "🎆", first: {era: 1, y: 1993}},
+        {type: "nD", start: {mon: 6, d: 12}, end: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/white-nights-festival-in-st-petersburg/"}, titles: {"en": "White Nights Festival in Saint Petersburg"}, emoji: "🎆", first: {era: 1, y: 1993}},
    ],
     templates: [
         {template: "New Year’s Holiday (bridge day)", type: "D", start: {mon: 1, d: 2}, titles: {"en": "New Year’s Holiday (bridge day)"}, emoji: "🎇"},

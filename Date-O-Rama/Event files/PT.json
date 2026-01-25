@@ -48,7 +48,7 @@
         {inherits: "Dia do Concelho", type: "D", start: {mon: 6, d: 16}, locations: {"en": "Olhão"}},
         {inherits: "Dia do Concelho", type: "D", start: {mon: 6, d: 20}, locations: {"en": "Corvo"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "St. John’s Day"},
-        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul", titles: {"en": "St. Peter’s Day", "pt": "Dia de São Pedro"}},
+        {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul", titles: {"en": "Saint Peter’s Day", "pt": "Dia de São Pedro"}},
         {inherits: "St. Elizabeth of Portugal", type: "D", start: {mon: 7, d: 4}},
         {inherits: "Dia do Concelho", type: "D", start: {mon: 7, wkd: [2], nth: 3}, locations: {"en": "Lajes das Flores"}},
         {inherits: "Dia do Concelho", type: "D", start: {mon: 7, d: 18}, locations: {"en": "Nordeste"}},

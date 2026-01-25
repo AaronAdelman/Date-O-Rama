@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 7, d: 5}, inherits: "Saints Cyril and Methodius"},
         {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/jan-hus-day-in-czech-republic/"}},
         {type: "D", start: {mon: 8, d: 21}, urls: {"en": "https://www.officeholidays.com/holidays/czech-republic/day-of-memory"}, titles: {"en": "Day of Memory"}},
-        {type: "D", start: {mon: 9, d: 28}, inherits: "Statehood Day", first: {era: 1, y: 2000}, urls: {"en": "https://www.daysoftheyear.com/days/czech-statehood-day/"}, notes: {"en": "St. Wenceslas Day"}},
+        {type: "D", start: {mon: 9, d: 28}, inherits: "Statehood Day", first: {era: 1, y: 2000}, urls: {"en": "https://www.daysoftheyear.com/days/czech-statehood-day/"}, notes: {"en": "Saint Wenceslas Day"}},
         {type: "D", start: {mon: 10, d: 28}, titles: {"en": "Independent Czechoslovak State Day", "cs": "Den vzniku samostatného československého státu"}, inherits: "Independence Day", first: {era: 1, y: 1918}, urls: {"en": "https://www.daysoftheyear.com/days/czech-independence-day/"}, notes: {"en": "Founding Day\nCzech Founding Day"}},
         {type: "D", start: {mon: 11, d: 17}, inherits: "Struggle for Freedom and Democracy Day", urls: {"en": "https://www.daysoftheyear.com/days/struggle-for-freedom-and-democracy-day/"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},

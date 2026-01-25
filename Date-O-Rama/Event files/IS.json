@@ -36,10 +36,10 @@
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, titles: {"en": "Fisherman’s Day", "is": "Sjómannadagurinn"}, emoji: "🎣"},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en": "Women's Rights Day", "is": "Kvenréttindadagurinn"}, emoji: "👩"},
-        {type: "D", start: {mon: 6, d: 24}, titles: {"en": "St. John’s Mass Day", "is": "Jónsmessa"}},
+        {type: "D", start: {mon: 6, d: 24}, titles: {"en": "Saint John’s Mass Day", "is": "Jónsmessa"}},
         {type: "D", start: {mon: 11, d: 16}, titles: {"ar":"يوم اللغة الآيسلندية","en":"Icelandic Language Day","eo":"Tago de la islanda lingvo","fr":"Jour de la langue islandaise","is":"Dagur íslenskrar tungu","ja":"アイスランド語の日","ko":"아이슬란드어의 날","nl":"Dag van de IJslandse taal","ru":"День исландского языка","tr":"İzlandaca Günü","uk":"День ісландської мови"}, urls: {"en": "https://www.daysoftheyear.com/days/icelandic-language-day/"}, first: {era: 1, y: 1996}, notes: {"en": "Created by Björn Bjarnason"}},
         {type: "D", start: {mon: 12, d: 1}, inherits: "Sovereignty Day"},
-        {type: "D", start: {mon: 12, d: 23}, titles: {"en": "St. Thorlac’s Mass Day", "is": "Þorláksmessa"}},
+        {type: "D", start: {mon: 12, d: 23}, titles: {"en": "Saint Thorlac’s Mass Day", "is": "Þorláksmessa"}},
 
         {type: "D", start: {mon: 4, d: 10}, inherits: "Engineer’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -49}, inherits: "Fastelavn"},

@@ -12,7 +12,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 5, d: 21}, titles: {"en": "St. Helena Day", "he": "יום סנט הלנה"}},
+        {type: "D", start: {mon: 5, d: 21}, titles: {"en": "Saint Helena Day", "he": "יום סנט הלנה"}},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},

@@ -90,7 +90,7 @@
         {titles: {"en": "International Year of Pulses"}, type: "Y", start: {era: 1, y: 2016}},
         {titles: {"en": "International Year of Light and Light-based Technologies"}, type: "Y", start: {era: 1, y: 2015}, emoji: "💡"},
         {titles: {"en": "International Year of Soils"}, type: "Y", start: {era: 1, y: 2015}},
-        {titles: {"en": "International Year of Promotion of Antisemitism"}, type: "Y", start: {era: 1, y: 2014}, notes: {"en" : "Let us be honest.  That is what “International Year of Solidarity with the Palestinian People” effectively means."}},
+        {titles: {"en": "International Year of Solidarity with the Palestinian People"}, type: "Y", start: {era: 1, y: 2014}},
         {titles: {"en": "International Year of Small Island Developing States"}, type: "Y", start: {era: 1, y: 2014}, emoji: "🏝"},
         {titles: {"en": "International Year of Crystallography"}, type: "Y", start: {era: 1, y: 2014}},
         {titles: {"en": "International Year of Family Farming"}, type: "Y", start: {era: 1, y: 2014}, emoji: "🚜"},

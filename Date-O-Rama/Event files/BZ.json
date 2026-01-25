@@ -25,7 +25,7 @@
         {inherits: "Emancipation Day", type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/belize/emancipation-day"}, first: {era: 1, y: 1834}},
         {inherits: "Emancipation Day (in lieu)", type: "D", start: {mon: 8, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/belize/emancipation-day"}, first: {era: 1, y: 1834}},
         {inherits: "St. George’s Caye Day", type: "D", start: {mon: 9, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/belize/st-georges-caye-day"}},
-        {titles: {"en": "St. George’s Caye Day (in lieu)"}, type: "D", start: {mon: 9, d: 11, wkd: [2]}, inherits: "St. George’s Caye Day"},
+        {titles: {"en": "Saint George’s Caye Day (in lieu)"}, type: "D", start: {mon: 9, d: 11, wkd: [2]}, inherits: "St. George’s Caye Day"},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 21}, first: {era: 1, y: 1981}, urls: {"en": "https://nationaltoday.com/belize-independence-day/"}},
         {type: "D", start: {mon: 9, d: 22, thruD: 23, wkd: [2]}, inherits: "Independence Day (in lieu)", first: {era: 1, y: 1981}, urls: {"en": "https://nationaltoday.com/belize-independence-day/"}},
         {type: "D", start: {mon: 10, d: 9, thruD: 11, wkd: [2]}, inherits: "Day of the Races (in lieu)", first: {era: 1, y: 2021}},
@@ -47,6 +47,6 @@
     templates: [
         {template: "Garifuna Settlement Day", type: "D", start: {mon: 11, d: 19}, titles: {"en": "Garifuna Settlement Day"}, urls: {"en": "https://nationaltoday.com/garifuna-settlement-day/"}},
         {template: "Natl Heroes and Benefactors Day (in lieu)", type: "D", start: {mon: 3, d: 6, thruD: 8, wkd: [2]}, titles: {"en": "National Heroes and Benefactors Day (in lieu)"}, inherits: "Natl Heroes and Benefactors Day"},
-        {template: "St. George’s Caye Day", titles: {"en": "St. George’s Caye Day"}, type: "D", start: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Natl Day"},
+        {template: "St. George’s Caye Day", titles: {"en": "Saint George’s Caye Day"}, type: "D", start: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Natl Day"},
     ]
 }

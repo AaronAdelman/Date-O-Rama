@@ -427,7 +427,7 @@
         {type: "D", start: {mon: 11, d: 29}, titles: {"en": "Electronic Greetings Day"}, urls: {"en": "https://www.daysoftheyear.com/days/electronic-greetings-day/"}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 11, d: 29}, titles: {"en": "International Jaguar Day"}, urls: {"en": "https://www.internationaljaguarday.org/"}, emoji: "🐆", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 11, d: 29}, titles: {"en": "Isdal Woman Day"}, urls: {"en": "https://www.daysoftheyear.com/days/isdal-woman-day/"}, first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 11, d: 29}, titles: {"en": "St. Pancake Day"}, notes: {"en": "From Jack, Jacky and the Juniors"}},
+        {type: "D", start: {mon: 11, d: 29}, titles: {"en": "Saint Pancake Day"}, notes: {"en": "From Jack, Jacky and the Juniors"}},
         {type: "D", start: {mon: 11, d: 29}, titles: {"en": "Throw Out Your Leftovers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/throw-out-your-leftovers-day/"}},
         {type: "D", start: {mon: 11, d: 3, thruD: 4, wkd: [2]}, inherits: "Traffic Directors Day"},
         {type: "D", start: {mon: 11, d: 3}, inherits: "One Health Day", first: {era: 1, y: 2016}},

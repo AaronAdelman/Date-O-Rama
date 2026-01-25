@@ -1,6 +1,6 @@
 {
     titles: {"*": "PM"},
-    "//": "St. Pierre and Miquelon",
+    "//": "Saint Pierre and Miquelon",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.57, blue: 0.78},
