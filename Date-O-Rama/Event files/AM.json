@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/armenia/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Xmas", urls: {"en": "https://www.daysoftheyear.com/days/armenian-christmas/"}},
-        {type: "D", start: {mon: 1, d: 28}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/armenia/armenia-national-army-day"}, notes: {"en": "National Army Day"}, first: {era: 1, y: 2001}},
+        {type: "D", start: {mon: 1, d: 28}, inherits: "Army Day", urls: {"en": "https://www.daysoftheyear.com/days/army-day-in-armenia/"}, notes: {"en": "Homeland Defender’s Day\nNational Army Day\nCreated by Levon Ter-Petrosyan"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2015}, notes: {"en": "Genocide Memorial Day"}},
