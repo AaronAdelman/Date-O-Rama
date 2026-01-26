@@ -105,7 +105,6 @@
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Bakers-Crafters-Makers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-bakers-crafters-makers-day/"}, emoji: "🍞🍩🍪", first: {era: 1, y: 2021}, notes: {"en": "Created by Sue Monhait of Gift Biz Unwrapped"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Blonde Brownie Day", "he": "יום הזהוביות־בלונדיז הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/blonde-brownie-day/"}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Conscious Uncoupling Day"}, urls: {"en": "https://nationaltoday.com/national-conscious-uncoupling-day/"}, first: {era: 1, y: 2020}},
-        {type: "D", start: {mon: 1, d: 21}, titles: {"en": "National Personalized Learning Day"}, urls: {"en": "https://www.fusionacademy.com/national-personalized-learning-day/"}, first: {era: 1, y: 2025}, notes: {"en": "Created by Fusion Academy"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Hot Sauce Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-sauce-day/"}, emoji: "🌶"},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "National Southern Food Day"}, urls: {"en": "https://www.checkiday.com/4c963a5f417a44f3bfdfe1323f03de25/national-southern-food-day"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 23}, inherits: "Natl Pie Day", first: {era: 1, y: 1986}, urls: {"en": "https://www.daysoftheyear.com/days/pie-day/"}, notes: {"en": "Created by Charlie Papazian"}},
