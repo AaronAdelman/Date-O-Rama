@@ -102,7 +102,7 @@
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "Yodel For Your Neighbors Day"}, urls: {"en": "https://www.daysoftheyear.com/days/yodel-for-your-neighbors-day/"}},
         {type: "D", start: {mon: 1, d: 31}, titles: {"en": "Hell is Freezing Over Day"}, urls: {"en": "https://nationaltoday.com/hell-is-freezing-over-day/"}, emoji: "🌨️"},
         {type: "D", start: {mon: 1, d: 31}, titles: {"en": "Hug an Economist Day"}, urls: {"en": "https://nationaltoday.com/hug-an-economist-day/"}, emoji: "🫂"},
-        {type: "D", start: {mon: 1, d: 31}, titles: {"en": "International Zebra Day", "he": "יום הזברה הבינלאומי"}, urls: {"en": "https://nationaltoday.com/international-zebra-day/"}, emoji: "🦓"},
+        {type: "D", start: {mon: 1, d: 31}, titles: {"en": "International Zebra Day", "he": "יום הזברה הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-zebra-day/"}, emoji: "🦓"},
         {type: "D", start: {mon: 1, d: 31}, titles: {"en": "Brandy Alexander Day"}, urls: {"en": "https://www.daysoftheyear.com/days/brandy-alexander-day/"}},
         {type: "D", start: {mon: 1, d: 31}, titles: {"en": "Eat Brussel Sprouts Day"}, urls: {"en": "https://www.daysoftheyear.com/days/eat-brussel-sprouts-day/"}, notes: {"en": "Eat Brussels Sprouts Day"}},
         {type: "D", start: {mon: 1, d: 31}, titles: {"en": "Scotch Tape Day"}, urls: {"en": "https://www.daysoftheyear.com/days/scotch-tape-day/"}},
