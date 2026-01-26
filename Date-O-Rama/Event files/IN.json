@@ -1,7 +1,7 @@
 {
     titles: {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},

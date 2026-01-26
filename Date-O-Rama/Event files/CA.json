@@ -133,7 +133,7 @@
         {type: "nD", start: {era: 1, y: 2023, mon: 9, d: 22}, end: {era: 1, y: 2023, mon: 10, d: 1}, inherits: "Ontario Garlic Week"},
         {type: "nD", start: {era: 1, y: 2024, mon: 6, d: 2, durationD: 7}, inherits: "Canadian Environment Week"},
         {type: "nD", start: {mon: 10, d: 22}, end: {mon: 10, d: 28}, inherits: "Respiratory Care Week"},
-        {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, titles: {"en": "La Poutine Week"}, urls: {"en": "https://nationaltoday.com/la-poutine-week/"}},
+        {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, titles: {"en": "La Poutine Week"}, urls: {"en": "https://lapoutineweek.com/en", "fr": "https://lapoutineweek.com/"}, first: {era: 1, y: 2013}, notes: {"en": "Created by Na’eem Adam and Thierry Rassam"}},
         {type: "nD", start: {mon: 2, d: 3}, end: {mon: 2, d: 13}, titles: {"en": "Quebec Winter Carnival"}, emoji: "❄️"},
         {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 1982}, last: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "Canadian Environment Week", first: {era: 1, y: 2025}},
