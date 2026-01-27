@@ -104,6 +104,7 @@
         {type: "D", start: {mon: 4, d: 19}, titles: {"en": "National Primrose Day"}, notes: {"en": "Primrose Day\nSome think this observance falls on February 5."}, urls: {"en": "https://www.daysoftheyear.com/days/national-primrose-day/"}, emoji: "⚘", inherits: "*DeathAnniv*", first: {era: 1, y: 1920}},
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Gwyl Mabsant"}, urls: {"en": "https://nationaltoday.com/gwyl-mabsant/"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 1}, inherits: "Natl Yorkshire Pudding Day", urls: {"en": "https://www.yorkshirepudd.co.uk/yorkshire-pudding-day-2025/"}, notes: {"en": "British Yorkshire Pudding Day"}},
+        {type: "M", start: {mon: 2}, titles: {"en": "Raynaud’s Awareness Month"}, urls: {"en": "https://www.sruk.co.uk/get-involved/awareness-campaigns/raynauds-awareness-month/"}, inherits: "*MedAwareness*", notes: {"en": "Created by Lynn Wunderman"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Racial Justice Sunday", first: {era: 1, y: 1995}, last: {era: 1, y: 2016}},
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, inherits: "Racial Justice Sunday", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 2}, titles: {"en": "Oatmeal Monday"}, urls: {"en": "https://nationaltoday.com/oatmeal-monday/"}, first: {era: 1, y: 1896}, emoji: "🥣"},
