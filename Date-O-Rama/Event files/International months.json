@@ -124,7 +124,6 @@
         {type: "M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/youth-leadership-month/"}, titles: {"en": "Youth Leadership Month"}, first: {era: 1, y: 1989}, emoji: "👦👧"},
         {type: "M", start: {mon: 2}, titles: {"en": "Canned Food Month"}, urls: {"en": "https://www.daysoftheyear.com/days/canned-food-month/"}, emoji: "🥫", first: {era: 1, y: 1987}, notes: {"en": "Created by the Canned Food Information Council"}},
         {type: "M", start: {mon: 2}, urls: {"en": "https://www.daysoftheyear.com/days/harley-quinn-month/"}, titles: {"en": "Harley Quinn Month"}, first: {era: 1, y: 2015}},
-        {type: "M", start: {mon: 2}, titles: {"en": "Low Vision Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/low-vision-awareness-month/"}, notes: {"en": "AMD/Low Vision Awareness Month"}, inherits: "*MedAwareness*", emoji: "👁️"},
         {type: "M", start: {mon: 2}, titles: {"en": "Vegan Cuisine Month"}, urls: {"en": "https://www.daysoftheyear.com/days/vegan-cuisine-month/"}, notes: {"en": "International Vegan Cuisine Month\nCreated by Freya Dinshah"}, emoji: "🌰🌱🌽"},
         {type: "M", start: {mon: 3}, inherits: "Endometriosis Awareness Month", first: {era: 1, y: 1993}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 3}, titles: {"en": "Berries and Cherries Month"}, urls: {"en": "https://nationaltoday.com/berries-and-cherries-month/"}, emoji: "🍓🫐🍒"},
