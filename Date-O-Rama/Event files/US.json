@@ -14,7 +14,7 @@
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 1997}},
         {type: "D", start: {Easter: "Easter", offsetD: -46}, inherits: "Ash Wednesday"},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 1951}},
-        {type: "M", start: {mon: 2}, inherits: "Black History Month", notes: {"en": "African-American History Month"}, first: {era: 1, y: 1976}},
+        {type: "M", start: {mon: 2}, inherits: "Black History Month", first: {era: 1, y: 1926}},
         {type: "D", start: {mon: 8, d: 23}, inherits: "Black Ribbon Day", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 11, d: 20}, inherits: "Children’s Day", titles: {"en": "National Child’s Day", "he": "יום הילד הלאומי"}, first: {era: 1, y: 2009}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-childs-day"}, notes: {"en": "Created by Lee Rechter"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -695,7 +695,7 @@
             {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-literacy-day/"}, first: {era: 1, y: 1994}, emoji: "📖", notes: {"en": "Created by the National Center for Families Learning (NCFL) and the US Congress"}},
         ]},
         
-        {type: "M", start: {mon: 2}, titles: {"en": "American Heart Month"}, urls: {"en": "https://www.daysoftheyear.com/days/american-heart-month/"}, first: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", nonoverlappingSubEvents: [
+        {type: "M", start: {mon: 2}, titles: {"en": "American Heart Month"}, urls: {"en": "https://www.daysoftheyear.com/days/american-heart-month/"}, first: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", notes: {"en": "National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 2, wkd: [6], nth: 3}, titles: {"en": "National Woman’s Heart Day"}, urls: {"en": "https://www.checkiday.com/b8f7d5258330d540b707e5002590888c/national-womans-heart-day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2001}, emoji: "🫀"},
         ]},
         
