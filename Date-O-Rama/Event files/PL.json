@@ -54,7 +54,7 @@
         {type: "D", start: {mon: 9, d: 21}, titles: {"en": "Customs Service Day", "pl": "Dzień Służby Celnej"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 10, d: 13}, titles: {"en": "Paramedics’ Day", "pl": "Dzień Ratownictwa Medycznego"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 14}, inherits: "Teacher’s Day", first: {era: 1, y: 1972}},
-        {type: "D", start: {mon: 10, d: 16}, titles: {"en": "St. Pope John Paul II Day", "pl": "Dzień Papieża Jana Pawła II"}, first: {era: 1, y: 2005}},
+        {type: "D", start: {mon: 10, d: 16}, titles: {"en": "Saint Pope John Paul II Day", "pl": "Dzień Papieża Jana Pawła II"}, first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "Social Workers’ Day", "pl": "Dzień Pracownika Socjalnego"}, first: {era: 1, y: 1990}},
 
         {type: "D", start: {mon: 3, d: 3}, titles: {"en": "Polish-Romanian Solidarity Day", "pl": "Dzień Solidarności Polsko-Rumuńskiej"}, first: {era: 1, y: 2023}, emoji: "🇵🇱🇷🇴"},

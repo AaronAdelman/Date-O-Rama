@@ -1,7 +1,7 @@
 {
     titles: {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
@@ -153,7 +153,7 @@
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Assam Day"}, first: {era: 1, y: 1928}},
         {type: "D", start: {mon: 1, d: 28}, titles: {"en": "Lala Lajpat Rai’s Birthday"}, first: {era: 1, y: 1865}, inherits: "*BDay*"},
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "National Cleanliness Day"}, urls: {"en": "http://sikenvis.nic.in/ViewEvents.aspx?Id=9847&Year=2022"}},
-        {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "World Leprosy Day", first: {era: 1, y: 1954}},
+        {type: "D", start: {mon: 1, d: 30}, inherits: "World Leprosy Day", first: {era: 1, y: 1954}},
         {type: "D", start: {mon: 2, d: 1}, inherits: "Coast Guard Day"},
         {type: "D", start: {mon: 2, d: 28}, inherits: "Natl Science Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Science_Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "National Safe Motherhood Day"}, urls: {"en": "https://newsonair.gov.in/News?title=National-Safe-Motherhood-Day-is-being-observed-today&id=438954"}, emoji: "🤰"},

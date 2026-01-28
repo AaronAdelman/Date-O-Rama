@@ -150,19 +150,25 @@ extension ASACalendarCode {
              .islamicUmmAlQura,
              .japanese,
              .persian,
-             .republicOfChina,
-             .bangla,
-             .dangi,
-             .gujarati,
-             .kannada,
-             .malayalam,
-             .marathi,
-             .odia,
-             .tamil,
-             .telugu,
-             .vietnamese,
-             .vikram:
+             .republicOfChina:
             return true
+            
+            case.bangla,
+                .dangi,
+                .gujarati,
+                .kannada,
+                .malayalam,
+                .marathi,
+                .odia,
+                .tamil,
+                .telugu,
+                .vietnamese,
+                .vikram:
+            if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
+                return true
+            } else {
+                return false
+            }
         default:
             return false
         } // switch self
@@ -326,71 +332,71 @@ extension ASACalendarCode {
                identifier = .republicOfChina
                
            case .bangla, .banglaSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .bangla
                } else {
                    identifier = nil
                }
                
            case .dangi, .dangiSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .dangi
                } else {
                    identifier = nil
                }
            case .gujarati, .gujaratiSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .gujarati
                } else {
                    identifier = nil
                }
            case .kannada, .kannadaSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .kannada
                } else {
                    identifier = nil
                }
            case .malayalam, .malayalamSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .malayalam
                } else {
                    identifier = nil
                }
            case .marathi, .marathiSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .marathi
                } else {
                    identifier = nil
                }
            case .odia, .odiaSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .odia
                } else {
                    identifier = nil
                }
            case .tamil, .tamilSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .tamil
                } else {
                    identifier = nil
                }
                
            case .telugu, .teluguSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .telugu
                } else {
                    identifier = nil
                }
                
            case .vietnamese, .vietnameseSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .vietnamese
                } else {
                    identifier = nil
                }
                
            case .vikram, .vikramSolarTime:
-               if #available(iOS 26.0, watchOS 26.0, *) {
+               if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .vikram
                } else {
                    identifier = nil

@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 9, d: 8}, inherits: "Independence Day", urls: {"en": "https://www.officeholidays.com/holidays/macedonia/macedonia-fyro-independence-day"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 10, d: 11}, inherits: "Revolution Day", urls: {"en": "https://www.officeholidays.com/holidays/macedonia/macedonia-fyro-revolution-day"}, first: {era: 1, y: 1941}},
         {type: "D", start: {mon: 10, d: 23}, titles: {"en":"Day of the Macedonian Revolutionary Struggle","mk":"Ден на македонската револуционерна борба","sq":"Dita e Luftës Revolucionare Maqedonase"}, urls: {"en": "https://www.officeholidays.com/holidays/macedonia/day-of-the-macedonian-revolution"}, notes: {"en": "Day of VMRO"}},
-        {type: "D", start: {mon: 12, d: 8}, titles: {"en": "St. Clement of Ohrid Day", "mk": "Св. Климент Охридски"}, urls: {"en": "https://nationaltoday.com/st-clement-of-ohrid/"}, first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 12, d: 8}, titles: {"en": "Saint Clement of Ohrid Day", "mk": "Св. Климент Охридски"}, urls: {"en": "https://nationaltoday.com/st-clement-of-ohrid/"}, first: {era: 1, y: 2007}},
 
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},

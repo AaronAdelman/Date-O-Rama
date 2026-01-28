@@ -1,6 +1,6 @@
 {
     titles: {"*": "VC"},
-    "//": "St. Vincent and the Grenadines",
+    "//": "Saint Vincent and the Grenadines",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.20, blue: 0.63},

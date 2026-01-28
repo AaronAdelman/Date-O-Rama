@@ -37,7 +37,7 @@
         {titles: {"en": "Day of the Deciscion about the Unification of Istria, Rijeka, Zadar and the Islands with the Parent Body Croatia", "hr": "Dan donošenja Odluke o sjedinjenju Istre, Rijeke, Zadra i otoka s maticom zemljom Hrvatskom"}, type: "D", start: {mon: 9, d: 25}},
         {type: "D", start: {mon: 10, d: 8}, titles: {"en": "Day of the Croatian Parliament", "hr": "Dan Hrvatskoga sabora"}},
         {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Shrove Tuesday"},
-        {type: "D", start: {mon: 5, d: 7}, titles: {"en": "Feast of St. Dominus", "hr": "Sveti Duje"}},
+        {type: "D", start: {mon: 5, d: 7}, titles: {"en": "Feast of Saint Dominus", "hr": "Sveti Duje"}},
         {type: "D", start: {mon: 2, d: 3}, inherits: "St. Blaise", first: {era: 1, y: 972}},
 
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},

@@ -1,6 +1,6 @@
 {
     titles: {"*": "KN"},
-    "//": "St. Kitts and Nevis",
+    "//": "Saint Kitts and Nevis",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},

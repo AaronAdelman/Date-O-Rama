@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/romania/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany", first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 1, d: 7}, first: {era: 1, y: 2024}, inherits: "Synaxis of St. John the Baptist"},
+        {type: "D", start: {mon: 1, d: 7}, first: {era: 1, y: 2024}, inherits: "Synaxis of Saint John the Baptist"},
         {type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/romania/romania-unification-day"}, inherits: "Public Sector Holiday"},
         {type: "D", start: {mon: 1, d: 24}, titles: {"ca":"Dia de la unificació dels principats romanesos","en":"Day of the Unification of the Romanian Principalities","ro":"Ziua Unirii Principatelor Române","uk":"День об’єднання дунайських князівств"}, inherits: "Unification Day", urls: {"en": "https://nationaltoday.com/unification-day/"}, first: {era: 1, y: 1859}},
         {type: "D", start: {mon: 3, d: 1}, inherits: "Martisor", urls: {"en": "https://nationaltoday.com/martisor/"}},
