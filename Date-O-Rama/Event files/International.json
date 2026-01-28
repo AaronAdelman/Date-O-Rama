@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {name: "teal"},
     emoji: "🌐",
-    "TODO": "World Jump Day activity at 11:39:13 GMT, Galactic Tick Day",
+    "TODO": "World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn)",
     events: [
         {type: "D", start: {dOfY: 182}, titles: {"en": "Blink-182 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blink-182-day/"}, notes: {"en": "Blink 182 Day"}},
         {type: "D", start: {dOfY: 256}, inherits: "Programmers Day", first: {era: 1, y: 2002}},
