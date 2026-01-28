@@ -36,12 +36,12 @@ struct ASAAllLocationsTab: View {
     @State private var completerDelegate = CompleterDelegate()
     
     var body: some View {
-        GeometryReader { proxy in
+        GeometryReader { geo in
             ZStack {
                 Color("locationsBackground")
                     .ignoresSafeArea()
                 
-                let frameHeight: CGFloat? = proxy.safeAreaInsets.top
+                let frameHeight: CGFloat? = geo.safeAreaInsets.top
                 
                 Spacer()
                     .frame(height: frameHeight)

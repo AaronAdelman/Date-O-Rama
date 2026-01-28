@@ -19,19 +19,23 @@ struct ASALocationTab: View {
     
     @Environment(\.horizontalSizeClass) private var hSizeClass
     
+#if os(iOS)
+let topMargin: CGFloat = (UIDevice.current.userInterfaceIdiom == .phone) ? 72.0 : 64.0
+#else
+let topMargin: CGFloat = 64.0
+#endif
+    
     var body: some View {
         let dayPart: ASADayPart = processedClocks.dayPart
         let cellColor = dayPart.locationColor
-                
-        GeometryReader { geo in
-            ASAList {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
+        
+        ASAList {
+            ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
                 .environmentObject(userData)
-            }
-            .listStyle(.grouped)
-            .scrollContentBackground(.hidden)
-            .padding(.top, geo.safeAreaInsets.top)
-        }
+        } // ASAList
+        .contentMargins(.top, topMargin, for: .scrollContent)
+        .listStyle(.grouped)
+        .scrollContentBackground(.hidden)
         .navigationBarTitle("", displayMode: .inline)
     }
 } // struct ASAAllLocationsTab
