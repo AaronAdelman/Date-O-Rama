@@ -115,7 +115,7 @@
         {type: "M", start: {mon: 2}, titles: {"en": "Pet Dental Health Month"}, urls: {"en": "https://www.avma.org/resources-tools/pet-owners/petcare/pet-dental-care"}, inherits: "*MedAwareness*", notes: {"en": "Created by the American Veterinary Medical Association (AVMA)"}},
         {type: "M", start: {mon: 2}, titles: {"en": "Plant the Seeds of Greatness Month"}, urls: {"en": "https://nationaltoday.com/plant-the-seeds-of-greatness-month/"}},
         {type: "M", start: {mon: 2}, titles: {"en": "Pull Your https://www.daysoftheyear.com/days/pull-your-sofa-off-the-wall-month/"}},
-        {type: "M", start: {mon: 2}, titles: {"en": "Relationship Wellness Month"}, notes: {"en": "Healthy Relationships Month"}, urls: {"en": "https://nationaltoday.com/relationship-wellness-month/"}, first: {era: 1, y: 2000cttt}},
+        {type: "M", start: {mon: 2}, titles: {"en": "Relationship Wellness Month"}, notes: {"en": "Healthy Relationships Month"}, urls: {"en": "https://nationaltoday.com/relationship-wellness-month/"}, first: {era: 1, y: 2000}},
         {type: "M", start: {mon: 2}, titles: {"en": "Responsible Pet Owners Month"}, urls: {"en": "https://nationaltoday.com/responsible-pet-owners-month/"}},
         {type: "M", start: {mon: 2}, titles: {"en": "Spunky Old Broads Month"}, urls: {"en": "https://nationaltoday.com/spunky-old-broads-month/"}, first: {era: 1, y: 2002}},
         {type: "M", start: {mon: 2}, titles: {"en": "Youth Leadership Month"}, urls: {"en": "https://www.daysoftheyear.com/days/youth-leadership-month/"}, first: {era: 1, y: 1981}, emoji: "👦👧"},
