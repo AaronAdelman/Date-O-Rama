@@ -33,18 +33,18 @@ class ASAGregorianCalendar: ASAAppleCalendar, ASACalendarWithEaster {
     override var supportedDateFormats: Array<ASADateFormat> {
         return [
             .full,
-            .ISO8601YearMonthDay,
-            .ISO8601YearWeekDay,
-            .ISO8601YearDay
+            .iso8601YearMonthDay,
+            .iso8601YearWeekDay,
+            .iso8601YearDay
         ]
     }
     
     override var supportedWatchDateFormats: Array<ASADateFormat> {
         return [
             .full,
-            .ISO8601YearMonthDay,
-            .ISO8601YearWeekDay,
-            .ISO8601YearDay,
+            .iso8601YearMonthDay,
+            .iso8601YearWeekDay,
+            .iso8601YearDay,
             .long,
             .medium,
             .mediumWithWeekday,

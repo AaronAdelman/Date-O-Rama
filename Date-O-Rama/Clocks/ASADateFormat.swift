@@ -8,15 +8,15 @@
 
 import Foundation
 
-enum ASADateFormat:  String {
+enum ASADateFormat: String {
     case none                             = "none"
     case short                            = "short"
     case medium                           = "medium"
     case long                             = "long"
     case full                             = "full"
-    case ISO8601YearMonthDay              = "ISO8601YearMonthDay"
-    case ISO8601YearWeekDay               = "ISO8601YearWeekDay"
-    case ISO8601YearDay                   = "ISO8601YearDay"
+    case iso8601YearMonthDay              = "ISO8601YearMonthDay"
+    case iso8601YearWeekDay               = "ISO8601YearWeekDay"
+    case iso8601YearDay                   = "ISO8601YearDay"
     case shortWithWeekday                 = "shortWithWeekday"
     case mediumWithWeekday                = "mediumWithWeekday"
     case abbreviatedWeekday               = "abbreviatedWeekday"
@@ -38,7 +38,7 @@ enum ASADateFormat:  String {
 } // enum ASADateFormat
 
 extension ASADateFormat {
-    var localizedItemName:  String {
+    var localizedItemName: String {
         var unlocalizedString = ""
         switch self {
         case .short:
@@ -51,11 +51,11 @@ extension ASADateFormat {
             unlocalizedString = "ITEM_Full"
         case .none:
             unlocalizedString = "ITEM_None"
-        case .ISO8601YearMonthDay:
+        case .iso8601YearMonthDay:
             unlocalizedString = "ITEM_ISO8601YearMonthDay"
-        case .ISO8601YearWeekDay:
+        case .iso8601YearWeekDay:
             unlocalizedString = "ITEM_ISO8601YearWeekDay"
-        case .ISO8601YearDay:
+        case .iso8601YearDay:
             unlocalizedString = "ITEM_ISO8601YearDay"
         case .shortWithWeekday:
             unlocalizedString = "ITEM_ShortWithWeekday"
@@ -95,7 +95,7 @@ extension ASADateFormat {
     
     var isIOS8601: Bool {
         switch self {
-        case .ISO8601YearDay, .ISO8601YearWeekDay, .ISO8601YearMonthDay :
+        case .iso8601YearDay, .iso8601YearWeekDay, .iso8601YearMonthDay :
             return true
             
         default:
@@ -103,7 +103,7 @@ extension ASADateFormat {
         } // switch self
     } // var isIOS8601: Bool
     
-    var shortened:  ASADateFormat {
+    var shortened: ASADateFormat {
         switch self {
         case .long, .full, .medium:
             return .short

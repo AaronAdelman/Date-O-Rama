@@ -61,7 +61,7 @@ extension DateFormatter {
     
     func apply(dateFormat: ASADateFormat) {
         switch dateFormat {
-        case .ISO8601YearDay, .ISO8601YearMonthDay, .ISO8601YearWeekDay:
+        case .iso8601YearDay, .iso8601YearMonthDay, .iso8601YearWeekDay:
             self.dateStyle = .none // Had to fill in something.  Don’t handle ISO 8601 here!
         
         case .none:
