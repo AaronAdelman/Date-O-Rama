@@ -47,7 +47,7 @@ struct ASAMainTabView: View {
                 }
             } // TabView
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-            .background { LinearGradient(colors: [.black, .blue], startPoint: .top, endPoint: .bottom) }
+            .background { LinearGradient(colors: [.indigo, .blue], startPoint: .top, endPoint: .bottom) }
             .ignoresSafeArea()
         } // VStack
         .toolbar {
