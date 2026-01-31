@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 2, d: 2, thruD: 3, wkd: [2]}, inherits: "Imbolc (in lieu)", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 2, d: 5, thruD: 7, wkd: [2]}, inherits: "Imbolc (in lieu)", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: -21}, inherits: "Mothering Sunday", urls: {"en": "https://www.officeholidays.com/holidays/ireland/mothering-sunday"}, notes: {"en": "Mother’s Day"}, inherits: "Mother’s Day"},
+        {type: "D", start: {Easter: "Easter", offsetD: -21}, inherits: "Mothering Sunday", urls: {"en": "https://www.officeholidays.com/holidays/ireland/mothering-sunday"}, notes: {"en": "Mother’s Day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -58,7 +58,7 @@
 
    ],
     templates: [
-        {template: "Imbolc (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, titles: {"en": "Saint Brigid’s Day (in lieu)"}},
+        {template: "Imbolc (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en": "Imbolc (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en": "Saint Brigid’s Day (in lieu)"}},
 
     ]
 }
