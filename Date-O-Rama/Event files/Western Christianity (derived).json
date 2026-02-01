@@ -149,7 +149,7 @@
         {type: "D", start: {mon: 2, d: 15}, titles: {"en": "Love Reset Day"}, urls: {"en": "https://nationaltoday.com/love-reset-day/"}},
         {type: "D", start: {mon: 2, d: 15}, titles: {"en":"Singles Awareness Day","uk":"День святкування самотності","zh":"單身者留意日"}, urls: {"en": "https://www.daysoftheyear.com/days/singles-awareness-day/"}, notes: {"en": "Singles Appreciation Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 2, d: 15}, titles: {"en": "Saint Skeletor’s Day"}, urls: {"en": "https://nationaltoday.com/st-skeletors-day/"}, first: {era: 1, y: 1998}, emoji: "💀"},
-        {type: "D", start: {mon: 2, d: 2}, inherits: "Groundhog Day", first: {era: 1, y: 1841}},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "Groundhog Day", first: {era: 1, y: 1887}},
         {type: "D", start: {mon: 2, d: 6}, inherits: "Natl Valentine Shopping Reminder Day"},
         {type: "D", start: {mon: 2, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/rose-day-2/"}, inherits: "Rose Day"},
         {type: "D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/propose-day/"}, titles: {"en": "Propose Day"}},
