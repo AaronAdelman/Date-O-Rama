@@ -235,7 +235,7 @@
         {type: "D", start: {mon: 2, d: 4}, inherits: "Intl Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 4}, titles: {"en": "USO Day"}, urls: {"en": "https://www.daysoftheyear.com/days/uso-day/"}, first: {era: 1, y: 1941}, notes: {"en": "Created by Franklin Roosevelt"}},
         {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Adlai Stevenson Day"}, urls: {"en": "https://www.daysoftheyear.com/days/adlai-stevenson-day/"}, first: {era: 1, y: 1966}},
-        {type: "D", start: {mon: 2, d: 6}, titles: {"en":"Ronald Reagan Day","he":"יום רונלד רייגן"}, urls: {"en": "https://nationaltoday.com/ronald-reagan-day/"}, first: {era: 1, y: 2011}},
+        {type: "D", start: {mon: 2, d: 6}, titles: {"en":"Ronald Reagan Day","he":"יום רונלד רייגן"}, urls: {"en": "https://www.daysoftheyear.com/days/ronald-reagan-day/"}, first: {era: 1, y: 2011}, notes: {"en": "Created by Arnold Schwarzenegger"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Super Bowl Sunday", first: {era: 1, y: 1967}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Daisy Gatson Bates Day"}, urls: {"en": "https://nationaltoday.com/daisy-gatson-bates-day/"}},
         {type: "W", start: {mon: 2, fullWk: 1, firstDOfWk: 2}, inherits: "Tinnitus Awareness Week", first: {era: 1, y: 2003}},
