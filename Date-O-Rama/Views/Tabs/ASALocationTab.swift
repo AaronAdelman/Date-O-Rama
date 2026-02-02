@@ -16,15 +16,7 @@ struct ASALocationTab: View {
     @Binding var usingRealTime: Bool
     @Binding var locationWithClocks: ASALocationWithClocks
     let processedClocks: Array<ASAProcessedClock>
-    
-    @Environment(\.horizontalSizeClass) private var hSizeClass
-    
-#if os(iOS)
-let topMargin: CGFloat = (UIDevice.current.userInterfaceIdiom == .phone) ? 72.0 : 64.0
-#else
-let topMargin: CGFloat = 64.0
-#endif
-    
+            
     var body: some View {
         let dayPart: ASADayPart = processedClocks.dayPart
         let cellColor = dayPart.locationColor
@@ -33,7 +25,6 @@ let topMargin: CGFloat = 64.0
             ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
                 .environmentObject(userData)
         } // ASAList
-        .contentMargins(.top, topMargin, for: .scrollContent)
         .listStyle(.grouped)
         .scrollContentBackground(.hidden)
         .navigationBarTitle("", displayMode: .inline)

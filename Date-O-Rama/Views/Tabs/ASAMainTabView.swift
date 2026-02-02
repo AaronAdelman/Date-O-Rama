@@ -33,8 +33,8 @@ struct ASAMainTabView: View {
                     
                     Tab(
                         location.shortFormattedOneLineAddress,
-                        systemImage: usesDeviceLocation ? "location.fill" : "circle.fill",
-                        value: index
+                        systemImage: locationWithClocks.systemName,
+                      value: index
                     ) {
                         ASALocationTab(
                             now: $now,
@@ -46,7 +46,6 @@ struct ASAMainTabView: View {
                     }
                 }
             } // TabView
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
             .background { LinearGradient(colors: [.indigo, .blue], startPoint: .top, endPoint: .bottom) }
             .ignoresSafeArea()
         } // VStack
