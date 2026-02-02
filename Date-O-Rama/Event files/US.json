@@ -234,7 +234,7 @@
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "Four Chaplains Day"}, urls: {"en": "https://fourchaplains.org/the-four-chaplains/"}, first: {era: 1, y: 1948}, notes: {"en": "Created by the US Congress"}},
         {type: "D", start: {mon: 2, d: 4}, inherits: "Intl Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 4}, titles: {"en": "USO Day"}, urls: {"en": "https://www.daysoftheyear.com/days/uso-day/"}, first: {era: 1, y: 1941}, notes: {"en": "Created by Franklin Roosevelt"}},
-        {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Adlai Stevenson Day"}, urls: {"en": "https://nationaltoday.com/adlai-stevenson-day/"}},
+        {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Adlai Stevenson Day"}, urls: {"en": "https://www.daysoftheyear.com/days/adlai-stevenson-day/"}, first: {era: 1, y: 1966}},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en":"Ronald Reagan Day","he":"יום רונלד רייגן"}, urls: {"en": "https://nationaltoday.com/ronald-reagan-day/"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Super Bowl Sunday", first: {era: 1, y: 1967}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Daisy Gatson Bates Day"}, urls: {"en": "https://nationaltoday.com/daisy-gatson-bates-day/"}},
@@ -701,7 +701,7 @@
         ]},
         
         {type: "M", start: {mon: 2}, titles: {"en": "American Heart Month"}, urls: {"en": "https://www.daysoftheyear.com/days/american-heart-month/"}, first: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", notes: {"en": "National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"}, nonoverlappingSubEvents: [
-            {type: "D", start: {mon: 2, wkd: [6], nth: 3}, titles: {"en": "National Woman’s Heart Day"}, urls: {"en": "https://www.checkiday.com/b8f7d5258330d540b707e5002590888c/national-womans-heart-day"}, inherits: "*MedAwareness*", first: {era: 1, y: 2001}, emoji: "🫀"},
+            {type: "D", start: {mon: 2, wkd: [6], nth: 3}, titles: {"en": "National Woman’s Heart Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womans-heart-day/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2001}, emoji: "🫀", notes: {"en": "Created by Tommy Thompson"}},
         ]},
         
         {type: "W", start: {mon: 3, fullWk: 1}, titles: {"en": "National Consumer Protection Week"}, urls: {"en": "https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en": "NCPW\nConsumer Awareness Week"}, nonoverlappingSubEvents: [
