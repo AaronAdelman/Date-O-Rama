@@ -46,7 +46,7 @@ struct ASAMainTabView: View {
                     }
                 }
             } // TabView
-            .background { LinearGradient(colors: [.indigo, .blue], startPoint: .top, endPoint: .bottom) }
+//            .background { LinearGradient(colors: [.indigo, .blue], startPoint: .top, endPoint: .bottom) }
             .ignoresSafeArea()
         } // VStack
         .toolbar {
