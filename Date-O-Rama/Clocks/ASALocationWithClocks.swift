@@ -100,9 +100,9 @@ extension ASALocationWithClocks {
             case .earthLocation:
                 return "mappin"
             case .earthUniversal:
-                return "globe"
+                return "globe.americas.fill"
             case .marsUniversal:
-                return "circle.fill"
+                return "globe.desk.fill"
             }
         }
     }
