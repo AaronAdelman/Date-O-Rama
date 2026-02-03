@@ -243,7 +243,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     private var startingUp = true
     
-    public class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool) {
+    public class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool)? {
         //        debugPrint(#file, #function, dictionary)
         
         let newClock = ASAClock()
@@ -268,11 +268,13 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
-            if code == nil {
-                newClock.calendar = ASACalendarFactory.calendar(code: .gregorian)!
-            } else {
-                newClock.calendar = ASACalendarFactory.calendar(code: code!)!
+            let calendar: (any ASACalendar)? = ASACalendarFactory.calendar(code: code!)
+            if calendar == nil {
+                return nil
             }
+            newClock.calendar = calendar!
+        } else {
+            return nil
         }
         
         let dateFormat = dictionary[DATE_FORMAT_KEY] as? String

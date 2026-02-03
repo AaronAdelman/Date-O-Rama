@@ -106,9 +106,6 @@
 		A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */; };
 		A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0925C026AA00BC62C4 /* Thanks to.pdf */; };
 		A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */; };
-		A5166C6F2EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */; };
-		A5166C702EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */; };
-		A5166C712EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */; };
 		A5166C732EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */; };
 		A5166C742EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */; };
 		A5166C752EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */; };
@@ -1361,7 +1358,6 @@
 		A5150F1625C026BB00BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
 		A5150F1725C026C200BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
 		A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAForwardChevronSymbol.swift; sourceTree = "<group>"; };
-		A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUnknownCalendar.swift; sourceTree = "<group>"; };
 		A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALDMLCalendar.swift; sourceTree = "<group>"; };
 		A5166C762EE9DE8000F23048 /* ASALDMLApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALDMLApplier.swift; sourceTree = "<group>"; };
 		A5166C7A2EE9E47400F23048 /* ASACalendarWithAMAndPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithAMAndPM.swift; sourceTree = "<group>"; };
@@ -1994,7 +1990,6 @@
 				A54BFD882ED37E3900C1F608 /* ASAJulianCalendar.swift */,
 				A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */,
 				A53A5B032451AFDC005F9876 /* ASASolarTimeCalendar.swift */,
-				A5166C6E2EE9DA0900F23048 /* ASAUnknownCalendar.swift */,
 			);
 			path = Calendars;
 			sourceTree = "<group>";
@@ -3883,7 +3878,6 @@
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASAClockArrayKey.swift in Sources */,
 				A5A6FD5827BEC981003595D5 /* StringExtensions.swift in Sources */,
-				A5166C6F2EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */,
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A5E638D82E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
@@ -4067,7 +4061,6 @@
 				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAAllLocationsTab.swift in Sources */,
 				A577066D2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */,
-				A5166C702EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */,
 				A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5EB60EB2892E4EC006009AF /* ASALocation.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,
@@ -4111,7 +4104,6 @@
 				A59D802C2600C57A00FD8BBF /* ASACalendar.swift in Sources */,
 				A5166C852EEB3CDC00F23048 /* ASABahaiCalendar.swift in Sources */,
 				A59D80402600C59200FD8BBF /* ASAProcessedClock.swift in Sources */,
-				A5166C712EE9DA0900F23048 /* ASAUnknownCalendar.swift in Sources */,
 				A557AD0F25DD495400A264B6 /* LocaleExtensions.swift in Sources */,
 				A5E638D02E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A557AD5525DD4BA200A264B6 /* ASADateFormat.swift in Sources */,

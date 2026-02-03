@@ -30,6 +30,6 @@ class ASACalendarFactory {
             return ASABahaiCalendar(calendarCode: code)
         }
      
-        return ASAUnknownCalendar(calendarCode: code)
+        return nil
     } // class func calendar(code:  ASACalendarCode) -> ASACalendar?
 } // class ASACalendarFactory
