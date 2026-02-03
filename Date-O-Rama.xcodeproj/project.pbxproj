@@ -811,6 +811,7 @@
 		A5E3606624C756FF0000A268 /* IL (Hebrew).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* IL (Hebrew).json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
 		A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */; };
+		A5E410D52F31E8690055E642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
 		A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
 		A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
 		A5E46B2E2D9488CE0084FB36 /* IN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */; };
@@ -3292,6 +3293,7 @@
 				A5372CB92C9B4805009149E1 /* Western Christianity (derived).json in Resources */,
 				A5FB22CE2863906100B5042B /* VA.json in Resources */,
 				A5B999B528622B1800072FD5 /* BT.json in Resources */,
+				A5E410D52F31E8690055E642 /* Assets.xcassets in Resources */,
 				A5E4961E28625142001BF40C /* KI.json in Resources */,
 				A5171A602899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5EFFF50285B5D7E00F2205F /* ET.json in Resources */,
