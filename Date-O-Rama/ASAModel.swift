@@ -198,7 +198,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         
         switch key {
         case .app:
-            return ASALocationWithClocks(location: deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
+            return ASALocationWithClocks.generic(location: deviceLocation,usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .threeLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
