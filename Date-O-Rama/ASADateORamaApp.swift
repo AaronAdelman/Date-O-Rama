@@ -12,10 +12,11 @@ import SwiftUI
 struct ASADateORamaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    @ObservedObject var userData = ASAModel.shared
-    @State var now               = Date()
-    @State var usingRealTime     = true
+    @ObservedObject var userData        = ASAModel.shared
+    @State var now                      = Date()
+    @State var usingRealTime            = true
     @StateObject private var watchModel = WatchConnectivityModel()
+    @ObservedObject var locationManager = ASALocationManager.shared
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -27,6 +28,7 @@ struct ASADateORamaApp: App {
                         .navigationBarTitleDisplayMode(.inline)
                         .environmentObject(userData)
                         .environmentObject(watchModel)
+                        .environmentObject(locationManager)
                 } else {
                     ASAAllLocationsTab(
                         now: $now,
@@ -36,7 +38,7 @@ struct ASADateORamaApp: App {
                     )
                     .environmentObject(userData)
                     .environmentObject(watchModel)
-                    .environmentObject(ASALocationManager.shared) 
+                    .environmentObject(locationManager) 
                 }
             }
             .preferredColorScheme(.dark)

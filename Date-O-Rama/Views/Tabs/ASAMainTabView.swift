@@ -14,6 +14,8 @@ struct ASAMainTabView: View {
         return self.sizeClass == .compact
     } // var compact
     
+    @EnvironmentObject var locationManager: ASALocationManager
+    
     var body: some View {
         VStack(spacing: 0.0) {
             if compact && !usingRealTime {
@@ -46,7 +48,6 @@ struct ASAMainTabView: View {
                     }
                 }
             } // TabView
-//            .background { LinearGradient(colors: [.indigo, .blue], startPoint: .top, endPoint: .bottom) }
             .ignoresSafeArea()
         } // VStack
         .toolbar {
@@ -129,6 +130,7 @@ struct ASAMainTabView: View {
         }
         .sheet(isPresented: $showComplicationsSheet) {
             ASAComplicationClocksTab(now: $now)
+                .environmentObject(locationManager)
         }
     } // body
 }
@@ -138,4 +140,5 @@ struct ASAMainTabView: View {
     ASAMainTabView(now: .constant(Date()), usingRealTime: .constant(true))
         .environmentObject(ASAModel.shared)
         .environmentObject(WatchConnectivityModel())
+        .environmentObject(ASALocationManager.shared)
 }
