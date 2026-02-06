@@ -23,6 +23,7 @@ struct ASAAllLocationsTab: View {
     @State private var searchCompletions: [MKLocalSearchCompletion] = []
     private let searchCompleter = MKLocalSearchCompleter()
     private let geocoder = CLGeocoder()
+    @EnvironmentObject var locationManager: ASALocationManager
     
     private class CompleterDelegate: NSObject, MKLocalSearchCompleterDelegate {
         var onUpdate: (([MKLocalSearchCompletion]) -> Void)?
@@ -99,7 +100,6 @@ struct ASAAllLocationsTab: View {
                         
                         if !existsDeviceLocation {
                             Button(action: {
-                                let locationManager = ASALocationManager.shared
                                 let deviceLocation = locationManager.deviceLocation
                                 let newLocationWithClocks = ASALocationWithClocks.generic(location: deviceLocation, usesDeviceLocation: true, locationManager: locationManager)
                                 userData.addLocationWithClocks(newLocationWithClocks)
@@ -112,7 +112,6 @@ struct ASAAllLocationsTab: View {
                         
                         if !existsEarthUniversalLocation {
                             Button(action: {
-                                let locationManager = ASALocationManager.shared
                                 let newLocationWithClocks = ASALocationWithClocks.generic(location: .earthUniversal, usesDeviceLocation: false, locationManager: locationManager)
                                 userData.addLocationWithClocks(newLocationWithClocks)
                             }) {
@@ -124,7 +123,6 @@ struct ASAAllLocationsTab: View {
 
                         if !existsMarsUniversalLocation {
                             Button(action: {
-                                let locationManager = ASALocationManager.shared
                                 let newLocationWithClocks = ASALocationWithClocks.generic(location: .marsUniversal, usesDeviceLocation: false, locationManager: locationManager)
                                 userData.addLocationWithClocks(newLocationWithClocks)
                             }) {
@@ -240,7 +238,6 @@ struct ASAAllLocationsTab: View {
         // Build a location candidate from the placemark
         guard let location = placemark.location else { return }
  
-        let locationManager = ASALocationManager.shared
         let asaLocation = ASALocation.create(placemark: placemark, location: location)
         let newLocationWithClocks = ASALocationWithClocks.generic(location: asaLocation, usesDeviceLocation: false, locationManager: locationManager)
         userData.addLocationWithClocks(newLocationWithClocks)

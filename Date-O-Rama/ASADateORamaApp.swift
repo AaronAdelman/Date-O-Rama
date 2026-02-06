@@ -36,6 +36,7 @@ struct ASADateORamaApp: App {
                     )
                     .environmentObject(userData)
                     .environmentObject(watchModel)
+                    .environmentObject(ASALocationManager.shared) 
                 }
             }
             .preferredColorScheme(.dark)
