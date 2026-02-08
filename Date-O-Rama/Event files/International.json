@@ -569,7 +569,7 @@
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Robinson Crusoe Day"}, urls: {"en": "https://www.daysoftheyear.com/days/robinson-crusoe-day/"}, first: {era: 1, y: 1999}, emoji: "🏝️"},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "Spunky Old Broads Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spunky-old-broads-day/"}, first: {era: 1, y: 2002}, emoji: "👵", notes: {"en": "Created by Dr. Gayle Carson"}},
         {type: "D", start: {mon: 2, d: 1}, titles: {"en": "World Aspergillosis Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-aspergillosis-day/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2018}, notes: {"en": "Created by the National Aspergillosis Centre"}},
-        {type: "D", start: {mon: 2, d: 10}, titles: {"en": "All the News That’s Fit to Print Day"}, urls: {"en": "https://nationaltoday.com/all-the-news-thats-fit-to-print-day/"}, emoji: "🗞️"},
+        {type: "D", start: {mon: 2, d: 10}, titles: {"en": "All the News That’s Fit to Print Day"}, urls: {"en": "https://www.daysoftheyear.com/days/all-the-news-thats-fit-to-print-day/"}, emoji: "🗞️", first: {era: 1, y: 1897}, notes: {"en": "Created by Adoph Ochs"}},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "International Cribbage Day"}, urls: {"en": "https://nationaltoday.com/international-cribbage-day/"}, first: {era: 1, y: 2017}, emoji: "🂠"},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en": "Plimsoll Day"}, urls: {"en": "https://www.daysoftheyear.com/days/plimsoll-day/"}},
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "Be Electrific Day"}, urls: {"en": "https://nationaltoday.com/be-electrific-day/"}, first: {era: 1, y: 1988}, emoji: "🔌"},
