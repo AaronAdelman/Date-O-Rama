@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 1, d: 5}, titles: {"en": "National Ellen Day"}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Davis Day"}},
         {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Samantha Day"}},
-        {type: "D", start: {mon: 1, d: 6}, titles: {"en": "National Smith Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-smith-day/"}, first: {era: 1, y: 1994}, notes: {"en": "Created by Adrienne Sioux Koopersmith"}},
+        {type: "D", start: {mon: 1, d: 6}, inherits: "Natl Smith Day", first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 1, d: 9}, titles: {"en": "National Austin Day"}},
         {type: "D", start: {mon: 1, d: 9}, titles: {"en": "National Carter Day"}},
         {type: "D", start: {mon: 1, d: 9}, titles: {"en": "National Faith Day"}},
