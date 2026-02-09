@@ -8,9 +8,9 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Seychelles"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "Day after New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 3, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}, inherits: "Public Holiday"},
-        {type: "D", start: {mon: 1, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "D", start: {mon: 1, d: 2}, inherits: "Day after New Year’s Day", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
+        {type: "D", start: {mon: 1, d: 3, wkd: [6]}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
+        {type: "D", start: {mon: 1, d: 3}, inherits: "New Year’s Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/international-new-years-day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -22,7 +22,9 @@
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/immaculate-conception-day"}},
-
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
+        
+        {type: "D", start: {mon: 2, d: 1}, inherits: "Abolition of Slavery Day", urls: {"en": "https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, first: {era: 1, y: 2026}},
+        {type: "D", start: {mon: 2, d: 2, wkd: [2]}, titles: {"en": "Abolition of Slavery Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, first: {era: 1, y: 2026}},
    ]
 }

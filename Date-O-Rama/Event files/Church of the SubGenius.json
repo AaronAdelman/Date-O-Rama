@@ -2,7 +2,7 @@
     titles: {"ca":"Església dels SubGenis","en":"Church of the SubGenius","es":"Iglesia de los subgenios","fi":"Church of the SubGenius","fr":"Church of the SubGenius","it":"Chiesa del SubGenio","nb":"Church of the SubGenius","pl":"Kościół SubGeniuszu","pt":"Igreja do Subgênio","ro":"Biserica SubGenius","ru":"Церковь недомудреца","uk":"Церква НедоМудреця","vi":"Giáo hội SubGenius"},
     defaultLocale: "en",
     calendarCode: "gre",
-    calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
+    calendarColor: {name: "gray"},
     first: {era: 1, y: 1979},
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [

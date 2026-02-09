@@ -1,7 +1,7 @@
 {
     titles: {"*": "PK"},
     "//": "Pakistan",
-    "TODO": "Muslim holidays, ִHindu holidays",
+    "TODO": "Muslim holidays, ִHindu holidays, Basant",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.10, green: 0.25, blue: 0.13},
@@ -9,10 +9,10 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Pakistan"},
     events: [
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 15}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 12, d: 15}, inherits: "Children’s Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Independence Day", type: "D", start: {mon: 8, d: 14}, first: {era: 1, y: 1947}, urls: {"en": "https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
+        {type: "D", start: {mon: 8, d: 14}, inherits: "Independence Day", first: {era: 1, y: 1947}, urls: {"en": "https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 4, d: 30}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

@@ -13,6 +13,6 @@
         {type: "D", start: {"zmoPhase": "1stFull", mon: 1}, titles: {"en": "Mahayana New Year"}, urls: {"en": "https://www.daysoftheyear.com/days/mahayana-new-year/"}},
     ],
     templates: [
-        {template: "Parinirvana Day", type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/parinirvana-day-nirvana-day/"}, titles: {"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"}, notes: {"en": "Nirvana Day"}},
+        {template: "Parinirvana Day", type: "D", start: {mon: 2, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/parinirvana-day/"}, titles: {"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"}, notes: {"en": "Nirvana Day"}},
     ]
 }

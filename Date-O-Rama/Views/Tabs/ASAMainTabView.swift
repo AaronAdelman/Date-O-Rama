@@ -14,130 +14,124 @@ struct ASAMainTabView: View {
         return self.sizeClass == .compact
     } // var compact
     
+    @EnvironmentObject var locationManager: ASALocationManager
+    
     var body: some View {
-        GeometryReader { geo in
-            let frameHeight: CGFloat? = geo.safeAreaInsets.top
+        VStack(spacing: 0.0) {
+            if compact && !usingRealTime {
+                // Date picker ensemble (only when not using real time)
+                ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+            }
             
-            Spacer()
-                .frame(height: frameHeight)
-            
-            VStack(spacing: 0.0) {
-                if compact && !usingRealTime {
-                        // Date picker ensemble (only when not using real time)
-                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
-                }
-                
-                TabView(selection: $userData.selectedTabIndex) {
-                    ForEach(userData.mainClocks.indices, id: \.self) { index in
-                        
-                        let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
-                        let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
-                        let location = locationWithClocks.location
-                        let processedClocks: [ASAProcessedClock] = locationWithClocks.clocks.map { clock in
-                            ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
-                        }
-                        
-                        Tab(
-                            location.shortFormattedOneLineAddress,
-                            systemImage: usesDeviceLocation ? "location.fill" : "circle.fill",
-                            value: index
-                        ) {
-                            ASALocationTab(
-                                now: $now,
-                                usingRealTime: $usingRealTime,
-                                locationWithClocks: $userData.mainClocks[index],
-                                processedClocks: processedClocks
-                            )
-                            .environmentObject(userData)
-                        }
+            TabView(selection: $userData.selectedTabIndex) {
+                ForEach(userData.mainClocks.indices, id: \.self) { index in
+                    
+                    let locationWithClocks: ASALocationWithClocks = userData.mainClocks[index]
+                    let usesDeviceLocation: Bool = locationWithClocks.usesDeviceLocation
+                    let location = locationWithClocks.location
+                    let processedClocks: [ASAProcessedClock] = locationWithClocks.clocks.map { clock in
+                        ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
                     }
-                } // TabView
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                .background { LinearGradient(colors: [.black, .blue], startPoint: .top, endPoint: .bottom) }
-                .ignoresSafeArea(.all, edges: .bottom)
-            } // VStack
-            .toolbar {
+                    
+                    Tab(
+                        location.shortFormattedOneLineAddress,
+                        systemImage: locationWithClocks.systemName,
+                      value: index
+                    ) {
+                        ASALocationTab(
+                            now: $now,
+                            usingRealTime: $usingRealTime,
+                            locationWithClocks: $userData.mainClocks[index],
+                            processedClocks: processedClocks
+                        )
+                        .environmentObject(userData)
+                    }
+                }
+            } // TabView
+            .ignoresSafeArea()
+        } // VStack
+        .toolbar {
+            ToolbarItem(placement: .navigation) {
+                Button {
+                    showAboutSheet = true
+                } label: {
+                    Label("About", systemImage: "info.circle")
+                }
+            }
+            
+            if watchModel.isPaired {
                 ToolbarItem(placement: .navigation) {
                     Button {
-                        showAboutSheet = true
+                        showComplicationsSheet = true
                     } label: {
-                        Label("About", systemImage: "info.circle")
+                        Label("Complications", systemImage: "applewatch")
                     }
                 }
-                
-                if watchModel.isPaired {
-                    ToolbarItem(placement: .navigation) {
-                        Button {
-                            showComplicationsSheet = true
-                        } label: {
-                            Label("Complications", systemImage: "applewatch")
-                        }
-                    }
-                }
-                
-                ToolbarItem(placement: .navigation) {
-                    // Now/Calendar menu
-                    let NOW_NAME  = "progress.indicator"
-                    let DATE_NAME = "ellipsis.calendar"
-                    Menu {
-                        Button {
-                            usingRealTime = true
-                        } label: {
-                            Label("Now", systemImage: NOW_NAME)
-                            if usingRealTime { Image(systemName: "checkmark") }
-                        }
-                        Button {
-                            usingRealTime = false
-                            now = Date()
-                        } label: {
-                            Label("Date:", systemImage: DATE_NAME)
-                            if !usingRealTime { Image(systemName: "checkmark") }
-                        }
-                        Divider()
-                        Button(action: {
-                            usingRealTime = false
-                            now = now.oneDayBefore
-                        }) {
-                            Label("Previous day", systemImage: "chevron.backward")
-                        }
-                        Button(action: {
-                            usingRealTime = false
-                            now = now.oneDayAfter
-                        }) {
-                            Label("Next day", systemImage: "chevron.forward")
-                        }
-                    } label: {
-                        if usingRealTime {
-                            ProgressView()
-                                .tint(.green)
-                        } else {
-                            Image(systemName: DATE_NAME)
-                                .foregroundStyle(.yellow)
-                        }
-                    }
-                }
-                
-                if !compact && !usingRealTime {
-                    ToolbarItem(placement: .navigation) {
-                        // Date picker ensemble (only when not using real time)
-                        ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
-                    }
-                }
-                ToolbarItem(placement: .navigation) {
+            }
+            
+            ToolbarItem(placement: .navigation) {
+                // Now/Calendar menu
+                let NOW_NAME  = "progress.indicator"
+                let DATE_NAME = "ellipsis.calendar"
+                Menu {
                     Button {
-                        userData.shouldShowLocationTab = false
+                        usingRealTime = true
                     } label: {
-                        Label("Locations", systemImage: "list.bullet")
+                        Label("Now", systemImage: NOW_NAME)
+                        if usingRealTime { Image(systemName: "checkmark") }
+                    }
+                    Button {
+                        usingRealTime = false
+                        now = Date()
+                    } label: {
+                        Label("Date:", systemImage: DATE_NAME)
+                        if !usingRealTime { Image(systemName: "checkmark") }
+                    }
+                    Divider()
+                    Button(action: {
+                        usingRealTime = false
+                        now = now.oneDayBefore
+                    }) {
+                        Label("Previous day", systemImage: "chevron.backward")
+                    }
+                    Button(action: {
+                        usingRealTime = false
+                        now = now.oneDayAfter
+                    }) {
+                        Label("Next day", systemImage: "chevron.forward")
+                    }
+                } label: {
+                    if usingRealTime {
+                        ProgressView()
+                            .tint(.green)
+                    } else {
+                        Image(systemName: DATE_NAME)
+                            .foregroundStyle(.yellow)
                     }
                 }
-            } // toolbar
-            .sheet(isPresented: $showAboutSheet) {
-                ASAAboutTab()
             }
-            .sheet(isPresented: $showComplicationsSheet) {
-                ASAComplicationClocksTab(now: $now)
+            
+            if !compact && !usingRealTime {
+                ToolbarItem(placement: .navigation) {
+                    // Date picker ensemble (only when not using real time)
+                    ASADatePickerEnsemble(now: $now, selectedCalendar: $selectedCalendar)
+                }
             }
-        } // GeometryReader
+            ToolbarItem(placement: .navigation) {
+                Button {
+                    userData.shouldShowLocationTab = false
+                } label: {
+                    Label("Locations", systemImage: "list.bullet")
+                }
+            }
+        } // toolbar
+        .sheet(isPresented: $showAboutSheet) {
+            ASAAboutTab()
+        }
+        .sheet(isPresented: $showComplicationsSheet) {
+            ASAComplicationClocksTab(now: $now)
+                .environmentObject(locationManager)
+        }
     } // body
 }
 
@@ -146,4 +140,5 @@ struct ASAMainTabView: View {
     ASAMainTabView(now: .constant(Date()), usingRealTime: .constant(true))
         .environmentObject(ASAModel.shared)
         .environmentObject(WatchConnectivityModel())
+        .environmentObject(ASALocationManager.shared)
 }

@@ -67,13 +67,10 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         
         self.weekendDays = clock.weekendDays(location: location)
         
-        if dateComponents.day == nil {
-            debugPrint("Foo")
-        }
-        self.day = dateComponents.day ?? 1
-        self.weekday = dateComponents.weekday ?? 1
+        self.day = dateComponents.day ?? -1
+        self.weekday = dateComponents.weekday ?? -1
         if clock.calendar.supports(calendarComponent: .month) {
-            self.daysInMonth = clock.calendar.daysInMonth(for: now, locationData: location) ?? 1
+            self.daysInMonth = clock.calendar.daysInMonth(for: now, locationData: location) ?? -1
             self.supportsMonths = true
         } else {
             self.daysInMonth = 1
@@ -81,29 +78,29 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         }
         
         assert(!(location.type != .earthLocation && self.supportsMonths))
-        
-        self.hour   = dateComponents.hour
-        self.minute = dateComponents.minute
-        self.second = dateComponents.second
-        self.fractionalHour = dateComponents.solarHours
-        self.dayHalf = dateComponents.dayHalf
-        
+
+            self.hour   = dateComponents.hour
+            self.minute = dateComponents.minute
+            self.second = dateComponents.second
+            self.fractionalHour = dateComponents.solarHours
+            self.dayHalf = dateComponents.dayHalf
+
         self.transitionType = clock.calendar.transitionType
         
         self.calendarCode = clock.calendar.calendarCode
-        
+
         let month = dateComponents.month ?? 0
-        
+
         let startOfDay: Date = clock.startOfDay(date: now, location: location)
         let startOfNextDay: Date   = clock.startOfNextDay(date: now, location: location)
         let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, usesDeviceLocation: usesDeviceLocation)
         self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
         self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
-        
+
         self.startOfDay               = startOfDay
         self.startOfNextDay           = startOfNextDay
         self.regionCode               = location.regionCode
-        
+   
         if clock.calendar is ASACalendarWithBlankMonths {
             let cal = clock.calendar as! ASACalendarWithBlankMonths
             self.monthIsBlank = cal.blankMonths.contains(month)
@@ -115,14 +112,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
-        if self.supportsMonths {
-            
-            if dateComponents.era == nil {
-                debugPrint(#file, #function, dateComponents)
-            }
-            
-            let era = dateComponents.era ?? 0
-            let year = dateComponents.year ?? 0
+        if self.supportsMonths,let era = dateComponents.era, let year = dateComponents.year {
             let (weekdayItems, dayItems) = clock.miniCalendarData(era: era, year: year, month: month, day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, blankWeekdaySymbol: blankWeekdaySymbol, location: location)
             self.miniCalendarWeekdayItems = weekdayItems
             self.miniCalendarDayItems = dayItems
@@ -130,7 +120,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
             self.miniCalendarWeekdayItems = nil
             self.miniCalendarDayItems = nil
         }
-        
+
         let localeLanguage = Locale.Language(identifier: clock.localeIdentifier.effectiveIdentifier)
         self.characterDirection = localeLanguage.characterDirection
         

@@ -45,7 +45,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
     
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: locationManager.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASAModel.locationManager)]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks.generic(location: locationManager.deviceLocation, usesDeviceLocation: true, locationManager: locationManager)]
     
     private func reloadComplicationTimelines() {
 #if os(watchOS)
@@ -198,7 +198,7 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         
         switch key {
         case .app:
-            return ASALocationWithClocks(location: deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true, locationManager: ASAModel.locationManager)
+            return ASALocationWithClocks.generic(location: deviceLocation,usesDeviceLocation: true, locationManager: ASAModel.locationManager)
             
         case .threeLineLarge:
             return ASALocationWithClocks(location: deviceLocation, clocks: [
@@ -443,20 +443,23 @@ final class ASAModel:  NSObject, ObservableObject, NSFilePresenter, Sendable {
         
         if array != nil {
             for dictionary in array! {
-                let (clock, location, usesDeviceLocation) = ASAClock.new(dictionary: dictionary)
-                let index = tempArray.firstIndex(where: {
-                    if $0.usesDeviceLocation && usesDeviceLocation {
-                        return true
+                let clockAndLocationStuff = ASAClock.new(dictionary: dictionary)
+                if clockAndLocationStuff != nil {
+                    let (clock, location, usesDeviceLocation) = clockAndLocationStuff!
+                    let index = tempArray.firstIndex(where: {
+                        if $0.usesDeviceLocation && usesDeviceLocation {
+                            return true
+                        }
+                        
+                        return $0.location == location && $0.usesDeviceLocation == usesDeviceLocation
+                    })
+                    if index == nil {
+                        tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation, locationManager: ASAModel.locationManager))
+                    } else {
+                        tempArray[index!].clocks.append(clock)
                     }
-                    
-                    return $0.location == location && $0.usesDeviceLocation == usesDeviceLocation
-                })
-                if index == nil {
-                    tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation, locationManager: ASAModel.locationManager))
-                } else {
-                    tempArray[index!].clocks.append(clock)
                 }
-            } // for dictionary in temp!
+            } // for dictionary in array!
         } else {
             return []
         }

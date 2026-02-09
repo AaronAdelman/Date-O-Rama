@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct ASAComplicationClocksTab: View {
-    @EnvironmentObject var userData:  ASAModel
+    @EnvironmentObject var userData: ASAModel
     @Binding var now: Date
+    @EnvironmentObject var locationManager: ASALocationManager
     
     var body: some View {
         NavigationView {
@@ -20,7 +21,9 @@ struct ASAComplicationClocksTab: View {
                     ForEach(ASAClockArrayKey.complicationSections, id:  \.self) {
                         complicationKey
                         in
-                        ASAComplicationSectionView(complicationKey: complicationKey, now: $now).environmentObject(userData)
+                        ASAComplicationSectionView(complicationKey: complicationKey, now: $now)
+                            .environmentObject(userData)
+                            .environmentObject(locationManager)
                     }
                 } // List
                 .listStyle(InsetGroupedListStyle())
@@ -58,6 +61,7 @@ struct ASAComplicationSectionView: View {
     } // func clockArray(with key: ASAClockArrayKey) -> ASALocationWithClocks
     
     @State private var showingDetailView = false
+    @EnvironmentObject var locationManager: ASALocationManager
     
     var body: some View {
         let locationWithClocks = self.locationWithClocksArray(with: complicationKey)
@@ -85,7 +89,9 @@ struct ASAComplicationSectionView: View {
                     }
                     .sheet(isPresented: self.$showingDetailView, onDismiss: {
                     }) {
-                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false).environmentObject(userData).environmentObject(userData).environmentObject(ASALocationManager.shared)
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
+                            .environmentObject(userData)
+                            .environmentObject(locationManager)
                     }
                 }
             } // HStack

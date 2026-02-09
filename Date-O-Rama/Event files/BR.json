@@ -6,6 +6,7 @@
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1822},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Brazil"},
+    "TODO": "Carnival of Brazil (as a single event)",
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "Founding of São Paulo", "pt": "Aniversário de São Paulo"}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/sao-paulo/sao-paulo-anniversary"}, notes: {"en": "São Paulo Anniversary"}},
@@ -67,7 +68,7 @@
         {type: "D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "he": "יום הפולקלור", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "D", start: {mon: 5, d: 24}, inherits: "Natl Coffee Day"},
-        {type: "D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "Natl Pizza Day", notes: {"en": "Pizza Day"}},
+        {type: "D", start: {mon: 7, d: 10}, inherits: "Natl Pizza Day", urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, notes: {"en": "Pizza Day"}},
         {type: "D", start: {mon: 7, d: 13}, titles: {"en":"World Rock Day","es":"Día Mundial del Rock","fr":"Journée mondiale du rock","pt":"Dia Mundial do Rock", "he": "יום הרוק העולמי"}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
 
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/carrot-cake-day/"}, emoji: "🍰"},

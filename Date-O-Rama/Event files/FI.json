@@ -25,11 +25,11 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Kalevala Day", "fi": "Kalevalan päivä"}, urls: {"en": "https://nationaltoday.com/national-emergency-number-day/"}, notes: {"en": "Finnish Culture Day"}},
+        {type: "D", start: {mon: 2, d: 28}, titles: {"be":"Дзень Калевалы","en":"Kalevala Day","et":"Kalevala Päev","fi":"Kalevalan Päivä","olo":"Kalevalan Päivy","ru":"День Калевалы","sv":"Kalevaladagen","uz":"Kalevala Kuni","vi":"Ngày Kalevala"}, urls: {"en": "https://en.wikipedia.org/wiki/Kalevala_Day"}, notes: {"en": "Finnish Culture Day", "fi": "Suomalaisen Kulttuurin Päivä"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Walpurgis Night"},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en": "Flag Day of the Finnish Defence Forces", "fi": "puolustusvoimain lippujuhlan päivä"}, inherits: "Flag Day"},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en": "Day of Finnish Architecture and Design", "fi": "Arkkitehtuurin ja muotoilun päiviä"}},
-        {type: "D", start: {mon: 2, d: 5}, titles: {"en": "Runeberg Day", "fi": "Runebergin päivä"}, notes: {"en": "Birthday of the national poet Johan Ludvig Runeberg"}, inherits: "*BDay*", urls: {"en": "https://www.daysoftheyear.com/days/runeberg-day/"}, first: {era: 1, y: 1877}},
+        {type: "D", start: {mon: 2, d: 5}, titles: {"en":"Runeberg Day","fi":"Runeberginpäivä","ru":"День Рунеберга","sah":"Рунеберг Күнэ","sv":"Runebergsdagen","uz":"Runeberg Kuni"}, notes: {"en": "Birthday of the national poet Johan Ludvig Runeberg"}, inherits: "*BDay*", urls: {"en": "https://www.daysoftheyear.com/days/runeberg-day/"}, first: {era: 1, y: 1877}},
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Birthday of novelist and playwright Minna Canth", "fi": "Minna Canthin päivä"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 3, d: 19}, titles: {"en": "Day of Equality", "fi": "Tasa-arvon päivä"}},
         {type: "D", start: {mon: 4, d: 9}, titles: {"en": "Day of the Finnish Language", "fi": "suomen kielen päivä"}},

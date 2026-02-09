@@ -16,22 +16,17 @@ struct ASALocationTab: View {
     @Binding var usingRealTime: Bool
     @Binding var locationWithClocks: ASALocationWithClocks
     let processedClocks: Array<ASAProcessedClock>
-    
-    @Environment(\.horizontalSizeClass) private var hSizeClass
-    
+            
     var body: some View {
         let dayPart: ASADayPart = processedClocks.dayPart
         let cellColor = dayPart.locationColor
-                
-        GeometryReader { geo in
-            ASAList {
-                ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
+        
+        ASAList {
+            ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
                 .environmentObject(userData)
-            }
-            .listStyle(.grouped)
-            .scrollContentBackground(.hidden)
-            .padding(.top, geo.safeAreaInsets.top)
-        }
+        } // ASAList
+        .listStyle(.grouped)
+        .scrollContentBackground(.hidden)
         .navigationBarTitle("", displayMode: .inline)
     }
 } // struct ASAAllLocationsTab

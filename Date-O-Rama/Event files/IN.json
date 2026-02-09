@@ -1,7 +1,7 @@
 {
     titles: {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 1, d: 26}, inherits: "Republic Day", urls: {"en": "https://www.daysoftheyear.com/days/indian-republic-day/"}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 1, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/devnarayan-jayanti"}, titles: {"en": "Devnarayan Jayanti"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 1, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/me-dam-me-phi"}, titles: {"en": "Me-dam-me-phi"}},
-        {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 15}, titles: {"en": "Lui-Ngai-Ni"}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni/"}, notes: {"en": "Lui Ngai Ni"}},
+        {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 15}, titles: {"as":"লুই ঙাই নি","en":"Lui Ngai Ni","hi":"लुइ-नगाई-नी","ta":"லியூ நகாய் நி"}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni/"}, notes: {"en": "Lui-Ngai-Ni"}},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Shivaji Jayanti"}, notes: {"en": "Shiv Jayanti\nChhatrapati Shivaji Maharaj Jayanti"}, urls: {"en": "https://www.daysoftheyear.com/days/shivaji-jayanti/"}, first: {era: 1, y: 1870}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Mizoram Day", "he": "יום מיזוראם"}, first: {era: 1, y: 1987}, urls: {"en": "https://nationaltoday.com/mizoram-state-day/"}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Arunachal Pradesh Day"}, urls: {"en": "https://nationaltoday.com/statehood-day-in-arunachal-pradesh/"}, notes: {"en": "Statehood Day"}},

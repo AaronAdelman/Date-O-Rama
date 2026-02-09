@@ -10,7 +10,7 @@
     events: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 1}, inherits: "Natl Heroes’ Day", urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
-        {type: "D", start: {mon: 2, d: 3, wkd: [2, 3]}, inherits: "Natl Heroes’ Day (in lieu)", urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
+        {type: "D", start: {mon: 2, d: 2, thruD: 3, wkd: [2, 3]}, inherits: "Natl Heroes’ Day (in lieu)", urls: {"en": "https://www.officeholidays.com/holidays/rwanda/rwanda-heroes-day"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {mon: 4, d: 7}, titles: {"en": "Genocide against the Tutsi Memorial Day"}, urls: {"en": "https://www.officeholidays.com/holidays/rwanda/genocide-against-the-tutsi-memorial-day"}},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {type: "D", start: {wkd: [7], nth: -1}, titles: {"en": "Umuganda", "zh": "乌姆甘达", "id": "Umuganda", "rw": "Umuganda", "nl": "Umuganda"}, urls: {"en": "https://en.wikipedia.org/wiki/Umuganda"}, first: {era: 1, y: 2009}},
+        {type: "D", start: {wkd: [7], nth: -1}, titles: {"en":"Umuganda","id":"Umuganda","nl":"Umuganda","rw":"Umuganda","zh":"乌姆甘达"}, urls: {"en": "https://en.wikipedia.org/wiki/Umuganda"}, first: {era: 1, y: 2009}},
 
     ]
 }

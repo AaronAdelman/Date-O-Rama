@@ -89,3 +89,21 @@ extension Array where Element == ASALocationWithClocks {
         return index != nil
     } // func containsLocationOf(type: ASALocationType) -> Bool
 } // extension Array where Element == ASALocationWithClocks
+
+
+extension ASALocationWithClocks {
+    var systemName: String {
+        if self.usesDeviceLocation {
+            return "location.fill"
+        } else {
+            switch self.location.type {
+            case .earthLocation:
+                return "mappin"
+            case .earthUniversal:
+                return "globe.americas.fill"
+            case .marsUniversal:
+                return "globe.desk.fill"
+            }
+        }
+    }
+}
