@@ -6,6 +6,7 @@
     calendarColor: {red: 1.00, green: 0.80, blue: 0.00},
     first: {era: 1, y: 1810},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Colombia"},
+    "TODO": "Carnaval de Barranquilla",
     events: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
