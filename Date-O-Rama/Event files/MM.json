@@ -10,8 +10,9 @@
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4}, inherits: "Independence Day", first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
-        {type: "D", start: {mon: 2, d: 12}, inherits: "Union Day", urls: {"en": "https://nationaltoday.com/union-day/"}},
-        {type: "D", start: {mon: 3, d: 2}, titles: {"en": "Peasants’ Day", "he": "יום האיכרים"}, urls: {"en": "https://nationaltoday.com/peasants-day/"}, notes: {"en": "Peasants Day"}, first: {era: 1, y: 2000}},
+        {type: "D", start: {mon: 2, d: 12}, inherits: "Union Day", urls: {"en": "https://nationaltoday.com/union-day/"}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 2, d: 13, wkd: [6]}, titles: {"en": "Union Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/myanmar/myanmar-union-day"}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 3, d: 2}, titles: {"en":"Peasants’ Day", "he": "יום האיכרים","my":"တောင်သူလယ်သမားနေ့"}, urls: {"en": "https://nationaltoday.com/peasants-day/"}, notes: {"en": "Peasants Day"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 3, d: 27}, inherits: "Armed Forces Day", urls: {"en": "https://nationaltoday.com/myanmar-armed-forces-day/"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 7, d: 19}, inherits: "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyrs-day-in-myanmar/"}, first: {era: 1, y: 1947}},

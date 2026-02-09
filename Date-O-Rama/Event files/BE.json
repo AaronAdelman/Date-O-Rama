@@ -6,6 +6,7 @@
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     first: {era: 1, y: 1831},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Belgium"},
+    "TODO": "The Carnival of Binche",
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
