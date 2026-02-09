@@ -112,9 +112,7 @@ struct ASAProcessedClock: ASAProcessedClockProtocol {
         
         self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
         
-        if self.supportsMonths {
-            let era = dateComponents.era!
-            let year = dateComponents.year!
+        if self.supportsMonths,let era = dateComponents.era, let year = dateComponents.year {
             let (weekdayItems, dayItems) = clock.miniCalendarData(era: era, year: year, month: month, day: self.day, weekday: self.weekday, daysInMonth: self.daysInMonth, monthIsBlank: self.monthIsBlank, blankWeekdaySymbol: blankWeekdaySymbol, location: location)
             self.miniCalendarWeekdayItems = weekdayItems
             self.miniCalendarDayItems = dayItems
