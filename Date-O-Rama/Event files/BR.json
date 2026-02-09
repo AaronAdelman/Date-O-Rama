@@ -6,6 +6,7 @@
     calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1822},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Brazil"},
+    "TODO": "Carnival of Brazil (as a single event)",
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 25}, titles: {"en": "Founding of São Paulo", "pt": "Aniversário de São Paulo"}, urls: {"en": "https://www.officeholidays.com/holidays/brazil/sao-paulo/sao-paulo-anniversary"}, notes: {"en": "São Paulo Anniversary"}},
