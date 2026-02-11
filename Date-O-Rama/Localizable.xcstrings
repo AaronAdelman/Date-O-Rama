@@ -1280,10 +1280,16 @@
     },
     "Earth (all locations)" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earth"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "כדור הארץ (כל מיקומים)"
+            "value" : "כדור הארץ"
           }
         }
       }
@@ -3322,10 +3328,16 @@
     },
     "Mars (all locations)" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mars"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "מאדים (כל מיקומים)"
+            "value" : "מאדים"
           }
         }
       }
