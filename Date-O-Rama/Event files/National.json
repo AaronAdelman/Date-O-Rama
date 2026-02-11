@@ -675,7 +675,7 @@
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National Make a Friend Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-friend-day/"}, first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National Peppermint Patty Day"}, urls: {"en": "https://www.daysoftheyear.com/days/peppermint-patty-day/"}},
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National Shut-in Visitation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-shut-in-visitation-day/"}},
-        {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National White Shirt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/white-shirt-day/"}, notes: {"en": "National White T-Shirt Day\nCreated by United Auto Workers"}, first: {era: 1, y: 1948}},
+        {type: "D", start: {mon: 2, d: 11}, titles: {"en": "National White Shirt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/white-shirt-day/"}, notes: {"en": "National White T-Shirt Day\nCreated by Bert Christenson of United Auto Workers (UAW)"}, first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "National Plum Pudding Day"}, urls: {urls: "https://www.daysoftheyear.com/days/plum-pudding-day/"}},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "Safety Pup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/safety-pup-day/"}, first: {era: 1, y: 1985}, notes: {"en": "Created by the National Child Safety Council"}},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "Paul Bunyan Day"}, urls: {"en": "https://www.brownielocks.com/PaulBunyanDayTrivia.html"}, emoji: "🪓", first: {era: 1, y: 1938}},
