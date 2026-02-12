@@ -56,6 +56,8 @@ struct ASAClockCell: View {
 #endif
     
     var body: some View {
+        let TEXT_COLOR = Color.white
+        
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         
 #if os(watchOS)
@@ -68,16 +70,20 @@ struct ASAClockCell: View {
             HStack {
                 VStack(alignment: .leading) {
                     ASAClockCellText(string:  processedClock.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
+                        .foregroundStyle(TEXT_COLOR)
                     
                     if canSplitTimeFromDate {
                         let LINE_LIMIT = 2
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
+                            .foregroundStyle(TEXT_COLOR)
                         if shouldShowTime {
                             let timeString: String = processedClock.timeString ?? ""
-                            ASAClockCellText(string: timeString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                            ASAClockCellText(string: timeString, font:  Font.headlineMonospacedDigit, lineLimit: 2)
+                                .foregroundStyle(TEXT_COLOR)
                         }
                     } else {
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                            .foregroundStyle(TEXT_COLOR)
                     }
                     
                     if processedClock.supportsMonths && shouldShowMiniCalendar && compact {
@@ -111,6 +117,7 @@ struct ASAClockCell: View {
                                     .symbolRenderingMode(.multicolor)
                                 Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
                             } // HStack
+                            .foregroundStyle(TEXT_COLOR)
                         }
                     }
 #endif
@@ -407,7 +414,4 @@ struct ASAClockEventsForEach:  View {
 //        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .nullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true, eventVisibility: .all, clock: ASAClock.generic, location: ASALocation.earthUniversal)
 //    }
 //} // struct ASAClockCell_Previews
-
-
-
 

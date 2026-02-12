@@ -67,11 +67,14 @@ var compact:  Bool {
                 }
             } // VStack
         } else {
+            let PRIMARY_COLOR        = Color.white
+            let SECONDARY_GRAY_LEVEL = 0.75
+            let SECONDARY_COLOR      = Color(red: SECONDARY_GRAY_LEVEL, green: SECONDARY_GRAY_LEVEL, blue: SECONDARY_GRAY_LEVEL)
 
             let string = shouldShowEndDate ? ((isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")) : startDateString
             let cutoffDate = event.endDate ?? event.startDate!
             let pastCutoffDate: Bool = cutoffDate < Date()
-            let foregroundColor: Color = pastCutoffDate ? .secondary : .primary
+            let foregroundColor: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
             Text(verbatim:  string ?? "")
                 .font(timeFontSize)
                 .foregroundColor(foregroundColor)

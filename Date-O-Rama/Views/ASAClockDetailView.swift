@@ -98,7 +98,7 @@ struct ASAClockDetailEditingSection:  View {
         let localeIdentifier = selectedClock.localeIdentifier
 
         Group {
-            Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
+            Section(header: Text(NSLocalizedString("HEADER_Row", comment: "")).foregroundStyle(.secondary)) {
                 NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: calendarCode, locationType: location.type)) {
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: calendarCode.localizedName)
                 }
@@ -140,7 +140,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     
     var body:  some View {
         if builtInEventCalendarFileData.records.count > 0 {
-            Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
+            Section(header: Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: "")).foregroundStyle(.secondary)) {
                 if selectedClock.calendar.calendarCode == .gregorian {
                     Picker(selection: $selection, label:
                             Text("Show built-in event calendars:").bold().underline(), content: {

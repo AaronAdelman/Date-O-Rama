@@ -16,8 +16,10 @@ fileprivate let MINIMUM_SCALE_FACTOR: CGFloat = 1.0
 #else
 fileprivate let MINIMUM_SCALE_FACTOR: CGFloat = 0.7
 #endif
-fileprivate let CELL_FONT: Font               = .caption2
+fileprivate let CELL_FONT: Font = .caption2
 
+fileprivate let WEEKDAY_COLOR = Color.weekday
+fileprivate let WEEKEND_COLOR = Color.weekend
 
 struct ASABlankCell:  View {
     var body: some View {
@@ -34,8 +36,8 @@ struct ASAOrdinaryCell:  View {
         Text(text)
             .font(CELL_FONT)
             .padding(1.0)
-            .foregroundColor(shouldNoteAsWeekend ? .secondary : .primary)
-            .lineLimit(1)
+            .foregroundColor(shouldNoteAsWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
+          .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAOrdinaryCell
@@ -52,7 +54,7 @@ struct ASAAccentedCell:  View {
             Text(text)
                 .font(CELL_FONT)
                 .padding(1.0)
-                .foregroundColor(.white)
+                .foregroundColor(WEEKDAY_COLOR)
                 .lineLimit(1)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
@@ -68,7 +70,7 @@ struct ASAWeekdayCell:  View {
             .font(CELL_FONT)
             .fontWeight(.bold)
             .padding(1.0)
-            .foregroundColor(isWeekend ? .secondary : .primary)
+            .foregroundColor(isWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
             .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body

@@ -41,7 +41,6 @@ struct ASADateORamaApp: App {
                     .environmentObject(locationManager) 
                 }
             }
-            .preferredColorScheme(.dark)
             .onReceive(timer) { input in
                 if usingRealTime {
                     self.now = Date()

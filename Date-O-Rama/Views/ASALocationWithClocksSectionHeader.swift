@@ -30,7 +30,8 @@ struct ASALocationWithClocksSectionHeader: View {
 #endif
         
         let sectionTimeZoneString = location.abbreviatedTimeZoneString(for: now)
-        
+        let SECTION_TIME_ZONE_STRING_COLOR = Color.timeZone
+
         ViewThatFits(in: .horizontal) {
             // Regular/wide layout candidate
             HStack(alignment: .firstTextBaseline, spacing: 8) {
@@ -47,9 +48,11 @@ struct ASALocationWithClocksSectionHeader: View {
                 )
                 .layoutPriority(1)
                 .fixedSize(horizontal: false, vertical: true)
+                
+                Spacer()
 
                 Text(sectionTimeZoneString)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(SECTION_TIME_ZONE_STRING_COLOR)
             }
             .font(sectionHeaderFont)
 
@@ -72,7 +75,7 @@ struct ASALocationWithClocksSectionHeader: View {
                 }
 
                 Text(sectionTimeZoneString)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(SECTION_TIME_ZONE_STRING_COLOR)
             }
             .font(sectionHeaderFont)
             
@@ -94,9 +97,9 @@ struct ASALocationWithClocksSectionHeader: View {
                     .layoutPriority(1)
                     .fixedSize(horizontal: false, vertical: true)
                 }
-
+                
                 Text(sectionTimeZoneString)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(SECTION_TIME_ZONE_STRING_COLOR)
             }
             .font(sectionHeaderFont)
         } // ViewThatFits(in: .horizontal)
@@ -110,17 +113,21 @@ struct ASALocationWithClocksSectionHeaderTitle: View {
     var shouldCapitalize: Bool
 
     var body: some View {
+        let TITLE_COLOR = Color.primary
+        
         if shouldCapitalize {
             Text(title)
                 .textCase(.uppercase)
                 .lineLimit(lineLimit)
                 .minimumScaleFactor(minimumScaleFactor)
                 .fixedSize(horizontal: false, vertical: true)
+                .foregroundStyle(TITLE_COLOR)
         } else {
             Text(title)
                 .lineLimit(lineLimit)
                 .minimumScaleFactor(minimumScaleFactor)
                 .fixedSize(horizontal: false, vertical: true)
+                .foregroundStyle(TITLE_COLOR)
         }
     }
 }

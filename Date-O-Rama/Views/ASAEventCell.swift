@@ -8,6 +8,9 @@
 
 import SwiftUI
 
+fileprivate let CALENDAR_TITLE_GRAY_LEVEL = 0.75
+fileprivate let CALENDAR_TITLE_COLOR      = Color(red: CALENDAR_TITLE_GRAY_LEVEL, green: CALENDAR_TITLE_GRAY_LEVEL, blue: CALENDAR_TITLE_GRAY_LEVEL)
+
 struct ASAEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
@@ -111,6 +114,7 @@ struct ASAEventCell:  View {
                     .frame(width: 32.0)
             }
         } // HStack
+        .foregroundStyle(Color.white)
 #endif
     } // var body
 } // struct ASAEventCell
@@ -184,7 +188,7 @@ struct ASADottedLine: View {
         Line()
             .stroke(style: StrokeStyle(lineWidth: 1.0, dash: [2.0]))
             .frame(minWidth: 0.0, idealWidth: 0.0, minHeight: 1.0, idealHeight: 1.0, maxHeight: 1.0, alignment: .center)
-            .foregroundColor(.secondary)
+            .foregroundStyle(CALENDAR_TITLE_COLOR)
     }
 }
 
@@ -206,8 +210,9 @@ struct ASAEventCellCalendarTitle:  View {
     
     var body: some View {
         let title: String = isForClock ? event.calendarTitle : event.calendarTitleWithLocation
+
         Text(title).font(.subheadlineMonospacedDigit)
-            .foregroundColor(.secondary)
+            .foregroundColor(CALENDAR_TITLE_COLOR)
             .modifier(ASAScalable(lineLimit: compact ? 2 : 1))
     }
 }
