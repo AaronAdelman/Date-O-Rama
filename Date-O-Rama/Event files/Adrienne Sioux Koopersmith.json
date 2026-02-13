@@ -4,6 +4,7 @@
     calendarCode: "gre*",
     calendarColor: {name: "magenta"},
     first: {era: 1, y: 1994},
+    "//": "WARNING:  Ms. Koopersmith reportedly has created over 1,900 observances (“holidates”).",
     events: [
         {type: "D", start: {mon: 1, d: 6}, inherits: "Natl Smith Day", first: {era: 1, y: 1994}},
 
@@ -16,5 +17,11 @@
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "No Brainer Day"}, urls: {"en": "https://nationaltoday.com/no-brainer-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Hug a G.I. Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, first: {era: 1, y: 1996}, emoji: "🫂"},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en": "National Splurge Day"}, urls: {"en": "https://nationaltoday.com/national-splurge-day/"}, first: {era: 1, y: 1994}, emoji: "🪙"},
+        {type: "D", start: {mon: 10, d: 13}, titles: {"en": "International Skeptics Day", "he": "יום הסקפטיים הבינלאומי"}, notes: {"en": "Skeptics Day\nSome people think this observance is on January 13, the first Friday the 13th of the year, or even Election Day."}, emoji: "🫤", urls: {"en": "https://nationaltoday.com/international-skeptics-day/"}},
+        {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Pay a Compliment Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 7, d: 14}, titles: {"en": "National Pandemonium Day"}},
+        {type: "M", start: {mon: 8}, titles: {"en": "Ant Appreciation Month"}},
+        {type: "D", start: {mon: 2, d: 26}, titles: {"en": "National Tell a Fairy Tale Day", "he": "יום סיפורי האגדות הלאומי"}, urls: {"en": "https://nationaltoday.com/tell-a-fairy-tale-day/"}, notes: {"en": "Tell a Fairy Tale Day", "he": "יום סיפורי האגדות"}},
+        {type: "D", start: {mon: 2, d: 25}, titles: {"en": "Pistol Patent Day"}, notes: {"en": "This observance celebrates things for which the primary purpose is to kill people."}},
     ]
 }

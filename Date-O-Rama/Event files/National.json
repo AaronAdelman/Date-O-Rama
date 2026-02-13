@@ -749,7 +749,6 @@
         {type: "D", start: {mon: 2, d: 26}, titles: {"en": "Levi Strauss Day"}, notes: {"en": "This observance celebrates fashion and may be a ploy to promote blue jeans."}, inherits: "*BDay*", first: {era: 1, y: 1829}},
         {type: "D", start: {mon: 2, d: 26}, titles: {"en": "National Carpe Diem Day"}, urls: {"en": "https://www.daysoftheyear.com/days/carpe-diem-day/"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 2, d: 26}, titles: {"en": "National Pistachio Day"}, urls: {"en": "https://www.worldpistachioday.com/"}},
-        {type: "D", start: {mon: 2, d: 26}, titles: {"en": "National Tell a Fairy Tale Day", "he": "יום סיפורי האגדות הלאומי"}, urls: {"en": "https://nationaltoday.com/tell-a-fairy-tale-day/"}, notes: {"en": "Tell a Fairy Tale Day", "he": "יום סיפורי האגדות"}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Kahlua Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kahlua-day/"}, emoji: "🥃"},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Pokemon Day", "he": "יום הפוקימון הלאומי"}, notes: {"en": "Pokémon Day", "he": "יום הפוקימון הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pokemon-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Strawberry Day", "he": "יום תות השדה הלאומי"}, first: {era: 1, y: 2013}, emoji: "🍓", urls: {"en": "https://www.daysoftheyear.com/days/strawberry-day/"}},
