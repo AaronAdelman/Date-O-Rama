@@ -130,6 +130,7 @@ struct ASAMainTabView: View {
         }
         .sheet(isPresented: $showComplicationsSheet) {
             ASAComplicationClocksTab(now: $now)
+                .preferredColorScheme(.dark)
                 .environmentObject(locationManager)
         }
     } // body
