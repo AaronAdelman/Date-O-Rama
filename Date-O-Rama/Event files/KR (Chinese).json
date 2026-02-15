@@ -6,7 +6,7 @@
     calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_South_Korea"},
     events: [
-        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", titles: {"en": "Korean New Year"}, notes: {"en": "Seollal\nKorean Lunar New Year", "ko": "설날"}, urls: {"en": "https://www.daysoftheyear.com/days/korean-new-year/"}},
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, titles: {"ar":"رأس السنة الكورية","cs":"Sollal","cy":"Seollal","da":"Seollal","de":"Seollal","el":"Κορεάτικο νέο έτος","en":"Korean New Year","es":"Año Nuevo coreano","fa":"سال نو کره‌ای","fr":"Seollal","hi":"कोरिया नव वर्ष दिवस","hu":"Koreai újév","hy":"Կորեական Նոր տարի","id":"Seollal","it":"Capodanno coreano","ja":"ソルラル","ko":"설날","ku":"Sersala korêyiyan","ms":"Seollal","nl":"Seollal","pl":"Seollal","ru":"Корейский Новый год","sk":"Sollal","sv":"Seollal","ta":"கொரியப் புத்தாண்டு","th":"ตรุษเกาหลี","tr":"Kore Yeni Yılı","uk":"Корейський Новий Рік","uz":"Janubiy Koreya \"Solnal\" bayrami","vi":"Seollal","zh":"朝鲜新年"}, inherits: "Chinese New Year", notes: {"en": "Seollal\nKorean Lunar New Year", "ko": "설날"}, urls: {"en": "https://www.daysoftheyear.com/days/korean-new-year/"}},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival", titles: {"en": "Daeboreum", "ko": "정월 대보름"}},
         {type: "D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/buddhas-birthday"}, inherits: "Buddha’s Birthday"},
         {type: "D", start: {mon: 8, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/south-korea/south-korea-harvest-festival"}, titles: {"en": "Harvest Festival Holiday"}},
