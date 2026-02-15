@@ -128,7 +128,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return temp
     } // var allNotes: Array<String>
     
-    var color: Color = .primary
+    var color: Color = .multiEvent
     
     var colors: Array<Color> {
         return self.events.map { $0.color }

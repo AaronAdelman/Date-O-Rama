@@ -11,6 +11,8 @@ import SwiftUI
 struct ASALocationMenuSymbol: View {
     var body: some View {
         ASAGlassSymbol(systemName: "arrowtriangle.down.circle.fill")
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(.primary, .quaternary)
             .font(.title)
     }
 }

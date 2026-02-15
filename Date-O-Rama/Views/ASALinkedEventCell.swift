@@ -74,7 +74,8 @@ struct ASALinkedEventCell: View {
                 
             } label: {
                 ASAGlassSymbol(systemName: "chevron.down.circle.fill")
-                    .foregroundStyle(event.color)
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(.chevronDown, event.color)
                     .font(.title)
             }
             .popover(isPresented: $showingEventView) {
