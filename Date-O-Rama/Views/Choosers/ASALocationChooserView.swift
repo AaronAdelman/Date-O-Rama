@@ -116,7 +116,7 @@ struct ASALocationChooserView: View {
                 if tempLocationData.type == .earthLocation {
                     Section {
                         if !locationManager.connectedToTheInternet {
-                            Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
+                            Text("CANNOT_GEOLOCATE").foregroundStyle(Color.gray)
                         }
                         
                         if locationManager.connectedToTheInternet {
@@ -134,7 +134,7 @@ struct ASALocationChooserView: View {
                                 self.geolocate()
                             }) {
                                 Text("🔍")
-                                    .foregroundColor(.accentColor)
+                                    .foregroundStyle(Color.accentColor)
                                     .bold()
                             }
                             .keyboardShortcut(.defaultAction)

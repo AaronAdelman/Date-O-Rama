@@ -290,7 +290,7 @@ private struct SearchingLocationsListView: View {
                             if !completion.subtitle.isEmpty {
                                 Text(completion.subtitle)
                                     .font(.subheadline)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Color.secondary)
                             }
                         }
                     }

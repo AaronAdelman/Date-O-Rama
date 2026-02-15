@@ -62,7 +62,7 @@ struct ASANewClockDetailView: View {
             .navigationViewStyle(StackNavigationViewStyle())
         } // VStack
         .font(Font.body)
-        .foregroundColor(.primary)
+        .foregroundStyle(Color.primary)
     } // var body
 } // struct ASANewClockDetailView
 

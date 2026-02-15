@@ -83,15 +83,15 @@ struct ASALocaleCell: View {
             if clock.calendar.canSplitTimeFromDate {
                 VStack(alignment: .leading) {
                     Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: clock.dateFormat, timeFormat: .none, locationData: location))
-                        .foregroundColor(Color.secondary)
+                        .foregroundStyle(Color.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
                     Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: clock.timeFormat, locationData: location))
-                        .foregroundColor(Color.secondary)
+                        .foregroundStyle(Color.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
                 }
             } else {
                 Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: clock.dateFormat, timeFormat: clock.timeFormat, locationData: location))
-                    .foregroundColor(Color.secondary)
+                    .foregroundStyle(Color.secondary)
                     .modifier(ASAScalable(lineLimit: 1))
             }
             Spacer()

@@ -74,7 +74,7 @@ struct ASALinkedEventCell: View {
                 
             } label: {
                 ASAGlassSymbol(systemName: "chevron.down.circle.fill")
-                    .foregroundColor(event.color)
+                    .foregroundStyle(event.color)
                     .font(.title)
             }
             .popover(isPresented: $showingEventView) {
@@ -83,7 +83,7 @@ struct ASALinkedEventCell: View {
                         .frame(minWidth: FRAME_MIN_WIDTH, minHeight: FRAME_MIN_HEIGHT)
                 }
             }
-            .foregroundColor(.accentColor)
+            .foregroundStyle(Color.accentColor)
             .onChange(of: action) { _, newValue in
                 if newValue == .deleted {
                     self.showingEventView = false

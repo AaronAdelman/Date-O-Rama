@@ -56,11 +56,11 @@ struct ASALocationCell:  View {
                             } // HStack
                             if !(locationManager.locationAuthorizationStatus?.authorizedAtLeastWhenInUse ?? false) {
                                 Text("NO_DEVICE_LOCATION_PERMISSION")
-                                    .foregroundColor(.gray)
+                                    .foregroundStyle(Color.gray)
                                 if locationManager.lastError != nil {
                                     Text(locationManager.lastError!.localizedDescription)
                                         .multilineTextAlignment(.trailing)
-                                        .foregroundColor(.red)
+                                        .foregroundStyle(Color.red)
                                 }
                             }
                         }

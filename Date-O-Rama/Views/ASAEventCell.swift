@@ -212,7 +212,7 @@ struct ASAEventCellCalendarTitle:  View {
         let title: String = isForClock ? event.calendarTitle : event.calendarTitleWithLocation
 
         Text(title).font(.subheadlineMonospacedDigit)
-            .foregroundColor(CALENDAR_TITLE_COLOR)
+            .foregroundStyle(CALENDAR_TITLE_COLOR)
             .modifier(ASAScalable(lineLimit: compact ? 2 : 1))
     }
 }

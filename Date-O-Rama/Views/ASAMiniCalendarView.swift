@@ -24,7 +24,7 @@ fileprivate let WEEKEND_COLOR = Color.weekend
 struct ASABlankCell:  View {
     var body: some View {
         Rectangle()
-            .foregroundColor(.clear)
+            .foregroundStyle(Color.clear)
     } // var body
 } // struct ASABlankCell
 
@@ -36,7 +36,7 @@ struct ASAOrdinaryCell:  View {
         Text(text)
             .font(CELL_FONT)
             .padding(1.0)
-            .foregroundColor(shouldNoteAsWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
+            .foregroundStyle(shouldNoteAsWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
           .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
@@ -49,12 +49,12 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(shouldNoteAsWeekend ? Color("accentedCellWeekend") : Color("accentedCell"))
+                .foregroundStyle(shouldNoteAsWeekend ? Color("accentedCellWeekend") : Color("accentedCell"))
             
             Text(text)
                 .font(CELL_FONT)
                 .padding(1.0)
-                .foregroundColor(WEEKDAY_COLOR)
+                .foregroundStyle(WEEKDAY_COLOR)
                 .lineLimit(1)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
@@ -70,7 +70,7 @@ struct ASAWeekdayCell:  View {
             .font(CELL_FONT)
             .fontWeight(.bold)
             .padding(1.0)
-            .foregroundColor(isWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
+            .foregroundStyle(isWeekend ? WEEKEND_COLOR : WEEKDAY_COLOR)
             .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body

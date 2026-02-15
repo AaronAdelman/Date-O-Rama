@@ -74,10 +74,10 @@ var compact:  Bool {
             let string = shouldShowEndDate ? ((isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")) : startDateString
             let cutoffDate = event.endDate ?? event.startDate!
             let pastCutoffDate: Bool = cutoffDate < Date()
-            let foregroundColor: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
+            let foregroundStyle: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
             Text(verbatim:  string ?? "")
                 .font(timeFontSize)
-                .foregroundColor(foregroundColor)
+                .foregroundStyle(foregroundStyle)
                 .modifier(ASAScalable(lineLimit: 1))
                 .multilineTextAlignment(.leading)
         }

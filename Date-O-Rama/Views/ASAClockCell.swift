@@ -218,7 +218,7 @@ struct ASAClockCell: View {
                                         .symbolRenderingMode(.multicolor)
                                     Text(NSLocalizedString("Add external event", comment: ""))
                                 } // HStack
-                                .foregroundColor(.accentColor)
+                                .foregroundStyle(Color.accentColor)
                             })
                         }
                     } label: {

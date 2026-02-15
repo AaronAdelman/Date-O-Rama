@@ -26,25 +26,25 @@ struct ASATimeText:  View {
 
     var body:  some View {
         let pastCutoffDate: Bool = cutoffDate < Date()
-        let foregroundColor: Color = pastCutoffDate ? .secondary : .primary
+        let foregroundStyle: Color = pastCutoffDate ? .secondary : .primary
         
         #if os(watchOS)
         Text(verbatim:  verbatim)
             .font(timeFontSize)
-            .foregroundColor(foregroundColor)
+            .foregroundStyle(foregroundStyle)
             .modifier(ASAScalable(lineLimit: 1))
         #else
         if compact {
         Text(verbatim:  verbatim)
             .frame(width:  timeWidth)
             .font(timeFontSize)
-            .foregroundColor(foregroundColor)
+            .foregroundStyle(foregroundStyle)
             .modifier(ASAScalable(lineLimit: 2))
             .multilineTextAlignment(.leading)
         } else {
             Text(verbatim:  verbatim)
                 .font(timeFontSize)
-                .foregroundColor(foregroundColor)
+                .foregroundStyle(foregroundStyle)
                 .modifier(ASAScalable(lineLimit: 2))
                 .multilineTextAlignment(.leading)
         }

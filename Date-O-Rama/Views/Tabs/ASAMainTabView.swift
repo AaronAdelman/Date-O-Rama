@@ -106,7 +106,7 @@ struct ASAMainTabView: View {
                             .tint(.green)
                     } else {
                         Image(systemName: DATE_NAME)
-                            .foregroundStyle(.yellow)
+                            .foregroundStyle(Color.yellow)
                     }
                 }
             }

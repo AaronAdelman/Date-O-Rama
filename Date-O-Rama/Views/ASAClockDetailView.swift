@@ -49,7 +49,7 @@ struct ASAClockDetailView: View {
                             Button(action: {
                                 self.showingActionSheet = true
                             }) {
-                                Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+                                Text("Delete This Clock").foregroundStyle(Color.red).frame(alignment: .center)
                             }
                             Spacer()
                         } // HStack
@@ -98,7 +98,7 @@ struct ASAClockDetailEditingSection:  View {
         let localeIdentifier = selectedClock.localeIdentifier
 
         Group {
-            Section(header: Text(NSLocalizedString("HEADER_Row", comment: "")).foregroundStyle(.secondary)) {
+            Section(header: Text(NSLocalizedString("HEADER_Row", comment: "")).foregroundStyle(Color.secondary)) {
                 NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: calendarCode, locationType: location.type)) {
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: calendarCode.localizedName)
                 }
@@ -140,7 +140,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     
     var body:  some View {
         if builtInEventCalendarFileData.records.count > 0 {
-            Section(header: Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: "")).foregroundStyle(.secondary)) {
+            Section(header: Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: "")).foregroundStyle(Color.secondary)) {
                 if selectedClock.calendar.calendarCode == .gregorian {
                     Picker(selection: $selection, label:
                             Text("Show built-in event calendars:").bold().underline(), content: {
@@ -227,7 +227,7 @@ struct ASABuiltInEventCalendarCell:  View {
     var body: some View {
         HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedClock.builtInEventCalendars.map({$0.fileName}).contains(record.fileName))
-                .foregroundColor(record.color)
+                .foregroundStyle(record.color)
             VStack(alignment: .leading) {
                 HStack {
                     let emoji: String? = record.emoji
@@ -247,7 +247,7 @@ struct ASABuiltInEventCalendarCell:  View {
             let formatString : String = NSLocalizedString("n events", comment: "")
             let resultString : String = String.localizedStringWithFormat(formatString, record.numberOfEventSpecifications)
             Text(resultString)
-                .foregroundColor(.secondary)
+                .foregroundStyle(Color.secondary)
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell
@@ -264,7 +264,7 @@ struct ASAICalendarEventCalendarCell:  View {
     var body: some View {
         HStack {
             ASACheckmarkCircleSymbol(on: selectedClock.iCalendarEventCalendars.map({$0.title}).contains(title))
-                .foregroundColor(color)
+                .foregroundStyle(color)
             Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
         }
     }

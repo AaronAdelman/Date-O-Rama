@@ -77,7 +77,7 @@ struct ASADateFormatCell: View {
             Spacer()
                 .frame(width: 20.0)
             Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: clock.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: location))
-                .foregroundColor(Color.secondary)
+                .foregroundStyle(Color.secondary)
 
             Spacer()
             if dateFormat == self.selectedDateFormat {

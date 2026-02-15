@@ -17,7 +17,7 @@ struct ASACloseButton: View {
         } else {
             Button(action: action) {
                 Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(Color.secondary)
             }
         }
     }
