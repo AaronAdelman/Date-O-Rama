@@ -4,7 +4,7 @@
     calendarCode: "gre",
     calendarColor: {name: "red"},
     events: [
-        {type: "D", start: {Easter: "Easter", offsetD: -44}, urls: {"en": "https://nationaltoday.com/friday-fish-fry-day/"}, titles: {"en": "Friday Fish Fry Day"}, first: {era: 1, y: 2021}},
+        {type: "D", start: {Easter: "Easter", offsetD: -44}, titles: {"en": "Friday Fish Fry Day"}, urls: {"en": "https://www.fridayfishfryday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: -44}, inherits: "Natl Tartar Sauce Day", first: {era: 1, y: 2017}},
         {type: "D", start: {Easter: "Easter"}, titles: {"en": "National Baked Ham with Pineapple Day"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Natl Hangover Day", first: {era: 1, y: 2016}},
@@ -185,6 +185,7 @@
         {type: "W", start: {mon: 11, fullWk: 2}, titles: {"en": "Dear Santa Letter Week"}, urls: {"en": "https://www.daysoftheyear.com/days/dear-santa-letter-week/"}, emoji: "🎅"},
         {type: "W", start: {mon: 2, fullWk: 2}, titles: {"en": "International Flirting Week"}, urls: {"en": "https://www.daysoftheyear.com/days/flirting-week/"}, first: {era: 1, y: 2017}, notes: {"en": "Created by Robin Newman"}},
         {type: "D", start: {mon: 1, d: 22}, titles: {"en": "Dance of the Seven Veils Day"}, urls: {"en": "https://nationaltoday.com/dance-of-the-seven-veils-day/"}, first: {era: 1, y: 2022}, notes: {"en": "This may not be what you expected."}},
+        {type: "D", start: {mon: 2, d: 21}, titles: {"en": "National Breakup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-breakup-day/"}, emoji: "💔", first: {era: 1, y: 2006}},
 
         {type: "M", start: {mon: 10}, titles: {"en": "Bat Appreciation Month", "he": "חודש העטלף"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en": "Created by Merlin Tuttle"}, nonoverlappingSubEvents: [
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}, notes: {"en": "Created by Bat Conservation International"}},
