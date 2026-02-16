@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+fileprivate let PRIMARY_COLOR   = Color.white
+fileprivate let SECONDARY_COLOR = Color(red: 0.75, green: 0.75, blue: 0.75)
+
+
 struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
     var clock:  ASAClock
@@ -45,32 +49,28 @@ var compact:  Bool {
     var endDateString: String
     var isSecondary: Bool
     
-    fileprivate func startDateView() -> ASATimeText {
-        return ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
-    }
-    
-    fileprivate func endDateView() -> ASATimeText {
-        return ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate ?? event.startDate, isForClock: isForClock)
-    }
-    
     var body: some View {
         let shouldShowEndDate = (startDateString != endDateString)
 
         if compact {
             VStack(alignment: .leading) {
                 if startDateString != nil {
-                    startDateView()
+                    let pastCutoffDate: Bool = event.startDate < Date()
+                    let foregroundStyle: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
+                    
+                    ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
+                        .foregroundStyle(foregroundStyle)
                 }
                 
                 if shouldShowEndDate {
-                    endDateView()
+                    let pastCutoffDate: Bool = event.endDate < Date()
+                    let foregroundStyle: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
+                    
+                    ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate ?? event.startDate, isForClock: isForClock)
+                        .foregroundStyle(foregroundStyle)
                 }
             } // VStack
         } else {
-            let PRIMARY_COLOR        = Color.white
-            let SECONDARY_GRAY_LEVEL = 0.75
-            let SECONDARY_COLOR      = Color(red: SECONDARY_GRAY_LEVEL, green: SECONDARY_GRAY_LEVEL, blue: SECONDARY_GRAY_LEVEL)
-
             let string = shouldShowEndDate ? ((isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")) : startDateString
             let cutoffDate = event.endDate ?? event.startDate!
             let pastCutoffDate: Bool = cutoffDate < Date()
@@ -83,6 +83,51 @@ var compact:  Bool {
         }
     } // var body
 } // struct ASATimesSubcell
+
+
+struct ASATimeText:  View {
+    var verbatim:  String
+    var timeWidth:  CGFloat
+    var timeFontSize:  Font
+    var cutoffDate:  Date
+    var isForClock:  Bool
+    
+    #if os(watchOS)
+    let compact = true
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        return self.sizeClass == .compact
+    } // var compact
+    #endif
+    
+    var body:  some View {
+        let pastCutoffDate: Bool = cutoffDate < Date()
+        let foregroundStyle: Color = pastCutoffDate ? SECONDARY_COLOR : PRIMARY_COLOR
+        
+        #if os(watchOS)
+        Text(verbatim:  verbatim)
+            .font(timeFontSize)
+            .foregroundStyle(foregroundStyle)
+            .modifier(ASAScalable(lineLimit: 1))
+        #else
+        if compact {
+        Text(verbatim:  verbatim)
+            .frame(width:  timeWidth)
+            .font(timeFontSize)
+            .foregroundStyle(foregroundStyle)
+            .modifier(ASAScalable(lineLimit: 2))
+            .multilineTextAlignment(.leading)
+        } else {
+            Text(verbatim:  verbatim)
+                .font(timeFontSize)
+                .foregroundStyle(foregroundStyle)
+                .modifier(ASAScalable(lineLimit: 2))
+                .multilineTextAlignment(.leading)
+        }
+        #endif
+    } // var body
+} // struct ASATimesText
 
 //struct ASATimesSubcell_Previews: PreviewProvider {
 //    static var previews: some View {

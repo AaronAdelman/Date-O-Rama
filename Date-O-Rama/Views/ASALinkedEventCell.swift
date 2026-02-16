@@ -73,10 +73,7 @@ struct ASALinkedEventCell: View {
                 }
                 
             } label: {
-                ASAGlassSymbol(systemName: "chevron.down.circle.fill")
-                    .symbolRenderingMode(.palette)
-                    .foregroundStyle(.chevronDown, event.color)
-                    .font(.title)
+                ASAGlassSymbol(systemName: "chevron.down.circle.fill", primaryColor: .black, secondaryColor: .white)
             }
             .popover(isPresented: $showingEventView) {
                 ScrollView {
