@@ -19,10 +19,8 @@
         {type: "D", start: {mon: 8, d: 28, wkd: [2]}, titles: {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {type: "D", start: {mon: 8, d: 26, wkd: [5]}, titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "D", start: {mon: 9, d: 4}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "D", start: {mon: 9, d: 5, wkd: [2]
-       }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, type: "D", start: {mon: 9, d: 2, thruD: 3, wkd: [4]
-       }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "D", start: {mon: 9, d: 5, wkd: [2]}, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, type: "D", start: {mon: 9, d: 2, thruD: 3, wkd: [4]}, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {inherits: "Independence Day", type: "D", start: {mon: 9, d: 5}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {inherits: "Independence Day", titles: {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, type: "D", start: {mon: 9, d: 6, wkd: [3]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {inherits: "Independence Day", titles: {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, type: "D", start: {mon: 9, d: 3, thruD: 4, wkd: [5]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
@@ -41,12 +39,12 @@
         {titles: {"he": "יום ז׳בוטינסקי", "en": "Zhabboṭinsqi Day"}, type: "D", start: {mon: 11, d: 29, wkd: [1, 2, 3, 4, 5, 6]}},
         {titles: {"he": "יום ז׳בוטינסקי (נדחה)", "en": "Zhabboṭinsqi Day (postponed)"}, type: "D", start: {mon: 12, d: 1, wkd: [1]}},
         {titles: {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, type: "D", start: {mon: 9, d: 26}},
-        {titles: {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, type: "D", start: {mon: 1, d: 30}},
-        {titles: {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, type: "D", start: {mon: 3, d: 17}},
-        {titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, type: "D", start: {mon: 4, d: 21}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, type: "D", start: {mon: 7, d: 7}},
-        {inherits: "Mother’s Day", type: "D", start: {mon: 5, d: 30}, first: {era: 0, y: 5730}},
-        {inherits: "Family Day", type: "D", start: {mon: 5, d: 30}, first: {era: 0, y: 5750}},
+        {type: "D", start: {mon: 1, d: 30}, titles: {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}},
+        {type: "D", start: {mon: 3, d: 17}, titles: {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}},
+        {type: "D", start: {mon: 4, d: 21}, titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}},
+        {type: "D", start: {mon: 7, d: 7}, titles: {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}},
+        {type: "D", start: {mon: 5, d: 30}, inherits: "Mother’s Day", first: {era: 0, y: 5730}},
+        {type: "D", start: {mon: 5, d: 30}, inherits: "Family Day", first: {era: 0, y: 5750}},
 
     ]
 }
