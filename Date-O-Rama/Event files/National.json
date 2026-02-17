@@ -2497,8 +2497,18 @@
         
         {type: "nD", start: {mon: 2, d: 14, thruD: 20, wkd: [2], durationD: 7}, titles: {"en": "National Drink Wine with Your Cat Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-drink-wine-with-your-cat-week/"}, first: {era: 1, y: 2018}, emoji: "🐱🍷", notes: {"en": "Created by Offers.com and PetWinery"}},
         
+        {type: "D", start: {wkd: [6], d: 13, mon: 1}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 2}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 3, yLengths: [366]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 4, yLengths: [365]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 5}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 6}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 8, yLengths: [365]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+        {type: "D", start: {wkd: [6], d: 13, mon: 9}, inherits: "National Blame Someone Else Day"},
+        {type: "D", start: {wkd: [6], d: 13, mon: 11, yLengths: [366]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
     ],
     templates: [
+        {template: "National Blame Someone Else Day", type: "D", start: {wkd: [6], d: 13, mon: 1, yLengths: [365]}, titles: {"en": "National Blame Someone Else Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blame-someone-else-day/"}, emoji: "👉👈", notes: {"en": "Observance of this observance may get you in trouble.  Don’t blame us.\nCreated by Anne Moeller"}},
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"ar":"يوم الأجداد","en":"Forefathers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en": "Old Colony Day"}},
         {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durationD: 8}, titles: {"en": "I Love My State Parks Week"}, urls: {"en": "https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️"},
         {template: "Johnny Appleseed Day", type: "D", start: {mon: 9, d: 26}, titles: {"en": "National Johnny Appleseed Day"}, urls: {"en": "https://www.daysoftheyear.com/days/johnny-appleseed-day/"}, emoji: "🍎", notes: {"en": "Johnny Appleseed Day"}, inherits: "*BDay*"},
