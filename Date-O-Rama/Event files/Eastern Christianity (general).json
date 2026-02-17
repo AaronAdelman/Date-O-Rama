@@ -11,7 +11,7 @@
         {titles: {"en": "Sunday of Forgiveness"}, notes: {"en": "Cheese-Fare Sunday"}, type: "D", start: {Easter: "Easter", offsetD: -49}, urls: {"en": "https://nationaltoday.com/orthodox-forgiveness-sunday/"}, emoji: "🧀"},
         {inherits: "Clean Monday", type: "D", start: {Easter: "Easter", offsetD: -48}},
         {titles: {"en": "Theodore Saturday"}, notes: {"en": "Lent (day 4)"}, type: "D", start: {Easter: "Easter", offsetD: -43}},
-        {titles: {"en": "Triumph of Orthodoxy"}, type: "D", start: {Easter: "Easter", offsetD: -42}},
+        {type: "D", start: {Easter: "Easter", offsetD: -42}, titles: {"en": "Triumph of Orthodoxy"}},
         {titles: {"en": "Feast of Saint Gregory Palamas"}, type: "D", start: {Easter: "Easter", offsetD: -35}},
         {titles: {"en": "Adoration of the Cross"}, type: "D", start: {Easter: "Easter", offsetD: -28}},
         {titles: {"en": "Feast of Saint John of the Ladder"}, type: "D", start: {Easter: "Easter", offsetD: -21}},
@@ -66,12 +66,13 @@
         
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},
         
-        {inherits: "St. Florian’s Day", type: "D", start: {mon: 5, d: 4}},
-        {inherits: "St. Rupert’s Day", type: "D", start: {mon: 3, d: 27}},
-        {inherits: "St. Martin of Tours", type: "D", start: {mon: 10, d: 12}},
-        {inherits: "St. Maroun Day", type: "D", start: {mon: 2, d: 14}},
-        {inherits: "St. Vladimir", type: "D", start: {mon: 7, d: 15}},
+        {type: "D", start: {mon: 5, d: 4}, inherits: "St. Florian’s Day"},
+        {type: "D", start: {mon: 3, d: 27}, inherits: "St. Rupert’s Day"},
+        {type: "D", start: {mon: 10, d: 12}, inherits: "St. Martin of Tours"},
+        {type: "D", start: {mon: 2, d: 14}, inherits: "St. Maroun Day"},
+        {type: "D", start: {mon: 7, d: 15}, inherits: "St. Vladimir"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "St. Basil’s Day", notes: {"en": "Christmastide (day 8)\nFeast of Saint Basil the Great"}},
+        {type: "D", start: {Easter: "Easter", offsetD: -42}, titles: {"en": "Forgiveness Sunday"}, notes: {"en": "Cheesefare Sunday"}, emoji: "🧀", urls: {"en": "https://www.daysoftheyear.com/days/forgiveness-sunday/"}},
     ]
 }

@@ -265,11 +265,11 @@
         {titles: {"en": "Lammas Day"}, type: "D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},
 
         
-        {inherits: "St. Florian’s Day", type: "D", start: {mon: 5, d: 4}},
+        {type: "D", start: {mon: 5, d: 4}, inherits: "St. Florian’s Day"},
         {type: "D", start: {mon: 11, d: 15}, inherits: "St. Leopold’s Day"},
         {inherits: "St. Maroun Day", type: "D", start: {mon: 2, d: 9}},
         {inherits: "St. Rosalia", type: "D", start: {mon: 7, d: 14}},
-        {inherits: "St. Vladimir", type: "D", start: {mon: 7, d: 15}},
+        {type: "D", start: {mon: 7, d: 15}, inherits: "St. Vladimir"},
         {type: "D", start: {mon: 9, d: 5}, inherits: "St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
@@ -285,7 +285,7 @@
         {titles: {"en": "Lent (day 2)"}, type: "D", start: {Easter: "Easter", offsetD: -45}},
         {titles: {"en": "Lent (day 3)"}, type: "D", start: {Easter: "Easter", offsetD: -44}},
         {titles: {"en": "Lent (day 4)"}, type: "D", start: {Easter: "Easter", offsetD: -43}},
-        {titles: {"en": "Invocabit"}, type: "D", start: {Easter: "Easter", offsetD: -42}},
+        {type: "D", start: {Easter: "Easter", offsetD: -42}, titles: {"en": "Invocabit"}},
         {titles: {"en": "Lent (day 5)"}, type: "D", start: {Easter: "Easter", offsetD: -41}},
         {titles: {"en": "Lent (day 6)"}, type: "D", start: {Easter: "Easter", offsetD: -40}},
         {titles: {"en": "Lent (day 7)"}, type: "D", start: {Easter: "Easter", offsetD: -39}},
