@@ -578,7 +578,6 @@
 		A5B999D628622E0F00072FD5 /* DJ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B999D428622E0D00072FD5 /* DJ.json */; };
 		A5BA03C82A4227940039B9FC /* BD (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA03C72A4227940039B9FC /* BD (Muslim).json */; };
 		A5BA03C92A4227940039B9FC /* BD (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA03C72A4227940039B9FC /* BD (Muslim).json */; };
-		A5BA221F2EB08D74005F1586 /* ASAList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BA221E2EB08D74005F1586 /* ASAList.swift */; };
 		A5BA22212EB132ED005F1586 /* Peanuts.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA22202EB132ED005F1586 /* Peanuts.json */; };
 		A5BA22222EB132ED005F1586 /* Peanuts.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA22202EB132ED005F1586 /* Peanuts.json */; };
 		A5BA22242EB1FAA3005F1586 /* ASAMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BA22232EB1FAA3005F1586 /* ASAMainTabView.swift */; };
@@ -1573,7 +1572,6 @@
 		A5B999D128622D8300072FD5 /* CX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CX.json; sourceTree = "<group>"; };
 		A5B999D428622E0D00072FD5 /* DJ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DJ.json; sourceTree = "<group>"; };
 		A5BA03C72A4227940039B9FC /* BD (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BD (Muslim).json"; sourceTree = "<group>"; };
-		A5BA221E2EB08D74005F1586 /* ASAList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAList.swift; sourceTree = "<group>"; };
 		A5BA22202EB132ED005F1586 /* Peanuts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Peanuts.json; sourceTree = "<group>"; };
 		A5BA22232EB1FAA3005F1586 /* ASAMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainTabView.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
@@ -2714,7 +2712,6 @@
 				A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */,
 				A5C2347A2ECE1B7800C79C9D /* ASAGlassSymbol.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
-				A5BA221E2EB08D74005F1586 /* ASAList.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
 				A5D546C42E37EF7D00205F14 /* ASALocationMenu.swift */,
@@ -3943,7 +3940,6 @@
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
 				A5C2347B2ECE1B7800C79C9D /* ASAGlassSymbol.swift in Sources */,
-				A5BA221F2EB08D74005F1586 /* ASAList.swift in Sources */,
 				A5E638D72E3BFD09007F53D2 /* ASAProcessedClockProtocol.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
