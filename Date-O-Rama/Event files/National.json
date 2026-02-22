@@ -747,7 +747,6 @@
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "National Hospitality Workers Appreciation Day"}, urls: {"en": "https://nationaltoday.com/national-hospitality-workers-appreciation-day/"}},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "National Play Tennis Day"}, urls: {"en": "https://www.daysoftheyear.com/days/play-tennis-day/"}, notes: {"en": "Play Tennis Day"}, emoji: "🎾"},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "National Rationalization Day"}, urls: {"en": "https://nationaltoday.com/national-rationalization-day/"}, first: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 2, d: 23}, titles: {"en": "National Tile Day"}, first: {era: 1, y: 2017}, emoji: "🀆", urls: {"en": "https://nationaldaycalendar.com/national-tile-day-february-23/"}},
         {type: "D", start: {mon: 2, d: 23}, titles: {"en": "National Tootsie Roll Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-tootsie-roll-day/"}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "National Tortilla Chip Day"}, emoji: "△", urls: {"en": "https://www.daysoftheyear.com/days/tortilla-chip-day/"}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "National Trading Card Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-trading-card-day/"}},
