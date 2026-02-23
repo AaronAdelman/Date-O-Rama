@@ -419,5 +419,6 @@
         {template: "Natl Quiet Day", type: "D", start: {mon: 9, wkd: [4], nth: 2}, titles: {"en": "National Quiet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quiet-day/"}, emoji: "🤫", notes: {"en": "Created by Whirlpool"}},
         {template: "Racial Justice Sunday", type: "D", start: {mon: 2, wkd: [1], nth: 2}, titles: {"en": "Racial Justice Sunday"}, urls: {"en": "https://en.wikipedia.org/wiki/Racial_Justice_Sunday"}},
         {template: "Road Safety Week (UK)", type: "nD", start: {era: 1, y: 2020, mon: 11, d: 16}, end: {era: 1, y: 2020, mon: 11, d: 22}, inherits: "Road Safety Week", urls: {"en": "https://www.brake.org.uk/road-safety-week"}, notes: {"en": "Created by Brake"}},
+        {template: "Cornish Pasty Week", type: "nD", start: {mon: 2, d: 22, thruD: 28, yLengths: [365]}, end: {mon: 2, d: 28, thruMon: 3, thruD: 6}, titles: {"en": "Cornish Pasty Week"}, urls: {"en": "https://cornishpastyassociation.co.uk/cornish-pasty-week"}, notes: {"en": "Created by the Cornish Pasty Association"}},
     ]
 }
