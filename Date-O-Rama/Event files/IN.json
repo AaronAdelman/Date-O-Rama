@@ -180,7 +180,7 @@
         {type: "D", start: {mon: 2, d: 11}, titles: {"en": "World Unani Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Unani_medicine"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "National Productivity Day"}},
         {type: "D", start: {mon: 2, d: 24}, titles: {"en": "Central Excise Day"}},
-        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Protein Day"}, first: {era: 1, y: 2020}, emoji: "🥑🫘", urls: {"en": "https://nationaldaycalendar.com/national-protein-day-february-27-india/"}},
+        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Protein Day"}, first: {era: 1, y: 2020}, emoji: "🥑🫘", urls: {"en": "https://www.daysoftheyear.com/days/national-protein-day/"}, notes: {"en": "Created by the Right to Protein Initiative"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Safety Day"}, urls: {"en": "https://vikaspedia.in/social-welfare/disaster-management-1/national-safety-day"}, first: {era: 1, y: 1971}},
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "CISF Raising Day"}},
         {type: "D", start: {mon: 3, d: 16}, titles: {"en": "National Vaccination Day"}, urls: {"en": "https://nationaltoday.com/national-vaccination-day/"}, emoji: "💉", first: {era: 1, y: 1995}},

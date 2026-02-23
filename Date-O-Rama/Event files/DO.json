@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en": "Feast of Our Lady of Altagracia", "es": "Nuestra Señora de la Altagracia"}, notes: {"en": "Day of the Lady of Altagracia\nOur Lady of High Grace"}, urls: {"en": "https://nationaltoday.com/our-lady-of-altagracia/"}, first: {era: 1, y: 1924}},
         {type: "D", start: {mon: 1, d: 26}, titles: {"en": "Duarte Day"}, urls: {"en": "https://nationaltoday.com/duarte-day/"}, first: {era: 1, y: 1813}, inherits: "*BDay*", notes: {"en": "Juan Pablo Duarte Day"}},
-        {type: "D", start: {mon: 2, d: 27}, inherits: "Independence Day", first: {era: 1, y: 1844}, urls: {"en": "https://nationaltoday.com/dominican-republic-independence-day/"}},
+        {type: "D", start: {mon: 2, d: 27}, inherits: "Independence Day", first: {era: 1, y: 1844}, urls: {"en": "https://www.daysoftheyear.com/days/dominican-republic-independence-day/"}},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

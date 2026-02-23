@@ -34,7 +34,7 @@
             {type: "D", start: {mon: 2, d: 20}, titles: {"en": "Northern Hemisphere Hoodie-Hoo-Day"}, notes: {"en": "Hoodie Hoo Day"}},
             {type: "D", start: {mon: 2, d: 22}, titles: {"en": "For the Love of Mike Day"}},
             {type: "D", start: {mon: 2, d: 23}, titles: {"en": "Curling is Cool Day"}},
-            {type: "D", start: {mon: 2, d: 26}, titles: {"en": "For Pete’s Sake Day"}},
+            {type: "D", start: {mon: 2, d: 26}, titles: {"en": "For Pete’s Sake Day"}, first: {era: 1, y: 2000}},
             {type: "D", start: {mon: 3, d: 3}, titles: {"en": "What if Cats & Dogs Had Opposable Thumbs Day"}},
             {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Panic Day", "he": "יום הפאניקה"}},
             {type: "D", start: {mon: 3, d: 15}, titles: {"en": "National Brutus Day", "he": "יום ברוטוס הלאומי"}},

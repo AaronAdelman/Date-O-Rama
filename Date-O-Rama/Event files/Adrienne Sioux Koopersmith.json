@@ -14,7 +14,7 @@
         
         {type: "D", start: {mon: 2, d: 12}, titles: {"en": "National Lost Penny Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lost-penny-day/"}, first: {era: 1, y: 1995}, emoji: "🪙", notes: {"en": "Created by Adrienne Sioux Koopersmith"}},
         
-        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "No Brainer Day"}, urls: {"en": "https://nationaltoday.com/no-brainer-day/"}, first: {era: 1, y: 1996}},
+        {type: "D", start: {mon: 2, d: 27}, titles: {"en": "No Brainer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/no-brainer-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Hug a G.I. Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, first: {era: 1, y: 1996}, emoji: "🫂"},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en": "National Splurge Day"}, urls: {"en": "https://nationaltoday.com/national-splurge-day/"}, first: {era: 1, y: 1994}, emoji: "🪙"},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Pay a Compliment Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, first: {era: 1, y: 1995}},
