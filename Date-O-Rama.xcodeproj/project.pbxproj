@@ -943,6 +943,8 @@
 		A5E95F6E286F2DB7009267AF /* AS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E95F6C286F2DB7009267AF /* AS.json */; };
 		A5E9AB632A1B4C8900433D7A /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AB622A1B4C8900433D7A /* Names.json */; };
 		A5E9AB642A1B4C8900433D7A /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AB622A1B4C8900433D7A /* Names.json */; };
+		A5EAD2B22F4C82E20057FFF1 /* ASACancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EAD2B12F4C82E10057FFF1 /* ASACancelButton.swift */; };
+		A5EAD2B32F4C82E20057FFF1 /* ASACancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EAD2B12F4C82E10057FFF1 /* ASACancelButton.swift */; };
 		A5EB29192865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
 		A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
 		A5EB4F8F2850D5DF00A32FB1 /* PS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F8E2850D5DE00A32FB1 /* PS.json */; };
@@ -1777,6 +1779,7 @@
 		A5E8BAE528047B9E0018CD36 /* LR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LR.json; sourceTree = "<group>"; };
 		A5E95F6C286F2DB7009267AF /* AS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AS.json; sourceTree = "<group>"; };
 		A5E9AB622A1B4C8900433D7A /* Names.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Names.json; sourceTree = "<group>"; };
+		A5EAD2B12F4C82E10057FFF1 /* ASACancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACancelButton.swift; sourceTree = "<group>"; };
 		A5EB29182865F98500A1FBF4 /* CX (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CX (Chinese).json"; sourceTree = "<group>"; };
 		A5EB4F8E2850D5DE00A32FB1 /* PS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PS.json; sourceTree = "<group>"; };
 		A5EB4F912850EF0B00A32FB1 /* RS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RS.json; sourceTree = "<group>"; };
@@ -2701,6 +2704,7 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5EAD2B12F4C82E10057FFF1 /* ASACancelButton.swift */,
 				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
@@ -3882,6 +3886,7 @@
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
 				A5DB52D9278B1880001562C1 /* ASAMoonPhase.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
+				A5EAD2B22F4C82E20057FFF1 /* ASACancelButton.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAMessageKeys.swift in Sources */,
 				A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */,
 				A507794428919E8B00A98D01 /* ASALocationTypeCell.swift in Sources */,
@@ -3998,6 +4003,7 @@
 				A577066A2896B642000AA963 /* ASALocationMenuSymbol.swift in Sources */,
 				A5E75B372EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
+				A5EAD2B32F4C82E20057FFF1 /* ASACancelButton.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,

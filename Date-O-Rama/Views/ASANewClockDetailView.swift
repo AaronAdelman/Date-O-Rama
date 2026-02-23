@@ -46,7 +46,8 @@ struct ASANewClockDetailView: View {
                         }
                         .actionSheet(isPresented: self.$showingActionSheet) {
                             ActionSheet(title: Text("Are you sure you want to delete this new clock?"), buttons: [
-                                .destructive(Text("Cancel Changes")) { self.dismiss() },
+                                .destructive(Text("Cancel Changes")) {
+                                    self.dismiss() },
                                 .default(Text("Continue Editing")) {  }
                             ])
                         }

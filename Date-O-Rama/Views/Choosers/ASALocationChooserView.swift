@@ -87,10 +87,10 @@ struct ASALocationChooserView: View {
                 
                 Spacer()
                 
-                Button("Cancel", role: .cancel, action: {
+                ASACancelButton {
                     debugPrint(#file, #function, "Cancel button")
                     self.dismiss()
-                })
+                }
                 .font(Font.body)
                 
                 Spacer()

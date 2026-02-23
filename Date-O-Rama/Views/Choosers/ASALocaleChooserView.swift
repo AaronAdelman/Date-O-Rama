@@ -51,11 +51,10 @@ struct ASALocaleChooserView: View {
             }
         }
         .navigationBarItems(trailing:
-                                Button("Cancel", role: .cancel, action: {
+                                ASACancelButton {
                                     self.didCancel = true
                                     self.presentationMode.wrappedValue.dismiss()
                                 })
-        )
         .onAppear() {
             self.tempLocaleIdentifier = self.clock.localeIdentifier
         }
