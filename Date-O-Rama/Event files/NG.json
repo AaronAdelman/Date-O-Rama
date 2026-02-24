@@ -22,9 +22,16 @@
         {type: "D", start: {era: 1, y: 2015, mon: 3, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/abia/nigeria-public-holiday-registration"}, inherits: "Public Holiday"},
         {type: "D", start: {era: 1, y: 2015, mon: 3, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/abia/nigeria-public-holiday-registration"}, inherits: "Public Holiday"},
         {type: "D", start: {era: 1, y: 2023, mon: 2, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/plateau/plateau-state-anniversary"}, titles: {"en": "Plateau State Anniversary"}},
-        {type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-election-holiday"}, titles: {"en": "Nigeria Election Holiday"}},
-        {type: "D", start: {mon: 3, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/ondo/nigeria-election-holiday"}, titles: {"en": "Nigeria Election Holiday"}},
-        {type: "D", start: {mon: 3, d: 17}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-election-holiday"}, titles: {"en": "Nigeria Election Holiday"}},
+        {type: "D", start: {era: 1, y: 2023, mon: 2, d: 24}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2023, mon: 3, d: 10}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2023, mon: 3, d: 17}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2024, mon: 8, d: 30}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2024, mon: 10, d: 3}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2024, mon: 10, d: 4}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2024, mon: 10, d: 31}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2024, mon: 11, d: 1}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2025, mon: 10, d: 30}, inherits: "Nigeria Election Holiday"},
+        {type: "D", start: {era: 1, y: 2025, mon: 10, d: 31}, inherits: "Nigeria Election Holiday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
@@ -58,5 +65,6 @@
    ],
     templates: [
         {template: "Isese Day", type: "D", start: {mon: 8, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/osun-public-holiday"}, titles: {"en": "Isese Day"}, notes: {"en": "Traditional Worshippers’ Day"}},
+        {template: "Nigeria Election Holiday", type: "D", start: {mon: 2, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-election-holiday"}, titles: {"en": "Nigeria Election Holiday"}, inherits: "Election Day"},
     ]
 }
