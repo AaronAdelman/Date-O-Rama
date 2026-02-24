@@ -244,7 +244,7 @@
         {type: "D", start: {mon: 2, wkd: [3], nth: 2}, titles: {"en": "Extraterrestrial Culture Day", "he": "יום התרבויות החוצניות"}, emoji: "👽", urls: {"en": "https://skepdic.com/roswell.html"}, notes: {"en": "E.T. Culture Day\nDaniel Foley and the Legislature of New Mexico "}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 2, wkd: [4], nth: 1}, titles: {"en": "National Girls and Women in Sports Day"}, urls: {"en": "https://www.womenssportsfoundation.org/get-involved/ngwsd/"}, emoji: "👩", first: {era: 1, y: 1987}, notes: {"en": "Created by Ronald Reagan"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
-        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Asiatic Fleet Memorial Day"}, urls: {"en": "https://nationaltoday.com/asiatic-fleet-memorial-day/"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Asiatic Fleet Memorial Day"}, urls: {"en": "https://www.daysoftheyear.com/days/asiatic-fleet-memorial-day/"}, first: {era: 1, y: 2002}, emoji: "⛵"},
         {type: "D", start: {mon: 3, d: 11}, inherits: "Natl 311 Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 3, d: 11}, titles: {"en": "National Funeral Director and Mortician Recognition Day"}, urls: {"en": "https://nationaltoday.com/national-funeral-director-mortician-recognition-day/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 3, d: 12}, titles: {"en": "Alloimmunization and HDFN Day"}, urls: {"en": "https://www.daysoftheyear.com/days/alloimmunization-and-hdfn-day/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2023}},
