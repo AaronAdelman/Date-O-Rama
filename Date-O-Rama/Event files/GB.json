@@ -116,7 +116,7 @@
         {type: "nD", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, titles: {"en": "National Marriage Week"}, urls: {"en": "https://marriage-week.org.uk/"}, emoji: "⚭", notes: {"en": "Created by Richard and Maria Kane"}, first: {era: 1, y: 1997}},
         {type: "D", start: {mon: 2, d: 6}, titles: {"en": "Time to Talk Day"}, urls: {"en": "https://www.mind.org.uk/get-involved/time-to-talk-day/"}, first: {era: 1, y: 2014}, notes: {"en": "Created by Mind, Rethink Mental Illness and the Co-op"}},
         {type: "D", start: {mon: 2, wkd: [6], nth: 1}, titles: {"en": "Number Day"}, urls: {"en": "https://www.nspcc.org.uk/support-us/charity-fundraising/schools-fundraising-ideas/number-day"}, emoji: "🧮", first: {era: 1, y: 1999}, notes: {"en": "Created by the NSPCC"}},
-        {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Global Scouse Day"}, urls: {"en": "https://globalscouseday.com/"}},
+        {type: "D", start: {mon: 2, d: 28}, titles: {"en": "Global Scouse Day"}, urls: {"en": "https://globalscouseday.com/"}, first: {era: 1, y: 2000}, notes: {"en": "Created by Graham Hughes"}},
         {type: "D", start: {mon: 2, d: 9}, titles: {"en": "Gwyl Mabsant"}, urls: {"en": "https://nationaltoday.com/gwyl-mabsant/"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 1}, inherits: "Natl Yorkshire Pudding Day", urls: {"en": "https://www.yorkshirepudd.co.uk/yorkshire-pudding-day-2025/"}, notes: {"en": "British Yorkshire Pudding Day"}},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Racial Justice Sunday", first: {era: 1, y: 1995}, last: {era: 1, y: 2016}},

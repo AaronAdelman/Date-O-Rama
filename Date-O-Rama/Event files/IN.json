@@ -155,7 +155,7 @@
         {type: "D", start: {mon: 1, d: 30}, titles: {"en": "National Cleanliness Day"}, urls: {"en": "http://sikenvis.nic.in/ViewEvents.aspx?Id=9847&Year=2022"}},
         {type: "D", start: {mon: 1, d: 30}, inherits: "World Leprosy Day", first: {era: 1, y: 1954}},
         {type: "D", start: {mon: 2, d: 1}, inherits: "Coast Guard Day"},
-        {type: "D", start: {mon: 2, d: 28}, inherits: "Natl Science Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Science_Day"}, first: {era: 1, y: 1999}},
+        {type: "D", start: {mon: 2, d: 28}, inherits: "Natl Science Day", urls: {"en": "https://www.daysoftheyear.com/days/national-science-day/"}, first: {era: 1, y: 1987}, notes: {"en": "Science Day\nCreated by the government of India"}},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "National Safe Motherhood Day"}, urls: {"en": "https://newsonair.gov.in/News?title=National-Safe-Motherhood-Day-is-being-observed-today&id=438954"}, emoji: "🤰"},
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Quit India Movement Day"}},
         {type: "D", start: {mon: 8, d: 29}, inherits: "Natl Sports Day", urls: {"en": "https://www.daysoftheyear.com/days/national-sports-day/"}, first: {era: 1, y: 2012}, notes: {"en": "Created by the government of India"}},
