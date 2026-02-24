@@ -10,7 +10,7 @@
         {type: "D", start: {mon: 1, d: 14}, titles: {"en": "National Dress Up Your Pet Day", "he": "יום ״הלבש את חיית המחמד שלך״ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dress-up-your-pet-day/"}, first: {era: 1, y: 2009}, emoji: "🐈‍⬛", notes: {"en": "Created by Colleen Paige"}},
         {type: "D", start: {mon: 2, d: 20}, inherits: "Natl Love Your Pet Day", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 22}, inherits: "​National Wildlife Day", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "World Horse Day"}, notes: {"en": "National Horse Protection Day"}, urls: {"en": "http://www.horseprotectionday.com/"}, first: {era: 1, y: 2005}, emoji: "🐴"},
+        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National Horse Protection Day"}, notes: {"en": "World Horse Day"}, urls: {"en": "http://www.horseprotectionday.com/"}, first: {era: 1, y: 2005}, emoji: "🐴"},
         {type: "D", start: {mon: 3, d: 23}, titles: {"en": "National Puppy Day", "he": "יום הגורים הלאומי"}, urls: {"en": "https://www.nationalpuppyday.com/"}, first: {era: 1, y: 2006}, emoji: "🐶"},
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "National Farm Animals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-farm-animals-day/"}, first: {era: 1, y: 2005}, emoji: "🐄"},
         {type: "D", start: {mon: 4, d: 11}, titles: {"en": "National Pet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pet-day/"}, emoji: "🦮", first: {era: 1, y: 2006}},

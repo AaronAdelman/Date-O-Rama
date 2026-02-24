@@ -27,12 +27,12 @@
         {type: "D", start: {mon: 12, d: 28, wkd: [4]}, inherits: "Xmas Holiday"},
 
         {type: "D", start: {mon: 11, d: 1}, inherits: "Natl Awakening Day"},
-        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Baba Marta Day", "bg": "Баба Марта"}, notes: {"en": "Baba Marta"}, urls: {"en": "https://www.daysoftheyear.com/days/baba-marta-day/"}},
+        {type: "D", start: {mon: 3, d: 1}, titles: {"bg": "Баба Марта", "en":"Baba Marta Day","hu":"Baba Marta napja","ml":"ഗ്രാൻഡ്മ മാർച്ച് ഡേ","sv":"Baba martadagen"}, notes: {"en": "Baba Marta"}, urls: {"en": "https://www.daysoftheyear.com/days/baba-marta-day/"}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         
-        {inherits: "Father’s Day", type: "D", start: {mon: 12, d: 26}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 10, d: 16}, titles: {"en": "Aviation and Air Force Day"}, inherits: "Air Force Day"},
         {type: "D", start: {mon: 8, wkd: [1], nth: 2}, inherits: "Navy Day"},
