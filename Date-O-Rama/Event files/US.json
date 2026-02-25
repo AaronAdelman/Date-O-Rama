@@ -243,7 +243,6 @@
         {type: "nD", start: {mon: 2, d: 1, thruD: 7, wkd: [2], durationD: 5}, titles: {"en": "National School Counseling Week"}, urls: {"en": "https://www.schoolcounselor.org/Events-Professional-Development/Events/National-School-Counseling-Week"}, first: {era: 1, y: 2006}, notes: {"en": "Created by the US Congress"}},
         {type: "D", start: {mon: 2, wkd: [3], nth: 2}, titles: {"en": "Extraterrestrial Culture Day", "he": "יום התרבויות החוצניות"}, emoji: "👽", urls: {"en": "https://skepdic.com/roswell.html"}, notes: {"en": "E.T. Culture Day\nDaniel Foley and the Legislature of New Mexico "}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 2, wkd: [4], nth: 1}, titles: {"en": "National Girls and Women in Sports Day"}, urls: {"en": "https://www.womenssportsfoundation.org/get-involved/ngwsd/"}, emoji: "👩", first: {era: 1, y: 1987}, notes: {"en": "Created by Ronald Reagan"}},
-        {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Asiatic Fleet Memorial Day"}, urls: {"en": "https://www.daysoftheyear.com/days/asiatic-fleet-memorial-day/"}, first: {era: 1, y: 2002}, emoji: "⛵"},
         {type: "D", start: {mon: 3, d: 11}, inherits: "Natl 311 Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 3, d: 11}, titles: {"en": "National Funeral Director and Mortician Recognition Day"}, urls: {"en": "https://nationaltoday.com/national-funeral-director-mortician-recognition-day/"}, first: {era: 1, y: 2008}},
@@ -616,8 +615,6 @@
         {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 21}, titles: {"en": "Love Teaching Week"}, urls: {"en": "https://www.dodea.edu/news/excellence-education/love-teaching-week"}, first: {era: 1, y: 2015}, emoji: "👨‍🏫👩‍🏫"},
         {type: "nD", start: {mon: 2, d: 21, thruD: 27, wkd: [2], yLengths: [365]}, end: {mon: 2, d: 27, thruMon: 3, thruD: 5, wkd: [1]}, inherits: "Eating Disorders Awareness Week", first: {era: 1, y: 1984}},
         {type: "nD", start: {mon: 2, d: 21, thruD: 27, wkd: [2], yLengths: [366]}, end: {mon: 2, d: 27, thruMon: 3, thruD: 4, wkd: [1]}, inherits: "Eating Disorders Awareness Week", first: {era: 1, y: 1984}},
-        {type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}},
-        {type: "nD", start: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLengths: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}},
         {type: "nD", start: {mon: 2, d: 24}, end: {mon: 2, d: 27}, titles: {"en": "Whooping Crane Festival"}, urls: {"en": "https://nationaltoday.com/whooping-crane-festival/"}, first: {era: 1, y: 1996}},
         {type: "nD", start: {mon: 3, d: 17, thruD: 23, wkd: [2], durationD: 7}, titles: {"en": "National Drug and Alcohol Facts Week®"}, notes: {"en": "NDAFW"}, urls: {"en": "https://nida.nih.gov/research-topics/national-drug-alcohol-facts-week"}, first: {era: 1, y: 2010}},
         {type: "nD", start: {mon: 3, d: 2}, end: {mon: 3, d: 6}, titles: {"en": "Read Across America Week"}, urls: {"en": "https://nationaltoday.com/read-across-america-week/"}},
@@ -721,6 +718,14 @@
         {type: "nD", start: {mon: 5, d: 2, thruD: 8, wkd: [2], durationD: 5}, titles: {"en": "Teacher Appreciation Week"}, notes: {"en": "National Teacher Appreciation Week"}, urls: {"en": "https://www.nea.org/TAW"}, first: {era: 1, y: 1980}, emoji: "👨‍🏫👩‍🏫", nonoverlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, inherits: "Natl Teacher Day", first: {era: 1, y: 1985}},
         ]},
+        
+        {type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 3, d: 1}, inherits: "Peace Corps Day", first: {era: 1, y: 1961}},
+        ]},
+        {type: "nD", start: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLengths: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 3, d: 1}, inherits: "Peace Corps Day", first: {era: 1, y: 1961}},
+        ]},
+
     ],
     templates: [
         {template: "Natl Teacher Day", type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫"},
@@ -733,7 +738,8 @@
         {template: "Natl Good Neighbor Day", type: "D", start: {mon: 9, d: 28}, titles: {"en": "National Good Neighbor Day"}, urls: {"en": "https://nationalgoodneighborday.com/"}, notes: {"en": "Created by Becky Mattson"}},
         {type: "D", start: {mon: 9, d: 28}, titles: {"en": "National Self-Awareness Day"}, notes: {"en": "National Self Awareness Day\nCreated by the US Senate"}, urls: {"en": "https://www.daysoftheyear.com/days/national-self-awareness-day/"}, first: {era: 1, y: 2017}},
         {template: "Native American Day", titles: {"en":"Native American Day","si":"ඇමරිකානු ආදීවාසී දිනය", "he": "יום העמים הילידים בארצות הברית"}, type: "D", start: {mon: 9, wkd: [6], nth: 4}, urls: {"en": "https://nationaltoday.com/national-native-american-day/"}},
-        {template: "Peace Corps Week", type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, titles: {"en": "Peace Corps Week"}, urls: {"en": "https://www.daysoftheyear.com/days/peace-corps-week/"}, emoji: "☮️"},
+        {template: "Peace Corps Day", type: "D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, emoji: "🕊", urls: {"en": "https://www.daysoftheyear.com/days/peace-corps-day/"}, notes: {"en": "Created by John F. Kennedy"}},
+        {template: "Peace Corps Week", type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, titles: {"en": "Peace Corps Week"}, urls: {"en": "https://www.peacecorps.gov/connect/blog/history-of-peace-corps-week/"}, emoji: "☮️", notes: {"en": "Created by John F. Kennedy"}},
         {template: "Robert E. Lee Day", titles: {"en": "Robert E. Lee Day", "he": "יום רוברט אדוארד לי", "fr": "Journée de Robert E. Lee"}, notes: {"en": "Lee’s Birthday"}, type: "D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/robert-e-lee-day/"}, inherits: "*BDay*"},
         {template: "Rosa Parks Day", titles: {"en":"Rosa Parks Day","fr":"Rosa Parks Day","he":"יום רוזה פארקס","hr":"Dan Rose Parks","ml":"റോസ പാർക്ക് ദിനം"}, type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/rosa-parks-day/"}, emoji: "🚌", notes: {"en": "Day of Courage\nCreated by the California State Legislature"}},
         {template: "Truman Day", type: "D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/truman-day/"}, titles: {"en": "Truman Day", "he": "יום טרומן"}, inherits: "*BDay*"},
