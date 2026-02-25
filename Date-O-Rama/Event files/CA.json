@@ -90,6 +90,7 @@
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en": "Islander Day", "fr": "Fête des Insulaires"}, urls: {"en": "https://www.daysoftheyear.com/days/islander-day/"}, first: {era: 1, y: 2009}, emoji: "❄️", notes: {"en": "Created by the Legislature of Prince Edward Island"}},
         {type: "D", start: {mon: 2, wkd: [2], nth: 3}, titles: {"en":"Louis Riel Day","fi":"Louis Riel-päivä", "fr": "Journée Louis Riel"}, urls: {"en": "https://louisrielday.com/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 2, wkd: [4], nth: -1}, inherits: "Pink Shirt Day", first: {era: 1, y: 2007}},
+        {type: "W", start: {mon: 3, fullWk: 1}, inherits: "Dental Assistants Recognition Week", first: {era: 1, y: 1977}},
         {type: "D", start: {mon: 3, wkd: [2], nth: 1}, titles: {"en": "Black Mental Health Day"}, urls: {"en": "https://www.blackmentalhealthday.ca/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 3, wkd: [4], nth: -1}, titles: {"en": "National Governance Professionals Day"}, urls: {"en": "https://nationaltoday.com/national-governance-professionals-day/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Canada Book Day"}, urls: {"en": "https://nationaltoday.com/canada-book-day/"}, first: {era: 1, y: 1995}},
