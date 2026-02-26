@@ -674,7 +674,6 @@
         {type: "D", start: {mon: 2, wkd: [5], d: 11, thruD: 17}, inherits: "Digital Learning Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 2, wkd: [5], nth: -1}, inherits: "Digital Learning Day", first: {era: 1, y: 2012}, last: {era: 1, y: 2021}},
         {type: "D", start: {mon: 2, wkd: [5], nth: 1}, titles: {"en": "Optimist Day"}, first: {era: 1, y: 2020}, emoji: "🥃", urls: {"en": "https://www.optimist.org/day"}, notes: {"en": "Optimism Day\nCreated by the Optimists "}},
-        {type: "D", start: {mon: 2, wkd: [5], nth: 3}, titles: {"en": "Introduce a Girl to Engineering Day"}, urls: {"en": "https://discovere.org/programs/girl-day/"}, first: {era: 1, y: 2001}, emoji: "👷‍♀️", notes: {"en": "Girl Day\nDiscoverE Girl Day\nCreated by DiscoverE"}},
         {type: "D", start: {mon: 2, wkd: [5], nth: 3}, titles: {"en": "World Anthropology Day"}, urls: {"en": "https://nationaltoday.com/world-anthropology-day/"}, first: {era: 1, y: 2015}, notes: {"en": "National Anthropology Day\nCreated by the American Anthropological Association (AAA)"}},
         {type: "D", start: {mon: 2, wkd: [5], nth: 3}, titles: {"en": "World Cholangiocarcinoma Day"}, urls: {"en": "https://nationaltoday.com/world-cholangiocarcinoma-day/"}, first: {era: 1, y: 2023}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 2, wkd: [6], nth: -1}, inherits: "Intl Stand Up to Bullying Day", first: {era: 1, y: 2008}},
