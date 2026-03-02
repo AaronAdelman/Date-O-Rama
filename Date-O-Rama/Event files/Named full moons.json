@@ -6,10 +6,10 @@
     emoji: "🌕",
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
-            {titles: {"en": "Blue Moon"}, type: "D", start: {"zmoPhase": "2ndFull"}, emoji: "🔵"},
+            {type: "D", start: {"zmoPhase": "2ndFull"}, titles: {"ar":"قمر أزرق","be":"Блакітны Месяц","bg":"Синя Луна","bh":"ब्लू मून","bn":"নীল চাঁদ","ca":"Lluna Blava","cs":"Modrý Úplněk","da":"Blue Moon","de":"Blue Moon","el":"Μπλε Φεγγάρι","en":"Blue Moon","es":"Luna Azul","eu":"Ilargi Urdin","fa":"ماه آبی","fr":"Lune Bleue","ga":"Gealach Ghorm","gl":"Lúa Azul","he":"ירח כחול","hi":"नील चन्द्र (ब्लू मून)","hy":"Կապույտ Լուսին","id":"Bulan Biru","it":"Luna Blu","ja":"ブルームーン","ko":"블루문","li":"Blauw Maon","ml":"ബ്ലൂ മൂൺ","ms":"Bulan Biru","nb":"Blå Måne","nl":"Blauwe Maan","pl":"Niebieski Księżyc","pt":"Lua Azul","ro":"Lună Albastră","ru":"Голубая Луна","sat":"ᱵᱞᱩ-ᱢᱩᱸᱱ","sv":"Blå Måne","ta":"நீல நிலவு","tg":"Моҳтоби Кабуд","th":"ทุติยเพ็ญ","uk":"Синій Місяць","vec":"Luna Blu","vi":"Trăng Xanh","yue":"藍月","zh":"藍月"}, emoji: "🔵"},
             {titles: {"en": "Wolf Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 1}, emoji: "🐺"},
             {titles: {"en": "Snow Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 2}, emoji: "❄️"},
-            {titles: {"en": "Worm Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 3}, emoji: "🪱", urls: {"en": "https://nationaltoday.com/march-full-moon/"}},
+            {titles: {"en": "Worm Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 3}, emoji: "🪱", urls: {"en": "https://www.daysoftheyear.com/days/march-full-moon/"}},
             {titles: {"en": "Pink Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 4}, emoji: "🍬"},
             {titles: {"en": "Flower Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 5}, emoji: "🌼"},
             {titles: {"en": "Strawberry Moon"}, type: "D", start: {"zmoPhase": "1stFull", mon: 6}, emoji: "🍓"},
