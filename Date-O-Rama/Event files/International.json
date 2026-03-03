@@ -828,7 +828,7 @@
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "International Scrapbooking Industry Day", "he": "יום תעשיית הסקראפבוקינג הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-scrapbooking-industry-day/"}, notes: {"en": "International Scrap Booking Industry Day", "he": "יום הסקראפבוקינג הבינלאומי"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "Toy Soldier Day", "he": "יום חיילי הצעצוע"}, urls: {"en": "https://www.daysoftheyear.com/days/toy-soldier-day/"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "World Day of the Fight Against Sexual Exploitation"}, first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 3, d: 4}, titles: {"en": "World Obesity Day"}, urls: {"en": "https://www.worldobesityday.org/"}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 3, d: 4}, titles: {"ar":"اليوم العالمي للسمنة","bn":"বিশ্ব স্থূলতা দিবস","en":"World Obesity Day","es":"Día Mundial de la Obesidad","gu":"વિશ્વ સ્થૂળતા દિવસ","mn":"Дэлхийн таргалалтын өдөр","zh":"世界肥胖日"}, urls: {"en": "https://www.worldobesityday.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2015}, notes: {"en": "Created by the World Obesity Federation"}},
         {type: "D", start: {mon: 3, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "Name Tag Day", "he": "יום תג השם"}, urls: {"en": "https://www.daysoftheyear.com/days/nametag-day/"}, notes: {"en": "Nametag Day"}, first: {era: 1, y: 1997}, emoji: "📛"},
         {type: "D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/reel-film-day/"}, titles: {"en": "Reel Film Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, d: 6}, inherits: "Natl Heroes and Benefactors Day"},
