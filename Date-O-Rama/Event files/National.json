@@ -970,7 +970,7 @@
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "Benjamin Harrison Day"}, urls: {"en": "https://nationaltoday.com/benjamin-harrison-day/"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Backcountry Ski Day"}, urls: {"en": "https://nationaltoday.com/national-backcountry-ski-day/"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Dance the Waltz Day"}, urls: {"en": "https://nationaltoday.com/national-dance-the-waltz-day/"}},
-        {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Grammar Day"}, first: {era: 1, y: 2008}, emoji: "👩‍🏫", urls: {"en": "https://www.quickanddirtytips.com/national-grammar-day"}},
+        {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Grammar Day"}, first: {era: 1, y: 2008}, emoji: "👩‍🏫", urls: {"en": "https://www.quickanddirtytips.com/national-grammar-day"}, notes: {"en": "Created by Martha Brockenbrough of the Society for the Promotion of Good Grammar"}},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Pound Cake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/poundcake-day/"}, emoji: "🍰"},
         {type: "D", start: {mon: 3, d: 5}, titles: {"en": "Dissociative Identity Disorder Awareness Day", "he": "יום פיצול האישיות"}, urls: {"en": "https://www.daysoftheyear.com/days/dissociative-identity-disorder-awareness-day/"}, notes: {"en": "Multiple Personality Day\nNational Multiple Personality Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 3, d: 5}, titles: {"en": "National Absinthe Day"}, urls: {"en": "https://www.daysoftheyear.com/days/absinthe-day/"}, emoji: "🥃", first: {era: 1, y: 2013}},
