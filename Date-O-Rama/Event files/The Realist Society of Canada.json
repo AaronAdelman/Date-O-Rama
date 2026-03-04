@@ -16,8 +16,7 @@
           },
           notes: {
             "en": "SAUD"
-          }
-        },
+          }},
 
         {
           type: "D",
@@ -27,8 +26,7 @@
           },
           notes: {
             "en": "THABS\nThe only reason this event calendar was included in Date-O-Rama is because Wikipedia noted thematic similarilty between this observance and the far more famous National Nothing Day."
-          }
-        },
+          }},
 
         {
           type: "D",

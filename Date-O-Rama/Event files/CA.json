@@ -3,7 +3,7 @@
     "//": "Canada",
     defaultLocale: "en",
     calendarCode: "gre",
-    "otherCalendarCodes": ["Hebrew"],
+    otherCalendarCodes: ["Hebrew"],
     calendarColor: {red: 0.77, green: 0.24, blue: 0.17},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Canada"},
     first: {era: 1, y: 1867},

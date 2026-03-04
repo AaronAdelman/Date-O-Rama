@@ -39,7 +39,7 @@
         {type: "D", start: {mon: 12, d: 29}, titles: {"en": "Constitution of Ireland"}, urls: {"en": "https://nationaltoday.com/constitution-of-ireland/"}, first: {era: 1, y: 1937}, inherits: "Constitution Day"},
         {type: "M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 1}, titles: {"en": "Get Ireland Active"}, urls: {"en": "https://nationaltoday.com/get-ireland-active/"}, inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"en": "Denim Day for Dementia"}, urls: {"en": "https://nationaltoday.com/denim-day-for-dementia/"}, inherits: "*MedAwareness*", emoji: "👖"},
+        {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"en": "Denim Day for Dementia"}, urls: {"en": "https://www.daysoftheyear.com/days/denim-day-for-dementia/"}, inherits: "*MedAwareness*", emoji: "👖", first: {era: 1, y: 2018}, notes: {"en": "Created by the Alzheimer’s Society of Ireland"}},
         {type: "D", start: {mon: 5, wkd: [2], nth: 1}, titles: {"en": "National Open Farm Day"}, urls: {"en": "https://nationaltoday.com/national-open-farm-day/"}},
         {type: "M", start: {mon: 5}, titles: {"en": "Bealtaine Festival"}, urls: {"en": "https://nationaltoday.com/bealtaine-festival/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
@@ -55,7 +55,6 @@
         {type: "D", start: {mon: 1, d: 24, thruD: 30, wkd: [1]}, inherits: "Holocaust Memorial Day", titles: {"en": "International Day of Remembrance for the Victims of the Holocaust", "ga": "An Lá Idirnáisiúnta Cuimhneacháin ar íospartaigh an Uileloiscthe"}},
         {type: "nD", start: {mon: 8, d: 10, durationD: 3}, titles: {"en": "Puck Fair"}, urls: {"en": "https://puckfair.ie/"}, first: {era: 1, y: 1603}, emoji: "🐐"},
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "Irish Marriage Referendum"}, first: {era: 1, y: 2015}},
-
    ],
     templates: [
         {template: "Imbolc (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en": "Imbolc (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en": "Saint Brigid’s Day (in lieu)"}},
