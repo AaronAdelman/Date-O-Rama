@@ -5,12 +5,13 @@
     otherCalendarCodes: ["Hebrew"],
     calendarColor: {name: "orange"},
     urls: {"en": "https://dudeism.com/holidays/"},
+    first: {era: 1, y: 2005},
     "TO DO": "Major Duder",
     events: [
         {type: "D", start: {mon: 1, d: 1}, titles: {en: "Happy Dude Year"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {en: "Pal-o-mine’s Day"}},
         {type: "nD", start: {mon: 2, d: 27}, end: {mon: 3, d: 6}, titles: {en: "Hangover"}},
-        {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Day of the Dude"}, urls: {"en": "https://dudeism.com/holidays/"}, first: {era: 1, y: 1998}},
+        {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Day of the Dude"}, first: {era: 1, y: 2005}},
         {type: "D", start: {Easter: "Easter"}, titles: {en: "Take it Easyster"}},
         {type: "D", start: {mon: 4, d: 1}, titles: {en: "April Dude’s Day"}},
         {type: "D", start: {mon: 4, d: 20}, titles: {en: "Limber Day"}},
@@ -33,6 +34,5 @@
     ],
     templates: [
         {template: "Thankiesgiving", type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {en: "Thankiesgiving"}},
-        
     ]
 }
