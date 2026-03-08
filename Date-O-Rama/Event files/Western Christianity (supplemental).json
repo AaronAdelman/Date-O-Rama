@@ -47,7 +47,7 @@
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, titles: {"ar":"أحد التوحد","en":"Autism Sunday","mk":"Меѓународен ден на аутизмот"}, urls: {"en": "https://www.daysoftheyear.com/days/autism-sunday/"}, first: {era: 1, y: 2002}, notes: {"en": "International Day of Prayer for Autism and Asperger Syndrome\nCreated by Ivan and Charika Corea"}},
         {type: "D", start: {mon: 3, d: 1}, inherits: "St. David’s Day", first: {era: 1, y: 1120}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "National March First Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-march-first-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Alicea Joy Davis"}},
-        {type: "D", start: {mon: 3, d: 10}, titles: {"en": "Salvation Army Day"}, urls: {"en": "https://nationaltoday.com/salvation-army-day/"}, emoji: "🛡️"},
+        {type: "D", start: {mon: 3, d: 10}, titles: {"en": "Salvation Army Day"}, urls: {"en": "https://www.daysoftheyear.com/days/salvation-army-day/"}, emoji: "🛡️"},
         {type: "nD", start: {mon: 5, d: 9, thruD: 15, wkd: [2], durationD: 7}, titles: {"en": "National Salvation Army Week"}, urls: {"en": "https://www.salvationarmyusa.org/about-us/national-salvation-army-week/"}, emoji: "🛡️", first: {era: 1, y: 1954}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Good Samaritan Day"}, notes: {"en": "This observance has no connection with actual Samaritans."}, urls: {"en": "https://www.daysoftheyear.com/days/national-good-samaritan-day/"}, first: {era: 1, y: 1964}},
         {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Saint Urho’s Day"}, urls: {"en": "http://www.sainturho.com/"}, first: {era: 1, y: 1950}},
