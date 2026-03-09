@@ -59,5 +59,7 @@
         {type: "D", start: {mon: 9, d: 28}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 10, d: 11}, inherits: "Natl Coming Out Day", first: {era: 1, y: 1988}},
+        
+        {type: "D", start: {mon: 3, d: 15}, titles: {"en":"Quenelle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/quenelle-day/"}, first: {era: 1, y: 2025}, notes: {"en": "Created by CucinaLi"}},
     ]
 }
