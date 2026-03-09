@@ -50,6 +50,7 @@
         {type: "D", start: {mon: 3, d: 10}, titles: {"en": "Salvation Army Day"}, urls: {"en": "https://www.daysoftheyear.com/days/salvation-army-day/"}, emoji: "🛡️"},
         {type: "nD", start: {mon: 5, d: 9, thruD: 15, wkd: [2], durationD: 7}, titles: {"en": "National Salvation Army Week"}, urls: {"en": "https://www.salvationarmyusa.org/about-us/national-salvation-army-week/"}, emoji: "🛡️", first: {era: 1, y: 1954}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "National Good Samaritan Day"}, notes: {"en": "This observance has no connection with actual Samaritans."}, urls: {"en": "https://www.daysoftheyear.com/days/national-good-samaritan-day/"}, first: {era: 1, y: 1970}},
+        {type: "D", start: {mon: 3, d: 14}, titles: {"en": "National Genealogy Day", "he": "יום הגנאולוגיה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, emoji: "👨‍👩‍👧‍👦", first: {era: 1, y: 2013}, notes: {"en": "Created by Christ Church, United Presbyterian and Methodist of Limerick, Ireland"}},
         {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Saint Urho’s Day"}, urls: {"en": "http://www.sainturho.com/"}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 3, d: 29}, titles: {"en":"Taiwan Youth Day","zh":"台灣青年日"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
         {type: "D", start: {mon: 3, d: 29}, titles: {"en": "Knights of Columbus Founders Day"}, urls: {"en": "https://nationaltoday.com/knights-of-columbus-founders-day/"}},
