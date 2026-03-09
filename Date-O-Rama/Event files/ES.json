@@ -14,6 +14,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Shrove Tuesday", urls: {"en": "https://www.officeholidays.com/holidays/spain/extremadura/carnival-tuesday"}},
         {type: "D", start: {mon: 2, d: 28}, titles: {"ca":"Dia d’Andalusia","en":"Andalusia Day","es":"Día de Andalucía","eu":"Andaluziaren eguna","gl":"Día de Andalucía","ru":"День Андалусии"}, urls: {"en": "https://nationaltoday.com/andalusia-day/"}, first: {era: 1, y: 1980}, notes: {"en": "Andalucía Day"}},
         {type: "D", start: {mon: 3, d: 1}, titles: {"en": "Balearic Day", "es": "Dia de las Islas Baleares"}, urls: {"en": "https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"}, first: {era: 1, y: 1999}, notes: {"en": "Day of the Balearic Islands"}},
+        {type: "D", start: {mon: 3, d: 2, wkd: [2, 3]}, titles: {"en": "Balearic Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "Statute of Autonomy"}, urls: {"en": "https://www.officeholidays.com/holidays/spain/melilla/statute-of-the-autonomous-city-of-melilla"}},
         {type: "D", start: {mon: 3, d: 19}, inherits: "St. Joseph’s Day"},
         {type: "D", start: {mon: 3, d: 19}, inherits: "Father’s Day", urls: {"en": "https://www.officeholidays.com/holidays/spain/fathers-day"}},
