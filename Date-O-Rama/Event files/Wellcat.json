@@ -39,7 +39,7 @@
             {type: "D", start: {mon: 3, d: 9}, titles: {"en": "Panic Day", "he": "יום הפאניקה"}},
             {type: "D", start: {mon: 3, d: 15}, titles: {"en": "National Brutus Day", "he": "יום ברוטוס הלאומי"}},
             {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Lips Appreciation Day"}, notes: {"en": "National Lips Appreciation Day"}},
-            {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Forgive Mom and Dad Day", "he": "יום הסליחה לאמא ואבא"}},
+            {type: "D", start: {mon: 3, d: 18}, titles: {"en": "Forgive Mom and Dad Day", "he": "יום הסליחה לאמא ואבא"}, notes: {"en": "Forgive Mom & Dad Day"}},
             {type: "D", start: {mon: 3, d: 22}, titles: {"en": "As Young As You Feel Day"}},
             {type: "D", start: {mon: 3, d: 26}, titles: {"en": "Make Up Your Own Holiday Day", "he": "יום המצא חג משלך"}},
             {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Quirky Country Music Song Titles Day"}},
