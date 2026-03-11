@@ -273,7 +273,7 @@
         {type: "D", start: {mon: 9, d: 5}, inherits: "St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
-        {type: "D", start: {mon: 3, d: 17}, titles: {"en": "Saint Gertrude of Nivelles Day"}, urls: {"en": "https://nationaltoday.com/saint-gertrude-of-nivelles-day/"}, first: {era: 1, y: 1677}},
+        {type: "D", start: {mon: 3, d: 17}, titles: {"en": "Saint Gertrude of Nivelles Day"}, urls: {"en": "https://www.daysoftheyear.com/days/saint-gertrude-of-nivelles-day/"}, first: {era: 1, y: 1677}},
 
         {type: "D", start: {Easter: "Easter", offsetD: -63}, titles: {"br":"Sul al Lard","da":"Seksagesima","en":"Septuagesima","es":"Septuagésima","fi":"Septuagesima","id":"Septuagesima","it":"Domenica di Settuagesima","ko":"칠순 주일","ml":"സെപ്ത്വാജെസെമ","nb":"Vingårdsøndagen","nl":"Septuagesima","nn":"Vingardssundagen","pl":"Siedemdziesiątnica","pt":"Septuagésima","ru":"Семидесятница","sv":"Septuagesima","zh":"七旬齋"}},
         {type: "D", start: {Easter: "Easter", offsetD: -56}, titles: {"de":"Sexagesimae","en":"Sexagesima","es":"Sexagésima","io":"Sexagesimo","it":"Domenica di Sessagesima","nb":"Såmannssøndag","nl":"Sexagesima","nn":"Såmannssøndagen","sv":"Sexagesima"}},
