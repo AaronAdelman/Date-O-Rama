@@ -13,5 +13,7 @@
         {type: "D", start: {mon: 6, d: 14}, titles: {"en": "Monkey Around Day"}, urls: {"en": "https://www.daysoftheyear.com/days/monkey-around-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by Bob Matthews"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "International Waterfall Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-waterfall-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Bob Matthews"}},
         {type: "D", start: {mon: 12, d: 14}, inherits: "Roast Chestnuts Day", first: {era: 1, y: 2015}},
+        
+        {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Credit Card Reduction Day"}, urls: {"en": "https://www.daysoftheyear.com/days/credit-card-reduction-day/"}, first: {era: 1, y: 2016}, notes: {"en": "Created by Holiday Insights"}},
     ]
 }
