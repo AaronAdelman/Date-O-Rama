@@ -13,6 +13,7 @@
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {mon: 1, d: 3, thruD: 4, wkd: [3]}, inherits: "Day after New Year’s Day (in lieu)"},
         {type: "D", start: {mon: 3, d: 14}, titles: {"az":"Dita e Veres","cs":"Dita e Verës","de":"Dita e Verës","en":"Dita e Verës","it":"Dita e Verës","ka":"Dita e Verës","pl":"Dzień Lata","sq":"Dita e Verës","uk":"День літа"}, notes: {"en": "Summer Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dita-e-veres/"}},
+        {type: "D", start: {mon: 3, d: 16, wkd: [2, 3]}, titles: {"en":"Dita e Verës (in lieu)"}, notes: {"en": "Summer Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/albania/summer-day"}},
         {type: "D", start: {mon: 3, d: 22}, inherits: "Nowruz", first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/nevruz-day/"}},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},

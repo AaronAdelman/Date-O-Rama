@@ -23,5 +23,7 @@
         {type: "D", start: {mon: 9, d: 7, wkd: [2]}, inherits: "Independence Day (in lieu)", urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}, notes: {"en": "Somhlolo Day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
+        
+        {type: "D", start: {mon: 3, d: 15, thruD: 16, wkd: [2]}, titles: {"en":"Lutsango Day"}, first: {era: 1, y: 2025}},
     ]
 }
