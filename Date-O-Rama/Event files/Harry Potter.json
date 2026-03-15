@@ -14,5 +14,3 @@
         {type: "D", start: {mon: 7, d: 31}, titles: {"en": "Harry Potter’s Birthday", "he": "יומולדת להארי פוטר"}, urls: {"en": "https://nationaltoday.com/harry-potters-birthday/"}, inherits: "*BDay*"},
     ]
 }
-
-
