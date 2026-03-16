@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "The Sisko Day"}, urls: {"en": "https://www.virtualtrekcon.com/thesiskoday"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en": "Captain Picard Day"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Captain_Picard_Day"}, first: {era: 1, y: 1994}, emoji: "👨‍🦲", notes: {"en": "From Star Trek:  The Next Generation."}},
         {type: "D", start: {mon: 9, d: 8}, titles: {"en":"Star Trek Day","es":"Día de Star Trek","sr":"Дан Звезданих стаза","uk":"День «Зоряного шляху»"}, urls: {"en": "https://www.daysoftheyear.com/days/star-trek-day/"}, first: {era: 1, y: 2020}, emoji: "🚀", notes: {"en": "Trek Day\nStar Trek Anniversary\nCreated by Gene Roddenberry"}},
-        {type: "D", start: {mon: 3, d: 26}, titles: {"en": "Live Long and Prosper Day"}, urls: {"en": "https://www.daysoftheyear.com/days/live-long-and-prosper-day/"}, emoji: "🖖"},
+        {type: "D", start: {mon: 3, d: 26}, titles: {"en": "Live Long & Prosper Day"}, notes: {"en": "LLAP Day\nLive Long and Prosper Day\nLeonard Nimoy’s Birthday\nCreated by Matt McCarthy"}, urls: {"en": "https://www.llapday.com/"}, emoji: "🖖", first: {era: 1, y: 2017}, inherits: "*BDay*"},
         {type: "D", start: {mon: 10, d: 11}, titles: {"en": "Federation Day"}, notes: {"en": "From Star Trek"}},
         {type: "D", start: {mon: 10, d: 26}, titles: {"en": "Prixin"}, notes: {"en": "From Star Trek"}, urls: {"en": "https://memory-alpha.fandom.com/wiki/Prixin"}},
     ]
