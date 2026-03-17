@@ -13,7 +13,7 @@
         {titles: {"he": "יומא דביה אתת בשורתא טבתא ליהודאי דלא יעידון מן אורייתא", "en": "Day in Which Came Good News to the Jews That They Should Not Deviate from the Torah"}, type: "D", start: {mon: 7, d: 28}, notes: {"he": "ראש השנה י״ט ע״א, תענית י״ח ע״א, מגילת תענית"}},
         {titles: {"he": "יום טוב של בני ארח בן יהודה", "en": "Festival of Bene ’Araḥ ben Yehudhah"}, type: "D", start: {mon: 8, d: 1}, notes: {"he": "תענית כ״ו ע״א"}},
         {titles: {"he": "יומיא דבהו איתוקם תמידא", "en": "Tamidh Establishment Days"}, type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 8}, notes: {"he": "תענית י״ז ע״ב־י״ח ע״א, מנחות ס״ה ע״א"}, emoji: "🐑"},
-        {titles: {"he": "יומיא דבהו איתוקם חגא דשבועיא", "en": "Shavu‘oth Establishment Days"}, type: "nD", start: {mon: 8, d: 8}, end: {mon: 8, d: 21}, notes: {"he": "תענית י״ז ע״ב, תענית י״ח ע״א, מנחות ס״ה ע״א"}},
+        {titles: {"he": "יומיא דבהו איתותב חגא דשבועיא", "en": "Shavu‘oth Settlement Days"}, type: "nD", start: {mon: 8, d: 8}, end: {mon: 8, d: 21}, notes: {"he": "תענית י״ז ע״ב, תענית י״ח ע״א, מנחות ס״ה ע״א־ע״ב"}},
         {titles: {"he": "ראש השנה לעומר", "en": "New Year for the ‘Omer"}, type: "D", start: {mon: 8, d: 16}, inherits: "*ספירת העומר*", notes: {"he": "ראש השנה ז׳ ע״ב"}},
         {titles: {"he": "ראש השנה לשתי הלחם", "en": "New Year for the Two Loaves"}, type: "D", start: {mon: 10, d: 6}, notes: {"he": "ראש השנה ז׳ ע״ב, מגילה ל״א ע״ב"}},
         {titles: {"he": "יום טוב של בני דוד בן יהודה", "en": "Festival of Bene Dawidh ben Yehudhah"}, type: "D", start: {mon: 10, d: 20}, notes: {"he": "תענית כ״ו ע״א"}},
