@@ -5,7 +5,7 @@
     calendarColor: {name: "indigo"},
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
-    "TODO": "Spin off a Hasbro event calendar?  Scouts event calendar?  American Society for the Prevention of Cruelty to Animals (ASPCA) event calendar?  Todd McCalla event calendar?  McDonald’s event calendar?  Dale Anderson event calendar?  Camp Fire (organization) event calendar? American Heart Association event calendar?",
+    "TODO": "Spin off a Hasbro event calendar?  Scouts event calendar?  American Society for the Prevention of Cruelty to Animals (ASPCA) event calendar?  Todd McCalla event calendar?  McDonald’s event calendar?  Dale Anderson event calendar?  Camp Fire (organization) event calendar?  American Heart Association event calendar?  American Counseling Association event calendar?",
     events: [
         {type: "D", start: {Easter: "Easter", offsetD: -8}, titles: {"en": "Take Your Parents to the Playground Day"}, urls: {"en": "https://pdplay.com/take-parents-playground-day/"}, first: {era: 1, y: 2009}, end: {era: 1, y: 2016}, inherits: "Parents’ Day", notes: {"en": "Some seem to think this observance is on the third Saturday in May."}},
         {type: "D", start: {equinoxOrSolstice: "Dec"}, titles: {"en": "National Flashlight Day", "he": "יום הפנס הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/flashlight-day/"}, emoji: "🔦"},
@@ -760,6 +760,7 @@
         {type: "D", start: {mon: 2, d: 26}, titles: {"en": "National Pistachio Day"}, notes: {"en": "World Pistachio Day"}, urls: {"en": "https://www.worldpistachioday.com/"}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Kahlua Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kahlua-day/"}, emoji: "🥃", notes: {"en": "Created by the Absolut Group"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 2, d: 27}, titles: {"en": "National Strawberry Day", "he": "יום תות השדה הלאומי"}, first: {era: 1, y: 2013}, emoji: "🍓", urls: {"en": "https://www.daysoftheyear.com/days/strawberry-day/"}},
+        {type: "D", start: {mon: 4, wkd: [6], nth: 2}, titles: {"en": "Teal Day"}, urls: {"en": "https://www.counseling.org/mental-health-counseling/counseling-awareness-month"}, inherits: "*MedAwareness*", notes: {"en": "Created by the American Counseling Association (ACA)"}},
         {type: "D", start: {mon: 2, d: 28}, inherits: "Natl Tooth Fairy Day", urls: {"en": "https://www.daysoftheyear.com/days/tooth-fairy-day/"}, notes: {"en": "Created by Katie Davis"}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "National Chocolate Souffle Day", "he": "יום הסופלה שוקולד הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-souffle-day/"}},
         {type: "D", start: {mon: 2, d: 28}, titles: {"en": "National Customized Wheel and Tire Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-customized-wheel-and-tire-day/"}, first: {era: 1, y: 2020}},
