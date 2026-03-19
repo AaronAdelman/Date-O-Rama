@@ -31,7 +31,7 @@
         {type: "nD", start: {mon: 8, d: 15}, end: {mon: 8, d: 28}, titles: {"en": "The Nile Festival", "he": "הצפה של הנילוס", "cop": "ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, notes: {"en": "Flooding of the Nile"}, urls: {"en": "https://www.daysoftheyear.com/days/the-nile-festival/"}, notes: {"en": "Wafaa El-Nil"}},
         {type: "D", start: {mon: 2, d: 22}, inherits: "Abu Simbel Festival"},
         {type: "D", start: {mon: 10, d: 22}, inherits: "Abu Simbel Festival"},
-        {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Pharaohs’ Golden Parade"}, first: {era: 1, y: 2021}, urls: {"en": "https://www.daysoftheyear.com/days/the-pharaohs-golden-parade/"}},
+        {type: "D", start: {mon: 4, d: 3}, titles: {"ar":"موكب المومياوات الملكية","arz":"موكب المومياوات الملكيه فى مصر","ca":"Desfilada d’Or dels Faraons","de":"Goldene Parade der Pharaonen","en":"Pharaohs’ Golden Parade","es":"Desfile dorado de los faraones","fr":"Parade dorée des Pharaons","it":"Parata d’oro dei faraoni","pt":"Desfile dourado dos faraós","ta":"பார்வோன்களின் அணிவகுப்பு","tr":"Firavunların Altın Geçidi","zh":"法老黃金遊行"}, first: {era: 1, y: 2021}, urls: {"en": "https://www.daysoftheyear.com/days/the-pharaohs-golden-parade/"}, notes: {"en": "Created by the government of Egypt"}},
   ],
     templates: [
         {template: "Abu Simbel Festival", type: "D", start: {mon: 2, d: 22}, titles: {"en": "Abu Simbel Festival"}, notes: {"en": "Abu Simbel Sun Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/abu-simbel-festival/"}},
