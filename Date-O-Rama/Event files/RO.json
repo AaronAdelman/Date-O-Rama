@@ -57,7 +57,7 @@
         {type: "D", start: {mon: 3, d: 25}, inherits: "Intl Day for the Remembrance of the Slave Trade and Its Abolition"},
         {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Day of the Union of Bessarabia with Romania"}},
         {type: "D", start: {mon: 4, wkd: [1], nth: 1}, titles: {"en": "NATO Day"}},
-        {inherits: "World Autism Awareness Day", type: "D", start: {mon: 4, d: 2}, first: {era: 1, y: 2009}},
+        {inherits: "World Autism Awareness Day", type: "D", start: {mon: 4, d: 2}, first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 4, d: 3}, titles: {"en": "Romanian Gendarmerie Day"}},
         {inherits: "World Health Day", type: "D", start: {mon: 4, d: 7}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 4, d: 8}, inherits: "Intl Romani Day"},
