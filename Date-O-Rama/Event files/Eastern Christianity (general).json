@@ -17,7 +17,7 @@
         {titles: {"en": "Feast of Saint John of the Ladder"}, type: "D", start: {Easter: "Easter", offsetD: -21}},
         {titles: {"en": "Saturday of the Akathist"}, notes: {"en": "Lent (day 28)"}, type: "D", start: {Easter: "Easter", offsetD: -15}},
         {titles: {"en": "Feast of Saint Mary of Egypt"}, type: "D", start: {Easter: "Easter", offsetD: -14}},
-        {type: "D", start: {Easter: "Easter", offsetD: -8}, titles: {"en": "Saint Lazarus Day"}, notes: {"en": "Lent (day 34)\nLazarus Saturday\nRaising of Lazarus"}, urls: {"en": "https://www.daysoftheyear.com/days/st-lazarus-day/"}, first: {era: 1, y: 300}},
+        {type: "D", start: {Easter: "Easter", offsetD: -8}, titles: {"ar":"سبت لعازر","arz":"سبت لعازر","be":"Лазарава субота","be-tarask":"Лазарава субота","bg":"Лазаровден","cs":"Lazarova sobota","de":"Lazarussamstag","el":"Σάββατο του Λαζάρου","en":"Lazarus Saturday","es":"Sábado de Lázaro","fa":"شنبه لازاروس","fi":"Lasaruksen lauantai","fr":"Samedi de Lazare","id":"Sabtu Lazarus","it":"Sabato di Lazzaro","mk":"Лазарова сабота","ml":"ലാസറിന്റെ ശനി","nn":"Lasaruslaurdag","pt":"Sábado de Lázaro","ro":"Sâmbăta lui Lazăr","ru":"Лазарева суббота","sk":"Lazárova sobota","sr":"Врбица (празник)","uk":"Лазарева субота","ur":"سبت لعزر","zh":"拉撒路聖週六"}, notes: {"en": "Lent (day 34)\nSaint Lazarus Day\nRaising of Lazarus"}, urls: {"en": "https://www.daysoftheyear.com/days/st-lazarus-day/"}, first: {era: 1, y: 300}},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday", urls: {"en": "https://nationaltoday.com/orthodox-palm-sunday/"}},
         {type: "D", start: {Easter: "Easter", offsetD: -6}, inherits: "Holy Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: -5}, inherits: "Holy Tuesday"},
