@@ -6,7 +6,7 @@
     events: [
         {type: "D", start: {Easter: "Easter", offsetD: -44}, titles: {"en": "Friday Fish Fry Day"}, urls: {"en": "https://www.fridayfishfryday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {Easter: "Easter", offsetD: -44}, inherits: "Natl Tartar Sauce Day", first: {era: 1, y: 2017}},
-        {type: "D", start: {Easter: "Easter"}, titles: {"en": "National Baked Ham with Pineapple Day"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}},
+        {type: "D", start: {Easter: "Easter"}, titles: {"en": "National Baked Ham with Pineapple Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-baked-ham-with-pineapple-day/"}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Natl Hangover Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Commitment Day"}, urls: {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, first: {era: 1, y: 1960}, emoji: "👩‍❤️‍👨"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "National Black Eyed Pea Day"}, notes: {"en": "National Black-Eyed Pea Day"}, urls: {"en": "https://www.checkiday.com/bee7823f06b13815efec718f8d7a2a2a/national-black-eyed-pea-day"}},

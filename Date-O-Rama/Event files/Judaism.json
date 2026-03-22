@@ -631,7 +631,6 @@
     templates: [
         {template: "*חנוכה*", type: "D", start: {mon: 3, d: 25}, urls: {"en": "https://www.ou.org/holidays/category/chanukah/"}, emoji: "🕎"},
         {template: "*סוכות*", type: "D", start: {mon: 1, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/sukkot/"}, emoji: "🍋🌴"},
-        {template: "*ספירת העומר*", type: "D", start: {mon: 8, d: 16}, urls: {"en": "https://www.ou.org/holidays/category/sefirat-haomer/"}},
         {template: "*פסח*", type: "D", start: {mon: 8, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/passover/"}, emoji: "🫓"},
         {template: "*ראש חודש*", type: "D", start: {}, emoji: "🔥"},
         {template: "*שבת*", type: "D", start: {}, emoji: "🍷"},

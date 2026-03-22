@@ -250,6 +250,7 @@
         {type: "D", start: {mon: 3, d: 16}, titles: {"en": "Freedom of Information Day", "he": "יום חופש המידע"}, urls: {"en": "https://www.ala.org/advocacy/FOI-Day"}, notes: {"he": "יום חופש המידע הלאומי", "en": "National Freedom of Information Day\nCreated by Jim Bohannon"}, emoji: "🗄️"},
         {type: "W", start: {mon: 5, fullWk: 3}, titles: {"en": "EMS Week"}, notes: {"en": "National EMS Week\nEMS Appreciation Week"}, urls: {"en": "https://emsweek.org/"}, first: {era: 1, y: 1974}, emoji: "🛡"},
         {type: "D", start: {mon: 3, d: 17, thruD: 23, wkd: [7]}, titles: {"en":"National Corndog Day","vi":"Ngày Corndog Quốc gia"}, urls: {"en": "https://www.daysoftheyear.com/days/corn-dog-day/"}, first: {era: 1, y: 1992}, notes: {"en": "National Corn Dog Day\nCreated by Corvallis, Oregon"}},
+        {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Single Parent Day", "he": "יום ההורים היחידנים הלאומי"}, notes: {"en": "National Single Parents Day\nCreated by Ronald Reagan"}, urls: {"en": "https://www.daysoftheyear.com/days/single-parents-day/"}, first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, notes: {"en": "Read Across America Day\nCreated by the National Education Association (NEA)"}, urls: {"en": "https://www.daysoftheyear.com/days/read-across-america-day/"}, first: {era: 1, y: 1998}, emoji: "📖"},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "Rosie the Riveter Day"}, notes: {"en": "National Rosie the Riveter Day\nCreated by the US Congress"}, urls: {"en": "https://www.daysoftheyear.com/days/rosie-the-riveter-day/"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 3, d: 21}, titles: {"en": "National Renewable Energy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-renewable-energy-day/"}, first: {era: 1, y: 2004}, notes: {"en": "Created by the US Congress"}},
@@ -303,7 +304,7 @@
         {type: "D", start: {mon: 4, d: 27}, titles: {"en": "Ulysses S. Grant Day"}, first: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/usa/ohio/ulysses-s-grant-day"}},
         {type: "D", start: {mon: 4, d: 29}, inherits: "End Jew Hatred Day", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 4, d: 30}, inherits: "Natl PrepareAthon! Day", first: {era: 1, y: 2014}},
-        {type: "D", start: {mon: 4, d: 5}, titles: {"en": "Gold Star Spouses Day"}, notes: {"en": "Gold Star Wives Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/gold-star-spouses-day/"}, emoji: "⭐️"},
+        {type: "D", start: {mon: 4, d: 5}, titles: {"en": "Gold Star Spouses Day"}, notes: {"en": "Gold Star Wives Day\nCreated by the US Senate"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/gold-star-spouses-day/"}, emoji: "⭐️"},
         {type: "D", start: {mon: 4, d: 5}, titles: {"en": "National Go For Broke Day"}, urls: {"en": "https://www.daysoftheyear.com/days/go-for-broke-day/"}, notes: {"en": "Go For Broke Day"}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "California Poppy Day"}, urls: {"en": "https://nationaltoday.com/california-poppy-day/"}},
         {type: "D", start: {mon: 4, d: 6}, inherits: "Army Day", urls: {"en": "https://www.daysoftheyear.com/days/army-day/"}},
@@ -699,6 +700,8 @@
         {type: "M", start: {mon: 2}, titles: {"en": "Financial Aid Awareness Month"}, urls: {"en": "https://www.nasfaa.org/finaidfeb"}, notes: {"en": "Created by Kathy Hochul"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Race Relations Day", urls: {"en": "https://www.checkiday.com/db2635c9d77390b1240a229f1a2f93b9/race-relations-day"}, first: {era: 1, y: 2011}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 6}, titles: {"en": "National Aplastic Anemia & MDS Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-aplastic-anemia-mds-awareness-week/"}, inherits: "*MedAwareness*", notes: {"en": "Created by Ronald Reagan"}, first: {era: 1, y: 1986}},
+        {type: "nD", start: {mon: 4, d: 2, thruD: 8, wkd: [7], durationD: 9}, inherits: "Natl Robotics Week", first: {era: 1, y: 2010}, last: {era: 1, y: 2026}},
+        {type: "nD", start: {mon: 2, d: 2, thruD: 8, wkd: [7], durationD: 9}, inherits: "Natl Robotics Week", first: {era: 1, y: 2027}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durationD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"}, first: {era: 1, y: 1987}},
@@ -756,5 +759,6 @@
         {template: "Inauguration Day", type: "D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, titles: {"en": "Inauguration Day"}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}},
         {template: "Bennington Battle Day (in lieu)", type: "D", start: {mon: 8, d: 15, wkd: [6]}, titles: {"en": "Bennington Battle Day (in lieu)"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
         {template: "Alaska Day (in lieu)", type: "D", start: {mon: 10, d: 17, wkd: [6]}, titles: {"en":"Alaska Day (in lieu)","he":"יום אלסקה (במקומו)"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/alaska-day"}},
+        {template: "Natl Robotics Week", type: "nD", start: {mon: 4, d: 2, thruD: 8, wkd: [2], durationD: 9}, titles: {"en": "National Robotics Week"}, urls: {"en": "https://www.nationalroboticsweek.org/"}, emoji: "⚙️", notes: {"en": "RoboWeek\nCreated by the US House of Representatives"}},
     ]
 }
