@@ -626,8 +626,9 @@
         {type: "nD", start: {mon: 3, d: 10, thruD: 16, wkd: [1], durationD: 7}, titles: {"en": "Sunshine Week"}, urls: {"en": "https://sunshineweek.org/"}, first: {era: 1, y: 2005}},
         {type: "nD", start: {mon: 3, d: 2}, end: {mon: 3, d: 6}, titles: {"en": "Read Across America Week"}, urls: {"en": "https://www.daysoftheyear.com/days/read-across-america-week/"}},
         
-        {type: "nD", start: {mon: 3, wkd: [1], d: 13, thruD: 19, durationD: 7}, titles: {"en": "National Agriculture Week"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.census.gov/newsroom/stories/agriculture-day-week.html"}, inherits: "Natl Agriculture Day", notes: {"en": "Created by the Agriculture Council of America"}},
-        {type: "D", start: {mon: 3, wkd: [3], nth: 3}, inherits: "Natl Agriculture Day", first: {era: 1, y: 1973}, urls: {"en": "https://www.agday.org/"}, notes: {"en": "Created by the Agriculture Council of America (ACA)"}},
+        {type: "nD", start: {mon: 3, wkd: [1], d: 13, thruD: 19, durationD: 7}, titles: {"en": "National Agriculture Week"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.census.gov/newsroom/stories/agriculture-day-week.html"}, inherits: "Ag Day", notes: {"en": "Created by the Agriculture Council of America"}},
+        {type: "D", start: {mon: 3, d: 18, thruD: 24, wkd: [3]}, inherits: "Ag Day", first: {era: 1, y: 1973}, last: {era: 1, y: 2026}},
+        {type: "D", start: {mon: 3, wkd: [3], nth: 3}, inherits: "Ag Day", first: {era: 1, y: 2027}},
 
         {type: "nD", start: {mon: 4, d: 16, thruD: 22, wkd: [7], durationD: 9}, titles: {"en": "National Park Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-park-week/"}, first: {era: 1, y: 1991}, emoji: "🏞️"},
         {type: "nD", start: {mon: 4, d: 21, thruD: 27, wkd: [6], durationD: 3}, titles: {"en": "Fiddlers Frolic"}, urls: {"en": "https://fiddlersfrolics.com/"}, first: {era: 1, y: 1971}, emoji: "🎻"},
@@ -762,5 +763,6 @@
         {template: "Bennington Battle Day (in lieu)", type: "D", start: {mon: 8, d: 15, wkd: [6]}, titles: {"en": "Bennington Battle Day (in lieu)"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
         {template: "Alaska Day (in lieu)", type: "D", start: {mon: 10, d: 17, wkd: [6]}, titles: {"en":"Alaska Day (in lieu)","he":"יום אלסקה (במקומו)"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/alaska-day"}},
         {template: "Natl Robotics Week", type: "nD", start: {mon: 4, d: 2, thruD: 8, wkd: [2], durationD: 9}, titles: {"en": "National Robotics Week"}, urls: {"en": "https://www.nationalroboticsweek.org/"}, emoji: "⚙️", notes: {"en": "RoboWeek\nCreated by the US House of Representatives"}},
+        {template: "Ag Day", type: "D", start: {mon: 3, d: 18, thruD: 24, wkd: [3]}, inherits: "Natl Agriculture Day", urls: {"en": "https://www.agday.org/"}, notes: {"en": "Created by the Agriculture Council of America (ACA)"}},
     ]
 }
