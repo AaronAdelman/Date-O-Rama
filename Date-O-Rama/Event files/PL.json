@@ -94,7 +94,7 @@
         {type: "D", start: {Easter: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day", "pl": "Śmigus Dyngus"}, inherits: "Easter Monday"},
+        {type: "D", start: {Easter: "Easter", offsetD: 1}, titles: {"be":"Палівальны панядзелак","cs":"Oblévačka","de":"Śmigus-dyngus","el":"Σμίγκους-ντίνγκους","en":"Śmigus-dyngus","es":"Śmigus-dyngus","fr":"Śmigus-dyngus","hu":"Locsolás","it":"Śmigus-dyngus","lb":"Śmigus-dyngus","nl":"Śmigus-dyngus","pl":"Śmigus-dyngus","ru":"Поливальный понедельник","sk":"Oblievačka","uk":"Поливаний понеділок","vi":"Śmigus-dyngus"}, notes: {"en": "Dyngus Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dyngus-day/"}, inherits: "Easter Monday", first: {era: 1, y: 1420}},
         {type: "D", titles: {"en": "Warsaw Ghetto Uprising"}, start: {mon: 4, d: 19}},
         {type: "D", start: {mon: 4, d: 22}, inherits: "Intl Mother Earth Day", first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day"},

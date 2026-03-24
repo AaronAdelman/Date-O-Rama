@@ -10,8 +10,8 @@
         {type: "D", start: {mon: 4, d: 25}, inherits: "Anzac Day", first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Armistice Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 10, wkd: [4], nth: 4}},
-        {inherits: "Children’s Day", type: "D", start: {mon: 8, d: 4}, titles: {"en": "National Aboriginal and Torres Strait Islander Children’s Day"}, first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 10, wkd: [4], nth: 4}, inherits: "Children’s Day"},
+        {type: "D", start: {mon: 8, d: 4}, titles: {"en": "National Aboriginal and Torres Strait Islander Children’s Day"}, inherits: "Children’s Day", first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 3, wkd: [2], nth: 2}, inherits: "Commonwealth Day", first: {era: 1, y: 1958}},
@@ -151,6 +151,7 @@
         {type: "D", start: {mon: 9, wkd: [1], nth: 2}, titles: {"en": "Sustainable House Day"}, urls: {"en": "https://sustainablehouseday.com/"}, first: {era: 1, y: 2001}, emoji: "🏠"},
         {type: "D", start: {mon: 1, d: 9}, titles: {"en": "National Australian Shepherd Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-australian-shepherd-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Aussie Times"}},
         {type: "nD", start: {mon: 2, d: 16, thruD: 22, wkd: [6]}, end: {mon: 3, d: 17, thruD: 23, wkd: [1]}, titles: {"en":"Adelaide Fringe","fr":"Adelaide Fringe","it":"Adelaide Fringe"}, notes: {"en": "Adelaide Fringe Festival"}, urls: {"en": "https://adelaidefringe.com.au/"}, emoji: "⭐", first: {era: 1, y: 1960}},
+        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "Waltzing Matilda Day"}, urls: {"en": "https://www.daysoftheyear.com/days/waltzing-matilda-day/"}, first: {era: 1, y: 2020}},
         
         {type: "W", start: {mon: 9, fullWk: 1}, titles: {"en": "National Child Protection Week"}, urls: {"en": "https://www.napcan.org.au/ncpw/"}, first: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en": "Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [6]}, titles: {"en": "Bravehearts Day"}, urls: {"en": "https://bravehearts.org.au/support-us/bravehearts-day"}, emoji: "💟", notes: {"en": "White Balloon Day\nCreated by Bravehearts"}, first: {era: 1, y: 1997}},

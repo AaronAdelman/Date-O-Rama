@@ -122,7 +122,7 @@
         {type: "D", start: {mon: 4, d: 1}, titles: {"en": "National Loyal Day"}},
         {type: "D", start: {mon: 4, d: 3}, titles: {"en": "National Grey Day"}},
         {type: "D", start: {mon: 4, d: 4}, titles: {"en": "National Dillon Day"}},
-        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Gang Day"}},
+        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Gang Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-gang-day/"}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Jay Day"}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Parker Day"}},
         {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Robert Day"}},

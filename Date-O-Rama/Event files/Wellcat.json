@@ -43,7 +43,7 @@
             {type: "D", start: {mon: 3, d: 22}, titles: {"en": "As Young As You Feel Day"}},
             {type: "D", start: {mon: 3, d: 26}, titles: {"en": "Make Up Your Own Holiday Day", "he": "יום המצא חג משלך"}},
             {type: "D", start: {mon: 3, d: 27}, titles: {"en": "Quirky Country Music Song Titles Day"}},
-            {type: "D", start: {mon: 4, d: 7}, titles: {"en": "No Housework Day", "he": "יום ללא עבודות בית"}},
+            {type: "D", start: {mon: 4, d: 7}, titles: {"en": "No Housework Day", "he": "יום ללא עבודות בית"}, notes: {"en": "National No Housework Day"}},
             {type: "D", start: {mon: 4, d: 8}, titles: {"en": "Trading Cards for Grown-ups Day"}},
             {type: "D", start: {mon: 4, d: 12}, titles: {"en": "Walk on Your Wild Side Day"}},
             {type: "D", start: {mon: 4, d: 17}, titles: {"en": "Blah Blah Blah Day", "he": "יום הבלה בלה בלה"}},

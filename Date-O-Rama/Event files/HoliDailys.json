@@ -13,7 +13,7 @@
         {type: "D", start: {mon: 2, d: 19}, titles: {"en": "Prevent Plagiarism Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/02/19/Prevent-Plagiarism-Day"}, first: {era: 1, y: 2015}, emoji: "✍️"},
         {type: "D", start: {mon: 3, d: 4}, titles: {"en": "National Snack Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/03/04/National-Snack-Day"}, first: {era: 1, y: 2015}, emoji: "🥨"},
         {type: "D", start: {mon: 3, d: 24}, titles: {"en": "National Cocktail Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cocktail-day/"}, emoji: "🍸🍹", first: {era: 1, y: 2013}},
-        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Siamese Cat Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/04/06/National-Siamese-Cat-Day"}, emoji: "🐈"},
+        {type: "D", start: {mon: 4, d: 6}, titles: {"en": "National Siamese Cat Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/04/06/National-Siamese-Cat-Day"}, emoji: "🐈", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 4, d: 21}, titles: {"en": "Keep Off the Grass Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2015/04/21/Keep-Off-the-Grass-Day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 4, d: 29}, titles: {"en": "Viral Video Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2015/04/29/Viral-Video-Day"}, first: {era: 1, y: 2007}, emoji: "📹"},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Cosmopolitan Day"}, urls: {"en": "https://jacegalloway.wixsite.com/holidays/single-post/2016/05/07/National-Cosmopolitan-Day"}, emoji: "🍸"},
