@@ -100,7 +100,7 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Europe Day"},
         {type: "D", start: {mon: 5, d: 31}, inherits: "World No-Tobacco Day", first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day", first: {era: 1, y: 1952}},
-        {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 23}},
+        {type: "D", start: {mon: 6, d: 23}, inherits: "Kupala Night"},
         {inherits: "St. John’s Eve", type: "D", start: {mon: 6, d: 23}},
         {titles: {"en": "Dog’s Day"}, type: "D", start: {mon: 7, d: 1}, emoji: "🦮"},
         {type: "D", start: {mon: 8, d: 14}, inherits: "Power Engineer’s Day"},

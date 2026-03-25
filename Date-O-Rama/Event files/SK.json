@@ -27,7 +27,7 @@
         {titles: {"en": "Anniversary of the Memorandum of the Slovak Nation"}, type: "D", start: {mon: 6, d: 7}, first: {era: 1, y: 1861}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-memorandum-of-the-slovak-nation/"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {inherits: "Kupala Night", type: "D", start: {mon: 6, d: 23}},
+        {type: "D", start: {mon: 6, d: 23}, inherits: "Kupala Night"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Children’s Day"},
         {type: "D", start: {mon: 7, d: 17}, inherits: "Independence Day", first: {era: 1, y: 1992}},
         {titles: {"en": "Matica Slovenská Day"}, type: "D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/matice-slovenska-day/"}},
