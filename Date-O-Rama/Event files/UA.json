@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 10, d: 1}, titles: {"en": "Ukraine Defender Day", "uk": "День захисників і захисниць України"}, notes: {"en": "Defenders Day\nDefenders of Ukraine Day\nDay of the Defender"}, urls: {"en": "https://www.daysoftheyear.com/days/ukraine-defender-day/"}, first: {era: 1, y: 2015}, notes: {"en": "Created by Petro Poroshenko"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {titles: {"en": "Flag of Ukraine"}, type: "D", start: {"mon": 3, d: 26}},
+        {titles: {"en": "Flag of Ukraine Day"}, type: "D", start: {"mon": 3, d: 26}},
         {titles: {"en": "National Guard Day"}, type: "D", start: {"mon": 3, d: 26}},
         {titles: {"en": "Border Guards Day"}, type: "D", start: {"mon": 4, d: 30}, first: {era: 1, y: 2018}},
         {titles: {"en": "Day of the Mechanized Infantry"}, type: "D", start: {"mon": 5, d: 6}},
