@@ -74,7 +74,7 @@
 
         {type: "D", start: {mon: 1, wkd: [2], nth: -1}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day", "fil": "Pambansang Araw ng Bibliya"}, first: {era: 1, y: 2019}},
         {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 2001}},
-        {inherits: "Thanksgiving Day", type: "D", start: {mon: 11, wkd: [5], nth: -1}},
+        {inherits: "Thanksgiving", type: "D", start: {mon: 11, wkd: [5], nth: -1}},
         {type: "D", start: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Black Friday", first: {era: 1, y: 2019}},
 
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Bataan Foundation Day", "fil": "Araw ng Pagkakatatag ng Bataan"}},
@@ -223,7 +223,7 @@
         {type: "D", start: {mon: 10, d: 20}, titles: {"en": "Philippine-British Friendship Day"}, emoji: "🇵🇭🇬🇧", urls: {"en": "https://nationaltoday.com/philippine-british-friendship-day/"}, first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 10, d: 21}, titles: {"en": "National Archives Day"}, first: {era: 1, y: 1995}, urls: {"en": "https://nationaltoday.com/national-archives-day/"}, emoji: "🗂️"},
         {type: "D", start: {mon: 10, d: 25}, titles: {"en": "Anniversary of Philippine Military Academy"}, urls: {"en": "https://nationaltoday.com/anniversary-of-philippine-military-academy/"}, first: {era: 1, y: 1998}},
-        {type: "D", start: {mon: 10, d: 29}, titles: {"en": "National Indigenous People’s Thanksgiving Day"}, inherits: "Thanksgiving Day", urls: {"en": "https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, first: {era: 1, y: 2003}},
+        {type: "D", start: {mon: 10, d: 29}, titles: {"en": "National Indigenous People’s Thanksgiving Day"}, inherits: "Thanksgiving", urls: {"en": "https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, first: {era: 1, y: 2003}},
         {type: "M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/filipino-values-month/"}, titles: {"en": "Filipino Values Month"}, first: {era: 1, y: 1992}},
         {type: "M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/library-and-information-services-month/"}, titles: {"en": "Library and Information Services Month"}, first: {era: 1, y: 1991}},
         {type: "M", start: {mon: 11}, titles: {"en": "National Consciousness Month for Punctuality and Civility"}, urls: {"en": "https://nationaltoday.com/national-consciousness-month-for-punctuality-and-civility/"}, first: {era: 1, y: 2008}},

@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, titles: {"en": "Commonwealth Cultural Day"}, urls: {"en": "https://publicholidays.asia/northern-mariana-islands/commonwealth-cultural-day/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 11, d: 4}, inherits: "Citizenship Day", urls: {"en": "https://publicholidays.asia/northern-mariana-islands/citizenship-day/"}, first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 11, d: 11}, inherits: "Veterans Day", urls: {"en": "https://department.va.gov/veterans-day/"}, first: {era: 1, y: 1954}, notes: {"en": "Remembrance Day"}},
-        {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving Day", first: {era: 1, y: 1942}, urls: {"en": "https://www.daysoftheyear.com/days/thanksgiving/"}},
+        {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving", first: {era: 1, y: 1942}, urls: {"en": "https://www.daysoftheyear.com/days/thanksgiving/"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Constitution Day", urls: {"en": "https://publicholidays.asia/northern-mariana-islands/constitution-day/"}, first: {era: 1, y: 1977}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
     ]

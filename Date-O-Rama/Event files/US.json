@@ -100,7 +100,7 @@
         {type: "D", start: {mon: 3, d: 17}, inherits: "St. Patrick’s Day"},
         {inherits: "Statehood Day", type: "D", start: {mon: 8, wkd: [6], nth: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Hawaii)"}, locations: {"en": "Hawaii", "he": "הוואי"}, first: {era: 1, y: 1969}},
         {type: "D", start: {mon: 4, d: 6}, inherits: "Tartan Day", first: {era: 1, "year": 1998}},
-        {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving Day", first: {era: 1, y: 1942}, urls: {"en": "https://www.daysoftheyear.com/days/thanksgiving/"}, notes: {"en": "Featuring the Macy’s Thanksgiving Day Parade."}, overlappingSubEvents: [
+        {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving", first: {era: 1, y: 1942}, urls: {"en": "https://www.daysoftheyear.com/days/thanksgiving/"}, notes: {"en": "Featuring the Macy’s Thanksgiving Day Parade."}, overlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [5], nth: 4}, inherits: "Natl Day of Mourning", first: {era: 1, y: 1970}, urls: {"en": "https://www.daysoftheyear.com/days/day-of-mourning/"}},
             {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {"en": "Unthanksgiving Day"}, inherits: "Natl Day of Mourning", first: {era: 1, y: 1975}, urls: {"en": "https://www.daysoftheyear.com/days/unthanksgiving-day/"}, notes: {"en": "Indigenous Peoples Sunrise Ceremony"}},
             {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {"en": "National Family Health History Day"}, notes: {"en": "Family History Initiative"}, urls: {"en": "https://www.daysoftheyear.com/days/national-family-health-history-day/"}, first: {era: 1, y: 2004}, notes: {"en": "Created by the US Surgeon General"}},

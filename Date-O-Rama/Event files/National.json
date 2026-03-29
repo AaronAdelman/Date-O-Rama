@@ -1386,7 +1386,7 @@
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Public Radio Day"}, urls: {"en": "https://nationaltoday.com/national-public-radio-day/"}, first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Raspberry Popover Day"}, notes: {"en": "Raspberry Tart Day\nNational Raspberry Pop Over Day"}, urls: {"en": "https://nationaltoday.com/national-raspberry-pop-over-day/"}},
         {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Two Different Colored Shoes Day", "he": "יום שתי נעליים בשני צבעים הלאומי"}, urls: {"en": "https://www.nationaltwodifferentcoloredshoesday.com/"}, first: {era: 1, y: 2009}, emoji: "👞"},
-        {type: "D", start: {mon: 5, d: 30}, titles: {"en": "Fakesgiving"}, urls: {"en": "https://www.daysoftheyear.com/days/fakesgiving/"}, inherits: "Thanksgiving Day", first: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 5, d: 30}, titles: {"en": "Fakesgiving"}, urls: {"en": "https://www.daysoftheyear.com/days/fakesgiving/"}, inherits: "Thanksgiving", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"en": "National E-Bike Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-e-bike-day/"}, emoji: "🚲", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"en": "National Hole In My Bucket Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hole-in-my-bucket-day/"}},
         {type: "D", start: {mon: 5, d: 30}, titles: {"en": "National Mint Julep Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mint-julep-day/"}, emoji: "🥃"},

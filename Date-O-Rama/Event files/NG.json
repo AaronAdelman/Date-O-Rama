@@ -52,7 +52,7 @@
         {type: "nD", start: {era: 1, y: 2024, mon: 9, d: 11}, end: {era: 1, y: 2023, mon: 9, d: 13}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-palliatives-distribution"}},
         {inherits: "Independence Day", type: "D", start: {mon: 10, d: 1}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/nigeria-independence-day/"}},
         {type: "D", start: {mon: 10, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-independence-day"}, inherits: "Independence Day (in lieu)"},
-        {type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/bayelsa/bayelsa-thanksgiving-day"}, inherits: "Thanksgiving Day", first: {era: 1, y: 1991}},
+        {type: "D", start: {mon: 11, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/bayelsa/bayelsa-thanksgiving-day"}, inherits: "Thanksgiving", first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 11, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/anambra/public-holiday-for-azikiwe-birthday"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 12, d: 22}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/borno/sambisa-memorial-day"}, titles: {"en": "Sambisa Memorial Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
