@@ -8,6 +8,8 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Macau"},
     first: {era: 1, y: 1999},
     events: [
+        {type: "D", start: {equinoxOrSolstice: "Mar", offsetD: 15}, inherits: "Tomb-Sweeping Day"},
+
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
