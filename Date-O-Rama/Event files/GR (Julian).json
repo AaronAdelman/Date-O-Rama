@@ -13,7 +13,5 @@
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
-        
-        {type: "D", start: {Easter: "Easter"}, titles: {"ar":"كسر البيض","as":"কণী যুঁজ","bar":"Oabeka","de":"Ostereiertitschen","el":"Τσούγκρισμα αβγών","en":"Egg tapping","es":"Combate con huevos","eu":"Arrautza-talka","hy":"Ձու ջարդոցի","it":"Combattimento con le uova","ja":"卵の戦い","nb":"Eggkamp","nn":"Eggkakking","pl":"Walatka","ru":"Битьё яиц","sr":"Туцање јајима","sv":"Äggpickning","tg":"Тухмбозӣ","uk":"Навбитки","vi":"Đập trứng","zh":"攻蛋"}, notes: {"en": "Egg Cracking Competition\nTsougrisma"}, urls: {"en": "https://www.daysoftheyear.com/days/egg-cracking-competition/"}, "//": "Does this even count as an event?"},
     ]
 }

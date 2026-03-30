@@ -10,7 +10,7 @@
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Victory Day", type: "D", start: {mon: 5, d: 8}},
+        {type: "D", start: {mon: 5, d: 8}, inherits: "Victory Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, urls: {"en": "https://nationaltoday.com/ascencion-day-saint-barthelemy/"}, inherits: "Ascension Day"},
         {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday", urls: {"en": "https://nationaltoday.com/whit-monday-saint-barthelemy/"}},
