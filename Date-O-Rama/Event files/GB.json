@@ -172,7 +172,7 @@
         {type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en": "Hats for Headway Day"}, urls: {"en": "https://www.headway.org.uk/about-headway/our-organisation/events-and-conferences/hats-for-headway-day"}, emoji: "👒", first: {era: 1, y: 2024}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "Natl Bug Busting Day"},
-        {type: "D", start: {mon: 6, d: 15}, urls: {"en": "https://www.beerdaybritain.co.uk/"}, titles: {"en": "Beer Day Britain"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 6, d: 15}, titles: {"en": "Beer Day Britain"}, urls: {"en": "https://www.beerdaybritain.co.uk/"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [6]}, inherits: "Natl Take Your Dog to Work Day", first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 6, d: 22, thruD: 28, wkd: [4]}, titles: {"en": "Reserves Day"}, urls: {"en": "https://nationaltoday.com/reserves-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Windrush Day"}, urls: {"en": "https://www.daysoftheyear.com/days/windrush-day/"}, first: {era: 1, y: 2018}},
