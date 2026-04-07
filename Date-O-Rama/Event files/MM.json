@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 2, d: 13}, inherits: "Children’s Day"},
         
-        {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 16}, titles: {"en": "Thingyan"}, urls: {"en": "https://www.officeholidays.com/holidays/myanmar/thingyan"}},
+        {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 16}, titles: {"blk":"သင်ႏကဲဉ်ႏ","bn":"থিংযান","de":"Atā Thingyan","en":"Thingyan","fr":"Thingyan","id":"Thingyan","it":"Capodanno birmano","ja":"ティンジャン","mnw":"သၚ်္ကြာန်","my":"သင်္ကြန်","ru":"Тинджан","th":"ตะจาน","tr":"Thingyan","uk":"Фестиваль Тінгіан","vi":"Thingyan"}, urls: {"en": "https://www.officeholidays.com/holidays/myanmar/thingyan"}},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "Burmese New Year"}, urls: {"en": "https://www.officeholidays.com/holidays/myanmar/burmese-new-years-day"}},
     ]
 }

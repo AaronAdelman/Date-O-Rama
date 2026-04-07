@@ -938,7 +938,7 @@
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Pet Tech CPR Day"}, urls: {"en": "https://nationaltoday.com/pet-tech-cpr-day/"}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "World Book Night"}, urls: {"en": "https://www.daysoftheyear.com/days/world-book-night/"}, first: {era: 1, y: 2012}, emoji: "📖🕯️"},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "World Laboratory Day"}, urls: {"en": "https://nationaltoday.com/world-laboratory-day/"}},
-        {type: "D", start: {mon: 4, d: 23}, titles: {"en": "World Table Tennis Day"}, urls: {"en": "https://ittffoundation.org/programmes/tt4all/world-table-tennis-day"}, first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 4, d: 23}, titles: {"en": "World Table Tennis Day"}, urls: {"en": "https://ittffoundation.org/programmes/tt4all/world-table-tennis-day"}, first: {era: 1, y: 2015}, notes: {"en": "Created by the International Table Tennis Federation"}},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 1919}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "Fashion Revolution Day"}, urls: {"en": "https://nationaldaycalendar.com/fashion-revolution-day-april-24/"}, first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "World Day for Laboratory Animals"}, notes: {"en": "World Day for Animals in Laboratories\nThis is an observance by people who do not understand that there are no realistic substitutes for laboratory animals in research or who care more about rats than humans."}, emoji: "🐁", first: {era: 1, y: 1979}},
