@@ -1055,6 +1055,13 @@
         {type: "D", start: {mon: 4, d: 12}, titles: {"en": "National Only Child Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-only-child-day/"}, emoji: "👦👧", first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 4, d: 13}, titles: {"en": "National Make Lunch Count Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-make-lunch-count-day/"}, first: {era: 1, y: 2016}, emoji: "🥗🥙🥪", notes: {"en": "Created by TGI Fridays"}},
         {type: "D", start: {mon: 4, d: 13}, titles: {"en": "National Peach Cobbler Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-peach-cobbler-day/"}, emoji: "🍑", first: {era: 1, y: 1950}},
+        {type: "D", start: {era: 1, y: 2017, mon: 4, d: 22}, inherits: "Record Store Day"},
+        {type: "D", start: {era: 1, y: 2021, mon: 6, d: 12}, inherits: "Record Store Day"},
+        {type: "D", start: {era: 1, y: 2025, mon: 4, d: 12}, inherits: "Record Store Day"},
+        {type: "D", start: {mon: 4, wkd: [7], d: 20, thruD: 23}, inherits: "Record Store Day", first: {era: 1, y: 2022}, last: {era: 1, y: 2024}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2008}, last: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2020}},
+        {type: "D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Record Store Day", first: {era: 1, y: 2026}},
         {type: "D", start: {mon: 4, d: 13}, titles: {"en": "National Scrabble Day", "he": "יום השבץ נא הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/scrabble-day/"}},
         {type: "D", start: {mon: 4, d: 13}, titles: {"en": "National Silly Earring Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-silly-earring-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Created by Olena Kagui"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "National Dolphin Day", "he": "יום הדולפין הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dolphin-day/"}, emoji: "🐬"},
@@ -2585,5 +2592,6 @@
         {template: "Girl Scout Cookie Weekend", type: "nD", start: {mon: 2, d: 15, thruD: 21, wkd: [6], durationD: 3}, titles: {"en": "Girl Scout Cookie Weekend"}, urls: {"en": "https://www.daysoftheyear.com/days/girl-scout-cookie-weekend/"}, emoji: "🍪", notes: {"en": "Created by the Girl Scouts of the USA"}, first: {era: 1, y: 2013}, last: {era: 1, y: 2022}},
         {template: "Telecommuter Appreciation Week", type: "nD", start: {mon: 2, d: 25, thruMon: 3, thruD: 3, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 3, thruD: 9, wkd: [7]}, titles: {"en": "Telecommuter Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/telecommuter-appreciation-week/"}, emoji: "👩‍💻", notes: {"en": "Created by the American Telecommuting Association (ATA)"}},
         {template: "Introduce a Girl to Engineering Day", type: "D", start: {mon: 2, wkd: [5], nth: 3}, titles: {"en": "Introduce a Girl to Engineering Day"}, urls: {"en": "https://discovere.org/programs/girl-day/"}, emoji: "👷‍♀️", notes: {"en": "Girl Day\nDiscoverE Girl Day\nCreated by DiscoverE"}},
+        {template: "Record Store Day", type: "D", start: {mon: 4, wkd: [7], nth: 3}, titles: {"be":"Дзень музычнай крамы","ca":"Record Store Day","da":"Record Store Day","de":"Record Store Day","en":"Record Store Day","es":"Record Store Day","fi":"Record Store Day","fr":"Record Store Day","ga":"Lá na siopaí ceirníní","hu":"Lemezboltok Napja","hy":"Երաժշտական խանութների օր","it":"Record Store Day","ja":"レコード・ストア・デイ","ko":"레코드 스토어 데이","ms":"Hari Kedai Rekod","nl":"Record Store Day","pt":"Record Store Day","ru":"День музыкального магазина","sv":"Skivaffärens dag","uk":"День магазину звукозапису","zh":"世界唱片店日"}, notes: {"en": "National Record Store Day"}, urls: {"en": "https://recordstoreday.com/"}, first: {era: 1, y: 2007}},
     ]
 }
