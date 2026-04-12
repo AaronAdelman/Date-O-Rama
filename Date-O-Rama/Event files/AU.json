@@ -22,6 +22,7 @@
         {type: "D", start: {mon: 7, d: 25}, inherits: "St. James"},
         {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {mon: 10, wkd: [1], nth: -1}, inherits: "Grandparents’ Day"},
+        {type: "D", start: {mon: 4, d: 19}, titles: {"en":"Youth Homelessness Matters Day","ff":"Youth Homelessness Matters Day","ig":"Ụbọchị Ndị Ntorobịa Na-enweghị Ebe Obibi"}, urls: {"en": "https://www.daysoftheyear.com/days/youth-homelessness-matters-day/"}, first: {era: 1, y: 1990}, emoji: "👦👧"},
         {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Holy Saturday"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 9, wkd: [2], d: 23, thruD: 29}, inherits: "King’s Birthday", locations: {"en": "Western Australia"}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/australia/western-australia/australia-kings-birthday"}},

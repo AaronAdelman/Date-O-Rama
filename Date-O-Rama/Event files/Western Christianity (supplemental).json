@@ -57,7 +57,7 @@
         {type: "D", start: {mon: 3, wkd: [5], nth: 3}, titles: {"en": "Oranges and Lemons Day"}, urls: {"en": "https://www.daysoftheyear.com/days/oranges-and-lemons-day/"}, notes: {"en": "Orange and Lemons Day\nCreated by St. Clement Danes Church"}, first: {era: 1, y: 1920}, emoji: "🍊🍋"},
         {type: "D", start: {mon: 3, wkd: [6], nth: 1}, titles: {"de":"Weltgebetstag","en":"World Day of Prayer","eo":"Monda tago de preĝo","fr":"Journée mondiale de prière","hr":"Svjetski molitveni dan","it":"Giornata mondiale di preghiera"}, urls: {"en": "https://www.daysoftheyear.com/days/world-day-of-prayer/"}, first: {era: 1, y: 1887}},
         {type: "D", start: {mon: 4, d: 10}, titles: {"en": "Salvation Army Founder’s Day"}, urls: {"en": "https://nationaltoday.com/salvation-army-founders-day/"}},
-        {type: "D", start: {mon: 4, d: 15}, titles: {"en": "Father Damien Day"}, urls: {"en": "https://nationaltoday.com/father-damien-day/"}},
+        {type: "D", start: {mon: 4, d: 15}, titles: {"en": "Father Damien Day"}, urls: {"en": "https://www.daysoftheyear.com/days/father-damien-day/"}, first: {era: 1, y: 1969}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "Coronation Day of Pope Benedict XVI"}, urls: {"en": "https://nationaltoday.com/coronation-day-of-pope-benedict-xvi/"}, first: {era: 1, y: 2005}, inherits: "*Coronation*"},
         {type: "D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-pro-life-t-shirt-day/"}, titles: {"en": "National Pro-Life T Shirt Day"}},
         {type: "D", start: {mon: 4, d: 30}, inherits: "Walpurgis Night"},
