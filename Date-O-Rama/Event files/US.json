@@ -766,5 +766,6 @@
         {template: "Alaska Day (in lieu)", type: "D", start: {mon: 10, d: 17, wkd: [6]}, titles: {"en":"Alaska Day (in lieu)","he":"יום אלסקה (במקומו)"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/alaska-day"}},
         {template: "Natl Robotics Week", type: "nD", start: {mon: 4, d: 2, thruD: 8, wkd: [2], durationD: 9}, titles: {"en": "National Robotics Week"}, urls: {"en": "https://www.nationalroboticsweek.org/"}, emoji: "⚙️", notes: {"en": "RoboWeek\nCreated by the US House of Representatives"}},
         {template: "Ag Day", type: "D", start: {mon: 3, d: 18, thruD: 24, wkd: [3]}, inherits: "Natl Agriculture Day", urls: {"en": "https://www.agday.org/"}, notes: {"en": "Created by the Agriculture Council of America (ACA)"}},
+        {template: "Days of Remembrance of the Victims of the Holocaust", type: "nD", start: {mon: 8, d: 21, thruD: 27, wkd: [1]}, end: {mon: 8, d: 28, thruM: 9, thruD: 4, wkd: [1]}, titles: {"de":"Days of Remembrance","en":"Days of Remembrance of the Victims of the Holocaust"}, notes: {"en": "DRVH"}, urls: {"en": "https://en.wikipedia.org/wiki/Days_of_Remembrance_of_the_Victims_of_the_Holocaust"}},
     ]
 }
