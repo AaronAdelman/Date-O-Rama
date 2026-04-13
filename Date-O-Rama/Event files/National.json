@@ -1091,8 +1091,8 @@
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "National Reveal the Genius Within Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-reveal-the-genius-within-day/"}, first: {era: 1, y: 2020}, notes: {"en": "Created by Lillian Guindy"}},
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "National Wear Your Pajamas to Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/wear-your-pajamas-to-work-day/"}, notes: {"en": "Wear Pajamas to Work Day\nCreated by PajamaGram"}, first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Cheeseball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheeseball-day/"}, notes: {"en": "National Cheese Ball Day"}},
-        {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Kickball Day"}, urls: {"en": "https://nationaltoday.com/national-kickball-day/"}, first: {era: 1, y: 2014}},
-        {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Mustang Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ford-mustang-day/"}, notes: {"en": "National Ford Mustang Day\nFord Mustang Day"}, emoji: "🚗", inherits: "*Remembrance*", first: {era: 1, y: 1964}},
+        {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Kickball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kickball-day/"}, first: {era: 1, y: 2014}, notes: {"en": "Created by WAKA (World Adult Kickball Assocation) Kickball & Social Sports"}},
+        {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Ford Mustang Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ford-mustang-day/"}, notes: {"en": "National Mustang Day\nFord Mustang Day"}, emoji: "🚗", inherits: "*Remembrance*", first: {era: 1, y: 1964}},
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "National Animal Crackers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/animal-crackers-day/"}},
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "National Columnists’ Day", "he": "יום העיתונאים הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/columnists-day/"}, notes: {"en": "National Newspaper Columnists Day", "he": "יום העיתונאים הלאומי"}, first: {era: 1, y: 1977}, emoji: "📰"},
         {type: "D", start: {mon: 4, d: 18}, titles: {"en": "National Exercise Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-exercise-day/"}, first: {era: 1, y: 2020}},
@@ -2479,11 +2479,17 @@
             {type: "D", start: {mon: 3, wkd: [2], nth: 3}, titles: {"en": "Wellderly Day"}, notes: {"en": "National Wellderly Day\nNational Well-Elderly Day\nCreated by Dr. Dale Anderson"}, urls: {"en": "https://www.daysoftheyear.com/days/wellderly-day/"}, emoji: "👴👵"},
         ]},
         
-        {type: "W", start: {mon: 4, fullWk: 2}, titles: {"en": "National Library Week"}, urls: {"en": "https://www.daysoftheyear.com/days/wellderly-week/"}, emoji: "📚", first: {era: 1, y: 2015}, overlappingSubEvents: [
-            {type: "D", start: {mon: 4, d: 10, thruD: 16, wkd: [3]}, titles: {"en": "National Library Workers Day"}, notes: {"en": "NLWD"}, urls: {"en": "https://ala-apa.org/nlwd/"}, first: {era: 1, y: 2003}, emoji: "📚"},
-            {type: "D", start: {mon: 4, d: 11, thruD: 17, wkd: [4]}, titles: {"en": "National Library Outreach Day"}, notes: {"en": "National Bookmobile Day"}, urls: {"en": "https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek/national-library-outreach-day"}, first: {era: 1, y: 2003}, emoji: "📚"},
-            {type: "D", start: {mon: 4, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "National Support Teen Literature Day"}, notes: {"en": "Support Teen Literature Day\nCelebrate Teen Literature Day"}, urls: {"en": "https://nationaltoday.com/national-support-teen-literature-day/"}, first: {era: 1, y: 2007}, emoji: "📚"},
-            {type: "D", start: {mon: 4, d: 12, thruD: 18, wkd: [5]}, titles: {"en": "Take Action for Libraries Day"}, urls: {"en": "https://www.checkiday.com/11e9b7621a3281baea1e2e6d370a78ae/take-action-for-libraries-day"}, first: {era: 1, y: 2017}, emoji: "📚"},
+        {type: "W", start: {mon: 4, fullWk: 2}, inherits: "Natl Library Week", first: {era: 1, y: 2015}, last: {era: 1, y: 2025}, overlappingSubEvents: [
+            {type: "D", start: {wkd: [3]}, inherits: "Natl Library Workers Day", first: {era: 1, y: 2003}},
+            {type: "D", start: {wkd: [4]}, inherits: "Natl Library Outreach Day", first: {era: 1, y: 2003}},
+            {type: "D", start: {wkd: [5]}, inherits: "Natl Support Teen Literature Day", first: {era: 1, y: 2007}},
+            {type: "D", start: {wkd: [5]}, inherits: "Take Action for Libraries Day", first: {era: 1, y: 2017}},
+        ]},
+        {type: "W", start: {mon: 4, fullWk: 3}, inherits: "Natl Library Week", first: {era: 1, y: 2026}, overlappingSubEvents: [
+            {type: "D", start: {wkd: [3]}, inherits: "Natl Library Workers Day", first: {era: 1, y: 2003}},
+            {type: "D", start: {wkd: [4]}, inherits: "Natl Library Outreach Day", first: {era: 1, y: 2003}},
+            {type: "D", start: {wkd: [5]}, inherits: "Natl Support Teen Literature Day", first: {era: 1, y: 2007}},
+            {type: "D", start: {wkd: [5]}, inherits: "Take Action for Libraries Day", first: {era: 1, y: 2017}},
         ]},
         
         {type: "W", start: {mon: 5, fullWk: 2, firstDOfWk: 2}, titles: {"en": "National Stationery Week"}, urls: {"en": "https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", nonoverlappingSubEvents: [
@@ -2597,5 +2603,10 @@
         {template: "Telecommuter Appreciation Week", type: "nD", start: {mon: 2, d: 25, thruMon: 3, thruD: 3, wkd: [1], yLengths: [365]}, end: {mon: 3, d: 3, thruD: 9, wkd: [7]}, titles: {"en": "Telecommuter Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/telecommuter-appreciation-week/"}, emoji: "👩‍💻", notes: {"en": "Created by the American Telecommuting Association (ATA)"}},
         {template: "Introduce a Girl to Engineering Day", type: "D", start: {mon: 2, wkd: [5], nth: 3}, titles: {"en": "Introduce a Girl to Engineering Day"}, urls: {"en": "https://discovere.org/programs/girl-day/"}, emoji: "👷‍♀️", notes: {"en": "Girl Day\nDiscoverE Girl Day\nCreated by DiscoverE"}},
         {template: "Record Store Day", type: "D", start: {mon: 4, wkd: [7], nth: 3}, titles: {"be":"Дзень музычнай крамы","ca":"Record Store Day","da":"Record Store Day","de":"Record Store Day","en":"Record Store Day","es":"Record Store Day","fi":"Record Store Day","fr":"Record Store Day","ga":"Lá na siopaí ceirníní","hu":"Lemezboltok Napja","hy":"Երաժշտական խանութների օր","it":"Record Store Day","ja":"レコード・ストア・デイ","ko":"레코드 스토어 데이","ms":"Hari Kedai Rekod","nl":"Record Store Day","pt":"Record Store Day","ru":"День музыкального магазина","sv":"Skivaffärens dag","uk":"День магазину звукозапису","zh":"世界唱片店日"}, notes: {"en": "National Record Store Day"}, urls: {"en": "https://recordstoreday.com/"}, first: {era: 1, y: 2007}},
+        {template: "Natl Library Workers Day", type: "D", start: {wkd: [3]}, titles: {"en": "National Library Workers Day"}, notes: {"en": "NLWD"}, urls: {"en": "https://ala-apa.org/nlwd/"}, emoji: "📚"},
+        {template: "Natl Library Outreach Day", type: "D", start: {wkd: [4]}, titles: {"en": "National Library Outreach Day"}, notes: {"en": "National Bookmobile Day"}, urls: {"en": "https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek/national-library-outreach-day"}, emoji: "📚"},
+        {template: "Natl Support Teen Literature Day", type: "D", start: {wkd: [5]}, titles: {"en": "National Support Teen Literature Day"}, notes: {"en": "Support Teen Literature Day\nCelebrate Teen Literature Day"}, urls: {"en": "https://nationaltoday.com/national-support-teen-literature-day/"}, emoji: "📚"},
+        {template: "Take Action for Libraries Day", type: "D", start: {wkd: [5]}, titles: {"en": "Take Action for Libraries Day"}, urls: {"en": "https://www.checkiday.com/11e9b7621a3281baea1e2e6d370a78ae/take-action-for-libraries-day"}, emoji: "📚"},
+        {template: "Natl Library Week", type: "W", start: {mon: 4, fullWk: 2}, titles: {"en": "National Library Week"}, urls: {"en": "https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek"}, notes: {"en": "Libraries Week"}}
     ]
 }
