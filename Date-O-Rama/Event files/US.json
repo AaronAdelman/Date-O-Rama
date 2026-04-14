@@ -291,7 +291,7 @@
         {type: "D", start: {mon: 4, d: 16}, titles: {"en": "Selena Day"}, urls: {"en": "https://www.daysoftheyear.com/days/selena-day/"}, first: {era: 1, y: 1995}, inherits: "*BDay*", notes: {"en": "Created by George W. Bush"}},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "National Ellis Island Family History Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-ellis-island-family-history-day/"}, first: {era: 1, y: 2001}, emoji: "🗽"},
         {type: "D", start: {mon: 4, d: 17}, titles: {"en": "2A Day"}, urls: {"en": "https://www.daysoftheyear.com/days/2a-day/"}, first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 4, d: 18}, titles: {"en": "National Lineman Appreciation Day"}, urls: {"en": "http://www.linemanappreciationday.com/"}, first: {era: 1, y: 2013}},
+        {type: "D", start: {mon: 4, d: 18}, titles: {"en": "National Lineman Appreciation Day"}, urls: {"en": "http://www.linemanappreciationday.com/"}, first: {era: 1, y: 2013}, notes: {"en": "Created by the US Congress"}},
         {type: "D", start: {mon: 4, d: 19}, titles: {"en": "Dutch-American Friendship Day"}, urls: {"en": "https://nlintheusa.com/dutch-american-friendship-day/"}, first: {era: 1, y: 1982}, emoji: "🇳🇱🇺🇸"},
         {type: "D", start: {mon: 4, d: 2}, titles: {"en": "Pascua Florida Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pascua-florida-day/"}, first: {era: 1, y: 1953}, notes: {"en": "Created by Mary A. Harrell"}},
         {type: "D", start: {mon: 4, d: 22}, titles: {"en": "Oklahoma Day", "he": "יום אוקלהומה"}, urls: {"en": "https://nationaltoday.com/oklahoma-day/"}},

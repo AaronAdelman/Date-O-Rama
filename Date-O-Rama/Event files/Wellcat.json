@@ -47,7 +47,7 @@
             {type: "D", start: {mon: 4, d: 8}, titles: {"en": "Trading Cards for Grown-ups Day"}},
             {type: "D", start: {mon: 4, d: 12}, titles: {"en": "Walk on Your Wild Side Day"}},
             {type: "D", start: {mon: 4, d: 17}, titles: {"en": "Blah Blah Blah Day", "he": "יום הבלה בלה בלה"}},
-            {type: "D", start: {mon: 4, d: 18}, titles: {"en": "Pet Owner’s Independence Day"}},
+            {type: "D", start: {mon: 4, d: 18}, titles: {"en": "Pet Owner’s Independence Day"}, notes: {"en": "Pet Owners Independence Day"}},
             {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Hug an Australian Day"}},
             {type: "D", start: {mon: 5, d: 6}, titles: {"en": "No Homework Day"}},
             {type: "D", start: {mon: 5, d: 8}, titles: {"en": "No Socks Day"}},
