@@ -11,5 +11,6 @@
         {type: "D", start: {mon: 12, wkd: [2], nth: 1}, inherits: "Walt Disney Day", first: {era: 1, y: 1986}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en": "Donald Duck Day", "he": "יום דונלד דאק"}, urls: {"en": "https://www.checkiday.com/1c32c83a7b9565f0ec103dbd9ea00d00/donald-duck-day"}, inherits: "*BDay*", first: {era: 1, y: 1934}, emoji: "🦆"},
         {type: "D", start: {mon: 6, d: 9}, titles: {"en": "National Donald Duck Day", "he": "יום הולדת לדונלד דאק"}, urls: {"en": "https://www.daysoftheyear.com/days/donald-duck-day/"}, inherits: "*BDay*", first: {era: 1, y: 1934}},
+        {type: "W", start: {mon: 4, fullWk: -1}, titles: {"en": "National Princess Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-princess-week/"}, first: {era: 1, y: 2012}, emoji: "👸", notes: {"en": "Created by Disney, Target, and Julie Andrews"}},
     ]
 }
