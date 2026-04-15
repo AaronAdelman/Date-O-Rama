@@ -1,7 +1,7 @@
 {
     titles: {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
@@ -36,7 +36,6 @@
         {type: "D", start: {mon: 4, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/mahatma-jyotiba-phule-jayanti"}, titles: {"en": "Mahatma Jyotiba Phule Jayanti"}, inherits: "*BDay*", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 4, d: 13}, end: {mon: 4, d: 15}, titles: {"en": "Biju Festival"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tripura/biju-festival"}, notes: {"en": "Bishu\nBizu"}},
         {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Dr. Babasaheb Ambedkar Jayanti"}, notes: {"en": "Bhim Jayanti\nDr. Ambedkar Jayanti"}, urls: {"en": "https://en.wikipedia.org/wiki/Ambedkar_Jayanti"}},
-        {type: "D", start: {mon: 4, d: 14}, titles: {"en": "Tamil New Year"}, urls: {"en": "https://www.officeholidays.com/holidays/india/tamil-new-year"}},
         {type: "D", start: {mon: 4, d: 15}, titles: {"en": "Himachal Day"}, urls: {"en": "https://www.officeholidays.com/holidays/india/himachal-pradesh/himachal-day"}},
         {type: "D", start: {mon: 4, d: 21}, titles: {"en": "Sati Sadhani Divas"}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/sati-sadhani-divas"}},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "Khongjom Day"}, urls: {"en": "https://www.officeholidays.com/holidays/india/manipur/khongjom-day"}},
