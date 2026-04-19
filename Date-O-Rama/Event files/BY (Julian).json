@@ -9,6 +9,6 @@
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {titles: {"en": "Radonitsa", "be": "Радунiца"}, type: "D", start: {Easter: "Easter", offsetD: 9}, urls: {"en": "https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en": "Day of Rejoicing\nCommemoration Day"}},
+        {titles: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, type: "D", start: {Easter: "Easter", offsetD: 9}, urls: {"en": "https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en": "Day of Rejoicing\nCommemoration Day"}},
     ]
 }
