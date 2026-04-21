@@ -1143,6 +1143,7 @@
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National Picnic Day", "he": "יום הפיקניק הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/national-picnic-day/"}, emoji: "🧺"},
         {type: "D", start: {mon: 4, d: 23}, titles: {"en": "National Take a Chance Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-take-a-chance-day/"}},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Pig in a Blanket Day", "he": "יום משה בתיבה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/pig-in-a-blanket-day/"}, notes: {"en": "National Pigs in a Blanket Day\nNational Pigs-in-a-Blanket Day"}},
+        {type: "D", start: {mon: 4, d: 24}, titles: {"en": "National Pet Care for All Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pet-care-for-all-day/"}, notes: {"en": "Created by the East Bay SPCA"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "Natl Hairstylist Appreciation Day"},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "License Plates Day"}, urls: {"en": "https://nationaltoday.com/license-plates-day/"}},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "National Crayola Day"}, urls: {"en": "https://www.checkiday.com/bf43c01f1dcab12d797579c5309c5b32/national-crayola-day"}, first: {era: 1, y: 2011}},
