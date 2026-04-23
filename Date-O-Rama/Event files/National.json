@@ -1152,7 +1152,7 @@
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "National Mani-Pedi Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-mani-pedi-day/"}, notes: {"en": "This is a somewhat fashion-related event, even though humans practically need to trim their nails periodically."}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "National Telephone Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-telephone-day/"}, emoji: "☎️"},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "National Zucchini Bread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/zucchini-bread-day/"}},
-        {type: "D", start: {mon: 4, d: 25}, titles: {"en": "Parental Alienation Awareness Day"}, urls: {"en": "http://www.paawarenessday.com/"}, notes: {"en": "National Parental Alienation Awareness Day"}, first: {era: 1, y: 2006}, emoji: "🌷🦋"},
+        {type: "D", start: {mon: 4, d: 25}, titles: {"en": "Parental Alienation Awareness Day"}, urls: {"en": "http://www.paawarenessday.com/"}, notes: {"en": "National Parental Alienation Awareness Day\nCreated by the Parental Alienation Awareness Organization (PAAO)"}, first: {era: 1, y: 2006}, emoji: "🌷🦋"},
         {type: "D", start: {mon: 4, d: 25}, titles: {"en": "Red Hat Society Day"}, urls: {"en": "https://www.daysoftheyear.com/days/red-hat-society-day/"}, first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Audubon Day"}, urls: {"en": "https://www.daysoftheyear.com/days/audubon-day/"}, notes: {"en": "National Audubon Day"}, emoji: "🌷🦆"},
         {type: "D", start: {mon: 4, d: 26}, titles: {"en": "National Garage Day"}, urls: {"en": "https://nationaltoday.com/national-garage-day/"}, first: {era: 1, y: 2020}},
