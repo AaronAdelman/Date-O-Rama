@@ -87,6 +87,7 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {mon: 4, d: 19}, inherits: "Patriots’ Day", first: {era: 1, y: 1894}, locations: {"en": "Florida and Wisconsin", "he": "פלורידה וויסקונסין"}},
+        {type: "D", start: {mon: 4, d: 27}, titles: {"en": "Marine Mammal Rescue Day"}, urls: {"en": "https://www.daysoftheyear.com/days/marine-mammal-rescue-day/"}, first: {era: 1, y: 2017}, emoji: "🦭", notes: {"en": "Created by Toni Atkins"}},
         {type: "D", start: {mon: 4, wkd: [2], nth: 3}, inherits: "Patriots’ Day", first: {era: 1, y: 1894}, locations: {"en": "Connecticut, Maine, Massachusetts, North Dakota", "he": "קונטיקט, מיין, מסצ׳וסטס, דקוטה הצפונית"}},
         {type: "D", start: {mon: 7, d: 24}, inherits: "Pioneer Day", first: {era: 1, y: 1949}},
         {type: "D", start: {mon: 10, d: 15}, inherits: "Pregnancy and Infant Loss Remembrance Day", first: {era: 1, y: 2001}},
