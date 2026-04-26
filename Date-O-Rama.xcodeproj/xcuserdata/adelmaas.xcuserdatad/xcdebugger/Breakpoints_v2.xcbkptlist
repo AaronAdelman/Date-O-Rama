@@ -18,36 +18,6 @@
             endingLineNumber = "249"
             landmarkName = "templateEventSpecification(for:eventsFileTemplates:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0F3BD254-6467-4E7A-96AA-00CF23481B1A - 48942b28b3620e89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAEventSpecification.templateEventSpecification(for: Date_O_Rama.ASAEventSpecification, eventsFileTemplates: Swift.Optional&lt;Swift.Array&lt;Date_O_Rama.ASAEventSpecification&gt;&gt;) -&gt; Swift.Optional&lt;Date_O_Rama.ASAEventSpecification&gt;"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventSpecification.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "249"
-                  endingLineNumber = "249">
-               </Location>
-               <Location
-                  uuid = "0F3BD254-6467-4E7A-96AA-00CF23481B1A - f7613a703fa5b0dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_RamaTests.ASAEventSpecification.templateEventSpecification(for: Date_O_RamaTests.ASAEventSpecification, eventsFileTemplates: Swift.Optional&lt;Swift.Array&lt;Date_O_RamaTests.ASAEventSpecification&gt;&gt;) -&gt; Swift.Optional&lt;Date_O_RamaTests.ASAEventSpecification&gt;"
-                  moduleName = "Date-O-RamaTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventSpecification.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "249"
-                  endingLineNumber = "249">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,36 +76,6 @@
             endingLineNumber = "22"
             landmarkName = "init(calendarCode:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "53D30184-6E73-4025-A274-EE00769FF65F - cbaf99f1de813dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_Rama.ASAJudeoIslamicCalendar.init(calendarCode: Date_O_Rama.ASACalendarCode) -&gt; Date_O_Rama.ASAJudeoIslamicCalendar"
-                  moduleName = "Date-O-Rama.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJudeoIslamicCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-               <Location
-                  uuid = "53D30184-6E73-4025-A274-EE00769FF65F - 285af357fe1a6284"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Date_O_RamaTests.ASAJudeoIslamicCalendar.init(calendarCode: Date_O_RamaTests.ASACalendarCode) -&gt; Date_O_RamaTests.ASAJudeoIslamicCalendar"
-                  moduleName = "Date-O-RamaTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Calendars/ASAJudeoIslamicCalendar.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
