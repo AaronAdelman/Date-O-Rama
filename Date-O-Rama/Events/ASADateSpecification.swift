@@ -96,7 +96,7 @@ struct ASADateSpecification:  Codable {
         case hour                = "h"
         case minute              = "min"
         case second              = "s"
-//        case nanosecond          = "ns"
+        case nanosecond          = "ns"
         case weekdays            = "wkd"
         case recurrence          = "nth"
         case lengthsOfMonth      = "monLengths"
