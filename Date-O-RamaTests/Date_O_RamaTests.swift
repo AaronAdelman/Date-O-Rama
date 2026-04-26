@@ -68,50 +68,50 @@ class Date_O_RamaTests: XCTestCase {
     } // func examineJulianDayCalendar(code:  ASACalendarCode, expectedResult:  String)
     
     func testHebrewNumerals() throws {
-        XCTAssert(1.HebrewNumeral == "א׳")
-        XCTAssert(2.HebrewNumeral == "ב׳")
-        XCTAssert(3.HebrewNumeral == "ג׳")
-        XCTAssert(4.HebrewNumeral == "ד׳")
-        XCTAssert(5.HebrewNumeral == "ה׳")
-        XCTAssert(6.HebrewNumeral == "ו׳")
-        XCTAssert(7.HebrewNumeral == "ז׳")
-        XCTAssert(8.HebrewNumeral == "ח׳")
-        XCTAssert(9.HebrewNumeral == "ט׳")
-        XCTAssert(10.HebrewNumeral == "י׳")
-        XCTAssert(11.HebrewNumeral == "י״א")
-        XCTAssert(12.HebrewNumeral == "י״ב")
-        XCTAssert(13.HebrewNumeral == "י״ג")
-        XCTAssert(14.HebrewNumeral == "י״ד")
-        XCTAssert(15.HebrewNumeral == "ט״ו")
-        XCTAssert(16.HebrewNumeral == "ט״ז")
-        XCTAssert(17.HebrewNumeral == "י״ז")
-        XCTAssert(18.HebrewNumeral == "י״ח")
-        XCTAssert(19.HebrewNumeral == "י״ט")
-        XCTAssert(20.HebrewNumeral == "כ׳")
-        XCTAssert(21.HebrewNumeral == "כ״א")
-        XCTAssert(22.HebrewNumeral == "כ״ב")
-        XCTAssert(23.HebrewNumeral == "כ״ג")
-        XCTAssert(24.HebrewNumeral == "כ״ד")
-        XCTAssert(25.HebrewNumeral == "כ״ה")
-        XCTAssert(26.HebrewNumeral == "כ״ו")
-        XCTAssert(27.HebrewNumeral == "כ״ז")
-        XCTAssert(28.HebrewNumeral == "כ״ח")
-        XCTAssert(29.HebrewNumeral == "כ״ט")
-        XCTAssert(30.HebrewNumeral == "ל׳")
+        XCTAssert(1.hebrewNumeral == "א׳")
+        XCTAssert(2.hebrewNumeral == "ב׳")
+        XCTAssert(3.hebrewNumeral == "ג׳")
+        XCTAssert(4.hebrewNumeral == "ד׳")
+        XCTAssert(5.hebrewNumeral == "ה׳")
+        XCTAssert(6.hebrewNumeral == "ו׳")
+        XCTAssert(7.hebrewNumeral == "ז׳")
+        XCTAssert(8.hebrewNumeral == "ח׳")
+        XCTAssert(9.hebrewNumeral == "ט׳")
+        XCTAssert(10.hebrewNumeral == "י׳")
+        XCTAssert(11.hebrewNumeral == "י״א")
+        XCTAssert(12.hebrewNumeral == "י״ב")
+        XCTAssert(13.hebrewNumeral == "י״ג")
+        XCTAssert(14.hebrewNumeral == "י״ד")
+        XCTAssert(15.hebrewNumeral == "ט״ו")
+        XCTAssert(16.hebrewNumeral == "ט״ז")
+        XCTAssert(17.hebrewNumeral == "י״ז")
+        XCTAssert(18.hebrewNumeral == "י״ח")
+        XCTAssert(19.hebrewNumeral == "י״ט")
+        XCTAssert(20.hebrewNumeral == "כ׳")
+        XCTAssert(21.hebrewNumeral == "כ״א")
+        XCTAssert(22.hebrewNumeral == "כ״ב")
+        XCTAssert(23.hebrewNumeral == "כ״ג")
+        XCTAssert(24.hebrewNumeral == "כ״ד")
+        XCTAssert(25.hebrewNumeral == "כ״ה")
+        XCTAssert(26.hebrewNumeral == "כ״ו")
+        XCTAssert(27.hebrewNumeral == "כ״ז")
+        XCTAssert(28.hebrewNumeral == "כ״ח")
+        XCTAssert(29.hebrewNumeral == "כ״ט")
+        XCTAssert(30.hebrewNumeral == "ל׳")
     } // func testHebrewNumerals() throws
 
     func testJulianDates() throws {
-        XCTAssert(testDate.JulianDate == 2459199.95625)
+        XCTAssert(testDate.julianDate == 2459199.95625)
 
-        examineJulianDayCalendar(code: .JulianDay, expectedResult: "2459199.956250")
-        examineJulianDayCalendar(code: .ReducedJulianDay, expectedResult: "59199.956250")
-        examineJulianDayCalendar(code: .ModifiedJulianDay, expectedResult: "59199.456250")
-        examineJulianDayCalendar(code: .TruncatedJulianDay, expectedResult: "19199")
-        examineJulianDayCalendar(code: .DublinJulianDay, expectedResult: "44179.956250")
-        examineJulianDayCalendar(code: .CNESJulianDay, expectedResult: "25917.456250")
-        examineJulianDayCalendar(code: .CCSDSJulianDay, expectedResult: "22995.456250")
-        examineJulianDayCalendar(code: .LilianDate, expectedResult: "160040")
-        examineJulianDayCalendar(code: .RataDie, expectedResult: "737775")
+        examineJulianDayCalendar(code: .julianDay, expectedResult: "2459199.956250")
+        examineJulianDayCalendar(code: .reducedJulianDay, expectedResult: "59199.956250")
+        examineJulianDayCalendar(code: .modifiedJulianDay, expectedResult: "59199.456250")
+        examineJulianDayCalendar(code: .truncatedJulianDay, expectedResult: "19199")
+        examineJulianDayCalendar(code: .dublinJulianDay, expectedResult: "44179.956250")
+        examineJulianDayCalendar(code: .cnesJulianDay, expectedResult: "25917.456250")
+        examineJulianDayCalendar(code: .ccsdsJulianDay, expectedResult: "22995.456250")
+        examineJulianDayCalendar(code: .lilianDate, expectedResult: "160040")
+        examineJulianDayCalendar(code: .rataDie, expectedResult: "737775")
     } // func testJulianDates() throws
     
     func testMatchingNumbers() throws {
@@ -134,7 +134,7 @@ class Date_O_RamaTests: XCTestCase {
         //        let BCE = 0
         let CE = 1
         
-        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.nullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .gregorian)!, locationData: ASALocation.nullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
         let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         
@@ -766,7 +766,7 @@ class Date_O_RamaTests: XCTestCase {
     }
     
 //    func testEventMatching() throws {
-//        let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+//        let calendar = ASACalendarFactory.calendar(code: .hebrewGRA)!
 //        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
 //        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
 ////        let calendarTitle = "יהדות"
@@ -1148,8 +1148,72 @@ class Date_O_RamaTests: XCTestCase {
     
     func testPisces() throws {
         // This test checks whether multi-months are working right.  The Pisces event for the Jewish zodiac event calendars was reporting no end date, leading to a debugging session to find and fix the problem.
-        let startDateSpecification = ASADateSpecification(pointEventType: nil, era: nil, year: nil, month: 6, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
-        let endDateSpecification: ASADateSpecification = ASADateSpecification(pointEventType: nil, era: nil, year: nil, month: 7, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
+        let startDateSpecification = ASADateSpecification(
+            pointEventType: nil,
+            era: nil,
+            year: nil,
+            month: 6,
+            day: nil,
+            hour: nil,
+            minute: nil,
+            second: nil,
+            nanosecond: nil,
+            weekdays: nil,
+            lengthsOfMonth: nil,
+            lengthsOfYear: [383, 384, 385],
+            dayOfYear: nil,
+            yearDivisor: nil,
+            yearRemainder: nil,
+            offsetDays: nil,
+            throughDay: nil,
+            degreesBelowHorizon: nil,
+            rising: nil,
+            offset: nil,
+            solarHours: nil,
+            dayHalf: nil,
+            body: nil,
+            calculationMethod: nil,
+            asrJuristicMethod: nil,
+            adjustingMethodForHigherLatitudes: nil,
+            dhuhrMinutes: nil,
+            Easter: nil,
+            equinoxOrSolstice: nil,
+            timeChange: nil,
+            moonPhase: nil
+        )
+        let endDateSpecification: ASADateSpecification = ASADateSpecification(
+            pointEventType: nil,
+            era: nil,
+            year: nil,
+            month: 7,
+            day: nil,
+            hour: nil,
+            minute: nil,
+            second: nil,
+            nanosecond: nil,
+            weekdays: nil,
+            lengthsOfMonth: nil,
+            lengthsOfYear: [383, 384, 385],
+            dayOfYear: nil,
+            yearDivisor: nil,
+            yearRemainder: nil,
+            offsetDays: nil,
+            throughDay: nil,
+            degreesBelowHorizon: nil,
+            rising: nil,
+            offset: nil,
+            solarHours: nil,
+            dayHalf: nil,
+            body: nil,
+            calculationMethod: nil,
+            asrJuristicMethod: nil,
+            adjustingMethodForHigherLatitudes: nil,
+            dhuhrMinutes: nil,
+            Easter: nil,
+            equinoxOrSolstice: nil,
+            timeChange: nil,
+            moonPhase: nil
+        )
         let filledInStartDateEYM: Array<Int?> = [0, 5782, 6]
         let filledInEndDateEYM: Array<Int?> = [0, 5782, 7]
         
@@ -1164,15 +1228,15 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(tweakedEndDateSpecification.year == 5782)
         XCTAssert(tweakedEndDateSpecification.month == 7)
         
-        let calendar: ASACalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let calendar: ASACalendar = ASACalendarFactory.calendar(code: .hebrewGRA)!
         let date = GregorianDate(era: 1, year: 2021, month: 3, day: 3, hour: 16, minute: 8, second: 31, secondsFromGMT: 2 * 60 * 60)
         let timeZone = TimeZone(identifier: "Asia/Jerusalem")!
-        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone, type: .EarthLocation)
+        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone, type: .earthLocation)
 
         let components: ASADateComponents = ASADateComponents(calendar: calendar, locationData: location, era: 0, year: 5782, yearForWeekOfYear: nil, quarter: nil, month: 6, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 5, weekdayOrdinal: nil, day: 30, hour: 12, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
 
-        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date, type: .multiMonth)
-        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date, type: .multiMonth)
+        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date, type: ASAEventSpecificationType.multiMonth)
+        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date, type: ASAEventSpecificationType.multiMonth)
         
         debugPrint(#file, #function, startDate as Any, endDate as Any)
         XCTAssert(startDate != nil)
@@ -1186,7 +1250,7 @@ class Date_O_RamaTests: XCTestCase {
         let eventStartDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 11, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         let eventEndDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         
-        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitle: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.nullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
+        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitle: "Foo", calendarCode: .hebrewGRA, locationData: ASALocation.nullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
         
         XCTAssertFalse(event.relevant(startDate: startDate, endDate: endDate))
     }
@@ -1196,10 +1260,10 @@ class Date_O_RamaTests: XCTestCase {
         let date = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 12, minute: 00, second: 00, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         let previousEvents = previousDate.solarEvents(location: location, events: [ASASolarEvent.sunrise, ASASolarEvent.sunset], timeZone: timeZone)
         let events = date.solarEvents(location: location, events: [ASASolarEvent.sunrise, ASASolarEvent.sunset], timeZone: timeZone)
-        let previousSunrise: Date? = previousEvents[.sunrise]
-        let previousSunset: Date? = previousEvents[.sunset]
-        let sunrise: Date? = events[.sunrise]
-        let sunset: Date? = events[.sunset]
+        let previousSunrise: Date? = previousEvents[.sunrise] ?? nil
+        let previousSunset: Date? = previousEvents[.sunset] ?? nil
+        let sunrise: Date? = events[.sunrise] ?? nil
+        let sunset: Date? = events[.sunset] ?? nil
         debugPrint("🔹 \(name):", "Offset from GMT:", Double(timeZone.secondsFromGMT(for: date))/Date.SECONDS_PER_HOUR, "Previous Sunrise:", previousSunrise!, "Previous Sunset:", previousSunset!, "Sunrise:", sunrise!, "Sunset:", sunset!)
     }
     
@@ -1271,7 +1335,7 @@ class Date_O_RamaTests: XCTestCase {
     
     func testMarsSolDate() throws {
         let date = GregorianDate(era: 1, year: 2022, month: 7, day: 13, hour: 13, minute: 39, second: 0, secondsFromGMT: 0)
-        let MSD: Double = date.MarsSolDate
+        let MSD: Double = date.marsSolDate
         let reverseDate = Date.date(MarsSolDate: MSD)
         let error: TimeInterval = date.timeIntervalSince(reverseDate)
         debugPrint(#file, #function, date, MSD, reverseDate, error)
@@ -1284,9 +1348,9 @@ class Date_O_RamaTests: XCTestCase {
 //
 //        let saintLouisCLLocation = CLLocation(latitude: 38.627222, longitude: -90.197778)
 //        let saintLouisTimeZone: TimeZone = TimeZone(secondsFromGMT: saintLouisSecondsFromGMT)!
-//        let saintLouisLocation = ASALocation(id: UUID(), location: saintLouisCLLocation, name: "Saint Louis", locality: "Missouri", country: "United States", regionCode: "US", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: saintLouisTimeZone, type: .EarthLocation)
+//        let saintLouisLocation = ASALocation(id: UUID(), location: saintLouisCLLocation, name: "Saint Louis", locality: "Missouri", country: "United States", regionCode: "US", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: saintLouisTimeZone, type: .earthLocation)
 //
-//        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+//        let hebrewCalendar = ASACalendarFactory.calendar(code: .hebrewGRA)!
 //        let localeIdentifier = "he_IL"
 //        let dateFormat = ASADateFormat.full
 //        let timeFormat = ASATimeFormat.decimalTwelveHour
@@ -1303,9 +1367,9 @@ class Date_O_RamaTests: XCTestCase {
         
         let pethaḥTiqwahCLLocation = CLLocation(latitude: 32.088889, longitude: 34.886389)
         let pethaḥTiqwahTimeZone: TimeZone = TimeZone(secondsFromGMT: pethaḥTiqwahSecondsFromGMT)!
-        let pethaḥTiqwahLocation = ASALocation(id: UUID(), location: pethaḥTiqwahCLLocation, name: "פתח תקווה", locality: "", country: "Israel", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: pethaḥTiqwahTimeZone, type: .EarthLocation)
+        let pethaḥTiqwahLocation = ASALocation(id: UUID(), location: pethaḥTiqwahCLLocation, name: "פתח תקווה", locality: "", country: "Israel", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: pethaḥTiqwahTimeZone, type: .earthLocation)
         
-        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let hebrewCalendar = ASACalendarFactory.calendar(code: .hebrewGRA)!
         let localeIdentifier = "he_IL"
         let dateFormat = ASADateFormat.full
         let timeFormat = ASATimeFormat.decimalTwelveHour
@@ -1324,9 +1388,9 @@ class Date_O_RamaTests: XCTestCase {
         
         let pethaḥTiqwahCLLocation = CLLocation(latitude: 32.088889, longitude: 34.886389)
         let pethaḥTiqwahTimeZone: TimeZone = TimeZone(secondsFromGMT: pethaḥTiqwahSecondsFromGMT)!
-        let pethaḥTiqwahLocation = ASALocation(id: UUID(), location: pethaḥTiqwahCLLocation, name: "פתח תקווה", locality: "", country: "Israel", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: pethaḥTiqwahTimeZone, type: .EarthLocation)
+        let pethaḥTiqwahLocation = ASALocation(id: UUID(), location: pethaḥTiqwahCLLocation, name: "פתח תקווה", locality: "", country: "Israel", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: pethaḥTiqwahTimeZone, type: .earthLocation)
         
-        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let hebrewCalendar = ASACalendarFactory.calendar(code: .hebrewGRA)!
         let localeIdentifier = "he_IL"
         let dateFormat = ASADateFormat.full
         let timeFormat = ASATimeFormat.decimalTwelveHour
