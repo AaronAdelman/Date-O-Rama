@@ -12,11 +12,11 @@ import SwiftAA
 enum ASAMoonPhase: String, Codable {
     case none           = "none"
     case newMoon        = "new"
-    case firstQuarter   = "1stQuarter"
+    case firstQuarter   = "1stQ"
     case fullMoon       = "full"
-    case lastQuarter    = "lastQuarter"
-    case firstFullMoon  = "1stFull" // Requires a month
-    case secondFullMoon = "2ndFull" // Requires a month
+    case lastQuarter    = "lastQ"
+    case firstFullMoon  = "full1" // Requires a month
+    case secondFullMoon = "full2" // Requires a month
 } // enum ASAMoonPhase
 
 extension ASAMoonPhase {

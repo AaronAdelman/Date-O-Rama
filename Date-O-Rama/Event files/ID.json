@@ -94,6 +94,6 @@
         {type: "D", start: {era: 1, y: 2020, mon: 12, d: 9}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/indonesia/indonesia-regional-elections"}},
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 27}, inherits: "Public Holiday", urls: {"en": "https://www.officeholidays.com/holidays/indonesia/indonesia-regional-elections"}},
         
-        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 2024}},
+        {type: "D", start: {zmoPhase: "full1", mon: 5}, inherits: "Vesak", first: {era: 1, y: 2024}},
     ]
 }

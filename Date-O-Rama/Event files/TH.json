@@ -26,7 +26,7 @@
         {type: "D", start: {era: 1, y: 2023, mon: 5, d: 17}, inherits: "Royal Ploughing Ceremony"},
         {type: "D", start: {era: 1, y: 2024, mon: 5, d: 10}, inherits: "Royal Ploughing Ceremony"},
         {type: "D", start: {era: 1, y: 2025, mon: 5, d: 9}, inherits: "Royal Ploughing Ceremony"},
-        {type: "D", start: {"zmoPhase": "1stFull", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
+        {type: "D", start: {zmoPhase: "full1", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 6, d: 2, wkd: [2]}, inherits: "H.M. Queen’s Birthday (in lieu)", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, d: 3}, inherits: "*BDay*", titles: {"en": "H.M. Queen’s Birthday", "th": "วันเฉลิมพระชนมพรรษาสมเด็จพระนางเจ้าสุทิดา พัชรสุธาพิมลลักษณ พระบรมราชินี"}, urls: {"en": "https://nationaltoday.com/h-m-queens-birthday/"}, first: {era: 1, y: 2019}, notes: {"en": "Queen Suthida’s Birthday"}},
         {type: "D", start: {mon: 6, d: 5, wkd: [2]}, inherits: "H.M. Queen’s Birthday (in lieu)", first: {era: 1, y: 2019}},
