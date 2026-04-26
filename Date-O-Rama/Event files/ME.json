@@ -10,7 +10,7 @@
     events: [{type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 2, wkd: [1, 2, 3]}, urls: {"en": "https://www.officeholidays.com/holidays/montenegro/labour-day"}, titles: {"en": "Labour Day (2nd day)"}},
-        {type: "nD", start: {mon: 5, d: 21, durationD: 2}, inherits: "Independence Day"},
+        {type: "nD", start: {mon: 5, d: 21, durD: 2}, inherits: "Independence Day"},
         {type: "D", start: {mon: 5, d: 23, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/montenegro/montenegro-independence-day"}, inherits: "Independence Day Holiday"},
         {type: "D", start: {mon: 5, d: 24, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/montenegro/montenegro-independence-day"}, inherits: "Independence Day Holiday"},
         {type: "D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-montenegro/"}, inherits: "Statehood Day", first: {era: 1, y: 1878}, notes: {"en": "Sovereignty Day"}},

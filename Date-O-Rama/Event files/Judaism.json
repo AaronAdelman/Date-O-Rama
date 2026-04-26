@@ -589,7 +589,7 @@
         {type: "D", start: {mon: 10, d: 1}, titles: {"he": "חג החינוך"}, urls: {"he": "https://haluzhaivri.org.il/page/30481"}},
 
         
-        {type: "c", start: {era: 0, y: 5780, mon: 4, d: 8, recurrenceD: 2711}, titles: {"he": "דף יומי:  [[subtitle]] [[subindex]]", "en": "Daf Yomi:  [[subtitle]] [[subindex]]"}, cRanges: [
+        {type: "c", start: {era: 0, y: 5780, mon: 4, d: 8, recurD: 2711}, titles: {"he": "דף יומי:  [[subtitle]] [[subindex]]", "en": "Daf Yomi:  [[subtitle]] [[subindex]]"}, cRanges: [
             {subtitles: {"he": "ברכות", "en": "Berakhoth"}, start: 1, end: 63},
             {subtitles: {"he": "שבת", "en": "Shabbath"}, start: 64, end: 219},
             {subtitles: {"he": "עירובין", "en": "Eruvin"}, start: 220, end: 323},

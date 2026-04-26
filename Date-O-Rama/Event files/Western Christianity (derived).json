@@ -121,7 +121,7 @@
         {type: "D", start: {mon: 12, wkd: [4], nth: 1}, titles: {"en": "Special Kids Day"}, urls: {"en": "https://www.specialkidsday.org/"}, first: {era: 1, y: 1990}, emoji: "👦👧"},
         {type: "D", start: {mon: 12, wkd: [5], nth: 3}, inherits: "Natl Re-Gifting Day", first: {era: 1, y: 2008}},
         {type: "D", start: {mon: 12, wkd: [6], nth: 3}, titles: {"en": "National Ugly Christmas Sweater Day"}, notes: {"en": "Ugly Christmas Sweater Day\nNational Ugly Sweater Day\nCreated by Gregor Robertson"}, first: {era: 1, y: 2011}, urls: {"en": "https://www.nationaluglychristmassweaterday.org/"}, emoji: "🦺"},
-        {type: "nD", start: {mon: 12, d: 1, thruD: 7, wkd: [6], durationD: 3}, titles: {"en": "Candle Day"}, notes: {"en": "This observance is geared to sell people candles.\nCreated by Bath & Body Works"}, emoji: "🕯️", first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}},
+        {type: "nD", start: {mon: 12, d: 1, thruD: 7, wkd: [6], durD: 3}, titles: {"en": "Candle Day"}, notes: {"en": "This observance is geared to sell people candles.\nCreated by Bath & Body Works"}, emoji: "🕯️", first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}},
         {type: "D", start: {mon: 12, wkd: [7], nth: 1}, titles: {"en": "Coats and Toys for Kids Day"}, notes: {"en": "Coats & Toys for Kids Day\nCreated by the Salvation Army"}, urls: {"en": "https://www.daysoftheyear.com/days/coats-and-toys-for-kids-day/"}, first: {era: 1, y: 1983}, emoji: "🧥🧸"},
         {type: "D", start: {mon: 12, wkd: [7], nth: 2}, titles: {"en": "Gingerbread Decorating Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.daysoftheyear.com/days/gingerbread-decorating-day/"}},
         {type: "D", start: {mon: 12, d: 13, thruD: 19, wkd: [7]}, titles: {"en": "National Wreaths Across America Day"}, first: {era: 1, y: 1992}, notes: {"en": "Created by Morril Worcester"}, urls: {"en": "https://www.wreathsacrossamerica.org/"}},
@@ -194,7 +194,7 @@
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en": "Bat Appreciation Week"}, urls: {"en": "https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}, notes: {"en": "Created by Bat Conservation International"}},
         ]},
         
-        {type: "nD", start: {mon: 12, d: 1, durationD: 7}, titles: {"en": "National Cookie Cutter Week"}, notes: {"en": "Cookie Cutter Week\nCreated by Paula Mullins"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, first: {era: 1, y: 1996}, nonoverlappingSubEvents: [
+        {type: "nD", start: {mon: 12, d: 1, durD: 7}, titles: {"en": "National Cookie Cutter Week"}, notes: {"en": "Cookie Cutter Week\nCreated by Paula Mullins"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, first: {era: 1, y: 1996}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 12, d: 1}, titles: {"en": "National Cookie Cutter Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-day/"}, first: {era: 1, y: 2019}, notes: {"en": "Created by Bobbi Barton"}},
         ]},
         

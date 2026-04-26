@@ -30,6 +30,6 @@
         {type: "D", start: {mon: 2, d: 17, wkd: [2]}, titles: {"en": "Statehood Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/serbia/sovereignty-day-of-serbia"}, first: {era: 1, y: 2001}, notes: {"en": "Sovereignty Day (in lieu)"}},
         {type: "D", start: {mon: 4, d: 2}, inherits: "Holocaust Memorial Day", titles: {"en": "Holocaust Remembrance Day", "sr": "Dan sećanja na žrtve holokausta"}},
         {type: "D", start: {mon: 12, d: 16}, inherits: "Roma Holocaust Memorial Day", first: {era: 1, y: 2009}},
-        {type: "nD", start: {mon: 7, d: 14, thruD: 20, wkd: [2], durationD: 5}, titles: {"en": "Drina Regatta"}, urls: {"en": "https://www.daysoftheyear.com/days/drina-regatta/"}, first: {era: 1, y: 1994}, emoji: "⛵"},
+        {type: "nD", start: {mon: 7, d: 14, thruD: 20, wkd: [2], durD: 5}, titles: {"en": "Drina Regatta"}, urls: {"en": "https://www.daysoftheyear.com/days/drina-regatta/"}, first: {era: 1, y: 1994}, emoji: "⛵"},
     ]
 }

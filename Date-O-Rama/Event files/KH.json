@@ -24,6 +24,6 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 12, d: 29}, inherits: "Peace Day", urls: {"en": "https://www.officeholidays.com/holidays/cambodia/cambodia-peace-day"}, first: {era: 1, y: 2024}},
-        {type: "nD", start: {mon: 4, d: 14, durationD: 3}, titles: {"el":"Καμποτζιανή Πρωτοχρονιά","en":"Cambodian New Year","fi":"Kambodžalainen uusivuosi","fr":"Nouvel An khmer","hy":"Ամանորը Կամբոջայում","id":"Tahun Baru Kamboja","km":"ចូលឆ្នាំខ្មែរ","ru":"Новый год в Камбодже","si":"කාම්බෝජ අලුත් අවුරුද්ද","ta":"கம்போடியப் புத்தாண்டு","vi":"Lễ hội Chol Chnam Thmay","zh":"柬埔寨新年"}, notes: {"en": "Khmer New Year\nChol Chnam Thmay"}, urls: {"en": "https://www.daysoftheyear.com/days/cambodian-new-year/"}},
+        {type: "nD", start: {mon: 4, d: 14, durD: 3}, titles: {"el":"Καμποτζιανή Πρωτοχρονιά","en":"Cambodian New Year","fi":"Kambodžalainen uusivuosi","fr":"Nouvel An khmer","hy":"Ամանորը Կամբոջայում","id":"Tahun Baru Kamboja","km":"ចូលឆ្នាំខ្មែរ","ru":"Новый год в Камбодже","si":"කාම්බෝජ අලුත් අවුරුද්ද","ta":"கம்போடியப் புத்தாண்டு","vi":"Lễ hội Chol Chnam Thmay","zh":"柬埔寨新年"}, notes: {"en": "Khmer New Year\nChol Chnam Thmay"}, urls: {"en": "https://www.daysoftheyear.com/days/cambodian-new-year/"}},
     ]
 }

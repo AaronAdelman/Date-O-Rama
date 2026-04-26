@@ -695,9 +695,9 @@ class ASAEventCalendar {
             startDateEYMD[3] = day
         }
                 
-        let durationDays = startDateSpecification.durationDays
-        if durationDays != nil {
-            endDateEYMD[3] = startDateEYMD[3]! + durationDays! - 1
+        let durDays = startDateSpecification.durDays
+        if durDays != nil {
+            endDateEYMD[3] = startDateEYMD[3]! + durDays! - 1
         } else if endThroughDay != nil {
             assert(endWeekday != nil)
             assert(endMonth != nil)

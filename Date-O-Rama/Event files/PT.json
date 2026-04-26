@@ -67,7 +67,7 @@
         {type: "D", start: {mon: 11, d: 25}, inherits: "St. Catherine of Alexandria"},
         {type: "D", start: {mon: 7, d: 26}, inherits: "Grandparents’ Day"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-        {type: "nD", start: {mon: 6, d: 12, durationD: 2}, titles: {"en": "Lisbon Sardine Festival"}},
+        {type: "nD", start: {mon: 6, d: 12, durD: 2}, titles: {"en": "Lisbon Sardine Festival"}},
         {type: "nD", start: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, inherits: "Festa do Vinho", first: {era: 1, y: 2022}, end: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 8, d: 19, thruD: 25, wkd: [1]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, inherits: "Festa do Vinho", first: {era: 1, y: 2024}},
     ],
