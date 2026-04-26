@@ -543,8 +543,7 @@ class ASAEventCalendar {
                 return MATCH_FAILURE
             }
             
-//        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
-            let easterStuff = (calendar as! ASACalendarWithEaster).calculateEaster(era: componentsEra, year: componentsYear)
+        let easterStuff = (calendar as! ASACalendarWithEaster).calculateEaster(era: componentsEra, year: componentsYear)
         if easterStuff == nil {
             return MATCH_FAILURE
         }

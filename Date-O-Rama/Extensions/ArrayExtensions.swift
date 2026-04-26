@@ -242,6 +242,10 @@ extension Array where Element == Int? {
     } // func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int>, end: Array<Int>)
     
     func isBefore(first: Array<Int?>) -> Bool {
+        if self == first {
+            return false
+        }
+        
         for i in 0..<self.count {
             let self_i  = self[i]
             let first_i = first[i]

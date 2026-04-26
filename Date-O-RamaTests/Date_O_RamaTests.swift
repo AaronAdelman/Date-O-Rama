@@ -795,9 +795,23 @@ class Date_O_RamaTests: XCTestCase {
 //    }
     
     fileprivate func subtestEaster(year: Int, month: Int, day: Int, GregorianCalendar: Bool) {
-        let Easter = calculateEaster(nYear: year, GregorianCalendar: GregorianCalendar)
-        XCTAssert(Easter.month == month)
-        XCTAssert(Easter.day == day)
+        let easter = {
+            if GregorianCalendar {
+                let gregorian = ASAGregorianCalendar()
+                return (gregorian as ASACalendarWithEaster).calculateEaster(
+                    era: 1,
+                    year: year
+                )
+            } else {
+                let julian = ASAJulianCalendar(calendarCode: .julian)
+                return (julian as ASACalendarWithEaster).calculateEaster(
+                    era: 1,
+                    year: year
+                )
+            }
+        }()
+        XCTAssert(easter!.month == month)
+        XCTAssert(easter!.day == day)
     } // func subtestEaster(year: Int, month: Int, day: Int, GregorianCalendar: Bool)
     
     func testEaster() throws {
