@@ -402,7 +402,7 @@ class Date_O_RamaTests: XCTestCase {
 //        let MaghribString = transformedTimes[.Maghrib]!
 //        XCTAssert(MaghribString == "Jul 12, 2021 at 8:05:36 PM", "Maghrib:  \(MaghribString)")
 //
-//        let FajrString = transformedTimes[.Fajr]!
+//        let FajrString = transformedTimes[.fajr]!
 //        XCTAssert(FajrString == "Jul 13, 2021 at 4:18:39 AM", "Fajr:  \(FajrString)")
 //
 //        let AsrString = transformedTimes[.Asr]!

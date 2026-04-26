@@ -21,19 +21,19 @@ enum ASAPointEventType: String, Codable {
     case solarTimeDawn72MinutesDusk72Minutes = "D2DT"
     
     /// Fajr Islamic prayer time
-    case Fajr = "Fajr"
+    case fajr = "Fajr"
 
     /// Dhuhr Islamic prayer time
-    case Dhuhr = "Dhuhr"
+    case dhuhr = "Dhuhr"
 
     /// Asr Islamic prayer time
-    case Asr = "Asr"
+    case asr = "Asr"
 
     /// Maghrib Islamic prayer time
-    case Maghrib = "Maghrib"
+    case maghrib = "Maghrib"
 
     /// Isha Islamic prayer time
-    case Isha = "Isha"
+    case isha = "Isha"
     
     /// Rise of the Moon or a planet
     case rise = "rise"

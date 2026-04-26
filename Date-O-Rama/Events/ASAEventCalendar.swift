@@ -585,19 +585,19 @@ class ASAEventCalendar {
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> ASAMatchResult {
         var event: ASAIslamicPrayerTimeEvent
         switch tweakedStartDateSpecification.pointEventType {
-        case .Fajr:
+        case .fajr:
             event = .Fajr
             
-        case .Dhuhr:
+        case .dhuhr:
             event = .Dhuhr
             
-        case .Asr:
+        case .asr:
             event = .Asr
             
-        case .Maghrib:
+        case .maghrib:
             event = .Maghrib
             
-        case .Isha:
+        case .isha:
             event = .Isha
             
         default:
@@ -811,7 +811,7 @@ class ASAEventCalendar {
             let offset = dateSpecification.offset ?? 0.0
             return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             
-        case .Isha, .Maghrib, .Asr, .Dhuhr, .Fajr:
+        case .isha, .maghrib, .asr, .dhuhr, .fajr:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
             
         case .rise, .set:
