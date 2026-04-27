@@ -118,7 +118,7 @@
         {type: "D", start: {mon: 9, d: 1}, titles: {"en": "Wattle Day"}, first: {era: 1, y: 1910}, urls: {"en": "https://wattleday.asn.au/"}, emoji: "🌳"},
         {type: "M", start: {mon: 4}, titles: {"en": "SunSmart Skin Cancer Prevention"}, urls: {"en": "https://nationaltoday.com/sunsmart-skin-cancer-prevention/"}, first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 5}, titles: {"en": "Lung Health Awareness Month"}, urls: {"en": "https://nationaltoday.com/lung-health-awareness-month/"}, emoji: "🫁", inherits: "*MedAwareness*"},
-        {type: "M", start: {mon: 5}, titles: {"en": "No Meat May"}, urls: {"en": "https://www.daysoftheyear.com/days/no-meat-may/"}, first: {era: 1, y: 2013}},
+        {type: "M", start: {mon: 5}, titles: {"en": "No Meat May"}, urls: {"en": "https://www.daysoftheyear.com/days/no-meat-may/"}, first: {era: 1, y: 2013}, emoji: "🍅🧅"},
         {type: "M", start: {mon: 10}, titles: {"en": "Mental Health Month"}, urls: {"en": "https://wayahead.org.au/mentalhealthmonth/"}, first: {era: 1, y: 1949}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en": "BPD Awareness Week"}, urls: {"en": "https://www.bpdawareness.com.au/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2014}},
         {type: "nD", start: {mon: 2, d: 6, thruD: 12, wkd: [7], durD: 3}, titles: {"en": "Royal Hobart Regatta"}, notes: {"en": "The Regatta"}, urls: {"en": "https://royalhobartregatta.com/"}, emoji: "🚣‍♀️", first: {era: 1, y: 1838}, notes: {"en": "Created by Sir John Franklin"}},
