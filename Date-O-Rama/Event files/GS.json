@@ -16,7 +16,7 @@
         
         {type: "D", start: {mon: 4, d: 25}, inherits: "Liberation Day", first: {era: 1, y: 1982}},
         {type: "D", start: {mon: 5, d: 20}, titles: {"en": "Shackleton Day", "he": "יום שקלטון"}, first: {era: 1, y: 1982}},
-        {type: "D", start: {equinoxOrSolstice: "Jun"}, inherits: "Midwinter Day"},
+        {type: "D", start: {eqxOrSolstice: "Jun"}, inherits: "Midwinter Day"},
         {type: "D", start: {era: 1, y: 2012, mon: 9, d: 14}, inherits: "Toothfish Day"},
         {type: "D", start: {era: 1, y: 2013, mon: 9, d: 13}, inherits: "Toothfish Day"},
         {type: "D", start: {era: 1, y: 2014, mon: 9, d: 15}, inherits: "Toothfish Day"},

@@ -1191,7 +1191,7 @@ class Date_O_RamaTests: XCTestCase {
             adjustingMethodForHigherLatitudes: nil,
             dhuhrMinutes: nil,
             Easter: nil,
-            equinoxOrSolstice: nil,
+            eqxOrSolstice: nil,
             timeChange: nil,
             moonPhase: nil
         )
@@ -1224,7 +1224,7 @@ class Date_O_RamaTests: XCTestCase {
             adjustingMethodForHigherLatitudes: nil,
             dhuhrMinutes: nil,
             Easter: nil,
-            equinoxOrSolstice: nil,
+            eqxOrSolstice: nil,
             timeChange: nil,
             moonPhase: nil
         )

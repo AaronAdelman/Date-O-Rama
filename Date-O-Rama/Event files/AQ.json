@@ -6,6 +6,6 @@
     first: {era: 1, y: 1902},
     events: [
         {type: "D", start: {mon: 12, d: 1}, inherits: "Antarctica Day", first: {era: 1, y: 2010}},
-        {type: "D", start: {equinoxOrSolstice: "Jun"}, inherits: "Midwinter Day", notes: {"en": "Midwinter\nMidwinter Festival\nWinter Solstice"},urls: {"en": "https://en.wikipedia.org/wiki/Midwinter_Day"}, first: {era: 1, y: 1902}},
+        {type: "D", start: {eqxOrSolstice: "Jun"}, inherits: "Midwinter Day", notes: {"en": "Midwinter\nMidwinter Festival\nWinter Solstice"},urls: {"en": "https://en.wikipedia.org/wiki/Midwinter_Day"}, first: {era: 1, y: 1902}},
     ]
 }

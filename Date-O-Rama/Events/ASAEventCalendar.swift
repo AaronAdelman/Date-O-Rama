@@ -1129,7 +1129,7 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.Easter == nil && dateSpecification.equinoxOrSolstice == nil {
+        if offsetDays != 0 && dateSpecification.easter == nil && dateSpecification.equinoxOrSolstice == nil {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1207,7 +1207,7 @@ class ASAEventCalendar {
             }
         }
         
-        let Easter = dateSpecification.Easter
+        let Easter = dateSpecification.easter
         if Easter ?? .none != .none {
             let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {

@@ -9,7 +9,7 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Afghanistan"},
     events: [
         {inherits: "Liberation Day", type: "D", start: {mon: 2, d: 15}, first: {era: 1, y: 1989}, urls: {"en": "https://nationaltoday.com/liberation-day-afghanistan/"}},
-        {type: "D", start: {equinoxOrSolstice: "Mar"}, inherits: "Nowruz", urls: {"en": "https://nationaltoday.com/afghanistan-day/"}},
+        {type: "D", start: {eqxOrSolstice: "Mar"}, inherits: "Nowruz", urls: {"en": "https://nationaltoday.com/afghanistan-day/"}},
         {type: "D", start: {mon: 4, d: 28}, inherits: "Victory Day", titles: {"en": "Mujahideen Victory Day", "fa": "سالروز پیروزی مجاهدین", "ps": "د مجاهدينو د بريا ورځ"}, urls: {"en": "https://en.wikipedia.org/wiki/Mujahideen_Victory_Day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Victory Day", first: {era: 1, y: 2022}, titles: {"en": "“Afghan Jihad” Victory Day"}, notes: {"en": "Victory of the Islamic Emirate"}, urls: {"en": "https://www.officeholidays.com/holidays/afghanistan/victory-of-the-islamic-emirate"}},
@@ -20,6 +20,6 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {inherits: "Mother’s Day", type: "D", start: {mon: 6, d: 14}},
-        {type: "D", start: {equinoxOrSolstice: "Jun"}, titles: {"en": "Ginani"}, urls: {"en": "https://en.wikipedia.org/wiki/Ginani"}},
+        {type: "D", start: {eqxOrSolstice: "Jun"}, titles: {"en": "Ginani"}, urls: {"en": "https://en.wikipedia.org/wiki/Ginani"}},
     ]
 }

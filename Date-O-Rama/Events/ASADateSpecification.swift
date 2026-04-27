@@ -73,7 +73,7 @@ struct ASADateSpecification:  Codable {
     var dhuhrMinutes: Double?
     
     // For Easter-related events
-    var Easter: ASAEasterType?
+    var easter: ASAEasterType?
     
     // For equinox and solstice events
     var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
@@ -99,8 +99,8 @@ struct ASADateSpecification:  Codable {
         case nanosecond          = "ns"
         case weekdays            = "wkd"
         case recurrence          = "nth"
-        case lengthsOfMonth      = "monLengths"
-        case lengthsOfYear       = "yLengths"
+        case lengthsOfMonth      = "monLens"
+        case lengthsOfYear       = "yLens"
         case dayOfYear           = "dOfY"
         case yearDivisor         = "yDiv"
         case yearRemainder       = "yRem"
@@ -114,9 +114,9 @@ struct ASADateSpecification:  Codable {
         case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
-        case Easter
+        case easter
         case offsetDays          = "offsetD"
-        case equinoxOrSolstice
+        case equinoxOrSolstice   = "eqxOrSolstice"
         case timeChange
         case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"

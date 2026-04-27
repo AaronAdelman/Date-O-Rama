@@ -5,15 +5,15 @@
     calendarColor: {name: "blue"},
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
-            {inherits: "Vernal Equinox", type: "pt", start: {equinoxOrSolstice: "Mar"}, regionCodes: ["xb"]},
-            {inherits: "Summer Solstice", type: "pt", start: {equinoxOrSolstice: "Jun"}, regionCodes: ["xb"]},
-            {inherits: "Autumnal Equinox", type: "pt", start: {equinoxOrSolstice: "Sep"}, regionCodes: ["xb"]},
-            {inherits: "Winter Solstice", type: "pt", start: {equinoxOrSolstice: "Dec"}, regionCodes: ["xb"]},
+            {inherits: "Vernal Equinox", type: "pt", start: {eqxOrSolstice: "Mar"}, regionCodes: ["xb"]},
+            {inherits: "Summer Solstice", type: "pt", start: {eqxOrSolstice: "Jun"}, regionCodes: ["xb"]},
+            {inherits: "Autumnal Equinox", type: "pt", start: {eqxOrSolstice: "Sep"}, regionCodes: ["xb"]},
+            {inherits: "Winter Solstice", type: "pt", start: {eqxOrSolstice: "Dec"}, regionCodes: ["xb"]},
             
-            {inherits: "Vernal Equinox", type: "pt", start: {equinoxOrSolstice: "Sep"}, regionCodes: ["xc"]},
-            {inherits: "Summer Solstice", type: "pt", start: {equinoxOrSolstice: "Dec"}, regionCodes: ["xc"]},
-            {inherits: "Autumnal Equinox", type: "pt", start: {equinoxOrSolstice: "Mar"}, regionCodes: ["xc"]},
-            {inherits: "Winter Solstice", type: "pt", start: {equinoxOrSolstice: "Jun"}, regionCodes: ["xc"]},
+            {inherits: "Vernal Equinox", type: "pt", start: {eqxOrSolstice: "Sep"}, regionCodes: ["xc"]},
+            {inherits: "Summer Solstice", type: "pt", start: {eqxOrSolstice: "Dec"}, regionCodes: ["xc"]},
+            {inherits: "Autumnal Equinox", type: "pt", start: {eqxOrSolstice: "Mar"}, regionCodes: ["xc"]},
+            {inherits: "Winter Solstice", type: "pt", start: {eqxOrSolstice: "Jun"}, regionCodes: ["xc"]},
         ]},
     ]
 }
