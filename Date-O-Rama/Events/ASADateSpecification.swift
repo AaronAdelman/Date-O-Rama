@@ -114,7 +114,7 @@ struct ASADateSpecification:  Codable {
         case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
-        case easter
+        case easter              = "Easter"
         case offsetDays          = "offsetD"
         case equinoxOrSolstice   = "eqxOrSolstice"
         case timeChange

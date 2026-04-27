@@ -516,24 +516,10 @@ class ASAEventCalendar {
         return ASAMatchResult(matches: true, startDate: startDate, endDate: endDate, cycle: nil, dayInCycle: nil)
     } // func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> ASAMatchResult
     
-    func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> ASAMatchResult {
-        if calendar is ASACalendarWithEaster {
-            
-        } else {
+    func matchEasterEvent(date: Date, calendar: ASACalendar, startDateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult {
+        if !(calendar is ASACalendarWithEaster) {
             return MATCH_FAILURE
         }
-        
-//        var forGregorianCalendar: Bool
-//        switch calendar.calendarCode {
-//        case .Gregorian:
-//            forGregorianCalendar = true
-//            
-//        case .Julian:
-//            forGregorianCalendar = false
-//            
-//        default:
-//            return MATCH_FAILURE // Calculating the date of Easter is currently irrelevant for other calendars
-//        } // switch calendar.calendarCode
         
         guard let componentsEra = components.era else {
             return MATCH_FAILURE
@@ -547,7 +533,7 @@ class ASAEventCalendar {
         if easterStuff == nil {
             return MATCH_FAILURE
         }
-        let (EasterMonth, EasterDay) = (easterStuff!.0, easterStuff!.1)
+        let (easterMonth, easterDay) = (easterStuff!.0, easterStuff!.1)
         
         guard let componentsMonth = components.month else {
             return MATCH_FAILURE
@@ -558,7 +544,7 @@ class ASAEventCalendar {
         
         let offsetDays = startDateSpecification.offsetDays ?? 0
         if offsetDays == 0 {
-            if componentsMonth == EasterMonth && componentsDay == EasterDay {
+            if componentsMonth == easterMonth && componentsDay == easterDay {
                 return ASAMatchResult(matches: true, startDate: startOfDay, endDate: startOfNextDay, cycle: nil, dayInCycle: nil)
             } else {
                 return MATCH_FAILURE
@@ -569,17 +555,17 @@ class ASAEventCalendar {
         let locationData = components.locationData
         let timeZone: TimeZone = locationData.timeZone
         
-        let EasterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: EasterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: EasterDay)
-        let EasterDate = EasterDateComponents.date
-        let EasterMJD = EasterDate!.localModifiedJulianDay(timeZone: timeZone)
-        let EasterEventMJD = EasterMJD + offsetDays
+        let easterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: easterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: easterDay)
+        let easterDate = easterDateComponents.date
+        let easterMJD = easterDate!.localModifiedJulianDay(timeZone: timeZone)
+        let easterEventMJD = easterMJD + offsetDays
         
-        if dateMJD == EasterEventMJD {
+        if dateMJD == easterEventMJD {
             return ASAMatchResult(matches: true, startDate: startOfDay, endDate: startOfNextDay, cycle: nil, dayInCycle: nil)
         } else {
             return MATCH_FAILURE
         }
-    } // func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
+    } // func matchEasterEvent(date: Date, calendar: ASACalendar, startDateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult
     
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> ASAMatchResult {
         var event: ASAIslamicPrayerTimeEvent
@@ -1208,7 +1194,7 @@ class ASAEventCalendar {
         }
         
         let Easter = dateSpecification.easter
-        if Easter ?? .none != .none {
+        if (Easter ?? .none) != .none {
             let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
