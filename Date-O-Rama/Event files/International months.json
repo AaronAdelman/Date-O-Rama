@@ -10,7 +10,7 @@
         {type: "M", start: {mon: 1}, titles: {"en": "Fresh Florida Tomato Month"}, urls: {"en": "https://www.daysoftheyear.com/days/fresh-florida-tomato-month/"}, emoji: "🍅", first: {era: 1, y: 1989}, notes: {"en": "Created by the Florida Tomato Committee and Department of Agriculture"}},
         {type: "M", start: {mon: 1}, titles: {"en": "Artichoke and Asparagus Month"}, urls: {"en": "https://nationaltoday.com/artichoke-and-asparagus-month/"}},
         {type: "M", start: {mon: 11}, titles: {"en": "Trans Awareness Month"}, first: {era: 1, y: 2017}},
-        {type: "M", start: {mon: 5}, titles: {"en": "Tracky Dack Day"}, urls: {"en": "https://trackydackday.com/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}},
+        {type: "M", start: {mon: 5}, titles: {"en": "Tracky Dack Day"}, urls: {"en": "https://trackydackday.com/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}, notes: {"en": "Created by TLC for Kids"}},
         {type: "M", start: {mon: 9}, titles: {"en": "Bisexual Visibility Month"}},
         {type: "nD", start: {mon: 4, d: 1}, end: {mon: 4, d: 23}, titles: {"en": "FOP Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/fop-awareness-month/"}, inherits: "*MedAwareness*", notes: {"en": "Created by FOP Friends and the International Fibrodysplasia Ossificans Progressiva Association (IFOPA)"}},
         {type: "nD", start: {mon: 5, d: 15}, end: {mon: 6, d: 15}, titles: {"en": "Tourette Syndrome Awareness Month"}, urls: {"en": "https://nationaltoday.com/tourette-syndrome-awareness-month/"}, inherits: "*MedAwareness*"},
