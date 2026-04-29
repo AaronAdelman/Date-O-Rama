@@ -1380,7 +1380,6 @@
 		A522A2D42E439D5B00F8AAEB /* Moon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A522A2D72E439E1500F8AAEB /* Sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
 		A522A2DD2E45CF1C00F8AAEB /* C. Daniel Rhodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "C. Daniel Rhodes.json"; sourceTree = "<group>"; };
-		A522A2E02E460F9900F8AAEB /* WhatNationalDayIsIt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WhatNationalDayIsIt.json; sourceTree = "<group>"; };
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
 		A523A40325A72889007CB54B /* ASAWatchEventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchEventsList.swift; sourceTree = "<group>"; };
@@ -2417,7 +2416,6 @@
 				A51EF5B02DC7C24D00372212 /* Western planentary days.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 				A5FB22D2286390E500B5042B /* WF.json */,
-				A522A2E02E460F9900F8AAEB /* WhatNationalDayIsIt.json */,
 				A5201CB82DB5790600D5D490 /* Winnie the Pooh.json */,
 				A5F3B01A28563CB000865CEB /* WS.json */,
 				A5746302299C23A600896FC7 /* XK.json */,
