@@ -18,7 +18,7 @@
         {type: "D", start: {mon: 4, d: 16, wkd: [3, 4]}, titles: {"en": "Extra holiday for Songkran"}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/songkran-festival"}, inherits: "Songkran"},
         {type: "D", start: {mon: 4, d: 17, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/songkran-festival"}, titles: {"en": "Extra holiday for Songkran"}, inherits: "Songkran"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 5, d: 4}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/thai-kings-coronation"}, titles: {"en": "Coronation Day", "th": "วันฉัตรมงคล"}, inherits: "*Coronation*"},
+        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Coronation Day", "th": "วันฉัตรมงคล"}, urls: {"en": "https://www.daysoftheyear.com/days/coronation-day-in-thailand/"}, inherits: "*Coronation*", first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 5, d: 5, wkd: [2, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/thai-kings-coronation"}, titles: {"en": "Coronation Day (bridge day)"}, inherits: "*Coronation*"},
         {type: "D", start: {mon: 5, d: 6, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/thailand/thai-kings-coronation"}, titles: {"en": "Coronation Day (in lieu)"}, inherits: "*Coronation*"},
         {type: "D", start: {era: 1, y: 2021, mon: 5, d: 10}, inherits: "Royal Ploughing Ceremony"},
