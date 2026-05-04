@@ -225,7 +225,7 @@
         {type: "M", start: {mon: 5}, titles: {"en": "International Civility Awareness Month"}, urls: {"en": "https://nationaltoday.com/international-civility-month/"}, first: {era: 1, y: 2010}},
         {type: "M", start: {mon: 5}, titles: {"en": "International Drum Month"}, urls: {"en": "https://www.daysoftheyear.com/days/international-drum-month/"}, notes: {"en": "Created by Lloyd McCausland of Remo"}, first: {era: 1, y: 2000}},
         {type: "M", start: {mon: 5}, titles: {"en": "International Internal Audit Awareness Month"}, urls: {"en": "https://nationaltoday.com/international-internal-audit-awareness-month/"}, first: {era: 1, y: 1990}},
-        {type: "M", start: {mon: 5}, titles: {"en": "International Respect for Chickens Month"}, urls: {"en": "https://nationaltoday.com/international-respect-for-chickens-month/"}},
+        {type: "M", start: {mon: 5}, titles: {"en": "International Respect for Chickens Month"}, urls: {"en": "https://nationaltoday.com/international-respect-for-chickens-month/"}, emoji: "🐔"},
         {type: "M", start: {mon: 5}, titles: {"en": "Labor History Month"}, urls: {"en": "https://nationaltoday.com/labor-history-month/"}},
         {type: "M", start: {mon: 5}, titles: {"en": "Latino Books Month"}, urls: {"en": "https://nationaltoday.com/latino-books-month/"}, first: {era: 1, y: 2004}},
         {type: "M", start: {mon: 5}, titles: {"en": "Leaders of Tomorrow Month"}, urls: {"en": "https://nationaltoday.com/leaders-of-tomorrow-month/"}, notes: {"en": "Young Achievers Month"}},

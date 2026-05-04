@@ -41,7 +41,7 @@
         {type: "D", titles: {"en": "Crime Victims Day", "pl": "Dzień Ofiar Przestępstw"}, start: {mon: 2, d: 22}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/polish-national-flag-day/"}, inherits: "Natl Flag Day", first: {era: 1, y: 2004}},
         {type: "D", start: {mon: 5, d: 2}, urls: {"en": "https://en.wikipedia.org/wiki/Polish_Diaspora_Day"}, first: {era: 1, y: 2002}, titles: {"en": "Polish Diaspora Day", "pl": "Dzień Polonii i Polaków za Granicą"}},
-        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Firefighters Day", "he": "יום הכבאים", "pl": "Dzień Strażaka"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Firefighters Day", "he": "יום הכבאים", "pl": "Dzień Strażaka"}, first: {era: 1, y: 2002}, emoji: "👨‍🚒👩‍🚒"},
         {inherits: "Border Guards Day", type: "D", start: {mon: 5, d: 16}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "Veterans of Overseas Military Activities Day", "pl": "Dzień Weterana Działań poza Granicami Państwa,"}},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en": "State Protection Service’s Day", "pl": "Święto SOP"}, first: {era: 1, y: 2011}},

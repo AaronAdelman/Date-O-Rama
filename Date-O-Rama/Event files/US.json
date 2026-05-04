@@ -688,7 +688,7 @@
         {type: "D", start: {mon: 3, d: 14}, inherits: "Pi Day", first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 4, d: 8, thruD: 14, wkd: [1], durD: 7}, titles: {"en": "Pan American Week"}, first: {era: 1, y: 2017}, emoji: "🌎"},
         {type: "D", start: {Easter: "Easter", offsetD: 1}, titles: {"en": "White House Easter Egg Roll"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/white-house-easter-egg-roll/"}, first: {era: 1, y: 1878}},
-        {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [2], durD: 5}, titles: {"en": "Air Quality Awareness Week"}, urls: {"en": "https://www.epa.gov/air-quality/air-quality-awareness-week"}, first: {era: 1, y: 1999}, emoji: "⚘"},
+        {type: "nD", start: {mon: 5, d: 1, thruD: 7, wkd: [2], durD: 5}, titles: {"en": "Air Quality Awareness Week"}, urls: {"en": "https://www.epa.gov/air-quality/air-quality-awareness-week"}, first: {era: 1, y: 1999}, emoji: "[[aqi.medium.gauge.open]]", notes: {"en": "Created by the Environmental Protection Agency (EPA)"}},
         {type: "D", start: {era: 1, y: 1980, mon: 3, d: 7}, inherits: "Natl Teacher Day"},
         {type: "D", start: {mon: 3, wkd: [3], nth: 1}, inherits: "Natl Teacher Day", first: {era: 1, y: 1981}, last: {era: 1, y: 1984}},
         {type: "D", start: {mon: 5, wkd: [3], d: 2, thruD: 8}, titles: {"en": "Primary Election Day"}, urls: {"en": "https://www.officeholidays.com/holidays/usa/primary-election-day-indiana"}, locations: {"en": "Indiana"}, first: {era: 1, y: 1971}},
@@ -748,7 +748,7 @@
 
     ],
     templates: [
-        {template: "Natl Teacher Day", type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫"},
+        {template: "Natl Teacher Day", type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫", notes: {"en": "Created by Eleanor Roosevelt"}},
         {template: "Confederate Memorial Day", titles: {"br":"Confederate Memorial Day","en":"Confederate Memorial Day","fr":"Fête du mémorial des confédérés"}, type: "D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},
         {template: "Intl Dadaism Month", type: "D", start: {mon: 2, d: 4}, urls: {"en": "https://www.npr.org/templates/story/story.php?storyId=5077635"}, titles: {"en":"International Dadaism Month","eo":"Internacia Dadaisma Monato", "he": "חודש הדאדאיזם הבינלאומי"}},
         {template: "Jefferson Davis’s Birthday", type: "D", start: {mon: 6, d: 3}, titles: {"en": "Jefferson Davis’s Birthday", "he": "יום הולדת של ג׳פרסון דייוויס", "fr": "Anniversaire de Jefferson Davis"}, urls: {"en": "https://en.wikipedia.org/wiki/Jefferson_Davis"}, inherits: "*BDay*"},
