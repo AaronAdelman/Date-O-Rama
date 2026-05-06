@@ -124,10 +124,9 @@
         {type: "D", start: {mon: 12, d: 17}, titles: {"en": "Wright Brothers Day", "he": "יום האחים רייט"}, first: {era: 1, y: 1959}, emoji: "🛩", urls: {"en": "https://wrightbrothersday.org/"}, notes: {"en": "Created by Dwight D. Eisenhower"}},
         {type: "D", start: {mon: 4, d: 21}, titles: {"en":"San Jacinto Day","zh":"聖哈辛托日"}, urls: {"en": "https://www.daysoftheyear.com/days/battle-of-san-jacinto/"}, first: {era: 1, y: 1836}, notes: {"en": "Battle of San Jacinto"}},
         {type: "D", start: {mon: 4, d: 22}, titles: {"en": "National Baseball Day"}, urls: {"en": "https://www.nationalbaseballday.net/"}, emoji: "⚾️", first: {era: 1, y: 1964}, notes: {"en": "Created by Lyndon Johnson"}},
-        {type: "D", start: {mon: 5, d: 6, thruD: 12, wkd: [4]}, titles: {"en": "National School Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", first: {era: 1, y: 1974}},
         {type: "D", start: {mon: 5, d: 6, thruD: 12, wkd: [6]}, titles: {"en": "National Military Spouse Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/military-spouse-appreciation-day/"}, first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 5, d: 5, thruD: 11, wkd: [5]}, titles: {"en": "Children’s Mental Health Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/childrens-mental-health-awareness-day/"}, notes: {"en": "CMHAD"}, first: {era: 1, y: 2005}, emoji: "👦👧", inherits: "*MedAwareness*"},
-        {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Barrier Awareness Day", "he": "יום המודעות למחסומים"}, first: {era: 1, y: 1986}, emoji: "🦼", urls: {"en": "https://www.daysoftheyear.com/days/national-barrier-awareness-day/"}},
+        {type: "D", start: {mon: 5, d: 7}, titles: {"en": "National Barrier Awareness Day", "he": "יום המודעות למחסומים"}, first: {era: 1, y: 1986}, emoji: "🦼", urls: {"en": "https://www.daysoftheyear.com/days/national-barrier-awareness-day/"}, notes: {"en": "Created by the US Congress"}},
         {type: "D", start: {Easter: "Easter", offsetD: -47}, inherits: "Fasnacht Day"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"en": "Ellis Island Day"}, urls: {"en": "https://www.daysoftheyear.com/days/ellis-island-day/"}, notes: {"en": "National Ellis Island Day\nCreated by George H. W. Bush"}, first: {era: 1, y: 1992}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Human Trafficking Awareness Day"}, notes: {"en": "National Human Trafficking Awareness Day\nNational Day of Human Trafficking Awareness\nCreated by the US Congress"}, urls: {"en": "https://www.daysoftheyear.com/days/human-trafficking-awareness-day/"}, first: {era: 1, y: 2007}, emoji: "⛓️"},
@@ -354,7 +353,6 @@
         {type: "D", start: {mon: 4, d: 26}, titles: {"en": "National Pretzel Day"}, emoji: "🥨", urls: {"en": "https://www.daysoftheyear.com/days/pretzel-day/"}, first: {era: 1, y: 2003}, notes: {"en": "Created by Ed Rendell"}},
         {type: "D", start: {mon: 5, d: 4}, titles: {"en": "National Weather Observers Day"}, urls: {"en": "https://www.daysoftheyear.com/days/weather-observers-day/"}, first: {era: 1, y: 1989}, emoji: "☂️🌡️⛄️", notes: {"en": "Created by Alan Brue"}},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Cinco de Mayo", first: {era: 1, y: 2006}, emoji: "🇲🇽🇺🇸"},
-        {type: "D", start: {mon: 5, d: 6}, titles: {"en": "National Nurse’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-nurses-day/"}, notes: {"en": "National Nurses Day\nNational RN Recognition Day"}, first: {era: 1, y: 1981}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "D", start: {mon: 5, d: 7, wkd: [6]}, inherits: "Truman Day"},
         {type: "D", start: {mon: 5, d: 7}, inherits: "Natl Tourism Day", urls: {"en": "https://www.daysoftheyear.com/days/national-tourism-day/"}},
         {type: "D", start: {mon: 5, d: 8, wkd: [1, 7]}, inherits: "Truman Day"},
@@ -368,7 +366,8 @@
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en": "Prayer for Peace Memorial Day"}, urls: {"en": "https://nationaltoday.com/prayer-for-peace-memorial-day/"}, first: {era: 1, y: 1971}},
         {type: "D", start: {mon: 5, wkd: [2], nth: 2}, titles: {"en": "National Women’s Checkup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-checkup-day/"}, notes: {"en": "National Women’s Check-up Day"}, emoji: "👩"},
         {type: "D", start: {mon: 5, wkd: [4], nth: -1}, titles: {"en": "National Senior Health & Fitness Day"}, urls: {"en": "https://www.fitnessday.com/"}, notes: {"en": "National Senior Health and Fitness Day"}, emoji: "👴👵", first: {era: 1, y: 1993}},
-        {type: "D", start: {mon: 5, wkd: [5], nth: 1}, inherits: "Natl Day of Prayer", urls: {"en": "https://www.daysoftheyear.com/days/national-day-of-prayer/"}, first: {era: 1, y: 1984}},
+        {type: "D", start: {mon: 7, d: 4}, inherits: "US Natl Day of Prayer", first: {era: 1, y: 1952}, end: {era: 1, y: 1983}},
+        {type: "D", start: {mon: 5, wkd: [5], nth: 1}, inherits: "US Natl Day of Prayer", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 5, wkd: [6], nth: 2}, titles: {"en": "National Public Gardens Day"}, urls: {"en": "https://www.daysoftheyear.com/days/public-gardens-day/"}, notes: {"en": "Public Gardens Day"}, first: {era: 1, y: 2009}, emoji: "🪴⛲️"},
         {type: "D", start: {mon: 5, wkd: [6], nth: 3},  titles: {"en": "National Bike to School Day"}, urls: {"en": "https://nationaltoday.com/national-bike-to-school-day/"},first: {era: 1, y: 2012}, emoji: "🚲"},
         {type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en": "National Defense Transportation Day"}, urls: {"en": "https://nationaldaycalendar.com/national-defense-transportation-day-third-friday-in-may/"}, first: {era: 1, y: 1957}, emoji: "🛣"},
@@ -642,7 +641,6 @@
         {type: "nD", start: {mon: 4, d: 24}, end: {mon: 4, d: 30}, titles: {"en": "National Student Leadership Week"}, urls: {"en": "https://nationaltoday.com/national-student-leadership-week/"}, first: {era: 1, y: 1975}},
         {type: "nD", start: {mon: 4, d: 28, thruMon: 5, thruD: 4, wkd: [1]}, end: {mon: 5, d: 4, thruD: 10, wkd: [7]}, titles: {"en": "National Small Business Week"}, notes: {"en": "NSBW"}, urls: {"en": "https://www.sba.gov/national-small-business-week"}, emoji: "🏪", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 7}, titles: {"en": "National Physical Education and Sport Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-physical-education-and-sport-week/"}},
-        {type: "nD", start: {mon: 5, d: 6}, end: {mon: 5, d: 12}, titles: {"en": "National Nurse’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/nurses-week/"}, notes: {"en": "National Nurses Week"}, first: {era: 1, y: 1994}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "nD", start: {mon: 5, d: 9}, end: {mon: 5, d: 15}, titles: {"en": "National Stuttering Awareness Week"}, urls: {"en": "https://nationaltoday.com/national-stuttering-awareness-week/"}, first: {era: 1, y: 1988}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, titles: {"en": "National CPR and AED Awareness Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-cpr-and-aed-awareness-week/"}, first: {era: 1, y: 2007}, inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, titles: {"en": "National Flag Week", "he": "שבוע הדגל הלאומי"}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, first: {era: 1, y: 1966}},
@@ -746,6 +744,11 @@
         {type: "nD", start: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLens: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 3, d: 1}, inherits: "Peace Corps Day", first: {era: 1, y: 1961}},
         ]},
+        
+        {type: "nD", start: {mon: 5, d: 6}, end: {mon: 5, d: 12}, titles: {"en": "National Nurse’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/nurses-week/"}, notes: {"en": "National Nurses Week"}, first: {era: 1, y: 1974}, emoji: "👨‍⚕️👩‍⚕️", overlappingSubEvents: [
+            {type: "D", start: {mon: 5, d: 6}, titles: {"en": "National Nurses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-nurses-day/"}, notes: {"en": "National Recognition Day for Nurses\nNational Nurse’s Day\nNational RN Recognition Day\nCreated by Ronald Reagan"}, first: {era: 1, y: 1982}, emoji: "👨‍⚕️👩‍⚕️"},
+            {type: "D", start: {wkd: [4]}, titles: {"en": "National School Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", first: {era: 1, y: 1974}, notes: {"en": "Created by Gerald Ford"}},
+        ]},
 
     ],
     templates: [
@@ -772,5 +775,6 @@
         {template: "Natl Robotics Week", type: "nD", start: {mon: 4, d: 2, thruD: 8, wkd: [2], durD: 9}, titles: {"en": "National Robotics Week"}, urls: {"en": "https://www.nationalroboticsweek.org/"}, emoji: "⚙️", notes: {"en": "RoboWeek\nCreated by the US House of Representatives"}},
         {template: "Ag Day", type: "D", start: {mon: 3, d: 18, thruD: 24, wkd: [3]}, inherits: "Natl Agriculture Day", urls: {"en": "https://www.agday.org/"}, notes: {"en": "Created by the Agriculture Council of America (ACA)"}},
         {template: "Days of Remembrance of the Victims of the Holocaust", type: "nD", start: {mon: 8, d: 21, thruD: 27, wkd: [1]}, end: {mon: 8, d: 28, thruM: 9, thruD: 4, wkd: [1]}, titles: {"de":"Days of Remembrance","en":"Days of Remembrance of the Victims of the Holocaust"}, notes: {"en": "DRVH"}, urls: {"en": "https://en.wikipedia.org/wiki/Days_of_Remembrance_of_the_Victims_of_the_Holocaust"}},
+        {template: "US Natl Day of Prayer", type: "D", start: {mon: 5, wkd: [5], nth: 1}, inherits: "Natl Day of Prayer", urls: {"en": "https://www.daysoftheyear.com/days/national-day-of-prayer/"}, notes: {"en": "Created by Harry S Truman"}},
     ]
 }
