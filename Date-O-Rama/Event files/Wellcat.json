@@ -51,7 +51,7 @@
             {type: "D", start: {mon: 4, d: 26}, titles: {"en": "Hug an Australian Day"}},
             {type: "D", start: {mon: 5, d: 6}, titles: {"en": "No Homework Day"}},
             {type: "D", start: {mon: 5, d: 8}, titles: {"en": "No Socks Day"}},
-            {type: "D", start: {mon: 5, d: 11}, titles: {"en": "Eat What You Want Day", "he": "יום ה״אכול מה שאתה רוצה״"}},
+            {type: "D", start: {mon: 5, d: 11}, titles: {"en": "Eat What You Want Day", "he": "יום ה״אכול מה שאתה רוצה״"}, notes: {"en": "National Eat What You Want Day", "he": "יום ה״אכול מה שאתה רוצה״ הלאומי"}},
             {type: "D", start: {mon: 5, d: 18}, titles: {"en": "Send An Electronic Greeting Card Day"}},
             {type: "D", start: {mon: 5, d: 21}, titles: {"en": "I Need a Patch for That Day"}},
             {type: "D", start: {mon: 5, d: 28}, titles: {"en": "The Slugs Return From Capistrano Day"}},
