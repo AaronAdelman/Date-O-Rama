@@ -330,8 +330,6 @@
 		A577066E2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */; };
 		A57706702896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */; };
 		A57706712896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */; };
-		A57797CD2B8E582A00F68529 /* SA (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797CC2B8E582A00F68529 /* SA (Muslim).json */; };
-		A57797CE2B8E585500F68529 /* SA (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797CC2B8E582A00F68529 /* SA (Muslim).json */; };
 		A57797D02B8FC0A200F68529 /* SN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797CF2B8FC0A200F68529 /* SN (Muslim).json */; };
 		A57797D12B8FC0A200F68529 /* SN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797CF2B8FC0A200F68529 /* SN (Muslim).json */; };
 		A57797D32B8FC29900F68529 /* Islam (derived).json in Resources */ = {isa = PBXBuildFile; fileRef = A57797D22B8FC29900F68529 /* Islam (derived).json */; };
@@ -399,10 +397,6 @@
 		A58F39FB2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
 		A58F39FC2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
 		A58F39FD2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
-		A59125E12A3F270F000497D7 /* AF (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125E02A3F270F000497D7 /* AF (Muslim).json */; };
-		A59125E22A3F270F000497D7 /* AF (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125E02A3F270F000497D7 /* AF (Muslim).json */; };
-		A59125FE2A419144000497D7 /* AZ (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125FD2A419143000497D7 /* AZ (Muslim).json */; };
-		A59125FF2A419144000497D7 /* AZ (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59125FD2A419143000497D7 /* AZ (Muslim).json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593229225782AB800318BC3 /* ASALocationWithClocksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */; };
@@ -1464,7 +1458,6 @@
 		A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationMenuSymbol.swift; sourceTree = "<group>"; };
 		A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGetInfoLabel.swift; sourceTree = "<group>"; };
 		A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockMenuSymbol.swift; sourceTree = "<group>"; };
-		A57797CC2B8E582A00F68529 /* SA (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SA (Muslim).json"; sourceTree = "<group>"; };
 		A57797CF2B8FC0A200F68529 /* SN (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SN (Muslim).json"; sourceTree = "<group>"; };
 		A57797D22B8FC29900F68529 /* Islam (derived).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islam (derived).json"; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
@@ -1503,8 +1496,6 @@
 		A58DFAD02EC1B2C800979AD1 /* UNITED.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UNITED.json; sourceTree = "<group>"; };
 		A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGregorianCalendar.swift; sourceTree = "<group>"; };
 		A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithEaster.swift; sourceTree = "<group>"; };
-		A59125E02A3F270F000497D7 /* AF (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AF (Muslim).json"; sourceTree = "<group>"; };
-		A59125FD2A419143000497D7 /* AZ (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AZ (Muslim).json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
 		A5987C4E2A083337008A9E90 /* Theosophy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Theosophy.json; sourceTree = "<group>"; };
@@ -2002,7 +1993,6 @@
 				A5AD8B272F390142008160FF /* Adrienne Sioux Koopersmith.json */,
 				A5EFFFD8285B855E00F2205F /* AE.json */,
 				A5E292DC285A606E00925EBD /* AF.json */,
-				A59125E02A3F270F000497D7 /* AF (Muslim).json */,
 				A51128062887381000476792 /* AF (Persian).json */,
 				A5A62D352A322BD500EDBB6D /* African Union.json */,
 				A5E292E5285A61D900925EBD /* AG.json */,
@@ -2023,7 +2013,6 @@
 				A5E292EB285A62B600925EBD /* AW.json */,
 				A5B999A1286229A300072FD5 /* AX.json */,
 				A501C8022861F97900211E33 /* AZ.json */,
-				A59125FD2A419143000497D7 /* AZ (Muslim).json */,
 				A5D85098280C8E7A005247BD /* BA.json */,
 				A554AFA2294F7CED0068D8E0 /* BA (Julian).json */,
 				A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */,
@@ -2314,7 +2303,6 @@
 				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A502D3E428637E7000A625A9 /* RW.json */,
 				A5EFFF9A285B7F2E00F2205F /* SA.json */,
-				A57797CC2B8E582A00F68529 /* SA (Muslim).json */,
 				A502D3E728637F5000A625A9 /* SB.json */,
 				A501C7FC285F75D100211E33 /* SC.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
@@ -2936,7 +2924,6 @@
 				A5EF0013285B8EEB00F2205F /* SO (Muslim).json in Resources */,
 				A5A62D432A37665400EDBB6D /* ET (Julian).json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
-				A59125FF2A419144000497D7 /* AZ (Muslim).json in Resources */,
 				A59D90682E8C081B0057D110 /* Confucianism (supplemental).json in Resources */,
 				A5FB22C228638F8700B5042B /* TL.json in Resources */,
 				A5E49659286254FA001BF40C /* NU.json in Resources */,
@@ -3174,7 +3161,6 @@
 				A5C175032F06A95000FE601D /* Discworld.json in Resources */,
 				A5B999A0286228E000072FD5 /* AM.json in Resources */,
 				A5D850AF280C95F6005247BD /* ZA.json in Resources */,
-				A59125E22A3F270F000497D7 /* AF (Muslim).json in Resources */,
 				A5EFFF67285B61E500F2205F /* CI.json in Resources */,
 				A5E4960328624F55001BF40C /* GS.json in Resources */,
 				A54F561C2E7BE79900079BC0 /* AHA.json in Resources */,
@@ -3184,7 +3170,6 @@
 				A5FB22C528638F9D00B5042B /* TM.json in Resources */,
 				A5E292F6285A658200925EBD /* BZ.json in Resources */,
 				A5B999B328622B1800072FD5 /* BV.json in Resources */,
-				A57797CE2B8E585500F68529 /* SA (Muslim).json in Resources */,
 				A575913F282BE18400675058 /* IE.json in Resources */,
 				A5E292F0285A644000925EBD /* BH.json in Resources */,
 				A50DA52728686272008D54AE /* ID (Chinese).json in Resources */,
@@ -3419,7 +3404,6 @@
 				A574648129B3D734008A664D /* Dudeism.json in Resources */,
 				A5C707C92B98F52500E3E0A4 /* RS (Julian).json in Resources */,
 				A5D3D7DB27F8DB950099718A /* International.json in Resources */,
-				A59125E12A3F270F000497D7 /* AF (Muslim).json in Resources */,
 				A5EFFFAA285B7F2E00F2205F /* SL.json in Resources */,
 				A5B6AB6B2B20BB8A00C4AACB /* MU (Chinese).json in Resources */,
 				A581B87F284E55E500407D68 /* GR.json in Resources */,
@@ -3574,7 +3558,6 @@
 				A5FB22A928638D2B00B5042B /* SH.json in Resources */,
 				A5EF0010285B8EEB00F2205F /* SD (Muslim).json in Resources */,
 				A5364D972850F9D500054BC2 /* Sunni Islam (times, MWL).json in Resources */,
-				A59125FE2A419144000497D7 /* AZ (Muslim).json in Resources */,
 				A5EF0012285B8EEB00F2205F /* SO (Muslim).json in Resources */,
 				A5364D9B2850FC7E00054BC2 /* Shia (times, Tehran).json in Resources */,
 				A53639A026EF7A000083C571 /* Western Christianity (general).json in Resources */,
@@ -3627,7 +3610,6 @@
 				A5EB851E2869EC7E00C9321A /* EG (Coptic).json in Resources */,
 				A5F0F7602B3DFB5B00A8BB12 /* NG (Muslim).json in Resources */,
 				A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */,
-				A57797CD2B8E582A00F68529 /* SA (Muslim).json in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E496232862525C001BF40C /* KY.json in Resources */,
 				A5746303299C23A600896FC7 /* XK.json in Resources */,
