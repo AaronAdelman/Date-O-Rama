@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Robert Birch"},
+    titles: {"en": "Robert L. Birch"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {red: 0.23, green: 0.99, blue: 0.23},

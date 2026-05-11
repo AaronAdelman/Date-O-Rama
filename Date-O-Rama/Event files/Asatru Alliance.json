@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Asatru Alliance"},
+    titles: {"en":"Ásatrú Alliance","es":"Ásatrú Alliance","it":"Asatru Alliance","uk":"Альянс Асатру"},
     defaultLocale: "en",
     calendarCode: "gre*",
     calendarColor: {red: 0.5, green: 0.6, blue: 0.7},
