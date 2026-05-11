@@ -173,7 +173,7 @@
         {type: "D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, inherits: "Natl Numeracy Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2023}},
         {type: "D", start: {mon: 5, wkd: [4], d: 18, thruD: 24}, inherits: "Natl Numeracy Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 5, wkd: [4], nth: 3}, urls: {"en": "https://nationaltoday.com/national-numeracy-day-uk/"}, titles: {"en": "National Numeracy Day"}, first: {era: 1, y: 2018}},
-        {type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en": "Hats for Headway Day"}, urls: {"en": "https://www.headway.org.uk/about-headway/our-organisation/events-and-conferences/hats-for-headway-day"}, emoji: "👒", first: {era: 1, y: 2024}, inherits: "*MedAwareness*"},
+        {type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en": "Hats for Headway Day"}, urls: {"en": "https://www.headway.org.uk/about-headway/our-organisation/events-and-conferences/hats-for-headway-day"}, emoji: "👒", first: {era: 1, y: 2024}, inherits: "*MedAwareness*", notes: {"en": "Created by Headway"}},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "Natl Bug Busting Day"},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "Beer Day Britain"}, urls: {"en": "https://www.beerdaybritain.co.uk/"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
