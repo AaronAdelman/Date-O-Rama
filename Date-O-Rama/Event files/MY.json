@@ -23,6 +23,7 @@
         {type: "D", start: {zmoPhase: "full1", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 5, d: 17}, titles: {"en": "Birthday of the Raja of Perlis", "ms": "Hari Keputeraan Raja Perlis"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, inherits: "*BDay*", first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 5, d: 18, wkd: [2]}, titles: {"en": "Birthday of the Raja of Perlis (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, inherits: "*BDay*", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "The Sultan of Pahang Hol", "ms": "Hari Hol Pahang"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/pahang/the-sultan-of-pahang-hol"}, first: {era: 1, y: 2021}, inherits: "*DeathAnniv*"},
         {type: "nD", start: {mon: 5, d: 30, durD: 2}, titles: {"ar":"كاماتان","dtp":"Tadau Kaamatan","en":"Kaamatan","iba":"Kaamatan","id":"Tadau Kaamatan","ko":"카아마탄","la":"Kaamatan","ms":"Pesta Kaamatan","yue":"豐收節","zh":"豐收節"}, notes: {"en": "Kaamatan Festival\nHarvest Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/kaamatan-festival/"}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}, inherits: "Gawai Dayak", first: {era: 1, y: 1963}},
