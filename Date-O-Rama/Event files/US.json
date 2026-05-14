@@ -367,7 +367,6 @@
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, titles: {"en": "Mothers at the Wall Day"}, urls: {"en": "https://nationaltoday.com/mothers-at-the-wall-day/"}},
         {type: "D", start: {mon: 5, wkd: [1], nth: 3}, titles: {"en": "Stepmother’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/stepmothers-day/"}, first: {era: 1, y: 2000}, inherits: "Mother’s Day", notes: {"en": "Created by Lizzie Capuzzi"}},
         {type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en": "Prayer for Peace Memorial Day"}, urls: {"en": "https://nationaltoday.com/prayer-for-peace-memorial-day/"}, first: {era: 1, y: 1971}},
-        {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "National Women’s Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-health-week/"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩"},
         {type: "D", start: {mon: 5, wkd: [2], nth: 2}, titles: {"en": "National Women’s Checkup Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-checkup-day/"}, notes: {"en": "National Women’s Check-up Day"}, emoji: "👩", notes: {"en": "Created by the US Department of Health and Human Services"}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 5, wkd: [4], nth: -1}, titles: {"en": "National Senior Health & Fitness Day"}, urls: {"en": "https://www.fitnessday.com/"}, notes: {"en": "National Senior Health and Fitness Day"}, emoji: "👴👵", first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 7, d: 4}, inherits: "US Natl Day of Prayer", first: {era: 1, y: 1952}, end: {era: 1, y: 1983}},
@@ -753,7 +752,10 @@
             {type: "D", start: {mon: 5, d: 6}, titles: {"en": "National Nurses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-nurses-day/"}, notes: {"en": "National Recognition Day for Nurses\nNational Nurse’s Day\nNational RN Recognition Day\nCreated by Ronald Reagan"}, first: {era: 1, y: 1982}, emoji: "👨‍⚕️👩‍⚕️"},
             {type: "D", start: {wkd: [4]}, titles: {"en": "National School Nurse Day"}, urls: {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", first: {era: 1, y: 1974}, notes: {"en": "Created by Gerald Ford"}},
         ]},
-
+        
+        {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "National Women’s Health Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-womens-health-week/"}, first: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩", nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [3]}, titles: {"en": "Sex Differences in Health Awareness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sex-differences-in-health-awareness-day/"}, emoji: "🩺👩👨", first: {era: 1, y: 2016}, notes: {"en": "Created by the Society for Women’s Health Research (SWHR)"}},
+        ]},
     ],
     templates: [
         {template: "Natl Teacher Day", type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en": "National Teacher Day"}, notes: {"en": "National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫", notes: {"en": "Created by Eleanor Roosevelt"}},
