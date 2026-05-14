@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 1, d: 11}, inherits: "Natl Milk Day", urls: {"en": "https://www.daysoftheyear.com/days/milk-day/"}, first: {era: 1, y: 1915}, notes: {"en": "Created by the International Association of Milk Inspectors"}},
         {type: "D", start: {mon: 1, d: 11}, inherits: "Natl Singles Day", first: {era: 1, y: 2014}, last: {era: 1, y: 2016}},
         {type: "D", start: {mon: 11, d: 24}, titles: {"en": "Brownielocks Day"}, notes: {"en": "Big Hair Day\nBrunette Pride Day\nIt seems that people of every hair color want to celebrate it for some reason."}, first: {era: 1, y: 2013}, urls: {"en": "https://www.brownielocks.com/brownielocksday.html"}},
-       {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Learn Your Name in Morse Code Day"}, notes: {"en": "National Learn Your Name in Morse Code Day\nMorse Code Day\nLearn Morse Code Day\nCreated by Brownielocks"}, urls: {"en": "https://www.brownielocks.com/learnyournameinmcday.html"}, emoji: "·-"},
+        {type: "D", start: {mon: 1, d: 11}, titles: {"en": "Learn Your Name in Morse Code Day"}, notes: {"en": "National Learn Your Name in Morse Code Day\nMorse Code Day\nLearn Morse Code Day\nCreated by Brownielocks"}, urls: {"en": "https://www.brownielocks.com/learnyournameinmcday.html"}, emoji: "·-"},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Girl Hug Boy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-girl-hug-boy-day/"}, emoji: "🫂", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Hot Toddy Day"}, notes: {"en": "Hot Toddy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-toddy-day/"}, emoji: "☕️"},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en": "National Step in a Puddle and Splash Your Friends Day"}, notes: {"en": "Step in a Puddle and Splash Your Friends Day\nCreated by Anita Silvey"}, urls: {"en": "https://www.daysoftheyear.com/days/step-in-a-puddle-and-splash-your-friends-day/"}, first: {era: 1, y: 2012}, emoji: "💦"},
@@ -413,7 +413,7 @@
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Pâté Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-pate-day/"}},
         {type: "D", start: {mon: 11, d: 1}, titles: {"en": "National Vinegar Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vinegar-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "Area Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/area-code-day/"}},
-    {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}, notes: {"en": "Created by Judge Robert S. Marx"}},
+        {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}, notes: {"en": "Created by Judge Robert S. Marx"}},
         {type: "D", start: {mon: 11, d: 10}, titles: {"en": "National Vanilla Cupcake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/vanilla-cupcake-day/"}, emoji: "🧁"},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "Air Day"}, urls: {"en": "https://www.checkiday.com/22d1e1a820d1271f6fb99efd1a51533f/air-day"}, first: {era: 1, y: 1929}, emoji: "✈️", notes: {"en": "Created by Lawrence Judd"}},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en": "National Metal Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-metal-day/"}, first: {era: 1, y: 2011}, emoji: "🎸", notes: {"en": "Created by VH1 Classic"}},
@@ -1247,15 +1247,13 @@
         {type: "D", start: {mon: 4, wkd: [2], nth: 3}, inherits: "Boston Marathon Day", first: {era: 1, y: 1969}, end: {era: 1, y: 2019}},
         {type: "D", start: {mon: 4, wkd: [2], nth: 3}, inherits: "Boston Marathon Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 4, wkd: [3], nth: 1}, titles: {"en": "National Sexual Assault Awareness Month’s Day of Action"}, urls: {"en": "https://nationaltoday.com/national-sexual-assault-awareness-months-day-of-action/"}},
+        {type: "D", start: {mon: 4, wkd: [3], nth: 4}, titles: {"en": "National Parvo Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-parvo-awareness-day/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 5, d: 7, thruD: 13, wkd: [7]}, titles: {"en": "Martin Z. Mollusk Day"}, urls: {"en": "https://www.daysoftheyear.com/days/martin-z-mollusk-day/"}, first: {era: 1, y: 1974}, notes: {"en": "Created by Mark Soifer"}},
         {type: "D", start: {mon: 4, wkd: [4], nth: -1}, inherits: "Whole Grain Sampling Day", first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 1}, inherits: "A Whole Day for Whole Grain", first: {era: 1, y: 2012}, end: {era: 1, y: 2015}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 1}, titles: {"en": "National Walking Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-walking-day/"}, emoji: "🥾", first: {era: 1, y: 2007}, notes: {"en": "Created by the American Heart Association"}},
         {type: "D", start: {mon: 4, wkd: [4], nth: 3}, titles: {"en": "National Banana Day"}, emoji: "🍌", notes: {"en": "Banana Day"}, urls: {"en": "https://www.daysoftheyear.com/days/banana-day/"}},
         {type: "D", start: {mon: 4, wkd: [5], nth: 1}, titles: {"en": "National Burrito Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-burrito-day/"}},
-        {type: "D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 1996}, end: {era: 1, y: 2016}},
-        {type: "D", start: {era: 1, y: 2017, mon: 4, d: 8}, inherits: "Natl Auctioneers Day"},
-        {type: "D", start: {mon: 5, wkd: [7], nth: 1}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 2018}},
         {type: "D", start: {mon: 4, wkd: [5], nth: 3}, titles: {"en": "National High Five Day"}, urls: {"en": "http://nationalhighfiveday.com/"}, first: {era: 1, y: 2002}, emoji: "🖐️"},
         {type: "D", start: {mon: 4, wkd: [5], nth: 4}, titles: {"en": "National Take Our Daughters and Sons to Work Day"}, urls: {"en": "https://daughtersandsonstowork.org/"}, notes: {"en": "Take Our Daughters and Sons to Work Day\nCreated by Ms. Foundation for Women"}, first: {era: 1, y: 2003}, emoji: "👧👦"},
         {type: "D", start: {mon: 4, wkd: [5], nth: 4}, titles: {"en": "National Teach Your Children to Save Day"}, urls: {"en": "https://www.daysoftheyear.com/days/teach-your-children-to-save-day/"}, notes: {"en": "National Teach Children to Save Day"}, emoji: "👦👧", first: {era: 1, y: 1997}, notes: {"en": "Created by the American Bankers Association"}},
@@ -2472,7 +2470,7 @@
         {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Surgical Technologists Week"}, urls: {"en": "https://www.ast.org/AboutUs/NSTW/"}, first: {era: 1, y: 1984}, notes: {"en": "Created by the Association of Surgical Technologists"}},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [2], durD: 5}, titles: {"en": "Newspaper in Education Week"}, notes: {"en": "Newspapers in Education Week\nCreated by the Wisconsin Newspaper Association"}, urls: {"en": "https://www.daysoftheyear.com/days/newspaper-in-education-week/"}, first: {era: 1, y: 1982}, emoji: "📰"},
         {type: "D", start: {mon: 4, d: 30}, titles: {"en": "Spank Out Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spank-out-day/"}, first: {era: 1, y: 1998}, notes: {"en": "Created by EPOCH-USA"}},
-
+        
         {type: "nD", start: {mon: 10, d: 4, thruD: 10, wkd: [1], durD: 7}, inherits: "Natl Metric Week", first: {era: 1, y: 1983}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 10}, titles: {"en": "National Metric Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
         ]},
@@ -2511,7 +2509,7 @@
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Family Reading Week"}, emoji: "📚", first: {era: 1, y: 1995}, nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [5]}, titles: {"en": "Make a Book Day"}, notes: {"en": "Make-A-Book Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-book-day/"}, emoji: "📖", first: {era: 1, y: 2000}},
         ]},
-
+        
         {type: "W", start: {mon: 6, fullWk: 1}, titles: {"en": "National Frozen Yogurt Week", "he": "שבוע הפרוזן יוגורט הלאומי"}, first: {era: 1, y: 1993}, urls: {"en": "https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 6, wkd: [1], nth: 1}, inherits: "Natl Frozen Yogurt Day", urls: {"en": "https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}},
         ]},
@@ -2532,7 +2530,7 @@
         {type: "W", start: {mon: 9, fullWk: 3}, titles: {"en": "National Singles Week"}, urls: {"en": "https://www.nationaldaycalendar.com/september/national-singles-week-third-full-week-in-september"}, notes: {"en": "Created by the Buckeye Singles Council of Columbus, Ohio"}, first: {era: 1, y: 1980}, nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [7]}, inherits: "Natl Singles Day", first: {era: 1, y: 2017}},
         ]},
-
+        
         {type: "nD", start: {mon: 10, d: 6}, end: {mon: 10, d: 12}, titles: {"en": "PA Week"}, urls: {"en": "https://www.aapa.org/pas-go-beyond/pa-week/"}, first: {era: 1, y: 1987}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 10, d: 6}, titles: {"en": "National PA Day"}, urls: {"en": "https://www.daysoftheyear.com/days/physician-assistant-day/"}, notes: {"en": "National Physician’s Assistant Day\nNational Physician Assistant Day\nNational Physician Assistants Day\nCreated by Duke University"}, first: {era: 1, y: 1987}},
         ]},
@@ -2554,12 +2552,16 @@
             {type: "D", start: {mon: 8, yLens: [365]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
             {type: "D", start: {mon: 9}, inherits: "National Blame Someone Else Day"},
             {type: "D", start: {mon: 11, yLens: [366]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-        ]
-        },
+        ]},
         
         {type: "nD", start: {mon: 2, d: 25, thruMon: 3, thruD: 3, wkd: [1], yLens: [365]}, end: {mon: 3, d: 3, thruD: 9, wkd: [7]}, inherits: "Telecommuter Appreciation Week", first: {era: 1, y: 1993}},
         {type: "nD", start: {mon: 2, d: 26, thruMon: 3, thruD: 3, wkd: [1], yLens: [366]}, end: {mon: 3, d: 3, thruD: 9, wkd: [7]}, inherits: "Telecommuter Appreciation Week", first: {era: 1, y: 1993}},
-
+        
+        {type: "nD", start: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [2]}, end: {mon: 5, d: 1, thruD: 7, wkd: [7]}, titles: {"en": "National Auctioneers Week"}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 2018}, nonoverlappingSubEvents: [
+            {type: "D", start: {mon: 4, wkd: [7], nth: 3}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 1996}, end: {era: 1, y: 2016}},
+            {type: "D", start: {era: 1, y: 2017, mon: 4, d: 8}, inherits: "Natl Auctioneers Day"},
+            {type: "D", start: {mon: 5, wkd: [7], nth: 1}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 2018}},
+        ]},
     ],
     templates: [
         {template: "National Blame Someone Else Day", type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en": "National Blame Someone Else Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blame-someone-else-day/"}, emoji: "👉👈", notes: {"en": "Observance of this observance may get you in trouble.  Don’t blame us.\nCreated by Anne Moeller"}},
