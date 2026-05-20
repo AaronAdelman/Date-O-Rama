@@ -1371,7 +1371,7 @@
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "Anniversary of the Judgement of Paris"}, urls: {"en": "https://winefolly.com/lifestyle/national-wine-day/"}},
         {type: "D", start: {mon: 5, d: 24}, inherits: "Natl Asparagus Day", urls: {"en": "https://nationaltoday.com/national-asparagus-day/"}, first: {era: 1, y: 1973}},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "Denny’s Endless Breakfast Day"}, urls: {"en": "https://nationaltoday.com/endless-breakfast-day/"}, first: {era: 1, y: 2022}, emoji: "🥞🧇"},
-        {type: "D", start: {mon: 5, d: 24}, titles: {"en": "National Caterers Appreciation Day"}, urls: {"en": "https://nationaltoday.com/national-caterers-appreciation-day/"}, first: {era: 1, y: 2022}, emoji: "👨‍🍳👩‍🍳"},
+        {type: "D", start: {mon: 5, d: 24}, titles: {"en": "National Caterers Appreciation Day"}, urls: {"en": "https://nationaltoday.com/national-caterers-appreciation-day/"}, first: {era: 1, y: 2022}, emoji: "👨‍🍳👩‍🍳", notes: {"en": "Created by Food Service Direct"}},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "National Escargot Day"}, urls: {"en": "https://www.daysoftheyear.com/days/escargot-day/"}, emoji: "🐌"},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "National Scavenger Hunt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-scavenger-hunt-day/"}},
         {type: "D", start: {mon: 5, d: 25}, inherits: "Natl Wine Day", urls: {"en": "https://www.daysoftheyear.com/days/wine-day/"}},

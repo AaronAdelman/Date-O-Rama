@@ -51,7 +51,7 @@
         {type: "D", start: {era: 1, y: 2025, mon: 10, d: 25}, inherits: "Municipal Elections"},
         {type: "nD", start: {mon: 2, d: 3, thruD: 9, wkd: [6], durD: 9}, titles: {"en": "Tapati Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/tapati-festival/"}, first: {era: 1, y: 1960}},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [6], durD: 3}, titles: {"en": "Colchagua Wine Festival"}, notes: {"en": "Colchagua Grape Harvest Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/colchagua-wine-festival/"}, emoji: "🍷🍇", first: {era: 1, y: 2000}},
-        {type: "D", start: {mon: 5, d: 24}, titles: {"es": "Día del Completo"}, emoji: "🌭", urls: {"en": "https://www.daysoftheyear.com/days/dia-del-completo/"}, first: {era: 1, y: 2009}},
+        {type: "D", start: {mon: 5, d: 24}, titles: {"es": "Día del Completo"}, emoji: "🌭", urls: {"en": "https://www.daysoftheyear.com/days/dia-del-completo/"}, first: {era: 1, y: 2009}, notes: {"en": "Created by Dominó"}},
         {type: "nD", start: {mon: 7, d: 10}, end: {mon: 7, d: 16}, titles: {"en": "Fiesta de la Tirana", "es": "Fiesta de la Tirana"}, urls: {"en": "https://www.daysoftheyear.com/days/fiesta-de-la-tirana/"}, first: {era: 1, y: 1500}},
         {type: "D", start: {mon: 8, d: 18}, inherits: "Solidarity Day", urls: {"en": "https://www.daysoftheyear.com/days/solidarity-day-in-chile/"}, first: {era: 1, y: 1978}},
         {type: "D", start: {mon: 7, d: 9}, inherits: "Lesbian Visibility Day", first: {era: 1, y: 2015}},
