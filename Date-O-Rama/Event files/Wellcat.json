@@ -54,7 +54,7 @@
             {type: "D", start: {mon: 5, d: 11}, titles: {"en": "Eat What You Want Day", "he": "יום ה״אכול מה שאתה רוצה״"}, notes: {"en": "National Eat What You Want Day", "he": "יום ה״אכול מה שאתה רוצה״ הלאומי"}},
             {type: "D", start: {mon: 5, d: 18}, titles: {"en": "Send An Electronic Greeting Card Day"}},
             {type: "D", start: {mon: 5, d: 21}, titles: {"en": "I Need a Patch for That Day"}},
-            {type: "D", start: {mon: 5, d: 28}, titles: {"en": "The Slugs Return From Capistrano Day"}},
+            {type: "D", start: {mon: 5, d: 28}, titles: {"en": "The Slugs Return From Capistrano Day"}, first: {era: 1, y: 2011}},
             {type: "D", start: {mon: 6, d: 2}, titles: {"en": "Yell “Fudge” at the Cobras in North America Day"}},
             {type: "D", start: {mon: 6, d: 14}, titles: {"en": "Family History Day"}},
             {type: "D", start: {mon: 6, d: 22}, titles: {"en": "Stupid Guy Thing Day"}},
