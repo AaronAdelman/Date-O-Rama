@@ -164,7 +164,7 @@
         {type: "D", start: {mon: 5, d: 17}, titles: {"en": "National Work From Home Day"}, urls: {"en": "https://www.workwiseuk.org/"}, emoji: "🏠"},
         {type: "D", start: {mon: 5, d: 21, thruD: 27, wkd: [5]}, titles: {"en": "Red Nose Day"}, urls: {"en": "https://www.comicrelief.org/red-nose-day"}, emoji: "🔴", first: {era: 1, y: 1988}, notes: {"en": "Created by Comic Relief"}},
         {type: "D", start: {mon: 5, d: 29}, titles: {"en": "National Biscuit Day", "he": "יום הביסקוויט הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/biscuit-day/"}, emoji: "🍪"},
-        {type: "D", start: {mon: 5, d: 29}, titles: {"en": "Oak Apple Day"}, urls: {"en": "https://www.daysoftheyear.com/days/oak-apple-day/"}, first: {era: 1, y: 1660}, emoji: "🌳"},
+        {type: "D", start: {mon: 5, d: 29}, titles: {"en":"Oak Apple Day","nn":"Oak Apple Day"}, urls: {"en": "https://www.daysoftheyear.com/days/oak-apple-day/"}, first: {era: 1, y: 1660}, emoji: "🌳"},
         {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Firefighters’ Memorial Day"}, urls: {"en": "https://www.daysoftheyear.com/days/firefighters-memorial-day/"}, first: {era: 1, y: 1991}, emoji: "👨‍🚒👩‍🚒"},
         {type: "D", start: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "NCDUK", first: {era: 1, y: 1954}, last: {era: 1, y: 2024}},
