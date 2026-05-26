@@ -18,6 +18,7 @@
         {type: "D", start: {mon: 5, d: 5, wkd: [2]}, titles: {"en": "Cassinga Day (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/namibia/cassinga-day"}, first: {era: 1, y: 1978}},
         {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", urls: {"en": "https://www.officeholidays.com/holidays/namibia/african-unity-day"}, first: {era: 1, y: 1963}},
+        {type: "D", start: {mon: 5, d: 28}, titles: {"en": "Genocide Memorial Day"}, urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-genocide-memorial-day"}, first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 8, d: 26}, inherits: "Heroes’ Day", urls: {"en": "https://www.officeholidays.com/holidays/namibia/namibia-heroes-day"}},
         {type: "D", start: {mon: 12, d: 10}, inherits: "Human Rights Day", urls: {"en": "https://www.officeholidays.com/holidays/namibia/international-human-rights-day"}, first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 12, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/namibia/international-human-rights-day"}, inherits: "Human Rights Day (in lieu)"},
