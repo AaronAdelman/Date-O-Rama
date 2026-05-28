@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 2, d: 13}, titles: {en: "Pal-o-mine’s Day"}},
         {type: "nD", start: {mon: 2, d: 27}, end: {mon: 3, d: 6}, titles: {en: "Hangover"}},
         {type: "D", start: {mon: 3, d: 6}, titles: {"en": "Day of the Dude"}, first: {era: 1, y: 2005}},
-        {type: "D", start: {Easter: "Easter"}, titles: {en: "Take it Easyster"}},
+        {type: "D", start: {misc: "Easter"}, titles: {en: "Take it Easyster"}},
         {type: "D", start: {mon: 4, d: 1}, titles: {en: "April Dude’s Day"}},
         {type: "D", start: {mon: 4, d: 20}, titles: {en: "Limber Day"}},
         {type: "D", calendarCode: "Hebrew", start: {mon: 8, d: 15},

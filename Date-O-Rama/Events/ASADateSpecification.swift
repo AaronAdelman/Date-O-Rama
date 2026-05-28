@@ -72,10 +72,10 @@ struct ASADateSpecification:  Codable {
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
     
-    // For Easter-related events
-    var easter: ASAEasterType?
+//    // For Easter-related events
+//    var easter: ASAEasterType?
     
-    // For equinox and solstice events
+    // For miscellaneous events
     var miscellaneous:  ASAMiscellaneousType?
     
     // For time change events
@@ -114,7 +114,7 @@ struct ASADateSpecification:  Codable {
         case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
-        case easter              = "Easter"
+//        case easter              = "Easter"
         case offsetDays          = "offsetD"
         case miscellaneous       = "misc"
         case timeChange

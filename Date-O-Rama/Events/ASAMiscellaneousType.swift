@@ -14,6 +14,7 @@ enum ASAMiscellaneousType:  String, Codable {
     case JuneSolstice     = "Jun"
     case SeptemberEquinox = "Sep"
     case DecemberSolstice = "Dec"
+    case Easter           = "Easter"
 } // enum ASAMiscellaneousType
 
 extension ASAMiscellaneousType {
@@ -25,5 +26,9 @@ extension ASAMiscellaneousType {
         default:
             return false
         }
+    }
+    
+    var isEaster: Bool {
+        return self == .Easter
     }
 }

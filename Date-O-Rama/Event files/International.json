@@ -9,7 +9,7 @@
         {type: "D", start: {dOfY: 182}, titles: {"en": "Blink-182 Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blink-182-day/"}, notes: {"en": "Blink 182 Day"}},
         {type: "D", start: {dOfY: 256}, inherits: "Programmers Day", first: {era: 1, y: 2002}},
         {type: "D", start: {dOfY: 88}, titles: {"en": "Piano Day", "he": "יום הפסנתר"}, notes: {"he": "יום הפסנתר הבינלאומי", "en": "World Piano Day\nCreated by Nils Frahm"}, urls: {"en": "https://www.pianoday.org/"}, emoji: "🎹", first: {era: 1, y: 2015}},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, titles: {"en": "World Marbles Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-marbles-day/"}, first: {era: 1, y: 1588}},
+        {type: "D", start: {misc: "Easter", offsetD: -2}, titles: {"en": "World Marbles Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-marbles-day/"}, first: {era: 1, y: 1588}},
         {type: "D", start: {misc: "Jun"}, inherits: "World Lambrusco Day", first: {era: 1, y: 2011}, last: {era: 1, y: 2020}},
         {type: "D", start: {misc: "Jun"}, titles: {"en": "Cuckoo Warning Day"}, emoji: "🐦", urls: {"en": "https://www.jeanneukwendu.com/2011/cuckoo-warning-day-june-21"}, first: {era: 1, y: 2011}},
         {type: "D", start: {misc: "Jun"}, titles: {"en": "The Longest Day"}, emoji: "⏰", urls: {"en": "https://act.alz.org/site/SPageServer?pagename=the_longest_day"}, inherits: "*MedAwareness*"},

@@ -32,7 +32,6 @@
 		A502D3EC286380E700A625A9 /* SD.json in Resources */ = {isa = PBXBuildFile; fileRef = A502D3EA286380E700A625A9 /* SD.json */; };
 		A505E6DA27903D7F00D09A74 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A505E6DB27903D7F00D09A74 /* ASAMoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */; };
-		A505E6DC27903D7F00D09A74 /* ASAEasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D4278B144B001562C1 /* ASAEasterType.swift */; };
 		A505E6DD27903D7F00D09A74 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
 		A505E6DE27903D7F00D09A74 /* ASAMiscellaneousType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */; };
 		A505E6DF27903D7F00D09A74 /* ASADayHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */; };
@@ -710,8 +709,6 @@
 		A5D850BE280C9A69005247BD /* MY.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D850BC280C9A69005247BD /* MY.json */; };
 		A5D850C0280C9B5F005247BD /* DE.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D850BF280C9B5F005247BD /* DE.json */; };
 		A5D850C1280C9B5F005247BD /* DE.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D850BF280C9B5F005247BD /* DE.json */; };
-		A5DB52D5278B144B001562C1 /* ASAEasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D4278B144B001562C1 /* ASAEasterType.swift */; };
-		A5DB52D6278B144B001562C1 /* ASAEasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D4278B144B001562C1 /* ASAEasterType.swift */; };
 		A5DB52D8278B1880001562C1 /* ASAMoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */; };
 		A5DB52D9278B1880001562C1 /* ASAMoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */; };
 		A5DB52DB278B23EB001562C1 /* ASADayHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */; };
@@ -1656,7 +1653,6 @@
 		A5D850B9280C99B4005247BD /* BR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BR.json; sourceTree = "<group>"; };
 		A5D850BC280C9A69005247BD /* MY.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MY.json; sourceTree = "<group>"; };
 		A5D850BF280C9B5F005247BD /* DE.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DE.json; sourceTree = "<group>"; };
-		A5DB52D4278B144B001562C1 /* ASAEasterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEasterType.swift; sourceTree = "<group>"; };
 		A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMoonPhase.swift; sourceTree = "<group>"; };
 		A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADayHalf.swift; sourceTree = "<group>"; };
 		A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventSpecificationType.swift; sourceTree = "<group>"; };
@@ -2579,7 +2575,6 @@
 			children = (
 				A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */,
 				A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */,
-				A5DB52D4278B144B001562C1 /* ASAEasterType.swift */,
 				A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */,
 				A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */,
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
@@ -3785,7 +3780,6 @@
 				A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */,
 				A5AAA74D2656D669000C18AC /* ASALinkedEventCell.swift in Sources */,
 				A566F47D2483D7CF000A05B5 /* ASATimeFormat.swift in Sources */,
-				A5DB52D6278B144B001562C1 /* ASAEasterType.swift in Sources */,
 				A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */,
 				A5D135C327C545AE00A1A525 /* ASACalendarWithEras.swift in Sources */,
 				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
@@ -3916,7 +3910,6 @@
 				A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */,
 				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
 				A5CF4653280F2E3F0088738D /* Line.swift in Sources */,
-				A5DB52D5278B144B001562C1 /* ASAEasterType.swift in Sources */,
 				A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
@@ -4062,7 +4055,6 @@
 				A59D80412600C59200FD8BBF /* ASAClock.swift in Sources */,
 				A53437522857971800F8E8AF /* ASABoothCalendar.swift in Sources */,
 				A5A6FD5427BEC863003595D5 /* ASACalendarWithBlankMonths.swift in Sources */,
-				A505E6DC27903D7F00D09A74 /* ASAEasterType.swift in Sources */,
 				A5166C792EE9DE8000F23048 /* ASALDMLApplier.swift in Sources */,
 				A5A6FD5527BEC88E003595D5 /* ASADateFormatPatternComponent.swift in Sources */,
 				A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */,
