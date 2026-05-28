@@ -71,15 +71,9 @@ struct ASADateSpecification:  Codable {
     var asrJuristicMethod: ASAJuristicMethodForAsr?
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
-    
-//    // For Easter-related events
-//    var easter: ASAEasterType?
-    
+        
     // For miscellaneous events (Easter, equinoxes, solstices)
     var miscellaneous:  ASAMiscellaneous?
-    
-//    // For time change events
-//    var timeChange: ASATimeChangeType?
     
     // For Moon phase events
     var moonPhase: ASAMoonPhase?
@@ -114,10 +108,8 @@ struct ASADateSpecification:  Codable {
         case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
-//        case easter              = "Easter"
         case offsetDays          = "offsetD"
         case miscellaneous       = "misc"
-//        case timeChange
         case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
