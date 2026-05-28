@@ -136,8 +136,8 @@ class ASAEventCalendar {
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
     
     func matchMoonPhase(startOfDay: Date, startOfNextDay: Date, dateSpecification: ASADateSpecification, components: ASADateComponents) -> ASAMatchResult {
-        assert(dateSpecification.moonPhase != nil)
-        let phaseType = dateSpecification.moonPhase!
+        assert(dateSpecification.miscellaneous.isMoonPhase)
+        let phaseType = dateSpecification.miscellaneous!
         
         if phaseType == .firstFullMoon || phaseType == .secondFullMoon {
             // First or second full Moon in month
@@ -162,9 +162,8 @@ class ASAEventCalendar {
     } // func matchMoonPhase(startOfDay: Date, startOfNextDay: Date, dateSpecification: ASADateSpecification, components: ASADateComponents) -> ASAMatchResult
 
     func matchMoonPhaseRecurrence(dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> ASAMatchResult {
-        assert(dateSpecification.moonPhase != nil)
-        assert(dateSpecification.moonPhase != ASAMoonPhase.none)
-        let phaseType = dateSpecification.moonPhase!
+        assert(dateSpecification.miscellaneous.isMoonPhase)
+        let phaseType = dateSpecification.miscellaneous!
         guard let month = dateSpecification.month else { return MATCH_FAILURE }
         guard let day = dateSpecification.day else { return MATCH_FAILURE }
         guard let recurrence = dateSpecification.recurrence else { return MATCH_FAILURE }
@@ -212,7 +211,7 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
-        switch startDateSpecification.moonPhase {
+        switch startDateSpecification.miscellaneous! {
         case .firstFullMoon:
             if componentsDay < 30 {
                 return ASAMatchResult(matches: true, startDate: nil, endDate: nil, cycle: nil, dayInCycle: nil)
@@ -1076,9 +1075,9 @@ class ASAEventCalendar {
     } // func dayAndCycle(mjd: Int, cycleStartMJD: Int, cycleLength: Int) -> (dayInCycle: Int, cycleNumber: Int)
     
     func matchOneDayOrLess(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult {
-        let moonPhase = dateSpecification.moonPhase
+        let miscellaneous = dateSpecification.miscellaneous
         
-        if moonPhase != nil && (moonPhase != ASAMoonPhase.none) && dateSpecification.month != nil && dateSpecification.day != nil && dateSpecification.recurrence != nil {
+        if miscellaneous.isMoonPhase && dateSpecification.month != nil && dateSpecification.day != nil && dateSpecification.recurrence != nil {
             let matchesAndStartAndEndDates = matchMoonPhaseRecurrence(dateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
@@ -1115,7 +1114,7 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.miscellaneous.isNone {
+        if offsetDays != 0 && miscellaneous.isNone {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1193,7 +1192,6 @@ class ASAEventCalendar {
             }
         }
         
-        let miscellaneous = dateSpecification.miscellaneous
         if miscellaneous.isEaster {
             let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {
@@ -1217,7 +1215,7 @@ class ASAEventCalendar {
             }
         }
         
-        if moonPhase != nil && moonPhase! != .none {
+        if miscellaneous.isMoonPhase {
             let matchesAndStartAndEndDates = matchMoonPhase(startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateSpecification: dateSpecification, components: components)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE

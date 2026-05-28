@@ -72,12 +72,9 @@ struct ASADateSpecification:  Codable {
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
         
-    // For miscellaneous events (Easter, equinoxes, solstices)
+    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes)
     var miscellaneous:  ASAMiscellaneous?
-    
-    // For Moon phase events
-    var moonPhase: ASAMoonPhase?
-    
+        
     // For repeating events
     var recurrenceDays: Int?
     
@@ -110,7 +107,6 @@ struct ASADateSpecification:  Codable {
         case dhuhrMinutes        = "dhuhrMin"
         case offsetDays          = "offsetD"
         case miscellaneous       = "misc"
-        case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
         case fullWeek            = "fullWk"
