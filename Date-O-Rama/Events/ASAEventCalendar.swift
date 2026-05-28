@@ -1115,9 +1115,7 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.miscellaneous?.isEaster ?? false == nil && !(
-            dateSpecification.miscellaneous?.isEquinoxOrSolstice ?? false
-        ) {
+        if offsetDays != 0 && dateSpecification.miscellaneous.isNone {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1196,14 +1194,12 @@ class ASAEventCalendar {
         }
         
         let miscellaneous = dateSpecification.miscellaneous
-        if (miscellaneous ?? .none).isEaster {
+        if miscellaneous.isEaster {
             let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
             }
-        }
-        
-        if (miscellaneous ?? .none).isEquinoxOrSolstice {
+        } else if miscellaneous.isEquinoxOrSolstice {
             let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: miscellaneous!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE

@@ -32,3 +32,29 @@ extension ASAMiscellaneousType {
         return self == .Easter
     }
 }
+
+extension ASAMiscellaneousType? {
+    var isNone: Bool {
+        if self == nil {
+            return true
+        } else {
+            return self! == .none
+        }
+    }
+    
+    var isEquinoxOrSolstice: Bool {
+        if self == nil {
+            return false
+        } else {
+            return self!.isEquinoxOrSolstice
+        }
+    }
+    
+    var isEaster: Bool {
+        if self == nil {
+            return false
+        } else {
+            return self!.isEaster
+        }
+    }
+}
