@@ -32,8 +32,7 @@
 		A502D3EC286380E700A625A9 /* SD.json in Resources */ = {isa = PBXBuildFile; fileRef = A502D3EA286380E700A625A9 /* SD.json */; };
 		A505E6DA27903D7F00D09A74 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A505E6DB27903D7F00D09A74 /* ASAMoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */; };
-		A505E6DD27903D7F00D09A74 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
-		A505E6DE27903D7F00D09A74 /* ASAMiscellaneousType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */; };
+		A505E6DE27903D7F00D09A74 /* ASAMiscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneous.swift */; };
 		A505E6DF27903D7F00D09A74 /* ASADayHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */; };
 		A505E6E027903E3800D09A74 /* ASAClockCellDateEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */; };
 		A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
@@ -1158,14 +1157,12 @@
 		A5F3B01F285644A100865CEB /* TH.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B01D285644A100865CEB /* TH.json */; };
 		A5F3B02128565F8100865CEB /* BS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B02028565F8000865CEB /* BS.json */; };
 		A5F3B02228565F8100865CEB /* BS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B02028565F8000865CEB /* BS.json */; };
-		A5F43E212785D2FE00FCDB88 /* ASAMiscellaneousType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */; };
-		A5F43E222785D2FE00FCDB88 /* ASAMiscellaneousType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */; };
+		A5F43E212785D2FE00FCDB88 /* ASAMiscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneous.swift */; };
+		A5F43E222785D2FE00FCDB88 /* ASAMiscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAMiscellaneous.swift */; };
 		A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
 		A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
 		A5F43E272786113400FCDB88 /* Thelema.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E262786113400FCDB88 /* Thelema.json */; };
 		A5F43E282786113400FCDB88 /* Thelema.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E262786113400FCDB88 /* Thelema.json */; };
-		A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
-		A5F43E2B278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
 		A5F5B08D2858D8BA003E313D /* Eastern Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */; };
 		A5F5B08E2858D8BA003E313D /* Eastern Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */; };
 		A5F6258F2E890B9800F80B79 /* List of Natinal Days.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F6258E2E890B9800F80B79 /* List of Natinal Days.json */; };
@@ -1871,10 +1868,9 @@
 		A5F3B01A28563CB000865CEB /* WS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WS.json; sourceTree = "<group>"; };
 		A5F3B01D285644A100865CEB /* TH.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TH.json; sourceTree = "<group>"; };
 		A5F3B02028565F8000865CEB /* BS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BS.json; sourceTree = "<group>"; };
-		A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiscellaneousType.swift; sourceTree = "<group>"; };
+		A5F43E202785D2FE00FCDB88 /* ASAMiscellaneous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiscellaneous.swift; sourceTree = "<group>"; };
 		A5F43E232785D7DE00FCDB88 /* Neopaganism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Neopaganism.json; sourceTree = "<group>"; };
 		A5F43E262786113400FCDB88 /* Thelema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thelema.json; sourceTree = "<group>"; };
-		A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeChangeType.swift; sourceTree = "<group>"; };
 		A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Eastern Christianity (general).json"; sourceTree = "<group>"; };
 		A5F6258E2E890B9800F80B79 /* List of Natinal Days.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "List of Natinal Days.json"; sourceTree = "<group>"; };
 		A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Hinduism (supplemental).json"; sourceTree = "<group>"; };
@@ -2582,12 +2578,11 @@
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
 				A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */,
-				A5F43E202785D2FE00FCDB88 /* ASAMiscellaneousType.swift */,
+				A5F43E202785D2FE00FCDB88 /* ASAMiscellaneous.swift */,
 				A5DB52D7278B1880001562C1 /* ASAMoonPhase.swift */,
 				A5307023279867E4004A5B37 /* ASAMultiEvent.swift */,
 				A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */,
 				A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */,
-				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
 				A52BAE782CA59B590006A178 /* ASAWeekday.swift */,
 			);
 			path = Events;
@@ -3792,7 +3787,7 @@
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASolarTimeCalendar.swift in Sources */,
 				A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
-				A5F43E222785D2FE00FCDB88 /* ASAMiscellaneousType.swift in Sources */,
+				A5F43E222785D2FE00FCDB88 /* ASAMiscellaneous.swift in Sources */,
 				A5C72A14296F0F4900B8442A /* HostingController.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
 				A5E638CF2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
@@ -3893,7 +3888,6 @@
 				A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A53437532857971800F8E8AF /* ASABoothCalendar.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
-				A5F43E2B278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,
 				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
 				A52BAE7B2CA59B610006A178 /* ASAWeekday.swift in Sources */,
 				A5EB60E52892E4E9006009AF /* ASALocation.swift in Sources */,
@@ -3953,7 +3947,7 @@
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
-				A5F43E212785D2FE00FCDB88 /* ASAMiscellaneousType.swift in Sources */,
+				A5F43E212785D2FE00FCDB88 /* ASAMiscellaneous.swift in Sources */,
 				A5166C802EEB257200F23048 /* ASAJudeoIslamicCalendar.swift in Sources */,
 				A5E638CE2E3BEB91007F53D2 /* ASAMiniProcessedClock.swift in Sources */,
 				A52BAE792CA59B610006A178 /* ASAWeekday.swift in Sources */,
@@ -4008,7 +4002,6 @@
 				A58F39F92DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */,
 				A50C4FD02F13AA58001D4EF2 /* WatchConnectivityModel.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
-				A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASAClockArrayKey.swift in Sources */,
 				A5EB60EC2892E4EC006009AF /* ASALocationType.swift in Sources */,
 				A5AAA7502657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */,
@@ -4072,7 +4065,7 @@
 				A5D135BA27C41C2200A1A525 /* ASACalendarWithMonths.swift in Sources */,
 				A557AD1325DD495400A264B6 /* DateFormatterExtensions.swift in Sources */,
 				A58F39F72DC2783B00F2D8E2 /* ASAGregorianCalendar.swift in Sources */,
-				A505E6DE27903D7F00D09A74 /* ASAMiscellaneousType.swift in Sources */,
+				A505E6DE27903D7F00D09A74 /* ASAMiscellaneous.swift in Sources */,
 				A5D135BE27C537C500A1A525 /* ASACalendarWithQuarters.swift in Sources */,
 				A5166C732EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */,
 				A59D802C2600C57A00FD8BBF /* ASACalendar.swift in Sources */,
@@ -4113,7 +4106,6 @@
 				A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */,
 				A5D135B627C2C2A100A1A525 /* ASACalendarWithWeeks.swift in Sources */,
 				A557AD0925DD495400A264B6 /* FontExtensions.swift in Sources */,
-				A505E6DD27903D7F00D09A74 /* ASATimeChangeType.swift in Sources */,
 				A505E6DF27903D7F00D09A74 /* ASADayHalf.swift in Sources */,
 				A54539DD26A98F930028EAD5 /* CalendarExtensions.swift in Sources */,
 				A557AD0E25DD495400A264B6 /* CLLocationExtensions.swift in Sources */,

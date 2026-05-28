@@ -9,17 +9,17 @@
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Argentina"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {misc: "Easter", offsetD: -48}, inherits: "Shrove Monday"},
-        {type: "D", start: {misc: "Easter", offsetD: -48}, inherits: "Carnival Monday", urls: {"en": "https://nationaltoday.com/argentina-carnival/"}},
-        {type: "D", start: {misc: "Easter", offsetD: -47}, inherits: "Carnival Tuesday"},
+        {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Shrove Monday"},
+        {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Carnival Monday", urls: {"en": "https://nationaltoday.com/argentina-carnival/"}},
+        {type: "D", start: {misc: "E", offsetD: -47}, inherits: "Carnival Tuesday"},
         {type: "D", start: {mon: 3, d: 23, wkd: [2]}, titles: {"en": "Day of Remembrance for Truth and Justice (bridge day)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/truth-and-justice-memorial-day"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day (bridge day)"}},
         {type: "D", start: {mon: 3, d: 24}, titles: {"en":"Day of Remembrance for Truth and Justice","es":"Día Nacional de la Memoria por la Verdad y la Justicia","fr":"Journée nationale de la Mémoire pour la Vérité et la Justice","it":"Giorno della memoria per la verità e la giustizia","pl":"Dzień Pamięci dla Prawdy i Sprawiedliwości","zh":"真相與正義紀念日"}, urls: {"en": "https://nationaltoday.com/day-of-remembrance-for-truth-and-justice/"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day"}},
         {type: "D", start: {mon: 3, d: 25, wkd: [6]}, titles: {"en": "Day of Remembrance for Truth and Justice (in lieu)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/truth-and-justice-memorial-day"}, first: {era: 1, y: 2006}, notes: {"en": "Truth and Justice Memorial Day (in lieu)"}},
 
         {type: "D", start: {mon: 4, d: 2}, titles: {"en":"Malvinas Day","es":"Día del Veterano y de los Caídos en la Guerra de Malvinas","fr":"Journée des vétérans et des combattants tombés pendant la guerre des Malouines","id":"Hari Malvinas","ms":"Hari Malvinas","ru":"День ветеранов и павших на Мальвинской войне","zh":"馬爾維納斯日"}, urls: {"en": "https://nationaltoday.com/day-of-the-veterans/"}, first: {era: 1, y: 2001}, notes: {"en": "Day of the Veterans\nDay of the Veterans and Fallen of the Falklands War"}},
-        {type: "D", start: {misc: "Easter", offsetD: -3}, inherits: "Maundy Thursday"},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 25}, titles: {"en": "May Revolution Day", "es": "Día de la Revolución de Mayo"}, urls: {"en": "https://nationaltoday.com/may-revolution-day/"}, notes: {"en": "May Day Revolution"}},
         {type: "D", start: {mon: 5, d: 26, wkd: [6]}, titles: {"en": "May Day Revolution (bridge day)"}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/may-day-revolution"}},
@@ -49,7 +49,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {type: "D", start: {misc: "Easter", offsetD: 39}, inherits: "Ascension Day"},
+        {type: "D", start: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2015}},
 
         {type: "D", start: {mon: 6, d: 16}, inherits: "Engineer’s Day"},

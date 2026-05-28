@@ -1,5 +1,5 @@
 //
-//  ASAMiscellaneousType.swift
+//  ASAMiscellaneous.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 05/01/2022.
@@ -8,19 +8,23 @@
 
 import Foundation
 
-enum ASAMiscellaneousType:  String, Codable {
+enum ASAMiscellaneous:  String, Codable {
     case none             = "none"
+    
     case MarchEquinox     = "Mar"
     case JuneSolstice     = "Jun"
     case SeptemberEquinox = "Sep"
     case DecemberSolstice = "Dec"
-    case Easter           = "Easter"
-} // enum ASAMiscellaneousType
+    
+    case Easter           = "E"
+    
+    case timeChange       = "tChg"
+} // enum ASAMiscellaneous
 
-extension ASAMiscellaneousType {
+extension ASAMiscellaneous {
     var isEquinoxOrSolstice: Bool {
         switch self {
-        case .MarchEquinox, .JuneSolstice,.SeptemberEquinox, .DecemberSolstice:
+        case .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
             return true
             
         default:
@@ -31,9 +35,13 @@ extension ASAMiscellaneousType {
     var isEaster: Bool {
         return self == .Easter
     }
+    
+    var isTimeChange: Bool {
+        return self == .timeChange
+    }
 }
 
-extension ASAMiscellaneousType? {
+extension ASAMiscellaneous? {
     var isNone: Bool {
         if self == nil {
             return true
@@ -55,6 +63,14 @@ extension ASAMiscellaneousType? {
             return false
         } else {
             return self!.isEaster
+        }
+    }
+    
+    var isTimeChange: Bool {
+        if self == nil {
+            return false
+        } else {
+            return self!.isTimeChange
         }
     }
 }

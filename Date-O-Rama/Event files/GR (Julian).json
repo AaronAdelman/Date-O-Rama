@@ -7,12 +7,12 @@
     first: {era: 1, y: 1821},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Greece"},
     events: [
-        {inherits: "Clean Monday", type: "D", start: {misc: "Easter", offsetD: -48}},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {misc: "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {misc: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
-        {type: "D", start: {misc: "Easter", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", start: {misc: "Easter", offsetD: 50}, inherits: "Whit Monday"},
+        {inherits: "Clean Monday", type: "D", start: {misc: "E", offsetD: -48}},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {misc: "E", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
+        {type: "D", start: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
     ]
 }

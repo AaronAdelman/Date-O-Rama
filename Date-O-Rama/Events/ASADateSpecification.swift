@@ -75,11 +75,11 @@ struct ASADateSpecification:  Codable {
 //    // For Easter-related events
 //    var easter: ASAEasterType?
     
-    // For miscellaneous events
-    var miscellaneous:  ASAMiscellaneousType?
+    // For miscellaneous events (Easter, equinoxes, solstices)
+    var miscellaneous:  ASAMiscellaneous?
     
-    // For time change events
-    var timeChange: ASATimeChangeType?
+//    // For time change events
+//    var timeChange: ASATimeChangeType?
     
     // For Moon phase events
     var moonPhase: ASAMoonPhase?
@@ -117,7 +117,7 @@ struct ASADateSpecification:  Codable {
 //        case easter              = "Easter"
         case offsetDays          = "offsetD"
         case miscellaneous       = "misc"
-        case timeChange
+//        case timeChange
         case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"

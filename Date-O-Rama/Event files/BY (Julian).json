@@ -8,7 +8,7 @@
     first: {era: 1, y: 1991},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
-        {titles: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, type: "D", start: {misc: "Easter", offsetD: 9}, urls: {"en": "https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en": "Day of Rejoicing\nCommemoration Day"}},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {titles: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, type: "D", start: {misc: "E", offsetD: 9}, urls: {"en": "https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en": "Day of Rejoicing\nCommemoration Day"}},
     ]
 }

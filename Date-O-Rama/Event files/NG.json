@@ -32,9 +32,9 @@
         {type: "D", start: {era: 1, y: 2024, mon: 11, d: 1}, inherits: "Nigeria Election Holiday"},
         {type: "D", start: {era: 1, y: 2025, mon: 10, d: 30}, inherits: "Nigeria Election Holiday"},
         {type: "D", start: {era: 1, y: 2025, mon: 10, d: 31}, inherits: "Nigeria Election Holiday"},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {misc: "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/labour-day"}, inherits: "Worker’s Day"},
         {type: "D", start: {era: 1, y: 2023, mon: 5, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/rivers/rivers-state-public-holiday"}, inherits: "Public Holiday"},
         {type: "D", start: {mon: 5, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/nigeria/nigeria-childrens-day"}, inherits: "Children’s Day", first: {era: 1, y: 1964}},
@@ -60,7 +60,7 @@
         {inherits: "Xmas Holiday", type: "nD", start: {era: 1, y: 2023, mon: 12, d: 27}, end: {era: 1, y: 2023, mon: 12, d: 29}},
         
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {inherits: "Mother’s Day", type: "D", start: {misc: "Easter", offsetD: -21}},
+        {inherits: "Mother’s Day", type: "D", start: {misc: "E", offsetD: -21}},
        {inherits: "Armed Forces Day", type: "D", start: {mon: 1, d: 15}, titles: {"en": "Armed Forces Remembrance Day"}},
    ],
     templates: [

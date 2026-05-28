@@ -245,7 +245,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.MoonPhase
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
     
-    func possibleDateEquinoxOrSolstice(for type: ASAMiscellaneousType, now: JulianDay) -> Date? {
+    func possibleDateEquinoxOrSolstice(for type: ASAMiscellaneous, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
         
@@ -273,7 +273,7 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASAMiscellaneousType, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
+    func matchEquinoxOrSolstice(type: ASAMiscellaneous, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
         
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDateEquinoxOrSolstice(for: type, now: initialDate) else {
@@ -1207,10 +1207,7 @@ class ASAEventCalendar {
                 start = matchesAndStartAndEndDates.startDate!
                 end = matchesAndStartAndEndDates.endDate!
             }
-        }
-        
-        let timeChange = dateSpecification.timeChange
-        if timeChange != nil && timeChange! != .none {
+        } else if miscellaneous.isTimeChange {
             let matchesAndStartAndEndDates = matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
@@ -1291,7 +1288,7 @@ class ASAEventCalendar {
         let eventsFileDefaultLocale = eventsFile!.defaultLocale
 
         var title: String
-        if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
+        if eventSpecification.type == .point && eventSpecification.startDateSpecification.miscellaneous.isTimeChange {
             let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
             let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
             let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)

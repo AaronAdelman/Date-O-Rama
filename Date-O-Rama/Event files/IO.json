@@ -8,9 +8,9 @@
     first: {era: 1, y: 1965},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {misc: "Easter", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]

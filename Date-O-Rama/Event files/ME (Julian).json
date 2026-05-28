@@ -10,8 +10,8 @@
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {inherits: "Orthodox Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {misc: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]
 }

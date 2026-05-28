@@ -8,8 +8,8 @@
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {misc: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {misc: "Easter"}, inherits: "Easter"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
 
     ]
