@@ -245,7 +245,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.MoonPhase
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
     
-    func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
+    func possibleDateEquinoxOrSolstice(for type: ASAMiscellaneousType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
         
@@ -273,7 +273,7 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
+    func matchEquinoxOrSolstice(type: ASAMiscellaneousType, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
         
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDateEquinoxOrSolstice(for: type, now: initialDate) else {
@@ -1115,7 +1115,9 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.easter == nil && dateSpecification.equinoxOrSolstice == nil {
+        if offsetDays != 0 && dateSpecification.easter == nil && !(
+            dateSpecification.miscellaneous?.isEquinoxOrSolstice ?? false
+        ) {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1201,7 +1203,7 @@ class ASAEventCalendar {
             }
         }
         
-        let equinoxOrSolstice = dateSpecification.equinoxOrSolstice
+        let equinoxOrSolstice = dateSpecification.miscellaneous
         if equinoxOrSolstice != nil && equinoxOrSolstice! != .none {
             let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
             if !matchesAndStartAndEndDates.matches {

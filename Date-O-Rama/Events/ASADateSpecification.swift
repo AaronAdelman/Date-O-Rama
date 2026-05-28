@@ -76,7 +76,7 @@ struct ASADateSpecification:  Codable {
     var easter: ASAEasterType?
     
     // For equinox and solstice events
-    var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
+    var miscellaneous:  ASAMiscellaneousType?
     
     // For time change events
     var timeChange: ASATimeChangeType?
@@ -116,7 +116,7 @@ struct ASADateSpecification:  Codable {
         case dhuhrMinutes        = "dhuhrMin"
         case easter              = "Easter"
         case offsetDays          = "offsetD"
-        case equinoxOrSolstice   = "eqxOrSolstice"
+        case miscellaneous       = "misc"
         case timeChange
         case moonPhase           = "zmoPhase"
         case throughDay          = "thruD"
