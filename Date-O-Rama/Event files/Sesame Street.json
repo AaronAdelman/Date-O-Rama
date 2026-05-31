@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 5, d: 4}, titles: {"en": "Susan’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 5, d: 12}, titles: {"en": "Baby Bear’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 5, d: 24}, titles: {"en": "Sam the Robot’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1974}},
-        {type: "D", start: {mon: 6, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/oscar-the-grouch-day/"}, titles: {"en": "Oscar the Grouch Day"}, emoji: "🗑️", notes: {"en": "Oscar the Grouch’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Oscar the Grouch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/oscar-the-grouch-day/"}, emoji: "🗑️", notes: {"en": "Oscar the Grouch’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Rudy’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, d: 6}, titles: {"en": "Pancho Contreras’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, d: 7}, titles: {"en": "Amazing Mumford’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1976}},

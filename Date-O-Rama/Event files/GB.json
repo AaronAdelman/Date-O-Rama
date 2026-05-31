@@ -174,6 +174,7 @@
         {type: "D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, inherits: "Natl Numeracy Day", first: {era: 1, y: 2018}, last: {era: 1, y: 2023}},
         {type: "D", start: {mon: 5, wkd: [4], d: 18, thruD: 24}, inherits: "Natl Numeracy Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en": "Hats for Headway Day"}, urls: {"en": "https://www.headway.org.uk/about-headway/our-organisation/events-and-conferences/hats-for-headway-day"}, emoji: "👒", first: {era: 1, y: 2024}, inherits: "*MedAwareness*", notes: {"en": "Created by Headway"}},
+        {type: "D", start: {mon: 6, d: 1}, titles: {"en": "Love Island Day"}, urls: {"en": "https://www.daysoftheyear.com/days/love-island-day/"}, notes: {"en": "This event celebrates a “reality” show."}, first: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {type: "D", start: {mon: 6, d: 15}, inherits: "Natl Bug Busting Day"},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "Beer Day Britain"}, urls: {"en": "https://www.beerdaybritain.co.uk/"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
@@ -324,7 +325,8 @@
         {type: "nD", start: {mon: 5, d: 15, thruD: 21, wkd: [7], durD: 9}, titles: {"en": "National Doughnut Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-doughnut-week/"}, emoji: "🍩", first: {era: 1, y: 1992}},
         {type: "nD", start: {mon: 5, d: 17, thruD: 23, wkd: [2], durD: 5}, titles: {"en": "Noise Action Week"}, urls: {"en": "https://www.daysoftheyear.com/days/noise-action-week/"}, emoji: "💥", first: {era: 1, y: 1996}, notes: {"en": "Created by Environmental Protection UK (EPUK)"}},
         {type: "nD", start: {mon: 5, d: 22, thruD: 28, wkd: [7]}, end: {mon: 5, d: 30, thruMon: 6, thruD: 5, wkd: [1]}, titles: {"en": "National Children’s Gardening Week"}, urls: {"en": "https://www.childrensgardeningweek.co.uk/"}, emoji: "🪴", notes: {"en": "Created by Neil Grant"}, first: {era: 1, y: 2015}},
-        {type: "nD", start: {mon: 5, d: 23, thruD: 29, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, titles: {"en": "British Tomato Fortnight"}, urls: {"en": "https://www.britishtomatoes.co.uk/british-tomato-fortnight"}, emoji: "🍅"},
+        {type: "nD", start: {mon: 5, d: 23, thruD: 29, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, inherits: "British Tomato Fortnight", last: {era: 1, y: 2025}},
+        {type: "nD", start: {mon: 6, d: 1, thruD: 7, wkd: [2], durD: 14}, inherits: "British Tomato Fortnight", first: {era: 1, y: 2026}},
         {type: "nD", start: {mon: 5, d: 25, thruD: 31, wkd: [2]}, end: {mon: 5, d: 31, thruMon: 6, thruD: 6, wkd: [1]}, titles: {"en": "Garden Wildlife Week"}, urls: {"en": "https://www.daysoftheyear.com/days/garden-wildlife-week/"}, emoji: "🪴"},
         {type: "nD", start: {mon: 5, d: 29}, end: {mon: 6, d: 4}, titles: {"en": "National BBQ Week"}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, emoji: "🍖"},
         {type: "nD", start: {mon: 5, d: 6, durD: 7}, titles: {"en": "Trans+ History Week"}, first: {era: 1, y: 2024}},
@@ -438,5 +440,6 @@
         {template: "Cornish Pasty Week", type: "nD", start: {mon: 2, d: 22, thruD: 28, yLens: [365]}, end: {mon: 2, d: 28, thruMon: 3, thruD: 6}, titles: {"en": "Cornish Pasty Week"}, urls: {"en": "https://cornishpastyassociation.co.uk/cornish-pasty-week"}, notes: {"en": "Created by the Cornish Pasty Association"}},
         {template: "Self Storage Week", type: "nD", start: {era: 1, y: 2025, mon: 6, d: 23, durD: 5}, titles: {"en": "Self Storage Week"}, urls: {"en": "https://www.daysoftheyear.com/days/self-storage-week/"}, emoji: "📦🏀", notes: {"en": "Created by Access Self Storage"}},
         {template: "Phone in Sick Day", type: "D", start: {mon: 5, d: 1}, titles: {"en": "Phone in Sick Day"}, notes: {"en": "Call in Sick Day\nWorld Phone in Sick Day\nCreated by Decadent Action"}, urls: {"en": "https://www.daysoftheyear.com/days/phone-in-sick-day/"}, emoji: "☎️"},
+        {template: "British Tomato Fortnight", type: "nD", start: {mon: 5, d: 23, thruD: 29, wkd: [2]}, end: {mon: 6, d: 5, thruD: 11, wkd: [1]}, titles: {"en": "British Tomato Fortnight"}, urls: {"en": "https://www.britishtomatoes.co.uk/british-tomato-fortnight"}, emoji: "🍅", notes: {"en": "Created by the British Tomato Growers’ Association (BTGA)"}},
     ]
 }
