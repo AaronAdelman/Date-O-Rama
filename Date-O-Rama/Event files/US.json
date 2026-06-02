@@ -400,7 +400,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, titles: {"en": "National Cancer Thriver Day"}, urls: {"en": "https://nationaltoday.com/national-cancer-thriver-day/"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, wkd: [5], nth: 2}, titles: {"en": "National Seersucker Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-seersucker-day/"}, first: {era: 1, y: 1996}},
         {type: "D", start: {mon: 6, wkd: [5], nth: 3}, titles: {"en": "National Dump the Pump Day"}, urls: {"en": "https://www.daysoftheyear.com/days/dump-the-pump-day/"}, emoji: "⛽︎", first: {era: 1, y: 2006}},
-        {type: "D", start: {mon: 6, wkd: [7], nth: 1}, titles: {"en": "National Trails Day"}, urls: {"en": "https://nationaltoday.com/national-trails-day/"}, emoji: "🏞️", first: {era: 1, y: 1993}},
+        {type: "D", start: {mon: 6, wkd: [7], nth: 1}, titles: {"en": "National Trails Day"}, urls: {"en": "https://www.daysoftheyear.com/days/trails-day/"}, emoji: "🏞️", first: {era: 1, y: 1993}, notes: {"en": "Created by the Hiking Society"}},
         {type: "D", start: {mon: 7, d: 10}, titles: {"en": "Pick Blueberries Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pick-blueberries-day/"}, first: {era: 1, y: 2003}, emoji: "🫐"},
         {type: "D", start: {mon: 7, d: 15}, inherits: "Intl Dadaism Month", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 7, d: 16}, titles: {"en": "National Atomic Veterans Day"}, notes: {"en": "National Atomic Veterans’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-atomic-veterans-day/"}, first: {era: 1, y: 1983}, emoji: "⚛️"},
@@ -671,7 +671,7 @@
         {type: "W", start: {mon: 5, fullWk: 1}, titles: {"en": "National Correctional Officer’s Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-correctional-officers-week/"}, first: {era: 1, y: 1984}, notes: {"en": "Created by Ronald Reagan"}},
         {type: "W", start: {mon: 5, fullWk: 2}, titles: {"en": "National Hospital Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-hospital-week/"}, emoji: "🏥", inherits: "*MedAwareness*", first: {era: 1, y: 1953}},
         {type: "W", start: {mon: 6, fullWk: 1, d1OfWk: 2}, titles: {"en": "National Fishing and Boating Week"}, notes: {"en": "National Fishing Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-fishing-and-boating-week/"}, emoji: "🎣", first: {era: 1, y: 1979}},
-        {type: "D", start: {mon: 6, wkd: [7], nth: 1}, titles: {"en": "Butterfly Education and Awareness Day"}, notes: {"en": "BEAD"}, urls: {"en": "https://afbeducation.org/butterfly-conservation/butterfly-education-and-awareness-day/"}, first: {era: 1, y: 1992}, emoji: "🦋"},
+        {type: "D", start: {mon: 6, wkd: [7], nth: 1}, titles: {"en": "Butterfly Education and Awareness Day"}, notes: {"en": "BEAD\nCreated by the Association for Butterflies"}, urls: {"en": "https://afbeducation.org/butterfly-conservation/butterfly-education-and-awareness-day/"}, first: {era: 1, y: 1992}, emoji: "🦋"},
         {type: "W", start: {mon: 6, fullWk: 2, d1OfWk: 2}, titles: {"en": "National Little League Baseball Week"}, urls: {"en": "https://www.daysoftheyear.com/days/national-little-league-baseball-week/"}, emoji: "🧢", first: {era: 1, y: 1959}},
         {type: "W", start: {mon: 7, fullWk: 3}, titles: {"en": "National Zoo Keeper Week"}, notes: {"en": "NZKW"}, urls: {"en": "https://aazk.org/committee/national-zoo-keeper-week-nzkw/"}, emoji: "🦏", first: {era: 1, y: 2007}},
         {type: "W", start: {mon: 8, fullWk: 1}, titles: {"en": "Farmers Market Week"}, urls: {"en": "https://www.daysoftheyear.com/days/farmers-market-week/"}, emoji: "👨‍🌾👩‍🌾", first: {era: 1, y: 1999}},
@@ -716,6 +716,8 @@
         {type: "nD", start: {mon: 2, d: 2, thruD: 8, wkd: [7], durD: 9}, inherits: "Natl Robotics Week", first: {era: 1, y: 2027}},
         {type: "D", start: {mon: 5, d: 5}, inherits: "Natl Day of Awareness for Missing and Murdered Indigenous Women and Girls", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 5, d: 16}, inherits: "Natl Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
+        {type: "W", start: {mon: 6, fullWk: 1}, titles: {"en": "National Trailer Safety Week"}, notes: {"en": "Created by the US House of Representatives"}, urls: {"en": "https://www.daysoftheyear.com/days/national-trailer-safety-week/"}, first: {era: 1, y: 2024}},
+
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durD: 7}, titles: {"en": "American Education Week"}, urls: {"en": "https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en": "National Educational Support Professionals Day"}, urls: {"en": "https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en": "E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"}, first: {era: 1, y: 1987}},

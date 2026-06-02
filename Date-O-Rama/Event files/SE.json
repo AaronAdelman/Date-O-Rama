@@ -18,7 +18,7 @@
         {type: "D", start: {misc: "E", offsetD: 40}, titles: {"en": "Friday after Ascension Day", "sv": "Himmelsfärdsdag fredag"}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/ascension-friday"}},
         {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day", urls: {"en": "https://www.officeholidays.com/holidays/sweden/mothers-day"}},
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", start: {mon: 6, d: 6}, inherits: "Natl Day", urls: {"en": "https://www.officeholidays.com/holidays/sweden/sweden-national-day"}, first: {era: 1, y: 1523}},
+        {type: "D", start: {mon: 6, d: 6}, inherits: "Statehood Day", notes: {"en": "National Day"}, urls: {"en": "https://www.daysoftheyear.com/days/statehood-day-in-sweden/"}, first: {era: 1, y: 1916}},
         {type: "D", start: {mon: 6, d: 19, thruD: 25}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inherits: "Midsummer Eve"},
         {type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inherits: "Midsummer"},
         {type: "D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, urls: {"en": "https://www.officeholidays.com/holidays/sweden/all-saints-day"}, inherits: "All Saints Day"},
