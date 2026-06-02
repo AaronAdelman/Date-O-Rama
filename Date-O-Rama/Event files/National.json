@@ -1622,6 +1622,7 @@
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Attitude Day"}, urls: {"en": "https://www.checkiday.com/171e02cf25e6d475b99a78cc5136c6fc/national-attitude-day"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Gingerbread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-gingerbread-day/"}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Ketchup Day", "he": "יום הקטשופ הלאומי"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-ketchup-day-june-5"}, notes: {"en": "Ketchup Day\nNational Catsup Day", "he": "יום הקטשופ"}},
+        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Lincoln Loud Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-lincoln-loud-day/"}, notes: {"en": "This observance celebrates the animated Nickelodeon series The Loud House."}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Moonshine Day"}, urls: {"en": "https://www.daysoftheyear.com/days/moonshine-day/"}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "National Sausage Roll Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sausage-roll-day/"}, notes: {"en": "Sausage Roll Day"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 6},  titles: {"en": "National Applesauce Cake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/applesauce-cake-day/"},emoji: "🍰"},

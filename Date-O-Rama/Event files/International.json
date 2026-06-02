@@ -1353,6 +1353,7 @@
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Festival of Popular Delusions Day"}, urls: {"en": "https://www.checkiday.com/856092439f2a353f21e6d1187018d675/festival-of-popular-delusions-day"}, first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Hot Air Balloon Day", "he": "יום הכדור הפורח"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-air-balloon-day/"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en": "Random Acts of Cardness Day"}, urls: {"en": "https://www.randomactsofcardness.org/random-acts-of-cardness-day"}, emoji: "✉️", first: {era: 1, y: 2015}},
+        {type: "D", start: {mon: 6, d: 5}, titles: {"en": "World Thickshake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/world-thickshake-day/"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 6, d: 6}, inherits: "Bonza Bottler Day", first: {era: 1, y: 1985}},
         {type: "D", start: {mon: 6, d: 6}, titles: {"en": "D-Day"}, urls: {"en": "https://nationaltoday.com/d-day/"}, first: {era: 1, y: 1944}},
         {type: "D", start: {mon: 6, d: 6}, titles: {"en": "Visually Impaired People Day", "he": "בליינד דיי"}, urls: {"en": "https://nationaltoday.com/visually-impaired-people-day/"}, first: {era: 1, y: 1998}, emoji: "🦯"},

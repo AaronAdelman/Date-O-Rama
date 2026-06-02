@@ -54,5 +54,6 @@
         {type: "D", start: {mon: 4, d: 26}, inherits: "Border Guards Day", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 24, thruD: 30, wkd: [7]}, titles: {"en": "Haybuis Armenian Herb Festival"}, notes: {"en": "HayBuis Festival\nHayBuis"}, urls: {"en": "https://www.daysoftheyear.com/days/haybuis-armenian-herb-festival/"}, first: {era: 1, y: 2015}, emoji: "🌿💐"},
         {type: "nD", start: {mon: 8, d: 11}, end: {mon: 9, d: 9}, titles: {"en": "Navasard", "fa": "ناواسارد", "ru": "Навасард", "ca": "Navasard", "pt": "Navassarde", "cs": "Navasard", "hyw": "Նաւասարդ", "hy": "Նավասարդ"}, urls: {"en": "https://www.daysoftheyear.com/days/navasard/"}},
+        {type: "nD", start: {mon: 6, d: 1, thruD: 7, wkd: [6], durD: 3}, titles: {"en":"Yerevan Wine Days","fa":"روزهای شراب ایروان","hy":"Երևանի գինու օրեր","ru":"Винные дни Еревана"}, urls: {"en": "https://www.daysoftheyear.com/days/wine-days-festival-in-armenia/"}, notes: {"en": "Wine Days Festival\nCreated by EventToura"}, first: {era: 1, y: 2017}, emoji: "🍷"},
     ]
 }
