@@ -13,5 +13,6 @@
         {type: "D", start: {mon: 7, d: 15}, inherits: "Ghost Festival"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
         {type: "nD", start: {mon: 9, d: 1}, end: {mon: 9, d: 9}, titles: {"en": "Vegetarian Festival", "th": "เทศกาลกินเจ"}, emoji: "🌶"},
+        {type: "D", start: {mon: 4, d: 15}, inherits: "Vesak", urls: {"en": "https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
     ]
 }
