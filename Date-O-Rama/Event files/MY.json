@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 5, d: 22}, titles: {"en": "The Sultan of Pahang Hol", "ms": "Hari Hol Pahang"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/pahang/the-sultan-of-pahang-hol"}, first: {era: 1, y: 2021}, inherits: "*DeathAnniv*"},
         {type: "nD", start: {mon: 5, d: 30, durD: 2}, titles: {"ar":"كاماتان","dtp":"Tadau Kaamatan","en":"Kaamatan","iba":"Kaamatan","id":"Tadau Kaamatan","ko":"카아마탄","la":"Kaamatan","ms":"Pesta Kaamatan","yue":"豐收節","zh":"豐收節"}, notes: {"en": "Pesta Kaamatan\nKaamatan Festival\nHarvest Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/kaamatan-festival/"}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}, inherits: "Gawai Dayak", first: {era: 1, y: 1963}},
-        {type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, titles: {"en": "Gawai Dayak (in lieu)"}, inherits: "Gawai Dayak", first: {era: 1, y: 1963}},
+        {type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, inherits: "Gawai Dayak (in lieu)", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, titles: {"en": "Yang di-Pertuan Agong’s Birthday", "ms": "Hari Keputeraan Yang di-Pertuan Agong"}, inherits: "*BDay*", urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}, notes: {"en": "Birthday of SPB Yang di Pertuan Agong"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "Birthday of the Sultan of Kedah", "ms": "Hari Keputeraan Sultan Kedah"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
@@ -68,5 +68,6 @@
     templates: [
         {template: "Birthday of the Sultan of Kelantan", type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, titles: {"en": "Birthday of the Sultan of Kelantan", "ms": "Hari Keputeraan Sultan Kelantan"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, inherits: "*BDay*"},
         {template: "Birthday of the Governor of Sabah", type: "D", start: {mon: 10, wkd: [7], nth: 1}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/sabah/birthday-of-the-governor-of-sabah"}, titles: {"en": "Birthday of the Governor of Sabah", "ms": "Hari Jadi Yang di-Pertua Negeri Sabah"}, inherits: "*BDay*"},
+        {template: "Gawai Dayak (in lieu)", type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, titles: {"en": "Gawai Dayak (in lieu)"}, inherits: "Gawai Dayak"},
     ]
 }
