@@ -1,13 +1,13 @@
 {
-    titles: {"en": "Ahmadiyya", "he": "אחמדים", "ar": "الجماعة الأحمدية"},
+    titles: {"ar":"الجماعة الأحمدية","arz":"احمديه","az":"Əhmədiyyə","ba":"Әхмәдилек","bn":"আহ্‌মদীয়া","bs":"Ahmedije","ca":"Ahmadia","ckb":"ئەحمەدی","cs":"Ahmadíja","da":"Ahmadiyya","de":"Ahmadiyya","el":"Αχμαντίγια","en":"Ahmadiyya","eo":"Ahmadismo","es":"Comunidad Ahmadía","eu":"Ahmadismo","fa":"احمدیه","fi":"Ahmadiyya","fr":"Ahmadisme","ga":"Ahmadach","gsw":"Ahmadiyya","ha":"Ahmadiyya","he":"אחמדים","hi":"अहमदिया","hr":"Ahmedije","hu":"Ahmadijja","id":"Ahmadiyаh","ig":"Ahmadiyya","it":"Ahmadiyya","ja":"アフマディーヤ","jv":"Ahmadiyyah","ka":"აჰმადია","kab":"Aḥmadeyya","kk":"Ахмадия","ko":"아흐마드파","ks":"اَحمَدِیَہ","ky":"Ахмадия","lt":"Achmadija","lv":"Ahmadiji","lzh":"阿哈默底亞會","mg":"Ahmadisma","min":"Ahmadiyаh","mk":"Ахмадија","ml":"അഹമദിയ്യ പ്രസ്ഥാനം","mr":"अहमदिया","ms":"Ahmadiyyah","my":"အဟ်မဒီယာ","nb":"Ahmadiyya","nl":"Ahmadiyya","nn":"Ahmadiyya","or":"ଆହମ୍ମଦୀୟ","pa":"ਅਹਿਮਦੀਆ","pl":"Ahmadijja","pnb":"احمدیہ","ps":"احمديت","pt":"Amadismo","ro":"Ahmadiyya","ru":"Ахмадие","sd":"احمدي","si":"අඃමදියා","sk":"Ahmadíja","skr":"احمدیت","sl":"Ahmadija","sq":"Ahmedijati","sr":"Ахмадија","sv":"Ahmadiyya","ta":"அகமதியா","tg":"Аҳмадия","tl":"Ahmaddiya","tr":"Ahmedîlik","tt":"Äxmädiyä","uk":"Ахмадія","ur":"احمدیہ","uz":"Ahmadiya","wuu":"阿赫迈底亚","yo":"Ahmadiyya","yue":"阿赫邁底亞","zh":"阿赫迈底亚"},
     defaultLocale: "en",
     calendarCode: "gre*",
-    calendarColor: {red: 0.25, green: 0.25, blue: 0.25},
+    calendarColor: {name: "black"},
     first: {era: 1, y: 1889},
     events: [
         {titles: {"en": "Promised Reformer Day"}, type: "D", start: {mon: 2, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}},
         {titles: {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"}, type: "D", start: {mon: 3, d: 23}, urls: {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}, first: {era: 1, y: 1889}},
-        {titles: {"en": "Caliphate Day"}, type: "D", start: {mon: 5, d: 27}, urls: {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
+        {titles: {"en":"Caliphate Day","ff":"Caliphate Day"}, type: "D", start: {mon: 5, d: 27}, urls: {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
         }
     ]
 }
