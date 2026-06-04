@@ -28,6 +28,7 @@
         {type: "nD", start: {mon: 5, d: 30, durD: 2}, titles: {"ar":"كاماتان","dtp":"Tadau Kaamatan","en":"Kaamatan","iba":"Kaamatan","id":"Tadau Kaamatan","ko":"카아마탄","la":"Kaamatan","ms":"Pesta Kaamatan","yue":"豐收節","zh":"豐收節"}, notes: {"en": "Pesta Kaamatan\nKaamatan Festival\nHarvest Festival"}, urls: {"en": "https://www.daysoftheyear.com/days/kaamatan-festival/"}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 2}, inherits: "Gawai Dayak", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, inherits: "Gawai Dayak (in lieu)", first: {era: 1, y: 1963}},
+        {type: "D", start: {mon: 6, d: 4, wkd: [4, 5]}, inherits: "Gawai Dayak (in lieu)", first: {era: 1, y: 1963}},
         {type: "D", start: {mon: 6, wkd: [2], nth: 1}, titles: {"en": "Yang di-Pertuan Agong’s Birthday", "ms": "Hari Keputeraan Yang di-Pertuan Agong"}, inherits: "*BDay*", urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}, notes: {"en": "Birthday of SPB Yang di Pertuan Agong"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en": "Birthday of the Sultan of Kedah", "ms": "Hari Keputeraan Sultan Kedah"}, inherits: "*BDay*", urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}, inherits: "*BDay*"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -7,7 +7,7 @@
         {type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}, inherits: "1st Advent Sunday", titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {type: "D", start: {mon: 5, d: 15}, inherits: "Nakba Day", first: {era: 1, y: 2023}, notes: {"en": "Nakba Remembrance Day\nThank the US Presbyterian Church for adopting an antisemitic hate-fest."}},
-        {type: "D", start: {mon: 6, wkd: [6], nth: 1}, inherits: "Natl Doughnut Day", urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}, first: {era: 1, y: 1938}},
+        {type: "D", start: {mon: 6, wkd: [6], nth: 1}, inherits: "Natl Doughnut Day", urls: {"en": "https://donutdayusa.com/"}, titles: {"en": "National Donut Day"}, first: {era: 1, y: 1938}, notes: {"en": "Created by the Salvation Army"}},
         {type: "D", start: {mon: 9, d: 30}, inherits: "Natl Love People Day", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Natl Sanctity of Human Life Day", first: {era: 1, y: 1984}},
         {type: "D", start: {misc: "E", offsetD: -47}, inherits: "Shrove Tuesday", inherits: "Paczki Day"},
