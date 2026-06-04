@@ -2,8 +2,8 @@
     titles: {"*": "DK"},
     "//": "Denmark",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    cal: "gre",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Denmark"},
     first: {era: 1, y: 900},
     events: [

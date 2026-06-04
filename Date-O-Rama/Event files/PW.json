@@ -2,8 +2,8 @@
     titles: {"*": "PW"},
     "//": "Palau",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.60, blue: 1.00},
+    cal: "gre",
+    color: {red: 0.00, green: 0.60, blue: 1.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Palau"},
     first: {era: 1, y: 1994},
     events: [

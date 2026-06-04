@@ -2,8 +2,8 @@
     titles: {"*": "NO"},
     "//": "Norway",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.73, green: 0.05, blue: 0.18},
+    cal: "gre",
+    color: {red: 0.73, green: 0.05, blue: 0.18},
     first: {era: 1, y: 1905},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Norway"},
     events: [

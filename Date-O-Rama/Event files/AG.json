@@ -2,8 +2,8 @@
     titles: {"*": "AG"},
     "//": "Antigua and Barbuda",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.82, green: 0.15, blue: 0.19},
+    cal: "gre",
+    color: {red: 0.82, green: 0.15, blue: 0.19},
     first: {era: 1, y: 1981},
     urls: {"en": "https://ab.gov.ag/detail_page.php?page=4"},
     events: [

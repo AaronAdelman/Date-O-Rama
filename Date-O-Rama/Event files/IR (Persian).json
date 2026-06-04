@@ -3,8 +3,8 @@
     "//": "Iran",
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
-    calendarCode: "his",
-    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    cal: "his",
+    color: {red: 0.00, green: 0.59, blue: 0.22},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iran"},
     events: [
         {type: "D", start: {mon: 11, d: 22}, titles: {"ar":"مظاهرات 22 بهمن","az":"İran İslam İnqilabının Qələbə Günü","en":"Anniversary of the Iranian Revolution","fa":"راهپیمایی ۲۲ بهمن","fr":"Marche du 22 Bahman","ms":"Ulang tahun Revolusi Islam","ru":"День победы Исламской революции","sv":"Årsdagen för den islamiska revolutionen","tr":"İran İslam Devrimi’nin Zafer Bayramı"}, urls: {"en": "https://nationaltoday.com/islamic-revolution-day/"}, notes: {"en": "Islamic Revolution Day\nAnniversary of Islamic Revolution", "fa": "انقلاب اسلامی پنجاه و هفت"}},

@@ -2,8 +2,8 @@
     titles: {"*": "IE"},
     "//": "Ireland",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.09, green: 0.61, blue: 0.38},
+    cal: "gre",
+    color: {red: 0.09, green: 0.61, blue: 0.38},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland"},
     first: {era: 1, y: 1922},
     events: [

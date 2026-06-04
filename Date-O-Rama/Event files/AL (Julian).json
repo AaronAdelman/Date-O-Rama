@@ -2,8 +2,8 @@
     titles: {"*": "AL"},
     "//": "Albania",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    cal: "jul",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 0, y: 1330},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "WF"},
     "//": "Wallis and Futuna",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.90, green: 0.25, blue: 0.25},
+    cal: "gre",
+    color: {red: 0.90, green: 0.25, blue: 0.25},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Wallis_and_Futuna"},
     first: {era: 1, y: 1961},
     events: [

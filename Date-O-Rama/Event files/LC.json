@@ -2,8 +2,8 @@
     titles: {"*": "LC"},
     "//": "Saint Lucia, AKA Saint Luica",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.47, blue: 0.78},
+    cal: "gre",
+    color: {red: 0.00, green: 0.47, blue: 0.78},
     first: {era: 1, y: 1979},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Lucia"},
     events: [

@@ -1,8 +1,8 @@
 {
     titles: {"en": "Named full moons", "he": "ירחים מלאים עם שמות"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "gray"},
+    cal: "gre",
+    color: {name: "gray"},
     emoji: "🌕",
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [

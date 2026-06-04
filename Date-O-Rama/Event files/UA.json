@@ -2,8 +2,8 @@
     titles: {"*": "UA"},
     "//": "Ukraine",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.34, blue: 0.72},
+    cal: "gre",
+    color: {red: 0.00, green: 0.34, blue: 0.72},
     first: {era: 1, y: 1991},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
     events: [

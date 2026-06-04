@@ -2,8 +2,8 @@
     titles: {"*": "MD"},
     "//": "Moldova",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.24, blue: 0.65},
+    cal: "jul",
+    color: {red: 0.00, green: 0.24, blue: 0.65},
     first: {era: 1, y: 1991},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Moldova"},
     events: [

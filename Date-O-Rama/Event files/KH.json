@@ -3,8 +3,8 @@
     "//": "Cambodia",
     "TODO": "Buddhist observances, Royal Ploughing Ceremony/Royal Plowing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances, Visak Bochea Day",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.98, green: 0.88, blue: 0.13},
+    cal: "gre",
+    color: {red: 0.98, green: 0.88, blue: 0.13},
     first: {era: 1, y: 1953},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cambodia"},
     events: [

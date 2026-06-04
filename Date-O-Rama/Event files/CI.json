@@ -3,8 +3,8 @@
     "//": "Côte d’Ivoire, AKA Ivory Coast",
     "TODO": "Muslim holidays",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.92, green: 0.46, blue: 0.0},
+    cal: "gre",
+    color: {red: 0.92, green: 0.46, blue: 0.0},
     first: {era: 1, y: 1960},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ivory_Coast"},
     events: [

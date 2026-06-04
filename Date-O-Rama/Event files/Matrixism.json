@@ -1,7 +1,7 @@
 {
     titles: {"ca":"Matrixisme","en":"Matrixism","fr":"Matrixisme","id":"Matriksisme","pt":"Matrixismo","ru":"Матриксизм","ta":"மேட்ரிக்சிசம்","tr":"Matriksçilik","uk":"Матриксизм"}, defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.6, green: 0.1, blue: 0.1},
+    cal: "gre",
+    color: {red: 0.6, green: 0.1, blue: 0.1},
     first: {era: 1, y: 2004},
     events: [
         {type: "D", start: {mon: 4, d: 19}, inherits: "Bicycle Day"},

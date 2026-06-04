@@ -2,8 +2,8 @@
     titles: {"*": "MK"},
     "//": "North Macedonia",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.75, green: 0.05, blue: 0.24},
+    cal: "jul",
+    color: {red: 0.75, green: 0.05, blue: 0.24},
     first: {era: 1, y: 1991},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_North_Macedonia"},
     events: [

@@ -3,8 +3,8 @@
     "//": "Kiribati",
     "TODO":  "Gospel Day and Natural Culture and Senior Citizens Day can change their dates depending on when Independence Day is; how requires research.  See https://nationaltoday.com/gospel-day/ and https://nationaltoday.com/national-culture-and-senior-citizens-day/ .",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.94, green: 0.20, blue: 0.24},
+    cal: "gre",
+    color: {red: 0.94, green: 0.20, blue: 0.24},
     first: {era: 1, y: 1979},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kiribati"},
     events: [

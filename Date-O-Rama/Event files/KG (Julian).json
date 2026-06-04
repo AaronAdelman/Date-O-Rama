@@ -2,8 +2,8 @@
     titles: {"*": "KG"},
     "//": "Kyrgyzstan",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    cal: "jul",
+    color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kyrgyzstan"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},

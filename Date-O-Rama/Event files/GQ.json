@@ -2,8 +2,8 @@
     titles: {"*": "GQ"},
     "//": "Equatorial Guinea",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.59, blue: 0.22},
+    cal: "gre",
+    color: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1968},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Equatorial_Guinea"},
     events: [

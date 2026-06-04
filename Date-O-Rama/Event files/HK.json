@@ -2,8 +2,8 @@
     titles: {"*": "HK"},
     "//": "Hong Kong",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.93, green: 0.11, blue: 0.15},
+    cal: "gre",
+    color: {red: 0.93, green: 0.11, blue: 0.15},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},
     first: {era: 1, y: 1841},
     events: [

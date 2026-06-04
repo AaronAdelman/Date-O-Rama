@@ -2,8 +2,8 @@
     titles: {"*": "PG"},
     "//": "Papua New Guinea",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    cal: "gre",
+    color: {red: 0.78, green: 0.06, blue: 0.18},
     first: {era: 1, y: 1975},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Papua_New_Guinea"},
     events: [

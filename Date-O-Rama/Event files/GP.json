@@ -2,8 +2,8 @@
     titles: {"*": "GP"},
     "//": "Guadeloupe",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.95, blue: 0.0},
+    cal: "gre",
+    color: {red: 1.00, green: 0.95, blue: 0.0},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Guadeloupe"},
     first: {era: 1, y: 1814},
     events: [

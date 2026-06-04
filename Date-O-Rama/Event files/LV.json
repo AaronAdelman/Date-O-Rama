@@ -3,8 +3,8 @@
     "//": "Latvia",
     "TODO": "Latvian Song and Dance Festival",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.64, green: 0.20, blue: 0.23},
+    cal: "gre",
+    color: {red: 0.64, green: 0.20, blue: 0.23},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Latvia"},
     first: {era: 1, y: 1918},
     events: [

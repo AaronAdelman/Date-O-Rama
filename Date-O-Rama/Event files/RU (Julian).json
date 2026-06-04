@@ -2,8 +2,8 @@
     titles: {"*": "RU"},
     "//": "Russia",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
+    cal: "jul",
+    color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Russia"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day", urls: {"en": "https://nationaltoday.com/novy-god-russian-new-year/"}},

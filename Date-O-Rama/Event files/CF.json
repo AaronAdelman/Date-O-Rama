@@ -3,8 +3,8 @@
     "//": "Central African Republic",
     "TODO": "Muslim Holidays",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.19, blue: 0.53},
+    cal: "gre",
+    color: {red: 0.00, green: 0.19, blue: 0.53},
     first: {era: 1, y: 1960},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Central_African_Republic"},
     events: [

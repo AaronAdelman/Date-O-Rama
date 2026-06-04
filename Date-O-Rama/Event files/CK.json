@@ -2,8 +2,8 @@
     titles: {"*": "CK"},
     "//": "Cook Islands",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.13, blue: 0.41},
+    cal: "gre",
+    color: {red: 0.00, green: 0.13, blue: 0.41},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Cook_Islands"},
     first: {era: 1, y: 1965},
     events: [

@@ -3,8 +3,8 @@
     "//": "Mongolia",
     "TODO": "Buddha Purnima, lunar calendar observances, National literary culture and book days, Environment Safety Day, Genghis Khan’s birthday, Tsagaan Sar",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.85, blue: 0.00},
+    cal: "gre",
+    color: {red: 1.00, green: 0.85, blue: 0.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Mongolia"},
     first: {era: 1, y: 1911},
     events: [

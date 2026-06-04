@@ -1,8 +1,8 @@
 {
     titles: {"en": "Colleen Paige"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.41, green: 0.32, blue: 0.25},
+    cal: "gre",
+    color: {red: 0.41, green: 0.32, blue: 0.25},
     first: {era: 1, y: 2004},
     urls: {"en": "https://www.colleenpaige.com/"},
     events: [

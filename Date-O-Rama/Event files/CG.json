@@ -2,8 +2,8 @@
     titles: {"*": "CG"},
     "//": "Congo, AKA Republic of the Congo",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
+    cal: "gre",
+    color: {red: 1.00, green: 0.82, blue: 0.00},
     first: {era: 1, y: 1960},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_the_Congo"},
     events: [

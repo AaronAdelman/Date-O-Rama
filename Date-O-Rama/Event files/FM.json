@@ -2,8 +2,8 @@
     titles: {"*": "FM"},
     "//": "Micronesia",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.67, green: 0.79, blue: 0.91},
+    cal: "gre",
+    color: {red: 0.67, green: 0.79, blue: 0.91},
     first: {era: 1, y: 1986},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Federated_States_of_Micronesia"},
     events: [

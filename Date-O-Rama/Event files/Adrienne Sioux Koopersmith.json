@@ -1,8 +1,8 @@
 {
     titles: {"en": "Adrienne Sioux Koopersmith"},
     defaultLocale: "en",
-    calendarCode: "gre*",
-    calendarColor: {name: "magenta"},
+    cal: "gre*",
+    color: {name: "magenta"},
     first: {era: 1, y: 1994},
     "//": "WARNING:  Ms. Koopersmith reportedly has created over 1,900 observances (“holidates”).",
     events: [

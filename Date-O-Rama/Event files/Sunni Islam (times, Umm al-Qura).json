@@ -1,8 +1,8 @@
 {
     titles: {"en": "Islam (times, Umm al-Qura)", "he": "אסלאם סוני (זמנים, אום אל־קורה)"},
     defaultLocale: "en",
-    calendarCode: "IslamicUmmAlQuraSolar",
-    calendarColor: {name: "green"},
+    cal: "IslamicUmmAlQuraSolar",
+    color: {name: "green"},
     emoji: "🇸🇦",
     events: [
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},

@@ -3,8 +3,8 @@
     "//": "Sri Lanka",
     "TODO": "Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar)",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
+    cal: "gre",
+    color: {red: 1.00, green: 0.82, blue: 0.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},
     first: {era: 1, y: 1948},
     events: [

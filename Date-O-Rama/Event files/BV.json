@@ -2,8 +2,8 @@
     titles: {"*": "BV"},
     "//": "Bouvet Island",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.50, green: 0.50, blue: 0.50},
+    cal: "gre",
+    color: {red: 0.50, green: 0.50, blue: 0.50},
     first: {era: 1, y: 1928},
     events: [
         

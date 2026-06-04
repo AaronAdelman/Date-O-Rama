@@ -1,8 +1,8 @@
 {
     titles: {"en": "Shia (times, Tehran)", "he": "שיעה (זמנים, טהראן)"},
     defaultLocale: "en",
-    calendarCode: "hiq-solar*",
-    calendarColor: {name: "green"},
+    cal: "hiq-solar*",
+    color: {name: "green"},
     emoji: "🇮🇷",
     events: [
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},

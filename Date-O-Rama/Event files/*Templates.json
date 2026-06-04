@@ -1,8 +1,8 @@
 {
     titles: {"en": "Templates"},
     defaultLocale: "en",
-    calendarCode: "  ",
-    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
+    cal: "  ",
+    color: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
     ],
     templates: [

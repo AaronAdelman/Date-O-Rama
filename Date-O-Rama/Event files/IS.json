@@ -2,8 +2,8 @@
     titles: {"*": "IS"},
     "//": "Iceland",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.45, blue: 0.81},
+    cal: "gre",
+    color: {red: 0.00, green: 0.45, blue: 0.81},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iceland"},
     first: {era: 1, y: 1944},
     events: [

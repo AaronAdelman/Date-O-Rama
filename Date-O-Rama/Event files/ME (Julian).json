@@ -2,8 +2,8 @@
     titles: {"*": "ME"},
     "//": "Montenegro",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.85, green: 0.67, blue: 0.00},
+    cal: "jul",
+    color: {red: 0.85, green: 0.67, blue: 0.00},
     first: {era: 1, y: 2006},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     events: [

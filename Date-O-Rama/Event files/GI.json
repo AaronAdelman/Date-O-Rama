@@ -2,8 +2,8 @@
     titles: {"*": "GI"},
     "//": "Gibraltar",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.85, green: 0.00, blue: 0.05},
+    cal: "gre",
+    color: {red: 0.85, green: 0.00, blue: 0.05},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Gibraltar"},
     first: {era: 1, y: 1713},
     events: [

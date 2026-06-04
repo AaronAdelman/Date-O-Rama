@@ -2,8 +2,8 @@
     titles: {"en": "Wellcat"},
     // Tom and Ruth Roy
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.22, green: 0.33, blue: 0.44},
+    cal: "gre",
+    color: {red: 0.22, green: 0.33, blue: 0.44},
     emoji: "🐈‍⬛",
     urls: {"en": "https://wellcat.com/pages/holidays"},
     first: {era: 1, y: 1996},

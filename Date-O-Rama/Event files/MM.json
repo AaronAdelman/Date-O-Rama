@@ -3,8 +3,8 @@
     "//": "Myanmar, AKA Burma",
     "TODO": "Islamic and Buddist holidays, National Day, Full Moon Day of Kasong, Kayin New Year",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.80, blue: 0.00},
+    cal: "gre",
+    color: {red: 1.00, green: 0.80, blue: 0.00},
     first: {era: 1, y: 1948},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Myanmar"},
     events: [

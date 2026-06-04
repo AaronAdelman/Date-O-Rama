@@ -3,8 +3,8 @@
     "//": "Burundi",
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.26, green: 0.69, blue: 0.16},
+    cal: "gre",
+    color: {red: 0.26, green: 0.69, blue: 0.16},
     first: {era: 1, y: 1962},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Burundi"},
     events: [

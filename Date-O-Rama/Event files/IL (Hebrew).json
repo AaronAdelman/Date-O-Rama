@@ -2,8 +2,8 @@
     titles: {"*": "IL"},
     "//": "Israel",
     defaultLocale: "he",
-    calendarCode: "heb*",
-    calendarColor: {name: "blue"},
+    cal: "heb*",
+    color: {name: "blue"},
     first: {era: 0, y: 5708},
     events: [
         {titles: {"he": "יום זיכרון לאומי לאסון 7 באוקטובר", "en": "October 7 Massacre Memorial Day"}, type: "D", start: {mon: 1, d: 24}, first: {era: 0, y: 5785}},

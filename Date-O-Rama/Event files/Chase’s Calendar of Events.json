@@ -2,8 +2,8 @@
     titles: {"en": "Chase’s Calendar of Events"},
     // Bill and Helen Chase
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.19, green: 0.39, blue: 0.57},
+    cal: "gre",
+    color: {red: 0.19, green: 0.39, blue: 0.57},
     first: {era: 1, y: 1957},
     events: [
         {type: "D", start: {mon: 8, d: 8}, titles: {"en": "Wear Your Mother’s Jewelry Day"}, urls: {"en": "https://mymothersjewelrybox.com/wear-your-mothers-jewelry-day/"}, first: {era: 1, y: 2017}, emoji: "💍", notes: {"en": "Created by Barbara J. Feldman of My Mother’s Jewelry Box"}},

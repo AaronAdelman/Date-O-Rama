@@ -1,8 +1,8 @@
 {
     titles: {"en": "American Homebrewers Association"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.60, green: 0.20, blue: 0.0},
+    cal: "gre",
+    color: {red: 0.60, green: 0.20, blue: 0.0},
     first: {era: 1, y: 1998},
     urls: {"en": "https://homebrewersassociation.org/"},
     emoji: "🍻",

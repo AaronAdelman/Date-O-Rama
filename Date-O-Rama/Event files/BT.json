@@ -3,8 +3,8 @@
     "//": "Bhutan",
     "TODO": "Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.40, blue: 0.12},
+    cal: "gre",
+    color: {red: 1.00, green: 0.40, blue: 0.12},
     first: {era: 1, y: 1616},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bhutan"},
     events: [

@@ -3,8 +3,8 @@
     "//": "Afghanistan",
     "TODO": "Public holidays on the Muslim calendar?",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    cal: "gre",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 1, y: 1919},
     urls: {"en": "https://en.wikipedia.org/wiki/Afghanistan"},
     events: [

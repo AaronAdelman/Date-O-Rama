@@ -8,8 +8,8 @@
 {
     titles: {"am":"ሉኒ ቱንዝ","ar":"لوني تيونز","arz":"لونى تيونز","bg":"Шантави рисунки","ca":"Looney Tunes","ckb":"لوونی توونز","cs":"Looney Tunes","da":"Looney Tunes","de":"Looney Tunes","el":"Looney Tunes","en":"Looney Tunes","es":"Looney Tunes","eu":"Looney Tunes","fa":"لونی تونز","fi":"Looney Tunes","fr":"Looney Tunes","gl":"Looney Tunes","he":"לוני טונס","hu":"Bolondos dallamok","hy":"Looney Tunes","id":"Looney Tunes","io":"Looney Tunes","it":"Looney Tunes","ja":"ルーニー・テューンズ","ka":"Looney Tunes","ko":"루니 툰","lb":"Looney Tunes","ms":"Looney Tunes","nan":"Looney Tunes","nb":"Looney Tunes","nl":"Looney Tunes","pl":"Zwariowane melodie","pt":"Looney Tunes","ro":"Looney Tunes","ru":"Looney Tunes","sah":"Looney Tunes","scn":"Looney Tunes e Merrie Melodies","sh":"Looney Tunes","sq":"Looney Tunes","sr":"Шашава дружина","sv":"Looney Tunes","sw":"Looney Tunes","th":"ลูนีทูนส์","tr":"Looney Tunes","uk":"Looney Tunes","ur":"لوونی ٹونس","uz":"Looney Tunes","vec":"Looney Tunes","war":"Looney Tunes","yue":"Looney Tunes","zh":"樂一通"},
     defaultLocale: "en",
-    calendarCode: "gre*",
-    calendarColor: {red: 0.6, green: 0.1, blue: 0.1},
+    cal: "gre*",
+    color: {red: 0.6, green: 0.1, blue: 0.1},
     first: {era: 1, y: 1935},
     events: [
         {type: "D", start: {mon: 11, d: 21}, titles: {"en": "Tweety Bird Day"}, urls: {"en": "https://happyhivehomeschooling.com/what-is-todays-holiday/tweety-bird-day/"}, inherits: "*BDay*", first: {era: 1, y: 1942}, emoji: "🐦"},

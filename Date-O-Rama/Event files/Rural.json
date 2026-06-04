@@ -1,8 +1,8 @@
 {
     titles: {"en": "Rural", "he": "כפרי", "fr": "Rural"},
     defaultLocale: "en",
-    calendarCode: "fre*",
-    calendarColor: {red: 0.88, green: 0.66, blue: 0.38},
+    cal: "fre*",
+    color: {red: 0.88, green: 0.66, blue: 0.38},
     first: {era: 0, y: 1},
     urls: {"en": "https://en.wikipedia.org/wiki/French_Republican_calendar"},
     events: [

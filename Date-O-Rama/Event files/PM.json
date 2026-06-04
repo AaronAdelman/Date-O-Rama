@@ -2,8 +2,8 @@
     titles: {"*": "PM"},
     "//": "Saint Pierre and Miquelon",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.57, blue: 0.78},
+    cal: "gre",
+    color: {red: 0.00, green: 0.57, blue: 0.78},
     first: {era: 1, y: 1814},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

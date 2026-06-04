@@ -2,8 +2,8 @@
     titles: {"*": "ZW"},
     "//": "Zimbabwe",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.39, blue: 0.00},
+    cal: "gre",
+    color: {red: 0.00, green: 0.39, blue: 0.00},
     first: {era: 1, y: 1980},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Zimbabwe"},
     events: [

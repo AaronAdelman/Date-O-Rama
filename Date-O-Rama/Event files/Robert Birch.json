@@ -1,8 +1,8 @@
 {
     titles: {"en": "Robert L. Birch"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.23, green: 0.99, blue: 0.23},
+    cal: "gre",
+    color: {red: 0.23, green: 0.99, blue: 0.23},
     first: {era: 1, y: 1973},
     events: [
         {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National Swap Ideas Day"}, urls: {"en": "https://www.daysoftheyear.com/days/swap-ideas-day/"}, notes: {"en": "Swap Ideas Day\nCreated by Robert Birch"}, first: {era: 1, y: 2021}},

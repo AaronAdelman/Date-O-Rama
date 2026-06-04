@@ -3,8 +3,8 @@
     "//": "Christmas Island",
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.11, green: 0.54, blue: 0.26},
+    cal: "gre",
+    color: {red: 0.11, green: 0.54, blue: 0.26},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
     first: {era: 1, y: 1888},
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "GU"},
     "//": "Guam",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.10, green: 0.22, blue: 0.36},
+    cal: "gre",
+    color: {red: 0.10, green: 0.22, blue: 0.36},
     first: {era: 1, y: 1898},
     urls: {"en": "https://en.wikipedia.org/wiki/Holidays_with_paid_time_off_in_the_United_States#Guam"},
     events: [

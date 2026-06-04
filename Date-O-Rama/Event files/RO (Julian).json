@@ -2,8 +2,8 @@
     titles: {"*": "RO"},
     "//": "Romania",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.13, blue: 0.41},
+    cal: "jul",
+    color: {red: 0.00, green: 0.13, blue: 0.41},
     first: {era: 1, y: 1877},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "YT"},
     "//": "Mayotte",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.22, green: 0.33, blue: 0.62},
+    cal: "gre",
+    color: {red: 0.22, green: 0.33, blue: 0.62},
     urls: {"en": "https://publicholidays.africa/mayotte/"},
     first: {era: 1, y: 1974},
     events: [

@@ -3,8 +3,8 @@
     "//": "India",
     "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu, Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.95, green: 0.62, blue: 0.29},
+    cal: "gre",
+    color: {red: 0.95, green: 0.62, blue: 0.29},
     first: {era: 1, y: 1947},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "NI"},
     "//": "Nicaragua",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.13, blue: 0.36},
+    cal: "gre",
+    color: {red: 0.00, green: 0.13, blue: 0.36},
     first: {era: 1, y: 1821},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Nicaragua"},
     events: [

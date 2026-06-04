@@ -3,8 +3,8 @@
     "//": "Malaysia",
     "TODO": "Muslim observances, Hindu observances",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.20, blue: 0.63},
+    cal: "gre",
+    color: {red: 0.00, green: 0.20, blue: 0.63},
     first: {era: 1, y: 1957},
     urls: {"en": "https://publicholidays.com.my/", "ms": "https://publicholidays.com.my/ms/", "zh": "https://publicholidays.com.my/zh/"},
     events: [

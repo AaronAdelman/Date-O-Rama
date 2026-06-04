@@ -1,8 +1,8 @@
 {
     titles: {"en": "Islam (times, MWL)", "he": "אסלאם סוני (זמנים, MWL)"},
     defaultLocale: "en",
-    calendarCode: "hiq-solar*",
-    calendarColor: {name: "green"},
+    cal: "hiq-solar*",
+    color: {name: "green"},
     emoji: "🇸🇦",
     events: [
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},

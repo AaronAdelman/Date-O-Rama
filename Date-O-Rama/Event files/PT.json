@@ -2,8 +2,8 @@
     titles: {"*": "PT"},
     "//": "Portugal",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.02, green: 0.42, blue: 0.22},
+    cal: "gre",
+    color: {red: 0.02, green: 0.42, blue: 0.22},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Portugal"},
     first: {era: 1, y: 868},
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "RS"},
     "//": "Serbia",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
+    cal: "jul",
+    color: {red: 0.89, green: 0.00, blue: 0.27},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     first: {era: 1, y: 1804},
    events: [

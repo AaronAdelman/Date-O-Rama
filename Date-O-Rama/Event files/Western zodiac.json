@@ -1,8 +1,8 @@
 {
     titles: {"en": "Western zodiac", "he": "גלגל המזלות המערבי"},
     defaultLocale: "en",
-    calendarCode: "gre*",
-    calendarColor: {red: 0.5, green: 0.5, blue: 0.5},
+    cal: "gre*",
+    color: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Aries", type: "nD", start: {mon: 3, d: 21}, end: {mon: 4, d: 19}},

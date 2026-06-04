@@ -2,8 +2,8 @@
     titles: {"*": "CV"},
     "//": "Cabo Verde, i.e., Cape Verde",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.22, blue: 0.58},
+    cal: "gre",
+    color: {red: 0.00, green: 0.22, blue: 0.58},
     first: {era: 1, y: 1975},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cape_Verde"},
     events: [

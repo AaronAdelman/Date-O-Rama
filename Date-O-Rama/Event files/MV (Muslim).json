@@ -2,8 +2,8 @@
     titles: {"*": "MV"},
     "//": "Maldives",
     defaultLocale: "en",
-    calendarCode: "hiq*",
-    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    cal: "hiq*",
+    color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
     events: [
         {type: "D", start: {mon: 3, d: 1}, inherits: "Natl Day", urls: {"en": "https://nationaltoday.com/maldives-qaumee-dhuvas/"}, notes: {"en": "Qaumee Dhuvas"}},

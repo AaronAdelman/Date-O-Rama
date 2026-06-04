@@ -3,8 +3,8 @@
     "//": "Bolivia",
     "TODO": "Carnival",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.0, green: 0.0, blue: 0.0},
+    cal: "gre",
+    color: {red: 1.0, green: 0.0, blue: 0.0},
     first: {era: 1, y: 1825},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bolivia"},
     events: [

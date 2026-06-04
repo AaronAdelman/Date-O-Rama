@@ -1,8 +1,8 @@
 {
     titles: {"en": "National Day Archives"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "red"},
+    cal: "gre",
+    color: {name: "red"},
     first: {era: 1, y: 2019},
     urls: {"en": "https://www.nationaldayarchives.com/"},
     events: [

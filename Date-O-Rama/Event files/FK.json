@@ -3,8 +3,8 @@
     "//": "Falkland Islands (Malvinas)",
     "TODO": "Explication of New Year’s Day (in lieu) and Christmas Holiday",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.16, green: 0.50, blue: 1.00},
+    cal: "gre",
+    color: {red: 0.16, green: 0.50, blue: 1.00},
     first: {era: 1, y: 1764},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Falkland_Islands"},
     events: [

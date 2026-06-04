@@ -3,8 +3,8 @@
     "//": "Qatar",
     "TODO": "Public holidays on the Muslim calendar?",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.42, green: 0.11, blue: 0.24},
+    cal: "gre",
+    color: {red: 0.42, green: 0.11, blue: 0.24},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Qatar"},
     first: {era: 1, y: 1878},
     events: [

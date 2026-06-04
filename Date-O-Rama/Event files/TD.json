@@ -3,8 +3,8 @@
     "//": "Chad",
     "TODO": "Muslim Holidays, Muslim days off",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 1.00, green: 0.80, blue: 0.00},
+    cal: "gre",
+    color: {red: 1.00, green: 0.80, blue: 0.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Chad"},
     first: {era: 1, y: 1960},
     events: [

@@ -1,8 +1,8 @@
 {
     titles: {"en": "Planets", "he": "כוכבי־לכת"},
     defaultLocale: "en",
-    calendarCode: "xloc*",
-    calendarColor: {red: 0.941, green: 0.827, blue: 0.616},
+    cal: "xloc*",
+    color: {red: 0.941, green: 0.827, blue: 0.616},
     events: [
         {titles: {"en": "Rise of Mercury", "he": "זריחת כוכב"}, type: "pt", start: {ptType: "rise", body: "zme"}, emoji: "☿↑"},
         {titles: {"en": "Setting of Mercury", "he": "שקיעת כוכב"}, type: "pt", start: {ptType: "set", body: "zme"}, emoji: "☿↓"},

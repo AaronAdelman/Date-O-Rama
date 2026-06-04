@@ -1,8 +1,8 @@
 {
     titles: {"en": "International", "he": "בינלאומי"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "teal"},
+    cal: "gre",
+    color: {name: "teal"},
     emoji: "🌐",
     "TODO": "World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn); Rotary Club event calendar?  Amnesty International event calendar?  Red Cross event calendar? Dr. Jerome Teelucksingh event calendar?, Digital Freedom Foundation event calendar?",
     events: [

@@ -2,8 +2,8 @@
     titles: {"*": "NC"},
     "//": "New Caledonia",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.98, green: 0.98, blue: 0.00},
+    cal: "gre",
+    color: {red: 0.98, green: 0.98, blue: 0.00},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_New_Caledonia"},
     first: {era: 1, y: 19853},
     events: [

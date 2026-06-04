@@ -3,8 +3,8 @@
     "//": "Tuvalu",
     "TODO": "Aso o te Tala Lei for Nukulaelae",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.65, blue: 0.87},
+    cal: "gre",
+    color: {red: 0.00, green: 0.65, blue: 0.87},
     first: {era: 1, y: 1978},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Tuvalu"},
     events: [

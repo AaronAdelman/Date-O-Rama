@@ -2,8 +2,8 @@
     titles: {"*": "XK"},
     "//": "Kosovo",
     defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.00, blue: 0.50},
+    cal: "jul",
+    color: {red: 0.00, green: 0.00, blue: 0.50},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
     first: {era: 1, y: 2008},
     events: [

@@ -3,8 +3,8 @@
     "//": "Turkey",
     "TODO": "Muslim holidays?",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
+    cal: "gre",
+    color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Turkey"},
     first: {era: 1, y: 1923},
     events: [

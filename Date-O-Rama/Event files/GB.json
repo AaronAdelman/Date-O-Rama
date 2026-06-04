@@ -2,8 +2,8 @@
     titles: {"*": "GB"},
     "//": "United Kingdom, AKA UK",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.72, green: 0.17, blue: 0.21},
+    cal: "gre",
+    color: {red: 0.72, green: 0.17, blue: 0.21},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_United_Kingdom"},
     first: {era: 1, y: 1603},
     events: [

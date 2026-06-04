@@ -1,8 +1,8 @@
 {
     titles: {"en": "National months", "he": "חודשים לאומיים"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "indigo"},
+    cal: "gre",
+    color: {name: "indigo"},
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
     "TODO": "Prevent Blindness event calendar?",

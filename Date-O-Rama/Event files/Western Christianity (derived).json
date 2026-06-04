@@ -1,8 +1,8 @@
 {
     titles: {"en": "Western Christianity-derived", "he": "נגזרים מנצרות מערבית"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "red"},
+    cal: "gre",
+    color: {name: "red"},
     events: [
         {type: "D", start: {misc: "E", offsetD: -44}, titles: {"en": "Friday Fish Fry Day"}, urls: {"en": "https://www.fridayfishfryday.com/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {misc: "E", offsetD: -44}, inherits: "Natl Tartar Sauce Day", first: {era: 1, y: 2017}},

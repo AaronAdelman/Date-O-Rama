@@ -1,8 +1,8 @@
 {
     titles: {"en": "Islam (supplemental)", "he": "אסלאם (נוספים)"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "green"},
+    cal: "gre",
+    color: {name: "green"},
     events: [
         {titles: {"en": "International Shia Day"}, type: "D", start: {mon: 6, d: 12}, urls: {"en": "http://internationalshiaday.com"}},
         {titles: {"en": "Muslim Women’s Day"}, type: "D", start: {mon: 3, d: 27}},

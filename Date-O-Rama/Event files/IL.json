@@ -2,8 +2,8 @@
     titles: {"*": "IL"},
     "//": "Israel",
     defaultLocale: "he",
-    calendarCode: "gre",
-    calendarColor: {name: "blue"},
+    cal: "gre",
+    color: {name: "blue"},
     first: {era: 1, y: 1948},
     events: [
         {type: "D", start: {mon: 1, d: 11}, inherits: "Doctor’s Day", first: {era: 1, y: 1912}, emoji: "👨‍⚕️👩‍⚕️"},

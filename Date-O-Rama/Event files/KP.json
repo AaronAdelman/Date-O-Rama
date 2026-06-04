@@ -3,8 +3,8 @@
     "//": "North Korea",
     "TODO": "Korean calendar observances, Chungmyung Day",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.75, green: 0.06, blue: 0.24},
+    cal: "gre",
+    color: {red: 0.75, green: 0.06, blue: 0.24},
     first: {era: 1, y: 1948},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
     events: [

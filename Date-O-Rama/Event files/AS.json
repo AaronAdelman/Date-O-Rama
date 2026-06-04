@@ -2,8 +2,8 @@
     titles: {"*": "AS"},
     "//": "American Samoa",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.00, blue: 0.40},
+    cal: "gre",
+    color: {red: 0.00, green: 0.00, blue: 0.40},
     first: {era: 1, y: 1776}, 
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

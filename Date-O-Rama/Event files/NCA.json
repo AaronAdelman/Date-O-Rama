@@ -2,8 +2,8 @@
     titles: {"en": "National Confectioners Association"},
     // NCA
     defaultLocale: "en",
-    calendarCode: "gre*",
-    calendarColor: {red: 0.48, green: 0.25, blue: 0.0},
+    cal: "gre*",
+    color: {red: 0.48, green: 0.25, blue: 0.0},
     first: {era: 1, y: 2009},
     events: [
         {type: "D", start: {mon: 1, d: 8}, titles: {"en": "National English Toffee Day"}, urls: {"en": "https://www.daysoftheyear.com/days/national-english-toffee-day/"}, emoji: "🍬", notes: {"en": "Created by the National Confectioners Association"}},

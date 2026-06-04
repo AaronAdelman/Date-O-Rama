@@ -1,8 +1,8 @@
 {
     titles: {"en": "National", "he": "לאומי"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {name: "indigo"},
+    cal: "gre",
+    color: {name: "indigo"},
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
     "TODO": "Spin off a Hasbro event calendar?  Scouts event calendar?  American Society for the Prevention of Cruelty to Animals (ASPCA) event calendar?  Todd McCalla event calendar?  McDonald’s event calendar?  Dale Anderson event calendar?  Camp Fire (organization) event calendar?  American Heart Association event calendar?  American Counseling Association event calendar?  American Humane Association event calendar?  American Public Health Association (APHA) event calendar?, American Veterinary Medical Association (AVMA) event calendar?  Major League Baseball event calendar?  Whirlpool Corporation event calendar?  PajamaGram event calendar?  American Library Association (ALA) event calendar?  Brownielocks event calendar?  Pet Partners event calendar?",

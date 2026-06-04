@@ -2,8 +2,8 @@
     titles: {"*": "TL"},
     "//": "Timor-Leste, AKA East Timor",
     defaultLocale: "en",
-    calendarCode: "chi",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
+    cal: "chi",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Timor-Leste"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},

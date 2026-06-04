@@ -2,8 +2,8 @@
     titles: {"*": "KW"},
     "//": "Kuwait",
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.59, blue: 0.37},
+    cal: "gre",
+    color: {red: 0.00, green: 0.59, blue: 0.37},
     urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kuwait"},
     first: {era: 1, y: 1961},
     events: [

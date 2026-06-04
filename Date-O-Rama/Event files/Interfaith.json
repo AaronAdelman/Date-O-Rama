@@ -1,8 +1,8 @@
 {
     titles: {"en": "Interfaith", "he": "בין־דתיות"},
     defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.8, green: 0.8, blue: 0.98},
+    cal: "gre",
+    color: {red: 0.8, green: 0.8, blue: 0.98},
     first: {era: 1, y: 1950},
     events: [
         {type: "D", start: {mon: 9, d: 30}, titles: {"ast":"Día Internacional del Derechu a la Blasfemia","en":"Blasphemy Day","es":"Día Internacional del Derecho a la Blasfemia","fa":"روز جهانی توهین به مقدسات","fi":"Jumalanpilkkapäivä","fr":"Jour du blasphème","hr":"Dan blasfemije","id":"Hari Penistaan Agama","sd":"گستاخي جو ڏينهن","sh":"Dan blasfemije","sv":"Blasfemidagen"}, first: {era: 1, y: 2009}, urls: {"en": "https://www.daysoftheyear.com/days/blasphemy-day/"}, notes: {"en": "International Blasphemy Rights Day\nInternational Blasphemy Day\nCreated by the Center for Inquiry"}},
