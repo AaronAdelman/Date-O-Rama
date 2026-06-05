@@ -52,7 +52,7 @@ struct ASADateSpecification:  Codable {
     
     var throughDay: Int?
     var throughMonth: Int?
-    var durDays: Int?
+    var durationInDays: Int?
 
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
@@ -111,7 +111,7 @@ struct ASADateSpecification:  Codable {
         case throughMonth        = "thruMon"
         case fullWeek            = "fullWk"
         case firstDayOfWeek      = "d1OfWk"
-        case durDays             = "durD"
+        case durationInDays      = "durD"
         case recurrenceDays      = "recurD"
     } // enum CodingKeys
 } // struct ASADateSpecification
