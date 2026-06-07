@@ -192,9 +192,9 @@
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "National Nail Polish Day"}, first: {era: 1, y: 2017}, notes: {"en": "This event is meant to promote fashion.\nCreated by essie"}, urls: {"en": "https://nationaldaycalendar.com/celebrations/national-nail-polish-day-june-1"}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "National Olive Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-olive-day"}, emoji: "🫒", first: {era: 1, y: 2015}, notes: {"en": "Created by Divina"}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en": "World Reef Day"}, urls: {"en": "https://worldreefday.org/"}, notes: {"en": "World Reef Awareness Day\nCreated by Raw Elements USA"}, emoji: "🪸🐠", first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 6, d: 10}, titles: {"en": "National Egg Roll Day"}, urls: {"en": "https://www.vanskitchen.com/national-egg-roll-day/"}, first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 6, d: 10}, titles: {"en": "National Frosted Cookie Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-frosted-cookie-day-june-10"}, first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 6, d: 11}, titles: {"en": "National Making Life Beautiful Day"}, first: {era: 1, y: 2018}, notes: {"en": "This event is meant to promote vanity and sell products."}},
+        {type: "D", start: {mon: 6, d: 10}, titles: {"en": "National Egg Roll Day"}, urls: {"en": "https://www.vanskitchen.com/national-egg-roll-day/"}, first: {era: 1, y: 2019}, notes: {"en": "Created by Van and Kim Nguyen"}},
+        {type: "D", start: {mon: 6, d: 10}, titles: {"en": "National Frosted Cookie Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-frosted-cookie-day-june-10"}, first: {era: 1, y: 2023}, notes: {"en": "Created by Mother’s® Cookies"}},
+        {type: "D", start: {mon: 6, d: 11}, titles: {"en": "National Making Life Beautiful Day"}, first: {era: 1, y: 2018}, notes: {"en": "This event is meant to promote vanity and sell products.\nCreated by Apriori Beauty"}},
         {type: "D", start: {mon: 6, d: 13}, titles: {"en": "National Random Acts of Light Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-random-acts-of-light-day-june-13"}, notes: {"en": "Random Acts of Light Day"}, first: {era: 1, y: 2017}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 14}, titles: {"en": "National Cucumber Day", "he": "יום המלפפון הלאומי"}, emoji: "🥒", urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-cucumber-day-june-14"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, d: 15}, titles: {"en": "National Big Boy Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-big-boy-day-june-15"}, emoji: "🍟🍔", first: {era: 1, y: 2024}},
@@ -542,7 +542,7 @@
     ],
     templates: [
         {template: "Summersgiving", titles: {"en": "Summersgiving"}, type: "D", start: {misc: "Jun", offsetD: 1, wkd: [7]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/summersgiving-saturday-after-the-summer-solstice"}, emoji: "🍹🥧🍊"},
-        {template: "Natl Call Your Doctor Day", type: "D", start: {mon: 6, wkd: [3], nth: 2}, titles: {"en": "National Call Your Doctor Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/call-your-doctor-day-second-tuesday-in-june"}, emoji: "👨‍⚕️👩‍⚕️"},
+        {template: "Natl Call Your Doctor Day", type: "D", start: {mon: 6, wkd: [3], nth: 2}, titles: {"en": "National Call Your Doctor Day"}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/call-your-doctor-day-second-tuesday-in-june"}, emoji: "👨‍⚕️👩‍⚕️", notes: {"en": "Created by Bright Pink"}},
         {template: "Natl Take Back the Lunch Break Day", type: "D", start: {mon: 6, wkd: [6], nth: 3}, titles: {"en": "National Take Back the Lunch Break Day"}, urls: {"en": "https://www.daysoftheyear.com/days/take-back-the-lunch-break-day/"}, emoji: "🥪"},
     ]
 }
