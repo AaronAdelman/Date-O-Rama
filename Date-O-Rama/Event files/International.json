@@ -1936,7 +1936,6 @@
         {type: "W", start: {mon: 6, fullWk: 1}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2021}, last: {era: 1, y: 2022}},
         {type: "W", start: {mon: 6, fullWk: 2, d1OfWk: 2}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2023}},
         {type: "W", start: {mon: 6, fullWk: 2, d1OfWk: 2}, titles: {"en":"Meet A Mate Week"}, urls: {"en":"https://www.daysoftheyear.com/days/meet-a-mate-week/"}, first: {era: 1, y: 2019}},
-        {type: "W", start: {mon: 6, fullWk: 2}, titles: {"en":"Scleroderma Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/scleroderma-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "W", start: {mon: 6, fullWk: 3, d1OfWk: 2}, titles: {"en":"Animal Rights Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/animal-rights-awareness-week/"}, first: {era: 1, y: 1991}},
         {type: "W", start: {mon: 8, fullWk: 1}, titles: {"en":"International Assistance Dog Week"}, urls: {"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"}, emoji: "🦮🐕‍🦺", first: {era: 1, y: 2009}},
         {type: "W", start: {mon: 8, fullWk: 1}, urls: {"en":"https://www.daysoftheyear.com/days/simplify-your-life-week/"}, titles: {"en":"Simplify Your Life Week"}},

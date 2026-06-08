@@ -201,7 +201,7 @@
         {type: "D", start: {mon: 5, d: 29}, titles: {"en":"International Everest Day"}, notes: {"en":"International Mount Everest Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mount-everest-day/"}, first: {era: 1, y: 2008}, emoji: "🏔"},
         {type: "D", start: {mon: 7, d: 1}, inherits: "Doctor’s Day", urls: {"en":"https://nationaltoday.com/doctors-day-india/"}, first: {era: 1, y: 1991}},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Chartered Accountants Day"}},
-        {inherits: "Commonwealth Day", type: "D", start: {mon: 5, d: 24}},
+        {type: "D", start: {mon: 5, d: 24}, inherits: "Commonwealth Day"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"GST Day"}},
         {type: "D", start: {mon: 7, d: 10}, titles: {"en":"National Fish Farmers’ Day"}, emoji: "🐟"},
         {type: "D", start: {mon: 7, d: 23}, inherits: "Natl Broadcasting Day"},
