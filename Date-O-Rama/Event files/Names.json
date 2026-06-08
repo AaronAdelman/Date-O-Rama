@@ -220,7 +220,6 @@
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"National Esther Day"}},
         {type: "D", start: {mon: 6, d: 13}, titles: {"en":"National Frances Day"}},
         {type: "D", start: {mon: 6, d: 13}, titles: {"en":"National Jane Day"}},
-        {type: "D", start: {mon: 6, d: 15}, titles: {"en":"National Marina Day"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en":"National Casey Day"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en":"National Mohammad Day"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en":"National Richard Day"}},
