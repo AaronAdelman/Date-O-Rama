@@ -1,10 +1,10 @@
 {
-    titles: {"*": "IQ"},
-    "//": "Iraq",
+    titles: {"*":"IQ"},
+    "//":"Iraq",
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.89, green: 0.00, blue: 0.17},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Iraq"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iraq"},
     events: [
         {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
     ]

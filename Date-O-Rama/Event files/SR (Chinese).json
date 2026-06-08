@@ -1,10 +1,10 @@
 {
-    titles: {"*": "SR"},
-    "//": "Suriname",
+    titles: {"*":"SR"},
+    "//":"Suriname",
     defaultLocale: "en",
     cal: "chi",
     color: {red: 0.00, green: 0.48, blue: 0.20},
-    urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Suriname"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
         {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}

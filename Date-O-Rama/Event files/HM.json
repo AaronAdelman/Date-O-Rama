@@ -1,6 +1,6 @@
 {
-    titles: {"*": "HM"},
-    "//": "Heard Island and McDonald Islands",
+    titles: {"*":"HM"},
+    "//":"Heard Island and McDonald Islands",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.50, green: 0.50, blue: 0.50},

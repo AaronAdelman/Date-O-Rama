@@ -1,10 +1,10 @@
 {
-    titles: {"*": "ET"},
-    "//": "Ethiopia",
+    titles: {"*":"ET"},
+    "//":"Ethiopia",
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.06, green: 0.28, blue: 0.69},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},

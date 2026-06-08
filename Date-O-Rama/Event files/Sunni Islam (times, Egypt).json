@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Islam (times, Egypt)", "he": "אסלאם סוני (זמנים, מצרים)"},
+    titles: {"en":"Islam (times, Egypt)", "he":"אסלאם סוני (זמנים, מצרים)"},
     defaultLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
@@ -11,7 +11,7 @@
         {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Karachi"}},
         {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Karachi"}},
  
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Egypt"}, notes: {"en": "Egyptian General Authority of Survey"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Egypt"}, notes: {"en": "Egyptian General Authority of Survey"}},
+        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Egypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
+        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Egypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
     ]
 }

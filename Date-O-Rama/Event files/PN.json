@@ -1,11 +1,11 @@
 {
-    titles: {"*": "PN"},
-    "//": "Pitcairn",
+    titles: {"*":"PN"},
+    "//":"Pitcairn",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.20, green: 0.45, blue: 0.13},
     first: {era: 1, y: 1790},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Pitcairn_Islands"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Pitcairn_Islands"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 23}, inherits: "Bounty Day", first: {era: 1, y: 1790}},

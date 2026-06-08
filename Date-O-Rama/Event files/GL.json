@@ -1,10 +1,10 @@
 {
-    titles: {"*": "GL"},
-    "//": "Greenland",
+    titles: {"*":"GL"},
+    "//":"Greenland",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.78, green: 0.06, blue: 0.18},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Greenland"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Greenland"},
     first: {era: 1, y: 1814},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
@@ -17,7 +17,7 @@
         {type: "D", start: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", start: {misc: "Jun"}, inherits: "Natl Day", first: {era: 1, y: 1985}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}, notes: {"en": "Ullortuneq"}},
+        {type: "D", start: {misc: "Jun"}, inherits: "Natl Day", first: {era: 1, y: 1985}, urls: {"en":"https://www.officeholidays.com/holidays/greenland/ullortuneq"}, notes: {"en":"Ullortuneq"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},

@@ -1,13 +1,13 @@
 {
-    titles: {"en": "Robert L. Birch"},
+    titles: {"en":"Robert L. Birch"},
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.23, green: 0.99, blue: 0.23},
     first: {era: 1, y: 1973},
     events: [
-        {type: "D", start: {mon: 9, d: 10}, titles: {"en": "National Swap Ideas Day"}, urls: {"en": "https://www.daysoftheyear.com/days/swap-ideas-day/"}, notes: {"en": "Swap Ideas Day\nCreated by Robert Birch"}, first: {era: 1, y: 2021}},
-        {type: "D", start: {mon: 5, d: 3}, titles: {"en": "National Lumpy Rug Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lumpy-rug-day/"}, notes: {"en": "Created by Robert L. Birch of Puns Corps"}},
-        {type: "D", start: {mon: 1, d: 4}, titles: {"en": "National Trivia Day", "he": "יום הטריוויה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/trivia-day/"}, emoji: "🧠", first: {era: 1, y: 1980}, notes: {"en": "Created by Robert L Birch of Puns Corps"}},
-        {type: "D", start: {mon: 5, d: 30}, titles: {"en": "Loomis Day"}, urls: {"en": "https://www.daysoftheyear.com/days/loomis-day/"}, emoji: "📡", notes: {"en": "Created by Robert L. Birch of Puns Corp"}},
+        {type: "D", start: {mon: 9, d: 10}, titles: {"en":"National Swap Ideas Day"}, urls: {"en":"https://www.daysoftheyear.com/days/swap-ideas-day/"}, notes: {"en":"Swap Ideas Day\nCreated by Robert Birch"}, first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 5, d: 3}, titles: {"en":"National Lumpy Rug Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lumpy-rug-day/"}, notes: {"en":"Created by Robert L. Birch of Puns Corps"}},
+        {type: "D", start: {mon: 1, d: 4}, titles: {"en":"National Trivia Day", "he":"יום הטריוויה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/trivia-day/"}, emoji: "🧠", first: {era: 1, y: 1980}, notes: {"en":"Created by Robert L Birch of Puns Corps"}},
+        {type: "D", start: {mon: 5, d: 30}, titles: {"en":"Loomis Day"}, urls: {"en":"https://www.daysoftheyear.com/days/loomis-day/"}, emoji: "📡", notes: {"en":"Created by Robert L. Birch of Puns Corp"}},
     ]
 }

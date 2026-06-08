@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Shia (times, Jafari)", "he": "שיעה (זמנים, ג׳עפארי)"},
+    titles: {"en":"Shia (times, Jafari)", "he":"שיעה (זמנים, ג׳עפארי)"},
     defaultLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
@@ -11,7 +11,7 @@
         {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Jafari"}},
         {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Jafari"}},
 
-        {inherits: "Maghrib", type: "pt", start: {ptType: "Maghrib", calcMethod: "Jafari"}, notes: {"en": "Ithna Ashari"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Jafari"}, notes: {"en": "Ithna Ashari"}},
+        {inherits: "Maghrib", type: "pt", start: {ptType: "Maghrib", calcMethod: "Jafari"}, notes: {"en":"Ithna Ashari"}},
+        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Jafari"}, notes: {"en":"Ithna Ashari"}},
     ]
 }

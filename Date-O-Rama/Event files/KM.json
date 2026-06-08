@@ -1,19 +1,19 @@
 {
-    titles: {"*": "KM"},
-    "//": "Comoros",
-    "TODO": "Muslim holidays",
+    titles: {"*":"KM"},
+    "//":"Comoros",
+    "TODO":"Muslim holidays",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.30, green: 0.55, blue: 0.17},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},
     first: {era: 1, y: 1975},
     events: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {titles: {"en": "Cheikh Al Maarouf Day"}, type: "D", start:  {mon: 3, d: 18}},
+        {titles: {"en":"Cheikh Al Maarouf Day"}, type: "D", start:  {mon: 3, d: 18}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 7, d: 6}, inherits: "Natl Day", urls: {"en": "https://nationaltoday.com/comoros-national-day/"}, first: {era: 1, y: 1975}},
+        {type: "D", start: {mon: 7, d: 6}, inherits: "Natl Day", urls: {"en":"https://nationaltoday.com/comoros-national-day/"}, first: {era: 1, y: 1975}},
         
-        {titles: {"en": "Maore Day"}, type: "D", start:  {mon: 11, d: 12}, first: {era: 1, y: 2006}},
+        {titles: {"en":"Maore Day"}, type: "D", start:  {mon: 11, d: 12}, first: {era: 1, y: 2006}},
 
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", first: {era: 1, y: 1910}},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},

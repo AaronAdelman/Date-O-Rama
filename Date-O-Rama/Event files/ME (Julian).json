@@ -1,11 +1,11 @@
 {
-    titles: {"*": "ME"},
-    "//": "Montenegro",
+    titles: {"*":"ME"},
+    "//":"Montenegro",
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.85, green: 0.67, blue: 0.00},
     first: {era: 1, y: 2006},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     events: [
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {inherits: "Orthodox Xmas", type: "nD", start: {mon: 12, d: 25}, end: {mon: 12, d: 26}},

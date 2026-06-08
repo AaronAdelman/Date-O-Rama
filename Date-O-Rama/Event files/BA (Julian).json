@@ -1,10 +1,10 @@
 {
-    titles: {"*": "BA"},
-    "//": "Bosnia and Herzegovina",
+    titles: {"*":"BA"},
+    "//":"Bosnia and Herzegovina",
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.18, blue: 0.42},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
     first: {era: 1, y: 1992},
     events: [
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},

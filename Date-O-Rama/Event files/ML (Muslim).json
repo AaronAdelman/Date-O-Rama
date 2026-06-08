@@ -1,12 +1,12 @@
 {
-    titles: {"*": "ML"},
-    "//": "Mali",
-    "TODO": "Muslim observances",
+    titles: {"*":"ML"},
+    "//":"Mali",
+    "TODO":"Muslim observances",
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.00, green: 0.59, blue: 0.22},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
     events: [
-        {type: "D", start: {mon: 3, d: 19}, inherits: "Baptism of the Prophet", urls: {"en": "https://publicholidays.africa/mali/baptism-of-the-prophet/"}},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "Baptism of the Prophet", urls: {"en":"https://publicholidays.africa/mali/baptism-of-the-prophet/"}},
     ]
 }

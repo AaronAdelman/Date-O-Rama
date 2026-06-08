@@ -1,21 +1,21 @@
 {
-    titles: {"*": "GS"},
-    "//": "South Georgia and the South Sandwich Islands",
+    titles: {"*":"GS"},
+    "//":"South Georgia and the South Sandwich Islands",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.00, blue: 1.00},
-    "TODO": "King’s Birthday",
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_South_Georgia_and_the_South_Sandwich_Islands"},
+    "TODO":"King’s Birthday",
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_South_Georgia_and_the_South_Sandwich_Islands"},
     first: {era: 1, y: 1985},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 17}, titles: {"en": "Possession Day"}, first: {era: 1, y: 1775}},
+        {type: "D", start: {mon: 1, d: 17}, titles: {"en":"Possession Day"}, first: {era: 1, y: 1775}},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         
         {type: "D", start: {mon: 4, d: 25}, inherits: "Liberation Day", first: {era: 1, y: 1982}},
-        {type: "D", start: {mon: 5, d: 20}, titles: {"en": "Shackleton Day", "he": "יום שקלטון"}, first: {era: 1, y: 1982}},
+        {type: "D", start: {mon: 5, d: 20}, titles: {"en":"Shackleton Day", "he":"יום שקלטון"}, first: {era: 1, y: 1982}},
         {type: "D", start: {misc: "Jun"}, inherits: "Midwinter Day"},
         {type: "D", start: {era: 1, y: 2012, mon: 9, d: 14}, inherits: "Toothfish Day"},
         {type: "D", start: {era: 1, y: 2013, mon: 9, d: 13}, inherits: "Toothfish Day"},
@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [
-        {template: "Toothfish Day", type: "D", start: {mon: 9, d: 14}, titles: {"en": "Toothfish Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Toothfish_Day"}, notes: {"en": "Toothfish (end of season) Day"}},
+        {template: "Toothfish Day", type: "D", start: {mon: 9, d: 14}, titles: {"en":"Toothfish Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Toothfish_Day"}, notes: {"en":"Toothfish (end of season) Day"}},
     ]
 }

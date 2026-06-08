@@ -1,10 +1,10 @@
 {
-    titles: {"*": "YE"},
-    "//": "Yemen",
+    titles: {"*":"YE"},
+    "//":"Yemen",
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.85, green: 0.16, blue: 0.11},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
     events: [
         {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
     ]

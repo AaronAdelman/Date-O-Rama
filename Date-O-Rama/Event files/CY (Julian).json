@@ -1,12 +1,12 @@
 {
-    titles: {"*": "CY"},
-    "//": "Cyprus",
+    titles: {"*":"CY"},
+    "//":"Cyprus",
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.84, green: 0.47, blue: 0.00},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},
     events: [
-        {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Clean Monday", urls: {"en": "https://nationaltoday.com/cyprus-green-monday/"}},
+        {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Clean Monday", urls: {"en":"https://nationaltoday.com/cyprus-green-monday/"}},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},

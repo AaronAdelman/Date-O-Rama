@@ -1,11 +1,11 @@
 {
-    titles: {"*": "SD"},
-    "//": "Sudan",
+    titles: {"*":"SD"},
+    "//":"Sudan",
     defaultLocale: "en",
     cal: "cop",
     otherCals: ["jul"],
     color: {red: 0.85, green: 0.16, blue: 0.11},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     events: [
         {type: "D", start: {mon: 4, d: 29}, inherits: "Coptic Xmas"},
         {type: "D", start: {misc: "E"}, inherits: "Easter", cal: "jul"},

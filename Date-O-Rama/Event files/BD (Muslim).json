@@ -1,11 +1,11 @@
 {
-    titles: {"*": "BD"},
-    "//": "Bangladesh",
+    titles: {"*":"BD"},
+    "//":"Bangladesh",
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.17, green: 0.41, blue: 0.31},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
     events: [
-        {type: "D", start: {mon: 9, wkd: [6], nth: -1}, inherits: "Jumatul Bidah", urls: {"en": "https://www.officeholidays.com/holidays/bangladesh/jumatul-bidah"}},
+        {type: "D", start: {mon: 9, wkd: [6], nth: -1}, inherits: "Jumatul Bidah", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/jumatul-bidah"}},
     ]
 }

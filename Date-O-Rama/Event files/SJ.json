@@ -1,10 +1,10 @@
 {
-    titles: {"*": "SJ"},
-    "//": "Svalbard and Jan Mayen",
+    titles: {"*":"SJ"},
+    "//":"Svalbard and Jan Mayen",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.50, green: 0.50, blue: 0.50},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Svalbard"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Svalbard"},
     first: {era: 1, y: 1920},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
@@ -13,11 +13,11 @@
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 5, d: 17}, inherits: "Constitution Day", urls: {"en": "https://www.officeholidays.com/holidays/norway/norway-constitution-day"}},
+        {type: "D", start: {mon: 5, d: 17}, inherits: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/norway/norway-constitution-day"}},
         {type: "D", start: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day", urls: {"en": "https://www.officeholidays.com/holidays/norway/christmas-holiday"}},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day", urls: {"en":"https://www.officeholidays.com/holidays/norway/christmas-holiday"}},
     ]
 }

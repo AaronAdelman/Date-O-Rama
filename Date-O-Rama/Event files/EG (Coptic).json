@@ -1,18 +1,18 @@
 {
-    titles: {"*": "EG"},
-    "//": "Egypt",
+    titles: {"*":"EG"},
+    "//":"Egypt",
     defaultLocale: "en",
     cal: "cop",
     otherCals: ["jul"],
     color: {red: 0.78, green: 0.06, blue: 0.18},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
     events: [
-        {type: "D", start: {mon: 4, d: 28, wkd: [5]}, inherits: "Xmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
+        {type: "D", start: {mon: 4, d: 28, wkd: [5]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
         {type: "D", start: {mon: 4, d: 29}, inherits: "Coptic Xmas"},
-        {type: "D", start: {mon: 4, d: 30, wkd: [1]}, inherits: "Xmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
-        {type: "D", start: {misc: "E"}, inherits: "Easter", cal: "jul", urls: {"en": "https://www.daysoftheyear.com/days/coptic-easter/"}},
-        {type: "D", start: {misc: "E", offsetD: 1}, cal: "jul", inherits: "Orthodox Easter Monday", notes: {"en": "Sham El-Nessim\nSham Ennessim", "ar": "شم النسيم", "he": "שאהם אל ניאסם"}},
-        {type: "D", start: {misc: "E", offsetD: 1}, cal: "jul", inherits: "Natl Food Day", urls: {"en": "https://www.daysoftheyear.com/days/egyptian-national-food-day/"}, first: {era: 0, y: 1733}},
+        {type: "D", start: {mon: 4, d: 30, wkd: [1]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
+        {type: "D", start: {misc: "E"}, inherits: "Easter", cal: "jul", urls: {"en":"https://www.daysoftheyear.com/days/coptic-easter/"}},
+        {type: "D", start: {misc: "E", offsetD: 1}, cal: "jul", inherits: "Orthodox Easter Monday", notes: {"en":"Sham El-Nessim\nSham Ennessim", "ar":"شم النسيم", "he":"שאהם אל ניאסם"}},
+        {type: "D", start: {misc: "E", offsetD: 1}, cal: "jul", inherits: "Natl Food Day", urls: {"en":"https://www.daysoftheyear.com/days/egyptian-national-food-day/"}, first: {era: 0, y: 1733}},
     
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
     ]

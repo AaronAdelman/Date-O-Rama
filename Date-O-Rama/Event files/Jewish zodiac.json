@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
+    titles: {"en":"Jewish zodiac", "he":"גלגל המזלות יהודי"},
     defaultLocale: "he",
     cal: "heb*",
     color: {name: "blue"},

@@ -1,11 +1,11 @@
 {
-    titles: {"*": "CX"},
-    "//": "Christmas Island",
-    "TODO": "Muslim holidays?",
+    titles: {"*":"CX"},
+    "//":"Christmas Island",
+    "TODO":"Muslim holidays?",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.11, green: 0.54, blue: 0.26},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
     first: {era: 1, y: 1888},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},

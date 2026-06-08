@@ -1,10 +1,10 @@
 {
-    titles: {"*": "SY"},
-    "//": "Syria",
+    titles: {"*":"SY"},
+    "//":"Syria",
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.94, green: 0.20, blue: 0.25},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
     events: [
         {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
     ]

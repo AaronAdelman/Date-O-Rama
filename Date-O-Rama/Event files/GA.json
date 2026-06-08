@@ -1,12 +1,12 @@
 {
-    titles: {"*": "GA"},
-    "//": "Gabon",
-    "TODO": "Muslim holidays",
+    titles: {"*":"GA"},
+    "//":"Gabon",
+    "TODO":"Muslim holidays",
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1960},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Gabon"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Gabon"},
     events: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 4, d: 17}, inherits: "Women’s Day"},
@@ -17,7 +17,7 @@
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {inherits: "Independence Day", type: "nD", start: {mon: 8, d: 16}, end: {mon: 8, d: 17}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/gabon-independence-day/"}},
+        {inherits: "Independence Day", type: "nD", start: {mon: 8, d: 16}, end: {mon: 8, d: 17}, first: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/gabon-independence-day/"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 

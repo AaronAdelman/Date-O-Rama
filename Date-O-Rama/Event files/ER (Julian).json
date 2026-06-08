@@ -1,10 +1,10 @@
 {
-    titles: {"*": "ER"},
-    "//": "Eritrea",
+    titles: {"*":"ER"},
+    "//":"Eritrea",
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.89, green: 0.00, blue: 0.17},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
     events: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
