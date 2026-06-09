@@ -1499,7 +1499,7 @@
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Black Cow Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-cow-day/"}},
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Herbs and Spices Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-herbs-and-spices-day/"}, first: {era: 1, y: 2015}, emoji: "🌿🫚"},
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Iced Tea Day", "he":"יום האייס טי הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/iced-tea-day/"}},
-        {type: "D", start: {mon: 6, d: 10}, titles: {"en":"Talk Slow Day"}, urls: {"en":"https://midatlanticaphasiaconference.org/talk-slow-day"}, first: {era: 1, y: 2024}, emoji: "👩👨", notes: {"en":"Created by the Mid-Atlantic Aphasia Conference"}},
+        {type: "D", start: {mon: 6, d: 10}, titles: {"en":"Talk Slow Day"}, urls: {"en":"https://midatlanticaphasiaconference.org/talk-slow-day"}, first: {era: 1, y: 2024}, emoji: "👩👨", notes: {"en":"Created by the Mid-Atlantic Aphasia Conference"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"Cousteau Day"}, urls: {"en":"https://www.checkiday.com/077561a23b60be2fa3cac9e86f8fb897/cousteau-day"}, emoji: "🤿", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"National Corn on the Cob Day"}, urls: {"en":"https://www.daysoftheyear.com/days/corn-on-the-cob-day/"}, emoji: "🌽"},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"National German Chocolate Cake Day"}, urls: {"en":"https://www.daysoftheyear.com/days/german-chocolate-cake-day/"}, emoji: "🍰"},
