@@ -1238,7 +1238,6 @@
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"International Yarn Bombing Day", "he":"יום היארן בומבינג הבינלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/yarn-bombing-day/"}, emoji: "🧶", first: {era: 1, y: 2011}, notes: {"en":"Yarn Bombing Day", "he":"יום היארן בומבינג"}},
         {type: "D", start: {mon: 6, d: 12}, inherits: "Drink Chenin Day", first: {era: 1, y: 2014}, last: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 12}, inherits: "Falafel Day", first: {era: 1, y: 2012}},
-        {type: "D", start: {mon: 6, d: 12}, titles: {"en":"CNA Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cna-day/"}, notes: {"en":"Certified Nursing Assistant Day"}},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"Crowded Nest Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/crowded-nest-awareness-day/"}, first: {era: 1, y: 2005}, emoji: "🪺", notes: {"en":"Created by Kathleen Shaputis"}},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"Eat Flexitarian Day"}, urls: {"en":"https://www.daysoftheyear.com/days/eat-flexitarian-day/"}, first: {era: 1, y: 2022}, notes: {"en":"Created by OZO"}},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"Ghost in the Machine Day"}, urls: {"en":"https://www.checkiday.com/2809d0dce524605c0a1911df0f28fdcb/ghost-in-the-machine-day"}, first: {era: 1, y: 2014}},

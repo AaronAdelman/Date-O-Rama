@@ -1493,6 +1493,7 @@
         {type: "D", start: {mon: 6, d: 1}, titles: {"en":"National Skincare Education Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-skincare-education-day/"}, inherits: "*MedAwareness*", notes: {"en":"Created by Higher Education Skincare"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en":"Pen Pal Day"}, notes: {"en":"National Pen Pal Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pen-pal-day/"}, emoji: "📮", notes: {"en":"Created by Rosie Tholl"}},
         {type: "D", start: {mon: 6, d: 1}, titles: {"en":"Stand For Children Day"}, urls: {"en":"https://www.daysoftheyear.com/days/stand-for-children-day/"}, first: {era: 1, y: 1996}, inherits: "Children’s Day", notes: {"en":"Created by Stand for Children"}},
+        {type: "D", start: {mon: 6, d: 10}, titles: {"en":"Alcoholics Anonymous Founders’ Day"}, urls: {"en":"https://foundersday.org/"}, first: {era: 1, y: 1935}, inherits: "*MedAwareness*", notes: {"en":"Created by William G. Wilson and Dr. Robert Smith"}},
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Bae Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-bae-day/"}, first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Ballpoint Pen Day"}, urls: {"en":"https://www.daysoftheyear.com/days/ball-point-pen-day/"}, emoji: "🖋️"},
         {type: "D", start: {mon: 6, d: 10}, titles: {"en":"National Bed Bug Prevention Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-bed-bug-prevention-day/"}, emoji: "🛏️", first: {era: 1, y: 2019}, notes: {"en":"Created by Dodson Pest Control"}},
@@ -1503,7 +1504,6 @@
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"Cousteau Day"}, urls: {"en":"https://www.checkiday.com/077561a23b60be2fa3cac9e86f8fb897/cousteau-day"}, emoji: "🤿", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"National Corn on the Cob Day"}, urls: {"en":"https://www.daysoftheyear.com/days/corn-on-the-cob-day/"}, emoji: "🌽"},
         {type: "D", start: {mon: 6, d: 11}, titles: {"en":"National German Chocolate Cake Day"}, urls: {"en":"https://www.daysoftheyear.com/days/german-chocolate-cake-day/"}, emoji: "🍰"},
-        {type: "D", start: {mon: 6, d: 12, thruD: 18, wkd: [5]}, titles: {"en":"National Career Nurse Assistants Day"}, urls: {"en":"https://nationaltoday.com/national-career-nurse-assistants-day/"}, first: {era: 1, y: 1977}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "D", start: {mon: 6, d: 12}, titles: {"de":"Loving Day","en":"Loving Day","ga":"Lá Loving","mk":"Ден на љубовта"}, notes: {"en":"National Loving Day\nCreated by Ken Tanabe"}, urls: {"en":"https://lovingday.org/"}, first: {era: 1, y: 2004}, emoji: "❤️"},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"Little League Girls Day"}, emoji: "⚾", urls: {"en":"https://www.checkiday.com/3e72ca42e32d80700fb9c70bf90306c4/little-league-girls-baseball-day"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"National Automotive Service Professionals Day"}, emoji: "👨‍🔧👩‍🔧", urls: {"en":"https://www.checkiday.com/6385a138f74aafbc7c304c666fe3be3e/national-automotive-service-professionals-day"}, first: {era: 1, y: 2001}},
@@ -2543,15 +2543,15 @@
         {type: "nD", start: {mon: 2, d: 14, thruD: 20, wkd: [2], durD: 7}, titles: {"en":"National Drink Wine with Your Cat Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-drink-wine-with-your-cat-week/"}, first: {era: 1, y: 2018}, emoji: "🐱🍷", notes: {"en":"Created by Offers.com and PetWinery"}},
         
         {type: "D", start: {wkd: [6], d: 13}, nonoverlappingSubEvents: [
-            {type: "D", start: {mon: 1}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 2}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 3, yLens: [366]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 4, yLens: [365]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 5}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 6}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 8, yLens: [365]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
-            {type: "D", start: {mon: 9}, inherits: "National Blame Someone Else Day"},
-            {type: "D", start: {mon: 11, yLens: [366]}, inherits: "National Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 1}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 2}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 3, yLens: [366]}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 4, yLens: [365]}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 5}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 6}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 8, yLens: [365]}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
+            {type: "D", start: {mon: 9}, inherits: "Natl Blame Someone Else Day"},
+            {type: "D", start: {mon: 11, yLens: [366]}, inherits: "Natl Blame Someone Else Day", first: {era: 1, y: 1982}},
         ]},
         
         {type: "nD", start: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [2]}, end: {mon: 5, d: 1, thruD: 7, wkd: [7]}, titles: {"en":"National Auctioneers Week"}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 2018}, nonoverlappingSubEvents: [
@@ -2559,9 +2559,16 @@
             {type: "D", start: {era: 1, y: 2017, mon: 4, d: 8}, inherits: "Natl Auctioneers Day"},
             {type: "D", start: {mon: 5, wkd: [7], nth: 1}, inherits: "Natl Auctioneers Day", first: {era: 1, y: 2018}},
         ]},
+        
+        {type: "nD", start: {mon: 6, d: 12, thruD: 18, wkd: [5], durD: 7}, inherits: "Natl Nursing Assistants Week", first: {era: 1, y: 1977}, last: {era: 1, y: 2025}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [5]}, inherits: "CNA Day", first: {era: 1, y: 1977}, last: {era: 1, y: 2025}},
+        ]},
+        {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [5], durD: 7}, inherits: "Natl Nursing Assistants Week", first: {era: 1, y: 2026}, nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [5]}, inherits: "CNA Day", first: {era: 1, y: 2026}},
+        ]},
     ],
     templates: [
-        {template: "National Blame Someone Else Day", type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"National Blame Someone Else Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blame-someone-else-day/"}, emoji: "👉👈", notes: {"en":"Observance of this observance may get you in trouble.  Don’t blame us.\nCreated by Anne Moeller"}},
+        {template: "Natl Blame Someone Else Day", type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"National Blame Someone Else Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blame-someone-else-day/"}, emoji: "👉👈", notes: {"en":"Observance of this observance may get you in trouble.  Don’t blame us.\nCreated by Anne Moeller"}},
         {template: "Forefathers’ Day", type: "D", start: {mon: 12, d: 22}, titles: {"ar":"يوم الأجداد","en":"Forefathers’ Day"}, urls: {"en":"https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en":"Old Colony Day"}},
         {template: "I Love My State Parks Week", type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durD: 8}, titles: {"en":"I Love My State Parks Week"}, urls: {"en":"https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️", notes: {"en":"Created by the National Association for State Park Foundations (NASPF)"}},
         {template: "Johnny Appleseed Day", type: "D", start: {mon: 9, d: 26}, titles: {"en":"National Johnny Appleseed Day"}, urls: {"en":"https://www.daysoftheyear.com/days/johnny-appleseed-day/"}, emoji: "🍎", notes: {"en":"Johnny Appleseed Day"}, inherits: "*BDay*"},
@@ -2619,5 +2626,7 @@
         {template: "Take Action for Libraries Day", type: "D", start: {wkd: [5]}, titles: {"en":"Take Action for Libraries Day"}, urls: {"en":"https://www.checkiday.com/11e9b7621a3281baea1e2e6d370a78ae/take-action-for-libraries-day"}, emoji: "📚"},
         {template: "Natl Library Week", type: "W", start: {mon: 4, fullWk: 2}, titles: {"en":"National Library Week"}, urls: {"en":"https://www.ala.org/conferencesevents/celebrationweeks/natlibraryweek"}, notes: {"en":"Libraries Week"}},
         {template: "Natl Auctioneers Day", type: "D", start: {mon: 4, wkd: [5], nth: 3}, titles: {"en":"National Auctioneers Day"}, urls: {"en":"https://www.auctioneers.org/naw"}, notes: {"en":"Created by the National Auctioneers Association"}},
+        {template: "Natl Nursing Assistants Week", type: "nD", start: {mon: 6, d: 12, thruD: 18, wkd: [5], durD: 7}, titles: {"en":"National Nursing Assistants Week"}, urls: {"en":"https://www.daysoftheyear.com/days/cna-day/"}, emoji: "👨‍⚕️👩‍⚕️"},
+        {template: "CNA Day", type: "D", start: {wkd: [5]}, titles: {"en":"CNA Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cna-day/"}, notes: {"en":"Certified Nursing Assistant Day\nNational Career Nurse Assistants' Day"}, emoji: "👨‍⚕️👩‍⚕️"},
     ]
 }
