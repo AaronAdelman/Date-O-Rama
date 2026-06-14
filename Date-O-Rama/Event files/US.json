@@ -389,7 +389,7 @@
         {type: "D", start: {mon: 6, d: 12, wkd: [2]}, inherits: "King Kamehameha I Day", first: {era: 1, y: 1871}},
         {type: "D", start: {mon: 6, d: 14}, titles: {"en":"Army Birthday"}, inherits: "Army Day", first: {era: 1, y: 1775}, urls: {"en":"https://www.daysoftheyear.com/days/army-birthday/"}},
         {type: "D", start: {mon: 6, d: 14}, inherits: "Natl Flag Day", urls: {"en":"https://www.daysoftheyear.com/days/flag-day/"}, first: {era: 1, y: 1916}, notes: {"en":"Flag Day\nCreated by Woodrow Wilson"}},
-        {type: "D", start: {mon: 6, d: 17}, titles: {"en":"Bunker Hill Day"}, urls: {"en":"https://nationaltoday.com/bunker-hill-day/"}, first: {era: 1, y: 1775}},
+        {type: "D", start: {mon: 6, d: 17}, titles: {"en":"Bunker Hill Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bunker-hill-day/"}, first: {era: 1, y: 1863}},
         {type: "D", start: {mon: 6, d: 20}, titles: {"en":"West Virginia Day", "he":"יום וירג׳יניה המערבית"}, first: {era: 1, y: 1864}, urls: {"en":"https://nationaltoday.com/west-virginia-day/"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Pink Flamingo Day"}, urls: {"en":"https://nationaltoday.com/pink-flamingo-day/"}, emoji: "🦩", first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"National Catfish Day"}, urls: {"en":"https://www.daysoftheyear.com/days/catfish-day/"}, first: {era: 1, y: 1987}},

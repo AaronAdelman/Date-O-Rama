@@ -1539,7 +1539,7 @@
         {type: "D", start: {mon: 6, d: 16}, titles: {"en":"National Tortilla Day"}, urls: {"en":"https://www.nationaltortilladay.com/"}, first: {era: 1, y: 2002}, emoji: "🫓"},
         {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Apple Strudel Day", "he":"יום השטרודל תפוחים הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/apple-strudel-day/"}, emoji: "🍎"},
         {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Eat Your Vegetables Day"}, urls: {"en":"https://www.daysoftheyear.com/days/eat-your-vegetables-day/"}, emoji: "🥒🥔🥕"},
-        {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Mascot Day"}, urls: {"en":"https://nationaltoday.com/national-mascot-day/"}, first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Mascot Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mascot-day/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Stewart’s Root Beer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-stewarts-root-beer-day/"}, notes: {"en":"National Root Beer Day"}, emoji: "🍺"},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Cheesemakers Day"}, emoji: "🧀", urls: {"en":"https://www.checkiday.com/2737c000bc0824b0d839fe8d59f927b4/national-cheesemakers-day"}},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Go Fishing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/go-fishing-day/"}, emoji: "🎣"},
