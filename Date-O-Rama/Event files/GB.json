@@ -193,7 +193,7 @@
         {type: "D", start: {mon: 6, wkd: [7], d: 14, thruD: 20}, inherits: "Trooping the Colour", first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 6, wkd: [7], d: 8, thruD: 9}, inherits: "Trooping the Colour", first: {era: 1, y: 2018}, last: {era: 1, y: 2019}},
         {type: "D", start: {mon: 6, wkd: [7], nth: -1}, inherits: "Armed Forces Day", urls: {"en":"https://www.daysoftheyear.com/days/armed-forces-day/"}, first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Wrong Trousers Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-wrong-trousers-day/"}, notes: {"en":"Wallace & Gromit’s Wrong Trousers Day"}, first: {era: 1, y: 1997}, emoji: "👖"},
+        {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Wrong Trousers Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-wrong-trousers-day/"}, notes: {"en":"Wallace & Gromit’s Wrong Trousers Day\nCreated by the Grand Appeal and Aardman"}, first: {era: 1, y: 1997}, emoji: "👖"},
         {type: "D", start: {mon: 7, d: 14}, urls: {"en":"https://www.daysoftheyear.com/days/emmeline-pankhurst-day/"}, titles: {"en":"Emmeline Pankhurst Day"}, inherits: "*BDay*", first: {era: 1, y: 1858}},
         {type: "D", start: {mon: 7, d: 15}, inherits: "St. Swithin’s Day", first: {era: 1, y: 990}},
         {type: "D", start: {mon: 7, d: 18}, urls: {"en":"https://www.blackleadersawarenessday.org.uk/"}, titles: {"en":"Black Leaders Awareness Day"}, notes: {"en":"BLAD"}, first: {era: 1, y: 2023}},
