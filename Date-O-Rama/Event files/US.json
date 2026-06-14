@@ -41,7 +41,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany", urls: {"en":"https://nationaltoday.com/three-kings-day/"}},
         {inherits: "Evacuation Day", type: "D", start: {mon: 11, d: 25}, locations: {"en":"New York", "he":"ניו יורק"}, first: {era: 1, y: 1787}, urls: {"en":"https://en.wikipedia.org/wiki/Evacuation_Day_(New_York)"}},
         {inherits: "Evacuation Day", type: "D", start: {mon: 3, d: 17}, locations: {"en":"Massachusetts", "he":"מסצ׳וסטס"}, first: {era: 1, y: 1901}, urls: {"en":"https://www.daysoftheyear.com/days/evacuation-day-in-boston/"}},
-        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", first: {era: 1, y: 1910}, urls: {"en":"https://nationaldaycalendar.com/fathers-day-third-sunday-in-june/"}},
+        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", first: {era: 1, y: 1910}, urls: {"en":"https://www.daysoftheyear.com/days/fathers-day/"}, notes: {"en":"Created by Sonora Smart Dodd"}},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {mon: 9, d: 7, thruD: 13, wkd: [1]}, inherits: "Grandparents’ Day", notes: {"en":"National Grandparents Day\nCreated by the US Senate and President Jimmy Carter"}, urls: {"en":"https://grandparentsday.org/"}, first: {era: 1, y: 1978}},
@@ -722,7 +722,8 @@
         {type: "D", start: {mon: 5, d: 5}, inherits: "Natl Day of Awareness for Missing and Murdered Indigenous Women and Girls", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 5, d: 16}, inherits: "Natl Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
         {type: "W", start: {mon: 6, fullWk: 1}, titles: {"en":"National Trailer Safety Week"}, notes: {"en":"Created by the US House of Representatives"}, urls: {"en":"https://www.daysoftheyear.com/days/national-trailer-safety-week/"}, first: {era: 1, y: 2024}},
-
+        {type: "W", start: {mon: 6, fullWk: 3}, titles: {"en":"National Roller Coaster Week"}, notes: {"en":"Created by the US Congress"}, urls: {"en":"https://www.daysoftheyear.com/days/national-roller-coaster-week/"}, first: {era: 1, y: 1996}, emoji: "🎢"},
+        {type: "W", start: {mon: 6, fullWk: 3}, titles: {"en":"Old-Time Fiddlers Week"}, notes: {"en":"Created by Blaine Stubblefield"}, urls: {"en":"https://www.daysoftheyear.com/days/old-time-fiddlers-week/"}, first: {era: 1, y: 1953}, emoji: "🎻"},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durD: 7}, titles: {"en":"American Education Week"}, urls: {"en":"https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en":"National Educational Support Professionals Day"}, urls: {"en":"https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en":"E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"}, first: {era: 1, y: 1987}},
