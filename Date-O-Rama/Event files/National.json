@@ -1543,6 +1543,7 @@
         {type: "D", start: {mon: 6, d: 17}, titles: {"en":"National Stewart’s Root Beer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-stewarts-root-beer-day/"}, notes: {"en":"National Root Beer Day"}, emoji: "🍺"},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Cheesemakers Day"}, emoji: "🧀", urls: {"en":"https://www.checkiday.com/2737c000bc0824b0d839fe8d59f927b4/national-cheesemakers-day"}},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Go Fishing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/go-fishing-day/"}, emoji: "🎣"},
+        {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Internet Cat Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-internet-cat-day/"}, emoji: "🐱", notes: {"en":"Created by Kelly Wofford"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en":"National Eat an Oreo Day"}, urls: {"en":"https://www.checkiday.com/f49c89ec9ad6e802c7a0adffb1d19ed2/national-eat-an-oreo-day"}, first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en":"National Garfield the Cat Day", "he":"יום גארפילד החתול"}, urls: {"en":"https://www.daysoftheyear.com/days/garfield-the-cat-day/"}, inherits: "*BDay*", first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en":"National Martini Day"}, urls: {"en":"https://nationaltoday.com/national-martini-day/"}, emoji: "🍸🍸"},
