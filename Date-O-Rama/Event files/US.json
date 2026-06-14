@@ -77,7 +77,8 @@
         {type: "D", start: {mon: 8, d: 19}, inherits: "Natl Aviation Day", first: {era: 1, y: 1939}, urls: {"en":"https://www.daysoftheyear.com/days/aviation-day/"}},
         {type: "D", start: {mon: 5, d: 23}, titles: {"en":"143 Day"}, urls: {"en":"https://afors.org/2024/05/15/may-23-is-the-perfect-day-to-model-mr-rogers-call-to-neighborliness/"}, notes: {"en":"This observance celebrates Fred Rogers and his public television show, Mister Rogers’ Neighborhood"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 12, d: 13}, inherits: "Natl Guard Day", notes: {"en":"U.S. National Guard Birthday\nNational Guard Birthday\nCreated by the Massachusetts General Court"}, urls: {"en":"https://www.daysoftheyear.com/days/u-s-national-guard/"}, first: {era: 1, y: 1636}},
-        {type: "D", start: {mon: 9, d: 25}, inherits: "Natl Lobster Day", first: {era: 1, y: 2014}, urls: {"en":"https://www.daysoftheyear.com/days/lobster-day/"}, notes: {"en":"Created by Angus King and Susan Collins"}},
+        {type: "D", start: {mon: 6, d: 15}, inherits: "Natl Lobster Day", first: {era: 1, y: 2014}},
+        {type: "D", start: {mon: 9, d: 25}, inherits: "Natl Lobster Day", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 5, d: 22}, inherits: "Natl Maritime Day", first: {era: 1, y: 1933}, urls: {"en":"https://www.daysoftheyear.com/days/maritime-day/"}, notes: {"en":"Created by the US Congress"}},
         {type: "D", start: {mon: 1, d: 22}, inherits: "Natl Sanctity of Human Life Day", first: {era: 1, y: 1984}},
         {type: "D", start: {mon: 10, wkd: [2], nth: 2}, inherits: "Native American Day", first: {era: 1, y: 1990}, locations: {"en":"South Dakota", "he":"דקוטה הדרומית"}, urls: {"en":"https://nationaldaycalendar.com/native-american-day-second-monday-in-october/"}},
@@ -800,5 +801,6 @@
         {template: "US Natl Day of Prayer", type: "D", start: {mon: 5, wkd: [5], nth: 1}, inherits: "Natl Day of Prayer", urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-prayer/"}, notes: {"en":"Created by Harry S Truman"}},
         {template: "Endangered Species Day", type: "D", start: {mon: 5, wkd: [6], nth: 3}, titles: {"en":"Endangered Species Day"}, urls: {"en":"https://www.endangered.org/campaigns/endangered-species-day/"}, notes: {"en":"National Endangered Species Day\nCreated by the US Senate"}, emoji: "🐺"},
         {template: "US Natl Children’s Day", type: "D", start: {mon: 6, wkd: [1], nth: 2}, inherits: "Natl Children’s Day", urls: {"en":"https://www.daysoftheyear.com/days/national-childrens-day/"}, notes: {"en":"Rose Day\nFlower Day\nCreated by Reverend Dr. Charles Leonard"}},
+        {template: "Natl Lobster Day", titles: {"en":"National Lobster Day"}, type: "D", start: {mon: 9, d: 25}, emoji: "🦞", urls: {"en":"https://www.daysoftheyear.com/days/lobster-day/"}, notes: {"en":"Created by Angus King and Susan Collins"}},
     ]
 }
