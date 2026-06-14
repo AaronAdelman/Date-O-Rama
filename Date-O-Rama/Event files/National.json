@@ -1521,7 +1521,7 @@
         {type: "D", start: {mon: 6, d: 13}, titles: {"en":"National Productive Business Civility Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-productive-business-civility-day/"}, first: {era: 1, y: 2020}, notes: {"en":"Created by Professor Vernet A. Joseph"}, emoji: "📊"},
         {type: "D", start: {mon: 6, d: 13}, titles: {"en":"National Sewing Machine Day", "he":"יום מכונת התפירה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/sewing-machine-day/"}, notes: {"en":"A few people think this event happens on August 12."}},
         {type: "D", start: {mon: 6, d: 13}, titles: {"en":"National Weed Your Garden Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-weed-your-garden-day/"}, emoji: "🪴"},
-        {type: "D", start: {mon: 6, d: 14, thruD: 20, wkd: [7]}, titles: {"en":"National Dog Dad Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dog-dad-day/"}, emoji: "🐶"},
+        {type: "D", start: {mon: 6, d: 14, thruD: 20, wkd: [7]}, titles: {"en":"National Dog Dad Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dog-dad-day/"}, emoji: "🐶", first: {era: 1, y: 2021}, notes: {"en":"Created by Ashley Bercaw"}},
         {type: "D", start: {mon: 6, d: 14, wkd: [2, 3, 4, 5, 6]}, inherits: "Own Your Share of America Day", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 6, d: 14}, titles: {"en":"National Bourbon Day"}, notes: {"en":"Bourbon Day"}, emoji: "🥃", urls: {"en":"http://www.nationalbourbonday.com/"}},
         {type: "W", start: {mon: 6, fullWk: 2}, titles: {"en":"Scleroderma Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/scleroderma-awareness-week/"}, inherits: "*MedAwareness*", notes: {"en":"Created by the National Scleroderma Foundation"}},

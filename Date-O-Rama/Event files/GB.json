@@ -340,7 +340,7 @@
         {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [2], durD: 7}, titles: {"ar":"أسبوع اللاجئين","en":"Refugee Week", "he":"שבוע הפליטים","ro":"Săptămâna Refugiatului"}, urls: {"en":"https://refugeeweek.org.uk/"}, first: {era: 1, y: 1998}, inherits: "World Refugee Day"},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, titles: {"en":"Oxfam Water Week"}, urls: {"en":"https://www.daysoftheyear.com/days/oxfam-water-week/"}, emoji: "💦"},
         {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 17}, urls: {"en":"https://www.daysoftheyear.com/days/national-school-grounds-week/"}, titles: {"en":"National School Grounds Week"}},
-        {type: "nD", start: {mon: 6, d: 15, thruD: 21, wkd: [7], durD: 9}, titles: {"en":"English Wine Week"}, urls: {"en":"https://winegb.co.uk/english-wine-week/"}, emoji: "🍷"},
+        {type: "nD", start: {mon: 6, d: 15, thruD: 21, wkd: [7], durD: 9}, titles: {"en":"English Wine Week"}, urls: {"en":"https://winegb.co.uk/english-wine-week/"}, emoji: "🍷", first: {era: 1, y: 2007}, notes: {"en":"Created by WineGB"}},
         {type: "nD", start: {era: 1, y: 2025, mon: 6, d: 23, durD: 5}, inherits: "Self Storage Week"},
         {type: "nD", start: {mon: 3, d: 1, thruD: 7, wkd: [2], durD: 5}, inherits: "Self Storage Week", first: {era: 1, y: 2026}},
         {type: "nD", start: {mon: 6, d: 21, thruD: 27, wkd: [7], durD: 2}, inherits: "Pride Cymru", first: {era: 1, y: 2025}},
