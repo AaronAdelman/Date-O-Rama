@@ -24,7 +24,7 @@
         {type: "D", start: {mon: 5, d: 25}, titles: {"en":"May Revolution Day", "es":"Día de la Revolución de Mayo"}, urls: {"en":"https://nationaltoday.com/may-revolution-day/"}, notes: {"en":"May Day Revolution"}},
         {type: "D", start: {mon: 5, d: 26, wkd: [6]}, titles: {"en":"May Day Revolution (bridge day)"}, urls: {"en":"https://www.officeholidays.com/holidays/argentina/may-day-revolution"}},
         {type: "D", start: {mon: 6, d: 17}, inherits: "Commemoration of General Don Martín Miguel de Güemes", first: {era: 1, y: 1900}},
-        {type: "D", start: {mon: 6, d: 18, thruD: 21, wkd: [2]}, titles: {"en":"Commemoration of General Don Martín Miguel de Güemes (in lieu)"}, inherits: "Commemoration of General Don Martín Miguel de Güemes", first: {era: 1, y: 1900}, notes: {"en":"Martin Miguel de Guemes Day (in lieu)"}},
+        {type: "D", start: {mon: 6, d: 15, thruD: 16, wkd: [2]}, titles: {"en":"Commemoration of General Don Martín Miguel de Güemes (in lieu)"}, inherits: "Commemoration of General Don Martín Miguel de Güemes", first: {era: 1, y: 1900}, notes: {"en":"Martin Miguel de Guemes Day (in lieu)"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 6, d: 19, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/argentina/national-flag-day"}, titles: {"en":"Flag Day (bridge day)"}},
         {type: "D", start: {mon: 6, d: 20}, urls: {"en":"https://www.daysoftheyear.com/days/flag-day-in-argentina/"}, inherits: "Flag Day", first: {era: 1, y: 2011}},
