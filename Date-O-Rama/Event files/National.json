@@ -1548,7 +1548,7 @@
         {type: "D", start: {mon: 6, d: 19}, titles: {"en":"National Garfield the Cat Day", "he":"יום גארפילד החתול"}, urls: {"en":"https://www.daysoftheyear.com/days/garfield-the-cat-day/"}, inherits: "*BDay*", first: {era: 1, y: 1998}, notes: {"en":"Created by by Wanda Thayer"}},
         {type: "D", start: {mon: 6, d: 19}, titles: {"en":"National Martini Day"}, urls: {"en":"https://nationaltoday.com/national-martini-day/"}, emoji: "🍸🍸"},
         {type: "D", start: {mon: 6, d: 2}, inherits: "Natl Gun Violence Awareness Day", first: {era: 1, y: 2015}, last: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 6, d: 2}, titles: {"en":"American Indian Citizenship Day"}, urls: {"en":"https://www.daysoftheyear.com/days/american-indian-citizenship-day/"}, first: {era: 1, y: 1924}},
+        {type: "D", start: {mon: 6, d: 2}, titles: {"en":"American Indian Citizenship Day"}, notes: {"en":"Native American Citizenship Day\nSome people think this event is on June 15."}, urls: {"en":"https://www.daysoftheyear.com/days/american-indian-citizenship-day/"}, first: {era: 1, y: 1924}},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National Greyhound Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-greyhound-day/"}},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National I Love My Dentist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-i-love-my-dentist-day/"}, emoji: "🦷"},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National Leave the Office Earlier Day"}, notes: {"en":"National Leave the Office Early Day\nCreated by Laura Stack"}, urls: {"en":"https://www.daysoftheyear.com/days/leave-the-office-earlier-day/"}},
