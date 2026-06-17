@@ -175,7 +175,7 @@
             {type: "D", start: {mon: 6, d: 15}, titles: {"en":"Saint Howard Hughes"}},
             {type: "D", start: {mon: 6, d: 16}, titles: {"en":"Saint das Steppenwolf"}},
             {type: "D", start: {mon: 6, d: 17}, titles: {"en":"Saint Zontar of Venus"}},
-            {type: "D", start: {mon: 6, d: 18}, titles: {"en":"Saint Elvis"}, notes: {"en":"Secular “National Splurge Day”"}},
+            {type: "D", start: {mon: 6, d: 18}, titles: {"en":"Saint Elvis"}},
             {type: "D", start: {mon: 6, d: 19}, titles: {"en":"Saint Robert Heinlein"}},
             {type: "D", start: {mon: 6, d: 20}, titles: {"en":"Saint Joseph Smith"}},
             {type: "D", start: {mon: 6, d: 21}, titles: {"en":"Saint Sam Kinnison"}},
@@ -375,5 +375,6 @@
         ]},
         
         {type: "D", start: {mon: 6, d: 2}, inherits: "Yell “Fudge” at the Cobras in North America Day", first: {era: 1, y: 1996}},
+        {type: "D", start: {mon: 6, d: 18}, inherits: "Natl Splurge Day", first: {era: 1, y: 1994}},
     ]
 }
