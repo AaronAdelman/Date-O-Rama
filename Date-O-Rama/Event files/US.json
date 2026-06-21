@@ -391,7 +391,7 @@
         {type: "D", start: {mon: 6, d: 14}, inherits: "Natl Flag Day", urls: {"en":"https://www.daysoftheyear.com/days/flag-day/"}, first: {era: 1, y: 1916}, notes: {"en":"Flag Day\nCreated by Woodrow Wilson"}},
         {type: "D", start: {mon: 6, d: 17}, titles: {"en":"Bunker Hill Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bunker-hill-day/"}, first: {era: 1, y: 1863}},
         {type: "D", start: {mon: 6, d: 20}, titles: {"en":"West Virginia Day", "he":"יום וירג׳יניה המערבית"}, first: {era: 1, y: 1864}, urls: {"en":"https://nationaltoday.com/west-virginia-day/"}},
-        {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Pink Flamingo Day"}, urls: {"en":"https://nationaltoday.com/pink-flamingo-day/"}, emoji: "🦩", first: {era: 1, y: 2007}},
+        {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Pink Flamingo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pink-flamingo-day/"}, emoji: "🦩", first: {era: 1, y: 2007}, notes: {"en":"Created by Dean Mazzarella"}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"National Catfish Day"}, urls: {"en":"https://www.daysoftheyear.com/days/catfish-day/"}, first: {era: 1, y: 1987}},
         {type: "D", start: {mon: 6, d: 27}, titles: {"en":"Helen Keller Day","gu":"હેલેન કેલર દિવસ","zh":"海倫·凱勒日"}, urls: {"en":"https://www.daysoftheyear.com/days/helen-keller-day/"}, first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 6, d: 27}, titles: {"en":"National HIV Testing Day"}, urls: {"en":"https://nationaltoday.com/national-hiv-testing-day/"}, first: {era: 1, y: 1995}},
