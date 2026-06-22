@@ -212,7 +212,7 @@
         {type: "D", start: {mon: 6, d: 22}, inherits: "Intl Being You Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en":"National HVAC Tech Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-hvac-tech-day-june-22"}, first: {era: 1, y: 2016}, notes: {"en":"Created by ARS/Rescue Rooter"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Detroit-Style Pizza Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-detroit-style-pizza-day-june-23"}, first: {era: 1, y: 2021}, emoji: "🍕", notes: {"en":"National Detroit Style Pizza Day\nBuddy’s Pizza Day"}},
-        {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Hydration Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-hydration-day-june-23"}, emoji: "🚰", first: {era: 1, y: 2016}},
+        {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Hydration Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-hydration-day-june-23"}, emoji: "🚰", first: {era: 1, y: 2016}, notes: {"en":"Created by SafeTGard Corporationh"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "Natl Take Back the Lunch Break Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Patch Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-patch-day-june-24"}, first: {era: 1, y: 2023}, notes: {"en":"Created by Brian Burkhardt"}},
         {type: "D", start: {mon: 6, d: 26}, titles: {"en":"National Barcode Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-barcode-day-june-26"}, first: {era: 1, y: 2021}},

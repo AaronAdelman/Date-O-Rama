@@ -187,7 +187,7 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en":"Burghfield BoxKart Bash Day"}, urls: {"en":"https://boxkart.org.uk/"}, notes: {"en":"BoxKart Bash Day"}, first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, wkd: [4], nth: 3}, titles: {"en":"National Thank a Teacher Day"}, emoji: "👨‍🏫👩‍🏫", urls: {"en":"https://thankateacher.co.uk/"}, first: {era: 1, y: 2023}, notes: {"en":"Created by the Teaching Awards Trust"}},
         {type: "D", start: {mon: 6, wkd: [6], nth: -1}, titles: {"en":"Dream Big Day"}, urls: {"en":"https://dreambigday.co.uk/"}, emoji: "☁️", first: {era: 1, y: 2023}},
-        {type: "D", start: {mon: 6, wkd: [6], nth: -1}, titles: {"en":"National Cream Tea Day"}, urls: {"en":"https://www.creamteasociety.co.uk/national-cream-tea-day"}, notes: {"en":"Cream Tea Day"}, emoji: "☕️", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 6, wkd: [6], nth: -1}, titles: {"en":"National Cream Tea Day"}, urls: {"en":"https://www.creamteasociety.co.uk/national-cream-tea-day"}, notes: {"en":"Cream Tea Day\nCreated by the Cream Tea Society"}, emoji: "☕️", first: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, wkd: [7], d: 11, thruD: 17}, inherits: "Trooping the Colour", first: {era: 1, y: 1979}, last: {era: 1, y: 2017}},
         {type: "D", start: {mon: 6, wkd: [7], d: 12, thruD: 13}, inherits: "Trooping the Colour", first: {era: 1, y: 2020}, last: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, wkd: [7], d: 14, thruD: 20}, inherits: "Trooping the Colour", first: {era: 1, y: 2023}},
@@ -210,7 +210,7 @@
         {type: "D", start: {mon: 8, d: 1}, titles: {"en":"Yorkshire Day", "he":"יום יורקשייר"}, first: {era: 1, y: 1975}, urls: {"en":"https://www.daysoftheyear.com/days/yorkshire-day/"}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {type: "D", start: {mon: 8, d: 11}, titles: {"en":"National Bakewell Tart Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-bakewell-tart-day/"}, first: {era: 1, y: 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {type: "D", start: {mon: 8, d: 12}, titles: {"en":"Glorious Twelfth"}, urls: {"en":"https://www.daysoftheyear.com/days/glorious-twelfth/"}, first: {era: 1, y: 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
-        {type: "D", start: {mon: 8, d: 14}, urls: {"en":"https://www.daysoftheyear.com/days/falklands-day/"}, titles: {"en":"Falklands Day", "he":"יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
+        {type: "D", start: {mon: 8, d: 14}, titles: {"en":"Falklands Day", "he":"יום איי פוקלנד"}, urls: {"en":"https://www.daysoftheyear.com/days/falklands-day/"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
         {type: "D", start: {mon: 8, d: 15}, inherits: "Victory Over Japan Day", first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 8, d: 19}, inherits: "Natl Moving Day", first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en":"https://www.daysoftheyear.com/days/burger-day/"}, titles: {"en":"Burger Day", "he":"יום ההמבורגר"}, notes: {"en":"National Burger Day", "he":"יום ההמבורגר הלאומי"}, emoji: "🍔"},
@@ -416,7 +416,7 @@
         {type: "D", start: {mon: 6, wkd: [6], nth: 1}, inherits: "Natl Fish & Chip Day", first: {era: 1, y: 2025}},
         {type: "D", start: {mon: 6, d: 5}, titles: {"en":"Biomedical Science Day"}, urls: {"en":"https://www.daysoftheyear.com/days/biomedical-science-day/"}, first: {era: 1, y: 2017}, notes: {"en":"Created by the Institute of Biomedical Science (IBMS)"}},
         {type: "D", start: {era: 1, y: 2026, mon: 6, d: 15}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/united-kingdom/scotland-world-cup"}, locations: {"en":"Scotland"}},
-
+        {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Rare Chromosome Disorder Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rare-chromosome-disorder-awareness-day/"}, inherits: "*MedAwareness*", notes: {"en":"Created by Unique"}},
 
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durD: 5}, titles: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en":"Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦", notes: {"en":"Created by the Anti-Bullying Alliance"}},
