@@ -1311,7 +1311,6 @@
         {type: "D", start: {mon: 6, d: 10}, inherits: "Runner’s Selfie Day", first: {era: 1, y: 2014}},
         {type: "D", start: {mon: 6, d: 23}, inherits: "Runner’s Selfie Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"International Fairy Day", "he":"יום הפיות הבינלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/fairy-day/"}, first: {era: 1, y: 2001}, notes: {"en":"Created by Jessica Galbreth"}},
-        {type: "D", start: {mon: 6, d: 24}, titles: {"en":"Swim a Lap Day"}, urls: {"en":"https://www.daysoftheyear.com/days/swim-a-lap-day/"}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"Cat World Domination Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cat-world-domination-day/"}, first: {era: 1, y: 2012}, notes: {"en":"Created by Janiss Garza"}, emoji: "🐱"},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Bourdain Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bourdain-day/"}, first: {era: 1, y: 2019}, notes: {"en":"In honor of Anthony Bourdain.\nCreated by Eric Ripert and José Andrés"}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Color TV Day"}, urls: {"en":"https://www.daysoftheyear.com/days/color-tv-day/"}, emoji: "📺"},

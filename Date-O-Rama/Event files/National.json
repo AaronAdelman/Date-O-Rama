@@ -1553,7 +1553,6 @@
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National I Love My Dentist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-i-love-my-dentist-day/"}, emoji: "🦷"},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National Leave the Office Earlier Day"}, notes: {"en":"National Leave the Office Early Day\nCreated by Laura Stack"}, urls: {"en":"https://www.daysoftheyear.com/days/leave-the-office-earlier-day/"}},
         {type: "D", start: {mon: 6, d: 2}, titles: {"en":"National Rocky Road Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rocky-road-day/"}, emoji: "🍨"},
-        {type: "D", start: {mon: 6, d: 20, thruD: 26, wkd: [6]}, inherits: "Natl Take Your Dog to Work Day", first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 6, d: 20}, titles: {"en":"American Eagle Day"}, urls: {"en":"https://eagles.org/take-action/aboutaed/"}, notes: {"en":"National American Eagle Day\nBald EagleDay\nBald Eagle Appreciation Day"}, emoji: "🦅", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 6, d: 20}, titles: {"en":"National Ice Cream Soda Day"}, urls: {"en":"https://www.daysoftheyear.com/days/ice-cream-soda-day/"}},
         {type: "D", start: {mon: 6, d: 20}, titles: {"en":"National Vanilla Milkshake Day", "he":"יום המילקשייק וניל הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/vanilla-milkshake-day/"}, emoji: "🥤"},
@@ -1580,6 +1579,7 @@
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Pralines Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pralines-day/"}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Relationship Equity Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-relationship-equity-day/"}, first: {era: 1, y: 2019}, notes: {"en":"Created by Dr. Oluwafemi “Femi” Ogunjinmi"}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Upcycling Day"}, urls: {"en":"https://www.daysoftheyear.com/days/upcycling-day/"}, notes: {"en":"Upcycling Day"}, first: {era: 1, y: 2002}},
+        {type: "D", start: {mon: 6, d: 24}, titles: {"en":"Swim a Lap Day"}, notes: {"en":"National Swim a Lap Day"}, urls: {"en":"https://www.daysoftheyear.com/days/swim-a-lap-day/"}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"National Camp Counts Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-camp-counts-day/"}, first: {era: 1, y: 2019}, notes: {"en":"YMCA observance."}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"National Croatian Wine Day"}, urls: {"en":"https://nationaltoday.com/national-croatian-wine-day/"}, first: {era: 1, y: 2021}, emoji: "🍷"},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"National Police Community Cooperative Day"}, notes: {"en":"National Police Community Cooperative Day™"}, urls: {"en":"https://www.checkiday.com/a799342513bdec8dc43f750ac85b85a3/national-police-community-cooperative-day"}, first: {era: 1, y: 2020}, emoji: "🚔"},
@@ -1655,7 +1655,6 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 2}, titles: {"en":"Write to Your Father Day"}, urls: {"en":"https://www.checkiday.com/27f85cab7787b8de3a457c1affb9bd5b/write-to-your-father-day"}, emoji: "✍️"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, titles: {"en":"Family Awareness Day"}, urls: {"en":"http://www.safeglencove.org/family-awareness-day/"}, inherits: "Family Day", first: {era: 1, y: 1982}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 4}, titles: {"en":"America’s Kids Day"}, urls: {"en":"https://www.checkiday.com/d24dbf63757cacf36cce5788291c7005/americas-kids-day"}, inherits: "Children’s Day", first: {era: 1, y: 1999}},
-        {type: "D", start: {mon: 6, wkd: [2], nth: 3}, titles: {"en":"National Take Your Cat to Work Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-take-your-cat-to-work-day/"}, emoji: "🐱", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 6, wkd: [3], nth: 2}, titles: {"en":"National Forklift Safety Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-forklift-safety-day/"}, first: {era: 1, y: 2014}, notes: {"en":"Created by the Industrial Truck Association"}},
         {type: "D", start: {mon: 6, wkd: [3], nth: 3}, titles: {"en":"National Accounts Payable Day"}, urls: {"en":"https://www.intellichief.com/national-accounts-payable-day/"}, first: {era: 1, y: 2018}, notes: {"en":"National Accounts Payable Appreciation Day"}},
         {type: "D", start: {mon: 6, wkd: [3], nth: 3}, titles: {"en":"National Cherry Tart Day"}, emoji: "🍒", urls: {"en":"https://www.daysoftheyear.com/days/cherry-tart-day/"}, notes: {"en":"Some people think this event happens on June 17, June 18, or June 21."}},
@@ -2563,6 +2562,11 @@
         ]},
         {type: "nD", start: {mon: 6, d: 11, thruD: 17, wkd: [5], durD: 7}, inherits: "Natl Nursing Assistants Week", first: {era: 1, y: 2026}, nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [5]}, inherits: "CNA Day", first: {era: 1, y: 2026}},
+        ]},
+        
+        {type: "nD", start: {mon: 6, d: 20, thruD: 26, wkd: [2], durD: 5}, titles: {"en":"Take Your Pet to Work Week®"}, notes: {"en":"TYPTWW\nTYPTWWeek\nCreated by Pet Sitters International"}, urls: {"en":"https://https://www.petsit.com/take-your-pet-to-work-week"}, emoji: "🐱🐶", nonoverlappingSubEvents: [
+            {type: "D", start: {wkd: [2]}, titles: {"en":"National Take Your Cat to Work Day®"}, urls: {"en":"https://www.petsit.com/takeyourcat"}, emoji: "🐱", first: {era: 1, y: 2022}, notes: {"en":"Created by Pet Sitters International"}},
+            {type: "D", start: {wkd: [6]}, inherits: "Natl Take Your Dog to Work Day", first: {era: 1, y: 1999}},
         ]},
     ],
     templates: [
