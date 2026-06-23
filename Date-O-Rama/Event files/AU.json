@@ -126,8 +126,6 @@
         {type: "D", start: {mon: 2, d: 16}, titles: {"en":"National Tim Tam Day", "he":"יום הטים טאם הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/tim-tam-day/"}, notes: {"en":"Tim Tam Day\nCreated by Ian Norris and Alan Morrow", "he":"יום הטים טאם"}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, titles: {"en":"Hearing Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/hearing-awareness-week/"}, emoji: "👂", inherits: "*MedAwareness*"},
         {type: "nD", start: {mon: 5, d: 16}, end: {mon: 5, d: 22}, titles: {"en":"National Law Week"}, urls: {"en":"https://nationaltoday.com/national-law-week/"}, first: {era: 1, y: 1980}, emoji: "⚖️"},
-        {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2004}, last: {era: 1, y: 2024}},
-        {type: "nD", start: {mon: 6, d: 27}, end: {mon: 6, d: 29}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2025}},
         {type: "nD", start: {mon: 6, d: 5, thruD: 11, wkd: [2], durD: 7}, titles: {"en":"National Business Etiquette Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-business-etiquette-week/"}, emoji: "🕴️", first: {era: 1, y: 2007}, notes: {"en":"Created by the Protocol School of Washington"}},
         {type: "nD", start: {mon: 8, d: 27, thruMon: 9, thruD: 2, wkd: [1]}, end: {mon: 9, d: 2, thruD: 8, wkd: [7]}, titles: {"en":"Legacy Week"}, urls: {"en":"https://support.legacy.com.au/event/legacyweek"}, emoji: "🔥", first: {era: 1, y: 1940}},
         {type: "nD", start: {mon: 8, d: 9, thruD: 15, wkd: [7], durD: 9}, titles: {"en":"National Science Week"}, urls: {"en":"https://www.scienceweek.net.au/"}, emoji: "🔭🔬🧫", first: {era: 1, y: 1997}},
