@@ -1575,7 +1575,7 @@
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Typewriter Day"}, urls: {"en":"https://www.daysoftheyear.com/days/typewriter-day/"}, notes: {"en":"Typewriter Day"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"SAT Math Day"}, notes: {"en":"Scholastic Assessment Test Math Day"}, urls: {"en":"https://www.checkiday.com/35eb928ac493b933f98232730ebb10c0/sat-math-day"}, emoji: "π", first: {era: 1, y: 2013}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Pink Day"}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-pink-day-june-23"}, emoji: "🩷"},
-        {type: "D", start: {mon: 6, d: 24}, titles: {"en":"Museum Comes To Life Day"}, urls: {"en":"https://www.checkiday.com/432fa720653a3861e4bb06756bbdbb37/museum-comes-to-life-day"}, emoji: "🦖", first: {era: 1, y: 2006}},
+        {type: "D", start: {mon: 6, d: 24}, titles: {"en":"Museum Comes to Life Day"}, urls: {"en":"https://www.checkiday.com/432fa720653a3861e4bb06756bbdbb37/museum-comes-to-life-day"}, emoji: "🦖", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Pralines Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pralines-day/"}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Relationship Equity Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-relationship-equity-day/"}, first: {era: 1, y: 2019}, notes: {"en":"Created by Dr. Oluwafemi “Femi” Ogunjinmi"}},
         {type: "D", start: {mon: 6, d: 24}, titles: {"en":"National Upcycling Day"}, urls: {"en":"https://www.daysoftheyear.com/days/upcycling-day/"}, notes: {"en":"Upcycling Day"}, first: {era: 1, y: 2002}},
