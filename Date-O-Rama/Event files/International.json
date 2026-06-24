@@ -1933,7 +1933,6 @@
         {type: "W", start: {mon: 5, fullWk: 2, d1OfWk: 2}, inherits: "Sun Awareness Week", first: {era: 1, y: 2025}},
         {type: "W", start: {mon: 5, fullWk: 3, d1OfWk: 2}, titles: {"en":"Learning at Work Week"}, urls: {"en":"https://www.daysoftheyear.com/days/learning-at-work-week/"}},
         {type: "W", start: {mon: 5, fullWk: 3}, titles: {"en":"International Heritage Breeds Week"}, urls: {"en":"https://www.daysoftheyear.com/days/heritage-breeds-week/"}, emoji: "🐐🐑🐖", first: {era: 1, y: 2015}, notes: {"en":"Created by the Livestock Conservancy"}},
-        {type: "W", start: {mon: 6, fullWk: -1, d1OfWk: 2}, titles: {"en":"Lightning Safety Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/lightning-safety-awareness-week/"}, first: {era: 1, y: 2001}, emoji: "⚡️"},
         {type: "W", start: {mon: 6, fullWk: 1, d1OfWk: 2}, titles: {"en":"Food Safety Week"}, urls: {"en":"https://www.daysoftheyear.com/days/food-safety-week/"}, first: {era: 1, y: 2019}, emoji: "🍛🌭🌮"},
         {type: "W", start: {mon: 6, fullWk: 1}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2021}, last: {era: 1, y: 2022}},
         {type: "W", start: {mon: 6, fullWk: 2, d1OfWk: 2}, inherits: "Community Health Improvement Week", first: {era: 1, y: 2023}},
