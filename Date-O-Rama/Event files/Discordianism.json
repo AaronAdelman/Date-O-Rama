@@ -115,7 +115,7 @@
         {type: "D", start: {mon: 6, d: 23}, inherits: "Unknown Saints Day", inherits: "HDH"},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Saint Rufus’ Day"}, urls: {"en":"https://www.fsofcabal.com/holydays/03-28-saint-rufus-day"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "Unknown Saints Day", urls: {"en":"https://www.fsofcabal.com/holydays/03-29-unknown-saints-day"}},
-        {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Half Christmas"}, urls: {"en":"https://www.fsofcabal.com/holydays/03-30-half-christmas"}},
+        {type: "D", start: {mon: 6, d: 25}, inherits: "1/2-Xmas", notes: {"en":"Half Christmas"}, urls: {"en":"https://www.fsofcabal.com/holydays/03-30-half-christmas"}},
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Know Saints Day"}, inherits: "HDH"},
         {type: "D", start: {mon: 7, d: 2}, titles: {"en":"Mid Year’s Day"}, notes: {"en":"Whollyday\n37 Confusion"}, inherits: "EDH"},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Hodge Podge Lodge Day"}, inherits: "HDH"},
