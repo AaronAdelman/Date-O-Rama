@@ -1568,7 +1568,6 @@
         {type: "D", start: {mon: 6, d: 22}, titles: {"en":"National Limoncello Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-limoncello-day/"}, first: {era: 1, y: 2018}, notes: {"en":"Created by Marie Barber"}},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en":"National Onion Ring Day", "he":"יום טבעות הבצל הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/onion-rings-day/"}, notes: {"en":"National Onion Rings Day"}, emoji: "🧅"},
         {type: "D", start: {mon: 6, d: 22}, titles: {"en":"National Pet Choking Prevention Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-choking-prevention-day/"}, emoji: "🐇🐕🐈‍⬛", first: {era: 1, y: 2023}, notes: {"en":"Created by Dr. Judy Morgan"}},
-        {type: "D", start: {mon: 6, d: 22}, titles: {"en":"Summerween"}, notes: {"en":"From Gravity Falls"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Family Owned & Operated Businesses Day"}, urls: {"en":"https://nationaltoday.com/national-family-owned-operated-businesses-day/"}, first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Pecan Sandies Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pecan-sandies-day/"}},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"National Porridge Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-porridge-day/"}},

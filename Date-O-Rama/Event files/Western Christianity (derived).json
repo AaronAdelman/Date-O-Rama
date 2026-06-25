@@ -133,13 +133,11 @@
         {type: "D", start: {mon: 2, d: 12}, titles: {"en":"Hug Day"}, urls: {"en":"https://www.daysoftheyear.com/days/hug-day/"}, emoji: "🫂"},
         {type: "D", start: {mon: 2, d: 12}, titles: {"en":"National Freedom to Marry Day","ha":"Ranar ƴancin yin aure","ru":"Национальный день свободы брака"}, urls: {urls: "https://www.daysoftheyear.com/days/national-freedom-to-marry-day/"}, first: {era: 1, y: 1998}, notes: {"en":"Created by Lambda Legal"}},
         {type: "D", start: {mon: 2, d: 13}, inherits: "Natl Valentine Shopping Reminder Day"},
-        {type: "D", start: {mon: 2, d: 13}, titles: {"en":"Galentine’s Day","ja":"ギャレンタインデー"}, urls: {"en":"https://www.daysoftheyear.com/days/galentines-day/"}, emoji: "💛", first: {era: 1, y: 2017}, notes: {"en":"From Parks and Recreation"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"International Condom Day"}, notes: {"en":"This observance could have been promoted with more tact.\nCreated by the AIDS Healthcare Foundation"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"Self Love Day", "he":"יום מאוהב/ת בעצמי"}, urls: {"en":"https://pathofselflove.org/self-love-day"}, notes: {"en":"Self-Love Day\nMadly in Love With Me Day\nSelf Love Day\nCreated by Christine Arylo and the Path of Self Love School", "he":"יום מאוהב/ת בעצמי בטירוף"}, first: {era: 1, y: 2008}, emoji: "⭕"},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"International Natural Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-natural-day/"}, notes: {"en":"International Day of Self Love\nCreated by Sanah Jivani"}, first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 2, d: 13}, inherits: "Kiss Day", urls: {"en":"https://www.daysoftheyear.com/days/kiss-day/"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"Self Love Day"}, notes: {"en":"Madly In Love With Me Day\nSelf Love Day\nInternational Day of Self-Love\nThis observance seems to be meant to sell products."}, first: {era: 1, y: 2008}},
-        {type: "D", start: {mon: 2, d: 13}, titles: {"en":"Desperation Day","hu":"A kétségbeesés napja"}, first: {era: 1, y: 2011}, urls: {"en":"https://www.daysoftheyear.com/days/desperation-day/"}, notes: {"en":"From the sitcom How I Met Your Mother"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"Dream Your Sweet Day"}, urls: {"en":"https://www.daysoftheyear.com/days/dream-your-sweet-day/"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {"en":"National Wingman Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-wingman-day/"}, first: {era: 1, y: 2004}, notes: {"en":"Created by the US Airforce"}},
         {type: "D", start: {mon: 2, d: 14}, titles: {"en":"International Book Giving Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-book-giving-day/"}, first: {era: 1, y: 2012}, emoji: "📚", notes: {"en":"Created by Amy Broadmoore and her son"}},
@@ -189,7 +187,6 @@
         {type: "D", start: {mon: 2, d: 21}, titles: {"en":"National Breakup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-breakup-day/"}, emoji: "💔", first: {era: 1, y: 2006}},
         {type: "D", start: {mon: 2, d: 26}, titles: {"en":"Carnival Day"}, urls: {"en":"https://www.daysoftheyear.com/days/carnival-day/"}},
         {type: "D", start: {mon: 3, d: 25}, titles: {"en":"Old New Year’s Day"}, urls: {"en":"https://nationaltoday.com/old-new-years-day/"}, first: {era: 1, y: 1582}},
-        {type: "D", start: {mon: 6, d: 25}, inherits: "1/2-Xmas", notes: {"en":"From Workaholics"}},
 
         {type: "M", start: {mon: 10}, titles: {"en":"Bat Appreciation Month", "he":"חודש העטלף"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en":"Created by Merlin Tuttle"}, nonoverlappingSubEvents: [
             {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, titles: {"en":"Bat Appreciation Week"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", first: {era: 1, y: 2000}, notes: {"en":"Created by Bat Conservation International"}},
