@@ -1599,7 +1599,7 @@
         {type: "D", start: {mon: 6, d: 28}, titles: {"en":"National Tapioca Day", "he":"יום הטפיוקה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-tapioca-day/"}},
         {type: "D", start: {mon: 6, d: 29}, titles: {"en":"National Almond Buttercrunch Day"}, urls: {"en":"https://www.daysoftheyear.com/days/almond-buttercrunch-day/"}},
         {type: "D", start: {mon: 6, d: 29}, titles: {"en":"National Camera Day"}, urls: {"en":"https://www.daysoftheyear.com/days/camera-day/"}, emoji: "📷"},
-        {type: "D", start: {mon: 6, d: 29}, titles: {"en":"National Dieselbilly Day"}, urls: {"en":"https://nationaltoday.com/national-dieselbilly-day/"}},
+        {type: "D", start: {mon: 6, d: 29}, titles: {"en":"National Dieselbilly Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dieselbilly-day/"}},
         {type: "D", start: {mon: 6, d: 29}, titles: {"en":"National Waffle Iron Day"}, urls: {"en":"https://www.daysoftheyear.com/days/waffle-iron-day/"}, emoji: "🧇"},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en":"National Chocolate Macaroon Day"}, urls: {"en":"https://www.daysoftheyear.com/days/chocolate-macaroon-day/"}, notes: {"en":"Macaroon Day"}},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en":"National Egg Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-egg-day/"}, emoji: "🥚"},
