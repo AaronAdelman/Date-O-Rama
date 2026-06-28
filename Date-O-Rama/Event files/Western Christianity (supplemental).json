@@ -69,7 +69,6 @@
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"National Black America’s Day of Repentance"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-americas-day-of-repentance/"}, first: {era: 1, y: 2021}, notes: {"en":"Created by Sister Yvonne Roberson"}},
         {type: "D", start: {mon: 6, d: 26}, titles: {"en":"Forgiveness Day"}, urls: {"en":"https://nationaltoday.com/forgiveness-day/"}, first: {era: 1, y: 1994}},
         {type: "D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
-        {type: "D", start: {mon: 7, d: 24}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, titles: {"en":"“Talk to Us” Day"}, notes: {"en":"Talk to Us"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 7, wkd: [1], nth: 4}, inherits: "World Day for Grandparents and the Elderly", first: {era: 1, y: 2021}},
         {type: "D", start: {mon: 8, d: 22}, titles: {"en":"National Be An Angel Day", "he":"יום להיות המלאך הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/be-an-angel-day/"}, notes: {"en":"Be An Angel Day\nCreated by Jayne Howard Feldman", "he":"יום להיות המלאך"}, first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 8, wkd: [1], nth: -1}, titles: {"en":"Social Justice Sunday", "he":"יום ראשון של צדק חברתי"}, first: {era: 1, y: 1940}, urls: {"en":"https://www.daysoftheyear.com/days/social-justice-sunday/"}, emoji: "🖐"},
@@ -96,6 +95,10 @@
         {type: "D", start: {mon: 4, d: 12}, titles: {"en":"Wear a Star Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wear-a-star-day/"}, first: {era: 1, y: 2010}, emoji: "⭐", notes: {"en":"Created by the [R] Project"}},
         {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2004}, last: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 6, d: 22, thruD: 28, wkd: [6], durD: 3}, inherits: "Natl Forgiveness Week", first: {era: 1, y: 2025}},
+        
+        {type: "M", start: {mon: 7}, titles: {"en":"“Talk to Us”"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us/"}, notes: {"en":"Created by the Samaritans"}, first: {era: 1, y: 2016}, nonoverlappingSubEvents: [
+            {type: "D", start: {d: 24}, titles: {"en":"“Talk to Us” Day"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, notes: {"en":"Talk to Us"}, first: {era: 1, y: 2016}},
+        ]},
     ],
     templates: [
         {template: "Natl Forgiveness Week", type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, titles: {"en":"National Forgiveness Week"}, notes: {"en":"NFW\nNational Reconciliation and Forgiveness Week"}, urls: {"en":"https://forgivestories.com/nfw/"}, emoji: "🖤"},

@@ -58,7 +58,7 @@
         {type: "D", start: {mon: 5, d: 31}, inherits: "World No-Tobacco Day", first: {era: 1, y: 1989}},
         {inherits: "World Refugee Day", type: "D", start: {mon: 6, d: 20}, first: {era: 1, y: 2001}},
         {titles: {"en":"Dominion Status Day"}, type: "D", start: {mon: 9, d: 26}, urls: {"en":"https://nationaltoday.com/dominion-status-day/"}, first: {era: 1, y: 1907}},
-        {titles: {"en":"National Disco Day"}, type: "D", start: {mon: 7, d: 2}, urls: {"en":"https://nationaltoday.com/national-disco-day/"}, emoji: "🪩"},
+        {titles: {"en":"National Disco Day"}, type: "D", start: {mon: 7, d: 2}, urls: {"en":"https://www.daysoftheyear.com/days/national-disco-day/"}, emoji: "🪩", first: {era: 1, y: 2014}},
         {type: "D", inherits: "Daffodil Day", start: {era: 1, y: 2019, mon: 8, d: 23}, urls: {"en":"https://daffodilday.org.nz/"}},
         {type: "D", inherits: "Daffodil Day", start: {era: 1, y: 2020, mon: 8, d: 28}, urls: {"en":"https://daffodilday.org.nz/"}},
         {type: "D", inherits: "Daffodil Day", start: {era: 1, y: 2021, mon: 8, d: 27}, urls: {"en":"https://daffodilday.org.nz/"}},
