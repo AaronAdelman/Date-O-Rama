@@ -754,5 +754,6 @@
         {template: "יום־שנה של רחל אימנו", titles: {"he":"יום־שנה של רחל אימנו", "en":"Raḥel Our Mother Memorial Day"}, type: "D", start: {mon: 2, d: 11}, inherits: "*DeathAnniv*"},
         {template: "יום־שנה של שמואל הנביא", titles: {"he":"יום־שנה של שמואל הנביא", "en":"Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
         {template: "*ספירת העומר*", type: "D", start: {mon: 8, d: 16}, urls: {"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
+        {template: "Natl Rainier Cherry Day", type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Rainier Cherry Day"}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-rainier-cherry-day-june-28"}, emoji: "🍒"},
     ]
 }

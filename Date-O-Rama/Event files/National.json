@@ -1697,7 +1697,7 @@
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Blueberry Muffin Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blueberry-muffin-day/"}, emoji: "🫐"},
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Cheer Up the Lonely Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cheer-up-the-lonely-day/"}, notes: {"en":"Cheer Up the Lonely Day"}},
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Mojito Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mojito-day/"}, emoji: "🥃🍋‍🟩"},
-        {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Rainier Cherry Day"}, urls: {"en":"https://nationaltoday.com/national-rainier-cherry-day/"}, emoji: "🍒"},
+        {type: "D", start: {mon: 7, d: 11}, inherits: "Natl Rainier Cherry Day", first: {era: 1, y: 1952}, last: {era: 1, y: 2024}},
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National State Fair Food Day"}, urls: {"en":"https://nationaltoday.com/national-state-fair-food-day/"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Swimming Pool Day"}, urls: {"en":"https://nationaltoday.com/national-swimming-pool-day/"}},
         {type: "D", start: {mon: 7, d: 12}, titles: {"en":"National Different Colored Eyes Day", "he":"יום העיניים בשני צבעים הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/different-colored-eyes-day/"}, emoji: "👀", first: {era: 1, y: 1986}},
