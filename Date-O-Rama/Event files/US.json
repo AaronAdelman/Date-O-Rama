@@ -51,7 +51,7 @@
         {type: "D", start: {mon: 7, d: 5, wkd: [1]}, inherits: "Independence Day (in lieu)", first: {era: 1, y: 1776}, urls: {"en":"https://nationaltoday.com/independence-day/"}},
         {type: "D", start: {mon: 7, d: 5, wkd: [6]}, inherits: "Independence Day (in lieu)", first: {era: 1, y: 1776}, urls: {"en":"https://nationaltoday.com/independence-day/"}, locations: {"en":"West Virginia"}},
         {type: "D", start: {mon: 3, d: 2}, titles: {"bn":"টেক্সাসের স্বাধীনতা দিবস","en":"Texas Independence Day","es":"Día de la Independencia de Texas","ko":"텍사스 독립기념일","pl":"Dzień Niepodległości Teksasu","zh":"德克薩斯獨立日"}, inherits: "Independence Day", first: {era: 1, y: 1836}, urls: {"en":"https://www.daysoftheyear.com/days/texas-independence-day/"}},
-        {type: "D", start: {mon: 7, d: 4}, inherits: "Independence Day", first: {era: 1, y: 1776}, urls: {"en":"https://nationaltoday.com/independence-day/"}, notes: {"en":"Fourth of July"}},
+        {type: "D", start: {mon: 7, d: 4}, inherits: "Independence Day", first: {era: 1, y: 1776}, urls: {"en":"https://www.daysoftheyear.com/days/independence-day/"}, notes: {"en":"Fourth of July"}},
         {type: "D", start: {mon: 7, d: 4}, inherits: "Indivisible Day", first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2011}},
         {type: "D", start: {mon: 6, d: 3}, inherits: "Jefferson Davis’s Birthday", first: {era: 1, y: 1808}, inherits: "*BDay*", locations: {"en":"Florida, Kentucky, Louisiana, Tennessee", "he":"פלורידה, קנטקי, לואיזיאנה, טנסי"}},
