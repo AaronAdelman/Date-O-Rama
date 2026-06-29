@@ -15,6 +15,7 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", start: {mon: 5, d: 10, thruD: 11, wkd: [2]}, inherits: "Victory Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/tajikistan/victory-day"}},
         {type: "D", start: {mon: 6, d: 27}, inherits: "Natl Unity Day", urls: {"en":"https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
+        {type: "D", start: {mon: 6, d: 28, thruD: 29, wkd: [2]}, titles: {"en":"National Unity Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Independence Day", first: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/tajikistan-independence-day/"}},
         {type: "D", start: {mon: 11, d: 6}, urls: {"en":"https://www.officeholidays.com/holidays/tajikistan/tajikistan-constitution-day"}, inherits: "Constitution Day"},
         
