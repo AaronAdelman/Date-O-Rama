@@ -20,12 +20,12 @@
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 7, d: 5}, inherits: "Tynwald Day"},
         {type: "D", start: {mon: 7, d: 6, thruD: 7, wkd: [2]}, titles: {"en":"Tynwald Day (in lieu)"}, inherits: "Tynwald Day"},
-        {type: "D", start: {mon: 8, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/isle-of-man/august-bank-holiday"}, inherits: "August Bank Holiday", notes: {"en":"Summer Bank Holiday"}},
+        {type: "D", start: {mon: 8, wkd: [2], nth: -1}, inherits: "August Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/isle-of-man/august-bank-holiday"}, notes: {"en":"Summer Bank Holiday"}},
         {type: "D", start: {mon: 11, d: 8, thruD: 14, wkd: [1]}, inherits: "Remembrance Sunday", first: {era: 1, y: 1939}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ],
     templates: [
-        {template: "Tynwald Day", type: "D", start: {mon: 7, d: 5}, titles: {"en":"Tynwald Day"}, urls: {"en":"https://www.tynwald.org.im/tynwald-day"}},
+        {template: "Tynwald Day", type: "D", start: {mon: 7, d: 5}, titles: {"de":"Tynwald Day","en":"Tynwald Day","fr":"Tynwald Day","gv":"Laa Tinvaal","io":"Dio di Tynwald","nb":"Tynwald-dagen","sv":"Tynwalddagen","tr":"Tynwald Günü"}, urls: {"en":"https://www.tynwald.org.im/tynwald-day"}},
     ]
 }
