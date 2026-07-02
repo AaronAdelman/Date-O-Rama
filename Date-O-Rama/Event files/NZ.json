@@ -117,7 +117,7 @@
     ],
     templates: [
         {template: "Techweek", type: "W", start: {mon: 5, fullWk: 3, d1OfWk: 2}, titles: {"en":"Techweek"}, urls: {"en":"https://techweek.co.nz/"}, emoji: "🥽"},
-        {template: "Matariki", type: "D", start: {mon: 7, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/new-zealand/matariki"}, titles: {"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki (cosmologie maorie)","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"}, emoji: "🌌"},
+        {template: "Matariki", type: "D", start: {mon: 7, d: 14}, urls: {"en":"https://www.daysoftheyear.com/days/matariki/"}, titles: {"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"}, emoji: "🌌"},
         {template: "Otago Anniversary Day (in lieu)", type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, titles: {"en":"Otago Anniversary Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/otago-anniversary-day/"}},
     ]
 }
