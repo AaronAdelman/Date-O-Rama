@@ -1440,7 +1440,6 @@
         {type: "D", start: {mon: 7, d: 31}, titles: {"en":"Shredded Wheat Day", "he":"יום החיטה המגוררת"}, urls: {"en":"https://nationaltoday.com/shredded-wheat-day/"}},
         {type: "D", start: {mon: 7, d: 31}, titles: {"en":"Uncommon Instrument Awareness Day", "he":"יום כלי הנגינה הלא מוכרים"}, urls: {"en":"https://www.daysoftheyear.com/days/uncommon-instrument-awareness-day/"}},
         {type: "D", start: {mon: 7, d: 31}, titles: {"en":"World Ranger Day", "he":"יום פקחי הטבע העולמי"}, first: {era: 1, y: 2007}, emoji: "🏞", urls: {"en":"https://www.daysoftheyear.com/days/world-ranger-day/"}},
-        {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Alice in Wonderland Day"}, urls: {"en":"https://www.daysoftheyear.com/days/alice-in-wonderland-day/"}, emoji: "🍄🐛", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Jackfruit Day", "he":"יום פרי הג׳ק"}, urls: {"en":"https://jackfruitday.com/"}, first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Sidewalk Egg Frying Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sidewalk-egg-frying-day/"}, first: {era: 1, y: 1983}, emoji: "🥚"},
         {type: "D", start: {mon: 7, d: 5}, titles: {"en":"Mechanical Pencil Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mechanical-pencil-day/"}},

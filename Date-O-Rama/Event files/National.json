@@ -1685,6 +1685,7 @@
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Creative Ice Cream Flavors Day", "he":"יום הגלידות בטעמים יצירתיים הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/creative-ice-cream-flavor-day/"}, emoji: "🍦🍨"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Financial Freedom Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-financial-freedom-day/"}, emoji: "💵"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Gingersnap Day"}, urls: {"en":"https://www.daysoftheyear.com/days/gingersnap-day/"}},
+        {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Patio Day"}, urls: {"en":"https://nationaltoday.com/national-patio-day/"}},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Postal Workers Day"}, notes: {"en":"National Postal Worker Day\nCreated by Richard E. Baker"}, urls: {"en":"https://www.daysoftheyear.com/days/postal-worker-day/"}, first: {era: 1, y: 1997}, emoji: "📫"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Television Heritage Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-television-heritage-day/"}, emoji: "📺"},
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National US Postage Stamp Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-us-postage-stamp-day/"}, notes: {"en":"National U.S. Postage Stamp Day"}},
