@@ -38,6 +38,5 @@
     ],
     templates: [
         {template: "Bangladesh Parliamentary Polls", type: "D", start: {era: 1, y: 2018, mon: 12, d: 30}, titles: {"en":"Bangladesh Parliamentary Polls"}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/bangladesh-parliamentary-polls"}},
-
     ]
 }

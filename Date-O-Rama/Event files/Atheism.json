@@ -25,6 +25,5 @@
     ],
     templates: [
         {template: "Atheist Pride Day", titles: {"en":"Atheist Pride Day"}, type: "D", start: {mon: 6, d: 6}, urls: {"en":"https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
-
     ]
 }

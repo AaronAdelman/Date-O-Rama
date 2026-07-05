@@ -39,4 +39,3 @@
         {template: "Kwame Nkrumah Memorial Day (in lieu)", type: "D", start: {mon: 9, d: 22, wkd: [2, 3]}, titles: {"en":"Kwame Nkrumah Memorial Day (in lieu)", "he":"יום הזיכרון של קוואמה נקרומה (במקומו)"}, inherits: "*BDay*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
     ]
 }
-

@@ -72,13 +72,13 @@
         {type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Quantum Science and Technology"}},
         {type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year Of Cooperatives"}},
         {type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Glaciers’ Preservation", "es":"Año Internacional de la Conservación de los Glaciares", "fr":"Année internationale de la préservation des glaciers", "zh":"国际冰川保护年"}},
-        {type: "Y", start: {era: 1, y: 2025}, inherits: "International Year of Peace and Trust"},
+        {type: "Y", start: {era: 1, y: 2025}, inherits: "Intl Year of Peace and Trust"},
         {type: "Y", start: {era: 1, y: 2024}, titles: {"ar":"السنة الدولية للإبليات", "en":"International Year of Camelids", "es":"Año Internacional de los Camélidos", "fr":"Année internationale des camélidés", "ru":"Международным годом верблюдовых", "zh":"国际驼科动物年"}, emoji: "🐪"},
         {type: "Y", start: {era: 1, y: 2023}, titles: {"en":"International Year of Dialogue as a Guarantee of Peace"}},
         {titles: {"en":"International Year of Millets"}, type: "Y", start: {era: 1, y: 2023}, emoji: "⿉"},
         {titles: {"en":"International Year of Glass"}, type: "Y", start: {era: 1, y: 2022}, emoji: "🥃"},
         {titles: {"en":"International Year of Artisanal Fisheries and Aquaculture"}, type: "Y", start: {era: 1, y: 2022}, emoji: "🐟"},
-        {type: "Y", start: {era: 1, y: 2021}, inherits: "International Year of Peace and Trust"},
+        {type: "Y", start: {era: 1, y: 2021}, inherits: "Intl Year of Peace and Trust"},
         {titles: {"en":"International Year of Creative Economy for Sustainable Development"}, type: "Y", start: {era: 1, y: 2021}, emoji: "💰"},
         {titles: {"en":"International Year of Fruits and Vegetables"}, type: "Y", start: {era: 1, y: 2021}, emoji: "🍅"},
         {titles: {"en":"International Year for the Elimination of Child Labour"}, type: "Y", start: {era: 1, y: 2021}},
@@ -161,6 +161,6 @@
         {titles: {"en":"World Refugee Year"}, type: "D", start: {era: 1, y: 1959, mon: 6, d: 1}, end: {era: 1, y: 1960, mon: 5, d: 31}},
     ],
     templates: [
-        {template: "International Year of Peace and Trust", type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
+        {template: "Intl Year of Peace and Trust", type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
     ]
 }

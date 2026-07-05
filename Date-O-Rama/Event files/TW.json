@@ -48,6 +48,5 @@
   ],
     templates: [
         {template: "Retrocession Day (in lieu)", type: "D", start: {mon: 10, d: 24}, titles: {"en":"Retrocession Day (in lieu)"}, notes: {"en":"Taiwan Retrocession Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
-
     ]
 }

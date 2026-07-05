@@ -32,6 +32,5 @@
     ],
     templates: [
         {template: "Celebration of the Birthday of His Majesty the King", type: "D", start: {mon: 6, wkd: [2], nth: 2}, titles: {"en":"Celebration of the Birthday of His Majesty the King"}, urls: {"en":"https://www.officeholidays.com/holidays/anguilla/king-charles-birthday"}, inherits: "King Charles’ Birthday", notes: {"en":"Sovereignty Day"}},
-
     ]
 }
