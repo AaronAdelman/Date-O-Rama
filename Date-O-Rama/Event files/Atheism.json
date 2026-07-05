@@ -23,7 +23,7 @@
         {type: "M", start: {mon: 10}, titles: {"en":"Freethought Month"}, urls: {"en":"https://secularseasons.org/october/freethought_month.html"}},
         {type: "D", start: {mon: 11, d: 9}, titles: {"en":"Carl Sagan Day"}, urls: {"en":"https://www.daysoftheyear.com/days/carl-sagan-day/"}, inherits: "*BDay*", first: {era: 1, y: 2009}, emoji: "🪐", notes: {"en":"Created by the Center for Inquiry and the Florida Atheists and Secular Humanists (FLASH)"}},
     ],
-    templates: [
-        {template: "Atheist Pride Day", titles: {"en":"Atheist Pride Day"}, type: "D", start: {mon: 6, d: 6}, urls: {"en":"https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
-    ]
+    templates: {
+        "Atheist Pride Day": { titles: {"en":"Atheist Pride Day"}, type: "D", start: {mon: 6, d: 6}, urls: {"en":"https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
+    }
 }

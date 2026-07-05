@@ -56,7 +56,7 @@
         {type: "nD", start: {mon: 8, d: 10, durD: 3}, titles: {"en":"Puck Fair"}, urls: {"en":"https://puckfair.ie/"}, first: {era: 1, y: 1603}, emoji: "🐐"},
         {type: "D", start: {mon: 5, d: 22}, titles: {"en":"Irish Marriage Referendum"}, first: {era: 1, y: 2015}},
    ],
-    templates: [
-        {template: "Imbolc (in lieu)", type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en":"Imbolc (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en":"Saint Brigid’s Day (in lieu)"}},
-    ]
+    templates: {
+        "Imbolc (in lieu)": { type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en":"Imbolc (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en":"Saint Brigid’s Day (in lieu)"}},
+    }
 }

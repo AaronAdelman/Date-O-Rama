@@ -34,7 +34,7 @@ struct ASAEventsFile: Codable {
     var urls: Dictionary<String, URL>?
 
     var eventSpecifications: Array<ASAEventSpecification>
-    var templateSpecifications: Array<ASAEventSpecification>?
+    var templateSpecifications: Dictionary<String, ASAEventSpecification>?
     
     /// The specification for the first possible occurrence of any event in this events file
     var firstDateSpecification: ASADateSpecification?

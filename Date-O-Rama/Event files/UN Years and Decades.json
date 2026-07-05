@@ -160,7 +160,7 @@
         {titles: {"en":"International Health and Medical Research Year"}, type: "Y", start: {era: 1, y: 1961}, emoji: "⚕️"},
         {titles: {"en":"World Refugee Year"}, type: "D", start: {era: 1, y: 1959, mon: 6, d: 1}, end: {era: 1, y: 1960, mon: 5, d: 31}},
     ],
-    templates: [
-        {template: "Intl Year of Peace and Trust", type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
-    ]
+    templates: {
+        "Intl Year of Peace and Trust": { type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
+    }
 }

@@ -10,7 +10,7 @@ import Foundation
 import EventKit
 
 struct ASAEventSpecification: Codable {
-    var template: String?
+//    var template: String?
     var inherits: String?
     
     var type: ASAEventSpecificationType
@@ -62,7 +62,8 @@ struct ASAEventSpecification: Codable {
         case endDateSpecification   = "end"
         case firstDateSpecification = "first"
         case lastDateSpecification  = "last"
-        case template, inherits, titles, locations
+//        case template
+        case inherits, titles, locations
         case calendarCode           = "cal"
         case regionCodes, excludeRegionCodes, urls, notes, emoji, type, nonoverlappingSubEvents, overlappingSubEvents
         case cycleRanges            = "cRanges"
@@ -200,12 +201,12 @@ extension ASAEventSpecification {
         return result
     } // var recurrenceRules
     
-    func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool {
-        assert(self.inherits != nil)
-//        assert(templateEventSpecification.template != nil)
-        
-        return self.inherits == templateEventSpecification.template
-    } // func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool
+//    func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool {
+//        assert(self.inherits != nil)
+////        assert(templateEventSpecification.template != nil)
+//        
+//        return self.inherits == templateEventSpecification.template
+//    } // func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool
     
     static let templateEventsFile: ASAEventsFile? = {
         let (file, error) = ASAEventsFile.builtIn(fileName: "*Templates")
@@ -215,18 +216,22 @@ extension ASAEventSpecification {
         return file
     }()
     
-    fileprivate func delegatedTemplateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>) -> ASAEventSpecification? {
+    fileprivate func delegatedTemplateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Dictionary<String, ASAEventSpecification>) -> ASAEventSpecification? {
         var template: ASAEventSpecification?
-        let index = eventsFileTemplates.firstIndex(where: {
-            eventSpecification.matchesTemplate(templateEventSpecification: $0)
-        })
-        if index != nil {
-            template = eventsFileTemplates[index!]
+//        let index = eventsFileTemplates.firstIndex(where: {
+//            eventSpecification.matchesTemplate(templateEventSpecification: $0)
+//        })
+//        if index != nil {
+//            template = eventsFileTemplates[index!]
+//        }
+        let inherits = eventSpecification.inherits
+        if inherits != nil {
+            template = eventsFileTemplates[inherits!]
         }
         return template
     }
     
-    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification? {
+    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Dictionary<String, ASAEventSpecification>?) -> ASAEventSpecification? {
         let inherits: String? = eventSpecification.inherits
         if inherits == nil || ASAEventSpecification.templateEventsFile == nil {
             return nil
@@ -252,9 +257,9 @@ extension ASAEventSpecification {
         }
         
         return nil
-    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification?
+    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Dictionary<String, ASAEventSpecification>?) -> ASAEventSpecification?
     
-    func filledIn(eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification {
+    func filledIn(eventsFileTemplates: Dictionary<String, ASAEventSpecification>?) -> ASAEventSpecification {
         let template = templateEventSpecification(for: self, eventsFileTemplates: eventsFileTemplates)
         
         if template == nil {
@@ -276,5 +281,5 @@ extension ASAEventSpecification {
         }
         
         return temp
-    } // func filledIn(eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEventSpecification
+    } // func filledIn(eventsFileTemplates: Dictionary<String, ASAEventSpecification>?) -> ASAEventSpecification
 } // extension ASAEventSpecification

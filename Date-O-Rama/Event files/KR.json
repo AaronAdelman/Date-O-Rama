@@ -32,7 +32,7 @@
         {type: "D", start: {era: 1, y: 2024, mon: 4, d: 10}, inherits: "South Korea Election Day"},
         {type: "D", start: {era: 1, y: 2025, mon: 6, d: 3}, inherits: "South Korea Election Day"},
     ],
-    templates: [
-        {template: "South Korea Election Day", type: "D", start: {era: 1, y: 2018, mon: 6, d: 13}, inherits: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/south-korea/south-korea-presidential-election-day"}},
-    ]
+    templates: {
+        "South Korea Election Day": { type: "D", start: {era: 1, y: 2018, mon: 6, d: 13}, inherits: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/south-korea/south-korea-presidential-election-day"}},
+    }
 }

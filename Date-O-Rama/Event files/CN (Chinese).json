@@ -40,8 +40,8 @@
         {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 5}, titles: {"en":"Qiang New Year", "zh_CN":"羌历年"}},
         {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 22}, titles: {"en":"Third Month Fair", "zh_CN":"三月街"}, urls: {"en":"https://en.wikipedia.org/wiki/Third_Month_Fair"}},
     ],
-    templates: [
-        {template: "Dragon Boat Festival Holiday", type: "D", start: {mon: 6, d: 23}, titles: {"en":"Dragon Boat Festival Holiday"}},
-        {template: "Spring Festival Holiday", type: "D", start: {mon: -1, d: -1}, titles: {"en":"Spring Festival Holiday"}},
-    ]
+    templates: {
+        "Dragon Boat Festival Holiday": { type: "D", start: {mon: 6, d: 23}, titles: {"en":"Dragon Boat Festival Holiday"}},
+        "Spring Festival Holiday": { type: "D", start: {mon: -1, d: -1}, titles: {"en":"Spring Festival Holiday"}},
+    }
 }

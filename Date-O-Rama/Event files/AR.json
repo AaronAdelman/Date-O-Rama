@@ -71,8 +71,8 @@
         {type: "D", start: {mon: 8, d: 1}, inherits: "Pachamama Day", first: {era: 1, y: 1990}},
         {type: "D", start: {mon: 4, wkd: [6], nth: -1}, titles: {"en":"Día de la Chupina", "es":"Día de la Chupina"}, urls: {"en":"https://en.wikipedia.org/wiki/Día_de_la_Chupina"}, first: {era: 1, y: 2001}, notes: {"en":"Hooky Day"}},
   ],
-    templates: [
-        {template: "Day of Respect for Cultural Diversity (in lieu)", type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en":"Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
-        {template: "Commemoration of General Don Martín Miguel de Güemes", type: "D", start: {mon: 6, d: 17}, titles: {"en":"Commemoration of General Don Martín Miguel de Güemes", "es":"Paso a la Inmortalidad del General Martín Miguel de Güemes"}, urls: {"en":"https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, inherits: "*DeathAnniv*", notes: {"en":"Martin Miguel de Guemes Day"}},
-    ]
+    templates: {
+        "Day of Respect for Cultural Diversity (in lieu)": { type: "D", start: {mon: 10, d: 7, wkd: [6]}, titles: {"en":"Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
+        "Commemoration of General Don Martín Miguel de Güemes": { type: "D", start: {mon: 6, d: 17}, titles: {"en":"Commemoration of General Don Martín Miguel de Güemes", "es":"Paso a la Inmortalidad del General Martín Miguel de Güemes"}, urls: {"en":"https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, inherits: "*DeathAnniv*", notes: {"en":"Martin Miguel de Guemes Day"}},
+    }
 }

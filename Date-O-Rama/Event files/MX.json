@@ -74,7 +74,7 @@
         {type: "nD", start: {mon: 11, d: 13, thruD: 19, durD: 2, wkd: [7]}, titles: {"en":"El Buen Fin","es":"El Buen Fin","pt":"El Buen Fin"}, urls: {"en":"https://en.wikipedia.org/wiki/El_Buen_Fin"}, emoji: "🗓️"},
         {type: "D", start: {mon: 12, d: 23}, titles: {"en":"Night of the Radishes","es":"Noche de Rábanos","fr":"Nuit des radis","hu":"Retkek éjszakája","lv":"Redīsu nakts","ru":"Ночь редиса"}, first: {era: 1, y: 1897}, urls: {"en":"https://www.daysoftheyear.com/days/night-of-the-radishes/"}, notes: {"en":"Noche de Rábanos\nCreated by Francisco Vasconcelos"}},
     ],
-    templates: [
-        {template: "Change of Federal Government", type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en":"Change of Federal Government", "es":"Transmisión del Poder Ejecutivo Federal"}, urls: {"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
-    ]
+    templates: {
+        "Change of Federal Government": { type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en":"Change of Federal Government", "es":"Transmisión del Poder Ejecutivo Federal"}, urls: {"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
+    }
 }

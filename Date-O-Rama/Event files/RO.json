@@ -152,7 +152,7 @@
         {type: "D", start: {mon: 10, d: 9}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2004}, titles: {"en":"National Day of Commemorating the Holocaust", "ro":"Ziua Naţională de Comemorare a Holocaustului", "he":"היום הלאומי לציון השואה ברומניה", "fr":"Journée nationale de commémoration de l’Holocauste"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Day_of_Commemorating_the_Holocaust", "ro":"https://ro.wikipedia.org/wiki/Ziua_Națională_de_Comemorare_a_Holocaustului", "he":"https://he.wikipedia.org/wiki/היום_הלאומי_לציון_השואה_ברומניה", "fr":"https://fr.wikipedia.org/wiki/Journée_nationale_de_commémoration_de_l%27Holocauste"}},
 
    ],
-    templates: [
-       {template: "Public Sector Holiday", type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en":"Public Sector Holiday"}},
-   ]
+    templates: {
+        "Public Sector Holiday": { type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en":"Public Sector Holiday"}},
+    }
 }

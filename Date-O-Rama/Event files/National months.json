@@ -394,7 +394,7 @@
         {type: "M", start: {mon: 9}, titles: {"en":"Responsible Dog Ownership Month"}, urls: {"en":"https://nationaltoday.com/responsible-dog-ownership-month/"}},
         {type: "nD", start: {mon: 9, d: 12}, end: {mon: 10, d: 12}, titles: {"en":"National Drive Electric Month"}, urls: {"en":"https://driveelectricmonth.org/"}, first: {era: 1, y: 2025}, emoji: "⚡", notes: {"en":"Created by Plug In America"}},
     ],
-    templates: [
-        {template: "Natl Guide Dog Month", type: "M", start: {mon: 9}, titles: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
-    ]
+    templates: {
+        "Natl Guide Dog Month": { type: "M", start: {mon: 9}, titles: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
+    }
 }

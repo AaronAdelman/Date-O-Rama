@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 12, d: 25}, titles: {en: "Dudeistmas"}},
         {type: "D", start: {d: 9}, titles: {en: "Saint Marty’s Day"}},
     ],
-    templates: [
-        {template: "Thankiesgiving", type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {en: "Thankiesgiving"}},
-    ]
+    templates: {
+        "Thankiesgiving": { type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {en: "Thankiesgiving"}},
+    }
 }

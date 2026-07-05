@@ -188,17 +188,17 @@
         ]},
 
     ],
-    templates: [
-        {template: "Apostle Day", type: "D", start: {mon: 1, d: 5}, titles: {"en":"Apostle Day"}, notes: {"en":"Whollyday"}},
-        {template: "Sloth Day", type: "D", start: {mon: 1, d: 5}, titles: {"en":"Sloth Day"}, notes: {"en":"Whollyday"}, emoji: "🦥"},
-        {template: "Flux Day", type: "D", start: {mon: 1, d: 5}, titles: {"en":"Flux Day"}, notes: {"en":"Whollyday"}},
-        {template: "Eye Day", type: "D", start: {mon: 1, d: 5}, titles: {"en":"Eye Day"}, notes: {"en":"Whollyday"}, emoji: "👁"},
-        {template: "Mad Hatter Day", type: "D", start: {mon: 6, d: 10}, titles: {"en":"Mad Hatter Day"}, inherits: "EDH"},
-        {template: "Creation Day", type: "D", start: {mon: 5, d: 25}, titles: {"en":"Creation Day"}},
-        {template: "Unknown Saints Day", type: "D", start: {mon: 6, d: 23}, titles: {"en":"Unknown Saints Day"}},
-        {template: "St. Scrivener’s Day", type: "D", start: {mon: 8, d: 30}, titles: {"en":"Saint Scrivener’s Day"}},
-        {template: "Eris’s Birthday", type: "D", start: {mon: 9, d: 9}, titles: {"en":"Eris’s Birthday"}, inherits: "*BDay*"},
-        {template: "EDH", type: "D", start: {mon: 1, d: 1}, urls: {"en":"https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}},
-        {template: "HDH", type: "D", start: {mon: 1, d: 1}, urls: {"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
-    ]
+    templates: {
+        "Apostle Day": { type: "D", start: {mon: 1, d: 5}, titles: {"en":"Apostle Day"}, notes: {"en":"Whollyday"}},
+        "Sloth Day": { type: "D", start: {mon: 1, d: 5}, titles: {"en":"Sloth Day"}, notes: {"en":"Whollyday"}, emoji: "🦥"},
+        "Flux Day": { type: "D", start: {mon: 1, d: 5}, titles: {"en":"Flux Day"}, notes: {"en":"Whollyday"}},
+        "Eye Day": { type: "D", start: {mon: 1, d: 5}, titles: {"en":"Eye Day"}, notes: {"en":"Whollyday"}, emoji: "👁"},
+        "Mad Hatter Day": { type: "D", start: {mon: 6, d: 10}, titles: {"en":"Mad Hatter Day"}, inherits: "EDH"},
+        "Creation Day": { type: "D", start: {mon: 5, d: 25}, titles: {"en":"Creation Day"}},
+        "Unknown Saints Day": { type: "D", start: {mon: 6, d: 23}, titles: {"en":"Unknown Saints Day"}},
+        "St. Scrivener’s Day": { type: "D", start: {mon: 8, d: 30}, titles: {"en":"Saint Scrivener’s Day"}},
+        "Eris’s Birthday": { type: "D", start: {mon: 9, d: 9}, titles: {"en":"Eris’s Birthday"}, inherits: "*BDay*"},
+        "EDH": { type: "D", start: {mon: 1, d: 1}, urls: {"en":"https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}},
+        "HDH": { type: "D", start: {mon: 1, d: 1}, urls: {"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
+    }
 }

@@ -93,7 +93,7 @@
         {type: "D", start: {mon: 3, d: 25}, titles: {"en":"National Gay Pride Day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 2, d: 20}, titles: {"en":"Trans Men and Transmasculine Day"}, first: {era: 1, y: 2015}},
     ],
-    templates: [
-        {template: "Frevo Day", type: "D", start: {mon: 2, d: 9}, titles: {"en":"Frevo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/frevo-day/"}, notes: {"en":"Created by Osvaldo da Silva Almeida"}},
-    ]
+    templates: {
+        "Frevo Day": { type: "D", start: {mon: 2, d: 9}, titles: {"en":"Frevo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/frevo-day/"}, notes: {"en":"Created by Osvaldo da Silva Almeida"}},
+    }
 }

@@ -33,18 +33,18 @@
             {type: "M", start: {mon: 10}, titles: {"en":"Month of the Pig", "he":"חודש החזיר"}, inherits: "*Pig*"},
         ]},
     ],
-    templates: [
-        {template: "*Rooster*", type: "D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
-        {template: "*Snake*", type: "D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
-        {template: "*Tiger*", type: "D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
-        {template: "*Dog*", type: "D", start: {}, emoji: "🐕", inherits: "*Astrology*"},
-        {template: "*Dragon*", type: "D", start: {}, emoji: "🐉", inherits: "*Astrology*"},
-        {template: "*Goat*", type: "D", start: {}, emoji: "🐐", inherits: "*Astrology*"},
-        {template: "*Horse*", type: "D", start: {}, emoji: "🐎", inherits: "*Astrology*"},
-        {template: "*Monkey*", type: "D", start: {}, emoji: "🐒", inherits: "*Astrology*"},
-        {template: "*Ox*", type: "D", start: {}, emoji: "🐂", inherits: "*Astrology*"},
-        {template: "*Pig*", type: "D", start: {}, emoji: "🐖", inherits: "*Astrology*"},
-        {template: "*Rabbit*", type: "D", start: {}, emoji: "🐇", inherits: "*Astrology*"},
-        {template: "*Rat*", type: "D", start: {}, emoji: "🐀"},
-    ]
+    templates: {
+        "*Rooster*": { type: "D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
+        "*Snake*": { type: "D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
+        "*Tiger*": { type: "D", start: {}, emoji: "🐅", inherits: "*Astrology*"},
+        "*Dog*": { type: "D", start: {}, emoji: "🐕", inherits: "*Astrology*"},
+        "*Dragon*": { type: "D", start: {}, emoji: "🐉", inherits: "*Astrology*"},
+        "*Goat*": { type: "D", start: {}, emoji: "🐐", inherits: "*Astrology*"},
+        "*Horse*": { type: "D", start: {}, emoji: "🐎", inherits: "*Astrology*"},
+        "*Monkey*": { type: "D", start: {}, emoji: "🐒", inherits: "*Astrology*"},
+        "*Ox*": { type: "D", start: {}, emoji: "🐂", inherits: "*Astrology*"},
+        "*Pig*": { type: "D", start: {}, emoji: "🐖", inherits: "*Astrology*"},
+        "*Rabbit*": { type: "D", start: {}, emoji: "🐇", inherits: "*Astrology*"},
+        "*Rat*": { type: "D", start: {}, emoji: "🐀"},
+    }
 }

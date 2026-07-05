@@ -67,7 +67,7 @@
         {type: "D", start: {mon: 10, d: 11}, inherits: "Natl Coming Out Day", first: {era: 1, y: 1988}},
         {type: "M", start: {mon: 5}, inherits: "LGBTQ History Month", first: {era: 1, y: 2014}},
     ],
-    templates: [
-        {template: "Natl Rat Catcher’s Day", type: "D", start: {mon: 7, d: 22}, titles: {"en":"National Rat Catcher’s Day"}, urls: {"en":"https://nationaltoday.com/national-rat-catchers-day/"}, notes: {"en":"Ratcatcher’s Day"}, emoji: "🪈"},
-    ]
+    templates: {
+        "Natl Rat Catcher’s Day": { type: "D", start: {mon: 7, d: 22}, titles: {"en":"National Rat Catcher’s Day"}, urls: {"en":"https://nationaltoday.com/national-rat-catchers-day/"}, notes: {"en":"Ratcatcher’s Day"}, emoji: "🪈"},
+    }
 }

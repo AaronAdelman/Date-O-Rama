@@ -60,7 +60,7 @@
             {type: "Y", start: {yDiv: 19, yRem: 0}, titles: {"en":"Váḥid", "ar":"واحد", "he":"ואחִד"}},
         ]},
     ],
-    templates: [
-        {template: "19 Day Feast", type: "D", start: {mon: 1, d: 1}, titles: {"ar":"الضيافة التسع عشرية","en":"Nineteen Day Feast","fa":"ضیافت نوزده‌روزه","nl":"Negentiendaagsfeest","pt":"Festa de Dezenove Dias","sv":"Nittondedagsfesten","zh":"十九日灵宴会"}, urls: {"en":"https://en.wikipedia.org/wiki/Nineteen_Day_Feast"}},
-    ]
+    templates: {
+        "19 Day Feast": { type: "D", start: {mon: 1, d: 1}, titles: {"ar":"الضيافة التسع عشرية","en":"Nineteen Day Feast","fa":"ضیافت نوزده‌روزه","nl":"Negentiendaagsfeest","pt":"Festa de Dezenove Dias","sv":"Nittondedagsfesten","zh":"十九日灵宴会"}, urls: {"en":"https://en.wikipedia.org/wiki/Nineteen_Day_Feast"}},
+    }
 }

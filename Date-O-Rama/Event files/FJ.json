@@ -31,8 +31,8 @@
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ],
-    templates: [
-        {template: "Ratu Sukuna Day", type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en":"Ratu Sukuna Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
-        {template: "Girmit Day", type: "D", start: {mon: 5, d: 11, thruD: 17, wkd: [2]}, titles: {"en":"Girmit Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"}, inherits: "Indian Arrival Day"},
-    ]
+    templates: {
+        "Ratu Sukuna Day": { type: "D", start: {mon: 5, wkd: [2], nth: -1}, titles: {"en":"Ratu Sukuna Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
+        "Girmit Day": { type: "D", start: {mon: 5, d: 11, thruD: 17, wkd: [2]}, titles: {"en":"Girmit Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"}, inherits: "Indian Arrival Day"},
+    }
 }

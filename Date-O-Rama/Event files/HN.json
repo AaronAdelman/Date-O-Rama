@@ -49,10 +49,10 @@
         {type: "D", start: {mon: 10, d: 6, thruD: 7, wkd: [6]}, inherits: "Army Day (in lieu)", first: {era: 1, y: 2023}, last: {era: 1, y: 2024}},
         {type: "D", start: {mon: 10, d: 3}, inherits: "Army Day (in lieu)", first: {era: 1, y: 2024}},
     ],
-    templates: [
-        {template: "Discovery of America Day (in lieu)", type: "D", start: {era: 1, y: 2022, mon: 10, d: 6}, titles: {"en":"Discovery of America Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
-        {template: "Francisco Morazán’s Day (in lieu)", type: "D", start: {mon: 10, d: 5}, titles: {"en":"Francisco Morazán’s Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/francisco-morazans-day/"}, inherits: "*BDay*"},
-        {template: "Army Day (in lieu)", type: "D", start: {mon: 10, d: 21}, titles: {"en":"Army Day (in lieu)"}, inherits: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, notes: {"en":"National Army Day"}},
-        {template: "Pan American Day (in lieu)", type: "D", start: {mon: 4, d: 18}, titles: {"en":"Pan American Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/americas-day/"}},
-    ]
+    templates: {
+        "Discovery of America Day (in lieu)": { type: "D", start: {era: 1, y: 2022, mon: 10, d: 6}, titles: {"en":"Discovery of America Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
+        "Francisco Morazán’s Day (in lieu)": { type: "D", start: {mon: 10, d: 5}, titles: {"en":"Francisco Morazán’s Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/francisco-morazans-day/"}, inherits: "*BDay*"},
+        "Army Day (in lieu)": { type: "D", start: {mon: 10, d: 21}, titles: {"en":"Army Day (in lieu)"}, inherits: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, notes: {"en":"National Army Day"}},
+        "Pan American Day (in lieu)": { type: "D", start: {mon: 4, d: 18}, titles: {"en":"Pan American Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/americas-day/"}},
+    }
 }

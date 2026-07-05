@@ -31,8 +31,8 @@
         {type: "D", start: {mon: 10, d: 29}, titles: {"az":"Milli Pişik Günü","bn":"জাতীয় বিড়াল দিবস","en":"National Cat Day","fr":"Journée nationale du chat","hy":"Կատուների ազգային օր","id":"Hari Kucing","it":"Festa del gatto","ja":"猫の日","pl":"Światowy Dzień Kota","sat":"ᱡᱟᱹᱛᱤᱭᱟᱹᱨᱤ ᱯᱩᱥᱤ ᱢᱟᱦᱟᱸ","th":"วันแมวแห่งชาติ","uk":"Національний день кота","ur":"بلیوں کا قومی دن","vi":"Ngày loài mèo","zh":"貓節日"}, urls: {"en":"https://www.nationalcatday.com/"}, first: {era: 1, y: 2005}, emoji: "🐈"},
         {type: "D", start: {mon: 12, d: 2}, inherits: "Natl Mutt Day", first: {era: 1, y: 2005}},
     ],
-    templates: [
-        {template: "Natl Mutt Day", type: "D", start: {mon: 7, d: 31}, titles: {"en":"National Mutt Day", "he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
-        {template: "​National Wildlife Day", type: "D", start: {mon: 9, d: 4}, titles: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
-    ]
+    templates: {
+        "Natl Mutt Day": { type: "D", start: {mon: 7, d: 31}, titles: {"en":"National Mutt Day", "he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
+        "​National Wildlife Day": { type: "D", start: {mon: 9, d: 4}, titles: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
+    }
 }
