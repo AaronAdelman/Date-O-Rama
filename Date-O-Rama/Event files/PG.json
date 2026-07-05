@@ -36,6 +36,6 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Police Remembrance Day", first: {era: 1, y: 1989}},
     ],
     templates: {
-        "Natl Remembrance Day (in lieu)": { type: "D", start: {mon: 2, d: 24, wkd: [6]}, titles: {"en":"National Remembrance Day (in lieu)"}},
+        "Natl Remembrance Day (in lieu)": {type: "D", start: {mon: 2, d: 24, wkd: [6]}, titles: {"en":"National Remembrance Day (in lieu)"}},
     }
 }

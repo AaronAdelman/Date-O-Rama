@@ -34,6 +34,6 @@
         {type: "D", start: {mon: 11, d: 25}, locations: {"en":"Vaitupu"}, titles: {"en":"Happy Day", "tvl":"Te Aso Fiafia"}},
     ],
     templates: {
-        "Tuvalu Day Holiday": { type: "D", start: {mon: 10, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/tuvalu-day"}, titles: {"en":"Tuvalu Day Holiday"}, inherits: "Independence Day"},
+        "Tuvalu Day Holiday": {type: "D", start: {mon: 10, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/tuvalu-day"}, titles: {"en":"Tuvalu Day Holiday"}, inherits: "Independence Day"},
     }
 }

@@ -50,6 +50,6 @@
         {type: "D", start: {mon: 7, d: 1}, titles: {"bg":"Джулай","de":"July Morning","en":"July Morning","hy":"Ջուլայ","ka":"ივლისის დილა","mk":"Џулај Морнинг","nb":"July Morning","ru":"Джулай","sv":"July Morning"}, first: {era: 1, y: 1970}, urls: {"en":"https://www.daysoftheyear.com/days/july-morning/"}, emoji: "🌅"},
     ],
     templates: {
-        "Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)": { type: "D", start: {mon: 5, d: 26, wkd: [2, 3, 4]}, titles: {"en":"Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"}, notes: {"en":"Bulgarian Education and Culture and Slavonic Literature Day (in lieu)\nDay of Bulgarian Education and Culture and Slavonic Literature (in lieu)"}},
+        "Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)": {type: "D", start: {mon: 5, d: 26, wkd: [2, 3, 4]}, titles: {"en":"Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"}, notes: {"en":"Bulgarian Education and Culture and Slavonic Literature Day (in lieu)\nDay of Bulgarian Education and Culture and Slavonic Literature (in lieu)"}},
     }
 }

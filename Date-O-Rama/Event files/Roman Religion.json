@@ -216,10 +216,10 @@
         {type: "D", start: {mon: 12, d: 25}, titles: {"en":"Dies Natalis Solis Invicti"}, notes: {"en":"Birthday of the Unconquered Sun"}},
     ],
     templates: {
-        "Nones": { type: "D", start: {mon: 1, d: 5}, titles: {"ar":"ننس","de":"Nones","en":"Nones","it":"Nones"}},
-        "Ides": { type: "D", start: {mon: 1, d: 13}, titles: {"de":"Ides","en":"Ides","ja":"アイデス"}},
-        "Tubilustrium": { type: "D", start: {mon: 3, d: 23}, titles: {"bg":"Тубилустриум","ca":"Tubilustrium","de":"Tubilustrium","en":"Tubilustrium","es":"Tubilustrium","fr":"Tubilustrium","it":"Tubilustrium","lt":"Tubilustriumijos","nl":"Tubilustrium","pl":"Tubilustrium","uk":"Тубілюстрії"}, notes: {"en":"Purification of the Trumpets"}},
-        "Lucaria": { type: "D", start: {mon: 7, d: 19}, titles: {"bg":"Лукария","br":"Lucaria","ca":"Lucària","de":"Lucarien","en":"Lucaria","es":"Lucarias","fr":"Lucaria","it":"Lucarie","la":"Lucaria","lt":"Lukarijos","uk":"Лукарії"}},
-        "Dies Ater": { type: "D", start: {mon: 7, d: 18}, titles: {"en":"Dies Ater"}},
+        "Nones": {type: "D", start: {mon: 1, d: 5}, titles: {"ar":"ننس","de":"Nones","en":"Nones","it":"Nones"}},
+        "Ides": {type: "D", start: {mon: 1, d: 13}, titles: {"de":"Ides","en":"Ides","ja":"アイデス"}},
+        "Tubilustrium": {type: "D", start: {mon: 3, d: 23}, titles: {"bg":"Тубилустриум","ca":"Tubilustrium","de":"Tubilustrium","en":"Tubilustrium","es":"Tubilustrium","fr":"Tubilustrium","it":"Tubilustrium","lt":"Tubilustriumijos","nl":"Tubilustrium","pl":"Tubilustrium","uk":"Тубілюстрії"}, notes: {"en":"Purification of the Trumpets"}},
+        "Lucaria": {type: "D", start: {mon: 7, d: 19}, titles: {"bg":"Лукария","br":"Lucaria","ca":"Lucària","de":"Lucarien","en":"Lucaria","es":"Lucarias","fr":"Lucaria","it":"Lucarie","la":"Lucaria","lt":"Lukarijos","uk":"Лукарії"}},
+        "Dies Ater": {type: "D", start: {mon: 7, d: 18}, titles: {"en":"Dies Ater"}},
     }
 }

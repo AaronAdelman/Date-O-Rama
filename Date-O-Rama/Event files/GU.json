@@ -27,6 +27,6 @@
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
     ],
     templates: {
-        "Liberation Day (day off)": { type: "D", start: {mon: 3, d: 3}, titles: {"en":"Liberation Day (day off)"}, urls: {"en":"https://en.wikipedia.org/wiki/Liberation_Day"}},
+        "Liberation Day (day off)": {type: "D", start: {mon: 3, d: 3}, titles: {"en":"Liberation Day (day off)"}, urls: {"en":"https://en.wikipedia.org/wiki/Liberation_Day"}},
     }
 }

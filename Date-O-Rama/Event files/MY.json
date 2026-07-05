@@ -67,8 +67,8 @@
         {type: "D", start: {mon: 1, d: 8}, titles: {"en":"World Typing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-typing-day/"}, first: {era: 1, y: 2011}, emoji: "⌨️", notes: {"en":"International Typing Day\nTyping Day"}},
     ],
     templates: {
-        "Birthday of the Sultan of Kelantan": { type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, titles: {"en":"Birthday of the Sultan of Kelantan", "ms":"Hari Keputeraan Sultan Kelantan"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, inherits: "*BDay*"},
-        "Birthday of the Governor of Sabah": { type: "D", start: {mon: 10, wkd: [7], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/sabah/birthday-of-the-governor-of-sabah"}, titles: {"en":"Birthday of the Governor of Sabah", "ms":"Hari Jadi Yang di-Pertua Negeri Sabah"}, inherits: "*BDay*"},
-        "Gawai Dayak (in lieu)": { type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, titles: {"en":"Gawai Dayak (in lieu)"}, inherits: "Gawai Dayak"},
+        "Birthday of the Sultan of Kelantan": {type: "nD", start: {mon: 9, d: 29}, end: {mon: 9, d: 30}, titles: {"en":"Birthday of the Sultan of Kelantan", "ms":"Hari Keputeraan Sultan Kelantan"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/kelantan/birthday-of-the-sultan-of-kelantan"}, inherits: "*BDay*"},
+        "Birthday of the Governor of Sabah": {type: "D", start: {mon: 10, wkd: [7], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/sabah/birthday-of-the-governor-of-sabah"}, titles: {"en":"Birthday of the Governor of Sabah", "ms":"Hari Jadi Yang di-Pertua Negeri Sabah"}, inherits: "*BDay*"},
+        "Gawai Dayak (in lieu)": {type: "D", start: {mon: 6, d: 3, wkd: [2, 3]}, titles: {"en":"Gawai Dayak (in lieu)"}, inherits: "Gawai Dayak"},
     }
 }

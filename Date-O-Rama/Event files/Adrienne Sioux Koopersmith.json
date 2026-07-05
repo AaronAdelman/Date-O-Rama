@@ -35,6 +35,6 @@
         {type: "D", start: {mon: 11, d: 2, thruD: 8, wkd: [3]}, inherits: "Skeptics Day International", first: {era: 1, y: 1997}},
     ],
     templates: {
-        "Skeptics Day International": { type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי", "en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, emoji: "🫤"},
+        "Skeptics Day International": {type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי", "en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, emoji: "🫤"},
     }
 }

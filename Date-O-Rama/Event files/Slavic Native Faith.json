@@ -18,6 +18,6 @@
         {type: "D", start: {mon: 11, d: 10}, titles: {"en":"Day of Mokosh", "ru":"Мокоши день"}},
     ],
     templates: {
-        "Festival of Veles": { type: "D", start: {mon: 1, d: 2}, titles: {"be":"Аўлас","bg":"Власовден","cs":"Památka svatého Blažeje","en":"Festival of Veles","pl":"Święto Welesa","ru":"Власьев день","sr":"Власовдан","uk":"День святого Власа"}, notes: {"en":"Veles’ Day"}},
+        "Festival of Veles": {type: "D", start: {mon: 1, d: 2}, titles: {"be":"Аўлас","bg":"Власовден","cs":"Památka svatého Blažeje","en":"Festival of Veles","pl":"Święto Welesa","ru":"Власьев день","sr":"Власовдан","uk":"День святого Власа"}, notes: {"en":"Veles’ Day"}},
     }
 }

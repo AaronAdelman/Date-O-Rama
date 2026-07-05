@@ -46,6 +46,6 @@
         {type: "D", start: {mon: 5, d: 28}, inherits: "Border Guards Day", first: {era: 1, y: 1919}},
    ],
     templates: {
-        "Public Holiday (bridge day)": { type: "D", start: {mon: 5, d: 8, wkd: [2]}, titles: {"en":"Public Holiday (bridge day)"}},
+        "Public Holiday (bridge day)": {type: "D", start: {mon: 5, d: 8, wkd: [2]}, titles: {"en":"Public Holiday (bridge day)"}},
     }
 }

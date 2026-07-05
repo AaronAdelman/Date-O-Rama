@@ -41,7 +41,7 @@
         {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 22}, titles: {"en":"Third Month Fair", "zh_CN":"三月街"}, urls: {"en":"https://en.wikipedia.org/wiki/Third_Month_Fair"}},
     ],
     templates: {
-        "Dragon Boat Festival Holiday": { type: "D", start: {mon: 6, d: 23}, titles: {"en":"Dragon Boat Festival Holiday"}},
-        "Spring Festival Holiday": { type: "D", start: {mon: -1, d: -1}, titles: {"en":"Spring Festival Holiday"}},
+        "Dragon Boat Festival Holiday": {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Dragon Boat Festival Holiday"}},
+        "Spring Festival Holiday": {type: "D", start: {mon: -1, d: -1}, titles: {"en":"Spring Festival Holiday"}},
     }
 }

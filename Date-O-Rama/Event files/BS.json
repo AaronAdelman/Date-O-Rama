@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 1, d: 1}, inherits: "Junkanoo", first: {era: 1, y: 1709}},
    ],
     templates: {
-        "Junkanoo": { type: "D", start: {mon: 12, d: 26}, titles: {"da":"Junkanoo","de":"Junkanoo Parade","en":"Junkanoo","es":"Junkanoo","et":"Junkanoo","fr":"Junkanoo","ig":"Junkanoo","it":"Junkanoo","nl":"Junkanoo","nn":"Junkanoo","pl":"Junkanoo","sv":"Junkanoo","tr":"Junkanoo"}, urls: {"en":"https://nationaltoday.com/junkanoo/"}},
+        "Junkanoo": {type: "D", start: {mon: 12, d: 26}, titles: {"da":"Junkanoo","de":"Junkanoo Parade","en":"Junkanoo","es":"Junkanoo","et":"Junkanoo","fr":"Junkanoo","ig":"Junkanoo","it":"Junkanoo","nl":"Junkanoo","nn":"Junkanoo","pl":"Junkanoo","sv":"Junkanoo","tr":"Junkanoo"}, urls: {"en":"https://nationaltoday.com/junkanoo/"}},
     }
 }

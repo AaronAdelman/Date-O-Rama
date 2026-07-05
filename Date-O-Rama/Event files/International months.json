@@ -193,7 +193,6 @@
         {type: "M", start: {mon: 4}, titles: {"en":"Workplace Conflict Awareness Month"}, urls: {"en":"https://nationaltoday.com/workplace-conflict-awareness-month/"}},
         {type: "M", start: {mon: 4}, titles: {"en":"World Autism Month", "he":"חודש המודעות העולמי לאוטיזם"}, urls: {"en":"https://nationaltoday.com/world-autism-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 4}, titles: {"en":"Worldwide Bereaved Spouses Awareness Month"}, urls: {"en":"https://nationaltoday.com/worldwide-bereaved-spouses-awareness-month/"}},
-        {type: "M", start: {mon: 4}, titles: {"en":"Poetic Earth Month"}, urls: {"en":"https://poeticearthmonth.com/"}, first: {era: 1, y: 2019}, notes: {"en":"Created by Tweetspeak Poetry"}},
         {type: "M", start: {mon: 4}, titles: {"en":"Limb Loss and Limb Difference Awareness Month"}, urls: {"en":"https://40years.amputee-coalition.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2010}, notes: {"en":"LLLDAM\nCreated by the Amputee Coalition"}},
         {type: "M", start: {mon: 4}, titles: {"en":"Summer Tire Changeover Month"}, urls: {"en":"https://www.daysoftheyear.com/days/summer-tire-changeover-month/"}, emoji: "🛞"},
         {type: "M", start: {mon: 4}, titles: {"en":"Global Volunteer Month"}, urls: {"en":"https://www.pointsoflight.org/global-volunteer-month/"}, emoji: "✻", first: {era: 1, y: 2020}, notes: {"en":"Created by Points of Light"}},

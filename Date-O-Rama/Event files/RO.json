@@ -153,6 +153,6 @@
 
    ],
     templates: {
-        "Public Sector Holiday": { type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en":"Public Sector Holiday"}},
+        "Public Sector Holiday": {type: "D", start: {era: 1, y: 2023, mon: 1, d: 23}, titles: {"en":"Public Sector Holiday"}},
     }
 }

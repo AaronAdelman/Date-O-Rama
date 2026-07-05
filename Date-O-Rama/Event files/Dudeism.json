@@ -32,6 +32,6 @@
         {type: "D", start: {d: 9}, titles: {en: "Saint Marty’s Day"}},
     ],
     templates: {
-        "Thankiesgiving": { type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {en: "Thankiesgiving"}},
+        "Thankiesgiving": {type: "D", start: {mon: 11, wkd: [5], nth: 4}, titles: {en: "Thankiesgiving"}},
     }
 }

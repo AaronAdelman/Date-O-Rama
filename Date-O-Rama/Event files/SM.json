@@ -30,6 +30,6 @@
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
     ],
     templates: {
-        "Investiture of the New Captains Regent": { type: "D", start: {mon: 4, d: 1}, titles: {"en":"Investiture of the Captains Regent"}, notes: {"en":"Investiture of the New Captains Regent"}, urls: {"en":"https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},
+        "Investiture of the New Captains Regent": {type: "D", start: {mon: 4, d: 1}, titles: {"en":"Investiture of the Captains Regent"}, notes: {"en":"Investiture of the New Captains Regent"}, urls: {"en":"https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},
     }
 }

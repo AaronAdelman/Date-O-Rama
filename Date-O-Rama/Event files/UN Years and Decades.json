@@ -161,6 +161,6 @@
         {titles: {"en":"World Refugee Year"}, type: "D", start: {era: 1, y: 1959, mon: 6, d: 1}, end: {era: 1, y: 1960, mon: 5, d: 31}},
     ],
     templates: {
-        "Intl Year of Peace and Trust": { type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
+        "Intl Year of Peace and Trust": {type: "Y", start: {era: 1, y: 2025}, titles: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
     }
 }

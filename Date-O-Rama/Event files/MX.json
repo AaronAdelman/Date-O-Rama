@@ -75,6 +75,6 @@
         {type: "D", start: {mon: 12, d: 23}, titles: {"en":"Night of the Radishes","es":"Noche de Rábanos","fr":"Nuit des radis","hu":"Retkek éjszakája","lv":"Redīsu nakts","ru":"Ночь редиса"}, first: {era: 1, y: 1897}, urls: {"en":"https://www.daysoftheyear.com/days/night-of-the-radishes/"}, notes: {"en":"Noche de Rábanos\nCreated by Francisco Vasconcelos"}},
     ],
     templates: {
-        "Change of Federal Government": { type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en":"Change of Federal Government", "es":"Transmisión del Poder Ejecutivo Federal"}, urls: {"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
+        "Change of Federal Government": {type: "D", start: {era: 1, y: 2024, mon: 10, d: 1}, titles: {"en":"Change of Federal Government", "es":"Transmisión del Poder Ejecutivo Federal"}, urls: {"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
     }
 }

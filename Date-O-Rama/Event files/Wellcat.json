@@ -3,7 +3,7 @@
     // Tom and Ruth Roy
     defaultLocale: "en",
     cal: "gre",
-    color: {red: 0.22, green: 0.33, blue: 0.44},
+    color: {name: "teal"},
     emoji: "🐈‍⬛",
     urls: {"en":"https://wellcat.com/pages/holidays"},
     first: {era: 1, y: 1996},
@@ -64,7 +64,7 @@
             {type: "D", start: {mon: 7, d: 6}, titles: {"en":"Take Your Webmaster to Lunch Day"}},
             {type: "D", start: {mon: 7, d: 10}, titles: {"en":"Don’t Step on a Bee Day"}},
             {type: "D", start: {mon: 7, d: 13}, titles: {"en":"Embrace Your Geekness Day"}},
-            {type: "D", start: {mon: 7, d: 15}, titles: {"en":"Be a Dork Day"}},
+            {type: "D", start: {mon: 7, d: 15}, titles: {"en":"Be a Dork Day"}, notes: {"en":"National Be a Dork Day"}},
             {type: "D", start: {mon: 7, d: 23}, titles: {"en":"Hot Enough For Ya Day"}},
             {type: "D", start: {mon: 7, d: 27}, titles: {"en":"Take Your Houseplants for a Walk Day"}},
             {type: "D", start: {mon: 8, d: 7}, titles: {"en":"Particularly Preposterous Packaging Day"}},

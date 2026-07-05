@@ -49,7 +49,7 @@
         {type: "M", start: {mon: 9}, urls: {"en":"https://nationaltoday.com/irish-heart-month/"}, titles: {"en":"Irish Heart Month"}, inherits: "*MedAwareness*", emoji: "🫀"},
         {type: "D", start: {mon: 10, d: 15}, titles: {"en":"Shine a Light Night"}, urls: {"en":"https://www.daysoftheyear.com/days/shine-a-light-night/"}, first: {era: 1, y: 2012}, notes: {"en":"Created by Focus Ireland"}},
         {type: "D", start: {mon: 12, d: 5}, inherits: "Light Up a Life Day", first: {era: 1, y: 1984}},
-        {type: "nD", start: {mon: 7, d: 11, thruD: 17, wkd: [2], durD: 14}, titles: {"en":"Galway International Arts Festival"}, urls: {"en":"https://www.daysoftheyear.com/days/galway-international-arts-festival/"}, first: {era: 1, y: 1978}, emoji: "🎭🎨"},
+        {type: "nD", start: {mon: 7, d: 11, thruD: 17, wkd: [2], durD: 14}, titles: {"en":"Galway International Arts Festival","es":"Festival Internacional de Arte de Galway","ja":"ゴールウェイ芸術祭","pl":"Galway International Arts Festival"}, urls: {"en":"https://www.daysoftheyear.com/days/galway-international-arts-festival/"}, first: {era: 1, y: 1978}, emoji: "🎭🎨"},
         {type: "D", start: {mon: 2, d: 29}, titles: {"en":"Bachelor’s Day"}, notes: {"en":"This observance feels socially outdated and awkward."}, urls: {"en":"https://en.wikipedia.org/wiki/Bachelor%27s_Day_(tradition)"}},
         {type: "D", start: {mon: 3, wkd: [5], nth: 1}, inherits: "World Book Day UK & Ireland", first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 1, d: 24, thruD: 30, wkd: [1]}, inherits: "Holocaust Memorial Day", titles: {"en":"International Day of Remembrance for the Victims of the Holocaust", "ga":"An Lá Idirnáisiúnta Cuimhneacháin ar íospartaigh an Uileloiscthe"}},
@@ -57,6 +57,6 @@
         {type: "D", start: {mon: 5, d: 22}, titles: {"en":"Irish Marriage Referendum"}, first: {era: 1, y: 2015}},
    ],
     templates: {
-        "Imbolc (in lieu)": { type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en":"Imbolc (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en":"Saint Brigid’s Day (in lieu)"}},
+        "Imbolc (in lieu)": {type: "D", start: {mon: 2, d: 2, thru: 3, wkd: [2]}, titles: {"en":"Imbolc (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"}, notes: {"en":"Saint Brigid’s Day (in lieu)"}},
     }
 }

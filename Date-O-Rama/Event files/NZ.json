@@ -31,6 +31,8 @@
         {type: "D", start: {era: 1, y: 2023, mon: 7, d: 14}, inherits: "Matariki"},
         {type: "D", start: {era: 1, y: 2024, mon: 6, d: 28}, inherits: "Matariki"},
         {type: "D", start: {era: 1, y: 2025, mon: 6, d: 20}, inherits: "Matariki"},
+        {type: "D", start: {era: 1, y: 2026, mon: 7, d: 10}, inherits: "Matariki"},
+        {type: "D", start: {era: 1, y: 2027, mon: 6, d: 25}, inherits: "Matariki"},
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 9, wkd: [2], nth: 4}, titles: {"en":"South Canterbury Day"}, urls: {"en":"https://www.officeholidays.com/holidays/new-zealand/canterbury/south-canterbury-day"}},
         {type: "D", start: {mon: 10, d: 19, thruD: 25, wkd: [6]}, titles: {"en":"Hawke’s Bay Anniversary Day"}, urls: {"en":"https://nationaltoday.com/hawkes-bay-anniversary-day/"}},
@@ -116,8 +118,8 @@
         {type: "nD", start: {mon: 3, d: 8, thruD: 14, wkd: [7], durD: 2}, titles: {"de":"Pasifika Festival","en":"Pasifika Festival","pl":"Pasifika Festival"}, urls: {"en":"https://www.aucklandnz.com/pasifika"}, first: {era: 1, y: 1993}},
     ],
     templates: {
-        "Techweek": { type: "W", start: {mon: 5, fullWk: 3, d1OfWk: 2}, titles: {"en":"Techweek"}, urls: {"en":"https://techweek.co.nz/"}, emoji: "🥽"},
-        "Matariki": { type: "D", start: {mon: 7, d: 14}, urls: {"en":"https://www.daysoftheyear.com/days/matariki/"}, titles: {"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"}, emoji: "🌌"},
-        "Otago Anniversary Day (in lieu)": { type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, titles: {"en":"Otago Anniversary Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/otago-anniversary-day/"}},
+        "Techweek": {type: "W", start: {mon: 5, fullWk: 3, d1OfWk: 2}, titles: {"en":"Techweek"}, urls: {"en":"https://techweek.co.nz/"}, emoji: "🥽"},
+        "Matariki": {type: "D", start: {mon: 7, d: 14}, urls: {"en":"https://www.daysoftheyear.com/days/matariki/"}, titles: {"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"}, emoji: "🌌"},
+        "Otago Anniversary Day (in lieu)": {type: "D", start: {mon: 3, d: 20, thruD: 22, wkd: [2]}, titles: {"en":"Otago Anniversary Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/otago-anniversary-day/"}},
     }
 }

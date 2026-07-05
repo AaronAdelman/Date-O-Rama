@@ -75,6 +75,6 @@
         {type: "D", start: {mon: 12, d: 17}, titles: {"en":"Simón Bolívar Memorial Day", "es":"Aniversario de la Muerte de Libertador Simón Bolívar"}},
     ],
     templates: {
-        "Holy Week Holiday": { type: "D", start: {mon: 4, d: 3}, titles: {"en":"Holy Week Holiday"}},
+        "Holy Week Holiday": {type: "D", start: {mon: 4, d: 3}, titles: {"en":"Holy Week Holiday"}},
     }
 }

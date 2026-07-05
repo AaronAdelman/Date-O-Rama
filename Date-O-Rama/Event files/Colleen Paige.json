@@ -32,7 +32,7 @@
         {type: "D", start: {mon: 12, d: 2}, inherits: "Natl Mutt Day", first: {era: 1, y: 2005}},
     ],
     templates: {
-        "Natl Mutt Day": { type: "D", start: {mon: 7, d: 31}, titles: {"en":"National Mutt Day", "he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
-        "​National Wildlife Day": { type: "D", start: {mon: 9, d: 4}, titles: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
+        "Natl Mutt Day": {type: "D", start: {mon: 7, d: 31}, titles: {"en":"National Mutt Day", "he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
+        "​National Wildlife Day": {type: "D", start: {mon: 9, d: 4}, titles: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
     }
 }

@@ -49,6 +49,6 @@
         {type: "D", start: {mon: 9, d: 29}, titles: {"en":"Olive Festival"}, urls: {"en":"https://www.daysoftheyear.com/days/olive-festival-in-albania/"}, first: {era: 1, y: 2018}, emoji: "🫒"},
     ],
     templates: {
-        "Tirana International Film Festival": { type: "W", start: {mon: 9, fullWk: -1, d1OfWk: 7}, titles: {"en":"Tirana International Film Festival"}, notes: {"en":"TIFF"}, urls: {"en":"https://tiranafilmfest.org/"}, emoji: "📽️"}
+        "Tirana International Film Festival": {type: "W", start: {mon: 9, fullWk: -1, d1OfWk: 7}, titles: {"en":"Tirana International Film Festival"}, notes: {"en":"TIFF"}, urls: {"en":"https://tiranafilmfest.org/"}, emoji: "📽️"}
     }
 }

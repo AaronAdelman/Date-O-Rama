@@ -33,6 +33,6 @@
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
     ],
     templates: {
-        "Statehood Day Holiday": { type: "D", start: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, titles: {"en":"Statehood Day Holiday"}},
+        "Statehood Day Holiday": {type: "D", start: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, titles: {"en":"Statehood Day Holiday"}},
     }
 }

@@ -19,8 +19,7 @@
         {type: "D", start: {mon: 4, d: 11, wkd: [3]}, inherits: "Natl Health Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/kiribati/national-health-day"}},
         {type: "D", start: {era: 1, y: 2023, mon: 6, d: 23}, inherits: "Police Natl Day"},
         {type: "D", start: {mon: 6, d: 20, thruD: 23, wkd: [2]}, inherits: "Police Natl Day", first: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 7, d: 8, wkd: [5, 6]}, inherits: "Gospel Day"},
-        {type: "D", start: {mon: 7, d: 10, wkd: [2, 4, 5]}, inherits: "Gospel Day"},
+        {type: "D", start: {mon: 7, d: 10}, inherits: "Gospel Day"},
         {type: "D", start: {mon: 7, d: 8, wkd: [3]}, inherits: "Natl Culture and Senior Citizens Day"},
         {type: "D", start: {mon: 7, d: 9, wkd: [6]}, inherits: "Natl Culture and Senior Citizens Day"},
         {type: "D", start: {mon: 7, d: 11, wkd: [2, 3, 5]}, inherits: "Natl Culture and Senior Citizens Day"},
@@ -42,10 +41,10 @@
         {titles: {"en":"Unimwane Day"}, type: "D", start: {mon: 7, d: 15}, urls: {"en":"https://nationaltoday.com/unimwane-day/"}, emoji: "👴"},
     ],
     templates: {
-        "Education Day": { type: "D", start: {mon: 10, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/education-day"}, titles: {"en":"Education Day"}},
-        "Education Day (in lieu)": { type: "D", start: {mon: 10, d: 5}, inherits: "Education Day", titles: {"en":"Education Day (in lieu)"}},
-        "Natl Culture and Senior Citizens Day": { type: "D", start: {mon: 7, d: 11}, urls: {"en":"https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, titles: {"en":"National Culture and Senior Citizens Day"}, emoji: "👴👵"},
-        "Natl Health Day (in lieu)": { type: "D", start: {mon: 4, d: 9, wkd: [6]}, inherits: "Natl Health Day", titles: {"en":"National Health Day (in lieu)"}},
-        "Police Natl Day": { type: "D", titles: {"en":"Police National Day"}, start: {mon: 6, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/police-national-day"}, inherits: "Police Day"},
+        "Education Day": {type: "D", start: {mon: 10, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/education-day"}, titles: {"en":"Education Day"}},
+        "Education Day (in lieu)": {type: "D", start: {mon: 10, d: 5}, inherits: "Education Day", titles: {"en":"Education Day (in lieu)"}},
+        "Natl Culture and Senior Citizens Day": {type: "D", start: {mon: 7, d: 11}, urls: {"en":"https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, titles: {"en":"National Culture and Senior Citizens Day"}, emoji: "👴👵"},
+        "Natl Health Day (in lieu)": {type: "D", start: {mon: 4, d: 9, wkd: [6]}, inherits: "Natl Health Day", titles: {"en":"National Health Day (in lieu)"}},
+        "Police Natl Day": {type: "D", titles: {"en":"Police National Day"}, start: {mon: 6, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/police-national-day"}, inherits: "Police Day"},
     }
 }

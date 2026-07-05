@@ -393,8 +393,9 @@
         {type: "M", start: {mon: 9}, titles: {"en":"Pain Awareness Month"}, urls: {"en":"https://uspainfoundation.org/painawarenessmonth/"}, first: {era: 1, y: 2001}, inherits: "*MedAwareness*", notes: {"en":"Created by Partners for Understanding Pain"}},
         {type: "M", start: {mon: 9}, titles: {"en":"Responsible Dog Ownership Month"}, urls: {"en":"https://nationaltoday.com/responsible-dog-ownership-month/"}},
         {type: "nD", start: {mon: 9, d: 12}, end: {mon: 10, d: 12}, titles: {"en":"National Drive Electric Month"}, urls: {"en":"https://driveelectricmonth.org/"}, first: {era: 1, y: 2025}, emoji: "⚡", notes: {"en":"Created by Plug In America"}},
+        {type: "M", start: {mon: 4}, titles: {"en":"Poetic Earth Month"}, urls: {"en":"https://poeticearthmonth.com/"}, first: {era: 1, y: 2019}, notes: {"en":"Created by Tweetspeak Poetry"}},
     ],
     templates: {
-        "Natl Guide Dog Month": { type: "M", start: {mon: 9}, titles: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
+        "Natl Guide Dog Month": {type: "M", start: {mon: 9}, titles: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
     }
 }
