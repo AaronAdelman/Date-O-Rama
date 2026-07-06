@@ -630,7 +630,7 @@
             {subtitles: {"he":"נידה", "en":"Niddah"}, start: 2640, end: 2711},
         ], cRange1stNo: 2},
     ],
-    templates: {
+    tpls: {
         "*חנוכה*": {type: "D", start: {mon: 3, d: 25}, urls: {"en":"https://www.ou.org/holidays/category/chanukah/"}, emoji: "🕎"},
         "*סוכות*": {type: "D", start: {mon: 1, d: 15}, urls: {"en":"https://www.ou.org/holidays/category/sukkot/"}, emoji: "🍋🌴"},
         "*פסח*": {type: "D", start: {mon: 8, d: 15}, urls: {"en":"https://www.ou.org/holidays/category/passover/"}, emoji: "🫓"},

@@ -197,7 +197,7 @@
         ]},
         
     ],
-    templates: {
+    tpls: {
         "Natl Valentine Shopping Reminder Day": {type: "D", start: {mon: 2, d: 6},titles: {"en":"National Valentine Shopping Reminder Day"},  urls: {"en":"https://www.daysoftheyear.com/days/national-valentine-shopping-reminder-day/"}, emoji: "❤️🛍️"},
         "Go Caroling Day": {type: "D", start: {mon: 12, d: 20}, titles: {"en":"Go Caroling Day"}, urls: {"en":"https://www.daysoftheyear.com/days/go-caroling-day/"}, emoji: "📖🔔"},
     }

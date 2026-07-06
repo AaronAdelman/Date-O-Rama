@@ -33,7 +33,7 @@
             {type: "M", start: {mon: 10}, titles: {"en":"Month of the Pig", "he":"חודש החזיר"}, inherits: "*Pig*"},
         ]},
     ],
-    templates: {
+    tpls: {
         "*Rooster*": {type: "D", start: {}, emoji: "🐓", inherits: "*Astrology*"},
         "*Snake*": {type: "D", start: {}, emoji: "🐍", inherits: "*Astrology*"},
         "*Tiger*": {type: "D", start: {}, emoji: "🐅", inherits: "*Astrology*"},

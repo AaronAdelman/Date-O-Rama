@@ -188,7 +188,7 @@
         ]},
 
     ],
-    templates: {
+    tpls: {
         "Apostle Day": {type: "D", start: {mon: 1, d: 5}, titles: {"en":"Apostle Day"}, notes: {"en":"Whollyday"}},
         "Sloth Day": {type: "D", start: {mon: 1, d: 5}, titles: {"en":"Sloth Day"}, notes: {"en":"Whollyday"}, emoji: "🦥"},
         "Flux Day": {type: "D", start: {mon: 1, d: 5}, titles: {"en":"Flux Day"}, notes: {"en":"Whollyday"}},

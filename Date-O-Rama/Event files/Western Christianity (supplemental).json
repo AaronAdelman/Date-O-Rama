@@ -100,7 +100,7 @@
             {type: "D", start: {d: 24}, titles: {"en":"“Talk to Us” Day"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, notes: {"en":"Talk to Us"}, first: {era: 1, y: 2016}},
         ]},
     ],
-    templates: {
+    tpls: {
         "Natl Forgiveness Week": {type: "nD", start: {mon: 6, d: 16}, end: {mon: 6, d: 22}, titles: {"en":"National Forgiveness Week"}, notes: {"en":"NFW\nNational Reconciliation and Forgiveness Week"}, urls: {"en":"https://forgivestories.com/nfw/"}, emoji: "🖤"},
     }
 }

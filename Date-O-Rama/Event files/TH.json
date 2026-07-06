@@ -126,7 +126,7 @@
         {type: "nD", start: {mon: 2, d: 1, thruD: 7, wkd: [6], durD: 3}, titles: {"en":"Chiang Mai Flower Festival", "th":"มหกรรม ไม้ ดอกไม้ ประดับ จังหวัด เชียงใหม่"}, urls: {"en":"https://www.daysoftheyear.com/days/chiang-mai-flower-festival/"}, emoji: "💐", first: {era: 1, y: 1970}},
         {type: "D", start: {mon: 9, wkd: [7], nth: 3}, titles: {"en":"Beach Cleanup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/beach-cleanup-day-in-thailand/"}, first: {era: 1, y: 1999}},
     ],
-    templates: {
+    tpls: {
         "Chakri Day": {type: "D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en":"https://nationaltoday.com/chakri-day/"}, titles: {"en":"Chakri Day", "th":"วันจักรี", "he":"יום הזיכרון של צ׳אקרי"}, notes: {"en":"Chakri Memorial Day"}},
         "King Bhumibol’s Birthday": {type: "D", start: {mon: 12, d: 6, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en":"https://nationaltoday.com/king-bhumibols-birthday/"}, titles: {"en":"King Bhumibol’s Birthday", "he":"יום הולדתו של פומיפון המלך", "th":"ภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร"}, inherits: "King’s Birthday", notes: {"en":"King Bhumibol Adulyadej’s Birthday"}},
         "Royal Ploughing Ceremony": {type: "D", start: {mon: 5, d: 17}, urls: {"en":"https://www.officeholidays.com/holidays/thailand/royal-ploughing-ceremony"}, titles: {"ar":"مهرجان المحراث","en":"Royal Ploughing Ceremony","fr":"Chrat Preah Nongkal", "he":"טקס החרישה המלכותי","id":"Upacara Musim Tanam Kerajaan","km":"ពិធីច្រូតកាត់","my":"လယ်ထွန်မင်္ဂလာ","pa":"ਸ਼ਾਹੀ ਹਲ ਵਾਹੁਣ ਦੀ ਰਸਮ","pnb":"شاہی ہݪ چلاݨ دی تقریب","ru":"Церемония Первой борозды","ta":"பொன்னேர் உழுதல்","te":"రాయల్ ప్లోవింగ్ వేడుక","th":"แรกนาขวัญ","uk":"Королівська оранка","ur":"شاہی ہل چلانے کی تقریب","zh":"春耕节"}, notes: {"en":"Farmer’s Day", "he":"יום האיכר"}},

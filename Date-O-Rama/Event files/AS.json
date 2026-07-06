@@ -28,7 +28,7 @@
         
         {inherits: "Children’s Day", type: "D", start: {misc: "E", offsetD: 39}},
    ],
-    templates: {
+    tpls: {
         "Manu’a Cession Day (in lieu)": {type: "D", start: {mon: 7, d: 15, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, titles: {"en":"Manu’a Cession Day (in lieu)"}},
     }
 }

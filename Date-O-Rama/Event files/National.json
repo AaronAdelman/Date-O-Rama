@@ -2574,7 +2574,7 @@
             {type: "D", start: {wkd: [6]}, inherits: "Natl Take Your Dog to Work Day", first: {era: 1, y: 1999}},
         ]},
     ],
-    templates: {
+    tpls: {
         "Natl Blame Someone Else Day": {type: "D", start: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"National Blame Someone Else Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blame-someone-else-day/"}, emoji: "👉👈", notes: {"en":"Observance of this observance may get you in trouble.  Don’t blame us.\nCreated by Anne Moeller"}},
         "Forefathers’ Day": {type: "D", start: {mon: 12, d: 22}, titles: {"ar":"يوم الأجداد","en":"Forefathers’ Day"}, urls: {"en":"https://www.daysoftheyear.com/days/forefathers-day/"}, notes: {"en":"Old Colony Day"}},
         "I Love My State Parks Week": {type: "nD", start: {era: 1, y: 2022, mon: 5, d: 8, durD: 8}, titles: {"en":"I Love My State Parks Week"}, urls: {"en":"https://www.daysoftheyear.com/days/i-love-my-state-parks-week/"}, emoji: "🏞️", notes: {"en":"Created by the National Association for State Park Foundations (NASPF)"}},

@@ -48,7 +48,7 @@ struct ASAEventsFile: Codable {
         case emoji
         case urls
         case eventSpecifications    = "events"
-        case templateSpecifications = "templates"
+        case templateSpecifications = "tpls"
         case firstDateSpecification = "first"
     }
 } // struct ASAEventsFile

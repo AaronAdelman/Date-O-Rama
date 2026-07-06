@@ -5,7 +5,7 @@
     color: {red: 0.5, green: 0.5, blue: 0.5},
     events: [
     ],
-    templates: {
+    tpls: {
         "*Astrology*": {type: "M", start: {}, urls: {"en":"http://skepdic.com/astrology.html"}},
         "*BDay*": {type: "D", start: {}, emoji: "🎂"},
         "*Chocolate*": {type: "D", start: {mon: 2, d: 9}, urls: {"en":"https://en.wikipedia.org/wiki/World_Chocolate_Day"}, emoji: "🍫"},

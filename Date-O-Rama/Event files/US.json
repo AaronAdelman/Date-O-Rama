@@ -779,7 +779,7 @@
         ]},
         
     ],
-    templates: {
+    tpls: {
         "Natl Teacher Day": {type: "D", start: {mon: 5, d: 3, thruD: 9, wkd: [3]}, titles: {"en":"National Teacher Day"}, notes: {"en":"National Teacher Appreciation Day\nNational Teachers’ Day"}, urls: {"en":"https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, inherits: "Teacher’s Day", emoji: "👨‍🏫👩‍🏫", notes: {"en":"Created by Eleanor Roosevelt"}},
         "Confederate Memorial Day": {titles: {"br":"Confederate Memorial Day","en":"Confederate Memorial Day","fr":"Fête du mémorial des confédérés"}, type: "D", start: {mon: 4, wkd: [2], nth: 4}, urls: {"en":"https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}},
         "Intl Dadaism Month": {type: "D", start: {mon: 2, d: 4}, urls: {"en":"https://www.npr.org/templates/story/story.php?storyId=5077635"}, titles: {"en":"International Dadaism Month","eo":"Internacia Dadaisma Monato", "he":"חודש הדאדאיזם הבינלאומי"}},

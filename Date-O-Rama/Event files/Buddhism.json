@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 9, d: 12}, titles: {"en":"Mindfulness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mindfulness-day/"}, notes: {"en":"Created by Wisdom Publications"}},
         {type: "D", start: {misc: "full1", mon: 1}, titles: {"en":"Mahayana New Year"}, urls: {"en":"https://www.daysoftheyear.com/days/mahayana-new-year/"}},
     ],
-    templates: {
+    tpls: {
         "Parinirvana Day": {type: "D", start: {mon: 2, d: 15}, urls: {"en":"https://www.daysoftheyear.com/days/parinirvana-day/"}, titles: {"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"}, notes: {"en":"Nirvana Day"}},
     }
 }

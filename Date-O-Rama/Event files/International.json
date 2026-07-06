@@ -1956,7 +1956,7 @@
         ]},
         
     ],
-    templates: {
+    tpls: {
         "Bonza Bottler Day": {type: "D", start: {mon: 1, d: 1}, urls: {"en":"https://www.daysoftheyear.com/days/bonza-bottler-day/"}, titles: {"en":"Bonza Bottler Day"}, emoji: "🎉"},
         "Digital Learning Day": {type: "D", start: {mon: 2, wkd: [5], nth: -1}, titles: {"en":"Digital Learning Day"}, notes: {"en":"DLDay\nCreated by the Alliance for Excellent Education"}, urls: {"en":"https://all4ed.org/digital-learning-day/"}, emoji: "👨‍💻👩‍💻"},
         "Get to Know Your Customers Day": {type: "D", start: {mon: 1, wkd: [5], nth: 3}, titles: {"en":"Get to Know Your Customers Day"}, urls: {"en":"https://www.daysoftheyear.com/days/get-to-know-your-customers-day-2/"}, emoji: "🤝"},

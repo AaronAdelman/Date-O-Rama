@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 7, d: 4}, inherits: "Holocaust Memorial Day", titles: {"en":"Commemoration Day of the Victims of the Genocide Against the Jewish People", "lv":"Ebreju tautas genocīda upuru piemiņas diena"}},
 
    ],
-    templates: {
+    tpls: {
         "Restoration of Independence Day (bridge day)": {type: "D", start: {mon: 5, d: 5}, titles: {"en":"Restoration of Independence Day (bridge day)"}, inherits: "Restoration of Independence Day"},
         "Restoration of Independence Day (in lieu)": {type: "D", start: {mon: 5, d: 5, thruD: 6, wkd: [2]}, titles: {"en":"Restoration of Independence Day (in lieu)", "he":"יום שיקום העצמאות (במקומו)"}, inherits: "Restoration of Independence Day", urls: {"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
     }

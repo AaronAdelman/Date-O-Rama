@@ -40,7 +40,7 @@
         
         {titles: {"en":"Unimwane Day"}, type: "D", start: {mon: 7, d: 15}, urls: {"en":"https://nationaltoday.com/unimwane-day/"}, emoji: "👴"},
     ],
-    templates: {
+    tpls: {
         "Education Day": {type: "D", start: {mon: 10, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/education-day"}, titles: {"en":"Education Day"}},
         "Education Day (in lieu)": {type: "D", start: {mon: 10, d: 5}, inherits: "Education Day", titles: {"en":"Education Day (in lieu)"}},
         "Natl Culture and Senior Citizens Day": {type: "D", start: {mon: 7, d: 11}, urls: {"en":"https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, titles: {"en":"National Culture and Senior Citizens Day"}, emoji: "👴👵"},

@@ -31,7 +31,7 @@
         {type: "D", start: {mon: 1, d: 4, wkd: [7]}, first: {era: 1, y: 2025}, inherits: "People’s Effort Day"},
         {type: "M", start: {mon: 5}, inherits: "LGBTQ History Month", first: {era: 1, y: 2022}},
     ],
-    templates: {
+    tpls: {
         "People’s Effort Day": {type: "D", start: {mon: 1, d: 3}, titles: {"en":"People’s Effort Day"}, urls: {"en":"https://www.officeholidays.com/holidays/cuba/peoples-effort-day"}},
     }
 }

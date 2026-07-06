@@ -429,7 +429,7 @@
             {type: "D", start: {wkd: [4]}, titles: {"en":"Roast Dinner Day"}, urls: {"en":"https://www.daysoftheyear.com/days/roast-dinner-day/"}, emoji: "🍠🥩"},
         ]},
     ],
-    templates: {
+    tpls: {
         "Natl Bug Busting Day": {type: "D", start: {mon: 6, d: 15}, titles: {"en":"National Bug Busting Day"}, urls: {"en":"https://nationaltoday.com/national-bug-busting-day/"}},
         "Natl Numeracy Day": {type: "D", start: {mon: 5, wkd: [4], d: 15, thruD: 20}, titles: {"en":"National Numeracy Day"}, urls: {"en":"https://www.nationalnumeracy.org.uk/numeracyday"}, emoji: "🔢"},
         "Natl Vegetarian Week": {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 7}, titles: {"en":"National Vegetarian Week"}, urls: {"en":"https://vegsoc.org/national-vegetarian-week/"}, emoji: "🌶", notes: {"en":"Created by the Vegetarian Society"}},

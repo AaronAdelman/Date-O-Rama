@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 4, d: 20}, titles: {"en":"National Look-Alike Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-look-alike-day/"}, notes: {"en":"Look Alike Day\nNational Look Alike Day\nCreated by Jack Etzel"}, first: {era: 1, y: 1980}},
         {type: "D", start: {mon: 4, d: 2}, titles: {"en":"National Ferret Day", "he":"יום החמוס הלאומי"}, first: {era: 1, y: 2014}, urls: {"en":"https://ferret.org/nationalferretday/"}, notes: {"en":"Created by Carol Roche"}},
     ],
-    templates: {
+    tpls: {
         "Fill Our Staplers Day": {type: "D", start: {mon: 3, wkd: [2], nth: 2}, titles: {"en":"Fill Our Staplers Day"}, urls: {"en":"https://dullmensclub.com/event/fill-staplers-day/"}, notes: {"en":"Created by the Dull Men’s Club"}},
     }
 }
