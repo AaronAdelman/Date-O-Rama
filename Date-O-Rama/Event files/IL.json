@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"he":"https://haluzhaivri.org.il/page/36474"}},
         {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Farhud Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en":"https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
-        {type: "D", start: {mon: 7, d: 17}, titles: {"he":"יום הפרגון הבינלאומי", "en":"International Firgun Day"}, urls: {"en":"https://firgunday.firgunator.com/"}},
+        {type: "D", start: {mon: 7, d: 17}, titles: {"en":"International Firgun Day", "he":"יום הפרגון הבינלאומי"}, urls: {"en":"https://firgunday.firgunator.com/"}, first: {era: 1, y: 2014}, notes: {"en":"Created by Made in JLM"}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"he":"יום ויקיפדיה העברית", "en":"Hebrew Wikipedia Day"}, first: {era: 1, y: 2003}, emoji: "🌐"},
     ]
 }

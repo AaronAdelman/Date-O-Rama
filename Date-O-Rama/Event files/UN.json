@@ -286,6 +286,6 @@
         {type: "D", start: {mon: 5, d: 19}, titles: {"en":"World Fair Play Day","es":"Día Mundial del Juego Limpio", "fr":"Journée mondiale du fair-play","pt":"Dia Mundial do Jogo Limpo"}, urls: {"en":"https://www.daysoftheyear.com/days/world-fair-play-day/"}, first: {era: 1, y: 2025}, notes: {"en":"Created by the UN General Assembly"}},
     ],
     templates: {
-        "World Migratory Bird Day": { titles: {"en":"World Migratory Bird Day", "he":"יום הציפורים הנודדות העולמי"}, type: "D", start: {mon: 5, wkd: [7], nth: 2}, urls: {"en":"https://www.daysoftheyear.com/days/world-migratory-bird-day/"}, emoji: "🦆", notes: {"en":"Created by the UN"}},
+        "World Migratory Bird Day": {titles: {"en":"World Migratory Bird Day", "he":"יום הציפורים הנודדות העולמי"}, type: "D", start: {mon: 5, wkd: [7], nth: 2}, urls: {"en":"https://www.daysoftheyear.com/days/world-migratory-bird-day/"}, emoji: "🦆", notes: {"en":"Created by the UN"}},
     }
 }
