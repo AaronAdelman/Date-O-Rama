@@ -7,7 +7,7 @@
     urls: {"en":"https://jacegalloway.wixsite.com/holidays/jaces-holidailys"},
     emoji: "🐶🕶🥳",
     first: {era: 1, y: 2001},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 6}, inherits: "Natl Take Down the Christmas Tree Day"},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en":"One-Liners Day"}, urls: {"en":"https://jacegalloway.wixsite.com/holidays/single-post/2016-1-21-oneliners-day"}, emoji: "🎞️"},
         {type: "D", start: {mon: 2, d: 19}, titles: {"en":"Prevent Plagiarism Day"}, urls: {"en":"https://jacegalloway.wixsite.com/holidays/single-post/2016/02/19/Prevent-Plagiarism-Day"}, first: {era: 1, y: 2015}, emoji: "✍️"},

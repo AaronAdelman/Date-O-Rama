@@ -6,7 +6,7 @@
     color: {red: 0.98, green: 0.83, blue: 0.31},
     urls: {"en":"https://publicholidays.africa/reunion/"},
     first: {era: 1, y: 1946},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

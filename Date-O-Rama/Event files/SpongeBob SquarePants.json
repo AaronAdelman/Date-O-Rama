@@ -5,7 +5,7 @@
     color: {name: "yellow"},
     first: {era: 1, y: 1999},
     urls: {"en":"https://spongebob.fandom.com/wiki/List_of_celebrated_holidays_in_SpongeBob_SquarePants"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 2, d: 15}, titles: {"en":"Annoy Squidward Day"}, notes: {"en":"This observance promotes rude and obnoxious behavior and tells everyone not to watch SpongeBob SquarePants."}, urls: {"en":"https://spongebob.fandom.com/wiki/Annoy_Squidward_Day"}, first: {era: 1, y: 1999}},
         {type: "D", start: {mon: 3, d: 8}, titles: {"en":"Bikini Bottom Annual Free Day"}, urls: {"en":"https://spongebob.fandom.com/wiki/Bikini_Bottom_Annual_Free_Day"}, first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 7, d: 5}, titles: {"en":"Work Without Your Hands Day"}, urls: {"en":"https://www.daysoftheyear.com/days/work-without-your-hands-day/"}},

@@ -4,7 +4,7 @@
     cal: "gre",
     color: {name: "red"},
     "TODO":"Semana Santa",
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, titles: {"en":"Feast of Saint Gregory Nazianzen"}, notes: {"en":"Christmastide (day 9)"}},
         {type: "D", start: {mon: 1, d: 2}, inherits: "St. Basil’s Day", notes: {"en":"Christmastide (day 9)\nFeast of Saint Basil the Great"}},

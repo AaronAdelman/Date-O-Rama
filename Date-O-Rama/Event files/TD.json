@@ -7,7 +7,7 @@
     color: {red: 1.00, green: 0.80, blue: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Chad"},
     first: {era: 1, y: 1960},
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

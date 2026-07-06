@@ -6,7 +6,7 @@
     cal: "chi",
     color: {red: 0.93, green: 0.11, blue: 0.15},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},
-    events: [
+    evts: [
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
         {type: "D", start: {mon: 4, d: 8}, inherits: "Buddha’s Birthday", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}},
         {type: "D", start: {mon: 4, d: 9, wkd: [2]}, inherits: "Buddha’s Birthday (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/macau/buddha-purnima"}},

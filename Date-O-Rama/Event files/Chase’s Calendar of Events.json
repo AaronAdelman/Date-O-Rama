@@ -5,7 +5,7 @@
     cal: "gre",
     color: {red: 0.19, green: 0.39, blue: 0.57},
     first: {era: 1, y: 1957},
-    events: [
+    evts: [
         {type: "D", start: {mon: 8, d: 8}, titles: {"en":"Wear Your Mother’s Jewelry Day"}, urls: {"en":"https://mymothersjewelrybox.com/wear-your-mothers-jewelry-day/"}, first: {era: 1, y: 2017}, emoji: "💍", notes: {"en":"Created by Barbara J. Feldman of My Mother’s Jewelry Box"}},
         {type: "M", start: {mon: 11}, titles: {"en":"Banana Pudding Lovers Month"}, urls: {"en":"https://www.daysoftheyear.com/days/banana-pudding-lovers-month/"}, emoji: "🍌", first: {era: 1, y: 2011}, notes: {"en":"Created by Rodgers’ Puddings"}},
         {type: "M", start: {mon: 2}, titles: {"en":"An Affair to Remember Month"}, urls: {"en":"https://www.daysoftheyear.com/days/an-affair-to-remember-month/"}, first: {era: 1, y: 1996}, notes: {"en":"This observance was inspired by the movie An Affair to Remember."}},

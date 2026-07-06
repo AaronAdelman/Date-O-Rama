@@ -5,7 +5,7 @@
     cal: "gre",
     color: {red: 0.00, green: 0.57, blue: 0.78},
     first: {era: 1, y: 1814},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

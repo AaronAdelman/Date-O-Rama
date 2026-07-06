@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {red: 0.2, green: 0.3, blue: 0.1},
     first: {era: 1, y: 1989},
-    events: [
+    evts: [
         {type: "D", start: {mon: 2, d: 20}, titles: {"en":"Robonzaa"}, notes: {"en":"From Futurama"}, urls: {"en":"https://futurama.fandom.com/wiki/Robanukah"}},
         {type: "D", start: {mon: 3, d: 20}, titles: {"en":"Robomadan"}, notes: {"en":"From Futurama"}, urls: {"en":"https://futurama.fandom.com/wiki/Robanukah"}},
         {type: "nD", start: {mon: 4, d: 20}, end: {mon: 5, d: 3}, titles: {"en":"Robanukah"}, notes: {"en":"From Futurama"}, urls: {"en":"https://futurama.fandom.com/wiki/Robanukah"}},

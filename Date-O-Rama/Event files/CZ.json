@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.19, blue: 0.53},
     first: {era: 1, y: 1918},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Czech_Republic"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, titles: {"en":"Restoration Day", "cs":"Den obnovy samostatného českého státu"}, inherits: "Independence Day", first: {era: 1, y: 1993}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

@@ -7,7 +7,7 @@
     color: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1975},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mozambique"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 3}, inherits: "Heroes’ Day", urls: {"en":"https://nationaltoday.com/mozambican-heroes-day/"}},
         {type: "D", start: {mon: 4, d: 7}, urls: {"en":"https://nationaltoday.com/mozambican-national-womens-day/"}, inherits: "Women’s Day"},

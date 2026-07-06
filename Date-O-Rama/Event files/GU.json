@@ -6,7 +6,7 @@
     color: {red: 0.10, green: 0.22, blue: 0.36},
     first: {era: 1, y: 1898},
     urls: {"en":"https://en.wikipedia.org/wiki/Holidays_with_paid_time_off_in_the_United_States#Guam"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, wkd: [2], nth: 3}, inherits: "Martin Luther King, Jr. Day"},
         {type: "D", start: {mon: 3, wkd: [2], nth: 1}, urls: {"en":"https://nationaltoday.com/guam-history-and-chamorro-heritage-day/"}, titles: {"en":"History and Chamorro Heritage Day"}, notes: {"en":"Discovery Day"}, first: {era: 1, y: 1970}},

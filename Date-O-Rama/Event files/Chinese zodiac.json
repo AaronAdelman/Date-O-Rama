@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "chi",
     color: {red: 0.87, green: 0.16, blue: 0.06},
-    events: [
+    evts: [
         {type: "nY", start: {}, end: {}, nonoverlappingSubEvents: [
             {type: "Y", start: {yDiv: 12, yRem: 1}, titles: {"en":"Year of the Rat", "he":"שנת החולדה"}, inherits: "*Rat*"},
             {type: "Y", start: {yDiv: 12, yRem: 2}, titles: {"en":"Year of the Ox", "he":"שנת השור"}, inherits: "*Ox*"},

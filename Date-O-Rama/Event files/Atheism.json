@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.95, green: 0.87, blue: 0.72},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 29}, titles: {"en":"Freethinkers Day"}, first: {era: 1, y: 1990}, urls: {"en":"https://www.daysoftheyear.com/days/freethinkers-day/"}, notes: {"en":"Created by The Truth Seeker Magazine"}},
         {type: "D", start: {mon: 10, d: 12}, titles: {"en":"National Freethought Day"}, notes: {"en":"Freethought Day"}, first: {era: 1, y: 1997}, urls: {"en":"https://www.daysoftheyear.com/days/national-freethought-day/"}},
         {type: "D", start: {mon: 12, d: 23}, titles: {"en":"HumanLight", "he":"חג האור האנושי"}, first: {era: 1, y: 2001}, urls: {"en":"https://humanlight.org/"}, emoji: "🕯"},

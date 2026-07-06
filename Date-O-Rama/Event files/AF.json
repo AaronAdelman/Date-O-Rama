@@ -7,7 +7,7 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 1, y: 1919},
     urls: {"en":"https://en.wikipedia.org/wiki/Afghanistan"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 2, d: 15}, inherits: "Liberation Day", first: {era: 1, y: 1989}, urls: {"en":"https://nationaltoday.com/liberation-day-afghanistan/"}},
         {type: "D", start: {misc: "Mar"}, inherits: "Nowruz", urls: {"en":"https://nationaltoday.com/afghanistan-day/"}},
         {type: "D", start: {mon: 4, d: 28}, titles: {"ar":"يوم نصر المجاهدين","en":"Mujahideen Victory Day","fa":"سالروز پیروزی مجاهدین","nb":"Mujahedins seiersdag", "ps":"د مجاهدينو د بريا ورځ"}, inherits: "Victory Day", urls: {"en":"https://en.wikipedia.org/wiki/Mujahideen_Victory_Day"}},

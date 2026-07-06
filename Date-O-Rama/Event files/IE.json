@@ -6,7 +6,7 @@
     color: {red: 0.09, green: 0.61, blue: 0.38},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland"},
     first: {era: 1, y: 1922},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 1}, inherits: "Imbolc", urls: {"en":"https://www.daysoftheyear.com/days/st-brigids-day/"}, first: {era: 1, y: 2023}},
         {type: "D", start: {mon: 2, d: 2, thruD: 3, wkd: [2]}, inherits: "Imbolc (in lieu)", first: {era: 1, y: 2023}},

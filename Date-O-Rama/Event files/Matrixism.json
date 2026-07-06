@@ -3,7 +3,7 @@
     cal: "gre",
     color: {red: 0.6, green: 0.1, blue: 0.1},
     first: {era: 1, y: 2004},
-    events: [
+    evts: [
         {type: "D", start: {mon: 4, d: 19}, inherits: "Bicycle Day"},
         {type: "D", start: {mon: 11, d: 22}, titles: {"en":"Day of Remembrance and Reflection"}},
     ]

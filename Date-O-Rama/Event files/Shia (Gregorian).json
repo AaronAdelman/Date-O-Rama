@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "green"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 7, d: 11}, titles: {"en":"Imamat Day", "ur":"یوم الامامہ", "bn":"ইমামত দিবস"}, urls: {"en":"https://en.wikipedia.org/wiki/Imamat_Day"},
         }
     ]

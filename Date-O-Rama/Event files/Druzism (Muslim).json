@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "hiq*",
     color: {red: 0.21, green: 0.49, blue: 0.31},
-    events: [
+    evts: [
         {inherits: "Eid al-Adha", type: "nD", start: {mon: 12, d: 10}, end: {mon: 12, d: 13}},
         ]
     }

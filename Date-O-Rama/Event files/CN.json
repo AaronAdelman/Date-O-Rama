@@ -7,7 +7,7 @@
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_China"},
     first: {era: 1, y: 1949},
-    events: [
+    evts: [
         {type: "D", start: {misc: "Mar", offsetD: 15}, inherits: "Tomb-Sweeping Day"},
 
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},

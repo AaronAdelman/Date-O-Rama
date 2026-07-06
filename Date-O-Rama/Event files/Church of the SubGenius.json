@@ -4,7 +4,7 @@
     cal: "gre",
     color: {name: "gray"},
     first: {era: 1, y: 1979},
-    events: [
+    evts: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 1}, titles: {"en":"Saint Jesus Christ"}, notes: {"en":"Feast of the Human Sacrifice"}},
             {type: "D", start: {mon: 1, d: 2}, titles: {"en":"Failure of Will Day"}},

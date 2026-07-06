@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {name: "purple"},
     first: {era: 1, y: 2005},
-    events: [
+    evts: [
         {type: "D", start: {mon: 5, d: 2}, titles: {"en":"Sam Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 1, d: 24}, titles: {"en":"Dean Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 9, d: 13}, inherits: "Supernatural Day", first: {era: 1, y: 2018}},

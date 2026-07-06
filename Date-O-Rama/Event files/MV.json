@@ -6,7 +6,7 @@
     color: {red: 0.78, green: 0.06, blue: 0.18},
     first: {era: 1, y: 1965},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {era: 1, y: 2026, mon: 2, d: 5}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}},
         {type: "D", start: {era: 1, y: 2025, mon: 2, d: 6}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}},

@@ -7,7 +7,7 @@
     "TODO":"Public holidays on the Muslim calendar?",
     first: {era: 1, y: 1976},
     urls: {"en":"https://publicholidays.africa/western-sahara/"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 11}, titles: {"en":"Independence Manifesto Day"}, inherits: "Proclamation of Independence Day", urls: {"en":"https://publicholidays.africa/western-sahara/independence-manifesto-day/"}, first: {era: 1, y: 1944}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

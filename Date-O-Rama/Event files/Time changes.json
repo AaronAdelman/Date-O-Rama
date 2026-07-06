@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "tz*",
     color: {red: 0.46, green: 0.84, blue: 1.00},
-    events: [
+    evts: [
         {titles: {"en":""}, type: "pt", start: {misc: "tChg"}, emoji: "⏰"},
         ]
     }

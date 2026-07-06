@@ -7,7 +7,7 @@
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Turkey"},
     first: {era: 1, y: 1923},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 4, d: 23}, titles: {"ar":"يوم السيادة الوطنية ويوم الطفل (تركيا)","az":"Milli Suverenlik və Uşaq Bayramı","de":"Ulusal Egemenlik ve Çocuk Bayramı","diq":"Roşanê Hakimiyetê Mılli u Qıci","el":"Ημέρα Εθνικής Κυριαρχίας και Ημέρα του Παιδιού","en":"National Sovereignty and Children’s Day","es":"Día Nacional de la Soberanía y la Infancia","fr":"Journée de la souveraineté nationale et des enfants","lt":"Nacionalinio suvereniteto bei vaikų diena","pl":"Święto niepodległości i dzień dziecka w Turcji","ru":"День национальной независимости и детей Турции","sq":"Dita e Sovranitetit Kombëtar dhe e Fëmijëve","sr":"Дан националног суверенитета и деце","tr":"23 Nisan Ulusal Egemenlik ve Çocuk Bayramı","uk":"День національної незалежності та дітей Туреччини","uz":"Turkiya Milliy Mustaqillik va Bolalar kuni"}, urls: {"en":"https://www.daysoftheyear.com/days/national-sovereignty-and-childrens-day/"}, first: {era: 1, y: 1922}, emoji: "👦👧"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/turkey/labour-day"}, titles: {"en":"Labour and Solidarity Day", "tr":"Emek ve Dayanışma Günü"}},

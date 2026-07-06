@@ -7,7 +7,7 @@
     color: {red: 1.00, green: 0.80, blue: 0.00},
     first: {era: 1, y: 1948},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Myanmar"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 4}, inherits: "Independence Day", first: {era: 1, y: 1948}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
         {type: "D", start: {mon: 2, d: 12}, inherits: "Union Day", urls: {"en":"https://nationaltoday.com/union-day/"}, first: {era: 1, y: 1948}},

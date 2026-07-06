@@ -7,7 +7,7 @@
     color: {red: 0.0, green: 0.33, blue: 0.64},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_France"},
     first: {era: 1, y: 1792},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

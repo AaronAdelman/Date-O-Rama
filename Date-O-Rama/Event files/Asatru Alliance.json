@@ -5,7 +5,7 @@
     color: {red: 0.5, green: 0.6, blue: 0.7},
     urls: {"en":"https://www.asatru.org/holidays.php"},
     first: {era: 1, y: 1988},
-    events: [
+    evts: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 1, d: 3}, titles: {"en":"Charming of the Plow"}},
             {type: "D", start: {mon: 1, d: 9}, titles: {"en":"Day of Remembrance for Raud the Strong"}, inherits: "*Remembrance*"},

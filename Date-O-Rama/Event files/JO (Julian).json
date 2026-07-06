@@ -5,7 +5,7 @@
     cal: "jul",
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
     color: {red: 0.85, green: 0.16, blue: 0.11},
-    events: [
+    evts: [
         {type: "D", start: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},

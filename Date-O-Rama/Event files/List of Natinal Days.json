@@ -4,7 +4,7 @@
     cal: "gre",
     color: {red: 0.26, green: 0.86, blue: 0.30},
     urls: {"en":"https://www.listofnationaldays.com/"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 6, d: 12}, titles: {"en":"International Filipino Adobo Day"}, urls: {"en":"https://www.listofnationaldays.com/june-12th-international-adobo-day/"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 6, d: 3}, titles: {"en":"Impersonate Authority Day"}, urls: {"en":"https://www.listofnationaldays.com/impersonate-authority-day/"}},
         {type: "D", start: {mon: 8, d: 23}, titles: {"en":"Hug Your Sweetheart Day"}, urls: {"en":"https://www.listofnationaldays.com/hug-your-sweetheart-day/"}, first: {era: 1, y: 2022}},

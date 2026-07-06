@@ -7,7 +7,7 @@
     color: {red: 0.24, green: 0.52, blue: 0.69},
     first: {era: 1, y: 1968},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Eswatini"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

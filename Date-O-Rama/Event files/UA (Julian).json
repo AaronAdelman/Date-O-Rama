@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.34, blue: 0.72},
     first: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},

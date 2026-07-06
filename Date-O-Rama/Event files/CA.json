@@ -7,7 +7,7 @@
     color: {name: "red"},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Canada"},
     first: {era: 1, y: 1867},
-    events: [
+    evts: [
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 6, wkd: [1], nth: 1}, inherits: "Armed Forces Day", first: {era: 1, y: 2002}},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 2015}},

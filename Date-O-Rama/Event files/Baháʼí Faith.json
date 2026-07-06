@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "badi-s",
     color: {red: 0.96, green: 0.76, blue: 0.79},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "19 Day Feast"},
         {type: "D", start: {mon: 1, d: 1}, titles: {"ar":"نوروز بهائي","cs":"Nou-Rúz","en":"Baháʼí Naw-Rúz","es":"Naw-Rúz","he":"נורוז","id":"Nawrúz","pt":"Naw-Rúz Bahá’í","sv":"Naw-Rúz","zh":"诺露兹节"}, inherits: "Nowruz", urls: {"en":"https://nationaltoday.com/naw-ruz-bahai-new-year/"}, notes: {"he":"נו רוז"}},
         {type: "D", start: {mon: 2, d: 1}, inherits: "19 Day Feast"},

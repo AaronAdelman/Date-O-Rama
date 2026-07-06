@@ -5,7 +5,7 @@
     color: {red: 0.1, green: 0.4, blue: 0.1},
     urls: {"en":"https://muppet.fandom.com/wiki/Character_birthdays"},
     first: {era: 1, y: 1969},
-    events: [
+    evts: [
         {type: "D", start: {mon: 11, d: 10}, titles: {"en":"Sesame Street Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sesame-street-day/"}, first: {era: 1, y: 2009}},
         {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Grouch Day", first: {era: 1, y: 1976}},
         

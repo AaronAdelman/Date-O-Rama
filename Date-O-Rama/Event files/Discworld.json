@@ -5,7 +5,7 @@
     color: {red: 0.19, green: 0.8, blue: 0.15},
     first: {era: 1, y: 2005},
     urls: {"en":"https://discworld.fandom.com/wiki/Discworld_calendar#Roundworld_Common_Years"},
-    events: [
+    evts: [
         {titles: {"en":"Year of the Prawn"}, type: "Y", start: {era: 1, y: 2005}},
         {titles: {"en":"Year of the Signifying Frog"}, type: "Y", start: {era: 1, y: 2006}, emoji: "🐸"},
         {titles: {"en":"Year of the Reversed Ptarmigan"}, type: "Y", start: {era: 1, y: 2007}},

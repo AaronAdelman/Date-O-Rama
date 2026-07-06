@@ -47,7 +47,7 @@ struct ASAEventsFile: Codable {
         case otherCalendarCodes     = "otherCals"
         case emoji
         case urls
-        case eventSpecifications    = "events"
+        case eventSpecifications    = "evts"
         case templateSpecifications = "tpls"
         case firstDateSpecification = "first"
     }

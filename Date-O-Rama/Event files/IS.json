@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.45, blue: 0.81},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iceland"},
     first: {era: 1, y: 1944},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "green"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 2, d: 1}, titles: {"en":"No Hijab Day"}, urls: {"en":"https://exmuslims.org/support-nohijabday-on-february-1st/"}, emoji: "👩"},
         {type: "D", start: {mon: 4, d: 20}, titles: {"ast":"Día de Dibuxar a Mahoma","bn":"এভরিবডি ড্র মোহাম্মদ ডে","de":"Everybody Draw Mohammed Day","en":"Everybody Draw Mohammed Day","es":"Día de Dibujar a Mahoma","fa":"روز همگانی تصویر کشیدن از محمد","fi":"Piirrä Muhammad -päivä","fr":"Everybody Draw Mohammed Day","id":"Hari Setiap Orang Menggambar Muhammad","is":"Allir teikna Múhameð dagurinn","ms":"Hari Setiap Orang Menggambar Muhammad","sh":"Dan kada svatko crta Muhameda","sv":"Everybody Draw Mohammed Day","th":"วันทุกคนวาดมุฮัมมัด","tr":"Everybody Draw Mohammed Day","ur":"ایوری باڈی ڈرا محمد ڈے"}, urls: {"en":"https://en.wikipedia.org/wiki/Everybody_Draw_Mohammed_Day"}, first: {era: 1, y: 2010}},
 

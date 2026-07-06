@@ -7,7 +7,7 @@
     color: {red: 0.98, green: 0.26, blue: 0.23},
     first: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Madagascar"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 3, d: 29}, inherits: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-madagascar/"}},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

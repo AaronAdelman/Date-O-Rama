@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.13, blue: 0.36},
     first: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Costa_Rica"},
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -6}, inherits: "Holy Monday"},
         {type: "D", start: {misc: "E", offsetD: -5}, inherits: "Holy Tuesday"},

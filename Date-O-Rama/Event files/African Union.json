@@ -6,7 +6,7 @@
     emoji: "🌍",
     first: {era: 1, y: 2001},
     urls: {"en":"https://au.int/en/au-holidays"},
-    events: [
+    evts: [
         {type: "D", titles: {"en":"Commemoration of the African Day of Peace and Reconciliation"}, start: {mon: 1, d: 31}, emoji: "☮️"},
         {type: "D", titles: {"en":"African Day of School Feeding"}, start: {mon: 3, d: 1}, emoji: "🥘"},
         {type: "D", titles: {"en":"Africa Environment and Wangari Maathai Day"}, start: {mon: 3, d: 3}, emoji: "🌱"},

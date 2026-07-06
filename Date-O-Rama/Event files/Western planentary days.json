@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.5},
-    events: [
+    evts: [
         {type: "nD", start: {}, nonoverlappingSubEvents: [
             {titles: {"en":"Day of the Sun", "he":"יום השמש"}, type: "D", start: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
             {titles: {"en":"Day of the Moon", "he":"יום הירח"}, type: "D", start: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},

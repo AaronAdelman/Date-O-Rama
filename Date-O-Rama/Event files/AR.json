@@ -7,7 +7,7 @@
     color: {red: 0.42, green: 0.64, blue: 0.89},
     first: {era: 1, y: 1816},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Argentina"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Shrove Monday"},
         {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Carnival Monday", urls: {"en":"https://nationaltoday.com/argentina-carnival/"}},

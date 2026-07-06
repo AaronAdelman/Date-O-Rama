@@ -7,7 +7,7 @@
     color: {red: 1.00, green: 0.70, blue: 0.36},
     first: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Niger"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", start: {mon: 4, d: 24}, titles: {"en":"Concord Day", "fr":"Fête nationale de la Concorde"}, notes: {"en":"National Day of Concorde", "fr":"Journée nationale de la Concorde"}, urls: {"en":"https://www.officeholidays.com/holidays/niger/concord-day"}, first: {era: 1, y: 1995}},

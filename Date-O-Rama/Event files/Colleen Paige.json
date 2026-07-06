@@ -5,7 +5,7 @@
     color: {red: 0.41, green: 0.32, blue: 0.25},
     first: {era: 1, y: 2004},
     urls: {"en":"https://www.colleenpaige.com/"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 2}, titles: {"en":"National Pet Travel Safety Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-travel-safety-day/"}, emoji: "🐈‍⬛🐇🐕"},
         {type: "D", start: {mon: 1, d: 14}, titles: {"en":"National Dress Up Your Pet Day", "he":"יום ״הלבש את חיית המחמד שלך״ הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/dress-up-your-pet-day/"}, first: {era: 1, y: 2009}, emoji: "🐈‍⬛", notes: {"en":"Created by Colleen Paige"}},
         {type: "D", start: {mon: 2, d: 20}, inherits: "Natl Love Your Pet Day", first: {era: 1, y: 2006}},

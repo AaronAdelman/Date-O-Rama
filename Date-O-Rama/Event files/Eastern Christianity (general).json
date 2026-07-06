@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "greOrJul",
     color: {name: "red"},
-    events: [
+    evts: [
         {titles: {"en":"Zacchaeus Sunday"}, notes: {"en":"Sunday of the Canaanite"}, type: "D", start: {misc: "E", offsetD: -77}},
         {titles: {"en":"The Publican and the Pharisee"}, type: "D", start: {misc: "E", offsetD: -70}},
         {titles: {"en":"The Prodigal Son"}, type: "D", start: {misc: "E", offsetD: -63}},

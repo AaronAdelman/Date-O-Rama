@@ -7,7 +7,7 @@
     color: {red: 0.64, green: 0.20, blue: 0.23},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Latvia"},
     first: {era: 1, y: 1918},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

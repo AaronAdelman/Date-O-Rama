@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "hiq*",
     color: {name: "green"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 3, d: 12}, inherits: "Mawlid"},
         {type: "D", start: {mon: 9, d: 29}, inherits: "Laylat al-Qadr"},
     ]

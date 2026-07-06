@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.18, blue: 0.42},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
     first: {era: 1, y: 1992},
-    events: [
+    evts: [
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},

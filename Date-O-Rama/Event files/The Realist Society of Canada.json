@@ -6,7 +6,7 @@
     color: {red: 0.01, green: 0.22, blue: 0.63},
     first: {era: 1, y: 2018},
     urls: {"en":"http://realistsocietyofcanada.com/realism-holidays/"},
-    events: [
+    evts: [
         {type: "nD", start: {mon: 4, d: 26}, end: {mon: 4, d: 28}, titles: {"en":"Self-Aware Universe Day"}, notes: {"en":"SAUD"}},
         {type: "D", start: {mon: 7, d: 8},
           titles: {"en":"There Has Always Been Something Day"},

@@ -6,7 +6,7 @@
     color: {red: 0.38, green: 0.69, blue: 0.88},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sint_Maarten"},
     first: {era: 1, y: 2010},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

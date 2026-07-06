@@ -6,7 +6,7 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Belarus"},
     first: {era: 1, y: 1991},
-    events: [
+    evts: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {titles: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, type: "D", start: {misc: "E", offsetD: 9}, urls: {"en":"https://www.daysoftheyear.com/days/radonitsa/"}, emoji: "🪦", notes: {"en":"Day of Rejoicing\nCommemoration Day"}},

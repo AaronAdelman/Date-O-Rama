@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "green"},
-    events: [
+    evts: [
         {titles: {"en":"International Shia Day"}, type: "D", start: {mon: 6, d: 12}, urls: {"en":"http://internationalshiaday.com"}},
         {titles: {"en":"Muslim Women’s Day"}, type: "D", start: {mon: 3, d: 27}},
         {inherits: "World Hijab Day", type: "D", start: {mon: 2, d: 1}, first: {era: 1, y: 2013}},

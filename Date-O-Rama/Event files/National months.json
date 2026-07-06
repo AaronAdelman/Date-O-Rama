@@ -6,7 +6,7 @@
     emoji: "🇺🇸",
     first: {era: 1, y: 1776},
     "TODO":"Prevent Blindness event calendar?",
-    events: [
+    evts: [
         {type: "M", start: {era: 1, y: 2009, mon: 5}, inherits: "Natl Guide Dog Month"},
         {type: "M", start: {mon: 1}, titles: {"en":"California Restaurant Month"}, urls: {"en":"https://nationaltoday.com/california-restaurant-month/"}},
         {type: "M", start: {mon: 1}, titles: {"en":"National Adopt a Rescued Bird Month"}, urls: {"en":"https://nationaltoday.com/national-adopt-a-rescued-bird-month/"}, emoji: "🐦"},

@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.69, blue: 0.40},
     first: {era: 1, y: 1908},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/bulgaria/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {mon: 3, d: 3}, first: {era: 1, y: 1888}, titles: {"ar":"يوم التحرير","az":"Azadlıq Günü","bg":"Ден на Освобождението на България от османско иго","en":"Liberation Day","es":"Día de la Liberación","it":"Giorno della liberazione della Bulgaria","ru":"День освобождения Болгарии от османского ига","uk":"День визволення Болгарії від османського ярма","zh":"解放日"}, inherits: "Liberation Day", urls: {"en":"https://www.daysoftheyear.com/days/bulgaria-liberation-day/"}, notes: {"en":"Day of Liberation of Bulgaria from the Ottoman Oppression"}},

@@ -7,7 +7,7 @@
     color: {red: 0.94, green: 0.20, blue: 0.25},
     first: {era: 1, y: 1967},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 22}, inherits: "Unity Day", notes: {"en":"National Day of the Republic of Yemen\nUnification Day", "ar":"اليوم الوطني للجمهورية اليمنية"}, urls: {"en":"https://www.officeholidays.com/holidays/yemen/yemen-unification-day"}, first: {era: 1, y: 1990}},

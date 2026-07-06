@@ -7,7 +7,7 @@
     color: {red: 0.75, green: 0.06, blue: 0.24},
     first: {era: 1, y: 1948},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, d: 16}, titles: {"de":"Tag des strahlenden Sterns","el":"Ημέρα του Λαμπερού Αστεριού","en":"Day of the Shining Star","es":"Día de la Estrella Luz","fr":"Jour de l’étoile brillante","id":"Hari Bintang Bersinar","ja":"光明星節","ko":"광명성절","ms":"Hari Bintang Bersinar","pt":"Dia da Estrela Brilhante","ru":"День сияющей звезды","th":"วันแห่งดาวจรัสแสง","uk":"День сяючої зірки","vi":"Tiết Quang Minh Tinh","zh":"光明星节"}, urls: {"en":"https://www.officeholidays.com/holidays/north-korea/birth-day-of-kim-jong-il"}, notes: {"en":"Birthday of Kim Jong Il"}, inherits: "*BDay*", first: {era: 1, y: 1968}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", urls: {"en":"https://www.officeholidays.com/holidays/north-korea/international-womens-day"}},

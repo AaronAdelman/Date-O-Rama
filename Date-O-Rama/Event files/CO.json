@@ -7,7 +7,7 @@
     first: {era: 1, y: 1810},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Colombia"},
     "TODO":"Carnaval de Barranquilla",
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 1, d: 7, thruD: 12, wkd: [2]}, inherits: "Epiphany (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/colombia/epiphany-latin-america"}},

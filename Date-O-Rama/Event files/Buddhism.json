@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "orange"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 12, d: 8}, inherits: "Bodhi Day"},
         {type: "D", start: {misc: "full1", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
         {type: "D", start: {mon: 2, d: 15}, inherits: "Parinirvana Day"},

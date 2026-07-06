@@ -5,7 +5,7 @@
     color: {red: 1.0, green: 1.0, blue: 0.0},
     first: {era: 1, y: 1950},
     urls: {"en":"https://www.peanuts.com/"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 11, d: 26}, titles: {"en":"Good Grief Day"}, urls: {"en":"https://www.daysoftheyear.com/days/good-grief-day/"}, notes: {"en":"Charles Schulz’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 10, d: 2}, titles: {"en":"National Charlie Brown Day"}, first: {era: 1, y: 1950}, urls: {"en":"https://www.peanuts.com/about/charlie-brown"}},
         {type: "D", start: {mon: 10, d: 4}, titles: {"en":"National Snoopy Day"}, first: {era: 1, y: 1950}, urls: {"en":"https://www.peanuts.com/about/snoopy"}},

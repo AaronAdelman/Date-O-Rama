@@ -3,7 +3,7 @@
     defaultLocale: "he",
     cal: "gre",
     color: {name: "blue"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 15}, inherits: "Natl Bagel Day", first: {era: 1, y: 2000}},
         {type: "D", start: {mon: 11, d: 9}, inherits: "Intl Day against Fascism and Antisemitism", first: {era: 1, y: 2001}},
         {type: "D", start: {mon: 12, d: 11}, inherits: "Natl Have a Bagel Day"},

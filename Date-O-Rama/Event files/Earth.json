@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "xloc*",
     color: {name: "blue"},
-    events: [
+    evts: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Vernal Equinox", type: "pt", start: {misc: "Mar"}, regionCodes: ["xb"]},
             {inherits: "Summer Solstice", type: "pt", start: {misc: "Jun"}, regionCodes: ["xb"]},

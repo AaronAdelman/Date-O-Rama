@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.25},
-    events: [
+    evts: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Ostara", type: "D", start: {misc: "Mar"}, regionCodes: ["xb"]},
             {inherits: "Beltane", type: "D", start: {mon: 5, d: 1}, regionCodes: ["xb"]},

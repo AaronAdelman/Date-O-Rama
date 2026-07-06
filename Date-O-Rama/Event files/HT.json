@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.24, blue: 0.65},
     first: {era: 1, y: 1804},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Haiti"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Independence Day", first: {era: 1, y: 1804}, urls: {"en":"https://www.daysoftheyear.com/days/haitian-independence-day/"}},
         {type: "D", start: {mon: 1, d: 2}, urls: {"en":"https://nationaltoday.com/ancestry-day/"}, titles: {"en":"Ancestry Day", "fr":"Jour des Aieux"}},

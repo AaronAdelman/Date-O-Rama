@@ -3,7 +3,7 @@
     defaultLocale: "he",
     cal: "heb*",
     color: {name: "blue"},
-    events: [
+    evts: [
         {type: "Y", start: {}, nonoverlappingSubEvents: [
             {inherits: "Aries", type: "M", start: {mon: 8}},
             {inherits: "Taurus", type: "M", start: {mon: 9}},

@@ -6,7 +6,7 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 0, y: 1330},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
-    events: [
+    evts: [
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
     ]

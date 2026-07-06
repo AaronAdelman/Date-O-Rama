@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.13, blue: 0.41},
     first: {era: 1, y: 1877},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
-    events: [
+    evts: [
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
         {type: "D", start: {misc: "E", offsetD: 39}, inherits: "Heroes’ Day"},

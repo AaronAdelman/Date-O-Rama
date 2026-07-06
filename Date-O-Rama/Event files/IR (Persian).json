@@ -6,7 +6,7 @@
     cal: "his",
     color: {red: 0.00, green: 0.59, blue: 0.22},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iran"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 11, d: 22}, titles: {"ar":"مظاهرات 22 بهمن","az":"İran İslam İnqilabının Qələbə Günü","en":"Anniversary of the Iranian Revolution","fa":"راهپیمایی ۲۲ بهمن","fr":"Marche du 22 Bahman","ms":"Ulang tahun Revolusi Islam","ru":"День победы Исламской революции","sv":"Årsdagen för den islamiska revolutionen","tr":"İran İslam Devrimi’nin Zafer Bayramı"}, urls: {"en":"https://nationaltoday.com/islamic-revolution-day/"}, notes: {"en":"Islamic Revolution Day\nAnniversary of Islamic Revolution", "fa":"انقلاب اسلامی پنجاه و هفت"}},
         {type: "D", start: {mon: 12, d: 29}, titles: {"en":"Oil Nationalization Day", "fa":"ملی شدن صنعت نفت"}, urls: {"en":"https://www.officeholidays.com/holidays/iran/oil-nationalisation-day"}, notes: {"en":"Nationalization of the Iranian oil industry"}},
         {inherits: "Nowruz", type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 4}},

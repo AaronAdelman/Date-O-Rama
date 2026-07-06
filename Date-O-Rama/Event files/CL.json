@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.20, blue: 0.63},
     first: {era: 1, y: 1810},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Chile"},
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "New Year’s Day (in lieu)", type: "D", start:  {mon: 1, d: 2}},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

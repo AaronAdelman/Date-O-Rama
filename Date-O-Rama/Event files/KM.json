@@ -7,7 +7,7 @@
     color: {red: 0.30, green: 0.55, blue: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},
     first: {era: 1, y: 1975},
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {titles: {"en":"Cheikh Al Maarouf Day"}, type: "D", start:  {mon: 3, d: 18}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

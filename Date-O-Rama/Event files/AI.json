@@ -6,7 +6,7 @@
     color: {red: 1.00, green: 0.60, blue: 0.00},
     first: {era: 1, y: 1667},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Anguilla"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
     {type: "D", start: {mon: 3, d: 2}, titles: {"en":"James Ronald Webster Day"}, urls: {"en":"https://www.daysoftheyear.com/days/james-ronald-webster-day/"}, inherits: "*BDay*", first: {era: 1, y: 2010}},
     {type: "D", start: {mon: 3, d: 3, thruD: 4, wkd: [2]}, titles: {"en":"James Ronald Webster Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/james-ronald-webster-day/"}, inherits: "*BDay*", first: {era: 1, y: 2010}},

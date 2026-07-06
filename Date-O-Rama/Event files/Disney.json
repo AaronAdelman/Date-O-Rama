@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre*",
     color: {red: 0.4, green: 0.5, blue: 0.6},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 22}, titles: {"en":"National Polka Dot Day"}, notes: {"en":"Yet another fashion-related observance, in this case celebrating Minnie Mouse."}, emoji: "⋅", first: {era: 1, y: 2016}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-polka-dot-day-january-22"}},
         {type: "D", start: {mon: 11, d: 17}, titles: {"en":"The Little Mermaid Day"}, urls: {"en":"https://www.checkiday.com/113423fff3705964ea6131b6ad9cd043/the-little-mermaid-day"}, first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 11, d: 18}, titles: {"en":"Mickey Mouse Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mickey-mouse-day/"}, notes: {"en":"Mickey Mouse’s Birthday\nMickey Mouse Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}, emoji: "🐭"},

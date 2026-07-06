@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.52, blue: 0.79},
     first: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Democratic_Republic_of_the_Congo"},
-    events: [
+    evts: [
         {type: "D", start:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Martyrs’ Day", type: "D", start: {mon: 1, d: 4}, first: {era: 1, y: 1959}},
         {inherits: "Heroes’ Day", notes: {"en":"Laurent-Désiré Kabila Assassination"}, type: "nD", start: {mon: 1, d: 16, durD: 2}, first: {era: 1, y: 2001}, urls: {"en":"https://www.officeholidays.com/holidays/dr-congo/dr-congo-heroes-day"}},

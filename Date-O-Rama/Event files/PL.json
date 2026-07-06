@@ -7,7 +7,7 @@
     color: {red: 0.82, green: 0.15, blue: 0.19},
     first: {era: 1, y: 1989},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Poland"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany", urls: {"en":"https://www.officeholidays.com/holidays/poland/epiphany"}, first: {era: 1, y: 2011}},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},

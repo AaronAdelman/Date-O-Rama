@@ -6,7 +6,7 @@
     color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Austria"},
     first: {era: 1, y: 1919},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

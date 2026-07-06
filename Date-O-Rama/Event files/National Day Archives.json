@@ -5,7 +5,7 @@
     color: {name: "red"},
     first: {era: 1, y: 2019},
     urls: {"en":"https://www.nationaldayarchives.com/"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 14}, titles: {"en":"National Dolls Doing Business Day"}, urls: {"en":"https://www.nationaldayarchives.com/day/national-dolls-doing-business-day/"}, notes: {"en":"Created by Caroline Kalentzos of POSH PR®"}, first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 1, d: 21}, titles: {"en":"National Personalized Learning Day"}, urls: {"en":"https://www.fusionacademy.com/national-personalized-learning-day/"}, first: {era: 1, y: 2025}, notes: {"en":"Created by Fusion Academy"}},
         {type: "D", start: {mon: 1, d: 25}, titles: {"en":"National Preparedness Day"}, notes: {"en":"Created by 4Patriots, LLC"}, urls: {"en":"https://www.nationaldayarchives.com/day/national-preparedness-day/"}, first: {era: 1, y: 2025}},

@@ -7,7 +7,7 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 1, y: 1971},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bahrain"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Natl Day", type: "D", start: {mon: 12, d: 16}, urls: {"en":"https://nationaltoday.com/bahrain-national-day/"}},

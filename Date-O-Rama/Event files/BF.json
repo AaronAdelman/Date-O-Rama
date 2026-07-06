@@ -7,7 +7,7 @@
     color: {red: 0.00, green: 0.59, blue: 0.22},
     first: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Burkina_Faso"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Revolution Day", type: "D", start: {mon: 1, d: 3}, first: {era: 1, y: 1966}},
         {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day"},

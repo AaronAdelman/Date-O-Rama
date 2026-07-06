@@ -6,7 +6,7 @@
     color: {red: 0.89, green: 0.00, blue: 0.27},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     first: {era: 1, y: 1804},
-   events: [
+   evts: [
         {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},

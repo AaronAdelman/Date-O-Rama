@@ -7,7 +7,7 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     first: {era: 1, y: 1946},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "Labour Day (in lieu)", type: "D", start: {mon: 4, d: 30, wkd: [1]}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},

@@ -6,7 +6,7 @@
     color: {red: 0.73, green: 0.05, blue: 0.18},
     first: {era: 1, y: 1905},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Norway"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 2, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en":"https://nationaltoday.com/mothers-day-norway/"}},
         {type: "D", start: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},

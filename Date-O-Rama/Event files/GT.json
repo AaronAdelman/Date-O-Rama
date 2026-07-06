@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.64, blue: 0.88},
     first: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guatemala"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

@@ -7,7 +7,7 @@
     color: {red: 0.16, green: 0.50, blue: 1.00},
     first: {era: 1, y: 1764},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Falkland_Islands"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/Falkland-islands/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

@@ -8,7 +8,7 @@
     color: {name: "blue"},
     first: {era: 1, y: 1776},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {type: "D", start: {mon: 5, wkd: [7], nth: 3}, inherits: "Armed Forces Day", urls: {"en":"https://www.daysoftheyear.com/days/us-armed-forces-day/"}, first: {era: 1, y: 1950}, notes: {"en":"Military Appreciation Day\nNational Military Day\nCreated by Harry S Truman"}},
         {type: "D", start: {mon: 4, d: 24}, inherits: "Armenian Genocide Remembrance Day", first: {era: 1, y: 1997}},

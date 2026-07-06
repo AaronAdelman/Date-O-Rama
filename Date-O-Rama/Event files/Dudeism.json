@@ -7,7 +7,7 @@
     urls: {"en":"https://dudeism.com/holidays/"},
     first: {era: 1, y: 2005},
     "TO DO":"Major Duder",
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, titles: {en: "Happy Dude Year"}},
         {type: "D", start: {mon: 2, d: 13}, titles: {en: "Pal-o-mine’s Day"}},
         {type: "nD", start: {mon: 2, d: 27}, end: {mon: 3, d: 6}, titles: {en: "Hangover"}},

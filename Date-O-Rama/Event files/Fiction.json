@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {name: "magenta"},
     "//": "This event calendar is intended for assorted events which exist in fiction but are seldom, if ever, celebrated in reality.",
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 12}, titles: {"en":"Activation of HAL 9000"}, notes: {"en":"From 2001: A Space Odyssey"}},
         {type: "D", start: {mon: 1, d: 19}, titles: {"en":"Buffy Summers’ Birthday"}, notes: {"en":"From Buffy the Vampire Slayer"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 1, d: 8}, titles: {"en":"Roy Batty Inception Day"}, notes: {"en":"From Blade Runner"}},

@@ -6,7 +6,7 @@
     color: {name: "green"},
     first: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Somaliland"},
-    events: [
+    evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", start: {mon: 5, d: 18}, titles: {"ar":"إعلان استقلال أرض الصومال","en":"Somaliland Declaration of Independence","fa":"اعلامیه استقلال سومالی‌لند","pt":"Declaração de Independência da Somalilândia","so":"Awaaji gooni-isu-taaga Somaliland","zh":"索马里兰独立问题"}, inherits: "Independence Day", urls: {"en":"https://en.wikipedia.org/wiki/Somaliland_Declaration_of_Independence"}, first: {era: 1, y: 1991}},
