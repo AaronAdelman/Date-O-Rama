@@ -17,7 +17,7 @@
         {type: "D", start: {mon: 6, d: 1}, inherits: "Intl Farhud Day", first: {era: 1, y: 2015}},
         {type: "D", start: {mon: 6, d: 12}, inherits: "Falafel Day", first: {era: 1, y: 2012}},
         {type: "D", start: {mon: 6, d: 4}, titles: {"en":"Holocaust Survivor Day"}, inherits: "Holocaust Memorial Day", urls: {"en":"https://www.holocaustsurvivorday.com/"}, first: {era: 1, y: 2021}},
-        {type: "D", start: {mon: 7, d: 26}, inherits: "Natl Bagelfest Day", first: {era: 1, y: 1986}},
+        {type: "D", start: {mon: 7, d: 26}, inherits: "Natl Bagelfest Day", first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Entebbe Rescue Day"}, first: {era: 1, y: 1976}},
         {type: "M", start: {mon: 1}, titles: {"en":"Matzo Ball Soup Month"}, first: {era: 1, y: 2026}, notes: {"en":"First reported on 2026-01-15 in a post by Marcy Hubelbank Kaufman in the Facebook group Two Jews Who Love Food."}, urls: {"en":"https://www.facebook.com/groups/145296007804683/posts/1219297540404519/"}, emoji: "🍲"},
         {type: "M", start: {mon: 2}, titles: {"en":"North American Inclusion Month"}, urls: {"en":"https://www.yachad.org/informaled/north-american-inclusion-month-naim"}, notes: {"en":"NAIM\nCreated by Yachad"}, first: {era: 1, y: 2011}},
