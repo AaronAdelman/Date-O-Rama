@@ -57,7 +57,7 @@
         {type: "D", start: {mon: 9, d: 4}, titles: {"en":"National Customer Day", "id":"Hari Pelanggan Nasional"}, first: {era: 1, y: 2003}},
         {type: "D", start: {mon: 9, d: 9}, inherits: "Natl Sports Day", first: {era: 1, y: 1983}},
         {type: "D", start: {mon: 9, d: 11}, inherits: "Natl Radio Day", notes: {"en":"Anniversary of RRI", "id":"Hari Ulang Tahun Radio Republik Indonesia"}, first: {era: 1, y: 1945}},
-        {type: "D", start: {mon: 9, d: 17}, titles: {"en":"Red Cross Day", "id":"Hari Palang Merah"}, first: {era: 1, y: 1945}, emoji: "🏥"},
+        {type: "D", start: {mon: 9, d: 17}, inherits: "Red Cross Day", first: {era: 1, y: 1945}},
         {type: "D", start: {mon: 9, d: 17}, titles: {"en":"National Transport Day", "id":"Hari Perhubungan Nasional"}, first: {era: 1, y: 1971}, emoji: "🚚"},
         {type: "D", start: {mon: 9, d: 24}, titles: {"en":"National Agrarian Day", "id":"Hari Agraria Nasional"}, notes: {"en":"National Peasants' Day", "id":"Hari Tani Nasional"}, first: {era: 1, y: 1960}, emoji: "👨‍🌾👩‍🌾"},
         {type: "D", start: {mon: 9, d: 26}, titles: {"en":"National Statistics Day", "he":"יום הסטטיסטיקה הלאומי", "id":"Hari Statistik Nasional"}, first: {era: 1, y: 1971}, emoji: "🏙"},

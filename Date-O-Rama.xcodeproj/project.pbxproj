@@ -508,6 +508,8 @@
 		A5B1A7452EB7BEED00FF26BE /* NCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A7432EB7BEED00FF26BE /* NCA.json */; };
 		A5B2CC6E2FFE09DE00CD9109 /* ASPCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */; };
 		A5B2CC6F2FFE09DE00CD9109 /* ASPCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */; };
+		A5B2CC742FFE348400CD9109 /* Red Cross and Red Crescent.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC732FFE348400CD9109 /* Red Cross and Red Crescent.json */; };
+		A5B2CC752FFE348400CD9109 /* Red Cross and Red Crescent.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC732FFE348400CD9109 /* Red Cross and Red Crescent.json */; };
 		A5B321F92D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B321FA2D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
@@ -1525,6 +1527,7 @@
 		A5B17C642D9C43EE00329F57 /* Doctor Who.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Doctor Who.json"; sourceTree = "<group>"; };
 		A5B1A7432EB7BEED00FF26BE /* NCA.json */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCA.json; sourceTree = "<group>"; };
 		A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ASPCA.json; sourceTree = "<group>"; };
+		A5B2CC732FFE348400CD9109 /* Red Cross and Red Crescent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Red Cross and Red Crescent.json"; sourceTree = "<group>"; };
 		A5B321F82D7A118F004E0460 /* Matrixism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Matrixism.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
@@ -2284,6 +2287,7 @@
 				A5EFFF9E285B7F2E00F2205F /* QA.json */,
 				A5EF0006285B8EEA00F2205F /* QA (Muslim).json */,
 				A502D3E128637E2800A625A9 /* RE.json */,
+				A5B2CC732FFE348400CD9109 /* Red Cross and Red Crescent.json */,
 				A58754A02ED81FFD0033A861 /* Richard Ankli.json */,
 				A5EB4F942850EFC700A32FB1 /* RO.json */,
 				A53D608B288844020094B3F7 /* RO (Julian).json */,
@@ -3145,6 +3149,7 @@
 				A5E496212862522F001BF40C /* KN.json in Resources */,
 				A5F2BE8D287C803E00E7ED0F /* SD (Coptic).json in Resources */,
 				A5EFFFC7285B81BD00F2205F /* VE.json in Resources */,
+				A5B2CC752FFE348400CD9109 /* Red Cross and Red Crescent.json in Resources */,
 				A541945828749D5200C93496 /* IR (Persian).json in Resources */,
 				A5EFFFFD285B8AF700F2205F /* IS.json in Resources */,
 				A5E292C6285A446000925EBD /* AO.json in Resources */,
@@ -3657,6 +3662,7 @@
 				A57797D32B8FC29900F68529 /* Islam (derived).json in Resources */,
 				A5A62D3F2A37663F00EDBB6D /* ET (Ethiopic).json in Resources */,
 				A5D8509C280C8F9D005247BD /* BG.json in Resources */,
+				A5B2CC742FFE348400CD9109 /* Red Cross and Red Crescent.json in Resources */,
 				A5EFFF5D285B5F9B00F2205F /* HK.json in Resources */,
 				A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */,
 				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
