@@ -506,6 +506,8 @@
 		A5B17C662D9C43F500329F57 /* Doctor Who.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B17C642D9C43EE00329F57 /* Doctor Who.json */; };
 		A5B1A7442EB7BEED00FF26BE /* NCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A7432EB7BEED00FF26BE /* NCA.json */; };
 		A5B1A7452EB7BEED00FF26BE /* NCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A7432EB7BEED00FF26BE /* NCA.json */; };
+		A5B2CC6E2FFE09DE00CD9109 /* ASPCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */; };
+		A5B2CC6F2FFE09DE00CD9109 /* ASPCA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */; };
 		A5B321F92D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B321FA2D7A118F004E0460 /* Matrixism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B321F82D7A118F004E0460 /* Matrixism.json */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
@@ -1522,6 +1524,7 @@
 		A5B0084626CD3A0B00B63B3F /* Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
 		A5B17C642D9C43EE00329F57 /* Doctor Who.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Doctor Who.json"; sourceTree = "<group>"; };
 		A5B1A7432EB7BEED00FF26BE /* NCA.json */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCA.json; sourceTree = "<group>"; };
+		A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ASPCA.json; sourceTree = "<group>"; };
 		A5B321F82D7A118F004E0460 /* Matrixism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Matrixism.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
@@ -1995,6 +1998,7 @@
 				A5E292E8285A625000925EBD /* AR.json */,
 				A5E95F6C286F2DB7009267AF /* AS.json */,
 				A5A132912D49680B00152EA9 /* Asatru Alliance.json */,
+				A5B2CC6D2FFE09DE00CD9109 /* ASPCA.json */,
 				A581B896284E60D800407D68 /* AT.json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A5D3D7E327FA20CC0099718A /* AU.json */,
@@ -3095,6 +3099,7 @@
 				A5ADF4CF2B30C894004F6166 /* ME (Julian).json in Resources */,
 				A5C7793E26B8382600DD6009 /* UN.json in Resources */,
 				A5E495F828624EFE001BF40C /* GL.json in Resources */,
+				A5B2CC6F2FFE09DE00CD9109 /* ASPCA.json in Resources */,
 				A5E292EA285A625000925EBD /* AR.json in Resources */,
 				A50C4FCD2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json in Resources */,
 				A5E13C4A2A3990DB009EDEFA /* CY (Julian).json in Resources */,
@@ -3443,6 +3448,7 @@
 				A581B87C284E487200407D68 /* HU.json in Resources */,
 				A5EFFF74285B7B1300F2205F /* ML.json in Resources */,
 				A581B89A284E61F600407D68 /* LV.json in Resources */,
+				A5B2CC6E2FFE09DE00CD9109 /* ASPCA.json in Resources */,
 				A5E4962D286252EC001BF40C /* MF.json in Resources */,
 				A5EFFFAE285B7F2E00F2205F /* VC.json in Resources */,
 				A5FB22AC28638E1200B5042B /* ST.json in Resources */,
