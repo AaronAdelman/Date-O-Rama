@@ -421,8 +421,8 @@
         {type: "D", start: {mon: 7, wkd: [1], nth: 3}, inherits: "Natl Ice Cream Day", first: {era: 1, y: 1984}, urls: {"en":"https://www.daysoftheyear.com/days/ice-cream-day/"}, notes: {"en":"Created by Ronald Reagan"}},
         {type: "D", start: {mon: 7, d: 20}, titles: {"en":"National Moon Day", "he":"יום הירח הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/moon-day/"}, emoji: "☽", first: {era: 1, y: 1971}, notes: {"en":"National Moon Landing Day\nCreated by Richard Nixon"}},
         {type: "D", start: {mon: 7, wkd: [1], nth: 4}, titles: {"en":"National Parents’ Day", "he":"יום ההורים הלאומי"}, notes: {"en":"National Parents Day\nCreated by Trent Lott"}, inherits: "Parents’ Day", urls: {"en":"https://parentsday.com/"}, first: {era: 1, y: 1994}},
-        {type: "D", start: {mon: 7, d: 27}, titles: {"en":"National Korean War Veterans Armistice Day"}, urls: {"en":"https://nationaltoday.com/national-korean-war-veterans-armistice-day/"}, first: {era: 1, y: 1995}},
-        {type: "D", start: {mon: 7, d: 28}, titles: {"en":"Buffalo Soldiers Day"}, urls: {"en":"https://nationaltoday.com/buffalo-soldiers-day/"}, first: {era: 1, y: 1992}},
+        {type: "D", start: {mon: 7, d: 27}, titles: {"en":"National Korean War Veterans Armistice Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-korean-war-veterans-armistice-day/"}, first: {era: 1, y: 1995}},
+        {type: "D", start: {mon: 7, d: 28}, titles: {"en":"Buffalo Soldiers Day"}, urls: {"en":"https://www.daysoftheyear.com/days/buffalo-soldiers-day/"}, first: {era: 1, y: 1992}, notes: {"en":"Created by US Congress"}},
         {type: "D", start: {mon: 7, wkd: [6], nth: 2}, titles: {"en":"Collector Car Appreciation Day"}, urls: {"en":"https://www.semasan.com/collector-car-appreciation-day"}, notes: {"en":"CCAD\nCreated by Jon Tester and Richard Burr"}, first: {era: 1, y: 2010}, emoji: "🚗"},
         {type: "D", start: {mon: 8, d: 1}, titles: {"en":"Colorado Day", "he":"יום קולורדו"}, first: {era: 1, y: 1907}, urls: {"en":"https://www.daysoftheyear.com/days/colorado-day/"}},
         {type: "D", start: {mon: 8, d: 14}, titles: {"en":"Navajo Code Talkers Day", "he":"יום דוברי הקוד מבני הנאוואחו"}, notes: {"en":"U.S. Victory Day"}, urls: {"en":"https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}, notes: {"en":"National Navajo Code Talkers Day"}},
@@ -775,7 +775,7 @@
             ]},
         
         {type: "M", start: {mon: 7}, titles: {"en":"National Blueberry Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-blueberry-month/"}, emoji: "🫐", first: {era: 1, y: 1974}, notes: {"en":"Blueberry Month\nCreated by the US Congress"}, nonoverlappingSubEvents: [
-            {type: "D", start: {d: 10}, titles: {"en":"Pick Blueberries Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pick-blueberries-day/"}, first: {era: 1, y: 2003}, emoji: "🫐"},
+            {type: "D", start: {d: 10}, titles: {"en":"Pick Blueberries Day"}, notes: {"en":"National Pick Blueberries Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pick-blueberries-day/"}, first: {era: 1, y: 2003}, emoji: "🫐"},
         ]},
         
     ],

@@ -202,7 +202,7 @@
         {type: "D", start: {mon: 7, d: 22}, titles: {"en":"Spoonerism Day"}, urls: {"en":"https://www.daysoftheyear.com/days/spoonerism-day/"}, notes: {"en":"Spooner’s Day"}},
         {type: "D", start: {mon: 7, d: 24}, titles: {"en":"Samaritans Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/samaritans-awareness-day/"}, notes: {"en":"No association whatsoever with actual Samaritans.\nCreated by Chad Varah"}, first: {era: 1, y: 1953}},
         {type: "D", start: {mon: 7, d: 27}, titles: {"en":"Norfolk Day"}, urls: {"en":"https://www.norfolkchamber.co.uk/norfolk-day/"}},
-        {type: "D", start: {mon: 7, d: 27}, titles: {"en":"Bagpipe Appreciation Day"}, urls: {"en":"https://nationaltoday.com/bagpipe-appreciation-day/"}},
+        {type: "D", start: {mon: 7, d: 27}, titles: {"en":"Bagpipe Appreciation Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bagpipe-appreciation-day/"}, first: {era: 1, y: 2007}},
         {type: "D", start: {mon: 7, d: 31}, titles: {"en":"Black Tot Day"}, urls: {"en":"https://www.daysoftheyear.com/days/black-tot-day/"}, emoji: "🥃"},
         {type: "D", start: {mon: 7, d: 5, thruD: 11, wkd: [1]}, titles: {"en":"World Circle Dance Day"}, first: {era: 1, y: 2018}, urls: {"en":"https://globalcircledance.com/world-circle-dance-day"}, emoji: "🟡", first: {era: 1, y: 2016}},
         {type: "D", start: {mon: 7, d: 5}, titles: {"en":"Pet Remembrance Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pet-remembrance-day/"}, emoji: "🐶", notes: {"en":"Created by Pets Magazine and Lars Anderson"}},
