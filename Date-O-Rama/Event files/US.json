@@ -414,7 +414,7 @@
         {type: "D", start: {mon: 7, d: 2}, inherits: "Natl Wildland Firefighter Day", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 20}, titles: {"en":"Space Exploration Day"}, urls: {"en":"https://www.daysoftheyear.com/days/space-exploration-day/"}, first: {era: 1, y: 1984}, emoji: "👨‍🚀👩‍🚀", notes: {"en":"Created by Ronald Reagan"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: -1}, titles: {"en":"Descendants’ Day"}, notes: {"en":"Descendant’s Day!\nDescendants’ Day!\nDescendants Day"}, urls: {"en":"https://www.checkiday.com/7695082c53c100d2a23ac747c8a0007b/descendants-day"}, first: {era: 1, y: 1996}, emoji: "👦👧"},
-        {type: "D", start: {mon: 7, d: 30}, titles: {"en":"National Whistleblower Day", "he":"יום חושף השחיתות לאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-whistleblower-day/"}, first: {era: 1, y: 2013}, emoji: "⚖️"},
+        {type: "D", start: {mon: 7, d: 30}, titles: {"en":"National Whistleblower Day", "he":"יום חושף השחיתות לאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-whistleblower-day/"}, first: {era: 1, y: 2013}, emoji: "⚖️", notes: {"en":"Created by the US Senate"}},
         {type: "D", start: {mon: 7, d: 31}, titles: {"en":"Hawaii Flag Day", "he":"יום דגל הוואי"}, inherits: "Flag Day", urls: {"en":"https://www.daysoftheyear.com/days/hawaii-flag-day/"}, first: {era: 1, y: 1990}, notes: {"en":"Created by John D. Waiheʻe III"}},
         {type: "D", start: {mon: 7, d: 6}, titles: {"en":"National Air Traffic Control Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-air-traffic-control-day/"}, first: {era: 1, y: 1986}, emoji: "✈️", notes: {"en":"Created by Ronald Reagan"}},
         {type: "D", start: {mon: 7, d: 8}, titles: {"en":"National Blueberry Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-blueberry-day/"}, emoji: "🫐", first: {era: 1, y: 2003}, notes: {"en":"Created by the U.S. Highbush Blueberry Council"}},
@@ -725,8 +725,7 @@
         {type: "W", start: {mon: 6, fullWk: 3}, titles: {"en":"Old-Time Fiddlers Week"}, notes: {"en":"Created by Blaine Stubblefield"}, urls: {"en":"https://www.daysoftheyear.com/days/old-time-fiddlers-week/"}, first: {era: 1, y: 1953}, emoji: "🎻"},
         {type: "D", start: {mon: 5, d: 21}, titles: {"en":"Ona Judge Day"}, urls: {"en":"https://www.phila.gov/media/20260521142404/Executive-Order-2026-04.pdf"}, first: {era: 1, y: 2026}, notes: {"en":"Created by Cherelle L. Parker"}},
         {type: "D", start: {mon: 9, d: 28}, titles: {"en":"National Self-Awareness Day"}, notes: {"en":"National Self Awareness Day\nCreated by the US Senate"}, urls: {"en":"https://www.daysoftheyear.com/days/national-self-awareness-day/"}, first: {era: 1, y: 2017}},
-        {type: "D", start: {mon: 7, wkd: [4], nth: 3}, titles: {"en":"Glioblastoma Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/glioblastoma-awareness-day/"}, notes: {"en":"GBM Day\nGBM Awareness Day\nNational Glioblastoma Day\nCreated by the US Senate"}, inherits: "*MedAwareness*", first: {era: 1, y: 2019}},
-        {type: "D", start: {mon: 7, d: 15}, titles: {"en":"Celebration of the Horse Day"}, urls: {"en":"https://www.daysoftheyear.com/days/celebration-of-the-horse-day/"}, emoji: "🐴", first: {era: 1, y: 2004}, notes: {"en":"Created by the US Senate"}},
+        {type: "D", start: {mon: 7, d: 29}, titles: {"en":"National Challenged Champions and Heroes Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-challenged-champions-and-heroes-awareness-day/"}, first: {era: 1, y: 2019}, emoji: "🦽", notes: {"en":"Created by Dr. Robin A. Lococo"}},
 
         {type: "nD", start: {mon: 11, d: 12, thruD: 18, wkd: [1], durD: 7}, titles: {"en":"American Education Week"}, urls: {"en":"https://www.daysoftheyear.com/days/american-education-week/"}, first: {era: 1, y: 1921}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [4], nth: 3}, titles: {"en":"National Educational Support Professionals Day"}, urls: {"en":"https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en":"E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"}, first: {era: 1, y: 1987}},
@@ -758,9 +757,11 @@
         {type: "nD", start: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLens: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 3, d: 1}, inherits: "Peace Corps Day", first: {era: 1, y: 1961}},
         ]},
+        
         {type: "nD", start: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLens: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", first: {era: 1, y: 1961}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 3, d: 1}, inherits: "Peace Corps Day", first: {era: 1, y: 1961}},
         ]},
+        
         {type: "nD", start: {mon: 5, d: 6}, end: {mon: 5, d: 12}, titles: {"en":"National Nurse’s Week"}, urls: {"en":"https://www.daysoftheyear.com/days/nurses-week/"}, notes: {"en":"National Nurses Week"}, first: {era: 1, y: 1974}, emoji: "👨‍⚕️👩‍⚕️", overlappingSubEvents: [
             {type: "D", start: {mon: 5, d: 6}, titles: {"en":"National Nurses Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-nurses-day/"}, notes: {"en":"National Recognition Day for Nurses\nNational Nurse’s Day\nNational RN Recognition Day\nCreated by Ronald Reagan"}, first: {era: 1, y: 1982}, emoji: "👨‍⚕️👩‍⚕️"},
             {type: "D", start: {wkd: [4]}, titles: {"en":"National School Nurse Day"}, urls: {"en":"https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", first: {era: 1, y: 1974}, notes: {"en":"Created by Gerald Ford"}},
