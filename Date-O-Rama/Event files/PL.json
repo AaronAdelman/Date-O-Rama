@@ -124,7 +124,7 @@
         {type: "D", start: {mon: 9, d: 29}, inherits: "Natl Coffee Day"},
         {type: "D", start: {mon: 12, d: 18, thruD: 24, wkd: [7]}, inherits: "Super Saturday"},
         {type: "D", start: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
-        {type: "nD", start: {mon: 7, d: 29, thruMon: 8, thruD: 5, wkd: [5]}, end: {mon: 8, d: 1, thruD: 7, wkd: [7]}, titles: {"en":"Pol’and’Rock Festival"}, notes: {"en":"Woodstock Festival Poland"}, urls: {"en":"https://en.polandrockfestival.pl/"}, emoji: "🎸", first: {era: 1, y: 1995}},
+        {type: "nD", start: {mon: 7, d: 29, thruMon: 8, thruD: 5, wkd: [5]}, end: {mon: 8, d: 1, thruD: 7, wkd: [7]}, titles: {"cs":"Pol’and’Rock Festival","de":"Pol’and’Rock Festival","el":"Φεστιβάλ Pol’and’Rock","en":"Pol’and’Rock Festival","eo":"Pol’and’Rock Festival","es":"Festival Woodstock Polonia","et":"Woodstocki festival","fr":"Pol’and’Rock Festival","it":"Pol’and’Rock Festival","ko":"폴앤록 페스티벌","nb":"Przystanek Woodstock","nl":"Pol’and’Rock Festival","pl":"Pol’and’Rock Festival","ru":"Польский Вудсток","sk":"Pol’and’Rock Festival","sv":"Pol’and’Rock Festival","uk":"Зупинка Вудсток","vi":"Lễ hội âm nhạc Pol’and’Rock","zh":"波蘭胡士托音樂藝術節"}, notes: {"en":"Woodstock Festival Poland\nCreated by Jerzy Owsiak"}, urls: {"en":"https://en.polandrockfestival.pl/", "pl":"https://polandrockfestival.pl/strona-glowna"}, emoji: "🎸", first: {era: 1, y: 1995}},
 
     ]
 }
