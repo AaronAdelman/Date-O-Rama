@@ -38,11 +38,11 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {inherits: "Carnival", type: "D", start: {misc: "E", offsetD: -48}, titles: {"en":"Monday of Carnival"}},
-        {inherits: "Carnival", type: "D", start: {misc: "E", offsetD: -47}, titles: {"en":"Tuesday of Carnival"}},
+        {type: "D", start: {misc: "E", offsetD: -48}, inherits: "Carnival", titles: {"en":"Monday of Carnival"}},
+        {type: "D", start: {misc: "E", offsetD: -47}, inherits: "Carnival", titles: {"en":"Tuesday of Carnival"}},
 
        {type: "D", start: {mon: 5, d: 29}, inherits: "Engineer’s Day"},
-       {inherits: "Children’s Day", type: "D", start: {mon: 4, wkd: [7], nth: -1}, first: {era: 1, y: 2001}},
+       {type: "D", start: {mon: 4, wkd: [7], nth: -1}, inherits: "Children’s Day", first: {era: 1, y: 2001}},
        {type: "D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
        {type: "D", start: {mon: 4, d: 26}, urls: {"en":"https://nationaltoday.com/secretaries-day-colombia/"}, titles: {"en":"Secretaries’ Day"}},
        {type: "D", start: {mon: 4, d: 29}, urls: {"en":"https://nationaltoday.com/day-of-trees/"}, titles: {"en":"Day of Trees"}, inherits: "Arbor Day"},
@@ -50,5 +50,7 @@
        {type: "D", start: {mon: 6, d: 27}, inherits: "Natl Coffee Day"},
        {type: "nD", start: {mon: 9, d: 3}, end: {mon: 10, d: 5}, titles: {"es":"Fiesta de San Pacho"}, urls: {"en":"https://www.daysoftheyear.com/days/fiesta-de-san-pacho/"}},
        {type: "D", start: {mon: 12, d: 7}, titles: {"ar":"يوم الشموع الصغيرة","en":"Day of the Little Candles","eo":"Tago de la Kandeletoj","es":"Día de las velitas","fa":"روز شمع‌های کوچک","fr":"Día de las Velitas","id":"Hari Lilin Kecil","jv":"Dina Lilin Cilik","ms":"Día de las Velitas","si":"කුඩා ඉටිපහන් දිනය","tr":"Día de las Velitas"}, notes: {"en":"Little Candles Day\nImmaculate Conception Eve", "es":"Noche de las Velitas"}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-the-little-candles/"}, emoji: "🕯️"},
-  ]
+       {type: "D", start: {mon: 7, d: 9}, titles: {"en":"Our Lady of the Rosary of Chiquinquirá Day", "es":"Nuestra Señora del Rosario de Chiquinquirá"}, urls: {"en":"https://www.officeholidays.com/holidays/colombia/our-lady-of-the-rosary-of-chiquinquira-day"}},
+       {type: "D", start: {mon: 7, d: 10, thruD: 15, wkd: [2]}, titles: {"en":"Our Lady of the Rosary of Chiquinquirá Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/colombia/our-lady-of-the-rosary-of-chiquinquira-day"}},
+    ]
 }
