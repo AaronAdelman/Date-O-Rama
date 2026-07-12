@@ -205,7 +205,7 @@
         {type: "D", start: {mon: 7, d: 1}, titles: {"en":"GST Day"}},
         {type: "D", start: {mon: 7, d: 10}, titles: {"en":"National Fish Farmers’ Day"}, emoji: "🐟"},
         {type: "D", start: {mon: 7, d: 23}, inherits: "Natl Broadcasting Day"},
-        {type: "D", start: {mon: 8, wkd: [1], nth: 1}, inherits: "Friendship Day", urls: {"en":"https://en.wikipedia.org/wiki/Friendship_Day#Celebrations_in_August"}},
+        {type: "D", start: {mon: 8, wkd: [1], nth: 1}, inherits: "Friendship Day", urls: {"en":"https://www.daysoftheyear.com/days/friendship-day-in-india/"}, notes: {"en":"Created by Joyce Hall of Hallmark Cards"}},
         {type: "D", start: {mon: 8, d: 7}, titles: {"en":"National Handloom Day"}, urls: {"en":"https://vikaspedia.in/social-welfare/entrepreneurship/national-handloom-day"}, first: {era: 1, y: 2015}, emoji: "🧵"},
         {type: "D", start: {mon: 8, d: 13}, titles: {"en":"World Organ Donation Day"}, inherits: "*MedAwareness*"},
         {type: "D", start: {mon: 8, d: 30}, titles: {"en":"Small Industry Day", "he":"יום התעשייה הקטנה"}},
