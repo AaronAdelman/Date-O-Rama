@@ -358,7 +358,7 @@
         {type: "nD", start: {mon: 7, d: 23, thruD: 29, wkd: [6]}, end: {mon: 8, d: 1, thruD: 7, wkd: [1]}, titles: {"en":"Love Parks Week"}, urls: {"en":"https://www.daysoftheyear.com/days/love-parks-week/"}, emoji: "🏞️", first: {era: 1, y: 2023}},
         {type: "nD", start: {mon: 7, d: 6, thruD: 12, wkd: [6], durD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 2025}},
         {type: "nD", start: {mon: 7, d: 8, thruD: 14, wkd: [6], durD: 3}, inherits: "Conwy River Festival", first: {era: 1, y: 1993}, last: {era: 1, y: 2023}},
-        {type: "nD", start: {mon: 8, d: 1, thruD: 7, wkd: [7], durD: 8}, titles: {"en":"National Eisteddfod of Wales", "cy":"Eisteddfod Genedlaethol Cymru"}, first: {era: 1, y: 1861}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
+        {type: "nD", start: {mon: 8, d: 1, thruD: 7, wkd: [7], durD: 8}, titles: {"ar":"مهرجان ايستيدود الوطني الويلزي","br":"Eisteddfod Vroadel","ca":"Eisteddfod Nacional de Gal·les","cy":"Eisteddfod Genedlaethol Cymru","en":"National Eisteddfod of Wales","eo":"Kimra Nacia Eisteddfod","es":"Eisteddfod Nacional de Gales","eu":"Galesko Eisteddfod Nazionala","fr":"Eisteddfod Genedlaethol","ga":"Eisteddfod Náisiúnta na Breataine Bige","kw":"Esedhvos Kenedhlek Kembra","sv":"Eisteddfod Genedlaethol Cymru","zh":"威尔士国家艺术节"}, first: {era: 1, y: 1861}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿", notes: {"en":"https://www.daysoftheyear.com/days/national-eisteddfod-of-wales/"}},
         {type: "nD", start: {mon: 8, d: 21, thruD: 27, wkd: [7], durD: 2}, inherits: "Pride Cymru", first: {era: 1, y: 1999}, last: {era: 1, y: 2024}},
         {type: "nD", start: {mon: 8, d: 23, thruD: 29, wkd: [7], durD: 3}, titles: {"en":"Notting Hill Carnival", "he":"קרנבל נוטינג היל"}, urls: {"en":"https://nhcarnival.org/"}, emoji: "🟡"},
         {type: "nD", start: {mon: 8, d: 7, thruD: 13, wkd: [2], durD: 7}, titles: {"en":"Afternoon Tea Week"}, urls: {"en":"https://afternoontea.co.uk/features/afternoon-tea-week"}, emoji: "🫖☕️"},
@@ -419,6 +419,7 @@
         {type: "D", start: {mon: 6, d: 25}, titles: {"en":"Rare Chromosome Disorder Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rare-chromosome-disorder-awareness-day/"}, inherits: "*MedAwareness*", notes: {"en":"Created by Unique"}},
         {type: "nD", start: {mon: 5, d: 16}, end: {mon: 6, d: 15}, inherits: "Jewish Culture Month", first: {era: 1, y: 2026}},
         {type: "D", start: {mon: 7, d: 4}, titles: {"en":"Alice in Wonderland Day"}, urls: {"en":"https://www.daysoftheyear.com/days/alice-in-wonderland-day/"}, emoji: "🍄🐛", first: {era: 1, y: 2015}},
+        {type: "M", start: {mon: 8}, titles: {"en":"National Road Victim Month"}, urls: {"en":"https://www.roadpeace.org/remembering-lives-lost/national-road-victim-month/"}, emoji: "🛣️", inherits: "*MedAwareness*", first: {era: 1, y: 1998}},
         
         {type: "nD", start: {mon: 11, d: 11, thruD: 17, wkd: [2], durD: 5}, titles: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"}, first: {era: 1, y: 2004}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 11, wkd: [3], d: 12, thruD: 18}, titles: {"en":"Odd Socks Day"}, first: {era: 1, y: 2017}, urls: {"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦", notes: {"en":"Created by the Anti-Bullying Alliance"}},
@@ -427,7 +428,6 @@
         {type: "nD", start: {mon: 11, d: 6, thruD: 12, wkd: [2], durD: 5}, titles: {"en":"National School Meals Week"}, notes: {"en":"NSMW"}, urls: {"en":"https://www.lacansmw.co.uk/"}, emoji: "🍛", nonoverlappingSubEvents: [
             {type: "D", start: {wkd: [4]}, titles: {"en":"Roast Dinner Day"}, urls: {"en":"https://www.daysoftheyear.com/days/roast-dinner-day/"}, emoji: "🍠🥩"},
         ]},
-        
         
         {type: "nD", start: {mon: 7, d: 13, thruD: 19, wkd: [7], durD: 16}, titles: {"en":"Festival of British Archaeology"}, urls: {"en":"https://www.archaeologyuk.org/festival.html"}, first: {era: 1, y: 2003}, notes: {"en":"Created by the Council for British Archaeology (CBA)"}, nonoverlappingSubEvents: [
             {type: "D", start: {mon: 7, d: 20, thruD: 25, wkd: [6]}, titles: {"en":"Ask an Archaeologist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/ask-an-archaeologist-day/"}, notes: {"en":"Created by the Council for British Archaeology"}, first: {era: 1, y: 2018}},
