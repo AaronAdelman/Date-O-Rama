@@ -758,5 +758,8 @@
         "יום־שנה של שמואל הנביא": {titles: {"he":"יום־שנה של שמואל הנביא", "en":"Yohrtsayt of Shemu’el the Prophet"}, type: "D", start: {mon: 9, d: 28}, inherits: "*DeathAnniv*"},
         "*ספירת העומר*": {type: "D", start: {mon: 8, d: 16}, urls: {"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
         "Natl Rainier Cherry Day": {type: "D", start: {mon: 7, d: 11}, titles: {"en":"National Rainier Cherry Day"}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-rainier-cherry-day-june-28"}, emoji: "🍒"},
+        "Foundation Anniversary of the Boy Scouts of the Philippines": {type: "D", start: {mon: 10, d: 24}, titles: {"en":"Foundation Anniversary of the Boy Scouts of the Philippines", "fil":"Anibersaryo ng Kapatirang Scout ng Pilipinas"}},
+        "Natl Scout Org Day": {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Scout Organization Day", "th":"วันสถาปนาลูกเสือแห่งชาติ", "he":"יום הארגון הלאומי לצופים"}},
+
     }
 }

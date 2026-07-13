@@ -455,6 +455,8 @@
 		A5A1D1DA2A643FCA00DE345A /* TL (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */; };
 		A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */; };
 		A5A1D1DD2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */; };
+		A5A463F73004B27200763176 /* Scouting.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F63004B27200763176 /* Scouting.json */; };
+		A5A463F83004B27200763176 /* Scouting.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F63004B27200763176 /* Scouting.json */; };
 		A5A62D362A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D372A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D3C2A36582400EDBB6D /* ER (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D3B2A36582400EDBB6D /* ER (Julian).json */; };
@@ -1503,6 +1505,7 @@
 		A5A132FC2D4BFF5600152EA9 /* Sesame Street.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sesame Street.json"; sourceTree = "<group>"; };
 		A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TL (Chinese).json"; sourceTree = "<group>"; };
 		A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (yohrtsayts).json"; sourceTree = "<group>"; };
+		A5A463F63004B27200763176 /* Scouting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scouting.json; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
 		A5A62D3B2A36582400EDBB6D /* ER (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ER (Julian).json"; sourceTree = "<group>"; };
 		A5A62D3E2A37663F00EDBB6D /* ET (Ethiopic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ET (Ethiopic).json"; sourceTree = "<group>"; };
@@ -2303,6 +2306,7 @@
 				A502D3E728637F5000A625A9 /* SB.json */,
 				A501C7FC285F75D100211E33 /* SC.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
+				A5A463F63004B27200763176 /* Scouting.json */,
 				A502D3EA286380E700A625A9 /* SD.json */,
 				A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */,
 				A5EF0004285B8EEA00F2205F /* SD (Muslim).json */,
@@ -3082,6 +3086,7 @@
 				A5EFFFDB285B855E00F2205F /* SY.json in Resources */,
 				A5EFFFDD285B855E00F2205F /* AE.json in Resources */,
 				A5EFFFA9285B7F2E00F2205F /* SG.json in Resources */,
+				A5A463F83004B27200763176 /* Scouting.json in Resources */,
 				A575914E282BE43900675058 /* SK.json in Resources */,
 				A5E8BAE427FCCF0B0018CD36 /* BD.json in Resources */,
 				A5171A632899A83B00CCA91A /* Taoism (Chinese).json in Resources */,
@@ -3612,6 +3617,7 @@
 				A5E292D2285A59BB00925EBD /* HN.json in Resources */,
 				A5C72A0E2967681700B8442A /* RU (Julian).json in Resources */,
 				A52FA7DB2EFBB5960032A649 /* Baháʼí Faith.json in Resources */,
+				A5A463F73004B27200763176 /* Scouting.json in Resources */,
 				A51CFB252D46B50600B37226 /* Objectivism.json in Resources */,
 				A5E04AB02851CA5F001A4911 /* AQ.json in Resources */,
 				A5EFFFDE285B855E00F2205F /* LB.json in Resources */,

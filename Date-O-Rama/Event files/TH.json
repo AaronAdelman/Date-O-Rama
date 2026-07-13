@@ -116,7 +116,7 @@
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day"},
         {type: "D", start: {mon: 2, d: 25}, inherits: "Natl Radio Day"},
         {type: "D", start: {mon: 3, d: 5}, titles: {"en":"Journalist’s Day", "th":"วันนักข่าว", "he":"יום העיתונאים"}},
-        {type: "D", start: {mon: 7, d: 1}, titles: {"en":"National Scout Organization Day", "th":"วันสถาปนาลูกเสือแห่งชาติ", "he":"יום הארגון הלאומי לצופים"}},
+        {type: "D", start: {mon: 7, d: 1}, inherits: "Natl Scout Org Day"},
         {type: "D", start: {mon: 9, d: 4}, titles: {"en":"Royal Thai Navy Submarine Memorial Day", "th":"วันเรือดำน้ำไทย"}},
         {type: "D", start: {mon: 9, d: 15}, titles: {"en":"Silpa Bhirasri Day", "th":"วันศิลป์ พีระศรี"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
