@@ -7,6 +7,8 @@
     first: {era: 1, y: 1776},
     "TODO":"American Veterinary Medical Association (AVMA) event calendar (6)?  Tweetspeak Poetry event calendar (6)?  Hasbro event calendar (3)?  Todd McCalla event calendar (2)?  McDonald’s event calendar (2)?  Dale Anderson event calendar (2)?  Camp Fire (organization) event calendar (3)?  American Heart Association event calendar (2)?  American Counseling Association event calendar (2)?  American Humane Association event calendar (3)?  American Public Health Association (APHA) event calendar (2)?, Major League Baseball event calendar (2)?  Whirlpool Corporation event calendar (2)?  PajamaGram event calendar (2)?  American Library Association (ALA) event calendar (2)?  Brownielocks event calendar (2 or 3)?  Pet Partners event calendar (3)?, YMCA event calendar (3)?  National Wildlife Federation (NWF) event calendar (2)?, Brewers Association event calendar (2)?  American Kennel Club event calendar (2)?  American Academy of Dermatology (AAD) event calendar (3)?  Secret Society of Happy People (SOHP) event calendar (3)?  American Cheese Society event calendar (3)?",
     evts: [
+        {type: "D", start: {mon: 6, wkd: [3], nth: 2}, titles: {"en":"World Pet Memorial Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-pet-memorial-day/"}, emoji: "🐕‍🦺", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
+
         {type: "D", start: {era: 1, y: 1998, mon: 10, d: 25}, inherits: "Love Your Body Day"},
         {type: "D", start: {era: 1, y: 2002, mon: 1, d: 5}, inherits: "No Pants Subway Ride Day"},
         {type: "D", start: {era: 1, y: 2003, mon: 1, d: 25}, inherits: "No Pants Subway Ride Day"},
