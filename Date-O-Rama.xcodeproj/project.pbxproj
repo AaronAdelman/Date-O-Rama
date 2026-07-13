@@ -457,6 +457,10 @@
 		A5A1D1DD2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */; };
 		A5A463F73004B27200763176 /* Scouting.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F63004B27200763176 /* Scouting.json */; };
 		A5A463F83004B27200763176 /* Scouting.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F63004B27200763176 /* Scouting.json */; };
+		A5A463FA3004E02C00763176 /* AVMA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F93004E02C00763176 /* AVMA.json */; };
+		A5A463FB3004E02C00763176 /* AVMA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F93004E02C00763176 /* AVMA.json */; };
+		A5A463FD3004E12100763176 /* Tweetspeak Poetry.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */; };
+		A5A463FE3004E12100763176 /* Tweetspeak Poetry.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */; };
 		A5A62D362A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D372A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D3C2A36582400EDBB6D /* ER (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D3B2A36582400EDBB6D /* ER (Julian).json */; };
@@ -1506,6 +1510,8 @@
 		A5A1D1D82A643FCA00DE345A /* TL (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TL (Chinese).json"; sourceTree = "<group>"; };
 		A5A1D1DB2A65A90D00DE345A /* Judaism (yohrtsayts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (yohrtsayts).json"; sourceTree = "<group>"; };
 		A5A463F63004B27200763176 /* Scouting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scouting.json; sourceTree = "<group>"; };
+		A5A463F93004E02C00763176 /* AVMA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AVMA.json; sourceTree = "<group>"; };
+		A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Tweetspeak Poetry.json"; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
 		A5A62D3B2A36582400EDBB6D /* ER (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ER (Julian).json"; sourceTree = "<group>"; };
 		A5A62D3E2A37663F00EDBB6D /* ET (Ethiopic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ET (Ethiopic).json"; sourceTree = "<group>"; };
@@ -2008,6 +2014,7 @@
 				A581B896284E60D800407D68 /* AT.json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A5D3D7E327FA20CC0099718A /* AU.json */,
+				A5A463F93004E02C00763176 /* AVMA.json */,
 				A5E292EB285A62B600925EBD /* AW.json */,
 				A5B999A1286229A300072FD5 /* AX.json */,
 				A501C8022861F97900211E33 /* AZ.json */,
@@ -2378,6 +2385,7 @@
 				A5FB22C628638FFB00B5042B /* TV.json */,
 				A5EFFFEC285B878900F2205F /* TW.json */,
 				A50DA51328686272008D54AE /* TW (Chinese).json */,
+				A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */,
 				A5EFFFB0285B808E00F2205F /* TZ.json */,
 				A5EFFFBB285B811A00F2205F /* UA.json */,
 				A5E13C4B2A399139009EDEFA /* UA (Julian).json */,
@@ -2901,6 +2909,7 @@
 				A58DFAD22EC1B2C900979AD1 /* UNITED.json in Resources */,
 				A5B999CE28622D4800072FD5 /* CU.json in Resources */,
 				A5CF465C2810D29A0088738D /* PL.json in Resources */,
+				A5A463FE3004E12100763176 /* Tweetspeak Poetry.json in Resources */,
 				A5D850AC280C9565005247BD /* NL.json in Resources */,
 				A52FA7DC2EFBB5960032A649 /* Baháʼí Faith.json in Resources */,
 				A5E495D728624D7A001BF40C /* EH.json in Resources */,
@@ -3086,6 +3095,7 @@
 				A5EFFFDB285B855E00F2205F /* SY.json in Resources */,
 				A5EFFFDD285B855E00F2205F /* AE.json in Resources */,
 				A5EFFFA9285B7F2E00F2205F /* SG.json in Resources */,
+				A5A463FA3004E02C00763176 /* AVMA.json in Resources */,
 				A5A463F83004B27200763176 /* Scouting.json in Resources */,
 				A575914E282BE43900675058 /* SK.json in Resources */,
 				A5E8BAE427FCCF0B0018CD36 /* BD.json in Resources */,
@@ -3538,6 +3548,7 @@
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A514B9C02D8310F0000046CC /* Star Trek.json in Resources */,
 				A581B897284E60D900407D68 /* AT.json in Resources */,
+				A5A463FD3004E12100763176 /* Tweetspeak Poetry.json in Resources */,
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
 				A5D850B7280C98FD005247BD /* ID.json in Resources */,
 				A575914A282BE3BE00675058 /* LU.json in Resources */,
@@ -3668,6 +3679,7 @@
 				A57797D32B8FC29900F68529 /* Islam (derived).json in Resources */,
 				A5A62D3F2A37663F00EDBB6D /* ET (Ethiopic).json in Resources */,
 				A5D8509C280C8F9D005247BD /* BG.json in Resources */,
+				A5A463FB3004E02C00763176 /* AVMA.json in Resources */,
 				A5B2CC742FFE348400CD9109 /* Red Cross and Red Crescent.json in Resources */,
 				A5EFFF5D285B5F9B00F2205F /* HK.json in Resources */,
 				A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */,
