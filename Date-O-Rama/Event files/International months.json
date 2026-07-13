@@ -6,7 +6,6 @@
     emoji: "🌐",
     evts: [
         {type: "M", start: {mon: 1}, titles: {"en":"Be Kind to Food Servers Month"}, urls: {"en":"https://nationaltoday.com/be-kind-to-food-servers-month/"}},
-        {type: "M", start: {mon: 1}, titles: {"en":"Fresh Florida Tomato Month"}, urls: {"en":"https://www.daysoftheyear.com/days/fresh-florida-tomato-month/"}, emoji: "🍅", first: {era: 1, y: 1989}, notes: {"en":"Created by the Florida Tomato Committee and Department of Agriculture"}},
         {type: "M", start: {mon: 1}, titles: {"en":"Artichoke and Asparagus Month"}, urls: {"en":"https://nationaltoday.com/artichoke-and-asparagus-month/"}},
         {type: "M", start: {mon: 11}, titles: {"en":"Trans Awareness Month"}, first: {era: 1, y: 2017}},
         {type: "M", start: {mon: 5}, titles: {"en":"Tracky Dack Day"}, urls: {"en":"https://trackydackday.com/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2011}, notes: {"en":"Created by TLC for Kids"}},
