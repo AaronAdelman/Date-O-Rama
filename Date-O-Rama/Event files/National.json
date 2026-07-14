@@ -1702,6 +1702,8 @@
         {type: "D", start: {mon: 7, d: 13}, titles: {"en":"Go West Day"}, urls: {"en":"https://www.checkiday.com/ac6da255d206f1e55ebcb4790449bf58/go-west-day"}, first: {era: 1, y: 2012}, emoji: "🐴"},
         {type: "D", start: {mon: 7, d: 13}, titles: {"en":"National Barbershop Music Appreciation Day"}, urls: {"en":"https://nationaltoday.com/national-barbershop-music-appreciation-day/"}, first: {era: 1, y: 2005}, notes: {"en":"Created by the Sweet Adelines"}},
         {type: "D", start: {mon: 7, d: 13}, titles: {"en":"National Beans ‘N’ Franks Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-beans-n-franks-day/"}, emoji: "🫘🌭"},
+        {type: "D", start: {mon: 7, d: 13}, titles: {"en":"National Nitrogen Ice Cream Day"}, urls: {"en":"https://www.holidayinsights.com/moreholidays/july/nitrogen-ice-cream-day.htm"}, emoji: "🍨", first: {era: 1, y: 2017}},
+        {type: "D", start: {mon: 7, d: 13}, titles: {"en":"National Tile Repair Day"}, urls: {"en":"https://nationaltoday.com/national-tile-repair-day/"}, emoji: "🀆", first: {era: 1, y: 2026}},
         {type: "D", start: {mon: 7, d: 14}, titles: {"en":"National Be Nice to Bugs Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-be-nice-to-bugs-day/"}, first: {era: 1, y: 2021}, emoji: "🐞", notes: {"en":"Created by Kiana Monson"}},
         {type: "D", start: {mon: 7, d: 14}, titles: {"en":"National Break Free from the Big Three Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-break-free-from-the-big-three-day/"}, first: {era: 1, y: 2021}, notes: {"en":"Created by Xfinity Mobile"}},
         {type: "D", start: {mon: 7, d: 14}, titles: {"en":"National Grand Marnier Day"}, urls: {"en":"https://www.daysoftheyear.com/days/grand-marnier-day/"}, emoji: "🥃"},
