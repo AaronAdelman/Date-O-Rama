@@ -17,7 +17,6 @@
 		A501C8042861F97A00211E33 /* AZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8022861F97900211E33 /* AZ.json */; };
 		A501C8062861FA9C00211E33 /* SO.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8052861FA9C00211E33 /* SO.json */; };
 		A501C8072861FA9C00211E33 /* SO.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8052861FA9C00211E33 /* SO.json */; };
-		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
 		A502D3DC28637D7D00A625A9 /* PW.json in Resources */ = {isa = PBXBuildFile; fileRef = A502D3DB28637D7D00A625A9 /* PW.json */; };
 		A502D3DE28637DA900A625A9 /* PY.json in Resources */ = {isa = PBXBuildFile; fileRef = A502D3DD28637DA900A625A9 /* PY.json */; };
 		A502D3DF28637DA900A625A9 /* PY.json in Resources */ = {isa = PBXBuildFile; fileRef = A502D3DD28637DA900A625A9 /* PY.json */; };
@@ -97,11 +96,6 @@
 		A514B9BE2D830EB3000046CC /* Star Wars.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BC2D830EB3000046CC /* Star Wars.json */; };
 		A514B9C02D8310F0000046CC /* Star Trek.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BF2D8310F0000046CC /* Star Trek.json */; };
 		A514B9C12D8310F0000046CC /* Star Trek.json in Resources */ = {isa = PBXBuildFile; fileRef = A514B9BF2D8310F0000046CC /* Star Trek.json */; };
-		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
-		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
-		A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */; };
-		A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */; };
-		A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0925C026AA00BC62C4 /* Thanks to.pdf */; };
 		A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */; };
 		A5166C732EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */; };
 		A5166C742EE9DD5200F23048 /* ASALDMLCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */; };
@@ -461,6 +455,18 @@
 		A5A463FB3004E02C00763176 /* AVMA.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463F93004E02C00763176 /* AVMA.json */; };
 		A5A463FD3004E12100763176 /* Tweetspeak Poetry.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */; };
 		A5A463FE3004E12100763176 /* Tweetspeak Poetry.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */; };
+		A5A465143005F58F00763176 /* I have a suggestion or request.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650A3005F58F00763176 /* I have a suggestion or request.md */; };
+		A5A465153005F58F00763176 /* Personal information policy.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650B3005F58F00763176 /* Personal information policy.md */; };
+		A5A465163005F58F00763176 /* What calendar systems are.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650D3005F58F00763176 /* What calendar systems are.md */; };
+		A5A465173005F58F00763176 /* What should I do if I have a.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650E3005F58F00763176 /* What should I do if I have a.md */; };
+		A5A465183005F58F00763176 /* Thanks to.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650C3005F58F00763176 /* Thanks to.md */; };
+		A5A465193005F58F00763176 /* I have a suggestion or request.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650A3005F58F00763176 /* I have a suggestion or request.md */; };
+		A5A4651A3005F58F00763176 /* Personal information policy.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650B3005F58F00763176 /* Personal information policy.md */; };
+		A5A4651B3005F58F00763176 /* What calendar systems are.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650D3005F58F00763176 /* What calendar systems are.md */; };
+		A5A4651C3005F58F00763176 /* What should I do if I have a.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650E3005F58F00763176 /* What should I do if I have a.md */; };
+		A5A4651D3005F58F00763176 /* Thanks to.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650C3005F58F00763176 /* Thanks to.md */; };
+		A5A465253005F6E000763176 /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = A5A465243005F6E000763176 /* Textual */; };
+		A5A465273005F75B00763176 /* ASAMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A465263005F75B00763176 /* ASAMarkdownView.swift */; };
 		A5A62D362A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D372A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D3C2A36582400EDBB6D /* ER (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D3B2A36582400EDBB6D /* ER (Julian).json */; };
@@ -1303,8 +1309,6 @@
 		A501C7FF285F7F4200211E33 /* TG.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TG.json; sourceTree = "<group>"; };
 		A501C8022861F97900211E33 /* AZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AZ.json; sourceTree = "<group>"; };
 		A501C8052861FA9C00211E33 /* SO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SO.json; sourceTree = "<group>"; };
-		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
-		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502D3DB28637D7D00A625A9 /* PW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PW.json; sourceTree = "<group>"; };
 		A502D3DD28637DA900A625A9 /* PY.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PY.json; sourceTree = "<group>"; };
 		A502D3E128637E2800A625A9 /* RE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RE.json; sourceTree = "<group>"; };
@@ -1344,15 +1348,6 @@
 		A514B9B82D830B42000046CC /* Disney.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Disney.json; sourceTree = "<group>"; };
 		A514B9BC2D830EB3000046CC /* Star Wars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Star Wars.json"; sourceTree = "<group>"; };
 		A514B9BF2D8310F0000046CC /* Star Trek.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Star Trek.json"; sourceTree = "<group>"; };
-		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
-		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
-		A5150F0625C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
-		A5150F0825C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/Personal information policy.pdf"; sourceTree = "<group>"; };
-		A5150F0A25C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/Thanks to.pdf"; sourceTree = "<group>"; };
-		A5150F1425C026B000BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/Personal information policy.pdf"; sourceTree = "<group>"; };
-		A5150F1525C026B700BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/Thanks to.pdf"; sourceTree = "<group>"; };
-		A5150F1625C026BB00BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
-		A5150F1725C026C200BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
 		A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A5166C722EE9DD5200F23048 /* ASALDMLCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALDMLCalendar.swift; sourceTree = "<group>"; };
 		A5166C762EE9DE8000F23048 /* ASALDMLApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALDMLApplier.swift; sourceTree = "<group>"; };
@@ -1512,6 +1507,17 @@
 		A5A463F63004B27200763176 /* Scouting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scouting.json; sourceTree = "<group>"; };
 		A5A463F93004E02C00763176 /* AVMA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AVMA.json; sourceTree = "<group>"; };
 		A5A463FC3004E12100763176 /* Tweetspeak Poetry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Tweetspeak Poetry.json"; sourceTree = "<group>"; };
+		A5A4650F3005F58F00763176 /* en */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = en; path = "en.lproj/Thanks to.md"; sourceTree = "<group>"; };
+		A5A465103005F58F00763176 /* en */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = en; path = "en.lproj/Personal information policy.md"; sourceTree = "<group>"; };
+		A5A465113005F58F00763176 /* en */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = en; path = "en.lproj/What calendar systems are.md"; sourceTree = "<group>"; };
+		A5A465123005F58F00763176 /* en */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = en; path = "en.lproj/I have a suggestion or request.md"; sourceTree = "<group>"; };
+		A5A465133005F58F00763176 /* en */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = en; path = "en.lproj/What should I do if I have a.md"; sourceTree = "<group>"; };
+		A5A4651E3005F65A00763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/I have a suggestion or request.md"; sourceTree = "<group>"; };
+		A5A4651F3005F66000763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/Personal information policy.md"; sourceTree = "<group>"; };
+		A5A465203005F66700763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/Thanks to.md"; sourceTree = "<group>"; };
+		A5A465213005F67B00763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/What calendar systems are.md"; sourceTree = "<group>"; };
+		A5A465223005F68100763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/What should I do if I have a.md"; sourceTree = "<group>"; };
+		A5A465263005F75B00763176 /* ASAMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMarkdownView.swift; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
 		A5A62D3B2A36582400EDBB6D /* ER (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ER (Julian).json"; sourceTree = "<group>"; };
 		A5A62D3E2A37663F00EDBB6D /* ET (Ethiopic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ET (Ethiopic).json"; sourceTree = "<group>"; };
@@ -1925,6 +1931,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A465253005F6E000763176 /* Textual in Frameworks */,
 				A545D8592924234C0055F457 /* SwiftAA in Frameworks */,
 				A5F284792E42426200EE4F0C /* JulianDayNumber in Frameworks */,
 			);
@@ -1952,7 +1959,6 @@
 			isa = PBXGroup;
 			children = (
 				A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */,
-				A5150EF525C0237300BC62C4 /* PDFKitView.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -2510,11 +2516,11 @@
 		A5980BBF25B8BB5400A07DBC /* About */ = {
 			isa = PBXGroup;
 			children = (
-				A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */,
-				A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */,
-				A5150F0925C026AA00BC62C4 /* Thanks to.pdf */,
-				A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */,
-				A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */,
+				A5A4650A3005F58F00763176 /* I have a suggestion or request.md */,
+				A5A4650B3005F58F00763176 /* Personal information policy.md */,
+				A5A4650C3005F58F00763176 /* Thanks to.md */,
+				A5A4650D3005F58F00763176 /* What calendar systems are.md */,
+				A5A4650E3005F58F00763176 /* What should I do if I have a.md */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -2714,6 +2720,7 @@
 				A5545CF92E4CE4B5003B26FA /* ASALocationWithClocksCell.swift */,
 				A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */,
 				A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */,
+				A5A465263005F75B00763176 /* ASAMarkdownView.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
 				A5C2347D2ECE210D00C79C9D /* ASAOKButton.swift */,
@@ -2779,6 +2786,7 @@
 			packageProductDependencies = (
 				A545D8582924234C0055F457 /* SwiftAA */,
 				A5F284782E42426200EE4F0C /* JulianDayNumber */,
+				A5A465243005F6E000763176 /* Textual */,
 			);
 			productName = "Date-O-Rama";
 			productReference = A5C77BF92433361400CFEE47 /* Date-O-Rama.app */;
@@ -2866,6 +2874,7 @@
 			packageReferences = (
 				A545D84F292422690055F457 /* XCRemoteSwiftPackageReference "SwiftAA" */,
 				A5F284772E42426200EE4F0C /* XCRemoteSwiftPackageReference "JulianDayNumber" */,
+				A5A465233005F6E000763176 /* XCRemoteSwiftPackageReference "textual" */,
 			);
 			productRefGroup = A5C77BFA2433361400CFEE47 /* Products */;
 			projectDirPath = "";
@@ -3025,6 +3034,11 @@
 				A52A523A2C2B457E00AAA012 /* Localizable.xcstrings in Resources */,
 				A5E292D8285A5AD600925EBD /* KZ.json in Resources */,
 				A5EB85192869DBB900C9321A /* LB (Julian).json in Resources */,
+				A5A465143005F58F00763176 /* I have a suggestion or request.md in Resources */,
+				A5A465153005F58F00763176 /* Personal information policy.md in Resources */,
+				A5A465163005F58F00763176 /* What calendar systems are.md in Resources */,
+				A5A465173005F58F00763176 /* What should I do if I have a.md in Resources */,
+				A5A465183005F58F00763176 /* Thanks to.md in Resources */,
 				A576C39428171F96005AC73D /* NZ.json in Resources */,
 				A5E495DE28624DDB001BF40C /* FK.json in Resources */,
 				A57797D52B8FC43900F68529 /* BA (Julian).json in Resources */,
@@ -3432,7 +3446,6 @@
 				A5E19E112D5535F4009A8524 /* Harry Potter.json in Resources */,
 				A5759141282BE28800675058 /* NO.json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
-				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5EFFF4F285B5D7E00F2205F /* ET.json in Resources */,
 				A5D850BA280C99B4005247BD /* BR.json in Resources */,
 				A501C8032861F97A00211E33 /* AZ.json in Resources */,
@@ -3447,7 +3460,6 @@
 				A5E496202862522F001BF40C /* KN.json in Resources */,
 				A5E4960828624F9A001BF40C /* GW.json in Resources */,
 				A5EFFFDC285B855E00F2205F /* AE.json in Resources */,
-				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5EFFF42285B5CE800F2205F /* CR.json in Resources */,
 				A5AD8B282F390142008160FF /* Adrienne Sioux Koopersmith.json in Resources */,
 				A5A1D1DC2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */,
@@ -3475,7 +3487,6 @@
 				A5EE19EB2806019500B0B9C2 /* Sikhism (supplemental).json in Resources */,
 				A5A62D362A322BD500EDBB6D /* African Union.json in Resources */,
 				A5D3D7E127FA18460099718A /* IN.json in Resources */,
-				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5EFFF48285B5CE800F2205F /* CW.json in Resources */,
 				A5E4963B2862535D001BF40C /* MH.json in Resources */,
 				A5FB22B528638E9200B5042B /* TC.json in Resources */,
@@ -3535,7 +3546,6 @@
 				A5B9999F286228E000072FD5 /* AM.json in Resources */,
 				A5E8BAE327FCCF0B0018CD36 /* BD.json in Resources */,
 				A5E495E728624E5D001BF40C /* GD.json in Resources */,
-				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A522A2D52E439D5B00F8AAEB /* Moon.json in Resources */,
 				A5EFFF96285B7DB700F2205F /* PA.json in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
@@ -3658,8 +3668,12 @@
 				A5BDE77C26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A5EFFFB7285B808E00F2205F /* TT.json in Resources */,
 				A581B88B284E5B9C00407D68 /* SM.json in Resources */,
+				A5A465193005F58F00763176 /* I have a suggestion or request.md in Resources */,
+				A5A4651A3005F58F00763176 /* Personal information policy.md in Resources */,
+				A5A4651B3005F58F00763176 /* What calendar systems are.md in Resources */,
+				A5A4651C3005F58F00763176 /* What should I do if I have a.md in Resources */,
+				A5A4651D3005F58F00763176 /* Thanks to.md in Resources */,
 				A5FB22D92863912500B5042B /* YT.json in Resources */,
-				A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */,
 				A55683812F02FB220030EF66 /* Bob Matthews.json in Resources */,
 				A5E759112768D0F8008D7D57 /* EU.json in Resources */,
 				A5B999C628622C7100072FD5 /* CK.json in Resources */,
@@ -3926,7 +3940,6 @@
 			files = (
 				A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */,
 				A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */,
-				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
 				A5CF4653280F2E3F0088738D /* Line.swift in Sources */,
 				A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
@@ -4047,6 +4060,7 @@
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A59D80222600C57800FD8BBF /* ASACalendar.swift in Sources */,
 				A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */,
+				A5A465273005F75B00763176 /* ASAMarkdownView.swift in Sources */,
 				A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */,
 				A5D135BD27C537C500A1A525 /* ASACalendarWithQuarters.swift in Sources */,
 				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
@@ -4168,49 +4182,49 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */ = {
+		A5A4650A3005F58F00763176 /* I have a suggestion or request.md */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A502275B25F65DA600FA47B8 /* en */,
-				A502276225F65DAE00FA47B8 /* he */,
+				A5A465123005F58F00763176 /* en */,
+				A5A4651E3005F65A00763176 /* he */,
 			);
-			name = "I have a suggestion or request.pdf";
+			name = "I have a suggestion or request.md";
 			sourceTree = "<group>";
 		};
-		A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */ = {
+		A5A4650B3005F58F00763176 /* Personal information policy.md */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5150F0425C026AA00BC62C4 /* en */,
-				A5150F1625C026BB00BC62C4 /* he */,
+				A5A465103005F58F00763176 /* en */,
+				A5A4651F3005F66000763176 /* he */,
 			);
-			name = "What calendar systems are.pdf";
+			name = "Personal information policy.md";
 			sourceTree = "<group>";
 		};
-		A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */ = {
+		A5A4650C3005F58F00763176 /* Thanks to.md */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5150F0625C026AA00BC62C4 /* en */,
-				A5150F1725C026C200BC62C4 /* he */,
+				A5A4650F3005F58F00763176 /* en */,
+				A5A465203005F66700763176 /* he */,
 			);
-			name = "What should I do if I have a.pdf";
+			name = "Thanks to.md";
 			sourceTree = "<group>";
 		};
-		A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */ = {
+		A5A4650D3005F58F00763176 /* What calendar systems are.md */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5150F0825C026AA00BC62C4 /* en */,
-				A5150F1425C026B000BC62C4 /* he */,
+				A5A465113005F58F00763176 /* en */,
+				A5A465213005F67B00763176 /* he */,
 			);
-			name = "Personal information policy.pdf";
+			name = "What calendar systems are.md";
 			sourceTree = "<group>";
 		};
-		A5150F0925C026AA00BC62C4 /* Thanks to.pdf */ = {
+		A5A4650E3005F58F00763176 /* What should I do if I have a.md */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5150F0A25C026AA00BC62C4 /* en */,
-				A5150F1525C026B700BC62C4 /* he */,
+				A5A465133005F58F00763176 /* en */,
+				A5A465223005F68100763176 /* he */,
 			);
-			name = "Thanks to.pdf";
+			name = "What should I do if I have a.md";
 			sourceTree = "<group>";
 		};
 		A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */ = {
@@ -4639,6 +4653,14 @@
 				kind = branch;
 			};
 		};
+		A5A465233005F6E000763176 /* XCRemoteSwiftPackageReference "textual" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/textual";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 		A5F284772E42426200EE4F0C /* XCRemoteSwiftPackageReference "JulianDayNumber" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sbooth/JulianDayNumber?tab=readme-ov-file";
@@ -4664,6 +4686,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A545D84F292422690055F457 /* XCRemoteSwiftPackageReference "SwiftAA" */;
 			productName = SwiftAA;
+		};
+		A5A465243005F6E000763176 /* Textual */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5A465233005F6E000763176 /* XCRemoteSwiftPackageReference "textual" */;
+			productName = Textual;
 		};
 		A5F284782E42426200EE4F0C /* JulianDayNumber */ = {
 			isa = XCSwiftPackageProductDependency;
