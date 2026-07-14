@@ -86,7 +86,7 @@ struct ASALocationWithClocksSectionView: View {
             }
 #endif
         } // HStack
-            .padding()
+            .padding(.horizontal)
             .listRowInsets(EdgeInsets(
                 top: 0,
                 leading: 0,
