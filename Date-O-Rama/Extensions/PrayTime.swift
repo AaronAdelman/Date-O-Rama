@@ -36,18 +36,18 @@ import CoreLocation
 // MARK:  - Public types
 
 // Calculation Methods
-enum ASACalculationMethod: String, Codable {
-    case Jafari         // Ithna Ashari
-    case Karachi        // University of Islamic Sciences, Karachi
-    case ISNA           // Islamic Society of North America (ISNA)
-    case MWL            // Muslim World League (MWL)
-    case Makkah         // Umm al-Qura, Makkah
-    case Egypt          // Egyptian General Authority of Survey
-    case Tehran         // Institute of Geophysics, University of Tehran
+enum ASACalculationMethod {
+    case jafari         // Ithna Ashari
+    case karachi        // University of Islamic Sciences, Karachi
+    case isna           // Islamic Society of North America (ISNA)
+    case mwl            // Muslim World League (MWL)
+    case makkah         // Umm al-Qura, Makkah
+    case egypt          // Egyptian General Authority of Survey
+    case tehran         // Institute of Geophysics, University of Tehran
 } // enum ASACalculationMethod
 
 // Juristic Methods
-enum ASAJuristicMethodForAsr: String {
+enum ASAJuristicMethodForAsr {
     case shafii     // Shafii (standard)
     case hanafi     // Hanafi
 } // enum ASAJuristicMethodForAsr
@@ -186,7 +186,7 @@ extension ASACalculationMethod {
     /// Calc Method Parameters
     var methodParams: ASAMethodParameters {
         switch self {
-        case .Jafari:
+        case .jafari:
 //            let Jvalues: Array<Double> = [
 //                16,
 //                0,
@@ -197,7 +197,7 @@ extension ASACalculationMethod {
 //            return Jvalues
             return ASAMethodParameters(fajrDegrees: 16, maghribFlag: false, maghribDegrees: 4, ishaFlag: false, ishaDegrees: 14)
             
-        case .Karachi:
+        case .karachi:
 //            let Kvalues: Array<Double> = [
 //                18,
 //                1,
@@ -208,7 +208,7 @@ extension ASACalculationMethod {
 //            return Kvalues
         return ASAMethodParameters(fajrDegrees: 18, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 18)
             
-        case .ISNA:
+        case .isna:
 //            let Ivalues: Array<Double> = [
 //                15,
 //                1,
@@ -219,7 +219,7 @@ extension ASACalculationMethod {
 //            return Ivalues
           return ASAMethodParameters(fajrDegrees: 15, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 15)
             
-        case .MWL:
+        case .mwl:
 //            let Mvalues: Array<Double> = [
 //                18,
 //                1,
@@ -230,7 +230,7 @@ extension ASACalculationMethod {
 //            return Mvalues
         return ASAMethodParameters(fajrDegrees: 18, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 17)
             
-        case .Makkah:
+        case .makkah:
 //            let Mavalues: Array<Double> = [
 //                18.5,
 //                1,
@@ -241,7 +241,7 @@ extension ASACalculationMethod {
 //            return Mavalues
             return ASAMethodParameters(fajrDegrees: 18.5, maghribFlag: true, maghribDegrees: 0, ishaFlag: true, ishaDegrees: 90)
             
-        case .Egypt:
+        case .egypt:
 //            let Evalues: Array<Double> = [
 //                19,
 //                1,
@@ -252,7 +252,7 @@ extension ASACalculationMethod {
 //            return Evalues
             return ASAMethodParameters(fajrDegrees: 19, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 17.5)
             
-        case .Tehran:
+        case .tehran:
 //            let Tvalues: Array<Double> = [
 //                17.7,
 //                0,

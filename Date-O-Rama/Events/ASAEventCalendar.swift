@@ -569,19 +569,19 @@ class ASAEventCalendar {
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> ASAMatchResult {
         var event: ASAIslamicPrayerTimeEvent
         switch tweakedStartDateSpecification.pointEventType {
-        case .fajr:
+        case .fajrMWL, .fajrISNA, .fajrEgypt, .fajrJafari, .fajrMakkah, .fajrTehran, .fajrKarachi:
             event = .Fajr
             
-        case .dhuhr:
+        case .dhuhrMWL, .dhuhrISNA, .dhuhrEgypt, .dhuhrJafari, .dhuhrMakkah, .dhuhrTehran, .dhuhrKarachi:
             event = .Dhuhr
             
-        case .asrShafii, .asrHanafi:
+        case .asrHanafiMWL, .asrShafiiMWL, .asrHanafiISNA, .asrShafiiISNA, .asrHanafiEgypt, .asrShafiiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrShafiiJafari, .asrShafiiMakkah, .asrShafiiTehran, .asrHanafiKarachi, .asrShafiiKarachi:
             event = .Asr
             
-        case .maghrib:
+        case .maghribMWL, .maghribISNA, .maghribEgypt, .maghribJafari, .maghribMakkah, .maghribTehran, .maghribKarachi:
             event = .Maghrib
             
-        case .isha:
+        case .ishaMWL, .ishaISNA, .ishaEgypt, .ishaJafari, .ishaMakkah, .ishaTehran, .ishaKarachi:
             event = .Isha
             
         default:
@@ -590,10 +590,36 @@ class ASAEventCalendar {
         
         let latitude: CLLocationDegrees = locationData.location.coordinate.latitude
         let longitude: CLLocationDegrees = locationData.location.coordinate.longitude
-        let calcMethod: ASACalculationMethod = tweakedStartDateSpecification.calculationMethod ?? .Jafari
-        let asrJuristic: ASAJuristicMethodForAsr = (
-            tweakedStartDateSpecification.pointEventType == .asrHanafi
-        ) ? .hanafi : .shafii
+        let calcMethod: ASACalculationMethod = {
+            switch tweakedStartDateSpecification.pointEventType {
+            case .generic, .twilight, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .rise, .set, .none:
+                fatalError()
+            case .fajrJafari, .dhuhrJafari, .asrShafiiJafari, .asrHanafiJafari, .maghribJafari, .ishaJafari:
+                return .jafari
+            case .fajrKarachi, .dhuhrKarachi, .asrShafiiKarachi, .asrHanafiKarachi, .maghribKarachi, .ishaKarachi:
+                return .karachi
+            case .fajrISNA, .dhuhrISNA, .asrShafiiISNA, .asrHanafiISNA, .maghribISNA, .ishaISNA:
+                return .isna
+            case .fajrMWL, .dhuhrMWL, .asrShafiiMWL, .asrHanafiMWL, .maghribMWL, .ishaMWL:
+                return .mwl
+            case .fajrMakkah, .dhuhrMakkah, .asrShafiiMakkah, .asrHanafiMakkah, .maghribMakkah, .ishaMakkah:
+                return .makkah
+            case .fajrEgypt, .dhuhrEgypt, .asrShafiiEgypt, .asrHanafiEgypt, .maghribEgypt, .ishaEgypt:
+                return .egypt
+            case .fajrTehran, .dhuhrTehran, .asrShafiiTehran, .asrHanafiTehran, .maghribTehran, .ishaTehran:
+                return .tehran
+            }
+        }()
+        let isAsrHanafi: Bool = {
+            switch tweakedStartDateSpecification.pointEventType {
+            case .asrHanafiMWL, .asrHanafiISNA, .asrHanafiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrHanafiKarachi:
+                return true
+                
+            default:
+                return false
+            }
+        }()
+        let asrJuristic: ASAJuristicMethodForAsr = isAsrHanafi ? .hanafi : .shafii
         let dhuhrMinutes: Double = tweakedStartDateSpecification.dhuhrMinutes ?? 0.0
         let adjustHighLats: ASAAdjustingMethodForHigherLatitudes = tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight
         let events = date.prayerTimesSunsetTransition(latitude: latitude, longitude: longitude, calcMethod: calcMethod, asrJuristic: asrJuristic, dhuhrMinutes: dhuhrMinutes, adjustHighLats: adjustHighLats, events: [event])
@@ -797,7 +823,7 @@ class ASAEventCalendar {
             let offset = dateSpecification.offset ?? 0.0
             return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             
-        case .isha, .maghrib, .asrShafii, .asrHanafi, .dhuhr, .fajr:
+        case .ishaMWL, .ishaISNA, .ishaEgypt, .ishaJafari, .ishaMakkah, .ishaTehran, .ishaKarachi, .maghribMWL, .maghribISNA, .maghribEgypt, .maghribJafari, .maghribMakkah, .maghribTehran, .maghribKarachi, .asrHanafiMWL, .asrShafiiMWL, .asrHanafiISNA, .asrShafiiISNA, .asrHanafiEgypt, .asrShafiiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrShafiiJafari, .asrShafiiMakkah, .asrShafiiTehran, .asrHanafiKarachi, .asrShafiiKarachi, .dhuhrMWL, .dhuhrISNA, .dhuhrEgypt, .dhuhrJafari, .dhuhrMakkah, .dhuhrTehran, .dhuhrKarachi, .fajrMWL, .fajrISNA, .fajrEgypt, .fajrJafari, .fajrMakkah, .fajrTehran, .fajrKarachi:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
             
         case .rise, .set:

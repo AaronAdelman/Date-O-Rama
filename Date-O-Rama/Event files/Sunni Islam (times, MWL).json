@@ -7,11 +7,11 @@
     evts: [
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "Karachi"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "Karachi"}},
+        {inherits: "Dhuhr", type: "pt", start: {ptType: "DhuhrISNA"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafiiKarachi"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafiKarachi"}},
         
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "MWL"}, notes: {"en":"Muslim World League"}},
-        {titles: {"en":"Fajr (MWL)", "ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)", "he":"פג׳ר (MWL)"}, type: "pt", start: {ptType: "Fajr", calcMethod: "MWL"}, notes: {"en":"Muslim World League"}},
+        {inherits: "Isha", type: "pt", start: {ptType: "IshaMWL"}, notes: {"en":"Muslim World League"}},
+        {titles: {"en":"Fajr (MWL)", "ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)", "he":"פג׳ר (MWL)"}, type: "pt", start: {ptType: "FajrMWL"}, notes: {"en":"Muslim World League"}},
     ]
 }

@@ -8,11 +8,10 @@
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
 
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        
+        {inherits: "Isha", type: "pt", start: {ptType: "IshaISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Fajr", type: "pt", start: {ptType: "FajrISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Dhuhr", type: "pt", start: {ptType: "DhuhrISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafiiISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafiISNA"}, notes: {"en":"Islamic Society of North America"}},
     ]
 }
