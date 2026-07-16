@@ -7,7 +7,7 @@
     evts: [
         {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", start: {mon: 1, d: 2}, titles: {"en":"Feast of Saint Gregory Nazianzen"}, notes: {"en":"Christmastide (day 9)"}},
-        {type: "D", start: {mon: 1, d: 2}, inherits: "St Basil’s Day", notes: {"en":"Christmastide (day 9)\nFeast of Saint Basil the Great"}},
+        {type: "D", start: {mon: 1, d: 2}, inherits: "St Basil", notes: {"en":"Christmastide (day 9)\nFeast of Saint Basil the Great"}},
         {type: "D", start: {mon: 1, d: 3}, titles: {"br":"Gouel an anv a Jezuz","de":"Namen-Jesu-Fest","en":"Feast of the Holy Name of Jesus","es":"Fiesta del Santísimo Nombre de Jesús","hr":"Presveto Ime Isusovo","id":"Hari Raya Nama Tersuci Yesus","it":"Santissimo Nome di Gesù","nb":"Jesu navnedag","nl":"Zoete Naam Jezus","nn":"Jesu namnedag","pt":"Festa do Santíssimo Nome de Jesus","sv":"Jesu heliga namn"}, notes: {"en":"Christmastide (day 10)"}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {type: "D", start: {mon: 1, d: 4}, titles: {"en":"Feast of Saint Elizabeth Ann Seton"}, notes: {"en":"Christmastide (day 11)"}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {type: "D", start: {mon: 1, d: 5}, inherits: "12th Night"},
@@ -51,10 +51,10 @@
         {titles: {"en":"Feast of Saints Perpetua and Felicity"}, type: "D", start: {mon: 3, d: 7}},
         {titles: {"en":"Feast of Saint John of God"}, type: "D", start: {mon: 3, d: 8}},
         {titles: {"en":"Feast of Saint Frances of Rome"}, type: "D", start: {mon: 3, d: 9}},
-        {type: "D", start: {mon: 3, d: 17}, inherits: "St Patrick’s Day"},
+        {type: "D", start: {mon: 3, d: 17}, inherits: "St Patrick"},
         {titles: {"en":"Feast of Saint Cyril of Jerusalem"}, type: "D", start: {mon: 3, d: 18}},
 
-        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph’s Day"},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph"},
 
         {titles: {"en":"Feast of Saint Turibius of Mogrovejo"}, type: "D", start: {mon: 3, d: 23}},
 
@@ -67,7 +67,7 @@
         {titles: {"en":"Feast of Saint Stanislaus"}, type: "D", start: {mon: 4, d: 11}},
         {titles: {"en":"Feast of Saint Martin I"}, type: "D", start: {mon: 4, d: 13}},
         {titles: {"en":"Feast of Saint Anselm of Canterbury"}, type: "D", start: {mon: 4, d: 21}},
-        {type: "D", start: {mon: 4, d: 23}, inherits: "St George’s Day"},
+        {type: "D", start: {mon: 4, d: 23}, inherits: "St George"},
         {titles: {"en":"Feast of Saint Fidelis of Sigmaringen"}, type: "D", start: {mon: 4, d: 24}},
         {type: "D", start: {mon: 4, d: 25}, inherits: "St Mark the Evangelist"},
         {titles: {"en":"Feast of Saint Peter Chanel"}, type: "D", start: {mon: 4, d: 28}},
@@ -104,7 +104,7 @@
         {titles: {"en":"Feast of Saint Aloysius Gonzaga"}, type: "D", start: {mon: 6, d: 21}},
         {titles: {"en":"Feast of Saint Paulinus of Nola or Saints John Fisher and Thomas More"}, type: "D", start: {mon: 6, d: 22}},
         {inherits: "St John’s Eve", type: "D", start: {mon: 6, d: 23}},
-        {type: "D", start: {mon: 6, d: 24}, inherits: "St John’s Day"},
+        {type: "D", start: {mon: 6, d: 24}, inherits: "St John"},
         
         {titles: {"en":"Feast of Saint Cyril of Alexandria"}, type: "D", start: {mon: 6, d: 27}},
         {titles: {"en":"Feast of Saint Irenaeus"}, type: "D", start: {mon: 6, d: 28}},
@@ -113,7 +113,7 @@
 
         {titles: {"en":"Feast of the First Martyrs of the Church of Rome"}, type: "D", start: {mon: 6, d: 30}},
         
-        {type: "D", start: {mon: 7, d: 3}, inherits: "St Thomas Day"},
+        {type: "D", start: {mon: 7, d: 3}, inherits: "St Thomas"},
         {inherits: "St Elizabeth of Portugal", type: "D", start: {mon: 7, d: 4}},
         {titles: {"en":"Feast of Saint Anthony Zaccaria"}, type: "D", start: {mon: 7, d: 5}},
         {titles: {"en":"Feast of Saint Maria Goretti"}, type: "D", start: {mon: 7, d: 6}},
@@ -231,7 +231,7 @@
         {titles: {"en":"Feast of Saint Clement I or Saint Columban"}, type: "D", start: {mon: 11, d: 23}},
         {titles: {"en":"Feast of Saint Andrew Dung-Lac and his companions"}, type: "D", start: {mon: 11, d: 24}},
         {type: "D", start: {mon: 11, d: 25}, inherits: "St Catherine of Alexandria"},
-        {type: "D", start: {mon: 11, d: 30}, inherits: "St Andrew’s Day"},
+        {type: "D", start: {mon: 11, d: 30}, inherits: "St Andrew"},
         
         {inherits: "Christ the King", type: "D", start: {mon: 11, d: 20, thruD: 26, wkd: [1]}},
         {inherits: "1st Advent Sunday", type: "D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}},
@@ -241,21 +241,21 @@
         
         {inherits: "St Francis Xavier", type: "D", start: {mon: 12, d: 3}},
         {titles: {"en":"Feast of Saint John Damascene"}, type: "D", start: {mon: 12, d: 4}},
-        {type: "D", start: {mon: 12, d: 6}, inherits: "St Nicholas Day"},
+        {type: "D", start: {mon: 12, d: 6}, inherits: "St Nicholas"},
         {type: "D", start: {mon: 12, d: 7}, inherits: "St Ambrose"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {titles: {"en":"Feast of Saint Juan Diego"}, type: "D", start: {mon: 12, d: 9}},
         {titles: {"en":"Feast of Our Lady of Loreto"}, type: "D", start: {mon: 12, d: 10}},
         {titles: {"en":"Feast of Saint Damasus I"}, type: "D", start: {mon: 12, d: 11}},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Our Lady of Guadalupe", first: {era: 1, y: 1531}},
-        {inherits: "St Lucia Day", type: "D", start: {mon: 12, d: 13}},
+        {inherits: "St Lucia", type: "D", start: {mon: 12, d: 13}},
         {titles: {"en":"Feast of Saint John of the Cross"}, type: "D", start: {mon: 12, d: 14}},
         {titles: {"en":"Feast of Saint Peter Canisius", "he":"החג של פטרוס קניזיוס הקדוש"}, type: "D", start: {mon: 12, d: 21}},
         {titles: {"en":"Feast of Saint John of Kanty"}, type: "D", start: {mon: 12, d: 23}},
 
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen"},
         {type: "D", start: {mon: 12, d: 27}, inherits: "St John the Apostle"},
         {type: "D", start: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
         {inherits: "St Thomas Becket", type: "D", start: {mon: 12, d: 29}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
@@ -266,13 +266,13 @@
         {titles: {"en":"Lammas Day"}, type: "D", start: {mon: 8, d: 1}, urls: {"en":"https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},
 
         
-        {type: "D", start: {mon: 5, d: 4}, inherits: "St Florian’s Day"},
-        {type: "D", start: {mon: 11, d: 15}, inherits: "St Leopold’s Day"},
-        {inherits: "St Maroun Day", type: "D", start: {mon: 2, d: 9}},
+        {type: "D", start: {mon: 5, d: 4}, inherits: "St Florian"},
+        {type: "D", start: {mon: 11, d: 15}, inherits: "St Leopold"},
+        {inherits: "St Maroun", type: "D", start: {mon: 2, d: 9}},
         {inherits: "St Rosalia", type: "D", start: {mon: 7, d: 14}},
         {type: "D", start: {mon: 7, d: 15}, inherits: "St Vladimir"},
         {type: "D", start: {mon: 9, d: 5}, inherits: "St Teresa of Calcutta", first: {era: 1, y: 2016}},
-        {type: "D", start: {mon: 9, d: 28}, inherits: "St Wenceslas Day", first: {era: 1, y: 935}},
+        {type: "D", start: {mon: 9, d: 28}, inherits: "St Wenceslas", first: {era: 1, y: 935}},
         {type: "D", start: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {type: "D", start: {mon: 3, d: 17}, titles: {"en":"Saint Gertrude of Nivelles Day"}, urls: {"en":"https://www.daysoftheyear.com/days/saint-gertrude-of-nivelles-day/"}, first: {era: 1, y: 1677}},
 

@@ -26,7 +26,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
     ],
     tpls: {

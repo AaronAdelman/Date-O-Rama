@@ -11,7 +11,7 @@
         {type: "D", start: {mon: 1, d: 2, wkd: [3]}, inherits: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 3, wkd: [2, 3]}, inherits: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/international-new-years-day"}},
         {type: "D", start: {mon: 1, d: 2, wkd: [2]}, titles: {"en":"Festival Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/new-years-eve"}},
-        {type: "D", start: {mon: 3, d: 17}, inherits: "St Patrick’s Day", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/st-patricks-day"}},
+        {type: "D", start: {mon: 3, d: 17}, inherits: "St Patrick", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/st-patricks-day"}},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

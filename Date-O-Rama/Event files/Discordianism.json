@@ -111,7 +111,7 @@
         {type: "D", start: {mon: 6, d: 15}, inherits: "Liberation Day", urls: {"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {type: "D", start: {mon: 6, d: 18}, titles: {"en":"Confumas"}, urls: {"en":"https://www.fsofcabal.com/holydays/03-23-confumas"}},
         {type: "D", start: {mon: 6, d: 21}, titles: {"en":"Imaginary Friend Day"}, notes: {"en":"Captain Tuttle Day\nWhollyday\n26 Confusion"}, inherits: "EDH"},
-        {type: "D", start: {mon: 6, d: 23}, inherits: "St George’s Day", notes: {"en":"Whollyday\n28 Confusion"}},
+        {type: "D", start: {mon: 6, d: 23}, inherits: "St George", notes: {"en":"Whollyday\n28 Confusion"}},
         {type: "D", start: {mon: 6, d: 23}, inherits: "Unknown Saints Day", inherits: "HDH"},
         {type: "D", start: {mon: 6, d: 23}, titles: {"en":"Saint Rufus’ Day"}, urls: {"en":"https://www.fsofcabal.com/holydays/03-28-saint-rufus-day"}},
         {type: "D", start: {mon: 6, d: 24}, inherits: "Unknown Saints Day", urls: {"en":"https://www.fsofcabal.com/holydays/03-29-unknown-saints-day"}},

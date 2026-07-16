@@ -12,10 +12,10 @@
         {type: "D", start: {mon: 2, d: 11}, inherits: "Lateran Treaty Day", urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/lateran-treaty-day"}},
         {type: "D", start: {mon: 3, d: 13}, titles: {"en":"Anniversary of the election of Pope Francis", "it":"Anniversario dell’Elezione del Santo Padre"}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/pope-francis-election"}, first: {era: 1, y: 2013}, end: {era: 1, y: 2024}},
         {type: "D", start: {mon: 5, d: 8}, titles: {"en":"Anniversary of the Election of Pope Leo XIV", "it":"Anniversario dell’Elezione del Santo Padre"}, first: {era: 1, y: 2025}},
-        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph’s Day"},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 4, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/st-georges-day"}, inherits: "St George’s Day"},
+        {type: "D", start: {mon: 4, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/st-georges-day"}, inherits: "St George"},
         {type: "D", start: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/labour-day"}, inherits: "St Joseph the Worker"},
         {type: "D", start: {mon: 6, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/saint-peter-and-saint-paul"}, inherits: "Saints Peter and Paul"},
         {type: "D", start: {mon: 8, d: 14}, inherits: "Vigil of Assumption Day"},
@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen"},
         
         {type: "D", start: {mon: 9, d: 8}, inherits: "Nativity of Mary"},
     ]

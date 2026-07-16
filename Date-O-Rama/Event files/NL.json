@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Saints Day", urls: {"en":"https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
         {type: "D", start: {mon: 11, d: 3, thruD: 5, wkd: [1]}, titles: {"en":"All Saints Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen"},
         
         {type: "D", start: {mon: 12, d: 5}, titles: {"en":"Saint Nicholas’s Eve", "nl":"Sinterklaasavond"}, emoji: "🎅", notes: {"en":"Pakjesavond"}},
         {type: "D", start: {misc: "E", offsetD: -49}, inherits: "Carnival (day 1)",},

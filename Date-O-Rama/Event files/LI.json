@@ -12,7 +12,7 @@
         {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", start: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
         {type: "D", start: {misc: "E", offsetD: -47}, inherits: "Shrove Tuesday", urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/carnival-tuesday"}},
-        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph’s Day"},
+        {type: "D", start: {mon: 3, d: 19}, inherits: "St Joseph"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
@@ -27,7 +27,7 @@
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {type: "D", start: {mon: 3, d: 19}, inherits: "Father’s Day"},
