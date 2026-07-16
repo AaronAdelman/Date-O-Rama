@@ -4,15 +4,15 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.08, blue: 0.54},
-    first: {era: 1, y: 1821},
+    fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Greece"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", st: {mon: 3, d: 25}, inherits: "Greek Independence Day", first: {era: 1, y: 1821}, urls: {"en":"https://www.daysoftheyear.com/days/greek-independence-day/"}, notes: {"en":"Created by Filiki Eteria (the Society of Friends)"}},
+        {type: "D", st: {mon: 3, d: 25}, inherits: "Greek Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://www.daysoftheyear.com/days/greek-independence-day/"}, notes: {"en":"Created by Filiki Eteria (the Society of Friends)"}},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God"},
-        {type: "D", st: {mon: 10, d: 28}, inherits: "Ochi Day", first: {era: 1, y: 1942}},
+        {type: "D", st: {mon: 10, d: 28}, inherits: "Ochi Day", fst: {era: 1, y: 1942}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
 
@@ -22,10 +22,10 @@
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 3, d: 10}, inherits: "Engineer’s Day"},
-        {type: "D", st: {mon: 11, d: 20}, inherits: "Children’s Day", first: {era: 1, y: 1946}},
-        {inherits: "Revolution Day", type: "D", st: {mon: 3, d: 25}, first: {era: 1, y: 1821}},
-        {titles: {"en":"August Moon Festival", "he":"פסטיבל הירח באוגוסט"}, type: "D", st: {misc: "full1", mon: 8}, first: {era: 1, y: 1996}, urls: {"en":"https://nationaltoday.com/august-moon-festival/"}},
+        {type: "D", st: {mon: 11, d: 20}, inherits: "Children’s Day", fst: {era: 1, y: 1946}},
+        {inherits: "Revolution Day", type: "D", st: {mon: 3, d: 25}, fst: {era: 1, y: 1821}},
+        {titles: {"en":"August Moon Festival", "he":"פסטיבל הירח באוגוסט"}, type: "D", st: {misc: "full1", mon: 8}, fst: {era: 1, y: 1996}, urls: {"en":"https://nationaltoday.com/august-moon-festival/"}},
         {type: "D", st: {mon: 5, d: 21}, inherits: "Firewalking Festival"},
-        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2004}, titles: {"en":"National Holocaust Memorial Day", "el":"Εθνική Ημέρα Μνήμης Ολοκαυτώματος"}},
+        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2004}, titles: {"en":"National Holocaust Memorial Day", "el":"Εθνική Ημέρα Μνήμης Ολοκαυτώματος"}},
     ]
 }

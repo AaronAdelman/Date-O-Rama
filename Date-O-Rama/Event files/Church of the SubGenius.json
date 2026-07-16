@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "gray"},
-    first: {era: 1, y: 1979},
+    fst: {era: 1, y: 1979},
     evts: [
         {type: "Y", st: {}, nonoverlappingSubEvents: [
             {type: "D", st: {mon: 1, d: 1}, titles: {"en":"Saint Jesus Christ"}, notes: {"en":"Feast of the Human Sacrifice"}},
@@ -192,7 +192,7 @@
             {type: "D", st: {mon: 7, d: 2}, titles: {"en":"Saint Phil Spector"}},
             {type: "D", st: {mon: 7, d: 3}, titles: {"en":"Saint Alec Guiness"}},
             {type: "D", st: {mon: 7, d: 4}, titles: {"en":"Saint Elizabeth Montgomery"}},
-            {type: "D", st: {mon: 7, d: 5}, titles: {"en":"X-Day"}, urls: {"en":"https://en.wikipedia.org/wiki/X-Day_(Church_of_the_SubGenius)"}, first: {era: 1, y: 1998}},
+            {type: "D", st: {mon: 7, d: 5}, titles: {"en":"X-Day"}, urls: {"en":"https://en.wikipedia.org/wiki/X-Day_(Church_of_the_SubGenius)"}, fst: {era: 1, y: 1998}},
             {type: "D", st: {mon: 7, d: 6}, titles: {"en":"Saint Arthur C. Clarke"}},
             {type: "D", st: {mon: 7, d: 7}, titles: {"en":"X-Day (approximate)"}},
             {type: "D", st: {mon: 7, d: 8}, titles: {"en":"Saint Zorak"}},
@@ -374,7 +374,7 @@
             {type: "D", st: {mon: 12, d: 31}, titles: {"en":"Saint Lucifer"}, notes: {"en":"Look Good Until You Die Day"}},
         ]},
         
-        {type: "D", st: {mon: 6, d: 2}, inherits: "Yell “Fudge” at the Cobras in North America Day", first: {era: 1, y: 1996}},
-        {type: "D", st: {mon: 6, d: 18}, inherits: "N Splurge Day", first: {era: 1, y: 1994}},
+        {type: "D", st: {mon: 6, d: 2}, inherits: "Yell “Fudge” at the Cobras in North America Day", fst: {era: 1, y: 1996}},
+        {type: "D", st: {mon: 6, d: 18}, inherits: "N Splurge Day", fst: {era: 1, y: 1994}},
     ]
 }

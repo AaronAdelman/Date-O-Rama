@@ -6,7 +6,7 @@
     cal: "gre",
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_China"},
-    first: {era: 1, y: 1949},
+    fst: {era: 1, y: 1949},
     evts: [
         {type: "D", st: {misc: "Mar", offsetD: 15}, inherits: "Tomb-Sweeping Day"},
 
@@ -20,7 +20,7 @@
         {type: "D", st: {mon: 5, d: 3, wkd: [3, 4, 6, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
         {type: "D", st: {mon: 5, d: 4, wkd: [1, 2, 4, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
         {type: "D", st: {mon: 5, d: 5, wkd: [1, 2, 3, 5]}, urls: {"en":"https://www.officeholidays.com/holidays/china/labour-day"}, inherits: "Labour Day Holiday"},
-       {type: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 3}, inherits: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/china-national-day/"}, first: {era: 1, y: 1949}},
+       {type: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 3}, inherits: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/china-national-day/"}, fst: {era: 1, y: 1949}},
        {type: "D", st: {mon: 10, d: 4}, inherits: "N Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
        {type: "D", st: {mon: 10, d: 5, wkd: [1, 2, 3, 4, 5]}, inherits: "N Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
        {type: "D", st: {mon: 10, d: 6, wkd: [3, 4, 5, 6]}, inherits: "N Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
@@ -29,15 +29,15 @@
 
         {type: "D", st: {mon: 5, d: 4}, inherits: "Youth Day"},
         {type: "D", st: {mon: 6, d: 1}, inherits: "I Children’s Day"},
-        {type: "D", st: {mon: 8, d: 1}, inherits: "Army Day", first: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, titles: {"en":"People’s Liberation Army Day", "he":"יום צבא השחרור של העם", "zh_CN":"建军节"}},
+        {type: "D", st: {mon: 8, d: 1}, inherits: "Army Day", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, titles: {"en":"People’s Liberation Army Day", "he":"יום צבא השחרור של העם", "zh_CN":"建军节"}},
 
         {type: "D", st: {mon: 3, d: 12}, inherits: "Arbor Day"},
-        {titles: {"en":"C.P.C. Founding Day", "zh_CN":"建党节"}, type: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, first: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
+        {titles: {"en":"C.P.C. Founding Day", "zh_CN":"建党节"}, type: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
         {inherits: "N Maritime Day", type: "D", st: {mon: 7, d: 11}, titles: {"en":"China National Maritime Day", "zh_CN":"中国航海日"}, urls: {"en":"https://en.wikipedia.org/wiki/China_National_Maritime_Day"}},
-        {type: "D", st: {mon: 9, d: 3}, inherits: "Victory Over Japan Day", first: {era: 1, y: 2014}},
-        {inherits: "Martyrs’ Day", type: "D", st: {mon: 9, d: 30}, first: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
+        {type: "D", st: {mon: 9, d: 3}, inherits: "Victory Over Japan Day", fst: {era: 1, y: 2014}},
+        {inherits: "Martyrs’ Day", type: "D", st: {mon: 9, d: 30}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
         {type: "D", st: {mon: 10, d: 10}, titles: {"en":"Wuchang Uprising", "zh_CN":"武昌起义"}},
-        {type: "D", st: {mon: 12, d: 13}, titles: {"en":"Nanking Massacre Memorial Day", "zh_CN":"南京大屠杀死难者国家公祭日"}, first: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},
+        {type: "D", st: {mon: 12, d: 13}, titles: {"en":"Nanking Massacre Memorial Day", "zh_CN":"南京大屠杀死难者国家公祭日"}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},
         
         {type: "nD", st: {mon: 9, d: 20}, end: {mon: 9, d: 22}, titles: {"en":"Kuò Shí jié", "zh_CN":"阔时节"}},
         {type: "nD", st: {mon: 4, d: 13}, end: {mon: 4, d: 15}, inherits: "Songkran", urls: {"en":"https://en.wikipedia.org/wiki/Water-Sprinkling_Festival"}},
@@ -61,15 +61,15 @@
         {titles: {"en":"Xishuangbanna Prefecture Foundation Day"}, type: "D", st: {mon: 1, d: 23}},
         {titles: {"en":"Yanbian Prefecture Foundation Day"}, type: "D", st: {mon: 9, d: 3}},
         {type: "D", st: {mon: 3, d: 28}, urls: {"en":"https://nationaltoday.com/serfs-emancipation-day/"}, titles: {"en":"Serfs’ Emancipation Day"}},
-        {type: "D", st: {mon: 11, d: 11}, titles: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en":"Singles Day\nDouble 11\nBachelors’ Day", "zh_CN":"双11", "zh":"雙11"}, first: {era: 1, y: 1993}},
+        {type: "D", st: {mon: 11, d: 11}, titles: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en":"Singles Day\nDouble 11\nBachelors’ Day", "zh_CN":"双11", "zh":"雙11"}, fst: {era: 1, y: 1993}},
         
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", st: {mon: 7, d: 1}, inherits: "Hong Kong Special Administrative Region Establishment Day", first: {era: 1, y: 1997}},
+        {type: "D", st: {mon: 7, d: 1}, inherits: "Hong Kong Special Administrative Region Establishment Day", fst: {era: 1, y: 1997}},
         {type: "D", st: {mon: 4, d: 23}, inherits: "Navy Day"},
         {type: "D", st: {mon: 3, d: 3}, titles: {"en":"Peach Blossom Day"}, urls: {"en":"https://www.daysoftheyear.com/days/peach-blossom-day/"}, emoji: "⚘"},
         {type: "M", st: {mon: 6}, titles: {"en":"Care For Your Grandparents Month"}, urls: {"en":"https://www.daysoftheyear.com/days/care-for-your-grandparents-month/"}, emoji: "👴👵"},
-        {type: "D", st: {mon: 6, d: 18}, titles: {"en":"618 shopping day"}, urls: {"en":"https://en.wikipedia.org/wiki/618_shopping_day"}, first: {era: 1, y: 1997}, notes: {"en":"Created by JD.com"}},
-        {type: "D", st: {mon: 10, d: 24}, inherits: "Programmers Day", first: {era: 1, y: 2018}, urls: {"en":"https://www.timeanddate.com/holidays/world/international-programmers-day"}},
+        {type: "D", st: {mon: 6, d: 18}, titles: {"en":"618 shopping day"}, urls: {"en":"https://en.wikipedia.org/wiki/618_shopping_day"}, fst: {era: 1, y: 1997}, notes: {"en":"Created by JD.com"}},
+        {type: "D", st: {mon: 10, d: 24}, inherits: "Programmers Day", fst: {era: 1, y: 2018}, urls: {"en":"https://www.timeanddate.com/holidays/world/international-programmers-day"}},
     ]
 }

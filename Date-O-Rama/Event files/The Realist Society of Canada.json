@@ -4,7 +4,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.01, green: 0.22, blue: 0.63},
-    first: {era: 1, y: 2018},
+    fst: {era: 1, y: 2018},
     urls: {"en":"http://realistsocietyofcanada.com/realism-holidays/"},
     evts: [
         {type: "nD", st: {mon: 4, d: 26}, end: {mon: 4, d: 28}, titles: {"en":"Self-Aware Universe Day"}, notes: {"en":"SAUD"}},

@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.5, green: 0.5, blue: 0.57},
-    first: {era: 1, y: 2012},
+    fst: {era: 1, y: 2012},
     urls: {"en":"https://thesatanictemple.com/pages/holidays"},
     evts: [
         {type: "D", st: {mon: 2, d: 15}, inherits: "Lupercalia"},

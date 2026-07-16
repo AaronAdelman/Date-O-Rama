@@ -4,7 +4,7 @@
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.69, blue: 0.40},
-    first: {era: 1, y: 1908},
+    fst: {era: 1, y: 1908},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
     evts: [
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},

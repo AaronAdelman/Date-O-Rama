@@ -5,13 +5,13 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.00, blue: 0.50},
-    first: {era: 1, y: 2008},
+    fst: {era: 1, y: 2008},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
     evts: [
         {type: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 4, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/kosovo/day-after-new-years-day"}, inherits: "Day after New Year’s Day (in lieu)"},
-        {type: "D", st: {mon: 2, d: 17}, inherits: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/kosovo-independence-day/"}, first: {era: 1, y: 2008}},
-        {type: "D", st: {mon: 4, d: 9}, urls: {"en":"https://nationaltoday.com/kosovo-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 2008}},
+        {type: "D", st: {mon: 2, d: 17}, inherits: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/kosovo-independence-day/"}, fst: {era: 1, y: 2008}},
+        {type: "D", st: {mon: 4, d: 9}, urls: {"en":"https://nationaltoday.com/kosovo-constitution-day/"}, inherits: "Constitution Day", fst: {era: 1, y: 2008}},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -21,6 +21,6 @@
         {type: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/day-of-ashakalia/"}, titles: {"en":"Day of Ashakalia"}},
         {type: "D", st: {mon: 3, d: 6}, urls: {"en":"https://nationaltoday.com/day-of-memorial-and-respect-for-veterans/"}, titles: {"en":"Day of Memorial And Respect For Veterans"}},
         {type: "D", st: {mon: 4, d: 8}, urls: {"en":"https://nationaltoday.com/day-of-romas/"}, titles: {"en":"Day of Romas"}, inherits: "I Romani Day"},
-        {type: "D", st: {mon: 6, d: 12}, inherits: "Peace Day", urls: {"en":"https://nationaltoday.com/peace-day/"}, first: {era: 1, y: 1999}},
+        {type: "D", st: {mon: 6, d: 12}, inherits: "Peace Day", urls: {"en":"https://nationaltoday.com/peace-day/"}, fst: {era: 1, y: 1999}},
     ]
 }

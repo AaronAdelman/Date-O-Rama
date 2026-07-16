@@ -6,7 +6,7 @@
     cal: "gre",
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Helena,_Ascension_and_Tristan_da_Cunha"},
-    first: {era: 1, y: 1656},
+    fst: {era: 1, y: 1656},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

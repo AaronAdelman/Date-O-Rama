@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.19, green: 0.8, blue: 0.15},
-    first: {era: 1, y: 2005},
+    fst: {era: 1, y: 2005},
     urls: {"en":"https://discworld.fandom.com/wiki/Discworld_calendar#Roundworld_Common_Years"},
     evts: [
         {titles: {"en":"Year of the Prawn"}, type: "Y", st: {era: 1, y: 2005}},

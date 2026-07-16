@@ -5,7 +5,7 @@
     cal: "gre",
     color: {red: 0.90, green: 0.25, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Wallis_and_Futuna"},
-    first: {era: 1, y: 1961},
+    fst: {era: 1, y: 1961},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
@@ -16,7 +16,7 @@
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", st: {mon: 7, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/wallis-and-futuna/bastille-day"}, inherits: "Bastille Day"},
-        {inherits: "Territory Day", type: "D", st: {mon: 7, d: 29}, urls: {"en":"https://nationaltoday.com/wallis-and-futuna-territory-day/"}, first: {era: 1, y: 1961}, notes: {"en":"Wallis and Futuna Territory Day"}},
+        {inherits: "Territory Day", type: "D", st: {mon: 7, d: 29}, urls: {"en":"https://nationaltoday.com/wallis-and-futuna-territory-day/"}, fst: {era: 1, y: 1961}, notes: {"en":"Wallis and Futuna Territory Day"}},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", st: {mon: 11, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/wallis-and-futuna/armistice-day"}, inherits: "Armistice Day"},

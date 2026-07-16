@@ -6,16 +6,16 @@
     cal: "gre",
     color: {red: 0.30, green: 0.55, blue: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},
-    first: {era: 1, y: 1975},
+    fst: {era: 1, y: 1975},
     evts: [
         {type: "D", st:  {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {titles: {"en":"Cheikh Al Maarouf Day"}, type: "D", st:  {mon: 3, d: 18}},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", st: {mon: 7, d: 6}, inherits: "N Day", urls: {"en":"https://nationaltoday.com/comoros-national-day/"}, first: {era: 1, y: 1975}},
+        {type: "D", st: {mon: 7, d: 6}, inherits: "N Day", urls: {"en":"https://nationaltoday.com/comoros-national-day/"}, fst: {era: 1, y: 1975}},
         
-        {titles: {"en":"Maore Day"}, type: "D", st:  {mon: 11, d: 12}, first: {era: 1, y: 2006}},
+        {titles: {"en":"Maore Day"}, type: "D", st:  {mon: 11, d: 12}, fst: {era: 1, y: 2006}},
 
-        {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", first: {era: 1, y: 1910}},
+        {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day", fst: {era: 1, y: 1910}},
         {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
    ]
 }

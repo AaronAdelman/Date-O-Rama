@@ -15,10 +15,10 @@
         {type: "D", st: {mon: 3, d: 14}, titles: {"en":"Death of Khomeini", "fa":"رحلت آیت الله خمینی"}, inherits: "*DeathAnniv*", notes: {"en":"Demise of Imam Khomeini"}},
         {type: "D", st: {mon: 3, d: 15}, titles: {"en":"Revolt of Khordad 15", "fa":"قیام ۱۵ خرداد"}, urls: {"en":"https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en":"Khordad National Uprising"}},
 
-        {type: "D", st: {mon: 9, d: 16}, titles: {"en":"Student Day","fa":"روز دانشجو","hy":"Ուսանողի տոն","ru":"День студента в Иране"}, urls: {"en":"https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
-        {type: "D", st: {mon: 8, d: 13}, titles: {"en":"Pupil Day","fa":"روز دانش‌آموز"}, urls: {"en":"https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
+        {type: "D", st: {mon: 9, d: 16}, titles: {"en":"Student Day","fa":"روز دانشجو","hy":"Ուսանողի տոն","ru":"День студента в Иране"}, urls: {"en":"https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, fst: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
+        {type: "D", st: {mon: 8, d: 13}, titles: {"en":"Pupil Day","fa":"روز دانش‌آموز"}, urls: {"en":"https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, fst: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
         {inherits: "Children’s Day", type: "D", st: {mon: 10, d: 8}},
-        {type: "D", st: {mon: 8, d: 5}, titles: {"en":"National Saffron Day"}, first: {era: 0, y: 1403}},
+        {type: "D", st: {mon: 8, d: 5}, titles: {"en":"National Saffron Day"}, fst: {era: 0, y: 1403}},
     ]
 }
 

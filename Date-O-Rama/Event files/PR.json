@@ -4,17 +4,17 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.10, green: 0.22, blue: 0.36},
-    first: {era: 1, y: 1898},
+    fst: {era: 1, y: 1898},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Puerto_Rico"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", st: {mon: 1, wkd: [2], nth: 3}, inherits: "MLK Day"},
-        {type: "D", st: {mon: 2, wkd: [2], nth: 3}, inherits: "N Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-national-heroes-day"}, first: {era: 1, y: 2014}},
+        {type: "D", st: {mon: 2, wkd: [2], nth: 3}, inherits: "N Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-national-heroes-day"}, fst: {era: 1, y: 2014}},
         {type: "D", st: {mon: 2, wkd: [2], nth: 3}, inherits: "Presidents’ Day", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/presidents-day"}},
-        {type: "D", st: {mon: 3, d: 2}, titles: {"en":"American Citizenship Day", "es":"Día de la Ciudadanía Americana"}, first: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
-        {type: "D", st: {mon: 3, d: 3, wkd: [2]}, titles: {"en":"American Citizenship Day (in lieu)"}, first: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
-        {type: "D", st: {mon: 3, d: 22}, inherits: "Emancipation Day", urls: {"en":"https://nationaltoday.com/emancipation-day-puerto-rico/"}, first: {era: 1, y: 1873}},
+        {type: "D", st: {mon: 3, d: 2}, titles: {"en":"American Citizenship Day", "es":"Día de la Ciudadanía Americana"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
+        {type: "D", st: {mon: 3, d: 3, wkd: [2]}, titles: {"en":"American Citizenship Day (in lieu)"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
+        {type: "D", st: {mon: 3, d: 22}, inherits: "Emancipation Day", urls: {"en":"https://nationaltoday.com/emancipation-day-puerto-rico/"}, fst: {era: 1, y: 1873}},
         {type: "D", st: {misc: "E", offsetD: -2}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/good-friday"}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/mothers-day"}, inherits: "Mother’s Day"},
@@ -25,7 +25,7 @@
         {type: "D", st: {mon: 10, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/columbus-day"}, inherits: "Columbus Day"},
         {type: "D", st: {era: 1, y: 2024, mon: 11, d: 5}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-election-day"}},
         {type: "D", st: {mon: 11, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/veterans-day"}, inherits: "Veterans Day"},
-        {type: "D", st: {mon: 11, d: 19}, titles: {"en":"Discovery of Puerto Rico Day", "es":"Día del Descubrimiento de Puerto Rico"}, urls: {"en":"https://www.daysoftheyear.com/days/discovery-of-puerto-rico-day/"}, first: {era: 1, y: 1493}, inherits: "Discovery Day"},
+        {type: "D", st: {mon: 11, d: 19}, titles: {"en":"Discovery of Puerto Rico Day", "es":"Día del Descubrimiento de Puerto Rico"}, urls: {"en":"https://www.daysoftheyear.com/days/discovery-of-puerto-rico-day/"}, fst: {era: 1, y: 1493}, inherits: "Discovery Day"},
         {type: "D", st: {mon: 11, wkd: [5], nth: 4}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/thanksgiving"}, inherits: "Thanksgiving"},
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -34,7 +34,7 @@
         {type: "D", st: {mon: 2, d: 18}, titles: {"en":"Birthday of Luis Muñoz Marín", "es":"Natalicio de Luis Muñoz Marín"}, urls: {"en":"https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn"}, inherits: "*BDay*"},
         {titles: {"en":"Birthday of José de Diego", "es":"Natalicio de José de Diego"}, type: "D", st: {mon: 4, d: 16}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_de_Diego"}, inherits: "*BDay*"},
         {titles: {"en":"Birthday of Don Luis Muñoz Rivera", "es":"Natalicio de Don Luis Muñoz Rivera"}, type: "D", st: {mon: 7, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/birthday-of-don-luis-munoz-rivera/"}, inherits: "*BDay*"},
-        {inherits: "Constitution Day", type: "D", st: {mon: 7, d: 25}, first: {era: 1, y: 1953}, urls: {"en":"https://nationaltoday.com/puerto-rican-constitution-day/"}, titles: {"en":"Puerto Rico Constitution Day", "es":"Constitución de Puerto Rico"}},
+        {inherits: "Constitution Day", type: "D", st: {mon: 7, d: 25}, fst: {era: 1, y: 1953}, urls: {"en":"https://nationaltoday.com/puerto-rican-constitution-day/"}, titles: {"en":"Puerto Rico Constitution Day", "es":"Constitución de Puerto Rico"}},
         {titles: {"en":"Birthday of Dr. José Celso Barbosa", "es":"Natalicio de Dr. José Celso Barbosa"}, type: "D", st: {mon: 7, d: 27}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*"},
         {type: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en":"Day of Illustrious Puerto Ricans"}},
 
@@ -44,6 +44,6 @@
         {type: "D", st: {mon: 6, d: 24}, inherits: "St John"},
         {type: "D", st: {mon: 12, d: 28}, inherits: "Holy Innocents Day"},
         
-        {type: "D", st: {mon: 9, d: 24}, titles: {"en":"National Mofongo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mofongo-day/"}, first: {era: 1, y: 2021}, notes: {"en":"Created by Jose Mendin"}},
+        {type: "D", st: {mon: 9, d: 24}, titles: {"en":"National Mofongo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mofongo-day/"}, fst: {era: 1, y: 2021}, notes: {"en":"Created by Jose Mendin"}},
     ]
 }

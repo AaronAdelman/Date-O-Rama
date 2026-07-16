@@ -66,7 +66,7 @@ struct ASAEventSpecification: Codable {
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "st"
         case endDateSpecification   = "end"
-        case firstDateSpecification = "first"
+        case firstDateSpecification = "fst"
         case lastDateSpecification  = "last"
 //        case template
         case inherits, titles, locations

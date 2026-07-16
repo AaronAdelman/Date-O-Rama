@@ -3,14 +3,14 @@
     defaultLocale: "en",
     cal: "gre*",
     color: {red: 0.6, green: 0.6, blue: 0.6},
-    first: {era: 1, y: 1977},
+    fst: {era: 1, y: 1977},
     evts: [
-        {type: "D", st: {mon: 11, d: 17}, titles: {"en":"Life Day"}, urls: {"en":"https://starwars.fandom.com/wiki/Life_Day"}, first: {era: 1, y: 2019}},
-        {type: "D", st: {mon: 5, d: 4}, titles: {"br":"Star Wars Day","ca":"Dia de la guerra de les galàxies","cs":"Den Star Wars","de":"Star Wars Day","en":"Star Wars Day","es":"Día de Star Wars","fi":"Star Wars -päivä","fr":"Journée Star Wars","he":"יום מלחמת הכוכבים","hu":"Star Wars-nap","hy":"Աստղային պատերազմների օր","id":"Hari Star Wars","it":"Star Wars Day","ja":"スター・ウォーズの日","ko":"스타워즈의 날","lv":"Zvaigžņu karu diena","ms":"Hari Star Wars","pl":"Dzień Gwiezdnych wojen","pt":"Dia de Star Wars","ru":"День «Звёздных войн»","sk":"Deň Star Wars","sr":"Дан Ратова звезда","sv":"Star Wars-dagen","th":"วันสตาร์ วอร์ส","tr":"Star Wars Günü","uk":"День «Зоряних війн»","vi":"Ngày Star Wars","zh":"星際大戰日"}, urls: {"en":"https://www.starwars.com/star-wars-day"}, emoji: "🪐", first: {era: 1, y: 2001}, notes: {"en":"National Star Wars Day\nMay the Fourth Be With You"}},
-        {type: "D", st: {mon: 5, d: 5}, titles: {"en":"Revenge of the Fifth"}, first: {era: 1, y: 2011}, urls: {"en":"https://revengeofthe5th.com/"}, emoji: "🪐"},
+        {type: "D", st: {mon: 11, d: 17}, titles: {"en":"Life Day"}, urls: {"en":"https://starwars.fandom.com/wiki/Life_Day"}, fst: {era: 1, y: 2019}},
+        {type: "D", st: {mon: 5, d: 4}, titles: {"br":"Star Wars Day","ca":"Dia de la guerra de les galàxies","cs":"Den Star Wars","de":"Star Wars Day","en":"Star Wars Day","es":"Día de Star Wars","fi":"Star Wars -päivä","fr":"Journée Star Wars","he":"יום מלחמת הכוכבים","hu":"Star Wars-nap","hy":"Աստղային պատերազմների օր","id":"Hari Star Wars","it":"Star Wars Day","ja":"スター・ウォーズの日","ko":"스타워즈의 날","lv":"Zvaigžņu karu diena","ms":"Hari Star Wars","pl":"Dzień Gwiezdnych wojen","pt":"Dia de Star Wars","ru":"День «Звёздных войн»","sk":"Deň Star Wars","sr":"Дан Ратова звезда","sv":"Star Wars-dagen","th":"วันสตาร์ วอร์ส","tr":"Star Wars Günü","uk":"День «Зоряних війн»","vi":"Ngày Star Wars","zh":"星際大戰日"}, urls: {"en":"https://www.starwars.com/star-wars-day"}, emoji: "🪐", fst: {era: 1, y: 2001}, notes: {"en":"National Star Wars Day\nMay the Fourth Be With You"}},
+        {type: "D", st: {mon: 5, d: 5}, titles: {"en":"Revenge of the Fifth"}, fst: {era: 1, y: 2011}, urls: {"en":"https://revengeofthe5th.com/"}, emoji: "🪐"},
         {type: "D", st: {mon: 5, d: 6}, titles: {"en":"Revenge of the Sixth"}, urls: {"en":"https://en.wiktionary.org/wiki/Revenge_of_the_Sixth"}, emoji: "🪐"},
-        {type: "D", st: {mon: 6, d: 15}, titles: {"en":"National Kiss a Wookiee Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-kiss-a-wookiee-day/"}, first: {era: 1, y: 2005}},
-        {type: "D", st: {mon: 8, d: 19}, titles: {"en":"International Talk Like Jar Jar Binks Day"}, notes: {"en":"ITLJJBD\nTalk Like Jar Jar Binks Day"}, urls: {"en":"https://talklikejarjarday.com/"}, first: {era: 1, y: 2016}},
-        {type: "D", st: {mon: 5, d: 21}, titles: {"en":"National Talk Like Yoda Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-talk-like-yoda-day/"}, first: {era: 1, y: 2003}},
+        {type: "D", st: {mon: 6, d: 15}, titles: {"en":"National Kiss a Wookiee Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-kiss-a-wookiee-day/"}, fst: {era: 1, y: 2005}},
+        {type: "D", st: {mon: 8, d: 19}, titles: {"en":"International Talk Like Jar Jar Binks Day"}, notes: {"en":"ITLJJBD\nTalk Like Jar Jar Binks Day"}, urls: {"en":"https://talklikejarjarday.com/"}, fst: {era: 1, y: 2016}},
+        {type: "D", st: {mon: 5, d: 21}, titles: {"en":"National Talk Like Yoda Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-talk-like-yoda-day/"}, fst: {era: 1, y: 2003}},
     ]
 }

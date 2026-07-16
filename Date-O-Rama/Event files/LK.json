@@ -6,10 +6,10 @@
     cal: "gre",
     color: {red: 1.00, green: 0.82, blue: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},
-    first: {era: 1, y: 1948},
+    fst: {era: 1, y: 1948},
     evts: [
         {type: "D", st: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/sri-lanka/pongal"}, titles: {"en":"Special Bank Holiday Holiday"}},
-        {type: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "N Day", first: {era: 1, y: 1948}},
+        {type: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "N Day", fst: {era: 1, y: 1948}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
@@ -19,11 +19,11 @@
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "D", st: {mon: 10, d: 1}},
-        {type: "D", st: {mon: 5, d: 22}, inherits: "N Heroes’ Day", first: {era: 1, y: 1819}},
+        {type: "D", st: {mon: 5, d: 22}, inherits: "N Heroes’ Day", fst: {era: 1, y: 1819}},
         {type: "D", st: {mon: 10, d: 1}, inherits: "N Coffee Day"},
-        {type: "D", st: {mon: 12, d: 15}, inherits: "I Tea Day", first: {era: 1, y: 2005}},
+        {type: "D", st: {mon: 12, d: 15}, inherits: "I Tea Day", fst: {era: 1, y: 2005}},
         
-        {type: "D", st: {misc: "full1", mon: 5}, inherits: "Vesak", first: {era: 1, y: 1950}},
+        {type: "D", st: {misc: "full1", mon: 5}, inherits: "Vesak", fst: {era: 1, y: 1950}},
         
         {type: "D", st: {era: 1, y: 2026, mon: 3, d: 18}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/sri-lanka/sri-lanka-public-holiday"}},
         {type: "D", st: {era: 1, y: 2026, mon: 3, d: 25}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/sri-lanka/sri-lanka-public-holiday"}},

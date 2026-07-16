@@ -4,7 +4,7 @@
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.08, blue: 0.54},
-    first: {era: 1, y: 1821},
+    fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Greece"},
     evts: [
         {inherits: "Clean Monday", type: "D", st: {misc: "E", offsetD: -48}},

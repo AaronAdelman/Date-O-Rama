@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {red: 0.5, green: 0.6, blue: 0.7},
     urls: {"en":"https://www.asatru.org/holidays.php"},
-    first: {era: 1, y: 1988},
+    fst: {era: 1, y: 1988},
     evts: [
         {type: "Y", st: {}, nonoverlappingSubEvents: [
             {type: "D", st: {mon: 1, d: 3}, titles: {"en":"Charming of the Plow"}},

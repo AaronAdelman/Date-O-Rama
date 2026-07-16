@@ -49,7 +49,7 @@ struct ASAEventsFile: Codable {
         case urls
         case eventSpecifications    = "evts"
         case templateSpecifications = "tpls"
-        case firstDateSpecification = "first"
+        case firstDateSpecification = "fst"
     }
 } // struct ASAEventsFile
 

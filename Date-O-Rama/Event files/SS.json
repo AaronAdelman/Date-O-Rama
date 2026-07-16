@@ -5,7 +5,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.94, green: 0.20, blue: 0.25},
-    first: {era: 1, y: 2011},
+    fst: {era: 1, y: 2011},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_South_Sudan"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
@@ -15,8 +15,8 @@
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {type: "D", st: {mon: 5, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/south-sudan/spla-day"}, titles: {"en":"SPLA Day"}, first: {era: 1, y: 1983}},
-        {inherits: "Independence Day", type: "D", st: {mon: 7, d: 9}, first: {era: 1, y: 2011}},
+        {type: "D", st: {mon: 5, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/south-sudan/spla-day"}, titles: {"en":"SPLA Day"}, fst: {era: 1, y: 1983}},
+        {inherits: "Independence Day", type: "D", st: {mon: 7, d: 9}, fst: {era: 1, y: 2011}},
         {inherits: "Martyrs’ Day", type: "D", st: {mon: 7, d: 30}, urls: {"en":"https://nationaltoday.com/martyrs-day-in-south-sudan/"}},
         {type: "D", st: {mon: 12, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/south-sudan/christmas-eve"}, inherits: "Xmas Eve"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -26,8 +26,8 @@
         {type: "D", st: {mon: 1, d: 9}, titles: {"en":"Peace Agreement Day"}},
 
         {inherits: "Father’s Day", type: "D", st: {mon: 8, wkd: [2], nth: -1}},
-        {inherits: "Mother’s Day", type: "D", st: {mon: 7, wkd: [2], nth: 1}, urls: {"en":"https://nationaltoday.com/mothers-day-south-sudan/"}, first: {era: 1, y: 2012}},
+        {inherits: "Mother’s Day", type: "D", st: {mon: 7, wkd: [2], nth: 1}, urls: {"en":"https://nationaltoday.com/mothers-day-south-sudan/"}, fst: {era: 1, y: 2012}},
         {inherits: "Children’s Day", type: "D", st: {mon: 12, d: 23}},
-        {inherits: "Grandparents’ Day", type: "D", st: {mon: 11, wkd: [1], nth: 2}, first: {era: 1, y: 2013}},
+        {inherits: "Grandparents’ Day", type: "D", st: {mon: 11, wkd: [1], nth: 2}, fst: {era: 1, y: 2013}},
     ]
 }

@@ -78,7 +78,7 @@
         {titles: {"he":"ראש חודש אדר", "en":"Ro’sh Ḥodhesh ’Adhar"}, type: "nD", st: {mon: 5, d: 30, yLens: [353, 354, 355]}, end: {mon: 7, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he":"ראש חודש אדר א׳", "en":"Ro’sh Ḥodhesh ’Adhar Ri’shon"}, type: "nD", st: {mon: 5, d: 30, yLens: [383, 384, 385]}, end: {mon: 6, d: 1}, inherits: "*ראש חודש*"},
         {titles: {"he":"ראש חודש אדר ב׳", "en":"Ro’sh Ḥodhesh ’Adhar Sheni"}, type: "nD", st: {mon: 6, d: 30, yLens: [383, 384, 385]}, end: {mon: 7, d: 1}, inherits: "*ראש חודש*"},
-        {type: "D", st: {mon: 7, d: 7}, inherits: "יום־שנה של משה רבנו", first: {era: 0, y: 2489}},
+        {type: "D", st: {mon: 7, d: 7}, inherits: "יום־שנה של משה רבנו", fst: {era: 0, y: 2489}},
         {titles: {"he":"פורים קטן", "en":"Purim Qaṭan"}, type: "D", st: {mon: 6, d: 14}},
         {titles: {"he":"שושן פורים קטן", "en":"Shushan Purim Qaṭan"}, type: "D", st: {mon: 6, d: 15}},
         {inherits: "תענית אסתר", type: "D", st: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}},

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.85, green: 0.67, blue: 0.00},
-    first: {era: 1, y: 2006},
+    fst: {era: 1, y: 2006},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts: [
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},

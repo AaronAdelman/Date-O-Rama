@@ -3,7 +3,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {name: "red"},
-    first: {era: 1, y: 1995},
+    fst: {era: 1, y: 1995},
     urls: {"en":"https://en.wikipedia.org/wiki/Slavic_Native_Faith%27s_calendars_and_holidays"},
     evts: [
         {type: "nD", st: {mon: 12, d: 24, durD: 2}, titles: {"be":"Першая Каляда","be-tarask":"Першая Каляда","cs":"Kračun","de":"Kolende","en":"Koliada","lt":"Koleda","mdf":"Калядань ши","nl":"Kolyada","pl":"Szczodre Gody","ru":"Коляда","sk":"Kračún","sv":"Koliada","tr":"Koleda","uk":"Коляда","vi":"Koliada"}},

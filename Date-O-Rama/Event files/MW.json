@@ -5,7 +5,7 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 0.81, green: 0.07, blue: 0.15},
-    first: {era: 1, y: 1964},
+    fst: {era: 1, y: 1964},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Malawi"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
@@ -19,15 +19,15 @@
         {type: "D", st: {mon: 5, d: 2, thruD: 3, wkd: [2]}, inherits: "Labour Day (in lieu)"},
         {type: "D", st: {mon: 5, d: 14}, titles: {"en":"Kamuzu Day"}, urls: {"en":"https://www.officeholidays.com/holidays/malawi/kamuzu-day"}, inherits: "*BDay*"},
         {type: "D", st: {mon: 5, d: 15, thruD: 19}, titles: {"en":"Kamuzu Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/malawi/kamuzu-day"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 7, d: 6}, inherits: "Independence Day", urls: {"en":"https://nationaltoday.com/malawi-independence-day/"}, first: {era: 1, y: 1964}},
-        {type: "D", st: {mon: 7, d: 7, thruD: 8, wkd: [2, 3, 4]}, inherits: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/malawi-independence-day/"}, first: {era: 1, y: 1964}},
+        {type: "D", st: {mon: 7, d: 6}, inherits: "Independence Day", urls: {"en":"https://nationaltoday.com/malawi-independence-day/"}, fst: {era: 1, y: 1964}},
+        {type: "D", st: {mon: 7, d: 7, thruD: 8, wkd: [2, 3, 4]}, inherits: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/malawi-independence-day/"}, fst: {era: 1, y: 1964}},
         {type: "D", st: {mon: 10, d: 15}, inherits: "Mother’s Day", urls: {"en":"https://nationaltoday.com/mothers-day-in-malawi/"}},
         {inherits: "Mother’s Day (in lieu)", type: "D", st: {mon: 10, d: 17}, urls: {"en":"https://nationaltoday.com/mothers-day-in-malawi/"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
         {titles: {"en":"Boxing Day (in lieu)"}, type: "D", st: {mon: 12, d: 27, thruD: 28, wkd: [3]}},
 
-        {type: "D", st: {mon: 12, d: 15}, inherits: "I Tea Day", first: {era: 1, y: 2005}},
+        {type: "D", st: {mon: 12, d: 15}, inherits: "I Tea Day", fst: {era: 1, y: 2005}},
         {type: "D", st: {era: 1, y: 2025, mon: 9, d: 16}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/malawi/malawi-elections"}},
     ]
 }

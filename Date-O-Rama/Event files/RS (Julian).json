@@ -5,7 +5,7 @@
     cal: "jul",
     color: {red: 0.89, green: 0.00, blue: 0.27},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
-    first: {era: 1, y: 1804},
+    fst: {era: 1, y: 1804},
    evts: [
         {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
         {type: "D", st: {mon: 1, d: 1}, inherits: "O New Year’s Day"},

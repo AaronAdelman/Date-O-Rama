@@ -6,15 +6,15 @@
     cal: "gre",
     color: {red: 0.42, green: 0.11, blue: 0.24},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Qatar"},
-    first: {era: 1, y: 1878},
+    fst: {era: 1, y: 1878},
     evts: [
-        {type: "D", st: {mon: 2, wkd: [3], nth: 2}, inherits: "N Sports Day", first: {era: 1, y: 2012}, urls: {"en":"https://nationaltoday.com/national-sports-day-qatar/"}},
-        {type: "D", st: {mon: 3, nth: 1, wkd: [1]}, urls: {"en":"https://www.officeholidays.com/holidays/qatar/early-march-bank-holiday"}, titles: {"en":"Early March Bank Holiday"}, first: {era: 1, y: 2009}, inherits: "Bank Holiday"},
-        {type: "D", st: {mon: 12, d: 18}, inherits: "N Day", titles: {"en":"Qatar National Day", "he":"חג לאומי של קטאר", "ar":"اليوم الوطني لقطر"}, urls: {"en":"https://nationaltoday.com/qatar-national-day/"}, first: {era: 1, y: 1878}},
+        {type: "D", st: {mon: 2, wkd: [3], nth: 2}, inherits: "N Sports Day", fst: {era: 1, y: 2012}, urls: {"en":"https://nationaltoday.com/national-sports-day-qatar/"}},
+        {type: "D", st: {mon: 3, nth: 1, wkd: [1]}, urls: {"en":"https://www.officeholidays.com/holidays/qatar/early-march-bank-holiday"}, titles: {"en":"Early March Bank Holiday"}, fst: {era: 1, y: 2009}, inherits: "Bank Holiday"},
+        {type: "D", st: {mon: 12, d: 18}, inherits: "N Day", titles: {"en":"Qatar National Day", "he":"חג לאומי של קטאר", "ar":"اليوم الوطني لقطر"}, urls: {"en":"https://nationaltoday.com/qatar-national-day/"}, fst: {era: 1, y: 1878}},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", st: {mon: 3, d: 15}, first: {era: 1, y: 2018}},
-        {type: "D", st: {mon: 11, d: 20}, first: {era: 1, y: 1954}, inherits: "World Children’s Day"},
+        {inherits: "Children’s Day", type: "D", st: {mon: 3, d: 15}, fst: {era: 1, y: 2018}},
+        {type: "D", st: {mon: 11, d: 20}, fst: {era: 1, y: 1954}, inherits: "World Children’s Day"},
    ]
 }

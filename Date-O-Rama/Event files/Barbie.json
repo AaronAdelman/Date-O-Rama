@@ -3,11 +3,11 @@
     defaultLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.75, blue: 0.80},
-    first: {era: 1, y: 1959},
+    fst: {era: 1, y: 1959},
     evts: [
-        {type: "D", st: {mon: 3, d: 9}, titles: {"en":"National Barbie Day", "he":"יום הולדת לברבי"}, urls: {"en":"https://www.daysoftheyear.com/days/barbie-day/"}, first: {era: 1, y: 1959}},
-        {type: "D", st: {mon: 3, d: 13}, titles: {"en":"Ken Day", "he":"יום הולדת לקן"}, urls: {"en":"https://www.daysoftheyear.com/days/ken-day/"}, first: {era: 1, y: 1961}, inherits: "*BDay*", notes: {"en":"Created by Mattel"}},
-        {type: "D", st: {mon: 9, d: 6}, titles: {"en":"Barbie Doll Day"}, urls: {"en":"https://www.checkiday.com/491fd128b27e98b8322312b53cd57791/barbie-doll-day"}, first: {era: 1, y: 2011}},
+        {type: "D", st: {mon: 3, d: 9}, titles: {"en":"National Barbie Day", "he":"יום הולדת לברבי"}, urls: {"en":"https://www.daysoftheyear.com/days/barbie-day/"}, fst: {era: 1, y: 1959}},
+        {type: "D", st: {mon: 3, d: 13}, titles: {"en":"Ken Day", "he":"יום הולדת לקן"}, urls: {"en":"https://www.daysoftheyear.com/days/ken-day/"}, fst: {era: 1, y: 1961}, inherits: "*BDay*", notes: {"en":"Created by Mattel"}},
+        {type: "D", st: {mon: 9, d: 6}, titles: {"en":"Barbie Doll Day"}, urls: {"en":"https://www.checkiday.com/491fd128b27e98b8322312b53cd57791/barbie-doll-day"}, fst: {era: 1, y: 2011}},
         {type: "D", st: {mon: 12, d: 16}, inherits: "Barbie & Barney Backlash Day"},
     ]
 }

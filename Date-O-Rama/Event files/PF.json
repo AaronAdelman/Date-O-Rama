@@ -5,10 +5,10 @@
     cal: "gre",
     color: {red: 1.00, green: 0.61, blue: 0.06},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_French_Polynesia"},
-    first: {era: 1, y: 1842},
+    fst: {era: 1, y: 1842},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", st: {mon: 3, d: 5}, inherits: "Missionary Day", urls: {"en":"https://www.officeholidays.com/holidays/french-polynesia/french-polynesian-missionary-day"}, first: {era: 1, y: 1978}},
+        {type: "D", st: {mon: 3, d: 5}, inherits: "Missionary Day", urls: {"en":"https://www.officeholidays.com/holidays/french-polynesia/french-polynesian-missionary-day"}, fst: {era: 1, y: 1978}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

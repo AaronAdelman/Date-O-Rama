@@ -5,14 +5,14 @@
     cal: "gre",
     color: {red: 0.13, green: 0.25, blue: 0.60},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Faroe_Islands"},
-    first: {era: 1, y: 1948},
+    fst: {era: 1, y: 1948},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 4, d: 25}, inherits: "N Flag Day", urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
-        {type: "D", st: {misc: "E", offsetD: 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}, urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
+        {type: "D", st: {misc: "E", offsetD: 26}, inherits: "General Prayer Day", fst: {era: 1, y: 1686}, urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
@@ -26,7 +26,7 @@
 
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {misc: "E", offsetD: -49}, inherits: "Fastelavn"},
-        {type: "D", st: {misc: "E", offsetD: 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
+        {type: "D", st: {misc: "E", offsetD: 26}, inherits: "General Prayer Day", fst: {era: 1, y: 1686}},
         
         {type: "D", inherits: "Truant’s Day", st: {mon: 3, d: 21}},
     ]

@@ -5,12 +5,12 @@
     cal: "gre",
     color: {red: 0.00, green: 0.24, blue: 0.65},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Liechtenstein"},
-    first: {era: 1, y: 1719},
+    fst: {era: 1, y: 1719},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 2}, inherits: "Berchtold’s Day", urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/berchtolds-day"}},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", st: {mon: 2, d: 2}, inherits: "Candlemas", first: {era: 1, y: 472}},
+        {type: "D", st: {mon: 2, d: 2}, inherits: "Candlemas", fst: {era: 1, y: 472}},
         {type: "D", st: {misc: "E", offsetD: -47}, inherits: "Shrove Tuesday", urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/carnival-tuesday"}},
         {type: "D", st: {mon: 3, d: 19}, inherits: "St Joseph"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
@@ -21,7 +21,7 @@
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost", urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/pentecost-sunday"}},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", st: {misc: "E", offsetD: 60}, inherits: "Corpus Christi"},
-        {inherits: "N Day", type: "D", st: {mon: 8, d: 15}, first: {era: 1, y: 1886}, urls: {"en":"https://nationaltoday.com/liechtenstein-national-day/"}},
+        {inherits: "N Day", type: "D", st: {mon: 8, d: 15}, fst: {era: 1, y: 1886}, urls: {"en":"https://nationaltoday.com/liechtenstein-national-day/"}},
         {type: "D", st: {mon: 9, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/feast-of-our-lady-of-victories"}, inherits: "Nativity of Mary"},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", st: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
@@ -32,6 +32,6 @@
 
         {type: "D", st: {mon: 3, d: 19}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", st: {mon: 1, d: 23}, titles: {"en":"Anniversary of the Creation of Liechtenstein", "he":"יום ייסוד ליכטנשטיין"}, first: {era: 1, y: 1719}, urls: {"en":"http://every-day-is-special.blogspot.com/2014/01/january-23-anniversary-of-creation-of.html"}},
+        {type: "D", st: {mon: 1, d: 23}, titles: {"en":"Anniversary of the Creation of Liechtenstein", "he":"יום ייסוד ליכטנשטיין"}, fst: {era: 1, y: 1719}, urls: {"en":"http://every-day-is-special.blogspot.com/2014/01/january-23-anniversary-of-creation-of.html"}},
     ]
 }

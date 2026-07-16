@@ -5,7 +5,7 @@
     cal: "gre",
     color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Luxembourg"},
-    first: {era: 1, y: 1815},
+    fst: {era: 1, y: 1815},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fasching"}, titles: {"en":"Fasching"}},
@@ -28,9 +28,9 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "St Stephen"},
 
-        {type: "D", st: {mon: 3, d: 20}, inherits: "I Francophonie Day", first: {era: 1, y: 1988}},
+        {type: "D", st: {mon: 3, d: 20}, inherits: "I Francophonie Day", fst: {era: 1, y: 1988}},
         {type: "D", st: {mon: 10, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", st: {misc: "E", offsetD: -21}, inherits: "Laetare", urls: {"en":"https://nationaltoday.com/pretzel-sunday/"}},
-        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 2006}},
+        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
     ]
 }

@@ -4,7 +4,7 @@
     defaultLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.24, blue: 0.65},
-    first: {era: 1, y: 1991},
+    fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Moldova"},
     evts: [
         {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
