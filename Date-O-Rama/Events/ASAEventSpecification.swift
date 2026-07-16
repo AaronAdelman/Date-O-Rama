@@ -200,14 +200,7 @@ extension ASAEventSpecification {
         
         return result
     } // var recurrenceRules
-    
-//    func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool {
-//        assert(self.inherits != nil)
-////        assert(templateEventSpecification.template != nil)
-//        
-//        return self.inherits == templateEventSpecification.template
-//    } // func matchesTemplate(templateEventSpecification: ASAEventSpecification) -> Bool
-    
+        
     static let templateEventsFile: ASAEventsFile? = {
         let (file, error) = ASAEventsFile.builtIn(fileName: "*Templates")
         if error != nil {
@@ -218,12 +211,6 @@ extension ASAEventSpecification {
     
     fileprivate func delegatedTemplateEventSpecification(for eventSpecification: ASAEventSpecification, eventsFileTemplates: Dictionary<String, ASAEventSpecification>) -> ASAEventSpecification? {
         var template: ASAEventSpecification?
-//        let index = eventsFileTemplates.firstIndex(where: {
-//            eventSpecification.matchesTemplate(templateEventSpecification: $0)
-//        })
-//        if index != nil {
-//            template = eventsFileTemplates[index!]
-//        }
         let inherits = eventSpecification.inherits
         if inherits != nil {
             template = eventsFileTemplates[inherits!]

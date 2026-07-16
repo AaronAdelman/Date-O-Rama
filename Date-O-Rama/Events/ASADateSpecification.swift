@@ -66,13 +66,11 @@ struct ASADateSpecification:  Codable {
     // For rise and set events
     var body: String?
     
-    // For Islamic prayer times
-//    var calculationMethod: ASACalculationMethod?
-//    var asrJuristicMethod: ASAJuristicMethodForAsr?
+    // For Islamic prayer times (auxiliary information)
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
         
-    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes)
+    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes, Islamic prayer times)
     var miscellaneous:  ASAMiscellaneous?
         
     // For repeating events
@@ -101,8 +99,6 @@ struct ASADateSpecification:  Codable {
         case solarHours          = "zsuH"
         case dayHalf             = "dHalf"
         case body
-//        case calculationMethod   = "calcMethod"
-//        case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
         case offsetDays          = "offsetD"
