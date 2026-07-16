@@ -8,17 +8,17 @@
     first: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
     evts: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 20}, inherits: "Armed Forces Day", urls: {"en":"https://www.officeholidays.com/holidays/mali/mali-army-day"}, notes: {"en":"Army Day"}},
-        {type: "D", start: {mon: 3, d: 26}, inherits: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-mali/"}},
-        {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/mali/labour-day"}, inherits: "Labour Day"},
-        {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
-        {type: "D", start: {mon: 9, d: 22}, inherits: "Independence Day", first: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/mali-independence-day/"}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 1, d: 20}, inherits: "Armed Forces Day", urls: {"en":"https://www.officeholidays.com/holidays/mali/mali-army-day"}, notes: {"en":"Army Day"}},
+        {type: "D", st: {mon: 3, d: 26}, inherits: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-mali/"}},
+        {type: "D", st: {misc: "E"}, inherits: "Easter"},
+        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/mali/labour-day"}, inherits: "Labour Day"},
+        {type: "D", st: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
+        {type: "D", st: {mon: 9, d: 22}, inherits: "Independence Day", first: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/mali-independence-day/"}},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", start: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
+        {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
+        {type: "D", st: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
     ]
 }

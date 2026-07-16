@@ -4,7 +4,7 @@
     cal: "hiq*",
     color: {name: "green"},
     evts: [
-        {type: "D", start: {mon: 3, d: 12}, inherits: "Mawlid"},
-        {type: "D", start: {mon: 9, d: 29}, inherits: "Laylat al-Qadr"},
+        {type: "D", st: {mon: 3, d: 12}, inherits: "Mawlid"},
+        {type: "D", st: {mon: 9, d: 29}, inherits: "Laylat al-Qadr"},
     ]
 }

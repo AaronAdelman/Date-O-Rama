@@ -6,7 +6,7 @@
     color: {red: 0.00, green: 0.48, blue: 0.20},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
     evts: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
-        {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
+        {type: "D", st: {mon: 1, d: 1}, inherits: "Chinese New Year"},
+        {type: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"}
     ]
 }

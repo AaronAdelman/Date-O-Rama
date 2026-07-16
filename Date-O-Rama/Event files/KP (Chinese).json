@@ -8,6 +8,6 @@
     first: {era: 1, y: 1948},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
     evts: [
-        {type: "D", start: {mon: 8, d: 14}, inherits: "Chuseok"},
+        {type: "D", st: {mon: 8, d: 14}, inherits: "Chuseok"},
     ]
 }

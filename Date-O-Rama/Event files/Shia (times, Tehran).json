@@ -5,14 +5,14 @@
     color: {name: "green"},
     emoji: "🇮🇷",
     evts: [
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "DhuhrISNA"}},
-        {inherits: "Isha", type: "pt", start: {ptType: "IshaJafari"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafiiJafari"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafiJafari"}},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
+        {inherits: "Dhuhr", type: "pt", st: {ptType: "DhuhrISNA"}},
+        {inherits: "Isha", type: "pt", st: {ptType: "IshaJafari"}},
+        {inherits: "Asr (Shafii)", type: "pt", st: {ptType: "AsrShafiiJafari"}},
+        {inherits: "Asr (Hanafi)", type: "pt", st: {ptType: "AsrHanafiJafari"}},
 
-        {inherits: "Maghrib", type: "pt", start: {ptType: "MaghribTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "FajrTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
+        {inherits: "Maghrib", type: "pt", st: {ptType: "MaghribTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
+        {inherits: "Fajr", type: "pt", st: {ptType: "FajrTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
     ]
 }

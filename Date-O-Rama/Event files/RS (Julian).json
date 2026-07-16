@@ -7,12 +7,12 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     first: {era: 1, y: 1804},
    evts: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "O Xmas"},
-        {type: "D", start: {mon: 1, d: 1}, inherits: "O New Year’s Day"},
-        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
-        {type: "D", start: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},
-        {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
+        {type: "D", st: {mon: 1, d: 1}, inherits: "O New Year’s Day"},
+        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
+        {type: "D", st: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},
+        {type: "D", st: {misc: "E"}, inherits: "Easter"},
+        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }
 

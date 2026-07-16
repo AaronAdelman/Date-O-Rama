@@ -6,11 +6,11 @@
     color: {red: 0.06, green: 0.28, blue: 0.69},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
     evts: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "O Xmas"},
-        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
-        {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
+        {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
+        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
+        {type: "D", st: {misc: "E"}, inherits: "Easter"},
+        {type: "D", st: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
 
     ]
 }

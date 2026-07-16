@@ -4,6 +4,6 @@
     cal: "gre",
     color: {red: 0.2, green: 0.79, blue: 0.25},
     evts: [
-        {type: "D", start: {mon: 9, d: 29}, titles: {"en":"Confucius Day"}, urls: {"en":"https://www.daysoftheyear.com/days/confucius-day/"}},
+        {type: "D", st: {mon: 9, d: 29}, titles: {"en":"Confucius Day"}, urls: {"en":"https://www.daysoftheyear.com/days/confucius-day/"}},
     ]
 }

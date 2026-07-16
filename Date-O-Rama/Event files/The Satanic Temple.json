@@ -6,10 +6,10 @@
     first: {era: 1, y: 2012},
     urls: {"en":"https://thesatanictemple.com/pages/holidays"},
     evts: [
-        {type: "D", start: {mon: 2, d: 15}, inherits: "Lupercalia"},
-        {type: "D", start: {mon: 4, d: 30}, titles: {"en":"Hexennacht"}, inherits: "Walpurgis Night"},
-        {type: "D", start: {mon: 7, d: 25}, titles: {"en":"Unveiling Day"}},
-        {type: "D", start: {mon: 10, d: 31}, inherits: "Halloween"},
-        {type: "D", start: {mon: 12, d: 25}, titles: {"en":"Sol Invictus"}},
+        {type: "D", st: {mon: 2, d: 15}, inherits: "Lupercalia"},
+        {type: "D", st: {mon: 4, d: 30}, titles: {"en":"Hexennacht"}, inherits: "Walpurgis Night"},
+        {type: "D", st: {mon: 7, d: 25}, titles: {"en":"Unveiling Day"}},
+        {type: "D", st: {mon: 10, d: 31}, inherits: "Halloween"},
+        {type: "D", st: {mon: 12, d: 25}, titles: {"en":"Sol Invictus"}},
     ]
 }

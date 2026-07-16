@@ -4,14 +4,14 @@
     cal: "hiq-solar*",
     color: {name: "green"},
     evts: [
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "DhuhrISNA"}},
-        {inherits: "Isha", type: "pt", start: {ptType: "IshaJafari"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafiiJafari"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafiJafari"}},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
+        {inherits: "Dhuhr", type: "pt", st: {ptType: "DhuhrISNA"}},
+        {inherits: "Isha", type: "pt", st: {ptType: "IshaJafari"}},
+        {inherits: "Asr (Shafii)", type: "pt", st: {ptType: "AsrShafiiJafari"}},
+        {inherits: "Asr (Hanafi)", type: "pt", st: {ptType: "AsrHanafiJafari"}},
 
-        {inherits: "Maghrib", type: "pt", start: {ptType: "MaghribJafari"}, notes: {"en":"Ithna Ashari"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "FajrJafari"}, notes: {"en":"Ithna Ashari"}},
+        {inherits: "Maghrib", type: "pt", st: {ptType: "MaghribJafari"}, notes: {"en":"Ithna Ashari"}},
+        {inherits: "Fajr", type: "pt", st: {ptType: "FajrJafari"}, notes: {"en":"Ithna Ashari"}},
     ]
 }

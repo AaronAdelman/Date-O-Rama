@@ -4,6 +4,6 @@
     cal: "chi",
     color: {red: 1.0, green: 0.82, blue: 0.41},
     evts: [
-        {type: "D", start: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en":"https://nationaltoday.com/spirit-festival/"}},
+        {type: "D", st: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en":"https://nationaltoday.com/spirit-festival/"}},
     ]
 }

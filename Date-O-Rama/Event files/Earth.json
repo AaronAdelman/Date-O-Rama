@@ -4,16 +4,16 @@
     cal: "xloc*",
     color: {name: "blue"},
     evts: [
-        {type: "Y", start: {}, nonoverlappingSubEvents: [
-            {inherits: "Vernal Equinox", type: "pt", start: {misc: "Mar"}, regionCodes: ["xb"]},
-            {inherits: "Summer Solstice", type: "pt", start: {misc: "Jun"}, regionCodes: ["xb"]},
-            {inherits: "Autumnal Equinox", type: "pt", start: {misc: "Sep"}, regionCodes: ["xb"]},
-            {inherits: "Winter Solstice", type: "pt", start: {misc: "Dec"}, regionCodes: ["xb"]},
+        {type: "Y", st: {}, nonoverlappingSubEvents: [
+            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Mar"}, regionCodes: ["xb"]},
+            {inherits: "Summer Solstice", type: "pt", st: {misc: "Jun"}, regionCodes: ["xb"]},
+            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Sep"}, regionCodes: ["xb"]},
+            {inherits: "Winter Solstice", type: "pt", st: {misc: "Dec"}, regionCodes: ["xb"]},
             
-            {inherits: "Vernal Equinox", type: "pt", start: {misc: "Sep"}, regionCodes: ["xc"]},
-            {inherits: "Summer Solstice", type: "pt", start: {misc: "Dec"}, regionCodes: ["xc"]},
-            {inherits: "Autumnal Equinox", type: "pt", start: {misc: "Mar"}, regionCodes: ["xc"]},
-            {inherits: "Winter Solstice", type: "pt", start: {misc: "Jun"}, regionCodes: ["xc"]},
+            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Sep"}, regionCodes: ["xc"]},
+            {inherits: "Summer Solstice", type: "pt", st: {misc: "Dec"}, regionCodes: ["xc"]},
+            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Mar"}, regionCodes: ["xc"]},
+            {inherits: "Winter Solstice", type: "pt", st: {misc: "Jun"}, regionCodes: ["xc"]},
         ]},
     ]
 }

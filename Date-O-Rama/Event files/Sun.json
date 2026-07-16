@@ -4,16 +4,16 @@
     cal: "xloc*",
     color: {name: "yellow"},
     evts: [
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
         
-        {titles: {"en":"Civil dawn", "he":"שחר אזרחי"}, type: "pt", start: {ptType: "twi", degBelowHor: 6.0, rising: true, offset: 0}},
-        {titles: {"en":"Civil dusk", "he":"בין הערביים אזרחי"}, type: "pt", start: {ptType: "twi", degBelowHor: 6.0, rising: false, offset: 0}},
+        {titles: {"en":"Civil dawn", "he":"שחר אזרחי"}, type: "pt", st: {ptType: "twi", degBelowHor: 6.0, rising: true, offset: 0}},
+        {titles: {"en":"Civil dusk", "he":"בין הערביים אזרחי"}, type: "pt", st: {ptType: "twi", degBelowHor: 6.0, rising: false, offset: 0}},
         
-        {titles: {"en":"Nautical dawn", "he":"שחר ימי"}, type: "pt", start: {ptType: "twi", degBelowHor: 12.0, rising: true, offset: 0}},
-        {titles: {"en":"Nautical dusk", "he":"בין העבריים ימי"}, type: "pt", start: {ptType: "twi", degBelowHor: 12.0, rising: false, offset: 0}},
+        {titles: {"en":"Nautical dawn", "he":"שחר ימי"}, type: "pt", st: {ptType: "twi", degBelowHor: 12.0, rising: true, offset: 0}},
+        {titles: {"en":"Nautical dusk", "he":"בין העבריים ימי"}, type: "pt", st: {ptType: "twi", degBelowHor: 12.0, rising: false, offset: 0}},
         
-        {titles: {"en":"Astronomical dawn", "he":"שחר אסטרונומי"}, type: "pt", start: {ptType: "twi", degBelowHor: 18.0, rising: true, offset: 0}},
-        {titles: {"en":"Astronomical dusk", "he":"בין הערביים אסטרונומי"}, type: "pt", start: {ptType: "twi", degBelowHor: 18.0, rising: false, offset: 0}},
+        {titles: {"en":"Astronomical dawn", "he":"שחר אסטרונומי"}, type: "pt", st: {ptType: "twi", degBelowHor: 18.0, rising: true, offset: 0}},
+        {titles: {"en":"Astronomical dusk", "he":"בין הערביים אסטרונומי"}, type: "pt", st: {ptType: "twi", degBelowHor: 18.0, rising: false, offset: 0}},
     ]
 }

@@ -55,10 +55,16 @@ struct ASAEventSpecification: Codable {
         var subtitles: Dictionary<String, String>
         var start: Int
         var end: Int
+        
+        enum CodingKeys: String, CodingKey {
+            case subtitles
+            case start = "st"
+            case end
+        }
     } // struct CycleRange
 
     enum CodingKeys: String, CodingKey {
-        case startDateSpecification = "start"
+        case startDateSpecification = "st"
         case endDateSpecification   = "end"
         case firstDateSpecification = "first"
         case lastDateSpecification  = "last"

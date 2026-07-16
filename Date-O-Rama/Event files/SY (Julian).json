@@ -7,7 +7,7 @@
     first: {era: 1, y: 1946},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
     evts: [
-        {type: "D", start: {misc: "E"}, inherits: "Easter"},
+        {type: "D", st: {misc: "E"}, inherits: "Easter"},
 
     ]
 }
