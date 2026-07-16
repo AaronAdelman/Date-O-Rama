@@ -27,7 +27,8 @@ enum ASAPointEventType: String, Codable {
     case dhuhr = "Dhuhr"
 
     /// Asr Islamic prayer time
-    case asr = "Asr"
+    case asrShafii = "AsrShafii"
+    case asrHanafi = "AsrHanafi"
 
     /// Maghrib Islamic prayer time
     case maghrib = "Maghrib"

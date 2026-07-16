@@ -11,7 +11,7 @@
         {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
         {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
         {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "Makkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
     ]
 }

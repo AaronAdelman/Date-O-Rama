@@ -9,8 +9,8 @@
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
         {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}},
         {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Jafari"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Jafari"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Jafari"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "Jafari"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "Jafari"}},
 
         {inherits: "Maghrib", type: "pt", start: {ptType: "Maghrib", calcMethod: "Tehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
         {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Tehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},

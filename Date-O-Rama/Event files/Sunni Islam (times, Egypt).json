@@ -8,8 +8,8 @@
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
         {type: "pt", start: {ptType: "twilight", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
         {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Karachi"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Karachi"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "Karachi"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "Karachi"}},
  
         {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Egypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
         {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Egypt"}, notes: {"en":"Egyptian General Authority of Survey"}},

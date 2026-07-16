@@ -47,9 +47,9 @@ enum ASACalculationMethod: String, Codable {
 } // enum ASACalculationMethod
 
 // Juristic Methods
-enum ASAJuristicMethodForAsr: String, Codable {
-    case Shafii     // Shafii (standard)
-    case Hanafi     // Hanafi
+enum ASAJuristicMethodForAsr: String {
+    case shafii     // Shafii (standard)
+    case hanafi     // Hanafi
 } // enum ASAJuristicMethodForAsr
 
 // Adjusting Methods for Higher Latitudes
@@ -275,10 +275,10 @@ extension ASACalculationMethod {
 extension ASAJuristicMethodForAsr {
     var value: Double {
         switch self {
-        case .Shafii:
+        case .shafii:
             return 1.0
             
-        case .Hanafi:
+        case .hanafi:
         return 2.0
         }
     }

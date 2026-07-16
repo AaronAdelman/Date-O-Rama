@@ -68,7 +68,7 @@ struct ASADateSpecification:  Codable {
     
     // For Islamic prayer times
     var calculationMethod: ASACalculationMethod?
-    var asrJuristicMethod: ASAJuristicMethodForAsr?
+//    var asrJuristicMethod: ASAJuristicMethodForAsr?
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
         
@@ -102,7 +102,7 @@ struct ASADateSpecification:  Codable {
         case dayHalf             = "dHalf"
         case body
         case calculationMethod   = "calcMethod"
-        case asrJuristicMethod
+//        case asrJuristicMethod
         case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
         case offsetDays          = "offsetD"

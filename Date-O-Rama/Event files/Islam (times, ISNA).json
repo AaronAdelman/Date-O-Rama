@@ -11,8 +11,8 @@
         {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
         {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
         {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "AsrShafii", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "AsrHanafi", calcMethod: "ISNA"}, notes: {"en":"Islamic Society of North America"}},
         
     ]
 }
