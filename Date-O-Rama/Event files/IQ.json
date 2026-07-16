@@ -31,7 +31,7 @@
         {titles: {"en":"Kurdish Students Union Day"}, type: "D", start: {mon: 2, d: 18}, locations: {"en":"Iraqi Kurdistan"}, emoji: "👨‍🎓👩‍🎓"},
         {titles: {"en":"Commemoration of Mustafa Barzani’s Death"}, type: "D", start: {mon: 3, d: 1}, locations: {"en":"Iraqi Kurdistan"}, inherits: "*DeathAnniv*"},
         {titles: {"en":"Liberation of Slemani City"}, type: "D", start: {mon: 3, d: 7}, locations: {"en":"Iraqi Kurdistan"}, emoji: "🏙️"},
-        {type: "D", start: {mon: 3, d: 8}, inherits: "Intl Women’s Day", first: {era: 1, y: 2021}},
+        {type: "D", start: {mon: 3, d: 8}, inherits: "IWD", first: {era: 1, y: 2021}},
         {titles: {"en":"Kurdish Clothes Day"}, type: "D", start: {mon: 3, d: 10}, locations: {"en":"Iraqi Kurdistan"}, emoji: "🧥"},
         {titles: {"en":"Liberation of Duhok City"}, type: "D", start: {mon: 3, d: 13}, locations: {"en":"Iraqi Kurdistan"}, emoji: "🏙️"},
         {titles: {"en":"Halabja Day"}, type: "D", start: {mon: 3, d: 16}, locations: {"en":"Iraqi Kurdistan"}},

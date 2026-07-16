@@ -37,7 +37,7 @@
         {type: "D", start: {mon: 12, d: 23}, titles: {"en":"Birthday of Emperor Akihito"}, urls: {"en":"https://nationaltoday.com/birthday-of-emperor-akihito/"}, inherits: "*BDay*", first: {era: 1, y: 1989}},
         {type: "D", start: {mon: 3, d: 3}, titles: {"en":"Japan Dolls Festival"}, urls: {"en":"https://nationaltoday.com/japan-dolls-festival/"}, first: {era: 1, y: 1868}, emoji: "🎎"},
         {type: "D", start: {mon: 3, d: 15}, titles: {"de":"Hōnen-Matsuri","en":"Hōnensai","es":"Hōnen Matsuri","fa":"هونن ماتسوری","fr":"Hōnen Matsuri","hr":"Hōnen Matsuri","id":"Hōnen Matsuri","it":"Hōnen Matsuri","ja":"田縣神社#豊年祭","ms":"Hōnen Matsuri","nl":"Honen Matsuri","pt":"Hōnensai","ro":"Hōnen Matsuri","ru":"Хонэн-мацури","sl":"Honen Macuri","ta":"ஒவுனென் மட்சுறி","uk":"Хонен-мацурі","vi":"Hōnen Matsuri"}, notes: {"en":"Honen Matsuri"}, urls: {"en":"https://nationaltoday.com/honen-matsuri/"}},
-        {type: "D", start: {mon: 10, d: 1}, inherits: "Natl Coffee Day"},
+        {type: "D", start: {mon: 10, d: 1}, inherits: "N Coffee Day"},
         {type: "D", start: {mon: 11, d: 11}, titles: {"en":"Pocky & Pretz Day","id":"Hari Pocky & Pretz","ja":"ポッキー&プリッツの日","ko":"포키 & 프리츠의 날","ms":"Hari Pocky & Pretz","th":"วันป๊อกกี้และวันเพรทซ์","zh":"百奇与百力滋日"}, first: {era: 1, y: 1999}, urls: {"en":"https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en":"Pocky Day\nCreated by Glico"}},
         {type: "D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
         {type: "D", start: {mon: 11, d: 24, wkd: [2]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},

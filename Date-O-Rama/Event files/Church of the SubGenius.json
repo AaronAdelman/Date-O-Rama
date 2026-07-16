@@ -375,6 +375,6 @@
         ]},
         
         {type: "D", start: {mon: 6, d: 2}, inherits: "Yell “Fudge” at the Cobras in North America Day", first: {era: 1, y: 1996}},
-        {type: "D", start: {mon: 6, d: 18}, inherits: "Natl Splurge Day", first: {era: 1, y: 1994}},
+        {type: "D", start: {mon: 6, d: 18}, inherits: "N Splurge Day", first: {era: 1, y: 1994}},
     ]
 }

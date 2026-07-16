@@ -11,7 +11,7 @@
         {type: "D", start: {misc: "E", offsetD: -3}, inherits: "Maundy Thursday"},
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {mon: 4, d: 25}, inherits: "Natl Flag Day", urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
+        {type: "D", start: {mon: 4, d: 25}, inherits: "N Flag Day", urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
         {type: "D", start: {misc: "E", offsetD: 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}, urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
         {type: "D", start: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},

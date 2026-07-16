@@ -193,7 +193,7 @@
         {type: "M", start: {mon: 4}, titles: {"en":"Limb Loss and Limb Difference Awareness Month"}, urls: {"en":"https://40years.amputee-coalition.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2010}, notes: {"en":"LLLDAM\nCreated by the Amputee Coalition"}},
         {type: "M", start: {mon: 4}, titles: {"en":"Summer Tire Changeover Month"}, urls: {"en":"https://www.daysoftheyear.com/days/summer-tire-changeover-month/"}, emoji: "🛞"},
         {type: "M", start: {mon: 4}, titles: {"en":"Global Volunteer Month"}, urls: {"en":"https://www.pointsoflight.org/global-volunteer-month/"}, emoji: "✻", first: {era: 1, y: 2020}, notes: {"en":"Created by Points of Light"}},
-        {type: "M", start: {mon: 5}, inherits: "Natl Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
+        {type: "M", start: {mon: 5}, inherits: "N Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
         {type: "M", start: {mon: 5}, titles: {"en":"Family Wellness Month"}, urls: {"en":"https://nationaltoday.com/family-wellness-month/"}, inherits: "Family Day"},
         {type: "M", start: {mon: 5}, titles: {"en":"Fibromyalgia Education and Awareness Month"}, urls: {"en":"https://nationaltoday.com/fibromyalgia-education-and-awareness-month/"}, inherits: "*MedAwareness*"},
         {type: "M", start: {mon: 5}, titles: {"en":"Food Allergy Awareness Month"}, notes: {"en":"Food Allergy Action Month\nFood Allergy Awareness and Action Month\nFood Allergy Action Month\nCreated by the Food Allergy & Anaphylaxis Connection Team (FAACT)"}, urls: {"en":"https://www.daysoftheyear.com/days/food-allergy-awareness-month/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2018}},

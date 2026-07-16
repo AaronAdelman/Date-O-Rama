@@ -13,7 +13,7 @@
         {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
         {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 4, d: 28}, inherits: "Natl Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/barbados/barbados-national-heroes-day"}},
+        {type: "D", start: {mon: 4, d: 28}, inherits: "N Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/barbados/barbados-national-heroes-day"}},
         {type: "D", start: {mon: 5, d: 1}, inherits: "May Day"},
         {type: "D", start: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", start: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
@@ -29,6 +29,6 @@
         {type: "D", start: {mon: 5, d: 25}, inherits: "Africa Day", first: {era: 1, y: 1963}},
         {titles: {"en":"Day of National Significance", "he":"יום של משמעות לאומית"}, type: "D", start: {mon: 7, d: 26}},
         {type: "D", start: {mon: 8, d: 17}, titles: {"en":"Birthday of Marcus Garvey", "he":"יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
-        {inherits: "Intl Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
+        {inherits: "I Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
     ]
 }

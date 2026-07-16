@@ -19,7 +19,7 @@
         {type: "W", start: {mon: 2, fullWk: 1}, titles: {"en":"Boy Scouts Anniversary Week"}, urls: {"en":"https://www.daysoftheyear.com/days/boy-scout-anniversary-week/"}, first: {era: 1, y: 1910}, notes: {"en":"National Boy Scout Day\nCreated by the Boy Scouts of America"}},
         {type: "W", start: {mon: 3, fullWk: 2}, titles: {"en":"Girl Scout Week"}, urls: {"en":"https://www.daysoftheyear.com/days/girl-scout-week/"}, first: {era: 1, y: 1912}, notes: {"en":"Created by the Girl Scouts of the USA"}},
         {type: "D", start: {mon: 10, d: 24}, inherits: "Foundation Anniversary of the Boy Scouts of the Philippines"},
-        {type: "D", start: {mon: 7, d: 1}, inherits: "Natl Scout Org Day"},       
+        {type: "D", start: {mon: 7, d: 1}, inherits: "N Scout Org Day"},       
   ],
     tpls: {
         "Girl Scout Cookie Weekend": {type: "nD", start: {mon: 2, d: 15, thruD: 21, wkd: [6], durD: 3}, titles: {"en":"Girl Scout Cookie Weekend"}, urls: {"en":"https://www.daysoftheyear.com/days/girl-scout-cookie-weekend/"}, emoji: "🍪", notes: {"en":"Created by the Girl Scouts of the USA"}, first: {era: 1, y: 2013}, last: {era: 1, y: 2022}},

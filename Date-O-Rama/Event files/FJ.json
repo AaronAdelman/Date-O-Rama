@@ -26,7 +26,7 @@
         {type: "D", start: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {misc: "E", offsetD: -7}, titles: {"en":"Children’s Sunday"}, inherits: "Children’s Day"},
         {type: "D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
-        {inherits: "Natl Youth Day", type: "D", start: {mon: 5, d: 4}},
+        {inherits: "N Youth Day", type: "D", start: {mon: 5, d: 4}},
 
         {type: "D", start: {mon: 9, wkd: [1], nth: 1}, inherits: "Father’s Day"},
         {type: "D", start: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

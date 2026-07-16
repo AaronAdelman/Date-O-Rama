@@ -7,10 +7,10 @@
     first: {era: 1, y: 1969},
     evts: [
         {type: "D", start: {mon: 11, d: 10}, titles: {"en":"Sesame Street Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sesame-street-day/"}, first: {era: 1, y: 2009}},
-        {type: "D", start: {mon: 10, d: 15}, inherits: "Natl Grouch Day", first: {era: 1, y: 1976}},
+        {type: "D", start: {mon: 10, d: 15}, inherits: "N Grouch Day", first: {era: 1, y: 1976}},
         
         {type: "D", start: {mon: 1, d: 5}, titles: {"en":"Hoots the Owl’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 2005}},
-        {type: "D", start: {mon: 1, d: 13}, inherits: "Natl Rubber Ducky Day", first: {era: 1, y: 1972}},
+        {type: "D", start: {mon: 1, d: 13}, inherits: "N Rubber Ducky Day", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 1, d: 24}, titles: {"en":"Julia’s Birthday"}, inherits: "*BDay*"},
         {type: "D", start: {mon: 1, d: 28}, titles: {"en":"Ernie’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1972}},
         {type: "D", start: {mon: 2, d: 3}, titles: {"en":"Elmo’s Birthday"}, urls: {"en":"https://www.daysoftheyear.com/days/elmos-birthday/"}, inherits: "*BDay*", first: {era: 1, y: 1980}, notes: {"en":"Created by Sesame Street"}},
@@ -86,6 +86,6 @@
         
         {type: "D", start: {mon: 3, d: 10}, titles: {"en":"Zoe’s Birthday"}, inherits: "*BDay*", notes: {"en":"Some think Zoe was born on September 30 or in January."}, first: {era: 1, y: 1998}},
         {type: "D", start: {mon: 5, d: 9}, titles: {"en":"Kermit the Frog’s Birthday"}, inherits: "*BDay*", notes: {"en":"It is unclear when Kermit the Frog was born; the birthday given here is simply one frequently used.  February 29 has also been suggested."}, first: {era: 1, y: 1955}, urls: {"en":"https://muppet.fandom.com/wiki/Kermit%27s_Birthday"}},
-        {type: "D", start: {mon: 11, d: 26}, inherits: "Natl Cookie Day", urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-cookie-day-december-4"}, first: {era: 1, y: 1976}},
+        {type: "D", start: {mon: 11, d: 26}, inherits: "N Cookie Day", urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-cookie-day-december-4"}, first: {era: 1, y: 1976}},
     ]
 }
