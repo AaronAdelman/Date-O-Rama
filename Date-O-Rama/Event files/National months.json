@@ -41,7 +41,7 @@
         {type: "M", start: {mon: 1}, titles: {"en":"National Train Your Dog Month"}, urls: {"en":"https://nationaltoday.com/national-train-dog-month/"}, emoji: "🐕"},
         {type: "M", start: {mon: 1}, titles: {"en":"National Wheat Bread Month"}, urls: {"en":"https://nationaltoday.com/national-wheat-bread-month/"}, first: {era: 1, y: 2011}},
         {type: "M", start: {mon: 1}, urls: {"en":"https://nationaltoday.com/national-polka-music-month/"}, titles: {"en":"National Polka Music Month"}, first: {era: 1, y: 1968}, emoji: "🎼"},
-        {type: "M", start: {mon: 10}, inherits: "Breast Cancer Awareness Month", urls: {"en":"https://www.nationalbreastcancer.org/breast-cancer-awareness-month/"}, first: {era: 1, y: 1985}},
+        {type: "M", start: {mon: 10}, inherits: "BCAM", urls: {"en":"https://www.nationalbreastcancer.org/breast-cancer-awareness-month/"}, first: {era: 1, y: 1985}},
         {type: "M", start: {mon: 10}, titles: {"en":"ADHD Awareness Month"}, notes: {"en":"National ADHD Awareness Month"}, urls: {"en":"https://www.adhdawarenessmonth.org/"}, inherits: "*MedAwareness*", first: {era: 1, y: 2004}},
         {type: "M", start: {mon: 10}, titles: {"en":"Adopt-A-Dog Month®"}, notes: {"en":"Adopt a Shelter Dog Month\nCreated by the American Humane Association"}, urls: {"en":"https://www.daysoftheyear.com/days/adopt-a-shelter-dog-month/"}, first: {era: 1, y: 1981}, emoji: "🦮"},
         {type: "M", start: {mon: 10}, titles: {"en":"American Pharmacists Month"}, urls: {"en":"https://www.pharmacistsmonth.com/"}, first: {era: 1, y: 2004}, emoji: "💊", notes: {"en":"Created by the American Pharmaceutical Association (APhA)"}},
