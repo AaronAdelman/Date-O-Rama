@@ -8,10 +8,10 @@
     first: {era: 1, y: 1992},
     evts: [
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
-        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "Orthodox Good Friday"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "O Xmas"},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "O New Year’s Day"},
+        {type: "D", start: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }

@@ -8,6 +8,6 @@
     evts: [
         {type: "D", start: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }

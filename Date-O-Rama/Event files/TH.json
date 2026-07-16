@@ -111,7 +111,7 @@
 
         {type: "D", start: {mon: 1, d: 4}, titles: {"en":"Cavalry and Armor Day", "th":"วันทหารม้า", "he":"יום הפרשים והשריון"}},
         {type: "D", start: {mon: 1, d: 17}, titles: {"en":"National Dairy Day", "th":"วันโคนมแห่งชาติ", "he":"יום החלב הלאומי"}, emoji: "🥛🧀🧈"},
-        {type: "D", start: {mon: 2, d: 2}, inherits: "N Agriculture Day"},
+        {type: "D", start: {mon: 2, d: 2}, inherits: "N Ag Day"},
         {type: "D", start: {mon: 2, d: 10}, titles: {"en":"Volunteer Defense’s Day", "th":"วันอาสารักษาดินแดน", "he":"יום ההתנדבות"}},
         {type: "D", start: {mon: 2, d: 14}, inherits: "Valentine’s Day"},
         {type: "D", start: {mon: 2, d: 25}, inherits: "N Radio Day"},

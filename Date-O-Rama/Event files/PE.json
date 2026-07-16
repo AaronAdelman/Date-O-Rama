@@ -19,7 +19,7 @@
         {type: "D", start: {mon: 6, d: 29}, inherits: "Saints Peter and Paul", urls: {"en":"https://www.officeholidays.com/holidays/peru/saint-peter-and-saint-paul"}},
         {inherits: "Independence Day", type: "nD", start: {mon: 7, d: 28}, end: {mon: 7, d: 29}, urls: {"en":"https://nationaltoday.com/peru-independence-day/"}, first: {era: 1, y: 1821}},
         {type: "D", start: {mon: 8, d: 6}, urls: {"en":"https://www.officeholidays.com/holidays/peru/battle-of-junin"}, titles: {"en":"Battle of Junín", "es":"Batalla de Junin"}},
-        {type: "D", start: {mon: 8, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/peru/santa-rosa-de-lima"}, inherits: "St. Rose of Lima"},
+        {type: "D", start: {mon: 8, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/peru/santa-rosa-de-lima"}, inherits: "St Rose of Lima"},
         {titles: {"en":"Battle of Angamos", "es":"Combate naval de Angamos"}, type: "D", start: {mon: 10, d: 8}, urls: {"en":"https://nationaltoday.com/battle-of-angamos/"}, start: {era: 1, y: 1879}, notes: {"es":"Combate de Angamos"}},
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", start: {mon: 12, d: 8}, inherits: "Immaculate Conception"},

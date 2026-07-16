@@ -249,7 +249,7 @@
         {type: "D", start: {mon: 7, d: 19}, titles: {"en":"International Retainer Day"}, urls: {"en":"https://www.nationaldaycalendar.com/international/international-retainer-day-july-19"}, first: {era: 1, y: 2021}, emoji: "😄", notes: {"en":"Created by Vivera"}},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en":"National Play Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-play-day-july-19"}, first: {era: 1, y: 2024}, emoji: "🛝"},
         {type: "D", start: {mon: 7, d: 19}, titles: {"en":"National Words with Friends Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-words-with-friends-day-july-19"}, first: {era: 1, y: 2021}, notes: {"en":"Created by Zynga"}},
-        {type: "D", start: {mon: 7, d: 2}, inherits: "N Wildland Firefighter Day", first: {era: 1, y: 2022}},
+        {type: "D", start: {mon: 7, d: 2}, inherits: "NWFFD", first: {era: 1, y: 2022}},
         {type: "D", start: {mon: 7, d: 21}, titles: {"en":"National Be Someone Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-be-someone-day-july-21"}, first: {era: 1, y: 2021}, emoji: "🤝", notes: {"en":"Created by Project Harmony"}},
         {type: "D", start: {mon: 7, d: 23}, titles: {"en":"National Lemon Day"}, emoji: "🍋", urls: {"en":"https://www.nationaldaycalendar.com/july/national-lemon-day-july-23"}, first: {era: 1, y: 2024}},
         {type: "D", start: {mon: 7, d: 24}, titles: {"en":"National Thermal Engineer Day", "he":"יום המהנדס התרמי הלאומי"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/thermal-engineer-day-july-24"}, first: {era: 1, y: 2014}, emoji: "👷‍♂️👷‍♀️", notes: {"en":"Created by Advanced Thermal Solutions, Inc. (ATS)"}},

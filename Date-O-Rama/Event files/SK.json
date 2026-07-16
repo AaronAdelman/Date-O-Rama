@@ -22,7 +22,7 @@
         {type: "D", start: {mon: 11, d: 17}, inherits: "Struggle for Freedom and Democracy Day", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, notes: {"en":"Day of Freedom and Democracy"}},
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
 
         {titles: {"en":"Anniversary of the Memorandum of the Slovak Nation"}, type: "D", start: {mon: 6, d: 7}, first: {era: 1, y: 1861}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-memorandum-of-the-slovak-nation/"}},
         {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

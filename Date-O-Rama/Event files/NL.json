@@ -23,7 +23,7 @@
         {type: "D", start: {mon: 11, d: 2}, inherits: "All Saints Day", urls: {"en":"https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
         {type: "D", start: {mon: 11, d: 3, thruD: 5, wkd: [1]}, titles: {"en":"All Saints Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/netherlands/all-saints-day"}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
         
         {type: "D", start: {mon: 12, d: 5}, titles: {"en":"Saint Nicholas’s Eve", "nl":"Sinterklaasavond"}, emoji: "🎅", notes: {"en":"Pakjesavond"}},
         {type: "D", start: {misc: "E", offsetD: -49}, inherits: "Carnival (day 1)",},
@@ -44,7 +44,7 @@
         {type: "D", start: {mon: 3, d: 27}, titles: {"en":"Bitterballen Day", "nl":"Dag van de Bitterbal"}, notes: {"nl":"Bitterballendag\nNationale Bitterballendag"}, urls: {"en":"https://www.daysoftheyear.com/days/bitterballen-day/"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 1, wkd: [1], nth: -1}, inherits: "Holocaust Memorial Day", first: {era: 1, y: 1957}, titles: {"en":"National Holocaust Remembrance", "nl":"Nationale Holocaust Herdenking"}, notes: {"en":"Auschwitz Remembrance", "nl":"Auschwitzherdenking"}, urls: {"en":"https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
         {type: "D", start: {mon: 6, d: 16}, titles: {"en":"No Orange Clothes Day"}, urls: {"en":"https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, first: {era: 1, y: 1784}, emoji: "🟠"},
-        {type: "D", start: {mon: 10, d: 11}, inherits: "N Coming Out Day", first: {era: 1, y: 1988}},
+        {type: "D", start: {mon: 10, d: 11}, inherits: "NCOD", first: {era: 1, y: 1988}},
         {type: "D", start: {mon: 12, wkd: [6], nth: 2}, titles: {"en":"Purple Friday", "nl":"Paarse Vrijdag"}, first: {era: 1, y: 2010}},
         {type: "D", start: {mon: 12, d: 15, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Koninkrijksdag", first: {era: 1, y: 2005}},
         {type: "D", start: {mon: 12, d: 16, wkd: [2]}, inherits: "Koninkrijksdag", first: {era: 1, y: 2005}},

@@ -16,7 +16,7 @@
         {type: "D", start: {mon: 6, d: 5}, titles: {"ar":"يوم النكسة","de":"Naksa-Tag","en":"Naksa Day","fa":"روز نکسه","fr":"Jour de la Naksa","he":"יום הנכסה","id":"Hari Naksa","ja":"ナクサの日","ko":"좌절의 날","ro":"Ziua Naksa"}},
         {titles: {"ar":"يوم الأرض الفلسطيني","ca":"Dia de la Terra","de":"Tag des Bodens","en":"Land Day","es":"Día de la Tierra","eu":"Lurraren Eguna","fa":"روز سرزمین","fr":"Journée de la Terre","he":"יום האדמה","hy":"Հողի օր","id":"Hari Tanah","it":"Giorno della Terra","ja":"土地の日","ml":"ഭൂമിദിനം","nl":"Dag van het Land","pt":"Dia da Terra Palestina","ro":"Ziua Pământului Palestinian","ru":"День земли","sd":"ڌرتيءَ جو ڏينهن","si":"භූමි දිනය","tr":"Toprak Günü","zh":"土地日"}, type: "D", start: {mon: 3, d: 30}},
         
-        {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "St Barbara’s Day"},
         {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         {type: "D", start: {mon: 4, d: 5}, inherits: "Children’s Day", first: {era: 1, y: 1995}},
         

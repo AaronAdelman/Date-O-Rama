@@ -51,7 +51,7 @@
         {type: "D", start: {mon: 11, d: 27}, titles: {"en":"Naval Infantry Day", "he":"חיל הנחתים", "ru":"День морской пехоты"}},
         {type: "D", start: {mon: 11, d: 7}, inherits: "October Revolution Day"},
         {type: "D", start: {mon: 12, d: 12}, inherits: "Constitution Day"},
-        {type: "D", start: {mon: 12, d: 17}, inherits: "St. Barbara’s Day"},
+        {type: "D", start: {mon: 12, d: 17}, inherits: "St Barbara’s Day"},
         {type: "D", start: {mon: 12, d: 17}, titles: {"en":"Strategic Missile Troops Day", "ru":"День Ракетных войск стратегического назначения"}, first: {era: 1, y: 1995}},
         {type: "D", start: {mon: 12, d: 22}, inherits: "Power Engineer’s Day"},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},

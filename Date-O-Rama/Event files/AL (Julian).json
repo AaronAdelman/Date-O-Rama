@@ -8,6 +8,6 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     evts: [
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+        {type: "D", start: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }

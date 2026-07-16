@@ -6,9 +6,9 @@
     color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Russia"},
     evts: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day", urls: {"en":"https://nationaltoday.com/novy-god-russian-new-year/"}},
+        {type: "D", start: {mon: 1, d: 1}, inherits: "O New Year’s Day", urls: {"en":"https://nationaltoday.com/novy-god-russian-new-year/"}},
         {type: "D", start: {misc: "E"}, inherits: "Easter"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
+        {type: "D", start: {mon: 12, d: 25}, inherits: "O Xmas"},
         {type: "D", start: {mon: 12, d: 26, wkd: [2]}, titles: {"en":"Christmas Day (in lieu)"}},
         
         {type: "D", start: {mon: 3, d: 25}, inherits: "Annunciation"},

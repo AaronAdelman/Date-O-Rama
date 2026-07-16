@@ -20,7 +20,7 @@
         {type: "D", start: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {titles: {"en":"Day of Remembrance of the Victims of the Homeland War", "hr":"Dan sjećanja na žrtve Domovinskog rata"}, type: "D", start: {mon: 11, d: 18}, urls: {"en":"https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, first: {era: 1, y: 2020}},
         {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "St. Stephen’s Day"},
+        {type: "D", start: {mon: 12, d: 26}, inherits: "St Stephen’s Day"},
         
         {titles: {"en":"Day of Unification of Medimurje with its Parent Body Croatia", "hr":"Dan sjedinjenja Medimurja s maticom zemljom Hrvatskom"}, type: "D", start: {mon: 1, d: 9}},
         {titles: {"en":"Day of international recognition of the Republic of Croatia", "hr":"Dan međunarodnoga priznanja Republike Hrvatske"}, type: "D", start: {mon: 1, d: 15}},
@@ -38,7 +38,7 @@
         {type: "D", start: {mon: 10, d: 8}, titles: {"en":"Day of the Croatian Parliament", "hr":"Dan Hrvatskoga sabora"}},
         {type: "D", start: {misc: "E", offsetD: -47}, inherits: "Shrove Tuesday"},
         {type: "D", start: {mon: 5, d: 7}, titles: {"en":"Feast of Saint Dominus", "hr":"Sveti Duje"}},
-        {type: "D", start: {mon: 2, d: 3}, inherits: "St. Blaise", first: {era: 1, y: 972}},
+        {type: "D", start: {mon: 2, d: 3}, inherits: "St Blaise", first: {era: 1, y: 972}},
 
         {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", start: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
