@@ -10,7 +10,6 @@ import Foundation
 import EventKit
 
 struct ASAEventSpecification: Codable {
-//    var template: String?
     var inherits: String?
     
     var type: ASAEventSpecificationType
