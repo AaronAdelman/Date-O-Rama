@@ -1808,6 +1808,7 @@
         {type: "nD", st: {mon: 6, d: 22, thruD: 28, wkd: [7], durD: 2}, titles: {"en":"ARRL Field Day"}, urls: {"en":"https://www.arrl.org/field-day"}, emoji: "🎧📻", fst: {era: 1, y: 1933}},
         {type: "nD", st: {mon: 6, d: 6}, end: {mon: 6, d: 12}, titles: {"en":"Healthcare Executives Appreciation Week"}, urls: {"en":"https://nationaltoday.com/healthcare-executives-appreciation-week/"}},
         {type: "nD", st: {mon: 6, d: 7}, end: {mon: 6, d: 13}, titles: {"en":"World Heart Rhythm Week"}, urls: {"en":"https://nationaltoday.com/world-heart-rhythm-week/"}, emoji: "🫀", inherits: "*MedAwareness*"},
+        {type: "nD", st: {mon: 7, d: 17, durD: 7}, titles: {"en":"Hemp History Week"}, urls: {"en":"https://daysofobservance.com/hemp-history-week/"}},
         {type: "nD", st: {mon: 7, d: 26}, end: {mon: 8, d: 1}, titles: {"en":"Hepatitis Awareness Week", "he":"שבוע המודעות להפטיטיס"}, urls: {"en":"https://nationaltoday.com/hepatitis-awareness-week/"}, inherits: "*MedAwareness*"},
         {type: "nD", st: {mon: 7, d: 8, thruD: 14, wkd: [1], durD: 7}, titles: {"en":"Non-Binary Awareness Week"}, fst: {era: 1, y: 2020}},
         {type: "nD", st: {mon: 8, d: 1, durD: 7}, inherits: "I Clown Week", fst: {era: 1, y: 1950}},
