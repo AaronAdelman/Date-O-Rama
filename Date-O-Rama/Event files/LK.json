@@ -2,7 +2,7 @@
     titles: {"*":"LK"},
     "//":"Sri Lanka",
     "TODO":"Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar)",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.82, blue: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},

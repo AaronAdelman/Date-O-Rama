@@ -2,7 +2,7 @@
     titles: {"*":"YE"},
     "//":"Yemen",
     "TODO":"Muslim holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.94, green: 0.20, blue: 0.25},
     fst: {era: 1, y: 1967},

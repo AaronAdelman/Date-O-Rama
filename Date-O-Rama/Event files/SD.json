@@ -2,7 +2,7 @@
     titles: {"*":"SD"},
     "//":"Sudan",
     "TODO":"Muslim observances",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.85, green: 0.16, blue: 0.11},
     fst: {era: 1, y: 1956},

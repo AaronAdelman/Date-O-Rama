@@ -1,7 +1,7 @@
 {
     titles: {"*":"PN"},
     "//":"Pitcairn",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.20, green: 0.45, blue: 0.13},
     fst: {era: 1, y: 1790},

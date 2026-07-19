@@ -1,7 +1,7 @@
 {
     titles: {"*":"CA"},
     "//":"Canada",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     otherCals: ["Hebrew"],
     color: {name: "red"},

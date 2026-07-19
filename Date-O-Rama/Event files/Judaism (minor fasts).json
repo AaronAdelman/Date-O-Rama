@@ -1,6 +1,6 @@
 {
     titles: {"en":"Judaism (minor fasts)", "he":"יהדות (תעניות קטנות)"},
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "heb*",
     color: {name: "blue"},
     evts: [

@@ -1,7 +1,7 @@
 {
     titles: {"*":"TF"},
     "//":"French Southern Territories",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.15, blue: 0.33},
     urls: {"en":"https://time.now/holidays/french-southern-territories/"},

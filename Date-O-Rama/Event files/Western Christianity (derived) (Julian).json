@@ -1,6 +1,6 @@
 {
     titles: {"en":"Western Christianity-derived", "he":"נגזרים מנצרות מערבית"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {name: "red"},
     evts: [

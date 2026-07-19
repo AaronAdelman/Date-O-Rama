@@ -1,6 +1,6 @@
 {
     titles: {"en":"Names", "he":"שמות"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.10, green: 0.91, blue: 0.81},
     emoji: "📛",

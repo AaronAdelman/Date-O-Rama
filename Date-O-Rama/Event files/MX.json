@@ -1,7 +1,7 @@
 {
     titles: {"*":"MX"},
     "//":"Mexico",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.39, blue: 0.25},
     fst: {era: 1, y: 1810},

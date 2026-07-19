@@ -1,7 +1,7 @@
 {
     titles: {"*":"IN"},
     "//":"India",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq*",
     color: {red: 0.17, green: 0.41, blue: 0.31},
     fst: {era: 1, y: 1947},

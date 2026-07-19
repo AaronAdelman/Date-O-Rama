@@ -2,7 +2,7 @@
     titles: {"*":"TN"},
     "//":"Tunisia",
     "TODO:":"Muslim holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.80, green: 0.17, blue: 0.15},
     fst: {era: 1, y: 1956},

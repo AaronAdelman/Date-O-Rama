@@ -1,6 +1,6 @@
 {
     titles: {"en":"Shia (times, Tehran)", "he":"שיעה (זמנים, טהראן)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
     emoji: "🇮🇷",

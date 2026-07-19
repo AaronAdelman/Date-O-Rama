@@ -2,7 +2,7 @@
     titles: {"*":"BT"},
     "//":"Bhutan",
     "TODO":"Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.40, blue: 0.12},
     fst: {era: 1, y: 1616},

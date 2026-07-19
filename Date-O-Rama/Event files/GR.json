@@ -1,7 +1,7 @@
 {
     titles: {"*":"GR"},
     "//":"Greece",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.08, blue: 0.54},
     fst: {era: 1, y: 1821},

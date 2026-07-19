@@ -1,6 +1,6 @@
 {
     titles: {"en":"Roman Religion", "he":"דת רומה"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {name: "gray"},
     urls: {"en":"https://en.wikipedia.org/wiki/Roman_festivals"},

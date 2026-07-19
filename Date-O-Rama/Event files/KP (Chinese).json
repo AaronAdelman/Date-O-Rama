@@ -2,7 +2,7 @@
     titles: {"*":"KP"},
     "//":"North Korea",
     "TODO":"Korean calendar observances, Chungmyung Day",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 0.75, green: 0.06, blue: 0.24},
     fst: {era: 1, y: 1948},

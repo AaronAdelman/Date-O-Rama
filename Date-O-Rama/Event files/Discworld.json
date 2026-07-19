@@ -1,6 +1,6 @@
 {
     titles: {"ar":"عالم القرص","bg":"Светът на диска","ca":"Discmón","cs":"Zeměplocha","cy":"Disgfyd","da":"Diskverden","de":"Scheibenwelt-Romane","en":"Discworld","es":"Mundodisco","fa":"دیسک‌ورلد","fr":"Annales du Disque-monde","ga":"Liosta úrscéalta Discworld","he":"עולם הדיסק","hu":"Korongvilág","id":"Discworld","is":"Diskheimur","ja":"ディスクワールド","ko":"디스크월드","lb":"Discworld","nb":"Skiveverdenen","pl":"Świat Dysku","pt":"Discworld","ro":"Lumea Disc","ru":"Плоский мир","sk":"Plochozem","sr":"Дисксвет","sv":"Skivvärlden","tr":"Diskdünya","uk":"Дискосвіт","zh":"碟形世界"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.19, green: 0.8, blue: 0.15},
     fst: {era: 1, y: 2005},

@@ -2,7 +2,7 @@
     titles: {"*":"KI"},
     "//":"Kiribati",
     "TODO":  "Gospel Day and Natural Culture and Senior Citizens Day can change their dates depending on when Independence Day is; how requires research.  See https://nationaltoday.com/gospel-day/ and https://nationaltoday.com/national-culture-and-senior-citizens-day/ .",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     fst: {era: 1, y: 1979},

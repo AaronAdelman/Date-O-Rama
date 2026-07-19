@@ -2,7 +2,7 @@
     titles: {"*":"UZ"},
     "//":"Uzbekistan",
     "TODO":"Muslim observances",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.45, blue: 0.81},
     fst: {era: 1, y: 1991},

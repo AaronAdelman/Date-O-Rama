@@ -1,7 +1,7 @@
 {
     titles: {"*":"ET"},
     "//":"Ethiopia",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "Ethiopic*",
     color: {red: 0.06, green: 0.28, blue: 0.69},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},

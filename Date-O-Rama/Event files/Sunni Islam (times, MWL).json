@@ -1,6 +1,6 @@
 {
     titles: {"en":"Islam (times, MWL)", "he":"אסלאם סוני (זמנים, MWL)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
     emoji: "🇸🇦",

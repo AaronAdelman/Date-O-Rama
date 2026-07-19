@@ -1,6 +1,6 @@
 {
     titles: {"en":"Judaism (supplemental)", "he":"יהדות (נוספים)"},
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "gre",
     color: {name: "blue"},
     evts: [

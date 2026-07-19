@@ -1,7 +1,7 @@
 {
     titles: {"*":"GT"},
     "//":"Guatemala",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.64, blue: 0.88},
     fst: {era: 1, y: 1821},

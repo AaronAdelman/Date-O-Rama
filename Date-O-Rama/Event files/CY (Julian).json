@@ -1,7 +1,7 @@
 {
     titles: {"*":"CY"},
     "//":"Cyprus",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.84, green: 0.47, blue: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},

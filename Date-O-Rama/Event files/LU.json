@@ -1,7 +1,7 @@
 {
     titles: {"*":"LU"},
     "//":"Luxembourg",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Luxembourg"},

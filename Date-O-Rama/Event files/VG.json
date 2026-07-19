@@ -1,7 +1,7 @@
 {
     titles: {"*":"VG"},
     "//":"British Virgin Islands",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.07, green: 0.36, blue: 0.14},
     fst: {era: 1, y: 1960},

@@ -1,7 +1,7 @@
 {
     titles: {"*":"AL"},
     "//":"Albania",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.85, green: 0.16, blue: 0.11},
     fst: {era: 0, y: 1330},

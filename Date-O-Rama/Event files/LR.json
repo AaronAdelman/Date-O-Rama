@@ -2,7 +2,7 @@
     titles: {"*":"LR"},
     "//":"Liberia",
     "TODO":"Maybe Matilda Newport Day",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.10, green: 0.22, blue: 0.36},
     fst: {era: 1, y: 1847},

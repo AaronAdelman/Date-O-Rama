@@ -2,7 +2,7 @@
     titles: {"*":"MY"},
     "//":"Malaysia",
     "TODO":"Muslim observances, Hindu observances",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.20, blue: 0.63},
     fst: {era: 1, y: 1957},

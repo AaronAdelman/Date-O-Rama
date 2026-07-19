@@ -1,7 +1,7 @@
 {
     titles: {"*":"GI"},
     "//":"Gibraltar",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.85, green: 0.00, blue: 0.05},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Gibraltar"},

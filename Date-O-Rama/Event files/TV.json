@@ -2,7 +2,7 @@
     titles: {"*":"TV"},
     "//":"Tuvalu",
     "TODO":"Aso o te Tala Lei for Nukulaelae",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.65, blue: 0.87},
     fst: {era: 1, y: 1978},

@@ -2,7 +2,7 @@
     titles: {"*":"TZ"},
     "//":"Tanzania",
     "TODO":"Islamic holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.26, green: 0.69, blue: 0.16},
     fst: {era: 1, y: 1961},

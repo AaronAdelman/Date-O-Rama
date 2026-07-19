@@ -1,6 +1,6 @@
 {
     titles: {"en":"Islam (times, Egypt)", "he":"אסלאם סוני (זמנים, מצרים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
     emoji: "🇪🇬",

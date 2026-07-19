@@ -1,6 +1,6 @@
 {
     titles: {"en":"Richard Ankli"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.74, green: 0.04, blue: 0.29},
     fst: {era: 1, y: 1977},

@@ -1,6 +1,6 @@
 {
     titles: {"en":"International months", "he":"חודשים בינלאומיים"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "teal"},
     emoji: "🌐",

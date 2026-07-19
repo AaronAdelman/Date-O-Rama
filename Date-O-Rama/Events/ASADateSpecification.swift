@@ -69,7 +69,7 @@ struct ASADateSpecification:  Codable {
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
         
-    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes, Islamic prayer times)
+    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes) which are all-day or should only be at most one during any day
     var miscellaneous:  ASAMiscellaneous?
         
     // For repeating events

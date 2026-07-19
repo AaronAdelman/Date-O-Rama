@@ -1,6 +1,6 @@
 {
     titles: {"en":"Tweetspeak Poetry"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "orange"},
     fst: {era: 1, y: 2013},

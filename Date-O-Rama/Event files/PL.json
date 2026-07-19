@@ -2,7 +2,7 @@
     titles: {"*":"PL"},
     "//":"Poland",
     "TODO":"Majówka, Dożynki",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.82, green: 0.15, blue: 0.19},
     fst: {era: 1, y: 1989},

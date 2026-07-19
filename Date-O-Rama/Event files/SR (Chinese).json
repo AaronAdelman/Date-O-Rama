@@ -1,7 +1,7 @@
 {
     titles: {"*":"SR"},
     "//":"Suriname",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 0.00, green: 0.48, blue: 0.20},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},

@@ -1,6 +1,6 @@
 {
     titles: {"ca":"Església dels SubGenis","en":"Church of the SubGenius","es":"Iglesia de los subgenios","fi":"Church of the SubGenius","fr":"Church of the SubGenius","it":"Chiesa del SubGenio","nb":"Church of the SubGenius","pl":"Kościół SubGeniuszu","pt":"Igreja do Subgênio","ro":"Biserica SubGenius","ru":"Церковь недомудреца","uk":"Церква НедоМудреця","vi":"Giáo hội SubGenius"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "gray"},
     fst: {era: 1, y: 1979},

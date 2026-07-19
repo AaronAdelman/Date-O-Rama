@@ -2,7 +2,7 @@
     titles: {"*":"DZ"},
     "//":"Algeria",
     "TODO":"Muslim holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.0, green: 0.48, blue: 0.2},
     fst: {era: 1, y: 1962},

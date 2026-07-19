@@ -1,7 +1,7 @@
 {
     titles: {"*":"TC"},
     "//":"Turks and Caicos Islands",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.16, blue: 0.41},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Turks_and_Caicos_Islands"},

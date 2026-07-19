@@ -1,7 +1,7 @@
 {
     titles: {"*":"IQ"},
     "//":"Iraq",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq*",
     color: {red: 0.89, green: 0.00, blue: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iraq"},

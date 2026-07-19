@@ -2,7 +2,7 @@
     titles: {"*":"MU"},
     "//":"Mauritius",
     "TODO":  "Muslim and Hindu holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.82, blue: 0.00},
     fst: {era: 1, y: 1968},

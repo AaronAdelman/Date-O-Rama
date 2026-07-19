@@ -1,7 +1,7 @@
 {
     titles: {"en":"Judaism (yohrtsayts)", "he":"יהדות (ימי שנה)"},
     "BASED ON":"https://www.yeshiva.org.il/events/memorial",
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "heb*",
     color: {name: "blue"},
     evts: [

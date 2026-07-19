@@ -67,7 +67,6 @@ struct ASAEventSpecification: Codable {
         case endDateSpecification   = "end"
         case firstDateSpecification = "fst"
         case lastDateSpecification  = "last"
-//        case template
         case inherits, titles, locations
         case calendarCode           = "cal"
         case regionCodes, excludeRegionCodes, urls, notes, emoji, type, nonoverlappingSubEvents, overlappingSubEvents

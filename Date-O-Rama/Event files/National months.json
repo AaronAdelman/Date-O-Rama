@@ -1,6 +1,6 @@
 {
     titles: {"en":"National months", "he":"חודשים לאומיים"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "indigo"},
     emoji: "🇺🇸",

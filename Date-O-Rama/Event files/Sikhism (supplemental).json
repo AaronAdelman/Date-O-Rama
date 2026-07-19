@@ -1,6 +1,6 @@
 {
     titles: {"en":"Sikhism (supplemental)", "he":"סיקיזם (נוספים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.96, green: 0.78, blue: 0.27},
     evts: [

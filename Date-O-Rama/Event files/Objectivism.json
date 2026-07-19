@@ -1,6 +1,6 @@
 {
     titles: {"ar":"موضوعية","ast":"Oxetivismu","az":"Obyektivizm","be-tarask":"Аб’ектывізм","bg":"Обективизъм","ca":"Objectivisme","ckb":"ئۆبژەکتیڤیزم","cs":"Objektivismus","cy":"Gwrthrychiaeth","da":"Objektivisme","de":"Objektivismus","el":"Αντικειμενισμός","en":"Objectivism","eo":"Objektivismo","es":"Objetivismo","eu":"Objektibismo","fa":"عینیت‌گرایی","fi":"Objektivismi","fr":"Objectivisme","gl":"Obxectivismo","he":"אובייקטיביזם","hi":"वस्तुवाद","hu":"Objektivizmus","hy":"Օբյեկտիվիզմ","io":"Objektivismo","it":"Oggettivismo","ja":"オブジェクティビズム","ka":"ობიექტივიზმი","kk":"Объективизм","ko":"객관주의","la":"Obiectivismus","nb":"Objektivisme","nl":"Objectivisme","pl":"Filozofia obiektywistyczna","ps":"عینیت","pt":"Objetivismo","ro":"Obiectivism","ru":"Объективизм по Айн Рэнд","sd":"خارجيت","sk":"Objektivizmus","sq":"Objektivizmi","sv":"Objektivism","tr":"Objektivizm","uk":"Об'єктивізм","uz":"Obyektivizm","vi":"Chủ nghĩa khách quan","zh":"客觀主義"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     color: {name: "gray"},
     evts: [

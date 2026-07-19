@@ -1,6 +1,6 @@
 {
     titles: {"be":"Раднавер’е","bg":"Родноверие","ca":"Rodisme","cs":"Rodnověří","de":"Rodismus","en":"Slavic Native Faith","es":"Neopaganismo eslavo","et":"Slaavi uuspaganlus","fi":"Rodismi","fr":"Rodnovérie","gl":"Rodismo","hr":"Rodnovjerje","hy":"Սլավոնական նոր հեթանոսություն","it":"Fede nativa slava","ja":"ロドノヴェリエ","ko":"로드노베리에","lt":"Gimtatikyba","mk":"Родноверие","ms":"Rodnoverye","nb":"Rodisme","pl":"Rodzimowierstwo słowiańskie","pt":"Neopaganismo eslavo","ro":"Rodnoverie","ru":"Славянское неоязычество","sh":"Rodoverje","sk":"Slovianstvo","sl":"Staroverstvo","sr":"Родноверје","sv":"Rodism","tr":"Slav neopaganizmi","uk":"Рідновірство","vep":"Slavine neopaganuz","zh":"斯拉夫本土教"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     fst: {era: 1, y: 1995},

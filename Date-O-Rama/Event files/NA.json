@@ -1,7 +1,7 @@
 {
     titles: {"*":"NA"},
     "//":"Namibia",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.78, blue: 0.17},
     fst: {era: 1, y: 1990},

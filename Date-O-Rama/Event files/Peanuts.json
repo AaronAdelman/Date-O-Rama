@@ -1,6 +1,6 @@
 {
     titles: {"am":"ፒነትስ","ar":"بينوتس","ast":"Peanuts","bcl":"Peanuts","be-tarask":"Peanuts","bew":"Peanuts","bg":"Пийнътс","ca":"Peanuts","ceb":"Peanuts","cs":"Peanuts","da":"Radiserne","de":"Die Peanuts","el":"Peanuts","en":"Peanuts","eo":"Peanuts","es":"Peanuts","fa":"بادام زمینی‌ها","fi":"Tenavat","fr":"Peanuts","gl":"Peanuts","he":"פינאטס","hr":"Peanuts","hu":"Peanuts","hy":"Peanuts","ia":"Peanuts","id":"Peanuts","is":"Smáfólkið","it":"Peanuts","ja":"ピーナッツ","jv":"Peanuts","ko":"피너츠","la":"Peanuts","map-bms":"Peanuts","ms":"Peanuts","nb":"Knøttene","nl":"Peanuts","nn":"Knøttene","pcd":"Peanuts","pl":"Fistaszki","pt":"Peanuts","ro":"Peanuts","ru":"Peanuts","sn":"Peanuts","sq":"Peanuts","sr":"Peanuts","sv":"Snobben","tl":"Peanuts","tr":"Peanuts","uk":"Peanuts","vec":"Peanuts","war":"Peanuts","yue":"花生漫畫","zh":"花生漫畫"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.0, green: 1.0, blue: 0.0},
     fst: {era: 1, y: 1950},

@@ -2,7 +2,7 @@
     titles: {"*":"NG"},
     "//":"Nigeria",
     "TODO":"Muslim observances",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.59, blue: 0.22},
     fst: {era: 1, y: 1960},

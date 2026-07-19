@@ -1,6 +1,6 @@
 {
     titles: {"en":"National Day Calendar®"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     urls: {"en":"https://www.nationaldaycalendar.com/"},
     color: {name: "red"},

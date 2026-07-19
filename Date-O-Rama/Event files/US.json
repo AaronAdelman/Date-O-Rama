@@ -2,7 +2,7 @@
     titles: {"*":"US"},
     "//":"United States of America, AKA USA",
     "TODO":"Oktoberfest?, Opening Day",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     otherCals: ["Hebrew"],
     color: {name: "blue"},

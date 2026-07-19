@@ -1,6 +1,6 @@
 {
     titles: {"en":"Adrienne Sioux Koopersmith"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     color: {name: "magenta"},
     fst: {era: 1, y: 1994},

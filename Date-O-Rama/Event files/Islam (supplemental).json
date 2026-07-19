@@ -1,6 +1,6 @@
 {
     titles: {"en":"Islam (supplemental)", "he":"אסלאם (נוספים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "green"},
     evts: [

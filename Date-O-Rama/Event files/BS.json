@@ -1,7 +1,7 @@
 {
     titles: {"*":"BS"},
     "//":"Bahamas",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.66, blue: 0.81},
     fst: {era: 1, y: 1973},

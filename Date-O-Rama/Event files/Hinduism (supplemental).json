@@ -1,6 +1,6 @@
 {
     titles: {"en":"Hinduism (supplemental)", "he":"הינדואיזם (נוספים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.44, green: 0.53, blue: 0.62},
     evts: [

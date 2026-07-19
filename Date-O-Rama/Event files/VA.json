@@ -1,7 +1,7 @@
 {
     titles: {"*":"VA"},
     "//":"Holy See, AKA Vatican City",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.88, blue: 0.000},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Vatican_City"},

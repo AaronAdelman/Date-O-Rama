@@ -2,7 +2,7 @@
     titles: {"*":"CF"},
     "//":"Central African Republic",
     "TODO":"Muslim Holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.00, green: 0.19, blue: 0.53},
     fst: {era: 1, y: 1960},

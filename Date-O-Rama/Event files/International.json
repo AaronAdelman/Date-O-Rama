@@ -1,6 +1,6 @@
 {
     titles: {"en":"International", "he":"בינלאומי"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "teal"},
     emoji: "🌐",

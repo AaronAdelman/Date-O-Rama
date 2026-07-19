@@ -1,7 +1,7 @@
 {
     titles: {"*":"BA"},
     "//":"Bosnia and Herzegovina",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.18, blue: 0.42},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},

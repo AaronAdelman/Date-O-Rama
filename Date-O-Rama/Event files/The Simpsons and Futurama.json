@@ -1,6 +1,6 @@
 {
     titles: {"en":"The Simpsons and Futurama", "he":"משפחת סימפסון ופיוצ׳רמה"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     color: {red: 0.2, green: 0.3, blue: 0.1},
     fst: {era: 1, y: 1989},

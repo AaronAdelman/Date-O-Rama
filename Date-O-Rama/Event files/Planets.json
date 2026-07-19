@@ -1,6 +1,6 @@
 {
     titles: {"en":"Planets", "he":"כוכבי־לכת"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "xloc*",
     color: {red: 0.941, green: 0.827, blue: 0.616},
     evts: [

@@ -1,6 +1,6 @@
 {
     titles: {"en":"National", "he":"לאומי"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "indigo"},
     emoji: "🇺🇸",

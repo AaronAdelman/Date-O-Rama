@@ -1,6 +1,6 @@
 {
     titles: {"en":"Bob Matthews"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.5, green: 0.28, blue: 0.56},
     fst: {era: 1, y: 2012},

@@ -2,7 +2,7 @@
     titles: {"*":"MO"},
     "//":"Macau, AKA Macao",
     "TODO":"Ching Ming Festival",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.06, green: 0.46, blue: 0.38},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Macau"},

@@ -2,7 +2,7 @@
     titles: {"*":"ME"},
     "//":"Montenegro",
     "TODO":"Muslim and Jewish holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     fst: {era: 1, y: 2006},

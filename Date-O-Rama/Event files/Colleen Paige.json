@@ -1,6 +1,6 @@
 {
     titles: {"en":"Colleen Paige"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.41, green: 0.32, blue: 0.25},
     fst: {era: 1, y: 2004},

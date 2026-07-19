@@ -2,7 +2,7 @@
     titles: {"*":"MA"},
     "//":"Morocco",
     "TODO":"Public holidays on the Muslim calendar?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.75, green: 0.05, blue: 0.24},
     fst: {era: 1, y: 1955},

@@ -2,7 +2,7 @@
     titles: {"*":"HK"},
     "//":"Hong Kong",
     "TODO":"The fourth day of Lunar New Year, the fourth day of Lunar New Year",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 0.93, green: 0.11, blue: 0.15},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},

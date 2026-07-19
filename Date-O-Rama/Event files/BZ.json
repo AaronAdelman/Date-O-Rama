@@ -2,7 +2,7 @@
     titles: {"*":"BZ"},
     "//":"Belize",
     "NOTE":"Unclear when Commonwealth Day is",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.11, green: 0.26, blue: 0.54},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Belize"},

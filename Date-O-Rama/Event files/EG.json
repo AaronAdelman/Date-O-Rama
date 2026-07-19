@@ -2,7 +2,7 @@
     titles: {"*":"EG"},
     "//":"Egypt",
     "TODO":"Muslim holidays, including End of Ramadan and Eid-el-Kibr Holiday",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},

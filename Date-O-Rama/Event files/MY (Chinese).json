@@ -1,7 +1,7 @@
 {
     titles: {"*":"MY"},
     "//":"Malaysia",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 0.00, green: 0.20, blue: 0.63},
     urls: {"en":"https://publicholidays.com.my/", "ms":"https://publicholidays.com.my/ms/", "zh":"https://publicholidays.com.my/zh/"},

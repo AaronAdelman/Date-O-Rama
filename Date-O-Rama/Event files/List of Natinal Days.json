@@ -1,6 +1,6 @@
 {
     titles: {"en":"List of National Days"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.26, green: 0.86, blue: 0.30},
     urls: {"en":"https://www.listofnationaldays.com/"},

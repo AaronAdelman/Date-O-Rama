@@ -1,7 +1,7 @@
 {
     titles: {"*":"UA"},
     "//":"Ukraine",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.34, blue: 0.72},
     fst: {era: 1, y: 1991},

@@ -1,6 +1,6 @@
 {
     titles: {"en":"Confucianism (supplemental)", "he":"קונפוציאניזם (נוספים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.2, green: 0.79, blue: 0.25},
     evts: [

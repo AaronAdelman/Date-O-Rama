@@ -1,7 +1,7 @@
 {
     titles: {"*":"AD"},
     "//":"Andorra",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.06, green: 0.02, blue: 0.62},
     fst: {era: 1, y: 1278},

@@ -1,7 +1,7 @@
 {
     titles: {"*":"CX"},
     "//":"Christmas Island",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 0.11, green: 0.54, blue: 0.26},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},

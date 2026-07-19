@@ -2,7 +2,7 @@
     titles: {"*":"DJ"},
     "//":"Djibouti",
     "TODO":"Muslim holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.41, green: 0.70, blue: 0.91},
     fst: {era: 1, y: 1977},

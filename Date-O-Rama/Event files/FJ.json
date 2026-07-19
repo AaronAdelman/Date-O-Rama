@@ -2,7 +2,7 @@
     titles: {"*":"FJ"},
     "//":"Fiji",
     "TODO":"Muslim and Hindu holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.38, green: 0.71, blue: 0.90},
     fst: {era: 1, y: 1970},

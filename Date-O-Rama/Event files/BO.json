@@ -2,7 +2,7 @@
     titles: {"*":"BO"},
     "//":"Bolivia",
     "TODO":"Carnival",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.0, green: 0.0, blue: 0.0},
     fst: {era: 1, y: 1825},

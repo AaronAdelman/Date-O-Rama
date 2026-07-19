@@ -1,6 +1,6 @@
 {
     titles: {"en":"Islam (times, Karachi)", "he":"אסלאם סוני (זמנים, קראצ׳י)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
     emoji: "🇵🇰",

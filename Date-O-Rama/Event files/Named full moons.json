@@ -1,6 +1,6 @@
 {
     titles: {"en":"Named full moons", "he":"ירחים מלאים עם שמות"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "gray"},
     emoji: "🌕",

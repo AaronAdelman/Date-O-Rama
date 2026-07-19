@@ -1,7 +1,7 @@
 {
     titles: {"en":"HoliDailys"},
     "//":"Jace Shoemaker-Galloway the “Queen of Holidays”",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     urls: {"en":"https://jacegalloway.wixsite.com/holidays/jaces-holidailys"},

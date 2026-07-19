@@ -1,7 +1,7 @@
 {
     titles: {"*":"IL"},
     "//":"Israel",
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "heb*",
     color: {name: "blue"},
     fst: {era: 0, y: 5708},

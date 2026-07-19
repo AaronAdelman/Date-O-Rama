@@ -1,7 +1,7 @@
 {
     titles: {"*":"BG"},
     "//":"Bulgaria",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.69, blue: 0.40},
     fst: {era: 1, y: 1908},

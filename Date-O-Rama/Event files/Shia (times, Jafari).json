@@ -1,6 +1,6 @@
 {
     titles: {"en":"Shia (times, Jafari)", "he":"שיעה (זמנים, ג׳עפארי)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
     evts: [

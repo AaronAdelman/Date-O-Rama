@@ -2,7 +2,7 @@
     titles: {"*":"QA"},
     "//":"Qatar",
     "TODO":"Public holidays on the Muslim calendar?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.42, green: 0.11, blue: 0.24},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Qatar"},

@@ -1,7 +1,7 @@
 {
     titles: {"*":"KZ"},
     "//":"Kazakhstan",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "jul",
     color: {red: 0.00, green: 0.68, blue: 0.78},
     fst: {era: 1, y: 1991},

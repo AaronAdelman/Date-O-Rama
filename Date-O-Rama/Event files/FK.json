@@ -2,7 +2,7 @@
     titles: {"*":"FK"},
     "//":"Falkland Islands (Malvinas)",
     "TODO":"Explication of New Year’s Day (in lieu) and Christmas Holiday",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.16, green: 0.50, blue: 1.00},
     fst: {era: 1, y: 1764},

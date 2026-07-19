@@ -1,7 +1,7 @@
 {
     titles: {"*":"SD"},
     "//":"Sudan",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "cop",
     otherCals: ["jul"],
     color: {red: 0.85, green: 0.16, blue: 0.11},

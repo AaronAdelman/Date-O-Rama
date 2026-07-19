@@ -1,6 +1,6 @@
 {
     titles: {"en":"Judaism (forgotten)", "he":"יהדות (נשכחים)"},
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "heb*",
     color: {name: "blue"},
     evts: [

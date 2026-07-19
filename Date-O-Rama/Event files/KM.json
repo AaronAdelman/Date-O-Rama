@@ -2,7 +2,7 @@
     titles: {"*":"KM"},
     "//":"Comoros",
     "TODO":"Muslim holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.30, green: 0.55, blue: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},

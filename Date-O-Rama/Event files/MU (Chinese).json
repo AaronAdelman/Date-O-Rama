@@ -1,7 +1,7 @@
 {
     titles: {"*":"MU"},
     "//":"Mauritius",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "chi",
     color: {red: 1.00, green: 0.82, blue: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},

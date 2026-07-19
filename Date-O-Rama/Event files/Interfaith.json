@@ -1,6 +1,6 @@
 {
     titles: {"en":"Interfaith", "he":"בין־דתיות"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.8, green: 0.8, blue: 0.98},
     fst: {era: 1, y: 1950},

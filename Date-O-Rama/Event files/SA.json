@@ -2,7 +2,7 @@
     titles: {"*":"SA"},
     "//":"Saudi Arabia",
     "TODO":"Muslim holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "green"},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Saudi_Arabia"},

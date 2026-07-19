@@ -1,6 +1,6 @@
 {
     titles: {"en":"Judaism (times)", "he":"יהדות (זמנים)"},
-    defaultLocale: "he",
+    defLocale: "he",
     cal: "heb-solar*",
     color: {name: "blue"},
     evts: [

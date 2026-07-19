@@ -1,6 +1,6 @@
 {
     titles: {"en":"Western Christianity (supplemental)", "he":"נצרות מערבית (נוספים)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     evts: [

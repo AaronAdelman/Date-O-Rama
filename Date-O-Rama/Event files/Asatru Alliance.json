@@ -1,6 +1,6 @@
 {
     titles: {"en":"Ásatrú Alliance","es":"Ásatrú Alliance","it":"Asatru Alliance","uk":"Альянс Асатру"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.6, blue: 0.7},
     urls: {"en":"https://www.asatru.org/holidays.php"},

@@ -1,7 +1,7 @@
 {
     titles: {"*":"CO"},
     "//":"Colombia",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.80, blue: 0.00},
     fst: {era: 1, y: 1810},

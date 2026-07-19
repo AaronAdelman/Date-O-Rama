@@ -2,7 +2,7 @@
     titles: {"*":"CI"},
     "//":"Côte d’Ivoire, AKA Ivory Coast",
     "TODO":"Muslim holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.92, green: 0.46, blue: 0.0},
     fst: {era: 1, y: 1960},

@@ -2,7 +2,7 @@
     titles: {"*":"AR"},
     "//":"Argentina",
     "TODO":"Jewish and Muslim holidays?",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.42, green: 0.64, blue: 0.89},
     fst: {era: 1, y: 1816},

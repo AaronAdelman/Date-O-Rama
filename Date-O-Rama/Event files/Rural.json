@@ -1,6 +1,6 @@
 {
     titles: {"en":"Rural", "he":"כפרי", "fr":"Rural"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "fre*",
     color: {red: 0.88, green: 0.66, blue: 0.38},
     fst: {era: 0, y: 1},

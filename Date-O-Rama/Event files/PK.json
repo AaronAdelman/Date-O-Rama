@@ -2,7 +2,7 @@
     titles: {"*":"PK"},
     "//":"Pakistan",
     "TODO":"Muslim holidays, ִHindu holidays, Basant",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.10, green: 0.25, blue: 0.13},
     fst: {era: 1, y: 1947},

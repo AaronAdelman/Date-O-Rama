@@ -1,7 +1,7 @@
 {
     titles: {"*":"NO"},
     "//":"Norway",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.73, green: 0.05, blue: 0.18},
     fst: {era: 1, y: 1905},

@@ -1,6 +1,6 @@
 {
     titles: {"ar":"الجمعية الأمريكية للطب البيطري","de":"American Veterinary Medical Association","en":"American Veterinary Medical Association","fa":"انجمن دامپزشکی آمریکا","fr":"American Veterinary Medical Association","ko":"미국 수의학 협회","ms":"Persatuan Perubatan Veterinar Amerika","ru":"American Veterinary Medical Association","tr":"Amerikan Veteriner Hekimleri Birliği","uk":"Американська ветеринарна медична асоціація"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "magenta"},
     fst: {era: 1, y: 1981},

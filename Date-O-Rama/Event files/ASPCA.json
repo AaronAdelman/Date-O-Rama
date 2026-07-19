@@ -1,7 +1,7 @@
 {
     titles: {"ar":"الجمعية الأمريكية لمنع القسوة ضد الحيوانات","da":"American Society for the Prevention of Cruelty to Animals","en":"American Society for the Prevention of Cruelty to Animals","fr":"American Society for the Prevention of Cruelty to Animals","gl":"ASPCA","ja":"アメリカ動物虐待防止協会","ms":"Persatuan Pencegahan Kekejaman terhadap Haiwan Amerika Syarikat","nl":"American Society for the Prevention of Cruelty to Animals","pl":"Amerykańskie Towarzystwo Zapobiegania Okrucieństwu wobec Zwierząt","pt":"American Society for the Prevention of Cruelty to Animals","ru":"Американское общество по предотвращению жестокого обращения с животными","tr":"American Society for the Prevention of Cruelty to Animals","uk":"Американське товариство запобігання жорстокому поводженню з тваринами","zh":"美國愛護動物協會"},
     "//":"ASPCA",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "gray"},
     fst: {era: 1, y: 1866},

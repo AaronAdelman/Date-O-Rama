@@ -1,7 +1,7 @@
 {
     titles: {"*":"ZW"},
     "//":"Zimbabwe",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {name: "green"},
     fst: {era: 1, y: 1980},

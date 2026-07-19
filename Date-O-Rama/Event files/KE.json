@@ -2,7 +2,7 @@
     titles: {"*":"KE"},
     "//":"Kenya",
     "TODO":"Muslim holidays",
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.59, green: 0.23, blue: 0.20},
     fst: {era: 1, y: 1963},

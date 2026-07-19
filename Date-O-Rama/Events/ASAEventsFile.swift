@@ -41,7 +41,7 @@ struct ASAEventsFile: Codable {
     
     enum CodingKeys: String, CodingKey {
         case titles
-        case defaultLocale
+        case defaultLocale          = "defLocale"
         case calendarColor          = "color"
         case calendarCode           = "cal"
         case otherCalendarCodes     = "otherCals"

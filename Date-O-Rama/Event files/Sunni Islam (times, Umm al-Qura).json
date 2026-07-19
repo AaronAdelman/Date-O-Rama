@@ -1,6 +1,6 @@
 {
     titles: {"en":"Islam (times, Umm al-Qura)", "he":"אסלאם סוני (זמנים, אום אל־קורה)"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "IslamicUmmAlQuraSolar",
     color: {name: "green"},
     emoji: "🇸🇦",

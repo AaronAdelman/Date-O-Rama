@@ -1,7 +1,7 @@
 {
     titles: {"en":"Chase’s Calendar of Events"},
     // Bill and Helen Chase
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre",
     color: {red: 0.19, green: 0.39, blue: 0.57},
     fst: {era: 1, y: 1957},

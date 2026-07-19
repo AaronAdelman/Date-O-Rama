@@ -1,6 +1,6 @@
 {
     titles: {"en":"Western planetary days", "he":"ימי כוכבי־לכת מערביות"},
-    defaultLocale: "en",
+    defLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.5},
     evts: [
