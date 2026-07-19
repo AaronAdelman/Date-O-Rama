@@ -425,7 +425,6 @@
         "N Maple Syrup Day": {type: "D", st: {mon: 12, d: 17}, ttls: {"en":"National Maple Syrup Day"}, notes: {"en":"Maple Syrup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/maple-syrup-day/"}, emoji: "🧇🥞"},
         "N Maritime Day": {type: "D", st: {mon: 5, d: 22}, ttls: {"en":"National Maritime Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
         "N Milk Day": {type: "D", st: {mon: 1, d: 11}, ttls: {"en":"National Milk Day", "he":"יום החלב הלאומי"}, emoji: "🥛"},
-        "N Night Out": {type: "D", st: {mon: 8, wkd: [3], nth: 1}, ttls: {"en":"National Night Out"}, notes: {"en":"National Night Out Day"}, urls: {"en":"https://natw.org/"}},
         "N Nothing Day": {type: "D", st: {mon: 1, d: 16}, ttls: {"en":"National Nothing Day", "he":"יום הלא כלום הלאומי", "la":"Nationalis Nihili Dies"}, urls: {"en":"https://www.daysoftheyear.com/days/nothing-day/"}, emoji: "0️⃣", notes: {"en":"Nothingday\nCreated by Harold Pullman Coffin"}},
         "N Pastor’s Spouses Day": {type: "D", st: {mon: 9, wkd: [1], nth: 1}, ttls: {"en":"National Pastor’s Spouses Day"}, urls: {"en":"https://nationaldaycalendar.com/national-pastors-spouses-day-first-sunday-in-september/"}, emoji: "📖🤍", notes: {"en":"Created by Better Way Apostolic Church"}},
         "N Pet Month": {type: "M", st: {mon: 5}, ttls: {"en":"National Pet Month"}, emoji: "🐰🐱🐶"},

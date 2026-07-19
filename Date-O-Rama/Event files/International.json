@@ -1542,11 +1542,10 @@
         {type: "D", st: {mon: 8, d: 31}, ttls: {"en":"We Love Memoirs Day"}, urls: {"en":"https://www.daysoftheyear.com/days/we-love-memoirs-day/"}, emoji: "📝", fst: {era: 1, y: 2013}, notes: {"en":"Created by Victoria Twead and Alan Parks"}},
         {type: "D", st: {mon: 8, d: 31}, ttls: {"en":"World Distance Learning Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-distance-learning-day/"}, emoji: "🎧", fst: {era: 1, y: 2000}},
         {type: "D", st: {mon: 8, d: 31}, ttls: {"en":"World Stop Sign Day"}, urls: {"en":"https://worldstopsignday.com/"}, emoji: "🛑", fst: {era: 1, y: 2024}, notes: {"en":"Created by Géza Mihályi and Dr. Szabolcs Imreh"}},
-        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Assistance Dog Day", "he":"יום כלבי הסיוע והנחיה"}, urls: {"en":"https://www.daysoftheyear.com/days/assistance-dog-day/"}, emoji: "🦮"},
         {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Hooray for Kids Day"}, urls: {"en":"https://www.daysoftheyear.com/days/hooray-for-kids-day/"}, emoji: "👦👧", fst: {era: 1, y: 1980}},
-        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"International Clouded Leopard Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-clouded-leopard-day/"}, notes: {"en":"I.C.L.D."}, fst: {era: 1, y: 2018}, emoji: "🐆"},
+        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"International Clouded Leopard Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-clouded-leopard-day/"}, notes: {"en":"ICLD\nI.C.L.D."}, fst: {era: 1, y: 2018}, emoji: "🐆"},
         {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"International Owl Awareness Day"}, urls: {"en":"https://eagles.org/international-owl-awareness-day/"}, notes: {"en":"IOAD"}, fst: {era: 1, y: 1983}, emoji: "🦉"},
-        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Single Working Women’s Day"}, urls: {"en":"https://www.daysoftheyear.com/days/single-working-womens-day/"}, notes: {"en":"Single Working Woman’s Appreciation Day"}, fst: {era: 1, y: 2006}, emoji: "👩"},
+        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Single Working Women’s Day"}, urls: {"en":"https://www.daysoftheyear.com/days/single-working-womens-day/"}, notes: {"en":"Single Working Woman’s Appreciation Day\nCreated by Barbara Payne"}, fst: {era: 1, y: 2006}, emoji: "👩"},
         {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Blogger Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blogger-day/"}, emoji: "👨‍💻👩‍💻"},
         {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Green Peppers Day"}, urls: {"en":"https://www.checkiday.com/b082e70286aac96d90424d2ca09cc291/green-peppers-day"}, fst: {era: 1, y: 2015}},
         {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"International Traffic Light Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-traffic-light-day/"}, emoji: "🚥🚦", fst: {era: 1, y: 1914}},
@@ -1875,8 +1874,7 @@
         {type: "W", st: {mon: 6, fullWk: 2, d1OfWk: 2}, inherits: "Community Health Improvement Week", fst: {era: 1, y: 2023}},
         {type: "W", st: {mon: 6, fullWk: 2, d1OfWk: 2}, ttls: {"en":"Meet A Mate Week"}, urls: {"en":"https://www.daysoftheyear.com/days/meet-a-mate-week/"}, fst: {era: 1, y: 2019}},
         {type: "W", st: {mon: 6, fullWk: 3, d1OfWk: 2}, ttls: {"en":"Animal Rights Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/animal-rights-awareness-week/"}, fst: {era: 1, y: 1991}, notes: {"en":"Created by In Defense of Animals"}},
-        {type: "W", st: {mon: 8, fullWk: 1}, ttls: {"en":"International Assistance Dog Week"}, urls: {"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"}, emoji: "🦮🐕‍🦺", fst: {era: 1, y: 2009}, notes: {"en":"Created by by Marcie Davis"}},
-        {type: "W", st: {mon: 8, fullWk: 1}, urls: {"en":"https://www.daysoftheyear.com/days/simplify-your-life-week/"}, ttls: {"en":"Simplify Your Life Week"}},
+        {type: "W", st: {mon: 8, fullWk: 1}, ttls: {"en":"Simplify Your Life Week"}, urls: {"en":"https://www.daysoftheyear.com/days/simplify-your-life-week/"}},
         {type: "W", st: {mon: 9, fullWk: -1, d1OfWk: 2}, ttls: {"en":"International Week of Deaf People"}, notes: {"en":"International Week of the Deaf\nIWDeaf\nCreated by World Federation of the Deaf"}, urls: {"en":"https://www.daysoftheyear.com/days/international-week-of-deaf-people/"}, emoji: "🧏‍♂️🧏‍♀️", fst: {era: 1, y: 1958}},
         {type: "W", st: {mon: 9, fullWk: -1}, ttls: {"en":"Deaf Dog Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/deaf-dog-awareness-week/"}, emoji: "🐶", notes: {"en":"Created by Petfinder"}},
         {type: "W", st: {mon: 9, fullWk: -1}, ttls: {"en":"Sea Otter Awareness Week"}, urls: {"en":"https://defenders.org/sea-otter-awareness-week"}, emoji: "🦦", fst: {era: 1, y: 2003}, notes: {"en":"Created by Defenders of Wildlife"}},
@@ -1938,6 +1936,10 @@
         
         {type: "W", st: {mon: 4, fullWk: 1, d1OfWk: 2}, ttls: {"en":"Parkinson’s Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/parkinsons-awareness-week/"}, inherits: "*MedAwareness*", subEvts: [
             {type: "D", st: {mon: 4, d: 11}, ttls: {"en":"World Parkinson’s Day", "he":"יום מחלת פרקינסון העולמי"}, urls: {"en":"https://www.daysoftheyear.com/days/world-parkinsons-disease-day/"}, emoji: "💊", fst: {era: 1, y: 1997}, inherits: "*MedAwareness*", notes: {"en":"Created by the World Health Organization"}},
+        ]},
+        
+        {type: "W", st: {mon: 8, fullWk: 1}, ttls: {"en":"International Assistance Dog Week"}, urls: {"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"}, emoji: "🦮🐕‍🦺", fst: {era: 1, y: 2009}, notes: {"en":"IADW\nCreated by by Marcie Davis"}, subEvts: [
+            {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Assistance Dog Day", "he":"יום כלבי הסיוע והנחיה"}, urls: {"en":"https://www.daysoftheyear.com/days/assistance-dog-day/"}, emoji: "🦮"},
         ]},
         
     ],

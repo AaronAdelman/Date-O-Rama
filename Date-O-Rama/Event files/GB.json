@@ -220,7 +220,7 @@
         {type: "D", st: {mon: 8, d: 31}, ttls: {"en":"National Zoo Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-zoo-awareness-day/"}, emoji: "🦓", fst: {era: 1, y: 1982}},
         {type: "D", st: {mon: 8, d: 8}, ttls: {"en":"Scottish Wildcat Day"}, urls: {"en":"https://www.daysoftheyear.com/days/scottish-wildcat-day/"}, notes: {"en":"Wildcat Day\nHighland Tiger Day"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"},
         {type: "D", st: {mon: 8, wkd: [2], nth: -1}, ttls: {"en":"Gravy Wrestling Championship"}, notes: {"en":"A stupid waste of food in bad taste."}, fst: {era: 1, y: 2007}},
-        {type: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Festival Monday"}, urls: {"en":"https://nationaltoday.com/festival-monday/"}, fst: {era: 1, y: 1871}},
+        {type: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Festival Monday"}, urls: {"en":"https://www.daysoftheyear.com/days/festival-monday/"}, fst: {era: 1, y: 1871}, notes: {"en":"Created by Sir John Lubbock"}},
         {type: "D", st: {mon: 8, wkd: [5], nth: 1}, ttls: {"en":"Cycle to Work Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cycle-to-work-day/"}, emoji: "🚲", fst: {era: 1, y: 2013}},
         {type: "D", st: {mon: 9, d: 1}, ttls: {"en":"National Tofu Day", "he":"יום הטופו הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/tofu-day/"}, fst: {era: 1, y: 2018}, notes: {"en":"Created by Cauldron Foods and the Vegetarian Society"}},
         {type: "D", st: {mon: 9, d: 12}, ttls: {"en":"National Blackberry Day", "he":"יום האוסנה הלאומי"}, urls: {"en":"https://heritagefinefoods.co.uk/national-blackberry-day/"}},
