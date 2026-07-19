@@ -1,9 +1,0 @@
-{
-    titles: {"en":"Time changes", "he":"שינויי שעון"},
-    defLocale: "en",
-    cal: "tz*",
-    color: {red: 0.46, green: 0.84, blue: 1.00},
-    evts: [
-        {titles: {"en":""}, type: "pt", st: {misc: "tChg"}, emoji: "⏰"},
-        ]
-    }
