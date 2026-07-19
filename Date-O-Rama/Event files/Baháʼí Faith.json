@@ -7,7 +7,7 @@
         {type: "D", st: {mon: 1, d: 1}, inherits: "19 Day Feast"},
         {type: "D", st: {mon: 1, d: 1}, ttls: {"ar":"نوروز بهائي","cs":"Nou-Rúz","en":"Baháʼí Naw-Rúz","es":"Naw-Rúz","he":"נורוז","id":"Nawrúz","pt":"Naw-Rúz Bahá’í","sv":"Naw-Rúz","zh":"诺露兹节"}, inherits: "Nowruz", urls: {"en":"https://nationaltoday.com/naw-ruz-bahai-new-year/"}, notes: {"he":"נו רוז"}},
         {type: "D", st: {mon: 2, d: 1}, inherits: "19 Day Feast"},
-        {type: "nD", st: {mon: 2, d: 13}, end: {mon: 3, d: 5}, ttls: {"ar":"رضوان","cs":"Rezván","da":"Ridvan","de":"Ridvan","en":"Riḍván","eo":"Ridvan","eu":"Ridván","fa":"عید رضوان","fi":"Ridván","fr":"Ridván","he":"רידוואן","id":"Ridván","it":"Ridván","nb":"Ridván","nl":"Ridván","nn":"Ridvan","pt":"Ridván","ru":"Ризван","sv":"Ridván","wuu":"里兹万节","zh":"里兹万节"}, notes: {"he":"רזואן"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 2, d: 13}, end: {mon: 3, d: 5}, ttls: {"ar":"رضوان","cs":"Rezván","da":"Ridvan","de":"Ridvan","en":"Riḍván","eo":"Ridvan","eu":"Ridván","fa":"عید رضوان","fi":"Ridván","fr":"Ridván","he":"רידוואן","id":"Ridván","it":"Ridván","nb":"Ridván","nl":"Ridván","nn":"Ridvan","pt":"Ridván","ru":"Ризван","sv":"Ridván","wuu":"里兹万节","zh":"里兹万节"}, notes: {"he":"רזואן"}, subEvts: [
             {type: "D", st: {mon: 2, d: 13}, ttls: {"en":"First Day of Riḍván", "he":"היום הראשון של רידוואן"}, notes: {"he":"היום הראשון של רזואן"}},
             {type: "D", st: {mon: 3, d: 2}, ttls: {"en":"Ninth Day of Riḍván", "he":"היום התשיעי של רידוואן"}, notes: {"he":"היום התשיעי של רזואן"}},
             {type: "D", st: {mon: 3, d: 5}, ttls: {"en":"Twelfth Day of Riḍván", "he":"היום השנים עשר של רידוואן"}, notes: {"he":"היום השנים עשר של רזואן"}},
@@ -38,7 +38,7 @@
         {type: "D", st: {mon: 1, d: 1, misc: "new", nth: 8, offsetD: 1}, inherits: "Birth of the Báb", fst: {era: 0, y: 172}},
         {type: "D", st: {mon: 1, d: 1, misc: "new", nth: 8, offsetD: 2}, inherits: "Birth of Baháʼu’lláh", fst: {era: 0, y: 172}},
         
-        {type: "nY", st: {}, end: {}, nonoverlappingSubEvents: [
+        {type: "nY", st: {}, end: {}, subEvts: [
             {type: "Y", st: {yDiv: 19, yRem: 1}, ttls: {"en":"Alif", "ar":"أ", "he":"אלִף"}},
             {type: "Y", st: {yDiv: 19, yRem: 2}, ttls: {"en":"Bá’", "ar":"ب", "he":"בּאאְ"}},
             {type: "Y", st: {yDiv: 19, yRem: 3}, ttls: {"en":"Ab", "ar":"أب", "he":"אבּ"}},

@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.25},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {inherits: "Ostara", type: "D", st: {misc: "Mar"}, regionCodes: ["xb"]},
             {inherits: "Beltane", type: "D", st: {mon: 5, d: 1}, regionCodes: ["xb"]},
             {inherits: "Litha", type: "D", st: {misc: "Jun"}, regionCodes: ["xb"]},

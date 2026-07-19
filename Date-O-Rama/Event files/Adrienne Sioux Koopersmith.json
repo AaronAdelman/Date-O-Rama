@@ -8,7 +8,7 @@
     evts: [
         {type: "D", st: {mon: 1, d: 6}, inherits: "N Smith Day", fst: {era: 1, y: 1994}},
         
-        {type: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}, subEvts: [
             {type: "D", st: {mon: 1, d: 11}, inherits: "Thank You Day", notes: {"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}},
         ]},
         
@@ -21,7 +21,7 @@
         {type: "D", st: {mon: 7, d: 14}, ttls: {"en":"National Pandemonium Day"}},
         {type: "M", st: {mon: 8}, ttls: {"en":"Ant Appreciation Month"}},
         
-        {type: "D", st: {wkd: [6], d: 13}, nonoverlappingSubEvents: [
+        {type: "D", st: {wkd: [6], d: 13}, subEvts: [
             {type: "D", st: {mon: 1}, inherits: "Skeptics Day International", fst: {era: 1, y: 1996}},
             {type: "D", st: {mon: 2}, inherits: "Skeptics Day International", fst: {era: 1, y: 1996}},
             {type: "D", st: {mon: 3, yLens: [366]}, inherits: "Skeptics Day International", fst: {era: 1, y: 1996}},

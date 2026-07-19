@@ -4,7 +4,7 @@
     cal: "heb*",
     color: {name: "blue"},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {inherits: "Aries", type: "M", st: {mon: 8}},
             {inherits: "Taurus", type: "M", st: {mon: 9}},
             {inherits: "Gemini", type: "M", st: {mon: 10}},

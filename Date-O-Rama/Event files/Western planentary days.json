@@ -4,7 +4,7 @@
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.5},
     evts: [
-        {type: "nD", st: {}, nonoverlappingSubEvents: [
+        {type: "nD", st: {}, subEvts: [
             {ttls: {"en":"Day of the Sun", "he":"יום השמש"}, type: "D", st: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
             {ttls: {"en":"Day of the Moon", "he":"יום הירח"}, type: "D", st: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},
             {ttls: {"en":"Day of Mars", "he":"יום מאדין"}, type: "D", st: {wkd: [3]}, inherits: "*zma*", inherits: "*Astrology*"},

@@ -6,7 +6,7 @@
     urls: {"en":"https://www.asatru.org/holidays.php"},
     fst: {era: 1, y: 1988},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "D", st: {mon: 1, d: 3}, ttls: {"en":"Charming of the Plow"}},
             {type: "D", st: {mon: 1, d: 9}, ttls: {"en":"Day of Remembrance for Raud the Strong"}, inherits: "*Remembrance*"},
             {type: "D", st: {mon: 1, d: 14}, inherits: "Thorrablot"},

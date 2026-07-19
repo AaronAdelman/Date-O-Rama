@@ -4,7 +4,7 @@
     cal: "chi",
     color: {red: 0.87, green: 0.16, blue: 0.06},
     evts: [
-        {type: "nY", st: {}, end: {}, nonoverlappingSubEvents: [
+        {type: "nY", st: {}, end: {}, subEvts: [
             {type: "Y", st: {yDiv: 12, yRem: 1}, ttls: {"en":"Year of the Rat", "he":"שנת החולדה"}, inherits: "*Rat*"},
             {type: "Y", st: {yDiv: 12, yRem: 2}, ttls: {"en":"Year of the Ox", "he":"שנת השור"}, inherits: "*Ox*"},
             {type: "Y", st: {yDiv: 12, yRem: 3}, ttls: {"en":"Year of the Tiger", "he":"שנת הטיגריס"}, inherits: "*Tiger*"},
@@ -18,7 +18,7 @@
             {type: "Y", st: {yDiv: 12, yRem: 11}, ttls: {"en":"Year of the Dog", "he":"שנת הכלב"}, inherits: "*Dog*"},
             {type: "Y", st: {yDiv: 12, yRem: 0}, ttls: {"en":"Year of the Pig", "he":"שנת החזיר"}, inherits: "*Pig*"},
         ]},
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "M", st: {mon: 11}, ttls: {"en":"Month of the Rat", "he":"חודש החולדה"}, inherits: "*Rat*"},
             {type: "M", st: {mon: 12}, ttls: {"en":"Month of the Ox", "he":"חודש השור"}, inherits: "*Ox*"},
             {type: "M", st: {mon: 1}, ttls: {"en":"Month of the Tiger", "he":"חודש הטיגריס"}, inherits: "*Tiger*"},

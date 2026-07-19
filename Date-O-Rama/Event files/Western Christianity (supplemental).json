@@ -96,7 +96,7 @@
         {type: "nD", st: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inherits: "N Forgiveness Week", fst: {era: 1, y: 2004}, last: {era: 1, y: 2024}},
         {type: "nD", st: {mon: 6, d: 22, thruD: 28, wkd: [6], durD: 3}, inherits: "N Forgiveness Week", fst: {era: 1, y: 2025}},
         
-        {type: "M", st: {mon: 7}, ttls: {"en":"“Talk to Us”"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us/"}, notes: {"en":"Created by the Samaritans"}, fst: {era: 1, y: 2016}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 7}, ttls: {"en":"“Talk to Us”"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us/"}, notes: {"en":"Created by the Samaritans"}, fst: {era: 1, y: 2016}, subEvts: [
             {type: "D", st: {d: 24}, ttls: {"en":"“Talk to Us” Day"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, notes: {"en":"Talk to Us"}, fst: {era: 1, y: 2016}},
         ]},
     ],

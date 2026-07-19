@@ -5,7 +5,7 @@
     color: {red: 0.50, green: 0.50, blue: 0.50},
     fst: {era: 1, y: 1963},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "D", st: {mon: 1, d: 5}, ttls: {"en":"Mungday"}, notes: {"en":"Holyday\nChaos 5"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-05-mungday"}},
             {type: "D", st: {mon: 2, d: 29}, ttls: {"en":"Saint Tib’s Day"}, notes: {"en":"Leaping Birth Day\nHolyday\nSaint Tib’s Day"}, inherits: "EDH"},
             {type: "D", st: {mon: 3, d: 19}, ttls: {"en":"Mojoday"}, notes: {"en":"Lingananday\nHolyday\nWhollyday\nDiscord 5"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-05-mojoday"}},
@@ -15,7 +15,7 @@
             {type: "D", st: {mon: 10, d: 24}, ttls: {"en":"Maladay"}, notes: {"en":"Holyday\nThe Aftermath 5"}, urls: {"en":"https://www.fsofcabal.com/holydays/05-05-maladay"}},
         ]},
         
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "D", st: {mon: 1, d: 5}, inherits: "Apostle Day"},
             {type: "D", st: {mon: 3, d: 19}, inherits: "Apostle Day"},
             {type: "D", st: {mon: 5, d: 31}, inherits: "Apostle Day"},
@@ -183,7 +183,7 @@
         {type: "D", st: {mon: 12, d: 30}, ttls: {"en":"New Year’s Eve Eve"}, notes: {"en":"Whollyday\n72 Aftermath"}, inherits: "EDH"},
         {type: "D", st: {wkd: [6], nth: 5}, ttls: {"en":"Fun Friday"}, inherits: "HDH"},
 
-        {type: "nD", st: {mon: 3, d: 2}, end: {mon: 3, d: 6}, ttls: {"en":"Pentaweek"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-61-pentaweek"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 3, d: 2}, end: {mon: 3, d: 6}, ttls: {"en":"Pentaweek"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-61-pentaweek"}, subEvts: [
             {type: "D", st: {mon: 3, d: 6}, ttls: {"en":"Pentasaura"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-65-pentasaura"}},
         ]},
 

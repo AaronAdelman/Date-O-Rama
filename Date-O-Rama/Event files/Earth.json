@@ -4,7 +4,7 @@
     cal: "xloc*",
     color: {name: "blue"},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {inherits: "Vernal Equinox", type: "pt", st: {misc: "Mar"}, regionCodes: ["xb"]},
             {inherits: "Summer Solstice", type: "pt", st: {misc: "Jun"}, regionCodes: ["xb"]},
             {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Sep"}, regionCodes: ["xb"]},

@@ -5,7 +5,7 @@
     color: {name: "gray"},
     fst: {era: 1, y: 1979},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "D", st: {mon: 1, d: 1}, ttls: {"en":"Saint Jesus Christ"}, notes: {"en":"Feast of the Human Sacrifice"}},
             {type: "D", st: {mon: 1, d: 2}, ttls: {"en":"Failure of Will Day"}},
             {type: "D", st: {mon: 1, d: 3}, ttls: {"en":"Saint Harryhausen"}},

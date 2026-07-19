@@ -8,7 +8,7 @@
     urls: {"en":"https://wellcat.com/pages/holidays"},
     fst: {era: 1, y: 1996},
     evts: [
-        {type: "Y", st: {}, nonoverlappingSubEvents: [
+        {type: "Y", st: {}, subEvts: [
             {type: "D", st: {mon: 12, d: 1}, ttls: {"en":"Bifocals At The Monitor Liberation Day"}},
             {type: "D", st: {mon: 12, d: 5}, ttls: {"en":"Bathtub Party Day"}, fst: {era: 1, y: 2000}},
             {type: "D", st: {mon: 12, d: 13}, ttls: {"en":"Pick A Pathologist Pal Day"}, notes: {"en":"Pick A Pathologist Day"}},

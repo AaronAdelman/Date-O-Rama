@@ -422,15 +422,15 @@
         {type: "M", st: {mon: 8}, ttls: {"en":"National Road Victim Month"}, urls: {"en":"https://www.roadpeace.org/remembering-lives-lost/national-road-victim-month/"}, emoji: "🛣️", inherits: "*MedAwareness*", fst: {era: 1, y: 1998}},
         {type: "D", st: {mon: 7, d: 16}, ttls: {"en":"National Cherry Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cherry-day/"}, emoji: "🍒"},
         
-        {type: "nD", st: {mon: 11, d: 11, thruD: 17, wkd: [2], durD: 5}, ttls: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"}, fst: {era: 1, y: 2004}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 11, d: 11, thruD: 17, wkd: [2], durD: 5}, ttls: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"}, fst: {era: 1, y: 2004}, subEvts: [
             {type: "D", st: {mon: 11, wkd: [3], d: 12, thruD: 18}, ttls: {"en":"Odd Socks Day"}, fst: {era: 1, y: 2017}, urls: {"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, emoji: "🧦", notes: {"en":"Created by the Anti-Bullying Alliance"}},
         ]},
         
-        {type: "nD", st: {mon: 11, d: 6, thruD: 12, wkd: [2], durD: 5}, ttls: {"en":"National School Meals Week"}, notes: {"en":"NSMW"}, urls: {"en":"https://www.lacansmw.co.uk/"}, emoji: "🍛", nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 11, d: 6, thruD: 12, wkd: [2], durD: 5}, ttls: {"en":"National School Meals Week"}, notes: {"en":"NSMW"}, urls: {"en":"https://www.lacansmw.co.uk/"}, emoji: "🍛", subEvts: [
             {type: "D", st: {wkd: [4]}, ttls: {"en":"Roast Dinner Day"}, urls: {"en":"https://www.daysoftheyear.com/days/roast-dinner-day/"}, emoji: "🍠🥩"},
         ]},
         
-        {type: "nD", st: {mon: 7, d: 13, thruD: 19, wkd: [7], durD: 16}, ttls: {"en":"Festival of British Archaeology"}, urls: {"en":"https://www.archaeologyuk.org/festival.html"}, fst: {era: 1, y: 2003}, notes: {"en":"Created by the Council for British Archaeology (CBA)"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 7, d: 13, thruD: 19, wkd: [7], durD: 16}, ttls: {"en":"Festival of British Archaeology"}, urls: {"en":"https://www.archaeologyuk.org/festival.html"}, fst: {era: 1, y: 2003}, notes: {"en":"Created by the Council for British Archaeology (CBA)"}, subEvts: [
             {type: "D", st: {mon: 7, d: 20, thruD: 25, wkd: [6]}, ttls: {"en":"Ask an Archaeologist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/ask-an-archaeologist-day/"}, notes: {"en":"Created by the Council for British Archaeology"}, fst: {era: 1, y: 2018}},
         ]},
         

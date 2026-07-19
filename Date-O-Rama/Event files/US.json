@@ -726,38 +726,38 @@
         {type: "D", st: {mon: 9, d: 28}, ttls: {"en":"National Self-Awareness Day"}, notes: {"en":"National Self Awareness Day\nCreated by the US Senate"}, urls: {"en":"https://www.daysoftheyear.com/days/national-self-awareness-day/"}, fst: {era: 1, y: 2017}},
         {type: "D", st: {mon: 7, d: 29}, ttls: {"en":"National Challenged Champions and Heroes Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-challenged-champions-and-heroes-awareness-day/"}, fst: {era: 1, y: 2019}, emoji: "🦽", notes: {"en":"Created by Dr. Robin A. Lococo"}},
 
-        {type: "nD", st: {mon: 11, d: 12, thruD: 18, wkd: [1], durD: 7}, ttls: {"en":"American Education Week"}, urls: {"en":"https://www.daysoftheyear.com/days/american-education-week/"}, fst: {era: 1, y: 1921}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 11, d: 12, thruD: 18, wkd: [1], durD: 7}, ttls: {"en":"American Education Week"}, urls: {"en":"https://www.daysoftheyear.com/days/american-education-week/"}, fst: {era: 1, y: 1921}, subEvts: [
             {type: "D", st: {mon: 11, wkd: [4], nth: 3}, ttls: {"en":"National Educational Support Professionals Day"}, urls: {"en":"https://www.daysoftheyear.com/days/education-support-professionals-day/"}, notes: {"en":"E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"}, fst: {era: 1, y: 1987}},
         ]},
 
-        {type: "M", st: {mon: 11}, ttls: {"en":"National Family Literacy Month"}, urls: {"en":"https://familieslearning.org/blog/november-is-national-family-literacy-month/"}, emoji: "📖", fst: {era: 1, y: 1994}, notes: {"en":"Created by the National Center for Families Learning (NCFL)"}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 11}, ttls: {"en":"National Family Literacy Month"}, urls: {"en":"https://familieslearning.org/blog/november-is-national-family-literacy-month/"}, emoji: "📖", fst: {era: 1, y: 1994}, notes: {"en":"Created by the National Center for Families Learning (NCFL)"}, subEvts: [
             {type: "D", st: {mon: 11, d: 1}, ttls: {"en":"National Family Literacy Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-family-literacy-day/"}, fst: {era: 1, y: 1994}, emoji: "📖", notes: {"en":"Created by the National Center for Families Learning (NCFL) and the US Congress"}},
         ]},
         
-        {type: "M", st: {mon: 2}, ttls: {"en":"American Heart Month"}, urls: {"en":"https://www.daysoftheyear.com/days/american-heart-month/"}, fst: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", notes: {"en":"National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 2}, ttls: {"en":"American Heart Month"}, urls: {"en":"https://www.daysoftheyear.com/days/american-heart-month/"}, fst: {era: 1, y: 1964}, emoji: "🫀", inherits: "*MedAwareness*", notes: {"en":"National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"}, subEvts: [
             {type: "D", st: {mon: 2, wkd: [6], nth: 3}, ttls: {"en":"National Woman’s Heart Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-womans-heart-day/"}, inherits: "*MedAwareness*", fst: {era: 1, y: 2001}, emoji: "🫀", notes: {"en":"Created by Tommy Thompson"}},
         ]},
         
-        {type: "W", st: {mon: 3, fullWk: 1}, ttls: {"en":"National Consumer Protection Week"}, urls: {"en":"https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en":"National Consumer Awareness Week\nNCPW\nConsumer Awareness Week\nCreated by the Federal Trade Commission"}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 3, fullWk: 1}, ttls: {"en":"National Consumer Protection Week"}, urls: {"en":"https://consumer.ftc.gov/features/national-consumer-protection-week"}, emoji: "💻📱", notes: {"en":"National Consumer Awareness Week\nNCPW\nConsumer Awareness Week\nCreated by the Federal Trade Commission"}, subEvts: [
             {type: "D", st: {wkd: [5]}, ttls: {"en":"National Slam the Scam Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-slam-the-scam-day/"}, emoji: "💻📱", fst: {era: 1, y: 2020}, notes: {"en":"Created by the US Social Security Administration, and the Officer of the Inspector General"}},
         ]},
 
-        {type: "M", st: {mon: 4}, ttls: {"en":"National Poetry Month"}, urls: {"en":"https://poets.org/national-poetry-month"}, fst: {era: 1, y: 1996}, notes: {"en":"Created by the Academy of American Poets"}, emoji: "📝", nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 4}, ttls: {"en":"National Poetry Month"}, urls: {"en":"https://poets.org/national-poetry-month"}, fst: {era: 1, y: 1996}, notes: {"en":"Created by the Academy of American Poets"}, emoji: "📝", subEvts: [
             {type: "D", st: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", fst: {era: 1, y: 2002}, end: {era: 1, y: 2024}},
             {type: "D", st: {era: 1, y: 2024, mon: 4, d: 18}, inherits: "Poem in Your Pocket Day"},
             {type: "D", st: {era: 1, y: 2025, mon: 4, d: 10}, inherits: "Poem in Your Pocket Day"},
             {type: "D", st: {mon: 4, wkd: [5], nth: -1}, inherits: "Poem in Your Pocket Day", fst: {era: 1, y: 2026}},
         ]},
                 
-        {type: "nD", st: {mon: 5, d: 2, thruD: 8, wkd: [2], durD: 5}, ttls: {"en":"Teacher Appreciation Week"}, notes: {"en":"National Teacher Appreciation Week"}, urls: {"en":"https://www.nea.org/TAW"}, fst: {era: 1, y: 1980}, emoji: "👨‍🏫👩‍🏫", nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 5, d: 2, thruD: 8, wkd: [2], durD: 5}, ttls: {"en":"Teacher Appreciation Week"}, notes: {"en":"National Teacher Appreciation Week"}, urls: {"en":"https://www.nea.org/TAW"}, fst: {era: 1, y: 1980}, emoji: "👨‍🏫👩‍🏫", subEvts: [
             {type: "D", st: {mon: 5, d: 3, thruD: 9, wkd: [3]}, inherits: "N Teacher Day", fst: {era: 1, y: 1985}},
         ]},
         
-        {type: "nD", st: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLens: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", fst: {era: 1, y: 1961}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 2, d: 23, thruMon: 3, thruD: 1, wkd: [1], yLens: [365]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", fst: {era: 1, y: 1961}, subEvts: [
             {type: "D", st: {mon: 3, d: 1}, inherits: "Peace Corps Day", fst: {era: 1, y: 1961}},
         ]},
         
-        {type: "nD", st: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLens: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", fst: {era: 1, y: 1961}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 2, d: 24, thruMon: 3, thruD: 1, wkd: [1], yLens: [366]}, end: {mon: 3, d: 1, thruD: 7, wkd: [7]}, inherits: "Peace Corps Week", fst: {era: 1, y: 1961}, subEvts: [
             {type: "D", st: {mon: 3, d: 1}, inherits: "Peace Corps Day", fst: {era: 1, y: 1961}},
         ]},
         
@@ -766,15 +766,15 @@
             {type: "D", st: {wkd: [4]}, ttls: {"en":"National School Nurse Day"}, urls: {"en":"https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", fst: {era: 1, y: 1974}, notes: {"en":"Created by Gerald Ford"}},
         ]},
         
-        {type: "W", st: {mon: 5, fullWk: 2}, ttls: {"en":"National Women’s Health Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-womens-health-week/"}, fst: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩", nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 5, fullWk: 2}, ttls: {"en":"National Women’s Health Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-womens-health-week/"}, fst: {era: 1, y: 2010}, inherits: "*MedAwareness*", emoji: "👩", subEvts: [
             {type: "D", st: {wkd: [3]}, ttls: {"en":"Sex Differences in Health Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sex-differences-in-health-awareness-day/"}, emoji: "🩺👩👨", fst: {era: 1, y: 2016}, notes: {"en":"Created by the Society for Women’s Health Research (SWHR)"}},
         ]},
         
-        {type: "nD", st: {mon: 5, d: 9, thruD: 15, wkd: [1], durD: 7}, ttls: {"en":"National Police Week"}, fst: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en":"https://www.policeweek.org/"}, notes: {"en":"Created by John F. Kennedy"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 5, d: 9, thruD: 15, wkd: [1], durD: 7}, ttls: {"en":"National Police Week"}, fst: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en":"https://www.policeweek.org/"}, notes: {"en":"Created by John F. Kennedy"}, subEvts: [
                 {type: "D", st: {mon: 5, d: 15}, ttls: {"en":"Peace Officers Memorial Day"}, fst: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en":"https://www.daysoftheyear.com/days/peace-officers-memorial-day/"}, notes: {"en":"Created by John F. Kennedy"}},
             ]},
         
-        {type: "M", st: {mon: 7}, ttls: {"en":"National Blueberry Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-blueberry-month/"}, emoji: "🫐", fst: {era: 1, y: 1974}, notes: {"en":"Blueberry Month\nCreated by the US Congress"}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 7}, ttls: {"en":"National Blueberry Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-blueberry-month/"}, emoji: "🫐", fst: {era: 1, y: 1974}, notes: {"en":"Blueberry Month\nCreated by the US Congress"}, subEvts: [
             {type: "D", st: {d: 10}, ttls: {"en":"Pick Blueberries Day"}, notes: {"en":"National Pick Blueberries Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pick-blueberries-day/"}, fst: {era: 1, y: 2003}, emoji: "🫐"},
         ]},
         

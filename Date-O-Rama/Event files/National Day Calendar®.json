@@ -489,7 +489,7 @@
         {type: "D", st: {mon: 12, wkd: [3], nth: 1}, ttls: {"en":"World Trick Shot Day"}, urls: {"en":"https://www.nationaldaycalendar.com/international/world-trick-shot-day-first-tuesday-in-december"}, emoji: "🏀", fst: {era: 1, y: 2016}, notes: {"en":"Created by the Harlem Globetrotters"}},
         {type: "D", st: {mon: 12, wkd: [7], nth: 2}, inherits: "N Unity Day", urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-unity-day-second-saturday-in-december"}, fst: {era: 1, y: 2025}, notes: {"en":"Created by US United Inc."}},
 
-        {type: "nD", st: {}, end: {}, nonoverlappingSubEvents: [
+        {type: "nD", st: {}, end: {}, subEvts: [
             {type: "D", st: {mon: 1, d: 11}, ttls: {"en":"National Arkansas Day", "he":"יום ארקנסו הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-arkansas-day/"}, fst: {era: 1, y: 2017}},
             {type: "D", st: {mon: 1, d: 18}, ttls: {"en":"National Michigan Day", "he":"יום מישיגן הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-michigan-day/"}, fst: {era: 1, y: 2017}},
             {type: "D", st: {mon: 1, d: 25}, ttls: {"en":"National Florida Day", "he":"יום פלורידה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-florida-day/"}, fst: {era: 1, y: 2017}},

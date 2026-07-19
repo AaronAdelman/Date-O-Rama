@@ -5,7 +5,7 @@
     othCals: ["cop"],
     color: {name: "blue"},
     evts: [
-        {type: "nY", st: {}, end: {}, nonoverlappingSubEvents: [
+        {type: "nY", st: {}, end: {}, subEvts: [
             {type: "Y", st: {yDiv: 7, yRem: 1}, ttls: {"he":"שנה א׳ לשמיטה", "en":"Year 1 in the Shemiṭṭah Cycle"}, emoji: "[[1.square]]"},
             {type: "Y", st: {yDiv: 7, yRem: 2}, ttls: {"he":"שנה ב׳ לשמיטה", "en":"Year 2 in the Shemiṭṭah Cycle"}, emoji: "[[2.square]]"},
             {type: "Y", st: {yDiv: 7, yRem: 3}, ttls: {"he":"שנה ג׳ לשמיטה", "en":"Year 3 in the Shemiṭṭah Cycle"}, emoji: "[[3.square]]"},
@@ -14,7 +14,7 @@
             {type: "Y", st: {yDiv: 7, yRem: 6}, ttls: {"he":"שנה ו׳ לשמיטה", "en":"Year 6 in the Shemiṭṭah Cycle"}, emoji: "[[6.square]]"},
             {type: "Y", st: {yDiv: 7, yRem: 0}, ttls: {"he":"שנת השמיטה", "en":"Shemiṭṭah Year"}, emoji: "[[7.square]]"},
         ]},
-        {type: "nY", st: {}, end: {}, nonoverlappingSubEvents: [
+        {type: "nY", st: {}, end: {}, subEvts: [
             {type: "Y", st: {yDiv: 19, yRem: 1}, ttls: {"he":"שנה א׳ למחזור החמה (שנה רגילה)", "en":"Year 1 in the Metonic Cycle (ordinary year)"}, emoji: "[[1.square]]"},
             {type: "Y", st: {yDiv: 19, yRem: 2}, ttls: {"he":"שנה ב׳ למחזור החמה (שנה רגילה)", "en":"Year 2 in the Metonic Cycle (ordinary year)"}, emoji: "[[2.square]]"},
             {type: "Y", st: {yDiv: 19, yRem: 3}, ttls: {"he":"שנה ג׳ למחזור החמה (שנה מעוברת)", "en":"Year 3 in the Metonic Cycle (leap year)"}, emoji: "[[3.square]]"},
@@ -107,7 +107,7 @@
         {ttls: {"he":"פסח (יום טוב אחרון שני)", "en":"Pesaḥ (Passover) (yom ṭov ’aḥaron sheni)"}, "excludeRegionCodes": ["IL", "PS"], type: "D", st: {mon: 8, d: 22}, inherits: "*פסח*"},
         {inherits: "מימונה/אסרו חג פסח", regionCodes: ["IL", "PS"], type: "D", st: {mon: 8, d: 22}},
         {inherits: "מימונה/אסרו חג פסח", "excludeRegionCodes": ["IL", "PS"], type: "D", st: {mon: 8, d: 23}},
-        {type: "nD", st: {mon: 8, d: 16}, end: {mon: 10, d: 5}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 8, d: 16}, end: {mon: 10, d: 5}, subEvts: [
             {ttls: {"he":"א׳ בעומר", "en":"Counting of the ‘Omer (day 1)"}, type: "D", st: {mon: 8, d: 16}, inherits: "*ספירת העומר*", emoji: "[[1.circle]]"},
             {ttls: {"he":"ב׳ בעומר", "en":"Counting of the ‘Omer (day 2)"}, type: "D", st: {mon: 8, d: 17}, inherits: "*ספירת העומר*", emoji: "[[2.circle]]"},
             {ttls: {"he":"ג׳ בעומר", "en":"Counting of the ‘Omer (day 3)"}, type: "D", st: {mon: 8, d: 18}, inherits: "*ספירת העומר*", emoji: "[[3.circle]]"},

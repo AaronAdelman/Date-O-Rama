@@ -10,7 +10,7 @@
         {type: "D", st: {mon: 3, d: 25}, ttls: {"en":"Gondorian New Year"}, notes: {"en":"From The Lord of the Rings"}},
         {type: "D", st: {mon: 10, d: 19}, ttls: {"en":"Durin’s Day"}, notes: {"en":"From The Lord of the Rings"}},
 
-        {type: "nD", st: {mon: 9, d: 16, thruD: 22, wkd: [1], durD: 7}, ttls: {"en":"Tolkien Week"}, urls: {"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en":"Created by the American Tolkien Society"}, fst: {era: 1, y: 1978}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 9, d: 16, thruD: 22, wkd: [1], durD: 7}, ttls: {"en":"Tolkien Week"}, urls: {"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en":"Created by the American Tolkien Society"}, fst: {era: 1, y: 1978}, subEvts: [
             {type: "D", st: {mon: 9, d: 22}, ttls: {"cs":"Hobbit Day","de":"Hobbit Day","en":"Hobbit Day","fr":"Journée du Hobbit","ja":"ホビットデー","ko":"호빗 데이","sc":"Die de su Hobbit","zh":"霍比特节", "he":"יום ההוביט"}, urls: {"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, notes: {"en":"National Hobbit Day\nCreated by the American Tolkien Society"}, fst: {era: 1, y: 1978}},
         ]},
     ]

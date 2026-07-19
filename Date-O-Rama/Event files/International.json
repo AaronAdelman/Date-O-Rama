@@ -1888,19 +1888,19 @@
             {type: "D", st: {mon: 4, d: 26}, inherits: "Lesbian Visibility Day", fst: {era: 1, y: 2008}},
         ]},
         
-        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [2], durD: 7}, inherits: "Waste & Recycling Workers Week", fst: {era: 1, y: 2011}, last: {era: 1, y: 2024}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [2], durD: 7}, inherits: "Waste & Recycling Workers Week", fst: {era: 1, y: 2011}, last: {era: 1, y: 2024}, subEvts: [
             {type: "D", st: {mon: 6, d: 17}, inherits: "Global Garbage Man Day", fst: {era: 1, y: 2011}},
         ]},
         
-        {type: "nD", st: {era: 1, y: 2025, mon: 6, d: 16}, end: {era: 1, y: 2025, mon: 6, d: 24}, inherits: "Waste & Recycling Workers Week", nonoverlappingSubEvents: [
+        {type: "nD", st: {era: 1, y: 2025, mon: 6, d: 16}, end: {era: 1, y: 2025, mon: 6, d: 24}, inherits: "Waste & Recycling Workers Week", subEvts: [
             {type: "D", st: {mon: 6, d: 17}, inherits: "Global Garbage Man Day", fst: {era: 1, y: 2011}},
         ]},
         
-        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [2], durD: 7}, inherits: "Waste & Recycling Workers Week", fst: {era: 1, y: 2026}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [2], durD: 7}, inherits: "Waste & Recycling Workers Week", fst: {era: 1, y: 2026}, subEvts: [
             {type: "D", st: {mon: 6, d: 17}, inherits: "Global Garbage Man Day", fst: {era: 1, y: 2011}},
         ]},
         
-        {type: "nD", st: {mon: 10, d: 8, durD: 5}, ttls: {"en":"International Cephalopod Awareness Days"}, urls: {"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"}, fst: {era: 1, y: 2007}, emoji: "🐙🦑", notes: {"en":"Created by the Octopus News Magazine Online"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 10, d: 8, durD: 5}, ttls: {"en":"International Cephalopod Awareness Days"}, urls: {"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"}, fst: {era: 1, y: 2007}, emoji: "🐙🦑", notes: {"en":"Created by the Octopus News Magazine Online"}, subEvts: [
             {type: "D", st: {mon: 10, d: 8}, ttls: {"en":"World Octopus Day", "he":"יום התמנון העולמי"}, notes: {"en":"Octopus Day", "he":"יום התמנון"}, urls: {"en":"https://www.daysoftheyear.com/days/world-octopus-day/"}, fst: {era: 1, y: 2006}, emoji: "🐙"},
             {type: "D", st: {mon: 10, d: 9}, ttls: {"en":"Nautilus Night"}, urls: {"en":"https://www.checkiday.com/d68f7e302383207b9c48a66f0fa8f191/nautilus-night"}, fst: {era: 1, y: 2007}},
             {type: "D", st: {mon: 10, d: 10}, ttls: {"en":"Squid and Cuttlefish Day"}, notes: {"en":"Squidturday\nSquittle Day"}, urls: {"en":"https://www.checkiday.com/d3c8609e87ff2dd71e14fad0d4151b30/squid-and-cuttlefish-day"}, fst: {era: 1, y: 2007}, emoji: "🦑"},
@@ -1908,15 +1908,15 @@
             {type: "D", st: {mon: 10, d: 12}, ttls: {"en":"Fossil Day"}, urls: {"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"}, fst: {era: 1, y: 2007}},
         ]},
                 
-        {type: "nD", st: {mon: 11, d: 12, thruD: 18, wkd: [2], durD: 7}, ttls: {"en":"Global Entrepreneurship Week"}, notes: {"en":"Enterprise Week"}, urls: {"en":"https://www.genglobal.org/gew"}, fst: {era: 1, y: 2008}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 11, d: 12, thruD: 18, wkd: [2], durD: 7}, ttls: {"en":"Global Entrepreneurship Week"}, notes: {"en":"Enterprise Week"}, urls: {"en":"https://www.genglobal.org/gew"}, fst: {era: 1, y: 2008}, subEvts: [
             {type: "D", st: {mon: 11, wkd: [5], nth: 3}, ttls: {"en":"Social Enterprise Day"}, urls: {"en":"https://www.daysoftheyear.com/days/social-enterprise-day/"}, emoji: "🤝", notes: {"en":"Created by Global Entrepreneurship Week"}},
         ]},
         
-        {type: "nD", st: {mon: 7, d: 7, thruD: 13, wkd: [2], durD: 8}, ttls: {"en":"World Orca Week"}, notes: {"en":"WOW"}, urls: {"en":"https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", fst: {era: 1, y: 2014}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 7, d: 7, thruD: 13, wkd: [2], durD: 8}, ttls: {"en":"World Orca Week"}, notes: {"en":"WOW"}, urls: {"en":"https://www.worldorcaday.org/world-orca-week/"}, emoji: "🌎", fst: {era: 1, y: 2014}, subEvts: [
             {type: "D", st: {mon: 7, d: 14}, ttls: {"en":"World Orca Day"}, urls: {"en":"https://www.worldorcaday.org/"}, emoji: "🌎"},
         ]},
         
-        {type: "W", st: {mon: 3, fullWk: 1}, ttls: {"en":"Celebrate Your Name Week"}, notes: {"en":"CYNW\nCreated by Jerry Hill"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, emoji: "📛", fst: {era: 1, y: 1997}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 3, fullWk: 1}, ttls: {"en":"Celebrate Your Name Week"}, notes: {"en":"CYNW\nCreated by Jerry Hill"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, emoji: "📛", fst: {era: 1, y: 1997}, subEvts: [
             {type: "D", st: {wkd: [1]}, ttls: {"en":"Namesake Day", "he":"יום השמות"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, emoji: "📛", notes: {"en":"Name Day\nName Tag Day\nCreated by Jerry Hill"}},
             {type: "D", st: {wkd: [2]}, ttls: {"en":"Fun Facts Day", "he":"יום העובדות המהנות"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, notes: {"en":"Fun Facts About Names Day\nNames Day\nName Appreciation Day\nCreated by Jerry Hill", "he":"יום העובדות המהנות על השם שלך"}},
             {type: "D", st: {wkd: [3]}, ttls: {"en":"The Wide World of Names Day"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, emoji: "📛", notes: {"en":"Created by Jerry Hill"}},
@@ -1926,7 +1926,7 @@
             {type: "D", st: {wkd: [7]}, ttls: {"en":"Genealogy Day", "he":"יום הגנאולוגיה"}, notes: {"en":"National Genealogy Day\nCreated by Jerry Hill", "he":"יום הגנאולוגיה הלאומי"}, urls: {"en":"https://www.celebrateyournameweek.org/"}, emoji: "👨‍👩‍👧‍👦"},
         ]},
         
-        {type: "nD", st: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en":"https://bk2hk.org/"}, ttls: {"en":"Be Kind to Humankind Week", "he":"השבוע להיות אדיב למין האנושי"}, fst: {era: 1, y: 1988}, notes: {"en":"BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey"}, emoji: "👨👩", nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en":"https://bk2hk.org/"}, ttls: {"en":"Be Kind to Humankind Week", "he":"השבוע להיות אדיב למין האנושי"}, fst: {era: 1, y: 1988}, notes: {"en":"BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey"}, emoji: "👨👩", subEvts: [
             {type: "D", st: {wkd: [2]}, ttls: {"en":"Motorist Consideration Monday"}, urls: {"en":"https://bk2hk.org/week/monday/"}, emoji: "🛞"},
             {type: "D", st: {wkd: [3]}, ttls: {"en":"Touch-a-Heart Tuesday"}, urls: {"en":"https://bk2hk.org/week/tuesday/"}, emoji: "❤️"},
             {type: "D", st: {wkd: [4]}, ttls: {"en":"Willing to Lend a Hand Wednesday"}, urls: {"en":"https://bk2hk.org/week/wednesday/"}, emoji: "✋"},
@@ -1936,7 +1936,7 @@
             {type: "D", st: {wkd: [1]}, ttls: {"en":"Sacrifice Our Wants for Others’ Needs Sunday"}, urls: {"en":"https://bk2hk.org/week/sunday/"}, emoji: "💥"},
         ]},
         
-        {type: "W", st: {mon: 4, fullWk: 1, d1OfWk: 2}, ttls: {"en":"Parkinson’s Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/parkinsons-awareness-week/"}, inherits: "*MedAwareness*", nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 4, fullWk: 1, d1OfWk: 2}, ttls: {"en":"Parkinson’s Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/parkinsons-awareness-week/"}, inherits: "*MedAwareness*", subEvts: [
             {type: "D", st: {mon: 4, d: 11}, ttls: {"en":"World Parkinson’s Day", "he":"יום מחלת פרקינסון העולמי"}, urls: {"en":"https://www.daysoftheyear.com/days/world-parkinsons-disease-day/"}, emoji: "💊", fst: {era: 1, y: 1997}, inherits: "*MedAwareness*", notes: {"en":"Created by the World Health Organization"}},
         ]},
         

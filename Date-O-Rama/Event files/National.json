@@ -2456,11 +2456,11 @@
         {type: "W", st: {mon: 9, fullWk: 3}, ttls: {"en":"National Singles Week"}, fst: {era: 1, y: 1980}, notes: {"en":"An observance which seems to trying to put a positive spin on a non-ideal situation."}},
         {type: "W", st: {mon: 9, fullWk: 3}, ttls: {"en":"National Surgical Technologists Week"}, urls: {"en":"https://www.ast.org/AboutUs/NSTW/"}, fst: {era: 1, y: 1984}, notes: {"en":"Created by the Association of Surgical Technologists"}},
         
-        {type: "nD", st: {mon: 10, d: 4, thruD: 10, wkd: [1], durD: 7}, inherits: "N Metric Week", fst: {era: 1, y: 1983}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 10, d: 4, thruD: 10, wkd: [1], durD: 7}, inherits: "N Metric Week", fst: {era: 1, y: 1983}, subEvts: [
             {type: "D", st: {mon: 10, d: 10}, ttls: {"en":"National Metric Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-metric-day-october-10"}, emoji: "📏"},
         ]},
         
-        {type: "D", st: {mon: 10, d: 15, thruD: 17}, fst: {era: 1, y: 1958}, nonoverlappingSubEvents: [
+        {type: "D", st: {mon: 10, d: 15, thruD: 17}, fst: {era: 1, y: 1958}, subEvts: [
             {type: "D", st: {mon: 10, d: 15, wkd: [6]}, inherits: "N Boss’ Day"},
             {type: "D", st: {mon: 10, d: 16, wkd: [2, 3, 4, 5, 6]}, inherits: "N Boss’ Day"},
             {type: "D", st: {mon: 10, d: 17, wkd: [2]}, inherits: "N Boss’ Day"},
@@ -2470,7 +2470,7 @@
             {type: "D", st: {mon: 10, d: 7, thruD: 13, wkd: [7]}, ttls: {"en":"International Newspaper Carrier Day", "he":"יום מחלקי העיתונים הבינלאומי"}, urls: {"en":"https://www.nationalnewspaperweek.com/"}, emoji: "🗞️", notes: {"en":"Part of National Newspaper Week, despite the name"}},
         ]},
         
-        {type: "W", st: {mon: 3, fullWk: 3, d1OfWk: 2}, ttls: {"en":"Wellderly Week"}, urls: {"en":"https://www.daysoftheyear.com/days/wellderly-week/"}, emoji: "👴👵", fst: {era: 1, y: 2015}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 3, fullWk: 3, d1OfWk: 2}, ttls: {"en":"Wellderly Week"}, urls: {"en":"https://www.daysoftheyear.com/days/wellderly-week/"}, emoji: "👴👵", fst: {era: 1, y: 2015}, subEvts: [
             {type: "D", st: {mon: 3, wkd: [2], nth: 3}, ttls: {"en":"Wellderly Day"}, notes: {"en":"National Wellderly Day\nNational Well-Elderly Day\nCreated by Dr. Dale Anderson"}, urls: {"en":"https://www.daysoftheyear.com/days/wellderly-day/"}, emoji: "👴👵"},
         ]},
         
@@ -2488,47 +2488,47 @@
             {type: "D", st: {wkd: [5]}, inherits: "Take Action for Libraries Day", fst: {era: 1, y: 2017}},
         ]},
         
-        {type: "W", st: {mon: 5, fullWk: 2, d1OfWk: 2}, ttls: {"en":"National Stationery Week"}, urls: {"en":"https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 5, fullWk: 2, d1OfWk: 2}, ttls: {"en":"National Stationery Week"}, urls: {"en":"https://www.nationalstationeryweek.com/"}, emoji: "✏️✒️🔎", subEvts: [
             {type: "D", st: {wkd: [4]}, ttls: {"en":"World Stationery Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-stationery-day/"}, emoji: "📄"},
         ]},
         
-        {type: "W", st: {mon: 5, fullWk: 1}, ttls: {"en":"National Family Reading Week"}, emoji: "📚", fst: {era: 1, y: 1995}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 5, fullWk: 1}, ttls: {"en":"National Family Reading Week"}, emoji: "📚", fst: {era: 1, y: 1995}, subEvts: [
             {type: "D", st: {wkd: [5]}, ttls: {"en":"Make a Book Day"}, notes: {"en":"Make-A-Book Day"}, urls: {"en":"https://www.daysoftheyear.com/days/make-a-book-day/"}, emoji: "📖", fst: {era: 1, y: 2000}},
         ]},
         
-        {type: "W", st: {mon: 6, fullWk: 1}, ttls: {"en":"National Frozen Yogurt Week", "he":"שבוע הפרוזן יוגורט הלאומי"}, fst: {era: 1, y: 1993}, urls: {"en":"https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 6, fullWk: 1}, ttls: {"en":"National Frozen Yogurt Week", "he":"שבוע הפרוזן יוגורט הלאומי"}, fst: {era: 1, y: 1993}, urls: {"en":"https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}, subEvts: [
             {type: "D", st: {mon: 6, wkd: [1], nth: 1}, inherits: "N Frozen Yogurt Day", urls: {"en":"https://internationalfrozenyogurt.com/news/frozen-yogurts-global-popularity/"}},
         ]},
         
-        {type: "M", st: {mon: 8}, ttls: {"en":"National Model Aviation Month"}, inherits: "N Model Aviation Day", urls: {"en":"https://amablog.modelaircraft.org/modelaviationday/"}, fst: {era: 1, y: 2013}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 8}, ttls: {"en":"National Model Aviation Month"}, inherits: "N Model Aviation Day", urls: {"en":"https://amablog.modelaircraft.org/modelaviationday/"}, fst: {era: 1, y: 2013}, subEvts: [
             {type: "D", st: {mon: 8, wkd: [7], nth: 3}, inherits: "N Model Aviation Day", fst: {era: 1, y: 2013}, end: {era: 1, y: 2015}},
             {type: "D", st: {mon: 8, wkd: [7], nth: 2}, inherits: "N Model Aviation Day", fst: {era: 1, y: 2016}},
         ]},
         
-        {type: "M", st: {mon: 9}, ttls: {"en":"National Blueberry Popsicle Month"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-blueberry-popsicle-day-september-2"}, emoji: "🫐", nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 9}, ttls: {"en":"National Blueberry Popsicle Month"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-blueberry-popsicle-day-september-2"}, emoji: "🫐", subEvts: [
             {type: "D", st: {mon: 9, d: 2}, ttls: {"en":"National Blueberry Popsicle Day"}, urls: {"en":"https://www.daysoftheyear.com/days/blueberry-popsicle-day/"}, emoji: "🫐"},
         ]},
         
-        {type: "nD", st: {mon: 9, d: 9, thruD: 15, wkd: [7], durD: 7}, ttls: {"en":"Neonatal Nurses Week"}, urls: {"en":"https://nann.org/about/national-neonatal-nurses-week"}, notes: {"en":"National Neonatal Nurses Week"}, emoji: "♥️", fst: {era: 1, y: 2019}, notes: {"en":"Created by the National Association of Neonatal Nurses"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 9, d: 9, thruD: 15, wkd: [7], durD: 7}, ttls: {"en":"Neonatal Nurses Week"}, urls: {"en":"https://nann.org/about/national-neonatal-nurses-week"}, notes: {"en":"National Neonatal Nurses Week"}, emoji: "♥️", fst: {era: 1, y: 2019}, notes: {"en":"Created by the National Association of Neonatal Nurses"}, subEvts: [
             {type: "D", st: {mon: 9, d: 15}, inherits: "Neonatal Nurses Day"},
         ]},
         
-        {type: "W", st: {mon: 9, fullWk: 3}, ttls: {"en":"National Singles Week"}, urls: {"en":"https://www.nationaldaycalendar.com/september/national-singles-week-third-full-week-in-september"}, notes: {"en":"Created by the Buckeye Singles Council of Columbus, Ohio"}, fst: {era: 1, y: 1980}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 9, fullWk: 3}, ttls: {"en":"National Singles Week"}, urls: {"en":"https://www.nationaldaycalendar.com/september/national-singles-week-third-full-week-in-september"}, notes: {"en":"Created by the Buckeye Singles Council of Columbus, Ohio"}, fst: {era: 1, y: 1980}, subEvts: [
             {type: "D", st: {wkd: [7]}, inherits: "N Singles Day", fst: {era: 1, y: 2017}},
         ]},
         
-        {type: "nD", st: {mon: 10, d: 6}, end: {mon: 10, d: 12}, ttls: {"en":"PA Week"}, urls: {"en":"https://www.aapa.org/pas-go-beyond/pa-week/"}, fst: {era: 1, y: 1987}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 10, d: 6}, end: {mon: 10, d: 12}, ttls: {"en":"PA Week"}, urls: {"en":"https://www.aapa.org/pas-go-beyond/pa-week/"}, fst: {era: 1, y: 1987}, subEvts: [
             {type: "D", st: {mon: 10, d: 6}, ttls: {"en":"National PA Day"}, urls: {"en":"https://www.daysoftheyear.com/days/physician-assistant-day/"}, notes: {"en":"National Physician’s Assistant Day\nNational Physician Assistant Day\nNational Physician Assistants Day\nCreated by Duke University"}, fst: {era: 1, y: 1987}},
         ]},
         
-        {type: "W", st: {mon: 1, fullWk: 3}, ttls: {"en":"Women’s Healthy Weight Week"}, urls: {"en":"https://www.healthyweight.net/hww.htm"}, fst: {era: 1, y: 1994}, notes: {"en":"Created by Francie Berg"}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 1, fullWk: 3}, ttls: {"en":"Women’s Healthy Weight Week"}, urls: {"en":"https://www.healthyweight.net/hww.htm"}, fst: {era: 1, y: 1994}, notes: {"en":"Created by Francie Berg"}, subEvts: [
             {type: "D", st: {wkd: [3]}, ttls: {"en":"Rid the World of Fad Diets & Gimmicks Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rid-the-world-of-fad-diets-gimmicks-day/"}, emoji: "🥕🍓🥑", notes: {"en":"Created by Francie Berg"}, fst: {era: 1, y: 1990}},
             {type: "D", st: {wkd: [5]}, ttls: {"en":"Women’s Healthy Weight Day"}, urls: {"en":"https://nationaltoday.com/womens-healthy-weight-day/"}, emoji: "👩", fst: {era: 1, y: 1994}, notes: {"en":"National Women’s Healthy Weight Day\nSome people think this event always falls on the third Thursday in January.\nCreated by Francie Berg of the Healthy Weight Network"}},
         ]},
         
         {type: "nD", st: {mon: 2, d: 14, thruD: 20, wkd: [2], durD: 7}, ttls: {"en":"National Drink Wine with Your Cat Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-drink-wine-with-your-cat-week/"}, fst: {era: 1, y: 2018}, emoji: "🐱🍷", notes: {"en":"Created by Offers.com and PetWinery"}},
         
-        {type: "D", st: {wkd: [6], d: 13}, nonoverlappingSubEvents: [
+        {type: "D", st: {wkd: [6], d: 13}, subEvts: [
             {type: "D", st: {mon: 1}, inherits: "N Blame Someone Else Day", fst: {era: 1, y: 1982}},
             {type: "D", st: {mon: 2}, inherits: "N Blame Someone Else Day", fst: {era: 1, y: 1982}},
             {type: "D", st: {mon: 3, yLens: [366]}, inherits: "N Blame Someone Else Day", fst: {era: 1, y: 1982}},
@@ -2540,20 +2540,20 @@
             {type: "D", st: {mon: 11, yLens: [366]}, inherits: "N Blame Someone Else Day", fst: {era: 1, y: 1982}},
         ]},
         
-        {type: "nD", st: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [2]}, end: {mon: 5, d: 1, thruD: 7, wkd: [7]}, ttls: {"en":"National Auctioneers Week"}, inherits: "N Auctioneers Day", fst: {era: 1, y: 2018}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [2]}, end: {mon: 5, d: 1, thruD: 7, wkd: [7]}, ttls: {"en":"National Auctioneers Week"}, inherits: "N Auctioneers Day", fst: {era: 1, y: 2018}, subEvts: [
             {type: "D", st: {mon: 4, wkd: [7], nth: 3}, inherits: "N Auctioneers Day", fst: {era: 1, y: 1996}, end: {era: 1, y: 2016}},
             {type: "D", st: {era: 1, y: 2017, mon: 4, d: 8}, inherits: "N Auctioneers Day"},
             {type: "D", st: {mon: 5, wkd: [7], nth: 1}, inherits: "N Auctioneers Day", fst: {era: 1, y: 2018}},
         ]},
         
-        {type: "nD", st: {mon: 6, d: 12, thruD: 18, wkd: [5], durD: 7}, inherits: "N Nursing Assistants Week", fst: {era: 1, y: 1977}, last: {era: 1, y: 2025}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 6, d: 12, thruD: 18, wkd: [5], durD: 7}, inherits: "N Nursing Assistants Week", fst: {era: 1, y: 1977}, last: {era: 1, y: 2025}, subEvts: [
             {type: "D", st: {wkd: [5]}, inherits: "CNA Day", fst: {era: 1, y: 1977}, last: {era: 1, y: 2025}},
         ]},
-        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [5], durD: 7}, inherits: "N Nursing Assistants Week", fst: {era: 1, y: 2026}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 6, d: 11, thruD: 17, wkd: [5], durD: 7}, inherits: "N Nursing Assistants Week", fst: {era: 1, y: 2026}, subEvts: [
             {type: "D", st: {wkd: [5]}, inherits: "CNA Day", fst: {era: 1, y: 2026}},
         ]},
         
-        {type: "nD", st: {mon: 6, d: 20, thruD: 26, wkd: [2], durD: 5}, ttls: {"en":"Take Your Pet to Work Week®"}, notes: {"en":"TYPTWW\nTYPTWWeek\nCreated by Pet Sitters International"}, urls: {"en":"https://https://www.petsit.com/take-your-pet-to-work-week"}, emoji: "🐱🐶", nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 6, d: 20, thruD: 26, wkd: [2], durD: 5}, ttls: {"en":"Take Your Pet to Work Week®"}, notes: {"en":"TYPTWW\nTYPTWWeek\nCreated by Pet Sitters International"}, urls: {"en":"https://https://www.petsit.com/take-your-pet-to-work-week"}, emoji: "🐱🐶", subEvts: [
             {type: "D", st: {wkd: [2]}, ttls: {"en":"National Take Your Cat to Work Day®"}, urls: {"en":"https://www.petsit.com/takeyourcat"}, emoji: "🐱", fst: {era: 1, y: 2022}, notes: {"en":"Created by Pet Sitters International"}},
             {type: "D", st: {wkd: [6]}, inherits: "N Take Your Dog to Work Day", fst: {era: 1, y: 1999}},
         ]},

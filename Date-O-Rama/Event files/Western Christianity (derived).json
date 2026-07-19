@@ -188,11 +188,11 @@
         {type: "D", st: {mon: 2, d: 26}, ttls: {"en":"Carnival Day"}, urls: {"en":"https://www.daysoftheyear.com/days/carnival-day/"}},
         {type: "D", st: {mon: 3, d: 25}, ttls: {"en":"Old New Year’s Day"}, urls: {"en":"https://nationaltoday.com/old-new-years-day/"}, fst: {era: 1, y: 1582}},
 
-        {type: "M", st: {mon: 10}, ttls: {"en":"Bat Appreciation Month", "he":"חודש העטלף"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en":"Created by Merlin Tuttle"}, nonoverlappingSubEvents: [
+        {type: "M", st: {mon: 10}, ttls: {"en":"Bat Appreciation Month", "he":"חודש העטלף"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en":"Created by Merlin Tuttle"}, subEvts: [
             {type: "nD", st: {mon: 10, d: 24}, end: {mon: 10, d: 31}, ttls: {"en":"Bat Appreciation Week"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", fst: {era: 1, y: 2000}, notes: {"en":"Created by Bat Conservation International"}},
         ]},
         
-        {type: "nD", st: {mon: 12, d: 1, durD: 7}, ttls: {"en":"National Cookie Cutter Week"}, notes: {"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, fst: {era: 1, y: 1996}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 12, d: 1, durD: 7}, ttls: {"en":"National Cookie Cutter Week"}, notes: {"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, fst: {era: 1, y: 1996}, subEvts: [
             {type: "D", st: {mon: 12, d: 1}, ttls: {"en":"National Cookie Cutter Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-day/"}, fst: {era: 1, y: 2019}, notes: {"en":"Created by Bobbi Barton"}},
         ]},
         

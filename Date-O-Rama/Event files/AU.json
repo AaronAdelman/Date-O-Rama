@@ -154,11 +154,11 @@
         {type: "D", st: {mon: 4, d: 6}, ttls: {"en":"Waltzing Matilda Day"}, urls: {"en":"https://www.daysoftheyear.com/days/waltzing-matilda-day/"}, fst: {era: 1, y: 2020}},
         {type: "D", st: {mon: 6, d: 22}, ttls: {"en":"B Kinder Day"}, urls: {"en":"https://www.daysoftheyear.com/days/b-kinder-day/"}, notes: {"en":"Created by Danny Mayson-Kinder"}, fst: {era: 1, y: 2018}},
         
-        {type: "W", st: {mon: 9, fullWk: 1}, ttls: {"en":"National Child Protection Week"}, urls: {"en":"https://www.napcan.org.au/ncpw/"}, fst: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, nonoverlappingSubEvents: [
+        {type: "W", st: {mon: 9, fullWk: 1}, ttls: {"en":"National Child Protection Week"}, urls: {"en":"https://www.napcan.org.au/ncpw/"}, fst: {era: 1, y: 1990}, emoji: "👦👧", notes: {"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, subEvts: [
             {type: "D", st: {wkd: [6]}, ttls: {"en":"Bravehearts Day"}, urls: {"en":"https://bravehearts.org.au/support-us/bravehearts-day"}, emoji: "💟", notes: {"en":"White Balloon Day\nCreated by Bravehearts"}, fst: {era: 1, y: 1997}},
         ]},
         
-        {type: "nD", st: {mon: 5, d: 27}, end: {mon: 6, d: 3}, ttls: {"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"}, inherits: "Reconciliation Day", fst: {era: 1, y: 1996}, notes: {"en":"NRW\nCreated by Reconciliation Australia"}, urls: {"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 5, d: 27}, end: {mon: 6, d: 3}, ttls: {"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"}, inherits: "Reconciliation Day", fst: {era: 1, y: 1996}, notes: {"en":"NRW\nCreated by Reconciliation Australia"}, urls: {"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"}, subEvts: [
             {type: "D", st: {wkd: [2]}, inherits: "Reconciliation Day", fst: {era: 1, y: 2018}},
         ]},
         
