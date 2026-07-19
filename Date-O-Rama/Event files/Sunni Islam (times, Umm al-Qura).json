@@ -5,8 +5,8 @@
     color: {name: "green"},
     emoji: "🇸🇦",
     evts: [
-        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptType: "twi", degBelowHor: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
+        {type: "pt", st: {ptType: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptType: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
 
         {inherits: "Isha", type: "pt", st: {ptType: "IshaMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
         {inherits: "Fajr", type: "pt", st: {ptType: "FajrMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},

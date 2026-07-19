@@ -56,7 +56,6 @@ struct ASADateSpecification:  Codable {
 
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
-    var rising: Bool?
     var offset: TimeInterval?
     
     // For solar time events
@@ -93,8 +92,7 @@ struct ASADateSpecification:  Codable {
         case dayOfYear           = "dOfY"
         case yearDivisor         = "yDiv"
         case yearRemainder       = "yRem"
-        case degreesBelowHorizon = "degBelowHor"
-        case rising
+        case degreesBelowHorizon = "deg"
         case offset
         case solarHours          = "zsuH"
         case dayHalf             = "dHalf"
@@ -257,7 +255,8 @@ extension ASADateSpecification {
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
     func rawDegreesBelowHorizon(date:  Date, location: CLLocation, timeZone:  TimeZone) -> Date? {
-        let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+        let rising = self.pointEventType == .twilightRising
+        let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: rising, offset: self.offset!)
 
         let events = date.solarEvents(location: location, events: [solarEvent], timeZone:  timeZone)
         let result = events[solarEvent]

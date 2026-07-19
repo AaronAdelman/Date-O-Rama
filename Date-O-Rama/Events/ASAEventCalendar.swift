@@ -592,7 +592,7 @@ class ASAEventCalendar {
         let longitude: CLLocationDegrees = locationData.location.coordinate.longitude
         let calcMethod: ASACalculationMethod = {
             switch tweakedStartDateSpecification.pointEventType {
-            case .generic, .twilight, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .rise, .set, .none:
+            case .generic, .twilightRising, .twilightSetting, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .rise, .set, .none:
                 fatalError()
             case .fajrJafari, .dhuhrJafari, .asrShafiiJafari, .asrHanafiJafari, .maghribJafari, .ishaJafari:
                 return .jafari
@@ -817,9 +817,9 @@ class ASAEventCalendar {
             }
             return genericMatch
             
-        case .twilight:
+        case .twilightRising, .twilightSetting:
             guard let degreesBelowHorizon = dateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
-            guard let rising = dateSpecification.rising else { return MATCH_FAILURE }
+            let rising = dateSpecification.pointEventType == .twilightRising
             let offset = dateSpecification.offset ?? 0.0
             return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             

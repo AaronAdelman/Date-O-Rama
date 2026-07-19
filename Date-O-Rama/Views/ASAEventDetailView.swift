@@ -109,9 +109,17 @@ struct ASAEventDetailsTitleSection: View {
             let titleFont: Font = .title
             #endif
             let eventEmoji = event.symbol
-            let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
-            Text(emojiPrefix + event.title)
-                .font(titleFont)
+            if eventEmoji != nil {
+                HStack {
+                    ASAEventSymbolView(symbol: eventEmoji!, font: titleFont)
+                    Text(event.title)
+                        .font(titleFont)
+                }
+            } else {
+                Text(event.title)
+                    .font(titleFont)
+            }
+            
             if event.location != nil {
                 Text(event.location!)
             }

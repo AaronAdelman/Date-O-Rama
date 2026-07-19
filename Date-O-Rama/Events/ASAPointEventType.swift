@@ -12,7 +12,8 @@ enum ASAPointEventType: String, Codable {
     case generic = "gen"
     
     /// Event is when the center of the Sun is a specific number of degrees below the horizon
-    case twilight = "twi"
+    case twilightRising  = "twiR"
+    case twilightSetting = "twiS"
     
     /// Solar time, day lasts from sunrise to sunset
     case solarTimeSunriseSunset = "R2ST"
