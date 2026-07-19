@@ -103,7 +103,7 @@
         {type: "D", st: {mon: 3, d: 17}, inherits: "St Patrick"},
         {inherits: "Statehood Day", type: "D", st: {mon: 8, wkd: [6], nth: 3}, urls: {"en":"https://en.wikipedia.org/wiki/Statehood_Day_(Hawaii)"}, locs: {"en":"Hawaii", "he":"הוואי"}, fst: {era: 1, y: 1969}},
         {type: "D", st: {mon: 4, d: 6}, inherits: "Tartan Day", fst: {era: 1, "year": 1998}},
-        {type: "D", st: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving", fst: {era: 1, y: 1942}, urls: {"en":"https://www.daysoftheyear.com/days/thanksgiving/"}, notes: {"en":"Featuring the Macy’s Thanksgiving Day Parade."}, overlappingSubEvents: [
+        {type: "D", st: {mon: 11, wkd: [5], nth: 4}, inherits: "Thanksgiving", fst: {era: 1, y: 1942}, urls: {"en":"https://www.daysoftheyear.com/days/thanksgiving/"}, notes: {"en":"Featuring the Macy’s Thanksgiving Day Parade."}, overlappingSubEvts: [
             {type: "D", st: {mon: 11, wkd: [5], nth: 4}, inherits: "N Day of Mourning", fst: {era: 1, y: 1970}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-mourning/"}},
             {type: "D", st: {mon: 11, wkd: [5], nth: 4}, ttls: {"en":"Unthanksgiving Day"}, inherits: "N Day of Mourning", fst: {era: 1, y: 1975}, urls: {"en":"https://www.daysoftheyear.com/days/unthanksgiving-day/"}, notes: {"en":"Indigenous Peoples Sunrise Ceremony"}},
             {type: "D", st: {mon: 11, wkd: [5], nth: 4}, ttls: {"en":"National Family Health History Day"}, notes: {"en":"Family History Initiative"}, urls: {"en":"https://www.daysoftheyear.com/days/national-family-health-history-day/"}, fst: {era: 1, y: 2004}, notes: {"en":"Created by the US Surgeon General"}},
@@ -761,7 +761,7 @@
             {type: "D", st: {mon: 3, d: 1}, inherits: "Peace Corps Day", fst: {era: 1, y: 1961}},
         ]},
         
-        {type: "nD", st: {mon: 5, d: 6}, end: {mon: 5, d: 12}, ttls: {"en":"National Nurse’s Week"}, urls: {"en":"https://www.daysoftheyear.com/days/nurses-week/"}, notes: {"en":"National Nurses Week"}, fst: {era: 1, y: 1974}, emoji: "👨‍⚕️👩‍⚕️", overlappingSubEvents: [
+        {type: "nD", st: {mon: 5, d: 6}, end: {mon: 5, d: 12}, ttls: {"en":"National Nurse’s Week"}, urls: {"en":"https://www.daysoftheyear.com/days/nurses-week/"}, notes: {"en":"National Nurses Week"}, fst: {era: 1, y: 1974}, emoji: "👨‍⚕️👩‍⚕️", overlappingSubEvts: [
             {type: "D", st: {mon: 5, d: 6}, ttls: {"en":"National Nurses Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-nurses-day/"}, notes: {"en":"National Recognition Day for Nurses\nNational Nurse’s Day\nNational RN Recognition Day\nCreated by Ronald Reagan"}, fst: {era: 1, y: 1982}, emoji: "👨‍⚕️👩‍⚕️"},
             {type: "D", st: {wkd: [4]}, ttls: {"en":"National School Nurse Day"}, urls: {"en":"https://www.daysoftheyear.com/days/school-nurse-day/"}, emoji: "👩‍⚕️👨‍⚕️", fst: {era: 1, y: 1974}, notes: {"en":"Created by Gerald Ford"}},
         ]},

@@ -68,16 +68,16 @@ struct ASAEventSpecification: Codable {
         case firstDateSpecification = "fst"
         case lastDateSpecification  = "last"
         case inherits
-        case titles                 = "ttls"
-        case locations              = "locs"
-        case calendarCode           = "cal"
+        case titles                  = "ttls"
+        case locations               = "locs"
+        case calendarCode            = "cal"
         case regionCodes
         case excludeRegionCodes
         case urls, notes, emoji, type
         case nonoverlappingSubEvents = "subEvts"
-        case overlappingSubEvents = "overlappingSubEvents"
-        case cycleRanges            = "cRanges"
-        case cycleRangeFirstNumber  = "cRange1stNo"
+        case overlappingSubEvents    = "overlappingSubEvts"
+        case cycleRanges             = "cRanges"
+        case cycleRangeFirstNumber   = "cRange1stNo"
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

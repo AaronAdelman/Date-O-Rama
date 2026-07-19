@@ -1884,7 +1884,7 @@
         {type: "W", st: {mon: 9, fullWk: 3, d1OfWk: 2}, ttls: {"en":"World Mitochondrial Disease Week"}, notes: {"en":"Mitochondrial Disease Awareness Week"}, urls: {"en":"https://mitopatients.org/mito-week/"}, fst: {era: 1, y: 2011}},
         {type: "W", st: {mon: 9, fullWk: 3}, ttls: {"en":"Farm Animal Awareness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/farm-animal-awareness-week/"}, emoji: "🐄", fst: {era: 1, y: 1993}},
 
-        {type: "nD", st: {mon: 4, d: 20, thruD: 26, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [1]}, ttls: {"en":"Lesbian Visibility Week","es":"Semana de la Visibilidad Lésbica","ja":"レズビアン可視化週間","pa":"ਲੈਸਬੀਅਨ ਵਿਜ਼ੀਬਿਲਟੀ ਵੀਕ","uk":"Тиждень видимості лесбійок"}, notes: {"en":"Created by the West Hollywood Lesbian Visibility Committee"}, fst: {era: 1, y: 1990}, overlappingSubEvents: [
+        {type: "nD", st: {mon: 4, d: 20, thruD: 26, wkd: [2]}, end: {mon: 4, d: 26, thruMon: 5, thruD: 2, wkd: [1]}, ttls: {"en":"Lesbian Visibility Week","es":"Semana de la Visibilidad Lésbica","ja":"レズビアン可視化週間","pa":"ਲੈਸਬੀਅਨ ਵਿਜ਼ੀਬਿਲਟੀ ਵੀਕ","uk":"Тиждень видимості лесбійок"}, notes: {"en":"Created by the West Hollywood Lesbian Visibility Committee"}, fst: {era: 1, y: 1990}, overlappingSubEvts: [
             {type: "D", st: {mon: 4, d: 26}, inherits: "Lesbian Visibility Day", fst: {era: 1, y: 2008}},
         ]},
         

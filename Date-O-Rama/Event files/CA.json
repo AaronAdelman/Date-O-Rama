@@ -168,7 +168,7 @@
         {type: "D", st: {mon: 6, d: 14}, ttls: {"en":"Missing Mutts Awareness Day"}, fst: {era: 1, y: 2013}, urls: {"en":"https://www.daysoftheyear.com/days/missing-mutts-awareness-day/"}, emoji: "🐶"},
         {type: "D", st: {mon: 6, d: 26}, ttls: {"en":"Cancer Wellness Awareness Day"}, notes: {"en":"Created by the West Island Cancer Wellness Centre"}, inherits: "*MedAwareness*", fst: {era: 1, y: 2019}, urls: {"en":"https://www.daysoftheyear.com/days/cancer-wellness-awareness-day/"}},
 
-        {type: "M", st: {mon: 10}, ttls: {"en":"Canadian Library Month"}, urls: {"en":"https://librarianship.ca/features/canadian-library-month/"}, fst: {era: 1, y: 2006}, emoji: "📚", notes: {"en":"Created by Canadian Library Association"}, overlappingSubEvents: [
+        {type: "M", st: {mon: 10}, ttls: {"en":"Canadian Library Month"}, urls: {"en":"https://librarianship.ca/features/canadian-library-month/"}, fst: {era: 1, y: 2006}, emoji: "📚", notes: {"en":"Created by Canadian Library Association"}, overlappingSubEvts: [
             {type: "D", st: {mon: 10, wkd: [6], nth: 3}, ttls: {"en":"Canadian Library Workers Day", "fr":"Journeé canadienne des employés des bibliothéques"}, urls: {"en":"https://librarianship.ca/event/canadian-library-workers-day-2024/"}, emoji: "📚"},
             {type: "D", st: {mon: 10, wkd: [2], nth: 4}, ttls: {"en":"Canadian School Library Day", "fr":"Journée nationale des bibliothèques scolaires canadiennes"}, urls: {"en":"https://www.canadianschoollibraries.ca/csld/"}, emoji: "📚"},
             {type: "nD", st: {mon: 10, d: 1, thruD: 7, wkd: [2], durD: 5}, inherits: "First Nation Public Library Week", fst: {era: 1, y: 2006}, last: {era: 1, y: 2023}},

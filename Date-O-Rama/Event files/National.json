@@ -2466,7 +2466,7 @@
             {type: "D", st: {mon: 10, d: 17, wkd: [2]}, inherits: "N Boss’ Day"},
         ]},
         
-        {type: "W", st: {mon: 10, fullWk: 1}, ttls: {"en":"National Newspaper Week"}, urls: {"en":"https://www.nationalnewspaperweek.com/"}, fst: {era: 1, y: 1940}, emoji: "🗞️", overlappingSubEvents: [
+        {type: "W", st: {mon: 10, fullWk: 1}, ttls: {"en":"National Newspaper Week"}, urls: {"en":"https://www.nationalnewspaperweek.com/"}, fst: {era: 1, y: 1940}, emoji: "🗞️", overlappingSubEvts: [
             {type: "D", st: {mon: 10, d: 7, thruD: 13, wkd: [7]}, ttls: {"en":"International Newspaper Carrier Day", "he":"יום מחלקי העיתונים הבינלאומי"}, urls: {"en":"https://www.nationalnewspaperweek.com/"}, emoji: "🗞️", notes: {"en":"Part of National Newspaper Week, despite the name"}},
         ]},
         
@@ -2474,14 +2474,14 @@
             {type: "D", st: {mon: 3, wkd: [2], nth: 3}, ttls: {"en":"Wellderly Day"}, notes: {"en":"National Wellderly Day\nNational Well-Elderly Day\nCreated by Dr. Dale Anderson"}, urls: {"en":"https://www.daysoftheyear.com/days/wellderly-day/"}, emoji: "👴👵"},
         ]},
         
-        {type: "W", st: {mon: 4, fullWk: 2}, inherits: "N Library Week", fst: {era: 1, y: 2015}, last: {era: 1, y: 2025}, overlappingSubEvents: [
+        {type: "W", st: {mon: 4, fullWk: 2}, inherits: "N Library Week", fst: {era: 1, y: 2015}, last: {era: 1, y: 2025}, overlappingSubEvts: [
             {type: "D", st: {wkd: [3]}, inherits: "N Library Workers Day", fst: {era: 1, y: 2003}},
             {type: "D", st: {wkd: [4]}, inherits: "N Library Outreach Day", fst: {era: 1, y: 2003}},
             {type: "D", st: {wkd: [5]}, inherits: "N Support Teen Literature Day", fst: {era: 1, y: 2007}},
             {type: "D", st: {wkd: [5]}, inherits: "Take Action for Libraries Day", fst: {era: 1, y: 2017}},
         ]},
         
-        {type: "W", st: {mon: 4, fullWk: 3}, inherits: "N Library Week", fst: {era: 1, y: 2026}, overlappingSubEvents: [
+        {type: "W", st: {mon: 4, fullWk: 3}, inherits: "N Library Week", fst: {era: 1, y: 2026}, overlappingSubEvts: [
             {type: "D", st: {wkd: [3]}, inherits: "N Library Workers Day", fst: {era: 1, y: 2003}},
             {type: "D", st: {wkd: [4]}, inherits: "N Library Outreach Day", fst: {era: 1, y: 2003}},
             {type: "D", st: {wkd: [5]}, inherits: "N Support Teen Literature Day", fst: {era: 1, y: 2007}},
