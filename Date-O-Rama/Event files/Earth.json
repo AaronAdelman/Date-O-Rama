@@ -5,15 +5,15 @@
     color: {name: "blue"},
     evts: [
         {type: "Y", st: {}, subEvts: [
-            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Mar"}, regionCodes: ["xb"]},
-            {inherits: "Summer Solstice", type: "pt", st: {misc: "Jun"}, regionCodes: ["xb"]},
-            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Sep"}, regionCodes: ["xb"]},
-            {inherits: "Winter Solstice", type: "pt", st: {misc: "Dec"}, regionCodes: ["xb"]},
+            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Mar"}, rgns: ["xb"]},
+            {inherits: "Summer Solstice", type: "pt", st: {misc: "Jun"}, rgns: ["xb"]},
+            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Sep"}, rgns: ["xb"]},
+            {inherits: "Winter Solstice", type: "pt", st: {misc: "Dec"}, rgns: ["xb"]},
             
-            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Sep"}, regionCodes: ["xc"]},
-            {inherits: "Summer Solstice", type: "pt", st: {misc: "Dec"}, regionCodes: ["xc"]},
-            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Mar"}, regionCodes: ["xc"]},
-            {inherits: "Winter Solstice", type: "pt", st: {misc: "Jun"}, regionCodes: ["xc"]},
+            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Sep"}, rgns: ["xc"]},
+            {inherits: "Summer Solstice", type: "pt", st: {misc: "Dec"}, rgns: ["xc"]},
+            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Mar"}, rgns: ["xc"]},
+            {inherits: "Winter Solstice", type: "pt", st: {misc: "Jun"}, rgns: ["xc"]},
         ]},
     ]
 }

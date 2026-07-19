@@ -71,8 +71,8 @@ struct ASAEventSpecification: Codable {
         case titles                  = "ttls"
         case locations               = "locs"
         case calendarCode            = "cal"
-        case regionCodes
-        case excludeRegionCodes
+        case regionCodes             = "rgns"
+        case excludeRegionCodes      = "excludeRgns"
         case urls, notes, emoji, type
         case nonoverlappingSubEvents = "subEvts"
         case overlappingSubEvents    = "overlappingSubEvts"
