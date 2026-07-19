@@ -1,5 +1,5 @@
 {
-    titles: {"*":"UG"},
+    ttls: {"*":"UG"},
     "//":"Uganda",
     "TODO":"Muslim observances",
     defLocale: "en",
@@ -9,8 +9,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Uganda"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", st: {mon: 1, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/uganda/nrm-liberation-day"}, titles: {"en":"NRM Liberation Day"}, fst: {era: 1, y: 1986}},
-        {type: "D", st: {mon: 2, d: 16}, urls: {"en":"https://nationaltoday.com/archbishop-janani-luwum-day/"}, titles: {"en":"Archbishop Janani Luwum Day"}, fst: {era: 1, y: 1977}},
+        {type: "D", st: {mon: 1, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/uganda/nrm-liberation-day"}, ttls: {"en":"NRM Liberation Day"}, fst: {era: 1, y: 1986}},
+        {type: "D", st: {mon: 2, d: 16}, urls: {"en":"https://nationaltoday.com/archbishop-janani-luwum-day/"}, ttls: {"en":"Archbishop Janani Luwum Day"}, fst: {era: 1, y: 1977}},
         {type: "D", st: {mon: 3, d: 8}, inherits: "IWD", urls: {"en":"https://www.officeholidays.com/holidays/uganda/international-womens-day"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},

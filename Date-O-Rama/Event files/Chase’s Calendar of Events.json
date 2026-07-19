@@ -1,25 +1,25 @@
 {
-    titles: {"en":"Chase’s Calendar of Events"},
+    ttls: {"en":"Chase’s Calendar of Events"},
     // Bill and Helen Chase
     defLocale: "en",
     cal: "gre",
     color: {red: 0.19, green: 0.39, blue: 0.57},
     fst: {era: 1, y: 1957},
     evts: [
-        {type: "D", st: {mon: 8, d: 8}, titles: {"en":"Wear Your Mother’s Jewelry Day"}, urls: {"en":"https://mymothersjewelrybox.com/wear-your-mothers-jewelry-day/"}, fst: {era: 1, y: 2017}, emoji: "💍", notes: {"en":"Created by Barbara J. Feldman of My Mother’s Jewelry Box"}},
-        {type: "M", st: {mon: 11}, titles: {"en":"Banana Pudding Lovers Month"}, urls: {"en":"https://www.daysoftheyear.com/days/banana-pudding-lovers-month/"}, emoji: "🍌", fst: {era: 1, y: 2011}, notes: {"en":"Created by Rodgers’ Puddings"}},
-        {type: "M", st: {mon: 2}, titles: {"en":"An Affair to Remember Month"}, urls: {"en":"https://www.daysoftheyear.com/days/an-affair-to-remember-month/"}, fst: {era: 1, y: 1996}, notes: {"en":"This observance was inspired by the movie An Affair to Remember."}},
-        {type: "M", st: {mon: 5}, titles: {"en":"International Victorious Woman Month"}, urls: {"en":"https://www.daysoftheyear.com/days/international-victorious-woman-month/"}, fst: {era: 1, y: 2006}, notes: {"en":"Created by Annmarie Kelly"}},
+        {type: "D", st: {mon: 8, d: 8}, ttls: {"en":"Wear Your Mother’s Jewelry Day"}, urls: {"en":"https://mymothersjewelrybox.com/wear-your-mothers-jewelry-day/"}, fst: {era: 1, y: 2017}, emoji: "💍", notes: {"en":"Created by Barbara J. Feldman of My Mother’s Jewelry Box"}},
+        {type: "M", st: {mon: 11}, ttls: {"en":"Banana Pudding Lovers Month"}, urls: {"en":"https://www.daysoftheyear.com/days/banana-pudding-lovers-month/"}, emoji: "🍌", fst: {era: 1, y: 2011}, notes: {"en":"Created by Rodgers’ Puddings"}},
+        {type: "M", st: {mon: 2}, ttls: {"en":"An Affair to Remember Month"}, urls: {"en":"https://www.daysoftheyear.com/days/an-affair-to-remember-month/"}, fst: {era: 1, y: 1996}, notes: {"en":"This observance was inspired by the movie An Affair to Remember."}},
+        {type: "M", st: {mon: 5}, ttls: {"en":"International Victorious Woman Month"}, urls: {"en":"https://www.daysoftheyear.com/days/international-victorious-woman-month/"}, fst: {era: 1, y: 2006}, notes: {"en":"Created by Annmarie Kelly"}},
         {type: "D", st: {mon: 10, d: 15}, inherits: "N Grouch Day", fst: {era: 1, y: 1976}},
-        {type: "W", st: {mon: 3, fullWk: 1}, titles: {"en":"Return Borrowed Books Week"}, urls: {"en":"https://www.daysoftheyear.com/days/return-borrowed-books-week/"}, emoji: "📚", notes: {"en":"Created by Al Kaelin"}},
+        {type: "W", st: {mon: 3, fullWk: 1}, ttls: {"en":"Return Borrowed Books Week"}, urls: {"en":"https://www.daysoftheyear.com/days/return-borrowed-books-week/"}, emoji: "📚", notes: {"en":"Created by Al Kaelin"}},
         {type: "D", st: {mon: 3, wkd: [2], d: 9, thruD: 15}, inherits: "Fill Our Staplers Day", fst: {era: 1, y: 2013}},
         {type: "D", st: {mon: 11, wkd: [2], d: 2, thruD: 8}, inherits: "Fill Our Staplers Day", fst: {era: 1, y: 2013}},
-        {type: "D", st: {mon: 9, wkd: [1], nth: 3}, titles: {"en":"Wife Appreciation Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wife-appreciation-day/"}, fst: {era: 1, y: 2006}, emoji: "👩"},
-        {type: "D", st: {mon: 8, d: 15}, titles: {"en":"National Relaxation Day", "he":"יום המנוחה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/relaxation-day/"}, emoji: "😎", fst: {era: 1, y: 1985}, notes: {"en":"Created by Sean Moeller"}},
-        {type: "D", st: {mon: 4, d: 20}, titles: {"en":"National Look-Alike Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-look-alike-day/"}, notes: {"en":"Look Alike Day\nNational Look Alike Day\nCreated by Jack Etzel"}, fst: {era: 1, y: 1980}},
-        {type: "D", st: {mon: 4, d: 2}, titles: {"en":"National Ferret Day", "he":"יום החמוס הלאומי"}, fst: {era: 1, y: 2014}, urls: {"en":"https://ferret.org/nationalferretday/"}, notes: {"en":"Created by Carol Roche"}},
+        {type: "D", st: {mon: 9, wkd: [1], nth: 3}, ttls: {"en":"Wife Appreciation Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wife-appreciation-day/"}, fst: {era: 1, y: 2006}, emoji: "👩"},
+        {type: "D", st: {mon: 8, d: 15}, ttls: {"en":"National Relaxation Day", "he":"יום המנוחה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/relaxation-day/"}, emoji: "😎", fst: {era: 1, y: 1985}, notes: {"en":"Created by Sean Moeller"}},
+        {type: "D", st: {mon: 4, d: 20}, ttls: {"en":"National Look-Alike Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-look-alike-day/"}, notes: {"en":"Look Alike Day\nNational Look Alike Day\nCreated by Jack Etzel"}, fst: {era: 1, y: 1980}},
+        {type: "D", st: {mon: 4, d: 2}, ttls: {"en":"National Ferret Day", "he":"יום החמוס הלאומי"}, fst: {era: 1, y: 2014}, urls: {"en":"https://ferret.org/nationalferretday/"}, notes: {"en":"Created by Carol Roche"}},
     ],
     tpls: {
-        "Fill Our Staplers Day": {type: "D", st: {mon: 3, wkd: [2], nth: 2}, titles: {"en":"Fill Our Staplers Day"}, urls: {"en":"https://dullmensclub.com/event/fill-staplers-day/"}, notes: {"en":"Created by the Dull Men’s Club"}},
+        "Fill Our Staplers Day": {type: "D", st: {mon: 3, wkd: [2], nth: 2}, ttls: {"en":"Fill Our Staplers Day"}, urls: {"en":"https://dullmensclub.com/event/fill-staplers-day/"}, notes: {"en":"Created by the Dull Men’s Club"}},
     }
 }

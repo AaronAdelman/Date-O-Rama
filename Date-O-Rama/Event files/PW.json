@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PW"},
+    ttls: {"*":"PW"},
     "//":"Palau",
     defLocale: "en",
     cal: "gre",
@@ -9,7 +9,7 @@
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 3, d: 15}, inherits: "Youth Day"},
-        {type: "D", st: {mon: 5, d: 5}, titles: {"en":"Senior Citizens Day"}},
+        {type: "D", st: {mon: 5, d: 5}, ttls: {"en":"Senior Citizens Day"}},
         {type: "D", st: {mon: 6, d: 1}, inherits: "Presidents’ Day"},
         {type: "D", st: {mon: 7, d: 9}, inherits: "Constitution Day", urls: {"en":"https://nationaltoday.com/palau-constitution-day/"}, fst: {era: 1, y: 1981}},
         {type: "D", st: {mon: 9, wkd: [2], nth: 1}, inherits: "Labour Day"},

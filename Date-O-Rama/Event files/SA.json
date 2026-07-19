@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SA"},
+    ttls: {"*":"SA"},
     "//":"Saudi Arabia",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -10,9 +10,9 @@
     evts: [
         {type: "D", st: {mon: 2, d: 22}, inherits: "Founding Day", fst: {era: 1, y: 1727}, notes: {"en":"Foundation Day"}},
         {type: "D", st: {mon: 2, d: 23, wkd: [1, 2, 5]}, inherits: "Public Holiday", fst: {era: 1, y: 1727}},
-        {type: "D", st: {mon: 3, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, titles: {"en":"Saudi Flag Day"}, fst: {era: 1, y: 1937}, inherits: "Flag Day"},
-        {type: "D", st: {mon: 9, d: 22, wkd: [1, 5]}, inherits: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, titles: {"en":"Saudi National Day (bridge day)"}},
-        {type: "D", st: {mon: 9, d: 23}, inherits: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, titles: {"en":"Saudi National Day", "he":"היום הלאומי של ערב הסעודית", "ar":"اليوم الوطني للمملكة العربية السعودية"}},
+        {type: "D", st: {mon: 3, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, ttls: {"en":"Saudi Flag Day"}, fst: {era: 1, y: 1937}, inherits: "Flag Day"},
+        {type: "D", st: {mon: 9, d: 22, wkd: [1, 5]}, inherits: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, ttls: {"en":"Saudi National Day (bridge day)"}},
+        {type: "D", st: {mon: 9, d: 23}, inherits: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, ttls: {"en":"Saudi National Day", "he":"היום הלאומי של ערב הסעודית", "ar":"اليوم الوطني للمملكة العربية السعودية"}},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"}

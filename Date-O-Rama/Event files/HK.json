@@ -1,5 +1,5 @@
 {
-    titles: {"*":"HK"},
+    ttls: {"*":"HK"},
     "//":"Hong Kong",
     defLocale: "en",
     cal: "gre",

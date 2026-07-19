@@ -1,5 +1,5 @@
 {
-    titles: {"*":"HK"},
+    ttls: {"*":"HK"},
     "//":"Hong Kong",
     "TODO":"The fourth day of Lunar New Year, the fourth day of Lunar New Year",
     defLocale: "en",

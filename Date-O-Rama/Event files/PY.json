@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PY"},
+    ttls: {"*":"PY"},
     "//":"Paraguay",
     defLocale: "en",
     cal: "gre",
@@ -14,10 +14,10 @@
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "nD", st: {mon: 5, d: 14}, end: {mon: 5, d: 15}, fst: {era: 1, y: 1811}, urls: {"en":"https://nationaltoday.com/paraguay-independence-day/"}},
-        {type: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/chaco-armistice-day/"}, titles: {"en":"Chaco Armistice Day", "es":"Día de la Paz del Chaco"}, notes: {"en":"Chaco Peace Day"}, fst: {era: 1, y: 1935}, emoji: "☮️"},
-        {type: "D", st: {mon: 8, d: 15}, urls: {"en":"https://nationaltoday.com/founding-of-asuncion-in-paraguay/"}, titles: {"en":"Founding of Asunción", "es":"Fundación de Asunción"}},
-        {type: "D", st: {mon: 9, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/paraguay/boqueron-battle-victory-day"}, titles: {"en":"Boquerón Battle Victory Day", "es":"Victoria de Boquerón"}},
-        {type: "D", st: {mon: 12, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/paraguay/immaculate-conception-day"}, titles: {"en":"Virgin of Caacupé Day", "es":"Virgen de Caacupé"}, inherits: "Immaculate Conception"},
+        {type: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/chaco-armistice-day/"}, ttls: {"en":"Chaco Armistice Day", "es":"Día de la Paz del Chaco"}, notes: {"en":"Chaco Peace Day"}, fst: {era: 1, y: 1935}, emoji: "☮️"},
+        {type: "D", st: {mon: 8, d: 15}, urls: {"en":"https://nationaltoday.com/founding-of-asuncion-in-paraguay/"}, ttls: {"en":"Founding of Asunción", "es":"Fundación de Asunción"}},
+        {type: "D", st: {mon: 9, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/paraguay/boqueron-battle-victory-day"}, ttls: {"en":"Boquerón Battle Victory Day", "es":"Victoria de Boquerón"}},
+        {type: "D", st: {mon: 12, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/paraguay/immaculate-conception-day"}, ttls: {"en":"Virgin of Caacupé Day", "es":"Virgen de Caacupé"}, inherits: "Immaculate Conception"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

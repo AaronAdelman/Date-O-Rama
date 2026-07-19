@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TJ"},
+    ttls: {"*":"TJ"},
     "//":"Tajikistan",
     "TODO":"Muslim holidays, Navruz Holiday",
     defLocale: "en",
@@ -15,12 +15,12 @@
         {type: "D", st: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", st: {mon: 5, d: 10, thruD: 11, wkd: [2]}, inherits: "Victory Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/tajikistan/victory-day"}},
         {type: "D", st: {mon: 6, d: 27}, inherits: "N Unity Day", urls: {"en":"https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
-        {type: "D", st: {mon: 6, d: 28, thruD: 29, wkd: [2]}, titles: {"en":"National Unity Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
+        {type: "D", st: {mon: 6, d: 28, thruD: 29, wkd: [2]}, ttls: {"en":"National Unity Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
         {type: "D", st: {mon: 9, d: 9}, inherits: "Independence Day", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/tajikistan-independence-day/"}},
         {type: "D", st: {mon: 11, d: 6}, urls: {"en":"https://www.officeholidays.com/holidays/tajikistan/tajikistan-constitution-day"}, inherits: "Constitution Day"},
         
         {type: "D", st: {mon: 8, d: 4}, inherits: "Paratroopers’ Day"},
-        {type: "D", st: {mon: 2, d: 6}, inherits: "Police Day", titles: {"en":"Day of the Tajik Police"}},
+        {type: "D", st: {mon: 2, d: 6}, inherits: "Police Day", ttls: {"en":"Day of the Tajik Police"}},
         {type: "D", st: {mon: 5, d: 28}, inherits: "Border Guards Day", fst: {era: 1, y: 1919}},
         {inherits: "N Guard Day", type: "D", st: {mon: 10, d: 2}},
 

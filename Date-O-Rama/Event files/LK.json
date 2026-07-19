@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LK"},
+    ttls: {"*":"LK"},
     "//":"Sri Lanka",
     "TODO":"Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar)",
     defLocale: "en",
@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},
     fst: {era: 1, y: 1948},
     evts: [
-        {type: "D", st: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/sri-lanka/pongal"}, titles: {"en":"Special Bank Holiday Holiday"}},
+        {type: "D", st: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/sri-lanka/pongal"}, ttls: {"en":"Special Bank Holiday Holiday"}},
         {type: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "N Day", fst: {era: 1, y: 1948}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},

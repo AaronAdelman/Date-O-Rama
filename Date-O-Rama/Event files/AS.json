@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AS"},
+    ttls: {"*":"AS"},
     "//":"American Samoa",
     defLocale: "en",
     cal: "gre",
@@ -11,12 +11,12 @@
         {type: "D", st: {mon: 1, wkd: [2], nth: 3}, inherits: "MLK Day", fst: {era: 1, y: 1986}},
         {type: "D", st: {mon: 2, d: 20}, inherits: "Presidents’ Day", urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/presidents-day"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", st: {mon: 4, d: 17}, titles: {"en":"American Samoa Flag Day"}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/american-samoa-flag-day"}, inherits: "Flag Day"},
+        {type: "D", st: {mon: 4, d: 17}, ttls: {"en":"American Samoa Flag Day"}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/american-samoa-flag-day"}, inherits: "Flag Day"},
         {type: "D", st: {mon: 5, wkd: [2], nth: -1}, inherits: "Memorial Day", urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/memorial-day"}},
         {type: "D", st: {mon: 6, d: 19}, inherits: "Juneteenth", fst: {era: 1, y: 1886}},
         {type: "D", st: {mon: 7, d: 4}, inherits: "Independence Day", urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/usa-independence-day"}},
         {type: "D", st: {mon: 7, d: 15, wkd: [6]}, inherits: "Manu’a Cession Day (in lieu)", fst: {era: 1, y: 1983}},
-        {type: "D", st: {mon: 7, d: 16}, titles: {"en":"Manu’a Cession Day"}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, fst: {era: 1, y: 1983}},
+        {type: "D", st: {mon: 7, d: 16}, ttls: {"en":"Manu’a Cession Day"}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, fst: {era: 1, y: 1983}},
         {type: "D", st: {mon: 7, d: 17, wkd: [2]}, inherits: "Manu’a Cession Day (in lieu)"},
         {type: "D", st: {mon: 9, wkd: [2], inherits: "Labour Day", nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/labor-day"}},
         {type: "D", st: {mon: 10, wkd: [1], nth: 2}, inherits: "White Sunday"},
@@ -29,6 +29,6 @@
         {inherits: "Children’s Day", type: "D", st: {misc: "E", offsetD: 39}},
    ],
     tpls: {
-        "Manu’a Cession Day (in lieu)": {type: "D", st: {mon: 7, d: 15, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, titles: {"en":"Manu’a Cession Day (in lieu)"}},
+        "Manu’a Cession Day (in lieu)": {type: "D", st: {mon: 7, d: 15, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, ttls: {"en":"Manu’a Cession Day (in lieu)"}},
     }
 }

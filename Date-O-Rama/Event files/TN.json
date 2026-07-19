@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TN"},
+    ttls: {"*":"TN"},
     "//":"Tunisia",
     "TODO:":"Muslim holidays?",
     defLocale: "en",
@@ -14,9 +14,9 @@
         {type: "D", st: {mon: 4, d: 9}, inherits: "Martyrs’ Day", urls: {"en":"https://www.officeholidays.com/holidays/tunisia/tunisia-martyrs-day"}},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", st: {mon: 7, d: 25}, inherits: "Republic Day", urls: {"en":"https://nationaltoday.com/tunisia-republic-day/"}, fst: {era: 1, y: 1957}},
-        {type: "D", st: {mon: 8, d: 13}, inherits: "Women’s Day", urls: {"en":"https://nationaltoday.com/womens-and-family-day/"}, titles: {"en":"Women’s and Family Day"}, fst: {era: 1, y: 2017}, notes: {"en":"Women’s Day"}},
+        {type: "D", st: {mon: 8, d: 13}, inherits: "Women’s Day", urls: {"en":"https://nationaltoday.com/womens-and-family-day/"}, ttls: {"en":"Women’s and Family Day"}, fst: {era: 1, y: 2017}, notes: {"en":"Women’s Day"}},
         {inherits: "Evacuation Day", type: "D", st: {mon: 10, d: 15}, urls: {"en":"https://nationaltoday.com/tunisia-evacuation-day/"}, fst: {era: 1, y: 1962}},
-        {type: "D", st: {mon: 12, d: 17}, titles: {"en":"Revolution and Youth Day"}, emoji: "䷰👦👧", fst: {era: 1, y: 2010}},
+        {type: "D", st: {mon: 12, d: 17}, ttls: {"en":"Revolution and Youth Day"}, emoji: "䷰👦👧", fst: {era: 1, y: 2010}},
 
         {type: "D", st: {mon: 3, d: 20}, inherits: "I Francophonie Day", fst: {era: 1, y: 1988}},
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"KI"},
+    ttls: {"*":"KI"},
     "//":"Kiribati",
     "TODO":  "Gospel Day and Natural Culture and Senior Citizens Day can change their dates depending on when Independence Day is; how requires research.  See https://nationaltoday.com/gospel-day/ and https://nationaltoday.com/national-culture-and-senior-citizens-day/ .",
     defLocale: "en",
@@ -25,7 +25,7 @@
         {type: "D", st: {mon: 7, d: 11, wkd: [1, 2, 3, 5]}, inherits: "N Culture and Senior Citizens Day"},
         {type: "D", st: {mon: 7, d: 12}, inherits: "N Day", urls: {"en":"https://nationaltoday.com/kiribati-national-day/"}, fst: {era: 1, y: 1979}, notes: {"en":"Independence Day"}},
         {type: "D", st: {mon: 7, d: 13, wkd: [2, 3, 4]}, inherits: "N Day (in lieu)", urls: {"en":"https://nationaltoday.com/kiribati-national-day/"}, fst: {era: 1, y: 1979}, notes: {"en":"Independence Day (in lieu)"}},
-        {type: "D", st: {mon: 7, d: 14, wkd: [3]}, titles: {"en":"National Culture and Senior Citizens Day (in lieu)"}, inherits: "N Culture and Senior Citizens Day"},
+        {type: "D", st: {mon: 7, d: 14, wkd: [3]}, ttls: {"en":"National Culture and Senior Citizens Day (in lieu)"}, inherits: "N Culture and Senior Citizens Day"},
         {type: "D", st: {mon: 7, d: 15, wkd: [4]}, inherits: "N Day (in lieu)", urls: {"en":"https://nationaltoday.com/kiribati-national-day/"}, fst: {era: 1, y: 1979}, notes: {"en":"Independence Day (in lieu)"}},
         {type: "D", st: {mon: 8, d: 5}, inherits: "Youth Day", urls: {"en":"https://nationaltoday.com/kiribati-youth-day/"}},
         {type: "D", st: {mon: 8, wkd: [6], d: 7, thruD: 8}, inherits: "Youth Day (in lieu)", urls: {"en":"https://nationaltoday.com/kiribati-youth-day/"}},
@@ -40,13 +40,13 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {titles: {"en":"Unimwane Day"}, type: "D", st: {mon: 7, d: 15}, urls: {"en":"https://nationaltoday.com/unimwane-day/"}, emoji: "👴"},
+        {ttls: {"en":"Unimwane Day"}, type: "D", st: {mon: 7, d: 15}, urls: {"en":"https://nationaltoday.com/unimwane-day/"}, emoji: "👴"},
     ],
     tpls: {
-        "Education Day": {type: "D", st: {mon: 10, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/education-day"}, titles: {"en":"Education Day"}},
-        "Education Day (in lieu)": {type: "D", st: {mon: 10, d: 5}, inherits: "Education Day", titles: {"en":"Education Day (in lieu)"}},
-        "N Culture and Senior Citizens Day": {type: "D", st: {mon: 7, d: 11}, urls: {"en":"https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, titles: {"en":"National Culture and Senior Citizens Day"}, emoji: "👴👵"},
-        "N Health Day (in lieu)": {type: "D", st: {mon: 4, d: 9, wkd: [6]}, inherits: "N Health Day", titles: {"en":"National Health Day (in lieu)"}},
-        "Police Natl Day": {type: "D", titles: {"en":"Police National Day"}, st: {mon: 6, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/police-national-day"}, inherits: "Police Day"},
+        "Education Day": {type: "D", st: {mon: 10, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/education-day"}, ttls: {"en":"Education Day"}},
+        "Education Day (in lieu)": {type: "D", st: {mon: 10, d: 5}, inherits: "Education Day", ttls: {"en":"Education Day (in lieu)"}},
+        "N Culture and Senior Citizens Day": {type: "D", st: {mon: 7, d: 11}, urls: {"en":"https://nationaltoday.com/national-culture-and-senior-citizens-day/"}, ttls: {"en":"National Culture and Senior Citizens Day"}, emoji: "👴👵"},
+        "N Health Day (in lieu)": {type: "D", st: {mon: 4, d: 9, wkd: [6]}, inherits: "N Health Day", ttls: {"en":"National Health Day (in lieu)"}},
+        "Police Natl Day": {type: "D", ttls: {"en":"Police National Day"}, st: {mon: 6, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/kiribati/police-national-day"}, inherits: "Police Day"},
     }
 }

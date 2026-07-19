@@ -1,0 +1,24 @@
+{
+    titles: {"*":"LY"},
+    "//":"Libya",
+    "TODO":"Muslim holidays?",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
+    fst: {era: 1, y: 1951},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Libya"},
+    evts: [
+        {type: "nD", st: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inherits: "Yennayer"},
+        {inherits: "Revolution Day", type: "D", st: {mon: 2, d: 17}, fst: {era: 1, y: 2012}, notes: {"en":"February 17th Revolution", "ar":"ثورة 17 فبراير"}, urls: {"en":"https://nationaltoday.com/february-17th-revolution/"}},
+        {titles: {"en":"Commemoration of the Victory over Kadhafi", "ar":"ليبيا ذكرى الانتصار على القذافي"}, type: "D", st: {mon: 3, d: 19},},
+
+        {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "nD", st: {mon: 9, d: 10}, end: {mon: 9, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/libya/libya-public-holiday"}, inherits: "Public Holiday"},
+        {inherits: "Martyrs’ Day", type: "D", st: {mon: 9, d: 16}, fst: {era: 1, y: 2012}},
+        {inherits: "Independence Day", type: "D", st: {mon: 12, d: 24}, fst: {era: 1, y: 1951}, urls: {"en":"https://nationaltoday.com/libya-independence-day/"}},
+        {inherits: "Liberation Day", type: "D", st: {mon: 10, d: 23}, fst: {era: 1, y: 2012}, urls: {"en":"https://nationaltoday.com/libya-liberation-day/"}},
+
+        {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
+        {inherits: "Children’s Day", type: "D", st: {mon: 3, d: 21}},
+    ]
+}

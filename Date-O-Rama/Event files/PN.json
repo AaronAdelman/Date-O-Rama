@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PN"},
+    ttls: {"*":"PN"},
     "//":"Pitcairn",
     defLocale: "en",
     cal: "gre",

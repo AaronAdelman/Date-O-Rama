@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SR"},
+    ttls: {"*":"SR"},
     "//":"Suriname",
     defLocale: "en",
     cal: "chi",

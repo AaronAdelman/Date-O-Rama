@@ -1,12 +1,12 @@
 {
-    titles: {"ar":"ثيوصوفية","az":"Teosofiya","be":"Тэасофія","bg":"Теософия","bn":"দিব্যজ্ঞান","ca":"Teosofia","cs":"Teosofie","cy":"Theosoffi","da":"Teosofi","de":"Theosophie","el":"Θεοσοφία","en":"Theosophy","eo":"Teozofio","es":"Teosofía","et":"Teosoofia","eu":"Teosofia","fa":"حکمت الاهی","fi":"Teosofia","fr":"Théosophie","gl":"Teosofía","gsw":"Theosophie","hi":"थियोसोफी","hr":"Teozofija","hu":"Teozófia","hy":"Թեոսոֆիա","ia":"Theosophia","id":"Teosofi","io":"Teozofio","is":"Guðspeki","it":"Teosofia","ja":"神智学","ka":"თეოსოფია","kk":"Теософия","ko":"신지학","ky":"Теософия","la":"Theosophia","lt":"Teosofija","lv":"Teozofija","mg":"Teôzôfia","mk":"Теозофија","mn":"Теософи","nb":"Teosofi","nl":"Theosofie","pl":"Teozofia","pt":"Teosofia","ro":"Teosofie","ru":"Теософия","sh":"Teozofija","si":"පරමවිඥානාර්ථවාදය","sk":"Teozofia","sl":"Teozofija","sr":"Теозофија","stq":"Theosophie","sv":"Teosofi","ta":"பிரம்மஞானம்","tg":"Ҳикмати илоҳӣ","th":"เทวญาณ","tr":"Teozofi","uk":"Теософія","ur":"تھیوصوفی","uz":"Teosofiya","vi":"Thông thiên học","zh":"神智学","he":"תאוסופיה"},
+    ttls: {"ar":"ثيوصوفية","az":"Teosofiya","be":"Тэасофія","bg":"Теософия","bn":"দিব্যজ্ঞান","ca":"Teosofia","cs":"Teosofie","cy":"Theosoffi","da":"Teosofi","de":"Theosophie","el":"Θεοσοφία","en":"Theosophy","eo":"Teozofio","es":"Teosofía","et":"Teosoofia","eu":"Teosofia","fa":"حکمت الاهی","fi":"Teosofia","fr":"Théosophie","gl":"Teosofía","gsw":"Theosophie","hi":"थियोसोफी","hr":"Teozofija","hu":"Teozófia","hy":"Թեոսոֆիա","ia":"Theosophia","id":"Teosofi","io":"Teozofio","is":"Guðspeki","it":"Teosofia","ja":"神智学","ka":"თეოსოფია","kk":"Теософия","ko":"신지학","ky":"Теософия","la":"Theosophia","lt":"Teosofija","lv":"Teozofija","mg":"Teôzôfia","mk":"Теозофија","mn":"Теософи","nb":"Teosofi","nl":"Theosofie","pl":"Teozofia","pt":"Teosofia","ro":"Teosofie","ru":"Теософия","sh":"Teozofija","si":"පරමවිඥානාර්ථවාදය","sk":"Teozofia","sl":"Teozofija","sr":"Теозофија","stq":"Theosophie","sv":"Teosofi","ta":"பிரம்மஞானம்","tg":"Ҳикмати илоҳӣ","th":"เทวญาณ","tr":"Teozofi","uk":"Теософія","ur":"تھیوصوفی","uz":"Teosofiya","vi":"Thông thiên học","zh":"神智学","he":"תאוסופיה"},
     defLocale: "en",
     cal: "gre",
     color: {red: 0.75, green: 0.5, blue: 0.5},
     fst: {era: 1, y: 1875},
     evts: [
-        {type: "D", st: {mon: 2, d: 17}, titles: {"en":"Adyar Day"}, notes: {"en":"Olcott Day"}},
-        {type: "D", st: {mon: 5, d: 8}, titles: {"en":"White Lotus Day","nl":"Witte Lotusdag"}, urls: {"en":"https://www.daysoftheyear.com/days/white-lotus-day/"}, emoji: "🪷"},
-        {type: "D", st: {mon: 11, d: 17}, titles: {"en":"Founders Day"}},
+        {type: "D", st: {mon: 2, d: 17}, ttls: {"en":"Adyar Day"}, notes: {"en":"Olcott Day"}},
+        {type: "D", st: {mon: 5, d: 8}, ttls: {"en":"White Lotus Day","nl":"Witte Lotusdag"}, urls: {"en":"https://www.daysoftheyear.com/days/white-lotus-day/"}, emoji: "🪷"},
+        {type: "D", st: {mon: 11, d: 17}, ttls: {"en":"Founders Day"}},
     ]
 }

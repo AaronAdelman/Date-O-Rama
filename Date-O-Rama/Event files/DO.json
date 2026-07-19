@@ -1,5 +1,5 @@
 {
-    titles: {"*":"DO"},
+    ttls: {"*":"DO"},
     "//":"Dominican Republic",
     defLocale: "en",
     cal: "gre",
@@ -10,8 +10,8 @@
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/dominican-republic/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", st: {mon: 1, d: 21}, titles: {"en":"Feast of Our Lady of Altagracia", "es":"Nuestra Señora de la Altagracia"}, notes: {"en":"Day of the Lady of Altagracia\nOur Lady of High Grace"}, urls: {"en":"https://nationaltoday.com/our-lady-of-altagracia/"}, fst: {era: 1, y: 1924}},
-        {type: "D", st: {mon: 1, d: 26}, titles: {"en":"Duarte Day"}, urls: {"en":"https://nationaltoday.com/duarte-day/"}, fst: {era: 1, y: 1813}, inherits: "*BDay*", notes: {"en":"Juan Pablo Duarte Day"}},
+        {type: "D", st: {mon: 1, d: 21}, ttls: {"en":"Feast of Our Lady of Altagracia", "es":"Nuestra Señora de la Altagracia"}, notes: {"en":"Day of the Lady of Altagracia\nOur Lady of High Grace"}, urls: {"en":"https://nationaltoday.com/our-lady-of-altagracia/"}, fst: {era: 1, y: 1924}},
+        {type: "D", st: {mon: 1, d: 26}, ttls: {"en":"Duarte Day"}, urls: {"en":"https://nationaltoday.com/duarte-day/"}, fst: {era: 1, y: 1813}, inherits: "*BDay*", notes: {"en":"Juan Pablo Duarte Day"}},
         {type: "D", st: {mon: 2, d: 27}, inherits: "Independence Day", fst: {era: 1, y: 1844}, urls: {"en":"https://www.daysoftheyear.com/days/dominican-republic-independence-day/"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
@@ -27,7 +27,7 @@
 
         {type: "D", st: {mon: 2, d: 25}, inherits: "Armed Forces Day"},
         {type: "D", st: {mon: 2, d: 14}, inherits: "Friendship Day"},
-        {type: "D", st: {mon: 11, d: 22}, titles: {"en":"National Larimar Day"}, urls: {"en":"https://nationaltoday.com/national-larimar-day/"}, fst: {era: 1, y: 2018}},
+        {type: "D", st: {mon: 11, d: 22}, ttls: {"en":"National Larimar Day"}, urls: {"en":"https://nationaltoday.com/national-larimar-day/"}, fst: {era: 1, y: 2018}},
         {type: "D", st: {mon: 1, d: 5, wkd: [2]}, inherits: "Epiphany (in lieu)"},
         {type: "D", st: {mon: 1, d: 7, thruD: 11, wkd: [2]}, inherits: "Epiphany (in lieu)"},
     ]

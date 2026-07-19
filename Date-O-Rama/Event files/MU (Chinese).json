@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MU"},
+    ttls: {"*":"MU"},
     "//":"Mauritius",
     defLocale: "en",
     cal: "chi",

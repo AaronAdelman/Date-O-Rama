@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GP"},
+    ttls: {"*":"GP"},
     "//":"Guadeloupe",
     defLocale: "en",
     cal: "gre",

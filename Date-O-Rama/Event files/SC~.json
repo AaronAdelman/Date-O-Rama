@@ -1,0 +1,30 @@
+{
+    titles: {"*":"SC"},
+    "//":"Seychelles",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.00, green: 0.18, blue: 0.42},
+    fst: {era: 1, y: 1976},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Seychelles"},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 1, d: 2}, inherits: "Day after New Year’s Day", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
+        {type: "D", st: {mon: 1, d: 3, wkd: [6]}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
+        {type: "D", st: {mon: 1, d: 3}, inherits: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/international-new-years-day"}},
+        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", st: {misc: "E", offsetD: -1}, inherits: "Holy Saturday"},
+        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "D", st: {misc: "E", offsetD: 60}, inherits: "Corpus Christi"},
+        {type: "D", st: {mon: 6, d: 18}, inherits: "Constitution Day", urls: {"en":"https://nationaltoday.com/seychelles-constitution-day/"}, fst: {era: 1, y: 1993}, notes: {"en":"Constitutional Day"}},
+        {type: "D", st: {mon: 6, d: 29}, inherits: "Independence Day", urls: {"en":"https://nationaltoday.com/seychelles-independence-day/"}, fst: {era: 1, y: 1976}},
+        {type: "D", st: {mon: 6, d: 30, wkd: [2, 3]}, inherits: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/seychelles-independence-day/"}, fst: {era: 1, y: 1976}},
+        {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
+        {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
+        {type: "D", st: {mon: 12, d: 8}, inherits: "Immaculate Conception", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/immaculate-conception-day"}},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+        
+        {type: "D", st: {mon: 2, d: 1}, inherits: "Abolition of Slavery Day", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, fst: {era: 1, y: 2026}},
+        {type: "D", st: {mon: 2, d: 2, wkd: [2]}, titles: {"en":"Abolition of Slavery Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, fst: {era: 1, y: 2026}},
+   ]
+}

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GR"},
+    ttls: {"*":"GR"},
     "//":"Greece",
     defLocale: "en",
     cal: "gre",
@@ -16,16 +16,16 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
 
-        {type: "D", st: {mon: 1, d: 30}, titles: {"en":"The Three Holy Hierarchs", "el":"Τριών Ιεραρχών"}},
-        {type: "D", st: {mon: 11, d: 17}, titles: {"en":"Polytechnio", "el":"Πολυτεχνείο"}},
+        {type: "D", st: {mon: 1, d: 30}, ttls: {"en":"The Three Holy Hierarchs", "el":"Τριών Ιεραρχών"}},
+        {type: "D", st: {mon: 11, d: 17}, ttls: {"en":"Polytechnio", "el":"Πολυτεχνείο"}},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 3, d: 10}, inherits: "Engineer’s Day"},
         {type: "D", st: {mon: 11, d: 20}, inherits: "Children’s Day", fst: {era: 1, y: 1946}},
         {inherits: "Revolution Day", type: "D", st: {mon: 3, d: 25}, fst: {era: 1, y: 1821}},
-        {titles: {"en":"August Moon Festival", "he":"פסטיבל הירח באוגוסט"}, type: "D", st: {misc: "full1", mon: 8}, fst: {era: 1, y: 1996}, urls: {"en":"https://nationaltoday.com/august-moon-festival/"}},
+        {ttls: {"en":"August Moon Festival", "he":"פסטיבל הירח באוגוסט"}, type: "D", st: {misc: "full1", mon: 8}, fst: {era: 1, y: 1996}, urls: {"en":"https://nationaltoday.com/august-moon-festival/"}},
         {type: "D", st: {mon: 5, d: 21}, inherits: "Firewalking Festival"},
-        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2004}, titles: {"en":"National Holocaust Memorial Day", "el":"Εθνική Ημέρα Μνήμης Ολοκαυτώματος"}},
+        {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2004}, ttls: {"en":"National Holocaust Memorial Day", "el":"Εθνική Ημέρα Μνήμης Ολοκαυτώματος"}},
     ]
 }

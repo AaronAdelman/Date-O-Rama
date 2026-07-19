@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PG"},
+    ttls: {"*":"PG"},
     "//":"Papua New Guinea",
     defLocale: "en",
     cal: "gre",
@@ -24,7 +24,7 @@
         {type: "D", st: {era: 1, y: 2024, mon: 6, d: 10}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "D", st: {era: 1, y: 2025, mon: 6, d: 13}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/king-charles-birthday"}, inherits: "King Charles’ Birthday"},
         {type: "D", st: {mon: 7, d: 23}, inherits: "N Remembrance Day", urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-national-remembrance-day"}, fst: {era: 1, y: 2011}},
-        {type: "D", st: {mon: 8, d: 26}, titles: {"en":"National Repentance Day"}, urls: {"en":"https://nationaltoday.com/national-day-of-repentance/"}, fst: {era: 1, y: 2011}, notes: {"en":"National Day of Repentance"}},
+        {type: "D", st: {mon: 8, d: 26}, ttls: {"en":"National Repentance Day"}, urls: {"en":"https://nationaltoday.com/national-day-of-repentance/"}, fst: {era: 1, y: 2011}, notes: {"en":"National Day of Repentance"}},
         {type: "D", st: {mon: 9, d: 16}, inherits: "Independence Day", fst: {era: 1, y: 1975}, urls: {"en":"https://nationaltoday.com/papua-new-guinea-independence-day/"}},
         {type: "D", st: {mon: 9, d: 15, wkd: [2, 6]}, inherits: "Independence Day Holiday", fst: {era: 1, y: 1975}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-independence-day"}},
         {type: "D", st: {mon: 9, d: 17, wkd: [4]}, inherits: "Independence Day Holiday", fst: {era: 1, y: 1975}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/papua-new-guinea-independence-day"}},
@@ -36,6 +36,6 @@
         {type: "D", st: {mon: 9, d: 29}, inherits: "N Police Remembrance Day", fst: {era: 1, y: 1989}},
     ],
     tpls: {
-        "N Remembrance Day (in lieu)": {type: "D", st: {mon: 2, d: 24, wkd: [6]}, titles: {"en":"National Remembrance Day (in lieu)"}},
+        "N Remembrance Day (in lieu)": {type: "D", st: {mon: 2, d: 24, wkd: [6]}, ttls: {"en":"National Remembrance Day (in lieu)"}},
     }
 }

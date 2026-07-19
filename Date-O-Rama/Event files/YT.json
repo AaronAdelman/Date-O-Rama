@@ -1,5 +1,5 @@
 {
-    titles: {"*":"YT"},
+    ttls: {"*":"YT"},
     "//":"Mayotte",
     defLocale: "en",
     cal: "gre",

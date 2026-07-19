@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SL"},
+    ttls: {"*":"SL"},
     "//":"Sierra Leone",
     defLocale: "en",
     cal: "gre",

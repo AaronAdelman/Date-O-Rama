@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SR"},
+    ttls: {"*":"SR"},
     "//":"Suriname",
     "TODO":"Muslim and Hindu observances",
     defLocale: "en",
@@ -13,9 +13,9 @@
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Worker’s Day", urls: {"en":"https://www.officeholidays.com/holidays/suriname/labour-day"}},
-        {type: "D", st: {mon: 7, d: 1}, titles: {"ar":"كيتي كوتي","de":"Ketikoti","en":"Ketikoti","es":"Ketikoti","eu":"Ketikoti","fr":"Ketikoti","fy":"Ketikoti","hy":"Կետի Կոտի","li":"Keti Koti","mk":"Кетикоти","nl":"Ketikoti","pap":"Ketikoti","pl":"Ketikoti","pt":"Ketikoti","ru":"Кетикоти","zh":"荷兰废除奴隶制日"}, notes: {"en":"Keti Koti"}, urls: {"en":"https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day", fst: {era: 1, y: 1863}},
-        {type: "D", st: {mon: 8, d: 9}, titles: {"en":"Indigenous People’s Day", "he":"יום העמים הילידים"}, urls: {"en":"https://nationaltoday.com/suriname-indigenous-peoples-day/"}},
-        {type: "D", st: {mon: 10, d: 10}, titles: {"en":"Maroons Day"}, urls: {"en":"https://nationaltoday.com/maroons-day/"}, fst: {era: 1, y: 2011}},
+        {type: "D", st: {mon: 7, d: 1}, ttls: {"ar":"كيتي كوتي","de":"Ketikoti","en":"Ketikoti","es":"Ketikoti","eu":"Ketikoti","fr":"Ketikoti","fy":"Ketikoti","hy":"Կետի Կոտի","li":"Keti Koti","mk":"Кетикоти","nl":"Ketikoti","pap":"Ketikoti","pl":"Ketikoti","pt":"Ketikoti","ru":"Кетикоти","zh":"荷兰废除奴隶制日"}, notes: {"en":"Keti Koti"}, urls: {"en":"https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day", fst: {era: 1, y: 1863}},
+        {type: "D", st: {mon: 8, d: 9}, ttls: {"en":"Indigenous People’s Day", "he":"יום העמים הילידים"}, urls: {"en":"https://nationaltoday.com/suriname-indigenous-peoples-day/"}},
+        {type: "D", st: {mon: 10, d: 10}, ttls: {"en":"Maroons Day"}, urls: {"en":"https://nationaltoday.com/maroons-day/"}, fst: {era: 1, y: 2011}},
         {inherits: "Independence Day", type: "D", st: {mon: 11, d: 25}, fst: {era: 1, y: 1975}, urls: {"en":"https://nationaltoday.com/suriname-independence-day/"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Day after Xmas", urls: {"en":"https://www.officeholidays.com/holidays/suriname/christmas-holiday"}},
@@ -26,6 +26,6 @@
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "Children’s Day", type: "D", st: {mon: 12, d: 5}},
-        {type: "D", st: {mon: 2, d: 25}, urls: {"en":"https://nationaltoday.com/day-of-liberation-and-innovation/"}, titles: {"en":"Day of Liberation and Innovation"}, fst: {era: 1, y: 2018}},
+        {type: "D", st: {mon: 2, d: 25}, urls: {"en":"https://nationaltoday.com/day-of-liberation-and-innovation/"}, ttls: {"en":"Day of Liberation and Innovation"}, fst: {era: 1, y: 2018}},
    ]
 }

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BN"},
+    ttls: {"*":"BN"},
     "//":"Brunei",
     defLocale: "en",
     cal: "chi",

@@ -1,0 +1,18 @@
+{
+    titles: {"*":"RS"},
+    "//":"Serbia",
+    defLocale: "en",
+    cal: "jul",
+    color: {red: 0.89, green: 0.00, blue: 0.27},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
+    fst: {era: 1, y: 1804},
+   evts: [
+        {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
+        {type: "D", st: {mon: 1, d: 1}, inherits: "O New Year’s Day"},
+        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
+        {type: "D", st: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},
+        {type: "D", st: {misc: "E"}, inherits: "Easter"},
+        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+    ]
+}
+

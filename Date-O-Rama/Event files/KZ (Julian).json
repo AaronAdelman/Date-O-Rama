@@ -1,5 +1,5 @@
 {
-    titles: {"*":"KZ"},
+    ttls: {"*":"KZ"},
     "//":"Kazakhstan",
     defLocale: "en",
     cal: "jul",

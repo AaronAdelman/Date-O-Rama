@@ -1,5 +1,5 @@
 {
-    titles: {"en":"Adrienne Sioux Koopersmith"},
+    ttls: {"en":"Adrienne Sioux Koopersmith"},
     defLocale: "en",
     cal: "gre*",
     color: {name: "magenta"},
@@ -8,18 +8,18 @@
     evts: [
         {type: "D", st: {mon: 1, d: 6}, inherits: "N Smith Day", fst: {era: 1, y: 1994}},
         
-        {type: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", titles: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}, nonoverlappingSubEvents: [
+        {type: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inherits: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}, nonoverlappingSubEvents: [
             {type: "D", st: {mon: 1, d: 11}, inherits: "Thank You Day", notes: {"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}},
         ]},
         
-        {type: "D", st: {mon: 2, d: 12}, titles: {"en":"National Lost Penny Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst: {era: 1, y: 1995}, emoji: "🪙", notes: {"en":"Created by Adrienne Sioux Koopersmith"}},
+        {type: "D", st: {mon: 2, d: 12}, ttls: {"en":"National Lost Penny Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst: {era: 1, y: 1995}, emoji: "🪙", notes: {"en":"Created by Adrienne Sioux Koopersmith"}},
         
-        {type: "D", st: {mon: 2, d: 27}, titles: {"en":"No Brainer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/no-brainer-day/"}, fst: {era: 1, y: 1996}},
-        {type: "D", st: {mon: 3, d: 4}, titles: {"en":"National Hug a G.I. Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst: {era: 1, y: 1996}, emoji: "🫂"},
+        {type: "D", st: {mon: 2, d: 27}, ttls: {"en":"No Brainer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/no-brainer-day/"}, fst: {era: 1, y: 1996}},
+        {type: "D", st: {mon: 3, d: 4}, ttls: {"en":"National Hug a G.I. Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst: {era: 1, y: 1996}, emoji: "🫂"},
         {type: "D", st: {mon: 6, d: 18}, inherits: "N Splurge Day", fst: {era: 1, y: 1994}},
-        {type: "D", st: {mon: 2, d: 6}, titles: {"en":"Pay a Compliment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, fst: {era: 1, y: 1995}},
-        {type: "D", st: {mon: 7, d: 14}, titles: {"en":"National Pandemonium Day"}},
-        {type: "M", st: {mon: 8}, titles: {"en":"Ant Appreciation Month"}},
+        {type: "D", st: {mon: 2, d: 6}, ttls: {"en":"Pay a Compliment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, fst: {era: 1, y: 1995}},
+        {type: "D", st: {mon: 7, d: 14}, ttls: {"en":"National Pandemonium Day"}},
+        {type: "M", st: {mon: 8}, ttls: {"en":"Ant Appreciation Month"}},
         
         {type: "D", st: {wkd: [6], d: 13}, nonoverlappingSubEvents: [
             {type: "D", st: {mon: 1}, inherits: "Skeptics Day International", fst: {era: 1, y: 1996}},
@@ -35,6 +35,6 @@
         {type: "D", st: {mon: 11, d: 2, thruD: 8, wkd: [3]}, inherits: "Skeptics Day International", fst: {era: 1, y: 1997}},
     ],
     tpls: {
-        "Skeptics Day International": {type: "D", st: {wkd: [6], d: 13, mon: 1, yLens: [365]}, titles: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי", "en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, emoji: "🫤"},
+        "Skeptics Day International": {type: "D", st: {wkd: [6], d: 13, mon: 1, yLens: [365]}, ttls: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי", "en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, emoji: "🫤"},
     }
 }

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SJ"},
+    ttls: {"*":"SJ"},
     "//":"Svalbard and Jan Mayen",
     defLocale: "en",
     cal: "gre",

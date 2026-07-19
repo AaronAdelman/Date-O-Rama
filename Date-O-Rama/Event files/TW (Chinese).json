@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TW"},
+    ttls: {"*":"TW"},
     "//":"Taiwan",
     defLocale: "en",
     cal: "chi",
@@ -17,16 +17,16 @@
         {type: "D", st: {mon: 8, d: 15}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/mid-autumn-festival"}, inherits: "Mid-Autumn Festival"},
         {type: "D", st: {mon: 9, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"}, inherits: "Chung Yeung Festival"},
         
-        {type: "D", st: {mon: 1, d: 15}, urls: {"en":"https://nationaltoday.com/tourism-day/"}, titles: {"en":"Tourism Day", "zh":"觀光節"}},
-        {type: "D", st: {mon: 2, d: 2}, urls: {"en":"https://nationaltoday.com/earth-gods-birthday/"}, titles: {"en":"Earth God’s Birthday", "zh":"土地公誕辰"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 2, d: 19}, titles: {"en":"Kuan Yin’s Birthday", "zh":"觀音誕辰"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 3, d: 15}, urls: {"en":"https://nationaltoday.com/god-of-medicines-birthday/"}, titles: {"en":"God of Medicine’s Birthday", "zh":"保生大帝誕辰"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 3, d: 23}, titles: {"en":"Matsu’s Birthday", "zh":"媽祖誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 1, d: 15}, urls: {"en":"https://nationaltoday.com/tourism-day/"}, ttls: {"en":"Tourism Day", "zh":"觀光節"}},
+        {type: "D", st: {mon: 2, d: 2}, urls: {"en":"https://nationaltoday.com/earth-gods-birthday/"}, ttls: {"en":"Earth God’s Birthday", "zh":"土地公誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 2, d: 19}, ttls: {"en":"Kuan Yin’s Birthday", "zh":"觀音誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 3, d: 15}, urls: {"en":"https://nationaltoday.com/god-of-medicines-birthday/"}, ttls: {"en":"God of Medicine’s Birthday", "zh":"保生大帝誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 3, d: 23}, ttls: {"en":"Matsu’s Birthday", "zh":"媽祖誕辰"}, inherits: "*BDay*"},
         {type: "D", st: {mon: 4, d: 8}, inherits: "Buddha’s Birthday"},
-        {type: "D", st: {mon: 5, d: 13}, titles: {"en":"Kuan Kung’s Birthday", "zh":"關公誕辰"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 5, d: 13}, titles: {"en":"Cheng Huang’s Birthday", "zh":"城隍爺誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 5, d: 13}, ttls: {"en":"Kuan Kung’s Birthday", "zh":"關公誕辰"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 5, d: 13}, ttls: {"en":"Cheng Huang’s Birthday", "zh":"城隍爺誕辰"}, inherits: "*BDay*"},
         {type: "D", st: {mon: 7, d: 7}, inherits: "Qixi Festival"},
         {type: "D", st: {mon: 7, d: 15}, inherits: "Ghost Festival"},
-        {type: "D", st: {mon: 10, d: 15}, titles: {"en":"Pas-ta’ai","id":"Pas-ta’ai","ig":"Pas-ta’ai","nan":"Pas-taai","zh":"巴斯達隘"}, notes: {"en":"Saisiat Festival", "zh":"賽夏節"}, urls: {"en":"https://en.wikipedia.org/wiki/Pas-ta%27ai"}},
+        {type: "D", st: {mon: 10, d: 15}, ttls: {"en":"Pas-ta’ai","id":"Pas-ta’ai","ig":"Pas-ta’ai","nan":"Pas-taai","zh":"巴斯達隘"}, notes: {"en":"Saisiat Festival", "zh":"賽夏節"}, urls: {"en":"https://en.wikipedia.org/wiki/Pas-ta%27ai"}},
    ]
 }

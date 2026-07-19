@@ -1,5 +1,5 @@
 {
-    titles: {"*":"IO"},
+    ttls: {"*":"IO"},
     "//":"British Indian Ocean Territory",
     defLocale: "en",
     cal: "gre",

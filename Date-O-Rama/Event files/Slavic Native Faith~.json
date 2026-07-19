@@ -1,0 +1,23 @@
+{
+    titles: {"be":"Раднавер’е","bg":"Родноверие","ca":"Rodisme","cs":"Rodnověří","de":"Rodismus","en":"Slavic Native Faith","es":"Neopaganismo eslavo","et":"Slaavi uuspaganlus","fi":"Rodismi","fr":"Rodnovérie","gl":"Rodismo","hr":"Rodnovjerje","hy":"Սլավոնական նոր հեթանոսություն","it":"Fede nativa slava","ja":"ロドノヴェリエ","ko":"로드노베리에","lt":"Gimtatikyba","mk":"Родноверие","ms":"Rodnoverye","nb":"Rodisme","pl":"Rodzimowierstwo słowiańskie","pt":"Neopaganismo eslavo","ro":"Rodnoverie","ru":"Славянское неоязычество","sh":"Rodoverje","sk":"Slovianstvo","sl":"Staroverstvo","sr":"Родноверје","sv":"Rodism","tr":"Slav neopaganizmi","uk":"Рідновірство","vep":"Slavine neopaganuz","zh":"斯拉夫本土教"},
+    defLocale: "en",
+    cal: "gre",
+    color: {name: "red"},
+    fst: {era: 1, y: 1995},
+    urls: {"en":"https://en.wikipedia.org/wiki/Slavic_Native_Faith%27s_calendars_and_holidays"},
+    evts: [
+        {type: "nD", st: {mon: 12, d: 24, durD: 2}, titles: {"be":"Першая Каляда","be-tarask":"Першая Каляда","cs":"Kračun","de":"Kolende","en":"Koliada","lt":"Koleda","mdf":"Калядань ши","nl":"Kolyada","pl":"Szczodre Gody","ru":"Коляда","sk":"Kračún","sv":"Koliada","tr":"Koleda","uk":"Коляда","vi":"Koliada"}},
+        {type: "D", st: {mon: 1, d: 2}, inherits: "Festival of Veles"},
+        {type: "D", st: {mon: 1, d: 6}, inherits: "Festival of Veles"},
+        {type: "D", st: {mon: 2, d: 17}, inherits: "Festival of Veles"},
+        {type: "D", st: {mon: 3, d: 24}, titles: {"en":"Komoeditsa", "ru":"Комоедица"}},
+        {type: "nD", st: {mon: 4, d: 30}, end: {mon: 5, d: 1}, titles: {"be":"Красная Горка","be-tarask":"Красная Горка","ca":"Kràsnaia Gorka","ce":"Красная Горка","ceb":"Krasnaya Gorka","de":"Krasnaja Gorka","en":"Krasnaya Gorka","es":"Krásnaya Gorka","et":"Krasnaja Gorka","hy":"Կրասնայա Գորկա","ja":"クラスナヤ・ゴールカ","kk":"Красная Горка","pl":"Krasnaja Gorka","ru":"Красная Горка","uk":"Красна Гірка"}},
+        {type: "nD", st: {mon: 6, d: 23, durD: 2}, inherits: "Kupala Night"},
+        {type: "D", st: {mon: 8, d: 2}, titles: {"en":"Day of Perun", "ru":"Перунов день"}},
+        {type: "D", st: {mon: 9, d: 21}, titles: {"en":"Tausen", "ru":"Таусень"}, notes: {"en":"Bogach\nVtorye Oseniny\nRuyen", "ru":"Богач\nВторые Осенины\nРуень"}},
+        {type: "D", st: {mon: 11, d: 10}, titles: {"en":"Day of Mokosh", "ru":"Мокоши день"}},
+    ],
+    tpls: {
+        "Festival of Veles": {type: "D", st: {mon: 1, d: 2}, titles: {"be":"Аўлас","bg":"Власовден","cs":"Památka svatého Blažeje","en":"Festival of Veles","pl":"Święto Welesa","ru":"Власьев день","sr":"Власовдан","uk":"День святого Власа"}, notes: {"en":"Veles’ Day"}},
+    }
+}

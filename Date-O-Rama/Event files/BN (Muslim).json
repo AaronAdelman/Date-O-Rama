@@ -1,11 +1,11 @@
 {
-    titles: {"*":"BN"},
+    ttls: {"*":"BN"},
     "//":"Brunei",
     defLocale: "en",
     cal: "hiq*",
     color: {red: 0.98, green: 0.88, blue: 0.13},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Brunei"},
     evts: [
-        {type: "D", st: {mon: 9, d: 17}, titles: {"en":"Nuzul Al-Quran", "ms":"Hari Nuzul Al-Quran"}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/nuzul-al-quran"}},
+        {type: "D", st: {mon: 9, d: 17}, ttls: {"en":"Nuzul Al-Quran", "ms":"Hari Nuzul Al-Quran"}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/nuzul-al-quran"}},
     ]
 }

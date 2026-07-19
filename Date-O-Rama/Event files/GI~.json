@@ -1,0 +1,27 @@
+{
+    titles: {"*":"GI"},
+    "//":"Gibraltar",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.85, green: 0.00, blue: 0.05},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Gibraltar"},
+    fst: {era: 1, y: 1713},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {type: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/commonwealth-day"}, titles: {"en":"Winter Midterm Bank Holiday"}, fst: {era: 1, y: 2022}, inherits: "Bank Holiday"},
+        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
+        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
+        {type: "D", st: {mon: 4, d: 28, wkd: [2, 3, 4, 5, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inherits: "Workers’ Memorial Day", fst: {era: 1, y: 2012}},
+        {type: "D", st: {mon: 4, d: 29, thruD: 30, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inherits: "Workers’ Memorial Day", fst: {era: 1, y: 2012}},
+        {type: "D", st: {mon: 5, d: 1}, inherits: "May Day", urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
+        {type: "D", st: {mon: 5, d: 2, thruD: 3, wkd: [2]}, titles: {"en":"May Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
+        {type: "D", st: {mon: 5, d: 8, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/king-charles-iiis-coronation"}, titles: {"en":"Special King’s Coronation Bank Holiday"}, inherits: "Bank Holiday"},
+        {type: "D", st: {mon: 5, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/spring-bank-holiday"}, inherits: "Spring Bank Holiday"},
+        {type: "D", st: {mon: 6, wkd: [2], nth: 3}, inherits: "King Charles’ Birthday", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/king-charles-birthday"}},
+        {type: "D", st: {mon: 8, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/august-bank-holiday"}, titles: {"en":"Late Summer Bank Holiday"}, inherits: "Bank Holiday"},
+        {inherits: "N Day", type: "D", st: {mon: 9, d: 10}, urls: {"en":"https://nationaltoday.com/gibraltar-independence-day/"}, fst: {era: 1, y: 1992}},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+        {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    titles: {"en":"Western zodiac", "he":"גלגל המזלות המערבי"},
+    ttls: {"en":"Western zodiac", "he":"גלגל המזלות המערבי"},
     defLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.5},

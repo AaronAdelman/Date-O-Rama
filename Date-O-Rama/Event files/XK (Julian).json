@@ -1,5 +1,5 @@
 {
-    titles: {"*":"XK"},
+    ttls: {"*":"XK"},
     "//":"Kosovo",
     defLocale: "en",
     cal: "jul",

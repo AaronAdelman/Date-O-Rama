@@ -1,5 +1,5 @@
 {
-    titles: {"*":"ME"},
+    ttls: {"*":"ME"},
     "//":"Montenegro",
     "TODO":"Muslim and Jewish holidays?",
     defLocale: "en",
@@ -19,7 +19,7 @@
         {type: "D", st: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, inherits: "Statehood Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"}, notes: {"en":"Sovereignty Day Holiday"}},
         {type: "D", st: {mon: 7, d: 15, wkd: [2, 3]}, inherits: "Statehood Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"}, notes: {"en":"Sovereignty Day Holiday"}},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "nD", st: {mon: 11, d: 13}, end: {mon: 11, d: 14}, titles: {"en":"Njegos’s Day", "cnr":"Njegošev dan"}},
+        {type: "nD", st: {mon: 11, d: 13}, end: {mon: 11, d: 14}, ttls: {"en":"Njegos’s Day", "cnr":"Njegošev dan"}},
 
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}, inherits: "Xmas"},
@@ -34,6 +34,6 @@
         {type: "D", st: {mon: 3, d: 8}, inherits: "IWD"},
     ],
     tpls: {
-        "Statehood Day Holiday": {type: "D", st: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, titles: {"en":"Statehood Day Holiday"}},
+        "Statehood Day Holiday": {type: "D", st: {mon: 7, d: 14, wkd: [4, 5, 6, 2]}, ttls: {"en":"Statehood Day Holiday"}},
     }
 }

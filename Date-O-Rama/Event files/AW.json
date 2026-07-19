@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AW"},
+    ttls: {"*":"AW"},
     "//":"Aruba",
     defLocale: "en",
     cal: "gre",
@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1986},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", st: {mon: 1, d: 25}, titles: {"en":"Betico Croes Day"}, urls: {"en":"https://www.officeholidays.com/holidays/aruba/betico-croes-day"}, inherits: "*BDay*", fst: {era: 1, y: 1938}},
+        {type: "D", st: {mon: 1, d: 25}, ttls: {"en":"Betico Croes Day"}, urls: {"en":"https://www.officeholidays.com/holidays/aruba/betico-croes-day"}, inherits: "*BDay*", fst: {era: 1, y: 1938}},
         {type: "D", st: {misc: "E", offsetD: -48}, inherits: "Carnival Monday", urls: {"en":"https://www.officeholidays.com/holidays/aruba/carnival-monday"}},
         {type: "D", st: {mon: 3, d: 18}, inherits: "N Anthem & Flag Day", urls: {"en":"https://nationaltoday.com/national-anthem-and-flag-day-in-aruba/"}, fst: {era: 1, y: 1976}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},

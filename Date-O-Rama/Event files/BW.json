@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BW"},
+    ttls: {"*":"BW"},
     "//":"Botswana",
     defLocale: "en",
     cal: "gre",
@@ -15,11 +15,11 @@
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
-        {type: "D", st: {mon: 7, d: 1}, titles: {"en":"Sir Seretse Khama Day"}, urls: {"en":"https://www.officeholidays.com/holidays/botswana/sir-seretse-khama-day"}},
+        {type: "D", st: {mon: 7, d: 1}, ttls: {"en":"Sir Seretse Khama Day"}, urls: {"en":"https://www.officeholidays.com/holidays/botswana/sir-seretse-khama-day"}},
         {type: "D", st: {mon: 7, wkd: [2], nth: 3}, inherits: "President’s Day", urls: {"en":"https://nationaltoday.com/presidents-day-in-botswana/"}, fst: {era: 1, y: 2006}},
-        {type: "D", st: {mon: 7, d: 16, thruD: 22, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-presidents-day"}, titles: {"en":"President’s Day Holiday"}, inherits: "President’s Day"},
-        {type: "nD", st: {mon: 9, d: 30}, end: {mon: 10, d: 1}, inherits: "Independence Day", fst: {era: 1, y: 1966}, urls: {"en":"https://nationaltoday.com/botswana-day/"}, titles: {"en":"Botswana Day", "he":"יום בוצוואנה"}},
-        {type: "D", st: {mon: 10, d: 2, wkd: [2]}, titles: {"en":"Botswana Day (in lieu)"}},
+        {type: "D", st: {mon: 7, d: 16, thruD: 22, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-presidents-day"}, ttls: {"en":"President’s Day Holiday"}, inherits: "President’s Day"},
+        {type: "nD", st: {mon: 9, d: 30}, end: {mon: 10, d: 1}, inherits: "Independence Day", fst: {era: 1, y: 1966}, urls: {"en":"https://nationaltoday.com/botswana-day/"}, ttls: {"en":"Botswana Day", "he":"יום בוצוואנה"}},
+        {type: "D", st: {mon: 10, d: 2, wkd: [2]}, ttls: {"en":"Botswana Day (in lieu)"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
         

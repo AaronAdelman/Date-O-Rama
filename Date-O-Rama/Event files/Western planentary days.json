@@ -1,17 +1,17 @@
 {
-    titles: {"en":"Western planetary days", "he":"ימי כוכבי־לכת מערביות"},
+    ttls: {"en":"Western planetary days", "he":"ימי כוכבי־לכת מערביות"},
     defLocale: "en",
     cal: "gre*",
     color: {red: 0.5, green: 0.5, blue: 0.5},
     evts: [
         {type: "nD", st: {}, nonoverlappingSubEvents: [
-            {titles: {"en":"Day of the Sun", "he":"יום השמש"}, type: "D", st: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of the Moon", "he":"יום הירח"}, type: "D", st: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of Mars", "he":"יום מאדין"}, type: "D", st: {wkd: [3]}, inherits: "*zma*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of Mercury", "he":"יום כוכב"}, type: "D", st: {wkd: [4]}, inherits: "*zme*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of Jupiter", "he":"יום צדק"}, type: "D", st: {wkd: [5]}, inherits: "*zju*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of Venus", "he":"יום נוגה"}, type: "D", st: {wkd: [6]}, inherits: "*zve*", inherits: "*Astrology*"},
-            {titles: {"en":"Day of Saturn", "he":"יום שבתי"}, type: "D", st: {wkd: [7]}, inherits: "*zsa*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of the Sun", "he":"יום השמש"}, type: "D", st: {wkd: [1]}, inherits: "*zsu*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of the Moon", "he":"יום הירח"}, type: "D", st: {wkd: [2]}, inherits: "*zmo*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of Mars", "he":"יום מאדין"}, type: "D", st: {wkd: [3]}, inherits: "*zma*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of Mercury", "he":"יום כוכב"}, type: "D", st: {wkd: [4]}, inherits: "*zme*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of Jupiter", "he":"יום צדק"}, type: "D", st: {wkd: [5]}, inherits: "*zju*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of Venus", "he":"יום נוגה"}, type: "D", st: {wkd: [6]}, inherits: "*zve*", inherits: "*Astrology*"},
+            {ttls: {"en":"Day of Saturn", "he":"יום שבתי"}, type: "D", st: {wkd: [7]}, inherits: "*zsa*", inherits: "*Astrology*"},
         ]},
     ]
 }

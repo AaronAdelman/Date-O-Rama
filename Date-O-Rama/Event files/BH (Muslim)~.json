@@ -1,0 +1,15 @@
+{
+    titles: {"*":"BH"},
+    "//":"Bahrain",
+    defLocale: "en",
+    cal: "hiq*",
+    color: {red: 0.85, green: 0.16, blue: 0.11},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bahrain"},
+    evts: [
+        {type: "D", st: {mon: 10, d: 2, wkd: [1, 3, 4, 5, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/bahrain/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
+        {type: "D", st: {mon: 10, d: 3}, urls: {"en":"https://www.officeholidays.com/holidays/bahrain/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
+
+        {type: "D", st: {mon: 7, d: 13}, inherits: "Father’s Day"},
+    ]
+}
+

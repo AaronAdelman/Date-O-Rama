@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LI"},
+    ttls: {"*":"LI"},
     "//":"Liechtenstein",
     defLocale: "en",
     cal: "gre",
@@ -32,6 +32,6 @@
 
         {type: "D", st: {mon: 3, d: 19}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", st: {mon: 1, d: 23}, titles: {"en":"Anniversary of the Creation of Liechtenstein", "he":"יום ייסוד ליכטנשטיין"}, fst: {era: 1, y: 1719}, urls: {"en":"http://every-day-is-special.blogspot.com/2014/01/january-23-anniversary-of-creation-of.html"}},
+        {type: "D", st: {mon: 1, d: 23}, ttls: {"en":"Anniversary of the Creation of Liechtenstein", "he":"יום ייסוד ליכטנשטיין"}, fst: {era: 1, y: 1719}, urls: {"en":"http://every-day-is-special.blogspot.com/2014/01/january-23-anniversary-of-creation-of.html"}},
     ]
 }

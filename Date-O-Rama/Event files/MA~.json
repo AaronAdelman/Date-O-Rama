@@ -1,0 +1,24 @@
+{
+    titles: {"*":"MA"},
+    "//":"Morocco",
+    "TODO":"Public holidays on the Muslim calendar?",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.75, green: 0.05, blue: 0.24},
+    fst: {era: 1, y: 1955},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Morocco"},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 1, d: 11}, inherits: "Proclamation of Independence Day", fst: {era: 1, y: 1944}},
+        {type: "nD", st: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inherits: "Yennayer"},
+        {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "D", st: {mon: 7, d: 30}, inherits: "Throne Day", fst: {era: 1, y: 1999}},
+        {type: "D", st: {mon: 8, d: 14}, inherits: "Oued Ed-Dahab Day"},
+        {type: "D", st: {mon: 8, d: 20}, titles: {"en":"Anniversary of the Revolution of the King and the People", "he":"יום השנה למהפכה של המלך והעם"}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, inherits: "Revolution Day", notes: {"en":"Revolution Day"}, fst: {era: 1, y: 1955}},
+        {type: "D", st: {mon: 8, d: 21}, inherits: "Youth Day"},
+        {type: "D", st: {mon: 11, d: 6}, inherits: "Green March Day"},
+        {inherits: "Independence Day", type: "D", st: {mon: 11, d: 18}, fst: {era: 1, y: 1955}},
+
+        {type: "D", st: {mon: 5, wkd: [1], nth: -1}, inherits: "Mother’s Day"},
+    ]
+}

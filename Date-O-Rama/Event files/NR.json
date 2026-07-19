@@ -1,5 +1,5 @@
 {
-    titles: {"*":"NR"},
+    ttls: {"*":"NR"},
     "//":"Nauru",
     defLocale: "en",
     cal: "gre",

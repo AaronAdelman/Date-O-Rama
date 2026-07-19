@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MD"},
+    ttls: {"*":"MD"},
     "//":"Moldova",
     defLocale: "en",
     cal: "gre",
@@ -16,22 +16,22 @@
         {type: "D", st: {mon: 6, d: 1}, inherits: "I Children’s Day", fst: {era: 1, y: 2016}},
         {inherits: "Independence Day", type: "D", st: {mon: 8, d: 27}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/moldova-independence-day/"}},
         {inherits: "Romanian Language Day", type: "D", st: {mon: 8, d: 31}, fst: {era: 1, y: 2013}},
-        {type: "D", st: {mon: 10, d: 14}, titles: {"en":"Chisinau City Day"}, urls: {"en":"https://nationaltoday.com/chisinau-city-day/"}, emoji: "🏙️"},
-        {type: "D", st: {mon: 11, d: 21}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/moldova-cahul/cahul-city-day"}, titles: {"en":"Cahul City Day"}, emoji: "🏙️"},
+        {type: "D", st: {mon: 10, d: 14}, ttls: {"en":"Chisinau City Day"}, urls: {"en":"https://nationaltoday.com/chisinau-city-day/"}, emoji: "🏙️"},
+        {type: "D", st: {mon: 11, d: 21}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/moldova-cahul/cahul-city-day"}, ttls: {"en":"Cahul City Day"}, emoji: "🏙️"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {type: "D", st: {mon: 2, d: 15}, titles: {"en":"Afghan War Veterans Day"}},
+        {type: "D", st: {mon: 2, d: 15}, ttls: {"en":"Afghan War Veterans Day"}},
         {type: "D", st: {mon: 4, d: 27}, inherits: "Flag Day"},
         {type: "D", st: {mon: 6, d: 10}, inherits: "Border Guards Day", fst: {era: 1, y: 1995}},
         {type: "D", st: {mon: 6, d: 23}, inherits: "Sovereignty Day"},
         {inherits: "Constitution Day", type: "D", st: {mon: 7, d: 29}},
         {inherits: "Liberation Day", type: "D", st: {mon: 8, d: 24}, fst: {era: 1, y: 1944}},
-        {type: "D", st: {mon: 9, d: 3}, inherits: "Army Day", titles: {"en":"National Army Day"}},
+        {type: "D", st: {mon: 9, d: 3}, inherits: "Army Day", ttls: {"en":"National Army Day"}},
         {type: "D", st: {mon: 10, d: 8}, inherits: "N Wine Day"},
         {inherits: "Police Day", type: "D", st: {mon: 12, d: 18}},
 
-        {type: "D", st: {mon: 5, d: 22}, titles: {"en":"Bălți Day"}, emoji: "🏙️"},
-        {type: "D", st: {mon: 6, d: 28}, titles: {"en":"Gagauzia Liberation Day"}, emoji: "🏙️"},
+        {type: "D", st: {mon: 5, d: 22}, ttls: {"en":"Bălți Day"}, emoji: "🏙️"},
+        {type: "D", st: {mon: 6, d: 28}, ttls: {"en":"Gagauzia Liberation Day"}, emoji: "🏙️"},
 
 
         {type: "D", st: {mon: 3, d: 8}, inherits: "Mother’s Day"},

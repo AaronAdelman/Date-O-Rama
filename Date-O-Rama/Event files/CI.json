@@ -1,5 +1,5 @@
 {
-    titles: {"*":"CI"},
+    ttls: {"*":"CI"},
     "//":"Côte d’Ivoire, AKA Ivory Coast",
     "TODO":"Muslim holidays",
     defLocale: "en",
@@ -17,7 +17,7 @@
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {inherits: "Independence Day", type: "D", st: {mon: 8, d: 7}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/cote-divoire-independence-day/"}},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {titles: {"en":"National Peace Day"}, type: "D", st: {mon: 11, d: 15}, fst: {era: 1, y: 1996}, emoji: "☮️"},
+        {ttls: {"en":"National Peace Day"}, type: "D", st: {mon: 11, d: 15}, fst: {era: 1, y: 1996}, emoji: "☮️"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
         

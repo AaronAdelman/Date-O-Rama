@@ -1,5 +1,5 @@
 {
-    titles: {"*":"RU"},
+    ttls: {"*":"RU"},
     "//":"Russia",
     defLocale: "en",
     cal: "jul",
@@ -9,7 +9,7 @@
         {type: "D", st: {mon: 1, d: 1}, inherits: "O New Year’s Day", urls: {"en":"https://nationaltoday.com/novy-god-russian-new-year/"}},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
-        {type: "D", st: {mon: 12, d: 26, wkd: [2]}, titles: {"en":"Christmas Day (in lieu)"}},
+        {type: "D", st: {mon: 12, d: 26, wkd: [2]}, ttls: {"en":"Christmas Day (in lieu)"}},
         
         {type: "D", st: {mon: 3, d: 25}, inherits: "Annunciation"},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God"},

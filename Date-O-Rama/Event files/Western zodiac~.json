@@ -1,0 +1,22 @@
+{
+    titles: {"en":"Western zodiac", "he":"גלגל המזלות המערבי"},
+    defLocale: "en",
+    cal: "gre*",
+    color: {red: 0.5, green: 0.5, blue: 0.5},
+    evts: [
+        {type: "Y", st: {}, nonoverlappingSubEvents: [
+            {inherits: "Aries", type: "nD", st: {mon: 3, d: 21}, end: {mon: 4, d: 19}},
+            {inherits: "Taurus", type: "nD", st: {mon: 4, d: 20}, end: {mon: 5, d: 20}},
+            {inherits: "Gemini", type: "nD", st: {mon: 5, d: 21}, end: {mon: 6, d: 20}},
+            {inherits: "Cancer", type: "nD", st: {mon: 6, d: 21}, end: {mon: 7, d: 22}},
+            {inherits: "Leo", type: "nD", st: {mon: 7, d: 23}, end: {mon: 8, d: 22}},
+            {inherits: "Virgo", type: "nD", st: {mon: 8, d: 23}, end: {mon: 9, d: 22}},
+            {inherits: "Libra", type: "nD", st: {mon: 9, d: 23}, end: {mon: 10, d: 22}},
+            {inherits: "Scorpio", type: "nD", st: {mon: 10, d: 23}, end: {mon: 11, d: 22}},
+            {inherits: "Sagittarius", type: "nD", st: {mon: 11, d: 23}, end: {mon: 12, d: 21}},
+            {inherits: "Capricorn", type: "nD", st: {mon: 12, d: 22}, end: {mon: 1, d: 19}},
+            {inherits: "Aquarius", type: "nD", st: {mon: 1, d: 20}, end: {mon: 2, d: 18}},
+            {inherits: "Pisces", type: "nD", st: {mon: 2, d: 19}, end: {mon: 3, d: 20}},
+        ]},
+    ]
+}

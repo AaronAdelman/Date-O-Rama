@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TC"},
+    ttls: {"*":"TC"},
     "//":"Turks and Caicos Islands",
     defLocale: "en",
     cal: "gre",
@@ -19,8 +19,8 @@
         {type: "D", st: {mon: 6, d: 10, thruD: 16, wkd: [2]}, inherits: "King Charles’ Birthday", fst: {era: 1, y: 2026}, urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/king-charles-birthday"}},
         {type: "D", st: {mon: 8, d: 1}, inherits: "Emancipation Day", urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/emancipation-day"}},
         {type: "D", st: {mon: 9, wkd: [6], nth: -1}, inherits: "N Youth Day", urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-youth-day"}},
-        {type: "D", st: {mon: 10, wkd: [2], nth: 2}, titles: {"en":"National Heritage Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heritage-day-in-the-turks-and-caicos-islands/"}, fst: {era: 1, y: 2014}, urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-heritage-day"}},
-        {type: "D", st: {mon: 11, wkd: [6], nth: 4}, titles: {"en":"National Day of Thanksgiving"}, urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-day-of-thanksgiving"}, inherits: "Thanksgiving"},
+        {type: "D", st: {mon: 10, wkd: [2], nth: 2}, ttls: {"en":"National Heritage Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heritage-day-in-the-turks-and-caicos-islands/"}, fst: {era: 1, y: 2014}, urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-heritage-day"}},
+        {type: "D", st: {mon: 11, wkd: [6], nth: 4}, ttls: {"en":"National Day of Thanksgiving"}, urls: {"en":"https://www.officeholidays.com/holidays/turks-and-caicos-islands/national-day-of-thanksgiving"}, inherits: "Thanksgiving"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
     ]

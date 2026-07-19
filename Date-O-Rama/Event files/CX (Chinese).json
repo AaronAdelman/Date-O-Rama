@@ -1,5 +1,5 @@
 {
-    titles: {"*":"CX"},
+    ttls: {"*":"CX"},
     "//":"Christmas Island",
     defLocale: "en",
     cal: "chi",

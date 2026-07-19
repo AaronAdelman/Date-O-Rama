@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BA"},
+    ttls: {"*":"BA"},
     "//":"Bosnia and Herzegovina",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -18,7 +18,7 @@
         {type: "D", st: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", st: {mon: 6, d: 28}, inherits: "St Vitus"},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
-        {type: "D", st: {mon: 11, d: 21}, titles: {"en":"General Framework Agreement Day", "bs":"Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"}, notes: {"en":"Dayton Agreement Day"}, urls: {"en":"https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},
+        {type: "D", st: {mon: 11, d: 21}, ttls: {"en":"General Framework Agreement Day", "bs":"Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"}, notes: {"en":"Dayton Agreement Day"}, urls: {"en":"https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},
         {type: "D", st: {mon: 11, d: 25}, inherits: "Statehood Day", urls: {"en":"https://www.daysoftheyear.com/days/statehood-day-in-bosnia-and-herzegovina/"}, notes: {"en":"National Day"}},
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -28,9 +28,9 @@
         {type: "D", st: {mon: 3, d: 8}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day", fst: {era: 1, y: 1993}},
         {type: "D", st: {mon: 3, d: 8}, inherits: "IWD"},
-        {type: "D", st: {mon: 10, d: 17, thruD: 23, wkd: [7]}, titles: {"en":"Rakija Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rakija-day/"}, emoji: "🍷"},
+        {type: "D", st: {mon: 10, d: 17, thruD: 23, wkd: [7]}, ttls: {"en":"Rakija Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rakija-day/"}, emoji: "🍷"},
         {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
-        {type: "nD", st: {mon: 8, d: 10, thruD: 16, wkd: [6], durD: 8}, titles: {"en":"Sarajevo Film Festival"}, urls: {"en":"https://www.sff.ba/en", "bs":"https://www.sff.ba/"}, emoji: "💟"},
-        {type: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [4], durD: 4}, titles: {"en":"International Plum Fair"}, notes: {"en":"Plum Fair"}, urls: {"en":"https://www.daysoftheyear.com/days/international-plum-fair/"}, fst: {era: 1, y: 1969}},
+        {type: "nD", st: {mon: 8, d: 10, thruD: 16, wkd: [6], durD: 8}, ttls: {"en":"Sarajevo Film Festival"}, urls: {"en":"https://www.sff.ba/en", "bs":"https://www.sff.ba/"}, emoji: "💟"},
+        {type: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [4], durD: 4}, ttls: {"en":"International Plum Fair"}, notes: {"en":"Plum Fair"}, urls: {"en":"https://www.daysoftheyear.com/days/international-plum-fair/"}, fst: {era: 1, y: 1969}},
     ]
 }

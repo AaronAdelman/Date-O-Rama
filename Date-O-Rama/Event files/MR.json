@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MR"},
+    ttls: {"*":"MR"},
     "//":"Mauritania",
     "TODO":"Muslim observances",
     defLocale: "en",

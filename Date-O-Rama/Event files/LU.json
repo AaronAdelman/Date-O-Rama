@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LU"},
+    ttls: {"*":"LU"},
     "//":"Luxembourg",
     defLocale: "en",
     cal: "gre",
@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1815},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fasching"}, titles: {"en":"Fasching"}},
+        {type: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fasching"}, ttls: {"en":"Fasching"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
@@ -18,7 +18,7 @@
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday", urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/whit-monday"}},
         {type: "D", st: {misc: "E", offsetD: 51}, inherits: "Whit Tuesday"},
         {type: "D", st: {mon: 6, wkd: [1], nth: 2}, inherits: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/mothers-day"}},
-        {type: "D", st: {mon: 6, d: 23}, titles: {"de":"Luxemburgischer Nationalfeiertag","en":"Grand Duke’s Official Birthday","fr":"Fête nationale du Luxembourg","he":"יום הולדתו של הדוכס הגדול","id":"Hari Ulang Tahun Resmi Adipati Agung","it":"Festa nazionale del Lussemburgo","lb":"Lëtzebuerger Nationalfeierdag","ms":"Hari Keputeraan Rasmi Grand Duke","nl":"Nationale feestdag van Luxemburg","pt":"Aniversário Oficial do Grande Duque"}, notes: {"en":"National Day", "he":"יום הלאומי", "lb":"Gehaansdag\nNationalfeierdag"}, urls: {"en":"https://nationaltoday.com/national-day-of-luxembourg/"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 6, d: 23}, ttls: {"de":"Luxemburgischer Nationalfeiertag","en":"Grand Duke’s Official Birthday","fr":"Fête nationale du Luxembourg","he":"יום הולדתו של הדוכס הגדול","id":"Hari Ulang Tahun Resmi Adipati Agung","it":"Festa nazionale del Lussemburgo","lb":"Lëtzebuerger Nationalfeierdag","ms":"Hari Keputeraan Rasmi Grand Duke","nl":"Nationale feestdag van Luxemburg","pt":"Aniversário Oficial do Grande Duque"}, notes: {"en":"National Day", "he":"יום הלאומי", "lb":"Gehaansdag\nNationalfeierdag"}, urls: {"en":"https://nationaltoday.com/national-day-of-luxembourg/"}, inherits: "*BDay*"},
 
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", st: {mon: 10, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fathers-day"}, inherits: "Father’s Day"},

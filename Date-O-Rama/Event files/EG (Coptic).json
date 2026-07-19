@@ -1,9 +1,9 @@
 {
-    titles: {"*":"EG"},
+    ttls: {"*":"EG"},
     "//":"Egypt",
     defLocale: "en",
     cal: "cop",
-    otherCals: ["jul"],
+    othCals: ["jul"],
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
     evts: [

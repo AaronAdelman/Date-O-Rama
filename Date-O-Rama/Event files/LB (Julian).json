@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LB"},
+    ttls: {"*":"LB"},
     "//":"Lebanon",
     defLocale: "en",
     cal: "jul",

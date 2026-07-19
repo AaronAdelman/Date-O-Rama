@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MG"},
+    ttls: {"*":"MG"},
     "//":"Madagascar",
     "TODO":"Muslim observances",
     defLocale: "en",

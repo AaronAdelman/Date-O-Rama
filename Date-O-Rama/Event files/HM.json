@@ -1,5 +1,5 @@
 {
-    titles: {"*":"HM"},
+    ttls: {"*":"HM"},
     "//":"Heard Island and McDonald Islands",
     defLocale: "en",
     cal: "gre",

@@ -1,5 +1,5 @@
 {
-    titles: {"bg":"Сатанинският храм","ca":"Temple satànic","cs":"The Satanic Temple","de":"The Satanic Temple","en":"The Satanic Temple","es":"El Templo Satánico","eu":"Tenplu Satanikoa","fa":"معبد شیطانی","fi":"The Satanic Temple","fr":"Le temple satanique","gl":"The Satanic Temple","hy":"Սատանայական տաճար","id":"Kuil Setan","it":"Tempio Satanico","ko":"사탄의 성전","lt":"Šėtono šventykla","pl":"Świątynia Sataniczna","pt":"O Templo Satânico","ru":"Сатанинский храм","sr":"Сатанистички храм","sv":"The Satanic Temple","ta":"சாத்தானியக் கோயில்","tr":"Satanist Tapınak","uk":"Сатанинський храм","ur":"شیطانی مندر","zh":"撒旦聖殿","he":"המקדש השטני"},
+    ttls: {"bg":"Сатанинският храм","ca":"Temple satànic","cs":"The Satanic Temple","de":"The Satanic Temple","en":"The Satanic Temple","es":"El Templo Satánico","eu":"Tenplu Satanikoa","fa":"معبد شیطانی","fi":"The Satanic Temple","fr":"Le temple satanique","gl":"The Satanic Temple","hy":"Սատանայական տաճար","id":"Kuil Setan","it":"Tempio Satanico","ko":"사탄의 성전","lt":"Šėtono šventykla","pl":"Świątynia Sataniczna","pt":"O Templo Satânico","ru":"Сатанинский храм","sr":"Сатанистички храм","sv":"The Satanic Temple","ta":"சாத்தானியக் கோயில்","tr":"Satanist Tapınak","uk":"Сатанинський храм","ur":"شیطانی مندر","zh":"撒旦聖殿","he":"המקדש השטני"},
     defLocale: "en",
     cal: "gre",
     color: {red: 0.5, green: 0.5, blue: 0.57},
@@ -7,9 +7,9 @@
     urls: {"en":"https://thesatanictemple.com/pages/holidays"},
     evts: [
         {type: "D", st: {mon: 2, d: 15}, inherits: "Lupercalia"},
-        {type: "D", st: {mon: 4, d: 30}, titles: {"en":"Hexennacht"}, inherits: "Walpurgis Night"},
-        {type: "D", st: {mon: 7, d: 25}, titles: {"en":"Unveiling Day"}},
+        {type: "D", st: {mon: 4, d: 30}, ttls: {"en":"Hexennacht"}, inherits: "Walpurgis Night"},
+        {type: "D", st: {mon: 7, d: 25}, ttls: {"en":"Unveiling Day"}},
         {type: "D", st: {mon: 10, d: 31}, inherits: "Halloween"},
-        {type: "D", st: {mon: 12, d: 25}, titles: {"en":"Sol Invictus"}},
+        {type: "D", st: {mon: 12, d: 25}, ttls: {"en":"Sol Invictus"}},
     ]
 }

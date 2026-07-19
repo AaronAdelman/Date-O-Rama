@@ -1,0 +1,9 @@
+{
+    titles: {"en":"Taoism", "he":"דאואיזם"},
+    defLocale: "en",
+    cal: "chi",
+    color: {red: 1.0, green: 0.82, blue: 0.41},
+    evts: [
+        {type: "D", st: {mon: 7, d: 15}, inherits: "Ghost Festival", urls: {"en":"https://nationaltoday.com/spirit-festival/"}},
+    ]
+}

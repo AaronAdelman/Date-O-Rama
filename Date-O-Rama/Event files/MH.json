@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MH"},
+    ttls: {"*":"MH"},
     "//":"Marshall Islands",
     defLocale: "en",
     cal: "gre",

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LV"},
+    ttls: {"*":"LV"},
     "//":"Latvia",
     "TODO":"Latvian Song and Dance Festival",
     defLocale: "en",
@@ -19,26 +19,26 @@
         {type: "D", st: {mon: 5, d: 6, wkd: [2]}, inherits: "Restoration of Independence Day (in lieu)", fst: {era: 1, y: 1990}},
         {type: "D", st: {mon: 5, d: 5, wkd: [6]}, inherits: "Restoration of Independence Day (bridge day)", urls: {"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, fst: {era: 1, y: 1990}},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", st: {era: 1, y: 2023, mon: 5, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, titles: {"en":"Day of the Bronze Medal Win"}, emoji: "🥉"},
+        {type: "D", st: {era: 1, y: 2023, mon: 5, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, ttls: {"en":"Day of the Bronze Medal Win"}, emoji: "🥉"},
         {type: "D", st: {mon: 6, d: 23}, inherits: "Midsummer Eve", urls: {"en":"https://www.officeholidays.com/holidays/latvia/midsummer-eve"}},
         {type: "D", st: {mon: 6, d: 24}, inherits: "Midsummer", urls: {"en":"https://nationaltoday.com/jani/"}, fst: {era: 1, y: 1990}},
         {type: "D", st: {mon: 9, wkd: [1], nth: 2}, inherits: "Father’s Day"},
-        {type: "D", st: {mon: 11, d: 18}, titles: {"en":"Proclamation Day of the Republic of Latvia", "lv":"Latvijas Republikas proklamēšanas diena"}, fst: {era: 1, y: 1918}, urls: {"en":"https://nationaltoday.com/latvia-independence-day/"}},
-        {titles: {"en":"Proclamation Day of the Republic of Latvia (in lieu)"}, type: "D", st: {mon: 11, d: 19, wkd: [1, 6]}, fst: {era: 1, y: 1918}, urls: {"en":"https://nationaltoday.com/latvia-independence-day/"}},
+        {type: "D", st: {mon: 11, d: 18}, ttls: {"en":"Proclamation Day of the Republic of Latvia", "lv":"Latvijas Republikas proklamēšanas diena"}, fst: {era: 1, y: 1918}, urls: {"en":"https://nationaltoday.com/latvia-independence-day/"}},
+        {ttls: {"en":"Proclamation Day of the Republic of Latvia (in lieu)"}, type: "D", st: {mon: 11, d: 19, wkd: [1, 6]}, fst: {era: 1, y: 1918}, urls: {"en":"https://nationaltoday.com/latvia-independence-day/"}},
         {type: "D", st: {mon: 12, d: 23, wkd: [2]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/latvia/christmas-holiday"}},
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/latvia/christmas-holiday"}, inherits: "Boxing Day"},
         {type: "D", st: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
-        {type: "D", st: {mon: 6, d: 22}, titles: {"en":"Herbal Day"}},
+        {type: "D", st: {mon: 6, d: 22}, ttls: {"en":"Herbal Day"}},
         {type: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day"},
-        {type: "D", st: {mon: 11, d: 7}, inherits: "Border Guards Day", fst: {era: 1, y: 2015}, titles: {"en":"Day of the State Border Guard of Latvia"}},
-        {type: "D", st: {mon: 7, d: 4}, inherits: "Holocaust Memorial Day", titles: {"en":"Commemoration Day of the Victims of the Genocide Against the Jewish People", "lv":"Ebreju tautas genocīda upuru piemiņas diena"}},
+        {type: "D", st: {mon: 11, d: 7}, inherits: "Border Guards Day", fst: {era: 1, y: 2015}, ttls: {"en":"Day of the State Border Guard of Latvia"}},
+        {type: "D", st: {mon: 7, d: 4}, inherits: "Holocaust Memorial Day", ttls: {"en":"Commemoration Day of the Victims of the Genocide Against the Jewish People", "lv":"Ebreju tautas genocīda upuru piemiņas diena"}},
 
    ],
     tpls: {
-        "Restoration of Independence Day (bridge day)": {type: "D", st: {mon: 5, d: 5}, titles: {"en":"Restoration of Independence Day (bridge day)"}, inherits: "Restoration of Independence Day"},
-        "Restoration of Independence Day (in lieu)": {type: "D", st: {mon: 5, d: 5, thruD: 6, wkd: [2]}, titles: {"en":"Restoration of Independence Day (in lieu)", "he":"יום שיקום העצמאות (במקומו)"}, inherits: "Restoration of Independence Day", urls: {"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
+        "Restoration of Independence Day (bridge day)": {type: "D", st: {mon: 5, d: 5}, ttls: {"en":"Restoration of Independence Day (bridge day)"}, inherits: "Restoration of Independence Day"},
+        "Restoration of Independence Day (in lieu)": {type: "D", st: {mon: 5, d: 5, thruD: 6, wkd: [2]}, ttls: {"en":"Restoration of Independence Day (in lieu)", "he":"יום שיקום העצמאות (במקומו)"}, inherits: "Restoration of Independence Day", urls: {"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
     }
 }

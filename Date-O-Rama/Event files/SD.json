@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SD"},
+    ttls: {"*":"SD"},
     "//":"Sudan",
     "TODO":"Muslim observances",
     defLocale: "en",

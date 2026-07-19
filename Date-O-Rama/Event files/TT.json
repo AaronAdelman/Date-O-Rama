@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TT"},
+    ttls: {"*":"TT"},
     "//":"Trinidad and Tobago",
     "TODO":"Muslim and Hindu observances",
     defLocale: "en",
@@ -12,12 +12,12 @@
         {type: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {type: "D", st: {misc: "E", offsetD: -44}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Monday"},
         {type: "D", st: {misc: "E", offsetD: -45}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inherits: "Carnival Tuesday"},
-        {type: "D", st: {mon: 3, d: 30}, titles: {"en":"Spiritual Baptist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day\nSpiritual Baptist/Shouter Liberation Day"}},
-        {type: "D", st: {mon: 3, d: 31, wkd: [2]}, titles: {"en":"Spiritual Baptist Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}},
+        {type: "D", st: {mon: 3, d: 30}, ttls: {"en":"Spiritual Baptist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day\nSpiritual Baptist/Shouter Liberation Day"}},
+        {type: "D", st: {mon: 3, d: 31, wkd: [2]}, ttls: {"en":"Spiritual Baptist Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", st: {mon: 5, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/indian-arrival-day"}, titles: {"en":"Indian Arrival Day"}},
+        {type: "D", st: {mon: 5, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/indian-arrival-day"}, ttls: {"en":"Indian Arrival Day"}},
         {inherits: "Public Holiday", type: "D", st: {mon: 5, d: 31, wkd: [2, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/indian-arrival-day"}},
         {type: "D", st: {misc: "E", offsetD: 60}, inherits: "Corpus Christi"},
         {inherits: "Labour Day", type: "D", st: {mon: 6, d: 19, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-labor-day"}, fst: {era: 1, y: 1973}},
@@ -29,7 +29,7 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
-        {type: "D", st: {era: 1, y: 2017, mon: 10, d: 13}, titles: {"en":"First Peoples’ Day"}},
+        {type: "D", st: {era: 1, y: 2017, mon: 10, d: 13}, ttls: {"en":"First Peoples’ Day"}},
 
         
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},

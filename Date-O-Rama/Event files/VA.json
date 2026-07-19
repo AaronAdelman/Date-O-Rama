@@ -1,5 +1,5 @@
 {
-    titles: {"*":"VA"},
+    ttls: {"*":"VA"},
     "//":"Holy See, AKA Vatican City",
     defLocale: "en",
     cal: "gre",
@@ -10,8 +10,8 @@
         {type: "D", st: {mon: 1, d: 1}, inherits: "Solemnity of Mary"},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", st: {mon: 2, d: 11}, inherits: "Lateran Treaty Day", urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/lateran-treaty-day"}},
-        {type: "D", st: {mon: 3, d: 13}, titles: {"en":"Anniversary of the election of Pope Francis", "it":"Anniversario dell’Elezione del Santo Padre"}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/pope-francis-election"}, fst: {era: 1, y: 2013}, end: {era: 1, y: 2024}},
-        {type: "D", st: {mon: 5, d: 8}, titles: {"en":"Anniversary of the Election of Pope Leo XIV", "it":"Anniversario dell’Elezione del Santo Padre"}, fst: {era: 1, y: 2025}},
+        {type: "D", st: {mon: 3, d: 13}, ttls: {"en":"Anniversary of the election of Pope Francis", "it":"Anniversario dell’Elezione del Santo Padre"}, urls: {"en":"https://www.officeholidays.com/holidays/vatican-city/pope-francis-election"}, fst: {era: 1, y: 2013}, end: {era: 1, y: 2024}},
+        {type: "D", st: {mon: 5, d: 8}, ttls: {"en":"Anniversary of the Election of Pope Leo XIV", "it":"Anniversario dell’Elezione del Santo Padre"}, fst: {era: 1, y: 2025}},
         {type: "D", st: {mon: 3, d: 19}, inherits: "St Joseph"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

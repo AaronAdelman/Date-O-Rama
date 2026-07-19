@@ -1,0 +1,10 @@
+{
+    titles: {"en":"Hinduism (supplemental)", "he":"הינדואיזם (נוספים)"},
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.44, green: 0.53, blue: 0.62},
+    evts: [
+        {type: "D", st: {mon: 1, d: 3}, titles: {"en":"International Mind-Body Wellness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-mind-body-wellness-day/"}},
+        {type: "D", st: {mon: 9, d: 21}, titles: {"en":"World Gratitude Day", "he":"יום הכרת תודה העולמי"}, urls: {"en":"https://www.srichinmoy.org/service/united_nations/world-gratitude-day"}, fst: {era: 1, y: 1966}, notes: {"en":"Created by Edna Fuerth Lemle"}},
+    ]
+}

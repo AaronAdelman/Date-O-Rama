@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BB"},
+    ttls: {"*":"BB"},
     "//":"Barbados",
     defLocale: "en",
     cal: "gre",
@@ -9,7 +9,7 @@
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 2, wkd: [2]}, inherits: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/barbados/international-new-years-day"}},
-        {type: "D", st: {mon: 1, d: 21}, titles: {"en":"Errol Barrow Day"}, urls: {"en":"https://www.officeholidays.com/holidays/barbados/errol-barrow-day"}, fst: {era: 1, y: 1989}},
+        {type: "D", st: {mon: 1, d: 21}, ttls: {"en":"Errol Barrow Day"}, urls: {"en":"https://www.officeholidays.com/holidays/barbados/errol-barrow-day"}, fst: {era: 1, y: 1989}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
@@ -18,17 +18,17 @@
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", st: {mon: 8, d: 1}, inherits: "Emancipation Day", urls: {"en":"https://www.officeholidays.com/holidays/barbados/barbados-emancipation-day"}},
-        {type: "D", st: {mon: 8, wkd: [2], nth: 1}, titles: {"en":"Kadooment Day"}, urls: {"en":"https://nationaltoday.com/kadooment-day/"}},
+        {type: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Kadooment Day"}, urls: {"en":"https://nationaltoday.com/kadooment-day/"}},
         {type: "D", st: {mon: 11, d: 30}, inherits: "Independence Day", fst: {era: 1, y: 1966}, urls: {"en":"https://nationaltoday.com/barbados-independence-day/"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {titles: {"en":"Anniversary of Bussa’s Rebellion"}, type: "D", st: {mon: 4, d: 14}},
+        {ttls: {"en":"Anniversary of Bussa’s Rebellion"}, type: "D", st: {mon: 4, d: 14}},
         {type: "D", st: {mon: 5, d: 25}, inherits: "Africa Day", fst: {era: 1, y: 1963}},
-        {titles: {"en":"Day of National Significance", "he":"יום של משמעות לאומית"}, type: "D", st: {mon: 7, d: 26}},
-        {type: "D", st: {mon: 8, d: 17}, titles: {"en":"Birthday of Marcus Garvey", "he":"יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
+        {ttls: {"en":"Day of National Significance", "he":"יום של משמעות לאומית"}, type: "D", st: {mon: 7, d: 26}},
+        {type: "D", st: {mon: 8, d: 17}, ttls: {"en":"Birthday of Marcus Garvey", "he":"יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
         {inherits: "I Day for the Remembrance of the Slave Trade and Its Abolition", type: "D", st: {mon: 8, d: 23}, fst: {era: 1, y: 1998}},
     ]
 }

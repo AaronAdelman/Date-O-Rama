@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MQ"},
+    ttls: {"*":"MQ"},
     "//":"Martinique",
     defLocale: "en",
     cal: "gre",
@@ -23,7 +23,7 @@
 
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday", urls: {"en":"https://nationaltoday.com/whit-monday-martinique/"}},
-        {type: "D", st: {mon: 7, d: 21}, inherits: "Abolition Day", titles: {"en":"Schoelcher Day", "fr":"Fête Victor Schœlcher"}},
+        {type: "D", st: {mon: 7, d: 21}, inherits: "Abolition Day", ttls: {"en":"Schoelcher Day", "fr":"Fête Victor Schœlcher"}},
         {type: "D", st: {misc: "E", offsetD: -48}, inherits: "Shrove Monday"},
         {type: "D", st: {misc: "E", offsetD: -47}, inherits: "Shrove Tuesday"},
         {type: "D", st: {misc: "E", offsetD: -46}, inherits: "Ash Wednesday"},

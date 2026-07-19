@@ -1,0 +1,11 @@
+{
+    titles: {"*":"BV"},
+    "//":"Bouvet Island",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.50, green: 0.50, blue: 0.50},
+    fst: {era: 1, y: 1928},
+    evts: [
+        
+    ]
+}

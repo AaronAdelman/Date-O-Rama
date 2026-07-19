@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AD"},
+    ttls: {"*":"AD"},
     "//":"Andorra",
     defLocale: "en",
     cal: "gre",
@@ -18,7 +18,7 @@
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
-        {type: "D", st: {mon: 9, d: 8}, titles: {"en":"Feast of Our Lady of Meritxell Day", "ca":"Mare de Déu de Meritxell"}, urls: {"en":"https://nationaltoday.com/our-lady-of-meritxell-day/"}, notes: {"en":"Meritxell Day"}},
+        {type: "D", st: {mon: 9, d: 8}, ttls: {"en":"Feast of Our Lady of Meritxell Day", "ca":"Mare de Déu de Meritxell"}, urls: {"en":"https://nationaltoday.com/our-lady-of-meritxell-day/"}, notes: {"en":"Meritxell Day"}},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},
         {type: "D", st: {mon: 12, d: 8}, inherits: "Immaculate Conception"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -26,12 +26,12 @@
 
         {type: "D", st: {mon: 3, d: 19}, inherits: "Father’s Day"},
         
-        {type: "nD", st: {mon: 8, d: 4}, end: {mon: 8, d: 6}, titles: {"en":"Andorra la Vella Annual Festival"}},
-        {type: "nD", st: {mon: 7, d: 21}, end: {mon: 7, d: 23}, titles: {"en":"Canillo Annual Festival"}},
-        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, titles: {"en":"Encamp Annual Festival"}},
-        {type: "nD", st: {mon: 7, d: 25}, end: {mon: 7, d: 26}, titles: {"en":"Escaldes–Engordany Annual Festival"}},
-        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, titles: {"en":"La Massana Annual Festival"}},
-        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, titles: {"en":"Ordino Annual Festival"}},
-        {type: "nD", st: {mon: 7, d: 27}, end: {mon: 7, d: 30}, titles: {"en":"Sant Julià de Lòria Annual Festival", "he":"הפסטיבל השנתי של סנט ז׳וליה דה לוריה"}},
+        {type: "nD", st: {mon: 8, d: 4}, end: {mon: 8, d: 6}, ttls: {"en":"Andorra la Vella Annual Festival"}},
+        {type: "nD", st: {mon: 7, d: 21}, end: {mon: 7, d: 23}, ttls: {"en":"Canillo Annual Festival"}},
+        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, ttls: {"en":"Encamp Annual Festival"}},
+        {type: "nD", st: {mon: 7, d: 25}, end: {mon: 7, d: 26}, ttls: {"en":"Escaldes–Engordany Annual Festival"}},
+        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, ttls: {"en":"La Massana Annual Festival"}},
+        {type: "nD", st: {mon: 8, d: 15}, end: {mon: 8, d: 16}, ttls: {"en":"Ordino Annual Festival"}},
+        {type: "nD", st: {mon: 7, d: 27}, end: {mon: 7, d: 30}, ttls: {"en":"Sant Julià de Lòria Annual Festival", "he":"הפסטיבל השנתי של סנט ז׳וליה דה לוריה"}},
     ]
 }

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"DJ"},
+    ttls: {"*":"DJ"},
     "//":"Djibouti",
     "TODO":"Muslim holidays",
     defLocale: "en",

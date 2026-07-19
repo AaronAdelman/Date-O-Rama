@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MK"},
+    ttls: {"*":"MK"},
     "//":"North Macedonia",
     defLocale: "en",
     cal: "jul",

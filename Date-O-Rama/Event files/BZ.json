@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BZ"},
+    ttls: {"*":"BZ"},
     "//":"Belize",
     "NOTE":"Unclear when Commonwealth Day is",
     defLocale: "en",
@@ -10,9 +10,9 @@
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {inherits: "New Year’s Day (in lieu)", type: "D", st: {mon: 1, d: 2, wkd: [2]}},
-        {type: "D", st: {mon: 1, d: 15}, titles: {"en":"George Price Day"}, urls: {"en":"https://www.officeholidays.com/holidays/belize/george-price-day"}},
-        {type: "D", st: {mon: 1, d: 16, wkd: [2]}, titles: {"en":"George Price Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/belize/george-price-day"}},
-        {type: "D", st: {mon: 3, d: 9}, titles: {"en":"National Heroes and Benefactors Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-benefactors-day/"}, notes: {"en":"Baron Bliss Day\nCreated by the government of Belize"}},
+        {type: "D", st: {mon: 1, d: 15}, ttls: {"en":"George Price Day"}, urls: {"en":"https://www.officeholidays.com/holidays/belize/george-price-day"}},
+        {type: "D", st: {mon: 1, d: 16, wkd: [2]}, ttls: {"en":"George Price Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/belize/george-price-day"}},
+        {type: "D", st: {mon: 3, d: 9}, ttls: {"en":"National Heroes and Benefactors Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-benefactors-day/"}, notes: {"en":"Baron Bliss Day\nCreated by the government of Belize"}},
         {type: "D", st: {mon: 3, d: 6, thruD: 8, wkd: [2]}, inherits: "N Heroes and Benefactors Day (in lieu)"},
         {type: "D", st: {mon: 3, d: 10, thruD: 12, wkd: [2]}, inherits: "N Heroes and Benefactors Day (in lieu)"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
@@ -25,17 +25,17 @@
         {inherits: "Emancipation Day", type: "D", st: {mon: 8, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/belize/emancipation-day"}, fst: {era: 1, y: 1834}},
         {inherits: "Emancipation Day (in lieu)", type: "D", st: {mon: 8, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/belize/emancipation-day"}, fst: {era: 1, y: 1834}},
         {inherits: "St George’s Caye Day", type: "D", st: {mon: 9, d: 10}, urls: {"en":"https://www.officeholidays.com/holidays/belize/st-georges-caye-day"}},
-        {titles: {"en":"Saint George’s Caye Day (in lieu)"}, type: "D", st: {mon: 9, d: 11, wkd: [2]}, inherits: "St George’s Caye Day"},
+        {ttls: {"en":"Saint George’s Caye Day (in lieu)"}, type: "D", st: {mon: 9, d: 11, wkd: [2]}, inherits: "St George’s Caye Day"},
         {inherits: "Independence Day", type: "D", st: {mon: 9, d: 21}, fst: {era: 1, y: 1981}, urls: {"en":"https://nationaltoday.com/belize-independence-day/"}},
         {type: "D", st: {mon: 9, d: 22, thruD: 23, wkd: [2]}, inherits: "Independence Day (in lieu)", fst: {era: 1, y: 1981}, urls: {"en":"https://nationaltoday.com/belize-independence-day/"}},
         {type: "D", st: {mon: 10, d: 9, thruD: 11, wkd: [2]}, inherits: "Day of the Races (in lieu)", fst: {era: 1, y: 2021}},
         {type: "D", st: {mon: 10, d: 12}, inherits: "Day of the Races", fst: {era: 1, y: 2021}},
         {type: "D", st: {mon: 10, d: 13, thruD: 15, wkd: [2]}, inherits: "Day of the Races (in lieu)", fst: {era: 1, y: 2021}},
         {type: "D", st: {mon: 11, d: 19}, inherits: "Garifuna Settlement Day", fst: {era: 1, y: 1943}},
-        {type: "D", st: {mon: 11, d: 20, wkd: [2]}, inherits: "Garifuna Settlement Day", fst: {era: 1, y: 1943}, titles: {"en":"Garifuna Settlement Day (in lieu)"}},
+        {type: "D", st: {mon: 11, d: 20, wkd: [2]}, inherits: "Garifuna Settlement Day", fst: {era: 1, y: 1943}, ttls: {"en":"Garifuna Settlement Day (in lieu)"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
-        {type: "D", st: {mon: 12, d: 27, wkd: [2]}, inherits: "Boxing Day", titles: {"en":"Boxing Day Holiday"}},
+        {type: "D", st: {mon: 12, d: 27, wkd: [2]}, inherits: "Boxing Day", ttls: {"en":"Boxing Day Holiday"}},
 
         {type: "D", st: {mon: 5, d: 24, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Commonwealth Day"},
         {type: "D", st: {mon: 5, d: 25, wkd: [2]}, inherits: "Commonwealth Day"},
@@ -45,8 +45,8 @@
         {type: "D", st: {era: 1, y: 2025, mon: 3, d: 12}, inherits: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/belize/belize-election-day"}},
     ],
     tpls: {
-        "Garifuna Settlement Day": {type: "D", st: {mon: 11, d: 19}, titles: {"en":"Garifuna Settlement Day"}, urls: {"en":"https://nationaltoday.com/garifuna-settlement-day/"}},
-        "N Heroes and Benefactors Day (in lieu)": {type: "D", st: {mon: 3, d: 6, thruD: 8, wkd: [2]}, titles: {"en":"National Heroes and Benefactors Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-benefactors-day/"}},
-        "St George’s Caye Day": {titles: {"en":"Saint George’s Caye Day"}, type: "D", st: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "N Day"},
+        "Garifuna Settlement Day": {type: "D", st: {mon: 11, d: 19}, ttls: {"en":"Garifuna Settlement Day"}, urls: {"en":"https://nationaltoday.com/garifuna-settlement-day/"}},
+        "N Heroes and Benefactors Day (in lieu)": {type: "D", st: {mon: 3, d: 6, thruD: 8, wkd: [2]}, ttls: {"en":"National Heroes and Benefactors Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-benefactors-day/"}},
+        "St George’s Caye Day": {ttls: {"en":"Saint George’s Caye Day"}, type: "D", st: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "N Day"},
     }
 }

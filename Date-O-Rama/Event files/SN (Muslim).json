@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SN"},
+    ttls: {"*":"SN"},
     "//":"Senegal",
     defLocale: "en",
     cal: "hiq*",
@@ -7,6 +7,6 @@
     fst: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Senegal"},
     evts: [
-        {type: "D", st: {mon: 2, d: 18}, titles: {"en":"Grand Magal of Touba"}, urls: {"en":"https://www.officeholidays.com/holidays/senegal/grand-magal-of-touba"}},
+        {type: "D", st: {mon: 2, d: 18}, ttls: {"en":"Grand Magal of Touba"}, urls: {"en":"https://www.officeholidays.com/holidays/senegal/grand-magal-of-touba"}},
     ]
 }

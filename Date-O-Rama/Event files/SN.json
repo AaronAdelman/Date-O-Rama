@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SN"},
+    ttls: {"*":"SN"},
     "//":"Senegal",
     "TODO":"Muslim holidays",
     defLocale: "en",

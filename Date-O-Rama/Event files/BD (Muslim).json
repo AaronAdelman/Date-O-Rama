@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BD"},
+    ttls: {"*":"BD"},
     "//":"Bangladesh",
     defLocale: "en",
     cal: "hiq*",

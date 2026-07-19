@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BY"},
+    ttls: {"*":"BY"},
     "//":"Belarus",
     defLocale: "en",
     cal: "gre",
@@ -16,18 +16,18 @@
         {type: "D", st: {mon: 11, d: 7}, inherits: "October Revolution Day"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         
-        {type: "D", st: {mon: 2, d: 23}, titles: {"en":"Defender of the Fatherland and Armed Forces Day", "be":"Дзень абаронцы Айчыны і Дзень Узброеных Сіл"}, notes: {"en":"Fatherland Defenders Day\nCreated by Alexander Lukashenko"}, urls: {"en":"https://www.daysoftheyear.com/days/fatherland-defenders-day/"}, fst: {era: 1, y: 1998}},
-        {type: "D", st: {mon: 3, d: 4}, titles: {"en":"Day of the Police of Belarus", "be":"Дзень паліцыі Беларусі", "ru":"День белорусской милиции"}, urls: {"en":"https://en.wikipedia.org/wiki/Day_of_the_Police_of_Belarus"}, inherits: "Police Day", fst: {era: 1, y: 1999}},
+        {type: "D", st: {mon: 2, d: 23}, ttls: {"en":"Defender of the Fatherland and Armed Forces Day", "be":"Дзень абаронцы Айчыны і Дзень Узброеных Сіл"}, notes: {"en":"Fatherland Defenders Day\nCreated by Alexander Lukashenko"}, urls: {"en":"https://www.daysoftheyear.com/days/fatherland-defenders-day/"}, fst: {era: 1, y: 1998}},
+        {type: "D", st: {mon: 3, d: 4}, ttls: {"en":"Day of the Police of Belarus", "be":"Дзень паліцыі Беларусі", "ru":"День белорусской милиции"}, urls: {"en":"https://en.wikipedia.org/wiki/Day_of_the_Police_of_Belarus"}, inherits: "Police Day", fst: {era: 1, y: 1999}},
         {type: "D", st: {mon: 3, d: 15}, inherits: "Constitution Day", urls: {"en":"https://www.daysoftheyear.com/days/belarus-constitution-day/"}, fst: {era: 1, y: 1994}},
-        {type: "D", st: {mon: 4, d: 2}, titles: {"en":"Unity of Peoples of Russia and Belarus Day", "be":"Дзень яднання народаў Беларусі i Расii"}, emoji: "🇷🇺🇧🇾", fst: {era: 1, y: 1994}, urls: {"en":"https://nationaltoday.com/union-day-of-belarus-and-russia/"}, notes: {"en":"Union Day of Belarus and Russia"}},
-        {inherits: "Flag Day", type: "D", st: {mon: 5, wkd: [1], nth: 2}, titles: {"en":"State Flag and State Emblem Day", "be":"Дзень Дзяржаўнага Сцяга i Дзяржаўнага Герба"}},
+        {type: "D", st: {mon: 4, d: 2}, ttls: {"en":"Unity of Peoples of Russia and Belarus Day", "be":"Дзень яднання народаў Беларусі i Расii"}, emoji: "🇷🇺🇧🇾", fst: {era: 1, y: 1994}, urls: {"en":"https://nationaltoday.com/union-day-of-belarus-and-russia/"}, notes: {"en":"Union Day of Belarus and Russia"}},
+        {inherits: "Flag Day", type: "D", st: {mon: 5, wkd: [1], nth: 2}, ttls: {"en":"State Flag and State Emblem Day", "be":"Дзень Дзяржаўнага Сцяга i Дзяржаўнага Герба"}},
         {type: "D", st: {mon: 9, d: 17}, inherits: "N Unity Day", urls: {"en":"https://en.wikipedia.org/wiki/National_Unity_Day_(Belarus)"}, fst: {era: 1, y: 2021}},
-        {inherits: "Veterans Day", type: "D", st: {mon: 2, d: 15}, titles: {"en":"Afghan War Veterans Day", "be":"Дзень памяці воінаў-інтэрнацыяналістаў "}},
+        {inherits: "Veterans Day", type: "D", st: {mon: 2, d: 15}, ttls: {"en":"Afghan War Veterans Day", "be":"Дзень памяці воінаў-інтэрнацыяналістаў "}},
         {type: "D", st: {mon: 4, d: 26}, inherits: "I Chernobyl Disaster Remembrance Day", fst: {era: 1, y: 2017}},
-        {type: "D", st: {mon: 6, d: 22}, titles: {"en":"Day of Remembrance of the Victims of the Great Patriotic War", "be":"Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
+        {type: "D", st: {mon: 6, d: 22}, ttls: {"en":"Day of Remembrance of the Victims of the Great Patriotic War", "be":"Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
 
         {type: "D", st: {mon: 7, d: 6}, inherits: "Kupala Night"},
-        {type: "D", st: {mon: 11, d: 2}, titles: {"en":"Dziady", "be":"Дзяды"}, urls: {"en":"https://en.wikipedia.org/wiki/Dziady"}},
+        {type: "D", st: {mon: 11, d: 2}, ttls: {"en":"Dziady", "be":"Дзяды"}, urls: {"en":"https://en.wikipedia.org/wiki/Dziady"}},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
@@ -38,8 +38,8 @@
         {type: "D", st: {mon: 5, d: 28}, inherits: "Border Guards Day", fst: {era: 1, y: 1919}},
         {type: "D", st: {mon: 6, d: 22}, inherits: "Day of Remembrance and Sorrow", fst: {era: 1, y: 1996}},
         {type: "D", st: {mon: 8, d: 2}, inherits: "Paratroopers’ Day"},
-        {type: "nD", st: {mon: 1, d: 13}, end: {mon: 1, d: 14}, titles: {"en":"Kolyady"}, urls: {"en":"https://www.daysoftheyear.com/days/kolyady/"}},
+        {type: "nD", st: {mon: 1, d: 13}, end: {mon: 1, d: 14}, ttls: {"en":"Kolyady"}, urls: {"en":"https://www.daysoftheyear.com/days/kolyady/"}},
         {type: "D", st: {mon: 5, d: 7}, inherits: "Radio Day", urls: {"en":"https://www.daysoftheyear.com/days/belarus-day-of-radio/"}, fst: {era: 1, y: 1998}},
-        {type: "D", st: {mon: 9, wkd: [1], nth: 1}, titles: {"en":"Belarusian Written Language Day"}, urls: {"en":"https://www.daysoftheyear.com/days/belarusian-written-language-day/"}, fst: {era: 1, y: 1994}},
+        {type: "D", st: {mon: 9, wkd: [1], nth: 1}, ttls: {"en":"Belarusian Written Language Day"}, urls: {"en":"https://www.daysoftheyear.com/days/belarusian-written-language-day/"}, fst: {era: 1, y: 1994}},
     ]
 }

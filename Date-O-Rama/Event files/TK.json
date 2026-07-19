@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TK"},
+    ttls: {"*":"TK"},
     "//":"Tokelau",
     defLocale: "en",
     cal: "gre",
@@ -16,7 +16,7 @@
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
-        {type: "D", st: {mon: 9, d: 3}, titles: {"en":"Tokehega Day"}, fst: {era: 1, y: 1983}},
+        {type: "D", st: {mon: 9, d: 3}, ttls: {"en":"Tokehega Day"}, fst: {era: 1, y: 1983}},
         
         {type: "D", st: {mon: 2, d: 6}, inherits: "Waitangi Day", fst: {era: 1, y: 1934}},
         {type: "D", st: {mon: 4, d: 25}, inherits: "Anzac Day", fst: {era: 1, y: 1916}},

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AE"},
+    ttls: {"*":"AE"},
     "//":"United Arab Emirates, AKA UAE",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_United_Arab_Emirates"},
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "nD", st: {mon: 11, d: 30}, end: {mon: 12, d: 1}, titles: {"ar":"يوم الشهيد","en":"Commemoration Day","fa":"روز شهید","ta":"தியாகிகள் நாள்"}, urls: {"en":"https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
+        {type: "nD", st: {mon: 11, d: 30}, end: {mon: 12, d: 1}, ttls: {"ar":"يوم الشهيد","en":"Commemoration Day","fa":"روز شهید","ta":"தியாகிகள் நாள்"}, urls: {"en":"https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
         {type: "nD", st: {mon: 12, d: 2}, end: {mon: 12, d: 3}, fst: {era: 1, y: 1971}, inherits: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/uae-national-day/"}, notes: {"en":"Eid Al Etihad"}},
 
         {type: "D", st: {mon: 6, d: 21}, inherits: "Father’s Day"},

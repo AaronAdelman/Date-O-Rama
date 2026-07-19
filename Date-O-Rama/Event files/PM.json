@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PM"},
+    ttls: {"*":"PM"},
     "//":"Saint Pierre and Miquelon",
     defLocale: "en",
     cal: "gre",

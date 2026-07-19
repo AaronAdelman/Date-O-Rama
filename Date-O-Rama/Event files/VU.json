@@ -1,5 +1,5 @@
 {
-    titles: {"*":"VU"},
+    ttls: {"*":"VU"},
     "//":"Vanuatu",
     defLocale: "en",
     cal: "gre",
@@ -9,8 +9,8 @@
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/vanuatu/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {type: "D", st: {mon: 2, d: 21}, urls: {"en":"https://nationaltoday.com/father-lini-day/"}, titles: {"en":"Father Lini Day"}, fst: {era: 1, y: 1999}},
-        {type: "D", st: {mon: 3, d: 5}, titles: {"en":"Custom Chief’s Day"}, urls: {"en":"https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}, notes: {"en":"Chiefs Day"}},
+        {type: "D", st: {mon: 2, d: 21}, urls: {"en":"https://nationaltoday.com/father-lini-day/"}, ttls: {"en":"Father Lini Day"}, fst: {era: 1, y: 1999}},
+        {type: "D", st: {mon: 3, d: 5}, ttls: {"en":"Custom Chief’s Day"}, urls: {"en":"https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}, notes: {"en":"Chiefs Day"}},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},

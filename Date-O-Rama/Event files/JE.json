@@ -1,5 +1,5 @@
 {
-    titles: {"*":"JE"},
+    ttls: {"*":"JE"},
     "//":"Jersey",
     defLocale: "en",
     cal: "gre",
@@ -17,7 +17,7 @@
         {inherits: "Liberation Day", type: "D", st: {mon: 5, d: 9}, fst: {era: 1, y: 1945}, urls: {"en":"https://www.officeholidays.com/holidays/jersey/channel-islands-liberation-day"}},
         {type: "D", st: {mon: 5, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/jersey/spring-bank-holiday"}, inherits: "Spring Bank Holiday"},
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", st: {mon: 8, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/jersey/august-bank-holiday"}, titles: {"en":"Summer Bank Holiday"}},
+        {type: "D", st: {mon: 8, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/jersey/august-bank-holiday"}, ttls: {"en":"Summer Bank Holiday"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/jersey/boxing-day"}, inherits: "Boxing Day"},
     ]

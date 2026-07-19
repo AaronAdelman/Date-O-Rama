@@ -1,5 +1,5 @@
 {
-    titles: {"*":"YE"},
+    ttls: {"*":"YE"},
     "//":"Yemen",
     defLocale: "en",
     cal: "hiq*",

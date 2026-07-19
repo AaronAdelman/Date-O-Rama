@@ -40,11 +40,11 @@ struct ASAEventsFile: Codable {
     var firstDateSpecification: ASADateSpecification?
     
     enum CodingKeys: String, CodingKey {
-        case titles
+        case titles                 = "ttls"
         case defaultLocale          = "defLocale"
         case calendarColor          = "color"
         case calendarCode           = "cal"
-        case otherCalendarCodes     = "otherCals"
+        case otherCalendarCodes     = "othCals"
         case emoji
         case urls
         case eventSpecifications    = "evts"

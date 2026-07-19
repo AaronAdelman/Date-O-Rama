@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BL"},
+    ttls: {"*":"BL"},
     "//":"Saint Barthélemy, AKA Saint Barthelemy",
     defLocale: "en",
     cal: "gre",

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MM"},
+    ttls: {"*":"MM"},
     "//":"Myanmar, AKA Burma",
     "TODO":"Islamic and Buddist holidays, National Day, Full Moon Day of Kasong, Kayin New Year",
     defLocale: "en",
@@ -11,8 +11,8 @@
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 4}, inherits: "Independence Day", fst: {era: 1, y: 1948}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
         {type: "D", st: {mon: 2, d: 12}, inherits: "Union Day", urls: {"en":"https://nationaltoday.com/union-day/"}, fst: {era: 1, y: 1948}},
-        {type: "D", st: {mon: 2, d: 13, wkd: [6]}, titles: {"en":"Union Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/myanmar-union-day"}, fst: {era: 1, y: 1948}},
-        {type: "D", st: {mon: 3, d: 2}, titles: {"en":"Peasants’ Day", "he":"יום האיכרים","my":"တောင်သူလယ်သမားနေ့"}, urls: {"en":"https://nationaltoday.com/peasants-day/"}, notes: {"en":"Peasants Day"}, fst: {era: 1, y: 2000}},
+        {type: "D", st: {mon: 2, d: 13, wkd: [6]}, ttls: {"en":"Union Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/myanmar-union-day"}, fst: {era: 1, y: 1948}},
+        {type: "D", st: {mon: 3, d: 2}, ttls: {"en":"Peasants’ Day", "he":"יום האיכרים","my":"တောင်သူလယ်သမားနေ့"}, urls: {"en":"https://nationaltoday.com/peasants-day/"}, notes: {"en":"Peasants Day"}, fst: {era: 1, y: 2000}},
         {type: "D", st: {mon: 3, d: 27}, inherits: "Armed Forces Day", urls: {"en":"https://nationaltoday.com/myanmar-armed-forces-day/"}},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {type: "D", st: {mon: 7, d: 19}, inherits: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-myanmar/"}, fst: {era: 1, y: 1947}},
@@ -22,7 +22,7 @@
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 2, d: 13}, inherits: "Children’s Day"},
         
-        {type: "nD", st: {mon: 4, d: 13}, end: {mon: 4, d: 16}, titles: {"blk":"သင်ႏကဲဉ်ႏ","bn":"থিংযান","de":"Atā Thingyan","en":"Thingyan","fr":"Thingyan","id":"Thingyan","it":"Capodanno birmano","ja":"ティンジャン","mnw":"သၚ်္ကြာန်","my":"သင်္ကြန်","ru":"Тинджан","th":"ตะจาน","tr":"Thingyan","uk":"Фестиваль Тінгіан","vi":"Thingyan"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/thingyan"}},
-        {type: "D", st: {mon: 4, d: 17}, titles: {"en":"Burmese New Year"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/burmese-new-years-day"}},
+        {type: "nD", st: {mon: 4, d: 13}, end: {mon: 4, d: 16}, ttls: {"blk":"သင်ႏကဲဉ်ႏ","bn":"থিংযান","de":"Atā Thingyan","en":"Thingyan","fr":"Thingyan","id":"Thingyan","it":"Capodanno birmano","ja":"ティンジャン","mnw":"သၚ်္ကြာန်","my":"သင်္ကြန်","ru":"Тинджан","th":"ตะจาน","tr":"Thingyan","uk":"Фестиваль Тінгіан","vi":"Thingyan"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/thingyan"}},
+        {type: "D", st: {mon: 4, d: 17}, ttls: {"en":"Burmese New Year"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/burmese-new-years-day"}},
     ]
 }

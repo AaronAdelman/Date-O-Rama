@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SO"},
+    ttls: {"*":"SO"},
     "//":"Somalia",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -15,6 +15,6 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "Armed Forces Day", type: "D", st: {mon: 4, d: 12}, titles: {"en":"Somali Armed Forces Anniversary"}, fst: {era: 1, y: 1961}},
+        {inherits: "Armed Forces Day", type: "D", st: {mon: 4, d: 12}, ttls: {"en":"Somali Armed Forces Anniversary"}, fst: {era: 1, y: 1961}},
    ]
 }

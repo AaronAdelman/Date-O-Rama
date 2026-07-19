@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GE"},
+    ttls: {"*":"GE"},
     "//":"Georgia",
     defLocale: "en",
     cal: "gre",
@@ -19,7 +19,7 @@
         {type: "D", st: {mon: 5, d: 9}, inherits: "Victory Day (May 9)"},
         {type: "D", st: {mon: 5, d: 12}, urls: {"en":"https://www.officeholidays.com/holidays/georgia/saint-andrew-the-first-called-day"}, inherits: "St Andrew"},
         {type: "D", st: {mon: 5, d: 26}, inherits: "Independence Day", fst: {era: 1, y: 1918}, urls: {"en":"https://nationaltoday.com/georgia-independence-day/"}},
-        {type: "D", st: {mon: 10, d: 14}, titles: {"en":"Day of Svetitskovloba", "ka":"სვეტიცხოვლობა"}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-svetitskhoveli-cathedral/"}, notes: {"en":"Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
+        {type: "D", st: {mon: 10, d: 14}, ttls: {"en":"Day of Svetitskovloba", "ka":"სვეტიცხოვლობა"}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-svetitskhoveli-cathedral/"}, notes: {"en":"Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
         {type: "D", st: {mon: 11, d: 23}, inherits: "St George"},
 
         {type: "D", st: {mon: 5, d: 9}, inherits: "Europe Day", fst: {era: 1, y: 2019}},
@@ -27,14 +27,14 @@
         {type: "D", st: {mon: 12, d: 17}, inherits: "St Barbara"},
         {type: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {type: "D", st: {mon: 4, d: 30}, inherits: "Armed Forces Day"},
-        {type: "D", st: {mon: 2, d: 25}, titles: {"cs":"Den sovětské okupace","en":"Soviet Occupation Day","et":"Nõukogude okupatsiooni päev","hy":"Խորհրդային բռնազավթման օր","id":"Hari Pendudukan Soviet","ka":"საბჭოთა ოკუპაციის დღე","lv":"Padomju okupācijas diena","pl":"Dzień okupacji sowieckiej","ru":"День советской оккупации","tr":"Sovyet İşgali Günü","uk":"День радянської окупації","xmf":"სხუნუეფიშ ოკუპაციაშ დღა"}, urls: {"en":"https://www.daysoftheyear.com/days/soviet-occupation-day/"}, fst: {era: 1, y: 2010}, notes: {"en":"Created by the government of Georgia"}},
-        {type: "D", st: {mon: 2, d: 27}, titles: {"en":"Khachapuri Day"}, notes: {"en":"National Khachapuri Day\nCreated by the Gastronomic Association of Georgia"}, fst: {era: 1, y: 2019}, urls: {"en":"https://www.daysoftheyear.com/days/khachapuri-day/"}},
-        {type: "nD", st: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, titles: {"az":"Tbilisoba","en":"Tbilisoba","eo":"Tbilisoba","fa":"تبیلیسوبا (جشن روز تفلیس)","he":"טביליסובה","hy":"Թբիլիսոբա","ka":"თბილისობა","ru":"Тбилисоба","uk":"Тбілісоба"}, urls: {"en":"https://www.daysoftheyear.com/days/tbilisoba/"}, fst: {era: 1, y: 1979}},
-        {type: "D", st: {mon: 2, d: 14}, titles: {"en":"Lamproba"}, notes: {"en":"Festival of Lights"}, urls: {"en":"https://www.daysoftheyear.com/days/lamproba/"}},
+        {type: "D", st: {mon: 2, d: 25}, ttls: {"cs":"Den sovětské okupace","en":"Soviet Occupation Day","et":"Nõukogude okupatsiooni päev","hy":"Խորհրդային բռնազավթման օր","id":"Hari Pendudukan Soviet","ka":"საბჭოთა ოკუპაციის დღე","lv":"Padomju okupācijas diena","pl":"Dzień okupacji sowieckiej","ru":"День советской оккупации","tr":"Sovyet İşgali Günü","uk":"День радянської окупації","xmf":"სხუნუეფიშ ოკუპაციაშ დღა"}, urls: {"en":"https://www.daysoftheyear.com/days/soviet-occupation-day/"}, fst: {era: 1, y: 2010}, notes: {"en":"Created by the government of Georgia"}},
+        {type: "D", st: {mon: 2, d: 27}, ttls: {"en":"Khachapuri Day"}, notes: {"en":"National Khachapuri Day\nCreated by the Gastronomic Association of Georgia"}, fst: {era: 1, y: 2019}, urls: {"en":"https://www.daysoftheyear.com/days/khachapuri-day/"}},
+        {type: "nD", st: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [7]}, end: {mon: 10, d: 1, thruD: 7, wkd: [1]}, ttls: {"az":"Tbilisoba","en":"Tbilisoba","eo":"Tbilisoba","fa":"تبیلیسوبا (جشن روز تفلیس)","he":"טביליסובה","hy":"Թբիլիսոբա","ka":"თბილისობა","ru":"Тбилисоба","uk":"Тбілісоба"}, urls: {"en":"https://www.daysoftheyear.com/days/tbilisoba/"}, fst: {era: 1, y: 1979}},
+        {type: "D", st: {mon: 2, d: 14}, ttls: {"en":"Lamproba"}, notes: {"en":"Festival of Lights"}, urls: {"en":"https://www.daysoftheyear.com/days/lamproba/"}},
         {type: "D", st: {mon: 5, d: 9}, inherits: "Day of Victory Over Fascism", urls: {"en":"https://www.officeholidays.com/holidays/georgia/victory-day"}, fst: {era: 1, y: 1965}},
         
-        {type: "D", st: {mon: 5, d: 17}, titles: {"en":"Day of Family Purity"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/georgia/day-of-family-purity"}},
-        {type: "D", st: {mon: 8, wkd: [7], nth: 1}, titles: {"en":"Tushetoba"}, fst: {era: 1, y: 1990}, urls: {"en":"https://www.daysoftheyear.com/days/tushetoba/"}},
-        {type: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [2]}, end: {mon: 10, d: 16, thruD: 22, wkd: [1]}, titles: {"en":"Rtveli"}, urls: {"en":"https://www.daysoftheyear.com/days/rtveli/"}, emoji: "🍇🍷"},
+        {type: "D", st: {mon: 5, d: 17}, ttls: {"en":"Day of Family Purity"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/georgia/day-of-family-purity"}},
+        {type: "D", st: {mon: 8, wkd: [7], nth: 1}, ttls: {"en":"Tushetoba"}, fst: {era: 1, y: 1990}, urls: {"en":"https://www.daysoftheyear.com/days/tushetoba/"}},
+        {type: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [2]}, end: {mon: 10, d: 16, thruD: 22, wkd: [1]}, ttls: {"en":"Rtveli"}, urls: {"en":"https://www.daysoftheyear.com/days/rtveli/"}, emoji: "🍇🍷"},
     ]
 }

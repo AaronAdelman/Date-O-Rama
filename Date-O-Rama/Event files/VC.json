@@ -1,5 +1,5 @@
 {
-    titles: {"*":"VC"},
+    ttls: {"*":"VC"},
     "//":"Saint Vincent and the Grenadines",
     defLocale: "en",
     cal: "gre",
@@ -12,10 +12,10 @@
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, titles: {"en":"National Worker's Day"}},
+        {type: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, ttls: {"en":"National Worker's Day"}},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", st: {mon: 7, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en":"Vincy Mas (day 1)"}},
-        {type: "D", st: {mon: 7, d: 2, thruD: 8, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, titles: {"en":"Vincy Mas (day 2)"}},
+        {type: "D", st: {mon: 7, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, ttls: {"en":"Vincy Mas (day 1)"}},
+        {type: "D", st: {mon: 7, d: 2, thruD: 8, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, ttls: {"en":"Vincy Mas (day 2)"}},
         {type: "D", st: {mon: 8, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/emancipation-day"}, inherits: "Emancipation Day"},
         {inherits: "Independence Day", type: "D", st: {mon: 10, d: 27}, fst: {era: 1, y: 1979}, urls: {"en":"https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}},
         {type: "D", st: {mon: 10, d: 28, wkd: [2]}, fst: {era: 1, y: 1979}, urls: {"en":"https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}, inherits: "Independence Day (in lieu)"},
@@ -25,6 +25,6 @@
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {inherits: "August Monday", type: "D", st: {mon: 8, wkd: [2], nth: 1}},
-        {type: "D", st: {mon: 5, d: 21}, titles: {"en":"Spiritual Baptist Liberation Day"}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/spiritual-baptist-liberation-day"}, fst: {era: 1, y: 2025}},
+        {type: "D", st: {mon: 5, d: 21}, ttls: {"en":"Spiritual Baptist Liberation Day"}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/spiritual-baptist-liberation-day"}, fst: {era: 1, y: 2025}},
    ]
 }

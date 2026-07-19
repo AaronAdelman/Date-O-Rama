@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GY"},
+    ttls: {"*":"GY"},
     "//":"Guyana",
     "TODO":"Muslim and Hindu holidays",
     defLocale: "en",
@@ -24,7 +24,7 @@
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
         
         {type: "D", st: {mon: 9, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, inherits: "Heritage Day", fst: {era: 1, y: 1957}},
-        {type: "M", st: {mon: 9}, urls: {"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, titles: {"en":"Amerindian Heritage Month "}, fst: {era: 1, y: 1957}},
+        {type: "M", st: {mon: 9}, urls: {"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, ttls: {"en":"Amerindian Heritage Month "}, fst: {era: 1, y: 1957}},
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LA"},
+    ttls: {"*":"LA"},
     "//":"Laos",
     "TODO":"Buddhist holidays",
     defLocale: "en",
@@ -12,14 +12,14 @@
         {type: "D", st: {mon: 3, d: 8}, inherits: "IWD"},
         {type: "D", st: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inherits: "IWD (in lieu)", fst: {era: 1, y: 2021}, urls: {"en":"https://www.officeholidays.com/holidays/lao/international-womens-day"}},
         {type: "D", st: {mon: 4, d: 13, wkd: [1, 7]}, inherits: "Lao New Year Holiday"},
-        {type: "nD", st: {mon: 4, d: 14}, end: {mon: 4, d: 16}, titles: {"en":"Lao New Year", "lo":"ບຸນປີໃໝ່ລາວ"}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-new-year"}},
+        {type: "nD", st: {mon: 4, d: 14}, end: {mon: 4, d: 16}, ttls: {"en":"Lao New Year", "lo":"ບຸນປີໃໝ່ລາວ"}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-new-year"}},
         {type: "D", st: {mon: 4, d: 17, wkd: [2, 4]}, inherits: "Lao New Year Holiday"},
         {type: "D", st: {mon: 4, d: 18, wkd: [3, 5]}, inherits: "Lao New Year Holiday"},
         {type: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/lao/labour-day"}, inherits: "Labour Day"},
-        {titles: {"en":"Women’s Union Establishment Day"}, type: "D", st: {mon: 7, d: 20}, urls: {"en":"https://nationaltoday.com/womens-union-establishment-day/"}, fst: {era: 1, y: 1955}, emoji: "👩"},
-        {titles: {"en":"Women’s Union Establishment Day (in lieu)"}, type: "D", st: {mon: 7, d: 21, thruD: 22, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-women-union-establishment-day"}, fst: {era: 1, y: 1955}, emoji: "👩"},
+        {ttls: {"en":"Women’s Union Establishment Day"}, type: "D", st: {mon: 7, d: 20}, urls: {"en":"https://nationaltoday.com/womens-union-establishment-day/"}, fst: {era: 1, y: 1955}, emoji: "👩"},
+        {ttls: {"en":"Women’s Union Establishment Day (in lieu)"}, type: "D", st: {mon: 7, d: 21, thruD: 22, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-women-union-establishment-day"}, fst: {era: 1, y: 1955}, emoji: "👩"},
 
-        {type: "D", st: {mon: 10, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, titles: {"en":"BOL Establishment Day"}, emoji: "🏦", fst: {era: 1, y: 1968}},
+        {type: "D", st: {mon: 10, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, ttls: {"en":"BOL Establishment Day"}, emoji: "🏦", fst: {era: 1, y: 1968}},
         {type: "D", st: {mon: 12, d: 2}, urls: {"en":"https://nationaltoday.com/lao-national-day/"}, inherits: "N Day", fst: {era: 1, y: 1975}},
 
         {inherits: "Armed Forces Day", type: "D", st: {mon: 1, d: 20}},
@@ -30,6 +30,6 @@
         {type: "D", st: {mon: 3, d: 10, wkd: [2]}, inherits: "IWD (in lieu)", fst: {era: 1, y: 1977}, urls: {"en":"https://www.officeholidays.com/holidays/lao/international-womens-day"}},
     ],
     tpls: {
-        "Lao New Year Holiday": {type: "D", st: {mon: 4, d: 17, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-new-year"}, titles: {"en":"Lao New Year Holiday"}},
+        "Lao New Year Holiday": {type: "D", st: {mon: 4, d: 17, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-new-year"}, ttls: {"en":"Lao New Year Holiday"}},
     }
 }

@@ -1,0 +1,9 @@
+{
+    titles: {"en":"Sikhism (supplemental)", "he":"סיקיזם (נוספים)"},
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.96, green: 0.78, blue: 0.27},
+    evts: [
+        {type: "D", st: {mon: 4, d: 13}, titles: {"en":"International Turban Day"}, urls: {"en":"https://www.sikhiwiki.org/index.php/International_Turban_Day"}, fst: {era: 1, y: 2004}, emoji: "👳‍♂️👳‍♀️"},
+    ]
+}

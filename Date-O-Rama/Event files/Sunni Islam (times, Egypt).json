@@ -1,5 +1,5 @@
 {
-    titles: {"en":"Islam (times, Egypt)", "he":"אסלאם סוני (זמנים, מצרים)"},
+    ttls: {"en":"Islam (times, Egypt)", "he":"אסלאם סוני (זמנים, מצרים)"},
     defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},

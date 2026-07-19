@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TO"},
+    ttls: {"*":"TO"},
     "//":"Tonga",
     "TODO":"Tongan festivals",
     defLocale: "en",
@@ -15,10 +15,10 @@
         {type: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {type: "D", st: {mon: 4, d: 25}, inherits: "Anzac Day", fst: {era: 1, y: 1916}},
         {type: "D", st: {mon: 6, d: 2, thruD: 8, wkd: [2]}, inherits: "Emancipation Day", fst: {era: 1, y: 1970}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-emancipation-day"}},
-        {titles: {"en":"Official Birthday of His Majesty King Tupou VI"}, type: "D", st: {mon: 7, d: 4}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}, inherits: "*BDay*", notes: {"en":"Official Birthday of HM King Tupou VI"}},
+        {ttls: {"en":"Official Birthday of His Majesty King Tupou VI"}, type: "D", st: {mon: 7, d: 4}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}, inherits: "*BDay*", notes: {"en":"Official Birthday of HM King Tupou VI"}},
         {inherits: "Public holiday", type: "D", st: {mon: 7, d: 5, wkd: [2]}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}},
-        {type: "D", st: {mon: 9, d: 17}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}, titles: {"en":"Birthday of HRH Crown Prince"}},
-        {type: "D", st: {mon: 9, d: 18, wkd: [2]}, titles: {"en":"Birthday of HRH Crown Prince (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}},
+        {type: "D", st: {mon: 9, d: 17}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}, ttls: {"en":"Birthday of HRH Crown Prince"}},
+        {type: "D", st: {mon: 9, d: 18, wkd: [2]}, ttls: {"en":"Birthday of HRH Crown Prince (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}},
         {type: "D", st: {mon: 11, d: 3, wkd: [2]}, inherits: "Constitution Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
         {type: "D", st: {mon: 11, d: 4}, inherits: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
         {type: "D", st: {mon: 11, d: 5, wkd: [2]}, inherits: "Constitution Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
@@ -37,7 +37,7 @@
         {type: "D", st: {era: 1, y: 2025, mon: 10, d: 27}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-mystery-cross"}},
     ],
     tpls: {
-        "Tupou I Day": {type: "D", st: {mon: 12, d: 4}, urls: {"en":"https://nationaltoday.com/tupou-i-day-in-lieu/"}, titles: {"en":"Tupou I Day"}},
-        "Tupou I Day (in lieu)": {type: "D", st: {mon: 12, d: 4, wkd: [2, 3, 4, 5, 6]}, inherits: "Tupou I Day", titles: {"en":"Tupou I Day (in lieu)"}},
+        "Tupou I Day": {type: "D", st: {mon: 12, d: 4}, urls: {"en":"https://nationaltoday.com/tupou-i-day-in-lieu/"}, ttls: {"en":"Tupou I Day"}},
+        "Tupou I Day (in lieu)": {type: "D", st: {mon: 12, d: 4, wkd: [2, 3, 4, 5, 6]}, inherits: "Tupou I Day", ttls: {"en":"Tupou I Day (in lieu)"}},
     }
 }

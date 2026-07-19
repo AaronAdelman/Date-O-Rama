@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LC"},
+    ttls: {"*":"LC"},
     "//":"Saint Lucia, AKA Saint Luica",
     defLocale: "en",
     cal: "gre",
@@ -22,7 +22,7 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
-        {type: "D", st: {mon: 9, d: 27}, urls: {"en":"https://www.officeholidays.com/holidays/saint-lucia/julien-alfred-day"}, titles: {"en":"Julien Alfred Day"}, fst: {era: 1, y: 2024}, emoji: "🥇"},
+        {type: "D", st: {mon: 9, d: 27}, urls: {"en":"https://www.officeholidays.com/holidays/saint-lucia/julien-alfred-day"}, ttls: {"en":"Julien Alfred Day"}, fst: {era: 1, y: 2024}, emoji: "🥇"},
         
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},

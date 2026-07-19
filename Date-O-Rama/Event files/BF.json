@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BF"},
+    ttls: {"*":"BF"},
     "//":"Burkina Faso",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -24,6 +24,6 @@
         {inherits: "Martyrs’ Day", type: "D", st: {mon: 10, d: 31}},
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 3, d: 8}, inherits: "Mother’s Day"},
-        {type: "D", st: {mon: 5, d: 15}, titles: {"en":"Traditional Day"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/burkina-faso/burkina-faso-traditional-day"}},
+        {type: "D", st: {mon: 5, d: 15}, ttls: {"en":"Traditional Day"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/burkina-faso/burkina-faso-traditional-day"}},
     ]
 }

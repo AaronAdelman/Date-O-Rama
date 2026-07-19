@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GG"},
+    ttls: {"*":"GG"},
     "//":"Guernsey",
     defLocale: "en",
     cal: "gre",
@@ -23,7 +23,7 @@
         
         {type: "D", st: {mon: 5, d: 9}, inherits: "Liberation Day", urls: {"en":"https://www.daysoftheyear.com/days/guernsey-liberation-day/"}, fst: {era: 1, y: 1945}},
        {type: "D", st: {mon: 8, wkd: [2], nth: 1}, inherits: "Summer Bank Holiday", locations: {"en":"Alderney"}},
-       {type: "D", st: {mon: 12, d: 15}, titles: {"en":"Homecoming Day"}, locations: {"en":"Alderney"}},
+       {type: "D", st: {mon: 12, d: 15}, ttls: {"en":"Homecoming Day"}, locations: {"en":"Alderney"}},
 
     ]
 }

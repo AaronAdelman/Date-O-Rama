@@ -1,0 +1,18 @@
+{
+    titles: {"*":"DJ"},
+    "//":"Djibouti",
+    "TODO":"Muslim holidays",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.41, green: 0.70, blue: 0.91},
+    fst: {era: 1, y: 1977},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Djibouti"},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Independence Day", type: "D", st: {mon: 6, d: 27}, urls: {"en":"https://nationaltoday.com/djibouti-independence-day/"}, fst: {era: 1, y: 1977}},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+
+        {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
+    ]
+}

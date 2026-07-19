@@ -1,5 +1,5 @@
 {
-    titles: {"*":"LB"},
+    ttls: {"*":"LB"},
     "//":"Lebanon",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -10,15 +10,15 @@
     evts: [
         {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", st: {mon: 1, d: 6}, titles: {"en":"Armenian Christmas", "ar":"عيد الميلاد - الأرمن الأرثودكس", "fr":"Noël Arménien", "he":"חג המולד הארמני"}, inherits: "Xmas", fst: {era: 1, y: 2003}, urls: {"en":"https://www.daysoftheyear.com/days/armenian-christmas/"}},
+        {type: "D", st: {mon: 1, d: 6}, ttls: {"en":"Armenian Christmas", "ar":"عيد الميلاد - الأرمن الأرثودكس", "fr":"Noël Arménien", "he":"חג המולד הארמני"}, inherits: "Xmas", fst: {era: 1, y: 2003}, urls: {"en":"https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {type: "D", st: {mon: 2, d: 9}, inherits: "St Maroun"},
         {type: "D", st: {mon: 3, d: 25}, inherits: "Annunciation"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "I Workers’ Day"},
         {type: "D", st: {mon: 5, d: 6}, inherits: "Martyrs’ Day", urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, fst: {era: 1, y: 1916}},
-        {type: "D", st: {mon: 5, d: 25}, titles: {"en":"Liberation and Resistance Day", "ar":"عيد المقاومة و التحرير", "fr":"Fête de la Libération et Résistance"}, fst: {era: 1, y: 2000}, notes: {"en":"Resistance and Liberation Day"}},
-        {type: "D", st: {mon: 8, d: 4}, titles: {"en":"Beirut Explosion Memorial Day"}, fst: {era: 1, y: 2022}, urls: {"en":"https://www.officeholidays.com/holidays/lebanon/beirut-explosion-memorial-day"}},
+        {type: "D", st: {mon: 5, d: 25}, ttls: {"en":"Liberation and Resistance Day", "ar":"عيد المقاومة و التحرير", "fr":"Fête de la Libération et Résistance"}, fst: {era: 1, y: 2000}, notes: {"en":"Resistance and Liberation Day"}},
+        {type: "D", st: {mon: 8, d: 4}, ttls: {"en":"Beirut Explosion Memorial Day"}, fst: {era: 1, y: 2022}, urls: {"en":"https://www.officeholidays.com/holidays/lebanon/beirut-explosion-memorial-day"}},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {inherits: "Independence Day", type: "D", st: {mon: 11, d: 22}, fst: {era: 1, y: 1943}, urls: {"en":"https://nationaltoday.com/lebanon-independence-day/"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
@@ -35,7 +35,7 @@
         {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day"},
         
-        {type: "D", st: {mon: 2, d: 14}, urls: {"en":"https://nationaltoday.com/rafik-hariri-memorial-day/"}, titles: {"en":"Rafik Hariri Memorial Day"}, fst: {era: 1, y: 2005}},
+        {type: "D", st: {mon: 2, d: 14}, urls: {"en":"https://nationaltoday.com/rafik-hariri-memorial-day/"}, ttls: {"en":"Rafik Hariri Memorial Day"}, fst: {era: 1, y: 2005}},
         {type: "nD", st: {era: 1, y: 2025, mon: 12, d: 1, durD: 2}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/lebanon/lebanon-papal-visit"}},
   ]
 }

@@ -1,0 +1,24 @@
+{
+    titles: {"ar":"حركة حباد","arz":"حركة حباد","br":"Chabad","ca":"Habad Lubavitx","cs":"Chabad Lubavič","cv":"Хабад","de":"Chabad","en":"Lubavitch","eo":"Ĥabad Lubaviĉ","es":"Jabad-Lubavitch","fa":"خبد","fi":"Chabad-Lubavitch","fr":"Dynastie hassidique Habad-Loubavitch","he":"חב״ד","hu":"Chábád Lubavics","it":"Chabad Lubavitch","lad":"Habad-Lubavitch","lt":"Chabad Lubavitč","nl":"Chabad","pl":"Chabad-Lubawicz","ps":"د چاباد غورځنګ","pt":"Chabad Lubavitch","ro":"Habad","ru":"Хабад","sk":"Chabad Ľubavič","sr":"Хабад","uk":"ХаБаД","yi":"ליובאוויטש","zh":"哈巴德"},
+    defLocale: "he",
+    cal: "heb*",
+    color: {red: 0.0, green: 0.58, blue: 1.0},
+    evts: [
+        {inherits: "יום־שנה של רבי דובער שניאורי", type: "D", st: {mon: 3, d: 9}, fst: {era: 0, y: 5588}},
+        {titles: {"he":"יום גאולה של רבי דובער שניאור", "en":"Yud Kislev"}, type: "D", st: {mon: 3, d: 10}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=9/10"}},
+        {titles: {"he":"יום גאולה של רבי שניאור זלמן מליאדי", "en":"Yud Tes Kislev"}, type: "D", st: {mon: 3, d: 19}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=9/19"}},
+        {titles: {"he":"יום הספרים היהודיים הבינלאומי", "en":"International Jewish Book Day"}, type: "D", st: {mon: 4, d: 5}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=10/5"}},
+        {titles: {"he":"יום־שנה של שניאור זלמן מליאדי", "en":"Chof Daled Teves"}, type: "D", st: {mon: 4, d: 24}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=10/24"}, inherits: "*DeathAnniv*"},
+        {titles: {"he":"יום־שנה של רבי יוסף יצחק שניאורסאהן", "en":"Yud Shvat"}, type: "D", st: {mon: 5, d: 10}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=11/10"}, inherits: "*DeathAnniv*"},
+        {titles: {"he":"יום־שנה של חיה מושקא שניאורסון", "en":"Chof Beis Shvat"}, type: "D", st: {mon: 5, d: 22}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=11/22"}, inherits: "*DeathAnniv*"},
+        {titles: {"he":"יום הולדת של רבי מנחם מנדל שניאורסון", "en":"Yud Aleph Nissan"}, type: "D", st: {mon: 8, d: 11}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=1/11"}, inherits: "*BDay*"},
+        {titles: {"he":"יום הולדת של רבי שמואל שניאורסון", "en":"Beis Iyar"}, type: "D", st: {mon: 9, d: 2}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=2/2"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 11, d: 3}, inherits: "יום־שנה של רבי מנחם מנדל שניאורסון", fst: {era: 0, y: 5754}},
+        {titles: {"he":"יום גאולה של יוסף יצחק שניאורסאהן", "en":"Yud Beis-Yud Gimmel Tammuz"}, type: "nD", st: {mon: 11, d: 12}, end: {mon: 11, d: 13}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=4/12"}},
+        {titles: {"he":"יום היווסדות של ישיבות תומכי תמימים ליובאוויטש", "en":"Tes Vav Elul"}, type: "D", st: {mon: 13, d: 15
+           }},
+        {titles: {"he":"יום הולדת של שניאור זלמן מליאדי", "en":"Chai Elul"}, type: "D", st: {mon: 13, d: 18}, urls: {"en":"https://www.chabad.org/calendar/view/day.asp?hdate=6/18"}, inherits: "*BDay*"
+        }
+    ]
+}
+

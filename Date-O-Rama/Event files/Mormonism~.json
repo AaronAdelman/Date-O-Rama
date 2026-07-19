@@ -1,0 +1,14 @@
+{
+    titles: {"an":"Mormonismo","ar":"مورمونية","arz":"مورمون","avk":"Mormon neva","az":"Mormonizm","bar":"Mormonendum","bcl":"Mormonismo","be":"Мармоны","be-tarask":"Мармоны","bg":"Мормонство","br":"Mormonegezh","ca":"Mormonisme","ckb":"مۆرمۆنی","cs":"Mormonismus","cy":"Mormoniaeth","de":"Mormonentum","en":"Mormonism","eo":"Mormonismo","es":"Mormonismo","et":"Mormoonlus","eu":"Mormonismo","fa":"مورمونیسم","fi":"Mormonismi","fo":"Mormonarar","fr":"Mormonisme","ga":"Mormannachas","gl":"Mormonismo","he":"מורמוניזם","hr":"Mormon","hu":"Mormonizmus","hy":"Մորմոնականություն","ia":"Mormonismo","id":"Mormonisme","io":"Mormonismo","it":"Mormonismo","jam":"Maamanizam","ka":"მორმონიზმი","kk":"Мормонизм","ko":"모르몬교","ku":"Mormontî","la":"Mormonismus","lad":"Mormonismo","lfn":"Mormonisme","lmo":"Mormonism","lt":"Mormonai","lv":"Mormonisms","mg":"Môrmônisma","mk":"Мормонизам","mn":"Мормоны шашин","mr":"मॉर्मन पंथ","ms":"Perintis Mormon","mt":"Mormoniżmu","nan":"Mormon-phài","nl":"Mormonisme","oc":"Mormonisme","pl":"Mormonizm","pnb":"مورمنیت","ru":"Мормонизм","sk":"Mormonizmus","sl":"Mormonizem","sq":"Mormonët","sr":"Мормонизам","sv":"Mormonism","ta":"மொர்மனியம்","te":"మోర్మన్ మతం","tr":"Mormonluk","uk":"Мормонізм","ur":"مورمنیت","vi":"Mặc Môn giáo","wuu":"摩门教","xmf":"მორმონიზმი","yue":"摩門教","zh":"摩門教","zu":"Ubumormoni"},
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.06, green: 0.18, blue: 0.34},
+    fst: {era: 1, y: 1830},
+    evts: [
+        {type: "D", st: {mon: 4, d: 6}, titles: {"en":"Church of Jesus Christ of Latter-day Saints Day"}, notes: {"en":"Church of Latter-day Saints Day"}, urls: {"en":"https://www.checkiday.com/613ab23a90aaf485f8a384f0d937b66d/church-of-jesus-christ-of-latter-day-saints-day"}, fst: {era: 1, y: 1830}},
+        {type: "D", st: {mon: 7, d: 24}, inherits: "Pioneer Day", fst: {era: 1, y: 1949}},
+        {type: "D", st: {mon: 5, d: 15}, titles: {"en":"Anniversary of the Dedication of the First Mormon Temple in Kirkland, Ohio"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}},
+        {type: "D", st: {mon: 6, d: 27}, titles: {"en":"Anniversary of the Martyrdom of Joseph Smith"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}, inherits: "*DeathAnniv*"},
+
+    ]
+}

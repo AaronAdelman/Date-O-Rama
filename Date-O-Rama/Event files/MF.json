@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MF"},
+    ttls: {"*":"MF"},
     "//":"Saint Martin",
     defLocale: "en",
     cal: "gre",

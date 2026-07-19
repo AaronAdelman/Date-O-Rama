@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BA"},
+    ttls: {"*":"BA"},
     "//":"Bosnia and Herzegovina",
     defLocale: "en",
     cal: "jul",

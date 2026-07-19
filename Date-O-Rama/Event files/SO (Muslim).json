@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SO"},
+    ttls: {"*":"SO"},
     "//":"Somalia",
     defLocale: "en",
     cal: "hiq*",

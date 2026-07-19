@@ -1,5 +1,5 @@
 {
-    titles: {"en":"Islam (times, Karachi)", "he":"אסלאם סוני (זמנים, קראצ׳י)"},
+    ttls: {"en":"Islam (times, Karachi)", "he":"אסלאם סוני (זמנים, קראצ׳י)"},
     defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},

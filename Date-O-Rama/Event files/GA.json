@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GA"},
+    ttls: {"*":"GA"},
     "//":"Gabon",
     "TODO":"Muslim holidays",
     defLocale: "en",

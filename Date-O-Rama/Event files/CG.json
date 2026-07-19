@@ -1,5 +1,5 @@
 {
-    titles: {"*":"CG"},
+    ttls: {"*":"CG"},
     "//":"Congo, AKA Republic of the Congo",
     defLocale: "en",
     cal: "gre",

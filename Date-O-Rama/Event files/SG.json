@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SG"},
+    ttls: {"*":"SG"},
     "//":"Singapore",
     "TODO":"Hindu and Muslim holidays",
     defLocale: "en",
@@ -22,9 +22,9 @@
 
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
-        {type: "D", st: {mon: 7, d: 21}, urls: {"en":"https://nationaltoday.com/racial-harmony-day/"}, titles: {"en":"Racial Harmony Day"}, fst: {era: 1, y: 1997}},
+        {type: "D", st: {mon: 7, d: 21}, urls: {"en":"https://nationaltoday.com/racial-harmony-day/"}, ttls: {"en":"Racial Harmony Day"}, fst: {era: 1, y: 1997}},
         {inherits: "Children’s Day", type: "D", st: {mon: 10, wkd: [6], nth: 1}, fst: {era: 1, y: 2011}},
-        {type: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/total-defense-day/"}, titles: {"en":"Total Defense Day"}, fst: {era: 1, y: 1984}},
+        {type: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/total-defense-day/"}, ttls: {"en":"Total Defense Day"}, fst: {era: 1, y: 1984}},
         {type: "D", st: {mon: 10, d: 1}, inherits: "N Coffee Day"},
         {type: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/singapore-armed-forces-day/"}, inherits: "Armed Forces Day", fst: {era: 1, y: 1969}},
         {inherits: "Grandparents’ Day", type: "D", st: {mon: 11, wkd: [1], nth: 4}, fst: {era: 1, y: 1979}},

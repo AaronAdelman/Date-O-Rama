@@ -1,5 +1,5 @@
 {
-    titles: {"*":"KY"},
+    ttls: {"*":"KY"},
     "//":"Cayman Islands",
     defLocale: "en",
     cal: "gre",

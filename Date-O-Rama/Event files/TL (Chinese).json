@@ -1,5 +1,5 @@
 {
-    titles: {"*":"TL"},
+    ttls: {"*":"TL"},
     "//":"Timor-Leste, AKA East Timor",
     defLocale: "en",
     cal: "chi",

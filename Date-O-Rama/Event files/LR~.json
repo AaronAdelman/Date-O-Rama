@@ -1,0 +1,29 @@
+{
+    titles: {"*":"LR"},
+    "//":"Liberia",
+    "TODO":"Maybe Matilda Newport Day",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.10, green: 0.22, blue: 0.36},
+    fst: {era: 1, y: 1847},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Liberia"},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {inherits: "Armed Forces Day", type: "D", st: {mon: 2, d: 11}, urls: {"en":"https://nationaltoday.com/armed-forces-day-2/"}, fst: {era: 1, y: 1957}},
+        {type: "D", st: {mon: 3, wkd: [4], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/decoration-day"}, titles: {"en":"Decoration Day"}, fst: {era: 1, y: 1917}},
+        {type: "D", st: {mon: 3, d: 15}, titles: {"en":"J.J. Roberts’ Birthday"}, urls: {"en":"https://nationaltoday.com/j-j-roberts-birthday/"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 3, d: 16, wkd: [2]}, titles: {"en":"J.J. Roberts’ Birthday (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/jj-roberts-birthday"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 4, d: 12}, titles: {"en":"National Redemption Day"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/national-redemption-day"}},
+        {type: "D", st: {mon: 4, wkd: [6], nth: 2}, titles: {"en":"National Fast and Prayer Day"}, urls: {"en":"https://nationaltoday.com/national-fast-and-prayer-day/"}, fst: {era: 1, y: 1883}},
+        {type: "D", st: {mon: 5, d: 14}, titles: {"en":"National Unification Day"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/national-unification-day"}, fst: {era: 1, y: 1947}, inherits: "Unification Day"},
+        {type: "D", st: {mon: 7, d: 26}, inherits: "Independence Day", urls: {"en":"https://nationaltoday.com/liberia-independence-day/"}, fst: {era: 1, y: 1847}},
+        {type: "D", st: {mon: 8, d: 24}, inherits: "N Flag Day", fst: {era: 1, y: 1915}, urls: {"en":"https://nationaltoday.com/national-flag-day-in-liberia/"}},
+        {type: "D", st: {mon: 8, d: 25, wkd: [2]}, titles: {"en":"National Flag Day (in lieu)"}, fst: {era: 1, y: 1915}, urls: {"en":"https://nationaltoday.com/national-flag-day-in-liberia/"}},
+        {type: "D", st: {era: 1, y: 2023, mon: 10, wkd: [3], nth: 2}, titles: {"en":"General and Presidential Elections Day"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/liberian-general-elections"}, emoji: "🗳️"},
+        {type: "D", st: {mon: 11, wkd: [5], nth: 1}, urls: {"en":"https://nationaltoday.com/thanksgiving-liberia/"}, inherits: "Thanksgiving", fst: {era: 1, y: 1883}},
+        {type: "D", st: {mon: 11, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/william-tubmans-birthday"}, titles: {"en":"William Tubman’s Birthday"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+
+        {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
+    ]
+}

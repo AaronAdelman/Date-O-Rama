@@ -1,5 +1,5 @@
 {
-    titles: {"*":"PF"},
+    ttls: {"*":"PF"},
     "//":"French Polynesia",
     defLocale: "en",
     cal: "gre",
@@ -17,7 +17,7 @@
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", st: {mon: 6, d: 29}, urls: {"en":"https://nationaltoday.com/internal-autonomy-day/"}, titles: {"en":"Internal Autonomy Day"}},
+        {type: "D", st: {mon: 6, d: 29}, urls: {"en":"https://nationaltoday.com/internal-autonomy-day/"}, ttls: {"en":"Internal Autonomy Day"}},
         {type: "D", st: {mon: 7, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/french-polynesia/bastille-day"}, inherits: "Bastille Day"},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},

@@ -1,13 +1,13 @@
 {
-    titles: {"ar":"المتحدة من أجل التفاعل الثقافي","ca":"UNITED for Intercultural Action","de":"UNITED for Intercultural Action","en":"UNITED for Intercultural Action","eo":"UNITED por Interkultura Agado","es":"UNITED for Intercultural Action","fa":"اتحاد بین فرهنگی","fr":"United for Intercultural Action","ha":"Hadin Kai Don Ayyukan Al’adu Daban-Daban","ru":"UNITED for Intercultural Action","sv":"UNITED against racism"},
+    ttls: {"ar":"المتحدة من أجل التفاعل الثقافي","ca":"UNITED for Intercultural Action","de":"UNITED for Intercultural Action","en":"UNITED for Intercultural Action","eo":"UNITED por Interkultura Agado","es":"UNITED for Intercultural Action","fa":"اتحاد بین فرهنگی","fr":"United for Intercultural Action","ha":"Hadin Kai Don Ayyukan Al’adu Daban-Daban","ru":"UNITED for Intercultural Action","sv":"UNITED against racism"},
     defLocale: "en",
     cal: "gre",
     color: {red: 0.61, green: 0.72, blue: 0.25},
     fst: {era: 1, y: 1993},
     urls: {"en":"https://unitedfia.org/"},
     evts: [
-        {type: "nD", st: {mon: 3, d: 16}, end: {mon: 3, d: 24}, titles: {"en":"European Action Week Against Racism", "fr":"Semaine d’action contre le racisme"}, notes: {"en":"European-wide Action Week Against Racism\nCreated by UNITED for Intercultural Action"}, fst: {era: 1, y: 1993}, urls: {"en":"https://unitedfia.org/campaigns/week-against-racism-21-march/"}},
-        {type: "D", st: {mon: 6, d: 20}, titles: {"en":"International Refugee Day", "fr":"Journée internationale des réfugiés"}, notes: {"en":"Created by UNITED for Intercultural Action"}, fst: {era: 1, y: 2013}, urls: {"en":"https://unitedfia.org/campaigns/international-refugee-day/"}},
+        {type: "nD", st: {mon: 3, d: 16}, end: {mon: 3, d: 24}, ttls: {"en":"European Action Week Against Racism", "fr":"Semaine d’action contre le racisme"}, notes: {"en":"European-wide Action Week Against Racism\nCreated by UNITED for Intercultural Action"}, fst: {era: 1, y: 1993}, urls: {"en":"https://unitedfia.org/campaigns/week-against-racism-21-march/"}},
+        {type: "D", st: {mon: 6, d: 20}, ttls: {"en":"International Refugee Day", "fr":"Journée internationale des réfugiés"}, notes: {"en":"Created by UNITED for Intercultural Action"}, fst: {era: 1, y: 2013}, urls: {"en":"https://unitedfia.org/campaigns/international-refugee-day/"}},
         {type: "D", st: {mon: 11, d: 9}, inherits: "I Day against Fascism and Antisemitism", fst: {era: 1, y: 2001}},
     ]
 }

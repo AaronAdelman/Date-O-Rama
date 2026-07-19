@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AT"},
+    ttls: {"*":"AT"},
     "//":"Austria",
     defLocale: "en",
     cal: "gre",
@@ -31,13 +31,13 @@
         {type: "D", st: {mon: 3, d: 19}, inherits: "St Joseph"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {mon: 5, d: 4}, inherits: "St Florian"},
-        {titles: {"en":"Plebiscite Day", "de":"Tag der Volksabstimmung"}, type: "D", st: {mon: 10, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
+        {ttls: {"en":"Plebiscite Day", "de":"Tag der Volksabstimmung"}, type: "D", st: {mon: 10, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
         {type: "D", st: {mon: 11, d: 11}, inherits: "St Martin of Tours"},
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {type: "D", st: {mon: 9, d: 20}, inherits: "Children’s Day"},
         {type: "D", st: {mon: 9, d: 29}, inherits: "N Coffee Day"},
-        {type: "D", st: {mon: 5, d: 5}, titles: {"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}, inherits: "Holocaust Memorial Day"},
+        {type: "D", st: {mon: 5, d: 5}, ttls: {"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}, inherits: "Holocaust Memorial Day"},
     ]
 }

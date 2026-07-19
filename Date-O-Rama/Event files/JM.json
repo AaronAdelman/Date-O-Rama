@@ -1,5 +1,5 @@
 {
-    titles: {"*":"JM"},
+    ttls: {"*":"JM"},
     "//":"Jamaica",
     defLocale: "en",
     cal: "gre",

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GR"},
+    ttls: {"*":"GR"},
     "//":"Greece",
     defLocale: "en",
     cal: "jul",

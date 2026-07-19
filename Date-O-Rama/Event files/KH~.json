@@ -1,0 +1,29 @@
+{
+    titles: {"*":"KH"},
+    "//":"Cambodia",
+    "TODO":"Buddhist observances, Royal Ploughing Ceremony/Royal Plowing Ceremony, Pchum Ben, Water Festival, other festivals, Khmer calendar observances, Visak Bochea Day",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.98, green: 0.88, blue: 0.13},
+    fst: {era: 1, y: 1953},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cambodia"},
+    evts: [
+        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "D", st: {mon: 1, d: 7}, titles: {"en":"Victory Over Genocide Day", "km":"ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}},
+        {type: "D", st: {mon: 3, d: 8}, inherits: "IWD"},
+        {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "D", st: {mon: 5, d: 14}, titles: {"en":"King Sihamoni’s Birthday", "km":"ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 6, d: 18}, titles: {"en":"King Mother’s Birthday", "km":"ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះមហាក្សត្រី នរោត្ដម មុនីនាថ សីហនុ"}, urls: {"en":"https://nationaltoday.com/kings-mothers-birthday/"}, fst: {era: 1, y: 2004}, inherits: "*BDay*", notes: {"en":"Queen Mother’s Birthday"}},
+        {type: "D", st: {mon: 9, d: 24}, inherits: "Constitution Day"},
+        {type: "D", st: {mon: 10, d: 15}, titles: {"en":"Commemoration Day of King’s Father", "km":"ព្រះរាជពិធីគោរពព្រះវិញ្ញាណក្ខន្ធព្រះករុណាព្រះបាទសម្ដេចព្រះ នរោត្ដម សីហនុ"}, urls: {"en":"https://nationaltoday.com/commemoration-day-of-kings-father/"}, fst: {era: 1, y: 2012}, notes: {"en":"Commemoration Day of the King’s Father"}},
+        {titles: {"en":"Coronation Day of King Sihamoni", "km":"ព្រះរាជពិធីគ្រងព្រះបរមរាជសម្បត្តិរបស់ព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, type: "D", st: {mon: 10, d: 29}, inherits: "*Coronation*"},
+        {inherits: "Independence Day", type: "D", st: {mon: 11, d: 9}, urls: {"en":"https://nationaltoday.com/cambodia-independence-day/"}, fst: {era: 1, y: 1953}},
+
+        {type: "D", st: {mon: 5, d: 20}, titles: {"en":"National Day of Remembrance", "km":"ទិវាជាតិនៃការចងចាំ"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, fst: {era: 1, y: 2018}},
+        {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
+        {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
+        {type: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day"},
+        {type: "D", st: {mon: 12, d: 29}, inherits: "Peace Day", urls: {"en":"https://www.officeholidays.com/holidays/cambodia/cambodia-peace-day"}, fst: {era: 1, y: 2024}},
+        {type: "nD", st: {mon: 4, d: 14, durD: 3}, titles: {"el":"Καμποτζιανή Πρωτοχρονιά","en":"Cambodian New Year","fi":"Kambodžalainen uusivuosi","fr":"Nouvel An khmer","hy":"Ամանորը Կամբոջայում","id":"Tahun Baru Kamboja","km":"ចូលឆ្នាំខ្មែរ","ru":"Новый год в Камбодже","si":"කාම්බෝජ අලුත් අවුරුද්ද","ta":"கம்போடியப் புத்தாண்டு","vi":"Lễ hội Chol Chnam Thmay","zh":"柬埔寨新年"}, notes: {"en":"Khmer New Year\nChol Chnam Thmay"}, urls: {"en":"https://www.daysoftheyear.com/days/cambodian-new-year/"}},
+    ]
+}

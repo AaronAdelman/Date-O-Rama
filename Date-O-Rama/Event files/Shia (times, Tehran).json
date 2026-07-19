@@ -1,5 +1,5 @@
 {
-    titles: {"en":"Shia (times, Tehran)", "he":"שיעה (זמנים, טהראן)"},
+    ttls: {"en":"Shia (times, Tehran)", "he":"שיעה (זמנים, טהראן)"},
     defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},

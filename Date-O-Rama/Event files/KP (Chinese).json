@@ -1,5 +1,5 @@
 {
-    titles: {"*":"KP"},
+    ttls: {"*":"KP"},
     "//":"North Korea",
     "TODO":"Korean calendar observances, Chungmyung Day",
     defLocale: "en",

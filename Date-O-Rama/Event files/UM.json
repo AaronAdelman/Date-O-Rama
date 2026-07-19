@@ -1,5 +1,5 @@
 {
-    titles: {"*":"UM"},
+    ttls: {"*":"UM"},
     "//":"United States Minor Outlying Islands",
     defLocale: "en",
     cal: "gre",

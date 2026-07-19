@@ -1,5 +1,5 @@
 {
-    titles: {"*":"CV"},
+    ttls: {"*":"CV"},
     "//":"Cabo Verde, i.e., Cape Verde",
     defLocale: "en",
     cal: "gre",
@@ -13,7 +13,7 @@
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {type: "D", st: {misc: "E"}, inherits: "Easter"},
         {type: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {inherits: "Youth Day", type: "D", st: {mon: 6, d: 1}, titles: {"en":"Youth Day", "pt":"Dia Mundial da Criança"}},
+        {inherits: "Youth Day", type: "D", st: {mon: 6, d: 1}, ttls: {"en":"Youth Day", "pt":"Dia Mundial da Criança"}},
         {inherits: "Independence Day", type: "D", st: {mon: 7, d: 5}, fst: {era: 1, y: 1975}},
         {type: "D", st: {mon: 8, d: 15}, inherits: "Assumption Day"},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day"},

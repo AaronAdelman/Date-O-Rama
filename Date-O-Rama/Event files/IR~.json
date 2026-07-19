@@ -1,0 +1,21 @@
+{
+    titles: {"*":"IR"},
+    "//":"Iran",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.00, green: 0.59, blue: 0.22},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iran"},
+    fst: {era: 1, y: 1979},
+    evts: [
+        {type: "nD", st: {era: 1, y: 2023, mon: 8, d: 2}, end: {era: 1, y: 2023, mon: 8, d: 3}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/iran/iran-heatwave"}},
+
+        {type: "D", st: {mon: 2, d: 24}, inherits: "Engineer’s Day"},
+        {type: "D", st: {mon: 10, d: 17}, titles: {"en":"Physical Education and Sports Day"}, inherits: "N Sports Day"},
+        {type: "nD", st: {mon: 10, d: 17}, end: {mon: 10, d: 23}, titles: {"en":"Physical Education and Sports Week"}, inherits: "N Sports Day"},
+        {type: "D", st: {mon: 11, d: 28}, inherits: "Navy Day"},
+        {type: "D", st: {mon: 6, d: 4}, titles: {"en":"Demise of Imam Khomeini"}, inherits: "*DeathAnniv*", urls: {"en":"https://www.officeholidays.com/holidays/iran/demise-of-imam-khomeini"}, fst: {era: 1, y: 1989}},
+        
+        {type: "nD", st: {era: 1, y: 2026, mon: 7, d: 4, durD: 3}, inherits: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/iran/ayatollah-ali-khameneis-funeral"}},
+
+    ]
+}

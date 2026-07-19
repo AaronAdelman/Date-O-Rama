@@ -1,5 +1,5 @@
 {
-    titles: {"*":"NG"},
+    ttls: {"*":"NG"},
     "//":"Nigeria",
     "TODO":"Muslim observances",
     defLocale: "en",

@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AX"},
+    ttls: {"*":"AX"},
     "//":"Åland Islands",
     defLocale: "en",
     cal: "gre",
@@ -14,7 +14,7 @@
         {type: "D", st: {mon: 5, d: 1}, inherits: "May Day"},
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", st: {mon: 6, d: 9}, titles: {"da":"Ålands selvstyredag","en":"Åland’s Autonomy Day","es":"Día de la Autonomía de Åland","fi":"Ahvenanmaan itsehallintopäivä","fr":"Jour de l’autonomie d’Åland","nl":"Zelfbestuursdag van Åland","sv":"Ålands självstyrelsedag","tr":"Åland Özerklik Günü"}, urls: {"en":"https://en.wikipedia.org/wiki/%C3%85land%2527s_Autonomy_Day"}},
+        {type: "D", st: {mon: 6, d: 9}, ttls: {"da":"Ålands selvstyredag","en":"Åland’s Autonomy Day","es":"Día de la Autonomía de Åland","fi":"Ahvenanmaan itsehallintopäivä","fr":"Jour de l’autonomie d’Åland","nl":"Zelfbestuursdag van Åland","sv":"Ålands självstyrelsedag","tr":"Åland Özerklik Günü"}, urls: {"en":"https://en.wikipedia.org/wiki/%C3%85land%2527s_Autonomy_Day"}},
         {type: "D", st: {mon: 6, d: 19, thruD: 25, wkd: [6]}, inherits: "Midsummer Eve"},
         {type: "D", st: {mon: 6, d: 20, thruD: 26, wkd: [7]}, inherits: "Midsummer"},
         {type: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inherits: "All Saints Day"},

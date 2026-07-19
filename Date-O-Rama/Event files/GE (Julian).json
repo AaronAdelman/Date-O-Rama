@@ -1,5 +1,5 @@
 {
-    titles: {"*":"GE"},
+    ttls: {"*":"GE"},
     "//":"Georgia",
     defLocale: "en",
     cal: "jul",
@@ -10,7 +10,7 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "O Xmas"},
         {type: "nD", st: {era: 1, y: 2024, mon: 12, d: 26}, end: {era: 1, y: 2024, mon: 12, d: 28}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/georgia/orthodox-christmas"}},
 
-        {type: "D", st: {mon: 12, d: 25}, titles: {"en":"Alilo Parade"}, urls: {"en":"https://www.daysoftheyear.com/days/alilo-parade/"}},
+        {type: "D", st: {mon: 12, d: 25}, ttls: {"en":"Alilo Parade"}, urls: {"en":"https://www.daysoftheyear.com/days/alilo-parade/"}},
         {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
         {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
         {type: "D", st: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},

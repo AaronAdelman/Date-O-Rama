@@ -1,5 +1,5 @@
 {
-    titles: {"*":"XK"},
+    ttls: {"*":"XK"},
     "//":"Kosovo",
     "TODO":"Muslim holidays",
     defLocale: "en",
@@ -18,9 +18,9 @@
         {type: "D", st: {mon: 5, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/kosovo/europe-day"}, inherits: "Europe Day"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {type: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/day-of-ashakalia/"}, titles: {"en":"Day of Ashakalia"}},
-        {type: "D", st: {mon: 3, d: 6}, urls: {"en":"https://nationaltoday.com/day-of-memorial-and-respect-for-veterans/"}, titles: {"en":"Day of Memorial And Respect For Veterans"}},
-        {type: "D", st: {mon: 4, d: 8}, urls: {"en":"https://nationaltoday.com/day-of-romas/"}, titles: {"en":"Day of Romas"}, inherits: "I Romani Day"},
+        {type: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/day-of-ashakalia/"}, ttls: {"en":"Day of Ashakalia"}},
+        {type: "D", st: {mon: 3, d: 6}, urls: {"en":"https://nationaltoday.com/day-of-memorial-and-respect-for-veterans/"}, ttls: {"en":"Day of Memorial And Respect For Veterans"}},
+        {type: "D", st: {mon: 4, d: 8}, urls: {"en":"https://nationaltoday.com/day-of-romas/"}, ttls: {"en":"Day of Romas"}, inherits: "I Romani Day"},
         {type: "D", st: {mon: 6, d: 12}, inherits: "Peace Day", urls: {"en":"https://nationaltoday.com/peace-day/"}, fst: {era: 1, y: 1999}},
     ]
 }

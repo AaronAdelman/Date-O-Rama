@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BV"},
+    ttls: {"*":"BV"},
     "//":"Bouvet Island",
     defLocale: "en",
     cal: "gre",

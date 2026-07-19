@@ -1,5 +1,5 @@
 {
-    titles: {"*":"CM"},
+    ttls: {"*":"CM"},
     "//":"Cameroon",
     "TODO":"Muslim holidays?",
     defLocale: "en",

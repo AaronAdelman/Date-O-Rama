@@ -1,5 +1,5 @@
 {
-    titles: {"*":"FJ"},
+    ttls: {"*":"FJ"},
     "//":"Fiji",
     "TODO":"Muslim and Hindu holidays",
     defLocale: "en",
@@ -19,12 +19,12 @@
         {type: "D", st: {mon: 5, wkd: [2], nth: -1}, inherits: "Ratu Sukuna Day", fst: {era: 1, y: 2010}, last: {era: 1, y: 2023}},
         {type: "D", st: {mon: 5, wkd: [6], nth: -1}, inherits: "Ratu Sukuna Day", fst: {era: 1, y: 2024}},
         {type: "D", st: {mon: 9, d: 7}, inherits: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/fiji/fiji-constitution-day"}, fst: {era: 1, y: 2013}},
-        {type: "D", st: {mon: 10, d: 10}, inherits: "Independence Day", titles: {"en":"Fiji Day", "he":"יום פיג׳י"}, fst: {era: 1, y: 1970}, urls: {"en":"https://nationaltoday.com/fiji-day/"}},
+        {type: "D", st: {mon: 10, d: 10}, inherits: "Independence Day", ttls: {"en":"Fiji Day", "he":"יום פיג׳י"}, fst: {era: 1, y: 1970}, urls: {"en":"https://nationaltoday.com/fiji-day/"}},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
         {type: "D", st: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
-        {type: "D", st: {misc: "E", offsetD: -7}, titles: {"en":"Children’s Sunday"}, inherits: "Children’s Day"},
+        {type: "D", st: {misc: "E", offsetD: -7}, ttls: {"en":"Children’s Sunday"}, inherits: "Children’s Day"},
         {type: "D", st: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {inherits: "N Youth Day", type: "D", st: {mon: 5, d: 4}},
 
@@ -32,7 +32,7 @@
         {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ],
     tpls: {
-        "Ratu Sukuna Day": {type: "D", st: {mon: 5, wkd: [2], nth: -1}, titles: {"en":"Ratu Sukuna Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
-        "Girmit Day": {type: "D", st: {mon: 5, d: 11, thruD: 17, wkd: [2]}, titles: {"en":"Girmit Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"}, inherits: "Indian Arrival Day"},
+        "Ratu Sukuna Day": {type: "D", st: {mon: 5, wkd: [2], nth: -1}, ttls: {"en":"Ratu Sukuna Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
+        "Girmit Day": {type: "D", st: {mon: 5, d: 11, thruD: 17, wkd: [2]}, ttls: {"en":"Girmit Day"}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"}, inherits: "Indian Arrival Day"},
     }
 }

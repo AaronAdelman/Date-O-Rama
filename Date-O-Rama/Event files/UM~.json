@@ -1,0 +1,9 @@
+{
+    titles: {"*":"UM"},
+    "//":"United States Minor Outlying Islands",
+    defLocale: "en",
+    cal: "gre",
+    color: {red: 0.10, green: 0.22, blue: 0.36},
+    evts: [
+    ]
+}

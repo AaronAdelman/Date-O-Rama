@@ -1,5 +1,5 @@
 {
-    titles: {"*":"BH"},
+    ttls: {"*":"BH"},
     "//":"Bahrain",
     "TODO":"Muslim holidays?",
     defLocale: "en",
@@ -21,7 +21,7 @@
         {type: "D", st: {mon: 12, d: 18, wkd: [1]}, urls: {"en":"https://www.officeholidays.com/holidays/bahrain/baharain-national-day"}, inherits: "N Day Holiday", fst: {era: 1, y: 1971}},
         {type: "D", st: {mon: 12, d: 19, wkd: [1, 2]}, urls: {"en":"https://www.officeholidays.com/holidays/bahrain/baharain-national-day"}, inherits: "N Day Holiday", fst: {era: 1, y: 1971}},
         
-        {type: "D", st: {mon: 2, d: 18}, inherits: "Navy Day", titles: {"en":"Royal Bahrain Naval Force Day"}},
+        {type: "D", st: {mon: 2, d: 18}, inherits: "Navy Day", ttls: {"en":"Royal Bahrain Naval Force Day"}},
     ]
 }
 

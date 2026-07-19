@@ -1,5 +1,5 @@
 {
-    titles: {"*":"NP"},
+    ttls: {"*":"NP"},
     "//":"Nepal",
     "TODO":"Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
     defLocale: "en",
@@ -8,9 +8,9 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nepal"},
     fst: {era: 1, y: 1768},
     evts: [
-        {type: "D", st: {mon: 1, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prithvi-jayanti"}, titles: {"en":"Prithvi Jayanti"}, fst: {era: 1, y: 1951}, inherits: "*BDay*"},
-        {type: "D", st: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en":"Nepal National Mourning Day"}},
-        {type: "D", st: {era: 1, y: 2019, mon: 2, d: 28}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, titles: {"en":"Nepal National Mourning Day"}},
+        {type: "D", st: {mon: 1, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prithvi-jayanti"}, ttls: {"en":"Prithvi Jayanti"}, fst: {era: 1, y: 1951}, inherits: "*BDay*"},
+        {type: "D", st: {era: 1, y: 2023, mon: 1, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, ttls: {"en":"Nepal National Mourning Day"}},
+        {type: "D", st: {era: 1, y: 2019, mon: 2, d: 28}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepal-national-mourning-day"}, ttls: {"en":"Nepal National Mourning Day"}},
         {type: "D", st: {era: 1, y: 2023, mon: 3, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/province-1/koshi-public-holiday"}, inherits: "Public Holiday"},
         {type: "nD", st: {era: 1, y: 2026, mon: 3, d: 4, durD: 3}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepal-elections"}, inherits: "Public Holiday"},
         {type: "D", st: {mon: 3, d: 8}, inherits: "IWD", urls: {"en":"https://nationaltoday.com/nari-dibas/"}},
@@ -20,10 +20,10 @@
         {type: "D", st: {era: 1, y: 2023, mon: 9, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/funeral-of-subhash-chandra-nembang"}, inherits: "Public Holiday"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {type: "D", st: {mon: 6, d: 27}, titles: {"en":"Attwari"}, urls: {"en":"https://nationaltoday.com/attwari/"}, fst: {era: 1, y: 2021}},
+        {type: "D", st: {mon: 6, d: 27}, ttls: {"en":"Attwari"}, urls: {"en":"https://nationaltoday.com/attwari/"}, fst: {era: 1, y: 2021}},
         {type: "D", st: {mon: 7, d: 30}, inherits: "Friendship Day"},
         {type: "D", st: {mon: 12, d: 15}, inherits: "I Tea Day", fst: {era: 1, y: 2005}},
         {type: "D", st: {mon: 9, d: 19}, inherits: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepali-constitution-day"}, fst: {era: 1, y: 2016}},
-        {type: "D", st: {mon: 2, d: 19}, titles: {"en":"Prajatantra Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prajatantra-diwas"}, fst: {era: 1, y: 1951}, notes: {"en":"Democracy Day"}},
+        {type: "D", st: {mon: 2, d: 19}, ttls: {"en":"Prajatantra Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prajatantra-diwas"}, fst: {era: 1, y: 1951}, notes: {"en":"Democracy Day"}},
     ]
 }

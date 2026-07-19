@@ -1,11 +1,11 @@
 {
-    titles: {"ca":"Matrixisme","en":"Matrixism","fr":"Matrixisme","id":"Matriksisme","pt":"Matrixismo","ru":"Матриксизм","ta":"மேட்ரிக்சிசம்","tr":"Matriksçilik","uk":"Матриксизм"},
+    ttls: {"ca":"Matrixisme","en":"Matrixism","fr":"Matrixisme","id":"Matriksisme","pt":"Matrixismo","ru":"Матриксизм","ta":"மேட்ரிக்சிசம்","tr":"Matriksçilik","uk":"Матриксизм"},
     defLocale: "en",
     cal: "gre",
     color: {name: "red"},
     fst: {era: 1, y: 2004},
     evts: [
         {type: "D", st: {mon: 4, d: 19}, inherits: "Bicycle Day"},
-        {type: "D", st: {mon: 11, d: 22}, titles: {"en":"Day of Remembrance and Reflection"}},
+        {type: "D", st: {mon: 11, d: 22}, ttls: {"en":"Day of Remembrance and Reflection"}},
     ]
 }

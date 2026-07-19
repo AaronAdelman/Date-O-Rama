@@ -1,5 +1,5 @@
 {
-    titles: {"*":"SG"},
+    ttls: {"*":"SG"},
     "//":"Singapore",
     defLocale: "en",
     cal: "chi",
@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Singapore"},
     evts: [
         {type: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "Chinese New Year"},
-        {type: "D", st: {mon: 1, d: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/singapore/chinese-new-year"}, titles: {"en":"Chinese New Year (in lieu)"}},
+        {type: "D", st: {mon: 1, d: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/singapore/chinese-new-year"}, ttls: {"en":"Chinese New Year (in lieu)"}},
         {type: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "D", st: {mon: 4, d: 15}, inherits: "Vesak", urls: {"en":"https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
     ]

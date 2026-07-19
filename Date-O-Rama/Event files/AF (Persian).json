@@ -1,5 +1,5 @@
 {
-    titles: {"*":"AF"},
+    ttls: {"*":"AF"},
     "//":"Afghanistan",
     defLocale: "en",
     cal: "his",

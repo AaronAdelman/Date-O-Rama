@@ -1,5 +1,5 @@
 {
-    titles: {"*":"MR"},
+    ttls: {"*":"MR"},
     "//":"Mauritania",
     defLocale: "en",
     cal: "hiq*",
