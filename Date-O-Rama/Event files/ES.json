@@ -46,7 +46,7 @@
         {type: "D", st: {mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/spain/st-johns-day"}, inherits: "St John"},
         {type: "D", st: {mon: 7, d: 25}, urls: {"en":"https://www.officeholidays.com/holidays/spain/st-james-day"}, inherits: "St James", notes: {"en":"Galician National Day", "es":"Día da Patria Galega"}},
         {ttls: {"en":"Day of Cantabria Institutions", "es":"Día de las Instituciones de Cantabria"}, type: "D", st: {mon: 7, d: 28}, urls: {"en":"https://nationaltoday.com/day-of-cantabria-institutions/"}, fst: {era: 1, y: 1993}},
-        {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Feast of Santa Maria of Africa", "es":"Santa María de África"}, urls: {"en":"https://nationaltoday.com/our-lady-of-africa/"}, locations: {"en":"Ceuta"}, notes: {"en":"Day of Our Lady of Africa", "es":"Dia de Nuestra Señora de África"}},
+        {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Feast of Santa Maria of Africa", "es":"Santa María de África"}, urls: {"en":"https://nationaltoday.com/our-lady-of-africa/"}, locs: {"en":"Ceuta"}, notes: {"en":"Day of Our Lady of Africa", "es":"Dia de Nuestra Señora de África"}},
         {type: "D", st: {mon: 8, d: 15}, urls: {"en":"https://nationaltoday.com/assumption-of-mary-spain/"}, inherits: "Assumption Day"},
         {ttls: {"en":"Ceuta Day", "es":"Dia de Ceuta"}, type: "D", st: {mon: 9, d: 2}, urls: {"en":"https://nationaltoday.com/ceuta-day/"}, emoji: "🏙️", notes: {"en":"Day of the Independent City of Ceuta"}},
         {type: "D", st: {mon: 9, d: 8}, ttls: {"en":"Day of Asturias", "es":"Día de Asturias"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/asturias/feast-of-our-lady-of-victories"}},
@@ -59,7 +59,7 @@
         {type: "D", st: {mon: 9, d: 25, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/spain/catalonia/la-merce"}, ttls: {"en":"La Mercè (in lieu)"}, fst: {era: 1, y: 1615}},
         {type: "D", st: {mon: 10, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/spain/valenciana/valencian-community-day"}, ttls: {"en":"Day of the Valencian Community", "es":"Dia de la Comunitat Valenciana"}, notes: {"en":"Valencian Community Day"}},
         {type: "D", st: {mon: 10, d: 12}, ttls: {"ar":"العيد الوطني في إسبانيا","en":"National Day of Spain","eo":"Nacia Hispana Festotago","es":"Fiesta Nacional de España","eu":"Espainiako Egun Nazionala","fr":"Fête nationale espagnole","gl":"Festa Nacional de España","it":"Festa nazionale spagnola","pt":"Festa Nacional da Espanha","ro":"Ziua Hispanității","ru":"День испанской нации","sr":"Дан државности Шпаније","uk":"Національний День Іспанії","zh":"西班牙国庆日"}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-spain/"}, inherits: "N Day", notes: {"en":"Hispanic Day", "es":"Día de la Hispanidad"}, fst: {era: 1, y: 1918}},
-        {type: "D", st: {mon: 10, d: 13, wkd: [2]}, ttls: {"en":"National Day of Spain (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-spain/"}, inherits: "N Day", notes: {"en":"Hispanic Day (in lieu)"}, fst: {era: 1, y: 1918}, locations: {"en":"Andalucía, Aragon, and Extremadura"}},
+        {type: "D", st: {mon: 10, d: 13, wkd: [2]}, ttls: {"en":"National Day of Spain (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-spain/"}, inherits: "N Day", notes: {"en":"Hispanic Day (in lieu)"}, fst: {era: 1, y: 1918}, locs: {"en":"Andalucía, Aragon, and Extremadura"}},
         {type: "D", st: {mon: 10, d: 25}, ttls: {"en":"Basque National Day", "es":"Euskadi Eguna"}},
         {type: "D", st: {mon: 11, d: 1}, inherits: "All Saints Day", urls: {"en":"https://nationaltoday.com/all-saints-day-spain/"}},
         {type: "D", st: {mon: 11, d: 9}, ttls: {"en":"Feast of Our Lady of the Almudena"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/madrid/our-lady-of-the-almudena"}},
@@ -83,7 +83,7 @@
         {type: "D", st: {mon: 2, d: 14}, inherits: "Valentine’s Day", fst: {era: 1, y: 496}},
         {type: "D", st: {mon: 8, d: 1}, ttls: {"en":"Albariño Day"}, urls: {"en":"https://www.daysoftheyear.com/days/albarino-day/"}, emoji: "🍷", fst: {era: 1, y: 1953}},
         {type: "D", st: {mon: 7, d: 20}, inherits: "Friendship Day"},
-        {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Feast of the White Virgin"}, urls: {"en":"https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en":"Álava"}},
+        {type: "D", st: {mon: 8, d: 5}, ttls: {"en":"Feast of the White Virgin"}, urls: {"en":"https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locs: {"en":"Álava"}},
         {type: "D", st: {mon: 8, wkd: [1], nth: 2}, ttls: {"en":"Day of Cantabria", "es":"Día de Cantabria"}, notes: {"en":"Cantabria Day"}, urls: {"en":"https://diadecantabria.com/en/", "es":"https://diadecantabria.com/"}, fst: {era: 1, y: 1967}, emoji: "🏙️"},
         {type: "D", st: {mon: 12, d: 3}, urls: {"en":"https://nationaltoday.com/day-of-navarre/"}, ttls: {"en":"Day of Navarre"}, emoji: "🏙️"},
         {type: "D", st: {mon: 1, d: 2}, urls: {"en":"https://nationaltoday.com/reconquest-day/"}, ttls: {"en":"Reconquest Day"}},
@@ -95,7 +95,7 @@
         {type: "nD", st: {mon: 7, d: 7}, end: {mon: 7, d: 14}, ttls: {"ar":"جري الثيران","bn":"ষাঁড়ের সাথে দৌড়ানো","de":"Stierlauf","en":"Running of the bulls","eo":"Taŭrokuro","es":"Encierro","eu":"Entzierro","fi":"Härkäjuoksu","fr":"Encierro","ga":"Táinrith na dtarbh","gl":"Encerro de touros","hr":"Utrka s bikovima","id":"Encierro","it":"Encierro","ja":"エンシエロ","mk":"Енсиеро","nl":"Stierenrennen","pl":"Encierro","pt":"Encierro","ru":"Энсьерро","sh":"Encierro","sl":"Tek z biki","sr":"Енсијеро","sv":"Tjurrusning","uk":"Енсьєро","vi":"Lễ hội chạy với bò","zh":"奔牛節"}, urls: {"en":"https://www.runningofthebulls.com/"}, fst: {era: 1, y: 1300}, emoji: "🐂"},
         {type: "D", st: {misc: "E"}, ttls: {"ca":"Aberri Eguna","en":"Aberri Eguna","es":"Aberri Eguna","eu":"Aberri Eguna","fr":"Aberri Eguna","gl":"Aberri Eguna","nb":"Aberri Eguna","sv":"Aberri Eguna"}, urls: {"en":"https://en.wikipedia.org/wiki/Aberri_Eguna"}, notes: {"en":"Fatherland Day"}, fst: {era: 1, y: 1932}},
         {type: "nD", st: {mon: 6, d: 19}, end: {mon: 6, d: 24}, ttls: {"ca":"Fogueres de Sant Joan","de":"Hogueras de San Juan","en":"Hogueras de Alicante","eo":"Fajroj de Alakanto","es":"Hogueras de Alicante","la":"Pyrae Lucenti","ru":"Костры святого Иоанна Крестителя","sr":"Ноћ Сан Хуана"}, urls: {"en":"https://en.wikipedia.org/wiki/Hogueras_de_Alicante"}, notes: {"en":"Bonfires of Saint John"}, fst: {era: 1, y: 1983}, emoji: "🔥"},
-        {type: "D", st: {misc: "E", offsetD: -47}, ttls: {"en":"Powder Day", "es":"Día de los Polvos"}, notes: {"en":"Day of the Powder"}, locations: {"en":"Tolox"}, urls: {"en":"https://en.wikipedia.org/wiki/Powder_Day"}},
+        {type: "D", st: {misc: "E", offsetD: -47}, ttls: {"en":"Powder Day", "es":"Día de los Polvos"}, notes: {"en":"Day of the Powder"}, locs: {"en":"Tolox"}, urls: {"en":"https://en.wikipedia.org/wiki/Powder_Day"}},
 
     ]
 }

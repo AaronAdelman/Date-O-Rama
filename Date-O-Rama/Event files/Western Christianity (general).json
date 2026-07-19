@@ -165,7 +165,7 @@
         {ttls: {"en":"Feast of Saint Monica"}, type: "D", st: {mon: 8, d: 27}},
         {ttls: {"en":"Feast of Saint Augustine of Hippo"}, type: "D", st: {mon: 8, d: 28}},
         {type: "D", st: {mon: 8, d: 29}, inherits: "Beheading of Saint John the Baptist"},
-        {inherits: "St Rose of Lima", type: "D", st: {mon: 8, d: 30}, locations: {"en":"Latin America"}},
+        {inherits: "St Rose of Lima", type: "D", st: {mon: 8, d: 30}, locs: {"en":"Latin America"}},
 
         {ttls: {"en":"Feast of Saint Gregory the Great"}, type: "D", st: {mon: 9, d: 3}},
 

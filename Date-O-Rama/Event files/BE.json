@@ -38,7 +38,7 @@
         {type: "D", st: {mon: 11, d: 15}, ttls: {"de":"Festtag des Königs","en":"King’s Feast","es":"Día del Rey","fr":"Fête du Roi","nl":"Koningsdag"}, urls: {"en":"https://en.wikipedia.org/wiki/King%27s_Feast"}, fst: {era: 1, y: 1866}, emoji: "🤴"},
         {type: "D", st: {mon: 12, d: 26}, inherits: "Boxing Day"},
 
-        {type: "D", st: {mon: 8, d: 15}, inherits: "Mother’s Day", locations: {"en":"Antwerp"}},
+        {type: "D", st: {mon: 8, d: 15}, inherits: "Mother’s Day", locs: {"en":"Antwerp"}},
         {type: "D", st: {mon: 3, d: 20}, inherits: "Engineer’s Day"},
         {type: "D", st: {mon: 11, d: 11}, inherits: "Start of Fasching", fst: {era: 1, y: 1234}},
         {type: "D", st: {mon: 9, d: 29}, inherits: "N Coffee Day"},

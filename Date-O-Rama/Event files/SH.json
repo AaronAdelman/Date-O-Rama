@@ -16,7 +16,7 @@
         {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
         {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
-        {type: "D", st: {mon: 8, d: 14}, ttls: {"en":"Anniversary Day"}, locations: {"en":"Tristan da Cunha"}},
+        {type: "D", st: {mon: 8, d: 14}, ttls: {"en":"Anniversary Day"}, locs: {"en":"Tristan da Cunha"}},
         {type: "D", st: {mon: 8, wkd: [2], nth: -1}, inherits: "August Bank Holiday"},
         {type: "D", st: {mon: 11, wkd: [6], nth: 3}, inherits: "King’s Birthday"},
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},

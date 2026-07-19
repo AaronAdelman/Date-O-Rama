@@ -33,7 +33,7 @@
         {ttls: {"en":"Queen’s Day", "he":"יום המלכה", "nl":"Koninginnedag"}, type: "D", st: {mon: 4, d: 30}, emoji: "👸", urls: {"en":"https://nationaltoday.com/queens-day/"}},
         {type: "D", st: {mon: 12, d: 24}, inherits: "Xmas Eve"},
         {type: "D", st: {mon: 3, wkd: [4], nth: 3}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", type: "D", st: {mon: 9, d: 25}, locations: {"en":"Oosterhout"}},
+        {inherits: "Children’s Day", type: "D", st: {mon: 9, d: 25}, locs: {"en":"Oosterhout"}},
         {type: "D", st: {mon: 11, d: 20}, inherits: "Children’s Day"},
         {type: "D", st: {mon: 5, d: 4}, inherits: "Martyrs’ Day", ttls: {"de":"Nationale Dodenherdenking","en":"Remembrance of the Dead","eo":"Rememoro de la mortintoj en Nederlando","fr":"Journée nationale du Souvenir","fy":"Nasjonale Deadebetinking","he":"יום הזיכרון","id":"Hari Peringatan Nasional (Belanda)","li":"Doeëjeherdeenking","ms":"Peringatan untuk Yang Terkorban","nds-nl":"Naasjonoale Dodenweerdenken","nl":"Nationale Dodenherdenking","pap":"Nationale Dodenherdenking","ru":"День поминовения","sv":"Nationella dagen för åminnelse av döda"}, urls: {"en":"https://nationaltoday.com/national-remembrance-day-in-netherlands/"}, fst: {era: 1, y: 1945}},
         {type: "D", st: {mon: 7, d: 26}, inherits: "Independence Day", fst: {era: 1, y: 1581}},

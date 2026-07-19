@@ -1,9 +1,0 @@
-{
-    titles: {"en":"Druzism", "he":"דרוזים", "ar":"دروز"},
-    defLocale: "en",
-    cal: "hiq*",
-    color: {red: 0.21, green: 0.49, blue: 0.31},
-    evts: [
-        {inherits: "Eid al-Adha", type: "nD", st: {mon: 12, d: 10}, end: {mon: 12, d: 13}},
-        ]
-    }
