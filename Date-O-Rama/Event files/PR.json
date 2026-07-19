@@ -31,11 +31,11 @@
         {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
         
         {type: "D", st: {mon: 1, wkd: [2], nth: 2}, titles: {"en":"Birthday of Eugenio María de Hostos", "es":"Natalicio de Eugenio María de Hostos"}, urls: {"en":"https://en.wikipedia.org/wiki/Eugenio_Mar%C3%ADa_de_Hostos"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 2, d: 18}, titles: {"en":"Birthday of Luis Muñoz Marín", "es":"Natalicio de Luis Muñoz Marín"}, urls: {"en":"https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 2, d: 18}, titles: {"en":"Birthday of Luis Muñoz Marín", "es":"Natalicio de Luis Muñoz Marín"}, urls: {"en":"https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn"}, inherits: "*BDay*", last: {era: 1, y: 2013}},
         {titles: {"en":"Birthday of José de Diego", "es":"Natalicio de José de Diego"}, type: "D", st: {mon: 4, d: 16}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_de_Diego"}, inherits: "*BDay*"},
-        {titles: {"en":"Birthday of Don Luis Muñoz Rivera", "es":"Natalicio de Don Luis Muñoz Rivera"}, type: "D", st: {mon: 7, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/birthday-of-don-luis-munoz-rivera/"}, inherits: "*BDay*"},
-        {inherits: "Constitution Day", type: "D", st: {mon: 7, d: 25}, fst: {era: 1, y: 1953}, urls: {"en":"https://nationaltoday.com/puerto-rican-constitution-day/"}, titles: {"en":"Puerto Rico Constitution Day", "es":"Constitución de Puerto Rico"}},
-        {titles: {"en":"Birthday of Dr. José Celso Barbosa", "es":"Natalicio de Dr. José Celso Barbosa"}, type: "D", st: {mon: 7, d: 27}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*"},
+        {type: "D", st: {mon: 7, wkd: [2], nth: 3}, titles: {"en":"Birthday of Don Luis Muñoz Rivera", "es":"Natalicio de Don Luis Muñoz Rivera"}, urls: {"en":"https://nationaltoday.com/birthday-of-don-luis-munoz-rivera/"}, inherits: "*BDay*", last: {era: 1, y: 2013}},
+        {type: "D", st: {mon: 7, d: 25}, inherits: "Constitution Day", fst: {era: 1, y: 1953}, urls: {"en":"https://nationaltoday.com/puerto-rican-constitution-day/"}, titles: {"en":"Puerto Rico Constitution Day", "es":"Constitución de Puerto Rico"}},
+        {type: "D", st: {mon: 7, d: 27}, titles: {"en":"Birthday of Dr. José Celso Barbosa", "es":"Natalicio de Dr. José Celso Barbosa"}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*", last: {era: 1, y: 2013}},
         {type: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en":"Day of Illustrious Puerto Ricans"}},
 
         {type: "D", st: {mon: 1, d: 5}, inherits: "12th Night"},
