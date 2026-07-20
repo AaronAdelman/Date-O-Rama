@@ -206,7 +206,7 @@
         {type: "D", st: {mon: 7, d: 10}, ttls: {"en":"National Fish Farmers’ Day"}, emoji: "🐟"},
         {type: "D", st: {mon: 7, d: 23}, inherits: "N Broadcasting Day"},
         {type: "D", st: {mon: 8, wkd: [1], nth: 1}, inherits: "Friendship Day", urls: {"en":"https://www.daysoftheyear.com/days/friendship-day-in-india/"}, notes: {"en":"Created by Joyce Hall of Hallmark Cards"}},
-        {type: "D", st: {mon: 8, d: 7}, ttls: {"en":"National Handloom Day"}, urls: {"en":"https://vikaspedia.in/social-welfare/entrepreneurship/national-handloom-day"}, fst: {era: 1, y: 2015}, emoji: "🧵"},
+        {type: "D", st: {mon: 8, d: 7}, ttls: {"en":"National Handloom Day","ta":"தேசிய கைத்தறி நாள்","te":"జాతీయ చేనేత దినోత్సవం"}, urls: {"en":"https://www.daysoftheyear.com/days/national-handloom-day/"}, fst: {era: 1, y: 2015}, emoji: "🧵", notes: {"en":"Created by the government of India"}},
         {type: "D", st: {mon: 8, d: 13}, ttls: {"en":"World Organ Donation Day"}, inherits: "*MedAwareness*"},
         {type: "D", st: {mon: 8, d: 30}, ttls: {"en":"Small Industry Day", "he":"יום התעשייה הקטנה"}},
         {type: "D", st: {mon: 9, d: 11}, ttls: {"en":"Devendrar Jayanti","ta":"இமானுவேல் சேகரன் நினைவு நாள்"}, locs: {"en":"Southern Tamil Nadu"}},

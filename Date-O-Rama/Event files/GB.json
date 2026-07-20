@@ -24,7 +24,7 @@
         {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
         {type: "D", st: {mon: 7, d: 12}, inherits: "12th", urls: {"en":"https://nationaltoday.com/battle-of-the-boyne/"}, fst: {era: 1, y: 1690}},
         {type: "D", st: {mon: 7, d: 13, thruD: 14, wkd: [2]}, ttls: {"en":"The Twelfth (in lieu)"}, notes: {"en":"Battle of the Boyne (in lieu)\nOrangemen’s Day (in lieu)"}, inherits: "12th", urls: {"en":"https://www.officeholidays.com/holidays/united-kingdom/battle-of-the-boyne"}, fst: {era: 1, y: 1690}},
-        {type: "D", st: {mon: 8, d: 4, thruD: 10, wkd: [4]}, ttls: {"en":"National Opportunity Day"}, fst: {era: 1, y: 2023}, emoji: "🔑", urls: {"en":"https://www.glasgowkelvin.ac.uk/news-events/events/national-opportunity-day"}},
+        {type: "D", st: {mon: 8, d: 4, thruD: 10, wkd: [4]}, ttls: {"en":"National Opportunity Day"}, fst: {era: 1, y: 2023}, emoji: "🔑", urls: {"en":"https://www.glasgowkelvin.ac.uk/news-events/events/national-opportunity-day"}, notes: {"en":"Created by Glasgow Kelvin College"}},
         {type: "D", st: {mon: 8, wkd: [2], nth: 1}, inherits: "Summer Bank Holiday", locs: {"en":"Scotland"}, urls: {"en":"https://nationaltoday.com/festival-monday/"}},
         {type: "D", st: {mon: 8, wkd: [2], nth: -1}, inherits: "Summer Bank Holiday", locs: {"en":"England and Wales"}, urls: {"en":"https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en":"Late Summer Bank Holiday\nAugust Bank Holiday"}},
         {type: "D", inherits: "Remembrance Sunday", st: {mon: 11, wkd: [1], d: 8, thruD: 14}, fst: {era: 1, y: 1919}},
