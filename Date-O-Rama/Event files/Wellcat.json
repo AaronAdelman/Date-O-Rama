@@ -68,7 +68,7 @@
             {type: "D", st: {mon: 7, d: 23}, ttls: {"en":"Hot Enough For Ya Day"}, fst: {era: 1, y: 1989}},
             {type: "D", st: {mon: 7, d: 27}, ttls: {"en":"Take Your Houseplants for a Walk Day"}, notes: {"en":"Take Your Houseplant for a Walk Day\nTake Your Pants for a Walk Day"}},
             {type: "D", st: {mon: 8, d: 7}, ttls: {"en":"Particularly Preposterous Packaging Day"}},
-            {type: "D", st: {mon: 8, d: 8}, ttls: {"en":"Sneak Some Zucchini onto Your Neighbors’ Porch Day"}},
+            {type: "D", st: {mon: 8, d: 8}, ttls: {"en":"Sneak Some Zucchini onto Your Neighbors’ Porch Day"}, notes: {"en":"National Sneak Some Zucchini Onto Your Neighbors’ Porch Day"}},
             {type: "D", st: {mon: 8, d: 18}, ttls: {"en":"Bad Poetry Day"}},
             {type: "D", st: {mon: 8, d: 22}, ttls: {"en":"Southern Hemisphere Hoodie-Hoo Day"}},
             {type: "D", st: {mon: 8, d: 28}, ttls: {"en":"Race Your Mouse Around the Icons Day"}},
