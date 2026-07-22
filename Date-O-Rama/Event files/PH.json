@@ -40,7 +40,7 @@
         {type: "D", ttls: {"en":"National Police Anniversary Day", "fil":"Araw ng Pagkakatatag ng Pambansang Pulisya"}, st: {mon: 1, d: 29}, fst: {era: 1, y: 1992}, inherits: "Police Day"},
         {type: "D", st: {mon: 2, d: 2}, inherits: "Constitution Day", fst: {era: 1, y: 2002}},
         {type: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/philippine-american-war-memorial-day/"}, ttls: {"en":"Philippine-American War Memorial Day", "fil":"Araw ng Paggunita sa Digmaang Pilipino–Amerikano"}, emoji: "🇵🇭🇺🇸", fst: {era: 1, y: 1902}},
-        {inherits: "N Women’s Day", type: "D", st: {mon: 3, d: 8}},
+        {type: "D", st: {mon: 3, d: 8}, inherits: "N Women’s Day"},
         {type: "D", st: {mon: 3, d: 23}, urls: {"en":"https://nationaltoday.com/founding-anniversary-of-the-philippine-army/"}, notes: {"en":"Founding Anniversary of the Philippine Army"}, fst: {era: 1, y: 1936}, ttls: {"en":"Philippine Army Day and Anniversary of the Tejeros Convention", "fil":"Araw ng Hukbong Katihan ng Pilipinas"}, inherits: "Army Day"},
         {type: "D", st: {mon: 4, d: 27}, urls: {"en":"https://nationaltoday.com/lapu-lapu-day/"}, ttls: {"en":"Lapu Lapu Day", "fil":"Araw ni Lapu-Lapu"}, fst: {era: 1, y: 2019}},
         {inherits: "Radio Day", type: "D", st: {mon: 5, d: 8}},

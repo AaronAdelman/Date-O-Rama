@@ -54,7 +54,7 @@
         {type: "D", st: {mon: 10, d: 18}, ttls: {"en":"Interational Necktie Day"}, notes: {"en":"Cravat Day\nAn celebration of a totally useless fashion accessory that may reduce blood flow to the brain."}, fst: {era: 1, y: 2008}, urls: {"en":"https://www.daysoftheyear.com/days/necktie-day/"}},
         {type: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2006}, ttls: {"en":"Day of Remembrance of the Holocaust and for the Prevention of Crimes against Humanity"}},
         {type: "D", st: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", fst: {era: 1, y: 2011}},
-        {type: "D", st: {mon: 8, wkd: [1], nth: 1}, ttls: {"en":"Sinjska Alka"}, urls: {"en":"https://www.alka.hr/en"}, fst: {era: 1, y: 1715}},
+        {type: "D", st: {mon: 8, wkd: [1], nth: 1}, ttls: {"en":"Sinjska Alka"}, urls: {"en":"https://www.alka.hr/en","hr":"https://www.alka.hr/"}, fst: {era: 1, y: 1715}, emoji: "🏇"},
         {type: "D", st: {mon: 11, d: 18}, inherits: "Remembrance Day", urls: {"en":"https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, fst: {era: 1, y: 2020}},
     ]
 }

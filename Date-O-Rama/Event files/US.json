@@ -426,7 +426,7 @@
         {type: "D", st: {mon: 7, wkd: [6], nth: 2}, ttls: {"en":"Collector Car Appreciation Day"}, urls: {"en":"https://www.semasan.com/collector-car-appreciation-day"}, notes: {"en":"CCAD\nCreated by Jon Tester and Richard Burr"}, fst: {era: 1, y: 2010}, emoji: "🚗"},
         {type: "D", st: {mon: 8, d: 1}, ttls: {"en":"Colorado Day", "he":"יום קולורדו"}, fst: {era: 1, y: 1907}, urls: {"en":"https://www.daysoftheyear.com/days/colorado-day/"}},
         {type: "D", st: {mon: 8, d: 14}, ttls: {"en":"Navajo Code Talkers Day", "he":"יום דוברי הקוד מבני הנאוואחו"}, notes: {"en":"U.S. Victory Day"}, urls: {"en":"https://nationaltoday.com/navajo-code-talkers-day/"}, fst: {era: 1, y: 1982}, notes: {"en":"National Navajo Code Talkers Day"}},
-        {type: "D", st: {mon: 8, wkd: [1], nth: 2}, ttls: {"en":"National Spirit of ’45 Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-spirit-of-45-day/"}, fst: {era: 1, y: 2008}},
+        {type: "D", st: {mon: 8, wkd: [1], nth: 2}, ttls: {"en":"National Spirit of ’45 Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-spirit-of-45-day/"}, fst: {era: 1, y: 2008}, notes: {"en":"Created by Edith Shain"}},
         {type: "D", st: {mon: 8, d: 16}, inherits: "I Dadaism Month", fst: {era: 1, y: 2006}},
         {type: "D", st: {mon: 8, d: 16}, ttls: {"ar":"يوم معركة بينينجتون","en":"Bennington Battle Day"}, fst: {era: 1, y: 1977}, urls: {"en":"https://nationaltoday.com/bennington-battle-day/"}},
         {type: "D", st: {mon: 8, d: 15, wkd: [6]}, inherits: "Bennington Battle Day (in lieu)", fst: {era: 1, y: 1977}},

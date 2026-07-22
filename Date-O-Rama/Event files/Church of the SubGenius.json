@@ -79,7 +79,7 @@
             {type: "D", st: {mon: 3, d: 11}, ttls: {"en":"Saint Bela Lugosi"}},
             {type: "D", st: {mon: 3, d: 12}, ttls: {"en":"Saint Houdini"}},
             {type: "D", st: {mon: 3, d: 13}, ttls: {"en":"Saint Firesign"}},
-            {type: "D", st: {mon: 3, d: 14}, ttls: {"en":"Saint Archimedes and Pi approximation"}},
+            {type: "D", st: {mon: 3, d: 14}, ttls: {"en":"Saint Archimedes"}},
             {type: "D", st: {mon: 3, d: 15}, ttls: {"en":"Saint Edward G. Wood"}},
             {type: "D", st: {mon: 3, d: 16}, ttls: {"en":"Saint Hercules"}},
             {type: "D", st: {mon: 3, d: 17}, ttls: {"en":"Feast of the Blessed Leprechaun/All Snakes’ Day"}},
@@ -209,7 +209,7 @@
             {type: "D", st: {mon: 7, d: 19}, ttls: {"en":"Saint Dr. Doom/Saint Thulsa Doom"}},
             {type: "D", st: {mon: 7, d: 20}, ttls: {"en":"Saint Pope John XII"}},
             {type: "D", st: {mon: 7, d: 21}, ttls: {"en":"Saint Alan Moore"}},
-            {type: "D", st: {mon: 7, d: 22}, ttls: {"en":"Saint Karl Marx/Saint James Whale and 1/Pi approximation"}},
+            {type: "D", st: {mon: 7, d: 22}, ttls: {"en":"Saint Karl Marx/Saint James Whale and 1"}},
             {type: "D", st: {mon: 7, d: 23}, ttls: {"en":"Saint Groucho Marx"}},
             {type: "D", st: {mon: 7, d: 24}, ttls: {"en":"Saint Sylvester Graham"}},
             {type: "D", st: {mon: 7, d: 25}, ttls: {"en":"Saint Shylock"}},
@@ -374,7 +374,9 @@
             {type: "D", st: {mon: 12, d: 31}, ttls: {"en":"Saint Lucifer"}, notes: {"en":"Look Good Until You Die Day"}},
         ]},
         
+        {type: "D", st: {mon: 3, d: 14}, inherits: "Pi Day", fst: {era: 1, y: 1998}},
         {type: "D", st: {mon: 6, d: 2}, inherits: "Yell “Fudge” at the Cobras in North America Day", fst: {era: 1, y: 1996}},
         {type: "D", st: {mon: 6, d: 18}, inherits: "N Splurge Day", fst: {era: 1, y: 1994}},
+        {type: "D", st: {mon: 7, d: 22}, inherits: "Pi Approximation Day", fst: {era: 1, y: 2000}},
     ]
 }
