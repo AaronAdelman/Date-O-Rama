@@ -4,16 +4,16 @@
     cal: "xloc*",
     color: {name: "yellow"},
     evts: [
-        {type: "pt", st: {ptType: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptType: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
+        {type: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
         
-        {ttls: {"en":"Civil dawn", "he":"שחר אזרחי"}, type: "pt", st: {ptType: "twiR", deg: 6.0, offset: 0}},
-        {ttls: {"en":"Civil dusk", "he":"בין הערביים אזרחי"}, type: "pt", st: {ptType: "twiS", deg: 6.0, offset: 0}},
+        {ttls: {"en":"Civil dawn", "he":"שחר אזרחי"}, type: "pt", st: {ptTy: "twiR", deg: 6.0, offset: 0}},
+        {ttls: {"en":"Civil dusk", "he":"בין הערביים אזרחי"}, type: "pt", st: {ptTy: "twiS", deg: 6.0, offset: 0}},
         
-        {ttls: {"en":"Nautical dawn", "he":"שחר ימי"}, type: "pt", st: {ptType: "twiR", deg: 12.0, offset: 0}},
-        {ttls: {"en":"Nautical dusk", "he":"בין העבריים ימי"}, type: "pt", st: {ptType: "twiS", deg: 12.0, offset: 0}},
+        {ttls: {"en":"Nautical dawn", "he":"שחר ימי"}, type: "pt", st: {ptTy: "twiR", deg: 12.0, offset: 0}},
+        {ttls: {"en":"Nautical dusk", "he":"בין העבריים ימי"}, type: "pt", st: {ptTy: "twiS", deg: 12.0, offset: 0}},
         
-        {ttls: {"en":"Astronomical dawn", "he":"שחר אסטרונומי"}, type: "pt", st: {ptType: "twiR", deg: 18.0, offset: 0}},
-        {ttls: {"en":"Astronomical dusk", "he":"בין הערביים אסטרונומי"}, type: "pt", st: {ptType: "twiS", deg: 18.0, offset: 0}},
+        {ttls: {"en":"Astronomical dawn", "he":"שחר אסטרונומי"}, type: "pt", st: {ptTy: "twiR", deg: 18.0, offset: 0}},
+        {ttls: {"en":"Astronomical dusk", "he":"בין הערביים אסטרונומי"}, type: "pt", st: {ptTy: "twiS", deg: 18.0, offset: 0}},
     ]
 }

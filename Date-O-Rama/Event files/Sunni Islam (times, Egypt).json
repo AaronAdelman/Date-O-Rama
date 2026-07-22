@@ -5,13 +5,13 @@
     color: {name: "green"},
     emoji: "🇪🇬",
     evts: [
-        {type: "pt", st: {ptType: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptType: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", st: {ptType: "DhuhrISNA"}},
-        {inherits: "Asr (Shafii)", type: "pt", st: {ptType: "AsrShafiiKarachi"}},
-        {inherits: "Asr (Hanafi)", type: "pt", st: {ptType: "AsrHanafiKarachi"}},
+        {type: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
+        {inherits: "Dhuhr", type: "pt", st: {ptTy: "DhuhrISNA"}},
+        {inherits: "Asr (Shafii)", type: "pt", st: {ptTy: "AsrShafiiKarachi"}},
+        {inherits: "Asr (Hanafi)", type: "pt", st: {ptTy: "AsrHanafiKarachi"}},
  
-        {inherits: "Isha", type: "pt", st: {ptType: "IshaEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
-        {inherits: "Fajr", type: "pt", st: {ptType: "FajrEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
+        {inherits: "Isha", type: "pt", st: {ptTy: "IshaEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
+        {inherits: "Fajr", type: "pt", st: {ptTy: "FajrEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
     ]
 }

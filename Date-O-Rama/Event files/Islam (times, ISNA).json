@@ -5,13 +5,13 @@
     color: {name: "green"},
     emoji: "🌎",
     evts: [
-        {type: "pt", st: {ptType: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptType: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
+        {type: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {type: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
 
-        {inherits: "Isha", type: "pt", st: {ptType: "IshaISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Fajr", type: "pt", st: {ptType: "FajrISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Dhuhr", type: "pt", st: {ptType: "DhuhrISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Shafii)", type: "pt", st: {ptType: "AsrShafiiISNA"}, notes: {"en":"Islamic Society of North America"}},
-        {inherits: "Asr (Hanafi)", type: "pt", st: {ptType: "AsrHanafiISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Isha", type: "pt", st: {ptTy: "IshaISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Fajr", type: "pt", st: {ptTy: "FajrISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Dhuhr", type: "pt", st: {ptTy: "DhuhrISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Shafii)", type: "pt", st: {ptTy: "AsrShafiiISNA"}, notes: {"en":"Islamic Society of North America"}},
+        {inherits: "Asr (Hanafi)", type: "pt", st: {ptTy: "AsrHanafiISNA"}, notes: {"en":"Islamic Society of North America"}},
     ]
 }

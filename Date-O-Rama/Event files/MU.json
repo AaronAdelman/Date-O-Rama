@@ -1,7 +1,7 @@
 {
     ttls: {"*":"MU"},
     "//":"Mauritius",
-    "TODO":  "Muslim and Hindu holidays",
+    "TODO": "Muslim and Hindu holidays",
     defLocale: "en",
     cal: "gre",
     color: {red: 1.00, green: 0.82, blue: 0.00},

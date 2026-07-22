@@ -76,7 +76,7 @@ struct ASADateSpecification:  Codable {
     var recurrenceDays: Int?
     
     enum CodingKeys: String, CodingKey {
-        case pointEventType      = "ptType"
+        case pointEventType      = "ptTy"
         case era
         case year                = "y"
         case month               = "mon"
