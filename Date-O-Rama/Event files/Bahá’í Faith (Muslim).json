@@ -4,7 +4,7 @@
     cal: "hiq*",
     color: {red: 0.96, green: 0.76, blue: 0.79},
     evts: [
-        {type: "D", st: {mon: 1, d: 1}, inherits: "Birth of the Báb", last: {era: 0, y: 1436}},
-        {type: "D", st: {mon: 1, d: 2}, inherits: "Birth of Baháʼu’lláh", last: {era: 0, y: 1436}},
+        {ty: "D", st: {mon: 1, d: 1}, inherits: "Birth of the Báb", last: {era: 0, y: 1436}},
+        {ty: "D", st: {mon: 1, d: 2}, inherits: "Birth of Baháʼu’lláh", last: {era: 0, y: 1436}},
     ]
 }

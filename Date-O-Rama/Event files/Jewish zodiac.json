@@ -4,20 +4,20 @@
     cal: "heb*",
     color: {name: "blue"},
     evts: [
-        {type: "Y", st: {}, subEvts: [
-            {inherits: "Aries", type: "M", st: {mon: 8}},
-            {inherits: "Taurus", type: "M", st: {mon: 9}},
-            {inherits: "Gemini", type: "M", st: {mon: 10}},
-            {inherits: "Cancer", type: "M", st: {mon: 11}},
-            {inherits: "Leo", type: "M", st: {mon: 12}},
-            {inherits: "Virgo", type: "M", st: {mon: 13}},
-            {inherits: "Libra", type: "M", st: {mon: 1}},
-            {inherits: "Scorpio", type: "M", st: {mon: 2}},
-            {inherits: "Sagittarius", type: "M", st: {mon: 3}},
-            {inherits: "Capricorn", type: "M", st: {mon: 4}},
-            {inherits: "Aquarius", type: "M", st: {mon: 5}},
-            {inherits: "Pisces", type: "M", st: {mon: 7, yLens: [353, 354, 355]}},
-            {inherits: "Pisces", type: "nM", st: {mon: 6, yLens: [383, 384, 385]}, end: {mon: 7}}
+        {ty: "Y", st: {}, subEvts: [
+            {inherits: "Aries", ty: "M", st: {mon: 8}},
+            {inherits: "Taurus", ty: "M", st: {mon: 9}},
+            {inherits: "Gemini", ty: "M", st: {mon: 10}},
+            {inherits: "Cancer", ty: "M", st: {mon: 11}},
+            {inherits: "Leo", ty: "M", st: {mon: 12}},
+            {inherits: "Virgo", ty: "M", st: {mon: 13}},
+            {inherits: "Libra", ty: "M", st: {mon: 1}},
+            {inherits: "Scorpio", ty: "M", st: {mon: 2}},
+            {inherits: "Sagittarius", ty: "M", st: {mon: 3}},
+            {inherits: "Capricorn", ty: "M", st: {mon: 4}},
+            {inherits: "Aquarius", ty: "M", st: {mon: 5}},
+            {inherits: "Pisces", ty: "M", st: {mon: 7, yLens: [353, 354, 355]}},
+            {inherits: "Pisces", ty: "nM", st: {mon: 6, yLens: [383, 384, 385]}, end: {mon: 7}}
         ]
         }
     ]

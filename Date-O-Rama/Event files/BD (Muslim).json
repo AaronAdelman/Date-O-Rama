@@ -6,6 +6,6 @@
     color: {red: 0.17, green: 0.41, blue: 0.31},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
     evts: [
-        {type: "D", st: {mon: 9, wkd: [6], nth: -1}, inherits: "Jumatul Bidah", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/jumatul-bidah"}},
+        {ty: "D", st: {mon: 9, wkd: [6], nth: -1}, inherits: "Jumatul Bidah", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/jumatul-bidah"}},
     ]
 }

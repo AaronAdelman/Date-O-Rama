@@ -5,9 +5,9 @@
     color: {red: 0.3, green: 0.1, blue: 0.2},
     fst: {era: 1, y: 1993},
     evts: [
-        {type: "D", st: {mon: 2, d: 23}, ttls: {"en":"Dana Scully’s Birthday"}, notes: {"en":"From The X-Files"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 10, d: 13}, ttls: {"en":"Fox Mulder’s Birthday"}, notes: {"en":"From The X-Files"}},
-        {type: "D", st: {mon: 11, d: 27}, ttls: {"en":"Anniversary of Samantha Mulder’s Abduction"}, notes: {"en":"From The X-Files"}},
+        {ty: "D", st: {mon: 2, d: 23}, ttls: {"en":"Dana Scully’s Birthday"}, notes: {"en":"From The X-Files"}, inherits: "*BDay*"},
+        {ty: "D", st: {mon: 10, d: 13}, ttls: {"en":"Fox Mulder’s Birthday"}, notes: {"en":"From The X-Files"}},
+        {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"Anniversary of Samantha Mulder’s Abduction"}, notes: {"en":"From The X-Files"}},
     ]
 }
 

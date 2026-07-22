@@ -5,11 +5,11 @@
     color: {name: "orange"},
     fst: {era: 1, y: 2013},
     evts: [
-        {type: "D", st: {mon: 1, wkd: [3], nth: 2}, ttls: {"en":"Poetry at Work Day"}, notes: {"en":"National Poetry at Work Day\nCreated by Tweetspeak Poetry"}, urls: {"en":"https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖", fst: {era: 1, y: 2013}},
-        {type: "D", st: {mon: 10, wkd: [4], nth: 1}, ttls: {"en":"Random Acts of Poetry Day"}, urls: {"en":"https://www.tweetspeakpoetry.com/random-acts-of-poetry-day/"}, fst: {era: 1, y: 2015}},
-        {type: "D", st: {mon: 4, d: 6, thruD: 12, wkd: [6]}, ttls: {"en":"Poet in a Cupcake Day"}, urls: {"en":"https://www.daysoftheyear.com/days/poet-in-a-cupcake-day/"}, fst: {era: 1, y: 2018}, emoji: "🧁", notes: {"en":"Created by Tweetspeak"}},
-        {type: "D", st: {mon: 5, wkd: [3], nth: 1}, ttls: {"en":"Poem on Your Pillow Day"}, urls: {"en":"https://www.tweetspeakpoetry.com/poem-on-your-pillow-day/"}, fst: {era: 1, y: 2015}, notes: {"en":"Created by Tweetspeak Poetry"}},
-        {type: "D", st: {mon: 7, wkd: [4], nth: 3}, ttls: {"en":"Take Your Poet to Work Day"}, urls: {"en":"https://www.daysoftheyear.com/days/take-your-poet-to-work-day/"}, fst: {era: 1, y: 2013}, notes: {"en":"Created by Tweetspeak Poetry"}},
-        {type: "M", st: {mon: 4}, ttls: {"en":"Poetic Earth Month"}, urls: {"en":"https://poeticearthmonth.com/"}, fst: {era: 1, y: 2019}, notes: {"en":"Created by Tweetspeak Poetry"}},
+        {ty: "D", st: {mon: 1, wkd: [3], nth: 2}, ttls: {"en":"Poetry at Work Day"}, notes: {"en":"National Poetry at Work Day\nCreated by Tweetspeak Poetry"}, urls: {"en":"https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖", fst: {era: 1, y: 2013}},
+        {ty: "D", st: {mon: 10, wkd: [4], nth: 1}, ttls: {"en":"Random Acts of Poetry Day"}, urls: {"en":"https://www.tweetspeakpoetry.com/random-acts-of-poetry-day/"}, fst: {era: 1, y: 2015}},
+        {ty: "D", st: {mon: 4, d: 6, thruD: 12, wkd: [6]}, ttls: {"en":"Poet in a Cupcake Day"}, urls: {"en":"https://www.daysoftheyear.com/days/poet-in-a-cupcake-day/"}, fst: {era: 1, y: 2018}, emoji: "🧁", notes: {"en":"Created by Tweetspeak"}},
+        {ty: "D", st: {mon: 5, wkd: [3], nth: 1}, ttls: {"en":"Poem on Your Pillow Day"}, urls: {"en":"https://www.tweetspeakpoetry.com/poem-on-your-pillow-day/"}, fst: {era: 1, y: 2015}, notes: {"en":"Created by Tweetspeak Poetry"}},
+        {ty: "D", st: {mon: 7, wkd: [4], nth: 3}, ttls: {"en":"Take Your Poet to Work Day"}, urls: {"en":"https://www.daysoftheyear.com/days/take-your-poet-to-work-day/"}, fst: {era: 1, y: 2013}, notes: {"en":"Created by Tweetspeak Poetry"}},
+        {ty: "M", st: {mon: 4}, ttls: {"en":"Poetic Earth Month"}, urls: {"en":"https://poeticearthmonth.com/"}, fst: {era: 1, y: 2019}, notes: {"en":"Created by Tweetspeak Poetry"}},
   ]
 }

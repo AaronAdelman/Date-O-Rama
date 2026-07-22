@@ -5,7 +5,7 @@
     color: {red: 0.23, green: 0.49, blue: 0.81},
     fst: {era: 1, y: 1902},
     evts: [
-        {type: "D", st: {mon: 12, d: 1}, inherits: "Antarctica Day", fst: {era: 1, y: 2010}},
-        {type: "D", st: {misc: "Jun"}, inherits: "Midwinter Day", notes: {"en":"Midwinter\nMidwinter Festival\nWinter Solstice"},urls: {"en":"https://en.wikipedia.org/wiki/Midwinter_Day"}, fst: {era: 1, y: 1902}},
+        {ty: "D", st: {mon: 12, d: 1}, inherits: "Antarctica Day", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {misc: "Jun"}, inherits: "Midwinter Day", notes: {"en":"Midwinter\nMidwinter Festival\nWinter Solstice"},urls: {"en":"https://en.wikipedia.org/wiki/Midwinter_Day"}, fst: {era: 1, y: 1902}},
     ]
 }

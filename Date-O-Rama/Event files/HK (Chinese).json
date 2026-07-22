@@ -7,14 +7,14 @@
     color: {red: 0.93, green: 0.11, blue: 0.15},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},
     evts: [
-        {type: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
-        {type: "D", st: {mon: 4, d: 8}, inherits: "Buddha’s Birthday", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}},
-        {type: "D", st: {mon: 4, d: 9, wkd: [2]}, inherits: "Buddha’s Birthday (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/macau/buddha-purnima"}},
-        {type: "D", st: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
-        {type: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival"},
-        {type: "D", st: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
+        {ty: "D", st: {mon: 4, d: 8}, inherits: "Buddha’s Birthday", urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}},
+        {ty: "D", st: {mon: 4, d: 9, wkd: [2]}, inherits: "Buddha’s Birthday (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/macau/buddha-purnima"}},
+        {ty: "D", st: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
+        {ty: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival"},
+        {ty: "D", st: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},
 
-        {type: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "D", st: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
+        {ty: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"},
+        {ty: "D", st: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
    ]
 }

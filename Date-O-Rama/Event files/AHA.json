@@ -7,10 +7,10 @@
     urls: {"en":"https://homebrewersassociation.org/"},
     emoji: "🍻",
     evts: [
-        {type: "D", st: {mon: 5, wkd: [7], nth: 1}, ttls: {"en":"National Homebrew Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/big-brew-national-homebrew-day/"}, fst: {era: 1, y: 1998}, notes: {"en":"Created by the American Homebrewers Association"}},
-        {type: "D", st: {mon: 8, wkd: [7], nth: 1}, ttls: {"en":"Home Fermentation Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/home-fermentation-day/"}, fst: {era: 1, y: 2002}},
-        {type: "D", st: {mon: 10, wkd: [7], nth: 1}, ttls: {"en":"National Mead Day"}, notes: {"en":"Mead Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mead-day/"}, fst: {era: 1, y: 2002}},
-        {type: "D", st: {mon: 11, wkd: [7], nth: 1}, ttls: {"en":"Learn to Homebrew Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/learn-to-homebrew-day/"}, fst: {era: 1, y: 1999}},
+        {ty: "D", st: {mon: 5, wkd: [7], nth: 1}, ttls: {"en":"National Homebrew Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/big-brew-national-homebrew-day/"}, fst: {era: 1, y: 1998}, notes: {"en":"Created by the American Homebrewers Association"}},
+        {ty: "D", st: {mon: 8, wkd: [7], nth: 1}, ttls: {"en":"Home Fermentation Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/home-fermentation-day/"}, fst: {era: 1, y: 2002}},
+        {ty: "D", st: {mon: 10, wkd: [7], nth: 1}, ttls: {"en":"National Mead Day"}, notes: {"en":"Mead Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mead-day/"}, fst: {era: 1, y: 2002}},
+        {ty: "D", st: {mon: 11, wkd: [7], nth: 1}, ttls: {"en":"Learn to Homebrew Day"}, urls: {"en":"https://homebrewersassociation.org/aha-events/learn-to-homebrew-day/"}, fst: {era: 1, y: 1999}},
     ]
 }
 

@@ -7,13 +7,13 @@
     color: {red: 0.78, green: 0.06, blue: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Egypt"},
     evts: [
-        {type: "D", st: {mon: 4, d: 28, wkd: [5]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
-        {type: "D", st: {mon: 4, d: 29}, inherits: "Coptic Xmas"},
-        {type: "D", st: {mon: 4, d: 30, wkd: [1]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
-        {type: "D", st: {misc: "E"}, inherits: "Easter", cal: "jul", urls: {"en":"https://www.daysoftheyear.com/days/coptic-easter/"}},
-        {type: "D", st: {misc: "E", offsetD: 1}, cal: "jul", inherits: "O Easter Monday", notes: {"en":"Sham El-Nessim\nSham Ennessim", "ar":"شم النسيم", "he":"שאהם אל ניאסם"}},
-        {type: "D", st: {misc: "E", offsetD: 1}, cal: "jul", inherits: "N Food Day", urls: {"en":"https://www.daysoftheyear.com/days/egyptian-national-food-day/"}, fst: {era: 0, y: 1733}},
+        {ty: "D", st: {mon: 4, d: 28, wkd: [5]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
+        {ty: "D", st: {mon: 4, d: 29}, inherits: "Coptic Xmas"},
+        {ty: "D", st: {mon: 4, d: 30, wkd: [1]}, inherits: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/egypt/coptic-christmas"}},
+        {ty: "D", st: {misc: "E"}, inherits: "Easter", cal: "jul", urls: {"en":"https://www.daysoftheyear.com/days/coptic-easter/"}},
+        {ty: "D", st: {misc: "E", offsetD: 1}, cal: "jul", inherits: "O Easter Monday", notes: {"en":"Sham El-Nessim\nSham Ennessim", "ar":"شم النسيم", "he":"שאהם אל ניאסם"}},
+        {ty: "D", st: {misc: "E", offsetD: 1}, cal: "jul", inherits: "N Food Day", urls: {"en":"https://www.daysoftheyear.com/days/egyptian-national-food-day/"}, fst: {era: 0, y: 1733}},
     
-        {type: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
+        {ty: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
     ]
 }

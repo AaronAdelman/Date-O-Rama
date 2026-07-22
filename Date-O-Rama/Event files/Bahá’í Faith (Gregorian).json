@@ -4,10 +4,10 @@
     cal: "gre",
     color: {red: 0.96, green: 0.76, blue: 0.79},
     evts: [
-        {type: "D", st: {mon: 10, d: 20}, inherits: "Birth of the Báb", last: {era: 1, y: 2014}},
-        {type: "D", st: {mon: 11, d: 12}, inherits: "Birth of Baháʼu’lláh", last: {era: 1, y: 2014}},
+        {ty: "D", st: {mon: 10, d: 20}, inherits: "Birth of the Báb", last: {era: 1, y: 2014}},
+        {ty: "D", st: {mon: 11, d: 12}, inherits: "Birth of Baháʼu’lláh", last: {era: 1, y: 2014}},
         
-        {type: "D", st: {mon: 1, wkd: [1], nth: 3}, inherits: "World Religion Day", fst: {era: 1, y: 1950}},
-        {type: "D", st: {mon: 6, wkd: [1], nth: 2}, ttls: {"en":"Race Unity Day"}, fst: {era: 1, y: 1957}, urls: {"en":"https://www.daysoftheyear.com/days/race-unity-day/"}, emoji: "🫶", notes: {"en":"Race Amity Day\nCreated by the Bahá’í National Spiritual Assembly"}},
+        {ty: "D", st: {mon: 1, wkd: [1], nth: 3}, inherits: "World Religion Day", fst: {era: 1, y: 1950}},
+        {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, ttls: {"en":"Race Unity Day"}, fst: {era: 1, y: 1957}, urls: {"en":"https://www.daysoftheyear.com/days/race-unity-day/"}, emoji: "🫶", notes: {"en":"Race Amity Day\nCreated by the Bahá’í National Spiritual Assembly"}},
     ]
 }

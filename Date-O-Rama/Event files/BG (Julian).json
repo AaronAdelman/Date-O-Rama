@@ -7,9 +7,9 @@
     fst: {era: 1, y: 1908},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
     evts: [
-        {type: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
-        {type: "D", st: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},
-        {type: "D", st: {misc: "E"}, inherits: "Easter"},
-        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inherits: "O Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -1}, inherits: "O Holy Saturday"},
+        {ty: "D", st: {misc: "E"}, inherits: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }

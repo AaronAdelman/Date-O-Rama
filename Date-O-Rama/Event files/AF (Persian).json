@@ -7,6 +7,6 @@
     fst: {era: 0, y: 1298},
     urls: {"en":"https://en.wikipedia.org/wiki/Afghanistan"},
     evts: [
-           {type: "D", st: {mon: 6, d: 18}, inherits: "Martyrs’ Day", urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(Afghanistan)"}},
+           {ty: "D", st: {mon: 6, d: 18}, inherits: "Martyrs’ Day", urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(Afghanistan)"}},
     ]
 }

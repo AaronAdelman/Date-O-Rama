@@ -5,10 +5,10 @@
     color: {red: 0.06, green: 0.18, blue: 0.34},
     fst: {era: 1, y: 1830},
     evts: [
-        {type: "D", st: {mon: 4, d: 6}, ttls: {"en":"Church of Jesus Christ of Latter-day Saints Day"}, notes: {"en":"Church of Latter-day Saints Day"}, urls: {"en":"https://www.checkiday.com/613ab23a90aaf485f8a384f0d937b66d/church-of-jesus-christ-of-latter-day-saints-day"}, fst: {era: 1, y: 1830}},
-        {type: "D", st: {mon: 7, d: 24}, inherits: "Pioneer Day", fst: {era: 1, y: 1949}},
-        {type: "D", st: {mon: 5, d: 15}, ttls: {"en":"Anniversary of the Dedication of the First Mormon Temple in Kirkland, Ohio"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}},
-        {type: "D", st: {mon: 6, d: 27}, ttls: {"en":"Anniversary of the Martyrdom of Joseph Smith"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}, inherits: "*DeathAnniv*"},
+        {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"Church of Jesus Christ of Latter-day Saints Day"}, notes: {"en":"Church of Latter-day Saints Day"}, urls: {"en":"https://www.checkiday.com/613ab23a90aaf485f8a384f0d937b66d/church-of-jesus-christ-of-latter-day-saints-day"}, fst: {era: 1, y: 1830}},
+        {ty: "D", st: {mon: 7, d: 24}, inherits: "Pioneer Day", fst: {era: 1, y: 1949}},
+        {ty: "D", st: {mon: 5, d: 15}, ttls: {"en":"Anniversary of the Dedication of the First Mormon Temple in Kirkland, Ohio"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}},
+        {ty: "D", st: {mon: 6, d: 27}, ttls: {"en":"Anniversary of the Martyrdom of Joseph Smith"}, urls: {"en":"https://faithinspires.org/mormon-holidays/"}, inherits: "*DeathAnniv*"},
 
     ]
 }

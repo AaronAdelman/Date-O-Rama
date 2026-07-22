@@ -5,8 +5,8 @@
     color: {red: 0.74, green: 0.04, blue: 0.29},
     fst: {era: 1, y: 1977},
     evts: [
-        {type: "D", st: {mon: 10, d: 25}, ttls: {"en":"Sourest Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sourest-day/"}, fst: {era: 1, y: 1977}, notes: {"en":"Created by Richard Ankli"}},
-        {type: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, ttls: {"en":"You’re Welcome Giving Day"}, urls: {"en":"https://www.daysoftheyear.com/days/youre-welcome-giving-day/"}, fst: {era: 1, y: 1977}, notes: {"en":"You’re Welcomegiving Day\nCreated by Richard Ankli"}},
-        {type: "D", st: {mon: 5, d: 19}, ttls: {"en":"National May Ray Day"}, urls: {"en":"https://www.daysoftheyear.com/days/may-ray-day/"}, notes: {"en":"Created by Richard Ankli"}, fst: {era: 1, y: 1977}},
+        {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Sourest Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sourest-day/"}, fst: {era: 1, y: 1977}, notes: {"en":"Created by Richard Ankli"}},
+        {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, ttls: {"en":"You’re Welcome Giving Day"}, urls: {"en":"https://www.daysoftheyear.com/days/youre-welcome-giving-day/"}, fst: {era: 1, y: 1977}, notes: {"en":"You’re Welcomegiving Day\nCreated by Richard Ankli"}},
+        {ty: "D", st: {mon: 5, d: 19}, ttls: {"en":"National May Ray Day"}, urls: {"en":"https://www.daysoftheyear.com/days/may-ray-day/"}, notes: {"en":"Created by Richard Ankli"}, fst: {era: 1, y: 1977}},
     ]
 }

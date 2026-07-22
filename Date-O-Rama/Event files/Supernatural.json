@@ -5,8 +5,8 @@
     color: {name: "purple"},
     fst: {era: 1, y: 2005},
     evts: [
-        {type: "D", st: {mon: 5, d: 2}, ttls: {"en":"Sam Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 1, d: 24}, ttls: {"en":"Dean Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
-        {type: "D", st: {mon: 9, d: 13}, inherits: "Supernatural Day", fst: {era: 1, y: 2018}},
+        {ty: "D", st: {mon: 5, d: 2}, ttls: {"en":"Sam Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
+        {ty: "D", st: {mon: 1, d: 24}, ttls: {"en":"Dean Winchester’s Birthday"}, notes: {"en":"From Supernatural"}, inherits: "*BDay*"},
+        {ty: "D", st: {mon: 9, d: 13}, inherits: "Supernatural Day", fst: {era: 1, y: 2018}},
     ]
 }

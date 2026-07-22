@@ -5,13 +5,13 @@
     color: {name: "green"},
     emoji: "🇵🇰",
     evts: [
-        {type: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", st: {ptTy: "DhuhrISNA"}},
-        {inherits: "Asr (Shafii)", type: "pt", st: {ptTy: "AsrShafiiKarachi"}},
-        {inherits: "Asr (Hanafi)", type: "pt", st: {ptTy: "AsrHanafiKarachi"}},
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
+        {inherits: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
+        {inherits: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
+        {inherits: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
         
-        {inherits: "Isha", type: "pt", st: {ptTy: "IshaKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
-        {inherits: "Fajr", type: "pt", st: {ptTy: "FajrKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
+        {inherits: "Isha", ty: "pt", st: {ptTy: "IshaKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
+        {inherits: "Fajr", ty: "pt", st: {ptTy: "FajrKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
     ]
 }

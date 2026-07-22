@@ -63,17 +63,18 @@ struct ASAEventSpecification: Codable {
     } // struct CycleRange
 
     enum CodingKeys: String, CodingKey {
-        case startDateSpecification = "st"
-        case endDateSpecification   = "end"
-        case firstDateSpecification = "fst"
-        case lastDateSpecification  = "last"
+        case type                    = "ty"
+        case startDateSpecification  = "st"
+        case endDateSpecification    = "end"
+        case firstDateSpecification  = "fst"
+        case lastDateSpecification   = "last"
         case inherits
         case titles                  = "ttls"
         case locations               = "locs"
         case calendarCode            = "cal"
         case regionCodes             = "rgns"
         case excludeRegionCodes      = "excludeRgns"
-        case urls, notes, emoji, type
+        case urls, notes, emoji
         case nonoverlappingSubEvents = "subEvts"
         case overlappingSubEvents    = "overlappingSubEvts"
         case cycleRanges             = "cRanges"

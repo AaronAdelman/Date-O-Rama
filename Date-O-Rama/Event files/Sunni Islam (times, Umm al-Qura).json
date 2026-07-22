@@ -5,13 +5,13 @@
     color: {name: "green"},
     emoji: "🇸🇦",
     evts: [
-        {type: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
 
-        {inherits: "Isha", type: "pt", st: {ptTy: "IshaMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Fajr", type: "pt", st: {ptTy: "FajrMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Dhuhr", type: "pt", st: {ptTy: "DhuhrMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Shafii)", type: "pt", st: {ptTy: "AsrShafiiMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Hanafi)", type: "pt", st: {ptTy: "AsrHanafiMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Isha", ty: "pt", st: {ptTy: "IshaMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Fajr", ty: "pt", st: {ptTy: "FajrMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiMakkah"}, notes: {"en":"Umm al-Qura, Makkah"}},
     ]
 }

@@ -7,11 +7,11 @@
     fst: {era: 1, y: 2018},
     urls: {"en":"http://realistsocietyofcanada.com/realism-holidays/"},
     evts: [
-        {type: "nD", st: {mon: 4, d: 26}, end: {mon: 4, d: 28}, ttls: {"en":"Self-Aware Universe Day"}, notes: {"en":"SAUD"}},
-        {type: "D", st: {mon: 7, d: 8},
+        {ty: "nD", st: {mon: 4, d: 26}, end: {mon: 4, d: 28}, ttls: {"en":"Self-Aware Universe Day"}, notes: {"en":"SAUD"}},
+        {ty: "D", st: {mon: 7, d: 8},
           ttls: {"en":"There Has Always Been Something Day"},
           notes: {"en":"THABS\nThe only reason this event calendar was included in Date-O-Rama is because Wikipedia noted thematic similarilty between this observance and the far more famous National Nothing Day."}},
-        {type: "D", st: {mon: 3, wkd: [6], nth: 3}, ttls: {"en":"I Know I Exist Day"}, notes: {"en":"IKIE"}
+        {ty: "D", st: {mon: 3, wkd: [6], nth: 3}, ttls: {"en":"I Know I Exist Day"}, notes: {"en":"IKIE"}
         }
     ]
 }

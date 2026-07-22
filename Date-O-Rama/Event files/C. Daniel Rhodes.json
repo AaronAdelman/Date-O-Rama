@@ -5,8 +5,8 @@
     color: {red: 0.58, green: 0.22, blue: 0.02},
     fst: {era: 1, y: 2001},
     evts: [
-        {type: "D", st: {mon: 5, d: 24}, ttls: {"en":"Brother’s Day", "he":"יום האח"}, urls: {"en":"https://www.daysoftheyear.com/days/brothers-day/"}, notes: {"en":"National Brother’s Day", "he":"יום האחים הלאומי"}, emoji: "👦👦", fst: {era: 1, y: 2001}},
-       {type: "D", st: {mon: 8, wkd: [7], nth: 2}, ttls: {"en":"National Garage Sale Day"}, urls: {"en":"https://www.daysoftheyear.com/days/garage-sale-day/"}, notes: {"en":"Garage Sale Day"}, fst: {era: 1, y: 2001}},
-       {type: "D", st: {mon: 10, d: 17}, ttls: {"en":"National Mulligan Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mulligan-day/"}, emoji: "⛳"},
+        {ty: "D", st: {mon: 5, d: 24}, ttls: {"en":"Brother’s Day", "he":"יום האח"}, urls: {"en":"https://www.daysoftheyear.com/days/brothers-day/"}, notes: {"en":"National Brother’s Day", "he":"יום האחים הלאומי"}, emoji: "👦👦", fst: {era: 1, y: 2001}},
+       {ty: "D", st: {mon: 8, wkd: [7], nth: 2}, ttls: {"en":"National Garage Sale Day"}, urls: {"en":"https://www.daysoftheyear.com/days/garage-sale-day/"}, notes: {"en":"Garage Sale Day"}, fst: {era: 1, y: 2001}},
+       {ty: "D", st: {mon: 10, d: 17}, ttls: {"en":"National Mulligan Day"}, urls: {"en":"https://www.daysoftheyear.com/days/mulligan-day/"}, emoji: "⛳"},
     ]
 }

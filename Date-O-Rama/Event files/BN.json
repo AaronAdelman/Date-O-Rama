@@ -8,16 +8,16 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Brunei"},
     fst: {era: 1, y: 1984},
     evts: [
-        {type: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", st: {mon: 1, d: 2, wkd: [2, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
-        {inherits: "N Day", type: "D", st: {mon: 2, d: 23}, fst: {era: 1, y: 1984}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-brunei/"}},
-        {inherits: "N Day (in lieu)", type: "D", st: {mon: 2, d: 24, wkd: [2, 7]}, fst: {era: 1, y: 1984}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/brunei-national-day"}},
-        {type: "D", st: {mon: 5, d: 31}, inherits: "Armed Forces Day", fst: {era: 1, y: 1981}, notes: {"en":"Royal Brunei Armed Forces Day"}},
-        {type: "D", st: {mon: 6, d: 1, wkd: [2]}, inherits: "Armed Forces Day (in lieu)", fst: {era: 1, y: 1981}, notes: {"en":"Royal Brunei Armed Forces Day (in lieu)"}},
-        {type: "D", st: {mon: 7, d: 15}, ttls: {"en":"Sultan’s Birthday"}, inherits: "*BDay*", fst: {era: 1, y: 1946}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/hm-the-sultans-birthday"}, notes: {"en":"H.M. The Sultan’s Birthday"}},
-        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+        {ty: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {inherits: "N Day", ty: "D", st: {mon: 2, d: 23}, fst: {era: 1, y: 1984}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-brunei/"}},
+        {inherits: "N Day (in lieu)", ty: "D", st: {mon: 2, d: 24, wkd: [2, 7]}, fst: {era: 1, y: 1984}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/brunei-national-day"}},
+        {ty: "D", st: {mon: 5, d: 31}, inherits: "Armed Forces Day", fst: {era: 1, y: 1981}, notes: {"en":"Royal Brunei Armed Forces Day"}},
+        {ty: "D", st: {mon: 6, d: 1, wkd: [2]}, inherits: "Armed Forces Day (in lieu)", fst: {era: 1, y: 1981}, notes: {"en":"Royal Brunei Armed Forces Day (in lieu)"}},
+        {ty: "D", st: {mon: 7, d: 15}, ttls: {"en":"Sultan’s Birthday"}, inherits: "*BDay*", fst: {era: 1, y: 1946}, urls: {"en":"https://www.officeholidays.com/holidays/brunei/hm-the-sultans-birthday"}, notes: {"en":"H.M. The Sultan’s Birthday"}},
+        {ty: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {type: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
+        {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
+        {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
     ]
 }

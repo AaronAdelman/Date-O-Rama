@@ -8,11 +8,11 @@
     fst: {era: 1, y: 1956},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     evts: [
-        {inherits: "N Day", type: "D", st: {mon: 1, d: 1}, fst: {era: 1, y: 1956}, urls: {"en":"https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en":"Independence Day\nSudanese Independence Day\nSudan Independence Day"}},
-        {inherits: "Revolution Day", type: "D", st: {mon: 12, d: 19}, fst: {era: 1, y: 2018}},
-        {type: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
+        {inherits: "N Day", ty: "D", st: {mon: 1, d: 1}, fst: {era: 1, y: 1956}, urls: {"en":"https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en":"Independence Day\nSudanese Independence Day\nSudan Independence Day"}},
+        {inherits: "Revolution Day", ty: "D", st: {mon: 12, d: 19}, fst: {era: 1, y: 2018}},
+        {ty: "D", st: {mon: 12, d: 25}, inherits: "Xmas"},
 
-        {type: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", st: {mon: 12, d: 23}},
+        {ty: "D", st: {mon: 3, d: 21}, inherits: "Mother’s Day"},
+        {inherits: "Children’s Day", ty: "D", st: {mon: 12, d: 23}},
    ]
 }

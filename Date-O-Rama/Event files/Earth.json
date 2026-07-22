@@ -4,16 +4,16 @@
     cal: "xloc*",
     color: {name: "blue"},
     evts: [
-        {type: "Y", st: {}, subEvts: [
-            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Mar"}, rgns: ["xb"]},
-            {inherits: "Summer Solstice", type: "pt", st: {misc: "Jun"}, rgns: ["xb"]},
-            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Sep"}, rgns: ["xb"]},
-            {inherits: "Winter Solstice", type: "pt", st: {misc: "Dec"}, rgns: ["xb"]},
+        {ty: "Y", st: {}, subEvts: [
+            {inherits: "Vernal Equinox", ty: "pt", st: {misc: "Mar"}, rgns: ["xb"]},
+            {inherits: "Summer Solstice", ty: "pt", st: {misc: "Jun"}, rgns: ["xb"]},
+            {inherits: "Autumnal Equinox", ty: "pt", st: {misc: "Sep"}, rgns: ["xb"]},
+            {inherits: "Winter Solstice", ty: "pt", st: {misc: "Dec"}, rgns: ["xb"]},
             
-            {inherits: "Vernal Equinox", type: "pt", st: {misc: "Sep"}, rgns: ["xc"]},
-            {inherits: "Summer Solstice", type: "pt", st: {misc: "Dec"}, rgns: ["xc"]},
-            {inherits: "Autumnal Equinox", type: "pt", st: {misc: "Mar"}, rgns: ["xc"]},
-            {inherits: "Winter Solstice", type: "pt", st: {misc: "Jun"}, rgns: ["xc"]},
+            {inherits: "Vernal Equinox", ty: "pt", st: {misc: "Sep"}, rgns: ["xc"]},
+            {inherits: "Summer Solstice", ty: "pt", st: {misc: "Dec"}, rgns: ["xc"]},
+            {inherits: "Autumnal Equinox", ty: "pt", st: {misc: "Mar"}, rgns: ["xc"]},
+            {inherits: "Winter Solstice", ty: "pt", st: {misc: "Jun"}, rgns: ["xc"]},
         ]},
     ]
 }

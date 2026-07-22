@@ -7,12 +7,12 @@
     color: {red: 0.94, green: 0.20, blue: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Thailand", "he":"https://he.wikipedia.org/wiki/חגים_ומועדים_בתאילנד"},
     evts: [
-        {type: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},
-        {type: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "D", st: {mon: 5, d: 5}, ttls: {"en":"Duanwu Festival", "th":"วันไหว้ขนมจ้าง"}},
-        {type: "D", st: {mon: 7, d: 15}, inherits: "Ghost Festival"},
-        {type: "D", st: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
-        {type: "nD", st: {mon: 9, d: 1}, end: {mon: 9, d: 9}, ttls: {"en":"Vegetarian Festival", "th":"เทศกาลกินเจ"}, emoji: "🌶"},
-        {type: "D", st: {mon: 4, d: 15}, inherits: "Vesak", urls: {"en":"https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inherits: "Chinese New Year"},
+        {ty: "D", st: {mon: 1, d: 15}, inherits: "Lantern Festival"},
+        {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Duanwu Festival", "th":"วันไหว้ขนมจ้าง"}},
+        {ty: "D", st: {mon: 7, d: 15}, inherits: "Ghost Festival"},
+        {ty: "D", st: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
+        {ty: "nD", st: {mon: 9, d: 1}, end: {mon: 9, d: 9}, ttls: {"en":"Vegetarian Festival", "th":"เทศกาลกินเจ"}, emoji: "🌶"},
+        {ty: "D", st: {mon: 4, d: 15}, inherits: "Vesak", urls: {"en":"https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
     ]
 }

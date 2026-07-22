@@ -5,11 +5,11 @@
     color: {name: "magenta"},
     fst: {era: 1, y: 1981},
     evts: [
-        {type: "D", st: {mon: 6, wkd: [3], nth: 2}, ttls: {"en":"World Pet Memorial Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-pet-memorial-day/"}, emoji: "🐕‍🦺", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
-        {type: "D", st: {mon: 4, d: 14}, ttls: {"en":"National Dolphin Day", "he":"יום הדולפין הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/dolphin-day/"}, emoji: "🐬", notes: {"en":"Created by the American Veterinary Medical Association"}},
-        {type: "W", st: {mon: 4, fullWk: 2}, ttls: {"en":"National Dog Bite Prevention Week"}, notes: {"en":"Created by the American Veterinary Medical Association"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dog-bite-prevention-week/"}, fst: {era: 1, y: 1989}, emoji: "🐶"},
-        {type: "W", st: {mon: 5, fullWk: 1}, ttls: {"en":"National Pet Week"}, urls: {"en":"https://www.avma.org/events/national-pet-week"}, fst: {era: 1, y: 1981}, emoji: "👨‍💻🐈", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
-        {type: "M", st: {mon: 10}, ttls: {"en":"National Pet Wellness Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-wellness-month/"}, inherits: "*MedAwareness*", fst: {era: 1, y: 2004}, notes: {"en":"Created by the American Veterinary Medical Association (AVMA) and Fort Dodge Animal Health"}},
-        {type: "M", st: {mon: 2}, ttls: {"en":"Pet Dental Health Month"}, urls: {"en":"https://www.avma.org/resources-tools/pet-owners/petcare/pet-dental-care"}, inherits: "*MedAwareness*", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
+        {ty: "D", st: {mon: 6, wkd: [3], nth: 2}, ttls: {"en":"World Pet Memorial Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-pet-memorial-day/"}, emoji: "🐕‍🦺", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
+        {ty: "D", st: {mon: 4, d: 14}, ttls: {"en":"National Dolphin Day", "he":"יום הדולפין הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/dolphin-day/"}, emoji: "🐬", notes: {"en":"Created by the American Veterinary Medical Association"}},
+        {ty: "W", st: {mon: 4, fullWk: 2}, ttls: {"en":"National Dog Bite Prevention Week"}, notes: {"en":"Created by the American Veterinary Medical Association"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dog-bite-prevention-week/"}, fst: {era: 1, y: 1989}, emoji: "🐶"},
+        {ty: "W", st: {mon: 5, fullWk: 1}, ttls: {"en":"National Pet Week"}, urls: {"en":"https://www.avma.org/events/national-pet-week"}, fst: {era: 1, y: 1981}, emoji: "👨‍💻🐈", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
+        {ty: "M", st: {mon: 10}, ttls: {"en":"National Pet Wellness Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-wellness-month/"}, inherits: "*MedAwareness*", fst: {era: 1, y: 2004}, notes: {"en":"Created by the American Veterinary Medical Association (AVMA) and Fort Dodge Animal Health"}},
+        {ty: "M", st: {mon: 2}, ttls: {"en":"Pet Dental Health Month"}, urls: {"en":"https://www.avma.org/resources-tools/pet-owners/petcare/pet-dental-care"}, inherits: "*MedAwareness*", notes: {"en":"Created by the American Veterinary Medical Association (AVMA)"}},
   ]
 }

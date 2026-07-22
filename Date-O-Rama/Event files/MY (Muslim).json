@@ -6,7 +6,7 @@
     color: {name: "cyan"},
     urls: {"en":"https://publicholidays.com.my/", "ms":"https://publicholidays.com.my/ms/", "zh":"https://publicholidays.com.my/zh/"},
     evts: [
-        {type: "D", st: {mon: 2, d: 6}, ttls: {"en":"The Sultan of Johor Hol", "ms":"Hari Hol Almarhum Sultan Iskandar"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/johor/the-sultan-of-johor-hol"}, fst: {era: 0, y: 1431}, inherits: "*DeathAnniv*"},
-        {type: "D", st: {mon: 9, d: 17}, ttls: {"en":"Anniversary of the Revelation of the Quran", "ms":"Hari Nuzul Al-Quran"}},
+        {ty: "D", st: {mon: 2, d: 6}, ttls: {"en":"The Sultan of Johor Hol", "ms":"Hari Hol Almarhum Sultan Iskandar"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/johor/the-sultan-of-johor-hol"}, fst: {era: 0, y: 1431}, inherits: "*DeathAnniv*"},
+        {ty: "D", st: {mon: 9, d: 17}, ttls: {"en":"Anniversary of the Revelation of the Quran", "ms":"Hari Nuzul Al-Quran"}},
    ]
 }

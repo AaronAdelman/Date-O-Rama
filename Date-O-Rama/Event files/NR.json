@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1968},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nauru"},
     evts: [
-        {type: "D", st: {mon: 2, wkd: [1], nth: 2}, inherits: "Children’s Day"},
-        {type: "D", st: {mon: 1, d: 31}, inherits: "Independence Day", fst: {era: 1, y: 1968}, urls: {"en":"https://www.daysoftheyear.com/days/nauru-independence-day/"}, notes: {"en":"Nauru National Day\nCreated by the Republic of Nauru"}},
+        {ty: "D", st: {mon: 2, wkd: [1], nth: 2}, inherits: "Children’s Day"},
+        {ty: "D", st: {mon: 1, d: 31}, inherits: "Independence Day", fst: {era: 1, y: 1968}, urls: {"en":"https://www.daysoftheyear.com/days/nauru-independence-day/"}, notes: {"en":"Nauru National Day\nCreated by the Republic of Nauru"}},
     ]
 }

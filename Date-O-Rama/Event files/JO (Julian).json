@@ -6,8 +6,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
     color: {red: 0.85, green: 0.16, blue: 0.11},
     evts: [
-        {type: "D", st: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
-        {type: "D", st: {misc: "E"}, inherits: "Easter"},
-        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: -7}, inherits: "Palm Sunday"},
+        {ty: "D", st: {misc: "E"}, inherits: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
     ]
 }

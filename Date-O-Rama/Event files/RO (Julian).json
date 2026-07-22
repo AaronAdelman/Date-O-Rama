@@ -7,11 +7,11 @@
     fst: {era: 1, y: 1877},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
     evts: [
-        {type: "D", st: {misc: "E"}, inherits: "Easter"},
-        {type: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
-        {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Heroes’ Day"},
-        {type: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
-        {type: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
+        {ty: "D", st: {misc: "E"}, inherits: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inherits: "Heroes’ Day"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
+        {ty: "D", st: {misc: "E", offsetD: 49}, inherits: "Pentecost"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inherits: "Whit Monday"},
     ]
 }
