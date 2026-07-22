@@ -77,8 +77,8 @@ struct ASAEventSpecification: Codable {
         case urls, notes, emoji
         case nonoverlappingSubEvents = "subEvts"
         case overlappingSubEvents    = "overlappingSubEvts"
-        case cycleRanges             = "cRanges"
-        case cycleRangeFirstNumber   = "cRange1stNo"
+        case cycleRanges             = "cRs"
+        case cycleRangeFirstNumber   = "cR1stNo"
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

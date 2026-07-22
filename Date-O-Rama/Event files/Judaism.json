@@ -590,7 +590,7 @@
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"he":"חג החינוך"}, urls: {"he":"https://haluzhaivri.org.il/page/30481"}},
 
         
-        {ty: "c", st: {era: 0, y: 5780, mon: 4, d: 8, recurD: 2711}, ttls: {"he":"דף יומי:  [[subtitle]] [[subindex]]", "en":"Daf Yomi:  [[subtitle]] [[subindex]]"}, cRanges: [
+        {ty: "c", st: {era: 0, y: 5780, mon: 4, d: 8, recurD: 2711}, ttls: {"he":"דף יומי:  [[subtitle]] [[subindex]]", "en":"Daf Yomi:  [[subtitle]] [[subindex]]"}, cRs: [
             {subttls: {"he":"ברכות", "en":"Berakhoth"}, st: 1, end: 63},
             {subttls: {"he":"שבת", "en":"Shabbath"}, st: 64, end: 219},
             {subttls: {"he":"עירובין", "en":"Eruvin"}, st: 220, end: 323},
@@ -628,7 +628,7 @@
             {subttls: {"he":"כריתות", "en":"Kerithuth"}, st: 2577, end: 2603},
             {subttls: {"he":"מעילה", "en":"Me’ilah"}, st: 2604, end: 2639},
             {subttls: {"he":"נידה", "en":"Niddah"}, st: 2640, end: 2711},
-        ], cRange1stNo: 2},
+        ], cR1stNo: 2},
     ],
     tpls: {
         "*ספירת העומר*": {ty: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
