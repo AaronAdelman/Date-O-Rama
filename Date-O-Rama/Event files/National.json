@@ -1757,6 +1757,7 @@
         {ty: "D", st: {mon: 7, d: 23}, ttls: {"en":"National Vanilla Ice Cream Day"}, urls: {"en":"https://www.daysoftheyear.com/days/vanilla-ice-cream-day/"}, emoji: "🍨", fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 7, d: 23}, ttls: {"en":"National Women Touched By Addiction Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-women-touched-by-addiction-day/"}, emoji: "👩", fst: {era: 1, y: 2021}, notes: {"en":"Created by Mending Hearts"}},
         {ty: "D", st: {mon: 7, d: 23}, ttls: {"en":"Peanut Butter and Chocolate Day"}, urls: {"en":"https://www.daysoftheyear.com/days/peanut-butter-and-chocolate-day/"}, emoji: "🥜🍫", notes: {"en":"National Peanut Butter Lover’s Day\nNational Peanut Butter Day"}},
+        {ty: "D", st: {mon: 7, d: 23}, ttls: {"en":"Sprinkle Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sprinkle-day/"}, fst: {era: 1, y: 2017}, notes: {"en":"Created by Rosie Alyea"}},
         {ty: "D", st: {mon: 7, d: 24}, ttls: {"en":"National Amelia Earhart Day", "he":"יום אמיליה ארהארט הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-amelia-earhart-day/"}, inherits: "*BDay*", fst: {era: 1, y: 1897}},
         {ty: "D", st: {mon: 7, d: 24}, ttls: {"en":"National Cousins Day", "he":"יום בני הדודים הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/cousins-day/"}},
         {ty: "D", st: {mon: 7, d: 24}, ttls: {"en":"National Day of Motoring"}, urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-motoring/"}, fst: {era: 1, y: 2021}, emoji: "🚗", notes: {"en":"Created by MINI USA"}},
