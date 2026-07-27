@@ -41,7 +41,7 @@
         {ty: "D", st: {mon: 2, d: 104}, ttls: {"en":"Azad Kashmir Day", "ur":"یومِ تاسیس آزاد کشمیر"}, urls: {"en":"https://en.wikipedia.org/wiki/Azad_Kashmir_Day"}, fst: {era: 1, y: 1947}},
         {ty: "D", st: {mon: 2, d: 5}, ttls: {"en":"Kashmir Solidarity Day", "ur":"یوم یکجحتی کشمیر"}, urls: {"en":"https://nationaltoday.com/kashmir-solidarity-day/"}, fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 3, d: 23}, ttls: {"en":"Pakistan Day", "he":"יום פקיסטן ", "ur":"یوم پاکستان"}, urls: {"en":"https://nationaltoday.com/pakistan-day/"}},
-        {ty: "D", st: {mon: 4, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/pakistan/sindh/death-of-zulfikar-ali-bhutto"}, inherits: "*DeathAnniv*", ttls: {"en":"Death Anniversary of Zulfikar Ali Bhutto"}, fst: {era: 1, y: 1979}},
+        {ty: "D", st: {mon: 4, d: 4}, ttls: {"en":"Death Anniversary of Zulfikar Ali Bhutto"}, urls: {"en":"https://www.officeholidays.com/holidays/pakistan/sindh/death-of-zulfikar-ali-bhutto"}, inherits: "*DeathAnniv*", fst: {era: 1, y: 1979}},
         {ty: "D", st: {mon: 5, d: 28}, ttls: {"en":"Day of Greatness", "ur":"یوم تکبیر"}, urls: {"en":"https://www.officeholidays.com/holidays/pakistan/youm-e-takbeer"}, fst: {era: 1, y: 1998}, notes: {"en":"Youm-e-Takbeer"}},
         {ty: "D", st: {mon: 7, d: 19}, inherits: "Friendship Day"},
         {ty: "D", st: {mon: 9, d: 29}, inherits: "N Coffee Day"},

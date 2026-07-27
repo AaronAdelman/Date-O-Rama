@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Liberia"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {inherits: "Armed Forces Day", ty: "D", st: {mon: 2, d: 11}, urls: {"en":"https://nationaltoday.com/armed-forces-day-2/"}, fst: {era: 1, y: 1957}},
+        {ty: "D", st: {mon: 2, d: 11}, inherits: "Armed Forces Day", urls: {"en":"https://nationaltoday.com/armed-forces-day-2/"}, fst: {era: 1, y: 1957}},
         {ty: "D", st: {mon: 3, wkd: [4], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/decoration-day"}, ttls: {"en":"Decoration Day"}, fst: {era: 1, y: 1917}},
         {ty: "D", st: {mon: 3, d: 15}, ttls: {"en":"J.J. Roberts’ Birthday"}, urls: {"en":"https://nationaltoday.com/j-j-roberts-birthday/"}, inherits: "*BDay*"},
         {ty: "D", st: {mon: 3, d: 16, wkd: [2]}, ttls: {"en":"J.J. Roberts’ Birthday (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/jj-roberts-birthday"}, inherits: "*BDay*"},
@@ -17,6 +17,7 @@
         {ty: "D", st: {mon: 4, wkd: [6], nth: 2}, ttls: {"en":"National Fast and Prayer Day"}, urls: {"en":"https://nationaltoday.com/national-fast-and-prayer-day/"}, fst: {era: 1, y: 1883}},
         {ty: "D", st: {mon: 5, d: 14}, ttls: {"en":"National Unification Day"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/national-unification-day"}, fst: {era: 1, y: 1947}, inherits: "Unification Day"},
         {ty: "D", st: {mon: 7, d: 26}, inherits: "Independence Day", urls: {"en":"https://nationaltoday.com/liberia-independence-day/"}, fst: {era: 1, y: 1847}},
+        {ty: "D", st: {mon: 7, d: 27, wkd: [2]}, inherits: "Independence Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/liberia/liberia-independence-day"}, fst: {era: 1, y: 1847}},
         {ty: "D", st: {mon: 8, d: 24}, inherits: "N Flag Day", fst: {era: 1, y: 1915}, urls: {"en":"https://nationaltoday.com/national-flag-day-in-liberia/"}},
         {ty: "D", st: {mon: 8, d: 25, wkd: [2]}, ttls: {"en":"National Flag Day (in lieu)"}, fst: {era: 1, y: 1915}, urls: {"en":"https://nationaltoday.com/national-flag-day-in-liberia/"}},
         {ty: "D", st: {era: 1, y: 2023, mon: 10, wkd: [3], nth: 2}, ttls: {"en":"General and Presidential Elections Day"}, urls: {"en":"https://www.officeholidays.com/holidays/liberia/liberian-general-elections"}, emoji: "🗳️"},
