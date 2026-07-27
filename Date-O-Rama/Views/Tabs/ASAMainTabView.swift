@@ -45,6 +45,7 @@ struct ASAMainTabView: View {
                             processedClocks: processedClocks
                         )
                         .environmentObject(userData)
+                        .toolbar(.hidden, for: .tabBar)
                     }
                 }
             } // TabView
