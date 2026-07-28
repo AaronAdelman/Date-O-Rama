@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 5, d: 25}, inherits: "Africa Day", fst: {era: 1, y: 1963}},
         {ty: "D", ttls: {"en":"Africa Border Day"}, st: {mon: 6, d: 7}},
         {ty: "D", st: {mon: 6, d: 16}, inherits: "I Day of the African Child", fst: {era: 1, y: 1991}},
-        {ty: "D", ttls: {"en":"African Refugee Day", "he":"יום הפליטים האפריקאי"}, st: {mon: 6, d: 20}, inherits: "World Refugee Day"},
+        {ty: "D", ttls: {"en":"African Refugee Day", "he":"יום הפליטים האפריקאי"}, st: {mon: 6, d: 20}, inherits: "W Refugee Day"},
         {ty: "D", ttls: {"en":"African Public Service Day"}, st: {mon: 6, d: 23}},
         {ty: "D", ttls: {"en":"Day of Africa‘s Scientific Renaissance"}, st: {mon: 6, d: 30}, emoji: "🔭🔬🧪"},
         {ty: "D", ttls: {"en":"African Integration Day"}, st: {mon: 7, d: 7}},

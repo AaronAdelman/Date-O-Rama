@@ -99,7 +99,7 @@
         {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"National Nurses’ Day", "th":"วันพยาบาลแห่งชาติ", "he":"יום האחיות הלאומי"}, fst: {era: 1, y: 1990}, emoji: "👨‍⚕️👩‍⚕️"},
         {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"National Annual Tree Loving Day", "th":"วันรักต้นไม้ประจำปีของชาติ"}, fst: {era: 1, y: 1990}, emoji: "🌴🌲🌳"},
         {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"National Dental Hygiene Day", "th":"วันทันตสาธารณสุขแห่งชาติ"}, fst: {era: 1, y: 1989}, inherits: "*MedAwareness*", emoji: "🦷🪥"},
-        {ty: "D", st: {mon: 11, wkd: [1], nth: 3}, inherits: "World Day of Remembrance for Road Traffic Victims", fst: {era: 1, y: 2013}},
+        {ty: "D", st: {mon: 11, wkd: [1], nth: 3}, inherits: "W Day of Remembrance for Road Traffic Victims", fst: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 11, d: 20}, ttls: {"en":"Royal Thai Navy Day", "th":"วันกองทัพเรือ", "he":"יום הצי המלכותי התאילנדי"}, inherits: "Navy Day"},
         {ty: "D", st: {mon: 11, d: 25}, ttls: {"en":"King Vajiravudh Memorial Day", "th":"วันสมเด็จพระมหาธีรราชเจ้า", "he":"יום המלך ואג׳יראווד"}, fst: {era: 1, y: 2003}},
         {ty: "D", st: {mon: 11, d: 25}, ttls: {"en":"Primary Education Day", "th":"วันประถมศึกษาแห่งชาติ"}},

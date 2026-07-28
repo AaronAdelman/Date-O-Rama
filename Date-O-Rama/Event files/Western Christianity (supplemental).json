@@ -69,7 +69,7 @@
         {ty: "D", st: {mon: 6, d: 18}, ttls: {"en":"National Black America’s Day of Repentance"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-americas-day-of-repentance/"}, fst: {era: 1, y: 2021}, notes: {"en":"Created by Sister Yvonne Roberson"}},
         {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Forgiveness Day"}, urls: {"en":"https://nationaltoday.com/forgiveness-day/"}, fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", fst: {era: 1, y: 1975}},
-        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inherits: "World Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
+        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inherits: "W Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 8, d: 22}, ttls: {"en":"National Be An Angel Day", "he":"יום להיות המלאך הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/be-an-angel-day/"}, notes: {"en":"Be An Angel Day\nCreated by Jayne Howard Feldman", "he":"יום להיות המלאך"}, fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 8, wkd: [1], nth: -1}, ttls: {"en":"Social Justice Sunday", "he":"יום ראשון של צדק חברתי"}, fst: {era: 1, y: 1940}, urls: {"en":"https://www.daysoftheyear.com/days/social-justice-sunday/"}, emoji: "🖐"},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 1}, ttls: {"en":"International Forgiveness Day"}, fst: {era: 1, y: 1996}, urls: {"en":"https://www.checkiday.com/2e21204909c48a6ee38c3d4f343f0347/international-forgiveness-day"}},

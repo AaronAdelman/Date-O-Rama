@@ -123,6 +123,6 @@
         {ty: "D", st: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
 
         {inherits: "Grandparents’ Day", ty: "D", st: {mon: 10, wkd: [1], nth: 2}, fst: {era: 1, y: 2013}},
-        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inherits: "World Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
+        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inherits: "W Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
     ]
 }
