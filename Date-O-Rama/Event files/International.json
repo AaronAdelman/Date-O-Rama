@@ -1810,7 +1810,7 @@
         {ty: "nD", st: {mon: 6, d: 7}, end: {mon: 6, d: 13}, ttls: {"en":"World Heart Rhythm Week"}, urls: {"en":"https://nationaltoday.com/world-heart-rhythm-week/"}, emoji: "🫀", inherits: "*MedAwareness*"},
         {ty: "nD", st: {mon: 7, d: 17, durD: 7}, ttls: {"en":"Hemp History Week"}, urls: {"en":"https://daysofobservance.com/hemp-history-week/"}},
         {ty: "nD", st: {mon: 7, d: 20, durD: 7}, ttls: {"en":"Coral Reef Awareness Week"}, urls: {"en":"https://daysofobservance.com/coral-reef-awareness-week/"}},
-        {ty: "nD", st: {mon: 7, d: 26}, end: {mon: 8, d: 1}, ttls: {"en":"Hepatitis Awareness Week", "he":"שבוע המודעות להפטיטיס"}, urls: {"en":"https://nationaltoday.com/hepatitis-awareness-week/"}, inherits: "*MedAwareness*"},
+        {ty: "nD", st: {mon: 7, d: 26}, end: {mon: 8, d: 1}, ttls: {"en":"Hepatitis Awareness Week", "he":"שבוע המודעות לצהבת"}, notes: {"he":"שבוע המודעות להפטיטיס"}, urls: {"en":"https://nationaltoday.com/hepatitis-awareness-week/"}, inherits: "*MedAwareness*"},
         {ty: "nD", st: {mon: 7, d: 8, thruD: 14, wkd: [1], durD: 7}, ttls: {"en":"Non-Binary Awareness Week"}, fst: {era: 1, y: 2020}},
         {ty: "nD", st: {mon: 8, d: 1, durD: 7}, inherits: "I Clown Week", fst: {era: 1, y: 1950}},
         {ty: "nD", st: {mon: 9, d: 1, durD: 3}, ttls: {"en":"Yogurt Day"}, urls: {"en":"https://www.daysoftheyear.com/days/yogurt-day/"}, fst: {era: 1, y: 2016}},

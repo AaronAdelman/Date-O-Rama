@@ -216,7 +216,7 @@
         {ty: "M", st: {mon: 5}, ttls: {"en":"Date Your Mate Month"}, urls: {"en":"https://nationaltoday.com/date-mate-month/"}, fst: {era: 1, y: 1993}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"Heal the Children Month"}, urls: {"en":"https://nationaltoday.com/heal-the-children-month/"}, emoji: "👦👧"},
         {ty: "M", st: {mon: 5}, ttls: {"en":"Healthy Vision Month"}, urls: {"en":"https://nationaltoday.com/healthy-vision-month/"}},
-        {ty: "M", st: {mon: 5}, ttls: {"en":"Hepatitis Awareness Month", "he":"חודש המודעות להפטיטיס"}, urls: {"en":"https://nationaltoday.com/hepatitis-awareness-month/"}, inherits: "*MedAwareness*"},
+        {ty: "M", st: {mon: 5}, ttls: {"en":"Hepatitis Awareness Month", "he":"חודש המודעות לצהבת"}, notes: {"he":"חודש המודעות להפטיטיס"}, urls: {"en":"https://nationaltoday.com/hepatitis-awareness-month/"}, inherits: "*MedAwareness*"},
         {ty: "M", st: {mon: 5}, ttls: {"en":"Homeschool Awareness Month"}, urls: {"en":"https://nationaltoday.com/homeschool-awareness-month/"}, fst: {era: 1, y: 2010}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"International Civility Awareness Month"}, urls: {"en":"https://nationaltoday.com/international-civility-month/"}, fst: {era: 1, y: 2010}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"International Drum Month"}, urls: {"en":"https://www.daysoftheyear.com/days/international-drum-month/"}, notes: {"en":"Created by Lloyd McCausland of Remo"}, fst: {era: 1, y: 2000}},
