@@ -13,7 +13,7 @@
         {ty: "D", st: {misc: "E"}, inherits: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
         {ty: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 8}, inherits: "Victory in Europe Day", fst: {era: 1, y: 1945}, notes: {"en":"Liberation Day"}},
+        {ty: "D", st: {mon: 5, d: 8}, inherits: "VE Day", fst: {era: 1, y: 1945}, notes: {"en":"Liberation Day"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inherits: "Mother’s Day"},
         {ty: "D", st: {mon: 7, d: 5}, inherits: "Saints Cyril and Methodius"},
         {ty: "D", st: {mon: 7, d: 6}, ttls: {"en":"Jan Hus Day", "cs":"Den upálení mistra Jana Husa"}, urls: {"en":"https://nationaltoday.com/jan-hus-day-in-czech-republic/"}, fst: {era: 1, y: 1925}},

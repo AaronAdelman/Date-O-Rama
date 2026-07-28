@@ -34,7 +34,7 @@
         {ty: "D", st: {mon: 3, d: 12}, inherits: "Arbor Day"},
         {ttls: {"en":"C.P.C. Founding Day", "zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
         {inherits: "N Maritime Day", ty: "D", st: {mon: 7, d: 11}, ttls: {"en":"China National Maritime Day", "zh_CN":"中国航海日"}, urls: {"en":"https://en.wikipedia.org/wiki/China_National_Maritime_Day"}},
-        {ty: "D", st: {mon: 9, d: 3}, inherits: "Victory Over Japan Day", fst: {era: 1, y: 2014}},
+        {ty: "D", st: {mon: 9, d: 3}, inherits: "VJ Day", fst: {era: 1, y: 2014}},
         {inherits: "Martyrs’ Day", ty: "D", st: {mon: 9, d: 30}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
         {ty: "D", st: {mon: 10, d: 10}, ttls: {"en":"Wuchang Uprising", "zh_CN":"武昌起义"}},
         {ty: "D", st: {mon: 12, d: 13}, ttls: {"en":"Nanking Massacre Memorial Day", "zh_CN":"南京大屠杀死难者国家公祭日"}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},

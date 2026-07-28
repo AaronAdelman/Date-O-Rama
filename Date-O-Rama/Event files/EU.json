@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 5, d: 9}, inherits: "Europe Day", fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 5, d: 17}, inherits: "I Day Against Homophobia, Transphobia, and Biphobia", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 2, d: 5, thruD: 11, wkd: [3]}, inherits: "Safer Internet Day", fst: {era: 1, y: 2012}},
-        {ty: "D", st: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
+        {ty: "D", st: {mon: 5, d: 8}, inherits: "VE Day"},
         {ttls: {"en":"Europe Day (Committee of Ministers)", "he":"יום אירופה (ועדת השרים)"}, ty: "D", st: {mon: 5, d: 5}, fst: {era: 1, y: 1964}, emoji: "🇪🇺", urls: {"en":"https://nationaltoday.com/europe-day/"}},
         {ttls: {"en":"Europe Month"}, ty: "M", st: {mon: 5}, emoji: "🇪🇺"},
         {ttls: {"en":"European Day against Death Penalty"}, ty: "D", st: {mon: 10, d: 10}, fst: {era: 1, y: 2007}},

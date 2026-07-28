@@ -61,7 +61,7 @@
         {ty: "D", st: {mon: 10, d: 4}, inherits: "W Animal Day", fst: {era: 1, y: 1925}},
         {ty: "D", st: {mon: 10, d: 9}, ttls: {"en":"National Day in Memory of the Victims of Environmental and Industrial Disasters Caused by Human Negligence", "it":"Giornata nazionale in memoria delle vittime dei disastri ambientali e industriali causati dall’incuria dell’uomo"}, fst: {era: 1, y: 2011}},
         {inherits: "Columbus Day", ty: "D", st: {mon: 11, wkd: [2], nth: 1}, fst: {era: 1, y: 2004}},
-        {ty: "D", st: {mon: 10, d: 24}, inherits: "United Nations Day", fst: {era: 1, y: 1948}},
+        {ty: "D", st: {mon: 10, d: 24}, inherits: "UN Day", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"National Day of Entertainment", "it":"Giornata nazionale dello spettacolo"}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 11, d: 9}, inherits: "Freedom Day", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 11, d: 21}, inherits: "N Tree Day", fst: {era: 1, y: 2013}},

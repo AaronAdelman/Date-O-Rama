@@ -30,7 +30,7 @@
         {ty: "D", ttls: {"en":"National Cursed Soldiers Remembrance Day", "pl":"Narodowy Dzień Pamięci „Żołnierzy Wyklętych"}, st: {mon: 3, d: 1}, fst: {era: 1, y: 2011}},
         {ty: "D", ttls: {"en":"National Day for the Remembrance of Poles Rescuing Jews under German Occupation", "pl":"Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją niemiecką"}, st: {mon: 3, d: 24}, fst: {era: 1, y: 2018}},
         {ty: "D", ttls: {"en":"Baptism of Poland Day", "pl":"Święto Chrztu Polski"}, st: {mon: 4, d: 14}, fst: {era: 1, y: 2019}},
-        {ty: "D", ttls: {"en":"National Victory Day", "pl":"Narodowy Dzień Zwycięstwa"}, st: {mon: 5, d: 8}, fst: {era: 1, y: 2015}, inherits: "Victory in Europe Day"},
+        {ty: "D", ttls: {"en":"National Victory Day", "pl":"Narodowy Dzień Zwycięstwa"}, st: {mon: 5, d: 8}, fst: {era: 1, y: 2015}, inherits: "VE Day"},
         {ty: "D", ttls: {"en":"Day of Struggle and Martyrdom of the Polish Villages", "pl":"Dzień Walki i Męczeństwa Wsi Polskiej)"}, st: {mon: 7, d: 12}, fst: {era: 1, y: 2017}},
         {ty: "D", ttls: {"en":"National Warsaw Uprising Remembrance Day", "pl":"Narodowy Dzień Pamięci Powstania Warszawskiego"}, st: {mon: 8, d: 1}, fst: {era: 1, y: 2009}},
         {ty: "D", ttls: {"en":"Day of Solidarity and Freedom", "pl":"Dzień Solidarności i Wolności"}, st: {mon: 8, d: 31}, fst: {era: 1, y: 2005}},

@@ -46,7 +46,7 @@
         {ty: "D", st: {mon: 4, d: 6}, inherits: "Tartan Day", fst: {era: 1, "year": 1987}},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, inherits: "Thanksgiving", fst: {era: 1, y: 1957}, urls: {"en":"https://www.daysoftheyear.com/days/canadian-thanksgiving/"}, notes: {"en":"Canadian Thanksgiving"}},
         {ty: "D", st: {mon: 2, d: 14}, inherits: "Valentine’s Day", fst: {era: 1, y: 496}},
-        {ty: "D", st: {mon: 5, d: 8}, inherits: "Victory in Europe Day", fst: {era: 1, y: 1945}},
+        {ty: "D", st: {mon: 5, d: 8}, inherits: "VE Day", fst: {era: 1, y: 1945}},
         {ty: "M", st: {mon: 10}, inherits: "Women’s History Month", fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"British Columbia Day", "fr":"Jour de la Colombie-Britannique"}, urls: {"en":"https://www.daysoftheyear.com/days/british-columbia-day/"}, fst: {era: 1, y: 1974}, notes: {"en":"Created by Ernie Hall"}},
         {ty: "D", st: {mon: 6, d: 27}, ttls: {"en":"Canadian Multiculturalism Day"}, urls: {"en":"https://www.daysoftheyear.com/days/multiculturalism-day/"}},

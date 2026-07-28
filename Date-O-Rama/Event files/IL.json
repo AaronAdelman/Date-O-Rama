@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 5, d: 14}, inherits: "Declaration Day", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 5, d: 26}, ttls: {"he":"יום הולדת לצה״ל", "en":"Birthday of the IDF"}, fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 5, d: 30}, ttls: {"he":"הטבח בנמל התעופה לוד", "en":"Anniversary of the Lod Airport Massacre"}, fst: {era: 1, y: 1972}},
-        {ty: "D", st: {mon: 5, d: 9}, inherits: "Victory in Europe Day", urls: {"he":"https://haluzhaivri.org.il/page/36474"}},
+        {ty: "D", st: {mon: 5, d: 9}, inherits: "VE Day", urls: {"he":"https://haluzhaivri.org.il/page/36474"}},
         {ty: "D", st: {mon: 6, d: 1}, inherits: "I Farhud Day", fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en":"https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {ty: "D", st: {mon: 7, d: 17}, ttls: {"en":"International Firgun Day", "he":"יום הפרגון הבינלאומי"}, urls: {"en":"https://firgunday.firgunator.com/"}, fst: {era: 1, y: 2014}, notes: {"en":"Created by Made in JLM"}},

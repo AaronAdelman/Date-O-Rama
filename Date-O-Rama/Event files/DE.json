@@ -49,7 +49,7 @@
         {ty: "D", st: {mon: 4, d: 1}, inherits: "April Fools’ Day"},
         {ty: "M", st: {mon: 2}, inherits: "Black History Month", fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 6, d: 1}, inherits: "I Children’s Day"},
-        {ty: "D", st: {mon: 5, d: 8}, inherits: "Victory in Europe Day"},
+        {ty: "D", st: {mon: 5, d: 8}, inherits: "VE Day"},
         {ty: "D", st: {misc: "E", offsetD: -47}, inherits: "Fasnacht Day"},
         {ty: "D", st: {mon: 1, d: 9}, inherits: "Air Force Day"},
         {ty: "D", st: {mon: 10, d: 1}, inherits: "N Coffee Day"},
