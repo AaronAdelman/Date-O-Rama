@@ -66,7 +66,6 @@ struct ASADateSpecification:  Codable {
     var body: String?
     
     // For Islamic prayer times (auxiliary information)
-    var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
         
     // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes) which are all-day or should only be at most one during any day
@@ -97,7 +96,6 @@ struct ASADateSpecification:  Codable {
         case solarHours          = "zsuH"
         case dayHalf             = "dHalf"
         case body
-        case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
         case offsetDays          = "offsetD"
         case miscellaneous       = "misc"

@@ -53,7 +53,7 @@ enum ASAJuristicMethodForAsr {
 } // enum ASAJuristicMethodForAsr
 
 // Adjusting Methods for Higher Latitudes
-enum ASAAdjustingMethodForHigherLatitudes: String, Codable {
+enum ASAAdjustingMethodForHigherLatitudes {
     case none          // No adjustment
     case midnight      // middle of night
     case oneSeventh    // 1/7th of night
