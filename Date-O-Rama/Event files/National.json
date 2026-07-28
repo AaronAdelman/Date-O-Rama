@@ -1668,7 +1668,6 @@
         {ty: "D", st: {mon: 6, wkd: [7], nth: 4}, ttls: {"en":"Great American Campout"}, notes: {"en":"Great American Backyard Campout\nCreated by the National Wildlife Federation"}, urls: {"en":"https://www.nwf.org/Great-American-Campout.aspx"}, emoji: "⛺", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"American Zoo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/american-zoo-day/"}, fst: {era: 1, y: 1874}, emoji: "🦛"},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"Devotion to Duty Day"}, urls: {"en":"https://www.checkiday.com/fdf8844fcc46bc3f7861e905dc3c7d75/devotion-to-duty-day"}},
-        {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"International Chicken Wing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-chicken-wing-day/"}, fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"National Baby-Led Weaning Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-baby-led-weaning-day/"}, fst: {era: 1, y: 2021}, notes: {"en":"Created by Katie Ferraro"}},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"National Creative Ice Cream Flavors Day", "he":"יום הגלידות בטעמים יצירתיים הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/creative-ice-cream-flavor-day/"}, emoji: "🍦🍨"},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"National Financial Freedom Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-financial-freedom-day/"}, emoji: "💵"},

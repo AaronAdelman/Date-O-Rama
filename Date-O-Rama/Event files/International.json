@@ -1356,6 +1356,7 @@
         {ty: "D", st: {mon: 6, wkd: [7], nth: 4}, ttls: {"en":"International Ragweed Day"}, notes: {"en":"IRD\nCreated by the International Ragweed Society"}, urls: {"en":"https://www.daysoftheyear.com/days/international-ragweed-day/"}, emoji: "🌿", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 7, d: 1}, inherits: "I Reggae Day", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"Early Bird Day"}, urls: {"en":"https://www.daysoftheyear.com/days/early-bird-day/"}, notes: {"en":"Early Risers Day\nEarly Start Day"}, fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"International Chicken Wing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-chicken-wing-day/"}, fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"International Joke Day", "he":"יום הבדיחות הבינלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/joke-day/"}, emoji: "😆"},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"Second Half of the Year Day"}, urls: {"en":"https://www.daysoftheyear.com/days/second-half-of-the-year-day/"}, emoji: "🗓️"},
         {ty: "D", st: {mon: 7, d: 10}, ttls: {"en":"Global Energy Independence Day"}, urls: {"en":"https://www.daysoftheyear.com/days/global-energy-independence-day/"}, fst: {era: 1, y: 2005}, emoji: "⚡️", notes: {"en":"Created by Michael D. Antonovich"}},
