@@ -27,7 +27,7 @@
         {st: {mon: 8, d: 21}, ty: "D", ttls: {"en":"Ninoy Aquino Day", "he":"יום בניגנו אקינו הבן", "fil":"Araw ng Kabayanihan ni Ninoy Aquino"}, urls: {"en":"https://nationaltoday.com/ninoy-aquino-day/"}, fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: -1}, inh: "N Heroes’ Day", urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-day/"}, fst: {era: 1, y: 2007}},
         {ty: "D", st: {mon: 9, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/cebu/osmena-day"}, ttls: {"en":"Osmeña Day", "fil":"Araw ni Pangulong Osmeña"}, fst: {era: 1, y: 1990}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
         {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3}, ttls: {"en":"Bonifacio Day", "fil":"Araw ng Kapanganakan ni Andrés Bonifacio"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/bonifacio-day"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},

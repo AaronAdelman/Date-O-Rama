@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 6, d: 6}, inh: "Statehood Day", notes: {"en":"National Day"}, urls: {"en":"https://www.daysoftheyear.com/days/statehood-day-in-sweden/"}, fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 6, d: 19, thruD: 25}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inh: "Midsummer Eve"},
         {ty: "D", st: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inh: "Midsummer"},
-        {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/all-saints-day"}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/all-saints-day"}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/fathers-day"}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
@@ -32,7 +32,7 @@
         {ty: "D", st: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [6]}, ttls: {"en":"All Saints’ Eve", "sv":"Alla helgons afton"}},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         
-        {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
         {ty: "D", st: {misc: "E", offsetD: 48}, inh: "Whit Sat"},
         {inh: "1st Advent Sun", ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}},
         {inh: "2nd Advent Sun", ty: "D", st: {mon: 12, d: 4, thruD: 10, wkd: [1]}},

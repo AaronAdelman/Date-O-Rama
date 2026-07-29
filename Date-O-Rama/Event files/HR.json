@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Anti-Fascist Struggle Day", "hr":"Dan antifašističke borbe"}, urls: {"en":"https://nationaltoday.com/anti-fascist-struggle-day/"}},
         {ty: "D", st: {mon: 8, d: 5}, ttls: {"en":"Victory and Homeland Thanksgiving Day", "hr":"Dan pobjede"}, urls: {"en":"https://www.officeholidays.com/holidays/croatia/victory-and-homeland-thanksgiving-day"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ttls: {"en":"Day of Remembrance of the Victims of the Homeland War", "hr":"Dan sjećanja na žrtve Domovinskog rata"}, ty: "D", st: {mon: 11, d: 18}, urls: {"en":"https://www.officeholidays.com/holidays/croatia/croatian-remembrance-day"}, fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},

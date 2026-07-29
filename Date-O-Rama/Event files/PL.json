@@ -19,7 +19,7 @@
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 6, d: 23}, urls: {"en":"https://www.officeholidays.com/holidays/poland/fathers-day"}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/polands-independence-day/"}, fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
@@ -119,7 +119,7 @@
         {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         
         {ty: "D", st: {mon: 3, d: 19}, ttls: {"en":"Kashubian Unity Day"}, fst: {era: 1, y: 2005}, urls: {"en":"https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
         {ty: "D", st: {misc: "E", offsetD: -52}, inh: "Paczki Day", urls: {"en":"https://nationaltoday.com/paczki-day/"}},
         {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
         {ty: "D", st: {mon: 12, d: 18, thruD: 24, wkd: [7]}, inh: "Super Sat"},

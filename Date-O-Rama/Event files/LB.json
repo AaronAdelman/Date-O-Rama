@@ -26,7 +26,7 @@
         {ty: "D", st: {misc: "E", offsetD: -52}, inh: "St Vardanian"},
         {inh: "Teacher’s Day", ty: "D", st: {mon: 3, d: 9}},
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {mon: 9, d: 8}, inh: "Nativity of Mary"},
         {ty: "D", st: {mon: 12, d: 17}, inh: "St Barbara"},

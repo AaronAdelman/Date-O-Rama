@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 7, d: 28}, ttls: {"en":"Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, fst: {era: 1, y: 1943}, notes: {"en":"Liberation from Fascism"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
         {ty: "D", st: {mon: 9, d: 3}, ttls: {"ceb":"Pitsa sa pagkatukod","en":"Foundation Day"}, urls: {"en":"https://nationaltoday.com/foundation-day-in-san-marino/"}, fst: {era: 1, y: 301}, notes: {"en":"Feast of Saint Marinus and the Republic"}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/san-marino/all-souls-day"}, ttls: {"en":"Commemoration of the Dead"}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},

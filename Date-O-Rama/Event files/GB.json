@@ -139,7 +139,7 @@
         {ty: "M", st: {mon: 4}, ttls: {"en":"Bowel Cancer Awareness Month"}, notes: {"en":"Step up for 30 For Bowel Cancer Month"}, urls: {"en":"https://www.bowelcanceruk.org.uk/support-us/bowel-cancer-awareness-month/"}, inh: "*MedAw*", fst: {era: 1, y: 2000}, notes: {"en":"Created by Bowel Cancer UK"}},
         {ty: "D", st: {mon: 4, d: 2}, ttls: {"en":"Don’t Walk Your Dog Day"}, fst: {era: 1, y: 2022}, urls: {"en":"https://go.puptalk.co.uk/awareness-day/"}, emoji: "🐕", notes: {"en":"Created by Niki French"}},
         {ty: "D", st: {mon: 3, wkd: [6], nth: 1}, ttls: {"en":"Overseas NHS Workers Day"}, urls: {"en":"https://dauk.org/campaigns/overseas-nhs-workers-day/"}, notes: {"en":"NHS Overseas Workers Day\nOverseas N.H.S. Workers Day\nCreated by Doctors’ Association UK"}, fst: {era: 1, y: 2021}, emoji: "🫶"},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
         {ty: "D", st: {mon: 4, d: 12}, ttls: {"en":"National Deskfast Day"}, urls: {"en":"http://abetterbreakfast.co.uk/deskfast.html"}, notes: {"en":"Deskfast Day\nSome people think this observance wanders all over the calendar from year to year.\nCreated by A Better Breakfast"}, emoji: "🥚🥞🥣", fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 4, d: 14}, ttls: {"en":"National Laverbread Day"}, urls: {"en":"https://www.laverbreadday.co.uk/"}, notes: {"en":" International Laverbread Day\nCreated by the Pembrokeshire Beach Food Company"}, fst: {era: 1, y: 2021}, emoji: "🌅🌊🥬"},
         {ty: "D", st: {mon: 4, d: 15}, ttls: {"en":"National Bunion Day"}, urls: {"en":"https://www.nationalbunionday.com/"}, emoji: "🦶", fst: {era: 1, y: 2024}, inh: "*MedAw*", notes: {"en":"Created by Treace Medical Concepts"}},

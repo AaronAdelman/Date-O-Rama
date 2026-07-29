@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 8}, inh: "VE Day", fst: {era: 1, y: 1945}, notes: {"en":"Liberation Day"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 7, d: 5}, inh: "Saints Cyril and Methodius"},
+        {ty: "D", st: {mon: 7, d: 5}, inh: "Sts Cyril and Methodius"},
         {ty: "D", st: {mon: 7, d: 6}, ttls: {"en":"Jan Hus Day", "cs":"Den upálení mistra Jana Husa"}, urls: {"en":"https://nationaltoday.com/jan-hus-day-in-czech-republic/"}, fst: {era: 1, y: 1925}},
         {ty: "D", st: {mon: 8, d: 21}, urls: {"en":"https://www.officeholidays.com/holidays/czech-republic/day-of-memory"}, ttls: {"en":"Day of Memory"}},
         {ty: "D", st: {mon: 9, d: 28}, inh: "Statehood Day", fst: {era: 1, y: 2000}, urls: {"en":"https://www.daysoftheyear.com/days/czech-statehood-day/"}, notes: {"en":"Saint Wenceslas Day"}},

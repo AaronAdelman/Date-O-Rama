@@ -39,7 +39,7 @@
         {ty: "D", st: {mon: 2, d: 11}, inh: "Our Lady of Lourdes"},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"ar":"يوم المريض العالمي","ast":"Xornada Mundial del Enfermu","en":"World Day of the Sick","es":"Jornada Mundial del Enfermo","eu":"Gaixoen Munduko Eguna","fa":"روز جهانی بیمار","fr":"Journée mondiale des malades","ga":"Lá Domhanda na nEaslán","hi":"विश्व बीमार दिवस","hr":"Svjetski dan bolesnika","hu":"Betegek világnapja","hy":"Հիվանդի համաշխարհային օր","hyw":"Հիւանդի Համաշխարհային Օր","it":"Giornata mondiale del malato","ja":"世界病者の日","pl":"Światowy Dzień Chorego","ru":"Всемирный день больного","sah":"Ыарыһах күнэ","sk":"Svetový deň chorých","ta":"உலக நோயாளர் நாள்","uk":"Всесвітній день хворого"}, fst: {era: 1, y: 1992}, urls: {"en":"https://www.daysoftheyear.com/days/world-day-of-the-sick/", emoji: "🤕"}, notes: {"en":"Created by Pope John Paul II"}},
         
-        {ty: "D", st: {mon: 2, d: 14}, inh: "Saints Cyril and Methodius"},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "Sts Cyril and Methodius"},
         {ty: "D", st: {mon: 2, d: 17}, ttls: {"en":"Feast of the Seven Holy Founders of the Servite Order"}},
 
         {ttls: {"en":"Feast of Saint Peter Damian"}, ty: "D", st: {mon: 2, d: 21}},
@@ -109,7 +109,7 @@
         {ttls: {"en":"Feast of Saint Cyril of Alexandria"}, ty: "D", st: {mon: 6, d: 27}},
         {ttls: {"en":"Feast of Saint Irenaeus"}, ty: "D", st: {mon: 6, d: 28}},
 
-        {ty: "D", st: {mon: 6, d: 29}, inh: "Saints Peter and Paul"},
+        {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul"},
 
         {ttls: {"en":"Feast of the First Martyrs of the Church of Rome"}, ty: "D", st: {mon: 6, d: 30}},
         
@@ -211,7 +211,7 @@
         
         {ty: "D", st: {mon: 10, d: 31}, inh: "Halloween"},
         
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
 
         {ty: "D", st: {mon: 11, d: 3}, ttls: {"en":"Feast of Saint Martin de Porres"}},

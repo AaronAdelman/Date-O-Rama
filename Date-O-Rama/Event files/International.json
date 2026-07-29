@@ -816,7 +816,7 @@
         {ty: "D", st: {mon: 3, wkd: [7], nth: 1}, inh: "Open Data Day", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 3, wkd: [7], nth: 2}, ttls: {"en":"International Fanny Pack Day", "he":"יום הפאוץ׳ הבינלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/international-fanny-pack-day/"}, fst: {era: 1, y: 2007}, notes: {"en":"Created by Nick Yates"}},
         {ty: "D", st: {mon: 3, wkd: [7], nth: 3}, ttls: {"en":"International Sports Car Racing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-sports-car-racing-day/"}, emoji: "🏎", fst: {era: 1, y: 2013}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
         {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Boomer Bonus Days"}, urls: {"en":"https://nationaltoday.com/boomer-bonus-days/"}},
         {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Edible Book Festival","ga":"Féile Idirnáisiúnta na Leabhar Inite","id":"Festival Santap Buku","mk":"Фестивал на книги кои се јадат","sh":"Festival jestive knjige"}, urls: {"en":"http://www.books2eat.beatricecoron.com/"}, notes: {"en":"International Edible Book Day\nInternational Edible Book Festival\nNational Edible Book Festival\nCreated by Judith A. Hoffberg and Béatrice Coron"}, fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Fossil Fools Day","ff":"Fossil Fools Day","sw":"Siku ya wajinga wa kisukuku"}, urls: {"en":"https://www.daysoftheyear.com/days/fossil-fools-day/"}, fst: {era: 1, y: 2004}},

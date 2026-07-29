@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 3, d: 12}, inh: "Independence Day", notes: {"en":"Mauritius Day\nMauritian National Day"}, fst: {era: 1, y: 1968}, urls: {"en":"https://nationaltoday.com/mauritius-independence-day/"}},
         {ty: "D", st: {mon: 4, d: 14}, ttls: {"en":"Tamizh Puttaandu"}, urls: {"en":"https://www.officeholidays.com/holidays/mauritius/tamil-new-year"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, urls: {"en":"https://nationaltoday.com/arrival-of-indentured-labourers/"}, ttls: {"en":"Arrival of Indentured Labourers"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         

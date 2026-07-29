@@ -132,7 +132,7 @@
         {ty: "D", st: {mon: 7, d: 3}, inh: "St Thomas", fst: {era: 1, y: 1969}},
         {ty: "D", st: {mon: 9, d: 5}, inh: "St Teresa of Calcutta", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 9, d: 8}, inh: "Nativity of Mary"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
         {inh: "Holy Family", ty: "D", st: {mon: 12, d: 30, wkd: [6]}},
         {inh: "Holy Family", ty: "D", st: {mon: 12, d: 26, thruD: 31, wkd: [1]}},

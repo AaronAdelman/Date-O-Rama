@@ -17,7 +17,7 @@
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 7, d: 14}, inh: "Bastille Day", fst: {era: 1, y: 1789}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
-        {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Armistice Day", urls: {"en":"https://www.daysoftheyear.com/days/armistice-day-in-france/"}, fst: {era: 1, y: 1922}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
     ]

@@ -18,7 +18,7 @@
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
         {inh: "Independence Day", ty: "nD", st: {mon: 8, d: 16}, end: {mon: 8, d: 17}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/gabon-independence-day/"}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Saints Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},

@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 6, d: 12}, ttls: {"en":"Brazilian Valentine’s Day", "pt":"Dia dos Namorados", "he":"יום האוהבים ברזיל"}, urls: {"en":"https://nationaltoday.com/brazilian-valentines-day/"}, fst: {era: 1, y: 1948}, inh: "Valentine’s Day"},
         {ty: "D", st: {mon: 6, d: 13}, inh: "St Anthony of Padua"},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},
-        {ty: "D", st: {mon: 6, d: 29}, inh: "Saints Peter and Paul"},
+        {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul"},
         {ty: "D", st: {mon: 10, d: 12}, inh: "Children’s Day"},
         
         {ty: "D", st: {mon: 1, d: 12}, ttls: {"en":"Founding of Belém"}},

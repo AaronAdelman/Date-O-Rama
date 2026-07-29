@@ -42,7 +42,7 @@
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day", urls: {"en":"https://nationaltoday.com/orthodox-ascension-day/"}},
         {ttls: {"en":"The Fathers of the First Ecumenical Council"}, ty: "D", st: {misc: "E", offsetD: 42}},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost", urls: {"en":"https://nationaltoday.com/orthodox-pentecost-sunday/"}},
-        {inh: "All Saints Day", ty: "D", st: {misc: "E", offsetD: 56}},
+        {inh: "All Sts Day", ty: "D", st: {misc: "E", offsetD: 56}},
         
         {ty: "D", st: {mon: 9, d: 8}, inh: "Nativity of Mary"},
         {ty: "D", st: {mon: 9, d: 14}, inh: "Exaltation of the Holy Cross"},
@@ -60,7 +60,7 @@
 
         {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day", urls: {"en":"https://nationaltoday.com/orthodox-new-year/"}},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},
-        {ty: "D", st: {mon: 6, d: 29}, inh: "Saints Peter and Paul"},
+        {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul"},
         {ty: "D", st: {mon: 8, d: 29}, inh: "Beheading of Saint John the Baptist"},
         {inh: "Intercession of the Theotokos", ty: "D", st: {mon: 10, d: 1}},
         

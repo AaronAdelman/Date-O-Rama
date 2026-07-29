@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/macedonia/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/macedonia/orthodox-cyril-and-methodius-day"}, inh: "Saints Cyril and Methodius"},
+        {ty: "D", st: {mon: 5, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/macedonia/orthodox-cyril-and-methodius-day"}, inh: "Sts Cyril and Methodius"},
         {ty: "D", st: {mon: 8, d: 2}, urls: {"en":"https://nationaltoday.com/republic-day-in-north-macedonia/"}, inh: "Republic Day", fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 9, d: 8}, inh: "Independence Day", urls: {"en":"https://www.officeholidays.com/holidays/macedonia/macedonia-fyro-independence-day"}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 10, d: 11}, inh: "Revolution Day", urls: {"en":"https://www.officeholidays.com/holidays/macedonia/macedonia-fyro-revolution-day"}, fst: {era: 1, y: 1941}},

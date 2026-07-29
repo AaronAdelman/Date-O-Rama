@@ -77,7 +77,7 @@
         {ty: "D", st: {mon: 3, d: 19}, ttls: {"en":"Saint Swallow’s Day"}, inh: "HDH"},
         {ty: "D", st: {mon: 3, d: 25}, ttls: {"en":"Discordians for Jesus Day"}, notes: {"en":"Love Your Neighbor Day\nWhollyday\n11 Discord"}, inh: "EDH"},
         {ty: "D", st: {mon: 3, d: 27}, ttls: {"en":"Discardia"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-13-discardia"}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day", notes: {"en":"Quarter Day\nFools’ Day\nWhollyday\n18 Discord"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-18-april-fools-day"}},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day", notes: {"en":"Quarter Day\nFools’ Day\nWhollyday\n18 Discord"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-18-april-fools-day"}},
         {ty: "D", st: {mon: 4, d: 2}, ttls: {"en":"Saint John the Blasphemist’s Day"}, notes: {"en":"Blasphemy Day\nWhollyday\n19 Discord"}, inh: "EDH"},
         {ty: "D", st: {mon: 4, d: 4}, ttls: {"en":"Square Day"}, inh: "HDH"},
         {ty: "D", st: {mon: 4, d: 5}, ttls: {"en":"Be Kind To Tourists Day"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-22-be-kind-to-tourists-day"}},
