@@ -24,8 +24,8 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
 
-        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sunday"},
-        {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Monday"},
+        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
+        {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Mon"},
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tuesday"},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Holy Wednesday"},
         {inh: "Mother’s Day", ty: "D", st: {mon: 5, d: 10}},

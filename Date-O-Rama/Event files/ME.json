@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
 
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},

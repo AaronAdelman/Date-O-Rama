@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Saturday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 5, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/samoan-mothers-day"}, inh: "Mother’s Day"},
         {inh: "Independence Day", ty: "D", st: {mon: 6, d: 1}, urls: {"en":"https://nationaltoday.com/samoa-independence-day/"}, fst: {era: 1, y: 1962}},
@@ -27,7 +27,7 @@
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
 
         
-        {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "White Sunday"},
+        {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "White Sun"},
         {ty: "D", st: {mon: 9, d: 29}, inh: "N Police Remembrance Day", fst: {era: 1, y: 1989}},
     ]
 }

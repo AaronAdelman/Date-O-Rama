@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 3, d: 24, thruD: 26, wkd: [2]}, inh: "Otago Anniversary Day (in lieu)", fst: {era: 1, y: 1981}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {misc: "E", offsetD: 2}, ttls: {"en":"Southland Anniversary Day"}, urls: {"en":"https://nationaltoday.com/southland-anniversary-day/"}, fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 4, d: 27, wkd: [2]}, inh: "Anzac Day (in lieu)", fst: {era: 1, y: 1916}, urls: {"en":"https://www.officeholidays.com/holidays/new-zealand/new-zealand-anzac-day"}},

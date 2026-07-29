@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/panama/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 1, d: 9}, inh: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/panamas-martyrs-day/"}},
-        {ty: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/panama/carnival-monday"}, inh: "Carnival Monday"},
+        {ty: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/panama/carnival-monday"}, inh: "Carnival Mon"},
         {ty: "D", st: {misc: "E", offsetD: -47}, urls: {"en":"https://www.officeholidays.com/holidays/panama/carnival-tuesday"}, inh: "Shrove Tuesday"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},

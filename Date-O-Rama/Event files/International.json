@@ -636,7 +636,7 @@
         {ty: "D", st: {mon: 2, d: 8}, ttls: {"en":"Laugh and Get Rich Day", "he":"יום צחק ותתעשר"}, urls: {"en":"https://nationaltoday.com/laugh-and-get-rich-day/"}, emoji: "🤣"},
         {ty: "D", st: {mon: 2, d: 8}, ttls: {"en":"Opera Day", "he":"יום האופרה"}, urls: {"en":"https://nationaltoday.com/opera-day/"}},
         {ty: "D", st: {mon: 2, wkd: [1], nth: 1}, ttls: {"en":"Dump Your Significant Jerk Day"}, urls: {"en":"https://www.daysoftheyear.com/days/dump-your-significant-jerk-day/"}},
-        {ty: "D", st: {mon: 2, wkd: [1], nth: 2}, inh: "Super Bowl Sunday", fst: {era: 1, y: 1967}},
+        {ty: "D", st: {mon: 2, wkd: [1], nth: 2}, inh: "Super Bowl Sun", fst: {era: 1, y: 1967}},
         {ty: "D", st: {mon: 2, wkd: [1], nth: 2}, ttls: {"en":"Super Chicken Wing Day"}, urls: {"en":"https://www.daysoftheyear.com/days/super-chicken-wing-day/"}, fst: {era: 1, y: 1964}, notes: {"en":"Created by Frank and Teressa Bellissimo"}},
         {ty: "D", st: {mon: 2, wkd: [1], nth: 3}, ttls: {"en":"World Whale Day", "he":"יום הלוויתן העולמי"}, urls: {"en":"https://www.daysoftheyear.com/days/world-whale-day/"}, emoji: "🐳", fst: {era: 1, y: 1980}, notes: {"en":"Created by Greg Kauffman"}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 2}, ttls: {"en":"International Epilepsy Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-epilepsy-day/"}, inh: "*MedAwareness*", fst: {era: 1, y: 2015}, notes: {"en":"Created by the International Bureau for Epilepsy (IBE) and the International League Against Epilepsy (ILAE)"}},

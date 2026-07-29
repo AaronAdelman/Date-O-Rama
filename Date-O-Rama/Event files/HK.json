@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Saturday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 7, d: 1}, inh: "Hong Kong Special Administrative Region Establishment Day", fst: {era: 1, y: 1997}, notes: {"en":"Special Administration Region (SAR) Day"}},
         {ty: "D", st: {mon: 10, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, inh: "N Day"},

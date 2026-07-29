@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 23}, inh: "Bounty Day", fst: {era: 1, y: 1790}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {inh: "King’s Birthday", ty: "D", st: {mon: 6, wkd: [7], nth: 2}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},

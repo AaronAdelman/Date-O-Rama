@@ -12,7 +12,7 @@
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 2, d: 8}, ttls: {"az":"Preşern günü","cs":"Prešerenův den","el":"Ημέρα Πρεσέρεν","en":"Prešeren Day","id":"Hari Prešeren","mk":"Прешернов ден","pa":"ਪਰੇਸ਼ੀਰਨ ਦਿਹਾੜਾ","ro":"Ziua lui Prešeren","ru":"День Прешерна","sl":"Prešernov dan","uk":"День Прешерна"}, urls: {"en":"https://slovenia.si/art-and-cultural-heritage/preseren-day"}, fst: {era: 1, y: 1945}, notes: {"en":"Created by the Government of Slovenia"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 27}, ttls: {"en":"Day of Uprising Against Occupation", "sl":"dan upora proti okupatorju"}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-uprising-against-occupation/"}, notes: {"en":"Resistance Day"}, fst: {era: 1, y: 1941}},
         {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},

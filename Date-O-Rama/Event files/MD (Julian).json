@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "O Xmas"},
         {ty: "D", st: {mon: 12, d: 26, wkd: [1, 4, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/orthodox-christmas"}, inh: "Xmas Holiday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Mon"},
         {ty: "D", ttls: {"en":"Memorial Easter", "ro":"Paştele Blăjinilor"}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/orthodox-easter-monday"}, st: {misc: "E", offsetD: 8}, emoji: "🥚", notes: {"en":"Easter of the Dead\nMemorial Day\nParent’s Day"}},
     ]
 }

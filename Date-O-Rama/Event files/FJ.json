@@ -13,7 +13,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Saturday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 12, thruD: 15, wkd: [2]}, inh: "Girmit Day", fst: {era: 1, y: 2023}, thruD: {era: 1, y: 2025}},
         {ty: "D", st: {mon: 5, d: 11, thruD: 17, wkd: [6]}, inh: "Girmit Day", fst: {era: 1, y: 2026}},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, inh: "Ratu Sukuna Day", fst: {era: 1, y: 2010}, last: {era: 1, y: 2023}},
@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
 
-        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sunday"},
+        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {misc: "E", offsetD: -7}, ttls: {"en":"Children’s Sunday"}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 6, d: 11}, inh: "Queen’s Birthday"},
         {inh: "N Youth Day", ty: "D", st: {mon: 5, d: 4}},

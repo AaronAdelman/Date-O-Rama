@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/commonwealth-day"}, ttls: {"en":"Winter Midterm Bank Holiday"}, fst: {era: 1, y: 2022}, inh: "Bank Holiday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 28, wkd: [2, 3, 4, 5, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inh: "Workers’ Memorial Day", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 4, d: 29, thruD: 30, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inh: "Workers’ Memorial Day", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "May Day", urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},

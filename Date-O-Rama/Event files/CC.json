@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 26}, inh: "Australia Day", fst: {era: 1, y: 1808}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", ttls: {"en":"Self Determination Day"}, st: {mon: 4, d: 6}},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

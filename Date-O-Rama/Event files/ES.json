@@ -22,7 +22,7 @@
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thursday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 17}, ttls: {"en":"Feast of San Vincent Ferrer"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/valenciana/feast-of-san-vincent-ferrer"}, fst: {era: 1, y: 1521}},
         {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"Castile and León Community Day"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/castile-and-leon/castile-and-leon-community-day"}},
         {ty: "D", st: {era: 1, y: 2020, mon: 1, d: 22}, inh: "St Vincent"},
@@ -74,7 +74,7 @@
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ttls: {"en":"Festival of the Vaquillas"}, ty: "D", st: {mon: 7, d: 13}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 3, d: 19}, inh: "Engineer’s Day"},

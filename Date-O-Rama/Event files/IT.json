@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 3, d: 19}, inh: "Father’s Day"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Liberation Day", fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/national-liberation-day-italy/"}},
         {ty: "D", st: {mon: 4, d: 25}, inh: "St Mark the Evangelist", notes: {"en":"Feast of Saint Mark"}},
         {ty: "D", st: {mon: 4, d: 28}, urls: {"en":"https://www.officeholidays.com/holidays/italy/sardinia/sardinia-day"}, ttls: {"en":"Sardinia’s Day"}, fst: {era: 1, y: 1993}},

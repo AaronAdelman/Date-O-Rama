@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "May Day", urls: {"en":"https://www.officeholidays.com/holidays/finland/vappu"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/finland/mothers-day"}},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},

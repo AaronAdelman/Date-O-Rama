@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thursday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, inh: "Memorial Day", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/memorial-day"}},
         {ty: "D", st: {mon: 6, d: 16, wkd: [6]}, inh: "Juneteenth (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/juneteenth"}, fst: {era: 1, y: 1886}},
         {ty: "D", st: {mon: 6, d: 18, wkd: [6]}, inh: "Juneteenth (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/juneteenth"}, fst: {era: 1, y: 1886}},

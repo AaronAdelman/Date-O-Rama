@@ -127,7 +127,7 @@
         {ty: "D", st: {mon: 11, d: 1}, ttls: {"en":"Lakshadweep Day"}, fst: {era: 1, y: 1956}},
         {ty: "D", st: {mon: 2, d: 9}, ttls: {"en":"Bodoland Day"}, fst: {era: 1, y: 2003}},
 
-        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sunday"},
+        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {mon: 7, d: 3}, inh: "St Thomas", fst: {era: 1, y: 1969}},
         {ty: "D", st: {mon: 9, d: 5}, inh: "St Teresa of Calcutta", fst: {era: 1, y: 2016}},

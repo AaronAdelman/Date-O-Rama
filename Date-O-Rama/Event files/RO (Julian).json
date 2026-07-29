@@ -8,10 +8,10 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
     evts: [
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Mon"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Heroes’ Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
     ]
 }

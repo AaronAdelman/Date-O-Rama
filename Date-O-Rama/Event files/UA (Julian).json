@@ -9,10 +9,10 @@
     evts: [
         {ty: "D", st: {mon: 12, d: 25}, inh: "O Xmas"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Mon"},
 
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
     ]
 }
 

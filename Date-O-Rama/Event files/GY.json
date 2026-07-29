@@ -13,7 +13,7 @@
         {ty: "D", st: {mon: 2, d: 24, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/guyana-republic-day/"}, fst: {era: 1, y: 1970}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 5}, inh: "Indian Arrival Day", urls: {"en":"https://nationaltoday.com/indian-arrival-day-guyana/"}, fst: {era: 1, y: 1838}},
         {ty: "D", st: {mon: 5, d: 26}, inh: "Independence Day", fst: {era: 1, y: 1966}, urls: {"en":"https://nationaltoday.com/independence-day-guyana/"}},

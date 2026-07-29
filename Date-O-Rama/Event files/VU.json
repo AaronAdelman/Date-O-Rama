@@ -13,7 +13,7 @@
         {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Custom Chief’s Day"}, urls: {"en":"https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}, notes: {"en":"Chiefs Day"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 7, d: 24}, urls: {"en":"https://nationaltoday.com/childrens-day-in-vanuatu/"}},

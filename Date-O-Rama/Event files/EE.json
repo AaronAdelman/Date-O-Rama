@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Spring Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {inh: "Victory Day", ty: "D", st: {mon: 6, d: 23}, urls: {"en":"https://nationaltoday.com/estonia-victory-day/"}, fst: {era: 1, y: 1934}},
         {ty: "D", st: {mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/estonia/st-johns-day"}, inh: "St John"},
         {ty: "D", st: {mon: 8, d: 20}, urls: {"en":"https://www.officeholidays.com/holidays/estonia/independence-restoration-day"}, inh: "Independence Restoration Day", fst: {era: 1, y: 1991}},
