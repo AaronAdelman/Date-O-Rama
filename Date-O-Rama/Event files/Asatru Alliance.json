@@ -54,7 +54,7 @@
             {ty: "D", st: {mon: 12, d: 9}, ttls: {"en":"Day of Remembrance for Egil Skallagrimsson"}, inherits: "*Remembrance*"},
             {ty: "D", st: {mon: 12, d: 21}, ttls: {"en":"Mother Night"}},
             {ty: "D", st: {mon: 12, d: 22}, inherits: "Yule", notes: {"en":"High Feast of Yule"}},
-            {ty: "D", st: {mon: 12, d: 31}, inherits: "12th Night"},
+            {ty: "D", st: {mon: 12, d: 31}, inherits: "12th Nite"},
         ]},
     ]
 }

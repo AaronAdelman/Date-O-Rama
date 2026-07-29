@@ -92,7 +92,7 @@
         {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inherits: "Buy Nothing Day", fst: {era: 1, y: 1997}, urls: {"en":"https://www.buynothingday.co.uk/"}},
         {ty: "D", st: {mon: 11, d: 24, thruD: 30, wkd: [7]}, inherits: "Small Business Saturday", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"Lancashire Day"}, urls: {"en":"https://www.visitlancashire.com/happy-lancashire-day"}, notes: {"en":"Created by the Friends of Real Lancashire"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", fst: {era: 1, y: 1604}},
+        {ty: "D", st: {mon: 11, d: 5}, inherits: "Guy Fawkes Nite", fst: {era: 1, y: 1604}},
         {ty: "D", st: {mon: 11, d: 7}, inherits: "Wales International Film Festival", fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 11, d: 9}, ttls: {"en":"British Pudding Day"}, urls: {"en":"https://www.daysoftheyear.com/days/british-pudding-day/"}},
         {ty: "D", st: {mon: 11, d: 9}, ttls: {"en":"Social Media Kindness Day"}, urls: {"en":"https://www.socialmediakindnessday.com/"}, fst: {era: 1, y: 2020}, notes: {"en":"Created by friends of Caroline Flack"}},

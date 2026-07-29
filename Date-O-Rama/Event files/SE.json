@@ -12,7 +12,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inherits: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inherits: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "Easter Monday"},
-        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Night", urls: {"en":"https://www.officeholidays.com/holidays/sweden/walpurgis-night"}},
+        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Nite", urls: {"en":"https://www.officeholidays.com/holidays/sweden/walpurgis-night"}},
         {ty: "D", st: {mon: 5, d: 1}, inherits: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inherits: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 40}, ttls: {"en":"Friday after Ascension Day", "sv":"Himmelsfärdsdag fredag"}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/ascension-friday"}},
@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/christmas-holiday"}, inherits: "St Stephen"},
         {ty: "D", st: {mon: 12, d: 31}, inherits: "New Year’s Eve"},
         
-        {ty: "D", st: {mon: 1, d: 5}, inherits: "12th Night"},
+        {ty: "D", st: {mon: 1, d: 5}, inherits: "12th Nite"},
         {ty: "D", st: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [6]}, ttls: {"en":"All Saints’ Eve", "sv":"Alla helgons afton"}},
         {ty: "D", st: {misc: "E", offsetD: -1}, inherits: "Holy Saturday"},
         

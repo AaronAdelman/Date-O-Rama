@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 12, d: 26}, inherits: "St Stephen"},
         
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {ty: "D", st: {mon: 6, d: 23}, inherits: "Kupala Night"},
+        {ty: "D", st: {mon: 6, d: 23}, inherits: "Kupala Nite"},
         {ty: "D", st: {mon: 6, d: 1}, inherits: "Children’s Day"},
         {ty: "D", st: {mon: 1, d: 27}, inherits: "Holocaust Memorial Day", fst: {era: 1, y: 2006}, ttls: {"en":"Memorial Day for the Victims of the Holocaust and Prevention of Crimes against Humanity", "cs":"Den památky obětí holocaustu a předcházení zločinu proti lidskosti"}},
         {ty: "D", st: {mon: 8, d: 2}, inherits: "Roma Holocaust Memorial Day", fst: {era: 1, y: 2011}},

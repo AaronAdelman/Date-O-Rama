@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 2}, inherits: "St Basil", notes: {"en":"Christmastide (day 9)\nFeast of Saint Basil the Great"}},
         {ty: "D", st: {mon: 1, d: 3}, ttls: {"br":"Gouel an anv a Jezuz","de":"Namen-Jesu-Fest","en":"Feast of the Holy Name of Jesus","es":"Fiesta del Santísimo Nombre de Jesús","hr":"Presveto Ime Isusovo","id":"Hari Raya Nama Tersuci Yesus","it":"Santissimo Nome di Gesù","nb":"Jesu navnedag","nl":"Zoete Naam Jezus","nn":"Jesu namnedag","pt":"Festa do Santíssimo Nome de Jesus","sv":"Jesu heliga namn"}, notes: {"en":"Christmastide (day 10)"}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {ty: "D", st: {mon: 1, d: 4}, ttls: {"en":"Feast of Saint Elizabeth Ann Seton"}, notes: {"en":"Christmastide (day 11)"}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {ty: "D", st: {mon: 1, d: 5}, inherits: "12th Night"},
+        {ty: "D", st: {mon: 1, d: 5}, inherits: "12th Nite"},
         {ty: "D", st: {mon: 1, d: 6}, inherits: "Epiphany"},
         {ty: "D", st: {mon: 1, d: 7}, ttls: {"en":"Feast of Saint Raymond of Penyafort"}},
         {ty: "D", st: {mon: 1, d: 7, thruD: 13, wkd: [1]}, ttls: {"en":"Feast of the Baptism of the Lord","id":"Hari Raya Pembaptisan Tuhan","ko":"주의 세례주일","ms":"Pesta Pembaptisan Tuhan","tr":"Rab’bin Vaftiz Bayramı","ur":"خداوند کا بپتسمہ"}, notes: {"en":"Baptism of the Lord"}, urls: {"en":"https://nationaltoday.com/the-baptism-of-the-lord/"}},

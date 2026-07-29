@@ -92,7 +92,7 @@
         {ty: "M", st: {mon: 2}, ttls: {"en":"Renaissance of the Heart Month"}, notes: {"en":"Worldwide Renaissance of the Heart Month\nCreated by Deb Kulkkula"}, urls: {"en":"https://www.daysoftheyear.com/days/renaissance-of-the-heart-month/"}, fst: {era: 1, y: 2009}, emoji: "❤️"},
         {ty: "M", st: {mon: 2}, ttls: {"en":"Barley Month"}, urls: {"en":"https://www.daysoftheyear.com/days/barley-month/"}, emoji: "𐂏"},
         {ty: "M", st: {mon: 2}, ttls: {"en":"Berry Fresh Month"}, urls: {"en":"https://www.daysoftheyear.com/days/berry-fresh-month/"}, emoji: "🍓🫐"},
-        {ty: "M", st: {mon: 2}, ttls: {"en":"Celebration of Chocolate Month"}, urls: {"en":"https://www.daysoftheyear.com/days/celebration-of-chocolate-month/"}, inherits: "*Chocolate*"},
+        {ty: "M", st: {mon: 2}, ttls: {"en":"Celebration of Chocolate Month"}, urls: {"en":"https://www.daysoftheyear.com/days/celebration-of-chocolate-month/"}, inherits: "*Choc*"},
         {ty: "M", st: {mon: 2}, ttls: {"en":"Cholangiocarcinoma Awareness Month"}, urls: {"en":"https://www.cholangiocarcinoma.org/awareness-month/"}, inherits: "*MedAwareness*", emoji: "🌳", fst: {era: 1, y: 2014}, notes: {"en":"Created by the Cholangiocarcinoma Foundation"}},
         {ty: "M", st: {mon: 2}, ttls: {"en":"Creative Romance Month"}, urls: {"en":"https://www.daysoftheyear.com/days/creative-romance-month/"}},
         {ty: "M", st: {mon: 2}, ttls: {"en":"Declutter for a Cause Month"}, urls: {"en":"https://www.daysoftheyear.com/days/declutter-for-a-cause-month/"}, fst: {era: 1, y: 2000}, notes: {"en":"Created by Kristi Bates"}},

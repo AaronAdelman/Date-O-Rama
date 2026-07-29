@@ -60,7 +60,7 @@
         {ty: "D", st: {mon: 4, d: 15}, ttls: {"en":"Father Damien Day"}, urls: {"en":"https://www.daysoftheyear.com/days/father-damien-day/"}, fst: {era: 1, y: 1969}},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Coronation Day of Pope Benedict XVI"}, urls: {"en":"https://nationaltoday.com/coronation-day-of-pope-benedict-xvi/"}, fst: {era: 1, y: 2005}, inherits: "*Coronation*"},
         {ty: "D", st: {mon: 4, d: 3}, urls: {"en":"https://nationaltoday.com/national-pro-life-t-shirt-day/"}, ttls: {"en":"National Pro-Life T Shirt Day"}},
-        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Night"},
+        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Nite"},
         {ty: "D", st: {mon: 5, d: 12}, ttls: {"en":"National Sapphire Segulah Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-sapphire-segulah-day/"}, fst: {era: 1, y: 2022}, notes: {"en":"Whoever named this observance clearly does not know Hebrew.\nCreated by Great Exploit Ministries (GEM)"}},
         {ty: "D", st: {mon: 5, d: 21}, ttls: {"en":"Sister Maria Hummel Day"}, urls: {"en":"https://nationaltoday.com/sister-maria-hummel-day/"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 1}, ttls: {"en":"Motorcycle Mass and Blessing of the Bikes Day"}, urls: {"en":"https://www.daysoftheyear.com/days/motorcycle-mass-and-blessing-of-the-bikes-day/"}, fst: {era: 1, y: 1999}, emoji: "🏍️🚲", notes: {"en":"Created by Reverend Canon Thomas Miller"}},

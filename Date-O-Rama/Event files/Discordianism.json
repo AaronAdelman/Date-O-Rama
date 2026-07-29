@@ -90,7 +90,7 @@
         {ty: "D", st: {mon: 4, d: 26}, ttls: {"en":"Ordination Day"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-43-ordination-day"}},
         {ty: "D", st: {mon: 4, d: 26}, ttls: {"en":"Universal Ordination Day"}, notes: {"en":"Ordination Day\nWhollyday\n43 Discord"}, urls: {"en":"https://www.fsofcabal.com/holydays/02-43-ordination-day"}},
         {ty: "D", st: {mon: 4, d: 29}, ttls: {"en":"Duke’s Day"}, inherits: "HDH"},
-        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Night", urls: {"en":"https://www.fsofcabal.com/holydays/02-47-walpurgisnacht"}},
+        {ty: "D", st: {mon: 4, d: 30}, inherits: "Walpurgis Nite", urls: {"en":"https://www.fsofcabal.com/holydays/02-47-walpurgisnacht"}},
         {ty: "D", st: {mon: 5, d: 1}, ttls: {"en":"Adam Weishaupt’s Day"}, inherits: "HDH"},
         {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Saint Gulik’s Day"}, inherits: "HDH"},
         {ty: "D", st: {mon: 5, d: 6}, ttls: {"en":"Commemoration of Discordian Martyrs Day"}, notes: {"en":"Whollyday\n53 Discord"}},

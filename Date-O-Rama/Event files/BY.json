@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 4, d: 26}, inherits: "I Chernobyl Disaster Remembrance Day", fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Day of Remembrance of the Victims of the Great Patriotic War", "be":"Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
 
-        {ty: "D", st: {mon: 7, d: 6}, inherits: "Kupala Night"},
+        {ty: "D", st: {mon: 7, d: 6}, inherits: "Kupala Nite"},
         {ty: "D", st: {mon: 11, d: 2}, ttls: {"en":"Dziady", "be":"Дзяды"}, urls: {"en":"https://en.wikipedia.org/wiki/Dziady"}},
         {ty: "D", st: {misc: "E"}, inherits: "Easter"},
 

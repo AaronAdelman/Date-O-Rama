@@ -78,7 +78,7 @@
         {ty: "D", st: {mon: 11, d: 11, thruD: 17, wkd: [6]}, ttls: {"en":"Canterbury Anniversary Day"}, urls: {"en":"https://nationaltoday.com/canterbury-anniversary-day/"}, fst: {era: 1, y: 1955}},
         {ty: "D", st: {mon: 11, d: 17}, inherits: "W Prematurity Day"},
         {ty: "D", st: {mon: 11, d: 23}, ttls: {"en":"Wolfenoot"}, urls: {"en":"https://www.wolfenoot.com/home"}, emoji: "🐺", fst: {era: 1, y: 2018}},
-        {ty: "D", st: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", fst: {era: 1, y: 1604}},
+        {ty: "D", st: {mon: 11, d: 5}, inherits: "Guy Fawkes Nite", fst: {era: 1, y: 1604}},
         {ty: "D", st: {mon: 11, wkd: [6], nth: 1}, ttls: {"en":"National Oral Health Day"}, emoji: "👄", inherits: "*MedAwareness*"},
         {ty: "D", st: {mon: 12, d: 5}, inherits: "IVD", fst: {era: 1, y: 1985}},
         {ty: "D", st: {mon: 12, wkd: [7], nth: 1}, ttls: {"en":"Crate Day"}, urls: {"en":"https://www.daysoftheyear.com/days/crate-day/"}, emoji: "🍺", fst: {era: 1, y: 2010}, notes: {"en":"Created by the Rock (the radio station)"}},

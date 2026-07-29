@@ -83,7 +83,7 @@
             {ty: "D", st: {mon: 10, d: 14}, ttls: {"en":"Be Bald and Be Free Day", "he":"יום תהיה קרח וחופשי"}, notes: {"en":"Be Bald and Free Day"}},
             {ty: "D", st: {mon: 10, d: 19}, ttls: {"en":"Evaluate Your Life Day", "he":"יום ״הערך את החיים שלך״"}},
             {ty: "D", st: {mon: 10, d: 27}, ttls: {"en":"Cranky Co-Workers Day", "he":"יום השותפים העצבנים לעבודה"}},
-            {ty: "D", st: {mon: 10, d: 30}, inherits: "Haunted Refrigerator Night"},
+            {ty: "D", st: {mon: 10, d: 30}, inherits: "Haunted Refrigerator Nite"},
             {ty: "D", st: {mon: 11, d: 3}, ttls: {"en":"Cliché Day"}, fst: {era: 1, y: 2000}},
             {ty: "D", st: {mon: 11, d: 8}, ttls: {"en":"Cook Something Bold and Pungent Day"}},
             {ty: "D", st: {mon: 11, d: 18}, ttls: {"en":"Married To A Scorpio Support Day"}, inherits: "*Astrology*", fst: {era: 1, y: 2011}},
