@@ -209,6 +209,7 @@
         {ty: "D", st: {mon: 7, wkd: [1], nth: 1}, inh: "Thank You Day", urls: {"en":"https://thankyouday.org.uk/"}, fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 7, wkd: [7], nth: 3}, ttls: {"cy":"Ras yr Wyddfa","en":"Snowdon Race","fr":"Course du Snowdon"}, notes: {"en":"International Snowdon Race"}, urls: {"en":"https://www.daysoftheyear.com/days/international-snowdon-race/"}, fst: {era: 1, y: 1976}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
         {ty: "D", st: {mon: 8, d: 1}, ttls: {"en":"Yorkshire Day","fr":"Yorkshire Day","he":"יום יורקשייר"}, fst: {era: 1, y: 1975}, urls: {"en":"https://www.daysoftheyear.com/days/yorkshire-day/"}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
+        {ty: "D", st: {mon: 8, d: 10}, ttls: {"en":"Vlogging Day"}, notes: {"en":"International Vlogging Day"}, urls: {"en":"https://www.daysoftheyear.com/days/vlogging-day/"}, fst: {era: 1, y: 2018}, notes: {"en":"Created by Summer in the City"}},
         {ty: "D", st: {mon: 8, d: 11}, ttls: {"en":"National Bakewell Tart Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-bakewell-tart-day/"}, fst: {era: 1, y: 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {ty: "D", st: {mon: 8, d: 12}, ttls: {"en":"Glorious Twelfth"}, urls: {"en":"https://www.daysoftheyear.com/days/glorious-twelfth/"}, fst: {era: 1, y: 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {ty: "D", st: {mon: 8, d: 14}, ttls: {"en":"Falklands Day", "he":"יום איי פוקלנד"}, urls: {"en":"https://www.daysoftheyear.com/days/falklands-day/"}, fst: {era: 1, y: 1592}, emoji: "🇫🇰"},
