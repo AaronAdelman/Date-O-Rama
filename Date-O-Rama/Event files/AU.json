@@ -18,7 +18,7 @@
         {ty: "D", st: {mon: 3, wkd: [2], nth: 2}, inh: "Commonwealth Day", fst: {era: 1, y: 1958}},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 2}, inh: "Easter Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: 2}, inh: "Easter Tue"},
         {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 7, d: 25}, inh: "St James"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},

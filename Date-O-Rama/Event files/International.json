@@ -401,7 +401,7 @@
         {ty: "D", st: {mon: 11, d: 25}, ttls: {"en":"International Vegetarian Day"}, inh: "W Vegetarian Day", notes: {"en":"SAK Meatless Day"}, fst: {era: 1, y: 1977}, urls: {"en":"https://en.wikipedia.org/wiki/World_Vegetarian_Day"}},
         {ty: "D", st: {mon: 11, d: 26}, ttls: {"en":"Coton de Tulear Day"}, urls: {"en":"https://www.cotondetulearday.com/"}, emoji: "🐾"},
         {ty: "D", st: {mon: 11, d: 26}, ttls: {"en":"World Lewis Day"}, urls: {"en":"https://nationaltoday.com/world-lewis-day/"}, emoji: "🐨"},
-        {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inh: "GivingTuesday", fst: {era: 1, y: 2012}},
+        {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inh: "GivingTue", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"Pie in the Face Day"}, urls: {"en":"https://www.checkiday.com/bf57a06e98b6d0c2d2941866097a2053/pie-in-the-face-day"}, emoji: "🥧"},
         {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"Turtle Adoption Day"}, urls: {"en":"https://www.daysoftheyear.com/days/turtle-adoption-day/"}, emoji: "🐢", fst: {era: 1, y: 2011}, notes: {"en":"Created by Christine Shaw"}},
         {ty: "D", st: {mon: 11, d: 28, thruMon: 12, thruD: 5, wkd: [4]}, ttls: {"en":"Choose Women Wednesday"}, urls: {"en":"https://choosewomen.org/"}, fst: {era: 1, y: 2016}, emoji: "👩‍💼", notes: {"en":"Women on Wednesday\nWomen Owned Wednesday\n#WomenWOW\nWomenWednesday\nWomen Wednesday"}},

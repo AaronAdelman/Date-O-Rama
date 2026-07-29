@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 1}, inh: "Independence Day", fst: {era: 1, y: 1804}, urls: {"en":"https://www.daysoftheyear.com/days/haitian-independence-day/"}},
         {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://nationaltoday.com/ancestry-day/"}, ttls: {"en":"Ancestry Day", "fr":"Jour des Aieux"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tuesday", urls: {"en":"https://www.officeholidays.com/holidays/haiti/carnival-tuesday"}},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://www.officeholidays.com/holidays/haiti/carnival-tuesday"}},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

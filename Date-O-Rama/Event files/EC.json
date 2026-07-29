@@ -9,7 +9,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tuesday", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

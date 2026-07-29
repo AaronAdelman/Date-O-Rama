@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/spain/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday", urls: {"en":"https://www.officeholidays.com/holidays/spain/extremadura/carnival-tuesday"}},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue", urls: {"en":"https://www.officeholidays.com/holidays/spain/extremadura/carnival-tuesday"}},
         {ty: "D", st: {mon: 2, d: 28}, ttls: {"ca":"Dia d’Andalusia","en":"Andalusia Day","es":"Día de Andalucía","eu":"Andaluziaren eguna","gl":"Día de Andalucía","ru":"День Андалусии"}, urls: {"en":"https://nationaltoday.com/andalusia-day/"}, fst: {era: 1, y: 1980}, notes: {"en":"Andalucía Day"}},
         {ty: "D", st: {mon: 3, d: 1}, ttls: {"en":"Balearic Day", "es":"Dia de las Islas Baleares"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"}, fst: {era: 1, y: 1999}, notes: {"en":"Day of the Balearic Islands"}},
         {ty: "D", st: {mon: 3, d: 2, wkd: [2, 3]}, ttls: {"en":"Balearic Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"}, fst: {era: 1, y: 1999}},

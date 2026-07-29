@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
         {ty: "D", st: {misc: "E", offsetD: -44}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inh: "Carnival Mon"},
-        {ty: "D", st: {misc: "E", offsetD: -45}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inh: "Carnival Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -45}, urls: {"en":"https://www.officeholidays.com/holidays/trinidad-and-tobago/trinidad-and-tobago-carnival"}, inh: "Carnival Tue"},
         {ty: "D", st: {mon: 3, d: 30}, ttls: {"en":"Spiritual Baptist Day"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day\nSpiritual Baptist/Shouter Liberation Day"}},
         {ty: "D", st: {mon: 3, d: 31, wkd: [2]}, ttls: {"en":"Spiritual Baptist Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/spiritual-baptist-day/"}, fst: {era: 1, y: 1996}, notes: {"en":"Shouter Baptist Liberation Day (in lieu)\nSpiritual Baptist/Shouter Liberation Day (in lieu)"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},

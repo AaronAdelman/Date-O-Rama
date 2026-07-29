@@ -20,7 +20,7 @@
         {ty: "D", st: {misc: "E", offsetD: -8}, ttls: {"ar":"سبت لعازر","arz":"سبت لعازر","be":"Лазарава субота","be-tarask":"Лазарава субота","bg":"Лазаровден","cs":"Lazarova sobota","de":"Lazarussamstag","el":"Σάββατο του Λαζάρου","en":"Lazarus Saturday","es":"Sábado de Lázaro","fa":"شنبه لازاروس","fi":"Lasaruksen lauantai","fr":"Samedi de Lazare","id":"Sabtu Lazarus","it":"Sabato di Lazzaro","mk":"Лазарова сабота","ml":"ലാസറിന്റെ ശനി","nn":"Lasaruslaurdag","pt":"Sábado de Lázaro","ro":"Sâmbăta lui Lazăr","ru":"Лазарева суббота","sk":"Lazárova sobota","sr":"Врбица (празник)","uk":"Лазарева субота","ur":"سبت لعزر","zh":"拉撒路聖週六"}, notes: {"en":"Lent (day 34)\nSaint Lazarus Day\nRaising of Lazarus"}, urls: {"en":"https://www.daysoftheyear.com/days/st-lazarus-day/"}, fst: {era: 1, y: 300}},
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun", urls: {"en":"https://www.daysoftheyear.com/days/palm-sunday-in-the-orthodox-church/"}},
         {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Mon"},
-        {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tue"},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Holy Wednesday"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thursday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "O Good Fri"},

@@ -44,7 +44,7 @@
         {inh: "W Refugee Day", ty: "D", st: {mon: 6, d: 20}, fst: {era: 1, y: 2001}},
         {ttls: {"en":"Remembrance of 20 July"}, ty: "D", st: {mon: 7, d: 20}},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Shrove Mon", urls: {"en":"https://en.wikipedia.org/wiki/Rosenmontag"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
 
         {ty: "D", st: {mon: 4, d: 1}, inh: "April Fools’ Day"},
         {ty: "M", st: {mon: 2}, inh: "Black History Month", fst: {era: 1, y: 1990}},

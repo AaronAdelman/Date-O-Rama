@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Children’s Day", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/epiphany"}},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://nationaltoday.com/uruguay-carnival/"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tuesday", urls: {"en":"https://nationaltoday.com/uruguay-carnival/"}},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://nationaltoday.com/uruguay-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/uruguay-tourism-week"}},
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/uruguay-tourism-week"}},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/uruguay-tourism-week"}},

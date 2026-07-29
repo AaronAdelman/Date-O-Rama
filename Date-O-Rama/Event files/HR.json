@@ -36,7 +36,7 @@
         {ttls: {"en":"Day of Remembrance of Missing Persons in the War of Independence", "he":"יום הזיכרון לנעדרים במלחמת העצמאות", "hr":"Dan sjećanja na nestale osobe u Domovinskom ratu"}, ty: "D", st: {mon: 8, d: 30}},
         {ttls: {"en":"Day of the Deciscion about the Unification of Istria, Rijeka, Zadar and the Islands with the Parent Body Croatia", "hr":"Dan donošenja Odluke o sjedinjenju Istre, Rijeke, Zadra i otoka s maticom zemljom Hrvatskom"}, ty: "D", st: {mon: 9, d: 25}},
         {ty: "D", st: {mon: 10, d: 8}, ttls: {"en":"Day of the Croatian Parliament", "hr":"Dan Hrvatskoga sabora"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {mon: 5, d: 7}, ttls: {"en":"Feast of Saint Dominus", "hr":"Sveti Duje"}},
         {ty: "D", st: {mon: 2, d: 3}, inh: "St Blaise", fst: {era: 1, y: 972}},
 

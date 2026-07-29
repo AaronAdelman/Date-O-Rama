@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 2, wkd: [1], d: 18, thruD: 24}, ttls: {"en":"Woman’s Day", "he":"יום האישה", "is":"Konudagur"}, emoji: "👩"},
         {ty: "D", st: {mon: 3, d: 1}, ttls: {"en":"Beer Day", "he":"יום הבירה", "is":"Bjórdagurinn"}, emoji: "🍺", urls: {"en":"https://en.wikipedia.org/wiki/Beer_Day_(Iceland)"}, fst: {era: 1, y: 1989}},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Shrove Mon", urls: {"en":"https://www.daysoftheyear.com/days/bolludagur-cream-bun-day/"}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 1}, ttls: {"en":"Fisherman’s Day", "is":"Sjómannadagurinn"}, emoji: "🎣"},

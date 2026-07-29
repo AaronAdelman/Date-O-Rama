@@ -503,7 +503,7 @@
         {ty: "D", st: {mon: 11, d: 25}, ttls: {"en":"National Parfait Day"}, urls: {"en":"https://www.daysoftheyear.com/days/parfait-day/"}},
         {ty: "D", st: {mon: 11, d: 26}, ttls: {"ar":"يوم مكافحة السمنة","en":"Anti-Obesity Day"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-obesity-day/"}, inh: "*MedAwareness*", notes: {"en":"National Anti Obesity Day\nCreated by VLCC"}},
         {ty: "D", st: {mon: 11, d: 26}, ttls: {"en":"National Cake Day", "he":"יום העוגות הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/cake-day/"}, emoji: "🍰", notes: {"en":"International Cake Day"}},
-        {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inh: "GivingTuesday", fst: {era: 1, y: 2012}},
+        {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, inh: "GivingTue", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [3]}, ttls: {"en":"Travel Tuesday"}, notes: {"en":"Travel Deal Tuesday\nCreated by Hopper, Inc."}, fst: {era: 1, y: 2017}, emoji: "🐇"},
         {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"National Bavarian Cream Pie Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bavarian-cream-pie-day/"}, emoji: "🥧"},
         {ty: "D", st: {mon: 11, d: 27}, ttls: {"en":"National Electric Guitar Day"}, urls: {"en":"https://www.checkiday.com/a2b9b8086395591562c390a80a83d639/national-electric-guitar-day"}, emoji: "🎸"},

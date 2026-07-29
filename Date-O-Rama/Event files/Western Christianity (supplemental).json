@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "N Donut Day", urls: {"en":"https://donutdayusa.com/"}, ttls: {"en":"National Donut Day"}, fst: {era: 1, y: 1938}, notes: {"en":"Created by the Salvation Army"}},
         {ty: "D", st: {mon: 9, d: 30}, inh: "N Love People Day", fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 1, d: 22}, inh: "N Sanctity of Human Life Day", fst: {era: 1, y: 1984}},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday", inh: "Paczki Day"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue", inh: "Paczki Day"},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Valentine’s Day", fst: {era: 1, y: 496}},
         {ty: "D", st: {mon: 10, wkd: [5], nth: 1}, ttls: {"en":"Bring Your Bible to School Day"}, notes: {"en":"Bring Your Bible Day"}, fst: {era: 1, y: 2014}, urls: {"en":"https://www.focusonthefamily.com/live-it/bring-your-bible/"}, emoji: "📖", notes: {"en":"Created by Focus on the Family"}},
         {ty: "M", st: {mon: 10}, ttls: {"en":"Church Library Month"}, emoji: "📚", urls: {"en":"https://nationaldaycalendar.com/church-library-month-october/"}, fst: {era: 1, y: 1970}, notes: {"en":"Created by the Evangelical Church Library Association"}},

@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 1, d: 7, thruD: 12, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/venezuela/epiphany-latin-america"}, inh: "Epiphany (in lieu)"},
         {ty: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://nationaltoday.com/venezuela-carnival/"}, inh: "Carnival Mon"},
-        {ty: "D", st: {misc: "E", offsetD: -47}, urls: {"en":"https://nationaltoday.com/venezuela-carnival/"}, inh: "Carnival Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, urls: {"en":"https://nationaltoday.com/venezuela-carnival/"}, inh: "Carnival Tue"},
         {ty: "D", st: {mon: 3, d: 19}, inh: "St Joseph", urls: {"en":"https://nationaltoday.com/st-josephs-day-venezuela/"}},
         {ty: "D", st: {misc: "E", offsetD: -6}, urls: {"en":"https://www.officeholidays.com/holidays/venezuela/venezuela-holy-week-holiday"}, inh: "Holy Week Holiday"},
         {ty: "D", st: {misc: "E", offsetD: -5}, urls: {"en":"https://www.officeholidays.com/holidays/venezuela/venezuela-holy-week-holiday"}, inh: "Holy Week Holiday"},

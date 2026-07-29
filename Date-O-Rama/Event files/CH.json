@@ -44,7 +44,7 @@
         {inh: "Carnival", ty: "D", st: {misc: "E", offsetD: -55}, locs: {"en":"Schwyz"}},
         {ty: "D", st: {misc: "E", offsetD: -52}, inh: "Fat Thursday"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Shrove Mon"},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
         {ttls: {"en":"Lent (day 3)"}, ty: "D", st: {misc: "E", offsetD: -44}},
         {ttls: {"en":"Lent (day 5)"}, ty: "D", st: {misc: "E", offsetD: -41}},

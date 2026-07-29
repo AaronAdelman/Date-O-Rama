@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Shrove Mon"},
-        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tuesday"},
+        {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
         {ty: "D", st: {misc: "E", offsetD: -31}, inh: "Mid-Lent"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
