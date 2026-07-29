@@ -4,14 +4,14 @@
     cal: "hiq-solar*",
     color: {name: "green"},
     evts: [
-        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inherits: "Sunrise"},
-        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
-        {inherits: "Isha", ty: "pt", st: {ptTy: "IshaJafari"}},
-        {inherits: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiJafari"}},
-        {inherits: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiJafari"}},
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
+        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaJafari"}},
+        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiJafari"}},
+        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiJafari"}},
 
-        {inherits: "Maghrib", ty: "pt", st: {ptTy: "MaghribJafari"}, notes: {"en":"Ithna Ashari"}},
-        {inherits: "Fajr", ty: "pt", st: {ptTy: "FajrJafari"}, notes: {"en":"Ithna Ashari"}},
+        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribJafari"}, notes: {"en":"Ithna Ashari"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrJafari"}, notes: {"en":"Ithna Ashari"}},
     ]
 }

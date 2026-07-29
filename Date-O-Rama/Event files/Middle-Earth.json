@@ -5,7 +5,7 @@
     color: {red: 0.3, green: 1.0, blue: 0.3},
     fst: {era: 1, y: 1892},
     evts: [
-        {ty: "D", st: {mon: 1, d: 3}, ttls: {"en":"J.R.R. Tolkien Day"}, notes: {"en":"JRR Tolkien Day"}, urls: {"en":"https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inherits: "*BDay*", fst: {era: 1, y: 1892}},
+        {ty: "D", st: {mon: 1, d: 3}, ttls: {"en":"J.R.R. Tolkien Day"}, notes: {"en":"JRR Tolkien Day"}, urls: {"en":"https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inh: "*BDay*", fst: {era: 1, y: 1892}},
         {ty: "D", st: {mon: 3, d: 25}, ttls: {"en":"Tolkien Reading Day"}, urls: {"en":"https://www.daysoftheyear.com/days/tolkien-reading-day/"}, fst: {era: 1, y: 2003}, emoji: "📚", notes: {"en":"Created by the Tolkien Society"}},
         {ty: "D", st: {mon: 3, d: 25}, ttls: {"en":"Gondorian New Year"}, notes: {"en":"From The Lord of the Rings"}},
         {ty: "D", st: {mon: 10, d: 19}, ttls: {"en":"Durin’s Day"}, notes: {"en":"From The Lord of the Rings"}},

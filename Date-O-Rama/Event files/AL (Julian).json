@@ -7,7 +7,7 @@
     fst: {era: 0, y: 1330},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     evts: [
-        {ty: "D", st: {misc: "E"}, inherits: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inherits: "O Easter Monday"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Monday"},
     ]
 }

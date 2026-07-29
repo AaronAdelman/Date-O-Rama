@@ -22,7 +22,7 @@
             }
        },
         {ty: "D", st: {"mon": 4, d: 15},
-            inherits: "Buddha’s Birthday"
+            inh: "Buddha’s Birthday"
        },
         {ty: "D", st: {"mon": 5, d: 5}, ttls: {
                 "vi":"Tết Đoan Ngọ"

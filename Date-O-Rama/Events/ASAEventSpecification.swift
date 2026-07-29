@@ -68,7 +68,7 @@ struct ASAEventSpecification: Codable {
         case endDateSpecification    = "end"
         case firstDateSpecification  = "fst"
         case lastDateSpecification   = "last"
-        case inherits
+        case inherits                = "inh"
         case titles                  = "ttls"
         case locations               = "locs"
         case calendarCode            = "cal"
