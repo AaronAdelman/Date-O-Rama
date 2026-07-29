@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1810},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mexico"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 1}, inh: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/mexico/mexico-constitution-day"}, fst: {era: 1, y: 1917}},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 3}, ttls: {"en":"Benito Juarez’s Birthday", "es":"Natalicio de Benito Juárez"}, urls: {"en":"https://www.daysoftheyear.com/days/benito-juarez-day/"}, notes: {"en":"Benito Juarez Birthday Memorial\nBenito Juarez Day"}, inh: "*BDay*", fst: {era: 1, y: 2006}},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
@@ -54,7 +54,7 @@
         {ty: "nD", st: {mon: 12, d: 16}, end: {mon: 12, d: 24}, ttls: {"bs":"Las Posadas","de":"Las Posadas","en":"Las Posadas","es":"Las Posadas","fr":"Las Posadas","hr":"Las Posadas","id":"Las Posadas","it":"Posadas","nb":"Las Posadas","sv":"Las Posadas","zh":"拉斯波萨达斯"}, urls: {"en":"https://nationaltoday.com/las-posadas/"}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 28}, inh: "Holy Innocents Day"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
 
         {ty: "D", st: {mon: 7, d: 12}, ttls: {"en":"Lawyer’s Day"}, urls: {"en":"https://nationaltoday.com/mexico-lawyers-day/"}, fst: {era: 1, y: 1960}, emoji: "👨‍💼👩‍💼"},
         {ty: "D", st: {mon: 3, d: 12}, ttls: {"en":"Aztec New Year", "es":"Año Nuevo Azteca","hy":"Ացտեկական նոր տարի", "nah":"Yancuic Xīhuitl","ru":"Ацтекский новый год","uz":"Atstek Yangi yili"}, urls: {"en":"https://nationaltoday.com/aztec-new-year/"}, notes: {"es":"Año Nuevo Mexicano"}},

@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1948},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Korea"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, d: 16}, ttls: {"de":"Tag des strahlenden Sterns","el":"Ημέρα του Λαμπερού Αστεριού","en":"Day of the Shining Star","es":"Día de la Estrella Luz","fr":"Jour de l’étoile brillante","id":"Hari Bintang Bersinar","ja":"光明星節","ko":"광명성절","ms":"Hari Bintang Bersinar","pt":"Dia da Estrela Brilhante","ru":"День сияющей звезды","th":"วันแห่งดาวจรัสแสง","uk":"День сяючої зірки","vi":"Tiết Quang Minh Tinh","zh":"光明星节"}, urls: {"en":"https://www.officeholidays.com/holidays/north-korea/birth-day-of-kim-jong-il"}, notes: {"en":"Birthday of Kim Jong Il"}, inh: "*BDay*", fst: {era: 1, y: 1968}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", urls: {"en":"https://www.officeholidays.com/holidays/north-korea/international-womens-day"}},
         {ty: "D", st: {mon: 4, d: 15}, ttls: {"ar":"عطلة يوم الشمس","az":"Günəş günü","ca":"Dia del Sol","ce":"Мелхан де","de":"Tag der Sonne","el":"Ημέρα του Ήλιου","en":"Day of the Sun","es":"Día del Sol","fr":"Jour du Soleil","hy":"Արևի օր","id":"Hari Matahari","it":"Giorno del Sole","ja":"太陽節","ko":"태양절","pt":"Dia do Sol","ru":"День Солнца","th":"วันแห่งสุริยะ","tl":"Araw ng Araw","tr":"Güneş Günü","uk":"День Сонця","uz":"Quyosh kuni","zh":"太陽節"}, urls: {"en":"https://www.officeholidays.com/holidays/north-korea/birth-date-of-kim-il-sung"}, notes: {"en":"Birthday of Kim Il Sung"}, inh: "*BDay*", fst: {era: 1, y: 1968}},
@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 6, d: 19}, ttls: {"en":"Anniversary of Kim Jong Il’s commencement of work in the Workers’ Party Central Committee"}, fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 7, d: 3}, ttls: {"en":"Day of the Strategic Forces", "ko":"전략군절"}, fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 12, d: 24}, ttls: {"en":"Kim Jong-suk’s Birthday"}, inh: "*BDay*"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
 
         {ty: "D", st: {mon: 6, d: 1}, inh: "I Children’s Day"},
   ]

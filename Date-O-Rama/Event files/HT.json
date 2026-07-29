@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1804},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Haiti"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 1}, inh: "Independence Day", fst: {era: 1, y: 1804}, urls: {"en":"https://www.daysoftheyear.com/days/haitian-independence-day/"}},
         {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://nationaltoday.com/ancestry-day/"}, ttls: {"en":"Ancestry Day", "fr":"Jour des Aieux"}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://www.officeholidays.com/holidays/haiti/carnival-tuesday"}},

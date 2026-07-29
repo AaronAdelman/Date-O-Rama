@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1966},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guyana"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, d: 23}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/guyana-republic-day/"}, fst: {era: 1, y: 1970}},
         {ty: "D", st: {mon: 2, d: 24, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/guyana-republic-day/"}, fst: {era: 1, y: 1970}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},

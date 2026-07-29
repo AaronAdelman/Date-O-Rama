@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sweden"},
     fst: {era: 1, y: 1523},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/christmas-holiday"}, inh: "St Stephen"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         
         {ty: "D", st: {mon: 1, d: 5}, inh: "12th Nite"},
         {ty: "D", st: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [6]}, ttls: {"en":"All Saints’ Eve", "sv":"Alla helgons afton"}},

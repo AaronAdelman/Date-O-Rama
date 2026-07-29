@@ -5,7 +5,7 @@
     color: {name: "red"},
     "TODO":"Semana Santa",
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"Feast of Saint Gregory Nazianzen"}, notes: {"en":"Christmastide (day 9)"}},
         {ty: "D", st: {mon: 1, d: 2}, inh: "St Basil", notes: {"en":"Christmastide (day 9)\nFeast of Saint Basil the Great"}},
         {ty: "D", st: {mon: 1, d: 3}, ttls: {"br":"Gouel an anv a Jezuz","de":"Namen-Jesu-Fest","en":"Feast of the Holy Name of Jesus","es":"Fiesta del Santísimo Nombre de Jesús","hr":"Presveto Ime Isusovo","id":"Hari Raya Nama Tersuci Yesus","it":"Santissimo Nome di Gesù","nb":"Jesu navnedag","nl":"Zoete Naam Jezus","nn":"Jesu namnedag","pt":"Festa do Santíssimo Nome de Jesus","sv":"Jesu heliga namn"}, notes: {"en":"Christmastide (day 10)"}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
@@ -260,7 +260,7 @@
         {ty: "D", st: {mon: 12, d: 28}, inh: "Holy Innocents Day"},
         {inh: "St Thomas Becket", ty: "D", st: {mon: 12, d: 29}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inh: "St Egwin of Worcester", ty: "D", st: {mon: 12, d: 30}, urls: {"en":"https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         {inh: "Holy Family", ty: "D", st: {mon: 12, d: 30, wkd: [6]}},
         {inh: "Holy Family", ty: "D", st: {mon: 12, d: 26, thruD: 31, wkd: [1]}},
         {ttls: {"en":"Lammas Day"}, ty: "D", st: {mon: 8, d: 1}, urls: {"en":"https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},

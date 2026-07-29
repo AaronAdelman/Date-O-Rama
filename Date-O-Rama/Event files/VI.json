@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1917},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States_Virgin_Islands"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 3}, inh: "MLK Day"},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/presidents-day"}, inh: "Presidents’ Day"},
@@ -32,7 +32,7 @@
         {ty: "D", st: {mon: 11, wkd: [5], nth: 4}, inh: "Thanksgiving", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/thanksgiving"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, ttls: {"en":"Christmas Second Day"}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/christmas-holiday"}, inh: "Boxing Day"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve", notes: {"en":"Old Year’s Night"}},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve", notes: {"en":"Old Year’s Night"}},
 
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {mon: 7, wkd: [2], nth: 4}, ttls: {"en":"Hurricane Supplication Day"}},

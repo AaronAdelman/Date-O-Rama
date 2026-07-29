@@ -8,8 +8,8 @@
     fst: {era: 1, y: 1898},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/international-new-years-day"}, inh: "New Year’s Day Holiday"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/international-new-years-day"}, inh: "Nu Year’s Day Holiday"},
         {ty: "D", st: {mon: 1, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/traslacion"}, ttls: {"en":"Traslacion", "fil":"Traslasyon ng Nazareno"}, fst: {era: 1, y: 2024}, notes: {"en":"Feast of the Image of the Black Nazarene", "fil":"Fiesta ng Poong Itim na Nazareno"}},
         {ty: "D", st: {mon: 2, d: 25}, urls: {"en":"https://nationaltoday.com/people-power-anniversary/"}, ttls: {"en":"EDSA Revolution Anniversary", "fil":"Anibersaryo ng Rebolusyon sa EDSA"}, fst: {era: 1, y: 2019}, notes: {"en":"People Power Revolution"}},
         {ty: "D", st: {mon: 2, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/cebu/cebu-city-charter-day"}, ttls: {"en":"Cebu City Charter Day", "fil":"Araw ng Pribilehiyo ng Lungsod ng Cebu"}, fst: {era: 1, y: 1992}},
@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 30}, urls: {"en":"https://nationaltoday.com/rizal-day/"}, ttls: {"bcl":"Aldaw ni Rizal","en":"Rizal Day", "fil":"Paggunita sa Kamatayan ni Dr. Jose Rizal","id":"Hari Rizal","ja":"リサール記念日","ko":"리살 기념일","ms":"Hari Rizal","war":"Adlaw ni Rizal","zh":"黎刹日"}, fst: {era: 1, y: 1902}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         
         {ty: "D", st: {mon: 1, d: 23}, ttls: {"en":"First Philippine Republic Day", "fil":"Araw ng Unang Republika ng Pilipinas"}, urls: {"en":"https://nationaltoday.com/first-philippine-republic-day/"}, fst: {era: 1, y: 1899}},
         {ty: "D", st: {mon: 1, d: 25}, inh: "N Remembrance Day", fst: {era: 1, y: 2015}},

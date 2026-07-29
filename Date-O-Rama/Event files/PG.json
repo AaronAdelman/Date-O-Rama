@@ -7,8 +7,8 @@
     fst: {era: 1, y: 1975},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Papua_New_Guinea"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 2, d: 24, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inh: "N Remembrance Day (in lieu)"},
         {ty: "D", st: {mon: 2, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inh: "N Remembrance Day"},
         {ty: "D", st: {mon: 2, d: 28, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"}, inh: "N Remembrance Day (in lieu)"},

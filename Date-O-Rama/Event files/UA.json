@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 8}, ttls: {"en":"Day of Remembrance and Victory over Nazism in World War II 1939-1945", "uk":"День пам'яті та перемоги над нацизмом у Другій світовій війні 1939 - 1945 років"}, urls: {"en":"https://www.officeholidays.com/holidays/ukraine/v-e-day"}, notes: {"en":"Day of Remembrance and Reconciliation"}, fst: {era: 1, y: 2023}, inh: "VE Day"},
@@ -108,7 +108,7 @@
         {inh: "Boxing Day", ty: "D", st: {mon: 12, d: 26}},
         {inh: "Synaxis of the Mother of God", ty: "D", st: {mon: 12, d: 26}},
         {inh: "St Stephen", ty: "D", st: {mon: 12, d: 26}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         {ty: "D", st: {mon: 12, d: 31}, ttls: {"be":"Шчодры вечар","be-tarask":"Шчодры вечар","en":"Malanka","fr":"Malanka","hy":"Մալանիա","ml":"മലങ്ക","ru":"Маланья","sl":"Malanka","sr":"Маланка","tl":"Malanka","uk":"Маланка"}, notes: {"en":"Bounteous Evening"}},
         
         {ttls: {"en":"Victory Day in the Battles of Voznesensk"}, ty: "D", st: {mon: 3, d: 13}, fst: {era: 1, y: 2023}},

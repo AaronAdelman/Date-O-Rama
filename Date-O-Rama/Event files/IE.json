@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland"},
     fst: {era: 1, y: 1922},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, d: 1}, inh: "Imbolc", urls: {"en":"https://www.daysoftheyear.com/days/st-brigids-day/"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 2, d: 2, thruD: 3, wkd: [2]}, inh: "Imbolc (in lieu)", fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 2, d: 5, thruD: 7, wkd: [2]}, inh: "Imbolc (in lieu)", fst: {era: 1, y: 2023}},

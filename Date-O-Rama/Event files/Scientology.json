@@ -20,7 +20,7 @@
         {ttls: {"en":"Publications Day"}, ty: "D", st: {mon: 11, d: 27}, emoji: "📚", fst: {era: 1, y: 1967}},
         {ttls: {"en":"Flag Land Base Day"}, ty: "D", st: {mon: 12, d: 7}, emoji: "🏨", fst: {era: 1, y: 1975}},
         {inh: "Freedom Day", ty: "D", st: {mon: 12, d: 30}, inh: "*Remembrance*", fst: {era: 1, y: 1974}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
         {ttls: {"en":"Criminon Day"}, ty: "D", st: {mon: 1, d: 25}, fst: {era: 1, y: 1970}},
         {ttls: {"en":"Founding of the Church in New Zealand"}, ty: "D", st: {mon: 1, d: 28}, inh: "*Remembrance*"},
         {ttls: {"en":"Narconon Day"}, ty: "D", st: {mon: 2, d: 19}, fst: {era: 1, y: 1966}},

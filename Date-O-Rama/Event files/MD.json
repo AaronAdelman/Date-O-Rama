@@ -7,8 +7,8 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Moldova"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
         {ty: "D", st: {mon: 3, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/moldova/martisor"}, inh: "Martisor"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

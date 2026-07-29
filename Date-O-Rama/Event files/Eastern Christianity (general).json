@@ -58,7 +58,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God"},
         {ty: "D", st: {mon: 9, d: 28}, inh: "St Wenceslas", fst: {era: 1, y: 935}},
 
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day", urls: {"en":"https://nationaltoday.com/orthodox-new-year/"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day", urls: {"en":"https://nationaltoday.com/orthodox-new-year/"}},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},
         {ty: "D", st: {mon: 6, d: 29}, inh: "Saints Peter and Paul"},
         {ty: "D", st: {mon: 8, d: 29}, inh: "Beheading of Saint John the Baptist"},

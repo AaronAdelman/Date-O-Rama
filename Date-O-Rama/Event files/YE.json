@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1967},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 22}, inh: "Unity Day", notes: {"en":"National Day of the Republic of Yemen\nUnification Day", "ar":"اليوم الوطني للجمهورية اليمنية"}, urls: {"en":"https://www.officeholidays.com/holidays/yemen/yemen-unification-day"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 9, d: 26}, inh: "Revolution Day", ttls: {"en":"Yemen Revolution Day", "ar":"ثورة 26 سبتمبر المجيدة"}},

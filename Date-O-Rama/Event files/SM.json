@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_San_Marino"},
     fst: {era: 1, y: 301},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 2, d: 5}, urls: {"en":"https://nationaltoday.com/liberation-day-san-marino/"}, inh: "Liberation Day", fst: {era: 1, y: 1740}},
         {ty: "D", st: {mon: 2, d: 5}, ttls: {"en":"Feast of Saint Agatha"}},
@@ -27,7 +27,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "New Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
     ],
     tpls: {
         "Investiture of the New Captains Regent": {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Investiture of the Captains Regent"}, notes: {"en":"Investiture of the New Captains Regent"}, urls: {"en":"https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},

@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1975},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Angola"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, d: 4}, ttls: {"en":"Day of the Beginning of the National Liberation Armed Struggle", "pt":"Dia do Início da Luta Armada de Libertação Nacional"}, inh: "Liberation Day", urls: {"en":"https://nationaltoday.com/angola-liberation-day/"}},
         {inh: "Carnival (day 1)", ty: "D", st: {misc: "E", offsetD: -52}},
         {inh: "Carnival (day 2)", ty: "D", st: {misc: "E", offsetD: -51}},

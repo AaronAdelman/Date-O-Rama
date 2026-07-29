@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Japan"},
     fst: {era: 1, y: 1886},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 1, d: 15}, inh: "Coming of Age Day", fst: {era: 1, y: 1948}, last: {era: 1, y: 1999}},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 2}, inh: "Coming of Age Day", fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"ar":"يوم التأسيس الوطني","ca":"Dia de la Fundació Nacional","cs":"Den vzniku Japonska","en":"National Foundation Day","es":"Día de la Fundación Nacional","fa":"روز بنیان‌گذاری کشور","fr":"Kenkoku kinen no hi","hr":"Dan osnutka nacije","id":"Hari Pembentukan Negara","it":"Kenkoku kinen no hi","ja":"建国記念の日","ko":"건국기념의 날","ms":"Hari Penubuhan Negara","pt":"Dia da Fundação Nacional do Japão","ru":"День основания государства","sh":"Dan osnivanja nacije","sl":"Dan ustanovitve naroda","th":"วันชาติ (ประเทศญี่ปุ่น)","tr":"Ulusal Kuruluş Günü","uk":"День заснування держави","vi":"Quốc khánh Nhật Bản","zh":"建國紀念之日"}, urls: {"en":"https://www.daysoftheyear.com/days/national-foundation-day/"}, notes: {"en":"Kenkoku Kinen no Hi\nCreated by the Government of Japan"}, fst: {era: 1, y: 1872}},

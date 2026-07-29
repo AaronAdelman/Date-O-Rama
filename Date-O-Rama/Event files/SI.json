@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Slovenia"},
     fst: {era: 1, y: 1990},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "New Year’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Nu Year’s Day"},
         {ty: "D", st: {mon: 2, d: 8}, ttls: {"az":"Preşern günü","cs":"Prešerenův den","el":"Ημέρα Πρεσέρεν","en":"Prešeren Day","id":"Hari Prešeren","mk":"Прешернов ден","pa":"ਪਰੇਸ਼ੀਰਨ ਦਿਹਾੜਾ","ro":"Ziua lui Prešeren","ru":"День Прешерна","sl":"Prešernov dan","uk":"День Прешерна"}, urls: {"en":"https://slovenia.si/art-and-cultural-heritage/preseren-day"}, fst: {era: 1, y: 1945}, notes: {"en":"Created by the Government of Slovenia"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

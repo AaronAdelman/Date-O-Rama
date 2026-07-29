@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1816},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Argentina"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Shrove Mon"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://nationaltoday.com/argentina-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue"},
@@ -60,7 +60,7 @@
         {ty: "D", st: {mon: 8, d: 10}, inh: "Air Force Day"},
         {ty: "D", st: {mon: 7, d: 20}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Action Day for Tolerance and Respect between People"}, urls: {"en":"https://nationaltoday.com/action-day-for-tolerance-and-respect-between-people/"}},
-        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean New Year", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean Nu Year", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 9, d: 21}, inh: "Student’s Day", urls: {"en":"https://www.daysoftheyear.com/days/students-day-in-argentina/"}, fst: {era: 1, y: 1902}},
         {ty: "D", st: {mon: 11, d: 10}, ttls: {"en":"National Tradition Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-tradition-day-in-argentina/"}},
         {ty: "D", st: {mon: 11, d: 30}, ttls: {"en":"National Mate Day", "es":"Día Nacional del Mate"}, notes: {"en":"Mate Day\nCreated by the government of Argentina"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mate-day/"}, fst: {era: 1, y: 2015}},

@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Lithuania"},
     fst: {era: 1, y: 1918},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
         {inh: "N Day", ty: "D", st: {mon: 2, d: 16}, fst: {era: 1, y: 1918}, ttls: {"en":"Restoration of the State Day in Lithuania", "lt":"Lietuvos valstybės atkūrimo diena"}, urls: {"en":"https://nationaltoday.com/restoration-of-the-state-day-in-lithuania/"}},
         {ty: "D", st: {mon: 3, d: 11}, ttls: {"be":"Дзень аднаўлення незалежнасці Літвы","en":"Lithuania Independence Restoration Day","lt":"Lietuvos nepriklausomybės atkūrimo diena","ru":"День восстановления независимости Литвы","uk":"День відновлення незалежності Литви","zh":"立陶宛恢复独立日"}, notes: {"en":"Restoration of Independence Day"}, urls: {"en":"https://nationaltoday.com/independence-restoration-day/"}, inh: "Independence Restoration Day", fst: {era: 1, y: 1990}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
