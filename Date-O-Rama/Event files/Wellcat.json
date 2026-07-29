@@ -86,7 +86,7 @@
             {ty: "D", st: {mon: 10, d: 30}, inh: "Haunted Refrigerator Nite"},
             {ty: "D", st: {mon: 11, d: 3}, ttls: {"en":"Cliché Day"}, fst: {era: 1, y: 2000}},
             {ty: "D", st: {mon: 11, d: 8}, ttls: {"en":"Cook Something Bold and Pungent Day"}},
-            {ty: "D", st: {mon: 11, d: 18}, ttls: {"en":"Married To A Scorpio Support Day"}, inh: "*Astrology*", fst: {era: 1, y: 2011}},
+            {ty: "D", st: {mon: 11, d: 18}, ttls: {"en":"Married To A Scorpio Support Day"}, inh: "*Astrol*", fst: {era: 1, y: 2011}},
             {ty: "D", st: {mon: 11, d: 19}, ttls: {"en":"Have a Bad Day Day"}},
             {ty: "D", st: {mon: 11, d: 20}, ttls: {"en":"Name Your PC Day"}},
             {ty: "D", st: {mon: 11, d: 25}, ttls: {"en":"Blasé Day"}},

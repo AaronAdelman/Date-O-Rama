@@ -87,7 +87,7 @@
         {ty: "D", st: {mon: 2, d: 3}, ttls: {"en":"Cabanatuan Cityhood Day", "fil":"Araw ng Cabanatuan"}},
         {ty: "D", st: {mon: 2, d: 3}, ttls: {"en":"Biñan Liberation Day", "fil":"Araw ng Liberasyon ng Biñan"}},
         {ty: "D", st: {mon: 2, d: 9}, ttls: {"en":"Mandaluyong Liberation and Cityhood Day", "fil":"Araw ng Liberasyon at Pagkalungsod ng Mandaluyong"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 2, d: 11}, ttls: {"en":"Evelio Javier Day", "fil":"Araw ni Evelio Javier"}, fst: {era: 1, y: 1992}, urls: {"en":"https://en.wikipedia.org/wiki/Evelio_Javier_Day"}, inh: "*DeathAnniv*"},
+        {ty: "D", st: {mon: 2, d: 11}, ttls: {"en":"Evelio Javier Day", "fil":"Araw ni Evelio Javier"}, fst: {era: 1, y: 1992}, urls: {"en":"https://en.wikipedia.org/wiki/Evelio_Javier_Day"}, inh: "*DAnniv*"},
         {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"Parañaque Day", "fil":"Araw ng Parañaque"}},
         {ty: "D", st: {mon: 2, d: 14}, ttls: {"en":"Valenzuela City Day", "fil":"Araw ng Lungsod ng Valenzuela"}},
         {ty: "D", st: {mon: 2, d: 24}, ttls: {"en":"Zamboanga Sibugay Day", "fil":"Araw ng Zamboanga Sibugay"}},

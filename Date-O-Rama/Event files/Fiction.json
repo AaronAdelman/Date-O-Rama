@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Summerween"}, notes: {"en":"From Gravity Falls"}},
         {ty: "D", st: {mon: 6, d: 23}, ttls: {"en":"Longest Night"}, notes: {"en":"From Kushiel’s Legacy"}},
         {ty: "D", st: {mon: 6, d: 25}, inh: "1/2-Xmas", notes: {"en":"From Workaholics"}},
-        {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Murder of Thomas and Martha Wayne"}, notes: {"en":"From Batman"}, inh: "*DeathAnniv*"},
+        {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Murder of Thomas and Martha Wayne"}, notes: {"en":"From Batman"}, inh: "*DAnniv*"},
        {ty: "D", st: {mon: 6, d: 5}, ttls: {"en":"Ferris Bueller’s Day Off"}, notes: {"en":"From Ferris Bueller’s Day Off"}},
         {ty: "D", st: {mon: 7, d: 4}, ttls: {"en":"Lunar Independence Day"}, notes: {"en":"From The Moon Is A Harsh Mistress"}, inh: "Independence Day"},
         {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"Klordny"}, notes: {"en":"From Legion of Superheroes"}},

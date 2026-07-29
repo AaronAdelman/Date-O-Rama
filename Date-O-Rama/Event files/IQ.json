@@ -29,7 +29,7 @@
 
         {ttls: {"en":"Kurdish Authors Union Day"}, ty: "D", st: {mon: 2, d: 10}, locs: {"en":"Iraqi Kurdistan"}, emoji: "✍️"},
         {ttls: {"en":"Kurdish Students Union Day"}, ty: "D", st: {mon: 2, d: 18}, locs: {"en":"Iraqi Kurdistan"}, emoji: "👨‍🎓👩‍🎓"},
-        {ttls: {"en":"Commemoration of Mustafa Barzani’s Death"}, ty: "D", st: {mon: 3, d: 1}, locs: {"en":"Iraqi Kurdistan"}, inh: "*DeathAnniv*"},
+        {ttls: {"en":"Commemoration of Mustafa Barzani’s Death"}, ty: "D", st: {mon: 3, d: 1}, locs: {"en":"Iraqi Kurdistan"}, inh: "*DAnniv*"},
         {ttls: {"en":"Liberation of Slemani City"}, ty: "D", st: {mon: 3, d: 7}, locs: {"en":"Iraqi Kurdistan"}, emoji: "🏙️"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", fst: {era: 1, y: 2021}},
         {ttls: {"en":"Kurdish Clothes Day"}, ty: "D", st: {mon: 3, d: 10}, locs: {"en":"Iraqi Kurdistan"}, emoji: "🧥"},

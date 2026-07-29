@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 6, d: 18}, ttls: {"en":"King Mother’s Birthday", "km":"ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះមហាក្សត្រី នរោត្ដម មុនីនាថ សីហនុ"}, urls: {"en":"https://nationaltoday.com/kings-mothers-birthday/"}, fst: {era: 1, y: 2004}, inh: "*BDay*", notes: {"en":"Queen Mother’s Birthday"}},
         {ty: "D", st: {mon: 9, d: 24}, inh: "Constitution Day"},
         {ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Commemoration Day of King’s Father", "km":"ព្រះរាជពិធីគោរពព្រះវិញ្ញាណក្ខន្ធព្រះករុណាព្រះបាទសម្ដេចព្រះ នរោត្ដម សីហនុ"}, urls: {"en":"https://nationaltoday.com/commemoration-day-of-kings-father/"}, fst: {era: 1, y: 2012}, notes: {"en":"Commemoration Day of the King’s Father"}},
-        {ttls: {"en":"Coronation Day of King Sihamoni", "km":"ព្រះរាជពិធីគ្រងព្រះបរមរាជសម្បត្តិរបស់ព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, ty: "D", st: {mon: 10, d: 29}, inh: "*Coronation*"},
+        {ttls: {"en":"Coronation Day of King Sihamoni", "km":"ព្រះរាជពិធីគ្រងព្រះបរមរាជសម្បត្តិរបស់ព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"}, ty: "D", st: {mon: 10, d: 29}, inh: "*Coron*"},
         {inh: "Independence Day", ty: "D", st: {mon: 11, d: 9}, urls: {"en":"https://nationaltoday.com/cambodia-independence-day/"}, fst: {era: 1, y: 1953}},
 
         {ty: "D", st: {mon: 5, d: 20}, ttls: {"en":"National Day of Remembrance", "km":"ទិវាជាតិនៃការចងចាំ"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Day_of_Remembrance_(Cambodia)"}, fst: {era: 1, y: 2018}},

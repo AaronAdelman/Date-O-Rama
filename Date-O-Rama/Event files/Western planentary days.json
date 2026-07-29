@@ -5,13 +5,13 @@
     color: {red: 0.5, green: 0.5, blue: 0.5},
     evts: [
         {ty: "nD", st: {}, subEvts: [
-            {ttls: {"en":"Day of the Sun", "he":"יום השמש"}, ty: "D", st: {wkd: [1]}, inh: "*zsu*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of the Moon", "he":"יום הירח"}, ty: "D", st: {wkd: [2]}, inh: "*zmo*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of Mars", "he":"יום מאדין"}, ty: "D", st: {wkd: [3]}, inh: "*zma*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of Mercury", "he":"יום כוכב"}, ty: "D", st: {wkd: [4]}, inh: "*zme*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of Jupiter", "he":"יום צדק"}, ty: "D", st: {wkd: [5]}, inh: "*zju*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of Venus", "he":"יום נוגה"}, ty: "D", st: {wkd: [6]}, inh: "*zve*", inh: "*Astrology*"},
-            {ttls: {"en":"Day of Saturn", "he":"יום שבתי"}, ty: "D", st: {wkd: [7]}, inh: "*zsa*", inh: "*Astrology*"},
+            {ttls: {"en":"Day of the Sun", "he":"יום השמש"}, ty: "D", st: {wkd: [1]}, inh: "*zsu*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of the Moon", "he":"יום הירח"}, ty: "D", st: {wkd: [2]}, inh: "*zmo*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of Mars", "he":"יום מאדין"}, ty: "D", st: {wkd: [3]}, inh: "*zma*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of Mercury", "he":"יום כוכב"}, ty: "D", st: {wkd: [4]}, inh: "*zme*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of Jupiter", "he":"יום צדק"}, ty: "D", st: {wkd: [5]}, inh: "*zju*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of Venus", "he":"יום נוגה"}, ty: "D", st: {wkd: [6]}, inh: "*zve*", inh: "*Astrol*"},
+            {ttls: {"en":"Day of Saturn", "he":"יום שבתי"}, ty: "D", st: {wkd: [7]}, inh: "*zsa*", inh: "*Astrol*"},
         ]},
     ]
 }
