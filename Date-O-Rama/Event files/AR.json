@@ -17,8 +17,8 @@
         {ty: "D", st: {mon: 3, d: 25, wkd: [6]}, ttls: {"en":"Day of Remembrance for Truth and Justice (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/argentina/truth-and-justice-memorial-day"}, fst: {era: 1, y: 2006}, notes: {"en":"Truth and Justice Memorial Day (in lieu)"}},
 
         {ty: "D", st: {mon: 4, d: 2}, ttls: {"en":"Malvinas Day","es":"Día del Veterano y de los Caídos en la Guerra de Malvinas","fr":"Journée des vétérans et des combattants tombés pendant la guerre des Malouines","id":"Hari Malvinas","ms":"Hari Malvinas","ru":"День ветеранов и павших на Мальвинской войне","zh":"馬爾維納斯日"}, urls: {"en":"https://nationaltoday.com/day-of-the-veterans/"}, fst: {era: 1, y: 2001}, notes: {"en":"Day of the Veterans\nDay of the Veterans and Fallen of the Falklands War"}},
-        {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thursday"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 25}, ttls: {"en":"May Revolution Day", "es":"Día de la Revolución de Mayo"}, urls: {"en":"https://nationaltoday.com/may-revolution-day/"}, notes: {"en":"May Day Revolution"}},

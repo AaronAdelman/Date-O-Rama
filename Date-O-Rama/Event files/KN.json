@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 12, d: 30, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 5, 6, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
         {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-labour-day"}, inh: "Labour Day"},

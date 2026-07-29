@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, inh: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/international-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, ttls: {"en":"Festival Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/new-years-eve"}},
         {ty: "D", st: {mon: 3, d: 17}, inh: "St Patrick", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/st-patricks-day"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/labour-monday"}, notes: {"en":"Labour Monday"}},

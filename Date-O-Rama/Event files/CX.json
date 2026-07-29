@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 26}, inh: "Australia Day", fst: {era: 1, y: 1808}},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 4}, inh: "Labour Day"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
         {inh: "Territory Day", ty: "D", st: {mon: 10, d: 6}},

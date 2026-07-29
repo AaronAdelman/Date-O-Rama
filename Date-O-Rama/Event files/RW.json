@@ -11,7 +11,7 @@
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 2, d: 1}, inh: "N Heroes’ Day", urls: {"en":"https://nationaltoday.com/heroes-day-rwanda/"}},
         {ty: "D", st: {mon: 2, d: 2, thruD: 3, wkd: [2, 3]}, inh: "N Heroes’ Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/rwanda/rwanda-heroes-day"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {mon: 4, d: 7}, ttls: {"en":"Genocide against the Tutsi Memorial Day"}, urls: {"en":"https://www.officeholidays.com/holidays/rwanda/genocide-against-the-tutsi-memorial-day"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

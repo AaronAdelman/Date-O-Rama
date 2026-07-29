@@ -10,8 +10,8 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 2}, inh: "Commonwealth Day", urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/commonwealth-day"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
-        {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Saturday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: 2}, inh: "Gospel Day", urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/tuvalu-gospel-day"}},

@@ -10,7 +10,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "New Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/tonga/international-new-years-day"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},

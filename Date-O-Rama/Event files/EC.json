@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 23, wkd: [2, 6]}, ttls: {"en":"Battle of Pichincha (in lieu)"}, notes: {"en":"The Battle of Pichincha Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/ecuador/anniversary-of-the-battle-of-pichincha"}},

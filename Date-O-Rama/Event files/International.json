@@ -389,7 +389,7 @@
         {ty: "D", st: {mon: 11, d: 22}, ttls: {"en":"Humane Society Anniversary Day"}, urls: {"en":"https://nationaltoday.com/humane-society-anniversary-day/"}, emoji: "🐶", fst: {era: 1, y: 1991}, notes: {"en":"Created by Humane Society International (HSI)"}},
         {ty: "D", st: {mon: 11, d: 22}, ttls: {"en":"Love Your Freckles Day"}, urls: {"en":"https://www.daysoftheyear.com/days/love-your-freckles-day/"}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 11, d: 22}, ttls: {"en":"Start Your Own Country Day"}, urls: {"en":"https://www.internationaldays.co/event/start-your-own-country-day/r/rec1QzN1d5vV7V3Rn#:~:text=November%2022nd%20is%20Start,possibility%20of%20forming%20a%20micronation."}, fst: {era: 1, y: 1939}},
-        {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inh: "Black Friday", fst: {era: 1, y: 1951}},
+        {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inh: "Black Fri", fst: {era: 1, y: 1951}},
         {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inh: "Buy Nothing Day", fst: {era: 1, y: 1997}},
         {ty: "D", st: {mon: 11, d: 23}, ttls: {"en":"Fibonacci Day"}, emoji: "🐚", urls: {"en":"https://www.daysoftheyear.com/days/fibonacci-day/"}},
         {ty: "D", st: {mon: 11, d: 24}, ttls: {"en":"Celebrate Your Unique Talent Day"}, emoji: "🎻", urls: {"en":"https://www.daysoftheyear.com/days/celebrate-your-unique-talent-day/"}},

@@ -10,7 +10,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/Falkland-islands/international-new-years-day"}, inh: "New Year’s Day (in lieu)"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {mon: 6, d: 14}, inh: "Liberation Day", fst: {era: 1, y: 1982}, urls: {"en":"https://www.daysoftheyear.com/days/falkland-islands-liberation-day/"}},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 1}, ttls: {"en":"Peat Cutting Monday","pt":"Segunda-feira de corte de turfa"}, urls: {"en":"https://www.officeholidays.com/holidays/Falkland-islands/peat-cutting-monday"}},
         {ty: "D", st: {mon: 11, d: 14}, inh: "King Charles’ Birthday", urls: {"en":"https://www.officeholidays.com/holidays/Falkland-islands/king-charles-birthday"}},

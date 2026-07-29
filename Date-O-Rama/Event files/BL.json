@@ -21,8 +21,8 @@
         {ty: "D", st: {mon: 11, d: 11}, urls: {"en":"https://nationaltoday.com/armistice-day-saint-barthelemy/"}, inh: "Armistice Day", fst: {era: 1, y: 1918}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wednesday"},
+        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
         {ty: "D", st: {misc: "E", offsetD: -31}, inh: "Mid-Lent"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
     ]
 }

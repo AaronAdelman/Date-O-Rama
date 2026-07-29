@@ -9,7 +9,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 3, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/saint-vincent-and-the-grenadines-national-heroes-day"}, inh: "N Heroes’ Day"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, ttls: {"en":"National Worker's Day"}},

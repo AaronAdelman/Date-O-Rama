@@ -9,8 +9,8 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "New Year’s Day"},
         {ty: "D", st: {mon: 3, d: 1}, inh: "Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/paraguay/day-of-heroes"}},
-        {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thursday"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Friday"},
+        {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {inh: "Independence Day", ty: "nD", st: {mon: 5, d: 14}, end: {mon: 5, d: 15}, fst: {era: 1, y: 1811}, urls: {"en":"https://nationaltoday.com/paraguay-independence-day/"}},
