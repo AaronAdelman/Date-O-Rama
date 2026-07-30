@@ -58,7 +58,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 1}},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 10, wkd: [7], nth: 2}, inh: "NSports Day", fst: {era: 1, y: 2015}},

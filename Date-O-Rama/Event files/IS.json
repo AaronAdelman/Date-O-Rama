@@ -43,7 +43,7 @@
 
         {ty: "D", st: {mon: 4, d: 10}, inh: "Engineer’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Book Flood", fst: {era: 1, y: 1944}},
         
         {ty: "D", st: {mon: 1, d: 20, thruD: 26, wkd: [6]}, inh: "Thorrablot", fst: {era: 1, y: 1873}},

@@ -7,7 +7,7 @@
     fst: {era: 1, y: 2009},
     evts: [
         {ty: "D", st: {mon: 1, d: 8}, ttls: {"en":"National English Toffee Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-english-toffee-day/"}, emoji: "🍬", notes: {"en":"Created by the National Confectioners Association"}},
-        {ty: "D", st: {mon: 10, d: 28}, inh: "NChocolate Day", urls: {"en":"https://www.daysoftheyear.com/days/national-chocolate-day/"}, notes: {"en":"Created by the National Confectioners Association (NCA)"}},
+        {ty: "D", st: {mon: 10, d: 28}, inh: "NChocD", urls: {"en":"https://www.daysoftheyear.com/days/national-chocolate-day/"}, notes: {"en":"Created by the National Confectioners Association (NCA)"}},
         {ty: "D", st: {mon: 11, d: 7}, ttls: {"en":"National Bittersweet Chocolate with Almonds Day"}, urls: {"en":"https://www.daysoftheyear.com/days/bittersweet-chocolate-with-almonds-day/"}, inh: "*Choc*", notes: {"en":"Created by the National Confectioners Association"}},
         {ty: "D", st: {mon: 4, d: 5}, ttls: {"en":"National Peeps Day"}, notes: {"en":"Peeps Day\nCreated by the National Confectioners Association"}, urls: {"en":"https://www.daysoftheyear.com/days/national-peeps-day/"}, fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 2, d: 19}, ttls: {"en":"National Chocolate Mint Day","he":"יום השוקולד מנטה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/chocolate-mint-day/"}, inh: "*Choc*", notes: {"en":"Created by the US National Confectioners Association"}},

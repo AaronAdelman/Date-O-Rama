@@ -37,7 +37,7 @@
         
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 20}, inh: "Children’s Day"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism","de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}, inh: "Holocaust Memorial Day"},
     ]
 }

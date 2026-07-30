@@ -52,7 +52,7 @@
         {ty: "D", st: {mon: 5, d: 8}, inh: "VE Day"},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Fasnacht Day"},
         {ty: "D", st: {mon: 1, d: 9}, inh: "Air Force Day"},
-        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "Grandmothers’ Day", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 11, d: 19}, ttls: {"en":"National Soup Day"}},
         {ty: "D", st: {mon: 2, d: 10}, ttls: {"en":"Children’s Hospice Day"}, urls: {"en":"https://nationaltoday.com/childrens-hospice-day/"}, emoji: "👦👧"},

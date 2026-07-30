@@ -48,7 +48,7 @@
         {ty: "D", st: {era: 1, y: 2024, mon: 10, d: 12}, inh: "Love Your Bookshop Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "NuY’s Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/australia/international-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 26}, inh: "Australia Day", fst: {era: 1, y: 1808}},
-        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 10, wkd: [4], nth: 3}, ttls: {"en":"National Ride2Work Day"}, urls: {"en":"https://bicyclenetwork.com.au/rides-and-events/ride2work/"}, fst: {era: 1, y: 1994}, emoji: "🚲"},
         {ty: "D", st: {mon: 10, d: 19, thruD: 25, wkd: [4]}, ttls: {"en":"Geelong Cup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/geelong-cup-day/"}, fst: {era: 1, y: 1872}, emoji: "🐴"},
         {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"National Kangaroo Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-kangaroo-awareness-day/"}, emoji: "🦘", fst: {era: 1, y: 1985}, notes: {"en":"Save Kangaroos Day\nCreated by Friends of Mother Earth Inc"}},

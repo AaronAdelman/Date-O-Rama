@@ -67,7 +67,7 @@
         {ty: "D", st: {mon: 7, d: 20}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 8, d: 22}, ttls: {"en":"Folklore Day","he":"יום הפולקלור","pt":"Dia do Folclore"}, urls: {"en":"https://nationaltoday.com/folklore-day/"}, fst: {era: 1, y: 1965}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Start of Fasching", fst: {era: 1, y: 1234}},
-        {ty: "D", st: {mon: 5, d: 24}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 5, d: 24}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 7, d: 10}, inh: "NPizza Day", urls: {"en":"https://nationaltoday.com/national-pizza-day-in-brazil/"}, notes: {"en":"Pizza Day"}},
         {ty: "D", st: {mon: 7, d: 13}, ttls: {"en":"World Rock Day","es":"Día Mundial del Rock","fr":"Journée mondiale du rock","pt":"Dia Mundial do Rock","he":"יום הרוק העולמי"}, urls: {"en":"https://en.wikipedia.org/wiki/World_Rock_Day","es":"https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock","pt":"https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, emoji: "🎸", fst: {era: 1, y: 1990}},
 

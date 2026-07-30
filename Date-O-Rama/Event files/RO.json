@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 2, d: 24}, ttls: {"en":"Dragobete"}, urls: {"en":"https://nationaltoday.com/dragobete/"}},
         {ty: "D", st: {mon: 6, d: 26}, inh: "Flag Day", urls: {"en":"https://nationaltoday.com/flag-day-of-romania/"}, fst: {era: 1, y: 1998}},
         {ty: "D", st: {mon: 8, d: 31}, inh: "Romanian Language Day", fst: {era: 1, y: 2013}},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         
         {ty: "D", st: {mon: 1, d: 15}, ttls: {"en":"National Culture Day"}},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
@@ -68,7 +68,7 @@
         {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"National Day of the Romanian Tax Consultant"}},
         {ty: "D", st: {mon: 4, d: 29}, ttls: {"en":"War Veterans’ Day"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, ttls: {"en":"Teenager’s Day"}},
-        {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "NDress Day"},
+        {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "NDressD"},
         {ty: "D", st: {mon: 5, d: 2}, inh: "NYouth Day"},
         {ty: "D", st: {mon: 5, d: 3}, inh: "WPress Freedom Day", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Day of the Tatar Language"}},

@@ -263,7 +263,7 @@
         {ty: "nD", st: {mon: 6, d: 6}, end: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/linggo-ng-kalayaan/"}, ttls: {"en":"Linggo ng Kalayaan"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 6, d: 9}, urls: {"en":"https://nationaltoday.com/filipino-chinese-friendship-day/"}, ttls: {"en":"Filipino-Chinese Friendship Day"}, emoji: "🇵🇭🇨🇳", fst: {era: 1, y: 2002}},
         {ty: "D", st: {mon: 6, d: 25}, urls: {"en":"https://nationaltoday.com/the-day-of-the-filipino-seafarer/"}, ttls: {"en":"Day of the Filipino Seafarer"}, emoji: "🚢", fst: {era: 1, y: 2014}},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 7, d: 23}, urls: {"en":"https://nationaltoday.com/apolinario-mabini-day/"}, ttls: {"en":"Apolinario Mabini Day"}, inh: "*BDay*", fst: {era: 1, y: 2007}},
         {ty: "M", st: {mon: 10}, urls: {"en":"https://nationaltoday.com/museums-and-galleries-month/"}, ttls: {"en":"Museums and Galleries Month"}, fst: {era: 1, y: 1991}},
         {ty: "M", st: {mon: 10}, urls: {"en":"https://nationaltoday.com/national-indigenous-peoples-month/"}, ttls: {"en":"National Indigenous Peoples Month","he":"חודש העמים הילידים הלאומי"}, fst: {era: 1, y: 2009}},

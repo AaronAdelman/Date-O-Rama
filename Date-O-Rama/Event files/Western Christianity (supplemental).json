@@ -7,7 +7,7 @@
         {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}, inh: "1st Advent Sun", ttls: {"en":"Sunday of the Dead","de":"Totensonntag"}, notes: {"en":"Eternity Sunday","de":"Ewigkeitssonntag\nTotenfest"}, urls: {"en":"https://en.wikipedia.org/wiki/Totensonntag"}},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         {ty: "D", st: {mon: 5, d: 15}, inh: "Nakba Day", fst: {era: 1, y: 2023}, notes: {"en":"Nakba Remembrance Day\nThank the US Presbyterian Church for adopting an antisemitic hate-fest."}},
-        {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "NDonut Day", urls: {"en":"https://donutdayusa.com/"}, ttls: {"en":"National Donut Day"}, fst: {era: 1, y: 1938}, notes: {"en":"Created by the Salvation Army"}},
+        {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "NDonutD", urls: {"en":"https://donutdayusa.com/"}, ttls: {"en":"National Donut Day"}, fst: {era: 1, y: 1938}, notes: {"en":"Created by the Salvation Army"}},
         {ty: "D", st: {mon: 9, d: 30}, inh: "NLove People Day", fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 1, d: 22}, inh: "NSanctity of Human Life Day", fst: {era: 1, y: 1984}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue", inh: "Paczki Day"},

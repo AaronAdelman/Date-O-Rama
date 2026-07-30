@@ -44,7 +44,7 @@
         {ty: "M", st: {mon: 5}, ttls: {"en":"Bealtaine Festival"}, urls: {"en":"https://nationaltoday.com/bealtaine-festival/"}, fst: {era: 1, y: 2009}},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
-        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
         {ty: "M", st: {mon: 9}, urls: {"en":"https://nationaltoday.com/irish-heart-month/"}, ttls: {"en":"Irish Heart Month"}, inh: "*MedAw*", emoji: "🫀"},
         {ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Shine a Light Night"}, urls: {"en":"https://www.daysoftheyear.com/days/shine-a-light-night/"}, fst: {era: 1, y: 2012}, notes: {"en":"Created by Focus Ireland"}},

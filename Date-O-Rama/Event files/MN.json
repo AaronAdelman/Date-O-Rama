@@ -31,6 +31,6 @@
         {ty: "D", st: {mon: 11, d: 7}, inh: "Oct Revolution Day"},
         {ttls: {"en":"Democracy and Human Rights Day"}, ty: "D", st: {mon: 12, d: 10}, emoji: "🗳️"},
 
-        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
     ]
 }
