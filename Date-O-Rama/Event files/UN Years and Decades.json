@@ -1,5 +1,5 @@
 {
-    ttls: {"en":"UN Years and Decades", "he":"שנים ועשורים של האו״ם"},
+    ttls: {"en":"UN Years and Decades","he":"שנים ועשורים של האו״ם"},
     defLocale: "en",
     cal: "gre",
     color: {red: 0.27, green: 0.61, blue: 0.84},
@@ -23,7 +23,7 @@
         {ttls: {"en":"Third United Nations Decade for the Eradication of Poverty"}, emoji: "🪙", ty: "nY", st: {era: 1, y: 2018}, end: {era: 1, y: 2027}},
         {ttls: {"en":"United Nations Decade of Action on Nutrition"}, ty: "nY", st: {era: 1, y: 2016}, emoji: "🍲", end: {era: 1, y: 2025}},
         {ttls: {"en":"Third Industrial Development Decade for Africa"}, emoji: "🌍", ty: "nY", st: {era: 1, y: 2016}, end: {era: 1, y: 2025}},
-        {ttls: {"ar":"للمنحدرين من أصول أفريقية", "ast":"Deceniu Internacional de los Afrodescendientes","ca":"Decenni internacional dels afrodescendents","en":"International Decade for People of African Descent","es":"Decenio Internacional de los Afrodescendientes", "fr":"Décennie internationale des personnes d’ascendance africaine","gpe":"International Decade for People of African Descent","ha":"Shekaru goma na kasa da kasa ga mutanen da suka fito daga Afirka","nl":"Internationaal decennium voor mensen van Afrikaanse afkomst","pt":"Década Internacional de Afrodescendentes", "ru":"Международное десятилетие лиц африканского происхождения","xh":"Ishumi leminyaka laMazwe ngaMazwe laBantu bomnombo waseAfrika", "zh":"非洲人后裔国际十年"}, emoji: "🌍", ty: "nY", st: {era: 1, y: 2015}, end: {era: 1, y: 2024}},
+        {ttls: {"ar":"للمنحدرين من أصول أفريقية","ast":"Deceniu Internacional de los Afrodescendientes","ca":"Decenni internacional dels afrodescendents","en":"International Decade for People of African Descent","es":"Decenio Internacional de los Afrodescendientes","fr":"Décennie internationale des personnes d’ascendance africaine","gpe":"International Decade for People of African Descent","ha":"Shekaru goma na kasa da kasa ga mutanen da suka fito daga Afirka","nl":"Internationaal decennium voor mensen van Afrikaanse afkomst","pt":"Década Internacional de Afrodescendentes","ru":"Международное десятилетие лиц африканского происхождения","xh":"Ishumi leminyaka laMazwe ngaMazwe laBantu bomnombo waseAfrika","zh":"非洲人后裔国际十年"}, emoji: "🌍", ty: "nY", st: {era: 1, y: 2015}, end: {era: 1, y: 2024}},
         {ttls: {"en":"United Nations Decade of Sustainable Energy for All"}, emoji: "⚡️", ty: "nY", st: {era: 1, y: 2014}, end: {era: 1, y: 2024}},
         {ttls: {"en":"Third International Decade for the Eradication of Colonialism"}, ty: "nY", st: {era: 1, y: 2011}, end: {era: 1, y: 2020}},
         {ttls: {"en":"United Nations Decade on Biodiversity"}, ty: "nY", st: {era: 1, y: 2011}, emoji: "🌱", end: {era: 1, y: 2020}},
@@ -63,17 +63,17 @@
         {ttls: {"en":"Disarmament Decade"}, ty: "nY", st: {era: 1, y: 1970}, end: {era: 1, y: 1979}},
         {ttls: {"en":"United Nations Development Decade"}, ty: "nY", st: {era: 1, y: 1960}, end: {era: 1, y: 1970}},
         
-        {ty: "Y", st: {era: 1, y: 2029}, ttls: {"ar":"السنة الدولية للتوعية بالكويكبات وللدفاع الكوكبي", "en":"International Year of Asteroid Awareness and Planetary Defence", "es":"Año Internacional de la Concienciación sobre los Asteroides y de la Defensa Planetaria", "fr":"Année internationale de la sensibilisation aux astéroïdes et de la défense planétaire", "ru":"Международный год информирования об астероидах и планетарной защиты", "zh":"认识小行星和行星防御国际年"}, emoji: "🌎☄️"},
+        {ty: "Y", st: {era: 1, y: 2029}, ttls: {"ar":"السنة الدولية للتوعية بالكويكبات وللدفاع الكوكبي","en":"International Year of Asteroid Awareness and Planetary Defence","es":"Año Internacional de la Concienciación sobre los Asteroides y de la Defensa Planetaria","fr":"Année internationale de la sensibilisation aux astéroïdes et de la défense planétaire","ru":"Международный год информирования об астероидах и планетарной защиты","zh":"认识小行星和行星防御国际年"}, emoji: "🌎☄️"},
         {ty: "Y", st: {era: 1, y: 2027}, ttls: {"en":"International Year of Legal Literacy"}, emoji: "👩‍⚖️👨‍⚖️"},
         {ty: "Y", st: {era: 1, y: 2027}, ttls: {"en":"International Year of Sustainable and Resilient Tourism"}},
-        {ty: "Y", st: {era: 1, y: 2026}, ttls: {"ar":"السنة الدولية للمزارعات", "en":"International Year of the Woman Farmer", "es":"Año Internacional de la Agricultora", "fr":"Année internationale des agricultrices", "ru":"Международный год женщин-фермеров", "zh":"国际女农民年"}, notes: {"en":"IYWF"}, emoji: "👩‍🌾"},
+        {ty: "Y", st: {era: 1, y: 2026}, ttls: {"ar":"السنة الدولية للمزارعات","en":"International Year of the Woman Farmer","es":"Año Internacional de la Agricultora","fr":"Année internationale des agricultrices","ru":"Международный год женщин-фермеров","zh":"国际女农民年"}, notes: {"en":"IYWF"}, emoji: "👩‍🌾"},
         {ty: "Y", st: {era: 1, y: 2026}, ttls: {"en":"International Year of Volunteers for Sustainable Development"}, notes: {"en":"International Volunteer Year\nIVY"}},
-        {ty: "Y", st: {era: 1, y: 2026}, ttls: {"ar":"السنة الدولية للمراعي ورعاة الماشية", "en":"International Year of Rangelands and Pastoralists", "es":"Año Internacional de los Pastizales y los Pastores", "fr":"Année internationale des parcours et des éleveurs pastoraux", "ru":"Международным годом пастбищных земель и пастбищных животноводов", "zh":"国际牧场和牧民年"}, notes: {"en":"IYRP", "ru":"МГПЗПЖ"}},
+        {ty: "Y", st: {era: 1, y: 2026}, ttls: {"ar":"السنة الدولية للمراعي ورعاة الماشية","en":"International Year of Rangelands and Pastoralists","es":"Año Internacional de los Pastizales y los Pastores","fr":"Année internationale des parcours et des éleveurs pastoraux","ru":"Международным годом пастбищных земель и пастбищных животноводов","zh":"国际牧场和牧民年"}, notes: {"en":"IYRP","ru":"МГПЗПЖ"}},
         {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year of Quantum Science and Technology"}},
         {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year Of Cooperatives"}},
-        {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year of Glaciers’ Preservation", "es":"Año Internacional de la Conservación de los Glaciares", "fr":"Année internationale de la préservation des glaciers", "zh":"国际冰川保护年"}},
+        {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year of Glaciers’ Preservation","es":"Año Internacional de la Conservación de los Glaciares","fr":"Année internationale de la préservation des glaciers","zh":"国际冰川保护年"}},
         {ty: "Y", st: {era: 1, y: 2025}, inh: "I Year of Peace and Trust"},
-        {ty: "Y", st: {era: 1, y: 2024}, ttls: {"ar":"السنة الدولية للإبليات", "en":"International Year of Camelids", "es":"Año Internacional de los Camélidos", "fr":"Année internationale des camélidés", "ru":"Международным годом верблюдовых", "zh":"国际驼科动物年"}, emoji: "🐪"},
+        {ty: "Y", st: {era: 1, y: 2024}, ttls: {"ar":"السنة الدولية للإبليات","en":"International Year of Camelids","es":"Año Internacional de los Camélidos","fr":"Année internationale des camélidés","ru":"Международным годом верблюдовых","zh":"国际驼科动物年"}, emoji: "🐪"},
         {ty: "Y", st: {era: 1, y: 2023}, ttls: {"en":"International Year of Dialogue as a Guarantee of Peace"}},
         {ttls: {"en":"International Year of Millets"}, ty: "Y", st: {era: 1, y: 2023}, emoji: "⿉"},
         {ttls: {"en":"International Year of Glass"}, ty: "Y", st: {era: 1, y: 2022}, emoji: "🥃"},
@@ -161,6 +161,6 @@
         {ttls: {"en":"World Refugee Year"}, ty: "D", st: {era: 1, y: 1959, mon: 6, d: 1}, end: {era: 1, y: 1960, mon: 5, d: 31}},
     ],
     tpls: {
-        "I Year of Peace and Trust": {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year of Peace and Trust", "es":"Año Internacional de la Paz y la Confianza", "fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
+        "I Year of Peace and Trust": {ty: "Y", st: {era: 1, y: 2025}, ttls: {"en":"International Year of Peace and Trust","es":"Año Internacional de la Paz y la Confianza","fr":"Année internationale de la paix et de la confiance"}, emoji: "☮️"},
     }
 }

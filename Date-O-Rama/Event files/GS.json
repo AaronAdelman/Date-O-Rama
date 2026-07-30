@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         
         {ty: "D", st: {mon: 4, d: 25}, inh: "Liberation Day", fst: {era: 1, y: 1982}},
-        {ty: "D", st: {mon: 5, d: 20}, ttls: {"en":"Shackleton Day", "he":"יום שקלטון"}, fst: {era: 1, y: 1982}},
+        {ty: "D", st: {mon: 5, d: 20}, ttls: {"en":"Shackleton Day","he":"יום שקלטון"}, fst: {era: 1, y: 1982}},
         {ty: "D", st: {misc: "Jun"}, inh: "Midwinter Day"},
         {ty: "D", st: {era: 1, y: 2012, mon: 9, d: 14}, inh: "Toothfish Day"},
         {ty: "D", st: {era: 1, y: 2013, mon: 9, d: 13}, inh: "Toothfish Day"},

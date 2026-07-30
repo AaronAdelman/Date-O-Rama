@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
     fst: {era: 1, y: 1270},
     evts: [
-        {ty: "D", st: {mon: 3, d: 2}, ttls: {"am":"የዓድዋ ድል በዓል", "en":"Adwa Victory Day","ha":"Ranar Nasarar Adwa","id":"Hari Kemenangan Adwa", "om":"Ijifaannoo Adawaaa","zh":"阿杜瓦勝利日"}, urls: {"en":"https://nationaltoday.com/adwa-victory-day/"}, fst: {era: 1, y: 1896}, notes: {"en":"Victory of Adwa"}},
+        {ty: "D", st: {mon: 3, d: 2}, ttls: {"am":"የዓድዋ ድል በዓል","en":"Adwa Victory Day","ha":"Ranar Nasarar Adwa","id":"Hari Kemenangan Adwa","om":"Ijifaannoo Adawaaa","zh":"阿杜瓦勝利日"}, urls: {"en":"https://nationaltoday.com/adwa-victory-day/"}, fst: {era: 1, y: 1896}, notes: {"en":"Victory of Adwa"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 5}, inh: "Ethiopian Patriots’ Victory Day", fst: {era: 1, y: 1941}},
         {ty: "D", st: {mon: 5, d: 28}, ttls: {"am":"ደርግ የወደቀበት ቀን","en":"Downfall of the Derg"}, urls: {"en":"https://nationaltoday.com/national-day-of-ethiopia/"}, inh: "N Day", fst: {era: 1, y: 1991}},
@@ -20,6 +20,6 @@
         {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
     ],
     tpls: {
-        "Ethiopian Patriots’ Victory Day": {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Ethiopian Patriots’ Victory Day", "am":"የአርበኞች ቀን", "om":"Guyyaa Bajalbajaa"}, urls: {"en":"https://www.officeholidays.com/holidays/ethiopia/patriots-victory-day"}},
+        "Ethiopian Patriots’ Victory Day": {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Ethiopian Patriots’ Victory Day","am":"የአርበኞች ቀን","om":"Guyyaa Bajalbajaa"}, urls: {"en":"https://www.officeholidays.com/holidays/ethiopia/patriots-victory-day"}},
     }
 }

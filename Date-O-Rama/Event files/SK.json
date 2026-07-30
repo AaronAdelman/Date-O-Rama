@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1992},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Slovakia"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/slovakia/day-of-the-establishment-of-the-slovak-republic"}, ttls: {"en":"Day of the Establishment of the Slovak Republic", "sk":"Deň vzniku Slovenskej republiky"}, fst: {era: 1, y: 1993}},
+        {ty: "D", st: {mon: 1, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/slovakia/day-of-the-establishment-of-the-slovak-republic"}, ttls: {"en":"Day of the Establishment of the Slovak Republic","sk":"Deň vzniku Slovenskej republiky"}, fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -15,8 +15,8 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", fst: {era: 1, y: 1886}},
         {ty: "D", st: {mon: 5, d: 8}, inh: "Day of Victory Over Fascism", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/v-e-day"}, fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 7, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"}, inh: "Sts Cyril and Methodius", fst: {era: 1, y: 863}},
-        {ty: "D", st: {mon: 8, d: 29}, urls: {"en":"https://nationaltoday.com/national-uprising-day/"}, ttls: {"en":"Slovak National Uprising Day", "sk":"Výročie Slovenského národného povstania"}, fst: {era: 1, y: 1944}},
-        {ty: "D", st: {mon: 9, d: 1}, ttls: {"en":"Day of the Constitution of the Slovak Republic", "sk":"Deň Ústavy Slovenskej republiky"}, inh: "Constitution Day", urls: {"en":"https://nationaltoday.com/slovakia-constitution-day/"}, fst: {era: 1, y: 1992}},
+        {ty: "D", st: {mon: 8, d: 29}, urls: {"en":"https://nationaltoday.com/national-uprising-day/"}, ttls: {"en":"Slovak National Uprising Day","sk":"Výročie Slovenského národného povstania"}, fst: {era: 1, y: 1944}},
+        {ty: "D", st: {mon: 9, d: 1}, ttls: {"en":"Day of the Constitution of the Slovak Republic","sk":"Deň Ústavy Slovenskej republiky"}, inh: "Constitution Day", urls: {"en":"https://nationaltoday.com/slovakia-constitution-day/"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Our Lady of Sorrows", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/day-of-our-lady-of-sorrows"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 17}, inh: "Struggle for Freedom and Democracy Day", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, notes: {"en":"Day of Freedom and Democracy"}},
@@ -35,7 +35,7 @@
         {ty: "D", st: {mon: 4, d: 13}, urls: {"en":"https://nationaltoday.com/unfairly-prosecuted-persons-day/"}, ttls: {"en":"Unfairly Prosecuted Persons Day"}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "N Coffee Day"},
         {ty: "D", st: {mon: 7, d: 5}, urls: {"en":"https://nationaltoday.com/foreign-slovaks-day/"}, ttls: {"en":"Foreign Slovaks Day"}, fst: {era: 1, y: 2000}},
-        {ty: "D", st: {mon: 10, d: 28}, ttls: {"en":"Day of the Establishment of an Independent Czecho-Slovak State", "sk":"Deň vzniku samostatného česko-slovenského štátu"}, fst: {era: 1, y: 1918}},
+        {ty: "D", st: {mon: 10, d: 28}, ttls: {"en":"Day of the Establishment of an Independent Czecho-Slovak State","sk":"Deň vzniku samostatného česko-slovenského štátu"}, fst: {era: 1, y: 1918}},
         {ty: "D", st: {mon: 9, d: 9}, inh: "Holocaust Memorial Day", ttls: {"en":"Holocaust Victims and Racial Hatred Day"}},
         {ty: "D", st: {mon: 8, d: 2}, inh: "Roma Holocaust Memorial Day", fst: {era: 1, y: 2011}},
     ]

@@ -31,13 +31,13 @@
         {ty: "D", st: {mon: 3, d: 19}, inh: "St Joseph"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {mon: 5, d: 4}, inh: "St Florian"},
-        {ttls: {"en":"Plebiscite Day", "de":"Tag der Volksabstimmung"}, ty: "D", st: {mon: 10, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
+        {ttls: {"en":"Plebiscite Day","de":"Tag der Volksabstimmung"}, ty: "D", st: {mon: 10, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "St Martin of Tours"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 20}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
-        {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism", "de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}, inh: "Holocaust Memorial Day"},
+        {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism","de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"}, inh: "Holocaust Memorial Day"},
     ]
 }

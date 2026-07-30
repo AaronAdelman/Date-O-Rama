@@ -24,13 +24,13 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God"},
         {ty: "D", st: {mon: 8, d: 16, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/romania/assumption-day"}, inh: "Public Sector Holiday"},
         {ty: "D", st: {mon: 11, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/romania/st-andrews-day"}, inh: "St Andrew"},
-        {ty: "D", st: {mon: 12, d: 1}, ttls: {"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日 (罗马尼亚)"}, notes: {"en":"Romania National Day\nNational Day of Romania", "ro":"Ziua Marii Uniri"}, inh: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/romania-national-day/"}, fst: {era: 1, y: 1990}},
+        {ty: "D", st: {mon: 12, d: 1}, ttls: {"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日 (罗马尼亚)"}, notes: {"en":"Romania National Day\nNational Day of Romania","ro":"Ziua Marii Uniri"}, inh: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/romania-national-day/"}, fst: {era: 1, y: 1990}},
         {ty: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 27, wkd: [6]}, inh: "Public Sector Holiday", urls: {"en":"https://www.officeholidays.com/holidays/romania/christmas-holiday"}},
 
         {ty: "D", st: {mon: 11, d: 11}, inh: "Armistice Day", fst: {era: 1, y: 1919}},
         {ty: "D", st: {mon: 9, d: 14}, inh: "Engineer’s Day"},
-        {ty: "D", st: {mon: 5, d: 9}, inh: "Independence Day", fst: {era: 1, y: 1877}, ttls: {"en":"State Independence Day of Romania", "ro":"Ziua Independenței de Stat a României"}},
+        {ty: "D", st: {mon: 5, d: 9}, inh: "Independence Day", fst: {era: 1, y: 1877}, ttls: {"en":"State Independence Day of Romania","ro":"Ziua Independenței de Stat a României"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Navy Day"},
 
@@ -149,7 +149,7 @@
         {ty: "span", st: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 23, thruD: 29, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inh: "Earth Hour", fst: {era: 1, y: 2013}, last: {era: 1, y: 2015}},
         {ty: "span", st: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 25, thruD: 30, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inh: "Earth Hour", fst: {era: 1, y: 2019}, last: {era: 1, y: 2023}},
         {ty: "span", st: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 20, min: 30, s: 0, ns: 0}, end: {mon: 3, d: 26, thruD: 31, wkd: [7], h: 21, min: 30, s: 0, ns: 0}, inh: "Earth Hour", fst: {era: 1, y: 2009}, last: {era: 1, y: 2012}},
-        {ty: "D", st: {mon: 10, d: 9}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2004}, ttls: {"en":"National Day of Commemorating the Holocaust", "ro":"Ziua Naţională de Comemorare a Holocaustului", "he":"היום הלאומי לציון השואה ברומניה", "fr":"Journée nationale de commémoration de l’Holocauste"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Day_of_Commemorating_the_Holocaust", "ro":"https://ro.wikipedia.org/wiki/Ziua_Națională_de_Comemorare_a_Holocaustului", "he":"https://he.wikipedia.org/wiki/היום_הלאומי_לציון_השואה_ברומניה", "fr":"https://fr.wikipedia.org/wiki/Journée_nationale_de_commémoration_de_l%27Holocauste"}},
+        {ty: "D", st: {mon: 10, d: 9}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2004}, ttls: {"en":"National Day of Commemorating the Holocaust","ro":"Ziua Naţională de Comemorare a Holocaustului","he":"היום הלאומי לציון השואה ברומניה","fr":"Journée nationale de commémoration de l’Holocauste"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Day_of_Commemorating_the_Holocaust","ro":"https://ro.wikipedia.org/wiki/Ziua_Națională_de_Comemorare_a_Holocaustului","he":"https://he.wikipedia.org/wiki/היום_הלאומי_לציון_השואה_ברומניה","fr":"https://fr.wikipedia.org/wiki/Journée_nationale_de_commémoration_de_l%27Holocauste"}},
 
    ],
     tpls: {

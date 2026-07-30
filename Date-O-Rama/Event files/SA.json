@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 2, d: 23, wkd: [1, 2, 5]}, inh: "Public Holiday", fst: {era: 1, y: 1727}},
         {ty: "D", st: {mon: 3, d: 11}, ttls: {"en":"Saudi Flag Day"}, urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-flag-day"}, fst: {era: 1, y: 1937}, inh: "Flag Day"},
         {ty: "D", st: {mon: 9, d: 22, wkd: [1, 5]}, inh: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, ttls: {"en":"Saudi National Day (bridge day)"}},
-        {ty: "D", st: {mon: 9, d: 23}, inh: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, ttls: {"en":"Saudi National Day", "he":"היום הלאומי של ערב הסעודית", "ar":"اليوم الوطني للمملكة العربية السعودية"}},
+        {ty: "D", st: {mon: 9, d: 23}, inh: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/saudi-arabia/saudi-arabia-national-day"}, fst: {era: 1, y: 2005}, ttls: {"en":"Saudi National Day","he":"היום הלאומי של ערב הסעודית","ar":"اليوم الوطني للمملكة العربية السعودية"}},
 
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"}

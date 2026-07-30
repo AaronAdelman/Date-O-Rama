@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 4, d: 25}, urls: {"en":"https://nationaltoday.com/freedom-day-portugal/"}, inh: "Freedom Day"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {inh: "Mother’s Day", ty: "D", st: {mon: 5, wkd: [1], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/portugal/mothers-day"}},
-        {ty: "D", st: {misc: "E", offsetD: 50}, ttls: {"en":"Azores Day","pt":"Dia dos Açores"}, notes: {"en":"Day of the Azores", "pt":"Dia da Região Autónoma dos Açores\nDia da Pombinha\nDia do Bodo"}, urls: {"en":"https://www.officeholidays.com/holidays/portugal/azores/day-of-the-azores"}, fst: {era: 1, y: 1976}},
+        {ty: "D", st: {misc: "E", offsetD: 50}, ttls: {"en":"Azores Day","pt":"Dia dos Açores"}, notes: {"en":"Day of the Azores","pt":"Dia da Região Autónoma dos Açores\nDia da Pombinha\nDia do Bodo"}, urls: {"en":"https://www.officeholidays.com/holidays/portugal/azores/day-of-the-azores"}, fst: {era: 1, y: 1976}},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 6, d: 10}, ttls: {"de":"Dia de Portugal","en":"Portugal Day","es":"Día de Portugal","fi":"Portugali-päivä","fr":"Jour du Portugal","gl":"Día de Portugal","he":"יום פורטוגל","hy":"Պորտուգալիայի օր","id":"Hari Portugal","it":"Giorno del Portogallo","ko":"포르투갈의 날","pt":"Dia de Portugal, de Camões e das Comunidades Portuguesas","ru":"День Португалии","sv":"Portugaldagen","tr":"Portekiz Günü","uk":"День Португалії","zh":"葡萄牙日、賈梅士日暨葡僑日"}, urls: {"en":"https://nationaltoday.com/portugal-day/"}},
         {ty: "D", st: {mon: 6, d: 13}, inh: "St Anthony of Padua"},
@@ -48,7 +48,7 @@
         {inh: "Dia do Concelho", ty: "D", st: {mon: 6, d: 16}, locs: {"en":"Olhão"}},
         {inh: "Dia do Concelho", ty: "D", st: {mon: 6, d: 20}, locs: {"en":"Corvo"}},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},
-        {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul", ttls: {"en":"Saint Peter’s Day", "pt":"Dia de São Pedro"}},
+        {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul", ttls: {"en":"Saint Peter’s Day","pt":"Dia de São Pedro"}},
         {ty: "D", st: {mon: 7, d: 4}, inh: "St Elizabeth of Portugal"},
         {ty: "D", st: {mon: 7, wkd: [2], nth: 3}, inh: "Dia do Concelho", locs: {"en":"Lajes das Flores"}},
         {ty: "D", st: {mon: 7, d: 18}, inh: "Dia do Concelho", locs: {"en":"Nordeste"}},
@@ -57,7 +57,7 @@
         {ty: "D", st: {mon: 8, d: 11}, inh: "Dia do Concelho", locs: {"en":"Praia da Vitória"}},
         {ty: "D", st: {mon: 8, d: 16}, inh: "Dia do Concelho", locs: {"en":"São Roque do Pico"}},
         {inh: "Dia do Concelho", ty: "D", st: {mon: 8, d: 20}, locs: {"en":"Viana do Castelo"}},
-        {ttls: {"en":"Funchal City Day", "pt":"Dia da Cidade do Funchal"}, ty: "D", st: {mon: 8, d: 21}},
+        {ttls: {"en":"Funchal City Day","pt":"Dia da Cidade do Funchal"}, ty: "D", st: {mon: 8, d: 21}},
         {ty: "D", st: {mon: 9, d: 8}, inh: "Nativity of Mary"},
         {ty: "D", st: {mon: 9, d: 21}, inh: "St Matthew the Evangelist"},
         {ty: "D", st: {mon: 9, d: 2, thruD: 8, wkd: [2]}, inh: "Dia do Concelho", locs: {"en":"Povoação"}},
@@ -72,7 +72,7 @@
         {ty: "nD", st: {mon: 8, d: 19, thruD: 25, wkd: [1]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, inh: "Festa do Vinho", fst: {era: 1, y: 2024}},
     ],
     tpls: {
-        "Festa do Vinho": {ty: "nD", st: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, ttls: {"pt":"Festa do Vinho", "en":"Wine Festival", "es":"Fiesta del Vino de Madeira", "de":"Madeira Weinfest"}, emoji: "🍷🥂", urls: {"en":"https://visitmadeira.com/en/whats-on/events/wine-festival", "pt":"https://visitmadeira.com/pt/a-acontecer/eventos/festa-do-vinho/", "es":"https://visitmadeira.com/es/que-esta-pasando/eventos/fiesta-del-vino-de-madeira/", "de":"https://visitmadeira.com/de/veranstaltungen/veranstaltungen/madeira-weinfest/"}},
+        "Festa do Vinho": {ty: "nD", st: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, ttls: {"pt":"Festa do Vinho","en":"Wine Festival","es":"Fiesta del Vino de Madeira","de":"Madeira Weinfest"}, emoji: "🍷🥂", urls: {"en":"https://visitmadeira.com/en/whats-on/events/wine-festival","pt":"https://visitmadeira.com/pt/a-acontecer/eventos/festa-do-vinho/","es":"https://visitmadeira.com/es/que-esta-pasando/eventos/fiesta-del-vino-de-madeira/","de":"https://visitmadeira.com/de/veranstaltungen/veranstaltungen/madeira-weinfest/"}},
         "Dia do Concelho": {ty: "D", st: {mon: 1, d: 15}, ttls: {"pt":"Dia do Concelho"}},
     }
 }

@@ -108,7 +108,7 @@
         {ty: "M", st: {mon: 5}, ttls: {"en":"New Zealand Music Month"}, notes: {"en":"NZ Music Month\nCreated by the New Zealand Music Commission, APRA AMCOS, and the Recording Industry Association of New Zealand"}, emoji: "🎶", urls: {"en":"https://www.daysoftheyear.com/days/new-zealand-music-month/"}, fst: {era: 1, y: 2001}},
         {ty: "nD", st: {mon: 10, d: 27}, end: {mon: 11, d: 1}, ttls: {"en":"Grandparents Week"}, urls: {"en":"https://nationaltoday.com/grandparents-week/"}, fst: {era: 1, y: 2002}, emoji: "👴👵"},
         {ty: "nD", st: {mon: 3, d: 5}, end: {mon: 3, d: 13}, ttls: {"en":"Sea Week"}, urls: {"en":"https://nationaltoday.com/sea-week/"}, fst: {era: 1, y: 1992}},
-        {ty: "W", st: {mon: 5, fullWk: 1, d1OfWk: 2}, ttls: {"en":"Sign Language Week", "he":"השבוע לשפות הסימנים"}, urls: {"en":"https://nzsignlanguage.nz/"}, fst: {era: 1, y: 2007}},
+        {ty: "W", st: {mon: 5, fullWk: 1, d1OfWk: 2}, ttls: {"en":"Sign Language Week","he":"השבוע לשפות הסימנים"}, urls: {"en":"https://nzsignlanguage.nz/"}, fst: {era: 1, y: 2007}},
         {ty: "W", st: {mon: 5, fullWk: 3, d1OfWk: 2}, inh: "Techweek", fst: {era: 1, y: 2016}, last: {era: 1, y: 2022}},
         {ty: "nD", st: {era: 1, y: 2023, mon: 5, d: 13}, end: {era: 1, y: 2023, mon: 5, d: 20}, inh: "Techweek"},
         {ty: "W", st: {mon: 5, fullWk: 3, d1OfWk: 2}, inh: "Techweek", fst: {era: 1, y: 2024}},

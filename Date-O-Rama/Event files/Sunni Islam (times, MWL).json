@@ -1,5 +1,5 @@
 {
-    ttls: {"en":"Islam (times, MWL)", "he":"אסלאם סוני (זמנים, MWL)"},
+    ttls: {"en":"Islam (times, MWL)","he":"אסלאם סוני (זמנים, MWL)"},
     defLocale: "en",
     cal: "hiq-solar*",
     color: {name: "green"},
@@ -12,6 +12,6 @@
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
         
         {inh: "Isha", ty: "pt", st: {ptTy: "IshaMWL"}, notes: {"en":"Muslim World League"}},
-        {ttls: {"en":"Fajr (MWL)", "ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)", "he":"פג׳ר (MWL)"}, ty: "pt", st: {ptTy: "FajrMWL"}, notes: {"en":"Muslim World League"}},
+        {ttls: {"en":"Fajr (MWL)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (MWL)"}, ty: "pt", st: {ptTy: "FajrMWL"}, notes: {"en":"Muslim World League"}},
     ]
 }

@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 2, d: 23}, inh: "Defender of the Fatherland Day", urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/defence-of-the-fatherland"}, notes: {"en":"Red Army Day\nDay of the Soviet Army and Navy\nDay of the Birth of the Red Army\nDay of Victory of the Red Army over the Kaiser troops of Germany (1918) - the Day of the Fatherland Defenders\nFatherland Defender’s Day"}, fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {misc: "Mar"}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/novruz"}, inh: "Nowruz"},
-        {ty: "D", st: {mon: 4, d: 7}, ttls: {"en":"Day of the People’s April Revolution", "ky":"Элдик Апрель революциясы күнү"}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/day-of-the-peoples-april-revolution"}, fst: {era: 1, y: 2016}},
+        {ty: "D", st: {mon: 4, d: 7}, ttls: {"en":"Day of the People’s April Revolution","ky":"Элдик Апрель революциясы күнү"}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/day-of-the-peoples-april-revolution"}, fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/labour-day"}},
         {ty: "D", st: {mon: 5, d: 2, wkd: [5, 6, 7]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/labour-day"}},
         {ty: "D", st: {mon: 5, d: 3, wkd: [1, 6]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/labour-day"}},
@@ -32,12 +32,12 @@
         {ty: "D", st: {mon: 5, d: 10, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/victory-day"}, inh: "Public Holiday (bridge day)"},
         {inh: "Independence Day", ty: "D", st: {mon: 8, d: 31}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/kyrgyzstan-independence-day/"}},
         {ty: "D", st: {mon: 11, d: 6, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/days-of-history-and-commemoration-of-ancestors"}, inh: "Days of History and Commemoration of Ancestors (bridge day)"},
-        {ty: "nD", st: {mon: 11, d: 7}, end: {mon: 11, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/days-of-history-and-commemoration-of-ancestors"}, ttls: {"en":"Days of History and Commemoration of Ancestors", "ky":"Тарых күн жана аталардын эскерүү"}},
+        {ty: "nD", st: {mon: 11, d: 7}, end: {mon: 11, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/days-of-history-and-commemoration-of-ancestors"}, ttls: {"en":"Days of History and Commemoration of Ancestors","ky":"Тарых күн жана аталардын эскерүү"}},
         {ty: "D", st: {mon: 11, d: 9, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/days-of-history-and-commemoration-of-ancestors"}, inh: "Days of History and Commemoration of Ancestors (bridge day)"},
         {ty: "D", st: {mon: 11, d: 10, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/kyrgyzstan/days-of-history-and-commemoration-of-ancestors"}, inh: "Days of History and Commemoration of Ancestors (bridge day)"},
         
         {inh: "Armed Forces Day", ty: "D", st: {mon: 5, d: 29}},
-        {ty: "D", st: {mon: 8, d: 18}, inh: "Air Force Day", ttls: {"en":"Aviation Day", "he":"יום התעופה"}},
+        {ty: "D", st: {mon: 8, d: 18}, inh: "Air Force Day", ttls: {"en":"Aviation Day","he":"יום התעופה"}},
 
         {ty: "D", st: {mon: 5, d: 19}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},

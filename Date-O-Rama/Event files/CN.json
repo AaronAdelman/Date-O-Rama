@@ -29,17 +29,17 @@
 
         {ty: "D", st: {mon: 5, d: 4}, inh: "Youth Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "I Children’s Day"},
-        {ty: "D", st: {mon: 8, d: 1}, inh: "Army Day", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, ttls: {"en":"People’s Liberation Army Day", "he":"יום צבא השחרור של העם", "zh_CN":"建军节"}},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "Army Day", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, ttls: {"en":"People’s Liberation Army Day","he":"יום צבא השחרור של העם","zh_CN":"建军节"}},
 
         {ty: "D", st: {mon: 3, d: 12}, inh: "Arbor Day"},
-        {ttls: {"en":"C.P.C. Founding Day", "zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
-        {inh: "N Maritime Day", ty: "D", st: {mon: 7, d: 11}, ttls: {"en":"China National Maritime Day", "zh_CN":"中国航海日"}, urls: {"en":"https://en.wikipedia.org/wiki/China_National_Maritime_Day"}},
+        {ttls: {"en":"C.P.C. Founding Day","zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
+        {inh: "N Maritime Day", ty: "D", st: {mon: 7, d: 11}, ttls: {"en":"China National Maritime Day","zh_CN":"中国航海日"}, urls: {"en":"https://en.wikipedia.org/wiki/China_National_Maritime_Day"}},
         {ty: "D", st: {mon: 9, d: 3}, inh: "VJ Day", fst: {era: 1, y: 2014}},
         {inh: "Martyrs’ Day", ty: "D", st: {mon: 9, d: 30}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
-        {ty: "D", st: {mon: 10, d: 10}, ttls: {"en":"Wuchang Uprising", "zh_CN":"武昌起义"}},
-        {ty: "D", st: {mon: 12, d: 13}, ttls: {"en":"Nanking Massacre Memorial Day", "zh_CN":"南京大屠杀死难者国家公祭日"}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},
+        {ty: "D", st: {mon: 10, d: 10}, ttls: {"en":"Wuchang Uprising","zh_CN":"武昌起义"}},
+        {ty: "D", st: {mon: 12, d: 13}, ttls: {"en":"Nanking Massacre Memorial Day","zh_CN":"南京大屠杀死难者国家公祭日"}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Nanjing_Massacre_Memorial_Day"}},
         
-        {ty: "nD", st: {mon: 9, d: 20}, end: {mon: 9, d: 22}, ttls: {"en":"Kuò Shí jié", "zh_CN":"阔时节"}},
+        {ty: "nD", st: {mon: 9, d: 20}, end: {mon: 9, d: 22}, ttls: {"en":"Kuò Shí jié","zh_CN":"阔时节"}},
         {ty: "nD", st: {mon: 4, d: 13}, end: {mon: 4, d: 15}, inh: "Songkran", urls: {"en":"https://en.wikipedia.org/wiki/Water-Sprinkling_Festival"}},
 
         {ttls: {"en":"Chuxiong Prefecture Foundation Day"}, ty: "D", st: {mon: 4, d: 15}},
@@ -61,7 +61,7 @@
         {ttls: {"en":"Xishuangbanna Prefecture Foundation Day"}, ty: "D", st: {mon: 1, d: 23}},
         {ttls: {"en":"Yanbian Prefecture Foundation Day"}, ty: "D", st: {mon: 9, d: 3}},
         {ty: "D", st: {mon: 3, d: 28}, urls: {"en":"https://nationaltoday.com/serfs-emancipation-day/"}, ttls: {"en":"Serfs’ Emancipation Day"}},
-        {ty: "D", st: {mon: 11, d: 11}, ttls: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en":"Singles Day\nDouble 11\nBachelors’ Day", "zh_CN":"双11", "zh":"雙11"}, fst: {era: 1, y: 1993}},
+        {ty: "D", st: {mon: 11, d: 11}, ttls: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en":"Singles Day\nDouble 11\nBachelors’ Day","zh_CN":"双11","zh":"雙11"}, fst: {era: 1, y: 1993}},
         
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},

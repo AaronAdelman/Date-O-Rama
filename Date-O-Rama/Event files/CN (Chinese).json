@@ -23,22 +23,22 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Mid-Autumn Festival"},
 
         {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"},
-        {ty: "D", st: {mon: 2, d: 2}, ttls: {"en":"Zhonge Festival", "zh_CN":"中和节"}, urls: {"en":"https://nationaltoday.com/zhonge-festival/"}, emoji: "🐲"},
+        {ty: "D", st: {mon: 2, d: 2}, ttls: {"en":"Zhonge Festival","zh_CN":"中和节"}, urls: {"en":"https://nationaltoday.com/zhonge-festival/"}, emoji: "🐲"},
 
         {ty: "D", st: {mon: 7, d: 7}, inh: "Qixi Festival"},
         {ty: "D", st: {mon: 7, d: 15}, inh: "Ghost Festival"},
 
-        {ty: "nD", st: {mon: 3, d: 3}, end: {mon: 3, d: 5}, ttls: {"en":"Sam Nyied Sam", "zh_CN":"三月三"}, urls: {"en":"https://en.wikipedia.org/wiki/Zhuang_customs_and_culture#Festivals"}},
+        {ty: "nD", st: {mon: 3, d: 3}, end: {mon: 3, d: 5}, ttls: {"en":"Sam Nyied Sam","zh_CN":"三月三"}, urls: {"en":"https://en.wikipedia.org/wiki/Zhuang_customs_and_culture#Festivals"}},
 
-        {ty: "D", st: {mon: 6, d: 6}, ttls: {"en":"Liuyueliu", "zh_CN":"六月六"}},
-        {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Bayueba", "zh_CN":"八月八"}},
-        {ty: "nD", st: {mon: 9, d: 10}, end: {mon: 9, d: 11}, ttls: {"en":"Ā Lù Wō Luó jié", "zh_CN":"阿露窝罗节"}},
-        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 25}, ttls: {"en":"Kū Zhā Zhā jié", "zh_CN":"矻扎扎节"}},
-        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 28}, ttls: {"en":"Fire Festival", "zh_CN":"火把节"}, emoji: "🔥"},
-        {ty: "nD", st: {mon: 1, d: 15}, end: {mon: 1, d: 16}, ttls: {"en":"Manau Festival", "zh_CN":"目瑙纵歌节"}},
-        {ty: "nD", st: {mon: 5, d: 5}, end: {mon: 5, d: 7}, ttls: {"en":"Nào Dōuyáng", "zh_CN":"闹兜阳"}},
-        {ty: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 5}, ttls: {"en":"Qiang New Year", "zh_CN":"羌历年"}},
-        {ty: "nD", st: {mon: 3, d: 15}, end: {mon: 3, d: 22}, ttls: {"en":"Third Month Fair", "zh_CN":"三月街"}, urls: {"en":"https://en.wikipedia.org/wiki/Third_Month_Fair"}},
+        {ty: "D", st: {mon: 6, d: 6}, ttls: {"en":"Liuyueliu","zh_CN":"六月六"}},
+        {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Bayueba","zh_CN":"八月八"}},
+        {ty: "nD", st: {mon: 9, d: 10}, end: {mon: 9, d: 11}, ttls: {"en":"Ā Lù Wō Luó jié","zh_CN":"阿露窝罗节"}},
+        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 25}, ttls: {"en":"Kū Zhā Zhā jié","zh_CN":"矻扎扎节"}},
+        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 28}, ttls: {"en":"Fire Festival","zh_CN":"火把节"}, emoji: "🔥"},
+        {ty: "nD", st: {mon: 1, d: 15}, end: {mon: 1, d: 16}, ttls: {"en":"Manau Festival","zh_CN":"目瑙纵歌节"}},
+        {ty: "nD", st: {mon: 5, d: 5}, end: {mon: 5, d: 7}, ttls: {"en":"Nào Dōuyáng","zh_CN":"闹兜阳"}},
+        {ty: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 5}, ttls: {"en":"Qiang New Year","zh_CN":"羌历年"}},
+        {ty: "nD", st: {mon: 3, d: 15}, end: {mon: 3, d: 22}, ttls: {"en":"Third Month Fair","zh_CN":"三月街"}, urls: {"en":"https://en.wikipedia.org/wiki/Third_Month_Fair"}},
     ],
     tpls: {
         "Dragon Boat Festival Holiday": {ty: "D", st: {mon: 6, d: 23}, ttls: {"en":"Dragon Boat Festival Holiday"}},

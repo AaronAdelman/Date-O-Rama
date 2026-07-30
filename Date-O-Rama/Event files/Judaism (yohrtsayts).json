@@ -1,5 +1,5 @@
 {
-    ttls: {"en":"Judaism (yohrtsayts)", "he":"יהדות (ימי שנה)"},
+    ttls: {"en":"Judaism (yohrtsayts)","he":"יהדות (ימי שנה)"},
     "BASED ON":"https://www.yeshiva.org.il/events/memorial",
     defLocale: "he",
     cal: "heb*",

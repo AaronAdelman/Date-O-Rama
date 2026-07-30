@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1616},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bhutan"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"Nyinlong", "dz":"ཉིན་ལོང"}, urls: {"en":"https://www.officeholidays.com/holidays/bhutan/winter-solstice-in-bhutan"}, notes: {"en":"Winter Solstice\nNyilo"}},
+        {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"Nyinlong","dz":"ཉིན་ལོང"}, urls: {"en":"https://www.officeholidays.com/holidays/bhutan/winter-solstice-in-bhutan"}, notes: {"en":"Winter Solstice\nNyilo"}},
         {ty: "nD", st: {mon: 2, d: 21}, end: {mon: 2, d: 23}, ttls: {"en":"Birthday of King Jigme Khesar Namgyel Wangchuck"}, fst: {era: 1, y: 1980}, inh: "*BDay*", notes: {"en":"Birth Anniversary of His Majesty the King"}},
         {ty: "D", st: {mon: 5, d: 2}, ttls: {"en":"Birthday of King Jigme Dorji Wangchuck"}, inh: "*BDay*", fst: {era: 1, y: 1929}, notes: {"en":"Birth Anniversary of the 3rd Druk Gyalpo"}},
         {inh: "Autumnal Equinox", ty: "D", st: {misc: "Sep"}, urls: {"en":"https://www.officeholidays.com/holidays/bhutan/blessed-rainy-day"}, ttls: {"en":"Blessed Rainy Day"}, notes: {"en":"Thrue Bab"}, fst: {era: 1, y: 1980}},

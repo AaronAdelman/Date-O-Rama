@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 20}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/east-timor-independence-day/"}, inh: "Independence Restoration Day"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
-        {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Popular Consultation Day", "he":"יום הייעוץ הפופולרי"}, urls: {"en":"https://nationaltoday.com/popular-consultation-day/"}, fst: {era: 1, y: 1999}},
+        {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Popular Consultation Day","he":"יום הייעוץ הפופולרי"}, urls: {"en":"https://nationaltoday.com/popular-consultation-day/"}, fst: {era: 1, y: 1999}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
         {inh: "N Youth Day", ty: "D", st: {mon: 11, d: 12}, fst: {era: 1, y: 1991}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, notes: {"en":"Youth National Day"}},

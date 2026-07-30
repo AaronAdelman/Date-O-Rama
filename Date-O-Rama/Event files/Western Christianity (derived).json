@@ -1,5 +1,5 @@
 {
-    ttls: {"en":"Western Christianity-derived", "he":"נגזרים מנצרות מערבית"},
+    ttls: {"en":"Western Christianity-derived","he":"נגזרים מנצרות מערבית"},
     defLocale: "en",
     cal: "gre",
     color: {name: "red"},
@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "N Hangover Day", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Commitment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/commitment-day/"}, fst: {era: 1, y: 1960}, emoji: "👩‍❤️‍👨"},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"National Black Eyed Pea Day"}, notes: {"en":"National Black-Eyed Pea Day"}, urls: {"en":"https://www.checkiday.com/bee7823f06b13815efec718f8d7a2a2a/national-black-eyed-pea-day"}},
-        {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"National Bloody Mary Day", "he":"יום הבלאדי מרי הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/bloody-mary-day/"}, emoji: "🍅"},
+        {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"National Bloody Mary Day","he":"יום הבלאדי מרי הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/bloody-mary-day/"}, emoji: "🍅"},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"National Bell Festival","hy":"Զանգերի ազգային փառատոն"}, urls: {"en":"https://www.bells.org/nationwide-bell-ringing"}, emoji: "🔔", notes: {"en":"Ring a Bell Day\nCreated by the National Bell Festival"}, fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Apple Gifting Day"}, urls: {"en":"https://www.daysoftheyear.com/days/apple-gifting-day/"}, emoji: "🍎"},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"New Year’s Dishonor List Day"}, urls: {"en":"https://www.daysoftheyear.com/days/new-years-dishonor-list-day/"}, fst: {era: 1, y: 1976}, notes: {"en":"Created by Wilmer T. “Bill” Rabe of LSSU"}},
@@ -30,7 +30,7 @@
         {ty: "D", st: {mon: 10, d: 23}, ttls: {"en":"International Swallows Depart from San Juan Capistrano Day"}, urls: {"en":"https://nationaltoday.com/international-swallows-depart-from-san-juan-capistrano-day/"}},
         {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"National Chucky Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-chucky-day/"}, fst: {era: 1, y: 2016}, notes: {"en":"Chucky, the Notorious Killer Doll Day\nChucky Day\nThis observance celebrates the Child’s Play films."}},
         {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"Crispmas Eve"}, urls: {"en":"https://vole.wtf/crisp-sandwich-day/"}, fst: {era: 1, y: 2025}, emoji: "🥪"},
-        {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Crisp Sandwich Day"}, urls: {"en":"https://vole.wtf/crisp-sandwich-day/"}, fst: {era: 1, y: 2022}, emoji: "🥪"},        {ty: "D", st: {mon: 10, d: 26}, ttls: {"en":"National Pumpkin Day", "he":"יום הדלעת הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/pumpkin-day/"}, emoji: "🎃"},
+        {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Crisp Sandwich Day"}, urls: {"en":"https://vole.wtf/crisp-sandwich-day/"}, fst: {era: 1, y: 2022}, emoji: "🥪"},        {ty: "D", st: {mon: 10, d: 26}, ttls: {"en":"National Pumpkin Day","he":"יום הדלעת הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/pumpkin-day/"}, emoji: "🎃"},
         {ty: "D", st: {mon: 10, d: 26}, ttls: {"en":"Howl at the Moon Day"}, notes: {"en":"Worldwide Howl at the Moon Night\nCreated by Johnny DePalma"}, urls: {"en":"https://www.daysoftheyear.com/days/howl-at-the-moon-day/"}, fst: {era: 1, y: 2009}, emoji: "🐺"},
         {ty: "D", st: {mon: 10, d: 27}, inh: "N Black Cat Day", fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 10, d: 30}, inh: "Haunted Refrigerator Nite"},
@@ -44,7 +44,7 @@
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"Carve a Pumpkin Day"}, urls: {"en":"https://www.checkiday.com/209d2de3381af7074b97ce5e706f435e/carve-a-pumpkin-day"}, emoji: "🎃", fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"National Candy Apple Day"}, emoji: "🍎", urls: {"en":"https://www.checkiday.com/73908ff8fa8cc31adace38bc626508f5/national-candy-apple-day"}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"National Knock Knock Joke Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-knock-knock-joke-day/"}, notes: {"en":"National Knock-Knock Jokes Day\nNational Knock Knock Jokes Day"}, emoji: "🍌🍊"},
-        {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"National Magic Day", "he":"יום הקסמים הלאומי"}, notes: {"en":"Magic Day", "he":"יום הקסמים"}, urls: {"en":"https://www.daysoftheyear.com/days/magic-day/"}, emoji: "🪄🎩", notes: {"en":"Created by the Society of American Magicians"}, fst: {era: 1, y: 1938}},
+        {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"National Magic Day","he":"יום הקסמים הלאומי"}, notes: {"en":"Magic Day","he":"יום הקסמים"}, urls: {"en":"https://www.daysoftheyear.com/days/magic-day/"}, emoji: "🪄🎩", notes: {"en":"Created by the Society of American Magicians"}, fst: {era: 1, y: 1938}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"Scare a Friend Day"}, urls: {"en":"https://www.checkiday.com/474f2cadaebaba8bc2aa98ab5b692611/scare-a-friend-day"}, emoji: "🙀", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"Sneak Some of the Candy Yourself Before the Kids Start Knocking Day"}, urls: {"en":"https://www.checkiday.com/9c6ff57f000afe64d55ccabbff7200f2/sneak-some-of-the-candy-yourself-before-the-kids-start-knocking-day"}, emoji: "🍬", fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"Trick-or-Treat for UNICEF Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Trick-or-Treat_for_UNICEF"}, emoji: "🛍", fst: {era: 1, y: 1950}},
@@ -88,7 +88,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Carols by Candlelight", fst: {era: 1, y: 1938}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Book Flood", fst: {era: 1, y: 1944}},
         {ty: "D", st: {mon: 12, d: 24}, ttls: {"en":"Last-Minute Shopper’s Day"}, urls: {"en":"https://www.daysoftheyear.com/days/last-minute-shoppers-day/"}, notes: {"en":"Last-Minute Shopping Day"}},
-        {ty: "D", st: {mon: 12, d: 24}, ttls: {"en":"National Eggnog Day", "he":"יום הליקר ביצים הלאומי"}, notes: {"en":"Eggnog Day\nNational Egg Nog Day", "he":"יום הליקר ביצים"}, urls: {"en":"https://www.daysoftheyear.com/days/eggnog-day/"}, emoji: "🥛"},
+        {ty: "D", st: {mon: 12, d: 24}, ttls: {"en":"National Eggnog Day","he":"יום הליקר ביצים הלאומי"}, notes: {"en":"Eggnog Day\nNational Egg Nog Day","he":"יום הליקר ביצים"}, urls: {"en":"https://www.daysoftheyear.com/days/eggnog-day/"}, emoji: "🥛"},
         {ty: "D", st: {mon: 12, d: 25}, ttls: {"en":"A’Phabet Day"}, notes: {"en":"No “L” Day"}, urls: {"en":"https://www.daysoftheyear.com/days/aphabet-day-or-no-l-day/"}, emoji: "Ł"},
         {ty: "D", st: {mon: 12, d: 25}, ttls: {"en":"National “Kiss the Cook” Day"}, urls: {"en":"https://www.checkiday.com/4eaafbcb68c16a1648b3576806c49ec9/national-kiss-the-cook-day"}, fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 12, d: 25}, ttls: {"en":"National Pumpkin Pie Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pumpkin-pie-day/"}, emoji: "🥧", notes: {"en":"Pumpkin Pie Day"}},
@@ -134,7 +134,7 @@
         {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"National Freedom to Marry Day","ha":"Ranar ƴancin yin aure","ru":"Национальный день свободы брака"}, urls: {urls: "https://www.daysoftheyear.com/days/national-freedom-to-marry-day/"}, fst: {era: 1, y: 1998}, notes: {"en":"Created by Lambda Legal"}},
         {ty: "D", st: {mon: 2, d: 13}, inh: "N Valentine Shopping Reminder Day"},
         {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"International Condom Day"}, notes: {"en":"This observance could have been promoted with more tact.\nCreated by the AIDS Healthcare Foundation"}, fst: {era: 1, y: 2009}},
-        {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"Self Love Day", "he":"יום מאוהב/ת בעצמי"}, urls: {"en":"https://pathofselflove.org/self-love-day"}, notes: {"en":"Self-Love Day\nMadly in Love With Me Day\nSelf Love Day\nCreated by Christine Arylo and the Path of Self Love School", "he":"יום מאוהב/ת בעצמי בטירוף"}, fst: {era: 1, y: 2008}, emoji: "⭕"},
+        {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"Self Love Day","he":"יום מאוהב/ת בעצמי"}, urls: {"en":"https://pathofselflove.org/self-love-day"}, notes: {"en":"Self-Love Day\nMadly in Love With Me Day\nSelf Love Day\nCreated by Christine Arylo and the Path of Self Love School","he":"יום מאוהב/ת בעצמי בטירוף"}, fst: {era: 1, y: 2008}, emoji: "⭕"},
         {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"International Natural Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-natural-day/"}, notes: {"en":"International Day of Self Love\nCreated by Sanah Jivani"}, fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 2, d: 13}, inh: "Kiss Day", urls: {"en":"https://www.daysoftheyear.com/days/kiss-day/"}},
         {ty: "D", st: {mon: 2, d: 13}, ttls: {"en":"Self Love Day"}, notes: {"en":"Madly In Love With Me Day\nSelf Love Day\nInternational Day of Self-Love\nThis observance seems to be meant to sell products."}, fst: {era: 1, y: 2008}},
@@ -188,7 +188,7 @@
         {ty: "D", st: {mon: 2, d: 26}, ttls: {"en":"Carnival Day"}, urls: {"en":"https://www.daysoftheyear.com/days/carnival-day/"}},
         {ty: "D", st: {mon: 3, d: 25}, ttls: {"en":"Old New Year’s Day"}, urls: {"en":"https://nationaltoday.com/old-new-years-day/"}, fst: {era: 1, y: 1582}},
 
-        {ty: "M", st: {mon: 10}, ttls: {"en":"Bat Appreciation Month", "he":"חודש העטלף"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en":"Created by Merlin Tuttle"}, subEvts: [
+        {ty: "M", st: {mon: 10}, ttls: {"en":"Bat Appreciation Month","he":"חודש העטלף"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-month/"}, emoji: "🦇", notes: {"en":"Created by Merlin Tuttle"}, subEvts: [
             {ty: "nD", st: {mon: 10, d: 24}, end: {mon: 10, d: 31}, ttls: {"en":"Bat Appreciation Week"}, urls: {"en":"https://www.daysoftheyear.com/days/bat-appreciation-week/"}, emoji: "🦇", fst: {era: 1, y: 2000}, notes: {"en":"Created by Bat Conservation International"}},
         ]},
         
