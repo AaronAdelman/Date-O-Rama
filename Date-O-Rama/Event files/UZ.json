@@ -8,9 +8,9 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Uzbekistan"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, inh: "Nu Year’s Day (in lieu)", thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
-        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, inh: "Nu Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, inh: "NuY’s Day (in lieu)", thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, inh: "NuY’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 14}, ttls: {"en":"Day of Defenders of the Motherland"}, urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/day-of-defenders-of-the-motherland"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},
         {ty: "D", st: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inh: "IWD (in lieu)", fst: {era: 1, y: 1914}, urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-womens-day"}},

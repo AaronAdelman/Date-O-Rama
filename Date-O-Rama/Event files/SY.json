@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1946},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 3, d: 18}, ttls: {"ar":"عيد الثورة السورية","en":"Syrian Revolution Day"}, inh: "Revolution Day"},
         {ty: "D", st: {mon: 3, d: 19, wkd: [5]}, ttls: {"en":"Syrian Revolution Day (in lieu)"}, inh: "Revolution Day"},
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
@@ -22,11 +22,11 @@
         {inh: "Arabic Language Day", ty: "D", st: {mon: 3, d: 1}, fst: {era: 1, y: 2010}},
         {inh: "Teacher’s Day", ty: "D", st: {mon: 3, wkd: [5], nth: 3}},
         {inh: "Armed Forces Day", ty: "D", st: {mon: 8, d: 1}},
-        {ty: "D", st: {mon: 12, d: 29}, inh: "Tree Day", fst: {era: 1, y: 1996}, inh: "N Tree Day"},
+        {ty: "D", st: {mon: 12, d: 29}, inh: "Tree Day", fst: {era: 1, y: 1996}, inh: "NTree Day"},
 
         {ty: "D", st: {mon: 6, d: 21}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 12, d: 17}, inh: "St Barbara"},
         {inh: "Children’s Day", ty: "D", st: {mon: 6, d: 25}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Assyrian Nu Year"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "Assyrian NuY"},
     ]
 }

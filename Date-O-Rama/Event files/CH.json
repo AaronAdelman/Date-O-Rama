@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1899},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Switzerland"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 2}, inh: "Berchtold’s Day", urls: {"en":"https://www.officeholidays.com/holidays/switzerland/berchtolds-day"}},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 3, d: 1}, inh: "Republic Day", urls: {"en":"https://www.officeholidays.com/holidays/switzerland/neuchatel/switzerland-republic-day"}},
@@ -25,7 +25,7 @@
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 6, d: 23}, urls: {"en":"https://nationaltoday.com/jura-independence-day/"}, inh: "Independence Day", fst: {era: 1, y: 1979}, locs: {"en":"Jura"}},
         {ty: "D", st: {mon: 6, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/saint-peter-and-saint-paul"}, inh: "Sts Peter and Paul"},
-        {ty: "D", st: {mon: 8, d: 1}, inh: "N Day", fst: {era: 1, y: 1899}, urls: {"en":"https://www.daysoftheyear.com/days/swiss-national-day/"}},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "NDay", fst: {era: 1, y: 1899}, urls: {"en":"https://www.daysoftheyear.com/days/swiss-national-day/"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
         {ty: "D", st: {mon: 9, d: 5, thruD: 11, wkd: [5]}, ttls: {"en":"Jeûne genevois"}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/geneva/genevan-fast"}},
         {ty: "D", st: {mon: 9, d: 9, thruD: 15, wkd: [2]}, ttls: {"en":"Knabenschiessen"}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/zurich/knabenschiessen"}},
@@ -39,7 +39,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         {ty: "D", st: {mon: 12, d: 31}, urls: {"en":"https://nationaltoday.com/restoration-day-in-geneva/"}, inh: "Restoration Day", locs: {"en":"Geneva"}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
         
         {inh: "Carnival", ty: "D", st: {misc: "E", offsetD: -55}, locs: {"en":"Schwyz"}},
         {ty: "D", st: {misc: "E", offsetD: -52}, inh: "Fat Thu"},
@@ -56,7 +56,7 @@
         {ty: "D", st: {mon: 3, d: 4}, inh: "Engineer’s Day", fst: {era: 1, y: 2018}},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day", fst: {era: 1, y: 1925}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Start of Fasching", fst: {era: 1, y: 1234}},
-        {ty: "D", st: {mon: 9, d: 28}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, d: 28}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 10, d: 11}, inh: "NCOD", fst: {era: 1, y: 1988}},
         

@@ -7,9 +7,9 @@
     fst: {era: 1, y: 1980},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Zimbabwe"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
-        {ty: "D", st: {mon: 2, d: 21}, inh: "N Youth Day", urls: {"en":"https://nationaltoday.com/robert-gabriel-mugabe-national-youth-day/"}, notes: {"en":"Robert Gabriel Mugabe National Youth Day"}, fst: {era: 1, y: 2017}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
+        {ty: "D", st: {mon: 2, d: 21}, inh: "NYouth Day", urls: {"en":"https://nationaltoday.com/robert-gabriel-mugabe-national-youth-day/"}, notes: {"en":"Robert Gabriel Mugabe National Youth Day"}, fst: {era: 1, y: 2017}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat", urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/easter-saturday"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -17,7 +17,7 @@
         {inh: "Independence Day", ty: "D", st: {mon: 4, d: 18}, fst: {era: 1, y: 1980}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/zimbabwe-independence-day"}},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/labour-day"}, inh: "Worker’s Day"},
         {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/african-unity-day"}, fst: {era: 1, y: 1963}},
-        {ty: "D", st: {mon: 8, d: 1}, inh: "N Day", urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/zimbabwe-heroes-day"}},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "NDay", urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/zimbabwe-heroes-day"}},
         {ty: "D", st: {mon: 8, wkd: [3], d: 9, thruD: 15}, ttls: {"en":"Defence Forces Day"}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/defence-forces-day"}},
         {ty: "D", st: {mon: 12, d: 22}, inh: "Unity Day", urls: {"en":"https://nationaltoday.com/zimbabwe-unity-day/"}, fst: {era: 1, y: 1987}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
@@ -25,7 +25,7 @@
 
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 6, d: 16}, inh: "I Day of the African Child", fst: {era: 1, y: 1991}},
+        {ty: "D", st: {mon: 6, d: 16}, inh: "ID of the African Child", fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 5, d: 26, wkd: [2]}, inh: "Africa Day (in lieu)", fst: {era: 1, y: 1963}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/african-unity-day"}},
         {ty: "D", st: {mon: 9, d: 15}, ttls: {"en":"Munhumutapa Day"}, urls: {"en":"https://www.officeholidays.com/holidays/zimbabwe/munhumutapa-day"}, fst: {era: 1, y: 2025}},
   ]

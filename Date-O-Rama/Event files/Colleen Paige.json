@@ -8,7 +8,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"National Pet Travel Safety Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-travel-safety-day/"}, emoji: "🐈‍⬛🐇🐕"},
         {ty: "D", st: {mon: 1, d: 14}, ttls: {"en":"National Dress Up Your Pet Day","he":"יום ״הלבש את חיית המחמד שלך״ הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/dress-up-your-pet-day/"}, fst: {era: 1, y: 2009}, emoji: "🐈‍⬛", notes: {"en":"Created by Colleen Paige"}},
-        {ty: "D", st: {mon: 2, d: 20}, inh: "N Love Your Pet Day", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 2, d: 20}, inh: "NLove Your Pet Day", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 2, d: 22}, inh: "​National Wildlife Day", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 3, d: 1}, ttls: {"en":"National Horse Protection Day"}, notes: {"en":"World Horse Day"}, urls: {"en":"http://www.horseprotectionday.com/"}, fst: {era: 1, y: 2005}, emoji: "🐴"},
         {ty: "D", st: {mon: 3, d: 23}, ttls: {"en":"National Puppy Day","he":"יום הגורים הלאומי"}, urls: {"en":"https://www.nationalpuppyday.com/"}, fst: {era: 1, y: 2006}, emoji: "🐶"},
@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 6, d: 19}, ttls: {"en":"National Pets in Film Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pets-in-film-day/"}, fst: {era: 1, y: 2011}, emoji: "🐶"},
         {ty: "D", st: {mon: 6, wkd: [7], nth: 3}, ttls: {"en":"National Dog Party Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-dog-party-day/"}, emoji: "🦮🐕‍🦺🐩", fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 7, d: 10}, ttls: {"en":"National Kitten Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-kitten-day/"}, emoji: "🐱", fst: {era: 1, y: 2012}},
-        {ty: "D", st: {mon: 7, d: 31}, inh: "N Mutt Day", fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 7, d: 31}, inh: "NMuttD", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 8, d: 26}, ttls: {"en":"National Dog Day","he":"יום הכלב הלאומי","nl":"Hondendag"}, notes: {"en":"International Dog Day"}, fst: {era: 1, y: 2004}, emoji: "🦮", urls: {"en":"https://www.nationaldogday.com/"}, notes: {"en":"Created by Colleen Paige"}},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"National Beach Day","he":"יום החוף הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-beach-day/"}, fst: {era: 1, y: 2014}, emoji: "🏖️"},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"National Holistic Pet Day"}, notes: {"en":"Promotes pseudoscience for pet care."}, urls: {"en":"https://skepdic.com/holistic.html"}},
@@ -29,10 +29,10 @@
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"en":"National Black Dog Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-dog-day/"}, fst: {era: 1, y: 2011}, emoji: "🐕‍🦺"},
         {ty: "D", st: {mon: 10, d: 2}, ttls: {"en":"Canine Companion Day"}, urls: {"en":"https://www.daysoftheyear.com/days/canine-companion-day/"}, fst: {era: 1, y: 2004}, emoji: "🐶"},
         {ty: "D", st: {mon: 10, d: 29}, ttls: {"az":"Milli Pişik Günü","bn":"জাতীয় বিড়াল দিবস","en":"National Cat Day","fr":"Journée nationale du chat","hy":"Կատուների ազգային օր","id":"Hari Kucing","it":"Festa del gatto","ja":"猫の日","pl":"Światowy Dzień Kota","sat":"ᱡᱟᱹᱛᱤᱭᱟᱹᱨᱤ ᱯᱩᱥᱤ ᱢᱟᱦᱟᱸ","th":"วันแมวแห่งชาติ","uk":"Національний день кота","ur":"بلیوں کا قومی دن","vi":"Ngày loài mèo","zh":"貓節日"}, urls: {"en":"https://www.nationalcatday.com/"}, fst: {era: 1, y: 2005}, emoji: "🐈"},
-        {ty: "D", st: {mon: 12, d: 2}, inh: "N Mutt Day", fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 12, d: 2}, inh: "NMuttD", fst: {era: 1, y: 2005}},
     ],
     tpls: {
-        "N Mutt Day": {ty: "D", st: {mon: 7, d: 31}, ttls: {"en":"National Mutt Day","he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
+        "NMuttD": {ty: "D", st: {mon: 7, d: 31}, ttls: {"en":"National Mutt Day","he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, emoji: "🐶", notes: {"en":"National Mixed Breed Dog Day"}},
         "​National Wildlife Day": {ty: "D", st: {mon: 9, d: 4}, ttls: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, emoji: "🐸"},
     }
 }

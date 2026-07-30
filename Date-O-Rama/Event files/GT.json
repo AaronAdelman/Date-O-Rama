@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guatemala"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
@@ -17,12 +17,12 @@
         {ty: "D", st: {mon: 7, d: 1}, inh: "Bank Holiday"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/guatemala-independence-day/"}},
-        {ty: "D", st: {mon: 10, d: 12}, inh: "Day of the Races", fst: {era: 1, y: 1917}},
+        {ty: "D", st: {mon: 10, d: 12}, inh: "D of the Races", fst: {era: 1, y: 1917}},
         {inh: "Revolution Day", ty: "D", st: {mon: 10, d: 20}, fst: {era: 1, y: 1944}, urls: {"en":"https://nationaltoday.com/revolution-day-guatemala/"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
 
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Mon"},

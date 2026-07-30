@@ -7,9 +7,9 @@
         {ty: "D", st: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}, inh: "1st Advent Sun", ttls: {"en":"Sunday of the Dead","de":"Totensonntag"}, notes: {"en":"Eternity Sunday","de":"Ewigkeitssonntag\nTotenfest"}, urls: {"en":"https://en.wikipedia.org/wiki/Totensonntag"}},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         {ty: "D", st: {mon: 5, d: 15}, inh: "Nakba Day", fst: {era: 1, y: 2023}, notes: {"en":"Nakba Remembrance Day\nThank the US Presbyterian Church for adopting an antisemitic hate-fest."}},
-        {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "N Donut Day", urls: {"en":"https://donutdayusa.com/"}, ttls: {"en":"National Donut Day"}, fst: {era: 1, y: 1938}, notes: {"en":"Created by the Salvation Army"}},
-        {ty: "D", st: {mon: 9, d: 30}, inh: "N Love People Day", fst: {era: 1, y: 2017}},
-        {ty: "D", st: {mon: 1, d: 22}, inh: "N Sanctity of Human Life Day", fst: {era: 1, y: 1984}},
+        {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "NDonut Day", urls: {"en":"https://donutdayusa.com/"}, ttls: {"en":"National Donut Day"}, fst: {era: 1, y: 1938}, notes: {"en":"Created by the Salvation Army"}},
+        {ty: "D", st: {mon: 9, d: 30}, inh: "NLove People Day", fst: {era: 1, y: 2017}},
+        {ty: "D", st: {mon: 1, d: 22}, inh: "NSanctity of Human Life Day", fst: {era: 1, y: 1984}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue", inh: "Paczki Day"},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Valentine’s Day", fst: {era: 1, y: 496}},
         {ty: "D", st: {mon: 10, wkd: [5], nth: 1}, ttls: {"en":"Bring Your Bible to School Day"}, notes: {"en":"Bring Your Bible Day"}, fst: {era: 1, y: 2014}, urls: {"en":"https://www.focusonthefamily.com/live-it/bring-your-bible/"}, emoji: "📖", notes: {"en":"Created by Focus on the Family"}},
@@ -69,7 +69,7 @@
         {ty: "D", st: {mon: 6, d: 18}, ttls: {"en":"National Black America’s Day of Repentance"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-americas-day-of-repentance/"}, fst: {era: 1, y: 2021}, notes: {"en":"Created by Sister Yvonne Roberson"}},
         {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Forgiveness Day"}, urls: {"en":"https://nationaltoday.com/forgiveness-day/"}, fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 6, d: 3}, inh: "Uganda Martyrs Day", fst: {era: 1, y: 1975}},
-        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inh: "W Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
+        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inh: "WD for Grandparents & the Elderly", fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 8, d: 22}, ttls: {"en":"National Be An Angel Day","he":"יום להיות המלאך הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/be-an-angel-day/"}, notes: {"en":"Be An Angel Day\nCreated by Jayne Howard Feldman","he":"יום להיות המלאך"}, fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 8, wkd: [1], nth: -1}, ttls: {"en":"Social Justice Sunday","he":"יום ראשון של צדק חברתי"}, fst: {era: 1, y: 1940}, urls: {"en":"https://www.daysoftheyear.com/days/social-justice-sunday/"}, emoji: "🖐"},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 1}, ttls: {"en":"International Forgiveness Day"}, fst: {era: 1, y: 1996}, urls: {"en":"https://www.checkiday.com/2e21204909c48a6ee38c3d4f343f0347/international-forgiveness-day"}},
@@ -79,7 +79,7 @@
         {ty: "D", st: {mon: 9, d: 26}, ttls: {"en":"World Day of Migrants and Refugees"}, fst: {era: 1, y: 1914}, urls: {"en":"https://www.daysoftheyear.com/days/world-day-of-migrants-and-refugees/"}, notes: {"en":"Created by Pope Benedict XV"}},
         {ty: "D", st: {mon: 9, wkd: [1], nth: -1}, ttls: {"en":"Priesthood Sunday"}, fst: {era: 1, y: 2000}, urls: {"en":"https://www.daysoftheyear.com/days/priesthood-sunday/"}},
         {ty: "D", st: {mon: 9, wkd: [1], nth: 3}, ttls: {"en":"National Back to Church Sunday"}, fst: {era: 1, y: 2009}, notes: {"en":"Created by Outreach, Inc."}, urls: {"en":"https://backtochurch.com/"}},
-        {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "N Pastor’s Spouses Day", fst: {era: 1, y: 2022}},
+        {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "NPastor’s Spouses Day", fst: {era: 1, y: 2022}},
         {ty: "M", st: {mon: 11}, ttls: {"en":"Black Catholic History Month"}},
         {ty: "M", st: {mon: 11}, ttls: {"en":"No Nut November"}, notes: {"en":"Promotes a bizarre obsession with self-control that no one asked for."}},
         {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, ttls: {"en":"National Gospel Music Day"}, urls: {"en":"https://www.nationaldayarchives.com/day/national-gospel-music-day/"}, notes: {"en":"Created by the Gospel Industry Coalition"}, emoji: "🎙️", fst: {era: 1, y: 2025}},
@@ -93,14 +93,14 @@
         {ty: "D", st: {mon: 8, wkd: [1], nth: 3}, ttls: {"en":"God’s Preeminence Day"}, fst: {era: 1, y: 2013}, urls: {"en":"https://www.checkiday.com/7b7d5768dfe571539b565dd3f9f10d55/gods-preeminence-day"}},
         {ty: "nD", st: {mon: 1, d: 22, thruD: 28, wkd: [1]}, end: {mon: 1, d: 28, thruMon: 2, thruD: 3, wkd: [7]}, ttls: {"en":"Catholic Schools Week"}, urls: {"en":"https://www.ncea.org/csw/CSW/Catholic_Schools_Week.aspx"}, fst: {era: 1, y: 1974}, notes: {"en":"Created by National Catholic Educational Association (NCEA) and the United States Conference of Catholic Bishops"}},
         {ty: "D", st: {mon: 4, d: 12}, ttls: {"en":"Wear a Star Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wear-a-star-day/"}, fst: {era: 1, y: 2010}, emoji: "⭐", notes: {"en":"Created by the [R] Project"}},
-        {ty: "nD", st: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inh: "N Forgiveness Week", fst: {era: 1, y: 2004}, last: {era: 1, y: 2024}},
-        {ty: "nD", st: {mon: 6, d: 22, thruD: 28, wkd: [6], durD: 3}, inh: "N Forgiveness Week", fst: {era: 1, y: 2025}},
+        {ty: "nD", st: {mon: 6, d: 16}, end: {mon: 6, d: 22}, inh: "NForgiveness Week", fst: {era: 1, y: 2004}, last: {era: 1, y: 2024}},
+        {ty: "nD", st: {mon: 6, d: 22, thruD: 28, wkd: [6], durD: 3}, inh: "NForgiveness Week", fst: {era: 1, y: 2025}},
         
         {ty: "M", st: {mon: 7}, ttls: {"en":"“Talk to Us”"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us/"}, notes: {"en":"Created by the Samaritans"}, fst: {era: 1, y: 2016}, subEvts: [
             {ty: "D", st: {d: 24}, ttls: {"en":"“Talk to Us” Day"}, urls: {"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, notes: {"en":"Talk to Us"}, fst: {era: 1, y: 2016}},
         ]},
     ],
     tpls: {
-        "N Forgiveness Week": {ty: "nD", st: {mon: 6, d: 16}, end: {mon: 6, d: 22}, ttls: {"en":"National Forgiveness Week"}, notes: {"en":"NFW\nNational Reconciliation and Forgiveness Week"}, urls: {"en":"https://forgivestories.com/nfw/"}, emoji: "🖤"},
+        "NForgiveness Week": {ty: "nD", st: {mon: 6, d: 16}, end: {mon: 6, d: 22}, ttls: {"en":"National Forgiveness Week"}, notes: {"en":"NFW\nNational Reconciliation and Forgiveness Week"}, urls: {"en":"https://forgivestories.com/nfw/"}, emoji: "🖤"},
     }
 }

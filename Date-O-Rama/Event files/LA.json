@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Laos"},
     fst: {era: 1, y: 1953},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day", urls: {"en":"https://www.officeholidays.com/holidays/lao/international-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day", urls: {"en":"https://www.officeholidays.com/holidays/lao/international-new-years-day"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inh: "IWD (in lieu)", fst: {era: 1, y: 2021}, urls: {"en":"https://www.officeholidays.com/holidays/lao/international-womens-day"}},
         {ty: "D", st: {mon: 4, d: 13, wkd: [1, 7]}, inh: "Lao New Year Holiday"},
@@ -20,7 +20,7 @@
         {ttls: {"en":"Women’s Union Establishment Day (in lieu)"}, ty: "D", st: {mon: 7, d: 21, thruD: 22, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-women-union-establishment-day"}, fst: {era: 1, y: 1955}, emoji: "👩"},
 
         {ty: "D", st: {mon: 10, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, ttls: {"en":"BOL Establishment Day"}, emoji: "🏦", fst: {era: 1, y: 1968}},
-        {ty: "D", st: {mon: 12, d: 2}, urls: {"en":"https://nationaltoday.com/lao-national-day/"}, inh: "N Day", fst: {era: 1, y: 1975}},
+        {ty: "D", st: {mon: 12, d: 2}, urls: {"en":"https://nationaltoday.com/lao-national-day/"}, inh: "NDay", fst: {era: 1, y: 1975}},
 
         {inh: "Armed Forces Day", ty: "D", st: {mon: 1, d: 20}},
 

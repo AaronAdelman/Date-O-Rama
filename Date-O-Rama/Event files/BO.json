@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1825},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bolivia"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 22}, ttls: {"en":"Plurinational State of Bolivia Anniversary","es":"Nacimiento del Estado Plurinacional de Bolivia"}, urls: {"en":"https://nationaltoday.com/plurinational-state-foundation-day/"}, notes: {"en":"Plurinational State Foundation Day"}},
         {ty: "D", st: {misc: "E", offsetD: -51}, urls: {"en":"https://www.officeholidays.com/holidays/bolivia/oruro/bolivia-regional-holiday"}, inh: "Public Holiday", locs: {"en":"Oruro"}},
         {ty: "D", st: {misc: "E", offsetD: -48}, urls: {"en":"https://www.officeholidays.com/holidays/bolivia/carnival-monday"}, inh: "Carnival Mon"},
@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 25}, urls: {"en":"https://www.officeholidays.com/holidays/bolivia/chuquisaca/chuquisaca-day"}, ttls: {"en":"Chuquisaca Day","es":"Día del departamento de Chuquisaca"}},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
-        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean Nu Year", fst: {era: 1, y: 2009}, urls: {"en":"https://nationaltoday.com/aymara-new-year/"}},
+        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean NuY", fst: {era: 1, y: 2009}, urls: {"en":"https://nationaltoday.com/aymara-new-year/"}},
         {ty: "D", st: {mon: 7, d: 16}, ttls: {"en":"La Paz Day","es":"Día del departamento de La Paz"}, urls: {"en":"https://nationaltoday.com/la-paz-day/"}},
         {ty: "D", st: {mon: 8, d: 6}, inh: "Independence Day", fst: {era: 1, y: 1825}, urls: {"en":"https://nationaltoday.com/bolivia-independence-day/"}},
         {ty: "D", st: {mon: 9, d: 14}, ttls: {"en":"Cochabamba Day","he":"יום קוצ׳במבה","es":"Día del departamento de Cochabamba"}, urls: {"en":"https://www.officeholidays.com/holidays/bolivia/cochabamba/cochabamba-day"}},

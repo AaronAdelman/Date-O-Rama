@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Japan"},
     fst: {era: 1, y: 1886},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 15}, inh: "Coming of Age Day", fst: {era: 1, y: 1948}, last: {era: 1, y: 1999}},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 2}, inh: "Coming of Age Day", fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"ar":"يوم التأسيس الوطني","ca":"Dia de la Fundació Nacional","cs":"Den vzniku Japonska","en":"National Foundation Day","es":"Día de la Fundación Nacional","fa":"روز بنیان‌گذاری کشور","fr":"Kenkoku kinen no hi","hr":"Dan osnutka nacije","id":"Hari Pembentukan Negara","it":"Kenkoku kinen no hi","ja":"建国記念の日","ko":"건국기념의 날","ms":"Hari Penubuhan Negara","pt":"Dia da Fundação Nacional do Japão","ru":"День основания государства","sh":"Dan osnivanja nacije","sl":"Dan ustanovitve naroda","th":"วันชาติ (ประเทศญี่ปุ่น)","tr":"Ulusal Kuruluş Günü","uk":"День заснування держави","vi":"Quốc khánh Nhật Bản","zh":"建國紀念之日"}, urls: {"en":"https://www.daysoftheyear.com/days/national-foundation-day/"}, notes: {"en":"Kenkoku Kinen no Hi\nCreated by the Government of Japan"}, fst: {era: 1, y: 1872}},
@@ -37,7 +37,7 @@
         {ty: "D", st: {mon: 12, d: 23}, ttls: {"en":"Birthday of Emperor Akihito"}, urls: {"en":"https://nationaltoday.com/birthday-of-emperor-akihito/"}, inh: "*BDay*", fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 3, d: 3}, ttls: {"en":"Japan Dolls Festival"}, urls: {"en":"https://nationaltoday.com/japan-dolls-festival/"}, fst: {era: 1, y: 1868}, emoji: "🎎"},
         {ty: "D", st: {mon: 3, d: 15}, ttls: {"de":"Hōnen-Matsuri","en":"Hōnensai","es":"Hōnen Matsuri","fa":"هونن ماتسوری","fr":"Hōnen Matsuri","hr":"Hōnen Matsuri","id":"Hōnen Matsuri","it":"Hōnen Matsuri","ja":"田縣神社#豊年祭","ms":"Hōnen Matsuri","nl":"Honen Matsuri","pt":"Hōnensai","ro":"Hōnen Matsuri","ru":"Хонэн-мацури","sl":"Honen Macuri","ta":"ஒவுனென் மட்சுறி","uk":"Хонен-мацурі","vi":"Hōnen Matsuri"}, notes: {"en":"Honen Matsuri"}, urls: {"en":"https://nationaltoday.com/honen-matsuri/"}},
-        {ty: "D", st: {mon: 10, d: 1}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 11, d: 11}, ttls: {"en":"Pocky & Pretz Day","id":"Hari Pocky & Pretz","ja":"ポッキー&プリッツの日","ko":"포키 & 프리츠의 날","ms":"Hari Pocky & Pretz","th":"วันป๊อกกี้และวันเพรทซ์","zh":"百奇与百力滋日"}, fst: {era: 1, y: 1999}, urls: {"en":"https://www.daysoftheyear.com/days/pocky-day/"}, notes: {"en":"Pocky Day\nCreated by Glico"}},
         {ty: "D", st: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inh: "Labor Thanksgiving Day", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 11, d: 24, wkd: [2]}, inh: "Labor Thanksgiving Day", fst: {era: 1, y: 1948}},

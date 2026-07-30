@@ -7,11 +7,11 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Faroe_Islands"},
     fst: {era: 1, y: 1948},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 4, d: 25}, inh: "N Flag Day", urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
+        {ty: "D", st: {mon: 4, d: 25}, inh: "NFlag Day", urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
         {ty: "D", st: {misc: "E", offsetD: 26}, inh: "General Prayer Day", fst: {era: 1, y: 1686}, urls: {"en":"https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
 
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},

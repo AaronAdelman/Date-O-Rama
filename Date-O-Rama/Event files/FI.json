@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1917},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Finland"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -49,7 +49,7 @@
         {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"en":"National Emergency Number Day"}, urls: {"en":"https://nationaltoday.com/national-emergency-number-day/"}, fst: {era: 1, y: 1997}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
-        {ty: "D", st: {mon: 6, d: 6}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 6, d: 6}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}, ttls: {"en":"Memorial Day for the Victims of the Holocaust","fi":"Vainojen uhrien muistopäivä"}},
         {ty: "nD", st: {mon: 6, d: 30, thruMon: 7, thruD: 6, wkd: [6]}, end: {mon: 7, d: 1, thruD: 7, wkd: [7]}, ttls: {"en":"Wife-Carrying World Championship","fi":"Eukonkannon MM-kisat"}, fst: {era: 1, y: 1992}, notes: {"en":"Wife-Carrying Race"}, urls: {"en":"https://eukonkanto.fi/en/front-page/","fi":"https://eukonkanto.fi/"}},
         {ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Sleepy Head Day"}, notes: {"en":"National Sleepy Head Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sleepy-head-day/"}, emoji: "🥱", fst: {era: 1, y: 1709}},

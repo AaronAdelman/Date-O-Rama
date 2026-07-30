@@ -8,8 +8,8 @@
     fst: {era: 1, y: 1970},
     urls: {"en":"https://www.fiji.gov.fj/About-Fiji/Public-Holidays"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/fiji/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -26,7 +26,7 @@
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {misc: "E", offsetD: -7}, ttls: {"en":"Children’s Sunday"}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 6, d: 11}, inh: "Queen’s Birthday"},
-        {inh: "N Youth Day", ty: "D", st: {mon: 5, d: 4}},
+        {inh: "NYouth Day", ty: "D", st: {mon: 5, d: 4}},
 
         {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},

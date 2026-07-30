@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Hungary"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 3, d: 15}, urls: {"en":"https://nationaltoday.com/1848-revolution-memorial-day/"}, inh: "Revolution Day", notes: {"en":"1848 Revolution Memorial Day"}, fst: {era: 1, y: 1848}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -30,18 +30,18 @@
         {ty: "D", st: {mon: 2, d: 25}, ttls: {"en":"Memorial Day for the Victims of the Communist Dictatorships","hu":"A kommunista diktatúrák áldozatainak emléknapja"}, fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 4, d: 16}, ttls: {"en":"Memorial Day for the Victims of the Holocaust","hu":"A holokauszt áldozatainak emléknapja"}, fst: {era: 1, y: 2001}, inh: "Holocaust Memorial Day"},
         {ty: "D", st: {mon: 5, d: 21}, ttls: {"en":"National Defense Day","he":"יום ההגנה הלאומי","hu":"Honvédelmi nap"}},
-        {ty: "D", st: {mon: 6, d: 4}, inh: "N Unity Day"},
+        {ty: "D", st: {mon: 6, d: 4}, inh: "NUnity Day"},
         {ty: "D", st: {mon: 6, d: 19}, ttls: {"en":"Independent Hungary Day","hu":"A független Magyarország napja"}, fst: {era: 1, y: 2001}},
         {ty: "D", st: {mon: 10, d: 6}, ttls: {"en":"Memorial Day for the Martyrs of Arad","hu":"Az aradi vértanúk emléknapja"}},
         
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 12, d: 6}, inh: "St Nicholas"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
         
         {inh: "Children’s Day", ty: "D", st: {mon: 5, wkd: [1], nth: -1}, fst: {era: 1, y: 1950}},
         {inh: "Heroes’ Day", ty: "D", st: {mon: 5, d: 31}, fst: {era: 1, y: 2001}},
         {inh: "Independence Day", ty: "D", ttls: {"en":"Day of Hungarian Freedom","hu" :"A magyar szabadság napja"}, st: {wkd: [7], nth: -1, mon: 6}, fst: {era: 1, y: 1991}},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
         {ty: "M", st: {mon: 3}, inh: "LGBTQ History Month", fst: {era: 1, y: 2013}},
     ]
 }

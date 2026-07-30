@@ -9,7 +9,7 @@
     fst: {era: 1, y: 1949},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Founding of the Republic of China"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inh: "Republic Day"},
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "Republic Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
         {ty: "D", st: {mon: 2, d: 27, wkd: [2, 6]}, ttls: {"en":"Peace Memorial Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}},
         {ty: "D", st: {mon: 2, d: 28}, ttls: {"en":"Peace Memorial Day","zh":"228和平紀念日"}, urls: {"en":"https://nationaltoday.com/228-memorial-day/"}, fst: {era: 1, y: 1995}, notes: {"en":"228 Memorial Day\n228 Peace Day\nFebruary 28 Peace Memorial Day"}},
@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/labour-day"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 8, d: 8}, inh: "Father’s Day"},
-        {ty: "D", st: {mon: 10, d: 10}, inh: "N Day", notes: {"en":"Double Ten Day","zh":"雙十節"}, urls: {"en":"https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, fst: {era: 1, y: 1911}},
+        {ty: "D", st: {mon: 10, d: 10}, inh: "NDay", notes: {"en":"Double Ten Day","zh":"雙十節"}, urls: {"en":"https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, fst: {era: 1, y: 1911}},
         
         {ty: "D", st: {mon: 3, d: 12}, inh: "Arbor Day"},
         {inh: "Youth Day", ty: "D", st: {mon: 3, d: 29}},
@@ -42,7 +42,7 @@
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 8, d: 14}, inh: "Air Force Day"},
         {ty: "D", st: {mon: 9, d: 2}, inh: "Navy Day"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 4}, inh: "Grandparents’ Day", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
   ],

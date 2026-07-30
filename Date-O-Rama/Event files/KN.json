@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Kitts_and_Nevis"},
     fst: {era: 1, y: 1983},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 12, d: 30, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 5, 6, 7]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
         {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/st-kitts-carnival-day"}, inh: "Carnival"},
@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 7, d: 4}, inh: "CARICOM Day", urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/caricom-day"}},
         {inh: "Emancipation Day", ty: "D", st: {mon: 8, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/emancipation-day"}},
         {ttls: {"en":"Culturama"}, ty: "D", st: {mon: 8, wkd: [3], nth: 1}, urls: {"en":"https://nationaltoday.com/culturama-day/"}},
-        {inh: "N Heroes’ Day", ty: "D", st: {mon: 9, d: 16}, fst: {era: 1, y: 1998}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-national-heroes-day"}},
+        {inh: "NHeroes’ Day", ty: "D", st: {mon: 9, d: 16}, fst: {era: 1, y: 1998}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-national-heroes-day"}},
         {inh: "Independence Day", ty: "D", st: {mon: 9, d: 19}, fst: {era: 1, y: 1983}, urls: {"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-independence-day"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},

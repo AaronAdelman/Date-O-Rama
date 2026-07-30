@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1953},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cambodia"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 7}, ttls: {"en":"Victory Over Genocide Day","km":"ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

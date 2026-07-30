@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1962},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Burundi"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 2, d: 5}, inh: "Unity Day", urls: {"en":"https://nationaltoday.com/unity-day-burundi/"}},
         {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"President Ntaryamira Day"}, urls: {"en":"https://nationaltoday.com/president-ntaryamira-day/"}, inh: "Presidents’ Day", notes: {"en":"Cyprien Ntaryamira Day"}},
         {ty: "D", st: {mon: 4, d: 7, wkd: [2]}, ttls: {"en":"President Ntaryamira Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/president-ntaryamira-day/"}, inh: "Presidents’ Day", notes: {"en":"Cyprien Ntaryamira Day (in lieu)"}},

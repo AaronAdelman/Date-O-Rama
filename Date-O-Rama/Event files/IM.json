@@ -7,8 +7,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Isle_of_Man"},
     fst: {era: 1, y: 600},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "Nu Year’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/isle-of-man/international-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "NuY’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/isle-of-man/international-new-years-day"}},
         {ty: "D", st: {misc: "E", offsetD: -21}, inh: "Mothering Sun"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

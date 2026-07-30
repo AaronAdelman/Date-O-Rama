@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iceland"},
     fst: {era: 1, y: 1944},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -18,13 +18,13 @@
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
-        {ty: "D", st: {mon: 6, d: 17}, inh: "N Day", urls: {"en":"https://www.daysoftheyear.com/days/icelandic-national-day/"}, fst: {era: 1, y: 1944}, notes: {"en":"Independence Day"}},
+        {ty: "D", st: {mon: 6, d: 17}, inh: "NDay", urls: {"en":"https://www.daysoftheyear.com/days/icelandic-national-day/"}, fst: {era: 1, y: 1944}, notes: {"en":"Independence Day"}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Commerce Day","is":"Frídagur verslunarmanna"}, fst: {era: 1, y: 1931}, urls: {"en":"https://nationaltoday.com/commerce-day/"}, emoji: "💶"},
         {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, inh: "Father’s Day", urls: {"en":"https://www.officeholidays.com/holidays/iceland/fathers-day"}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/iceland/christmas-holiday"}, inh: "Boxing Day"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
         
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 1, wkd: [6], d: 19, thruD: 25}, ttls: {"en":"Husband’s Day","he":"יום האיש","is":"Bóndadagur"}, emoji: "👨"},
@@ -43,7 +43,7 @@
 
         {ty: "D", st: {mon: 4, d: 10}, inh: "Engineer’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Book Flood", fst: {era: 1, y: 1944}},
         
         {ty: "D", st: {mon: 1, d: 20, thruD: 26, wkd: [6]}, inh: "Thorrablot", fst: {era: 1, y: 1873}},

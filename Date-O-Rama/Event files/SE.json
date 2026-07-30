@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sweden"},
     fst: {era: 1, y: 1523},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/christmas-holiday"}, inh: "St Stephen"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
         
         {ty: "D", st: {mon: 1, d: 5}, inh: "12th Nite"},
         {ty: "D", st: {mon: 10, d: 30, thruMon: 11, thruD: 5, wkd: [6]}, ttls: {"en":"All Saints’ Eve","sv":"Alla helgons afton"}},
@@ -42,7 +42,7 @@
         {ty: "D", st: {mon: 2, d: 14}, inh: "Valentine’s Day", fst: {era: 1, y: 496}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
         {ty: "D", st: {mon: 2, d: 24}, urls: {"en":"https://nationaltoday.com/sweden-finns-day/"}, ttls: {"en":"Sweden Finns Day"}, fst: {era: 1, y: 2010}},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffee Day"},
         {ty: "D", st: {mon: 11, d: 6}, inh: "Gustavus Adolphus Day"},
         {ty: "D", st: {mon: 3, d: 25}, inh: "Waffle Day"},
         {ty: "D", st: {mon: 10, d: 4}, ttls: {"ar":"يوم لفة القرفة","de":"Tag der Zimtschnecke","en":"Cinnamon Bun Day","es":"Día del Rollo de Canela","fa":"روز رول دارچینی","fr":"Kanelbullens dag","he":"יום שבלול הקינמון","sv":"Kanelbullens dag","zh":"肉桂卷日"}, fst: {era: 1, y: 1999}, urls: {"en":"https://kanelbullensdag.se/en/","sv":"https://kanelbullensdag.se/"}, notes: {"en":"Cinnamon Roll Day\nNational Cinnamon Bun Day\nNational Cinnamon Roll Day\nCreated by Kaeth Gardestedt and the Home Baking Council in Sweden"}},

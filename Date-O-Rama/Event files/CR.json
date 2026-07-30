@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Costa_Rica"},
     evts: [
-        {ty: "D", st:  {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st:  {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Mon"},
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tue"},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Holy Wed"},
@@ -28,6 +28,6 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 9, d: 9}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 7, d: 20}, inh: "Engineer’s Day"},
-        {ty: "D", st: {mon: 9, wkd: [6], nth: 2}, inh: "N Coffee Day"},
+        {ty: "D", st: {mon: 9, wkd: [6], nth: 2}, inh: "NCoffee Day"},
     ]
 }

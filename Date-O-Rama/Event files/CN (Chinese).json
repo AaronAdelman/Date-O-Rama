@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_China"},
     evts: [
         {ty: "D", st: {mon: 12, d: -1}, urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}, inh: "Spring Festival Holiday"},
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inh: "Chinese Nu Year"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inh: "Chinese NuY"},
         {ty: "D", st: {mon: 1, d: 2}, inh: "Spring Festival Holiday", urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}},
         {ty: "D", st: {mon: 1, d: 3}, urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}, inh: "Spring Festival Holiday"},
         {ty: "D", st: {mon: 1, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}, inh: "Spring Festival Holiday"},

@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1776},
     "TODO":"Prevent Blindness event calendar?  PGA event calendar?",
     evts: [
-        {ty: "M", st: {era: 1, y: 2009, mon: 5}, inh: "N Guide Dog Month"},
+        {ty: "M", st: {era: 1, y: 2009, mon: 5}, inh: "NGuide Dog Month"},
         {ty: "M", st: {mon: 1}, ttls: {"en":"California Restaurant Month"}, urls: {"en":"https://nationaltoday.com/california-restaurant-month/"}},
         {ty: "M", st: {mon: 1}, ttls: {"en":"Fresh Florida Tomato Month"}, urls: {"en":"https://www.daysoftheyear.com/days/fresh-florida-tomato-month/"}, emoji: "🍅", fst: {era: 1, y: 1989}, notes: {"en":"Created by the Florida Tomato Committee and Department of Agriculture"}},
         {ty: "M", st: {mon: 1}, ttls: {"en":"National Adopt a Rescued Bird Month"}, urls: {"en":"https://nationaltoday.com/national-adopt-a-rescued-bird-month/"}, emoji: "🐦"},
@@ -241,7 +241,7 @@
         {ty: "M", st: {mon: 4}, urls: {"en":"https://nationaltoday.com/national-sexually-transmitted-diseases-stds-education-and-awareness-month/"}, ttls: {"en":"National Sexually Transmitted Infections (STIs) Education and Awareness Month"}, inh: "*MedAw*"},
         {ty: "M", st: {mon: 4}, urls: {"en":"https://nationaltoday.com/national-sjogrens-syndrome-awareness-month/"}, ttls: {"en":"National Sjogren’s Syndrome Awareness Month"}, fst: {era: 1, y: 1998}, inh: "*MedAw*"},
         {ty: "M", st: {mon: 4}, urls: {"en":"https://nationaltoday.com/national-welding-month/"}, ttls: {"en":"National Welding Month"}},
-        {ty: "M", st: {mon: 5}, inh: "N Pet Month", urls: {"en":"https://www.daysoftheyear.com/days/national-pet-month/"}, fst: {era: 1, y: 2006}, notes: {"en":"Created by the National Association of Professional Pet Sitters (NAPPS)"}},
+        {ty: "M", st: {mon: 5}, inh: "NPet Month", urls: {"en":"https://www.daysoftheyear.com/days/national-pet-month/"}, fst: {era: 1, y: 2006}, notes: {"en":"Created by the National Association of Professional Pet Sitters (NAPPS)"}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"American Cheese Month"}, urls: {"en":"https://nationaltoday.com/american-cheese-month/"}, emoji: "🧀", notes: {"en":"Created by the American Cheese Society"}, fst: {era: 1, y: 2011}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"Brain Tumor Awareness Month"}, urls: {"en":"https://www.daysoftheyear.com/days/brain-tumor-awareness-month-us/"}, fst: {era: 1, y: 2008}, inh: "*MedAw*", emoji: "🧠", notes: {"en":"Created by the National Brain Tumor Society (NBTS)"}},
         {ty: "M", st: {mon: 5}, ttls: {"en":"CF Awareness Month"}, urls: {"en":"https://www.cff.org/intro-cf/cf-awareness-month"}, notes: {"en":"National Cystic Fibrosis Awareness Month"}, fst: {era: 1, y: 1990}, inh: "*MedAw*"},
@@ -353,7 +353,7 @@
         {ty: "M", st: {mon: 8}, ttls: {"en":"National Traffic Awareness Month"}, urls: {"en":"https://nationaltoday.com/national-traffic-awareness-month/"}, emoji: "🛑"},
         {ty: "M", st: {mon: 8}, ttls: {"en":"National Water Quality Month"}, urls: {"en":"https://www.daysoftheyear.com/days/water-quality-month/"}, emoji: "💦"},
         {ty: "M", st: {mon: 8}, ttls: {"en":"Personalized Learning Month"}, urls: {"en":"https://personalizedlearningmonth.com/"}, emoji: "📚"},
-        {ty: "M", st: {mon: 9}, inh: "N Guide Dog Month", fst: {era: 1, y: 2010}},
+        {ty: "M", st: {mon: 9}, inh: "NGuide Dog Month", fst: {era: 1, y: 2010}},
         {ty: "M", st: {mon: 9}, inh: "Sleeptember", fst: {era: 1, y: 2013}, urls: {"en":"https://www.sleeptember.org/"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"Hunger Action Month"}, urls: {"en":"https://www.feedingamerica.org/take-action/hunger-action-month"}, emoji: "🍌", fst: {era: 1, y: 2008}, notes: {"en":"Created by Feeding America"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"Library Card Sign-up Month"}, urls: {"en":"https://www.ala.org/conferencesevents/celebrationweeks/card"}, notes: {"en":"National Library Card Sign-up Month"}, emoji: "📚"},
@@ -393,6 +393,6 @@
         {ty: "nD", st: {mon: 9, d: 12}, end: {mon: 10, d: 12}, ttls: {"en":"National Drive Electric Month"}, urls: {"en":"https://driveelectricmonth.org/"}, fst: {era: 1, y: 2025}, emoji: "⚡", notes: {"en":"Created by Plug In America"}},
     ],
     tpls: {
-        "N Guide Dog Month": {ty: "M", st: {mon: 9}, ttls: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
+        "NGuide Dog Month": {ty: "M", st: {mon: 9}, ttls: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
     }
 }

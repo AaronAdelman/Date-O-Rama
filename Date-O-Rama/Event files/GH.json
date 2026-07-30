@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1957},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ghana"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {inh: "Constitution Day", ty: "D", st: {mon: 1, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 1, d: 8, thruD: 9, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/ghana/ghana-constitution-day"}, inh: "Constitution Day (in lieu)", fst: {era: 1, y: 2019}},
         {inh: "Independence Day", ty: "D", st: {mon: 3, d: 6}, fst: {era: 1, y: 1957}, urls: {"en":"https://nationaltoday.com/ghana-independence-day/"}},
@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "nD", st: {mon: 7, d: 23}, end: {mon: 8, d: 2}, ttls: {"dga":"Panfest Tigiri","en":"Panafest","ha":"Panafest","he":"פרוייקט התיאטרון ההיסטורי הפאן־אפריקאי","ig":"Panafest"}, urls: {"en":"https://nationaltoday.com/panafest/"}, fst: {era: 1, y: 1992}, notes: {"en":"Pan African Historical Theatre Project"}},
-        {ty: "D", st: {mon: 2, d: 14}, inh: "N Chocolate Day", urls: {"en":"https://en.wikipedia.org/wiki/Chocolate_Day_(Ghana)"}, fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "NChocolate Day", urls: {"en":"https://en.wikipedia.org/wiki/Chocolate_Day_(Ghana)"}, fst: {era: 1, y: 2005}},
    ],
     tpls: {
         "Kwame Nkrumah Memorial Day (in lieu)": {ty: "D", st: {mon: 9, d: 22, wkd: [2, 3]}, ttls: {"en":"Kwame Nkrumah Memorial Day (in lieu)","he":"יום הזיכרון של קוואמה נקרומה (במקומו)"}, inh: "*BDay*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},

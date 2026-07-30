@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1809},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ecuador"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://nationaltoday.com/ecuador-carnival/"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 10, d: 27}, inh: "Air Force Day"},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 7, d: 14}, inh: "Friendship Day"},
-        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean Nu Year", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean NuY", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 8, d: 1}, inh: "Pachamama Day", fst: {era: 1, y: 1990}},
     ]
 }

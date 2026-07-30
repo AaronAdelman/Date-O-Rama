@@ -7,7 +7,7 @@
     urls: {"en":"https://publicholidays.africa/reunion/"},
     fst: {era: 1, y: 1946},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

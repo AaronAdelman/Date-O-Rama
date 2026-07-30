@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kazakhstan"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Nu Year’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inh: "IWD (in lieu)", fst: {era: 1, y: 1977}, urls: {"en":"https://www.officeholidays.com/holidays/kazakhstan/international-womens-day"}},
         {ty: "D", st: {misc: "Mar"}, urls: {"en":"https://nationaltoday.com/nauryz-day/"}, inh: "Nowruz"},
@@ -28,15 +28,15 @@
         {ty: "nD", st: {mon: 12, d: 16}, end: {mon: 12, d: 17}, inh: "Independence Day", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/kazakhstan-independence-day/"}},
         {ty: "D", st: {mon: 12, d: 18, wkd: [2]}, inh: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/kazakhstan-independence-day/"}},
         
-        {inh: "N Guard Day", ty: "D", st: {mon: 1, d: 10}},
+        {inh: "NGuard Day", ty: "D", st: {mon: 1, d: 10}},
         {ttls: {"en":"Day of the State Security Service of Kazakhstan"}, st: {mon: 4, d: 21}, ty: "D"},
         {inh: "Police Day", ty: "D", st: {mon: 6, d: 23}},
         {inh: "Border Guards Day", ty: "D", st: {mon: 8, d: 18}, fst: {era: 1, y: 1919}},
-        {inh: "Day of Remembrance of the Victims of Political Repressions", st: {mon: 10, d: 30}, ty: "D", fst: {era: 1, y: 1991}},
+        {inh: "D of Remembrance of the Victims of Political Repressions", st: {mon: 10, d: 30}, ty: "D", fst: {era: 1, y: 1991}},
         
         {inh: "Father’s Day", ty: "D", st: {mon: 5, d: 7}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 6, d: 1}, inh: "I Children’s Day"},
+        {ty: "D", st: {mon: 6, d: 1}, inh: "IChildren’s Day"},
         {ttls: {"en":"Abai Day"}, st: {mon: 8, d: 10}, ty: "D", urls: {"en":"https://nationaltoday.com/abai-day/"}, fst: {era: 1, y: 1845}},
         {ty: "D", st: {mon: 12, d: 1}, urls: {"en":"https://nationaltoday.com/kazakhstans-first-presidents-day/"}, ttls: {"en":"First President’s Day"}, fst: {era: 1, y: 2011}},
 

@@ -8,9 +8,9 @@
     fst: {era: 1, y: 1968},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2}, inh: "Nu Year’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
-        {ty: "D", st: {mon: 1, d: 3, wkd: [3]}, inh: "Nu Year’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2}, inh: "NuY’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 3, wkd: [3]}, inh: "NuY’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
         {ty: "D", st: {era: 1, y: 2023, mon: 1, d: 27}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/mauritius/mauritius-bank-holiday"}},
         {ty: "D", st: {mon: 2, d: 1}, inh: "Abolition of Slavery Day", urls: {"en":"https://nationaltoday.com/abolition-of-slavery-day/"}, fst: {era: 1, y: 1835}},
         {ty: "D", st: {mon: 3, d: 12}, inh: "Independence Day", notes: {"en":"Mauritius Day\nMauritian National Day"}, fst: {era: 1, y: 1968}, urls: {"en":"https://nationaltoday.com/mauritius-independence-day/"}},
@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 11, d: 2}, urls: {"en":"https://nationaltoday.com/arrival-of-indentured-labourers/"}, ttls: {"en":"Arrival of Indentured Labourers"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
-        {ty: "D", st: {mon: 3, d: 20}, inh: "I Francophonie Day", fst: {era: 1, y: 1988}},
+        {ty: "D", st: {mon: 3, d: 20}, inh: "IFrancophonie Day", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: -1}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 13}, inh: "Engineer’s Day"},

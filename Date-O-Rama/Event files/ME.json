@@ -8,7 +8,7 @@
     fst: {era: 1, y: 2006},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Nu Year’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 2, wkd: [3, 5, 6, 7]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
         {ty: "D", st: {mon: 5, d: 3, wkd: [2]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
@@ -23,7 +23,7 @@
 
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}, inh: "Xmas"},
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1975},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
@@ -18,7 +18,7 @@
         {ty: "D", st: {mon: 10, d: 10}, ttls: {"en":"Maroons Day"}, urls: {"en":"https://nationaltoday.com/maroons-day/"}, fst: {era: 1, y: 2011}},
         {inh: "Independence Day", ty: "D", st: {mon: 11, d: 25}, fst: {era: 1, y: 1975}, urls: {"en":"https://nationaltoday.com/suriname-independence-day/"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 26}, inh: "Day after Xmas", urls: {"en":"https://www.officeholidays.com/holidays/suriname/christmas-holiday"}},
+        {ty: "D", st: {mon: 12, d: 26}, inh: "D after Xmas", urls: {"en":"https://www.officeholidays.com/holidays/suriname/christmas-holiday"}},
         
         {ty: "D", st: {mon: 5, d: 5}, urls: {"en":"https://nationaltoday.com/indian-arrival-day-guyana/"}, inh: "Indian Arrival Day", fst: {era: 1, y: 1873}},
         {ty: "D", st: {mon: 10, d: 31}, inh: "Halloween"},

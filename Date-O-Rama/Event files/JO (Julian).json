@@ -8,6 +8,6 @@
     evts: [
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "O Easter Mon"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

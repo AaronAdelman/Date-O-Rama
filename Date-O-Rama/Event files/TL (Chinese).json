@@ -6,6 +6,6 @@
     color: {red: 0.85, green: 0.16, blue: 0.11},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Timor-Leste"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese Nu Year"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NuY"},
     ]
 }

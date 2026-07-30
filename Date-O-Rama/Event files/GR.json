@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Greece"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 3, d: 25}, inh: "Greek Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://www.daysoftheyear.com/days/greek-independence-day/"}, notes: {"en":"Created by Filiki Eteria (the Society of Friends)"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1918},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Estonia"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 2, d: 24}, inh: "Independence Day", urls: {"en":"https://nationaltoday.com/estonia-independence-day/"}, fst: {era: 1, y: 1918}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -27,7 +27,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ttls: {"en":"Anniversary of the Tartu Peace Treaty","et":"Tartu rahulepingu aastapäev"}, ty: "D", st: {mon: 2, d: 2}},
         {ttls: {"en":"Native Language Day","et":"emakeelepäev"}, ty: "D", st: {mon: 3, d: 14}},
-        {inh: "N Flag Day", ty: "D", st: {mon: 6, d: 4}, fst: {era: 1, y: 1884}},
+        {inh: "NFlag Day", ty: "D", st: {mon: 6, d: 4}, fst: {era: 1, y: 1884}},
         {ttls: {"en":"Day of Mourning and Commemoration","et":"leinapäev"}, ty: "D", st: {mon: 6, d: 14}},
         {ty: "D", st: {mon: 8, d: 23}, inh: "Black Ribbon Day", fst: {era: 1, y: 2009}},
         {inh: "Grandparents’ Day", ty: "D", st: {mon: 9, wkd: [1], nth: 2}},

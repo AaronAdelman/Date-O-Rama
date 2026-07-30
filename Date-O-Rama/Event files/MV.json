@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1965},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {era: 1, y: 2026, mon: 2, d: 5}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}},
         {ty: "D", st: {era: 1, y: 2025, mon: 2, d: 6}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}},
         {ty: "D", st: {era: 1, y: 2023, mon: 2, d: 6}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}},
@@ -24,7 +24,7 @@
         {ty: "D", st: {mon: 11, d: 3}, urls: {"en":"https://nationaltoday.com/maldives-victory-day/"}, inh: "Victory Day"},
         {ty: "D", st: {mon: 11, d: 10, wkd: [1]},         ttls: {"en":"Republic Day (bridge day)"}, urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-republic-day"}, fst: {era: 1, y: 1968}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Republic Day", urls: {"en":"https://www.officeholidays.com/holidays/maldives/maldives-republic-day"}, fst: {era: 1, y: 1968}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
         
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 5, d: 10}},

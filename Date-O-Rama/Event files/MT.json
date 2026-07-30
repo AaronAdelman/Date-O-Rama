@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1964},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Malta"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 2, d: 10}, ttls: {"en":"Feast of Saint Paul’s Shipwreck","mt":"Nawfraġju ta’ San Pawl"}, urls: {"en":"https://nationaltoday.com/feast-of-st-pauls-shipwreck/"}, notes: {"mt":"San Pawl Nawfragu"}},
         {ty: "D", st: {mon: 3, d: 19}, inh: "St Joseph"},
         {ty: "D", st: {mon: 3, d: 31}, inh: "Freedom Day", urls: {"en":"https://www.officeholidays.com/holidays/malta/malta-freedom-day"}, fst: {era: 1, y: 1979}},
@@ -120,9 +120,9 @@
 
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         {ty: "D", st: {mon: 12, d: 28}, inh: "Holy Innocents Day"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "Nu Year’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
 
         {inh: "Grandparents’ Day", ty: "D", st: {mon: 10, wkd: [1], nth: 2}, fst: {era: 1, y: 2013}},
-        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inh: "W Day for Grandparents and the Elderly", fst: {era: 1, y: 2021}},
+        {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inh: "WD for Grandparents & the Elderly", fst: {era: 1, y: 2021}},
     ]
 }

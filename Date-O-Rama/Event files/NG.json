@@ -8,8 +8,8 @@
     fst: {era: 1, y: 1960},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nigeria"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/international-new-years-day"}, inh: "Nu Year’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
         {ty: "nD", st: {era: 1, y: 2023, mon: 1, d: 9}, end: {era: 1, y: 2023, mon: 1, d: 10}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/yobe/yobe-presidential-visit"}, inh: "Public Holiday"},
         {ty: "nD", st: {era: 1, y: 2023, mon: 1, d: 23}, end: {era: 1, y: 2023, mon: 1, d: 27}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/abia/nigeria-public-holiday-registration"}, inh: "Public Holiday"},
         {ty: "D", st: {era: 1, y: 2022, mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/abia/nigeria-public-holiday-registration"}, inh: "Public Holiday"},

@@ -8,9 +8,9 @@
     fst: {era: 1, y: 1962},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Samoa"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "Day after New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "Day after New Year’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "D after New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "D after New Year’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -28,6 +28,6 @@
 
         
         {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "White Sun"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "N Police Remembrance Day", fst: {era: 1, y: 1989}},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NPolice Remembrance Day", fst: {era: 1, y: 1989}},
     ]
 }

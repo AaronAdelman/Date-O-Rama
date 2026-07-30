@@ -8,7 +8,7 @@
         {ty: "D", st: {misc: "Mar"}, ttls: {"en":"International Astrology Day","eo":"Internacia Tago de Astrologio","et":"Rahvusvaheline astroloogiapäev","pl":"Międzynarodowy Dzień Astrologii"}, notes: {"en":"Astrology Day"}, fst: {era: 1, y: 1993}, notes: {"en":"This observance promotes pseudoscience.\nCreated by the Association for Astrological Networking (AFAN)"}, inh: "*Astrol*"},
         {ty: "D", st: {mon: 3, d: 21}, ttls: {"en":"National Aries Day"}, fst: {era: 1, y: 1993}, notes: {"en":"This observance promotes pseudoscience.\nCreated by the Association for Astrological Networking (AFAN)"}, inh: "*Astrol*"},
         {ty: "D", st: {mon: 1, d: 19}, ttls: {"en":"Brew a Potion Day"}, notes: {"en":"This event is meant to promote magic (in the sense of what the fictional Harry Potter and company are able to do), which has not been demonstrated to be real and which there is no reason to believe is real."}, urls: {"en":"https://skepdic.com/magick.html"}},
-        {ty: "D", st: {mon: 1, wkd: [7], nth: 2}, inh: "N Vision Board Day", fst: {era: 1, y: 2015}},
+        {ty: "D", st: {mon: 1, wkd: [7], nth: 2}, inh: "NVision Board Day", fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 10, d: 16}, ttls: {"en":"World Spine Day"}, fst: {era: 1, y: 2008}, urls: {"en":"https://www.skepdic.com/chiro.html"}, notes: {"en":"This observance promotes pseudoscience which can result in damage to one’s neck.\nCreated by the World Federation of Chiropractic (WFC)"}},
         {ty: "D", st: {mon: 10, d: 20}, ttls: {"en":"National Sasquatch Awareness Day"}, urls: {"en":"https://skepdic.com/bigfoot.html"}, fst: {era: 1, y: 2009}, notes: {"en":"Created by Matt Moneymaker"}, emoji: "🫈"},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"National Increase Your Psychic Powers Day"}, notes: {"en":"This observance encourages people to dupe themselves into thinking they have powers that they do not have."}, urls: {"en":"https://www.skepdic.com/psychic.html"}, emoji: "🔮", fst: {era: 1, y: 2022}},
@@ -35,11 +35,11 @@
         {ty: "D", st: {mon: 5, d: 29}, ttls: {"en":"Put a Pillow on Your Fridge Day"}, notes: {"en":"A day for promoting superstitious nonsense for attracting good fortune."}},
         {ty: "D", st: {mon: 5, d: 3}, ttls: {"en":"National Paranormal Day"}, notes: {"en":"Promotes pseudoscience and fringe beliefs."}, fst: {era: 1, y: 2013}, urls: {"en":"https://skepdic.com/paranormal.html"}},
         {ty: "D", st: {mon: 5, wkd: [7], nth: 1}, inh: "Herb Day", notes: {"en":"This observance promotes pseudoscience.\nCreated by the American Herbal Products Association, the American Botanical Council, and United Plant Savers"}, fst: {era: 1, y: 2006}},
-        {ty: "D", st: {mon: 6, d: 24}, inh: "W UFO Day", fst: {era: 1, y: 2001}},
+        {ty: "D", st: {mon: 6, d: 24}, inh: "WUFO Day", fst: {era: 1, y: 2001}},
         {ty: "D", st: {mon: 6, d: 10}, ttls: {"en":"EHS Day"}, notes: {"en":"Promotes quackery about how people are allegedly sensitive to electric fields."}, fst: {era: 1, y: 2013}, urls: {"en":"https://skepdic.com/electrosensitives.html"}},
         {ty: "D", st: {mon: 6, d: 20}, ttls: {"en":"National Celluma Light Therapy Day"}, notes: {"en":"This sounds suspiciously like a scam."}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 7, d: 11}, ttls: {"en":"International Essential Oils Day"}, notes: {"en":"IEOD\nPromotes pseudoscience and questionable health claims.\nCreated by Young Living"}, fst: {era: 1, y: 2018}, urls: {"en":"https://skepdic.com/aroma.html"}},
-        {ty: "D", st: {mon: 7, d: 2}, inh: "W UFO Day", fst: {era: 1, y: 2001}},
+        {ty: "D", st: {mon: 7, d: 2}, inh: "WUFO Day", fst: {era: 1, y: 2001}},
         {ty: "D", st: {mon: 7, d: 26}, ttls: {"en":"Holistic Therapy Day"}, notes: {"en":"Promotes pseudoscientific practices."}, urls: {"en":"https://skepdic.com/holistic.html"}},
         {ty: "D", st: {mon: 8, d: 6}, ttls: {"en":"National Ghost Day"}, urls: {"en":"https://skepdic.com/ghosts.html"}, fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 1}, ttls: {"en":"Psychic Day"}, notes: {"en":"This observance promotes pseudoscientific nonsense.\nCreated by Richard R. Falk"}, fst: {era: 1, y: 2021}, urls: {"en":"https://skepdic.com/psychic.html"}},
@@ -53,6 +53,6 @@
     ],
     tpls: {
         "Herb Day": {ty: "D", st: {mon: 5, wkd: [7], nth: 1}, ttls: {"en":"Herb Day"}, notes: {"en":"Promotes pseudoscience about herbal medicine."}, urls: {"en":"https://skepdic.com/vitacon.html"}},
-        "W UFO Day": {ty: "D", st: {mon: 6, d: 24}, ttls: {"bn":"বিশ্ব ইউএফও দিবস","cs":"Světový den UFO","en":"World UFO Day","eo":"Monda Nifo-Tago","id":"Hari BETA Sedunia","it":"Giornata mondiale degli UFO","ml":"ലോക പറക്കും തളിക ദിനം","pl":"Światowy Dzień UFO","ur":"عالمی یوم خلائی مخلوق","vi":"Ngày UFO Thế giới","zh":"世界幽浮日"}, urls: {"en":"https://skepdic.com/ufos_ets.html"}, notes: {"en":"This observance promotes unjustified beliefs about unidentified flying objects."}},
+        "WUFO Day": {ty: "D", st: {mon: 6, d: 24}, ttls: {"bn":"বিশ্ব ইউএফও দিবস","cs":"Světový den UFO","en":"World UFO Day","eo":"Monda Nifo-Tago","id":"Hari BETA Sedunia","it":"Giornata mondiale degli UFO","ml":"ലോക പറക്കും തളിക ദിനം","pl":"Światowy Dzień UFO","ur":"عالمی یوم خلائی مخلوق","vi":"Ngày UFO Thế giới","zh":"世界幽浮日"}, urls: {"en":"https://skepdic.com/ufos_ets.html"}, notes: {"en":"This observance promotes unjustified beliefs about unidentified flying objects."}},
     }
 }

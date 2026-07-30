@@ -7,9 +7,9 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     fst: {era: 1, y: 1804},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Nu Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, inh: "Nu Year’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
-        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, inh: "Nu Year’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, inh: "NuY’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, inh: "NuY’s Holiday", urls: {"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 27}, ttls: {"en":"Saint Sava’s Day","sr-Cyrl":"Савиндан","sr-Latn":"Savindan"}, urls: {"en":"https://www.officeholidays.com/holidays/serbia/st-savas-day"}, notes: {"en":"Spirituality Day"}},
         {ty: "nD", st: {mon: 2, d: 15}, end: {mon: 2, d: 16}, inh: "Statehood Day", urls: {"en":"https://nationaltoday.com/sovereignty-day-of-serbia/"}, fst: {era: 1, y: 2001}, notes: {"en":"Sovereignty Day"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
