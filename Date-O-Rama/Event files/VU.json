@@ -19,7 +19,7 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 7, d: 24}, urls: {"en":"https://nationaltoday.com/childrens-day-in-vanuatu/"}},
         {inh: "Independence Day", ty: "D", st: {mon: 7, d: 30}, fst: {era: 1, y: 1980}, urls: {"en":"https://nationaltoday.com/vanuatu-independence-day/"}},
         {ty: "D", st: {mon: 7, d: 31, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/vanuatu/vanuatu-independence-day"}, inh: "Independence Day (in lieu)"},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 5}, inh: "Constitution Day", urls: {"en":"https://nationaltoday.com/vanuatu-constitution-day/"}, fst: {era: 1, y: 1979}},
         {ty: "D", st: {mon: 10, d: 6, wkd: [2]}, inh: "Constitution Day (in lieu)", urls: {"en":"https://nationaltoday.com/vanuatu-constitution-day/"}, fst: {era: 1, y: 1979}},
         {ty: "D", st: {mon: 11, d: 29}, inh: "Unity Day", urls: {"en":"https://www.officeholidays.com/holidays/vanuatu/vanuatu-unity-day"}},

@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon", urls: {"en":"https://nationaltoday.com/whit-monday-saint-barthelemy/"}},
         {inh: "NDay", ty: "D", st: {mon: 7, d: 14}},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 9}, inh: "Abolition Day", fst: {era: 1, y: 1847}, urls: {"en":"https://nationaltoday.com/saint-barthelemy-abolition-day/"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 11, d: 11}, urls: {"en":"https://nationaltoday.com/armistice-day-saint-barthelemy/"}, inh: "Armistice Day", fst: {era: 1, y: 1918}},

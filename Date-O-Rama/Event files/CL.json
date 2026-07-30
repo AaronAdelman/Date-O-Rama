@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 6, d: 26, thruD: 28, wkd: [2]}, urls: {"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inh: "Sts Peter and Paul (in lieu)"},
         {ty: "D", st: {mon: 6, d: 30, thruMon: 7, thruD: 2, wkd: [2]}, urls: {"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inh: "Sts Peter and Paul (in lieu)"},
         {ty: "D", st: {mon: 7, d: 16}, inh: "Our Lady of Mount Carmel", fst: {era: 1, y: 2007}},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day", urls: {"en":"https://nationaltoday.com/feast-of-assumption-chile/"}},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption", urls: {"en":"https://nationaltoday.com/feast-of-assumption-chile/"}},
         {ty: "D", st: {mon: 8, d: 20}, ttls: {"en":"Nativity of Liberator Bernardo O’Higgins","he":"יום הולדת של המשחרר ברנרדו או׳היגינס","es":"Nacimiento del Prócer de la Independencia"}, inh: "*BDay*"},
         {ty: "D", st: {mon: 9, d: 18}, inh: "Independence Day", fst: {era: 1, y: 1810}, urls: {"en":"https://www.daysoftheyear.com/days/chiles-independence-day/"}},
         {ty: "D", st: {mon: 9, d: 19}, urls: {"en":"https://nationaltoday.com/day-of-the-glories-of-the-army/"}, ttls: {"en":"Day of the Glories of the Army"}, inh: "Army Day", fst: {era: 1, y: 1819}},

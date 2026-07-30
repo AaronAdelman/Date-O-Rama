@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {inh: "Independence Day", ty: "D", st: {mon: 8, d: 5}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/burkina-faso-independence-day/"}},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 12, d: 11}, fst: {era: 1, y: 1958}, inh: "Proclamation of Independence Day", urls: {"en":"https://nationaltoday.com/burkina-faso-republic-day/"}, notes: {"en":"Burkina Faso Republic Day"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

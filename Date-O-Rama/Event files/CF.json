@@ -18,7 +18,7 @@
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 6, d: 30}, inh: "General Prayer Day", urls: {"en":"https://www.officeholidays.com/holidays/central-african-republic/central-african-republic-general-prayer-day"}},
         {inh: "Independence Day", ty: "D", st: {mon: 8, d: 13}, fst: {era: 1, y: 1960}, urls: {"en":"https://www.officeholidays.com/holidays/central-african-republic/central-african-republic-independence-day"}},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
         {ty: "D", st: {mon: 12, d: 1}, urls: {"en":"https://nationaltoday.com/central-african-republic-republic-day/"}, inh: "Republic Day", fst: {era: 1, y: 1958}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

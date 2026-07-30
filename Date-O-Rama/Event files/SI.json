@@ -17,7 +17,7 @@
         {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {mon: 6, d: 25}, inh: "Statehood Day", urls: {"en":"https://nationaltoday.com/statehood-day/"}, fst: {era: 1, y: 1991}},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 31}, inh: "Reformation Day", urls: {"en":"https://www.officeholidays.com/holidays/slovenia/reformation-day"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 11, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/slovenia/all-saints-day"}, ttls: {"en":"Day of Remembrance of the Dead","sl":"dan spomina na mrtve"}, notes: {"en":"Day of the Dead","sl":"dan mrtvih"}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

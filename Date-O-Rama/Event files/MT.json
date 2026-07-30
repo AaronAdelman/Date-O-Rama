@@ -18,7 +18,7 @@
         {ty: "D", st: {mon: 6, d: 7}, urls: {"en":"https://nationaltoday.com/sette-giugno/"}, ttls: {"en":"Sette Giugno"}, fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 6, d: 29}, inh: "Sts Peter and Paul"},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption Day"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 9, d: 8}, inh: "Victory Day", urls: {"en":"https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, notes: {"en":"Feast of Our Lady of Victories"}},
         {inh: "Independence Day", ty: "D", st: {mon: 9, d: 21}, fst: {era: 1, y: 1964}, urls: {"en":"https://nationaltoday.com/malta-independence-day/"}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},

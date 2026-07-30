@@ -120,7 +120,7 @@
         {ty: "D", st: {mon: 7, d: 9}, ttls: {"en":"Nunavut Day","fr":"Fête du Nunavut","iu":"ᓄᓇᕗᑦ ᐅᓪᓗᖓ"}, fst: {era: 1, y: 2001}, urls: {"en":"https://www.daysoftheyear.com/days/nunavut-day/"}},
         {ty: "D", st: {era: 1, y: 2025, mon: 7, wkd: [4], nth: -1}, inh: "Royal St John’s Regatta"},
         {ty: "D", st: {mon: 8, d: 10}, ttls: {"en":"Prisoners’ Justice Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Prisoners%27_Justice_Day"}, fst: {era: 1, y: 1975}},
-        {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"National Acadian Day"}, urls: {"en":"https://www.daysoftheyear.com/days/acadian-day/"}, fst: {era: 1, y: 1881}},
+        {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"National Acadian Day","fr":"Fête nationale de l’Acadie"}, urls: {"en":"https://www.daysoftheyear.com/days/acadian-day/"}, fst: {era: 1, y: 1881}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Civic Holiday","fr":"Congé civique","id":"Hari Kewarganegaraan","uk":"Громадське свято (Канада)","yue":"公民日"}, fst: {era: 1, y: 1875}, urls: {"en":"https://www.daysoftheyear.com/days/civic-holiday/"}, notes: {"en":"Simcoe Day\nCivic Day"}},
         {ty: "D", st: {mon: 8, wkd: [4], nth: 1}, inh: "Royal St John’s Regatta", fst: {era: 1, y: 1816}, last: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 8, wkd: [4], nth: 1}, inh: "Royal St John’s Regatta", fst: {era: 1, y: 2026}},
