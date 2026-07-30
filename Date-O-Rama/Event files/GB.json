@@ -212,7 +212,7 @@
         {ty: "D", st: {mon: 8, d: 10}, ttls: {"en":"Vlogging Day"}, notes: {"en":"International Vlogging Day"}, urls: {"en":"https://www.daysoftheyear.com/days/vlogging-day/"}, fst: {era: 1, y: 2018}, notes: {"en":"Created by Summer in the City"}},
         {ty: "D", st: {mon: 8, d: 11}, ttls: {"en":"National Bakewell Tart Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-bakewell-tart-day/"}, fst: {era: 1, y: 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {ty: "D", st: {mon: 8, d: 12}, ttls: {"de":"Glorious Twelfth","en":"Glorious Twelfth","fr":"Glorious twelfth"}, urls: {"en":"https://www.daysoftheyear.com/days/glorious-twelfth/"}, fst: {era: 1, y: 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
-        {ty: "D", st: {mon: 8, d: 14}, ttls: {"en":"Falklands Day","he":"יום איי פוקלנד"}, urls: {"en":"https://www.daysoftheyear.com/days/falklands-day/"}, fst: {era: 1, y: 1592}, emoji: "🇫🇰"},
+        {ty: "D", st: {mon: 8, d: 14}, ttls: {"bn":"ফকল্যান্ডস ডে","en":"Falklands Day","es":"Falklands Day","he":"יום איי פוקלנד","zh":"福克蘭日"}, urls: {"en":"https://www.daysoftheyear.com/days/falklands-day/"}, fst: {era: 1, y: 1900}, emoji: "🇫🇰"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "VJ Day", fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 8, d: 19}, inh: "NMoving Day", fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 8, d: 20, thruD: 26, wkd: [5]}, ttls: {"en":"Burger Day","he":"יום ההמבורגר"}, urls: {"en":"https://www.daysoftheyear.com/days/burger-day/"}, notes: {"en":"National Burger Day","he":"יום ההמבורגר הלאומי"}, emoji: "🍔"},
