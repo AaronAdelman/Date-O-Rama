@@ -21,7 +21,7 @@
         {inh: "St Stephen of Hungary", ty: "D", st: {mon: 8, d: 20}, urls: {"en":"https://nationaltoday.com/st-stephens-day/"}, notes: {"en":"State Foundation Day\nNational Day\nConstitution Day","hu":"Az államalapítás ünnepe"}},
         {ty: "D", st: {mon: 10, d: 23}, inh: "Republic Day", notes: {"en":"1956 Revolution Memorial Day"}, urls: {"en":"https://nationaltoday.com/republic-day-hungary/"}, fst: {era: 1, y: 1956}},
         {ty: "D", st: {mon: 10, d: 24, wkd: [6]}, inh: "Republic Day Holiday", notes: {"en":"1956 Revolution Memorial Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/hungary/hungary-republic-day"}, fst: {era: 1, y: 1956}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inh: "Boxing Day"},
         

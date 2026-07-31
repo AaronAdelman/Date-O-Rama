@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/dominican-republic/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 1, d: 21}, ttls: {"en":"Feast of Our Lady of Altagracia","es":"Nuestra Señora de la Altagracia"}, notes: {"en":"Day of the Lady of Altagracia\nOur Lady of High Grace"}, urls: {"en":"https://nationaltoday.com/our-lady-of-altagracia/"}, fst: {era: 1, y: 1924}},
-        {ty: "D", st: {mon: 1, d: 26}, ttls: {"en":"Duarte Day"}, urls: {"en":"https://nationaltoday.com/duarte-day/"}, fst: {era: 1, y: 1813}, inh: "*BDay*", notes: {"en":"Juan Pablo Duarte Day"}},
+        {ty: "D", st: {mon: 1, d: 26}, ttls: {"en":"Duarte Day"}, urls: {"en":"https://nationaltoday.com/duarte-day/"}, fst: {era: 1, y: 1813}, inh: "*BD*", notes: {"en":"Juan Pablo Duarte Day"}},
         {ty: "D", st: {mon: 2, d: 27}, inh: "Independence Day", fst: {era: 1, y: 1844}, urls: {"en":"https://www.daysoftheyear.com/days/dominican-republic-independence-day/"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

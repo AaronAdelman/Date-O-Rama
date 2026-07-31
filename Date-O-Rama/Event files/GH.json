@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", urls: {"en":"https://www.officeholidays.com/holidays/ghana/african-unity-day"}, fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 8, d: 4}, ttls: {"en":"Founders’ Day"}, urls: {"en":"https://nationaltoday.com/founders-day/"}, fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 8, d: 5, wkd: [2]}, ttls: {"en":"Founders’ Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/founders-day/"}, fst: {era: 1, y: 2019}},
-        {ty: "D", st: {mon: 9, d: 21}, ttls: {"en":"Kwame Nkrumah Memorial Day","he":"יום הזיכרון של קוואמה נקרומה"}, inh: "*BDay*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
+        {ty: "D", st: {mon: 9, d: 21}, ttls: {"en":"Kwame Nkrumah Memorial Day","he":"יום הזיכרון של קוואמה נקרומה"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
         {ty: "D", st: {mon: 9, d: 22, wkd: [2, 3]}, inh: "Kwame Nkrumah Memorial Day (in lieu)"},
         {ty: "D", st: {mon: 9, d: 23, wkd: [2]}, inh: "Kwame Nkrumah Memorial Day (in lieu)"},
         {ty: "D", st: {mon: 12, wkd: [6], nth: 1}, inh: "Farmers’ Day", urls: {"en":"https://nationaltoday.com/ghana-farmers-day/"}, fst: {era: 1, y: 1988}},
@@ -36,6 +36,6 @@
         {ty: "D", st: {mon: 2, d: 14}, inh: "NChocD", urls: {"en":"https://en.wikipedia.org/wiki/Chocolate_Day_(Ghana)"}, fst: {era: 1, y: 2005}},
    ],
     tpls: {
-        "Kwame Nkrumah Memorial Day (in lieu)": {ty: "D", st: {mon: 9, d: 22, wkd: [2, 3]}, ttls: {"en":"Kwame Nkrumah Memorial Day (in lieu)","he":"יום הזיכרון של קוואמה נקרומה (במקומו)"}, inh: "*BDay*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
+        "Kwame Nkrumah Memorial Day (in lieu)": {ty: "D", st: {mon: 9, d: 22, wkd: [2, 3]}, ttls: {"en":"Kwame Nkrumah Memorial Day (in lieu)","he":"יום הזיכרון של קוואמה נקרומה (במקומו)"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
     }
 }

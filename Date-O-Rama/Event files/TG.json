@@ -17,7 +17,7 @@
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {inh: "Martyrs’ Day", ty: "D", st: {mon: 6, d: 21}, urls: {"en":"https://nationaltoday.com/martyrs-day-in-togo/"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
         {inh: "Liberation Day", ty: "D", st: {mon: 1, d: 13}, fst: {era: 1, y: 1963}},

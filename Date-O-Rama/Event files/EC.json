@@ -35,7 +35,7 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 7, d: 25}, inh: "Navy Day"},
         {ty: "D", st: {mon: 2, d: 27}, inh: "Army Day"},
-        {ty: "D", st: {mon: 10, d: 27}, inh: "Air Force Day"},
+        {ty: "D", st: {mon: 10, d: 27}, inh: "AirForceD"},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 7, d: 14}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 6, d: 21}, inh: "Andean NuY", fst: {era: 1, y: 2009}},

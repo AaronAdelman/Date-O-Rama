@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 6, d: 2, thruD: 8, wkd: [2]}, inh: "Emancipation Day", fst: {era: 1, y: 1970}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-emancipation-day"}},
-        {ttls: {"en":"Official Birthday of His Majesty King Tupou VI"}, ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}, inh: "*BDay*", notes: {"en":"Official Birthday of HM King Tupou VI"}},
+        {ttls: {"en":"Official Birthday of His Majesty King Tupou VI"}, ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}, inh: "*BD*", notes: {"en":"Official Birthday of HM King Tupou VI"}},
         {inh: "Public holiday", ty: "D", st: {mon: 7, d: 5, wkd: [2]}, urls: {"en":"https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 9, d: 17}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}, ttls: {"en":"Birthday of HRH Crown Prince"}},
         {ty: "D", st: {mon: 9, d: 18, wkd: [2]}, ttls: {"en":"Birthday of HRH Crown Prince (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/tonga/tonga-birthday-of-crown-prince"}},

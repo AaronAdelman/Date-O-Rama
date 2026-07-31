@@ -35,7 +35,7 @@
         
         {ty: "D", st: {mon: 12, d: 26}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
-        {ty: "D", st: {mon: 10, d: 16}, ttls: {"en":"Aviation and Air Force Day"}, inh: "Air Force Day"},
+        {ty: "D", st: {mon: 10, d: 16}, ttls: {"en":"Aviation and Air Force Day"}, inh: "AirForceD"},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 2}, inh: "Navy Day"},
         {ty: "D", st: {mon: 2, d: 1}, ttls: {"en":"Day of Remembrance and Respect to Victims of the Communist Regime"}, urls: {"en":"https://nationaltoday.com/day-of-remembrance-and-respect-to-victims-of-the-communist-regime/"}},
         {ty: "D", st: {mon: 7, d: 5}, inh: "Sts Cyril and Methodius"},

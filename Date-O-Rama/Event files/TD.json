@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 8, d: 11}, inh: "Independence Day", fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/chad-independence-day/"}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 11, d: 28}, inh: "Republic Day", fst: {era: 1, y: 1958}, urls: {"en":"https://www.officeholidays.com/holidays/chad/chad-republic-day"}},
         {ty: "D", st: {mon: 12, d: 1}, ttls: {"da":"Friheds- og demokratidagen","en":"Freedom and Democracy Day"}, urls: {"en":"https://www.daysoftheyear.com/days/freedom-and-democracy-day-in-chad/"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

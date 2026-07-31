@@ -20,7 +20,7 @@
         {ty: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 2}, urls: {"en":"https://nationaltoday.com/tuvalu-independence-day/"}, ttls: {"en":"Tuvalu Day"}, inh: "Independence Day", fst: {era: 1, y: 1978}},
         {ty: "D", st: {mon: 10, d: 3, wkd: [2, 3]}, inh: "Tuvalu Day Holiday", fst: {era: 1, y: 1978}},
         {ty: "D", st: {mon: 10, d: 4, wkd: [3]}, inh: "Tuvalu Day Holiday", fst: {era: 1, y: 1978}},
-        {ty: "D", st: {mon: 11, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/heir-to-the-throne-day"}, ttls: {"en":"Heir to the Throne Day"}, inh: "*BDay*"},
+        {ty: "D", st: {mon: 11, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/tuvalu/heir-to-the-throne-day"}, ttls: {"en":"Heir to the Throne Day"}, inh: "*BD*"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         

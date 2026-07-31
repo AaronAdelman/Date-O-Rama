@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
     evts: [
         {ty: "D", st: {mon: 2, d: 21}, ttls: {"en":"Language Martyrs’ Day","bn":"ভাষা আন্দোলন দিবস"}, notes: {"en":"State Language Day\nLanguage Movement Day","bn":"শহীদ দিবস"}, inh: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/language-martyrs-day/"}, fst: {era: 1, y: 1955}},
-        {ty: "D", st: {mon: 3, d: 17}, ttls: {"en":"Sheikh Mujibur Rahman’s Birthday"}, urls: {"en":"https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, inh: "*BDay*", fst: {era: 1, y: 1920}},
+        {ty: "D", st: {mon: 3, d: 17}, ttls: {"en":"Sheikh Mujibur Rahman’s Birthday"}, urls: {"en":"https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, inh: "*BD*", fst: {era: 1, y: 1920}},
         {ty: "D", st: {mon: 3, d: 17}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 3, d: 26}, inh: "Independence Day", fst: {era: 1, y: 1971}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)"}, urls: {"en":"https://nationaltoday.com/independence-day-of-bangladesh/"}},
         {ty: "D", st: {mon: 4, d: 14}, ttls: {"en":"Bengali New Year (Pôhela Boishakh)","bn":"পহেলা বৈশাখ"}},

@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 10, d: 14}, inh: "Mother’s Day", fst: {era: 1, y: 1996}},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
-        {ty: "D", st: {mon: 8, wkd: [1], nth: 3}, inh: "Air Force Day"},
+        {ty: "D", st: {mon: 8, wkd: [1], nth: 3}, inh: "AirForceD"},
         {ty: "D", st: {mon: 7, d: 28}, inh: "Baptism Day of Kyivan Rus"},
         {ty: "D", st: {mon: 5, d: 28}, inh: "Border Guards Day", fst: {era: 1, y: 1919}},
         {ty: "D", st: {mon: 6, d: 22}, inh: "D of Remembrance and Sorrow", fst: {era: 1, y: 1996}},

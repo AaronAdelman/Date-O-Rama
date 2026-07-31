@@ -41,7 +41,7 @@
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 3, d: 17}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "IChildren’s Day"},
-        {ty: "D", st: {mon: 2, d: 14}, inh: "Air Force Day"},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "AirForceD"},
         
         {ty: "D", st: {mon: 1, d: 30}, ttls: {"en":"Day of Azerbaijani Customs"}},
         {ty: "D", st: {mon: 2, d: 2}, inh: "Youth Day"},

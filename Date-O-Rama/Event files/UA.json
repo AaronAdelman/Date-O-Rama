@@ -127,7 +127,7 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day", ttls: {"en":"Day of Children’s Protection","uk":"День захисту дітей"}, fst: {era: 1, y: 1998}},
         {ty: "D", st: {mon: 1, d: 22}, inh: "Unity Day", fst: {era: 1, y: 1971}, ttls: {"en":"Day of Unity"}},
-        {ty: "D", st: {mon: 8, d: 6}, inh: "Air Force Day", fst: {era: 1, y: 2007}},
+        {ty: "D", st: {mon: 8, d: 6}, inh: "AirForceD", fst: {era: 1, y: 2007}},
         {ty: "D", st: {mon: 6, d: 9}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 1, d: 25}, inh: "Tatiana Day"},
         {ty: "span", st: {era: 1, y: 2008, mon: 3, d: 29, h: 20, min: 0, s: 0, ns: 0}, end: {era: 1, y: 2008, mon: 3, d: 29, h: 21, min: 0, s: 0, ns: 0}, inh: "Earth Hour"},

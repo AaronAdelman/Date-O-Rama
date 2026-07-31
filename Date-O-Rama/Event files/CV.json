@@ -16,7 +16,7 @@
         {inh: "Youth Day", ty: "D", st: {mon: 6, d: 1}, ttls: {"en":"Youth Day","pt":"Dia Mundial da Criança"}},
         {inh: "Independence Day", ty: "D", st: {mon: 7, d: 5}, fst: {era: 1, y: 1975}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {inh: "Mother’s Day", ty: "D", st: {mon: 5, wkd: [1], nth: 1}},

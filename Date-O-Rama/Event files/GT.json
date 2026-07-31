@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/guatemala-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 12}, inh: "D of the Races", fst: {era: 1, y: 1917}},
         {inh: "Revolution Day", ty: "D", st: {mon: 10, d: 20}, fst: {era: 1, y: 1944}, urls: {"en":"https://nationaltoday.com/revolution-day-guatemala/"}},
-        {ty: "D", st: {mon: 11, d: 1}, inh: "All Sts Day"},
+        {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},

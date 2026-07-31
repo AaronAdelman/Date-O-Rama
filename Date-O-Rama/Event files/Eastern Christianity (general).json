@@ -42,7 +42,7 @@
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day", urls: {"en":"https://nationaltoday.com/orthodox-ascension-day/"}},
         {ttls: {"en":"The Fathers of the First Ecumenical Council"}, ty: "D", st: {misc: "E", offsetD: 42}},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost", urls: {"en":"https://nationaltoday.com/orthodox-pentecost-sunday/"}},
-        {inh: "All Sts Day", ty: "D", st: {misc: "E", offsetD: 56}},
+        {inh: "AllStsD", ty: "D", st: {misc: "E", offsetD: 56}},
         
         {ty: "D", st: {mon: 9, d: 8}, inh: "Nativity of Mary"},
         {ty: "D", st: {mon: 9, d: 14}, inh: "Exaltation of the Holy Cross"},
