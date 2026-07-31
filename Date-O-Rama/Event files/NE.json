@@ -21,6 +21,6 @@
         
         {ty: "D", st: {mon: 5, d: 13}, inh: "Women’s Day", ttls: {"en":"National Day of Nigerian Women","fr":"Journée nationale de la femme nigérienne"}, fst: {era: 1, y: 1993}},
         {ty: "nD", st: {mon: 12, d: 27}, end: {mon: 12, d: 29}, ttls: {"fr":"Festival de l’Aïr"}},
-        {ty: "D", st: {mon: 9, d: 15}, ttls: {"fr":"Fête de la girafe"}, emoji: "🦒"},
+        {ty: "D", st: {mon: 9, d: 15}, ttls: {"fr":"Fête de la girafe"}, mog: "🦒"},
     ]
 }

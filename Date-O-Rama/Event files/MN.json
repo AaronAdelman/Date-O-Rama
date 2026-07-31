@@ -18,18 +18,18 @@
         
         {inh: "Constitution Day", ty: "D", st: {mon: 1, d: 13}},
         {inh: "Patriots’ Day", ty: "D", st: {mon: 3, d: 1}},
-        {ttls: {"en":"Mongolian Military Day"}, ty: "D", st: {mon: 3, d: 18}, emoji: "🪖🎖️"},
+        {ttls: {"en":"Mongolian Military Day"}, ty: "D", st: {mon: 3, d: 18}, mog: "🪖🎖️"},
         {inh: "Health Day", ty: "D", st: {mon: 4, d: 7}},
         {ty: "D", st: {mon: 4, d: 26}, inh: "WIntellectual Property Day", fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 5, d: 15}, inh: "Family Day"},
         {inh: "Flag Day", ty: "D", st: {mon: 7, d: 10}, ttls: {"en":"Political Flag Day"}, urls: {"en":"https://nationaltoday.com/political-flag-day/"}, fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 8, d: 25}, inh: "Youth Day"},
-        {ttls: {"en":"New Harvest Days"}, ty: "nD", st: {mon: 9, d: 5}, end: {mon: 10, d: 20}, emoji: "🌾"},
+        {ttls: {"en":"New Harvest Days"}, ty: "nD", st: {mon: 9, d: 5}, end: {mon: 10, d: 20}, mog: "🌾"},
         {ttls: {"en":"Repression Victims’ Day"}, ty: "D", st: {mon: 9, d: 10}},
-        {ttls: {"en":"Elders’ Day"}, ty: "D", st: {mon: 10, d: 1}, emoji: "👴👵"},
+        {ttls: {"en":"Elders’ Day"}, ty: "D", st: {mon: 10, d: 1}, mog: "👴👵"},
         {ty: "D", st: {mon: 10, d: 29}, inh: "Capital City Day", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 11, d: 7}, inh: "Oct Revolution Day"},
-        {ttls: {"en":"Democracy and Human Rights Day"}, ty: "D", st: {mon: 12, d: 10}, emoji: "🗳️"},
+        {ttls: {"en":"Democracy and Human Rights Day"}, ty: "D", st: {mon: 12, d: 10}, mog: "🗳️"},
 
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
     ]

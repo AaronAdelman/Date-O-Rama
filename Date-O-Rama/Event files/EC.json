@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 12, d: 6}, urls: {"en":"https://nationaltoday.com/foundation-of-quito-day/"}, ttls: {"en":"Foundation of Quito Day","es":"Primer Grito de Independencia"}, fst: {era: 1, y: 1534}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"Galapagos Day","es":"Día de la Provincia de Galápagos"}, notes: {"en":"Amazon and Galapagos Day\nOrient Day","es":"Día del Oriente)"}, emoji: "🐢"},
+        {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"Galapagos Day","es":"Día de la Provincia de Galápagos"}, notes: {"en":"Amazon and Galapagos Day\nOrient Day","es":"Día del Oriente)"}, mog: "🐢"},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 29}, inh: "Engineer’s Day"},

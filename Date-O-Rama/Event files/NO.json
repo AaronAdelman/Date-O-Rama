@@ -32,7 +32,7 @@
         {ty: "D", st: {mon: 2, d: 6}, ttls: {"da":"Samefolkets dag","de":"Nationaltag der Samen","en":"Sámi National Day","eo":"Samea nacia tago","fi":"Saamelaisten kansallispäivä","id":"Hari Nasional Sami","it":"Giorno nazionale dei Sami","ko":"사미 국경일","ms":"Hari Kebangsaan Sámi","nb":"Samenes nasjonaldag","nn":"Den samiske nasjonaldagen","ru":"Международный день саамов","se":"Sámi álbmotbeaivi","sh":"Nacionalni dan Saamija","smn":"Säämi aalmugpeivi","sv":"Samernas nationaldag","tl":"Pambansang Araw ng Sami","uk":"Міжнародний день саамів"}, notes: {"en":"Sami National Day"}, urls: {"en":"https://www.daysoftheyear.com/days/sami-national-day/"}, fst: {era: 1, y: 1993}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
         {ty: "D", st: {mon: 2, d: 21}, urls: {"en":"https://nationaltoday.com/king-harald-vs-day/"}, ttls: {"en":"King Harald V’s Day"}, fst: {era: 1, y: 1999}},
-        {ty: "D", st: {mon: 6, d: 7}, urls: {"en":"https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"}, ttls: {"en":"Dissolution of Union between Norway and Sweden"}, emoji: "🇳🇴🇸🇪", fst: {era: 1, y: 1905}},
+        {ty: "D", st: {mon: 6, d: 7}, urls: {"en":"https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"}, ttls: {"en":"Dissolution of Union between Norway and Sweden"}, mog: "🇳🇴🇸🇪", fst: {era: 1, y: 1905}},
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
     ]

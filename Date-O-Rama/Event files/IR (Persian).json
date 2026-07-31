@@ -15,8 +15,8 @@
         {ty: "D", st: {mon: 3, d: 14}, ttls: {"en":"Death of Khomeini","fa":"رحلت آیت الله خمینی"}, inh: "*DA*", notes: {"en":"Demise of Imam Khomeini"}},
         {ty: "D", st: {mon: 3, d: 15}, ttls: {"en":"Revolt of Khordad 15","fa":"قیام ۱۵ خرداد"}, urls: {"en":"https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en":"Khordad National Uprising"}},
 
-        {ty: "D", st: {mon: 9, d: 16}, ttls: {"en":"Student Day","fa":"روز دانشجو","hy":"Ուսանողի տոն","ru":"День студента в Иране"}, urls: {"en":"https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, fst: {era: 0, y: 1332}, emoji: "👨‍🎓👩‍🎓"},
-        {ty: "D", st: {mon: 8, d: 13}, ttls: {"en":"Pupil Day","fa":"روز دانش‌آموز"}, urls: {"en":"https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, fst: {era: 0, y: 1357}, emoji: "👨‍🎓👩‍🎓"},
+        {ty: "D", st: {mon: 9, d: 16}, ttls: {"en":"Student Day","fa":"روز دانشجو","hy":"Ուսանողի տոն","ru":"День студента в Иране"}, urls: {"en":"https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, fst: {era: 0, y: 1332}, mog: "👨‍🎓👩‍🎓"},
+        {ty: "D", st: {mon: 8, d: 13}, ttls: {"en":"Pupil Day","fa":"روز دانش‌آموز"}, urls: {"en":"https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, fst: {era: 0, y: 1357}, mog: "👨‍🎓👩‍🎓"},
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 8}},
         {ty: "D", st: {mon: 8, d: 5}, ttls: {"en":"National Saffron Day"}, fst: {era: 0, y: 1403}},
     ]

@@ -3,7 +3,7 @@
     defLocale: "en",
     cal: "gre",
     color: {red: 0.10, green: 0.91, blue: 0.81},
-    emoji: "📛",
+    mog: "📛",
     fst: {era: 1, y: 2013},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"National Shepherd Day"}},

@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Mid-Autumn Festival"},
 
         {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"},
-        {ty: "D", st: {mon: 2, d: 2}, ttls: {"en":"Zhonge Festival","zh_CN":"中和节"}, urls: {"en":"https://nationaltoday.com/zhonge-festival/"}, emoji: "🐲"},
+        {ty: "D", st: {mon: 2, d: 2}, ttls: {"en":"Zhonge Festival","zh_CN":"中和节"}, urls: {"en":"https://nationaltoday.com/zhonge-festival/"}, mog: "🐲"},
 
         {ty: "D", st: {mon: 7, d: 7}, inh: "Qixi Festival"},
         {ty: "D", st: {mon: 7, d: 15}, inh: "Ghost Festival"},
@@ -34,7 +34,7 @@
         {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Bayueba","zh_CN":"八月八"}},
         {ty: "nD", st: {mon: 9, d: 10}, end: {mon: 9, d: 11}, ttls: {"en":"Ā Lù Wō Luó jié","zh_CN":"阿露窝罗节"}},
         {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 25}, ttls: {"en":"Kū Zhā Zhā jié","zh_CN":"矻扎扎节"}},
-        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 28}, ttls: {"en":"Fire Festival","zh_CN":"火把节"}, emoji: "🔥"},
+        {ty: "nD", st: {mon: 6, d: 24}, end: {mon: 6, d: 28}, ttls: {"en":"Fire Festival","zh_CN":"火把节"}, mog: "🔥"},
         {ty: "nD", st: {mon: 1, d: 15}, end: {mon: 1, d: 16}, ttls: {"en":"Manau Festival","zh_CN":"目瑙纵歌节"}},
         {ty: "nD", st: {mon: 5, d: 5}, end: {mon: 5, d: 7}, ttls: {"en":"Nào Dōuyáng","zh_CN":"闹兜阳"}},
         {ty: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 5}, ttls: {"en":"Qiang New Year","zh_CN":"羌历年"}},

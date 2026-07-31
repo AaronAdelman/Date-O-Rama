@@ -4,7 +4,7 @@
     defLocale: "en",
     cal: "gre",
     color: {name: "teal"},
-    emoji: "🐈‍⬛",
+    mog: "🐈‍⬛",
     urls: {"en":"https://wellcat.com/pages/holidays"},
     fst: {era: 1, y: 1996},
     evts: [

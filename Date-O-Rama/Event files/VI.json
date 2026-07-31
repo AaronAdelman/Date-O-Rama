@@ -25,8 +25,8 @@
         {ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/usa-independence-day"}, inh: "Independence Day"},
         {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/labor-day"}, inh: "Labour Day"},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, inh: "Columbus Day", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/columbus-day"}, fst: {era: 1, y: 1964}},
-        {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, ttls: {"en":"Virgin Islands–Puerto Rico Friendship Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Virgin_Islands-Puerto_Rico_Friendship_Day"}, emoji: "🇻🇮🇵🇷", fst: {era: 1, y: 1964}},
-        {ty: "D", st: {mon: 11, d: 1}, ttls: {"en":"D. Hamilton Jackson Day"}, notes: {"en":"Liberty Day"}, emoji: "🗽", urls: {"en":"https://www.daysoftheyear.com/days/d-hamilton-jackson-day/"}, fst: {era: 1, y: 1915}},
+        {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, ttls: {"en":"Virgin Islands–Puerto Rico Friendship Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Virgin_Islands-Puerto_Rico_Friendship_Day"}, mog: "🇻🇮🇵🇷", fst: {era: 1, y: 1964}},
+        {ty: "D", st: {mon: 11, d: 1}, ttls: {"en":"D. Hamilton Jackson Day"}, notes: {"en":"Liberty Day"}, mog: "🗽", urls: {"en":"https://www.daysoftheyear.com/days/d-hamilton-jackson-day/"}, fst: {era: 1, y: 1915}},
         {ty: "D", st: {mon: 11, d: 10, wkd: [6]}, inh: "Veterans Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/veterans-day"}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Veterans Day", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/veterans-day"}},
         {ty: "D", st: {mon: 11, wkd: [5], nth: 4}, inh: "Thanksgiving", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/thanksgiving"}},
@@ -36,6 +36,6 @@
 
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {mon: 7, wkd: [2], nth: 4}, ttls: {"en":"Hurricane Supplication Day"}},
-        {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Hurricane Thanksgiving"}, emoji: "🦃🌀"},
+        {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Hurricane Thanksgiving"}, mog: "🦃🌀"},
     ]
 }

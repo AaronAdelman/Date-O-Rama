@@ -22,11 +22,11 @@
         
         {ty: "D", st: {mon: 1, d: 9}, ttls: {"en":"Vietnamese Students’ Day","vi":"Ngày Học sinh - Sinh viên Việt Nam"}, fst: {era: 1, y: 1950}},
         {ty: "D", st: {mon: 2, d: 3}, ttls: {"en":"Communist Party of Vietnam Foundation Anniversary","vi":"Ngày thành lập Đảng"}, fst: {era: 1, y: 1930}},
-        {ty: "D", st: {mon: 2, d: 27}, ttls: {"en":"Vietnamese Physicians’ Day","vi":"Ngày Thầy thuốc Việt Nam"}, fst: {era: 1, y: 1985}, emoji: "👨‍⚕️👩‍⚕️"},
+        {ty: "D", st: {mon: 2, d: 27}, ttls: {"en":"Vietnamese Physicians’ Day","vi":"Ngày Thầy thuốc Việt Nam"}, fst: {era: 1, y: 1985}, mog: "👨‍⚕️👩‍⚕️"},
         {ty: "D", st: {mon: 3, d: 8},
             inh: "IWD", fst: {era: 1, y: 1930}},
         {ty: "D", st: {mon: 3, d: 26}, ttls: {"en":"Ho Chi Minh Communist Youth Union Foundation Day","vi":"Ngày Thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh"}},
-        {ty: "D", st: {mon: 4, d: 21}, ttls: {"en":"Vietnam Book Day","vi":"Ngày Sách Việt Nam"}, fst: {era: 1, y: 2014}, emoji: "📕"},
+        {ty: "D", st: {mon: 4, d: 21}, ttls: {"en":"Vietnam Book Day","vi":"Ngày Sách Việt Nam"}, fst: {era: 1, y: 2014}, mog: "📕"},
         {ty: "D", st: {mon: 4, d: 27}, ttls: {"en":"Vietnamese Architect’s Day","vi":"Ngày kiến trúc sư Việt Nam"}, fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 5, d: 7}, ttls: {"en":"Dien Bien Phu Victory Day","vi":"Ngày Chiến thắng Điện Biện Phủ"}, fst: {era: 1, y: 1954}},
         {ty: "D", st: {mon: 5, d: 9}, ttls: {"en":"Victory over Fascism Day","vi":"Ngày Chiến thắng Phát xít"}, inh: "Victory Day (May 9)"},

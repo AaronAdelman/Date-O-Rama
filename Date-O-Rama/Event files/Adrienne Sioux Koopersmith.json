@@ -8,14 +8,14 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 6}, inh: "NSmith Day", fst: {era: 1, y: 1994}},
         
-        {ty: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inh: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}, subEvts: [
-            {ty: "D", st: {mon: 1, d: 11}, inh: "Thank You Day", notes: {"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, emoji: "🖋", fst: {era: 1, y: 1994}},
+        {ty: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inh: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog: "🖋", fst: {era: 1, y: 1994}, subEvts: [
+            {ty: "D", st: {mon: 1, d: 11}, inh: "Thank You Day", notes: {"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog: "🖋", fst: {era: 1, y: 1994}},
         ]},
         
-        {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"National Lost Penny Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst: {era: 1, y: 1995}, emoji: "🪙", notes: {"en":"Created by Adrienne Sioux Koopersmith"}},
+        {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"National Lost Penny Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst: {era: 1, y: 1995}, mog: "🪙", notes: {"en":"Created by Adrienne Sioux Koopersmith"}},
         
         {ty: "D", st: {mon: 2, d: 27}, ttls: {"en":"No Brainer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/no-brainer-day/"}, fst: {era: 1, y: 1996}},
-        {ty: "D", st: {mon: 3, d: 4}, ttls: {"en":"National Hug a G.I. Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst: {era: 1, y: 1996}, emoji: "🫂"},
+        {ty: "D", st: {mon: 3, d: 4}, ttls: {"en":"National Hug a G.I. Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst: {era: 1, y: 1996}, mog: "🫂"},
         {ty: "D", st: {mon: 6, d: 18}, inh: "NSplurge Day", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 2, d: 6}, ttls: {"en":"Pay a Compliment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 7, d: 14}, ttls: {"en":"National Pandemonium Day"}},
@@ -35,6 +35,6 @@
         {ty: "D", st: {mon: 11, d: 2, thruD: 8, wkd: [3]}, inh: "Skeptics Day International", fst: {era: 1, y: 1997}},
     ],
     tpls: {
-        "Skeptics Day International": {ty: "D", st: {wkd: [6], d: 13, mon: 1, yLens: [365]}, ttls: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, emoji: "🫤"},
+        "Skeptics Day International": {ty: "D", st: {wkd: [6], d: 13, mon: 1, yLens: [365]}, ttls: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, notes: {"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, mog: "🫤"},
     }
 }

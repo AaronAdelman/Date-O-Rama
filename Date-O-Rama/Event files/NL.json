@@ -25,12 +25,12 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         
-        {ty: "D", st: {mon: 12, d: 5}, ttls: {"en":"Saint Nicholas’s Eve","nl":"Sinterklaasavond"}, emoji: "🎅", notes: {"en":"Pakjesavond"}},
+        {ty: "D", st: {mon: 12, d: 5}, ttls: {"en":"Saint Nicholas’s Eve","nl":"Sinterklaasavond"}, mog: "🎅", notes: {"en":"Pakjesavond"}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Carnival (day 1)",},
         {inh: "Carnival (day 2)", ty: "D", st: {misc: "E", offsetD: -48}},
         {inh: "Carnival (day 3)", ty: "D", st: {misc: "E", offsetD: -47}},
         
-        {ttls: {"en":"Queen’s Day","he":"יום המלכה","nl":"Koninginnedag"}, ty: "D", st: {mon: 4, d: 30}, emoji: "👸", urls: {"en":"https://nationaltoday.com/queens-day/"}},
+        {ttls: {"en":"Queen’s Day","he":"יום המלכה","nl":"Koninginnedag"}, ty: "D", st: {mon: 4, d: 30}, mog: "👸", urls: {"en":"https://nationaltoday.com/queens-day/"}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 3, wkd: [4], nth: 3}, inh: "Engineer’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 9, d: 25}, locs: {"en":"Oosterhout"}},
@@ -43,7 +43,7 @@
         {ty: "D", st: {mon: 6, d: 4}, inh: "Grandparents’ Day"},
         {ty: "D", st: {mon: 3, d: 27}, ttls: {"en":"Bitterballen Day","nl":"Dag van de Bitterbal"}, notes: {"nl":"Bitterballendag\nNationale Bitterballendag"}, urls: {"en":"https://www.daysoftheyear.com/days/bitterballen-day/"}, fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 1, wkd: [1], nth: -1}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 1957}, ttls: {"en":"National Holocaust Remembrance","nl":"Nationale Holocaust Herdenking"}, notes: {"en":"Auschwitz Remembrance","nl":"Auschwitzherdenking"}, urls: {"en":"https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
-        {ty: "D", st: {mon: 6, d: 16}, ttls: {"en":"No Orange Clothes Day"}, urls: {"en":"https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, fst: {era: 1, y: 1784}, emoji: "🟠"},
+        {ty: "D", st: {mon: 6, d: 16}, ttls: {"en":"No Orange Clothes Day"}, urls: {"en":"https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, fst: {era: 1, y: 1784}, mog: "🟠"},
         {ty: "D", st: {mon: 10, d: 11}, inh: "NCOD", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 12, wkd: [6], nth: 2}, ttls: {"en":"Purple Friday","nl":"Paarse Vrijdag"}, fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 12, d: 15, wkd: [2, 3, 4, 5, 6, 7]}, inh: "Koninkrijksdag", fst: {era: 1, y: 2005}},

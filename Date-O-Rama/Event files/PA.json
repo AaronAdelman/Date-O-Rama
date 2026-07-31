@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/panama/labour-day"}, inh: "Labour Day"},
         {ty: "D", st: {mon: 11, d: 3}, urls: {"en":"https://nationaltoday.com/separation-day/"}, ttls: {"en":"Separation Day"}, inh: "NDay", fst: {era: 1, y: 1903}},
         {ty: "D", st: {mon: 11, d: 4}, inh: "Flag Day", urls: {"en":"https://www.daysoftheyear.com/days/flag-day-in-panama/"}},
-        {ty: "D", st: {mon: 11, d: 5}, urls: {"en":"https://nationaltoday.com/colon-day/"}, ttls: {"en":"Colón Day"}, fst: {era: 1, y: 1903}, emoji: "🏙️"},
+        {ty: "D", st: {mon: 11, d: 5}, urls: {"en":"https://nationaltoday.com/colon-day/"}, ttls: {"en":"Colón Day"}, fst: {era: 1, y: 1903}, mog: "🏙️"},
         {ty: "D", st: {mon: 11, d: 6}, urls: {"en":"https://www.officeholidays.com/holidays/panama/colon-day"}, ttls: {"en":"Colon Day (in lieu)"}},
         {ty: "D", st: {mon: 11, d: 10}, urls: {"en":"https://www.officeholidays.com/holidays/panama/los-santos-uprising-day"}, ttls: {"en":"Los Santos Uprising Day"}},
         {ty: "D", st: {mon: 11, d: 11, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/panama/los-santos-uprising-day"}, ttls: {"en":"Los Santos Uprising Day (in lieu)"}},
@@ -30,8 +30,8 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 1, d: 26}, inh: "Engineer’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 7, wkd: [1], nth: 3}},
-        {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"Foundation of Old Panama City"}, urls: {"en":"https://nationaltoday.com/foundation-of-old-panama-city/"}, fst: {era: 1, y: 1519}, emoji: "🏙️"},
+        {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"Foundation of Old Panama City"}, urls: {"en":"https://nationaltoday.com/foundation-of-old-panama-city/"}, fst: {era: 1, y: 1519}, mog: "🏙️"},
         {ty: "D", st: {mon: 11, d: 10}, urls: {"en":"https://nationaltoday.com/day-of-the-primer-grito-de-independencia/"}, ttls: {"en":"Day of the “Primer Grito de Independencia”"}},
-        {ty: "D", st: {mon: 8, d: 14}, ttls: {"en":"Panamanian Golden Frog National Day"}, emoji: "🐸", urls: {"en":"https://www.amphibians.org/news/join-us-in-celebrating-the-panamanian-golden-frog-national-day/"}, fst: {era: 1, y: 2014}},
+        {ty: "D", st: {mon: 8, d: 14}, ttls: {"en":"Panamanian Golden Frog National Day"}, mog: "🐸", urls: {"en":"https://www.amphibians.org/news/join-us-in-celebrating-the-panamanian-golden-frog-national-day/"}, fst: {era: 1, y: 2014}},
     ]
 }

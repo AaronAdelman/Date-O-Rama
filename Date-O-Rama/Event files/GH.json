@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
 
-        {ty: "D", st: {mon: 7, d: 1}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, notes: {"en":"Senior Citizens’ Day"}, fst: {era: 1, y: 1960}, emoji: "👴👵"},
+        {ty: "D", st: {mon: 7, d: 1}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, notes: {"en":"Senior Citizens’ Day"}, fst: {era: 1, y: 1960}, mog: "👴👵"},
         {ty: "D", st: {mon: 7, d: 2, thruD: 3, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, fst: {era: 1, y: 1960}},
         {ty: "D", st: {mon: 7, d: 4, wkd: [6]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, fst: {era: 1, y: 1960}},
 

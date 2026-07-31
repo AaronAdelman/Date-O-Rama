@@ -7,7 +7,7 @@
     evts: [
         {ty: "D", st: {mon: 9, d: 10}, ttls: {"en":"National Swap Ideas Day"}, urls: {"en":"https://www.daysoftheyear.com/days/swap-ideas-day/"}, notes: {"en":"Swap Ideas Day\nCreated by Robert Birch"}, fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 5, d: 3}, ttls: {"en":"National Lumpy Rug Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lumpy-rug-day/"}, notes: {"en":"Created by Robert L. Birch of Puns Corps"}},
-        {ty: "D", st: {mon: 1, d: 4}, ttls: {"en":"National Trivia Day","he":"יום הטריוויה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/trivia-day/"}, emoji: "🧠", fst: {era: 1, y: 1980}, notes: {"en":"Created by Robert L Birch of Puns Corps"}},
-        {ty: "D", st: {mon: 5, d: 30}, ttls: {"en":"Loomis Day"}, urls: {"en":"https://www.daysoftheyear.com/days/loomis-day/"}, emoji: "📡", notes: {"en":"Created by Robert L. Birch of Puns Corp"}},
+        {ty: "D", st: {mon: 1, d: 4}, ttls: {"en":"National Trivia Day","he":"יום הטריוויה הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/trivia-day/"}, mog: "🧠", fst: {era: 1, y: 1980}, notes: {"en":"Created by Robert L Birch of Puns Corps"}},
+        {ty: "D", st: {mon: 5, d: 30}, ttls: {"en":"Loomis Day"}, urls: {"en":"https://www.daysoftheyear.com/days/loomis-day/"}, mog: "📡", notes: {"en":"Created by Robert L. Birch of Puns Corp"}},
     ]
 }

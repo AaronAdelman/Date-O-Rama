@@ -8,7 +8,7 @@
         {ttls: {"en":"The Publican and the Pharisee"}, ty: "D", st: {misc: "E", offsetD: -70}},
         {ttls: {"en":"The Prodigal Son"}, ty: "D", st: {misc: "E", offsetD: -63}},
         {ttls: {"en":"The Last Judgment"}, notes: {"en":"Meat-Fare Sunday"}, ty: "D", st: {misc: "E", offsetD: -56}, urls: {"en":"https://nationaltoday.com/orthodox-meatfare-sunday/"}},
-        {ttls: {"en":"Sunday of Forgiveness"}, notes: {"en":"Cheese-Fare Sunday"}, ty: "D", st: {misc: "E", offsetD: -49}, urls: {"en":"https://nationaltoday.com/orthodox-forgiveness-sunday/"}, emoji: "🧀"},
+        {ttls: {"en":"Sunday of Forgiveness"}, notes: {"en":"Cheese-Fare Sunday"}, ty: "D", st: {misc: "E", offsetD: -49}, urls: {"en":"https://nationaltoday.com/orthodox-forgiveness-sunday/"}, mog: "🧀"},
         {inh: "Clean Mon", ty: "D", st: {misc: "E", offsetD: -48}},
         {ttls: {"en":"Theodore Saturday"}, notes: {"en":"Lent (day 4)"}, ty: "D", st: {misc: "E", offsetD: -43}},
         {ty: "D", st: {misc: "E", offsetD: -42}, ttls: {"en":"Triumph of Orthodoxy"}},
@@ -54,7 +54,7 @@
         {ty: "D", st: {mon: 3, d: 25}, inh: "Annunciation"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {inh: "Transfiguration", ty: "D", st: {mon: 8, d: 6}, urls: {"en":"https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},
+        {inh: "Transfiguration", ty: "D", st: {mon: 8, d: 6}, urls: {"en":"https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, mog: "🍏"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God"},
         {ty: "D", st: {mon: 9, d: 28}, inh: "St Wenceslas", fst: {era: 1, y: 935}},
 
@@ -73,6 +73,6 @@
         {ty: "D", st: {mon: 7, d: 15}, inh: "St Vladimir"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Synaxis of the Mother of God"},
         {ty: "D", st: {mon: 1, d: 1}, inh: "St Basil", notes: {"en":"Christmastide (day 8)\nFeast of Saint Basil the Great"}},
-        {ty: "D", st: {misc: "E", offsetD: -42}, ttls: {"en":"Forgiveness Sunday"}, notes: {"en":"Cheesefare Sunday"}, emoji: "🧀", urls: {"en":"https://www.daysoftheyear.com/days/forgiveness-sunday/"}},
+        {ty: "D", st: {misc: "E", offsetD: -42}, ttls: {"en":"Forgiveness Sunday"}, notes: {"en":"Cheesefare Sunday"}, mog: "🧀", urls: {"en":"https://www.daysoftheyear.com/days/forgiveness-sunday/"}},
     ]
 }

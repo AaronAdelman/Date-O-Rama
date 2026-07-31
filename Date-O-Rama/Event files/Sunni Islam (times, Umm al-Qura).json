@@ -3,7 +3,7 @@
     defLocale: "en",
     cal: "IslamicUmmAlQuraSolar",
     color: {name: "green"},
-    emoji: "🇸🇦",
+    mog: "🇸🇦",
     evts: [
         {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
         {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},

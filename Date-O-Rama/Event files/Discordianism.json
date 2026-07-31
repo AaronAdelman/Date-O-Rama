@@ -190,9 +190,9 @@
     ],
     tpls: {
         "Apostle Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Apostle Day"}, notes: {"en":"Whollyday"}},
-        "Sloth Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Sloth Day"}, notes: {"en":"Whollyday"}, emoji: "🦥"},
+        "Sloth Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Sloth Day"}, notes: {"en":"Whollyday"}, mog: "🦥"},
         "Flux Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Flux Day"}, notes: {"en":"Whollyday"}},
-        "Eye Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Eye Day"}, notes: {"en":"Whollyday"}, emoji: "👁"},
+        "Eye Day": {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Eye Day"}, notes: {"en":"Whollyday"}, mog: "👁"},
         "Mad Hatter Day": {ty: "D", st: {mon: 6, d: 10}, ttls: {"en":"Mad Hatter Day"}, inh: "EDH"},
         "Creation Day": {ty: "D", st: {mon: 5, d: 25}, ttls: {"en":"Creation Day"}},
         "Unknown Saints Day": {ty: "D", st: {mon: 6, d: 23}, ttls: {"en":"Unknown Saints Day"}},
