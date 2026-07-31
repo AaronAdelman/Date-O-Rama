@@ -1490,7 +1490,7 @@
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Helium Discovery Day"}, urls: {"en":"https://www.checkiday.com/25489da6ac9b9d80ce467bb095e2a3e1/helium-discovery-day"}, fst: {era: 1, y: 1868}, emoji: "🎈"},
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"International Delivery Driver Appreciation Day"}, urls: {"en":"https://www.daysoftheyear.com/days/international-delivery-driver-appreciation-day/"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Never Give Up Day"}, fst: {era: 1, y: 2019}, urls: {"en":"https://www.nevergiveupday.com/"}},
-        {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Serendipity Day","he":"יום הסרנדיפיות"}, urls: {"en":"https://www.madeleinekay.com/serendipity-day-holiday"}, fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Serendipity Day","he":"יום הסרנדיפיות"}, urls: {"en":"https://www.madeleinekay.com/serendipity-day-holiday"}, fst: {era: 1, y: 2010}, notes: {"en":"Created by Madeleine Kay"}},
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"World Breast Cancer Research Day"}, urls: {"en":"https://nationaltoday.com/world-breast-cancer-research-day/"}, inh: "*MedAw*"},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"International Orangutan Day","he":"יום האורנגאוטן הבינלאומי"}, emoji: "🦧", urls: {"en":"http://www.worldorangutanevents.org/international-orangutan-day.php"}},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"World Photography Day"}, emoji: "📷", notes: {"en":"World Photo Day\nNational Photography Day\n\nCreated by Korske Ara"}, urls: {"en":"https://www.worldphotographyday.com/"}, fst: {era: 1, y: 2010}},
