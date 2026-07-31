@@ -3,7 +3,7 @@
     "//":"French Polynesia",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.61, blue: 0.06},
+    color: {r: 1.00, g: 0.61, b: 0.06},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_French_Polynesia"},
     fst: {era: 1, y: 1842},
     evts: [

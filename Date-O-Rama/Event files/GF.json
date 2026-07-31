@@ -3,7 +3,7 @@
     "//":"French Guiana",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.91, green: 0.56, blue: 0.30},
+    color: {r: 0.91, g: 0.56, b: 0.30},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_French_Guiana"},
     fst: {era: 1, y: 1503},
     evts: [

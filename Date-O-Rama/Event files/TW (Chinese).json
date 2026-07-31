@@ -3,7 +3,7 @@
     "//":"Taiwan",
     defLocale: "en",
     cal: "chi",
-    color: {red: 0.00, green: 0.00, blue: 0.58},
+    color: {r: 0.00, g: 0.00, b: 0.58},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Taiwan"},
     evts: [
         {ty: "D", st: {mon: 12, d: -2}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh: "Lunar NuY Holiday"},

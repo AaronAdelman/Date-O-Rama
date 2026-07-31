@@ -3,7 +3,7 @@
     "//":"Antigua and Barbuda",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.82, green: 0.15, blue: 0.19},
+    color: {r: 0.82, g: 0.15, b: 0.19},
     fst: {era: 1, y: 1981},
     urls: {"en":"https://ab.gov.ag/detail_page.php?page=4"},
     evts: [

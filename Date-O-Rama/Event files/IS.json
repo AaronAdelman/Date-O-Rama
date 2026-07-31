@@ -3,7 +3,7 @@
     "//":"Iceland",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.45, blue: 0.81},
+    color: {r: 0.00, g: 0.45, b: 0.81},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Iceland"},
     fst: {era: 1, y: 1944},
     evts: [

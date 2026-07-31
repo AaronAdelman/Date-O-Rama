@@ -2,7 +2,7 @@
     ttls: {"en":"Ásatrú Alliance","es":"Ásatrú Alliance","it":"Asatru Alliance","uk":"Альянс Асатру"},
     defLocale: "en",
     cal: "gre*",
-    color: {red: 0.5, green: 0.6, blue: 0.7},
+    color: {r: 0.5, g: 0.6, b: 0.7},
     urls: {"en":"https://www.asatru.org/holidays.php"},
     fst: {era: 1, y: 1988},
     evts: [

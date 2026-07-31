@@ -2,7 +2,7 @@
     ttls: {"en":"Planets","he":"כוכבי־לכת"},
     defLocale: "en",
     cal: "xloc*",
-    color: {red: 0.941, green: 0.827, blue: 0.616},
+    color: {r: 0.941, g: 0.827, b: 0.616},
     evts: [
         {ttls: {"en":"Rise of Mercury","he":"זריחת כוכב"}, ty: "pt", st: {ptTy: "rise", body: "zme"}, mog: "☿↑"},
         {ttls: {"en":"Setting of Mercury","he":"שקיעת כוכב"}, ty: "pt", st: {ptTy: "set", body: "zme"}, mog: "☿↓"},

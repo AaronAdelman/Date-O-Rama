@@ -4,7 +4,7 @@
     "TODO":"Muslim and Hindu holidays",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.38, green: 0.71, blue: 0.90},
+    color: {r: 0.38, g: 0.71, b: 0.90},
     fst: {era: 1, y: 1970},
     urls: {"en":"https://www.fiji.gov.fj/About-Fiji/Public-Holidays"},
     evts: [

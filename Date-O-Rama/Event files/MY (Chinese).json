@@ -3,7 +3,7 @@
     "//":"Malaysia",
     defLocale: "en",
     cal: "chi",
-    color: {red: 0.00, green: 0.20, blue: 0.63},
+    color: {r: 0.00, g: 0.20, b: 0.63},
     urls: {"en":"https://publicholidays.com.my/","ms":"https://publicholidays.com.my/ms/","zh":"https://publicholidays.com.my/zh/"},
     evts: [
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Chinese NuY"},

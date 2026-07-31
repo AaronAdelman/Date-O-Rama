@@ -2,7 +2,7 @@
     ttls: {"en":"Bob Matthews"},
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.5, green: 0.28, blue: 0.56},
+    color: {r: 0.5, g: 0.28, b: 0.56},
     fst: {era: 1, y: 2012},
     evts: [
         {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"Stop Spam Day"}, nts: {"en":"International Stop Spam Day"}, urls: {"en":"https://www.daysoftheyear.com/days/stop-spam-day/"}, mog: "📚", fst: {era: 1, y: 2020}, nts: {"en":"Created by Bob Matthews of Holiday Insights"}},

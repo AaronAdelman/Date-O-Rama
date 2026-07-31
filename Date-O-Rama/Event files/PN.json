@@ -3,7 +3,7 @@
     "//":"Pitcairn",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.20, green: 0.45, blue: 0.13},
+    color: {r: 0.20, g: 0.45, b: 0.13},
     fst: {era: 1, y: 1790},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Pitcairn_Islands"},
     evts: [

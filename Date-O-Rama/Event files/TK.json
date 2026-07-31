@@ -3,7 +3,7 @@
     "//":"Tokelau",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.82, blue: 0.00},
+    color: {r: 1.00, g: 0.82, b: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Tokelau"},
     fst: {era: 1, y: 1889},
     evts: [

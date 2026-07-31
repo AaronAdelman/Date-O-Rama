@@ -2,7 +2,7 @@
     ttls: {"en":"Rural","he":"כפרי","fr":"Rural"},
     defLocale: "en",
     cal: "fre*",
-    color: {red: 0.88, green: 0.66, blue: 0.38},
+    color: {r: 0.88, g: 0.66, b: 0.38},
     fst: {era: 0, y: 1},
     urls: {"en":"https://en.wikipedia.org/wiki/French_Republican_calendar"},
     evts: [

@@ -3,7 +3,7 @@
     "//":"Suriname",
     defLocale: "en",
     cal: "chi",
-    color: {red: 0.00, green: 0.48, blue: 0.20},
+    color: {r: 0.00, g: 0.48, b: 0.20},
     urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NuY"},

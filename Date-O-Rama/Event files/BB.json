@@ -3,7 +3,7 @@
     "//":"Barbados",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.0, green: 0.13, blue: 0.41},
+    color: {r: 0.0, g: 0.13, b: 0.41},
     fst: {era: 1, y: 1966},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Barbados"},
     evts: [

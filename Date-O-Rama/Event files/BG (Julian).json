@@ -3,7 +3,7 @@
     "//":"Bulgaria",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.00, green: 0.69, blue: 0.40},
+    color: {r: 0.00, g: 0.69, b: 0.40},
     fst: {era: 1, y: 1908},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
     evts: [

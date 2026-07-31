@@ -3,7 +3,7 @@
     "//":"Réunion",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.98, green: 0.83, blue: 0.31},
+    color: {r: 0.98, g: 0.83, b: 0.31},
     urls: {"en":"https://publicholidays.africa/reunion/"},
     fst: {era: 1, y: 1946},
     evts: [

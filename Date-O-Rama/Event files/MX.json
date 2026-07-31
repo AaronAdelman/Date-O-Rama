@@ -3,7 +3,7 @@
     "//":"Mexico",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.39, blue: 0.25},
+    color: {r: 0.00, g: 0.39, b: 0.25},
     fst: {era: 1, y: 1810},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mexico"},
     evts: [

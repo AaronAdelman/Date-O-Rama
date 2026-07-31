@@ -3,7 +3,7 @@
     "//":"Martinique",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.13, green: 0.26, blue: 0.56},
+    color: {r: 0.13, g: 0.26, b: 0.56},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Martinique"},
     fst: {era: 1, y: 1946},
     evts: [

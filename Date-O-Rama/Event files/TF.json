@@ -3,7 +3,7 @@
     "//":"French Southern Territories",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.15, blue: 0.33},
+    color: {r: 0.00, g: 0.15, b: 0.33},
     urls: {"en":"https://time.now/holidays/french-southern-territories/"},
     fst: {era: 1, y: 1955},
     evts: [

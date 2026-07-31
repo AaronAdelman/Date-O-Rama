@@ -4,7 +4,7 @@
     "TODO":"Muslim observances",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.81, green: 0.07, blue: 0.15},
+    color: {r: 0.81, g: 0.07, b: 0.15},
     fst: {era: 1, y: 1964},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Malawi"},
     evts: [

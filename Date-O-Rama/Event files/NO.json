@@ -3,7 +3,7 @@
     "//":"Norway",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.73, green: 0.05, blue: 0.18},
+    color: {r: 0.73, g: 0.05, b: 0.18},
     fst: {era: 1, y: 1905},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Norway"},
     evts: [

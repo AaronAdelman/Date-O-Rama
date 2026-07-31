@@ -3,7 +3,7 @@
     "//":"South Georgia and the South Sandwich Islands",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.00, blue: 1.00},
+    color: {r: 0.00, g: 0.00, b: 1.00},
     "TODO":"King’s Birthday",
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_South_Georgia_and_the_South_Sandwich_Islands"},
     fst: {era: 1, y: 1985},

@@ -3,7 +3,7 @@
     "//":"Zambia",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.10, green: 0.54, blue: 0.0},
+    color: {r: 0.10, g: 0.54, b: 0.0},
     fst: {era: 1, y: 1964},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Zambia"},
     evts: [

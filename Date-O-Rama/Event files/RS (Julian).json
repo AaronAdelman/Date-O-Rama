@@ -3,7 +3,7 @@
     "//":"Serbia",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.89, green: 0.00, blue: 0.27},
+    color: {r: 0.89, g: 0.00, b: 0.27},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     fst: {era: 1, y: 1804},
    evts: [

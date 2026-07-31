@@ -2,7 +2,7 @@
     ttls: {"en":"Colleen Paige"},
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.41, green: 0.32, blue: 0.25},
+    color: {r: 0.41, g: 0.32, b: 0.25},
     fst: {era: 1, y: 2004},
     urls: {"en":"https://www.colleenpaige.com/"},
     evts: [

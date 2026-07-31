@@ -3,7 +3,7 @@
     "//":"Heard Island and McDonald Islands",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.50, green: 0.50, blue: 0.50},
+    color: {r: 0.50, g: 0.50, b: 0.50},
     evts: [
         
     ]

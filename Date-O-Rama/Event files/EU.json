@@ -3,7 +3,7 @@
     "//":"European Union",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.16, green: 0.27, blue: 0.52},
+    color: {r: 0.16, g: 0.27, b: 0.52},
     fst: {era: 1, y: 1993},
     urls: {"en":"https://www.coe.int/en/web/portal/international-and-european-days"},
     evts: [

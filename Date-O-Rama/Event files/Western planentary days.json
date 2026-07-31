@@ -2,7 +2,7 @@
     ttls: {"en":"Western planetary days","he":"ימי כוכבי־לכת מערביות"},
     defLocale: "en",
     cal: "gre*",
-    color: {red: 0.5, green: 0.5, blue: 0.5},
+    color: {name: "gray"},
     evts: [
         {ty: "nD", st: {}, subEvts: [
             {ttls: {"en":"Day of the Sun","he":"יום השמש"}, ty: "D", st: {wkd: [1]}, inh: "*zsu*", inh: "*Astrol*"},

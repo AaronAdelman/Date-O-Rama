@@ -3,7 +3,7 @@
     "//":"Guadeloupe",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.95, blue: 0.0},
+    color: {r: 1.00, g: 0.95, b: 0.0},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guadeloupe"},
     fst: {era: 1, y: 1814},
     evts: [

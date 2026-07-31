@@ -3,7 +3,7 @@
     // RSC
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.01, green: 0.22, blue: 0.63},
+    color: {r: 0.01, g: 0.22, b: 0.63},
     fst: {era: 1, y: 2018},
     urls: {"en":"http://realistsocietyofcanada.com/realism-holidays/"},
     evts: [

@@ -3,7 +3,7 @@
     "//":"Philippines",
     defLocale: "en",
     cal: "chi",
-    color: {red: 0.96, green: 0.83, blue: 0.29},
+    color: {r: 0.96, g: 0.83, b: 0.29},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NuY"},

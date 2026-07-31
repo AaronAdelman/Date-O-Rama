@@ -3,7 +3,7 @@
     "//":"Belarus",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.82, green: 0.15, blue: 0.19},
+    color: {r: 0.82, g: 0.15, b: 0.19},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Belarus"},
     fst: {era: 1, y: 1991},
     evts: [

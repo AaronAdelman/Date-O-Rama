@@ -3,7 +3,7 @@
     "//":"Bosnia and Herzegovina",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.00, green: 0.18, blue: 0.42},
+    color: {r: 0.00, g: 0.18, b: 0.42},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
     fst: {era: 1, y: 1992},
     evts: [

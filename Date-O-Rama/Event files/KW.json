@@ -3,7 +3,7 @@
     "//":"Kuwait",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.59, blue: 0.37},
+    color: {r: 0.00, g: 0.59, b: 0.37},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kuwait"},
     fst: {era: 1, y: 1961},
     evts: [

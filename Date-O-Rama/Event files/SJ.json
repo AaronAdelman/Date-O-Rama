@@ -3,7 +3,7 @@
     "//":"Svalbard and Jan Mayen",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.50, green: 0.50, blue: 0.50},
+    color: {r: 0.50, g: 0.50, b: 0.50},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Svalbard"},
     fst: {era: 1, y: 1920},
     evts: [

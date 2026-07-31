@@ -3,7 +3,7 @@
     "//":"Wallis and Futuna",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.90, green: 0.25, blue: 0.25},
+    color: {r: 0.90, g: 0.25, b: 0.25},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Wallis_and_Futuna"},
     fst: {era: 1, y: 1961},
     evts: [

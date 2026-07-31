@@ -3,7 +3,7 @@
     "//":"Bonaire, Sint Eustatius, and Saba, AKA Caribbean Netherlands",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.68, green: 0.11, blue: 0.16},
+    color: {r: 0.68, g: 0.11, b: 0.16},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bonaire"},
     fst: {era: 1, y: 2010},
     evts: [

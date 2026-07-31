@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.00, blue: 0.50},
+    color: {r: 0.00, g: 0.00, b: 0.50},
     fst: {era: 1, y: 2008},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
     evts: [

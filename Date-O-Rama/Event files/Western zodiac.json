@@ -2,7 +2,7 @@
     ttls: {"en":"Western zodiac","he":"גלגל המזלות המערבי"},
     defLocale: "en",
     cal: "gre*",
-    color: {red: 0.5, green: 0.5, blue: 0.5},
+    color: {name: "gray"},
     evts: [
         {ty: "Y", st: {}, subEvts: [
             {inh: "Ari" , ty: "nD", st: {mon: 3, d: 21}, end: {mon: 4, d: 19}},

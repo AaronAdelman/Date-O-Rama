@@ -2,7 +2,7 @@
     ttls: {"en":"Names","he":"שמות"},
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.10, green: 0.91, blue: 0.81},
+    color: {r: 0.10, g: 0.91, b: 0.81},
     mog: "📛",
     fst: {era: 1, y: 2013},
     evts: [

@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.94, green: 0.20, blue: 0.25},
+    color: {r: 0.94, g: 0.20, b: 0.25},
     fst: {era: 1, y: 1962},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Samoa"},
     evts: [

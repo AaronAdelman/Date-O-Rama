@@ -3,7 +3,7 @@
     "//":"British Indian Ocean Territory",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.42, blue: 0.23},
+    color: {r: 0.00, g: 0.42, b: 0.23},
     urls: {"en":"https://theworkcalendar.com/holidays/country/British-Indian-Ocean-Territory?countryCode=IO"},
     fst: {era: 1, y: 1965},
     evts: [

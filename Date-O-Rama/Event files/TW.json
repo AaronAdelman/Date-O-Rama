@@ -4,7 +4,7 @@
     "TODO":"Farmer’s Day, Dongzhi Festival",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.00, blue: 0.58},
+    color: {r: 0.00, g: 0.00, b: 0.58},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Taiwan"},
     fst: {era: 1, y: 1949},
     evts: [

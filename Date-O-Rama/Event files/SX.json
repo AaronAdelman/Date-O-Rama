@@ -3,7 +3,7 @@
     "//":"Sint Maarten",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.38, green: 0.69, blue: 0.88},
+    color: {r: 0.38, g: 0.69, b: 0.88},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sint_Maarten"},
     fst: {era: 1, y: 2010},
     evts: [

@@ -3,7 +3,7 @@
     "//":"Andorra",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.06, green: 0.02, blue: 0.62},
+    color: {r: 0.06, g: 0.02, b: 0.62},
     fst: {era: 1, y: 1278},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Andorra"},
     evts: [

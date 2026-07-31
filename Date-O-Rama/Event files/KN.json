@@ -3,7 +3,7 @@
     "//":"Saint Kitts and Nevis",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.59, blue: 0.22},
+    color: {r: 0.00, g: 0.59, b: 0.22},
     fst: {era: 1, y: 1983},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Kitts_and_Nevis"},
     fst: {era: 1, y: 1983},

@@ -3,7 +3,7 @@
     "//":"Saint Barthélemy, AKA Saint Barthelemy",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.15, blue: 0.33},
+    color: {r: 0.00, g: 0.15, b: 0.33},
     fst: {era: 1, y: 1648},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},

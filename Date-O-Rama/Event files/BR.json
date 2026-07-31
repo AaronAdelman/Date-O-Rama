@@ -3,7 +3,7 @@
     "//":"Brazil",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.59, blue: 0.22},
+    color: {r: 0.00, g: 0.59, b: 0.22},
     fst: {era: 1, y: 1822},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Brazil"},
     "TODO":"Carnival of Brazil (as a single event)",

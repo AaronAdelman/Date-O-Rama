@@ -3,7 +3,7 @@
     "//":"Jersey",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.81, green: 0.08, blue: 0.17},
+    color: {r: 0.81, g: 0.08, b: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jersey"},
     fst: {era: 1, y: 1204},
     evts: [

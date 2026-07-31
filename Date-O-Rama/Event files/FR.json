@@ -4,7 +4,7 @@
     "TODO":"Mother’s Day may need to be shifted due to Pentecost.",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.0, green: 0.33, blue: 0.64},
+    color: {r: 0.0, g: 0.33, b: 0.64},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_France"},
     fst: {era: 1, y: 1792},
     evts: [

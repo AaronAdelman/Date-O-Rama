@@ -2,7 +2,7 @@
     ttls: {"ar":"المتحدة من أجل التفاعل الثقافي","ca":"UNITED for Intercultural Action","de":"UNITED for Intercultural Action","en":"UNITED for Intercultural Action","eo":"UNITED por Interkultura Agado","es":"UNITED for Intercultural Action","fa":"اتحاد بین فرهنگی","fr":"United for Intercultural Action","ha":"Hadin Kai Don Ayyukan Al’adu Daban-Daban","ru":"UNITED for Intercultural Action","sv":"UNITED against racism"},
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.61, green: 0.72, blue: 0.25},
+    color: {r: 0.61, g: 0.72, b: 0.25},
     fst: {era: 1, y: 1993},
     urls: {"en":"https://unitedfia.org/"},
     evts: [

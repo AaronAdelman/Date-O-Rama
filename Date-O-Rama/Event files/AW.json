@@ -3,7 +3,7 @@
     "//":"Aruba",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.25, green: 0.56, blue: 0.87},
+    color: {r: 0.25, g: 0.56, b: 0.87},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Aruba"},
     fst: {era: 1, y: 1986},
     evts: [

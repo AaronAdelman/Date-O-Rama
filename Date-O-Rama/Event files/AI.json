@@ -3,7 +3,7 @@
     "//":"Anguilla",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.60, blue: 0.00},
+    color: {r: 1.00, g: 0.60, b: 0.00},
     fst: {era: 1, y: 1667},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Anguilla"},
     evts: [

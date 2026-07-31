@@ -3,7 +3,7 @@
     "//":"Nauru",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.14, blue: 0.41},
+    color: {r: 0.00, g: 0.14, b: 0.41},
     fst: {era: 1, y: 1968},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nauru"},
     evts: [

@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.41, green: 0.70, blue: 0.91},
+    color: {r: 0.41, g: 0.70, b: 0.91},
     fst: {era: 1, y: 1977},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Djibouti"},
     evts: [

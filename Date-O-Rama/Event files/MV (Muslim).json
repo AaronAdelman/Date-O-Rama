@@ -3,7 +3,7 @@
     "//":"Maldives",
     defLocale: "en",
     cal: "hiq*",
-    color: {red: 0.78, green: 0.06, blue: 0.18},
+    color: {r: 0.78, g: 0.06, b: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
     evts: [
         {ty: "D", st: {mon: 3, d: 1}, inh: "NDay", urls: {"en":"https://nationaltoday.com/maldives-qaumee-dhuvas/"}, nts: {"en":"Qaumee Dhuvas"}},

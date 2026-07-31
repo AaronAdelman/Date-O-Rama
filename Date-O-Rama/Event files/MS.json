@@ -3,7 +3,7 @@
     "//":"Montserrat",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.72, green: 0.17, blue: 0.21},
+    color: {r: 0.72, g: 0.17, b: 0.21},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montserrat"},
     fst: {era: 1, y: 1962},
     evts: [

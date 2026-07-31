@@ -3,7 +3,7 @@
     "//":"South Africa",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.88, green: 0.24, blue: 0.19},
+    color: {r: 0.88, g: 0.24, b: 0.19},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa"},
     fst: {era: 1, y: 1910},
     evts: [

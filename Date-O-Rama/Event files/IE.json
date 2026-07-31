@@ -3,7 +3,7 @@
     "//":"Ireland",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.09, green: 0.61, blue: 0.38},
+    color: {r: 0.09, g: 0.61, b: 0.38},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland"},
     fst: {era: 1, y: 1922},
     evts: [

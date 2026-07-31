@@ -3,7 +3,7 @@
     "//":"Montenegro",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.85, green: 0.67, blue: 0.00},
+    color: {r: 0.85, g: 0.67, b: 0.00},
     fst: {era: 1, y: 2006},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts: [

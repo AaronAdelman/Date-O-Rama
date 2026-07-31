@@ -3,7 +3,7 @@
     "//":"Australia",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.14, green: 0.34, blue: 0.48},
+    color: {r: 0.14, g: 0.34, b: 0.48},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Australia"},
     fst: {era: 1, y: 1901},
     evts: [

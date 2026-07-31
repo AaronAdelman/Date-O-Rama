@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.50, green: 0.50, blue: 0.50},
+    color: {r: 0.50, g: 0.50, b: 0.50},
     fst: {era: 1, y: 1988},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},

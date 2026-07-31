@@ -3,7 +3,7 @@
     "//":"Eritrea",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.89, green: 0.00, blue: 0.17},
+    color: {r: 0.89, g: 0.00, b: 0.17},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
     evts: [
         {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},

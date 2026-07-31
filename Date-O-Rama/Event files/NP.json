@@ -4,7 +4,7 @@
     "TODO":"Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.86, green: 0.08, blue: 0.24},
+    color: {r: 0.86, g: 0.08, b: 0.24},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nepal"},
     fst: {era: 1, y: 1768},
     evts: [

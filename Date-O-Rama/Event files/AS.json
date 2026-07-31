@@ -3,7 +3,7 @@
     "//":"American Samoa",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.00, blue: 0.40},
+    color: {r: 0.00, g: 0.00, b: 0.40},
     fst: {era: 1, y: 1776}, 
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},

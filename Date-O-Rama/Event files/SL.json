@@ -3,7 +3,7 @@
     "//":"Sierra Leone",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.26, green: 0.69, blue: 0.16},
+    color: {r: 0.26, g: 0.69, b: 0.16},
     fst: {era: 1, y: 1961},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sierra_Leone"},
     evts: [

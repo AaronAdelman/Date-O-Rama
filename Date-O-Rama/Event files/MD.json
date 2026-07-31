@@ -3,7 +3,7 @@
     "//":"Moldova",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.24, blue: 0.65},
+    color: {r: 0.00, g: 0.24, b: 0.65},
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Moldova"},
     evts: [

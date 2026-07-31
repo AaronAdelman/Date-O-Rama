@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays, ִHindu holidays, Basant",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.10, green: 0.25, blue: 0.13},
+    color: {r: 0.10, g: 0.25, b: 0.13},
     fst: {era: 1, y: 1947},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Pakistan"},
     evts: [

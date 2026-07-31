@@ -3,7 +3,7 @@
     "//":"New Caledonia",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.98, green: 0.98, blue: 0.00},
+    color: {r: 0.98, g: 0.98, b: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_New_Caledonia"},
     fst: {era: 1, y: 19853},
     evts: [

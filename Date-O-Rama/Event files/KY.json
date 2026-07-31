@@ -3,7 +3,7 @@
     "//":"Cayman Islands",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.16, blue: 0.41},
+    color: {r: 0.00, g: 0.16, b: 0.41},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Cayman_Islands"},
     fst: {era: 1, y: 1670},
     evts: [

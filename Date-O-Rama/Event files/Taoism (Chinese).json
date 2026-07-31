@@ -2,7 +2,7 @@
     ttls: {"en":"Taoism","he":"דאואיזם"},
     defLocale: "en",
     cal: "chi",
-    color: {red: 1.0, green: 0.82, blue: 0.41},
+    color: {r: 1.0, g: 0.82, b: 0.41},
     evts: [
         {ty: "D", st: {mon: 7, d: 15}, inh: "Ghost Festival", urls: {"en":"https://nationaltoday.com/spirit-festival/"}},
     ]

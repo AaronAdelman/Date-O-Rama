@@ -4,7 +4,7 @@
     "TODO":"Latvian Song and Dance Festival",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.64, green: 0.20, blue: 0.23},
+    color: {r: 0.64, g: 0.20, b: 0.23},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Latvia"},
     fst: {era: 1, y: 1918},
     evts: [

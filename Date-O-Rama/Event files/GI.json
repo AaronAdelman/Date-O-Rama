@@ -3,7 +3,7 @@
     "//":"Gibraltar",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.85, green: 0.00, blue: 0.05},
+    color: {r: 0.85, g: 0.00, b: 0.05},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Gibraltar"},
     fst: {era: 1, y: 1713},
     evts: [

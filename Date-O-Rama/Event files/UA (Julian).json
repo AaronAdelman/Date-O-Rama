@@ -3,7 +3,7 @@
     "//":"Ukraine",
     defLocale: "en",
     cal: "jul",
-    color: {red: 0.00, green: 0.34, blue: 0.72},
+    color: {r: 0.00, g: 0.34, b: 0.72},
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
     evts: [

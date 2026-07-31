@@ -3,7 +3,7 @@
     "//":"Cabo Verde, i.e., Cape Verde",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.22, blue: 0.58},
+    color: {r: 0.00, g: 0.22, b: 0.58},
     fst: {era: 1, y: 1975},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cape_Verde"},
     evts: [

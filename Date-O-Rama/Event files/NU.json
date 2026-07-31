@@ -3,7 +3,7 @@
     "//":"Niue",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.87, blue: 0.00},
+    color: {r: 1.00, g: 0.87, b: 0.00},
     fst: {era: 1, y: 1974},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},

@@ -3,7 +3,7 @@
     "//":"Cyprus",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.84, green: 0.47, blue: 0.00},
+    color: {r: 0.84, g: 0.47, b: 0.00},
     fst: {era: 1, y: 1979},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},
     evts: [

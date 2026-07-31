@@ -3,7 +3,7 @@
     "//":"Curaçao",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.17, blue: 0.50},
+    color: {r: 0.00, g: 0.17, b: 0.50},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Curaçao"},
     fst: {era: 1, y: 2010},
     evts: [

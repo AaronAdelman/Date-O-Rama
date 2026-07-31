@@ -3,7 +3,7 @@
     "//":"Namibia",
     defLocale: "en",
     cal: "gre",
-    color: {red: 1.00, green: 0.78, blue: 0.17},
+    color: {r: 1.00, g: 0.78, b: 0.17},
     fst: {era: 1, y: 1990},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Namibia"},
     evts: [

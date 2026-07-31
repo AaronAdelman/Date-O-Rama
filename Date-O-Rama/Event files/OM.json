@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays?",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.78, green: 0.06, blue: 0.18},
+    color: {r: 0.78, g: 0.06, b: 0.18},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Oman"},
     fst: {era: 1, y: 751}, 
     evts: [

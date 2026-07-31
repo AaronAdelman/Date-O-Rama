@@ -3,7 +3,7 @@
     "//":"Italy",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.48, blue: 0.20},
+    color: {r: 0.00, g: 0.48, b: 0.20},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Italy"},
     fst: {era: 1, y: 1861},
     evts: [

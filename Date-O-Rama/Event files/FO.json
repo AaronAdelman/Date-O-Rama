@@ -3,7 +3,7 @@
     "//":"Faroe Islands",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.13, green: 0.25, blue: 0.60},
+    color: {r: 0.13, g: 0.25, b: 0.60},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Faroe_Islands"},
     fst: {era: 1, y: 1948},
     evts: [

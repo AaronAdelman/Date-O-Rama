@@ -3,7 +3,7 @@
     "//":"Palau",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.60, blue: 1.00},
+    color: {r: 0.00, g: 0.60, b: 1.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Palau"},
     fst: {era: 1, y: 1994},
     evts: [

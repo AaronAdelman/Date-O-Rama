@@ -4,7 +4,7 @@
     "TODO":"Islamic holidays?",
     defLocale: "en",
     cal: "gre",
-    color: {red: 0.00, green: 0.50, blue: 0.00},
+    color: {r: 0.00, g: 0.50, b: 0.00},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Cocos_(Keeling)_Islands"},
     fst: {era: 1, y: 1955},
     evts: [
