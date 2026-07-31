@@ -26,13 +26,13 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
 
-        {ty: "D", st: {mon: 7, d: 1}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, notes: {"en":"Senior Citizens’ Day"}, fst: {era: 1, y: 1960}, mog: "👴👵"},
+        {ty: "D", st: {mon: 7, d: 1}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, nts: {"en":"Senior Citizens’ Day"}, fst: {era: 1, y: 1960}, mog: "👴👵"},
         {ty: "D", st: {mon: 7, d: 2, thruD: 3, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, fst: {era: 1, y: 1960}},
         {ty: "D", st: {mon: 7, d: 4, wkd: [6]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/ghana-republic-day/"}, fst: {era: 1, y: 1960}},
 
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
-        {ty: "nD", st: {mon: 7, d: 23}, end: {mon: 8, d: 2}, ttls: {"dga":"Panfest Tigiri","en":"Panafest","ha":"Panafest","he":"פרוייקט התיאטרון ההיסטורי הפאן־אפריקאי","ig":"Panafest"}, urls: {"en":"https://nationaltoday.com/panafest/"}, fst: {era: 1, y: 1992}, notes: {"en":"Pan African Historical Theatre Project"}},
+        {ty: "nD", st: {mon: 7, d: 23}, end: {mon: 8, d: 2}, ttls: {"dga":"Panfest Tigiri","en":"Panafest","ha":"Panafest","he":"פרוייקט התיאטרון ההיסטורי הפאן־אפריקאי","ig":"Panafest"}, urls: {"en":"https://nationaltoday.com/panafest/"}, fst: {era: 1, y: 1992}, nts: {"en":"Pan African Historical Theatre Project"}},
         {ty: "D", st: {mon: 2, d: 14}, inh: "NChocD", urls: {"en":"https://en.wikipedia.org/wiki/Chocolate_Day_(Ghana)"}, fst: {era: 1, y: 2005}},
    ],
     tpls: {

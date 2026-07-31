@@ -24,7 +24,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God"},
         {ty: "D", st: {mon: 8, d: 16, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/romania/assumption-day"}, inh: "Public Sector Holiday"},
         {ty: "D", st: {mon: 11, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/romania/st-andrews-day"}, inh: "St Andrew"},
-        {ty: "D", st: {mon: 12, d: 1}, ttls: {"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日 (罗马尼亚)"}, notes: {"en":"Romania National Day\nNational Day of Romania","ro":"Ziua Marii Uniri"}, inh: "NDay", urls: {"en":"https://www.daysoftheyear.com/days/romania-national-day/"}, fst: {era: 1, y: 1990}},
+        {ty: "D", st: {mon: 12, d: 1}, ttls: {"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日 (罗马尼亚)"}, nts: {"en":"Romania National Day\nNational Day of Romania","ro":"Ziua Marii Uniri"}, inh: "NDay", urls: {"en":"https://www.daysoftheyear.com/days/romania-national-day/"}, fst: {era: 1, y: 1990}},
         {ty: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 27, wkd: [6]}, inh: "Public Sector Holiday", urls: {"en":"https://www.officeholidays.com/holidays/romania/christmas-holiday"}},
 
@@ -34,7 +34,7 @@
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Navy Day"},
 
-        {ty: "D", st: {mon: 2, d: 19}, ttls: {"en":"Constantin Brâncuși Day"}, urls: {"en":"https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, fst: {era: 1, y: 2015}, notes: {"en":"Brâncuși Day\nConstantin Brancusi Day"}},
+        {ty: "D", st: {mon: 2, d: 19}, ttls: {"en":"Constantin Brâncuși Day"}, urls: {"en":"https://www.daysoftheyear.com/days/constantin-brancusi-day/"}, fst: {era: 1, y: 2015}, nts: {"en":"Brâncuși Day\nConstantin Brancusi Day"}},
         {ty: "D", st: {mon: 2, d: 24}, ttls: {"en":"Dragobete"}, urls: {"en":"https://nationaltoday.com/dragobete/"}},
         {ty: "D", st: {mon: 6, d: 26}, inh: "Flag Day", urls: {"en":"https://nationaltoday.com/flag-day-of-romania/"}, fst: {era: 1, y: 1998}},
         {ty: "D", st: {mon: 8, d: 31}, inh: "Romanian Language Day", fst: {era: 1, y: 2013}},

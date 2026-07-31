@@ -25,7 +25,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         
-        {ty: "D", st: {mon: 12, d: 5}, ttls: {"en":"Saint Nicholas’s Eve","nl":"Sinterklaasavond"}, mog: "🎅", notes: {"en":"Pakjesavond"}},
+        {ty: "D", st: {mon: 12, d: 5}, ttls: {"en":"Saint Nicholas’s Eve","nl":"Sinterklaasavond"}, mog: "🎅", nts: {"en":"Pakjesavond"}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Carnival (day 1)",},
         {inh: "Carnival (day 2)", ty: "D", st: {misc: "E", offsetD: -48}},
         {inh: "Carnival (day 3)", ty: "D", st: {misc: "E", offsetD: -47}},
@@ -41,13 +41,13 @@
         {ty: "D", st: {mon: 9, wkd: [3], nth: 4}, inh: "NCoffeeD"},
         {ty: "M", st: {mon: 10}, inh: "Black History Month"},
         {ty: "D", st: {mon: 6, d: 4}, inh: "Grandparents’ Day"},
-        {ty: "D", st: {mon: 3, d: 27}, ttls: {"en":"Bitterballen Day","nl":"Dag van de Bitterbal"}, notes: {"nl":"Bitterballendag\nNationale Bitterballendag"}, urls: {"en":"https://www.daysoftheyear.com/days/bitterballen-day/"}, fst: {era: 1, y: 2020}},
-        {ty: "D", st: {mon: 1, wkd: [1], nth: -1}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 1957}, ttls: {"en":"National Holocaust Remembrance","nl":"Nationale Holocaust Herdenking"}, notes: {"en":"Auschwitz Remembrance","nl":"Auschwitzherdenking"}, urls: {"en":"https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
+        {ty: "D", st: {mon: 3, d: 27}, ttls: {"en":"Bitterballen Day","nl":"Dag van de Bitterbal"}, nts: {"nl":"Bitterballendag\nNationale Bitterballendag"}, urls: {"en":"https://www.daysoftheyear.com/days/bitterballen-day/"}, fst: {era: 1, y: 2020}},
+        {ty: "D", st: {mon: 1, wkd: [1], nth: -1}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 1957}, ttls: {"en":"National Holocaust Remembrance","nl":"Nationale Holocaust Herdenking"}, nts: {"en":"Auschwitz Remembrance","nl":"Auschwitzherdenking"}, urls: {"en":"https://nl.wikipedia.org/wiki/Nationale_Holocaust_Herdenking"}},
         {ty: "D", st: {mon: 6, d: 16}, ttls: {"en":"No Orange Clothes Day"}, urls: {"en":"https://www.checkiday.com/bedb91bdab22e3413cf63f3bf33987e8/no-orange-clothes-day"}, fst: {era: 1, y: 1784}, mog: "🟠"},
         {ty: "D", st: {mon: 10, d: 11}, inh: "NCOD", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 12, wkd: [6], nth: 2}, ttls: {"en":"Purple Friday","nl":"Paarse Vrijdag"}, fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 12, d: 15, wkd: [2, 3, 4, 5, 6, 7]}, inh: "Koninkrijksdag", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 12, d: 16, wkd: [2]}, inh: "Koninkrijksdag", fst: {era: 1, y: 2005}},
-        {ty: "D", st: {mon: 1, wkd: [7], nth: 3}, ttls: {"bn":"জাতীয় টিউলিপ দিবস","en":"TulipDay Amsterdam","nl":"Tulpendag Amsterdam","uk":"Національний день тюльпанів"}, urls: {"en":"https://tulpentijd.nl/en/","nl":"https://tulpentijd.nl/"}, inh: "Tulip Day", fst: {era: 1, y: 2012}, notes: {"en":"TulipDay\nNational Tulip Day\nCreated by Tulip Promotion Netherlands (Tulpen Promotie Nederland)","nl":"Nationale Tulpendag"}},
+        {ty: "D", st: {mon: 1, wkd: [7], nth: 3}, ttls: {"bn":"জাতীয় টিউলিপ দিবস","en":"TulipDay Amsterdam","nl":"Tulpendag Amsterdam","uk":"Національний день тюльпанів"}, urls: {"en":"https://tulpentijd.nl/en/","nl":"https://tulpentijd.nl/"}, inh: "Tulip Day", fst: {era: 1, y: 2012}, nts: {"en":"TulipDay\nNational Tulip Day\nCreated by Tulip Promotion Netherlands (Tulpen Promotie Nederland)","nl":"Nationale Tulpendag"}},
     ]
 }

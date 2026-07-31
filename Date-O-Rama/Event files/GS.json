@@ -29,6 +29,6 @@
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
     ],
     tpls: {
-        "Toothfish Day": {ty: "D", st: {mon: 9, d: 14}, ttls: {"en":"Toothfish Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Toothfish_Day"}, notes: {"en":"Toothfish (end of season) Day"}},
+        "Toothfish Day": {ty: "D", st: {mon: 9, d: 14}, ttls: {"en":"Toothfish Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Toothfish_Day"}, nts: {"en":"Toothfish (end of season) Day"}},
     }
 }

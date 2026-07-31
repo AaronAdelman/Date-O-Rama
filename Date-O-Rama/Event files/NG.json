@@ -64,7 +64,7 @@
        {inh: "Armed Forces Day", ty: "D", st: {mon: 1, d: 15}, ttls: {"en":"Armed Forces Remembrance Day"}},
    ],
     tpls: {
-        "Isese Day": {ty: "D", st: {mon: 8, d: 20}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/osun-public-holiday"}, ttls: {"en":"Isese Day"}, notes: {"en":"Traditional Worshippers’ Day"}},
+        "Isese Day": {ty: "D", st: {mon: 8, d: 20}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/osun-public-holiday"}, ttls: {"en":"Isese Day"}, nts: {"en":"Traditional Worshippers’ Day"}},
         "Nigeria Election Holiday": {ty: "D", st: {mon: 2, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/nigeria/nigeria-election-holiday"}, ttls: {"en":"Nigeria Election Holiday"}, inh: "Election Day"},
     }
 }

@@ -11,7 +11,7 @@
         {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiJafari"}},
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiJafari"}},
 
-        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribJafari"}, notes: {"en":"Ithna Ashari"}},
-        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrJafari"}, notes: {"en":"Ithna Ashari"}},
+        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribJafari"}, nts: {"en":"Ithna Ashari"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrJafari"}, nts: {"en":"Ithna Ashari"}},
     ]
 }

@@ -63,11 +63,11 @@
         {ttls: {"he":"יום כיפור קטן (מוקדם)","en":"Yom Kippur Qaṭan (brought forward)"}, ty: "D", st: {mon: 12, d: 27, wkd: [5]}},
         {ttls: {"he":"יום כיפור קטן (מוקדם)","en":"Yom Kippur Qaṭan (brought forward)"}, ty: "D", st: {mon: 12, d: 28, wkd: [5]}},
         
-        {ttls: {"he":"יום־שנה של שמואל הנביא (על פי מגילת תענית)","en":"Yohrtsayt of Shemu’el the Prophet (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 9, d: 29}, inh: "*DA*", notes: {"he":"מגילת תענית"}},
-        {ttls: {"he":"יום־שנה של עשרת המרגלים (על פי מגילת תענית)","en":"Yohrtsayt of the Ten Spies (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 13, d: 7}, inh: "*DA*", notes: {"he":"מגילת תענית"}},
-        {ttls: {"he":"יום שבו עוורו את המלך צדקיהו והמיתו את בניו (על פי מגילת תענית)","en":"Day Ṣidhqiyyahu was blinded and they killed his children (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 2, d: 6}, notes: {"he":"מגילת תענית"}},
-        {ttls: {"he":"יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו (על פי מגילת תענית)","en":"Day King Yehoyaqim burnt the scroll Barukh ben Neriyyah wrote for Yirmeyahu (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 3, d: 7}, notes: {"he":"מגילת תענית"}},
-        {ttls: {"he":"יום שבו לא כתבו רבותינו על מה","en":"Day in Which Our Rabbanim Did Not Write on What"}, ty: "D", st: {mon: 4, d: 9}, inh: "*DA*", notes: {"he":"מגילת תענית"}},
-        {ttls: {"he":"יום־שנה של הזקנים שהיו בימי יהושע בן נון (על פי מגילת תענית)","en":"Yohrtsayt of Yehoshua‘ ben Nun and the Elders (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 5, d: 8}, inh: "*DA*", notes: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום־שנה של שמואל הנביא (על פי מגילת תענית)","en":"Yohrtsayt of Shemu’el the Prophet (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 9, d: 29}, inh: "*DA*", nts: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום־שנה של עשרת המרגלים (על פי מגילת תענית)","en":"Yohrtsayt of the Ten Spies (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 13, d: 7}, inh: "*DA*", nts: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום שבו עוורו את המלך צדקיהו והמיתו את בניו (על פי מגילת תענית)","en":"Day Ṣidhqiyyahu was blinded and they killed his children (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 2, d: 6}, nts: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו (על פי מגילת תענית)","en":"Day King Yehoyaqim burnt the scroll Barukh ben Neriyyah wrote for Yirmeyahu (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 3, d: 7}, nts: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום שבו לא כתבו רבותינו על מה","en":"Day in Which Our Rabbanim Did Not Write on What"}, ty: "D", st: {mon: 4, d: 9}, inh: "*DA*", nts: {"he":"מגילת תענית"}},
+        {ttls: {"he":"יום־שנה של הזקנים שהיו בימי יהושע בן נון (על פי מגילת תענית)","en":"Yohrtsayt of Yehoshua‘ ben Nun and the Elders (according to Meghillath Ta‘anith)"}, ty: "D", st: {mon: 5, d: 8}, inh: "*DA*", nts: {"he":"מגילת תענית"}},
     ]
 }

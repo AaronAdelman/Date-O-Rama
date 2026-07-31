@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/mothers-day"}},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/honduras-independence-day/"}},
-        {ty: "D", st: {mon: 10, d: 3}, ttls: {"en":"Francisco Morazán’s Day","es":"Día del Soldado"}, urls: {"en":"https://nationaltoday.com/francisco-morazans-day/"}, fst: {era: 1, y: 1792}, notes: {"en":"Francisco Morazan’s Birthday\nSoldier’s Day","he":"יום החייל"}, inh: "*BD*"},
+        {ty: "D", st: {mon: 10, d: 3}, ttls: {"en":"Francisco Morazán’s Day","es":"Día del Soldado"}, urls: {"en":"https://nationaltoday.com/francisco-morazans-day/"}, fst: {era: 1, y: 1792}, nts: {"en":"Francisco Morazan’s Birthday\nSoldier’s Day","he":"יום החייל"}, inh: "*BD*"},
         {ty: "D", st: {mon: 10, d: 5}, inh: "Francisco Morazán’s Day (in lieu)", fst: {era: 1, y: 2022}, last: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 10, d: 1, thruD: 2, wkd: [5]}, inh: "Francisco Morazán’s Day (in lieu)", fst: {era: 1, y: 2025}, last: {era: 1, y: 2026}},
         {ty: "nD", st: {mon: 10, d: 1, thruD: 7, wkd: [4], durD: 3}, ttls: {"en":"Morazánica Week","es":"Semana Morazánica"}, urls: {"en":"https://nationaltoday.com/semana-morazanica-in-honduras/"}, fst: {era: 1, y: 2014}},
@@ -35,7 +35,7 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
-        {ty: "D", st: {mon: 2, d: 3}, urls: {"en":"https://nationaltoday.com/our-lady-of-suyapa/"}, ttls: {"en":"Feast of Our Lady of Suyapa","es":"Nuestra Señora de Suyapa"}, notes: {"en":"Virgin of Suyapa’s Day"}},
+        {ty: "D", st: {mon: 2, d: 3}, urls: {"en":"https://nationaltoday.com/our-lady-of-suyapa/"}, ttls: {"en":"Feast of Our Lady of Suyapa","es":"Nuestra Señora de Suyapa"}, nts: {"en":"Virgin of Suyapa’s Day"}},
         {ty: "D", st: {mon: 4, d: 19}, inh: "Spanish Language Day", fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 6, d: 11}, inh: "Student’s Day"},
         {ty: "D", st: {mon: 7, d: 20}, urls: {"en":"https://nationaltoday.com/lempira-day/"}, ttls: {"en":"Lempira Day","es":"Día de Lempira"}},
@@ -45,14 +45,14 @@
 
         {ty: "D", st: {mon: 7, d: 16}, inh: "Engineer’s Day"},
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
-        {ty: "D", st: {mon: 10, d: 21}, inh: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, notes: {"en":"National Army Day"}},
+        {ty: "D", st: {mon: 10, d: 21}, inh: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, nts: {"en":"National Army Day"}},
         {ty: "D", st: {mon: 10, d: 6, thruD: 7, wkd: [6]}, inh: "Army Day (in lieu)", fst: {era: 1, y: 2023}, last: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 10, d: 3}, inh: "Army Day (in lieu)", fst: {era: 1, y: 2024}},
     ],
     tpls: {
         "Discovery of America Day (in lieu)": {ty: "D", st: {era: 1, y: 2022, mon: 10, d: 6}, ttls: {"en":"Discovery of America Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
         "Francisco Morazán’s Day (in lieu)": {ty: "D", st: {mon: 10, d: 5}, ttls: {"en":"Francisco Morazán’s Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/francisco-morazans-day/"}, inh: "*BD*"},
-        "Army Day (in lieu)": {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"Army Day (in lieu)"}, inh: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, notes: {"en":"National Army Day"}},
+        "Army Day (in lieu)": {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"Army Day (in lieu)"}, inh: "Army Day", urls: {"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, nts: {"en":"National Army Day"}},
         "Pan American Day (in lieu)": {ty: "D", st: {mon: 4, d: 18}, ttls: {"en":"Pan American Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/americas-day/"}},
     }
 }

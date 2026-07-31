@@ -9,6 +9,6 @@
     evts: [
         {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ttls: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, ty: "D", st: {misc: "E", offsetD: 9}, urls: {"en":"https://www.daysoftheyear.com/days/radonitsa/"}, mog: "🪦", notes: {"en":"Day of Rejoicing\nCommemoration Day"}},
+        {ttls: {"ba":"Радоница","be":"Радаўніца","be-tarask":"Радуніца","cs":"Radunica","de":"Raduniza","el":"Ραντόνιτσα","en":"Radonitsa","es":"Radonitsa","eu":"Radonitsa","fi":"Radonitsa","fr":"Radonitsa","id":"Radonitsa","ja":"ラドニツァ","lt":"Radonica","olo":"Radonica","pl":"Radonica","ro":"Paștile Blajinilor","ru":"Радоница","rue":"Радуниця","sr":"Побусани понедељак","uk":"Проводи","vep":"Radonic"}, ty: "D", st: {misc: "E", offsetD: 9}, urls: {"en":"https://www.daysoftheyear.com/days/radonitsa/"}, mog: "🪦", nts: {"en":"Day of Rejoicing\nCommemoration Day"}},
     ]
 }

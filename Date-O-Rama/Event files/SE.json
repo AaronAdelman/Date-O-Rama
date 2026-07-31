@@ -18,7 +18,7 @@
         {ty: "D", st: {misc: "E", offsetD: 40}, ttls: {"en":"Friday after Ascension Day","sv":"Himmelsfärdsdag fredag"}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/ascension-friday"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: -1}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/sweden/mothers-day"}},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {mon: 6, d: 6}, inh: "Statehood Day", notes: {"en":"National Day"}, urls: {"en":"https://www.daysoftheyear.com/days/statehood-day-in-sweden/"}, fst: {era: 1, y: 1916}},
+        {ty: "D", st: {mon: 6, d: 6}, inh: "Statehood Day", nts: {"en":"National Day"}, urls: {"en":"https://www.daysoftheyear.com/days/statehood-day-in-sweden/"}, fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 6, d: 19, thruD: 25}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inh: "Midsummer Eve"},
         {ty: "D", st: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/sweden-midsummer-day"}, inh: "Midsummer"},
         {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/sweden/all-saints-day"}, inh: "AllStsD"},
@@ -45,7 +45,7 @@
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 11, d: 6}, inh: "Gustavus Adolphus Day"},
         {ty: "D", st: {mon: 3, d: 25}, inh: "Waffle Day"},
-        {ty: "D", st: {mon: 10, d: 4}, ttls: {"ar":"يوم لفة القرفة","de":"Tag der Zimtschnecke","en":"Cinnamon Bun Day","es":"Día del Rollo de Canela","fa":"روز رول دارچینی","fr":"Kanelbullens dag","he":"יום שבלול הקינמון","sv":"Kanelbullens dag","zh":"肉桂卷日"}, fst: {era: 1, y: 1999}, urls: {"en":"https://kanelbullensdag.se/en/","sv":"https://kanelbullensdag.se/"}, notes: {"en":"Cinnamon Roll Day\nNational Cinnamon Bun Day\nNational Cinnamon Roll Day\nCreated by Kaeth Gardestedt and the Home Baking Council in Sweden"}},
+        {ty: "D", st: {mon: 10, d: 4}, ttls: {"ar":"يوم لفة القرفة","de":"Tag der Zimtschnecke","en":"Cinnamon Bun Day","es":"Día del Rollo de Canela","fa":"روز رول دارچینی","fr":"Kanelbullens dag","he":"יום שבלול הקינמון","sv":"Kanelbullens dag","zh":"肉桂卷日"}, fst: {era: 1, y: 1999}, urls: {"en":"https://kanelbullensdag.se/en/","sv":"https://kanelbullensdag.se/"}, nts: {"en":"Cinnamon Roll Day\nNational Cinnamon Bun Day\nNational Cinnamon Roll Day\nCreated by Kaeth Gardestedt and the Home Baking Council in Sweden"}},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
     ]
 }

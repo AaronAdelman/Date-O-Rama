@@ -13,7 +13,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/martinique/v-e-day"}, inh: "Victory Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
-        {ty: "D", st: {mon: 5, d: 22}, urls: {"en":"https://www.officeholidays.com/holidays/martinique/abolition-day"}, inh: "Abolition Day", notes: {"en":"Slavery Abolition Day\nEmancipation Day"}},
+        {ty: "D", st: {mon: 5, d: 22}, urls: {"en":"https://www.officeholidays.com/holidays/martinique/abolition-day"}, inh: "Abolition Day", nts: {"en":"Slavery Abolition Day\nEmancipation Day"}},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 7, d: 14}, urls: {"en":"https://www.officeholidays.com/holidays/martinique/bastille-day"}, inh: "Bastille Day"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},

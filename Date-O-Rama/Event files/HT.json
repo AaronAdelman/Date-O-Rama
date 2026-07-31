@@ -14,16 +14,16 @@
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/labour-and-agriculture-day/"}, ttls: {"en":"Labour and Agriculture Day","fr":"Fête du Travail"}, fst: {era: 1, y: 1890}, inh: "Labour Day", notes: {"fr":"Fête des Travailleurs"}},
+        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/labour-and-agriculture-day/"}, ttls: {"en":"Labour and Agriculture Day","fr":"Fête du Travail"}, fst: {era: 1, y: 1890}, inh: "Labour Day", nts: {"fr":"Fête des Travailleurs"}},
         {ty: "D", st: {mon: 5, d: 18}, urls: {"en":"https://nationaltoday.com/haitian-flag-day/"}, inh: "Flag Day"},
-        {ty: "D", st: {mon: 5, d: 18}, ttls: {"en":"Flag and Universities’ Day","fr":"Jour du Drapeau et de l’Université"}, notes: {"en":"Universities Day","fr":"Jour de l’Université"}, mog: "🏫"},
+        {ty: "D", st: {mon: 5, d: 18}, ttls: {"en":"Flag and Universities’ Day","fr":"Jour du Drapeau et de l’Université"}, nts: {"en":"Universities Day","fr":"Jour de l’Université"}, mog: "🏫"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 7, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/haiti/haiti-public-holiday"}, ttls: {"en":"Anniversary of the assassination of President Jovenel Moïse","fr":"Anniversaire de l’assassinat du président Jovenel Moïse"}, fst: {era: 1, y: 2022}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 17}, ttls: {"en":"Dessalines Day","fr":"Anniversaire de la mort de Dessalines"}, urls: {"en":"https://nationaltoday.com/dessalines-day/"}, fst: {era: 1, y: 1806}, inh: "*DA*"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
-        {ty: "D", st: {mon: 11, d: 18}, inh: "Army Day", ttls: {"fr":"Le Jour de la Battaille des Vertières","en":"Battle of Vertières Day"}, urls: {"en":"https://nationaltoday.com/battle-of-vertieres-day/"}, notes: {"fr":"Vertières"}},
+        {ty: "D", st: {mon: 11, d: 18}, inh: "Army Day", ttls: {"fr":"Le Jour de la Battaille des Vertières","en":"Battle of Vertières Day"}, urls: {"en":"https://nationaltoday.com/battle-of-vertieres-day/"}, nts: {"fr":"Vertières"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
@@ -35,6 +35,6 @@
         {inh: "Father’s Day", ty: "D", st: {mon: 6, wkd: [1], nth: -1}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: -1}, inh: "Mother’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 6, d: 12}},
-        {ty: "D", st: {mon: 9, d: 20}, ttls: {"en":"Dessalines’s Birthday"}, notes: {"en":"Dessalines Birthday"}, urls: {"en":"https://www.officeholidays.com/holidays/haiti/dessalines-birthday"}, fst: {era: 1, y: 2021}, inh: "*BD*"},
+        {ty: "D", st: {mon: 9, d: 20}, ttls: {"en":"Dessalines’s Birthday"}, nts: {"en":"Dessalines Birthday"}, urls: {"en":"https://www.officeholidays.com/holidays/haiti/dessalines-birthday"}, fst: {era: 1, y: 2021}, inh: "*BD*"},
     ]
 }

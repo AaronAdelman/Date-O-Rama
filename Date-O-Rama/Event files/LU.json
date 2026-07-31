@@ -18,7 +18,7 @@
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon", urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/whit-monday"}},
         {ty: "D", st: {misc: "E", offsetD: 51}, inh: "Whit Tue"},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/mothers-day"}},
-        {ty: "D", st: {mon: 6, d: 23}, ttls: {"de":"Luxemburgischer Nationalfeiertag","en":"Grand Duke’s Official Birthday","fr":"Fête nationale du Luxembourg","he":"יום הולדתו של הדוכס הגדול","id":"Hari Ulang Tahun Resmi Adipati Agung","it":"Festa nazionale del Lussemburgo","lb":"Lëtzebuerger Nationalfeierdag","ms":"Hari Keputeraan Rasmi Grand Duke","nl":"Nationale feestdag van Luxemburg","pt":"Aniversário Oficial do Grande Duque"}, notes: {"en":"National Day","he":"יום הלאומי","lb":"Gehaansdag\nNationalfeierdag"}, urls: {"en":"https://nationaltoday.com/national-day-of-luxembourg/"}, inh: "*BD*"},
+        {ty: "D", st: {mon: 6, d: 23}, ttls: {"de":"Luxemburgischer Nationalfeiertag","en":"Grand Duke’s Official Birthday","fr":"Fête nationale du Luxembourg","he":"יום הולדתו של הדוכס הגדול","id":"Hari Ulang Tahun Resmi Adipati Agung","it":"Festa nazionale del Lussemburgo","lb":"Lëtzebuerger Nationalfeierdag","ms":"Hari Keputeraan Rasmi Grand Duke","nl":"Nationale feestdag van Luxemburg","pt":"Aniversário Oficial do Grande Duque"}, nts: {"en":"National Day","he":"יום הלאומי","lb":"Gehaansdag\nNationalfeierdag"}, urls: {"en":"https://nationaltoday.com/national-day-of-luxembourg/"}, inh: "*BD*"},
 
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fathers-day"}, inh: "Father’s Day"},

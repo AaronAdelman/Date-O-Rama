@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 6, d: 25}, inh: "Independence Day", urls: {"en":"https://nationaltoday.com/mozambique-independence-day/"}, fst: {era: 1, y: 1975}},
         {ty: "D", st: {mon: 9, d: 7}, inh: "Victory Day", urls: {"en":"https://www.officeholidays.com/holidays/mozambique/mozambique-victory-day"}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 9, d: 8, wkd: [2]}, inh: "Victory Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/mozambique/mozambique-victory-day"}, fst: {era: 1, y: 1974}},
-        {ty: "D", st: {mon: 9, d: 25}, inh: "Revolution Day", fst: {era: 1, y: 1964}, urls: {"en":"https://www.officeholidays.com/holidays/mozambique/mozambique-revolution-day"}, notes: {"en":"Armed Forces Day"}},
+        {ty: "D", st: {mon: 9, d: 25}, inh: "Revolution Day", fst: {era: 1, y: 1964}, urls: {"en":"https://www.officeholidays.com/holidays/mozambique/mozambique-revolution-day"}, nts: {"en":"Armed Forces Day"}},
         {ty: "D", st: {mon: 10, d: 4}, inh: "D of Peace and Reconciliation", urls: {"en":"https://www.officeholidays.com/holidays/mozambique/day-of-peace-and-reconciliation"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 10, d: 5, wkd: [2]}, ttls: {"en":"Day of Peace and Reconciliation (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/mozambique/day-of-peace-and-reconciliation"}, fst: {era: 1, y: 1992}, inh: "D of Peace and Reconciliation"},
         {ty: "D", st: {mon: 12, d: 25}, urls: {"en":"https://www.officeholidays.com/holidays/mozambique/christmas-day"}, inh: "Family Day"},

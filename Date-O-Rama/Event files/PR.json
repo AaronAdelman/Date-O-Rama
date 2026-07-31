@@ -44,6 +44,6 @@
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},
         {ty: "D", st: {mon: 12, d: 28}, inh: "Holy Innocents Day"},
         
-        {ty: "D", st: {mon: 9, d: 24}, ttls: {"en":"National Mofongo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mofongo-day/"}, fst: {era: 1, y: 2021}, notes: {"en":"Created by Jose Mendin"}},
+        {ty: "D", st: {mon: 9, d: 24}, ttls: {"en":"National Mofongo Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mofongo-day/"}, fst: {era: 1, y: 2021}, nts: {"en":"Created by Jose Mendin"}},
     ]
 }

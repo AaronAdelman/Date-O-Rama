@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 6, d: 17}, urls: {"en":"https://www.officeholidays.com/holidays/el-salvador/fathers-day"}, inh: "Father’s Day"},
         {inh: "Public Holiday", ty: "D", st: {mon: 7, d: 7, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/el-salvador/el-salvador-public-holiday"}},
         {ty: "nD", st: {mon: 8, d: 4}, end: {mon: 8, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/el-salvador/san-salvador/fiestas-patronales-holiday"}, ttls: {"en":"Fiestas Patronales Holiday"}},
-        {ttls: {"en":"Celebrations of San Salvador","es":"Fiesta de San Salvador"}, ty: "D", st: {mon: 8, d: 6}, fst: {era: 1, y: 1525}, urls: {"en":"https://nationaltoday.com/celebrations-of-san-salvador/"}, notes: {"en":"Fiesta Patronales Holiday"}},
+        {ttls: {"en":"Celebrations of San Salvador","es":"Fiesta de San Salvador"}, ty: "D", st: {mon: 8, d: 6}, fst: {era: 1, y: 1525}, urls: {"en":"https://nationaltoday.com/celebrations-of-san-salvador/"}, nts: {"en":"Fiesta Patronales Holiday"}},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/el-salvador-independence-day/"}},
         {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
@@ -31,7 +31,7 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 1}},
         {ty: "D", st: {mon: 1, d: 16}, urls: {"en":"https://nationaltoday.com/signing-of-the-peace-accords/"}, ttls: {"en":"Signing of the Peace Accords"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 3, d: 26}, ttls: {"en":"National Day of Life, Peace and Justice"}, urls: {"en":"https://nationaltoday.com/national-day-of-life-peace-and-justice/"}, fst: {era: 1, y: 2015}},
-        {ty: "D", st: {mon: 5, d: 3}, ttls: {"en":"Cross Day"}, urls: {"en":"https://nationaltoday.com/cross-day-el-salvador/"}, notes: {"en":"Day of the Cross"}},
-        {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, ttls: {"en":"National Pupusa Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pupusa-day/"}, notes: {"en":"Created by the government of El Salvador"}},
+        {ty: "D", st: {mon: 5, d: 3}, ttls: {"en":"Cross Day"}, urls: {"en":"https://nationaltoday.com/cross-day-el-salvador/"}, nts: {"en":"Day of the Cross"}},
+        {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, ttls: {"en":"National Pupusa Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pupusa-day/"}, nts: {"en":"Created by the government of El Salvador"}},
    ]
 }

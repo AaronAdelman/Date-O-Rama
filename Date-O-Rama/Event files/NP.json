@@ -24,6 +24,6 @@
         {ty: "D", st: {mon: 7, d: 30}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 9, d: 19}, inh: "Constitution Day", urls: {"en":"https://www.officeholidays.com/holidays/nepal/nepali-constitution-day"}, fst: {era: 1, y: 2016}},
-        {ty: "D", st: {mon: 2, d: 19}, ttls: {"en":"Prajatantra Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prajatantra-diwas"}, fst: {era: 1, y: 1951}, notes: {"en":"Democracy Day"}},
+        {ty: "D", st: {mon: 2, d: 19}, ttls: {"en":"Prajatantra Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/nepal/prajatantra-diwas"}, fst: {era: 1, y: 1951}, nts: {"en":"Democracy Day"}},
     ]
 }

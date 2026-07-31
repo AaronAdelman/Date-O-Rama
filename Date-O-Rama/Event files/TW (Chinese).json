@@ -27,6 +27,6 @@
         {ty: "D", st: {mon: 5, d: 13}, ttls: {"en":"Cheng Huang’s Birthday","zh":"城隍爺誕辰"}, inh: "*BD*"},
         {ty: "D", st: {mon: 7, d: 7}, inh: "Qixi Festival"},
         {ty: "D", st: {mon: 7, d: 15}, inh: "Ghost Festival"},
-        {ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Pas-ta’ai","id":"Pas-ta’ai","ig":"Pas-ta’ai","nan":"Pas-taai","zh":"巴斯達隘"}, notes: {"en":"Saisiat Festival","zh":"賽夏節"}, urls: {"en":"https://en.wikipedia.org/wiki/Pas-ta%27ai"}},
+        {ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Pas-ta’ai","id":"Pas-ta’ai","ig":"Pas-ta’ai","nan":"Pas-taai","zh":"巴斯達隘"}, nts: {"en":"Saisiat Festival","zh":"賽夏節"}, urls: {"en":"https://en.wikipedia.org/wiki/Pas-ta%27ai"}},
    ]
 }

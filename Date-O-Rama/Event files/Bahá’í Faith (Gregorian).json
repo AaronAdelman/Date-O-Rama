@@ -8,6 +8,6 @@
         {ty: "D", st: {mon: 11, d: 12}, inh: "Birth of Baháʼu’lláh", last: {era: 1, y: 2014}},
         
         {ty: "D", st: {mon: 1, wkd: [1], nth: 3}, inh: "WReligion Day", fst: {era: 1, y: 1950}},
-        {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, ttls: {"en":"Race Unity Day"}, fst: {era: 1, y: 1957}, urls: {"en":"https://www.daysoftheyear.com/days/race-unity-day/"}, mog: "🫶", notes: {"en":"Race Amity Day\nCreated by the Bahá’í National Spiritual Assembly"}},
+        {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, ttls: {"en":"Race Unity Day"}, fst: {era: 1, y: 1957}, urls: {"en":"https://www.daysoftheyear.com/days/race-unity-day/"}, mog: "🫶", nts: {"en":"Race Amity Day\nCreated by the Bahá’í National Spiritual Assembly"}},
     ]
 }

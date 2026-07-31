@@ -46,7 +46,7 @@
         {ty: "D", st: {mon: 6, d: 28}, inh: "Family Day", fst: {era: 1, y: 2001}, urls: {"en":"https://nationaltoday.com/vietnamese-family-day/"}},
         {inh: "Mother’s Day", ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Vietnamese Women’s Day"}},
         {ty: "D", st: {mon: 6, d: 1}, inh: "IChildren’s Day"},
-        {inh: "Martyrs’ Day", ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Memorial Day for War Martyrs"}, notes: {"en":"Remembrance Day"}},
+        {inh: "Martyrs’ Day", ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Memorial Day for War Martyrs"}, nts: {"en":"Remembrance Day"}},
         {inh: "Revolution Day", ty: "D", st: {mon: 8, d: 19}, fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/revolution-commemoration-day/"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", inh: "Long Tan Day", st: {mon: 8, d: 18}, fst: {era: 1, y: 2016}},

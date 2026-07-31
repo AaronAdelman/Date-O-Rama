@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 4, d: 9}, inh: "Martyrs’ Day", urls: {"en":"https://www.officeholidays.com/holidays/tunisia/tunisia-martyrs-day"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 7, d: 25}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/tunisia-republic-day/"}, fst: {era: 1, y: 1957}},
-        {ty: "D", st: {mon: 8, d: 13}, inh: "Women’s Day", urls: {"en":"https://nationaltoday.com/womens-and-family-day/"}, ttls: {"en":"Women’s and Family Day"}, fst: {era: 1, y: 2017}, notes: {"en":"Women’s Day"}},
+        {ty: "D", st: {mon: 8, d: 13}, inh: "Women’s Day", urls: {"en":"https://nationaltoday.com/womens-and-family-day/"}, ttls: {"en":"Women’s and Family Day"}, fst: {era: 1, y: 2017}, nts: {"en":"Women’s Day"}},
         {inh: "Evacuation Day", ty: "D", st: {mon: 10, d: 15}, urls: {"en":"https://nationaltoday.com/tunisia-evacuation-day/"}, fst: {era: 1, y: 1962}},
         {ty: "D", st: {mon: 12, d: 17}, ttls: {"en":"Revolution and Youth Day"}, mog: "䷰👦👧", fst: {era: 1, y: 2010}},
 

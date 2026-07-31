@@ -12,7 +12,7 @@
         {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiJafari"}},
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiJafari"}},
 
-        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
-        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrTehran"}, notes: {"en":"Institute of Geophysics, University of Tehran"}},
+        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribTehran"}, nts: {"en":"Institute of Geophysics, University of Tehran"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrTehran"}, nts: {"en":"Institute of Geophysics, University of Tehran"}},
     ]
 }

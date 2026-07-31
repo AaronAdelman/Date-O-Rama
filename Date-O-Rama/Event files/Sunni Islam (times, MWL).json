@@ -11,7 +11,7 @@
         {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
         
-        {inh: "Isha", ty: "pt", st: {ptTy: "IshaMWL"}, notes: {"en":"Muslim World League"}},
-        {ttls: {"en":"Fajr (MWL)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (MWL)"}, ty: "pt", st: {ptTy: "FajrMWL"}, notes: {"en":"Muslim World League"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaMWL"}, nts: {"en":"Muslim World League"}},
+        {ttls: {"en":"Fajr (MWL)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (MWL)"}, ty: "pt", st: {ptTy: "FajrMWL"}, nts: {"en":"Muslim World League"}},
     ]
 }

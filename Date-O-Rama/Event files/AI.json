@@ -26,11 +26,11 @@
         {ty: "D", st: {mon: 8, d: 4, thruD: 10, wkd: [5]}, ttls: {"en":"August Thursday"}, urls: {"en":"https://www.officeholidays.com/holidays/anguilla/august-thursday"}},
         {ty: "D", st: {mon: 8, d: 5, thruD: 11, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/anguilla/anguilla-constitution-day"}, inh: "Constitution Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 12, d: 19}, ttls: {"en":"National Heroes and Heroines Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-heroines-day/"}, fst: {era: 1, y: 1967}, notes: {"en":"National Heroes Day"}},
+        {ty: "D", st: {mon: 12, d: 19}, ttls: {"en":"National Heroes and Heroines Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-heroines-day/"}, fst: {era: 1, y: 1967}, nts: {"en":"National Heroes Day"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
     ],
     tpls: {
-        "Celebration of the Birthday of His Majesty the King": {ty: "D", st: {mon: 6, wkd: [2], nth: 2}, ttls: {"en":"Celebration of the Birthday of His Majesty the King"}, urls: {"en":"https://www.officeholidays.com/holidays/anguilla/king-charles-birthday"}, inh: "King Charles’ Birthday", notes: {"en":"Sovereignty Day"}},
+        "Celebration of the Birthday of His Majesty the King": {ty: "D", st: {mon: 6, wkd: [2], nth: 2}, ttls: {"en":"Celebration of the Birthday of His Majesty the King"}, urls: {"en":"https://www.officeholidays.com/holidays/anguilla/king-charles-birthday"}, inh: "King Charles’ Birthday", nts: {"en":"Sovereignty Day"}},
     }
 }

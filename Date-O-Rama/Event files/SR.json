@@ -13,7 +13,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Worker’s Day", urls: {"en":"https://www.officeholidays.com/holidays/suriname/labour-day"}},
-        {ty: "D", st: {mon: 7, d: 1}, ttls: {"ar":"كيتي كوتي","de":"Ketikoti","en":"Ketikoti","es":"Ketikoti","eu":"Ketikoti","fr":"Ketikoti","fy":"Ketikoti","hy":"Կետի Կոտի","li":"Keti Koti","mk":"Кетикоти","nl":"Ketikoti","pap":"Ketikoti","pl":"Ketikoti","pt":"Ketikoti","ru":"Кетикоти","zh":"荷兰废除奴隶制日"}, notes: {"en":"Keti Koti"}, urls: {"en":"https://nationaltoday.com/keti-koti/"}, inh: "Emancipation Day", fst: {era: 1, y: 1863}},
+        {ty: "D", st: {mon: 7, d: 1}, ttls: {"ar":"كيتي كوتي","de":"Ketikoti","en":"Ketikoti","es":"Ketikoti","eu":"Ketikoti","fr":"Ketikoti","fy":"Ketikoti","hy":"Կետի Կոտի","li":"Keti Koti","mk":"Кетикоти","nl":"Ketikoti","pap":"Ketikoti","pl":"Ketikoti","pt":"Ketikoti","ru":"Кетикоти","zh":"荷兰废除奴隶制日"}, nts: {"en":"Keti Koti"}, urls: {"en":"https://nationaltoday.com/keti-koti/"}, inh: "Emancipation Day", fst: {era: 1, y: 1863}},
         {ty: "D", st: {mon: 8, d: 9}, ttls: {"en":"Indigenous People’s Day","he":"יום העמים הילידים"}, urls: {"en":"https://nationaltoday.com/suriname-indigenous-peoples-day/"}},
         {ty: "D", st: {mon: 10, d: 10}, ttls: {"en":"Maroons Day"}, urls: {"en":"https://nationaltoday.com/maroons-day/"}, fst: {era: 1, y: 2011}},
         {inh: "Independence Day", ty: "D", st: {mon: 11, d: 25}, fst: {era: 1, y: 1975}, urls: {"en":"https://nationaltoday.com/suriname-independence-day/"}},

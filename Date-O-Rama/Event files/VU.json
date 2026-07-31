@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/vanuatu/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
         {ty: "D", st: {mon: 2, d: 21}, urls: {"en":"https://nationaltoday.com/father-lini-day/"}, ttls: {"en":"Father Lini Day"}, fst: {era: 1, y: 1999}},
-        {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Custom Chief’s Day"}, urls: {"en":"https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}, notes: {"en":"Chiefs Day"}},
+        {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Custom Chief’s Day"}, urls: {"en":"https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}, nts: {"en":"Chiefs Day"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

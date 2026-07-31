@@ -11,7 +11,7 @@
         {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
  
-        {inh: "Isha", ty: "pt", st: {ptTy: "IshaEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
-        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrEgypt"}, notes: {"en":"Egyptian General Authority of Survey"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaEgypt"}, nts: {"en":"Egyptian General Authority of Survey"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrEgypt"}, nts: {"en":"Egyptian General Authority of Survey"}},
     ]
 }

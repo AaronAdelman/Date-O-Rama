@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "Republic Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
         {ty: "D", st: {mon: 2, d: 27, wkd: [2, 6]}, ttls: {"en":"Peace Memorial Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}},
-        {ty: "D", st: {mon: 2, d: 28}, ttls: {"en":"Peace Memorial Day","zh":"228和平紀念日"}, urls: {"en":"https://nationaltoday.com/228-memorial-day/"}, fst: {era: 1, y: 1995}, notes: {"en":"228 Memorial Day\n228 Peace Day\nFebruary 28 Peace Memorial Day"}},
+        {ty: "D", st: {mon: 2, d: 28}, ttls: {"en":"Peace Memorial Day","zh":"228和平紀念日"}, urls: {"en":"https://nationaltoday.com/228-memorial-day/"}, fst: {era: 1, y: 1995}, nts: {"en":"228 Memorial Day\n228 Peace Day\nFebruary 28 Peace Memorial Day"}},
         {ty: "D", st: {mon: 3, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}, ttls: {"en":"Peace Memorial Day (in lieu)"}},
         {ty: "D", st: {mon: 4, d: 3, wkd: [2, 5, 6]}, ttls: {"en":"Children’s Day (in lieu)"}, inh: "Children’s Day", fst: {era: 1, y: 1931}},
         {ty: "D", st: {mon: 4, d: 4}, inh: "Children’s Day", fst: {era: 1, y: 1931}},
@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/labour-day"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 8, d: 8}, inh: "Father’s Day"},
-        {ty: "D", st: {mon: 10, d: 10}, inh: "NDay", notes: {"en":"Double Ten Day","zh":"雙十節"}, urls: {"en":"https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, fst: {era: 1, y: 1911}},
+        {ty: "D", st: {mon: 10, d: 10}, inh: "NDay", nts: {"en":"Double Ten Day","zh":"雙十節"}, urls: {"en":"https://nationaltoday.com/taiwan-national-day-double-ten-day/"}, fst: {era: 1, y: 1911}},
         
         {ty: "D", st: {mon: 3, d: 12}, inh: "Arbor Day"},
         {inh: "Youth Day", ty: "D", st: {mon: 3, d: 29}},
@@ -32,7 +32,7 @@
         {ty: "D", st: {mon: 9, d: 28}, ttls: {"en":"Confucius’s Birthday","nl":"Verjaardag van Confucius","uk":"День народження Конфуція","yue":"孔聖誕","zh":"孔子誕辰日"}, inh: "Teacher’s Day", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {ty: "D", st: {mon: 9, d: 29, wkd: [2]}, ttls: {"en":"Confucius’s Birthday (in lieu)"}, inh: "Teacher’s Day", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"Overseas Chinese Day","zh":"華僑節"}},
-        {ty: "D", st: {mon: 10, d: 25}, ttls: {"de":"Taiwan-Rückgabe-Tag","en":"Retrocession Day","es":"Adhesión de Taiwán a la República de China","fr":"Jour de la Rétrocession","id":"Hari Penyerahan Kembali","ja":"台湾光復節","ko":"대만광복절","ms":"Hari Penyerahan Kembali","si":"යටත්ව සිටීමෙන් මිදීමේ දිනය","uk":"День ретроцесії Тайваню","vi":"Ngày Tái Độc lập","yue":"臺灣光復節","zh":"臺灣光復節"}, notes: {"en":"Taiwan Retrocession Day"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
+        {ty: "D", st: {mon: 10, d: 25}, ttls: {"de":"Taiwan-Rückgabe-Tag","en":"Retrocession Day","es":"Adhesión de Taiwán a la República de China","fr":"Jour de la Rétrocession","id":"Hari Penyerahan Kembali","ja":"台湾光復節","ko":"대만광복절","ms":"Hari Penyerahan Kembali","si":"යටත්ව සිටීමෙන් මිදීමේ දිනය","uk":"День ретроцесії Тайваню","vi":"Ngày Tái Độc lập","yue":"臺灣光復節","zh":"臺灣光復節"}, nts: {"en":"Taiwan Retrocession Day"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
         {ty: "D", st: {mon: 10, d: 24, wkd: [6]}, inh: "Retrocession Day (in lieu)"},
         {ty: "D", st: {mon: 10, d: 26, wkd: [2]}, inh: "Retrocession Day (in lieu)"},
         {ty: "D", st: {mon: 11, d: 12}, ttls: {"en":"Sun Yat-sen’s Birthday","zh":"國父誕辰紀念日"}, inh: "*BD*"},
@@ -47,6 +47,6 @@
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
   ],
     tpls: {
-        "Retrocession Day (in lieu)": {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"Retrocession Day (in lieu)"}, notes: {"en":"Taiwan Retrocession Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
+        "Retrocession Day (in lieu)": {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"Retrocession Day (in lieu)"}, nts: {"en":"Taiwan Retrocession Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
     }
 }

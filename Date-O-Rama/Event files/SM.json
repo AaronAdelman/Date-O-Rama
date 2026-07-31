@@ -18,9 +18,9 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
-        {ty: "D", st: {mon: 7, d: 28}, ttls: {"en":"Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, fst: {era: 1, y: 1943}, notes: {"en":"Liberation from Fascism"}},
+        {ty: "D", st: {mon: 7, d: 28}, ttls: {"en":"Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, fst: {era: 1, y: 1943}, nts: {"en":"Liberation from Fascism"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
-        {ty: "D", st: {mon: 9, d: 3}, ttls: {"ceb":"Pitsa sa pagkatukod","en":"Foundation Day"}, urls: {"en":"https://nationaltoday.com/foundation-day-in-san-marino/"}, fst: {era: 1, y: 301}, notes: {"en":"Feast of Saint Marinus and the Republic"}},
+        {ty: "D", st: {mon: 9, d: 3}, ttls: {"ceb":"Pitsa sa pagkatukod","en":"Foundation Day"}, urls: {"en":"https://nationaltoday.com/foundation-day-in-san-marino/"}, fst: {era: 1, y: 301}, nts: {"en":"Feast of Saint Marinus and the Republic"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 11, d: 2}, urls: {"en":"https://www.officeholidays.com/holidays/san-marino/all-souls-day"}, ttls: {"en":"Commemoration of the Dead"}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
@@ -30,6 +30,6 @@
         {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
     ],
     tpls: {
-        "Investiture of the New Captains Regent": {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Investiture of the Captains Regent"}, notes: {"en":"Investiture of the New Captains Regent"}, urls: {"en":"https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},
+        "Investiture of the New Captains Regent": {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Investiture of the Captains Regent"}, nts: {"en":"Investiture of the New Captains Regent"}, urls: {"en":"https://nationaltoday.com/investiture-of-the-captains-regent-in-san-marino/"}},
     }
 }

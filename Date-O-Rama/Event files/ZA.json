@@ -13,14 +13,14 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri", fst: {era: 1, y: 1910}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Family Day", urls: {"en":"https://www.officeholidays.com/holidays/south-africa/easter-monday"}, fst: {era: 1, y: 1980}},
-        {ty: "D", st: {mon: 4, d: 27}, inh: "Freedom Day", urls: {"en":"https://www.daysoftheyear.com/days/freedom-day-south-africa/"}, fst: {era: 1, y: 1995}, notes: {"en":"Created by the government of South Africa"}},
+        {ty: "D", st: {mon: 4, d: 27}, inh: "Freedom Day", urls: {"en":"https://www.daysoftheyear.com/days/freedom-day-south-africa/"}, fst: {era: 1, y: 1995}, nts: {"en":"Created by the government of South Africa"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkers’ Day", urls: {"en":"https://www.officeholidays.com/holidays/south-africa/labour-day"}, fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 6, d: 16}, inh: "Youth Day", fst: {era: 1, y: 1995}, urls: {"en":"https://www.gov.za/youth-day"}},
         {ty: "D", st: {mon: 6, d: 17, wkd: [2]}, inh: "Youth Day (in lieu)", fst: {era: 1, y: 1995}, urls: {"en":"https://www.gov.za/youth-day"}},
         {ty: "D", st: {mon: 8, d: 9}, inh: "NWomen’s Day", fst: {era: 1, y: 1995}, urls: {"en":"https://www.daysoftheyear.com/days/national-womens-day/"}},
         {ty: "D", st: {mon: 9, d: 24}, inh: "Heritage Day", fst: {era: 1, y: 1996}, urls: {"en":"https://www.daysoftheyear.com/days/heritage-day/"}},
         {ty: "D", st: {mon: 9, d: 25, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/south-africa/heritage-day"}, ttls: {"en":"Heritage Day (in lieu)"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 12, d: 16}, ttls: {"af":"Versoeningsdag","ar":"يوم المصالحة","en":"Day of Reconciliation","es":"Día de la Reconciliación","id":"Hari Rekonsiliasi","nl":"Verzoeningsdag","pt":"Dia da Reconciliação","ru":"День примирения","sv":"Day of Reconciliation","zu":"Usuku lokubuyisana"}, fst: {era: 1, y: 1995}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-reconciliation/"}, mog: "🫶", notes: {"en":"Created by the government of South Africa"}},
+        {ty: "D", st: {mon: 12, d: 16}, ttls: {"af":"Versoeningsdag","ar":"يوم المصالحة","en":"Day of Reconciliation","es":"Día de la Reconciliación","id":"Hari Rekonsiliasi","nl":"Verzoeningsdag","pt":"Dia da Reconciliação","ru":"День примирения","sv":"Day of Reconciliation","zu":"Usuku lokubuyisana"}, fst: {era: 1, y: 1995}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-reconciliation/"}, mog: "🫶", nts: {"en":"Created by the government of South Africa"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas", fst: {era: 1, y: 1910}},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://nationaltoday.com/day-of-goodwill/"}, ttls: {"en":"Day of Goodwill"}, fst: {era: 1, y: 1994}, fst: {era: 1, y: 1910}},
         
@@ -55,8 +55,8 @@
         {ty: "D", st: {mon: 9, d: 1}, inh: "Spring Day"},
         {ty: "D", st: {mon: 6, d: 4}, inh: "ID of Innocent Children Victims of Aggression", fst: {era: 1, y: 1983}},
         {ty: "D", st: {mon: 6, wkd: [5], nth: 2}, inh: "NFarm WorkersD"},
-        {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Amagwinya Day"}, urls: {"en":"https://www.daysoftheyear.com/days/amagwinya-day/"}, notes: {"en":"Vetkoek Day\nCreated by Olive Pride"}, fst: {era: 1, y: 2017}},
-        {ty: "D", st: {mon: 10, wkd: [7], nth: 2}, ttls: {"en":"Pinotage Day"}, urls: {"en":"https://pinotage.co.za/"}, mog: "🍇", fst: {era: 1, y: 2014}, notes: {"en":"National Pinotage Day\nInternational Pinotage Day"}},
-        {ty: "D", st: {mon: 9, d: 1}, ttls: {"en":"Cap Classique Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cap-classique-day/"}, fst: {era: 1, y: 2020}, notes: {"en":"Cap Classique Producers Association."}},
+        {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Amagwinya Day"}, urls: {"en":"https://www.daysoftheyear.com/days/amagwinya-day/"}, nts: {"en":"Vetkoek Day\nCreated by Olive Pride"}, fst: {era: 1, y: 2017}},
+        {ty: "D", st: {mon: 10, wkd: [7], nth: 2}, ttls: {"en":"Pinotage Day"}, urls: {"en":"https://pinotage.co.za/"}, mog: "🍇", fst: {era: 1, y: 2014}, nts: {"en":"National Pinotage Day\nInternational Pinotage Day"}},
+        {ty: "D", st: {mon: 9, d: 1}, ttls: {"en":"Cap Classique Day"}, urls: {"en":"https://www.daysoftheyear.com/days/cap-classique-day/"}, fst: {era: 1, y: 2020}, nts: {"en":"Cap Classique Producers Association."}},
    ]
 }

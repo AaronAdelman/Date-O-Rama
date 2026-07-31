@@ -16,11 +16,11 @@
             {ty: "D", st: {mon: 2, d: 14}, ttls: {"en":"Feast of Vali"}},
             
             {ty: "D", st: {mon: 3, d: 9}, ttls: {"en":"Day of Remembrance for Oliver the Martyr"}, inh: "*Remembrance*"},
-            {ty: "D", st: {mon: 3, d: 20}, inh: "Ostara", notes: {"en":"High Feast of Ostara"}},
+            {ty: "D", st: {mon: 3, d: 20}, inh: "Ostara", nts: {"en":"High Feast of Ostara"}},
             {ty: "D", st: {mon: 3, d: 28}, ttls: {"en":"Ragnar Lodbrok Day"}},
             
             {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"Day of Remembrance for Jarl Hakon of Norway"}, inh: "*Remembrance*"},
-            {ty: "D", st: {mon: 4, d: 15}, ttls: {"en":"Sigrblot"}, notes: {"en":"Sumarsdag"}},
+            {ty: "D", st: {mon: 4, d: 15}, ttls: {"en":"Sigrblot"}, nts: {"en":"Sumarsdag"}},
             {ty: "D", st: {mon: 4, d: 22}, ttls: {"en":"Yggdrasil Day"}},
             {ty: "D", st: {mon: 4, d: 30}, ttls: {"en":"Walburg"}},
             
@@ -45,7 +45,7 @@
             
             {ty: "D", st: {mon: 10, d: 8}, ttls: {"en":"Day of Remembrance for Erik the Red"}, inh: "*Remembrance*"},
             {ty: "D", st: {mon: 10, d: 9}, ttls: {"en":"Day of Remembrance for Leif Erikson"}, inh: "*Remembrance*"},
-            {ty: "D", st: {mon: 10, d: 14}, ttls: {"en":"Winter Nights"}, notes: {"en":"Vetrablot"}},
+            {ty: "D", st: {mon: 10, d: 14}, ttls: {"en":"Winter Nights"}, nts: {"en":"Vetrablot"}},
             
             {ty: "D", st: {mon: 11, d: 9}, ttls: {"en":"Day of Remembrance for Queen Sigrith of Sweden"}, inh: "*Remembrance*"},
             {ty: "D", st: {mon: 11, d: 11}, ttls: {"en":"Feast of the Einherjar"}},
@@ -53,7 +53,7 @@
             
             {ty: "D", st: {mon: 12, d: 9}, ttls: {"en":"Day of Remembrance for Egil Skallagrimsson"}, inh: "*Remembrance*"},
             {ty: "D", st: {mon: 12, d: 21}, ttls: {"en":"Mother Night"}},
-            {ty: "D", st: {mon: 12, d: 22}, inh: "Yule", notes: {"en":"High Feast of Yule"}},
+            {ty: "D", st: {mon: 12, d: 22}, inh: "Yule", nts: {"en":"High Feast of Yule"}},
             {ty: "D", st: {mon: 12, d: 31}, inh: "12th Nite"},
         ]},
     ]

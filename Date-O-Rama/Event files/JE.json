@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1204},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
-        {ty: "D", st: {misc: "E", offsetD: -21}, inh: "Mothering Sun", notes: {"en":"Mother’s Day"}},
+        {ty: "D", st: {misc: "E", offsetD: -21}, inh: "Mothering Sun", nts: {"en":"Mother’s Day"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

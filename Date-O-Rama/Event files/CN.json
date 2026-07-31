@@ -32,7 +32,7 @@
         {ty: "D", st: {mon: 8, d: 1}, inh: "Army Day", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, ttls: {"en":"People’s Liberation Army Day","he":"יום צבא השחרור של העם","zh_CN":"建军节"}},
 
         {ty: "D", st: {mon: 3, d: 12}, inh: "Arbor Day"},
-        {ttls: {"en":"C.P.C. Founding Day","zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, notes: {"en":"Chinese Communist Party Founding Day"}},
+        {ttls: {"en":"C.P.C. Founding Day","zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, nts: {"en":"Chinese Communist Party Founding Day"}},
         {inh: "NMaritime Day", ty: "D", st: {mon: 7, d: 11}, ttls: {"en":"China National Maritime Day","zh_CN":"中国航海日"}, urls: {"en":"https://en.wikipedia.org/wiki/China_National_Maritime_Day"}},
         {ty: "D", st: {mon: 9, d: 3}, inh: "VJ Day", fst: {era: 1, y: 2014}},
         {inh: "Martyrs’ Day", ty: "D", st: {mon: 9, d: 30}, fst: {era: 1, y: 2014}, urls: {"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
@@ -61,7 +61,7 @@
         {ttls: {"en":"Xishuangbanna Prefecture Foundation Day"}, ty: "D", st: {mon: 1, d: 23}},
         {ttls: {"en":"Yanbian Prefecture Foundation Day"}, ty: "D", st: {mon: 9, d: 3}},
         {ty: "D", st: {mon: 3, d: 28}, urls: {"en":"https://nationaltoday.com/serfs-emancipation-day/"}, ttls: {"en":"Serfs’ Emancipation Day"}},
-        {ty: "D", st: {mon: 11, d: 11}, ttls: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, notes: {"en":"Singles Day\nDouble 11\nBachelors’ Day","zh_CN":"双11","zh":"雙11"}, fst: {era: 1, y: 1993}},
+        {ty: "D", st: {mon: 11, d: 11}, ttls: {"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls: {"en":"https://www.daysoftheyear.com/days/singles-day/"}, nts: {"en":"Singles Day\nDouble 11\nBachelors’ Day","zh_CN":"双11","zh":"雙11"}, fst: {era: 1, y: 1993}},
         
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
@@ -69,7 +69,7 @@
         {ty: "D", st: {mon: 4, d: 23}, inh: "Navy Day"},
         {ty: "D", st: {mon: 3, d: 3}, ttls: {"en":"Peach Blossom Day"}, urls: {"en":"https://www.daysoftheyear.com/days/peach-blossom-day/"}, mog: "⚘"},
         {ty: "M", st: {mon: 6}, ttls: {"en":"Care For Your Grandparents Month"}, urls: {"en":"https://www.daysoftheyear.com/days/care-for-your-grandparents-month/"}, mog: "👴👵"},
-        {ty: "D", st: {mon: 6, d: 18}, ttls: {"en":"618 shopping day"}, urls: {"en":"https://en.wikipedia.org/wiki/618_shopping_day"}, fst: {era: 1, y: 1997}, notes: {"en":"Created by JD.com"}},
+        {ty: "D", st: {mon: 6, d: 18}, ttls: {"en":"618 shopping day"}, urls: {"en":"https://en.wikipedia.org/wiki/618_shopping_day"}, fst: {era: 1, y: 1997}, nts: {"en":"Created by JD.com"}},
         {ty: "D", st: {mon: 10, d: 24}, inh: "Programmers Day", fst: {era: 1, y: 2018}, urls: {"en":"https://www.timeanddate.com/holidays/world/international-programmers-day"}},
     ]
 }

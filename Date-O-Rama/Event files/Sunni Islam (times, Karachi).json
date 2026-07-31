@@ -11,7 +11,7 @@
         {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
         {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
         
-        {inh: "Isha", ty: "pt", st: {ptTy: "IshaKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
-        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrKarachi"}, notes: {"en":"University of Islamic Sciences, Karachi"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
     ]
 }

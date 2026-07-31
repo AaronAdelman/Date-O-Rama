@@ -13,7 +13,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 25}, inh: "Liberation Day", fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/national-liberation-day-italy/"}},
-        {ty: "D", st: {mon: 4, d: 25}, inh: "St Mark the Evangelist", notes: {"en":"Feast of Saint Mark"}},
+        {ty: "D", st: {mon: 4, d: 25}, inh: "St Mark the Evangelist", nts: {"en":"Feast of Saint Mark"}},
         {ty: "D", st: {mon: 4, d: 28}, urls: {"en":"https://www.officeholidays.com/holidays/italy/sardinia/sardinia-day"}, ttls: {"en":"Sardinia’s Day"}, fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
@@ -41,7 +41,7 @@
         {ty: "D", st: {mon: 11, d: 4}, urls: {"en":"https://en.wikipedia.org/wiki/National_Unity_and_Armed_Forces_Day"}, ttls: {"en":"National Unity and Armed Forces Day","it":"Giorno dell’Unità Nazionale e Festa delle Forze Armate"}, fst: {era: 1, y: 1919}},
         {ty: "D", st: {mon: 11, d: 12}, ttls: {"en":"Remembrance Day for Military and Civilians Fallen in International Peace Missions","it":"Giornata del ricordo dei Caduti militari e civili nelle missioni internazionali per la pace"}, fst: {era: 1, y: 2009}},
 
-        {ty: "D", st: {mon: 1, d: 7}, ttls: {"en":"Tricolour Day","it":"Giornata Nazionale della Bandiera"}, fst: {era: 1, y: 1997}, inh: "NFlag Day", notes: {"en":"National Flag Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Tricolour_Day"}},
+        {ty: "D", st: {mon: 1, d: 7}, ttls: {"en":"Tricolour Day","it":"Giornata Nazionale della Bandiera"}, fst: {era: 1, y: 1997}, inh: "NFlag Day", nts: {"en":"National Flag Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Tricolour_Day"}},
         {ty: "D", st: {mon: 1, d: 26}, ttls: {"en":"National Day of Remembrance and Sacrifice of the Alpini","it":"Giornata nazionale della memoria e del sacrificio degli Alpini"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 2, d: 1}, ttls: {"en":"National Day of Civilian Victims of Wars and Conflicts in the World","it":"Giornata nazionale delle vittime civili delle guerre e dei conflitti nel mondo"}, fst: {era: 1, y: 2017}},
@@ -82,7 +82,7 @@
         {ty: "D", st: {mon: 10, d: 9}, ttls: {"en":"National Polenta Day"}, urls: {"en":"https://www.visititaly.eu/food-and-flavours/9-october-national-polenta-day-history-facts-recipes"}},
         {ty: "D", st: {mon: 7, d: 2}, ttls: {"en":"Palio Horse Race in Siena"}, urls: {"en":"https://www.daysoftheyear.com/days/palio-horse-race-in-siena/"}, mog: "🏇", fst: {era: 1, y: 1633}},
         {ty: "D", st: {mon: 10, wkd: [7], nth: 1}, ttls: {"en":"Polenta Festival"}, urls: {"en":"https://www.daysoftheyear.com/days/polenta-festival/"}, fst: {era: 1, y: 2015}},
-        {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"National Carbonara Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-carbonara-day/"}, fst: {era: 1, y: 2017}, mog: "🍝", notes: {"en":"Created by the Italian Association of Confectionery and Pasta Industries (AIDEPI) and the International Pasta Organization (IPO)"}},
-        {ty: "D", st: {mon: 5, d: 17}, ttls: {"en":"National Pinot Grigio Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pinot-grigio-day/"}, fst: {era: 1, y: 2018}, mog: "🍷", notes: {"en":"Created by the Cavit winery"}},
+        {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"National Carbonara Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-carbonara-day/"}, fst: {era: 1, y: 2017}, mog: "🍝", nts: {"en":"Created by the Italian Association of Confectionery and Pasta Industries (AIDEPI) and the International Pasta Organization (IPO)"}},
+        {ty: "D", st: {mon: 5, d: 17}, ttls: {"en":"National Pinot Grigio Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pinot-grigio-day/"}, fst: {era: 1, y: 2018}, mog: "🍷", nts: {"en":"Created by the Cavit winery"}},
     ]
 }

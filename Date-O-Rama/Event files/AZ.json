@@ -25,7 +25,7 @@
         {ty: "D", st: {mon: 3, d: 26, wkd: [5]}, inh: "Nowruz Holiday", urls: {"en":"https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-novruz"}},
         {ty: "D", st: {mon: 3, d: 27, wkd: [6]}, inh: "Nowruz Holiday", urls: {"en":"https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-novruz"}},
         {ty: "D", st: {mon: 5, d: 9}, inh: "Victory Day (May 9)"},
-        {ty: "D", st: {mon: 5, d: 28}, inh: "Republic Day", urls: {"en":"https://www.daysoftheyear.com/days/republic-day-in-azerbaijan/"}, fst: {era: 1, y: 1918}, notes: {"en":"Founding of the Democratic Republic of Azerbaijan\nIndependence Day"}},
+        {ty: "D", st: {mon: 5, d: 28}, inh: "Republic Day", urls: {"en":"https://www.daysoftheyear.com/days/republic-day-in-azerbaijan/"}, fst: {era: 1, y: 1918}, nts: {"en":"Founding of the Democratic Republic of Azerbaijan\nIndependence Day"}},
         {ty: "D", st: {mon: 5, d: 29, thruD: 30, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-republic-day"}, fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 6, d: 15}, ttls: {"en":"National Salvation Day","az":"Azərbaycan xalqının Milli Qurtuluş günü"}, urls: {"en":"https://nationaltoday.com/national-salvation-day/"}, fst: {era: 1, y: 1998}},
         {ty: "D", st: {mon: 6, d: 16, thruD: 17, wkd: [2]}, ttls: {"en":"National Salvation Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/national-salvation-day/"}, fst: {era: 1, y: 1998}},
@@ -36,7 +36,7 @@
         {ty: "D", st: {mon: 11, d: 10, wkd: [2, 3]}, inh: "Victory Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/azerbaijan/azerbaijani-victory-day"}},
         {ty: "D", st: {mon: 11, d: 11, wkd: [3]}, ttls: {"en":"Flag Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/azerbaijan/azerbaijan-flag-day"}, fst: {era: 1, y: 2009}},
 
-        {ty: "D", st: {mon: 12, d: 31}, ttls: {"az":"Dünya Azərbaycanlılarının Həmrəyliyi Günü","azb":"دونیا آذربایجانلی‌لاری‌نین هم‌رأی‌لیگی گونو","en":"International Solidarity Day of Azerbaijanis","fa":"روز همبستگی آذری‌های جهان","hy":"Աշխարհի ադրբեջանցիների համերաշխության օր","ka":"მსოფლიო აზერბაიჯანელთა სოლიდარობის დღე","pl":"Dzień Solidarności","ru":"День солидарности азербайджанцев всего мира","tr":"Dünya Azerbaycanlılarının Dayanışma Günü","uz":"Butun dunyo ozarbayjonlarining birdamlik kuni"}, urls: {"en":"https://nationaltoday.com/world-azerbaijanis-solidarity-day/"}, fst: {era: 1, y: 1991}, notes: {"en":"World Azerbaijanis Solidarity Day"}},
+        {ty: "D", st: {mon: 12, d: 31}, ttls: {"az":"Dünya Azərbaycanlılarının Həmrəyliyi Günü","azb":"دونیا آذربایجانلی‌لاری‌نین هم‌رأی‌لیگی گونو","en":"International Solidarity Day of Azerbaijanis","fa":"روز همبستگی آذری‌های جهان","hy":"Աշխարհի ադրբեջանցիների համերաշխության օր","ka":"მსოფლიო აზერბაიჯანელთა სოლიდარობის დღე","pl":"Dzień Solidarności","ru":"День солидарности азербайджанцев всего мира","tr":"Dünya Azerbaycanlılarının Dayanışma Günü","uz":"Butun dunyo ozarbayjonlarining birdamlik kuni"}, urls: {"en":"https://nationaltoday.com/world-azerbaijanis-solidarity-day/"}, fst: {era: 1, y: 1991}, nts: {"en":"World Azerbaijanis Solidarity Day"}},
         
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 3, d: 17}, inh: "Children’s Day"},
@@ -63,7 +63,7 @@
         {ty: "D", st: {mon: 8, d: 2}, ttls: {"en":"National Day of Azerbaijani Cinema","he":"היום הלאומי של הקולנוע האזרבייג׳אני"}},
         {ty: "D", st: {mon: 9, d: 15}, ttls: {"en":"Day of Knowledge"}, urls: {"en":"https://en.wikipedia.org/wiki/Knowledge_Day"}},
         {ty: "D", st: {mon: 9, d: 18}, ttls: {"en":"Day of National Music"}, mog: "🎼"},
-        {ty: "D", st: {mon: 9, d: 20}, ttls: {"en":"Day of Azerbaijani Oil","he":"יום הנפט האזרבייג׳אני"}, notes: {"en":"Oil Workers’ Day"}, mog: "🛢️"},
+        {ty: "D", st: {mon: 9, d: 20}, ttls: {"en":"Day of Azerbaijani Oil","he":"יום הנפט האזרבייג׳אני"}, nts: {"en":"Oil Workers’ Day"}, mog: "🛢️"},
         {ty: "D", st: {mon: 9, d: 27}, inh: "Memorial Day", urls: {"en":"https://en.wikipedia.org/wiki/Memorial_Day_(Azerbaijan)"}, fst: {era: 1, y: 2021}},
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"en":"Day of Prosecutors"}},
         {ty: "D", st: {mon: 10, d: 13}, ttls: {"en":"Day of Azerbaijani Railway"}},
@@ -74,7 +74,7 @@
         {ty: "D", st: {mon: 12, d: 6}, ttls: {"en":"Day of the Ministry of Communications and Information Technologies of Azerbaijan"}},
         {ty: "D", st: {mon: 12, d: 12}, ttls: {"en":"Memorial Day of Heydar Aliyev"}},
         {ty: "D", st: {mon: 12, d: 16}, ttls: {"en":"Day of Azerbaijani Ministry of Emergency Situations"}},
-        {ty: "nD", st: {mon: 10, d: 26}, end: {mon: 11, d: 10}, ttls: {"en":"Pomegranate Festival"}, notes: {"en":"Nar Bayrami"}, urls: {"en":"https://www.daysoftheyear.com/days/pomegranate-festival/"}, fst: {era: 1, y: 2006}},
+        {ty: "nD", st: {mon: 10, d: 26}, end: {mon: 11, d: 10}, ttls: {"en":"Pomegranate Festival"}, nts: {"en":"Nar Bayrami"}, urls: {"en":"https://www.daysoftheyear.com/days/pomegranate-festival/"}, fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 1, d: 27}, ttls: {"en":"Day of the Tragedy and Heroism of the Jews"}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Day of the Border Guard"}, inh: "Border Guards Day", fst: {era: 1, y: 2000}},
     ]

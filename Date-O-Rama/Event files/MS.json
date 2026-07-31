@@ -15,15 +15,15 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/labour-monday"}, notes: {"en":"Labour Monday"}},
+        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/montserrat/labour-monday"}, nts: {"en":"Labour Monday"}},
         {ty: "D", st: {era: 1, y: 2023, mon: 5, d: 8, inh: "King Charles III’s Coronation"}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/king-charles-iiis-coronation"}},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 6, wkd: [2], d: 16, thrud: 19}, inh: "King Charles’ Birthday", fst: {era: 1, y: 2023}, last: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/king-charles-birthday"}},
         {ty: "D", st: {mon: 6, wkd: [2], nth: 2}, inh: "King Charles’ Birthday", fst: {era: 1, y: 2026}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/king-charles-birthday"}},
-        {ty: "D", st: {mon: 7, wkd: [4], nth: 2}, ttls: {"en":"National Day of Prayer, Reflection and Thanksgiving"}, inh: "Thanksgiving", urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-prayer-reflection-and-thanksgiving-in-montserrat/"}, notes: {"en":"National Day of Prayer Reflection and Thanksgiving"}, fst: {era: 1, y: 1996}},
+        {ty: "D", st: {mon: 7, wkd: [4], nth: 2}, ttls: {"en":"National Day of Prayer, Reflection and Thanksgiving"}, inh: "Thanksgiving", urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-prayer-reflection-and-thanksgiving-in-montserrat/"}, nts: {"en":"National Day of Prayer Reflection and Thanksgiving"}, fst: {era: 1, y: 1996}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/emancipation-day"}, inh: "Emancipation Day"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
-        {ty: "D", st: {mon: 12, d: 31}, ttls: {"en":"Festival Day"}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/new-years-eve"}, inh: "NuY’s Eve", notes: {"en":"This is just New Year’s Eve, but the government insists on giving it a different name."}},
+        {ty: "D", st: {mon: 12, d: 31}, ttls: {"en":"Festival Day"}, urls: {"en":"https://www.officeholidays.com/holidays/montserrat/new-years-eve"}, inh: "NuY’s Eve", nts: {"en":"This is just New Year’s Eve, but the government insists on giving it a different name."}},
     ]
 }
