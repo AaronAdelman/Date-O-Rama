@@ -35,6 +35,7 @@
         {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, inh: "Bangladesh Parliamentary Polls"},
         {ty: "D", st: {era: 1, y: 2024, mon: 1, d: 7}, inh: "Bangladesh Parliamentary Polls"},
         {ty: "nD", st: {era: 1, y: 2026, mon: 2, d: 10, durD: 3}, inh: "Bangladesh Parliamentary Polls"},
+        {ty: "D", st: {mon: 8, d: 5}, ttls: {"as":"জুলাই গণ অভ্যুত্থান দিৱস (বাংলাদেশ)","bn":"জুলাই গণ-অভ্যুত্থান দিবস","en":"July Uprising Day"}, fst: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/student-people-uprising-day"}, nts: {"en":"July Mass Uprising Day\n36 July"}},
     ],
     tpls: {
         "Bangladesh Parliamentary Polls": {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, ttls: {"en":"Bangladesh Parliamentary Polls"}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/bangladesh-parliamentary-polls"}},
