@@ -1,5 +1,5 @@
 //
-//  ASASouthIndianCalendar.swift
+//  ASASouthAsianCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 20/01/2026.
@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 // Calendar object for Solar-time, Sunrise-transition calendars
-class ASASouthIndianCalendar: ASASolarTimeCalendar {
+class ASASouthAsianCalendar: ASASolarTimeCalendar {
 // MARK:  - Stuff identical to the stuff in ASAJudeoIslamicCalendar
     //TODO:  - Consider further inheritance or other method of code reuse.
     
@@ -259,21 +259,21 @@ class ASASouthIndianCalendar: ASASolarTimeCalendar {
         
         let events = date.solarEvents(location: location, events: [ASASolarEvent.sunrise], timeZone: tz)
         if let sunrise = events[ASASolarEvent.sunrise] {
-            return sunrise!
+            return sunrise
         }
         // Try previous day
         if let prevDate = self.applesCalendar.date(byAdding: .day, value: -1, to: date) {
             let prevEvents = prevDate.solarEvents(location: location, events: [ASASolarEvent.sunrise], timeZone: tz)
             if let prevSunrise = prevEvents[ASASolarEvent.sunrise] {
                 // If date occurs before the first available sunrise (polar), choose previous sunrise
-                return prevSunrise!
+                return prevSunrise
             }
         }
         // Try next day as last resort
         if let nextDate = self.applesCalendar.date(byAdding: .day, value: 1, to: date) {
             let nextEvents = nextDate.solarEvents(location: location, events: [ASASolarEvent.sunrise], timeZone: tz)
             if let nextSunrise = nextEvents[ASASolarEvent.sunrise] {
-                return nextSunrise!
+                return nextSunrise
             }
         }
         // Fallback to midnight if all else fails
@@ -290,7 +290,7 @@ class ASASouthIndianCalendar: ASASolarTimeCalendar {
         if let nextDate = self.applesCalendar.date(byAdding: .day, value: 1, to: start) {
             let nextEvents = nextDate.solarEvents(location: location, events: [ASASolarEvent.sunrise], timeZone: tz)
             if let nextSunrise = nextEvents[ASASolarEvent.sunrise] {
-                return nextSunrise!
+                return nextSunrise
             }
         }
         // If that failed (e.g., polar), try stepping day-by-day until we find one, up to a small cap
@@ -298,7 +298,7 @@ class ASASouthIndianCalendar: ASASolarTimeCalendar {
         for _ in 0..<7 {
             probe = self.applesCalendar.date(byAdding: .day, value: 1, to: probe) ?? probe.addingTimeInterval(86400)
             if let s = probe.solarEvents(location: location, events: [ASASolarEvent.sunrise], timeZone: tz)[ASASolarEvent.sunrise] {
-                return s!
+                return s
             }
         }
         // Fallback: add 24 hours

@@ -33,7 +33,7 @@ struct ASASolarEvent:  Hashable {
 
 
 extension Date {
-    func solarEvents(location: CLLocation, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
+    func solarEvents(location: CLLocation, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date> {
         var solarEventsGregorianCalendar = Calendar(identifier: .gregorian)
 
         solarEventsGregorianCalendar.timeZone = timeZone
@@ -41,9 +41,9 @@ extension Date {
         let now = JulianDay(self.dateToCalculateSolarEventsFor(timeZone: timeZone))
         let terra = Earth(julianDay: now, highPrecision: true)
         let coordinates = GeographicCoordinates(location)
-        var result:  Dictionary<ASASolarEvent, Date?> = [:]
-        var rises: Dictionary<Double, Date?> = [:]
-        var sets: Dictionary<Double, Date?>  = [:]
+        var result:  Dictionary<ASASolarEvent, Date> = [:]
+        var rises: Dictionary<Double, Date> = [:]
+        var sets: Dictionary<Double, Date>  = [:]
         
         for event in events {
             var rise: Date?

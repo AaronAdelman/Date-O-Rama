@@ -160,7 +160,7 @@ extension Date {
                 result = (sixPM, sixPM)
                 return result
             }
-            if self >= transitionTime! {
+            if self >= transitionTime {
                 // After sunset -> treat as next civil day for calendar queries
                 result = (self.noon(timeZone: timeZone).oneDayAfter, transitionTime)
             } else {
@@ -176,7 +176,7 @@ extension Date {
                 result = (sixPMYesterday, sixPMYesterday)
                 return result
             }
-            if self < transitionTime! {
+            if self < transitionTime {
                 // Before sunrise -> treat as previous civil day, and there is no sunrise yet for that day
                 let previousNoon = self.noon(timeZone: timeZone).oneDayBefore
                 result = (previousNoon, nil)

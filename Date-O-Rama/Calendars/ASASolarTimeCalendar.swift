@@ -94,7 +94,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             let nextDate = now.noon(timeZone: timeZone).oneDayAfter
             var nextDayHalfStart: Date
             let nextEvents = nextDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
-            nextDayHalfStart = nextEvents[self.midPointTransition]!!
+            nextDayHalfStart = nextEvents[self.midPointTransition]!
             assert(nextDayHalfStart > deoptionalizedTransition)
             
 //            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition.formattedFor(timeZone: timeZone) as Any, "Nighttime end:", nextDayHalfStart.formattedFor(timeZone: timeZone) as Any)

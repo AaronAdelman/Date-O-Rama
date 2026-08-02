@@ -121,8 +121,8 @@ extension ASADateSpecification {
             let previousEvents = previousDate.solarEvents(location: location, events: [dayHalfEnd], timeZone:  timeZone)
             let events = rawDate!.solarEvents(location: location, events: [dayHalfStart], timeZone:  timeZone)
             
-            let previousSunset:  Date = previousEvents[dayHalfEnd]!! // שקיעה
-            let sunrise:  Date = events[dayHalfStart]!! // נץ
+            let previousSunset:  Date = previousEvents[dayHalfEnd]! // שקיעה
+            let sunrise:  Date = events[dayHalfStart]! // נץ
             let nightLength = sunrise.timeIntervalSince(previousSunset)
             let nightHourLength = nightLength / HOURS_PER_DAY_HALF
             let result = previousSunset + hours * nightHourLength
@@ -130,8 +130,8 @@ extension ASADateSpecification {
             
         case .day:
             let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd], timeZone:  timeZone)
-            let sunrise:  Date = events[dayHalfStart]!! // נץ
-            let sunset:  Date = events[dayHalfEnd]!! // שקיעה
+            let sunrise:  Date = events[dayHalfStart]! // נץ
+            let sunset:  Date = events[dayHalfEnd]! // שקיעה
             let dayLength = sunset.timeIntervalSince(sunrise)
             let hourLength = dayLength / HOURS_PER_DAY_HALF
             let result = sunrise + hours * hourLength

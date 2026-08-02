@@ -1408,22 +1408,18 @@ class ASAEventCalendar {
         if calendar.calendarCode.isSunsetTransitionCalendar {
             let previousDate = date.oneDayBefore
             let previousEvents = previousDate.solarEvents(location: location, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
-            let previousSunsetDoubleOptional = previousEvents[.sunset]
-            if previousSunsetDoubleOptional == nil {
-                return ([], [])
-            }
-            let previousSunsetOptional = previousSunsetDoubleOptional!
+            let previousSunsetOptional = previousEvents[.sunset]
             if previousSunsetOptional == nil {
                 return ([], [])
             }
             previousSunset = previousSunsetOptional! // שקיעה
-            previousOtherDusk = previousEvents[.dusk72Minutes]!!
+            previousOtherDusk = previousEvents[.dusk72Minutes]!
             
             let solarEvents = date.solarEvents(location: location, events: [.sunrise, .sunset, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
             
             // According to the גר״א
-            sunrise = solarEvents[.sunrise]!! // נץ
-            let sunset:  Date = solarEvents[.sunset]!! // שקיעה
+            sunrise = solarEvents[.sunrise]! // נץ
+            let sunset:  Date = solarEvents[.sunset]! // שקיעה
             
             let HOURS_PER_DAY_HALF = 12.0
             
@@ -1434,13 +1430,13 @@ class ASAEventCalendar {
             hourLength = dayLength / HOURS_PER_DAY_HALF
             
             // According to the מגן אברהם
-            otherDawn = solarEvents[.dawn72Minutes]!! // עלות השחר
+            otherDawn = solarEvents[.dawn72Minutes]! // עלות השחר
             let otherDusk = solarEvents[.dusk72Minutes]! // צאת הכוכבים
             
             let otherNightLength = otherDawn.timeIntervalSince(previousOtherDusk)
             otherNightHourLength = otherNightLength / HOURS_PER_DAY_HALF
             
-            let otherDayLength = otherDusk!.timeIntervalSince(otherDawn)
+            let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
             otherHourLength = otherDayLength / HOURS_PER_DAY_HALF
         }
         
