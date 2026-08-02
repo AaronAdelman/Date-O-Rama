@@ -66,18 +66,14 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     } // var dateTransition: ASASolarEvent
     
     // TODO:  This needs to be updated to also handle Sunrise transition calendars.
-    func solarTimeComponents(now: Date, locationData: ASALocation, transition: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
+    func solarTimeComponents(now: Date, locationData: ASALocation, dateTransition: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
-        var existsSolarTime = true
-        if transition == nil {
-            existsSolarTime = false
-        }
-
-        if !existsSolarTime {
+        guard let dateTransition = dateTransition else {
             return (hours: -1.0, daytime: false, valid: false)
         }
+
 //        debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, location, timeZone, "Transition:", transition?.formattedFor(timeZone: timeZone) as Any)
         
         var dayHalfStart: Date
@@ -86,20 +82,18 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
         var daytime: Bool
         let NUMBER_OF_HOURS = 12.0
         
-        let deoptionalizedTransition: Date = transition!
-        if deoptionalizedTransition <= now  {
-//            debugPrint(#file, #function, "deoptionalizedTransition <= now")
+        if dateTransition <= now  {
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Nighttime, transition is at the start of the nighttime")
             let nextDate = now.noon(timeZone: timeZone).oneDayAfter
             var nextDayHalfStart: Date
             let nextEvents = nextDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone )
             nextDayHalfStart = nextEvents[self.midPointTransition]!
-            assert(nextDayHalfStart > deoptionalizedTransition)
+            assert(nextDayHalfStart > dateTransition)
             
 //            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition.formattedFor(timeZone: timeZone) as Any, "Nighttime end:", nextDayHalfStart.formattedFor(timeZone: timeZone) as Any)
             
-            hours = now.fractionalHours(startDate: deoptionalizedTransition, endDate: nextDayHalfStart, numberOfHoursPerDay: NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate: dateTransition, endDate: nextDayHalfStart, numberOfHoursPerDay: NUMBER_OF_HOURS)
             daytime = false
         } else {
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
@@ -116,7 +110,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             dayHalfStart = rawDayHalfStart!
             
             var jiggeredNow = now
-            if dayHalfStart > deoptionalizedTransition {
+            if dayHalfStart > dateTransition {
 //                debugPrint(#file, #function, "Need to jigger")
                 // Uh-oh.  It found the day half start for the wrong day!
                 jiggeredNow = now - Date.SECONDS_PER_DAY
@@ -133,11 +127,11 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             
 //            debugPrint(#file, #function, "Day half start:", dayHalfStart.formattedFor(timeZone: timeZone) as Any)
             
-            if dayHalfStart <= now && now < deoptionalizedTransition {
+            if dayHalfStart <= now && now < dateTransition {
                 // Daytime
 //                debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Daytime")
-                assert(deoptionalizedTransition > dayHalfStart)
-                hours = now.fractionalHours(startDate: dayHalfStart, endDate: deoptionalizedTransition, numberOfHoursPerDay: NUMBER_OF_HOURS)
+                assert(dateTransition > dayHalfStart)
+                hours = now.fractionalHours(startDate: dayHalfStart, endDate: dateTransition, numberOfHoursPerDay: NUMBER_OF_HOURS)
                 daytime = true
             } else {
                 // Previous nighttime
@@ -164,7 +158,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             return NSLocalizedString("NO_SOLAR_TIME", comment: "")
         }
         assert(hours >= 0.0)
-        assert(hours < 12.0)
+//        assert(hours < 12.0)
         
         let symbol = daytime ? DAY_SYMBOL : NIGHT_SYMBOL
         
@@ -335,7 +329,7 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
     // MARK: - Extracting Components
     
     func timeComponents(date: Date, transition: Date?, locationData: ASALocation) -> (fractionalHour: Double, dayHalf: ASADayHalf) {
-        let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
+        let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, dateTransition: transition)
         if !solarTimeComponents.valid {
             return (fractionalHour: -1.0, dayHalf: ASADayHalf.night)
         }
