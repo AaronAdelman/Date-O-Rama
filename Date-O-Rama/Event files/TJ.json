@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 8, d: 4}, inh: "Paratroopers’ Day"},
         {ty: "D", st: {mon: 2, d: 6}, inh: "Police Day", ttls: {"en":"Day of the Tajik Police"}},
         {ty: "D", st: {mon: 5, d: 28}, inh: "Border Guards Day", fst: {era: 1, y: 1919}},
-        {inh: "NGuard Day", ty: "D", st: {mon: 10, d: 2}},
+        {inh: "NGuardD", ty: "D", st: {mon: 10, d: 2}},
 
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},

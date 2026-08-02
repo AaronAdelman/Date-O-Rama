@@ -29,7 +29,7 @@
         {ttls: {"en":"Native Language Day","et":"emakeelepäev"}, ty: "D", st: {mon: 3, d: 14}},
         {inh: "NFlag Day", ty: "D", st: {mon: 6, d: 4}, fst: {era: 1, y: 1884}},
         {ttls: {"en":"Day of Mourning and Commemoration","et":"leinapäev"}, ty: "D", st: {mon: 6, d: 14}},
-        {ty: "D", st: {mon: 8, d: 23}, inh: "Black Ribbon Day", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 8, d: 23}, inh: "Black RibbonD", fst: {era: 1, y: 2009}},
         {inh: "Grandparents’ Day", ty: "D", st: {mon: 9, wkd: [1], nth: 2}},
         {ttls: {"en":"Resistance Fighting Day","et":"vastupanuvõitluse päev"}, ty: "D", st: {mon: 9, d: 22}, urls: {"en":"https://en.wikipedia.org/wiki/Resistance_Fighting_Day"}, nts: {"en":"Otto Tief Government","et":"Otto Tiefi valitsuse päev"}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "Local Government Day"},

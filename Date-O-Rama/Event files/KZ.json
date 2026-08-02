@@ -28,7 +28,7 @@
         {ty: "nD", st: {mon: 12, d: 16}, end: {mon: 12, d: 17}, inh: "Independence Day", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/kazakhstan-independence-day/"}},
         {ty: "D", st: {mon: 12, d: 18, wkd: [2]}, inh: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/kazakhstan-independence-day/"}},
         
-        {inh: "NGuard Day", ty: "D", st: {mon: 1, d: 10}},
+        {inh: "NGuardD", ty: "D", st: {mon: 1, d: 10}},
         {ttls: {"en":"Day of the State Security Service of Kazakhstan"}, st: {mon: 4, d: 21}, ty: "D"},
         {inh: "Police Day", ty: "D", st: {mon: 6, d: 23}},
         {inh: "Border Guards Day", ty: "D", st: {mon: 8, d: 18}, fst: {era: 1, y: 1919}},

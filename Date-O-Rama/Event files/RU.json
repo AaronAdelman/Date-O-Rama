@@ -75,7 +75,7 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day", fst: {era: 1, y: 1949}},
         {ty: "D", st: {mon: 6, d: 22}, inh: "D of Remembrance and Sorrow", fst: {era: 1, y: 1996}},
         {ty: "D", st: {mon: 6, d: 29}, ttls: {"en":"Partisans and Underground Fighters Day","ru":"День партизан и подпольщиков"}, fst: {era: 1, y: 2009}},
-        {ty: "D", st: {mon: 6, d: 6}, inh: "Russian Language Day", fst: {era: 1, y: 2011}},
+        {ty: "D", st: {mon: 6, d: 6}, inh: "ruLangD", fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 6, d: 8}, ttls: {"en":"Social Worker Day","ru":"День социального работника"}, fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 7, d: 28}, inh: "Baptism Day of Kyivan Rus"},
         {ty: "D", st: {mon: 7, d: 6}, inh: "Kupala Nite"},

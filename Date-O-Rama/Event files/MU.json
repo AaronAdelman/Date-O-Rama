@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 11, d: 2}, urls: {"en":"https://nationaltoday.com/arrival-of-indentured-labourers/"}, ttls: {"en":"Arrival of Indentured Labourers"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
-        {ty: "D", st: {mon: 3, d: 20}, inh: "IFrancophonie Day", fst: {era: 1, y: 1988}},
+        {ty: "D", st: {mon: 3, d: 20}, inh: "IFrancophonieD", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: -1}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 13}, inh: "Engineer’s Day"},

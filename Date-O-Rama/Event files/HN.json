@@ -36,7 +36,7 @@
 
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {mon: 2, d: 3}, urls: {"en":"https://nationaltoday.com/our-lady-of-suyapa/"}, ttls: {"en":"Feast of Our Lady of Suyapa","es":"Nuestra Señora de Suyapa"}, nts: {"en":"Virgin of Suyapa’s Day"}},
-        {ty: "D", st: {mon: 4, d: 19}, inh: "Spanish Language Day", fst: {era: 1, y: 1995}},
+        {ty: "D", st: {mon: 4, d: 19}, inh: "esLangD", fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 6, d: 11}, inh: "Student’s Day"},
         {ty: "D", st: {mon: 7, d: 20}, urls: {"en":"https://nationaltoday.com/lempira-day/"}, ttls: {"en":"Lempira Day","es":"Día de Lempira"}},
         {ty: "D", st: {mon: 9, d: 1}, inh: "NFlag Day"},

@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 9, d: 21}, inh: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/independence-day-in-armenia/"}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
 
-        {ty: "D", st: {mon: 2, d: 21}, inh: "IMother Language Day", fst: {era: 1, y: 2000}},
+        {ty: "D", st: {mon: 2, d: 21}, inh: "IMotherLangD", fst: {era: 1, y: 2000}},
         {ty: "D", st: {misc: "E", offsetD: -52}, inh: "St Vardanian"},
         {ty: "D", st: {mon: 2, d: 28}, ttls: {"en":"Day of Remembrance for Victims of Massacres Organized in Azerbaijan SSR and Protection of Rights of Armenian Refugees","hy":"Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
         {ty: "D", st: {mon: 4, d: 7}, ttls: {"en":"Motherhood and Beauty Day","hy":"Մայրության և գեղեցկության օր"}, urls: {"en":"https://nationaltoday.com/motherhood-and-beauty-day/"}, inh: "Mother’s Day"},
