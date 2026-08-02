@@ -1,16 +1,16 @@
 {
-    titles: {"*": "ET"},
-    "//": "Ethiopia",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.06, green: 0.28, blue: 0.69},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
+    ttls: {"*":"ET"},
+    "//":"Ethiopia",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.06, g: 0.28, b: 0.69},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {mon: 9, d: 14}, inh: "Exaltation of the Holy Cross"},
 
     ]
 }

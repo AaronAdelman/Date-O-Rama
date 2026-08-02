@@ -41,7 +41,7 @@ struct ASAEvent:  ASASingleEvent {
     }
     
     var calendarCode: ASACalendarCode
-    var locationData:  ASALocation
+    var locationData: ASALocation
     
     var geoLocation: CLLocation? {
         return nil

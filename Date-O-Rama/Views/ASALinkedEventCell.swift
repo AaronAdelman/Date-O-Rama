@@ -13,12 +13,12 @@ import EventKitUI
 #endif
 import SwiftUI
 
-struct ASALinkedEventCell:  View {
-    var event:  ASAEventCompatible
-    var primaryClock:  ASAClock
+struct ASALinkedEventCell: View {
+    var event: ASAEventCompatible
+    var primaryClock: ASAClock
 #if os(watchOS)
 #else
-    @State private var action:  EKEventEditViewAction?
+    @State private var action: EKEventEditViewAction?
 #endif
     @State private var showingEventView = false
     var now:  Date
@@ -73,9 +73,7 @@ struct ASALinkedEventCell:  View {
                 }
                 
             } label: {
-                ASAGlassSymbol(systemName: "chevron.down.circle.fill")
-                    .foregroundColor(event.color)
-                    .font(.title)
+                ASAGlassSymbol(systemName: "chevron.down.circle.fill", primaryColor: .black, secondaryColor: .white)
             }
             .popover(isPresented: $showingEventView) {
                 ScrollView {
@@ -83,7 +81,7 @@ struct ASALinkedEventCell:  View {
                         .frame(minWidth: FRAME_MIN_WIDTH, minHeight: FRAME_MIN_HEIGHT)
                 }
             }
-            .foregroundColor(.accentColor)
+            .foregroundStyle(Color.accentColor)
             .onChange(of: action) { _, newValue in
                 if newValue == .deleted {
                     self.showingEventView = false

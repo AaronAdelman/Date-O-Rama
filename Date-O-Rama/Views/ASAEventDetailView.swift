@@ -80,7 +80,7 @@ struct ASAEventDetailView: View {
                     let status = currentUser!.participantStatus
                     HStack {
                         Text("My status")
-                            .foregroundColor(Color.secondary)
+                            .foregroundStyle(Color.secondary)
                         Spacer()
                         Image(systemName: status.systemName)
                             .symbolRenderingMode(.multicolor)
@@ -90,7 +90,7 @@ struct ASAEventDetailView: View {
             }
         } // List
         .listStyle(DefaultListStyle())
-        .foregroundColor(.primary)
+        .foregroundStyle(Color.primary)
     } // body
 } // struct ASAEventDetailView
 
@@ -109,9 +109,17 @@ struct ASAEventDetailsTitleSection: View {
             let titleFont: Font = .title
             #endif
             let eventEmoji = event.symbol
-            let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
-            Text(emojiPrefix + event.title)
-                .font(titleFont)
+            if eventEmoji != nil {
+                HStack {
+                    ASAEventSymbolView(symbol: eventEmoji!, font: titleFont)
+                    Text(event.title)
+                        .font(titleFont)
+                }
+            } else {
+                Text(event.title)
+                    .font(titleFont)
+            }
+            
             if event.location != nil {
                 Text(event.location!)
             }
@@ -164,13 +172,13 @@ struct ASAEKEventURLView: View {
             }, label: {
                 Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
                     .underline()
-                    .foregroundColor(.accentColor)
+                    .foregroundStyle(Color.accentColor)
             })
         } else {
             Link(destination: eventURL, label: {
                 Text(eventURL.absoluteString)
                     .underline()
-                    .foregroundColor(.accentColor)
+                    .foregroundStyle(Color.accentColor)
             })
         }
         #endif
@@ -197,7 +205,7 @@ struct ASAEKEventParticipantsAndStatusSection: View {
             
             if event.status != .none && event.status != .confirmed {
                 Text(event.status.text)
-                    .foregroundColor(event.status.color)
+                    .foregroundStyle(event.status.color)
             }
         } // Section
     } // var body
@@ -442,7 +450,7 @@ struct ASAEventPropertyView: View {
     var body: some View {
         HStack {
             Text(NSLocalizedString(key, comment: ""))
-                .foregroundColor(Color.secondary)
+                .foregroundStyle(Color.secondary)
             Spacer()
             Text(value)
         } // HStack

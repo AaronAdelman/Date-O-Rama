@@ -1,12 +1,12 @@
 {
-    titles: {"*": "CX"},
-    "//": "Christmas Island",
-    defaultLocale: "en",
-    calendarCode: "chi",
-    calendarColor: {red: 0.11, green: 0.54, blue: 0.26},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
-    events: [
-        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "Chinese New Year"},
-        {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
+    ttls: {"*":"CX"},
+    "//":"Christmas Island",
+    defLocale: "en",
+    cal: "chi",
+    color: {r: 0.11, g: 0.54, b: 0.26},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
+    evts: [
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "Chinese NY"},
+        {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"}
    ]
 }

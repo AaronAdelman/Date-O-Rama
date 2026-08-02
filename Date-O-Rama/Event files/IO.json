@@ -1,17 +1,17 @@
 {
-    titles: {"*": "IO"},
-    "//": "British Indian Ocean Territory",
-    defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.00, green: 0.42, blue: 0.23},
-    urls: {"en": "https://theworkcalendar.com/holidays/country/British-Indian-Ocean-Territory?countryCode=IO"},
-    first: {era: 1, y: 1965},
-    events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Easter Monday"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
-        {type: "D", start: {mon: 12, d: 26}, inherits: "Boxing Day"},
+    ttls: {"*":"IO"},
+    "//":"British Indian Ocean Territory",
+    defLocale: "en",
+    cal: "gre",
+    color: {r: 0.00, g: 0.42, b: 0.23},
+    urls: {"en":"https://theworkcalendar.com/holidays/country/British-Indian-Ocean-Territory?countryCode=IO"},
+    fst: {era: 1, y: 1965},
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
+        {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
+        {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
     ]
 }

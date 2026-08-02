@@ -98,12 +98,12 @@ extension Date {
         return adjustedDate.julianDateWithoutTime(calendarCode: .modifiedJulianDay)
     } // func localModifiedJulianDay(timeZone: TimeZone) -> Int
     
-//    static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
-//        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .modifiedJulianDay)
-//        let seconds = timeZone.secondsFromGMT(for: rawDate)
-//        let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
-//        return adjustedDate
-//    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
+    static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
+        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), calendarCode: .modifiedJulianDay)
+        let seconds = timeZone.secondsFromGMT(for: rawDate)
+        let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
+        return adjustedDate
+    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
     func julianDateComponents(calendarCode: ASACalendarCode) -> (day: Int, fractionOfDay: Double) {
         let full = self.julianDateWithTime(calendarCode: calendarCode)

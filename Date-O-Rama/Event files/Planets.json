@@ -1,28 +1,28 @@
 {
-    titles: {"en": "Planets", "he": "כוכבי־לכת"},
-    defaultLocale: "en",
-    calendarCode: "xloc*",
-    calendarColor: {red: 0.941, green: 0.827, blue: 0.616},
-    events: [
-        {titles: {"en": "Rise of Mercury", "he": "זריחת כוכב"}, type: "pt", start: {ptType: "rise", "body": "zme"}, emoji: "☿↑"},
-        {titles: {"en": "Setting of Mercury", "he": "שקיעת כוכב"}, type: "pt", start: {ptType: "set", "body": "zme"}, emoji: "☿↓"},
+    ttls: {"en":"Planets","he":"כוכבי־לכת"},
+    defLocale: "en",
+    cal: "xloc*",
+    color: {r: 0.941, g: 0.827, b: 0.616},
+    evts: [
+        {ttls: {"en":"Rise of Mercury","he":"זריחת כוכב"}, ty: "pt", st: {ptTy: "rise", body: "zme"}, mog: "☿↑"},
+        {ttls: {"en":"Setting of Mercury","he":"שקיעת כוכב"}, ty: "pt", st: {ptTy: "set", body: "zme"}, mog: "☿↓"},
         
-        {titles: {"en": "Rise of Venus", "he": "זריחת נוגה"}, type: "pt", start: {ptType: "rise", "body": "zve"}, emoji: "♀↑"},
-        {titles: {"en": "Setting of Venus", "he": "שקיעת נוגה"}, type: "pt", start: {ptType: "set", "body": "zve"}, emoji: "♀↓"},
+        {ttls: {"en":"Rise of Venus","he":"זריחת נוגה"}, ty: "pt", st: {ptTy: "rise", body: "zve"}, mog: "♀↑"},
+        {ttls: {"en":"Setting of Venus","he":"שקיעת נוגה"}, ty: "pt", st: {ptTy: "set", body: "zve"}, mog: "♀↓"},
         
-        {titles: {"en": "Rise of Mars", "he": "זריחת מאדים"}, type: "pt", start: {ptType: "rise", "body": "zma"}, emoji: "♂↑"},
-        {titles: {"en": "Setting of Mars", "he": "שקיעת מאדים"}, type: "pt", start: {ptType: "set", "body": "zma"}, emoji: "♂↓"},
+        {ttls: {"en":"Rise of Mars","he":"זריחת מאדים"}, ty: "pt", st: {ptTy: "rise", body: "zma"}, mog: "♂↑"},
+        {ttls: {"en":"Setting of Mars","he":"שקיעת מאדים"}, ty: "pt", st: {ptTy: "set", body: "zma"}, mog: "♂↓"},
 
-        {titles: {"en": "Rise of Jupiter", "he": "זריחת צדק"}, type: "pt", start: {ptType: "rise", "body": "zju"}, emoji: "♃↑"},
-        {titles: {"en": "Setting of Jupiter", "he": "שקיעת צדק"}, type: "pt", start: {ptType: "set", "body": "zju"}, emoji: "♃↓"},
+        {ttls: {"en":"Rise of Jupiter","he":"זריחת צדק"}, ty: "pt", st: {ptTy: "rise", body: "zju"}, mog: "♃↑"},
+        {ttls: {"en":"Setting of Jupiter","he":"שקיעת צדק"}, ty: "pt", st: {ptTy: "set", body: "zju"}, mog: "♃↓"},
 
-        {titles: {"en": "Rise of Saturn", "he": "זריחת שבתי"}, type: "pt", start: {ptType: "rise", "body": "zsa"}, emoji: "♄↑"},
-        {titles: {"en": "Setting of Saturn", "he": "שקיעת שבתי"}, type: "pt", start: {ptType: "set", "body": "zsa"}, emoji: "♄↓"},
+        {ttls: {"en":"Rise of Saturn","he":"זריחת שבתי"}, ty: "pt", st: {ptTy: "rise", body: "zsa"}, mog: "♄↑"},
+        {ttls: {"en":"Setting of Saturn","he":"שקיעת שבתי"}, ty: "pt", st: {ptTy: "set", body: "zsa"}, mog: "♄↓"},
 
-        {titles: {"en": "Rise of Uranus", "he": "זריחת אורנוס"}, type: "pt", start: {ptType: "rise", "body": "zur"}, emoji: "⛢↑"},
-        {titles: {"en": "Setting of Uranus", "he": "שקיעת אורנוס"}, type: "pt", start: {ptType: "set", "body": "zur"}, emoji: "⛢↓"},
+        {ttls: {"en":"Rise of Uranus","he":"זריחת אורנוס"}, ty: "pt", st: {ptTy: "rise", body: "zur"}, mog: "⛢↑"},
+        {ttls: {"en":"Setting of Uranus","he":"שקיעת אורנוס"}, ty: "pt", st: {ptTy: "set", body: "zur"}, mog: "⛢↓"},
 
-        {titles: {"en": "Rise of Neptune", "he": "זריחת נפטון"}, type: "pt", start: {ptType: "rise", "body": "zne"}, emoji: "♆↑"},
-        {titles: {"en": "Setting of Neptune", "he": "שקיעת נפטון"}, type: "pt", start: {ptType: "set", "body": "zne"}, emoji: "♆↓"},
+        {ttls: {"en":"Rise of Neptune","he":"זריחת נפטון"}, ty: "pt", st: {ptTy: "rise", body: "zne"}, mog: "♆↑"},
+        {ttls: {"en":"Setting of Neptune","he":"שקיעת נפטון"}, ty: "pt", st: {ptTy: "set", body: "zne"}, mog: "♆↓"},
     ]
 }

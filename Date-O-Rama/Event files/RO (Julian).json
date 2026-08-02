@@ -1,17 +1,17 @@
 {
-    titles: {"*": "RO"},
-    "//": "Romania",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.13, blue: 0.41},
-    first: {era: 1, y: 1877},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
-    events: [
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
-        {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Heroes’ Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: 39}, inherits: "Ascension Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
+    ttls: {"*":"RO"},
+    "//":"Romania",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.00, g: 0.13, b: 0.41},
+    fst: {era: 1, y: 1877},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Romania"},
+    evts: [
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Heroes’ Day"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
+        {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
     ]
 }

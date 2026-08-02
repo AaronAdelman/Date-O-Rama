@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Textual
 
 struct ASAAboutTab: View {
     var body: some View {
@@ -53,11 +54,13 @@ struct ASAAboutTab: View {
 // MARK:  -
 
 struct ASAAboutNavigationLink:  View {
-    var fileName:  String
-    var text:  String
+    var fileName: String
+    var text: String
 
     var body:  some View {
-        NavigationLink(destination:                     ASALocalPDFView(fileName: fileName)) {
+        NavigationLink(destination:
+                       ASAMarkdownView(fileName: fileName)
+        ) {
             Text(NSLocalizedString(text, comment: ""))
                 .font(.headline)
         }

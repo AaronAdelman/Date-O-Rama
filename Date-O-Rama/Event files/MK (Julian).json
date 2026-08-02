@@ -1,14 +1,14 @@
 {
-    titles: {"*": "MK"},
-    "//": "North Macedonia",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.75, green: 0.05, blue: 0.24},
-    first: {era: 1, y: 1991},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_North_Macedonia"},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"MK"},
+    "//":"North Macedonia",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.75, g: 0.05, b: 0.24},
+    fst: {era: 1, y: 1991},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Macedonia"},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

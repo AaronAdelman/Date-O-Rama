@@ -1,9 +1,9 @@
 {
-    titles: {"en": "Time changes", "he": "שינויי שעון"},
-    defaultLocale: "en",
-    calendarCode: "tz*",
-    calendarColor: {red: 0.46, green: 0.84, blue: 1.00},
-    events: [
-        {titles: {"en": ""}, type: "pt", start: {"timeChange": "timeChange"}, emoji: "⏰"},
+    ttls: {"en":"Time changes","he":"שינויי שעון"},
+    defLocale: "en",
+    cal: "tz*",
+    color: {r: 0.46, g: 0.84, b: 1.00},
+    evts: [
+        {ttls: {"en":""}, ty: "pt", st: {misc: "tChg"}, mog: "⏰"},
         ]
     }

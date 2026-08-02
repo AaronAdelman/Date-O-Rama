@@ -71,9 +71,9 @@ extension EKEvent:  ASASingleEvent {
         if self.birthdayContactIdentifier != nil {
             let templatesFile = ASAEventSpecification.templateEventsFile
             if templatesFile != nil {
-                let birthdayTemplate = templatesFile!.eventSpecifications.first(where: {$0.template == "*BDay*"})
+                let birthdayTemplate = templatesFile!.templateSpecifications?["*BD*"]
                 if birthdayTemplate != nil {
-                    return birthdayTemplate?.emoji
+                    return birthdayTemplate!.emoji
                 }
             }
         }

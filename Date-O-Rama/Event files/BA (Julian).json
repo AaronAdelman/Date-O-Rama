@@ -1,17 +1,17 @@
 {
-    titles: {"*": "BA"},
-    "//": "Bosnia and Herzegovina",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.18, blue: 0.42},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
-    first: {era: 1, y: 1992},
-    events: [
-        {type: "D", start: {mon: 12, d: 24}, inherits: "Xmas Eve"},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"BA"},
+    "//":"Bosnia and Herzegovina",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.00, g: 0.18, b: 0.42},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
+    fst: {era: 1, y: 1992},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "ONYD"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

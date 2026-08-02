@@ -1,16 +1,16 @@
 {
-    titles: {"*": "ER"},
-    "//": "Eritrea",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.89, green: 0.00, blue: 0.17},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {mon: 8, d: 29}, inherits: "Beheading of Saint John the Baptist"},
-        {type: "D", start: {mon: 9, d: 14}, inherits: "Exaltation of the Holy Cross"},
+    ttls: {"*":"ER"},
+    "//":"Eritrea",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.89, g: 0.00, b: 0.17},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {mon: 8, d: 29}, inh: "Beheading of Saint John the Baptist"},
+        {ty: "D", st: {mon: 9, d: 14}, inh: "Exaltation of the Holy Cross"},
     ]
 }

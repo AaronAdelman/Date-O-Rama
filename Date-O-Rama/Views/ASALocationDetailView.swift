@@ -42,7 +42,7 @@ struct ASALocationDetailView: View {
                         Button(action: {
                             self.showingActionSheet = true
                         }) {
-                            Text("Delete this location").foregroundColor(Color.red).frame(alignment: .center)
+                            Text("Delete this location").foregroundStyle(Color.red).frame(alignment: .center)
                         }
                         Spacer()
                     } // HStack
@@ -58,7 +58,7 @@ struct ASALocationDetailView: View {
                 }
             } // List
             .font(.body)
-            .foregroundColor(.primary)
+            .foregroundStyle(Color.primary)
             .navigationTitle("Location Details")
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())

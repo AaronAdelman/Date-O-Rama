@@ -240,7 +240,13 @@ extension ASAEventCompatible {
     } // func contains(now: Date) -> Bool
 
     func isAllDay(for clock: ASAClock, location: ASALocation) -> Bool {
-        return self.isAllDay && clock.calendar.calendarCode == self.calendarCode && (location.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
+        return self.isAllDay
+//        && clock.calendar.calendarCode == self.calendarCode
+        && (
+            location.timeZone
+                .secondsFromGMT(for: self.startDate) == self.timeZone?
+                .secondsFromGMT(for: self.startDate) || self.timeZone == nil
+        )
     } // func isAllDay(for row: ASAClock) -> Bool
     
     var hasParticipants: Bool {

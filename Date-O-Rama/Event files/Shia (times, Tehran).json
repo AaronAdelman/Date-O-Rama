@@ -1,19 +1,18 @@
 {
-    titles: {"en": "Shia (times, Tehran)", "he": "שיעה (זמנים, טהראן)"},
-    defaultLocale: "en",
-    calendarCode: "hiq-solar*",
-    calendarColor: {name: "green"},
-    emoji: "🇮🇷",
-    events: [
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}},
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Jafari"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Jafari"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Jafari"}},
+    ttls: {"en":"Shia (times, Tehran)","he":"שיעה (זמנים, טהראן)"},
+    defLocale: "en",
+    cal: "hiq-solar*",
+    color: {name: "green"},
+    mog: "🇮🇷",
+    evts: [
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
+        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaJafari"}},
+        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiJafari"}},
+        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiJafari"}},
 
-        {inherits: "Maghrib", type: "pt", start: {ptType: "Maghrib", calcMethod: "Tehran"}, notes: {"en": "Institute of Geophysics, University of Tehran"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Tehran"}, notes: {"en": "Institute of Geophysics, University of Tehran"}},
+        {inh: "Maghrib", ty: "pt", st: {ptTy: "MaghribTehran"}, nts: {"en":"Institute of Geophysics, University of Tehran"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrTehran"}, nts: {"en":"Institute of Geophysics, University of Tehran"}},
     ]
 }
-

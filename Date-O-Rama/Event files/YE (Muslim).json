@@ -1,12 +1,11 @@
 {
-    titles: {"*": "YE"},
-    "//": "Yemen",
-    defaultLocale: "en",
-    calendarCode: "hiq*",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
-    events: [
-        {type: "D", start: {mon: 7, d: 13}, inherits: "Father’s Day"},
+    ttls: {"*":"YE"},
+    "//":"Yemen",
+    defLocale: "en",
+    cal: "hiq*",
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
+    evts: [
+        {ty: "D", st: {mon: 7, d: 13}, inh: "Father’s Day"},
     ]
 }
-

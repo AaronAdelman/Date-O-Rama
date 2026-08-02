@@ -1,23 +1,23 @@
 {
-    titles: {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
-    defaultLocale: "he",
-    calendarCode: "heb*",
-    calendarColor: {name: "blue"},
-    events: [
-        {type: "Y", start: {}, nonoverlappingSubEvents: [
-            {inherits: "Aries", type: "M", start: {mon: 8}},
-            {inherits: "Taurus", type: "M", start: {mon: 9}},
-            {inherits: "Gemini", type: "M", start: {mon: 10}},
-            {inherits: "Cancer", type: "M", start: {mon: 11}},
-            {inherits: "Leo", type: "M", start: {mon: 12}},
-            {inherits: "Virgo", type: "M", start: {mon: 13}},
-            {inherits: "Libra", type: "M", start: {mon: 1}},
-            {inherits: "Scorpio", type: "M", start: {mon: 2}},
-            {inherits: "Sagittarius", type: "M", start: {mon: 3}},
-            {inherits: "Capricorn", type: "M", start: {mon: 4}},
-            {inherits: "Aquarius", type: "M", start: {mon: 5}},
-            {inherits: "Pisces", type: "M", start: {mon: 7, yLengths: [353, 354, 355]}},
-            {inherits: "Pisces", type: "nM", start: {mon: 6, yLengths: [383, 384, 385]}, end: {mon: 7}}
+    ttls: {"en":"Jewish zodiac","he":"גלגל המזלות יהודי"},
+    defLocale: "he",
+    cal: "heb*",
+    color: {name: "blue"},
+    evts: [
+        {ty: "Y", st: {}, subEvts: [
+            {inh: "Ari" , ty: "M", st: {mon: 8}},
+            {inh: "Tau" , ty: "M", st: {mon: 9}},
+            {inh: "Gem", ty: "M", st: {mon: 10}},
+            {inh: "Cnc", ty: "M", st: {mon: 11}},
+            {inh: "Leo", ty: "M", st: {mon: 12}},
+            {inh: "Vir", ty: "M", st: {mon: 13}},
+            {inh: "Lib", ty: "M", st: {mon: 1}},
+            {inh: "Sco", ty: "M", st: {mon: 2}},
+            {inh: "Sgr", ty: "M", st: {mon: 3}},
+            {inh: "Cap", ty: "M", st: {mon: 4}},
+            {inh: "Aqr", ty: "M", st: {mon: 5}},
+            {inh: "Psc", ty: "M", st: {mon: 7, yLens: [353, 354, 355]}},
+            {inh: "Psc", ty: "nM", st: {mon: 6, yLens: [383, 384, 385]}, end: {mon: 7}}
         ]
         }
     ]

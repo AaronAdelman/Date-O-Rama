@@ -1,12 +1,12 @@
 {
-    titles: {"*": "SR"},
-    "//": "Suriname",
-    defaultLocale: "en",
-    calendarCode: "chi",
-    calendarColor: {red: 0.00, green: 0.48, blue: 0.20},
-    urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Suriname"},
-    events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
-        {type: "D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
+    ttls: {"*":"SR"},
+    "//":"Suriname",
+    defLocale: "en",
+    cal: "chi",
+    color: {r: 0.00, g: 0.48, b: 0.20},
+    urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NY"},
+        {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"}
     ]
 }

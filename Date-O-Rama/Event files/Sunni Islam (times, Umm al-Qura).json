@@ -1,17 +1,17 @@
 {
-    titles: {"en": "Islam (times, Umm al-Qura)", "he": "אסלאם סוני (זמנים, אום אל־קורה)"},
-    defaultLocale: "en",
-    calendarCode: "IslamicUmmAlQuraSolar",
-    calendarColor: {name: "green"},
-    emoji: "🇸🇦",
-    events: [
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
+    ttls: {"en":"Islam (times, Umm al-Qura)","he":"אסלאם סוני (זמנים, אום אל־קורה)"},
+    defLocale: "en",
+    cal: "IslamicUmmAlQuraSolar",
+    color: {name: "green"},
+    mog: "🇸🇦",
+    evts: [
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
 
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaMakkah"}, nts: {"en":"Umm al-Qura, Makkah"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrMakkah"}, nts: {"en":"Umm al-Qura, Makkah"}},
+        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrMakkah"}, nts: {"en":"Umm al-Qura, Makkah"}},
+        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiMakkah"}, nts: {"en":"Umm al-Qura, Makkah"}},
+        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiMakkah"}, nts: {"en":"Umm al-Qura, Makkah"}},
     ]
 }

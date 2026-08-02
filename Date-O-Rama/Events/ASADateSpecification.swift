@@ -52,11 +52,10 @@ struct ASADateSpecification:  Codable {
     
     var throughDay: Int?
     var throughMonth: Int?
-    var durationDays: Int?
+    var durationInDays: Int?
 
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
-    var rising: Bool?
     var offset: TimeInterval?
     
     // For solar time events
@@ -66,29 +65,17 @@ struct ASADateSpecification:  Codable {
     // For rise and set events
     var body: String?
     
-    // For Islamic prayer times
-    var calculationMethod: ASACalculationMethod?
-    var asrJuristicMethod: ASAJuristicMethodForAsr?
-    var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
+    // For Islamic prayer times (auxiliary information)
     var dhuhrMinutes: Double?
-    
-    // For Easter-related events
-    var Easter: ASAEasterType?
-    
-    // For equinox and solstice events
-    var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
-    
-    // For time change events
-    var timeChange: ASATimeChangeType?
-    
-    // For Moon phase events
-    var moonPhase: ASAMoonPhase?
-    
+        
+    // For miscellaneous events (Easter, equinoxes, solstices, Moon phases, time changes) which are all-day or should only be at most one during any day
+    var miscellaneous:  ASAMiscellaneous?
+        
     // For repeating events
     var recurrenceDays: Int?
     
     enum CodingKeys: String, CodingKey {
-        case pointEventType      = "ptType"
+        case pointEventType      = "ptTy"
         case era
         case year                = "y"
         case month               = "mon"
@@ -99,32 +86,25 @@ struct ASADateSpecification:  Codable {
         case nanosecond          = "ns"
         case weekdays            = "wkd"
         case recurrence          = "nth"
-        case lengthsOfMonth      = "monLengths"
-        case lengthsOfYear       = "yLengths"
+        case lengthsOfMonth      = "monLens"
+        case lengthsOfYear       = "yLens"
         case dayOfYear           = "dOfY"
         case yearDivisor         = "yDiv"
         case yearRemainder       = "yRem"
-        case degreesBelowHorizon = "degBelowHorizon"
-        case rising
+        case degreesBelowHorizon = "deg"
         case offset
         case solarHours          = "zsuH"
         case dayHalf             = "dHalf"
         case body
-        case calculationMethod   = "calcMethod"
-        case asrJuristicMethod
-        case adjustingMethodForHigherLatitudes
         case dhuhrMinutes        = "dhuhrMin"
-        case Easter
         case offsetDays          = "offsetD"
-        case equinoxOrSolstice
-        case timeChange
-        case moonPhase           = "zmoPhase"
+        case miscellaneous       = "misc"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"
         case fullWeek            = "fullWk"
-        case firstDayOfWeek      = "firstDOfWk"
-        case durationDays        = "durationD"
-        case recurrenceDays      = "recurrenceD"
+        case firstDayOfWeek      = "d1OfWk"
+        case durationInDays      = "durD"
+        case recurrenceDays      = "recurD"
     } // enum CodingKeys
 } // struct ASADateSpecification
 
@@ -273,7 +253,8 @@ extension ASADateSpecification {
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
     func rawDegreesBelowHorizon(date:  Date, location: CLLocation, timeZone:  TimeZone) -> Date? {
-        let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+        let rising = self.pointEventType == .twilightRising
+        let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: rising, offset: self.offset!)
 
         let events = date.solarEvents(location: location, events: [solarEvent], timeZone:  timeZone)
         let result = events[solarEvent]

@@ -113,11 +113,10 @@ struct ASACalendarChooserView: View {
             }
         }
         .font(.body)
-        .navigationBarItems(trailing: Button("Cancel", role: .cancel, action: {
+        .navigationBarItems(trailing: ASACancelButton {
             self.didCancel = true
             self.presentationMode.wrappedValue.dismiss()
         })
-        )
         .onAppear() {
             self.tempCalendarCode = self.clock.calendar.calendarCode
         }

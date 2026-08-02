@@ -12,7 +12,7 @@ struct ASACheckmarkSymbol: View {
     var body: some View {
         Image(systemName: "checkmark")
             .font(Font.body.weight(.medium) )
-            .foregroundColor(.accentColor)
+            .foregroundStyle(Color.accentColor)
     }
 }
 

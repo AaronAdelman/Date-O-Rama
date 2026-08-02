@@ -1,17 +1,17 @@
 {
-    titles: {"en": "Islam (times, Karachi)", "he": "אסלאם סוני (זמנים, קראצ׳י)"},
-    defaultLocale: "en",
-    calendarCode: "hiq-solar*",
-    calendarColor: {name: "green"},
-    emoji: "🇵🇰",
-    events: [
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: true, offset: 0.0}, inherits: "Sunrise"},
-        {type: "pt", start: {ptType: "twilight", degBelowHorizon: 0.833, rising: false, offset: 0.0}, inherits: "Sunset"},
-        {inherits: "Dhuhr", type: "pt", start: {ptType: "Dhuhr", calcMethod: "ISNA"}},
-        {inherits: "Asr (Shafii)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Shafii", calcMethod: "Karachi"}},
-        {inherits: "Asr (Hanafi)", type: "pt", start: {ptType: "Asr", asrJuristicMethod: "Hanafi", calcMethod: "Karachi"}},
+    ttls: {"en":"Islam (times, Karachi)","he":"אסלאם סוני (זמנים, קראצ׳י)"},
+    defLocale: "en",
+    cal: "hiq-solar*",
+    color: {name: "green"},
+    mog: "🇵🇰",
+    evts: [
+        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
+        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
+        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
+        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
+        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
         
-        {inherits: "Isha", type: "pt", start: {ptType: "Isha", calcMethod: "Karachi"}, notes: {"en": "University of Islamic Sciences, Karachi"}},
-        {inherits: "Fajr", type: "pt", start: {ptType: "Fajr", calcMethod: "Karachi"}, notes: {"en": "University of Islamic Sciences, Karachi"}},
+        {inh: "Isha", ty: "pt", st: {ptTy: "IshaKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
+        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
     ]
 }

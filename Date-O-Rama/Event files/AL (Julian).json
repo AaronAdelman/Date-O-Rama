@@ -1,13 +1,13 @@
 {
-    titles: {"*": "AL"},
-    "//": "Albania",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    first: {era: 0, y: 1330},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
-    events: [
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"AL"},
+    "//":"Albania",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    fst: {era: 0, y: 1330},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
+    evts: [
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

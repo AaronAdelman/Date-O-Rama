@@ -34,22 +34,22 @@ struct ASAEventsFile: Codable {
     var urls: Dictionary<String, URL>?
 
     var eventSpecifications: Array<ASAEventSpecification>
-    var templateSpecifications: Array<ASAEventSpecification>?
+    var templateSpecifications: Dictionary<String, ASAEventSpecification>?
     
     /// The specification for the first possible occurrence of any event in this events file
     var firstDateSpecification: ASADateSpecification?
     
     enum CodingKeys: String, CodingKey {
-        case titles
-        case defaultLocale
-        case calendarColor
-        case calendarCode
-        case otherCalendarCodes
+        case titles                 = "ttls"
+        case defaultLocale          = "defLocale"
+        case calendarColor          = "color"
+        case calendarCode           = "cal"
+        case otherCalendarCodes     = "othCals"
         case emoji
         case urls
-        case eventSpecifications    = "events"
-        case templateSpecifications = "templates"
-        case firstDateSpecification = "first"
+        case eventSpecifications    = "evts"
+        case templateSpecifications = "tpls"
+        case firstDateSpecification = "fst"
     }
 } // struct ASAEventsFile
 

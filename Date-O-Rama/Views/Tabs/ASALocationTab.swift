@@ -7,8 +7,6 @@
 //
 
 import SwiftUI
-import Combine
-import CoreLocation
 
 struct ASALocationTab: View {
     @EnvironmentObject var userData: ASAModel
@@ -21,10 +19,10 @@ struct ASALocationTab: View {
         let dayPart: ASADayPart = processedClocks.dayPart
         let cellColor = dayPart.locationColor
         
-        ASAList {
-            ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
+        List {
+          ASALocationWithClocksSectionView(now: $now, locationWithClocks: $locationWithClocks, cellColor: cellColor, processed: processedClocks)
                 .environmentObject(userData)
-        } // ASAList
+        } // List
         .listStyle(.grouped)
         .scrollContentBackground(.hidden)
         .navigationBarTitle("", displayMode: .inline)

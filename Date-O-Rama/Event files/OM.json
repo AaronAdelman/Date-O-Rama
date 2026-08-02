@@ -1,33 +1,32 @@
 {
-    titles: {"*": "OM"},
-    "//": "Oman",
-    "TODO": "Muslim holidays?",
-    defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.78, green: 0.06, blue: 0.18},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Oman"},
-    first: {era: 1, y: 751}, 
-    events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
-        {type: "D", start: {mon: 1, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-ascension-day"}, inherits: "Accession Day"},
-        {type: "D", start: {mon: 7, d: 23}, titles: {"en": "Renaissance Day"}},
-        {type: "D", start: {mon: 11, d: 18}, inherits: "Natl Day", first: {era: 1, y: 1650}, last: {era: 1, y: 2024}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {type: "D", start: {mon: 11, d: 20}, inherits: "Natl Day", first: {era: 1, y: 2025}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {type: "D", start: {mon: 11, d: 19}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}, last: {era: 1, y: 2024}},
-        {type: "D", start: {mon: 11, d: 21}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}, first: {era: 1, y: 2025}},
-        {type: "D", start: {mon: 6, wkd: [1], nth: 3}, inherits: "Father’s Day"},
-        {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
+    ttls: {"*":"OM"},
+    "//":"Oman",
+    "TODO":"Muslim holidays?",
+    defLocale: "en",
+    cal: "gre",
+    color: {r: 0.78, g: 0.06, b: 0.18},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Oman"},
+    fst: {era: 1, y: 751}, 
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
+        {ty: "D", st: {mon: 1, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-ascension-day"}, inh: "Accession Day"},
+        {ty: "D", st: {mon: 7, d: 23}, ttls: {"en":"Renaissance Day"}},
+        {ty: "D", st: {mon: 11, d: 18}, inh: "NDay", fst: {era: 1, y: 1650}, last: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {ty: "D", st: {mon: 11, d: 20}, inh: "NDay", fst: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {ty: "D", st: {mon: 11, d: 19}, inh: "ND Holiday", urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}, last: {era: 1, y: 2024}},
+        {ty: "D", st: {mon: 11, d: 21}, inh: "ND Holiday", urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}, fst: {era: 1, y: 2025}},
+        {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
+        {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
 
-        {type: "D", start: {mon: 11, d: 30}, inherits: "Natl Day (in lieu)", first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {type: "D", start: {mon: 12, d: 1}, inherits: "Natl Day Holiday (in lieu)", first: {era: 1, y: 2022}},
+        {ty: "D", st: {mon: 11, d: 30}, inh: "ND (in lieu)", fst: {era: 1, y: 2022}, urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {ty: "D", st: {mon: 12, d: 1}, inh: "ND Holiday (in lieu)", fst: {era: 1, y: 2022}},
 
-        {type: "D", start: {mon: 11, d: 19, thruD: 22, wkd: [4]}, inherits: "Natl Day (in lieu)", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {type: "D", start: {mon: 11, d: 20, thruD: 23, wkd: [5]}, inherits: "Natl Day Holiday (in lieu)", first: {era: 1, y: 2023}},
+        {ty: "D", st: {mon: 11, d: 19, thruD: 22, wkd: [4]}, inh: "ND (in lieu)", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        {ty: "D", st: {mon: 11, d: 20, thruD: 23, wkd: [5]}, inh: "ND Holiday (in lieu)", fst: {era: 1, y: 2023}},
         
-        {type: "D", start: {mon: 10, d: 23}, inherits: "Women’s Day", first: {era: 1, y: 2022}},
+        {ty: "D", st: {mon: 10, d: 23}, inh: "Women’s Day", fst: {era: 1, y: 2022}},
    ],
-    templates: [
-        {template: "Natl Day Holiday (in lieu)", titles: {"en": "National Day Holiday (in lieu)"}, type: "D", start: {mon: 11, d: 20, thruD: 23, wkd: [5]}, inherits: "Natl Day Holiday", urls: {"en": "https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-
-    ]
+    tpls: {
+        "ND Holiday (in lieu)": {ttls: {"en":"National Day Holiday (in lieu)"}, ty: "D", st: {mon: 11, d: 20, thruD: 23, wkd: [5]}, inh: "ND Holiday", urls: {"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+    }
 }

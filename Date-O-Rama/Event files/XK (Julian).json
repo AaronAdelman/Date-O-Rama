@@ -1,14 +1,14 @@
 {
-    titles: {"*": "XK"},
-    "//": "Kosovo",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.00, blue: 0.50},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
-    first: {era: 1, y: 2008},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"XK"},
+    "//":"Kosovo",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.00, g: 0.00, b: 0.50},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
+    fst: {era: 1, y: 2008},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

@@ -52,12 +52,12 @@ struct ASALocationSymbol:  View {
         if self.locationManager.locationAuthorizationStatus == nil {
             Image(systemName:  "location.slash")
                 .imageScale(SCALE)
-                .foregroundColor(.pink)
+                .foregroundStyle(Color.pink)
         } else {
             let effectiveStatus: CLAuthorizationStatus = self.locationManager.locationAuthorizationStatus!
             Image(systemName:  (effectiveStatus).symbolName)
                 .imageScale(SCALE)
-                .foregroundColor(effectiveStatus.symbolColor)
+                .foregroundStyle(effectiveStatus.symbolColor)
         }
     } // var body
 } // struct ASALocationSymbol

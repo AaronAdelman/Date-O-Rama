@@ -45,6 +45,7 @@ struct ASAMainTabView: View {
                             processedClocks: processedClocks
                         )
                         .environmentObject(userData)
+                        .toolbar(.hidden, for: .tabBar)
                     }
                 }
             } // TabView
@@ -106,7 +107,7 @@ struct ASAMainTabView: View {
                             .tint(.green)
                     } else {
                         Image(systemName: DATE_NAME)
-                            .foregroundStyle(.yellow)
+                            .foregroundStyle(Color.yellow)
                     }
                 }
             }
@@ -130,6 +131,7 @@ struct ASAMainTabView: View {
         }
         .sheet(isPresented: $showComplicationsSheet) {
             ASAComplicationClocksTab(now: $now)
+                .preferredColorScheme(.dark)
                 .environmentObject(locationManager)
         }
     } // body

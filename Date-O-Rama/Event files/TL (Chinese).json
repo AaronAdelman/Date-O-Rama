@@ -1,11 +1,11 @@
 {
-    titles: {"*": "TL"},
-    "//": "Timor-Leste, AKA East Timor",
-    defaultLocale: "en",
-    calendarCode: "chi",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Timor-Leste"},
-    events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
+    ttls: {"*":"TL"},
+    "//":"Timor-Leste, AKA East Timor",
+    defLocale: "en",
+    cal: "chi",
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Timor-Leste"},
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NY"},
     ]
 }

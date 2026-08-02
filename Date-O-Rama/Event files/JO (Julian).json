@@ -1,13 +1,13 @@
 {
-    titles: {"*": "JO"},
-    "//": "Jordan",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    events: [
-        {type: "D", start: {Easter: "Easter", offsetD: -7}, inherits: "Palm Sunday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"JO"},
+    "//":"Jordan",
+    defLocale: "en",
+    cal: "jul",
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    evts: [
+        {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }

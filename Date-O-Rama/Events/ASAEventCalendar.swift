@@ -136,8 +136,8 @@ class ASAEventCalendar {
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
     
     func matchMoonPhase(startOfDay: Date, startOfNextDay: Date, dateSpecification: ASADateSpecification, components: ASADateComponents) -> ASAMatchResult {
-        assert(dateSpecification.moonPhase != nil)
-        let phaseType = dateSpecification.moonPhase!
+        assert(dateSpecification.miscellaneous.isMoonPhase)
+        let phaseType = dateSpecification.miscellaneous!
         
         if phaseType == .firstFullMoon || phaseType == .secondFullMoon {
             // First or second full Moon in month
@@ -162,9 +162,8 @@ class ASAEventCalendar {
     } // func matchMoonPhase(startOfDay: Date, startOfNextDay: Date, dateSpecification: ASADateSpecification, components: ASADateComponents) -> ASAMatchResult
 
     func matchMoonPhaseRecurrence(dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> ASAMatchResult {
-        assert(dateSpecification.moonPhase != nil)
-        assert(dateSpecification.moonPhase != ASAMoonPhase.none)
-        let phaseType = dateSpecification.moonPhase!
+        assert(dateSpecification.miscellaneous.isMoonPhase)
+        let phaseType = dateSpecification.miscellaneous!
         guard let month = dateSpecification.month else { return MATCH_FAILURE }
         guard let day = dateSpecification.day else { return MATCH_FAILURE }
         guard let recurrence = dateSpecification.recurrence else { return MATCH_FAILURE }
@@ -212,7 +211,7 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
-        switch startDateSpecification.moonPhase {
+        switch startDateSpecification.miscellaneous! {
         case .firstFullMoon:
             if componentsDay < 30 {
                 return ASAMatchResult(matches: true, startDate: nil, endDate: nil, cycle: nil, dayInCycle: nil)
@@ -245,7 +244,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.MoonPhase
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
     
-    func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
+    func possibleDateEquinoxOrSolstice(for type: ASAMiscellaneous, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
         
@@ -273,7 +272,7 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
+    func matchEquinoxOrSolstice(type: ASAMiscellaneous, startOfDay:  Date, startOfNextDay:  Date, offsetDays: Int) -> ASAMatchResult {
         
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDateEquinoxOrSolstice(for: type, now: initialDate) else {
@@ -516,24 +515,10 @@ class ASAEventCalendar {
         return ASAMatchResult(matches: true, startDate: startDate, endDate: endDate, cycle: nil, dayInCycle: nil)
     } // func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> ASAMatchResult
     
-    func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> ASAMatchResult {
-        if calendar is ASACalendarWithEaster {
-            
-        } else {
+    func matchEasterEvent(date: Date, calendar: ASACalendar, startDateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult {
+        if !(calendar is ASACalendarWithEaster) {
             return MATCH_FAILURE
         }
-        
-//        var forGregorianCalendar: Bool
-//        switch calendar.calendarCode {
-//        case .Gregorian:
-//            forGregorianCalendar = true
-//            
-//        case .Julian:
-//            forGregorianCalendar = false
-//            
-//        default:
-//            return MATCH_FAILURE // Calculating the date of Easter is currently irrelevant for other calendars
-//        } // switch calendar.calendarCode
         
         guard let componentsEra = components.era else {
             return MATCH_FAILURE
@@ -543,12 +528,11 @@ class ASAEventCalendar {
                 return MATCH_FAILURE
             }
             
-//        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
-            let easterStuff = (calendar as! ASACalendarWithEaster).calculateEaster(era: componentsEra, year: componentsYear)
+        let easterStuff = (calendar as! ASACalendarWithEaster).calculateEaster(era: componentsEra, year: componentsYear)
         if easterStuff == nil {
             return MATCH_FAILURE
         }
-        let (EasterMonth, EasterDay) = (easterStuff!.0, easterStuff!.1)
+        let (easterMonth, easterDay) = (easterStuff!.0, easterStuff!.1)
         
         guard let componentsMonth = components.month else {
             return MATCH_FAILURE
@@ -559,7 +543,7 @@ class ASAEventCalendar {
         
         let offsetDays = startDateSpecification.offsetDays ?? 0
         if offsetDays == 0 {
-            if componentsMonth == EasterMonth && componentsDay == EasterDay {
+            if componentsMonth == easterMonth && componentsDay == easterDay {
                 return ASAMatchResult(matches: true, startDate: startOfDay, endDate: startOfNextDay, cycle: nil, dayInCycle: nil)
             } else {
                 return MATCH_FAILURE
@@ -570,34 +554,34 @@ class ASAEventCalendar {
         let locationData = components.locationData
         let timeZone: TimeZone = locationData.timeZone
         
-        let EasterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: EasterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: EasterDay)
-        let EasterDate = EasterDateComponents.date
-        let EasterMJD = EasterDate!.localModifiedJulianDay(timeZone: timeZone)
-        let EasterEventMJD = EasterMJD + offsetDays
+        let easterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: easterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: easterDay)
+        let easterDate = easterDateComponents.date
+        let easterMJD = easterDate!.localModifiedJulianDay(timeZone: timeZone)
+        let easterEventMJD = easterMJD + offsetDays
         
-        if dateMJD == EasterEventMJD {
+        if dateMJD == easterEventMJD {
             return ASAMatchResult(matches: true, startDate: startOfDay, endDate: startOfNextDay, cycle: nil, dayInCycle: nil)
         } else {
             return MATCH_FAILURE
         }
-    } // func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> ASAMatchResult
+    } // func matchEasterEvent(date: Date, calendar: ASACalendar, startDateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult
     
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> ASAMatchResult {
         var event: ASAIslamicPrayerTimeEvent
         switch tweakedStartDateSpecification.pointEventType {
-        case .Fajr:
+        case .fajrMWL, .fajrISNA, .fajrEgypt, .fajrJafari, .fajrMakkah, .fajrTehran, .fajrKarachi, .fajrMWLMidnight, .fajrISNAMidnight, .fajrEgyptMidnight, .fajrJafariMidnight, .fajrMakkahMidnight, .fajrTehranMidnight, .fajrKarachiMidnight, .fajrMWLOneSeventh, .fajrISNAOneSeventh, .fajrEgyptOneSeventh, .fajrJafariOneSeventh, .fajrMakkahOneSeventh, .fajrTehranOneSeventh, .fajrKarachiOneSeventh, .fajrMWLAngleBased, .fajrISNAAngleBased, .fajrEgyptAngleBased, .fajrJafariAngleBased, .fajrMakkahAngleBased, .fajrTehranAngleBased, .fajrKarachiAngleBased:
             event = .Fajr
             
-        case .Dhuhr:
+        case .dhuhrMWL, .dhuhrISNA, .dhuhrEgypt, .dhuhrJafari, .dhuhrMakkah, .dhuhrTehran, .dhuhrKarachi, .dhuhrMWLMidnight, .dhuhrISNAMidnight, .dhuhrEgyptMidnight, .dhuhrJafariMidnight, .dhuhrMakkahMidnight, .dhuhrTehranMidnight, .dhuhrKarachiMidnight, .dhuhrMWLOneSeventh, .dhuhrISNAOneSeventh, .dhuhrEgyptOneSeventh, .dhuhrJafariOneSeventh, .dhuhrMakkahOneSeventh, .dhuhrTehranOneSeventh, .dhuhrKarachiOneSeventh, .dhuhrMWLAngleBased, .dhuhrISNAAngleBased, .dhuhrEgyptAngleBased, .dhuhrJafariAngleBased, .dhuhrMakkahAngleBased, .dhuhrTehranAngleBased, .dhuhrKarachiAngleBased:
             event = .Dhuhr
             
-        case .Asr:
+        case .asrHanafiMWL, .asrShafiiMWL, .asrHanafiISNA, .asrShafiiISNA, .asrHanafiEgypt, .asrShafiiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrShafiiJafari, .asrShafiiMakkah, .asrShafiiTehran, .asrHanafiKarachi, .asrShafiiKarachi, .asrHanafiMWLMidnight, .asrShafiiMWLMidnight, .asrHanafiISNAMidnight, .asrShafiiISNAMidnight, .asrHanafiEgyptMidnight, .asrShafiiEgyptMidnight, .asrHanafiJafariMidnight, .asrHanafiMakkahMidnight, .asrHanafiTehranMidnight, .asrShafiiJafariMidnight, .asrShafiiMakkahMidnight, .asrShafiiTehranMidnight, .asrHanafiKarachiMidnight, .asrShafiiKarachiMidnight, .asrHanafiMWLOneSeventh, .asrShafiiMWLOneSeventh, .asrHanafiISNAOneSeventh, .asrShafiiISNAOneSeventh, .asrHanafiEgyptOneSeventh, .asrShafiiEgyptOneSeventh, .asrHanafiJafariOneSeventh, .asrHanafiMakkahOneSeventh, .asrHanafiTehranOneSeventh, .asrShafiiJafariOneSeventh, .asrShafiiMakkahOneSeventh, .asrShafiiTehranOneSeventh, .asrHanafiKarachiOneSeventh, .asrShafiiKarachiOneSeventh, .asrHanafiMWLAngleBased, .asrShafiiMWLAngleBased, .asrHanafiISNAAngleBased, .asrShafiiISNAAngleBased, .asrHanafiEgyptAngleBased, .asrShafiiEgyptAngleBased, .asrHanafiJafariAngleBased, .asrHanafiMakkahAngleBased, .asrHanafiTehranAngleBased, .asrShafiiJafariAngleBased, .asrShafiiMakkahAngleBased, .asrShafiiTehranAngleBased, .asrHanafiKarachiAngleBased, .asrShafiiKarachiAngleBased:
             event = .Asr
             
-        case .Maghrib:
+        case .maghribMWL, .maghribISNA, .maghribEgypt, .maghribJafari, .maghribMakkah, .maghribTehran, .maghribKarachi, .maghribMWLMidnight, .maghribISNAMidnight, .maghribEgyptMidnight, .maghribJafariMidnight, .maghribMakkahMidnight, .maghribTehranMidnight, .maghribKarachiMidnight, .maghribMWLOneSeventh, .maghribISNAOneSeventh, .maghribEgyptOneSeventh, .maghribJafariOneSeventh, .maghribMakkahOneSeventh, .maghribTehranOneSeventh, .maghribKarachiOneSeventh, .maghribMWLAngleBased, .maghribISNAAngleBased, .maghribEgyptAngleBased, .maghribJafariAngleBased, .maghribMakkahAngleBased, .maghribTehranAngleBased, .maghribKarachiAngleBased:
             event = .Maghrib
             
-        case .Isha:
+        case .ishaMWL, .ishaISNA, .ishaEgypt, .ishaJafari, .ishaMakkah, .ishaTehran, .ishaKarachi, .ishaMWLMidnight, .ishaISNAMidnight, .ishaEgyptMidnight, .ishaJafariMidnight, .ishaMakkahMidnight, .ishaTehranMidnight, .ishaKarachiMidnight, .ishaMWLOneSeventh, .ishaISNAOneSeventh, .ishaEgyptOneSeventh, .ishaJafariOneSeventh, .ishaMakkahOneSeventh, .ishaTehranOneSeventh, .ishaKarachiOneSeventh, .ishaMWLAngleBased, .ishaISNAAngleBased, .ishaEgyptAngleBased, .ishaJafariAngleBased, .ishaMakkahAngleBased, .ishaTehranAngleBased, .ishaKarachiAngleBased:
             event = .Isha
             
         default:
@@ -606,10 +590,49 @@ class ASAEventCalendar {
         
         let latitude: CLLocationDegrees = locationData.location.coordinate.latitude
         let longitude: CLLocationDegrees = locationData.location.coordinate.longitude
-        let calcMethod: ASACalculationMethod = tweakedStartDateSpecification.calculationMethod ?? .Jafari
-        let asrJuristic: ASAJuristicMethodForAsr = tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii
+        let calcMethod: ASACalculationMethod = {
+            switch tweakedStartDateSpecification.pointEventType {
+            case .generic, .twilightRising, .twilightSetting, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .rise, .set, .none:
+                fatalError()
+            case .fajrJafari, .dhuhrJafari, .asrShafiiJafari, .asrHanafiJafari, .maghribJafari, .ishaJafari, .fajrJafariMidnight, .dhuhrJafariMidnight, .asrShafiiJafariMidnight, .asrHanafiJafariMidnight, .maghribJafariMidnight, .ishaJafariMidnight, .fajrJafariOneSeventh, .dhuhrJafariOneSeventh, .asrShafiiJafariOneSeventh, .asrHanafiJafariOneSeventh, .maghribJafariOneSeventh, .ishaJafariOneSeventh, .fajrJafariAngleBased, .dhuhrJafariAngleBased, .asrShafiiJafariAngleBased, .asrHanafiJafariAngleBased, .maghribJafariAngleBased, .ishaJafariAngleBased:
+                return .jafari
+            case .fajrKarachi, .dhuhrKarachi, .asrShafiiKarachi, .asrHanafiKarachi, .maghribKarachi, .ishaKarachi, .fajrKarachiMidnight, .dhuhrKarachiMidnight, .asrShafiiKarachiMidnight, .asrHanafiKarachiMidnight, .maghribKarachiMidnight, .ishaKarachiMidnight, .fajrKarachiOneSeventh, .dhuhrKarachiOneSeventh, .asrShafiiKarachiOneSeventh, .asrHanafiKarachiOneSeventh, .maghribKarachiOneSeventh, .ishaKarachiOneSeventh, .fajrKarachiAngleBased, .dhuhrKarachiAngleBased, .asrShafiiKarachiAngleBased, .asrHanafiKarachiAngleBased, .maghribKarachiAngleBased, .ishaKarachiAngleBased:
+                return .karachi
+            case .fajrISNA, .dhuhrISNA, .asrShafiiISNA, .asrHanafiISNA, .maghribISNA, .ishaISNA, .fajrISNAMidnight, .dhuhrISNAMidnight, .asrShafiiISNAMidnight, .asrHanafiISNAMidnight, .maghribISNAMidnight, .ishaISNAMidnight, .fajrISNAOneSeventh, .dhuhrISNAOneSeventh, .asrShafiiISNAOneSeventh, .asrHanafiISNAOneSeventh, .maghribISNAOneSeventh, .ishaISNAOneSeventh, .fajrISNAAngleBased, .dhuhrISNAAngleBased, .asrShafiiISNAAngleBased, .asrHanafiISNAAngleBased, .maghribISNAAngleBased, .ishaISNAAngleBased:
+                return .isna
+            case .fajrMWL, .dhuhrMWL, .asrShafiiMWL, .asrHanafiMWL, .maghribMWL, .ishaMWL, .fajrMWLMidnight, .dhuhrMWLMidnight, .asrShafiiMWLMidnight, .asrHanafiMWLMidnight, .maghribMWLMidnight, .ishaMWLMidnight, .fajrMWLOneSeventh, .dhuhrMWLOneSeventh, .asrShafiiMWLOneSeventh, .asrHanafiMWLOneSeventh, .maghribMWLOneSeventh, .ishaMWLOneSeventh, .fajrMWLAngleBased, .dhuhrMWLAngleBased, .asrShafiiMWLAngleBased, .asrHanafiMWLAngleBased, .maghribMWLAngleBased, .ishaMWLAngleBased:
+                return .mwl
+            case .fajrMakkah, .dhuhrMakkah, .asrShafiiMakkah, .asrHanafiMakkah, .maghribMakkah, .ishaMakkah, .fajrMakkahMidnight, .dhuhrMakkahMidnight, .asrShafiiMakkahMidnight, .asrHanafiMakkahMidnight, .maghribMakkahMidnight, .ishaMakkahMidnight, .fajrMakkahOneSeventh, .dhuhrMakkahOneSeventh, .asrShafiiMakkahOneSeventh, .asrHanafiMakkahOneSeventh, .maghribMakkahOneSeventh, .ishaMakkahOneSeventh, .fajrMakkahAngleBased, .dhuhrMakkahAngleBased, .asrShafiiMakkahAngleBased, .asrHanafiMakkahAngleBased, .maghribMakkahAngleBased, .ishaMakkahAngleBased:
+                return .makkah
+            case .fajrEgypt, .dhuhrEgypt, .asrShafiiEgypt, .asrHanafiEgypt, .maghribEgypt, .ishaEgypt, .fajrEgyptMidnight, .dhuhrEgyptMidnight, .asrShafiiEgyptMidnight, .asrHanafiEgyptMidnight, .maghribEgyptMidnight, .ishaEgyptMidnight, .fajrEgyptOneSeventh, .dhuhrEgyptOneSeventh, .asrShafiiEgyptOneSeventh, .asrHanafiEgyptOneSeventh, .maghribEgyptOneSeventh, .ishaEgyptOneSeventh, .fajrEgyptAngleBased, .dhuhrEgyptAngleBased, .asrShafiiEgyptAngleBased, .asrHanafiEgyptAngleBased, .maghribEgyptAngleBased, .ishaEgyptAngleBased:                return .egypt
+            case .fajrTehran, .dhuhrTehran, .asrShafiiTehran, .asrHanafiTehran, .maghribTehran, .ishaTehran, .fajrTehranMidnight, .dhuhrTehranMidnight, .asrShafiiTehranMidnight, .asrHanafiTehranMidnight, .maghribTehranMidnight, .ishaTehranMidnight, .fajrTehranOneSeventh, .dhuhrTehranOneSeventh, .asrShafiiTehranOneSeventh, .asrHanafiTehranOneSeventh, .maghribTehranOneSeventh, .ishaTehranOneSeventh, .fajrTehranAngleBased, .dhuhrTehranAngleBased, .asrShafiiTehranAngleBased, .asrHanafiTehranAngleBased, .maghribTehranAngleBased, .ishaTehranAngleBased:                return .tehran
+            }
+        }()
+        let isAsrHanafi: Bool = {
+            switch tweakedStartDateSpecification.pointEventType {
+            case .asrHanafiMWL, .asrHanafiISNA, .asrHanafiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrHanafiKarachi, .asrHanafiMWLMidnight, .asrHanafiISNAMidnight, .asrHanafiEgyptMidnight, .asrHanafiJafariMidnight, .asrHanafiMakkahMidnight, .asrHanafiTehranMidnight, .asrHanafiKarachiMidnight, .asrHanafiMWLOneSeventh, .asrHanafiISNAOneSeventh, .asrHanafiEgyptOneSeventh, .asrHanafiJafariOneSeventh, .asrHanafiMakkahOneSeventh, .asrHanafiTehranOneSeventh, .asrHanafiKarachiOneSeventh, .asrHanafiMWLAngleBased, .asrHanafiISNAAngleBased, .asrHanafiEgyptAngleBased, .asrHanafiJafariAngleBased, .asrHanafiMakkahAngleBased, .asrHanafiTehranAngleBased, .asrHanafiKarachiAngleBased:
+                return true
+                
+            default:
+                return false
+            }
+        }()
+        let asrJuristic: ASAJuristicMethodForAsr = isAsrHanafi ? .hanafi : .shafii
         let dhuhrMinutes: Double = tweakedStartDateSpecification.dhuhrMinutes ?? 0.0
-        let adjustHighLats: ASAAdjustingMethodForHigherLatitudes = tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight
+        let adjustHighLats: ASAAdjustingMethodForHigherLatitudes = {
+            switch tweakedStartDateSpecification.pointEventType ?? .generic {
+        case .generic, .twilightRising, .twilightSetting, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .rise, .set:
+            fatalError()
+        case .fajrMWL, .fajrISNA, .fajrEgypt, .fajrJafari, .fajrMakkah, .fajrTehran, .fajrKarachi, .dhuhrMWL, .dhuhrISNA, .dhuhrEgypt, .dhuhrJafari, .dhuhrMakkah, .dhuhrTehran, .dhuhrKarachi, .asrHanafiMWL, .asrShafiiMWL, .asrHanafiISNA, .asrShafiiISNA, .asrHanafiEgypt, .asrShafiiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrShafiiJafari, .asrShafiiMakkah, .asrShafiiTehran, .asrHanafiKarachi, .asrShafiiKarachi, .maghribMWL, .maghribISNA, .maghribEgypt, .maghribJafari, .maghribMakkah, .maghribTehran, .maghribKarachi, .ishaMWL, .ishaISNA, .ishaEgypt, .ishaJafari, .ishaMakkah, .ishaTehran, .ishaKarachi:
+            return .none
+        case .fajrMWLMidnight,  .fajrISNAMidnight,  .fajrEgyptMidnight,  .fajrJafariMidnight,  .fajrMakkahMidnight,  .fajrTehranMidnight,  .fajrKarachiMidnight,  .dhuhrMWLMidnight,  .dhuhrISNAMidnight,  .dhuhrEgyptMidnight,  .dhuhrJafariMidnight,  .dhuhrMakkahMidnight,  .dhuhrTehranMidnight,  .dhuhrKarachiMidnight,  .asrHanafiMWLMidnight,  .asrShafiiMWLMidnight,  .asrHanafiISNAMidnight,  .asrShafiiISNAMidnight,  .asrHanafiEgyptMidnight,  .asrShafiiEgyptMidnight,  .asrHanafiJafariMidnight,  .asrHanafiMakkahMidnight,  .asrHanafiTehranMidnight,  .asrShafiiJafariMidnight,  .asrShafiiMakkahMidnight,  .asrShafiiTehranMidnight,  .asrHanafiKarachiMidnight,  .asrShafiiKarachiMidnight,  .maghribMWLMidnight,  .maghribISNAMidnight,  .maghribEgyptMidnight,  .maghribJafariMidnight,  .maghribMakkahMidnight,  .maghribTehranMidnight,  .maghribKarachiMidnight,  .ishaMWLMidnight,  .ishaISNAMidnight,  .ishaEgyptMidnight,  .ishaJafariMidnight,  .ishaMakkahMidnight,  .ishaTehranMidnight,  .ishaKarachiMidnight:
+            return .midnight
+        case .fajrMWLOneSeventh,  .fajrISNAOneSeventh,  .fajrEgyptOneSeventh,  .fajrJafariOneSeventh,  .fajrMakkahOneSeventh,  .fajrTehranOneSeventh,  .fajrKarachiOneSeventh,  .dhuhrMWLOneSeventh,  .dhuhrISNAOneSeventh,  .dhuhrEgyptOneSeventh,  .dhuhrJafariOneSeventh,  .dhuhrMakkahOneSeventh,  .dhuhrTehranOneSeventh,  .dhuhrKarachiOneSeventh,  .asrHanafiMWLOneSeventh,  .asrShafiiMWLOneSeventh,  .asrHanafiISNAOneSeventh,  .asrShafiiISNAOneSeventh,  .asrHanafiEgyptOneSeventh,  .asrShafiiEgyptOneSeventh,  .asrHanafiJafariOneSeventh,  .asrHanafiMakkahOneSeventh,  .asrHanafiTehranOneSeventh,  .asrShafiiJafariOneSeventh,  .asrShafiiMakkahOneSeventh,  .asrShafiiTehranOneSeventh,  .asrHanafiKarachiOneSeventh,  .asrShafiiKarachiOneSeventh,  .maghribMWLOneSeventh,  .maghribISNAOneSeventh,  .maghribEgyptOneSeventh,  .maghribJafariOneSeventh,  .maghribMakkahOneSeventh,  .maghribTehranOneSeventh,  .maghribKarachiOneSeventh,  .ishaMWLOneSeventh,  .ishaISNAOneSeventh,  .ishaEgyptOneSeventh,  .ishaJafariOneSeventh,  .ishaMakkahOneSeventh,  .ishaTehranOneSeventh,  .ishaKarachiOneSeventh:
+            return .oneSeventh
+        case .fajrMWLAngleBased,  .fajrISNAAngleBased,  .fajrEgyptAngleBased,  .fajrJafariAngleBased,  .fajrMakkahAngleBased,  .fajrTehranAngleBased,  .fajrKarachiAngleBased,  .dhuhrMWLAngleBased,  .dhuhrISNAAngleBased,  .dhuhrEgyptAngleBased,  .dhuhrJafariAngleBased,  .dhuhrMakkahAngleBased,  .dhuhrTehranAngleBased,  .dhuhrKarachiAngleBased,  .asrHanafiMWLAngleBased,  .asrShafiiMWLAngleBased,  .asrHanafiISNAAngleBased,  .asrShafiiISNAAngleBased,  .asrHanafiEgyptAngleBased,  .asrShafiiEgyptAngleBased,  .asrHanafiJafariAngleBased,  .asrHanafiMakkahAngleBased,  .asrHanafiTehranAngleBased,  .asrShafiiJafariAngleBased,  .asrShafiiMakkahAngleBased,  .asrShafiiTehranAngleBased,  .asrHanafiKarachiAngleBased,  .asrShafiiKarachiAngleBased,  .maghribMWLAngleBased,  .maghribISNAAngleBased,  .maghribEgyptAngleBased,  .maghribJafariAngleBased,  .maghribMakkahAngleBased,  .maghribTehranAngleBased,  .maghribKarachiAngleBased,  .ishaMWLAngleBased,  .ishaISNAAngleBased,  .ishaEgyptAngleBased,  .ishaJafariAngleBased,  .ishaMakkahAngleBased,  .ishaTehranAngleBased,  .ishaKarachiAngleBased:
+            return .angleBased
+        }
+        }()
         let events = date.prayerTimesSunsetTransition(latitude: latitude, longitude: longitude, calcMethod: calcMethod, asrJuristic: asrJuristic, dhuhrMinutes: dhuhrMinutes, adjustHighLats: adjustHighLats, events: [event])
         let startDate = events![event]
         return ASAMatchResult(matches: true, startDate: startDate, endDate: startDate, cycle: nil, dayInCycle: nil)
@@ -695,9 +718,9 @@ class ASAEventCalendar {
             startDateEYMD[3] = day
         }
                 
-        let durationDays = startDateSpecification.durationDays
-        if durationDays != nil {
-            endDateEYMD[3] = startDateEYMD[3]! + durationDays! - 1
+        let durDays = startDateSpecification.durationInDays
+        if durDays != nil {
+            endDateEYMD[3] = startDateEYMD[3]! + durDays! - 1
         } else if endThroughDay != nil {
             assert(endWeekday != nil)
             assert(endMonth != nil)
@@ -805,13 +828,13 @@ class ASAEventCalendar {
             }
             return genericMatch
             
-        case .twilight:
+        case .twilightRising, .twilightSetting:
             guard let degreesBelowHorizon = dateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
-            guard let rising = dateSpecification.rising else { return MATCH_FAILURE }
+            let rising = dateSpecification.pointEventType == .twilightRising
             let offset = dateSpecification.offset ?? 0.0
             return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             
-        case .Isha, .Maghrib, .Asr, .Dhuhr, .Fajr:
+        case .ishaMWL, .ishaISNA, .ishaEgypt, .ishaJafari, .ishaMakkah, .ishaTehran, .ishaKarachi, .maghribMWL, .maghribISNA, .maghribEgypt, .maghribJafari, .maghribMakkah, .maghribTehran, .maghribKarachi, .asrHanafiMWL, .asrShafiiMWL, .asrHanafiISNA, .asrShafiiISNA, .asrHanafiEgypt, .asrShafiiEgypt, .asrHanafiJafari, .asrHanafiMakkah, .asrHanafiTehran, .asrShafiiJafari, .asrShafiiMakkah, .asrShafiiTehran, .asrHanafiKarachi, .asrShafiiKarachi, .dhuhrMWL, .dhuhrISNA, .dhuhrEgypt, .dhuhrJafari, .dhuhrMakkah, .dhuhrTehran, .dhuhrKarachi, .fajrMWL, .fajrISNA, .fajrEgypt, .fajrJafari, .fajrMakkah, .fajrTehran, .fajrKarachi, .ishaMWLMidnight, .ishaISNAMidnight, .ishaEgyptMidnight, .ishaJafariMidnight, .ishaMakkahMidnight, .ishaTehranMidnight, .ishaKarachiMidnight, .maghribMWLMidnight, .maghribISNAMidnight, .maghribEgyptMidnight, .maghribJafariMidnight, .maghribMakkahMidnight, .maghribTehranMidnight, .maghribKarachiMidnight, .asrHanafiMWLMidnight, .asrShafiiMWLMidnight, .asrHanafiISNAMidnight, .asrShafiiISNAMidnight, .asrHanafiEgyptMidnight, .asrShafiiEgyptMidnight, .asrHanafiJafariMidnight, .asrHanafiMakkahMidnight, .asrHanafiTehranMidnight, .asrShafiiJafariMidnight, .asrShafiiMakkahMidnight, .asrShafiiTehranMidnight, .asrHanafiKarachiMidnight, .asrShafiiKarachiMidnight, .dhuhrMWLMidnight, .dhuhrISNAMidnight, .dhuhrEgyptMidnight, .dhuhrJafariMidnight, .dhuhrMakkahMidnight, .dhuhrTehranMidnight, .dhuhrKarachiMidnight, .fajrMWLMidnight, .fajrISNAMidnight, .fajrEgyptMidnight, .fajrJafariMidnight, .fajrMakkahMidnight, .fajrTehranMidnight, .fajrKarachiMidnight, .ishaMWLOneSeventh, .ishaISNAOneSeventh, .ishaEgyptOneSeventh, .ishaJafariOneSeventh, .ishaMakkahOneSeventh, .ishaTehranOneSeventh, .ishaKarachiOneSeventh, .maghribMWLOneSeventh, .maghribISNAOneSeventh, .maghribEgyptOneSeventh, .maghribJafariOneSeventh, .maghribMakkahOneSeventh, .maghribTehranOneSeventh, .maghribKarachiOneSeventh, .asrHanafiMWLOneSeventh, .asrShafiiMWLOneSeventh, .asrHanafiISNAOneSeventh, .asrShafiiISNAOneSeventh, .asrHanafiEgyptOneSeventh, .asrShafiiEgyptOneSeventh, .asrHanafiJafariOneSeventh, .asrHanafiMakkahOneSeventh, .asrHanafiTehranOneSeventh, .asrShafiiJafariOneSeventh, .asrShafiiMakkahOneSeventh, .asrShafiiTehranOneSeventh, .asrHanafiKarachiOneSeventh, .asrShafiiKarachiOneSeventh, .dhuhrMWLOneSeventh, .dhuhrISNAOneSeventh, .dhuhrEgyptOneSeventh, .dhuhrJafariOneSeventh, .dhuhrMakkahOneSeventh, .dhuhrTehranOneSeventh, .dhuhrKarachiOneSeventh, .fajrMWLOneSeventh, .fajrISNAOneSeventh, .fajrEgyptOneSeventh, .fajrJafariOneSeventh, .fajrMakkahOneSeventh, .fajrTehranOneSeventh, .fajrKarachiOneSeventh, .ishaMWLAngleBased, .ishaISNAAngleBased, .ishaEgyptAngleBased, .ishaJafariAngleBased, .ishaMakkahAngleBased, .ishaTehranAngleBased, .ishaKarachiAngleBased, .maghribMWLAngleBased, .maghribISNAAngleBased, .maghribEgyptAngleBased, .maghribJafariAngleBased, .maghribMakkahAngleBased, .maghribTehranAngleBased, .maghribKarachiAngleBased, .asrHanafiMWLAngleBased, .asrShafiiMWLAngleBased, .asrHanafiISNAAngleBased, .asrShafiiISNAAngleBased, .asrHanafiEgyptAngleBased, .asrShafiiEgyptAngleBased, .asrHanafiJafariAngleBased, .asrHanafiMakkahAngleBased, .asrHanafiTehranAngleBased, .asrShafiiJafariAngleBased, .asrShafiiMakkahAngleBased, .asrShafiiTehranAngleBased, .asrHanafiKarachiAngleBased, .asrShafiiKarachiAngleBased, .dhuhrMWLAngleBased, .dhuhrISNAAngleBased, .dhuhrEgyptAngleBased, .dhuhrJafariAngleBased, .dhuhrMakkahAngleBased, .dhuhrTehranAngleBased, .dhuhrKarachiAngleBased, .fajrMWLAngleBased, .fajrISNAAngleBased, .fajrEgyptAngleBased, .fajrJafariAngleBased, .fajrMakkahAngleBased, .fajrTehranAngleBased, .fajrKarachiAngleBased:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
             
         case .rise, .set:
@@ -1091,9 +1114,9 @@ class ASAEventCalendar {
     } // func dayAndCycle(mjd: Int, cycleStartMJD: Int, cycleLength: Int) -> (dayInCycle: Int, cycleNumber: Int)
     
     func matchOneDayOrLess(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, dateMJD: Int) -> ASAMatchResult {
-        let moonPhase = dateSpecification.moonPhase
+        let miscellaneous = dateSpecification.miscellaneous
         
-        if moonPhase != nil && (moonPhase != ASAMoonPhase.none) && dateSpecification.month != nil && dateSpecification.day != nil && dateSpecification.recurrence != nil {
+        if miscellaneous.isMoonPhase && dateSpecification.month != nil && dateSpecification.day != nil && dateSpecification.recurrence != nil {
             let matchesAndStartAndEndDates = matchMoonPhaseRecurrence(dateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
@@ -1130,7 +1153,7 @@ class ASAEventCalendar {
         var end = startOfNextDay
         
         let offsetDays = dateSpecification.offsetDays ?? 0
-        if offsetDays != 0 && dateSpecification.Easter == nil && dateSpecification.equinoxOrSolstice == nil {
+        if offsetDays != 0 && miscellaneous.isNone {
             let specifiedEra = dateSpecification.era ?? components.era
             let specifiedYear = dateSpecification.year ?? components.year
             let specifiedMonth = dateSpecification.month ?? components.month
@@ -1208,27 +1231,20 @@ class ASAEventCalendar {
             }
         }
         
-        let Easter = dateSpecification.Easter
-        if Easter ?? .none != .none {
+        if miscellaneous.isEaster {
             let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
             }
-        }
-        
-        let equinoxOrSolstice = dateSpecification.equinoxOrSolstice
-        if equinoxOrSolstice != nil && equinoxOrSolstice! != .none {
-            let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
+        } else if miscellaneous.isEquinoxOrSolstice {
+            let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: miscellaneous!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, offsetDays: dateSpecification.offsetDays ?? 0)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
             } else {
                 start = matchesAndStartAndEndDates.startDate!
                 end = matchesAndStartAndEndDates.endDate!
             }
-        }
-        
-        let timeChange = dateSpecification.timeChange
-        if timeChange != nil && timeChange! != .none {
+        } else if miscellaneous.isTimeChange {
             let matchesAndStartAndEndDates = matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
@@ -1238,7 +1254,7 @@ class ASAEventCalendar {
             }
         }
         
-        if moonPhase != nil && moonPhase! != .none {
+        if miscellaneous.isMoonPhase {
             let matchesAndStartAndEndDates = matchMoonPhase(startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateSpecification: dateSpecification, components: components)
             if !matchesAndStartAndEndDates.matches {
                 return MATCH_FAILURE
@@ -1276,7 +1292,7 @@ class ASAEventCalendar {
         return self.eventsFile?.symbol
     } // func fileEmoji() -> String?
     
-    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock, eventsFileTemplates: Array<ASAEventSpecification>?) -> ASAEvent? {
+    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock, eventsFileTemplates: Dictionary<String, ASAEventSpecification>?) -> ASAEvent? {
         let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
         if !matchesRegionCode {
             return nil
@@ -1309,7 +1325,7 @@ class ASAEventCalendar {
         let eventsFileDefaultLocale = eventsFile!.defaultLocale
 
         var title: String
-        if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
+        if eventSpecification.type == .point && eventSpecification.startDateSpecification.miscellaneous.isTimeChange {
             let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
             let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
             let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)

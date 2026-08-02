@@ -1,18 +1,18 @@
 {
-    titles: {"*": "RS"},
-    "//": "Serbia",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.89, green: 0.00, blue: 0.27},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
-    first: {era: 1, y: 1804},
-   events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Orthodox New Year’s Day"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"RS"},
+    "//":"Serbia",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.89, g: 0.00, b: 0.27},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
+    fst: {era: 1, y: 1804},
+   evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "ONYD"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -1}, inh: "OHoly Sat"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
     ]
 }
 

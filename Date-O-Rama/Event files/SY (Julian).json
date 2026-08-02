@@ -1,13 +1,13 @@
 {
-    titles: {"*": "SY"},
-    "//": "Syria",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.94, green: 0.20, blue: 0.25},
-    first: {era: 1, y: 1946},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
-    events: [
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
+    ttls: {"*":"SY"},
+    "//":"Syria",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.94, g: 0.20, b: 0.25},
+    fst: {era: 1, y: 1946},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
+    evts: [
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
 
     ]
 }

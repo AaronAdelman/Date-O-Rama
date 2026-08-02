@@ -1,26 +1,23 @@
 {
-    titles: {"*": "GE"},
-    "//": "Georgia",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    first: {era: 1, y: 1918},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Georgia"},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "nD", start: {era: 1, y: 2024, mon: 12, d: 26}, end: {era: 1, y: 2024, mon: 12, d: 28}, inherits: "Xmas Holiday", urls: {"en": "https://www.officeholidays.com/holidays/georgia/orthodox-christmas"}},
+    ttls: {"*":"GE"},
+    "//":"Georgia",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    fst: {era: 1, y: 1918},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Georgia"},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "nD", st: {era: 1, y: 2024, mon: 12, d: 26}, end: {era: 1, y: 2024, mon: 12, d: 28}, inh: "Xmas Holiday", urls: {"en":"https://www.officeholidays.com/holidays/georgia/orthodox-christmas"}},
 
-        {type: "D", start: {mon: 12, d: 25}, titles: {"en": "Alilo Parade"}, urls: {"en": "https://www.daysoftheyear.com/days/alilo-parade/"}},
-        {type: "D", start: {mon: 1, d: 6}, inherits: "Epiphany"},
-        {type: "D", start: {Easter: "Easter", offsetD: -2}, inherits: "Orthodox Good Friday"},
-        {type: "D", start: {Easter: "Easter", offsetD: -1}, inherits: "Orthodox Holy Saturday"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
-        {inherits: "St. Andrew’s Day", type: "D", start: {mon: 4, d: 29}},
-        {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God", urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
-        {type: "D", start: {mon: 8, d: 15}, inherits: "Dormition of the Mother of God", urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
-
-        {type: "D", start: {Easter: "Easter"}, titles: {"en": "Lelo Burti"}, urls: {"en": "https://www.daysoftheyear.com/days/lelo-burti/"}},
-
+        {ty: "D", st: {mon: 12, d: 25}, ttls: {"en":"Alilo Parade"}, urls: {"en":"https://www.daysoftheyear.com/days/alilo-parade/"}},
+        {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -1}, inh: "OHoly Sat"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+        {ty: "D", st: {mon: 4, d: 29}, inh: "St Andrew"},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God", urls: {"en":"https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God", urls: {"en":"https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
     ]
 }

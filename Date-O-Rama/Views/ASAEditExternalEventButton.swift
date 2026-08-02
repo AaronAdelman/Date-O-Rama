@@ -28,6 +28,6 @@ struct ASAEditExternalEventButton: View {
             .sheet(isPresented:  $showingEventEditView) {
                 ASAEKEventEditView(action: self.$action, event: event, eventStore: self.eventManager.eventStore)
             }
-            .foregroundColor(.accentColor)
+            .foregroundStyle(Color.accentColor)
     } // var body
 } // struct ASAEditExternalEventButton

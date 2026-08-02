@@ -155,7 +155,7 @@ extension Array where Element == Int? {
         return true
     } // func isWithin(start: Array<Int?>, end: Array<Int?>) -> Bool
     
-    // A pair of EYMDs is considered “boring” if we can simply fill in missing values from anohter EYMD without having to worry about, say, having to figure out which year either EYMD occurs in.
+    // A pair of EYMDs is considered “boring” if we can simply fill in missing values from another EYMD without having to worry about, say, having to figure out which year either EYMD occurs in.
     static func areBoring(start: Array<Int?>, end: Array<Int?>) -> Bool {
         assert(start.count == end.count)
 
@@ -242,6 +242,10 @@ extension Array where Element == Int? {
     } // func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int>, end: Array<Int>)
     
     func isBefore(first: Array<Int?>) -> Bool {
+        if self == first {
+            return false
+        }
+        
         for i in 0..<self.count {
             let self_i  = self[i]
             let first_i = first[i]

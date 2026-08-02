@@ -1,12 +1,12 @@
 {
-    titles: {"*": "MU"},
-    "//": "Mauritius",
-    defaultLocale: "en",
-    calendarCode: "chi",
-    calendarColor: {red: 1.00, green: 0.82, blue: 0.00},
-    urls: {"en": "https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
-    events: [
-        {type: "D", start: {mon: 1, d: 1}, inherits: "Chinese New Year"},
+    ttls: {"*":"MU"},
+    "//":"Mauritius",
+    defLocale: "en",
+    cal: "chi",
+    color: {r: 1.00, g: 0.82, b: 0.00},
+    urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NY"},
 
     ]
 }

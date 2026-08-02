@@ -1,18 +1,18 @@
 {
-    titles: {"*": "UA"},
-    "//": "Ukraine",
-    defaultLocale: "en",
-    calendarCode: "jul",
-    calendarColor: {red: 0.00, green: 0.34, blue: 0.72},
-    first: {era: 1, y: 1991},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
-    events: [
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Orthodox Xmas"},
-        {type: "D", start: {Easter: "Easter"}, inherits: "Easter"},
-        {type: "D", start: {Easter: "Easter", offsetD: 1}, inherits: "Orthodox Easter Monday"},
+    ttls: {"*":"UA"},
+    "//":"Ukraine",
+    defLocale: "en",
+    cal: "jul",
+    color: {r: 0.00, g: 0.34, b: 0.72},
+    fst: {era: 1, y: 1991},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine"},
+    evts: [
+        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+        {ty: "D", st: {misc: "E"}, inh: "Easter"},
+        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
 
-        {type: "D", start: {Easter: "Easter", offsetD: 49}, inherits: "Pentecost"},
-        {type: "D", start: {Easter: "Easter", offsetD: 50}, inherits: "Whit Monday"},
+        {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
     ]
 }
 

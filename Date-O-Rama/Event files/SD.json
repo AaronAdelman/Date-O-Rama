@@ -1,18 +1,18 @@
 {
-    titles: {"*": "SD"},
-    "//": "Sudan",
-    "TODO": "Muslim observances",
-    defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {red: 0.85, green: 0.16, blue: 0.11},
-    first: {era: 1, y: 1956},
-    urls: {"en": "https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
-    events: [
-        {inherits: "Natl Day", type: "D", start: {mon: 1, d: 1}, first: {era: 1, y: 1956}, urls: {"en": "https://www.daysoftheyear.com/days/sudan-national-day/"}, notes: {"en": "Independence Day\nSudanese Independence Day\nSudan Independence Day"}},
-        {inherits: "Revolution Day", type: "D", start: {mon: 12, d: 19}, first: {era: 1, y: 2018}},
-        {type: "D", start: {mon: 12, d: 25}, inherits: "Xmas"},
+    ttls: {"*":"SD"},
+    "//":"Sudan",
+    "TODO":"Muslim observances",
+    defLocale: "en",
+    cal: "gre",
+    color: {r: 0.85, g: 0.16, b: 0.11},
+    fst: {era: 1, y: 1956},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
+    evts: [
+        {inh: "NDay", ty: "D", st: {mon: 1, d: 1}, fst: {era: 1, y: 1956}, urls: {"en":"https://www.daysoftheyear.com/days/sudan-national-day/"}, nts: {"en":"Independence Day\nSudanese Independence Day\nSudan Independence Day"}},
+        {inh: "Revolution Day", ty: "D", st: {mon: 12, d: 19}, fst: {era: 1, y: 2018}},
+        {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {type: "D", start: {mon: 3, d: 21}, inherits: "Mother’s Day"},
-        {inherits: "Children’s Day", type: "D", start: {mon: 12, d: 23}},
+        {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
+        {inh: "Children’s Day", ty: "D", st: {mon: 12, d: 23}},
    ]
 }

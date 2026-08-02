@@ -53,7 +53,10 @@ fileprivate extension Color {
 
 extension Color: Codable {
     enum CodingKeys: String, CodingKey {
-        case red, green, blue, name
+        case red   = "r"
+        case green = "g"
+        case blue  = "b"
+        case name
     }
 
     // Known named colors map (add more as needed)
