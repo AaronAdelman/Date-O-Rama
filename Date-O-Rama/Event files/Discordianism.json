@@ -39,7 +39,7 @@
         ]},
         
         {ty: "D", st: {misc: "E"}, ttls: {"en":"Erister"}, nts: {"en":"Whollyday"}},
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day", urls: {"en":"https://www.fsofcabal.com/holydays/01-01-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD", urls: {"en":"https://www.fsofcabal.com/holydays/01-01-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Bogey’s Day"}, inh: "HDH"},
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Nude Year’s Day"}, nts: {"en":"Whollyday\n1 Chaos"}, inh: "EDH"},
         {ty: "D", st: {mon: 1, d: 3}, inh: "Festival of Sleep Day", urls: {"en":"https://www.fsofcabal.com/holydays/01-03-festival-of-sleep"}},

@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1898},
     urls: {"en":"https://en.wikipedia.org/wiki/Holidays_with_paid_time_off_in_the_United_States#Guam"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 3}, inh: "MLK Day"},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 1}, urls: {"en":"https://nationaltoday.com/guam-history-and-chamorro-heritage-day/"}, ttls: {"en":"History and Chamorro Heritage Day"}, nts: {"en":"Discovery Day"}, fst: {era: 1, y: 1970}},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/guam/memorial-day"}, inh: "Memorial Day"},

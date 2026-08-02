@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Palau"},
     fst: {era: 1, y: 1994},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 3, d: 15}, inh: "Youth Day"},
         {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Senior Citizens Day"}},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Presidents’ Day"},

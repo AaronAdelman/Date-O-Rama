@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Liechtenstein"},
     fst: {era: 1, y: 1719},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2}, inh: "Berchtold’s Day", urls: {"en":"https://www.officeholidays.com/holidays/liechtenstein/berchtolds-day"}},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 2, d: 2}, inh: "Candlemas", fst: {era: 1, y: 472}},
@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
 
         {ty: "D", st: {mon: 3, d: 19}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},

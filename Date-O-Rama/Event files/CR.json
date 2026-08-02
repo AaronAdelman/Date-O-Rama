@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1821},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Costa_Rica"},
     evts: [
-        {ty: "D", st:  {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st:  {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {misc: "E", offsetD: -6}, inh: "Holy Mon"},
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tue"},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Holy Wed"},

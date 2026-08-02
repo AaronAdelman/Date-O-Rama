@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_New_Zealand"},
     fst: {era: 1, y: 1840},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inh: "D after New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 3, wkd: [2]}, inh: "D after New Year’s Day"},
         {ty: "D", st: {mon: 1, d: 4, wkd: [2]}, inh: "D after New Year’s Day"},

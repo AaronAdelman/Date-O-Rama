@@ -9,7 +9,7 @@
     fst: {era: 1, y: 1949},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Founding of the Republic of China"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}, inh: "Republic Day"},
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "Republic Day Holiday", urls: {"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-republic-day"}},
         {ty: "D", st: {mon: 2, d: 27, wkd: [2, 6]}, ttls: {"en":"Peace Memorial Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/taiwan/peace-memorial-day"}},
         {ty: "D", st: {mon: 2, d: 28}, ttls: {"en":"Peace Memorial Day","zh":"228和平紀念日"}, urls: {"en":"https://nationaltoday.com/228-memorial-day/"}, fst: {era: 1, y: 1995}, nts: {"en":"228 Memorial Day\n228 Peace Day\nFebruary 28 Peace Memorial Day"}},

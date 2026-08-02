@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inh: "Black Fri", fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 11, d: 30}, ttls: {"he":"יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן","en":"Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, urls: {"en":"https://yomhagirush.com/index.php"}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve", mog: "🎄"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NYE", mog: "🎄"},
         {ty: "D", st: {mon: 12, d: 8}, ttls: {"he":"יום המחזור","en":"Recycling Day"}, mog: "♻️", urls: {"he":"https://b.tmir.org.il/recycle-day/"}},
         {ty: "D", st: {mon: 3, d: 24}, ttls: {"he":"יום הולדת להפועל חיפה","en":"HapPo‘el Ḥayfah Day"}, mog: "⚽️"},
         {ty: "D", st: {mon: 3, d: 24}, ttls: {"he":"יום הולדת לטלוויזיה החינוכית","en":"Channel 23 Day"}, mog: "📺"},

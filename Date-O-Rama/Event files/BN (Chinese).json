@@ -6,8 +6,8 @@
     color: {r: 0.98, g: 0.88, b: 0.13},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Brunei"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NuY"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3]}, inh: "Lunar NuY Holiday", urls: {"en":"https://www.officeholidays.com/holidays/brunei/chinese-new-year"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "Chinese NY"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3]}, inh: "Lunar NYE Holiday", urls: {"en":"https://www.officeholidays.com/holidays/brunei/chinese-new-year"}},
         {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"}
     ]
 }

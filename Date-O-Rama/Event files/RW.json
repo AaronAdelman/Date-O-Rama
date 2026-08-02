@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1962},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Rwanda"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NuY’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NYD"},
         {ty: "D", st: {mon: 2, d: 1}, inh: "NHeroes’ Day", urls: {"en":"https://nationaltoday.com/heroes-day-rwanda/"}},
         {ty: "D", st: {mon: 2, d: 2, thruD: 3, wkd: [2, 3]}, inh: "NHeroes’ Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/rwanda/rwanda-heroes-day"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},

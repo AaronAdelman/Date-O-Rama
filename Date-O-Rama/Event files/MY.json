@@ -8,8 +8,8 @@
     fst: {era: 1, y: 1957},
     urls: {"en":"https://publicholidays.com.my/","ms":"https://publicholidays.com.my/ms/","zh":"https://publicholidays.com.my/zh/"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "NuY’s Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/malaysia/international-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "NYD (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/malaysia/international-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 14}, ttls: {"en":"Birthday of the Sultan of Negeri Sembilan","ms":"Hari Keputeraan Yang di-Pertuan Besar Negeri Sembilan"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/negeri-sembilan/birthday-of-the-sultan-of-negeri-sembilan"}, inh: "*BD*", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 2, d: 1}, ttls: {"en":"Federal Territory Day","id":"Hari Wilayah Federal","ms":"Hari Wilayah Persekutuan"}, urls: {"en":"https://www.daysoftheyear.com/days/federal-territory-day/"}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 2, d: 2, wkd: [2]}, ttls: {"en":"Federal Territory Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/federal-territory-day"}, fst: {era: 1, y: 1974}},

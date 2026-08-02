@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1979},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Saint_Lucia"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NuY’s Day"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NYD"},
         {ty: "D", st: {mon: 2, d: 22}, inh: "Independence Day", fst: {era: 1, y: 1979}, urls: {"en":"https://nationaltoday.com/independence-day-saint-lucia/"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

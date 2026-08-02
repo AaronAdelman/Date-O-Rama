@@ -7,8 +7,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Vietnam"},
     fst: {era: 1, y: 1945},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
+        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/international-new-years-day"}, inh: "NYD (in lieu)"},
         {ty: "D", st: {mon: 4, d: 29, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day (bridge day)"}},
         {ty: "D", st: {mon: 4, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day","vi":"Ngày giải phóng miền Nam, thống nhất đất nước"}},
         {ty: "D", st: {mon: 5, d: 2, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day (in lieu)"}},

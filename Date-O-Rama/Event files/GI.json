@@ -7,8 +7,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Gibraltar"},
     fst: {era: 1, y: 1713},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
-        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inh: "NuY’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
+        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inh: "NYD (in lieu)"},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://www.officeholidays.com/holidays/gibraltar/commonwealth-day"}, ttls: {"en":"Winter Midterm Bank Holiday"}, fst: {era: 1, y: 2022}, inh: "Bank Holiday"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

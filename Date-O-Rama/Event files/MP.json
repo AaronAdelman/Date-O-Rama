@@ -7,7 +7,7 @@
     urls: {"en":"https://publicholidays.asia/northern-mariana-islands/"},
     fst: {era: 1, y: 1978},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 3}, inh: "MLK Day", fst: {era: 1, y: 1986}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, inh: "Presidents’ Day", urls: {"en":"https://www.daysoftheyear.com/days/presidents-day/"}, fst: {era: 1, y: 1879}},
         {ty: "D", st: {mon: 3, d: 24}, ttls: {"en":"Commonwealth Covenant Day"}, urls: {"en":"https://www.daysoftheyear.com/days/commonwealth-covenant-day/"}, fst: {era: 1, y: 1976}},

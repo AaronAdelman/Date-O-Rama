@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1961},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sierra_Leone"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 2, d: 18}, urls: {"en":"https://www.officeholidays.com/holidays/sierra-leone/sierra-leone-armed-forces-day"}, inh: "Armed Forces Day"},
         {ty: "D", st: {mon: 2, d: 19, wkd: [2]}, inh: "Armed Forces Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/sierra-leone/sierra-leone-armed-forces-day"}},
         {ty: "D", st: {mon: 3, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/sierra-leone/international-womens-day"}, inh: "IWD"},

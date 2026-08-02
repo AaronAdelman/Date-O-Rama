@@ -7,7 +7,7 @@
     urls: {"en":"https://publicholidays.africa/mayotte/"},
     fst: {era: 1, y: 1974},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 27}, fst: {era: 1, y: 1847}, inh: "Abolition Day", urls: {"en":"https://publicholidays.africa/mayotte/abolition-day/"}},

@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1991},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Tajikistan"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {misc: "Mar"}, urls: {"en":"https://www.officeholidays.com/holidays/tajikistan/novruz"}, inh: "Nowruz"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

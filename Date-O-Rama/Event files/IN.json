@@ -8,7 +8,7 @@
     fst: {era: 1, y: 1947},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"Mannam Jayanthi"}, urls: {"en":"https://www.officeholidays.com/holidays/india/kerala/mannam-jayanthi"}, fst: {era: 1, y: 1878}},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, inh: "D after New Year’s Day", urls: {"en":"https://www.officeholidays.com/holidays/india/mizoram/day-after-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 3, wkd: [1]}, inh: "D after New Year’s Day", urls: {"en":"https://www.officeholidays.com/holidays/india/mizoram/day-after-new-years-day"}},
@@ -94,7 +94,7 @@
         {ty: "D", st: {mon: 12, d: 28, wkd: [4]}, inh: "Xmas Holiday", locs: {"en":"Nagaland"}, urls: {"en":"https://www.officeholidays.com/holidays/india/christmas-holiday"}},
         {ty: "D", st: {mon: 12, d: 29, wkd: [2]}, inh: "Xmas Holiday", locs: {"en":"Nagaland"}, urls: {"en":"https://www.officeholidays.com/holidays/india/christmas-holiday"}},
         {ty: "D", st: {mon: 12, d: 30}, ttls: {"en":"U Kiang Nangbah","hi":"उक्यांग नागवा"}, urls: {"en":"https://www.officeholidays.com/holidays/india/meghalaya/u-kiang-nangbah"}},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "NuY’s Eve"},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
         
         {ty: "D", st: {mon: 1, d: 30}, ttls: {"en":"Mahatma Gandhi’s Death Anniversary"}, inh: "*DA*", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 2, d: 26}, ttls: {"en":"Hazrat Ali Jayanti"}},

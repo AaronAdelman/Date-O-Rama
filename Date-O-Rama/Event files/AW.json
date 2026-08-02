@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Aruba"},
     fst: {era: 1, y: 1986},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "NuY’s Day"},
+        {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 25}, ttls: {"en":"Betico Croes Day"}, urls: {"en":"https://www.officeholidays.com/holidays/aruba/betico-croes-day"}, inh: "*BD*", fst: {era: 1, y: 1938}},
         {ty: "D", st: {misc: "E", offsetD: -48}, inh: "Carnival Mon", urls: {"en":"https://www.officeholidays.com/holidays/aruba/carnival-monday"}},
         {ty: "D", st: {mon: 3, d: 18}, inh: "NAnthem & Flag Day", urls: {"en":"https://nationaltoday.com/national-anthem-and-flag-day-in-aruba/"}, fst: {era: 1, y: 1976}},
