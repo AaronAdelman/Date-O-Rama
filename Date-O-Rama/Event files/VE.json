@@ -56,7 +56,7 @@
         {ty: "D", st: {mon: 3, d: 28}, ttls: {"en":"National Cultural Patrimonies Day","es":"Día Nacional del Patrimonio Cultural"}},
         {ty: "D", st: {mon: 3, d: 31}, ttls: {"en":"Foundation Anniversary Day of San Cristóbal, Táchira","es":"Aniversario del Fundación del San Cristóbal"}},
         {ty: "D", st: {mon: 5, d: 3}, ttls: {"en":"Fiesta de las Cruces","es":"Día del Cruz del Mayo"}},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "NAnthem Day"},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "NAnthemD"},
         {ty: "D", st: {mon: 6, d: 27}, ttls: {"en":"Journalists’ Day and the Anniversary of the 1872 Public Education Decree","es":"Día del Periodista y Aniversario de la Instauración del Decreto de Instrucción Pública Gratuita y Obligatoria"}},
         {inh: "Children’s Day", ty: "D", st: {mon: 7, wkd: [1], nth: 3}},
         {ty: "D", st: {mon: 7, d: 24}, ttls: {"en":"Navy Day and the Anniversary of the Battle of Lake Maracaibo","es":"Día de la Armada Nacional"}, inh: "Navy Day"},

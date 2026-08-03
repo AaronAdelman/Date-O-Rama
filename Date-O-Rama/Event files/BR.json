@@ -68,7 +68,7 @@
         {ty: "D", st: {mon: 8, d: 22}, ttls: {"en":"Folklore Day","he":"יום הפולקלור","pt":"Dia do Folclore"}, urls: {"en":"https://www.daysoftheyear.com/days/folklore-day/"}, fst: {era: 1, y: 1965}, nts: {"en":"Created by Humberto de Alencar Castello Branco"}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Start of Fasching", fst: {era: 1, y: 1234}},
         {ty: "D", st: {mon: 5, d: 24}, inh: "NCoffeeD"},
-        {ty: "D", st: {mon: 7, d: 10}, inh: "NPizza Day", urls: {"en":"https://nationaltoday.com/national-pizza-day-in-brazil/"}, nts: {"en":"Pizza Day"}},
+        {ty: "D", st: {mon: 7, d: 10}, inh: "NPizzaD", urls: {"en":"https://nationaltoday.com/national-pizza-day-in-brazil/"}, nts: {"en":"Pizza Day"}},
         {ty: "D", st: {mon: 7, d: 13}, ttls: {"en":"World Rock Day","es":"Día Mundial del Rock","fr":"Journée mondiale du rock","he":"יום הרוק העולמי","pt":"Dia Mundial do Rock"}, urls: {"en":"https://en.wikipedia.org/wiki/World_Rock_Day","es":"https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock","pt":"https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, mog: "🎸", fst: {era: 1, y: 1990}},
 
         {ty: "D", st: {mon: 2, d: 3}, ttls: {"en":"National Carrot Cake Day","he":"יום עוגת הגזר הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/carrot-cake-day/"}, mog: "🍰"},
@@ -81,7 +81,7 @@
         {ty: "D", st: {mon: 2, d: 9}, inh: "Frevo Day", fst: {era: 1, y: 1907}},
         {ty: "D", st: {mon: 9, d: 14}, inh: "Frevo Day", fst: {era: 1, y: 1907}},
         {ty: "D", st: {misc: "E", offsetD: -50}, ttls: {"en":"Bloco da Lama","pt":"Bloco da Lama"}, nts: {"en":"Mud Carnival"}, urls: {"en":"https://www.daysoftheyear.com/days/bloco-da-lama/"}, fst: {era: 1, y: 1980}},
-        {ty: "D", st: {mon: 4, d: 13}, inh: "NAnthem Day", urls: {"en":"https://www.daysoftheyear.com/days/national-anthem-day-in-brazil/"}, fst: {era: 1, y: 1934}},
+        {ty: "D", st: {mon: 4, d: 13}, inh: "NAnthemD", urls: {"en":"https://www.daysoftheyear.com/days/national-anthem-day-in-brazil/"}, fst: {era: 1, y: 1934}},
         {ty: "nD", st: {mon: 6, d: 1, thruD: 7, wkd: [5], durD: 3}, ttls: {"en":"Cuscuz Festival","pt":"Festa do Cuscuz"}, urls: {"en":"https://www.daysoftheyear.com/days/cuscuz-festival/"}, fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 9, d: 13}, ttls: {"en":"National Cachaça Day","pt":"Dia Nacional da Cachaça"}, urls: {"en":"https://www.diffordsguide.com/on-this-day/september/13"}, mog: "🥃"},
         {ty: "D", st: {mon: 6, d: 24}, ttls: {"ar":"احتفال يونيو","en":"Festa Junina","eo":"Junia festo","es":"Fiestas Juninas en Brasil","ja":"フェスタジュニーナ","pt":"Festa junina no Brasil"}, urls: {"en":"https://www.daysoftheyear.com/days/festa-junina/"}, fst: {era: 1, y: 1500}, inh: "St John", nts: {"pt":"Festas de São João"}},

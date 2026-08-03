@@ -47,6 +47,6 @@
     tpls: {
         "Garifuna Settlement Day": {ty: "D", st: {mon: 11, d: 19}, ttls: {"en":"Garifuna Settlement Day"}, urls: {"en":"https://nationaltoday.com/garifuna-settlement-day/"}},
         "NHeroes and Benefactors Day (in lieu)": {ty: "D", st: {mon: 3, d: 6, thruD: 8, wkd: [2]}, ttls: {"en":"National Heroes and Benefactors Day (in lieu)"}, urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-and-benefactors-day/"}},
-        "St George’s Caye Day": {ttls: {"en":"Saint George’s Caye Day"}, ty: "D", st: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inh: "NDay"},
+        "St George’s Caye Day": {ttls: {"en":"Saint George’s Caye Day"}, ty: "D", st: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inh: "ND"},
     }
 }

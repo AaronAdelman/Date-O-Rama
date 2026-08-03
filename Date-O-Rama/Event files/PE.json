@@ -70,7 +70,7 @@
         {inh: "Non-Working Day", ty: "D", st: {era: 1, y: 2024, mon: 12, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inh: "Non-Working Day", ty: "D", st: {era: 1, y: 2024, mon: 12, d: 31}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
 
-        {ty: "D", st: {mon: 8, d: 1}, inh: "NAlpaca Day"},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "NAlpacaD"},
         
         {inh: "Public Holiday", ty: "nD", st: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
         {ty: "D", st: {mon: 8, d: 1}, inh: "Pachamama Day", fst: {era: 1, y: 1990}},

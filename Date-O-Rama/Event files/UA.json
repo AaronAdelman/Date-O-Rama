@@ -78,7 +78,7 @@
         {inh: "IYouth Day", ty: "D", st: {mon: 8, d: 12}, fst: {era: 1, y: 2000}},
         {inh: "Dormition of the Mother of God", ty: "D", st: {mon: 8, d: 15}},
         {inh: "Nut Feast of the Savior", ty: "D", st: {mon: 8, d: 16}},
-        {inh: "NFlag Day", ty: "D", st: {mon: 8, d: 23}, fst: {era: 1, y: 2004}, urls: {"en":"https://nationaltoday.com/day-of-the-national-flag/"}},
+        {inh: "NFlagD", ty: "D", st: {mon: 8, d: 23}, fst: {era: 1, y: 2004}, urls: {"en":"https://nationaltoday.com/day-of-the-national-flag/"}},
         {ttls: {"en":"Day of Remembrance of the Defenders of Ukraine"}, ty: "D", st: {mon: 8, d: 29}},
         {inh: "Beheading of Saint John the Baptist", ty: "D", st: {mon: 8, d: 29}},
         {ttls: {"en":"Cincture of the Theotokos"}, ty: "D", st: {mon: 8, d: 31}},

@@ -58,7 +58,7 @@
         {ty: "D", st: {mon: 6, d: 20}, ttls: {"en":"Day of the Gas Sector"}},
         {ty: "D", st: {mon: 7, d: 2}, ttls: {"en":"Day of Azerbaijani Police"}, inh: "Police Day"},
         {ty: "D", st: {mon: 7, d: 9}, ttls: {"en":"Day of the Employees of the Diplomatic Service"}},
-        {ty: "D", st: {mon: 7, d: 22}, inh: "NPress Day"},
+        {ty: "D", st: {mon: 7, d: 22}, inh: "NPressD"},
         {ty: "D", st: {mon: 8, d: 1}, ttls: {"en":"Day of Azerbaijani Language and Alphabet","he":"יום השפה והאלפבית של אזרביג׳נית"}},
         {ty: "D", st: {mon: 8, d: 2}, ttls: {"en":"National Day of Azerbaijani Cinema","he":"היום הלאומי של הקולנוע האזרבייג׳אני"}},
         {ty: "D", st: {mon: 9, d: 15}, ttls: {"en":"Day of Knowledge"}, urls: {"en":"https://en.wikipedia.org/wiki/Knowledge_Day"}},

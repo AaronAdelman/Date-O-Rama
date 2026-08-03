@@ -61,7 +61,7 @@
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 1}},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day"},
-        {ty: "D", st: {mon: 10, wkd: [7], nth: 2}, inh: "NSports Day", fst: {era: 1, y: 2015}},
+        {ty: "D", st: {mon: 10, wkd: [7], nth: 2}, inh: "NSportsD", fst: {era: 1, y: 2015}},
         {ty: "D", st: {era: 1, y: 2025, mon: 1, d: 6}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/malaysia/johor-weekend-adjustment"}, locs: {"en":"Johor"}},
         {ty: "D", st: {mon: 2, d: 20}, ttls: {"en":"Declaration of Independence Day"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/declaration-of-independence-in-malacca"}, inh: "Independence Day"},
         {ty: "D", st: {mon: 8, d: 14}, ttls: {"en":"Internet Blackout Day"}, fst: {era: 1, y: 2012}, urls: {"en":"https://www.daysoftheyear.com/days/internet-blackout-day-in-malaysia/"}, nts: {"en":"Created by the Centre for Independent Journalism (CIJ)"}},

@@ -25,7 +25,7 @@
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 6, d: 23}, urls: {"en":"https://nationaltoday.com/jura-independence-day/"}, inh: "Independence Day", fst: {era: 1, y: 1979}, locs: {"en":"Jura"}},
         {ty: "D", st: {mon: 6, d: 29}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/saint-peter-and-saint-paul"}, inh: "Sts Peter and Paul"},
-        {ty: "D", st: {mon: 8, d: 1}, inh: "NDay", fst: {era: 1, y: 1899}, urls: {"en":"https://www.daysoftheyear.com/days/swiss-national-day/"}},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "ND", fst: {era: 1, y: 1899}, urls: {"en":"https://www.daysoftheyear.com/days/swiss-national-day/"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 9, d: 5, thruD: 11, wkd: [5]}, ttls: {"en":"Jeûne genevois"}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/geneva/genevan-fast"}},
         {ty: "D", st: {mon: 9, d: 9, thruD: 15, wkd: [2]}, ttls: {"en":"Knabenschiessen"}, urls: {"en":"https://www.officeholidays.com/holidays/switzerland/zurich/knabenschiessen"}},

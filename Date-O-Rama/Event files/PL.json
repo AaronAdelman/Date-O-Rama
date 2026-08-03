@@ -39,7 +39,7 @@
 
         {ty: "D", ttls: {"en":"Prison Service Day","pl":"Święto Służby Więziennej"}, st: {mon: 2, d: 8}, fst: {era: 1, y: 2010}},
         {ty: "D", ttls: {"en":"Crime Victims Day","pl":"Dzień Ofiar Przestępstw"}, st: {mon: 2, d: 22}, fst: {era: 1, y: 2003}},
-        {ty: "D", st: {mon: 5, d: 2}, urls: {"en":"https://nationaltoday.com/polish-national-flag-day/"}, inh: "NFlag Day", fst: {era: 1, y: 2004}},
+        {ty: "D", st: {mon: 5, d: 2}, urls: {"en":"https://nationaltoday.com/polish-national-flag-day/"}, inh: "NFlagD", fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 5, d: 2}, urls: {"en":"https://en.wikipedia.org/wiki/Polish_Diaspora_Day"}, fst: {era: 1, y: 2002}, ttls: {"en":"Polish Diaspora Day","pl":"Dzień Polonii i Polaków za Granicą"}},
         {ty: "D", st: {mon: 5, d: 4}, ttls: {"en":"Firefighters Day","he":"יום הכבאים","pl":"Dzień Strażaka"}, fst: {era: 1, y: 2002}, mog: "👨‍🚒👩‍🚒"},
         {inh: "Border Guards Day", ty: "D", st: {mon: 5, d: 16}, fst: {era: 1, y: 1991}},
