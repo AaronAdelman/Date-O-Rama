@@ -120,7 +120,7 @@
         {ty: "D", st: {mon: 10, d: 11}, ttls: {"en":"Transylvanian Schools Day"}, mog: "👨‍🏫👩‍🏫"},
         {ty: "D", st: {mon: 10, d: 17}, inh: "IDEP", fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 10, d: 24}, inh: "UN Day"},
-        {ty: "D", st: {mon: 10, d: 25}, inh: "Armed Forces Day"},
+        {ty: "D", st: {mon: 10, d: 25}, inh: "ArmedForcesD"},
         {ty: "D", st: {mon: 11, d: 11}, inh: "Veterans Day"},
         {ty: "D", st: {mon: 11, d: 14}, ttls: {"en":"Dobruja Day"}},
         {ty: "D", st: {mon: 11, d: 14}, inh: "WDiabetes Day"},

@@ -60,7 +60,7 @@
         {ty: "D", st: {mon: 8, d: 10}, inh: "AirForceD"},
         {ty: "D", st: {mon: 7, d: 20}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Action Day for Tolerance and Respect between People"}, urls: {"en":"https://nationaltoday.com/action-day-for-tolerance-and-respect-between-people/"}},
-        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean NY", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 6, d: 21}, inh: "AndeanNY", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 9, d: 21}, inh: "Student’s Day", urls: {"en":"https://www.daysoftheyear.com/days/students-day-in-argentina/"}, fst: {era: 1, y: 1902}},
         {ty: "D", st: {mon: 11, d: 10}, ttls: {"en":"National Tradition Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-tradition-day-in-argentina/"}},
         {ty: "D", st: {mon: 11, d: 30}, ttls: {"en":"National Mate Day","es":"Día Nacional del Mate"}, nts: {"en":"Mate Day\nCreated by the government of Argentina"}, urls: {"en":"https://www.daysoftheyear.com/days/national-mate-day/"}, fst: {era: 1, y: 2015}},

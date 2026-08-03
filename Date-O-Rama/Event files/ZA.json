@@ -48,7 +48,7 @@
         {ty: "D", st: {mon: 9, d: 14}, inh: "Engineer’s Day"},
         {inh: "NChildren’sD", ty: "D", st: {mon: 11, wkd: [7], nth: 1}},
         {inh: "Emancipation Day", ty: "D", st: {mon: 12, d: 1}},
-        {ty: "D", st: {mon: 2, d: 21}, inh: "Armed Forces Day", fst: {era: 1, y: 1993}},
+        {ty: "D", st: {mon: 2, d: 21}, inh: "ArmedForcesD", fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 4, d: 16}, inh: "Friendship Day"},
         {ty: "D", st: {mon: 3, d: 23}, urls: {"en":"https://nationaltoday.com/south-african-liberation-day/"}, inh: "Liberation Day", fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},

@@ -28,7 +28,7 @@
         {ty: "D", st: {mon: 2, d: 5}, ttls: {"en":"Crown Princess Mary’s Birthday","da":"Kronprinsesse Marys fødselsdag"}, inh: "*BD*"},
         {ty: "D", st: {mon: 2, d: 6}, ttls: {"en":"Princess Marie’s Birthday","da":"Prinsesse Maries fødselsdag"}, inh: "*BD*"},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "AprFoolsD"},
         {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"German invasion of Denmark","da":"Danmarks besættelse"}, fst: {era: 1, y: 1940}},
         {ty: "D", st: {mon: 4, d: 16}, ttls: {"en":"Birthday of Queen Margrethe II","da":"Dronningens fødselsdag"}, inh: "*BD*"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkers’ Day"},

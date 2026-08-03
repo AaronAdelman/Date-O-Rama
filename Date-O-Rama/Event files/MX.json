@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 9, d: 16}, inh: "Independence Day", fst: {era: 1, y: 1810}, urls: {"en":"https://www.daysoftheyear.com/days/mexican-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 12}, ttls: {"en":"Day of the Pluricultural Nation","es":"Día de la Raza"}, urls: {"en":"https://nationaltoday.com/mexico-day-of-the-pluricultural-nation/"}, fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Revolution Day", fst: {era: 1, y: 1910}, last: {era: 1, y: 2005}, urls: {"en":"https://nationaltoday.com/revolution-day-mexico/"}},
         {ty: "D", st: {mon: 11, wkd: [2], nth: 3}, inh: "Revolution Day", fst: {era: 1, y: 2006}, urls: {"en":"https://nationaltoday.com/revolution-day-mexico/"}},
         {ty: "D", st: {mon: 12, d: 12}, inh: "Our Lady of Guadalupe", fst: {era: 1, y: 1531}},

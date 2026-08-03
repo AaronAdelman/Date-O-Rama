@@ -15,6 +15,6 @@
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 16}, inh: "ID of the African Child", fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 11, d: 28}, inh: "Independence Day", fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/mauritania-independence-day/"}},
-        {ty: "D", st: {mon: 7, d: 10}, inh: "Armed Forces Day", fst: {era: 1, y: 1960}},
+        {ty: "D", st: {mon: 7, d: 10}, inh: "ArmedForcesD", fst: {era: 1, y: 1960}},
     ]
 }

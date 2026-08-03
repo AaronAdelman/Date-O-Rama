@@ -5,7 +5,7 @@
     color: {r: 0.23, g: 0.49, b: 0.81},
     fst: {era: 1, y: 1902},
     evts: [
-        {ty: "D", st: {mon: 12, d: 1}, inh: "Antarctica Day", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 12, d: 1}, inh: "AntarcticaD", fst: {era: 1, y: 2010}},
         {ty: "D", st: {misc: "Jun"}, inh: "Midwinter Day", nts: {"en":"Midwinter\nMidwinter Festival\nWinter Solstice"},urls: {"en":"https://en.wikipedia.org/wiki/Midwinter_Day"}, fst: {era: 1, y: 1902}},
     ]
 }

@@ -33,7 +33,7 @@
         {inh: "Grandparents’ Day", ty: "D", st: {mon: 9, wkd: [1], nth: 2}},
         {ttls: {"en":"Resistance Fighting Day","et":"vastupanuvõitluse päev"}, ty: "D", st: {mon: 9, d: 22}, urls: {"en":"https://en.wikipedia.org/wiki/Resistance_Fighting_Day"}, nts: {"en":"Otto Tief Government","et":"Otto Tiefi valitsuse päev"}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "Local Government Day"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
         {ttls: {"en":"Day of Declaration of Sovereignty","et":"taassünni päev"}, ty: "D", st: {mon: 11, d: 16}, fst: {era: 1, y: 1988}},
 
        {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day", fst: {era: 1, y: 2021}, ttls: {"en":"Day for Protection of Children","et":"lastekaitsepäev"}},

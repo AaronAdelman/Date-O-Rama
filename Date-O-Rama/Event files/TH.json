@@ -55,7 +55,7 @@
         {ty: "D", st: {mon: 1, d: 14}, ttls: {"en":"National Forest Conservation Day","th":"วันอนุรักษ์ทรัพยากรป่าไม้ของชาติ","he":"יום שימור היער הלאומי"}, mog: "🌲🌳🌴", fst: {era: 1, y: 1990}},
         {inh: "Teacher’s Day", ty: "D", st: {mon: 1, d: 16}, fst: {era: 1, y: 1957}},
         {ty: "D", st: {mon: 1, d: 17}, ttls: {"en":"Ram Khamhaeng Day","th":"วันพ่อขุนรามคำแหงมหาราช"}, fst: {era: 1, y: 1989}},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 1, d: 18}, ttls: {"en":"Thai Armed Forces Day","th":"วันกองทัพไทย","he":"יום הכוחות המזוינים המלכותיים של תאילנד"}, fst: {era: 1, y: 1960}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 1, d: 18}, ttls: {"en":"Thai Armed Forces Day","th":"วันกองทัพไทย","he":"יום הכוחות המזוינים המלכותיים של תאילנד"}, fst: {era: 1, y: 1960}},
         {ty: "D", st: {mon: 2, d: 2}, ttls: {"en":"Inventor’s Day","th":"วันนักประดิษฐ์","he":"יום הממציא"}, fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 2, d: 3}, inh: "Veterans Day", fst: {era: 1, y: 1958}},
         {ty: "D", st: {mon: 2, d: 6}, ttls: {"en":"Muay Thai’s Day","th":"วันมวยไทย"}, fst: {era: 1, y: 2011}},

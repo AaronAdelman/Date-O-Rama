@@ -15,6 +15,6 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 4, d: 12}, ttls: {"en":"Somali Armed Forces Anniversary"}, fst: {era: 1, y: 1961}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 4, d: 12}, ttls: {"en":"Somali Armed Forces Anniversary"}, fst: {era: 1, y: 1961}},
    ]
 }

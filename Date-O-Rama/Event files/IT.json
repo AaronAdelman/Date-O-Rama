@@ -72,7 +72,7 @@
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
 
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "AprFoolsD"},
         {ty: "D", st: {mon: 6, d: 15}, inh: "Engineer’s Day"},
         {ty: "D", st: {mon: 11, d: 20}, inh: "WChildren’s Day", fst: {era: 1, y: 1997}},
         {ty: "D", st: {mon: 6, d: 10}, inh: "Navy Day"},

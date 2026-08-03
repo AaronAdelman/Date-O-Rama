@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 7, d: 6}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-coronation-of-king-mindaugas/"}, ttls: {"en":"Anniversary of the Coronation of King Mindaugas","lt":"Valstybės (Lietuvos karaliaus Mindaugo karūnavimo) ir Tautiškos giesmės diena"}, inh: "*Coron*", nts: {"en":"Statehood Day"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {inh: "Xmas", ty: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         
