@@ -21,8 +21,8 @@
         {ty: "nD", st: {mon: 8, d: 4}, end: {mon: 8, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/el-salvador/san-salvador/fiestas-patronales-holiday"}, ttls: {"en":"Fiestas Patronales Holiday"}},
         {ttls: {"en":"Celebrations of San Salvador","es":"Fiesta de San Salvador"}, ty: "D", st: {mon: 8, d: 6}, fst: {era: 1, y: 1525}, urls: {"en":"https://nationaltoday.com/celebrations-of-san-salvador/"}, nts: {"en":"Fiesta Patronales Holiday"}},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/el-salvador-independence-day/"}},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
         

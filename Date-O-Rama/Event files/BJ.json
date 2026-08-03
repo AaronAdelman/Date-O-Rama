@@ -22,8 +22,8 @@
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 10, d: 26}},
-        {inh: "NDay", ty: "D", st: {mon: 11, d: 30}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 10, d: 26}},
+        {inh: "ND", ty: "D", st: {mon: 11, d: 30}},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         {inh: "Mother’s Day", ty: "D", st: {mon: 5, d: 14}},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},

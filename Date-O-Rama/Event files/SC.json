@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Seychelles"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 2}, inh: "D after New Year’s Day", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
+        {ty: "D", st: {mon: 1, d: 2}, inh: "DAfterNYD", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 3, wkd: [6]}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/day-after-new-years-day"}},
         {ty: "D", st: {mon: 1, d: 3}, inh: "NYD (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/international-new-years-day"}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
@@ -24,7 +24,7 @@
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/immaculate-conception-day"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
-        {ty: "D", st: {mon: 2, d: 1}, inh: "Abolition of Slavery Day", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, fst: {era: 1, y: 2026}},
+        {ty: "D", st: {mon: 2, d: 1}, inh: "AbolitionOfSlaveryD", urls: {"en":"https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, fst: {era: 1, y: 2026}},
         {ty: "D", st: {mon: 2, d: 2, wkd: [2]}, ttls: {"en":"Abolition of Slavery Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/seychelles/seychelles-abolition-of-slavery-day"}, fst: {era: 1, y: 2026}},
    ]
 }

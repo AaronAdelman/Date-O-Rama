@@ -27,7 +27,7 @@
         {ttls: {"en":"Founding of the Church of Scientology Vienna"}, ty: "D", st: {mon: 3, d: 31}, inh: "*Remembrance*", fst: {era: 1, y: 1971}},
         {ttls: {"en":"Opening of the first Scientology and Dianetics College in Tel Aviv, Israel"}, ty: "D", st: {mon: 9, d: 25}, inh: "*Remembrance*", fst: {era: 1, y: 1980}},
         
-        {inh: "NSet a Good Example Day", ty: "D", st: {mon: 2, d: 26}, fst: {era: 1, y: 2022}},
+        {inh: "NSetAGoodExampleD", ty: "D", st: {mon: 2, d: 26}, fst: {era: 1, y: 2022}},
 
     ]
 }

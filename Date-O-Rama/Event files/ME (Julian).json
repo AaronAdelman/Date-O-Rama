@@ -7,7 +7,7 @@
     fst: {era: 1, y: 2006},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts: [
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {inh: "OXmas", ty: "nD", st: {mon: 12, d: 25}, end: {mon: 12, d: 26}},
         {ty: "D", st: {mon: 1, d: 1}, inh: "ONYD"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},

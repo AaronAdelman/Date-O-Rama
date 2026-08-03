@@ -33,11 +33,11 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 4, wkd: [1], nth: 2}},
         {inh: "IChildren’s Day", ty: "D", st: {mon: 8, wkd: [1], nth: 3}},
         {ty: "D", st: {mon: 10, d: 8}, inh: "Navy Day"},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 9, d: 24}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 9, d: 24}},
         {inh: "AirForceD", ty: "D", st: {mon: 7, d: 23}},
         {ty: "D", st: {mon: 7, wkd: [7], nth: 1}, inh: "Friendship Day", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
-        {ty: "D", st: {mon: 6, d: 21}, inh: "Andean NY", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 6, d: 21}, inh: "AndeanNY", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 8, d: 22}, inh: "NCoffeeD"},
         {inh: "Non-Working Day", ty: "D", st: {mon: 10, d: 11, era: 1, y: 2021}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inh: "Non-Working Day", ty: "D", st: {mon: 11, d: 2, era: 1, y: 2021}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
@@ -70,7 +70,7 @@
         {inh: "Non-Working Day", ty: "D", st: {era: 1, y: 2024, mon: 12, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
         {inh: "Non-Working Day", ty: "D", st: {era: 1, y: 2024, mon: 12, d: 31}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
 
-        {ty: "D", st: {mon: 8, d: 1}, inh: "NAlpaca Day"},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "NAlpacaD"},
         
         {inh: "Public Holiday", ty: "nD", st: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
         {ty: "D", st: {mon: 8, d: 1}, inh: "Pachamama Day", fst: {era: 1, y: 1990}},

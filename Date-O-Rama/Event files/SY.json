@@ -21,8 +21,8 @@
         
         {inh: "arLangD", ty: "D", st: {mon: 3, d: 1}, fst: {era: 1, y: 2010}},
         {inh: "Teacher’s Day", ty: "D", st: {mon: 3, wkd: [5], nth: 3}},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 8, d: 1}},
-        {ty: "D", st: {mon: 12, d: 29}, inh: "Tree Day", fst: {era: 1, y: 1996}, inh: "NTree Day"},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 8, d: 1}},
+        {ty: "D", st: {mon: 12, d: 29}, inh: "Tree Day", fst: {era: 1, y: 1996}, inh: "NTreeD"},
 
         {ty: "D", st: {mon: 6, d: 21}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 12, d: 17}, inh: "St Barbara"},

@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 9, d: 3}, ttls: {"en":"Tokehega Day"}, fst: {era: 1, y: 1983}},
         
         {ty: "D", st: {mon: 2, d: 6}, inh: "Waitangi Day", fst: {era: 1, y: 1934}},
-        {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
+        {ty: "D", st: {mon: 4, d: 25}, inh: "AnzacD", fst: {era: 1, y: 1916}},
 
         {ty: "D", st: {mon: 2, wkd: [1], nth: 2}, inh: "Children’s Day"},
     ]

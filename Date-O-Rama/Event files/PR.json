@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 1, wkd: [2], nth: 3}, inh: "MLK Day"},
-        {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, inh: "NHeroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-national-heroes-day"}, fst: {era: 1, y: 2014}},
+        {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, inh: "NHeroes’D", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-national-heroes-day"}, fst: {era: 1, y: 2014}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, inh: "Presidents’ Day", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/presidents-day"}},
         {ty: "D", st: {mon: 3, d: 2}, ttls: {"en":"American Citizenship Day","es":"Día de la Ciudadanía Americana"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
         {ty: "D", st: {mon: 3, d: 3, wkd: [2]}, ttls: {"en":"American Citizenship Day (in lieu)"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
@@ -27,7 +27,7 @@
         {ty: "D", st: {mon: 11, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/veterans-day"}, inh: "Veterans Day"},
         {ty: "D", st: {mon: 11, d: 19}, ttls: {"en":"Discovery of Puerto Rico Day","es":"Día del Descubrimiento de Puerto Rico"}, urls: {"en":"https://www.daysoftheyear.com/days/discovery-of-puerto-rico-day/"}, fst: {era: 1, y: 1493}, inh: "Discovery Day"},
         {ty: "D", st: {mon: 11, wkd: [5], nth: 4}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/thanksgiving"}, inh: "Thanksgiving"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         
         {ty: "D", st: {mon: 1, wkd: [2], nth: 2}, ttls: {"en":"Birthday of Eugenio María de Hostos","es":"Natalicio de Eugenio María de Hostos"}, urls: {"en":"https://en.wikipedia.org/wiki/Eugenio_Mar%C3%ADa_de_Hostos"}, inh: "*BD*"},
@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Birthday of Dr. José Celso Barbosa","es":"Natalicio de Dr. José Celso Barbosa"}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inh: "*BD*", last: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, ttls: {"en":"Day of Illustrious Puerto Ricans"}},
 
-        {ty: "D", st: {mon: 1, d: 5}, inh: "12th Nite"},
+        {ty: "D", st: {mon: 1, d: 5}, inh: "12thN"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},

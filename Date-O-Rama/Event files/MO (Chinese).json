@@ -15,9 +15,9 @@
         {ty: "D", st: {mon: 5, d: 5}, inh: "Dragon Boat Festival"},
         {ty: "D", st: {mon: 5, d: 7, wkd: [2]}, inh: "Dragon Boat Festival Holiday", urls: {"en":"https://www.officeholidays.com/holidays/macau/dragon-boat-festival"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Mid-Autumn Festival"},
-        {ty: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "D following the Mid-Autumn Festival"},
-        {ty: "D", st: {mon: 8, d: 17, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "D following the Mid-Autumn Festival (in lieu)"},
-        {ty: "D", st: {mon: 8, d: 19, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "D following the Mid-Autumn Festival (in lieu)"},
+        {ty: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "DFollowingTheMidAutumnFestival"},
+        {ty: "D", st: {mon: 8, d: 17, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "DFollowingTheMidAutumnFestival (in lieu)"},
+        {ty: "D", st: {mon: 8, d: 19, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/mid-autumn-festival"}, inh: "DFollowingTheMidAutumnFestival (in lieu)"},
         {ty: "D", st: {mon: 9, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/macau/chung-yeung-festival"}, inh: "Chung Yeung Festival"},
     ]
 }

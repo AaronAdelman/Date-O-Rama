@@ -20,9 +20,9 @@
         {ttls: {"en":"Women’s Union Establishment Day (in lieu)"}, ty: "D", st: {mon: 7, d: 21, thruD: 22, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/lao/lao-women-union-establishment-day"}, fst: {era: 1, y: 1955}, mog: "👩"},
 
         {ty: "D", st: {mon: 10, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, ttls: {"en":"BOL Establishment Day"}, mog: "🏦", fst: {era: 1, y: 1968}},
-        {ty: "D", st: {mon: 12, d: 2}, urls: {"en":"https://nationaltoday.com/lao-national-day/"}, inh: "NDay", fst: {era: 1, y: 1975}},
+        {ty: "D", st: {mon: 12, d: 2}, urls: {"en":"https://nationaltoday.com/lao-national-day/"}, inh: "ND", fst: {era: 1, y: 1975}},
 
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 1, d: 20}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 1, d: 20}},
 
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},

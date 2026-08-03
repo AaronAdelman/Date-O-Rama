@@ -23,8 +23,8 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/luxembourg/fathers-day"}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
 

@@ -9,9 +9,9 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 2}, inh: "D after New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2}, inh: "DAfterNYD"},
         {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inh: "NYD (in lieu)"},
-        {ty: "D", st: {mon: 1, d: 3, thruD: 4, wkd: [3]}, inh: "D after New Year’s Day (in lieu)"},
+        {ty: "D", st: {mon: 1, d: 3, thruD: 4, wkd: [3]}, inh: "DAfterNYD (IL)"},
         {ty: "D", st: {mon: 3, d: 14}, ttls: {"az":"Dita e Veres","cs":"Dita e Verës","de":"Dita e Verës","en":"Dita e Verës","it":"Dita e Verës","ka":"Dita e Verës","pl":"Dzień Lata","sq":"Dita e Verës","uk":"День літа"}, nts: {"en":"Summer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/dita-e-veres/"}},
         {ty: "D", st: {mon: 3, d: 16, wkd: [2, 3]}, ttls: {"en":"Dita e Verës (in lieu)"}, nts: {"en":"Summer Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/albania/summer-day"}},
         {ty: "D", st: {mon: 3, d: 22}, inh: "Nowruz", fst: {era: 1, y: 2004}, urls: {"en":"https://nationaltoday.com/nevruz-day/"}},
@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 9, d: 5}, inh: "St Teresa of Calcutta", urls: {"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty: "D", st: {mon: 11, d: 28}, inh: "Independence Day", fst: {era: 1, y: 1912}, urls: {"en":"https://www.daysoftheyear.com/days/albanian-independence-day/"}, nts: {"en":"Albania Flag Day"}},
         {ty: "D", st: {mon: 11, d: 29}, inh: "Liberation Day", fst: {era: 1, y: 1944}, urls: {"en":"https://www.daysoftheyear.com/days/albanian-liberation-day/"}},
-        {ty: "D", st: {mon: 8, d: 12}, inh: "NYouth Day", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 8, d: 12}, inh: "NYouthD", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
@@ -35,12 +35,12 @@
         {ty: "D", st: {mon: 11, d: 23, thruD: 24, wkd: [2]}, ttls: {"en":"Alphabet Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/albania/alphabet-day"}},
         {ty: "D", st: {mon: 11, d: 28}, inh: "Independence Day", nts: {"en":"Constitution Day"}},
         {ty: "D", st: {mon: 12, d: 6}, inh: "St Nicholas"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
-        {ty: "D", st: {mon: 12, d: 8}, inh: "NYouth Day", urls: {"en":"https://nationaltoday.com/albanian-national-youth-day/"}, fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 12, d: 8}, inh: "NYouthD", urls: {"en":"https://nationaltoday.com/albanian-national-youth-day/"}, fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 10, d: 17, thruD: 23, wkd: [1]}, ttls: {"en":"Tirana Marathon"}, urls: {"en":"https://www.daysoftheyear.com/days/tirana-marathon/"}, fst: {era: 1, y: 2016}, nts: {"en":"Created by the Municipality of Tirana"}},
         
         {ty: "nD", st: {era: 1, y: 2025, mon: 5, d: 15, durD: 2}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/albania/albania-epc-summit"}},

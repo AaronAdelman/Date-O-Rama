@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 17}, ttls: {"en":"Dessalines Day","fr":"Anniversaire de la mort de Dessalines"}, urls: {"en":"https://nationaltoday.com/dessalines-day/"}, fst: {era: 1, y: 1806}, inh: "*DA*"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
         {ty: "D", st: {mon: 11, d: 18}, inh: "Army Day", ttls: {"fr":"Le Jour de la Battaille des Vertières","en":"Battle of Vertières Day"}, urls: {"en":"https://nationaltoday.com/battle-of-vertieres-day/"}, nts: {"fr":"Vertières"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         

@@ -11,7 +11,7 @@
         {ty: "D", st:  {mon: 1, d: 1}, inh: "NYD"},
         {ttls: {"en":"Cheikh Al Maarouf Day"}, ty: "D", st:  {mon: 3, d: 18}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 7, d: 6}, inh: "NDay", urls: {"en":"https://nationaltoday.com/comoros-national-day/"}, fst: {era: 1, y: 1975}},
+        {ty: "D", st: {mon: 7, d: 6}, inh: "ND", urls: {"en":"https://nationaltoday.com/comoros-national-day/"}, fst: {era: 1, y: 1975}},
         
         {ttls: {"en":"Maore Day"}, ty: "D", st:  {mon: 11, d: 12}, fst: {era: 1, y: 2006}},
 

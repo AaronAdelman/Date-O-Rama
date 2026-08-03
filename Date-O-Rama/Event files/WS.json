@@ -9,13 +9,13 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Samoa"},
     evts: [
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "D after New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "D after New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "DAfterNYD"},
+        {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "DAfterNYD"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 4, d: 25}, inh: "Anzac Day", fst: {era: 1, y: 1916}},
+        {ty: "D", st: {mon: 4, d: 25}, inh: "AnzacD", fst: {era: 1, y: 1916}},
         {ty: "D", st: {mon: 5, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/samoan-mothers-day"}, inh: "Mother’s Day"},
         {inh: "Independence Day", ty: "D", st: {mon: 6, d: 1}, urls: {"en":"https://nationaltoday.com/samoa-independence-day/"}, fst: {era: 1, y: 1962}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/samoan-fathers-day"}, inh: "Father’s Day"},
@@ -28,6 +28,6 @@
 
         
         {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "White Sun"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NPolice Remembrance Day", fst: {era: 1, y: 1989}},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NPolice RemembranceD", fst: {era: 1, y: 1989}},
     ]
 }

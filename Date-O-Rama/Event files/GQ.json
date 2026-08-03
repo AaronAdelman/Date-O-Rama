@@ -27,7 +27,7 @@
         
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 3, d: 9, thruD: 10, wkd: [2]}, inh: "IWD (in lieu)", fst: {era: 1, y: 1977}, urls: {"en":"https://www.officeholidays.com/holidays/equatorial-guinea/international-womens-day"}},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", fst: {era: 1, y: 1963}},
-        {ty: "D", st: {mon: 5, d: 26, thruD: 27, wkd: [2]}, inh: "Africa Day (in lieu)", fst: {era: 1, y: 1963}, urls: {"en":"https://www.officeholidays.com/holidays/equatorial-guinea/african-unity-day"}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 26, thruD: 27, wkd: [2]}, inh: "AfricaD (IL)", fst: {era: 1, y: 1963}, urls: {"en":"https://www.officeholidays.com/holidays/equatorial-guinea/african-unity-day"}},
   ]
 }

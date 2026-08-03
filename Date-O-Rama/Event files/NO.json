@@ -19,7 +19,7 @@
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, inh: "Father’s Day", urls: {"en":"https://www.officeholidays.com/holidays/norway/fathers-day"}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day", urls: {"en":"https://www.officeholidays.com/holidays/norway/christmas-holiday"}},
 

@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, inh: "Father’s Day", urls: {"en":"https://www.officeholidays.com/holidays/austria/fathers-day"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 9, d: 24}, inh: "St Rupert", urls: {"en":"https://www.officeholidays.com/holidays/austria/salzburg/saint-rupert"}},
-        {ty: "D", st: {mon: 10, d: 26}, inh: "NDay", urls: {"en":"https://www.archive.austria.org/national-day"}, fst: {era: 1, y: 1955}, nts: {"en":"Created by the Austrian Parliament"}},
+        {ty: "D", st: {mon: 10, d: 26}, inh: "ND", urls: {"en":"https://www.archive.austria.org/national-day"}, fst: {era: 1, y: 1955}, nts: {"en":"Created by the Austrian Parliament"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 11, d: 15}, inh: "St Leopold", urls: {"en":"https://www.officeholidays.com/holidays/austria/vienna/saint-leopold"}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 5, d: 4}, inh: "St Florian"},
         {ttls: {"en":"Plebiscite Day","de":"Tag der Volksabstimmung"}, ty: "D", st: {mon: 10, d: 10}, urls: {"en":"https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
         {ty: "D", st: {mon: 11, d: 11}, inh: "St Martin of Tours"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 20}, inh: "Children’s Day"},

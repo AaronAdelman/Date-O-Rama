@@ -9,12 +9,12 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Mali"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 20}, inh: "Armed Forces Day", urls: {"en":"https://www.officeholidays.com/holidays/mali/mali-army-day"}, nts: {"en":"Army Day"}},
+        {ty: "D", st: {mon: 1, d: 20}, inh: "ArmedForcesD", urls: {"en":"https://www.officeholidays.com/holidays/mali/mali-army-day"}, nts: {"en":"Army Day"}},
         {ty: "D", st: {mon: 3, d: 26}, inh: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-mali/"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/mali/labour-day"}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 9, d: 22}, inh: "Independence Day", fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/mali-independence-day/"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         

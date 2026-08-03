@@ -32,7 +32,7 @@
         {inh: "Public Holiday", ty: "D", st: {mon: 3, d: 18, era: 1, y: 2022}},
 
         {ty: "M", st: {mon: 2}, inh: "Black History Month", fst: {era: 1, y: 2010}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "AprFoolsD"},
         {ty: "D", st: {mon: 7, d: 12}, inh: "12th"},
         {ty: "D", st: {mon: 7, wkd: [1], nth: -1}, ttls: {"en":"Reek Sunday","ga":"Domhnach na Cruaiche"}, nts: {"en":"Garland Sunday"}, urls: {"en":"https://nationaltoday.com/reek-sunday/"}, mog: "⛰"},
         {ty: "D", st: {mon: 11, d: 20}, inh: "WChildren’s Day"},

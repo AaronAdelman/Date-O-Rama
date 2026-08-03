@@ -19,17 +19,17 @@
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "Corpus Christi"},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Popular Consultation Day","he":"יום הייעוץ הפופולרי"}, urls: {"en":"https://nationaltoday.com/popular-consultation-day/"}, fst: {era: 1, y: 1999}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
-        {inh: "NYouth Day", ty: "D", st: {mon: 11, d: 12}, fst: {era: 1, y: 1991}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, nts: {"en":"Youth National Day"}},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
+        {inh: "NYouthD", ty: "D", st: {mon: 11, d: 12}, fst: {era: 1, y: 1991}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, nts: {"en":"Youth National Day"}},
         {ty: "D", st: {mon: 11, d: 28}, inh: "Proclamation of Independence Day", fst: {era: 1, y: 1975}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},
         {ty: "D", st: {mon: 12, d: 7}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/east-timor-memorial-day"}, inh: "Memorial Day"},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 31}, inh: "NHeroes’ Day", urls: {"en":"https://nationaltoday.com/national-heroes-day-timor-leste/"}},
+        {ty: "D", st: {mon: 12, d: 31}, inh: "NHeroes’D", urls: {"en":"https://nationaltoday.com/national-heroes-day-timor-leste/"}},
 
         {ty: "D", st: {mon: 11, d: 3}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 12, d: 7}, urls: {"en":"https://nationaltoday.com/memorial-day-in-east-timor/"}, inh: "Memorial Day", fst: {era: 1, y: 1975}},
-        {ty: "D", st: {mon: 11, d: 3}, inh: "NWomen’s Day", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/east-timor-national-womens-day"}},
+        {ty: "D", st: {mon: 11, d: 3}, inh: "NWomen’sD", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/east-timor-national-womens-day"}},
     ]
 }

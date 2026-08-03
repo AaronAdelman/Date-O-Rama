@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 3, d: 25}, inh: "Annunciation"},
         {ty: "D", st: {mon: 3, d: 27}, ttls: {"en":"Feast of Jesus of Nazareth","mt":"Ġesù Nazzarenu"}},
 
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Apr Fools’ Day"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "AprFoolsD"},
         {ttls: {"en":"Feast of Saint Gregory","mt":"San Girgor"}, ty: "D", st: {misc: "E", offsetD: 3}},
         {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"Feast of Saint Publius","mt":"San Publju"}},
         {ty: "D", st: {mon: 4, d: 23}, inh: "St George"},
@@ -112,7 +112,7 @@
         {ty: "D", st: {mon: 9, d: 9, thruD: 15, wkd: [1]}, ttls: {"en":"Feast of Our Lady of Graces","mt":"Il-Madonna tal-Grazzja"}},
         {ty: "D", st: {mon: 9, d: 12}, ttls: {"en":"Feast of the Name of Mary","mt":"L-Isem ta’ Marija"}},
 
-        {ty: "D", st: {mon: 11, d: 2}, inh: "All Souls Day"},
+        {ty: "D", st: {mon: 11, d: 2}, inh: "AllSoulsD"},
         {ty: "D", st: {mon: 11, d: 11}, inh: "St Martin of Tours"},
         {inh: "St Cecilia", ty: "D", st: {mon: 11, d: 22}},
         {ty: "D", st: {mon: 11, d: 25}, inh: "St Catherine of Alexandria"},

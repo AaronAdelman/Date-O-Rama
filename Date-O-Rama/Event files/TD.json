@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 12, d: 1}, ttls: {"da":"Friheds- og demokratidagen","en":"Freedom and Democracy Day"}, urls: {"en":"https://www.daysoftheyear.com/days/freedom-and-democracy-day-in-chad/"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Children’s Day"},

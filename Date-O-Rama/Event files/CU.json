@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 7, wkd: [1], nth: 3}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
-        {inh: "Armed Forces Day", ty: "D", st: {mon: 12, d: 2}},
+        {inh: "ArmedForcesD", ty: "D", st: {mon: 12, d: 2}},
         {ty: "D", st: {mon: 1, d: 28}, urls: {"en":"https://nationaltoday.com/jose-martis-birthday-memorial/"}, ttls: {"en":"José Martí’s Birthday Memorial"}, fst: {era: 1, y: 1853}, inh: "*BD*"},
         {ty: "D", st: {mon: 12, d: 8}, urls: {"en":"https://en.wikipedia.org/wiki/Treaty_of_Chaguaramas#CARICOM_Day"}, ttls: {"en":"CARICOM-Cuba Day"}},
         {ty: "D", st: {mon: 10, d: 10}, urls: {"en":"https://nationaltoday.com/the-beginning-of-the-ten-years-war/"}, ttls: {"en":"The Beginning of the Ten Years’ War"}},
