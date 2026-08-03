@@ -235,8 +235,23 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
     override func solarTimeComponents(now: Date, locationData: ASALocation, dateBoundary: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
-        guard let sunriseBoundary = dateBoundary else {
-            return (hours: -1.0, daytime: false, valid: false)
+        
+        var sunriseBoundary: Date
+        if dateBoundary == nil {
+            // Sometimes dateBoundary is nil for some reason, so we need to compensate
+            let temp = now
+                .previousMidnight(timeZone: timeZone)
+                .solarEvents(location: location, events: [.sunrise], timeZone: timeZone)[.sunrise]
+            guard temp != nil else {
+                debugPrint(
+                    #file,
+                    #function, "sunrise boundary is nil")
+                return (hours: -1.0, daytime: false, valid: false)
+            }
+            
+            sunriseBoundary = temp!
+        } else {
+            sunriseBoundary = dateBoundary!
         }
 
         let NUMBER_OF_HOURS = 12.0
@@ -250,6 +265,14 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
 
         // 1) Before sunrise -> Nighttime (previous sunset -> this sunrise)
         if now < sunriseBoundary {
+            debugPrint(
+                #file,
+                #function, "now < sunriseBoundary",
+                "now:",
+                now,
+                "sunrise boundary:",
+                sunriseBoundary
+            )
             let prevDate = now.noon(timeZone: timeZone).oneDayBefore
             if let prevSunset = sunset(on: prevDate) {
                 let hours = now.fractionalHours(startDate: prevSunset, endDate: sunriseBoundary, numberOfHoursPerDay: NUMBER_OF_HOURS)
