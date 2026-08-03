@@ -130,7 +130,7 @@
         {ty: "D", st: {mon: 11, d: 19}, ttls: {"en":"Romanian Researcher and Designer Day"}},
         {ty: "D", st: {mon: 11, d: 28}, ttls: {"en":"Bukovina Day"}},
         {ty: "D", st: {mon: 11, wkd: [5], nth: 3}, ttls: {"en":"National Day Without Tobacco"}},
-        {ty: "D", st: {mon: 11, wkd: [1], nth: 3}, inh: "WD of Remembrance for Road Traffic Victims", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 11, wkd: [1], nth: 3}, inh: "WDOfRemembranceForRoadTrafficVictims", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 12, d: 1}, inh: "WAIDS Day"},
         {ty: "D", st: {mon: 12, d: 2}, inh: "IDfor the Abolition of Slavery", fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 12, d: 3}, inh: "ID of Persons with Disabilities"},

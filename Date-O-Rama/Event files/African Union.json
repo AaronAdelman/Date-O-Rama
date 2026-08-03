@@ -30,7 +30,7 @@
         {ty: "D", ttls: {"en":"Africa Food Security and Nutrition Day", mog: "🥘"}, st: {mon: 10, d: 30}},
         {ty: "D", ttls: {"en":"Africa Youth Day"}, st: {mon: 11, d: 1}, mog: "👦👧"},
         {ty: "D", ttls: {"en":"African Statistics Day"}, st: {mon: 11, d: 18}, mog: "📊"},
-        {ty: "D", st: {mon: 11, d: 20}, inh: "Africa Industrialization Day", fst: {era: 1, y: 2018}},
+        {ty: "D", st: {mon: 11, d: 20}, inh: "AfricaIndustrializationD", fst: {era: 1, y: 2018}},
         {ty: "D", ttls: {"en":"Africa Telecommunications and ICT Day"}, st: {mon: 12, d: 7}, mog: "📞"},
         {ty: "D", ttls: {"en":"Day of African Sport"}, st: {mon: 12, d: 14}, mog: "🏏🏉🏐"},
         {ty: "D", st: {mon: 9, d: 15}, ttls: {"en":"National Africa Civility Day"}, urls: {"en":"https://nationaltoday.com/national-africa-civility-day/"}, mog: "🌍", nts: {"en":"Created by the African Union"}},

@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 12, d: 8}, ttls: {"he":"יום המחזור","en":"Recycling Day"}, mog: "♻️", urls: {"he":"https://b.tmir.org.il/recycle-day/"}},
         {ty: "D", st: {mon: 3, d: 24}, ttls: {"he":"יום הולדת להפועל חיפה","en":"HapPo‘el Ḥayfah Day"}, mog: "⚽️"},
         {ty: "D", st: {mon: 3, d: 24}, ttls: {"he":"יום הולדת לטלוויזיה החינוכית","en":"Channel 23 Day"}, mog: "📺"},
-        {ty: "D", st: {mon: 5, d: 14}, inh: "Declaration Day", fst: {era: 1, y: 1948}},
+        {ty: "D", st: {mon: 5, d: 14}, inh: "DeclarationD", fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 5, d: 26}, ttls: {"he":"יום הולדת לצה״ל","en":"Birthday of the IDF"}, fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 5, d: 30}, ttls: {"he":"הטבח בנמל התעופה לוד","en":"Anniversary of the Lod Airport Massacre"}, fst: {era: 1, y: 1972}},
         {ty: "D", st: {mon: 5, d: 9}, inh: "VE Day", urls: {"he":"https://haluzhaivri.org.il/page/36474"}},

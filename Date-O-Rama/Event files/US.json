@@ -305,7 +305,7 @@
         {ty: "D", st: {mon: 4, d: 25}, ttls: {"be":"Дзень ДНК","bn":"ডিএনএ দিবস","ckb":"ڕۆژی دی ئێن ئەی","cs":"Den DNA","en":"DNA Day","fa":"روز دی‌ان‌ای","fi":"DNA-päivä","he":"יום הדנ״א","hy":"ԴՆԹ-ի օր","id":"Hari DNA Nasional","ja":"DNAの日","pl":"Międzynarodowy Dzień DNA","ru":"День ДНК","sv":"DNA-dagen","sw":"Siku ya DNA","ta":"டி. என். ஏ. நாள்","uk":"День ДНК","uz":"DNK kuni","zh":"DNA日"}, nts: {"he":"יום הדנ״א הלאומי","en":"National DNA Day\nCreated by the US Congress"}, urls: {"en":"https://www.daysoftheyear.com/days/dna-day/"}, fst: {era: 1, y: 2003}, mog: "🧬"},
         {ty: "D", st: {mon: 4, d: 26}, ttls: {"en":"Confederate Heroes’ Day"}, urls: {"en":"https://nationaltoday.com/confederate-heroes-day/"}},
         {ty: "D", st: {mon: 4, d: 27}, ttls: {"en":"Ulysses S. Grant Day"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/usa/ohio/ulysses-s-grant-day"}},
-        {ty: "D", st: {mon: 4, d: 29}, inh: "End Jew Hatred Day", fst: {era: 1, y: 2023}},
+        {ty: "D", st: {mon: 4, d: 29}, inh: "EndJewHatredD", fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 4, d: 30}, inh: "NPrepareAthon! Day", fst: {era: 1, y: 2014}},
         {ty: "D", st: {mon: 4, d: 5}, ttls: {"en":"Gold Star Spouses Day"}, nts: {"en":"Gold Star Wives Day\nCreated by the US Senate"}, fst: {era: 1, y: 2011}, urls: {"en":"https://www.daysoftheyear.com/days/gold-star-spouses-day/"}, mog: "⭐️"},
         {ty: "D", st: {mon: 4, d: 5}, ttls: {"en":"National Go For Broke Day"}, urls: {"en":"https://www.daysoftheyear.com/days/go-for-broke-day/"}, nts: {"en":"Go For Broke Day"}},
