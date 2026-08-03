@@ -230,7 +230,58 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         return .sunrise
     } // var dateTransition: ASASolarEvent
 
-    
+    // South Asian calendars: date boundary is sunrise; midpoint between halves is sunset.
+    // Override to compute solar-time hours accordingly.
+    override func solarTimeComponents(now: Date, locationData: ASALocation, dateBoundary: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
+        let location = locationData.location
+        let timeZone = locationData.timeZone
+        guard let dateBoundary = dateBoundary else {
+            return (hours: -1.0, daytime: false, valid: false)
+        }
+
+        var hours: Double
+        var daytime: Bool
+        let NUMBER_OF_HOURS = 12.0
+
+        // For sunrise-transition calendars:
+        // - If now >= dateBoundary (sunrise), we are in daytime until sunset; next night starts at sunset.
+        // - Otherwise, we are in previous nighttime (from previous sunset to sunrise).
+        if dateBoundary <= now {
+            // Daytime: from sunrise (dateBoundary) to sunset of the same civil date
+            let events = now.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
+            guard let sunset = events[self.midPointTransition] else {
+                return (hours: -1.0, daytime: false, valid: false)
+            }
+            // If sunset is before the sunrise boundary (can happen with wrong-day lookup), jigger by subtracting a day
+            var effectiveSunset = sunset
+            if effectiveSunset <= dateBoundary {
+                let jiggeredNow = now - Date.SECONDS_PER_DAY
+                let jiggeredEvents = jiggeredNow.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
+                guard let jiggeredSunset = jiggeredEvents[self.midPointTransition] else {
+                    return (hours: -1.0, daytime: false, valid: false)
+                }
+                effectiveSunset = jiggeredSunset
+            }
+            // Compute fractional hours between sunrise and sunset
+            hours = now.fractionalHours(startDate: dateBoundary, endDate: effectiveSunset, numberOfHoursPerDay: NUMBER_OF_HOURS)
+            daytime = true
+        } else {
+            // Previous nighttime: from previous sunset to sunrise (dateBoundary)
+            // Find previous day's sunset
+            let previousDate = now.noon(timeZone: timeZone).oneDayBefore
+            let prevEvents = previousDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
+            guard let previousSunset = prevEvents[self.midPointTransition] else {
+                return (hours: -1.0, daytime: false, valid: false)
+            }
+            assert(dateBoundary > previousSunset)
+            hours = now.fractionalHours(startDate: previousSunset, endDate: dateBoundary, numberOfHoursPerDay: NUMBER_OF_HOURS)
+            daytime = false
+        }
+
+        assert(!(hours == 12.0 && daytime == true))
+        return (hours: hours, daytime: daytime, valid: true)
+    }
+
     
     override func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         // The start of the South Asian day is the sunrise that occurs on that civil date.
@@ -287,5 +338,3 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         return start.addingTimeInterval(24 * 3600)
     }
 }
-
-

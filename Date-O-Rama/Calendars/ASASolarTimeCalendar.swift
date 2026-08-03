@@ -96,7 +96,6 @@ public class ASASolarTimeCalendar: ASACalendar, ASALDMLCalendar {
             hours = now.fractionalHours(startDate: dateBoundary, endDate: nextDayHalfStart, numberOfHoursPerDay: NUMBER_OF_HOURS)
             daytime = false
         } else {
-//            debugPrint(#file, #function, "deoptionalizedTransition > now")
             let dateToCalculateSolarEventsFor = now
             let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
