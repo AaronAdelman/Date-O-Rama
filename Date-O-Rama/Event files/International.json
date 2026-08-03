@@ -1074,7 +1074,7 @@
         {ty: "D", st: {mon: 5, d: 24}, ttls: {"en":"International Women’s Day for Peace and Disarmament"}, urls: {"en":"https://www.daysoftheyear.com/days/international-womens-day-for-peace-and-disarmament/"}, fst: {era: 1, y: 1980}, mog: "☮️"},
         {ty: "D", st: {mon: 5, d: 24}, ttls: {"en":"Pansexual Awareness Day"}, nts: {"en":"Pansexual & Panromantic Awareness Day\nPansexual Awareness and Visibility Day"}, fst: {era: 1, y: 2015}},
         {ty: "D", st: {mon: 5, d: 24}, ttls: {"en":"World Schizophrenia Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-schizophrenia-awareness-day/"}, inh: "*MedAw*", nts: {"en":"Created by the National Schizophrenia Foundation"}},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 5, d: 25}, inh: "Towel Day", fst: {era: 1, y: 2001}},
         {ty: "D", st: {mon: 5, d: 25}, ttls: {"bn":"বিশ্ব থাইরয়েড দিবস","en":"World Thyroid Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-thyroid-day/"}, fst: {era: 1, y: 2007}, inh: "*MedAw*"},
         {ty: "D", st: {mon: 5, d: 25}, ttls: {"ca":"Dia de l’Orgull Friqui","de":"Geek Pride Day","en":"Geek Pride Day","es":"Día del orgullo geek","fr":"Geek Pride Day","he":"יום גאוות הגיקים","pt":"Dia do Orgulho Nerd","sgs":"Muokslioka ėšdėdoma dėina"}, urls: {"en":"https://www.daysoftheyear.com/days/geek-pride-day/"}, fst: {era: 1, y: 2006}, nts: {"en":"Created by Germán Martínez"}},

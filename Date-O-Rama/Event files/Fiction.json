@@ -27,7 +27,7 @@
         {ty: "D", st: {mon: 6, d: 1}, ttls: {"en":"Winterfair"}, nts: {"en":"From The Vorkosigan Saga"}},
         {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Summerween"}, nts: {"en":"From Gravity Falls"}},
         {ty: "D", st: {mon: 6, d: 23}, ttls: {"en":"Longest Night"}, nts: {"en":"From Kushiel’s Legacy"}},
-        {ty: "D", st: {mon: 6, d: 25}, inh: "1/2-Xmas", nts: {"en":"From Workaholics"}},
+        {ty: "D", st: {mon: 6, d: 25}, inh: "1/2Xmas", nts: {"en":"From Workaholics"}},
         {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Murder of Thomas and Martha Wayne"}, nts: {"en":"From Batman"}, inh: "*DA*"},
        {ty: "D", st: {mon: 6, d: 5}, ttls: {"en":"Ferris Bueller’s Day Off"}, nts: {"en":"From Ferris Bueller’s Day Off"}},
         {ty: "D", st: {mon: 7, d: 4}, ttls: {"en":"Lunar Independence Day"}, nts: {"en":"From The Moon Is A Harsh Mistress"}, inh: "Independence Day"},

@@ -32,7 +32,7 @@
         {ty: "D", st: {misc: "E", offsetD: 4}, ttls: {"en":"Bright Week (day 5)"}},
         {ty: "D", st: {misc: "E", offsetD: 5}, ttls: {"en":"Bright Week (day 6)"}},
         {ty: "D", st: {misc: "E", offsetD: 6}, ttls: {"en":"Bright Week (day 7)"}},
-        {ty: "D", st: {misc: "E", offsetD: 7}, inh: "2nd Sun of Easter", nts: {"en":"Thomas Sunday\nSunday of Saint Thomas"}},
+        {ty: "D", st: {misc: "E", offsetD: 7}, inh: "2ndSunOfEaster", nts: {"en":"Thomas Sunday\nSunday of Saint Thomas"}},
         {ty: "D", st: {misc: "E", offsetD: 14}, ttls: {"en":"The Holy Myrrhbearers"}},
         {ty: "D", st: {misc: "E", offsetD: 21}, ttls: {"en":"The Paralytic"}},
         {ty: "D", st: {misc: "E", offsetD: 24}, ttls: {"en":"Mid-Pentecost"}},

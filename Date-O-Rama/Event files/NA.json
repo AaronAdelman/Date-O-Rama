@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 5, d: 4}, ttls: {"en":"Cassinga Day"}, urls: {"en":"https://www.officeholidays.com/holidays/namibia/cassinga-day"}, fst: {era: 1, y: 1978}},
         {ty: "D", st: {mon: 5, d: 5, wkd: [2]}, ttls: {"en":"Cassinga Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/namibia/cassinga-day"}, fst: {era: 1, y: 1978}},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", urls: {"en":"https://www.officeholidays.com/holidays/namibia/african-unity-day"}, fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", urls: {"en":"https://www.officeholidays.com/holidays/namibia/african-unity-day"}, fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 5, d: 28}, ttls: {"en":"Genocide Memorial Day"}, urls: {"en":"https://www.officeholidays.com/holidays/namibia/namibia-genocide-memorial-day"}, fst: {era: 1, y: 2025}},
         {ty: "D", st: {mon: 8, d: 26}, inh: "Heroes’ Day", urls: {"en":"https://www.officeholidays.com/holidays/namibia/namibia-heroes-day"}},
         {ty: "D", st: {mon: 12, d: 10}, inh: "Human Rights Day", urls: {"en":"https://www.officeholidays.com/holidays/namibia/international-human-rights-day"}, fst: {era: 1, y: 1950}},
@@ -30,6 +30,6 @@
         {ty: "D", st: {era: 1, y: 2019, mon: 11, d: 27}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/namibia/namibia-elections"}},
         {ty: "D", st: {era: 1, y: 2020, mon: 11, d: 25}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/namibia/namibia-elections"}},
         {ty: "D", st: {era: 1, y: 2025, mon: 3, d: 1}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/namibia/namibia-nujoma-funeral"}},
-        {ty: "D", st: {mon: 5, d: 26, wkd: [2]}, inh: "Africa Day (in lieu)", fst: {era: 1, y: 1963}, urls: {"en":"https://www.officeholidays.com/holidays/namibia/african-unity-day"}},
+        {ty: "D", st: {mon: 5, d: 26, wkd: [2]}, inh: "AfricaD (IL)", fst: {era: 1, y: 1963}, urls: {"en":"https://www.officeholidays.com/holidays/namibia/african-unity-day"}},
     ]
 }

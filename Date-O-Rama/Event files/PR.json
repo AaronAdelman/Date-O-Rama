@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Birthday of Dr. José Celso Barbosa","es":"Natalicio de Dr. José Celso Barbosa"}, urls: {"en":"https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inh: "*BD*", last: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, urls: {"en":"https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, ttls: {"en":"Day of Illustrious Puerto Ricans"}},
 
-        {ty: "D", st: {mon: 1, d: 5}, inh: "12th Nite"},
+        {ty: "D", st: {mon: 1, d: 5}, inh: "12thN"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
         {ty: "D", st: {misc: "E", offsetD: -7}, inh: "Palm Sun"},
         {ty: "D", st: {mon: 6, d: 24}, inh: "St John"},

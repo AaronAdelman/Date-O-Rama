@@ -16,7 +16,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 25}, inh: "Africa Day", urls: {"en":"https://www.officeholidays.com/holidays/ghana/african-unity-day"}, fst: {era: 1, y: 1963}},
+        {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", urls: {"en":"https://www.officeholidays.com/holidays/ghana/african-unity-day"}, fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 8, d: 4}, ttls: {"en":"Founders’ Day"}, urls: {"en":"https://nationaltoday.com/founders-day/"}, fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 8, d: 5, wkd: [2]}, ttls: {"en":"Founders’ Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/founders-day/"}, fst: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 9, d: 21}, ttls: {"en":"Kwame Nkrumah Memorial Day","he":"יום הזיכרון של קוואמה נקרומה"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/ghana/kwame-nkrumah-memorial-day"}},
