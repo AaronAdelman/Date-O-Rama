@@ -8,9 +8,9 @@
     fst: {era: 1, y: 1840},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inh: "D after New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 3, wkd: [2]}, inh: "D after New Year’s Day"},
-        {ty: "D", st: {mon: 1, d: 4, wkd: [2]}, inh: "D after New Year’s Day"},
+        {ty: "D", st: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inh: "DAfterNYD"},
+        {ty: "D", st: {mon: 1, d: 3, wkd: [2]}, inh: "DAfterNYD"},
+        {ty: "D", st: {mon: 1, d: 4, wkd: [2]}, inh: "DAfterNYD"},
         {ty: "D", st: {mon: 1, d: 19, thruD: 25, wkd: [2]}, ttls: {"en":"Wellington Anniversary Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wellington-anniversary-day/"}, fst: {era: 1, y: 1840}},
         {ty: "D", st: {mon: 1, d: 29, thruMon: 2, thruD: 4, wkd: [2]}, ttls: {"en":"Nelson Anniversary Day"}, urls: {"en":"https://nationaltoday.com/nelson-anniversary-day/"}},
         {ty: "D", st: {mon: 1, d: 26, thruMon: 2, thruD: 1, wkd: [2]}, ttls: {"en":"Auckland Anniversary Day"}, urls: {"en":"https://nationaltoday.com/auckland-anniversary-day/"}},

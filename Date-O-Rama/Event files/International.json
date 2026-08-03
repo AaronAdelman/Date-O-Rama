@@ -163,7 +163,7 @@
         {ty: "D", st: {mon: 10, d: 11}, ttls: {"en":"It’s My Party Day"}, urls: {"en":"https://nationaltoday.com/party-day/"}},
         {ty: "D", st: {mon: 10, d: 11}, ttls: {"en":"World Biryani Day"}, urls: {"en":"https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"}},
         {ty: "D", st: {mon: 10, d: 11}, ttls: {"en":"World Dulce de Leche Day"}, nts: {"en":"International Dulce de Leche Day"}, urls: {"en":"https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 10, d: 12}, inh: "D of the Races", urls: {"en":"https://nationaltoday.com/dia-de-la-raza/"}, fst: {era: 1, y: 1917}},
+        {ty: "D", st: {mon: 10, d: 12}, inh: "DOfTheRaces", urls: {"en":"https://nationaltoday.com/dia-de-la-raza/"}, fst: {era: 1, y: 1917}},
         {ty: "D", st: {mon: 10, d: 12}, inh: "WArthritis Day"},
         {ty: "D", st: {mon: 10, d: 12}, ttls: {"en":"Cookbook Launch Day"}, urls: {"en":"https://www.checkiday.com/ab4e1192606b40c7f3e77153bd5c0252/cookbook-launch-day"}, mog: "📖"},
         {ty: "D", st: {mon: 10, d: 12}, ttls: {"en":"World Algae Day"}, urls: {"en":"https://www.internationaldays.co/event/world-algae-day/r/rec4UgQx5vS6vhUzY"}, fst: {era: 1, y: 2025}},

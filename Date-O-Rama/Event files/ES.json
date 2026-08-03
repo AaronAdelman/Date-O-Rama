@@ -76,7 +76,7 @@
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
         {ttls: {"en":"Festival of the Vaquillas"}, ty: "D", st: {mon: 7, d: 13}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 3, d: 19}, inh: "Engineer’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 4, d: 15}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},

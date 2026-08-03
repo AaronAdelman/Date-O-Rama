@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 9, d: 28}, inh: "Statehood Day", fst: {era: 1, y: 2000}, urls: {"en":"https://www.daysoftheyear.com/days/czech-statehood-day/"}, nts: {"en":"Saint Wenceslas Day"}},
         {ty: "D", st: {mon: 10, d: 28}, ttls: {"en":"Independent Czechoslovak State Day","cs":"Den vzniku samostatného československého státu"}, inh: "Independence Day", fst: {era: 1, y: 1918}, urls: {"en":"https://www.daysoftheyear.com/days/czech-independence-day/"}, nts: {"en":"Founding Day\nCzech Founding Day"}},
         {ty: "D", st: {mon: 11, d: 17}, inh: "Struggle for Freedom and Democracy Day", urls: {"en":"https://www.daysoftheyear.com/days/struggle-for-freedom-and-democracy-day/"}, fst: {era: 1, y: 1989}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         

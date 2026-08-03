@@ -375,7 +375,7 @@
         ]},
         
         {ty: "D", st: {mon: 3, d: 14}, inh: "Pi Day", fst: {era: 1, y: 1998}},
-        {ty: "D", st: {mon: 6, d: 2}, inh: "Yell “Fudge” at the Cobras in North America Day", fst: {era: 1, y: 1996}},
+        {ty: "D", st: {mon: 6, d: 2}, inh: "YellFudge@theCobrasInNAmericaD", fst: {era: 1, y: 1996}},
         {ty: "D", st: {mon: 6, d: 18}, inh: "NSplurgeD", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 7, d: 22}, inh: "Pi Approximation Day", fst: {era: 1, y: 2000}},
     ]

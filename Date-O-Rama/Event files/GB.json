@@ -107,7 +107,7 @@
         {ty: "D", st: {mon: 12, d: 31}, inh: "Nos Galan Road Races", fst: {era: 1, y: 1958}, last: {era: 1, y: 1972}},
         {ty: "D", st: {mon: 12, d: 31}, inh: "Nos Galan Road Races", fst: {era: 1, y: 1984}},
         {ty: "D", st: {mon: 12, d: 31}, ttls: {"af":"Hogmanay","arz":"هوجماناى","az":"Hoqmanay","da":"Hogmanay","de":"Hogmanay","en":"Hogmanay","es":"Hogmanay","fr":"Hogmanay","gl":"Hogmanay","hr":"Hogmanay","hy":"Հոգմանայ","id":"Hogmanay","it":"Hogmanay","ja":"ホグマネイ","ko":"호그머네이","lt":"Hogmanay","ms":"Hogmanay","nb":"Hogmanay","nl":"Hogmanay","ru":"Хогманай","sco":"Hogmanay","sr":"Хогманај","sv":"Hogmanay","th":"ฮอกมาเนย์","tr":"Hogmanay","uk":"Гоґманай","zh":"霍格莫內"}, urls: {"en":"https://www.daysoftheyear.com/days/hogmanay/"}},
-        {ty: "D", st: {mon: 12, d: 6, thruD: 12, wkd: [5]}, inh: "Xmas Jumper Day", fst: {era: 1, y: 2012}},
+        {ty: "D", st: {mon: 12, d: 6, thruD: 12, wkd: [5]}, inh: "XmasJumperD", fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 12, wkd: [7], nth: 1}, ttls: {"en":"Tree Dressing Day"}, urls: {"en":"https://www.commonground.org.uk/tree-dressing-day/"}, fst: {era: 1, y: 1990}, mog: "🎄", nts: {"en":"Created by Common Ground UK"}},
         {ty: "D", st: {mon: 2, d: 10, thruD: 16, wkd: [7]}, ttls: {"en":"Support an Independent Pub Day"}, urls: {"en":"https://www.daysoftheyear.com/days/support-an-independent-pub-day/"}, fst: {era: 1, y: 2024}, mog: "🍺", nts: {"en":"Created by Alistair Von Lion and CityStack"}},
         {ty: "D", st: {mon: 2, d: 10}, ttls: {"cy":"Dydd Miwsig Cymru","en":"Welsh Language Music Day","smn":"Kymrikielâ muusikpeivi"}, urls: {"en":"https://www.gov.wales/welsh-language-music-day"}, fst: {era: 1, y: 2013}, mog: "🎼", nts: {"en":"Created by Huw Stephens"}},

@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Dormition of the Mother of God"},
         {ty: "D", st: {mon: 10, d: 1}, inh: "Independence Day", urls: {"en":"https://nationaltoday.com/cyprus-independence-day/"}, fst: {era: 1, y: 1979}},
         {ty: "D", st: {mon: 10, d: 28}, inh: "Ochi Day", fst: {era: 1, y: 1942}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas", urls: {"en":"https://nationaltoday.com/orthodox-christmas-day/"}},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
 

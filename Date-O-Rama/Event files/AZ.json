@@ -44,7 +44,7 @@
         {ty: "D", st: {mon: 2, d: 14}, inh: "AirForceD"},
         
         {ty: "D", st: {mon: 1, d: 30}, ttls: {"en":"Day of Azerbaijani Customs"}},
-        {ty: "D", st: {mon: 2, d: 2}, inh: "Youth Day"},
+        {ty: "D", st: {mon: 2, d: 2}, inh: "YouthD"},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"en":"Day of Revenue Service"}},
         {ty: "D", st: {mon: 2, d: 26}, ttls: {"en":"Khojaly Massacre Commemoration Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Khojaly_massacre#Commemoration"}},
         {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Day of Physical Culture and Sport"}},

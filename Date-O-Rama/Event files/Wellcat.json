@@ -55,7 +55,7 @@
             {ty: "D", st: {mon: 5, d: 18}, ttls: {"en":"Send An Electronic Greeting Card Day"}},
             {ty: "D", st: {mon: 5, d: 21}, ttls: {"en":"I Need a Patch for That Day"}},
             {ty: "D", st: {mon: 5, d: 28}, ttls: {"en":"The Slugs Return From Capistrano Day"}, fst: {era: 1, y: 2011}},
-            {ty: "D", st: {mon: 6, d: 2}, inh: "Yell “Fudge” at the Cobras in North America Day"},
+            {ty: "D", st: {mon: 6, d: 2}, inh: "YellFudge@theCobrasInNAmericaD"},
             {ty: "D", st: {mon: 6, d: 14}, ttls: {"en":"Family History Day"}},
             {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Stupid Guy Thing Day"}, nts: {"en":"National Stupid Guy Thing Day"}},
             {ty: "D", st: {mon: 6, d: 23}, ttls: {"en":"Let It Go Day","he":"יום השחרור"}, nts: {"en":"National Let It Go Day"}},

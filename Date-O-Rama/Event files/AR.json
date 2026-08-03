@@ -40,12 +40,12 @@
         {ty: "D", st: {mon: 10, d: 13, era: 1, y: 2023}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {ty: "D", st: {mon: 10, d: 12, era: 1, y: 2024}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {ty: "D", st: {mon: 10, wkd: [1], nth: 3}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 10, d: 10, wkd: [2, 6]}, inh: "D of Respect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 10, d: 10, wkd: [2, 6]}, inh: "DOfRespect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 10, d: 12}, ttls: {"en":"Day of Respect for Cultural Diversity","es":"Día del Respeto a la Diversidad Cultural"}, urls: {"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}, fst: {era: 1, y: 2010}, nts: {"es":"Día de la Raza"}},
-        {ty: "D", st: {mon: 10, d: 13, wkd: [2]}, inh: "D of Respect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
-        {ty: "D", st: {mon: 10, d: 13, wkd: [6]}, inh: "D of Respect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
-        {ty: "D", st: {mon: 10, d: 16, wkd: [2]}, inh: "D of Respect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
-        {ty: "D", st: {mon: 10, d: 7, wkd: [6]}, inh: "D of Respect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 10, d: 13, wkd: [2]}, inh: "DOfRespect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 10, d: 13, wkd: [6]}, inh: "DOfRespect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 10, d: 16, wkd: [2]}, inh: "DOfRespect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 10, d: 7, wkd: [6]}, inh: "DOfRespect for Cultural Diversity (in lieu)", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 11, d: 20}, ttls: {"en":"National Sovereignty Day","es":"Día de la Soberanía Nacional","id":"Hari Kedaulatan Nasional","pl":"Dzień Suwerenności Narodowej","pt":"Dia da Soberania Nacional"}, urls: {"en":"https://nationaltoday.com/national-sovereignty-day/"}, nts: {"en":"Day of National Sovereignty"}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 12, d: 8}, inh: "Immaculate Conception"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
@@ -74,7 +74,7 @@
         {ty: "D", st: {mon: 7, d: 20}, inh: "Friends Day", fst: {era: 1, y: 1979}},
   ],
     tpls: {
-        "D of Respect for Cultural Diversity (in lieu)": {ty: "D", st: {mon: 10, d: 7, wkd: [6]}, ttls: {"en":"Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
+        "DOfRespect for Cultural Diversity (in lieu)": {ty: "D", st: {mon: 10, d: 7, wkd: [6]}, ttls: {"en":"Day of Respect for Cultural Diversity (in lieu)"}, urls: {"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
         "Commemoration of General Don Martín Miguel de Güemes": {ty: "D", st: {mon: 6, d: 17}, ttls: {"en":"Commemoration of General Don Martín Miguel de Güemes","es":"Paso a la Inmortalidad del General Martín Miguel de Güemes"}, urls: {"en":"https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, inh: "*DA*", nts: {"en":"Martin Miguel de Guemes Day"}},
     }
 }

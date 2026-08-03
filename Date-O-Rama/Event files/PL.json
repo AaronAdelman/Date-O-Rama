@@ -115,7 +115,7 @@
         {ty: "D", st: {mon: 11, d: 30}, inh: "St Andrew"},
         {ty: "D", st: {mon: 12, d: 4}, ttls: {"en":"Miners’ Day","he":"יום הכורים","pl":"Barbórka"}},
         {ty: "D", st: {mon: 12, d: 6}, inh: "St Nicholas"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
         
         {ty: "D", st: {mon: 3, d: 19}, ttls: {"en":"Kashubian Unity Day"}, fst: {era: 1, y: 2005}, urls: {"en":"https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},

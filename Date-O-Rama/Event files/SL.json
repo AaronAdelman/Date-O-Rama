@@ -18,7 +18,7 @@
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
-        {ty: "D", st: {mon: 12, d: 27, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/sierra-leone/christmas-holiday"}, inh: "Xmas Holiday"},
+        {ty: "D", st: {mon: 12, d: 27, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/sierra-leone/christmas-holiday"}, inh: "XmasHol"},
     
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
     ]

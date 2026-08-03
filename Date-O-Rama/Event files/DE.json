@@ -31,8 +31,8 @@
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
 
         {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Augsburg Peace Festival","de":"Augsburger Friedensfest"}, mog: "☮️"},
-        {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, inh: "D of Mourning", urls: {"en":"https://nationaltoday.com/day-of-mourning/"}, nts: {"en":"Memorial Day"}, fst: {era: 1, y: 1922}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, inh: "DOfMourning", urls: {"en":"https://nationaltoday.com/day-of-mourning/"}, nts: {"en":"Memorial Day"}, fst: {era: 1, y: 1922}},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},

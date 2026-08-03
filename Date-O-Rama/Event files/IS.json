@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 6, d: 17}, inh: "ND", urls: {"en":"https://www.daysoftheyear.com/days/icelandic-national-day/"}, fst: {era: 1, y: 1944}, nts: {"en":"Independence Day"}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, ttls: {"en":"Commerce Day","is":"Frídagur verslunarmanna"}, fst: {era: 1, y: 1931}, urls: {"en":"https://nationaltoday.com/commerce-day/"}, mog: "💶"},
         {ty: "D", st: {mon: 11, wkd: [1], nth: 2}, inh: "Father’s Day", urls: {"en":"https://www.officeholidays.com/holidays/iceland/fathers-day"}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/iceland/christmas-holiday"}, inh: "Boxing Day"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
@@ -44,7 +44,7 @@
         {ty: "D", st: {mon: 4, d: 10}, inh: "Engineer’s Day"},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Book Flood", fst: {era: 1, y: 1944}},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasBookFlood", fst: {era: 1, y: 1944}},
         
         {ty: "D", st: {mon: 1, d: 20, thruD: 26, wkd: [6]}, inh: "Thorrablot", fst: {era: 1, y: 1873}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 1}, ttls: {"en":"Seamen’s Day","is":"Sjómannadagurinn"}, urls: {"en":"https://www.daysoftheyear.com/days/seamens-day/"}, nts: {"en":"Fishermen’s Day\nCreated by the Seamen’s Unions"}, fst: {era: 1, y: 1938}, mog: "🎣"},

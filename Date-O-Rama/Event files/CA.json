@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day", ttls: {"en":"National Child Day","he":"יום הילד הלאומי"}, urls: {"en":"https://www.nationalchildday.ca/"}, fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 2}, inh: "Commonwealth Day", fst: {era: 1, y: 1977}, urls: {"en":"https://www.canada.ca/en/canadian-heritage/services/important-commemorative-days/commonwealth-day.html"}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 3}, inh: "Discovery Day", locs: {"en":"Yukon"}, urls: {"en":"https://nationaltoday.com/discovery-day/"}, fst: {era: 1, y: 1911}, nts: {"en":"Klondike Gold Discovery Day"}},
         {ty: "D", st: {mon: 4, d: 22}, inh: "Earth Day", fst: {era: 1, y: 1970}},

@@ -253,7 +253,7 @@
         {ttls: {"en":"Feast of Saint Peter Canisius","he":"החג של פטרוס קניזיוס הקדוש"}, ty: "D", st: {mon: 12, d: 21}},
         {ttls: {"en":"Feast of Saint John of Kanty"}, ty: "D", st: {mon: 12, d: 23}},
 
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
         {ty: "D", st: {mon: 12, d: 27}, inh: "St John the Apostle"},

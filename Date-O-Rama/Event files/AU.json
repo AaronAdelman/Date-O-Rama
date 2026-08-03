@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 10, wkd: [4], nth: 4}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 8, d: 4}, ttls: {"en":"National Aboriginal and Torres Strait Islander Children’s Day"}, inh: "Children’s Day", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 2}, inh: "Commonwealth Day", fst: {era: 1, y: 1958}},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},

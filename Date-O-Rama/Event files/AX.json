@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 6, d: 20, thruD: 26, wkd: [7]}, inh: "Midsummer"},
         {ty: "D", st: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 6}, inh: "Independence Day", fst: {era: 1, y: 1917}, urls: {"en":"https://nationaltoday.com/independence-day-finland/"}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
     ]

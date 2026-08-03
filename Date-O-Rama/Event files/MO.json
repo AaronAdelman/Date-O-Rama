@@ -30,7 +30,7 @@
         {ty: "D", st: {mon: 12, d: 21, thruD: 22, wkd: [2]}, ttls: {"en":"Macau Special Administrative Region Establishment Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/macau/macao-sare-day"}, fst: {era: 1, y: 1999}},
         {ty: "D", st: {misc: "Dec"}, inh: "Winter Solstice", ttls: {"as":"ডংজি উৎসৱ","cdo":"Dĕ̤ng-cáik","en":"Dongzhi Festival","fr":"Solstice d’hiver (fête chinoise)","hak":"Tûng-chiet","hu":"Tungcse-fesztivál","id":"Dongzhi","it":"Festa di Dongzhi","lt":"Dongdži festivalis","nan":"Tang-cheh","nl":"Winterfeest","ru":"Дунчжи","sv":"Dongjinal","th":"เทศกาลตังโจ่ย","ug":"قىشلىق كۈن توختاش كۈنى","uk":"Дунчжі","pt":"Solstício de Inverno","zh":"冬至"}, urls: {"en":"https://www.officeholidays.com/holidays/macau/dongzhi"}},
         {ty: "D", st: {mon: 12, d: 23, wkd: [2, 3]}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/macau/dongzhi"}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26, wkd: [2, 3]}, ttls: {"en":"Christmas Eve (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/macau/christmas-eve"}},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},

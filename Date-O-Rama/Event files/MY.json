@@ -55,7 +55,7 @@
         {ty: "nD", st: {mon: 9, d: 29}, end: {mon: 9, d: 30}, inh: "BD of the Sultan of Kelantan", fst: {era: 1, y: 2022}, last: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 12, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, ttls: {"en":"Birthday of the Sultan of Selangor","ms":"Hari Keputeraan Sultan Selangor"}, inh: "*BD*"},
         {ty: "D", st: {mon: 12, d: 12, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/selangor/birthday-of-the-sultan-of-selangor"}, ttls: {"en":"Birthday of the Sultan of Selangor (in lieu)"}, inh: "*BD*"},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},

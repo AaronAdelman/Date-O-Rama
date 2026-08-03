@@ -270,7 +270,7 @@
         {ty: "D", st: {mon: 10, d: 21}, urls: {"en":"https://nationaltoday.com/national-archives-day/"}, ttls: {"en":"National Archives Day"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 11, d: 11}, urls: {"en":"https://nationaltoday.com/puerto-princesa-underground-river-day/"}, ttls: {"en":"Puerto Princesa Underground River Day"}},
         {ty: "nD", st: {mon: 11, d: 25}, end: {mon: 12, d: 12}, urls: {"en":"https://nationaltoday.com/18-day-campaign-to-end-vaw/"}, ttls: {"en":"18-Day Campaign to End Violence against Women"}, fst: {era: 1, y: 2002}},
-        {ty: "D", st: {mon: 12, d: 24}, inh: "Xmas Eve"},
+        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         
         {ty: "M", st: {mon: 5}, ttls: {"en":"Flores de Mayo"}},
         {ty: "M", st: {mon: 8}, ttls: {"en":"Buwan ng Wika"}, nts: {"en":"Language Month"}},
