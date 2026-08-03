@@ -235,51 +235,61 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
     override func solarTimeComponents(now: Date, locationData: ASALocation, dateBoundary: Date?) -> (hours: Double, daytime: Bool, valid: Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
-        guard let dateBoundary = dateBoundary else {
+        guard let sunriseBoundary = dateBoundary else {
             return (hours: -1.0, daytime: false, valid: false)
         }
 
-        var hours: Double
-        var daytime: Bool
         let NUMBER_OF_HOURS = 12.0
 
-        // For sunrise-transition calendars:
-        // - If now >= dateBoundary (sunrise), we are in daytime until sunset; next night starts at sunset.
-        // - Otherwise, we are in previous nighttime (from previous sunset to sunrise).
-        if dateBoundary <= now {
-            // Daytime: from sunrise (dateBoundary) to sunset of the same civil date
-            let events = now.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
-            guard let sunset = events[self.midPointTransition] else {
-                return (hours: -1.0, daytime: false, valid: false)
-            }
-            // If sunset is before the sunrise boundary (can happen with wrong-day lookup), jigger by subtracting a day
-            var effectiveSunset = sunset
-            if effectiveSunset <= dateBoundary {
-                let jiggeredNow = now - Date.SECONDS_PER_DAY
-                let jiggeredEvents = jiggeredNow.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
-                guard let jiggeredSunset = jiggeredEvents[self.midPointTransition] else {
-                    return (hours: -1.0, daytime: false, valid: false)
-                }
-                effectiveSunset = jiggeredSunset
-            }
-            // Compute fractional hours between sunrise and sunset
-            hours = now.fractionalHours(startDate: dateBoundary, endDate: effectiveSunset, numberOfHoursPerDay: NUMBER_OF_HOURS)
-            daytime = true
-        } else {
-            // Previous nighttime: from previous sunset to sunrise (dateBoundary)
-            // Find previous day's sunset
-            let previousDate = now.noon(timeZone: timeZone).oneDayBefore
-            let prevEvents = previousDate.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)
-            guard let previousSunset = prevEvents[self.midPointTransition] else {
-                return (hours: -1.0, daytime: false, valid: false)
-            }
-            assert(dateBoundary > previousSunset)
-            hours = now.fractionalHours(startDate: previousSunset, endDate: dateBoundary, numberOfHoursPerDay: NUMBER_OF_HOURS)
-            daytime = false
+        func sunset(on reference: Date) -> Date? {
+            reference.solarEvents(location: location, events: [self.midPointTransition], timeZone: timeZone)[self.midPointTransition]
+        }
+        func sunrise(on reference: Date) -> Date? {
+            reference.solarEvents(location: location, events: [.sunrise], timeZone: timeZone)[.sunrise]
         }
 
-        assert(!(hours == 12.0 && daytime == true))
-        return (hours: hours, daytime: daytime, valid: true)
+        // 1) Before sunrise -> Nighttime (previous sunset -> this sunrise)
+        if now < sunriseBoundary {
+            let prevDate = now.noon(timeZone: timeZone).oneDayBefore
+            if let prevSunset = sunset(on: prevDate) {
+                let hours = now.fractionalHours(startDate: prevSunset, endDate: sunriseBoundary, numberOfHoursPerDay: NUMBER_OF_HOURS)
+                return (hours: hours, daytime: false, valid: true)
+            } else {
+                return (hours: -1.0, daytime: false, valid: false)
+            }
+        }
+
+        // Compute today's sunset relative to the sunriseBoundary day
+        // We look up sunset using `now`; if it occurs before today's sunrise, re-query using next day.
+        var todaysSunset: Date?
+        if let s = sunset(on: now), s > sunriseBoundary {
+            todaysSunset = s
+        } else {
+            // If sunset lookup mismatched the day, try using the next civil date
+            let nextRef = now.noon(timeZone: timeZone).oneDayAfter
+            if let s2 = sunset(on: nextRef), s2 > sunriseBoundary {
+                todaysSunset = s2
+            }
+        }
+
+        // 2) After sunset -> Nighttime (sunset -> next sunrise)
+        if let s = todaysSunset, now >= s {
+            let nextDate = now.noon(timeZone: timeZone).oneDayAfter
+            if let nextSunrise = sunrise(on: nextDate) {
+                let hours = now.fractionalHours(startDate: s, endDate: nextSunrise, numberOfHoursPerDay: NUMBER_OF_HOURS)
+                return (hours: hours, daytime: false, valid: true)
+            } else {
+                return (hours: -1.0, daytime: false, valid: false)
+            }
+        }
+
+        // 3) Otherwise, daytime (sunrise -> sunset)
+        if let s = todaysSunset {
+            let hours = now.fractionalHours(startDate: sunriseBoundary, endDate: s, numberOfHoursPerDay: NUMBER_OF_HOURS)
+            return (hours: hours, daytime: true, valid: true)
+        }
+
+        return (hours: -1.0, daytime: false, valid: false)
     }
 
     
@@ -338,3 +348,4 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         return start.addingTimeInterval(24 * 3600)
     }
 }
+
