@@ -78,7 +78,7 @@
         {ttls: {"he":"ראש חודש אדר","en":"Ro’sh Ḥodhesh ’Adhar"}, ty: "nD", st: {mon: 5, d: 30, yLens: [353, 354, 355]}, end: {mon: 7, d: 1}, inh: "*ראש חודש*"},
         {ttls: {"he":"ראש חודש אדר א׳","en":"Ro’sh Ḥodhesh ’Adhar Ri’shon"}, ty: "nD", st: {mon: 5, d: 30, yLens: [383, 384, 385]}, end: {mon: 6, d: 1}, inh: "*ראש חודש*"},
         {ttls: {"he":"ראש חודש אדר ב׳","en":"Ro’sh Ḥodhesh ’Adhar Sheni"}, ty: "nD", st: {mon: 6, d: 30, yLens: [383, 384, 385]}, end: {mon: 7, d: 1}, inh: "*ראש חודש*"},
-        {ty: "D", st: {mon: 7, d: 7}, inh: "יום־שנה של משה רבנו", fst: {era: 0, y: 2489}},
+        {ttls: {"he":"יום־שנה של משה רבנו","en":"Yohrtsayt of Mosheh Rabbenu"}, ty: "D", st: {mon: 7, d: 7}, inh: "*DA*", fst: {era: 0, y: 2489}},
         {ttls: {"he":"פורים קטן","en":"Purim Qaṭan"}, ty: "D", st: {mon: 6, d: 14}},
         {ttls: {"he":"שושן פורים קטן","en":"Shushan Purim Qaṭan"}, ty: "D", st: {mon: 6, d: 15}},
         {inh: "תענית אסתר", ty: "D", st: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}},
