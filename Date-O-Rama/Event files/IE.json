@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "May Day", fst: {era: 1, y: 1994}, nts: {"en":"May Bank Holiday"}},
         {ty: "D", st: {mon: 6, wkd: [2], nth: 1}, ttls: {"en":"June Bank Holiday","ga":"Lá Saoire i mí an Mheithimh"}, urls: {"en":"https://nationaltoday.com/june-bank-holiday/"}, inh: "Bank Holiday", nts: {"en":"June Holiday"}, fst: {era: 1, y: 1973}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
-        {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, inh: "Aug Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/ireland/august-bank-holiday-in-ireland"}, nts: {"en":"August Holiday"}},
+        {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, inh: "AugBankHol", urls: {"en":"https://www.officeholidays.com/holidays/ireland/august-bank-holiday-in-ireland"}, nts: {"en":"August Holiday"}},
         {ty: "D", st: {mon: 10, wkd: [2], nth: -1}, ttls: {"en":"October Bank Holiday","ga":"Lá Saoire i mí Dheireadh Fómhair"}, urls: {"en":"https://nationaltoday.com/october-bank-holiday/"}, fst: {era: 1, y: 1977}, inh: "Bank Holiday", nts: {"en":"October Holiday"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "StStephen"},

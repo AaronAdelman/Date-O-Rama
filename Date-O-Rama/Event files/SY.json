@@ -27,6 +27,6 @@
         {ty: "D", st: {mon: 6, d: 21}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 12, d: 17}, inh: "StBarbara"},
         {inh: "Children’s Day", ty: "D", st: {mon: 6, d: 25}},
-        {ty: "D", st: {mon: 4, d: 1}, inh: "Assyrian NY"},
+        {ty: "D", st: {mon: 4, d: 1}, inh: "AssyrianNY"},
     ]
 }

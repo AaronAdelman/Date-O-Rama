@@ -7,7 +7,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Macau"},
     evts: [
         {ty: "D", st: {mon: 12, d: -1}, urls: {"en":"https://www.officeholidays.com/holidays/macau/chinese-new-year"}, inh: "LunarNYE"},
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inh: "Chinese NY"},
+        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 3}, inh: "ChineseNY"},
         {ty: "D", st: {mon: 1, d: 4, wkd: [2, 3, 4]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/chinese-new-year"}, inh: "LunarNYHol"},
         {ty: "D", st: {mon: 1, d: 5, wkd: [3, 4]}, urls: {"en":"https://www.officeholidays.com/holidays/macau/chinese-new-year"}, inh: "LunarNYHol"},
         {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"},
