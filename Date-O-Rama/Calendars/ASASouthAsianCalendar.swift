@@ -38,6 +38,10 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         self.dateFormatter.apply(dateFormat: dateFormat)
         
         let dateString = self.dateFormatter.string(from: fixedNow)
+        if dateFormat == .full {
+            debugPrint(#file, #function, dateComponents, dateString)
+        }
+        
         return dateString
     } // func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat, dateComponents: ASADateComponents) -> String
 
@@ -371,4 +375,3 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         return start.addingTimeInterval(24 * 3600)
     }
 }
-
