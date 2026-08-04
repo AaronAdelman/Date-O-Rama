@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Engineer’s Day"},
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 1}},
-        {ty: "D", st: {mon: 5, d: 22}, inh: "NHeroes’D", fst: {era: 1, y: 1819}},
+        {ty: "D", st: {mon: 5, d: 22}, inh: "NHeroesD", fst: {era: 1, y: 1819}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
         

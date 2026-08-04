@@ -29,7 +29,7 @@
 
         {ty: "D", st: {mon: 5, d: 4}, inh: "YouthD"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "IChildren’s Day"},
-        {ty: "D", st: {mon: 8, d: 1}, inh: "Army Day", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, ttls: {"en":"People’s Liberation Army Day","he":"יום צבא השחרור של העם","zh_CN":"建军节"}},
+        {ty: "D", st: {mon: 8, d: 1}, inh: "ArmyD", fst: {era: 1, y: 1933}, urls: {"en":"https://en.wikipedia.org/wiki/PLA_Day"}, ttls: {"en":"People’s Liberation Army Day","he":"יום צבא השחרור של העם","zh_CN":"建军节"}},
 
         {ty: "D", st: {mon: 3, d: 12}, inh: "ArborD"},
         {ttls: {"en":"C.P.C. Founding Day","zh_CN":"建党节"}, ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/cpc-founding-day/"}, fst: {era: 1, y: 1921}, nts: {"en":"Chinese Communist Party Founding Day"}},

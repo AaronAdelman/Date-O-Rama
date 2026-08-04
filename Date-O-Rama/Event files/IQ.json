@@ -10,7 +10,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 5, era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/iraq/iraq-public-holiday"}, inh: "Public Holiday"},
-        {ty: "D", st: {mon: 1, d: 6}, inh: "Army Day", fst: {era: 1, y: 1921}},
+        {ty: "D", st: {mon: 1, d: 6}, inh: "ArmyD", fst: {era: 1, y: 1921}},
         {ty: "D", st: {mon: 3, d: 6}, ttls: {"en":"National Day of Tolerance and Coexistence"}, fst: {era: 1, y: 2021}, urls: {"en":"https://nationaltoday.com/iraq-day-of-tolerance-and-coexistence/"}},
         {ty: "D", st: {misc: "Mar"}, inh: "Nowruz"},
         {ty: "D", st: {mon: 3, d: 27, era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/iraq/iraq-regional/iraq-public-holiday"}, inh: "Public Holiday"},

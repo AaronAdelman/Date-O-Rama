@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 6, d: 23}, inh: "Sovereignty Day"},
         {inh: "Constitution Day", ty: "D", st: {mon: 7, d: 29}},
         {inh: "Liberation Day", ty: "D", st: {mon: 8, d: 24}, fst: {era: 1, y: 1944}},
-        {ty: "D", st: {mon: 9, d: 3}, inh: "Army Day", ttls: {"en":"National Army Day"}},
+        {ty: "D", st: {mon: 9, d: 3}, inh: "ArmyD", ttls: {"en":"National Army Day"}},
         {ty: "D", st: {mon: 10, d: 8}, inh: "NWineD"},
         {inh: "Police Day", ty: "D", st: {mon: 12, d: 18}},
 

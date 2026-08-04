@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "May Day", urls: {"en":"https://www.officeholidays.com/holidays/finland/vappu"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/finland/mothers-day"}},
-        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {inh: "Midsummer Eve", ty: "D", st: {mon: 6, d: 19, thruD: 25, wkd: [6]}, urls: {"en":"https://www.officeholidays.com/holidays/finland/finland-midsummer-day"}},
         {inh: "Midsummer", ty: "D", st: {mon: 6, d: 20, thruD: 26, wkd: [7]}, urls: {"en":"https://www.officeholidays.com/holidays/finland/finland-midsummer-day"}},

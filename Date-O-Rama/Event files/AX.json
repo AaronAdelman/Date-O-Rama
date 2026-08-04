@@ -12,7 +12,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "May Day"},
-        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {mon: 6, d: 9}, ttls: {"da":"Ålands selvstyredag","en":"Åland’s Autonomy Day","es":"Día de la Autonomía de Åland","fi":"Ahvenanmaan itsehallintopäivä","fr":"Jour de l’autonomie d’Åland","nl":"Zelfbestuursdag van Åland","sv":"Ålands självstyrelsedag","tr":"Åland Özerklik Günü"}, urls: {"en":"https://en.wikipedia.org/wiki/%C3%85land%2527s_Autonomy_Day"}},
         {ty: "D", st: {mon: 6, d: 19, thruD: 25, wkd: [6]}, inh: "Midsummer Eve"},

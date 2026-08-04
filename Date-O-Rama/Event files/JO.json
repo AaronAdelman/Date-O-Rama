@@ -25,6 +25,6 @@
         
         {ty: "D", st: {mon: 6, d: 21}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 12, d: 17}, inh: "St Barbara"},
+        {ty: "D", st: {mon: 12, d: 17}, inh: "StBarbara"},
     ]
 }

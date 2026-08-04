@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", fst: {era: 1, y: 1953}},
-        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension Day"},
+        {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {misc: "E", offsetD: 40}, ttls: {"en":"Ascension Day (in lieu)"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 6, d: 1}, ttls: {"en":"Pancasila Day","id":"Hari Lahir Pancasila"}, fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 6, d: 2, era: 1, y: 2023}, ttls: {"en":"Waisak Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/indonesia/wesak-day"}},
@@ -83,7 +83,7 @@
         {ty: "D", st: {mon: 11, d: 25}, inh: "Teacher’s Day", nts: {"en":"Anniversary of the Teachers’ Union of the Republic of Indonesia","id":"Hari Ulang Tahun Persatuan Guru Republik Indonesia"}, fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 11, d: 29}, ttls: {"en":"Anniversary of the Employees’ Corps of the Republic of Indonesia","id":"Hari Ulang Tahun Korps Pegawai Republik Indonesia "}, fst: {era: 1, y: 1971}},
         {ty: "D", st: {mon: 12, d: 13}, ttls: {"en":"Nusantara Day","id":"Hari Nusantara"}, fst: {era: 1, y: 2001}},
-        {ty: "D", st: {mon: 12, d: 15}, inh: "Army Day", fst: {era: 1, y: 1945}},
+        {ty: "D", st: {mon: 12, d: 15}, inh: "ArmyD", fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 12, d: 22}, inh: "Mother’s Day"},
 
         {ty: "nD", st: {mon: 6, d: 1}, end: {mon: 6, d: 2}, inh: "Gawai Dayak"},

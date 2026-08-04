@@ -9,8 +9,8 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/cayman-islands/international-new-years-day"}, inh: "NYD (in lieu)"},
-        {inh: "NHeroes’D", ty: "D", st: {mon: 1, wkd: [2], nth: 4}},
-        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
+        {inh: "NHeroesD", ty: "D", st: {mon: 1, wkd: [2], nth: 4}},
+        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

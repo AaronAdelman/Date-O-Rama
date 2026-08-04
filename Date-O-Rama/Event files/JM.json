@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jamaica"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "Ash Wed"},
+        {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
@@ -17,7 +17,7 @@
         {ty: "D", st: {mon: 8, d: 1}, inh: "Emancipation Day"},
         {ty: "D", st: {mon: 8, d: 6}, inh: "Independence Day", fst: {era: 1, y: 1962}, urls: {"en":"https://www.daysoftheyear.com/days/jamaica-independence-day/"}},
         {ty: "D", st: {mon: 8, d: 7, wkd: [2]}, inh: "Independence Day (in lieu)", fst: {era: 1, y: 1962}, urls: {"en":"https://www.daysoftheyear.com/days/jamaica-independence-day/"}},
-        {ty: "D", st: {mon: 10, wkd: [2], nth: 3}, inh: "NHeroes’D", fst: {era: 1, y: 1969}, urls: {"en":"https://nationaltoday.com/national-heroes-day-of-jamaica/"}},
+        {ty: "D", st: {mon: 10, wkd: [2], nth: 3}, inh: "NHeroesD", fst: {era: 1, y: 1969}, urls: {"en":"https://nationaltoday.com/national-heroes-day-of-jamaica/"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},
         

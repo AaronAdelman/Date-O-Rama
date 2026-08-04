@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", fst: {era: 1, y: 1886}},
         {ty: "D", st: {mon: 5, d: 8}, inh: "DOfVictoryOverFascism", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/v-e-day"}, fst: {era: 1, y: 1945}},
-        {ty: "D", st: {mon: 7, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"}, inh: "Sts Cyril and Methodius", fst: {era: 1, y: 863}},
+        {ty: "D", st: {mon: 7, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"}, inh: "StsCyril&Methodius", fst: {era: 1, y: 863}},
         {ty: "D", st: {mon: 8, d: 29}, urls: {"en":"https://nationaltoday.com/national-uprising-day/"}, ttls: {"en":"Slovak National Uprising Day","sk":"Výročie Slovenského národného povstania"}, fst: {era: 1, y: 1944}},
         {ty: "D", st: {mon: 9, d: 1}, ttls: {"en":"Day of the Constitution of the Slovak Republic","sk":"Deň Ústavy Slovenskej republiky"}, inh: "Constitution Day", urls: {"en":"https://nationaltoday.com/slovakia-constitution-day/"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 9, d: 15}, inh: "Our Lady of Sorrows", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/day-of-our-lady-of-sorrows"}},
@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 11, d: 17}, inh: "Struggle for Freedom and Democracy Day", urls: {"en":"https://www.officeholidays.com/holidays/slovakia/struggle-for-freedom-and-democracy-day"}, nts: {"en":"Day of Freedom and Democracy"}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
-        {ty: "D", st: {mon: 12, d: 26}, inh: "St Stephen"},
+        {ty: "D", st: {mon: 12, d: 26}, inh: "StStephen"},
 
         {ttls: {"en":"Anniversary of the Memorandum of the Slovak Nation"}, ty: "D", st: {mon: 6, d: 7}, fst: {era: 1, y: 1861}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-memorandum-of-the-slovak-nation/"}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},

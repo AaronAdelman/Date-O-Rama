@@ -899,7 +899,7 @@
         {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"World Book Night"}, urls: {"en":"https://www.daysoftheyear.com/days/world-book-night/"}, fst: {era: 1, y: 2012}, mog: "📖🕯️", nts: {"en":"Created by Jamie Byng, MD"}},
         {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"World Laboratory Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-laboratory-day/"}, fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"World Table Tennis Day"}, urls: {"en":"https://ittffoundation.org/programmes/tt4all/world-table-tennis-day"}, fst: {era: 1, y: 2015}, nts: {"en":"Created by the International Table Tennis Federation (ITTF)"}},
-        {ty: "D", st: {mon: 4, d: 24}, inh: "Armenian Genocide Remembrance Day", fst: {era: 1, y: 1919}},
+        {ty: "D", st: {mon: 4, d: 24}, inh: "ArmenianGenocideRemembranceD", fst: {era: 1, y: 1919}},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Fashion Revolution Day"}, urls: {"en":"https://nationaldaycalendar.com/fashion-revolution-day-april-24/"}, fst: {era: 1, y: 2014, nts: {"en":"Created by Carry Somers and Orsola de Castro"}}},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Firefly Day"}, urls: {"en":"https://www.daysoftheyear.com/days/firefly-day/"}, fst: {era: 1, y: 2003}},
         {ty: "D", st: {mon: 4, d: 24}, ttls: {"en":"Scream Day"}, mog: "😱", fst: {era: 1, y: 2021}, urls: {"en":"https://www.daysoftheyear.com/days/scream-day/"}},

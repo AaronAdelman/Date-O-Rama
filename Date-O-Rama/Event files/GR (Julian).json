@@ -13,6 +13,6 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
-        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "Whit Mon"},
+        {ty: "D", st: {misc: "E", offsetD: 50}, inh: "WhitMon"},
     ]
 }

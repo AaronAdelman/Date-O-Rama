@@ -30,7 +30,7 @@
         {ty: "D", st: {mon: 11, d: 21}, inh: "ArmedForcesD"},
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
-        {ty: "D", st: {mon: 9, d: 9}, inh: "NGrandparents’D"},
+        {ty: "D", st: {mon: 9, d: 9}, inh: "NGrandparentsD"},
         {ty: "D", st: {mon: 7, d: 16}, ttls: {"en":"Martyr Abu Sayeed Day"}, inh: "Martyrs’ Day", fst: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"}},
         {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, inh: "Bangladesh Parliamentary Polls"},
         {ty: "D", st: {era: 1, y: 2024, mon: 1, d: 7}, inh: "Bangladesh Parliamentary Polls"},

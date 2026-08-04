@@ -45,7 +45,7 @@ struct ASAEventsFile: Codable {
         case calendarColor          = "color"
         case calendarCode           = "cal"
         case otherCalendarCodes     = "othCals"
-        case emoji
+        case emoji                  = "mog"
         case urls
         case eventSpecifications    = "evts"
         case templateSpecifications = "tpls"
