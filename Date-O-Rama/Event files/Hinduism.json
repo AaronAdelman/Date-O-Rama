@@ -12,8 +12,10 @@
 //12   Phālguna or Falgun
 //1    Caitra or Chait or Chaitra
 
+// Tithis in the “dark” half of a month are numbered starting at 1.
 // Tithis in the “bright” half of a month are numbered starting at 16.
-// Purnima = tithi 30 of the month
+// Amavasya (new moon) = tithi 15 of the month
+// Purnima (full moon) = tithi 30 of the month
 
 // TODO:  Events on the Hindu solar calendar:  Vaisakhi, Bhogi, Makar Sankranti
 // TODO:  Events on the Tamil calendar:  Thaipusam/Kavadi
@@ -26,8 +28,8 @@
     cal: "vikram-s",
     color: {name: "red"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 16, durD: 9}, inh: "Navaratri"},
-        {ty: "nD", st: {mon: 7, d: 16, durD: 9}, inh: "Navaratri"},
+        {ty: "nD", st: {mon: 1, d: 16, durD: 9}, ttls: {"en":"Chaitra Navaratri"}, urls: {"en":"https://en.wikipedia.org/wiki/Navaratri"}},
+        {ty: "nD", st: {mon: 7, d: 16, durD: 9}, ttls: {"en":"Sharada Navaratri"}, urls: {"en":"https://en.wikipedia.org/wiki/Navaratri"}},
         {ty: "D", st: {mon: 11, d: 20}, ttls: {"as":"সৰস্বতী পূজা","ban":"Rahina Saraswati","bh":"बसंत पंचिमी","bn":"সরস্বতী পূজা","de":"Vasant Panchami","en":"Vasant Panchami","fa":"واسانت پانچامی","fr":"Vasant Panchami","gu":"વસંતપંચમી","hi":"वसन्त पञ्चमी","hu":"Vasant Panchami","id":"Saraswati (hari raya)","ja":"バサントパンチャミ","kn":"ವಸಂತ ಪಂಚಮಿ","mai":"वसन्त पञ्चमी","ml":"വസന്തപഞ്ചമി","mr":"वसंत पंचमी","ne":"वसन्त पञ्चमी","new":"श्रीपञ्चमी","nl":"Basant pantsjami","nn":"Vasant pantsjami","or":"ସରସ୍ୱତୀ ପୂଜା","pa":"ਬਸੰਤ ਪੰਚਮੀ","pl":"Wasantapańćami","ru":"Васант-панчами","sa":"वसन्तपञ्चमी","sat":"ᱵᱚᱥᱚᱱᱛᱚ ᱯᱚᱧᱪᱚᱢᱤ","ta":"வசந்த பஞ்சமி","te":"వసంత పంచమి","th":"วสันตปัญจมี","uk":"Васант-Панчамі"}, urls: {"en":"https://en.wikipedia.org/wiki/Vasant_Panchami"}, "//":"Shaktism"},
         {ty: "D", st: {mon: 12, d: 13}, ttls: {"as":"মহা শিৱৰাত্ৰি","awa":"महाशिवरात्रि","bh":"शिवराति","bn":"মহা শিবরাত্রি","de":"Shivaratri","dty":"महाशिवरात्री","en":"Maha Shivaratri","es":"Maha Shivaratri","fa":"ماها شیوارتری","fi":"Maha Shivratri","fr":"Mahashivaratri","gu":"શિવરાત્રિ","he":"מהא שיוורטרי","hi":"महाशिवरात्रि","hr":"Maha Shivaratri","id":"Maha Shivaratri","it":"Mahāśivarātri","ja":"マハー・シヴァラートリー","kn":"ಮಹಾ ಶಿವರಾತ್ರಿ","ks":"ہیرت","lt":"Mahašivaratrė","mai":"महाशिवरात्री","mhr":"Махашиваратри","ml":"മഹാ ശിവരാത്രി","mr":"महाशिवरात्री","ms":"Maha Shivaratri","nb":"Shivanatten","ne":"महाशिवरात्रि","new":"महाशिवरात्रि","nl":"Maha Shivaratri","nn":"Mahasjivaratri","or":"ମହା ଶିବରାତ୍ରି","pa":"ਮਹਾਂ ਸ਼ਿਵਰਾਤਰੀ","pl":"Mahaśiwaratri","pnb":"مہاں شوراتری","pt":"Maha Shivaratri","ru":"Махашиваратри","sa":"महाशिवरात्रिः","sat":"ᱢᱟᱦᱟ ᱥᱤᱵᱽᱨᱟᱛᱨᱤ","sd":"مھاشوراتري","si":"මහා ශිවරාත්‍රි උත්සවය","ta":"மகா சிவராத்திரி","tcy":"ಶಿವರಾತ್ರಿ","te":"మహాశివరాత్రి","th":"มหาศิวราตรี","tt":"Махашиваратри","udm":"Махашиваратри","uk":"Маха-Шиваратрі","ur":"مہا شیوراتری","zh":"湿婆节"}, urls: {"en":"https://en.wikipedia.org/wiki/Maha_Shivaratri"}, "//":"Shaivism; someone has a different idea on when is the 14th"},
 
@@ -37,8 +39,5 @@
         {ty: "nD", st: {mon: 12, d: 30}, end: {mon: 1, d: 4}, ttls: {"en":"Vhadlo Shigmo"}, urls: {"en":"https://en.wikipedia.org/wiki/Shigmo"}, "//":"Currently not working"},
         {ty: "D", st: {mon: 1, d: 5}, ttls: {"as":"ৰং পঞ্চমী","bn":"রাঙা পঞ্চমী","en":"Ranga Panchami","gu":"રંગપંચમી","hi":"रंग पंचमी","mr":"रंगपंचमी","pa":"ਰੰਗ ਪੰਚਮੀ"}, urls: {"en":"https://en.wikipedia.org/wiki/Ranga_Panchami"}},
 
-    ],
-    tpls: {
-        "Navaratri": {ty: "nD", st: {mon: 1, d: 16, durD: 9}, ttls: {"as":"নৱৰাত্ৰি","bh":"नवरातर","bn":"নবরাত্রি","de":"Navratri","en":"Navaratri","es":"Navratri","fa":"نوراتری","fi":"Navaratri","fr":"Navratri","gu":"નવરાત્રિ","hi":"नवरात्र","hu":"Navarátri","hy":"Նավարատրի","id":"Navaratri","it":"Navarātri","ja":"ナヴラトリ","kn":"ನವರಾತ್ರಿ","ko":"나바라트리","ks":"نَورات","lt":"Navaratrė","mai":"नवरात्रि","mhr":"Дходха","ml":"നവരാത്രി","mni":"ꯑꯍꯤꯡ ꯃꯥꯄꯟ ꯀꯨꯝꯍꯩ","mr":"शारदीय नवरात्र","ms":"Navarathri","nb":"Navratri","ne":"नौरथा","nl":"Navratri","nn":"Navaratri","or":"ନବରାତ୍ରୀ","pa":"ਨਰਾਤੇ","pl":"Nawaratri","pnb":"نوراتری","pt":"Navaratri","ru":"Наваратри","sa":"नवरात्रोत्सवः","sk":"Navarátri","sr":"Наваратри","sv":"Navratri","ta":"நவராத்திரி நோன்பு","tcy":"ನವರಾತ್ರಿ","te":"నవరాత్రి","th":"นวราตรี","tl":"Navaratri","tr":"Navaratri","tt":"Наваратри","uk":"Наваратрі","ur":"نوراتری"}, "//":"Shaktism"},
-    }
+    ]
 }
