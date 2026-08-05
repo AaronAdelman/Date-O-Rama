@@ -39,5 +39,137 @@
         {ty: "nD", st: {mon: 12, d: 30}, end: {mon: 1, d: 4}, ttls: {"en":"Vhadlo Shigmo"}, urls: {"en":"https://en.wikipedia.org/wiki/Shigmo"}, "//":"Currently not working"},
         {ty: "D", st: {mon: 1, d: 5}, ttls: {"as":"ৰং পঞ্চমী","bn":"রাঙা পঞ্চমী","en":"Ranga Panchami","gu":"રંગપંચમી","hi":"रंग पंचमी","mr":"रंगपंचमी","pa":"ਰੰਗ ਪੰਚਮੀ"}, urls: {"en":"https://en.wikipedia.org/wiki/Ranga_Panchami"}},
 
+        // TODO:  The following events were converted by ChatGPT and need to be checked for correctness!
+        
+        {
+            ty: "nD",
+            st: {mon: 1, d: 1, durD: 9},
+            ttls: {"en": "Vasant Navratri"}
+        },
+        {
+            ty: "D",
+            st: {mon: 1, d: 9},
+            ttls: {"en": "Rama Navami", "alt": "Shri Rama Navami"}
+        },
+        {
+            ty: "D",
+            st: {mon: 1, d: 1},
+            ttls: {
+                "en": "Gudi Padwa, Cheti Chand, Yugadi, Navreh (Chandramana Nava Varsha), Ugadi"
+            }
+        },
+        {
+            ty: "D",
+            st: {mon: 3, d: 6},
+            ttls: {"en": "Sitalsasthi"}
+        },
+        {
+            ty: "D",
+            st: {mon: 3, d: 30},
+            ttls: {"en": "Vat Savitri", "alt": "Vat Amavasya"}
+        },
+        {
+            ty: "nD",
+            st: {mon: 4, d: 2, durD: 4},
+            ttls: {"en": "Raja Parba"}
+        },
+        {
+            ty: "nD",
+            st: {mon: 4, d: 2, durD: 9},
+            ttls: {"en": "Rath Yatra"}
+        },
+        {
+            ty: "D",
+            st: {mon: 4, d: 30},
+            ttls: {"en": "Guru Purnima"}
+        },
+        {ty: "D", st: {mon: 5, d: 30}, ttls: {"en": "Raksha Bandhan"}, urls: {"en":"https://en.wikipedia.org/wiki/Raksha_Bandhan"}, nts: {"en":"Rakhi Purnima"}},
+        {ty: "D", st: {mon: 6, d: 3}, ttls: {"en": "Teejdi"}, nts: {"en":"Kajri Teej"}, urls: {"en":"https://en.wikipedia.org/wiki/Teej"}, "//":"There are other Teejs to implement"},
+        {ty: "D",st: {mon: 6, d: 7}, ttls: {"en": "Shitla Satam"}},
+        {
+            ty: "D",
+            st: {mon: 6, d: 8},
+            ttls: {"en": "Krishna Janmaashtami", "alt": "Krishnashtami"}
+        },
+        {
+            ty: "D",
+            st: {mon: 6, d: 8},
+            ttls: {"en": "Radhashtami"}
+        },
+        {
+            ty: "D",
+            st: {mon: 6, d: 4},
+            ttls: {"en": "Ganesh Chaturthi", "alt": "Vinayaka Chavithi"}
+        },
+        {
+            ty: "D",
+            st: {mon: 6, d: 5},
+            ttls: {"en": "Nuakhai"}
+        },
+        {
+            ty: "nD",
+            st: {mon: 7, d: 1, durD: 9},
+            ttls: {"en": "Navaratri"}
+        },
+        {
+            ty: "nD",
+            st: {mon: 7, d: 1, durD: 10},
+            ttls: {"en": "Durga Puja"}
+        },
+        {
+            ty: "D",
+            st: {mon: 7, d: 10},
+            ttls: {"en": "Vijayadashami"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 12},
+            ttls: {"en": "Govatsa Dwadashi"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 13},
+            ttls: {"en": "Dhanteras", "alt": "Dhanatrayodashi"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 15},
+            ttls: {"en": "Diwali", "alt": "Deepavali"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 2},
+            ttls: {"en": "Bhai Dooj", "alt": "Bhratri Dvitiya"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 4},
+            ttls: {"en": "Karva Chauth", "alt": "Kark Chaturthi", "alt2": "Atla Tadde"}
+        },
+        {
+            ty: "D",
+            st: {mon: 8, d: 30},
+            ttls: {"en": "Kartika Purnima"}
+        },
+        {
+            ty: "D",
+            st: {mon: 9, d: 8},
+            ttls: {"en": "Prathamastami"}
+        },
+        {
+            ty: "nD",
+            st: {mon: 9, d: 1, durD: 6},
+            ttls: {"en": "Champa Sashti"}
+        },
+        {
+            ty: "D",
+            st: {mon: 9, d: 6},
+            ttls: {"en": "Skanda Sashti"}
+        },
+        {
+            ty: "D",
+            st: {mon: 5, d: 5},
+            ttls: {"en": "Naga Panchami"}
+        }
     ]
 }
