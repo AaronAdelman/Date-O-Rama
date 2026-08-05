@@ -13,8 +13,8 @@
 //1    Caitra or Chait or Chaitra
 
 // Tithis in the “dark” half of a month are numbered starting at 1.
-// Tithis in the “bright” half of a month are numbered starting at 16.
 // Amavasya (new moon) = tithi 15 of the month
+// Tithis in the “bright” half of a month are numbered starting at 16.
 // Purnima (full moon) = tithi 30 of the month
 
 // TODO:  Events on the Hindu solar calendar:  Vaisakhi, Bhogi, Makar Sankranti
@@ -28,7 +28,7 @@
     cal: "vikram-s",
     color: {name: "red"},
     evts: [
-        {ty: "nD", st: {mon: 1, d: 16, durD: 9}, ttls: {"en":"Chaitra Navaratri"}, urls: {"en":"https://en.wikipedia.org/wiki/Navaratri"}},
+        {ty: "nD", st: {mon: 1, d: 16, durD: 9}, ttls: {"en":"Chaitra Navaratri"}, urls: {"en":"https://en.wikipedia.org/wiki/Navaratri"}, nts: {"en":"Vasant Navratri"}},
         {ty: "nD", st: {mon: 7, d: 16, durD: 9}, ttls: {"en":"Sharada Navaratri"}, urls: {"en":"https://en.wikipedia.org/wiki/Navaratri"}},
         {ty: "D", st: {mon: 11, d: 20}, ttls: {"as":"সৰস্বতী পূজা","ban":"Rahina Saraswati","bh":"बसंत पंचिमी","bn":"সরস্বতী পূজা","de":"Vasant Panchami","en":"Vasant Panchami","fa":"واسانت پانچامی","fr":"Vasant Panchami","gu":"વસંતપંચમી","hi":"वसन्त पञ्चमी","hu":"Vasant Panchami","id":"Saraswati (hari raya)","ja":"バサントパンチャミ","kn":"ವಸಂತ ಪಂಚಮಿ","mai":"वसन्त पञ्चमी","ml":"വസന്തപഞ്ചമി","mr":"वसंत पंचमी","ne":"वसन्त पञ्चमी","new":"श्रीपञ्चमी","nl":"Basant pantsjami","nn":"Vasant pantsjami","or":"ସରସ୍ୱତୀ ପୂଜା","pa":"ਬਸੰਤ ਪੰਚਮੀ","pl":"Wasantapańćami","ru":"Васант-панчами","sa":"वसन्तपञ्चमी","sat":"ᱵᱚᱥᱚᱱᱛᱚ ᱯᱚᱧᱪᱚᱢᱤ","ta":"வசந்த பஞ்சமி","te":"వసంత పంచమి","th":"วสันตปัญจมี","uk":"Васант-Панчамі"}, urls: {"en":"https://en.wikipedia.org/wiki/Vasant_Panchami"}, "//":"Shaktism"},
         {ty: "D", st: {mon: 12, d: 13}, ttls: {"as":"মহা শিৱৰাত্ৰি","awa":"महाशिवरात्रि","bh":"शिवराति","bn":"মহা শিবরাত্রি","de":"Shivaratri","dty":"महाशिवरात्री","en":"Maha Shivaratri","es":"Maha Shivaratri","fa":"ماها شیوارتری","fi":"Maha Shivratri","fr":"Mahashivaratri","gu":"શિવરાત્રિ","he":"מהא שיוורטרי","hi":"महाशिवरात्रि","hr":"Maha Shivaratri","id":"Maha Shivaratri","it":"Mahāśivarātri","ja":"マハー・シヴァラートリー","kn":"ಮಹಾ ಶಿವರಾತ್ರಿ","ks":"ہیرت","lt":"Mahašivaratrė","mai":"महाशिवरात्री","mhr":"Махашиваратри","ml":"മഹാ ശിവരാത്രി","mr":"महाशिवरात्री","ms":"Maha Shivaratri","nb":"Shivanatten","ne":"महाशिवरात्रि","new":"महाशिवरात्रि","nl":"Maha Shivaratri","nn":"Mahasjivaratri","or":"ମହା ଶିବରାତ୍ରି","pa":"ਮਹਾਂ ਸ਼ਿਵਰਾਤਰੀ","pl":"Mahaśiwaratri","pnb":"مہاں شوراتری","pt":"Maha Shivaratri","ru":"Махашиваратри","sa":"महाशिवरात्रिः","sat":"ᱢᱟᱦᱟ ᱥᱤᱵᱽᱨᱟᱛᱨᱤ","sd":"مھاشوراتري","si":"මහා ශිවරාත්‍රි උත්සවය","ta":"மகா சிவராத்திரி","tcy":"ಶಿವರಾತ್ರಿ","te":"మహాశివరాత్రి","th":"มหาศิวราตรี","tt":"Махашиваратри","udm":"Махашиваратри","uk":"Маха-Шиваратрі","ur":"مہا شیوراتری","zh":"湿婆节"}, urls: {"en":"https://en.wikipedia.org/wiki/Maha_Shivaratri"}, "//":"Shaivism; someone has a different idea on when is the 14th"},
@@ -38,26 +38,14 @@
         {ty: "D", st: {mon: 12, d: 30}, ttls: {"af":"Holi","anp":"होली","ar":"هولي","as":"ফাকুৱা","awa":"फगुवा","az":"Holi","bg":"Холи","bh":"होली","bn":"দোলযাত্রা","ca":"Holi","ckb":"ھۆلی","crh":"Holi","cs":"Hólí","da":"Holi","de":"Holi","dty":"होःरी","el":"Χόλι","en":"Holi","eo":"Holio","es":"Holi","et":"Holi","eu":"Holi","fa":"هولی","fi":"Holi","fr":"Holi","ga":"Féile Holi","gl":"Holi","gom":"Holi","gu":"હોળી","he":"הולי","hi":"होली","hr":"Holi","hu":"Holi","hy":"Հոլի","id":"Holi","io":"Holi","is":"Holi","it":"Holi","ja":"ホーリー祭","ka":"ჰოლი","km":"ហូលី","kn":"ಹೋಳಿ","ko":"홀리","ks":"ہولی","ln":"Holi","lt":"Holi","lv":"Holi","mai":"होली","ml":"ഹോളി","mr":"होळी","ms":"Holi","mzn":"هولی","nb":"Holi","ne":"होली","nl":"Holi Phagwa","nn":"Holi","or":"ହୋଲି","pa":"ਹੋਲੀ","pl":"Holi","ps":"هولي","pt":"Holi","ro":"Holi","ru":"Холи","sa":"होलीपर्व","sat":"ᱦᱳᱞᱤ","sco":"Holi","sd":"هولي","sk":"Holí","sq":"Holi","sr":"Холи","sv":"Holi","ta":"ஹோலி","tcy":"ಹೋಳಿ","te":"హోళీ","th":"โฮลี","tl":"Holi","tr":"Holi","tt":"Һоли","uk":"Холі","ur":"ہولی","uz":"Holi","vi":"Holi","wuu":"侯丽节","zh":"侯丽节"}, urls: {"en":"https://en.wikipedia.org/wiki/Holi"}},
         {ty: "nD", st: {mon: 12, d: 30}, end: {mon: 1, d: 4}, ttls: {"en":"Vhadlo Shigmo"}, urls: {"en":"https://en.wikipedia.org/wiki/Shigmo"}, "//":"Currently not working"},
         {ty: "D", st: {mon: 1, d: 5}, ttls: {"as":"ৰং পঞ্চমী","bn":"রাঙা পঞ্চমী","en":"Ranga Panchami","gu":"રંગપંચમી","hi":"रंग पंचमी","mr":"रंगपंचमी","pa":"ਰੰਗ ਪੰਚਮੀ"}, urls: {"en":"https://en.wikipedia.org/wiki/Ranga_Panchami"}},
-
-        // TODO:  The following events were converted by ChatGPT and need to be checked for correctness!
+        {ty: "D", st: {mon: 1, d: 24}, ttls: {"ar":"راما نافامي","as":"ৰাম নৱমী","awa":"राम नवमी","bcl":"Rama Navami","bh":"रामनउमी","bn":"রাম নবমী","en":"Rama Navami","es":"Rama Navami","fi":"Rama Navami","fr":"Rama Navami","gom":"रामनम","gu":"રામનવમી","hi":"राम नवमी","id":"Rama Navami","it":"Rāmanavamī","kn":"ಶ್ರೀ ರಾಮ ನವಮಿ","mai":"राम नवमी","ml":"രാമനവമി","mr":"रामनवमी","nb":"Ramanavami","ne":"राम नवमी","nn":"Ramanavami","or":"ରାମ ନବମୀ","pa":"ਰਾਮਨੌਮੀ","pl":"Ramanawami","pt":"Rama Navami","ru":"Рамнавами","sa":"रामनवमी","sat":"ᱨᱟᱢ ᱱᱚᱵᱚᱢᱤ","sd":"رام نوامي","ta":"இராம நவமி","te":"శ్రీరామనవమి","tt":"Рамнавами","uk":"Рама Навамі","ur":"رام نومی"}, nts: {"en":"Shri Rama Navami"}, urls: {"en":"https://en.wikipedia.org/wiki/Rama_Navami"}},
+        {ty: "D", st: {mon: 1, d: 15}, ttls: {"as":"গুড়ি পড়ৱা","bn":"গুড়ি পাডবা","en":"Gudi Padwa","gom":"गुडीपाडवो","hi":"गुड़ी पड़वा","hy":"Գուդի պադվա","id":"Gudi Padwa","kn":"ಗುಡಿ ಪಾಡ್ವ","ml":"ഗുഡി പദ്വ","mr":"गुढीपाडवा","pa":"ਗੁੜੀ ਪੜਵਾ","pl":"Gudhi padwa","ru":"Гуди-падва","sat":"ᱜᱩᱰᱤ ᱯᱟᱰᱣᱟ","ta":"குடீ பாடவா"}, urls: {"en":"https://en.wikipedia.org/wiki/Gudi_Padwa"}, nts: {"en":"Marathi New Year\nHindu New Year"}},
+        {ty: "nD", st: {mon: 1, d: 15, durD: 2}, ttls: {"as":"চেটি চান্দ","en":"Cheti Chand","gu":"ચેટીચંડ","hi":"चेटीचंड","kn":"ಚೇಟಿ ಚಂದ್","ml":"ചേതി ചന്ദ്","mr":"चेटीचंड","ru":"Чети Чанд","sd":"چيٽي چنڊ","ta":"சேதி சந்த்","te":"చేతీ చాంద్"}, urls: {"en":"https://en.wikipedia.org/wiki/Cheti_Chand"}, nts: {"en":"Chetri Chandra"}},
+        {ty: "D", st: {mon: 1, d: 15}, ttls: {"as":"নৱৰেহ (কাশ্মিৰী নৱবৰ্ষ)","bn":"নবরেহ","cs":"Navreh","en":"Navreh","ks":"نَورؠہہ","mk":"Кашмирска нова година","pa":"ਨਵਰੇਹ","ta":"நவ்ரே"}, nts: {"en":"Chandramana Nava Varsha\nKashmiri New Year"}, urls: {"en":"https://en.wikipedia.org/wiki/Navreh"}},
+        {ty: "D", st: {mon: 1, d: 15}, ttls: {"as":"উগাদি","bn":"উগাদি","de":"Ugadi","en":"Ugadi","eo":"Ugadi","es":"Ugadi","eu":"Ugadi","fa":"اوگادی","fr":"Ugadi","hi":"उगादि","hy":"Ուգադի","id":"Ugadi","jv":"Ugadi","kn":"ಯುಗಾದಿ","ml":"യുഗാദി (പുതുവത്സരം)","mr":"उगादी","nn":"Ugadi","or":"ଉଗାଡ଼ି ପର୍ବ","pl":"Ugadi","pnb":"اوگادی","ru":"Угади","sa":"युगादिः","sat":"ᱩᱜᱟᱲᱤ","ta":"உகாதி","te":"ఉగాది","uk":"Угаді","ur":"اوگادی","vi":"Ugadi","zh":"乌加迪"}, nts: {"en":"Yugadi"}, urls: {"en":"https://en.wikipedia.org/wiki/Ugadi"}},
         
-        {
-            ty: "nD",
-            st: {mon: 1, d: 1, durD: 9},
-            ttls: {"en": "Vasant Navratri"}
-        },
-        {
-            ty: "D",
-            st: {mon: 1, d: 9},
-            ttls: {"en": "Rama Navami", "alt": "Shri Rama Navami"}
-        },
-        {
-            ty: "D",
-            st: {mon: 1, d: 1},
-            ttls: {
-                "en": "Gudi Padwa, Cheti Chand, Yugadi, Navreh (Chandramana Nava Varsha), Ugadi"
-            }
-        },
+        // TODO:  The following events were converted by ChatGPT and need to be checked for correctness!
+
         {
             ty: "D",
             st: {mon: 3, d: 6},
