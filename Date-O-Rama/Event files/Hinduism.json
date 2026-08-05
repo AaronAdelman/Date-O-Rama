@@ -12,12 +12,12 @@
 //12   Phālguna or Falgun
 //1    Caitra or Chait or Chaitra
 
-// Tithis in the “dark” half of a month are numbered starting at 1.
+// Tithis in the “dark” half of a month/waning moon are numbered starting at 1.
 // Amavasya (new moon) = tithi 15 of the month
-// Tithis in the “bright” half of a month are numbered starting at 16.
+// Tithis in the “bright” half of a month/waxing moon are numbered starting at 16.
 // Purnima (full moon) = tithi 30 of the month
 
-// TODO:  Events on the Hindu solar calendar:  Vaisakhi, Bhogi, Makar Sankranti
+// TODO:  Events on the Hindu solar calendar:  Vaisakhi, Bhogi, Makar Sankranti, Raja Parba
 // TODO:  Events on the Tamil calendar:  Thaipusam/Kavadi
 
 // TODO:  Vhadlo Shigmo, which crosses a year boundary
@@ -43,121 +43,30 @@
         {ty: "nD", st: {mon: 1, d: 15, durD: 2}, ttls: {"as":"চেটি চান্দ","en":"Cheti Chand","gu":"ચેટીચંડ","hi":"चेटीचंड","kn":"ಚೇಟಿ ಚಂದ್","ml":"ചേതി ചന്ദ്","mr":"चेटीचंड","ru":"Чети Чанд","sd":"چيٽي چنڊ","ta":"சேதி சந்த்","te":"చేతీ చాంద్"}, urls: {"en":"https://en.wikipedia.org/wiki/Cheti_Chand"}, nts: {"en":"Chetri Chandra"}},
         {ty: "D", st: {mon: 1, d: 15}, ttls: {"as":"নৱৰেহ (কাশ্মিৰী নৱবৰ্ষ)","bn":"নবরেহ","cs":"Navreh","en":"Navreh","ks":"نَورؠہہ","mk":"Кашмирска нова година","pa":"ਨਵਰੇਹ","ta":"நவ்ரே"}, nts: {"en":"Chandramana Nava Varsha\nKashmiri New Year"}, urls: {"en":"https://en.wikipedia.org/wiki/Navreh"}},
         {ty: "D", st: {mon: 1, d: 15}, ttls: {"as":"উগাদি","bn":"উগাদি","de":"Ugadi","en":"Ugadi","eo":"Ugadi","es":"Ugadi","eu":"Ugadi","fa":"اوگادی","fr":"Ugadi","hi":"उगादि","hy":"Ուգադի","id":"Ugadi","jv":"Ugadi","kn":"ಯುಗಾದಿ","ml":"യുഗാദി (പുതുവത്സരം)","mr":"उगादी","nn":"Ugadi","or":"ଉଗାଡ଼ି ପର୍ବ","pl":"Ugadi","pnb":"اوگادی","ru":"Угади","sa":"युगादिः","sat":"ᱩᱜᱟᱲᱤ","ta":"உகாதி","te":"ఉగాది","uk":"Угаді","ur":"اوگادی","vi":"Ugadi","zh":"乌加迪"}, nts: {"en":"Yugadi"}, urls: {"en":"https://en.wikipedia.org/wiki/Ugadi"}},
-        
-        // TODO:  The following events were converted by ChatGPT and need to be checked for correctness!
-
-        {
-            ty: "D",
-            st: {mon: 3, d: 6},
-            ttls: {"en": "Sitalsasthi"}
-        },
-        {
-            ty: "D",
-            st: {mon: 3, d: 30},
-            ttls: {"en": "Vat Savitri", "alt": "Vat Amavasya"}
-        },
-        {
-            ty: "nD",
-            st: {mon: 4, d: 2, durD: 4},
-            ttls: {"en": "Raja Parba"}
-        },
-        {
-            ty: "nD",
-            st: {mon: 4, d: 2, durD: 9},
-            ttls: {"en": "Rath Yatra"}
-        },
-        {
-            ty: "D",
-            st: {mon: 4, d: 30},
-            ttls: {"en": "Guru Purnima"}
-        },
-        {ty: "D", st: {mon: 5, d: 30}, ttls: {"en": "Raksha Bandhan"}, urls: {"en":"https://en.wikipedia.org/wiki/Raksha_Bandhan"}, nts: {"en":"Rakhi Purnima"}},
+        {ty: "D", st: {mon: 3, d: 20}, ttls: {"as":"শীতল ষষ্ঠী","bn":"শীতলাষষ্ঠী","en":"Sitalsasthi","kn":"ಶೀತಲ ಷಷ್ಠಿ ಉತ್ಸವ","or":"ଶୀତଳ ଷଷ୍ଠୀ ଯାତ୍ରା","ta":"சிதல்சஸ்தி"}, nts: {"en": "Sitala Sasthi"}, urls: {"en":"https://en.wikipedia.org/wiki/Sitalsasthi"}},
+        {ty: "D", st: {mon: 3, d: 30}, ttls: {"as":"বট পূৰ্ণিমা","en":"Vata Purnima","kn":"ವಟ ಪೂರ್ಣಿಮಾ","mai":"बरसाति","mr":"वटपौर्णिमा","pl":"Wat purnima","sa":"वटसावित्रीव्रतम्","ta":"வட பூர்ணிமா"}, nts: {"en": "Vat Savitri\nVat Amavasya"}, urls: {"en":"https://en.wikipedia.org/wiki/Vata_Purnima"}},
+        {ty: "nD", st: {mon: 4, d: 17, durD: 9}, ttls: {"as":"ৰথ যাত্ৰা","bn":"রথযাত্রা","cs":"Ratha játrá","de":"Ratha Yatra","en":"Ratha Yatra","es":"Ratha yatra","fi":"Ratha Yatra","fr":"Ratha Yatra","gu":"રથયાત્રા","hi":"रथ यात्रा","hy":"Ռատհա Յատրա","id":"Ratha Yatra","kn":"ರಥ ಯಾತ್ರೆ","lt":"Rathajatra","mr":"रथयात्रा","ne":"रथयात्रा","nl":"Kar-festival","nn":"Rathajatra","or":"ରଥଯାତ୍ରା (ବହୁବିକଳ୍ପ)","pa":"ਰੱਥ ਯਾਤਰਾ","pl":"Ratha Jatra","ru":"Ратха-ятра","sat":"ᱨᱚᱛᱷ ᱡᱟᱛᱨᱟ","sv":"Rathjatra","ta":"தேரோட்டம்","te":"రథోత్సవం","th":"รถยาตรา","uk":"Ратха-ятра","ur":"رتھ یاترا","zh":"乘車節"}, nts: {"en": "Rath Yatra"}, urls: {"en":"https://en.wikipedia.org/wiki/Ratha_Yatra"}},
+        {ty: "D",st: {mon: 4, d: 30}, ttls: {"as":"গুৰু পূৰ্ণিমা","awa":"गुरु पूर्णिमा","bn":"গুরু পূর্ণিমা","de":"Guru Purnima","en":"Guru Purnima","gu":"ગુરુ પૂર્ણિમા","he":"גורו פורנימה","hi":"गुरु पूर्णिमा","id":"Guru Purnima","it":"Gurupūrṇimā","kn":"ಗುರು ಪೂರ್ಣಿಮಾ","lt":"Gurupūrnima","ml":"ഗുരു പൂർണിമ","mr":"गुरुपौर्णिमा","ms":"Guru Purnima","ne":"गुरु पूर्णिमा","nl":"Guru Purnima","nn":"Guru purnima","or":"ଗୁରୁ ପୂର୍ଣ୍ଣିମା","pa":"ਗੁਰੂ ਪੂਰਨਿਮਾ","ru":"Гуру-пурнима","sa":"व्यासपूर्णिमा","ta":"குரு பூர்ணிமா","te":"గురుపౌర్ణమి","th":"คุรุปูรณิมา"}, urls: {"en":"https://en.wikipedia.org/wiki/Guru_Purnima"}},
+        {ty: "D", st: {mon: 5, d: 30}, ttls: {"ar":"راكشا باندهان","as":"ৰাখীবন্ধন","awa":"रक्षाबन्धन","bg":"Ракша Бандан","bh":"रक्षाबंधन","bn":"রাখীবন্ধন","ckb":"ڕاکشا باندھان","da":"Raksha Bandhan","de":"Raksha Bandhan","dty":"जनै पूर्णीमा","en":"Raksha Bandhan","eo":"Raksha Bandhan","es":"Raksha Bandhan","fa":"رکشابندان","fr":"Raksha bandhan","gl":"Raksha Bandhan","hi":"रक्षाबन्धन","hu":"Raksábandhana","id":"Raksha Bandhan","ja":"ラーキー","kn":"ರಕ್ಷಾ ಬಂಧನ","ko":"락샤 반단","mai":"रक्षा बन्धन","ml":"രക്ഷാബന്ധനം","mr":"रक्षाबंधन","ne":"श्रावण शुक्ल पूर्णिमा","nl":"Raksha Bandhan","nn":"Raksja bandhan","or":"ରାକ୍ଷୀ ପୂର୍ଣ୍ଣିମା","pa":"ਰੱਖੜੀ","pl":"Raksza bandhan","ru":"Ракшабандхан","sa":"रक्षाबन्धनम्","sd":"راکي ٻڌڻ","si":"රක්ෂා බන්ධන","sv":"Raksha Bandhan","ta":"ரக்சா பந்தன்","tcy":"ರಕ್ಷಾಬಂಧನ","te":"రాఖీ పౌర్ణమి","th":"รักษาพันธัน","uk":"Ракша-бандган","ur":"رکشا بندھن","uz":"Rakshabandhan"}, urls: {"en":"https://en.wikipedia.org/wiki/Raksha_Bandhan"}, nts: {"en":"Rakhi Purnima"}},
         {ty: "D", st: {mon: 6, d: 3}, ttls: {"en": "Teejdi"}, nts: {"en":"Kajri Teej"}, urls: {"en":"https://en.wikipedia.org/wiki/Teej"}, "//":"There are other Teejs to implement"},
         {ty: "D",st: {mon: 6, d: 7}, ttls: {"en": "Shitla Satam"}},
-        {
-            ty: "D",
-            st: {mon: 6, d: 8},
-            ttls: {"en": "Krishna Janmaashtami", "alt": "Krishnashtami"}
-        },
-        {
-            ty: "D",
-            st: {mon: 6, d: 8},
-            ttls: {"en": "Radhashtami"}
-        },
-        {
-            ty: "D",
-            st: {mon: 6, d: 4},
-            ttls: {"en": "Ganesh Chaturthi", "alt": "Vinayaka Chavithi"}
-        },
-        {
-            ty: "D",
-            st: {mon: 6, d: 5},
-            ttls: {"en": "Nuakhai"}
-        },
-        {
-            ty: "nD",
-            st: {mon: 7, d: 1, durD: 9},
-            ttls: {"en": "Navaratri"}
-        },
-        {
-            ty: "nD",
-            st: {mon: 7, d: 1, durD: 10},
-            ttls: {"en": "Durga Puja"}
-        },
-        {
-            ty: "D",
-            st: {mon: 7, d: 10},
-            ttls: {"en": "Vijayadashami"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 12},
-            ttls: {"en": "Govatsa Dwadashi"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 13},
-            ttls: {"en": "Dhanteras", "alt": "Dhanatrayodashi"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 15},
-            ttls: {"en": "Diwali", "alt": "Deepavali"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 2},
-            ttls: {"en": "Bhai Dooj", "alt": "Bhratri Dvitiya"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 4},
-            ttls: {"en": "Karva Chauth", "alt": "Kark Chaturthi", "alt2": "Atla Tadde"}
-        },
-        {
-            ty: "D",
-            st: {mon: 8, d: 30},
-            ttls: {"en": "Kartika Purnima"}
-        },
-        {
-            ty: "D",
-            st: {mon: 9, d: 8},
-            ttls: {"en": "Prathamastami"}
-        },
-        {
-            ty: "nD",
-            st: {mon: 9, d: 1, durD: 6},
-            ttls: {"en": "Champa Sashti"}
-        },
-        {
-            ty: "D",
-            st: {mon: 9, d: 6},
-            ttls: {"en": "Skanda Sashti"}
-        },
-        {
-            ty: "D",
-            st: {mon: 5, d: 5},
-            ttls: {"en": "Naga Panchami"}
-        }
+        {ty: "nD", st: {mon: 6, d: 8, durD: 2}, ttls: {"en": "Krishna Janmaashtami"}, nts: {"en": "Krishnashtami\nJanmashtami\nGokulashtami"}, urls: {"en":"https://en.wikipedia.org/wiki/Krishna_Janmashtami"}},
+        {ty: "D", st: {mon: 6, d: 23}, ttls: {"as":"ৰাধাষ্টমী","bn":"রাধাষ্টমী","en":"Radhashtami","gu":"રાધાષ્ટમી","hi":"राधाष्टमी","kn":"ರಾಧಾಷ್ಟಮಿ","or":"ରାଧାଷ୍ଟମୀ","pa":"ਰਾਧਾਅਸ਼ਟਮੀ","ru":"Радхаштами","ta":"இராதாட்டமி","te":"రాధాష్టమి","tr":"Radhaştami","tt":"Радхаштами"}},
+        {ty: "nD", st: {mon: 6, d: 19, durD: 5}, ttls: {"ar":"مهرجان غانيش تشاتورثي","as":"গণেশ চতুৰ্থী","bh":"गणेश चउथ","bn":"গণেশ চতুর্থী","cv":"Ганеша Чатуртхи","de":"Ganesh Chaturthi","en":"Ganesh Chaturthi","es":"Ganesh Chaturthi","fa":"گانش چاتورتی","fi":"Ganesh Chaturthi","fr":"Ganesh Chaturthi","gu":"ગણેશ ચતુર્થી","hi":"गणेश चतुर्थी","id":"Ganesh Chaturthi","it":"Gaṇēśacaturthī","ja":"ガネーシュ・フェスティバル","kn":"ಗಣೇಶ ಚತುರ್ಥಿ","ks":"پَن پوٗزا","mai":"गणेश चतुर्थी","ml":"വിനായക ചതുർഥി","mr":"गणेश चतुर्थी","ms":"Vinayaka Chaturthi","nb":"Ganesh Chaturthi","ne":"गणेश चतुर्थी","nl":"Ganesh Chaturthi","or":"ଗଣେଶ ପୂଜା","pa":"ਗਣੇਸ਼ ਚਤੁਰਥੀ","pl":"Ganeśćaturthi","pnb":"گنیش چترتھی","pt":"Ganexa Chaturthi","ru":"Ганеша-чатуртхи","sa":"गणेशचतुर्थी","sd":"گڻيش چترٿي","sv":"Ganesh-Chaturthi","ta":"விநாயக சதுர்த்தி","tcy":"ಗಣೇಶ ಚತುರ್ಥಿ","te":"వినాయక చవితి","th":"คเณศจตุรถี","tt":"Ганеша Чатуртхи","ur":"گنیش چترتھی"}, nts: {"en": "Vinayaka Chavithi"}, urls: {"en":"https://en.wikipedia.org/wiki/Ganesh_Chaturthi"}},
+        {ty: "D", st: {mon: 6, d: 20}, ttls: {"as":"নুৱাখাই","bn":"নুয়াখাই","en":"Nuakhai","hi":"नुआखाई","kn":"ನುವಾಖಾಯ್","mr":"नुआखै उत्सव","or":"ନୂଆଖାଇ","sat":"ᱱᱟᱣᱟᱠᱷᱟᱱᱤ","te":"నుఖాయ్"}, urls: {"en":"https://en.wikipedia.org/wiki/Nuakhai"}},
+        {ty: "nD", st: {mon: 7, d: 21, durD: 6}, ttls: {"ar":"دورجا بوجا","as":"দুৰ্গা পূজা","awa":"दुर्गा पूजा","bh":"दुर्गा पूजा","bn":"দুর্গাপূজা","bpy":"দুর্গা","de":"Durga Puja","en":"Durga Puja","es":"Durgá Puyá","eu":"Durga Puja","fa":"دورگا پوجا","fi":"Durga Puja","fr":"Durgā pūjā","hi":"दुर्गा पूजा","hr":"Durga Puja","id":"Durga Puja","it":"Durgā Pūjā","kn":"ದುರ್ಗಾ ಪೂಜಾ","ks":"دُرگا پوٗزا","lt":"Durgos pūdža","ml":"ദുർഗാപൂജ","mni":"ꯗꯨꯔꯒꯥ ꯏꯂꯥꯠꯄ","mr":"दुर्गापूजा","ms":"Durga Puja","ne":"दुर्गा पूजा","or":"ଦୁର୍ଗା ପୂଜା","pa":"ਦੁਰਗਾ ਪੂਜਾ","pl":"Durgapudźa","pt":"Durga Puja","ru":"Дурга-пуджа","sa":"दुर्गापूजा","sat":"ᱫᱩᱨᱜᱟ ᱯᱩᱡᱟ","ta":"துர்கா பூஜை","te":"దుర్గాపూజ","th":"ทุรคาบูชา","uk":"Дурґа-Пуджа","ur":"درگا پوجا","vi":"Durga Puja"}, urls: {"en":"https://en.wikipedia.org/wiki/Durga_Puja"}, "//":"Shaktism"},
+
+        // TODO:  The following events were converted by ChatGPT and need to be checked for correctness!
+        {ty: "D", st: {mon: 7, d: 10}, ttls: {"en": "Vijayadashami"}},
+        {ty: "D", st: {mon: 8, d: 12}, ttls: {"en": "Govatsa Dwadashi"}},
+        {ty: "D", st: {mon: 8, d: 13}, ttls: {"en": "Dhanteras"}, nts: {"en": "Dhanatrayodashi"}},
+        {ty: "D", st: {mon: 8, d: 15}, ttls: {"en": "Diwali"}, nts: {"en": "Deepavali"}},
+        {ty: "D", st: {mon: 8, d: 2}, ttls: {"en": "Bhai Dooj"}, nts: {"en": "Bhratri Dvitiya"}},
+        {ty: "D", st: {mon: 8, d: 4}, ttls: {"en": "Karva Chauth"}, nts: {"en": "Kark Chaturthi\nAtla Tadde"}},
+        {ty: "D", st: {mon: 8, d: 30}, ttls: {"en": "Kartika Purnima"}},
+        {ty: "D", st: {mon: 9, d: 8}, ttls: {"en": "Prathamastami"}},
+        {ty: "nD", st: {mon: 9, d: 1, durD: 6}, ttls: {"en": "Champa Sashti"}},
+        {ty: "D", st: {mon: 9, d: 6}, ttls: {"en": "Skanda Sashti"}},
+        {ty: "D", st: {mon: 5, d: 5}, ttls: {"en": "Naga Panchami"}},
     ]
 }
