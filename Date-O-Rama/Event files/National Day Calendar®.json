@@ -488,6 +488,7 @@
         {ty: "D", st: {mon: 12, d: 8}, ttls: {"en":"National Crossword Solvers Day"}, urls: {"en":"https://www.nationaldaycalendar.com/december/national-crossword-solvers-day-december-8"}, fst: {era: 1, y: 2022}, nts: {"en":"Created by Myles Mellor"}},
         {ty: "D", st: {mon: 12, wkd: [3], nth: 1}, ttls: {"en":"World Trick Shot Day"}, urls: {"en":"https://www.nationaldaycalendar.com/international/world-trick-shot-day-first-tuesday-in-december"}, mog: "🏀", fst: {era: 1, y: 2016}, nts: {"en":"Created by the Harlem Globetrotters"}},
         {ty: "D", st: {mon: 12, wkd: [7], nth: 2}, inh: "NUnityD", urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-unity-day-second-saturday-in-december"}, fst: {era: 1, y: 2025}, nts: {"en":"Created by US United Inc."}},
+        {ty: "D", st: {mon: 8, d: 6}, ttls: {"en":"National Social Engineering Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-social-engineering-day-august-6"}, fst: {era: 1, y: 2024}, nts: {"en":"Created by KnowBe4"}},
 
         {ty: "nD", st: {}, end: {}, subEvts: [
             {ty: "D", st: {mon: 1, d: 11}, ttls: {"en":"National Arkansas Day","he":"יום ארקנסו הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-arkansas-day/"}, fst: {era: 1, y: 2017}},
