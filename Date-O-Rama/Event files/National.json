@@ -1975,7 +1975,6 @@
         {ty: "D", st: {mon: 8, d: 6}, ttls: {"en":"National Root Beer Float Day"}, urls: {"en":"https://www.daysoftheyear.com/days/root-beer-float-day/"}, mog: "🍺", nts: {"en":"National Root Beer Day"}},
         {ty: "D", st: {mon: 8, d: 6}, ttls: {"en":"National Wiggle Your Toes Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wiggle-your-toes-day/"}, mog: "🦶"},
         {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"Beach Party Day"}, urls: {"en":"https://www.checkiday.com/273662a3c15cc453ec79bdd6fe15c490/beach-party-day"}, mog: "⛱", fst: {era: 1, y: 2015}},
-        {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"National Lighthouse Day","he":"יום המגדלור הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/lighthouse-day/"}, mog: "⛯", fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"National Raspberries n’ Cream Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-raspberries-n-cream-day/"}},
         {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"National Sea Serpent Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-sea-serpent-day/"}, nts: {"en":"Sea Dragon Day"}},
         {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"Purple Heart Day"}, urls: {"en":"https://www.purpleheartmission.org/national-purple-heart-day"}, fst: {era: 1, y: 2014}, mog: "💜"},
