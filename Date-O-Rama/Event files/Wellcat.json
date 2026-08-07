@@ -94,6 +94,6 @@
         ]},
         {ty: "D", st: {mon: 3, d: 15}, ttls: {"en":"True Confessions Day","he":"יום וידויי האמת"}},
         {ty: "D", st: {mon: 7, d: 13}, ttls: {"en":"Gruntled Workers Day"}},
-        {ty: "D", st: {mon: 8, d: 28}, ttls: {"en":"Crackers Over The Keyboard Day"}},
+        {ty: "D", st: {mon: 8, d: 28}, ttls: {"en":"Crackers Over the Keyboard Day"}},
     ]
 }
