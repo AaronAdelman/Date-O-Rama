@@ -72,7 +72,7 @@
         {ty: "nD", st: {mon: 8, d: 19, thruD: 25, wkd: [1]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, inh: "Festa do Vinho", fst: {era: 1, y: 2024}},
     ],
     tpls: {
-        "Festa do Vinho": {ty: "nD", st: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, ttls: {"pt":"Festa do Vinho","en":"Wine Festival","es":"Fiesta del Vino de Madeira","de":"Madeira Weinfest"}, mog: "🍷🥂", urls: {"en":"https://visitmadeira.com/en/whats-on/events/wine-festival","pt":"https://visitmadeira.com/pt/a-acontecer/eventos/festa-do-vinho/","es":"https://visitmadeira.com/es/que-esta-pasando/eventos/fiesta-del-vino-de-madeira/","de":"https://visitmadeira.com/de/veranstaltungen/veranstaltungen/madeira-weinfest/"}},
+        "Festa do Vinho": {ty: "nD", st: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, ttls: {"pt":"Festa do Vinho","en":"Wine Festival","es":"Fiesta del Vino de Madeira","de":"Madeira Weinfest"}, mog: "🍷🥂", urls: {"en":"https://visitmadeira.com/en/whats-on/events/wine-festival","pt":"https://visitmadeira.com/pt/a-acontecer/eventos/festa-do-vinho/","es":"https://visitmadeira.com/es/que-esta-pasando/eventos/fiesta-del-vino-de-madeira/","de":"https://visitmadeira.com/de/veranstaltungen/veranstaltungen/madeira-weinfest/"}, nts: {"en":"Festa do Vinho"}},
         "Dia do Concelho": {ty: "D", st: {mon: 1, d: 15}, ttls: {"pt":"Dia do Concelho"}},
     }
 }

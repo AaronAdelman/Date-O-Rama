@@ -33,7 +33,7 @@
         {ty: "D", st: {mon: 7, d: 25}, inh: "StJames", urls: {"en":"https://nationaltoday.com/fiesta-de-santiago-nicaragua/"}},
         {ty: "D", st: {mon: 7, d: 26}, inh: "StAnne"},
         {ty: "D", st: {mon: 8, d: 1}, ttls: {"en":"Descent of Saint Dominic","he":"תחילת חגיגת סנטו דומינגו"}, urls: {"en":"https://nationaltoday.com/santo-domingo-celebrations-start/"}},
-        {ty: "D", st: {mon: 8, d: 27}, ttls: {"en":"Crab Soup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/crab-soup-day/"}, mog: "🥣"},
+        {ty: "D", st: {mon: 8, d: 27}, ttls: {"en":"Crab Soup Day"}, urls: {"en":"https://www.daysoftheyear.com/days/crab-soup-day/"}, mog: "🥣", fst: {era: 1, y: 1841}},
         {ty: "D", st: {mon: 9, d: 30}, inh: "StJerome", urls: {"en":"https://nationaltoday.com/fiesta-de-san-jeronimo-nicaragua/"}, fst: {era: 1, y: 1987}},
    ]
 }

@@ -35,6 +35,6 @@
         
         {ty: "D", st: {mon: 5, d: 17}, ttls: {"en":"Day of Family Purity"}, fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/georgia/day-of-family-purity"}},
         {ty: "D", st: {mon: 8, wkd: [7], nth: 1}, ttls: {"en":"Tushetoba"}, fst: {era: 1, y: 1990}, urls: {"en":"https://www.daysoftheyear.com/days/tushetoba/"}},
-        {ty: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [2]}, end: {mon: 10, d: 16, thruD: 22, wkd: [1]}, ttls: {"en":"Rtveli"}, urls: {"en":"https://www.daysoftheyear.com/days/rtveli/"}, mog: "🍇🍷"},
+        {ty: "nD", st: {mon: 8, d: 22, thruD: 28, wkd: [2]}, end: {mon: 10, d: 16, thruD: 22, wkd: [1]}, ttls: {"az":"Rtveli","ba":"Ртвели","be":"Ртвелі","be-tarask":"Ртвэлі","bg":"Ртвели","en":"Rtveli","et":"Rtveli","fi":"Rtveli","fr":"Rtvéli","he":"רתוולי","hr":"Rtveli","hu":"Rtveli","hy":"Ռթվելի","ka":"რთველი","mk":"’Ртвели","pl":"Rtveli","ru":"Ртвели","sr":"Ртвели","tr":"Rtveli","uk":"Ртвелі"}, urls: {"en":"https://www.daysoftheyear.com/days/rtveli/"}, mog: "🍇🍷"},
     ]
 }

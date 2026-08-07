@@ -16,7 +16,7 @@
         {ty: "D", st: {misc: "Jun", offsetD: 6, wkd: [7]}, inh: "Summersgiving",  fst: {era: 1, y: 2019}},
         {ty: "D", st: {misc: "Jun", wkd: [7]}, inh: "Summersgiving",  fst: {era: 1, y: 2019}},
         {ty: "D", st: {misc: "Jun"}, ttls: {"en":"National Seashell Day"}, urls: {"en":"https://www.visitfortmyers.com/national-seashell-day"}, mog: "🐚", fst: {era: 1, y: 2016}, nts: {"en":"Created by the Beaches of Ft. Myers and Sanibel"}},
-        {ty: "D", st: {era: 1, y: 2016, mon: 6, d: 21}, inh: "NCall Your Doctor Day", fst: {era: 1, y: 2017}},
+        {ty: "D", st: {era: 1, y: 2016, mon: 6, d: 21}, inh: "NCallYourDrD", fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 1, d: 1}, inh: "NHangoverD", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 1, d: 10}, ttls: {"en":"National Oysters Rockefeller Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-oysters-rockefeller-day-january-10"}, fst: {era: 1, y: 2017}, mog: "🦪", nts: {"en":"Created by Antoine’s Restaurant"}},
         {ty: "D", st: {mon: 1, d: 13}, ttls: {"en":"National Sticker Day","he":"יום המדבקה הלאומי"}, urls: {"en":"https://www.stickergiant.com/national-sticker-day"}, fst: {era: 1, y: 2015}, nts: {"en":"Created by StickerGiant"}},
@@ -231,7 +231,7 @@
         {ty: "D", st: {mon: 6, d: 6}, ttls: {"en":"National Eyewear Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-eyewear-day-june-6"}, mog: "👓", fst: {era: 1, y: 2017}, nts: {"en":"Created by Zyloware Eyewear"}},
         {ty: "D", st: {mon: 6, d: 7}, ttls: {"en":"World Caring Day"}, urls: {"en":"https://www.caringbridge.org/wcd/"}, fst: {era: 1, y: 2022}, nts: {"en":"Created by CaringBridge"}},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, ttls: {"en":"National Turkey Lovers’ Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-turkey-lovers-day-third-sunday-in-june"}, nts: {"en":"Turkey Lovers’ Day\nCreated by the National Turkey Federation"}, mog: "🦃", fst: {era: 1, y: 2016}},
-        {ty: "D", st: {mon: 6, wkd: [3], nth: 2}, inh: "NCall Your Doctor Day", fst: {era: 1, y: 2016}},
+        {ty: "D", st: {mon: 6, wkd: [3], nth: 2}, inh: "NCallYourDrD", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 6, wkd: [4], nth: -1}, ttls: {"en":"National Parchment Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-parchment-day-last-wednesday-in-june"}, fst: {era: 1, y: 2016}, nts: {"en":"Created by PaperChef"}},
         {ty: "D", st: {mon: 6, wkd: [6], nth: 2}, ttls: {"en":"National Movie Night"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-movie-night-second-friday-in-june"}, mog: "🎦", fst: {era: 1, y: 2022}, nts: {"en":"Created by Jennifer Borget"}},
         {ty: "D", st: {mon: 6, wkd: [6], nth: 3}, inh: "NTake Back the Lunch Break Day", fst: {era: 1, y: 2018}, last: {era: 1, y: 2021}},
@@ -296,7 +296,7 @@
         {ty: "D", st: {mon: 8, d: 3}, ttls: {"en":"National Hair Gloss Day"}, fst: {era: 1, y: 2022}, nts: {"en":"This event is meant to promote vanity and fashion.\nCreated by Redken"}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-hair-gloss-day-august-3"}},
         {ty: "D", st: {mon: 8, d: 31}, ttls: {"en":"National Diatomaceous Earth Day","he":"יום הדיאטומיט הלאומי"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-diatomaceous-earth-day-august-31"}, fst: {era: 1, y: 2016}, nts: {"en":"Created by EP Minerals"}},
         {ty: "D", st: {mon: 8, d: 31}, ttls: {"en":"National Matchmaker Day","he":"יום השדכן הלאומי"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-matchmaker-day-august-31"}, fst: {era: 1, y: 2016}, nts: {"en":"Created by ArtCarved Bridal"}},
-        {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"National CBD Day"}, nts: {"en":"This event promotes cannabidiol (CBD).  While hemp is harmless, cannabidiol is a drug.  Ask your doctor for what, if any, treatments you need, not what gets advertised.\nCreated by cbdMD"}, fst: {era: 1, y: 2018}},
+        {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"National CBD Day"}, nts: {"en":"This event promotes cannabidiol (CBD).  While hemp is harmless, cannabidiol is a drug.  Ask your doctor for what, if any, treatments you need, not what gets advertised.\nCreated by cbdMD"}, fst: {era: 1, y: 2018}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-cbd-day-august-8"}},
         {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Global Sleep Under the Stars Night"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/global-sleep-under-the-stars-night-august-8"}, fst: {era: 1, y: 2020}, mog: "🌌", nts: {"en":"Created by Eddie Bauer"}},
         {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"National Whataburger Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-whataburger-day-august-8"}, mog: "🍔", fst: {era: 1, y: 2023}, nts: {"en":"Created by Whataburger"}},
         {ty: "D", st: {mon: 8, d: 9}, ttls: {"en":"National Passion Fruit Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-passion-fruit-day-august-9"}, fst: {era: 1, y: 2023}},
@@ -545,7 +545,7 @@
     ],
     tpls: {
         "Summersgiving": {ttls: {"en":"Summersgiving"}, nts: {"en":"Summersgiving Day\nCreated by Robert Solomon and Eva Shure"}, ty: "D", st: {misc: "Jun", offsetD: 1, wkd: [7]}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/summersgiving-saturday-after-the-summer-solstice"}, mog: "🍹🥧🍊"},
-        "NCall Your Doctor Day": {ty: "D", st: {mon: 6, wkd: [3], nth: 2}, ttls: {"en":"National Call Your Doctor Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/call-your-doctor-day-second-tuesday-in-june"}, mog: "👨‍⚕️👩‍⚕️", nts: {"en":"Created by Bright Pink"}},
+        "NCallYourDrD": {ty: "D", st: {mon: 6, wkd: [3], nth: 2}, ttls: {"en":"National Call Your Doctor Day"}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/call-your-doctor-day-second-tuesday-in-june"}, mog: "👨‍⚕️👩‍⚕️", nts: {"en":"Created by Bright Pink"}},
         "NTake Back the Lunch Break Day": {ty: "D", st: {mon: 6, wkd: [6], nth: 3}, ttls: {"en":"National Take Back the Lunch Break Day"}, urls: {"en":"https://nationaldaycalendar.com/celebrations/national-take-back-the-lunch-break-day-june-24"}, mog: "🥪", nts: {"en":"Created by Tork"}},
     }
 }

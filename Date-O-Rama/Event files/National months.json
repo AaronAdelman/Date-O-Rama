@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1776},
     "TODO":"Prevent Blindness event calendar?  PGA event calendar?",
     evts: [
-        {ty: "M", st: {era: 1, y: 2009, mon: 5}, inh: "NGuide Dog Month"},
+        {ty: "M", st: {era: 1, y: 2009, mon: 5}, inh: "NGuideDogM"},
         {ty: "M", st: {mon: 1}, ttls: {"en":"California Restaurant Month"}, urls: {"en":"https://nationaltoday.com/california-restaurant-month/"}},
         {ty: "M", st: {mon: 1}, ttls: {"en":"Fresh Florida Tomato Month"}, urls: {"en":"https://www.daysoftheyear.com/days/fresh-florida-tomato-month/"}, mog: "🍅", fst: {era: 1, y: 1989}, nts: {"en":"Created by the Florida Tomato Committee and Department of Agriculture"}},
         {ty: "M", st: {mon: 1}, ttls: {"en":"National Adopt a Rescued Bird Month"}, urls: {"en":"https://nationaltoday.com/national-adopt-a-rescued-bird-month/"}, mog: "🐦"},
@@ -353,7 +353,7 @@
         {ty: "M", st: {mon: 8}, ttls: {"en":"National Traffic Awareness Month"}, urls: {"en":"https://nationaltoday.com/national-traffic-awareness-month/"}, mog: "🛑"},
         {ty: "M", st: {mon: 8}, ttls: {"en":"National Water Quality Month"}, urls: {"en":"https://www.daysoftheyear.com/days/water-quality-month/"}, mog: "💦"},
         {ty: "M", st: {mon: 8}, ttls: {"en":"Personalized Learning Month"}, urls: {"en":"https://personalizedlearningmonth.com/"}, mog: "📚"},
-        {ty: "M", st: {mon: 9}, inh: "NGuide Dog Month", fst: {era: 1, y: 2010}},
+        {ty: "M", st: {mon: 9}, inh: "NGuideDogM", fst: {era: 1, y: 2010}},
         {ty: "M", st: {mon: 9}, inh: "Sleeptember", fst: {era: 1, y: 2013}, urls: {"en":"https://www.sleeptember.org/"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"Hunger Action Month"}, urls: {"en":"https://www.feedingamerica.org/take-action/hunger-action-month"}, mog: "🍌", fst: {era: 1, y: 2008}, nts: {"en":"Created by Feeding America"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"Library Card Sign-up Month"}, urls: {"en":"https://www.ala.org/conferencesevents/celebrationweeks/card"}, nts: {"en":"National Library Card Sign-up Month"}, mog: "📚"},
@@ -393,6 +393,6 @@
         {ty: "nD", st: {mon: 9, d: 12}, end: {mon: 10, d: 12}, ttls: {"en":"National Drive Electric Month"}, urls: {"en":"https://driveelectricmonth.org/"}, fst: {era: 1, y: 2025}, mog: "⚡", nts: {"en":"Created by Plug In America"}},
     ],
     tpls: {
-        "NGuide Dog Month": {ty: "M", st: {mon: 9}, ttls: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
+        "NGuideDogM": {ty: "M", st: {mon: 9}, ttls: {"en":"National Guide Dog Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},
     }
 }
