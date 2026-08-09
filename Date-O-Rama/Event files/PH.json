@@ -40,7 +40,7 @@
         {ty: "D", ttls: {"en":"National Police Anniversary Day","fil":"Araw ng Pagkakatatag ng Pambansang Pulisya"}, st: {mon: 1, d: 29}, fst: {era: 1, y: 1992}, inh: "Police Day"},
         {ty: "D", st: {mon: 2, d: 2}, inh: "Constitution Day", fst: {era: 1, y: 2002}},
         {ty: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/philippine-american-war-memorial-day/"}, ttls: {"en":"Philippine-American War Memorial Day","fil":"Araw ng Paggunita sa Digmaang Pilipino–Amerikano"}, mog: "🇵🇭🇺🇸", fst: {era: 1, y: 1902}},
-        {ty: "D", st: {mon: 3, d: 8}, inh: "NWomen’sD"},
+        {ty: "D", st: {mon: 3, d: 8}, inh: "NWomenD"},
         {ty: "D", st: {mon: 3, d: 23}, urls: {"en":"https://nationaltoday.com/founding-anniversary-of-the-philippine-army/"}, nts: {"en":"Founding Anniversary of the Philippine Army"}, fst: {era: 1, y: 1936}, ttls: {"en":"Philippine Army Day and Anniversary of the Tejeros Convention","fil":"Araw ng Hukbong Katihan ng Pilipinas"}, inh: "ArmyD"},
         {ty: "D", st: {mon: 4, d: 27}, urls: {"en":"https://nationaltoday.com/lapu-lapu-day/"}, ttls: {"en":"Lapu Lapu Day","fil":"Araw ni Lapu-Lapu"}, fst: {era: 1, y: 2019}},
         {inh: "Radio Day", ty: "D", st: {mon: 5, d: 8}},
@@ -67,7 +67,7 @@
         {ty: "D", st: {mon: 10, d: 31}, inh: "Reformation Day"},
         {ty: "D", st: {mon: 10, d: 31}, inh: "Halloween"},
         {ty: "D", st: {mon: 11, d: 17}, ttls: {"en":"National Students’ Day","fil":"Pambansang Araw ng mga Mag-aaral"}, fst: {era: 1, y: 2019}, mog: "👨‍🎓👩‍🎓"},
-        {ty: "D", st: {mon: 11, d: 20}, inh: "NChildren’sD"},
+        {ty: "D", st: {mon: 11, d: 20}, inh: "NChildrenD"},
         {ty: "D", st: {mon: 12, d: 10}, inh: "Human Rights Day", fst: {era: 1, y: 1950}},
         {ty: "D", st: {mon: 12, d: 21}, inh: "ArmedForcesD", ttls: {"en":"Philippine Armed Forces Day","fil":"Araw ng Hukbong Sandatahang Lakas ng Pilipinas"}, fst: {era: 1, y: 1935}},
 

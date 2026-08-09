@@ -48,7 +48,7 @@
         {ttls: {"en":"Bank Indonesia Day","id":"Hari Bank Indonesia"}, ty: "D", st: {mon: 7, d: 5}, mog: "🏦"},
         {ty: "D", st: {mon: 7, d: 14}, inh: "Tax Day"},
         {ttls: {"en":"Attorney Day","id":"Hari Kejaksaan"}, ty: "D", st: {mon: 7, d: 22}, mog: "👨‍💼👩‍💼", nts: {"id":"Hari Bhakti Adhyaksa"}, fst: {era: 1, y: 1961}},
-        {ty: "D", st: {mon: 7, d: 23}, inh: "NChildren’sD", fst: {era: 1, y: 1984}},
+        {ty: "D", st: {mon: 7, d: 23}, inh: "NChildrenD", fst: {era: 1, y: 1984}},
         {inh: "NSpaceD", ty: "D", st: {mon: 8, d: 6}, nts: {"id":"Hari Bhakti Adhyaksa"}, fst: {era: 1, y: 2013}},
         {inh: "Veterans Day", ty: "D", st: {mon: 8, d: 10}, ttls: {"en":"National Veterans Day","id":"Hari Veteran Nasional"}, fst: {era: 1, y: 2014}},
         {ty: "D", st: {mon: 8, d: 10}, ttls: {"en":"National Technology Uprising Day","id":"Hari Kebangkitan Teknologi Nasional"}, fst: {era: 1, y: 1995}},

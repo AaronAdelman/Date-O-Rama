@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 4, d: 1}, inh: "AprFoolsD"},
         {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"German invasion of Denmark","da":"Danmarks besættelse"}, fst: {era: 1, y: 1940}},
         {ty: "D", st: {mon: 4, d: 16}, ttls: {"en":"Birthday of Queen Margrethe II","da":"Dronningens fødselsdag"}, inh: "*BD*"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkers’ Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkerD"},
         {st: {mon: 5, d: 5}, inh: "Liberation Day", ty: "D", ttls: {"en":"Liberation of Denmark","da":"Danmarks befrielse"}},
         {ty: "D", st: {mon: 5, d: 26}, ttls: {"en":"Birthday of Crown Prince Frederik","da":"Kronprins Frederiks fødselsdag"}, inh: "*BD*"},
         {ty: "D", st: {mon: 6, d: 7}, ttls: {"en":"Birthday of Prince Joachim","da":"Prins Joachims fødselsdag"}, inh: "*BD*", urls: {"en":"https://webplus.info/index.php?page=340&event=56335"}},

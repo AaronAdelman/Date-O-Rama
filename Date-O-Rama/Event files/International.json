@@ -993,7 +993,7 @@
         {ty: "D", st: {mon: 4, wkd: [7], nth: 2}, inh: "Slow Art Day", fst: {era: 1, y: 2008}, end: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 4, wkd: [7], nth: 3}, inh: "IRaw Milk Cheese Appreciation Day", fst: {era: 1, y: 2015}, last: {era: 1, y: 2019}},
         {ty: "D", st: {mon: 4, wkd: [7], nth: 3}, ttls: {"en":"World Circus Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-circus-day/"}, mog: "🎪", fst: {era: 1, y: 2010}, nts: {"en":"Created by the World Circus Federation"}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkers’ Day", fst: {era: 1, y: 1889}},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "IWorkerD", fst: {era: 1, y: 1889}},
         {ty: "D", st: {mon: 5, d: 1}, ttls: {"cs":"Globální den lásky","en":"Global Love Day","sk":"Globálny deň lásky"}, urls: {"en":"https://thelovefoundation.com/globalloveday/"}, fst: {era: 1, y: 2004}, mog: "❤️", nts: {"en":"Created by the Love Foundation"}},
         {ty: "D", st: {mon: 5, d: 1}, ttls: {"en":"Couple Appreciation Day"}, urls: {"en":"https://www.daysoftheyear.com/days/couple-appreciation-day/"}},
         {ty: "D", st: {mon: 5, d: 1}, ttls: {"en":"CSS Reboot Day"}, urls: {"en":"https://nationaltoday.com/css-reboot-day/"}, fst: {era: 1, y: 2000}},

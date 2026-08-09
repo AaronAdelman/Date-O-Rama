@@ -30,6 +30,6 @@
         {ty: "D", st: {mon: 11, d: 3}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 12, d: 7}, urls: {"en":"https://nationaltoday.com/memorial-day-in-east-timor/"}, inh: "Memorial Day", fst: {era: 1, y: 1975}},
-        {ty: "D", st: {mon: 11, d: 3}, inh: "NWomen’sD", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/east-timor-national-womens-day"}},
+        {ty: "D", st: {mon: 11, d: 3}, inh: "NWomenD", fst: {era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/east-timor/east-timor-national-womens-day"}},
     ]
 }

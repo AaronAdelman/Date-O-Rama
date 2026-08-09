@@ -807,7 +807,7 @@
         "Days of Remembrance of the Victims of the Holocaust": {ty: "nD", st: {mon: 8, d: 21, thruD: 27, wkd: [1]}, end: {mon: 8, d: 28, thruM: 9, thruD: 4, wkd: [1]}, ttls: {"de":"Days of Remembrance","en":"Days of Remembrance of the Victims of the Holocaust"}, nts: {"en":"DRVH"}, urls: {"en":"https://en.wikipedia.org/wiki/Days_of_Remembrance_of_the_Victims_of_the_Holocaust"}},
         "US Natl Day of Prayer": {ty: "D", st: {mon: 5, wkd: [5], nth: 1}, inh: "NDOfPrayer", urls: {"en":"https://www.daysoftheyear.com/days/national-day-of-prayer/"}, nts: {"en":"Created by Harry S Truman"}},
         "Endangered Species Day": {ty: "D", st: {mon: 5, wkd: [6], nth: 3}, ttls: {"en":"Endangered Species Day"}, urls: {"en":"https://www.endangered.org/campaigns/endangered-species-day/"}, nts: {"en":"National Endangered Species Day\nCreated by the US Senate"}, mog: "🐺"},
-        "US Natl Children’s Day": {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, inh: "NChildren’sD", urls: {"en":"https://www.daysoftheyear.com/days/national-childrens-day/"}, nts: {"en":"Rose Day\nFlower Day\nCreated by Reverend Dr. Charles Leonard"}},
+        "US Natl Children’s Day": {ty: "D", st: {mon: 6, wkd: [1], nth: 2}, inh: "NChildrenD", urls: {"en":"https://www.daysoftheyear.com/days/national-childrens-day/"}, nts: {"en":"Rose Day\nFlower Day\nCreated by Reverend Dr. Charles Leonard"}},
         "NLobsterD": {ttls: {"en":"National Lobster Day"}, ty: "D", st: {mon: 9, d: 25}, mog: "🦞", urls: {"en":"https://www.daysoftheyear.com/days/lobster-day/"}, nts: {"en":"Created by Angus King and Susan Collins"}},
     }
 }
