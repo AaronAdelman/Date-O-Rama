@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 6, d: 30}, inh: "ArmyD", urls: {"en":"https://www.officeholidays.com/holidays/guatemala/guatemala-army-day"}},
         {ty: "D", st: {mon: 7, d: 1}, inh: "Bank Holiday"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
-        {ty: "D", st: {mon: 9, d: 15}, inh: "Independence Day", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/guatemala-independence-day/"}},
+        {ty: "D", st: {mon: 9, d: 15}, inh: "IndependenceD", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/guatemala-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 12}, inh: "DOfTheRaces", fst: {era: 1, y: 1917}},
         {inh: "Revolution Day", ty: "D", st: {mon: 10, d: 20}, fst: {era: 1, y: 1944}, urls: {"en":"https://nationaltoday.com/revolution-day-guatemala/"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},

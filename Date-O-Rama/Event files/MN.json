@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day", fst: {era: 1, y: 1996}, urls: {"en":"https://www.officeholidays.com/holidays/mongolia/international-childrens-day"}},
         {ty: "nD", st: {mon: 7, d: 11, durD: 5}, ttls: {"ar":"ألعاب مغولية","as":"নাদম","az":"Naadam","bxr":"Наадам","ca":"Naadam","cs":"Nádam","de":"Naadam","el":"Νάανταμ","en":"Naadam","es":"Naadam","eu":"Naadam","fi":"Naadam","fr":"Naadam","he":"נאדם","hi":"नादाम","id":"Naadam","it":"Naadam","ja":"ナーダム","kk":"Надым","ko":"나담","ky":"Наадам","mn":"Наадам","ms":"Naadam","ne":"नादाम","nl":"Naadam","pl":"Naadam","pt":"Naadam","ru":"Надом","sl":"Naadam","sv":"Naadam","ta":"நாடம்","tr":"Naadam","uk":"Наадам","vi":"Naadam","zh":"那达慕"}, urls: {"en":"https://nationaltoday.com/naadam-holiday/"}, fst: {era: 1, y: 1921}, nts: {"en":"Naadam Holiday","he":"פסטיבל נאדאם","mn":"Үндэсний их баяр наадам\nАрдын хувьсгалын ойн баяр"}},
         {ty: "D", st: {mon: 11, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/mongolia/mongolia-republic-day"}, inh: "Republic Day", fst: {era: 1, y: 2016}},
-        {ty: "D", st: {mon: 12, d: 29}, inh: "Independence Day", fst: {era: 1, y: 1911}, urls: {"en":"https://nationaltoday.com/mongolia-independence-day/"}},
+        {ty: "D", st: {mon: 12, d: 29}, inh: "IndependenceD", fst: {era: 1, y: 1911}, urls: {"en":"https://nationaltoday.com/mongolia-independence-day/"}},
         
         {inh: "Constitution Day", ty: "D", st: {mon: 1, d: 13}},
         {inh: "Patriots’ Day", ty: "D", st: {mon: 3, d: 1}},

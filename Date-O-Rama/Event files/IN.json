@@ -55,7 +55,7 @@
         {ty: "D", st: {mon: 8, d: 13}, urls: {"en":"https://www.officeholidays.com/holidays/india/manipur/manipur-patriots-day"}, ttls: {"en":"Patriot’s Day"}},
         {ty: "D", st: {mon: 7, d: 19, era: 1, y: 2022}, urls: {"en":"https://www.officeholidays.com/holidays/india/haryana/haryana-public-holiday"}, inh: "Public Holiday"},
         {ty: "D", st: {mon: 8, d: 13, era: 1, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/india/haryana/haryana-public-holiday"}, inh: "Public Holiday"},
-        {ty: "D", st: {mon: 8, d: 15}, inh: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/indian-independence-day/"}, fst: {era: 1, y: 1947}},
+        {ty: "D", st: {mon: 8, d: 15}, inh: "IndependenceD", urls: {"en":"https://www.daysoftheyear.com/days/indian-independence-day/"}, fst: {era: 1, y: 1947}},
         {ty: "D", st: {mon: 8, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/india/puducherry/india-puducherry-de-jure-transfer-day"}, ttls: {"en":"De Jure Transfer Day"}},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"Birthday of Bir Bikram Kishore Debbarman"}, urls: {"en":"https://www.officeholidays.com/holidays/india/tripura/birthday-of-bir-bikram-kishore-manikya-bahadur"}, inh: "*BD*", fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 8, d: 20}, ttls: {"en":"Nepali Bhasha Manyata Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/india/sikkim/nepali-bhasha-manyata-diwas"}, fst: {era: 1, y: 2022}},

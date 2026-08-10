@@ -26,7 +26,7 @@
         {ty: "D", st: {mon: 5, d: 21, thruD: 22, wkd: [2]}, inh: "Battle of Las Piedras"},
         {ttls: {"en":"Artigas’ Birthday","es":"Natalicio de Artigas"}, ty: "D", st: {mon: 6, d: 19}, urls: {"en":"https://nationaltoday.com/artigas-birthday-2/"}, fst: {era: 1, y: 1764}, inh: "*BD*"},
         {inh: "Constitution Day", ty: "D", st: {mon: 7, d: 18}, urls: {"en":"https://nationaltoday.com/uruguay-constitution-day/"}, fst: {era: 1, y: 1830}},
-        {inh: "Independence Day", ty: "D", st: {mon: 8, d: 25}, fst: {era: 1, y: 1825}, urls: {"en":"https://nationaltoday.com/uruguay-independence-day/"}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 8, d: 25}, fst: {era: 1, y: 1825}, urls: {"en":"https://nationaltoday.com/uruguay-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 12, wkd: [7, 1, 2]}, nts: {"en":"Day of Cultural Diversity"}, inh: "DOfTheRaces", urls: {"en":"https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, fst: {era: 1, y: 1828}},
         {ty: "D", st: {mon: 10, d: 15, thruD: 16, wkd: [2]}, nts: {"en":"Day of Cultural Diversity"}, inh: "DOfTheRaces", urls: {"en":"https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, fst: {era: 1, y: 1828}},
         {ty: "D", st: {mon: 10, d: 10, thruD: 11, wkd: [2]}, nts: {"en":"Day of Cultural Diversity"}, inh: "DOfTheRaces", urls: {"en":"https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, fst: {era: 1, y: 1828}},

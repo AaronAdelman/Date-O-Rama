@@ -40,7 +40,7 @@
         
         {inh: "Children’s Day", ty: "D", st: {mon: 5, wkd: [1], nth: -1}, fst: {era: 1, y: 1950}},
         {inh: "Heroes’ Day", ty: "D", st: {mon: 5, d: 31}, fst: {era: 1, y: 2001}},
-        {inh: "Independence Day", ty: "D", ttls: {"en":"Day of Hungarian Freedom","hu" :"A magyar szabadság napja"}, st: {wkd: [7], nth: -1, mon: 6}, fst: {era: 1, y: 1991}},
+        {inh: "IndependenceD", ty: "D", ttls: {"en":"Day of Hungarian Freedom","hu" :"A magyar szabadság napja"}, st: {wkd: [7], nth: -1, mon: 6}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
         {ty: "M", st: {mon: 3}, inh: "LGBTQ History Month", fst: {era: 1, y: 2013}},
     ]

@@ -15,8 +15,8 @@
         {ty: "D", st: {misc: "E", offsetD: 40}, ttls: {"en":"Ascension Day (in lieu)"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 6, d: 1}, ttls: {"en":"Pancasila Day","id":"Hari Lahir Pancasila"}, fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 6, d: 2, era: 1, y: 2023}, ttls: {"en":"Waisak Day Holiday"}, urls: {"en":"https://www.officeholidays.com/holidays/indonesia/wesak-day"}},
-        {ty: "D", st: {mon: 8, d: 17}, inh: "Independence Day", urls: {"en":"https://nationaltoday.com/indonesia-independence-day/"}, fst: {era: 1, y: 1945}},
-        {ty: "D", st: {mon: 8, d: 18, wkd: [2]}, inh: "Independence Day (in lieu)", urls: {"en":"https://nationaltoday.com/indonesia-independence-day/"}, fst: {era: 1, y: 1945}},
+        {ty: "D", st: {mon: 8, d: 17}, inh: "IndependenceD", urls: {"en":"https://nationaltoday.com/indonesia-independence-day/"}, fst: {era: 1, y: 1945}},
+        {ty: "D", st: {mon: 8, d: 18, wkd: [2]}, inh: "IndependenceD (IL)", urls: {"en":"https://nationaltoday.com/indonesia-independence-day/"}, fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "XmasHol", urls: {"en":"https://www.officeholidays.com/holidays/indonesia/christmas-holiday"}, fst: {era: 1, y: 2023}},
 

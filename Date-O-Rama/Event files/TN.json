@@ -10,7 +10,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "nD", st: {mon: 1, d: 12}, end: {mon: 1, d: 14}, inh: "Yennayer"},
-        {ty: "D", st: {mon: 3, d: 20}, inh: "Independence Day", fst: {era: 1, y: 1956}, urls: {"en":"https://www.officeholidays.com/holidays/tunisia/tunisia-independence-day"}, inh: "Independence Day"},
+        {ty: "D", st: {mon: 3, d: 20}, inh: "IndependenceD", fst: {era: 1, y: 1956}, urls: {"en":"https://www.officeholidays.com/holidays/tunisia/tunisia-independence-day"}, inh: "IndependenceD"},
         {ty: "D", st: {mon: 4, d: 9}, inh: "Martyrs’ Day", urls: {"en":"https://www.officeholidays.com/holidays/tunisia/tunisia-martyrs-day"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 7, d: 25}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/tunisia-republic-day/"}, fst: {era: 1, y: 1957}},

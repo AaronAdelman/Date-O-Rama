@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, inh: "Memorial Day", urls: {"en":"https://www.daysoftheyear.com/days/memorial-day/"}, fst: {era: 1, y: 1971}, nts: {"en":"Decoration Day"}},
         {ty: "D", st: {mon: 6, d: 19}, inh: "Juneteenth", fst: {era: 1, y: 1886}},
-        {ty: "D", st: {mon: 7, d: 4}, inh: "Independence Day", fst: {era: 1, y: 1776}, urls: {"en":"https://nationaltoday.com/independence-day/"}, nts: {"en":"Fourth of July"}},
+        {ty: "D", st: {mon: 7, d: 4}, inh: "IndependenceD", fst: {era: 1, y: 1776}, urls: {"en":"https://nationaltoday.com/independence-day/"}, nts: {"en":"Fourth of July"}},
         {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, inh: "Labour Day", urls: {"en":"https://www.daysoftheyear.com/days/labor-day/"}, fst: {era: 1, y: 1882}},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, ttls: {"en":"Commonwealth Cultural Day"}, urls: {"en":"https://publicholidays.asia/northern-mariana-islands/commonwealth-cultural-day/"}, fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 11, d: 4}, inh: "Citizenship Day", urls: {"en":"https://publicholidays.asia/northern-mariana-islands/citizenship-day/"}, fst: {era: 1, y: 1986}},

@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 4, d: 7, wkd: [2]}, ttls: {"en":"President Ntaryamira Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/president-ntaryamira-day/"}, inh: "Presidents’ Day", nts: {"en":"Cyprien Ntaryamira Day (in lieu)"}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
-        {ty: "D", st: {mon: 7, d: 1}, inh: "Independence Day", urls: {"en":"https://nationaltoday.com/burundi-independence-day/"}, fst: {era: 1, y: 1962}},
+        {ty: "D", st: {mon: 7, d: 1}, inh: "IndependenceD", urls: {"en":"https://nationaltoday.com/burundi-independence-day/"}, fst: {era: 1, y: 1962}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 13}, ttls: {"en":"Prince Louis Rwagasore Day"}, urls: {"en":"https://nationaltoday.com/prince-louis-rwagasore-day/"}, fst: {era: 1, y: 1961}, nts: {"en":"Rwagasore Day"}},
         {ty: "D", st: {mon: 10, d: 21}, ttls: {"en":"President Ndadaye’s Day"}, urls: {"en":"https://nationaltoday.com/president-ndadayes-day/"}, fst: {era: 1, y: 1993}, inh: "Presidents’ Day", nts: {"en":"Ndadaye Day"}},

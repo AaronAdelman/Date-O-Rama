@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 5, d: 28}, inh: "Republic Day", urls: {"en":"https://www.daysoftheyear.com/days/first-republic-day-in-armenia/"}, nts: {"en":"Day of the First Republic"}, fst: {era: 1, y: 1918}},
         {ty: "D", st: {mon: 7, d: 5}, inh: "Constitution Day", fst: {era: 1, y: 1995}, urls: {"en":"https://www.officeholidays.com/holidays/armenia/armenia-constitution-day"}},
         {ty: "D", st: {mon: 9, d: 12, thruD: 18, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/armenia/armenia-exaltation-of-the-holy-cross"}, inh: "Exaltation of the Holy Cross"},
-        {ty: "D", st: {mon: 9, d: 21}, inh: "Independence Day", urls: {"en":"https://www.daysoftheyear.com/days/independence-day-in-armenia/"}, fst: {era: 1, y: 1991}},
+        {ty: "D", st: {mon: 9, d: 21}, inh: "IndependenceD", urls: {"en":"https://www.daysoftheyear.com/days/independence-day-in-armenia/"}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
 
         {ty: "D", st: {mon: 2, d: 21}, inh: "IMotherLangD", fst: {era: 1, y: 2000}},

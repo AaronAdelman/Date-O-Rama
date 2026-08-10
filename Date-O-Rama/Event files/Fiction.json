@@ -30,7 +30,7 @@
         {ty: "D", st: {mon: 6, d: 25}, inh: "1/2Xmas", nts: {"en":"From Workaholics"}},
         {ty: "D", st: {mon: 6, d: 26}, ttls: {"en":"Murder of Thomas and Martha Wayne"}, nts: {"en":"From Batman"}, inh: "*DA*"},
        {ty: "D", st: {mon: 6, d: 5}, ttls: {"en":"Ferris Bueller’s Day Off"}, nts: {"en":"From Ferris Bueller’s Day Off"}},
-        {ty: "D", st: {mon: 7, d: 4}, ttls: {"en":"Lunar Independence Day"}, nts: {"en":"From The Moon Is A Harsh Mistress"}, inh: "Independence Day"},
+        {ty: "D", st: {mon: 7, d: 4}, ttls: {"en":"Lunar Independence Day"}, nts: {"en":"From The Moon Is A Harsh Mistress"}, inh: "IndependenceD"},
         {ty: "D", st: {mon: 8, d: 15}, ttls: {"en":"Klordny"}, nts: {"en":"From Legion of Superheroes"}},
         {ty: "D", st: {mon: 8, d: 18}, ttls: {"en":"Percy Jackson’s Birthday"}, nts: {"en":"From Percy Jackson and the Olympians"}, inh: "*BD*"},
         {ty: "D", st: {mon: 8, d: 21}, ttls: {"en":"Ozma’s Birthday"}, fst: {era: 1, y: 1909}, inh: "*BD*", urls: {"en":"https://en.wikipedia.org/wiki/Princess_Ozma"}},

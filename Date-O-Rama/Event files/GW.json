@@ -13,7 +13,7 @@
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 8, d: 3}, ttls: {"en":"Pidjiguiti Day"}, urls: {"en":"https://nationaltoday.com/pidjiguiti-day/"}},
-        {inh: "Independence Day", ty: "D", st: {mon: 9, d: 24}, fst: {era: 1, y: 1974}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 9, d: 24}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 11, d: 14}, ttls: {"en":"Readjustment Movement Day"}, fst: {era: 1, y: 1980}, urls: {"en":"https://www.officeholidays.com/holidays/guinea-bissau/readjustment-movement-day"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 

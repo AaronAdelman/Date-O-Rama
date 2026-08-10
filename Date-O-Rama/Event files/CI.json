@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "WhitMon"},
-        {inh: "Independence Day", ty: "D", st: {mon: 8, d: 7}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/cote-divoire-independence-day/"}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 8, d: 7}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/cote-divoire-independence-day/"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ttls: {"en":"National Peace Day"}, ty: "D", st: {mon: 11, d: 15}, fst: {era: 1, y: 1996}, mog: "☮️"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

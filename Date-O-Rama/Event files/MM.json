@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Myanmar"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 1, d: 4}, inh: "Independence Day", fst: {era: 1, y: 1948}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
+        {ty: "D", st: {mon: 1, d: 4}, inh: "IndependenceD", fst: {era: 1, y: 1948}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
         {ty: "D", st: {mon: 2, d: 12}, inh: "Union Day", urls: {"en":"https://nationaltoday.com/union-day/"}, fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 2, d: 13, wkd: [6]}, ttls: {"en":"Union Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/myanmar-union-day"}, fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 3, d: 2}, ttls: {"en":"Peasants’ Day","he":"יום האיכרים","my":"တောင်သူလယ်သမားနေ့"}, urls: {"en":"https://nationaltoday.com/peasants-day/"}, nts: {"en":"Peasants Day"}, fst: {era: 1, y: 2000}},

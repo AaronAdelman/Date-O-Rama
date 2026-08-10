@@ -10,7 +10,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {inh: "Independence Day", ty: "D", st: {mon: 6, d: 27}, urls: {"en":"https://nationaltoday.com/djibouti-independence-day/"}, fst: {era: 1, y: 1977}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 6, d: 27}, urls: {"en":"https://nationaltoday.com/djibouti-independence-day/"}, fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
         {ty: "D", st: {mon: 3, d: 21}, inh: "Mother’s Day"},

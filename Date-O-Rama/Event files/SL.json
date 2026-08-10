@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {inh: "Independence Day", ty: "D", st: {mon: 4, d: 27}, urls: {"en":"https://nationaltoday.com/sierra-leone-independence-day/"}, fst: {era: 1, y: 1961}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 4, d: 27}, urls: {"en":"https://nationaltoday.com/sierra-leone-independence-day/"}, fst: {era: 1, y: 1961}},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 26}, inh: "Boxing Day"},

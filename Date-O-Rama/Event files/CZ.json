@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1918},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Czech_Republic"},
     evts: [
-        {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Restoration Day","cs":"Den obnovy samostatného českého státu"}, inh: "Independence Day", fst: {era: 1, y: 1993}},
+        {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Restoration Day","cs":"Den obnovy samostatného českého státu"}, inh: "IndependenceD", fst: {era: 1, y: 1993}},
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 7, d: 6}, ttls: {"en":"Jan Hus Day","cs":"Den upálení mistra Jana Husa"}, urls: {"en":"https://nationaltoday.com/jan-hus-day-in-czech-republic/"}, fst: {era: 1, y: 1925}},
         {ty: "D", st: {mon: 8, d: 21}, urls: {"en":"https://www.officeholidays.com/holidays/czech-republic/day-of-memory"}, ttls: {"en":"Day of Memory"}},
         {ty: "D", st: {mon: 9, d: 28}, inh: "Statehood Day", fst: {era: 1, y: 2000}, urls: {"en":"https://www.daysoftheyear.com/days/czech-statehood-day/"}, nts: {"en":"Saint Wenceslas Day"}},
-        {ty: "D", st: {mon: 10, d: 28}, ttls: {"en":"Independent Czechoslovak State Day","cs":"Den vzniku samostatného československého státu"}, inh: "Independence Day", fst: {era: 1, y: 1918}, urls: {"en":"https://www.daysoftheyear.com/days/czech-independence-day/"}, nts: {"en":"Founding Day\nCzech Founding Day"}},
+        {ty: "D", st: {mon: 10, d: 28}, ttls: {"en":"Independent Czechoslovak State Day","cs":"Den vzniku samostatného československého státu"}, inh: "IndependenceD", fst: {era: 1, y: 1918}, urls: {"en":"https://www.daysoftheyear.com/days/czech-independence-day/"}, nts: {"en":"Founding Day\nCzech Founding Day"}},
         {ty: "D", st: {mon: 11, d: 17}, inh: "Struggle for Freedom and Democracy Day", urls: {"en":"https://www.daysoftheyear.com/days/struggle-for-freedom-and-democracy-day/"}, fst: {era: 1, y: 1989}},
         {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},

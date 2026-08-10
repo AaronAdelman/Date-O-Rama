@@ -27,7 +27,7 @@
         {ty: "D", st: {misc: "E", offsetD: 68}, inh: "Sacred Heart"},
         {ty: "D", st: {mon: 6, d: 29}, urls: {"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inh: "StsPeter&Paul"},
         {ty: "D", st: {mon: 6, d: 30, thruMon: 7, thruD: 5, wkd: [2]}, inh: "StsPeter&Paul (IL)", urls: {"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}},
-        {ty: "D", st: {mon: 7, d: 20}, inh: "Independence Day", fst: {era: 1, y: 1810}, urls: {"en":"https://www.daysoftheyear.com/days/colombias-independence-day/"}},
+        {ty: "D", st: {mon: 7, d: 20}, inh: "IndependenceD", fst: {era: 1, y: 1810}, urls: {"en":"https://www.daysoftheyear.com/days/colombias-independence-day/"}},
         {ty: "D", st: {mon: 8, d: 7}, ttls: {"en":"Battle of Boyacá Day"}, urls: {"en":"https://nationaltoday.com/battle-of-boyaca/"}, fst: {era: 1, y: 1819}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ttls: {"en":"Assumption Day (in lieu)"}, ty: "D", st: {mon: 8, d: 15, thruD: 21, wkd: [2]}},

@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/ukraine/mothers-day"}},
         {ty: "D", st: {mon: 6, d: 28}, urls: {"en":"https://nationaltoday.com/ukraine-constitution-day/"}, inh: "Constitution Day", fst: {era: 1, y: 1996}},
         {ty: "D", st: {mon: 7, d: 15}, urls: {"en":"https://www.officeholidays.com/holidays/ukraine/day-of-ukrainian-statehood"}, ttls: {"en":"Day of Ukrainian Statehood","uk":"День Української Державності"}, inh: "Baptism Day of Kyivan Rus", fst: {era: 1, y: 2023}},
-        {inh: "Independence Day", ty: "D", st: {mon: 8, d: 24}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/ukraine-independence-day/"}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 8, d: 24}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/ukraine-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"en":"Ukraine Defender Day","uk":"День захисників і захисниць України"}, nts: {"en":"Defenders Day\nDefenders of Ukraine Day\nDay of the Defender"}, urls: {"en":"https://www.daysoftheyear.com/days/ukraine-defender-day/"}, fst: {era: 1, y: 2015}, nts: {"en":"Created by Petro Poroshenko"}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         

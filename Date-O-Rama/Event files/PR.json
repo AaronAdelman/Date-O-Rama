@@ -20,7 +20,7 @@
         {ty: "D", st: {mon: 5, wkd: [1], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/mothers-day"}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/memorial-day"}, inh: "Memorial Day"},
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/fathers-day"}, inh: "Father’s Day"},
-        {ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/usa-independence-day"}, inh: "Independence Day"},
+        {ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/usa-independence-day"}, inh: "IndependenceD"},
         {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/labor-day"}, inh: "Labour Day"},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/columbus-day"}, inh: "Columbus Day"},
         {ty: "D", st: {era: 1, y: 2024, mon: 11, d: 5}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/puerto-rico-election-day"}},

@@ -14,7 +14,7 @@
         {ty: "nD", st: {mon: 3, d: 21}, end: {mon: 3, d: 22}, inh: "Nowruz", urls: {"en":"https://www.officeholidays.com/holidays/turkmenistan/novruz"}},
         {ty: "D", st: {mon: 3, d: 23, wkd: [2]}, inh: "Nowruz (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/turkmenistan/novruz"}},
         {ty: "D", st: {mon: 5, d: 18}, ttls: {"en":"State Flag and Constitution Day","ru":"День Государственного флага Туркменистана","uz":"Turkmaniston Davlat bayrog‘i kuni"}, urls: {"en":"https://nationaltoday.com/state-flag-of-turkmenistan-day/"}, fst: {era: 1, y: 1992}, inh: "Flag Day", nts: {"en":"State Flag Day\nConstitution and Flag Day\nState Flag and Constitution Day\nDay of the State Flag of Turkmenistan"}},
-        {ty: "D", st: {mon: 9, d: 27}, inh: "Independence Day", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/turkmenistan-independence-day/"}},
+        {ty: "D", st: {mon: 9, d: 27}, inh: "IndependenceD", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/turkmenistan-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 6}, ttls: {"en":"Earthquake Memorial Day"}, urls: {"en":"https://nationaltoday.com/turkmenistan-earthquake-memorial-day/"}, fst: {era: 1, y: 1995}, mog: "🐂", nts: {"en":"Day of Remembrance"}},
         {ty: "D", st: {mon: 12, d: 12}, ttls: {"ar":"يوم الحياد","en":"Day of Neutrality","ru":"День нейтралитета Туркменистана","th":"วันแห่งความเป็นกลาง","tk":"Bitaraplyk baýramy","he":"יום הנייטרליות"}, urls: {"en":"https://www.officeholidays.com/holidays/turkmenistan/neutrality-day"}, nts: {"en":"Neutrality Day"}, fst: {era: 1, y: 1995}},
         {ty: "D", st: {mon: 12, d: 12}, ttls: {"en":"Students Day"}, fst: {era: 1, y: 2003}, mog: "👨‍🎓👩‍🎓"},

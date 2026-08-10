@@ -36,7 +36,7 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 9, d: 25}, locs: {"en":"Oosterhout"}},
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 5, d: 4}, inh: "Martyrs’ Day", ttls: {"de":"Nationale Dodenherdenking","en":"Remembrance of the Dead","eo":"Rememoro de la mortintoj en Nederlando","fr":"Journée nationale du Souvenir","fy":"Nasjonale Deadebetinking","he":"יום הזיכרון","id":"Hari Peringatan Nasional (Belanda)","li":"Doeëjeherdeenking","ms":"Peringatan untuk Yang Terkorban","nds-nl":"Naasjonoale Dodenweerdenken","nl":"Nationale Dodenherdenking","pap":"Nationale Dodenherdenking","ru":"День поминовения","sv":"Nationella dagen för åminnelse av döda"}, urls: {"en":"https://nationaltoday.com/national-remembrance-day-in-netherlands/"}, fst: {era: 1, y: 1945}},
-        {ty: "D", st: {mon: 7, d: 26}, inh: "Independence Day", fst: {era: 1, y: 1581}},
+        {ty: "D", st: {mon: 7, d: 26}, inh: "IndependenceD", fst: {era: 1, y: 1581}},
         {ty: "D", st: {mon: 2, d: 14}, inh: "Valentine’s Day", fst: {era: 1, y: 496}},
         {ty: "D", st: {mon: 9, wkd: [3], nth: 4}, inh: "NCoffeeD"},
         {ty: "M", st: {mon: 10}, inh: "Black History Month"},

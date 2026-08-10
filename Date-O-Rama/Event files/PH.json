@@ -21,7 +21,7 @@
         {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"Day of Valor","fil":"Araw ng Kagitingan"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}},
         {ty: "D", st: {mon: 4, d: 10, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}, ttls: {"en":"Day of Valor (in lieu)"}},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/philippines-labor-day/"}, inh: "Labour Day", fst: {era: 1, y: 1913}},
-        {inh: "Independence Day", ty: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/philippines-independence-day/"}, fst: {era: 1, y: 1898}},
+        {inh: "IndependenceD", ty: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/philippines-independence-day/"}, fst: {era: 1, y: 1898}},
         {ty: "D", st: {mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, ttls: {"en":"Manila Day"}},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"Manuel Luis Quezón Day","fil":"Kaarawan ni Manuel Luis Quezón","he":"יום מנואל קזון"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/philippines/quezon/philippines-birthday-quezon"}, nts: {"en":"Birthday of Manuel L. Quezon","he":"יום הולדת של מנואל קזון"}},
         {st: {mon: 8, d: 21}, ty: "D", ttls: {"en":"Ninoy Aquino Day","he":"יום בניגנו אקינו הבן","fil":"Araw ng Kabayanihan ni Ninoy Aquino"}, urls: {"en":"https://nationaltoday.com/ninoy-aquino-day/"}, fst: {era: 1, y: 2004}},
