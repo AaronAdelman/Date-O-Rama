@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 2, d: 10}, ttls: {"en":"Feast of Saint Paul’s Shipwreck","mt":"Nawfraġju ta’ San Pawl"}, urls: {"en":"https://nationaltoday.com/feast-of-st-pauls-shipwreck/"}, nts: {"mt":"San Pawl Nawfragu"}},
         {ty: "D", st: {mon: 3, d: 19}, inh: "StJoseph"},
         {ty: "D", st: {mon: 3, d: 31}, inh: "Freedom Day", urls: {"en":"https://www.officeholidays.com/holidays/malta/malta-freedom-day"}, fst: {era: 1, y: 1979}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/malta/labour-day"}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},

@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/uganda/nrm-liberation-day"}, ttls: {"en":"NRM Liberation Day"}, fst: {era: 1, y: 1986}},
         {ty: "D", st: {mon: 2, d: 16}, urls: {"en":"https://nationaltoday.com/archbishop-janani-luwum-day/"}, ttls: {"en":"Archbishop Janani Luwum Day"}, fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD", urls: {"en":"https://www.officeholidays.com/holidays/uganda/international-womens-day"}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/uganda/labour-day"}},

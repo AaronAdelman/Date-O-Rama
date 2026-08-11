@@ -325,7 +325,7 @@
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Holy Tue"},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Holy Wed"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

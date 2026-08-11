@@ -11,7 +11,7 @@
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 3, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "DAfterNYD"},
         {ty: "D", st: {mon: 1, d: 4, wkd: [3]}, urls: {"en":"https://www.officeholidays.com/holidays/samoa/day-after-new-years-day"}, inh: "DAfterNYD"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

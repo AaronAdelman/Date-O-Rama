@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 2, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/cebu/cebu-city-charter-day"}, ttls: {"en":"Cebu City Charter Day","fil":"Araw ng Pribilehiyo ng Lungsod ng Cebu"}, fst: {era: 1, y: 1992}},
         {ty: "D", st: {mon: 3, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/davao/davao-city-day"}, ttls: {"en":"Davao City Day","fil":"Araw ng Dabaw"}, fst: {era: 1, y: 1936}},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat", urls: {"en":"https://www.daysoftheyear.com/days/black-saturday/"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"Day of Valor","fil":"Araw ng Kagitingan"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}},

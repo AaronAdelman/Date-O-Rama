@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Odisha Day"}, nts: {"en":"Utkal Dibasa"}, urls: {"en":"https://nationaltoday.com/odisha-day/"}, fst: {era: 1, y: 2011}},
         {ty: "D", st: {mon: 4, d: 5}, urls: {"en":"https://www.officeholidays.com/holidays/india/babu-jagjivan-ram-birthday"}, ttls: {"en":"Babu Jagjivan Ram’s Birthday"}, inh: "*BD*"},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 11}, urls: {"en":"https://www.officeholidays.com/holidays/india/rajasthan/mahatma-jyotiba-phule-jayanti"}, ttls: {"en":"Mahatma Jyotiba Phule Jayanti"}, inh: "*BD*", fst: {era: 1, y: 2023}},
         {ty: "nD", st: {mon: 4, d: 13}, end: {mon: 4, d: 15}, ttls: {"en":"Biju Festival"}, urls: {"en":"https://www.officeholidays.com/holidays/india/tripura/biju-festival"}, nts: {"en":"Bishu\nBizu"}},

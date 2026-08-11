@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 2}, urls: {"en":"https://nationaltoday.com/ancestry-day/"}, ttls: {"en":"Ancestry Day","fr":"Jour des Aieux"}},
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Carnival Tue", urls: {"en":"https://www.officeholidays.com/holidays/haiti/carnival-tuesday"}},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/labour-and-agriculture-day/"}, ttls: {"en":"Labour and Agriculture Day","fr":"Fête du Travail"}, fst: {era: 1, y: 1890}, inh: "Labour Day", nts: {"fr":"Fête des Travailleurs"}},
         {ty: "D", st: {mon: 5, d: 18}, urls: {"en":"https://nationaltoday.com/haitian-flag-day/"}, inh: "Flag Day"},

@@ -92,7 +92,7 @@
         {ty: "D", inh: "Truant’s Day", st: {mon: 3, d: 21}},
         {ty: "D", ttls: {"en":"ABW Day"}, st: {mon: 4, d: 6}, fst: {era: 1, y: 2004}},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E", offsetD: 1}, ttls: {"be":"Палівальны панядзелак","cs":"Oblévačka","de":"Śmigus-dyngus","el":"Σμίγκους-ντίνγκους","en":"Śmigus-dyngus","es":"Śmigus-dyngus","fr":"Śmigus-dyngus","hu":"Locsolás","it":"Śmigus-dyngus","lb":"Śmigus-dyngus","nl":"Śmigus-dyngus","pl":"Śmigus-dyngus","ru":"Поливальный понедельник","sk":"Oblievačka","uk":"Поливаний понеділок","vi":"Śmigus-dyngus"}, nts: {"en":"Dyngus Day\nWet Easter Monday"}, urls: {"en":"https://www.daysoftheyear.com/days/dyngus-day/"}, inh: "Easter Mon", fst: {era: 1, y: 1420}, mog: "💦"},
         {ty: "D", ttls: {"en":"Warsaw Ghetto Uprising"}, st: {mon: 4, d: 19}},

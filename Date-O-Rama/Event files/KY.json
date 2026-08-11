@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/cayman-islands/international-new-years-day"}, inh: "NYD (in lieu)"},
         {inh: "NHeroesD", ty: "D", st: {mon: 1, wkd: [2], nth: 4}},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 8, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/cayman-islands/king-charles-iiis-coronation"}, inh: "King Charles III’s Coronation"},

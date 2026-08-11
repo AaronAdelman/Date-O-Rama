@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {inh: "GreekIndependenceD", ty: "D", st: {mon: 3, d: 25}, fst: {era: 1, y: 1821}},
         {ty: "D", st: {mon: 4, d: 1}, urls: {"en":"https://nationaltoday.com/cyprus-national-holiday/"}, inh: "ND"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat", urls: {"en":"https://nationaltoday.com/easter-saturday/"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},

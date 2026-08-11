@@ -9,7 +9,7 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 3, d: 5}, inh: "Missionary Day", urls: {"en":"https://www.officeholidays.com/holidays/french-polynesia/french-polynesian-missionary-day"}, fst: {era: 1, y: 1978}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

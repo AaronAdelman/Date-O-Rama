@@ -7,7 +7,7 @@
     fst: {era: 1, y: 1648},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 5, d: 8}, urls: {"en":"https://www.officeholidays.com/holidays/saint-martin/v-e-day"}, inh: "Victory Day"},
@@ -24,7 +24,7 @@
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
         {ty: "D", st: {misc: "E", offsetD: -31}, inh: "Mid-Lent"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
 
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
     ]

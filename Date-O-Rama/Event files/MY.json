@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 2, d: 2, wkd: [2]}, ttls: {"en":"Federal Territory Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/federal-territory-day"}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 3, d: 4}, ttls: {"en":"Anniversary of the Coronation of the Sultan of Terengganu","ms":"Hari Ulang Tahun Pertabalan Sultan Terengganu"}, urls: {"en":"https://nationaltoday.com/anniversary-of-the-coronation-of-the-sultan-of-terengganu/"}, fst: {era: 1, y: 1999}, inh: "*Coron*", nts: {"en":"Anniversary of Installation of the Sultan"}},
         {ty: "D", st: {mon: 3, d: 23}, ttls: {"en":"Birthday of the Sultan of Johor","ms":"Hari Keputeraan Sultan Johor"}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/johor/birthday-of-the-sultan-of-johor"}, inh: "*BD*", fst: {era: 1, y: 2015}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 15}, urls: {"en":"https://nationaltoday.com/declaration-of-malacca-as-a-historical-city/"}, ttls: {"en":"Declaration of Malacca as a Historical City","ms":"Hari Perisytiharan Bandar Melaka sebagai Bandaraya Bersejarah"}, fst: {era: 1, y: 2006}, mog: "🏙️"},
         {ty: "D", st: {mon: 4, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/malaysia/terengganu/birthday-of-the-sultan-of-terengganu"}, ttls: {"en":"Birthday of the Sultan of Terengganu","ms":"Hari Keputeraan Sultan Terengganu"}, inh: "*BD*", fst: {era: 1, y: 2007}},

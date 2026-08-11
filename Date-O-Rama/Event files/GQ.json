@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Equatorial_Guinea"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
         {ty: "D", st: {mon: 6, d: 5}, urls: {"en":"https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, inh: "President’s Day"},

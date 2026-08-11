@@ -368,7 +368,7 @@
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Food Safety Education Month"}, urls: {"en":"https://nationaltoday.com/national-food-safety-education-month/"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Food Service Safety Month","he":"חודש בטיחות שירותי המזון הלאומי"}, urls: {"en":"https://foodsafetyfocus.com/national-food-safety-month-2025"}, mog: "👨‍🍳👩‍🍳", fst: {era: 1, y: 1994}, nts: {"en":"Created by the National Restaurant Association"}},
        {ty: "M", st: {mon: 9}, ttls: {"en":"National Fruits & Veggies Month"}, urls: {"en":"https://fruitsandveggies.org/stories/nfvm/"}, nts: {"en":"NFVM"}, fst: {era: 1, y: 2019}, mog: "🟢"},
-        {ty: "M", st: {mon: 9}, ttls: {"en":"National Honey Month"}, urls: {"en":"https://www.honey.com/"}, mog: "🍯", nts: {"en":"Created by the National Honey Board"}, fst: {era: 1, y: 1989}},
+       {ty: "M", st: {mon: 9}, ttls: {"en":"National Honey Month","id":"Bulan Madu Nasional","ta":"தேசிய தேன் மாதம்"}, urls: {"en":"https://www.honey.com/"}, mog: "🍯", nts: {"en":"Created by the National Honey Board"}, fst: {era: 1, y: 1989}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National ITP Awareness Month"}, urls: {"en":"https://nationaltoday.com/national-itp-awareness-month/"}, fst: {era: 1, y: 2010}, inh: "*MedAw*"},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Little League Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-little-league-month/"}, fst: {era: 1, y: 1939}, nts: {"en":"Created by Carl E. Stotz"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Mushroom Month"}, urls: {"en":"https://www.daysoftheyear.com/days/mushroom-month/"}, mog: "🍄‍🟫🍄"},

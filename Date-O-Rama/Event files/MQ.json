@@ -28,7 +28,7 @@
         {ty: "D", st: {misc: "E", offsetD: -47}, inh: "Shrove Tue"},
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
         {ty: "D", st: {misc: "E", offsetD: -31}, inh: "Mid-Lent"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
 
     ]
 }

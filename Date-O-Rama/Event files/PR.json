@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 3, d: 2}, ttls: {"en":"American Citizenship Day","es":"Día de la Ciudadanía Americana"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
         {ty: "D", st: {mon: 3, d: 3, wkd: [2]}, ttls: {"en":"American Citizenship Day (in lieu)"}, fst: {era: 1, y: 1917}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/american-citizenship-day"}},
         {ty: "D", st: {mon: 3, d: 22}, inh: "Emancipation Day", urls: {"en":"https://nationaltoday.com/emancipation-day-puerto-rico/"}, fst: {era: 1, y: 1873}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/good-friday"}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/good-friday"}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/mothers-day"}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 5, wkd: [2], nth: -1}, urls: {"en":"https://www.officeholidays.com/holidays/puerto-rico/memorial-day"}, inh: "Memorial Day"},

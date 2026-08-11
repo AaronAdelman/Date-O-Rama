@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 2, d: 23}, inh: "Republic Day", urls: {"en":"https://nationaltoday.com/guyana-republic-day/"}, fst: {era: 1, y: 1970}},
         {ty: "D", st: {mon: 2, d: 24, wkd: [2]}, inh: "Republic Day (in lieu)", urls: {"en":"https://nationaltoday.com/guyana-republic-day/"}, fst: {era: 1, y: 1970}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

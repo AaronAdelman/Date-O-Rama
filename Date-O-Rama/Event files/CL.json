@@ -9,7 +9,7 @@
     evts: [
         {ty: "D", st:  {mon: 1, d: 1}, inh: "NYD"},
         {inh: "NYD (in lieu)", ty: "D", st:  {mon: 1, d: 2}},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},

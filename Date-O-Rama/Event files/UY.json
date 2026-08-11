@@ -15,7 +15,7 @@
         {ty: "D", st: {misc: "E", offsetD: -5}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/uruguay-tourism-week"}},
         {ty: "D", st: {misc: "E", offsetD: -4}, inh: "Bank Holiday", urls: {"en":"https://www.officeholidays.com/holidays/uruguay/uruguay-tourism-week"}},
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 19, wkd: [7, 1, 2]}, inh: "Landing of the 33 Patriots Day"},
         {ty: "D", st: {mon: 4, d: 17, thruD: 18, wkd: [2]}, inh: "Landing of the 33 Patriots Day"},

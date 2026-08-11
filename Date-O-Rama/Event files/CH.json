@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {mon: 3, d: 1}, inh: "Republic Day", urls: {"en":"https://www.officeholidays.com/holidays/switzerland/neuchatel/switzerland-republic-day"}},
         {ty: "D", st: {mon: 3, d: 19}, inh: "StJoseph"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, wkd: [5], nth: 1}, urls: {"en":"https://nationaltoday.com/nafelser-fahrt/"}, ttls: {"en":"Näfelser Fahrt"}, nts: {"en":"Näfels Ride"}},

@@ -10,7 +10,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {mon: 1, d: 2, wkd: [2]}, inh: "NYD (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/british-virgin-islands/international-new-years-day"}},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 1}, ttls: {"en":"Lavity Stoutt’s Birthday"}, urls: {"en":"https://nationaltoday.com/lavity-stoutts-birthday/"}, fst: {era: 1, y: 1929}, nts: {"en":"Hamilton Lavity Stoutt’s Birthday"}, inh: "*BD*"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "Good Fri"},
+        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 5, d: 8, y: 2023}, urls: {"en":"https://www.officeholidays.com/holidays/british-virgin-islands/king-charles-iiis-coronation"}, inh: "King Charles III’s Coronation"},
