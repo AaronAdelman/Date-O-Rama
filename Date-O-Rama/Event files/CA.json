@@ -159,7 +159,7 @@
         {ty: "D", st: {mon: 5, d: 5}, ttls: {"en":"Dutch Heritage Day"}, fst: {era: 1, y: 2019}, urls: {"en":"https://en.wikipedia.org/wiki/Canada–Netherlands_relations"}, mog: "🇳🇱🇨🇦"},
         {ty: "D", cal: "Hebrew", st: {mon: 8, d: 27}, inh: "Holocaust Day"},
         {ty: "D", st: {mon: 8, wkd: [7], nth: 1}, ttls: {"en":"Food Day Canada"}, fst: {era: 1, y: 2003}, urls: {"en":"https://www.fooddaycanada.ca/"}, mog: "🍇🍟🍞", nts: {"en":"Created by Anita Stewart"}},
-        {ty: "M", st: {mon: 9}, inh: "NDystonia AwMon", urls: {"en":"https://dystoniacanada.org/dystoniaawarenessmonth"}, fst: {era: 1, y: 2016}},
+        {ty: "M", st: {mon: 9}, inh: "NDystoniaAwMon", urls: {"en":"https://dystoniacanada.org/dystoniaawarenessmonth"}, fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 10, d: 11}, inh: "NCOD", fst: {era: 1, y: 1988}},
         {ty: "M", st: {mon: 10}, inh: "LGBTQ History Month", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 11, d: 23, thruD: 29, wkd: [6]}, inh: "Buy Nothing Day", fst: {era: 1, y: 1997}},

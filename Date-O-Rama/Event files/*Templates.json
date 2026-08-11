@@ -392,7 +392,7 @@
         "NDonutD": {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, ttls: {"en":"National Donut Day","hy":"Փքաբլիթի ազգային օր","id":"Hari Donat Nasional","ja":"ドーナツの日","ko":"도넛의 날","ru":"Национальный день пончика","zh":"甜甜圈日","he":"יום הדונאט הלאומי"}, nts: {"en":"National Doughnut Day"}, mog: "🍩", urls: {"en":"https://en.wikipedia.org/wiki/National_Doughnut_Day"}},
         "NDoorbellD": {ty: "D", st: {mon: 10, d: 31}, urls: {"en":"https://www.nationaldaycalendar.com/national-day/national-doorbell-day-october-31"}, ttls: {"en":"National Doorbell Day"}, nts: {"en":"Created by NuTone"}},
         "NDressD": {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, ttls: {"en":"National Dress Day"}},
-        "NDystonia AwMon": {ty: "M", st: {mon: 9}, ttls: {"en":"National Dystonia Awareness Month"}, inh: "*MedAw*", nts: {"en":"Created by the US Senate"}},
+        "NDystoniaAwMon": {ty: "M", st: {mon: 9}, ttls: {"en":"National Dystonia Awareness Month"}, inh: "*MedAw*", nts: {"en":"Created by the US Senate"}},
         "NEducationD": {ty: "D", st: {mon: 11, d: 11}, ttls: {"en":"National Education Day","id":"Hari Pendidikan Nasional","he":"יום החינוך הלאומי"}, mog: "👨‍🏫👩‍🏫"},
         "NElectricityD": {ty: "D", st: {mon: 10, d: 27}, ttls: {"en":"National Electricity Day","id":"Hari Listrik Nasional"}, mog: "🔋"},
         "NFamilyD": {ty: "D", st: {mon: 6, d: 29}, inh: "Family Day", ttls: {"en":"National Family Day","he":"יום המשפחה הלאומי","id":"Hari Keluarga Nasional"}},

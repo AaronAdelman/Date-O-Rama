@@ -365,6 +365,7 @@
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Courtesy Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-courtesy-month/"}, fst: {era: 1, y: 2000}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Disease Literacy Month"}, urls: {"en":"https://www.daysoftheyear.com/days/national-disease-literacy-month/"}, inh: "*MedAw*"},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National DMV Appreciation Month"}, urls: {"en":"https://donatelife.net/updates/september-is-dmv-appreciation-month/"}, nts: {"en":"Created by Donate Life America"}},
+        {ty: "M", st: {mon: 9}, ttls: {"en":"Sports Eye Safety Month"}, urls: {"en":"https://www.daysoftheyear.com/days/sports-eye-safety-month/"}, nts: {"en":"Created by by the American Academy of Ophthalmology (AAO)"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Food Safety Education Month"}, urls: {"en":"https://nationaltoday.com/national-food-safety-education-month/"}},
         {ty: "M", st: {mon: 9}, ttls: {"en":"National Food Service Safety Month","he":"חודש בטיחות שירותי המזון הלאומי"}, urls: {"en":"https://foodsafetyfocus.com/national-food-safety-month-2025"}, mog: "👨‍🍳👩‍🍳", fst: {era: 1, y: 1994}, nts: {"en":"Created by the National Restaurant Association"}},
        {ty: "M", st: {mon: 9}, ttls: {"en":"National Fruits & Veggies Month"}, urls: {"en":"https://fruitsandveggies.org/stories/nfvm/"}, nts: {"en":"NFVM"}, fst: {era: 1, y: 2019}, mog: "🟢"},
