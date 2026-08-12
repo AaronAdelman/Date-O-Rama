@@ -66,7 +66,7 @@
         {ty: "D", st: {mon: 2, d: 15}, ttls: {"en":"Lupercalia Transmogrified"}, inh: "HDH"},
         {ty: "D", st: {mon: 2, d: 15}, ttls: {"en":"Springfield Day"}, nts: {"en":"Whollyday\n46 Chaos"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-46-springfield-day"}},
         {ty: "D", st: {mon: 2, d: 18}, ttls: {"en":"The Mary Day"}, nts: {"en":"Whollyday\n49 Chaos"}, inh: "EDH"},
-        {ty: "D", st: {mon: 2, d: 20}, inh: "NLove Your Pet Day", nts: {"en":"Pet Loving Day\nWhollyday\n51 Chaos"}, urls: {"en":"https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}, fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 2, d: 20}, inh: "NLuvYourPetD", nts: {"en":"Pet Loving Day\nWhollyday\n51 Chaos"}, urls: {"en":"https://discordia.loveshade.org/ek-sen-trik-kuh/holydays/"}, fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 2, d: 23}, ttls: {"en":"Didyme’s Day"}, nts: {"en":"Didyma’s Day"}, urls: {"en":"https://www.fsofcabal.com/holydays/01-54-didymas-day"}},
         {ty: "D", st: {mon: 3, d: 3}, ttls: {"en":"Pass Day"}, inh: "HDH"},
         {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Self-Esteem Day"}, inh: "HDH"},

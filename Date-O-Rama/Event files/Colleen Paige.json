@@ -8,8 +8,8 @@
     evts: [
         {ty: "D", st: {mon: 1, d: 2}, ttls: {"en":"National Pet Travel Safety Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-pet-travel-safety-day/"}, mog: "🐈‍⬛🐇🐕"},
         {ty: "D", st: {mon: 1, d: 14}, ttls: {"en":"National Dress Up Your Pet Day","he":"יום ״הלבש את חיית המחמד שלך״ הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/dress-up-your-pet-day/"}, fst: {era: 1, y: 2009}, mog: "🐈‍⬛", nts: {"en":"Created by Colleen Paige"}},
-        {ty: "D", st: {mon: 2, d: 20}, inh: "NLove Your Pet Day", fst: {era: 1, y: 2006}},
-        {ty: "D", st: {mon: 2, d: 22}, inh: "​National Wildlife Day", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 2, d: 20}, inh: "NLuvYourPetD", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 2, d: 22}, inh: "​NWildlifeD", fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 3, d: 1}, ttls: {"en":"National Horse Protection Day"}, nts: {"en":"World Horse Day"}, urls: {"en":"http://www.horseprotectionday.com/"}, fst: {era: 1, y: 2005}, mog: "🐴"},
         {ty: "D", st: {mon: 3, d: 23}, ttls: {"en":"National Puppy Day","he":"יום הגורים הלאומי"}, urls: {"en":"https://www.nationalpuppyday.com/"}, fst: {era: 1, y: 2006}, mog: "🐶"},
         {ty: "D", st: {mon: 4, d: 10}, ttls: {"en":"National Farm Animals Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-farm-animals-day/"}, fst: {era: 1, y: 2005}, mog: "🐄"},
@@ -23,8 +23,8 @@
         {ty: "D", st: {mon: 8, d: 26}, ttls: {"en":"National Dog Day","he":"יום הכלב הלאומי","nl":"Hondendag"}, nts: {"en":"International Dog Day"}, fst: {era: 1, y: 2004}, mog: "🦮", urls: {"en":"https://www.nationaldogday.com/"}, nts: {"en":"Created by Colleen Paige"}},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"National Beach Day","he":"יום החוף הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/national-beach-day/"}, fst: {era: 1, y: 2014}, mog: "🏖️"},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"National Holistic Pet Day"}, nts: {"en":"Promotes pseudoscience for pet care."}, urls: {"en":"https://skepdic.com/holistic.html"}},
-        {ty: "D", st: {mon: 7, d: 31}, inh: "​National Wildlife Day", fst: {era: 1, y: 2006}},
-        {ty: "D", st: {mon: 9, d: 4}, inh: "​National Wildlife Day", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 7, d: 31}, inh: "​NWildlifeD", fst: {era: 1, y: 2006}},
+        {ty: "D", st: {mon: 9, d: 4}, inh: "​NWildlifeD", fst: {era: 1, y: 2006}},
         {ty: "nD", st: {mon: 10, d: 1}, end: {mon: 10, d: 7}, ttls: {"en":"National Walk Your Dog Week"},urls: {"en":"http://www.walkyourdogweek.com/"},  mog: "🦮", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"en":"National Black Dog Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-black-dog-day/"}, fst: {era: 1, y: 2011}, mog: "🐕‍🦺"},
         {ty: "D", st: {mon: 10, d: 2}, ttls: {"en":"Canine Companion Day"}, urls: {"en":"https://www.daysoftheyear.com/days/canine-companion-day/"}, fst: {era: 1, y: 2004}, mog: "🐶"},
@@ -33,6 +33,6 @@
     ],
     tpls: {
         "NMuttD": {ty: "D", st: {mon: 7, d: 31}, ttls: {"en":"National Mutt Day","he":"יום הכלב המעורב"}, urls: {"en":"https://www.nationalmuttday.com/"}, mog: "🐶", nts: {"en":"National Mixed Breed Dog Day"}},
-        "​National Wildlife Day": {ty: "D", st: {mon: 9, d: 4}, ttls: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, mog: "🐸"},
+        "​NWildlifeD": {ty: "D", st: {mon: 9, d: 4}, ttls: {"en":"National Wildlife Day"}, urls: {"en":"https://www.daysoftheyear.com/days/wildlife-day/"}, mog: "🐸"},
     }
 }

@@ -5,7 +5,7 @@
     color: {name: "gray"},
     urls: {"en":"https://en.wikipedia.org/wiki/Roman_festivals"},
     evts: [
-        {ty: "D", st: {d: 1}, ttls: {"ar":"غرة ","bg":"Календи","br":"Calendae","ca":"Calendas","co":"Calenda","cs":"Římská datace#Kalendy","de":"Kalenden","el":"Καλένδες","en":"Calends","eo":"Kalendoj","es":"Calendas","et":"Kalendid","eu":"Kalenda","fr":"Calendes","it":"Calende","ka":"კალენდები","la":"Kalendae","mg":"Kalenda","mk":"Календи","nb":"Kalendae","nl":"Kalenden","nn":"Kalendae","oc":"Calendas","pl":"Kalendy","pt":"Calendas","ru":"Календы","sh":"Kalende","sk":"Kalendy","sl":"Kalende","sq":"Kalendat","sv":"Calends","uk":"Календи"}, nts: {"en":"Kalends"}},
+        {ty: "D", st: {d: 1}, ttls: {"ar":"غرة ","bg":"Календи","br":"Calendae","ca":"Calendas","co":"Calenda","cs":"Kalendy","de":"Kalenden","el":"Καλένδες","en":"Calends","eo":"Kalendoj","es":"Calendas","et":"Kalendid","eu":"Kalenda","fr":"Calendes","it":"Calende","ka":"კალენდები","la":"Kalendae","mg":"Kalenda","mk":"Календи","nb":"Kalendae","nl":"Kalenden","nn":"Kalendae","oc":"Calendas","pl":"Kalendy","pt":"Calendas","ru":"Календы","sh":"Kalende","sk":"Kalendy","sl":"Kalende","sq":"Kalendat","sv":"Calends","uk":"Календи"}, nts: {"en":"Kalends"}},
         
         {ty: "D", st: {mon: 1, d: 5}, inh: "Nones"},
         {ty: "D", st: {mon: 2, d: 5}, inh: "Nones"},
@@ -34,7 +34,7 @@
         {ty: "D", st: {mon: 12, d: 13}, inh: "Ides"},
         
         {ty: "D", st: {mon: 1, d: 1}, ttls: {"en":"Consuls Enter Office; Vows for Republic; Aesculapius and Vediovis Festivals"}},
-        {ty: "nD", st: {mon: 1, d: 3}, end: {mon: 1, d: 5}, ttls: {"bg":"Компиталия","ca":"Compitàlia","da":"Compitalia","de":"Compitalien","el":"Κομπιτάλια","en":"Compitalia","eo":"Vikipedio:Compitalia","es":"Compitalia","fa":"کامپیتالیا","fr":"Compitalia","gl":"Compitais","id":"Kompitalia","it":"Compitalia","pl":"Compitalia","pt":"Compitália","ru":"Компиталии","uk":"Компіталії"}},
+        {ty: "nD", st: {mon: 1, d: 3}, end: {mon: 1, d: 5}, ttls: {"bg":"Компиталия","ca":"Compitàlia","da":"Compitalia","de":"Compitalien","el":"Κομπιτάλια","en":"Compitalia","eo":"Compitalia","es":"Compitalia","fa":"کامپیتالیا","fr":"Compitalia","gl":"Compitais","id":"Kompitalia","it":"Compitalia","pl":"Compitalia","pt":"Compitália","ru":"Компиталии","uk":"Компіталії"}},
         {ty: "D", st: {mon: 1, d: 5}, ttls: {"en":"Founding of Shrine of Vica Pota"}},
         {ty: "D", st: {mon: 1, d: 9}, ttls: {"en":"Agonalia in Honor of Janus"}},
         {ty: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 15}, ttls: {"bg":"Карменталия","ca":"Carmentàlia","el":"Καρμεντάλια","en":"Carmentalia","es":"Carmentales","fr":"Carmentalia","it":"Carmentalia","la":"Carmentalia","lt":"Karmentalijos","nl":"Carmentalia","pl":"Carmentalia","pt":"Carmentália","uk":"Карменталія"}},
@@ -48,7 +48,7 @@
         {ty: "D", st: {mon: 2, d: 17}, ttls: {"ca":"Fornacàlia","el":"Φορνακάλια","en":"Fornacalia","es":"Fornacalia","it":"Fornacalia","nl":"Fornacalia","uk":"Форнакалії"}},
         {ty: "D", st: {mon: 2, d: 17}, ttls: {"en":"Quirinalia"}},
         {ty: "D", st: {mon: 2, d: 21}, ttls: {"en":"Feralia"}},
-        {ty: "D", st: {mon: 2, d: 22}, ttls: {"bg":"Каристия","ca":"Carístia","el":"Καρίστια","en":"Caristia","es":"Caristia (fiesta)","fa":"کاریستیا","fr":"Caristia","hu":"Caristia","it":"Caristia","la":"Caristia","nl":"Caristia","pl":"Caristia","ru":"Каристии"}, nts: {"en":"Dear Kindred Day","la":"Charistia\nCara Cognatio"}},
+        {ty: "D", st: {mon: 2, d: 22}, ttls: {"bg":"Каристия","ca":"Carístia","el":"Καρίστια","en":"Caristia","es":"Caristia","fa":"کاریستیا","fr":"Caristia","hu":"Caristia","it":"Caristia","la":"Caristia","nl":"Caristia","pl":"Caristia","ru":"Каристии"}, nts: {"en":"Dear Kindred Day","la":"Charistia\nCara Cognatio"}},
         {ty: "D", st: {mon: 2, d: 23}, ttls: {"bg":"Терминалии","ca":"Terminàlia","de":"Terminalia","el":"Τερμινάλια","en":"Terminalia","es":"Terminalias","fr":"Terminalia","it":"Terminalia","la":"Terminalia","nl":"Terminalia","pt":"Terminália","ru":"Терминалии","uk":"Терміналії"}},
         {ty: "D", st: {mon: 2, d: 24}, ttls: {"ca":"Fugàlia","de":"Regifugium","el":"Ρεγκιφούγκιουμ","en":"Regifugium","es":"Fugalias","fr":"Fugalia","it":"Regifugium","la":"Regifugium","nl":"Regifugium","ru":"Регифугий"}},
         {ty: "D", st: {mon: 2, d: 27}, ttls: {"bg":"Еквирия","ca":"Equirria","cs":"Equirria","de":"Equirria","en":"Equirria","es":"Equirria","fr":"Equiria","it":"Equirria","la":"Equirria","lt":"Ekvirijos","nl":"Equirria","ru":"Эквирии","uk":"Еквірії"}, nts: {"en":"Horse Racing for Mars"}},
@@ -78,7 +78,7 @@
         {ty: "D", st: {mon: 4, d: 15}, ttls: {"bg":"Фордицидия","ca":"Fordicídia","de":"Fordicidien","en":"Fordicidia","es":"Fordicidia","fa":"فوردیکدیا","fr":"Fordicidia","it":"Fordicidia","la":"Fordicidia","nl":"Fordicidia","pt":"Fordicídia","ru":"Фордицидии","uk":"Фордіцідії","uz":"Fordisidiya"}, nts: {"en":"Sacrifice to Tellus"}},
         {ty: "D", st: {mon: 4, d: 21}, ttls: {"bg":"Парилия","ca":"Palília","de":"Parilia","el":"Παλίλια","en":"Parilia","es":"Parilia","fa":"پریلیا","fr":"Parilia","it":"Parilia","la":"Parilia","lt":"Parilijos","nl":"Parilia (mythologie)","pl":"Parilia","pt":"Parília","ru":"Парилии","uk":"Парілії"}, nts: {"en":"Festival of Pales"}},
         {ty: "D", st: {mon: 4, d: 21}, ttls: {"en":"Dies Romana (Founding of Rome)"}},
-        {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"Vinalia Priora (Spring Wine Festival)"}},
+        {ty: "D", st: {mon: 4, d: 23}, ttls: {"en":"Vinalia Priora"}, nts: {"en":"Spring Wine Festival"}},
         {ty: "D", st: {mon: 4, d: 25}, ttls: {"bg":"Робигалия","ca":"Robigàlies","en":"Robigalia","es":"Robigalia","fa":"روبیگالیا","fr":"Robigalia","it":"Robigalia","la":"Robigalia","mni":"ꯔꯣꯕꯤꯒꯨꯁ","nl":"Robigalia","pl":"Robigalia","pt":"Robigalia","ru":"Робигалии","uk":"Робігалії","zh":"罗比古斯"}, nts: {"en":"Festival to Avert Crop Blight"}},
         {ty: "nD", st: {mon: 4, d: 28}, end: {mon: 5, d: 1}, ttls: {"en":"Ludi Florales (Games of Flora)"}},
         
@@ -94,7 +94,7 @@
         {ty: "D", st: {mon: 5, d: 14}, ttls: {"en":"Procession of the Argei"}},
         {ty: "D", st: {mon: 5, d: 15}, ttls: {"bg":"Меркуралия","ca":"Mercuràlia","el":"Μερκουράλια","en":"Mercuralia","fr":"Mercuralia","he":"מרקורליה","hy":"Մերկուրալիաներ","it":"Mercuralia","lt":"Merkuralijos","pl":"Merkuralia","pt":"Mercuralia","ru":"Меркуралии","uk":"Меркуралії"}, nts: {"en":"Festival of Mercury"}},
         {ty: "D", st: {mon: 5, d: 15}, ttls: {"en":"Feriae of Jove"}},
-        {ty: "D", st: {mon: 5, d: 21}, ttls: {"en":"Agonalia (Probably for Vediovis)"}},
+        {ty: "D", st: {mon: 5, d: 21}, ttls: {"en":"Agonalia"}, nts: {"en":"Probably for Vediovis"}},
         {ty: "D", st: {mon: 5, d: 23}, inh: "Tubilustrium"},
         {ty: "D", st: {mon: 5, d: 23}, ttls: {"en":"Feriae of Vulcan"}},
         {ty: "D", st: {mon: 5, d: 24}, ttls: {"en":"QRCF"}, nts: {"en":"Ritual Assembly Day"}},

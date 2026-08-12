@@ -424,6 +424,7 @@
         {ty: "M", st: {mon: 8}, ttls: {"en":"National Road Victim Month"}, urls: {"en":"https://www.roadpeace.org/remembering-lives-lost/national-road-victim-month/"}, mog: "🛣️", inh: "*MedAw*", fst: {era: 1, y: 1998}},
         {ty: "D", st: {mon: 7, d: 16}, ttls: {"en":"National Cherry Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-cherry-day/"}, mog: "🍒"},
         {ty: "D", st: {mon: 8, d: 29}, ttls: {"en":"Potteries Bottle Oven Day"}, urls: {"en":"https://gladstonepotterymuseumstory.blogspot.com/p/potteries-bottle-oven-day.html"}, fst: {era: 1, y: 1978}, nts: {"en":"Created by Terry Woolliscroft"}},
+        {ty: "D", st: {mon: 9, d: 2}, ttls: {"en":"Calendar Adjustment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/calendar-adjustment-day/"}, fst: {era: 1, y: 1752}, mog: "📆"},
         
         {ty: "nD", st: {mon: 11, d: 11, thruD: 17, wkd: [2], durD: 5}, ttls: {"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"}, urls: {"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"}, fst: {era: 1, y: 2004}, subEvts: [
             {ty: "D", st: {mon: 11, wkd: [3], d: 12, thruD: 18}, ttls: {"en":"Odd Socks Day"}, fst: {era: 1, y: 2017}, urls: {"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"}, mog: "🧦", nts: {"en":"Created by the Anti-Bullying Alliance"}},
