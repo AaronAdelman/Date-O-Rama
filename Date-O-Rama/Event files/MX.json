@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 3, d: 18}, ttls: {"en":"Anniversary of the Oil Expropriation","es":"Aniversario de la Expropiación petrolera"}, fst: {era: 1, y: 1938}},
         {ty: "D", st: {mon: 4, d: 21}, ttls: {"en":"Heroic Defense of Veracruz","es":"Heroica Defensa de Veracruz"}, fst: {era: 1, y: 1914}},
         {ty: "D", st: {mon: 5, d: 8}, urls: {"en":"https://nationaltoday.com/benito-juarez-birthday-memorial/"}, inh: "*BD*", ttls: {"en":"Miguel Hidalgo’s Birthday","es":"Natalicio de Miguel Hidalgo"}, fst: {era: 1, y: 1753}},
-        {inh: "NMaritime Day", ty: "D", st: {mon: 6, d: 1}},
+        {inh: "NMaritimeD", ty: "D", st: {mon: 6, d: 1}},
         {ty: "D", st: {mon: 9, d: 13}, ttls: {"en":"Anniversary of the “Boy Heroes” or “Heroic Cadets”","es":"Día de los Niños Héroes"}, fst: {era: 1, y: 1847}},
         {ttls: {"en":"Shout of Dolores","es":"Grito de Dolores"}, ty: "nD", st: {mon: 9, d: 15}, end: {mon: 9, d: 16}, fst: {era: 1, y: 1825}, urls: {"en":"https://nationaltoday.com/shout-of-dolores/"}, mog: "🔔"},
         {ty: "D", st: {mon: 9, d: 27}, ttls: {"en":"Culmination of the Mexican War of Independence","es":"Consumación de la Independencia"}, fst: {era: 1, y: 1821}},

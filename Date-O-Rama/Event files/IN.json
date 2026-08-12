@@ -254,7 +254,7 @@
         {ty: "D", st: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 6]}, inh: "AskAStupidQuestionD", fst: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 9, d: 29, thruD: 30, wkd: [2]}, inh: "AskAStupidQuestionD", fst: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
-        {ty: "D", st: {mon: 4, d: 5}, inh: "NMaritime Day"},
+        {ty: "D", st: {mon: 4, d: 5}, inh: "NMaritimeD"},
         {ty: "D", st: {mon: 11, d: 26}, inh: "NMilkD"},
         {ty: "D", st: {mon: 8, d: 8}, ttls: {"en":"Tendong Lho Rum Faat"}, urls: {"en":"https://www.officeholidays.com/holidays/india/tendong-lho-rum-faat"}, nts: {"en":"Prayer of the Tendong Mountain"}},
         {ty: "D", st: {mon: 9, d: 21}, ttls: {"en":"Sree Narayana Guru Samadhi"}, urls: {"en":"https://www.officeholidays.com/holidays/india/sree-narayana-guru-samadhi"}, locs: {"en":"Kerala"}, inh: "*DA*", fst: {era: 1, y: 1928}},
@@ -281,7 +281,7 @@
         {ty: "D", st: {mon: 1, d: 15, yLens: [366]}, inh: "Makar Sankranti"},
         {ty: "D", st: {era: 1, y: 2026, mon: 4, d: 9}, inh: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/india/india-kerala-voting"}, locs: {"en":"Kerala"}},
         {ty: "D", st: {era: 1, y: 2026, mon: 4, d: 23}, inh: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/india/tamil-nadu-voting"}, locs: {"en":"Tamil Nadu"}},
-        {ty: "D", st: {mon: 7, d: 22}, inh: "NMango Day"},
+        {ty: "D", st: {mon: 7, d: 22}, inh: "NMangoD"},
     ],
     tpls: {
         "Panchayati Raj Diwas": {ty: "D", st: {mon: 3, d: 5}, ttls: {"en":"Panchayati Raj Diwas"}, urls: {"en":"https://www.officeholidays.com/holidays/india/panchayati-raj-diwas"}, locs: {"en":"Odisha"}},

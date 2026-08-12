@@ -33,7 +33,7 @@
         
         {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
-        {ty: "D", st: {mon: 9, d: 29}, inh: "NPolice RemembranceD", fst: {era: 1, y: 1989}},
+        {ty: "D", st: {mon: 9, d: 29}, inh: "NPoliceRemembranceD", fst: {era: 1, y: 1989}},
     ],
     tpls: {
         "NRemembrance Day (in lieu)": {ty: "D", st: {mon: 2, d: 24, wkd: [6]}, ttls: {"en":"National Remembrance Day (in lieu)"}},
