@@ -122,7 +122,7 @@
         {ty: "D", st: {mon: 12, d: 28}, inh: "Holy Innocents Day"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE"},
 
-        {inh: "Grandparents’ Day", ty: "D", st: {mon: 10, wkd: [1], nth: 2}, fst: {era: 1, y: 2013}},
+        {inh: "GrandparentsD", ty: "D", st: {mon: 10, wkd: [1], nth: 2}, fst: {era: 1, y: 2013}},
         {ty: "D", st: {mon: 7, wkd: [1], nth: 4}, inh: "WD for Grandparents & the Elderly", fst: {era: 1, y: 2021}},
     ]
 }

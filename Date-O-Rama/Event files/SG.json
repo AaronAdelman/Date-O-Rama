@@ -29,7 +29,7 @@
         {ty: "D", st: {mon: 2, d: 15}, urls: {"en":"https://nationaltoday.com/total-defense-day/"}, ttls: {"en":"Total Defense Day"}, fst: {era: 1, y: 1984}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
         {ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/singapore-armed-forces-day/"}, inh: "ArmedForcesD", fst: {era: 1, y: 1969}},
-        {inh: "Grandparents’ Day", ty: "D", st: {mon: 11, wkd: [1], nth: 4}, fst: {era: 1, y: 1979}},
+        {inh: "GrandparentsD", ty: "D", st: {mon: 11, wkd: [1], nth: 4}, fst: {era: 1, y: 1979}},
 
    ]
 }

@@ -65,7 +65,7 @@
         {ty: "D", st: {mon: 10, d: 9}, inh: "Dia do Concelho", locs: {"en":"Machico"}},
         {ty: "D", st: {mon: 11, d: 19}, inh: "Dia do Concelho", locs: {"en":"Odivelas and Trofa"}},
         {ty: "D", st: {mon: 11, d: 25}, inh: "StCatherineOfAlexandria"},
-        {ty: "D", st: {mon: 7, d: 26}, inh: "Grandparents’ Day"},
+        {ty: "D", st: {mon: 7, d: 26}, inh: "GrandparentsD"},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
         {ty: "nD", st: {mon: 6, d: 12, durD: 2}, ttls: {"en":"Lisbon Sardine Festival"}, urls: {"en":"https://www.daysoftheyear.com/days/lisbon-sardine-festival/"}},
         {ty: "nD", st: {mon: 8, d: 25, thruD: 31, wkd: [5]}, end: {mon: 9, d: 11, thruD: 17, wkd: [1]}, inh: "Festa do Vinho", fst: {era: 1, y: 2022}, end: {era: 1, y: 2023}},

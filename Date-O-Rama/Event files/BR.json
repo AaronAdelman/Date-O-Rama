@@ -73,7 +73,7 @@
 
         {ty: "D", st: {mon: 2, d: 3}, ttls: {"en":"National Carrot Cake Day","he":"יום עוגת הגזר הלאומי"}, urls: {"en":"https://www.daysoftheyear.com/days/carrot-cake-day/"}, mog: "🍰"},
         {ty: "D", st: {mon: 3, d: 21}, ttls: {"en":"Pão Francês Day"}},
-        {ty: "D", st: {mon: 7, d: 26}, inh: "Grandparents’ Day"},
+        {ty: "D", st: {mon: 7, d: 26}, inh: "GrandparentsD"},
         {ty: "D", st: {mon: 10, d: 31}, inh: "Saci Day", fst: {era: 1, y: 2004}},
         {ty: "nD", st: {era: 1, y: 2024, mon: 11, d: 18, durD: 2}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/brazil/rio-g20-holiday"}, locs: {"en":"Rio de Janeiro"}},
         {ty: "D", st: {mon: 1, d: 14, thruD: 20, wkd: [5]}, ttls: {"en":"Washing of Bonfim","pt":"Lavagem do Bonfim"}, nts: {"en":"Feast of Bonfim"}, fst: {era: 1, y: 1754}, urls: {"en":"https://www.daysoftheyear.com/days/the-washing-of-bonfim/"}},

@@ -22,7 +22,7 @@
         {ty: "D", st: {mon: 9, wkd: [1], nth: 1}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 7, d: 25}, inh: "StJames"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
-        {ty: "D", st: {mon: 10, wkd: [1], nth: -1}, inh: "Grandparents’ Day"},
+        {ty: "D", st: {mon: 10, wkd: [1], nth: -1}, inh: "GrandparentsD"},
         {ty: "D", st: {mon: 4, d: 19}, ttls: {"en":"Youth Homelessness Matters Day","ff":"Youth Homelessness Matters Day","ig":"Ụbọchị Ndị Ntorobịa Na-enweghị Ebe Obibi"}, urls: {"en":"https://www.daysoftheyear.com/days/youth-homelessness-matters-day/"}, fst: {era: 1, y: 2005}, mog: "👦👧", nts: {"en":"YHMD"}},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},

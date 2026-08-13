@@ -41,7 +41,7 @@
         {ty: "D", st: {mon: 10, d: 23}, ttls: {"en":"Day of Advertisement Industry Workers","ru":"День работников рекламы"}, fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 10, d: 24}, ttls: {"en":"Day of Special Forces of the Armed Forces","ru":"День подразделений специального назначения"}, fst: {era: 1, y: 2006}},
         {ty: "D", st: {mon: 10, d: 25}, ttls: {"en":"Day of Customs Workers","ru":"День таможенника"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 10, d: 28}, inh: "Grandparents’ Day"},
+        {ty: "D", st: {mon: 10, d: 28}, inh: "GrandparentsD"},
         {ty: "D", st: {mon: 10, d: 29}, ttls: {"en":"Day of MVD Security Services","ru":"День вневедомственной охраны"}, fst: {era: 1, y: 1952}},
         {ty: "D", st: {mon: 10, d: 30}, inh: "DOfRemembranceOfTheVictimsOfPoliticalRepressions", fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 10, d: 31}, ttls: {"en":"Day of the Detention Centers and Prisons Workers","ru":"День работников СИЗО и тюрем"}, fst: {era: 1, y: 2006}},

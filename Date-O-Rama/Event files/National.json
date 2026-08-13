@@ -2361,7 +2361,7 @@
         {ty: "nD", st: {mon: 9, d: 13, thruD: 19, wkd: [1], durD: 7}, ttls: {"en":"National Forensic Science Week"}, urls: {"en":"https://www.ascld.org/national-forensic-science-week/"}, fst: {era: 1, y: 2013}, mog: "🕵️‍♂️🕵️‍♀️"},
         {ty: "nD", st: {mon: 9, d: 13}, end: {mon: 9, d: 19}, ttls: {"en":"National Eczema Week","he":"שבוע הגרב הלאומי"}, urls: {"en":"https://nationaltoday.com/national-eczema-week/"}, inh: "*MedAw*"},
         {ty: "nD", st: {mon: 9, d: 21, thruD: 27, wkd: [6]}, end: {mon: 9, d: 30, thruMon: 10, thruD: 6, wkd: [1]}, ttls: {"en":"National Drive Electric Week"}, urls: {"en":"https://driveelectricweek.org/"}, fst: {era: 1, y: 2014}, mog: "⚡"},
-        {ty: "nD", st: {mon: 9, wkd: [1], d: 8, thruD: 14, durD: 7}, ttls: {"en":"Grandparents Week"}, inh: "Grandparents’ Day", urls: {"en":"https://grandparentsday.org/"}},
+        {ty: "nD", st: {mon: 9, wkd: [1], d: 8, thruD: 14, durD: 7}, ttls: {"en":"Grandparents Week"}, inh: "GrandparentsD", urls: {"en":"https://grandparentsday.org/"}},
         {ty: "W", st: {mon: 1, fullWk: 3}, ttls: {"en":"Hunt for Happiness Week"}, urls: {"en":"https://www.daysoftheyear.com/days/hunt-for-happiness-week/"}, mog: "😄", fst: {era: 1, y: 2001}, nts: {"en":"Created by the Secret Society of Happy People"}},
         {ty: "W", st: {mon: 1, fullWk: 3}, ttls: {"en":"National Fresh Squeezed Juice Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-fresh-squeezed-juice-week/"}, mog: "🍹"},
         {ty: "W", st: {mon: 10, fullWk: -1, d1OfWk: 2}, ttls: {"en":"National Temperature Check Week"}, urls: {"en":"https://www.daysoftheyear.com/days/national-temperature-check-week/"}, fst: {era: 1, y: 2020}, inh: "*MedAw*", mog: "🌡️", nts: {"en":"Created by Braun Thermometers"}},

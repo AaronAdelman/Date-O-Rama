@@ -43,7 +43,7 @@
         {ty: "D", st: {mon: 8, d: 14}, inh: "AirForceD"},
         {ty: "D", st: {mon: 9, d: 2}, inh: "Navy Day"},
         {ty: "D", st: {mon: 9, d: 29}, inh: "NCoffeeD"},
-        {ty: "D", st: {mon: 8, wkd: [1], nth: 4}, inh: "Grandparents’ Day", fst: {era: 1, y: 2010}},
+        {ty: "D", st: {mon: 8, wkd: [1], nth: 4}, inh: "GrandparentsD", fst: {era: 1, y: 2010}},
         {ty: "D", st: {mon: 1, d: 27}, inh: "Holocaust Memorial Day", fst: {era: 1, y: 2006}},
   ],
     tpls: {
