@@ -585,6 +585,12 @@ extension ASACalendarCode {
         case .bahaiSolarTime:
             return ["Baháʼí Faith"]
             
+        case .vikramSolarTime:
+            return ["Hinduism", regionCode + " (Vikram Samvat)"]
+            
+        case .banglaSolarTime:
+            return [regionCode + " (Bangla)"]
+            
         default:
             return []
         } // switch self
