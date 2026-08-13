@@ -61,7 +61,7 @@
         {ty: "D", st: {era: 1, y: 2022, mon: 11, d: 6}, inh: "Dog Film Festival"},
         {ty: "D", st: {era: 1, y: 2023, mon: 10, d: 23}, inh: "Dog Film Festival"},
         {ty: "D", st: {mon: 1, d: 18, thruD: 24, wkd: [4]}, ttls: {"en":"Weedless Wednesday"}, urls: {"en":"https://www.daysoftheyear.com/days/weedless-wednesday/"}, nts: {"en":"Created by the Canadian Council for Tobacco Control"}, fst: {era: 1, y: 1977}},
-        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inh: "NYD (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, locs: {"en":"Saskatchewan"}},
+        {ty: "D", st: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inh: "NYD (IL)", urls: {"en":"https://www.officeholidays.com/holidays/canada/saskatchewan/international-new-years-day"}, locs: {"en":"Saskatchewan"}},
         {ty: "D", st: {mon: 10, d: 15}, inh: "NShawarmaD", fst: {era: 1, y: 2020}},
         {ty: "D", st: {mon: 10, d: 18}, ttls: {"en":"Health Care Aide Day"}, urls: {"en":"https://www.daysoftheyear.com/days/health-care-aide-day/"}, fst: {era: 1, y: 2012}},
         {ty: "D", st: {mon: 10, d: 18}, ttls: {"en":"Persons Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Persons_Day"}, fst: {era: 1, y: 1979}},

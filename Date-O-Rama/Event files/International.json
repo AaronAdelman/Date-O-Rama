@@ -1684,7 +1684,7 @@
         {ty: "D", st: {mon: 9, d: 5}, ttls: {"en":"World Samosa Day"}, urls: {"en":"https://www.daysoftheyear.com/days/world-samosa-day/"}},
         {ty: "D", st: {mon: 9, d: 6, thruD: 12, wkd: [7]}, ttls: {"en":"Aunt’s Day"}, urls: {"en":"https://www.checkiday.com/7b9f2b0c1f782c8f87b73cc0307e41bf/aunts-day"}, fst: {era: 1, y: 2010}, mog: "👩"},
         {ty: "D", st: {mon: 9, d: 6}, ttls: {"en":"Fight Procrastination Day","he":"יום המלחמה בדחיינות"}, urls: {"en":"https://www.daysoftheyear.com/days/fight-procrastination-day/"}, fst: {era: 1, y: 2009}, nts: {"en":"DO IT! Day\nDo It! Day\nCreated by Megan Roth"}},
-        {ty: "D", st: {mon: 9, d: 6}, ttls: {"en":"Great Egg Toss Day","he":"יום הטלת הביצים הגדול"}, urls: {"en":"https://nationaltoday.com/great-egg-toss-day/"}, mog: "🥚"},
+        {ty: "D", st: {mon: 9, d: 6}, ttls: {"en":"Great Egg Toss Day","he":"יום הטלת הביצים הגדול"}, urls: {"en":"https://nationaltoday.com/great-egg-toss-day/"}, mog: "🥚", fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 9, d: 6}, ttls: {"en":"Stillbirth Remembrance Day"}, urls: {"en":"https://www.checkiday.com/dc0e2bc153d516c2552933f42ea05052/stillbirth-remembrance-day"}, fst: {era: 1, y: 2001}, mog: "💐🦋"},
         {ty: "D", st: {mon: 9, d: 6}, ttls: {"en":"World Shorebirds Day"}, urls: {"en":"https://www.worldshorebirdsday.org/"}, fst: {era: 1, y: 2024}, mog: "🐦"},
         {ty: "D", st: {mon: 9, d: 7}, ttls: {"en":"Google Commemoration Day"}, urls: {"en":"https://nationaltoday.com/google-commemoration-day/"}},

@@ -8,7 +8,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Chile"},
     evts: [
         {ty: "D", st:  {mon: 1, d: 1}, inh: "NYD"},
-        {inh: "NYD (in lieu)", ty: "D", st:  {mon: 1, d: 2}},
+        {inh: "NYD (IL)", ty: "D", st:  {mon: 1, d: 2}},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
