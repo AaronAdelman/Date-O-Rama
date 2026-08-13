@@ -28,7 +28,7 @@ class ASACalendarFactory {
             return ASAJulianCalendar(calendarCode: code)
         } else if code == .bahaiSolarTime {
             return ASABahaiCalendar(calendarCode: code)
-        } else if code == .vikramSolarTime {
+        } else if code == .vikramSolarTime || code ==  .banglaSolarTime {
             return ASASouthAsianCalendar(calendarCode: code)
         }
      
