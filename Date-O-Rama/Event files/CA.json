@@ -90,7 +90,7 @@
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, inh: "NFamilyD", fst: {era: 1, y: 1990}, urls: {"en":"https://www.daysoftheyear.com/days/national-family-day/"}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, ttls: {"en":"Islander Day","fr":"Fête des Insulaires"}, urls: {"en":"https://www.daysoftheyear.com/days/islander-day/"}, fst: {era: 1, y: 2009}, mog: "❄️", nts: {"en":"Created by the Legislature of Prince Edward Island"}},
         {ty: "D", st: {mon: 2, wkd: [2], nth: 3}, ttls: {"en":"Louis Riel Day","fi":"Louis Riel-päivä","fr":"Journée Louis Riel"}, urls: {"en":"https://louisrielday.com/"}, fst: {era: 1, y: 2008}},
-        {ty: "D", st: {mon: 2, wkd: [4], nth: -1}, inh: "Pink Shirt Day", fst: {era: 1, y: 2007}},
+        {ty: "D", st: {mon: 2, wkd: [4], nth: -1}, inh: "PinkShirtD", fst: {era: 1, y: 2007}},
         {ty: "D", st: {mon: 5, d: 5}, inh: "REDress Day", fst: {era: 1, y: 2000}},
         {ty: "W", st: {mon: 3, fullWk: 1}, inh: "DARW", fst: {era: 1, y: 1977}},
         {ty: "D", st: {mon: 3, wkd: [2], nth: 1}, ttls: {"en":"Black Mental Health Day"}, urls: {"en":"https://www.blackmentalhealthday.ca/"}, inh: "*MedAw*", fst: {era: 1, y: 2020}},
