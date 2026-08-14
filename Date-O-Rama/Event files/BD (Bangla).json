@@ -1,0 +1,30 @@
+
+//1  বৈশাখ    Boishakh
+//2  জ্যৈষ্ঠ    Jyoishţho
+//3  আষাঢ়    Ashaŗh
+//4  শ্রাবণ    Shrabon
+//5  ভাদ্র    Bhadro
+//6  আশ্বিন    Ashshin
+//7  কার্তিক    Kartik
+//8  অগ্রহায়ণ    Ôgrohayon
+//9  পৌষ    Poush
+//10 মাঘ    Magh
+//11 ফাল্গুন/ ফাগুন    Falgun/ Fagun
+//12 চৈত্র    Choitro
+
+// NOTE:  There are at least two versions of the Bangla calendar in play due to calendar reform.  Expect dates to be off a day sometimes.
+
+{
+    ttls: {"*":"BD"},
+    "//":"Bangladesh",
+    "TODO":"Buddhist and Hindu holidays",
+    defLocale: "en",
+    cal: "bangla-s",
+    color: {name: "green"},
+    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
+    evts: [
+        {ty: "D", st: {mon: 1, d: 1}, ttls: {"ar":"باهيلا بيشاك","as":"পহেলা বৈশাখ","bh":"पोहिलो बोइसाख","bn":"পহেলা বৈশাখ","dty":"वैशाख सकराती","el":"Παχέλα Μπαϊσάχ","en":"Pohela Boishakh","eo":"Pohela Baiŝaĥ","es":"Pohela Boishakh","eu":"Pohela Boishakh","hi":"पहेला वैशाख","hif":"Pahila Baishakh","hy":"Բենգալական նոր տարի","id":"Pohela Boishakh","it":"Pahela Baishakh","mni":"ꯄꯍꯦꯂꯥ ꯕꯥꯏꯁꯥꯈ","mr":"पहेला वैशाख","ms":"Tahun Baru Bengali","ne":"पोहेला वैशाख","nl":"Pohela Boishakh","nn":"Bengalsk nyttår","pl":"Pohela Boishakh","pt":"Pohela Boishakh","ro":"Pahela Baishakh","ru":"Бенгальский Новый год","sa":"वैशाखसंक्रान्तिः","sat":"ᱯᱩᱭᱞᱩ ᱵᱳᱭᱥᱟᱹᱠᱷ","ta":"பகேலா பைசாக்","tr":"Pohela Boishakh","uk":"Похела Бойшах","zh":"波赫拉·博伊沙赫"}, urls: {"en":"https://en.wikipedia.org/wiki/Pohela_Boishakh"}, nts: {"en":"Bengali New Year\nPahela Baishakh\nPoila Boishakh\nPahela Boishak\nPoila Boishak\nPoila Baishak"}},
+        {ty: "D", st: {mon: 1, d: 1}, ttls: {"as":"হালখাতা","bn":"হালখাতা","en":"Haal Khata","kn":"ಹಾಲ್ ಖಾತಾ","pa":"ਹਾਲ ਖਾਤਾ"}, urls: {"en":"https://en.wikipedia.org/wiki/Haal_Khata"}},
+        {ty: "D", st: {mon: 11, d: 1}, ttls: {"bn":"পহেলা ফাল্গুন","el":"Παχέλα Φαλγκούν","en":"Pohela Falgun","sat":"ᱯᱩᱭᱞᱩ ᱯᱷᱟᱹᱜᱩᱱ","ta":"பகேலா பால்கன்","th":"โพเหลาฟาลคุน"}, urls: {"en":"https://en.wikipedia.org/wiki/Pohela_Falgun"}, nts: {"bn":"পয়লা ফাল্গুন","en":"Poyla Falgun"}},
+    ]
+}

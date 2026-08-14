@@ -24,5 +24,6 @@
         {ty: "D", st: {mon: 6, d: 30}, inh: "Navy Day", urls: {"en":"https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {ty: "D", st: {mon: 7, d: 17}, ttls: {"en":"International Firgun Day","he":"יום הפרגון הבינלאומי"}, urls: {"en":"https://firgunday.firgunator.com/"}, fst: {era: 1, y: 2014}, nts: {"en":"Created by Made in JLM"}},
         {ty: "D", st: {mon: 7, d: 8}, ttls: {"he":"יום ויקיפדיה העברית","en":"Hebrew Wikipedia Day"}, fst: {era: 1, y: 2003}, mog: "🌐"},
+        {ty: "D", st: {mon: 8, d: 9}, inh: "PhillipineIsraelFriendshipD", fst: {era: 1, y: 2023}},
     ]
 }

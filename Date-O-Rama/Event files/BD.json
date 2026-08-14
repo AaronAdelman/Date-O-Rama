@@ -4,7 +4,7 @@
     "TODO":"Buddhist and Hindu holidays",
     defLocale: "en",
     cal: "gre",
-    color: {r: 0.17, g: 0.41, b: 0.31},
+    color: {name: "green"},
     fst: {era: 1, y: 1971},
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
     evts: [

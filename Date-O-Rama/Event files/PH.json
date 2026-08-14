@@ -24,7 +24,7 @@
         {inh: "IndependenceD", ty: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/philippines-independence-day/"}, fst: {era: 1, y: 1898}},
         {ty: "D", st: {mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, ttls: {"en":"Manila Day"}},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"Manuel Luis Quezón Day","fil":"Kaarawan ni Manuel Luis Quezón","he":"יום מנואל קזון"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/philippines/quezon/philippines-birthday-quezon"}, nts: {"en":"Birthday of Manuel L. Quezon","he":"יום הולדת של מנואל קזון"}},
-        {st: {mon: 8, d: 21}, ty: "D", ttls: {"en":"Ninoy Aquino Day","he":"יום בניגנו אקינו הבן","fil":"Araw ng Kabayanihan ni Ninoy Aquino"}, urls: {"en":"https://nationaltoday.com/ninoy-aquino-day/"}, fst: {era: 1, y: 2004}},
+        {ty: "D", st: {mon: 8, d: 21}, ttls: {"en":"Ninoy Aquino Day","he":"יום בניגנו אקינו הבן","fil":"Araw ng Kabayanihan ni Ninoy Aquino"}, urls: {"en":"https://nationaltoday.com/ninoy-aquino-day/"}, fst: {era: 1, y: 2004}},
         {ty: "D", st: {mon: 8, wkd: [2], nth: -1}, inh: "NHeroesD", urls: {"en":"https://www.daysoftheyear.com/days/national-heroes-day/"}, fst: {era: 1, y: 2007}},
         {ty: "D", st: {mon: 9, d: 9}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/cebu/osmena-day"}, ttls: {"en":"Osmeña Day","fil":"Araw ni Pangulong Osmeña"}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
@@ -283,5 +283,6 @@
         {ty: "D", st: {era: 1, y: 2025, mon: 5, d: 12}, inh: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Founding Anniversary of the INC"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/founding-anniversary-of-the-inc"}, fst: {era: 1, y: 2025}},
         {ty: "D", st: {mon: 20, d: 31, wkd: [6]}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/philippines/all-saints-day"}},
+        {ty: "D", st: {mon: 8, d: 9}, inh: "PhillipineIsraelFriendshipD", fst: {era: 1, y: 2023}},
     ]
 }
