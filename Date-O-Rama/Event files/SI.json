@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
         {ty: "D", st: {mon: 4, d: 27}, ttls: {"en":"Day of Uprising Against Occupation","sl":"dan upora proti okupatorju"}, urls: {"en":"https://www.daysoftheyear.com/days/day-of-uprising-against-occupation/"}, nts: {"en":"Resistance Day"}, fst: {era: 1, y: 1941}},
-        {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "Labour Day"},
+        {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "LabourD"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {mon: 6, d: 25}, inh: "Statehood Day", urls: {"en":"https://nationaltoday.com/statehood-day/"}, fst: {era: 1, y: 1991}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},

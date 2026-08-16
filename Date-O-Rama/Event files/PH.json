@@ -20,7 +20,7 @@
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {mon: 4, d: 9}, ttls: {"en":"Day of Valor","fil":"Araw ng Kagitingan"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}},
         {ty: "D", st: {mon: 4, d: 10, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}, ttls: {"en":"Day of Valor (in lieu)"}},
-        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/philippines-labor-day/"}, inh: "Labour Day", fst: {era: 1, y: 1913}},
+        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/philippines-labor-day/"}, inh: "LabourD", fst: {era: 1, y: 1913}},
         {inh: "IndependenceD", ty: "D", st: {mon: 6, d: 12}, urls: {"en":"https://nationaltoday.com/philippines-independence-day/"}, fst: {era: 1, y: 1898}},
         {ty: "D", st: {mon: 6, d: 24}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, ttls: {"en":"Manila Day"}},
         {ty: "D", st: {mon: 8, d: 19}, ttls: {"en":"Manuel Luis Quezón Day","fil":"Kaarawan ni Manuel Luis Quezón","he":"יום מנואל קזון"}, inh: "*BD*", urls: {"en":"https://www.officeholidays.com/holidays/philippines/quezon/philippines-birthday-quezon"}, nts: {"en":"Birthday of Manuel L. Quezon","he":"יום הולדת של מנואל קזון"}},
@@ -38,7 +38,7 @@
         {ty: "D", st: {mon: 1, d: 23}, ttls: {"en":"First Philippine Republic Day","fil":"Araw ng Unang Republika ng Pilipinas"}, urls: {"en":"https://nationaltoday.com/first-philippine-republic-day/"}, fst: {era: 1, y: 1899}},
         {ty: "D", st: {mon: 1, d: 25}, inh: "NRemembranceD", fst: {era: 1, y: 2015}},
         {ty: "D", ttls: {"en":"National Police Anniversary Day","fil":"Araw ng Pagkakatatag ng Pambansang Pulisya"}, st: {mon: 1, d: 29}, fst: {era: 1, y: 1992}, inh: "Police Day"},
-        {ty: "D", st: {mon: 2, d: 2}, inh: "Constitution Day", fst: {era: 1, y: 2002}},
+        {ty: "D", st: {mon: 2, d: 2}, inh: "ConstitutionD", fst: {era: 1, y: 2002}},
         {ty: "D", st: {mon: 2, d: 4}, urls: {"en":"https://nationaltoday.com/philippine-american-war-memorial-day/"}, ttls: {"en":"Philippine-American War Memorial Day","fil":"Araw ng Paggunita sa Digmaang Pilipino–Amerikano"}, mog: "🇵🇭🇺🇸", fst: {era: 1, y: 1902}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "NWomenD"},
         {ty: "D", st: {mon: 3, d: 23}, urls: {"en":"https://nationaltoday.com/founding-anniversary-of-the-philippine-army/"}, nts: {"en":"Founding Anniversary of the Philippine Army"}, fst: {era: 1, y: 1936}, ttls: {"en":"Philippine Army Day and Anniversary of the Tejeros Convention","fil":"Araw ng Hukbong Katihan ng Pilipinas"}, inh: "ArmyD"},
@@ -282,7 +282,7 @@
         {ty: "D", st: {era: 1, y: 2019, mon: 5, d: 13}, inh: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {ty: "D", st: {era: 1, y: 2025, mon: 5, d: 12}, inh: "Election Day", urls: {"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Founding Anniversary of the INC"}, urls: {"en":"https://www.officeholidays.com/holidays/philippines/founding-anniversary-of-the-inc"}, fst: {era: 1, y: 2025}},
-        {ty: "D", st: {mon: 20, d: 31, wkd: [6]}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/philippines/all-saints-day"}},
+        {ty: "D", st: {mon: 20, d: 31, wkd: [6]}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/philippines/all-saints-day"}},
         {ty: "D", st: {mon: 8, d: 9}, inh: "PhillipineIsraelFriendshipD", fst: {era: 1, y: 2023}},
     ]
 }

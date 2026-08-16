@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 5, d: 20}, fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/east-timor-independence-day/"}, inh: "Independence Restoration Day"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "CorpusChristi"},
         {ty: "D", st: {mon: 8, d: 30}, ttls: {"en":"Popular Consultation Day","he":"יום הייעוץ הפופולרי"}, urls: {"en":"https://nationaltoday.com/popular-consultation-day/"}, fst: {era: 1, y: 1999}},

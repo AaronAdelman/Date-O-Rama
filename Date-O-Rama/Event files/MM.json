@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 2, d: 13, wkd: [6]}, ttls: {"en":"Union Day (in lieu)"}, urls: {"en":"https://www.officeholidays.com/holidays/myanmar/myanmar-union-day"}, fst: {era: 1, y: 1948}},
         {ty: "D", st: {mon: 3, d: 2}, ttls: {"en":"Peasants’ Day","he":"יום האיכרים","my":"တောင်သူလယ်သမားနေ့"}, urls: {"en":"https://nationaltoday.com/peasants-day/"}, nts: {"en":"Peasants Day"}, fst: {era: 1, y: 2000}},
         {ty: "D", st: {mon: 3, d: 27}, inh: "ArmedForcesD", urls: {"en":"https://nationaltoday.com/myanmar-armed-forces-day/"}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 7, d: 19}, inh: "Martyrs’ Day", urls: {"en":"https://nationaltoday.com/martyrs-day-in-myanmar/"}, fst: {era: 1, y: 1947}},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
         {ty: "D", st: {mon: 12, d: 31}, inh: "NYE", urls: {"en":"https://www.officeholidays.com/holidays/myanmar/new-years-eve"}},

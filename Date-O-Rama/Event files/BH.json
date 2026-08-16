@@ -9,7 +9,7 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bahrain"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {inh: "ND", ty: "D", st: {mon: 12, d: 16}, urls: {"en":"https://nationaltoday.com/bahrain-national-day/"}},
         {ty: "D", st: {mon: 12, d: 17}, inh: "AccessionD"},
 

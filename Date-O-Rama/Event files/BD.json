@@ -13,7 +13,7 @@
         {ty: "D", st: {mon: 3, d: 17}, inh: "Children’s Day"},
         {ty: "D", st: {mon: 3, d: 26}, inh: "IndependenceD", fst: {era: 1, y: 1971}, urls: {"en":"https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)"}, urls: {"en":"https://nationaltoday.com/independence-day-of-bangladesh/"}},
         {ty: "D", st: {mon: 4, d: 14}, ttls: {"en":"Bengali New Year (Pôhela Boishakh)","bn":"পহেলা বৈশাখ"}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/bangladesh-bank-holiday"}, inh: "Bank Holiday", fst: {era: 1, y: 2023}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "NDOfMourning", nts: {"en":"National Mourning Day"}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/national-mourning-day"}},
         {ty: "D", st: {mon: 12, d: 16}, inh: "Victory Day", urls: {"en":"https://nationaltoday.com/bangladesh-victory-day/"}, fst: {era: 1, y: 1971}},
@@ -25,11 +25,11 @@
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 5, d: 7}, inh: "Engineer’s Day"},
         {ty: "D", st: {mon: 3, d: 25}, ttls: {"bn":"জাতীয় গণহত্যা স্মরণ দিবস","en":"Genocide Remembrance Day"}, nts: {"en":"Bengali Genocide Remembrance Day","en":"বাঙালি গণহত্যা স্মরণ দিবস"}, inh: "Martyrs’ Day", fst: {era: 1, y: 2017}, urls: {"en":"https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
-        {ty: "D", st: {mon: 11, d: 7}, inh: "Revolution Day", fst: {era: 1, y: 1975}},
+        {ty: "D", st: {mon: 11, d: 7}, inh: "RevolutionD", fst: {era: 1, y: 1975}},
         {ty: "D", st: {mon: 3, d: 26}, inh: "Navy Day"},
         {ty: "D", st: {mon: 11, d: 21}, inh: "ArmedForcesD"},
         {ty: "D", st: {mon: 10, d: 1}, inh: "NCoffeeD"},
-        {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 12, d: 15}, inh: "ITeaD", fst: {era: 1, y: 2005}},
         {ty: "D", st: {mon: 9, d: 9}, inh: "NGrandparentsD"},
         {ty: "D", st: {mon: 7, d: 16}, ttls: {"en":"Martyr Abu Sayeed Day"}, inh: "Martyrs’ Day", fst: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/martyr-abu-sayeed-day"}},
         {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, inh: "Bangladesh Parliamentary Polls"},
@@ -38,6 +38,6 @@
         {ty: "D", st: {mon: 8, d: 5}, ttls: {"as":"জুলাই গণ অভ্যুত্থান দিৱস (বাংলাদেশ)","bn":"জুলাই গণ-অভ্যুত্থান দিবস","en":"July Uprising Day"}, fst: {era: 1, y: 2025}, urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/student-people-uprising-day"}, nts: {"en":"July Mass Uprising Day\n36 July"}},
     ],
     tpls: {
-        "Bangladesh Parliamentary Polls": {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, ttls: {"en":"Bangladesh Parliamentary Polls"}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/bangladesh-parliamentary-polls"}},
+        "Bangladesh Parliamentary Polls": {ty: "D", st: {era: 1, y: 2018, mon: 12, d: 30}, ttls: {"en":"Bangladesh Parliamentary Polls"}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/bangladesh/bangladesh-parliamentary-polls"}},
     }
 }

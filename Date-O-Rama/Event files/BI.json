@@ -12,7 +12,7 @@
         {ty: "D", st: {mon: 2, d: 5}, inh: "Unity Day", urls: {"en":"https://nationaltoday.com/unity-day-burundi/"}},
         {ty: "D", st: {mon: 4, d: 6}, ttls: {"en":"President Ntaryamira Day"}, urls: {"en":"https://nationaltoday.com/president-ntaryamira-day/"}, inh: "Presidents’ Day", nts: {"en":"Cyprien Ntaryamira Day"}},
         {ty: "D", st: {mon: 4, d: 7, wkd: [2]}, ttls: {"en":"President Ntaryamira Day (in lieu)"}, urls: {"en":"https://nationaltoday.com/president-ntaryamira-day/"}, inh: "Presidents’ Day", nts: {"en":"Cyprien Ntaryamira Day (in lieu)"}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {mon: 7, d: 1}, inh: "IndependenceD", urls: {"en":"https://nationaltoday.com/burundi-independence-day/"}, fst: {era: 1, y: 1962}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},

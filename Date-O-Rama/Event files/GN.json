@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 5, d: 25}, inh: "AfricaD", fst: {era: 1, y: 1963}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 10, d: 2}, inh: "IndependenceD", fst: {era: 1, y: 1958}, urls: {"en":"https://nationaltoday.com/guinea-independence-day/"}},

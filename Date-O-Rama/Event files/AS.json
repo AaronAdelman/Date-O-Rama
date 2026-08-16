@@ -18,7 +18,7 @@
         {ty: "D", st: {mon: 7, d: 15, wkd: [6]}, inh: "Manu’a Cession Day (in lieu)", fst: {era: 1, y: 1983}},
         {ty: "D", st: {mon: 7, d: 16}, ttls: {"en":"Manu’a Cession Day"}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"}, fst: {era: 1, y: 1983}},
         {ty: "D", st: {mon: 7, d: 17, wkd: [2]}, inh: "Manu’a Cession Day (in lieu)"},
-        {ty: "D", st: {mon: 9, wkd: [2], inh: "Labour Day", nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/labor-day"}},
+        {ty: "D", st: {mon: 9, wkd: [2], inh: "LabourD", nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/labor-day"}},
         {ty: "D", st: {mon: 10, wkd: [1], nth: 2}, inh: "White Sun"},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, inh: "Columbus Day", fst: {era: 1, y: 2004}, urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/columbus-day"}},
         {ty: "D", st: {mon: 11, d: 10, wkd: [6]}, inh: "Veterans Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/american-samoa/veterans-day"}},

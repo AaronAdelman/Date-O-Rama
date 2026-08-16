@@ -13,7 +13,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {ty: "D", st: {mon: 7, d: 1}, ttls: {"en":"Sir Seretse Khama Day"}, urls: {"en":"https://www.officeholidays.com/holidays/botswana/sir-seretse-khama-day"}},
         {ty: "D", st: {mon: 7, wkd: [2], nth: 3}, inh: "President’s Day", urls: {"en":"https://nationaltoday.com/presidents-day-in-botswana/"}, fst: {era: 1, y: 2006}},
@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 6, wkd: [1], nth: 3}, inh: "Father’s Day"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         
-        {ty: "nD", st: {era: 1, y: 2024, mon: 10, d: 30, durD: 2}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-general-elections"}},
-        {ty: "D", st: {era: 1, y: 2025, mon: 9, d: 29}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-athletics-gold"}},
+        {ty: "nD", st: {era: 1, y: 2024, mon: 10, d: 30, durD: 2}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-general-elections"}},
+        {ty: "D", st: {era: 1, y: 2025, mon: 9, d: 29}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/botswana/botswana-athletics-gold"}},
     ]
 }

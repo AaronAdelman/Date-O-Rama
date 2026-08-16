@@ -19,7 +19,7 @@
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
 
-        {inh: "Revolution Day", ty: "D", st: {mon: 7, d: 22}, fst: {era: 1, y: 1994}},
+        {inh: "RevolutionD", ty: "D", st: {mon: 7, d: 22}, fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
     ]
 }

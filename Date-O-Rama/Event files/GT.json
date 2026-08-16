@@ -12,13 +12,13 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E", offsetD: -1}, inh: "Holy Sat"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 6, d: 30}, inh: "ArmyD", urls: {"en":"https://www.officeholidays.com/holidays/guatemala/guatemala-army-day"}},
         {ty: "D", st: {mon: 7, d: 1}, inh: "Bank Holiday"},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},
         {ty: "D", st: {mon: 9, d: 15}, inh: "IndependenceD", fst: {era: 1, y: 1821}, urls: {"en":"https://nationaltoday.com/guatemala-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 12}, inh: "DOfTheRaces", fst: {era: 1, y: 1917}},
-        {inh: "Revolution Day", ty: "D", st: {mon: 10, d: 20}, fst: {era: 1, y: 1944}, urls: {"en":"https://nationaltoday.com/revolution-day-guatemala/"}},
+        {inh: "RevolutionD", ty: "D", st: {mon: 10, d: 20}, fst: {era: 1, y: 1944}, urls: {"en":"https://nationaltoday.com/revolution-day-guatemala/"}},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},
         {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
         {ty: "D", st: {mon: 12, d: 25}, inh: "Xmas"},
@@ -34,7 +34,7 @@
         {inh: "Children’s Day", ty: "D", st: {mon: 10, d: 1}, fst: {era: 1, y: 1990}},
         {ty: "D", st: {mon: 7, d: 1}, urls: {"en":"https://nationaltoday.com/bank-employee-day-guatemala/"}, ttls: {"en":"Bank Employee Day"}},
         {ty: "D", st: {mon: 7, d: 30}, urls: {"en":"https://nationaltoday.com/armed-forces-day-guatemala/"}, inh: "ArmedForcesD"},
-        {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "FriendshipD"},
 
     ]
 }

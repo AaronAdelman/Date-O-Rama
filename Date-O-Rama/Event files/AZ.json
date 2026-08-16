@@ -68,7 +68,7 @@
         {ty: "D", st: {mon: 10, d: 1}, ttls: {"en":"Day of Prosecutors"}},
         {ty: "D", st: {mon: 10, d: 13}, ttls: {"en":"Day of Azerbaijani Railway"}},
         {ty: "D", st: {mon: 11, d: 6}, ttls: {"en":"Day of Baku Metro Employees"}},
-        {ty: "D", st: {mon: 11, d: 12}, inh: "Constitution Day"},
+        {ty: "D", st: {mon: 11, d: 12}, inh: "ConstitutionD"},
         {ty: "D", st: {mon: 11, d: 17}, ttls: {"en":"National Revival Day"}, urls: {"en":"https://en.wikipedia.org/wiki/National_Revival_Day"}},
         {ty: "D", st: {mon: 11, d: 22}, ttls: {"en":"Day of Justice"}},
         {ty: "D", st: {mon: 12, d: 6}, ttls: {"en":"Day of the Ministry of Communications and Information Technologies of Azerbaijan"}},

@@ -14,7 +14,7 @@
         {ty: "D", st: {misc: "E", offsetD: -46}, inh: "AshWed"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/labour-and-agriculture-day/"}, ttls: {"en":"Labour and Agriculture Day","fr":"Fête du Travail"}, fst: {era: 1, y: 1890}, inh: "Labour Day", nts: {"fr":"Fête des Travailleurs"}},
+        {ty: "D", st: {mon: 5, d: 1}, urls: {"en":"https://nationaltoday.com/labour-and-agriculture-day/"}, ttls: {"en":"Labour and Agriculture Day","fr":"Fête du Travail"}, fst: {era: 1, y: 1890}, inh: "LabourD", nts: {"fr":"Fête des Travailleurs"}},
         {ty: "D", st: {mon: 5, d: 18}, urls: {"en":"https://nationaltoday.com/haitian-flag-day/"}, inh: "Flag Day"},
         {ty: "D", st: {mon: 5, d: 18}, ttls: {"en":"Flag and Universities’ Day","fr":"Jour du Drapeau et de l’Université"}, nts: {"en":"Universities Day","fr":"Jour de l’Université"}, mog: "🏫"},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "CorpusChristi"},

@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day", urls: {"en":"https://www.officeholidays.com/holidays/uzbekistan/international-childrens-day"}},
         {ty: "D", st: {mon: 9, d: 1}, inh: "IndependenceD", fst: {era: 1, y: 1991}, urls: {"en":"https://nationaltoday.com/uzbekistan-independence-day/"}},
         {ty: "D", st: {mon: 10, d: 1}, inh: "Teacher’s Day", urls: {"en":"https://nationaltoday.com/teachers-day-in-uzbekistan/"}, fst: {era: 1, y: 1997}},
-        {ty: "D", st: {mon: 12, d: 8}, urls: {"en":"https://nationaltoday.com/uzbekistan-constitution-day/"}, inh: "Constitution Day", fst: {era: 1, y: 1992}},
+        {ty: "D", st: {mon: 12, d: 8}, urls: {"en":"https://nationaltoday.com/uzbekistan-constitution-day/"}, inh: "ConstitutionD", fst: {era: 1, y: 1992}},
 
         {ty: "D", st: {mon: 3, d: 8}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 8, wkd: [1], nth: 3}, inh: "AirForceD", fst: {era: 1, y: 1995}},

@@ -12,7 +12,7 @@
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "LabourD"},
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "WhitMon"},
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, inh: "AugMon", nts: {"en":"Carnival Monday"}, urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/jouvert"}},
@@ -29,8 +29,8 @@
         {ty: "D", st: {mon: 7, wkd: [2], nth: 1}, inh: "CARICOM Day"},
         {ty: "D", st: {mon: 9, d: 12}, inh: "NDOfPrayer", fst: {era: 1, y: 2024}, urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
         {ty: "D", st: {mon: 9, d: 9, thruD: 11, wkd: [5]}, ttls: {"en":"National Day of Prayer (in lieu)"}, fst: {era: 1, y: 2024}, inh: "NDOfPrayer", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-national-day-of-prayer"}},
-        {ty: "D", st: {era: 1, y: 2018, mon: 3, d: 22}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
-        {ty: "D", st: {era: 1, y: 2023, mon: 1, d: 19}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
-        {ty: "D", st: {era: 1, y: 2026, mon: 5, d: 1}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
+        {ty: "D", st: {era: 1, y: 2018, mon: 3, d: 22}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
+        {ty: "D", st: {era: 1, y: 2023, mon: 1, d: 19}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
+        {ty: "D", st: {era: 1, y: 2026, mon: 5, d: 1}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/antigua-and-barbuda/antigua-and-barbuda-day-after-general-election"}},
     ]
 }

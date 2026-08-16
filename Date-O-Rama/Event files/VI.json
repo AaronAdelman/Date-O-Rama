@@ -23,7 +23,7 @@
         {ty: "D", st: {mon: 6, d: 20, wkd: [2]}, inh: "Juneteenth (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/juneteenth"}, fst: {era: 1, y: 1886}},
         {ty: "D", st: {mon: 7, d: 3}, inh: "Emancipation Day", urls: {"en":"https://www.daysoftheyear.com/days/v-i-emancipation-day/"}, fst: {era: 1, y: 1848}},
         {ty: "D", st: {mon: 7, d: 4}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/usa-independence-day"}, inh: "IndependenceD"},
-        {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/labor-day"}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/labor-day"}, inh: "LabourD"},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, inh: "Columbus Day", urls: {"en":"https://www.officeholidays.com/holidays/us-virgin-islands/columbus-day"}, fst: {era: 1, y: 1964}},
         {ty: "D", st: {mon: 10, wkd: [2], nth: 2}, ttls: {"en":"Virgin Islands–Puerto Rico Friendship Day"}, urls: {"en":"https://en.wikipedia.org/wiki/Virgin_Islands-Puerto_Rico_Friendship_Day"}, mog: "🇻🇮🇵🇷", fst: {era: 1, y: 1964}},
         {ty: "D", st: {mon: 11, d: 1}, ttls: {"en":"D. Hamilton Jackson Day"}, nts: {"en":"Liberty Day"}, mog: "🗽", urls: {"en":"https://www.daysoftheyear.com/days/d-hamilton-jackson-day/"}, fst: {era: 1, y: 1915}},

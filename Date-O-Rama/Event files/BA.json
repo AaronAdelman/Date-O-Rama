@@ -14,7 +14,7 @@
         {ty: "D", st: {mon: 3, d: 1}, inh: "IndependenceD", fst: {era: 1, y: 1992}, urls: {"en":"https://www.daysoftheyear.com/days/independence-day-in-bosnia-and-herzegovina/"}},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "Labour Day"},
+        {ty: "nD", st: {mon: 5, d: 1}, end: {mon: 5, d: 2}, inh: "LabourD"},
         {ty: "D", st: {mon: 5, d: 9}, inh: "Victory Day (May 9)"},
         {ty: "D", st: {mon: 6, d: 28}, inh: "StVitus"},
         {ty: "D", st: {mon: 11, d: 1}, inh: "AllStsD"},

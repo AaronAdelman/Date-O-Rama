@@ -31,7 +31,7 @@
         {ty: "D", st: {mon: 8, wkd: [2], nth: 1}, inh: "Heritage Day", urls: {"en":"https://www.daysoftheyear.com/days/heritage-day-in-alberta/"}, locs: {"en":"Alberta"}, fst: {era: 1, y: 1974}},
         {ty: "D", st: {mon: 3, d: 20}, inh: "IFrancophonieD", fst: {era: 1, y: 1988}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
-        {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, inh: "Labour Day", urls: {"en":"https://www.officeholidays.com/holidays/canada/canada-labour-day"}},
+        {ty: "D", st: {mon: 9, wkd: [2], nth: 1}, inh: "LabourD", urls: {"en":"https://www.officeholidays.com/holidays/canada/canada-labour-day"}},
         {ty: "D", st: {mon: 7, d: 1}, inh: "Memorial Day", urls: {"en":"https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, fst: {era: 1, y: 1917}, locs: {"en":"Newfoundland and Labrador"}},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day", urls: {"en":"https://www.officeholidays.com/holidays/canada/mothers-day"}},
         {inh: "NGrandparentsD", ty: "D", st: {mon: 9, nth: 2, wkd: [1]}, fst: {era: 1, y: 1978}},

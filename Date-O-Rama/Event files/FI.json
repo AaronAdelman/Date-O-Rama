@@ -46,7 +46,7 @@
         {ty: "D", st: {mon: 12, d: 8}, ttls: {"en":"Birthday of Finnish composer Jean Sibelius","fi":"Jean Sibeliuksen päivä"}, inh: "*BD*"},
         
         {ty: "D", st: {mon: 11, d: 20}, inh: "Children’s Day", ttls: {"en":"Day of Children’s Rights"}},
-        {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "FriendshipD"},
         {ty: "D", st: {mon: 2, d: 11}, ttls: {"en":"National Emergency Number Day"}, urls: {"en":"https://nationaltoday.com/national-emergency-number-day/"}, fst: {era: 1, y: 1997}},
         {ty: "D", st: {misc: "E", offsetD: -49}, inh: "Fastelavn"},
         {ty: "D", st: {mon: 6, d: 6}, inh: "NCoffeeD"},

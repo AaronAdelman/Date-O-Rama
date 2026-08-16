@@ -16,7 +16,7 @@
         {ty: "D", st: {mon: 11, d: 26}, urls: {"en":"https://www.officeholidays.com/holidays/mongolia/mongolia-republic-day"}, inh: "Republic Day", fst: {era: 1, y: 2016}},
         {ty: "D", st: {mon: 12, d: 29}, inh: "IndependenceD", fst: {era: 1, y: 1911}, urls: {"en":"https://nationaltoday.com/mongolia-independence-day/"}},
         
-        {inh: "Constitution Day", ty: "D", st: {mon: 1, d: 13}},
+        {inh: "ConstitutionD", ty: "D", st: {mon: 1, d: 13}},
         {inh: "Patriots’ Day", ty: "D", st: {mon: 3, d: 1}},
         {ttls: {"en":"Mongolian Military Day"}, ty: "D", st: {mon: 3, d: 18}, mog: "🪖🎖️"},
         {inh: "Health Day", ty: "D", st: {mon: 4, d: 7}},

@@ -15,7 +15,7 @@
         {ty: "D", st: {mon: 4, d: 25}, inh: "Liberation Day", fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/national-liberation-day-italy/"}},
         {ty: "D", st: {mon: 4, d: 25}, inh: "StMarkTheEvangelist", nts: {"en":"Feast of Saint Mark"}},
         {ty: "D", st: {mon: 4, d: 28}, urls: {"en":"https://www.officeholidays.com/holidays/italy/sardinia/sardinia-day"}, ttls: {"en":"Sardinia’s Day"}, fst: {era: 1, y: 1993}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 5, wkd: [1], nth: 2}, inh: "Mother’s Day"},
         {ty: "D", st: {mon: 6, d: 2}, inh: "Republic Day", urls: {"en":"https://www.daysoftheyear.com/days/republic-day-italy/"}, fst: {era: 1, y: 1999}},
         {ty: "D", st: {mon: 6, d: 24}, inh: "StJohn", urls: {"en":"https://www.daysoftheyear.com/days/feast-of-san-giovanni/"}},

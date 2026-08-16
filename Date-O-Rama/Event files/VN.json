@@ -12,8 +12,8 @@
         {ty: "D", st: {mon: 4, d: 29, wkd: [2]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day (bridge day)"}},
         {ty: "D", st: {mon: 4, d: 30}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day","vi":"Ngày giải phóng miền Nam, thống nhất đất nước"}},
         {ty: "D", st: {mon: 5, d: 2, wkd: [2, 3]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/reunification-day"}, ttls: {"en":"Reunification Day (in lieu)"}},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 3, wkd: [2, 3, 4]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/labour-day"}, inh: "Labour Day (in lieu)"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
+        {ty: "D", st: {mon: 5, d: 3, wkd: [2, 3, 4]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/labour-day"}, inh: "LabourD (IL)"},
         {ty: "D", st: {mon: 9, d: 1, wkd: [2, 5, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inh: "NDHol", fst: {era: 1, y: 1945}},
         {ty: "D", st: {mon: 9, d: 2}, inh: "ND", fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/national-day-of-vietnam/"}},
         {ty: "D", st: {mon: 9, d: 3, wkd: [1, 3, 4, 6]}, urls: {"en":"https://www.officeholidays.com/holidays/vietnam/vietnam-national-day"}, inh: "NDHol", fst: {era: 1, y: 1945}},
@@ -47,9 +47,9 @@
         {inh: "Mother’s Day", ty: "D", st: {mon: 10, d: 15}, ttls: {"en":"Vietnamese Women’s Day"}},
         {ty: "D", st: {mon: 6, d: 1}, inh: "IChildren’s Day"},
         {inh: "Martyrs’ Day", ty: "D", st: {mon: 7, d: 27}, ttls: {"en":"Memorial Day for War Martyrs"}, nts: {"en":"Remembrance Day"}},
-        {inh: "Revolution Day", ty: "D", st: {mon: 8, d: 19}, fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/revolution-commemoration-day/"}},
+        {inh: "RevolutionD", ty: "D", st: {mon: 8, d: 19}, fst: {era: 1, y: 1945}, urls: {"en":"https://nationaltoday.com/revolution-commemoration-day/"}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", inh: "Long Tan Day", st: {mon: 8, d: 18}, fst: {era: 1, y: 2016}},
-        {ty: "D", st: {mon: 12, d: 15}, inh: "ITea Day", fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 12, d: 15}, inh: "ITeaD", fst: {era: 1, y: 2005}},
     ]
 }

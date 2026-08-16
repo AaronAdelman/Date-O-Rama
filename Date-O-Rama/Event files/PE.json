@@ -11,7 +11,7 @@
         {ty: "D", st: {misc: "E", offsetD: -3}, inh: "Maundy Thu"},
         {ty: "D", st: {misc: "E", offsetD: -2}, inh: "GoodFri"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 6, d: 7}, inh: "Battle of Arica", urls: {"en":"https://www.officeholidays.com/holidays/peru/battle-of-arica-and-flag-day"}, fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 6, d: 7}, inh: "Flag Day", urls: {"en":"https://www.officeholidays.com/holidays/peru/battle-of-arica-and-flag-day"}, fst: {era: 1, y: 2024}},
         {ty: "D", st: {mon: 6, d: 12}, ttls: {"en":"Peruvian Hairless Dog Day"}, urls: {"en":"https://www.daysoftheyear.com/days/peruvian-hairless-dog-day/"}},
@@ -35,8 +35,8 @@
         {ty: "D", st: {mon: 10, d: 8}, inh: "Navy Day"},
         {inh: "ArmedForcesD", ty: "D", st: {mon: 9, d: 24}},
         {inh: "AirForceD", ty: "D", st: {mon: 7, d: 23}},
-        {ty: "D", st: {mon: 7, wkd: [7], nth: 1}, inh: "Friendship Day", fst: {era: 1, y: 2009}},
-        {ty: "D", st: {mon: 2, d: 14}, inh: "Friendship Day"},
+        {ty: "D", st: {mon: 7, wkd: [7], nth: 1}, inh: "FriendshipD", fst: {era: 1, y: 2009}},
+        {ty: "D", st: {mon: 2, d: 14}, inh: "FriendshipD"},
         {ty: "D", st: {mon: 6, d: 21}, inh: "AndeanNY", fst: {era: 1, y: 2009}},
         {ty: "D", st: {mon: 8, d: 22}, inh: "NCoffeeD"},
         {inh: "Non-Working Day", ty: "D", st: {mon: 10, d: 11, era: 1, y: 2021}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day"}},
@@ -72,7 +72,7 @@
 
         {ty: "D", st: {mon: 8, d: 1}, inh: "NAlpacaD"},
         
-        {inh: "Public Holiday", ty: "nD", st: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
+        {inh: "PublicHol", ty: "nD", st: {era: 1, y: 2024, mon: 11, d: 14}, end: {era: 1, y: 2024, mon: 11, d: 16}, urls: {"en":"https://www.officeholidays.com/holidays/peru/peru-lima-holiday"}},
         {ty: "D", st: {mon: 8, d: 1}, inh: "Pachamama Day", fst: {era: 1, y: 1990}},
     ],
     tpls: {

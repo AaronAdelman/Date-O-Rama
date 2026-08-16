@@ -9,11 +9,11 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Burkina_Faso"},
     evts: [
         {ty: "D", st: {mon: 1, d: 1}, inh: "NYD"},
-        {inh: "Revolution Day", ty: "D", st: {mon: 1, d: 3}, fst: {era: 1, y: 1966}},
+        {inh: "RevolutionD", ty: "D", st: {mon: 1, d: 3}, fst: {era: 1, y: 1966}},
         {ty: "D", st: {mon: 3, d: 8}, inh: "IWD"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {misc: "E", offsetD: 39}, inh: "Ascension"},
         {inh: "IndependenceD", ty: "D", st: {mon: 8, d: 5}, fst: {era: 1, y: 1960}, urls: {"en":"https://nationaltoday.com/burkina-faso-independence-day/"}},
         {ty: "D", st: {mon: 8, d: 15}, inh: "Assumption"},

@@ -11,7 +11,7 @@
         {ty: "D", st: {mon: 1, d: 6}, inh: "Epiphany"},
         {ty: "D", st: {misc: "E"}, inh: "Easter"},
         {ty: "D", st: {misc: "E", offsetD: 1}, inh: "Easter Mon"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
         {ty: "D", st: {mon: 5, d: 30}, inh: "Statehood Day", urls: {"en":"https://www.daysoftheyear.com/days/statehood-day-in-croatia/"}, fst: {era: 1, y: 2020}, nts: {"en":"National Day"}},
         {ty: "D", st: {misc: "E", offsetD: 60}, inh: "CorpusChristi"},
         {ty: "D", st: {mon: 6, d: 22}, ttls: {"en":"Anti-Fascist Struggle Day","hr":"Dan antifašističke borbe"}, urls: {"en":"https://nationaltoday.com/anti-fascist-struggle-day/"}},

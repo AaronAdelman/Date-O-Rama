@@ -8,8 +8,8 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Federated_States_of_Micronesia"},
     evts: [
         {ty: "D", st: {mon: 11, d: 3}, inh: "IndependenceD", fst: {era: 1, y: 1986}},
-        {ty: "D", st: {mon: 1, d: 11}, urls: {"en":"https://nationaltoday.com/kosrae-constitution-day/"}, ttls: {"en":"Kosrae Constitution Day"}, inh: "Constitution Day"},
+        {ty: "D", st: {mon: 1, d: 11}, urls: {"en":"https://nationaltoday.com/kosrae-constitution-day/"}, ttls: {"en":"Kosrae Constitution Day"}, inh: "ConstitutionD"},
         {ty: "D", st: {mon: 3, d: 1}, ttls: {"en":"Yap Day"}, urls: {"en":"https://nationaltoday.com/yap-day/"}},
-        {ty: "D", st: {mon: 5, d: 10}, inh: "Constitution Day", urls: {"en":"https://nationaltoday.com/micronesia-constitution-day/"}, fst: {era: 1, y: 1979}},
+        {ty: "D", st: {mon: 5, d: 10}, inh: "ConstitutionD", urls: {"en":"https://nationaltoday.com/micronesia-constitution-day/"}, fst: {era: 1, y: 1979}},
     ]
 }

@@ -36,7 +36,7 @@
         {ty: "D", st: {misc: "E", offsetD: 49}, inh: "Pentecost"},
         {ty: "D", st: {misc: "E", offsetD: 50}, inh: "WhitMon"},
         {ty: "D", st: {mon: 5, d: 1}, inh: "May Day"},
-        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "Labour Day"},
+        {ty: "D", st: {mon: 5, wkd: [2], nth: 1}, inh: "LabourD"},
         
 
         {ty: "D", st: {misc: "E", offsetD: -21}, inh: "Mother’s Day"},
@@ -417,7 +417,7 @@
         {ty: "D", st: {era: 1, y: 2024, mon: 6, d: 6}, inh: "NFish & Chip Day"},
         {ty: "D", st: {mon: 6, wkd: [6], nth: 1}, inh: "NFish & Chip Day", fst: {era: 1, y: 2025}},
         {ty: "D", st: {mon: 6, d: 5}, ttls: {"en":"Biomedical Science Day"}, urls: {"en":"https://www.daysoftheyear.com/days/biomedical-science-day/"}, fst: {era: 1, y: 2017}, nts: {"en":"Created by the Institute of Biomedical Science (IBMS)"}},
-        {ty: "D", st: {era: 1, y: 2026, mon: 6, d: 15}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/united-kingdom/scotland-world-cup"}, locs: {"en":"Scotland"}},
+        {ty: "D", st: {era: 1, y: 2026, mon: 6, d: 15}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/united-kingdom/scotland-world-cup"}, locs: {"en":"Scotland"}},
         {ty: "D", st: {mon: 6, d: 25}, ttls: {"en":"Rare Chromosome Disorder Awareness Day"}, urls: {"en":"https://www.daysoftheyear.com/days/rare-chromosome-disorder-awareness-day/"}, inh: "*MedAw*", nts: {"en":"Created by Unique"}},
         {ty: "nD", st: {mon: 5, d: 16}, end: {mon: 6, d: 15}, inh: "Jewish Culture Month", fst: {era: 1, y: 2026}},
         {ty: "D", st: {mon: 7, d: 4}, ttls: {"en":"Alice in Wonderland Day"}, urls: {"en":"https://www.daysoftheyear.com/days/alice-in-wonderland-day/"}, mog: "🍄🐛", fst: {era: 1, y: 2015}},

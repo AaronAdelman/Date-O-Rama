@@ -9,9 +9,9 @@
     urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts: [
         {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "NYD"},
-        {ty: "D", st: {mon: 5, d: 1}, inh: "Labour Day"},
-        {ty: "D", st: {mon: 5, d: 2, wkd: [3, 5, 6, 7]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
-        {ty: "D", st: {mon: 5, d: 3, wkd: [2]}, inh: "Labour Day (in lieu)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
+        {ty: "D", st: {mon: 5, d: 1}, inh: "LabourD"},
+        {ty: "D", st: {mon: 5, d: 2, wkd: [3, 5, 6, 7]}, inh: "LabourD (IL)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
+        {ty: "D", st: {mon: 5, d: 3, wkd: [2]}, inh: "LabourD (IL)", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
         {ty: "nD", st: {mon: 5, d: 21, durD: 2}, inh: "IndependenceD"},
         {ty: "D", st: {mon: 5, d: 23, wkd: [3]}, inh: "IndependenceDHol", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/montenegro-independence-day"}},
         {ty: "D", st: {mon: 5, d: 24, wkd: [6]}, inh: "IndependenceDHol", urls: {"en":"https://www.officeholidays.com/holidays/montenegro/montenegro-independence-day"}},

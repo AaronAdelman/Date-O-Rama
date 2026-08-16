@@ -36,6 +36,6 @@
         {ty: "D", st: {mon: 6, d: 1}, inh: "Children’s Day"},
         
         {ty: "D", st: {mon: 2, d: 14}, urls: {"en":"https://nationaltoday.com/rafik-hariri-memorial-day/"}, ttls: {"en":"Rafik Hariri Memorial Day"}, fst: {era: 1, y: 2005}},
-        {ty: "nD", st: {era: 1, y: 2025, mon: 12, d: 1, durD: 2}, inh: "Public Holiday", urls: {"en":"https://www.officeholidays.com/holidays/lebanon/lebanon-papal-visit"}},
+        {ty: "nD", st: {era: 1, y: 2025, mon: 12, d: 1, durD: 2}, inh: "PublicHol", urls: {"en":"https://www.officeholidays.com/holidays/lebanon/lebanon-papal-visit"}},
   ]
 }
