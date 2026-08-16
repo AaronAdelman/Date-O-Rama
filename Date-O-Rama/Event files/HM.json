@@ -1,10 +1,10 @@
 {
-    ttls: {"*":"HM"},
+    ttls:{"*":"HM"},
     "//":"Heard Island and McDonald Islands",
-    defLocale: "en",
-    cal: "gre",
-    color: {r: 0.50, g: 0.50, b: 0.50},
-    evts: [
+    defLocale:"en",
+    cal:"gre",
+    color:{r: 0.50, g: 0.50, b: 0.50},
+    evts:[
         
     ]
 }

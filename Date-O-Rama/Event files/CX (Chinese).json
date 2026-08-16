@@ -1,12 +1,12 @@
 {
-    ttls: {"*":"CX"},
+    ttls:{"*":"CX"},
     "//":"Christmas Island",
-    defLocale: "en",
-    cal: "chi",
-    color: {r: 0.11, g: 0.54, b: 0.26},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
-    evts: [
-        {ty: "nD", st: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inh: "ChineseNY"},
-        {ty: "D", st: {mon: 1, d: 15}, inh: "Lantern Festival"}
+    defLocale:"en",
+    cal:"chi",
+    color:{r: 0.11, g: 0.54, b: 0.26},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
+    evts:[
+        {ty:"nD", st:{mon:1, d:1}, end:{mon:1, d:2}, inh:"ChineseNY"},
+        {ty:"D", st:{mon:1, d:15}, inh:"Lantern Festival"}
    ]
 }

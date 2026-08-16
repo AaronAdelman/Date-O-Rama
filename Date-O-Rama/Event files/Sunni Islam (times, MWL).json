@@ -1,17 +1,17 @@
 {
-    ttls: {"en":"Islam (times, MWL)","he":"אסלאם סוני (זמנים, MWL)"},
-    defLocale: "en",
-    cal: "hiq-solar*",
-    color: {name: "green"},
-    mog: "🇸🇦",
-    evts: [
-        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
-        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
-        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
-        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
-        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
+    ttls:{"en":"Islam (times, MWL)","he":"אסלאם סוני (זמנים, MWL)"},
+    defLocale:"en",
+    cal:"hiq-solar*",
+    color:{name:"green"},
+    mog:"🇸🇦",
+    evts:[
+        {ty:"pt", st:{ptTy:"twiR", deg: 0.833, offset: 0.0}, inh:"Sunrise"},
+        {ty:"pt", st:{ptTy:"twiS", deg: 0.833, offset: 0.0}, inh:"Sunset"},
+        {inh:"Dhuhr", ty:"pt", st:{ptTy:"DhuhrISNA"}},
+        {inh:"Asr (Shafii)", ty:"pt", st:{ptTy:"AsrShafiiKarachi"}},
+        {inh:"Asr (Hanafi)", ty:"pt", st:{ptTy:"AsrHanafiKarachi"}},
         
-        {inh: "Isha", ty: "pt", st: {ptTy: "IshaMWL"}, nts: {"en":"Muslim World League"}},
-        {ttls: {"en":"Fajr (MWL)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (MWL)"}, ty: "pt", st: {ptTy: "FajrMWL"}, nts: {"en":"Muslim World League"}},
+        {inh:"Isha", ty:"pt", st:{ptTy:"IshaMWL"}, nts:{"en":"Muslim World League"}},
+        {ttls:{"en":"Fajr (MWL)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (MWL)"}, ty:"pt", st:{ptTy:"FajrMWL"}, nts:{"en":"Muslim World League"}},
     ]
 }

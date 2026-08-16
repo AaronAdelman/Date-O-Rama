@@ -1,17 +1,17 @@
 {
-    ttls: {"*":"BA"},
+    ttls:{"*":"BA"},
     "//":"Bosnia and Herzegovina",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.00, g: 0.18, b: 0.42},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
-    fst: {era: 1, y: 1992},
-    evts: [
-        {ty: "D", st: {mon: 12, d: 24}, inh: "XmasE"},
-        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
-        {ty: "D", st: {mon: 1, d: 1}, inh: "ONYD"},
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
-        {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.00, g: 0.18, b: 0.42},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bosnia_and_Herzegovina"},
+    fst:{era:1, y:1992},
+    evts:[
+        {ty:"D", st:{mon:12, d:24}, inh:"XmasE"},
+        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
+        {ty:"D", st:{mon:1, d:1}, inh:"ONYD"},
+        {ty:"D", st:{misc:"E", offsetD: -2}, inh:"OGood Fri"},
+        {ty:"D", st:{misc:"E"}, inh:"Easter"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEaster Mon"},
     ]
 }

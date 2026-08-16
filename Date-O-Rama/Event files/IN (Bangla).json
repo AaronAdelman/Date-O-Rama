@@ -15,14 +15,14 @@
 // NOTE:  There are at least two versions of the Bangla calendar in play due to calendar reform.  Expect dates to be off a day sometimes.
 
 {
-    ttls: {"*":"IN"},
+    ttls:{"*":"IN"},
     "//":"India",
     "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
-    defLocale: "en",
-    cal: "bangla-s",
-    color: {r: 0.95, g: 0.62, b: 0.29},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
-    evts: [
-        {ty: "D", st: {mon: 11, d: 1}, ttls: {"bn":"বসন্ত উৎসব","en":"Basanta Utsab","mr":"बसंत उत्सब"}, urls: {"en":"https://en.wikipedia.org/wiki/Basanta_Utsab"}},
+    defLocale:"en",
+    cal:"bangla-s",
+    color:{r: 0.95, g: 0.62, b: 0.29},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
+    evts:[
+        {ty:"D", st:{mon:11, d:1}, ttls:{"bn":"বসন্ত উৎসব","en":"Basanta Utsab","mr":"बसंत उत्सब"}, urls:{"en":"https://en.wikipedia.org/wiki/Basanta_Utsab"}},
     ]
 }

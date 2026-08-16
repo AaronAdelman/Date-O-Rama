@@ -1,14 +1,14 @@
 {
-    ttls: {"*":"XK"},
+    ttls:{"*":"XK"},
     "//":"Kosovo",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.00, g: 0.00, b: 0.50},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
-    fst: {era: 1, y: 2008},
-    evts: [
-        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
-        {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.00, g: 0.00, b: 0.50},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kosovo"},
+    fst:{era:1, y:2008},
+    evts:[
+        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
+        {ty:"D", st:{misc:"E"}, inh:"Easter"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEaster Mon"},
     ]
 }

@@ -1,11 +1,11 @@
 {
-    ttls: {"*":"SY"},
+    ttls:{"*":"SY"},
     "//":"Syria",
-    defLocale: "en",
-    cal: "hiq*",
-    color: {r: 0.94, g: 0.20, b: 0.25},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
-    evts: [
-        {ty: "D", st: {mon: 7, d: 13}, inh: "Father’s Day"},
+    defLocale:"en",
+    cal:"hiq*",
+    color:{r: 0.94, g: 0.20, b: 0.25},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Syria"},
+    evts:[
+        {ty:"D", st:{mon:7, d:13}, inh:"Father’s Day"},
     ]
 }

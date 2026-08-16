@@ -1,14 +1,14 @@
 {
-    ttls: {"*":"MK"},
+    ttls:{"*":"MK"},
     "//":"North Macedonia",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.75, g: 0.05, b: 0.24},
-    fst: {era: 1, y: 1991},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Macedonia"},
-    evts: [
-        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
-        {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.75, g: 0.05, b: 0.24},
+    fst:{era:1, y:1991},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_North_Macedonia"},
+    evts:[
+        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
+        {ty:"D", st:{misc:"E"}, inh:"Easter"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEaster Mon"},
     ]
 }

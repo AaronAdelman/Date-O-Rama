@@ -1,12 +1,12 @@
 {
-    ttls: {"*":"MV"},
+    ttls:{"*":"MV"},
     "//":"Maldives",
-    defLocale: "en",
-    cal: "hiq*",
-    color: {r: 0.78, g: 0.06, b: 0.18},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
-    evts: [
-        {ty: "D", st: {mon: 3, d: 1}, inh: "ND", urls: {"en":"https://nationaltoday.com/maldives-qaumee-dhuvas/"}, nts: {"en":"Qaumee Dhuvas"}},
-        {ty: "D", st: {mon: 4, d: 1}, ttls: {"en":"Day Maldives Embraced Islam"}, urls: {"en":"https://www.officeholidays.com/holidays/maldives/the-day-maldives-embraced-islam"}, fst: {era: 0, y: 1421}},
+    defLocale:"en",
+    cal:"hiq*",
+    color:{r: 0.78, g: 0.06, b: 0.18},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Maldives"},
+    evts:[
+        {ty:"D", st:{mon:3, d:1}, inh:"ND", urls:{"en":"https://nationaltoday.com/maldives-qaumee-dhuvas/"}, nts:{"en":"Qaumee Dhuvas"}},
+        {ty:"D", st:{mon:4, d:1}, ttls:{"en":"Day Maldives Embraced Islam"}, urls:{"en":"https://www.officeholidays.com/holidays/maldives/the-day-maldives-embraced-islam"}, fst:{era:0, y:1421}},
    ]
 }

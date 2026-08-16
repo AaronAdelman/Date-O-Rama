@@ -1,40 +1,40 @@
 {
-    ttls: {"en":"Adrienne Sioux Koopersmith"},
-    defLocale: "en",
-    cal: "gre*",
-    color: {name: "magenta"},
-    fst: {era: 1, y: 1994},
+    ttls:{"en":"Adrienne Sioux Koopersmith"},
+    defLocale:"en",
+    cal:"gre*",
+    color:{name:"magenta"},
+    fst:{era:1, y:1994},
     "//":"WARNING:  Ms. Koopersmith reportedly has created over 1,900 observances (“holidates”).",
-    evts: [
-        {ty: "D", st: {mon: 1, d: 6}, inh: "NSmithD", fst: {era: 1, y: 1994}},
+    evts:[
+        {ty:"D", st:{mon:1, d:6}, inh:"NSmithD", fst:{era:1, y:1994}},
         
-        {ty: "nD", st: {mon: 1, d: 11}, end: {mon: 1, d: 18}, inh: "Thank You Day", ttls: {"en":"Thank You Days"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog: "🖋", fst: {era: 1, y: 1994}, subEvts: [
-            {ty: "D", st: {mon: 1, d: 11}, inh: "Thank You Day", nts: {"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls: {"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog: "🖋", fst: {era: 1, y: 1994}},
+        {ty:"nD", st:{mon:1, d:11}, end:{mon:1, d:18}, inh:"Thank You Day", ttls:{"en":"Thank You Days"}, urls:{"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog:"🖋", fst:{era:1, y:1994}, subEvts:[
+            {ty:"D", st:{mon:1, d:11}, inh:"Thank You Day", nts:{"en":"International Thank You Day\nCreated by Adrienne Sioux Koopersmith"}, urls:{"en":"https://www.daysoftheyear.com/days/thank-you-day/"}, mog:"🖋", fst:{era:1, y:1994}},
         ]},
         
-        {ty: "D", st: {mon: 2, d: 12}, ttls: {"en":"National Lost Penny Day"}, urls: {"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst: {era: 1, y: 1995}, mog: "🪙", nts: {"en":"Created by Adrienne Sioux Koopersmith"}},
+        {ty:"D", st:{mon:2, d:12}, ttls:{"en":"National Lost Penny Day"}, urls:{"en":"https://www.daysoftheyear.com/days/lost-penny-day/"}, fst:{era:1, y:1995}, mog:"🪙", nts:{"en":"Created by Adrienne Sioux Koopersmith"}},
         
-        {ty: "D", st: {mon: 2, d: 27}, ttls: {"en":"No Brainer Day"}, urls: {"en":"https://www.daysoftheyear.com/days/no-brainer-day/"}, fst: {era: 1, y: 1996}},
-        {ty: "D", st: {mon: 3, d: 4}, ttls: {"en":"National Hug a G.I. Day"}, urls: {"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst: {era: 1, y: 1996}, mog: "🫂"},
-        {ty: "D", st: {mon: 6, d: 18}, inh: "NSplurgeD", fst: {era: 1, y: 1994}},
-        {ty: "D", st: {mon: 2, d: 6}, ttls: {"en":"Pay a Compliment Day"}, urls: {"en":"https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, fst: {era: 1, y: 1995}},
-        {ty: "D", st: {mon: 7, d: 14}, ttls: {"en":"National Pandemonium Day"}},
-        {ty: "M", st: {mon: 8}, ttls: {"en":"Ant Appreciation Month"}},
+        {ty:"D", st:{mon:2, d:27}, ttls:{"en":"No Brainer Day"}, urls:{"en":"https://www.daysoftheyear.com/days/no-brainer-day/"}, fst:{era:1, y:1996}},
+        {ty:"D", st:{mon:3, d:4}, ttls:{"en":"National Hug a G.I. Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-hug-a-g-i-day/"}, fst:{era:1, y:1996}, mog:"🫂"},
+        {ty:"D", st:{mon:6, d:18}, inh:"NSplurgeD", fst:{era:1, y:1994}},
+        {ty:"D", st:{mon:2, d:6}, ttls:{"en":"Pay a Compliment Day"}, urls:{"en":"https://www.daysoftheyear.com/days/pay-a-compliment-day/"}, fst:{era:1, y:1995}},
+        {ty:"D", st:{mon:7, d:14}, ttls:{"en":"National Pandemonium Day"}},
+        {ty:"M", st:{mon:8}, ttls:{"en":"Ant Appreciation Month"}},
         
-        {ty: "D", st: {wkd: [6], d: 13}, subEvts: [
-            {ty: "D", st: {mon: 1}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 2}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 3, yLens: [366]}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 4, yLens: [365]}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 5}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 6}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 8, yLens: [365]}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
-            {ty: "D", st: {mon: 9}, inh: "Skeptics Day International"},
-            {ty: "D", st: {mon: 11, yLens: [366]}, inh: "Skeptics Day International", fst: {era: 1, y: 1996}},
+        {ty:"D", st:{wkd:[6], d:13}, subEvts:[
+            {ty:"D", st:{mon:1}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:2}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:3, yLens: [366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:4, yLens: [365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:5}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:6}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:8, yLens: [365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:9}, inh:"Skeptics Day International"},
+            {ty:"D", st:{mon:11, yLens: [366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
         ]},
-        {ty: "D", st: {mon: 11, d: 2, thruD: 8, wkd: [3]}, inh: "Skeptics Day International", fst: {era: 1, y: 1997}},
+        {ty:"D", st:{mon:11, d:2, thruD:8, wkd:[3]}, inh:"Skeptics Day International", fst:{era:1, y:1997}},
     ],
-    tpls: {
-        "Skeptics Day International": {ty: "D", st: {wkd: [6], d: 13, mon: 1, yLens: [365]}, ttls: {"en":"Skeptics Day International"}, urls: {"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, nts: {"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, mog: "🫤"},
+    tpls:{
+        "Skeptics Day International":{ty:"D", st:{wkd:[6], d:13, mon:1, yLens: [365]}, ttls:{"en":"Skeptics Day International"}, urls:{"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, nts:{"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, mog:"🫤"},
     }
 }

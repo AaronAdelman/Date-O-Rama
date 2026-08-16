@@ -1,12 +1,12 @@
 {
-    ttls: {"*":"KZ"},
+    ttls:{"*":"KZ"},
     "//":"Kazakhstan",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.00, g: 0.68, b: 0.78},
-    fst: {era: 1, y: 1991},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kazakhstan"},
-    evts: [
-        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.00, g: 0.68, b: 0.78},
+    fst:{era:1, y:1991},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kazakhstan"},
+    evts:[
+        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
     ]
 }

@@ -1,12 +1,12 @@
 {
-    ttls: {"*":"MU"},
+    ttls:{"*":"MU"},
     "//":"Mauritius",
-    defLocale: "en",
-    cal: "chi",
-    color: {r: 1.00, g: 0.82, b: 0.00},
-    urls: {"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
-    evts: [
-        {ty: "D", st: {mon: 1, d: 1}, inh: "ChineseNY"},
+    defLocale:"en",
+    cal:"chi",
+    color:{r: 1.00, g: 0.82, b: 0.00},
+    urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
+    evts:[
+        {ty:"D", st:{mon:1, d:1}, inh:"ChineseNY"},
 
     ]
 }

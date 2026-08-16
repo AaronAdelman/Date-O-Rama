@@ -1,12 +1,12 @@
 {
-    ttls: {"*":"MH"},
+    ttls:{"*":"MH"},
     "//":"Marshall Islands",
-    defLocale: "en",
-    cal: "gre",
-    color: {r: 0.00, g: 0.19, b: 0.53},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Marshall_Islands"},
-    fst: {era: 1, y: 1979},
-    evts: [
-        {ty: "D", st: {mon: 5, d: 1}, inh: "ConstitutionD", fst: {era: 1, y: 1979}, urls: {"en":"https://nationaltoday.com/marshall-islands-constitution-day/"}},
+    defLocale:"en",
+    cal:"gre",
+    color:{r: 0.00, g: 0.19, b: 0.53},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Marshall_Islands"},
+    fst:{era:1, y:1979},
+    evts:[
+        {ty:"D", st:{mon:5, d:1}, inh:"ConstitutionD", fst:{era:1, y:1979}, urls:{"en":"https://nationaltoday.com/marshall-islands-constitution-day/"}},
     ]
 }

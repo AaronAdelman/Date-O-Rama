@@ -1,9 +1,9 @@
 {
-    ttls: {"en":"Confucianism (supplemental)","he":"קונפוציאניזם (נוספים)"},
-    defLocale: "en",
-    cal: "gre",
-    color: {r: 0.2, g: 0.79, b: 0.25},
-    evts: [
-        {ty: "D", st: {mon: 9, d: 29}, ttls: {"en":"Confucius Day"}, urls: {"en":"https://www.daysoftheyear.com/days/confucius-day/"}},
+    ttls:{"en":"Confucianism (supplemental)","he":"קונפוציאניזם (נוספים)"},
+    defLocale:"en",
+    cal:"gre",
+    color:{r: 0.2, g: 0.79, b: 0.25},
+    evts:[
+        {ty:"D", st:{mon:9, d:29}, ttls:{"en":"Confucius Day"}, urls:{"en":"https://www.daysoftheyear.com/days/confucius-day/"}},
     ]
 }

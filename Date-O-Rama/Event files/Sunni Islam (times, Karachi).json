@@ -1,17 +1,17 @@
 {
-    ttls: {"en":"Islam (times, Karachi)","he":"אסלאם סוני (זמנים, קראצ׳י)"},
-    defLocale: "en",
-    cal: "hiq-solar*",
-    color: {name: "green"},
-    mog: "🇵🇰",
-    evts: [
-        {ty: "pt", st: {ptTy: "twiR", deg: 0.833, offset: 0.0}, inh: "Sunrise"},
-        {ty: "pt", st: {ptTy: "twiS", deg: 0.833, offset: 0.0}, inh: "Sunset"},
-        {inh: "Dhuhr", ty: "pt", st: {ptTy: "DhuhrISNA"}},
-        {inh: "Asr (Shafii)", ty: "pt", st: {ptTy: "AsrShafiiKarachi"}},
-        {inh: "Asr (Hanafi)", ty: "pt", st: {ptTy: "AsrHanafiKarachi"}},
+    ttls:{"en":"Islam (times, Karachi)","he":"אסלאם סוני (זמנים, קראצ׳י)"},
+    defLocale:"en",
+    cal:"hiq-solar*",
+    color:{name:"green"},
+    mog:"🇵🇰",
+    evts:[
+        {ty:"pt", st:{ptTy:"twiR", deg: 0.833, offset: 0.0}, inh:"Sunrise"},
+        {ty:"pt", st:{ptTy:"twiS", deg: 0.833, offset: 0.0}, inh:"Sunset"},
+        {inh:"Dhuhr", ty:"pt", st:{ptTy:"DhuhrISNA"}},
+        {inh:"Asr (Shafii)", ty:"pt", st:{ptTy:"AsrShafiiKarachi"}},
+        {inh:"Asr (Hanafi)", ty:"pt", st:{ptTy:"AsrHanafiKarachi"}},
         
-        {inh: "Isha", ty: "pt", st: {ptTy: "IshaKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
-        {inh: "Fajr", ty: "pt", st: {ptTy: "FajrKarachi"}, nts: {"en":"University of Islamic Sciences, Karachi"}},
+        {inh:"Isha", ty:"pt", st:{ptTy:"IshaKarachi"}, nts:{"en":"University of Islamic Sciences, Karachi"}},
+        {inh:"Fajr", ty:"pt", st:{ptTy:"FajrKarachi"}, nts:{"en":"University of Islamic Sciences, Karachi"}},
     ]
 }

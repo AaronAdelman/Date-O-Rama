@@ -1,11 +1,11 @@
 {
-    ttls: {"*":"KG"},
+    ttls:{"*":"KG"},
     "//":"Kyrgyzstan",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.94, g: 0.20, b: 0.25},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kyrgyzstan"},
-    evts: [
-        {ty: "D", st: {mon: 12, d: 25}, inh: "OXmas"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.94, g: 0.20, b: 0.25},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kyrgyzstan"},
+    evts:[
+        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
     ]
 }

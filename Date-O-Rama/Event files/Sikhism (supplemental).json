@@ -1,9 +1,9 @@
 {
-    ttls: {"en":"Sikhism (supplemental)","he":"סיקיזם (נוספים)"},
-    defLocale: "en",
-    cal: "gre",
-    color: {r: 0.96, g: 0.78, b: 0.27},
-    evts: [
-        {ty: "D", st: {mon: 4, d: 13}, ttls: {"en":"International Turban Day"}, urls: {"en":"https://www.sikhiwiki.org/index.php/International_Turban_Day"}, fst: {era: 1, y: 2004}, mog: "👳‍♂️👳‍♀️"},
+    ttls:{"en":"Sikhism (supplemental)","he":"סיקיזם (נוספים)"},
+    defLocale:"en",
+    cal:"gre",
+    color:{r: 0.96, g: 0.78, b: 0.27},
+    evts:[
+        {ty:"D", st:{mon:4, d:13}, ttls:{"en":"International Turban Day"}, urls:{"en":"https://www.sikhiwiki.org/index.php/International_Turban_Day"}, fst:{era:1, y:2004}, mog:"👳‍♂️👳‍♀️"},
     ]
 }

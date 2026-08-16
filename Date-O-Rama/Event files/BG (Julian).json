@@ -1,15 +1,15 @@
 {
-    ttls: {"*":"BG"},
+    ttls:{"*":"BG"},
     "//":"Bulgaria",
-    defLocale: "en",
-    cal: "jul",
-    color: {r: 0.00, g: 0.69, b: 0.40},
-    fst: {era: 1, y: 1908},
-    urls: {"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
-    evts: [
-        {ty: "D", st: {misc: "E", offsetD: -2}, inh: "OGood Fri"},
-        {ty: "D", st: {misc: "E", offsetD: -1}, inh: "OHoly Sat"},
-        {ty: "D", st: {misc: "E"}, inh: "Easter"},
-        {ty: "D", st: {misc: "E", offsetD: 1}, inh: "OEaster Mon"},
+    defLocale:"en",
+    cal:"jul",
+    color:{r: 0.00, g: 0.69, b: 0.40},
+    fst:{era:1, y:1908},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria"},
+    evts:[
+        {ty:"D", st:{misc:"E", offsetD: -2}, inh:"OGood Fri"},
+        {ty:"D", st:{misc:"E", offsetD: -1}, inh:"OHoly Sat"},
+        {ty:"D", st:{misc:"E"}, inh:"Easter"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEaster Mon"},
     ]
 }
