@@ -705,7 +705,7 @@
         {ty: "D", st: {mon: 6, d: 12}, ttls: {"en":"Women Veterans Day"}, nts: {"en":"Women Veterans’ Recognition Day\nWomen Veterans Recognition Day"}, inh: "Veterans Day", urls: {"en":"https://en.wikipedia.org/wiki/Women_Veterans_Day"}, fst: {era: 1, y: 2008}},
         {ty: "D", st: {mon: 6, d: 12}, ttls: {"en":"Pulse Night of Remembrance"}, fst: {era: 1, y: 2017}},
         {ty: "D", st: {mon: 8, wkd: [7], nth: 2}, ttls: {"en":"Celebrate Your Lakes Day"}, urls: {"en":"https://www.checkiday.com/7fbf3c0647f4cf79be3671b8b2f24026/celebrate-your-lakes-day"}, fst: {era: 1, y: 1995}, mog: "☱"},
-        {ty: "D", st: {mon: 8, d: 16}, ttls: {"en":"National Bratwurst Day"}, nts: {"en":"World Bratwurst Day\nTony Evers, Governor of Wisconsin, made this a state holiday in 2024."}, urls: {"en":"https://www.daysoftheyear.com/days/world-bratwurst-day/"}, fst: {era: 1, y: 2005}},
+        {ty: "D", st: {mon: 8, d: 16}, ttls: {"en":"National Bratwurst Day"}, nts: {"en":"World Bratwurst Day\nCreated by the Wisconsin Pork Producer Association"}, urls: {"en":"https://www.daysoftheyear.com/days/world-bratwurst-day/"}, fst: {era: 1, y: 2005}},
         {ty: "M", st: {mon: 10}, inh: "LGBTQ History Month", fst: {era: 1, y: 1994}},
         {ty: "D", st: {mon: 10, d: 14}, ttls: {"en":"National Day of Remembrance for Charlie Kirk"}, fst: {era: 1, y: 2025}, nts: {"en":"Created by the US Congress"}},
         {ty: "D", st: {mon: 9, d: 21}, ttls: {"en":"National Farm Safety Day for Kids"}, urls: {"en":"https://www.checkiday.com/1a385e080f011638f81151b539f3ba77/national-farm-safety-day-for-kids"}, fst: {era: 1, y: 1989}},
