@@ -1,9 +1,72 @@
+// TODO:  There seems to be some confusion on when Vaisakhi is celebrated; this requires investigation.
+
 {
     ttls:{"af":"Sikhisme","an":"Sikhismo","anp":"सिख धर्म","ar":"السيخية","ary":"سيخية","arz":"سيخ","as":"শিখ ধৰ্ম","ast":"Sikhismu","awa":"सिख","az":"Siqhizm","azb":"سیخیسم","ba":"Сикхизм","be":"Сікхізм","be-tarask":"Сыкхізм","bew":"Sik","bg":"Сикхизъм","bh":"सिख धर्म","bi":"Sikisim","blk":"သစ်ခ်ဘာႏသာႏ","bn":"শিখধর্ম","bo":"སིག་གི་ཆོས་ལུགས།","bpy":"শিখ লিচেত","br":"Sikhegezh","bs":"Sikizam","btm":"Sikhisme","bxr":"Сикх шажан","ca":"Sikhisme","ce":"Сикхизм","ceb":"Sihismo","ckb":"سیکیزم","cs":"Sikhismus","cy":"Siciaeth","da":"Sikhisme","de":"Sikhismus","dv":"ސިކުންގެދީން","el":"Σιχισμός","eml":"Sikhîsum","en":"Sikhism","eo":"Sikismo","es":"Sijismo","et":"Sikhism","eu":"Sikhismo","ext":"Sijismu","fa":"آیین سیک","fi":"Sikhiläisyys","fo":"Sikhisma","fr":"Sikhisme","frp":"Siquismo","fur":"Sikhisim","fy":"Sikhisme","ga":"Suíceachas","gcr":"Sikism","gl":"Sikhismo","gn":"Síki jerovia","gsw":"Sikhismus","ha":"Sikh","hak":"Sikh-kau","he":"סיקיזם","hi":"सिख धर्म","hif":"Sikhism","hr":"Sikhizam","hu":"Szikhizmus","hy":"Սիկհականություն","hyw":"Սիխ եւ Սիխիզմ","ia":"Sikhismo","id":"Sikhisme","ilo":"Sikhismo","is":"Síkismi","it":"Sikhismo","ja":"シク教","jam":"Siikizim","jv":"Sikhisme","ka":"სიქიზმი","kbp":"Sɩkɩsmɩ","kk":"Сикхалар","kn":"ಸಿಖ್ ಧರ್ಮ","knc":"Sikhism","ko":"시크교","ks":"سِکھ مَت","ku":"Sîkhîzm","la":"Sichismus","lad":"Sihizmo","lfn":"Sicisme","li":"Sikhisme","lmo":"Sikhismo","lo":"ສາສະໜາຊິກ","lt":"Sikhizmas","lv":"Sikhisms","mai":"सिख धर्म","mdf":"Сикхизмась","mg":"Sikisma","mk":"Сикизам","ml":"സിഖ് മതം","mnw":"သိခဘာသာ","mr":"शीख धर्म","ms":"Sikhisme","mwl":"Sikhismo","my":"ဆစ်ခ်ဘာသာ","mzn":"سیک دین","nan":"Sikh-kàu","nb":"Sikhisme","nds":"Sikhismus","ne":"सिख धर्म","new":"सिख धर्म","nl":"Sikhisme","nn":"Sikhismen","oc":"Sikhisme","pa":"ਸਿੱਖ ਧਰਮ","pcd":"Sikime","pl":"Sikhizm","pms":"Sikhism","pnb":"سکھ مت","ps":"سکيزم","pt":"Siquismo","rki":"ဆစ်ခ်ဘာသာ","rmy":"Sihkâpen","ro":"Sikhism","ru":"Сикхизм","rue":"Сікгізм","sa":"सिखमतम्","sah":"Сикхизм","sco":"Sikhism","sd":"سک مت","sgs":"Sikėzmos","sh":"Sikizam","shn":"ၸၢဝ်းသိၵ်ႉၶ်","si":"සික් ධර්මය","sk":"Sikhizmus","skr":"سکھ مت","sl":"Sikhizem","sn":"Usikhi","so":"Siikhismi","sq":"Sikizmi","sr":"Сикизам","sv":"Sikhism","sw":"Kalasinga","ta":"சீக்கியம்","te":"సిక్కుమతం","th":"ศาสนาซิกข์","tl":"Sikhismo","tly":"Sikxizm","tr":"Sihizm","tt":"Сикхчылык","uk":"Сикхізм","ur":"سکھ مت","uz":"Sikhizm","vep":"Sikhizm","vi":"Sikh giáo","vls":"Sjiisme","vro":"Sikhism","war":"Sikhismo","wuu":"锡克教","xmf":"სიქიზმი","yi":"סיקהיזם","yue":"錫克教","zh":"锡克教"},
     defLocale:"en",
     cal:"gre",
     color:{r: 0.96, g: 0.78, b: 0.27},
     evts:[
-        {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Martyrdom of Guru Arjan Dev Sahib"}, urls:{"en":"https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}},
+        {ty:"D", st:{mon:3, d:14}, ttls:{"en":"Guru Har Rai becomes the 7th Guru"}},
+        {ty:"D", st:{mon:3, d:14}, ttls:{"en":"Nanakshahi New Year Commences"}},
+
+        {ty:"D", st:{mon:3, d:19}, ttls:{"en":"Guru Hargobind merges back to the Creator"}},
+
+        {ty:"D", st:{mon:4, d:14}, ttls:{"en":"The ordination of the Khalsa"}},
+        {ty:"nD", st:{mon:4, d:13, durD: 2}, ttls:{"ar":"فيساكي","as":"বৈশাখী","awa":"बैसाखी","bn":"বৈশাখী","ca":"Vaisakhi","en":"Vaisakhi","es":"Vaisakhi","fa":"وایساخی","fi":"Vaisakhi","fr":"Baisakhi","he":"באיסאקי","hi":"बैसाखी","hy":"Վայսախի","id":"Visakhi","kn":"ಬೈಸಾಖಿ","ks":"وؠساکھی","ml":"വൈശാഖി","mr":"वैशाखी","ms":"Vaisakhi","nb":"Baisaki","ne":"बिसु पर्व","nn":"Baisakhi","or":"ବୈସାଖୀ","pa":"ਵਿਸਾਖੀ","pl":"Baisakhi","pnb":"وساکھی","pt":"Vaisakhi","ru":"Вайсакхи","sa":"वैशाखी पर्व","sd":"ويساکي","sv":"Baisaki","ta":"வைசாக்கி","te":"వైశాఖి","th":"ไวสาขี","ur":"بیساکھی"}, nts:{"en":"Birth of Guru Nanak\nBaisakhi\nMesadi \nBasoa"}, urls: {"en":"https://en.wikipedia.org/wiki/Vaisakhi"}},
+
+        {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Angad merges back to the Creator"}},
+        {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Amar Das becomes the 3rd Guru"}},
+        {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Harkrishan merges back to the Creator"}},
+        {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Tegh Bahadur becomes the 9th Guru"}},
+
+        {ty:"D", st:{mon:4, d:18}, ttls:{"en":"Birth of Guru Angad, the 2nd Guru"}},
+        {ty:"D", st:{mon:4, d:18}, ttls:{"en":"Birth of Guru Tegh Bahadur, the 9th Guru"}},
+
+        {ty:"D", st:{mon:5, d:2}, ttls:{"en":"Birth of Guru Arjan, the 5th Guru"}},
+
+        {ty:"D", st:{mon:5, d:23}, ttls:{"en":"Birth of Guru Amar Das, the 3rd Guru"}},
+
+        {ty:"D", st:{mon:6, d:11}, ttls:{"en":"Guru Hargobind becomes the 6th Guru"}},
+
+        {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Martyrdom of Guru Arjan Dev Sahib"}, urls:{"en":"https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, nts: {"en":"Guru Arjan, the 5th Guru, is martyred"}},
+        {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Foundation Day of the Akaal Takht"}},
+
+        {ty:"D", st:{mon:7, d:5}, ttls:{"en":"Birth of Guru Hargobind, the 6th Guru"}},
+
+        {ty:"D", st:{mon:7, d:21}, ttls:{"en":"Miri-Piri is established by Guru Hargobind"}},
+
+        {ty:"D", st:{mon:7, d:23}, ttls:{"en":"Birth of Guru Harkrishan, the 8th Guru"}},
+
+        {ty:"D", st:{mon:8, d:30}, ttls:{"en":"The writing of the Guru Granth Sahib, the Sikh Scripture, is completed at Damdama Sahib"}},
+
+        {ty:"D", st:{mon:9, d:1}, ttls:{"en":"Guru Granth Sahib, the Sikh Scripture, is installed at the Golden Temple for the first time"}},
+
+        {ty:"D", st:{mon:9, d:16}, ttls:{"en":"Guru Amar Das merges back to the Creator"}},
+        {ty:"D", st:{mon:9, d:16}, ttls:{"en":"Guru Ram Das becomes the 4th Guru"}},
+        {ty:"D", st:{mon:9, d:16}, ttls:{"en":"Guru Ram Das merges back to the Creator"}},
+        {ty:"D", st:{mon:9, d:16}, ttls:{"en":"Guru Arjan becomes the 5th Guru"}},
+
+        {ty:"D", st:{mon:9, d:18}, ttls:{"en":"Guru Angad becomes the 2nd Guru"}},
+
+        {ty:"D", st:{mon:9, d:22}, ttls:{"en":"Guru Nanak merges back to the Creator"}},
+
+        {ty:"D", st:{mon:9, d:9}, ttls:{"en":"Birth of Guru Ram Das, the 4th Guru"}},
+
+        {ty:"D", st:{mon:10, d:20}, ttls:{"en":"Guru Har Rai merges back to the Creator"}},
+        {ty:"D", st:{mon:10, d:20}, ttls:{"en":"Guru Harkrishan becomes the 8th Guru"}},
+        {ty:"D", st:{mon:10, d:20}, ttls:{"en":"The Guru Granth Sahib is declared as the Guru for all times to come by Guru Gobind Singh, the 10th and the last human Guru"}},
+
+        {ty:"D", st:{mon:10, d:21}, ttls:{"en":"Guru Gobind Singh merges back to the Creator"}},
+
+        {ty:"D", st:{mon:11, d:24}, ttls:{"en":"Guru Gobind Singh becomes the 10th Guru"}},
+        {ty:"D", st:{mon:11, d:24}, ttls:{"en":"Guru Tegh Bahadur martyred in Delhi by Aurangzeb for defending the oppressed"}},
+
+        {ty:"D", st:{mon:12, d:21}, ttls:{"en":"Ajit Singh, and Jujhar Singh, the two elder sons of Guru Gobind Singh, martyred in the battle of Chamkaur"}},
+
+        {ty:"D", st:{mon:12, d:26}, ttls:{"en":"Zorawar Singh, and Fateh Singh, the two younger sons of Guru Gobind Singh, executed in Sirhind"}},
+
+        {ty:"D", st:{mon:12, d:5}, ttls:{"en":"Birth of Guru Gobind Singh, the 10th Guru"}},
+
+        {ty:"D", st:{mon:1, d:31}, ttls:{"en":"Birth of Guru Har Rai, the 7th Guru"}}
     ]
 }
