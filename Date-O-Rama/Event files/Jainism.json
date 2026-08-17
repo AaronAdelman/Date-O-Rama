@@ -1,0 +1,32 @@
+//S.No    Vikram Samvat months
+//1    Caitra or Chait or Chaitra
+//2    Vaiśākha or Baisakh
+//3    Jyēṣṭha or Jestha or Jeth
+//4    Āṣāḍha or Asar or Asadh
+//5    Śrāvaṇa or Saaun or Shrawan
+//6    Bhādrapada or Bhādra or Bhadau
+//7    Āśvin or Aasoj or Ashwin
+//8    Kārtika or Kattik or Kartik
+//9    Agrahāyaṇa or Mangsir or Mārgaśīrṣa or Aghan
+//10   Pauṣa or Paush or Poush or Push
+//11   Māgha or Maagh
+//12   Phālguna or Falgun
+
+// Tithis in the “dark” half of a month/waning moon are numbered starting at 1.
+// Amavasya (new moon) = tithi 15 of the month
+// Tithis in the “bright” half of a month/waxing moon are numbered starting at 16.
+// Purnima (full moon) = tithi 30 of the month
+
+{
+    ttls:{"af":"Djainisme","an":"Chainismo","anp":"जैन धर्म","ar":"الجاينية","arz":"جاينيه","as":"জৈন ধৰ্ম","ast":"Xainismu","az":"Caynizm","azb":"جاینیزم","ba":"Джайнизм","ban":"Agama Jain","bcl":"Hainismo","be":"Джайнізм","be-tarask":"Джайнізм","bg":"Джайнизъм","bh":"जैन धर्म","bi":"Jeinisim","blk":"စေင်းဘာႏသာႏ","bn":"জৈন ধর্ম","bo":"གཅེར་བུ་བའི་ཆོས་ལུགས།","br":"Jainegezh","bs":"Džainizam","btm":"Jainisme","bxr":"Джайнай шажан","ca":"Jainisme","ce":"Джайнизм","ckb":"جاینیزم","cs":"Džinismus","cy":"Jainiaeth","da":"Jainisme","de":"Jainismus","dv":"ޖައިނިޒަމް","el":"Τζαϊνισμός","en":"Jainism","eo":"Ĝajnismo","es":"Jainismo","et":"Džainism","eu":"Jainismo","fa":"جین","fi":"Jainalaisuus","fo":"Jainisma","fr":"Jaïnisme","frp":"J·ayinismo","fur":"Jainisim","fy":"Jaïnisme","gcr":"Jayinism","gl":"Xainismo","gn":"Jain Dharma","gsw":"Jainismus","gu":"જૈન ધર્મ","ha":"Jainanci","he":"ג׳ייניזם","hi":"जैन धर्म","hif":"Jainism","hr":"Džainizam","hu":"Dzsainizmus","hy":"Ջայնիզմ","id":"Jainisme","ilo":"Hainismo","is":"Jaínismi","isv":"Džajnizm","it":"Giainismo","ja":"ジャイナ教","jam":"Jainizim","jbo":"lijdrdjaina","jv":"Jainisme","ka":"ჯაინიზმი","kaa":"Djainizm","kbp":"Sayɩnɩsmɩ","kk":"Джайнизм","kn":"ಜೈನ ಧರ್ಮ","knc":"Jainism","ko":"자이나교","ks":"جین مَت","ku":"Caynîzm","ky":"Жайнычылык","la":"Iainismus","lad":"Djainizmo","lb":"Jainismus","lfn":"Jainisme","lmo":"Jainism","lt":"Džainizmas","lv":"Džainisms","mad":"Jainisme","mai":"जैन धर्म","mdf":"Джайнизмась","mg":"Jainisma","mk":"Џаинизам","ml":"ജൈനമതം","mn":"Жайнизм","mnw":"ဇိနဘာသာ","mr":"जैन धर्म","ms":"Jainisme","mwl":"Jainismo","my":"ဂျိန်းဘာသာ","mzn":"جین دین","nan":"Jaina-kàu","nb":"Jainisme","nds":"Jainismus","ne":"जैन धर्म","new":"जैन धर्म","nl":"Jaïnisme","nn":"Djainismen","oc":"Jaïnisme","or":"ଜୈନ ଧର୍ମ","pa":"ਜੈਨ ਧਰਮ","pl":"Dźinizm","pms":"Jainism","pnb":"جین مت","ps":"جاينيزم","pt":"Jainismo","rki":"ဂျိန်းဘာသာ","rmy":"Jajinipen","ro":"Jainism","ru":"Джайнизм","rue":"Джайнізм","sa":"जैनधर्मः","sah":"Дьайнизм","sat":"ᱡᱳᱭᱱᱳ ᱫᱷᱚᱨᱚᱢ","scn":"Giainismu","sco":"Jainism","sd":"جين ڌرم","sgs":"Džainėzmos","sh":"Džainizam","shn":"သႃႇသၼႃႇၵျဵၼ်း","si":"ජෛනාගම","sk":"Džinizmus","sl":"Džainizem","sn":"Ujaini","so":"Jainismi","sq":"Xhainizmi","sr":"Џаинизам","sv":"Jainism","sw":"Ujaini","ta":"சைனம்","tcy":"ಜೈನ ಧರ್ಮ","te":"జైన మతం","th":"ศาสนาเชน","tl":"Hainismo","tr":"Caynizm","tt":"Җәйничелек","uk":"Джайнізм","ur":"جین مت","uz":"Jaynizm","vi":"Kỳ Na giáo","vro":"Džainism","war":"Jainismo","wuu":"耆那教","xmf":"ჯაინიზმი","yi":"דזשייניזם","yue":"耆那教","zh":"耆那教"},
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"red"},
+    evts:[
+        {ty:"nD", st:{mon:6, d:12, durD: 8}, ttls:{"en":"Paryushana","gu":"પર્યુષણ","hi":"पर्यूषण पर्व","id":"Paryushana","ja":"パリユーシャナ","kn":"ದಶಲಕ್ಷಣ ಪರ್ವ","mr":"पर्युषण","ur":"پریوشنا"}, urls:{"en":"https://en.wikipedia.org/wiki/Paryushana"}, nts:{"en":"Paryushan Parva"}},
+        {ty:"D", st:{mon:6, d:19}, ttls:{"en":"Samvatsari","fr":"Samvatsari","gu":"સંવત્સરી","hi":"संवत्सरी"}, urls:{"en":"https://en.wikipedia.org/wiki/Samvatsari"}, nts:{"en":"Forgiveness Day"}},
+        {ty:"D", st:{mon:1, d:28}, ttls:{"as":"মহাবীৰ জয়ন্তী","bh":"महावीर जयंती","bn":"মহাবীর জন্ম কল্যাণক","en":"Mahavira Janma Kalyanaka","es":"Mahavir Jayanti","fa":"ماهاویر جانما کالیاناک","gu":"મહાવીર જન્મ કલ્યાણક","hi":"महावीर जन्म कल्याणक","kn":"ಮಹಾವೀರ ಜಯಂತಿ","mai":"महावीर जयन्ती","mr":"महावीर जयंती","sa":"महावीरजयन्ती","ta":"மகாவீரர் ஜெயந்தி","te":"మహావీర్ జయంతి","uk":"Махавір-Джаянті","ur":"مہاویر جنم کلیانک"}, urls:{"en":"https://en.wikipedia.org/wiki/Mahavira_Janma_Kalyanaka"}, nts:{"en":"Mahavir Janma Kalyanak"}, inh:"*BD*"},
+        {ty:"D", st:{mon:2, d:17}, inh:"AkshayaTritiya"},
+
+    ]
+}

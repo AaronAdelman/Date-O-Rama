@@ -508,7 +508,7 @@
         {ty:"D", st:{mon:11, d:27}, ttls:{"en":"National Bavarian Cream Pie Day"}, urls:{"en":"https://www.daysoftheyear.com/days/bavarian-cream-pie-day/"}, mog:"🥧"},
         {ty:"D", st:{mon:11, d:27}, ttls:{"en":"National Electric Guitar Day"}, urls:{"en":"https://www.checkiday.com/a2b9b8086395591562c390a80a83d639/national-electric-guitar-day"}, mog:"🎸"},
         {ty:"D", st:{mon:11, d:27}, ttls:{"en":"Pins and Needles Day"}, urls:{"en":"https://www.daysoftheyear.com/days/pins-and-needles-day/"}, mog:"🪡", nts:{"en":"Needle Day\nSewing Day\nNational Pins and Needles Day\nThis observance started as a celebration of the Broadway show Pins and Needles"}},
-        {ty:"D", st:{mon:11, d:28, thruMon:12, thruD:4, wkd:[4]}, inh:"RockefellerCtrXmasTreeLighting", fst:{era:1, y:1931}},
+        {ty:"D", st:{mon:11, d:28, thruMon:12, thruD:4, wkd:[4]}, inh:"RockefellerCtrXmasTreeLtg", fst:{era:1, y:1931}},
         {ty:"D", st:{mon:11, d:28}, ttls:{"en":"National French Toast Day"}, urls:{"en":"https://www.daysoftheyear.com/days/french-toast-day/"}},
         {ty:"D", st:{mon:11, d:29, thruMon:12, thruD:5, wkd:[5]}, ttls:{"en":"Celebrate Shelter Pets Day"}, urls:{"en":"https://www.daysoftheyear.com/days/celebrate-shelter-pets-day/"}, mog:"🦮🐕‍🦺", fst:{era:1, y:2010}, nts:{"en":"Created by the Humane Society of the United States, Maddie’s Fund, and the Ad Council"}},
         {ty:"D", st:{mon:11, d:29}, ttls:{"en":"National Chocolates Day"}, urls:{"en":"https://www.daysoftheyear.com/days/chocolates-day/"}, nts:{"en":"Chocolates Day"}, inh:"*Choc*"},

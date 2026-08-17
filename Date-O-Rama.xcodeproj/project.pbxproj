@@ -629,6 +629,8 @@
 		A5BEC4B7302E657D0024BB20 /* BD (Bangla).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BEC4B5302E657D0024BB20 /* BD (Bangla).json */; };
 		A5BEC4BC302ED86A0024BB20 /* IN (Bangla).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */; };
 		A5BEC4BD302ED86A0024BB20 /* IN (Bangla).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */; };
+		A5BF2C473032CB9500C0648B /* Jainism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BF2C463032CB9500C0648B /* Jainism.json */; };
+		A5BF2C483032CB9500C0648B /* Jainism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BF2C463032CB9500C0648B /* Jainism.json */; };
 		A5C175032F06A95000FE601D /* Discworld.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C175022F06A95000FE601D /* Discworld.json */; };
 		A5C175042F06A95000FE601D /* Discworld.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C175022F06A95000FE601D /* Discworld.json */; };
 		A5C2347B2ECE1B7800C79C9D /* ASAGlassSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2347A2ECE1B7800C79C9D /* ASAGlassSymbol.swift */; };
@@ -1611,6 +1613,7 @@
 		A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		A5BEC4B5302E657D0024BB20 /* BD (Bangla).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BD (Bangla).json"; sourceTree = "<group>"; };
 		A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IN (Bangla).json"; sourceTree = "<group>"; };
+		A5BF2C463032CB9500C0648B /* Jainism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Jainism.json; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
 		A5C175022F06A95000FE601D /* Discworld.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discworld.json; sourceTree = "<group>"; };
@@ -2192,6 +2195,7 @@
 				A5BDE77B26677E7900F47416 /* Islam (supplemental).json */,
 				A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */,
 				A5D850A7280C94A8005247BD /* IT.json */,
+				A5BF2C463032CB9500C0648B /* Jainism.json */,
 				A5EFFF6E285B7B1300F2205F /* JE.json */,
 				A5BC24BF2796EABE00D14B21 /* Jewish planetary hours.json */,
 				A56F0DA025F1705200301969 /* Jewish zodiac.json */,
@@ -3189,6 +3193,7 @@
 				A5EFFFBD285B811A00F2205F /* TR.json in Resources */,
 				A5E4960028624EFE001BF40C /* GQ.json in Resources */,
 				A5FB22B628638E9200B5042B /* TC.json in Resources */,
+				A5BF2C473032CB9500C0648B /* Jainism.json in Resources */,
 				A5FB22D12863908600B5042B /* VG.json in Resources */,
 				A5CF465F2810D82E0088738D /* CN.json in Resources */,
 				A5E292CC285A45E300925EBD /* HR.json in Resources */,
@@ -3568,6 +3573,7 @@
 				A5B9999F286228E000072FD5 /* AM.json in Resources */,
 				A5E8BAE327FCCF0B0018CD36 /* BD.json in Resources */,
 				A5E495E728624E5D001BF40C /* GD.json in Resources */,
+				A5BF2C483032CB9500C0648B /* Jainism.json in Resources */,
 				A522A2D52E439D5B00F8AAEB /* Moon.json in Resources */,
 				A5EFFF96285B7DB700F2205F /* PA.json in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,

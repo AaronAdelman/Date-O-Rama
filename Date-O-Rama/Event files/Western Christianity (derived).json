@@ -57,7 +57,7 @@
         {ty:"D", st:{mon:11, d:1}, ttls:{"en":"Deck the Everything Day"}, urls:{"en":"https://www.daysoftheyear.com/days/deck-the-everything-day/"}, fst:{era:1, y:2024}, mog:"🎄", nts:{"en":"This observance promotes decorating for Christmas early.\nCreated by HomeGoods"}},
         {ty:"D", st:{mon:10, d:29}, ttls:{"en":"National Hermit Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-hermit-day/"}, fst:{era:1, y:2001}},
         {ty:"D", st:{mon:11, d:25}, ttls:{"en":"Shopping Reminder Day"}, urls:{"en":"https://www.daysoftheyear.com/days/shopping-reminder-day/"}, mog:"🎁"},
-        {ty:"D", st:{mon:11, d:28, thruMon:12, thruD:4, wkd:[4]}, inh:"RockefellerCtrXmasTreeLighting", fst:{era:1, y:1931}},
+        {ty:"D", st:{mon:11, d:28, thruMon:12, thruD:4, wkd:[4]}, inh:"RockefellerCtrXmasTreeLtg", fst:{era:1, y:1931}},
         {ty:"D", st:{mon:11, wkd:[4], nth:1}, ttls:{"en":"National Advent Calendar Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-advent-calendar-day/"}, fst:{era:1, y:2020}, mog:"🕯️", nts:{"en":"Created by Aldi"}},
         {ty:"D", st:{mon:12, d:1}, ttls:{"en":"Christmas Book Day"}, urls:{"en":"https://www.daysoftheyear.com/days/christmas-book-day/"}, mog:"📖", fst:{era:1, y:2021}, nts:{"en":"Created by Jill Roman Lord"}},
         {ty:"D", st:{mon:12, d:1}, ttls:{"en":"National Christmas Lights Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-christmas-lights-day/"}, mog:"🎄"},
