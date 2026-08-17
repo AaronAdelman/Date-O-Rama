@@ -13,10 +13,10 @@
         {ty:"D", st:{mon:5, d:5}, inh:"Ethiopian Patriots’ Victory Day", fst:{era:1, y:1941}},
         {ty:"D", st:{mon:5, d:28}, ttls:{"am":"ደርግ የወደቀበት ቀን","en":"Downfall of the Derg"}, urls:{"en":"https://nationaltoday.com/national-day-of-ethiopia/"}, inh:"ND", fst:{era:1, y:1991}},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD"},
         {ty:"D", st:{mon:9, d:29}, inh:"NCoffeeD"},
     ],
     tpls:{

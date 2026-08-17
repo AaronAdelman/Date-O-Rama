@@ -18,7 +18,7 @@
         {inh:"IndependenceD", ty:"D", st:{mon:12, d:24}, fst:{era:1, y:1951}, urls:{"en":"https://nationaltoday.com/libya-independence-day/"}},
         {inh:"Liberation Day", ty:"D", st:{mon:10, d:23}, fst:{era:1, y:2012}, urls:{"en":"https://nationaltoday.com/libya-liberation-day/"}},
 
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
-        {inh:"Children’s Day", ty:"D", st:{mon:3, d:21}},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
+        {inh:"ChildrensD", ty:"D", st:{mon:3, d:21}},
     ]
 }

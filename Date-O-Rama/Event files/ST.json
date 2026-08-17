@@ -19,7 +19,7 @@
         {ty:"D", st:{mon:12, d:21}, urls:{"en":"https://nationaltoday.com/sao-tome-day/"}, ttls:{"en":"São Tomé Day","he":"יום סאו טומה","pt":"Dia de São Tomé"}, fst:{era:1, y:1471}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
 
-        {inh:"Mother’s Day", ty:"D", st:{mon:5, wkd:[1], nth:1}},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {inh:"MothersD", ty:"D", st:{mon:5, wkd:[1], nth:1}},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
     ]
 }

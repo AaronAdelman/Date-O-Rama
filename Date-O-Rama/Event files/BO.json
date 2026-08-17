@@ -33,10 +33,10 @@
 
         {ty:"D", st:{mon:8, d:2}, ttls:{"en":"Agrarian Reform Day","he":"יום הרפורמה החקלאית","es":"Día de la Revolución Agraria, Productiva y Comunitaria"}},
         {ty:"D", st:{mon:2, d:2}, ttls:{"en":"Feast of the Virgin of Candelaria","es":"Fiesta de la Virgen de Candelaria","qu":"Mamacha Candelaria"}, urls:{"en":"https://www.daysoftheyear.com/days/feast-of-candelaria/"}},
-        {ty:"D", st:{mon:3, d:19}, inh:"Father’s Day"},
-        {inh:"Mother’s Day", ty:"D", st:{mon:5, d:27}},
+        {ty:"D", st:{mon:3, d:19}, inh:"FathersD"},
+        {inh:"MothersD", ty:"D", st:{mon:5, d:27}},
         {ty:"D", st:{mon:10, d:16}, inh:"Engineer’s Day"},
-        {inh:"Children’s Day", ty:"D", st:{mon:4, d:12}, fst:{era:1, y:1954}},
+        {inh:"ChildrensD", ty:"D", st:{mon:4, d:12}, fst:{era:1, y:1954}},
         {inh:"ArmedForcesD", ty:"D", st:{mon:8, d:7}},
         {ty:"D", st:{mon:7, d:23}, inh:"FriendshipD"},
         {ty:"D", st:{mon:10, d:17}, ttls:{"en":"Day of Dignity"}, urls:{"en":"https://nationaltoday.com/day-of-dignity-bolivia/"}, fst:{era:1, y:2020}},

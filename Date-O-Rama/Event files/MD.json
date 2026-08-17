@@ -22,7 +22,7 @@
         
         {ty:"D", st:{mon:2, d:15}, ttls:{"en":"Afghan War Veterans Day"}},
         {ty:"D", st:{mon:4, d:27}, inh:"Flag Day"},
-        {ty:"D", st:{mon:6, d:10}, inh:"Border Guards Day", fst:{era:1, y:1995}},
+        {ty:"D", st:{mon:6, d:10}, inh:"BorderGuardsD", fst:{era:1, y:1995}},
         {ty:"D", st:{mon:6, d:23}, inh:"Sovereignty Day"},
         {inh:"ConstitutionD", ty:"D", st:{mon:7, d:29}},
         {inh:"Liberation Day", ty:"D", st:{mon:8, d:24}, fst:{era:1, y:1944}},
@@ -34,6 +34,6 @@
         {ty:"D", st:{mon:6, d:28}, ttls:{"en":"Gagauzia Liberation Day"}, mog:"🏙️"},
 
 
-        {ty:"D", st:{mon:3, d:8}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:3, d:8}, inh:"MothersD"},
     ]
 }

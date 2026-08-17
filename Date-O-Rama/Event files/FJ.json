@@ -24,12 +24,12 @@
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
 
         {ty:"D", st:{misc:"E", offsetD: -7}, inh:"Palm Sun"},
-        {ty:"D", st:{misc:"E", offsetD: -7}, ttls:{"en":"Children’s Sunday"}, inh:"Children’s Day"},
+        {ty:"D", st:{misc:"E", offsetD: -7}, ttls:{"en":"Children’s Sunday"}, inh:"ChildrensD"},
         {ty:"D", st:{mon:6, d:11}, inh:"Queen’s Birthday"},
         {inh:"NYouthD", ty:"D", st:{mon:5, d:4}},
 
-        {ty:"D", st:{mon:9, wkd:[1], nth:1}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:9, wkd:[1], nth:1}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
     ],
     tpls:{
         "Ratu Sukuna Day":{ty:"D", st:{mon:5, wkd:[2], nth:-1}, ttls:{"en":"Ratu Sukuna Day"}, urls:{"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},

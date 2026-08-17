@@ -26,9 +26,9 @@
 
         {inh:"Police Day", ty:"D", st:{mon:1, d:25}, urls:{"en":"https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"}, fst:{era:1, y:2009}},
         {ty:"D", st:{mon:6, d:18}, inh:"Evacuation Day", nts:{"en":"Eid el-Galaa"}, fst:{era:1, y:1956}},
-        {ty:"D", st:{mon:6, d:21}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day", urls:{"en":"https://nationaltoday.com/egypt-mothers-day/"}, fst:{era:1, y:1957}},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, d:21}, inh:"FathersD"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD", urls:{"en":"https://nationaltoday.com/egypt-mothers-day/"}, fst:{era:1, y:1957}},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD"},
         {ty:"nD", st:{mon:8, d:15}, end:{mon:8, d:28}, ttls:{"en":"The Nile Festival","he":"הצפה של הנילוס","cop":"ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, nts:{"en":"Flooding of the Nile"}, urls:{"en":"https://www.daysoftheyear.com/days/the-nile-festival/"}, nts:{"en":"Wafaa El-Nil"}},
         {ty:"D", st:{mon:2, d:22}, inh:"Abu Simbel Festival"},
         {ty:"D", st:{mon:10, d:22}, inh:"Abu Simbel Festival"},

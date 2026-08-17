@@ -16,7 +16,7 @@
         {ty:"D", st:{era:1, y:2023, mon:5, d:8}, urls:{"en":"https://www.officeholidays.com/holidays/jersey/king-charles-iiis-coronation"}, inh:"King Charles III’s Coronation"},
         {inh:"Liberation Day", ty:"D", st:{mon:5, d:9}, fst:{era:1, y:1945}, urls:{"en":"https://www.officeholidays.com/holidays/jersey/channel-islands-liberation-day"}},
         {ty:"D", st:{mon:5, wkd:[2], nth:-1}, urls:{"en":"https://www.officeholidays.com/holidays/jersey/spring-bank-holiday"}, inh:"Spring Bank Holiday"},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:8, wkd:[2], nth:-1}, urls:{"en":"https://www.officeholidays.com/holidays/jersey/august-bank-holiday"}, ttls:{"en":"Summer Bank Holiday"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, urls:{"en":"https://www.officeholidays.com/holidays/jersey/boxing-day"}, inh:"Boxing Day"},

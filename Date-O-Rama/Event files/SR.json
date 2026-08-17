@@ -23,9 +23,9 @@
         {ty:"D", st:{mon:5, d:5}, urls:{"en":"https://nationaltoday.com/indian-arrival-day-guyana/"}, inh:"Indian Arrival Day", fst:{era:1, y:1873}},
         {ty:"D", st:{mon:10, d:31}, inh:"Halloween"},
         
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {inh:"Children’s Day", ty:"D", st:{mon:12, d:5}},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {inh:"ChildrensD", ty:"D", st:{mon:12, d:5}},
         {ty:"D", st:{mon:2, d:25}, urls:{"en":"https://nationaltoday.com/day-of-liberation-and-innovation/"}, ttls:{"en":"Day of Liberation and Innovation"}, fst:{era:1, y:2018}},
    ]
 }

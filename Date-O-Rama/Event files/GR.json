@@ -19,10 +19,10 @@
         {ty:"D", st:{mon:1, d:30}, ttls:{"en":"The Three Holy Hierarchs","el":"Τριών Ιεραρχών"}},
         {ty:"D", st:{mon:11, d:17}, ttls:{"en":"Polytechnio","el":"Πολυτεχνείο"}},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:3, d:10}, inh:"Engineer’s Day"},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day", fst:{era:1, y:1946}},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD", fst:{era:1, y:1946}},
         {inh:"RevolutionD", ty:"D", st:{mon:3, d:25}, fst:{era:1, y:1821}},
         {ttls:{"en":"August Moon Festival","he":"פסטיבל הירח באוגוסט"}, ty:"D", st:{misc:"full1", mon:8}, fst:{era:1, y:1996}, urls:{"en":"https://nationaltoday.com/august-moon-festival/"}},
         {ty:"D", st:{mon:5, d:21}, inh:"Firewalking Festival"},

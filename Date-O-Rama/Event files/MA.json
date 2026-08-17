@@ -19,6 +19,6 @@
         {ty:"D", st:{mon:11, d:6}, inh:"Green March Day"},
         {inh:"IndependenceD", ty:"D", st:{mon:11, d:18}, fst:{era:1, y:1955}},
 
-        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"MothersD"},
     ]
 }

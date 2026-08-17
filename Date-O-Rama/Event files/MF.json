@@ -14,7 +14,7 @@
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{mon:5, d:28}, urls:{"en":"https://nationaltoday.com/abolition-day-saint-martin/"}, inh:"AbolitionD"},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon", urls:{"en":"https://nationaltoday.com/whit-monday-saint-martin/"}},
-        {ty:"D", st:{mon:7, d:14}, urls:{"en":"https://nationaltoday.com/bastille-day-saint-martin/"}, inh:"Bastille Day"},
+        {ty:"D", st:{mon:7, d:14}, urls:{"en":"https://nationaltoday.com/bastille-day-saint-martin/"}, inh:"BastilleD"},
         {ty:"D", st:{mon:8, d:15}, inh:"Assumption"},
         {ty:"D", st:{mon:11, d:1}, inh:"AllStsD"},
         {ty:"D", st:{mon:11, d:11}, urls:{"en":"https://www.officeholidays.com/holidays/saint-martin/armistice-day"}, inh:"ArmisticeD"},

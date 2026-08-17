@@ -15,8 +15,8 @@
         {ty:"D", st:{mon:11, d:20}, inh:"ND", fst:{era:1, y:2025}, urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
         {ty:"D", st:{mon:11, d:19}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}, last:{era:1, y:2024}},
         {ty:"D", st:{mon:11, d:21}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}, fst:{era:1, y:2025}},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
 
         {ty:"D", st:{mon:11, d:30}, inh:"ND (IL)", fst:{era:1, y:2022}, urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
         {ty:"D", st:{mon:12, d:1}, inh:"ND Holiday (in lieu)", fst:{era:1, y:2022}},

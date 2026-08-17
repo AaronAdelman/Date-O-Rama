@@ -19,8 +19,8 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:31}, inh:"NYE", urls:{"en":"https://www.officeholidays.com/holidays/myanmar/new-years-eve"}},
         
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:2, d:13}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {ty:"D", st:{mon:2, d:13}, inh:"ChildrensD"},
         
         {ty:"nD", st:{mon:4, d:13}, end:{mon:4, d:16}, ttls:{"blk":"သင်ႏကဲဉ်ႏ","bn":"থিংযান","de":"Atā Thingyan","en":"Thingyan","fr":"Thingyan","id":"Thingyan","it":"Capodanno birmano","ja":"ティンジャン","mnw":"သၚ်္ကြာန်","my":"သင်္ကြန်","ru":"Тинджан","th":"ตะจาน","tr":"Thingyan","uk":"Фестиваль Тінгіан","vi":"Thingyan"}, urls:{"en":"https://www.officeholidays.com/holidays/myanmar/thingyan"}},
         {ty:"D", st:{mon:4, d:17}, ttls:{"en":"Burmese New Year"}, urls:{"en":"https://www.officeholidays.com/holidays/myanmar/burmese-new-years-day"}},

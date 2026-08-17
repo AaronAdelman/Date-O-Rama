@@ -21,8 +21,8 @@
         {ty:"D", st:{mon:12, d:25}, urls:{"en":"https://www.officeholidays.com/holidays/mozambique/christmas-day"}, inh:"Family Day"},
         {ty:"D", st:{mon:12, d:26, wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/mozambique/christmas-day"}, ttls:{"en":"Family Day (in lieu)"}},
         
-        {ty:"D", st:{mon:3, d:19}, inh:"Father’s Day"},
-        {inh:"Mother’s Day", ty:"D", st:{mon:5, wkd:[1], nth:1}},
+        {ty:"D", st:{mon:3, d:19}, inh:"FathersD"},
+        {inh:"MothersD", ty:"D", st:{mon:5, wkd:[1], nth:1}},
        {ty:"D", st:{mon:6, d:1}, inh:"IChildren’s Day"},
     ]
 }

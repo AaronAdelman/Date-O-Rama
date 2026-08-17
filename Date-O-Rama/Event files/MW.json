@@ -21,7 +21,7 @@
         {ty:"D", st:{mon:5, d:15, thruD:19}, ttls:{"en":"Kamuzu Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/malawi/kamuzu-day"}, inh:"*BD*"},
         {ty:"D", st:{mon:7, d:6}, inh:"IndependenceD", urls:{"en":"https://nationaltoday.com/malawi-independence-day/"}, fst:{era:1, y:1964}},
         {ty:"D", st:{mon:7, d:7, thruD:8, wkd:[2, 3, 4]}, inh:"IndependenceD (IL)", urls:{"en":"https://nationaltoday.com/malawi-independence-day/"}, fst:{era:1, y:1964}},
-        {ty:"D", st:{mon:10, d:15}, inh:"Mother’s Day", urls:{"en":"https://nationaltoday.com/mothers-day-in-malawi/"}},
+        {ty:"D", st:{mon:10, d:15}, inh:"MothersD", urls:{"en":"https://nationaltoday.com/mothers-day-in-malawi/"}},
         {inh:"Mother’s Day (in lieu)", ty:"D", st:{mon:10, d:17}, urls:{"en":"https://nationaltoday.com/mothers-day-in-malawi/"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},

@@ -21,7 +21,7 @@
         {ty:"D", st:{mon:11, d:1}, inh:"AllStsD"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
 
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:12, d:25}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {ty:"D", st:{mon:12, d:25}, inh:"ChildrensD"},
     ]
 }

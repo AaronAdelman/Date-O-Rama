@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{mon:3, d:18}, ttls:{"ar":"عيد الثورة السورية","en":"Syrian Revolution Day"}, inh:"RevolutionD"},
         {ty:"D", st:{mon:3, d:19, wkd:[5]}, ttls:{"en":"Syrian Revolution Day (in lieu)"}, inh:"RevolutionD"},
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
         {ty:"D", st:{mon:4, d:17}, inh:"IndependenceD", fst:{era:1, y:1946}, urls:{"en":"https://nationaltoday.com/syria-independence-day/"}, nts:{"en":"Evacuation Day"}},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
@@ -24,9 +24,9 @@
         {inh:"ArmedForcesD", ty:"D", st:{mon:8, d:1}},
         {ty:"D", st:{mon:12, d:29}, inh:"Tree Day", fst:{era:1, y:1996}, inh:"NTreeD"},
 
-        {ty:"D", st:{mon:6, d:21}, inh:"Father’s Day"},
+        {ty:"D", st:{mon:6, d:21}, inh:"FathersD"},
         {ty:"D", st:{mon:12, d:17}, inh:"StBarbara"},
-        {inh:"Children’s Day", ty:"D", st:{mon:6, d:25}},
+        {inh:"ChildrensD", ty:"D", st:{mon:6, d:25}},
         {ty:"D", st:{mon:4, d:1}, inh:"AssyrianNY"},
     ]
 }

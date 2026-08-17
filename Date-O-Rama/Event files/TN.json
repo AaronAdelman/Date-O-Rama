@@ -19,8 +19,8 @@
         {ty:"D", st:{mon:12, d:17}, ttls:{"en":"Revolution and Youth Day"}, mog:"䷰👦👧", fst:{era:1, y:2010}},
 
         {ty:"D", st:{mon:3, d:20}, inh:"IFrancophonieD", fst:{era:1, y:1988}},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"Mother’s Day"},
-        {inh:"Children’s Day", ty:"D", st:{mon:1, d:11}, fst:{era:1, y:1995}},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"MothersD"},
+        {inh:"ChildrensD", ty:"D", st:{mon:1, d:11}, fst:{era:1, y:1995}},
        ]
     }

@@ -39,11 +39,11 @@
         {inh:"ArmedForcesD", ty:"D", st:{mon:5, d:29}},
         {ty:"D", st:{mon:8, d:18}, inh:"AirForceD", ttls:{"en":"Aviation Day","he":"יום התעופה"}},
 
-        {ty:"D", st:{mon:5, d:19}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:5, d:19}, inh:"MothersD"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:7, d:27}, inh:"AirForceD"},
         {ty:"D", st:{mon:3, d:5}, inh:"NHangoverD", urls:{"en":"https://nationaltoday.com/kyrgyzstan-national-hat-day/"}, fst:{era:1, y:2017}},
-        {ty:"D", st:{mon:5, d:28}, inh:"Border Guards Day", fst:{era:1, y:1919}},
+        {ty:"D", st:{mon:5, d:28}, inh:"BorderGuardsD", fst:{era:1, y:1919}},
    ],
     tpls:{
         "Public Holiday (bridge day)":{ty:"D", st:{mon:5, d:8, wkd:[2]}, ttls:{"en":"Public Holiday (bridge day)"}},

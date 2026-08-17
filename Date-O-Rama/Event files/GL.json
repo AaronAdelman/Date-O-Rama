@@ -23,7 +23,7 @@
         {ty:"D", st:{mon:12, d:26}, inh:"StStephen"},
         {ty:"D", st:{mon:12, d:31}, inh:"NYE"},
 
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{misc:"E", offsetD: -49}, inh:"Fastelavn"},
     ]
 }

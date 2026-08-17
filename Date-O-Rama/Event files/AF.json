@@ -18,8 +18,8 @@
 
         {ty:"D", st:{mon:9, d:9}, inh:"Martyrs’ Day", urls:{"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(Afghanistan)"}},
         {ty:"D", st:{mon:3, d:8}, inh:"IWD"},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {inh:"Mother’s Day", ty:"D", st:{mon:6, d:14}},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {inh:"MothersD", ty:"D", st:{mon:6, d:14}},
         {ty:"D", st:{misc:"Jun"}, ttls:{"en":"Ginani"}, urls:{"en":"https://en.wikipedia.org/wiki/Ginani"}},
     ]
 }

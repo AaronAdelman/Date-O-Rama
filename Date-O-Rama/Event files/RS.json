@@ -21,8 +21,8 @@
         {ty:"D", st:{mon:10, d:21}, ttls:{"en":"World War II Serbian Victims Remembrance Day","sr-Cyrl":"Дан сећања на српске жртве у Другом светском рату","sr-Latn":"Dan sećanja na srpske žrtve u Drugom svetskom ratu"}, urls:{"en":"https://www.officeholidays.com/holidays/serbia/serbia-remembrance-day"}, inh:"Remembrance Day"},
         {ty:"D", st:{mon:11, d:11}, inh:"ArmisticeD", fst:{era:1, y:1919}},
         
-        {ty:"D", st:{mon:3, d:8}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day", fst:{era:1, y:1989}},
+        {ty:"D", st:{mon:3, d:8}, inh:"MothersD"},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD", fst:{era:1, y:1989}},
         
         {ttls:{"en":"Holocaust, Genocide and Other Fascist Crimes Victims of the World War II Remembrance Day","sr-Cyrl":"Дан сећања на жртве холокауста, геноцида и других жртава фашизма у Другом светском рату","sr-Latn":"Dan sećanja na žrtve holokausta, genocida i drugih žrtava fašizma u Drugom svetskom ratu"}, ty:"D", st:{mon:4, d:22}},
         {ty:"D", st:{mon:5, d:9}, inh:"Victory Day (May 9)"},

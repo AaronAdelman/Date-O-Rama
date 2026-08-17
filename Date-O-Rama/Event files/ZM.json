@@ -27,8 +27,8 @@
         {ty:"D", st:{mon:10, d:24}, inh:"IndependenceD", fst:{era:1, y:1964}, urls:{"en":"https://nationaltoday.com/zambia-independence-day/"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD"},
   ]
 }

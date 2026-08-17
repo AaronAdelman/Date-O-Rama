@@ -63,8 +63,8 @@
         {ty:"D", st:{mon:3, d:28}, urls:{"en":"https://nationaltoday.com/serfs-emancipation-day/"}, ttls:{"en":"Serfs’ Emancipation Day"}},
         {ty:"D", st:{mon:11, d:11}, ttls:{"ar":"يوم العزاب","ast":"Día del Solteru","az":"Subaylar Günü","bn":"অবিবাহিত দিবস","ca":"Dia del Solter","cs":"Den nezadaných","de":"Singles’ Day","en":"Singles’ Day","es":"Día del Soltero","eu":"Ezkongabeen Eguna","fa":"روز مجردها","fi":"Sinkkujen päivä","fr":"Fête des célibataires","he":"חג הרווקים (סין)","hy":"Ամուրիների օր","id":"Hari Jomblo","it":"Giorno dei single","ja":"光棍節","ko":"광군제","ms":"Hari Bujang","nl":"Vrijgezellendag","pl":"Dzień Singla","pt":"Dia dos Solteiros","ru":"День холостяков","sr":"Дан самаца","sv":"Singlarnas dag","ug":"قوش 11","uk":"День холостяків у Китаї","vi":"Ngày lễ độc thân","wuu":"光棍节","yue":"光棍節","zh":"光棍节"}, urls:{"en":"https://www.daysoftheyear.com/days/singles-day/"}, nts:{"en":"Singles Day\nDouble 11\nBachelors’ Day","zh_CN":"双11","zh":"雙11"}, fst:{era:1, y:1993}},
         
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:7, d:1}, inh:"Hong Kong Special Administrative Region Establishment Day", fst:{era:1, y:1997}},
         {ty:"D", st:{mon:4, d:23}, inh:"Navy Day"},
         {ty:"D", st:{mon:3, d:3}, ttls:{"en":"Peach Blossom Day"}, urls:{"en":"https://www.daysoftheyear.com/days/peach-blossom-day/"}, mog:"⚘"},

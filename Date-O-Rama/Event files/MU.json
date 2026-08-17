@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{mon:1, d:2}, inh:"NY’s Holiday", urls:{"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
         {ty:"D", st:{mon:1, d:3, wkd:[3]}, inh:"NY’s Holiday", urls:{"en":"https://www.officeholidays.com/holidays/mauritius/day-after-new-years-day"}},
-        {ty:"D", st:{era:1, y:2023, mon:1, d:27}, inh:"Bank Holiday", urls:{"en":"https://www.officeholidays.com/holidays/mauritius/mauritius-bank-holiday"}},
+        {ty:"D", st:{era:1, y:2023, mon:1, d:27}, inh:"BankHol", urls:{"en":"https://www.officeholidays.com/holidays/mauritius/mauritius-bank-holiday"}},
         {ty:"D", st:{mon:2, d:1}, inh:"AbolitionOfSlaveryD", urls:{"en":"https://nationaltoday.com/abolition-of-slavery-day/"}, fst:{era:1, y:1835}},
         {ty:"D", st:{mon:3, d:12}, inh:"IndependenceD", nts:{"en":"Mauritius Day\nMauritian National Day"}, fst:{era:1, y:1968}, urls:{"en":"https://nationaltoday.com/mauritius-independence-day/"}},
         {ty:"D", st:{mon:4, d:14}, ttls:{"en":"Tamizh Puttaandu"}, urls:{"en":"https://www.officeholidays.com/holidays/mauritius/tamil-new-year"}},
@@ -21,8 +21,8 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         
         {ty:"D", st:{mon:3, d:20}, inh:"IFrancophonieD", fst:{era:1, y:1988}},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"MothersD"},
         {ty:"D", st:{mon:9, d:13}, inh:"Engineer’s Day"},
     ]
 }

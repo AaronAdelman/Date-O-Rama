@@ -26,8 +26,8 @@
         {ty:"D", st:{mon:9, d:10}, urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, inh:"Heritage Day", fst:{era:1, y:1957}},
         {ty:"M", st:{mon:9}, urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, ttls:{"en":"Amerindian Heritage Month "}, fst:{era:1, y:1957}},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:6, d:10}, urls:{"en":"https://nationaltoday.com/abolition-day/"}, inh:"AbolitionD", fst:{era:1, y:1834}},
     ]
 }

@@ -43,7 +43,7 @@
         {ty:"D", st:{mon:3, d:17}, ttls:{"he":"יום ההוקרה לפצועי מערכות ישראל","en":"Day of Recognition for the Wounded in Israeli Wars"}},
         {ty:"D", st:{mon:4, d:21}, ttls:{"he":"יום הלשון העברית","en":"Hebrew Language Day"}},
         {ty:"D", st:{mon:7, d:7}, ttls:{"he":"יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע","en":"Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}},
-        {ty:"D", st:{mon:5, d:30}, inh:"Mother’s Day", fst:{era:0, y:5730}},
+        {ty:"D", st:{mon:5, d:30}, inh:"MothersD", fst:{era:0, y:5730}},
         {ty:"D", st:{mon:5, d:30}, inh:"Family Day", fst:{era:0, y:5750}},
 
     ]

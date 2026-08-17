@@ -15,7 +15,7 @@
         {ty:"D", st:{mon:10, d:14}, inh:"Liberation Day", urls:{"en":"https://nationaltoday.com/liberation-day-in-yemen/"}, fst:{era:1, y:1963}, ttls:{"en":"Glorious October 14 Revolution","ar":"ثورة ثورة 14 أكتوبر المجيدة"}},
         {inh:"IndependenceD", ty:"D", st:{mon:11, d:30}, fst:{era:1, y:1967}},
 
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
     ]
 }

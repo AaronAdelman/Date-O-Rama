@@ -9,12 +9,12 @@
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Carnival Tue"},
-        {ty:"D", st:{mon:3, d:19}, inh:"Father’s Day", urls:{"en":"https://www.officeholidays.com/holidays/portugal/fathers-day"}},
+        {ty:"D", st:{mon:3, d:19}, inh:"FathersD", urls:{"en":"https://www.officeholidays.com/holidays/portugal/fathers-day"}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{mon:4, d:25}, urls:{"en":"https://nationaltoday.com/freedom-day-portugal/"}, inh:"Freedom Day"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
-        {inh:"Mother’s Day", ty:"D", st:{mon:5, wkd:[1], nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/portugal/mothers-day"}},
+        {inh:"MothersD", ty:"D", st:{mon:5, wkd:[1], nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/portugal/mothers-day"}},
         {ty:"D", st:{misc:"E", offsetD: 50}, ttls:{"en":"Azores Day","pt":"Dia dos Açores"}, nts:{"en":"Day of the Azores","pt":"Dia da Região Autónoma dos Açores\nDia da Pombinha\nDia do Bodo"}, urls:{"en":"https://www.officeholidays.com/holidays/portugal/azores/day-of-the-azores"}, fst:{era:1, y:1976}},
         {ty:"D", st:{misc:"E", offsetD: 60}, inh:"CorpusChristi"},
         {ty:"D", st:{mon:6, d:10}, ttls:{"de":"Dia de Portugal","en":"Portugal Day","es":"Día de Portugal","fi":"Portugali-päivä","fr":"Jour du Portugal","gl":"Día de Portugal","he":"יום פורטוגל","hy":"Պորտուգալիայի օր","id":"Hari Portugal","it":"Giorno del Portogallo","ko":"포르투갈의 날","pt":"Dia de Portugal, de Camões e das Comunidades Portuguesas","ru":"День Португалии","sv":"Portugaldagen","tr":"Portekiz Günü","uk":"День Португалії","zh":"葡萄牙日、賈梅士日暨葡僑日"}, urls:{"en":"https://nationaltoday.com/portugal-day/"}},
@@ -29,7 +29,7 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day", urls:{"en":"https://www.officeholidays.com/holidays/portugal/madeira/christmas-holiday"}},
         
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:5, d:20}, inh:"Navy Day", fst:{era:1, y:1998}},
         {ty:"D", st:{mon:4, d:14}, inh:"NCoffeeD"},
         

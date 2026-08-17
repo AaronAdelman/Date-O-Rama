@@ -33,8 +33,8 @@
         {ty:"D", st:{era:1, y:2017, mon:10, d:13}, ttls:{"en":"First Peoples’ Day"}},
 
         
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:11, d:20}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
+        {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD"},
   ]
 }

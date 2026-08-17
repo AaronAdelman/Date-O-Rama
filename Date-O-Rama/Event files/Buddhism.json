@@ -4,7 +4,7 @@
     cal:"gre",
     color:{name:"orange"},
     evts:[
-        {ty:"D", st:{mon:12, d:8}, inh:"Bodhi Day"},
+        {ty:"D", st:{mon:12, d:8}, inh:"BodhiD"},
         {ty:"D", st:{misc:"full1", mon:5}, inh:"Vesak", fst:{era:1, y:1950}},
         {ty:"D", st:{mon:2, d:15}, inh:"Parinirvana Day"},
         {ty:"D", st:{mon:2, d:8}, inh:"Parinirvana Day"},

@@ -17,6 +17,6 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
         
-        {ty:"D", st:{mon:2, wkd:[1], nth:2}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:2, wkd:[1], nth:2}, inh:"ChildrensD"},
     ]
 }

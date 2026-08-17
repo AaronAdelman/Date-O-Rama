@@ -26,8 +26,8 @@
         {ty:"D", st:{mon:11, d:11}, inh:"IndependenceD", fst:{era:1, y:1975}, urls:{"en":"https://nationaltoday.com/angola-independence-day/"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas", nts:{"en":"Christmas Day and Family Day"}},
 
-        {ty:"D", st:{mon:3, d:19}, inh:"Father’s Day"},
-        {inh:"Mother’s Day", ty:"D", st:{mon:5, wkd:[1], nth:1}},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:3, d:19}, inh:"FathersD"},
+        {inh:"MothersD", ty:"D", st:{mon:5, wkd:[1], nth:1}},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
     ]
 }

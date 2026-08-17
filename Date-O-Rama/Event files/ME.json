@@ -29,8 +29,8 @@
         {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
         {ty:"D", st:{mon:8, d:15}, inh:"Assumption"},
 
-        {ty:"D", st:{mon:3, d:8}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:3, d:8}, inh:"MothersD"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:3, d:8}, inh:"IWD"},
     ],
     tpls:{

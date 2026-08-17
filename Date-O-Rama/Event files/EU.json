@@ -7,7 +7,7 @@
     fst:{era:1, y:1993},
     urls:{"en":"https://www.coe.int/en/web/portal/international-and-european-days"},
     evts:[
-        {ty:"D", st:{mon:8, d:23}, inh:"Black RibbonD", fst:{era:1, y:2009}},
+        {ty:"D", st:{mon:8, d:23}, inh:"BlackRibbonD", fst:{era:1, y:2009}},
         {ty:"D", st:{mon:1, d:28}, inh:"Data Protection Day", fst:{era:1, y:2007}},
         {ty:"D", st:{mon:5, d:9}, inh:"Europe Day", fst:{era:1, y:2019}},
         {ty:"D", st:{mon:5, d:17}, inh:"IDAgainstHomophobia&Transphobia&Biphobia", fst:{era:1, y:2005}},

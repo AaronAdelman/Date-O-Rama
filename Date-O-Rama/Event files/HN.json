@@ -8,7 +8,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Honduras"},
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:3, d:19}, inh:"Father’s Day", urls:{"en":"https://www.officeholidays.com/holidays/honduras/fathers-day"}},
+        {ty:"D", st:{mon:3, d:19}, inh:"FathersD", urls:{"en":"https://www.officeholidays.com/holidays/honduras/fathers-day"}},
         {ty:"D", st:{misc:"E", offsetD: -6}, inh:"Holy Mon"},
         {ty:"D", st:{misc:"E", offsetD: -5}, inh:"Holy Tue"},
         {ty:"D", st:{misc:"E", offsetD: -4}, inh:"Holy Wed"},
@@ -20,7 +20,7 @@
         {ty:"D", st:{mon:4, d:18}, inh:"Pan American Day (in lieu)", fst:{era:1, y:2024}, end:{era:1, y:2025}},
         {ty:"D", st:{mon:4, d:13, wkd:[2, 3]}, inh:"Pan American Day (in lieu)", fst:{era:1, y:1931}},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day", urls:{"en":"https://www.officeholidays.com/holidays/honduras/mothers-day"}},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD", urls:{"en":"https://www.officeholidays.com/holidays/honduras/mothers-day"}},
         {ty:"D", st:{mon:9, d:15}, inh:"IndependenceD", fst:{era:1, y:1821}, urls:{"en":"https://nationaltoday.com/honduras-independence-day/"}},
         {ty:"D", st:{mon:10, d:3}, ttls:{"en":"Francisco Morazán’s Day","es":"Día del Soldado"}, urls:{"en":"https://nationaltoday.com/francisco-morazans-day/"}, fst:{era:1, y:1792}, nts:{"en":"Francisco Morazan’s Birthday\nSoldier’s Day","he":"יום החייל"}, inh:"*BD*"},
         {ty:"D", st:{mon:10, d:5}, inh:"Francisco Morazán’s Day (in lieu)", fst:{era:1, y:2022}, last:{era:1, y:2024}},
@@ -40,7 +40,7 @@
         {ty:"D", st:{mon:6, d:11}, inh:"Student’s Day"},
         {ty:"D", st:{mon:7, d:20}, urls:{"en":"https://nationaltoday.com/lempira-day/"}, ttls:{"en":"Lempira Day","es":"Día de Lempira"}},
         {ty:"D", st:{mon:9, d:1}, inh:"NFlagD"},
-        {ty:"D", st:{mon:9, d:10}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:9, d:10}, inh:"ChildrensD"},
         {ty:"D", st:{mon:9, d:17}, inh:"Teacher’s Day"},
 
         {ty:"D", st:{mon:7, d:16}, inh:"Engineer’s Day"},

@@ -20,10 +20,10 @@
         {ty:"D", st:{mon:12, d:8}, urls:{"en":"https://www.officeholidays.com/holidays/paraguay/immaculate-conception-day"}, ttls:{"en":"Virgin of Caacupé Day","es":"Virgen de Caacupé"}, inh:"Immaculate Conception"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, d:15}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, d:15}, inh:"MothersD"},
         {ty:"D", st:{mon:7, d:23}, inh:"Engineer’s Day"},
-        {ty:"D", st:{mon:8, d:16}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:8, d:16}, inh:"ChildrensD"},
         {ty:"D", st:{mon:7, wkd:[7], nth:1}, inh:"FriendshipD", fst:{era:1, y:2009}},
         {ty:"D", st:{mon:6, d:20}, inh:"ConstitutionD", urls:{"en":"https://www.officeholidays.com/holidays/paraguay/paraguay-constitution-day"}, fst:{era:1, y:2026}},
         {ty:"D", st:{mon:6, d:21, thruD:26, wkd:[2]}, inh:"Constitution Day (in lieu)", urls:{"en":"https://www.officeholidays.com/holidays/paraguay/paraguay-constitution-day"}, fst:{era:1, y:2026}},

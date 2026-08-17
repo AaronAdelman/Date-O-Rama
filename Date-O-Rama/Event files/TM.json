@@ -27,7 +27,7 @@
         {ty:"D", st:{mon:6, d:27}, urls:{"en":"https://nationaltoday.com/day-of-turkmen-workers-of-culture-and-art/"}, ttls:{"en":"Day of Turkmen Workers of Culture and Art"}, fst:{era:1, y:2009}, mog:"👨‍🎨👩‍🎨"},
         {ty:"D", st:{mon:7, wkd:[1], nth:3}, ttls:{"en":"Galla Bayramy"}, mog:"🌾"},
         {ty:"D", st:{mon:5, d:29}, ttls:{"en":"Day of the Ministry of Internal Affairs"}},
-        {inh:"Border Guards Day", ty:"D", st:{mon:8, d:11}},
+        {inh:"BorderGuardsD", ty:"D", st:{mon:8, d:11}},
         {ty:"D", st:{mon:9, wkd:[7], nth:2}, ttls:{"en":"Day of the Workers in the Oil, Gas, Power, and Geological Industry"}, mog:"🛢️🔌🪨"},
         {ty:"D", st:{mon:9, wkd:[1], nth:2}, ttls:{"en":"Turkmen Bakhshi Day"}},
         {ty:"D", st:{mon:9, d:30}, ttls:{"en":"Day of the Worker in the Organs of National Security"}},
@@ -36,7 +36,7 @@
         {ty:"D", st:{mon:8, wkd:[1], nth:2}, ttls:{"az":"Yemiş günü","de":"Tag der turkmenischen Melone","en":"Melon Day","he":"יום המלון","ja":"メロンの日","ko":"멜론의 날","pa":"ਤਰਬੂਜ ਦਿਵਸ","ru":"День туркменской дыни","uz":"Turkman qovunlari kuni","zh":"甜瓜節"}, inh:"Melon Day", urls:{"en":"https://www.daysoftheyear.com/days/melon-day/"}, fst:{era:1, y:1994}, nts:{"en":"Created by Saparmurat Niyazov"}},
         {ty:"D", st:{mon:12, wkd:[1], nth:1}, ttls:{"en":"Good Neighborliness Day"}},
 
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:4, wkd:[1], nth:1}, ttls:{"en":"A Drop of Water is a Grain of Gold"}, urls:{"en":"https://nationaltoday.com/a-drop-of-water-is-a-grain-of-gold/"}, fst:{era:1, y:1995}, mog:"💧"},
         {ty:"D", st:{mon:4, wkd:[1], nth:-1}, ttls:{"en":"Turkmen Racing Horse Festival"}, urls:{"en":"https://nationaltoday.com/turkmen-racing-horse-festival/"}, mog:"🏇"},
    ]

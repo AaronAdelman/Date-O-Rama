@@ -25,15 +25,15 @@
         
         {ty:"D", st:{misc:"E", offsetD: -52}, inh:"StVardanian"},
         {inh:"Teacher’s Day", ty:"D", st:{mon:3, d:9}},
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
         {ty:"D", st:{mon:11, d:1}, inh:"AllStsD"},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{mon:9, d:8}, inh:"Nativity of Mary"},
         {ty:"D", st:{mon:12, d:17}, inh:"StBarbara"},
 
-        {ty:"D", st:{mon:6, d:21}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:6, d:21}, inh:"FathersD"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         
         {ty:"D", st:{mon:2, d:14}, urls:{"en":"https://nationaltoday.com/rafik-hariri-memorial-day/"}, ttls:{"en":"Rafik Hariri Memorial Day"}, fst:{era:1, y:2005}},
         {ty:"nD", st:{era:1, y:2025, mon:12, d:1, durD: 2}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/lebanon/lebanon-papal-visit"}},

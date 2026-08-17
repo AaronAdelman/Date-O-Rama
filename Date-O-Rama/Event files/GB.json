@@ -21,7 +21,7 @@
         {ty:"D", st:{mon:4, d:23}, inh:"StGeorge", urls:{"en":"https://www.officeholidays.com/holidays/united-kingdom/england/england-st-georges-day"}},
         {ty:"D", st:{mon:5, wkd:[2], nth:1}, inh:"Early May Bank Holiday", urls:{"en":"https://www.daysoftheyear.com/days/early-may-bank-holiday/"}, fst:{era:1, y:1978}},
         {ty:"D", st:{mon:5, wkd:[2], nth:-1}, inh:"Spring Bank Holiday", nts:{"en":"Spring Holiday"}, urls:{"en":"https://www.daysoftheyear.com/days/spring-bank-holiday/"}, fst:{era:1, y:2023}},
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:7, d:12}, inh:"12th", urls:{"en":"https://nationaltoday.com/battle-of-the-boyne/"}, fst:{era:1, y:1690}},
         {ty:"D", st:{mon:7, d:13, thruD:14, wkd:[2]}, ttls:{"en":"The Twelfth (in lieu)"}, nts:{"en":"Battle of the Boyne (in lieu)\nOrangemen’s Day (in lieu)"}, inh:"12th", urls:{"en":"https://www.officeholidays.com/holidays/united-kingdom/battle-of-the-boyne"}, fst:{era:1, y:1690}},
         {ty:"D", st:{mon:8, d:4, thruD:10, wkd:[4]}, ttls:{"en":"National Opportunity Day"}, fst:{era:1, y:2023}, mog:"🔑", urls:{"en":"https://www.glasgowkelvin.ac.uk/news-events/events/national-opportunity-day"}, nts:{"en":"Created by Glasgow Kelvin College"}},
@@ -31,7 +31,7 @@
         {ty:"D", st:{mon:11, d:30}, inh:"StAndrew"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
-        {ty:"D", st:{mon:12, d:27, thruD:28, wkd:[2]}, inh:"Bank Holiday"},
+        {ty:"D", st:{mon:12, d:27, thruD:28, wkd:[2]}, inh:"BankHol"},
 
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon"},
@@ -39,7 +39,7 @@
         {ty:"D", st:{mon:5, wkd:[2], nth:1}, inh:"LabourD"},
         
 
-        {ty:"D", st:{misc:"E", offsetD: -21}, inh:"Mother’s Day"},
+        {ty:"D", st:{misc:"E", offsetD: -21}, inh:"MothersD"},
         {ty:"D", st:{misc:"E", offsetD: -48}, ttls:{"en":"Nickanan Night"}, nts:{"en":"Hall Monday\nPeasen Monday"}, urls:{"en":"https://en.wikipedia.org/wiki/Nickanan_Night"}},
         {ty:"D", st:{misc:"Jun"}, ttls:{"en":"Suffolk Day"}, urls:{"en":"https://suffolkday.co.uk/"}, fst:{era:1, y:2017}},
         {ty:"D", st:{era:1, y:2018, mon:3, d:8}, inh:"NPothole Day"},
@@ -252,7 +252,7 @@
         {ty:"M", st:{mon:10}, ttls:{"en":"Porktober"}, urls:{"en":"https://www.daysoftheyear.com/days/porktober/"}, fst:{era:1, y:2022}, mog:"🐷", nts:{"en":"Created by Scottish Craft Butchers and National Craft Butchers"}},
         {ty:"M", st:{mon:10}, ttls:{"en":"Unblocktober"}, urls:{"en":"https://www.unblocktober.org/"}, fst:{era:1, y:2019}, nts:{"en":"Created by Lanes Group, PLC"}},
         {ty:"M", st:{mon:12}, ttls:{"en":"Decembeard"}, urls:{"en":"https://www.daysoftheyear.com/days/decembeard/"}, fst:{era:1, y:2012}, inh:"*MedAw*", nts:{"en":"Created by Bowel Cancer UK"}},
-        {ty:"M", st:{mon:2}, inh:"Black History Month", fst:{era:1, y:1987}},
+        {ty:"M", st:{mon:2}, inh:"BlackHistoryM", fst:{era:1, y:1987}},
         {ty:"M", st:{mon:2}, inh:"LGBTQ History Month", fst:{era:1, y:2005}},
         {ty:"M", st:{mon:2}, ttls:{"en":"Dignity Action Month"}, urls:{"en":"https://www.dignityincare.org.uk/Dignity-in-Care-events/dignity-action-month/"}, fst:{era:1, y:2010}, nts:{"en":"Created by the National Dignity Council"}, mog:"🖤"},
         {ty:"M", st:{mon:2}, ttls:{"en":"Raynaud’s Awareness Month"}, urls:{"en":"https://www.sruk.co.uk/get-involved/awareness-campaigns/raynauds-awareness-month/"}, inh:"*MedAw*", nts:{"en":"Created by Lynn Wunderman"}},

@@ -43,9 +43,9 @@
         {ty:"D", st:{mon:6, d:13}, ttls:{"en":"Suleimaniah City Fallen and Martyrs Day"}, locs:{"en":"Iraqi Kurdistan"}, mog:"🏙️"},
         {ty:"D", st:{mon:12, d:11}, ttls:{"en":"Establishment of Kurdish Women’s Union"}, locs:{"en":"Iraqi Kurdistan"}, mog:"👩"},
 
-        {ty:"D", st:{mon:3, d:21}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
         
-        {ty:"D", st:{mon:6, d:1}, inh:"Children’s Day", locs:{"en":"Iraqi Kurdistan"}},
+        {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD", locs:{"en":"Iraqi Kurdistan"}},
         
         {ty:"D", st:{mon:3, d:16}, inh:"PublicHol", fst:{era:1, y:2025}, urls:{"en":"https://www.officeholidays.com/holidays/iraq/halabja-chemical-attack"}},
     ]

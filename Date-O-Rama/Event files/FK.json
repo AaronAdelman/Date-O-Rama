@@ -24,6 +24,6 @@
         {ty:"D", st:{mon:12, d:30, wkd:[2, 3, 6]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
         {ty:"D", st:{mon:12, d:31, wkd:[3, 4]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
 
-        {inh:"Children’s Day", ty:"D", st:{misc:"E", offsetD: 39}},
+        {inh:"ChildrensD", ty:"D", st:{misc:"E", offsetD: 39}},
     ]
 }

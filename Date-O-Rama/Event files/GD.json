@@ -23,10 +23,10 @@
         {ty:"D", st:{mon:8, wkd:[3], d:9, thruD:15}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/spicemas"}, inh:"Carnival Tue"},
         {ty:"D", st:{mon:10, d:19}, inh:"NHeroesD", urls:{"en":"https://www.officeholidays.com/holidays/grenada/maurice-bishop-day"}, fst:{era:1, y:2023}},
         {ty:"D", st:{mon:10, d:20, wkd:[2]}, inh:"NHeroesD (IL)", urls:{"en":"https://www.officeholidays.com/holidays/grenada/maurice-bishop-day"}, fst:{era:1, y:2023}},
-        {inh:"Thanksgiving", ty:"D", st:{mon:10, d:25}, fst:{era:1, y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/grenada-thanksgiving"}},
+        {inh:"Thxgiving", ty:"D", st:{mon:10, d:25}, fst:{era:1, y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/grenada-thanksgiving"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
 
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
    ]
 }

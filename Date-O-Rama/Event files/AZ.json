@@ -38,8 +38,8 @@
 
         {ty:"D", st:{mon:12, d:31}, ttls:{"az":"Dünya Azərbaycanlılarının Həmrəyliyi Günü","azb":"دونیا آذربایجانلی‌لاری‌نین هم‌رأی‌لیگی گونو","en":"International Solidarity Day of Azerbaijanis","fa":"روز همبستگی آذری‌های جهان","hy":"Աշխարհի ադրբեջանցիների համերաշխության օր","ka":"მსოფლიო აზერბაიჯანელთა სოლიდარობის დღე","pl":"Dzień Solidarności","ru":"День солидарности азербайджанцев всего мира","tr":"Dünya Azerbaycanlılarının Dayanışma Günü","uz":"Butun dunyo ozarbayjonlarining birdamlik kuni"}, urls:{"en":"https://nationaltoday.com/world-azerbaijanis-solidarity-day/"}, fst:{era:1, y:1991}, nts:{"en":"World Azerbaijanis Solidarity Day"}},
         
-        {ty:"D", st:{mon:3, d:8}, inh:"Mother’s Day"},
-        {ty:"D", st:{mon:3, d:17}, inh:"Children’s Day"},
+        {ty:"D", st:{mon:3, d:8}, inh:"MothersD"},
+        {ty:"D", st:{mon:3, d:17}, inh:"ChildrensD"},
         {ty:"D", st:{mon:6, d:1}, inh:"IChildren’s Day"},
         {ty:"D", st:{mon:2, d:14}, inh:"AirForceD"},
         
@@ -76,6 +76,6 @@
         {ty:"D", st:{mon:12, d:16}, ttls:{"en":"Day of Azerbaijani Ministry of Emergency Situations"}},
         {ty:"nD", st:{mon:10, d:26}, end:{mon:11, d:10}, ttls:{"en":"Pomegranate Festival"}, nts:{"en":"Nar Bayrami"}, urls:{"en":"https://www.daysoftheyear.com/days/pomegranate-festival/"}, fst:{era:1, y:2006}},
         {ty:"D", st:{mon:1, d:27}, ttls:{"en":"Day of the Tragedy and Heroism of the Jews"}, inh:"Holocaust Memorial Day", fst:{era:1, y:2006}},
-        {ty:"D", st:{mon:8, d:18}, ttls:{"en":"Day of the Border Guard"}, inh:"Border Guards Day", fst:{era:1, y:2000}},
+        {ty:"D", st:{mon:8, d:18}, ttls:{"en":"Day of the Border Guard"}, inh:"BorderGuardsD", fst:{era:1, y:2000}},
     ]
 }

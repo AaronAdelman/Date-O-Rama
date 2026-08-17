@@ -11,7 +11,7 @@
         {ty:"D", st:{misc:"Jun"}, inh:"Summer Solstice", rgns: ["xb"]},
         {ty:"D", st:{misc:"Jun"}, inh:"Winter Solstice", rgns: ["xc"]},
         {ty:"D", st:{mon:8, d:12}, ttls:{"en":"Feast of the Prophet and His Bride"}},
-        {ty:"D", st:{misc:"Sep"}, inh:"Autumnal Equinox", fst:{era:1, y:1903}, rgns: ["xb"]},
+        {ty:"D", st:{misc:"Sep"}, inh:"AutumnalEquinox", fst:{era:1, y:1903}, rgns: ["xb"]},
         {ty:"D", st:{misc:"Sep"}, inh:"Vernal Equinox", rgns: ["xc"]},
         {ty:"D", st:{mon:10, d:12}, ttls:{"en":"Crowleymas"}, fst:{era:1, y:1875}},
         {ty:"D", st:{mon:12, d:1}, ttls:{"en":"Crowley’s Greater Feast"}, fst:{era:1, y:1947}},

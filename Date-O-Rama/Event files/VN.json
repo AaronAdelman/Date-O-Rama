@@ -41,10 +41,10 @@
         {ty:"D", st:{mon:11, d:20}, ttls:{"en":"Vietnamese Teacher’s Day","vi":"Ngày Nhà giáo Việt Nam"}, inh:"Teacher’s Day"},
         {ty:"D", st:{mon:12, d:22}, ttls:{"en":"National Defence Day","vi":"Ngày hội quốc phòng toàn dân (ngày thành lập Quân đội nhân dân Việt Nam)"}, fst:{era:1, y:1944}},
         
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"Father’s Day"},
-        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"Mother’s Day"},
+        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
+        {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:6, d:28}, inh:"Family Day", fst:{era:1, y:2001}, urls:{"en":"https://nationaltoday.com/vietnamese-family-day/"}},
-        {inh:"Mother’s Day", ty:"D", st:{mon:10, d:15}, ttls:{"en":"Vietnamese Women’s Day"}},
+        {inh:"MothersD", ty:"D", st:{mon:10, d:15}, ttls:{"en":"Vietnamese Women’s Day"}},
         {ty:"D", st:{mon:6, d:1}, inh:"IChildren’s Day"},
         {inh:"Martyrs’ Day", ty:"D", st:{mon:7, d:27}, ttls:{"en":"Memorial Day for War Martyrs"}, nts:{"en":"Remembrance Day"}},
         {inh:"RevolutionD", ty:"D", st:{mon:8, d:19}, fst:{era:1, y:1945}, urls:{"en":"https://nationaltoday.com/revolution-commemoration-day/"}},

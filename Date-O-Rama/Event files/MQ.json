@@ -15,7 +15,7 @@
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{mon:5, d:22}, urls:{"en":"https://www.officeholidays.com/holidays/martinique/abolition-day"}, inh:"AbolitionD", nts:{"en":"Slavery Abolition Day\nEmancipation Day"}},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon"},
-        {ty:"D", st:{mon:7, d:14}, urls:{"en":"https://www.officeholidays.com/holidays/martinique/bastille-day"}, inh:"Bastille Day"},
+        {ty:"D", st:{mon:7, d:14}, urls:{"en":"https://www.officeholidays.com/holidays/martinique/bastille-day"}, inh:"BastilleD"},
         {ty:"D", st:{mon:8, d:15}, inh:"Assumption"},
         {ty:"D", st:{mon:11, d:1}, inh:"AllStsD"},
         {ty:"D", st:{mon:11, d:11}, urls:{"en":"https://nationaltoday.com/armistice-day-martinique/"}, inh:"ArmisticeD", fst:{era:1, y:1918}},
