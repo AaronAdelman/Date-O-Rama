@@ -2,10 +2,11 @@
     ttls:{"en":"UN Years and Decades","he":"שנים ועשורים של האו״ם"},
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.27, g: 0.61, b: 0.84},
+    color:{name:"teal"},
     fst:{era:1, y:1945},
     urls:{"en":"https://en.wikipedia.org/wiki/Outline_of_the_United_Nations#United_Nations_observances"},
     evts:[
+        {ty:"nY", st:{era:1, y:2027}, end:{era:1, y:2036}, ttls:{"en":"United Nations Decade for International Decade of Strengthening of Peace for Future Generations"}},
         {ty:"nY", st:{era:1, y:2027}, end:{era:1, y:2036}, ttls:{"en":"United Nations Decade for Afforestation and Reforestation in line with Sustainable Forest Management"}},
         {ty:"nY", st:{era:1, y:2026}, end:{era:1, y:2035}, ttls:{"en":"United Nations Decade of Sustainable Transport"}, nts:{"en":"UN Decade of Sustainable Transport"}},
         {ty:"nY", st:{era:1, y:2025}, end:{era:1, y:2034}, ttls:{"en":"Second International Decade for People of African Descent"}},
