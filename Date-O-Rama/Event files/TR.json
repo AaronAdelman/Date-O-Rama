@@ -26,6 +26,6 @@
         {ty:"D", st:{mon:9, d:19}, inh:"Engineer’s Day"},
         {inh:"Martyrs’ Day", ty:"D", st:{mon:3, d:18}},
         {ty:"D", st:{mon:6, d:1}, inh:"AirForceD", fst:{era:1, y:1911}},
-        {ty:"D", st:{mon:9, d:27}, inh:"Navy Day"},
+        {ty:"D", st:{mon:9, d:27}, inh:"NavyD"},
     ]
 }

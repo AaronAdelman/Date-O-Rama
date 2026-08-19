@@ -31,7 +31,7 @@
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:6, d:29}, inh:"Engineer’s Day"},
         {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
-        {ty:"D", st:{mon:7, d:25}, inh:"Navy Day"},
+        {ty:"D", st:{mon:7, d:25}, inh:"NavyD"},
         {ty:"D", st:{mon:2, d:27}, inh:"ArmyD"},
         {ty:"D", st:{mon:10, d:27}, inh:"AirForceD"},
         {ty:"D", st:{mon:2, d:14}, inh:"FriendshipD"},

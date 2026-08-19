@@ -100,7 +100,7 @@
         {ty:"D", st:{mon:10, d:21}, ttls:{"en":"National Annual Tree Loving Day","th":"วันรักต้นไม้ประจำปีของชาติ"}, fst:{era:1, y:1990}, mog:"🌴🌲🌳"},
         {ty:"D", st:{mon:10, d:21}, ttls:{"en":"National Dental Hygiene Day","th":"วันทันตสาธารณสุขแห่งชาติ"}, fst:{era:1, y:1989}, inh:"*MedAw*", mog:"🦷🪥"},
         {ty:"D", st:{mon:11, wkd:[1], nth:3}, inh:"WDOfRemembranceForRoadTrafficVictims", fst:{era:1, y:2013}},
-        {ty:"D", st:{mon:11, d:20}, ttls:{"en":"Royal Thai Navy Day","th":"วันกองทัพเรือ","he":"יום הצי המלכותי התאילנדי"}, inh:"Navy Day"},
+        {ty:"D", st:{mon:11, d:20}, ttls:{"en":"Royal Thai Navy Day","th":"วันกองทัพเรือ","he":"יום הצי המלכותי התאילנדי"}, inh:"NavyD"},
         {ty:"D", st:{mon:11, d:25}, ttls:{"en":"King Vajiravudh Memorial Day","th":"วันสมเด็จพระมหาธีรราชเจ้า","he":"יום המלך ואג׳יראווד"}, fst:{era:1, y:2003}},
         {ty:"D", st:{mon:11, d:25}, ttls:{"en":"Primary Education Day","th":"วันประถมศึกษาแห่งชาติ"}},
         {ty:"D", st:{mon:11, d:27}, ttls:{"en":"National Health-Building Day","th":"วันสร้างสุขภาพแห่งชาติ"}, fst:{era:1, y:2002}},

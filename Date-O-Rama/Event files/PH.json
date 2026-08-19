@@ -9,7 +9,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:1, d:2}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/international-new-years-day"}, inh:"NYD Holiday"},
+        {ty:"D", st:{mon:1, d:2}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/international-new-years-day"}, inh:"NYDHol"},
         {ty:"D", st:{mon:1, d:9}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/traslacion"}, ttls:{"en":"Traslacion","fil":"Traslasyon ng Nazareno"}, fst:{era:1, y:2024}, nts:{"en":"Feast of the Image of the Black Nazarene","fil":"Fiesta ng Poong Itim na Nazareno"}},
         {ty:"D", st:{mon:2, d:25}, urls:{"en":"https://nationaltoday.com/people-power-anniversary/"}, ttls:{"en":"EDSA Revolution Anniversary","fil":"Anibersaryo ng Rebolusyon sa EDSA"}, fst:{era:1, y:2019}, nts:{"en":"People Power Revolution"}},
         {ty:"D", st:{mon:2, d:24}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/cebu/cebu-city-charter-day"}, ttls:{"en":"Cebu City Charter Day","fil":"Araw ng Pribilehiyo ng Lungsod ng Cebu"}, fst:{era:1, y:1992}},
@@ -44,7 +44,7 @@
         {ty:"D", st:{mon:3, d:23}, urls:{"en":"https://nationaltoday.com/founding-anniversary-of-the-philippine-army/"}, nts:{"en":"Founding Anniversary of the Philippine Army"}, fst:{era:1, y:1936}, ttls:{"en":"Philippine Army Day and Anniversary of the Tejeros Convention","fil":"Araw ng Hukbong Katihan ng Pilipinas"}, inh:"ArmyD"},
         {ty:"D", st:{mon:4, d:27}, urls:{"en":"https://nationaltoday.com/lapu-lapu-day/"}, ttls:{"en":"Lapu Lapu Day","fil":"Araw ni Lapu-Lapu"}, fst:{era:1, y:2019}},
         {inh:"Radio Day", ty:"D", st:{mon:5, d:8}},
-        {ty:"D", st:{mon:5, d:20}, inh:"Navy Day", ttls:{"en":"Philippine Navy Day","fil":"Araw ng Hukbong Dagat ng Pilipinas"}, fst:{era:1, y:1898}},
+        {ty:"D", st:{mon:5, d:20}, inh:"NavyD", ttls:{"en":"Philippine Navy Day","fil":"Araw ng Hukbong Dagat ng Pilipinas"}, fst:{era:1, y:1898}},
         {ty:"D", st:{mon:5, d:28}, urls:{"en":"https://nationaltoday.com/national-flag-day-in-the-philippines/"}, inh:"Flag Day", fst:{era:1, y:1965}},
         {ty:"D", ttls:{"en":"José Rizal’s Birthday"}, st:{mon:6, d:19}, fst:{era:1, y:1961}, inh:"*BD*"},
         {ty:"D", st:{mon:6, d:30}, urls:{"en":"https://nationaltoday.com/philippine-spanish-friendship-day/"}, ttls:{"en":"Philippine-Spanish Friendship Day","fil":"Araw ng Pagkakaibigang Pilipino-Espanyol"}, mog:"🇵🇭🇪🇸", nts:{"en":"Spanish-Filipino Friendship Day"}},

@@ -32,7 +32,7 @@
         {ty:"D", st:{mon:6, d:8}, inh:"Engineer’s Day"},
         {inh:"ChildrensD", ty:"D", st:{mon:4, wkd:[1], nth:2}},
         {inh:"IChildren’s Day", ty:"D", st:{mon:8, wkd:[1], nth:3}},
-        {ty:"D", st:{mon:10, d:8}, inh:"Navy Day"},
+        {ty:"D", st:{mon:10, d:8}, inh:"NavyD"},
         {inh:"ArmedForcesD", ty:"D", st:{mon:9, d:24}},
         {inh:"AirForceD", ty:"D", st:{mon:7, d:23}},
         {ty:"D", st:{mon:7, wkd:[7], nth:1}, inh:"FriendshipD", fst:{era:1, y:2009}},

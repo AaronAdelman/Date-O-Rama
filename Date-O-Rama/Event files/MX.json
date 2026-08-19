@@ -36,7 +36,7 @@
         {ttls:{"en":"Shout of Dolores","es":"Grito de Dolores"}, ty:"nD", st:{mon:9, d:15}, end:{mon:9, d:16}, fst:{era:1, y:1825}, urls:{"en":"https://nationaltoday.com/shout-of-dolores/"}, mog:"🔔"},
         {ty:"D", st:{mon:9, d:27}, ttls:{"en":"Culmination of the Mexican War of Independence","es":"Consumación de la Independencia"}, fst:{era:1, y:1821}},
         {ty:"D", st:{mon:9, d:30}, inh:"*BD*", ttls:{"en":"Morelos’s Birthday","es":"Natalicio de José Mª Morelos y Pavón"}, fst:{era:1, y:1765}},
-        {ty:"D", st:{mon:11, d:23}, inh:"Navy Day", fst:{era:1, y:1825}},
+        {ty:"D", st:{mon:11, d:23}, inh:"NavyD", fst:{era:1, y:1825}},
         
         {ty:"D", st:{mon:1, d:6}, inh:"Epiphany"},
         {ty:"D", st:{mon:2, d:2}, inh:"Candlemas", fst:{era:1, y:472}},

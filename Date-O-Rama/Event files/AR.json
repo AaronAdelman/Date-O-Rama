@@ -55,7 +55,7 @@
 
         {ty:"D", st:{mon:6, d:16}, inh:"Engineer’s Day"},
         {ty:"D", st:{mon:8, wkd:[1], nth:3}, inh:"ChildrensD", fst:{era:1, y:2013}},
-        {ty:"D", st:{mon:5, d:17}, inh:"Navy Day"},
+        {ty:"D", st:{mon:5, d:17}, inh:"NavyD"},
         {ty:"D", st:{mon:5, d:29}, inh:"ArmyD"},
         {ty:"D", st:{mon:8, d:10}, inh:"AirForceD"},
         {ty:"D", st:{mon:7, d:20}, inh:"FriendshipD"},

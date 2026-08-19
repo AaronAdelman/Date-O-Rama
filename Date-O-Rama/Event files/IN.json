@@ -162,7 +162,7 @@
         {ty:"D", st:{mon:10, d:9}, ttls:{"en":"Foreign Service Day"}},
         {inh:"ConstitutionD", ty:"D", st:{mon:11, d:26}, urls:{"en":"https://nationaltoday.com/national-law-day/"}, fst:{era:1, y:1950}, mog:"⚖️"},
         {ty:"D", st:{mon:11, d:27}, ttls:{"en":"Organ Donation Day"}},
-        {ty:"D", st:{mon:12, d:4}, inh:"Navy Day", urls:{"en":"https://en.wikipedia.org/wiki/Navy_Day_(India)"}, fst:{era:1, y:1971}},
+        {ty:"D", st:{mon:12, d:4}, inh:"NavyD", urls:{"en":"https://en.wikipedia.org/wiki/Navy_Day_(India)"}, fst:{era:1, y:1971}},
         {ty:"D", st:{mon:4, d:13}, ttls:{"en":"Jallianwala Bagh Massacre Day"}, fst:{era:1, y:1919}},
         {ty:"D", st:{mon:4, d:13}, ttls:{"en":"Siachen Day"}},
         {ty:"D", st:{mon:4, d:24}, ttls:{"en":"National Panchayati Raj Day"}, urls:{"en":"https://en.wikipedia.org/wiki/National_Panchayati_Raj_Day"}, fst:{era:1, y:2010}},

@@ -102,7 +102,7 @@
         {ty:"D", st:{mon:5, d:23}, ttls:{"en":"Jake Day Jr."}, nts:{"en":"Day of the Elppin\nDefenestration of Prague Day\nWhollyday\n70 Discord"}, inh:"EDH"},
         {ty:"D", st:{mon:5, d:25}, inh:"Creation Day", urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {ty:"D", st:{mon:5, d:25}, inh:"Towel Day", nts:{"en":"Whollyday\n72 Discord"}, fst:{era:1, y:2001}, urls:{"en":"https://www.fsofcabal.com/holydays/02-72-towel-day"}},
-        {ty:"D", st:{mon:5, wkd:[6], nth:1}, inh:"No Pants Day", nts:{"en":"Whollyday"}},
+        {ty:"D", st:{mon:5, wkd:[6], nth:1}, inh:"NoPantsD", nts:{"en":"Whollyday"}},
         {ty:"D", st:{mon:6, d:5}, ttls:{"en":"Golden Apple Day"}, inh:"HDH"},
         {ty:"D", st:{mon:6, d:6}, ttls:{"en":"537 Day"}, nts:{"en":"Whollyday\n11 Confusion"}, inh:"EDH"},
         {ty:"D", st:{mon:6, d:6}, ttls:{"en":"Saint Helen’s Day"}, inh:"HDH"},

@@ -36,7 +36,7 @@
         {ty:"D", st:{mon:12, d:26}, inh:"FathersD"},
         {ty:"D", st:{mon:6, d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:10, d:16}, ttls:{"en":"Aviation and Air Force Day"}, inh:"AirForceD"},
-        {ty:"D", st:{mon:8, wkd:[1], nth:2}, inh:"Navy Day"},
+        {ty:"D", st:{mon:8, wkd:[1], nth:2}, inh:"NavyD"},
         {ty:"D", st:{mon:2, d:1}, ttls:{"en":"Day of Remembrance and Respect to Victims of the Communist Regime"}, urls:{"en":"https://nationaltoday.com/day-of-remembrance-and-respect-to-victims-of-the-communist-regime/"}},
         {ty:"D", st:{mon:7, d:5}, inh:"StsCyril&Methodius"},
         {ty:"nD", st:{mon:12, d:3, thruD:8, wkd:[7], durD: 2}, ttls:{"en":"Rakia & Spirits Fest Sofia"}, nts:{"en":"Rakia and Spirits Festival\nBalkan Rakia Fest\nCreated by Ivaylo Zheglov of the Expo Team"}, urls:{"en":"https://balkanrakiafest.com"}, fst:{era:1, y:2011}, mog:"🥃"},

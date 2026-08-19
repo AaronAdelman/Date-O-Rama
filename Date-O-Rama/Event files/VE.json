@@ -59,7 +59,7 @@
         {ty:"D", st:{mon:5, d:25}, inh:"NAnthemD"},
         {ty:"D", st:{mon:6, d:27}, ttls:{"en":"Journalists’ Day and the Anniversary of the 1872 Public Education Decree","es":"Día del Periodista y Aniversario de la Instauración del Decreto de Instrucción Pública Gratuita y Obligatoria"}},
         {inh:"ChildrensD", ty:"D", st:{mon:7, wkd:[1], nth:3}},
-        {ty:"D", st:{mon:7, d:24}, ttls:{"en":"Navy Day and the Anniversary of the Battle of Lake Maracaibo","es":"Día de la Armada Nacional"}, inh:"Navy Day"},
+        {ty:"D", st:{mon:7, d:24}, ttls:{"en":"Navy Day and the Anniversary of the Battle of Lake Maracaibo","es":"Día de la Armada Nacional"}, inh:"NavyD"},
         {ty:"D", st:{mon:7, d:25}, ttls:{"en":"Caracas City Foundation Day","es":"Aniversario del Fundación del Caracas"}},
         {ty:"D", st:{mon:8, d:3}, inh:"Flag Day"},
         {inh:"NGuardD", ty:"D", st:{mon:8, d:4}},

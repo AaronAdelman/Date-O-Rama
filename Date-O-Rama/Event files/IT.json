@@ -75,7 +75,7 @@
         {ty:"D", st:{mon:4, d:1}, inh:"AprFoolsD"},
         {ty:"D", st:{mon:6, d:15}, inh:"Engineer’s Day"},
         {ty:"D", st:{mon:11, d:20}, inh:"WChildrensD", fst:{era:1, y:1997}},
-        {ty:"D", st:{mon:6, d:10}, inh:"Navy Day"},
+        {ty:"D", st:{mon:6, d:10}, inh:"NavyD"},
         {ty:"D", st:{mon:11, d:11}, inh:"Start of Fasching", fst:{era:1, y:1234}},
         {ty:"D", st:{mon:3, d:25}, urls:{"en":"https://nationaltoday.com/national-dante-day/"}, ttls:{"en":"National Dante Day"}, fst:{era:1, y:2020}},
         {inh:"NGrandparentsD", ty:"D", st:{mon:10, d:2}, fst:{era:1, y:2005}},
