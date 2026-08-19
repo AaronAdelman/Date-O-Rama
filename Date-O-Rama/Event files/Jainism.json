@@ -41,6 +41,9 @@
         {ty:"D", st:{mon:9, d:26}, ttls:{"en":"Maun Agiyaras"}, nts: {"en":"Ekadashi"}, "//":"This event requires research; there seem to be multiple Ekadashis."},
         {ty:"nD", st:{mon:1, d:22, durD: 9}, inh:"NavapadOli"},
         {ty:"nD", st:{mon:7, d:22, durD: 9}, inh:"NavapadOli"},
+        {ty:"D", st:{mon:6, d:18}, ttls:{"en":"Roth Teej"}},
+        {ty:"D", st:{mon:3, d:20}, ttls:{"en":"Shruta Panchami"}, nts:{"en":"Shrut Panchami"}, urls:{"en":"https://en.wikipedia.org/wiki/Shruta_Panchami"}},
+        {ty:"D", st:{mon:8, d:30}, inh:"KartikaPurnima"},
     ],
     tpls:{
         "NavapadOli":{ty:"nD", st:{mon:1, d:22, durD: 9}, ttls:{"en":"Navapad Oli"}},
