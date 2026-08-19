@@ -17,8 +17,8 @@
 // Tithis in the “bright” half of a month/waxing moon are numbered starting at 16.
 // Purnima (full moon) = tithi 30 of the month
 
-// TODO:  Pausha Dashmi (needs research)
 // The two major Jain groups, the Śvetāmbara and the Digambara, don’t seem to schedule everything the same.  Some clarification, if not two different event calendars, may be necessary.
+// TODO:  Mahamastakabhisheka (happens once per 12 years; does it have a set date?)
 
 {
     ttls:{"af":"Djainisme","an":"Chainismo","anp":"जैन धर्म","ar":"الجاينية","arz":"جاينيه","as":"জৈন ধৰ্ম","ast":"Xainismu","az":"Caynizm","azb":"جاینیزم","ba":"Джайнизм","ban":"Agama Jain","bcl":"Hainismo","be":"Джайнізм","be-tarask":"Джайнізм","bg":"Джайнизъм","bh":"जैन धर्म","bi":"Jeinisim","blk":"စေင်းဘာႏသာႏ","bn":"জৈন ধর্ম","bo":"གཅེར་བུ་བའི་ཆོས་ལུགས།","br":"Jainegezh","bs":"Džainizam","btm":"Jainisme","bxr":"Джайнай шажан","ca":"Jainisme","ce":"Джайнизм","ckb":"جاینیزم","cs":"Džinismus","cy":"Jainiaeth","da":"Jainisme","de":"Jainismus","dv":"ޖައިނިޒަމް","el":"Τζαϊνισμός","en":"Jainism","eo":"Ĝajnismo","es":"Jainismo","et":"Džainism","eu":"Jainismo","fa":"جین","fi":"Jainalaisuus","fo":"Jainisma","fr":"Jaïnisme","frp":"J·ayinismo","fur":"Jainisim","fy":"Jaïnisme","gcr":"Jayinism","gl":"Xainismo","gn":"Jain Dharma","gsw":"Jainismus","gu":"જૈન ધર્મ","ha":"Jainanci","he":"ג׳ייניזם","hi":"जैन धर्म","hif":"Jainism","hr":"Džainizam","hu":"Dzsainizmus","hy":"Ջայնիզմ","id":"Jainisme","ilo":"Hainismo","is":"Jaínismi","isv":"Džajnizm","it":"Giainismo","ja":"ジャイナ教","jam":"Jainizim","jbo":"lijdrdjaina","jv":"Jainisme","ka":"ჯაინიზმი","kaa":"Djainizm","kbp":"Sayɩnɩsmɩ","kk":"Джайнизм","kn":"ಜೈನ ಧರ್ಮ","knc":"Jainism","ko":"자이나교","ks":"جین مَت","ku":"Caynîzm","ky":"Жайнычылык","la":"Iainismus","lad":"Djainizmo","lb":"Jainismus","lfn":"Jainisme","lmo":"Jainism","lt":"Džainizmas","lv":"Džainisms","mad":"Jainisme","mai":"जैन धर्म","mdf":"Джайнизмась","mg":"Jainisma","mk":"Џаинизам","ml":"ജൈനമതം","mn":"Жайнизм","mnw":"ဇိနဘာသာ","mr":"जैन धर्म","ms":"Jainisme","mwl":"Jainismo","my":"ဂျိန်းဘာသာ","mzn":"جین دین","nan":"Jaina-kàu","nb":"Jainisme","nds":"Jainismus","ne":"जैन धर्म","new":"जैन धर्म","nl":"Jaïnisme","nn":"Djainismen","oc":"Jaïnisme","or":"ଜୈନ ଧର୍ମ","pa":"ਜੈਨ ਧਰਮ","pl":"Dźinizm","pms":"Jainism","pnb":"جین مت","ps":"جاينيزم","pt":"Jainismo","rki":"ဂျိန်းဘာသာ","rmy":"Jajinipen","ro":"Jainism","ru":"Джайнизм","rue":"Джайнізм","sa":"जैनधर्मः","sah":"Дьайнизм","sat":"ᱡᱳᱭᱱᱳ ᱫᱷᱚᱨᱚᱢ","scn":"Giainismu","sco":"Jainism","sd":"جين ڌرم","sgs":"Džainėzmos","sh":"Džainizam","shn":"သႃႇသၼႃႇၵျဵၼ်း","si":"ජෛනාගම","sk":"Džinizmus","sl":"Džainizem","sn":"Ujaini","so":"Jainismi","sq":"Xhainizmi","sr":"Џаинизам","sv":"Jainism","sw":"Ujaini","ta":"சைனம்","tcy":"ಜೈನ ಧರ್ಮ","te":"జైన మతం","th":"ศาสนาเชน","tl":"Hainismo","tr":"Caynizm","tt":"Җәйничелек","uk":"Джайнізм","ur":"جین مت","uz":"Jaynizm","vi":"Kỳ Na giáo","vro":"Džainism","war":"Jainismo","wuu":"耆那教","xmf":"ჯაინიზმი","yi":"דזשייניזם","yue":"耆那教","zh":"耆那教"},
@@ -37,5 +37,13 @@
         {ty:"D", st:{mon:8, d:15}, inh:"Diwali", urls:{"en":"https://en.wikipedia.org/wiki/Diwali_(Jainism)"},},
         {ty:"D", st:{mon:8, d:16}, ttls:{"en":"Jain New Year"}},
         {ty:"D", st:{mon:8, d:20}, ttls:{"en":"Gyana Panchami"}},
-    ]
+        {ty:"D", st:{mon:10, d:10}, ttls:{"en":"Pausha Dashmi"}, "//":"This event requires research."},
+        {ty:"D", st:{mon:9, d:26}, ttls:{"en":"Maun Agiyaras"}, nts: {"en":"Ekadashi"}, "//":"This event requires research; there seem to be multiple Ekadashis."},
+        {ty:"nD", st:{mon:1, d:22, durD: 9}, inh:"NavapadOli"},
+        {ty:"nD", st:{mon:7, d:22, durD: 9}, inh:"NavapadOli"},
+    ],
+    tpls:{
+        "NavapadOli":{ty:"nD", st:{mon:1, d:22, durD: 9}, ttls:{"en":"Navapad Oli"}},
+        
+    }
 }
