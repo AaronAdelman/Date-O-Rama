@@ -27,8 +27,8 @@
         {ttls:{"en":"New Harvest Days"}, ty:"nD", st:{mon:9, d:5}, end:{mon:10, d:20}, mog:"🌾"},
         {ttls:{"en":"Repression Victims’ Day"}, ty:"D", st:{mon:9, d:10}},
         {ttls:{"en":"Elders’ Day"}, ty:"D", st:{mon:10, d:1}, mog:"👴👵"},
-        {ty:"D", st:{mon:10, d:29}, inh:"Capital City Day", fst:{era:1, y:2009}},
-        {ty:"D", st:{mon:11, d:7}, inh:"Oct Revolution Day"},
+        {ty:"D", st:{mon:10, d:29}, inh:"CapitalCityD", fst:{era:1, y:2009}},
+        {ty:"D", st:{mon:11, d:7}, inh:"OctRevolutionD"},
         {ttls:{"en":"Democracy and Human Rights Day"}, ty:"D", st:{mon:12, d:10}, mog:"🗳️"},
 
         {ty:"D", st:{mon:10, d:1}, inh:"NCoffeeD"},

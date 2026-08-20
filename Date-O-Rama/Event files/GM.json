@@ -13,7 +13,7 @@
         {ty:"D", st:{mon:2, d:18}, inh:"IndependenceD", fst:{era:1, y:1965}, urls:{"en":"https://nationaltoday.com/gambia-independence-day/"}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"May Day"},
         {ty:"D", st:{mon:5, d:25}, inh:"AfricaD", fst:{era:1, y:1963}},
         {ty:"D", st:{mon:8, d:15}, inh:"Assumption"},

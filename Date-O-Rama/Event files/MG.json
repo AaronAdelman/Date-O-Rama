@@ -10,7 +10,7 @@
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{mon:3, d:29}, inh:"Martyrs’ Day", urls:{"en":"https://nationaltoday.com/martyrs-day-in-madagascar/"}},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon"},

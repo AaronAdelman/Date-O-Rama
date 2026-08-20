@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:6}, inh:"Epiphany"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"May Day", urls:{"en":"https://www.officeholidays.com/holidays/finland/vappu"}},
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD", urls:{"en":"https://www.officeholidays.com/holidays/finland/mothers-day"}},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
@@ -23,7 +23,7 @@
         {ty:"D", st:{mon:12, d:6}, inh:"IndependenceD", fst:{era:1, y:1917}, urls:{"en":"https://nationaltoday.com/independence-day-finland/"}},
         {ty:"D", st:{mon:12, d:24}, inh:"XmasE"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
         
         {ty:"D", st:{mon:2, d:28}, ttls:{"be":"Дзень Калевалы","en":"Kalevala Day","et":"Kalevala Päev","fi":"Kalevalan Päivä","olo":"Kalevalan Päivy","ru":"День Калевалы","sv":"Kalevaladagen","uz":"Kalevala Kuni","vi":"Ngày Kalevala"}, urls:{"en":"https://en.wikipedia.org/wiki/Kalevala_Day"}, nts:{"en":"Finnish Culture Day","fi":"Suomalaisen Kulttuurin Päivä"}},
         {ty:"D", st:{mon:5, d:1}, inh:"Walpurgis Nite"},

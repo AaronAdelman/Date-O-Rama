@@ -10,7 +10,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4, d:27}, inh:"King’s Day", fst:{era:1, y:2014}},
         {ty:"D", st:{mon:4, d:30}, ttls:{"en":"Carnival Day","nl":"Karnaval"}, urls:{"en":"https://www.officeholidays.com/holidays/sint-maarten/sint-maarten-carnival-day"}},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},

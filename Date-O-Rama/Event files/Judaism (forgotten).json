@@ -5,7 +5,7 @@
     color:{name:"blue"},
     evts:[
         {ttls:{"he":"שמחת כהן","en":"Simḥath Kohen"}, ty:"D", st:{mon:1, d:11}, nts:{"he":"עיונים של רבן שטיינזלץ על יומא ע׳ ע״א"}},
-        {ttls:{"he":"יום טוב שני של יום כיפור","en":"Yom Kippur (yom ṭov sheni)"}, ty:"D", st:{mon:1, d:11}, excludeRgns: ["IL","PS"], nts:{"he":"ראש השנה כ״א ע״א"}},
+        {ttls:{"he":"יום טוב שני של יום כיפור","en":"Yom Kippur (yom ṭov sheni)"}, ty:"D", st:{mon:1, d:11}, excludeRgns:["IL","PS"], nts:{"he":"ראש השנה כ״א ע״א"}},
         {ttls:{"he":"יום טוב שני של בני פרעוש בן יהודה","en":"Second Festival of Bene Par‘osh ben Yehudhah"}, ty:"D", st:{mon:4, d:1}, nts:{"he":"תענית כ״ו ע״א, תענית כ״ח ע״א"}},
         {ttls:{"he":"יום הר גריזים (לפי תלמוד בבלי)","en":"Mount Gerizim Day (according to Talmudh Bavli)"}, ty:"D", st:{mon:4, d:25}, nts:{"he":"יומא ס״ט ע״א"}},
         {ttls:{"he":"יום טוריינוס","en":"Ṭuryanus Day"}, ty:"D", st:{mon:7, d:12}, nts:{"he":"תענית י״ח ע״ב, מגילת תענית"}},

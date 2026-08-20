@@ -11,7 +11,7 @@
         {ty:"D", st:{misc:"E", offsetD: -3}, inh:"Maundy Thu"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{misc:"E", offsetD: 26}, inh:"General Prayer Day", fst:{era:1, y:1686}},
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD", urls:{"en":"https://www.officeholidays.com/holidays/denmark/mothers-day"}},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
@@ -22,7 +22,7 @@
         {inh:"FathersD", ty:"D", st:{mon:6, d:5}, urls:{"en":"https://www.officeholidays.com/holidays/denmark/fathers-day"}},
         {ty:"D", st:{mon:12, d:24}, inh:"XmasE"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
         {ty:"D", st:{mon:12, d:31}, inh:"NYE"},
 
         {ty:"D", st:{mon:2, d:5}, ttls:{"en":"Crown Princess Mary’s Birthday","da":"Kronprinsesse Marys fødselsdag"}, inh:"*BD*"},

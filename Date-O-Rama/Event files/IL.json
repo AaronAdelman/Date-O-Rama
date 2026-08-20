@@ -6,7 +6,7 @@
     color:{name:"blue"},
     fst:{era:1, y:1948},
     evts:[
-        {ty:"D", st:{mon:1, d:11}, inh:"Doctor’s Day", fst:{era:1, y:1912}, mog:"👨‍⚕️👩‍⚕️"},
+        {ty:"D", st:{mon:1, d:11}, inh:"DoctorsD", fst:{era:1, y:1912}, mog:"👨‍⚕️👩‍⚕️"},
         {ty:"D", st:{mon:1, d:18}, ttls:{"he":"מבצע דוגו","en":"Operation Dogo"}, mog:"🧆", urls:{"he":"https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F","en":"https://jr.co.il/dugo-day.htm"}, nts:{"en":"Dugo Day"}},
         {ty:"D", st:{mon:1, d:22}, inh:"Engineer’s Day", ttls:{"en":"Israeli Engineer’s Day","he":"יום המהנדס/ת הישראלי/ת"}},
         {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD"},

@@ -18,8 +18,8 @@
 
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{misc:"E", offsetD: -1}, inh:"Holy Sat"},
 
         {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},

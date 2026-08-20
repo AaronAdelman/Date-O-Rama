@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:3, d:15}, urls:{"en":"https://nationaltoday.com/1848-revolution-memorial-day/"}, inh:"RevolutionD", nts:{"en":"1848 Revolution Memorial Day"}, fst:{era:1, y:1848}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, wkd:[1], nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/hungary/mothers-day"}, inh:"MothersD"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},
@@ -24,7 +24,7 @@
         {ty:"D", st:{mon:10, d:24, wkd:[6]}, inh:"Republic Day Holiday", nts:{"en":"1956 Revolution Memorial Day Holiday"}, urls:{"en":"https://www.officeholidays.com/holidays/hungary/hungary-republic-day"}, fst:{era:1, y:1956}},
         {ty:"D", st:{mon:11, d:1}, inh:"AllStsD"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, urls:{"en":"https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, urls:{"en":"https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inh:"BoxingD"},
         
         {ty:"D", st:{mon:1, d:22}, ttls:{"en":"Day of the Hungarian Culture","hu":"A magyar kultúra napja"}, fst:{era:1, y:1989}},
         {ty:"D", st:{mon:2, d:1}, ttls:{"en":"Memorial Day of the Republic","hu":"A köztársaság emléknapja"}, fst:{era:1, y:2006}},

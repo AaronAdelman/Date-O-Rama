@@ -20,7 +20,7 @@
         {ty:"D", st:{mon:12, d:12}, ttls:{"en":"Students Day"}, fst:{era:1, y:2003}, mog:"👨‍🎓👩‍🎓"},
         
         {ty:"D", st:{mon:1, d:12}, inh:"Memorial Day", urls:{"en":"https://en.wikipedia.org/wiki/Memorial_Day_(Turkmenistan)"}},
-        {ty:"D", st:{mon:1, d:27}, inh:"Defender of the Fatherland Day", urls:{"en":"https://en.wikipedia.org/wiki/Defender_of_the_Fatherland_Day_(Turkmenistan)"}},
+        {ty:"D", st:{mon:1, d:27}, inh:"DefenderOfTheFatherlandD", urls:{"en":"https://en.wikipedia.org/wiki/Defender_of_the_Fatherland_Day_(Turkmenistan)"}},
         {ty:"D", st:{mon:5, d:9}, inh:"Victory Day (May 9)", ttls:{"en":"Day of Remembrance of National Heroes of Turkmenistan in the 1941-1945 World War"}},
         {ty:"nD", st:{mon:5, d:18}, end:{mon:5, d:19}, ttls:{"en":"Day of Revival, Unity, and the Poetry of Magtymguly"}},
         {ty:"D", st:{mon:5, wkd:[1], nth:-1}, ttls:{"en":"Carpet Day"}},

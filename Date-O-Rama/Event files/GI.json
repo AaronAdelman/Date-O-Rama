@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:2, thruD:3, wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/international-new-years-day"}, inh:"NYD (IL)"},
         {ty:"D", st:{mon:2, wkd:[2], nth:3}, urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/commonwealth-day"}, ttls:{"en":"Winter Midterm Bank Holiday"}, fst:{era:1, y:2022}, inh:"BankHol"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4, d:28, wkd:[2, 3, 4, 5, 6]}, urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inh:"WorkersMemorialD", fst:{era:1, y:2012}},
         {ty:"D", st:{mon:4, d:29, thruD:30, wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"}, inh:"WorkersMemorialD", fst:{era:1, y:2012}},
         {ty:"D", st:{mon:5, d:1}, inh:"May Day", urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
@@ -22,6 +22,6 @@
         {ty:"D", st:{mon:8, wkd:[2], nth:-1}, urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/august-bank-holiday"}, ttls:{"en":"Late Summer Bank Holiday"}, inh:"BankHol"},
         {inh:"ND", ty:"D", st:{mon:9, d:10}, urls:{"en":"https://nationaltoday.com/gibraltar-independence-day/"}, fst:{era:1, y:1992}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
     ]
 }

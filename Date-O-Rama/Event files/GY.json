@@ -13,15 +13,15 @@
         {ty:"D", st:{mon:2, d:24, wkd:[2]}, inh:"Republic Day (in lieu)", urls:{"en":"https://nationaltoday.com/guyana-republic-day/"}, fst:{era:1, y:1970}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, d:5}, inh:"Indian Arrival Day", urls:{"en":"https://nationaltoday.com/indian-arrival-day-guyana/"}, fst:{era:1, y:1838}},
         {ty:"D", st:{mon:5, d:26}, inh:"IndependenceD", fst:{era:1, y:1966}, urls:{"en":"https://nationaltoday.com/independence-day-guyana/"}},
-        {ty:"D", st:{mon:7, wkd:[2], nth:1}, inh:"CARICOM Day", urls:{"en":"https://www.officeholidays.com/holidays/guyana/caricom-day"}},
+        {ty:"D", st:{mon:7, wkd:[2], nth:1}, inh:"CARICOMD", urls:{"en":"https://www.officeholidays.com/holidays/guyana/caricom-day"}},
         {inh:"Emancipation Day", ty:"D", st:{mon:8, d:1}, urls:{"en":"https://nationaltoday.com/emancipation-day-guyana/"}},
 
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
         
         {ty:"D", st:{mon:9, d:10}, urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, inh:"Heritage Day", fst:{era:1, y:1957}},
         {ty:"M", st:{mon:9}, urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"}, ttls:{"en":"Amerindian Heritage Month "}, fst:{era:1, y:1957}},

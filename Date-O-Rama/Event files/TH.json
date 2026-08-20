@@ -63,7 +63,7 @@
         {ty:"D", st:{mon:2, d:26}, ttls:{"en":"Cooperatives Day","he":"יום הקואופרטיבים","th":"วันสหกรณ์"}, fst:{era:1, y:1967}, nts:{"he":"יום שיתופי לאומי"}},
         {ty:"D", st:{mon:3, d:13}, ttls:{"en":"Thai Elephant Day","th":"วันช้างไทย","he":"יום הפיל הלאומי"}, nts:{"en":"National Elephant Day\nElephant Day\nThai National Elephant Day\nChang Thai Day\nCreated by the Royal Thai Government"}, urls:{"en":"https://www.daysoftheyear.com/days/elephant-day-in-thailand/"}, fst:{era:1, y:1998}, mog:"🐘"},
         {ty:"D", st:{mon:3, d:31}, ttls:{"en":"Memorial Day of Phra Nangklao Chaoyuhua","th":"วันที่ระลึกพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว พระมหาเจษฎาราชเจ้า","he":"יום הזיכרון למלך נאנגקלאו"}, nts:{"en":"King Nangklao Memorial Day"}, fst:{era:1, y:1993}},
-        {ty:"D", st:{mon:4, d:1}, inh:"Civil Service Day", fst:{era:1, y:1979}},
+        {ty:"D", st:{mon:4, d:1}, inh:"CivilServiceD", fst:{era:1, y:1979}},
         {ty:"D", st:{mon:4, d:2}, ttls:{"en":"Thai Heritage Conservation Day","th":"วันอนุรักษ์มรดกไทย","he":"יום שימור המורשת התאילנדית"}, fst:{era:1, y:1995}},
         {ty:"D", st:{mon:4, d:2}, ttls:{"en":"National Children’s Book Day","he":"היום לספרי ילדים הלאומי","th":"วันหนังสือเด็กแห่งชาติ"}, fst:{era:1, y:2005}, mog:"📚"},
         {ty:"D", st:{mon:4, d:2}, ttls:{"en":"Reading Day","th":"วันรักการอ่าน"}, fst:{era:1, y:2009}, mog:"📚"},

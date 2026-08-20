@@ -14,7 +14,7 @@
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E", offsetD: -1}, inh:"Holy Sat"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:10, d:1}, inh:"ND", urls:{"en":"https://www.officeholidays.com/holidays/macau/chinese-national-day"}},
         {ty:"D", st:{mon:10, d:2}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/macau/chinese-national-day"}},

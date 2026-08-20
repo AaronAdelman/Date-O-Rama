@@ -98,7 +98,7 @@
         {ty:"D", st:{mon:5, d:15}, inh:"Tree Day", urls:{"en":"https://www.fsofcabal.com/holydays/02-62-tree-day"}},
         {ty:"D", st:{mon:5, d:18}, ttls:{"en":"Squareshin"}, urls:{"en":"https://www.fsofcabal.com/holydays/02-65-squareshin"}},
         {ty:"D", st:{mon:5, d:21}, ttls:{"en":"Mal-2mas"}, urls:{"en":"https://www.fsofcabal.com/holydays/02-68-mal-2mas"}, fst:{era:1, y:1941}},
-        {ty:"D", st:{mon:5, d:23}, inh:"Buddha’s Birthday", urls:{"en":"https://www.fsofcabal.com/holydays/02-70-buddhas-birthday"}},
+        {ty:"D", st:{mon:5, d:23}, inh:"BuddhasBD", urls:{"en":"https://www.fsofcabal.com/holydays/02-70-buddhas-birthday"}},
         {ty:"D", st:{mon:5, d:23}, ttls:{"en":"Jake Day Jr."}, nts:{"en":"Day of the Elppin\nDefenestration of Prague Day\nWhollyday\n70 Discord"}, inh:"EDH"},
         {ty:"D", st:{mon:5, d:25}, inh:"Creation Day", urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {ty:"D", st:{mon:5, d:25}, inh:"Towel Day", nts:{"en":"Whollyday\n72 Discord"}, fst:{era:1, y:2001}, urls:{"en":"https://www.fsofcabal.com/holydays/02-72-towel-day"}},

@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{mon:1, d:6}, inh:"Epiphany"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD", urls:{"en":"https://www.officeholidays.com/holidays/belgium/mothers-day"}},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
@@ -36,7 +36,7 @@
         {ty:"D", st:{mon:9, wkd:[1], nth:3}, ttls:{"en":"Day of Wallonia","nl":"Feest van het Waalse Gewest","fr":"Fête de la Région wallonne","de":"Festtag der Wallonischen Region"}, urls:{"en":"https://www.daysoftheyear.com/days/day-of-wallonia/"}, nts:{"en":"Day of the Walloon Region\nCreated by the Walloon Movement"}, fst:{era:1, y:1923}},
         {ty:"D", st:{mon:10, d:31}, inh:"Halloween"},
         {ty:"D", st:{mon:11, d:15}, ttls:{"de":"Festtag des Königs","en":"King’s Feast","es":"Día del Rey","fr":"Fête du Roi","nl":"Koningsdag"}, urls:{"en":"https://en.wikipedia.org/wiki/King%27s_Feast"}, fst:{era:1, y:1866}, mog:"🤴"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
 
         {ty:"D", st:{mon:8, d:15}, inh:"MothersD", locs:{"en":"Antwerp"}},
         {ty:"D", st:{mon:3, d:20}, inh:"Engineer’s Day"},

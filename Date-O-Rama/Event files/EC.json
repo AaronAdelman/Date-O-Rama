@@ -8,8 +8,8 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ecuador"},
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
-        {ty:"D", st:{misc:"E", offsetD: -48}, inh:"Carnival Mon", urls:{"en":"https://nationaltoday.com/ecuador-carnival/"}},
-        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Carnival Tue", urls:{"en":"https://nationaltoday.com/ecuador-carnival/"}},
+        {ty:"D", st:{misc:"E", offsetD: -48}, inh:"CarnivalMon", urls:{"en":"https://nationaltoday.com/ecuador-carnival/"}},
+        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"CarnivalTue", urls:{"en":"https://nationaltoday.com/ecuador-carnival/"}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},

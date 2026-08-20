@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{mon:3, d:29}, ttls:{"en":"Commemoration of Boganda"}, urls:{"en":"https://nationaltoday.com/commemoration-of-boganda/"}, fst:{era:1, y:1959}, nts:{"en":"Barthelemy Boganda Day\nBoganda Day"}, inh:"*DA*"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},

@@ -145,7 +145,7 @@
         {ty:"M", st:{mon:3}, ttls:{"en":"International Brain Tumor Awareness Month"}, inh:"*MedAw*", mog:"🧠", urls:{"en":"https://braintumourresearch.org/pages/brain-tumour-awareness-month"}, fst:{era:1, y:2004}, nts:{"en":"Created by Brain Tumour Research"}},
         {ty:"M", st:{mon:3}, ttls:{"en":"International Ideas Month"}, urls:{"en":"https://www.daysoftheyear.com/days/international-ideas-month/"}, mog:"💡", fst:{era:1, y:2000}, nts:{"en":"Created by students at UW-Madison"}},
         {ty:"M", st:{mon:1}, ttls:{"en":"Rising Star Month"}, nts:{"en":"Worldwide Rising Star Month"}, urls:{"en":"https://www.daysoftheyear.com/days/rising-star-month/"}},
-        {ty:"M", st:{mon:4}, inh:"Dalit History Month", fst:{era:1, y:2022}},
+        {ty:"M", st:{mon:4}, inh:"DalitHistoryM", fst:{era:1, y:2022}},
         {ty:"M", st:{mon:4}, ttls:{"en":"Brussels Sprouts and Cabbage Month"}, urls:{"en":"https://nationaltoday.com/brussels-sprouts-and-cabbage-month/"}, mog:"🥬"},
         {ty:"M", st:{mon:4}, ttls:{"en":"Canine Fitness Month"}, urls:{"en":"https://fitpaws.com/pages/canine-fitness-month"}, fst:{era:1, y:2007}, nts:{"en":"Created by FitPAWS"}},
         {ty:"M", st:{mon:4}, ttls:{"en":"Mathematics Awareness Month"}},

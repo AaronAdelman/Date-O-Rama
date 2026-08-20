@@ -85,7 +85,7 @@
         {ty:"D", st:{mon:12, d:22}, inh:"NCookieXchgD", fst:{era:1, y:2015}},
         {ty:"D", st:{mon:12, d:23}, ttls:{"en":"National Christmas Movie Marathon Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-christmas-movie-marathon-day/"}, mog:"🎞️", fst:{era:1, y:2000}},
         {ty:"D", st:{mon:12, d:23}, ttls:{"en":"National Pfeffernusse Day"}, urls:{"en":"https://nationaltoday.com/national-pfeffernusse-day/"}},
-        {ty:"D", st:{mon:12, d:24}, inh:"Carols by Candlelight", fst:{era:1, y:1938}},
+        {ty:"D", st:{mon:12, d:24}, inh:"CarolsByCandlelight", fst:{era:1, y:1938}},
         {ty:"D", st:{mon:12, d:24}, inh:"XmasBookFlood", fst:{era:1, y:1944}},
         {ty:"D", st:{mon:12, d:24}, ttls:{"en":"Last-Minute Shopper’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/last-minute-shoppers-day/"}, nts:{"en":"Last-Minute Shopping Day"}},
         {ty:"D", st:{mon:12, d:24}, ttls:{"en":"National Eggnog Day","he":"יום הליקר ביצים הלאומי"}, nts:{"en":"Eggnog Day\nNational Egg Nog Day","he":"יום הליקר ביצים"}, urls:{"en":"https://www.daysoftheyear.com/days/eggnog-day/"}, mog:"🥛"},

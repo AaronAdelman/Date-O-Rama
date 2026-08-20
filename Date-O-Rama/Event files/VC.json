@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:3, d:14}, urls:{"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/saint-vincent-and-the-grenadines-national-heroes-day"}, inh:"NHeroesD"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, urls:{"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/labour-day"}, ttls:{"en":"National Worker's Day"}},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon"},
         {ty:"D", st:{mon:7, wkd:[2], nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/saint-vincent-and-the-grenadines/vincy-mas"}, ttls:{"en":"Vincy Mas (day 1)"}},
@@ -20,7 +20,7 @@
         {inh:"IndependenceD", ty:"D", st:{mon:10, d:27}, fst:{era:1, y:1979}, urls:{"en":"https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}},
         {ty:"D", st:{mon:10, d:28, wkd:[2]}, fst:{era:1, y:1979}, urls:{"en":"https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}, inh:"IndependenceD (IL)"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
         
         {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},

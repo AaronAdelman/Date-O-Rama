@@ -13,7 +13,7 @@
         {ty:"D", st:{mon:2, d:17}, inh:"IndependenceD", urls:{"en":"https://www.daysoftheyear.com/days/kosovo-independence-day/"}, fst:{era:1, y:2008}},
         {ty:"D", st:{mon:4, d:9}, urls:{"en":"https://nationaltoday.com/kosovo-constitution-day/"}, inh:"ConstitutionD", fst:{era:1, y:2008}},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, d:9}, urls:{"en":"https://www.officeholidays.com/holidays/kosovo/europe-day"}, inh:"Europe Day"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},

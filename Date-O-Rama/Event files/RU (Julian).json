@@ -12,6 +12,6 @@
         {ty:"D", st:{mon:12, d:26, wkd:[2]}, ttls:{"en":"Christmas Day (in lieu)"}},
         
         {ty:"D", st:{mon:3, d:25}, inh:"Annunciation"},
-        {ty:"D", st:{mon:8, d:15}, inh:"Dormition of the Mother of God"},
+        {ty:"D", st:{mon:8, d:15}, inh:"DormitionOfTheMotherOfGod"},
     ]
 }

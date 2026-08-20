@@ -24,17 +24,17 @@
         {ty:"D", st:{wkd:[6], d:13}, subEvts:[
             {ty:"D", st:{mon:1}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
             {ty:"D", st:{mon:2}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
-            {ty:"D", st:{mon:3, yLens: [366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
-            {ty:"D", st:{mon:4, yLens: [365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:3, yLens:[366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:4, yLens:[365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
             {ty:"D", st:{mon:5}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
             {ty:"D", st:{mon:6}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
-            {ty:"D", st:{mon:8, yLens: [365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:8, yLens:[365]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
             {ty:"D", st:{mon:9}, inh:"Skeptics Day International"},
-            {ty:"D", st:{mon:11, yLens: [366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
+            {ty:"D", st:{mon:11, yLens:[366]}, inh:"Skeptics Day International", fst:{era:1, y:1996}},
         ]},
         {ty:"D", st:{mon:11, d:2, thruD:8, wkd:[3]}, inh:"Skeptics Day International", fst:{era:1, y:1997}},
     ],
     tpls:{
-        "Skeptics Day International":{ty:"D", st:{wkd:[6], d:13, mon:1, yLens: [365]}, ttls:{"en":"Skeptics Day International"}, urls:{"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, nts:{"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, mog:"🫤"},
+        "Skeptics Day International":{ty:"D", st:{wkd:[6], d:13, mon:1, yLens:[365]}, ttls:{"en":"Skeptics Day International"}, urls:{"en":"https://www.checkiday.com/c4a5a2e6e3457ca25be9340f4403ab8e/skeptics-day-international"}, nts:{"he":"יום הסקפטיים הבינלאומי","en":"International Skeptics Day\nCreated by Adrienne Sioux Koopersmith"}, mog:"🫤"},
     }
 }

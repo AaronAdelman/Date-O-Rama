@@ -11,7 +11,7 @@
         {inh:"ND", ty:"D", st:{mon:2, d:16}, fst:{era:1, y:1918}, ttls:{"en":"Restoration of the State Day in Lithuania","lt":"Lietuvos valstybės atkūrimo diena"}, urls:{"en":"https://nationaltoday.com/restoration-of-the-state-day-in-lithuania/"}},
         {ty:"D", st:{mon:3, d:11}, ttls:{"be":"Дзень аднаўлення незалежнасці Літвы","en":"Lithuania Independence Restoration Day","lt":"Lietuvos nepriklausomybės atkūrimo diena","ru":"День восстановления независимости Литвы","uk":"День відновлення незалежності Литви","zh":"立陶宛恢复独立日"}, nts:{"en":"Restoration of Independence Day"}, urls:{"en":"https://nationaltoday.com/independence-restoration-day/"}, inh:"Independence Restoration Day", fst:{era:1, y:1990}},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"IWorkerD"},
         {inh:"MothersD", ty:"D", st:{mon:5, wkd:[1], nth:1}},
         {inh:"FathersD", ty:"D", st:{mon:6, wkd:[1], nth:1}},

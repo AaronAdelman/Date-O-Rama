@@ -361,7 +361,7 @@
             {ty:"D", st:{mon:12, d:18}, ttls:{"en":"Running of the Roboderos"}},
             {ty:"D", st:{mon:12, d:19}, ttls:{"en":"Saint Lorenzo di Medici"}},
             {ty:"D", st:{mon:12, d:20}, ttls:{"en":"Saint Cheech/Saint Chong"}},
-            {ty:"span", st:{mon:12, d:21, h: 4, min: 0, s: 0}, end:{mon:12, d:21, h: 4, min: 1, s: 0}, ttls:{"en":"Feelings of Gnawing Guilt Minute"}},
+            {ty:"span", st:{mon:12, d:21, h:4, min:0, s:0}, end:{mon:12, d:21, h:4, min:1, s:0}, ttls:{"en":"Feelings of Gnawing Guilt Minute"}},
             {ty:"D", st:{mon:12, d:22}, ttls:{"en":"Saint Bootsy Collins"}},
             {ty:"D", st:{mon:12, d:23}, ttls:{"en":"Saint John Belushi"}},
             {ty:"D", st:{mon:12, d:24}, ttls:{"en":"Saint Krishna"}},

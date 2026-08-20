@@ -12,7 +12,7 @@
         {ty:"D", st:{mon:1, d:6}, inh:"Xmas", urls:{"en":"https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {ty:"D", st:{mon:1, d:28}, inh:"ArmyD", urls:{"en":"https://www.daysoftheyear.com/days/army-day-in-armenia/"}, nts:{"en":"Homeland Defender’s Day\nNational Army Day\nCreated by Levon Ter-Petrosyan"}, fst:{era:1, y:1992}},
         {ty:"D", st:{mon:3, d:8}, inh:"IWD", fst:{era:1, y:2021}},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4, d:24}, inh:"ArmenianGenocideRemembranceD", fst:{era:1, y:2015}, nts:{"en":"Genocide Memorial Day"}},
         {ty:"D", st:{mon:4, d:25, wkd:[6, 7]}, ttls:{"en":"Armenian Genocide Remembrance Day (in lieu)"}, fst:{era:1, y:2015}},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},

@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:6}, inh:"Epiphany"},
         {ty:"D", st:{mon:3, d:25}, inh:"GreekIndependenceD", fst:{era:1, y:1821}, urls:{"en":"https://www.daysoftheyear.com/days/greek-independence-day/"}, nts:{"en":"Created by Filiki Eteria (the Society of Friends)"}},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:8, d:15}, inh:"Dormition of the Mother of God"},
+        {ty:"D", st:{mon:8, d:15}, inh:"DormitionOfTheMotherOfGod"},
         {ty:"D", st:{mon:10, d:28}, inh:"Ochi Day", fst:{era:1, y:1942}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"Synaxis of the Mother of God"},

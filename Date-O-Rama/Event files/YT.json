@@ -9,7 +9,7 @@
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4, d:27}, fst:{era:1, y:1847}, inh:"AbolitionD", urls:{"en":"https://publicholidays.africa/mayotte/abolition-day/"}},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, d:8}, inh:"VE Day"},

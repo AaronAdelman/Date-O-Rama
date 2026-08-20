@@ -38,7 +38,7 @@
         {ty:"D", st:{mon:8, d:16}, ttls:{"en":"Jain New Year"}},
         {ty:"D", st:{mon:8, d:20}, ttls:{"en":"Gyana Panchami"}},
         {ty:"D", st:{mon:10, d:10}, ttls:{"en":"Pausha Dashmi"}, "//":"This event requires research."},
-        {ty:"D", st:{mon:9, d:26}, ttls:{"en":"Maun Agiyaras"}, nts: {"en":"Ekadashi"}, "//":"This event requires research; there seem to be multiple Ekadashis."},
+        {ty:"D", st:{mon:9, d:26}, ttls:{"en":"Maun Agiyaras"}, nts:{"en":"Ekadashi"}, "//":"This event requires research; there seem to be multiple Ekadashis."},
         {ty:"nD", st:{mon:1, d:22, durD: 9}, inh:"NavapadOli"},
         {ty:"nD", st:{mon:7, d:22, durD: 9}, inh:"NavapadOli"},
         {ty:"D", st:{mon:6, d:18}, ttls:{"en":"Roth Teej"}},

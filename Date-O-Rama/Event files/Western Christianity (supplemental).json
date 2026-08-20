@@ -5,7 +5,7 @@
     color:{name:"red"},
     evts:[
         {ty:"D", st:{mon:11, d:27, thruMon:12, thruD:3, wkd:[1]}, inh:"1stAdventSun", ttls:{"en":"Sunday of the Dead","de":"Totensonntag"}, nts:{"en":"Eternity Sunday","de":"Ewigkeitssonntag\nTotenfest"}, urls:{"en":"https://en.wikipedia.org/wiki/Totensonntag"}},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
         {ty:"D", st:{mon:5, d:15}, inh:"NakbaD", fst:{era:1, y:2023}, nts:{"en":"Nakba Remembrance Day\nThank the US Presbyterian Church for adopting an antisemitic hate-fest."}},
         {ty:"D", st:{mon:6, wkd:[6], nth:1}, inh:"NDonutD", urls:{"en":"https://donutdayusa.com/"}, ttls:{"en":"National Donut Day"}, fst:{era:1, y:1938}, nts:{"en":"Created by the Salvation Army"}},
         {ty:"D", st:{mon:9, d:30}, inh:"NLuvPplD", fst:{era:1, y:2017}},

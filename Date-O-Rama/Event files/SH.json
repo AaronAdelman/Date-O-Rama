@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:21}, ttls:{"en":"Saint Helena Day","he":"יום סנט הלנה"}},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},
@@ -20,6 +20,6 @@
         {ty:"D", st:{mon:8, wkd:[2], nth:-1}, inh:"AugBankHol"},
         {ty:"D", st:{mon:11, wkd:[6], nth:3}, inh:"King’s Birthday"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
     ]
 }

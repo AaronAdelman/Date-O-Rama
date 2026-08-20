@@ -12,7 +12,7 @@
     {ty:"D", st:{mon:3, d:3, thruD:4, wkd:[2]}, ttls:{"en":"James Ronald Webster Day (in lieu)"}, urls:{"en":"https://www.daysoftheyear.com/days/james-ronald-webster-day/"}, inh:"*BD*", fst:{era:1, y:2010}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:5, d:2, thruD:3, wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/anguilla/labour-day"}, inh:"LabourD (IL)"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},
@@ -28,7 +28,7 @@
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:12, d:19}, ttls:{"en":"National Heroes and Heroines Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-heroes-and-heroines-day/"}, fst:{era:1, y:1967}, nts:{"en":"National Heroes Day"}},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12, d:26}, inh:"Boxing Day"},
+        {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
     ],
     tpls:{
         "Celebration of the Birthday of His Majesty the King":{ty:"D", st:{mon:6, wkd:[2], nth:2}, ttls:{"en":"Celebration of the Birthday of His Majesty the King"}, urls:{"en":"https://www.officeholidays.com/holidays/anguilla/king-charles-birthday"}, inh:"King Charles’ Birthday", nts:{"en":"Sovereignty Day"}},

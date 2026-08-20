@@ -63,7 +63,7 @@
         {ttls:{"en":"Feast of Saint Jack"}, ty:"D", st:{mon:6, d:9}},
         {ttls:{"en":"Feast of Christ the Redeemer","mt":"Kristu Redentur"}, ty:"D", st:{mon:6, d:21}},
         {ttls:{"en":"Feast of Saint Philip"}, ty:"D", st:{mon:6, d:14}},
-        {inh:"CorpusChristi", ty:"D", st:{mon:6, d:14}, locs:{"en":"Għasri"}},
+        {inh:"CorpusXi", ty:"D", st:{mon:6, d:14}, locs:{"en":"Għasri"}},
         {inh:"Sacred Heart", ty:"D", st:{mon:6, d:14}, locs:{"en":"Fontana, Gozo"}},
         {ttls:{"en":"Feast of Our Lady of Lily","mt":"Il-Madonna tal-Ġilju"}, ty:"D", st:{mon:6, d:21}},
         {ttls:{"en":"Feast of Saint Catherine","mt":"Santa Katarina"}, ty:"D", st:{mon:6, d:21}},
@@ -95,7 +95,7 @@
         {ttls:{"en":"Feast of the Sacred Family","mt":"Sagra Familja"}, ty:"D", st:{mon:7, wkd:[1], nth:3}, locs:{"en":"Bidnija"}},
         {ttls:{"en":"Feast of Saint Venera","mt":"Santa Venera"}, ty:"D", st:{mon:7, d:27}},
         {inh:"Our Lady of Mount Carmel", ty:"D", st:{mon:7, d:27}, fst:{era:1, y:1726}, locs:{"en":"Żurrieq"}},
-        {inh:"Christ the King", ty:"D", st:{mon:7, wkd:[1], nth:-1}, locs:{"en":"Paola"}},
+        {inh:"XTheKing", ty:"D", st:{mon:7, wkd:[1], nth:-1}, locs:{"en":"Paola"}},
 
         {ty:"D", st:{mon:8, wkd:[1], nth:1}, ttls:{"en":"Feast of Saint Peter in Chains","mt":"San Pietru fil-Ktajjen"}},
         {ty:"D", st:{mon:8, d:10}, inh:"StLawrence"},
@@ -116,7 +116,7 @@
         {ty:"D", st:{mon:11, d:11}, inh:"StMartinOfTours"},
         {inh:"StCecilia", ty:"D", st:{mon:11, d:22}},
         {ty:"D", st:{mon:11, d:25}, inh:"StCatherineOfAlexandria"},
-        {inh:"Christ the King", ty:"D", st:{mon:11, d:26, thruMon:12, thruD:2, wkd:[1]}},
+        {inh:"XTheKing", ty:"D", st:{mon:11, d:26, thruMon:12, thruD:2, wkd:[1]}},
 
         {ty:"D", st:{mon:12, d:26}, inh:"StStephen"},
         {ty:"D", st:{mon:12, d:28}, inh:"Holy Innocents Day"},

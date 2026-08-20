@@ -12,6 +12,6 @@
         {ty:"D", st:{mon:1, d:1}, inh:"ONYD"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"OGood Fri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEaster Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"OEasterMon"},
     ]
 }

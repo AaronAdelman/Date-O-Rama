@@ -19,7 +19,7 @@
         {ty:"D", st:{mon:8, d:15}, inh:"Assumption"},
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
 
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
 
         {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"MothersD"},
         {ty:"D", st:{mon:12, d:25}, inh:"ChildrensD", fst:{era:1, y:1990}},

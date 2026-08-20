@@ -12,7 +12,7 @@
         {ty:"D", st:{mon:3, d:19}, ttls:{"en":"Guru Hargobind merges back to the Creator"}},
 
         {ty:"D", st:{mon:4, d:14}, ttls:{"en":"The ordination of the Khalsa"}},
-        {ty:"nD", st:{mon:4, d:13, durD: 2}, ttls:{"ar":"فيساكي","as":"বৈশাখী","awa":"बैसाखी","bn":"বৈশাখী","ca":"Vaisakhi","en":"Vaisakhi","es":"Vaisakhi","fa":"وایساخی","fi":"Vaisakhi","fr":"Baisakhi","he":"באיסאקי","hi":"बैसाखी","hy":"Վայսախի","id":"Visakhi","kn":"ಬೈಸಾಖಿ","ks":"وؠساکھی","ml":"വൈശാഖി","mr":"वैशाखी","ms":"Vaisakhi","nb":"Baisaki","ne":"बिसु पर्व","nn":"Baisakhi","or":"ବୈସାଖୀ","pa":"ਵਿਸਾਖੀ","pl":"Baisakhi","pnb":"وساکھی","pt":"Vaisakhi","ru":"Вайсакхи","sa":"वैशाखी पर्व","sd":"ويساکي","sv":"Baisaki","ta":"வைசாக்கி","te":"వైశాఖి","th":"ไวสาขี","ur":"بیساکھی"}, nts:{"en":"Birth of Guru Nanak\nBaisakhi\nMesadi \nBasoa"}, urls: {"en":"https://en.wikipedia.org/wiki/Vaisakhi"}},
+        {ty:"nD", st:{mon:4, d:13, durD: 2}, ttls:{"ar":"فيساكي","as":"বৈশাখী","awa":"बैसाखी","bn":"বৈশাখী","ca":"Vaisakhi","en":"Vaisakhi","es":"Vaisakhi","fa":"وایساخی","fi":"Vaisakhi","fr":"Baisakhi","he":"באיסאקי","hi":"बैसाखी","hy":"Վայսախի","id":"Visakhi","kn":"ಬೈಸಾಖಿ","ks":"وؠساکھی","ml":"വൈശാഖി","mr":"वैशाखी","ms":"Vaisakhi","nb":"Baisaki","ne":"बिसु पर्व","nn":"Baisakhi","or":"ବୈସାଖୀ","pa":"ਵਿਸਾਖੀ","pl":"Baisakhi","pnb":"وساکھی","pt":"Vaisakhi","ru":"Вайсакхи","sa":"वैशाखी पर्व","sd":"ويساکي","sv":"Baisaki","ta":"வைசாக்கி","te":"వైశాఖి","th":"ไวสาขี","ur":"بیساکھی"}, nts:{"en":"Birth of Guru Nanak\nBaisakhi\nMesadi \nBasoa"}, urls:{"en":"https://en.wikipedia.org/wiki/Vaisakhi"}},
 
         {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Angad merges back to the Creator"}},
         {ty:"D", st:{mon:4, d:16}, ttls:{"en":"Guru Amar Das becomes the 3rd Guru"}},
@@ -28,7 +28,7 @@
 
         {ty:"D", st:{mon:6, d:11}, ttls:{"en":"Guru Hargobind becomes the 6th Guru"}},
 
-        {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Martyrdom of Guru Arjan Dev Sahib"}, urls:{"en":"https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, nts: {"en":"Guru Arjan, the 5th Guru, is martyred"}},
+        {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Martyrdom of Guru Arjan Dev Sahib"}, urls:{"en":"https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, nts:{"en":"Guru Arjan, the 5th Guru, is martyred"}},
         {ty:"D", st:{mon:6, d:16}, ttls:{"en":"Foundation Day of the Akaal Takht"}},
 
         {ty:"D", st:{mon:7, d:5}, ttls:{"en":"Birth of Guru Hargobind, the 6th Guru"}},

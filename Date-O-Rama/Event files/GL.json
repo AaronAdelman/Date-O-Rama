@@ -12,7 +12,7 @@
         {ty:"D", st:{misc:"E", offsetD: -3}, inh:"Maundy Thu"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{misc:"E", offsetD: 26}, inh:"General Prayer Day", fst:{era:1, y:1686}},
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},

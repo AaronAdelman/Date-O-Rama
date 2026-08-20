@@ -3,7 +3,7 @@
     "//":"Sudan",
     defLocale:"en",
     cal:"cop",
-    othCals: ["jul"],
+    othCals:["jul"],
     color:{r: 0.85, g: 0.16, b: 0.11},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Sudan"},
     evts:[

@@ -17,7 +17,7 @@
         {ty:"D", st:{mon:3, d:22}, inh:"Nowruz", fst:{era:1, y:2004}, urls:{"en":"https://nationaltoday.com/nevruz-day/"}},
         {ty:"D", st:{mon:3, d:23, thruD:24, wkd:[2]}, inh:"Nowruz (IL)", fst:{era:1, y:2004}, urls:{"en":"https://www.officeholidays.com/holidays/albania/novruz"}},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:9, d:5}, inh:"StTeresaOfCalcutta", urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty:"D", st:{mon:11, d:28}, inh:"IndependenceD", fst:{era:1, y:1912}, urls:{"en":"https://www.daysoftheyear.com/days/albanian-independence-day/"}, nts:{"en":"Albania Flag Day"}},

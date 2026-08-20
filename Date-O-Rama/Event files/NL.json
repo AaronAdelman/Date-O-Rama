@@ -10,7 +10,7 @@
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"Easter Mon"},
+        {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4, d:26, wkd:[7]}, inh:"King’s Day", fst:{era:1, y:2014}},
         {ty:"D", st:{mon:4, d:27, wkd:[2, 3, 4, 5, 6, 7]}, inh:"King’s Day", fst:{era:1, y:2014}},
         {ty:"D", st:{mon:5, d:4}, inh:"NRemembranceD", urls:{"en":"https://www.officeholidays.com/holidays/netherlands/national-remembrance-day"}},
@@ -26,9 +26,9 @@
         {ty:"D", st:{mon:12, d:26}, inh:"StStephen"},
         
         {ty:"D", st:{mon:12, d:5}, ttls:{"en":"Saint Nicholas’s Eve","nl":"Sinterklaasavond"}, mog:"🎅", nts:{"en":"Pakjesavond"}},
-        {ty:"D", st:{misc:"E", offsetD: -49}, inh:"Carnival (day 1)",},
-        {inh:"Carnival (day 2)", ty:"D", st:{misc:"E", offsetD: -48}},
-        {inh:"Carnival (day 3)", ty:"D", st:{misc:"E", offsetD: -47}},
+        {ty:"D", st:{misc:"E", offsetD: -49}, inh:"Carnival(D1)",},
+        {inh:"Carnival(D2)", ty:"D", st:{misc:"E", offsetD: -48}},
+        {inh:"Carnival(D3)", ty:"D", st:{misc:"E", offsetD: -47}},
         
         {ttls:{"en":"Queen’s Day","he":"יום המלכה","nl":"Koninginnedag"}, ty:"D", st:{mon:4, d:30}, mog:"👸", urls:{"en":"https://nationaltoday.com/queens-day/"}},
         {ty:"D", st:{mon:12, d:24}, inh:"XmasE"},

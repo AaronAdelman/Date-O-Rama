@@ -25,7 +25,7 @@
         {ty:"D", st:{mon:12, d:31}, inh:"NYE"},
 
         {ty:"D", st:{misc:"E", offsetD: -7}, inh:"Palm Sun"},
-        {ty:"D", st:{misc:"E", offsetD: -6}, inh:"Holy Mon"},
+        {ty:"D", st:{misc:"E", offsetD: -6}, inh:"HolyMon"},
         {ty:"D", st:{misc:"E", offsetD: -5}, inh:"Holy Tue"},
         {ty:"D", st:{misc:"E", offsetD: -4}, inh:"Holy Wed"},
         {inh:"MothersD", ty:"D", st:{mon:5, d:10}},
