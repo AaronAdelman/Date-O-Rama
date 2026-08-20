@@ -53,7 +53,7 @@
         {ty:"D", st:{misc:"E", offsetD: 39}, inh:"Ascension"},
         {ty:"D", st:{mon:4, d:24}, inh:"ArmenianGenocideRemembranceD", fst:{era:1, y:2015}},
 
-        {ty:"D", st:{mon:6, d:16}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:6, d:16}, inh:"EngineersD"},
         {ty:"D", st:{mon:8, wkd:[1], nth:3}, inh:"ChildrensD", fst:{era:1, y:2013}},
         {ty:"D", st:{mon:5, d:17}, inh:"NavyD"},
         {ty:"D", st:{mon:5, d:29}, inh:"ArmyD"},

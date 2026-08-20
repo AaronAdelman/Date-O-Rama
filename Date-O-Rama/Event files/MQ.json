@@ -25,7 +25,7 @@
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon", urls:{"en":"https://nationaltoday.com/whit-monday-martinique/"}},
         {ty:"D", st:{mon:7, d:21}, inh:"AbolitionD", ttls:{"en":"Schoelcher Day","fr":"Fête Victor Schœlcher"}},
         {ty:"D", st:{misc:"E", offsetD: -48}, inh:"ShroveMon"},
-        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Shrove Tue"},
+        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"ShroveTue"},
         {ty:"D", st:{misc:"E", offsetD: -46}, inh:"AshWed"},
         {ty:"D", st:{misc:"E", offsetD: -31}, inh:"Mid-Lent"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},

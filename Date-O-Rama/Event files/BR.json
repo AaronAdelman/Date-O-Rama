@@ -58,7 +58,7 @@
         {ty:"D", st:{mon:12, d:8}, ttls:{"en":"Feast of Our Lady of Conceição","pt":"Nossa Senhora da Conceição"}},
         {ty:"D", st:{mon:12, d:19}, ttls:{"en":"Emancipation of Paraná"}},
 
-        {ty:"D", st:{mon:12, d:11}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:12, d:11}, inh:"EngineersD"},
         {ty:"D", st:{mon:6, d:11}, inh:"NavyD"},
         {ty:"D", st:{mon:12, d:13}, ttls:{"en":"Sailor’s Day","he":"יום המלח","pt":"Dia do Marinheiro"}},
         {ty:"D", st:{mon:4, d:19}, inh:"ArmyD"},

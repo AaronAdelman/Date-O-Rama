@@ -117,7 +117,7 @@
         {ty:"M", st:{mon:2}, ttls:{"en":"Canned Food Month"}, urls:{"en":"https://www.daysoftheyear.com/days/canned-food-month/"}, mog:"🥫", fst:{era:1, y:1987}, nts:{"en":"Created by the Canned Food Information Council"}},
         {ty:"M", st:{mon:2}, ttls:{"en":"Harley Quinn Month"}, urls:{"en":"https://www.daysoftheyear.com/days/harley-quinn-month/"}, fst:{era:1, y:2015}, nts:{"en":"Created by DC Entertainment"}},
         {ty:"M", st:{mon:2}, ttls:{"en":"Vegan Cuisine Month"}, urls:{"en":"https://www.daysoftheyear.com/days/vegan-cuisine-month/"}, nts:{"en":"International Vegan Cuisine Month\nCreated by Freya Dinshah"}, mog:"🌰🌱🌽"},
-        {ty:"M", st:{mon:3}, inh:"Endometriosis Awareness Month", fst:{era:1, y:1993}, inh:"*MedAw*"},
+        {ty:"M", st:{mon:3}, inh:"EndometriosisAwM", fst:{era:1, y:1993}, inh:"*MedAw*"},
         {ty:"M", st:{mon:3}, ttls:{"en":"Berries and Cherries Month"}, urls:{"en":"https://www.daysoftheyear.com/days/berries-and-cherries-month/"}, mog:"🍓🫐🍒"},
         {ty:"M", st:{mon:3}, ttls:{"en":"Bleeding Disorders Awareness Month"}, urls:{"en":"https://nationaltoday.com/bleeding-disorders-awareness-month/"}, fst:{era:1, y:2016}, inh:"*MedAw*"},
         {ty:"M", st:{mon:3}, ttls:{"en":"Deep Vein Thrombosis (DVT) Awareness Month"}, urls:{"en":"https://www.daysoftheyear.com/days/deep-vein-thrombosis-dvt-awareness-month/"}, inh:"*MedAw*", nts:{"en":"Created by the Coalition to Prevent Deep Vein Thrombosis"}, fst:{era:1, y:2003}},

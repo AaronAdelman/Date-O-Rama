@@ -23,7 +23,7 @@
         {ty:"D", st:{mon:12, d:14}, ttls:{"bn":"শহীদ বুদ্ধিজীবী দিবস","en":"Martyred Intellectuals Day","fr":"Journée des intellectuels martyrs","id":"Hari Martir Intelektual","ki":"Mũthenya wa kũrirkana Andũ Ago"}, inh:"Martyrs’ Day", urls:{"en":"https://www.daysoftheyear.com/days/martyred-intellectuals-day/"}, nts:{"en":"Martyred Intellectuals Memorial Day\nShaheed Buddhijibi Dibos"}},
         {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:5, wkd:[1], nth:2}, inh:"MothersD"},
-        {ty:"D", st:{mon:5, d:7}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:5, d:7}, inh:"EngineersD"},
         {ty:"D", st:{mon:3, d:25}, ttls:{"bn":"জাতীয় গণহত্যা স্মরণ দিবস","en":"Genocide Remembrance Day"}, nts:{"en":"Bengali Genocide Remembrance Day","en":"বাঙালি গণহত্যা স্মরণ দিবস"}, inh:"Martyrs’ Day", fst:{era:1, y:2017}, urls:{"en":"https://en.wikipedia.org/wiki/Bengali_Genocide_Remembrance_Day"}},
         {ty:"D", st:{mon:11, d:7}, inh:"RevolutionD", fst:{era:1, y:1975}},
         {ty:"D", st:{mon:3, d:26}, inh:"NavyD"},

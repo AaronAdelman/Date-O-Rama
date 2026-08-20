@@ -64,7 +64,7 @@
         {ty:"D", st:{mon:3, d:8}, inh:"MothersD"},
         {ty:"D", st:{mon:4, d:12}, ttls:{"en":"Cosmonautics Day","he":"יום הקוסמונאוטיקה","ru":"День Космонавтики"}, urls:{"en":"https://nationaltoday.com/cosmonautics-day/"}, mog:"🚀", fst:{era:1, y:1962}, nts:{"en":"Russian Cosmonaut Day\nCosmonaut Day"}},
         {ty:"D", st:{mon:4, d:21}, ttls:{"en":"Local Self-Government Day","ru":"День местного самоуправления"}},
-        {ty:"D", st:{mon:4, d:25}, inh:"East Meets West Day", fst:{era:1, y:1945}},
+        {ty:"D", st:{mon:4, d:25}, inh:"EMeetsWD", fst:{era:1, y:1945}},
         {ty:"D", st:{mon:4, d:26}, ttls:{"en":"Memorial Day for Those Lost in Radiation Accidents and Catastrophes","ru":"День памяти погибших в радиационных авариях и катастрофах"}},
         {ty:"D", st:{mon:4, d:27}, ttls:{"en":"Day of Russian Parliamentarism","ru":"День российского парламентаризма"}},
         {ty:"D", st:{mon:4, d:30}, ttls:{"en":"Russian State Fire Service Day"}},

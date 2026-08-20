@@ -41,7 +41,7 @@
         {ty:"D", st:{misc:"E", offsetD: -48}, inh:"Carnival", ttls:{"en":"Monday of Carnival"}},
         {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Carnival", ttls:{"en":"Tuesday of Carnival"}},
 
-       {ty:"D", st:{mon:5, d:29}, inh:"Engineer’s Day"},
+       {ty:"D", st:{mon:5, d:29}, inh:"EngineersD"},
        {ty:"D", st:{mon:4, wkd:[7], nth:-1}, inh:"ChildrensD", fst:{era:1, y:2001}},
        {ty:"D", st:{mon:7, d:24}, inh:"NavyD"},
        {ty:"D", st:{mon:4, d:26}, urls:{"en":"https://nationaltoday.com/secretaries-day-colombia/"}, ttls:{"en":"Secretaries’ Day"}},

@@ -9,7 +9,7 @@
     evts:[
         {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
         {ty:"D", st:{misc:"E", offsetD: -48}, urls:{"en":"https://www.officeholidays.com/holidays/guadeloupe/carnival-monday"}, inh:"CarnivalMon"},
-        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Shrove Tue", urls:{"en":"https://www.officeholidays.com/holidays/guadeloupe/carnival-tuesday"}},
+        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"ShroveTue", urls:{"en":"https://www.officeholidays.com/holidays/guadeloupe/carnival-tuesday"}},
         {ty:"D", st:{misc:"E", offsetD: -46}, inh:"AshWed"},
         {ty:"D", st:{misc:"E", offsetD: -31}, inh:"Mid-Lent", urls:{"en":"https://www.officeholidays.com/holidays/guadeloupe/mid-lent"}},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},

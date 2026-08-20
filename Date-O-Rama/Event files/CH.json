@@ -44,7 +44,7 @@
         {inh:"Carnival", ty:"D", st:{misc:"E", offsetD: -55}, locs:{"en":"Schwyz"}},
         {ty:"D", st:{misc:"E", offsetD: -52}, inh:"Fat Thu"},
         {ty:"D", st:{misc:"E", offsetD: -48}, inh:"ShroveMon"},
-        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Shrove Tue"},
+        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"ShroveTue"},
         {ty:"D", st:{misc:"E", offsetD: -46}, inh:"AshWed"},
         {ttls:{"en":"Lent (day 3)"}, ty:"D", st:{misc:"E", offsetD: -44}},
         {ttls:{"en":"Lent (day 5)"}, ty:"D", st:{misc:"E", offsetD: -41}},
@@ -53,7 +53,7 @@
         {ty:"D", st:{mon:10, d:2}, ttls:{"en":"Feast of Saint Leodegar"}, nts:{"en":"Schutzengelfest"}},
         {ty:"D", st:{mon:12, d:12}, ttls:{"en":"L’Escalade"}, nts:{"en":"Fête de l’Escalade"}, urls:{"en":"https://en.wikipedia.org/wiki/L%27Escalade"}},
 
-        {ty:"D", st:{mon:3, d:4}, inh:"Engineer’s Day", fst:{era:1, y:2018}},
+        {ty:"D", st:{mon:3, d:4}, inh:"EngineersD", fst:{era:1, y:2018}},
         {ty:"D", st:{mon:11, d:20}, inh:"ChildrensD", fst:{era:1, y:1925}},
         {ty:"D", st:{mon:11, d:11}, inh:"Start of Fasching", fst:{era:1, y:1234}},
         {ty:"D", st:{mon:9, d:28}, inh:"NCoffeeD"},

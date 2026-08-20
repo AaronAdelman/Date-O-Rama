@@ -23,7 +23,7 @@
 
         {ty:"D", st:{mon:5, d:27}, ttls:{"en":"Freedom and Constitution Day","tr":"Mayıs Hürriyet ve Anayasa Bayramı"}, urls:{"en":"https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"}, fst:{era:1, y:1963}},
         {ty:"D", st:{mon:7, d:24}, ttls:{"tr":"İyd-i Millî"}, urls:{"en":"https://en.wikipedia.org/wiki/İyd-i_Millî"}, fst:{era:1, y:1909}},
-        {ty:"D", st:{mon:9, d:19}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:9, d:19}, inh:"EngineersD"},
         {inh:"Martyrs’ Day", ty:"D", st:{mon:3, d:18}},
         {ty:"D", st:{mon:6, d:1}, inh:"AirForceD", fst:{era:1, y:1911}},
         {ty:"D", st:{mon:9, d:27}, inh:"NavyD"},

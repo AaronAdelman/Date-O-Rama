@@ -18,7 +18,7 @@
         {ty:"D", st:{mon:5, d:5}, inh:"Indian Arrival Day", urls:{"en":"https://nationaltoday.com/indian-arrival-day-guyana/"}, fst:{era:1, y:1838}},
         {ty:"D", st:{mon:5, d:26}, inh:"IndependenceD", fst:{era:1, y:1966}, urls:{"en":"https://nationaltoday.com/independence-day-guyana/"}},
         {ty:"D", st:{mon:7, wkd:[2], nth:1}, inh:"CARICOMD", urls:{"en":"https://www.officeholidays.com/holidays/guyana/caricom-day"}},
-        {inh:"Emancipation Day", ty:"D", st:{mon:8, d:1}, urls:{"en":"https://nationaltoday.com/emancipation-day-guyana/"}},
+        {inh:"EmancipationD", ty:"D", st:{mon:8, d:1}, urls:{"en":"https://nationaltoday.com/emancipation-day-guyana/"}},
 
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},

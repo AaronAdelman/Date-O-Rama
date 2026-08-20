@@ -39,7 +39,7 @@
         {ty:"D", st:{mon:12, d:26}, inh:"BoxingD"},
 
         {ty:"D", st:{mon:8, d:15}, inh:"MothersD", locs:{"en":"Antwerp"}},
-        {ty:"D", st:{mon:3, d:20}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:3, d:20}, inh:"EngineersD"},
         {ty:"D", st:{mon:11, d:11}, inh:"Start of Fasching", fst:{era:1, y:1234}},
         {ty:"D", st:{mon:9, d:29}, inh:"NCoffeeD"},
         {ty:"D", st:{mon:1, d:27}, inh:"Holocaust Memorial Day", fst:{era:1, y:2006}},

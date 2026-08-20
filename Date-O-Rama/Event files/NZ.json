@@ -101,7 +101,7 @@
         {ty:"M", st:{mon:11}, inh:"Movember", fst:{era:1, y:2004}},
         {ty:"M", st:{mon:2}, ttls:{"en":"Ovarian Cancer Awareness Month"}, inh:"*MedAw*"},
         {ty:"M", st:{mon:2}, urls:{"en":"https://nationaltoday.com/bike-to-work-month/"}, ttls:{"en":"Bike to Work Month"}, mog:"🚲"},
-        {ty:"M", st:{mon:3}, inh:"Endometriosis Awareness Month", fst:{era:1, y:1993}},
+        {ty:"M", st:{mon:3}, inh:"EndometriosisAwM", fst:{era:1, y:1993}},
         {ty:"M", st:{mon:3}, ttls:{"en":"NZ Book Month"}, urls:{"en":"https://nationaltoday.com/nz-book-month/"}, fst:{era:1, y:2006}, mog:"📚"},
         {ty:"M", ttls:{"en":"Gynaecological Cancer Awareness Month"}, st:{mon:9}, inh:"*MedAw*"},
         {ty:"M", st:{mon:6}, ttls:{"en":"Migraine Awareness Month"}, inh:"*MedAw*"},

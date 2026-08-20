@@ -58,7 +58,7 @@
 
         {ty:"D", st:{mon:7, d:12}, ttls:{"en":"Lawyer’s Day"}, urls:{"en":"https://nationaltoday.com/mexico-lawyers-day/"}, fst:{era:1, y:1960}, mog:"👨‍💼👩‍💼"},
         {ty:"D", st:{mon:3, d:12}, ttls:{"en":"Aztec New Year","es":"Año Nuevo Azteca","hy":"Ացտեկական նոր տարի","nah":"Yancuic Xīhuitl","ru":"Ацтекский новый год","uz":"Atstek Yangi yili"}, urls:{"en":"https://nationaltoday.com/aztec-new-year/"}, nts:{"es":"Año Nuevo Mexicano"}},
-        {ty:"D", st:{mon:7, d:1}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:7, d:1}, inh:"EngineersD"},
         {ty:"D", st:{mon:2, d:14}, inh:"FriendshipD"},
         {ty:"D", st:{mon:10, d:31}, ttls:{"es":"Día de las Brujas"}},
         {ty:"D", st:{mon:11, d:1}, ttls:{"en":"Day of the Little Angels","es":"Día de los Inocentes"}},

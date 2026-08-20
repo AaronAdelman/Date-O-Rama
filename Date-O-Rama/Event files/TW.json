@@ -38,7 +38,7 @@
         {ty:"D", st:{mon:11, d:12}, ttls:{"en":"Sun Yat-sen’s Birthday","zh":"國父誕辰紀念日"}, inh:"*BD*"},
         {ty:"D", st:{mon:12, d:25}, inh:"ConstitutionD"},
 
-        {ty:"D", st:{mon:6, d:6}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:6, d:6}, inh:"EngineersD"},
         {ty:"D", st:{mon:3, d:8}, inh:"IWD"},
         {ty:"D", st:{mon:8, d:14}, inh:"AirForceD"},
         {ty:"D", st:{mon:9, d:2}, inh:"NavyD"},

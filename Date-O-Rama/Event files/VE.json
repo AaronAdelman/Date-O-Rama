@@ -42,7 +42,7 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12, d:31}, inh:"NYE"},
 
-        {ty:"D", st:{mon:10, d:28}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:10, d:28}, inh:"EngineersD"},
         {ty:"D", st:{mon:6, d:24}, inh:"ArmyD"},
         {ty:"D", st:{mon:2, d:14}, inh:"FriendshipD"},
         {ty:"D", st:{mon:7, d:14}, inh:"FriendshipD"},

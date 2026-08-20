@@ -23,6 +23,6 @@
         {ty:"D", st:{mon:3, d:20}, inh:"IFrancophonieD", fst:{era:1, y:1988}},
         {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:5, wkd:[1], nth:-1}, inh:"MothersD"},
-        {ty:"D", st:{mon:9, d:13}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:9, d:13}, inh:"EngineersD"},
     ]
 }

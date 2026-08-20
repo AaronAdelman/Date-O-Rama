@@ -44,7 +44,7 @@
         {inh:"WRefugee Day", ty:"D", st:{mon:6, d:20}, fst:{era:1, y:2001}},
         {ttls:{"en":"Remembrance of 20 July"}, ty:"D", st:{mon:7, d:20}},
         {ty:"D", st:{misc:"E", offsetD: -48}, inh:"ShroveMon", urls:{"en":"https://en.wikipedia.org/wiki/Rosenmontag"}},
-        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"Shrove Tue"},
+        {ty:"D", st:{misc:"E", offsetD: -47}, inh:"ShroveTue"},
 
         {ty:"D", st:{mon:4, d:1}, inh:"AprFoolsD"},
         {ty:"M", st:{mon:2}, inh:"BlackHistoryM", fst:{era:1, y:1990}},
@@ -56,10 +56,10 @@
         {ty:"D", st:{mon:10, wkd:[1], nth:2}, inh:"Grandmothers’ Day", fst:{era:1, y:2010}},
         {ty:"D", st:{mon:11, d:19}, ttls:{"en":"National Soup Day"}},
         {ty:"D", st:{mon:2, d:10}, ttls:{"en":"Children’s Hospice Day"}, urls:{"en":"https://nationaltoday.com/childrens-hospice-day/"}, mog:"👦👧"},
-        {ty:"D", st:{mon:4, d:25}, inh:"East Meets West Day", fst:{era:1, y:1945}},
-        {ty:"D", st:{mon:6, d:26}, inh:"NRat Catcher’s Day"},
+        {ty:"D", st:{mon:4, d:25}, inh:"EMeetsWD", fst:{era:1, y:1945}},
+        {ty:"D", st:{mon:6, d:26}, inh:"NRatCatchersD"},
         {ty:"D", st:{mon:6, d:3}, inh:"European Bicycle Day", fst:{era:1, y:2018}},
-        {ty:"D", st:{mon:7, d:22}, inh:"NRat Catcher’s Day"},
+        {ty:"D", st:{mon:7, d:22}, inh:"NRatCatchersD"},
         {ty:"D", st:{mon:9, wkd:[7], nth:2}, ttls:{"en":"German Language Day","de":"Tag der deutschen Sprache"}, urls:{"en":"https://www.daysoftheyear.com/days/german-language-day/"}, fst:{era:1, y:2001}, nts:{"en":"Created by the German Language Association (VDS)"}},
         {ty:"D", st:{mon:9, wkd:[6], nth:-1}, ttls:{"en":"German Butterbrot Day","de":"Tag des Deutschen Butterbrotes"}, urls:{"en":"https://www.daysoftheyear.com/days/german-butterbrot-day/"}, nts:{"en":"German Sandwich Day"}, fst:{era:1, y:1999}, nts:{"en":"Created by the Central Marketing Agency of the German Agricultural Industry"}},
         {ty:"D", ttls:{"en":"Day of the Homeland"}, st:{mon:9, wkd:[1], nth:2}, urls:{"en":"https://nationaltoday.com/day-of-the-homeland/"}, fst:{era:1, y:1949}, nts:{"en":"Created by Paul Wagner"}},
@@ -68,6 +68,6 @@
         {ty:"M", st:{mon:5}, inh:"LGBTQ History Month", fst:{era:1, y:2014}},
     ],
     tpls:{
-        "NRat Catcher’s Day":{ty:"D", st:{mon:7, d:22}, ttls:{"en":"National Rat Catcher’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-rat-catchers-day/"}, nts:{"en":"Ratcatcher’s Day"}, mog:"🪈"},
+        "NRatCatchersD":{ty:"D", st:{mon:7, d:22}, ttls:{"en":"National Rat Catcher’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-rat-catchers-day/"}, nts:{"en":"Ratcatcher’s Day"}, mog:"🪈"},
     }
 }

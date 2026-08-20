@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:1, d:2, wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/panama/international-new-years-day"}, inh:"NYD (IL)"},
         {ty:"D", st:{mon:1, d:9}, inh:"Martyrs’ Day", urls:{"en":"https://nationaltoday.com/panamas-martyrs-day/"}},
         {ty:"D", st:{misc:"E", offsetD: -48}, urls:{"en":"https://www.officeholidays.com/holidays/panama/carnival-monday"}, inh:"CarnivalMon"},
-        {ty:"D", st:{misc:"E", offsetD: -47}, urls:{"en":"https://www.officeholidays.com/holidays/panama/carnival-tuesday"}, inh:"Shrove Tue"},
+        {ty:"D", st:{misc:"E", offsetD: -47}, urls:{"en":"https://www.officeholidays.com/holidays/panama/carnival-tuesday"}, inh:"ShroveTue"},
         {ty:"D", st:{misc:"E", offsetD: -46}, inh:"AshWed"},
         {ty:"D", st:{misc:"E", offsetD: -2}, inh:"GoodFri"},
         {ty:"D", st:{mon:5, d:1}, urls:{"en":"https://www.officeholidays.com/holidays/panama/labour-day"}, inh:"LabourD"},
@@ -28,7 +28,7 @@
         {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
         
         {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD"},
-        {ty:"D", st:{mon:1, d:26}, inh:"Engineer’s Day"},
+        {ty:"D", st:{mon:1, d:26}, inh:"EngineersD"},
         {inh:"ChildrensD", ty:"D", st:{mon:7, wkd:[1], nth:3}},
         {ty:"D", st:{mon:8, d:15}, ttls:{"en":"Foundation of Old Panama City"}, urls:{"en":"https://nationaltoday.com/foundation-of-old-panama-city/"}, fst:{era:1, y:1519}, mog:"🏙️"},
         {ty:"D", st:{mon:11, d:10}, urls:{"en":"https://nationaltoday.com/day-of-the-primer-grito-de-independencia/"}, ttls:{"en":"Day of the “Primer Grito de Independencia”"}},

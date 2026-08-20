@@ -15,7 +15,7 @@
         {ty:"D", st:{misc:"E", offsetD: -1}, inh:"Holy Sat", urls:{"en":"https://nationaltoday.com/easter-saturday/"}},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{misc:"E", offsetD: 1}, inh:"EasterMon"},
-        {ty:"D", st:{misc:"E", offsetD: 2}, inh:"Easter Tue"},
+        {ty:"D", st:{misc:"E", offsetD: 2}, inh:"EasterTue"},
         {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
         {ty:"D", st:{misc:"E", offsetD: 49}, inh:"Pentecost"},
         {ty:"D", st:{misc:"E", offsetD: 50}, inh:"WhitMon"},
