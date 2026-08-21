@@ -6,16 +6,16 @@
     cal:"gre",
     color:{r: 0.30, g: 0.55, b: 0.17},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Comoros"},
-    fst:{era:1, y:1975},
+    fst:{era:1,y:1975},
     evts:[
-        {ty:"D", st:  {mon:1, d:1}, inh:"NYD"},
-        {ttls:{"en":"Cheikh Al Maarouf Day"}, ty:"D", st:  {mon:3, d:18}},
-        {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:7, d:6}, inh:"ND", urls:{"en":"https://nationaltoday.com/comoros-national-day/"}, fst:{era:1, y:1975}},
+        {ty:"D", st:  {mon:1,d:1}, inh:"NYD"},
+        {ttls:{"en":"Cheikh Al Maarouf Day"}, ty:"D", st:  {mon:3,d:18}},
+        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
+        {ty:"D", st:{mon:7,d:6}, inh:"ND", urls:{"en":"https://nationaltoday.com/comoros-national-day/"}, fst:{era:1,y:1975}},
         
-        {ttls:{"en":"Maore Day"}, ty:"D", st:  {mon:11, d:12}, fst:{era:1, y:2006}},
+        {ttls:{"en":"Maore Day"}, ty:"D", st:  {mon:11,d:12}, fst:{era:1,y:2006}},
 
-        {ty:"D", st:{mon:6, wkd:[1], nth:3}, inh:"FathersD", fst:{era:1, y:1910}},
-        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
+        {ty:"D", st:{mon:6,wkd:[1],nth:3}, inh:"FathersD", fst:{era:1,y:1910}},
+        {ty:"D", st:{mon:3,d:21}, inh:"MothersD"},
    ]
 }

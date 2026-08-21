@@ -6,11 +6,11 @@
     color:{r: 0.06, g: 0.28, b: 0.69},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Ethiopia"},
     evts:[
-        {ty:"D", st:{mon:12, d:25}, inh:"OXmas"},
-        {ty:"D", st:{mon:1, d:6}, inh:"Epiphany"},
-        {ty:"D", st:{misc:"E", offsetD: -2}, inh:"OGood Fri"},
+        {ty:"D", st:{mon:12,d:25}, inh:"OXmas"},
+        {ty:"D", st:{mon:1,d:6}, inh:"Epiphany"},
+        {ty:"D", st:{misc:"E",offsetD:-2}, inh:"OGood Fri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{mon:9, d:14}, inh:"Exaltation of the Holy Cross"},
+        {ty:"D", st:{mon:9,d:14}, inh:"HolyCross"},
 
     ]
 }

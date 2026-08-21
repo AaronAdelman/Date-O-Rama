@@ -3,12 +3,12 @@
     defLocale:"en",
     cal:"gre",
     color:{r: 1.00, g: 0.75, b: 0.80},
-    fst:{era:1, y:1959},
+    fst:{era:1,y:1959},
     evts:[
-        {ty:"D", st:{mon:3, d:9}, ttls:{"en":"National Barbie Day","he":"יום הולדת לברבי"}, urls:{"en":"https://www.daysoftheyear.com/days/barbie-day/"}, fst:{era:1, y:1959}},
-        {ty:"D", st:{mon:3, d:13}, ttls:{"en":"Ken Day","he":"יום הולדת לקן"}, urls:{"en":"https://www.daysoftheyear.com/days/ken-day/"}, fst:{era:1, y:1961}, inh:"*BD*", nts:{"en":"Created by Mattel"}},
-        {ty:"D", st:{mon:9, d:6}, ttls:{"en":"Barbie Doll Day"}, urls:{"en":"https://www.checkiday.com/491fd128b27e98b8322312b53cd57791/barbie-doll-day"}, fst:{era:1, y:2011}},
-        {ty:"D", st:{mon:12, d:16}, inh:"Barbie&BarneyBacklashD"},
-        {ty:"D", st:{mon:7, d:27}, ttls:{"en":"Barbie-in-a-Blender Day"}, urls:{"en":"https://nationaltoday.com/barbie-in-a-blender-day/"}, fst:{era:1, y:1997}, nts:{"en":"Created by Students For a Free Culture"}},
+        {ty:"D", st:{mon:3,d:9}, ttls:{"en":"National Barbie Day","he":"יום הולדת לברבי"}, urls:{"en":"https://www.daysoftheyear.com/days/barbie-day/"}, fst:{era:1,y:1959}},
+        {ty:"D", st:{mon:3,d:13}, ttls:{"en":"Ken Day","he":"יום הולדת לקן"}, urls:{"en":"https://www.daysoftheyear.com/days/ken-day/"}, fst:{era:1,y:1961}, inh:"*BD*", nts:{"en":"Created by Mattel"}},
+        {ty:"D", st:{mon:9,d:6}, ttls:{"en":"Barbie Doll Day"}, urls:{"en":"https://www.checkiday.com/491fd128b27e98b8322312b53cd57791/barbie-doll-day"}, fst:{era:1,y:2011}},
+        {ty:"D", st:{mon:12,d:16}, inh:"Barbie&BarneyBacklashD"},
+        {ty:"D", st:{mon:7,d:27}, ttls:{"en":"Barbie-in-a-Blender Day"}, urls:{"en":"https://nationaltoday.com/barbie-in-a-blender-day/"}, fst:{era:1,y:1997}, nts:{"en":"Created by Students For a Free Culture"}},
     ]
 }

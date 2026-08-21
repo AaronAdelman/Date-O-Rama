@@ -5,21 +5,21 @@
     defLocale:"en",
     cal:"gre",
     color:{r: 0.50, g: 0.50, b: 0.50},
-    fst:{era:1, y:1988},
+    fst:{era:1,y:1988},
     evts:[
-        {ty:"D", st:{mon:1, d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:5, d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:11, d:15}, inh:"IndependenceD", fst:{era:1, y:1988}},
-        {ty:"D", st:{mon:12, d:25}, inh:"Xmas"},
+        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
+        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
+        {ty:"D", st:{mon:11,d:15}, inh:"IndependenceD", fst:{era:1,y:1988}},
+        {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         
-        {ty:"D", st:{mon:5, d:15}, inh:"NakbaD", fst:{era:1, y:1998}},
-        {ty:"D", st:{mon:6, d:5}, ttls:{"ar":"يوم النكسة","de":"Naksa-Tag","en":"Naksa Day","fa":"روز نکسه","fr":"Jour de la Naksa","he":"יום הנכסה","id":"Hari Naksa","ja":"ナクサの日","ko":"좌절의 날","ro":"Ziua Naksa"}},
-        {ttls:{"ar":"يوم الأرض الفلسطيني","ca":"Dia de la Terra","de":"Tag des Bodens","en":"Land Day","es":"Día de la Tierra","eu":"Lurraren Eguna","fa":"روز سرزمین","fr":"Journée de la Terre","he":"יום האדמה","hy":"Հողի օր","id":"Hari Tanah","it":"Giorno della Terra","ja":"土地の日","ml":"ഭൂമിദിനം","nl":"Dag van het Land","pt":"Dia da Terra Palestina","ro":"Ziua Pământului Palestinian","ru":"День земли","sd":"ڌرتيءَ جو ڏينهن","si":"භූමි දිනය","tr":"Toprak Günü","zh":"土地日"}, ty:"D", st:{mon:3, d:30}},
+        {ty:"D", st:{mon:5,d:15}, inh:"NakbaD", fst:{era:1,y:1998}},
+        {ty:"D", st:{mon:6,d:5}, ttls:{"ar":"يوم النكسة","de":"Naksa-Tag","en":"Naksa Day","fa":"روز نکسه","fr":"Jour de la Naksa","he":"יום הנכסה","id":"Hari Naksa","ja":"ナクサの日","ko":"좌절의 날","ro":"Ziua Naksa"}},
+        {ttls:{"ar":"يوم الأرض الفلسطيني","ca":"Dia de la Terra","de":"Tag des Bodens","en":"Land Day","es":"Día de la Tierra","eu":"Lurraren Eguna","fa":"روز سرزمین","fr":"Journée de la Terre","he":"יום האדמה","hy":"Հողի օր","id":"Hari Tanah","it":"Giorno della Terra","ja":"土地の日","ml":"ഭൂമിദിനം","nl":"Dag van het Land","pt":"Dia da Terra Palestina","ro":"Ziua Pământului Palestinian","ru":"День земли","sd":"ڌرتيءَ جو ڏينهن","si":"භූමි දිනය","tr":"Toprak Günü","zh":"土地日"}, ty:"D", st:{mon:3,d:30}},
         
-        {ty:"D", st:{mon:12, d:17}, inh:"StBarbara"},
-        {ty:"D", st:{mon:3, d:21}, inh:"MothersD"},
-        {ty:"D", st:{mon:4, d:5}, inh:"ChildrensD", fst:{era:1, y:1995}},
+        {ty:"D", st:{mon:12,d:17}, inh:"StBarbara"},
+        {ty:"D", st:{mon:3,d:21}, inh:"MothersD"},
+        {ty:"D", st:{mon:4,d:5}, inh:"ChildrensD", fst:{era:1,y:1995}},
         
-        {ty:"D", st:{mon:4, d:17}, ttls:{"en":"Palestinian Prisoner’s Day"}, fst:{era:1, y:2022}},
+        {ty:"D", st:{mon:4,d:17}, ttls:{"en":"Palestinian Prisoner’s Day"}, fst:{era:1,y:2022}},
    ]
 }

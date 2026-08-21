@@ -6,6 +6,6 @@
     color:{r: 0.85, g: 0.16, b: 0.11},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bahrain"},
     evts:[
-         {ty:"D", st:{mon:7, d:13}, inh:"FathersD"},
+         {ty:"D", st:{mon:7,d:13}, inh:"FathersD"},
     ]
 }

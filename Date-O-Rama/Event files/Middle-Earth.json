@@ -3,15 +3,15 @@
     defLocale:"en",
     cal:"gre*",
     color:{r: 0.3, g: 1.0, b: 0.3},
-    fst:{era:1, y:1892},
+    fst:{era:1,y:1892},
     evts:[
-        {ty:"D", st:{mon:1, d:3}, ttls:{"en":"J.R.R. Tolkien Day"}, nts:{"en":"JRR Tolkien Day"}, urls:{"en":"https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inh:"*BD*", fst:{era:1, y:1892}},
-        {ty:"D", st:{mon:3, d:25}, ttls:{"en":"Tolkien Reading Day"}, urls:{"en":"https://www.daysoftheyear.com/days/tolkien-reading-day/"}, fst:{era:1, y:2003}, mog:"📚", nts:{"en":"Created by the Tolkien Society"}},
-        {ty:"D", st:{mon:3, d:25}, ttls:{"en":"Gondorian New Year"}, nts:{"en":"From The Lord of the Rings"}},
-        {ty:"D", st:{mon:10, d:19}, ttls:{"en":"Durin’s Day"}, nts:{"en":"From The Lord of the Rings"}},
+        {ty:"D", st:{mon:1,d:3}, ttls:{"en":"J.R.R. Tolkien Day"}, nts:{"en":"JRR Tolkien Day"}, urls:{"en":"https://www.daysoftheyear.com/days/jrr-tolkien-day/"}, inh:"*BD*", fst:{era:1,y:1892}},
+        {ty:"D", st:{mon:3,d:25}, ttls:{"en":"Tolkien Reading Day"}, urls:{"en":"https://www.daysoftheyear.com/days/tolkien-reading-day/"}, fst:{era:1,y:2003}, mog:"📚", nts:{"en":"Created by the Tolkien Society"}},
+        {ty:"D", st:{mon:3,d:25}, ttls:{"en":"Gondorian New Year"}, nts:{"en":"From The Lord of the Rings"}},
+        {ty:"D", st:{mon:10,d:19}, ttls:{"en":"Durin’s Day"}, nts:{"en":"From The Lord of the Rings"}},
 
-        {ty:"nD", st:{mon:9, d:16, thruD:22, wkd:[1], durD: 7}, ttls:{"en":"Tolkien Week"}, urls:{"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, nts:{"en":"Created by the American Tolkien Society"}, fst:{era:1, y:1978}, subEvts:[
-            {ty:"D", st:{mon:9, d:22}, ttls:{"cs":"Hobbit Day","de":"Hobbit Day","en":"Hobbit Day","fr":"Journée du Hobbit","ja":"ホビットデー","ko":"호빗 데이","sc":"Die de su Hobbit","zh":"霍比特节","he":"יום ההוביט"}, urls:{"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, nts:{"en":"National Hobbit Day\nCreated by the American Tolkien Society"}, fst:{era:1, y:1978}},
+        {ty:"nD", st:{mon:9,d:16,thruD:22,wkd:[1], durD: 7}, ttls:{"en":"Tolkien Week"}, urls:{"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, nts:{"en":"Created by the American Tolkien Society"}, fst:{era:1,y:1978}, subEvts:[
+            {ty:"D", st:{mon:9,d:22}, ttls:{"cs":"Hobbit Day","de":"Hobbit Day","en":"Hobbit Day","fr":"Journée du Hobbit","ja":"ホビットデー","ko":"호빗 데이","sc":"Die de su Hobbit","zh":"霍比特节","he":"יום ההוביט"}, urls:{"en":"https://www.americantolkiensociety.org/hobbit_day_and_tolkien_week.htm"}, nts:{"en":"National Hobbit Day\nCreated by the American Tolkien Society"}, fst:{era:1,y:1978}},
         ]},
     ]
 }
