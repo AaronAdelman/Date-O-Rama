@@ -11,7 +11,7 @@
         {ty:"D", st:{mon:5,d:22}, ttls:{"en":"The Sisko Day"}, urls:{"en":"https://www.virtualtrekcon.com/thesiskoday"}, fst:{era:1,y:2023}},
         {ty:"D", st:{mon:6,d:16}, ttls:{"en":"Captain Picard Day"}, urls:{"en":"https://memory-alpha.fandom.com/wiki/Captain_Picard_Day"}, fst:{era:1,y:1994}, mog:"👨‍🦲", nts:{"en":"From Star Trek:  The Next Generation."}},
         {ty:"D", st:{mon:9,d:7}, ttls:{"en":"Seven of Nine Day"}, fst:{era:1,y:2020}, nts:{"en":"Jeri Ryan Day\nSome people think this observance falls of July 9."}},
-        {ty:"D", st:{mon:9,d:8}, ttls:{"en":"Star Trek Day","es":"Día de Star Trek","sr":"Дан Звезданих стаза","uk":"День «Зоряного шляху»"}, urls:{"en":"https://www.daysoftheyear.com/days/star-trek-day/"}, fst:{era:1,y:2020}, mog:"🚀", nts:{"en":"Trek Day\nStar Trek Anniversary\nCreated by Gene Roddenberry"}},
+        {ty:"D", st:{mon:9,d:8}, ttls:{"ca":"Dia de Star Trek","en":"Star Trek Day","es":"Día de Star Trek","sr":"Дан Звезданих стаза","uk":"День «Зоряного шляху»"}, urls:{"en":"https://www.daysoftheyear.com/days/star-trek-day/"}, fst:{era:1,y:2020}, mog:"🚀", nts:{"en":"Trek Day\nStar Trek Anniversary\nCreated by Gene Roddenberry"}},
         {ty:"D", st:{mon:3,d:26}, ttls:{"en":"Live Long & Prosper Day"}, nts:{"en":"LLAP Day\nLive Long and Prosper Day\nLeonard Nimoy’s Birthday\nCreated by Matt McCarthy"}, urls:{"en":"https://www.llapday.com/"}, mog:"🖖", fst:{era:1,y:2017}, inh:"*BD*"},
         {ty:"D", st:{mon:10,d:11}, ttls:{"en":"Federation Day"}, nts:{"en":"From Star Trek"}},
         {ty:"D", st:{mon:10,d:26}, ttls:{"en":"Prixin"}, nts:{"en":"From Star Trek"}, urls:{"en":"https://memory-alpha.fandom.com/wiki/Prixin"}},

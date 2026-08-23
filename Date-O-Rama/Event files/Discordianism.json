@@ -142,7 +142,7 @@
         {ty:"D", st:{mon:9,d:5}, inh:"Eris’s Birthday", urls:{"en":"https://www.fsofcabal.com/holydays/04-29-eriss-birthday"}},
         {ty:"D", st:{mon:9,d:9}, ttls:{"en":"Cat Dancing & Foot Fetish Day"}, nts:{"en":"Pussyfoot Day\nWhollyday\n33 Bureaucracy"}, inh:"EDH"},
         {ty:"D", st:{mon:9,d:9}, inh:"Eris’s Birthday", urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
-        {ty:"D", st:{mon:9,d:11}, inh:"Teddy Bear Day", nts:{"en":"Whollyday\n35 Bureaucracy"}},
+        {ty:"D", st:{mon:9,d:11}, inh:"TeddyBearD", nts:{"en":"Whollyday\n35 Bureaucracy"}},
         {ty:"D", st:{mon:9,d:13}, ttls:{"en":"Mass of Planet Eris/Eristotle"}, nts:{"en":"Whollyday\n37 Bureaucracy"}, inh:"EDH"},
         {ty:"D", st:{mon:9,d:15}, ttls:{"en":"Saint Mammes Day"}, nts:{"en":"Whollyday\n39 Bureaucracy"}, urls:{"en":"https://www.fsofcabal.com/holydays/04-39-saint-mammes-day"}},
         {ty:"D", st:{mon:9,d:17}, inh:"EmperorNortonsD", urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},

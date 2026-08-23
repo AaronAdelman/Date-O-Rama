@@ -391,7 +391,7 @@
         {ty:"M", st:{mon:9}, ttls:{"en":"Pain Awareness Month"}, urls:{"en":"https://uspainfoundation.org/painawarenessmonth/"}, fst:{era:1,y:2001}, inh:"*MedAw*", nts:{"en":"Created by Partners for Understanding Pain"}},
         {ty:"M", st:{mon:9}, ttls:{"en":"Responsible Dog Ownership Month"}, urls:{"en":"https://nationaltoday.com/responsible-dog-ownership-month/"}},
         {ty:"nD", st:{mon:7,d:25}, end:{mon:8,d:31}, ttls:{"en":"National Fishing Month"}, urls:{"en":"https://www.daysoftheyear.com/days/fishing-month/"}, mog:"🎣"},
-        {ty:"nD", st:{mon:9,d:12}, end:{mon:10,d:12}, ttls:{"en":"National Drive Electric Month"}, urls:{"en":"https://driveelectricmonth.org/"}, fst:{era:1,y:2025}, mog:"⚡", nts:{"en":"Created by Plug In America"}},
+        {ty:"nD", st:{mon:9,d:11}, end:{mon:10,d:12}, ttls:{"en":"National Drive Electric Month"}, urls:{"en":"https://driveelectricmonth.org/"}, fst:{era:1,y:2025}, mog:"⚡", nts:{"en":"Created by Plug In America"}},
     ],
     tpls:{
         "NGuideDogM":{ty:"M", st:{mon:9}, ttls:{"en":"National Guide Dog Month"}, urls:{"en":"https://www.daysoftheyear.com/days/national-guide-dog-month/"}},

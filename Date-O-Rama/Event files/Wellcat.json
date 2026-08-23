@@ -74,7 +74,7 @@
             {ty:"D", st:{mon:8,d:28}, ttls:{"en":"Race Your Mouse Around the Icons Day"}},
             {ty:"D", st:{mon:8,d:29}, ttls:{"en":"More Herbs, Less Salt Day"}},
             {ty:"D", st:{mon:8,d:31}, ttls:{"en":"Love Litigating Lawyers Day"}},
-            {ty:"D", st:{mon:9,d:9}, ttls:{"en":"Wonderful Weirdos Day"}},
+            {ty:"D", st:{mon:9,d:9}, ttls:{"en":"Wonderful Weirdos Day"}, fst:{era:1,y:2000}},
             {ty:"D", st:{mon:9,d:11}, ttls:{"en":"Remember Freedom Day"}},
             {ty:"D", st:{mon:9,d:17}, ttls:{"en":"Time’s Up Day"}},
             {ty:"D", st:{mon:9,d:22}, ttls:{"en":"Dear Diary Day"}},
