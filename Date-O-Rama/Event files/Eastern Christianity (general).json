@@ -54,7 +54,7 @@
         {ty:"D", st:{mon:3,d:25}, inh:"Annunciation"},
         {ty:"D", st:{misc:"E",offsetD:39}, inh:"Ascension"},
         {ty:"D", st:{misc:"E",offsetD:49}, inh:"Pentecost"},
-        {inh:"Transfiguration", ty:"D", st:{mon:8,d:6}, urls:{"en":"https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, mog:"🍏"},
+        {ty:"D", st:{mon:8,d:6}, inh:"Transfiguration", urls:{"en":"https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, mog:"🍏"},
         {ty:"D", st:{mon:8,d:15}, inh:"DormitionOfTheMotherOfGod"},
         {ty:"D", st:{mon:9,d:28}, inh:"StWenceslas", fst:{era:1,y:935}},
 
