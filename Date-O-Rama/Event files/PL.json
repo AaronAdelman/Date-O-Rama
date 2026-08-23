@@ -98,7 +98,7 @@
         {ty:"D", ttls:{"en":"Warsaw Ghetto Uprising"}, st:{mon:4,d:19}},
         {ty:"D", st:{mon:4,d:22}, inh:"IMotherEarthD", fst:{era:1,y:2009}},
         {ty:"D", st:{mon:5,d:9}, inh:"EuropeD"},
-        {ty:"D", st:{mon:5,d:31}, inh:"WNo-Tobacco Day", fst:{era:1,y:1989}},
+        {ty:"D", st:{mon:5,d:31}, inh:"WNoTobaccoD", fst:{era:1,y:1989}},
         {ty:"D", st:{mon:6,d:1}, inh:"ChildrensD", fst:{era:1,y:1952}},
         {ty:"D", st:{mon:6,d:23}, inh:"Kupala Nite"},
         {inh:"StJohnE", ty:"D", st:{mon:6,d:23}},

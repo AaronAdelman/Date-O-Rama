@@ -41,7 +41,7 @@
         {ty:"D", st:{mon:5,d:9}, inh:"EuropeD", fst:{era:1,y:2019}},
         {inh:"ConstitutionD", ty:"D", st:{mon:5,d:23}},
         {ttls:{"en":"Remembrance of 17 June"}, ty:"D", st:{mon:6,d:17}, fst:{era:1,y:1990}},
-        {inh:"WRefugee Day", ty:"D", st:{mon:6,d:20}, fst:{era:1,y:2001}},
+        {inh:"WRefugeeD", ty:"D", st:{mon:6,d:20}, fst:{era:1,y:2001}},
         {ttls:{"en":"Remembrance of 20 July"}, ty:"D", st:{mon:7,d:20}},
         {ty:"D", st:{misc:"E",offsetD:-48}, inh:"ShroveMon", urls:{"en":"https://en.wikipedia.org/wiki/Rosenmontag"}},
         {ty:"D", st:{misc:"E",offsetD:-47}, inh:"ShroveTue"},

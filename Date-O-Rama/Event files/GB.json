@@ -340,7 +340,7 @@
         {ty:"nD", st:{mon:5,d:9,thruD:16,wkd:[2], durD: 7}, ttls:{"en":"Salt Awareness Week"}, nts:{"en":"National Salt Awareness Week\nWorld Salt Awareness Week"}, urls:{"en":"https://www.actiononsalt.org.uk/awareness/"}, inh:"*MedAw*", mog:"🧂", fst:{era:1,y:2022}},
         {ty:"nD", st:{mon:6,d:1}, end:{mon:6,d:7}, ttls:{"en":"RSPCA Week"}, urls:{"en":"https://www.daysoftheyear.com/days/rspca-week/"}, nts:{"en":"Created by the Royal Society for the Prevention of Cruelty to Animals"}},
         {ty:"nD", st:{mon:6,d:1}, end:{mon:6,d:7}, urls:{"en":"https://nationaltoday.com/volunteers-week/"}, ttls:{"en":"Volunteers’ Week"}},
-        {ty:"nD", st:{mon:6,d:11,thruD:17,wkd:[2], durD: 7}, ttls:{"ar":"أسبوع اللاجئين","en":"Refugee Week","he":"שבוע הפליטים","ro":"Săptămâna Refugiatului"}, urls:{"en":"https://refugeeweek.org.uk/"}, fst:{era:1,y:1998}, inh:"WRefugee Day"},
+        {ty:"nD", st:{mon:6,d:11,thruD:17,wkd:[2], durD: 7}, ttls:{"ar":"أسبوع اللاجئين","en":"Refugee Week","he":"שבוע הפליטים","ro":"Săptămâna Refugiatului"}, urls:{"en":"https://refugeeweek.org.uk/"}, fst:{era:1,y:1998}, inh:"WRefugeeD"},
         {ty:"nD", st:{mon:6,d:11}, end:{mon:6,d:17}, ttls:{"en":"Oxfam Water Week"}, urls:{"en":"https://www.daysoftheyear.com/days/oxfam-water-week/"}, mog:"💦"},
         {ty:"nD", st:{mon:6,d:13}, end:{mon:6,d:17}, urls:{"en":"https://www.daysoftheyear.com/days/national-school-grounds-week/"}, ttls:{"en":"National School Grounds Week"}},
         {ty:"nD", st:{mon:6,d:15,thruD:21,wkd:[7], durD: 9}, ttls:{"en":"English Wine Week"}, urls:{"en":"https://winegb.co.uk/english-wine-week/"}, mog:"🍷", fst:{era:1,y:2007}, nts:{"en":"Created by WineGB"}},

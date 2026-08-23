@@ -115,7 +115,7 @@
         {ty:"D", st:{mon:3,d:25}, inh:"GreekIndependenceD", fst:{era:1,y:2009}, urls:{"en":"https://en.wikisource.org/wiki/Greek_Independence_Day:_A_National_Day_of_Celebration_of_Greek_and_American_Democracy,_2009"}},
         {ty:"D", st:{mon:9,d:2}, inh:"VJ Day", fst:{era:1,y:1945}, urls:{"en":"https://www.daysoftheyear.com/days/vj-day/"}, nts:{"en":"Created by Harry S. Truman"}},
         {ty:"M", st:{mon:3}, inh:"Women’s History Month", fst:{era:1,y:1986}, urls:{"en":"https://womenshistorymonth.gov/"}},
-        {ty:"D", st:{mon:2,d:1}, inh:"WHijab Day", fst:{era:1,y:2017}},
+        {ty:"D", st:{mon:2,d:1}, inh:"WHijabD", fst:{era:1,y:2017}},
         {ty:"D", st:{mon:6,d:3}, ttls:{"en":"Confederate Decoration Day"}, fst:{era:1,y:1866}, urls:{"en":"https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, locs:{"en":"Tennessee","he":"טנסי"}},
         {ty:"D", st:{mon:1,d:19}, ttls:{"en":"Confederate Heroes Day"}, fst:{era:1,y:1931}, urls:{"en":"https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, locs:{"en":"Texas","he":"טקסס"}},
         {ty:"M", st:{mon:4}, ttls:{"en":"Confederate History Month"}, nts:{"en":"April Confederate Heritage Month"}, fst:{era:1,y:1994}, urls:{"en":"https://en.wikipedia.org/wiki/Confederate_History_Month"}, locs:{"en":"Southern USA"}},

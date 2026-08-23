@@ -20,7 +20,7 @@
         {inh:"Patriots’ Day", ty:"D", st:{mon:3,d:1}},
         {ttls:{"en":"Mongolian Military Day"}, ty:"D", st:{mon:3,d:18}, mog:"🪖🎖️"},
         {inh:"Health Day", ty:"D", st:{mon:4,d:7}},
-        {ty:"D", st:{mon:4,d:26}, inh:"WIntellectual Property Day", fst:{era:1,y:2017}},
+        {ty:"D", st:{mon:4,d:26}, inh:"WIPD", fst:{era:1,y:2017}},
         {ty:"D", st:{mon:5,d:15}, inh:"FamilyD"},
         {inh:"Flag Day", ty:"D", st:{mon:7,d:10}, ttls:{"en":"Political Flag Day"}, urls:{"en":"https://nationaltoday.com/political-flag-day/"}, fst:{era:1,y:2009}},
         {ty:"D", st:{mon:8,d:25}, inh:"YouthD"},

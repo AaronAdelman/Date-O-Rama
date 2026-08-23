@@ -238,7 +238,7 @@
         {ty:"D", st:{mon:1,d:11}, urls:{"en":"https://nationaltoday.com/birth-anniversary-of-national-artist-atang-de-la-rama/"}, ttls:{"en":"Birth Anniversary of National Artist Atang de la Rama"}, fst:{era:1,y:1902}, inh:"*BD*"},
         {ty:"D", st:{mon:1,d:26}, urls:{"en":"https://nationaltoday.com/birth-anniversary-of-national-artist-napoleon-abueva/"}, ttls:{"en":"Birth Anniversary of National Artist Napoleon Abueva"}, inh:"*BD*", fst:{era:1,y:1930}},
         {ty:"D", st:{mon:1,d:28}, urls:{"en":"https://nationaltoday.com/julian-felipe-day/"}, ttls:{"en":"Julian Felipe Day"}, fst:{era:1,y:1861}},
-        {inh:"WHijab Day", ty:"D", st:{mon:2,d:1}, fst:{era:1,y:2021}},
+        {inh:"WHijabD", ty:"D", st:{mon:2,d:1}, fst:{era:1,y:2021}},
         {ty:"M", st:{mon:2}, urls:{"en":"https://nationaltoday.com/womens-role-in-history-month/"}, ttls:{"en":"Women’s Role in History Month"}, fst:{era:1,y:1989}, mog:"👩"},
         {ty:"D", st:{mon:2,d:3}, urls:{"en":"https://nationaltoday.com/anniversary-of-the-liberation-of-the-battle-of-manila/"}, ttls:{"en":"Anniversary of the Liberation of the Battle of Manila"}, fst:{era:1,y:1945}},
         {ty:"D", st:{mon:2,d:7}, end:{mon:2,d:13}, urls:{"en":"https://nationaltoday.com/philippine-industry-and-made-in-the-philippines-products-week/"}, ttls:{"en":"Philippine Industry and Made-in-the-Philippines Products Week"}, fst:{era:1,y:1948}},

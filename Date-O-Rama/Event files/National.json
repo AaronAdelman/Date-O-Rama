@@ -2318,7 +2318,7 @@
         {ty:"nD", st:{mon:3,d:9,thruD:15,wkd:[7], durD: 9}, ttls:{"en":"Flower and Patio Show"}, nts:{"en":"Indiana Flower and Patio Show"}, urls:{"en":"https://www.daysoftheyear.com/days/flower-and-patio-show/"}, fst:{era:1,y:1958}, mog:"💐"},
         {ty:"nD", st:{mon:4,d:1,thruD:7,wkd:[2], durD: 5}, ttls:{"en":"America Saves Week"}, nts:{"en":"Created by the Consumer Federation of America"}, urls:{"en":"https://www.daysoftheyear.com/days/america-saves-week/"}, fst:{era:1,y:2007}},
         {ty:"nD", st:{mon:4,d:10,thruD:16,wkd:[6], durD: 3}, inh:"Coachella", fst:{era:1,y:2014}},
-        {ty:"nD", st:{mon:4,d:10}, end:{mon:4,d:15}, inh:"WMusic Therapy Week", fst:{era:1,y:2023}},
+        {ty:"nD", st:{mon:4,d:10}, end:{mon:4,d:15}, inh:"WMusicTherapyW", fst:{era:1,y:2023}},
         {ty:"nD", st:{mon:4,d:15,thruD:21,wkd:[2], durD: 5}, ttls:{"en":"Health Information Professionals Week"}, nts:{"en":"HIP Week"}, urls:{"en":"https://hipweek.ahima.org/"}, fst:{era:1,y:1990}, mog:"👨‍⚕️👩‍⚕️", nts:{"en":"Created by the American Health Information Management Association (AHIMA)"}},
         {ty:"nD", st:{mon:4,d:15}, end:{mon:4,d:21}, ttls:{"en":"Money Smart Week"}, urls:{"en":"https://www.daysoftheyear.com/days/money-smart-week/"}, mog:"💵", fst:{era:1,y:2002}, nts:{"en":"Created by the Federal Reserve Bank of Chicago"}},
         {ty:"nD", st:{mon:4,d:17,thruD:23,wkd:[6], durD: 3}, inh:"Coachella", fst:{era:1,y:2014}},

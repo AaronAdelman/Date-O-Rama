@@ -77,7 +77,7 @@
         {inh:"FathersD", ty:"D", st:{mon:11,d:12}, fst:{era:1,y:2006}},
         {ty:"D", st:{mon:11,d:12}, inh:"NHealthD", fst:{era:1,y:1959}},
         {ty:"D", st:{mon:11,d:14}, ttls:{"en":"Mobile Brigade Day","id":"Hari Brigade Mobil"}, fst:{era:1,y:1946}},
-        {ty:"D", st:{mon:11,d:14}, inh:"WDiabetes Day", fst:{era:1,y:2007}},
+        {ty:"D", st:{mon:11,d:14}, inh:"WDiabetesD", fst:{era:1,y:2007}},
         {ty:"D", st:{mon:11,d:15}, ttls:{"en":"Marine Corps Day","id":"Hari Juang Korps Marinir"}, fst:{era:1,y:1951}},
         {ty:"D", st:{mon:11,d:22}, ttls:{"en":"National Fishery Day","id":"Hari Ikan Nasional"}, mog:"🎣", fst:{era:1,y:2014}},
         {ty:"D", st:{mon:11,d:25}, inh:"Teacher’s Day", nts:{"en":"Anniversary of the Teachers’ Union of the Republic of Indonesia","id":"Hari Ulang Tahun Persatuan Guru Republik Indonesia"}, fst:{era:1,y:1945}},
