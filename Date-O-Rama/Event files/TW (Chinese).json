@@ -22,7 +22,6 @@
         {ty:"D", st:{mon:2,d:19}, ttls:{"en":"Kuan Yin’s Birthday","zh":"觀音誕辰"}, inh:"*BD*"},
         {ty:"D", st:{mon:3,d:15}, urls:{"en":"https://nationaltoday.com/god-of-medicines-birthday/"}, ttls:{"en":"God of Medicine’s Birthday","zh":"保生大帝誕辰"}, inh:"*BD*"},
         {ty:"D", st:{mon:3,d:23}, ttls:{"en":"Matsu’s Birthday","zh":"媽祖誕辰"}, inh:"*BD*"},
-        {ty:"D", st:{mon:4,d:8}, inh:"BuddhasBD"},
         {ty:"D", st:{mon:5,d:13}, ttls:{"en":"Kuan Kung’s Birthday","zh":"關公誕辰"}, inh:"*BD*"},
         {ty:"D", st:{mon:5,d:13}, ttls:{"en":"Cheng Huang’s Birthday","zh":"城隍爺誕辰"}, inh:"*BD*"},
         {ty:"D", st:{mon:7,d:7}, inh:"Qixi Festival"},

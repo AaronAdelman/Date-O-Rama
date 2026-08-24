@@ -45,6 +45,7 @@
         {ty:"D", st:{mon:9,d:29}, inh:"NCoffeeD"},
         {ty:"D", st:{mon:8,wkd:[1],nth:4}, inh:"GrandparentsD", fst:{era:1,y:2010}},
         {ty:"D", st:{mon:1,d:27}, inh:"Holocaust Memorial Day", fst:{era:1,y:2006}},
+        {ty:"D", st:{mon:4,wkd:[1],nth:2}, inh:"BuddhasBD", urls:{"en":"https://www.officeholidays.com/holidays/south-korea/buddhas-birthday"}},
   ],
     tpls:{
         "Retrocession Day (in lieu)":{ty:"D", st:{mon:10,d:24}, ttls:{"en":"Retrocession Day (in lieu)"}, nts:{"en":"Taiwan Retrocession Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},

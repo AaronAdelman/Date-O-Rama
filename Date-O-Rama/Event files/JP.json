@@ -43,6 +43,7 @@
         {ty:"D", st:{mon:11,d:24,wkd:[2]}, inh:"Labor Thanksgiving Day", fst:{era:1,y:1948}},
         {ty:"D", st:{mon:8,d:25}, ttls:{"en":"Instant Ramen Day"}, urls:{"en":"https://www.checkiday.com/bddae326d979a08a8736afad5c4d7a8f/instant-ramen-day-japan"}, mog:"🍜"},
         {ty:"D", st:{mon:4,d:27}, ttls:{"en":"National Pneumatics Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-pneumatics-day/"}, fst:{era:1,y:2021}, nts:{"en":"Created by SMC Corporation"}},
+        {ty:"D", st:{mon:4,d:8}, inh:"BuddhasBD"},
     ],
     tpls:{
         "Culture Day":{ty:"D", st:{mon:11,d:3}, ttls:{"ar":"يوم الثقافة","az":"Mədəniyyət günü","be":"Дзень культуры","de":"Bunka no Hi","en":"Culture Day","es":"Bunka no hi","fa":"روز فرهنگ","fr":"Bunka no hi","gu":"સંસ્કૃતિ દિવસ","hi":"संस्कृति दिवस","hy":"Մշակույթի օր","id":"Hari Kebudayaan","ja":"文化の日","ko":"문화의 날","ms":"Hari Kebudayaan","pt":"Dia da Cultura","ru":"День культуры","sd":"جاپان جو ثقافتي ڏينهن","th":"วันวัฒนธรรม","tr":"Kültür Günü","uk":"День культури","uz":"Madaniyat kuni","vi":"Ngày văn hóa","zh":"文化之日"}, urls:{"en":"https://www.daysoftheyear.com/days/japanese-culture-day/"}},

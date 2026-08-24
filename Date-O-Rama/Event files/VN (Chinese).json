@@ -12,40 +12,13 @@
         {ty:"nD", st:{mon:1,d:2}, end:{mon:1,d:5}, urls:{"en":"https://www.officeholidays.com/holidays/vietnam/tet-nguyen-dan"}, ttls:{"en":"Tet Holiday"}},
         {ty:"D", st:{mon:3,d:10}, urls:{"en":"https://www.officeholidays.com/holidays/vietnam/hung-kings-temple-festival"}, ttls:{"en":"Hung Kings Temple Festival","vi":"Giỗ tổ Hùng Vương"}},
         
-        {ty:"D", st:{mon:1,d:15}, ttls:{
-                "vi":"Tết Nguyên Tiêu",
-                "en":"Poets’ Day"
-           }, nts:{"vi":"Tết Thượng Nguyên"},
-       },
-        {ty:"D", st:{mon:3,d:3}, ttls:{
-                "vi":"Tết Hàn Thực"
-            }
-       },
-        {ty:"D", st:{mon:4,d:15},
-            inh:"BuddhasBD"
-       },
-        {ty:"D", st:{mon:5,d:5}, ttls:{
-                "vi":"Tết Đoan Ngọ"
-            }
-       },
-        {ty:"D", st:{mon:7,d:15}, ttls:{
-                "vi":"Lễ Vu Lan"
-           }, nts:{"vi":"Tết Trung Nguyên"}
-       },
-        {ty:"D", st:{mon:8,d:12}, ttls:{
-                "vi":"Ngày Giỗ tổ Sân khấu"
-            }
-       },
-        {ty:"D", st:{mon:8,d:15}, ttls:{
-                "vi":"Tết Trung Thu",
-                "en":"Children’s Festival"
-            }
-       },
-        {ty:"D", st:{mon:12,d:23}, ttls:{
-                "vi":"Lễ cúng Ông Công"
-           }, nts:{
-                "vi":"Ông Táo về trời"
-            }
-       },
+        {ty:"D", st:{mon:1,d:15}, ttls:{"vi":"Tết Nguyên Tiêu","en":"Poets’ Day"}, nts:{"vi":"Tết Thượng Nguyên"}},
+        {ty:"D", st:{mon:3,d:3}, ttls:{"vi":"Tết Hàn Thực"}},
+        {ty:"D", st:{mon:4,d:8}, inh:"BuddhasBD"},
+        {ty:"D", st:{mon:5,d:5}, ttls:{"vi":"Tết Đoan Ngọ"}},
+        {ty:"D", st:{mon:7,d:15}, ttls:{"vi":"Lễ Vu Lan"}, nts:{"vi":"Tết Trung Nguyên"}},
+        {ty:"D", st:{mon:8,d:12}, ttls:{"vi":"Ngày Giỗ tổ Sân khấu"}},
+        {ty:"D", st:{mon:8,d:15}, ttls:{"vi":"Tết Trung Thu","en":"Children’s Festival"}},
+        {ty:"D", st:{mon:12,d:23}, ttls:{"vi":"Lễ cúng Ông Công"}, nts:{"vi":"Ông Táo về trời"}},
    ]
 }

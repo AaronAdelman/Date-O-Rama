@@ -492,6 +492,10 @@
 		A5A6FD5727BEC97C003595D5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A5A6FD5827BEC981003595D5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A5A6FD5927BEC982003595D5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
+		A5A72D0C303CBB7A00C01787 /* Buddhism (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A72D0B303CBB7A00C01787 /* Buddhism (Vikram Samvat).json */; };
+		A5A72D0D303CBB7A00C01787 /* Buddhism (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A72D0B303CBB7A00C01787 /* Buddhism (Vikram Samvat).json */; };
+		A5A72D0F303CC36300C01787 /* Buddhism (Bangla).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A72D0E303CC36300C01787 /* Buddhism (Bangla).json */; };
+		A5A72D10303CC36300C01787 /* Buddhism (Bangla).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A72D0E303CC36300C01787 /* Buddhism (Bangla).json */; };
 		A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */; };
 		A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
 		A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
@@ -1539,6 +1543,8 @@
 		A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Bahá’í Faith (Gregorian).json"; sourceTree = "<group>"; };
 		A5A6FD4C27BBF1BB003595D5 /* ASACalendarWithBlankMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithBlankMonths.swift; sourceTree = "<group>"; };
 		A5A6FD4F27BEC504003595D5 /* ASADateFormatPatternComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatPatternComponent.swift; sourceTree = "<group>"; };
+		A5A72D0B303CBB7A00C01787 /* Buddhism (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Buddhism (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A5A72D0E303CC36300C01787 /* Buddhism (Bangla).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Buddhism (Bangla).json"; sourceTree = "<group>"; };
 		A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALinkedEventCell.swift; sourceTree = "<group>"; };
 		A5A9667B25A31EC900CF158F /* ASAEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCell.swift; sourceTree = "<group>"; };
 		A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimesSubcell.swift; sourceTree = "<group>"; };
@@ -2075,6 +2081,8 @@
 				A5B999B128622B1700072FD5 /* BT.json */,
 				A51C8577282D64A00081A11B /* Buddhism.json */,
 				A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */,
+				A5A72D0E303CC36300C01787 /* Buddhism (Bangla).json */,
+				A5A72D0B303CBB7A00C01787 /* Buddhism (Vikram Samvat).json */,
 				A5B999B028622B1700072FD5 /* BV.json */,
 				A5EFFF2C285B5B9E00F2205F /* BW.json */,
 				A5B999B628622B4F00072FD5 /* BY.json */,
@@ -3008,6 +3016,7 @@
 				A5EB851C2869E9F700C9321A /* SY (Julian).json in Resources */,
 				A5EFFF73285B7B1300F2205F /* MO.json in Resources */,
 				A5FB22A628638D2B00B5042B /* SI.json in Resources */,
+				A5A72D10303CC36300C01787 /* Buddhism (Bangla).json in Resources */,
 				A5EFFF3D285B5C5B00F2205F /* CL.json in Resources */,
 				A50DA51928686272008D54AE /* MY (Chinese).json in Resources */,
 				A5FB22D4286390E500B5042B /* WF.json in Resources */,
@@ -3260,6 +3269,7 @@
 				A5EFFFC9285B81BD00F2205F /* ZW.json in Resources */,
 				A5D149392E6FF7FB00752B48 /* Robert Birch.json in Resources */,
 				A5EFFF3B285B5C5B00F2205F /* TD.json in Resources */,
+				A5A72D0D303CBB7A00C01787 /* Buddhism (Vikram Samvat).json in Resources */,
 				A5EFFFB8285B808E00F2205F /* TT.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5D1493C2E70770E00752B48 /* Barbie.json in Resources */,
@@ -3536,6 +3546,7 @@
 				A5B999C128622BBA00072FD5 /* CC.json in Resources */,
 				A5D850AE280C95F6005247BD /* ZA.json in Resources */,
 				A5E4960628624F9A001BF40C /* GU.json in Resources */,
+				A5A72D0F303CC36300C01787 /* Buddhism (Bangla).json in Resources */,
 				A5E495FB28624EFE001BF40C /* GM.json in Resources */,
 				A508C7F5283E244E00D96947 /* *Templates.json in Resources */,
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
@@ -3734,6 +3745,7 @@
 				A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */,
 				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BDE78526678B1600F47416 /* Nation of Islam.json in Resources */,
+				A5A72D0C303CBB7A00C01787 /* Buddhism (Vikram Samvat).json in Resources */,
 				A5EFFFED285B878900F2205F /* TW.json in Resources */,
 				A5B1A7452EB7BEED00FF26BE /* NCA.json in Resources */,
 				A5E292E9285A625000925EBD /* AR.json in Resources */,

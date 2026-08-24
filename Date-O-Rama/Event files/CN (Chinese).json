@@ -38,6 +38,7 @@
         {ty:"nD", st:{mon:5,d:5}, end:{mon:5,d:7}, ttls:{"en":"Nào Dōuyáng","zh_CN":"闹兜阳"}},
         {ty:"nD", st:{mon:10,d:1}, end:{mon:10,d:5}, ttls:{"en":"Qiang New Year","zh_CN":"羌历年"}},
         {ty:"nD", st:{mon:3,d:15}, end:{mon:3,d:22}, ttls:{"en":"Third Month Fair","zh_CN":"三月街"}, urls:{"en":"https://en.wikipedia.org/wiki/Third_Month_Fair"}},
+        {ty:"D", st:{mon:4,d:8}, inh:"BuddhasBD"},
     ],
     tpls:{
         "Dragon Boat Festival Holiday":{ty:"D", st:{mon:6,d:23}, ttls:{"en":"Dragon Boat Festival Holiday"}},
