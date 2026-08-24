@@ -127,10 +127,10 @@
         {ty:"nD", st:{mon:6,d:5,thruD:11,wkd:[2], durD: 7}, ttls:{"en":"National Business Etiquette Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-business-etiquette-week/"}, mog:"🕴️", fst:{era:1,y:2007}, nts:{"en":"Created by the Protocol School of Washington"}},
         {ty:"nD", st:{mon:8,d:27,thruMon:9,thruD:2,wkd:[1]}, end:{mon:9,d:2,thruD:8,wkd:[7]}, ttls:{"en":"Legacy Week"}, urls:{"en":"https://support.legacy.com.au/event/legacyweek"}, mog:"🔥", fst:{era:1,y:1940}},
         {ty:"nD", st:{mon:8,d:9,thruD:15,wkd:[7], durD: 9}, ttls:{"en":"National Science Week"}, urls:{"en":"https://www.scienceweek.net.au/"}, mog:"🔭🔬🧫", fst:{era:1,y:1997}, nts:{"en":"Created by the government of Australia"}},
-        {ty:"W", st:{mon:10, fullWk: 2}, ttls:{"en":"Anti-Poverty Week"}, nts:{"en":"Anti Poverty Week"}, urls:{"en":"https://www.daysoftheyear.com/days/anti-poverty-week/"}, fst:{era:1,y:2002}},
-        {ty:"W", st:{mon:2, fullWk: 1}, ttls:{"en":"Feeding Tube Awareness Week"}, urls:{"en":"https://www.feedingtubeaware.com.au/"}, inh:"*MedAw*", fst:{era:1,y:2011}, nts:{"en":"Created by the Feeding Tube Awareness Foundation"}},
-        {ty:"W", st:{mon:7, fullWk: 1}, ttls:{"en":"National NAIDOC Week"}, urls:{"en":"https://www.naidoc.org.au/about/naidoc-week"}, fst:{era:1,y:1991}},
-        {ty:"W", st:{mon:11, fullWk: 2, d1OfWk: 2}, ttls:{"en":"National Recycling Week"}, urls:{"en":"https://planetark.org/programs/national-recycling-week"}, fst:{era:1,y:1996}, mog:"♻️", nts:{"en":"Created by Planet Ark"}},
+        {ty:"W", st:{mon:10,fullWk:2}, ttls:{"en":"Anti-Poverty Week"}, nts:{"en":"Anti Poverty Week"}, urls:{"en":"https://www.daysoftheyear.com/days/anti-poverty-week/"}, fst:{era:1,y:2002}},
+        {ty:"W", st:{mon:2,fullWk:1}, ttls:{"en":"Feeding Tube Awareness Week"}, urls:{"en":"https://www.feedingtubeaware.com.au/"}, inh:"*MedAw*", fst:{era:1,y:2011}, nts:{"en":"Created by the Feeding Tube Awareness Foundation"}},
+        {ty:"W", st:{mon:7,fullWk:1}, ttls:{"en":"National NAIDOC Week"}, urls:{"en":"https://www.naidoc.org.au/about/naidoc-week"}, fst:{era:1,y:1991}},
+        {ty:"W", st:{mon:11,fullWk:2, d1OfWk: 2}, ttls:{"en":"National Recycling Week"}, urls:{"en":"https://planetark.org/programs/national-recycling-week"}, fst:{era:1,y:1996}, mog:"♻️", nts:{"en":"Created by Planet Ark"}},
         {ty:"D", st:{mon:11,wkd:[3],nth:2},ttls:{"en":"National Survivors’ Day"},  urls:{"en":"https://www.daysoftheyear.com/days/national-survivors-day/"}, nts:{"en":"Created by In Good Faith Foundation (IGFF), and LOUD Fence Inc."}},
         {ty:"D", st:{mon:12,d:21}, ttls:{"en":"Gravy Day"}, urls:{"en":"https://www.daysoftheyear.com/days/gravy-day/"}, fst:{era:1,y:1996}, nts:{"en":"This observance celebrates the song “How to Make Gravy” by Paul Kelly."}},
         {ty:"D", st:{mon:12,d:24}, inh:"CarolsByCandlelight", fst:{era:1,y:1938}},
@@ -154,7 +154,7 @@
         {ty:"D", st:{mon:8,wkd:[4],nth:-3}, ttls:{"en":"Ekka","fr":"Ekka","ja":"エッカ"}, urls:{"en":"https://www.daysoftheyear.com/days/royal-national-agricultural-show-day-queensland/"}, nts:{"en":"Royal National Agricultural Show Day Queensland\nRoyal Queensland Show\nEkka People’s Day\nCreated by the Royal National Agricultural and Industrial Association of Queensland (RNA)"}, fst:{era:1,y:1876}},
         {ty:"nD", st:{mon:8,d:9,thruD:15,wkd:[2], durD: 5}, ttls:{"en":"Bullying No Way: National Week of Action"}, nts:{"en":"Bullying No Way Week"}, urls:{"en":"https://bullyingnoway.gov.au/preventing-bullying/national-week-of-action"}, fst:{era:1,y:2024}},
         
-        {ty:"W", st:{mon:9, fullWk: 1}, ttls:{"en":"National Child Protection Week"}, urls:{"en":"https://www.napcan.org.au/ncpw/"}, fst:{era:1,y:1990}, mog:"👦👧", nts:{"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, subEvts:[
+        {ty:"W", st:{mon:9,fullWk:1}, ttls:{"en":"National Child Protection Week"}, urls:{"en":"https://www.napcan.org.au/ncpw/"}, fst:{era:1,y:1990}, mog:"👦👧", nts:{"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, subEvts:[
             {ty:"D", st:{wkd:[6]}, ttls:{"en":"Bravehearts Day"}, urls:{"en":"https://bravehearts.org.au/support-us/bravehearts-day"}, mog:"💟", nts:{"en":"White Balloon Day\nCreated by Bravehearts"}, fst:{era:1,y:1997}},
         ]},
         

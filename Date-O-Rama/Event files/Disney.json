@@ -11,6 +11,6 @@
         {ty:"D", st:{mon:12,wkd:[2],nth:1}, inh:"Walt Disney Day", fst:{era:1,y:1986}},
         {ty:"D", st:{mon:6,d:9}, ttls:{"en":"National Donald Duck Day","he":"יום הולדת לדונלד דאק"}, urls:{"en":"https://www.daysoftheyear.com/days/donald-duck-day/"}, inh:"*BD*", fst:{era:1,y:1984}, nts:{"en":"Some people think this observance happens on March 13.\nCreated by Tom Bradley"}, mog:"🦆"},
         {ty:"D", st:{mon:6,d:26}, ttls:{"en":"National Stitch Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-stitch-day/"}, fst:{era:1,y:2024}, nts:{"en":"This observance celebrates Lilo & Stitch"}},
-        {ty:"W", st:{mon:4, fullWk: -1}, ttls:{"en":"National Princess Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-princess-week/"}, fst:{era:1,y:2012}, mog:"👸", nts:{"en":"Created by Disney, Target, and Julie Andrews"}},
+        {ty:"W", st:{mon:4,fullWk:-1}, ttls:{"en":"National Princess Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-princess-week/"}, fst:{era:1,y:2012}, mog:"👸", nts:{"en":"Created by Disney, Target, and Julie Andrews"}},
     ]
 }

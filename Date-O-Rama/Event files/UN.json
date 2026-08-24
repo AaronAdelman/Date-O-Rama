@@ -282,7 +282,7 @@
         {ty:"D", st:{mon:2,d:10}, ttls:{"ar":"اليوم الدولي للنمر العربي","en":"International Day of the Arabian Leopard","es":"Día Internacional del Leopardo Árabe","fr":"Journée internationale du léopard d’Arabie","ru":"Международный день арабского леопарда","zh":"国际阿拉伯豹日"}, fst:{era:1,y:2024}, urls:{"en":"https://www.daysoftheyear.com/days/international-day-of-the-arabian-leopard/"}, nts:{"en":"Created by the Council of Ministers of Saudi Arabia"}},
         {ty:"D", st:{mon:1,d:25}, ttls:{"en":"International Day of Women in Multilateralism"}, fst:{era:1,y:2022}},
         {ty:"D", st:{mon:11,d:17}, ttls:{"en":"World Cervical Cancer Elimination Day"}, fst:{era:1,y:2020}, inh:"*MedAw*"},
-        {ty:"W", st:{mon:10, fullWk: -1}, ttls:{"en":"International Lead Poisoning Prevention Week"}, fst:{era:1,y:2018}, inh:"*MedAw*"},
+        {ty:"W", st:{mon:10,fullWk:-1}, ttls:{"en":"International Lead Poisoning Prevention Week"}, fst:{era:1,y:2018}, inh:"*MedAw*"},
         {ty:"nD", st:{mon:11,d:25}, end:{mon:12,d:10}, ttls:{"en":"16 Days of Activism against Gender-Based Violence"}, fst:{era:1,y:2021}},
         {ty:"D", st:{mon:5,d:19}, ttls:{"en":"World Fair Play Day","es":"Día Mundial del Juego Limpio","fr":"Journée mondiale du fair-play","pt":"Dia Mundial do Jogo Limpo"}, urls:{"en":"https://www.daysoftheyear.com/days/world-fair-play-day/"}, fst:{era:1,y:2025}, nts:{"en":"Created by the UN General Assembly"}},
     ],

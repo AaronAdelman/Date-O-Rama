@@ -44,11 +44,11 @@
         {ty:"D", st:{mon:10,d:17,thruD:23,wkd:[1]}, ttls:{"en":"Tirana Marathon"}, urls:{"en":"https://www.daysoftheyear.com/days/tirana-marathon/"}, fst:{era:1,y:2016}, nts:{"en":"Created by the Municipality of Tirana"}},
         
         {ty:"nD", st:{era:1,y:2025, mon:5,d:15, durD: 2}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/albania/albania-epc-summit"}},
-        {ty:"W", st:{mon:9, fullWk: -1, d1OfWk: 7}, inh:"Tirana International Film Festival", fst:{era:1,y:2003}, last:{era:1,y:2023}},
-        {ty:"W", st:{mon:9, fullWk: -1}, inh:"Tirana International Film Festival", fst:{era:1,y:2024}},
+        {ty:"W", st:{mon:9,fullWk:-1, d1OfWk: 7}, inh:"Tirana International Film Festival", fst:{era:1,y:2003}, last:{era:1,y:2023}},
+        {ty:"W", st:{mon:9,fullWk:-1}, inh:"Tirana International Film Festival", fst:{era:1,y:2024}},
         {ty:"D", st:{mon:9,d:29}, ttls:{"en":"Olive Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/olive-festival-in-albania/"}, fst:{era:1,y:2018}, mog:"🫒"},
     ],
     tpls:{
-        "Tirana International Film Festival":{ty:"W", st:{mon:9, fullWk: -1, d1OfWk: 7}, ttls:{"en":"Tirana International Film Festival"}, nts:{"en":"TIFF"}, urls:{"en":"https://tiranafilmfest.org/"}, mog:"📽️"}
+        "Tirana International Film Festival":{ty:"W", st:{mon:9,fullWk:-1, d1OfWk: 7}, ttls:{"en":"Tirana International Film Festival"}, nts:{"en":"TIFF"}, urls:{"en":"https://tiranafilmfest.org/"}, mog:"📽️"}
     }
 }
