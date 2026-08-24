@@ -72,7 +72,7 @@
         {ty:"D", st:{mon:12,d:21}, inh:"ArmedForcesD", ttls:{"en":"Philippine Armed Forces Day","fil":"Araw ng Hukbong Sandatahang Lakas ng Pilipinas"}, fst:{era:1,y:1935}},
 
         {ty:"D", st:{mon:1,wkd:[2],nth:-1}, urls:{"en":"https://nationaltoday.com/national-bible-day/"}, ttls:{"en":"National Bible Day","fil":"Pambansang Araw ng Bibliya"}, fst:{era:1,y:2019}},
-        {ty:"D", st:{misc:"full1", mon:5}, inh:"Vesak", fst:{era:1,y:2001}},
+        {ty:"D", st:{misc:"full1",mon:5}, inh:"Vesak", fst:{era:1,y:2001}},
         {inh:"Thxgiving", ty:"D", st:{mon:11,wkd:[5],nth:-1}},
         {ty:"D", st:{mon:11,d:23,thruD:29,wkd:[6]}, inh:"BlackFri", fst:{era:1,y:2019}},
 
@@ -278,9 +278,9 @@
         {ty:"D", st:{mon:9,wkd:[1],nth:2}, inh:"GrandparentsD", fst:{era:1,y:1987}},
         {ty:"D", st:{mon:1,wkd:[1],nth:3}, ttls:{"en":"Feast of the Holy Child"}, urls:{"en":"https://www.daysoftheyear.com/days/feast-of-the-holy-child/"}},
         
-        {ty:"D", st:{era:1,y:2016, mon:5,d:9}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
-        {ty:"D", st:{era:1,y:2019, mon:5,d:13}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
-        {ty:"D", st:{era:1,y:2025, mon:5,d:12}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
+        {ty:"D", st:{era:1,y:2016,mon:5,d:9}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
+        {ty:"D", st:{era:1,y:2019,mon:5,d:13}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
+        {ty:"D", st:{era:1,y:2025,mon:5,d:12}, inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/philippines/philippines-election-day"}},
         {ty:"D", st:{mon:7,d:27}, ttls:{"en":"Founding Anniversary of the INC"}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/founding-anniversary-of-the-inc"}, fst:{era:1,y:2025}},
         {ty:"D", st:{mon:20,d:31,wkd:[6]}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/philippines/all-saints-day"}},
         {ty:"D", st:{mon:8,d:9}, inh:"PhillipineIsraelFriendshipD", fst:{era:1,y:2023}},

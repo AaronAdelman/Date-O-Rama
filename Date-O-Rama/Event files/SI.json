@@ -27,7 +27,7 @@
         {ty:"D", st:{mon:6,d:1}, inh:"ChildrensD"},
         {ty:"D", st:{mon:11,d:20}, inh:"ChildrensD"},
         {ty:"D", ttls:{"en":"Slovenians in Prekmurje Incorporated into the Mother Nation Day"}, st:{mon:8,d:17}, urls:{"en":"https://nationaltoday.com/slovenians-in-prekmurje-incorporated-into-the-mother-nation-day/"}, fst:{era:1,y:2010}},
-        {ty:"D", st:{era:1,y:2023, mon:8,d:14}, inh:"SolidarityD"},
+        {ty:"D", st:{era:1,y:2023,mon:8,d:14}, inh:"SolidarityD"},
         {ty:"D", st:{mon:3,d:7}, inh:"NMaritimeD", ttls:{"en":"Slovenian Maritime Day"}},
         {ty:"D", st:{mon:3,d:8}, inh:"IWD"},
         {ty:"D", st:{mon:4,d:23}, inh:"StGeorge"},

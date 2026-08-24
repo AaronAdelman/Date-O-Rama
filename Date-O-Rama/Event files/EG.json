@@ -32,7 +32,7 @@
         {ty:"nD", st:{mon:8,d:15}, end:{mon:8,d:28}, ttls:{"en":"The Nile Festival","he":"הצפה של הנילוס","cop":"ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, nts:{"en":"Flooding of the Nile"}, urls:{"en":"https://www.daysoftheyear.com/days/the-nile-festival/"}, nts:{"en":"Wafaa El-Nil"}},
         {ty:"D", st:{mon:2,d:22}, inh:"Abu Simbel Festival"},
         {ty:"D", st:{mon:10,d:22}, inh:"Abu Simbel Festival"},
-        {ty:"D", st:{era:1,y:2021, mon:4,d:3}, ttls:{"ar":"موكب المومياوات الملكية","arz":"موكب المومياوات الملكيه فى مصر","ca":"Desfilada d’Or dels Faraons","de":"Goldene Parade der Pharaonen","en":"Pharaohs’ Golden Parade","es":"Desfile dorado de los faraones","fr":"Parade dorée des Pharaons","it":"Parata d’oro dei faraoni","pt":"Desfile dourado dos faraós","ta":"பார்வோன்களின் அணிவகுப்பு","tr":"Firavunların Altın Geçidi","zh":"法老黃金遊行"}, urls:{"en":"https://www.daysoftheyear.com/days/the-pharaohs-golden-parade/"}, nts:{"en":"Created by the government of Egypt"}},
+        {ty:"D", st:{era:1,y:2021,mon:4,d:3}, ttls:{"ar":"موكب المومياوات الملكية","arz":"موكب المومياوات الملكيه فى مصر","ca":"Desfilada d’Or dels Faraons","de":"Goldene Parade der Pharaonen","en":"Pharaohs’ Golden Parade","es":"Desfile dorado de los faraones","fr":"Parade dorée des Pharaons","it":"Parata d’oro dei faraoni","pt":"Desfile dourado dos faraós","ta":"பார்வோன்களின் அணிவகுப்பு","tr":"Firavunların Altın Geçidi","zh":"法老黃金遊行"}, urls:{"en":"https://www.daysoftheyear.com/days/the-pharaohs-golden-parade/"}, nts:{"en":"Created by the government of Egypt"}},
   ],
     tpls:{
         "Abu Simbel Festival":{ty:"D", st:{mon:2,d:22}, ttls:{"en":"Abu Simbel Festival"}, nts:{"en":"Abu Simbel Sun Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/abu-simbel-festival/"}},

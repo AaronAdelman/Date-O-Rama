@@ -20,7 +20,7 @@
         {ty:"D", st:{mon:5,d:30}, ttls:{"en":"Anguilla Day","he":"יום אנגווילה"}, urls:{"en":"https://www.officeholidays.com/holidays/anguilla/anguilla-day"}},
         {ty:"D", st:{mon:5,d:31,thruMon:6,thruD:1,wkd:[2]}, ttls:{"en":"Anguilla Day (in lieu)","he":"יום אנגווילה (במקומו)"}, urls:{"en":"https://www.officeholidays.com/holidays/anguilla/anguilla-day"}},
         {ty:"D", st:{mon:6,wkd:[2],nth:2}, inh:"Celebration of the Birthday of His Majesty the King", fst:{era:1,y:2022}, last:{era:1,y:2025}},
-        {ty:"D", st:{era:1,y:2026, mon:6,d:22}, inh:"Celebration of the Birthday of His Majesty the King"},
+        {ty:"D", st:{era:1,y:2026,mon:6,d:22}, inh:"Celebration of the Birthday of His Majesty the King"},
         {ty:"D", st:{mon:6,wkd:[2],nth:2}, inh:"Celebration of the Birthday of His Majesty the King", fst:{era:1,y:2027}},
         {ty:"D", st:{mon:8,wkd:[2],nth:1}, inh:"AugMon", urls:{"en":"https://www.officeholidays.com/holidays/anguilla/august-monday"}},
         {ty:"D", st:{mon:8,d:4,thruD:10,wkd:[5]}, ttls:{"en":"August Thursday"}, urls:{"en":"https://www.officeholidays.com/holidays/anguilla/august-thursday"}},

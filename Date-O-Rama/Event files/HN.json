@@ -27,10 +27,10 @@
         {ty:"D", st:{mon:10,d:1,thruD:2,wkd:[5]}, inh:"Francisco Morazán’s Day (in lieu)", fst:{era:1,y:2025}, last:{era:1,y:2026}},
         {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[4], durD: 3}, ttls:{"en":"Morazánica Week","es":"Semana Morazánica"}, urls:{"en":"https://nationaltoday.com/semana-morazanica-in-honduras/"}, fst:{era:1,y:2014}},
         {ty:"D", st:{mon:10,d:12}, ttls:{"en":"Discovery of America Day","es":"Día del Descubrimiento de América"}, urls:{"en":"https://nationaltoday.com/honduras-discovery-of-america-day/"}, fst:{era:1,y:2015}},
-        {ty:"D", st:{era:1,y:2022, mon:10,d:6}, inh:"Discovery of America Day (in lieu)"},
+        {ty:"D", st:{era:1,y:2022,mon:10,d:6}, inh:"Discovery of America Day (in lieu)"},
         {ty:"D", st:{mon:10,d:4}, inh:"Discovery of America Day (in lieu)", fst:{era:1,y:2023}, last:{era:1,y:2024}},
-        {ty:"D", st:{era:1,y:2025, mon:10,d:1}, inh:"Discovery of America Day (in lieu)"},
-        {ty:"D", st:{era:1,y:2026, mon:10,d:2}, inh:"Discovery of America Day (in lieu)"},
+        {ty:"D", st:{era:1,y:2025,mon:10,d:1}, inh:"Discovery of America Day (in lieu)"},
+        {ty:"D", st:{era:1,y:2026,mon:10,d:2}, inh:"Discovery of America Day (in lieu)"},
         {inh:"ArmedForcesD", ty:"D", st:{mon:10,d:21}, urls:{"en":"https://nationaltoday.com/armed-forces-day-in-honduras/"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
 
@@ -50,7 +50,7 @@
         {ty:"D", st:{mon:10,d:3}, inh:"Army Day (in lieu)", fst:{era:1,y:2024}},
     ],
     tpls:{
-        "Discovery of America Day (in lieu)":{ty:"D", st:{era:1,y:2022, mon:10,d:6}, ttls:{"en":"Discovery of America Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
+        "Discovery of America Day (in lieu)":{ty:"D", st:{era:1,y:2022,mon:10,d:6}, ttls:{"en":"Discovery of America Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/honduras/discovery-of-america-day"}},
         "Francisco Morazán’s Day (in lieu)":{ty:"D", st:{mon:10,d:5}, ttls:{"en":"Francisco Morazán’s Day (in lieu)"}, urls:{"en":"https://nationaltoday.com/francisco-morazans-day/"}, inh:"*BD*"},
         "Army Day (in lieu)":{ty:"D", st:{mon:10,d:21}, ttls:{"en":"Army Day (in lieu)"}, inh:"ArmyD", urls:{"en":"https://www.officeholidays.com/holidays/honduras/honduran-army-day"}, nts:{"en":"National Army Day"}},
         "Pan American Day (in lieu)":{ty:"D", st:{mon:4,d:18}, ttls:{"en":"Pan American Day (in lieu)"}, urls:{"en":"https://nationaltoday.com/americas-day/"}},

@@ -11,11 +11,11 @@
         {ty:"D", st:{mon:1,d:2}, urls:{"en":"https://www.officeholidays.com/holidays/romania/day-after-new-years-day"}, inh:"DAfterNYD"},
         {ty:"D", st:{mon:1,d:6}, inh:"Epiphany", fst:{era:1,y:2024}},
         {ty:"D", st:{mon:1,d:7}, fst:{era:1,y:2024}, inh:"SynaxisOfStJohnTheBaptist"},
-        {ty:"D", st:{era:1,y:2023, mon:1,d:23}, urls:{"en":"https://www.officeholidays.com/holidays/romania/romania-unification-day"}, inh:"Public Sector Holiday"},
+        {ty:"D", st:{era:1,y:2023,mon:1,d:23}, urls:{"en":"https://www.officeholidays.com/holidays/romania/romania-unification-day"}, inh:"Public Sector Holiday"},
         {ty:"D", st:{mon:1,d:24}, ttls:{"ca":"Dia de la unificació dels principats romanesos","en":"Day of the Unification of the Romanian Principalities","ro":"Ziua Unirii Principatelor Române","uk":"День об’єднання дунайських князівств"}, inh:"Unification Day", urls:{"en":"https://nationaltoday.com/unification-day/"}, fst:{era:1,y:1859}},
         {ty:"D", st:{mon:3,d:1}, inh:"Martisor", urls:{"en":"https://nationaltoday.com/martisor/"}},
         {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
-        {ty:"D", st:{era:1,y:2024, mon:5,d:2}, urls:{"en":"https://www.officeholidays.com/holidays/romania/labour-day"}, inh:"Public Sector Holiday"},
+        {ty:"D", st:{era:1,y:2024,mon:5,d:2}, urls:{"en":"https://www.officeholidays.com/holidays/romania/labour-day"}, inh:"Public Sector Holiday"},
         {inh:"MothersD", ty:"D", st:{mon:5,wkd:[1],nth:1}},
         {inh:"FathersD", ty:"D", st:{mon:5,wkd:[1],nth:2}},
         {ty:"D", st:{mon:6,d:1}, inh:"ChildrensD", fst:{era:1,y:2017}},
@@ -143,7 +143,7 @@
         {ty:"D", st:{mon:12,d:20}, inh:"IHumanSolidarityD", fst:{era:1,y:2006}},
         {ty:"D", st:{mon:12,d:21}, ttls:{"en":"Day of Remembrance of the Victims of Communism in Romania"}},
         {ty:"D", st:{mon:12,d:22}, ttls:{"en":"Romanian Revolution Victory and Freedom Day"}},
-        {ty:"span", st:{era:1,y:2008, mon:3,d:29, h:20, min:0, s:0, ns:0}, end:{era:1,y:2008, mon:3,d:29, h:21, min:0, s:0, ns:0}, inh:"EarthH"},
+        {ty:"span", st:{era:1,y:2008,mon:3,d:29, h:20, min:0, s:0, ns:0}, end:{era:1,y:2008,mon:3,d:29, h:21, min:0, s:0, ns:0}, inh:"EarthH"},
         {ty:"span", st:{mon:3,d:19,thruD:25,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:19,thruD:25,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2016}, last:{era:1,y:2018}},
         {ty:"span", st:{mon:3,d:22,thruD:28,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:22,thruD:28,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2024}},
         {ty:"span", st:{mon:3,d:23,thruD:29,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:23,thruD:29,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2013}, last:{era:1,y:2015}},
@@ -153,6 +153,6 @@
 
    ],
     tpls:{
-        "Public Sector Holiday":{ty:"D", st:{era:1,y:2023, mon:1,d:23}, ttls:{"en":"Public Sector Holiday"}},
+        "Public Sector Holiday":{ty:"D", st:{era:1,y:2023,mon:1,d:23}, ttls:{"en":"Public Sector Holiday"}},
     }
 }

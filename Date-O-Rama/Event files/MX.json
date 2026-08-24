@@ -66,9 +66,9 @@
         {ty:"D", st:{mon:10,d:1}, inh:"NCoffeeD"},
         {inh:"GrandparentsD", ty:"D", st:{mon:8,d:28}},
         {ty:"D", st:{mon:3,d:31}, ttls:{"en":"Day of the Taco","es":"Día del Taco"}, nts:{"en":"International Taco Day","es":"Día Internacional del Taco"}, urls:{"en":"https://en.wikipedia.org/wiki/Taco_Day"}, mog:"🌮", fst:{era:1,y:2007}},
-        {ty:"D", st:{era:1,y:2012, mon:12,d:1}, inh:"Change of Federal Government"},
-        {ty:"D", st:{era:1,y:2018, mon:12,d:1}, inh:"Change of Federal Government"},
-        {ty:"D", st:{era:1,y:2024, mon:10,d:1}, inh:"Change of Federal Government"},
+        {ty:"D", st:{era:1,y:2012,mon:12,d:1}, inh:"Change of Federal Government"},
+        {ty:"D", st:{era:1,y:2018,mon:12,d:1}, inh:"Change of Federal Government"},
+        {ty:"D", st:{era:1,y:2024,mon:10,d:1}, inh:"Change of Federal Government"},
         {ty:"D", st:{mon:9,d:29}, ttls:{"en":"National Corn Day"}, nts:{"en":"National Maize Day"}, urls:{"en":"https://www.checkiday.com/55df041d94e4df8d9713960660ed98f9/national-corn-day-mexico"}, mog:"🌽", fst:{era:1,y:2019}},
         {ty:"nD", st:{mon:11,d:1}, end:{mon:11,d:2}, ttls:{"ar":"يوم الموتى","ast":"Día de Muertos","az":"Ölülər Günü","be":"Дзень мёртвых","bg":"Ден на мъртвите","bn":"ডে অফ দ্য ডেড","ca":"Dia de Morts","ckb":"ڕۆژی مردووەکان","cs":"Den mrtvých","cy":"Diwrnod y Meirw","da":"De Dødes Dag","de":"Tag der Toten","el":"Ημέρα των νεκρών","en":"Day of the Dead","eo":"Tago de la mortintoj","es":"Día de Muertos","et":"Mehhiko surnutepäev","eu":"Hilen Eguna","fa":"روز مردگان","fi":"Kuolleiden päivä","fr":"Jour des morts","fy":"Dei fan de Deaden","gl":"Día dos mortos","he":"יום המתים","hy":"Մեռյալների օր","hyw":"Մեռեալներու Օր","id":"Día de Muertos","it":"Giorno dei morti","ja":"死者の日","jv":"Dina Pati","ka":"გარდაცვლილთა დღე","ko":"망자의 날","ku":"Roja miriyan","la":"Dies Mortuorum","lad":"Diada de Muertos","lt":"Mirusiųjų diena","ml":"മരിച്ചവരുടെ ദിവസം","ms":"Hari Orang Mati","nb":"De dødes dag","nl":"Dag van de Doden","nn":"Día de Muertos","pa":"ਮੁਰਦਿਆਂ ਦਾ ਦਿਨ","pl":"Dzień Zmarłych","pt":"Dia dos Mortos","ro":"Día de los Muertos","ru":"День мёртвых","sq":"Dita e të Vdekurve","sr":"Дан мртвих","sv":"De dödas dag","ta":"இறந்தோர் நாள்","th":"วันแห่งคนตาย","tr":"Ölüler Günü","uk":"День мертвих","vi":"Día de Muertos","yi":"טאג פון די טויטע","yue":"亡靈節","zh":"亡灵节"}, nts:{"es":"Día de los Muertos"}, urls:{"en":"https://www.daysoftheyear.com/days/day-of-the-dead/"}, mog:"💀"},
         {ty:"nD", st:{mon:11,d:13,thruD:19, durD: 2,wkd:[7]}, ttls:{"en":"El Buen Fin","es":"El Buen Fin","pt":"El Buen Fin"}, urls:{"en":"https://en.wikipedia.org/wiki/El_Buen_Fin"}, mog:"🗓️"},
@@ -76,6 +76,6 @@
         {ty:"D", st:{mon:7,d:24}, ttls:{"en":"National Tequila Day","he":"יום הטקילה הלאומי"}, nts:{"en":"Tequila Day"}, mog:"🥃", urls:{"en":"https://www.daysoftheyear.com/days/tequila-day/"}, fst:{era:1,y:2018}},
     ],
     tpls:{
-        "Change of Federal Government":{ty:"D", st:{era:1,y:2024, mon:10,d:1}, ttls:{"en":"Change of Federal Government","es":"Transmisión del Poder Ejecutivo Federal"}, urls:{"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
+        "Change of Federal Government":{ty:"D", st:{era:1,y:2024,mon:10,d:1}, ttls:{"en":"Change of Federal Government","es":"Transmisión del Poder Ejecutivo Federal"}, urls:{"en":"https://www.officeholidays.com/holidays/mexico/new-president-of-mexico"}},
     }
 }

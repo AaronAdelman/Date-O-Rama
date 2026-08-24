@@ -19,7 +19,7 @@
         {ty:"D", st:{mon:5,d:6,wkd:[2]}, inh:"Restoration of Independence Day (in lieu)", fst:{era:1,y:1990}},
         {ty:"D", st:{mon:5,d:5,wkd:[6]}, inh:"Restoration of Independence Day (bridge day)", urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, fst:{era:1,y:1990}},
         {ty:"D", st:{mon:5,wkd:[1],nth:2}, inh:"MothersD"},
-        {ty:"D", st:{era:1,y:2023, mon:5,d:29}, urls:{"en":"https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, ttls:{"en":"Day of the Bronze Medal Win"}, mog:"🥉"},
+        {ty:"D", st:{era:1,y:2023,mon:5,d:29}, urls:{"en":"https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, ttls:{"en":"Day of the Bronze Medal Win"}, mog:"🥉"},
         {ty:"D", st:{mon:6,d:23}, inh:"Midsummer Eve", urls:{"en":"https://www.officeholidays.com/holidays/latvia/midsummer-eve"}},
         {ty:"D", st:{mon:6,d:24}, inh:"Midsummer", urls:{"en":"https://nationaltoday.com/jani/"}, fst:{era:1,y:1990}},
         {ty:"D", st:{mon:9,wkd:[1],nth:2}, inh:"FathersD"},

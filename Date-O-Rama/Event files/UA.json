@@ -130,7 +130,7 @@
         {ty:"D", st:{mon:8,d:6}, inh:"AirForceD", fst:{era:1,y:2007}},
         {ty:"D", st:{mon:6,d:9}, inh:"FriendshipD"},
         {ty:"D", st:{mon:1,d:25}, inh:"Tatiana Day"},
-        {ty:"span", st:{era:1,y:2008, mon:3,d:29, h:20, min:0, s:0, ns:0}, end:{era:1,y:2008, mon:3,d:29, h:21, min:0, s:0, ns:0}, inh:"EarthH"},
+        {ty:"span", st:{era:1,y:2008,mon:3,d:29, h:20, min:0, s:0, ns:0}, end:{era:1,y:2008,mon:3,d:29, h:21, min:0, s:0, ns:0}, inh:"EarthH"},
         {ty:"span", st:{mon:3,d:19,thruD:25,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:19,thruD:25,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2016}, last:{era:1,y:2018}},
         {ty:"span", st:{mon:3,d:22,thruD:28,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:22,thruD:28,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2024}},
         {ty:"span", st:{mon:3,d:23,thruD:29,wkd:[7], h:20, min:30, s:0, ns:0}, end:{mon:3,d:23,thruD:29,wkd:[7], h:21, min:30, s:0, ns:0}, inh:"EarthH", fst:{era:1,y:2013}, last:{era:1,y:2015}},
