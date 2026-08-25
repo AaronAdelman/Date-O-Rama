@@ -121,7 +121,7 @@
         {ty:"D", st:{mon:12,wkd:[4],nth:1}, ttls:{"en":"Special Kids Day"}, urls:{"en":"https://www.specialkidsday.org/"}, fst:{era:1,y:1990}, mog:"👦👧"},
         {ty:"D", st:{mon:12,wkd:[5],nth:3}, inh:"NReGiftingD", fst:{era:1,y:2008}},
         {ty:"D", st:{mon:12,wkd:[6],nth:3}, ttls:{"en":"National Ugly Christmas Sweater Day"}, nts:{"en":"Ugly Christmas Sweater Day\nNational Ugly Sweater Day\nCreated by Gregor Robertson"}, fst:{era:1,y:2011}, urls:{"en":"https://www.nationaluglychristmassweaterday.org/"}, mog:"🦺"},
-        {ty:"nD", st:{mon:12,d:1,thruD:7,wkd:[6], durD: 3}, ttls:{"en":"Candle Day"}, nts:{"en":"This observance is geared to sell people candles.\nCreated by Bath & Body Works"}, mog:"🕯️", fst:{era:1,y:2013}, urls:{"en":"https://www.daysoftheyear.com/days/candle-day/"}},
+        {ty:"nD", st:{mon:12,d:1,thruD:7,wkd:[6],durD:3}, ttls:{"en":"Candle Day"}, nts:{"en":"This observance is geared to sell people candles.\nCreated by Bath & Body Works"}, mog:"🕯️", fst:{era:1,y:2013}, urls:{"en":"https://www.daysoftheyear.com/days/candle-day/"}},
         {ty:"D", st:{mon:12,wkd:[7],nth:1}, ttls:{"en":"Coats and Toys for Kids Day"}, nts:{"en":"Coats & Toys for Kids Day\nCreated by the Salvation Army"}, urls:{"en":"https://www.daysoftheyear.com/days/coats-and-toys-for-kids-day/"}, fst:{era:1,y:1983}, mog:"🧥🧸"},
         {ty:"D", st:{mon:12,wkd:[7],nth:2}, ttls:{"en":"Gingerbread Decorating Day"}, fst:{era:1,y:2019}, urls:{"en":"https://www.daysoftheyear.com/days/gingerbread-decorating-day/"}},
         {ty:"D", st:{mon:12,d:13,thruD:19,wkd:[7]}, ttls:{"en":"National Wreaths Across America Day"}, fst:{era:1,y:1992}, nts:{"en":"Created by Morril Worcester"}, urls:{"en":"https://www.wreathsacrossamerica.org/"}},
@@ -192,7 +192,7 @@
             {ty:"nD", st:{mon:10,d:24}, end:{mon:10,d:31}, ttls:{"en":"Bat Appreciation Week"}, urls:{"en":"https://www.daysoftheyear.com/days/bat-appreciation-week/"}, mog:"🦇", fst:{era:1,y:2000}, nts:{"en":"Created by Bat Conservation International"}},
         ]},
         
-        {ty:"nD", st:{mon:12,d:1, durD: 7}, ttls:{"en":"National Cookie Cutter Week"}, nts:{"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, fst:{era:1,y:1996}, subEvts:[
+        {ty:"nD", st:{mon:12,d:1,durD:7}, ttls:{"en":"National Cookie Cutter Week"}, nts:{"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"}, fst:{era:1,y:1996}, subEvts:[
             {ty:"D", st:{mon:12,d:1}, ttls:{"en":"National Cookie Cutter Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-day/"}, fst:{era:1,y:2019}, nts:{"en":"Created by Bobbi Barton"}},
         ]},
         

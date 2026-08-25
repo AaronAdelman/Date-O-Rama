@@ -168,7 +168,7 @@
         {ttls:{"he":"שבועות (יום טוב שני)","en":"Shavu‘oth (yom ṭov sheni)"}, excludeRgns:["IL","PS"], ty:"D", st:{mon:10,d:7}, mog:"⛰️"},
         {ttls:{"he":"אסרו חג שבועות","en":"’Isru Ḥagh Shavu‘oth"}, rgns:["IL","PS"], ty:"D", st:{mon:10,d:7}},
         {ttls:{"he":"אסרו חג שבועות","en":"’Isru Ḥagh Shavu‘oth"}, excludeRgns:["IL","PS"], ty:"D", st:{mon:10,d:8}},
-        {ty:"nD", st:{mon:10,d:6, durD: 7}, ttls:{"he":"זמן הקרבת קרבן חגיגה של שבועות","en":"Time for bringing the Ḥaghighah sacrifice for Shavu‘oth"}},
+        {ty:"nD", st:{mon:10,d:6,durD:7}, ttls:{"he":"זמן הקרבת קרבן חגיגה של שבועות","en":"Time for bringing the Ḥaghighah sacrifice for Shavu‘oth"}},
         {ttls:{"he":"ראש חודש תמוז","en":"Ro’sh Ḥodhesh Tammuz"}, ty:"nD", st:{mon:10,d:30}, end:{mon:11,d:1}, inh:"*ראש חודש*"},
         {inh:"צום אב", ty:"D", st:{mon:12,d:9,wkd:[1, 2, 3, 4, 5, 6]}},
         {inh:"צום אב", ty:"D", st:{mon:12,d:10,wkd:[1]}},

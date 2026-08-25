@@ -15,7 +15,7 @@
         {ty:"D", st:{mon:11,d:28}, inh:"NavyD"},
         {ty:"D", st:{mon:6,d:4}, ttls:{"en":"Demise of Imam Khomeini"}, inh:"*DA*", urls:{"en":"https://www.officeholidays.com/holidays/iran/demise-of-imam-khomeini"}, fst:{era:1,y:1989}},
         
-        {ty:"nD", st:{era:1,y:2026,mon:7,d:4, durD: 3}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/iran/ayatollah-ali-khameneis-funeral"}},
+        {ty:"nD", st:{era:1,y:2026,mon:7,d:4,durD:3}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/iran/ayatollah-ali-khameneis-funeral"}},
 
     ]
 }

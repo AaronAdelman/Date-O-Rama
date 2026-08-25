@@ -25,7 +25,7 @@
         {ty:"D", st:{mon:10,d:3}, ttls:{"en":"Francisco Morazán’s Day","es":"Día del Soldado"}, urls:{"en":"https://nationaltoday.com/francisco-morazans-day/"}, fst:{era:1,y:1792}, nts:{"en":"Francisco Morazan’s Birthday\nSoldier’s Day","he":"יום החייל"}, inh:"*BD*"},
         {ty:"D", st:{mon:10,d:5}, inh:"Francisco Morazán’s Day (in lieu)", fst:{era:1,y:2022}, last:{era:1,y:2024}},
         {ty:"D", st:{mon:10,d:1,thruD:2,wkd:[5]}, inh:"Francisco Morazán’s Day (in lieu)", fst:{era:1,y:2025}, last:{era:1,y:2026}},
-        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[4], durD: 3}, ttls:{"en":"Morazánica Week","es":"Semana Morazánica"}, urls:{"en":"https://nationaltoday.com/semana-morazanica-in-honduras/"}, fst:{era:1,y:2014}},
+        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[4],durD:3}, ttls:{"en":"Morazánica Week","es":"Semana Morazánica"}, urls:{"en":"https://nationaltoday.com/semana-morazanica-in-honduras/"}, fst:{era:1,y:2014}},
         {ty:"D", st:{mon:10,d:12}, ttls:{"en":"Discovery of America Day","es":"Día del Descubrimiento de América"}, urls:{"en":"https://nationaltoday.com/honduras-discovery-of-america-day/"}, fst:{era:1,y:2015}},
         {ty:"D", st:{era:1,y:2022,mon:10,d:6}, inh:"Discovery of America Day (in lieu)"},
         {ty:"D", st:{mon:10,d:4}, inh:"Discovery of America Day (in lieu)", fst:{era:1,y:2023}, last:{era:1,y:2024}},

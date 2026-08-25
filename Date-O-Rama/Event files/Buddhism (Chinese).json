@@ -3,6 +3,7 @@
     defLocale:"en",
     cal:"chi",
     color:{name:"orange"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Buddhist_holidays"},
     evts:[
         {ty:"D", st:{mon:7,d:15}, inh:"Ghost Festival", urls:{"en":"https://nationaltoday.com/spirit-festival/"}},
     ]

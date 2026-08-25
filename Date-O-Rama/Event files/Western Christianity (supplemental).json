@@ -48,7 +48,7 @@
         {ty:"D", st:{mon:3,d:1}, inh:"StDavid", fst:{era:1,y:1120}},
         {ty:"D", st:{mon:3,d:1}, ttls:{"en":"National March First Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-march-first-day/"}, fst:{era:1,y:2020}, nts:{"en":"Created by Alicea Joy Davis"}},
         {ty:"D", st:{mon:3,d:10}, ttls:{"en":"Salvation Army Day"}, urls:{"en":"https://www.daysoftheyear.com/days/salvation-army-day/"}, mog:"🛡️"},
-        {ty:"nD", st:{mon:5,d:9,thruD:15,wkd:[2], durD: 7}, ttls:{"en":"National Salvation Army Week"}, urls:{"en":"https://www.salvationarmyusa.org/about-us/national-salvation-army-week/"}, mog:"🛡️", fst:{era:1,y:1954}, nts:{"en":"Created by Dwight D. Eisenhower"}},
+        {ty:"nD", st:{mon:5,d:9,thruD:15,wkd:[2],durD:7}, ttls:{"en":"National Salvation Army Week"}, urls:{"en":"https://www.salvationarmyusa.org/about-us/national-salvation-army-week/"}, mog:"🛡️", fst:{era:1,y:1954}, nts:{"en":"Created by Dwight D. Eisenhower"}},
         {ty:"D", st:{mon:3,d:13}, ttls:{"en":"National Good Samaritan Day"}, nts:{"en":"This observance has no connection with actual Samaritans."}, urls:{"en":"https://www.daysoftheyear.com/days/national-good-samaritan-day/"}, fst:{era:1,y:1970}},
         {ty:"D", st:{mon:3,d:14}, ttls:{"en":"National Genealogy Day","he":"יום הגנאולוגיה הלאומי"}, urls:{"en":"https://www.daysoftheyear.com/days/genealogy-day/"}, mog:"👨‍👩‍👧‍👦", fst:{era:1,y:2013}, nts:{"en":"Created by Christ Church, United Presbyterian and Methodist of Limerick, Ireland"}},
         {ty:"D", st:{mon:3,d:29}, ttls:{"en":"Taiwan Youth Day","zh":"台灣青年日"}, nts:{"en":"TYD"}, fst:{era:1,y:2008}, mog:"🇹🇼", urls:{"en":"https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
@@ -84,7 +84,7 @@
         {ty:"M", st:{mon:11}, ttls:{"en":"No Nut November"}, nts:{"en":"Promotes a bizarre obsession with self-control that no one asked for."}},
         {ty:"D", st:{mon:9,wkd:[1],nth:1}, ttls:{"en":"National Gospel Music Day"}, urls:{"en":"https://www.nationaldayarchives.com/day/national-gospel-music-day/"}, nts:{"en":"Created by the Gospel Industry Coalition"}, mog:"🎙️", fst:{era:1,y:2025}},
         {ty:"nD", st:{mon:1,d:18}, end:{mon:1,d:25}, ttls:{"ca":"Setmana de Pregària per la Unitat dels Cristians","cs":"Týden modliteb za jednotu křesťanů","en":"Week of Prayer for Christian Unity","es":"Octavario por la unidad de los cristianos","fr":"Œcuménisme#Semaine de prière pour l’unité des chrétiens","hr":"Molitvena osmina za jedinstvo kršćana","hu":"Ökumenikus imahét","id":"Pekan Doa untuk Persatuan Kristen","it":"Settimana di preghiera per l’unità dei cristiani","ko":"그리스도교 일치 기도 주간","pl":"Tydzień Modlitw o Jedność Chrześcijan","ru":"Неделя молитв о единстве христиан"}, urls:{"en":"https://www.oikoumene.org/resources/week-of-prayer-for-christian-unity"}, fst:{era:1,y:1908}, nts:{"en":"Created by Father Paul Wattson"}},
-        {ty:"nD", st:{mon:11,d:17,thruD:23,wkd:[1], durD: 8}, ttls:{"en":"National Bible Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-bible-week/"}, fst:{era:1,y:1941}, nts:{"en":"Created by the National Bible Association"}},
+        {ty:"nD", st:{mon:11,d:17,thruD:23,wkd:[1],durD:8}, ttls:{"en":"National Bible Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-bible-week/"}, fst:{era:1,y:1941}, nts:{"en":"Created by the National Bible Association"}},
         {ty:"nD", st:{mon:3,d:8}, end:{mon:3,d:14}, ttls:{"en":"Catholic Sisters Week"}, urls:{"en":"https://c4wr.org/catholic-sisters-week/"}, fst:{era:1,y:2014}, nts:{"en":"Created by Molly Murphy MacGregor"}},
         {ty:"nD", st:{mon:6,d:3,thruD:9,wkd:[7]}, end:{mon:6,d:11,thruD:17,wkd:[1]}, ttls:{"en":"Love Your Burial Ground Week"}, urls:{"en":"https://www.daysoftheyear.com/days/love-your-burial-ground-week/"}, nts:{"en":"Cherishing Churchyards Week"}, fst:{era:1,y:2013}, mog:"🪦"},
         {ty:"W", st:{mon:2,fullWk:2}, ttls:{"en":"Chastity Week"}, urls:{"en":"https://www.daysoftheyear.com/days/chastity-week/"}, fst:{era:1,y:1998}, nts:{"en":"Created by the American Life League"}},
@@ -94,7 +94,7 @@
         {ty:"nD", st:{mon:1,d:22,thruD:28,wkd:[1]}, end:{mon:1,d:28,thruMon:2,thruD:3,wkd:[7]}, ttls:{"en":"Catholic Schools Week"}, urls:{"en":"https://www.ncea.org/csw/CSW/Catholic_Schools_Week.aspx"}, fst:{era:1,y:1974}, nts:{"en":"Created by National Catholic Educational Association (NCEA) and the United States Conference of Catholic Bishops"}},
         {ty:"D", st:{mon:4,d:12}, ttls:{"en":"Wear a Star Day"}, urls:{"en":"https://www.daysoftheyear.com/days/wear-a-star-day/"}, fst:{era:1,y:2010}, mog:"⭐", nts:{"en":"Created by the [R] Project"}},
         {ty:"nD", st:{mon:6,d:16}, end:{mon:6,d:22}, inh:"NForgiveness Week", fst:{era:1,y:2004}, last:{era:1,y:2024}},
-        {ty:"nD", st:{mon:6,d:22,thruD:28,wkd:[6], durD: 3}, inh:"NForgiveness Week", fst:{era:1,y:2025}},
+        {ty:"nD", st:{mon:6,d:22,thruD:28,wkd:[6],durD:3}, inh:"NForgiveness Week", fst:{era:1,y:2025}},
         
         {ty:"M", st:{mon:7}, ttls:{"en":"“Talk to Us”"}, urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us/"}, nts:{"en":"Created by the Samaritans"}, fst:{era:1,y:2016}, subEvts:[
             {ty:"D", st:{d:24}, ttls:{"en":"“Talk to Us” Day"}, urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"}, nts:{"en":"Talk to Us"}, fst:{era:1,y:2016}},

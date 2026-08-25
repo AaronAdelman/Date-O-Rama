@@ -48,13 +48,13 @@
         {ty:"D", st:{mon:3,d:8}, inh:"MothersD"},
         {ty:"D", st:{mon:6,d:26}, inh:"AirForceD"},
         {ty:"D", st:{mon:4,d:3}, ttls:{"en":"Armenian Appreciation Day"}, urls:{"en":"https://nationaltoday.com/armenian-appreciation-day/"}},
-        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[6], durD: 3}, ttls:{"en":"Tea and Coffee Festival"}, mog:"🫖☕", urls:{"en":"https://www.daysoftheyear.com/days/tea-and-coffee-festival/"}},
+        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[6],durD:3}, ttls:{"en":"Tea and Coffee Festival"}, mog:"🫖☕", urls:{"en":"https://www.daysoftheyear.com/days/tea-and-coffee-festival/"}},
         {ty:"D", st:{mon:10,wkd:[7],nth:2}, ttls:{"en":"Yerevan Day"}, urls:{"en":"https://www.daysoftheyear.com/days/yerevan-day/"}, fst:{era:1,y:1968}},
         {ty:"D", st:{mon:10,d:26}, ttls:{"en":"Pumpkin Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/pumpkin-festival/"}, fst:{era:1,y:2023}},
         {ty:"D", st:{mon:4,d:26}, inh:"BorderGuardsD", fst:{era:1,y:2007}},
         {ty:"D", st:{mon:6,d:24,thruD:30,wkd:[7]}, ttls:{"en":"Haybuis Armenian Herb Festival"}, nts:{"en":"HayBuis Festival\nHayBuis"}, urls:{"en":"https://www.daysoftheyear.com/days/haybuis-armenian-herb-festival/"}, fst:{era:1,y:2015}, mog:"🌿💐"},
         {ty:"nD", st:{mon:8,d:11}, end:{mon:9,d:9}, ttls:{"en":"Navasard","fa":"ناواسارد","ru":"Навасард","ca":"Navasard","pt":"Navassarde","cs":"Navasard","hyw":"Նաւասարդ","hy":"Նավասարդ"}, urls:{"en":"https://www.daysoftheyear.com/days/navasard/"}},
-        {ty:"nD", st:{mon:6,d:1,thruD:7,wkd:[6], durD: 3}, ttls:{"en":"Yerevan Wine Days","fa":"روزهای شراب ایروان","hy":"Երևանի գինու օրեր","ru":"Винные дни Еревана"}, urls:{"en":"https://www.daysoftheyear.com/days/wine-days-festival-in-armenia/"}, nts:{"en":"Wine Days Festival\nCreated by EventToura"}, fst:{era:1,y:2017}, mog:"🍷"},
+        {ty:"nD", st:{mon:6,d:1,thruD:7,wkd:[6],durD:3}, ttls:{"en":"Yerevan Wine Days","fa":"روزهای شراب ایروان","hy":"Երևանի գինու օրեր","ru":"Винные дни Еревана"}, urls:{"en":"https://www.daysoftheyear.com/days/wine-days-festival-in-armenia/"}, nts:{"en":"Wine Days Festival\nCreated by EventToura"}, fst:{era:1,y:2017}, mog:"🍷"},
         {ty:"D", st:{mon:8,d:8}, ttls:{"en":"Honey and Berry Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/honey-and-berry-festival/"}, fst:{era:1,y:2011}, mog:"🍯🫐"},
     ]
 }

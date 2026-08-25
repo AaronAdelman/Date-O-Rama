@@ -50,7 +50,7 @@
         {ty:"D", st:{mon:11,d:20}, inh:"ChildrensD"},
         {ty:"D", st:{mon:3,d:8}, inh:"IWD"},
         {ty:"D", st:{mon:9,d:18}, inh:"NavyD", ttls:{"en":"Day of the Croatian Navy"}},
-        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[6], durD: 3}, ttls:{"en":"Kestenijada"}, mog:"🌰", urls:{"en":"https://www.daysoftheyear.com/days/kestenijada/"}, fst:{era:1,y:1997}},
+        {ty:"nD", st:{mon:10,d:1,thruD:7,wkd:[6],durD:3}, ttls:{"en":"Kestenijada"}, mog:"🌰", urls:{"en":"https://www.daysoftheyear.com/days/kestenijada/"}, fst:{era:1,y:1997}},
         {ty:"D", st:{mon:10,d:18}, ttls:{"en":"Interational Necktie Day"}, nts:{"en":"Cravat Day\nAn celebration of a totally useless fashion accessory that may reduce blood flow to the brain."}, fst:{era:1,y:2008}, urls:{"en":"https://www.daysoftheyear.com/days/necktie-day/"}},
         {ty:"D", st:{mon:1,d:27}, inh:"Holocaust Memorial Day", fst:{era:1,y:2006}, ttls:{"en":"Day of Remembrance of the Holocaust and for the Prevention of Crimes against Humanity"}},
         {ty:"D", st:{mon:8,d:2}, inh:"Roma Holocaust Memorial Day", fst:{era:1,y:2011}},

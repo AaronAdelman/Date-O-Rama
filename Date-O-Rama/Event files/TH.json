@@ -121,9 +121,9 @@
         {ty:"D", st:{mon:9,d:15}, ttls:{"en":"Silpa Bhirasri Day","th":"วันศิลป์ พีระศรี"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         
-        {ty:"nD", st:{mon:11,d:14,thruD:20,wkd:[7], durD: 2}, ttls:{"en":"Surin Elephant Round-up","ml":"സുരിൻ എലിഫന്റ് റൗണ്ട്-അപ്പ്"}, nts:{"en":"Elephant Round-Up in Surin\nSurin Elephant Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, mog:"🐘"},
-        {ty:"nD", st:{mon:11,d:23,thruD:29,wkd:[6], durD: 2}, ttls:{"en":"Pattaya International Fireworks Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/pattaya-international-fireworks-festival/"}, mog:"🎆", fst:{era:1,y:2022}, nts:{"en":"Created by the Tourism Authority of Thailand"}},
-        {ty:"nD", st:{mon:2,d:1,thruD:7,wkd:[6], durD: 3}, ttls:{"en":"Chiang Mai Flower Festival","th":"มหกรรม ไม้ ดอกไม้ ประดับ จังหวัด เชียงใหม่"}, urls:{"en":"https://www.daysoftheyear.com/days/chiang-mai-flower-festival/"}, mog:"💐", fst:{era:1,y:1970}},
+        {ty:"nD", st:{mon:11,d:14,thruD:20,wkd:[7],durD:2}, ttls:{"en":"Surin Elephant Round-up","ml":"സുരിൻ എലിഫന്റ് റൗണ്ട്-അപ്പ്"}, nts:{"en":"Elephant Round-Up in Surin\nSurin Elephant Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/elephant-round-up-in-surin/"}, mog:"🐘"},
+        {ty:"nD", st:{mon:11,d:23,thruD:29,wkd:[6],durD:2}, ttls:{"en":"Pattaya International Fireworks Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/pattaya-international-fireworks-festival/"}, mog:"🎆", fst:{era:1,y:2022}, nts:{"en":"Created by the Tourism Authority of Thailand"}},
+        {ty:"nD", st:{mon:2,d:1,thruD:7,wkd:[6],durD:3}, ttls:{"en":"Chiang Mai Flower Festival","th":"มหกรรม ไม้ ดอกไม้ ประดับ จังหวัด เชียงใหม่"}, urls:{"en":"https://www.daysoftheyear.com/days/chiang-mai-flower-festival/"}, mog:"💐", fst:{era:1,y:1970}},
         {ty:"D", st:{mon:9,wkd:[7],nth:3}, ttls:{"en":"Beach Cleanup Day"}, urls:{"en":"https://www.daysoftheyear.com/days/beach-cleanup-day-in-thailand/"}, fst:{era:1,y:1999}},
     ],
     tpls:{

@@ -244,7 +244,7 @@
         {ty:"D", st:{mon:2,d:14}, inh:"Parents’ Day", fst:{era:1,y:2007}, ttls:{"as":"পিতৃ-মাতৃ পূজন দিৱস","en":"Parents’ Worship Day","hi":"मातृ-पितृ पूजन दिवस","te":"మాతృపితృ పూజా దినోత్సవం"}, urls:{"en":"https://en.wikipedia.org/wiki/Parents%27_Worship_Day"}},
         {ty:"D", st:{mon:8,d:9}, ttls:{"en":"Adivasi Divas"}, inh:"ID of the World’s Indigenous Peoples", urls:{"en":"https://nationaltoday.com/adivasi-divas/"}},
         {ty:"D", st:{mon:12,d:18}, ttls:{"en":"Guru Ghasidas Jayanti"}, urls:{"en":"https://nationaltoday.com/guru-ghasidas-jayanti-in-chhattisgarh/"}, locs:{"en":"Chhattisgarh"}},
-        {ty:"D", st:{mon:1,d:13}, ttls:{"en":"Lohri"}, urls:{"en":"https://nationaltoday.com/lohri/"}, mog:"🔥"},
+        {ty:"D", st:{mon:1,d:13}, ttls:{"ar":"لوهري","as":"লহৰী","bcl":"Lohri","bh":"लोहड़ी","bn":"লোহরি","en":"Lohri","fa":"لوهری","fr":"Lohri","hi":"लोहड़ी","id":"Lohri","kn":"ಲೋಹರಿ","ml":"ലോഹ്ഡി","mr":"लोहरी","nn":"Lohri","pa":"ਲੋਹੜੀ","pl":"Lohri","pnb":"لوہڑی","ru":"Лохри","sat":"ᱞᱳᱦᱚᱰᱤ","sv":"Lohri","ta":"உலோகிரி","te":"లోహ్రీ","th":"โลหฑี","uk":"Лохрі","ur":"لوہڑی (تہوار)"}, urls:{"en":"https://nationaltoday.com/lohri/"}, mog:"🔥"},
         {ty:"D", st:{mon:1,d:14}, ttls:{"en":"National Undhiyu Day"}, urls:{"en":"https://nationaltoday.com/national-undhiyu-day/"}},
         {ty:"D", st:{mon:1,d:23}, ttls:{"en":"Parakram Diwas"}, urls:{"en":"https://nationaltoday.com/parakram-diwas/"}},
         {ty:"D", st:{mon:3,d:15}, ttls:{"en":"Ramakrishna Jayanti"}, urls:{"en":"https://nationaltoday.com/ramakrishna-jayanti/"}},

@@ -25,7 +25,7 @@
         {ty:"D", st:{mon:5,d:17}, ttls:{"en":"Birthday of the Raja of Perlis","ms":"Hari Keputeraan Raja Perlis"}, urls:{"en":"https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, inh:"*BD*", fst:{era:1,y:2022}},
         {ty:"D", st:{mon:5,d:18,wkd:[2]}, ttls:{"en":"Birthday of the Raja of Perlis (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"}, inh:"*BD*", fst:{era:1,y:2022}},
         {ty:"D", st:{mon:5,d:22}, ttls:{"en":"The Sultan of Pahang Hol","ms":"Hari Hol Pahang"}, urls:{"en":"https://www.officeholidays.com/holidays/malaysia/pahang/the-sultan-of-pahang-hol"}, fst:{era:1,y:2021}, inh:"*DA*"},
-        {ty:"nD", st:{mon:5,d:30, durD: 2}, ttls:{"ar":"كاماتان","dtp":"Tadau Kaamatan","en":"Kaamatan","iba":"Kaamatan","id":"Tadau Kaamatan","ko":"카아마탄","la":"Kaamatan","ms":"Pesta Kaamatan","yue":"豐收節","zh":"豐收節"}, nts:{"en":"Pesta Kaamatan\nKaamatan Festival\nHarvest Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/kaamatan-festival/"}},
+        {ty:"nD", st:{mon:5,d:30,durD:2}, ttls:{"ar":"كاماتان","dtp":"Tadau Kaamatan","en":"Kaamatan","iba":"Kaamatan","id":"Tadau Kaamatan","ko":"카아마탄","la":"Kaamatan","ms":"Pesta Kaamatan","yue":"豐收節","zh":"豐收節"}, nts:{"en":"Pesta Kaamatan\nKaamatan Festival\nHarvest Festival"}, urls:{"en":"https://www.daysoftheyear.com/days/kaamatan-festival/"}},
         {ty:"nD", st:{mon:6,d:1}, end:{mon:6,d:2}, inh:"Gawai Dayak", fst:{era:1,y:1963}},
         {ty:"D", st:{mon:6,d:3,wkd:[2, 3]}, inh:"Gawai Dayak (in lieu)", fst:{era:1,y:1963}},
         {ty:"D", st:{mon:6,d:4,wkd:[4, 5]}, inh:"Gawai Dayak (in lieu)", fst:{era:1,y:1963}},
