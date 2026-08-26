@@ -1941,6 +1941,7 @@
         {ty:"D", st:{mon:8,d:26}, ttls:{"en":"National Glitter Day"}, nts:{"en":"Glitter Day"}, urls:{"en":"https://digitalhygge.com/national-glitter-day/"}},
         {ty:"D", st:{mon:8,d:26}, ttls:{"en":"National Spark the World Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-spark-the-world-day/"}, fst:{era:1,y:2020}, mog:"❇️", nts:{"en":"Created by Simon T. Bailey"}},
         {ty:"D", st:{mon:8,d:26}, ttls:{"en":"National Toilet Paper Day"}, nts:{"en":"In bad taste, not a day worth celebrating."}, urls:{"en":"https://www.daysoftheyear.com/days/national-toilet-paper-day/"}},
+        {ty:"D", st:{mon:8,d:26}, ttls:{"en":"National McChicken Day"}, urls:{"en":"https://www.checkiday.com/f56794a3fbd074a18e4637565efd54a6/national-mcchicken-day"}, fst:{era:1,y:2024}},
         {ty:"D", st:{mon:8,d:27}, ttls:{"en":"Kiss Me Day"}, nts:{"en":"First Kiss Day\nThis observance commemorates the first kiss of Popeye and Olive Oyl."}, urls:{"en":"https://www.checkiday.com/29fb4a76e0b5b8612f33b7bc1a79764c/kiss-me-day"}, fst:{era:1,y:2013}},
         {ty:"D", st:{mon:8,d:27}, ttls:{"en":"National Banana Lovers Day","he":"יום אוהבי הבננה הבינלאומי "}, urls:{"en":"https://www.daysoftheyear.com/days/banana-lovers-day/"}, mog:"🍌"},
         {ty:"D", st:{mon:8,d:27}, ttls:{"en":"National Just Because Day","he":"יום ״סתם בגלל״ הלאומי"}, urls:{"en":"https://nationaltoday.com/national-just-because-day/"}, fst:{era:1,y:1950}, nts:{"en":"Created by Joseph J. Goodwin"}},
