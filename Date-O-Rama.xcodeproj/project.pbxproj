@@ -74,8 +74,8 @@
 		A50DA51F28686272008D54AE /* SR (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50C28686271008D54AE /* SR (Chinese).json */; };
 		A50DA52028686272008D54AE /* CN (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50D28686271008D54AE /* CN (Chinese).json */; };
 		A50DA52128686272008D54AE /* CN (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50D28686271008D54AE /* CN (Chinese).json */; };
-		A50DA52228686272008D54AE /* VN (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50E28686271008D54AE /* VN (Chinese).json */; };
-		A50DA52328686272008D54AE /* VN (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50E28686271008D54AE /* VN (Chinese).json */; };
+		A50DA52228686272008D54AE /* VN (Vietnamese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50E28686271008D54AE /* VN (Vietnamese).json */; };
+		A50DA52328686272008D54AE /* VN (Vietnamese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50E28686271008D54AE /* VN (Vietnamese).json */; };
 		A50DA52428686272008D54AE /* PH (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50F28686271008D54AE /* PH (Chinese).json */; };
 		A50DA52528686272008D54AE /* PH (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA50F28686271008D54AE /* PH (Chinese).json */; };
 		A50DA52628686272008D54AE /* ID (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51028686272008D54AE /* ID (Chinese).json */; };
@@ -1354,7 +1354,7 @@
 		A50DA50B28686271008D54AE /* TH (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TH (Chinese).json"; sourceTree = "<group>"; };
 		A50DA50C28686271008D54AE /* SR (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "SR (Chinese).json"; sourceTree = "<group>"; };
 		A50DA50D28686271008D54AE /* CN (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "CN (Chinese).json"; sourceTree = "<group>"; };
-		A50DA50E28686271008D54AE /* VN (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "VN (Chinese).json"; sourceTree = "<group>"; };
+		A50DA50E28686271008D54AE /* VN (Vietnamese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "VN (Vietnamese).json"; sourceTree = "<group>"; };
 		A50DA50F28686271008D54AE /* PH (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PH (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51028686272008D54AE /* ID (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ID (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51128686272008D54AE /* KR (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "KR (Chinese).json"; sourceTree = "<group>"; };
@@ -2442,7 +2442,7 @@
 				A5FB22CF2863908600B5042B /* VG.json */,
 				A5364D9D2851001500054BC2 /* VI.json */,
 				A5EFFFC5285B81BD00F2205F /* VN.json */,
-				A50DA50E28686271008D54AE /* VN (Chinese).json */,
+				A50DA50E28686271008D54AE /* VN (Vietnamese).json */,
 				A5CF46542810C4EB0088738D /* VU.json */,
 				A529D3512A151404004D8799 /* Wellcat.json */,
 				A5372CB72C9B4805009149E1 /* Western Christianity (derived).json */,
@@ -2955,7 +2955,7 @@
 				A5D850AC280C9565005247BD /* NL.json in Resources */,
 				A52FA7DC2EFBB5960032A649 /* Baháʼí Faith.json in Resources */,
 				A5E495D728624D7A001BF40C /* EH.json in Resources */,
-				A50DA52328686272008D54AE /* VN (Chinese).json in Resources */,
+				A50DA52328686272008D54AE /* VN (Vietnamese).json in Resources */,
 				A5E8BADB27FCADC30018CD36 /* TN.json in Resources */,
 				A5E4960728624F9A001BF40C /* GU.json in Resources */,
 				A5EFFF34285B5B9E00F2205F /* BF.json in Resources */,
@@ -3510,7 +3510,7 @@
 				A5EFFF59285B5F9B00F2205F /* GG.json in Resources */,
 				A5A132FD2D4BFF5F00152EA9 /* Sesame Street.json in Resources */,
 				A5B999A2286229A300072FD5 /* AX.json in Resources */,
-				A50DA52228686272008D54AE /* VN (Chinese).json in Resources */,
+				A50DA52228686272008D54AE /* VN (Vietnamese).json in Resources */,
 				A5A6405B285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
 				A50DA52A28686272008D54AE /* MO (Chinese).json in Resources */,
 				A5E49617286250DC001BF40C /* KG.json in Resources */,
