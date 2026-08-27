@@ -2,7 +2,7 @@
     ttls:{"*":"MO"},
     "//":"Macau, AKA Macao",
     defLocale:"en",
-    cal:"chi",
+    cal:"chi*",
     color:{r: 0.06, g: 0.46, b: 0.38},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Macau"},
     evts:[

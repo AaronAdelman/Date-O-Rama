@@ -2,7 +2,7 @@
     ttls:{"*":"BN"},
     "//":"Brunei",
     defLocale:"en",
-    cal:"chi",
+    cal:"chi*",
     color:{r: 0.98, g: 0.88, b: 0.13},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Brunei"},
     evts:[

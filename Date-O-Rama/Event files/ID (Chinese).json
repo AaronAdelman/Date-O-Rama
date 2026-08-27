@@ -2,7 +2,7 @@
     ttls:{"*":"ID"},
     "//":"Indonesia",
     defLocale:"en",
-    cal:"chi",
+    cal:"chi*",
     color:{r: 0.94, g: 0.20, b: 0.25},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Indonesia"},
     evts:[

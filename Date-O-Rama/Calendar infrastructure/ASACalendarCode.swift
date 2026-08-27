@@ -59,7 +59,7 @@ enum ASACalendarCode: String, Codable {
     case vietnamese                = "vietnamese"
     case vikram                    = "vikram"
     case banglaSolarTime           = "bangla-s"
-    case dangiSolarTime            = "dangi-s"
+//    case dangiSolarTime            = "dangi-s"
     case gujaratiSolarTime         = "gujarati-s"
     case kannadaSolarTime          = "kannada-s"
     case malayalamSolarTime        = "malayalam-s"
@@ -83,7 +83,8 @@ enum ASACalendarCode: String, Codable {
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
-    
+    case allChineseMonthsWeeksDays = "chi*"
+
     case allSupportingTimeZones      = "tz*"
     case allSupportingEarthLocations = "xloc*"
 } // enum ASACalendarCode:  String
@@ -93,7 +94,7 @@ extension ASACalendarCode {
     /// An “abstract” calendar code represents a group of calendars, not an individual calendar which can be manifested.
     var isAbstract: Bool {
         switch self {
-        case .allEarth, .allHebrew, .allHebrewSolarTime, .allIslamic, .allIslamicSolarTime, .allGregorianMonthsWeeksDays, .allSupportingTimeZones, .allSupportingEarthLocations, .allEthiopic:
+        case .allEarth, .allHebrew, .allHebrewSolarTime, .allIslamic, .allIslamicSolarTime, .allGregorianMonthsWeeksDays, .allChineseMonthsWeeksDays, .allSupportingTimeZones, .allSupportingEarthLocations, .allEthiopic:
             return true
             
         default:
@@ -123,7 +124,9 @@ extension ASACalendarCode {
         case .julianDay, .reducedJulianDay, .modifiedJulianDay, .truncatedJulianDay, .dublinJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie, .marsSolDate, .frenchRepublican, .hebrewMA, .julian, .bahaiSolarTime:
             return NSLocalizedString(self.rawValue, comment: "")
             
-        case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:
+        case .hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .bangla,
+//                .dangi,
+                .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese, .vikram:
             let identifier = self.equivalentCalendarIdentifier
             let shortVersion: String = Locale.current.localizedString(for: identifier!) ?? "???"
             return String.localizedStringWithFormat(NSLocalizedString("%@ (midnight date start)", comment: ""), shortVersion)
@@ -196,7 +199,7 @@ extension ASACalendarCode {
     var isSunriseTransitionCalendar: Bool {
         switch self {
             case .banglaSolarTime,
-                .dangiSolarTime,
+//                .dangiSolarTime,
                 .gujaratiSolarTime,
                 .kannadaSolarTime,
                 .malayalamSolarTime,
@@ -273,6 +276,15 @@ extension ASACalendarCode {
         } // switch self
     } // var isGregorianMonthWeeksDaysCalendar: Bool
     
+    var isChineseMonthWeeksDaysCalendar: Bool {
+        switch self {
+        case .chinese, .dangi: return true
+        
+        default:
+            return false
+        }
+    }
+    
     var isFrenchRepublicanCalendar: Bool {
         switch self {
         case .frenchRepublican:
@@ -338,7 +350,9 @@ extension ASACalendarCode {
                    identifier = nil
                }
                
-           case .dangi, .dangiSolarTime:
+           case .dangi
+//               , .dangiSolarTime
+               :
                if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .dangi
                } else {
@@ -415,7 +429,7 @@ extension ASACalendarCode {
                 .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .banglaSolarTime, .malayalamSolarTime, .odiaSolarTime, .tamilSolarTime, .bahai, .bahaiSolarTime:
             return .solar
             
-        case .chinese, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu, .vietnameseSolarTime, .vikramSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .teluguSolarTime:
+        case .chinese, .dangi, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu, .vietnameseSolarTime, .vikramSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .teluguSolarTime:
             return .lunisolar
             
         case .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura, .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime:
@@ -435,8 +449,10 @@ extension ASACalendarCode {
             return [.buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian, .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .chinese,
                     .hebrewGRA, .hebrewMA,
                     .islamicSolarTime, .islamicCivilSolarTime, .islamicTabularSolarTime, .islamicUmmAlQuraSolarTime,
-//                .bangla, .dangi, .gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese,
-                    .vikram,
+//                .bangla,
+                    .dangi,
+                    //.gujarati, .kannada, .malayalam, .marathi, .odia, .tamil, .telugu, .vietnamese,
+//                    .vikram,
                     .bahaiSolarTime, .vikramSolarTime, .banglaSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
@@ -500,6 +516,10 @@ extension ASACalendarCode {
             return true
         }
         
+        if self == .allChineseMonthsWeeksDays && otherCalendarCode.isChineseMonthWeeksDaysCalendar {
+            return true
+        }
+        
         if self == .allSupportingTimeZones && !otherCalendarCode.isJulianDayCalendar {
             return true
         }
@@ -542,7 +562,7 @@ extension ASACalendarCode {
         case .buddhist:
             return [regionCode + " (Buddhist)"]
 
-        case .chinese:
+        case .chinese, .dangi:
             return [regionCode + " (Chinese)"]
             
         case .coptic:

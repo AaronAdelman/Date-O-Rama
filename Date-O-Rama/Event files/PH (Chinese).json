@@ -2,7 +2,7 @@
     ttls:{"*":"PH"},
     "//":"Philippines",
     defLocale:"en",
-    cal:"chi",
+    cal:"chi*",
     color:{r: 0.96, g: 0.83, b: 0.29},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     evts:[
