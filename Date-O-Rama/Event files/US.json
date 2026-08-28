@@ -657,7 +657,7 @@
         {ty:"nD", st:{mon:6,d:14}, end:{mon:7,d:4}, ttls:{"en":"Honor America Days"}, urls:{"en":"https://www.checkiday.com/bece0f37da7672dc8b4f198975e455a9/honor-america-days"}, fst:{era:1,y:1998}, nts:{"en":"Created by Bill Clinton"}},
         {ty:"nD", st:{mon:6,d:21,thruD:27,wkd:[1]}, end:{mon:6,d:27,thruMon:7,thruD:3,wkd:[7]}, ttls:{"en":"DeafBlind Awareness Week"}, urls:{"en":"https://www.daysoftheyear.com/days/deafblind-awareness-week/"}, inh:"*MedAw*", fst:{era:1,y:1984}},
         {ty:"nD", st:{mon:7,d:1,durD:7}, ttls:{"en":"Clean Beaches Week"}, urls:{"en":"https://nationaltoday.com/clean-beaches-week/"}, fst:{era:1,y:2003}},
-        {ty:"nD", st:{mon:8,d:1,durD:7}, inh:"IClown Week", fst:{era:1,y:1971}},
+        {ty:"nD", st:{mon:8,d:1,durD:7}, inh:"IClownW", fst:{era:1,y:1971}},
         {ty:"nD", st:{mon:9,d:1,durD:7}, ttls:{"en":"National Childhood Injury Prevention Week"}, urls:{"en":"https://www.daysoftheyear.com/days/national-childhood-injury-prevention-week/"}, fst:{era:1,y:1986}, nts:{"en":"Created by the US Congress"}, inh:"*MedAw*"},
         {ty:"nD", st:{mon:9,d:15}, end:{mon:10,d:15}, ttls:{"en":"National Hispanic Heritage Month","es":"Mes Nacional de la Herencia Hispana","ja":"ヒスパニック文化遺産月間","pt":"Mês Nacional da Herança Hispânica","zh":"国家西班牙裔文化遗产月","he":"חודש המורשת ההיספנית"}, urls:{"en":"https://www.hispanicheritagemonth.org/"}, fst:{era:1,y:1988}, nts:{"en":"Created by President Lyndon Johnson"}},
         {ty:"nD", ttls:{"en":"National Crime Prevention Week","he":"השבוע הלאומי למניעת פשיעה"}, st:{mon:9,d:1}, end:{mon:9,d:7}, urls:{"en":"https://nationaltoday.com/national-crime-prevention-week/"}, fst:{era:1,y:1984}, mog:"🐶"},

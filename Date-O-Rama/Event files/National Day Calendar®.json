@@ -6,7 +6,7 @@
     color:{name:"red"},
     fst:{era:1,y:2013},
     evts:[
-        {ty:"D", st:{dOfY: 241}, ttls:{"en":"National Sport Sampling Day"}, mog:"🏉🏐🏀", urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-sport-sampling-day-241st-day-of-the-year"}, fst:{era:1,y:2022}, nts:{"en":"Created by 2-4-1 Care"}},
+        {ty:"D", st:{dOfY:241}, ttls:{"en":"National Sport Sampling Day"}, mog:"🏉🏐🏀", urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-sport-sampling-day-241st-day-of-the-year"}, fst:{era:1,y:2022}, nts:{"en":"Created by 2-4-1 Care"}},
         {ty:"D", st:{misc:"E",offsetD:-44}, inh:"NTartarSauceD", fst:{era:1,y:2017}},
         {ty:"D", st:{misc:"Jun",offsetD:1,wkd:[7]}, inh:"Summersgiving",  fst:{era:1,y:2019}},
         {ty:"D", st:{misc:"Jun",offsetD:2,wkd:[7]}, inh:"Summersgiving",  fst:{era:1,y:2019}},
@@ -209,7 +209,7 @@
         {ty:"D", st:{mon:6,d:20}, ttls:{"en":"National Kouign Amann Day"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-kouign-amann-day-june-20-2"}, fst:{era:1,y:2015}, nts:{"en":"Created by B.Patisserie"}},
         {ty:"D", st:{mon:6,d:21}, ttls:{"en":"National Day of the Gong"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-day-of-the-gong-june-21"}, fst:{era:1,y:2017}, nts:{"en":"Created by Gong to Go"}},
         {ty:"D", st:{mon:6,d:21}, ttls:{"en":"National Wagyu Day"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-wagyu-day-june-21"}, nts:{"en":"Wagyu Day\nCreated by Steve Haddadin"}, mog:"🥩", fst:{era:1,y:2022}},
-        {ty:"D", st:{mon:6,d:22}, inh:"IBeing You Day", fst:{era:1,y:2024}},
+        {ty:"D", st:{mon:6,d:22}, inh:"IBeingYouD", fst:{era:1,y:2024}},
         {ty:"D", st:{mon:6,d:22}, ttls:{"en":"National HVAC Tech Day"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-hvac-tech-day-june-22"}, fst:{era:1,y:2016}, nts:{"en":"Created by ARS/Rescue Rooter"}},
         {ty:"D", st:{mon:6,d:23}, ttls:{"en":"National Detroit-Style Pizza Day"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-detroit-style-pizza-day-june-23"}, fst:{era:1,y:2021}, mog:"🍕", nts:{"en":"National Detroit Style Pizza Day\nBuddy’s Pizza Day"}},
         {ty:"D", st:{mon:6,d:23}, ttls:{"en":"National Hydration Day"}, urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-hydration-day-june-23"}, mog:"🚰", fst:{era:1,y:2016}, nts:{"en":"Created by SafeTGard Corporationh"}},

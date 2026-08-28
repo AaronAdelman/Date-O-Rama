@@ -33,7 +33,7 @@
         {inh:"MothersD", ty:"D", st:{mon:11,wkd:[1],nth:-1}},
         {ty:"D", st:{mon:12,d:31}, inh:"NYE"},
         
-        {ty:"D", st:{dOfY: 256}, inh:"Programmers Day", fst:{era:1,y:2002}},
+        {ty:"D", st:{dOfY:256}, inh:"Programmers Day", fst:{era:1,y:2002}},
         {ty:"D", st:{mon:1,d:12}, ttls:{"en":"Prosecutor General’s Day","ru":"День работника прокуратуры Российской Федерации"}},
         {ty:"D", st:{mon:1,d:25}, inh:"Tatiana Day"},
         {ty:"D", st:{mon:1,d:40}, ttls:{"en":"Aerospace Defense Forces Day","ru":"День космических войск"}},

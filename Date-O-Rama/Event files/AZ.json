@@ -40,7 +40,7 @@
         
         {ty:"D", st:{mon:3,d:8}, inh:"MothersD"},
         {ty:"D", st:{mon:3,d:17}, inh:"ChildrensD"},
-        {ty:"D", st:{mon:6,d:1}, inh:"IChildren’s Day"},
+        {ty:"D", st:{mon:6,d:1}, inh:"IChildrensD"},
         {ty:"D", st:{mon:2,d:14}, inh:"AirForceD"},
         
         {ty:"D", st:{mon:1,d:30}, ttls:{"en":"Day of Azerbaijani Customs"}},

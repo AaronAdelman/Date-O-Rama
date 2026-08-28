@@ -36,6 +36,6 @@
         {ty:"D", st:{mon:5,wkd:[1],nth:-1}, inh:"MothersD"},
         {ty:"D", st:{mon:6,d:12}, inh:"ChildrensD"},
         {ty:"D", st:{mon:9,d:20}, ttls:{"en":"Dessalines’s Birthday"}, nts:{"en":"Dessalines Birthday"}, urls:{"en":"https://www.officeholidays.com/holidays/haiti/dessalines-birthday"}, fst:{era:1,y:2021}, inh:"*BD*"},
-        {ty:"D", st:{mon:8,d:23}, inh:"ID for the Remembrance of the Slave Trade & Its Abolition", fst:{era:1,y:1998}},
+        {ty:"D", st:{mon:8,d:23}, inh:"IDForTheRemembranceofTheSlaveTrade&ItsAbolition", fst:{era:1,y:1998}},
     ]
 }

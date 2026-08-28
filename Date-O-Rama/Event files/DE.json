@@ -48,7 +48,7 @@
 
         {ty:"D", st:{mon:4,d:1}, inh:"AprFoolsD"},
         {ty:"M", st:{mon:2}, inh:"BlackHistoryM", fst:{era:1,y:1990}},
-        {ty:"D", st:{mon:6,d:1}, inh:"IChildren’s Day"},
+        {ty:"D", st:{mon:6,d:1}, inh:"IChildrensD"},
         {ty:"D", st:{mon:5,d:8}, inh:"VE Day"},
         {ty:"D", st:{misc:"E",offsetD:-47}, inh:"Fasnacht Day"},
         {ty:"D", st:{mon:1,d:9}, inh:"AirForceD"},

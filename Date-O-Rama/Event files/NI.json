@@ -28,7 +28,7 @@
         {ty:"D", st:{mon:2,d:1}, inh:"AirForceD"},
         {ty:"D", st:{mon:2,d:21}, ttls:{"en":"Commemoration of General Augusto C. Sandino"}, urls:{"en":"https://www.officeholidays.com/holidays/nicaragua/commemoration-of-general-augusto-c-sandino"}, inh:"*DA*", fst:{era:1,y:1934}},
         {ty:"D", st:{mon:5,d:27}, inh:"ArmyD"},
-        {ty:"D", st:{mon:6,d:1}, inh:"IChildren’s Day"},
+        {ty:"D", st:{mon:6,d:1}, inh:"IChildrensD"},
         {ty:"D", st:{mon:6,d:23}, inh:"FathersD"},
         {ty:"D", st:{mon:7,d:25}, inh:"StJames", urls:{"en":"https://nationaltoday.com/fiesta-de-santiago-nicaragua/"}},
         {ty:"D", st:{mon:7,d:26}, inh:"StAnne"},

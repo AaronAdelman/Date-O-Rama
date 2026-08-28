@@ -28,7 +28,7 @@
         {ty:"D", st:{mon:6,wkd:[1],nth:3}, inh:"FathersD"},
         {ty:"D", st:{mon:5,wkd:[1],nth:2}, inh:"MothersD"},
         {ty:"D", st:{mon:6,d:23}, inh:"Kupala Nite"},
-        {ty:"D", st:{mon:6,d:1}, inh:"IChildren’s Day"},
+        {ty:"D", st:{mon:6,d:1}, inh:"IChildrensD"},
         {ty:"D", st:{mon:7,d:17}, inh:"IndependenceD", fst:{era:1,y:1992}},
         {ttls:{"en":"Matica Slovenská Day"}, ty:"D", st:{mon:8,d:4}, urls:{"en":"https://nationaltoday.com/matice-slovenska-day/"}},
         {ty:"D", st:{mon:3,d:25}, urls:{"en":"https://nationaltoday.com/struggle-for-human-rights-day/"}, ttls:{"en":"Struggle For Human Rights Day"}, fst:{era:1,y:1988}},

@@ -42,7 +42,7 @@
         {ttls:{"en":"National Elderly Day","id":"Hari Lanjut Usia Nasional"}, ty:"D", st:{mon:5,d:29}, fst:{era:1,y:1996}, mog:"👴👵"},
         {ttls:{"en":"Agricultural Activity Day","id":"Hari Krida Pertanian"}, ty:"D", st:{mon:6,d:21}, fst:{era:1,y:1972}, mog:"🌾"},
         {ttls:{"en":"National Midwife Day","id":"Hari Bidan Nasional"}, ty:"D", st:{mon:6,d:24}, fst:{era:1,y:1951}},
-        {inh:"IDAgainst Drug Abuse and Illicit Trafficking", ty:"D", st:{mon:6,d:26}, fst:{era:1,y:1989}},
+        {inh:"IDAgainstDrugAbuse&IllicitTrafficking", ty:"D", st:{mon:6,d:26}, fst:{era:1,y:1989}},
         {ty:"D", st:{mon:6,d:29}, inh:"NFamilyD", fst:{era:1,y:2014}},
         {ttls:{"en":"Bhayangkara Day","id":"Hari Bhayangkara"}, ty:"D", st:{mon:7,d:1}, mog:"👮‍♂️👮‍♀️"},
         {ttls:{"en":"Bank Indonesia Day","id":"Hari Bank Indonesia"}, ty:"D", st:{mon:7,d:5}, mog:"🏦"},

@@ -65,7 +65,7 @@
         {ty:"D", st:{mon:10,d:24}, ttls:{"en":"National Day of Entertainment","it":"Giornata nazionale dello spettacolo"}, fst:{era:1,y:2022}},
         {ty:"D", st:{mon:11,d:9}, inh:"Freedom Day", fst:{era:1,y:2005}},
         {ty:"D", st:{mon:11,d:21}, inh:"NTreeD", fst:{era:1,y:2013}},
-        {ty:"D", st:{mon:11,d:25}, inh:"IDfor the Elimination of Violence Against Women", fst:{era:1,y:2000}},
+        {ty:"D", st:{mon:11,d:25}, inh:"IDForTheEliminationOfViolenceAgainstWomen", fst:{era:1,y:2000}},
         {ty:"D", st:{mon:11,wkd:[1],nth:3}, ttls:{"en":"National Day in Memory of Road Victims","it":"Giornata nazionale in memoria delle vittime della strada"}, fst:{era:1,y:2018}},
         {ty:"D", st:{mon:12,d:1}, inh:"WAIDSD", fst:{era:1,y:1988}},
         

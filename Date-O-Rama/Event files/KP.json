@@ -30,6 +30,6 @@
         {ty:"D", st:{mon:12,d:24}, ttls:{"en":"Kim Jong-suk’s Birthday"}, inh:"*BD*"},
         {ty:"D", st:{mon:12,d:31}, inh:"NYE"},
 
-        {ty:"D", st:{mon:6,d:1}, inh:"IChildren’s Day"},
+        {ty:"D", st:{mon:6,d:1}, inh:"IChildrensD"},
   ]
 }

@@ -23,7 +23,7 @@
         {inh:"Flag Day", ty:"D", st:{mon:5,wkd:[1],nth:2}, ttls:{"en":"State Flag and State Emblem Day","be":"Дзень Дзяржаўнага Сцяга i Дзяржаўнага Герба"}},
         {ty:"D", st:{mon:9,d:17}, inh:"NUnityD", urls:{"en":"https://en.wikipedia.org/wiki/National_Unity_Day_(Belarus)"}, fst:{era:1,y:2021}},
         {inh:"Veterans Day", ty:"D", st:{mon:2,d:15}, ttls:{"en":"Afghan War Veterans Day","be":"Дзень памяці воінаў-інтэрнацыяналістаў "}},
-        {ty:"D", st:{mon:4,d:26}, inh:"IChernobyl Disaster Remembrance Day", fst:{era:1,y:2017}},
+        {ty:"D", st:{mon:4,d:26}, inh:"IChernobylDisasterRemembranceD", fst:{era:1,y:2017}},
         {ty:"D", st:{mon:6,d:22}, ttls:{"en":"Day of Remembrance of the Victims of the Great Patriotic War","be":"Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
 
         {ty:"D", st:{mon:7,d:6}, inh:"Kupala Nite"},
