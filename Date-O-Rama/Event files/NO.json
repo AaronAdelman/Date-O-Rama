@@ -27,7 +27,7 @@
         {ty:"D", st:{mon:7,d:2}, inh:"StSwithin", fst:{era:1,y:990}},
         {ttls:{"en":"Crown Prince Haakon’s Day"}, ty:"D", st:{mon:7,d:20}, urls:{"en":"https://nationaltoday.com/crown-prince-haakons-day/"}, fst:{era:1,y:1973}, inh:"*BD*"},
         {inh:"ChildrensD", ty:"D", st:{mon:5,d:17}},
-        {inh:"IndependenceD", ty:"D", st:{mon:6,d:7}, fst:{era:1,y:1905}, urls:{"en":"https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
+        {inh:"ID", ty:"D", st:{mon:6,d:7}, fst:{era:1,y:1905}, urls:{"en":"https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
         {ttls:{"en":"Crown Princess Mette-Marit’s Day"}, ty:"D", st:{mon:8,d:19}, urls:{"en":"https://nationaltoday.com/crown-princess-mette-marits-day/"}, fst:{era:1,y:2002}, inh:"*BD*"},
         {ty:"D", st:{mon:2,d:6}, ttls:{"da":"Samefolkets dag","de":"Nationaltag der Samen","en":"Sámi National Day","eo":"Samea nacia tago","fi":"Saamelaisten kansallispäivä","id":"Hari Nasional Sami","it":"Giorno nazionale dei Sami","ko":"사미 국경일","ms":"Hari Kebangsaan Sámi","nb":"Samenes nasjonaldag","nn":"Den samiske nasjonaldagen","ru":"Международный день саамов","se":"Sámi álbmotbeaivi","sh":"Nacionalni dan Saamija","smn":"Säämi aalmugpeivi","sv":"Samernas nationaldag","tl":"Pambansang Araw ng Sami","uk":"Міжнародний день саамів"}, nts:{"en":"Sami National Day"}, urls:{"en":"https://www.daysoftheyear.com/days/sami-national-day/"}, fst:{era:1,y:1993}},
         {ty:"D", st:{misc:"E",offsetD:-49}, inh:"Fastelavn"},

@@ -16,6 +16,6 @@
         {ty:"D", st:{mon:8,d:20}, inh:"RevolutionD", urls:{"en":"https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, fst:{era:1,y:1955}},
         {ty:"D", st:{mon:8,d:21}, inh:"YouthD"},
         {ty:"D", st:{mon:11,d:6}, inh:"Green March Day"},
-        {inh:"IndependenceD", ty:"D", st:{mon:11,d:18}, fst:{era:1,y:1955}},       
+        {inh:"ID", ty:"D", st:{mon:11,d:18}, fst:{era:1,y:1955}},       
     ]
 }

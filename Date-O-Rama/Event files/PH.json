@@ -21,7 +21,7 @@
         {ty:"D", st:{mon:4,d:9}, ttls:{"en":"Day of Valor","fil":"Araw ng Kagitingan"}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}},
         {ty:"D", st:{mon:4,d:10,wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/the-day-of-valor"}, ttls:{"en":"Day of Valor (in lieu)"}},
         {ty:"D", st:{mon:5,d:1}, urls:{"en":"https://nationaltoday.com/philippines-labor-day/"}, inh:"LabourD", fst:{era:1,y:1913}},
-        {inh:"IndependenceD", ty:"D", st:{mon:6,d:12}, urls:{"en":"https://nationaltoday.com/philippines-independence-day/"}, fst:{era:1,y:1898}},
+        {inh:"ID", ty:"D", st:{mon:6,d:12}, urls:{"en":"https://nationaltoday.com/philippines-independence-day/"}, fst:{era:1,y:1898}},
         {ty:"D", st:{mon:6,d:24}, urls:{"en":"https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, ttls:{"en":"Manila Day"}},
         {ty:"D", st:{mon:8,d:19}, ttls:{"en":"Manuel Luis Quezón Day","fil":"Kaarawan ni Manuel Luis Quezón","he":"יום מנואל קזון"}, inh:"*BD*", urls:{"en":"https://www.officeholidays.com/holidays/philippines/quezon/philippines-birthday-quezon"}, nts:{"en":"Birthday of Manuel L. Quezon","he":"יום הולדת של מנואל קזון"}},
         {ty:"D", st:{mon:8,d:21}, ttls:{"en":"Ninoy Aquino Day","he":"יום בניגנו אקינו הבן","fil":"Araw ng Kabayanihan ni Ninoy Aquino"}, urls:{"en":"https://nationaltoday.com/ninoy-aquino-day/"}, fst:{era:1,y:2004}},
@@ -73,7 +73,7 @@
 
         {ty:"D", st:{mon:1,wkd:[2],nth:-1}, urls:{"en":"https://nationaltoday.com/national-bible-day/"}, ttls:{"en":"National Bible Day","fil":"Pambansang Araw ng Bibliya"}, fst:{era:1,y:2019}},
         {ty:"D", st:{misc:"full1",mon:5}, inh:"Vesak", fst:{era:1,y:2001}},
-        {inh:"Thxgiving", ty:"D", st:{mon:11,wkd:[5],nth:-1}},
+        {inh:"Tg", ty:"D", st:{mon:11,wkd:[5],nth:-1}},
         {ty:"D", st:{mon:11,d:23,thruD:29,wkd:[6]}, inh:"BlackFri", fst:{era:1,y:2019}},
 
         {ty:"D", st:{mon:1,d:11}, ttls:{"en":"Bataan Foundation Day","fil":"Araw ng Pagkakatatag ng Bataan"}},
@@ -222,7 +222,7 @@
         {ty:"D", st:{mon:10,d:20}, ttls:{"en":"Philippine-British Friendship Day"}, mog:"🇵🇭🇬🇧", urls:{"en":"https://nationaltoday.com/philippine-british-friendship-day/"}, fst:{era:1,y:2008}},
         {ty:"D", st:{mon:10,d:21}, ttls:{"en":"National Archives Day"}, fst:{era:1,y:1995}, urls:{"en":"https://nationaltoday.com/national-archives-day/"}, mog:"🗂️"},
         {ty:"D", st:{mon:10,d:25}, ttls:{"en":"Anniversary of Philippine Military Academy"}, urls:{"en":"https://nationaltoday.com/anniversary-of-philippine-military-academy/"}, fst:{era:1,y:1998}},
-        {ty:"D", st:{mon:10,d:29}, ttls:{"en":"National Indigenous People’s Thanksgiving Day"}, inh:"Thxgiving", urls:{"en":"https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, fst:{era:1,y:2003}},
+        {ty:"D", st:{mon:10,d:29}, ttls:{"en":"National Indigenous People’s Thanksgiving Day"}, inh:"Tg", urls:{"en":"https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, fst:{era:1,y:2003}},
         {ty:"M", st:{mon:11}, urls:{"en":"https://nationaltoday.com/filipino-values-month/"}, ttls:{"en":"Filipino Values Month"}, fst:{era:1,y:1992}},
         {ty:"M", st:{mon:11}, urls:{"en":"https://nationaltoday.com/library-and-information-services-month/"}, ttls:{"en":"Library and Information Services Month"}, fst:{era:1,y:1991}},
         {ty:"M", st:{mon:11}, ttls:{"en":"National Consciousness Month for Punctuality and Civility"}, urls:{"en":"https://nationaltoday.com/national-consciousness-month-for-punctuality-and-civility/"}, fst:{era:1,y:2008}},

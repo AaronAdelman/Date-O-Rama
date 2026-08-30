@@ -15,7 +15,7 @@
         {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
         {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
         {ty:"D", st:{misc:"E",offsetD:39}, inh:"Ascension"},
-        {inh:"IndependenceD", ty:"D", st:{mon:8,d:5}, fst:{era:1,y:1960}, urls:{"en":"https://nationaltoday.com/burkina-faso-independence-day/"}},
+        {inh:"ID", ty:"D", st:{mon:8,d:5}, fst:{era:1,y:1960}, urls:{"en":"https://nationaltoday.com/burkina-faso-independence-day/"}},
         {ty:"D", st:{mon:8,d:15}, inh:"Assumption"},
         {ty:"D", st:{mon:11,d:1}, inh:"AllStsD"},
         {ty:"D", st:{mon:12,d:11}, fst:{era:1,y:1958}, inh:"Proclamation of Independence Day", urls:{"en":"https://nationaltoday.com/burkina-faso-republic-day/"}, nts:{"en":"Burkina Faso Republic Day"}},

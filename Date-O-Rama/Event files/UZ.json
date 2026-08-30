@@ -21,7 +21,8 @@
         {ty:"D", st:{mon:5,d:9}, inh:"Memorial Day", urls:{"en":"https://www.officeholidays.com/holidays/uzbekistan/uzbekistan-memorial-day"}, nts:{"en":"Day of Remembrance and Honor"}},
         {ty:"D", st:{mon:5,d:11,wkd:[2]}, ttls:{"en":"Memorial Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/uzbekistan/uzbekistan-memorial-day"}, nts:{"en":"Day of Remembrance and Honor (in lieu)"}},
         {ty:"D", st:{mon:6,d:1}, inh:"ChildrensD", urls:{"en":"https://www.officeholidays.com/holidays/uzbekistan/international-childrens-day"}},
-        {ty:"D", st:{mon:9,d:1}, inh:"IndependenceD", fst:{era:1,y:1991}, urls:{"en":"https://nationaltoday.com/uzbekistan-independence-day/"}},
+        {ty:"D", st:{mon:8,d:31,wkd:[2]}, inh:"ID (IL)", fst:{era:1,y:1991}, urls:{"en":"https://nationaltoday.com/uzbekistan-independence-day/"}},
+        {ty:"D", st:{mon:9,d:1}, inh:"ID", fst:{era:1,y:1991}, urls:{"en":"https://nationaltoday.com/uzbekistan-independence-day/"}},
         {ty:"D", st:{mon:10,d:1}, inh:"Teacher’s Day", urls:{"en":"https://nationaltoday.com/teachers-day-in-uzbekistan/"}, fst:{era:1,y:1997}},
         {ty:"D", st:{mon:12,d:8}, urls:{"en":"https://nationaltoday.com/uzbekistan-constitution-day/"}, inh:"ConstitutionD", fst:{era:1,y:1992}},
 

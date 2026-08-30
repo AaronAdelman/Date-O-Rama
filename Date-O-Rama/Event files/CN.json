@@ -23,8 +23,8 @@
        {ty:"nD", st:{mon:10,d:1}, end:{mon:10,d:3}, inh:"ND", urls:{"en":"https://www.daysoftheyear.com/days/china-national-day/"}, fst:{era:1,y:1949}},
        {ty:"D", st:{mon:10,d:4}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
        {ty:"D", st:{mon:10,d:5,wkd:[1, 2, 3, 4, 5]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
-       {ty:"D", st:{mon:10,d:6,wkd:[3, 4, 5, 6]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
-       {ty:"D", st:{mon:10,d:7,wkd:[2, 4, 5, 6]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
+       {ty:"D", st:{mon:10,d:6,wkd:[3, 4,5,6]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
+       {ty:"D", st:{mon:10,d:7,wkd:[2,4,5,6]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
        {ty:"D", st:{mon:10,d:8,wkd:[5]}, inh:"NDHol", urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-national-day"}},
 
         {ty:"D", st:{mon:5,d:4}, inh:"YouthD"},

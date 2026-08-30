@@ -32,7 +32,7 @@
         {ty:"D", st:{mon:12,d:31}, inh:"NYE"},
         {ty:"D", st:{mon:10,d:15}, inh:"Pregnancy and Infant Loss Remembrance Day", fst:{era:1,y:2014}},
         {ty:"D", st:{mon:12,d:26}, inh:"Proclamation Day", locs:{"en":"South Australia"}, fst:{era:1,y:1993}},
-        {ty:"D", st:{mon:12,d:28,wkd:[2, 3, 4, 5, 6]}, inh:"Proclamation Day", locs:{"en":"South Australia"}, fst:{era:1,y:1836}, last:{era:1,y:1992}},
+        {ty:"D", st:{mon:12,d:28,wkd:[2, 3, 4,5,6]}, inh:"Proclamation Day", locs:{"en":"South Australia"}, fst:{era:1,y:1836}, last:{era:1,y:1992}},
         {ty:"D", st:{mon:12,d:28,wkd:[2, 3]}, inh:"Proclamation Day", ttls:{"en":"Proclamation Day (in lieu)"}, locs:{"en":"South Australia"}, fst:{era:1,y:1993}},
         {ty:"D", st:{mon:12,d:29,thruD:30,wkd:[2]}, inh:"Proclamation Day", locs:{"en":"South Australia"}, fst:{era:1,y:1836}, last:{era:1,y:1992}},
         {ty:"D", st:{mon:11,d:11}, inh:"Remembrance Day", urls:{"en":"https://www.daysoftheyear.com/days/remembrance-day-in-australia/"}, fst:{era:1, year: 1997}},
@@ -164,7 +164,7 @@
         
     ],
     tpls:{
-        "Proclamation Day":{ttls:{"af":"Proklamasiedag","en":"Proclamation Day","fr":"Proclamation Day","ru":"День провозглашения"}, ty:"D", st:{mon:12,d:26,wkd:[2, 3, 4, 5, 6]}, urls:{"en":"https://publicholidays.com.au/proclamation-day/"}},
+        "Proclamation Day":{ttls:{"af":"Proklamasiedag","en":"Proclamation Day","fr":"Proclamation Day","ru":"День провозглашения"}, ty:"D", st:{mon:12,d:26,wkd:[2, 3, 4,5,6]}, urls:{"en":"https://publicholidays.com.au/proclamation-day/"}},
         "Love Your Bookshop Day":{ty:"D", st:{mon:10,wkd:[7],nth:1}, ttls:{"en":"Love Your Bookshop Day","he":"יום אהבת חנויות ספרים"}, urls:{"en":"https://www.loveyourbookshop.com.au/"}, nts:{"en":"LYBD\nCreated by BookPeople"}, mog:"📚"},
         "Bandanna Day":{ty:"D", st:{mon:10,wkd:[6],nth:-1}, ttls:{"en":"Bandanna Day"}, nts:{"en":"National Bandana Day"}, fst:{era:1,y:2014}, end:{era:1,y:2023}, urls:{"en":"https://www.bandannaday.org.au/"}, inh:"*MedAw*"},
         "Walk Safely to School Day":{ty:"D", st:{mon:5,d:10,thruD:16,wkd:[6]}, ttls:{"en":"Walk Safely to School Day"}, urls:{"en":"https://www.daysoftheyear.com/days/walk-safely-to-school-day/"}, nts:{"en":"WSTSD\nCreated by the Pedestrian Council of Australia"}},

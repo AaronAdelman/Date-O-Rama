@@ -10,7 +10,7 @@
         {ty:"D", st:{mon:12,d:-1}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh:"LunarNYE"},
         {ty:"nD", st:{mon:1,d:1}, end:{mon:1,d:3}, inh:"ChineseNY"},
         {ty:"D", st:{mon:1,d:4,wkd:[2, 3, 4, 5, 7]}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh:"LunarNYHol"},
-        {ty:"D", st:{mon:1,d:5,wkd:[1, 3, 4, 5, 6]}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh:"LunarNYHol"},
+        {ty:"D", st:{mon:1,d:5,wkd:[1, 3, 4,5,6]}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh:"LunarNYHol"},
         {ty:"D", st:{mon:1,d:6,wkd:[6]}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"}, inh:"LunarNYHol"},
         {ty:"D", st:{mon:1,d:15}, inh:"Lantern Festival"},
         {ty:"D", st:{mon:5,d:5}, inh:"DragonBoatFestival"},

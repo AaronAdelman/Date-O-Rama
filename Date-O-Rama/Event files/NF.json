@@ -16,7 +16,7 @@
         {ty:"D", st:{mon:4,d:25}, inh:"AnzacD", fst:{era:1,y:1916}},
         {inh:"BountyD", ty:"D", st:{mon:6,d:8}, fst:{era:1,y:1856}},
         {ty:"D", st:{mon:6,wkd:[2],nth:2}, inh:"King’s Birthday", fst:{era:1,y:2023}},
-        {inh:"Thxgiving", ty:"D", st:{mon:11,wkd:[4],nth:-1}, fst:{era:1,y:1957}},
+        {inh:"Tg", ty:"D", st:{mon:11,wkd:[4],nth:-1}, fst:{era:1,y:1957}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
     ]

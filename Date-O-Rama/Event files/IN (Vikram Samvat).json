@@ -1,0 +1,10 @@
+{
+    ttls:{"*":"IN"},
+    "//":"India",
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{r: 0.95, g: 0.62, b: 0.29},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
+    evts:[{ty:"nD", st:{mon:6,d:8,durD:2}, inh:"Janmashtami"},
+    ]
+}

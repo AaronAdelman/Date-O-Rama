@@ -74,7 +74,7 @@
         {ty:"D", st:{mon:8,wkd:[1],nth:-1}, ttls:{"en":"Social Justice Sunday","he":"יום ראשון של צדק חברתי"}, fst:{era:1,y:1940}, urls:{"en":"https://www.daysoftheyear.com/days/social-justice-sunday/"}, mog:"🖐"},
         {ty:"D", st:{mon:8,wkd:[1],nth:1}, ttls:{"en":"International Forgiveness Day"}, fst:{era:1,y:1996}, urls:{"en":"https://www.checkiday.com/2e21204909c48a6ee38c3d4f343f0347/international-forgiveness-day"}},
         {ty:"D", st:{mon:9,d:9}, ttls:{"en":"International Buy a Priest a Beer Day"}, fst:{era:1,y:2013}, urls:{"en":"https://www.daysoftheyear.com/days/international-buy-a-priest-a-beer-day/"}, nts:{"en":"Created by Sam Guzman"}, mog:"🍺"},
-        {ty:"D", st:{mon:9,d:24}, ttls:{"en":"Schwenkfelder Thanksgiving"}, fst:{era:1,y:1734}, urls:{"en":"https://www.daysoftheyear.com/days/schwenkfelder-thanksgiving/"}, inh:"Thxgiving", nts:{"en":"Created by the Schwenkfelders"}},
+        {ty:"D", st:{mon:9,d:24}, ttls:{"en":"Schwenkfelder Thanksgiving"}, fst:{era:1,y:1734}, urls:{"en":"https://www.daysoftheyear.com/days/schwenkfelder-thanksgiving/"}, inh:"Tg", nts:{"en":"Created by the Schwenkfelders"}},
         {ty:"D", st:{mon:9,d:26}, ttls:{"en":"National Day of Praise and Worship"}, fst:{era:1,y:2020}, urls:{"en":"https://www.daysoftheyear.com/days/national-day-of-praise-and-worship/"}, mog:"🙏", nts:{"en":"Created by Derrick Wallace"}},
         {ty:"D", st:{mon:9,d:26}, ttls:{"en":"World Day of Migrants and Refugees"}, fst:{era:1,y:1914}, urls:{"en":"https://www.daysoftheyear.com/days/world-day-of-migrants-and-refugees/"}, nts:{"en":"Created by Pope Benedict XV"}},
         {ty:"D", st:{mon:9,wkd:[1],nth:-1}, ttls:{"en":"Priesthood Sunday"}, fst:{era:1,y:2000}, urls:{"en":"https://www.daysoftheyear.com/days/priesthood-sunday/"}},

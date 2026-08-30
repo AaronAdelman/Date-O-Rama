@@ -19,7 +19,7 @@
         {ty:"D", st:{mon:7,d:7}, ttls:{"en":"Saba Saba Day"}, urls:{"en":"https://nationaltoday.com/saba-saba-day-in-tanzania/"}, fst:{era:1,y:1954}, nts:{"en":"Dar es Salaam International Trade Fair Day\nIndustry’s Day"}},
         {ty:"D", st:{mon:8,d:8}, ttls:{"en":"Nane Nane Day"}, urls:{"en":"https://nationaltoday.com/peasants-day-2/"}, nts:{"en":"Peasants’ Day\nWorkers’ Day\nIndustry’s Day\nFarmer’s Day\nWakulima ya Nane Nane"}, inh:"FarmerD"},
         {ty:"D", st:{mon:10,d:14}, ttls:{"en":"Mwalimu Nyerere Day"}, nts:{"en":"NYrere Day\nMwalimu Julius Nyerere Day"}, urls:{"en":"https://nationaltoday.com/mwalimu-nyerere-day/"}, fst:{era:1,y:1999}},
-        {inh:"IndependenceD", ty:"D", st:{mon:12,d:9}, fst:{era:1,y:1961}, urls:{"en":"https://nationaltoday.com/tanzania-independence-day/"}},
+        {inh:"ID", ty:"D", st:{mon:12,d:9}, fst:{era:1,y:1961}, urls:{"en":"https://nationaltoday.com/tanzania-independence-day/"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
         

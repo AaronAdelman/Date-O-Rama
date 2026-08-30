@@ -12,7 +12,7 @@
         {ty:"D", st:{mon:12,d:15}, inh:"ChildrensD", fst:{era:1,y:2015}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:6,wkd:[1],nth:3}, inh:"FathersD"},
-        {ty:"D", st:{mon:8,d:14}, inh:"IndependenceD", fst:{era:1,y:1947}, urls:{"en":"https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
+        {ty:"D", st:{mon:8,d:14}, inh:"ID", fst:{era:1,y:1947}, urls:{"en":"https://www.daysoftheyear.com/days/pakistan-independence-day/"}},
         {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
         {ty:"D", st:{mon:4,d:30}, inh:"Martyrs’ Day"},
         {ty:"D", st:{mon:5,wkd:[1],nth:2}, inh:"MothersD"},

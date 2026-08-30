@@ -469,6 +469,10 @@
 		A5A4651D3005F58F00763176 /* Thanks to.md in Resources */ = {isa = PBXBuildFile; fileRef = A5A4650C3005F58F00763176 /* Thanks to.md */; };
 		A5A465253005F6E000763176 /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = A5A465243005F6E000763176 /* Textual */; };
 		A5A465273005F75B00763176 /* ASAMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A465263005F75B00763176 /* ASAMarkdownView.swift */; };
+		A5A4DC8830447F060098358A /* BD (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A4DC8730447F060098358A /* BD (Vikram Samvat).json */; };
+		A5A4DC8930447F060098358A /* BD (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A4DC8730447F060098358A /* BD (Vikram Samvat).json */; };
+		A5A4DC8B30447F700098358A /* IN (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */; };
+		A5A4DC8C30447F700098358A /* IN (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */; };
 		A5A62D362A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D372A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A62D3C2A36582400EDBB6D /* ER (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D3B2A36582400EDBB6D /* ER (Julian).json */; };
@@ -1536,6 +1540,8 @@
 		A5A465213005F67B00763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/What calendar systems are.md"; sourceTree = "<group>"; };
 		A5A465223005F68100763176 /* he */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = he; path = "he.lproj/What should I do if I have a.md"; sourceTree = "<group>"; };
 		A5A465263005F75B00763176 /* ASAMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMarkdownView.swift; sourceTree = "<group>"; };
+		A5A4DC8730447F060098358A /* BD (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BD (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IN (Vikram Samvat).json"; sourceTree = "<group>"; };
 		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
 		A5A62D3B2A36582400EDBB6D /* ER (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ER (Julian).json"; sourceTree = "<group>"; };
 		A5A62D3E2A37663F00EDBB6D /* ET (Ethiopic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ET (Ethiopic).json"; sourceTree = "<group>"; };
@@ -2060,6 +2066,7 @@
 				A5E8BAE227FCCF0B0018CD36 /* BD.json */,
 				A5BEC4B5302E657D0024BB20 /* BD (Bangla).json */,
 				A5BA03C72A4227940039B9FC /* BD (Muslim).json */,
+				A5A4DC8730447F060098358A /* BD (Vikram Samvat).json */,
 				A581B884284E580A00407D68 /* BE.json */,
 				A5EFFF2E285B5B9E00F2205F /* BF.json */,
 				A5D8509B280C8F9D005247BD /* BG.json */,
@@ -2080,8 +2087,8 @@
 				A5F3B02028565F8000865CEB /* BS.json */,
 				A5B999B128622B1700072FD5 /* BT.json */,
 				A51C8577282D64A00081A11B /* Buddhism.json */,
-				A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */,
 				A5A72D0E303CC36300C01787 /* Buddhism (Bangla).json */,
+				A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */,
 				A5A72D0B303CBB7A00C01787 /* Buddhism (Vikram Samvat).json */,
 				A5B999B028622B1700072FD5 /* BV.json */,
 				A5EFFF2C285B5B9E00F2205F /* BW.json */,
@@ -2191,6 +2198,7 @@
 				A5D3D7E027FA18460099718A /* IN.json */,
 				A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */,
 				A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */,
+				A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
 				A5E3222F2DD20F42009EBFC0 /* International months.json */,
@@ -2970,6 +2978,7 @@
 				A5D850B2280C96FE005247BD /* FR.json in Resources */,
 				A5EFFF5C285B5F9B00F2205F /* GY.json in Resources */,
 				A5EF0013285B8EEB00F2205F /* SO (Muslim).json in Resources */,
+				A5A4DC8930447F060098358A /* BD (Vikram Samvat).json in Resources */,
 				A5A62D432A37665400EDBB6D /* ET (Julian).json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A59D90682E8C081B0057D110 /* Confucianism (supplemental).json in Resources */,
@@ -3130,6 +3139,7 @@
 				A5E759122768D0F8008D7D57 /* EU.json in Resources */,
 				A5E496132862505C001BF40C /* IQ.json in Resources */,
 				A58754A22ED81FFD0033A861 /* Richard Ankli.json in Resources */,
+				A5A4DC8C30447F700098358A /* IN (Vikram Samvat).json in Resources */,
 				A5765A39279ED15900BF1F7E /* Rural.json in Resources */,
 				A53D608D288844020094B3F7 /* RO (Julian).json in Resources */,
 				A581B895284E5FD300407D68 /* CZ.json in Resources */,
@@ -3488,6 +3498,7 @@
 				A5E19E112D5535F4009A8524 /* Harry Potter.json in Resources */,
 				A5759141282BE28800675058 /* NO.json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
+				A5A4DC8830447F060098358A /* BD (Vikram Samvat).json in Resources */,
 				A5EFFF4F285B5D7E00F2205F /* ET.json in Resources */,
 				A5D850BA280C99B4005247BD /* BR.json in Resources */,
 				A501C8032861F97A00211E33 /* AZ.json in Resources */,
@@ -3729,6 +3740,7 @@
 				A5A132922D49681800152EA9 /* Asatru Alliance.json in Resources */,
 				A575914D282BE43900675058 /* SK.json in Resources */,
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
+				A5A4DC8B30447F700098358A /* IN (Vikram Samvat).json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
 				A50C4FD62F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */,

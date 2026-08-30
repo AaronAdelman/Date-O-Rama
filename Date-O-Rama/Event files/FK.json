@@ -18,9 +18,9 @@
         {ty:"D", st:{mon:12,d:9,wkd:[2]}, ttls:{"en":"Battle Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/battle-day"}, fst:{era:1,y:1914}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
-        {ty:"D", st:{mon:12,d:27,wkd:[1, 2, 3, 4, 5, 6]}, urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}, inh:"XmasHol"},
+        {ty:"D", st:{mon:12,d:27,wkd:[1, 2, 3, 4,5,6]}, urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}, inh:"XmasHol"},
         {ty:"D", st:{mon:12,d:28,wkd:[1, 2, 4, 5]}, urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}, inh:"XmasHol", fst:{era:1,y:2022}},
-        {ty:"D", st:{mon:12,d:29,wkd:[2, 3, 4, 5, 6]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
+        {ty:"D", st:{mon:12,d:29,wkd:[2, 3, 4,5,6]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
         {ty:"D", st:{mon:12,d:30,wkd:[2, 3, 6]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
         {ty:"D", st:{mon:12,d:31,wkd:[3, 4]}, inh:"XmasHol", urls:{"en":"https://www.officeholidays.com/holidays/Falkland-islands/christmas-holiday"}},
 

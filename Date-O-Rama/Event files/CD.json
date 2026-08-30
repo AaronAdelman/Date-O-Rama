@@ -15,7 +15,7 @@
         {ty:"D", st:{mon:4,d:6}, urls:{"en":"https://www.officeholidays.com/holidays/dr-congo/kimbangu-day"}, ttls:{"en":"Kimbangu Day"}, fst:{era:1,y:2023}},
         {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
         {inh:"Liberation Day", ty:"D", st:{mon:5,d:17}, fst:{era:1,y:1997}, urls:{"en":"https://www.officeholidays.com/holidays/dr-congo/dr-congo-liberation-day"}},
-        {inh:"IndependenceD", ty:"D", st:{mon:6,d:30}, fst:{era:1,y:1960}, urls:{"en":"https://nationaltoday.com/congo-independence-day/"}},
+        {inh:"ID", ty:"D", st:{mon:6,d:30}, fst:{era:1,y:1960}, urls:{"en":"https://nationaltoday.com/congo-independence-day/"}},
         {ty:"D", st:{mon:8,d:1}, inh:"Parents’ Day", fst:{era:1,y:1979}, urls:{"en":"https://www.officeholidays.com/holidays/dr-congo/parents-day"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
 

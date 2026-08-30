@@ -20,7 +20,7 @@
         {ty:"D", st:{mon:6,d:29}, inh:"StsPeter&Paul"},
         {ty:"D", st:{mon:8,d:15}, inh:"Assumption"},
         {ty:"D", st:{mon:9,d:8}, inh:"Victory Day", urls:{"en":"https://www.officeholidays.com/holidays/malta/feast-of-our-lady-of-victories"}, nts:{"en":"Feast of Our Lady of Victories"}},
-        {inh:"IndependenceD", ty:"D", st:{mon:9,d:21}, fst:{era:1,y:1964}, urls:{"en":"https://nationaltoday.com/malta-independence-day/"}},
+        {inh:"ID", ty:"D", st:{mon:9,d:21}, fst:{era:1,y:1964}, urls:{"en":"https://nationaltoday.com/malta-independence-day/"}},
         {ty:"D", st:{mon:12,d:8}, inh:"Immaculate Conception"},
         {ty:"D", st:{mon:12,d:13}, urls:{"en":"https://nationaltoday.com/malta-republic-day/"}, inh:"Republic Day", fst:{era:1,y:1974}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},

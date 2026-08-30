@@ -1,0 +1,11 @@
+{
+    ttls:{"*":"BD"},
+    "//":"Bangladesh",
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"green"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bangladesh"},
+    evts:[
+        {ty:"nD", st:{mon:6,d:8,durD:2}, inh:"Janmashtami"},
+    ]
+}

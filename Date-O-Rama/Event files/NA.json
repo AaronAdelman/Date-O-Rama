@@ -9,7 +9,7 @@
     evts:[
         {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
         {ty:"D", st:{mon:1,d:2,wkd:[2]}, inh:"NYD (IL)", urls:{"en":"https://www.officeholidays.com/holidays/namibia/international-new-years-day"}},
-        {ty:"D", st:{mon:3,d:21}, inh:"IndependenceD", urls:{"en":"https://nationaltoday.com/namibia-independence-day/"}, fst:{era:1,y:1990}},
+        {ty:"D", st:{mon:3,d:21}, inh:"ID", urls:{"en":"https://nationaltoday.com/namibia-independence-day/"}, fst:{era:1,y:1990}},
         {ty:"D", st:{misc:"E",offsetD:-2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},

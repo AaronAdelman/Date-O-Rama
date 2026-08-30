@@ -1,7 +1,9 @@
+// TODO:  Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)
+// TODO:  Tithi of Sri Sri Madhav Dev (Assamese holiday, uncertain calendar
+
 {
     ttls:{"*":"IN"},
     "//":"India",
-    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
     defLocale:"en",
     cal:"gre",
     color:{r: 0.95, g: 0.62, b: 0.29},
@@ -10,7 +12,7 @@
     evts:[
         {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
         {ty:"D", st:{mon:1,d:2}, ttls:{"en":"Mannam Jayanthi"}, urls:{"en":"https://www.officeholidays.com/holidays/india/kerala/mannam-jayanthi"}, fst:{era:1,y:1878}},
-        {ty:"D", st:{mon:1,d:2,wkd:[2, 3, 4, 5, 6, 7]}, inh:"DAfterNYD", urls:{"en":"https://www.officeholidays.com/holidays/india/mizoram/day-after-new-years-day"}},
+        {ty:"D", st:{mon:1,d:2,wkd:[2, 3, 4,5,6, 7]}, inh:"DAfterNYD", urls:{"en":"https://www.officeholidays.com/holidays/india/mizoram/day-after-new-years-day"}},
         {ty:"D", st:{mon:1,d:3,wkd:[1]}, inh:"DAfterNYD", urls:{"en":"https://www.officeholidays.com/holidays/india/mizoram/day-after-new-years-day"}},
         {ty:"D", st:{era:1,y:2023,mon:1,d:2}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/india/tripura/tripura-public-holiday"}, locs:{"en":"Tripura"}},
         {ty:"D", st:{mon:1,d:11}, inh:"Missionary Day", urls:{"en":"https://www.officeholidays.com/holidays/india/mizoram/mizoram-missionary-day"}, fst:{era:1,y:1894}},
@@ -55,7 +57,7 @@
         {ty:"D", st:{mon:8,d:13}, urls:{"en":"https://www.officeholidays.com/holidays/india/manipur/manipur-patriots-day"}, ttls:{"en":"Patriot’s Day"}},
         {ty:"D", st:{mon:7,d:19, era:1,y:2022}, urls:{"en":"https://www.officeholidays.com/holidays/india/haryana/haryana-public-holiday"}, inh:"PublicHol"},
         {ty:"D", st:{mon:8,d:13, era:1,y:2023}, urls:{"en":"https://www.officeholidays.com/holidays/india/haryana/haryana-public-holiday"}, inh:"PublicHol"},
-        {ty:"D", st:{mon:8,d:15}, inh:"IndependenceD", urls:{"en":"https://www.daysoftheyear.com/days/indian-independence-day/"}, fst:{era:1,y:1947}},
+        {ty:"D", st:{mon:8,d:15}, inh:"ID", urls:{"en":"https://www.daysoftheyear.com/days/indian-independence-day/"}, fst:{era:1,y:1947}},
         {ty:"D", st:{mon:8,d:16}, urls:{"en":"https://www.officeholidays.com/holidays/india/puducherry/india-puducherry-de-jure-transfer-day"}, ttls:{"en":"De Jure Transfer Day"}},
         {ty:"D", st:{mon:8,d:19}, ttls:{"en":"Birthday of Bir Bikram Kishore Debbarman"}, urls:{"en":"https://www.officeholidays.com/holidays/india/tripura/birthday-of-bir-bikram-kishore-manikya-bahadur"}, inh:"*BD*", fst:{era:1,y:2020}},
         {ty:"D", st:{mon:8,d:20}, ttls:{"en":"Nepali Bhasha Manyata Diwas"}, urls:{"en":"https://www.officeholidays.com/holidays/india/sikkim/nepali-bhasha-manyata-diwas"}, fst:{era:1,y:2022}},
@@ -251,7 +253,7 @@
         {ty:"D", st:{mon:4,d:14}, ttls:{"en":"Ambedkar Jayanti"}, urls:{"en":"https://nationaltoday.com/ambedkar-jayanti/"}, fst:{era:1,y:2015}},
         {ty:"D", st:{mon:5,d:11}, inh:"NTechD", urls:{"en":"https://www.daysoftheyear.com/days/national-technology-day/"}, fst:{era:1,y:1999}, nts:{"en":"Created by Atal Bihari Vajpayee"}},
         {ty:"D", st:{mon:9,d:29}, inh:"NCoffeeD"},
-        {ty:"D", st:{mon:9,d:28,wkd:[2, 3, 4, 5, 6]}, inh:"AskAStupidQuestionD", fst:{era:1,y:2013}},
+        {ty:"D", st:{mon:9,d:28,wkd:[2, 3, 4,5,6]}, inh:"AskAStupidQuestionD", fst:{era:1,y:2013}},
         {ty:"D", st:{mon:9,d:29,thruD:30,wkd:[2]}, inh:"AskAStupidQuestionD", fst:{era:1,y:2013}},
         {ty:"D", st:{mon:12,d:15}, inh:"ITeaD", fst:{era:1,y:2005}},
         {ty:"D", st:{mon:4,d:5}, inh:"NMaritimeD"},

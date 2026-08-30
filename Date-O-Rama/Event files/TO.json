@@ -38,6 +38,6 @@
     ],
     tpls:{
         "Tupou I Day":{ty:"D", st:{mon:12,d:4}, urls:{"en":"https://nationaltoday.com/tupou-i-day-in-lieu/"}, ttls:{"en":"Tupou I Day"}},
-        "Tupou I Day (in lieu)":{ty:"D", st:{mon:12,d:4,wkd:[2, 3, 4, 5, 6]}, inh:"Tupou I Day", ttls:{"en":"Tupou I Day (in lieu)"}},
+        "Tupou I Day (in lieu)":{ty:"D", st:{mon:12,d:4,wkd:[2, 3, 4,5,6]}, inh:"Tupou I Day", ttls:{"en":"Tupou I Day (in lieu)"}},
     }
 }

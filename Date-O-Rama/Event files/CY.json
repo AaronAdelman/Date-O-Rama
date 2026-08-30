@@ -20,7 +20,7 @@
         {ty:"D", st:{misc:"E",offsetD:49}, inh:"Pentecost"},
         {ty:"D", st:{misc:"E",offsetD:50}, inh:"WhitMon"},
         {ty:"D", st:{mon:8,d:15}, inh:"DormitionOfTheMotherOfGod"},
-        {ty:"D", st:{mon:10,d:1}, inh:"IndependenceD", urls:{"en":"https://nationaltoday.com/cyprus-independence-day/"}, fst:{era:1,y:1979}},
+        {ty:"D", st:{mon:10,d:1}, inh:"ID", urls:{"en":"https://nationaltoday.com/cyprus-independence-day/"}, fst:{era:1,y:1979}},
         {ty:"D", st:{mon:10,d:28}, inh:"Ochi Day", fst:{era:1,y:1942}},
         {ty:"D", st:{mon:12,d:24}, inh:"XmasE"},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas", urls:{"en":"https://nationaltoday.com/orthodox-christmas-day/"}},

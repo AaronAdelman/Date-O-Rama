@@ -21,7 +21,7 @@
         {inh:"EmancipationD", ty:"D", st:{mon:8,wkd:[2],nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/emancipation-day"}},
         {ttls:{"bn":"কালচারামা","de":"Culturama","en":"Culturama","es":"Culturama (festival)","mk":"Културама"}, ty:"D", st:{mon:8,wkd:[3],nth:1}, urls:{"en":"https://nationaltoday.com/culturama-day/"}},
         {inh:"NHeroesD", ty:"D", st:{mon:9,d:16}, fst:{era:1,y:1998}, urls:{"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-national-heroes-day"}},
-        {inh:"IndependenceD", ty:"D", st:{mon:9,d:19}, fst:{era:1,y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-independence-day"}},
+        {inh:"ID", ty:"D", st:{mon:9,d:19}, fst:{era:1,y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/saint-kitts-and-nevis/saint-kitts-and-nevis-independence-day"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
 

@@ -44,7 +44,7 @@
         {ty:"D", st:{mon:3,d:17}, inh:"StPatrick"},
         {ty:"D", st:{mon:3,d:15,thruD:20,wkd:[2]}, inh:"StPatrick (IL)"},
         {ty:"D", st:{mon:4,d:6}, inh:"Tartan Day", fst:{era:1, year: 1987}},
-        {ty:"D", st:{mon:10,wkd:[2],nth:2}, inh:"Thxgiving", fst:{era:1,y:1957}, urls:{"en":"https://www.daysoftheyear.com/days/canadian-thanksgiving/"}, nts:{"en":"Canadian Thanksgiving"}},
+        {ty:"D", st:{mon:10,wkd:[2],nth:2}, inh:"Tg", fst:{era:1,y:1957}, urls:{"en":"https://www.daysoftheyear.com/days/canadian-thanksgiving/"}, nts:{"en":"Canadian Thanksgiving"}},
         {ty:"D", st:{mon:2,d:14}, inh:"Valentine’s Day", fst:{era:1,y:496}},
         {ty:"D", st:{mon:5,d:8}, inh:"VE Day", fst:{era:1,y:1945}},
         {ty:"M", st:{mon:10}, inh:"Women’s History Month", fst:{era:1,y:1992}},

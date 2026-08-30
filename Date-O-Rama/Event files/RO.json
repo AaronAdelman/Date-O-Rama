@@ -30,7 +30,7 @@
 
         {ty:"D", st:{mon:11,d:11}, inh:"ArmisticeD", fst:{era:1,y:1919}},
         {ty:"D", st:{mon:9,d:14}, inh:"EngineersD"},
-        {ty:"D", st:{mon:5,d:9}, inh:"IndependenceD", fst:{era:1,y:1877}, ttls:{"en":"State Independence Day of Romania","ro":"Ziua Independenței de Stat a României"}},
+        {ty:"D", st:{mon:5,d:9}, inh:"ID", fst:{era:1,y:1877}, ttls:{"en":"State Independence Day of Romania","ro":"Ziua Independenței de Stat a României"}},
         {ty:"D", st:{mon:3,d:8}, inh:"IWD"},
         {ty:"D", st:{mon:8,d:15}, inh:"NavyD"},
 

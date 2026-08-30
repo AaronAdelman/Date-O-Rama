@@ -9,7 +9,7 @@
     evts:[
         {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
         {ty:"D", st:{mon:1,d:2,wkd:[2]}, inh:"NYD (IL)", urls:{"en":"https://www.officeholidays.com/holidays/grenada/international-new-years-day"}},
-        {ty:"D", st:{mon:2,d:7}, inh:"IndependenceD", fst:{era:1,y:1974}, urls:{"en":"https://www.daysoftheyear.com/days/independence-day-grenada/"}},
+        {ty:"D", st:{mon:2,d:7}, inh:"ID", fst:{era:1,y:1974}, urls:{"en":"https://www.daysoftheyear.com/days/independence-day-grenada/"}},
         {ty:"D", st:{misc:"E",offsetD:-2}, inh:"GoodFri"},
         {ty:"D", st:{misc:"E"}, inh:"Easter"},
         {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
@@ -23,7 +23,7 @@
         {ty:"D", st:{mon:8,wkd:[3],d:9,thruD:15}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/spicemas"}, inh:"CarnivalTue"},
         {ty:"D", st:{mon:10,d:19}, inh:"NHeroesD", urls:{"en":"https://www.officeholidays.com/holidays/grenada/maurice-bishop-day"}, fst:{era:1,y:2023}},
         {ty:"D", st:{mon:10,d:20,wkd:[2]}, inh:"NHeroesD (IL)", urls:{"en":"https://www.officeholidays.com/holidays/grenada/maurice-bishop-day"}, fst:{era:1,y:2023}},
-        {inh:"Thxgiving", ty:"D", st:{mon:10,d:25}, fst:{era:1,y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/grenada-thanksgiving"}},
+        {inh:"Tg", ty:"D", st:{mon:10,d:25}, fst:{era:1,y:1983}, urls:{"en":"https://www.officeholidays.com/holidays/grenada/grenada-thanksgiving"}},
         {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
         {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
 

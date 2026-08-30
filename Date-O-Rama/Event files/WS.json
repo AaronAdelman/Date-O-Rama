@@ -17,7 +17,7 @@
         {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
         {ty:"D", st:{mon:4,d:25}, inh:"AnzacD", fst:{era:1,y:1916}},
         {ty:"D", st:{mon:5,wkd:[2],nth:2}, urls:{"en":"https://www.officeholidays.com/holidays/samoa/samoan-mothers-day"}, inh:"MothersD"},
-        {inh:"IndependenceD", ty:"D", st:{mon:6,d:1}, urls:{"en":"https://nationaltoday.com/samoa-independence-day/"}, fst:{era:1,y:1962}},
+        {inh:"ID", ty:"D", st:{mon:6,d:1}, urls:{"en":"https://nationaltoday.com/samoa-independence-day/"}, fst:{era:1,y:1962}},
         {ty:"D", st:{mon:8,wkd:[2],nth:2}, urls:{"en":"https://www.officeholidays.com/holidays/samoa/samoan-fathers-day"}, inh:"FathersD"},
         {ty:"D", st:{mon:10,d:9,thruD:15,wkd:[2]}, ttls:{"en":"Lotu a Tamaiti Holiday"} , urls:{"en":"https://nationaltoday.com/lotu-a-tamaiti-holiday/"}},
         {ty:"D", st:{era:1,y:2024,mon:11,d:1}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/samoa/samoa-public-sector-holiday"}},
