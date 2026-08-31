@@ -5,15 +5,15 @@
     color:{r: 0.5, g: 0.28, b: 0.56},
     fst:{era:1,y:2012},
     evts:[
-        {ty:"D", st:{mon:1,d:2}, ttls:{"en":"Stop Spam Day"}, nts:{"en":"International Stop Spam Day"}, urls:{"en":"https://www.daysoftheyear.com/days/stop-spam-day/"}, mog:"📚", fst:{era:1,y:2020}, nts:{"en":"Created by Bob Matthews of Holiday Insights"}},
-        {ty:"D", st:{mon:2,d:3}, ttls:{"en":"Feed the Birds Day"}, urls:{"en":"https://www.daysoftheyear.com/days/feed-the-birds-day/"}, mog:"🐦", fst:{era:1,y:2016}, nts:{"en":"Created by Bob Matthews"}},
-        {ty:"D", st:{mon:2,d:20}, ttls:{"en":"No Politics Day"}, urls:{"en":"https://www.daysoftheyear.com/days/no-politics-day/"}, fst:{era:1,y:2017}, mog:"❌", nts:{"en":"Created by Bob Matthews"}},
-        {ty:"D", st:{mon:3,wkd:[5],nth:2}, ttls:{"en":"Popcorn Lover’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/popcorn-lovers-day/"}, mog:"🍿", fst:{era:1,y:2012}, nts:{"en":"National Popcorn Lover’s Day\nCreated by Bob Matthews"}},
-        {ty:"D", st:{mon:5,d:29}, ttls:{"en":"Learn About Composting Day"}, urls:{"en":"https://www.daysoftheyear.com/days/learn-about-composting-day/"}, nts:{"en":"Composting Day"}, fst:{era:1,y:2011}, nts:{"en":"Created by Bob Matthews"}},
-        {ty:"D", st:{mon:6,d:14}, ttls:{"en":"Monkey Around Day"}, urls:{"en":"https://www.daysoftheyear.com/days/monkey-around-day/"}, fst:{era:1,y:2016}, nts:{"en":"Created by Bob Matthews"}},
-        {ty:"D", st:{mon:6,d:16}, ttls:{"en":"International Waterfall Day"}, urls:{"en":"https://www.daysoftheyear.com/days/international-waterfall-day/"}, fst:{era:1,y:2020}, nts:{"en":"Created by Bob Matthews"}},
-        {ty:"D", st:{mon:12,d:14}, inh:"Roast Chestnuts Day", fst:{era:1,y:2015}},
+        {ty:"D",st:{mon:1,d:2},ttls:{"en":"Stop Spam Day"},nts:{"en":"International Stop Spam Day"}, urls:{"en":"https://www.daysoftheyear.com/days/stop-spam-day/"},mog:"📚",fst:{era:1,y:2020},nts:{"en":"Created by Bob Matthews of Holiday Insights"}},
+        {ty:"D",st:{mon:2,d:3},ttls:{"en":"Feed the Birds Day"}, urls:{"en":"https://www.daysoftheyear.com/days/feed-the-birds-day/"},mog:"🐦",fst:{era:1,y:2016},nts:{"en":"Created by Bob Matthews"}},
+        {ty:"D",st:{mon:2,d:20},ttls:{"en":"No Politics Day"}, urls:{"en":"https://www.daysoftheyear.com/days/no-politics-day/"},fst:{era:1,y:2017},mog:"❌",nts:{"en":"Created by Bob Matthews"}},
+        {ty:"D",st:{mon:3,wkd:[5],nth:2},ttls:{"en":"Popcorn Lover’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/popcorn-lovers-day/"},mog:"🍿",fst:{era:1,y:2012},nts:{"en":"National Popcorn Lover’s Day\nCreated by Bob Matthews"}},
+        {ty:"D",st:{mon:5,d:29},ttls:{"en":"Learn About Composting Day"}, urls:{"en":"https://www.daysoftheyear.com/days/learn-about-composting-day/"},nts:{"en":"Composting Day"},fst:{era:1,y:2011},nts:{"en":"Created by Bob Matthews"}},
+        {ty:"D",st:{mon:6,d:14},ttls:{"en":"Monkey Around Day"}, urls:{"en":"https://www.daysoftheyear.com/days/monkey-around-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Bob Matthews"}},
+        {ty:"D",st:{mon:6,d:16},ttls:{"en":"International Waterfall Day"}, urls:{"en":"https://www.daysoftheyear.com/days/international-waterfall-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Bob Matthews"}},
+        {ty:"D",st:{mon:12,d:14},inh:"Roast Chestnuts Day",fst:{era:1,y:2015}},
         
-        {ty:"D", st:{mon:3,d:21}, ttls:{"en":"Credit Card Reduction Day"}, urls:{"en":"https://www.daysoftheyear.com/days/credit-card-reduction-day/"}, fst:{era:1,y:2016}, nts:{"en":"Created by Holiday Insights"}},
+        {ty:"D",st:{mon:3,d:21},ttls:{"en":"Credit Card Reduction Day"}, urls:{"en":"https://www.daysoftheyear.com/days/credit-card-reduction-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Holiday Insights"}},
     ]
 }

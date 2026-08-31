@@ -6,9 +6,9 @@
     color:{r: 0.96, g: 0.83, b: 0.29},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"ChineseNY"},
-        {ty:"D", st:{mon:1,d:15}, inh:"Lantern Festival"},
-        {ty:"D", st:{mon:8,d:15}, inh:"Mid-Autumn Festival"},
-        {ty:"D", st:{mon:4,d:8}, inh:"BuddhasBD"},
+        {ty:"D",st:{mon:1,d:1},inh:"ChineseNY"},
+        {ty:"D",st:{mon:1,d:15},inh:"Lantern Festival"},
+        {ty:"D",st:{mon:8,d:15},inh:"Mid-Autumn Festival"},
+        {ty:"D",st:{mon:4,d:8},inh:"BuddhasBD"},
     ]
 }

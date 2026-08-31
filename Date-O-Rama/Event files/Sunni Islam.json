@@ -4,7 +4,7 @@
     cal:"hiq*",
     color:{name:"green"},
     evts:[
-        {ty:"D", st:{mon:3,d:12}, inh:"Mawlid"},
-        {ty:"D", st:{mon:9,d:29}, inh:"Laylat al-Qadr"},
+        {ty:"D",st:{mon:3,d:12},inh:"Mawlid"},
+        {ty:"D",st:{mon:9,d:29},inh:"Laylat al-Qadr"},
     ]
 }

@@ -5,13 +5,13 @@
     color:{name:"green"},
     mog:"🌎",
     evts:[
-        {ty:"pt", st:{ptTy:"twiR", deg: 0.833, offset: 0.0}, inh:"Sunrise"},
-        {ty:"pt", st:{ptTy:"twiS", deg: 0.833, offset: 0.0}, inh:"Sunset"},
+        {ty:"pt",st:{ptTy:"twiR", deg: 0.833, offset: 0.0},inh:"Sunrise"},
+        {ty:"pt",st:{ptTy:"twiS", deg: 0.833, offset: 0.0},inh:"Sunset"},
 
-        {inh:"Isha", ty:"pt", st:{ptTy:"IshaISNA"}, nts:{"en":"Islamic Society of North America"}},
-        {inh:"Fajr", ty:"pt", st:{ptTy:"FajrISNA"}, nts:{"en":"Islamic Society of North America"}},
-        {inh:"Dhuhr", ty:"pt", st:{ptTy:"DhuhrISNA"}, nts:{"en":"Islamic Society of North America"}},
-        {inh:"Asr (Shafii)", ty:"pt", st:{ptTy:"AsrShafiiISNA"}, nts:{"en":"Islamic Society of North America"}},
-        {inh:"Asr (Hanafi)", ty:"pt", st:{ptTy:"AsrHanafiISNA"}, nts:{"en":"Islamic Society of North America"}},
+        {inh:"Isha", ty:"pt",st:{ptTy:"IshaISNA"},nts:{"en":"Islamic Society of North America"}},
+        {inh:"Fajr", ty:"pt",st:{ptTy:"FajrISNA"},nts:{"en":"Islamic Society of North America"}},
+        {inh:"Dhuhr", ty:"pt",st:{ptTy:"DhuhrISNA"},nts:{"en":"Islamic Society of North America"}},
+        {inh:"Asr (Shafii)", ty:"pt",st:{ptTy:"AsrShafiiISNA"},nts:{"en":"Islamic Society of North America"}},
+        {inh:"Asr (Hanafi)", ty:"pt",st:{ptTy:"AsrHanafiISNA"},nts:{"en":"Islamic Society of North America"}},
     ]
 }

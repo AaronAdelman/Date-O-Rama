@@ -5,13 +5,13 @@
     color:{name:"green"},
     mog:"🇸🇦",
     evts:[
-        {ty:"pt", st:{ptTy:"twiR", deg: 0.833, offset: 0.0}, inh:"Sunrise"},
-        {ty:"pt", st:{ptTy:"twiS", deg: 0.833, offset: 0.0}, inh:"Sunset"},
+        {ty:"pt",st:{ptTy:"twiR", deg: 0.833, offset: 0.0},inh:"Sunrise"},
+        {ty:"pt",st:{ptTy:"twiS", deg: 0.833, offset: 0.0},inh:"Sunset"},
 
-        {inh:"Isha", ty:"pt", st:{ptTy:"IshaMakkah"}, nts:{"en":"Umm al-Qura, Makkah"}},
-        {inh:"Fajr", ty:"pt", st:{ptTy:"FajrMakkah"}, nts:{"en":"Umm al-Qura, Makkah"}},
-        {inh:"Dhuhr", ty:"pt", st:{ptTy:"DhuhrMakkah"}, nts:{"en":"Umm al-Qura, Makkah"}},
-        {inh:"Asr (Shafii)", ty:"pt", st:{ptTy:"AsrShafiiMakkah"}, nts:{"en":"Umm al-Qura, Makkah"}},
-        {inh:"Asr (Hanafi)", ty:"pt", st:{ptTy:"AsrHanafiMakkah"}, nts:{"en":"Umm al-Qura, Makkah"}},
+        {inh:"Isha", ty:"pt",st:{ptTy:"IshaMakkah"},nts:{"en":"Umm al-Qura, Makkah"}},
+        {inh:"Fajr", ty:"pt",st:{ptTy:"FajrMakkah"},nts:{"en":"Umm al-Qura, Makkah"}},
+        {inh:"Dhuhr", ty:"pt",st:{ptTy:"DhuhrMakkah"},nts:{"en":"Umm al-Qura, Makkah"}},
+        {inh:"Asr (Shafii)", ty:"pt",st:{ptTy:"AsrShafiiMakkah"},nts:{"en":"Umm al-Qura, Makkah"}},
+        {inh:"Asr (Hanafi)", ty:"pt",st:{ptTy:"AsrHanafiMakkah"},nts:{"en":"Umm al-Qura, Makkah"}},
     ]
 }

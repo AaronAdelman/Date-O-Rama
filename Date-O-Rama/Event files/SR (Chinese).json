@@ -6,7 +6,7 @@
     color:{r: 0.00, g: 0.48, b: 0.20},
     urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"ChineseNY"},
-        {ty:"D", st:{mon:1,d:15}, inh:"Lantern Festival"}
+        {ty:"D",st:{mon:1,d:1},inh:"ChineseNY"},
+        {ty:"D",st:{mon:1,d:15},inh:"Lantern Festival"}
     ]
 }

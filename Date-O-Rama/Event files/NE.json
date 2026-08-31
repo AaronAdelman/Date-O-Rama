@@ -8,19 +8,19 @@
     fst:{era:1,y:1960},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Niger"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
-        {ty:"D", st:{mon:4,d:24}, ttls:{"en":"Concord Day","fr":"Fête nationale de la Concorde"}, nts:{"en":"National Day of Concorde","fr":"Journée nationale de la Concorde"}, urls:{"en":"https://www.officeholidays.com/holidays/niger/concord-day"}, fst:{era:1,y:1995}},
-        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:8,d:3}, inh:"ID", urls:{"en":"https://www.officeholidays.com/holidays/niger/niger-independence-day"}, fst:{era:1,y:1960}},
-        {ty:"D", st:{mon:12,d:18}, urls:{"en":"https://nationaltoday.com/republic-day-of-niger/"}, inh:"Republic Day", fst:{era:1,y:2005}},
-        {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {ty:"D",st:{mon:4,d:24},ttls:{"en":"Concord Day","fr":"Fête nationale de la Concorde"},nts:{"en":"National Day of Concorde","fr":"Journée nationale de la Concorde"}, urls:{"en":"https://www.officeholidays.com/holidays/niger/concord-day"},fst:{era:1,y:1995}},
+        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:8,d:3},inh:"ID", urls:{"en":"https://www.officeholidays.com/holidays/niger/niger-independence-day"},fst:{era:1,y:1960}},
+        {ty:"D",st:{mon:12,d:18}, urls:{"en":"https://nationaltoday.com/republic-day-of-niger/"},inh:"Republic Day",fst:{era:1,y:2005}},
+        {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
 
-        {ty:"D", st:{mon:3,d:20}, inh:"IFrancophonieD", fst:{era:1,y:1988}},
-        {ty:"D", st:{mon:5,wkd:[1],nth:-1}, inh:"MothersD"},
+        {ty:"D",st:{mon:3,d:20},inh:"IFrancophonieD",fst:{era:1,y:1988}},
+        {ty:"D",st:{mon:5,wkd:[1],nth:-1},inh:"MothersD"},
         
-        {ty:"D", st:{mon:5,d:13}, inh:"Women’s Day", ttls:{"en":"National Day of Nigerian Women","fr":"Journée nationale de la femme nigérienne"}, fst:{era:1,y:1993}},
-        {ty:"nD", st:{mon:12,d:27}, end:{mon:12,d:29}, ttls:{"fr":"Festival de l’Aïr"}},
-        {ty:"D", st:{mon:9,d:15}, ttls:{"fr":"Fête de la girafe"}, mog:"🦒"},
+        {ty:"D",st:{mon:5,d:13},inh:"Women’s Day",ttls:{"en":"National Day of Nigerian Women","fr":"Journée nationale de la femme nigérienne"},fst:{era:1,y:1993}},
+        {ty:"nD",st:{mon:12,d:27}, end:{mon:12,d:29},ttls:{"fr":"Festival de l’Aïr"}},
+        {ty:"D",st:{mon:9,d:15},ttls:{"fr":"Fête de la girafe"},mog:"🦒"},
     ]
 }

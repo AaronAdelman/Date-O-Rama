@@ -8,14 +8,14 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Christmas_Island"},
     fst:{era:1,y:1888},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:1,d:26}, inh:"AustraliaD", fst:{era:1,y:1808}},
-        {ty:"D", st:{mon:3,wkd:[2],nth:4}, inh:"LabourD"},
-        {ty:"D", st:{misc:"E",offsetD:-2}, inh:"GoodFri"},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{mon:4,d:25}, inh:"AnzacD", fst:{era:1,y:1916}},
-        {inh:"Territory Day", ty:"D", st:{mon:10,d:6}},
-        {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{mon:1,d:26},inh:"AustraliaD",fst:{era:1,y:1808}},
+        {ty:"D",st:{mon:3,wkd:[2],nth:4},inh:"LabourD"},
+        {ty:"D",st:{misc:"E",offsetD:-2},inh:"GoodFri"},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{mon:4,d:25},inh:"AnzacD",fst:{era:1,y:1916}},
+        {inh:"Territory Day", ty:"D",st:{mon:10,d:6}},
+        {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
+        {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
     ]
 }

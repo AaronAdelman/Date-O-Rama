@@ -7,12 +7,12 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Serbia"},
     fst:{era:1,y:1804},
    evts:[
-        {ty:"D", st:{mon:12,d:25}, inh:"OXmas"},
-        {ty:"D", st:{mon:1,d:1}, inh:"ONYD"},
-        {ty:"D", st:{misc:"E",offsetD:-2}, inh:"OGood Fri"},
-        {ty:"D", st:{misc:"E",offsetD:-1}, inh:"OHoly Sat"},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E",offsetD:1}, inh:"OEasterMon"},
+        {ty:"D",st:{mon:12,d:25},inh:"OXmas"},
+        {ty:"D",st:{mon:1,d:1},inh:"ONYD"},
+        {ty:"D",st:{misc:"E",offsetD:-2},inh:"OGood Fri"},
+        {ty:"D",st:{misc:"E",offsetD:-1},inh:"OHoly Sat"},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{misc:"E",offsetD:1},inh:"OEasterMon"},
     ]
 }
 

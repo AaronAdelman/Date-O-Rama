@@ -6,12 +6,12 @@
     color:{r: 0.94, g: 0.20, b: 0.25},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Russia"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"ONYD", urls:{"en":"https://nationaltoday.com/novy-god-russian-new-year/"}},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{mon:12,d:25}, inh:"OXmas"},
-        {ty:"D", st:{mon:12,d:26,wkd:[2]}, ttls:{"en":"Christmas Day (in lieu)"}},
+        {ty:"D",st:{mon:1,d:1},inh:"ONYD", urls:{"en":"https://nationaltoday.com/novy-god-russian-new-year/"}},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{mon:12,d:25},inh:"OXmas"},
+        {ty:"D",st:{mon:12,d:26,wkd:[2]},ttls:{"en":"Christmas Day (in lieu)"}},
         
-        {ty:"D", st:{mon:3,d:25}, inh:"Annunciation"},
-        {ty:"D", st:{mon:8,d:15}, inh:"DormitionOfTheMotherOfGod"},
+        {ty:"D",st:{mon:3,d:25},inh:"Annunciation"},
+        {ty:"D",st:{mon:8,d:15},inh:"DormitionOfTheMotherOfGod"},
     ]
 }

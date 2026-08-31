@@ -5,13 +5,13 @@
     color:{name:"green"},
     mog:"🇪🇬",
     evts:[
-        {ty:"pt", st:{ptTy:"twiR", deg: 0.833, offset: 0.0}, inh:"Sunrise"},
-        {ty:"pt", st:{ptTy:"twiS", deg: 0.833, offset: 0.0}, inh:"Sunset"},
-        {inh:"Dhuhr", ty:"pt", st:{ptTy:"DhuhrISNA"}},
-        {inh:"Asr (Shafii)", ty:"pt", st:{ptTy:"AsrShafiiKarachi"}},
-        {inh:"Asr (Hanafi)", ty:"pt", st:{ptTy:"AsrHanafiKarachi"}},
+        {ty:"pt",st:{ptTy:"twiR", deg: 0.833, offset: 0.0},inh:"Sunrise"},
+        {ty:"pt",st:{ptTy:"twiS", deg: 0.833, offset: 0.0},inh:"Sunset"},
+        {inh:"Dhuhr", ty:"pt",st:{ptTy:"DhuhrISNA"}},
+        {inh:"Asr (Shafii)", ty:"pt",st:{ptTy:"AsrShafiiKarachi"}},
+        {inh:"Asr (Hanafi)", ty:"pt",st:{ptTy:"AsrHanafiKarachi"}},
  
-        {inh:"Isha", ty:"pt", st:{ptTy:"IshaEgypt"}, nts:{"en":"Egyptian General Authority of Survey"}},
-        {inh:"Fajr", ty:"pt", st:{ptTy:"FajrEgypt"}, nts:{"en":"Egyptian General Authority of Survey"}},
+        {inh:"Isha", ty:"pt",st:{ptTy:"IshaEgypt"},nts:{"en":"Egyptian General Authority of Survey"}},
+        {inh:"Fajr", ty:"pt",st:{ptTy:"FajrEgypt"},nts:{"en":"Egyptian General Authority of Survey"}},
     ]
 }

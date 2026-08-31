@@ -8,14 +8,14 @@
     fst:{era:1,y:1967},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Yemen"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:5,d:22}, inh:"Unity Day", nts:{"en":"National Day of the Republic of Yemen\nUnification Day","ar":"اليوم الوطني للجمهورية اليمنية"}, urls:{"en":"https://www.officeholidays.com/holidays/yemen/yemen-unification-day"}, fst:{era:1,y:1990}},
-        {ty:"D", st:{mon:9,d:26}, inh:"RevolutionD", ttls:{"en":"Yemen Revolution Day","ar":"ثورة 26 سبتمبر المجيدة"}},
-        {ty:"D", st:{mon:10,d:14}, inh:"Liberation Day", urls:{"en":"https://nationaltoday.com/liberation-day-in-yemen/"}, fst:{era:1,y:1963}, ttls:{"en":"Glorious October 14 Revolution","ar":"ثورة ثورة 14 أكتوبر المجيدة"}},
-        {inh:"ID", ty:"D", st:{mon:11,d:30}, fst:{era:1,y:1967}},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:22},inh:"Unity Day",nts:{"en":"National Day of the Republic of Yemen\nUnification Day","ar":"اليوم الوطني للجمهورية اليمنية"}, urls:{"en":"https://www.officeholidays.com/holidays/yemen/yemen-unification-day"},fst:{era:1,y:1990}},
+        {ty:"D",st:{mon:9,d:26},inh:"RevolutionD",ttls:{"en":"Yemen Revolution Day","ar":"ثورة 26 سبتمبر المجيدة"}},
+        {ty:"D",st:{mon:10,d:14},inh:"Liberation Day", urls:{"en":"https://nationaltoday.com/liberation-day-in-yemen/"},fst:{era:1,y:1963},ttls:{"en":"Glorious October 14 Revolution","ar":"ثورة ثورة 14 أكتوبر المجيدة"}},
+        {inh:"ID", ty:"D",st:{mon:11,d:30},fst:{era:1,y:1967}},
 
-        {ty:"D", st:{mon:3,d:21}, inh:"MothersD"},
-        {ty:"D", st:{mon:6,d:1}, inh:"ChildrensD"},
+        {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
+        {ty:"D",st:{mon:6,d:1},inh:"ChildrensD"},
     ]
 }

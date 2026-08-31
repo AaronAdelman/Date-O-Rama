@@ -12,16 +12,16 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Buddhist_holidays"},
     evts:[
-        {ty:"D", st:{mon:12,d:8}, inh:"BodhiD"},
-        {ty:"D", st:{misc:"full1",mon:5}, inh:"Vesak", fst:{era:1,y:1950}},
-        {ty:"D", st:{mon:2,d:15}, inh:"NirvanaD"},
-        {ty:"D", st:{mon:2,d:8}, inh:"NirvanaD"},
-        {ty:"D", st:{mon:3,d:22}, ttls:{"en":"World Day of Metta"}, nts:{"en":"World Loving-Kindness Day\nCreated by Venerable Mahinda"}, urls:{"en":"https://www.daysoftheyear.com/days/world-day-of-metta/"}, fst:{era:1,y:2012}},
-        {ty:"D", st:{mon:9,d:12}, ttls:{"en":"Mindfulness Day"}, urls:{"en":"https://www.daysoftheyear.com/days/mindfulness-day/"}, nts:{"en":"Created by Wisdom Publications"}, fst:{era:1,y:2011}},
-        {ty:"D", st:{misc:"full1",mon:1}, ttls:{"en":"Mahayana New Year"}, urls:{"en":"https://www.daysoftheyear.com/days/mahayana-new-year/"}},
-        {ty:"D", st:{misc:"full1",mon:3}, ttls:{"en":"Avalokitesvara’s Birthday"}, inh:"*BD*"},
+        {ty:"D",st:{mon:12,d:8},inh:"BodhiD"},
+        {ty:"D",st:{misc:"full1",mon:5},inh:"Vesak",fst:{era:1,y:1950}},
+        {ty:"D",st:{mon:2,d:15},inh:"NirvanaD"},
+        {ty:"D",st:{mon:2,d:8},inh:"NirvanaD"},
+        {ty:"D",st:{mon:3,d:22},ttls:{"en":"World Day of Metta"},nts:{"en":"World Loving-Kindness Day\nCreated by Venerable Mahinda"}, urls:{"en":"https://www.daysoftheyear.com/days/world-day-of-metta/"},fst:{era:1,y:2012}},
+        {ty:"D",st:{mon:9,d:12},ttls:{"en":"Mindfulness Day"}, urls:{"en":"https://www.daysoftheyear.com/days/mindfulness-day/"},nts:{"en":"Created by Wisdom Publications"},fst:{era:1,y:2011}},
+        {ty:"D",st:{misc:"full1",mon:1},ttls:{"en":"Mahayana New Year"}, urls:{"en":"https://www.daysoftheyear.com/days/mahayana-new-year/"}},
+        {ty:"D",st:{misc:"full1",mon:3},ttls:{"en":"Avalokitesvara’s Birthday"},inh:"*BD*"},
     ],
     tpls:{
-        "NirvanaD":{ty:"D", st:{mon:2,d:15}, urls:{"en":"https://www.daysoftheyear.com/days/parinirvana-day/"}, ttls:{"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"}, nts:{"en":"Nirvana Day"}, "//":"Mahayana"},
+        "NirvanaD":{ty:"D",st:{mon:2,d:15}, urls:{"en":"https://www.daysoftheyear.com/days/parinirvana-day/"},ttls:{"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"},nts:{"en":"Nirvana Day"}, "//":"Mahayana"},
     }
 }

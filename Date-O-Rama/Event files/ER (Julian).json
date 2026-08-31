@@ -6,11 +6,11 @@
     color:{r: 0.89, g: 0.00, b: 0.17},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Eritrea"},
     evts:[
-        {ty:"D", st:{mon:12,d:25}, inh:"OXmas"},
-        {ty:"D", st:{mon:1,d:6}, inh:"Epiphany"},
-        {ty:"D", st:{misc:"E",offsetD:-2}, inh:"OGood Fri"},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{mon:8,d:29}, inh:"BeheadingOfStJohnTheBaptist"},
-        {ty:"D", st:{mon:9,d:14}, inh:"HolyCross"},
+        {ty:"D",st:{mon:12,d:25},inh:"OXmas"},
+        {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
+        {ty:"D",st:{misc:"E",offsetD:-2},inh:"OGood Fri"},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{mon:8,d:29},inh:"BeheadingOfStJohnTheBaptist"},
+        {ty:"D",st:{mon:9,d:14},inh:"HolyCross"},
     ]
 }

@@ -7,15 +7,15 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Kuwait"},
     fst:{era:1,y:1961},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {inh:"ND", ty:"D", st:{mon:2,d:25}, fst:{era:1,y:1961}, urls:{"en":"https://nationaltoday.com/national-day-kuwait/"}},
-        {ty:"D", st:{mon:2,d:26}, urls:{"en":"https://nationaltoday.com/kuwait-liberation-day/"}, inh:"Liberation Day", fst:{era:1,y:1991}},
-        {ty:"D", st:{mon:2,d:27,wkd:[5]}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"}, fst:{era:1,y:1991}},
-        {ty:"D", st:{mon:2,d:28,wkd:[2]}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"}, fst:{era:1,y:1991}},
-        {ty:"D", st:{era:1,y:2023,mon:6,d:6}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-election-holiday"}},
-        {ty:"D", st:{era:1,y:2024,mon:12,d:1}, inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-gcc-summit-public-holiday"}},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {inh:"ND", ty:"D",st:{mon:2,d:25},fst:{era:1,y:1961}, urls:{"en":"https://nationaltoday.com/national-day-kuwait/"}},
+        {ty:"D",st:{mon:2,d:26}, urls:{"en":"https://nationaltoday.com/kuwait-liberation-day/"},inh:"Liberation Day",fst:{era:1,y:1991}},
+        {ty:"D",st:{mon:2,d:27,wkd:[5]},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"},fst:{era:1,y:1991}},
+        {ty:"D",st:{mon:2,d:28,wkd:[2]},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-liberation-day"},fst:{era:1,y:1991}},
+        {ty:"D",st:{era:1,y:2023,mon:6,d:6},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-election-holiday"}},
+        {ty:"D",st:{era:1,y:2024,mon:12,d:1},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/kuwait/kuwait-gcc-summit-public-holiday"}},
 
-        {ty:"D", st:{mon:6,wkd:[1],nth:3}, inh:"FathersD"},
-        {ty:"D", st:{mon:3,d:21}, inh:"MothersD"},
+        {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
+        {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
     ]
 }

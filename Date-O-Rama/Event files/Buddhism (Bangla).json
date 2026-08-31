@@ -20,6 +20,6 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Buddhist_holidays"},
     evts:[
-        {ty:"D", st:{misc:"full1",mon:6}, ttls:{"as":"মধু পূৰ্ণিমা","bn":"মধু পূর্ণিমা","en":"Madhu Purnima","eo":"Madhu Purnima"}, urls:{"en":"https://en.wikipedia.org/wiki/Madhu_Purnima"}, nts:{"en":"Honey Full Moon Festival\nHoney-offering Festival"}},
+        {ty:"D",st:{misc:"full1",mon:6},ttls:{"as":"মধু পূৰ্ণিমা","bn":"মধু পূর্ণিমা","en":"Madhu Purnima","eo":"Madhu Purnima"}, urls:{"en":"https://en.wikipedia.org/wiki/Madhu_Purnima"},nts:{"en":"Honey Full Moon Festival\nHoney-offering Festival"}},
     ]
 }

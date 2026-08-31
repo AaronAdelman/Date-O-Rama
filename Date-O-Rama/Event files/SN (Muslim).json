@@ -7,6 +7,6 @@
     fst:{era:0,y:1379},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Senegal"},
     evts:[
-        {ty:"D", st:{mon:2,d:18}, ttls:{"en":"Grand Magal of Touba","fr":"Magal de Touba","pt":"Grande Magal de Tuba","wo":"Màggalug Tuubaa"}, urls:{"en":"https://www.officeholidays.com/holidays/senegal/grand-magal-of-touba"}},
+        {ty:"D",st:{mon:2,d:18},ttls:{"en":"Grand Magal of Touba","fr":"Magal de Touba","pt":"Grande Magal de Tuba","wo":"Màggalug Tuubaa"}, urls:{"en":"https://www.officeholidays.com/holidays/senegal/grand-magal-of-touba"}},
     ]
 }

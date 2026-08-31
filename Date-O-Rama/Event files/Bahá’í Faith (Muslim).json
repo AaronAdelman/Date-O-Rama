@@ -4,7 +4,7 @@
     cal:"hiq*",
     color:{r: 0.96, g: 0.76, b: 0.79},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"BOfTheBáb", last:{era:0,y:1436}},
-        {ty:"D", st:{mon:1,d:2}, inh:"BOfBaháʼu’lláh", last:{era:0,y:1436}},
+        {ty:"D",st:{mon:1,d:1},inh:"BOfTheBáb",last:{era:0,y:1436}},
+        {ty:"D",st:{mon:1,d:2},inh:"BOfBaháʼu’lláh",last:{era:0,y:1436}},
     ]
 }

@@ -4,16 +4,16 @@
     cal:"xloc*",
     color:{name:"blue"},
     evts:[
-        {ty:"Y", st:{}, subEvts:[
-            {inh:"Vernal Equinox", ty:"pt", st:{misc:"Mar"}, rgns:["xb"]},
-            {inh:"Summer Solstice", ty:"pt", st:{misc:"Jun"}, rgns:["xb"]},
-            {inh:"AutumnalEquinox", ty:"pt", st:{misc:"Sep"}, rgns:["xb"]},
-            {inh:"Winter Solstice", ty:"pt", st:{misc:"Dec"}, rgns:["xb"]},
+        {ty:"Y",st:{}, subEvts:[
+            {inh:"Vernal Equinox", ty:"pt",st:{misc:"Mar"}, rgns:["xb"]},
+            {inh:"Summer Solstice", ty:"pt",st:{misc:"Jun"}, rgns:["xb"]},
+            {inh:"AutumnalEquinox", ty:"pt",st:{misc:"Sep"}, rgns:["xb"]},
+            {inh:"Winter Solstice", ty:"pt",st:{misc:"Dec"}, rgns:["xb"]},
             
-            {inh:"Vernal Equinox", ty:"pt", st:{misc:"Sep"}, rgns:["xc"]},
-            {inh:"Summer Solstice", ty:"pt", st:{misc:"Dec"}, rgns:["xc"]},
-            {inh:"AutumnalEquinox", ty:"pt", st:{misc:"Mar"}, rgns:["xc"]},
-            {inh:"Winter Solstice", ty:"pt", st:{misc:"Jun"}, rgns:["xc"]},
+            {inh:"Vernal Equinox", ty:"pt",st:{misc:"Sep"}, rgns:["xc"]},
+            {inh:"Summer Solstice", ty:"pt",st:{misc:"Dec"}, rgns:["xc"]},
+            {inh:"AutumnalEquinox", ty:"pt",st:{misc:"Mar"}, rgns:["xc"]},
+            {inh:"Winter Solstice", ty:"pt",st:{misc:"Jun"}, rgns:["xc"]},
         ]},
     ]
 }

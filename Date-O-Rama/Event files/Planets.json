@@ -4,25 +4,25 @@
     cal:"xloc*",
     color:{r: 0.941, g: 0.827, b: 0.616},
     evts:[
-        {ttls:{"en":"Rise of Mercury","he":"זריחת כוכב"}, ty:"pt", st:{ptTy:"rise", body:"zme"}, mog:"☿↑"},
-        {ttls:{"en":"Setting of Mercury","he":"שקיעת כוכב"}, ty:"pt", st:{ptTy:"set", body:"zme"}, mog:"☿↓"},
+        {ttls:{"en":"Rise of Mercury","he":"זריחת כוכב"}, ty:"pt",st:{ptTy:"rise", body:"zme"},mog:"☿↑"},
+        {ttls:{"en":"Setting of Mercury","he":"שקיעת כוכב"}, ty:"pt",st:{ptTy:"set", body:"zme"},mog:"☿↓"},
         
-        {ttls:{"en":"Rise of Venus","he":"זריחת נוגה"}, ty:"pt", st:{ptTy:"rise", body:"zve"}, mog:"♀↑"},
-        {ttls:{"en":"Setting of Venus","he":"שקיעת נוגה"}, ty:"pt", st:{ptTy:"set", body:"zve"}, mog:"♀↓"},
+        {ttls:{"en":"Rise of Venus","he":"זריחת נוגה"}, ty:"pt",st:{ptTy:"rise", body:"zve"},mog:"♀↑"},
+        {ttls:{"en":"Setting of Venus","he":"שקיעת נוגה"}, ty:"pt",st:{ptTy:"set", body:"zve"},mog:"♀↓"},
         
-        {ttls:{"en":"Rise of Mars","he":"זריחת מאדים"}, ty:"pt", st:{ptTy:"rise", body:"zma"}, mog:"♂↑"},
-        {ttls:{"en":"Setting of Mars","he":"שקיעת מאדים"}, ty:"pt", st:{ptTy:"set", body:"zma"}, mog:"♂↓"},
+        {ttls:{"en":"Rise of Mars","he":"זריחת מאדים"}, ty:"pt",st:{ptTy:"rise", body:"zma"},mog:"♂↑"},
+        {ttls:{"en":"Setting of Mars","he":"שקיעת מאדים"}, ty:"pt",st:{ptTy:"set", body:"zma"},mog:"♂↓"},
 
-        {ttls:{"en":"Rise of Jupiter","he":"זריחת צדק"}, ty:"pt", st:{ptTy:"rise", body:"zju"}, mog:"♃↑"},
-        {ttls:{"en":"Setting of Jupiter","he":"שקיעת צדק"}, ty:"pt", st:{ptTy:"set", body:"zju"}, mog:"♃↓"},
+        {ttls:{"en":"Rise of Jupiter","he":"זריחת צדק"}, ty:"pt",st:{ptTy:"rise", body:"zju"},mog:"♃↑"},
+        {ttls:{"en":"Setting of Jupiter","he":"שקיעת צדק"}, ty:"pt",st:{ptTy:"set", body:"zju"},mog:"♃↓"},
 
-        {ttls:{"en":"Rise of Saturn","he":"זריחת שבתי"}, ty:"pt", st:{ptTy:"rise", body:"zsa"}, mog:"♄↑"},
-        {ttls:{"en":"Setting of Saturn","he":"שקיעת שבתי"}, ty:"pt", st:{ptTy:"set", body:"zsa"}, mog:"♄↓"},
+        {ttls:{"en":"Rise of Saturn","he":"זריחת שבתי"}, ty:"pt",st:{ptTy:"rise", body:"zsa"},mog:"♄↑"},
+        {ttls:{"en":"Setting of Saturn","he":"שקיעת שבתי"}, ty:"pt",st:{ptTy:"set", body:"zsa"},mog:"♄↓"},
 
-        {ttls:{"en":"Rise of Uranus","he":"זריחת אורנוס"}, ty:"pt", st:{ptTy:"rise", body:"zur"}, mog:"⛢↑"},
-        {ttls:{"en":"Setting of Uranus","he":"שקיעת אורנוס"}, ty:"pt", st:{ptTy:"set", body:"zur"}, mog:"⛢↓"},
+        {ttls:{"en":"Rise of Uranus","he":"זריחת אורנוס"}, ty:"pt",st:{ptTy:"rise", body:"zur"},mog:"⛢↑"},
+        {ttls:{"en":"Setting of Uranus","he":"שקיעת אורנוס"}, ty:"pt",st:{ptTy:"set", body:"zur"},mog:"⛢↓"},
 
-        {ttls:{"en":"Rise of Neptune","he":"זריחת נפטון"}, ty:"pt", st:{ptTy:"rise", body:"zne"}, mog:"♆↑"},
-        {ttls:{"en":"Setting of Neptune","he":"שקיעת נפטון"}, ty:"pt", st:{ptTy:"set", body:"zne"}, mog:"♆↓"},
+        {ttls:{"en":"Rise of Neptune","he":"זריחת נפטון"}, ty:"pt",st:{ptTy:"rise", body:"zne"},mog:"♆↑"},
+        {ttls:{"en":"Setting of Neptune","he":"שקיעת נפטון"}, ty:"pt",st:{ptTy:"set", body:"zne"},mog:"♆↓"},
     ]
 }

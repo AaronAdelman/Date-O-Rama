@@ -24,6 +24,6 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Buddhist_holidays"},
     evts:[
-        {ty:"D",st:{mon:4,d:30}, ttls:{"bn":"আষাঢ় পূজা","de":"Asalha Puja","en":"Asalha Puja","eo":"Darma tago","gl":"Asalha Puja","hu":"Aszalha púdzsá","id":"Asalha","it":"Asalha Puja","km":"ពិធីបុណ្យអាសាឡ្ហបូជា","my":"ဓမ္မစကြာ အခါတော်နေ့","nb":"Asalha Puja","nl":"Asalha Puja","nn":"Asalapodja","ru":"Асалха пуджа","sv":"Asalha Puja","th":"วันอาสาฬหบูชา","uk":"Асала Пуджа","vi":"Lễ Chuyển Pháp Luân","zh":"轉法輪日"}, urls:{"en":"https://en.wikipedia.org/wiki/Asalha_Puja"}, nts:{"en":"Dhamma Day\nDharma Day\nAsadha Puja\nAsanha Bucha\nEsala Poya\nDhammasekkya Akhadaw Ne\nDhammasekkya Ne"}, "//":"Theravada"},
+        {ty:"D",st:{mon:4,d:30},ttls:{"bn":"আষাঢ় পূজা","de":"Asalha Puja","en":"Asalha Puja","eo":"Darma tago","gl":"Asalha Puja","hu":"Aszalha púdzsá","id":"Asalha","it":"Asalha Puja","km":"ពិធីបុណ្យអាសាឡ្ហបូជា","my":"ဓမ္မစကြာ အခါတော်နေ့","nb":"Asalha Puja","nl":"Asalha Puja","nn":"Asalapodja","ru":"Асалха пуджа","sv":"Asalha Puja","th":"วันอาสาฬหบูชา","uk":"Асала Пуджа","vi":"Lễ Chuyển Pháp Luân","zh":"轉法輪日"}, urls:{"en":"https://en.wikipedia.org/wiki/Asalha_Puja"},nts:{"en":"Dhamma Day\nDharma Day\nAsadha Puja\nAsanha Bucha\nEsala Poya\nDhammasekkya Akhadaw Ne\nDhammasekkya Ne"}, "//":"Theravada"},
     ]
 }

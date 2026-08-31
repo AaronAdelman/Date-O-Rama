@@ -8,17 +8,17 @@
     fst:{era:1,y:1955},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Morocco"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:1,d:11}, inh:"Proclamation of Independence Day", fst:{era:1,y:1944}},
-        {ty:"nD", st:{mon:1,d:12}, end:{mon:1,d:14}, inh:"Yennayer"},
-        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:7,d:30}, inh:"Throne Day", fst:{era:1,y:1999}},
-        {ty:"D", st:{mon:8,d:14}, inh:"Oued Ed-Dahab Day"},
-        {ty:"D", st:{mon:8,d:20}, inh:"RevolutionD", urls:{"en":"https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, nts:{"en":"Anniversary of the Revolution of the King and the People","he":"יום השנה למהפכה של המלך והעם"}, fst:{era:1,y:1955}},
-        {ty:"D", st:{mon:8,d:21}, inh:"YouthD"},
-        {ty:"D", st:{mon:11,d:6}, inh:"Green March Day"},
-        {inh:"ID", ty:"D", st:{mon:11,d:18}, fst:{era:1,y:1955}},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{mon:1,d:11},inh:"Proclamation of Independence Day",fst:{era:1,y:1944}},
+        {ty:"nD",st:{mon:1,d:12}, end:{mon:1,d:14},inh:"Yennayer"},
+        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:7,d:30},inh:"Throne Day",fst:{era:1,y:1999}},
+        {ty:"D",st:{mon:8,d:14},inh:"Oued Ed-Dahab Day"},
+        {ty:"D",st:{mon:8,d:20},inh:"RevolutionD", urls:{"en":"https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"},nts:{"en":"Anniversary of the Revolution of the King and the People","he":"יום השנה למהפכה של המלך והעם"},fst:{era:1,y:1955}},
+        {ty:"D",st:{mon:8,d:21},inh:"YouthD"},
+        {ty:"D",st:{mon:11,d:6},inh:"Green March Day"},
+        {inh:"ID", ty:"D",st:{mon:11,d:18},fst:{era:1,y:1955}},
 
-        {ty:"D", st:{mon:5,wkd:[1],nth:-1}, inh:"MothersD"},
+        {ty:"D",st:{mon:5,wkd:[1],nth:-1},inh:"MothersD"},
     ]
 }

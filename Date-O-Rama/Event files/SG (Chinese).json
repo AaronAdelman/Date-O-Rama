@@ -6,9 +6,9 @@
     color:{r: 0.94, g: 0.20, b: 0.25},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Singapore"},
     evts:[
-        {ty:"nD", st:{mon:1,d:1}, end:{mon:1,d:2}, inh:"ChineseNY"},
-        {ty:"D", st:{mon:1,d:3,wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/singapore/chinese-new-year"}, ttls:{"en":"Chinese New Year (in lieu)"}},
-        {ty:"D", st:{mon:1,d:15}, inh:"Lantern Festival"},
-        {ty:"D", st:{mon:4,d:15}, inh:"Vesak", urls:{"en":"https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
+        {ty:"nD",st:{mon:1,d:1}, end:{mon:1,d:2},inh:"ChineseNY"},
+        {ty:"D",st:{mon:1,d:3,wkd:[2]}, urls:{"en":"https://www.officeholidays.com/holidays/singapore/chinese-new-year"},ttls:{"en":"Chinese New Year (in lieu)"}},
+        {ty:"D",st:{mon:1,d:15},inh:"Lantern Festival"},
+        {ty:"D",st:{mon:4,d:15},inh:"Vesak", urls:{"en":"https://www.officeholidays.com/holidays/singapore/buddha-purnima"}},
     ]
 }

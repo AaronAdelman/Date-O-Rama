@@ -7,13 +7,13 @@
     fst:{era:1,y:1790},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_Pitcairn_Islands"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{mon:1,d:23}, inh:"BountyD", fst:{era:1,y:1790}},
-        {ty:"D", st:{misc:"E",offsetD:-2}, inh:"GoodFri"},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
-        {inh:"King’s Birthday", ty:"D", st:{mon:6,wkd:[7],nth:2}, fst:{era:1,y:2022}},
-        {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
-        {ty:"D", st:{mon:12,d:26}, inh:"BoxingD"},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{mon:1,d:23},inh:"BountyD",fst:{era:1,y:1790}},
+        {ty:"D",st:{misc:"E",offsetD:-2},inh:"GoodFri"},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {inh:"King’s Birthday", ty:"D",st:{mon:6,wkd:[7],nth:2},fst:{era:1,y:2022}},
+        {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
+        {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
     ]
 }

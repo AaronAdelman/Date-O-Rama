@@ -8,13 +8,13 @@
     fst:{era:1,y:1971},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_the_United_Arab_Emirates"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"nD", st:{mon:11,d:30}, end:{mon:12,d:1}, ttls:{"ar":"يوم الشهيد","en":"Commemoration Day","fa":"روز شهید","ta":"தியாகிகள் நாள்"}, urls:{"en":"https://nationaltoday.com/commemoration-day/"}, inh:"Martyrs’ Day"},
-        {ty:"nD", st:{mon:12,d:2}, end:{mon:12,d:3}, fst:{era:1,y:1971}, inh:"ND", urls:{"en":"https://www.daysoftheyear.com/days/uae-national-day/"}, nts:{"en":"Eid Al Etihad"}},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"nD",st:{mon:11,d:30}, end:{mon:12,d:1},ttls:{"ar":"يوم الشهيد","en":"Commemoration Day","fa":"روز شهید","ta":"தியாகிகள் நாள்"}, urls:{"en":"https://nationaltoday.com/commemoration-day/"},inh:"Martyrs’ Day"},
+        {ty:"nD",st:{mon:12,d:2}, end:{mon:12,d:3},fst:{era:1,y:1971},inh:"ND", urls:{"en":"https://www.daysoftheyear.com/days/uae-national-day/"},nts:{"en":"Eid Al Etihad"}},
 
-        {ty:"D", st:{mon:6,d:21}, inh:"FathersD"},
-        {ty:"D", st:{mon:3,d:21}, inh:"MothersD"},
-        {ty:"D", st:{mon:11,d:20}, inh:"ChildrensD"},
-        {ty:"D", st:{mon:8,d:28}, inh:"Women’s Day", urls:{"en":"https://nationaltoday.com/emirati-womens-day/"}, fst:{era:1,y:2015}},
+        {ty:"D",st:{mon:6,d:21},inh:"FathersD"},
+        {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
+        {ty:"D",st:{mon:11,d:20},inh:"ChildrensD"},
+        {ty:"D",st:{mon:8,d:28},inh:"Women’s Day", urls:{"en":"https://nationaltoday.com/emirati-womens-day/"},fst:{era:1,y:2015}},
     ]
 }

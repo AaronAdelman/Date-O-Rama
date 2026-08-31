@@ -8,13 +8,13 @@
     fst:{era:1,y:1958},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guinea"},
     evts:[
-        {ty:"D", st:{mon:1,d:1}, inh:"NYD"},
-        {ty:"D", st:{misc:"E"}, inh:"Easter"},
-        {ty:"D", st:{misc:"E",offsetD:1}, inh:"EasterMon"},
-        {ty:"D", st:{mon:5,d:1}, inh:"LabourD"},
-        {ty:"D", st:{mon:5,d:25}, inh:"AfricaD", fst:{era:1,y:1963}},
-        {ty:"D", st:{mon:8,d:15}, inh:"Assumption"},
-        {ty:"D", st:{mon:10,d:2}, inh:"ID", fst:{era:1,y:1958}, urls:{"en":"https://nationaltoday.com/guinea-independence-day/"}},
-        {ty:"D", st:{mon:12,d:25}, inh:"Xmas"},
+        {ty:"D",st:{mon:1,d:1},inh:"NYD"},
+        {ty:"D",st:{misc:"E"},inh:"Easter"},
+        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:25},inh:"AfricaD",fst:{era:1,y:1963}},
+        {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
+        {ty:"D",st:{mon:10,d:2},inh:"ID",fst:{era:1,y:1958}, urls:{"en":"https://nationaltoday.com/guinea-independence-day/"}},
+        {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
     ]
 }
