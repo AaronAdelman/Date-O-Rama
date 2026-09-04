@@ -1532,7 +1532,7 @@
         {ty:"D",st:{mon:8,d:3},ttls:{"en":"Cloves Syndrome Awareness Day"}, urls:{"en":"https://www.daysoftheyear.com/days/cloves-syndrome-awareness-day/"},inh:"*MedAw*"},
         {ty:"D",st:{mon:8,d:3},ttls:{"en":"Esther Day"}, urls:{"en":"https://nerdfighteria.info/article/1103"},fst:{era:1,y:2010}},
         {ty:"D",st:{mon:8,d:30},ttls:{"en":"Frankenstein Day","he":"יום פרנקנשטיין"},nts:{"en":"National Frankenstein Day","he":"יום פרנקנשטיין הלאומי"}, urls:{"en":"https://www.daysoftheyear.com/days/frankenstein-day/"}},
-        {ty:"D",st:{mon:8,d:30},ttls:{"en":"International Cabernet Sauvignon Day","he":"יום הקברנה סוביניון הבינלאומי"}, urls:{"en":"https://nationaltoday.com/international-cabernet-sauvignon-day/"},mog:"🍷",fst:{era:1,y:2009}},
+        {ty:"D",st:{mon:8,d:30},ttls:{"en":"International Cabernet Sauvignon Day","he":"יום הקברנה סוביניון הבינלאומי"}, urls:{"en":"https://nationaltoday.com/international-cabernet-sauvignon-day/"},mog:"🍷",fst:{era:1,y:2009},nts:{"en":"Some people think this event is on the Thursday before Labor Day in the United States.\nCreated by Rick Bakas"}},
         {ty:"D",st:{mon:8,d:30},ttls:{"en":"International Whale Shark Day","he":"יום הכריש הלווייתני הלאומי"},fst:{era:1,y:2012}, urls:{"en":"https://www.daysoftheyear.com/days/international-whale-shark-day/"}},
         {ty:"D",st:{mon:8,d:31},ttls:{"en":"Blog Day","he":"יום הבלוג"}, urls:{"en":"https://anydayguide.com/calendar/2395"},fst:{era:1,y:2005}},
         {ty:"D",st:{mon:8,d:31},ttls:{"en":"International Overdose Awareness Day","id":"Hari Kesadaran Overdosis Internasional","nb":"Verdens overdosedag","zh":"国际药物过量意识日"},fst:{era:1,y:2001}, urls:{"en":"https://www.overdoseday.com/"},inh:"*MedAw*",nts:{"en":"Created by Sally J. Finn"}},
