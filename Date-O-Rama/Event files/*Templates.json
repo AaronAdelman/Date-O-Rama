@@ -223,7 +223,7 @@
         "Happy Mew Year For Cats Day":{ty:"D",st:{mon:1,d:2},ttls:{"en":"Happy Mew Year For Cats Day"},nts:{"en":"Happy Mew Year Day\nHappy Meow Year for Cats Day\nMew Year for Cats"}},
         "Haunted Refrigerator Nite":{ty:"D",st:{mon:10,d:30},ttls:{"en":"Haunted Refrigerator Night","he":"ליל המקרר הרדוף"}},
         "Health Day":{ttls:{"en":"Health Day"}, ty:"D",st:{mon:4,d:7},mog:"👨‍⚕️👩‍⚕️"},
-        "Heritage Day":{ty:"D",st:{mon:2,wkd:[2],nth:3},ttls:{"en":"Heritage Day","ko":"유산의 날","fr":"Fête du Patrimoine"}},
+        "Heritage Day":{ty:"D",st:{mon:2,wkd:[2],nth:3},ttls:{"af":"Erfenisdag","ar":"يوم التراث","en":"Heritage Day","es":"Día de la tradición","fa":"روز میراث","fr":"Journée du patrimoine","gpe":"Heritage Day","id":"Hari Warisan","it":"Giorno dell’eredità","ja":"伝統文化継承の日","ko":"유산의 날","ms":"Hari Warisan","nl":"Erfenisdag","nso":"Letšatši la Bohwa","st":"Letsatsi la Lefa","tn":"Letsatsi la Boswa","uk":"День спадщини","zh":"遗产日","zu":"Usuku Lwamagugu"}},
         "Heroes’ Day":{ttls:{"ar":"بطل قومي","ca":"Dia dels Herois","de":"Heldentag","en":"Heroes’ Day","ko":"영웅의 날","mk":"Ден на хероите","nl":"Nationale heldendag","ur":"ہیروؤں کا قومی دن","he":"יום הגיבורים","es":"Dia de los héroes","hu":"Hősök napja","id":"Hari Pahlawan","pt":"Dia dos Heróis"}, ty:"D",st:{mon:6,d:9}, urls:{"en":"https://en.wikipedia.org/wiki/Heroes%27_Day"}},
         "Holly Day":{ty:"D",st:{mon:12,d:19},ttls:{"en":"Holly Day"}, urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2015/12/19/Happy-Holly-Day"}},
         "Holocaust Day":{ty:"D",st:{mon:8,d:27,wkd:[2, 3, 4, 5]},ttls:{"he":"יום הזיכרון לשואה ולגבורה","en":"Holocaust Day"}, urls:{"en":"https://www.ou.org/holidays/category/yom-hashoah/"},inh:"Holocaust Memorial Day"},

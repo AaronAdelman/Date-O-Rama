@@ -6,14 +6,14 @@
     urls:{"en":"https://muppet.fandom.com/wiki/Character_birthdays"},
     fst:{era:1,y:1969},
     evts:[
-        {ty:"D",st:{mon:11,d:10},ttls:{"en":"Sesame Street Day"}, urls:{"en":"https://www.daysoftheyear.com/days/sesame-street-day/"},fst:{era:1,y:2009}},
+        {ty:"D",st:{mon:11,d:10},ttls:{"en":"Sesame Street Day"},urls:{"en":"https://www.daysoftheyear.com/days/sesame-street-day/"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:10,d:15},inh:"NGrouchD",fst:{era:1,y:1976}},
         
         {ty:"D",st:{mon:1,d:5},ttls:{"en":"Hoots the Owl’s Birthday"},inh:"*BD*",fst:{era:1,y:2005}},
         {ty:"D",st:{mon:1,d:13},inh:"NRubberDuckyD",fst:{era:1,y:1972}},
         {ty:"D",st:{mon:1,d:24},ttls:{"en":"Julia’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:1,d:28},ttls:{"en":"Ernie’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
-        {ty:"D",st:{mon:2,d:3},ttls:{"en":"Elmo’s Birthday"}, urls:{"en":"https://www.daysoftheyear.com/days/elmos-birthday/"},inh:"*BD*",fst:{era:1,y:1980},nts:{"en":"Created by Sesame Street"}},
+        {ty:"D",st:{mon:2,d:3},ttls:{"en":"Elmo’s Birthday"},urls:{"en":"https://www.daysoftheyear.com/days/elmos-birthday/"},inh:"*BD*",fst:{era:1,y:1980},nts:{"en":"Created by Sesame Street"}},
         {ty:"D",st:{mon:2,d:23},ttls:{"en":"Lola’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:2,d:23},ttls:{"en":"Tamir’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:2,d:24},ttls:{"en":"Gordon’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
@@ -37,7 +37,7 @@
         {ty:"D",st:{mon:5,d:4},ttls:{"en":"Susan’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
         {ty:"D",st:{mon:5,d:12},ttls:{"en":"Baby Bear’s Birthday"},inh:"*BD*",fst:{era:1,y:2005}},
         {ty:"D",st:{mon:5,d:24},ttls:{"en":"Sam the Robot’s Birthday"},inh:"*BD*",fst:{era:1,y:1974}},
-        {ty:"D",st:{mon:6,d:1},ttls:{"en":"Oscar the Grouch Day"}, urls:{"en":"https://www.daysoftheyear.com/days/oscar-the-grouch-day/"},mog:"🗑️",nts:{"en":"Oscar the Grouch’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
+        {ty:"D",st:{mon:6,d:1},ttls:{"en":"Oscar the Grouch Day"},urls:{"en":"https://www.daysoftheyear.com/days/oscar-the-grouch-day/"},mog:"🗑️",nts:{"en":"Oscar the Grouch’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"Rudy’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:6,d:6},ttls:{"en":"Pancho Contreras’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:6,d:7},ttls:{"en":"Amazing Mumford’s Birthday"},inh:"*BD*",fst:{era:1,y:1976}},
@@ -55,7 +55,7 @@
         {ty:"D",st:{mon:8,d:5},ttls:{"en":"Tango’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:8,d:7},ttls:{"en":"Ji-Young’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:8,d:15},ttls:{"en":"Bob’s Birthday"},inh:"*BD*",fst:{era:1,y:1972}},
-        {ty:"D",st:{mon:8,d:19},ttls:{"en":"Mr. Snuffleupagus’s Birthday"},inh:"*BD*",fst:{era:1,y:1974},nts:{"en":"Snuffy’s Birthday"}, urls:{"en":"https://sesameworkshop.org/our-work/shows/sesame-street/sesame-street-characters/aloysius-snuffleupagus-snuffy/"}},
+        {ty:"D",st:{mon:8,d:19},ttls:{"en":"Mr. Snuffleupagus’s Birthday"},inh:"*BD*",fst:{era:1,y:1974},nts:{"en":"Snuffy’s Birthday"},urls:{"en":"https://sesameworkshop.org/our-work/shows/sesame-street/sesame-street-characters/aloysius-snuffleupagus-snuffy/"}},
         {ty:"D",st:{mon:8,d:27},ttls:{"en":"Funella Furchester’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:8,d:31},ttls:{"en":"Herry’s Birthday"},inh:"*BD*",fst:{era:1,y:1974}},
         {ty:"D",st:{mon:9,d:3},ttls:{"en":"Barkley’s Birthday"},inh:"*BD*",fst:{era:1,y:2005}},
@@ -85,7 +85,7 @@
         {ty:"D",st:{mon:12,d:31},ttls:{"en":"Isabel’s Birthday"},inh:"*BD*"},
         
         {ty:"D",st:{mon:3,d:10},ttls:{"en":"Zoe’s Birthday"},inh:"*BD*",nts:{"en":"Some think Zoe was born on September 30 or in January."},fst:{era:1,y:1998}},
-        {ty:"D",st:{mon:5,d:9},ttls:{"en":"Kermit the Frog’s Birthday"},inh:"*BD*",nts:{"en":"It is unclear when Kermit the Frog was born; the birthday given here is simply one frequently used.  February 29 has also been suggested."},fst:{era:1,y:1955}, urls:{"en":"https://muppet.fandom.com/wiki/Kermit%27s_Birthday"}},
-        {ty:"D",st:{mon:11,d:26},inh:"NCookieD", urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-cookie-day-december-4"},fst:{era:1,y:1976}},
+        {ty:"D",st:{mon:5,d:9},ttls:{"en":"Kermit the Frog’s Birthday"},inh:"*BD*",nts:{"en":"It is unclear when Kermit the Frog was born; the birthday given here is simply one frequently used.  February 29 has also been suggested."},fst:{era:1,y:1955},urls:{"en":"https://muppet.fandom.com/wiki/Kermit%27s_Birthday"}},
+        {ty:"D",st:{mon:11,d:26},inh:"NCookieD",urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-cookie-day-december-4"},fst:{era:1,y:1976}},
     ]
 }

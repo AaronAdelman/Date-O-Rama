@@ -16,7 +16,7 @@
         {ttls:{"he":"יום־שנה של מרים הנביאה","en":"Yohrtsayt of Miryam the Prophetess"}, ty:"D",st:{mon:8,d:10},inh:"*DA*"},
         {ttls:{"he":"יום־שנה של עלי הכהן ושני בניו","en":"Yohrtsayt of ‘Eli the Kohen and his two sons"}, ty:"D",st:{mon:9,d:10},inh:"*DA*"},
         {ttls:{"he":"יום שבו ארון הברית נשבה","en":"Day the Ark of the Covenant was captured"}, ty:"D",st:{mon:9,d:10}},
-        {ttls:{"he":"תענית תקופת חמלניצקי","en":"Fast of the Khmelnitsky Massacres"}, ty:"D",st:{mon:10,d:20}, urls:{"en":"https://oukosher.org/halacha-yomis?category=20th-of-sivan"}},
+        {ttls:{"he":"תענית תקופת חמלניצקי","en":"Fast of the Khmelnitsky Massacres"}, ty:"D",st:{mon:10,d:20},urls:{"en":"https://oukosher.org/halacha-yomis?category=20th-of-sivan"}},
         {ttls:{"he":"יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט","en":"Day of stopping of bringing of first fruits to Yerushalayim in the days of Yarov‘am ben Nevaṭ"}, ty:"D",st:{mon:10,d:23}},
         {ttls:{"he":"יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו","en":"Yohrtsayt of Rabbi Ḥanina’ ben Teradhyon and the day a Torah scroll was burned with him"}, ty:"D",st:{mon:10,d:27},inh:"*DA*"},
         {ttls:{"he":"יום שבו כבה הנר המערבי בימי המלך אחז","en":"Day of extinguishing of the western lamp in the days of King ’Aḥaz"}, ty:"D",st:{mon:12,d:18}},

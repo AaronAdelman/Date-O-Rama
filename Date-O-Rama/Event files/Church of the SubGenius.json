@@ -192,7 +192,7 @@
             {ty:"D",st:{mon:7,d:2},ttls:{"en":"Saint Phil Spector"}},
             {ty:"D",st:{mon:7,d:3},ttls:{"en":"Saint Alec Guiness"}},
             {ty:"D",st:{mon:7,d:4},ttls:{"en":"Saint Elizabeth Montgomery"}},
-            {ty:"D",st:{mon:7,d:5},ttls:{"en":"X-Day"}, urls:{"en":"https://en.wikipedia.org/wiki/X-Day_(Church_of_the_SubGenius)"},fst:{era:1,y:1998}},
+            {ty:"D",st:{mon:7,d:5},ttls:{"en":"X-Day"},urls:{"en":"https://en.wikipedia.org/wiki/X-Day_(Church_of_the_SubGenius)"},fst:{era:1,y:1998}},
             {ty:"D",st:{mon:7,d:6},ttls:{"en":"Saint Arthur C. Clarke"}},
             {ty:"D",st:{mon:7,d:7},ttls:{"en":"X-Day (approximate)"}},
             {ty:"D",st:{mon:7,d:8},ttls:{"en":"Saint Zorak"}},
