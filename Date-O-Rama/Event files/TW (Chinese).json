@@ -14,7 +14,7 @@
         {ty:"D",st:{mon:1,d:6,wkd:[6]}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chinese-new-year"},inh:"LunarNYHol"},
         {ty:"D",st:{mon:1,d:15},inh:"Lantern Festival"},
         {ty:"D",st:{mon:5,d:5},inh:"DragonBoatFestival"},
-        {ty:"D",st:{mon:8,d:15}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/mid-autumn-festival"},inh:"Mid-Autumn Festival"},
+        {ty:"D",st:{mon:8,d:15}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/mid-autumn-festival"},inh:"MidAutumnFestival"},
         {ty:"D",st:{mon:9,d:9}, urls:{"en":"https://www.officeholidays.com/holidays/taiwan/chung-yeung-festival"},inh:"ChungYeungFestival"},
         
         {ty:"D",st:{mon:1,d:15}, urls:{"en":"https://nationaltoday.com/tourism-day/"},ttls:{"en":"Tourism Day","zh":"觀光節"}},

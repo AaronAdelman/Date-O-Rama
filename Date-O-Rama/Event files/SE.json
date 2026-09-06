@@ -43,7 +43,7 @@
         {ty:"D",st:{misc:"E",offsetD:-49},inh:"Fastelavn"},
         {ty:"D",st:{mon:2,d:24},urls:{"en":"https://nationaltoday.com/sweden-finns-day/"},ttls:{"en":"Sweden Finns Day"},fst:{era:1,y:2010}},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:11,d:6},inh:"Gustavus Adolphus Day"},
+        {ty:"D",st:{mon:11,d:6},inh:"GustavusAdolphusD"},
         {ty:"D",st:{mon:3,d:25},inh:"Waffle Day"},
         {ty:"D",st:{mon:10,d:4},ttls:{"ar":"يوم لفة القرفة","de":"Tag der Zimtschnecke","en":"Cinnamon Bun Day","es":"Día del Rollo de Canela","fa":"روز رول دارچینی","fr":"Kanelbullens dag","he":"יום שבלול הקינמון","sv":"Kanelbullens dag","zh":"肉桂卷日"},fst:{era:1,y:1999},urls:{"en":"https://kanelbullensdag.se/en/","sv":"https://kanelbullensdag.se/"},nts:{"en":"Cinnamon Roll Day\nNational Cinnamon Bun Day\nNational Cinnamon Roll Day\nCreated by Kaeth Gardestedt and the Home Baking Council in Sweden"}},
         {ty:"D",st:{mon:1,d:27},inh:"Holocaust Memorial Day",fst:{era:1,y:2006}},
