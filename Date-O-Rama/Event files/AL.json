@@ -20,6 +20,7 @@
         {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
         {ty:"D",st:{mon:9,d:5},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
+        {ty:"D",st:{mon:9,d:7,wkd:[2,3]},ttls:{"en":"Feast of Saint Teresa of Calcutta (in lieu)"},nts:{"en":"Saint Teresa Canonisation Day (in lieu)"},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty:"D",st:{mon:11,d:28},inh:"ID",fst:{era:1,y:1912},urls:{"en":"https://www.daysoftheyear.com/days/albanian-independence-day/"},nts:{"en":"Albania Flag Day"}},
         {ty:"D",st:{mon:11,d:29},inh:"Liberation Day",fst:{era:1,y:1944},urls:{"en":"https://www.daysoftheyear.com/days/albanian-liberation-day/"}},
         {ty:"D",st:{mon:8,d:12},inh:"NYouthD",fst:{era:1,y:2010}},

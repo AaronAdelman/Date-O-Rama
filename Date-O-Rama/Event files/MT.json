@@ -114,9 +114,9 @@
 
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},
         {ty:"D",st:{mon:11,d:11},inh:"StMartinOfTours"},
-        {inh:"StCecilia", ty:"D",st:{mon:11,d:22}},
+        {ty:"D",st:{mon:11,d:22},inh:"StCecilia"},
         {ty:"D",st:{mon:11,d:25},inh:"StCatherineOfAlexandria"},
-        {inh:"XTheKing", ty:"D",st:{mon:11,d:26,thruMon:12,thruD:2,wkd:[1]}},
+        {ty:"D",st:{mon:11,d:26,thruMon:12,thruD:2,wkd:[1]},inh:"XTheKing"},
 
         {ty:"D",st:{mon:12,d:26},inh:"StStephen"},
         {ty:"D",st:{mon:12,d:28},inh:"Holy Innocents Day"},

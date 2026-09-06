@@ -15,10 +15,11 @@
         {ty:"D",st:{mon:5,d:6},inh:"StGeorge"},
         {ty:"D",st:{mon:5,d:7,thruD:8,wkd:[2]},inh:"StGeorge (IL)",urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/day-of-the-bulgarian-army"}},
         {ty:"D",st:{mon:5,d:24},ttls:{"be-tarask":"Дзень славянскага пісьменства і культуры","bg":"Ден на светите братя Кирил и Методий, на българската азбука, просвета и култура и на славянската книжовност","en":"Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture","fr":"Journée de l’écriture cyrillique et de la culture slave","hy":"Սլավոնական գրի և մշակույթի օր","mk":"Ден на бугарската просвета и култура и на словенската писменост","pt":"Dia da educação e cultura búlgara e da escrita eslavônica","ru":"День славянской письменности и культуры","sah":"Славян суругун-бичигин уонна култууратын күнэ","sr":"Дан Ћирила и Методија","uk":"День слов’янської писемності і культури"},urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"},nts:{"en":"Bulgarian Education and Culture and Slavonic Literature Day\nDay of Bulgarian Education and Culture and Slavonic Literature"}},
-        {ty:"D",st:{mon:5,d:25,wkd:[2]},inh:"DOfSlavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"},
-        {ty:"D",st:{mon:5,d:26,wkd:[2, 3, 4]},inh:"DOfSlavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"},
+        {ty:"D",st:{mon:5,d:25,wkd:[2]},inh:"DOfSlavonicAlphabetBulgarianEnlightenment&Culture (IL)"},
+        {ty:"D",st:{mon:5,d:26,wkd:[2, 3, 4]},inh:"DOfSlavonicAlphabetBulgarianEnlightenment&Culture (IL)"},
         {ty:"D",st:{mon:9,d:6},inh:"Unification Day",urls:{"en":"https://www.daysoftheyear.com/days/unification-day-in-bulgaria/"},fst:{era:1,y:1885}},
-        {ty:"D",st:{mon:9,d:8,wkd:[2, 3, 4]},ttls:{"en":"Unification Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/bulgaria-unification-day"},fst:{era:1,y:1885}},
+        {ty:"D",st:{mon:9,d:7,thruD:8,wkd:[2]},inh:"UnificationD (IL)",fst:{era:1,y:1885}},
+        {ty:"D",st:{mon:9,d:8,wkd:[4]},inh:"UnificationD (IL)",fst:{era:1,y:1885}},
         {ty:"D",st:{mon:9,d:22},inh:"ID",fst:{era:1,y:1908},urls:{"en":"https://www.daysoftheyear.com/days/independence-day-in-bulgaria/"}},
         {ty:"D",st:{mon:9,d:23,wkd:[2]},inh:"ID (IL)",fst:{era:1,y:1908}},
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
@@ -50,6 +51,7 @@
         {ty:"D",st:{mon:7,d:1},ttls:{"bg":"Джулай","de":"July Morning","en":"July Morning","hy":"Ջուլայ","ka":"ივლისის დილა","mk":"Џулај Морнинг","nb":"July Morning","ru":"Джулай","sv":"July Morning"},fst:{era:1,y:1970},urls:{"en":"https://www.daysoftheyear.com/days/july-morning/"},mog:"🌅"},
     ],
     tpls:{
-        "DOfSlavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)":{ty:"D",st:{mon:5,d:26,wkd:[2, 3, 4]},ttls:{"en":"Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"},nts:{"en":"Bulgarian Education and Culture and Slavonic Literature Day (in lieu)\nDay of Bulgarian Education and Culture and Slavonic Literature (in lieu)"}},
+        "DOfSlavonicAlphabetBulgarianEnlightenment&Culture (IL)":{ty:"D",st:{mon:5,d:26,wkd:[2,3,4]},ttls:{"en":"Day of Slavonic Alphabet, Bulgarian Enlightenment and Culture (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/orthodox-cyril-and-methodius-day"},nts:{"en":"Bulgarian Education and Culture and Slavonic Literature Day (in lieu)\nDay of Bulgarian Education and Culture and Slavonic Literature (in lieu)"}},
+        "UnificationD (IL)":{ty:"D",st:{mon:9,d:7,thruD:8,wkd:[2]},ttls:{"en":"Unification Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/bulgaria/bulgaria-unification-day"}},
     }
 }

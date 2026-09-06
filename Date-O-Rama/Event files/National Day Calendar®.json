@@ -343,7 +343,7 @@
         {ty:"D",st:{mon:9,d:26},ttls:{"en":"Compliance Officer Day"},nts:{"en":"National Compliance Officer Day"},urls:{"en":"https://www.sai360.com/compliance-officer-day"},fst:{era:1,y:2016},nts:{"en":"Created by the Society of Corporate Compliance and Ethics"}},
         {ty:"D",st:{mon:9,d:26},ttls:{"en":"National Dumpling Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-dumpling-day-september-26"},fst:{era:1,y:2015},mog:"🥟",nts:{"en":"Created by TMI Food Group"}},
         {ty:"D",st:{mon:9,d:26},ttls:{"en":"National Situational Awareness Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-situational-awareness-day-september-26"},fst:{era:1,y:2015},nts:{"en":"Created by Pretty Loaded, LLC"}},
-        {ty:"D",st:{mon:9,d:27},ttls:{"en":"National Day of Forgiveness"},urls:{"en":"https://www.thenationaldayofforgiveness.com/"},fst:{era:1,y:2021},mog:"⚘",nts:{"en":"Created by Melissa Reese, the Pursuit Guru"}},
+        {ty:"D",st:{mon:9,d:27},ttls:{"en":"National Day of Forgiveness"},urls:{"en":"https://www.thenationaldayofforgiveness.com/"},fst:{era:1,y:2021},mog:"⚘",nts:{"en":"Created by Melissa Reese the Pursuit Guru"}},
         {ty:"D",st:{mon:9,d:27},ttls:{"en":"National Scarf Day"},fst:{era:1,y:2018},nts:{"en":"Created by Echo New York\nThis observance seems to be meant to sell scarves."},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-scarf-day-september-27"}},
         {ty:"D",st:{mon:9,d:30},inh:"NLuvPplD",fst:{era:1,y:2017}},
         {ty:"D",st:{mon:9,d:30},ttls:{"en":"National AI in Work Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-ai-at-work-day-september-30"},fst:{era:1,y:2025},nts:{"en":"Created by LinkedIn"}},

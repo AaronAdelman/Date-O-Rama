@@ -710,6 +710,7 @@
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"National Day of Remembrance for Charlie Kirk"},fst:{era:1,y:2025},nts:{"en":"Created by the US Congress"}},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"National Farm Safety Day for Kids"},urls:{"en":"https://www.checkiday.com/1a385e080f011638f81151b539f3ba77/national-farm-safety-day-for-kids"},fst:{era:1,y:1989}},
         {ty:"D",st:{mon:9,d:25},ttls:{"en":"“If You See Something, Say Something” Awareness Day"},urls:{"en":"https://www.checkiday.com/9ab307f72956169daae19fa9e5a139c7/if-you-see-something-say-something-awareness-day"},fst:{era:1,y:2018}},
+        {ty:"D",st:{mon:9,d:25},ttls:{"en":"Dolly Parton Appreciation Day"},urls:{"en":"https://people.com/manhattan-borough-president-declares-9-25-dolly-parton-appreciation-day-in-new-york-city-12077156"},fst:{era:1,y:2026}},
         {ty:"D",st:{mon:12,wkd:[2],nth:1},inh:"Walt Disney Day",fst:{era:1,y:1986}},
         {ty:"D",st:{mon:1,d:21},ttls:{"en":"National Angel Island Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-angel-island-day/"},fst:{era:1,y:2010},nts:{"en":"Created by Barack Obama"}},
         {ty:"M",st:{mon:2},ttls:{"en":"Potato Lovers Month"},urls:{"en":"https://www.daysoftheyear.com/days/potato-lovers-month/"},mog:"🥔",nts:{"en":"Created by Booth Gardner"},fst:{era:1,y:1987}},
