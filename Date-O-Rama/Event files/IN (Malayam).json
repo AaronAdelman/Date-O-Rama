@@ -1,0 +1,27 @@
+//Comparative table showing corresponding months of other calendars
+//No.    Months in Malayalam Era    In Malayalam    Tamil calendar    Sanskrit solar month    Saka era    Tulu calendar    Sign of zodiac    Gregorian Calendar
+//1.    ciṅṅam    ചിങ്ങം    Aavani    Siṃha    Śravana–Bhādrapada    Sona    Leo    August–September
+//2.    kaṉṉi    കന്നി    Purattasi    Kanyā    Bhādrapada–Aśvina    Nirnaala    Virgo    September–October
+//3.    tulām    തുലാം    Aippasi    Tulā    Aśvina–Kārtika    Bonthyel    Libra    October–November
+//4.    vr̥ścikam    വൃശ്ചികം    Karthigai    Vṛścikam    Kārtika–Mārgaśīrṣa    Jaarde    Scorpio    November–December
+//5.    dhaṉu    ധനു    Margazhi    Dhanu    Mārgaśīrṣa–Pauṣa    Peraarde    Sagittarius    December–January
+//6.    makaram    മകരം    Thai    Makara    Pauṣa/Taiṣya-Māgha    Ponny    Capricorn    January–February
+//7.    kumbham    കുംഭം    Maasi    Kumbha    Māgha–Phālguna    Maayi    Aquarius    February–March
+//8.    mīṉam    മീനം    Panguni    Mīna    Phālguna–Chaitra    Suggy    Pisces    March–April
+//9.    mēṭam    മേടം    Chithirai    Meṣa    Chaitra– Vaiśākha    Paggu    Aries    April–May
+//10.    iṭavam    ഇടവം    Vaikasi    Vṛṣabha    Vaiśākha–Jyaiṣṭha    Besa    Taurus    May–June
+//11.    mithuṉam    മിഥുനം    Aani    Mithuna    Jyaiṣṭha–Āṣāḍha    Kaarthel    Gemini    June–July
+//12.    kaṟkkaṭakam    കർക്കടകം    Aadi    Karkaṭaka    Āṣāḍha–Śrāvaṇa    Aaty    Cancer
+
+{
+    ttls:{"*":"IN"},
+    "//":"India",
+    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
+    defLocale:"en",
+    cal:"malayalam",
+    color:{r: 0.95, g: 0.62, b: 0.29},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
+    evts:[
+        {ty:"D",st:{mon:11,d:1},ttls:{"bn":"বসন্ত উৎসব","en":"Basanta Utsab","mr":"बसंत उत्सब"},urls:{"en":"https://en.wikipedia.org/wiki/Basanta_Utsab"}},
+    ]
+}

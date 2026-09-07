@@ -390,6 +390,8 @@
 		A58F39FB2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
 		A58F39FC2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
 		A58F39FD2DC27E1500F2D8E2 /* ASACalendarWithEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */; };
+		A59007B0304E835D00C64C3B /* IN (Malayam).json in Resources */ = {isa = PBXBuildFile; fileRef = A59007AF304E835D00C64C3B /* IN (Malayam).json */; };
+		A59007B1304E835D00C64C3B /* IN (Malayam).json in Resources */ = {isa = PBXBuildFile; fileRef = A59007AF304E835D00C64C3B /* IN (Malayam).json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593229225782AB800318BC3 /* ASALocationWithClocksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */; };
@@ -1514,6 +1516,7 @@
 		A58DFAD02EC1B2C800979AD1 /* UNITED.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UNITED.json; sourceTree = "<group>"; };
 		A58F39F62DC2783B00F2D8E2 /* ASAGregorianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGregorianCalendar.swift; sourceTree = "<group>"; };
 		A58F39FA2DC27E1400F2D8E2 /* ASACalendarWithEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarWithEaster.swift; sourceTree = "<group>"; };
+		A59007AF304E835D00C64C3B /* IN (Malayam).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IN (Malayam).json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
 		A5987C4E2A083337008A9E90 /* Theosophy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Theosophy.json; sourceTree = "<group>"; };
@@ -2197,6 +2200,7 @@
 				A5EFFF60285B61E500F2205F /* IM.json */,
 				A5D3D7E027FA18460099718A /* IN.json */,
 				A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */,
+				A59007AF304E835D00C64C3B /* IN (Malayam).json */,
 				A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */,
 				A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
@@ -3163,6 +3167,7 @@
 				A5171A632899A83B00CCA91A /* Taoism (Chinese).json in Resources */,
 				A5EFFFEE285B878900F2205F /* TW.json in Resources */,
 				A5EFFFA5285B7F2E00F2205F /* SA.json in Resources */,
+				A59007B1304E835D00C64C3B /* IN (Malayam).json in Resources */,
 				A50DA51F28686272008D54AE /* SR (Chinese).json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */,
@@ -3701,6 +3706,7 @@
 				A50C4FD22F13DE0E001D4EF2 /* Western Christianity (derived) (Julian).json in Resources */,
 				A5E4962B286252EC001BF40C /* MC.json in Resources */,
 				A5EFFF4D285B5D7E00F2205F /* EC.json in Resources */,
+				A59007B0304E835D00C64C3B /* IN (Malayam).json in Resources */,
 				A5B321FA2D7A118F004E0460 /* Matrixism.json in Resources */,
 				A56B3FE42DAEBD840041E9B0 /* Looney Tunes.json in Resources */,
 				A50C4FCE2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json in Resources */,
