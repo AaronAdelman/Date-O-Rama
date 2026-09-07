@@ -23,5 +23,42 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts:[
         {ty:"D",st:{mon:9,d:1},ttls:{"ar":"فيشو","as":"বিষু","bn":"বিষু","en":"Vishu","fr":"Vishu","hi":"विषु","hy":"Վիշու","id":"Vishu","ml":"വിഷു","ms":"Vishu","pa":"ਵਿਸ਼ੂ","pl":"Vishu","ru":"Вишу","sa":"विषुवपर्व","sat":"ᱵᱤᱥᱩ","ta":"விஷூ"},urls:{"en":"https://en.wikipedia.org/wiki/Vishu"}},
+        {ty:"D", st:{mon:9, d:10}, ttls:{"en":"Pathamudayam"}},
+        {ty:"M", st:{mon:12}, ttls:{"en":"Ramayana Masam"}},
+        {ty:"D", st:{mon:1, d:1}, ttls:{"en":"Kerala New Year (Kollam era)","ta":"கேரள புத்தாண்டு (கொல்லம் ஆண்டு)"},nts:{"en":"Chingam Onnu"},urls:{"en":"https://en.wikipedia.org/wiki/Kerala_New_Year_(Kollam_era)"}},
+
+        {ty:"nD", st:{mon:12,d:31},end:{mon:1,d:9}, ttls:{"ar":"أونام","as":"ওনাম","bn":"ওণম্","ca":"Onam","en":"Onam","eo":"Onam","es":"Onam","fi":"Onam","fr":"Onam","gom":"Onam","gu":"ઓણમ","hi":"ओणम","hif":"Onam","hy":"Օնամ","id":"Onam","io":"Onam","ja":"オナム","ka":"ონამი","kn":"ಓಣಮ್","lt":"Onam","ml":"ഓണം","mr":"ओणम","ms":"Onam","nn":"Onam","or":"ଓଣମ","pa":"ਓਣਮ","pl":"Onam","ru":"Онам","sa":"ओणम्","sat":"ᱳᱱᱟᱢ","sk":"Ónam","ta":"ஓணம்","tcy":"ಓಣಮ್","te":"ఓణం","th":"โอนัม","ur":"اونم"},"TODO":"Does not work"},
+        {ty:"D",st:{mon:12,d:31},ttls:{"en":"Atham"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:1},ttls:{"en":"Chithira"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:2},ttls:{"en":"Chodhi"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:3},ttls:{"en":"Vishakam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:4},ttls:{"en":"Anizham"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:5},ttls:{"en":"Thriketa"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:6},ttls:{"en":"Moolam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:7},ttls:{"en":"Pooradam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:8},ttls:{"en":"Uthradam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        {ty:"D",st:{mon:1,d:9},ttls:{"en":"Thiruvonam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+
+        {ty:"M", st:{mon:1}, ttls:{"en":"Vinayaka Chaturthi"}},
+
+        {ty:"M", st:{mon:1}, ttls:{"en":"Sri Krishna Janmashtami"}},
+
+        {ty:"M", st:{mon:2}, ttls:{"en":"Navaratri"}},
+
+        {ty:"M", st:{mon:3}, ttls:{"en":"Deepavali"}},
+
+        {ty:"M", st:{mon:4}, ttls:{"en":"Guruvayur Ekadashi"}},
+
+        {ty:"M", st:{mon:4}, ttls:{"en":"Thrikarthika"}},
+
+        {ty:"M", st:{mon:5}, ttls:{"en":"Thiruvathira"}},
+
+        {ty:"D", st:{mon:6, d:1}, ttls:{"en":"Makaravilakku"}},
+
+        {ty:"M", st:{mon:6}, ttls:{"en":"Makara Bharani"}},
+
+        {ty:"M", st:{mon:6}, ttls:{"en":"Thaipooyam"}},
+
+        {ty:"M", st:{mon:7}, ttls:{"en":"Maha Shivaratri"}}
     ]
 }
