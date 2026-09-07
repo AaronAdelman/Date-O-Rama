@@ -21,7 +21,7 @@
         
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
         {ty:"D",st:{mon:5,d:8},inh:"Parents’ Day",fst:{era:1,y:1973}},
-        {inh:"Black Day", ty:"D",st:{mon:4,d:14},fst:{era:1,y:1978}},
+        {ty:"D",st:{mon:4,d:14},inh:"BlackD", fst:{era:1,y:1978}},
         {ty:"D",st:{mon:11,d:11},ttls:{"en":"Pepero Day"},fst:{era:1,y:1994}, urls:{"en":"https://en.wikipedia.org/wiki/Pepero_Day"}},
         {ty:"D",st:{mon:11,d:11},ttls:{"en":"Garaetteok Day"},fst:{era:1,y:1994}, urls:{"en":"https://en.wikipedia.org/wiki/Pepero_Day"}},
         {ty:"D",st:{mon:11,d:22},ttls:{"en":"National Kimchi Day"},fst:{era:1,y:2020}, urls:{"en":"https://www.checkiday.com/c92a98fa9a6a062f461df161bd469b5e/national-kimchi-day-south-korea"}},

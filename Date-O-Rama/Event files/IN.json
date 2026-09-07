@@ -6,7 +6,7 @@
     "//":"India",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.95, g: 0.62, b: 0.29},
+    color:{name:"orange"},
     fst:{era:1,y:1947},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts:[
