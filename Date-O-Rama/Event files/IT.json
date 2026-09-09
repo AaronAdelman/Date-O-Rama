@@ -3,7 +3,7 @@
     "//":"Italy",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.00, g: 0.48, b: 0.20},
+    color:{r:0.00,g:0.48,b:0.20},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Italy"},
     fst:{era:1,y:1861},
     evts:[
@@ -11,7 +11,7 @@
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
         {ty:"D",st:{mon:3,d:19},inh:"FathersD"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:4,d:25},inh:"Liberation Day",fst:{era:1,y:1945},urls:{"en":"https://nationaltoday.com/national-liberation-day-italy/"}},
         {ty:"D",st:{mon:4,d:25},inh:"StMarkTheEvangelist",nts:{"en":"Feast of Saint Mark"}},
         {ty:"D",st:{mon:4,d:28},urls:{"en":"https://www.officeholidays.com/holidays/italy/sardinia/sardinia-day"},ttls:{"en":"Sardinia’s Day"},fst:{era:1,y:1993}},
@@ -69,8 +69,8 @@
         {ty:"D",st:{mon:11,wkd:[1],nth:3},ttls:{"en":"National Day in Memory of Road Victims","it":"Giornata nazionale in memoria delle vittime della strada"},fst:{era:1,y:2018}},
         {ty:"D",st:{mon:12,d:1},inh:"WAIDSD",fst:{era:1,y:1988}},
         
-        {ty:"D",st:{misc:"E",offsetD:39},inh:"Ascension"},
-        {ty:"D",st:{misc:"E",offsetD:60},inh:"CorpusXi"},
+        {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
+        {ty:"D",st:{misc:"E",oD:60},inh:"CorpusXi"},
 
         {ty:"D",st:{mon:4,d:1},inh:"AprFoolsD"},
         {ty:"D",st:{mon:6,d:15},inh:"EngineersD"},

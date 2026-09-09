@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays?",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.78, g: 0.06, b: 0.18},
+    color:{r:0.78,g:0.06,b:0.18},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Turkey"},
     fst:{era:1,y:1923},
     evts:[
@@ -18,7 +18,7 @@
 
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
-        {inh:"Vardavar", ty:"D",st:{misc:"E",offsetD:98}},
+        {inh:"Vardavar", ty:"D",st:{misc:"E",oD:98}},
         {ty:"D",st:{mon:12,d:17},inh:"StBarbara"},
 
         {ty:"D",st:{mon:5,d:27},ttls:{"en":"Freedom and Constitution Day","tr":"Mayıs Hürriyet ve Anayasa Bayramı"},urls:{"en":"https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"},fst:{era:1,y:1963}},

@@ -34,7 +34,7 @@
         {ty:"D",st:{era:1,y:2025,mon:4,d:12},inh:"RecordStoreD"},
         {ty:"D",st:{misc:"Dec"},ttls:{"en":"National Flashlight Day","he":"יום הפנס הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/flashlight-day/"},mog:"🔦"},
         {ty:"D",st:{misc:"Dec"},ttls:{"en":"National Kiwi Fruit Day"},urls:{"en":"https://www.checkiday.com/b35f55e6faccd149cdf57fe5e845ff50/national-kiwi-fruit-day"},mog:"🥝",fst:{era:1,y:2012}},
-        {ty:"D",st:{misc:"E",offsetD:-8},ttls:{"en":"Take Your Parents to the Playground Day"},nts:{"en":"National Take Your Parents to the Playground Day\nSome seem to think this observance is on the third Saturday in May.\nCreated by PDPlay"},urls:{"en":"https://pdplay.com/take-parents-playground-day/"},fst:{era:1,y:2009}, end:{era:1,y:2016},inh:"Parents’ Day"},
+        {ty:"D",st:{misc:"E",oD:-8},ttls:{"en":"Take Your Parents to the Playground Day"},nts:{"en":"National Take Your Parents to the Playground Day\nSome seem to think this observance is on the third Saturday in May.\nCreated by PDPlay"},urls:{"en":"https://pdplay.com/take-parents-playground-day/"},fst:{era:1,y:2009}, end:{era:1,y:2016},inh:"Parents’ Day"},
         {ty:"D",st:{misc:"Jun"},ttls:{"en":"National Yard Games Day"},urls:{"en":"https://nationaltoday.com/national-yard-games-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Luke Lorick of Tailgating Challenge"}},
         {ty:"D",st:{misc:"Sep"},inh:"NProposalD",fst:{era:1,y:1976},urls:{"en":"https://www.checkiday.com/b545a3caabac852b6569442040889050/proposal-day"}},
         {ty:"D",st:{mon:1,d:1,wkd:[2, 3, 4,5,6, 7]},inh:"RoseBowlGame",fst:{era:1,y:1902}},

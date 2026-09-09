@@ -97,7 +97,7 @@ struct ASADateSpecification:  Codable {
         case dayHalf             = "dHalf"
         case body
         case dhuhrMinutes        = "dhuhrMin"
-        case offsetDays          = "offsetD"
+        case offsetDays          = "oD"
         case miscellaneous       = "misc"
         case throughDay          = "thruD"
         case throughMonth        = "thruMon"

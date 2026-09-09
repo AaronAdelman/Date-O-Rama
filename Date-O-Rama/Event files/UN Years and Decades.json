@@ -146,7 +146,7 @@
         {ttls:{"en":"International Year of Shelter for the Homeless"}, ty:"Y",st:{era:1,y:1987}},
         {ttls:{"en":"International Year of Peace"}, ty:"Y",st:{era:1,y:1986},mog:"☮️"},
         {ttls:{"en":"Year of the United Nations"}, ty:"Y",st:{era:1,y:1985},mog:"🇺🇳"},
-        {ttls:{"en":"International Youth Year:  Participation, Development, Peace"}, ty:"Y",st:{era:1,y:1985},mog:"𝌑"},
+        {ttls:{"en":"International Youth Year: Participation, Development, Peace"}, ty:"Y",st:{era:1,y:1985},mog:"𝌑"},
         {ttls:{"en":"World Communications Year; Development of Communication Infrastructures"}, ty:"Y",st:{era:1,y:1983},mog:"📡"},
         {ttls:{"en":"International Year of Mobilization for Sanctions Against South Africa"}, ty:"Y",st:{era:1,y:1982},mog:"🇿🇦"},
         {ttls:{"en":"International Year for Disabled Persons"}, ty:"Y",st:{era:1,y:1981},mog:"♿︎"},

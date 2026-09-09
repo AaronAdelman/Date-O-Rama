@@ -4,7 +4,7 @@
     "TODO":"Muslim observances",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.00, g: 0.59, b: 0.22},
+    color:{r:0.00,g:0.59,b:0.22},
     fst:{era:1,y:1960},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nigeria"},
     evts:[
@@ -32,9 +32,9 @@
         {ty:"D",st:{era:1,y:2024,mon:11,d:1},inh:"Nigeria Election Holiday"},
         {ty:"D",st:{era:1,y:2025,mon:10,d:30},inh:"Nigeria Election Holiday"},
         {ty:"D",st:{era:1,y:2025,mon:10,d:31},inh:"Nigeria Election Holiday"},
-        {ty:"D",st:{misc:"E",offsetD:-2},inh:"GoodFri"},
+        {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:5,d:1},urls:{"en":"https://www.officeholidays.com/holidays/nigeria/labour-day"},inh:"WorkersD"},
         {ty:"D",st:{era:1,y:2023,mon:5,d:3},urls:{"en":"https://www.officeholidays.com/holidays/nigeria/rivers/rivers-state-public-holiday"},inh:"PublicHol"},
         {ty:"D",st:{mon:5,d:27},urls:{"en":"https://www.officeholidays.com/holidays/nigeria/nigeria-childrens-day"},inh:"ChildrensD",fst:{era:1,y:1964}},
@@ -60,7 +60,7 @@
         {inh:"XmasHol", ty:"nD",st:{era:1,y:2023,mon:12,d:27}, end:{era:1,y:2023,mon:12,d:29}},
         
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
-        {inh:"MothersD", ty:"D",st:{misc:"E",offsetD:-21}},
+        {inh:"MothersD", ty:"D",st:{misc:"E",oD:-21}},
        {inh:"ArmedForcesD", ty:"D",st:{mon:1,d:15},ttls:{"en":"Armed Forces Remembrance Day"}},
    ],
     tpls:{

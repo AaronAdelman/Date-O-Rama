@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays?",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.94, g: 0.20, b: 0.25},
+    color:{r:0.94,g:0.20,b:0.25},
     fst:{era:1,y:1943},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Lebanon"},
     evts:[
@@ -13,7 +13,7 @@
         {ty:"D",st:{mon:1,d:6},ttls:{"en":"Armenian Christmas","ar":"عيد الميلاد - الأرمن الأرثودكس","fr":"Noël Arménien","he":"חג המולד הארמני"},inh:"Xmas",fst:{era:1,y:2003},urls:{"en":"https://www.daysoftheyear.com/days/armenian-christmas/"}},
         {ty:"D",st:{mon:2,d:9},inh:"StMaroun"},
         {ty:"D",st:{mon:3,d:25},inh:"Annunciation"},
-        {ty:"D",st:{misc:"E",offsetD:-2},inh:"GoodFri"},
+        {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:5,d:1},inh:"IWorkerD"},
         {ty:"D",st:{mon:5,d:6},inh:"Martyrs’ Day",urls:{"en":"https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"},fst:{era:1,y:1916}},
@@ -23,11 +23,11 @@
         {inh:"ID", ty:"D",st:{mon:11,d:22},fst:{era:1,y:1943},urls:{"en":"https://nationaltoday.com/lebanon-independence-day/"}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
-        {ty:"D",st:{misc:"E",offsetD:-52},inh:"StVardanian"},
+        {ty:"D",st:{misc:"E",oD:-52},inh:"StVardanian"},
         {inh:"Teacher’s Day", ty:"D",st:{mon:3,d:9}},
         {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
-        {ty:"D",st:{misc:"E",offsetD:39},inh:"Ascension"},
+        {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{mon:9,d:8},inh:"Nativity of Mary"},
         {ty:"D",st:{mon:12,d:17},inh:"StBarbara"},
 

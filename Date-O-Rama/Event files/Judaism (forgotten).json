@@ -19,7 +19,7 @@
         {ttls:{"he":"יום טוב של בני דוד בן יהודה","en":"Festival of Bene Dawidh ben Yehudhah"}, ty:"D",st:{mon:10,d:20},nts:{"he":"תענית כ״ו ע״א"}},
         {ttls:{"he":"יום טוב ראשון של בני פרעוש בן יהודה","en":"First Festival of Bene Par‘osh ben Yehudhah"}, ty:"D",st:{mon:12,d:5},nts:{"he":"תענית כ״ו ע״א"}},
         {ttls:{"he":"יום טוב של יונדב בן רכב","en":"Festival of Yonadhav ben Rekhav"}, ty:"D",st:{mon:12,d:7},nts:{"he":"תענית כ״ו ע״א"}},
-        {ttls:{"he":"יום טוב של בני סנאב (או:  סנאה) בן בנימין","en":"Festival of Sena’av (or:  Sena’ah) ben Binyamin"}, ty:"D",st:{mon:12,d:10},nts:{"he":"תענית י״ב ע״א, תענית כ״ו ע״א"}},
+        {ttls:{"he":"יום טוב של בני סנאב (או:  סנאה) בן בנימין","en":"Festival of Sena’av (or: Sena’ah) ben Binyamin"}, ty:"D",st:{mon:12,d:10},nts:{"he":"תענית י״ב ע״א, תענית כ״ו ע״א"}},
         {ttls:{"he":"יום טוב של בני זתוא בן יהודה ועמהם כהנים ולוים וכל מי שטעה בשבטו ובני גונבי עלי ובני קוצעי קציעות","en":"Festival of Bene Zattu’ ben Yehudhah and with Them Kohanim and Lewiyyim and All Who Wandered with His Tribe and Bene Goneve ‘Eli and Bene Qoṣe‘e Qeṣi‘oth"}, ty:"D",st:{mon:12,d:15},nts:{"he":"תענית כ״ו ע״א"}},
         {ttls:{"he":"יום טוב של בני פחת מואב בן יהודה","en":"Festival of Bene Paḥath Mo’av ben Yehudhah"}, ty:"D",st:{mon:12,d:20},nts:{"he":"תענית כ״ו ע״א"}},
         {ttls:{"he":"יום טוב של בני עדין בן יהודה","en":"Festival of Bene ‘Adhin ben Yehudhah"}, ty:"D",st:{mon:13,d:20},nts:{"he":"תענית כ״ו ע״א, תענית כ״ח ע״א"}},

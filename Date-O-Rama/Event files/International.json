@@ -16,7 +16,7 @@
         {ty:"D",st:{era:1,y:2022,mon:2,d:22},inh:"Digital Learning Day"},
         {ty:"D",st:{era:1,y:2022,mon:5,d:8},inh:"Infidelity Hurts Awareness Day"},
         {ty:"D",st:{era:1,y:2023,mon:3,d:15},inh:"Digital Learning Day"},
-        {ty:"D",st:{misc:"E",offsetD:-2},ttls:{"en":"World Marbles Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-marbles-day/"},fst:{era:1,y:1588}},
+        {ty:"D",st:{misc:"E",oD:-2},ttls:{"en":"World Marbles Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-marbles-day/"},fst:{era:1,y:1588}},
         {ty:"D",st:{misc:"Jun"},inh:"WLambrusco Day",fst:{era:1,y:2011},last:{era:1,y:2020}},
         {ty:"D",st:{misc:"Jun"},ttls:{"en":"Cuckoo Warning Day"},mog:"🐦",urls:{"en":"https://www.jeanneukwendu.com/2011/cuckoo-warning-day-june-21"},fst:{era:1,y:2011}},
         {ty:"D",st:{misc:"Jun"},ttls:{"en":"The Longest Day"},mog:"⏰",urls:{"en":"https://act.alz.org/site/SPageServer?pagename=the_longest_day"},inh:"*MedAw*"},

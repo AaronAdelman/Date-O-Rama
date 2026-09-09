@@ -4,7 +4,7 @@
     "TODO":"Muslim holidays?",
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.85, g: 0.16, b: 0.11},
+    color:{r:0.85,g:0.16,b:0.11},
     fst:{era:1,y:1912},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Albania"},
     evts:[
@@ -17,7 +17,7 @@
         {ty:"D",st:{mon:3,d:22},inh:"Nowruz",fst:{era:1,y:2004},urls:{"en":"https://nationaltoday.com/nevruz-day/"}},
         {ty:"D",st:{mon:3,d:23,thruD:24,wkd:[2]},inh:"Nowruz (IL)",fst:{era:1,y:2004},urls:{"en":"https://www.officeholidays.com/holidays/albania/novruz"}},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{misc:"E",offsetD:1},inh:"EasterMon"},
+        {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
         {ty:"D",st:{mon:9,d:5},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty:"D",st:{mon:9,d:7,wkd:[2,3]},ttls:{"en":"Feast of Saint Teresa of Calcutta (in lieu)"},nts:{"en":"Saint Teresa Canonisation Day (in lieu)"},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},

@@ -21,7 +21,7 @@
 {
     ttls:{"*":"IN"},
     "//":"India",
-    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Vishu, Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
+    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
     defLocale:"en",
     cal:"malayalam",
     color:{name:"orange"},
@@ -43,5 +43,7 @@
         {ty:"D",st:{mon:1,d:7},ttls:{"en":"Pooradam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
         {ty:"D",st:{mon:1,d:8},ttls:{"en":"Uthradam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
         {ty:"D",st:{mon:1,d:9},ttls:{"en":"Thiruvonam"},urls:{"en":"https://en.wikipedia.org/wiki/Onam"}},
+        
+        {ty:"D",st:{mon:6,d:1},ttls:{"bn":"মকরভিলাক্কু","en":"Makaravilakku","hi":"मकरविलक्कु","kn":"ಮಕರವಿಳಕ್ಕು","ml":"മകരവിളക്ക്"},urls:{"en":"https://en.wikipedia.org/wiki/Makaravilakku"}},
     ]
 }
