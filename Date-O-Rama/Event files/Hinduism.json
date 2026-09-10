@@ -110,5 +110,14 @@
         {ty:"D",st:{mon:12,d:29},ttls:{"as":"হোলিকা দহন","awa":"होलिका दहन","bh":"सम्मत फूँकल","bn":"হোলিকা দহন","en":"Holika Dahana","hi":"होलिका दहन","mai":"होलीका दहन","mr":"होलिका दहन","ne":"होलीका दहन","nl":"Holika Dahan","pa":"ਹੋਲਿਕਾ ਦਹਨ","pnb":"ہولیکا دہن","sa":"होलिकादहनम्","ta":"ஹோலிகா தகனம்","te":"హోళికా దహనం","uk":"Спалення Холіки"}, urls:{"en":"https://en.wikipedia.org/wiki/Holika_Dahana"}},
         {ty:"D",st:{mon:12,d:30},ttls:{"af":"Holi","anp":"होली","ar":"هولي","as":"ফাকুৱা","awa":"फगुवा","az":"Holi","bg":"Холи","bh":"होली","bn":"দোলযাত্রা","ca":"Holi","ckb":"ھۆلی","crh":"Holi","cs":"Hólí","da":"Holi","de":"Holi","dty":"होःरी","el":"Χόλι","en":"Holi","eo":"Holio","es":"Holi","et":"Holi","eu":"Holi","fa":"هولی","fi":"Holi","fr":"Holi","ga":"Féile Holi","gl":"Holi","gom":"Holi","gu":"હોળી","he":"הולי","hi":"होली","hr":"Holi","hu":"Holi","hy":"Հոլի","id":"Holi","io":"Holi","is":"Holi","it":"Holi","ja":"ホーリー祭","ka":"ჰოლი","km":"ហូលី","kn":"ಹೋಳಿ","ko":"홀리","ks":"ہولی","ln":"Holi","lt":"Holi","lv":"Holi","mai":"होली","ml":"ഹോളി","mr":"होळी","ms":"Holi","mzn":"هولی","nb":"Holi","ne":"होली","nl":"Holi Phagwa","nn":"Holi","or":"ହୋଲି","pa":"ਹੋਲੀ","pl":"Holi","ps":"هولي","pt":"Holi","ro":"Holi","ru":"Холи","sa":"होलीपर्व","sat":"ᱦᱳᱞᱤ","sco":"Holi","sd":"هولي","sk":"Holí","sq":"Holi","sr":"Холи","sv":"Holi","ta":"ஹோலி","tcy":"ಹೋಳಿ","te":"హోళీ","th":"โฮลี","tl":"Holi","tr":"Holi","tt":"Һоли","uk":"Холі","ur":"ہولی","uz":"Holi","vi":"Holi","wuu":"侯丽节","zh":"侯丽节"}, urls:{"en":"https://www.daysoftheyear.com/days/holi/"},nts:{"en":"Dola Yatra"}},
         {ty:"nD",st:{mon:12,d:30}, end:{mon:1,d:4},ttls:{"en":"Vhadlo Shigmo"}, urls:{"en":"https://en.wikipedia.org/wiki/Shigmo"}, "//":"Currently not working"},
+        
+        {ty:"Y",st:{}, subEvts:[
+            {ty:"nM",st:{mon:1},end:{mon:2},inh:"Vasanta"},
+            {ty:"nM",st:{mon:3},end:{mon:4},inh:"Grishma"},
+            {ty:"nM",st:{mon:5},end:{mon:6},inh:"Varsha"},
+            {ty:"nM",st:{mon:7},end:{mon:8},inh:"Sharada"},
+            {ty:"nM",st:{mon:9},end:{mon:10},inh:"Hemanta"},
+            {ty:"nM",st:{mon:11},end:{mon:12},inh:"Shishira"},
+        ]},
     ]
 }

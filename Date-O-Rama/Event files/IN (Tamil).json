@@ -1,0 +1,34 @@
+//  Month (in Tamil)    Transliteration    Hindu Lunar calendar    Nakshatra    Gregorian calendar    Days
+//1 சித்திரை    Chittirai    Chaitra    Chittirai    April–May    30–31
+//2 வைகாசி    Vaikāsi    Vaisakha    Visakam    May–June    31–32
+//3 ஆனி    Āni    Jyestha    Anusham    June–July    31–32
+//4 ஆடி    Ādi    Asadha    Pooradam or Uthiradam    July–August    31–32
+//5 ஆவணி    Āvaṇi    Shravana    Thiruvonam    August–September    31–32
+//6 புரட்டாசி    Puraṭṭāsi    Bhadrapada    Pooratathi or Uthiratathi    September–October    30–31
+//7 ஐப்பசி    Aippasi    Asvina    Ashvini    October–November    29–30
+//8 கார்த்திகை    Kārtikai    Kartika    Kartikai    November–December    29–30
+//9 மார்கழி    Mārgaḻi    Margashirsha    Mirgashirsham    December–January    29–30
+//10    தை    Tai    Pausha    Pusham    January–February    29–30
+//11    மாசி    Māsi    Magha    Magham    February–March    29–30
+//12    பங்குனி    Panguni    Phalguna    Uttiram    March–April    30–31
+
+
+{
+    ttls:{"*":"IN"},
+    "//":"India",
+    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
+    defLocale:"en",
+    cal:"tamil",
+    color:{name:"orange"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
+    evts:[
+        {ty:"Y",st:{}, subEvts:[
+            {ty:"nM",st:{mon:1},end:{mon:2},inh:"Vasanta"},
+            {ty:"nM",st:{mon:3},end:{mon:4},inh:"Grishma"},
+            {ty:"nM",st:{mon:5},end:{mon:6},inh:"Varsha"},
+            {ty:"nM",st:{mon:7},end:{mon:8},inh:"Sharada"},
+            {ty:"nM",st:{mon:9},end:{mon:10},inh:"Hemanta"},
+            {ty:"nM",st:{mon:11},end:{mon:12},inh:"Shishira"},
+        ]},
+    ]
+}

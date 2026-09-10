@@ -65,7 +65,7 @@ enum ASACalendarCode: String, Codable {
 //    case malayalamSolarTime        = "malayalam-s"
     case marathiSolarTime          = "marathi-s"
     case odiaSolarTime             = "odia-s"
-    case tamilSolarTime            = "tamil-s"
+//    case tamilSolarTime            = "tamil-s"
     case teluguSolarTime           = "telugu-s"
 //    case vietnameseSolarTime       = "vietnamese-s"
     case vikramSolarTime           = "vikram-s"
@@ -128,7 +128,9 @@ extension ASACalendarCode {
 //                .dangi,
                 .gujarati, .kannada,
 //                .malayalam,
-                .marathi, .odia, .tamil, .telugu,
+                .marathi, .odia,
+//                .tamil,
+                .telugu,
 //                .vietnamese,
                 .vikram:
             let identifier = self.equivalentCalendarIdentifier
@@ -209,7 +211,7 @@ extension ASACalendarCode {
 //                .malayalamSolarTime,
                 .marathiSolarTime,
                 .odiaSolarTime,
-                .tamilSolarTime,
+//                .tamilSolarTime,
                 .teluguSolarTime,
 //                .vietnameseSolarTime,
                 .vikramSolarTime:
@@ -394,7 +396,9 @@ extension ASACalendarCode {
                } else {
                    identifier = nil
                }
-           case .tamil, .tamilSolarTime:
+           case .tamil
+//               , .tamilSolarTime
+               :
                if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .tamil
                } else {
@@ -436,7 +440,9 @@ extension ASACalendarCode {
         case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
                 .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .banglaSolarTime,
 //                .malayalamSolarTime,
-                .odiaSolarTime, .tamilSolarTime, .bahai, .bahaiSolarTime:
+                .odiaSolarTime,
+//                .tamilSolarTime,
+                .bahai, .bahaiSolarTime:
             return .solar
             
         case .chinese, .dangi, .hebrew, .hebrewGRA, .hebrewMA, .vietnamese, .vikram, .gujarati, .kannada, .telugu,
@@ -465,7 +471,9 @@ extension ASACalendarCode {
                     .dangi,
                     //.gujarati, .kannada,
                     .malayalam,
-//                .marathi, .odia, .tamil, .telugu,
+//                .marathi, .odia,
+                    .tamil,
+//                .telugu,
                     .vietnamese,
 //                    .vikram,
                     .bahaiSolarTime, .vikramSolarTime, .banglaSolarTime]
@@ -631,7 +639,10 @@ extension ASACalendarCode {
             
         case .malayalam:
             return [regionCode + " (Malayam)"]
-            
+
+        case .tamil:
+            return [regionCode + " (Tamil)"]
+
         default:
             return []
         } // switch self

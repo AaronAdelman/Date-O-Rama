@@ -37,6 +37,8 @@
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A506E3DF252C93DF009345A0 /* ASAProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */; };
 		A506E3E5252C9405009345A0 /* ASAProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */; };
+		A5070A003052825C003630F2 /* IN (Tamil).json in Resources */ = {isa = PBXBuildFile; fileRef = A50709FF3052825C003630F2 /* IN (Tamil).json */; };
+		A5070A013052825C003630F2 /* IN (Tamil).json in Resources */ = {isa = PBXBuildFile; fileRef = A50709FF3052825C003630F2 /* IN (Tamil).json */; };
 		A50750ED2E4CEBAE00A09037 /* The Satanic Temple.json in Resources */ = {isa = PBXBuildFile; fileRef = A50750EC2E4CEBAE00A09037 /* The Satanic Temple.json */; };
 		A50750EE2E4CEBAE00A09037 /* The Satanic Temple.json in Resources */ = {isa = PBXBuildFile; fileRef = A50750EC2E4CEBAE00A09037 /* The Satanic Temple.json */; };
 		A507794228915A0700A98D01 /* ASALocationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507794128915A0700A98D01 /* ASALocationTypeCell.swift */; };
@@ -1340,6 +1342,7 @@
 		A502D3EA286380E700A625A9 /* SD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SD.json; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedClock.swift; sourceTree = "<group>"; };
+		A50709FF3052825C003630F2 /* IN (Tamil).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IN (Tamil).json"; sourceTree = "<group>"; };
 		A50750EC2E4CEBAE00A09037 /* The Satanic Temple.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "The Satanic Temple.json"; sourceTree = "<group>"; };
 		A507794128915A0700A98D01 /* ASALocationTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationTypeCell.swift; sourceTree = "<group>"; };
 		A507B0AE270ECCCF00BDAE06 /* Mormonism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mormonism.json; sourceTree = "<group>"; };
@@ -2202,6 +2205,7 @@
 				A5BEC4BB302ED86A0024BB20 /* IN (Bangla).json */,
 				A59007AF304E835D00C64C3B /* IN (Malayam).json */,
 				A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */,
+				A50709FF3052825C003630F2 /* IN (Tamil).json */,
 				A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
@@ -3332,6 +3336,7 @@
 				A502D3E928637F5000A625A9 /* SB.json in Resources */,
 				A5E292D5285A59BB00925EBD /* MZ.json in Resources */,
 				A5EB4F902850D5DF00A32FB1 /* PS.json in Resources */,
+				A5070A013052825C003630F2 /* IN (Tamil).json in Resources */,
 				A5B999C228622BBA00072FD5 /* CC.json in Resources */,
 				A5E49647286253D0001BF40C /* MR.json in Resources */,
 				A5D8509D280C8F9D005247BD /* BG.json in Resources */,
@@ -3626,6 +3631,7 @@
 				A5EFFF33285B5B9E00F2205F /* BF.json in Resources */,
 				A5EE19E52804A92600B0B9C2 /* GB.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
+				A5070A003052825C003630F2 /* IN (Tamil).json in Resources */,
 				A5FB22D3286390E500B5042B /* WF.json in Resources */,
 				A581B888284E592000407D68 /* CH.json in Resources */,
 				A5FB22CA2863903600B5042B /* UM.json in Resources */,
