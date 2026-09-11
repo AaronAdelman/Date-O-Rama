@@ -12,7 +12,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:17},inh:"ConstitutionD", urls:{"en":"https://www.officeholidays.com/holidays/norway/norway-constitution-day"}},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},

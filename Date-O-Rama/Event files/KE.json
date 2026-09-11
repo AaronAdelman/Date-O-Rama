@@ -13,7 +13,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:6,d:1},urls:{"en":"https://nationaltoday.com/madaraka-day-kenya/"},ttls:{"en":"Madaraka Day"},nts:{"en":"Self-Governance Day"},fst:{era:1,y:1963}},
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"Mazingira Day"},urls:{"en":"https://nationaltoday.com/huduma-day/"},nts:{"en":"Moi Day\nHuduma Day\nUtamaduni Day"},fst:{era:1,y:2017}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"Mashujaa Day"},inh:"Heroes’ Day",urls:{"en":"https://nationaltoday.com/kenya-mashujaa-day/"},nts:{"en":"Heroes’ Day\nKenyatta Day"},fst:{era:1,y:2010}},

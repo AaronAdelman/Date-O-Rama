@@ -20,7 +20,7 @@
         {ty:"D",st:{misc:"E",oD:-3},inh:"Maundy Thu"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:25},ttls:{"en":"May Revolution Day","es":"Día de la Revolución de Mayo"},urls:{"en":"https://nationaltoday.com/may-revolution-day/"},nts:{"en":"May Day Revolution"}},
         {ty:"D",st:{mon:5,d:26,wkd:[6]},ttls:{"en":"May Day Revolution (bridge day)"},urls:{"en":"https://www.officeholidays.com/holidays/argentina/may-day-revolution"}},
         {ty:"D",st:{mon:6,d:17},inh:"Commemoration of General Don Martín Miguel de Güemes",fst:{era:1,y:1900}},

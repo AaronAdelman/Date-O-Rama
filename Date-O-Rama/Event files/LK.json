@@ -12,7 +12,7 @@
         {ty:"D",st:{mon:2,d:4},urls:{"en":"https://nationaltoday.com/national-day-sri-lanka/"},inh:"ND",fst:{era:1,y:1948}},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},

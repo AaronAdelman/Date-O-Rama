@@ -12,7 +12,7 @@
         {inh:"RevolutionD", ty:"D",st:{mon:2,d:17},fst:{era:1,y:2012},nts:{"en":"February 17th Revolution","ar":"ثورة 17 فبراير"},urls:{"en":"https://nationaltoday.com/february-17th-revolution/"}},
         {ttls:{"en":"Commemoration of the Victory over Kadhafi","ar":"ليبيا ذكرى الانتصار على القذافي"}, ty:"D",st:{mon:3,d:19},},
 
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"nD",st:{mon:9,d:10}, end:{mon:9,d:11},urls:{"en":"https://www.officeholidays.com/holidays/libya/libya-public-holiday"},inh:"PublicHol"},
         {inh:"Martyrs’ Day", ty:"D",st:{mon:9,d:16},fst:{era:1,y:2012}},
         {inh:"ID", ty:"D",st:{mon:12,d:24},fst:{era:1,y:1951},urls:{"en":"https://nationaltoday.com/libya-independence-day/"}},

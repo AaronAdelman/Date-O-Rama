@@ -16,7 +16,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:4,d:21},ttls:{"en":"Tiradentes’ Day"},urls:{"en":"https://www.daysoftheyear.com/days/tiradentes-day/"},nts:{"en":"Tiradentes Day","pt":"Dia de Tiradentes"},fst:{era:1,y:1889}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
         {ty:"D",st:{misc:"E",oD:60},inh:"CorpusXi"},
         {ty:"D",st:{mon:7,d:9},ttls:{"ca":"Revolució Constitucionalista de 1932","en":"Constitutionalist Revolution","eo":"Pro-Konstitucia Revolucio","es":"Revolución Constitucionalista de 1932","fr":"Révolution constitutionnaliste de 1932","he":"המהפכה החוקתית בברזיל","it":"Rivoluzione costituzionalista brasiliana","ms":"Perang Paulista","pl":"Powstanie konstytucjonalistów w Brazylii","pt":"Revolução Constitucionalista de 1932","ru":"Конституционалистская революция","sv":"Konstitutionalistrevolutionen 1932","uk":"Конституціоналістська революція 1932 року","ur":"آئینی انقلاب"},urls:{"en":"https://www.officeholidays.com/holidays/brazil/sao-paulo/state-rebellion-day"},nts:{"en":"State Rebellion Day"}},

@@ -1,3 +1,5 @@
+//TODO:  Vaikasi Visakam (astrologically scheduled), Aani Thirumanjanam, Pooram
+
 //  Month (in Tamil)    Transliteration    Hindu Lunar calendar    Nakshatra    Gregorian calendar    Days
 //1 சித்திரை    Chittirai    Chaitra    Chittirai    April–May    30–31
 //2 வைகாசி    Vaikāsi    Vaisakha    Visakam    May–June    31–32
@@ -12,11 +14,10 @@
 //11    மாசி    Māsi    Magha    Magham    February–March    29–30
 //12    பங்குனி    Panguni    Phalguna    Uttiram    March–April    30–31
 
-
 {
     ttls:{"*":"IN"},
     "//":"India",
-    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
+    "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
     defLocale:"en",
     cal:"tamil",
     color:{name:"orange"},
@@ -30,5 +31,13 @@
             {ty:"nM",st:{mon:9},end:{mon:10},inh:"Hemanta"},
             {ty:"nM",st:{mon:11},end:{mon:12},inh:"Shishira"},
         ]},
+        
+        {ty:"D",st:{mon:1,misc:"full1"},ttls:{"bn":"চৈত্র পূর্ণিমা","en":"Chitra Pournami","kn":"ಚಿತ್ರ ಪೌರ್ಣಿಮಿ","pa":"ਚਿਤਰਾ ਪੂਰਣਮੀ","sa":"चैत्र पुर्णिमा","ta":"சித்திரா பௌர்ணமி"}, urls:{"en":"https://en.wikipedia.org/wiki/Chitra_Pournami_(festival)"},"//":"Kaumaram",nts:{"en":"Chaitra Purnima"}},
+        {ty:"M",st:{mon:1},ttls:{"en":"Meenakshi Tirukalyanam","ta":"சித்திரைத் திருவிழா","te":"చిత్తిరై పండుగ"}, urls:{"en":"https://en.wikipedia.org/wiki/Meenakshi_Tirukalyanam"},nts:{"en":"Chithirai Tiruviḻa\nMeenakshi Kalyanam"}},
+        {ty:"D",st:{mon:1,d:1},ttls:{"ar":"بوتاندو","bn":"পুতানডু","en":"Puthandu","fr":"Puthandu","he":"פוטהנדו","hi":"पुत्ताण्डु","hy":"Թամիլական Ամանոր","mr":"पुथंडु","ms":"Puthandu","nn":"Tamilsk nyttår","pa":"ਪੁਥੰਡੂ","pnb":"پُتھنڈو","ru":"Тамильский Новый год","si":"පුත්තාණ්ඩු","ta":"தமிழ்ப் புத்தாண்டு","te":"పుతండు","th":"ปุตตาณฏุ","tt":"Тамил Яңа Елы","ur":"پتھنڈو"}, urls:{"en":"https://en.wikipedia.org/wiki/Puthandu"},nts:{"en":"Tamil New Year","ta":"வருடப்பிறப்பு"}},
+        {ty:"M",st:{mon:3},ttls:{"en":"Mangani Festival","ta":"மாங்கனித் திருவிழா"}, urls:{"en":"https://en.wikipedia.org/wiki/Mangani_Festival"},nts:{"en":"Mangani"}},
+        {ty:"D",st:{mon:4,misc:"new"},ttls:{"en":"Aadi Amavasai"}},
+        {ty:"D",st:{mon:4,d:18},ttls:{"as":"আদি পেৰুক্কু","en":"Aadi Perukku","fr":"Adiperukku","kn":"ಆದಿ ಪೆರುಕ್ಕು","ta":"ஆடிப்பெருக்கு","te":"ఆది పెరుక్కు"},urls:{"en":"https://en.wikipedia.org/wiki/Aadi_Perukku"}},
+
     ]
 }

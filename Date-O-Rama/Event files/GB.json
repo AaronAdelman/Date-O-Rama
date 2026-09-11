@@ -36,7 +36,7 @@
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon"},
         {ty:"D",st:{mon:5,d:1},inh:"May Day"},
-        {ty:"D",st:{mon:5,wkd:[2],nth:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,wkd:[2],nth:1},inh:"LaborD"},
         
 
         {ty:"D",st:{misc:"E",oD:-21},inh:"MothersD"},

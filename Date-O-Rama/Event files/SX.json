@@ -13,7 +13,7 @@
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:4,d:27},inh:"King’s Day",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:4,d:30},ttls:{"en":"Carnival Day","nl":"Karnaval"},urls:{"en":"https://www.officeholidays.com/holidays/sint-maarten/sint-maarten-carnival-day"}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},
         {ty:"D",st:{mon:7,d:1},urls:{"en":"https://www.officeholidays.com/holidays/sint-maarten/dutch-emancipation-day"},inh:"EmancipationD"},

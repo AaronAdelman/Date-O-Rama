@@ -19,7 +19,7 @@
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:4,d:15},urls:{"en":"https://nationaltoday.com/declaration-of-malacca-as-a-historical-city/"},ttls:{"en":"Declaration of Malacca as a Historical City","ms":"Hari Perisytiharan Bandar Melaka sebagai Bandaraya Bersejarah"},fst:{era:1,y:2006},mog:"🏙️"},
         {ty:"D",st:{mon:4,d:26},urls:{"en":"https://www.officeholidays.com/holidays/malaysia/terengganu/birthday-of-the-sultan-of-terengganu"},ttls:{"en":"Birthday of the Sultan of Terengganu","ms":"Hari Keputeraan Sultan Terengganu"},inh:"*BD*",fst:{era:1,y:2007}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{misc:"full1",mon:5},inh:"Vesak",fst:{era:1,y:1950}},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
         {ty:"D",st:{mon:5,d:17},ttls:{"en":"Birthday of the Raja of Perlis","ms":"Hari Keputeraan Raja Perlis"},urls:{"en":"https://www.officeholidays.com/holidays/malaysia/perlis/birthday-of-the-raja-of-perlis"},inh:"*BD*",fst:{era:1,y:2022}},

@@ -1,4 +1,4 @@
-// TODO:  Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Tamil New Year/Puthandu (Tamil calendar), Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)
+// TODO:  Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)
 // TODO:  Tithi of Sri Sri Madhav Dev (Assamese holiday, uncertain calendar
 
 {
@@ -43,7 +43,7 @@
         {ty:"D",st:{mon:4,d:23},ttls:{"en":"Khongjom Day"}, urls:{"en":"https://www.officeholidays.com/holidays/india/manipur/khongjom-day"}},
         {ty:"D",st:{mon:4,d:27, era:1,y:2023},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/india/punjab-cremation-of-parkash-singh-badal"}},
         {ty:"D",st:{mon:5,d:1},ttls:{"en":"Maharashtra Day","mr":"महाराष्ट्र दिन"},nts:{"en":"Maharashtra Din"},fst:{era:1,y:1960}, urls:{"en":"https://www.officeholidays.com/holidays/india/maharashtra/maharashtra-day"}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:16},ttls:{"en":"Sikkim Day"},fst:{era:1,y:1975}},
         {ty:"D",st:{mon:6,d:15},ttls:{"en":"YMA Day"}, urls:{"en":"https://nationaltoday.com/yma-day/"}},
         {ty:"D",st:{mon:6,d:30},ttls:{"en":"Remna Ni"}, urls:{"en":"https://www.officeholidays.com/holidays/india/mizoram/mizoram-remna-ni"},fst:{era:1,y:1986}},

@@ -20,7 +20,7 @@
         {ty:"D",st:{mon:7,d:22, era:1,y:2022},urls:{"en":"https://www.officeholidays.com/holidays/iraq/iraq-regional/iraq-public-holiday"},inh:"PublicHol"},
         {ty:"D",st:{mon:8,d:4, era:1,y:2022},urls:{"en":"https://www.officeholidays.com/holidays/iraq/iraq-regional/iraq-public-holiday"},inh:"PublicHol"},
         {inh:"Liberation Day", ty:"D",st:{mon:4,d:9}, locs:{"en":"Iraqi Kurdistan"},nts:{"en":"Baghdad Liberation Day"}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {inh:"Republic Day", ty:"D",st:{mon:7,d:14},fst:{era:1,y:1958}},
         {inh:"ID", ty:"D",st:{mon:10,d:3},fst:{era:1,y:1932},urls:{"en":"https://nationaltoday.com/iraq-independence-day/"}},
         {inh:"Victory Day", ty:"D",st:{mon:12,d:10},fst:{era:1,y:2018},urls:{"en":"https://nationaltoday.com/iraq-victory-day/"}},

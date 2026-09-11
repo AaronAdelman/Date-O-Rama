@@ -30,7 +30,7 @@
         {ty:"D",st:{mon:4,d:24}, urls:{"en":"https://www.officeholidays.com/holidays/spain/valenciana/saint-vincent-the-martyr"},inh:"StVincent",fst:{era:1,y:2023}},
         {ty:"D",st:{mon:4,d:23}, urls:{"en":"https://www.officeholidays.com/holidays/spain/aragon/spain-st-georges-day"},inh:"StGeorge",nts:{"en":"Aragon National Day","es":"Diya d’Aragón"}},
         {ty:"D",st:{mon:4,d:24}, urls:{"en":"https://www.officeholidays.com/holidays/spain/aragon/spain-st-georges-day"},inh:"StGeorge (IL)"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:2}, urls:{"en":"https://www.officeholidays.com/holidays/spain/madrid/community-festival-of-madrid"},ttls:{"en":"Community Festival of Madrid","es":"Fiesta de la Comunidad de Madrid"},nts:{"en":"Madrid Day"}},
         {ty:"D",st:{mon:5,wkd:[1],nth:1}, urls:{"en":"https://www.officeholidays.com/holidays/spain/mothers-day"},inh:"MothersD"},
         {ty:"D",st:{mon:5,d:13},ttls:{"en":"Feast of Saint Peter de Regalado"}, urls:{"en":"https://www.officeholidays.com/holidays/spain/castile-and-leon/saint-peter-de-regalado"}},

@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {inh:"ChildrensD", ty:"D",st:{mon:7,d:24}, urls:{"en":"https://nationaltoday.com/childrens-day-in-vanuatu/"}},
         {inh:"ID", ty:"D",st:{mon:7,d:30},fst:{era:1,y:1980}, urls:{"en":"https://nationaltoday.com/vanuatu-independence-day/"}},

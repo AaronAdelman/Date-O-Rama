@@ -9,7 +9,7 @@
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:3,d:8},inh:"IWD",fst:{era:1,y:2021}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:8},ttls:{"en":"Day of Remembrance and Victory over Nazism in World War II 1939-1945","uk":"День пам'яті та перемоги над нацизмом у Другій світовій війні 1939 - 1945 років"},urls:{"en":"https://www.officeholidays.com/holidays/ukraine/v-e-day"},nts:{"en":"Day of Remembrance and Reconciliation"},fst:{era:1,y:2023},inh:"VE Day"},
         {ty:"D",st:{mon:5,d:9},inh:"Victory Day (May 9)"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD",urls:{"en":"https://www.officeholidays.com/holidays/ukraine/mothers-day"}},
@@ -69,7 +69,7 @@
         {ty:"D",st:{mon:6,d:22},inh:"DOfRemembrance&Sorrow",fst:{era:1,y:1996}},
         {ty:"D",st:{mon:6,d:23},inh:"IOlympic Day",fst:{era:1,y:1948}},
         {ttls:{"en":"Day of the Ukrainian Civil Service"}, ty:"D",st:{mon:6,d:23}},
-        {inh:"Kupala Nite", ty:"D",st:{mon:6,d:24}},
+        {inh:"KupalaNite", ty:"D",st:{mon:6,d:24}},
         {ty:"D",st:{mon:6,d:24},inh:"StJohn"},
         {inh:"StsPeter&Paul", ty:"D",st:{mon:6,d:29}},
         {ttls:{"en":"Anniversary of the Declaration of State Sovereignty of Ukraine"}, ty:"D",st:{mon:7,d:16}},

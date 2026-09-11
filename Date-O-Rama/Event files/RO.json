@@ -14,7 +14,7 @@
         {ty:"D",st:{era:1,y:2023,mon:1,d:23},urls:{"en":"https://www.officeholidays.com/holidays/romania/romania-unification-day"},inh:"Public Sector Holiday"},
         {ty:"D",st:{mon:1,d:24},ttls:{"ca":"Dia de la unificació dels principats romanesos","en":"Day of the Unification of the Romanian Principalities","ro":"Ziua Unirii Principatelor Române","uk":"День об’єднання дунайських князівств"},inh:"Unification Day",urls:{"en":"https://nationaltoday.com/unification-day/"},fst:{era:1,y:1859}},
         {ty:"D",st:{mon:3,d:1},inh:"Martisor",urls:{"en":"https://nationaltoday.com/martisor/"}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{era:1,y:2024,mon:5,d:2},urls:{"en":"https://www.officeholidays.com/holidays/romania/labour-day"},inh:"Public Sector Holiday"},
         {inh:"MothersD", ty:"D",st:{mon:5,wkd:[1],nth:1}},
         {inh:"FathersD", ty:"D",st:{mon:5,wkd:[1],nth:2}},

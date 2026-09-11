@@ -10,7 +10,7 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:6,d:5}, urls:{"en":"https://nationaltoday.com/presidents-day-in-equatorial-guinea/"},inh:"President’s Day"},
         {ty:"D",st:{misc:"E",oD:60},inh:"CorpusXi"},
         {ty:"D",st:{mon:8,d:3},inh:"Freedom Day",fst:{era:1,y:1979}, urls:{"en":"https://www.officeholidays.com/holidays/equatorial-guinea/equatorial-guinea-freedom-day"}},

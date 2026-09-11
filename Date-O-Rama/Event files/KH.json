@@ -11,7 +11,7 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:7},ttls:{"en":"Victory Over Genocide Day","km":"ទិវាជ័យជម្នះលើរបបប្រល័យពូជសាសន៍"}},
         {ty:"D",st:{mon:3,d:8},inh:"IWD"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:14},ttls:{"en":"King Sihamoni’s Birthday","km":"ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះករុណាព្រះបាទសម្ដេចព្រះបរមនាថ នរោត្ដម សីហមុនី"},inh:"*BD*"},
         {ty:"D",st:{mon:6,d:18},ttls:{"en":"King Mother’s Birthday","km":"ព្រះរាជពិធីបុណ្យចម្រើនព្រះជន្មព្រះមហាក្សត្រី នរោត្ដម មុនីនាថ សីហនុ"},urls:{"en":"https://nationaltoday.com/kings-mothers-birthday/"},fst:{era:1,y:2004},inh:"*BD*",nts:{"en":"Queen Mother’s Birthday"}},
         {ty:"D",st:{mon:9,d:24},inh:"ConstitutionD"},

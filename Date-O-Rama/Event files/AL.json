@@ -18,7 +18,7 @@
         {ty:"D",st:{mon:3,d:23,thruD:24,wkd:[2]},inh:"Nowruz (IL)",fst:{era:1,y:2004},urls:{"en":"https://www.officeholidays.com/holidays/albania/novruz"}},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:9,d:5},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty:"D",st:{mon:9,d:7,wkd:[2,3]},ttls:{"en":"Feast of Saint Teresa of Calcutta (in lieu)"},nts:{"en":"Saint Teresa Canonisation Day (in lieu)"},inh:"StTeresaOfCalcutta",urls:{"en":"https://www.daysoftheyear.com/days/saint-teresa-sanctification-day/"}},
         {ty:"D",st:{mon:11,d:28},inh:"ID",fst:{era:1,y:1912},urls:{"en":"https://www.daysoftheyear.com/days/albanian-independence-day/"},nts:{"en":"Albania Flag Day"}},

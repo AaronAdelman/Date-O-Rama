@@ -67,7 +67,7 @@
         {ty:"D",st:{mon:12,d:30},inh:"Kwanzaa (day 5:  Nia)",fst:{era:1,y:1966}},
         {ty:"D",st:{mon:12,d:31},inh:"Kwanzaa (day 6:  Kuumba)",fst:{era:1,y:1966}},
         {ty:"D",st:{mon:1,d:1},inh:"Kwanzaa (day 7:  Imani)",fst:{era:1,y:1966}},
-        {ty:"D",st:{mon:9,wkd:[2],nth:1},inh:"LabourD",urls:{"en":"https://www.daysoftheyear.com/days/labor-day/"},fst:{era:1,y:1882},nts:{"en":"Activity:  West Indian Day Parade\nCreated by the Knights of Labor"}},
+        {ty:"D",st:{mon:9,wkd:[2],nth:1},inh:"LaborD",urls:{"en":"https://www.daysoftheyear.com/days/labor-day/"},fst:{era:1,y:1882},nts:{"en":"Activity:  West Indian Day Parade\nCreated by the Knights of Labor"}},
         {ty:"D",st:{mon:5,d:19},inh:"Malcolm X Day",fst:{era:1,y:2015}},
         {ty:"D",st:{mon:5,wkd:[6],nth:3},inh:"Malcolm X Day",fst:{era:1,y:1979}, locs:{"en":"Berkeley, California","he":"ברקלי (קליפורניה)"}},
         {ty:"D",st:{mon:1,wkd:[2],nth:3},inh:"MLK Day",fst:{era:1,y:1986}},

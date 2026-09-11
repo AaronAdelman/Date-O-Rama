@@ -15,7 +15,7 @@
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:4,d:24},inh:"ArmenianGenocideRemembranceD",fst:{era:1,y:2015},nts:{"en":"Genocide Memorial Day"}},
         {ty:"D",st:{mon:4,d:25,wkd:[6, 7]},ttls:{"en":"Armenian Genocide Remembrance Day (in lieu)"},fst:{era:1,y:2015}},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD"},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:9},inh:"Victory Day (May 9)"},
         {ty:"D",st:{mon:5,d:28},inh:"Republic Day",urls:{"en":"https://www.daysoftheyear.com/days/first-republic-day-in-armenia/"},nts:{"en":"Day of the First Republic"},fst:{era:1,y:1918}},
         {ty:"D",st:{mon:7,d:5},inh:"ConstitutionD",fst:{era:1,y:1995},urls:{"en":"https://www.officeholidays.com/holidays/armenia/armenia-constitution-day"}},

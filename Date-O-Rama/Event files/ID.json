@@ -10,7 +10,7 @@
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
-        {ty:"D",st:{mon:5,d:1},inh:"LabourD",fst:{era:1,y:1953}},
+        {ty:"D",st:{mon:5,d:1},inh:"LaborD",fst:{era:1,y:1953}},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:40},ttls:{"en":"Ascension Day (in lieu)"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"Pancasila Day","id":"Hari Lahir Pancasila"},fst:{era:1,y:2017}},
