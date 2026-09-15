@@ -177,11 +177,11 @@
 
         {ty:"D",st:{mon:9,d:14},inh:"HolyCross"},
         
-        {inh:"Our Lady of Sorrows", ty:"D",st:{mon:9,d:15}},
-        {ttls:{"en":"Feast of Saints Cornelius and Cyprian"}, ty:"D",st:{mon:9,d:16}},
-        {ttls:{"en":"Feast of Saint Robert Bellarmine or Saint Hildegard of Bingen"}, ty:"D",st:{mon:9,d:17}},
-        {ttls:{"en":"Feast of Saint Januarius"}, ty:"D",st:{mon:9,d:19}},
-        {ttls:{"en":"Feast of Saints Andrew Kim Taegon and companions","he":"חג הקדושים אנדרו קים טאה־גון וחבריו"}, ty:"D",st:{mon:9,d:20}},
+        {ty:"D",st:{mon:9,d:15},inh:"Our Lady of Sorrows"},
+        {ty:"D",st:{mon:9,d:16},ttls:{"en":"Feast of Saints Cornelius and Cyprian"}},
+        {ty:"D",st:{mon:9,d:17},ttls:{"en":"Feast of Saint Robert Bellarmine or Saint Hildegard of Bingen"},nts:{"en":"Saint Robert Bellarmine’s Day"}},
+        {ty:"D",st:{mon:9,d:19},ttls:{"en":"Feast of Saint Januarius"}},
+        {ty:"D",st:{mon:9,d:20},ttls:{"en":"Feast of Saints Andrew Kim Taegon and companions","he":"חג הקדושים אנדרו קים טאה־גון וחבריו"}},
         {ty:"D",st:{mon:9,d:21},inh:"StMatthewTheEvangelist"},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"Feast of Saint Pio of Pietrelcina (Padre Pio)"}},
         {ty:"D",st:{mon:9,d:26},ttls:{"en":"Feast of Saints Cosmas and Damian"}},
