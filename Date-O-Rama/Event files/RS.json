@@ -11,7 +11,7 @@
         {ty:"D",st:{mon:1,d:2,wkd:[2, 3, 4,5,6, 7]},inh:"NYsHol",urls:{"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
         {ty:"D",st:{mon:1,d:3,wkd:[2, 3]},inh:"NYsHol",urls:{"en":"https://www.officeholidays.com/holidays/serbia/day-after-new-years-day"}},
         {ty:"D",st:{mon:1,d:27},ttls:{"en":"Saint Sava’s Day","sr-Cyrl":"Савиндан","sr-Latn":"Savindan"},urls:{"en":"https://www.officeholidays.com/holidays/serbia/st-savas-day"},nts:{"en":"Spirituality Day"}},
-        {ty:"nD",st:{mon:2,d:15}, end:{mon:2,d:16},inh:"Statehood Day",urls:{"en":"https://nationaltoday.com/sovereignty-day-of-serbia/"},fst:{era:1,y:2001},nts:{"en":"Sovereignty Day"}},
+        {ty:"nD",st:{mon:2,d:15},end:{mon:2,d:16},inh:"Statehood Day",urls:{"en":"https://nationaltoday.com/sovereignty-day-of-serbia/"},fst:{era:1,y:2001},nts:{"en":"Sovereignty Day"}},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:2},inh:"LaborDHol",urls:{"en":"https://www.officeholidays.com/holidays/serbia/labour-day"}},
         {ty:"D",st:{mon:5,d:3,wkd:[3]},inh:"LaborDHol",urls:{"en":"https://www.officeholidays.com/holidays/serbia/labour-day"}},

@@ -7,6 +7,9 @@
     cal:"vikram-s",
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
-    evts:[{ty:"nD",st:{mon:6,d:8,durD:2},inh:"Janmashtami"},
+    evts:[
+        {ty:"nD",st:{mon:6,d:8,durD:2},inh:"Janmashtami"},
+        {ty:"nD",st:{mon:6,d:18,durD:5},inh:"GaneshChaturthi"},
+        {ty:"D",st:{mon:6,d:20},inh:"Nuakhai"},
     ]
 }

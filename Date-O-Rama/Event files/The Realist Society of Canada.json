@@ -7,7 +7,7 @@
     fst:{era:1,y:2018},
     urls:{"en":"http://realistsocietyofcanada.com/realism-holidays/"},
     evts:[
-        {ty:"nD",st:{mon:4,d:26}, end:{mon:4,d:28},ttls:{"en":"Self-Aware Universe Day"},nts:{"en":"SAUD"}},
+        {ty:"nD",st:{mon:4,d:26},end:{mon:4,d:28},ttls:{"en":"Self-Aware Universe Day"},nts:{"en":"SAUD"}},
         {ty:"D",st:{mon:7,d:8},
           ttls:{"en":"There Has Always Been Something Day"},
           nts:{"en":"THABS\nThe only reason this event calendar was included in Date-O-Rama is because Wikipedia noted thematic similarilty between this observance and the far more famous National Nothing Day."}},

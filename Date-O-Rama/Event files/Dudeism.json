@@ -10,7 +10,7 @@
     evts:[
         {ty:"D",st:{mon:1,d:1},ttls:{en:"Happy Dude Year"}},
         {ty:"D",st:{mon:2,d:13},ttls:{en:"Pal-o-mine’s Day"}},
-        {ty:"nD",st:{mon:2,d:27}, end:{mon:3,d:6},ttls:{en:"Hangover"}},
+        {ty:"nD",st:{mon:2,d:27},end:{mon:3,d:6},ttls:{en:"Hangover"}},
         {ty:"D",st:{mon:3,d:6},ttls:{"en":"Day of the Dude"},fst:{era:1,y:2005}},
         {ty:"D",st:{misc:"E"},ttls:{en:"Take it Easyster"}},
         {ty:"D",st:{mon:4,d:1},ttls:{en:"April Dude’s Day"}},

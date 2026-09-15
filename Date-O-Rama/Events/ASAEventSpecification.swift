@@ -181,7 +181,7 @@ extension ASAEventSpecification {
         if startDateSpecification.year == nil {
             if startDateSpecification.yearDivisor != nil {
                 // Event repeats once every specific number of years
-                result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: startDateSpecification.yearDivisor!, end: nil))
+                result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: startDateSpecification.yearDivisor!,end: nil))
             } else {
                 // Event repeats every year
                 if startDateSpecification.month == nil {
@@ -190,19 +190,19 @@ extension ASAEventSpecification {
                     if startDateSpecification.day == nil {
                         if startDateSpecification.weekdays == nil {
                             // Event repeats every day
-                            result.append(EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil))
+                            result.append(EKRecurrenceRule(recurrenceWith: .daily, interval: 1,end: nil))
                         } else {
                             // Event repeats every week
-                            result.append(EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil))
+                            result.append(EKRecurrenceRule(recurrenceWith: .weekly, interval: 1,end: nil))
                         }
 
                     } else {
                         // Event repeats every month on a specific day
-                        result.append(EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil))
+                        result.append(EKRecurrenceRule(recurrenceWith: .monthly, interval: 1,end: nil))
                     }
                 } else {
                     // Event repeats every year
-                    result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: 1, end: nil))
+                    result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: 1,end: nil))
                 }
             }
         }

@@ -120,7 +120,7 @@ final class ASAEKEventManager:  NSObject, ObservableObject, Sendable {
     
     public func eventsFor(startDate:  Date, endDate: Date, calendars:  Array<EKCalendar>) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate
-        let eventsPredicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: calendars)
+        let eventsPredicate = eventStore.predicateForEvents(withStart: startDate,end: endDate, calendars: calendars)
         
         // Use the configured NSPredicate to find and return events in the store that match
         let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)

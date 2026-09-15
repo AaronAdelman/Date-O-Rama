@@ -12,6 +12,6 @@
         {ty:"D",st:{mon:9,d:17},inh:"Red Cross Day",fst:{era:1,y:1945}},
         {ty:"D",st:{mon:9,wkd:[7],nth:2},ttls:{"en":"World First Aid Day"},fst:{era:1,y:2000},mog:"🩹",urls:{"en":"https://worldfirstaidday.org/"},inh:"*MedAw*",nts:{"en":"Created by the International Federation of Red Cross and Red Crescent Societies (IFRC)"}},
         {ty:"M",st:{mon:3},inh:"AmericanRCM",fst:{era:1,y:1943}},
-        {ty:"nD",st:{mon:5,d:4}, end:{mon:5,d:10},ttls:{"en":"Red Cross Week"},urls:{"en":"https://www.daysoftheyear.com/days/red-cross-week/"},fst:{era:1,y:2022},mog:"🏥"},
+        {ty:"nD",st:{mon:5,d:4},end:{mon:5,d:10},ttls:{"en":"Red Cross Week"},urls:{"en":"https://www.daysoftheyear.com/days/red-cross-week/"},fst:{era:1,y:2022},mog:"🏥"},
   ]
 }

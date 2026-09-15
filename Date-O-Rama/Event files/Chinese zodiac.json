@@ -4,7 +4,7 @@
     cal:"chi*",
     color:{r:0.87,g:0.16,b:0.06},
     evts:[
-        {ty:"nY",st:{}, end:{}, subEvts:[
+        {ty:"nY",st:{},end:{}, subEvts:[
             {ty:"Y",st:{yDiv: 12, yRem: 1},ttls:{"en":"Year of the Rat","he":"שנת החולדה"},inh:"*Rat*"},
             {ty:"Y",st:{yDiv: 12, yRem: 2},ttls:{"en":"Year of the Ox","he":"שנת השור"},inh:"*Ox*"},
             {ty:"Y",st:{yDiv: 12, yRem: 3},ttls:{"en":"Year of the Tiger","he":"שנת הטיגריס"},inh:"*Tiger*"},

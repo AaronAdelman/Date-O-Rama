@@ -25,7 +25,7 @@
         {ty:"D",st:{mon:8,d:30},ttls:{"en":"National Holistic Pet Day"},nts:{"en":"Promotes pseudoscience for pet care."},urls:{"en":"https://skepdic.com/holistic.html"}},
         {ty:"D",st:{mon:7,d:31},inh:"​NWildlifeD",fst:{era:1,y:2006}},
         {ty:"D",st:{mon:9,d:4},inh:"​NWildlifeD",fst:{era:1,y:2006}},
-        {ty:"nD",st:{mon:10,d:1}, end:{mon:10,d:7},ttls:{"en":"National Walk Your Dog Week"},urls:{"en":"http://www.walkyourdogweek.com/"},  mog:"🦮",fst:{era:1,y:2010}},
+        {ty:"nD",st:{mon:10,d:1},end:{mon:10,d:7},ttls:{"en":"National Walk Your Dog Week"},urls:{"en":"http://www.walkyourdogweek.com/"},  mog:"🦮",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:10,d:1},ttls:{"en":"National Black Dog Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-black-dog-day/"},fst:{era:1,y:2011},mog:"🐕‍🦺"},
         {ty:"D",st:{mon:10,d:2},ttls:{"en":"Canine Companion Day"},urls:{"en":"https://www.daysoftheyear.com/days/canine-companion-day/"},fst:{era:1,y:2004},mog:"🐶"},
         {ty:"D",st:{mon:10,d:29},ttls:{"az":"Milli Pişik Günü","bn":"জাতীয় বিড়াল দিবস","en":"National Cat Day","fr":"Journée nationale du chat","hy":"Կատուների ազգային օր","id":"Hari Kucing","it":"Festa del gatto","ja":"猫の日","pl":"Światowy Dzień Kota","sat":"ᱡᱟᱹᱛᱤᱭᱟᱹᱨᱤ ᱯᱩᱥᱤ ᱢᱟᱦᱟᱸ","th":"วันแมวแห่งชาติ","uk":"Національний день кота","ur":"بلیوں کا قومی دن","vi":"Ngày loài mèo","zh":"貓節日"},urls:{"en":"https://www.nationalcatday.com/"},fst:{era:1,y:2005},mog:"🐈"},

@@ -14,7 +14,7 @@
         {ty:"D",st:{mon:4,d:7,wkd:[2]},inh:"Chakri Day"},
         {ty:"D",st:{mon:4,d:8,wkd:[2]},inh:"Chakri Day"},
         {ty:"D",st:{mon:4,d:12,wkd:[2, 6]},ttls:{"en":"Extra holiday for Songkran"},urls:{"en":"https://www.officeholidays.com/holidays/thailand/songkran-festival"},inh:"Songkran"},
-        {ty:"nD",st:{mon:4,d:13}, end:{mon:4,d:15},inh:"Songkran",urls:{"en":"https://nationaltoday.com/songkran-water-festival/"}},
+        {ty:"nD",st:{mon:4,d:13},end:{mon:4,d:15},inh:"Songkran",urls:{"en":"https://nationaltoday.com/songkran-water-festival/"}},
         {ty:"D",st:{mon:4,d:16,wkd:[3, 4]},ttls:{"en":"Extra holiday for Songkran"},urls:{"en":"https://www.officeholidays.com/holidays/thailand/songkran-festival"},inh:"Songkran"},
         {ty:"D",st:{mon:4,d:17,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/thailand/songkran-festival"},ttls:{"en":"Extra holiday for Songkran"},inh:"Songkran"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},

@@ -1,0 +1,26 @@
+//S.No    Vikram Samvat months
+//1    Caitra or Chait or Chaitra
+//2    Vaiśākha or Baisakh
+//3    Jyēṣṭha or Jestha or Jeth
+//4    Āṣāḍha or Asar or Asadh
+//5    Śrāvaṇa or Saaun or Shrawan
+//6    Bhādrapada or Bhādra or Bhadau
+//7    Āśvin or Aasoj or Ashwin
+//8    Kārtika or Kattik or Kartik
+//9    Agrahāyaṇa or Mangsir or Mārgaśīrṣa or Aghan
+//10   Pauṣa or Paush or Poush or Push
+//11   Māgha or Maagh
+//12   Phālguna or Falgun
+
+{
+    ttls:{"*":"NP"},
+    "//":"Nepal",
+    "TODO":"Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{r:0.86,g:0.08,b:0.24},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nepal"},
+    evts:[
+        {ty:"D",st:{mon:5,d:18},ttls:{"en":"Haryali Teej"}, urls:{"en":"https://www.officeholidays.com/holidays/nepal/teej"}},
+    ]
+}

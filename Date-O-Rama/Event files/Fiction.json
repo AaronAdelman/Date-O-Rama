@@ -54,6 +54,6 @@
         {ty:"D",st:{mon:12,d:25},ttls:{"en":"Smekday"},nts:{"en":"From The True Meaning of Smekday"}},
         {ty:"D",st:{mon:12,d:30},ttls:{"en":"International Alliance Day"},nts:{"en":"From Babylon 5"}},
 
-        {ty:"nD",st:{mon:3,d:21}, end:{mon:3,d:22},ttls:{"en":"The Purge"},nts:{"en":"From The Purge"}},
+        {ty:"nD",st:{mon:3,d:21},end:{mon:3,d:22},ttls:{"en":"The Purge"},nts:{"en":"From The Purge"}},
     ]
 }

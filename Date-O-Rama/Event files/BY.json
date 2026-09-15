@@ -38,7 +38,7 @@
         {ty:"D",st:{mon:5,d:28},inh:"BorderGuardsD",fst:{era:1,y:1919}},
         {ty:"D",st:{mon:6,d:22},inh:"DOfRemembrance&Sorrow",fst:{era:1,y:1996}},
         {ty:"D",st:{mon:8,d:2},inh:"Paratroopers’ Day"},
-        {ty:"nD",st:{mon:1,d:13}, end:{mon:1,d:14},ttls:{"en":"Kolyady"},urls:{"en":"https://www.daysoftheyear.com/days/kolyady/"}},
+        {ty:"nD",st:{mon:1,d:13},end:{mon:1,d:14},ttls:{"en":"Kolyady"},urls:{"en":"https://www.daysoftheyear.com/days/kolyady/"}},
         {ty:"D",st:{mon:5,d:7},inh:"Radio Day",urls:{"en":"https://www.daysoftheyear.com/days/belarus-day-of-radio/"},fst:{era:1,y:1998}},
         {ty:"D",st:{mon:9,wkd:[1],nth:1},ttls:{"en":"Belarusian Written Language Day"},urls:{"en":"https://www.daysoftheyear.com/days/belarusian-written-language-day/"},fst:{era:1,y:1994}},
     ]

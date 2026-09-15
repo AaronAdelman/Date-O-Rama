@@ -180,6 +180,8 @@
 		A53B50C82C5BFEEF003FA2D4 /* ASADateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B50C72C5BFEEF003FA2D4 /* ASADateFunctions.swift */; };
 		A53B50C92C5BFEEF003FA2D4 /* ASADateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B50C72C5BFEEF003FA2D4 /* ASADateFunctions.swift */; };
 		A53B50CA2C5BFEEF003FA2D4 /* ASADateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B50C72C5BFEEF003FA2D4 /* ASADateFunctions.swift */; };
+		A53D234030590E8800DED1AF /* NP (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A53D233F30590E8800DED1AF /* NP (Vikram Samvat).json */; };
+		A53D234130590E8800DED1AF /* NP (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A53D233F30590E8800DED1AF /* NP (Vikram Samvat).json */; };
 		A53D608C288844020094B3F7 /* RO (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A53D608B288844020094B3F7 /* RO (Julian).json */; };
 		A53D608D288844020094B3F7 /* RO (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A53D608B288844020094B3F7 /* RO (Julian).json */; };
 		A53D608F2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */; };
@@ -1424,6 +1426,7 @@
 		A53A5B032451AFDC005F9876 /* ASASolarTimeCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarTimeCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 		A53B50C72C5BFEEF003FA2D4 /* ASADateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ASADateFunctions.swift; path = "Date-O-Rama/ASADateFunctions.swift"; sourceTree = SOURCE_ROOT; };
+		A53D233F30590E8800DED1AF /* NP (Vikram Samvat).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "NP (Vikram Samvat).json"; sourceTree = "<group>"; };
 		A53D608B288844020094B3F7 /* RO (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "RO (Julian).json"; sourceTree = "<group>"; };
 		A53D608E2888805D0094B3F7 /* ASALocationWithClocksSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocksSectionHeader.swift; sourceTree = "<group>"; };
 		A541945628749D5200C93496 /* IR (Persian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IR (Persian).json"; sourceTree = "<group>"; };
@@ -2323,6 +2326,7 @@
 				A5D850AA280C9565005247BD /* NL.json */,
 				A5759140282BE28800675058 /* NO.json */,
 				A5E49657286254FA001BF40C /* NP.json */,
+				A53D233F30590E8800DED1AF /* NP (Vikram Samvat).json */,
 				A5E49656286254FA001BF40C /* NR.json */,
 				A5E49655286254FA001BF40C /* NU.json */,
 				A576C39228171F96005AC73D /* NZ.json */,
@@ -3380,6 +3384,7 @@
 				A5EFFF79285B7B1300F2205F /* JE.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A5A1D1DD2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */,
+				A53D234130590E8800DED1AF /* NP (Vikram Samvat).json in Resources */,
 				A5F3B02228565F8100865CEB /* BS.json in Resources */,
 				A5EFFFA7285B7F2E00F2205F /* LC.json in Resources */,
 				A5D850B5280C9823005247BD /* NE.json in Resources */,
@@ -3613,6 +3618,7 @@
 				A5BF2C483032CB9500C0648B /* Jainism.json in Resources */,
 				A522A2D52E439D5B00F8AAEB /* Moon.json in Resources */,
 				A5EFFF96285B7DB700F2205F /* PA.json in Resources */,
+				A53D234030590E8800DED1AF /* NP (Vikram Samvat).json in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A50DA51428686272008D54AE /* HK (Chinese).json in Resources */,
 				A54B61B72A93F25E005CC33D /* KG (Julian).json in Resources */,

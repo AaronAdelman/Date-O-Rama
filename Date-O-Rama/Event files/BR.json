@@ -85,7 +85,7 @@
         {ty:"nD",st:{mon:6,d:1,thruD:7,wkd:[5],durD:3},ttls:{"en":"Cuscuz Festival","pt":"Festa do Cuscuz"},urls:{"en":"https://www.daysoftheyear.com/days/cuscuz-festival/"},fst:{era:1,y:2024}},
         {ty:"D",st:{mon:9,d:13},ttls:{"en":"National Cachaça Day","pt":"Dia Nacional da Cachaça"},nts:{"en":"Cachaça Day\nCreated by the Brazilian Institute of Cachaça (IBRAC)"},urls:{"en":"https://www.daysoftheyear.com/days/cachaca-day/"},mog:"🥃",fst:{era:1,y:2009}},
         {ty:"D",st:{mon:6,d:24},ttls:{"ar":"احتفال يونيو","en":"Festa Junina","eo":"Junia festo","es":"Fiestas Juninas en Brasil","ja":"フェスタジュニーナ","pt":"Festa junina no Brasil"},urls:{"en":"https://www.daysoftheyear.com/days/festa-junina/"},fst:{era:1,y:1500},inh:"StJohn",nts:{"pt":"Festas de São João"}},
-        {ty:"nD",st:{mon:6,d:24,thruD:30,wkd:[6]}, end:{mon:6,d:26,thruMon:7,thruD:2,wkd:[1]},ttls:{"en":"Bumba Meu Boi"},urls:{"en":"https://www.daysoftheyear.com/days/bumba-meu-boi/"},fst:{era:1,y:1700}},
+        {ty:"nD",st:{mon:6,d:24,thruD:30,wkd:[6]},end:{mon:6,d:26,thruMon:7,thruD:2,wkd:[1]},ttls:{"en":"Bumba Meu Boi"},urls:{"en":"https://www.daysoftheyear.com/days/bumba-meu-boi/"},fst:{era:1,y:1700}},
         {ty:"D",st:{era:1,y:2025,mon:7,d:4},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/brazil/brics-summit"}, locs:{"en":"Rio de Janeiro"}},
         {ty:"D",st:{era:1,y:2025,mon:7,d:7},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/brazil/brics-summit"}, locs:{"en":"Rio de Janeiro"}},
         {ty:"D",st:{mon:1,d:29},ttls:{"en":"National Day of Transgender Visibility"},fst:{era:1,y:2004}},

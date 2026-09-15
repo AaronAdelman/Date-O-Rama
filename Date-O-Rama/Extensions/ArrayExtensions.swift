@@ -30,7 +30,7 @@ fileprivate enum ASAMatchingResult {
 
 
 extension Array where Element == Int? {
-    func isWithin(start: Array<Int?>, end: Array<Int?>) -> Bool {
+    func isWithin(start: Array<Int?>,end: Array<Int?>) -> Bool {
         assert(start.count == end.count)
         
 //        debugPrint("🍐 ----------")
@@ -153,10 +153,10 @@ extension Array where Element == Int? {
         
 //        debugPrint("🌶 return true")
         return true
-    } // func isWithin(start: Array<Int?>, end: Array<Int?>) -> Bool
+    } // func isWithin(start: Array<Int?>,end: Array<Int?>) -> Bool
     
     // A pair of EYMDs is considered “boring” if we can simply fill in missing values from another EYMD without having to worry about, say, having to figure out which year either EYMD occurs in.
-    static func areBoring(start: Array<Int?>, end: Array<Int?>) -> Bool {
+    static func areBoring(start: Array<Int?>,end: Array<Int?>) -> Bool {
         assert(start.count == end.count)
 
         for i in 0..<start.count {
@@ -175,14 +175,14 @@ extension Array where Element == Int? {
         } // for i
         
         return true
-    } // func areBoring(start: Array<Int?>, end: Array<Int?>) -> Bool
+    } // func areBoring(start: Array<Int?>,end: Array<Int?>) -> Bool
     
-    func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int?>, end: Array<Int?>) {
+    func fillInFor(start: Array<Int?>,end: Array<Int?>) -> (start: Array<Int?>,end: Array<Int?>) {
         assert(start.count == end.count)
         
         let length = start.count
         
-        if Array.areBoring(start: start, end: end) {
+        if Array.areBoring(start: start,end: end) {
             // We can safely fill in missing values from self without having, say, to worry about start and end falling in different years.
             var startTemp = start
             var endTemp   = end
@@ -238,8 +238,8 @@ extension Array where Element == Int? {
             }
             
         } // for i
-        return (start: newStart, end: newEnd)
-    } // func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int>, end: Array<Int>)
+        return (start: newStart,end: newEnd)
+    } // func fillInFor(start: Array<Int?>,end: Array<Int?>) -> (start: Array<Int>,end: Array<Int>)
     
     func isBefore(first: Array<Int?>) -> Bool {
         if self == first {

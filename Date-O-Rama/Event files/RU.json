@@ -33,7 +33,7 @@
         {inh:"MothersD", ty:"D",st:{mon:11,wkd:[1],nth:-1}},
         {ty:"D",st:{mon:12,d:31},inh:"NYE"},
         
-        {ty:"D",st:{dOfY:256},inh:"Programmers Day",fst:{era:1,y:2002}},
+        {ty:"D",st:{dOfY:256},inh:"ProgrammersD",fst:{era:1,y:2002}},
         {ty:"D",st:{mon:1,d:12},ttls:{"en":"Prosecutor General’s Day","ru":"День работника прокуратуры Российской Федерации"}},
         {ty:"D",st:{mon:1,d:25},inh:"Tatiana Day"},
         {ty:"D",st:{mon:1,d:40},ttls:{"en":"Aerospace Defense Forces Day","ru":"День космических войск"}},
@@ -99,7 +99,7 @@
         {ty:"D",st:{wkd:[1],nth:2,mon:8},ttls:{"en":"Builders’ Day","ru":"День строителя"}},
         {ty:"D",st:{wkd:[1],nth:3,mon:6},ttls:{"en":"Medical Worker Day","ru":"День медицинского работника"},fst:{era:1,y:1988}},
         {ty:"D",st:{wkd:[7],nth:2,mon:8},inh:"Sports Day"},
-        {ty:"nD",st:{mon:6,d:12}, end:{mon:7,d:2},urls:{"en":"https://nationaltoday.com/white-nights-festival-in-st-petersburg/"},ttls:{"en":"White Nights Festival in Saint Petersburg"},mog:"🎆",fst:{era:1,y:1993}},
+        {ty:"nD",st:{mon:6,d:12},end:{mon:7,d:2},urls:{"en":"https://nationaltoday.com/white-nights-festival-in-st-petersburg/"},ttls:{"en":"White Nights Festival in Saint Petersburg"},mog:"🎆",fst:{era:1,y:1993}},
    ],
     tpls:{
         "NY’s Holiday (bridge day)":{ty:"D",st:{mon:1,d:2},ttls:{"en":"New Year’s Holiday (bridge day)"},mog:"🎇"},

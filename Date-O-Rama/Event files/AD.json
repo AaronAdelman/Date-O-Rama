@@ -26,12 +26,12 @@
 
         {ty:"D",st:{mon:3,d:19},inh:"FathersD"},
         
-        {ty:"nD",st:{mon:8,d:4}, end:{mon:8,d:6},ttls:{"en":"Andorra la Vella Annual Festival"}},
-        {ty:"nD",st:{mon:7,d:21}, end:{mon:7,d:23},ttls:{"en":"Canillo Annual Festival"}},
-        {ty:"nD",st:{mon:8,d:15}, end:{mon:8,d:16},ttls:{"en":"Encamp Annual Festival"}},
-        {ty:"nD",st:{mon:7,d:25}, end:{mon:7,d:26},ttls:{"en":"Escaldes–Engordany Annual Festival"}},
-        {ty:"nD",st:{mon:8,d:15}, end:{mon:8,d:16},ttls:{"en":"La Massana Annual Festival"}},
-        {ty:"nD",st:{mon:8,d:15}, end:{mon:8,d:16},ttls:{"en":"Ordino Annual Festival"}},
-        {ty:"nD",st:{mon:7,d:27}, end:{mon:7,d:30},ttls:{"en":"Sant Julià de Lòria Annual Festival","he":"הפסטיבל השנתי של סנט ז׳וליה דה לוריה"}},
+        {ty:"nD",st:{mon:8,d:4},end:{mon:8,d:6},ttls:{"en":"Andorra la Vella Annual Festival"}},
+        {ty:"nD",st:{mon:7,d:21},end:{mon:7,d:23},ttls:{"en":"Canillo Annual Festival"}},
+        {ty:"nD",st:{mon:8,d:15},end:{mon:8,d:16},ttls:{"en":"Encamp Annual Festival"}},
+        {ty:"nD",st:{mon:7,d:25},end:{mon:7,d:26},ttls:{"en":"Escaldes–Engordany Annual Festival"}},
+        {ty:"nD",st:{mon:8,d:15},end:{mon:8,d:16},ttls:{"en":"La Massana Annual Festival"}},
+        {ty:"nD",st:{mon:8,d:15},end:{mon:8,d:16},ttls:{"en":"Ordino Annual Festival"}},
+        {ty:"nD",st:{mon:7,d:27},end:{mon:7,d:30},ttls:{"en":"Sant Julià de Lòria Annual Festival","he":"הפסטיבל השנתי של סנט ז׳וליה דה לוריה"}},
     ]
 }

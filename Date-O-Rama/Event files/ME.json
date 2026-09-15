@@ -8,7 +8,7 @@
     fst:{era:1,y:2006},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts:[
-        {ty:"nD",st:{mon:1,d:1}, end:{mon:1,d:2},inh:"NYD"},
+        {ty:"nD",st:{mon:1,d:1},end:{mon:1,d:2},inh:"NYD"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:2,wkd:[3, 5, 6, 7]},inh:"LaborD (IL)",urls:{"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
         {ty:"D",st:{mon:5,d:3,wkd:[2]},inh:"LaborD (IL)",urls:{"en":"https://www.officeholidays.com/holidays/montenegro/labour-day"}},
@@ -19,10 +19,10 @@
         {ty:"D",st:{mon:7,d:14,wkd:[4,5,6, 2]},inh:"Statehood Day Holiday",urls:{"en":"https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"},nts:{"en":"Sovereignty Day Holiday"}},
         {ty:"D",st:{mon:7,d:15,wkd:[2, 3]},inh:"Statehood Day Holiday",urls:{"en":"https://www.officeholidays.com/holidays/montenegro/sovereignty-day-of-montenegro"},nts:{"en":"Sovereignty Day Holiday"}},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
-        {ty:"nD",st:{mon:11,d:13}, end:{mon:11,d:14},ttls:{"en":"Njegos’s Day","cnr":"Njegošev dan"}},
+        {ty:"nD",st:{mon:11,d:13},end:{mon:11,d:14},ttls:{"en":"Njegos’s Day","cnr":"Njegošev dan"}},
 
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
-        {ty:"nD",st:{mon:12,d:25}, end:{mon:12,d:26},inh:"Xmas"},
+        {ty:"nD",st:{mon:12,d:25},end:{mon:12,d:26},inh:"Xmas"},
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},

@@ -433,13 +433,13 @@ class ASAEventCalendar {
         let dateEY: Array<Int?>      = components.EY
         let startDateEY: Array<Int?> = startDateSpecification.EY
         let endDateEY: Array<Int?>   = endDateSpecification!.EY
-        let within: Bool = dateEY.isWithin(start: startDateEY, end: endDateEY)
+        let within: Bool = dateEY.isWithin(start: startDateEY,end: endDateEY)
         
         if !within {
             return MATCH_FAILURE
         }
         
-        let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
+        let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY,end: endDateEY)
         
         let tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
         
@@ -498,13 +498,13 @@ class ASAEventCalendar {
         let dateEYM: Array<Int?>      = components.EYM
         let startDateEYM: Array<Int?> = startDateSpecification.EYM
         let endDateEYM: Array<Int?>   = endDateSpecification.EYM
-        let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
+        let within: Bool = dateEYM.isWithin(start: startDateEYM,end: endDateEYM)
         
         if !within {
             return MATCH_FAILURE
         }
         
-        let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
+        let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM,end: endDateEYM)
         
         let tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
         
@@ -658,7 +658,7 @@ class ASAEventCalendar {
         let dateEY: Array<Int?>      = components.EY
         let startDateEY: Array<Int?> = startDateSpecification.EY
         let endDateEY: Array<Int?>   = endDateSpecification?.EY ?? startDateEY
-        let withinEY: Bool               = dateEY.isWithin(start: startDateEY, end: endDateEY)
+        let withinEY: Bool               = dateEY.isWithin(start: startDateEY,end: endDateEY)
         if !withinEY {
             return NO_MATCH
         }
@@ -732,13 +732,13 @@ class ASAEventCalendar {
 
 //        let startDateEYMD: Array<Int?> = startDateSpecification.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
 //        let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD(componentsDay: components.day ?? 0, componentsWeekday: components.weekday ?? 0, calendar: calendar, locationData: locationData)
-        let within: Bool               = dateEYMD.isWithin(start: startDateEYMD, end: endDateEYMD)
+        let within: Bool               = dateEYMD.isWithin(start: startDateEYMD,end: endDateEYMD)
         
         if !within {
             return NO_MATCH
         }
         
-        let (filledInStartDateEYMD, filledInEndDateEYMD) = dateEYMD.fillInFor(start: startDateEYMD, end: endDateEYMD)
+        let (filledInStartDateEYMD, filledInEndDateEYMD) = dateEYMD.fillInFor(start: startDateEYMD,end: endDateEYMD)
         
         let filledInStartDateSpecification = startDateSpecification.fillIn(EYMD: filledInStartDateEYMD)
         
@@ -1197,7 +1197,7 @@ class ASAEventCalendar {
                             let startMD = [dateSpecificationMonth, dateSpecificationDay]
                             let endMD = [dateSpecificationThroughMonth, dateSpecificationThroughDay]
                             let componentsMD = [componentsMonth, componentsDay]
-                            if !componentsMD.isWithin(start: startMD, end: endMD) {
+                            if !componentsMD.isWithin(start: startMD,end: endMD) {
                                 return MATCH_FAILURE
                             }
                         } else {

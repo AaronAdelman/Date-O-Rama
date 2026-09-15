@@ -8,7 +8,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Montenegro"},
     evts:[
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
-        {inh:"OXmas", ty:"nD",st:{mon:12,d:25}, end:{mon:12,d:26}},
+        {inh:"OXmas", ty:"nD",st:{mon:12,d:25},end:{mon:12,d:26}},
         {ty:"D",st:{mon:1,d:1},inh:"ONYD"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"OGood Fri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
