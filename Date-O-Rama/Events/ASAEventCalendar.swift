@@ -1354,8 +1354,7 @@ class ASAEventCalendar {
                     return "\(dayInRange)"
                 }()
                 let subtitle = range?.subtitles.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocale) ?? NO_TITLE
-                title = title.replacingOccurrences(of: "[[subtitle]]", with: subtitle).replacingOccurrences(of: "[[subindex]]", with: dayInRangeString)
-
+                title = title.replacingOccurrences(of: "{{subtitle}}", with: subtitle).replacingOccurrences(of: "{{subindex}}", with: dayInRangeString)
             }
         }
         let color = self.color
