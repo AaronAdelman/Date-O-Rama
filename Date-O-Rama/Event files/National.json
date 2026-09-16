@@ -2097,7 +2097,6 @@
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Pepperoni Pizza Day"},urls:{"en":"https://www.daysoftheyear.com/days/pepperoni-pizza-day/"},mog:"🍕"},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Punch Day","he":"יום הפונץ׳ הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/punch-day/"},nts:{"en":"National Rum Punch Day"}},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Queso Day","he":"יום הצ׳ילי קון קסו הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/national-queso-day/"},mog:"🧀"},
-        {ty:"D",st:{mon:9,d:20},ttls:{"en":"National School Backpack Awareness Day","he":"יום המודעות הלאומי לתרמיל בית הספר"},urls:{"en":"https://www.daysoftheyear.com/days/national-school-backpack-awareness-day/"},fst:{era:1,y:2001},mog:"🎒",nts:{"en":"Created by the American Occupational Therapy Association (AOTA)"}},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"National Beef Stroganoff Day"},urls:{"en":"https://www.checkiday.com/166f43d1603324f8572a6163f933cd2c/national-beef-stroganoff-day"},fst:{era:1,y:2021}},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"National Cat & Dog Gut Health Awareness Day","he":"יום המודעות הלאומי לבריאות המעיים של החתול והכלב"},urls:{"en":"https://www.daysoftheyear.com/days/national-cat-dog-gut-health-awareness-day/"},fst:{era:1,y:2022},inh:"*MedAw*",mog:"🐶🐱",nts:{"en":"Created by AnimalBiome"}},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"National Garage Condo Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-garage-condo-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Garage Condos"}},
