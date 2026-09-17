@@ -304,6 +304,52 @@ private struct SearchingLocationsListView: View {
 }
 
 
+// MARK: - Press feedback helpers
+private struct PressScaleStyle: ButtonStyle {
+    var scale: CGFloat = 0.96
+    var duration: Double = 0.12
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? scale : 1.0)
+            .animation(.spring(response: duration, dampingFraction: 0.8, blendDuration: 0.0), value: configuration.isPressed)
+    }
+}
+
+private struct PressableRow<Content: View>: View {
+    let action: () -> Void
+    let content: () -> Content
+    @State private var highlightOpacity: Double = 0.0
+
+    var body: some View {
+        Button(action: {
+            #if os(iOS)
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            #endif
+            action()
+        }) {
+            ZStack(alignment: .center) {
+                content()
+                    .contentShape(Rectangle())
+                // Highlight overlay
+                Rectangle()
+                    .fill(Color.white.opacity(0.12))
+                    .opacity(highlightOpacity)
+                    .allowsHitTesting(false)
+            }
+        }
+        .buttonStyle(PressScaleStyle())
+        .onChange(of: highlightOpacity) { _ in }
+        .simultaneousGesture(DragGesture(minimumDistance: 0).onChanged { _ in
+            withAnimation(.easeOut(duration: 0.12)) { highlightOpacity = 1.0 }
+        }.onEnded { _ in
+            withAnimation(.easeOut(duration: 0.20)) { highlightOpacity = 0.0 }
+        })
+        .buttonBorderShape(.roundedRectangle)
+        .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+    }
+}
+
+
 // MARK: -
 
 private struct SavedLocationsListView: View {
@@ -315,14 +361,15 @@ private struct SavedLocationsListView: View {
     var body: some View {
         List {
             ForEach(Array(userData.mainClocks.enumerated()), id: \.element.id) { index, locationWithClocks in
-                ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
-                    .environmentObject(userData)
-                    .onTapGesture {
-                        selectedTabIndex = index
-                        isShowingLocationSheet = true
-                    }
-                    .listRowSeparator(.hidden)
-                    .listRowSpacing(0.0)
+                PressableRow(action: {
+                    selectedTabIndex = index
+                    isShowingLocationSheet = true
+                }) {
+                    ASALocationWithClocksCell(locationWithClocks: locationWithClocks, now: $now)
+                        .environmentObject(userData)
+                }
+                .listRowSeparator(.hidden)
+                .listRowSpacing(0.0)
             }
             .onMove { indices, newOffset in
                 // Delegate move to parent via environment
@@ -436,4 +483,5 @@ extension Array where Element == ASALocationWithClocks {
 //        ASAClocksTab().environmentObject(ASAModel.shared)
 //    }
 //}
+
 
