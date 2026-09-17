@@ -307,7 +307,7 @@ private struct SearchingLocationsListView: View {
 // MARK: - Press feedback helpers
 private struct PressScaleStyle: ButtonStyle {
     var scale: CGFloat = 0.96
-    var duration: Double = 0.12
+    var duration: Double = 0.10
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .scaleEffect(configuration.isPressed ? scale : 1.0)
@@ -338,11 +338,11 @@ private struct PressableRow<Content: View>: View {
             }
         }
         .buttonStyle(PressScaleStyle())
-        .onChange(of: highlightOpacity) { _ in }
+        .onChange(of: highlightOpacity) { }
         .simultaneousGesture(DragGesture(minimumDistance: 0).onChanged { _ in
-            withAnimation(.easeOut(duration: 0.12)) { highlightOpacity = 1.0 }
+            withAnimation(.easeOut(duration: 0.05)) { highlightOpacity = 1.0 }
         }.onEnded { _ in
-            withAnimation(.easeOut(duration: 0.20)) { highlightOpacity = 0.0 }
+            withAnimation(.easeOut(duration: 0.05)) { highlightOpacity = 0.0 }
         })
         .buttonBorderShape(.roundedRectangle)
         .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
