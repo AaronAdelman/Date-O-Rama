@@ -45,253 +45,279 @@
         {ty:"D",st:{mon:4,d:27},ttls:{"en":"National Pneumatics Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-pneumatics-day/"},fst:{era:1,y:2021},nts:{"en":"Created by SMC Corporation"}},
         {ty:"D",st:{mon:4,d:8},inh:"BuddhasBD"},
 
-        {ty:"nD", st:{mon:2,d:5},end:{mon:5,d:6},ttls:{"en":"Spring", "ja":"春"}},
+        {ty:"nY",st:{},end:{}, subEvts:[
+            {ty:"nD", st:{mon:2,d:5},end:{mon:5,d:6},ttls:{"en":"Spring", "ja":"春"}},
 
-        {ty:"nD", st:{mon:5,d:7},end:{mon:8,d:8},ttls:{"en":"Summer", "ja":"夏"}},
+            {ty:"nD", st:{mon:5,d:7},end:{mon:8,d:8},ttls:{"en":"Summer", "ja":"夏"}},
 
-        {ty:"nD", st:{mon:8,d:9},end:{mon:11,d:7},ttls:{"en":"Fall", "ja":"秋"}},
+            {ty:"nD", st:{mon:8,d:9},end:{mon:11,d:7},ttls:{"en":"Fall", "ja":"秋"}},
 
-        {ty:"nD", st:{mon:11,d:8},end:{mon:2,d:4},ttls:{"en":"Winter", "ja":"冬"}},
+            {ty:"nD", st:{mon:11,d:8},end:{mon:2,d:4},ttls:{"en":"Winter", "ja":"冬"}},
+        ]},
 
         // Risshun — Beginning of spring
 
-        {ty:"nD", st:{mon:2,d:4},end:{mon:2,d:18},ttls:{"en":"Risshun", "ja":"立春"},mog:"🌱"},
+        {ty:"nD", st:{mon:2,d:4},end:{mon:2,d:18},ttls:{"en":"Risshun", "ja":"立春"},mog:"🌱", subEvts:[
+            {ty:"nD", st:{mon:2,d:5},end:{mon:2,d:8},ttls:{"en":"The east wind melts the thick ice","ja":"東風解凍"},mog:"🌬️"},
 
-        {ty:"nD", st:{mon:2,d:5},end:{mon:2,d:8},ttls:{"en":"The east wind melts the thick ice","ja":"東風解凍"},mog:"🌬️"},
+            {ty:"nD", st:{mon:2,d:9},end:{mon:2,d:13},ttls:{"en":"Bush warblers sing in the countryside","ja":"黄鶯睍睆"},mog:"🐦"},
 
-        {ty:"nD", st:{mon:2,d:9},end:{mon:2,d:13},ttls:{"en":"Bush warblers sing in the countryside","ja":"黄鶯睍睆"},mog:"🐦"},
+            {ty:"nD", st:{mon:2,d:14},end:{mon:2,d:18},ttls:{"en":"Ice cracks, allowing fish to emerge","ja":"魚上氷"},mog:"🐟"},
+        ]},
 
-        {ty:"nD", st:{mon:2,d:14},end:{mon:2,d:18},ttls:{"en":"Ice cracks, allowing fish to emerge","ja":"魚上氷"},mog:"🐟"},
 
         // Usui — Rain Water
 
-        {ty:"nD", st:{mon:2,d:19},end:{mon:3,d:5},ttls:{"en":"Usui", "ja":"雨水"},mog:"🌧️"},
+        {ty:"nD", st:{mon:2,d:19},end:{mon:3,d:5},ttls:{"en":"Usui", "ja":"雨水"},mog:"🌧️", subEvts:[
+            {ty:"nD", st:{mon:2,d:19},end:{mon:2,d:23},ttls:{"en":"Rain falls, moistening the soil","ja":"土脉潤起"},mog:"🌧️"},
 
-        {ty:"nD", st:{mon:2,d:19},end:{mon:2,d:23},ttls:{"en":"Rain falls, moistening the soil","ja":"土脉潤起"},mog:"🌧️"},
+            {ty:"nD", st:{mon:2,d:24},end:{mon:2,d:28},ttls:{"en":"Mist lies over the land","ja":"霞始靆"},mog:"🌫️"},
 
-        {ty:"nD", st:{mon:2,d:24},end:{mon:2,d:28},ttls:{"en":"Mist lies over the land","ja":"霞始靆"},mog:"🌫️"},
+            {ty:"nD", st:{mon:3,d:1},end:{mon:3,d:5},ttls:{"en":"Trees and plants put forth buds","ja":"草木萌動"},mog:"🌿"},
+        ]},
 
-        {ty:"nD", st:{mon:3,d:1},end:{mon:3,d:5},ttls:{"en":"Trees and plants put forth buds","ja":"草木萌動"},mog:"🌿"},
 
         // Keichitsu — Insects awakening
 
-        {ty:"nD", st:{mon:3,d:6},end:{mon:3,d:20},ttls:{"en":"Keichitsu", "ja":"啓蟄"},mog:"🐛"},
+        {ty:"nD", st:{mon:3,d:6},end:{mon:3,d:20},ttls:{"en":"Keichitsu", "ja":"啓蟄"},mog:"🐛", subEvts:[
+            {ty:"nD", st:{mon:3,d:6},end:{mon:3,d:10},ttls:{"en":"Hibernating insects emerge","ja":"蟄虫啓戸"},mog:"🐛"},
 
-        {ty:"nD", st:{mon:3,d:6},end:{mon:3,d:10},ttls:{"en":"Hibernating insects emerge","ja":"蟄虫啓戸"},mog:"🐛"},
+            {ty:"nD", st:{mon:3,d:11},end:{mon:3,d:15},ttls:{"en":"Peach trees begin to bloom","ja":"桃始笑"},mog:"🌸"},
 
-        {ty:"nD", st:{mon:3,d:11},end:{mon:3,d:15},ttls:{"en":"Peach trees begin to bloom","ja":"桃始笑"},mog:"🌸"},
+            {ty:"nD", st:{mon:3,d:16},end:{mon:3,d:20},ttls:{"en":"Cabbage whites emerge from their cocoons","ja":"菜虫化蝶"},mog:"🦋"},
+        ]},
 
-        {ty:"nD", st:{mon:3,d:16},end:{mon:3,d:20},ttls:{"en":"Cabbage whites emerge from their cocoons","ja":"菜虫化蝶"},mog:"🦋"},
 
         // Shunbun — Spring equinox
 
-        {ty:"nD", st:{mon:3,d:21},end:{mon:4,d:4},ttls:{"en":"Shunbun", "ja":"春分"},mog:"⚖️"},
+        {ty:"nD", st:{mon:3,d:21},end:{mon:4,d:4},ttls:{"en":"Shunbun", "ja":"春分"},mog:"⚖️", subEvts:[
+            {ty:"nD", st:{mon:3,d:21},end:{mon:3,d:25},ttls:{"en":"Sparrows begin building their nests","ja":"雀始巣"},mog:"🐦"},
 
-        {ty:"nD", st:{mon:3,d:21},end:{mon:3,d:25},ttls:{"en":"Sparrows begin building their nests","ja":"雀始巣"},mog:"🐦"},
+            {ty:"nD", st:{mon:3,d:26},end:{mon:3,d:30},ttls:{"en":"Cherry blossoms begin to bloom","ja":"櫻始開"},mog:"🌸"},
 
-        {ty:"nD", st:{mon:3,d:26},end:{mon:3,d:30},ttls:{"en":"Cherry blossoms begin to bloom","ja":"櫻始開"},mog:"🌸"},
+            {ty:"nD", st:{mon:3,d:31},end:{mon:4,d:4},ttls:{"en":"Thunder rumbles far away","ja":"雷乃発声"},mog:"⚡"},
+        ]},
 
-        {ty:"nD", st:{mon:3,d:31},end:{mon:4,d:4},ttls:{"en":"Thunder rumbles far away","ja":"雷乃発声"},mog:"⚡"},
 
         // Seimei — Fresh green
 
-        {ty:"nD", st:{mon:4,d:5},end:{mon:4,d:19},ttls:{"en":"Seimei", "ja":"清明"},mog:"🌿"},
+        {ty:"nD", st:{mon:4,d:5},end:{mon:4,d:19},ttls:{"en":"Seimei", "ja":"清明"},mog:"🌿", subEvts:[
+            {ty:"nD", st:{mon:4,d:5},end:{mon:4,d:9},ttls:{"en":"Swallows return from the south","ja":"玄鳥至"},mog:"🐦"},
 
-        {ty:"nD", st:{mon:4,d:5},end:{mon:4,d:9},ttls:{"en":"Swallows return from the south","ja":"玄鳥至"},mog:"🐦"},
+            {ty:"nD", st:{mon:4,d:10},end:{mon:4,d:14},ttls:{"en":"Wild geese fly north","ja":"鴻雁北"},mog:"🪿"},
 
-        {ty:"nD", st:{mon:4,d:10},end:{mon:4,d:14},ttls:{"en":"Wild geese fly north","ja":"鴻雁北"},mog:"🪿"},
+            {ty:"nD", st:{mon:4,d:15},end:{mon:4,d:19},ttls:{"en":"Rainbows begin to appear","ja":"虹始見"},mog:"🌈"},
+        ]},
 
-        {ty:"nD", st:{mon:4,d:15},end:{mon:4,d:19},ttls:{"en":"Rainbows begin to appear","ja":"虹始見"},mog:"🌈"},
 
         // Kokuu — Grain rain
 
-        {ty:"nD", st:{mon:4,d:20},end:{mon:5,d:4},ttls:{"en":"Kokuu", "ja":"穀雨"},mog:"🌧️"},
+        {ty:"nD", st:{mon:4,d:20},end:{mon:5,d:4},ttls:{"en":"Kokuu", "ja":"穀雨"},mog:"🌧️", subEvts:[
+            {ty:"nD", st:{mon:4,d:20},end:{mon:4,d:24},ttls:{"en":"Reeds begin to sprout","ja":"葭始生"},mog:"🌱"},
 
-        {ty:"nD", st:{mon:4,d:20},end:{mon:4,d:24},ttls:{"en":"Reeds begin to sprout","ja":"葭始生"},mog:"🌱"},
+            {ty:"nD", st:{mon:4,d:25},end:{mon:4,d:29},ttls:{"en":"Rice seedlings grow","ja":"霜止出苗"},mog:"🌾"},
 
-        {ty:"nD", st:{mon:4,d:25},end:{mon:4,d:29},ttls:{"en":"Rice seedlings grow","ja":"霜止出苗"},mog:"🌾"},
+            {ty:"nD", st:{mon:4,d:30},end:{mon:5,d:4},ttls:{"en":"Peonies bloom","ja":"牡丹華"},mog:"🌺"},
+        ]},
 
-        {ty:"nD", st:{mon:4,d:30},end:{mon:5,d:4},ttls:{"en":"Peonies bloom","ja":"牡丹華"},mog:"🌺"},
 
         // Rikka — Beginning of summer
 
-        {ty:"nD", st:{mon:5,d:5},end:{mon:5,d:19},ttls:{"en":"Rikka", "ja":"立夏"},mog:"☀️"},
+        {ty:"nD", st:{mon:5,d:5},end:{mon:5,d:19},ttls:{"en":"Rikka", "ja":"立夏"},mog:"☀️", subEvts:[
+            {ty:"nD", st:{mon:5,d:5},end:{mon:5,d:9},ttls:{"en":"Frogs begin croaking","ja":"蛙始鳴"},mog:"🐸"},
 
-        {ty:"nD", st:{mon:5,d:5},end:{mon:5,d:9},ttls:{"en":"Frogs begin croaking","ja":"蛙始鳴"},mog:"🐸"},
+            {ty:"nD", st:{mon:5,d:10},end:{mon:5,d:14},ttls:{"en":"Worms wriggle to the surface","ja":"蚯蚓出"},mog:"🪱"},
 
-        {ty:"nD", st:{mon:5,d:10},end:{mon:5,d:14},ttls:{"en":"Worms wriggle to the surface","ja":"蚯蚓出"},mog:"🪱"},
+            {ty:"nD", st:{mon:5,d:15},end:{mon:5,d:20},ttls:{"en":"Bamboo shoots sprout","ja":"竹笋生"},mog:"🎋"},
+        ]},
 
-        {ty:"nD", st:{mon:5,d:15},end:{mon:5,d:20},ttls:{"en":"Bamboo shoots sprout","ja":"竹笋生"},mog:"🎋"},
 
         // Shōman — Lesser fullness
 
-        {ty:"nD", st:{mon:5,d:21},end:{mon:6,d:5},ttls:{"en":"Shōman", "ja":"小満"},mog:"🌿"},
+        {ty:"nD", st:{mon:5,d:21},end:{mon:6,d:5},ttls:{"en":"Shōman", "ja":"小満"},mog:"🌿", subEvts:[
+            {ty:"nD", st:{mon:5,d:21},end:{mon:5,d:25},ttls:{"en":"Silkworms feast on mulberry leaves","ja":"蚕起食桑"},mog:"🐛"},
 
-        {ty:"nD", st:{mon:5,d:21},end:{mon:5,d:25},ttls:{"en":"Silkworms feast on mulberry leaves","ja":"蚕起食桑"},mog:"🐛"},
+            {ty:"nD", st:{mon:5,d:26},end:{mon:5,d:30},ttls:{"en":"Safflowers bloom in abundance","ja":"紅花栄"},mog:"🌺"},
 
-        {ty:"nD", st:{mon:5,d:26},end:{mon:5,d:30},ttls:{"en":"Safflowers bloom in abundance","ja":"紅花栄"},mog:"🌺"},
+            {ty:"nD", st:{mon:5,d:31},end:{mon:6,d:5},ttls:{"en":"Barley ripens, ready to be harvested","ja":"麦秋至"},mog:"🌾"},
+        ]},
 
-        {ty:"nD", st:{mon:5,d:31},end:{mon:6,d:5},ttls:{"en":"Barley ripens, ready to be harvested","ja":"麦秋至"},mog:"🌾"},
 
         // Bōshu — Grain in ear
 
-        {ty:"nD", st:{mon:6,d:6},end:{mon:6,d:20},ttls:{"en":"Bōshu", "ja":"芒種"},mog:"🌾"},
+        {ty:"nD", st:{mon:6,d:6},end:{mon:6,d:20},ttls:{"en":"Bōshu", "ja":"芒種"},mog:"🌾", subEvts:[
+            {ty:"nD", st:{mon:6,d:6},end:{mon:6,d:10},ttls:{"en":"Praying mantises hatch and come forth","ja":"蟷螂生"},mog:"🦗"},
 
-        {ty:"nD", st:{mon:6,d:6},end:{mon:6,d:10},ttls:{"en":"Praying mantises hatch and come forth","ja":"蟷螂生"},mog:"🦗"},
+            {ty:"nD", st:{mon:6,d:11},end:{mon:6,d:15},ttls:{"en":"Fireflies fly out from moist grass","ja":"腐草為螢"},mog:"✨"},
 
-        {ty:"nD", st:{mon:6,d:11},end:{mon:6,d:15},ttls:{"en":"Fireflies fly out from moist grass","ja":"腐草為螢"},mog:"✨"},
+            {ty:"nD", st:{mon:6,d:16},end:{mon:6,d:20},ttls:{"en":"Plums ripen, turning yellow","ja":"梅子黄"},mog:"🟡"},
+        ]},
 
-        {ty:"nD", st:{mon:6,d:16},end:{mon:6,d:20},ttls:{"en":"Plums ripen, turning yellow","ja":"梅子黄"},mog:"🟡"},
 
         // Geshi — Summer solstice
 
-        {ty:"nD", st:{mon:6,d:21},end:{mon:7,d:6},ttls:{"en":"Geshi", "ja":"夏至"},mog:"☀️"},
+        {ty:"nD", st:{mon:6,d:21},end:{mon:7,d:6},ttls:{"en":"Geshi", "ja":"夏至"},mog:"☀️", subEvts:[
+            {ty:"nD", st:{mon:6,d:21},end:{mon:6,d:26},ttls:{"en":"Prunella flowers wither","ja":"乃東枯"},mog:"🥀"},
 
-        {ty:"nD", st:{mon:6,d:21},end:{mon:6,d:26},ttls:{"en":"Prunella flowers wither","ja":"乃東枯"},mog:"🥀"},
+            {ty:"nD", st:{mon:6,d:27},end:{mon:7,d:1},ttls:{"en":"Irises bloom","ja":"菖蒲華"},mog:"🪻"},
 
-        {ty:"nD", st:{mon:6,d:27},end:{mon:7,d:1},ttls:{"en":"Irises bloom","ja":"菖蒲華"},mog:"🪻"},
+            {ty:"nD", st:{mon:7,d:2},end:{mon:7,d:6},ttls:{"en":"Crowdipper sprouts","ja":"半夏生"},mog:"🌱"},
+        ]},
 
-        {ty:"nD", st:{mon:7,d:2},end:{mon:7,d:6},ttls:{"en":"Crowdipper sprouts","ja":"半夏生"},mog:"🌱"},
 
         // Shōsho — Lesser heat
 
-        {ty:"nD", st:{mon:7,d:7},end:{mon:7,d:22},ttls:{"en":"Shōsho", "ja":"小暑"},mog:"🌡️"},
+        {ty:"nD", st:{mon:7,d:7},end:{mon:7,d:22},ttls:{"en":"Shōsho", "ja":"小暑"},mog:"🌡️", subEvts:[
+            {ty:"nD", st:{mon:7,d:7},end:{mon:7,d:11},ttls:{"en":"Warm winds blow","ja":"温風至"},mog:"🌬️"},
 
-        {ty:"nD", st:{mon:7,d:7},end:{mon:7,d:11},ttls:{"en":"Warm winds blow","ja":"温風至"},mog:"🌬️"},
+            {ty:"nD", st:{mon:7,d:12},end:{mon:7,d:16},ttls:{"en":"Lotuses begin to bloom","ja":"蓮始開"},mog:"🪷"},
 
-        {ty:"nD", st:{mon:7,d:12},end:{mon:7,d:16},ttls:{"en":"Lotuses begin to bloom","ja":"蓮始開"},mog:"🪷"},
+            {ty:"nD", st:{mon:7,d:17},end:{mon:7,d:22},ttls:{"en":"Young hawks learn to fly","ja":"鷹乃学習"},mog:"🦅"},
+        ]},
 
-        {ty:"nD", st:{mon:7,d:17},end:{mon:7,d:22},ttls:{"en":"Young hawks learn to fly","ja":"鷹乃学習"},mog:"🦅"},
 
         // Taisho — Greater heat
 
-        {ty:"nD", st:{mon:7,d:23},end:{mon:8,d:7},ttls:{"en":"Taisho", "ja":"大暑"},mog:"🔥"},
+        {ty:"nD", st:{mon:7,d:23},end:{mon:8,d:7},ttls:{"en":"Taisho", "ja":"大暑"},mog:"🔥", subEvts:[
+            {ty:"nD", st:{mon:7,d:23},end:{mon:7,d:28},ttls:{"en":"Paulownia trees begin to produce seeds","ja":"桐始結花"},mog:"🌳"},
 
-        {ty:"nD", st:{mon:7,d:23},end:{mon:7,d:28},ttls:{"en":"Paulownia trees begin to produce seeds","ja":"桐始結花"},mog:"🌳"},
+            {ty:"nD", st:{mon:7,d:29},end:{mon:8,d:2},ttls:{"en":"The ground is damp, the air hot and humid","ja":"土潤溽暑"},mog:"💧"},
 
-        {ty:"nD", st:{mon:7,d:29},end:{mon:8,d:2},ttls:{"en":"The ground is damp, the air hot and humid","ja":"土潤溽暑"},mog:"💧"},
+            {ty:"nD", st:{mon:8,d:3},end:{mon:8,d:7},ttls:{"en":"Heavy rains fall","ja":"大雨時行"},mog:"🌧️"},
+        ]},
 
-        {ty:"nD", st:{mon:8,d:3},end:{mon:8,d:7},ttls:{"en":"Heavy rains fall","ja":"大雨時行"},mog:"🌧️"},
 
         // Risshū — Beginning of autumn
 
-        {ty:"nD", st:{mon:8,d:8},end:{mon:8,d:22},ttls:{"en":"Risshū", "ja":"立秋"},mog:"🍂"},
+        {ty:"nD", st:{mon:8,d:8},end:{mon:8,d:22},ttls:{"en":"Risshū", "ja":"立秋"},mog:"🍂", subEvts:[
+            {ty:"nD", st:{mon:8,d:8},end:{mon:8,d:12},ttls:{"en":"Cool winds blow","ja":"涼風至"},mog:"🍃"},
 
-        {ty:"nD", st:{mon:8,d:8},end:{mon:8,d:12},ttls:{"en":"Cool winds blow","ja":"涼風至"},mog:"🍃"},
+            {ty:"nD", st:{mon:8,d:13},end:{mon:8,d:17},ttls:{"en":"Evening cicadas begin to sing","ja":"寒蝉鳴"},mog:"🪰"},
 
-        {ty:"nD", st:{mon:8,d:13},end:{mon:8,d:17},ttls:{"en":"Evening cicadas begin to sing","ja":"寒蝉鳴"},mog:"🪰"},
+            {ty:"nD", st:{mon:8,d:18},end:{mon:8,d:22},ttls:{"en":"Thick fog blankets the land","ja":"蒙霧升降"},mog:"🌫️"},
+        ]},
 
-        {ty:"nD", st:{mon:8,d:18},end:{mon:8,d:22},ttls:{"en":"Thick fog blankets the land","ja":"蒙霧升降"},mog:"🌫️"},
 
         // Shosho — End of heat
 
-        {ty:"nD", st:{mon:8,d:23},end:{mon:9,d:7},ttls:{"en":"Shosho", "ja":"処暑"},mog:"🍃"},
+        {ty:"nD", st:{mon:8,d:23},end:{mon:9,d:7},ttls:{"en":"Shosho", "ja":"処暑"},mog:"🍃", subEvts:[
+            {ty:"nD", st:{mon:8,d:23},end:{mon:8,d:27},ttls:{"en":"Cotton bolls open","ja":"綿柎開"},mog:"🌸"},
 
-        {ty:"nD", st:{mon:8,d:23},end:{mon:8,d:27},ttls:{"en":"Cotton bolls open","ja":"綿柎開"},mog:"🌸"},
+            {ty:"nD", st:{mon:8,d:28},end:{mon:9,d:1},ttls:{"en":"The heat finally relents","ja":"天地始粛"},mog:"🌬️"},
 
-        {ty:"nD", st:{mon:8,d:28},end:{mon:9,d:1},ttls:{"en":"The heat finally relents","ja":"天地始粛"},mog:"🌬️"},
+            {ty:"nD", st:{mon:9,d:2},end:{mon:9,d:7},ttls:{"en":"Rice ripens","ja":"禾乃登"},mog:"🌾"},
+        ]},
 
-        {ty:"nD", st:{mon:9,d:2},end:{mon:9,d:7},ttls:{"en":"Rice ripens","ja":"禾乃登"},mog:"🌾"},
 
         // Hakuro — White dew
 
-        {ty:"nD", st:{mon:9,d:8},end:{mon:9,d:22},ttls:{"en":"Hakuro", "ja":"白露"},mog:"💧"},
+        {ty:"nD", st:{mon:9,d:8},end:{mon:9,d:22},ttls:{"en":"Hakuro", "ja":"白露"},mog:"💧", subEvts:[
+            {ty:"nD", st:{mon:9,d:8},end:{mon:9,d:12},ttls:{"en":"White dew shimmers on the grass","ja":"草露白"},mog:"💧"},
 
-        {ty:"nD", st:{mon:9,d:8},end:{mon:9,d:12},ttls:{"en":"White dew shimmers on the grass","ja":"草露白"},mog:"💧"},
+            {ty:"nD", st:{mon:9,d:13},end:{mon:9,d:17},ttls:{"en":"Wagtails begin to sing","ja":"鶺鴒鳴"},mog:"🐦"},
 
-        {ty:"nD", st:{mon:9,d:13},end:{mon:9,d:17},ttls:{"en":"Wagtails begin to sing","ja":"鶺鴒鳴"},mog:"🐦"},
+            {ty:"nD", st:{mon:9,d:18},end:{mon:9,d:22},ttls:{"en":"Swallows return to the south","ja":"玄鳥去"},mog:"🐦"},
+        ]},
 
-        {ty:"nD", st:{mon:9,d:18},end:{mon:9,d:22},ttls:{"en":"Swallows return to the south","ja":"玄鳥去"},mog:"🐦"},
 
         // Shūbun — Autumn equinox
 
-        {ty:"nD", st:{mon:9,d:23},end:{mon:10,d:7},ttls:{"en":"Shūbun", "ja":"秋分"},mog:"⚖️"},
+        {ty:"nD", st:{mon:9,d:23},end:{mon:10,d:7},ttls:{"en":"Shūbun", "ja":"秋分"},mog:"⚖️", subEvts:[
+            {ty:"nD", st:{mon:9,d:23},end:{mon:9,d:27},ttls:{"en":"Thunder comes to an end","ja":"雷乃収声"},mog:"⚡"},
 
-        {ty:"nD", st:{mon:9,d:23},end:{mon:9,d:27},ttls:{"en":"Thunder comes to an end","ja":"雷乃収声"},mog:"⚡"},
+            {ty:"nD", st:{mon:9,d:28},end:{mon:10,d:2},ttls:{"en":"Insects close up their burrows","ja":"蟄虫坏戸"},mog:"🐜"},
 
-        {ty:"nD", st:{mon:9,d:28},end:{mon:10,d:2},ttls:{"en":"Insects close up their burrows","ja":"蟄虫坏戸"},mog:"🐜"},
+            {ty:"nD", st:{mon:10,d:3},end:{mon:10,d:7},ttls:{"en":"Fields are drained of water","ja":"水始涸"},mog:"🌾"},
+        ]},
 
-        {ty:"nD", st:{mon:10,d:3},end:{mon:10,d:7},ttls:{"en":"Fields are drained of water","ja":"水始涸"},mog:"🌾"},
 
         // Kanro — Cold dew
 
-        {ty:"nD", st:{mon:10,d:8},end:{mon:10,d:22},ttls:{"en":"Kanro", "ja":"寒露"},mog:"💧"},
+        {ty:"nD", st:{mon:10,d:8},end:{mon:10,d:22},ttls:{"en":"Kanro", "ja":"寒露"},mog:"💧", subEvts:[
+            {ty:"nD", st:{mon:10,d:8},end:{mon:10,d:12},ttls:{"en":"Wild geese begin to fly back","ja":"鴻雁来"},mog:"🪿"},
 
-        {ty:"nD", st:{mon:10,d:8},end:{mon:10,d:12},ttls:{"en":"Wild geese begin to fly back","ja":"鴻雁来"},mog:"🪿"},
+            {ty:"nD", st:{mon:10,d:13},end:{mon:10,d:17},ttls:{"en":"Chrysanthemums bloom","ja":"菊花開"},mog:"🌼"},
 
-        {ty:"nD", st:{mon:10,d:13},end:{mon:10,d:17},ttls:{"en":"Chrysanthemums bloom","ja":"菊花開"},mog:"🌼"},
+            {ty:"nD", st:{mon:10,d:18},end:{mon:10,d:22},ttls:{"en":"Crickets chirp by the door","ja":"蟋蟀在戸"},mog:"🦗"},
+        ]},
 
-        {ty:"nD", st:{mon:10,d:18},end:{mon:10,d:22},ttls:{"en":"Crickets chirp by the door","ja":"蟋蟀在戸"},mog:"🦗"},
 
         // Sōkō — First frost
 
-        {ty:"nD", st:{mon:10,d:23},end:{mon:11,d:6},ttls:{"en":"Sōkō", "ja":"霜降"},mog:"❄️"},
+        {ty:"nD", st:{mon:10,d:23},end:{mon:11,d:6},ttls:{"en":"Sōkō", "ja":"霜降"},mog:"❄️", subEvts:[
+            {ty:"nD", st:{mon:10,d:23},end:{mon:10,d:27},ttls:{"en":"Frost begins to form","ja":"霜始降"},mog:"❄️"},
 
-        {ty:"nD", st:{mon:10,d:23},end:{mon:10,d:27},ttls:{"en":"Frost begins to form","ja":"霜始降"},mog:"❄️"},
+            {ty:"nD", st:{mon:10,d:28},end:{mon:11,d:1},ttls:{"en":"Drizzling rain falls gently","ja":"霎時施"},mog:"🌧️"},
 
-        {ty:"nD", st:{mon:10,d:28},end:{mon:11,d:1},ttls:{"en":"Drizzling rain falls gently","ja":"霎時施"},mog:"🌧️"},
+            {ty:"nD", st:{mon:11,d:2},end:{mon:11,d:6},ttls:{"en":"Maple leaves and ivy turn yellow","ja":"楓蔦黄"},mog:"🍁"},
+        ]},
 
-        {ty:"nD", st:{mon:11,d:2},end:{mon:11,d:6},ttls:{"en":"Maple leaves and ivy turn yellow","ja":"楓蔦黄"},mog:"🍁"},
 
         // Rittō — Beginning of winter
 
-        {ty:"nD", st:{mon:11,d:7},end:{mon:11,d:21},ttls:{"en":"Rittō", "ja":"立冬"},mog:"❄️"},
+        {ty:"nD", st:{mon:11,d:7},end:{mon:11,d:21},ttls:{"en":"Rittō", "ja":"立冬"},mog:"❄️", subEvts:[
+            {ty:"nD", st:{mon:11,d:7},end:{mon:11,d:11},ttls:{"en":"Sasanqua camellias begin to bloom","ja":"山茶始開"},mog:"🌺"},
 
-        {ty:"nD", st:{mon:11,d:7},end:{mon:11,d:11},ttls:{"en":"Sasanqua camellias begin to bloom","ja":"山茶始開"},mog:"🌺"},
+            {ty:"nD", st:{mon:11,d:12},end:{mon:11,d:16},ttls:{"en":"The land begins to freeze","ja":"地始凍"},mog:"❄️"},
 
-        {ty:"nD", st:{mon:11,d:12},end:{mon:11,d:16},ttls:{"en":"The land begins to freeze","ja":"地始凍"},mog:"❄️"},
+            {ty:"nD", st:{mon:11,d:17},end:{mon:11,d:21},ttls:{"en":"Daffodils bloom","ja":"金盞香"},mog:"🌼"},
+        ]},
 
-        {ty:"nD", st:{mon:11,d:17},end:{mon:11,d:21},ttls:{"en":"Daffodils bloom","ja":"金盞香"},mog:"🌼"},
 
         // Shōsetsu — Light snow
 
-        {ty:"nD", st:{mon:11,d:22},end:{mon:12,d:6},ttls:{"en":"Shōsetsu", "ja":"小雪"},mog:"🌨️"},
+        {ty:"nD", st:{mon:11,d:22},end:{mon:12,d:6},ttls:{"en":"Shōsetsu", "ja":"小雪"},mog:"🌨️", subEvts:[
+            {ty:"nD", st:{mon:11,d:22},end:{mon:11,d:26},ttls:{"en":"Rainbows disappear","ja":"虹蔵不見"},mog:"🌈"},
 
-        {ty:"nD", st:{mon:11,d:22},end:{mon:11,d:26},ttls:{"en":"Rainbows disappear","ja":"虹蔵不見"},mog:"🌈"},
+            {ty:"nD", st:{mon:11,d:27},end:{mon:12,d:1},ttls:{"en":"The north wind blows leaves off the trees","ja":"朔風払葉"},mog:"🍂"},
 
-        {ty:"nD", st:{mon:11,d:27},end:{mon:12,d:1},ttls:{"en":"The north wind blows leaves off the trees","ja":"朔風払葉"},mog:"🍂"},
+            {ty:"nD", st:{mon:12,d:2},end:{mon:12,d:6},ttls:{"en":"Tachibana citrus trees begin to turn yellow","ja":"橘始黄"},mog:"🍊"},
+        ]},
 
-        {ty:"nD", st:{mon:12,d:2},end:{mon:12,d:6},ttls:{"en":"Tachibana citrus trees begin to turn yellow","ja":"橘始黄"},mog:"🍊"},
 
         // Taisetsu — Heavy snow
 
-        {ty:"nD", st:{mon:12,d:7},end:{mon:12,d:21},ttls:{"en":"Taisetsu", "ja":"大雪"},mog:"❄️"},
+        {ty:"nD", st:{mon:12,d:7},end:{mon:12,d:21},ttls:{"en":"Taisetsu", "ja":"大雪"},mog:"❄️", subEvts:[
+            {ty:"nD", st:{mon:12,d:7},end:{mon:12,d:11},ttls:{"en":"The skies stay cold as winter arrives","ja":"閉塞成冬"},mog:"☁️"},
 
-        {ty:"nD", st:{mon:12,d:7},end:{mon:12,d:11},ttls:{"en":"The skies stay cold as winter arrives","ja":"閉塞成冬"},mog:"☁️"},
+            {ty:"nD", st:{mon:12,d:12},end:{mon:12,d:16},ttls:{"en":"Bears hide away in their dens to hibernate","ja":"熊蟄穴"},mog:"🐻"},
 
-        {ty:"nD", st:{mon:12,d:12},end:{mon:12,d:16},ttls:{"en":"Bears hide away in their dens to hibernate","ja":"熊蟄穴"},mog:"🐻"},
+            {ty:"nD", st:{mon:12,d:17},end:{mon:12,d:21},ttls:{"en":"Salmon swim upstream en masse","ja":"鱖魚群"},mog:"🐟"},
+        ]},
 
-        {ty:"nD", st:{mon:12,d:17},end:{mon:12,d:21},ttls:{"en":"Salmon swim upstream en masse","ja":"鱖魚群"},mog:"🐟"},
 
         // Tōji — Winter solstice
 
-        {ty:"nD", st:{mon:12,d:22},end:{mon:1,d:4},ttls:{"en":"Tōji", "ja":"冬至"},mog:"☀️"},
+        {ty:"nD", st:{mon:12,d:22},end:{mon:1,d:4},ttls:{"en":"Tōji", "ja":"冬至"},mog:"☀️", subEvts:[
+            {ty:"nD", st:{mon:12,d:22},end:{mon:12,d:26},ttls:{"en":"Prunella sprouts","ja":"乃東生"},mog:"🌱"},
 
-        {ty:"nD", st:{mon:12,d:22},end:{mon:12,d:26},ttls:{"en":"Prunella sprouts","ja":"乃東生"},mog:"🌱"},
+            {ty:"nD", st:{mon:12,d:27},end:{mon:12,d:31},ttls:{"en":"Deer shed their antlers","ja":"麋角解"},mog:"🦌"},
 
-        {ty:"nD", st:{mon:12,d:27},end:{mon:12,d:31},ttls:{"en":"Deer shed their antlers","ja":"麋角解"},mog:"🦌"},
+            {ty:"nD", st:{mon:1,d:1},end:{mon:1,d:4},ttls:{"en":"Barley sprouts under the snow","ja":"雪下出麦"},mog:"🌱"},
+        ]},
 
-        {ty:"nD", st:{mon:1,d:1},end:{mon:1,d:4},ttls:{"en":"Barley sprouts under the snow","ja":"雪下出麦"},mog:"🌱"},
 
         // Shōkan — Lesser cold
 
-        {ty:"nD", st:{mon:1,d:5},end:{mon:1,d:19},ttls:{"en":"Shōkan", "ja":"小寒"},mog:"🥶"},
+        {ty:"nD", st:{mon:1,d:5},end:{mon:1,d:19},ttls:{"en":"Shōkan", "ja":"小寒"},mog:"🥶", subEvts:[
+            {ty:"nD", st:{mon:1,d:5},end:{mon:1,d:9},ttls:{"en":"Parsley thrives","ja":"芹乃栄"},mog:"🌿"},
 
-        {ty:"nD", st:{mon:1,d:5},end:{mon:1,d:9},ttls:{"en":"Parsley thrives","ja":"芹乃栄"},mog:"🌿"},
+            {ty:"nD", st:{mon:1,d:10},end:{mon:1,d:14},ttls:{"en":"Springs once frozen flow once more","ja":"水泉動"},mog:"💧"},
 
-        {ty:"nD", st:{mon:1,d:10},end:{mon:1,d:14},ttls:{"en":"Springs once frozen flow once more","ja":"水泉動"},mog:"💧"},
+            {ty:"nD", st:{mon:1,d:15},end:{mon:1,d:19},ttls:{"en":"Cock pheasants begin to call","ja":"雉始雊"},mog:"🐦"},
+        ]},
 
-        {ty:"nD", st:{mon:1,d:15},end:{mon:1,d:19},ttls:{"en":"Cock pheasants begin to call","ja":"雉始雊"},mog:"🐦"},
 
         // Daikan — Greater cold
 
-        {ty:"nD", st:{mon:1,d:20},end:{mon:2,d:3},ttls:{"en":"Daikan", "ja":"大寒"},mog:"🥶"},
+        {ty:"nD", st:{mon:1,d:20},end:{mon:2,d:3},ttls:{"en":"Daikan", "ja":"大寒"},mog:"🥶", subEvts:[
+            {ty:"nD", st:{mon:1,d:20},end:{mon:1,d:24},ttls:{"en":"Butterburs put forth buds","ja":"款冬華"},mog:"🌱"},
 
-        {ty:"nD", st:{mon:1,d:20},end:{mon:1,d:24},ttls:{"en":"Butterburs put forth buds","ja":"款冬華"},mog:"🌱"},
+            {ty:"nD", st:{mon:1,d:25},end:{mon:1,d:29},ttls:{"en":"Mountain streams gain a cover of thick ice","ja":"水沢腹堅"},mog:"🧊"},
 
-        {ty:"nD", st:{mon:1,d:25},end:{mon:1,d:29},ttls:{"en":"Mountain streams gain a cover of thick ice","ja":"水沢腹堅"},mog:"🧊"},
+            {ty:"nD", st:{mon:1,d:30},end:{mon:2,d:3},ttls:{"en":"Hens begin to lay eggs","ja":"鶏始乳"},mog:"🐔"},
+        ]},
 
-        {ty:"nD", st:{mon:1,d:30},end:{mon:2,d:3},ttls:{"en":"Hens begin to lay eggs","ja":"鶏始乳"},mog:"🐔"},
     ],
     tpls:{
         "Culture Day":{ty:"D",st:{mon:11,d:3},ttls:{"ar":"يوم الثقافة","az":"Mədəniyyət günü","be":"Дзень культуры","de":"Bunka no Hi","en":"Culture Day","es":"Bunka no hi","fa":"روز فرهنگ","fr":"Bunka no hi","gu":"સંસ્કૃતિ દિવસ","hi":"संस्कृति दिवस","hy":"Մշակույթի օր","id":"Hari Kebudayaan","ja":"文化の日","ko":"문화의 날","ms":"Hari Kebudayaan","pt":"Dia da Cultura","ru":"День культуры","sd":"جاپان جو ثقافتي ڏينهن","th":"วันวัฒนธรรม","tr":"Kültür Günü","uk":"День культури","uz":"Madaniyat kuni","vi":"Ngày văn hóa","zh":"文化之日"},urls:{"en":"https://www.daysoftheyear.com/days/japanese-culture-day/"}},
