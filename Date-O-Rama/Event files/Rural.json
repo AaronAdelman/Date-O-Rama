@@ -374,10 +374,12 @@
             {ttls:{"fr":"Jour des récompenses","en":"Honors Day","he":"יום ההצטיינות"}, ty:"D",st:{mon:13,d:5},mog:"🎖",urls:{"fr":"https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire","en":"https://en.wikipedia.org/wiki/Sansculottides"}},
             {inh:"RevolutionD", ty:"D",st:{mon:13,d:6},urls:{"fr":"https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire","en":"https://en.wikipedia.org/wiki/Sansculottides"}},
         ]},
-        {ttls:{"en":"Autumn","he":"סתיו","fr":"Automne"}, ty:"nM",st:{mon:1},end:{mon:3},mog:"🍁"},
-        {ttls:{"en":"Winter","he":"חורף","fr":"Hiver"}, ty:"nM",st:{mon:4},end:{mon:6},mog:"❄️"},
-        {ttls:{"en":"Spring","he":"אביב","fr":"Printemps"}, ty:"nM",st:{mon:7},end:{mon:9},mog:"🌷"},
-        {ttls:{"en":"Summer","he":"קיץ","fr":"Été"}, ty:"nM",st:{mon:10},end:{mon:12},mog:"🕶"},
-//        {ttls:{"en":"Sansculottides","he":"עיבור השנה","fr":"Sansculottides"}, ty:"M",st:{mon:13},mog:"🎉"},
+        {ty:"nY",st:{},end:{},subEvts:[
+            {ty:"nM",st:{mon:1},end:{mon:3},inh:"Autumn"},
+            {ty:"nM",st:{mon:4},end:{mon:6},inh:"Winter"},
+            {ty:"nM",st:{mon:7},end:{mon:9},inh:"Spring"},
+            {ty:"nM",st:{mon:10},end:{mon:12},inh:"Summer"},
+            //        {ttls:{"en":"Sansculottides","he":"עיבור השנה","fr":"Sansculottides"}, ty:"M",st:{mon:13},mog:"🎉"},
+        ]},
     ]
 }

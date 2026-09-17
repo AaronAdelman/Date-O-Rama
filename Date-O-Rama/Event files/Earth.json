@@ -5,15 +5,25 @@
     color:{name:"blue"},
     evts:[
         {ty:"Y",st:{}, subEvts:[
-            {inh:"Vernal Equinox", ty:"pt",st:{misc:"Mar"}, rgns:["xb"]},
-            {inh:"Summer Solstice", ty:"pt",st:{misc:"Jun"}, rgns:["xb"]},
-            {inh:"AutumnalEquinox", ty:"pt",st:{misc:"Sep"}, rgns:["xb"]},
-            {inh:"Winter Solstice", ty:"pt",st:{misc:"Dec"}, rgns:["xb"]},
-            
-            {inh:"Vernal Equinox", ty:"pt",st:{misc:"Sep"}, rgns:["xc"]},
-            {inh:"Summer Solstice", ty:"pt",st:{misc:"Dec"}, rgns:["xc"]},
-            {inh:"AutumnalEquinox", ty:"pt",st:{misc:"Mar"}, rgns:["xc"]},
-            {inh:"Winter Solstice", ty:"pt",st:{misc:"Jun"}, rgns:["xc"]},
+            {ty:"pt",st:{misc:"Mar"},rgns:["xb"],inh:"Vernal Equinox"},
+            {ty:"pt",st:{misc:"Jun"},rgns:["xb"],inh:"Summer Solstice"},
+            {ty:"pt",st:{misc:"Sep"},rgns:["xb"],inh:"AutumnalEquinox"},
+            {ty:"pt",st:{misc:"Dec"},rgns:["xb"],inh:"Winter Solstice"},
+
+            {ty:"pt",st:{misc:"Sep"},rgns:["xc"],inh:"Vernal Equinox"},
+            {ty:"pt",st:{misc:"Dec"},rgns:["xc"],inh:"Summer Solstice"},
+            {ty:"pt",st:{misc:"Mar"},rgns:["xc"],inh:"AutumnalEquinox"},
+            {ty:"pt",st:{misc:"Jun"},rgns:["xc"],inh:"Winter Solstice"},
+        ]},
+        {ty:"nY",st:{},end:{},subEvts:[
+            {ty:"nD",st:{mon:3,d:20},end:{mon:6,d:20},inh:"Spring",rgns:["xb"]},
+            {ty:"nD",st:{mon:6,d:21},end:{mon:9,d:21},inh:"Summer",rgns:["xb"]},
+            {ty:"nD",st:{mon:9,d:22},end:{mon:12,d:20},inh:"Autumn",rgns:["xb"]},
+            {ty:"nD",st:{mon:12,d:21},end:{mon:3,d:19},inh:"Winter",rgns:["xb"]},
+            {ty:"nD",st:{mon:3,d:20},end:{mon:6,d:20},inh:"Autumn",rgns:["xc"]},
+            {ty:"nD",st:{mon:6,d:21},end:{mon:9,d:21},inh:"Winter",rgns:["xc"]},
+            {ty:"nD",st:{mon:9,d:22},end:{mon:12,d:20},inh:"Spring",rgns:["xc"]},
+            {ty:"nD",st:{mon:12,d:21},end:{mon:3,d:19},inh:"Summer",rgns:["xc"]},
         ]},
     ]
 }
