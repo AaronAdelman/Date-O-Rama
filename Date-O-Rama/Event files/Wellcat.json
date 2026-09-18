@@ -21,7 +21,7 @@
             {ty:"D",st:{mon:1,d:3},ttls:{"en":"Memento Mori"},nts:{"en":"Memento Mori “Remember You Die” Day"}},
             {ty:"D",st:{mon:1,d:4},ttls:{"en":"Dimpled Chad Day"}},
             {ty:"D",st:{mon:1,d:8},ttls:{"en":"Show & Tell Day at Work"},nts:{"en":"Show & Tell at Work Day\nShow and Tell at Work Day"}},
-            {ty:"D",st:{mon:1,d:17},inh:"Judgement Day"},
+            {ty:"D",st:{mon:1,d:17},inh:"JudgementD"},
             {ty:"D",st:{mon:1,d:22},ttls:{"en":"Answer Your Cat’s Question Day","he":"יום ענה על השאלה של החתול שלך"},nts:{"en":"National Answer Your Cat’s Questions Day"}},
             {ty:"D",st:{mon:1,d:23},ttls:{"en":"Snow Plow Mailbox Hockey Day"},nts:{"en":"Snowplow Mailbox Hockey Day"},fst:{era:1,y:2010}},
             {ty:"D",st:{mon:1,d:25},ttls:{"en":"A Room of One’s Own Day"}},

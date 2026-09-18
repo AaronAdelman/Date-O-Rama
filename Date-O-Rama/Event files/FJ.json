@@ -33,6 +33,6 @@
     ],
     tpls:{
         "Ratu Sukuna Day":{ty:"D",st:{mon:5,wkd:[2],nth:-1},ttls:{"en":"Ratu Sukuna Day"},urls:{"en":"https://www.officeholidays.com/holidays/fiji/ratu-sukuna-day"}},
-        "Girmit Day":{ty:"D",st:{mon:5,d:11,thruD:17,wkd:[2]},ttls:{"en":"Girmit Day"},urls:{"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"},inh:"Indian Arrival Day"},
+        "Girmit Day":{ty:"D",st:{mon:5,d:11,thruD:17,wkd:[2]},ttls:{"en":"Girmit Day"},urls:{"en":"https://www.officeholidays.com/holidays/fiji/girmit-day"},inh:"IndianArrivalD"},
     }
 }

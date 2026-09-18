@@ -105,7 +105,7 @@
         {ty:"D",st:{mon:8,wkd:[2],nth:1},ttls:{"en":"Picnic Day","it":"Picnic day","ru":"День пикника"},urls:{"en":"https://www.daysoftheyear.com/days/picnic-day-nt/"},mog:"🧺",fst:{era:1,y:1936}},
         {ty:"D",st:{mon:8,wkd:[4],nth:3},ttls:{"en":"National Finance Brokers Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-finance-brokers-day/"},fst:{era:1,y:2015},mog:"✍️",nts:{"en":"NFBD\nCreated by Dino Pacella"}},
         {ty:"D",st:{mon:8,wkd:[6],nth:-1},ttls:{"en":"Wear it Purple Day"},fst:{era:1,y:2010},nts:{"en":"Created by Katherine Hudson and Scott Williams"}},
-        {ty:"D",st:{mon:8,wkd:[6],nth:1},inh:"Jeans for Genes Day",urls:{"en":"https://fundraise.jeansforgenes.org.au/"},fst:{era:1,y:1994}},
+        {ty:"D",st:{mon:8,wkd:[6],nth:1},inh:"JeansForGenesD",urls:{"en":"https://fundraise.jeansforgenes.org.au/"},fst:{era:1,y:1994}},
         {ty:"D",st:{mon:9,d:1},ttls:{"en":"Footy Colours Day"},nts:{"en":"Footy Colors Day\nCreated by the Fight Cancer Foundation"},urls:{"en":"https://www.footycoloursday.com.au/"},fst:{era:1,y:1995},inh:"*MedAw*",mog:"🏉"},
         {ty:"D",st:{mon:9,wkd:[4],nth:1},ttls:{"en":"Indigenous Literacy Day"},urls:{"en":"https://www.indigenousliteracyfoundation.org.au/ILD"},fst:{era:1,y:2004},nts:{"en":"Created by Suzy Wilson of Riverbend Books"}},
         {ty:"D",st:{mon:9,wkd:[5],nth:2},ttls:{"en":"R U OK?Day","he":"יום ״האם אתה בסדר״"},urls:{"en":"http://www.ruok.org.au/r-u-ok-day"},nts:{"en":"R U OK? Day\nAre You Okay Day\nCreated by Gavin Larkin of R U OK?"},fst:{era:1,y:2009}},

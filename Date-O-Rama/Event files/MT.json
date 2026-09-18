@@ -104,7 +104,7 @@
         {ty:"D",st:{mon:8,d:16},inh:"StRoch"},
         {ty:"D",st:{mon:8,d:15,thruD:21,wkd:[1]},ttls:{"en":"Feast of Saint Helen","mt":"Santa Elena"}},
         {ty:"D",st:{mon:8,wkd:[1],nth:3},ttls:{"en":"Feast of Our Lady Star of the Sea"},nts:{"en":"Stella Maris"}},
-        {ty:"D",st:{mon:8,d:29},inh:"BeheadingOfStJohnTheBaptist"},
+        {ty:"D",st:{mon:8,d:29},inh:"StJohnTheBaptistBeheading"},
         {ty:"D",st:{mon:8,wkd:[1],nth:-1},ttls:{"en":"Feast of Saint Dominic of Guzman","mt":"San Duminku ta’ Guzman"}},
         {ty:"D",st:{mon:8,wkd:[1],nth:-1},ttls:{"en":"Feast of Saint Julian","mt":"San Ġiljan"}},
         

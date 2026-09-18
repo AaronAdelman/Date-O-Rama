@@ -9,7 +9,7 @@
         {ty:"D",st:{dOfY:182},ttls:{"en":"Blink-182 Day"},urls:{"en":"https://www.daysoftheyear.com/days/blink-182-day/"},nts:{"en":"Blink 182 Day\nCreated by Mark Hoppus of Blink-182"},fst:{era:1,y:1990}},
         {ty:"D",st:{dOfY:256},inh:"ProgrammersD",fst:{era:1,y:2002}},
         {ty:"D",st:{dOfY:88},ttls:{"en":"Piano Day","he":"יום הפסנתר"},nts:{"he":"יום הפסנתר הבינלאומי","en":"World Piano Day\nCreated by Nils Frahm"},urls:{"en":"https://www.pianoday.org/"},mog:"🎹",fst:{era:1,y:2015}},
-        {ty:"D",st:{era:1,y:2009,mon:8,d:12},inh:"Information Overload Day"},
+        {ty:"D",st:{era:1,y:2009,mon:8,d:12},inh:"InfoOverloadD"},
         {ty:"D",st:{era:1,y:2012,mon:2,wkd:[6],nth:1},inh:"Inbox Day"},
         {ty:"D",st:{era:1,y:2020,mon:6,d:20},inh:"Drink Chenin Day"},
         {ty:"D",st:{era:1,y:2022,mon:11,d:19, recurD: 100},ttls:{"en":"Metric Mitochondria Day"},nts:{"en":"Meant to celebrate our obligate symbiotes, the mitochondria, and the metric system.  Invented 2010-01-24.  First attested 2022-11-19."}},
@@ -202,7 +202,7 @@
         {ty:"D",st:{mon:10,d:2},ttls:{"en":"Audiophile Day"},fst:{era:1,y:2016},urls:{"en":"https://www.audiophileday.org/"}},
         {ty:"D",st:{mon:10,d:2},ttls:{"en":"World Farm Animals Day","he":"יום חיות המשק העולמי"},nts:{"en":"WFAD\nWorld Day for Farmed Animals"},fst:{era:1,y:1983},mog:"🐄",urls:{"en":"https://dayforanimals.com/"}},
         {ty:"D",st:{mon:10,d:2},ttls:{"en":"World No Alcohol Day"},fst:{era:1,y:2008},urls:{"en":"https://www.checkiday.com/1f101a30d8a2d90912123b7f0af02a87/world-no-alcohol-day"}},
-        {ty:"D",st:{mon:10,d:20},inh:"Information Overload Day",fst:{era:1,y:2010},last:{era:1,y:2013}},
+        {ty:"D",st:{mon:10,d:20},inh:"InfoOverloadD",fst:{era:1,y:2010},last:{era:1,y:2013}},
         {ty:"D",st:{mon:10,d:20},ttls:{"ar":"اليوم العالمي لهشاشة العظام","bn":"বিশ্ব অস্টিওপোরোসিস দিবস","de":"Weltosteoporosetag","en":"World Osteoporosis Day","fa":"روز جهانی پوکی استخوان","fr":"Journée mondiale contre l’ostéoporose","he":"יום האוסטאופורוזיס העולמי","hi":"विश्व ऑस्टियोपोरोसिस दिवस","ja":"世界骨粗鬆症デー","ml":"ലോക ഓസ്റ്റിയോപൊറോസിസ് ദിനം","ro":"Ziua Mondială a Osteoporozei","zh":"世界骨质疏松日"},fst:{era:1,y:1996},mog:"🦴",urls:{"en":"https://www.worldosteoporosisday.org/"},inh:"*MedAw*",nts:{"en":"Created by the National Osteoporosis Society"}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"International Chefs Day"},fst:{era:1,y:2004},mog:"👨‍🍳👩‍🍳",urls:{"en":"https://worldchefs.org/internationalchefsday/"},nts:{"en":"Created by Dr. Bill Gallagher of WorldChefs"}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"International Day of the Air Traffic Controller"},fst:{era:1,y:1961},mog:"✈️",urls:{"en":"https://nationaldaycalendar.com/international-day-of-the-air-traffic-controller-october-20/"}},
@@ -297,7 +297,7 @@
         {ty:"D",st:{mon:10,wkd:[2],nth:3},ttls:{"en":"International Adjust your Chair Day"},urls:{"en":"https://www.checkiday.com/2023b879dea1056ee4a643bf9c7067cc/international-adjust-your-chair-day"},mog:"🪑"},
         {ty:"D",st:{mon:10,wkd:[3],nth:2},ttls:{"ckb":"ڕۆژی ئەیدا لەڤلس","de":"Ada-Lovelace-Tag","en":"Ada Lovelace Day","fr":"Ada Lovelace Day","ig":"Ada Lovelace Day","it":"Ada Lovelace Day","ja":"エイダ・ラブレス・デー","sr":"Дан Аде Лавлејс","uk":"День Ади Лавлейс","vi":"Ngày Ada Lovelace"},nts:{"en":"ALD\nCreated by Suw Charman-Anderson"},urls:{"en":"https://findingada.com/"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:10,wkd:[3],nth:2},ttls:{"en":"Own Business Day"},nts:{"en":"IOwn My Own Business Day\nCreated by METRO AG"},urls:{"en":"https://www.daysoftheyear.com/days/own-business-day/"},fst:{era:1,y:2016}},
-        {ty:"D",st:{mon:10,wkd:[3],nth:3},inh:"Information Overload Day",fst:{era:1,y:2014}},
+        {ty:"D",st:{mon:10,wkd:[3],nth:3},inh:"InfoOverloadD",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:10,wkd:[4],nth:2},ttls:{"en":"Bring Your Teddy Bear To Work & School Day"},nts:{"en":"National Bring Your Teddy Bear to School Day\nNational Bring Your Teddy Bear to Work/School Day"},urls:{"en":"https://www.daysoftheyear.com/days/bring-your-teddy-bear-to-work-school-day/"},mog:"🧸"},
         {ty:"D",st:{mon:10,wkd:[4],nth:2},ttls:{"en":"International Top Spinning Day"},urls:{"en":"https://www.topmuseum.org/20.html"},fst:{era:1,y:2003},nts:{"en":"Created by the Spinning Top & Yo-Yo Museum"}},
         {ty:"D",st:{mon:10,wkd:[4],nth:2},ttls:{"en":"National Emergency Nurses Day"},nts:{"en":"Emergency Nurses Day\nNational Emergency Nurse’s Day"},urls:{"en":"https://www.daysoftheyear.com/days/emergency-nurses-day/"},fst:{era:1,y:1989},mog:"👨‍⚕️👩‍⚕️"},
@@ -1972,5 +1972,6 @@
         "Children’s Book Week":{ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},ttls:{"en":"Children’s Book Week"},urls:{"en":"https://everychildareader.net/cbw/about/"},mog:"📙📘📗",nts:{"en":"Created by Franklin K. Matthiews"}},
         "Save the Frogs Day":{ty:"D",st:{mon:4,d:28},ttls:{"en":"Save the Frogs Day"},urls:{"en":"https://savethefrogs.com/day/"},mog:"🐸",nts:{"en":"Created by Dr. Kerry Kriger"}},
         "Runner’s Selfie Day":{ty:"D",st:{mon:6,d:23},ttls:{"en":"Runner’s Selfie Day"},urls:{"en":"https://www.daysoftheyear.com/days/runners-selfie-day/"},nts:{"en":"Created by Runner’s Selfie and Wendy Lee"}},
+        "InfoOverloadD":{ty:"D",st:{mon:10,d:20},ttls:{"en":"Information Overload Day"}, urls:{"en":"https://www.daysoftheyear.com/days/information-overload-day/"},nts:{"en":"Information Overload Awareness Day"}},
     }
 }

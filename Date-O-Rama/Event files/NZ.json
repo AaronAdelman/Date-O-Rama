@@ -53,7 +53,7 @@
         {ty:"D",st:{mon:12,d:3},inh:"IDOfPersonsWithDisabilities",fst:{era:1,y:1993}},
         {inh:"IDOfTheWorldsIndigenousPpls", ty:"D",st:{mon:8,d:9},fst:{era:1,y:1995}},
         {ty:"D",st:{mon:3,d:8},inh:"IWD"},
-        {inh:"IYouth Day", ty:"D",st:{mon:8,d:12},fst:{era:1,y:2000}},
+        {inh:"IYouthD", ty:"D",st:{mon:8,d:12},fst:{era:1,y:2000}},
         {ty:"D",st:{mon:3,d:17},inh:"StPatrick"},
         {ty:"D",st:{mon:2,d:14},inh:"Valentine’s Day",fst:{era:1,y:496}},
         {inh:"WBookD", ty:"D",st:{mon:4,d:23},fst:{era:1,y:1995}},

@@ -61,9 +61,9 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD",urls:{"en":"https://nationaltoday.com/orthodox-new-year/"}},
         {ty:"D",st:{mon:6,d:24},inh:"StJohn"},
         {ty:"D",st:{mon:6,d:29},inh:"StsPeter&Paul"},
-        {ty:"D",st:{mon:8,d:29},inh:"BeheadingOfStJohnTheBaptist"},
-        {inh:"Intercession of the Theotokos", ty:"D",st:{mon:10,d:1}},
-        
+        {ty:"D",st:{mon:8,d:29},inh:"StJohnTheBaptistBeheading"},
+        {ty:"D",st:{mon:10,d:1},inh:"TheotokosIntercession"},
+
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon",urls:{"en":"https://nationaltoday.com/orthodox-pentecost-monday/"}},
         
         {ty:"D",st:{mon:5,d:4},inh:"StFlorian"},
