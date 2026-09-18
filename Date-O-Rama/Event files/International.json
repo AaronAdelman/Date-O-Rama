@@ -1624,7 +1624,7 @@
         {ty:"D",st:{mon:9,d:18},ttls:{"en":"Rice Krispies Treats Day"},nts:{"en":"Rice Krispies Treat Day"},urls:{"en":"https://www.daysoftheyear.com/days/rice-krispies-treats-day/"}},
         {ty:"D",st:{mon:9,d:18},ttls:{"en":"World Bamboo Day"},fst:{era:1,y:2009},mog:"🎍",urls:{"en":"https://worldbamboo.net/world-bamboo-day"},nts:{"en":"Created by the Thai Royal Forest Department"}},
         {ty:"D",st:{mon:9,d:18},ttls:{"en":"World Water Monitoring Day"},urls:{"en":"https://www.daysoftheyear.com/days/water-monitoring-day/"},fst:{era:1,y:2003},mog:"💧",nts:{"en":"Created by America’s Clean Water Foundation"}},
-        {ty:"D",st:{mon:9,d:19},inh:"ITalk Like a Pirate Day",fst:{era:1,y:1995}},
+        {ty:"D",st:{mon:9,d:19},inh:"ITalkLikeAPirateD",fst:{era:1,y:1995}},
         {ty:"D",st:{mon:9,d:19},ttls:{"en":"Aortic Dissection Awareness Day"},urls:{"en":"https://aorticdissectioncharitabletrust.org/aortic-dissection-awareness-day/"},inh:"*MedAw*",fst:{era:1,y:2016},nts:{"en":"Created by Timo Söderlund"}},
         {ty:"D",st:{mon:9,d:2},ttls:{"en":"Bison-ten Yell Day"},urls:{"en":"https://www.daysoftheyear.com/days/bison-ten-yell-day/"},mog:"🦬"},
         {ty:"D",st:{mon:9,d:2},ttls:{"en":"Pierce Your Ears Day"},nts:{"en":"A fashion choice that involves putting holes in one’s body and risking infection."},urls:{"en":"https://www.daysoftheyear.com/days/pierce-your-ears-day/"}},
