@@ -41,9 +41,8 @@ struct ASALocationMenu: View {
                 }
             }
             
-            if includeClockOptions && locationWithClocks.clocks.count > 1 {
             Divider()
-            
+
             Button(
                 action: {
                     if newClockAction != nil {
@@ -58,6 +57,8 @@ struct ASALocationMenu: View {
                 } // HStack
             }
             
+            if includeClockOptions && locationWithClocks.clocks.count > 1 {
+
                 Divider()
                 
                 Button(action: {
