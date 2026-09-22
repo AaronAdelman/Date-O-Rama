@@ -1,6 +1,6 @@
 {
     ttls:{"en":"HoliDailys"},
-    "//":"Jace Shoemaker-Galloway the “Queen of Holidays”",
+// Jace Shoemaker-Galloway the “Queen of Holidays”
     defLocale:"en",
     cal:"gre",
     color:{name:"red"},

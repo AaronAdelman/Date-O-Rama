@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GW"},
-    "//":"Guinea-Bissau",
+// Guinea-Bissau
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

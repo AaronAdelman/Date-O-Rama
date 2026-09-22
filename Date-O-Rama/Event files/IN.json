@@ -3,7 +3,7 @@
 
 {
     ttls:{"*":"IN"},
-    "//":"India",
+// India
     defLocale:"en",
     cal:"gre",
     color:{name:"orange"},

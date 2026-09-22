@@ -1,6 +1,6 @@
 {
     ttls:{"*":"IM"},
-    "//":"Isle of Man",
+// Isle of Man
     defLocale:"en",
     cal:"gre",
     color:{r:0.81,g:0.08,b:0.17},

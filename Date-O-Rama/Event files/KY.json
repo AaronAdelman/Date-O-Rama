@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KY"},
-    "//":"Cayman Islands",
+// Cayman Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.16,b:0.41},

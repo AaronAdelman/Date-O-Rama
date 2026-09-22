@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TH"},
-    "//":"Thailand",
+// Thailand
     "TODO":"Visakha Bucha",
     defLocale:"en",
     cal:"chi*",

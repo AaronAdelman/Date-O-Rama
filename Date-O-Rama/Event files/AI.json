@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AI"},
-    "//":"Anguilla",
+// Anguilla
     defLocale:"en",
     cal:"gre",
     color:{r: 1.00,g:0.60,b:0.00},

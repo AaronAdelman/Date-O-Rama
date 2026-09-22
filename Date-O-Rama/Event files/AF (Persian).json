@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AF"},
-    "//":"Afghanistan",
+// Afghanistan
     defLocale:"en",
     cal:"his",
     color:{r:0.85,g:0.16,b:0.11},

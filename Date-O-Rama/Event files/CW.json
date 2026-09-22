@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CW"},
-    "//":"Curaçao",
+// Curaçao
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.17,b:0.50},

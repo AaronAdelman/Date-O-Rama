@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MW"},
-    "//":"Malawi",
+// Malawi
     "TODO":"Muslim observances",
     defLocale:"en",
     cal:"gre",

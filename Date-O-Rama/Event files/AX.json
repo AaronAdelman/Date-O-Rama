@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AX"},
-    "//":"Åland Islands",
+// Åland Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.39,b:0.68},

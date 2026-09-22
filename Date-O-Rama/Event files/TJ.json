@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TJ"},
-    "//":"Tajikistan",
+// Tajikistan
     "TODO":"Muslim holidays, Navruz Holiday",
     defLocale:"en",
     cal:"gre",

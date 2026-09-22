@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CO"},
-    "//":"Colombia",
+// Colombia
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.80,b:0.00},

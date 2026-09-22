@@ -1,6 +1,6 @@
 {
     ttls:{"*":"FK"},
-    "//":"Falkland Islands (Malvinas)",
+// Falkland Islands (Malvinas)
     "TODO":"Explication of New Year’s Day (in lieu) and Christmas Holiday",
     defLocale:"en",
     cal:"gre",

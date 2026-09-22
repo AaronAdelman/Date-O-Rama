@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PL"},
-    "//":"Poland",
+// Poland
     "TODO":"Majówka, Dożynki",
     defLocale:"en",
     cal:"gre",

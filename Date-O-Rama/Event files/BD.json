@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BD"},
-    "//":"Bangladesh",
+// Bangladesh
     "TODO":"Buddhist and Hindu holidays",
     defLocale:"en",
     cal:"gre",

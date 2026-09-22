@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MO"},
-    "//":"Macau, AKA Macao",
+// Macau, AKA Macao
     "TODO":"Ching Ming Festival",
     defLocale:"en",
     cal:"gre",

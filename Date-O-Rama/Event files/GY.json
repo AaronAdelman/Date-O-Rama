@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GY"},
-    "//":"Guyana",
+// Guyana
     "TODO":"Muslim and Hindu holidays",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SM"},
-    "//":"San Marino",
+// San Marino
     defLocale:"en",
     cal:"gre",
     color:{r:0.61,g:0.80,b:0.92},

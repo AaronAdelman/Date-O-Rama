@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KZ"},
-    "//":"Kazakhstan",
+// Kazakhstan
     defLocale:"en",
     cal:"jul",
     color:{r:0.00,g:0.68,b:0.78},

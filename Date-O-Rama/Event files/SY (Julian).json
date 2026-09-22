@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SY"},
-    "//":"Syria",
+// Syria
     defLocale:"en",
     cal:"jul",
     color:{r:0.94,g:0.20,b:0.25},

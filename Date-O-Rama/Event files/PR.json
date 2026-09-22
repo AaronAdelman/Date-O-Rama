@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PR"},
-    "//":"Puerto Rico",
+// Puerto Rico
     defLocale:"en",
     cal:"gre",
     color:{r:0.10,g:0.22,b:0.36},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"IL"},
-    "//":"Israel",
+// Israel
     defLocale:"he",
     cal:"heb*",
     color:{name:"blue"},

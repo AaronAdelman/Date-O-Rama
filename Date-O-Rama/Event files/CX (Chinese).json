@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CX"},
-    "//":"Christmas Island",
+// Christmas Island
     defLocale:"en",
     cal:"chi*",
     color:{r:0.11,g:0.54,b:0.26},

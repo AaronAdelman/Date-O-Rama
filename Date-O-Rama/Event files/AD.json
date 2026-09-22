@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AD"},
-    "//":"Andorra",
+// Andorra
     defLocale:"en",
     cal:"gre",
     color:{r:0.06,g:0.02,b:0.62},

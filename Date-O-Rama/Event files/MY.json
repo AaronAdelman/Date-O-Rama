@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MY"},
-    "//":"Malaysia",
+// Malaysia
     "TODO":"Muslim observances, Hindu observances",
     defLocale:"en",
     cal:"gre",

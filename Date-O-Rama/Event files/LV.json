@@ -1,6 +1,6 @@
 {
     ttls:{"*":"LV"},
-    "//":"Latvia",
+// Latvia
     "TODO":"Latvian Song and Dance Festival",
     defLocale:"en",
     cal:"gre",

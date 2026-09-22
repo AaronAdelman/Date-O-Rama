@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KW"},
-    "//":"Kuwait",
+// Kuwait
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.59,b:0.37},

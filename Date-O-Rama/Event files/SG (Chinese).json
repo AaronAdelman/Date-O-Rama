@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SG"},
-    "//":"Singapore",
+// Singapore
     defLocale:"en",
     cal:"chi*",
     color:{r: 0.94,g:0.20,b:0.25},

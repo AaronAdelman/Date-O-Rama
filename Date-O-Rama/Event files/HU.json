@@ -1,6 +1,6 @@
 {
     ttls:{"*":"HU"},
-    "//":"Hungary",
+// Hungary
     defLocale:"en",
     cal:"gre",
     color:{r: 0.78,g:0.06,b:0.18},

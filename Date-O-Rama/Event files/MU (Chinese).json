@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MU"},
-    "//":"Mauritius",
+// Mauritius
     defLocale:"en",
     cal:"chi*",
     color:{r:1.00,g:0.82,b:0.00},

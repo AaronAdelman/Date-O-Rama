@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GN"},
-    "//":"Guinea",
+// Guinea
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

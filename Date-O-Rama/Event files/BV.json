@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BV"},
-    "//":"Bouvet Island",
+// Bouvet Island
     defLocale:"en",
     cal:"gre",
     color:{r:0.50,g:0.50,b:0.50},

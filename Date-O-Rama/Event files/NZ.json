@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NZ"},
-    "//":"New Zealand",
+// New Zealand
     defLocale:"en",
     cal:"gre",
     color:{r:0.14,g:0.34,b:0.48},

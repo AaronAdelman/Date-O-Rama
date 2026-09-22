@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SX"},
-    "//":"Sint Maarten",
+// Sint Maarten
     defLocale:"en",
     cal:"gre",
     color:{r:0.38,g:0.69,b:0.88},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KM"},
-    "//":"Comoros",
+// Comoros
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"IN"},
-    "//":"India",
+// India
     defLocale:"en",
     cal:"hiq*",
     color:{r: 0.17,g:0.41,b:0.31},

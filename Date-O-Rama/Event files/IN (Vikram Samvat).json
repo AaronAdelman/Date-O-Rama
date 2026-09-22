@@ -2,7 +2,7 @@
 
 {
     ttls:{"*":"IN"},
-    "//":"India",
+// India
     defLocale:"en",
     cal:"vikram-s",
     color:{name:"orange"},

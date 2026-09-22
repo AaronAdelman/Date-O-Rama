@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AS"},
-    "//":"American Samoa",
+// American Samoa
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.00,b:0.40},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CN"},
-    "//":"China",
+// China
     "TODO":"Muslim holidays?, Tibetan calendar holidays, Yi calendar holidays, possibly more",
     defLocale:"en",
     cal:"gre",

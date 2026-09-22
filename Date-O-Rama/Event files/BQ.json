@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BQ"},
-    "//":"Bonaire, Sint Eustatius, and Saba, AKA Caribbean Netherlands",
+// Bonaire, Sint Eustatius, and Saba, AKA Caribbean Netherlands
     defLocale:"en",
     cal:"gre",
     color:{r:0.68,g:0.11,b:0.16},

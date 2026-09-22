@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CR"},
-    "//":"Costa Rica",
+// Costa Rica
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.13,b:0.36},

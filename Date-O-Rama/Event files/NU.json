@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NU"},
-    "//":"Niue",
+// Niue
     defLocale:"en",
     cal:"gre",
     color:{r: 1.00,g:0.87,b:0.00},

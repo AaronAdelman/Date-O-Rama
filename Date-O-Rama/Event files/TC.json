@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TC"},
-    "//":"Turks and Caicos Islands",
+// Turks and Caicos Islands
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.16,b:0.41},

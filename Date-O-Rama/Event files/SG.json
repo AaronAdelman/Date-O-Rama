@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SG"},
-    "//":"Singapore",
+// Singapore
     "TODO":"Hindu and Muslim holidays",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"DM"},
-    "//":"Dominica",
+// Dominica
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.60,b:0.27},

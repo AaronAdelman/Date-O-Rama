@@ -3,7 +3,7 @@
     defLocale:"en",
     cal:"gre*",
     color:{name:"magenta"},
-    "//":"This event calendar is intended for assorted events which exist in fiction but are seldom, if ever, celebrated in reality.",
+// This event calendar is intended for assorted events which exist in fiction but are seldom, if ever, celebrated in reality.
     evts:[
         {ty:"D",st:{mon:1,d:12},ttls:{"en":"Activation of HAL 9000"},nts:{"en":"From 2001: A Space Odyssey"}},
         {ty:"D",st:{mon:1,d:19},ttls:{"en":"Buffy Summers’ Birthday"},nts:{"en":"From Buffy the Vampire Slayer"},inh:"*BD*"},

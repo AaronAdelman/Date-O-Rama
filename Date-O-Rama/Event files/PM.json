@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PM"},
-    "//":"Saint Pierre and Miquelon",
+// Saint Pierre and Miquelon
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.57,b:0.78},

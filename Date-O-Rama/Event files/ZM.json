@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ZM"},
-    "//":"Zambia",
+// Zambia
     defLocale:"en",
     cal:"gre",
     color:{r:0.10,g:0.54,b:0.0},

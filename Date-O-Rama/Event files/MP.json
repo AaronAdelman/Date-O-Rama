@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MP"},
-    "//":"Northern Mariana Islands",
+// Northern Mariana Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.20,b:0.63},

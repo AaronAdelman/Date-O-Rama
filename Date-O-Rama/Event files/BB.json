@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BB"},
-    "//":"Barbados",
+// Barbados
     defLocale:"en",
     cal:"gre",
     color:{r: 0.0,g:0.13,b:0.41},

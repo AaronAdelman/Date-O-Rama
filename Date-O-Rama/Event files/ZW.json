@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ZW"},
-    "//":"Zimbabwe",
+// Zimbabwe
     defLocale:"en",
     cal:"gre",
     color:{name:"green"},

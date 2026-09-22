@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ER"},
-    "//":"Eritrea",
+// Eritrea
     defLocale:"en",
     cal:"jul",
     color:{r:0.89,g:0.00,b:0.17},

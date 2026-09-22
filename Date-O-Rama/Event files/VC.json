@@ -1,6 +1,6 @@
 {
     ttls:{"*":"VC"},
-    "//":"Saint Vincent and the Grenadines",
+// Saint Vincent and the Grenadines
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.20,b:0.63},

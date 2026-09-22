@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CD"},
-    "//":"Democratic Republic of the Congo, AKA DR Congo",
+// Democratic Republic of the Congo, AKA DR Congo
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.52,b:0.79},

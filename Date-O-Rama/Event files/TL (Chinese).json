@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TL"},
-    "//":"Timor-Leste, AKA East Timor",
+// Timor-Leste, AKA East Timor
     defLocale:"en",
     cal:"chi*",
     color:{r: 0.85,g:0.16,b:0.11},

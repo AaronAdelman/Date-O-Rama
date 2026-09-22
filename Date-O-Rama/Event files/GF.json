@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GF"},
-    "//":"French Guiana",
+// French Guiana
     defLocale:"en",
     cal:"gre",
     color:{r:0.91,g:0.56,b:0.30},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CC"},
-    "//":"Cocos (Keeling) Islands",
+// Cocos (Keeling) Islands
     "TODO":"Islamic holidays?",
     defLocale:"en",
     cal:"gre",

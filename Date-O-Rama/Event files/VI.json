@@ -1,6 +1,6 @@
 {
     ttls:{"*":"VI"},
-    "//":"United States Virgin Islands, AKA US Virgin Islands",
+// United States Virgin Islands, AKA US Virgin Islands
     defLocale:"en",
     cal:"gre",
     color:{r: 0.10,g:0.22,b:0.36},

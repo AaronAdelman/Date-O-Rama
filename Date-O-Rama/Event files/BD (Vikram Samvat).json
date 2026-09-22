@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BD"},
-    "//":"Bangladesh",
+// Bangladesh
     defLocale:"en",
     cal:"vikram-s",
     color:{name:"green"},

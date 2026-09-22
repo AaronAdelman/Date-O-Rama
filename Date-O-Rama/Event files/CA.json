@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CA"},
-    "//":"Canada",
+// Canada
     defLocale:"en",
     cal:"gre",
     othCals:["Hebrew"],

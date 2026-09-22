@@ -1,6 +1,6 @@
 {
     ttls:{"*":"IQ"},
-    "//":"Iraq",
+// Iraq
     defLocale:"en",
     cal:"hiq*",
     color:{r: 0.89,g:0.00,b:0.17},

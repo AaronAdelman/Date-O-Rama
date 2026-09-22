@@ -1,6 +1,6 @@
 {
     ttls:{"*":"HK"},
-    "//":"Hong Kong",
+// Hong Kong
     defLocale:"en",
     cal:"gre",
     color:{r:0.93,g:0.11,b:0.15},

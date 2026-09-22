@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GG"},
-    "//":"Guernsey",
+// Guernsey
     defLocale:"en",
     cal:"gre",
     color:{r:0.91,g:0.07,b:0.18},

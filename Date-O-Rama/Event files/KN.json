@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KN"},
-    "//":"Saint Kitts and Nevis",
+// Saint Kitts and Nevis
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.59,b:0.22},

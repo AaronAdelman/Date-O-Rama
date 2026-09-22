@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SB"},
-    "//":"Solomon Islands",
+// Solomon Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.37,b:0.72},

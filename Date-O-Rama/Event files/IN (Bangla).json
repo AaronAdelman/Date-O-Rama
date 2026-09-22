@@ -16,7 +16,7 @@
 
 {
     ttls:{"*":"IN"},
-    "//":"India",
+// India
     "TODO":"Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)",
     defLocale:"en",
     cal:"bangla-s",

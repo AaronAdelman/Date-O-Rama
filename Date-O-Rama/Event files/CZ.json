@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CZ"},
-    "//":"Czechia, AKA Czech Republic",
+// Czechia, AKA Czech Republic
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.19,b:0.53},

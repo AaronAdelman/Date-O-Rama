@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GS"},
-    "//":"South Georgia and the South Sandwich Islands",
+// South Georgia and the South Sandwich Islands
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.00,b:1.00},

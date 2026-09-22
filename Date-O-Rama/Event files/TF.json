@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TF"},
-    "//":"French Southern Territories",
+// French Southern Territories
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.15,b:0.33},

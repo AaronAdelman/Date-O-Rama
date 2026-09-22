@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TO"},
-    "//":"Tonga",
+// Tonga
     "TODO":"Tongan festivals",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PG"},
-    "//":"Papua New Guinea",
+// Papua New Guinea
     defLocale:"en",
     cal:"gre",
     color:{r:0.78,g:0.06,b:0.18},

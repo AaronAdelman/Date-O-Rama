@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CF"},
-    "//":"Central African Republic",
+// Central African Republic
     "TODO":"Muslim Holidays",
     defLocale:"en",
     cal:"gre",

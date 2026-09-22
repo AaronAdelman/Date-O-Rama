@@ -1,6 +1,6 @@
 {
     ttls:{"*":"RU"},
-    "//":"Russia",
+// Russia
     "TODO":"Maslenitsa",
     defLocale:"en",
     cal:"gre",

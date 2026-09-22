@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GP"},
-    "//":"Guadeloupe",
+// Guadeloupe
     defLocale:"en",
     cal:"gre",
     color:{r: 1.00,g:0.95,b:0.0},

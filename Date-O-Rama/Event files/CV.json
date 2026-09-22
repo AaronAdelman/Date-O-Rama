@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CV"},
-    "//":"Cabo Verde, i.e., Cape Verde",
+// Cabo Verde, i.e., Cape Verde
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.22,b:0.58},

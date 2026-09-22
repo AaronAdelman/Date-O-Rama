@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AR"},
-    "//":"Argentina",
+// Argentina
     "TODO":"Jewish and Muslim holidays?",
     defLocale:"en",
     cal:"gre",

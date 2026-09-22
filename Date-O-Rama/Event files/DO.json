@@ -1,6 +1,6 @@
 {
     ttls:{"*":"DO"},
-    "//":"Dominican Republic",
+// Dominican Republic
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.18,b:0.38},

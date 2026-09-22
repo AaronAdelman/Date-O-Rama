@@ -4,7 +4,7 @@
     cal:"gre*",
     color:{name:"magenta"},
     fst:{era:1,y:1994},
-    "//":"WARNING:  Ms. Koopersmith reportedly has created over 1,900 observances (“holidates”).",
+// WARNING:  Ms. Koopersmith reportedly has created over 1,900 observances (“holidates”).
     evts:[
         {ty:"D",st:{mon:1,d:6},inh:"NSmithD",fst:{era:1,y:1994}},
         

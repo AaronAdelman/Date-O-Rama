@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AE"},
-    "//":"United Arab Emirates, AKA UAE",
+// United Arab Emirates, AKA UAE
     "TODO":"Muslim holidays?",
     defLocale:"en",
     cal:"gre",

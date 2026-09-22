@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ZA"},
-    "//":"South Africa",
+// South Africa
     defLocale:"en",
     cal:"gre",
     color:{r:0.88,g:0.24,b:0.19},

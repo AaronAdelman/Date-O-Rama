@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NG"},
-    "//":"Nigeria",
+// Nigeria
     "TODO":"Muslim observances",
     defLocale:"en",
     cal:"hiq*",

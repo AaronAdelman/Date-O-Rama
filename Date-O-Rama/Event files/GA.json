@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GA"},
-    "//":"Gabon",
+// Gabon
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

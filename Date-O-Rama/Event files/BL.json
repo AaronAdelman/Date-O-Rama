@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BL"},
-    "//":"Saint Barthélemy, AKA Saint Barthelemy",
+// Saint Barthélemy, AKA Saint Barthelemy
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.15,b:0.33},

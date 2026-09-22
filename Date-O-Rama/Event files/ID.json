@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ID"},
-    "//":"Indonesia",
+// Indonesia
     "TODO":"Hindu and Muslim holidays?, Waisak Day, Nyepi/Day of Silence",
     defLocale:"en",
     cal:"gre",

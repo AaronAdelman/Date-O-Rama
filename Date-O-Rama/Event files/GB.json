@@ -1,6 +1,6 @@
 {
     ttls:{"*":"GB"},
-    "//":"United Kingdom, AKA UK",
+// United Kingdom, AKA UK
     defLocale:"en",
     cal:"gre",
     color:{r: 0.72,g:0.17,b:0.21},

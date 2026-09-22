@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AG"},
-    "//":"Antigua and Barbuda",
+// Antigua and Barbuda
     defLocale:"en",
     cal:"gre",
     color:{r:0.82,g:0.15,b:0.19},

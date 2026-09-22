@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MO"},
-    "//":"Macau, AKA Macao",
+// Macau, AKA Macao
     defLocale:"en",
     cal:"chi*",
     color:{r:0.06,g:0.46,b:0.38},

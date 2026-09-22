@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NC"},
-    "//":"New Caledonia",
+// New Caledonia
     defLocale:"en",
     cal:"gre",
     color:{r: 0.98,g:0.98,b:0.00},

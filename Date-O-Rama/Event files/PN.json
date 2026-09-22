@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PN"},
-    "//":"Pitcairn",
+// Pitcairn
     defLocale:"en",
     cal:"gre",
     color:{r: 0.20,g:0.45,b:0.13},

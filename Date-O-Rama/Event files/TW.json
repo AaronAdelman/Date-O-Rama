@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TW"},
-    "//":"Taiwan",
+// Taiwan
     "TODO":"Farmer’s Day, Dongzhi Festival",
     defLocale:"en",
     cal:"gre",

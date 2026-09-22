@@ -1,6 +1,6 @@
 {
     ttls:{"*":"EG"},
-    "//":"Egypt",
+// Egypt
     defLocale:"en",
     cal:"cop",
     othCals:["jul"],

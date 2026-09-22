@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TH"},
-    "//":"Thailand",
+// Thailand
     "TODO":"Buddhist holidays, Muslim holidays, Thai lunar calendar observances, Visakha Bucha Day, Phi Ta Khon, Yi Peng Lantern Festival, Loy Krathong",
     defLocale:"en",
     cal:"gre",

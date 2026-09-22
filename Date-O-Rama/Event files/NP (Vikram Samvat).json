@@ -14,7 +14,7 @@
 
 {
     ttls:{"*":"NP"},
-    "//":"Nepal",
+// Nepal
     "TODO":"Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
     defLocale:"en",
     cal:"vikram-s",

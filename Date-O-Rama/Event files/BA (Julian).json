@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BA"},
-    "//":"Bosnia and Herzegovina",
+// Bosnia and Herzegovina
     defLocale:"en",
     cal:"jul",
     color:{r:0.00,g:0.18,b:0.42},

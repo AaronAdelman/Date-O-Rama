@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BZ"},
-    "//":"Belize",
+// Belize
     "NOTE":"Unclear when Commonwealth Day is",
     defLocale:"en",
     cal:"gre",

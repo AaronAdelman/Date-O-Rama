@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PS"},
-    "//":"Palestinian Authority and the Gaza Strip",
+// Palestinian Authority and the Gaza Strip
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

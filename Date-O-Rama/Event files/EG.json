@@ -1,6 +1,6 @@
 {
     ttls:{"*":"EG"},
-    "//":"Egypt",
+// Egypt
     "TODO":"Muslim holidays, including End of Ramadan and Eid-el-Kibr Holiday",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"UY"},
-    "//":"Uruguay",
+// Uruguay
     defLocale:"en",
     cal:"gre",
     color:{r:1.0,g:0.80,b:0.00},

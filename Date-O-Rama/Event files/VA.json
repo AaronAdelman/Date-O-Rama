@@ -1,6 +1,6 @@
 {
     ttls:{"*":"VA"},
-    "//":"Holy See, AKA Vatican City",
+// Holy See, AKA Vatican City
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.88,b:0.000},

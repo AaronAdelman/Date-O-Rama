@@ -1,6 +1,6 @@
 {
     ttls:{"*":"IS"},
-    "//":"Iceland",
+// Iceland
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.45,b:0.81},

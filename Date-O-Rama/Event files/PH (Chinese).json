@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PH"},
-    "//":"Philippines",
+// Philippines
     defLocale:"en",
     cal:"chi*",
     color:{r:0.96,g:0.83,b:0.29},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"UA"},
-    "//":"Ukraine",
+// Ukraine
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.34,b:0.72},

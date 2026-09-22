@@ -1,6 +1,6 @@
 {
     ttls:{"*":"FO"},
-    "//":"Faroe Islands",
+// Faroe Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.13,g:0.25,b:0.60},

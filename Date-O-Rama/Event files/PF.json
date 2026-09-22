@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PF"},
-    "//":"French Polynesia",
+// French Polynesia
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.61,b:0.06},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PK"},
-    "//":"Pakistan",
+// Pakistan
     defLocale:"en",
     cal:"hiq*",
     color:{r:0.10,g:0.25,b:0.13},

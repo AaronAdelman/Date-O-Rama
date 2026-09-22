@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BF"},
-    "//":"Burkina Faso",
+// Burkina Faso
     "TODO":"Muslim holidays?",
     defLocale:"en",
     cal:"gre",

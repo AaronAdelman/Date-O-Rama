@@ -1,6 +1,6 @@
 {
     ttls:{"*":"UZ"},
-    "//":"Uzbekistan",
+// Uzbekistan
     "TODO":"Muslim observances",
     defLocale:"en",
     cal:"gre",

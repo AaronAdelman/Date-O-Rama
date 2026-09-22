@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ET"},
-    "//":"Ethiopia",
+// Ethiopia
     defLocale:"en",
     cal:"Ethiopic*",
     color:{r: 0.06,g:0.28,b:0.69},

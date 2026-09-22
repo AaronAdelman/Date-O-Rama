@@ -1,6 +1,6 @@
 {
     ttls:{"*":"UM"},
-    "//":"United States Minor Outlying Islands",
+// United States Minor Outlying Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.10,g:0.22,b:0.36},

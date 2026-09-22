@@ -1,6 +1,6 @@
 {
     ttls:{"*":"RE"},
-    "//":"Réunion",
+// Réunion
     defLocale:"en",
     cal:"gre",
     color:{r:0.98,g:0.83,b:0.31},

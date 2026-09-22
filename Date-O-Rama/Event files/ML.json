@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ML"},
-    "//":"Mali",
+// Mali
     "TODO":"Muslim observances",
     defLocale:"en",
     cal:"gre",

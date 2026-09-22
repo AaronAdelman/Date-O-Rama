@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TW"},
-    "//":"Taiwan",
+// Taiwan
     defLocale:"en",
     cal:"chi*",
     color:{r: 0.00,g:0.00,b:0.58},

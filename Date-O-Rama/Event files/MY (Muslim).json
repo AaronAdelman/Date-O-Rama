@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MY"},
-    "//":"Malaysia",
+// Malaysia
     defLocale:"en",
     cal:"hiq*",
     color:{name:"cyan"},

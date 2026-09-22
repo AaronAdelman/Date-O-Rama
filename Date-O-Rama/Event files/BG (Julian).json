@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BG"},
-    "//":"Bulgaria",
+// Bulgaria
     defLocale:"en",
     cal:"jul",
     color:{r:0.00,g:0.69,b:0.40},

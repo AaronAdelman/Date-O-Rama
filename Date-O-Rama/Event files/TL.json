@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TL"},
-    "//":"Timor-Leste, AKA East Timor",
+// Timor-Leste, AKA East Timor
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

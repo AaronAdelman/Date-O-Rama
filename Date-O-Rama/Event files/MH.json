@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MH"},
-    "//":"Marshall Islands",
+// Marshall Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.19,b:0.53},

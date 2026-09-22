@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SV"},
-    "//":"El Salvador",
+// El Salvador
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.37,b:0.72},

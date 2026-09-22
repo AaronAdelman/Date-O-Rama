@@ -1,6 +1,6 @@
 {
     ttls:{"*":"LK"},
-    "//":"Sri Lanka",
+// Sri Lanka
     "TODO":"Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar)",
     defLocale:"en",
     cal:"gre",

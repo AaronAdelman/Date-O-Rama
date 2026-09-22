@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MM"},
-    "//":"Myanmar, AKA Burma",
+// Myanmar, AKA Burma
     "TODO":"Islamic and Buddist holidays, National Day, Full Moon Day of Kasong, Kayin New Year",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BW"},
-    "//":"Botswana",
+// Botswana
     defLocale:"en",
     cal:"gre",
     color:{r:0.67,g:0.79,b:0.91},

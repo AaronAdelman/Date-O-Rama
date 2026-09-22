@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PT"},
-    "//":"Portugal",
+// Portugal
     defLocale:"en",
     cal:"gre",
     color:{r:0.02,g:0.42,b:0.22},

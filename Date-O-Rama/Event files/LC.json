@@ -1,6 +1,6 @@
 {
     ttls:{"*":"LC"},
-    "//":"Saint Lucia, AKA Saint Luica",
+// Saint Lucia, AKA Saint Luica
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.47,b:0.78},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"JO"},
-    "//":"Jordan",
+// Jordan
     defLocale:"en",
     cal:"jul",
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},

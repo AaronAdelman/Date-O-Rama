@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SL"},
-    "//":"Sierra Leone",
+// Sierra Leone
     defLocale:"en",
     cal:"gre",
     color:{r:0.26,g:0.69,b:0.16},

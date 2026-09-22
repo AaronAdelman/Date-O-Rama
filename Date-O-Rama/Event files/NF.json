@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NF"},
-    "//":"Norfolk Island",
+// Norfolk Island
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.47,b:0.20},

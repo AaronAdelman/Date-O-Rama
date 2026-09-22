@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SH"},
-    "//":"Saint Helena, Ascension and Tristan da Cunha",
+// Saint Helena, Ascension and Tristan da Cunha
     "TODO":"Ratting Day",
     defLocale:"en",
     cal:"gre",

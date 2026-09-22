@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MK"},
-    "//":"North Macedonia",
+// North Macedonia
     defLocale:"en",
     cal:"jul",
     color:{r:0.75,g:0.05,b:0.24},

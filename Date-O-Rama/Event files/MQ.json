@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MQ"},
-    "//":"Martinique",
+// Martinique
     defLocale:"en",
     cal:"gre",
     color:{r:0.13,g:0.26,b:0.56},

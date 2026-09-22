@@ -1,7 +1,7 @@
 // TODO:  Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars, Thimphu Drubchen
 {
     ttls:{"*":"BT"},
-    "//":"Bhutan",
+// Bhutan
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.40,b:0.12},

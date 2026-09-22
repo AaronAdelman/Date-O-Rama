@@ -1,6 +1,6 @@
 {
     ttls:{"*":"PA"},
-    "//":"Panama",
+// Panama
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.37,b:0.72},

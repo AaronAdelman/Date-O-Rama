@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MA"},
-    "//":"Morocco",
+// Morocco
     "TODO":"Public holidays on the Muslim calendar?",
     defLocale:"en",
     cal:"gre",

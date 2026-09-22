@@ -1,6 +1,6 @@
 {
     ttls:{"*":"KP"},
-    "//":"North Korea",
+// North Korea
     "TODO":"Korean calendar observances, Chungmyung Day",
     defLocale:"en",
     cal:"gre",

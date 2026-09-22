@@ -1,6 +1,6 @@
 {
     ttls:{"*":"NR"},
-    "//":"Nauru",
+// Nauru
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.14,b:0.41},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CI"},
-    "//":"Côte d’Ivoire, AKA Ivory Coast",
+// Côte d’Ivoire, AKA Ivory Coast
     "TODO":"Muslim holidays",
     defLocale:"en",
     cal:"gre",

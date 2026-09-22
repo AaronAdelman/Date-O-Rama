@@ -1,6 +1,6 @@
 {
     ttls:{"*":"ST"},
-    "//":"São Tomé and Príncipe, AKA Sao Tome and Principe",
+// São Tomé and Príncipe, AKA Sao Tome and Principe
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.59,b:0.22},

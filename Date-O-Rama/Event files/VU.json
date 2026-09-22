@@ -1,6 +1,6 @@
 {
     ttls:{"*":"VU"},
-    "//":"Vanuatu",
+// Vanuatu
     defLocale:"en",
     cal:"gre",
     color:{r:0.96,g:0.82,b:0.29},

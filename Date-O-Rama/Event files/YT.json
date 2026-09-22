@@ -1,6 +1,6 @@
 {
     ttls:{"*":"YT"},
-    "//":"Mayotte",
+// Mayotte
     defLocale:"en",
     cal:"gre",
     color:{r:0.22,g:0.33,b:0.62},

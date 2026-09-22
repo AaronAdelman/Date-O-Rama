@@ -1,6 +1,6 @@
 {
     ttls:{"*":"VG"},
-    "//":"British Virgin Islands",
+// British Virgin Islands
     defLocale:"en",
     cal:"gre",
     color:{r:0.07,g:0.36,b:0.14},

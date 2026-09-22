@@ -1,6 +1,6 @@
 {
     ttls:{"*":"WF"},
-    "//":"Wallis and Futuna",
+// Wallis and Futuna
     defLocale:"en",
     cal:"gre",
     color:{r:0.90,g:0.25,b:0.25},

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"TT"},
-    "//":"Trinidad and Tobago",
+// Trinidad and Tobago
     "TODO":"Muslim and Hindu observances",
     defLocale:"en",
     cal:"gre",

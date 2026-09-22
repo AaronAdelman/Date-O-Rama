@@ -1,6 +1,6 @@
 {
     ttls:{"*":"SI"},
-    "//":"Slovenia",
+// Slovenia
     "TODO":"Carnival",
     defLocale:"en",
     cal:"gre",

@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BS"},
-    "//":"Bahamas",
+// Bahamas
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.66,b:0.81},

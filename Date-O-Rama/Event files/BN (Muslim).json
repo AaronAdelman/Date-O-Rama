@@ -1,6 +1,6 @@
 {
     ttls:{"*":"BN"},
-    "//":"Brunei",
+// Brunei
     defLocale:"en",
     cal:"hiq*",
     color:{r:0.98,g:0.88,b:0.13},

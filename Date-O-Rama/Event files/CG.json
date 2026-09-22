@@ -1,6 +1,6 @@
 {
     ttls:{"*":"CG"},
-    "//":"Congo, AKA Republic of the Congo",
+// Congo, AKA Republic of the Congo
     defLocale:"en",
     cal:"gre",
     color:{r: 1.00,g:0.82,b:0.00},

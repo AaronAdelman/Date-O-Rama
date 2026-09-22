@@ -1,6 +1,6 @@
 {
     ttls:{"*":"AW"},
-    "//":"Aruba",
+// Aruba
     defLocale:"en",
     cal:"gre",
     color:{r:0.25,g:0.56,b:0.87},

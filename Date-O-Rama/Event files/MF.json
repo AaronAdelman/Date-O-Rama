@@ -1,6 +1,6 @@
 {
     ttls:{"*":"MF"},
-    "//":"Saint Martin",
+// Saint Martin
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.15,b:0.33},
