@@ -319,7 +319,7 @@
 
         {ty:"nD",st:{mon:3, d:18},end:{mon:3, d:24},ttls:{"en":"Haru higan","ja":"春彼岸"},mog:"🌸"},
         {ty:"D",st:{misc:"Mar"},ttls:{"en":"Haru shanichi","ja":"春社日"},mog:"⛩️",nts:{"en":"Shinto observance"}},
-        {ty:"D",st:{misc:"Mar"},ttls:{"en":"Higan Chūnichi","ja":"彼岸中日"},mog:"🙏",nts:{"en":"Buddhist observance"}},
+        {ty:"D",st:{misc:"Mar"},inh:"HiganChunichi"},
 
         {ty:"D",st:{mon:5, d:2},ttls:{"en":"Hachijū hachiya","ja":"八十八夜"},mog:"🌱"},
 
@@ -337,12 +337,13 @@
 
         {ty:"nD",st:{mon:9, d:20},end:{mon:9, d:26},ttls:{"en":"Aki higan","ja":"秋彼岸"},mog:"🍂"},
         {ty:"D",st:{misc:"Sep"},ttls:{"en":"Aki shanichi","ja":"秋社日"},mog:"⛩️",nts:{"en":"Shinto observance"}},
-        {ty:"D",st:{misc:"Sep"},ttls:{"en":"Higan Chūnichi","ja":"彼岸中日"},mog:"🙏",nts:{"en":"Buddhist observance"}},
+        {ty:"D",st:{misc:"Sep"},inh:"HiganChunichi"},
     ],
     tpls:{
         "Culture Day":{ty:"D",st:{mon:11,d:3},ttls:{"ar":"يوم الثقافة","az":"Mədəniyyət günü","be":"Дзень культуры","de":"Bunka no Hi","en":"Culture Day","es":"Bunka no hi","fa":"روز فرهنگ","fr":"Bunka no hi","gu":"સંસ્કૃતિ દિવસ","hi":"संस्कृति दिवस","hy":"Մշակույթի օր","id":"Hari Kebudayaan","ja":"文化の日","ko":"문화의 날","ms":"Hari Kebudayaan","pt":"Dia da Cultura","ru":"День культуры","sd":"جاپان جو ثقافتي ڏينهن","th":"วันวัฒนธรรม","tr":"Kültür Günü","uk":"День культури","uz":"Madaniyat kuni","vi":"Ngày văn hóa","zh":"文化之日"},urls:{"en":"https://www.daysoftheyear.com/days/japanese-culture-day/"}},
         "Labor Thanksgiving Day":{ty:"D",st:{mon:11,d:23,wkd:[2, 3, 4,5,6, 7]},urls:{"en":"https://nationaltoday.com/labor-appreciation-day/"},nts:{"en":"Labor Appreciation Day"},ttls:{"bcl":"Aldaw nin Pagpasalamat sa Pagtrabaho","de":"Tag des Dankes für die Arbeit","dtp":"Tadau Monongkotoluod Kukumaraja","en":"Labor Thanksgiving Day","es":"Kinrō Kansha no Hi","fa":"روز تقدیر از زحمتکشان","fr":"Kinrō kansha no hi","id":"Hari Pekerja","ja":"勤労感謝の日","ko":"근로감사의 날","ms":"Hari Kesyukuran Buruh","ru":"День благодарности труду","th":"วันขอบคุณแรงงาน","uk":"День подяки за працю","vi":"Ngày cảm tạ lao động","zh":"勤勞感謝之日"},fst:{era:1,y:1948},mog:"㊘"},
         "Mountain Day (in lieu)":{ttls:{"en":"Mountain Day (in lieu)","he":"יום ההר (במקומו)"},ty:"D",st:{mon:8,d:12,wkd:[2]},urls:{"en":"https://www.daysoftheyear.com/days/mountain-day/"},mog:"🗻"},
         "Coming of Age Day":{ty:"D",st:{mon:1,wkd:[2],nth:2},ttls:{"cs":"Seidžin no hi","de":"Seijin no Hi","en":"Coming of Age Day","es":"Seijin no Hi","eu":"Seijin no Hi","fa":"روز ورود به بزرگسالی","he":"יום ההתבגרות","hu":"A felnőtté válás napja","id":"Hari Kedewasaan","it":"Seijin no hi","ja":"成人の日","ko":"성인의 날","ms":"Hari Orang Dewasa","ru":"День совершеннолетия","ta":"வயதுவந்த நாள்","th":"วันบรรลุนิติภาวะ","tr":"Yetişkinler Günü","uk":"День повноліття","vi":"Ngày Thành Nhân","zh":"成人之日"},urls:{"en":"https://www.daysoftheyear.com/days/coming-of-age-day/"},nts:{"en":"Coming-of-Age Day"}},
+        "HiganChunichi":{ty:"D",st:{misc:"Mar"},ttls:{"en":"Higan Chūnichi","ja":"彼岸中日"},nts:{"en":"Buddhist observance"}},
     }
 }
