@@ -1,4 +1,5 @@
-// TODO:  Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars, Thimphu Drubchen
+// TODO:  Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars, Thimphu Drubchen, Thimphu Tshechu
+// QUESTION:  Is the Bhutanese calendar related to the Chinese calendar?
 {
     ttls:{"*":"BT"},
 // Bhutan
