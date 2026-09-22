@@ -22,6 +22,6 @@
         {ty:"D",st:{misc:"full1",mon:3},ttls:{"en":"Avalokitesvara’s Birthday"},inh:"*BD*"},
     ],
     tpls:{
-        "NirvanaD":{ty:"D",st:{mon:2,d:15},urls:{"en":"https://www.daysoftheyear.com/days/parinirvana-day/"},ttls:{"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"},nts:{"en":"Nirvana Day"}, "//":"Mahayana"},
+        "NirvanaD":{ty:"D",st:{mon:2,d:15},urls:{"en":"https://www.daysoftheyear.com/days/parinirvana-day/"},ttls:{"ar":"يوم النيرفانا","en":"Parinirvana Day","eo":"Nirvana tago","id":"Hari Parinirwana","ja":"涅槃会","nn":"Nirvanadagen","ru":"День Паринирваны","zh":"佛涅煿節"},nts:{"en":"Nirvana Day\nMahayana observances"}},
     }
 }
