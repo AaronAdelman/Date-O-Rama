@@ -2094,7 +2094,7 @@
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Crime and Intelligence Analyst Appreciation Day","he":"יום ההוקרה הלאומי למנתחי פשע ומודיעין"},urls:{"en":"https://fciaa.org/nciaad/"},fst:{era:1,y:2021},nts:{"en":"Created by Florida Crime and Intelligence Analyst Association (FCIAA)"}},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Gibberish Day"},urls:{"en":"https://www.checkiday.com/1c8d5e0f1e0053fb2ec4e450c3b21e02/national-gibberish-day"},fst:{era:1,y:2011}},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National LGBTQ Veteran’s Day"},fst:{era:1,y:2021},inh:"Veterans Day",nts:{"en":"Created by Greshun De Bouse"}},
-        {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Pepperoni Pizza Day"},urls:{"en":"https://www.daysoftheyear.com/days/pepperoni-pizza-day/"},mog:"🍕"},
+        {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Pepperoni Pizza Day"},nts:{"en":"Pepperoni Pizza Day"},urls:{"en":"https://www.daysoftheyear.com/days/pepperoni-pizza-day/"},mog:"🍕"},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Punch Day","he":"יום הפונץ׳ הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/punch-day/"},nts:{"en":"National Rum Punch Day"}},
         {ty:"D",st:{mon:9,d:20},ttls:{"en":"National Queso Day","he":"יום הצ׳ילי קון קסו הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/national-queso-day/"},mog:"🧀"},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"National Beef Stroganoff Day"},urls:{"en":"https://www.checkiday.com/166f43d1603324f8572a6163f933cd2c/national-beef-stroganoff-day"},fst:{era:1,y:2021}},
