@@ -6,7 +6,7 @@
     color:{r:1.00,g:0.80,b:0.00},
     fst:{era:1,y:1810},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Colombia"},
-    "TODO":"Carnaval de Barranquilla",
+// TODO:  Carnaval de Barranquilla
     evts:[
         {ty:"D",st:  {mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},

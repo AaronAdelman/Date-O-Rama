@@ -1,7 +1,7 @@
 {
     ttls:{"*":"ET"},
 // Ethiopia
-    "TODO":"Muslim holidays",
+// TODO:  Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r: 0.06,g:0.28,b:0.69},

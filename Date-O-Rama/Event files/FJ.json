@@ -1,7 +1,7 @@
 {
     ttls:{"*":"FJ"},
 // Fiji
-    "TODO":"Muslim and Hindu holidays",
+// TODO:  Muslim and Hindu holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.38,g:0.71,b:0.90},

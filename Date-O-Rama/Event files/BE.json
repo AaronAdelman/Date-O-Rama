@@ -6,7 +6,7 @@
     color:{r:0.78,g:0.06,b:0.18},
     fst:{era:1,y:1831},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Belgium"},
-    "TODO":"The Carnival of Binche",
+// TODO:  The Carnival of Binche
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},

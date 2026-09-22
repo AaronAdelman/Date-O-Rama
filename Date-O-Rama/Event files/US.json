@@ -1,7 +1,7 @@
 {
     ttls:{"*":"US"},
 // United States of America, AKA USA
-    "TODO":"Oktoberfest?, Opening Day",
+// TODO:  Oktoberfest?, Opening Day
     defLocale:"en",
     cal:"gre",
     othCals:["Hebrew"],

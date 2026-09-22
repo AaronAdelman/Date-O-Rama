@@ -1,7 +1,7 @@
 {
     ttls:{"*":"PS"},
 // Palestinian Authority and the Gaza Strip
-    "TODO":"Muslim holidays",
+// TODO:  Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.50,g:0.50,b:0.50},

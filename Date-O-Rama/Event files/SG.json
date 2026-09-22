@@ -1,7 +1,7 @@
 {
     ttls:{"*":"SG"},
 // Singapore
-    "TODO":"Hindu and Muslim holidays",
+// TODO:  Hindu and Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.94,g:0.20,b:0.25},

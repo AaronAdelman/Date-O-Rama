@@ -1,7 +1,7 @@
 {
     ttls:{"*":"CN"},
 // China
-    "TODO":"Muslim holidays?, Tibetan calendar holidays, Yi calendar holidays, possibly more",
+// TODO:  Muslim holidays?, Tibetan calendar holidays, Yi calendar holidays, possibly more
     defLocale:"en",
     cal:"gre",
     color:{r:0.78,g:0.06,b:0.18},

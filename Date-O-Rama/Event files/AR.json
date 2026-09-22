@@ -1,7 +1,7 @@
 {
     ttls:{"*":"AR"},
 // Argentina
-    "TODO":"Jewish and Muslim holidays?",
+// TODO:  Jewish and Muslim holidays?
     defLocale:"en",
     cal:"gre",
     color:{r:0.42,g:0.64,b:0.89},

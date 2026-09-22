@@ -1,7 +1,7 @@
 {
     ttls:{"*":"SZ"},
 // Eswatini, AKA Swaziland
-    "TODO":"Umhlanga reed dance, Incwala Day",
+// TODO:  Umhlanga reed dance, Incwala Day
     defLocale:"en",
     cal:"gre",
     color:{r:0.24,g:0.52,b:0.69},

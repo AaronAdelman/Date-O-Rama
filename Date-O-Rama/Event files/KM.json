@@ -1,7 +1,7 @@
 {
     ttls:{"*":"KM"},
 // Comoros
-    "TODO":"Muslim holidays",
+// TODO:  Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.30,g:0.55,b:0.17},

@@ -1,7 +1,7 @@
 {
     ttls:{"*":"KE"},
 // Kenya
-    "TODO":"Muslim holidays",
+// TODO:  Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.59,g:0.23,b:0.20},

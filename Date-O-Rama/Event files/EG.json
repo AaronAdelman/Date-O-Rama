@@ -1,7 +1,7 @@
 {
     ttls:{"*":"EG"},
 // Egypt
-    "TODO":"Muslim holidays, including End of Ramadan and Eid-el-Kibr Holiday",
+// TODO:  Muslim holidays, including End of Ramadan and Eid-el-Kibr Holiday
     defLocale:"en",
     cal:"gre",
     color:{r: 0.78,g:0.06,b:0.18},

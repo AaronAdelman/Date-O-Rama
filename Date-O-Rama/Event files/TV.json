@@ -1,7 +1,7 @@
 {
     ttls:{"*":"TV"},
 // Tuvalu
-    "TODO":"Aso o te Tala Lei for Nukulaelae",
+// TODO:  Aso o te Tala Lei for Nukulaelae
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.65,b:0.87},

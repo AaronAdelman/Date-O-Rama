@@ -1,7 +1,7 @@
 {
     ttls:{"*":"MU"},
 // Mauritius
-    "TODO":"Muslim and Hindu holidays",
+// TODO:  Muslim and Hindu holidays
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.82,b:0.00},

@@ -1,7 +1,7 @@
 {
     ttls:{"*":"IR"},
 // Iran
-    "TODO":"Muslim holidays?",
+// TODO:  Muslim holidays?
     defLocale:"en",
     cal:"his",
     color:{r:0.00,g:0.59,b:0.22},

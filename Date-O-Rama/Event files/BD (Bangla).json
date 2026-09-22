@@ -16,7 +16,7 @@
 {
     ttls:{"*":"BD"},
 // Bangladesh
-    "TODO":"Buddhist and Hindu holidays",
+// TODO:  Buddhist and Hindu holidays
     defLocale:"en",
     cal:"bangla-s",
     color:{name:"green"},

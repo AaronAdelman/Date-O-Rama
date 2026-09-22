@@ -1,7 +1,7 @@
 {
     ttls:{"*":"TO"},
 // Tonga
-    "TODO":"Tongan festivals",
+// TODO:  Tongan festivals
     defLocale:"en",
     cal:"gre",
     color:{r:0.94,g:0.20,b:0.25},

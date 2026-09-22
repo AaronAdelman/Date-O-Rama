@@ -1,7 +1,7 @@
 {
     ttls:{"*":"GM"},
 // Gambia
-    "TODO":"Muslim holidays, including extra days off",
+// TODO:  Muslim holidays, including extra days off
     defLocale:"en",
     cal:"gre",
     color:{r:0.94,g:0.20,b:0.25},

@@ -1,7 +1,7 @@
 {
     ttls:{"*":"RU"},
 // Russia
-    "TODO":"Maslenitsa",
+// TODO:  Maslenitsa
     defLocale:"en",
     cal:"gre",
     color:{r: 0.94,g:0.20,b:0.25},

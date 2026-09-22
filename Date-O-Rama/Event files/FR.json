@@ -1,7 +1,7 @@
 {
     ttls:{"*":"FR"},
 // France
-    "TODO":"Mother’s Day may need to be shifted due to Pentecost.",
+// TODO:  Mother’s Day may need to be shifted due to Pentecost.
     defLocale:"en",
     cal:"gre",
     color:{r:0.0,g:0.33,b:0.64},

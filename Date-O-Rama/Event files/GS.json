@@ -4,7 +4,7 @@
     defLocale:"en",
     cal:"gre",
     color:{r: 0.00,g:0.00,b:1.00},
-    "TODO":"King’s Birthday",
+// TODO:  King’s Birthday
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_South_Georgia_and_the_South_Sandwich_Islands"},
     fst:{era:1,y:1985},
     evts:[

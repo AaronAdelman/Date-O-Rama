@@ -1,7 +1,7 @@
 {
     ttls:{"*":"KZ"},
 // Kazakhstan
-    "TODO":"Nauryz Holiday, Muslim holidays",
+// TODO:  Nauryz Holiday, Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.68,b:0.78},

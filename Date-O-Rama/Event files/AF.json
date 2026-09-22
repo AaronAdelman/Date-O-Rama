@@ -1,7 +1,7 @@
 {
     ttls:{"*":"AF"},
 // Afghanistan
-    "TODO":"Public holidays on the Muslim calendar?",
+// TODO:  Public holidays on the Muslim calendar?
     defLocale:"en",
     cal:"gre",
     color:{r:0.85,g:0.16,b:0.11},

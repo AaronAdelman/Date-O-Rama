@@ -1,7 +1,7 @@
 {
     ttls:{"*":"LR"},
 // Liberia
-    "TODO":"Maybe Matilda Newport Day",
+// TODO:  Maybe Matilda Newport Day
     defLocale:"en",
     cal:"gre",
     color:{r:0.10,g:0.22,b:0.36},

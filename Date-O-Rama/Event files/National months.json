@@ -5,7 +5,7 @@
     color:{name:"indigo"},
     mog:"🇺🇸",
     fst:{era:1,y:1776},
-    "TODO":"Prevent Blindness event calendar?  PGA event calendar?",
+// TODO:  Prevent Blindness event calendar?  PGA event calendar?
     evts:[
         {ty:"M",st:{era:1,y:2009,mon:5},inh:"NGuideDogM"},
         {ty:"M",st:{mon:1},ttls:{"en":"California Restaurant Month"},urls:{"en":"https://nationaltoday.com/california-restaurant-month/"}},

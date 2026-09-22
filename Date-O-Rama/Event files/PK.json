@@ -1,7 +1,7 @@
 {
     ttls:{"*":"PK"},
 // Pakistan
-    "TODO":"Muslim holidays, ִHindu holidays, Basant",
+// TODO:  Muslim holidays, ִHindu holidays, Basant
     defLocale:"en",
     cal:"gre",
     color:{r:0.10,g:0.25,b:0.13},

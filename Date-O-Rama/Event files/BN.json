@@ -1,7 +1,7 @@
 {
     ttls:{"*":"BN"},
 // Brunei
-    "TODO":"Muslim holidays?",
+// TODO:  Muslim holidays?
     defLocale:"en",
     cal:"gre",
     color:{r: 0.98,g:0.88,b:0.13},

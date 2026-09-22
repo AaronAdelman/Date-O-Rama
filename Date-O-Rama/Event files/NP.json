@@ -1,7 +1,7 @@
 {
     ttls:{"*":"NP"},
 // Nepal
-    "TODO":"Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year",
+// TODO:  Hindu holidays and other observances scheduled on the Hindu calendar, Musilm holidays, Nepali New Year
     defLocale:"en",
     cal:"gre",
     color:{r:0.86,g:0.08,b:0.24},

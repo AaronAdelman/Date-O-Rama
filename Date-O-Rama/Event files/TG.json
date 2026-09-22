@@ -1,7 +1,7 @@
 {
     ttls:{"*":"TG"},
 // Togo
-    "TODO":"Muslim holidays",
+// TODO:  Muslim holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.94,g:0.20,b:0.25},

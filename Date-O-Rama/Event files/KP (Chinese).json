@@ -1,7 +1,7 @@
 {
     ttls:{"*":"KP"},
 // North Korea
-    "TODO":"Korean calendar observances, Chungmyung Day",
+// TODO:  Korean calendar observances, Chungmyung Day
     defLocale:"en",
     cal:"chi*",
     color:{r: 0.75,g:0.06,b:0.24},

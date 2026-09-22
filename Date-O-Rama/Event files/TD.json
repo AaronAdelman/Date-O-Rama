@@ -1,7 +1,7 @@
 {
     ttls:{"*":"TD"},
 // Chad
-    "TODO":"Muslim Holidays, Muslim days off",
+// TODO:  Muslim Holidays, Muslim days off
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.80,b:0.00},

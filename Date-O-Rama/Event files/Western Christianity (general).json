@@ -3,7 +3,7 @@
     defLocale:"en",
     cal:"gre",
     color:{name:"red"},
-    "TODO":"Semana Santa",
+// TODO:  Semana Santa
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:2},ttls:{"en":"Feast of Saint Gregory Nazianzen"},nts:{"en":"Christmastide (day 9)"}},

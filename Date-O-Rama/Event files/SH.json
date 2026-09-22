@@ -1,7 +1,7 @@
 {
     ttls:{"*":"SH"},
 // Saint Helena, Ascension and Tristan da Cunha
-    "TODO":"Ratting Day",
+// TODO:  Ratting Day
     defLocale:"en",
     cal:"gre",
     color:{r:0.78,g:0.06,b:0.18},

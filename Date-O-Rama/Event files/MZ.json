@@ -1,7 +1,7 @@
 {
     ttls:{"*":"MZ"},
 // Mozambique
-    "TODO":"City-specific holidays",
+// TODO:  City-specific holidays
     defLocale:"en",
     cal:"gre",
     color:{r:0.00,g:0.59,b:0.22},

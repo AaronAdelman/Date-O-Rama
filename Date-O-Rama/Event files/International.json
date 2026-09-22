@@ -4,7 +4,7 @@
     cal:"gre",
     color:{name:"teal"},
     mog:"🌐",
-    "TODO":"World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn); Rotary Club event calendar?  Amnesty International event calendar?, Dr. Jerome Teelucksingh event calendar?, Digital Freedom Foundation event calendar?, In Defense of Animals event calendar?, Winnie the Pooh event calendar?, Polar Bears International event calendar?  Hallmark event calendar?, International Fund for Animal Welfare event calendar (3)?",
+// TODO:  World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn); Rotary Club event calendar?  Amnesty International event calendar?, Dr. Jerome Teelucksingh event calendar?, Digital Freedom Foundation event calendar?, In Defense of Animals event calendar?, Winnie the Pooh event calendar?, Polar Bears International event calendar?  Hallmark event calendar?, International Fund for Animal Welfare event calendar (3)?
     evts:[
         {ty:"D",st:{dOfY:182},ttls:{"en":"Blink-182 Day"},urls:{"en":"https://www.daysoftheyear.com/days/blink-182-day/"},nts:{"en":"Blink 182 Day\nCreated by Mark Hoppus of Blink-182"},fst:{era:1,y:1990}},
         {ty:"D",st:{dOfY:256},inh:"ProgrammersD",fst:{era:1,y:2002}},

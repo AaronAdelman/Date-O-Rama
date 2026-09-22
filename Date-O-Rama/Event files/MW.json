@@ -1,7 +1,7 @@
 {
     ttls:{"*":"MW"},
 // Malawi
-    "TODO":"Muslim observances",
+// TODO:  Muslim observances
     defLocale:"en",
     cal:"gre",
     color:{r:0.81,g:0.07,b:0.15},
