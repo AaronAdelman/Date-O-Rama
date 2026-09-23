@@ -36,7 +36,7 @@
         {ttls:{"en":"Feast of Saint Jerome Emiliani or Saint Josephine Bakhita"}, ty:"D",st:{mon:2,d:8}},
         {ttls:{"en":"Feast of Saint Scholastica"}, ty:"D",st:{mon:2,d:10}},
         
-        {ty:"D",st:{mon:2,d:11},inh:"Our Lady of Lourdes"},
+        {ty:"D",st:{mon:2,d:11},inh:"OurLadyOfLourdes"},
         {ty:"D",st:{mon:2,d:11},ttls:{"ar":"يوم المريض العالمي","ast":"Xornada Mundial del Enfermu","en":"World Day of the Sick","es":"Jornada Mundial del Enfermo","eu":"Gaixoen Munduko Eguna","fa":"روز جهانی بیمار","fr":"Journée mondiale des malades","ga":"Lá Domhanda na nEaslán","hi":"विश्व बीमार दिवस","hr":"Svjetski dan bolesnika","hu":"Betegek világnapja","hy":"Հիվանդի համաշխարհային օր","hyw":"Հիւանդի Համաշխարհային Օր","it":"Giornata mondiale del malato","ja":"世界病者の日","pl":"Światowy Dzień Chorego","ru":"Всемирный день больного","sah":"Ыарыһах күнэ","sk":"Svetový deň chorých","ta":"உலக நோயாளர் நாள்","uk":"Всесвітній день хворого"},fst:{era:1,y:1992},urls:{"en":"https://www.daysoftheyear.com/days/world-day-of-the-sick/",mog:"🤕"},nts:{"en":"Created by Pope John Paul II"}},
         
         {ty:"D",st:{mon:2,d:14},inh:"StsCyril&Methodius"},
@@ -79,7 +79,7 @@
         {ttls:{"en":"Feast of Saints Philip and James"}, ty:"D",st:{mon:5,d:3}},
         {ttls:{"en":"Feast of Saint John of Ávila"}, ty:"D",st:{mon:5,d:10}},
         {ttls:{"en":"Feast of Saints Nereus and Achilleus or Saint Pancras"}, ty:"D",st:{mon:5,d:12}},
-        {inh:"Our Lady of Fatima", ty:"D",st:{mon:5,d:13}},
+        {inh:"OurLadyOfFatima", ty:"D",st:{mon:5,d:13}},
         {ttls:{"en":"Feast of Saint Matthias the Apostle"}, ty:"D",st:{mon:5,d:14}},
         {ttls:{"en":"Feast of Saint John I"}, ty:"D",st:{mon:5,d:18}},
         {ttls:{"en":"Feast of Saint Bernardine of Siena"}, ty:"D",st:{mon:5,d:20}},
@@ -122,7 +122,7 @@
         {ttls:{"en":"Feast of Saint Henry"}, ty:"D",st:{mon:7,d:13}},
         {ttls:{"en":"Feast of Saint Camillus de Lellis"}, ty:"D",st:{mon:7,d:14}},
         {ttls:{"en":"Feast of Saint Bonaventure"}, ty:"D",st:{mon:7,d:15}},
-        {ty:"D",st:{mon:7,d:16},inh:"Our Lady of Mount Carmel",fst:{era:1,y:1726}},
+        {ty:"D",st:{mon:7,d:16},inh:"OurLadyOfMtCarmel",fst:{era:1,y:1726}},
         {ttls:{"en":"Feast of Saint Apollinaris"}, ty:"D",st:{mon:7,d:20}},
         {ttls:{"en":"Feast of Saint Lawrence of Brindisi"}, ty:"D",st:{mon:7,d:21}},
         {ttls:{"en":"Feast of Saint Mary Magdalene"}, ty:"D",st:{mon:7,d:22}},
@@ -177,7 +177,7 @@
 
         {ty:"D",st:{mon:9,d:14},inh:"HolyCross"},
         
-        {ty:"D",st:{mon:9,d:15},inh:"Our Lady of Sorrows"},
+        {ty:"D",st:{mon:9,d:15},inh:"OurLadyOfSorrows"},
         {ty:"D",st:{mon:9,d:16},ttls:{"en":"Feast of Saints Cornelius and Cyprian"}},
         {ty:"D",st:{mon:9,d:17},ttls:{"en":"Feast of Saint Robert Bellarmine or Saint Hildegard of Bingen"},nts:{"en":"Saint Robert Bellarmine’s Day"}},
         {ty:"D",st:{mon:9,d:19},ttls:{"en":"Feast of Saint Januarius"}},
@@ -247,7 +247,7 @@
         {ttls:{"en":"Feast of Saint Juan Diego"}, ty:"D",st:{mon:12,d:9}},
         {ttls:{"en":"Feast of Our Lady of Loreto"}, ty:"D",st:{mon:12,d:10}},
         {ttls:{"en":"Feast of Saint Damasus I"}, ty:"D",st:{mon:12,d:11}},
-        {ty:"D",st:{mon:12,d:12},inh:"Our Lady of Guadalupe",fst:{era:1,y:1531}},
+        {ty:"D",st:{mon:12,d:12},inh:"OurLadyOfGuadalupe",fst:{era:1,y:1531}},
         {inh:"StLucia", ty:"D",st:{mon:12,d:13}},
         {ttls:{"en":"Feast of Saint John of the Cross"}, ty:"D",st:{mon:12,d:14}},
         {ttls:{"en":"Feast of Saint Peter Canisius","he":"החג של פטרוס קניזיוס הקדוש"}, ty:"D",st:{mon:12,d:21}},

@@ -65,7 +65,7 @@
         {inh:"NGuardD", ty:"D",st:{mon:8,d:4}},
         {ty:"D",st:{mon:9,d:8},inh:"Nativity of Mary"},
         {ty:"D",st:{mon:9,d:8},ttls:{"en":"Feast of the Virgen del Valle","es":"Día del Virgen del Valle"}},
-        {ty:"D",st:{mon:9,d:24},inh:"Our Lady of Mercy"},
+        {ty:"D",st:{mon:9,d:24},inh:"OurLadyOfMercy"},
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},
         {ty:"D",st:{mon:11,d:3,thruD:4,wkd:[2]},inh:"AllSoulsD (IL)"},
         {ty:"nD",st:{mon:11,d:17},end:{mon:11,d:19},ttls:{"en":"Feria of La Chinita","es":"Feria de la Chinita"}},

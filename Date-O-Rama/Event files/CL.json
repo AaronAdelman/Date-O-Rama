@@ -20,7 +20,7 @@
         {ty:"D",st:{mon:6,d:29},urls:{"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"},inh:"StsPeter&Paul"},
         {ty:"D",st:{mon:6,d:26,thruD:28,wkd:[2]},urls:{"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"},inh:"StsPeter&Paul (IL)"},
         {ty:"D",st:{mon:6,d:30,thruMon:7,thruD:2,wkd:[2]},urls:{"en":"https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"},inh:"StsPeter&Paul (IL)"},
-        {ty:"D",st:{mon:7,d:16},inh:"Our Lady of Mount Carmel",fst:{era:1,y:2007}},
+        {ty:"D",st:{mon:7,d:16},inh:"OurLadyOfMtCarmel",fst:{era:1,y:2007}},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption",urls:{"en":"https://nationaltoday.com/feast-of-assumption-chile/"}},
         {ty:"D",st:{mon:8,d:20},ttls:{"en":"Nativity of Liberator Bernardo O’Higgins","he":"יום הולדת של המשחרר ברנרדו או׳היגינס","es":"Nacimiento del Prócer de la Independencia"},inh:"*BD*"},
         {ty:"D",st:{mon:9,d:18},inh:"ID",fst:{era:1,y:1810},urls:{"en":"https://www.daysoftheyear.com/days/chiles-independence-day/"}},

@@ -23,7 +23,7 @@
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},
         {ty:"D",st:{mon:11,d:20},inh:"RevolutionD",fst:{era:1,y:1910},last:{era:1,y:2005},urls:{"en":"https://nationaltoday.com/revolution-day-mexico/"}},
         {ty:"D",st:{mon:11,wkd:[2],nth:3},inh:"RevolutionD",fst:{era:1,y:2006},urls:{"en":"https://nationaltoday.com/revolution-day-mexico/"}},
-        {ty:"D",st:{mon:12,d:12},inh:"Our Lady of Guadalupe",fst:{era:1,y:1531}},
+        {ty:"D",st:{mon:12,d:12},inh:"OurLadyOfGuadalupe",fst:{era:1,y:1531}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
         {ty:"D",st:{mon:2,d:20},inh:"ArmyD",fst:{era:1,y:1913}},

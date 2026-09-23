@@ -22,5 +22,6 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Nepal"},
     evts:[
         {ty:"D",st:{mon:5,d:18},ttls:{"en":"Haryali Teej"}, urls:{"en":"https://www.officeholidays.com/holidays/nepal/teej"}},
+        {ty:"D",st:{mon:6,d:29},ttls:{"as":"ইন্দ্ৰ যাত্ৰা","bn":"ইন্দ্র যাত্রা","dty":"इन्द्रजात्रा","en":"Indra Jatra","id":"Indra Jatra","ja":"インドラ・ジャートラー","mai":"इन्द्रजात्रा","ne":"इन्द्रजात्रा","new":"येँया","sat":"ᱤᱱᱫᱽᱨᱚ ᱡᱟᱛᱨᱟ","ta":"இந்திர யாத்திரை"}, urls:{"en":"https://www.officeholidays.com/holidays/nepal/kathmandu-valley/indra-jatra"}},
     ]
 }
