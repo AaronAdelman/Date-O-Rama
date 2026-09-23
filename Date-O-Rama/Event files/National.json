@@ -2116,7 +2116,7 @@
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"National Field Marketer’s Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-field-marketers-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Splash"}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"National Go With Your Gut Day"},urls:{"en":"https://nationaltoday.com/national-go-with-your-gut-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Randy Jackson"}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"National Great American Pot Pie Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-great-american-pot-pie-day/"},fst:{era:1,y:2002},mog:"🥧",nts:{"en":"Created by Marie Callender’s"}},
-        {ty:"D",st:{mon:9,d:23},ttls:{"en":"National Temperature Control Day"},urls:{"en":"https://nationaltoday.com/national-temperature-control-day/"}},
+        {ty:"D",st:{misc:"Sep"},ttls:{"en":"National Temperature Control Day"},urls:{"en":"https://nationaltoday.com/national-temperature-control-day/"}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"Redhead Appreciation Day","he":"יום הג׳ינג׳ים"},urls:{"en":"https://www.daysoftheyear.com/days/redhead-appreciation-day/"},mog:"👨‍🦰👩‍🦰"},
         {ty:"D",st:{mon:9,d:24},ttls:{"en":"National Cherries Jubilee Day"},urls:{"en":"https://www.daysoftheyear.com/days/cherries-jubilee-day/"},mog:"🍒"},
         {ty:"D",st:{mon:9,d:24},ttls:{"en":"National Horchata Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-horchata-day/"},fst:{era:1,y:2019},nts:{"en":"Created by ampm"}},

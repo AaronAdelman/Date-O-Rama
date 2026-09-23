@@ -1,4 +1,18 @@
-// TODO:  Tithi of Srimatna Sankardev (date needs research)
+//S.No    Vikram Samvat months
+//1    Caitra or Chait or Chaitra
+//2    Vaiśākha or Baisakh
+//3    Jyēṣṭha or Jestha or Jeth
+//4    Āṣāḍha or Asar or Asadh
+//5    Śrāvaṇa or Saaun or Shrawan
+//6    Bhādrapada or Bhādra or Bhadau
+//7    Āśvin or Aasoj or Ashwin
+//8    Kārtika or Kattik or Kartik
+//9    Agrahāyaṇa or Mangsir or Mārgaśīrṣa or Aghan
+//10   Pauṣa or Paush or Poush or Push
+//11   Māgha or Maagh
+//12   Phālguna or Falgun
+
+// TODO:  Tithi of Srimatna Sankardev (date needs research), Janmostav of Srimatna Sankardev (date needs research)
 
 {
     ttls:{"*":"IN"},
@@ -11,5 +25,7 @@
         {ty:"nD",st:{mon:6,d:8,durD:2},inh:"Janmashtami"},
         {ty:"nD",st:{mon:6,d:18,durD:5},inh:"GaneshChaturthi"},
         {ty:"D",st:{mon:6,d:20},inh:"Nuakhai"},
+        {ty:"D",st:{mon:6,d:25},ttls:{"en":"Ramdev Jayanti and Teja Dashmi"},urls:{"en":"https://www.officeholidays.com/holidays/india/ramdev-jayanti-teja-dashmi"},locs:{"en":"Rajasthan"}},
+        {ty:"D",st:{mon:6,d:26},ttls:{"as":"কৰম পূজা","bn":"করম পরব","en":"Karam festival","hi":"करम पर्व","pa":"ਕਰਮ ਤਿਉਹਾਰ","sat":"ᱠᱟᱨᱟᱢ ᱵᱚᱝᱜᱟ ᱯᱟᱨᱟᱵᱽ","ta":"கரம்","ceb":"Karam","de":"Karam","fr":"Karam","it":"Karam","nds":"Karam","ru":"Карам","uk":"Карам"},urls:{"en":"https://www.officeholidays.com/holidays/india/india-karam"}},
     ]
 }
