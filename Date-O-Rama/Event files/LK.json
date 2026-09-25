@@ -1,7 +1,7 @@
 {
     ttls:{"*":"LK"},
 // Sri Lanka
-// TODO:  Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar)
+// TODO:  Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar), Binara Full Moon Poya
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.82,b:0.00},
@@ -15,11 +15,11 @@
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
+        {ty:"D",st:{mon:5,d:22},inh:"NHeroesD",fst:{era:1,y:1819}},
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
         {ty:"D",st:{mon:9,d:15},inh:"EngineersD"},
-        {inh:"ChildrensD", ty:"D",st:{mon:10,d:1}},
-        {ty:"D",st:{mon:5,d:22},inh:"NHeroesD",fst:{era:1,y:1819}},
+        {ty:"D",st:{mon:10,d:1},inh:"ChildrensD"},
         {ty:"D",st:{mon:10,d:1},inh:"NCoffeeD"},
         {ty:"D",st:{mon:12,d:15},inh:"ITeaD",fst:{era:1,y:2005}},
         
