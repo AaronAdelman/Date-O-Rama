@@ -127,7 +127,7 @@
         {ty:"D",st:{mon:9,d:15},inh:"Greenpeace Day",fst:{era:1,y:2011}},
         {ty:"D",st:{mon:9,d:27},ttls:{"en":"National No Excuses Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-no-excuses-day/"},fst:{era:1,y:2019},nts:{"en":"Created by SCENE"}},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:9,d:30},ttls:{"en":"Orange Shirt Day","fr":"Journée nationale de la vérité et de la réconciliation"},fst:{era:1,y:2013},urls:{"en":"https://orangeshirtday.org/orange-shirt-day/"},nts:{"en":"National Day for Truth and Reconciliation\nTruth and Reconciliation Day\nCreated by Phyllis Webstad"}},
+        {ty:"D",st:{mon:9,d:30},ttls:{"ar":"يوم القميص البرتقالي","cs":"Národní den pro pravdu a usmíření","en":"National Day for Truth and Reconciliation","fr":"Journée nationale de la vérité et de la réconciliation","it":"Giornata della verità e della riconciliazione","ms":"Hari Baju Jingga","ru":"Национальный день истины и примирения","zh":"全国真相与和解日"},fst:{era:1,y:2013},urls:{"en":"https://orangeshirtday.org/orange-shirt-day/"},nts:{"en":"Orange Shirt Day\nTruth and Reconciliation Day\nT&R Day\nCreated by Phyllis Webstad"}},
         {ty:"M",st:{mon:11},ttls:{"en":"Indigenous Disability Awareness Month"}},
         {ty:"M",st:{mon:4},inh:"DalitHistoryM",fst:{era:1,y:2022}},
         {ty:"M",st:{mon:5},inh:"NServiceDogEyeExamM",fst:{era:1,y:2008},mog:"🐕‍🦺"},
