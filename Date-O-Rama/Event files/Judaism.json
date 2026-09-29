@@ -58,6 +58,27 @@
         {ttls:{"he":"שמחת תורה","en":"Simḥath Torah"}, excludeRgns:["IL","PS"], ty:"D",st:{mon:1,d:23},urls:{"en":"https://www.ou.org/holidays/category/simchat-torah/"}},
         {ttls:{"he":"אסרו חג שמיני עצרת","en":"’Isru Ḥagh Shemini ‘Aṣereth"},rgns:["IL","PS"], ty:"D",st:{mon:1,d:23}},
         {ttls:{"he":"אסרו חג שמחת תורה","en":"’Isru Ḥagh Simḥath Torah"}, excludeRgns:["IL","PS"], ty:"D",st:{mon:1,d:24}},
+
+        {ty:"D",st:{mon:1,d:15}, ttls:{"he":"אושפיזין:  אברהם","en":"’Ushpizin:  ’Avraham"}},
+        {ty:"D",st:{mon:1,d:16}, ttls:{"he":"אושפיזין:  יצחק","en":"’Ushpizin:  Yiṣḥaq"}},
+        {ty:"D",st:{mon:1,d:17}, ttls:{"he":"אושפיזין:  יעקב","en":"’Ushpizin:  Ya‘aqov"}},
+        {ty:"D",st:{mon:1,d:18}, ttls:{"he":"אושפיזין:  יוסף","en":"’Ushpizin:  Yosef"}},
+        {ty:"D",st:{mon:1,d:19}, ttls:{"he":"אושפיזין:  משה","en":"’Ushpizin:  Mosheh"}},
+        {ty:"D",st:{mon:1,d:20}, ttls:{"he":"אושפיזין:  אהרן","en":"’Ushpizin:  ’Aharon"}},
+        {ty:"D",st:{mon:1,d:21}, ttls:{"he":"אושפיזין:  דוד","en":"’Ushpizin:  Dawidh"}},
+
+        {ty:"D",st:{mon:1,d:15,wkd:[2,3,5]},inh:"Hosha‘noth:  LeMa‘an ’Amittakh"},
+        {ty:"D",st:{mon:1,d:15,thruD:20,wkd:[7]},ttls:{"he":"הושענות:  אום נצורה","en":"Hosha‘noth:  ’Om Neṣurah"}},
+        {ty:"D",st:{mon:1,d:16,wkd:[1]},inh:"Hosha‘noth:  LeMa‘an ’Amittakh"},
+        {ty:"D",st:{mon:1,d:16,wkd:[3,4,6]},inh:"Hosha‘noth:  ’Even Shethiyyah"},
+        {ty:"D",st:{mon:1,d:17,wkd:[2,4,5]},inh:"Hosha‘noth:  ’E‘erokh Shu‘i"},
+        {ty:"D",st:{mon:1,d:18,wkd:[1]},inh:"Hosha‘noth:  ’E‘erokh Shu‘i"},
+        {ty:"D",st:{mon:1,d:18,wkd:[3]},inh:"Hosha‘noth:  ’Even Shethiyyah"},
+        {ty:"D",st:{mon:1,d:18,wkd:[5]},ttls:{"he":"הושענות:  אום אני חומה","en":"Hosha‘noth:  ’Om ’Ani Ḥomah"}},
+        {ty:"D",st:{mon:1,d:18,wkd:[6]},inh:"Hosha‘noth:  Qel leMosha‘oth"},
+        {ty:"D",st:{mon:1,d:19,wkd:[2,4,6]},inh:"Hosha‘noth:  Qel leMosha‘oth"},
+        {ty:"D",st:{mon:1,d:20,wkd:[1,3,5]},ttls:{"he":"הושענות:  אדון המושיע","en":"Hosha‘noth:  ’Adhon hamMoshia‘"}},
+
         {ttls:{"he":"ראש חודש חשון","en":"Ro’sh Ḥodhesh Ḥeshwan"}, ty:"nD",st:{mon:1,d:30},end:{mon:2,d:1},inh:"*ראש חודש*"},
         {inh:"ראש חודש כסלו", ty:"nD",st:{mon:2,d:30, yLens:[355, 385]},end:{mon:3,d:1}},
         {inh:"ראש חודש כסלו", ty:"D",st:{mon:3,d:1, yLens:[353, 354, 383, 384]}},
@@ -725,5 +746,10 @@
         "ראש חודש כסלו":{ttls:{"he":"ראש חודש כסלו","en":"Ro’sh Ḥodhesh Kislew"}, ty:"nD",st:{mon:2,d:30, yLens:[355, 385]},end:{mon:3,d:1},inh:"*ראש חודש*"},
         "תענית אסתר":{ttls:{"he":"תענית אסתר","en":"Fast of ’Ester"}, ty:"D",st:{mon:7,d:13,wkd:[1, 2, 3, 4,5,6]},urls:{"en":"https://www.ou.org/holidays/category/fast-of-esther/"}},
         "תענית בכורות":{ttls:{"he":"תענית בכורות","en":"Fast of the Firstborn"}, ty:"D",st:{mon:8,d:14,wkd:[1, 2, 3, 4,5,6]}},
+"Hosha‘noth:  LeMa‘an ’Amittakh":{ty:"D",st:{mon:1,d:15,wkd:[2,3,5]}, ttls:{"he":"הושענות:  למען אמתך","en":"Hosha‘noth:  LeMa‘an ’Amittakh"}},
+"Hosha‘noth:  ’E‘erokh Shu‘i":{ty:"D",st:{mon:1,d:17,wkd:[2,4,5]}, ttls:{"he":"הושענות:  אערוך שועי","en":"Hosha‘noth:  ’E‘erokh Shu‘i"}},
+"Hosha‘noth:  ’Even Shethiyyah":{ty:"D",st:{mon:1,d:16,wkd:[3,4,6]},ttls:{"he":"הושענות:  אבן שתיה","en":"Hosha‘noth:  ’Even Shethiyyah"}},
+"Hosha‘noth:  Qel leMosha‘oth":{ty:"D",st:{mon:1,d:18,wkd:[6]},ttls:{"he":"הושענות:  א׳ למושעות","en":"Hosha‘noth:  Qel leMosha‘oth"}},
+
     }
 }

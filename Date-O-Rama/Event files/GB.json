@@ -237,7 +237,7 @@
         {ty:"D",st:{mon:9,d:28},ttls:{"en":"British Home Child Day"},urls:{"en":"https://www.ola.org/en/legislative-business/bills/parliament-39/session-2/bill-12"},mog:"👦👧",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:9,d:29,thruD:30,wkd:[2]},inh:"AskAStupidQD",fst:{era:1,y:2009}},
         {ty:"D",st:{mon:9,d:3},ttls:{"en":"Merchant Navy Day"},urls:{"en":"https://www.daysoftheyear.com/days/merchant-navy-day/"},fst:{era:1,y:2000},mog:"⚓"},
-        {ty:"D",st:{mon:9,d:30},ttls:{"en":"Dog Separation Anxiety Day"},nts:{"en":"Dog Separation Anxiety Day\nCreated by Jo Sellers"},urls:{"en":"https://www.pippinpetsdogtraining.co.uk/dog-separation-anxiety-awareness-day/"},mog:"🐾"},
+        {ty:"D",st:{mon:9,d:30},ttls:{"en":"Dog Separation Anxiety Awareness Day"},nts:{"en":"Dog Separation Anxiety Day\nCreated by Jo Sellers"},urls:{"en":"https://www.pippinpetsdogtraining.co.uk/dog-separation-anxiety-awareness-day/"},mog:"🐾"},
         {ty:"D",st:{mon:9,d:6},ttls:{"en":"Colour Blind Awareness Day"},urls:{"en":"https://www.colourblindawareness.org/about-us/campaigns/colour-blind-awareness-day/"},nts:{"en":"National Color Blind Awareness Day"},fst:{era:1,y:2015},inh:"*MedAw*",mog:"🦋",nts:{"en":"Created by Colour Blind Awareness"}},
         {ty:"D",st:{mon:9,d:7},ttls:{"en":"Superhuman Day"},urls:{"en":"https://www.daysoftheyear.com/days/superhuman-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Channel 4"}},
         {ty:"D",st:{mon:9,d:9},ttls:{"en":"Emergency Services Day"},urls:{"en":"https://www.999day.org.uk/"},fst:{era:1,y:2016},nts:{"en":"999 Day\nCreated by Tom Scholes-Fogg"}},
