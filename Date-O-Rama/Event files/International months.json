@@ -72,8 +72,8 @@
         {ty:"M",st:{mon:10},ttls:{"en":"Sensory Awareness Month"},nts:{"en":"Sensory Processing Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/sensory-awareness-month/"},fst:{era:1,y:2018},inh:"*MedAw*",nts:{"en":"Created by the STAR Institute, CPotential, etc."}},
         {ty:"M",st:{mon:10},ttls:{"en":"Spinach Lovers Month"},urls:{"en":"https://www.daysoftheyear.com/days/spinach-lovers-month/"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Squirrel Awareness Month"},urls:{"en":"http://www.thesquirrelloversclub.com/october-is-always-squirrel-awareness-month.html"},fst:{era:1,y:1995},mog:"🐿",nts:{"en":"Created by Greg Bassett of thehe Squirrel Lover’s Club"}},
-        {ty:"M",st:{mon:10},ttls:{"en":"SUDEP Action Month"},urls:{"en":"https://www.daysoftheyear.com/days/sudep-action-month/"},fst:{era:1,y:2017},inh:"*MedAw*"},
-        {ty:"M",st:{mon:10},ttls:{"en":"The Big Draw"},urls:{"en":"https://thebigdraw.org/"},fst:{era:1,y:2000},mog:"✍️"},
+        {ty:"M",st:{mon:10},ttls:{"en":"SUDEP Action Month"},nts:{"en":"SUDEP Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/sudep-action-month/"},fst:{era:1,y:2017},inh:"*MedAw*"},
+        {ty:"M",st:{mon:10},ttls:{"en":"The Big Draw"},urls:{"en":"https://thebigdraw.org/"},fst:{era:1,y:2000},mog:"✍️",nts:{"en":"Created by the Campaign for Drawing"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Vegetarian Month","he":"חודש הצמחונים"},urls:{"en":"https://www.daysoftheyear.com/days/vegetarian-month/"},mog:"🌶",fst:{era:1,y:1977},nts:{"en":"Created by the North American Vegetarian Society (NAVS)"}},
         {ty:"M",st:{mon:10},ttls:{"en":"World Animal Month"},urls:{"en":"https://www.worldanimalday.org.uk/"},fst:{era:1,y:1931},mog:"🐍"},
         {ty:"M",st:{mon:10},ttls:{"en":"Menopause Month"},urls:{"en":"https://www.daysoftheyear.com/days/menopause-month/"},inh:"*MedAw*",fst:{era:1,y:2009},nts:{"en":"World Menopause Month\nCreated by the International Menopause Society"}},
@@ -351,7 +351,6 @@
         {ty:"M",st:{mon:10},ttls:{"en":"Rhubarb Month"},urls:{"en":"https://www.daysoftheyear.com/days/rhubarb-month/"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Rhizomes and Persimmons Month"},urls:{"en":"https://www.daysoftheyear.com/days/rhizomes-and-persimmons-month/"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Raptor Month"},urls:{"en":"https://www.daysoftheyear.com/days/raptor-month/"},nts:{"en":"Created by The Avian Promise, Inc."},fst:{era:1,y:2006},mog:"🦅"},
-        {ty:"M",st:{mon:10},ttls:{"en":"Pear and Pineapple Month"},urls:{"en":"https://www.daysoftheyear.com/days/pear-and-pineapple-month/"},nts:{"en":"Created by USA Pears"},fst:{era:1,y:2011},mog:"🍐🍍"},
         {ty:"M",st:{mon:10},ttls:{"en":"Organize Your Medical Information Month"},urls:{"en":"https://www.daysoftheyear.com/days/organize-your-medical-information-month/"},inh:"*MedAw*"},
 
         {ty:"M",st:{mon:11},ttls:{"en":"COPD Awareness Month"},nts:{"en":"Chronic Obstructive Pulmonary Disease Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/copd-awareness-month/"},mog:"🫁",inh:"*MedAw*"},
