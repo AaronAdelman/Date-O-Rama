@@ -336,7 +336,7 @@
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"National Good Buddy Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-good-buddy-day/"},fst:{era:1,y:2004},nts:{"en":"May be a reboot of Ten-Four Day."}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"National Truckers Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-truckers-day/"},fst:{era:1,y:2020},nts:{"en":"National Truckers Appreciation Day\nCreated by Bill Stearnes"}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"Ship in A Bottle Day"},urls:{"en":"https://www.daysoftheyear.com/days/ship-in-a-bottle-day/"},fst:{era:1,y:2013},mog:"🚢"},
-        {ty:"D",st:{mon:10,d:4},ttls:{"en":"Ten-Four Day"},nts:{"en":"10-4 Day"},urls:{"en":"https://www.checkiday.com/203601caeea80077e351cea442ed5d95/ten-four-day"},fst:{era:1,y:1978},nts:{"en":"Created by Jimmy Carter"}},
+        {ty:"D",st:{mon:10,d:4},ttls:{"en":"Ten-Four Day"},nts:{"en":"10-4 Day\nNational 10-4 Day "},urls:{"en":"https://nationaldaycalendar.com/celebrations/national-10-4-day"},fst:{era:1,y:1978},nts:{"en":"Created by Jimmy Carter"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Above the Bus Day"},urls:{"en":"https://evanwildstein.com/national-above-the-bus-day/"},fst:{era:1,y:2021},mog:"🚌",nts:{"en":"Created by Evan Wildstein"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Apple Betty Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-apple-betty-day/"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Caribbean Civility Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-caribbean-civility-day/"},fst:{era:1,y:2020},nts:{"en":"Created by the World Civility Presidential Club"}},
