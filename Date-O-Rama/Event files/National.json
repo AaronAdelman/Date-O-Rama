@@ -331,7 +331,7 @@
         {ty:"D",st:{mon:10,d:30},ttls:{"en":"National Treat Your Pet Day"},urls:{"en":"https://nationaltoday.com/national-treat-your-pet-day/"},fst:{era:1,y:2021},mog:"😼"},
         {ty:"D",st:{mon:10,d:4,thruD:10,wkd:[4]},ttls:{"en":"National Depression Screening Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-depression-screening-day/"},fst:{era:1,y:1991},nts:{"en":"Created by Dr. Jacobs"}},
         {ty:"D",st:{mon:10,d:4},inh:"NTacoD",urls:{"en":"https://www.daysoftheyear.com/days/taco-day/"},fst:{era:1,y:2009}},
-        {ty:"D",st:{mon:10,d:4},ttls:{"bcl":"National Vodka Day","en":"National Vodka Day","he":"יום הוודקה הלאומי"},urls:{"en":"http://www.nationalvodkaday.com/"},fst:{era:1,y:2009}},
+        {ty:"D",st:{mon:10,d:4},ttls:{"bcl":"National Vodka Day","en":"National Vodka Day","he":"יום הוודקה הלאומי"},urls:{"en":"http://www.nationalvodkaday.com/"},fst:{era:1,y:2009},mog:"🍸"},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"National Golf Lover’s Day"},nts:{"en":"National Golf Day\nNational Golf Lovers Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-golf-lovers-day/"},mog:"⛳️"},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"National Good Buddy Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-good-buddy-day/"},fst:{era:1,y:2004},nts:{"en":"May be a reboot of Ten-Four Day."}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"National Truckers Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-truckers-day/"},fst:{era:1,y:2020},nts:{"en":"National Truckers Appreciation Day\nCreated by Bill Stearnes"}},

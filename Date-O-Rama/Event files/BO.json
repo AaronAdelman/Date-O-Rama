@@ -25,7 +25,7 @@
         {ty:"D",st:{mon:9,d:14},ttls:{"en":"Cochabamba Day","he":"יום קוצ׳במבה","es":"Día del departamento de Cochabamba"},urls:{"en":"https://www.officeholidays.com/holidays/bolivia/cochabamba/cochabamba-day"}},
         {ty:"D",st:{mon:9,d:15,wkd:[2]},ttls:{"en":"Cochabamba Day (in lieu)","he":"יום קוצ׳במבה (במקומו)"},urls:{"en":"https://www.officeholidays.com/holidays/bolivia/cochabamba/cochabamba-day"}},
         {ty:"D",st:{mon:9,d:24},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/bolivia/santa-cruz/bolivia-regional-holiday"}, locs:{"en":"Santa Cruz"}},
-        {ty:"D",st:{mon:10,d:11},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/bolivia/pando/bolivia-regional-holiday"}, locs:{"en":"Pando"}},
+        {ty:"D",st:{mon:10,d:11},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/bolivia/pando/bolivia-regional-holiday"}, locs:{"en":"Pando"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},
         {ty:"D",st:{mon:11,d:10},urls:{"en":"https://www.officeholidays.com/holidays/bolivia/potosi/bolivia-regional-holiday"},inh:"PublicHol", locs:{"en":"Potosí"}},
         {ty:"D",st:{mon:11,d:18},urls:{"en":"https://www.officeholidays.com/holidays/bolivia/el-beni/bolivia-regional-holiday"},inh:"PublicHol", locs:{"en":"El Beni"}},
@@ -48,7 +48,6 @@
         {ty:"D",st:{era:1,y:2023,mon:2,d:17},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"}},
 
         {ty:"D",st:{mon:9,d:24},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023},locs:{"en":"Santa Cruz"}},
-        {ty:"D",st:{mon:10,d:11},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:11,d:10},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:11,d:18},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023}},
    ]
