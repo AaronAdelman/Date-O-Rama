@@ -64,7 +64,7 @@
         {ty:"D",st:{mon:8,d:28},ttls:{"en":"Ayyankali Jayanthi"}, urls:{"en":"https://www.officeholidays.com/holidays/india/kerala/ayankali-jayanthi"}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"Maharaja Hari Singh Birth Anniversary"}, urls:{"en":"https://www.officeholidays.com/holidays/india/jammu-and-kashmir/maharaja-hari-singh-birth-anniversary"},inh:"*BD*",fst:{era:1,y:2022}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"Haryana Heroes’ Martyrdom Day"}, urls:{"en":"https://www.officeholidays.com/holidays/india/haryana/haryanas-heroes-martyrdom-day"}},
-        {ty:"D",st:{mon:10,d:2},ttls:{"en":"Gandhi Jayanti"},fst:{era:1,y:1869}, urls:{"en":"https://www.daysoftheyear.com/days/mahatma-gandhi/"},inh:"*BD*",nts:{"en":"Mahatma Gandhi’s Birthday"}},
+        {ty:"D",st:{mon:10,d:2},ttls:{"ar":"غاندي جايانتي","as":"গান্ধী জয়ন্তী","bh":"गाँधी जयंती","bn":"গান্ধী জয়ন্তী","de":"Gandhi Jayanti","dty":"गान्धी जयन्ती","el":"Γκάντι Τζαγιάντι","en":"Gandhi Jayanti","es":"Gandhi Jayanti","eu":"Gandhi Jayanti","fa":"گاندی جایانتی","fr":"Gandhi Jayanti","gu":"ગાંધી જયંતી","ha":"Gandhi Jayanti","hi":"गांधी जयंती","id":"Gandhi Jayanti","ja":"ガンディー生誕記念日","kn":"ಗಾಂಧಿ ಜಯಂತಿ","ko":"간디 자얀티","ks":"گانٛدھی جَیانتی","mai":"गान्धी जयन्ती","ml":"ഗാന്ധിജയന്തി","mr":"गांधी जयंती","ms":"Gandhi Jayanti","nb":"Mahatma Gandhis fødselsdag","ne":"गान्धी जयन्ती","nl":"Gandhi Jayanti","or":"ଗାନ୍ଧୀ ଜୟନ୍ତୀ","pa":"ਗਾਂਧੀ ਜਯੰਤੀ","ru":"День рождения Ганди","sa":"गान्धिजयन्ती","sv":"Gandhi Jayanti","ta":"காந்தி ஜெயந்தி","tcy":"ಗಾಂಧಿ ಜಯಂತಿ","te":"గాంధీ జయంతి","uk":"Ґанді-Джаянті","ur":"گاندھی جینتی","zh":"甘地诞辰日"},fst:{era:1,y:1869}, urls:{"en":"https://www.daysoftheyear.com/days/mahatma-gandhi/"},inh:"*BD*",nts:{"en":"Mahatma Gandhi’s Birthday"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"Birthday of Nar Bahadur Bhandari"}, urls:{"en":"https://www.officeholidays.com/holidays/india/sikkim/birthday-of-nar-bahadur-bhandari"},inh:"*BD*"},
         {ty:"D",st:{mon:10,d:26},inh:"AccessionD",fst:{era:1,y:2020}, urls:{"en":"https://nationaltoday.com/accession-day/"}},
         {ty:"D",st:{mon:10,d:31},ttls:{"en":"Sardar Patel’s Birthday"}, urls:{"en":"https://www.officeholidays.com/holidays/india/gujarat/sardar-patels-birthday"},inh:"*BD*"},
@@ -284,6 +284,7 @@
         {ty:"D",st:{era:1,y:2026,mon:4,d:9},inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/india/india-kerala-voting"}, locs:{"en":"Kerala"}},
         {ty:"D",st:{era:1,y:2026,mon:4,d:23},inh:"ElectionD", urls:{"en":"https://www.officeholidays.com/holidays/india/tamil-nadu-voting"}, locs:{"en":"Tamil Nadu"}},
         {ty:"D",st:{mon:7,d:22},inh:"NMangoD"},
+        {ty:"D",st:{mon:9,d:30},ttls:{"en":"Jananeta Irawat Birth Day"}, locs:{"en":"Manipur"}, urls:{"en":"https://www.officeholidays.com/holidays/india/jananeta-irawat-birth-day"}},
     ],
     tpls:{
         "Panchayati Raj Diwas":{ty:"D",st:{mon:3,d:5},ttls:{"en":"Panchayati Raj Diwas"}, urls:{"en":"https://www.officeholidays.com/holidays/india/panchayati-raj-diwas"}, locs:{"en":"Odisha"}},
