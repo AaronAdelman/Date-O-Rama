@@ -27,5 +27,6 @@
         {ty:"D",st:{mon:6,d:20},inh:"Nuakhai"},
         {ty:"D",st:{mon:6,d:25},ttls:{"en":"Ramdev Jayanti and Teja Dashmi"},urls:{"en":"https://www.officeholidays.com/holidays/india/ramdev-jayanti-teja-dashmi"},locs:{"en":"Rajasthan"}},
         {ty:"D",st:{mon:6,d:26},ttls:{"as":"কৰম পূজা","bn":"করম পরব","en":"Karam festival","hi":"करम पर्व","pa":"ਕਰਮ ਤਿਉਹਾਰ","sat":"ᱠᱟᱨᱟᱢ ᱵᱚᱝᱜᱟ ᱯᱟᱨᱟᱵᱽ","ta":"கரம்","ceb":"Karam","de":"Karam","fr":"Karam","it":"Karam","nds":"Karam","ru":"Карам","uk":"Карам"},urls:{"en":"https://www.officeholidays.com/holidays/india/india-karam"}},
+        {ty:"D",st:{mon:7,d:16},ttls:{"en":"Maharaja Agrasen Jayanti"}, urls:{"en":"https://www.officeholidays.com/holidays/india/maharaja-agrasen-jayanati"}},
     ]
 }

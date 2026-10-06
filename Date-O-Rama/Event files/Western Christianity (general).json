@@ -191,7 +191,7 @@
         {ty:"D",st:{mon:9,d:30},inh:"StJerome"},
 
         {ty:"D",st:{mon:10,d:1},ttls:{"en":"Feast of Saint Thérèse of the Child Jesus"}},
-        {ty:"D",st:{mon:10,d:2},ttls:{"en":"Guardian Angel Day"},urls:{"en":"https://www.daysoftheyear.com/days/guardian-angel-day/"},nts:{"en":"Memorial of the Holy Guardian Angels\nGuardian Angels Day\nFeast of Guardian Angels"}},
+        {ty:"D",st:{mon:10,d:2},ttls:{"en":"Guardian Angel Day"},urls:{"en":"https://www.daysoftheyear.com/days/guardian-angel-day/"},nts:{"en":"Memorial of the Holy Guardian Angels\nGuardian Angels Day\nFeast of Guardian Angels"},fst:{era:1,y:1670}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"Saint Francis of Assisi Feast Day"},nts:{"en":"Feast of Saint Francis of Assisi"},urls:{"en":"https://www.daysoftheyear.com/days/st-francis-of-assisi-feast-day/"},fst:{era:1,y:1228}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"Feast of Saint Faustina Kowalska"}},
         {ty:"D",st:{mon:10,d:6},ttls:{"en":"Feast of Saint Bruno"}},
