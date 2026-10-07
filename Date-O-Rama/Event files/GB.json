@@ -78,7 +78,7 @@
         {ty:"D",st:{mon:10,d:3},ttls:{"en":"British Carrot Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/british-carrot-awareness-day/"},fst:{era:1,y:2024},nts:{"en":"Created by the British Carrot Growers Association (BCGA)"},mog:"🥕"},
         {ty:"D",st:{mon:10,d:3},ttls:{"en":"Buy British Day"},urls:{"en":"https://www.daysoftheyear.com/days/buy-british-day/"},fst:{era:1,y:2014},nts:{"en":"Created by Best of Britannia"}},
         {ty:"D",st:{mon:10,d:31},inh:"NBug Busting Day"},
-        {ty:"D",st:{mon:10,d:4},ttls:{"en":"No Disposable Cup Day"},nts:{"en":"No Disposable Cup"},urls:{"en":"https://www.daysoftheyear.com/days/no-disposable-cup-day/"},mog:"🥛"},
+        {ty:"D",st:{mon:10,d:4},ttls:{"en":"No Disposable Cup Day"},nts:{"en":"Created by No Disposable Cup"},urls:{"en":"https://www.daysoftheyear.com/days/no-disposable-cup-day/"},mog:"🥛"},
         {ty:"D",st:{mon:10,d:6},ttls:{"en":"National Badger Day"},urls:{"en":"https://www.badgertrust.org.uk/brocktober"}},
         {ty:"D",st:{mon:10,d:7},ttls:{"en":"Team Margot Stem Cell and Bone Marrow Awareness Day"},nts:{"en":"Bone Marrow Awareness Day\nTeam Margot Donor Registration Day"},urls:{"en":"https://www.teammargot.com/team-margot-stem-cell-and-bone-marrow-awareness-day/"},fst:{era:1,y:2015},inh:"*MedAw*"},
         {ty:"D",st:{mon:10,wkd:[1],nth:1},inh:"GrandparentsD",fst:{era:1,y:2008}},

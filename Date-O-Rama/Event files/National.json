@@ -340,7 +340,7 @@
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Above the Bus Day"},urls:{"en":"https://evanwildstein.com/national-above-the-bus-day/"},fst:{era:1,y:2021},mog:"🚌",nts:{"en":"Created by Evan Wildstein"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Apple Betty Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-apple-betty-day/"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Caribbean Civility Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-caribbean-civility-day/"},fst:{era:1,y:2020},nts:{"en":"Created by the World Civility Presidential Club"}},
-        {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Do Something Nice Day"},nts:{"en":"National Be Nice Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-do-something-nice-day/"}},
+        {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Be Nice Day"},nts:{"en":"National Do Something Nice Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-be-nice-day/"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Get Out N Drive Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-get-out-n-drive-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Joann Meyer"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Kiss a Wrestler Day"},urls:{"en":"https://nationaltoday.com/national-kiss-a-wrestler-day/"},fst:{era:1,y:2000},nts:{"en":"Created by the World Championship of Wrestling (WCW)"}},
         {ty:"D",st:{mon:10,d:5},ttls:{"en":"National Military Podcast Day"},urls:{"en":"https://paradedeck.com/news/national-military-podcaster-day"},fst:{era:1,y:2021},mog:"🎙️",nts:{"en":"Created by Shane Cunningham"}},
