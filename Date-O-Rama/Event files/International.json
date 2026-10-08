@@ -277,7 +277,7 @@
         {ty:"D",st:{mon:10,d:6},ttls:{"en":"International Dysgraphia Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/international-dysgraphia-awareness-day/"},fst:{era:1,y:2022},mog:"✍️",nts:{"en":"Created by Deedra Scherm"}},
         {ty:"D",st:{mon:10,d:6},ttls:{"en":"Jackie Mayer Rehab Day"},urls:{"en":"https://www.checkiday.com/2bf80b1ed5eedbba9a512e46999f510e/jackie-mayer-rehab-day"}},
         {ty:"D",st:{mon:10,d:7},ttls:{"en":"International Day of Peaceful Communication"},urls:{"en":"https://www.daysoftheyear.com/days/international-day-of-peaceful-communication/"},fst:{era:1,y:2019},nts:{"en":"Created by Dr. Ruben M. West"}},
-        {ty:"D",st:{mon:10,d:7},ttls:{"en":"International Trigeminal Neuralgia Awareness Day"},urls:{"en":"https://www.tna.org.uk/ceo/international-trigeminal-neuralgia-tn-awareness-day-7-october/"},fst:{era:1,y:2013},inh:"*MedAw*"},
+        {ty:"D",st:{mon:10,d:7},inh:"TNAwD",urls:{"en":"https://www.tna.org.uk/ceo/international-trigeminal-neuralgia-tn-awareness-day-7-october/"},fst:{era:1,y:2013}},
         {ty:"D",st:{mon:10,d:7},ttls:{"en":"World Day for Decent Work"},urls:{"en":"https://www.daysoftheyear.com/days/world-day-for-decent-work/"},fst:{era:1,y:2008}},
         {ty:"D",st:{mon:10,d:7},ttls:{"en":"You Matter To Me Day"},urls:{"en":"https://nationaltoday.com/you-matter-to-me-day/"},fst:{era:1,y:2010},nts:{"en":"Created by Linda Jew"}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"Animal Action Day"},urls:{"en":"https://animalactionday.com/"},fst:{era:1,y:2007},mog:"🐨",nts:{"en":"Created by Aldwyn Altuney"}},
