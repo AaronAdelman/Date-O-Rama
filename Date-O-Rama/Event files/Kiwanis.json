@@ -1,0 +1,11 @@
+{
+    ttls:{"de":"Kiwanis","en":"Kiwanis","eo":"Kiwanis","et":"Kiwanis","fi":"Kiwanis International","fr":"Kiwanis","it":"Kiwanis","ja":"キワニス","nb":"Kiwanis International","zh":"國際同濟會"},
+    defLocale:"en",
+    cal:"gre*",
+    color:{name:"indigo"},
+    evts:[
+        {ty:"nD",st:{mon:1,d:21},end:{mon:1,d:26},ttls:{"en":"World Kiwanis Week"},urls:{"en":"https://www.daysoftheyear.com/days/world-kiwanis-week/"},fst:{era:1,y:2005},nts:{"en":"Created by Kiwanis International"}},
+        {ty:"D",st:{mon:9,wkd:[7],nth:4},ttls:{"en":"Kiwanis Kids’ Day"},urls:{"en":"https://encyclopedia2.thefreedictionary.com/Kiwanis+Kids'+Day"},fst:{era:1,y:1949},mog:"👦👧"},
+        {ty:"nD",st:{mon:10,wkd:[2],d:3,thruD:9,durD:7},ttls:{"en":"Celebrate Community Week"},urls:{"en":"https://www.daysoftheyear.com/days/celebrate-community-week/"},fst:{era:1,y:2022},nts:{"en":"Created by Kiwanis International"}},
+    ]
+}
