@@ -188,7 +188,7 @@
         {ty:"D",st:{mon:10,wkd:[1],nth:1},ttls:{"en":"Change a Light Day"},urls:{"en":"https://www.daysoftheyear.com/days/change-a-light-day/"},fst:{era:1,y:2005},mog:"💡",nts:{"en":"Created by the Kentucky Office of Energy Policy"}},
         {ty:"D",st:{mon:10,wkd:[6],nth:3},ttls:{"en":"National Mammography Day"},urls:{"en":"https://www.nationalbreastcancer.org/national-mammography-day/"},fst:{era:1,y:1993},inh:"*MedAw*",nts:{"en":"Created by Bill Clinton"}},
         {ty:"D",st:{mon:10,wkd:[7],nth:-1},inh:"NPrescriptionDrugTakeBackD",fst:{era:1,y:2010}},
-        {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"National Chess Day"},fst:{era:1,y:1976},urls:{"en":"https://www.daysoftheyear.com/days/national-chess-day/"},mog:"♟️",nts:{"en":"Created by Gerald Ford"}},
+        {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"National Chess Day","he":"יום השחמט הלאומי"},fst:{era:1,y:1976},urls:{"en":"https://www.daysoftheyear.com/days/national-chess-day/"},mog:"♟️",nts:{"en":"Created by Gerald Ford"}},
         {ty:"D",st:{mon:10,wkd:[7],nth:3},ttls:{"en":"Sweetest Day","sv":"Sweetest day","he":"היום המתוק ביותר"},nts:{"en":"National Sweetest Day\nCandy Day","he":"היום המתוק ביותר הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/sweetest-day/"},fst:{era:1,y:1929},mog:"🧡🩷💚"},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Red Wine Day"},nts:{"en":"Created by Josh Stein"},urls:{"en":"https://governor.nc.gov/governor-proclaims-national-red-wine-day"},fst:{era:1,y:2025},mog:"🍷"},
         {ty:"D",st:{mon:11,d:1},ttls:{"en":"Extra Mile Day"},urls:{"en":"https://extramileamerica.org/"},fst:{era:1,y:2009},nts:{"en":"Created by Shawn Anderson and the Extra Mile America Foundation"}},

@@ -357,7 +357,7 @@
         {ty:"D",st:{mon:10,d:8},inh:"NHeroesD",urls:{"en":"https://nationaltoday.com/national-heroes-day/"},fst:{era:1,y:2020}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"Alvin C. York Day"},urls:{"en":"https://www.daysoftheyear.com/days/alvin-c-york-day/"}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"American Touch Tag Day"},urls:{"en":"https://www.daysoftheyear.com/days/american-touch-tag-day/"}},
-        {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Fluffernutter Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-fluffernutter-day/"}},
+        {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Fluffernutter Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-fluffernutter-day/"},fst:{era:1,y:1960},"//":"“First” is a bound."},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Harbormaster Appreciation Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-harbormaster-appreciation-day/"},nts:{"en":"Created by US Harbors"},fst:{era:1,y:2019}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Mall Walking Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-mall-walking-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Shopkick"}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Pierogi Day","he":"יום הפירושקי הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/pierogi-day/"}},
@@ -2467,8 +2467,8 @@
             {ty:"D",st:{mon:10,d:17,wkd:[2]},inh:"NBossD"},
         ]},
         
-        {ty:"W",st:{mon:10,fullWk:1},ttls:{"en":"National Newspaper Week"},urls:{"en":"https://www.nationalnewspaperweek.com/"},fst:{era:1,y:1940},mog:"🗞️", overlappingSubEvts:[
-            {ty:"D",st:{mon:10,d:7,thruD:13,wkd:[7]},ttls:{"en":"International Newspaper Carrier Day","he":"יום מחלקי העיתונים הבינלאומי"},urls:{"en":"https://www.nationalnewspaperweek.com/"},mog:"🗞️",nts:{"en":"Part of National Newspaper Week, despite the name"}},
+        {ty:"W",st:{mon:10,fullWk:1},ttls:{"en":"National Newspaper Week"},urls:{"en":"https://www.nationalnewspaperweek.com/"},fst:{era:1,y:1940},mog:"🗞️", subEvts:[
+            {ty:"D",st:{mon:10,d:8},ttls:{"en":"International Newspaper Carrier Day","he":"יום מחלקי העיתונים הבינלאומי"},urls:{"en":"https://www.nationalnewspaperweek.com/"},mog:"🗞️",nts:{"en":"Part of National Newspaper Week, despite the name.\nThere seems to be some dispute on when this event actually occurs."}},
         ]},
         
         {ty:"W",st:{mon:3,fullWk:3,d1OfWk:2},ttls:{"en":"Wellderly Week"},urls:{"en":"https://www.daysoftheyear.com/days/wellderly-week/"},mog:"👴👵",fst:{era:1,y:2015}, subEvts:[
