@@ -85,7 +85,7 @@
         {ty:"D",st:{mon:10,wkd:[5],nth:1},inh:"NPoetryD",urls:{"en":"https://forwardartsfoundation.org/national-poetry-day/"},mog:"☂️🐢🍄",fst:{era:1,y:1994},nts:{"en":"Created by William Sieghart"}},
         {ty:"D",st:{mon:10,wkd:[6],nth:1},ttls:{"en":"Wakey Wakey Hospice PJ Day"},urls:{"en":"https://www.wakefieldhospice.org/pyjamaday/"},nts:{"en":"Pyjama Day\nCreated by Wakefield Hospice"},fst:{era:1,y:2022}},
         {ty:"D",st:{mon:10,wkd:[7],nth:-1},ttls:{"en":"Muddy Dog Day"},urls:{"en":"https://distinctivepets.co.uk/pages/muddy-dog-day"},fst:{era:1,y:2021},mog:"🐾",nts:{"en":"Created by Jo Milnes"}},
-        {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"Bookshop Day"},urls:{"en":"https://www.daysoftheyear.com/days/bookshop-day/"},mog:"📚",fst:{era:1,y:2013}},
+        {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"Bookshop Day"},urls:{"en":"https://www.daysoftheyear.com/days/bookshop-day/"},mog:"📚",fst:{era:1,y:2013},nts:{"en":"Created by the Booksellers Association"}},
         {ty:"D",st:{mon:11,d:1},ttls:{"ca":"Calan Gaeaf","en":"Calan Gaeaf","gl":"Calan Gaeaf"},urls:{"en":"https://www.daysoftheyear.com/days/calan-gaeaf/"}},
         {ty:"D",st:{mon:11,d:11},inh:"ArmisticeD",fst:{era:1,y:1919}},
         {ty:"D",st:{mon:11,d:11},inh:"Remembrance Day",fst:{era:1,y:1919}},

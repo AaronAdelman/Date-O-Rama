@@ -365,7 +365,7 @@
         {ty:"D",st:{mon:10,d:11},ttls:{"en":"It’s My Party Day"},nts:{"en":"National It’s My Party Day"},urls:{"en":"https://nationaltoday.com/party-day/"}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"Curious Events Day"},nts:{"en":"National Curious Events Day"},urls:{"en":"https://www.daysoftheyear.com/days/curious-events-day/"}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"CATober 9th®"},urls:{"en":"https://www.animalleague.org/blog/spotlight-stories/catober-9th-feline-adoption-special/"},mog:"🐱",nts:{"en":"Created by the North Shore Animal League America"},fst:{era:1,y:2024}},
-        {ty:"D",st:{mon:10,d:9},ttls:{"en":"National C₆₀ Day"},nts:{"en":"National C60 Day\nCreated by SES Research"},urls:{"en":"https://nationaltoday.com/national-c60-day/"},fst:{era:1,y:2022}},
+        {ty:"D",st:{mon:10,d:9},ttls:{"en":"National C₆₀ Day"},nts:{"en":"National C60 Day\nCreated by SES Research"},urls:{"en":"https://www.daysoftheyear.com/days/national-c60-day/"},fst:{era:1,y:2022}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"National Digitool Day"},urls:{"en":"https://nationaltoday.com/national-digitool-day/"},fst:{era:1,y:2019}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"National Moldy Cheese Day"},urls:{"en":"https://www.daysoftheyear.com/days/moldy-cheese-day/"},mog:"🧀"},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"National Sneakers Day"},nts:{"en":"An observance for people obsessed with footwear."},urls:{"en":"https://www.daysoftheyear.com/days/national-sneakers-day/"}},

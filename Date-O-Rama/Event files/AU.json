@@ -45,7 +45,7 @@
         {ty:"D",inh:"DaffodilD",st:{mon:8,d:18,thruD:24,wkd:[5]},urls:{"en":"https://www.daffodilday.com.au/"},fst:{era:1,y:2024}},
         {ty:"D",inh:"Long Tan Day",st:{mon:8,d:18},fst:{era:1,y:2016}},
         {ty:"D",inh:"LoudShirtD",st:{mon:10,wkd:[6],nth:3},urls:{"en":"https://www.loudshirtday.com.au/"}},
-        {ty:"D",st:{era:1,y:2024,mon:10,d:12},inh:"Love Your Bookshop Day"},
+        {ty:"D",st:{era:1,y:2024,mon:10,d:12},inh:"LYBD"},
         {ty:"D",st:{mon:1,d:2,wkd:[2]},inh:"NYDHol",urls:{"en":"https://www.officeholidays.com/holidays/australia/international-new-years-day"}},
         {ty:"D",st:{mon:1,d:26},inh:"AustraliaD",fst:{era:1,y:1808}},
         {ty:"D",st:{mon:10,d:1},inh:"NCoffeeD"},
@@ -57,8 +57,8 @@
         {ty:"D",st:{mon:10,wkd:[3],nth:2},ttls:{"en":"Headspace Day"},fst:{era:1,y:2016},urls:{"en":"https://www.checkiday.com/b5b51bd1a3fc15bcb01959a412e83542/headspace-day-australia"}},
         {ty:"D",st:{mon:10,wkd:[5],d:18,thruD:24},inh:"Bandanna Day",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:10,wkd:[6],nth:-1},inh:"Bandanna Day",fst:{era:1,y:2014},end:{era:1,y:2023}},
-        {ty:"D",st:{mon:10,wkd:[7],nth:1},inh:"Love Your Bookshop Day",fst:{era:1,y:2014},last:{era:1,y:2023}},
-        {ty:"D",st:{mon:10,wkd:[7],nth:1},inh:"Love Your Bookshop Day",fst:{era:1,y:2025}},
+        {ty:"D",st:{mon:10,wkd:[7],nth:1},inh:"LYBD",fst:{era:1,y:2014},last:{era:1,y:2023}},
+        {ty:"D",st:{mon:10,wkd:[7],nth:1},inh:"LYBD",fst:{era:1,y:2025}},
         {ty:"D",st:{mon:11,d:18},ttls:{"en":"William Tell Day"},urls:{"en":"https://www.checkiday.com/212eaefa5f286f615a73888bdf82a49a/william-tell-day"},fst:{era:1,y:2007}},
         {ty:"D",st:{mon:11,d:24},ttls:{"en":"Fairy Bread Day"},nts:{"en":"National Fairy Bread Day"},urls:{"en":"https://www.fairybreadday.com/"},fst:{era:1,y:2014},nts:{"en":"Created by Adam Schell"}},
         {ty:"D",st:{mon:11,d:8},ttls:{"en":"Whooping Cough Day"},nts:{"en":"Pertussis Awareness Day"},urls:{"en":"https://www.ifa.org.au/whoopingcoughday"},fst:{era:1,y:2023},mog:"🫁",inh:"*MedAw*",nts:{"en":"Created by the Immunisation Foundation of Australia"}},
@@ -165,7 +165,7 @@
     ],
     tpls:{
         "Proclamation Day":{ttls:{"af":"Proklamasiedag","en":"Proclamation Day","fr":"Proclamation Day","ru":"День провозглашения"}, ty:"D",st:{mon:12,d:26,wkd:[2, 3, 4,5,6]},urls:{"en":"https://publicholidays.com.au/proclamation-day/"}},
-        "Love Your Bookshop Day":{ty:"D",st:{mon:10,wkd:[7],nth:1},ttls:{"en":"Love Your Bookshop Day","he":"יום אהבת חנויות ספרים"},urls:{"en":"https://www.loveyourbookshop.com.au/"},nts:{"en":"LYBD\nCreated by BookPeople"},mog:"📚"},
+        "LYBD":{ty:"D",st:{mon:10,wkd:[7],nth:1},ttls:{"en":"Love Your Bookshop Day","he":"יום אהבת חנויות ספרים"},urls:{"en":"https://www.loveyourbookshop.com.au/"},nts:{"en":"LYBD\nCreated by BookPeople"},mog:"📚"},
         "Bandanna Day":{ty:"D",st:{mon:10,wkd:[6],nth:-1},ttls:{"en":"Bandanna Day"},nts:{"en":"National Bandana Day"},fst:{era:1,y:2014},end:{era:1,y:2023},urls:{"en":"https://www.bandannaday.org.au/"},inh:"*MedAw*"},
         "Walk Safely to School Day":{ty:"D",st:{mon:5,d:10,thruD:16,wkd:[6]},ttls:{"en":"Walk Safely to School Day"},urls:{"en":"https://www.daysoftheyear.com/days/walk-safely-to-school-day/"},nts:{"en":"WSTSD\nCreated by the Pedestrian Council of Australia"}},
     }

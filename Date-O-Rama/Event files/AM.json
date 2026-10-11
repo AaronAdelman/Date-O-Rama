@@ -38,7 +38,7 @@
         {ty:"D",st:{misc:"E",oD:64},ttls:{"en":"Holiday of Saint Etchmiadzin","hy":"Սուրբ Էջմիածնի տոն"}},
         {ty:"D",st:{mon:9,d:1},ttls:{"en":"Knowledge and School Day","he":"יום ידע ולימודים","hy":"Գիտելիքի և դպրության օր"},mog:"👨‍🏫👩‍🏫"},
         {ty:"D",st:{mon:9,d:12},ttls:{"en":"Sparapet Day","hy":"Սպարապետի օր"},urls:{"en":"https://en.wikipedia.org/wiki/Mkhitar_Sparapet#Sparapet_Day"}},
-        {inh:"Teacher’s Day", ty:"D",st:{mon:10,d:5}},
+        {ty:"D",st:{mon:10,d:5},inh:"Teacher’s Day"},
         {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"Translators’ Day","hy":"Թարգմանչաց տոն"},nts:{"en":"Holy Translators Day\nFeast of the Holy Translators"},urls:{"en":"https://www.daysoftheyear.com/days/holy-translators-day/"}},
         {ty:"D",st:{mon:11,d:10},ttls:{"en":"Day of Local Self-Governance","hy":"Տեղական ինքնակառավարման օր"}},
         {ty:"D",st:{mon:12,d:7},ttls:{"en":"Day of Remembrance for Earthquake Victims and Disaster Resistance","hy":"Երկրաշարժի զոհերի հիշատակի օր"}},
