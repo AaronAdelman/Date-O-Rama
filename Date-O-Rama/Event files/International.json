@@ -160,7 +160,6 @@
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"World Plant-based Burger Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-plant-based-burger-day/"},mog:"🍔",fst:{era:1,y:2020},nts:{"en":"Created by VeganBurg"}},
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"World Porridge Day"},urls:{"en":"https://www.marysmeals.org.uk/campaigns/world-porridge-day"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:10,d:11},ttls:{"en":"Black Girl Day Off"},urls:{"en":"https://www.daysoftheyear.com/days/black-girl-day-off/"},fst:{era:1,y:2020},nts:{"en":"Created by Tomeka Casanova"}},
-        {ty:"D",st:{mon:10,d:11},ttls:{"en":"It’s My Party Day"},urls:{"en":"https://nationaltoday.com/party-day/"}},
         {ty:"D",st:{mon:10,d:11},ttls:{"en":"World Biryani Day"},urls:{"en":"https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"}},
         {ty:"D",st:{mon:10,d:11},ttls:{"en":"World Dulce de Leche Day"},nts:{"en":"International Dulce de Leche Day"},urls:{"en":"https://www.checkiday.com/792f0263d4c19db6938f2dbe31e5f6ea/world-biryani-day"},fst:{era:1,y:1995}},
         {ty:"D",st:{mon:10,d:12},inh:"DOfTheRaces",urls:{"en":"https://nationaltoday.com/dia-de-la-raza/"},fst:{era:1,y:1917}},

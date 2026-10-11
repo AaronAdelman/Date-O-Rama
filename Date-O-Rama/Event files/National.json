@@ -362,6 +362,7 @@
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Mall Walking Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-mall-walking-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Shopkick"}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Pierogi Day","he":"יום הפירושקי הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/pierogi-day/"}},
         {ty:"D",st:{mon:10,d:8},ttls:{"en":"National Salmon Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-salmon-day/"},fst:{era:1,y:2015},mog:"🍣",nts:{"en":"Created by Chicken of the Sea"}},
+        {ty:"D",st:{mon:10,d:11},ttls:{"en":"It’s My Party Day"},nts:{"en":"National It’s My Party Day"},urls:{"en":"https://nationaltoday.com/party-day/"}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"Curious Events Day"},nts:{"en":"National Curious Events Day"},urls:{"en":"https://www.daysoftheyear.com/days/curious-events-day/"}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"CATober 9th®"},urls:{"en":"https://www.animalleague.org/blog/spotlight-stories/catober-9th-feline-adoption-special/"},mog:"🐱",nts:{"en":"Created by the North Shore Animal League America"},fst:{era:1,y:2024}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"National C₆₀ Day"},nts:{"en":"National C60 Day\nCreated by SES Research"},urls:{"en":"https://nationaltoday.com/national-c60-day/"},fst:{era:1,y:2022}},
