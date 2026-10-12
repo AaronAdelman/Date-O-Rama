@@ -227,7 +227,6 @@
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"National Chocolate-Covered Insect Day"},nts:{"en":"National Chocolate-Covered Insects Day"},urls:{"en":"https://www.checkiday.com/479263ac959e2371341ce3ca0d3a0135/national-chocolate-covered-insect-day"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"National Dessert Day"},urls:{"en":"https://www.daysoftheyear.com/days/dessert-day/"},mog:"🧁🥮🍮"},
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"National FRUMP Day"},nts:{"en":"National Frugal, Responsible, Unpretentious, Mature Persons Day"},urls:{"en":"https://www.checkiday.com/ef369dfc5dab4d4aa65d5fa9ce1219a4/national-frump-day"},fst:{era:1,y:2005}},
-        {ty:"D",st:{mon:10,d:14},ttls:{"en":"National I Love You Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-i-love-you-day/"},fst:{era:1,y:2015},mog:"🫶"},
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"national lowercase day"},urls:{"en":"https://www.checkiday.com/63f43aadb52600e08b4c953f75e744b5/national-lowercase-day"},fst:{era:1,y:2016}},
         {ty:"D",st:{mon:10,d:15,thruD:21,wkd:[4]},ttls:{"en":"Medical Assistants Recognition Day"},fst:{era:1,y:2014},urls:{"en":"https://www.daysoftheyear.com/days/medical-assistants-recognition-day/"},nts:{"en":"Created by the American Association of Medical Assistants (AAMA)"}},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Chicken Cacciatore Day"},urls:{"en":"https://www.daysoftheyear.com/days/chicken-cacciatore-day/"},mog:"🍗"},
