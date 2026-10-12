@@ -13,7 +13,7 @@
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD",fst:{era:1,y:1886}},
-        {ty:"D",st:{mon:5,d:8},inh:"DOfVictoryOverFascism",urls:{"en":"https://www.officeholidays.com/holidays/slovakia/v-e-day"},fst:{era:1,y:1945}},
+        {ty:"D",st:{mon:5,d:8},inh:"VictoryOverFascismD",urls:{"en":"https://www.officeholidays.com/holidays/slovakia/v-e-day"},fst:{era:1,y:1945}},
         {ty:"D",st:{mon:7,d:5},urls:{"en":"https://www.officeholidays.com/holidays/slovakia/st-cyril-and-methodius-day"},inh:"StsCyril&Methodius",fst:{era:1,y:863}},
         {ty:"D",st:{mon:8,d:29},urls:{"en":"https://nationaltoday.com/national-uprising-day/"},ttls:{"en":"Slovak National Uprising Day","sk":"Výročie Slovenského národného povstania"},fst:{era:1,y:1944}},
         {ty:"D",st:{mon:9,d:1},ttls:{"en":"Day of the Constitution of the Slovak Republic","sk":"Deň Ústavy Slovenskej republiky"},inh:"ConstitutionD",urls:{"en":"https://nationaltoday.com/slovakia-constitution-day/"},fst:{era:1,y:1992}},

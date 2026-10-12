@@ -19,7 +19,7 @@
         {ty:"D",st:{mon:3,d:23},ttls:{"en":"Day of Southern Africa Liberation","pt":"Dia da Libertação da África Austral"}},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
-        {ty:"D",st:{mon:4,d:4},inh:"DOfPeace&Reconciliation",nts:{"en":"Peace Day"},urls:{"en":"https://www.officeholidays.com/holidays/angola/peace-day"}},
+        {ty:"D",st:{mon:4,d:4},inh:"Peace&ReconciliationD",nts:{"en":"Peace Day"},urls:{"en":"https://www.officeholidays.com/holidays/angola/peace-day"}},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:9,d:17},inh:"NHeroesD",urls:{"en":"https://www.officeholidays.com/holidays/angola/angolan-national-heroes-day"}},
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},

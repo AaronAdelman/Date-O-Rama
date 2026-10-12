@@ -66,7 +66,7 @@
         {inh:"StsCyril&Methodius", ty:"D",st:{mon:5,d:24}},
         {ttls:{"en":"Slavonic Literature and Culture Day"}, ty:"D",st:{mon:5,d:24}},
         {ty:"D",st:{mon:5,d:29},inh:"IDOfUNPeacekeepers",fst:{era:1,y:2003}},
-        {ty:"D",st:{mon:6,d:22},inh:"DOfRemembrance&Sorrow",fst:{era:1,y:1996}},
+        {ty:"D",st:{mon:6,d:22},inh:"Remembrance&SorrowD",fst:{era:1,y:1996}},
         {ty:"D",st:{mon:6,d:23},inh:"IOlympic Day",fst:{era:1,y:1948}},
         {ttls:{"en":"Day of the Ukrainian Civil Service"}, ty:"D",st:{mon:6,d:23}},
         {inh:"KupalaNite", ty:"D",st:{mon:6,d:24}},
