@@ -221,7 +221,7 @@
         {ty:"D",st:{mon:10,d:12},ttls:{"en":"National Gumbo Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-gumbo-day/"}},
         {ty:"D",st:{mon:10,d:12},ttls:{"en":"National Pulled Pork Day"},urls:{"en":"https://www.daysoftheyear.com/days/pulled-pork-day/"}},
         {ty:"D",st:{mon:10,d:13},inh:"NYorkshirePuddingD",urls:{"en":"https://www.daysoftheyear.com/days/yorkshire-pudding-day/"}},
-        {ty:"D",st:{mon:10,d:13},ttls:{"en":"National M&M Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-mm-day/"}},
+        {ty:"D",st:{mon:10,d:13},ttls:{"en":"National M&M Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-mm-day/"},mog:"ⓜ",fst:{era:1,y:1941},"//":"“First” is a bound"},
         {ty:"D",st:{mon:10,d:13},ttls:{"en":"National Train Your Brain Day"},urls:{"en":"https://www.daysoftheyear.com/days/train-your-brain-day/"},mog:"🧠"},
         {ty:"D",st:{mon:10,d:13},ttls:{"en":"National Transfer Money to Your Son Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-transfer-money-to-your-son-day/"},fst:{era:1,y:2017},nts:{"en":"Created by Zelle"}},
         {ty:"D",st:{mon:10,d:14},ttls:{"en":"National Chocolate-Covered Insect Day"},nts:{"en":"National Chocolate-Covered Insects Day"},urls:{"en":"https://www.checkiday.com/479263ac959e2371341ce3ca0d3a0135/national-chocolate-covered-insect-day"},fst:{era:1,y:2009}},
