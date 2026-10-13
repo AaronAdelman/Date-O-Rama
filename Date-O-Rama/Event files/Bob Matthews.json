@@ -14,6 +14,6 @@
         {ty:"D",st:{mon:6,d:16},ttls:{"en":"International Waterfall Day"}, urls:{"en":"https://www.daysoftheyear.com/days/international-waterfall-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Bob Matthews"}},
         {ty:"D",st:{mon:12,d:14},inh:"Roast Chestnuts Day",fst:{era:1,y:2015}},
         
-        {ty:"D",st:{mon:3,d:21},ttls:{"en":"Credit Card Reduction Day"}, urls:{"en":"https://www.daysoftheyear.com/days/credit-card-reduction-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Holiday Insights"}},
+        {ty:"D",st:{mon:3,d:21},ttls:{"en":"Credit Card Reduction Day"}, urls:{"en":"https://www.daysoftheyear.com/days/credit-card-reduction-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Holiday Insights"},mog:"💳"},
     ]
 }

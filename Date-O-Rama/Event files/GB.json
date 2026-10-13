@@ -408,7 +408,7 @@
         {ty:"W",st:{mon:9,fullWk:1,d1OfWk:2},ttls:{"en":"Zero Waste Week","ha":"Zero Waste Week","ig":"Zero Waste Week","ru":"Неделя без отходов"},urls:{"en":"https://www.zerowasteweek.co.uk/"},fst:{era:1,y:2008},mog:"0️⃣",nts:{"en":"Created by Rachelle Strauss"}},
         {ty:"W",st:{mon:9,fullWk:1,d1OfWk:2},ttls:{"en":"Know Your Numbers Week"},urls:{"en":"https://www.daysoftheyear.com/days/know-your-numbers-week/"},inh:"*MedAw*",fst:{era:1,y:2001},nts:{"en":"Created by Blood Pressure UK"}},
         {ty:"W",st:{mon:9,fullWk:2},ttls:{"en":"Sexual Health Week"},urls:{"en":"https://www.brook.org.uk/shw/"},fst:{era:1,y:2000},inh:"*MedAw*",nts:{"en":"SHW"}},
-        {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},inh:"Thinking of You Week",urls:{"en":"https://www.thinkingofyouweek.cards/"},fst:{era:1,y:2014}},
+        {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},inh:"Thinking of You Week",fst:{era:1,y:2014}},
         {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},ttls:{"en":"National Coding Week"},urls:{"en":"https://codingweek.org/"},mog:"🌎",fst:{era:1,y:2014},nts:{"en":"Created by Richard Rolfe and Jordan Love"}},
         {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},ttls:{"en":"Professional Care Workers’ Week"},urls:{"en":"https://www.thecareworkerscharity.org.uk/professional-care-workers-week-2025/"},fst:{era:1,y:2018},mog:"☂",nts:{"en":"Created by the Care Workers Charity"}},
         {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},ttls:{"en":"Small Pet Rodent Awareness Week"},nts:{"en":"SPRAW\nCreated by the Greatfield Small Animal Rescue and One Voice for Animals UK"},urls:{"en":"https://www.daysoftheyear.com/days/small-pet-rodent-awareness-week/"},mog:"🐿️🐀🐁",fst:{era:1,y:2021}},

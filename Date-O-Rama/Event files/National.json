@@ -1028,7 +1028,7 @@
         {ty:"D",st:{mon:3,wkd:[7],nth:3},ttls:{"en":"Play the Recorder Day"},nts:{"en":"Play-the-Recorder Day\nCreated by the American Recorder Society"},urls:{"en":"https://americanrecorder.org/play_the_recorder_month.php"},fst:{era:1,y:1992}},
         {ty:"D",st:{mon:4,d:1},ttls:{"en":"Fun Day"},urls:{"en":"https://www.daysoftheyear.com/days/fun-day/"},nts:{"en":"National Fun Day"}},
         {ty:"D",st:{mon:4,d:1},ttls:{"en":"Library Snapshot Day"},urls:{"en":"https://www.ala.org/advocacy/snapshotday"},nts:{"en":"Created by the New Jersey State Library and the New Jersey Library Association"},fst:{era:1,y:2009}},
-        {ty:"D",st:{mon:4,d:1},ttls:{"en":"National Greeting Card Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-greeting-card-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Lovepop"}},
+        {ty:"D",st:{mon:4,d:1},ttls:{"en":"National Greeting Card Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-greeting-card-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Lovepop"},mog:"[[greetingcard]]"},
         {ty:"D",st:{mon:4,d:1},ttls:{"en":"National Jump in Muddy Puddles Day"},nts:{"en":"NJIMPD"},urls:{"en":"https://www.checkiday.com/b99e7a56d3bcbd203edb9ce4545b7937/national-jump-in-muddy-puddles-day"}},
         {ty:"D",st:{mon:4,d:1},ttls:{"en":"National Love for our Children Day"},urls:{"en":"https://www.checkiday.com/91541df2714a958b5fb6f0139aee5a13/national-love-for-our-children-day"}},
         {ty:"D",st:{mon:4,d:1},ttls:{"en":"National One Cent Day"},urls:{"en":"https://www.daysoftheyear.com/days/one-cent-day/"},mog:"¢"},
