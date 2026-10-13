@@ -93,7 +93,7 @@
         {ty:"D",st:{mon:4,d:28},ttls:{"en":"Clean Comedy Day"},urls:{"en":"https://www.daysoftheyear.com/days/clean-comedy-day/"},fst:{era:1,y:1995},mog:"🎙️",nts:{"en":"Created by the Comedy Barn Theater"}},
         {ty:"D",st:{mon:4,wkd:[2],nth:3},inh:"Patriots’ Day",fst:{era:1,y:1894}, locs:{"en":"Connecticut, Maine, Massachusetts, North Dakota","he":"קונטיקט, מיין, מסצ׳וסטס, דקוטה הצפונית"}},
         {ty:"D",st:{mon:7,d:24},inh:"PioneerD",fst:{era:1,y:1949}},
-        {ty:"D",st:{mon:10,d:15},inh:"Pregnancy and Infant Loss Remembrance Day",fst:{era:1,y:2001}},
+        {ty:"D",st:{mon:10,d:15},inh:"Pregnancy&InfantLossRemembranceD",fst:{era:1,y:2001}},
         {ty:"D",st:{mon:2,wkd:[2],nth:3},inh:"Presidents’ Day",urls:{"en":"https://www.daysoftheyear.com/days/presidents-day/"},fst:{era:1,y:1879},nts:{"en":"Created by the Government of the United States"}},
         {ty:"D",st:{mon:1,d:19},inh:"Robert E. Lee Day",fst:{era:1,y:1931}, locs:{"en":"Florida","he":"פלורידה"}},
         {ty:"D",st:{mon:1,wkd:[2],nth:3},inh:"Robert E. Lee Day",fst:{era:1,y:1931}, locs:{"en":"Alabama and Mississippi","he":"אלבמה ומיסיסיפי"}},

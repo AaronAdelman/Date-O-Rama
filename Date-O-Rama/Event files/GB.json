@@ -295,7 +295,7 @@
         {ty:"nD",st:{mon:10,d:14,thruD:20,wkd:[2],durD:7},ttls:{"en":"Recycle Week"},nts:{"en":"Recycle Now Week\nRecycle Awareness Week\nCreated by the Waste and Resources Action Programme (WRAP)"},urls:{"en":"https://www.wrap.ngo/take-action/recycle-now/recycle-week"},fst:{era:1,y:2003},mog:"♻️"},
         {ty:"nD",st:{mon:10,d:14,thruD:20,wkd:[2],durD:7},ttls:{"en":"UK Coffee Week"},urls:{"en":"https://www.ukcoffeeweek.com/"},fst:{era:1,y:2011},mog:"☕️",nts:{"en":"Created by the Allegra Foundation"}},
         {ty:"nD",st:{mon:10,d:14},end:{mon:10,d:20},ttls:{"en":"National Baking Week"},urls:{"en":"https://www.daysoftheyear.com/days/national-baking-week/"},fst:{era:1,y:2007},mog:"🍞🥖🥐",nts:{"en":"Created by Pyrex"}},
-        {ty:"nD",st:{mon:10,d:16,thruD:22,wkd:[5],durD:3},ttls:{"en":"Sŵn Festival"},urls:{"en":"https://swnfest.com/"},fst:{era:1,y:2007},nts:{"en":"Created by Huw Stephens and Jon Rostron"}},
+        {ty:"nD",st:{mon:10,d:16,thruD:22,wkd:[5],durD:3},ttls:{"cy":"Sŵn","en":"Sŵn","ga":"Sŵn"},urls:{"en":"https://swnfest.com/"},fst:{era:1,y:2007},nts:{"en":"Sŵn Festival\nCreated by Huw Stephens and Jon Rostron"}},
         {ty:"nD",st:{mon:10,d:4,thruD:10,wkd:[2],durD:5},ttls:{"en":"Hospice Care Week"},urls:{"en":"https://www.hospiceuk.org/our-campaigns/hospice-care-week"},fst:{era:1,y:2007},"//":"“First” is a bound."},
         {ty:"nD",st:{mon:10,d:5,thruD:11,wkd:[3],durD:6},ttls:{"en":"Iris Film Festival"},fst:{era:1,y:2007},nts:{"en":"Created by Berwyn Rowlands"}},
         {ty:"nD",st:{mon:10,d:9},end:{mon:10,d:15},ttls:{"en":"Baby Loss Awareness Week"},urls:{"en":"https://babyloss-awareness.org/"},fst:{era:1,y:2011},mog:"👶",inh:"*MedAw*"},
