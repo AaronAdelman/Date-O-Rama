@@ -127,16 +127,12 @@
         {ty:"D",st:{mon:12,d:13,thruD:19,wkd:[7]},ttls:{"en":"National Wreaths Across America Day"},fst:{era:1,y:1992},nts:{"en":"Created by Morril Worcester"}, urls:{"en":"https://www.wreathsacrossamerica.org/"}},
         {ty:"D",st:{mon:2,d:1},ttls:{"en":"Holiday Hugs Day"}, urls:{"en":"https://nationaltoday.com/holiday-hugs-day/"},fst:{era:1,y:2021},nts:{"en":"Created by the Hugs for Health Foundation"}},
         {ty:"M",st:{mon:2},ttls:{"en":"National Wedding Month"}, urls:{"en":"https://www.daysoftheyear.com/days/national-wedding-month/"},nts:{"en":"Created by the Association of Bridal Consultants"}},
-        {ty:"D",st:{mon:2,d:10},ttls:{"en":"Teddy Day"}, urls:{"en":"https://www.daysoftheyear.com/days/teddy-day/"},mog:"🧸"},
         {ty:"D",st:{mon:2,d:10},ttls:{"en":"Valentismas"}, urls:{"en":"https://www.daysoftheyear.com/days/valentismas/"},fst:{era:1,y:2019},mog:"💐"},
-        {ty:"D",st:{mon:2,d:11},ttls:{"en":"Promise Day"}, urls:{"en":"https://www.daysoftheyear.com/days/promise-day/"}},
-        {ty:"D",st:{mon:2,d:12},ttls:{"en":"Hug Day"}, urls:{"en":"https://www.daysoftheyear.com/days/hug-day/"},mog:"🫂"},
         {ty:"D",st:{mon:2,d:12},ttls:{"en":"National Freedom to Marry Day","ha":"Ranar ƴancin yin aure","ru":"Национальный день свободы брака"}, urls:{urls:"https://www.daysoftheyear.com/days/national-freedom-to-marry-day/"},fst:{era:1,y:1998},nts:{"en":"Created by Lambda Legal"}},
         {ty:"D",st:{mon:2,d:13},inh:"NValentine Shopping Reminder Day"},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"International Condom Day"},nts:{"en":"This observance could have been promoted with more tact.\nCreated by the AIDS Healthcare Foundation"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"Self Love Day","he":"יום מאוהב/ת בעצמי"}, urls:{"en":"https://pathofselflove.org/self-love-day"},nts:{"en":"Self-Love Day\nMadly in Love With Me Day\nSelf Love Day\nCreated by Christine Arylo and the Path of Self Love School","he":"יום מאוהב/ת בעצמי בטירוף"},fst:{era:1,y:2008},mog:"⭕"},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"International Natural Day"}, urls:{"en":"https://www.daysoftheyear.com/days/international-natural-day/"},nts:{"en":"International Day of Self Love\nCreated by Sanah Jivani"},fst:{era:1,y:2011}},
-        {ty:"D",st:{mon:2,d:13},inh:"Kiss Day", urls:{"en":"https://www.daysoftheyear.com/days/kiss-day/"}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"Self Love Day"},nts:{"en":"Madly In Love With Me Day\nSelf Love Day\nInternational Day of Self-Love\nThis observance seems to be meant to sell products."},fst:{era:1,y:2008}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"Dream Your Sweet Day"}, urls:{"en":"https://www.daysoftheyear.com/days/dream-your-sweet-day/"}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"National Wingman Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-wingman-day/"},fst:{era:1,y:2004},nts:{"en":"Created by the US Airforce"}},
@@ -150,9 +146,6 @@
         {ty:"D",st:{mon:2,d:15},ttls:{"en":"Saint Skeletor’s Day"}, urls:{"en":"https://www.daysoftheyear.com/days/st-skeletors-day/"},fst:{era:1,y:1998},mog:"💀",nts:{"en":"This observance is not a celebration of He-Man and the Masters of the Universe.\nCreated by Richard Herring"}},
         {ty:"D",st:{mon:2,d:2},inh:"Groundhog Day",fst:{era:1,y:1887}},
         {ty:"D",st:{mon:2,d:6},inh:"NValentine Shopping Reminder Day"},
-        {ty:"D",st:{mon:2,d:7},inh:"Rose Day", urls:{"en":"https://www.daysoftheyear.com/days/rose-day-2/"}},
-        {ty:"D",st:{mon:2,d:8},ttls:{"en":"Propose Day"}, urls:{"en":"https://nationaltoday.com/propose-day/"}},
-        {ty:"D",st:{mon:2,d:9},ttls:{"en":"Chocolate Day","he":"יום השוקולד"}, urls:{"en":"https://www.daysoftheyear.com/days/chocolate-day-2/"},inh:"*Choc*"},
         {ty:"D",st:{mon:3,d:14},ttls:{"ar":"اليوم الأبيض","az":"Ağ gün","ca":"Dia blanc","da":"White Day","de":"White Day","en":"White Day","es":"Día blanco","fa":"روز سفید","fr":"White Day","he":"היום הלבן","hi":"सफेद दिन","hr":"Bijeli dan","hu":"Fehér nap","hy":"Սպիտակ օր","id":"Hari Putih","it":"White Day","ja":"ホワイトデー","ko":"화이트데이","ms":"Hari Putih","nb":"Hvit dag","nl":"Witte Dag","pl":"Biały Dzień","pt":"White Day","ro":"Ziua albă","ru":"Белый день","sr":"Бели дан","th":"ไวต์เดย์","uk":"Білий день","ur":"یوم سفید","vi":"White Day","wuu":"白色情人节","yue":"白色情人節","zh":"白色情人節"},fst:{era:1,y:1978},mog:"🤍", urls:{"en":"https://www.daysoftheyear.com/days/white-day/"},nts:{"en":"Created by the Japanese National Confection Industry Association"}},
         {ty:"D",st:{mon:3,d:16},ttls:{"en":"Saint Urho’s Day"}, urls:{"en":"http://www.sainturho.com/"},fst:{era:1,y:1950}},
         {ty:"D",st:{mon:3,d:17},ttls:{"en":"National Corned Beef and Cabbage Day"},mog:"🥩🥬", urls:{"en":"https://www.daysoftheyear.com/days/national-corned-beef-and-cabbage-day/"},inh:"StPatrick"},
@@ -195,7 +188,17 @@
         {ty:"nD",st:{mon:12,d:1,durD:7},ttls:{"en":"National Cookie Cutter Week"},nts:{"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"},fst:{era:1,y:1996}, subEvts:[
             {ty:"D",st:{mon:12,d:1},ttls:{"en":"National Cookie Cutter Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Bobbi Barton"}},
         ]},
-        
+
+        {ty:"nD",st:{mon:2,d:7,durD:8},ttls:{"en":"Valentine’s Week"}, urls:{"en":"https://en.wikipedia.org/wiki/Valentine's_Week"},subEvts:[
+            {ty:"D",st:{mon:2,d:7},inh:"Rose Day", urls:{"en":"https://www.daysoftheyear.com/days/rose-day-2/"}},
+            {ty:"D",st:{mon:2,d:8},ttls:{"bn":"প্রস্তাব দিবস","en":"Propose Day","pa":"ਪ੍ਰਸਤਾਵ ਦਿਵਸ"}, urls:{"en":"https://nationaltoday.com/propose-day/"}},
+            {ty:"D",st:{mon:2,d:9},ttls:{"en":"Chocolate Day","he":"יום השוקולד"}, urls:{"en":"https://www.daysoftheyear.com/days/chocolate-day-2/"},inh:"*Choc*"},
+            {ty:"D",st:{mon:2,d:10},ttls:{"en":"Teddy Day"}, urls:{"en":"https://www.daysoftheyear.com/days/teddy-day/"},mog:"🧸"},
+            {ty:"D",st:{mon:2,d:11},ttls:{"en":"Promise Day"}, urls:{"en":"https://www.daysoftheyear.com/days/promise-day/"}},
+            {ty:"D",st:{mon:2,d:12},ttls:{"en":"Hug Day"}, urls:{"en":"https://www.daysoftheyear.com/days/hug-day/"},mog:"🫂"},
+            {ty:"D",st:{mon:2,d:13},inh:"Kiss Day", urls:{"en":"https://www.daysoftheyear.com/days/kiss-day/"}},
+        ]},
+
     ],
     tpls:{
         "NValentine Shopping Reminder Day":{ty:"D",st:{mon:2,d:6},ttls:{"en":"National Valentine Shopping Reminder Day"},  urls:{"en":"https://www.daysoftheyear.com/days/national-valentine-shopping-reminder-day/"},mog:"❤️🛍️"},
