@@ -39,6 +39,6 @@
         {ty:"D",st:{mon:4,misc:"new"},ttls:{"en":"Aadi Amavasai"}},
         {ty:"D",st:{mon:4,d:18},ttls:{"as":"আদি পেৰুক্কু","en":"Aadi Perukku","fr":"Adiperukku","kn":"ಆದಿ ಪೆರುಕ್ಕು","ta":"ஆடிப்பெருக்கு","te":"ఆది పెరుక్కు"},urls:{"en":"https://en.wikipedia.org/wiki/Aadi_Perukku"}},
         {ty:"nD",st:{mon:9,d:29},end:{mon:10,d:3},ttls:{"af":"Pongal","as":"পোংগল","bn":"পোঙ্গল","cs":"Pongal","da":"Pongal","de":"Pongal","en":"Pongal","es":"Pongal","eu":"Pongal","fa":"پونگال","fi":"Pongal","fr":"Pongal","gl":"Pongal","gom":"पोंगल","hi":"पोंगल","id":"Pongal","it":"Pongal","ja":"ポンガル","kn":"ಪೊಂಗಲ್","lt":"Pongal","ml":"പൊങ്കൽ","mr":"पोंगल","ms":"Hari Thaiponggal","nb":"Pongal","nn":"Pongal","or":"ପୋଙ୍ଗଲ","pa":"ਪੋਂਗਲ","pl":"Pongal","pt":"Pongal","ru":"Понгал","sa":"पोङ्गल्","sat":"ᱯᱳᱸᱜᱟᱞ","si":"තෛපොංගල්","sv":"Thai Pongal","ta":"தைப்பொங்கல்","te":"పొంగల్","tt":"Понгал","uk":"Понгал","ur":"پونگل"},urls:{"en":"https://en.wikipedia.org/wiki/Pongal_(festival)"},"//":"Not sure I did this right"},
-
+        {ty:"D",st:{mon:12,misc:"full1"},ttls:{"en":"Panguni Uthiram","ms":"Panguni Uttiram","ta":"பங்குனி உத்தரம்"}, urls:{"en":"https://en.wikipedia.org/wiki/Panguni_Uthiram"},"//":"Not sure I did this right"},
     ]
 }
