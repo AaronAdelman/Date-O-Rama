@@ -1,0 +1,14 @@
+{
+    ttls:{"ar":"جمعية المكتبات الأمريكية","az":"Amerika Kitabxana Assosiasiyası","bn":"মার্কিন গ্রন্থাগার সমিতি","ca":"American Library Association","de":"American Library Association","el":"Αμερικάνικη Ένωση Βιβλιοθηκών","en":"American Library Association","eo":"Usona Biblioteka Asocio","es":"Asociación de Bibliotecas de Estados Unidos","fa":"انجمن کتابخانه آمریکا","fi":"American Library Association","fr":"American Library Association","ha":"Ƙungiyar Laburaren Amirka","he":"איגוד הספריות האמריקאי","id":"Asosiasi Perpustakaan Amerika Serikat","it":"American Library Association","ja":"アメリカ図書館協会","ko":"미국 도서관 협회","lv":"Amerikas bibliotēku asociācija","nb":"American Library Association","nl":"American Library Association","pl":"Stowarzyszenie Bibliotek Amerykańskich","pt":"American Library Association","ro":"American Library Association","ru":"Американская библиотечная ассоциация","sr":"Америчко библиотекарско удружење","sv":"American Library Association","tr":"Amerikan Kütüphane Derneği","uk":"Американська бібліотечна асоціація","vi":"Hiệp hội Thư viện Hoa Kỳ","zh":"美國圖書館協會"},
+    defLocale:"en",
+    cal:"gre*",
+    color:{name:"red"},
+    urls:{"en":"http://ala.org/"},
+    fst:{era:1,y:1958},
+    mog:"📚",
+    evts:[
+        {ty:"D",st:{mon:4,d:16},ttls:{"en":"National Librarian Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-librarian-day/"},fst:{era:1,y:1958},nts:{"en":"Created by the American Library Association (ALA)"}},
+        {ty:"D",st:{mon:10,d:6},inh:"ALAD",fst:{era:1,y:2026}},
+        {ty:"W",st:{mon:10,fullWk:3},ttls:{"en":"National Friends of Libraries Week"},urls:{"en":"https://www.ala.org/united/events_conferences/folweek"},fst:{era:1,y:2005},mog:"📖",nts:{"en":"Created by the American Library Association (ALA)"}},
+    ]
+}

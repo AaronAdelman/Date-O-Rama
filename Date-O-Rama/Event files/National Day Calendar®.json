@@ -416,7 +416,7 @@
         {ty:"D",st:{mon:10,d:1},ttls:{"en":"National Hair Day"},nts:{"en":"This observance deals with vanity and fashion.\nCreated by NuMe"},fst:{era:1,y:2017},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-hair-day-october-1"}},
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"National Walk to a Park Day"},urls:{"en":"https://www.tpl.org/walktoapark"},fst:{era:1,y:2021},mog:"🛡🏞️",nts:{"en":"Created by The Trust for Public Land"}},
         {ty:"D",st:{mon:10,d:12},ttls:{"en":"National Savings Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-savings-day-october-12"},fst:{era:1,y:2017},mog:"🐖🪙✍️",nts:{"en":"Created by Capital One"}},
-        {ty:"D",st:{mon:10,d:14},ttls:{"en":"National Real Sugar Day"},urls:{"en":"https://www.sugar.org/realsugarday"},fst:{era:1,y:2022},nts:{"en":"Created by the Sugar Association, Inc."}},
+        {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Real Sugar Day"},urls:{"en":"https://www.sugar.org/realsugarday"},fst:{era:1,y:2022},nts:{"en":"Created by the Sugar Association, Inc."}},
         {ty:"D",st:{mon:10,d:15},inh:"NShawarmaD",fst:{era:1,y:2020}},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Aesthetician Day"},nts:{"en":"National Esthetician Day\nAn observance celebrating the people who help us feel vain.\nCreated by COSMEDIX"},fst:{era:1,y:2016},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-aesthetician-day-october-15"}},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Cheese Curd Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-cheese-curd-day-october-15"},fst:{era:1,y:2015},nts:{"en":"Created by Culver’s"}},
