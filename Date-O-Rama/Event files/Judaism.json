@@ -62,9 +62,9 @@
         {ty:"D",st:{mon:1,d:15}, ttls:{"he":"אושפיזין:  אברהם","en":"’Ushpizin:  ’Avraham"}},
         {ty:"D",st:{mon:1,d:16}, ttls:{"he":"אושפיזין:  יצחק","en":"’Ushpizin:  Yiṣḥaq"}},
         {ty:"D",st:{mon:1,d:17}, ttls:{"he":"אושפיזין:  יעקב","en":"’Ushpizin:  Ya‘aqov"}},
-        {ty:"D",st:{mon:1,d:18}, ttls:{"he":"אושפיזין:  יוסף","en":"’Ushpizin:  Yosef"}},
-        {ty:"D",st:{mon:1,d:19}, ttls:{"he":"אושפיזין:  משה","en":"’Ushpizin:  Mosheh"}},
-        {ty:"D",st:{mon:1,d:20}, ttls:{"he":"אושפיזין:  אהרן","en":"’Ushpizin:  ’Aharon"}},
+        {ty:"D",st:{mon:1,d:18}, ttls:{"he":"אושפיזין:  יוסף (לפי אשכנזים), משה (לפי ספרדים)","en":"’Ushpizin:  Yosef (according to ’Ashkenazim), Mosheh (according to Sefaradhim)"}},
+        {ty:"D",st:{mon:1,d:19}, ttls:{"he":"אושפיזין:  משה (לפי אשכנזים), אהרן (לפי ספרדים)","en":"’Ushpizin:  Mosheh (according to ’Ashkenazim), ’Aharon (according to Sefaradhim)"}},
+        {ty:"D",st:{mon:1,d:20}, ttls:{"he":"אושפיזין:  אהרן (לפי אשכנזים), יוסף (לפי ספרדים)","en":"’Ushpizin:  ’Aharon (according to ’Ashkenazim), Yosef (according to Sefaradhim)"}},
         {ty:"D",st:{mon:1,d:21}, ttls:{"he":"אושפיזין:  דוד","en":"’Ushpizin:  Dawidh"}},
 
         {ty:"D",st:{mon:1,d:15,wkd:[2,3,5]},inh:"Hosha‘noth:  LeMa‘an ’Amittakh"},
