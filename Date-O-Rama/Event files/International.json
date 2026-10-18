@@ -216,7 +216,7 @@
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Celebration of the Mind Day"},urls:{"en":"https://www.daysoftheyear.com/days/celebration-of-the-mind-day/"},fst:{era:1,y:2010},nts:{"en":"Created by the Gathering 4 Gardner Foundation"}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Count Your Buttons Day"},urls:{"en":"https://www.daysoftheyear.com/days/count-your-buttons-day/"}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Garbanzo Bean Day"},urls:{"en":"https://www.checkiday.com/f9e87a342d7cfce9884a54d9afd6edff/garbanzo-bean-day"}},
-        {ty:"D",st:{mon:10,d:21},ttls:{"en":"Global Iodine Deficiency Disorders Prevention Day"},nts:{"en":"Global IDD Prevention Day"},urls:{"en":"https://www.daysoftheyear.com/days/global-iodine-deficiency-disorders-prevention-day/"},mog:"🧂🌏"},
+        {ty:"D",st:{mon:10,d:21},ttls:{"en":"Global Iodine Deficiency Disorders Prevention Day"},nts:{"en":"Global IDD Prevention Day\nCreated by the Iodine Global Network (IGN)"},urls:{"en":"https://www.daysoftheyear.com/days/global-iodine-deficiency-disorders-prevention-day/"},mog:"🧂🌏",fst:{era:1,y:2012}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"International Day of the Nacho"},urls:{"en":"https://www.daysoftheyear.com/days/international-day-of-the-nacho/"},fst:{era:1,y:1995}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"World Bolognese Ragù Day"},urls:{"en":"https://www.checkiday.com/1d83bbd9ba1c98952d9b58d2c3ab95cf/world-bolognese-ragu-day"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:10,d:22},inh:"ICapsLockD",fst:{era:1,y:2000},urls:{"en":"https://www.daysoftheyear.com/days/caps-lock-day/"}},
