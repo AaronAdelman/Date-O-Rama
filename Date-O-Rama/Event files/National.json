@@ -298,7 +298,7 @@
         {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Crazy Day"},urls:{"en":"https://www.checkiday.com/10614a5f8108b7e23f10b545f5fb333c/national-crazy-day"}},
         {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Good & Plenty Day"},urls:{"en":"https://www.checkiday.com/5a1283e9527e6ed0b4a3572038dcbd06/national-good-plenty-day"},fst:{era:1,y:2017}},
         {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Jamaican Jerk Day"},nts:{"en":"Jamaican Jerk Day\nCreated by Jamaican Jerk Festival USA, Inc."},urls:{"en":"https://www.daysoftheyear.com/days/national-jamaican-jerk-day/"},fst:{era:1,y:2020}},
-        {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Senior UTI Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-senior-uti-awareness-day/"},inh:"*MedAw*",nts:{"en":"Created by the family of Daisy Jackson"}},
+        {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Senior UTI Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-senior-uti-awareness-day/"},inh:"*MedAw*",nts:{"en":"Created by the family of Daisy Jackson"},fst:{era:1,y:2020},"//":"“First” is a bound."},
         {ty:"D",st:{mon:10,d:24},ttls:{"en":"Vote Early Day"},urls:{"en":"https://en.wikipedia.org/wiki/Vote_Early_Day"},mog:"🗳️",fst:{era:1,y:2020},nts:{"en":"Created by MTV"}},
         {ty:"D",st:{mon:10,d:25},ttls:{"en":"National Cartoonists Against Crime Day"},urls:{"en":"https://www.checkiday.com/b88917e3648feb6ba7510f8e929a35a4/national-cartoonists-against-crime-day"},fst:{era:1,y:1991}},
         {ty:"D",st:{mon:10,d:25},ttls:{"en":"National Fine Art Appreciation Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-fine-art-appreciation-day/"},fst:{era:1,y:2018},mog:"🖼️",nts:{"en":"Created by RoGallery"}},

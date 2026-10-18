@@ -59,5 +59,6 @@
         {ty:"D",st:{mon:8,d:30},ttls:{"en":"Amagwinya Day"},urls:{"en":"https://www.daysoftheyear.com/days/amagwinya-day/"},nts:{"en":"Vetkoek Day\nCreated by Olive Pride"},fst:{era:1,y:2017}},
         {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"Pinotage Day"},urls:{"en":"https://pinotage.co.za/"},mog:"🍇",fst:{era:1,y:2014},nts:{"en":"National Pinotage Day\nInternational Pinotage Day"}},
         {ty:"D",st:{mon:9,d:1},ttls:{"en":"Cap Classique Day"},urls:{"en":"https://www.daysoftheyear.com/days/cap-classique-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Cap Classique Producers Association"}},
+        {ty:"D",st:{mon:10,wkd:[1],nth:3},ttls:{"en":"Garden Day"},urls:{"en":"https://gardenday.co.za/"},fst:{era:1,y:2026},nts:{"en":"Created by GardenDay"},mog:"🌱"},
    ]
 }

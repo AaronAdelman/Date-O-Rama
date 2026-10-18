@@ -3,7 +3,7 @@
 // Hong Kong
     defLocale:"en",
     cal:"gre",
-    color:{r:0.93,g:0.11,b:0.15},
+    color:{name:"red"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Hong_Kong"},
     fst:{era:1,y:1841},
     evts:[
