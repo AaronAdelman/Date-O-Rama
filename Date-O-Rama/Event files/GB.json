@@ -67,7 +67,7 @@
         {ty:"D",st:{mon:10,d:12},inh:"NCOD",fst:{era:1,y:1988}},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"Baby Loss Awareness Day"},fst:{era:1,y:2002},urls:{"en":"https://en.wikipedia.org/wiki/Pregnancy_and_Infant_Loss_Remembrance_Day"},mog:"👶",inh:"*MedAw*"},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"National Roast Pheasant Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-roast-pheasant-day/"}},
-        {ty:"D",st:{mon:10,d:21},inh:"AppleD",nts:{"en":"National Apple Day"},fst:{era:1,y:1990},urls:{"en":"https://www.orchardnetwork.org.uk/apple-day"}},
+        {ty:"D",st:{mon:10,d:21},inh:"AppleD",nts:{"en":"National Apple Day\nCreated by Covent Garden"},fst:{era:1,y:1990},urls:{"en":"https://www.orchardnetwork.org.uk/apple-day"}},
         {ty:"D",st:{mon:10,d:21},inh:"NHeroesD",fst:{era:1,y:2011}},
         {ty:"D",st:{mon:10,d:21},ttls:{"cy":"Diwrnod Trafalgar","de":"Trafalgar Day","en":"Trafalgar Day","fr":"Trafalgar Day","gl":"Día de Trafalgar","pl":"Trafalgar Day","pt":"Dia de Trafalgar"},inh:"NavyD",fst:{era:1,y:1896},urls:{"en":"https://www.daysoftheyear.com/days/trafalgar-day/"},nts:{"en":"Created by the Navy League"}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Everyone Writes Day"},urls:{"en":"https://www.daysoftheyear.com/days/everyone-writes-day/"},mog:"✍️"},
