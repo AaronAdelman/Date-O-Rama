@@ -64,7 +64,7 @@ enum ASACalendarCode: String, Codable {
     case kannadaSolarTime          = "kannada-s"
 //    case malayalamSolarTime        = "malayalam-s"
     case marathiSolarTime          = "marathi-s"
-    case odiaSolarTime             = "odia-s"
+//    case odiaSolarTime             = "odia-s"
 //    case tamilSolarTime            = "tamil-s"
     case teluguSolarTime           = "telugu-s"
 //    case vietnameseSolarTime       = "vietnamese-s"
@@ -128,7 +128,8 @@ extension ASACalendarCode {
 //                .dangi,
                 .gujarati, .kannada,
 //                .malayalam,
-                .marathi, .odia,
+                .marathi,
+//                .odia,
 //                .tamil,
                 .telugu,
 //                .vietnamese,
@@ -210,7 +211,7 @@ extension ASACalendarCode {
                 .kannadaSolarTime,
 //                .malayalamSolarTime,
                 .marathiSolarTime,
-                .odiaSolarTime,
+//                .odiaSolarTime,
 //                .tamilSolarTime,
                 .teluguSolarTime,
 //                .vietnameseSolarTime,
@@ -390,7 +391,9 @@ extension ASACalendarCode {
                } else {
                    identifier = nil
                }
-           case .odia, .odiaSolarTime:
+           case .odia
+//               , .odiaSolarTime
+               :
                if #available(iOS 26.0, watchOS 26.0, macOS 26.0, macCatalyst 26.0, tvOS 26.0, *) {
                    identifier = .odia
                } else {
@@ -440,7 +443,7 @@ extension ASACalendarCode {
         case .buddhist, .coptic, .ethiopicAmeteAlem, .ethiopicAmeteMihret, .gregorian, .indian,
                 .japanese ,.persian, .republicOfChina, .frenchRepublican, .julian, .bangla, .malayalam, .odia, .tamil, .banglaSolarTime,
 //                .malayalamSolarTime,
-                .odiaSolarTime,
+//                .odiaSolarTime,
 //                .tamilSolarTime,
                 .bahai, .bahaiSolarTime:
             return .solar
@@ -471,7 +474,8 @@ extension ASACalendarCode {
                     .dangi,
                     //.gujarati, .kannada,
                     .malayalam,
-//                .marathi, .odia,
+//                .marathi,
+                    .odia,
                     .tamil,
 //                .telugu,
                     .vietnamese,
@@ -642,6 +646,9 @@ extension ASACalendarCode {
 
         case .tamil:
             return [regionCode + " (Tamil)"]
+
+        case .odia:
+            return [regionCode + " (Odia)"]
 
         default:
             return []
