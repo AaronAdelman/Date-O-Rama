@@ -1,0 +1,14 @@
+// TODO:  Buddhist holidays, holidays scheduled on the Tibetan and Bhutanese calendars, Thimphu Drubchen, Thimphu Tshechu
+// QUESTION:  Is the Bhutanese calendar related to the Chinese calendar?
+{
+    ttls:{"*":"BT"},
+// Bhutan
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"yellow"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bhutan"},
+    evts:[
+        {ty:"nD",st:{mon:7,d:21,durD:6},inh:"DurgaPuja"},
+        {ty:"D",st:{mon:7,d:25},inh:"Vijayadashami"},
+    ]
+}

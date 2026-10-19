@@ -1,7 +1,7 @@
 {
     ttls:{"*":"LK"},
 // Sri Lanka
-// TODO:  Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar), Binara Full Moon Poya
+// TODO:  Muslim, Buddhist, and Hindu holidays, Sinhala and Tamil New Year (on Tamil calendar), Binara Full Moon Poya, Vap Full Moon Poya
     defLocale:"en",
     cal:"gre",
     color:{r:1.00,g:0.82,b:0.00},

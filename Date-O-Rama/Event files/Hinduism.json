@@ -96,6 +96,7 @@
         {ty:"nD",st:{mon:7,d:21,durD:6},inh:"DurgaPuja"},
         {ty:"D",st:{mon:7,d:23},inh:"DurgaAshtami"},
         {ty:"D",st:{mon:7,d:24},inh:"AyudhaPuja"},
+        {ty:"D",st:{mon:7,d:29},inh:"SharadaPurnima"},
         {ty:"D",st:{mon:8,d:4},ttls:{"ar":"كارفا شوت","as":"কৰৱা চৌথ","awa":"करवा चौथ","ba":"Карва-чаутх","bh":"करवा चौथ","bn":"করবা চৌথ","ckb":"کەروا چاوتە","en":"Karva Chauth","fr":"Karva Chauth","hi":"करवा चौथ","kn":"ಕರ್ವಾ ಚೌತ್","mai":"करवा चौथ","ml":"കർവ ചൗഥ്","mr":"करवा चौथ","ne":"करवा चौथ","nn":"Karvatsjauth","or":"କରୱା ଚୌଥ","pa":"ਕਰਵਾ ਚੌਥ","pl":"Karwa Ćaut","pnb":"کروا چوتھ","ru":"Карва-чаутх","sa":"कार्त्तिकचतुर्थी","sat":"ᱠᱚᱨᱣᱟ ᱪᱚᱣᱛᱷ","ta":"கரக சதுர்த்தி","te":"కర్వా చౌత్","ur":"کروا چوتھ"},nts:{"bn":"আটলা তাদ্দে","en":"Atla Tadde\nKark Chaturthi\nKarwa Chauth","ta":"அட்ல தத்தே","te":"అట్లతద్ది"}, urls:{"en":"https://en.wikipedia.org/wiki/Karva_Chauth"}},
         {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali", urls:{"en":"https://en.wikipedia.org/wiki/Diwali"}, subEvts:[
             {ty:"D",st:{mon:8,d:12},ttls:{"as":"ধনতেৰাচ","bh":"धनतेरस","bn":"ধনতেরাস","en":"Dhanteras","es":"Dhanteras","gu":"ધનતેરશ","hi":"धनतेरस","mai":"धनतेरस","mr":"धनत्रयोदशी","ne":"धनतेरस","nn":"Dhanteras","pa":"ਧਨਤੇਰਸ","ta":"தன திரயோதசி","te":"ధన త్రయోదశి","th":"ธันเตรัส","ur":"دھنتیرس"},nts:{"en":"Dhanatrayodashi\nYama Deepam"}, urls:{"en":"https://en.wikipedia.org/wiki/Dhanteras"}},

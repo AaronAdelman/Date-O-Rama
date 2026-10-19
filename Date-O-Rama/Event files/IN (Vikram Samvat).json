@@ -32,5 +32,6 @@
         {ty:"D",st:{mon:7,d:23},inh:"DurgaAshtami"},
         {ty:"D",st:{mon:7,d:24},inh:"AyudhaPuja"},
         {ty:"D",st:{mon:7,d:25},inh:"Vijayadashami"},
+        {ty:"D",st:{mon:7,d:29},inh:"SharadaPurnima"},
     ]
 }

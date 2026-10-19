@@ -5,7 +5,7 @@
 // Bhutan
     defLocale:"en",
     cal:"gre",
-    color:{r:1.00,g:0.40,b:0.12},
+    color:{name:"yellow"},
     fst:{era:1,y:1616},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Bhutan"},
     evts:[
