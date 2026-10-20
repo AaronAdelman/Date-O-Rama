@@ -16,7 +16,7 @@
         {ttls:{"en":"Astronomical dawn","he":"שחר אסטרונומי"}, ty:"pt",st:{ptTy:"twiR", deg: 18.0, offset: 0}},
         {ttls:{"en":"Astronomical dusk","he":"בין הערביים אסטרונומי"}, ty:"pt",st:{ptTy:"twiS", deg: 18.0, offset: 0}},
 
-        {ty:"Y",st:{}, subEvts:[
+        {ty:"Y",st:{},subEvts:[
             {inh:"Ari", ty:"nD", st:{mon:4,d:18}, end:{mon:5,d:12}},
             {inh:"Tau", ty:"nD", st:{mon:5,d:13}, end:{mon:6,d:20}},
             {inh:"Gem", ty:"nD", st:{mon:6,d:21}, end:{mon:7,d:19}},

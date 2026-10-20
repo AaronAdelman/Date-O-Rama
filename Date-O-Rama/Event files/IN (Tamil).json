@@ -23,7 +23,7 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts:[
-        {ty:"Y",st:{}, subEvts:[
+        {ty:"Y",st:{},subEvts:[
             {ty:"nM",st:{mon:1},end:{mon:2},inh:"Vasanta"},
             {ty:"nM",st:{mon:3},end:{mon:4},inh:"Grishma"},
             {ty:"nM",st:{mon:5},end:{mon:6},inh:"Varsha"},

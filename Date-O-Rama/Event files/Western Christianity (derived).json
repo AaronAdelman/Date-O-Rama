@@ -185,7 +185,7 @@
             {ty:"nD",st:{mon:10,d:24},end:{mon:10,d:31},ttls:{"en":"Bat Appreciation Week"}, urls:{"en":"https://www.daysoftheyear.com/days/bat-appreciation-week/"},mog:"🦇",fst:{era:1,y:2000},nts:{"en":"Created by Bat Conservation International"}},
         ]},
 
-        {ty:"nD",st:{mon:12,d:1,durD:7},ttls:{"en":"National Cookie Cutter Week"},nts:{"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"},fst:{era:1,y:1996}, subEvts:[
+        {ty:"nD",st:{mon:12,d:1,durD:7},ttls:{"en":"National Cookie Cutter Week"},nts:{"en":"Cookie Cutter Week\nCreated by Paula Mullins"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-week/"},fst:{era:1,y:1996},subEvts:[
             {ty:"D",st:{mon:12,d:1},ttls:{"en":"National Cookie Cutter Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cookie-cutter-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Bobbi Barton"}},
         ]},
 

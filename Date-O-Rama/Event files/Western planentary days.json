@@ -4,7 +4,7 @@
     cal:"gre*",
     color:{name:"gray"},
     evts:[
-        {ty:"nD",st:{}, subEvts:[
+        {ty:"nD",st:{},subEvts:[
             {ttls:{"en":"Day of the Sun","he":"יום השמש"}, ty:"D",st:{wkd:[1]},inh:"*zsu*",inh:"*Astrol*"},
             {ttls:{"en":"Day of the Moon","he":"יום הירח"}, ty:"D",st:{wkd:[2]},inh:"*zmo*",inh:"*Astrol*"},
             {ttls:{"en":"Day of Mars","he":"יום מאדין"}, ty:"D",st:{wkd:[3]},inh:"*zma*",inh:"*Astrol*"},

@@ -6,7 +6,7 @@
     urls:{"en":"https://www.asatru.org/holidays.php"},
     fst:{era:1,y:1988},
     evts:[
-        {ty:"Y",st:{}, subEvts:[
+        {ty:"Y",st:{},subEvts:[
             {ty:"D",st:{mon:1,d:3},ttls:{"en":"Charming of the Plow"}},
             {ty:"D",st:{mon:1,d:9},ttls:{"en":"Day of Remembrance for Raud the Strong"},inh:"*Remembrance*"},
             {ty:"D",st:{mon:1,d:14},inh:"Thorrablot"},

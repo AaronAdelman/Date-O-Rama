@@ -155,11 +155,11 @@
         {ty:"D",st:{mon:8,wkd:[4],nth:-3},ttls:{"en":"Ekka","fr":"Ekka","ja":"エッカ"},urls:{"en":"https://www.daysoftheyear.com/days/royal-national-agricultural-show-day-queensland/"},nts:{"en":"Royal National Agricultural Show Day Queensland\nRoyal Queensland Show\nEkka People’s Day\nCreated by the Royal National Agricultural and Industrial Association of Queensland (RNA)"},fst:{era:1,y:1876}},
         {ty:"nD",st:{mon:8,d:9,thruD:15,wkd:[2],durD:5},ttls:{"en":"Bullying No Way: National Week of Action"},nts:{"en":"Bullying No Way Week"},urls:{"en":"https://bullyingnoway.gov.au/preventing-bullying/national-week-of-action"},fst:{era:1,y:2024}},
         
-        {ty:"W",st:{mon:9,fullWk:1},ttls:{"en":"National Child Protection Week"},urls:{"en":"https://www.napcan.org.au/ncpw/"},fst:{era:1,y:1990},mog:"👦👧",nts:{"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"}, subEvts:[
+        {ty:"W",st:{mon:9,fullWk:1},ttls:{"en":"National Child Protection Week"},urls:{"en":"https://www.napcan.org.au/ncpw/"},fst:{era:1,y:1990},mog:"👦👧",nts:{"en":"Created by the National Association for Prevention of Child Abuse and Neglect (NAPCAN)"},subEvts:[
             {ty:"D",st:{wkd:[6]},ttls:{"en":"Bravehearts Day"},urls:{"en":"https://bravehearts.org.au/support-us/bravehearts-day"},mog:"💟",nts:{"en":"White Balloon Day\nCreated by Bravehearts"},fst:{era:1,y:1997}},
         ]},
         
-        {ty:"nD",st:{mon:5,d:27},end:{mon:6,d:3},ttls:{"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"},inh:"Reconciliation Day",fst:{era:1,y:1996},nts:{"en":"NRW\nCreated by Reconciliation Australia"},urls:{"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"}, subEvts:[
+        {ty:"nD",st:{mon:5,d:27},end:{mon:6,d:3},ttls:{"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"},inh:"Reconciliation Day",fst:{era:1,y:1996},nts:{"en":"NRW\nCreated by Reconciliation Australia"},urls:{"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"},subEvts:[
             {ty:"D",st:{wkd:[2]},inh:"Reconciliation Day",fst:{era:1,y:2018}},
         ]},
         

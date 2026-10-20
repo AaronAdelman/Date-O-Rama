@@ -737,38 +737,38 @@
         {ty:"D",st:{mon:9,wkd:[7],nth:3},ttls:{"en":"National Dance Day","he":"יום המחול הלאומי"},urls:{"en":"http://americandancemovement.org/national-dance-day/"},fst:{era:1,y:2010},nts:{"en":"Some people think this event happens on the last Saturday in July.\nCreated by Nigel Lythgoe and Eleanor Holmes Norton"}},
         {ty:"D",st:{mon:8,d:7},ttls:{"en":"National Lighthouse Day","he":"יום המגדלור הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/lighthouse-day/"},mog:"⛯",fst:{era:1,y:1989},nts:{"en":"Created by the US Congress"}},
 
-        {ty:"nD",st:{mon:11,d:12,thruD:18,wkd:[1],durD:7},ttls:{"en":"American Education Week"},urls:{"en":"https://www.daysoftheyear.com/days/american-education-week/"},fst:{era:1,y:1921}, subEvts:[
+        {ty:"nD",st:{mon:11,d:12,thruD:18,wkd:[1],durD:7},ttls:{"en":"American Education Week"},urls:{"en":"https://www.daysoftheyear.com/days/american-education-week/"},fst:{era:1,y:1921},subEvts:[
             {ty:"D",st:{mon:11,wkd:[4],nth:3},ttls:{"en":"National Educational Support Professionals Day"},urls:{"en":"https://www.daysoftheyear.com/days/education-support-professionals-day/"},nts:{"en":"E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"},fst:{era:1,y:1987}},
         ]},
 
-        {ty:"M",st:{mon:11},ttls:{"en":"National Family Literacy Month"},urls:{"en":"https://familieslearning.org/blog/november-is-national-family-literacy-month/"},mog:"📖",fst:{era:1,y:1994},nts:{"en":"Created by the National Center for Families Learning (NCFL)"}, subEvts:[
+        {ty:"M",st:{mon:11},ttls:{"en":"National Family Literacy Month"},urls:{"en":"https://familieslearning.org/blog/november-is-national-family-literacy-month/"},mog:"📖",fst:{era:1,y:1994},nts:{"en":"Created by the National Center for Families Learning (NCFL)"},subEvts:[
             {ty:"D",st:{mon:11,d:1},ttls:{"en":"National Family Literacy Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-family-literacy-day/"},fst:{era:1,y:1994},mog:"📖",nts:{"en":"Created by the National Center for Families Learning (NCFL) and the US Congress"}},
         ]},
         
-        {ty:"M",st:{mon:2},ttls:{"en":"American Heart Month"},urls:{"en":"https://www.daysoftheyear.com/days/american-heart-month/"},fst:{era:1,y:1964},mog:"🫀",inh:"*MedAw*",nts:{"en":"National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"}, subEvts:[
+        {ty:"M",st:{mon:2},ttls:{"en":"American Heart Month"},urls:{"en":"https://www.daysoftheyear.com/days/american-heart-month/"},fst:{era:1,y:1964},mog:"🫀",inh:"*MedAw*",nts:{"en":"National Heart Healthy Month\nNational Heart Month\nCreated by Lyndon B. Johnson"},subEvts:[
             {ty:"D",st:{mon:2,wkd:[6],nth:3},ttls:{"en":"National Woman’s Heart Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-womans-heart-day/"},inh:"*MedAw*",fst:{era:1,y:2001},mog:"🫀",nts:{"en":"Created by Tommy Thompson"}},
         ]},
         
-        {ty:"W",st:{mon:3,fullWk:1},ttls:{"en":"National Consumer Protection Week"},urls:{"en":"https://consumer.ftc.gov/features/national-consumer-protection-week"},mog:"💻📱",nts:{"en":"National Consumer Awareness Week\nNCPW\nConsumer Awareness Week\nCreated by the Federal Trade Commission"}, subEvts:[
+        {ty:"W",st:{mon:3,fullWk:1},ttls:{"en":"National Consumer Protection Week"},urls:{"en":"https://consumer.ftc.gov/features/national-consumer-protection-week"},mog:"💻📱",nts:{"en":"National Consumer Awareness Week\nNCPW\nConsumer Awareness Week\nCreated by the Federal Trade Commission"},subEvts:[
             {ty:"D",st:{wkd:[5]},ttls:{"en":"National Slam the Scam Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-slam-the-scam-day/"},mog:"💻📱",fst:{era:1,y:2020},nts:{"en":"Created by the US Social Security Administration, and the Officer of the Inspector General"}},
         ]},
 
-        {ty:"M",st:{mon:4},ttls:{"en":"National Poetry Month"},urls:{"en":"https://poets.org/national-poetry-month"},fst:{era:1,y:1996},nts:{"en":"Created by the Academy of American Poets"},mog:"📝", subEvts:[
+        {ty:"M",st:{mon:4},ttls:{"en":"National Poetry Month"},urls:{"en":"https://poets.org/national-poetry-month"},fst:{era:1,y:1996},nts:{"en":"Created by the Academy of American Poets"},mog:"📝",subEvts:[
             {ty:"D",st:{mon:4,wkd:[5],nth:-1},inh:"Poem in Your Pocket Day",fst:{era:1,y:2002},end:{era:1,y:2024}},
             {ty:"D",st:{era:1,y:2024,mon:4,d:18},inh:"Poem in Your Pocket Day"},
             {ty:"D",st:{era:1,y:2025,mon:4,d:10},inh:"Poem in Your Pocket Day"},
             {ty:"D",st:{mon:4,wkd:[5],nth:-1},inh:"Poem in Your Pocket Day",fst:{era:1,y:2026}},
         ]},
                 
-        {ty:"nD",st:{mon:5,d:2,thruD:8,wkd:[2],durD:5},ttls:{"en":"Teacher Appreciation Week"},nts:{"en":"National Teacher Appreciation Week"},urls:{"en":"https://www.nea.org/TAW"},fst:{era:1,y:1980},mog:"👨‍🏫👩‍🏫", subEvts:[
+        {ty:"nD",st:{mon:5,d:2,thruD:8,wkd:[2],durD:5},ttls:{"en":"Teacher Appreciation Week"},nts:{"en":"National Teacher Appreciation Week"},urls:{"en":"https://www.nea.org/TAW"},fst:{era:1,y:1980},mog:"👨‍🏫👩‍🏫",subEvts:[
             {ty:"D",st:{mon:5,d:3,thruD:9,wkd:[3]},inh:"NTeacherD",fst:{era:1,y:1985}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1], yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961}, subEvts:[
+        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1], yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace Corps Day",fst:{era:1,y:1961}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1], yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961}, subEvts:[
+        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1], yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace Corps Day",fst:{era:1,y:1961}},
         ]},
         
@@ -777,15 +777,15 @@
             {ty:"D",st:{wkd:[4]},ttls:{"en":"National School Nurse Day"},urls:{"en":"https://www.daysoftheyear.com/days/school-nurse-day/"},mog:"👩‍⚕️👨‍⚕️",fst:{era:1,y:1974},nts:{"en":"Created by Gerald Ford"}},
         ]},
         
-        {ty:"W",st:{mon:5,fullWk:2},ttls:{"en":"National Women’s Health Week"},urls:{"en":"https://www.daysoftheyear.com/days/national-womens-health-week/"},fst:{era:1,y:2010},inh:"*MedAw*",mog:"👩", subEvts:[
+        {ty:"W",st:{mon:5,fullWk:2},ttls:{"en":"National Women’s Health Week"},urls:{"en":"https://www.daysoftheyear.com/days/national-womens-health-week/"},fst:{era:1,y:2010},inh:"*MedAw*",mog:"👩",subEvts:[
             {ty:"D",st:{wkd:[3]},ttls:{"en":"Sex Differences in Health Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/sex-differences-in-health-awareness-day/"},mog:"🩺👩👨",fst:{era:1,y:2016},nts:{"en":"Created by the Society for Women’s Health Research (SWHR)"}},
         ]},
         
-        {ty:"nD",st:{mon:5,d:9,thruD:15,wkd:[1],durD:7},ttls:{"en":"National Police Week"},fst:{era:1,y:1962},mog:"👮‍♂️👮‍♀️",urls:{"en":"https://www.policeweek.org/"},nts:{"en":"Created by John F. Kennedy"}, subEvts:[
+        {ty:"nD",st:{mon:5,d:9,thruD:15,wkd:[1],durD:7},ttls:{"en":"National Police Week"},fst:{era:1,y:1962},mog:"👮‍♂️👮‍♀️",urls:{"en":"https://www.policeweek.org/"},nts:{"en":"Created by John F. Kennedy"},subEvts:[
                 {ty:"D",st:{mon:5,d:15},ttls:{"en":"Peace Officers Memorial Day"},fst:{era:1,y:1962},mog:"👮‍♂️👮‍♀️",urls:{"en":"https://www.daysoftheyear.com/days/peace-officers-memorial-day/"},nts:{"en":"Created by John F. Kennedy"}},
             ]},
         
-        {ty:"M",st:{mon:7},ttls:{"en":"National Blueberry Month"},urls:{"en":"https://www.daysoftheyear.com/days/national-blueberry-month/"},mog:"🫐",fst:{era:1,y:1974},nts:{"en":"Blueberry Month\nCreated by the US Congress"}, subEvts:[
+        {ty:"M",st:{mon:7},ttls:{"en":"National Blueberry Month"},urls:{"en":"https://www.daysoftheyear.com/days/national-blueberry-month/"},mog:"🫐",fst:{era:1,y:1974},nts:{"en":"Blueberry Month\nCreated by the US Congress"},subEvts:[
             {ty:"D",st:{d:10},ttls:{"en":"Pick Blueberries Day"},nts:{"en":"National Pick Blueberries Day"},urls:{"en":"https://www.daysoftheyear.com/days/pick-blueberries-day/"},fst:{era:1,y:2003},mog:"🫐"},
         ]},
         

@@ -428,15 +428,15 @@
         {ty:"D",st:{mon:8,d:29},ttls:{"en":"Potteries Bottle Oven Day"},urls:{"en":"https://gladstonepotterymuseumstory.blogspot.com/p/potteries-bottle-oven-day.html"},fst:{era:1,y:1978},nts:{"en":"Created by Terry Woolliscroft"}},
         {ty:"D",st:{mon:9,d:2},ttls:{"en":"Calendar Adjustment Day"},urls:{"en":"https://www.daysoftheyear.com/days/calendar-adjustment-day/"},fst:{era:1,y:1752},mog:"📆"},
         
-        {ty:"nD",st:{mon:11,d:11,thruD:17,wkd:[2],durD:5},ttls:{"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"},urls:{"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"},fst:{era:1,y:2004}, subEvts:[
+        {ty:"nD",st:{mon:11,d:11,thruD:17,wkd:[2],durD:5},ttls:{"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"},urls:{"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"},fst:{era:1,y:2004},subEvts:[
             {ty:"D",st:{mon:11,wkd:[3],d:12,thruD:18},ttls:{"en":"Odd Socks Day"},fst:{era:1,y:2017},urls:{"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"},mog:"🧦",nts:{"en":"Created by the Anti-Bullying Alliance"}},
         ]},
         
-        {ty:"nD",st:{mon:11,d:6,thruD:12,wkd:[2],durD:5},ttls:{"en":"National School Meals Week"},nts:{"en":"NSMW"},urls:{"en":"https://www.lacansmw.co.uk/"},mog:"🍛", subEvts:[
+        {ty:"nD",st:{mon:11,d:6,thruD:12,wkd:[2],durD:5},ttls:{"en":"National School Meals Week"},nts:{"en":"NSMW"},urls:{"en":"https://www.lacansmw.co.uk/"},mog:"🍛",subEvts:[
             {ty:"D",st:{wkd:[4]},ttls:{"en":"Roast Dinner Day"},urls:{"en":"https://www.daysoftheyear.com/days/roast-dinner-day/"},mog:"🍠🥩"},
         ]},
         
-        {ty:"nD",st:{mon:7,d:13,thruD:19,wkd:[7],durD:16},ttls:{"en":"Festival of British Archaeology"},urls:{"en":"https://www.archaeologyuk.org/festival.html"},fst:{era:1,y:2003},nts:{"en":"Created by the Council for British Archaeology (CBA)"}, subEvts:[
+        {ty:"nD",st:{mon:7,d:13,thruD:19,wkd:[7],durD:16},ttls:{"en":"Festival of British Archaeology"},urls:{"en":"https://www.archaeologyuk.org/festival.html"},fst:{era:1,y:2003},nts:{"en":"Created by the Council for British Archaeology (CBA)"},subEvts:[
             {ty:"D",st:{mon:7,d:20,thruD:25,wkd:[6]},ttls:{"en":"Ask an Archaeologist Day"},urls:{"en":"https://www.daysoftheyear.com/days/ask-an-archaeologist-day/"},nts:{"en":"Created by the Council for British Archaeology"},fst:{era:1,y:2018}},
         ]},
         

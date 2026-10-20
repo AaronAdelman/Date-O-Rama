@@ -4,7 +4,7 @@
     cal:"gre*",
     color:{name:"gray"},
     evts:[
-        {ty:"Y",st:{}, subEvts:[
+        {ty:"Y",st:{},subEvts:[
             {inh:"Ari" , ty:"nD",st:{mon:3,d:21},end:{mon:4,d:19}},
             {inh:"Tau" , ty:"nD",st:{mon:4,d:20},end:{mon:5,d:20}},
             {inh:"Gem", ty:"nD",st:{mon:5,d:21},end:{mon:6,d:20}},

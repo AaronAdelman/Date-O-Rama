@@ -1875,19 +1875,19 @@
             {ty:"D",st:{mon:4,d:26},inh:"Lesbian Visibility Day",fst:{era:1,y:2008}},
         ]},
         
-        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2011},last:{era:1,y:2024}, subEvts:[
+        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2011},last:{era:1,y:2024},subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage Man Day",fst:{era:1,y:2011}},
         ]},
         
-        {ty:"nD",st:{era:1,y:2025,mon:6,d:16},end:{era:1,y:2025,mon:6,d:24},inh:"Waste & Recycling Workers Week", subEvts:[
+        {ty:"nD",st:{era:1,y:2025,mon:6,d:16},end:{era:1,y:2025,mon:6,d:24},inh:"Waste & Recycling Workers Week",subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage Man Day",fst:{era:1,y:2011}},
         ]},
         
-        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2026}, subEvts:[
+        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2026},subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage Man Day",fst:{era:1,y:2011}},
         ]},
         
-        {ty:"nD",st:{mon:10,d:8,durD:5},ttls:{"en":"International Cephalopod Awareness Days"},urls:{"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"},fst:{era:1,y:2007},mog:"🐙🦑",nts:{"en":"Created by the Octopus News Magazine Online"}, subEvts:[
+        {ty:"nD",st:{mon:10,d:8,durD:5},ttls:{"en":"International Cephalopod Awareness Days"},urls:{"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"},fst:{era:1,y:2007},mog:"🐙🦑",nts:{"en":"Created by the Octopus News Magazine Online"},subEvts:[
             {ty:"D",st:{mon:10,d:8},ttls:{"en":"World Octopus Day","he":"יום התמנון העולמי"},nts:{"en":"Octopus Day","he":"יום התמנון"},urls:{"en":"https://www.daysoftheyear.com/days/world-octopus-day/"},fst:{era:1,y:2006},mog:"🐙"},
             {ty:"D",st:{mon:10,d:9},ttls:{"en":"Nautilus Night"},urls:{"en":"https://www.checkiday.com/d68f7e302383207b9c48a66f0fa8f191/nautilus-night"},fst:{era:1,y:2007}},
             {ty:"D",st:{mon:10,d:10},ttls:{"en":"Squid and Cuttlefish Day"},nts:{"en":"Squidturday\nSquittle Day"},urls:{"en":"https://www.checkiday.com/d3c8609e87ff2dd71e14fad0d4151b30/squid-and-cuttlefish-day"},fst:{era:1,y:2007},mog:"🦑"},
@@ -1895,15 +1895,15 @@
             {ty:"D",st:{mon:10,d:12},ttls:{"en":"Fossil Day"},urls:{"en":"https://laughingsquid.com/international-cephalopod-awareness-days/"},fst:{era:1,y:2007}},
         ]},
                 
-        {ty:"nD",st:{mon:11,d:12,thruD:18,wkd:[2],durD:7},ttls:{"en":"Global Entrepreneurship Week"},nts:{"en":"Enterprise Week"},urls:{"en":"https://www.genglobal.org/gew"},fst:{era:1,y:2008}, subEvts:[
+        {ty:"nD",st:{mon:11,d:12,thruD:18,wkd:[2],durD:7},ttls:{"en":"Global Entrepreneurship Week"},nts:{"en":"Enterprise Week"},urls:{"en":"https://www.genglobal.org/gew"},fst:{era:1,y:2008},subEvts:[
             {ty:"D",st:{mon:11,wkd:[5],nth:3},ttls:{"en":"Social Enterprise Day"},urls:{"en":"https://www.daysoftheyear.com/days/social-enterprise-day/"},mog:"🤝",nts:{"en":"Created by Global Entrepreneurship Week"}},
         ]},
         
-        {ty:"nD",st:{mon:7,d:7,thruD:13,wkd:[2],durD:8},ttls:{"en":"World Orca Week"},nts:{"en":"WOW"},urls:{"en":"https://www.worldorcaday.org/world-orca-week/"},mog:"🌎",fst:{era:1,y:2014}, subEvts:[
+        {ty:"nD",st:{mon:7,d:7,thruD:13,wkd:[2],durD:8},ttls:{"en":"World Orca Week"},nts:{"en":"WOW"},urls:{"en":"https://www.worldorcaday.org/world-orca-week/"},mog:"🌎",fst:{era:1,y:2014},subEvts:[
             {ty:"D",st:{mon:7,d:14},ttls:{"en":"World Orca Day"},urls:{"en":"https://www.worldorcaday.org/"},mog:"🌎"},
         ]},
         
-        {ty:"W",st:{mon:3,fullWk:1},ttls:{"en":"Celebrate Your Name Week"},nts:{"en":"CYNW\nCreated by Jerry Hill"},urls:{"en":"https://www.celebrateyournameweek.org/"},mog:"📛",fst:{era:1,y:1997}, subEvts:[
+        {ty:"W",st:{mon:3,fullWk:1},ttls:{"en":"Celebrate Your Name Week"},nts:{"en":"CYNW\nCreated by Jerry Hill"},urls:{"en":"https://www.celebrateyournameweek.org/"},mog:"📛",fst:{era:1,y:1997},subEvts:[
             {ty:"D",st:{wkd:[1]},ttls:{"en":"Namesake Day","he":"יום השמות"},urls:{"en":"https://www.celebrateyournameweek.org/"},mog:"📛",nts:{"en":"Name Day\nName Tag Day\nCreated by Jerry Hill"}},
             {ty:"D",st:{wkd:[2]},ttls:{"en":"Fun Facts Day","he":"יום העובדות המהנות"},urls:{"en":"https://www.celebrateyournameweek.org/"},nts:{"en":"Fun Facts About Names Day\nNames Day\nName Appreciation Day\nCreated by Jerry Hill","he":"יום העובדות המהנות על השם שלך"}},
             {ty:"D",st:{wkd:[3]},ttls:{"en":"The Wide World of Names Day"},urls:{"en":"https://www.celebrateyournameweek.org/"},mog:"📛",nts:{"en":"Created by Jerry Hill"}},
@@ -1913,7 +1913,7 @@
             {ty:"D",st:{wkd:[7]},ttls:{"en":"Genealogy Day","he":"יום הגנאולוגיה"},nts:{"en":"National Genealogy Day\nCreated by Jerry Hill","he":"יום הגנאולוגיה הלאומי"},urls:{"en":"https://www.celebrateyournameweek.org/"},mog:"👨‍👩‍👧‍👦"},
         ]},
         
-        {ty:"nD",st:{mon:8,d:25},end:{mon:8,d:31},urls:{"en":"https://bk2hk.org/"},ttls:{"en":"Be Kind to Humankind Week","he":"השבוע להיות אדיב למין האנושי"},fst:{era:1,y:1988},nts:{"en":"BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey"},mog:"👨👩", subEvts:[
+        {ty:"nD",st:{mon:8,d:25},end:{mon:8,d:31},urls:{"en":"https://bk2hk.org/"},ttls:{"en":"Be Kind to Humankind Week","he":"השבוע להיות אדיב למין האנושי"},fst:{era:1,y:1988},nts:{"en":"BK2HK\nCreated by Lorraine Jara of Toms River, New Jersey"},mog:"👨👩",subEvts:[
             {ty:"D",st:{wkd:[2]},ttls:{"en":"Motorist Consideration Monday"},urls:{"en":"https://bk2hk.org/week/monday/"},mog:"🛞"},
             {ty:"D",st:{wkd:[3]},ttls:{"en":"Touch-a-Heart Tuesday"},urls:{"en":"https://bk2hk.org/week/tuesday/"},mog:"❤️"},
             {ty:"D",st:{wkd:[4]},ttls:{"en":"Willing to Lend a Hand Wednesday"},urls:{"en":"https://bk2hk.org/week/wednesday/"},mog:"✋"},
@@ -1923,11 +1923,11 @@
             {ty:"D",st:{wkd:[1]},ttls:{"en":"Sacrifice Our Wants for Others’ Needs Sunday"},urls:{"en":"https://bk2hk.org/week/sunday/"},mog:"💥"},
         ]},
         
-        {ty:"W",st:{mon:4,fullWk:1,d1OfWk:2},ttls:{"en":"Parkinson’s Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/parkinsons-awareness-week/"},inh:"*MedAw*", subEvts:[
+        {ty:"W",st:{mon:4,fullWk:1,d1OfWk:2},ttls:{"en":"Parkinson’s Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/parkinsons-awareness-week/"},inh:"*MedAw*",subEvts:[
             {ty:"D",st:{mon:4,d:11},ttls:{"en":"World Parkinson’s Day","he":"יום מחלת פרקינסון העולמי"},urls:{"en":"https://www.daysoftheyear.com/days/world-parkinsons-disease-day/"},mog:"💊",fst:{era:1,y:1997},inh:"*MedAw*",nts:{"en":"Created by the World Health Organization"}},
         ]},
         
-        {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"International Assistance Dog Week"},urls:{"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"},mog:"🦮🐕‍🦺",fst:{era:1,y:2009},nts:{"en":"IADW\nCreated by by Marcie Davis"}, subEvts:[
+        {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"International Assistance Dog Week"},urls:{"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"},mog:"🦮🐕‍🦺",fst:{era:1,y:2009},nts:{"en":"IADW\nCreated by by Marcie Davis"},subEvts:[
             {ty:"D",st:{mon:8,d:4},ttls:{"en":"Assistance Dog Day","he":"יום כלבי הסיוע והנחיה"},urls:{"en":"https://www.daysoftheyear.com/days/assistance-dog-day/"},mog:"🦮"},
         ]},
         

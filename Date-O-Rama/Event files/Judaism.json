@@ -5,7 +5,7 @@
     othCals:["cop"],
     color:{name:"blue"},
     evts:[
-        {ty:"nY",st:{},end:{}, subEvts:[
+        {ty:"nY",st:{},end:{},subEvts:[
             {ty:"Y",st:{yDiv: 7, yRem: 1},ttls:{"he":"שנה א׳ לשמיטה","en":"Year 1 in the Shemiṭṭah Cycle"},mog:"[[1.square]]"},
             {ty:"Y",st:{yDiv: 7, yRem: 2},ttls:{"he":"שנה ב׳ לשמיטה","en":"Year 2 in the Shemiṭṭah Cycle"},mog:"[[2.square]]"},
             {ty:"Y",st:{yDiv: 7, yRem: 3},ttls:{"he":"שנה ג׳ לשמיטה","en":"Year 3 in the Shemiṭṭah Cycle"},mog:"[[3.square]]"},
@@ -14,7 +14,7 @@
             {ty:"Y",st:{yDiv: 7, yRem: 6},ttls:{"he":"שנה ו׳ לשמיטה","en":"Year 6 in the Shemiṭṭah Cycle"},mog:"[[6.square]]"},
             {ty:"Y",st:{yDiv: 7, yRem: 0},ttls:{"he":"שנת השמיטה","en":"Shemiṭṭah Year"},mog:"[[7.square]]"},
         ]},
-        {ty:"nY",st:{},end:{}, subEvts:[
+        {ty:"nY",st:{},end:{},subEvts:[
             {ty:"Y",st:{yDiv: 19, yRem: 1},ttls:{"he":"שנה א׳ למחזור החמה (שנה רגילה)","en":"Year 1 in the Metonic Cycle (ordinary year)"},mog:"[[1.square]]"},
             {ty:"Y",st:{yDiv: 19, yRem: 2},ttls:{"he":"שנה ב׳ למחזור החמה (שנה רגילה)","en":"Year 2 in the Metonic Cycle (ordinary year)"},mog:"[[2.square]]"},
             {ty:"Y",st:{yDiv: 19, yRem: 3},ttls:{"he":"שנה ג׳ למחזור החמה (שנה מעוברת)","en":"Year 3 in the Metonic Cycle (leap year)"},mog:"[[3.square]]"},
@@ -128,7 +128,7 @@
         {ttls:{"he":"פסח (יום טוב אחרון שני)","en":"Pesaḥ (Passover) (yom ṭov ’aḥaron sheni)"}, excludeRgns:["IL","PS"], ty:"D",st:{mon:8,d:22},inh:"*פסח*"},
         {inh:"מימונה/אסרו חג פסח",rgns:["IL","PS"], ty:"D",st:{mon:8,d:22}},
         {inh:"מימונה/אסרו חג פסח", excludeRgns:["IL","PS"], ty:"D",st:{mon:8,d:23}},
-        {ty:"nD",st:{mon:8,d:16},end:{mon:10,d:5}, subEvts:[
+        {ty:"nD",st:{mon:8,d:16},end:{mon:10,d:5},subEvts:[
             {ttls:{"he":"א׳ בעומר","en":"Counting of the ‘Omer (day 1)"}, ty:"D",st:{mon:8,d:16},inh:"*ספירת העומר*",mog:"[[1.circle]]"},
             {ttls:{"he":"ב׳ בעומר","en":"Counting of the ‘Omer (day 2)"}, ty:"D",st:{mon:8,d:17},inh:"*ספירת העומר*",mog:"[[2.circle]]"},
             {ttls:{"he":"ג׳ בעומר","en":"Counting of the ‘Omer (day 3)"}, ty:"D",st:{mon:8,d:18},inh:"*ספירת העומר*",mog:"[[3.circle]]"},

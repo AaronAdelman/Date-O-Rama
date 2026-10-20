@@ -4,7 +4,7 @@
     cal:"heb*",
     color:{name:"blue"},
     evts:[
-        {ty:"Y",st:{}, subEvts:[
+        {ty:"Y",st:{},subEvts:[
             {inh:"Ari" , ty:"M",st:{mon:8}},
             {inh:"Tau" , ty:"M",st:{mon:9}},
             {inh:"Gem", ty:"M",st:{mon:10}},

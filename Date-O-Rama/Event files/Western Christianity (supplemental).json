@@ -96,7 +96,7 @@
         {ty:"nD",st:{mon:6,d:16},end:{mon:6,d:22},inh:"NForgiveness Week",fst:{era:1,y:2004},last:{era:1,y:2024}},
         {ty:"nD",st:{mon:6,d:22,thruD:28,wkd:[6],durD:3},inh:"NForgiveness Week",fst:{era:1,y:2025}},
         
-        {ty:"M",st:{mon:7},ttls:{"en":"“Talk to Us”"},urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us/"},nts:{"en":"Created by the Samaritans"},fst:{era:1,y:2016}, subEvts:[
+        {ty:"M",st:{mon:7},ttls:{"en":"“Talk to Us”"},urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us/"},nts:{"en":"Created by the Samaritans"},fst:{era:1,y:2016},subEvts:[
             {ty:"D",st:{d:24},ttls:{"en":"“Talk to Us” Day"},urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"},nts:{"en":"Talk to Us"},fst:{era:1,y:2016}},
         ]},
     ],
