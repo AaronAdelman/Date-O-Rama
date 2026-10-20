@@ -15,5 +15,22 @@
         
         {ttls:{"en":"Astronomical dawn","he":"שחר אסטרונומי"}, ty:"pt",st:{ptTy:"twiR", deg: 18.0, offset: 0}},
         {ttls:{"en":"Astronomical dusk","he":"בין הערביים אסטרונומי"}, ty:"pt",st:{ptTy:"twiS", deg: 18.0, offset: 0}},
+
+        {ty:"Y",st:{}, subEvts:[
+            {inh:"Ari", ty:"nD", st:{mon:4,d:18}, end:{mon:5,d:12}},
+            {inh:"Tau", ty:"nD", st:{mon:5,d:13}, end:{mon:6,d:20}},
+            {inh:"Gem", ty:"nD", st:{mon:6,d:21}, end:{mon:7,d:19}},
+            {inh:"Cnc", ty:"nD", st:{mon:7,d:20}, end:{mon:8,d:9}},
+            {inh:"Leo", ty:"nD", st:{mon:8,d:10}, end:{mon:9,d:15}},
+            {inh:"Vir", ty:"nD", st:{mon:9,d:16}, end:{mon:10,d:29}},
+            {inh:"Lib", ty:"nD", st:{mon:10,d:30}, end:{mon:11,d:22}},
+            {inh:"Sco", ty:"nD", st:{mon:11,d:23}, end:{mon:11,d:28}},
+            {ttls:{"af":"Slangdraer","ar":"الحواء","arz":"اوفيوكاس","ast":"Ofiucu","az":"İlandaşıyan","ba":"Змееносец","be":"Змеяносец","be-tarask":"Зьмеядзержнік","bg":"Змиеносец","bo":"སྦྲུལ་འཛིན་སྐར་ཚོམ་","br":"Naeretaer","bs":"Zmijonosac","ca":"Constel·lació del Serpentari","cdo":"Siè-hŭ-cô̤","co":"Ophiuchus","cs":"Souhvězdí Hadonoše","cy":"Ophiuchus","da":"Slangeholderen","de":"Schlangenträger","diq":"Ophiuchus","el":"Οφιούχος","en":"Ophiuchus","eo":"Serpentisto","es":"Ofiuco","et":"Maokandja","eu":"Ophiuchus","fa":"مارافسای","fi":"Käärmeenkantaja","fr":"Ophiuchus","frr":"Slaangdreeger","ga":"Fear na bPéisteanna","gl":"Ofiuco","gv":"Fer ny Peishtyn","hak":"Sà-fû-chho","he":"נושא הנחש","hi":"सर्पधारी तारामंडल","hr":"Zmijonosac","hu":"Kígyótartó csillagkép","hy":"Օձակիր","ia":"Ophiuchus","id":"Ofiukus","ig":"Ophiuchus","is":"Naðurvaldi","it":"Ofiuco","ja":"へびつかい座","jv":"Ophiuchus","ka":"გველისმჭერის თანავარსკვლავედი","kn":"ಒಫಿಯೂಚಸ್","ko":"땅꾼자리","ks":"سرپھٕدار","kw":"Ophiuchus","la":"Ophiuchus","lb":"Ophiuchus","lt":"Gyvatnešis","lv":"Čūsknesis","mg":"Bibilava","mk":"Змијоносец","ml":"സർപ്പധരൻ","mr":"भुजंगधारी","ms":"Peregang Ular","my":"အော်ဖီယူကပ်","nan":"Choâ-khián-hō","nb":"Slangebæreren","nl":"Slangendrager","nn":"Slangeberaren","oc":"Ophiuchus","olo":"Mavonkandai","os":"Калмхæссæг","pcd":"Ofiukousse","pl":"Gwiazdozbiór Wężownika","pt":"Ophiuchus","ro":"Ofiucus","ru":"Змееносец","sah":"Үөнү Сүгээччи","sh":"Zmijonosac","sk":"Hadonos","sl":"Kačenosec","sr":"Змијоноша","sv":"Ormbäraren","sw":"Hawaa","th":"กลุ่มดาวคนแบกงู","tr":"Ophiuchus","tt":"Еланлы йолдызлыгы","uk":"Змієносець","ur":"سپیرا","uz":"Ilon eltuvchi","vi":"Xà Phu","war":"Ophiuchus","wuu":"蛇夫座","yue":"蛇夫座","zh":"蛇夫座"}, ty:"nD", st:{mon:11,d:29}, end:{mon:12,d:16},mog:"⛎"},
+            {inh:"Sgr", ty:"nD", st:{mon:12,d:17}, end:{mon:1,d:19}},
+            {inh:"Cap", ty:"nD", st:{mon:1,d:20}, end:{mon:2,d:15}},
+            {inh:"Aqr", ty:"nD", st:{mon:2,d:16}, end:{mon:3,d:10}},
+            {inh:"Psc", ty:"nD", st:{mon:3,d:11}, end:{mon:4,d:17}},
+        ]},
+
     ]
 }
