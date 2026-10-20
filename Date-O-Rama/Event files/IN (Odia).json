@@ -1,0 +1,29 @@
+// Implemented Odia calendar is the solar version.
+
+//   Odia (Lunar)    Days    Odia (Solar) Zodiac      Gregorian
+// 8 Baiśākha          31    Mesa         Aries       April–May
+// 9 Jyeṣṭha           31    Brusa        Taurus      May–June
+//10 Āṣāḍha            32    Mithuna      Gemini      June–July
+//11 Śrābaṇa           31    Karkaṭa      Cancer      July–August
+//12 Bhādraba/Bhādra   31    Singha       Leo         August–September
+// 1 Āświna            31    Kanyā        Virgo       September–October
+// 2 Kārttika          30    Tuḷā         Libra       October–November
+// 3 Mārgaśira         29    Bichā        Scorpio     November–December
+// 4 Pauṣa             29    Dhanu        Sagittarius December–January
+// 5 Māgha             30    Makara       Capricorn   January–February
+// 6 Phālguna/Phaguṇa  30    Kumbha       Aquarius    February–March
+// 7 Chaitra           30    Mina         Pisces      March–April
+
+{
+    ttls:{"*":"IN"},
+// India
+// TODO:  Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?, Buddha Purnima, Parsi New Year, Shaheedi Sabha, Baisakhi, Bohag Bihu/Rongali Bihu (Assamese New Year), Bengali New Year, Losoong/Namsoong, Pongal, Thaipusam, Goa Carnival, Vaisakhi, Mahabishuba Sankranti, Parsi New Year (uncertain scheduling)
+    defLocale:"en",
+    cal:"odia",
+    color:{name:"orange"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
+    evts:[
+        {ty:"D",st:{mon:8,d:1},ttls:{"as":"পনা সংক্ৰান্তি","en":"Maha Bishuba Sankranti","ml":"പാന സംക്രാന്തി","mr":"महा विषुव संक्रांती","or":"ପଣା ସଂକ୍ରାନ୍ତି","ta":"பான சங்கராந்தி"}, urls:{"en":"https://en.wikipedia.org/wiki/Puthandu"},nts:{"en":"Pana Sankranti\nOdia Nua Barsa\nOdia New Year"}},
+
+    ]
+}

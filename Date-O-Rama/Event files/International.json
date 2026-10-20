@@ -208,7 +208,6 @@
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"International Day of the Air Traffic Controller"},fst:{era:1,y:1961},mog:"✈️",urls:{"en":"https://nationaldaycalendar.com/international-day-of-the-air-traffic-controller-october-20/"}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"International Mastocytosis & Mast Cell Disease Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/international-mastocytosis-mast-cell-disease-awareness-day/"},fst:{era:1,y:2018},inh:"*MedAw*"},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"Office Chocolate Day"},urls:{"en":"https://www.daysoftheyear.com/days/office-chocolate-day/"},inh:"*Choc*"},
-        {ty:"D",st:{mon:10,d:20},ttls:{"en":"Suspenders Day"},nts:{"en":"Suspender’s Day\nSuspenders Appreciation Day"},fst:{era:1,y:1996},nts:{"en":"Yet another fashion-related event.  Move along.  Nothing to see here."},urls:{"en":"https://www.daysoftheyear.com/days/suspenders-day/"}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"Talent Transformation Day"},urls:{"en":"https://www.daysoftheyear.com/days/talent-transformation-day/"},fst:{era:1,y:2020},nts:{"en":"Created by the Talent Transformation Guild"}},
         {ty:"D",st:{mon:10,d:20},ttls:{"en":"World Calvados Day"},urls:{"en":"https://www.checkiday.com/25226a7a605a9b17926a5727dbd5e014/world-calvados-day"},fst:{era:1,y:2020},mog:"🍷"},
         {ty:"D",st:{mon:10,d:20},urls:{"en":"https://nationaltoday.com/world-crispr-day/"},ttls:{"en":"World CRISPR Day"},fst:{era:1,y:2020},mog:"🧬"},

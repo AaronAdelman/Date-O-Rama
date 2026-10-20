@@ -155,6 +155,8 @@
 		A52BAE7B2CA59B610006A178 /* ASAWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BAE782CA59B590006A178 /* ASAWeekday.swift */; };
 		A52C157D3085D84500CCE986 /* BT (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A52C157C3085D84500CCE986 /* BT (Vikram Samvat).json */; };
 		A52C157E3085D84500CCE986 /* BT (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A52C157C3085D84500CCE986 /* BT (Vikram Samvat).json */; };
+		A52C158030872AD100CCE986 /* IN (Odia).json in Resources */ = {isa = PBXBuildFile; fileRef = A52C157F30872AD100CCE986 /* IN (Odia).json */; };
+		A52C158130872AD100CCE986 /* IN (Odia).json in Resources */ = {isa = PBXBuildFile; fileRef = A52C157F30872AD100CCE986 /* IN (Odia).json */; };
 		A52FA7DB2EFBB5960032A649 /* Baháʼí Faith.json in Resources */ = {isa = PBXBuildFile; fileRef = A52FA7DA2EFBB5960032A649 /* Baháʼí Faith.json */; };
 		A52FA7DC2EFBB5960032A649 /* Baháʼí Faith.json in Resources */ = {isa = PBXBuildFile; fileRef = A52FA7DA2EFBB5960032A649 /* Baháʼí Faith.json */; };
 		A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
@@ -1414,6 +1416,7 @@
 		A52A52382C2B457E00AAA012 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A52BAE782CA59B590006A178 /* ASAWeekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWeekday.swift; sourceTree = "<group>"; };
 		A52C157C3085D84500CCE986 /* BT (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BT (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A52C157F30872AD100CCE986 /* IN (Odia).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IN (Odia).json"; sourceTree = "<group>"; };
 		A52FA7DA2EFBB5960032A649 /* Baháʼí Faith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Baháʼí Faith.json"; sourceTree = "<group>"; };
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
 		A53437502857971800F8E8AF /* ASABoothCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASABoothCalendar.swift; sourceTree = "<group>"; };
@@ -2219,6 +2222,7 @@
 				A59007AF304E835D00C64C3B /* IN (Malayam).json */,
 				A5E46B2D2D9488C50084FB36 /* IN (Muslim).json */,
 				A50709FF3052825C003630F2 /* IN (Tamil).json */,
+				A52C157F30872AD100CCE986 /* IN (Odia).json */,
 				A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
@@ -3172,6 +3176,7 @@
 				A5BF2C4D3032FECF00C0648B /* Sikhism (Vikram Samvat).json in Resources */,
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
 				A54539E126A9BA180028EAD5 /* Shia (times, Jafari).json in Resources */,
+				A52C158130872AD100CCE986 /* IN (Odia).json in Resources */,
 				A57797D42B8FC29900F68529 /* Islam (derived).json in Resources */,
 				A5B999C428622BBA00072FD5 /* CG.json in Resources */,
 				A5E4965B286254FA001BF40C /* NR.json in Resources */,
@@ -3432,6 +3437,7 @@
 				A5EB4F922850EF0B00A32FB1 /* RS.json in Resources */,
 				A576C39328171F96005AC73D /* NZ.json in Resources */,
 				A529D3522A151404004D8799 /* Wellcat.json in Resources */,
+				A52C158030872AD100CCE986 /* IN (Odia).json in Resources */,
 				A5F3B02128565F8100865CEB /* BS.json in Resources */,
 				A5E9AB632A1B4C8900433D7A /* Names.json in Resources */,
 				A52A52392C2B457E00AAA012 /* Localizable.xcstrings in Resources */,
