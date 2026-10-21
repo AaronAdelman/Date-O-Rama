@@ -27,6 +27,21 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts:[
+        {ty:"Y",st:{},subEvts:[
+            {ty:"M",st:{mon:1},inh:"Leo"},
+            {ty:"M",st:{mon:2},inh:"Vir"},
+            {ty:"M",st:{mon:3},inh:"Lib"},
+            {ty:"M",st:{mon:4},inh:"Sco"},
+            {ty:"M",st:{mon:5},inh:"Sgr"},
+            {ty:"M",st:{mon:6},inh:"Cap"},
+            {ty:"M",st:{mon:7},inh:"Aqr"},
+            {ty:"M",st:{mon:8},inh:"Psc"},
+            {ty:"M",st:{mon:9},inh:"Ari"},
+            {ty:"M",st:{mon:10},inh:"Tau"},
+            {ty:"M",st:{mon:11},inh:"Gem"},
+            {ty:"M",st:{mon:12},inh:"Cnc"},
+        ]},
+
         {ty:"D",st:{mon:9,d:1},ttls:{"ar":"فيشو","as":"বিষু","bn":"বিষু","en":"Vishu","fr":"Vishu","hi":"विषु","hy":"Վիշու","id":"Vishu","ml":"വിഷു","ms":"Vishu","pa":"ਵਿਸ਼ੂ","pl":"Vishu","ru":"Вишу","sa":"विषुवपर्व","sat":"ᱵᱤᱥᱩ","ta":"விஷூ"},urls:{"en":"https://en.wikipedia.org/wiki/Vishu"}},
         {ty:"D", st:{mon:9, d:10}, ttls:{"en":"Pathamudayam"}},
         {ty:"M", st:{mon:12}, ttls:{"en":"Ramayana Masam"}},

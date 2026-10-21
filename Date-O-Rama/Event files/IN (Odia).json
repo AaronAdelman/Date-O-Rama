@@ -36,8 +36,16 @@
             {ty:"M",st:{mon:5},inh:"Cap"},
             {ty:"M",st:{mon:6},inh:"Aqr"},
             {ty:"M",st:{mon:7},inh:"Psc"},
-        ]
-        },
+        ]},
+
+        {ty:"Y",st:{},subEvts:[
+            {ty:"nM",st:{mon:8},end:{mon:9},inh:"Grishma"},
+            {ty:"nM",st:{mon:10},end:{mon:11},inh:"Varsha"},
+            {ty:"nM",st:{mon:12},end:{mon:1},inh:"Sharada"},
+            {ty:"nM",st:{mon:2},end:{mon:3},inh:"Hemanta"},
+            {ty:"nM",st:{mon:4},end:{mon:5},inh:"Shishira"},
+            {ty:"nM",st:{mon:6},end:{mon:7},inh:"Vasanta"},
+        ]},
 
         {ty:"D",st:{mon:8,d:1},ttls:{"as":"পনা সংক্ৰান্তি","en":"Maha Bishuba Sankranti","ml":"പാന സംക്രാന്തി","mr":"महा विषुव संक्रांती","or":"ପଣା ସଂକ୍ରାନ୍ତି","ta":"பான சங்கராந்தி"}, urls:{"en":"https://en.wikipedia.org/wiki/Maha_Bishuba_Sankranti"},nts:{"en":"Pana Sankranti\nOdia Nua Barsa\nOdia New Year"}},
         {ty:"D",st:{mon:9,d:30},ttls:{"en":"Sajabaja"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
