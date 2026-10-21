@@ -277,7 +277,7 @@
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"National Pets for Veterans Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-pets-for-veterans-day/"},fst:{era:1,y:2009},nts:{"en":"Created by Clarissa Black"}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"National Reptile Awareness Day","he":"יום המודעות הלאומי לזוחלים"},urls:{"en":"https://www.daysoftheyear.com/days/reptile-awareness-day/"},nts:{"en":"National Reptile Day\nWorld Reptile Day"},mog:"🦎🐍🐢"},
         {ty:"D",st:{mon:10,d:22},ttls:{"en":"Leave a Review Day"},nts:{"en":"National Leave a Review Day"},urls:{"en":"https://www.daysoftheyear.com/days/leave-a-review-day/"},fst:{era:1,y:2023},nts:{"en":"Created by Reputation"}},
-        {ty:"D",st:{mon:10,d:22},ttls:{"en":"National Color Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-color-day/"},fst:{era:1,y:2011},mog:"🎨"},
+        {ty:"D",st:{mon:10,d:22},ttls:{"en":"National Color Day","he":"יום הצבע הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/national-color-day/"},fst:{era:1,y:2011},mog:"🎨"},
         {ty:"D",st:{mon:10,d:22},ttls:{"en":"National Knee Day"},urls:{"en":"https://www.checkiday.com/a3d90916d68bb0e6f138a8be7c51267f/national-knee-day"},fst:{era:1,y:2015}},
         {ty:"D",st:{mon:10,d:22},ttls:{"en":"National Kristopher NaJee Roebuck Day"},urls:{"en":"https://nationaltoday.com/national-kristopher-najee-roebuck-day/"},fst:{era:1,y:2018}},
         {ty:"D",st:{mon:10,d:22},ttls:{"en":"National Nut Day","he":"יום האגוזים הלאומי"},mog:"🌰",urls:{"en":"https://www.daysoftheyear.com/days/nut-day/"},fst:{era:1,y:2016},nts:{"en":"Created by Liberation Foods"}},

@@ -650,6 +650,22 @@
             {subttls:{"he":"מעילה","en":"Me‘ilah"},st:2604,end:2639},
             {subttls:{"he":"נידה","en":"Niddah"},st:2640,end:2711},
         ],cR1stNo:2},
+
+        {ty:"Y",st:{},subEvts:[
+            {ty:"M",st:{mon:8},inh:"Ari"},
+            {ty:"M",st:{mon:9},inh:"Tau"},
+            {ty:"M",st:{mon:10},inh:"Gem"},
+            {ty:"M",st:{mon:11},inh:"Cnc"},
+            {ty:"M",st:{mon:12},inh:"Leo"},
+            {ty:"M",st:{mon:13},inh:"Vir"},
+            {ty:"M",st:{mon:1},inh:"Lib"},
+            {ty:"M",st:{mon:2},inh:"Sco"},
+            {ty:"M",st:{mon:3},inh:"Sgr"},
+            {ty:"M",st:{mon:4},inh:"Cap"},
+            {ty:"M",st:{mon:5},inh:"Aqr"},
+            {ty:"M",st:{mon:7, yLens:[353, 354, 355]},inh:"Psc"},
+            {ty:"nM",st:{mon:6, yLens:[383, 384, 385]},end:{mon:7},inh:"Psc"},
+        ]},
     ],
     tpls:{
         "*ספירת העומר*":{ty:"D",st:{mon:8,d:16},urls:{"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
@@ -750,6 +766,5 @@
 "Hosha‘noth:  ’E‘erokh Shu‘i":{ty:"D",st:{mon:1,d:17,wkd:[2,4,5]}, ttls:{"he":"הושענות:  אערוך שועי","en":"Hosha‘noth:  ’E‘erokh Shu‘i"}},
 "Hosha‘noth:  ’Even Shethiyyah":{ty:"D",st:{mon:1,d:16,wkd:[3,4,6]},ttls:{"he":"הושענות:  אבן שתיה","en":"Hosha‘noth:  ’Even Shethiyyah"}},
 "Hosha‘noth:  Qel leMosha‘oth":{ty:"D",st:{mon:1,d:18,wkd:[6]},ttls:{"he":"הושענות:  א׳ למושעות","en":"Hosha‘noth:  Qel leMosha‘oth"}},
-
     }
 }

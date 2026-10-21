@@ -23,7 +23,30 @@
     color:{name:"orange"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_India"},
     evts:[
-        {ty:"D",st:{mon:8,d:1},ttls:{"as":"পনা সংক্ৰান্তি","en":"Maha Bishuba Sankranti","ml":"പാന സംക്രാന്തി","mr":"महा विषुव संक्रांती","or":"ପଣା ସଂକ୍ରାନ୍ତି","ta":"பான சங்கராந்தி"}, urls:{"en":"https://en.wikipedia.org/wiki/Puthandu"},nts:{"en":"Pana Sankranti\nOdia Nua Barsa\nOdia New Year"}},
+        {ty:"Y",st:{},subEvts:[
+            {ty:"M",st:{mon:8},inh:"Ari"},
+            {ty:"M",st:{mon:9},inh:"Tau"},
+            {ty:"M",st:{mon:10},inh:"Gem"},
+            {ty:"M",st:{mon:11},inh:"Cnc"},
+            {ty:"M",st:{mon:12},inh:"Leo"},
+            {ty:"M",st:{mon:1},inh:"Vir"},
+            {ty:"M",st:{mon:2},inh:"Lib"},
+            {ty:"M",st:{mon:3},inh:"Sco"},
+            {ty:"M",st:{mon:4},inh:"Sgr"},
+            {ty:"M",st:{mon:5},inh:"Cap"},
+            {ty:"M",st:{mon:6},inh:"Aqr"},
+            {ty:"M",st:{mon:7},inh:"Psc"},
+        ]
+        },
+
+        {ty:"D",st:{mon:8,d:1},ttls:{"as":"পনা সংক্ৰান্তি","en":"Maha Bishuba Sankranti","ml":"പാന സംക്രാന്തി","mr":"महा विषुव संक्रांती","or":"ପଣା ସଂକ୍ରାନ୍ତି","ta":"பான சங்கராந்தி"}, urls:{"en":"https://en.wikipedia.org/wiki/Maha_Bishuba_Sankranti"},nts:{"en":"Pana Sankranti\nOdia Nua Barsa\nOdia New Year"}},
+        {ty:"D",st:{mon:9,d:30},ttls:{"en":"Sajabaja"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
+        {ty:"nD",st:{mon:9,d:31},end:{mon:10,d:2},ttls:{"en":"Raja Parba","or":"ରଜ ପର୍ବ"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"},subEvts:[
+            {ty:"D",st:{mon:9,d:31},ttls:{"en":"Pahili Raja"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
+            {ty:"D",st:{mon:10,d:1},ttls:{"en":"Mithuna Sankranti"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
+            {ty:"D",st:{mon:10,d:2},ttls:{"en":"Bhudaaha"},nts:{"en":"Basi Raja"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
+        ]},
+        {ty:"D",st:{mon:10,d:3},ttls:{"en":"Basumati snana"}, urls:{"en":"https://en.wikipedia.org/wiki/Raja_(festival)"}},
 
     ]
 }
