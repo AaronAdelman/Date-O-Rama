@@ -255,7 +255,7 @@
         {ty:"M",st:{mon:10},ttls:{"en":"Unblocktober"},urls:{"en":"https://www.unblocktober.org/"},fst:{era:1,y:2019},nts:{"en":"Created by Lanes Group, PLC"}},
         {ty:"M",st:{mon:12},ttls:{"en":"Decembeard"},urls:{"en":"https://www.daysoftheyear.com/days/decembeard/"},fst:{era:1,y:2012},inh:"*MedAw*",nts:{"en":"Created by Bowel Cancer UK"}},
         {ty:"M",st:{mon:2},inh:"BlackHistoryM",fst:{era:1,y:1987}},
-        {ty:"M",st:{mon:2},inh:"LGBTQ History Month",fst:{era:1,y:2005}},
+        {ty:"M",st:{mon:2},inh:"LGBTQHistoryM",fst:{era:1,y:2005}},
         {ty:"M",st:{mon:2},ttls:{"en":"Dignity Action Month"},urls:{"en":"https://www.dignityincare.org.uk/Dignity-in-Care-events/dignity-action-month/"},fst:{era:1,y:2010},nts:{"en":"Created by the National Dignity Council"},mog:"🖤"},
         {ty:"M",st:{mon:2},ttls:{"en":"Raynaud’s Awareness Month"},urls:{"en":"https://www.sruk.co.uk/get-involved/awareness-campaigns/raynauds-awareness-month/"},inh:"*MedAw*",nts:{"en":"Created by Lynn Wunderman"}},
         {ty:"M",st:{mon:3},inh:"Women’s History Month"},

@@ -1870,8 +1870,9 @@
         {ty:"W",st:{mon:9,fullWk:2},ttls:{"en":"International Housekeeping and Environmental Services Week"},urls:{"en":"https://www.ieha.org/ihw"},nts:{"en":"Housekeepers Week\nEnvironmental Services Week\nEVS Week\nHousekeeping Week\nCreated by Integrated Environment and Health Assessment (IEHA)"},fst:{era:1,y:1981},mog:"🌎"},
         {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},ttls:{"en":"World Mitochondrial Disease Week"},nts:{"en":"Mitochondrial Disease Awareness Week"},urls:{"en":"https://mitopatients.org/mito-week/"},fst:{era:1,y:2011}},
         {ty:"W",st:{mon:9,fullWk:3},ttls:{"en":"Farm Animal Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/farm-animal-awareness-week/"},mog:"🐄",fst:{era:1,y:1993}},
+        {ty:"D",st:{mon:10,d:25},ttls:{"en":"World Knee Day"},urls:{"en":"https://nationaldaycalendar.com/celebrations/world-knee-day"},fst:{era:1,y:2026},nts:{"en":"Created by Dr. Azam Badar “Dr. Knee” Khan and Kunjan Singh"}},
 
-        {ty:"nD",st:{mon:4,d:20,thruD:26,wkd:[2]},end:{mon:4,d:26,thruMon:5,thruD:2,wkd:[1]},ttls:{"en":"Lesbian Visibility Week","es":"Semana de la Visibilidad Lésbica","ja":"レズビアン可視化週間","pa":"ਲੈਸਬੀਅਨ ਵਿਜ਼ੀਬਿਲਟੀ ਵੀਕ","uk":"Тиждень видимості лесбійок"},nts:{"en":"Created by the West Hollywood Lesbian Visibility Committee"},fst:{era:1,y:1990}, overlappingSubEvts:[
+        {ty:"nD",st:{mon:4,d:20,thruD:26,wkd:[2]},end:{mon:4,d:26,thruMon:5,thruD:2,wkd:[1]},ttls:{"en":"Lesbian Visibility Week","es":"Semana de la Visibilidad Lésbica","ja":"レズビアン可視化週間","pa":"ਲੈਸਬੀਅਨ ਵਿਜ਼ੀਬਿਲਟੀ ਵੀਕ","uk":"Тиждень видимості лесбійок"},nts:{"en":"Created by the West Hollywood Lesbian Visibility Committee"},fst:{era:1,y:1990}, subEvts:[
             {ty:"D",st:{mon:4,d:26},inh:"Lesbian Visibility Day",fst:{era:1,y:2008}},
         ]},
         

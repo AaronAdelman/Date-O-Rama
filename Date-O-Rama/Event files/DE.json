@@ -65,7 +65,7 @@
         {ty:"D",ttls:{"en":"Day of the Homeland"},st:{mon:9,wkd:[1],nth:2},urls:{"en":"https://nationaltoday.com/day-of-the-homeland/"},fst:{era:1,y:1949},nts:{"en":"Created by Paul Wagner"}},
         {ty:"nD",st:{mon:11,d:1},end:{mon:11,d:7},ttls:{"en":"Marzipan Week","he":"שבוע המרציפן"},nts:{"en":"National Marzipan Week","he":"שבוע המרציפן הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/marzipan-week/"}},
         {ty:"D",st:{mon:10,d:11},inh:"NCOD",fst:{era:1,y:1988}},
-        {ty:"M",st:{mon:5},inh:"LGBTQ History Month",fst:{era:1,y:2014}},
+        {ty:"M",st:{mon:5},inh:"LGBTQHistoryM",fst:{era:1,y:2014}},
     ],
     tpls:{
         "NRatCatchersD":{ty:"D",st:{mon:7,d:22},ttls:{"en":"National Rat Catcher’s Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-rat-catchers-day/"},nts:{"en":"Ratcatcher’s Day"},mog:"🪈"},

@@ -146,7 +146,7 @@
         {ty:"nD",st:{mon:8,d:29},end:{mon:9,d:4},ttls:{"en":"Literacy & Numeracy Week"},urls:{"en":"https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/resources-for-schools/literacy-and-numeracy-week"},mog:"📒"},
         {ty:"D",st:{mon:9,d:4},ttls:{"en":"Macadamia Nut Day"},nts:{"en":"National Macadamia Nut Day"},urls:{"en":"https://www.australian-macadamias.org/lets-celebrate-macadamia-nut-day/"}},
         {ty:"D",st:{mon:10,d:11},inh:"NCOD",fst:{era:1,y:1988}},
-        {ty:"M",st:{mon:10},inh:"LGBTQ History Month",fst:{era:1,y:2016}},
+        {ty:"M",st:{mon:10},inh:"LGBTQHistoryM",fst:{era:1,y:2016}},
         {ty:"D",st:{mon:9,wkd:[1],nth:2},ttls:{"en":"Sustainable House Day","hy":"Կայուն տան օր"},urls:{"en":"https://sustainablehouseday.com/"},fst:{era:1,y:2001},mog:"🏠"},
         {ty:"D",st:{mon:1,d:9},ttls:{"en":"National Australian Shepherd Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-australian-shepherd-day/"},fst:{era:1,y:2020},nts:{"en":"Created by Aussie Times"}},
         {ty:"nD",st:{mon:2,d:16,thruD:22,wkd:[6]},end:{mon:3,d:17,thruD:23,wkd:[1]},ttls:{"en":"Adelaide Fringe","fr":"Adelaide Fringe","it":"Adelaide Fringe"},nts:{"en":"Adelaide Fringe Festival"},urls:{"en":"https://adelaidefringe.com.au/"},mog:"⭐",fst:{era:1,y:1960}},
