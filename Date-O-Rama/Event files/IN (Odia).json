@@ -1,4 +1,5 @@
 // Implemented Odia calendar is the solar version.
+// The lunar version SEEMS to be the Vikram Samvat
 
 //   Odia (Lunar)    Days    Odia (Solar) Zodiac      Gregorian
 // 8 Baiśākha          31    Mesa         Aries       April–May
