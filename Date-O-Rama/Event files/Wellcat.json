@@ -92,8 +92,10 @@
             {ty:"D",st:{mon:11,d:25},ttls:{"en":"Blasé Day"}},
             {ty:"D",st:{mon:11,d:30},ttls:{"en":"Stay Home Because You’re Well Day"},nts:{"en":"National Stay Home Because You’re Well Day\nNational Stay at Home Because You’re Well Day"}},
         ]},
-        {ty:"D",st:{mon:3,d:15},ttls:{"en":"True Confessions Day","he":"יום וידויי האמת"}},
-        {ty:"D",st:{mon:7,d:13},ttls:{"en":"Gruntled Workers Day"}},
-        {ty:"D",st:{mon:8,d:28},ttls:{"en":"Crackers Over the Keyboard Day"}},
+        {ty:"Y",st:{},subEvts:[
+            {ty:"D",st:{mon:3,d:15},ttls:{"en":"True Confessions Day","he":"יום וידויי האמת"}},
+            {ty:"D",st:{mon:7,d:13},ttls:{"en":"Gruntled Workers Day"}},
+            {ty:"D",st:{mon:8,d:28},ttls:{"en":"Crackers Over the Keyboard Day"}},
+        ]},
     ]
 }
