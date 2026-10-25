@@ -352,7 +352,5 @@
         {ty:"M",st:{mon:10},ttls:{"en":"Rhizomes and Persimmons Month"},urls:{"en":"https://www.daysoftheyear.com/days/rhizomes-and-persimmons-month/"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Raptor Month"},urls:{"en":"https://www.daysoftheyear.com/days/raptor-month/"},nts:{"en":"Created by The Avian Promise, Inc."},fst:{era:1,y:2006},mog:"🦅"},
         {ty:"M",st:{mon:10},ttls:{"en":"Organize Your Medical Information Month"},urls:{"en":"https://www.daysoftheyear.com/days/organize-your-medical-information-month/"},inh:"*MedAw*"},
-
-        {ty:"M",st:{mon:11},ttls:{"en":"COPD Awareness Month"},nts:{"en":"Chronic Obstructive Pulmonary Disease Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/copd-awareness-month/"},mog:"🫁",inh:"*MedAw*"},
     ]
 }

@@ -1,0 +1,14 @@
+{
+    ttls:{"en":"Polar Bears International","fa":"سازمان جهانی خرس‌های قطبی"},
+    defLocale:"en",
+    cal:"gre*",
+    color:{name:"blue"},
+    fst:{era:1,y:1994},
+    mog:"🐻‍❄️",
+    urls:{"en":"https://polarbearsinternational.org/"},
+    evts:[
+        {ty:"D",st:{mon:2,d:27},ttls:{"ar":"اليوم العالمي للدب القطبي","az":"Beynəlxalq Ağ Ayılar Günü","ca":"Dia International de l’Os Polar","en":"International Polar Bear Day","es":"Día Internacional del Oso Polar","fr":"Journée internationale de l’ours polaire","ha":"Ranar Polar Bear ta Duniya","he":"יום דוב הקוטב הלאומי","ml":"അന്താരാഷ്ട്ര ധ്രുവക്കരടിദിനം","nl":"Internationale dag van de ijsbeer","ro":"Ziua Internațională a Ursului Polar","ru":"Международный день белого медведя","ta":"பன்னாட்டுத் துருவக் கரடி நாள்","uk":"Міжнародний день білого ведмедя"},nts:{"en":"National Polar Bear Day\nCreated by Polar Bears International"},fst:{era:1,y:1994},urls:{"en":"https://www.daysoftheyear.com/days/polar-bear-day/"}},
+        {ty:"D",st:{mon:7,d:15},ttls:{"en":"Arctic Sea Ice Day"},urls:{"en":"https://polarbearsinternational.org/act-now/awareness-events/arctic-sea-ice-day/"},nts:{"en":"Created by Polar Bears International"}},
+        {ty:"nD",st:{mon:10,d:28,thruMon:11,thruD:3,wkd:[1]},end:{mon:11,d:3,thruD:9,wkd:[7]},ttls:{"en":"Polar Bear Week"},urls:{"en":"https://www.daysoftheyear.com/days/polar-bear-week/"},nts:{"en":"Created by Polar Bears International"}},
+    ]
+}
