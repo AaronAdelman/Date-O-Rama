@@ -82,7 +82,6 @@
         {ty:"M",st:{mon:11},ttls:{"en":"Bladder Health Month"},urls:{"en":"https://nationaltoday.com/bladder-health-month/"},fst:{era:1,y:2022}},
         {ty:"M",st:{mon:11},ttls:{"en":"Diabetic Eye Disease Month"},nts:{"en":"Diabetic Eye Disease Awareness Month\nDiabetes-Related Eye Disease Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/diabetic-eye-disease-month/"},mog:"👁️",inh:"*MedAw*"},
         {ty:"M",st:{mon:3},ttls:{"en":"Seagrass Awareness Month"},urls:{"en":"https://savethemanatee.org/news-events/manatee-awareness/"}},
-        {ty:"M",st:{mon:4},ttls:{"en":"Manatee Awareness Month (November"},urls:{"en":"https://savethemanatee.org/news-events/manatee-awareness/"}},
         {ty:"M",st:{mon:11},ttls:{"en":"Family Stories Month"},urls:{"en":"https://www.daysoftheyear.com/days/family-stories-month/"},fst:{era:1,y:2006},nts:{"en":"Created by Warm Fuzzies and Dr. Charles Sorenson"}},
         {ty:"M",st:{mon:11},ttls:{"en":"Historic Bridge Awareness Month"},urls:{"en":"https://www.daysoftheyear.com/days/historic-bridge-awareness-month/"},fst:{era:1,y:2006},nts:{"en":"Created by HistoricBridges.org"}},
         {ty:"M",st:{mon:11},ttls:{"en":"World Vegan Month","he":"חודש הטבעונות העולמי"},urls:{"en":"https://www.vegansociety.com/get-involved/world-vegan-month"},mog:"🌻",fst:{era:1,y:1994},nts:{"en":"Vegan Awareness Month"}},
