@@ -48,22 +48,22 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
     @Published var localeIdentifier:  String = ""
-    
-    
+
+
     // MARK: -
-    
+
     override init() {
         super.init()
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
     } // override init()
-    
+
     deinit {
         let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
     } // deinit
-    
-    
+
+
     @objc func handleStoreChanged(notification:  Notification) -> Void {
         self.clearCacheObjects()
     } // func handleStoreChanged(notification:  Notification) -> Void
@@ -72,7 +72,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if !self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) {
             self.iCalendarEventCalendars = []
         }
-        
+
         var revisedBuiltInEventCalendars: Array<ASAEventCalendar> = []
         for eventCalendar in self.builtInEventCalendars {
             if (eventCalendar.eventsFile?.calendarCode ?? .none).matches(self.calendar.calendarCode) {
@@ -81,7 +81,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             self.builtInEventCalendars = revisedBuiltInEventCalendars
         }
     }
-    
+
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .gregorian) {
         didSet {
             enforceDateAndTimeFormatSelfConsistency()
@@ -96,16 +96,16 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
             self.dateFormat = self.calendar.defaultDateFormat
         }
-        
+
         if !self.calendar.supportedTimeFormats.contains(self.timeFormat) {
             self.timeFormat = self.calendar.defaultTimeFormat
         }
     }
-    
+
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
             enforceDateAndTimeFormatSelfConsistency()
-            
+
             if !startingUp {
                 self.clearCacheObjects()
             }
@@ -137,7 +137,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             }
         } // didSet
     } // var iCalendarEventCalendars
-    
+
     @Published var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
 
     @Published var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
@@ -148,7 +148,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     func handleLocationDataChanged() {
         if !startingUp {
             self.clearCacheObjects()
-//            debugPrint(#file, #function, "The event cache has been cleared.")
+            //            debugPrint(#file, #function, "The event cache has been cleared.")
         }
     }
 
@@ -163,18 +163,18 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         self.startAndEndDateStringsCache.removeAllObjects()
     } // func clearCacheObjects()
 
-    
+
     // MARK:  -
-        
+
     public func dictionary(forComplication:  Bool, location: ASALocation, usesDeviceLocation: Bool) ->  Dictionary<String, Any> {
         //        debugPrint(#file, #function)
 
         let builtInEventCalendarsFileNames = {
             let temp = self.builtInEventCalendars.map{ $0.fileName }
-            
+
             return Array(Set(temp))
         }()
-        
+
         var result = [
             UUID_KEY:  uuid.uuidString,
             LOCALE_KEY:  localeIdentifier,
@@ -191,7 +191,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && !forComplication {
             result[ICALENDAR_EVENT_CALENDARS_KEY] =  self.iCalendarEventCalendars.map{ $0.title }
         }
-        
+
         result[LATITUDE_KEY] = location.location.coordinate.latitude
         result[LONGITUDE_KEY] = location.location.coordinate.longitude
         result[ALTITUDE_KEY] = location.location.altitude
@@ -210,11 +210,11 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if location.regionCode != nil {
             result[ISO_COUNTRY_CODE_KEY] = location.regionCode
         }
-        
+
         if location.postalCode != nil {
             result[POSTAL_CODE_KEY] = location.postalCode
         }
-        
+
         if location.administrativeArea != nil {
             result[ADMINISTRATIVE_AREA_KEY] = location.administrativeArea
         }
@@ -234,7 +234,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if location.subThoroughfare != nil {
             result[SUBTHOROUGHFARE_KEY] = location.subThoroughfare
         }
-        
+
         result[TYPE_KEY] = location.type.rawValue
 
         //        debugPrint(#file, #function, result)
@@ -242,12 +242,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // func dictionary(forComplication:  Bool, location: ASALocation, usesDeviceLocation: Bool) ->  Dictionary<String, Any>
 
     private var startingUp = true
-    
+
     public class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool)? {
         //        debugPrint(#file, #function, dictionary)
-        
+
         let newClock = ASAClock()
-        
+
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
             let tempUUID: UUID? = UUID(uuidString: UUIDString!)
@@ -259,12 +259,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         } else {
             newClock.uuid = UUID()
         }
-        
+
         let localeIdentifier = dictionary[LOCALE_KEY] as? String
         if localeIdentifier != nil {
             newClock.localeIdentifier = localeIdentifier!
         }
-        
+
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
@@ -276,12 +276,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         } else {
             return nil
         }
-        
+
         let dateFormat = dictionary[DATE_FORMAT_KEY] as? String
         if dateFormat != nil {
             newClock.dateFormat = ASADateFormat(rawValue: dateFormat! )!
         }
-        
+
         let timeFormat = dictionary[TIME_FORMAT_KEY] as? String
         if timeFormat != nil {
             newClock.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
@@ -302,17 +302,17 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let iCalendarEventCalendarsTitles = dictionary[ICALENDAR_EVENT_CALENDARS_KEY] as? Array<String>
             newClock.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
         }
-        
+
         let rawDateEventVisibility = dictionary[CELL_DATE_EVENT_VISIBILITY_KEY] as? Int
         if rawDateEventVisibility != nil {
             newClock.allDayEventVisibility = ASAClockCellDateEventVisibility(rawValue: rawDateEventVisibility!) ?? .defaultValue
         }
-        
+
         let rawTimeEventVisibility = dictionary[CELL_TIME_EVENT_VISIBILITY_KEY] as? String
         if rawTimeEventVisibility != nil {
             newClock.eventVisibility = ASAClockCellTimeEventVisibility(rawValue: rawTimeEventVisibility!) ?? .defaultValue
         }
-        
+
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
         let latitude = dictionary[LATITUDE_KEY] as? Double
         let longitude = dictionary[LONGITUDE_KEY] as? Double
@@ -327,7 +327,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let newLocality = dictionary[LOCALITY_KEY] as? String
         let newCountry = dictionary[COUNTRY_KEY] as? String
         let newISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
-        
+
         let newPostalCode = dictionary[POSTAL_CODE_KEY] as? String
         let newAdministrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String
         let newSubAdministrativeArea = dictionary[SUBADMINISTRATIVE_AREA_KEY] as? String
@@ -336,7 +336,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let newSubThoroughfare = dictionary[SUBTHOROUGHFARE_KEY] as? String
 
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
-        
+
         let rawType = dictionary[TYPE_KEY] as? String
         let type: ASALocationType = (rawType == nil) ? .earthLocation : ASALocationType(rawValue: rawType!)!
 
@@ -355,17 +355,17 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             return self.eventCacheValue
         }
 
-//        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Did not find events in cache")
+        //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Did not find events in cache")
 
         var unsortedDateEvents: [ASAEventCompatible] = []
         var unsortedTimeEvents: [ASAEventCompatible] = []
-        
+
         let currentLocaleIdentifier: String = Locale.current.identifier
         let regionCode = locationData.regionCode
-        
+
         let endDateComponents = calendar.dateComponents([.era, .year, .month, .day], from: endDate, locationData: locationData)
         let endDateEYMD = endDateComponents.EYMD
-        
+
         for eventCalendar in self.builtInEventCalendars {
             let firstDateSpecification = eventCalendar.eventsFile?.firstDateSpecification
             if firstDateSpecification != nil {
@@ -374,14 +374,14 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
                     continue
                 }
             }
-            
+
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
             let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: locationData, eventCalendarName: eventCalendarName, calendarTitle: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar, clock: self)
             unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
             unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
         } // for eventCalendar in self.builtInEventCalendars
-        
+
         if self.isICalendarCompatible(location: locationData, usesDeviceLocation: usesDeviceLocation) && self.iCalendarEventCalendars.count > 0 {
             let EventKitEvents = ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
             for event in EventKitEvents {
@@ -392,26 +392,26 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
                 }
             } // for event in EventKitEvents
         }
-        
+
         let dateEvents = unsortedDateEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
             in
             if e1.numberOfSubevents > e2.numberOfSubevents {
                 return true
             }
-            
+
             if e2.numberOfSubevents > e1.numberOfSubevents {
                 return false
             }
-            
+
             if e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending {
                 return true
             }
-            
+
             if e1.startDate.compare(e2.startDate) == ComparisonResult.orderedDescending {
                 return false
             }
-            
+
             return e1.title < e2.title
         })
         let timeEvents = unsortedTimeEvents.sorted(by: {
@@ -419,7 +419,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
-        
+
         assert(dateEvents.count == unsortedDateEvents.count)
         assert(timeEvents.count == unsortedTimeEvents.count)
 
@@ -427,7 +427,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         self.eventCacheEndDate   = endDate
         let result = (dateEvents, timeEvents)
         self.eventCacheValue     = result
-//        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
+        //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
 
         return result
     } // func events(startDate:  Date, endDate:  Date) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>)
@@ -435,22 +435,22 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     func isICalendarCompatible(location: ASALocation, usesDeviceLocation: Bool) -> Bool {
         return self.calendar.usesISOTime && (usesDeviceLocation || location.timeZone.isCurrent)
     }
-    
+
     var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
-    
-    
+
+
     // MARK:  - Weeks
-    
+
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>? {
         if self.calendar is ASACalendarWithWeeks {
             let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
             let result = calendarSupportingWeeks.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
             return result
         }
-        
+
         return nil
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>?
-    
+
     func weekendDays(location: ASALocation) -> Array<Int>? {
         if self.calendar is ASACalendarWithWeeks {
             let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
@@ -460,27 +460,26 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             return nil
         }
     } // func weekendDays(location: ASALocation) -> Array<Int>?
-        
+
     var daysPerWeek: Int? {
         if self.calendar is ASACalendarWithWeeks {
             let calendarSupportingWeeks = self.calendar as! ASACalendarWithWeeks
-            
+
             return calendarSupportingWeeks.daysPerWeek
         }
-        
+
         return nil
     } // var daysPerWeek
 
     // MARK: - Mini Calendar Data
     func miniCalendarData(era: Int, year: Int, month: Int, day: Int, weekday: Int, daysInMonth: Int, monthIsBlank: Bool, blankWeekdaySymbol: String?, location: ASALocation) -> (weekdayItems: [ASAMiniCalendarWeekdayModel], dayItems: [ASAMiniCalendarDayModel]) {
-        
         let daysPerWeekValue = self.daysPerWeek ?? 7
         let localeIdentifier = self.localeIdentifier
         let rawWeekdaySymbols: [String] = {
             if monthIsBlank {
                 return Array(repeating: blankWeekdaySymbol ?? "_", count: max(daysInMonth, daysPerWeekValue))
             }
-            
+
             return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier) ?? []
         }()
         let weekendDaysArray = self.weekendDays(location: location) ?? []
@@ -490,12 +489,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let isWeekend = weekendDaysSet.contains(weekdayNumber)
             return ASAMiniCalendarWeekdayModel(symbol: sym, index: idx, isWeekend: isWeekend)
         }
-    let formatNumber: (Int) -> String = { number in
+        let formatNumber: (Int) -> String = { number in
             let components = ASADateComponents(calendar: self.calendar, locationData: location, era: era, year: year, month: month, day: number)
             let date = components.date
             guard let date = date else { return "?"}
             return self.dayOfMonthDateString(now: date, location: location)
-    }
+        }
         let weekdayOfDay1: Int = {
             let offset = day - 1
             var result = (weekday - offset) % daysPerWeekValue
@@ -534,54 +533,54 @@ extension ASAClock {
         let properDateFormat = self.dateFormat
         return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
     }
-    
+
     public func dateString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: location)
     } // func dateTimeString(now:  Date) -> String
-    
+
     public func dateTimeString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier.effectiveIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: location)
     } // func dateTimeString(now:  Date) -> String
-    
+
     func startOfDay(date:  Date, location: ASALocation) -> Date {
         return self.calendar.startOfDay(for: date, locationData: location)
     } // func startODay(date:  Date) -> Date
-    
+
     func startOfNextDay(date:  Date, location: ASALocation) -> Date {
         return self.calendar.startOfNextDay(date: date, locationData: location)
     } // func startOfNextDay(now:  Date) -> Date
-    
+
     public func timeString(now:  Date, location: ASALocation) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: self.timeFormat, locationData: location)
     } // func timeString(now:  Date) -> String
-    
+
     public var supportsLocales:  Bool {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
-    
+
     public func shortenedDateTimeString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let timeFormat: ASATimeFormat = self.timeFormat
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: location)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
-    
+
     public func shortenedDateString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: location)
         return result
     } // func shortenedDateString(now:  Date) -> String
-    
+
     public func yearOnlyDateString(now:  Date, location: ASALocation) -> String {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearOnly, timeFormat: .none, locationData: location)
         return result
     } // func yearOnlyDateString(now:  Date, location: ASALocation) -> String
-    
+
     public func yearAndMonthOnlyDateString(now:  Date, location: ASALocation) -> String {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearAndMonthOnly, timeFormat: .none, locationData: location)
         return result
     } // public func yearAndMonthOnlyDateString(now:  Date) -> String
-    
+
     public func dayOfMonthDateString(now:  Date, location: ASALocation) -> String {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .dayOfMonth, timeFormat: .none, locationData: location)
         return result
@@ -601,17 +600,17 @@ extension ASAClock {
             }
         } // for fileName in builtInCalendarNames
     }
-    
+
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock {
         let clock = ASAClock.generic(calendarCode: calendarCode, dateFormat: .full)
         var code: String? = regionCode
         repeat {
-        clock.updateWithGenericBuiltInEventCalendars(regionCode: code!)
-        code = code!.superregionCode
+            clock.updateWithGenericBuiltInEventCalendars(regionCode: code!)
+            code = code!.superregionCode
         } while code != nil
         return clock
     } // static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock
-    
+
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASAClock {
         let temp = ASAClock()
         temp.calendar = ASACalendarFactory.calendar(code: calendarCode)!
@@ -628,7 +627,7 @@ extension ASAClock {
 class ASAStartAndEndDateStrings {
     var startDateString: String?
     var endDateString: String
-    
+
     init(startDateString: String?, endDateString: String) {
         self.startDateString = startDateString
         self.endDateString   = endDateString
@@ -638,32 +637,32 @@ class ASAStartAndEndDateStrings {
 extension ASAClock {
     func properlyShortenedString(date:  Date, eventIsTodayOnly: Bool, eventIsAllDay: Bool, location: ASALocation) -> String {
         return (eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date, location: location)
-     } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
-    
+    } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
+
     private func genericStartAndEndDateStrings(event: ASAEventCompatible, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         var startDateString: String?
         var endDateString: String
-        
+
         if event.startDate == event.endDate {
             startDateString = nil
         } else {
             startDateString = self.properlyShortenedString(date: event.startDate, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
         }
         endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
-        
+
         return (startDateString, endDateString)
     } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
-    
+
     public func startAndEndDateStrings(event: ASAEventCompatible, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         // Cache code
         if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
             return (cachedVersion.startDateString, cachedVersion.endDateString)
         }
-        
+
         var startDateString: String?
         var endDateString: String
-        
+
         let eventIsAllDay = event.isAllDay(for: self, location: location)
         if !eventIsAllDay {
             (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
@@ -691,27 +690,27 @@ extension ASAClock {
                 (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
             } // switch event.type
         }
-        
+
         // create it from scratch then store in the cache
         let myObject = ASAStartAndEndDateStrings(startDateString: startDateString, endDateString: endDateString)
         startAndEndDateStringsCache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
 
         return (startDateString, endDateString)
     } // func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
-    
+
     public func longStartAndEndDateStrings(event: ASAEventCompatible, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String, endDateString: String) {
         let eventIsAllDay = event.isAllDay(for: self, location: location)
         let startDateString = eventIsAllDay ? self.dateString(now: event.startDate, location: location) : self.dateTimeString(now: event.startDate, location: location)
         let endDate: Date = event.endDate - 1
         let endDateString = eventIsAllDay ? self.dateString(now: endDate, location: location) : self.dateTimeString(now: endDate, location: location)
-        
+
         return (startDateString, endDateString)
     } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
-        
+
     func supportsExternalEvents(location: ASALocation, usesDeviceLocation: Bool) -> Bool {
         return self.calendar.usesISOTime && self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation)
     }
-    
+
     var eventsShouldShowSecondaryDates: Bool {
         return self.calendar.calendarCode != .gregorian
     }

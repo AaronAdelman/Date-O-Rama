@@ -125,12 +125,18 @@ class ASASouthAsianCalendar: ASASolarTimeCalendar {
         if applesSmaller == nil || applesLarger == nil {
             return nil
         }
-        
+
+        // The following is a hack to work around Apple’s code claiming sometimes that the tithis in Kartika range from 2..<2, which is just plain wrong.
+        if self.calendarCode == .vikramSolarTime && applesSmaller == .day && applesLarger == .month {
+            return 1..<31
+        }
+
         var result = self.applesCalendar.range(of: applesSmaller!, in: applesLarger!, for: fixedDate)
         if result?.lowerBound == result?.upperBound {
             let upperBound = result?.upperBound ?? 1
             result = Range(uncheckedBounds: (1, upperBound))
         }
+
         return result
     } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date, locationData: ASALocation) -> Range<Int>?
     
