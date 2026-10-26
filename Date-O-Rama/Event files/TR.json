@@ -1,10 +1,10 @@
 {
     ttls:{"*":"TR"},
-// Turkey
+// Turkey, AKA Turkiye
 // TODO:  Muslim holidays?
     defLocale:"en",
     cal:"gre",
-    color:{r:0.78,g:0.06,b:0.18},
+    color:{name:"red"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Turkey"},
     fst:{era:1,y:1923},
     evts:[
@@ -13,12 +13,13 @@
         {ty:"D",st:{mon:5,d:1},inh:"LaborD",urls:{"en":"https://www.officeholidays.com/holidays/turkey/labour-day"},ttls:{"en":"Labour and Solidarity Day","tr":"Emek ve Dayanışma Günü"}},
         {ty:"D",st:{mon:5,d:19},ttls:{"az":"Atatürkü Anma, Gənclik və İdman Bayramı","de":"Atatürk’ü Anma, Gençlik ve Spor Bayramı","en":"Commemoration of Atatürk, Youth and Sports Day","hy":"Աթաթուրքի հիշատակի, երիտասարդության և սպորտի օր","id":"Hari Peringatan Atatürk, Pemuda, dan Olahraga","it":"Commemorazione di Atatürk, festa della gioventù e dello sport","ru":"День памяти Ататюрка, молодёжи и спорта","sq":"Përkujtimi i Ataturkut, Dita e Rinisë dhe Sporteve","tr":"19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramı","ug":"19 - ماي ئاتاتۈركنى خاتىرلەش، ياشلار ۋە تەنتەربىيە بايرىمى","uk":"День памяті Ататюрка, молоді та спорту"},urls:{"en":"https://www.officeholidays.com/holidays/turkey/commemoration-of-ataturk-youth-and-sports-day"},fst:{era:1,y:1938},mog:"⚽️",nts:{"en":"Youth and Sports Day"}},
         {ty:"D",st:{mon:7,d:15},ttls:{"en":"Democracy and National Unity Day","tr":"Demokrasi ve Milli Birlik Günü"},urls:{"en":"https://nationaltoday.com/the-democracy-and-national-unity-day-of-turkey/"},fst:{era:1,y:2016},mog:"15🇹🇷"},
-        {inh:"Victory Day", ty:"D",st:{mon:8,d:30},urls:{"en":"https://nationaltoday.com/victory-day/"},fst:{era:1,y:1923}},
-        {inh:"Republic Day", ty:"D",st:{mon:10,d:29},urls:{"en":"https://nationaltoday.com/turkey-republic-day/"},fst:{era:1,y:1923}},
+        {ty:"D",st:{mon:8,d:30},inh:"Victory Day",urls:{"en":"https://nationaltoday.com/victory-day/"},fst:{era:1,y:1923}},
+        {ty:"D",st:{mon:10,d:28,wkd:[3,4]},inh:"Republic Day (in lieu)",urls:{"en":"https://nationaltoday.com/turkey-republic-day/"},fst:{era:1,y:1923}},
+        {ty:"D",st:{mon:10,d:29},inh:"Republic Day",urls:{"en":"https://nationaltoday.com/turkey-republic-day/"},fst:{era:1,y:1923}},
 
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
-        {inh:"Vardavar", ty:"D",st:{misc:"E",oD:98}},
+        {ty:"D",st:{misc:"E",oD:98},inh:"Vardavar"},
         {ty:"D",st:{mon:12,d:17},inh:"StBarbara"},
 
         {ty:"D",st:{mon:5,d:27},ttls:{"en":"Freedom and Constitution Day","tr":"Mayıs Hürriyet ve Anayasa Bayramı"},urls:{"en":"https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"},fst:{era:1,y:1963}},
