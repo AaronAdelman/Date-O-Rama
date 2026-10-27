@@ -4,7 +4,7 @@
 // TODO:  Muslim and Hindu observances
     defLocale:"en",
     cal:"gre",
-    color:{r: 0.78,g:0.06,b:0.18},
+    color:{name:"red"},
     fst:{era:1,y:1962},
     urls:{"en":"https://otp.tt/trinidad-and-tobago/national-holidays-and-awards/"},
     evts:[
