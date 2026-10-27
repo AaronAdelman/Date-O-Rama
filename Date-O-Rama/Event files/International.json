@@ -1053,7 +1053,7 @@
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"International Academic Freedom Day"},urls:{"en":"https://www.afaf.org.uk/international-academic-freedom-day/"},mog:"✋",nts:{"en":"Some people think this observance is on February 12 or October 5."}},
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"World Autoimmune Arthritis Day"},urls:{"en":"https://www.aiarthritis.org/aiarthritisday"},fst:{era:1,y:2012},inh:"*MedAw*",nts:{"en":"World AiArthritis Day\nWorld AUTOimmune & AUTOinflammatory Arthritis Day\nCreated by the International Autoimmune Arthritis Movement (AiArthritis)"}},
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"World Product Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-product-day/"},mog:"✍️",fst:{era:1,y:2018},nts:{"en":"Created by Mind the Product"}},
-        {ty:"D",st:{mon:5,d:21, yDiv: 2, yRem: 1},ttls:{"ar":"اليوم العالمي للأسماك المهاجرة","en":"World Fish Migration Day"},nts:{"en":"WFMD"},urls:{"en":"https://www.worldfishmigrationday.com/"},mog:"🐟",fst:{era:1,y:2014}},
+        {ty:"D",st:{mon:5,d:21, yDiv:2, yRem:1},ttls:{"ar":"اليوم العالمي للأسماك المهاجرة","en":"World Fish Migration Day"},nts:{"en":"WFMD"},urls:{"en":"https://www.worldfishmigrationday.com/"},mog:"🐟",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:5,d:21},ttls:{"en":"Cool Sword Day"},urls:{"en":"https://www.daysoftheyear.com/days/cool-sword-day/"},mog:"⚔️",fst:{era:1,y:2024},nts:{"en":"Created by Polygon"}},
         {ty:"D",st:{mon:5,d:22},inh:"IBeingYouD",fst:{era:1,y:2021},last:{era:1,y:2023}},
         {ty:"D",st:{mon:5,d:22},inh:"IDForBiological Diversity",fst:{era:1,y:2001}},
@@ -1929,9 +1929,20 @@
         {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"International Assistance Dog Week"},urls:{"en":"https://www.daysoftheyear.com/days/international-assistance-dog-week/"},mog:"🦮🐕‍🦺",fst:{era:1,y:2009},nts:{"en":"IADW\nCreated by by Marcie Davis"},subEvts:[
             {ty:"D",st:{mon:8,d:4},ttls:{"en":"Assistance Dog Day","he":"יום כלבי הסיוע והנחיה"},urls:{"en":"https://www.daysoftheyear.com/days/assistance-dog-day/"},mog:"🦮"},
         ]},
-        
+
+        {ty:"D",st:{mon:1,d:1,yDiv:100,yRem:1},inh:"SqRtD"},
+        {ty:"D",st:{mon:2,d:2,yDiv:100,yRem:4},inh:"SqRtD"},
+        {ty:"D",st:{mon:3,d:3,yDiv:100,yRem:9},inh:"SqRtD"},
+        {ty:"D",st:{mon:4,d:4,yDiv:100,yRem:16},inh:"SqRtD"},
+        {ty:"D",st:{mon:5,d:5,yDiv:100,yRem:25},inh:"SqRtD"},
+        {ty:"D",st:{mon:6,d:6,yDiv:100,yRem:36},inh:"SqRtD"},
+        {ty:"D",st:{mon:7,d:7,yDiv:100,yRem:49},inh:"SqRtD"},
+        {ty:"D",st:{mon:8,d:8,yDiv:100,yRem:64},inh:"SqRtD"},
+        {ty:"D",st:{mon:9,d:9,yDiv:100,yRem:81},inh:"SqRtD"},
+
     ],
     tpls:{
+        "SqRtD":{ty:"D",st:{mon:1,d:1,yDiv:100,yRem:1},ttls:{"bn":"বর্গমূল দিবস","en":"Square Root Day","es":"Día de la raíz cuadrada","hy":"Քառակուսի արմատի օր","id":"Hari Akar Kuadrat","ja":"平方根の日","ko":"제곱근의 날","ms":"Hari punca kuasa dua","nb":"Kvadratrotdagen","pt":"Dia da Raiz Quadrada","ru":"День квадратного корня","ta":"வர்க்கமூல நாள்","uk":"День квадратного кореня","zh":"平方根日"},urls:{"en":"https://en.wikipedia.org/wiki/Square_Root_Day"},mog:"√"},
         "BonzaBottlerD":{ty:"D",st:{mon:1,d:1},urls:{"en":"https://www.daysoftheyear.com/days/bonza-bottler-day/"},ttls:{"en":"Bonza Bottler Day"},mog:"🎉"},
         "Digital Learning Day":{ty:"D",st:{mon:2,wkd:[5],nth:-1},ttls:{"en":"Digital Learning Day"},nts:{"en":"DLDay\nCreated by the Alliance for Excellent Education"},urls:{"en":"https://all4ed.org/digital-learning-day/"},mog:"👨‍💻👩‍💻"},
         "GetToKnowYourCustomersD":{ty:"D",st:{mon:1,wkd:[5],nth:3},ttls:{"en":"Get to Know Your Customers Day"},urls:{"en":"https://www.daysoftheyear.com/days/get-to-know-your-customers-day-2/"},mog:"🤝"},
