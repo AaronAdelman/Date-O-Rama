@@ -17,29 +17,29 @@ import EventKitUI
 
 struct ASAClockCell: View {
     @EnvironmentObject var userData:  ASAModel
-    
+
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
-    
+
     var shouldShowTime:  Bool
     var shouldShowMiniCalendar:  Bool
-    
+
     var isForComplications:  Bool
-    
+
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
-    
+
     enum DetailType {
         case none
         case clockDetail
         case newEvent
     }
-    
+
     @State private var showingDetailView: Bool = false
     @State private var detailType: DetailType = .none
-    
+
     let DEFAULT_DAYS_PER_WEEK = 7
-    
+
 #if os(watchOS)
     let compact = true
 #else
@@ -48,30 +48,46 @@ struct ASAClockCell: View {
         return self.sizeClass == .compact
     } // var compact
 #endif
-    
+
 #if os(watchOS)
 #else
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
-    
+
+    func relevantLocationWithClocksAndCurrentClockIndices() -> (relevantLocationWithClocksIndex: Int?, currentClockIndex: Int?) {
+        let relevantUUID = location.id
+        let relevantLocationWithClocksIndex = userData.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+        guard relevantLocationWithClocksIndex != nil else {
+            return (nil, nil)
+        }
+        let currentClockIndex = userData
+            .mainClocks[relevantLocationWithClocksIndex!].clocks
+            .firstIndex(where: {$0.id == clock.id})
+        guard currentClockIndex != nil else {
+            return (nil, nil)
+        }
+
+        return (relevantLocationWithClocksIndex, currentClockIndex)
+    }
+
     var body: some View {
         let TEXT_COLOR = Color.white
-        
+
         let canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
-        
+
 #if os(watchOS)
         let MINIMUM_HEIGHT: CGFloat? = nil
 #else
         let MINIMUM_HEIGHT: CGFloat? = 40.0
 #endif
-        
+
         VStack(spacing: 0.0) {
             HStack {
                 VStack(alignment: .leading) {
                     ASAClockCellText(string:  processedClock.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
                         .foregroundStyle(TEXT_COLOR)
-                    
+
                     if canSplitTimeFromDate {
                         let LINE_LIMIT = 2
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
@@ -85,7 +101,7 @@ struct ASAClockCell: View {
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                             .foregroundStyle(TEXT_COLOR)
                     }
-                    
+
                     if processedClock.supportsMonths && shouldShowMiniCalendar && compact {
                         // Precompute weekday items and cell items for the mini calendar
                         let daysPerWeek = processedClock.daysPerWeek ?? DEFAULT_DAYS_PER_WEEK
@@ -100,7 +116,7 @@ struct ASAClockCell: View {
                             dayItems: dayItems
                         )
                     }
-                    
+
 #if os(watchOS)
 #else
                     if !isForComplications {
@@ -122,7 +138,7 @@ struct ASAClockCell: View {
                     }
 #endif
                 } // VStack
-                
+
 #if os(watchOS)
                 if processedClock.dateEvents.count > 0 || processedClock.timeEvents.count > 0 {
                     NavigationLink(destination:  ASAWatchEventsList(processedClock:  processedClock, eventVisibility: $clock.eventVisibility, allDayEventVisibility: $clock.allDayEventVisibility, now: now, clock: clock, location: location)) {
@@ -146,13 +162,13 @@ struct ASAClockCell: View {
                         dayItems: dayItems
                     )
                 }
-                
+
                 Spacer()
                     .frame(width: 32.0)
-                
+
                 if isForComplications {
                     Spacer()
-                    
+
                     Menu {
                         Button(action: {
                             detailType = .clockDetail
@@ -188,7 +204,83 @@ struct ASAClockCell: View {
                         }) {
                             ASAGetInfoLabel()
                         }
-                        
+
+                        let (relevantLocationWithClocksIndex, currentClockIndex) = relevantLocationWithClocksAndCurrentClockIndices()
+
+                        if currentClockIndex != 0 {
+                            Button(
+                                action: {
+                                    guard relevantLocationWithClocksIndex != nil && currentClockIndex != nil else {
+                                        return
+                                    }
+                                    userData
+                                        .mainClocks[relevantLocationWithClocksIndex!].clocks
+                                        .move(
+                                            fromOffsets: IndexSet(integer: currentClockIndex!),
+                                            toOffset: 0
+                                        )
+                                    userData.savePreferences(code: .clocks)
+                                }) {
+                                    Label("Move to top", systemImage: "arrow.up.to.line")
+                                }
+
+                            Button(action: {
+                                guard relevantLocationWithClocksIndex != nil && currentClockIndex != nil else {
+                                    return
+                                }
+                                userData
+                                    .mainClocks[relevantLocationWithClocksIndex!].clocks
+                                    .move(
+                                        fromOffsets: IndexSet(integer: currentClockIndex!),
+                                        toOffset: currentClockIndex! - 1
+                                    )
+                                userData.savePreferences(code: .clocks)
+                            }) {
+                                Label("Move up", systemImage: "arrow.up")
+                            }
+                        }
+
+                        if relevantLocationWithClocksIndex != nil {
+                            if currentClockIndex != userData
+                                .mainClocks[relevantLocationWithClocksIndex!].clocks.count - 1 {
+
+                                Button(
+                                    action: {
+                                        guard relevantLocationWithClocksIndex != nil && currentClockIndex != nil else {
+                                            return
+                                        }
+                                        let oldCurrentClockIndex: Int = currentClockIndex!
+                                        let newCurrentClockIndex: Int = oldCurrentClockIndex + 2
+                                        userData
+                                            .mainClocks[relevantLocationWithClocksIndex!].clocks
+                                            .move(
+                                                fromOffsets: IndexSet(integer: oldCurrentClockIndex),
+                                                toOffset: newCurrentClockIndex
+                                            )
+                                        userData.savePreferences(code: .clocks)
+                                    }) {
+                                        Label("Move down", systemImage: "arrow.down")
+                                    }
+
+                                Button(
+                                    action: {
+                                        guard relevantLocationWithClocksIndex != nil && currentClockIndex != nil else {
+                                            return
+                                        }
+                                        userData
+                                            .mainClocks[relevantLocationWithClocksIndex!].clocks
+                                            .move(
+                                                fromOffsets: IndexSet(integer: currentClockIndex!),
+                                                toOffset: userData
+                                                    .mainClocks[relevantLocationWithClocksIndex!].clocks.count
+                                            )
+                                        userData.savePreferences(code: .clocks)
+                                    }) {
+                                        Label("Move to bottom", systemImage: "arrow.down.to.line")
+                                    }
+                            }
+                        }
+
                         let numberOfDateEvents = processedClock.dateEvents.count
                         let numberOfTimeEvents = processedClock.timeEvents.count
                         if numberOfDateEvents > 0 {
@@ -199,14 +291,14 @@ struct ASAClockCell: View {
                             }
                         }
                         if numberOfTimeEvents > 0 {
-                            
+
                             Menu {
                                 ASAClockEventVisibilityForEach(eventVisibility: $clock.eventVisibility)
                             } label: {
                                 Text("Show Events")
                             }
                         }
-                        
+
                         if processedClock.supportsExternalEvents {
                             Button(action:
                                     {
@@ -242,7 +334,7 @@ struct ASAClockCell: View {
                 }
 #endif
             } // HStack
-            
+
 #if os(watchOS)
 #else
             if !isForComplications {
@@ -259,17 +351,17 @@ struct ASAClockCell: View {
 #else
 struct ASAClockCellDetailView: View {
     @EnvironmentObject var userData:  ASAModel
-    
+
     var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     @Binding var showingDetailView: Bool
     @Binding var detailType: ASAClockCell.DetailType
-    
+
     @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
-    
+
     var body: some View {
         if detailType == .clockDetail {
 
@@ -298,7 +390,7 @@ struct ASAClockCellDetailView: View {
 
 struct ASAClockEventVisibilityForEach: View {
     @Binding var eventVisibility: ASAClockCellTimeEventVisibility
-    
+
     var body: some View {
         ForEach(ASAClockCellTimeEventVisibility.allCases, id: \.self) {
             visibility
@@ -315,7 +407,7 @@ struct ASAClockEventVisibilityForEach: View {
 
 struct ASAClockAllDayEventVisibilityForEach: View {
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
-    
+
     var body: some View {
         ForEach(ASAClockCellDateEventVisibility.allCases, id: \.self) {
             visibility
@@ -332,7 +424,7 @@ struct ASAClockAllDayEventVisibilityForEach: View {
 struct ASAClockMenuVisibilityLabel: View {
     var text: String
     var shouldShowCheckmark: Bool
-    
+
     var body: some View {
         if shouldShowCheckmark {
             Label(text, systemImage: "checkmark")
@@ -353,7 +445,7 @@ struct ASAClockEventsSubcell: View {
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     var clock: ASAClock
     var location: ASALocation
-    
+
     var body: some View {
 #if os(watchOS)
         EmptyView()
@@ -385,21 +477,21 @@ struct ASAClockEventsForEach:  View {
     @Binding var now:  Date
     var clock:  ASAClock
     var location: ASALocation
-    
+
     var body: some View {
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date   = processedClock.startOfNextDay
         let bodyLineHeight: CGFloat = UIFont.preferredFont(forTextStyle: .body).lineHeight
         let linkedEventCellHeight: CGFloat = bodyLineHeight * 1.5
-        
+
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            
+
             let eventIsTodayOnly   = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
             let usesDeviceLocation = processedClock.usesDeviceLocation
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? clock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
-            
+
             ASALinkedEventCell(event: event, primaryClock: clock, now: now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
                 .frame(height: linkedEventCellHeight)
         } // ForEach

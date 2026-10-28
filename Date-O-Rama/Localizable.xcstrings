@@ -3410,6 +3410,46 @@
         }
       }
     },
+    "Move down" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הזזה למטה"
+          }
+        }
+      }
+    },
+    "Move to bottom" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הזזה לתחתית"
+          }
+        }
+      }
+    },
+    "Move to top" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הזזה לראש"
+          }
+        }
+      }
+    },
+    "Move up" : {
+      "localizations" : {
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הזזה למעלה"
+          }
+        }
+      }
+    },
     "My status" : {
       "localizations" : {
         "he" : {
@@ -3541,23 +3581,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "לוח שנה אירועים פנימי חדש"
-          }
-        }
-      }
-    },
-    "New location" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New location…"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "מיקום חדש…"
           }
         }
       }
