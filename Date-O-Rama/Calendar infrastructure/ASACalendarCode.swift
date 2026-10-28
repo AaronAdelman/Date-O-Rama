@@ -302,6 +302,16 @@ extension ASACalendarCode {
         } // switch self
     } // var isFrenchRepublicanCalendar: Bool
 
+    var isSouthAsianSolarCalendar: Bool {
+        switch self {
+        case .vikramSolarTime, .banglaSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .marathiSolarTime, .teluguSolarTime:
+            return true
+
+        default:
+            return false
+        }
+    }
+
     var equivalentCalendarIdentifier:  Calendar.Identifier? {
            var identifier:  Calendar.Identifier?
            switch self {
@@ -480,7 +490,7 @@ extension ASACalendarCode {
 //                .telugu,
                     .vietnamese,
 //                    .vikram,
-                    .bahaiSolarTime, .vikramSolarTime, .banglaSolarTime]
+                    .bahaiSolarTime, .vikramSolarTime, .banglaSolarTime, .gujaratiSolarTime, .kannadaSolarTime, .marathiSolarTime, .teluguSolarTime]
         case .earthUniversal:
             return [.julianDay, .reducedJulianDay, .dublinJulianDay, .modifiedJulianDay, .truncatedJulianDay, .cnesJulianDay, .ccsdsJulianDay, .lilianDate, .rataDie]
         case .marsUniversal:
