@@ -33,7 +33,7 @@
         {ty:"D",st:{mon:10,d:25},ttls:{"en":"Crisp Sandwich Day"}, urls:{"en":"https://vole.wtf/crisp-sandwich-day/"},fst:{era:1,y:2022},mog:"🥪"},        {ty:"D",st:{mon:10,d:26},ttls:{"en":"National Pumpkin Day","he":"יום הדלעת הלאומי"}, urls:{"en":"https://www.daysoftheyear.com/days/pumpkin-day/"},mog:"🎃"},
         {ty:"D",st:{mon:10,d:26},ttls:{"en":"Howl at the Moon Day"},nts:{"en":"Worldwide Howl at the Moon Night\nCreated by Johnny DePalma"}, urls:{"en":"https://www.daysoftheyear.com/days/howl-at-the-moon-day/"},fst:{era:1,y:2009},mog:"🐺"},
         {ty:"D",st:{mon:10,d:27},inh:"NBlackCatD",fst:{era:1,y:2011}},
-        {ty:"D",st:{mon:10,d:30},inh:"Haunted Refrigerator Nite"},
+        {ty:"D",st:{mon:10,d:30},inh:"HauntedFridgeNite"},
         {ty:"D",st:{mon:10,d:30},ttls:{"en":"Create a Great Funeral Day"}, urls:{"en":"https://www.daysoftheyear.com/days/create-a-great-funeral-day/"},fst:{era:1,y:1999},mog:"⚰️⚱️⚱",nts:{"en":"Created by Stephanie West Allen"}},
         {ty:"D",st:{mon:10,d:30},ttls:{"en":"Mischief Night","id":"Mischief Night"}, urls:{"en":"https://www.daysoftheyear.com/days/mischief-night/"},fst:{era:1,y:1790},nts:{"en":"Mischievous Night"}},
         {ty:"D",st:{mon:10,d:30},ttls:{"en":"National Candy Corn Day"}, urls:{"en":"https://www.daysoftheyear.com/days/candy-corn-day/"}},
