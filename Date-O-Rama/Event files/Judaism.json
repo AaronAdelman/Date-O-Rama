@@ -665,6 +665,7 @@
             {subttls:{"he":"נידה","en":"Niddah"},st:2640,end:2711},
         ],cR1stNo:2,mog:"📖"},
 
+        // Zodiac
         {ty:"Y",st:{},subEvts:[
             {ty:"M",st:{mon:8},inh:"Ari"},
             {ty:"M",st:{mon:9},inh:"Tau"},
@@ -683,6 +684,17 @@
 
         // Shir shel Yom (Vilna Ga’on)
         {ty:"Y",st:{},subEvts:[
+            // Ro’sh hashShanah
+            {ty:"D",st:{mon:1,d:1,thruD:2,wkd:[1,2,3,4,5,6]},inh:"SSYG81"},
+            {ty:"D",st:{mon:1,d:1,thruD:2,wkd:[7]},inh:"SSY92"},
+
+            // Ro’sh Ḥodhesh
+            {ty:"D",st:{d:30},inh:"SSYG104"},
+            {ty:"D",st:{d:1},inh:"SSYG104"},
+
+            // Shabbath
+            {ty:"D",st:{wkd:[7]},inh:"SSY92"},
+
             // Pesaḥ
             {ty:"D",st:{mon:8,d:15,wkd:[1,3,5]},inh:"SSYG114"},
             {ty:"D",st:{mon:8,d:16,wkd:[1]},inh:"SSYG114"},
@@ -702,17 +714,6 @@
             // Shavu‘oth
             {ty:"D",st:{mon:10,d:6},ttls:{"he":"שיר של יום לפי הגר״א:  י״ט","en":"Shir shel Yom (Vilna Ga’on):  19"}},
             {ty:"D",st:{mon:10,d:7,wkd:[2,3,5]},ttls:{"he":"שיר של יום לפי הגר״א:  ס״ח","en":"Shir shel Yom (Vilna Ga’on):  68"},excludeRgns:["IL","PS"],inh:"*LN*"},
-
-            // Ro’sh hashShanah
-            {ty:"D",st:{mon:1,d:1,thruD:2,wkd:[1,2,3,4,5,6]},inh:"SSYG81"},
-            {ty:"D",st:{mon:1,d:1,thruD:2,wkd:[7]},inh:"SSY92"},
-
-            // Ro’sh Ḥodhesh
-            {ty:"D",st:{d:30},inh:"SSYG104"},
-            {ty:"D",st:{d:1},inh:"SSYG104"},
-
-            // Shabbath
-            {ty:"D",st:{wkd:[7]},inh:"SSY92"},
 
             // Yom Kippur
             {ty:"D",st:{mon:1,d:10,wkd:[2,4,5]},ttls:{"he":"שיר של יום לפי הגר״א:  ל״ב","en":"Shir shel Yom (Vilna Ga’on):  32"},inh:"*LN*"},
@@ -737,6 +738,16 @@
             {ty:"D",st:{mon:1,d:23,wkd:[1]},inh:"SSYG12",excludeRgns:["IL","PS"],inh:"*LN*"},
             {ty:"D",st:{mon:1,d:21,wkd:[2,3,6]},ttls:{"he":"שיר של יום לפי הגר״א:  ח׳","en":"Shir shel Yom (Vilna Ga’on):  8"},excludeRgns:["IL","PS"],inh:"*LN*"},
 
+            // Ḥanukkah
+            {ty:"D",st:{mon:3,d:25,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:26,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:27,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:28,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:29,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:29,oD:1,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:29,oD:2,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+            {ty:"D",st:{mon:3,d:29,oD:3,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
+
         ]},
     ],
     tpls:{
@@ -753,6 +764,7 @@
         "SSYG12":{ty:"D",st:{mon:1,d:22,wkd:[2,4,5]},ttls:{"he":"שיר של יום לפי הגר״א:  י״ב","en":"Shir shel Yom (Vilna Ga’on):  12"},inh:"*LN*"},
         "SSYG104":{ty:"D",st:{d:1},ttls:{"he":"שיר של יום לפי הגר״א:  ק״ד","en":"Shir shel Yom (Vilna Ga’on):  104"},inh:"*LN*"},
         "SSY92":{ty:"D",st:{wkd:[7]},ttls:{"he":"שיר של יום:  צ״ב","en":"Shir shel Yom:  92"},inh:"*LN*"},
+        "SSYG30":{ty:"D",st:{wkd:[7]},ttls:{"he":"שיר של יום:  ל׳","en":"Shir shel Yom:  30"},inh:"*LN*"},
 
 
         "*ספירת העומר*":{ty:"D",st:{mon:8,d:16},urls:{"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
