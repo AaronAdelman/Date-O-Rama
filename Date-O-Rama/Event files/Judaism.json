@@ -748,6 +748,8 @@
             {ty:"D",st:{mon:3,d:29,oD:2,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
             {ty:"D",st:{mon:3,d:29,oD:3,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
 
+            // Purim
+            {ty:"D",st:{mon:7,d:14,wkd:[1,2,3,4,5,6]},ttls:{"he":"שיר של יום לפי הגר״א:  כ״ב","en":"Shir shel Yom (Vilna Ga’on):  22"},inh:"*LN*"},
         ]},
     ],
     tpls:{
@@ -765,8 +767,6 @@
         "SSYG104":{ty:"D",st:{d:1},ttls:{"he":"שיר של יום לפי הגר״א:  ק״ד","en":"Shir shel Yom (Vilna Ga’on):  104"},inh:"*LN*"},
         "SSY92":{ty:"D",st:{wkd:[7]},ttls:{"he":"שיר של יום:  צ״ב","en":"Shir shel Yom:  92"},inh:"*LN*"},
         "SSYG30":{ty:"D",st:{wkd:[7]},ttls:{"he":"שיר של יום:  ל׳","en":"Shir shel Yom:  30"},inh:"*LN*"},
-
-
         "*ספירת העומר*":{ty:"D",st:{mon:8,d:16},urls:{"en":"https://www.ou.org/holidays/category/sefirat-haomer/"}},
         "*חנוכה*":{ty:"D",st:{mon:3,d:25},urls:{"en":"https://www.ou.org/holidays/category/chanukah/"},mog:"🕎"},
         "*סוכות*":{ty:"D",st:{mon:1,d:15},urls:{"en":"https://www.ou.org/holidays/category/sukkot/"},mog:"🍋🌴"},
