@@ -535,6 +535,7 @@
         {ty:"D",st:{mon:11,d:6},inh:"DogFilmFestival",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Basketball Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-basketball-day/"},mog:"🏀"},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Nachos Day"},urls:{"en":"https://www.daysoftheyear.com/days/nachos-day/"}},
+        {ty:"D",st:{mon:11,wkd:[6],nth:1},ttls:{"en":"Love Your Lawyer Day"},urls:{"en":"https://www.daysoftheyear.com/days/love-your-lawyer-day/"},mog:"👨‍💼👩‍💼",nts:{"en":"Created by Nader Anise of the American Lawyers Public Image Association (ALPIA)"},fst:{era:1,y:2001}},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Report Home Health Care Fraud Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-report-home-health-care-fraud-day/"},fst:{era:1,y:2017},nts:{"en":"Created by Joel D. Hesch"}},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Saxophone Day"},urls:{"en":"https://www.daysoftheyear.com/days/saxophone-day/"},mog:"🎷"},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Team Manager Day"},urls:{"en":"https://nationaltoday.com/national-team-manager-day/"},fst:{era:1,y:2017},nts:{"en":"Created by FlipGive & National Today"}},

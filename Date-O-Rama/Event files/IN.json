@@ -225,7 +225,7 @@
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Police Commemoration Day"},fst:{era:1,y:1960},inh:"Police Day", urls:{"en":"https://nationaltoday.com/police-commemoration-day/"}},
         {ty:"D",st:{mon:10,d:27},ttls:{"en":"Infantry Day"}},
         {ty:"D",st:{mon:11,d:7},ttls:{"en":"Infant Protection Day"},mog:"👶"},
-        {ty:"D",st:{mon:11,d:7},ttls:{"en":"National Cancer Awareness Day"}, urls:{"en":"https://nationaltoday.com/national-cancer-awareness-day/"},fst:{era:1,y:2014},inh:"*MedAw*"},
+        {ty:"D",st:{mon:11,d:7},ttls:{"en":"National Cancer Awareness Day"}, urls:{"en":"https://www.daysoftheyear.com/days/national-cancer-awareness-day/"},fst:{era:1,y:2014},inh:"*MedAw*",nts:{"en":"Created by Dr. Harsh Vardhan"}},
         {ty:"D",st:{mon:11,d:9},ttls:{"en":"Legal Services Day"}, urls:{"en":"https://en.wikipedia.org/wiki/National_Legal_Services_Day"},fst:{era:1,y:1995},mog:"👨‍💼👩‍💼"},
         {ty:"D",st:{mon:11,d:11},inh:"NEducationD",fst:{era:1,y:2008}, urls:{"en":"https://www.daysoftheyear.com/days/national-education-day/"}},
         {ty:"D",st:{mon:11,d:12},ttls:{"en":"Public Service Broadcasting Day"}},
