@@ -32,6 +32,6 @@
         {ty:"D",st:{mon:1,d:16},urls:{"en":"https://nationaltoday.com/signing-of-the-peace-accords/"},ttls:{"en":"Signing of the Peace Accords"},fst:{era:1,y:1992}},
         {ty:"D",st:{mon:3,d:26},ttls:{"en":"National Day of Life, Peace and Justice"},urls:{"en":"https://nationaltoday.com/national-day-of-life-peace-and-justice/"},fst:{era:1,y:2015}},
         {ty:"D",st:{mon:5,d:3},ttls:{"en":"Cross Day"},urls:{"en":"https://nationaltoday.com/cross-day-el-salvador/"},nts:{"en":"Day of the Cross"}},
-        {ty:"D",st:{mon:11,wkd:[1],nth:2},ttls:{"en":"National Pupusa Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-pupusa-day/"},nts:{"en":"Created by the government of El Salvador"}},
+        {ty:"D",st:{mon:11,wkd:[1],nth:2},ttls:{"en":"National Pupusa Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-pupusa-day/"},nts:{"en":"Created by the government of El Salvador"},fst:{era:1,y:2005}},
    ]
 }
