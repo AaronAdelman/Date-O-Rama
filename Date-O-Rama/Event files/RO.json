@@ -89,7 +89,7 @@
         {ty:"D",st:{mon:5,wkd:[1],nth:-1},ttls:{"en":"Romanian Businessperson Day"}},
         {ty:"D",st:{mon:6,d:1},inh:"Parents’ Day"},
         {ty:"D",st:{mon:6,d:2},inh:"NAdoptionD"},
-        {ty:"D",st:{mon:6,d:4},inh:"IDOfInnocentChildrenVictimsOfAggression",fst:{era:1,y:1983}},
+        {ty:"D",st:{mon:6,d:4},inh:"IInnocentChildrenVictimsOfAggressionD",fst:{era:1,y:1983}},
         {ty:"D",st:{mon:6,d:4},ttls:{"en":"Trianon Treaty Day"}},
         {ty:"D",st:{mon:6,d:5},ttls:{"en":"National Day Against Child Abuse"}},
         {ty:"D",st:{mon:6,d:5},inh:"WEnvironD",fst:{era:1,y:1987}},

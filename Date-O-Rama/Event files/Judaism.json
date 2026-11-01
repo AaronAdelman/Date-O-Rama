@@ -749,7 +749,8 @@
             {ty:"D",st:{mon:3,d:29,oD:3,wkd:[1,2,3,4,5,6]},inh:"SSYG30"},
 
             // Purim
-            {ty:"D",st:{mon:7,d:14,wkd:[1,2,3,4,5,6]},ttls:{"he":"שיר של יום לפי הגר״א:  כ״ב","en":"Shir shel Yom (Vilna Ga’on):  22"},inh:"*LN*"},
+            {ty:"D",st:{mon:7,d:14,wkd:[1,2,3,4,5,6]},ttls:{"he":"שיר של יום לפי הגר״א:  כ״ב (חוץ מירושלים)","en":"Shir shel Yom (Vilna Ga’on):  22 (except in Yerushalayim)"},inh:"*LN*"},
+            {ty:"D",st:{mon:7,d:15,wkd:[1,2,3,4,5,6]},ttls:{"he":"שיר של יום לפי הגר״א:  כ״ב (בירושלים)","en":"Shir shel Yom (Vilna Ga’on):  22 (in Yerushalayim)"},inh:"*LN*"},
         ]},
     ],
     tpls:{

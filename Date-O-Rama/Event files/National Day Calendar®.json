@@ -469,7 +469,7 @@
         {ty:"D",st:{mon:11,d:16},ttls:{"en":"International Check Your Wipers Day"},nts:{"en":"Check Your Wipers Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/international-check-your-wipers-day-november-16"},fst:{era:1,y:2022},nts:{"en":"Created by MICHELIN®"}},
         {ty:"D",st:{mon:11,d:17},ttls:{"en":"National Butter Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-butter-day-november-17"},fst:{era:1,y:2021},mog:"🧈",nts:{"en":"Created by Dinner Bell Creamery"}},
         {ty:"D",st:{mon:11,d:18},ttls:{"en":"National Princess Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-princess-day-november-18"},fst:{era:1,y:2017},nts:{"en":"Created by Seldon Young"}},
-        {ty:"D",st:{mon:11,d:2},ttls:{"en":"International Doge Day"},urls:{"en":"https://www.nationaldaycalendar.com/international/international-doge-day"},mog:"🦮",fst:{era:1,y:2023}},
+        {ty:"D",st:{mon:11,d:2},ttls:{"en":"International Doge Day"},urls:{"en":"https://www.nationaldaycalendar.com/international/international-doge-day"},mog:"🦮",fst:{era:1,y:2023},nts:{"en":"Created by ownthedoge.com"}},
         {ty:"D",st:{mon:11,d:21,thruD:27,wkd:[4]},ttls:{"en":"National Jukebox Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-jukebox-day-day-before-thanksgiving"},fst:{era:1,y:2017},nts:{"en":"Created by TouchTunes"}},
         {ty:"D",st:{mon:11,d:21},inh:"NRedMittenD",fst:{era:1,y:2017}},
         {ty:"D",st:{mon:11,d:25,thruMon:12,thruD:1,wkd:[1]},ttls:{"en":"National Secondhand Sunday"},nts:{"en":"Secondhand Sunday\nPoshmark’s Secondhand Sunday\nCreated by Poshmark"},urls:{"en":"https://www.secondhandsunday.poshmark.com/"},fst:{era:1,y:2022}},
