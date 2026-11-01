@@ -1,0 +1,12 @@
+{
+    ttls:{"*":"MY"},
+// Malaysia
+// TODO:  Muslim observances, Hindu observances
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"indigo"},
+    urls:{"en":"https://publicholidays.com.my/","ms":"https://publicholidays.com.my/ms/","zh":"https://publicholidays.com.my/zh/"},
+    evts:[
+        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+    ]
+}

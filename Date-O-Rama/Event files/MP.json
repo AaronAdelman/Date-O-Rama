@@ -3,7 +3,7 @@
 // Northern Mariana Islands
     defLocale:"en",
     cal:"gre",
-    color:{r:0.00,g:0.20,b:0.63},
+    color:{name:"indigo"},
     urls:{"en":"https://publicholidays.asia/northern-mariana-islands/"},
     fst:{era:1,y:1978},
     evts:[

@@ -1,0 +1,12 @@
+{
+    ttls:{"*":"GY"},
+    // Guyana
+    // TODO:  Muslim and Hindu holidays
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"red"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Guyana"},
+    evts:[
+        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+    ]
+}

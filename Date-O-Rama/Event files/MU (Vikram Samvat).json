@@ -1,0 +1,11 @@
+{
+    ttls:{"*":"MU"},
+// Mauritius
+    defLocale:"en",
+    cal:"vikram-s",
+    color:{name:"yellow"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Mauritius#Public_holidays_and_festivals"},
+    evts:[
+        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+    ]
+}
