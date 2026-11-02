@@ -1,0 +1,12 @@
+{
+    ttls:{"*":"SR"},
+    // Suriname
+    // TODO:  Muslim and Hindu observances
+    cal:"vikram-s",
+    color:{name:"green"},
+    urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Suriname"},
+    defLocale:"en",
+    evts:[
+        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+    ]
+}

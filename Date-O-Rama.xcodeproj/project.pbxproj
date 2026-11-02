@@ -623,6 +623,12 @@
 		A5BA7B003097A625000CBAA8 /* SG (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7AFE3097A625000CBAA8 /* SG (Vikram Samvat).json */; };
 		A5BA7B023097A720000CBAA8 /* LK (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B013097A720000CBAA8 /* LK (Vikram Samvat).json */; };
 		A5BA7B033097A720000CBAA8 /* LK (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B013097A720000CBAA8 /* LK (Vikram Samvat).json */; };
+		A5BA7B0530985EB0000CBAA8 /* SR (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0430985EB0000CBAA8 /* SR (Vikram Samvat).json */; };
+		A5BA7B0630985EB0000CBAA8 /* SR (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0430985EB0000CBAA8 /* SR (Vikram Samvat).json */; };
+		A5BA7B0830986079000CBAA8 /* TT (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0730986079000CBAA8 /* TT (Vikram Samvat).json */; };
+		A5BA7B0930986079000CBAA8 /* TT (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0730986079000CBAA8 /* TT (Vikram Samvat).json */; };
+		A5BA7B0B309861B4000CBAA8 /* CoS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0A309861B4000CBAA8 /* CoS.json */; };
+		A5BA7B0C309861B4000CBAA8 /* CoS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BA7B0A309861B4000CBAA8 /* CoS.json */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC24BF2796EABE00D14B21 /* Jewish planetary hours.json */; };
@@ -1642,6 +1648,9 @@
 		A5BA7AFB3097A2F5000CBAA8 /* MM (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MM (Vikram Samvat).json"; sourceTree = "<group>"; };
 		A5BA7AFE3097A625000CBAA8 /* SG (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SG (Vikram Samvat).json"; sourceTree = "<group>"; };
 		A5BA7B013097A720000CBAA8 /* LK (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "LK (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A5BA7B0430985EB0000CBAA8 /* SR (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SR (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A5BA7B0730986079000CBAA8 /* TT (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TT (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A5BA7B0A309861B4000CBAA8 /* CoS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoS.json; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
@@ -2155,6 +2164,7 @@
 				A5EFFF40285B5CE800F2205F /* CO.json */,
 				A567675F2E5B630C001F108C /* Colleen Paige.json */,
 				A59D90662E8C081B0057D110 /* Confucianism (supplemental).json */,
+				A5BA7B0A309861B4000CBAA8 /* CoS.json */,
 				A5EFFF3E285B5CE800F2205F /* CR.json */,
 				A5B999CB28622D4600072FD5 /* CU.json */,
 				A5B999CC28622D4700072FD5 /* CV.json */,
@@ -2441,6 +2451,7 @@
 				A5DDAFC32E54CE4300093307 /* SpongeBob SquarePants.json */,
 				A5EFFFB1285B808E00F2205F /* SR.json */,
 				A50DA50C28686271008D54AE /* SR (Chinese).json */,
+				A5BA7B0430985EB0000CBAA8 /* SR (Vikram Samvat).json */,
 				A5EFFFEF285B88C200F2205F /* SS.json */,
 				A5FB22AB28638E1200B5042B /* ST.json */,
 				A514B9BF2D8310F0000046CC /* Star Trek.json */,
@@ -2481,6 +2492,7 @@
 				A5E292D9285A5D7D00925EBD /* TO.json */,
 				A5EFFFB9285B811900F2205F /* TR.json */,
 				A5EFFFB2285B808E00F2205F /* TT.json */,
+				A5BA7B0730986079000CBAA8 /* TT (Vikram Samvat).json */,
 				A5FB22C628638FFB00B5042B /* TV.json */,
 				A5EFFFEC285B878900F2205F /* TW.json */,
 				A50DA51328686272008D54AE /* TW (Chinese).json */,
@@ -3244,6 +3256,7 @@
 				A50C4FCD2F0EE43D001D4EF2 /* Bahá’í Faith (Muslim).json in Resources */,
 				A5E13C4A2A3990DB009EDEFA /* CY (Julian).json in Resources */,
 				A5EFFFB6285B808E00F2205F /* SR.json in Resources */,
+				A5BA7B0C309861B4000CBAA8 /* CoS.json in Resources */,
 				A5EFFFE8285B870A00F2205F /* UY.json in Resources */,
 				A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
 				A5A6405C285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
@@ -3412,6 +3425,7 @@
 				A5B999B528622B1800072FD5 /* BT.json in Resources */,
 				A5E410D52F31E8690055E642 /* Assets.xcassets in Resources */,
 				A5E4961E28625142001BF40C /* KI.json in Resources */,
+				A5BA7B0630985EB0000CBAA8 /* SR (Vikram Samvat).json in Resources */,
 				A5171A602899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5EFFF50285B5D7E00F2205F /* ET.json in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
@@ -3430,6 +3444,7 @@
 				A5EFFF49285B5CE800F2205F /* CW.json in Resources */,
 				A522A2D62E439D5B00F8AAEB /* Moon.json in Resources */,
 				A5EFFFBF285B811A00F2205F /* UG.json in Resources */,
+				A5BA7B0930986079000CBAA8 /* TT (Vikram Samvat).json in Resources */,
 				A5EFFF79285B7B1300F2205F /* JE.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A5A1D1DD2A65A90D00DE345A /* Judaism (yohrtsayts).json in Resources */,
@@ -3689,6 +3704,8 @@
 				A5D850B7280C98FD005247BD /* ID.json in Resources */,
 				A575914A282BE3BE00675058 /* LU.json in Resources */,
 				A5F2BE8C287C803E00E7ED0F /* SD (Coptic).json in Resources */,
+				A5BA7B0B309861B4000CBAA8 /* CoS.json in Resources */,
+				A5BA7B0830986079000CBAA8 /* TT (Vikram Samvat).json in Resources */,
 				A5EFFF33285B5B9E00F2205F /* BF.json in Resources */,
 				A5EE19E52804A92600B0B9C2 /* GB.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
@@ -3841,6 +3858,7 @@
 				A5EFFFBE285B811A00F2205F /* UG.json in Resources */,
 				A5C2B48B2AA775A00045C28C /* MV (Muslim).json in Resources */,
 				A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */,
+				A5BA7B0530985EB0000CBAA8 /* SR (Vikram Samvat).json in Resources */,
 				A585D6D229A6B3290033BCB9 /* GR (Julian).json in Resources */,
 				A5EFFFE4285B86D000F2205F /* HT.json in Resources */,
 				A5FB22A728638D2B00B5042B /* SJ.json in Resources */,

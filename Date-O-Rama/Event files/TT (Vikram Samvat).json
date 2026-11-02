@@ -1,0 +1,13 @@
+{
+    ttls:{"*":"TT"},
+    // Trinidad and Tobago
+    // TODO:  Muslim and Hindu observances
+    color:{name:"red"},
+    defLocale:"en",
+    urls:{"en":"https://otp.tt/trinidad-and-tobago/national-holidays-and-awards/"},
+    cal:"vikram-s",
+    color:{name:"green"},
+    evts:[
+        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+    ]
+}

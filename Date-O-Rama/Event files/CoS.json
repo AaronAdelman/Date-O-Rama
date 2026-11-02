@@ -1,0 +1,13 @@
+{
+    ttls:{"af":"Kerk van Satan","ar":"كنيسة الشيطان","arz":"كنيسة الشيطان","az":"Şeytan kilsəsi","bg":"Църква на Сатаната","bn":"চার্চ অব স্যাটান","br":"Iliz Satan","ca":"Església de Satan","cs":"Církev Satanova","da":"Church of Satan","de":"Church of Satan","el":"Εκκλησία του Σατανά","en":"Church of Satan","eo":"Eklezio de Satano","es":"Iglesia de Satán","eu":"Satanen Eliza","fa":"کلیسای شیطان","fi":"Saatanan kirkko","fr":"Église de Satan","he":"כנסיית השטן","hr":"Sotonistička Crkva","hu":"Sátán Egyháza","hy":"Սատանայի եկեղեցի","id":"Gereja Setan","is":"Kirkja Satans","it":"Chiesa di Satana","ja":"サタン教会","ka":"სატანის ეკლესია","ko":"사탄교회","lmo":"Gesa de Satana","lt":"Šėtono bažnyčia","nb":"Church of Satan","nl":"Church of Satan","pl":"Kościół Szatana","pnb":"کلیسیائے شیطان","pt":"Igreja de Satã","ru":"Церковь Сатаны","sk":"Cirkev Satanova","sr":"Сатанистичка црква","sv":"Church of Satan","ta":"சாத்தானின் திருச்சபை","th":"ศาสนจักรซาตาน","tr":"Şeytan Kilisesi","uk":"Церква Сатани","ur":"کلیسیائے شیطان","zh":"撒旦教會"},
+    defLocale:"en",
+    cal:"gre",
+    color:{name:"black"},
+    fst:{era:1,y:1966},
+    urls:{"en":"https://churchofsatan.com/faq-holidays/"},
+    evts:[
+        {ty:"D",st:{mon:4,d:30},inh:"Walpurgis Nite"},
+        {ty:"D",st:{mon:10,d:31},inh:"Halloween"},
+        {ty:"D",st:{mon:12,d:25},inh:"Yule"},
+    ]
+}
