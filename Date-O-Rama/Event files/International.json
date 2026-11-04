@@ -336,7 +336,7 @@
         {ty:"D",st:{mon:11,d:1},ttls:{"en":"International Pet Groomer Appreciation Day"},urls:{"en":"https://www.daysoftheyear.com/days/international-pet-groomer-appreciation-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Krista Olson"}},
         {ty:"D",st:{mon:11,d:1},ttls:{"en":"Prime Meridian Day"},urls:{"en":"https://www.daysoftheyear.com/days/prime-meridian-day/"},fst:{era:1,y:1884},mog:"🗺"},
         {ty:"D",st:{mon:11,d:1},ttls:{"en":"Scented Candle Day"},urls:{"en":"https://www.daysoftheyear.com/days/scented-candle-day/"}},
-        {ty:"D",st:{mon:11,d:10},ttls:{"ar":"اليوم العالمي للقرنية المخروطية","en":"World Keratoconus Day","hi":"वर्ल्ड केरेटोकोनस डे"},urls:{"en":"https://www.daysoftheyear.com/days/world-keratoconus-day/"},inh:"*MedAw*",fst:{era:1,y:2016},nts:{"en":"Created by the National Keratoconus Foundation"}},
+        {ty:"D",st:{mon:11,d:10},ttls:{"ar":"اليوم العالمي للقرنية المخروطية","en":"World Keratoconus Day","ff":"World Keratoconus Day","hi":"वर्ल्ड केरेटोकोनस डे"},urls:{"en":"https://www.daysoftheyear.com/days/world-keratoconus-day/"},inh:"*MedAw*",fst:{era:1,y:2016},nts:{"en":"Created by the National Keratoconus Foundation"}},
         {ty:"D",st:{mon:11,d:10},ttls:{"en":"Accounting Day®"},nts:{"en":"International Accounting Day"},urls:{"en":"https://www.accountingday.org/"},fst:{era:1,y:1972}},
         {ty:"D",st:{mon:11,d:10},ttls:{"en":"World NET Cancer Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-net-cancer-day/"},inh:"*MedAw*",fst:{era:1,y:2010},nts:{"en":"Created by the World NET Community Steering Committee"}},
         {ty:"D",st:{mon:11,d:11},inh:"BonzaBottlerD",fst:{era:1,y:1985}},

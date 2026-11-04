@@ -50,7 +50,7 @@
         {ty:"D",st:{mon:7,d:31},ttls:{"en":"Treasury Day","pl":"Dzień Skarbowości"},fst:{era:1,y:2008}},
         {ty:"D",st:{mon:8,d:15},inh:"ArmedForcesD",fst:{era:1,y:1992}},
         {ty:"D",st:{mon:8,d:29},ttls:{"en":"Municipal Police Day","pl":"Dzień Straży Gminnej"},fst:{era:1,y:1997},inh:"Police Day"},
-        {ty:"D",st:{mon:9,d:1},inh:"Veterans Day",fst:{era:1,y:1997}},
+        {ty:"D",st:{mon:9,d:1},inh:"VeteransD",fst:{era:1,y:1997}},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"Customs Service Day","pl":"Dzień Służby Celnej"},fst:{era:1,y:1999}},
         {ty:"D",st:{mon:10,d:13},ttls:{"en":"Paramedics’ Day","pl":"Dzień Ratownictwa Medycznego"},fst:{era:1,y:2006}},
         {ty:"D",st:{mon:10,d:14},inh:"Teacher’s Day",fst:{era:1,y:1972}},

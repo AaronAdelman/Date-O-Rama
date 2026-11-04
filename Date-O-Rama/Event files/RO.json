@@ -121,7 +121,7 @@
         {ty:"D",st:{mon:10,d:17},inh:"IDEP",fst:{era:1,y:1993}},
         {ty:"D",st:{mon:10,d:24},inh:"UND"},
         {ty:"D",st:{mon:10,d:25},inh:"ArmedForcesD"},
-        {ty:"D",st:{mon:11,d:11},inh:"Veterans Day"},
+        {ty:"D",st:{mon:11,d:11},inh:"VeteransD"},
         {ty:"D",st:{mon:11,d:14},ttls:{"en":"Dobruja Day"}},
         {ty:"D",st:{mon:11,d:14},inh:"WDiabetesD"},
         {ty:"D",st:{mon:11,d:16},inh:"IDForTolerance",fst:{era:1,y:1996}},
