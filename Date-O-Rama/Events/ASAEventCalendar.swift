@@ -1030,7 +1030,20 @@ class ASAEventCalendar {
             if dayOfYear == nil {
                 return false
             }
-            if !dayOfYear!.matches(value: dateSpecification.dayOfYear) {
+
+            let effectiveDayOfYear: Int = {
+                let dayOfYearNonoptional = dateSpecification.dayOfYear!
+
+                if dayOfYearNonoptional < 0 {
+                    let numberOfDaysInYear = calendar.daysInYear(for: date, locationData: components.locationData)!
+
+                    return numberOfDaysInYear + dayOfYearNonoptional + 1
+                }
+
+                return dayOfYearNonoptional
+            }()
+
+            if !dayOfYear!.matches(value: effectiveDayOfYear) {
                 return false
             }
         }
