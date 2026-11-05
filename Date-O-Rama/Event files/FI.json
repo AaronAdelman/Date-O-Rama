@@ -36,7 +36,7 @@
         {ty:"D",st:{mon:4,d:27},ttls:{"en":"National War Veterans’ Day","fi":"kansallinen veteraanipäivä"}},
         {ty:"D",st:{mon:5,d:9},inh:"EuropeD",fst:{era:1,y:2019}},
         {ty:"D",st:{mon:5,d:12},ttls:{"en":"Finnish Identity Day","fi":"suomalaisuuden päivä"}},
-        {inh:"Remembrance Day", ty:"D",st:{mon:5,wkd:[1],nth:3},urls:{"en":"https://en.wikipedia.org/wiki/Commemoration_Day_of_Fallen_Soldiers"},nts:{"en":"Commemoration Day of Fallen Soldiers"}},
+        {inh:"RemembranceD", ty:"D",st:{mon:5,wkd:[1],nth:3},urls:{"en":"https://en.wikipedia.org/wiki/Commemoration_Day_of_Fallen_Soldiers"},nts:{"en":"Commemoration Day of Fallen Soldiers"}},
         {ty:"D",st:{mon:7,d:6},ttls:{"en":"Birthday of the poet Eino Leino","fi":"Leinon päivä"},inh:"*BD*"},
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"Birthday of the national writer Aleksis Kivi","fi":"Aleksis Kiven päivä"},inh:"*BD*",nts:{"en":"Day of Finnish Literature"}},
         {ty:"D",st:{mon:10,d:24},inh:"UND",fst:{era:1,y:1948}},

@@ -35,7 +35,7 @@
         {ty:"D",st:{mon:12,d:28,wkd:[2, 3, 4,5,6]},inh:"Proclamation Day", locs:{"en":"South Australia"},fst:{era:1,y:1836},last:{era:1,y:1992}},
         {ty:"D",st:{mon:12,d:28,wkd:[2, 3]},inh:"Proclamation Day",ttls:{"en":"Proclamation Day (in lieu)"}, locs:{"en":"South Australia"},fst:{era:1,y:1993}},
         {ty:"D",st:{mon:12,d:29,thruD:30,wkd:[2]},inh:"Proclamation Day", locs:{"en":"South Australia"},fst:{era:1,y:1836},last:{era:1,y:1992}},
-        {ty:"D",st:{mon:11,d:11},inh:"Remembrance Day",urls:{"en":"https://www.daysoftheyear.com/days/remembrance-day-in-australia/"},fst:{era:1, year:1997}},
+        {ty:"D",st:{mon:11,d:11},inh:"RemembranceD",urls:{"en":"https://www.daysoftheyear.com/days/remembrance-day-in-australia/"},fst:{era:1, year:1997}},
         {ty:"D",st:{mon:7,d:1},inh:"Tartan Day",fst:{era:1, year:1989}},
         {ty:"M",st:{mon:3},inh:"Women’s History Month",fst:{era:1,y:2000}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2019,mon:8,d:23},urls:{"en":"https://www.daffodilday.com.au/"}},

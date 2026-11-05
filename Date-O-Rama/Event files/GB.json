@@ -88,7 +88,7 @@
         {ty:"D",st:{mon:10,wkd:[7],nth:2},ttls:{"en":"Bookshop Day"},urls:{"en":"https://www.daysoftheyear.com/days/bookshop-day/"},mog:"📚",fst:{era:1,y:2013},nts:{"en":"Created by the Booksellers Association"}},
         {ty:"D",st:{mon:11,d:1},ttls:{"ca":"Calan Gaeaf","en":"Calan Gaeaf","gl":"Calan Gaeaf"},urls:{"en":"https://www.daysoftheyear.com/days/calan-gaeaf/"}},
         {ty:"D",st:{mon:11,d:11},inh:"ArmisticeD",fst:{era:1,y:1919}},
-        {ty:"D",st:{mon:11,d:11},inh:"Remembrance Day",fst:{era:1,y:1919}},
+        {ty:"D",st:{mon:11,d:11},inh:"RemembranceD",fst:{era:1,y:1919}},
         {ty:"D",st:{mon:11,d:23,thruD:29,wkd:[6]},inh:"BuyNothingD",fst:{era:1,y:1997},urls:{"en":"https://www.buynothingday.co.uk/"}},
         {ty:"D",st:{mon:11,d:24,thruD:30,wkd:[7]},inh:"Small Biz Sat",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:11,d:27},ttls:{"en":"Lancashire Day"},urls:{"en":"https://www.visitlancashire.com/happy-lancashire-day"},nts:{"en":"Created by the Friends of Real Lancashire"},fst:{era:1,y:1995}},
