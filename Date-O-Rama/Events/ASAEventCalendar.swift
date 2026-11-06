@@ -1017,8 +1017,9 @@ class ASAEventCalendar {
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> ASAMatchResult
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
+        lazy var numberOfDaysInYear = calendar.daysInYear(for: date, locationData: components.locationData)!
+
         if dateSpecification.lengthsOfYear != nil {
-            let numberOfDaysInYear = calendar.daysInYear(for: date, locationData: components.locationData)!
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
             if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
                 return false
@@ -1035,8 +1036,6 @@ class ASAEventCalendar {
                 let dayOfYearNonoptional = dateSpecification.dayOfYear!
 
                 if dayOfYearNonoptional < 0 {
-                    let numberOfDaysInYear = calendar.daysInYear(for: date, locationData: components.locationData)!
-
                     return numberOfDaysInYear + dayOfYearNonoptional + 1
                 }
 
