@@ -43,5 +43,6 @@
             {ty:"D",st:{mon:8,d:15},inh:"Balipratipada"},
             {ty:"D",st:{mon:8,d:16},inh:"BhaiDooj"},
         ],nts:{"en":"Some places celebrate a sixth day."}},
+        {ty:"D",st:{mon:8,d:16},ttls:{"en":"Vikram Samvat New Year"},locs:{"en":"Gujrat"}},
     ]
 }

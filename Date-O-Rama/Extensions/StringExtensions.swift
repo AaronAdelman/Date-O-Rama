@@ -166,7 +166,7 @@ extension String {
         case REGION_CODE_Ethiopia:
             return [.gregorian, .julian, .islamicSolarTime, .ethiopicAmeteMihret]
 
-        case REGION_CODE_Bhutan, REGION_CODE_Guyana, REGION_CODE_Sri_Lanka:
+        case REGION_CODE_Bhutan, REGION_CODE_Guyana, REGION_CODE_Sri_Lanka, REGION_CODE_Fiji:
             return [.gregorian, .vikramSolarTime]
 
         default:
