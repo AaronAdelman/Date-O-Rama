@@ -1,0 +1,20 @@
+{
+    ttls:{"ar":"ويرلبول","az":"Whirlpool Corporation","azb":"ویرلپول","bg":"Whirlpool","cs":"Whirlpool","da":"Whirlpool Corporation","de":"Whirlpool Corporation","el":"Whirlpool","en":"Whirlpool Corporation","es":"Whirlpool Corporation","eu":"Whirlpool Corporation","fa":"ویرلپول","fi":"Whirlpool","fr":"Whirlpool","hu":"Whirlpool Corporation","id":"Whirlpool","it":"Whirlpool","ja":"ワールプール・コーポレーション","ka":"Whirlpool Corporation","ko":"월풀 코퍼레이션","lt":"Whirlpool","ml":"വേൾപൂൾ കോർപ്പറേഷൻ","ms":"Whirlpool Corporation","nb":"Whirlpool","nl":"Whirlpool Corporation","pl":"Whirlpool Corporation","pt":"Whirlpool Corporation","ro":"Whirlpool","ru":"Whirlpool Corporation","sv":"Whirlpool","tr":"Whirlpool Corporation","uk":"Whirlpool Corporation","ur":"ورل پول کارپوریشن","uz":"Whirlpool Corporation","zh":"惠而浦"},
+    defLocale:"en",
+    cal:"gre",
+    color:{name:"yellow"},
+    fst:{era:1,y:1999},
+    urls:{"en":"http://whirlpool.com/"},
+    evts:[
+        {ty:"Y",st:{},subEvts:[
+            {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Clean Out Your Refrigerator Day"},nts:{"en":"National Clean Out Your Fridge Day\nCreated by the Whirlpool Corporation"},mog:"🧽",urls:{"en":"https://www.daysoftheyear.com/days/clean-your-refrigerator-day/"},fst:{era:1,y:1999}},
+            {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Laundry Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-laundry-day/"},mog:"🧺",fst:{era:1,y:2019},nts:{"en":"Created by the Whirlpool Corporation"}},
+            {ty:"D",st:{mon:7,wkd:[6],nth:-1},inh:"NGetGnarlyD",fst:{era:1,y:2016}},
+            {ty:"D",st:{mon:9,d:14},inh:"NQuietD",fst:{era:1,y:2016},last:{era:1,y:2017}},
+            {ty:"D",st:{mon:9,wkd:[4],nth:2},inh:"NQuietD",fst:{era:1,y:2018}},
+        ]},
+    ],
+    tpls:{
+        "NQuietD":{ty:"D",st:{mon:9,wkd:[4],nth:2},ttls:{"en":"National Quiet Day"},urls:{"en":"https://www.daysoftheyear.com/days/quiet-day/"},mog:"🤫",nts:{"en":"Created by Whirlpool"}},
+    }
+}

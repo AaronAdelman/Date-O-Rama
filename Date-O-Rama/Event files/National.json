@@ -5,7 +5,7 @@
     color:{name:"indigo"},
     mog:"🇺🇸",
     fst:{era:1,y:1776},
-// TODO:  Hasbro event calendar (3)?  Todd McCalla event calendar (2)?  McDonald’s event calendar (2)?  Dale Anderson event calendar (2)?  Camp Fire (organization) event calendar (3)?  American Heart Association event calendar (2)?  American Counseling Association event calendar (2)?  American Humane Association event calendar (3)?  American Public Health Association (APHA) event calendar (2)?  Major League Baseball event calendar (2)?  Whirlpool Corporation event calendar (4)?  PajamaGram event calendar (2)?  Brownielocks event calendar (2 or 3)?  Pet Partners event calendar (3)?, YMCA event calendar (3)?  National Wildlife Federation (NWF) event calendar (2)?, Brewers Association event calendar (2)?  American Kennel Club event calendar (2)?, Secret Society of Happy People (SOHP) event calendar (3)?, American Cheese Society event calendar (3)?, PETA event calendar?, National Parent Teacher Association event calendar (3)?, American Academy of Dermatology (AAD) event calendar (3)?
+// TODO:  Hasbro event calendar (3)?  Todd McCalla event calendar (2)?  McDonald’s event calendar (2)?  Dale Anderson event calendar (2)?  Camp Fire (organization) event calendar (3)?  American Heart Association event calendar (2)?  American Counseling Association event calendar (2)?  American Humane Association event calendar (3)?  American Public Health Association (APHA) event calendar (2)?  Major League Baseball event calendar (2)?, PajamaGram event calendar (2)?  Brownielocks event calendar (2 or 3)?  Pet Partners event calendar (3)?, YMCA event calendar (3)?  National Wildlife Federation (NWF) event calendar (2)?, Brewers Association event calendar (2)?  American Kennel Club event calendar (2)?, Secret Society of Happy People (SOHP) event calendar (3)?, American Cheese Society event calendar (3)?, PETA event calendar?, National Parent Teacher Association event calendar (3)?, American Academy of Dermatology (AAD) event calendar (3)?
     evts:[
         {ty:"D",st:{era:1,y:1998,mon:10,d:25},inh:"LuvYourBodyD"},
         {ty:"D",st:{era:1,y:2002,mon:1,d:5},inh:"NoPantsSubwayRide"},
@@ -438,7 +438,6 @@
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"George Spelvin Day"},urls:{"en":"https://www.checkiday.com/5e547a48918a3a4b20ba468c2d115a4a/george-spelvin-day"}},
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Bundt Day"},urls:{"en":"https://www.daysoftheyear.com/days/bundt-cake-day/"},fst:{era:1,y:2016},nts:{"en":"National Bundt Cake Day"}},
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Camp T-Shirt Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-camp-t-shirt-day/"}},
-        {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Clean Out Your Refrigerator Day"},nts:{"en":"National Clean Out Your Fridge Day\nCreated by the Whirlpool Corporation"},mog:"🧽",urls:{"en":"https://www.daysoftheyear.com/days/clean-your-refrigerator-day/"},fst:{era:1,y:1999}},
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Drumming Day"},urls:{"en":"https://www.drumming.com/national-drumming-day.htm"},nts:{"en":"National Drummer Day\nDrumming Day"},mog:"🥁🪘"},
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Family Civility Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-family-civility-day/"},fst:{era:1,y:2019},nts:{"en":"Created by Dr. Rebecca Harper of the Family Civility Institute"}},
         {ty:"D",st:{mon:11,d:15},ttls:{"en":"National Raisin Bran Cereal Day"},urls:{"en":"https://www.daysoftheyear.com/days/raisin-bran-cereal-day/"}},
@@ -532,6 +531,7 @@
         {ty:"D",st:{mon:11,d:5},inh:"NDonutD",urls:{"en":"https://nationaldaycalendar.com/national-donut-day-november-5/"},nts:{"en":"National Doughnut Appreciation Day"}},
         {ty:"D",st:{mon:11,d:5},ttls:{"en":"American Football Day"},urls:{"en":"https://www.daysoftheyear.com/days/american-football-day/"},mog:"🏈"},
         {ty:"D",st:{mon:11,d:5},ttls:{"en":"National Chinese Takeout Day"},nts:{"en":"National Chinese Take Out Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-chinese-takeout-day/"},mog:"🥡"},
+        {ty:"D",st:{mon:11,d:5},ttls:{"en":"National Controlled Environment Certifier Day"},urls:{"en":"https://nationaltoday.com/national-controlled-environment-certifier-day/"},fst:{era:1,y:2025},nts:{"en":"Created by the Controlled Environment Testing Association (CETA)}},
         {ty:"D",st:{mon:11,d:6},inh:"DogFilmFestival",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Basketball Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-basketball-day/"},mog:"🏀"},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Nachos Day"},urls:{"en":"https://www.daysoftheyear.com/days/nachos-day/"}},
@@ -1073,7 +1073,6 @@
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National ASL Day"},urls:{"en":"http://www.aslday.org/?page_id=2"}},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Glazed Spiral Ham Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-glazed-spiral-ham-day/"},fst:{era:1,y:2014}},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Griper’s Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-gripers-day/"},fst:{era:1,y:1984},nts:{"en":"Created by Jack Gilbert"}},
-        {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Laundry Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-laundry-day/"},mog:"🧺",fst:{era:1,y:2019},nts:{"en":"Created by the Whirlpool Corporation"}},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Rubber Eraser Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-rubber-eraser-day/"},mog:"✏️",inh:"*Remembrance*"},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National Take a Wild Guess Day"},urls:{"en":"https://www.daysoftheyear.com/days/take-a-wild-guess-day/"},fst:{era:1,y:2010},mog:"❓",nts:{"en":"Created by Jim Barber"}},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"National That Sucks! Day"},urls:{"en":"https://www.daysoftheyear.com/days/that-sucks-day/"},nts:{"en":"That Sucks Day\nCreated by That Sucks LLC"}},

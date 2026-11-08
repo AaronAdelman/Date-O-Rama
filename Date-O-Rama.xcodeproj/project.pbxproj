@@ -452,6 +452,8 @@
 		A59E1F64309CDF5500D30DE4 /* World Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A59E1F62309CDF5500D30DE4 /* World Calendar.json */; };
 		A59E1F66309FAAB400D30DE4 /* FJ (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A59E1F65309FAAB400D30DE4 /* FJ (Vikram Samvat).json */; };
 		A59E1F67309FAAB400D30DE4 /* FJ (Vikram Samvat).json in Resources */ = {isa = PBXBuildFile; fileRef = A59E1F65309FAAB400D30DE4 /* FJ (Vikram Samvat).json */; };
+		A59E1F6930A0DAEA00D30DE4 /* Whirlpool.json in Resources */ = {isa = PBXBuildFile; fileRef = A59E1F6830A0DAEA00D30DE4 /* Whirlpool.json */; };
+		A59E1F6A30A0DAEA00D30DE4 /* Whirlpool.json in Resources */ = {isa = PBXBuildFile; fileRef = A59E1F6830A0DAEA00D30DE4 /* Whirlpool.json */; };
 		A59EABB12B445A73008C146B /* PK (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59EABB02B445A73008C146B /* PK (Muslim).json */; };
 		A59EABB22B445A73008C146B /* PK (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A59EABB02B445A73008C146B /* PK (Muslim).json */; };
 		A59EABB32B4B0AE9008C146B /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
@@ -1563,6 +1565,7 @@
 		A59D90662E8C081B0057D110 /* Confucianism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Confucianism (supplemental).json"; sourceTree = "<group>"; };
 		A59E1F62309CDF5500D30DE4 /* World Calendar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "World Calendar.json"; sourceTree = "<group>"; };
 		A59E1F65309FAAB400D30DE4 /* FJ (Vikram Samvat).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "FJ (Vikram Samvat).json"; sourceTree = "<group>"; };
+		A59E1F6830A0DAEA00D30DE4 /* Whirlpool.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Whirlpool.json; sourceTree = "<group>"; };
 		A59EABB02B445A73008C146B /* PK (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PK (Muslim).json"; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
 		A5A132912D49680B00152EA9 /* Asatru Alliance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Asatru Alliance.json"; sourceTree = "<group>"; };
@@ -2531,6 +2534,7 @@
 				A51EF5B02DC7C24D00372212 /* Western planentary days.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 				A5FB22D2286390E500B5042B /* WF.json */,
+				A59E1F6830A0DAEA00D30DE4 /* Whirlpool.json */,
 				A59E1F62309CDF5500D30DE4 /* World Calendar.json */,
 				A5F3B01A28563CB000865CEB /* WS.json */,
 				A5746302299C23A600896FC7 /* XK.json */,
@@ -3145,6 +3149,7 @@
 				A5C2B48C2AA775A00045C28C /* MV (Muslim).json in Resources */,
 				A5DDAFC82E564A8700093307 /* Supernatural.json in Resources */,
 				A5E13C472A38B166009EDEFA /* GE (Julian).json in Resources */,
+				A59E1F6A30A0DAEA00D30DE4 /* Whirlpool.json in Resources */,
 				A50DA51728686272008D54AE /* BN (Chinese).json in Resources */,
 				A51C8579282D64A00081A11B /* Buddhism.json in Resources */,
 				A581B87D284E487200407D68 /* HU.json in Resources */,
@@ -3706,6 +3711,7 @@
 				A5D1493D2E70770E00752B48 /* Barbie.json in Resources */,
 				A5EFFFB3285B808E00F2205F /* TZ.json in Resources */,
 				A5EFFF31285B5B9E00F2205F /* BN.json in Resources */,
+				A59E1F6930A0DAEA00D30DE4 /* Whirlpool.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A514B9C02D8310F0000046CC /* Star Trek.json in Resources */,
 				A581B897284E60D900407D68 /* AT.json in Resources */,

@@ -6,6 +6,7 @@ color:{name:"teal"},
 fst:{era:1,y:1930},
 urls:{"en":"https://en.wikipedia.org/wiki/World_Calendar"},
 evts:[
+{ty:"Y",st:{},subEvts:[
 {ty:"D",st:{dOfY:1},ttls:{"en":"Sunday, 1 January"}},
 {ty:"D",st:{dOfY:2},ttls:{"en":"Monday, 2 January"}},
 {ty:"D",st:{dOfY:3},ttls:{"en":"Tuesday, 3 January"}},
@@ -372,6 +373,6 @@ evts:[
 {ty:"D",st:{dOfY:-2},ttls:{"en":"Saturday, 30 December"}},
 {ty:"D",st:{dOfY:183,yLens:[366]},ttls:{"en":"Leapyear Day"}},
 {ty:"D",st:{dOfY:-1},ttls:{"en":"Worldsday"}},
-
+]},
 ]
 }

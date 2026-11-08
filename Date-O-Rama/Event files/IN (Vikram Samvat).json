@@ -45,5 +45,6 @@
         ]},
         {ty:"D",st:{mon:8,d:16},ttls:{"en":"Vikram Samvat New Year"},locs:{"en":"Gujrat"}},
         {ty:"D",st:{mon:8,d:16},ttls:{"en":"Vikram Samvat New Year"},locs:{"en":"Gujrat"}},
+        {ty:"nD",st:{mon:8,d:19,durD:6},inh:"Chhath"},
     ]
 }

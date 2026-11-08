@@ -25,7 +25,7 @@
         {ty:"nD",st:{mon:3,d:9},end:{mon:3,d:27},ttls:{"ar":"فرحة الزهراء","azb":"عمر بایرامی","bn":"ওমর কোশান","en":"Omar Koshan","fa":"عمرکشان","mzn":"عمرکشون","sat":"ᱳᱢᱟᱨ ᱠᱳᱥᱟᱱ","tr":"Ömer’in öldürülmesinin kutlanması"},nts:{"en":"Eid-e-Shuja' (Eid-e-Zahra)","he":"עיד־אי־שוג׳ה","ar":"فرحة الزهراء"},urls:{"en":"https://en.wikipedia.org/wiki/Eid-e-Shuja%27"}},
         {st:{mon:7,d:13},ttls:{"en":"Birthday of ‘Alī ibn Abī Ṭālib","he":"יום הולדת של עלי אבן אבי טאלב","ar":"عيد ميلاد علي بن أبي طالب"}, ty:"D",urls:{"en":"https://en.wikipedia.org/wiki/Shia_view_of_Ali"},inh:"*BD*"},
         {ty:"D",st:{mon:8,d:15},ttls:{"en":"Birthday of Ḥujjat Allāh al-Mahdī","he":"יום הולדת של חוג׳ת־אללה אל־מהדי","ar":"عيد ميلاد حجة الله المهدي"},urls:{"en":"https://en.wikipedia.org/wiki/Muhammad_al-Mahdi"},inh:"*BD*"},
-        
+
         {ttls:{"en":"Mourning:  Arrival of Husayn ibn Ali in Karbalā, 61 AH‎"}, ty:"D",st:{mon:1,d:2}},
         {ttls:{"en":"Mourning:  Water supply to the camp of Husayn ibn Ali was stopped"}, ty:"D",st:{mon:1,d:3}},
         {ttls:{"en":"Mourning:  Stored water in the tents of the camp of Husayn ibn Ali runs out"}, ty:"D",st:{mon:1,d:7}},
@@ -50,10 +50,11 @@
         {ty:"D",st:{mon:3,d:17},ttls:{"en":"Celebration:  Birth of Ja'far al-Sadiq, 83 AH"},inh:"*BD*"},
         {ty:"D",st:{mon:3,d:18},ttls:{"en":"Celebration:  Birth of Umm Kulthum bint Ali"},inh:"*BD*"},
         {ty:"D",st:{mon:4,d:8},ttls:{"en":"Celebration:  Birth of Hasan al-Askari, 232 AH"},inh:"*BD*"},
+        {ty:"D",st:{mon:4,d:8},inh:"Fatimiyya",fst:{era:0,y:11}},
         {ty:"D",st:{mon:5,d:10},ttls:{"en":"Remembrance:  Battle of the Camel"},inh:"*Remembrance*"},
-        {ty:"D",st:{mon:5,d:13},ttls:{"ar":"الأيام الفاطمية","az":"Fatimiyə günləri","bn":"ফাতেমিয়া","ca":"Commemoració del martiri de Fàtima","en":"Fatimiyya","eo":"Martirigo de Fatima","fa":"ایام فاطمیه","fr":"Fatimiyya","gl":"Martirio de Fátima","ms":"Syahadat Fatima","nb":"Fatimas martyrium","sv":"Fatimiya","uz":"Fotimiya"},nts:{"en":"Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH\nMartyrdom of Hazrat Fatimah\nFāṭimīyya"}},
+        {ty:"D",st:{mon:5,d:13},inh:"Fatimiyya",fst:{era:0,y:11}},
         {ttls:{"en":"Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin, 37 AH"}, ty:"D",st:{mon:5,d:15},inh:"*BD*"},
-        {ttls:{"en":"Fatimiyya (alternate date)"},nts:{"en":"Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH (alternate date)"}, ty:"D",st:{mon:6,d:3}},
+        {ty:"D",st:{mon:6,d:3},inh:"Fatimiyya",fst:{era:0,y:11}},
         {ttls:{"en":"Mourning:  Death of Umm ul-Banin (mother of Abbas ibn Ali)"}, ty:"D",st:{mon:6,d:13},inh:"*DA*"},
         {ttls:{"en":"Celebration:  Birth of Fatimah bint Muhammad, 8 BH"}, ty:"D",st:{mon:6,d:20},inh:"*BD*"},
         {ttls:{"en":"Mourning:  Martyrdom of Ali al-Hadi"}, ty:"D",st:{mon:6,d:26}},

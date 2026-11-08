@@ -105,7 +105,7 @@
             {ty:"D",st:{mon:8,d:16},inh:"Balipratipada"},
             {ty:"D",st:{mon:8,d:17},inh:"BhaiDooj"},
         ]},
-        {ty:"nD",st:{mon:8,d:19,durD:6},ttls:{"anp":"छठ","as":"ছট পূজা","awa":"छठ पर्व","bh":"छठ पूजा","bn":"ছট পূজা","en":"Chhath","es":"Chhath","hi":"छठ पूजा","kn":"ಛಠ್","mai":"छठि","mr":"छट पूजा","ne":"छठ","or":"ଛଠ ପୂଜା","pa":"ਛਠ ਪੂਜਾ","ru":"Чхатх","sa":"षष्ठीपूजा","sat":"ᱪᱷᱚᱴ ᱯᱩᱡᱟᱹ","sv":"Chhath","ta":"சத் பூசை","te":"ఛట్ పూజ","th":"ฉัฐ","uk":"Чгатх","ur":"چھٹھ"},nts:{"en":"Chhath Puja"}, urls:{"en":"https://www.daysoftheyear.com/days/chhath-puja/"}},
+        {ty:"nD",st:{mon:8,d:19,durD:6},inh:"Chhath"},
         {ty:"nD",st:{mon:8,d:21,durD:5},ttls:{"en":"Jagaddhatri Puja"}, urls:{"en":"https://en.wikipedia.org/wiki/Jagaddhatri_Puja"}},
         {ty:"nD",st:{mon:8,d:24,durD:7},ttls:{"bh":"सामा चकेवा","bn":"সামা চকেবা","en":"Sama Chakeva","hi":"सामा-चकेवा","mai":"सामा चकेवा","ne":"सामा चकेवा","ta":"சாமா சாகேவா","te":"సామా చకేవా","ur":"ساما چکیوا لوک ناٹک"}, urls:{"en":"https://en.wikipedia.org/wiki/Sama_Chakeva"}},
         {ty:"D",st:{mon:8,d:30},inh:"KartikaPurnima"},

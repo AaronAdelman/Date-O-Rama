@@ -11,6 +11,7 @@
         {ty:"D",st:{mon:6,d:20},inh:"MothersD"},
         {ty:"D",st:{mon:10,d:25},ttls:{"en":"Martyrdom of Imam Sadeq"},urls:{"en":"https://nationaltoday.com/martyrdom-of-imam-sadeq/"},inh:"*DA*"},
         {ty:"D",st:{mon:2,d:30},ttls:{"en":"Martyrdom of Imam Reza"},urls:{"en":"https://nationaltoday.com/martyrdom-of-imam-reza/"},inh:"*DA*"},
+        {ty:"D",st:{mon:6,d:3},inh:"Fatimiyya",fst:{era:0,y:11}},
         {ty:"D",st:{mon:7,d:13},ttls:{"en":"Imam Ali’s Birthday"},inh:"*BD*"},
         {ty:"D",st:{mon:9,d:21},ttls:{"en":"Martyrdom of Imam Ali"},urls:{"en":"https://www.officeholidays.com/holidays/iran/martyrdom-of-imam-ali"},inh:"*DA*"},
    ]

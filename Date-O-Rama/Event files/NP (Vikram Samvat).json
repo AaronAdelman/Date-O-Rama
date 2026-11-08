@@ -34,5 +34,7 @@
             {ty:"D",st:{mon:8,d:15},inh:"LakshmiPuja"},
             {ty:"D",st:{mon:8,d:16},inh:"Balipratipada"},
             {ty:"D",st:{mon:8,d:17},inh:"BhaiDooj"},
-        ]},    ]
+        ]},
+        {ty:"nD",st:{mon:8,d:19,durD:6},inh:"Chhath"},
+    ]
 }
