@@ -28,6 +28,11 @@
         {ty:"D",st:{mon:7,d:24},inh:"AyudhaPuja"},
         {ty:"D",st:{mon:7,d:25},inh:"Vijayadashami"},
         {ty:"D",st:{mon:7,d:29},inh:"SharadaPurnima"},
-        {ty:"D",st:{mon:8,d:14},inh:"LakshmiPuja"},
-    ]
+        {ty:"nD",st:{mon:8,d:12,durD:6},inh:"Diwali",subEvts:[
+            {ty:"D",st:{mon:8,d:13},inh:"Dhanteras"},
+            {ty:"D",st:{mon:8,d:14},inh:"NarakaChaturdashi"},
+            {ty:"D",st:{mon:8,d:15},inh:"LakshmiPuja"},
+            {ty:"D",st:{mon:8,d:16},inh:"Balipratipada"},
+            {ty:"D",st:{mon:8,d:17},inh:"BhaiDooj"},
+        ]},    ]
 }

@@ -1,3 +1,16 @@
+//  1 al-Muḥarram
+//  2 Ṣafar
+//  3 Rabīʿ al-ʾAwwal
+//  4 Rabīʿ ath-Thānī or Rabīʿ al-ʾĀkhir
+//  5 Jumādā l-ʾŪlā
+//  6 Jumādā th-Thāniya or Jumādā l-ʾĀkhira
+//  7 Rajab
+//  8 Shaʿbān
+//  9 Ramaḍān
+// 10 Shawwāl
+// 11 Dhū l-Qaʿda
+// 12 Dhū l-Ḥijja
+
 {
     ttls:{"af":"Sjia","am":"ሺዓ እስልምና","an":"Chiismo","ar":"الشيعة","ary":"شيعية","arz":"شيعه","as":"ছিয়া ইছলাম","ast":"Xiísmu","av":"ШигӀиял","az":"Şiəlik","azb":"شیعه‌","ba":"Шиғыйҙар","bar":"Schia","be":"Шыіты","be-tarask":"Шыізм","bg":"Шиитски ислям","bn":"শিয়া ইসলাম","br":"Islam chiit","bs":"Šiizam","btm":"Syi' ah","bxr":"Шиизм","ca":"Xiisme","ce":"ШийӀаш","ckb":"شیعە","crh":"Şiiylik","cs":"Ší'itský islám","cy":"Shïa","da":"Shia-islam","de":"Schia","diq":"Şıiyiye","dv":"ޝީޢީ މަޛްހަބު","el":"Σιισμός","en":"Shia Islam","eo":"Ŝijaismo","es":"Chiismo","et":"Šiiidid","eu":"Xiismo","fa":"شیعه","fi":"Šiialaisuus","fo":"Shia Islam","fr":"Chiisme","fy":"Sjiïsme","ga":"Siach","gl":"Xiísmo","glk":"شيعه","gn":"Islã chía","gsw":"Schia","ha":"Shi'a","he":"אסלאם שיעי","hi":"शिया इस्लाम","hif":"Shia Islam","hr":"Šijizam","hu":"Síita iszlám","hy":"Շիա իսլամ","id":"Syiah","ie":"Islam shiiste","ilo":"Shia nga Islam","inh":"ШиӀий","io":"Shiismo","is":"Sjía","it":"Sciismo","ja":"シーア派","jv":"Singah","ka":"შიიზმი","kaa":"Shialıq","kab":"Taciɛit","kge":"Islam Syi'ah","kk":"Шииттер","ko":"시아파","ks":"شیعہ","ku":"Şiîtî","kw":"Islam Shia","ky":"Шииттер","la":"Secta Siitica","lez":"Шиияр","lfn":"Xia","li":"Sjiisme","lld":"Sciić","lmo":"Sciism","lt":"Šiizmas","lv":"Šiītu islāms","lzh":"什葉派","mdf":"Шиизмась","mg":"Siisma","min":"Syiah","mk":"Шиизам","ml":"ഷിയാ ഇസ്‌ലാം","mr":"शिया इस्लाम","ms":"Syiah","mt":"Xigħa","my":"ရှီအာမွတ်စလင်","mzn":"تشیع","nan":"Shia","nb":"Sjiaislam","nds":"Schia","nl":"Sjiisme","nn":"Sjiaislam","oc":"Shiisme","os":"Шиизм","pa":"ਸ਼ੀਆ ਇਸਲਾਮ","pl":"Szyizm","pms":"Islam Siita","pnb":"شیعہ","ps":"شيعه","pt":"Xiismo","ro":"Islamul șiit","ru":"Шииты","rue":"Шіїты","scn":"Sciismu","sco":"Shia Islam","sd":"شيعہ اسلام","sgs":"Šijėzmos","sh":"Šijitizam","si":"ෂියා ඉස්ලාම් ආගම","sk":"Šiitizmus","sl":"Šiitizem","so":"Shiica","sq":"Islami Shia","sr":"Шиизам","su":"Syiah","sv":"Shia","sw":"Washia","szl":"Szyjity","ta":"சியா இசுலாம்","te":"షియా ఇస్లాం","tg":"Шиъа","th":"ชีอะฮ์","tl":"Shiismo","tly":"Šijəti","tr":"Şiilik","tt":"Шигыйчылык","ug":"شىئەلەر","uk":"Шиїзм","ur":"اہل تشیع","uz":"Shialik","vec":"Sciismo","vi":"Hồi giáo Shia","war":"Shia Islam","wuu":"什叶派","xmf":"შიიზმი","yi":"שיא איסלאם","yue":"什葉派","zh":"什叶派"},
     defLocale:"en",
@@ -38,7 +51,7 @@
         {ty:"D",st:{mon:3,d:18},ttls:{"en":"Celebration:  Birth of Umm Kulthum bint Ali"},inh:"*BD*"},
         {ty:"D",st:{mon:4,d:8},ttls:{"en":"Celebration:  Birth of Hasan al-Askari, 232 AH"},inh:"*BD*"},
         {ty:"D",st:{mon:5,d:10},ttls:{"en":"Remembrance:  Battle of the Camel"},inh:"*Remembrance*"},
-        {ttls:{"ar":"الأيام الفاطمية","az":"Fatimiyə günləri","bn":"ফাতেমিয়া","ca":"Commemoració del martiri de Fàtima","en":"Fatimiyya","eo":"Martirigo de Fatima","fa":"ایام فاطمیه","fr":"Fatimiyya","gl":"Martirio de Fátima","ms":"Syahadat Fatima","nb":"Fatimas martyrium","sv":"Fatimiya","uz":"Fotimiya"},nts:{"en":"Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH\nMartyrdom of Hazrat Fatimah\nFāṭimīyya"}, ty:"D",st:{mon:5,d:13}},
+        {ty:"D",st:{mon:5,d:13},ttls:{"ar":"الأيام الفاطمية","az":"Fatimiyə günləri","bn":"ফাতেমিয়া","ca":"Commemoració del martiri de Fàtima","en":"Fatimiyya","eo":"Martirigo de Fatima","fa":"ایام فاطمیه","fr":"Fatimiyya","gl":"Martirio de Fátima","ms":"Syahadat Fatima","nb":"Fatimas martyrium","sv":"Fatimiya","uz":"Fotimiya"},nts:{"en":"Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH\nMartyrdom of Hazrat Fatimah\nFāṭimīyya"}},
         {ttls:{"en":"Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin, 37 AH"}, ty:"D",st:{mon:5,d:15},inh:"*BD*"},
         {ttls:{"en":"Fatimiyya (alternate date)"},nts:{"en":"Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH (alternate date)"}, ty:"D",st:{mon:6,d:3}},
         {ttls:{"en":"Mourning:  Death of Umm ul-Banin (mother of Abbas ibn Ali)"}, ty:"D",st:{mon:6,d:13},inh:"*DA*"},

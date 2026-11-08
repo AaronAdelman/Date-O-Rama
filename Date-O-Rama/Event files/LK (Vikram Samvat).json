@@ -7,6 +7,6 @@
     color:{name:"yellow"},
     urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},
     evts:[
-        {ty:"nD",st:{mon:8,d:12,durD:5},inh:"Diwali"},
+        {ty:"nD",st:{mon:8,d:12,durD:6},inh:"Diwali"},
     ]
 }
