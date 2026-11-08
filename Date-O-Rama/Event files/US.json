@@ -129,7 +129,7 @@
         {ty:"D",st:{mon:5,d:6,thruD:12,wkd:[6]},ttls:{"en":"National Military Spouse Appreciation Day"},urls:{"en":"https://www.daysoftheyear.com/days/military-spouse-appreciation-day/"},fst:{era:1,y:1984},nts:{"en":"Created by Ronald Reagan"}},
         {ty:"D",st:{mon:5,d:5,thruD:11,wkd:[5]},ttls:{"en":"Children’s Mental Health Awareness Day"},urls:{"en":"https://www.daysoftheyear.com/days/childrens-mental-health-awareness-day/"},nts:{"en":"CMHAD\nCreated by the Substance Abuse and Mental Health Services Administration (SAMHSA)"},fst:{era:1,y:2005},mog:"👦👧",inh:"*MedAw*"},
         {ty:"D",st:{mon:5,d:7},ttls:{"en":"National Barrier Awareness Day","he":"יום המודעות למחסומים"},fst:{era:1,y:1986},mog:"🦼",urls:{"en":"https://www.daysoftheyear.com/days/national-barrier-awareness-day/"},nts:{"en":"Created by the US Congress"}},
-        {ty:"D",st:{misc:"E",oD:-47},inh:"Fasnacht Day"},
+        {ty:"D",st:{misc:"E",oD:-47},inh:"FasnachtD"},
         {ty:"D",st:{mon:1,d:1},ttls:{"en":"Ellis Island Day"},urls:{"en":"https://www.daysoftheyear.com/days/ellis-island-day/"},nts:{"en":"National Ellis Island Day\nCreated by George H. W. Bush"},fst:{era:1,y:1992}},
         {ty:"D",st:{mon:1,d:11},ttls:{"en":"Human Trafficking Awareness Day"},nts:{"en":"National Human Trafficking Awareness Day\nNational Day of Human Trafficking Awareness\nCreated by the US Congress"},urls:{"en":"https://www.daysoftheyear.com/days/human-trafficking-awareness-day/"},fst:{era:1,y:2007},mog:"⛓️"},
         {ty:"D",st:{mon:1,d:13},ttls:{"en":"Korean American Day"},fst:{era:1,y:2003},urls:{"en":"https://www.daysoftheyear.com/days/korean-american-day/"},mog:"🇰🇷🇺🇸",nts:{"en":"Created by George W. Bush"}},

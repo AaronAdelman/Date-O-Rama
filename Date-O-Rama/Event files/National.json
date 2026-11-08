@@ -531,7 +531,7 @@
         {ty:"D",st:{mon:11,d:5},inh:"NDonutD",urls:{"en":"https://nationaldaycalendar.com/national-donut-day-november-5/"},nts:{"en":"National Doughnut Appreciation Day"}},
         {ty:"D",st:{mon:11,d:5},ttls:{"en":"American Football Day"},urls:{"en":"https://www.daysoftheyear.com/days/american-football-day/"},mog:"🏈"},
         {ty:"D",st:{mon:11,d:5},ttls:{"en":"National Chinese Takeout Day"},nts:{"en":"National Chinese Take Out Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-chinese-takeout-day/"},mog:"🥡"},
-        {ty:"D",st:{mon:11,d:5},ttls:{"en":"National Controlled Environment Certifier Day"},urls:{"en":"https://nationaltoday.com/national-controlled-environment-certifier-day/"},fst:{era:1,y:2025},nts:{"en":"Created by the Controlled Environment Testing Association (CETA)}},
+        {ty:"D",st:{mon:11,d:5},ttls:{"en":"National Controlled Environment Certifier Day"},urls:{"en":"https://nationaltoday.com/national-controlled-environment-certifier-day/"},fst:{era:1,y:2025},nts:{"en":"Created by the Controlled Environment Testing Association (CETA)"}},
         {ty:"D",st:{mon:11,d:6},inh:"DogFilmFestival",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Basketball Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-basketball-day/"},mog:"🏀"},
         {ty:"D",st:{mon:11,d:6},ttls:{"en":"National Nachos Day"},urls:{"en":"https://www.daysoftheyear.com/days/nachos-day/"}},
