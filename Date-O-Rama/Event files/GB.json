@@ -299,7 +299,7 @@
         {ty:"nD",st:{mon:10,d:9},end:{mon:10,d:15},ttls:{"en":"Baby Loss Awareness Week"},urls:{"en":"https://babyloss-awareness.org/"},fst:{era:1,y:2011},mog:"👶",inh:"*MedAw*"},
         {ty:"nD",st:{mon:11,d:1,thruD:7,wkd:[2],durD:5},ttls:{"en":"Number Confidence Week"},urls:{"en":"https://www.nationalnumeracy.org.uk/numberconfidenceweek"},inh:"*MedAw*",nts:{"en":"Created by National Numeracy"},fst:{era:1,y:2020},mog:"🔢"},
         {ty:"nD",st:{mon:11,d:1},end:{mon:11,d:7},ttls:{"en":"National Medical Cannabis Week"},urls:{"en":"https://www.daysoftheyear.com/days/national-medical-cannabis-week/"},inh:"*MedAw*",nts:{"en":"Created by Patient-Led Engagement for Access (PLEA)"}},
-        {ty:"nD",st:{mon:11,d:13,thruD:19,wkd:[2],durD:7},ttls:{"en":"Book Week Scotland"},urls:{"en":"https://www.scottishbooktrust.com/book-week-scotland"},mog:"📚",fst:{era:1,y:2012}},
+        {ty:"nD",st:{mon:11,d:13,thruD:19,wkd:[2],durD:7},ttls:{"en":"Book Week Scotland"},urls:{"en":"https://www.scottishbooktrust.com/book-week-scotland"},mog:"📚",fst:{era:1,y:2012},nts:{"en":"Created by the by the Scottish Book Trust"}},
         {ty:"nD",st:{mon:11,d:2,thruD:8,wkd:[2],durD:5},ttls:{"en":"Talk Money Week"},urls:{"en":"https://maps.org.uk/en/our-work/talk-money-week#"},mog:"💷"},
         {ty:"nD",st:{mon:11,d:22},end:{mon:12,d:22},inh:"DisabilityHistoryM",fst:{era:1,y:2010}},
         {ty:"nD",st:{mon:11,d:23,thruD:29,wkd:[7]},end:{mon:12,d:1,thruD:7,wkd:[1]},ttls:{"en":"National Tree Week"},urls:{"en":"https://treecouncil.org.uk/seasonal-campaigns/national-tree-week/"},mog:"🌴🌳🌲",fst:{era:1,y:1975},nts:{"en":"Created by the Tree Council"}},
@@ -426,8 +426,8 @@
         {ty:"D",st:{mon:8,d:29},ttls:{"en":"Potteries Bottle Oven Day"},urls:{"en":"https://gladstonepotterymuseumstory.blogspot.com/p/potteries-bottle-oven-day.html"},fst:{era:1,y:1978},nts:{"en":"Created by Terry Woolliscroft"}},
         {ty:"D",st:{mon:9,d:2},ttls:{"en":"Calendar Adjustment Day"},urls:{"en":"https://www.daysoftheyear.com/days/calendar-adjustment-day/"},fst:{era:1,y:1752},mog:"📆"},
         
-        {ty:"nD",st:{mon:11,d:11,thruD:17,wkd:[2],durD:5},ttls:{"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ"},urls:{"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"},fst:{era:1,y:2004},subEvts:[
-            {ty:"D",st:{mon:11,wkd:[3],d:12,thruD:18},ttls:{"en":"Odd Socks Day"},fst:{era:1,y:2017},urls:{"en":"https://anti-bullyingalliance.org.uk/anti-bullying-week-2024-choose-respect/odd-socks-day"},mog:"🧦",nts:{"en":"Created by the Anti-Bullying Alliance"}},
+        {ty:"nD",st:{mon:11,d:11,thruD:17,wkd:[2],durD:5},ttls:{"ar":"أسبوع مكافحة التنمر","en":"Anti-Bullying Week","hy":"Հակաբուլինգյան շաբաթ","ko":"집단 따돌림 반대의 주"},urls:{"en":"https://www.daysoftheyear.com/days/anti-bullying-week/"},nts:{"en":"Created by the Anti-Bullying Alliance"},fst:{era:1,y:2004},subEvts:[
+            {ty:"D",st:{mon:11,wkd:[3],d:12,thruD:18},ttls:{"en":"Odd Socks Day"},fst:{era:1,y:2017},urls:{"en":"https://www.daysoftheyear.com/days/odd-socks-day/"},mog:"🧦",nts:{"en":"Created by the Anti-Bullying Alliance"}},
         ]},
         
         {ty:"nD",st:{mon:11,d:6,thruD:12,wkd:[2],durD:5},ttls:{"en":"National School Meals Week"},nts:{"en":"NSMW"},urls:{"en":"https://www.lacansmw.co.uk/"},mog:"🍛",subEvts:[
