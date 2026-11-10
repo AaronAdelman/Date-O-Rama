@@ -1,11 +1,12 @@
 {
-    ttls:{"en":"Judaism (supplemental)","he":"יהדות (נוספים)"},
+    ttls:{"en":"Judaism (supplemental)","he":"נוספי יהדות"},
     defLocale:"he",
     cal:"gre",
     color:{name:"blue"},
     evts:[
         {ty:"D",st:{mon:1,d:15},inh:"NBagelD",fst:{era:1,y:2000}},
         {ty:"D",st:{mon:11,d:9},inh:"IDAgainstFascism&Antisemitism",fst:{era:1,y:2001}},
+        {ty:"nD",st:{mon:11,d:9,durD:2},ttls:{"en":"Anniversary of Kristallnacht","he":"יום־שנה של ליל הבדולח"},fst:{era:1,y:1939},urls:{"en":"https://wwv.yadvashem.org/yv/en/exhibitions/kristallnacht/index.asp"}},
         {ty:"D",st:{mon:12,d:11},inh:"NHaveABagelD"},
         {ty:"D",st:{mon:12,d:24},ttls:{"de":"Nittel Nacht","en":"Nittel Nacht","es":"Nittel Nacht","fr":"Nittel Nacht","he":"ניטל","yi":"בלינדע נאכט"},mog:"0️⃣"},
         {ty:"D",st:{mon:2,d:9},inh:"NBagel&LoxD"},
