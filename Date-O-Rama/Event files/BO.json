@@ -48,7 +48,6 @@
         {ty:"D",st:{era:1,y:2023,mon:2,d:17},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"}},
 
         {ty:"D",st:{mon:9,d:24},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023},locs:{"en":"Santa Cruz"}},
-        {ty:"D",st:{mon:11,d:10},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023}},
         {ty:"D",st:{mon:11,d:18},inh:"PublicHol", urls:{"en":"https://www.officeholidays.com/holidays/bolivia/bolivia-regional-holiday"},fst:{era:1,y:2023}},
    ]
 }
