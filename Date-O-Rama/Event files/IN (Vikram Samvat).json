@@ -46,5 +46,6 @@
         {ty:"D",st:{mon:8,d:16},ttls:{"en":"Vikram Samvat New Year"},locs:{"en":"Gujrat"}},
         {ty:"D",st:{mon:8,d:16},ttls:{"en":"Vikram Samvat New Year"},locs:{"en":"Gujrat"}},
         {ty:"nD",st:{mon:8,d:19,durD:6},inh:"Chhath"},
+        {ty:"nD",st:{mon:8,d:23,durD:8},ttls:{"bn":"পুষ্কর মেলা","en":"Pushkar Fair","es":"Feria de Pushkar","fr":"Foire aux chameaux de Pushkar","gu":"પુષ્કરનો મેળો","hi":"पुष्कर मेला","kn":"ಪುಷ್ಕರ್ ಜಾತ್ರೆ","ml":"പുഷ്കർ മേള","mr":"पुष्कर मेळा","or":"ପୁଷ୍କର ମେଳା","pa":"ਪੁਸ਼ਕਰ ਮੇਲਾ","pnb":"پشکر میلہ","ta":"புசுகர் கண்காட்சி","ur":"پشکر میلہ"}, urls:{"en":"https://www.daysoftheyear.com/days/pushkar-camel-fair/"},nts:{"en":"Pushkar Camel Fair\nKartik Mela\nPushkar ka Mela"},mog:"🐪🐫"},
     ]
 }
