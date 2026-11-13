@@ -88,7 +88,7 @@
             {ty:"D",st:{mon:11,d:8},ttls:{"en":"Cook Something Bold and Pungent Day"}},
             {ty:"D",st:{mon:11,d:18},ttls:{"en":"Married To A Scorpio Support Day"},inh:"*Astrol*",fst:{era:1,y:2011}},
             {ty:"D",st:{mon:11,d:19},ttls:{"en":"Have a Bad Day Day"}},
-            {ty:"D",st:{mon:11,d:20},ttls:{"en":"Name Your PC Day"}},
+            {ty:"D",st:{mon:11,d:20},ttls:{"en":"Name Your PC Day"},fst:{era:1,y:2000},"//":"“First” is a bound."},
             {ty:"D",st:{mon:11,d:25},ttls:{"en":"Blasé Day"}},
             {ty:"D",st:{mon:11,d:30},ttls:{"en":"Stay Home Because You’re Well Day"},nts:{"en":"National Stay Home Because You’re Well Day\nNational Stay at Home Because You’re Well Day"}},
         ]},

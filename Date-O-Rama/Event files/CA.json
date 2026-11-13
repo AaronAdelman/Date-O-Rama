@@ -15,7 +15,7 @@
         {ty:"M",st:{mon:2},inh:"BlackHistoryM",fst:{era:1,y:1995}},
         {ty:"D",st:{mon:8,d:23},inh:"BlackRibbonD",fst:{era:1,y:2009}},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
-        {ty:"D",st:{mon:11,d:20},inh:"ChildrensD",ttls:{"en":"National Child Day","he":"יום הילד הלאומי"},urls:{"en":"https://www.nationalchildday.ca/"},fst:{era:1,y:1989}},
+        {ty:"D",st:{mon:11,d:20},inh:"ChildrensD",ttls:{"en":"National Child Day","he":"יום הילד הלאומי"},urls:{"en":"https://www.nationalchildday.ca/"},fst:{era:1,y:1993}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
         {ty:"D",st:{mon:3,wkd:[2],nth:2},inh:"CommonwealthD",fst:{era:1,y:1977},urls:{"en":"https://www.canada.ca/en/canadian-heritage/services/important-commemorative-days/commonwealth-day.html"}},
