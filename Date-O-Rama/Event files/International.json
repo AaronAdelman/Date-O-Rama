@@ -4,7 +4,7 @@
     cal:"gre",
     color:{name:"teal"},
     mog:"🌐",
-// TODO:  World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn); Rotary Club event calendar?  Amnesty International event calendar?, Dr. Jerome Teelucksingh event calendar?, Digital Freedom Foundation event calendar?, In Defense of Animals event calendar?, Winnie the Pooh event calendar?, Hallmark event calendar?, International Fund for Animal Welfare event calendar (3), Lions Club event calendar (2)?, Alley Cat Allies event calendar (2)?, Apple event calendar?, Petfinder event calendar (2)?
+// TODO:  World Jump Day activity at 11:39:13 GMT, Galactic Tick Day; DC Entertainment event calendar (see Batman, Superman, Harley Quinn); Rotary Club event calendar?  Amnesty International event calendar?, Dr. Jerome Teelucksingh event calendar?, Digital Freedom Foundation event calendar?, In Defense of Animals event calendar?, Winnie the Pooh event calendar?, Hallmark event calendar?, International Fund for Animal Welfare event calendar (3), Lions Club event calendar (2)?, Alley Cat Allies event calendar (2)?, Apple event calendar?, Petfinder event calendar (2)?, Human Society event calendar (3)?
     evts:[
         {ty:"D",st:{dOfY:182},ttls:{"en":"Blink-182 Day"},urls:{"en":"https://www.daysoftheyear.com/days/blink-182-day/"},nts:{"en":"Blink 182 Day\nCreated by Mark Hoppus of Blink-182"},fst:{era:1,y:1990}},
         {ty:"D",st:{dOfY:256},inh:"ProgrammersD",fst:{era:1,y:2002}},
@@ -375,12 +375,12 @@
         {ty:"D",st:{mon:11,d:20},ttls:{"en":"BOTOX® Cosmetic Day"},nts:{"en":"Onabotulinumtoxina Day\nNational Botox Cosmetic Day\nThis observance promotes vanity to the point of encouraging people to have poison injected into their faces.\nCreated by Allergan"},fst:{era:1,y:2019},urls:{"en":"https://www.daysoftheyear.com/days/botox-cosmetic-day/"}},
         {ty:"D",st:{mon:11,d:20},ttls:{"en":"International Hug a Runner Day"},urls:{"en":"https://www.daysoftheyear.com/days/international-hug-a-runner-day/"},nts:{"en":"Globally Organized Hug a Runner Day\nG.O.H.A.R.D.\nCreated by Tim Catalano and Adam Goucher"},fst:{era:1,y:2010},mog:"🫂"},
         {ty:"D",st:{mon:11,d:20},ttls:{"en":"Kick a Ginger Day"},nts:{"en":"Also known as Get Arrested for Being a Bigot Day"}},
-        {ty:"D",st:{mon:11,d:20},ttls:{"en":"World Silambam Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-silambam-day/"},nts:{"en":"Created by the World Silambam Association"}},
+        {ty:"D",st:{mon:11,d:20},ttls:{"en":"World Silambam Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-silambam-day/"},nts:{"en":"Created by the World Silambam Association (WSA)"},fst:{era:1,y:1999},"//":"“First” is a bound."},
         {ty:"D",st:{mon:11,d:21},ttls:{"az":"Ümumdünya Salam Günü","bn":"বিশ্ব হ্যালো দিবস","en":"World Hello Day","eo":"Monda Saluto-Tago","hy":"Ողջույնի համաշխարհային օր","hyw":"Ողջոյնի Համաշխարհային Օր","ja":"世界ハロー・デー","kk":"Бүкіләлемдік сәлемдесу күні","ko":"월드 헬로 데이","ml":"ലോക ഹലോ ദിനം","sr":"Светски дан поздрављања","th":"วันสวัสดีโลก","zh":"世界哈囉日"},fst:{era:1,y:1973},mog:"🙋‍♂️🙋‍♀️",nts:{"en":"This observance is meant to promote peace through communication.  Sadly, some people prefer to communicate clearly that they are interested in war and violence.\nCreated by Brian and Michael McCormack"},urls:{"en":"https://worldhelloday.org/"}},
         {ty:"D",st:{mon:11,d:21},ttls:{"de":"No Music Day","en":"No Music Day"},urls:{"en":"https://en.wikipedia.org/wiki/No_Music_Day"},fst:{era:1,y:2005}},
         {ty:"D",st:{mon:11,d:21},ttls:{"en":"False Confession Day"},nts:{"en":"This observance promotes bad behavior.  Observe at your own risk."},urls:{"en":"https://www.daysoftheyear.com/days/false-confession-day/"}},
         {ty:"D",st:{mon:11,d:22},ttls:{"en":"Go For a Ride Day"},mog:"🚲",urls:{"en":"https://www.daysoftheyear.com/days/go-for-a-ride-day/"}},
-        {ty:"D",st:{mon:11,d:22},ttls:{"en":"Humane Society Anniversary Day"},urls:{"en":"https://nationaltoday.com/humane-society-anniversary-day/"},mog:"🐶",fst:{era:1,y:1991},nts:{"en":"Created by Humane Society International (HSI)"}},
+        {ty:"D",st:{mon:11,d:22},ttls:{"en":"Humane Society Anniversary Day"},urls:{"en":"https://www.daysoftheyear.com/days/humane-society-anniversary-day/"},mog:"🐶",fst:{era:1,y:1991},nts:{"en":"Created by Humane Society International (HSI)"}},
         {ty:"D",st:{mon:11,d:22},ttls:{"en":"Love Your Freckles Day"},urls:{"en":"https://www.daysoftheyear.com/days/love-your-freckles-day/"},fst:{era:1,y:2022}},
         {ty:"D",st:{mon:11,d:22},ttls:{"en":"Start Your Own Country Day"},urls:{"en":"https://www.internationaldays.co/event/start-your-own-country-day/r/rec1QzN1d5vV7V3Rn#:~:text=November%2022nd%20is%20Start,possibility%20of%20forming%20a%20micronation."},fst:{era:1,y:1939}},
         {ty:"D",st:{mon:11,d:23,thruD:29,wkd:[6]},inh:"BlackFri",fst:{era:1,y:1951}},
@@ -1815,7 +1815,6 @@
         {ty:"W",st:{mon:10,fullWk:-1},ttls:{"en":"Ace Week"},nts:{"en":"Asexual Awareness Week\nCreated by Sara Beth Brooks"},fst:{era:1,y:2010}},
         {ty:"W",st:{mon:10,fullWk:1,d1OfWk:2},ttls:{"en":"International Plasma Awareness Week"},nts:{"en":"Created by the Plasma Protein Therapeutics Association (PPTA)"},fst:{era:1,y:2013},urls:{"en":"https://www.daysoftheyear.com/days/international-plasma-awareness-week/"}},
         {ty:"W",st:{mon:10,fullWk:4},ttls:{"en":"Chicken Soup for the Soul Week"}},
-        {ty:"W",st:{mon:11,fullWk:-1},ttls:{"en":"Better Conversations Week"},nts:{"en":"Better Conversation Week\nCreated by Loren Ekroth"},urls:{"en":"https://www.daysoftheyear.com/days/better-conversations-week/"},fst:{era:1,y:2022}},
         {ty:"W",st:{mon:11,fullWk:1,d1OfWk:2},inh:"ChildrensBookW",fst:{era:1,y:1919},last:{era:1,y:2007}},
         {ty:"W",st:{mon:11,fullWk:1,d1OfWk:2},inh:"ChildrensBookW",fst:{era:1,y:2018}},
         {ty:"W",st:{mon:11,fullWk:2,d1OfWk:2},ttls:{"en":"Human-Animal Relationship Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/human-animal-relationship-awareness-week/"},fst:{era:1,y:2016},nts:{"en":"HARA\nCreated by the Animals & Society Institute (ASI)"}},
