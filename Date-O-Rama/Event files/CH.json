@@ -10,7 +10,7 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:2},inh:"BerchtoldsD",urls:{"en":"https://www.officeholidays.com/holidays/switzerland/berchtolds-day"}},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
-        {ty:"D",st:{mon:3,d:1},inh:"Republic Day",urls:{"en":"https://www.officeholidays.com/holidays/switzerland/neuchatel/switzerland-republic-day"}},
+        {ty:"D",st:{mon:3,d:1},inh:"RepublicD",urls:{"en":"https://www.officeholidays.com/holidays/switzerland/neuchatel/switzerland-republic-day"}},
         {ty:"D",st:{mon:3,d:19},inh:"StJoseph"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},

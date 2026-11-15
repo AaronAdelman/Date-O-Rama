@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:-47},inh:"ShroveTue", urls:{"en":"https://www.officeholidays.com/holidays/spain/extremadura/carnival-tuesday"}},
         {ty:"D",st:{mon:2,d:28},ttls:{"ca":"Dia d’Andalusia","en":"Andalusia Day","es":"Día de Andalucía","eu":"Andaluziaren eguna","gl":"Día de Andalucía","ru":"День Андалусии"}, urls:{"en":"https://nationaltoday.com/andalusia-day/"},fst:{era:1,y:1980},nts:{"en":"Andalucía Day"}},
         {ty:"D",st:{mon:3,d:1},ttls:{"en":"Balearic Day","es":"Dia de las Islas Baleares"}, urls:{"en":"https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"},fst:{era:1,y:1999},nts:{"en":"Day of the Balearic Islands"}},
-        {ty:"D",st:{mon:3,d:2,wkd:[2, 3]},ttls:{"en":"Balearic Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"},fst:{era:1,y:1999}},
+        {ty:"D",st:{mon:3,d:2,wkd:[2,3]},ttls:{"en":"Balearic Day (in lieu)"}, urls:{"en":"https://www.officeholidays.com/holidays/spain/balearic-islands/balearic-day"},fst:{era:1,y:1999}},
         {ty:"D",st:{mon:3,d:13},ttls:{"en":"Statute of Autonomy"}, urls:{"en":"https://www.officeholidays.com/holidays/spain/melilla/statute-of-the-autonomous-city-of-melilla"}},
         {ty:"D",st:{mon:3,d:19},inh:"StJoseph"},
         {ty:"D",st:{mon:3,d:19},inh:"FathersD", urls:{"en":"https://www.officeholidays.com/holidays/spain/fathers-day"}},

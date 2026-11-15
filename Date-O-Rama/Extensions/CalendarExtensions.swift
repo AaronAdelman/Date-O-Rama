@@ -28,7 +28,7 @@ extension Calendar {
             result = [1, 2]
 
         case 4:
-            result = [2, 3]
+            result = [2,3]
 
         case 5:
             result = [3, 4]

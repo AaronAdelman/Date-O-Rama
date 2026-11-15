@@ -22,7 +22,7 @@
         {ty:"D",st:{mon:12,d:9},ttls:{"en":"V.C. Bird Day"}, urls:{"en":"https://nationaltoday.com/v-c-bird-day/"},nts:{"en":"National Heroes’ Day"}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
-        {ty:"D",st:{mon:12,d:27,wkd:[2, 3]},ttls:{"en":"Day off for Christmas"}},
+        {ty:"D",st:{mon:12,d:27,wkd:[2,3]},ttls:{"en":"Day off for Christmas"}},
 
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},

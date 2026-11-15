@@ -41,7 +41,7 @@
         {ty:"D",st:{era:1,y:2024,mon:10,d:12},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {ty:"D",st:{era:1,y:2026,mon:11,d:9},inh:"PublicHol",urls:{"en":"https://www.officeholidays.com/holidays/argentina/argentina-papal-visit"}},
         {ty:"D",st:{mon:10,wkd:[1],nth:3},inh:"MothersD"},
-        {ty:"D",st:{mon:10,d:10,wkd:[2, 6]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},
+        {ty:"D",st:{mon:10,d:10,wkd:[2,6]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:10,d:12},ttls:{"en":"Day of Respect for Cultural Diversity","es":"Día del Respeto a la Diversidad Cultural"},urls:{"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"},fst:{era:1,y:2010},nts:{"es":"Día de la Raza"}},
         {ty:"D",st:{mon:10,d:13,wkd:[2]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:10,d:13,wkd:[6]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},

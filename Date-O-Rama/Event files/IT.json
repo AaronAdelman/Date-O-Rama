@@ -17,7 +17,7 @@
         {ty:"D",st:{mon:4,d:28},urls:{"en":"https://www.officeholidays.com/holidays/italy/sardinia/sardinia-day"},ttls:{"en":"Sardinia’s Day"},fst:{era:1,y:1993}},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
-        {ty:"D",st:{mon:6,d:2},inh:"Republic Day",urls:{"en":"https://www.daysoftheyear.com/days/republic-day-italy/"},fst:{era:1,y:1999}},
+        {ty:"D",st:{mon:6,d:2},inh:"RepublicD",urls:{"en":"https://www.daysoftheyear.com/days/republic-day-italy/"},fst:{era:1,y:1999}},
         {ty:"D",st:{mon:6,d:24},inh:"StJohn",urls:{"en":"https://www.daysoftheyear.com/days/feast-of-san-giovanni/"}},
         {ty:"D",st:{mon:6,d:29},urls:{"en":"https://www.officeholidays.com/holidays/italy/rome/the-feast-of-st-peter-and-st-paul"},inh:"StsPeter&Paul"},
         {inh:"StRosalia", ty:"nD",st:{mon:7,d:10},end:{mon:7,d:15}},

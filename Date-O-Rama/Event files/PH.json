@@ -49,7 +49,7 @@
         {ty:"D",ttls:{"en":"José Rizal’s Birthday"},st:{mon:6,d:19},fst:{era:1,y:1961},inh:"*BD*"},
         {ty:"D",st:{mon:6,d:30},urls:{"en":"https://nationaltoday.com/philippine-spanish-friendship-day/"},ttls:{"en":"Philippine-Spanish Friendship Day","fil":"Araw ng Pagkakaibigang Pilipino-Espanyol"},mog:"🇵🇭🇪🇸",nts:{"en":"Spanish-Filipino Friendship Day"}},
         {ty:"D",st:{mon:7,d:1},inh:"AirForceD",ttls:{"en":"Philippine Air Force Day","fil":"Araw ng Hukbong Himpapawid ng Pilipinas"}},
-        {ty:"D",st:{mon:7,d:4},inh:"Republic Day",fst:{era:1,y:1946},nts:{"en":"Filipino-American Friendship Day\nPhilippine-American Friendship Day","fil":"Araw ng Pagkakaibigang Pilipino-Amerikano"},urls:{"en":"https://www.daysoftheyear.com/days/filipino-american-friendship-day/"},mog:"🇵🇭🇺🇸"},
+        {ty:"D",st:{mon:7,d:4},inh:"RepublicD",fst:{era:1,y:1946},nts:{"en":"Filipino-American Friendship Day\nPhilippine-American Friendship Day","fil":"Araw ng Pagkakaibigang Pilipino-Amerikano"},urls:{"en":"https://www.daysoftheyear.com/days/filipino-american-friendship-day/"},mog:"🇵🇭🇺🇸"},
         {ty:"D",st:{mon:7,d:25},inh:"NPressD",ttls:{"en":"National Campus Press Freedom Day","fil":"Pambansang Araw ng Malayang Pamamahayag sa Kampus"},fst:{era:1,y:2020}},
         {ty:"D",st:{mon:7,d:27},ttls:{"en":"Iglesia ni Cristo Day","fil":"Araw ng Iglesia ni Cristo"},urls:{"en":"https://nationaltoday.com/iglesia-ni-cristo-day/"},fst:{era:1,y:2009}},
         {ty:"D",ttls:{"en":"National Police Service Day and Anniversary of the Formation of the Philippine Constabulary","fil":"Araw ng Pambansang Serbisyong Pangpulisya"},st:{mon:8,d:12},inh:"Police Day"},

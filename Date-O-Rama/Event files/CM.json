@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
-        {ty:"D",st:{mon:5,d:20}, urls:{"en":"https://nationaltoday.com/cameroon-republic-day/"},inh:"Republic Day"},
+        {ty:"D",st:{mon:5,d:20}, urls:{"en":"https://nationaltoday.com/cameroon-republic-day/"},inh:"RepublicD"},
         {inh:"ND", ty:"D",st:{mon:5,d:20},fst:{era:1,y:1960}},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
