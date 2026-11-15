@@ -4,7 +4,7 @@
     defLocale:"en",
     cal:"jul",
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
-    color:{r:0.85,g:0.16,b:0.11},
+    color:{name:"red"},
     evts:[
         {ty:"D",st:{misc:"E",oD:-7},inh:"Palm Sun"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},

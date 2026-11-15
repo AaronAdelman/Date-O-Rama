@@ -391,7 +391,7 @@
         {ty:"D",st:{mon:11,d:24},ttls:{"en":"International Au Pair Day"},urls:{"en":"https://internationalaupairday.com/"},fst:{era:1,y:2019},nts:{"en":"Created by the International Au Pair Association"}},
         {ty:"D",st:{mon:11,d:24},ttls:{"en":"World Conjoined Twins Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-conjoined-twins-day/"},fst:{era:1,y:2020},nts:{"en":"Created by the International Conjoined Twins Community"},inh:"*MedAw*"},
         {ty:"D",st:{mon:11,d:25},ttls:{"en":"International Vegetarian Day"},inh:"WVegetarianD",nts:{"en":"SAK Meatless Day"},fst:{era:1,y:1977},urls:{"en":"https://en.wikipedia.org/wiki/World_Vegetarian_Day"}},
-        {ty:"D",st:{mon:11,d:26},ttls:{"en":"Coton de Tulear Day"},urls:{"en":"https://www.cotondetulearday.com/"},mog:"🐾"},
+        {ty:"D",st:{mon:11,d:26},ttls:{"en":"Coton de Tulear Day"},urls:{"en":"https://www.cotondetulearday.com/"},mog:"🐾",fst:{era:1,y:1976},"//":"“First” is a bound."},
         {ty:"D",st:{mon:11,d:26},ttls:{"en":"World Lewis Day"},urls:{"en":"https://nationaltoday.com/world-lewis-day/"},mog:"🐨"},
         {ty:"D",st:{mon:11,d:27,thruMon:12,thruD:3,wkd:[3]},inh:"GivingTue",fst:{era:1,y:2012}},
         {ty:"D",st:{mon:11,d:27},ttls:{"en":"Pie in the Face Day"},urls:{"en":"https://www.checkiday.com/bf57a06e98b6d0c2d2941866097a2053/pie-in-the-face-day"},mog:"🥧"},
