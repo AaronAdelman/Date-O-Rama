@@ -1048,7 +1048,7 @@
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"International Academic Freedom Day"},urls:{"en":"https://www.afaf.org.uk/international-academic-freedom-day/"},mog:"✋",nts:{"en":"Some people think this observance is on February 12 or October 5."}},
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"World Autoimmune Arthritis Day"},urls:{"en":"https://www.aiarthritis.org/aiarthritisday"},fst:{era:1,y:2012},inh:"*MedAw*",nts:{"en":"World AiArthritis Day\nWorld AUTOimmune & AUTOinflammatory Arthritis Day\nCreated by the International Autoimmune Arthritis Movement (AiArthritis)"}},
         {ty:"D",st:{mon:5,d:20},ttls:{"en":"World Product Day"},urls:{"en":"https://www.daysoftheyear.com/days/world-product-day/"},mog:"✍️",fst:{era:1,y:2018},nts:{"en":"Created by Mind the Product"}},
-        {ty:"D",st:{mon:5,d:21, yDiv:2, yRem:1},ttls:{"ar":"اليوم العالمي للأسماك المهاجرة","en":"World Fish Migration Day"},nts:{"en":"WFMD"},urls:{"en":"https://www.worldfishmigrationday.com/"},mog:"🐟",fst:{era:1,y:2014}},
+        {ty:"D",st:{mon:5,d:21,yDiv:2,yRem:1},ttls:{"ar":"اليوم العالمي للأسماك المهاجرة","en":"World Fish Migration Day"},nts:{"en":"WFMD"},urls:{"en":"https://www.worldfishmigrationday.com/"},mog:"🐟",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:5,d:21},ttls:{"en":"Cool Sword Day"},urls:{"en":"https://www.daysoftheyear.com/days/cool-sword-day/"},mog:"⚔️",fst:{era:1,y:2024},nts:{"en":"Created by Polygon"}},
         {ty:"D",st:{mon:5,d:22},inh:"IBeingYouD",fst:{era:1,y:2021},last:{era:1,y:2023}},
         {ty:"D",st:{mon:5,d:22},inh:"IDForBiological Diversity",fst:{era:1,y:2001}},
