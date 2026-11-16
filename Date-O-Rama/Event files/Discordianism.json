@@ -108,7 +108,7 @@
         {ty:"D",st:{mon:6,d:6},ttls:{"en":"Saint Helen’s Day"},inh:"HDH"},
         {ty:"D",st:{mon:6,d:10},inh:"Mad Hatter Day",nts:{"en":"Whollyday\n15 Confusion"}},
         {ty:"D",st:{mon:6,d:13},ttls:{"en":"Doomed TV Series Rememberance Day"},nts:{"en":"Whollyday\n20 Confusion"}},
-        {ty:"D",st:{mon:6,d:15},inh:"Liberation Day",urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
+        {ty:"D",st:{mon:6,d:15},inh:"LiberationD",urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {ty:"D",st:{mon:6,d:18},ttls:{"en":"Confumas"},urls:{"en":"https://www.fsofcabal.com/holydays/03-23-confumas"}},
         {ty:"D",st:{mon:6,d:21},ttls:{"en":"Imaginary Friend Day"},nts:{"en":"Captain Tuttle Day\nWhollyday\n26 Confusion"},inh:"EDH"},
         {ty:"D",st:{mon:6,d:23},inh:"StGeorge",nts:{"en":"Whollyday\n28 Confusion"}},

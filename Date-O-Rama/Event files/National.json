@@ -514,7 +514,7 @@
         {ty:"D",st:{mon:11,d:28,thruMon:12,thruD:4,wkd:[4]},inh:"RockefellerCtrXmasTreeLtg",fst:{era:1,y:1931}},
         {ty:"D",st:{mon:11,d:28},ttls:{"en":"National French Toast Day"},urls:{"en":"https://www.daysoftheyear.com/days/french-toast-day/"}},
         {ty:"D",st:{mon:11,d:29,thruMon:12,thruD:5,wkd:[5]},ttls:{"en":"Celebrate Shelter Pets Day"},urls:{"en":"https://www.daysoftheyear.com/days/celebrate-shelter-pets-day/"},mog:"🦮🐕‍🦺",fst:{era:1,y:2010},nts:{"en":"Created by the Humane Society of the United States, Maddie’s Fund, and the Ad Council"}},
-        {ty:"D",st:{mon:11,d:29},ttls:{"en":"National Chocolates Day"},urls:{"en":"https://www.daysoftheyear.com/days/chocolates-day/"},nts:{"en":"Chocolates Day"},inh:"*Choc*"},
+        {ty:"D",st:{mon:11,d:29},ttls:{"en":"National Chocolates Day"},urls:{"en":"https://www.daysoftheyear.com/days/chocolates-day/"},nts:{"en":"Chocolates Day"},inh:"*Choc*",fst:{era:1,y:1847},"//":"“First” is a bound."},
         {ty:"D",st:{mon:11,d:29},ttls:{"en":"National Lemon Cream Pie Day"},nts:{"en":"Lemon Pie Day"},mog:"🥧",urls:{"en":"https://www.daysoftheyear.com/days/lemon-cream-pie-day/"}},
         {ty:"D",st:{mon:11,d:29},ttls:{"en":"National Rice Cake Day"},urls:{"en":"https://www.checkiday.com/0fcc1d6d31197ddf83ce50f925e02f39/national-rice-cake-day"},fst:{era:1,y:2016}},
         {ty:"D",st:{mon:11,d:29},ttls:{"en":"National Square Dancing Day"},urls:{"en":"https://www.daysoftheyear.com/days/square-dancing-day/"},nts:{"en":"Square Dancing Day"}},

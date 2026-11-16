@@ -20,7 +20,7 @@
         {ty:"D",st:{mon:7,d:1},inh:"ID",urls:{"en":"https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"},fst:{era:1,y:1962}},
         {ty:"D",st:{mon:7,d:2,wkd:[4]},inh:"ID (IL)",urls:{"en":"https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"},fst:{era:1,y:1962}},
         {ty:"D",st:{mon:7,d:3,wkd:[5]},inh:"ID (IL)",urls:{"en":"https://www.officeholidays.com/holidays/rwanda/rwanda-independence-day"},fst:{era:1,y:1962}},
-        {ty:"D",st:{mon:7,d:4},inh:"Liberation Day",urls:{"en":"https://nationaltoday.com/rwanda-liberation-day/"},fst:{era:1,y:1994}},
+        {ty:"D",st:{mon:7,d:4},inh:"LiberationD",urls:{"en":"https://nationaltoday.com/rwanda-liberation-day/"},fst:{era:1,y:1994}},
         {ty:"D",st:{mon:8,wkd:[6],nth:1},ttls:{"en":"Umuganura Day"},urls:{"en":"https://nationaltoday.com/umuganura-day/"},fst:{era:1,y:2011}},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
         {ty:"D",st:{mon:8,d:16,thruD:17},inh:"Assumption (IL)"},

@@ -20,6 +20,6 @@
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
-        {inh:"Liberation Day", ty:"D",st:{mon:1,d:13},fst:{era:1,y:1963}},
+        {inh:"LiberationD", ty:"D",st:{mon:1,d:13},fst:{era:1,y:1963}},
     ]
 }
