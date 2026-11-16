@@ -569,6 +569,8 @@
 		A5B75CF72A2F52300010AD55 /* BN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF52A2F52300010AD55 /* BN (Muslim).json */; };
 		A5B75CF92A2F5A900010AD55 /* BG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF82A2F5A900010AD55 /* BG (Julian).json */; };
 		A5B75CFA2A2F5A900010AD55 /* BG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF82A2F5A900010AD55 /* BG (Julian).json */; };
+		A5B7DF5530AB698A001FAC4F /* International Fixed Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */; };
+		A5B7DF5630AB698A001FAC4F /* International Fixed Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */; };
 		A5B816452541A3A200E309E0 /* ASALocationWithClocksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */; };
 		A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
 		A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
@@ -1628,6 +1630,7 @@
 		A5B6D03725AF294D005ECE8D /* ASAScalable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAScalable.swift; sourceTree = "<group>"; };
 		A5B75CF52A2F52300010AD55 /* BN (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BN (Muslim).json"; sourceTree = "<group>"; };
 		A5B75CF82A2F5A900010AD55 /* BG (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BG (Julian).json"; sourceTree = "<group>"; };
+		A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "International Fixed Calendar.json"; sourceTree = "<group>"; };
 		A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocksSectionView.swift; sourceTree = "<group>"; };
 		A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExtensions.swift; sourceTree = "<group>"; };
 		A5B9113F268E7C9E0058EA69 /* Time changes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Time changes.json"; sourceTree = "<group>"; };
@@ -2269,6 +2272,7 @@
 				A5A4DC8A30447F700098358A /* IN (Vikram Samvat).json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
+				A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */,
 				A5E3222F2DD20F42009EBFC0 /* International months.json */,
 				A5E4960D2862505C001BF40C /* IO.json */,
 				A5E4960E2862505C001BF40C /* IQ.json */,
@@ -3071,6 +3075,7 @@
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
 				A5EF0015285B8EEB00F2205F /* QA (Muslim).json in Resources */,
 				A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */,
+				A5B7DF5630AB698A001FAC4F /* International Fixed Calendar.json in Resources */,
 				A50DA51528686272008D54AE /* HK (Chinese).json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
 				A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */,
@@ -3858,6 +3863,7 @@
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
 				A5A4DC8B30447F700098358A /* IN (Vikram Samvat).json in Resources */,
 				A5BA7AF93097A19B000CBAA8 /* MU (Vikram Samvat).json in Resources */,
+				A5B7DF5530AB698A001FAC4F /* International Fixed Calendar.json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
 				A50C4FD62F155AE2001D4EF2 /* Slavic Native Faith.json in Resources */,
