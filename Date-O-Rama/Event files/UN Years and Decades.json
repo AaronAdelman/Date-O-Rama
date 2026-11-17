@@ -92,7 +92,7 @@
         {ttls:{"en":"International Year of Sustainable Tourism for Development"}, ty:"Y",st:{era:1,y:2017}},
         {ttls:{"en":"International Year of Pulses"}, ty:"Y",st:{era:1,y:2016}},
         {ttls:{"en":"International Year of Light and Light-based Technologies"}, ty:"Y",st:{era:1,y:2015},mog:"💡"},
-        {ttls:{"en":"International Year of Soils"}, ty:"Y",st:{era:1,y:2015}},
+        {ty:"Y",st:{era:1,y:2015},ttls:{"ar":"السنة الدولية للتربة","ast":"Añu Internacional de los Suelos","bn":"বিশ্ব মৃত্তিকা দিবস","de":"Internationales Jahr der Böden","en":"International Year of Soils","es":"Año Internacional de los Suelos","fa":"سال جهانی خاک‌ها","fr":"Année internationale des sols","hi":"विश्व मृदा दिवस","ja":"国際土壌年","ko":"세계 토양의 날","mk":"Меѓународна година на почва","ml":"അന്താരാഷ്ട്ര മണ്ണ് വർഷം","pa":"ਵਿਸ਼ਵ ਮਿੱਟੀ ਦਿਵਸ","pnb":"عالمی مٹی دیہاڑا","sv":"Världsdagen för jordmån","ta":"பன்னாட்டு மண் ஆண்டு","zh":"國際土壤年"}},
         {ttls:{"en":"International Year of Solidarity with the Palestinian People"}, ty:"Y",st:{era:1,y:2014}},
         {ttls:{"en":"International Year of Small Island Developing States"}, ty:"Y",st:{era:1,y:2014},mog:"🏝"},
         {ttls:{"en":"International Year of Crystallography"}, ty:"Y",st:{era:1,y:2014}},

@@ -48,7 +48,7 @@
         {ty:"D",st:{mon:12,d:8},inh:"Immaculate Conception"},
         {ty:"M",st:{mon:9},urls:{"en":"https://nationaltoday.com/irish-heart-month/"},ttls:{"en":"Irish Heart Month"},inh:"*MedAw*",mog:"🫀"},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"Shine a Light Night"},urls:{"en":"https://www.daysoftheyear.com/days/shine-a-light-night/"},fst:{era:1,y:2012},nts:{"en":"Created by Focus Ireland"}},
-        {ty:"D",st:{mon:12,d:5},inh:"Light Up a Life Day",fst:{era:1,y:1984}},
+        {ty:"D",st:{mon:12,d:5},inh:"LiteUpALifeD",fst:{era:1,y:1984}},
         {ty:"nD",st:{mon:7,d:11,thruD:17,wkd:[2],durD:14},ttls:{"en":"Galway International Arts Festival","es":"Festival Internacional de Arte de Galway","ja":"ゴールウェイ芸術祭","pl":"Galway International Arts Festival"},urls:{"en":"https://www.daysoftheyear.com/days/galway-international-arts-festival/"},fst:{era:1,y:1978},mog:"🎭🎨"},
         {ty:"D",st:{mon:2,d:29},ttls:{"en":"Bachelor’s Day"},nts:{"en":"This observance feels socially outdated and awkward."},urls:{"en":"https://en.wikipedia.org/wiki/Bachelor%27s_Day_(tradition)"}},
         {ty:"D",st:{mon:3,wkd:[5],nth:1},inh:"WBookDUK&Ireland",fst:{era:1,y:1998}},

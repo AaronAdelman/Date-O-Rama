@@ -173,7 +173,7 @@
         {ty:"D",st:{mon:12,d:1},ttls:{"en":"Day D"},nts:{"en":"Whollyday\n43 Aftermath"}},
         {ty:"D",st:{mon:12,d:1},ttls:{"en":"Rosetta Stone’s Birthday"},inh:"*BD*",urls:{"en":"http://historiadiscordia.com/camden-benares-list-of-discordian-holidays/"}},
         {ty:"D",st:{mon:12,d:4},ttls:{"en":"Hug Day II"},nts:{"en":"Whollyday\n46 Aftermath"},inh:"EDH"},
-        {ty:"D",st:{mon:12,d:5},inh:"Repeal Day",fst:{era:1,y:1933},urls:{"en":"https://www.fsofcabal.com/holydays/05-47-repeal-day"}},
+        {ty:"D",st:{mon:12,d:5},inh:"RepealD",fst:{era:1,y:1933},urls:{"en":"https://www.fsofcabal.com/holydays/05-47-repeal-day"}},
         {ty:"D",st:{mon:12,d:7},ttls:{"en":"Buddy Darma’s Day"},inh:"HDH"},
         {ty:"D",st:{mon:12,d:23},ttls:{"en":"Circlemas"},urls:{"en":"https://www.fsofcabal.com/holydays/05-65-circlemas"}},
         {ty:"D",st:{mon:12,d:23},ttls:{"en":"Dragon Clan Anniversary Evening"},inh:"HDH"},
