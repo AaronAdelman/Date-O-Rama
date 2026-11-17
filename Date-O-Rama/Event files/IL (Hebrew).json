@@ -1,6 +1,20 @@
+// 1 Tisri              30
+// 2 Ḥeshwan            29/30
+// 3 Kislew             30/29
+// 4 Ṭeveth             29
+// 5 Shevaṭ             30
+// 6 ’Adhar I           30
+// 7 ’Adhar II/’Adhar   29
+// 8 Nisan              30
+// 9 ’Iyyar             29
+//10 Siwan              30
+//11 Tammuz             29
+//12 ’Av                30
+//13 ’Elul              29
+
 {
     ttls:{"*":"IL"},
-// Israel
+    // Israel
     defLocale:"he",
     cal:"heb*",
     color:{name:"blue"},
@@ -42,5 +56,6 @@
         {ty:"D",st:{mon:7,d:7},ttls:{"he":"יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע","en":"Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}},
         {ty:"D",st:{mon:5,d:30},inh:"MothersD",fst:{era:0,y:5730}},
         {ty:"D",st:{mon:5,d:30},inh:"FamilyD",fst:{era:0,y:5750}},
+        {ty:"D",st:{mon:7,d:11},ttls:{"en":"Tel Ḥay Day","he":"יום תל חי"},urls:{"he":"https://www.idf.il/אתרי-יחידות/חיל-החינוך-והנוער/מרחבי-תוכן-יחודיים/קפסולה-חינוכית/קפסולה-חינוכית-מרץ-25/יום-תל-חי-י-א-באדר/"}},
     ]
 }
