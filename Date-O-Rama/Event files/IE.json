@@ -45,7 +45,7 @@
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon"},
         {ty:"D",st:{mon:10,d:1},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:12,d:8},inh:"Immaculate Conception"},
+        {ty:"D",st:{mon:12,d:8},inh:"ImmaculateConception"},
         {ty:"M",st:{mon:9},urls:{"en":"https://nationaltoday.com/irish-heart-month/"},ttls:{"en":"Irish Heart Month"},inh:"*MedAw*",mog:"🫀"},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"Shine a Light Night"},urls:{"en":"https://www.daysoftheyear.com/days/shine-a-light-night/"},fst:{era:1,y:2012},nts:{"en":"Created by Focus Ireland"}},
         {ty:"D",st:{mon:12,d:5},inh:"LiteUpALifeD",fst:{era:1,y:1984}},
