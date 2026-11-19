@@ -5,8 +5,6 @@
     color:{name:"green"},
     mog:"🇪🇬",
     evts:[
-        {ty:"pt",st:{ptTy:"twiR",deg:0.833,offset:0.0},inh:"Sunrise"},
-        {ty:"pt",st:{ptTy:"twiS",deg:0.833,offset:0.0},inh:"Sunset"},
         {inh:"Dhuhr", ty:"pt",st:{ptTy:"DhuhrISNA"}},
         {inh:"Asr (Shafii)", ty:"pt",st:{ptTy:"AsrShafiiKarachi"}},
         {inh:"Asr (Hanafi)", ty:"pt",st:{ptTy:"AsrHanafiKarachi"}},

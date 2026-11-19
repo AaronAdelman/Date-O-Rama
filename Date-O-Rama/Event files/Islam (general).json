@@ -21,5 +21,9 @@
         {ty:"nD",st:{mon:12,d:10},end:{mon:12,d:13},inh:"EidAlAdha"},
         {ty:"D",st:{mon:7,nth:1,wkd:[6]},ttls:{"ar":"ليلة الرغائب","bn":"লায়লাতুল রাগাইব","de":"Lailat ar-raghā’ib","diq":"Qandilê Regaibi","en":"Laylat al-Raghaib","fa":"لیلةالرغائب","he":"ליל המשאלות","id":"Lailatul Raghaib","jv":"Lailatul Raghaib","tr":"Regaip Kandili","tt":"Рәгаиб кичәсе","ug":"رەغايىب كېچىسى"},nts:{"en":"Night of Wishes"},urls:{"en":"https://en.wikipedia.org/wiki/Laylat_al-Raghaib"}},
         {ty:"D",st:{mon:9,nth:-1,wkd:[6],ttls:{"ar":"جمعة الوداع","as":"জমাৎ-উল-বিদা","bn":"জুমাতুল বিদা","ckb":"جومعەی وەداع","en":"Jumu’atul-Wida","es":"Jamat Ul Vida","fa":"جمعة الوداع","ha":"Juma’atul Wada","he":"יום שישי להתראות","hi":"जुमातुल विदा","id":"Jumu’atul-Wida","ks":"ٲخٕر جُمعہ","sq":"Xhumu’ahul Uida","uk":"Джумуатул-Віда","ur":"جمعۃ الوداع","uz":"Jumʼatul-Vida"},urls:{"en":"https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}},
+
+        {ty:"pt",st:{ptTy:"twiR",deg:0.833,offset:0.0},inh:"Sunrise"},
+        {ty:"pt",st:{ptTy:"twiS",deg:0.833,offset:0.0},inh:"Sunset"},
+
     ]
 }
