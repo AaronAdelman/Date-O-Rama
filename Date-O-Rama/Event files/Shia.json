@@ -108,5 +108,10 @@
         {ttls:{"en":"Remembrance:  Fatimah went to Ali’s house after their marriage"}, ty:"D",st:{mon:12,d:19},inh:"*Remembrance*"},
         {ttls:{"en":"Remembrance:  Martyrdom of the children of Muslim ibn Aqeel, 60 AH"}, ty:"D",st:{mon:12,d:23},inh:"*Remembrance*"},
         {ttls:{"en":"Remembrance:  Martyrdom of Maytham al-Tammar, 60 AH"}, ty:"D",st:{mon:12,d:27},inh:"*Remembrance*"},
+
+        {ty:"pt",st:{ptTy:"DhuhrISNA"},inh:"Dhuhr"},
+        {ty:"pt",st:{ptTy:"IshaJafari"},inh:"Isha"},
+        {ty:"pt",st:{ptTy:"AsrShafiiJafari"},inh:"Asr (Shafii)"},
+        {ty:"pt",st:{ptTy:"AsrHanafiJafari"},inh:"Asr (Hanafi)"},
     ]
 }

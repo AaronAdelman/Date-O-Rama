@@ -4,12 +4,7 @@
     cal:"hiq-solar*",
     color:{name:"green"},
     evts:[
-        {inh:"Dhuhr", ty:"pt",st:{ptTy:"DhuhrISNA"}},
-        {inh:"Isha", ty:"pt",st:{ptTy:"IshaJafari"}},
-        {inh:"Asr (Shafii)", ty:"pt",st:{ptTy:"AsrShafiiJafari"}},
-        {inh:"Asr (Hanafi)", ty:"pt",st:{ptTy:"AsrHanafiJafari"}},
-
-        {inh:"Maghrib", ty:"pt",st:{ptTy:"MaghribJafari"},nts:{"en":"Ithna Ashari"}},
-        {inh:"Fajr", ty:"pt",st:{ptTy:"FajrJafari"},nts:{"en":"Ithna Ashari"}},
+        {ty:"pt",st:{ptTy:"MaghribJafari"},inh:"Maghrib",nts:{"en":"Ithna Ashari"}},
+        {ty:"pt",st:{ptTy:"FajrJafari"},inh:"Fajr",nts:{"en":"Ithna Ashari"}},
     ]
 }
