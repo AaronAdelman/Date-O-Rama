@@ -45,6 +45,6 @@
         {ty:"D",st:{mon:6,d:11},ttls:{"en":"Birthday of Prince Henrik"},inh:"*BD*",urls:{"en":"https://webplus.info/index.php?page=340&event=57737"}},
         {ty:"D",st:{mon:11,d:20},inh:"ChildrensD"},
         {ty:"D",st:{mon:5,d:6},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:1,d:27},ttls:{"en":"Auschwitz Day of Holocaust and Genocide Remembrance"},inh:"Holocaust Memorial Day",fst:{era:1,y:2006}},
+        {ty:"D",st:{mon:1,d:27},ttls:{"en":"Auschwitz Day of Holocaust and Genocide Remembrance"},inh:"HolocaustMemorialD",fst:{era:1,y:2006}},
    ]
 }

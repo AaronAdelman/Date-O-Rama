@@ -139,8 +139,8 @@
         {ty:"D",st:{mon:9,d:8},inh:"Nativity of Mary"},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
         {ty:"D",st:{mon:11,d:2},inh:"AllSoulsD"},
-        {inh:"Holy Family", ty:"D",st:{mon:12,d:30,wkd:[6]}},
-        {inh:"Holy Family", ty:"D",st:{mon:12,d:26,thruD:31,wkd:[1]}},
+        {ty:"D",st:{mon:12,d:30,wkd:[6]},inh:"HolyFamily"},
+        {ty:"D",st:{mon:12,d:26,thruD:31,wkd:[1]},inh:"HolyFamily"},
 
         {ty:"D",st:{mon:1,d:9},ttls:{"en":"Pravasi Bharatiya Diwas"},nts:{"en":"NRI (Non-Resident Indian) Day"},fst:{era:1,y:2003}, urls:{"en":"https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},
         {ty:"D",st:{mon:1,d:10},ttls:{"en":"World Hindi Day"}},

@@ -34,7 +34,7 @@
         {ty:"D",st:{mon:2,d:21},ttls:{"en":"King Harald V’s Day"}, urls:{"en":"https://nationaltoday.com/king-harald-vs-day/"},fst:{era:1,y:1999}},
         {ty:"D",st:{mon:6,d:7}, urls:{"en":"https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"},ttls:{"en":"Dissolution of Union between Norway and Sweden"},mog:"🇳🇴🇸🇪",fst:{era:1,y:1905}},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:1,d:27},inh:"Holocaust Memorial Day",fst:{era:1,y:2006}},
+        {ty:"D",st:{mon:1,d:27},inh:"HolocaustMemorialD",fst:{era:1,y:2006}},
         {ty:"D",st:{mon:11,d:29},ttls:{"en":"Isdal Woman Day"},urls:{"en":"https://www.daysoftheyear.com/days/isdal-woman-day/"},fst:{era:1,y:2019}},
     ]
 }

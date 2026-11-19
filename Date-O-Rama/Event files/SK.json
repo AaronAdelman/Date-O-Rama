@@ -36,7 +36,7 @@
         {ty:"D",st:{mon:10,d:1},inh:"NCoffeeD"},
         {ty:"D",st:{mon:7,d:5},urls:{"en":"https://nationaltoday.com/foreign-slovaks-day/"},ttls:{"en":"Foreign Slovaks Day"},fst:{era:1,y:2000}},
         {ty:"D",st:{mon:10,d:28},ttls:{"en":"Day of the Establishment of an Independent Czecho-Slovak State","sk":"Deň vzniku samostatného česko-slovenského štátu"},fst:{era:1,y:1918}},
-        {ty:"D",st:{mon:9,d:9},inh:"Holocaust Memorial Day",ttls:{"en":"Holocaust Victims and Racial Hatred Day"}},
+        {ty:"D",st:{mon:9,d:9},inh:"HolocaustMemorialD",ttls:{"en":"Holocaust Victims and Racial Hatred Day"}},
         {ty:"D",st:{mon:8,d:2},inh:"Roma Holocaust Memorial Day",fst:{era:1,y:2011}},
     ]
 }

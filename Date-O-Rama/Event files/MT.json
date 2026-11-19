@@ -119,7 +119,7 @@
         {ty:"D",st:{mon:11,d:26,thruMon:12,thruD:2,wkd:[1]},inh:"XTheKing"},
 
         {ty:"D",st:{mon:12,d:26},inh:"StStephen"},
-        {ty:"D",st:{mon:12,d:28},inh:"Holy Innocents Day"},
+        {ty:"D",st:{mon:12,d:28},inh:"HolyInnocentsD"},
         {ty:"D",st:{mon:12,d:31},inh:"NYE"},
 
         {inh:"GrandparentsD", ty:"D",st:{mon:10,wkd:[1],nth:2},fst:{era:1,y:2013}},

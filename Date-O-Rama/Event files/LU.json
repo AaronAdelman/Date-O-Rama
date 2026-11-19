@@ -31,6 +31,6 @@
         {ty:"D",st:{mon:3,d:20},inh:"IFrancophonieD",fst:{era:1,y:1988}},
         {ty:"D",st:{mon:10,wkd:[1],nth:1},inh:"FathersD"},
         {ty:"D",st:{misc:"E",oD:-21},inh:"Laetare", urls:{"en":"https://nationaltoday.com/pretzel-sunday/"}},
-        {ty:"D",st:{mon:1,d:27},inh:"Holocaust Memorial Day",fst:{era:1,y:2006}},
+        {ty:"D",st:{mon:1,d:27},inh:"HolocaustMemorialD",fst:{era:1,y:2006}},
     ]
 }

@@ -29,7 +29,7 @@
         {ty:"D",st:{mon:3,d:7,thruD:8,wkd:[1]},ttls:{"he":"יום בן־גוריון (נדחה)","en":"Ben Gureyon Day (postponed)"}},
         {ty:"D",st:{mon:3,d:23},inh:"Teacher’s Day",urls:{"he":"http://www.teachersday.org.il?lang=he","en":"http://www.teachersday.org.il/?lang=en","ar":"http://www.teachersday.org.il/?lang=ar"}},
         {ty:"D",st:{mon:8,d:10},ttls:{"he":"יום העליה","en":"‘Aliyyah Day"}},
-        {ty:"D",st:{mon:8,d:27,wkd:[2,3,4,5]},inh:"Holocaust Day"},
+        {ty:"D",st:{mon:8,d:27,wkd:[2,3,4,5]},inh:"HolocaustD"},
         {ty:"D",st:{mon:8,d:28,wkd:[2]},ttls:{"he":"יום הזיכרון לשואה ולגבורה (נדחה)","en":"Holocaust Day (postponed)"},urls:{"en":"https://www.ou.org/holidays/category/yom-hashoah/"}},
         {ty:"D",st:{mon:8,d:26,wkd:[5]},ttls:{"he":"יום הזיכרון לשואה ולגבורה (מוקדם)","en":"Holocaust Day (brought forward)"},urls:{"en":"https://www.ou.org/holidays/category/yom-hashoah/"}},
         {ty:"D",st:{mon:9,d:4},ttls:{"he":"יום הזיכרון לחללי מערכות ישראל","en":"Memorial Day"}},

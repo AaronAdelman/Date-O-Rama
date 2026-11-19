@@ -17,7 +17,7 @@
         {ty:"nD",st:{mon:5,d:16},end:{mon:6,d:15},inh:"JewishCultureM",fst:{era:1,y:2026}},
         {ty:"D",st:{mon:6,d:1},inh:"IFarhudD",fst:{era:1,y:2015}},
         {ty:"D",st:{mon:6,d:12},inh:"FalafelD",fst:{era:1,y:2012}},
-        {ty:"D",st:{mon:6,d:4},ttls:{"en":"Holocaust Survivor Day"},inh:"Holocaust Memorial Day",urls:{"en":"https://www.holocaustsurvivorday.com/"},fst:{era:1,y:2021}},
+        {ty:"D",st:{mon:6,d:4},ttls:{"en":"Holocaust Survivor Day"},inh:"HolocaustMemorialD",urls:{"en":"https://www.holocaustsurvivorday.com/"},fst:{era:1,y:2021}},
         {ty:"D",st:{mon:7,d:26},inh:"NBagelfestD",fst:{era:1,y:2020}},
         {ty:"D",st:{mon:7,d:4},ttls:{"en":"Entebbe Rescue Day"},fst:{era:1,y:1976}},
         {ty:"M",st:{mon:1},ttls:{"en":"Matzo Ball Soup Month"},fst:{era:1,y:2026},nts:{"en":"First reported on 2026-01-15 in a post by Marcy Hubelbank Kaufman in the Facebook group Two Jews Who Love Food."},urls:{"en":"https://www.facebook.com/groups/145296007804683/posts/1219297540404519/"},mog:"🍲"},

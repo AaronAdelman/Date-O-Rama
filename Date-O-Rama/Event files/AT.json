@@ -38,6 +38,6 @@
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
         {ty:"D",st:{mon:9,d:20},inh:"ChildrensD"},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:5,d:5},ttls:{"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism","de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"},inh:"Holocaust Memorial Day"},
+        {ty:"D",st:{mon:5,d:5},ttls:{"en":"Memorial Day against Violence and Racism in Memory on the Victims of National Socialism","de":"Gedenktag gegen Gewalt und Rassismus im Gedenken an die Opfer des Nationalsozialismus"},inh:"HolocaustMemorialD"},
     ]
 }

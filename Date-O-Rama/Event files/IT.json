@@ -43,7 +43,7 @@
 
         {ty:"D",st:{mon:1,d:7},ttls:{"en":"Tricolour Day","it":"Giornata Nazionale della Bandiera"},fst:{era:1,y:1997},inh:"NFlagD",nts:{"en":"National Flag Day"},urls:{"en":"https://en.wikipedia.org/wiki/Tricolour_Day"}},
         {ty:"D",st:{mon:1,d:26},ttls:{"en":"National Day of Remembrance and Sacrifice of the Alpini","it":"Giornata nazionale della memoria e del sacrificio degli Alpini"},fst:{era:1,y:2023}},
-        {ty:"D",st:{mon:1,d:27},inh:"Holocaust Memorial Day",fst:{era:1,y:2006}},
+        {ty:"D",st:{mon:1,d:27},inh:"HolocaustMemorialD",fst:{era:1,y:2006}},
         {ty:"D",st:{mon:2,d:1},ttls:{"en":"National Day of Civilian Victims of Wars and Conflicts in the World","it":"Giornata nazionale delle vittime civili delle guerre e dei conflitti nel mondo"},fst:{era:1,y:2017}},
         {ty:"D",st:{mon:2,d:20},ttls:{"en":"National Day of Health, Social and Social Care and Voluntary Workers","it":"Giornata nazionale del personale sanitario, sociosanitario, socioassistenziale e del volontariato"},fst:{era:1,y:2021}},
         {ty:"D",st:{mon:2,d:21},ttls:{"en":"National Braille Day","he":"יום הברייל הלאומי","it":"Giornata nazionale del Braille"},mog:"⠃",fst:{era:1,y:2008}},

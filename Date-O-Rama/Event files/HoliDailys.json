@@ -32,7 +32,7 @@
         {ty:"D",st:{mon:11,wkd:[7],nth:1},ttls:{"en":"National Wine Tasting Day"},nts:{"en":"NWTD"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2015/11/07/National-Wine-Tasting-Day"},fst:{era:1,y:2015},mog:"🍷"},
         {ty:"D",st:{mon:12,d:3},inh:"NGreenBeanCasseroleD",fst:{era:1,y:2001}},
         {ty:"D",st:{mon:12,d:8},inh:"NXmasTreeD",fst:{era:1,y:2015}},
-        {ty:"D",st:{mon:12,d:19},inh:"Holly Day",fst:{era:1,y:2015}},
+        {ty:"D",st:{mon:12,d:19},inh:"HollyD",fst:{era:1,y:2015}},
         {ty:"D",st:{mon:12,d:22},inh:"NCookieXchgD",fst:{era:1,y:2015}},
     ]
 }

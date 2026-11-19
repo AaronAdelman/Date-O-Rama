@@ -25,7 +25,7 @@
         
         {ty:"D",st:{mon:6,d:1},inh:"ChildrensD"},
         {ty:"D",st:{mon:6,d:29},inh:"BorderGuardsD",ttls:{"en":"Day of the State Border Guard of Lithuania"}},
-        {ty:"D",st:{mon:9,d:23},inh:"Holocaust Memorial Day",ttls:{"en":"Day of the Genocide of Lithuania’s Jews","lt":"Lietuvos žydų genocido diena"}},
+        {ty:"D",st:{mon:9,d:23},inh:"HolocaustMemorialD",ttls:{"en":"Day of the Genocide of Lithuania’s Jews","lt":"Lietuvos žydų genocido diena"}},
         {ty:"D",st:{mon:8,d:2},inh:"Roma Holocaust Memorial Day",fst:{era:1,y:2011}},
     ]
 }

@@ -10,7 +10,7 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {inh:"NYD (IL)", ty:"D",st:{mon:1,d:2}},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
-        {ty:"D",st:{misc:"E",oD:-1},inh:"Holy Sat"},
+        {ty:"D",st:{misc:"E",oD:-1},inh:"HolySat"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
