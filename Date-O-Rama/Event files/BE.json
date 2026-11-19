@@ -38,7 +38,7 @@
         {ty:"D",st:{mon:11,d:15},ttls:{"de":"Festtag des Königs","en":"King’s Feast","es":"Día del Rey","fr":"Fête du Roi","nl":"Koningsdag"},urls:{"en":"https://en.wikipedia.org/wiki/King%27s_Feast"},fst:{era:1,y:1866},mog:"🤴"},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
 
-        {ty:"D",st:{mon:8,d:15},inh:"MothersD", locs:{"en":"Antwerp"}},
+        {ty:"D",st:{mon:8,d:15},inh:"MothersD",locs:{"en":"Antwerp"}},
         {ty:"D",st:{mon:3,d:20},inh:"EngineersD"},
         {ty:"D",st:{mon:11,d:11},inh:"Start of Fasching",fst:{era:1,y:1234}},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},
