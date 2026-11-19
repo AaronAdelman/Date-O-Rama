@@ -122,9 +122,12 @@ struct ASACalendarChooserView: View {
         }
         .onDisappear() {
             if !self.didCancel {
-                self.clock.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
-                self.clock.updateWithGenericBuiltInEventCalendars(regionCode: location.regionCode ?? "")
-                self.clock.enforceSelfConsistency(location: location, usesDeviceLocation: usesDeviceLocation)
+                let calendar: (any ASACalendar)? = ASACalendarFactory.calendar(code: self.tempCalendarCode)
+                if calendar != nil {
+                    self.clock.calendar = calendar!
+                    self.clock.updateWithGenericBuiltInEventCalendars(regionCode: location.regionCode ?? "")
+                    self.clock.enforceSelfConsistency(location: location, usesDeviceLocation: usesDeviceLocation)
+                }
             }
         }
     }

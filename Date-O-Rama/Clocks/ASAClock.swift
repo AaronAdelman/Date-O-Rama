@@ -268,6 +268,9 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
+            if code == nil {
+                return nil
+            }
             let calendar: (any ASACalendar)? = ASACalendarFactory.calendar(code: code!)
             if calendar == nil {
                 return nil
@@ -613,7 +616,11 @@ extension ASAClock {
 
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASAClock {
         let temp = ASAClock()
-        temp.calendar = ASACalendarFactory.calendar(code: calendarCode)!
+        let calendar: (any ASACalendar)? = ASACalendarFactory.calendar(code: calendarCode)
+        if calendar == nil {
+            debugPrint(#file, #function, "Calendar code \(calendarCode) could not be instantiated into a calendar object!")
+        }
+        temp.calendar = calendar!
         temp.localeIdentifier = ""
         temp.dateFormat = dateFormat
         return temp
