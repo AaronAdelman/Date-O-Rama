@@ -401,10 +401,6 @@
         {ty:"D",st:{mon:6,d:27},ttls:{"en":"National HIV Testing Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-hiv-testing-day/"},fst:{era:1,y:1995},inh:"*MedAw*",nts:{"en":"Created by the National Association of People with AIDS (NAPWA)"}},
         {ty:"D",st:{mon:6,d:27},ttls:{"bn":"জাতীয় পিটিএসডি সচেতনতা দিবস","en":"National PTSD Awareness Day","sr":"Међународни дан особа које пате од посттрауматског стреса"},nts:{"en":"PTSD Awareness Day\nNational Post-traumatic Stress Disorder Awareness Day\nCreated by Kent Conrad"},urls:{"en":"https://www.daysoftheyear.com/days/ptsd-awareness-day/"},fst:{era:1,y:2011},inh:"*MedAw*"},
         {ty:"D",st:{mon:6,d:30},ttls:{"en":"National Corvette Day"},fst:{era:1,y:2008},urls:{"en":"https://www.daysoftheyear.com/days/national-corvette-day/"},nts:{"en":"Created by the US House of Representatives"}},
-        {ty:"D",st:{mon:6,wkd:[1],nth:2},inh:"USNChildrensD",fst:{era:1,y:1856},last:{era:1,y:1994}},
-        {ty:"D",st:{mon:10,d:8},inh:"USNChildrensD",fst:{era:1,y:1995},last:{era:1,y:2000}},
-        {ty:"D",st:{mon:6,wkd:[1],nth:1},inh:"USNChildrensD",fst:{era:1,y:2001},last:{era:1,y:2008}},
-        {ty:"D",st:{mon:11,d:20},inh:"USNChildrensD",fst:{era:1,y:2009}},
         {ty:"D",st:{mon:6,wkd:[1],nth:2},ttls:{"en":"National Cancer Thriver Day"},urls:{"en":"https://nationaltoday.com/national-cancer-thriver-day/"},inh:"*MedAw*",fst:{era:1,y:2021},nts:{"en":"Created by Connect4Cancer"}},
         {ty:"D",st:{mon:6,wkd:[5],nth:2},ttls:{"en":"National Seersucker Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-seersucker-day/"},fst:{era:1,y:1996},nts:{"en":"Created by Trent Lott"}},
         {ty:"D",st:{mon:6,wkd:[5],nth:3},ttls:{"en":"National Dump the Pump Day"},urls:{"en":"https://www.daysoftheyear.com/days/dump-the-pump-day/"},mog:"⛽︎",fst:{era:1,y:2006},nts:{"en":"Created by the American Public Transportation Association (APTA)"}},
@@ -738,6 +734,9 @@
         {ty:"D",st:{mon:8,d:11},ttls:{"en":"Hip Hop Day"},urls:{"en":"https://www.daysoftheyear.com/days/hip-hop-day/"},mog:"🎤",nts:{"en":"Created by the US Senate"},fst:{era:1,y:2021}},
         {ty:"D",st:{mon:9,wkd:[7],nth:3},ttls:{"en":"National Dance Day","he":"יום המחול הלאומי"},urls:{"en":"http://americandancemovement.org/national-dance-day/"},fst:{era:1,y:2010},nts:{"en":"Some people think this event happens on the last Saturday in July.\nCreated by Nigel Lythgoe and Eleanor Holmes Norton"}},
         {ty:"D",st:{mon:8,d:7},ttls:{"en":"National Lighthouse Day","he":"יום המגדלור הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/lighthouse-day/"},mog:"⛯",fst:{era:1,y:1989},nts:{"en":"Created by the US Congress"}},
+        {ty:"D",st:{mon:6,wkd:[1],nth:2},inh:"USNChildrensD",fst:{era:1,y:1856},last:{era:1,y:1994}},
+        {ty:"D",st:{mon:10,d:8},inh:"USNChildrensD",fst:{era:1,y:1995},last:{era:1,y:2000}},
+        {ty:"D",st:{mon:6,wkd:[1],nth:1},inh:"USNChildrensD",fst:{era:1,y:2001},last:{era:1,y:2008}},
 
         {ty:"nD",st:{mon:11,d:12,thruD:18,wkd:[1],durD:7},ttls:{"en":"American Education Week"},urls:{"en":"https://www.daysoftheyear.com/days/american-education-week/"},fst:{era:1,y:1921},subEvts:[
             {ty:"D",st:{mon:11,wkd:[4],nth:3},ttls:{"en":"National Educational Support Professionals Day"},urls:{"en":"https://www.daysoftheyear.com/days/education-support-professionals-day/"},nts:{"en":"E.S.P.s Day\nEducation Support Professionals Day\nNational ESP Day\nNational Education Support Professionals Day\nCreated by the National Education Association"},fst:{era:1,y:1987}},
