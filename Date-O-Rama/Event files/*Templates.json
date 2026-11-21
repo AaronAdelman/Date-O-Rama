@@ -812,6 +812,7 @@
         "NGetGnarlyD":{ty:"D",st:{mon:7,wkd:[6],nth:-1},ttls:{"en":"National Get Gnarly Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-get-gnarly-day-last-friday-in-july"},nts:{"en":"Created by the Whirlpool Corporation"}},
         "Oct7MassacreMemorialD":{ty:"D",st:{mon:1,d:24},ttls:{"he":"יום זיכרון לאומי לאסון 7 באוקטובר","en":"October 7 Massacre Memorial Day"}},
         "LeapD":{ty:"D",st:{mon:2,d:29},ttls:{"ca":"Dia Bixest","cmn":"闰日","cs":"Přestupný Den","cy":"Diwrnod Naid","de":"Schalttag","en":"Leap Day","eo":"Supertago","es":"Día Bisiesto M , Día Intercalar","et":"Liigpäev","fi":"Karkauspäivä","fr":"Bissexte","ga":"Lá Bisigh","he":"יום הקפיצה","hu":"Szökőnap","io":"Bisextila Dio","is":"Hlaupársdagur","ja":"閏日","la":"Dies Intercalarius","nl":"Schrikkeldag","ru":"Високо́сный День M","se":"Gárgádusbeaivi","sv":"Skottdag C","th":"วันอธิกวาร","tr":"Artık Gün"}},
+"GuruNanakGurparab":{ty:"D",st:{mon:8,d:30},ttls:{"as":"গুৰু নানক জয়ন্তী","ca":"Guru Nanak Gurpurab","en":"Guru Nanak Gurpurab","es":"Guru Nanak Gurpurab","id":"Guru Nanak Gurpurab","ml":"ഗുരു നാനാക്ക് ജയന്തി","mr":"गुरू नानक जयंती","pa":"ਗੁਰੂ ਨਾਨਕ ਜੀ ਗੁਰਪੁਰਬ","pnb":"گرو نانک گرپورب","ta":"குருநானக் ஜெயந்தி","te":"గురునానక్ జయంతి","th":"คุรุนานักชยันตี","uk":"Ґуру-Нанак-Джаянті","ur":"گرو نانک گرپورب"},nts:{"en":"Guru Nanak Gurpurab Bal\nParkash Purab Guru Nanak\nGuru Nanak’s Birthday\nGuru Nanak Prakash Utsav\nGuru Nanak Jayanti"}, urls:{"en":"https://en.wikipedia.org/wiki/Guru_Nanak_Gurpurab"},inh:"*BD*"},
 
     }
 }

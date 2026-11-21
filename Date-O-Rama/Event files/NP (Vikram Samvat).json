@@ -36,5 +36,6 @@
             {ty:"D",st:{mon:8,d:17},inh:"BhaiDooj"},
         ]},
         {ty:"nD",st:{mon:8,d:19,durD:6},inh:"Chhath"},
+        {ty:"D",st:{mon:8,d:30},inh:"GuruNanakGurparab",fst:{era:0,y:1469}},
     ]
 }

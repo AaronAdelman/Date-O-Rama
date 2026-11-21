@@ -23,7 +23,7 @@
 
         {ty:"nY",st:{},end:{},subEvts:[
             {ty:"Y",st:{yDiv:12,yRem:1},inh:"RatY"},
-            {ty:"Y",st:{yDiv:12,yRem:2},ttls:{"en":"Year of the Water Buffalo","he":"שנת תאו המים"},inh:"*Water Buffalo*"},
+            {ty:"Y",st:{yDiv:12,yRem:2},ttls:{"en":"Year of the Water Buffalo","he":"שנת תאו המים"},inh:"*WaterBuffalo*"},
             {ty:"Y",st:{yDiv:12,yRem:3},inh:"TigerY"},
             {ty:"Y",st:{yDiv:12,yRem:4},ttls:{"en":"Year of the Cat","he":"שנת החתול"},inh:"*Cat*"},
             {ty:"Y",st:{yDiv:12,yRem:5},inh:"DragonY"},
@@ -37,7 +37,7 @@
         ]},
         {ty:"Y",st:{},subEvts:[
             {ty:"M",st:{mon:11},inh:"RatM"},
-            {ty:"M",st:{mon:12},ttls:{"en":"Month of the Water Buffalo","he":"חודש תאו המים"},inh:"*Water Buffalo*"},
+            {ty:"M",st:{mon:12},ttls:{"en":"Month of the Water Buffalo","he":"חודש תאו המים"},inh:"*WaterBuffalo*"},
             {ty:"M",st:{mon:1},inh:"TigerM"},
             {ty:"M",st:{mon:2},ttls:{"en":"Month of the Cat","he":"חודש החתול"},inh:"*Cat*"},
             {ty:"M",st:{mon:3},inh:"DragonM"},
@@ -51,7 +51,7 @@
         ]},
     ],
     tpls:{
-        "*Water Buffalo*":{ty:"D",st:{},mog:"🐃",inh:"*Astrol*"},
+        "*WaterBuffalo*":{ty:"D",st:{},mog:"🐃",inh:"*Astrol*"},
         "*Cat*":{ty:"D",st:{},mog:"🐈",inh:"*Astrol*"},
     }
 }

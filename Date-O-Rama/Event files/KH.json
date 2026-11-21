@@ -1,11 +1,11 @@
 {
     ttls:{"*":"KH"},
 // Cambodia
-// TODO:  Buddhist observances, Royal Ploughing Ceremony/Royal Plowing Ceremony, Pchum Ben, Water Festival, other festivals, Visak Bochea Day
+// TODO:  Buddhist observances, Royal Ploughing Ceremony/Royal Plowing Ceremony, Pchum Ben, Water Festival (Bonn Om Touk), other festivals, Visak Bochea Day
 // TODO:  Khmer calendar observances:  Ancestors’ Day
     defLocale:"en",
     cal:"gre",
-    color:{r:0.98,g:0.88,b:0.13},
+    color:{name:"indigo"},
     fst:{era:1,y:1953},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cambodia"},
     evts:[

@@ -1,7 +1,8 @@
 {
     ttls:{"*":"MM"},
 // Myanmar, AKA Burma
-// TODO:  Islamic and Buddist holidays, National Day, Full Moon Day of Kasong, Kayin New Year, Full Moon Day of Thadingyut
+// TODO:  Islamic and Buddist holidays, National Day, Full Moon Day of Kasong, Kayin New Year, Full Moon Day of Thadingyut, Full Moon Day of Tazaungmone
+// TODO:  Burmese calendar events
     defLocale:"en",
     cal:"gre",
     color:{name:"yellow"},

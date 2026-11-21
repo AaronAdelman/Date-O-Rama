@@ -48,6 +48,11 @@
         {ty:"D",st:{mon:10,d:16,wkd:[2]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:10,d:7,wkd:[6]},inh:"RespectForCulturalDiversityD (IL)",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:11,d:20},ttls:{"en":"National Sovereignty Day","es":"Día de la Soberanía Nacional","id":"Hari Kedaulatan Nasional","pl":"Dzień Suwerenności Narodowej","pt":"Dia da Soberania Nacional"},urls:{"en":"https://nationaltoday.com/national-sovereignty-day/"},nts:{"en":"Day of National Sovereignty"},fst:{era:1,y:1974}},
+        {ty:"D",st:{era:1,y:2023,mon:11,d:18},inh:"NSovereigntyD (IL)"},
+        {ty:"D",st:{era:1,y:2025,mon:11,d:21},inh:"NSovereigntyD (IL)"},
+        {ty:"D",st:{era:1,y:2025,mon:11,d:24},inh:"NSovereigntyD (IL)"},
+        {ty:"D",st:{era:1,y:2026,mon:11,d:23},inh:"NSovereigntyD (IL)"},
+        {ty:"D",st:{era:1,y:2027,mon:11,d:15},inh:"NSovereigntyD (IL)"},
         {ty:"D",st:{mon:12,d:8},inh:"ImmaculateConception"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
 
@@ -78,5 +83,7 @@
     tpls:{
         "RespectForCulturalDiversityD (IL)":{ty:"D",st:{mon:10,d:7,wkd:[6]},ttls:{"en":"Day of Respect for Cultural Diversity (in lieu)"},urls:{"en":"https://nationaltoday.com/day-of-respect-for-cultural-diversity/"}},
         "CommemorationOfGenDonMartínMiguelDeGuemes":{ty:"D",st:{mon:6,d:17},ttls:{"en":"Commemoration of General Don Martín Miguel de Güemes","es":"Paso a la Inmortalidad del General Martín Miguel de Güemes"},urls:{"en":"https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"},inh:"*DA*",nts:{"en":"Martin Miguel de Guemes Day"}},
+        "NSovereigntyD (IL)":{ty:"D",st:{era:1,y:2023,mon:11,d:18},ttls:{"en":"National Sovereignty Day (in lieu)"},urls:{"en":"https://nationaltoday.com/national-sovereignty-day/"},nts:{"en":"Day of National Sovereignty (in lieu)"}},
+
     }
 }
