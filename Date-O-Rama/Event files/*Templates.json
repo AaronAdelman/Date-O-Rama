@@ -811,5 +811,7 @@
         "Chhath":{ty:"nD",st:{mon:8,d:19,durD:6},ttls:{"anp":"छठ","as":"ছট পূজা","awa":"छठ पर्व","bh":"छठ पूजा","bn":"ছট পূজা","en":"Chhath","es":"Chhath","hi":"छठ पूजा","kn":"ಛಠ್","mai":"छठि","mr":"छट पूजा","ne":"छठ","or":"ଛଠ ପୂଜା","pa":"ਛਠ ਪੂਜਾ","ru":"Чхатх","sa":"षष्ठीपूजा","sat":"ᱪᱷᱚᱴ ᱯᱩᱡᱟᱹ","sv":"Chhath","ta":"சத் பூசை","te":"ఛట్ పూజ","th":"ฉัฐ","uk":"Чгатх","ur":"چھٹھ"},nts:{"en":"Chhath Puja"}, urls:{"en":"https://www.daysoftheyear.com/days/chhath-puja/"}},
         "NGetGnarlyD":{ty:"D",st:{mon:7,wkd:[6],nth:-1},ttls:{"en":"National Get Gnarly Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-get-gnarly-day-last-friday-in-july"},nts:{"en":"Created by the Whirlpool Corporation"}},
         "Oct7MassacreMemorialD":{ty:"D",st:{mon:1,d:24},ttls:{"he":"יום זיכרון לאומי לאסון 7 באוקטובר","en":"October 7 Massacre Memorial Day"}},
+        "LeapD":{ty:"D",st:{mon:2,d:29},ttls:{"ca":"Dia Bixest","cmn":"闰日","cs":"Přestupný Den","cy":"Diwrnod Naid","de":"Schalttag","en":"Leap Day","eo":"Supertago","es":"Día Bisiesto M , Día Intercalar","et":"Liigpäev","fi":"Karkauspäivä","fr":"Bissexte","ga":"Lá Bisigh","he":"יום הקפיצה","hu":"Szökőnap","io":"Bisextila Dio","is":"Hlaupársdagur","ja":"閏日","la":"Dies Intercalarius","nl":"Schrikkeldag","ru":"Високо́сный День M","se":"Gárgádusbeaivi","sv":"Skottdag C","th":"วันอธิกวาร","tr":"Artık Gün"}},
+
     }
 }
