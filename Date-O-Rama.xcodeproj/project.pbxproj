@@ -2978,7 +2978,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = ASA;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2720;
 				ORGANIZATIONNAME = Adelsoft;
 				TargetAttributes = {
 					A566F4412483D6E6000A05B5 = {
@@ -4470,7 +4470,7 @@
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_WATCHOS_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -4499,7 +4499,7 @@
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_WATCHOS_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
