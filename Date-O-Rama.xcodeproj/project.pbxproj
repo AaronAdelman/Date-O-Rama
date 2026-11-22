@@ -571,6 +571,8 @@
 		A5B7DF5630AB698A001FAC4F /* International Fixed Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */; };
 		A5B7DF5830AF856E001FAC4F /* Positivist Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5730AF856E001FAC4F /* Positivist Calendar.json */; };
 		A5B7DF5930AF856E001FAC4F /* Positivist Calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5730AF856E001FAC4F /* Positivist Calendar.json */; };
+		A5B7DF5B30B2B816001FAC4F /* LK (Tamil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5A30B2B816001FAC4F /* LK (Tamil).json */; };
+		A5B7DF5C30B2B816001FAC4F /* LK (Tamil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B7DF5A30B2B816001FAC4F /* LK (Tamil).json */; };
 		A5B816452541A3A200E309E0 /* ASALocationWithClocksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */; };
 		A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
 		A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
@@ -1631,6 +1633,7 @@
 		A5B75CF82A2F5A900010AD55 /* BG (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BG (Julian).json"; sourceTree = "<group>"; };
 		A5B7DF5430AB698A001FAC4F /* International Fixed Calendar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "International Fixed Calendar.json"; sourceTree = "<group>"; };
 		A5B7DF5730AF856E001FAC4F /* Positivist Calendar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Positivist Calendar.json"; sourceTree = "<group>"; };
+		A5B7DF5A30B2B816001FAC4F /* LK (Tamil).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "LK (Tamil).json"; sourceTree = "<group>"; };
 		A5B816442541A3A200E309E0 /* ASALocationWithClocksSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocksSectionView.swift; sourceTree = "<group>"; };
 		A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExtensions.swift; sourceTree = "<group>"; };
 		A5B9113F268E7C9E0058EA69 /* Time changes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Time changes.json"; sourceTree = "<group>"; };
@@ -2322,6 +2325,7 @@
 				A5E292CD285A58E200925EBD /* LI.json */,
 				A5F6258E2E890B9800F80B79 /* List of National Days.json */,
 				A5D85095280C8A1A005247BD /* LK.json */,
+				A5B7DF5A30B2B816001FAC4F /* LK (Tamil).json */,
 				A5BA7B013097A720000CBAA8 /* LK (Vikram Samvat).json */,
 				A56B3FE22DAEBD730041E9B0 /* Looney Tunes.json */,
 				A5E8BAE528047B9E0018CD36 /* LR.json */,
@@ -3167,6 +3171,7 @@
 				A5D85097280C8A1A005247BD /* LK.json in Resources */,
 				A52A523A2C2B457E00AAA012 /* Localizable.xcstrings in Resources */,
 				A5E292D8285A5AD600925EBD /* KZ.json in Resources */,
+				A5B7DF5C30B2B816001FAC4F /* LK (Tamil).json in Resources */,
 				A5EB85192869DBB900C9321A /* LB (Julian).json in Resources */,
 				A5A465143005F58F00763176 /* I have a suggestion or request.md in Resources */,
 				A5A465153005F58F00763176 /* Personal information policy.md in Resources */,
@@ -3663,6 +3668,7 @@
 				A5DDAFCE2E56505000093307 /* The X-Files.json in Resources */,
 				A5EFFF5B285B5F9B00F2205F /* GY.json in Resources */,
 				A5E4965028625479001BF40C /* NC.json in Resources */,
+				A5B7DF5B30B2B816001FAC4F /* LK (Tamil).json in Resources */,
 				A554AFA3294F7CED0068D8E0 /* BA (Julian).json in Resources */,
 				A5D2C78B30777B38000694CB /* Kiwanis.json in Resources */,
 				A5B999C128622BBA00072FD5 /* CC.json in Resources */,

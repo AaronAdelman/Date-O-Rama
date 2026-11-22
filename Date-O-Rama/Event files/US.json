@@ -637,8 +637,8 @@
         {ty:"nD",st:{mon:12,d:3,thruD:9,wkd:[2],durD:7},ttls:{"en":"Computer Science Education Week"},nts:{"en":"CSEdWeek\nCreated by the Association for Computing Machinery (ACM)"},urls:{"en":"https://www.csedweek.org/"},fst:{era:1,y:2009},mog:"👩‍💻👨‍💻"},
         {ty:"nD",st:{mon:2,d:10,thruD:16,wkd:[7],durD:8},ttls:{"en":"National Entrepreneurship Week"},nts:{"en":"NatlEshipWeek\nCreated by the National Consortium for Entrepreneurship Education"},urls:{"en":"https://www.natleshipweek.org/"},fst:{era:1,y:2006}},
         {ty:"nD",st:{mon:2,d:14},end:{mon:2,d:21},ttls:{"en":"Love Teaching Week"},urls:{"en":"https://www.dodea.edu/news/excellence-education/love-teaching-week"},fst:{era:1,y:2015},mog:"👨‍🏫👩‍🏫"},
-        {ty:"nD",st:{mon:2,d:21,thruD:27,wkd:[2], yLens:[365]},end:{mon:2,d:27,thruMon:3,thruD:5,wkd:[1]},inh:"EDAW",fst:{era:1,y:1984}},
-        {ty:"nD",st:{mon:2,d:21,thruD:27,wkd:[2], yLens:[366]},end:{mon:2,d:27,thruMon:3,thruD:4,wkd:[1]},inh:"EDAW",fst:{era:1,y:1984}},
+        {ty:"nD",st:{mon:2,d:21,thruD:27,wkd:[2],yLens:[365]},end:{mon:2,d:27,thruMon:3,thruD:5,wkd:[1]},inh:"EDAW",fst:{era:1,y:1984}},
+        {ty:"nD",st:{mon:2,d:21,thruD:27,wkd:[2],yLens:[366]},end:{mon:2,d:27,thruMon:3,thruD:4,wkd:[1]},inh:"EDAW",fst:{era:1,y:1984}},
         {ty:"nD",st:{mon:2,d:24},end:{mon:2,d:27},ttls:{"en":"Whooping Crane Festival"},urls:{"en":"https://nationaltoday.com/whooping-crane-festival/"},fst:{era:1,y:1996}},
         {ty:"nD",st:{mon:3,d:17,thruD:23,wkd:[2],durD:7},ttls:{"en":"National Drug and Alcohol Facts Week®"},nts:{"en":"NDAFW\nCreated by the National Institute on Drug Abuse"},urls:{"en":"https://nida.nih.gov/research-topics/national-drug-alcohol-facts-week"},fst:{era:1,y:2010}},
         {ty:"nD",st:{mon:3,d:10,thruD:16,wkd:[1],durD:7},ttls:{"en":"Sunshine Week"},urls:{"en":"https://sunshineweek.org/"},fst:{era:1,y:2005}},
@@ -765,11 +765,11 @@
             {ty:"D",st:{mon:5,d:3,thruD:9,wkd:[3]},inh:"NTeacherD",fst:{era:1,y:1985}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1], yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
+        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace Corps Day",fst:{era:1,y:1961}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1], yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
+        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1],yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace Corps Day",fst:{era:1,y:1961}},
         ]},
         
@@ -802,7 +802,7 @@
         "NGoodNeighborD":{ty:"D",st:{mon:9,d:28},ttls:{"en":"National Good Neighbor Day"},urls:{"en":"https://nationalgoodneighborday.com/"},nts:{"en":"Created by Becky Mattson"}},
         "NativeAmericanD":{ttls:{"en":"Native American Day","si":"ඇමරිකානු ආදීවාසී දිනය","he":"יום העמים הילידים בארצות הברית"}, ty:"D",st:{mon:9,wkd:[6],nth:4},urls:{"en":"https://nationaltoday.com/national-native-american-day/"}},
         "Peace Corps Day":{ty:"D",st:{mon:3,d:1},ttls:{"en":"Peace Corps Day"},mog:"🕊",urls:{"en":"https://www.daysoftheyear.com/days/peace-corps-day/"},nts:{"en":"Created by John F. Kennedy"}},
-        "Peace Corps Week":{ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1], yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},ttls:{"en":"Peace Corps Week"},urls:{"en":"https://www.peacecorps.gov/connect/blog/history-of-peace-corps-week/"},mog:"☮️",nts:{"en":"Created by John F. Kennedy"}},
+        "Peace Corps Week":{ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},ttls:{"en":"Peace Corps Week"},urls:{"en":"https://www.peacecorps.gov/connect/blog/history-of-peace-corps-week/"},mog:"☮️",nts:{"en":"Created by John F. Kennedy"}},
         "Robert E. Lee Day":{ttls:{"en":"Robert E. Lee Day","he":"יום רוברט אדוארד לי","fr":"Journée de Robert E. Lee"},nts:{"en":"Lee’s Birthday"}, ty:"D",st:{mon:1,d:19},urls:{"en":"https://nationaltoday.com/robert-e-lee-day/"},inh:"*BD*"},
         "Rosa Parks Day":{ttls:{"en":"Rosa Parks Day","fr":"Rosa Parks Day","he":"יום רוזה פארקס","hr":"Dan Rose Parks","ml":"റോസ പാർക്ക് ദിനം"}, ty:"D",st:{mon:2,d:4},urls:{"en":"https://www.daysoftheyear.com/days/rosa-parks-day/"},mog:"🚌",nts:{"en":"Day of Courage\nCreated by the California State Legislature"}},
         "Truman Day":{ty:"D",st:{mon:5,d:8},urls:{"en":"https://www.daysoftheyear.com/days/truman-day/"},ttls:{"en":"Truman Day","he":"יום טרומן"},inh:"*BD*"},

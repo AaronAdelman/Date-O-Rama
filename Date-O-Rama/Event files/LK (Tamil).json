@@ -1,0 +1,26 @@
+//  Month (in Tamil)    Transliteration    Hindu Lunar calendar    Nakshatra    Gregorian calendar    Days
+//1  சித்திரை    Chittirai    Chaitra    Chittirai    April–May    30–31
+//2  வைகாசி    Vaikāsi    Vaisakha    Visakam    May–June    31–32
+//3  ஆனி    Āni    Jyestha    Anusham    June–July    31–32
+//4  ஆடி    Ādi    Asadha    Pooradam or Uthiradam    July–August    31–32
+//5  ஆவணி    Āvaṇi    Shravana    Thiruvonam    August–September    31–32
+//6  புரட்டாசி    Puraṭṭāsi    Bhadrapada    Pooratathi or Uthiratathi    September–October    30–31
+//7  ஐப்பசி    Aippasi    Asvina    Ashvini    October–November    29–30
+//8  கார்த்திகை    Kārtikai    Kartika    Kartikai    November–December    29–30
+//9 மார்கழி    Mārgaḻi    Margashirsha    Mirgashirsham    December–January    29–30
+//10 தை    Tai    Pausha    Pusham    January–February    29–30
+//11 மாசி    Māsi    Magha    Magham    February–March    29–30
+//12  பங்குனி    Panguni    Phalguna    Uttiram    March–April    30–31
+{
+    ttls:{"*":"LK"},
+// Sri Lanka
+// TODO:  Muslim, Buddhist, and Hindu holidays, Sinhala New Year, Binara Full Moon Poya, Vap Full Moon Poya
+    defLocale:"en",
+    color:{name:"yellow"},
+    cal:"tamil",
+    urls:{"en":"https://en.wikipedia.org/wiki/Culture_of_Sri_Lanka#List_of_holidays"},
+    evts:[
+        {ty:"D",st:{mon:1,d:1},inh:"Puthandu"},
+    ]
+}
+
