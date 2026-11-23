@@ -216,7 +216,7 @@
         {ty:"D",st:{mon:12,wkd:[5],nth:3},inh:"NReGiftingD",fst:{era:1,y:2008}},
         {ty:"D",st:{mon:12,d:2},ttls:{"en":"Special Education Day"},nts:{"en":"National Special Education Day"},urls:{"en":"https://www.daysoftheyear.com/days/special-education-day/"},fst:{era:1,y:2005}},
         {ty:"D",st:{mon:12,d:20},ttls:{"en":"Space Force Birthday"}},
-        {ty:"D",st:{mon:12,d:28},ttls:{"en":"Pledge of Allegiance Day"},nts:{"en":"Allegiance Day"},urls:{"en":"https://www.daysoftheyear.com/days/pledge-of-allegiance-day/"},fst:{era:1,y:1945}},
+        {ty:"D",st:{mon:12,d:28},ttls:{"en":"Pledge of Allegiance Day"},nts:{"en":"Allegiance Day"},urls:{"en":"https://www.daysoftheyear.com/days/pledge-of-allegiance-day/"},fst:{era:1,y:1954}},
         {ty:"D",st:{mon:9,d:8},ttls:{"en":"National Pledge of Allegiance Day"},nts:{"en":"Created by George Bush"},urls:{"en":"https://www.checkiday.com/6462f8e0b8223187719934b262c05792/national-pledge-of-allegiance-day"},fst:{era:1,y:1989}},
         {ty:"M",st:{mon:9},ttls:{"en":"Gospel Music Heritage Month"},fst:{era:1,y:2008},nts:{"en":"Created by Alvin V. Williams"},urls:{"en":"https://en.wikipedia.org/wiki/Gospel_Music_Heritage_Month"}},
         {ty:"D",st:{mon:12,d:4},ttls:{"en":"Extraordinary Work Team Recognition Day"},urls:{"en":"https://www.daysoftheyear.com/days/extraordinary-work-team-recognition-day/"},fst:{era:1,y:1990},nts:{"en":"Capturing the Spirit of America’s Workplace\nNational Teamwork Day\nCreated by George H.W. Bush"}},
