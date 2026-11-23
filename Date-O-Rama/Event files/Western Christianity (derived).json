@@ -163,7 +163,6 @@
         {ty:"D",st:{mon:9,d:29},inh:"Goose Day", urls:{"en":"https://www.checkiday.com/46e9409507ad0ab3c7496392892cd708/goose-day"},fst:{era:1,y:1786}},
         {ty:"M",st:{mon:10},ttls:{"en":"Black Cat Awareness Month"}, urls:{"en":"https://www.daysoftheyear.com/days/black-cat-awareness-month/"},fst:{era:1,y:2013},mog:"🐈‍⬛",nts:{"en":"Created by Layla Morgan Wilde"}},
         {ty:"M",st:{mon:10},ttls:{"en":"Halloween Safety Month"}, urls:{"en":"https://www.daysoftheyear.com/days/halloween-safety-month/"},fst:{era:1,y:1970},mog:"🎃🦺"},
-        {ty:"M",st:{mon:12},ttls:{"en":"Destroy Dick December"},nts:{"en":"A month of poor taste, as if we needed help finding that on the Internet.  This is a response to No Nut November."}},
         {ty:"M",st:{mon:12},ttls:{"en":"National Giving Month"}, urls:{"en":"https://nationalgivingmonth.org/"},nts:{"en":"Month of Giving\nCreated by the National Association of Nonprofit Organizations & Executives (NANOE)"},mog:"🎁"},
         {ty:"M",st:{mon:12},ttls:{"en":"Safe Toys and Gifts Month"},mog:"🧸", urls:{"en":"https://www.daysoftheyear.com/days/safe-toys-and-gifts-month/"},nts:{"en":"Created by Prevent Blindness America"}},
         {ty:"nD",st:{mon:1,d:1},ttls:{"en":"Diet Resolution Week"},end:{mon:1,d:7}, urls:{"en":"https://www.daysoftheyear.com/days/diet-resolution-week/"},mog:"🍅🍊🍍",nts:{"en":"Created by the Vegetarian Awareness Network"}},
