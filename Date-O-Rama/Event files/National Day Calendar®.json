@@ -213,7 +213,7 @@
         {ty:"D",st:{mon:6,d:22},ttls:{"en":"National HVAC Tech Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-hvac-tech-day-june-22"},fst:{era:1,y:2016},nts:{"en":"Created by ARS/Rescue Rooter"}},
         {ty:"D",st:{mon:6,d:23},ttls:{"en":"National Detroit-Style Pizza Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-detroit-style-pizza-day-june-23"},fst:{era:1,y:2021},mog:"🍕",nts:{"en":"National Detroit Style Pizza Day\nBuddy’s Pizza Day"}},
         {ty:"D",st:{mon:6,d:23},ttls:{"en":"National Hydration Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-hydration-day-june-23"},mog:"🚰",fst:{era:1,y:2016},nts:{"en":"Created by SafeTGard Corporationh"}},
-        {ty:"D",st:{mon:6,d:24},inh:"NTake Back the Lunch Break Day",fst:{era:1,y:2022}},
+        {ty:"D",st:{mon:6,d:24},inh:"NTake Back the Lunch BreakD",fst:{era:1,y:2022}},
         {ty:"D",st:{mon:6,d:24},ttls:{"en":"National Patch Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-patch-day-june-24"},fst:{era:1,y:2023},nts:{"en":"Created by Brian Burkhardt and family"}},
         {ty:"D",st:{mon:6,d:26},ttls:{"en":"National Barcode Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-barcode-day-june-26"},fst:{era:1,y:2021},nts:{"en":"Created by Barcoding, Inc., Datalogic, and ScanSource"}},
         {ty:"D",st:{mon:6,d:26},ttls:{"en":"National Coconut Day","he":"יום הקוקוס הלאומי"},mog:"🥥",urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-coconut-day-june-26"},fst:{era:1,y:2019},nts:{"en":"Created by the Coconut Coalition of the Americas (CCA)"}},
@@ -234,7 +234,7 @@
         {ty:"D",st:{mon:6,wkd:[3],nth:2},inh:"NCallYourDrD",fst:{era:1,y:2016}},
         {ty:"D",st:{mon:6,wkd:[4],nth:-1},ttls:{"en":"National Parchment Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-parchment-day-last-wednesday-in-june"},fst:{era:1,y:2016},nts:{"en":"Created by PaperChef"}},
         {ty:"D",st:{mon:6,wkd:[6],nth:2},ttls:{"en":"National Movie Night"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-movie-night-second-friday-in-june"},mog:"🎦",fst:{era:1,y:2022},nts:{"en":"Created by Jennifer Borget"}},
-        {ty:"D",st:{mon:6,wkd:[6],nth:3},inh:"NTake Back the Lunch Break Day",fst:{era:1,y:2018},last:{era:1,y:2021}},
+        {ty:"D",st:{mon:6,wkd:[6],nth:3},inh:"NTake Back the Lunch BreakD",fst:{era:1,y:2018},last:{era:1,y:2021}},
         {ty:"D",st:{mon:6,wkd:[7],nth:-1},ttls:{"en":"National Mural Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-mural-day-last-saturday-in-june"},fst:{era:1,y:2025,nts:{"en":"There may be another National Mural Day on May7.\nCreated by Viva Cuba, Inc."}}},
         {ty:"D",st:{mon:6,wkd:[7],nth:1},ttls:{"en":"National Prairie Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-prairie-day-first-saturday-in-june"},fst:{era:1,y:2015},nts:{"en":"Created by the Missouri Prairie Foundation"}},
         {ty:"D",st:{mon:6,wkd:[7],nth:2},ttls:{"en":"National Outlet Shopping Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/national-outlet-shopping-day-second-saturday-in-june"},mog:"🛍️",fst:{era:1,y:2022},nts:{"en":"Created by the Simon Property Group"}},
@@ -556,6 +556,6 @@
     tpls:{
         "Summersgiving":{ttls:{"en":"Summersgiving"},nts:{"en":"Summersgiving Day\nCreated by Robert Solomon and Eva Shure"}, ty:"D",st:{misc:"Jun",oD:1,wkd:[7]},urls:{"en":"https://www.nationaldaycalendar.com/national-day/summersgiving-saturday-after-the-summer-solstice"},mog:"🍹🥧🍊"},
         "NCallYourDrD":{ty:"D",st:{mon:6,wkd:[3],nth:2},ttls:{"en":"National Call Your Doctor Day"},urls:{"en":"https://www.nationaldaycalendar.com/national-day/call-your-doctor-day-second-tuesday-in-june"},mog:"👨‍⚕️👩‍⚕️",nts:{"en":"Created by Bright Pink"}},
-        "NTake Back the Lunch Break Day":{ty:"D",st:{mon:6,wkd:[6],nth:3},ttls:{"en":"National Take Back the Lunch Break Day"},urls:{"en":"https://nationaldaycalendar.com/celebrations/national-take-back-the-lunch-break-day-june-24"},mog:"🥪",nts:{"en":"Created by Tork"}},
+        "NTake Back the Lunch BreakD":{ty:"D",st:{mon:6,wkd:[6],nth:3},ttls:{"en":"National Take Back the Lunch Break Day"},urls:{"en":"https://nationaldaycalendar.com/celebrations/national-take-back-the-lunch-break-day-june-24"},mog:"🥪",nts:{"en":"Created by Tork"}},
     }
 }

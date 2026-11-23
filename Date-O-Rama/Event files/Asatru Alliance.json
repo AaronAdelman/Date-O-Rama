@@ -24,7 +24,7 @@
             {ty:"D",st:{mon:4,d:22},ttls:{"en":"Yggdrasil Day"}},
             {ty:"D",st:{mon:4,d:30},ttls:{"en":"Walburg"}},
             
-            {ty:"D",st:{mon:5,d:1},inh:"May Day"},
+            {ty:"D",st:{mon:5,d:1},inh:"MayD"},
             {ty:"D",st:{mon:5,d:9},ttls:{"en":"Day of Remembrance for Guthroth"},inh:"*Remembrance*"},
             {ty:"D",st:{mon:5,d:20},ttls:{"en":"Frigga Blot"}},
             

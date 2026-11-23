@@ -12,7 +12,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{mon:5,d:1},inh:"May Day",urls:{"en":"https://www.officeholidays.com/holidays/finland/vappu"}},
+        {ty:"D",st:{mon:5,d:1},inh:"MayD",urls:{"en":"https://www.officeholidays.com/holidays/finland/vappu"}},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD",urls:{"en":"https://www.officeholidays.com/holidays/finland/mothers-day"}},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},
@@ -27,7 +27,7 @@
         
         {ty:"D",st:{mon:2,d:28},ttls:{"be":"Дзень Калевалы","en":"Kalevala Day","et":"Kalevala Päev","fi":"Kalevalan Päivä","olo":"Kalevalan Päivy","ru":"День Калевалы","sv":"Kalevaladagen","uz":"Kalevala Kuni","vi":"Ngày Kalevala"},urls:{"en":"https://en.wikipedia.org/wiki/Kalevala_Day"},nts:{"en":"Finnish Culture Day","fi":"Suomalaisen Kulttuurin Päivä"}},
         {ty:"D",st:{mon:5,d:1},inh:"Walpurgis Nite"},
-        {ty:"D",st:{mon:6,d:4},ttls:{"en":"Flag Day of the Finnish Defence Forces","fi":"puolustusvoimain lippujuhlan päivä"},inh:"Flag Day"},
+        {ty:"D",st:{mon:6,d:4},ttls:{"en":"Flag Day of the Finnish Defence Forces","fi":"puolustusvoimain lippujuhlan päivä"},inh:"FlagD"},
         {ty:"D",st:{mon:2,d:3},ttls:{"en":"Day of Finnish Architecture and Design","fi":"Arkkitehtuurin ja muotoilun päiviä"}},
         {ty:"D",st:{mon:2,d:5},ttls:{"en":"Runeberg Day","fi":"Runeberginpäivä","ru":"День Рунеберга","sah":"Рунеберг Күнэ","sv":"Runebergsdagen","uz":"Runeberg Kuni"},nts:{"en":"Birthday of the national poet Johan Ludvig Runeberg"},inh:"*BD*",urls:{"en":"https://www.daysoftheyear.com/days/runeberg-day/"},fst:{era:1,y:1877}},
         {ty:"D",st:{mon:3,d:19},ttls:{"en":"Birthday of novelist and playwright Minna Canth","fi":"Minna Canthin päivä"},inh:"*BD*"},

@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:49},inh:"Pentecost"},
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon"},
-        {inh:"Reconciliation Day", ty:"D",st:{mon:6,d:10},fst:{era:1,y:1961},urls:{"en":"https://www.officeholidays.com/holidays/congo/congo-reconciliation-day"}},
+        {inh:"ReconciliationD", ty:"D",st:{mon:6,d:10},fst:{era:1,y:1961},urls:{"en":"https://www.officeholidays.com/holidays/congo/congo-reconciliation-day"}},
         {inh:"ID", ty:"D",st:{mon:8,d:15},fst:{era:1,y:1960},urls:{"en":"https://www.officeholidays.com/holidays/congo/congo-independence-day"}},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
         {ty:"D",st:{mon:11,d:28},inh:"RepublicD",fst:{era:1,y:1958},urls:{"en":"https://www.officeholidays.com/holidays/congo/congo-republic-day"}},

@@ -17,7 +17,7 @@
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:4,wkd:[5],nth:1},urls:{"en":"https://nationaltoday.com/nafelser-fahrt/"},ttls:{"en":"Näfelser Fahrt"},nts:{"en":"Näfels Ride"}},
         {ty:"D",st:{mon:4,wkd:[2],nth:3},urls:{"en":"https://www.officeholidays.com/holidays/switzerland/zurich/sechselauten"},ttls:{"en":"Sechseläuten"}},
-        {ty:"D",st:{mon:5,d:1},inh:"May Day"},
+        {ty:"D",st:{mon:5,d:1},inh:"MayD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},urls:{"en":"https://www.officeholidays.com/holidays/switzerland/mothers-day"},inh:"MothersD"},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon"},
@@ -38,7 +38,7 @@
         {ty:"D",st:{mon:12,d:24},inh:"XmasE"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:26},inh:"StStephen"},
-        {ty:"D",st:{mon:12,d:31},urls:{"en":"https://nationaltoday.com/restoration-day-in-geneva/"},inh:"Restoration Day",locs:{"en":"Geneva"}},
+        {ty:"D",st:{mon:12,d:31},urls:{"en":"https://nationaltoday.com/restoration-day-in-geneva/"},inh:"RestorationD",locs:{"en":"Geneva"}},
         {ty:"D",st:{mon:12,d:31},inh:"NYE"},
         
         {inh:"Carnival", ty:"D",st:{misc:"E",oD:-55},locs:{"en":"Schwyz"}},

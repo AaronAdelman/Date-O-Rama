@@ -24,6 +24,6 @@
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD"},
         
-        {ty:"D",st:{mon:7,d:1},inh:"IReggae Day",fst:{era:1,y:1994}},
+        {ty:"D",st:{mon:7,d:1},inh:"IReggaeD",fst:{era:1,y:1994}},
     ]
 }

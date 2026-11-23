@@ -38,8 +38,8 @@
         {ty:"D",st:{mon:8,d:19},ttls:{"en":"August Revolution Commemoration Day","vi":"Ngày Cách mạng Tháng 8"},fst:{era:1,y:1945}},
         {ty:"D",st:{mon:10,d:10},ttls:{"en":"Capital Liberation Day","vi":"Ngày Giải phóng Thủ đô"}},
         {ty:"D",st:{mon:10,d:13},ttls:{"en":"Vietnamese Entrepreneur’s Day","vi":"Ngày Doanh nhân Việt Nam"}},
-        {ty:"D",st:{mon:10,d:20},ttls:{"en":"Vietnamese Women’s Day","vi":"Ngày Phụ nữ Việt Nam"},fst:{era:1,y:1930},inh:"Women’s Day"},
-        {ty:"D",st:{mon:11,d:20},ttls:{"en":"Vietnamese Teacher’s Day","vi":"Ngày Nhà giáo Việt Nam"},inh:"Teacher’s Day"},
+        {ty:"D",st:{mon:10,d:20},ttls:{"en":"Vietnamese Women’s Day","vi":"Ngày Phụ nữ Việt Nam"},fst:{era:1,y:1930},inh:"Women’sD"},
+        {ty:"D",st:{mon:11,d:20},ttls:{"en":"Vietnamese Teacher’s Day","vi":"Ngày Nhà giáo Việt Nam"},inh:"Teacher’sD"},
         {ty:"D",st:{mon:12,d:22},ttls:{"en":"National Defence Day","vi":"Ngày hội quốc phòng toàn dân (ngày thành lập Quân đội nhân dân Việt Nam)"},fst:{era:1,y:1944}},
         
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},
@@ -47,10 +47,10 @@
         {ty:"D",st:{mon:6,d:28},inh:"FamilyD",fst:{era:1,y:2001}, urls:{"en":"https://nationaltoday.com/vietnamese-family-day/"}},
         {ty:"D",st:{mon:10,d:15},ttls:{"en":"Vietnamese Women’s Day"},inh:"MothersD"},
         {ty:"D",st:{mon:6,d:1},inh:"IChildrensD"},
-        {ty:"D",st:{mon:7,d:27},ttls:{"en":"Memorial Day for War Martyrs"},inh:"Martyrs’ Day",nts:{"en":"Remembrance Day"}},
+        {ty:"D",st:{mon:7,d:27},ttls:{"en":"Memorial Day for War Martyrs"},inh:"Martyrs’D",nts:{"en":"Remembrance Day"}},
         {ty:"D",st:{mon:8,d:19},inh:"RevolutionD",fst:{era:1,y:1945}, urls:{"en":"https://nationaltoday.com/revolution-commemoration-day/"}},
         {ty:"D",st:{mon:3,d:8},inh:"IWD"},
-        {ty:"D",inh:"Long Tan Day",st:{mon:8,d:18},fst:{era:1,y:2016}},
+        {ty:"D",inh:"Long TanD",st:{mon:8,d:18},fst:{era:1,y:2016}},
         {ty:"D",st:{mon:12,d:15},inh:"ITeaD",fst:{era:1,y:2005}},
         {ty:"D",st:{mon:11,d:24},inh:"CultureD",fst:{era:1,y:2026},urls:{"en":"https://www.officeholidays.com/holidays/vietnam/vietnam-culture-day"}},
     ]

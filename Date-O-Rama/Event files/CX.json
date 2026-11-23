@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{mon:4,d:25},inh:"AnzacD",fst:{era:1,y:1916}},
-        {inh:"Territory Day", ty:"D",st:{mon:10,d:6}},
+        {inh:"TerritoryD", ty:"D",st:{mon:10,d:6}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
     ]

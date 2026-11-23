@@ -38,7 +38,7 @@
         {ty:"D",st:{mon:6,d:19},ttls:{"en":"Women's Rights Day","is":"Kvenréttindadagurinn"},mog:"👩"},
         {ty:"D",st:{mon:6,d:24},inh:"StJohn"},
         {ty:"D",st:{mon:11,d:16},ttls:{"ar":"يوم اللغة الآيسلندية","en":"Icelandic Language Day","eo":"Tago de la islanda lingvo","fr":"Jour de la langue islandaise","is":"Dagur íslenskrar tungu","ja":"アイスランド語の日","ko":"아이슬란드어의 날","nl":"Dag van de IJslandse taal","ru":"День исландского языка","tr":"İzlandaca Günü","uk":"День ісландської мови"},urls:{"en":"https://www.daysoftheyear.com/days/icelandic-language-day/"},fst:{era:1,y:1996},nts:{"en":"Created by Björn Bjarnason"}},
-        {ty:"D",st:{mon:12,d:1},inh:"Sovereignty Day"},
+        {ty:"D",st:{mon:12,d:1},inh:"SovereigntyD"},
         {ty:"D",st:{mon:12,d:23},ttls:{"en":"Saint Thorlac’s Mass Day","is":"Þorláksmessa"}},
 
         {ty:"D",st:{mon:4,d:10},inh:"EngineersD"},

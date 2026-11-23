@@ -36,14 +36,14 @@
         {ty:"D",st:{mon:12,d:28,wkd:[2,3]},inh:"ProclamationD",ttls:{"en":"Proclamation Day (in lieu)"},locs:{"en":"South Australia"},fst:{era:1,y:1993}},
         {ty:"D",st:{mon:12,d:29,thruD:30,wkd:[2]},inh:"ProclamationD",locs:{"en":"South Australia"},fst:{era:1,y:1836},last:{era:1,y:1992}},
         {ty:"D",st:{mon:11,d:11},inh:"RemembranceD",urls:{"en":"https://www.daysoftheyear.com/days/remembrance-day-in-australia/"},fst:{era:1, year:1997}},
-        {ty:"D",st:{mon:7,d:1},inh:"Tartan Day",fst:{era:1, year:1989}},
+        {ty:"D",st:{mon:7,d:1},inh:"TartanD",fst:{era:1, year:1989}},
         {ty:"M",st:{mon:3},inh:"Women’s History Month",fst:{era:1,y:2000}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2019,mon:8,d:23},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2020,mon:8,d:28},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2021,mon:8,d:27},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2023,mon:8,d:31},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{mon:8,d:18,thruD:24,wkd:[5]},urls:{"en":"https://www.daffodilday.com.au/"},fst:{era:1,y:2024}},
-        {ty:"D",inh:"Long Tan Day",st:{mon:8,d:18},fst:{era:1,y:2016}},
+        {ty:"D",inh:"Long TanD",st:{mon:8,d:18},fst:{era:1,y:2016}},
         {ty:"D",inh:"LoudShirtD",st:{mon:10,wkd:[6],nth:3},urls:{"en":"https://www.loudshirtday.com.au/"}},
         {ty:"D",st:{era:1,y:2024,mon:10,d:12},inh:"LYBD"},
         {ty:"D",st:{mon:1,d:2,wkd:[2]},inh:"NYDHol",urls:{"en":"https://www.officeholidays.com/holidays/australia/international-new-years-day"}},
@@ -86,7 +86,7 @@
         {ty:"D",st:{mon:5,wkd:[6],nth:3},inh:"WSTSD",fst:{era:1,y:1999},last:{era:1,y:2023}},
         {ty:"D",st:{mon:5,d:10,thruD:16,wkd:[6]},inh:"WSTSD",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:5,d:26},ttls:{"ar":"يوم الحزن الوطني","ca":"Dia Nacional del Perdó","de":"National Sorry Day","en":"National Sorry Day","fr":"National Sorry Day","he":"יום ההתנצלות","hu":"Nemzeti bocsánatkérés napja","it":"National Sorry Day","ta":"தேசிய மன்னிப்பு நாள்","uz":"Milliy kechirim so’rash kuni","zh":"国家道歉日"},urls:{"en":"https://www.daysoftheyear.com/days/national-sorry-day/"},fst:{era:1,y:1998}},
-        {ty:"D",st:{mon:5,d:5},inh:"Sleep Apnea Awareness Day",fst:{era:1,y:2019}},
+        {ty:"D",st:{mon:5,d:5},inh:"Sleep Apnea AwarenessD",fst:{era:1,y:2019}},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD",urls:{"en":"https://www.officeholidays.com/holidays/australia/mothers-day"}},
         {ty:"D",st:{mon:5,wkd:[2],nth:1},inh:"LaborD",locs:{"en":"Northern Territory and Queensland"},urls:{"en":"https://www.officeholidays.com/holidays/australia/australia-labour-day"}},
         {ty:"D",st:{mon:6,d:3},ttls:{"en":"Mabo Day"},urls:{"en":"https://www.daysoftheyear.com/days/mabo-day/"},fst:{era:1,y:1992}},
@@ -160,8 +160,8 @@
             {ty:"D",st:{wkd:[6]},ttls:{"en":"Bravehearts Day"},urls:{"en":"https://bravehearts.org.au/support-us/bravehearts-day"},mog:"💟",nts:{"en":"White Balloon Day\nCreated by Bravehearts"},fst:{era:1,y:1997}},
         ]},
         
-        {ty:"nD",st:{mon:5,d:27},end:{mon:6,d:3},ttls:{"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"},inh:"Reconciliation Day",fst:{era:1,y:1996},nts:{"en":"NRW\nCreated by Reconciliation Australia"},urls:{"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"},subEvts:[
-            {ty:"D",st:{wkd:[2]},inh:"Reconciliation Day",fst:{era:1,y:2018}},
+        {ty:"nD",st:{mon:5,d:27},end:{mon:6,d:3},ttls:{"en":"National Reconciliation Week","es":"Semana de la reconciliación nacional"},inh:"ReconciliationD",fst:{era:1,y:1996},nts:{"en":"NRW\nCreated by Reconciliation Australia"},urls:{"en":"https://www.reconciliation.org.au/our-work/national-reconciliation-week/"},subEvts:[
+            {ty:"D",st:{wkd:[2]},inh:"ReconciliationD",fst:{era:1,y:2018}},
         ]},
         
     ],

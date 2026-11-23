@@ -28,7 +28,7 @@
 
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
         {ty:"D",st:{mon:3,d:2},ttls:{"en":"League of Lezhë Day","sq":"Dita e Besëlidhjes së Lezhës"}},
-        {ty:"D",st:{mon:3,d:7},inh:"Teacher’s Day"},
+        {ty:"D",st:{mon:3,d:7},inh:"Teacher’sD"},
         {ty:"D",st:{mon:6,d:1},inh:"ChildrensD"},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
         {ty:"D",st:{mon:11,d:12},ttls:{"en":"Emergence of the KLA","sq":"Dalja në skenë e UÇK-s"}},

@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:3,wkd:[2]},inh:"Restoration of Independence Day (bridge day)",urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"},fst:{era:1,y:1990}},
-        {ty:"D",st:{mon:5,d:4},inh:"Restoration of Independence Day",fst:{era:1,y:1990},urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
+        {ty:"D",st:{mon:5,d:4},inh:"Restoration of IndependenceD",fst:{era:1,y:1990},urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
         {ty:"D",st:{mon:5,d:5,wkd:[2,3]},inh:"Restoration of Independence Day (in lieu)",fst:{era:1,y:1990}},
         {ty:"D",st:{mon:5,d:6,wkd:[2]},inh:"Restoration of Independence Day (in lieu)",fst:{era:1,y:1990}},
         {ty:"D",st:{mon:5,d:5,wkd:[6]},inh:"Restoration of Independence Day (bridge day)",urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"},fst:{era:1,y:1990}},
@@ -38,7 +38,7 @@
 
    ],
     tpls:{
-        "Restoration of Independence Day (bridge day)":{ty:"D",st:{mon:5,d:5},ttls:{"en":"Restoration of Independence Day (bridge day)"},inh:"Restoration of Independence Day"},
-        "Restoration of Independence Day (in lieu)":{ty:"D",st:{mon:5,d:5,thruD:6,wkd:[2]},ttls:{"en":"Restoration of Independence Day (in lieu)","he":"יום שיקום העצמאות (במקומו)"},inh:"Restoration of Independence Day",urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
+        "Restoration of Independence Day (bridge day)":{ty:"D",st:{mon:5,d:5},ttls:{"en":"Restoration of Independence Day (bridge day)"},inh:"Restoration of IndependenceD"},
+        "Restoration of Independence Day (in lieu)":{ty:"D",st:{mon:5,d:5,thruD:6,wkd:[2]},ttls:{"en":"Restoration of Independence Day (in lieu)","he":"יום שיקום העצמאות (במקומו)"},inh:"Restoration of IndependenceD",urls:{"en":"https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
     }
 }

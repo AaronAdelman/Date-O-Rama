@@ -14,7 +14,7 @@
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"D",st:{mon:4,d:28,wkd:[2,3,4,5,6]},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"},inh:"WorkersMemorialD",fst:{era:1,y:2012}},
         {ty:"D",st:{mon:4,d:29,thruD:30,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/workers-memorial-day"},inh:"WorkersMemorialD",fst:{era:1,y:2012}},
-        {ty:"D",st:{mon:5,d:1},inh:"May Day",urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
+        {ty:"D",st:{mon:5,d:1},inh:"MayD",urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
         {ty:"D",st:{mon:5,d:2,thruD:3,wkd:[2]},ttls:{"en":"May Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
         {ty:"D",st:{mon:5,d:8,y:2023},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/king-charles-iiis-coronation"},ttls:{"en":"Special King’s Coronation Bank Holiday"},inh:"BankHol"},
         {ty:"D",st:{mon:5,wkd:[2],nth:-1},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/spring-bank-holiday"},inh:"Spring Bank Holiday"},

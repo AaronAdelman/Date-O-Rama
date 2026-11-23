@@ -24,7 +24,7 @@
 
         {ty:"D",st:{mon:10,d:6},inh:"ArmedForcesD",fst:{era:1,y:1974},urls:{"en":"https://www.officeholidays.com/holidays/egypt/egypt-armed-forces-day"}},
 
-        {ty:"D",st:{mon:1,d:25},inh:"Police Day",urls:{"en":"https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"},fst:{era:1,y:2009}},
+        {ty:"D",st:{mon:1,d:25},inh:"PoliceD",urls:{"en":"https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"},fst:{era:1,y:2009}},
         {ty:"D",st:{mon:6,d:18},inh:"EvacuationD",nts:{"en":"Eid el-Galaa"},fst:{era:1,y:1956}},
         {ty:"D",st:{mon:6,d:21},inh:"FathersD"},
         {ty:"D",st:{mon:3,d:21},inh:"MothersD", urls:{"en":"https://nationaltoday.com/egypt-mothers-day/"},fst:{era:1,y:1957}},

@@ -14,7 +14,7 @@
 
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"nD",st:{mon:9,d:10},end:{mon:9,d:11},urls:{"en":"https://www.officeholidays.com/holidays/libya/libya-public-holiday"},inh:"PublicHol"},
-        {inh:"Martyrs’ Day", ty:"D",st:{mon:9,d:16},fst:{era:1,y:2012}},
+        {inh:"Martyrs’D", ty:"D",st:{mon:9,d:16},fst:{era:1,y:2012}},
         {inh:"ID", ty:"D",st:{mon:12,d:24},fst:{era:1,y:1951},urls:{"en":"https://nationaltoday.com/libya-independence-day/"}},
         {inh:"LiberationD", ty:"D",st:{mon:10,d:23},fst:{era:1,y:2012},urls:{"en":"https://nationaltoday.com/libya-liberation-day/"}},
 

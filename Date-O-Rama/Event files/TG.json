@@ -15,7 +15,7 @@
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:50},inh:"WhitMon"},
-        {inh:"Martyrs’ Day", ty:"D",st:{mon:6,d:21},urls:{"en":"https://nationaltoday.com/martyrs-day-in-togo/"}},
+        {inh:"Martyrs’D", ty:"D",st:{mon:6,d:21},urls:{"en":"https://nationaltoday.com/martyrs-day-in-togo/"}},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},

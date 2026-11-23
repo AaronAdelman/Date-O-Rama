@@ -23,7 +23,7 @@
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
         
-        {ty:"D",st:{mon:9,d:10},urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"},inh:"Heritage Day",fst:{era:1,y:1957}},
+        {ty:"D",st:{mon:9,d:10},urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"},inh:"HeritageD",fst:{era:1,y:1957}},
         {ty:"M",st:{mon:9},urls:{"en":"https://en.wikipedia.org/wiki/Amerindian_Heritage_Month_(Guyana)"},ttls:{"en":"Amerindian Heritage Month "},fst:{era:1,y:1957}},
 
         {ty:"D",st:{mon:6,wkd:[1],nth:3},inh:"FathersD"},

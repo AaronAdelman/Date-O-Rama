@@ -34,7 +34,7 @@
         {ty:"D",st:{mon:12,d:26},inh:"StStephen",fst:{era:1,y:1947}},
         
         {ty:"D",st:{mon:2,d:10},urls:{"en":"https://en.wikipedia.org/wiki/National_Memorial_Day_of_the_Exiles_and_Foibe"},ttls:{"en":"National Memorial Day of the Exiles and Foibe","it":"Giorno del ricordo"},fst:{era:1,y:2005}},
-        {ty:"D",st:{mon:2,d:11},inh:"Lateran Treaty Day"},
+        {ty:"D",st:{mon:2,d:11},inh:"Lateran TreatyD"},
         {ty:"D",st:{mon:9,d:9},ttls:{"en":"Day of Remembrance for Sailors Lost at Sea","it":"Giornata della memoria dei marinai scomparsi in mare"},fst:{era:1,y:2013}},
         {ty:"D",st:{mon:9,d:28},ttls:{"en":"Four Days of Naples Day","it":"Insurrezione popolare di Napoli contro i nazifascisti or Quattro giornate di Napoli"}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"Feast of Saints Francis and Catherine","it":"San Francesco e Santa Caterina"},fst:{era:1,y:1958}},
@@ -63,7 +63,7 @@
         {inh:"ColumbusD", ty:"D",st:{mon:11,wkd:[2],nth:1},fst:{era:1,y:2004}},
         {ty:"D",st:{mon:10,d:24},inh:"UND",fst:{era:1,y:1948}},
         {ty:"D",st:{mon:10,d:24},ttls:{"en":"National Day of Entertainment","it":"Giornata nazionale dello spettacolo"},fst:{era:1,y:2022}},
-        {ty:"D",st:{mon:11,d:9},inh:"Freedom Day",fst:{era:1,y:2005}},
+        {ty:"D",st:{mon:11,d:9},inh:"FreedomD",fst:{era:1,y:2005}},
         {ty:"D",st:{mon:11,d:21},inh:"NTreeD",fst:{era:1,y:2013}},
         {ty:"D",st:{mon:11,d:25},inh:"IDForTheEliminationOfViolenceAgainstWomen",fst:{era:1,y:2000}},
         {ty:"D",st:{mon:11,wkd:[1],nth:3},ttls:{"en":"National Day in Memory of Road Victims","it":"Giornata nazionale in memoria delle vittime della strada"},fst:{era:1,y:2018}},
