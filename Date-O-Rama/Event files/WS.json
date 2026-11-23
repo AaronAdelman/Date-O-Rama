@@ -27,7 +27,7 @@
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
 
         
-        {ty:"D",st:{mon:10,wkd:[1],nth:2},inh:"White Sun"},
+        {ty:"D",st:{mon:10,wkd:[1],nth:2},inh:"WhiteSun"},
         {ty:"D",st:{mon:9,d:29},inh:"NPoliceRemembranceD",fst:{era:1,y:1989}},
     ]
 }
