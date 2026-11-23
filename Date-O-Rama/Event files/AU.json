@@ -37,7 +37,7 @@
         {ty:"D",st:{mon:12,d:29,thruD:30,wkd:[2]},inh:"ProclamationD",locs:{"en":"South Australia"},fst:{era:1,y:1836},last:{era:1,y:1992}},
         {ty:"D",st:{mon:11,d:11},inh:"RemembranceD",urls:{"en":"https://www.daysoftheyear.com/days/remembrance-day-in-australia/"},fst:{era:1, year:1997}},
         {ty:"D",st:{mon:7,d:1},inh:"TartanD",fst:{era:1, year:1989}},
-        {ty:"M",st:{mon:3},inh:"Women’s History Month",fst:{era:1,y:2000}},
+        {ty:"M",st:{mon:3},inh:"WomensHistoryM",fst:{era:1,y:2000}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2019,mon:8,d:23},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2020,mon:8,d:28},urls:{"en":"https://www.daffodilday.com.au/"}},
         {ty:"D",inh:"DaffodilD",st:{era:1,y:2021,mon:8,d:27},urls:{"en":"https://www.daffodilday.com.au/"}},

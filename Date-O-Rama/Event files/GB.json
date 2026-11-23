@@ -256,7 +256,7 @@
         {ty:"M",st:{mon:2},inh:"LGBTQHistoryM",fst:{era:1,y:2005}},
         {ty:"M",st:{mon:2},ttls:{"en":"Dignity Action Month"},urls:{"en":"https://www.dignityincare.org.uk/Dignity-in-Care-events/dignity-action-month/"},fst:{era:1,y:2010},nts:{"en":"Created by the National Dignity Council"},mog:"🖤"},
         {ty:"M",st:{mon:2},ttls:{"en":"Raynaud’s Awareness Month"},urls:{"en":"https://www.sruk.co.uk/get-involved/awareness-campaigns/raynauds-awareness-month/"},inh:"*MedAw*",nts:{"en":"Created by Lynn Wunderman"}},
-        {ty:"M",st:{mon:3},inh:"Women’s History Month"},
+        {ty:"M",st:{mon:3},inh:"WomensHistoryM"},
         {ty:"M",st:{mon:3},ttls:{"en":"National Bed Month"},urls:{"en":"https://www.daysoftheyear.com/days/national-bed-month/"},mog:"🛏️",nts:{"en":"Created by the National Bed Federation"},fst:{era:1,y:2010}},
         {ty:"M",st:{mon:3},ttls:{"en":"Colic Awareness Month"},urls:{"en":"https://nationaltoday.com/colic-awareness-month/"},inh:"*MedAw*",nts:{"en":"Created by Cry-Sis and Infacol"},fst:{era:1,y:2017}},
         {ty:"M",st:{mon:3},ttls:{"en":"The Great Daffodil Appeal"},urls:{"en":"https://www.mariecurie.org.uk/daffodil"},nts:{"en":"Marie Curie Great Daffodil Appeal\nCreated by the Marie Curie Charity"},fst:{era:1,y:1986}},

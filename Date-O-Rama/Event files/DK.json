@@ -12,7 +12,7 @@
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
-        {ty:"D",st:{misc:"E",oD:26},inh:"General PrayerD",fst:{era:1,y:1686}},
+        {ty:"D",st:{misc:"E",oD:26},inh:"GenPrayerD",fst:{era:1,y:1686}},
         {ty:"D",st:{mon:5,wkd:[1],nth:2},inh:"MothersD",urls:{"en":"https://www.officeholidays.com/holidays/denmark/mothers-day"}},
         {ty:"D",st:{misc:"E",oD:39},inh:"Ascension"},
         {ty:"D",st:{misc:"E",oD:40},urls:{"en":"https://www.officeholidays.com/holidays/denmark/ascension-friday"},inh:"BankHol"},

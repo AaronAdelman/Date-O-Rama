@@ -24,6 +24,6 @@
         {ty:"D",st:{mon:11,d:9},ttls:{"en":"Carl Sagan Day"},urls:{"en":"https://www.daysoftheyear.com/days/carl-sagan-day/"},inh:"*BD*",fst:{era:1,y:2009},mog:"🪐",nts:{"en":"Created by the Center for Inquiry and the Florida Atheists and Secular Humanists (FLASH)"}},
     ],
     tpls:{
-        "Atheist Pride Day":{ttls:{"en":"Atheist Pride Day"}, ty:"D",st:{mon:6,d:6},urls:{"en":"https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
+        "Atheist PrideD":{ttls:{"en":"Atheist Pride Day"}, ty:"D",st:{mon:6,d:6},urls:{"en":"https://www.checkiday.com/650a3493cf0b249347dca6bcfd0b019f/atheist-pride-day"}},
     }
 }

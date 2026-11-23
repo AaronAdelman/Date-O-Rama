@@ -228,7 +228,7 @@
         {ty:"D",st:{mon:5, d:2},ttls:{"en":"Hachijū hachiya","ja":"八十八夜"},mog:"🌱"},
         {ty:"D",st:{mon:6, d:11},ttls:{"en":"Nyūbai","ja":"入梅"},mog:"🌧️"},
         {ty:"D",st:{mon:7, d:2},ttls:{"en":"Hangeshō","ja":"半夏生"},mog:"🌱"},
-        {ty:"D",st:{mon:7, d:15},inh:"Ghost Festival"},
+        {ty:"D",st:{mon:7, d:15},inh:"GhostFestival"},
         {ty:"D",st:{mon:7, d:20},ttls:{"en":"Natsu no doyō","ja":"夏の土用"},mog:"🐟"},
         {ty:"D",st:{mon:9, d:1},ttls:{"en":"Nihyaku tōka","ja":"二百十日"},mog:"🌾"},
         {ty:"D",st:{mon:9, d:11},ttls:{"en":"Nihyaku hatsuka","ja":"二百二十日"},mog:"🌾"},

@@ -76,6 +76,6 @@
         {ty:"D",st:{mon:8,d:1},inh:"PachamamaD",fst:{era:1,y:1990}},
     ],
     tpls:{
-        "Non-Working Day":{ttls:{"en":"Non-Working Day","es":"Día no laborable en el sector público"}, ty:"D",st:{mon:10,d:11,y:2021},urls:{"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day/"}},
+        "Non-WorkingD":{ttls:{"en":"Non-Working Day","es":"Día no laborable en el sector público"}, ty:"D",st:{mon:10,d:11,y:2021},urls:{"en":"https://www.officeholidays.com/holidays/peru/peru-public-sector-non-working-day/"}},
     }
 }
