@@ -92,14 +92,14 @@
         {ty:"D",st:{mon:8,wkd:[1],nth:3},ttls:{"en":"God’s Preeminence Day"},fst:{era:1,y:2013},urls:{"en":"https://www.checkiday.com/7b7d5768dfe571539b565dd3f9f10d55/gods-preeminence-day"}},
         {ty:"nD",st:{mon:1,d:22,thruD:28,wkd:[1]},end:{mon:1,d:28,thruMon:2,thruD:3,wkd:[7]},ttls:{"en":"Catholic Schools Week"},urls:{"en":"https://www.ncea.org/csw/CSW/Catholic_Schools_Week.aspx"},fst:{era:1,y:1974},nts:{"en":"Created by National Catholic Educational Association (NCEA) and the United States Conference of Catholic Bishops"}},
         {ty:"D",st:{mon:4,d:12},ttls:{"en":"Wear a Star Day"},urls:{"en":"https://www.daysoftheyear.com/days/wear-a-star-day/"},fst:{era:1,y:2010},mog:"⭐",nts:{"en":"Created by the [R] Project"}},
-        {ty:"nD",st:{mon:6,d:16},end:{mon:6,d:22},inh:"NForgiveness Week",fst:{era:1,y:2004},last:{era:1,y:2024}},
-        {ty:"nD",st:{mon:6,d:22,thruD:28,wkd:[6],durD:3},inh:"NForgiveness Week",fst:{era:1,y:2025}},
+        {ty:"nD",st:{mon:6,d:16},end:{mon:6,d:22},inh:"NForgivenessW",fst:{era:1,y:2004},last:{era:1,y:2024}},
+        {ty:"nD",st:{mon:6,d:22,thruD:28,wkd:[6],durD:3},inh:"NForgivenessW",fst:{era:1,y:2025}},
         
         {ty:"M",st:{mon:7},ttls:{"en":"“Talk to Us”"},urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us/"},nts:{"en":"Created by the Samaritans"},fst:{era:1,y:2016},subEvts:[
             {ty:"D",st:{d:24},ttls:{"en":"“Talk to Us” Day"},urls:{"en":"https://www.daysoftheyear.com/days/talk-to-us-day/"},nts:{"en":"Talk to Us"},fst:{era:1,y:2016}},
         ]},
     ],
     tpls:{
-        "NForgiveness Week":{ty:"nD",st:{mon:6,d:16},end:{mon:6,d:22},ttls:{"en":"National Forgiveness Week"},nts:{"en":"NFW\nNational Reconciliation and Forgiveness Week"},urls:{"en":"https://forgivestories.com/nfw/"},mog:"🖤"},
+        "NForgivenessW":{ty:"nD",st:{mon:6,d:16},end:{mon:6,d:22},ttls:{"en":"National Forgiveness Week"},nts:{"en":"NFW\nNational Reconciliation and Forgiveness Week"},urls:{"en":"https://forgivestories.com/nfw/"},mog:"🖤"},
     }
 }

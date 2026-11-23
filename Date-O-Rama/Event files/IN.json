@@ -269,7 +269,7 @@
         {ty:"D",st:{era:1,y:2025,mon:5,d:7},inh:"PublicHol",locs:{"en":"Assam"}, urls:{"en":"https://www.officeholidays.com/holidays/india/assam-voting-holiday"}},
         {ty:"D",st:{era:1,y:2019,mon:10,d:21},inh:"PublicHol",locs:{"en":"Haryana and Maharashtra"}, urls:{"en":"https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
         {ty:"D",st:{era:1,y:2024,mon:11,d:20},inh:"PublicHol",locs:{"en":"Maharashtra"}, urls:{"en":"https://www.officeholidays.com/holidays/india/maharashtra-public-holiday"}},
-        {ty:"nD",st:{mon:1,d:11},end:{mon:1,d:17},inh:"Road Safety Week", urls:{"en":"https://www.daysoftheyear.com/days/road-safety-week-india/"},fst:{era:1,y:1989}},
+        {ty:"nD",st:{mon:1,d:11},end:{mon:1,d:17},inh:"Road SafetyW", urls:{"en":"https://www.daysoftheyear.com/days/road-safety-week-india/"},fst:{era:1,y:1989}},
         {ty:"D",st:{mon:1,d:14},ttls:{"as":"মাঘ বিহু","bn":"মাঘ বিহু","en":"Magh Bihu","hi":"भोगाली बिहु","pa":"ਮਾਘ ਬਿਹੂ","sat":"ᱢᱟᱜᱽ ᱵᱤᱦᱩ","ta":"மாக் பிஹு"},nts:{"en":"Bhogali Bihu"}, urls:{"en":"https://www.daysoftheyear.com/days/magh-bihu/"}},
         {ty:"D",st:{era:1,y:2025,mon:2,d:5},inh:"PublicHol",locs:{"en":"Delhi"}, urls:{"en":"https://www.officeholidays.com/holidays/india/delhi-legislative-assembly-elections"}},
         {ty:"D",st:{mon:3,d:5},inh:"Panchayati Raj Diwas",locs:{"en":"Odisha"},fst:{era:1,y:2020},last:{era:1,y:2024}},

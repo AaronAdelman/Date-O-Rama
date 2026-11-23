@@ -247,7 +247,7 @@
         {ty:"D",st:{mon:2,d:6},ttls:{"en":"Ronald Reagan Day","he":"יום רונלד רייגן"},urls:{"en":"https://www.daysoftheyear.com/days/ronald-reagan-day/"},fst:{era:1,y:2011},nts:{"en":"Created by Arnold Schwarzenegger"}},
         {ty:"D",st:{mon:2,wkd:[1],nth:2},inh:"Super Bowl Sun",fst:{era:1,y:1967}},
         {ty:"D",st:{mon:2,wkd:[2],nth:3},ttls:{"en":"Daisy Gatson Bates Day"},urls:{"en":"https://www.daysoftheyear.com/days/daisy-gatson-bates-day/"},nts:{"en":"Created by the Legislature of Arkansas"},fst:{era:1,y:2001}},
-        {ty:"W",st:{mon:2,fullWk:1,d1OfWk:2},inh:"Tinnitus Awareness Week",fst:{era:1,y:2003}},
+        {ty:"W",st:{mon:2,fullWk:1,d1OfWk:2},inh:"Tinnitus AwarenessW",fst:{era:1,y:2003}},
         {ty:"nD",st:{mon:2,d:1,thruD:7,wkd:[2],durD:5},ttls:{"en":"National School Counseling Week"},urls:{"en":"https://www.schoolcounselor.org/Events-Professional-Development/Events/National-School-Counseling-Week"},fst:{era:1,y:2006},nts:{"en":"Created by the US Congress"}},
         {ty:"D",st:{mon:2,wkd:[3],nth:2},ttls:{"en":"Extraterrestrial Culture Day","he":"יום התרבויות החוצניות"},mog:"👽",urls:{"en":"https://skepdic.com/roswell.html"},nts:{"en":"E.T. Culture Day\nDaniel Foley and the Legislature of New Mexico "},fst:{era:1,y:2003}},
         {ty:"D",st:{mon:2,wkd:[4],nth:1},ttls:{"en":"National Girls and Women in Sports Day"},urls:{"en":"https://www.womenssportsfoundation.org/get-involved/ngwsd/"},mog:"👩",fst:{era:1,y:1987},nts:{"en":"Created by Ronald Reagan"}},
@@ -358,7 +358,7 @@
         {ty:"D",st:{mon:5,d:3,thruD:9,wkd:[4]},ttls:{"en":"Bike & Roll to School Day"},urls:{"en":"https://www.walkbiketoschool.org/"},fst:{era:1,y:2012},nts:{"en":"There seems to be some disagreement on when this event is."}},
         {ty:"D",st:{mon:5,d:3},inh:"SunD",urls:{"en":"https://www.daysoftheyear.com/days/sun-day/"},nts:{"en":"International Sun Day"},fst:{era:1,y:1978},nts:{"en":"Created by the US Congress"}},
         {ty:"D",st:{mon:5,d:4,thruD:10,wkd:[4]},ttls:{"en":"Occupational Safety and Health Professional Day","ig":"Ụbọchị Nchebe na Ahụike Ọrụ","ja":"労働安全衛生世界デー"},urls:{"en":"https://www.daysoftheyear.com/days/occupational-safety-and-health-professional-day/"},fst:{era:1,y:2006},nts:{"en":"Created by the American Society of Safety Engineers (now the American Society of Safety Professionals (ASSP))"}},
-        {ty:"W",st:{mon:5,fullWk:1},inh:"NAOSH Week",fst:{era:1,y:2002}},
+        {ty:"W",st:{mon:5,fullWk:1},inh:"NAOSHW",fst:{era:1,y:2002}},
         {ty:"D",st:{mon:4,d:26},ttls:{"en":"National Pretzel Day"},mog:"🥨",urls:{"en":"https://www.daysoftheyear.com/days/pretzel-day/"},fst:{era:1,y:2003},nts:{"en":"Created by Ed Rendell"}},
         {ty:"D",st:{mon:5,d:4},ttls:{"en":"National Weather Observers Day"},urls:{"en":"https://www.daysoftheyear.com/days/weather-observers-day/"},fst:{era:1,y:1989},mog:"☂️🌡️⛄️",nts:{"en":"Created by Alan Brue"}},
         {ty:"D",st:{mon:5,d:5},inh:"5deMayo",fst:{era:1,y:2006},mog:"🇲🇽🇺🇸"},
@@ -684,7 +684,7 @@
         {ty:"W",st:{mon:7,fullWk:3},ttls:{"en":"National Zoo Keeper Week"},nts:{"en":"NZKW"},urls:{"en":"https://aazk.org/committee/national-zoo-keeper-week-nzkw/"},mog:"🦏",fst:{era:1,y:2007}},
         {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"Farmers Market Week"},urls:{"en":"https://www.daysoftheyear.com/days/farmers-market-week/"},mog:"👨‍🌾👩‍🌾",fst:{era:1,y:1999},nts:{"en":"Created by the United States Department of Agriculture (USDA)"}},
         {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"Stop on Red Week"},urls:{"en":"https://www.daysoftheyear.com/days/stop-on-red-week/"},mog:"🚦",fst:{era:1,y:1995},nts:{"en":"Created by the Federal Highway Administration"}},
-       {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},inh:"Thinking of You Week",urls:{"en":"https://www.thinkingofyouweekusa.com/"},fst:{era:1,y:2018}},
+       {ty:"W",st:{mon:9,fullWk:3,d1OfWk:2},inh:"Thinking of YouW",urls:{"en":"https://www.thinkingofyouweekusa.com/"},fst:{era:1,y:2018}},
        {ty:"W",st:{mon:9,fullWk:3},ttls:{"ar":"أسبوع سلامة الأطفال","en":"Child Passenger Safety Week"},urls:{"en":"https://www.cpsboard.org/resource-center/cpsweek/"},mog:"👦👧",nts:{"en":"Child Passenger Safety Awareness Week\nCar Seat Safety Week"}},
         {ty:"D",st:{mon:9,d:23},ttls:{"en":"Restless Legs Awareness Day","he":"יום הרגליים חסרות המנוחה"},urls:{"en":"https://www.daysoftheyear.com/days/restless-legs-awareness-day/"},fst:{era:1,y:2012},inh:"*MedAw*",nts:{"en":"Created by the Willis-Ekbom Disease Foundation"}},
         {ty:"W",st:{mon:9,fullWk:-1},ttls:{"en":"National Older Workers Employment Week"},urls:{"en":"https://www.dol.gov/agencies/eta/seniors/national-employ-older-workers-week"},mog:"👴👵",nts:{"en":"National Employ Older Workers Week"}},
@@ -765,11 +765,11 @@
             {ty:"D",st:{mon:5,d:3,thruD:9,wkd:[3]},inh:"NTeacherD",fst:{era:1,y:1985}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
+        {ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace CorpsW",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace CorpsD",fst:{era:1,y:1961}},
         ]},
         
-        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1],yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace Corps Week",fst:{era:1,y:1961},subEvts:[
+        {ty:"nD",st:{mon:2,d:24,thruMon:3,thruD:1,wkd:[1],yLens:[366]},end:{mon:3,d:1,thruD:7,wkd:[7]},inh:"Peace CorpsW",fst:{era:1,y:1961},subEvts:[
             {ty:"D",st:{mon:3,d:1},inh:"Peace CorpsD",fst:{era:1,y:1961}},
         ]},
         
@@ -802,7 +802,7 @@
         "NGoodNeighborD":{ty:"D",st:{mon:9,d:28},ttls:{"en":"National Good Neighbor Day"},urls:{"en":"https://nationalgoodneighborday.com/"},nts:{"en":"Created by Becky Mattson"}},
         "NativeAmericanD":{ttls:{"en":"Native American Day","si":"ඇමරිකානු ආදීවාසී දිනය","he":"יום העמים הילידים בארצות הברית"}, ty:"D",st:{mon:9,wkd:[6],nth:4},urls:{"en":"https://nationaltoday.com/national-native-american-day/"}},
         "Peace CorpsD":{ty:"D",st:{mon:3,d:1},ttls:{"en":"Peace Corps Day"},mog:"🕊",urls:{"en":"https://www.daysoftheyear.com/days/peace-corps-day/"},nts:{"en":"Created by John F. Kennedy"}},
-        "Peace Corps Week":{ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},ttls:{"en":"Peace Corps Week"},urls:{"en":"https://www.peacecorps.gov/connect/blog/history-of-peace-corps-week/"},mog:"☮️",nts:{"en":"Created by John F. Kennedy"}},
+        "Peace CorpsW":{ty:"nD",st:{mon:2,d:23,thruMon:3,thruD:1,wkd:[1],yLens:[365]},end:{mon:3,d:1,thruD:7,wkd:[7]},ttls:{"en":"Peace Corps Week"},urls:{"en":"https://www.peacecorps.gov/connect/blog/history-of-peace-corps-week/"},mog:"☮️",nts:{"en":"Created by John F. Kennedy"}},
         "Robert E. Lee Day":{ttls:{"en":"Robert E. Lee Day","he":"יום רוברט אדוארד לי","fr":"Journée de Robert E. Lee"},nts:{"en":"Lee’s Birthday"}, ty:"D",st:{mon:1,d:19},urls:{"en":"https://nationaltoday.com/robert-e-lee-day/"},inh:"*BD*"},
         "Rosa Parks Day":{ttls:{"en":"Rosa Parks Day","fr":"Rosa Parks Day","he":"יום רוזה פארקס","hr":"Dan Rose Parks","ml":"റോസ പാർക്ക് ദിനം"}, ty:"D",st:{mon:2,d:4},urls:{"en":"https://www.daysoftheyear.com/days/rosa-parks-day/"},mog:"🚌",nts:{"en":"Day of Courage\nCreated by the California State Legislature"}},
         "TrumanD":{ty:"D",st:{mon:5,d:8},urls:{"en":"https://www.daysoftheyear.com/days/truman-day/"},ttls:{"en":"Truman Day","he":"יום טרומן"},inh:"*BD*"},

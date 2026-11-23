@@ -1781,7 +1781,7 @@
         {ty:"nD",st:{mon:6,d:10,thruD:16,wkd:[2],durD:7},ttls:{"en":"Diabetes Week"},urls:{"en":"https://www.daysoftheyear.com/days/diabetes-week/"},inh:"*MedAw*"},
         {ty:"nD",st:{mon:6,d:10},end:{mon:6,d:13},ttls:{"en":"Superman Week","he":"שבוע סופרמן"},urls:{"en":"https://nationaltoday.com/superman-week/"}},
         {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"WMeatFreeW",fst:{era:1,y:2018},last:{era:1,y:2020}},
-        {ty:"nD",st:{mon:6,d:13},end:{mon:6,d:22},inh:"Bee’s Knees Week",fst:{era:1,y:2025}},
+        {ty:"nD",st:{mon:6,d:13},end:{mon:6,d:22},inh:"Bee’s KneesW",fst:{era:1,y:2025}},
         {ty:"nD",st:{mon:6,d:22,thruD:28,wkd:[7],durD:2},ttls:{"en":"ARRL Field Day"},urls:{"en":"https://www.arrl.org/field-day"},mog:"🎧📻",fst:{era:1,y:1933}},
         {ty:"nD",st:{mon:6,d:6},end:{mon:6,d:12},ttls:{"en":"Healthcare Executives Appreciation Week"},urls:{"en":"https://nationaltoday.com/healthcare-executives-appreciation-week/"}},
         {ty:"nD",st:{mon:6,d:7},end:{mon:6,d:13},ttls:{"en":"World Heart Rhythm Week"},urls:{"en":"https://nationaltoday.com/world-heart-rhythm-week/"},mog:"🫀",inh:"*MedAw*"},
@@ -1794,7 +1794,7 @@
         {ty:"nD",st:{mon:9,d:13},end:{mon:9,d:19},ttls:{"en":"Orchid Male Cancer Awareness Week"},urls:{"en":"https://nationaltoday.com/orchid-male-cancer-awareness-week/"},fst:{era:1,y:2008},inh:"*MedAw*"},
         {ty:"nD",st:{mon:9,d:15,thruD:21,wkd:[6],durD:3},ttls:{"en":"World Wellness Weekend"},urls:{"en":"https://world-wellness-weekend.org/"},fst:{era:1,y:2017},nts:{"en":"WWW\nCreated by Jean-Guy de Gabriac"}},
         {ty:"nD",st:{mon:9,d:16},end:{mon:9,d:22},ttls:{"en":"Bisexual Awareness Week","sr":"Недеља свести о бисексуалности","es":"Semana de Concienciación sobre la Bisexualidad","fr":"Semaine de la visibilité bisexuelle","sq":"Java ndërgjegjësuese për Biseksualizmin","cs":"Týden bisexuálního povědomí","he":"שבוע הנראות הביסקסואלי","mr":"उभयलैंगिकता जागरूकता आठवडा"},fst:{era:1,y:2014},nts:{"en":"BiWeek"}},
-        {ty:"nD",st:{mon:9,d:17,thruD:23,wkd:[6]},end:{mon:9,d:26,thruMon:10,thruD:2,wkd:[1]},inh:"Bee’s Knees Week",fst:{era:1,y:2017},last:{era:1,y:2024}},
+        {ty:"nD",st:{mon:9,d:17,thruD:23,wkd:[6]},end:{mon:9,d:26,thruMon:10,thruD:2,wkd:[1]},inh:"Bee’s KneesW",fst:{era:1,y:2017},last:{era:1,y:2024}},
         {ty:"nD",st:{mon:9,d:19,thruD:25,wkd:[2],durD:5},ttls:{"en":"International Week of Happiness at Work","he":"השבוע הבינלאומי של אושר בעבודה","fr":"Semaine du Bonheür au Travail","nl":"Internationale Week van het Werkgeluk"},urls:{"en":"https://internationalweekofhappinessatwork.com/","fr":"https://semainedubonheurautravail.be/","de":"https://www.internationalweekofhappinessatwork.de/","nl":"https://weekvanhetwerkgeluk.nl/"},fst:{era:1,y:2023},mog:"😀",nts:{"en":"Created by Fennande van der Meulen and Maartje Wolff"}},
         {ty:"nD",st:{mon:9,d:21,thruD:27,wkd:[1]},end:{mon:9,d:27,thruMon:10,thruD:3,wkd:[7]},inh:"ActiveAgingW",fst:{era:1,y:2013},last:{era:1,y:2018}},
         {ty:"nD",st:{mon:9,d:24,thruD:30,wkd:[1]},end:{mon:9,d:30,thruMon:10,thruD:6,wkd:[7]},inh:"WMeatFreeW",fst:{era:1,y:2021}},
@@ -1841,15 +1841,15 @@
         {ty:"W",st:{mon:4,fullWk:3},ttls:{"en":"Coin Week"},urls:{"en":"https://www.daysoftheyear.com/days/coin-week/"},fst:{era:1,y:1923},mog:"🪙",nts:{"en":"Created by Julius Guttag"}},
         {ty:"W",st:{mon:5,fullWk:-1},ttls:{"en":"Epilepsy Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/epilepsy-awareness-week/"},inh:"*MedAw*"},
         {ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},inh:"ChildrensBookW",fst:{era:1,y:2008}},
-        {ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},inh:"Sun Awareness Week",fst:{era:1,y:2021},last:{era:1,y:2024}},
+        {ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},inh:"Sun AwarenessW",fst:{era:1,y:2021},last:{era:1,y:2024}},
         {ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},ttls:{"en":"Deaf Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/deaf-awareness-week/"},mog:"🧏‍♂️🧏‍♀️"},
         {ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},ttls:{"en":"Dog Anxiety Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/dog-anxiety-awareness-week/"},mog:"🐕‍🦺🦮🐩",fst:{era:1,y:2020}},
-        {ty:"W",st:{mon:5,fullWk:2,d1OfWk:2},inh:"Sun Awareness Week",fst:{era:1,y:2025}},
+        {ty:"W",st:{mon:5,fullWk:2,d1OfWk:2},inh:"Sun AwarenessW",fst:{era:1,y:2025}},
         {ty:"W",st:{mon:5,fullWk:3,d1OfWk:2},ttls:{"en":"Learning at Work Week"},urls:{"en":"https://www.daysoftheyear.com/days/learning-at-work-week/"}},
         {ty:"W",st:{mon:5,fullWk:3},ttls:{"en":"International Heritage Breeds Week"},urls:{"en":"https://www.daysoftheyear.com/days/heritage-breeds-week/"},mog:"🐐🐑🐖",fst:{era:1,y:2015},nts:{"en":"Created by the Livestock Conservancy"}},
         {ty:"W",st:{mon:6,fullWk:1,d1OfWk:2},ttls:{"en":"Food Safety Week"},urls:{"en":"https://www.daysoftheyear.com/days/food-safety-week/"},fst:{era:1,y:2019},mog:"🍛🌭🌮"},
-        {ty:"W",st:{mon:6,fullWk:1},inh:"Community Health Improvement Week",fst:{era:1,y:2021},last:{era:1,y:2022}},
-        {ty:"W",st:{mon:6,fullWk:2,d1OfWk:2},inh:"Community Health Improvement Week",fst:{era:1,y:2023}},
+        {ty:"W",st:{mon:6,fullWk:1},inh:"Community Health ImprovementW",fst:{era:1,y:2021},last:{era:1,y:2022}},
+        {ty:"W",st:{mon:6,fullWk:2,d1OfWk:2},inh:"Community Health ImprovementW",fst:{era:1,y:2023}},
         {ty:"W",st:{mon:6,fullWk:2,d1OfWk:2},ttls:{"en":"Meet A Mate Week"},urls:{"en":"https://www.daysoftheyear.com/days/meet-a-mate-week/"},fst:{era:1,y:2019}},
         {ty:"W",st:{mon:6,fullWk:3,d1OfWk:2},ttls:{"en":"Animal Rights Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/animal-rights-awareness-week/"},fst:{era:1,y:1991},nts:{"en":"Created by In Defense of Animals"}},
         {ty:"W",st:{mon:8,fullWk:1},ttls:{"en":"Simplify Your Life Week"},urls:{"en":"https://www.daysoftheyear.com/days/simplify-your-life-week/"}},
@@ -1865,15 +1865,15 @@
             {ty:"D",st:{mon:4,d:26},inh:"Lesbian VisibilityD",fst:{era:1,y:2008}},
         ]},
         
-        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2011},last:{era:1,y:2024},subEvts:[
+        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling WorkersW",fst:{era:1,y:2011},last:{era:1,y:2024},subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage ManD",fst:{era:1,y:2011}},
         ]},
         
-        {ty:"nD",st:{era:1,y:2025,mon:6,d:16},end:{era:1,y:2025,mon:6,d:24},inh:"Waste & Recycling Workers Week",subEvts:[
+        {ty:"nD",st:{era:1,y:2025,mon:6,d:16},end:{era:1,y:2025,mon:6,d:24},inh:"Waste & Recycling WorkersW",subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage ManD",fst:{era:1,y:2011}},
         ]},
         
-        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling Workers Week",fst:{era:1,y:2026},subEvts:[
+        {ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},inh:"Waste & Recycling WorkersW",fst:{era:1,y:2026},subEvts:[
             {ty:"D",st:{mon:6,d:17},inh:"Global Garbage ManD",fst:{era:1,y:2011}},
         ]},
         
@@ -1952,11 +1952,11 @@
         "Open DataD":{ty:"D",st:{mon:3,wkd:[7],nth:1},ttls:{"ca":"Dia de les Dades Obertes","en":"Open Data Day","es":"Día de los Datos Abiertos","fr":"Journée des Données Ouvertes","ja":"オープンデータ・デイ","ne":"खुल्ला डाटा दिवस","pt":"Dia dos Dados Abertos","ru":"День открытых данных"},urls:{"en":"https://opendataday.org/"},nts:{"dag":"International Open Data Day","en":"ODD\nInternational Open Data Day\nCreated by David Eaves","es":"Día Internacional de los Datos Abiertos","fa":"روز جهانی داده آزاد","ja":"インターナショナル・オープンデータ・デイ"},mog:"📀💿💽"},
         "Global Day of the Engineer":{ty:"D",st:{mon:2,d:15,thruD:17,wkd:[4]},ttls:{"en":"Global Day of the Engineer"},nts:{"en":"Global Day"},urls:{"en":"https://www.checkiday.com/54305bccf25646558dabc645310b3df2/global-day-of-the-engineer"}},
         "Slow ArtD":{ty:"D",st:{mon:4,wkd:[7],nth:2},ttls:{"en":"Slow Art Day"},urls:{"en":"https://www.slowartday.com/"},mog:"🐢",nts:{"en":"There seems to be some disagreement on exactly when this observance is.\nCreated by Phyl Terry"},fst:{era:1,y:2009}},
-        "Sun Awareness Week":{ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},ttls:{"en":"Sun Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/sun-awareness-week/"},inh:"*MedAw*"},
-        "Community Health Improvement Week":{ty:"W",st:{mon:6,fullWk:2,d1OfWk:2},ttls:{"en":"Community Health Improvement Week"},nts:{"en":"CHI Week\nCreated by the Association for Community Health Improvement (ACHI)"},urls:{"en":"https://www.aha.org/center/community-health-improvement-week"},inh:"*MedAw*"},
-        "Bee’s Knees Week":{ty:"nD",st:{mon:9,d:17,thruD:23,wkd:[6]},end:{mon:9,d:26,thruMon:10,thruD:2,wkd:[1]},ttls:{"en":"Bee’s Knees Week"},nts:{"en":"This observance appears to be a ploy to sell products."},urls:{"en":"https://www.daysoftheyear.com/days/bees-knees-week/"}},
+        "Sun AwarenessW":{ty:"W",st:{mon:5,fullWk:1,d1OfWk:2},ttls:{"en":"Sun Awareness Week"},urls:{"en":"https://www.daysoftheyear.com/days/sun-awareness-week/"},inh:"*MedAw*"},
+        "Community Health ImprovementW":{ty:"W",st:{mon:6,fullWk:2,d1OfWk:2},ttls:{"en":"Community Health Improvement Week"},nts:{"en":"CHI Week\nCreated by the Association for Community Health Improvement (ACHI)"},urls:{"en":"https://www.aha.org/center/community-health-improvement-week"},inh:"*MedAw*"},
+        "Bee’s KneesW":{ty:"nD",st:{mon:9,d:17,thruD:23,wkd:[6]},end:{mon:9,d:26,thruMon:10,thruD:2,wkd:[1]},ttls:{"en":"Bee’s Knees Week"},nts:{"en":"This observance appears to be a ploy to sell products."},urls:{"en":"https://www.daysoftheyear.com/days/bees-knees-week/"}},
         "Drink CheninD":{ty:"D",st:{mon:6,d:12},ttls:{"en":"Drink Chenin Day"},nts:{"en":"International Drink Chenin Blanc Day\nInternational Drink Chenin Day"},urls:{"en":"https://www.chenin.co.za/drinkchenin"},mog:"🍷"},
-        "Waste & Recycling Workers Week":{ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},ttls:{"en":"Waste & Recycling Workers Week"},urls:{"en":"https://wasterecyclingworkersweek.org/"},mog:"♻️🗑️",nts:{"en":"Created by John D. Arwood"}},
+        "Waste & Recycling WorkersW":{ty:"nD",st:{mon:6,d:11,thruD:17,wkd:[2],durD:7},ttls:{"en":"Waste & Recycling Workers Week"},urls:{"en":"https://wasterecyclingworkersweek.org/"},mog:"♻️🗑️",nts:{"en":"Created by John D. Arwood"}},
         "Global Garbage ManD":{ty:"D",st:{mon:6,d:17},ttls:{"en":"Global Garbage Man Day"},urls:{"en":"https://www.daysoftheyear.com/days/garbage-man-day/"},mog:"🗑️",nts:{"en":"Created by John D. Arwood"}},
         "WLambruscoD":{ty:"D",st:{misc:"Jun"},ttls:{"en":"World Lambrusco Day"},mog:"🍷",urls:{"en":"https://www.daysoftheyear.com/days/world-lambrusco-day/"},nts:{"en":"Created by Consorzio Tutela Lambrusco"}},
         "ISailorMoonD":{ty:"D",st:{mon:8,d:6},ttls:{"en":"International Sailor Moon Day"},urls:{"en":"https://sailormooncelebration.com/ismd"},nts:{"en":"Created by Lisa Terlato"}},
