@@ -87,7 +87,7 @@
         {ty:"D",st:{mon:5,d:31},ttls:{"en":"Military Reserves Day"}},
         {ty:"D",st:{mon:5,wkd:[1],nth:-1},ttls:{"en":"Day of the Romanians Everywhere"}},
         {ty:"D",st:{mon:5,wkd:[1],nth:-1},ttls:{"en":"Romanian Businessperson Day"}},
-        {ty:"D",st:{mon:6,d:1},inh:"Parents’D"},
+        {ty:"D",st:{mon:6,d:1},inh:"ParentsD"},
         {ty:"D",st:{mon:6,d:2},inh:"NAdoptionD"},
         {ty:"D",st:{mon:6,d:4},inh:"IInnocentChildrenVictimsOfAggressionD",fst:{era:1,y:1983}},
         {ty:"D",st:{mon:6,d:4},ttls:{"en":"Trianon Treaty Day"}},

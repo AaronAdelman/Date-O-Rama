@@ -6,7 +6,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Jordan"},
     color:{name:"red"},
     evts:[
-        {ty:"D",st:{misc:"E",oD:-7},inh:"Palm Sun"},
+        {ty:"D",st:{misc:"E",oD:-7},inh:"PalmSun"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"OEasterMon"},
     ]

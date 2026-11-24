@@ -12,8 +12,8 @@
 
         {ty:"D",st:{mon:12,d:25},ttls:{"en":"Alilo Parade"},urls:{"en":"https://www.daysoftheyear.com/days/alilo-parade/"}},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
-        {ty:"D",st:{misc:"E",oD:-2},inh:"OGood Fri"},
-        {ty:"D",st:{misc:"E",oD:-1},inh:"OHoly Sat"},
+        {ty:"D",st:{misc:"E",oD:-2},inh:"OGoodFri"},
+        {ty:"D",st:{misc:"E",oD:-1},inh:"OHolySat"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"OEasterMon"},
         {ty:"D",st:{mon:4,d:29},inh:"StAndrew"},

@@ -7,7 +7,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Cyprus"},
     evts:[
         {ty:"D",st:{misc:"E",oD:-48},inh:"CleanMon",urls:{"en":"https://nationaltoday.com/cyprus-green-monday/"}},
-        {ty:"D",st:{misc:"E",oD:-2},inh:"OGood Fri"},
+        {ty:"D",st:{misc:"E",oD:-2},inh:"OGoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"OEasterMon"},
         {ty:"D",st:{misc:"E",oD:2},inh:"EasterTue"},

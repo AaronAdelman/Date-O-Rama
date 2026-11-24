@@ -320,7 +320,7 @@
         {ttls:{"en":"Lent (day 32)"}, ty:"D",st:{misc:"E",oD:-10}},
         {ttls:{"en":"Lent (day 33)"}, ty:"D",st:{misc:"E",oD:-9}},
         {ttls:{"en":"Lent (day 34)"}, ty:"D",st:{misc:"E",oD:-8}},
-        {ty:"D",st:{misc:"E",oD:-7},inh:"Palm Sun"},
+        {ty:"D",st:{misc:"E",oD:-7},inh:"PalmSun"},
         {ty:"D",st:{misc:"E",oD:-6},inh:"HolyMon"},
         {ty:"D",st:{misc:"E",oD:-5},inh:"HolyTue"},
         {ty:"D",st:{misc:"E",oD:-4},inh:"HolyWed"},
