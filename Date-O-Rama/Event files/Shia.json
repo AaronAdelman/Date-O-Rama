@@ -113,5 +113,11 @@
         {ty:"pt",st:{ptTy:"IshaJafari"},inh:"Isha"},
         {ty:"pt",st:{ptTy:"AsrShafiiJafari"},inh:"Asr (Shafii)"},
         {ty:"pt",st:{ptTy:"AsrHanafiJafari"},inh:"Asr (Hanafi)"},
+
+        {ty:"pt",st:{ptTy:"MaghribJafari"},ttls:{"en":"Maghrib (Ithna Ashari)"}},
+        {ty:"pt",st:{ptTy:"FajrJafari"},ttls:{"en":"Fajr (Ithna Ashari)"}},
+
+        {ty:"pt",st:{ptTy:"MaghribTehran"},ttls:{"en":"Maghrib (Institute of Geophysics, University of Tehran)"}},
+        {ty:"pt",st:{ptTy:"FajrTehran"},ttls:{"en":"Fajr (Institute of Geophysics, University of Tehran)"}},
     ]
 }

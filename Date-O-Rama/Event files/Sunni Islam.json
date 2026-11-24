@@ -6,5 +6,25 @@
     evts:[
         {ty:"D",st:{mon:3,d:12},inh:"Mawlid"},
         {ty:"D",st:{mon:9,d:29},inh:"Laylat al-Qadr"},
+
+        {ty:"pt",st:{ptTy:"DhuhrISNA"}, inh:"Dhuhr"},
+        {ty:"pt",st:{ptTy:"AsrShafiiKarachi",inh:"Asr (Shafii)"}},
+        {ty:"pt",st:{ptTy:"AsrHanafiKarachi",inh:"Asr (Hanafi)"}},
+
+        {ty:"pt",st:{ptTy:"IshaEgypt"},ttls:{"en":"Isha (Egyptian General Authority of Survey)"}},
+        {ty:"pt",st:{ptTy:"FajrEgypt"},ttls:{"en":"Fajr (Egyptian General Authority of Survey)"}},
+
+        {ty:"pt",st:{ptTy:"IshaKarachi"},nts:{"en":"Isha (University of Islamic Sciences, Karachi)"}},
+        {ty:"pt",st:{ptTy:"FajrKarachi"},nts:{"en":"Fajr (University of Islamic Sciences, Karachi)"}},
+
+        {ty:"pt",st:{ptTy:"IshaMWL"},ttls:{"en":"Isha (Muslim World League)"}},
+        {ty:"pt",st:{ptTy:"FajrMWL"},ttls:{"en":"Fajr (Muslim World League)","ar":"صلاة الفجر‎ (رابطة العالم الاسلامي‎)","he":"פג׳ר (Muslim World League)"}},
+
+        {ty:"pt",st:{ptTy:"IshaMakkah"},ttls:{"en":"Isha (Umm al-Qura, Makkah)"}},
+        {ty:"pt",st:{ptTy:"FajrMakkah"},ttls:{"en":"Fajr (Umm al-Qura, Makkah)"}},
+        {ty:"pt",st:{ptTy:"DhuhrMakkah"},ttls:{"en":"Dhuhr (Umm al-Qura, Makkah)"}},
+        {ty:"pt",st:{ptTy:"AsrShafiiMakkah"},ttls:{"en":"Asr (Shafii, Umm al-Qura, Makkah)"}},
+        {ty:"pt",st:{ptTy:"AsrHanafiMakkah"},ttls:{"en":"Asr (Hanafi, Umm al-Qura, Makkah)"}},
+
     ]
 }
