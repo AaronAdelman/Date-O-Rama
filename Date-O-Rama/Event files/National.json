@@ -1251,7 +1251,7 @@
         {ty:"D",st:{mon:4,wkd:[5],nth:3},ttls:{"en":"National High Five Day"},urls:{"en":"http://nationalhighfiveday.com/"},fst:{era:1,y:2002},mog:"🖐️"},
         {ty:"D",st:{mon:4,wkd:[5],nth:4},ttls:{"en":"National Take Our Daughters and Sons to Work Day"},urls:{"en":"https://daughtersandsonstowork.org/"},nts:{"en":"Take Our Daughters and Sons to Work Day\nCreated by Ms. Foundation for Women"},fst:{era:1,y:2003},mog:"👧👦"},
         {ty:"D",st:{mon:4,wkd:[5],nth:4},ttls:{"en":"National Teach Your Children to Save Day"},urls:{"en":"https://www.daysoftheyear.com/days/teach-your-children-to-save-day/"},nts:{"en":"National Teach Children to Save Day"},mog:"👦👧",fst:{era:1,y:1997},nts:{"en":"Created by the American Bankers Association"}},
-        {ty:"D",st:{mon:4,wkd:[6],nth:-1},"HairballAwD",fst:{era:1,y:2006}},
+        {ty:"D",st:{mon:4,wkd:[6],nth:-1},inh:"HairballAwD",fst:{era:1,y:2006}},
         {ty:"D",st:{mon:4,wkd:[6],nth:1},inh:"Walk to WorkD",fst:{era:1,y:2004}},
         {ty:"D",st:{mon:4,wkd:[6],nth:1},ttls:{"en":"Student Government Day"},fst:{era:1,y:1947},urls:{"en":"https://www.checkiday.com/484af29a5764701da907a685095da37e/student-government-day"}},
         {ty:"D",st:{mon:4,wkd:[6],nth:2},inh:"DOfSilence",fst:{era:1,y:2011},last:{era:1,y:2017}},
