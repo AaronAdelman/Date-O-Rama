@@ -1483,7 +1483,7 @@
         {ty:"D",st:{mon:6,d:1},inh:"WearADressD",fst:{era:1,y:2010},urls:{"en":"https://nationaltoday.com/wear-dress-day/"}},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"Don’t Give up the Ship Day"},urls:{"en":"https://www.daysoftheyear.com/days/dont-give-up-the-ship-day/"},mog:"🚢"},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"National Billboard Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-billboard-day/"},fst:{era:1,y:2021},nts:{"en":"Created by Keystone Outdoor Advertising"}},
-        {ty:"D",st:{mon:6,d:1},ttls:{"en":"National Go Barefoot Day","he":"יום ללכת יחפים הלאומי"},mog:"🦶",urls:{"en":"https://www.daysoftheyear.com/days/go-barefoot-day/"},fst:{era:1,y:2005},nts:{"en":"Created by Soles4Souls"}},
+        {ty:"D",st:{mon:6,d:1},inh:"GoBarefootD",fst:{era:1,y:2005}},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"National Hazelnut Cake Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-hazelnut-cake-day/"},mog:"🍰"},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"National Heimlich Maneuver Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-heimlich-maneuver-day/"},inh:"*MedAw*"},
         {ty:"D",st:{mon:6,d:1},ttls:{"en":"National Skincare Education Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-skincare-education-day/"},inh:"*MedAw*",nts:{"en":"Created by Higher Education Skincare"},fst:{era:1,y:2020}},

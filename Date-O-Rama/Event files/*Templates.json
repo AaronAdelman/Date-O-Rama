@@ -833,6 +833,8 @@
         "NDeepDishPizzaD":{ty:"D",st:{mon:4,d:5},ttls:{"en":"National Deep Dish Pizza Day"},nts:{"en":"Deep Dish Pizza Day"},urls:{"en":"https://www.daysoftheyear.com/days/deep-dish-pizza-day/"},mog:"🍕"},
         "GazpachoSoupD":{ty:"D",st:{mon:11,d:25},ttls:{"en":"Gazpacho Soup Day"},mog:"🥣",urls:{"en":"https://www.daysoftheyear.com/days/gazpacho-soup-day/"},nts:{"en":"This observance celebrates the episode “Me²” of Red Dwarf.\nCreated by Rob Grant and Doug Naylor"}},
         "Wolfenoot":{ty:"D",st:{mon:11,d:23},ttls:{"en":"Wolfenoot"}, urls:{"en":"https://www.wolfenoot.com/home"},mog:"🐺"},
+        "AmnestyID":{ty:"D",st:{mon:5,d:28},ttls:{"en":"Amnesty International Day"},nts:{"en":"This observance celebrates an organization which promotes antisemitism."},urls:{"en":"https://www.ngo-monitor.org/ngos/amnesty_international/"}},
+        "GoBarefootD":{ty:"D",st:{mon:6,d:1},ttls:{"en":"National Go Barefoot Day","he":"יום ללכת יחפים הלאומי"},mog:"🦶",urls:{"en":"https://www.daysoftheyear.com/days/go-barefoot-day/"},nts:{"en":"Created by Soles4Souls"}},
 
     }
 }
