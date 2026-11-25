@@ -1,3 +1,5 @@
+// Note:  Pastafarianism (the Church of the Flying Spaghetti Monster) is a parody religion.  Due to the humor going too far at times, events which in sufficiently poor taste have been disabled.
+
 {
     ttls:{"ast":"Pastafarismu","az":"Pastafaryanizm","be":"Пастафарыянства","be-tarask":"Пастафарыянства","bg":"Пастафарианство","br":"Pastafariegezh","ca":"Pastafarisme","ceb":"Pastaparianismo","diq":"Pastafaryanizm","en":"Pastafarianism","eo":"Pastafaria","es":"Pastafarismo","et":"Lendava Makaronimonstrumi kirik","eu":"Pastafarismo","fr":"Pastafarisme","gl":"Pastafarismo","he":"פסטפריאניזם","id":"Pastafarianisme","is":"Kirkja hins fljúgandi spagettískrímslis","it":"Pastafarianesimo","ja":"空飛ぶスパゲッティ・モンスター教","lmo":"Pastafarianesim","oc":"Pastafarisme","pt":"Pastafarianismo","ru":"Пастафарианство","tr":"Pastafaryanizm","tt":"Пастафарианлык","uk":"Пастафаріанство"},
     defLocale:"en",
@@ -156,7 +158,7 @@
             {ty:"D",st:{mon:6,d:1},inh:"GoBarefootD"},
             {ty:"D",st:{mon:6,d:2},ttls:{"en":"Laugh Like a Bad Guy Day"},mog:"😈"},
             {ty:"D",st:{mon:6,d:3},ttls:{"en":"Drink Like a Pirate Day"},mog:"🏴‍☠️"},
-            {ty:"D",st:{mon:6,d:5},ttls:{"en":"Doughnut Day"},mog:"🍩"},
+            {ty:"D",st:{mon:6,d:5},ttls:{"en":"Doughnut Day","he":"יום הדונאט"},mog:"🍩"},
             {ty:"D",st:{mon:6,d:6},ttls:{"en":"Interpretive Dance Day"},mog:"🕺"},
             {ty:"D",st:{mon:6,d:7},ttls:{"en":"Captain Jack Sparrow Impersonation Day"},mog:"🏴‍☠️"},
             {ty:"D",st:{mon:6,d:8},ttls:{"en":"Be Annoyingly Cheerful Day"},mog:"😁"},
