@@ -831,6 +831,8 @@
         "NBlueberryPieD":{ty:"D",st:{mon:4,d:28},ttls:{"en":"National Blueberry Pie Day"},nts:{"en":"Blueberry Pie Day"},mog:"🥧",urls:{"en":"https://www.daysoftheyear.com/days/blueberry-pie-day/"}},
         "HairballAwD":{ty:"D",st:{mon:4,wkd:[6],nth:-1},ttls:{"en":"Hairball Awareness Day"},mog:"🐈",urls:{"en":"https://www.daysoftheyear.com/days/hairball-awareness-day/"},inh:"*MedAw*",nts:{"en":"Created by Blake Hawley of Hill’s Pet Nutrition and the National Museum of Health and Medicine"}},
         "NDeepDishPizzaD":{ty:"D",st:{mon:4,d:5},ttls:{"en":"National Deep Dish Pizza Day"},nts:{"en":"Deep Dish Pizza Day"},urls:{"en":"https://www.daysoftheyear.com/days/deep-dish-pizza-day/"},mog:"🍕"},
+        "GazpachoSoupD":{ty:"D",st:{mon:11,d:25},ttls:{"en":"Gazpacho Soup Day"},mog:"🥣",urls:{"en":"https://www.daysoftheyear.com/days/gazpacho-soup-day/"},nts:{"en":"This observance celebrates the episode “Me²” of Red Dwarf.\nCreated by Rob Grant and Doug Naylor"}},
+        "Wolfenoot":{ty:"D",st:{mon:11,d:23},ttls:{"en":"Wolfenoot"}, urls:{"en":"https://www.wolfenoot.com/home"},mog:"🐺"},
 
     }
 }

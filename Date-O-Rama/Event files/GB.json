@@ -303,6 +303,7 @@
         {ty:"nD",st:{mon:11,d:2,thruD:8,wkd:[2],durD:5},ttls:{"en":"Talk Money Week"},urls:{"en":"https://maps.org.uk/en/our-work/talk-money-week#"},mog:"💷"},
         {ty:"nD",st:{mon:11,d:22},end:{mon:12,d:22},inh:"DisabilityHistoryM",fst:{era:1,y:2010}},
         {ty:"nD",st:{mon:11,d:23,thruD:29,wkd:[7]},end:{mon:12,d:1,thruD:7,wkd:[1]},ttls:{"en":"National Tree Week"},urls:{"en":"https://treecouncil.org.uk/seasonal-campaigns/national-tree-week/"},mog:"🌴🌳🌲",fst:{era:1,y:1975},nts:{"en":"Created by the Tree Council"}},
+        {ty:"D",st:{mon:11,d:25},inh:"GazpachoSoupD",fst:{era:1,y:1987}},
         {ty:"D",st:{mon:11,d:25},ttls:{"en":"Gazpacho Soup Day"},mog:"🥣",urls:{"en":"https://www.daysoftheyear.com/days/gazpacho-soup-day/"},fst:{era:1,y:1987},nts:{"en":"This observance celebrates the episode “Me²” of Red Dwarf.\nCreated by Rob Grant and Doug Naylor"}},
         {ty:"nD",st:{mon:12,d:25},end:{mon:1,d:6},ttls:{"ar":"ماري لوويد","br":"Mari Lwyd","cy":"Y Fari Lwyd","de":"Mari Lwyd","en":"Mari Lwyd","fr":"Mari Lwyd","gl":"Mari Lwyd","it":"Mari Lwyd","ru":"Мари Луид"},urls:{"en":"https://nationaltoday.com/mari-lwyd/"},mog:"🐎"},
         {ty:"nD",st:{mon:2,d:20},end:{mon:2,d:26},ttls:{"en":"National Chip Week"},urls:{"en":"https://www.daysoftheyear.com/days/national-chip-week/"},mog:"🍟",fst:{era:1,y:1990},nts:{"en":"Created by the Potato Council"}},
