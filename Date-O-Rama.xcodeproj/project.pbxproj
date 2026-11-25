@@ -989,6 +989,8 @@
 		A5E75B372EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75B362EC083590082AF22 /* ASAMiniCalendarModel.swift */; };
 		A5E75B382EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75B362EC083590082AF22 /* ASAMiniCalendarModel.swift */; };
 		A5E75B392EC0835A0082AF22 /* ASAMiniCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75B362EC083590082AF22 /* ASAMiniCalendarModel.swift */; };
+		A5E7A53530B6B0DE001AB08B /* Pastafarianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7A53430B6B0DE001AB08B /* Pastafarianism.json */; };
+		A5E7A53630B6B0DE001AB08B /* Pastafarianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7A53430B6B0DE001AB08B /* Pastafarianism.json */; };
 		A5E8BADA27FCADC30018CD36 /* TN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* TN.json */; };
 		A5E8BADB27FCADC30018CD36 /* TN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* TN.json */; };
 		A5E8BADD27FCAF700018CD36 /* PH.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BADC27FCAF700018CD36 /* PH.json */; };
@@ -1855,6 +1857,7 @@
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
 		A5E759102768D0F8008D7D57 /* EU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EU.json; sourceTree = "<group>"; };
 		A5E75B362EC083590082AF22 /* ASAMiniCalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniCalendarModel.swift; sourceTree = "<group>"; };
+		A5E7A53430B6B0DE001AB08B /* Pastafarianism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pastafarianism.json; sourceTree = "<group>"; };
 		A5E8BAD927FCADC30018CD36 /* TN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TN.json; sourceTree = "<group>"; };
 		A5E8BADC27FCAF700018CD36 /* PH.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PH.json; sourceTree = "<group>"; };
 		A5E8BADF27FCCDD00018CD36 /* PK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PK.json; sourceTree = "<group>"; };
@@ -2388,6 +2391,7 @@
 				A5EFFF8C285B7D4600F2205F /* OM.json */,
 				A5EF0002285B8EEA00F2205F /* OM (Muslim).json */,
 				A5EFFF93285B7DB700F2205F /* PA.json */,
+				A5E7A53430B6B0DE001AB08B /* Pastafarianism.json */,
 				A5806D1D308E64BE00AF1674 /* PBI.json */,
 				A5EFFF98285B7F2E00F2205F /* PE.json */,
 				A5BA22202EB132ED005F1586 /* Peanuts.json */,
@@ -3238,6 +3242,7 @@
 				A5E8BAE427FCCF0B0018CD36 /* BD.json in Resources */,
 				A5171A632899A83B00CCA91A /* Taoism (Chinese).json in Resources */,
 				A5EFFFEE285B878900F2205F /* TW.json in Resources */,
+				A5E7A53630B6B0DE001AB08B /* Pastafarianism.json in Resources */,
 				A5EFFFA5285B7F2E00F2205F /* SA.json in Resources */,
 				A59007B1304E835D00C64C3B /* IN (Malayam).json in Resources */,
 				A50DA51F28686272008D54AE /* SR (Chinese).json in Resources */,
@@ -3489,6 +3494,7 @@
 				A576C39328171F96005AC73D /* NZ.json in Resources */,
 				A529D3522A151404004D8799 /* Wellcat.json in Resources */,
 				A52C158030872AD100CCE986 /* IN (Odia).json in Resources */,
+				A5E7A53530B6B0DE001AB08B /* Pastafarianism.json in Resources */,
 				A5BA7AF63097A026000CBAA8 /* MY (Vikram Samvat).json in Resources */,
 				A5F3B02128565F8100865CEB /* BS.json in Resources */,
 				A5E9AB632A1B4C8900433D7A /* Names.json in Resources */,

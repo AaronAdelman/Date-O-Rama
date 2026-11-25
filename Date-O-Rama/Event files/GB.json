@@ -52,7 +52,7 @@
         {ty:"D",st:{mon:1,d:13},ttls:{"cy":"Calennig","en":"Calennig","uk":"Каленніг"},nts:{"en":"Welsh New Year"},inh:"NYD",urls:{"en":"https://www.daysoftheyear.com/days/calennig/"},mog:"🍏"},
         {ty:"D",st:{mon:1,d:15},ttls:{"en":"National Pothole Day"},urls:{"en":"https://www.daysoftheyear.com/days/pothole-day/"},nts:{"en":"Created by Street Repairs UK and Mark “Mr. Pothole” Morrell"},fst:{era:1,y:2018}},
         {ty:"D",st:{mon:1,d:24},ttls:{"en":"Paul Pitcher Day"},urls:{"en":"https://paulpitcherday.com/"},mog:"🍺"},
-        {ty:"D",st:{mon:1,d:25},ttls:{"en":"Burns Night","he":"ליל ברנס"},urls:{"en":"https://www.scotland.org/events/burns-night"},mog:"🥃",nts:{"en":"Robert Burns Day\nRabbie Burns Day"},inh:"*BD*",fst:{era:1,y:1801}},
+        {ty:"D",st:{mon:1,d:25},inh:"BurnsNite",fst:{era:1,y:1801}},
         {ty:"D",st:{mon:1,d:25},ttls:{"en":"Saint Dwynwen’s Day","cy":"Dydd Santes Dwynwen"},urls:{"en":"https://www.daysoftheyear.com/days/st-dwynwens-day/"},fst:{era:1,y:1960}},
         {ty:"D",st:{mon:1,d:26},ttls:{"en":"Dundee Day"},urls:{"en":"https://www.daysoftheyear.com/days/dundee-day/"},mog:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",fst:{era:1,y:1889},nts:{"en":"Created by Queen Victoria"}},
         {ty:"D",st:{mon:1,d:27},inh:"HolocaustMemorialD",fst:{era:1,y:2001}},

@@ -291,7 +291,7 @@
         {ty:"D",st:{mon:4,d:13},ttls:{"en":"National Borinqueneers Day"},fst:{era:1,y:2021},urls:{"en":"https://www.daysoftheyear.com/days/national-borinqueneers-day/"},mog:"🇵🇷"},
         {ty:"D",st:{mon:4,d:13},ttls:{"en":"Jefferson’s Birthday","he":"יום הולדתו של ג׳פרסון"},nts:{"en":"National Thomas Jefferson Day\nThomas Jefferson’s Birthday\nThomas Jefferson Day"},inh:"*BD*",fst:{era:1,y:1938},urls:{"en":"https://www.daysoftheyear.com/days/thomas-jefferson-day/"}},
         {ty:"D",st:{mon:4,d:14},ttls:{"en":"Air Force Reserve Birthday"},urls:{"en":"https://www.daysoftheyear.com/days/air-force-reserve-birthday/"}},
-        {ty:"D",st:{mon:4,d:14},ttls:{"en":"National Look up at the Sky Day"},nts:{"en":"Look up at the Sky Day"},mog:"🐦✈️",urls:{"en":"https://www.daysoftheyear.com/days/look-up-at-the-sky-day/"},fst:{era:1,y:2020}},
+        {ty:"D",st:{mon:4,d:14},inh:"NLookUpAtTheSkyD",fst:{era:1,y:2020}},
         {ty:"D",st:{mon:4,d:14},inh:"PanAmericanD",fst:{era:1,y:1931}},
         {ty:"D",st:{mon:4,d:15},inh:"TaxD",urls:{"en":"https://www.daysoftheyear.com/days/tax-day/"},fst:{era:1,y:1913}},
         {ty:"D",st:{mon:4,d:15},ttls:{"en":"One Boston Day"},urls:{"en":"https://www.daysoftheyear.com/days/one-boston-day/"},fst:{era:1,y:2015},nts:{"en":"Created by Martin Walsh"}},
