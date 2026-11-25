@@ -1471,7 +1471,7 @@
         {ty:"D",st:{mon:8,d:14},ttls:{"en":"Color Book Day"},mog:"📚",urls:{"en":"https://www.checkiday.com/485e0b6d25c95e99c230f4086fd22d77/color-book-day"},fst:{era:1,y:2010}},
         {ty:"D",st:{mon:8,d:14},ttls:{"en":"World Lizard Day","he":"יום הלטאה העולמי"},mog:"🦎",urls:{"en":"https://www.daysoftheyear.com/days/world-lizard-day/"}},
         {ty:"D",st:{mon:8,d:15},inh:"VJD",fst:{era:1,y:1945}},
-        {ty:"D",st:{mon:8,d:16},ttls:{"en":"Surveillance Day","he":"יום נפנף למצלמות המעקב"},nts:{"en":"Wave at the Surveillance Cameras Day"},nts:{"en":"Wave At the Surveillance Cameras Day"},mog:"👋",urls:{"en":"https://www.daysoftheyear.com/days/surveillance-day/"},fst:{era:1,y:2017}},
+        {ty:"D",st:{mon:8,d:16},inh:"SurveillanceD",fst:{era:1,y:2017}},
         {ty:"D",st:{mon:8,d:16},ttls:{"en":"True Love Forever Day"},nts:{"en":"Wave At the Surveillance Cameras Day"},urls:{"en":"https://www.checkiday.com/83fb79f7fc2c77d96c664cd1799410d0/true-love-forever-day"},fst:{era:1,y:2008}},
         {ty:"D",st:{mon:8,d:17},ttls:{"en":"World Eggplant Day","he":"יום החציל העולמי"},nts:{"en":"Eggplant Day","he":"יום החציל"},mog:"🍆",urls:{"en":"https://www.checkiday.com/a5441a6de1de370eb135b51bfd4db916/world-eggplant-day"},fst:{era:1,y:2021}},
         {ty:"D",st:{mon:8,d:18},ttls:{"en":"Helium Discovery Day"},urls:{"en":"https://www.checkiday.com/25489da6ac9b9d80ce467bb095e2a3e1/helium-discovery-day"},fst:{era:1,y:1868},mog:"🎈"},

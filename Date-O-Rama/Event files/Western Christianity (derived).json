@@ -131,7 +131,7 @@
         {ty:"D",st:{mon:2,d:12},ttls:{"en":"National Freedom to Marry Day","ha":"Ranar ƴancin yin aure","ru":"Национальный день свободы брака"}, urls:{urls:"https://www.daysoftheyear.com/days/national-freedom-to-marry-day/"},fst:{era:1,y:1998},nts:{"en":"Created by Lambda Legal"}},
         {ty:"D",st:{mon:2,d:13},inh:"NValentineShoppingReminderD"},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"International Condom Day"},nts:{"en":"This observance could have been promoted with more tact.\nCreated by the AIDS Healthcare Foundation"},fst:{era:1,y:2009}},
-        {ty:"D",st:{mon:2,d:13},ttls:{"en":"Self Love Day","he":"יום מאוהב/ת בעצמי"}, urls:{"en":"https://pathofselflove.org/self-love-day"},nts:{"en":"Self-Love Day\nMadly in Love With Me Day\nSelf Love Day\nCreated by Christine Arylo and the Path of Self Love School","he":"יום מאוהב/ת בעצמי בטירוף"},fst:{era:1,y:2008},mog:"⭕"},
+        {ty:"D",st:{mon:2,d:13},inh:"SelfLuvD",fst:{era:1,y:2008}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"International Natural Day"}, urls:{"en":"https://www.daysoftheyear.com/days/international-natural-day/"},nts:{"en":"International Day of Self Love\nCreated by Sanah Jivani"},fst:{era:1,y:2011}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"Self Love Day"},nts:{"en":"Madly In Love With Me Day\nSelf Love Day\nInternational Day of Self-Love\nThis observance seems to be meant to sell products."},fst:{era:1,y:2008}},
         {ty:"D",st:{mon:2,d:13},ttls:{"en":"Dream Your Sweet Day"}, urls:{"en":"https://www.daysoftheyear.com/days/dream-your-sweet-day/"}},
