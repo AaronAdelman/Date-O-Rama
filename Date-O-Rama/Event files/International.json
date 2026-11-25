@@ -1211,7 +1211,7 @@
         {ty:"D",st:{mon:6,d:15},ttls:{"en":"Magna Carta Day"},urls:{"en":"https://www.daysoftheyear.com/days/magna-carta-day/"},fst:{era:1,y:1947},mog:"📜"},
         {ty:"D",st:{mon:6,d:15},ttls:{"en":"Nature Photography Day","he":"יום צילומי הטבע"},urls:{"en":"https://nanpa.org/events/nature-photography-day/"},fst:{era:1,y:2006},mog:"🌲🌳🌴",nts:{"en":"Created by the North American Nature Photography Association (NANPA)"}},
         {ty:"D",st:{mon:6,d:15},ttls:{"en":"Sneak A Kiss Day"},urls:{"en":"https://www.daysoftheyear.com/days/sneak-a-kiss-day/"}},
-        {ty:"D",st:{mon:6,d:15},ttls:{"en":"World Meat Free Day"},mog:"🥦",urls:{"en":"https://www.foodethicscouncil.org/opinion/world-meat-free-day/"},mog:"🍅🥒"},
+        {ty:"D",st:{mon:6,d:15},inh:"WMeatFreeD"},
         {ty:"D",st:{mon:6,d:15},ttls:{"en":"Worldwide Day of Giving"},urls:{"en":"https://www.checkiday.com/81c22cf73fab1baf72c9f8eb1d854a31/worldwide-day-of-giving"},fst:{era:1,y:2010},mog:"💵"},
         {ty:"D",st:{mon:6,d:16},inh:"IAfricanChildD",fst:{era:1,y:1991}},
         {ty:"D",st:{mon:6,d:16},ttls:{"af":"Bloom-dag","ang":"Bloomesdæg","ca":"Bloomsday","cs":"Bloomsday","da":"Bloomsday","de":"Bloomsday","el":"Bloomsday","en":"Bloomsday","eo":"Bloomsday","es":"Bloomsday","eu":"Bloomsday","fa":"بلومزدی","fi":"Bloomsday","fr":"Bloomsday","ga":"Lá Bloom","he":"בלומסדיי","hr":"Bloomov dan","hu":"Bloomsday","hy":"Բլումի օր","it":"Bloomsday","ja":"ブルームの日","ko":"블룸즈데이","nl":"Bloomsday","pl":"Bloomsday","pt":"Bloomsday","ru":"Блумсдэй","sk":"Bloomsday","sv":"Bloomsday","uk":"Блумсдей","zh":"布鲁姆日"},urls:{"en":"https://www.daysoftheyear.com/days/bloomsday/"},fst:{era:1,y:1954},mog:"📘",nts:{"en":"This observance celebrates Ulysses by James Joyce."}},
