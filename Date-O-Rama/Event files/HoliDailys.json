@@ -25,7 +25,7 @@
         {ty:"D",st:{mon:6,d:26},ttls:{"en":"Tropical Cocktails Day"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2016/06/26/Tropical-Cocktails-Day"},mog:"🍸🍹",fst:{era:1,y:2013}},
         {ty:"D",st:{mon:7,d:25},ttls:{"en":"National Wine and Cheese Day","he":"יום יין וגבינה הלאומי"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2016/07/24/National-Wine-and-Cheese-Day"},mog:"🍷🧀",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:8,d:4},ttls:{"en":"National White Wine Day"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2014/08/04/National-White-Wine-Day-Cheers"},mog:"🍷"},
-        {ty:"D",st:{mon:8,d:28},ttls:{"en":"Red Wine Day"},nts:{"en":"RWD\nNational Red Wine Day"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2015/08/28/Red-Wine-Day-Cheers"},mog:"🍷",fst:{era:1,y:2014}},
+        {ty:"D",st:{mon:8,d:28},inh:"RedWineD",fst:{era:1,y:2014}},
         {ty:"D",st:{mon:9,d:14},ttls:{"en":"National Coloring Day","he":"יום הצביעה הלאומי"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2015/09/14/National-Coloring-Day"},mog:"✍️"},
         {ty:"D",st:{mon:10,d:13},ttls:{"en":"Silly Sayings Day"},urls:{"en":"https://jacegalloway.wixsite.com/holidays/single-post/2015/10/13/Silly-Sayings-Day"},fst:{era:1,y:2015},mog:"🤪"},
         {ty:"D",st:{mon:10,d:30},inh:"Pumpkin BreadD",fst:{era:1,y:2015}},

@@ -54,7 +54,7 @@
         {ty:"D",st:{mon:5,d:10},ttls:{"en":"Flower Festival"}},
         {ty:"D",st:{mon:6,d:2},ttls:{"en":"Day of Civil Aviation"}},
         {ty:"D",st:{mon:6,d:5},ttls:{"en":"Day of Reclamation"}},
-        {ty:"D",st:{mon:6,d:18},inh:"Human RightsD",fst:{era:1,y:1950}},
+        {ty:"D",st:{mon:6,d:18},inh:"HumanRightsD",fst:{era:1,y:1950}},
         {ty:"D",st:{mon:6,d:20},ttls:{"en":"Day of the Gas Sector"}},
         {ty:"D",st:{mon:7,d:2},ttls:{"en":"Day of Azerbaijani Police"},inh:"PoliceD"},
         {ty:"D",st:{mon:7,d:9},ttls:{"en":"Day of the Employees of the Diplomatic Service"}},

@@ -136,7 +136,7 @@
         {ty:"D",st:{mon:12,d:3},inh:"IPersonsWithDisabilitiesD"},
         {ty:"D",st:{mon:12,d:8},inh:"ConstitutionD"},
         {ty:"D",st:{mon:12,d:9},inh:"IACD",fst:{era:1,y:2003}},
-        {ty:"D",st:{mon:12,d:10},inh:"Human RightsD",fst:{era:1,y:1950}},
+        {ty:"D",st:{mon:12,d:10},inh:"HumanRightsD",fst:{era:1,y:1950}},
         {ty:"D",st:{mon:12,d:13},ttls:{"en":"Day of the Tatar Ethnicity of Romania"}},
         {ty:"D",st:{mon:12,d:16},ttls:{"en":"National Solidarity Day Against Dictatorship"}},
         {ty:"D",st:{mon:12,d:18},ttls:{"en":"Day of the National Minorities of Romania"}},

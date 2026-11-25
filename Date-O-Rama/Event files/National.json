@@ -1944,7 +1944,7 @@
         {ty:"D",st:{mon:8,d:25},ttls:{"en":"National Kiss and Make Up Day","he":"היום להתנשק ולהתפייס הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/kiss-and-make-up-day/"},nts:{"he":" היום להתנשק ולהתפייס","en":"Kiss and Make Up Day\nCreated by Jacqueline Milgate of Hilton, New York"},mog:"😗"},
         {ty:"D",st:{mon:8,d:25},ttls:{"en":"National Park Service Founders Day","he":"יום מייסדי שירות הפארקים הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/national-park-service-founders-day/"},mog:"🏞️",fst:{era:1,y:1916}},
         {ty:"D",st:{mon:8,d:25},ttls:{"en":"National Secondhand Wardrobe Day","he":"יום בגדי יד שנייה הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/national-secondhand-wardrobe-day/"},mog:"🧢"},
-        {ty:"D",st:{mon:8,d:25},ttls:{"en":"National Whiskey Sour Day","he":"יום הויסקי סאוור הלאומי"},mog:"🥃",nts:{"en":"Whiskey Sour Day","he":"יום הויסקי סאוור"},urls:{"en":"https://www.daysoftheyear.com/days/whiskey-sour-day/"},mog:"🥃"},
+        {ty:"D",st:{mon:8,d:25},inh:"NWhiskeySourD"},
         {ty:"D",st:{mon:8,d:26},ttls:{"en":"National Cherry Popsicle Day","he":"יום הארטיק בטעם דובדבן הלאומי"},urls:{"en":"https://www.daysoftheyear.com/days/cherry-popsicle-day/"},mog:"🍒"},
         {ty:"D",st:{mon:8,d:26},ttls:{"en":"National Glitter Day"},nts:{"en":"Glitter Day"},urls:{"en":"https://digitalhygge.com/national-glitter-day/"}},
         {ty:"D",st:{mon:8,d:26},ttls:{"en":"National Spark the World Day"},urls:{"en":"https://www.daysoftheyear.com/days/national-spark-the-world-day/"},fst:{era:1,y:2020},mog:"❇️",nts:{"en":"Created by Simon T. Bailey"}},

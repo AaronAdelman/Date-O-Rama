@@ -68,7 +68,7 @@
         {ty:"D",st:{mon:10,d:31},inh:"Halloween"},
         {ty:"D",st:{mon:11,d:17},ttls:{"en":"National Students’ Day","fil":"Pambansang Araw ng mga Mag-aaral"},fst:{era:1,y:2019},mog:"👨‍🎓👩‍🎓"},
         {ty:"D",st:{mon:11,d:20},inh:"NChildrenD"},
-        {ty:"D",st:{mon:12,d:10},inh:"Human RightsD",fst:{era:1,y:1950}},
+        {ty:"D",st:{mon:12,d:10},inh:"HumanRightsD",fst:{era:1,y:1950}},
         {ty:"D",st:{mon:12,d:21},inh:"ArmedForcesD",ttls:{"en":"Philippine Armed Forces Day","fil":"Araw ng Hukbong Sandatahang Lakas ng Pilipinas"},fst:{era:1,y:1935}},
 
         {ty:"D",st:{misc:"full1",mon:5},inh:"Vesak",fst:{era:1,y:2001}},
