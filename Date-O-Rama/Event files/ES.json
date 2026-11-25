@@ -80,7 +80,7 @@
         {ty:"D",st:{mon:3,d:19},inh:"EngineersD"},
         {inh:"ChildrensD", ty:"D",st:{mon:4,d:15}},
         {ty:"D",st:{mon:3,d:8},inh:"IWD"},
-        {ty:"D",st:{mon:2,d:14},inh:"Valentine’sD",fst:{era:1,y:496}},
+        {ty:"D",st:{mon:2,d:14},inh:"ValentinesD",fst:{era:1,y:496}},
         {ty:"D",st:{mon:8,d:1},ttls:{"en":"Albariño Day"}, urls:{"en":"https://www.daysoftheyear.com/days/albarino-day/"},mog:"🍷",fst:{era:1,y:1953}},
         {ty:"D",st:{mon:7,d:20},inh:"FriendshipD"},
         {ty:"D",st:{mon:8,d:5},ttls:{"en":"Feast of the White Virgin"}, urls:{"en":"https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"},locs:{"en":"Álava"}},

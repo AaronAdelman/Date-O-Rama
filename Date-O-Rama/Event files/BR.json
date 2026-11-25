@@ -30,7 +30,7 @@
         {ty:"D",st:{mon:11,d:20},ttls:{"ar":"يوم التوعية بالسود","ca":"Dia de la Consciència Negra","en":"National Day of Zumbi and Black Consciousness","es":"Día de la Conciencia Negra","fr":"Jour de la conscience noire","it":"Giornata della Coscienza Nera","ms":"Hari Kesedaran Kulit Hitam","pt":"Dia Nacional de Zumbi e da Consciência Negra","zh":"黑人意識日"},urls:{"en":"https://www.daysoftheyear.com/days/black-consciousness-day/"},fst:{era:1,y:1960},nts:{"en":"Black Consciousness Day\nBlack Awareness Day\nZumbi Day","pt":"Dia da Consciência Negra"}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         
-        {ty:"D",st:{mon:6,d:12},ttls:{"en":"Brazilian Valentine’s Day","pt":"Dia dos Namorados","he":"יום האוהבים ברזיל"},urls:{"en":"https://nationaltoday.com/brazilian-valentines-day/"},fst:{era:1,y:1948},inh:"Valentine’sD"},
+        {ty:"D",st:{mon:6,d:12},ttls:{"en":"Brazilian Valentine’s Day","pt":"Dia dos Namorados","he":"יום האוהבים ברזיל"},urls:{"en":"https://nationaltoday.com/brazilian-valentines-day/"},fst:{era:1,y:1948},inh:"ValentinesD"},
         {ty:"D",st:{mon:6,d:13},inh:"StAnthonyOfPadua"},
         {ty:"D",st:{mon:6,d:24},inh:"StJohn"},
         {ty:"D",st:{mon:6,d:29},inh:"StsPeter&Paul"},

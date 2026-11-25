@@ -113,7 +113,7 @@
         {ty:"D",st:{mon:1,d:17},ttls:{"en":"National Dairy Day","th":"วันโคนมแห่งชาติ","he":"יום החלב הלאומי"},mog:"🥛🧀🧈"},
         {ty:"D",st:{mon:2,d:2},inh:"NAgD"},
         {ty:"D",st:{mon:2,d:10},ttls:{"en":"Volunteer Defense’s Day","th":"วันอาสารักษาดินแดน","he":"יום ההתנדבות"}},
-        {ty:"D",st:{mon:2,d:14},inh:"Valentine’sD"},
+        {ty:"D",st:{mon:2,d:14},inh:"ValentinesD"},
         {ty:"D",st:{mon:2,d:25},inh:"NRadioD"},
         {ty:"D",st:{mon:3,d:5},ttls:{"en":"Journalist’s Day","th":"วันนักข่าว","he":"יום העיתונאים"}},
         {ty:"D",st:{mon:7,d:1},inh:"NScoutOrgD"},

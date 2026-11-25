@@ -56,7 +56,7 @@
         {ty:"D",st:{mon:12,d:22},inh:"PowerEngineersD"},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:9},ttls:{"en":"Day of Heroes of the Fatherland","ru":"День Героев Отечества"},fst:{era:1,y:2007}},
-        {ty:"D",st:{mon:2,d:14},inh:"Valentine’sD",fst:{era:1,y:496}},
+        {ty:"D",st:{mon:2,d:14},inh:"ValentinesD",fst:{era:1,y:496}},
         {ty:"D",st:{mon:2,d:15},ttls:{"en":"International Duties Memorial Day","ru":"День памяти воинов-интернационалистов"}},
         {ty:"D",st:{mon:2,d:27},urls:{"en":"https://nationaltoday.com/special-operations-forces-day-2/"},ttls:{"en":"Special Operations Forces Day","ru":"День Сил специальных операций"},fst:{era:1,y:2015},nts:{"en":"Day of Special Operations Forces"}},
         {ty:"D",st:{mon:3,d:25},ttls:{"en":"Cultural Worker Day","ru":"День работника культуры России"}},

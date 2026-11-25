@@ -39,7 +39,7 @@
         {ty:"D",st:{mon:12,d:11,thruD:17,wkd:[1]},inh:"3rdAdventSun"},
         {ty:"D",st:{mon:12,d:18,thruD:24,wkd:[1]},inh:"4thAdventSun"},
         {inh:"ChildrensD", ty:"D",st:{mon:10,wkd:[2],nth:1}},
-        {ty:"D",st:{mon:2,d:14},inh:"Valentine’sD",fst:{era:1,y:496}},
+        {ty:"D",st:{mon:2,d:14},inh:"ValentinesD",fst:{era:1,y:496}},
         {ty:"D",st:{misc:"E",oD:-49},inh:"Fastelavn"},
         {ty:"D",st:{mon:2,d:24},urls:{"en":"https://nationaltoday.com/sweden-finns-day/"},ttls:{"en":"Sweden Finns Day"},fst:{era:1,y:2010}},
         {ty:"D",st:{mon:9,d:29},inh:"NCoffeeD"},

@@ -55,7 +55,7 @@
         {ty:"D",st:{mon:3,d:8},inh:"IWD"},
         {inh:"IYouthD", ty:"D",st:{mon:8,d:12},fst:{era:1,y:2000}},
         {ty:"D",st:{mon:3,d:17},inh:"StPatrick"},
-        {ty:"D",st:{mon:2,d:14},inh:"Valentine’sD",fst:{era:1,y:496}},
+        {ty:"D",st:{mon:2,d:14},inh:"ValentinesD",fst:{era:1,y:496}},
         {inh:"WBookD", ty:"D",st:{mon:4,d:23},fst:{era:1,y:1995}},
         {ty:"D",st:{mon:5,d:31},inh:"WNoTobaccoD",fst:{era:1,y:1989}},
         {inh:"WRefugeeD", ty:"D",st:{mon:6,d:20},fst:{era:1,y:2001}},
