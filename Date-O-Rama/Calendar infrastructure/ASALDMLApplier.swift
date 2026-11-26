@@ -251,6 +251,16 @@ struct ASALDMLApplier {
         formatter.locale = Locale(identifier: localeIdentifier)
         
         for component in components {
+            lazy var minimumHourIntegerDigits: Int = {
+                if ldmlCalendar is ASABoothCalendar {
+                    if (ldmlCalendar as! ASABoothCalendar).maximumHour < 10 {
+                        return 1
+                    }
+                }
+
+                return component.string.count
+            }()
+
             switch component.type {
             case .literal:
                 result.append(component.string)
@@ -281,11 +291,11 @@ struct ASALDMLApplier {
                             return 12
                         }
                     }()
-                    symbol = stringFromInteger(hour, minimumIntegerDigits: component.string.count)
-                    
+                    symbol = stringFromInteger(hour, minimumIntegerDigits: minimumHourIntegerDigits)
+
                 case "H", "HH":
                     let hour = dateComponents.hour!
-                    symbol = stringFromInteger(hour, minimumIntegerDigits: component.string.count)
+                    symbol = stringFromInteger(hour, minimumIntegerDigits: minimumHourIntegerDigits)
                 
                 case "k", "kk", "K", "KK", "j", "jj", "jjj", "jjjj", "jjjjj", "jjjjjj", "J", "JJ", "C", "CC", "CCC", "CCCC", "CCCCC", "CCCCCC":
                     let hour = dateComponents.hour!
