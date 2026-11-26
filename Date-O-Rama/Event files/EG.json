@@ -13,7 +13,7 @@
         {ty:"D",st:{mon:1,d:26,thruD:29,wkd:[5]},ttls:{"en":"Revolution Day January 25 (in lieu)"},inh:"RevolutionD", urls:{"en":"https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}},
         {ty:"D",st:{mon:4,d:24,wkd:[5]},ttls:{"en":"Sinai Liberation Day (in lieu)"},fst:{era:1,y:1989}, urls:{"en":"https://www.officeholidays.com/holidays/egypt/sinai-liberation-day"}},
         {ty:"D",st:{mon:4,d:25},ttls:{"en":"Sinai Liberation Day","ar":"عيد تحرير سيناء"},fst:{era:1,y:1989}, urls:{"en":"https://www.officeholidays.com/holidays/egypt/sinai-liberation-day"}},
-        {ty:"D",st:{mon:5,d:1,wkd:[1,2,3,4,6, 7]},inh:"LaborD"},
+        {ty:"D",st:{mon:5,d:1,wkd:[1,2,3,4,6,7]},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:2,wkd:[7]},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:4,wkd:[5]},inh:"LaborD"},
         {ty:"D",st:{mon:5,d:7,wkd:[5]},inh:"LaborD (IL)"},
