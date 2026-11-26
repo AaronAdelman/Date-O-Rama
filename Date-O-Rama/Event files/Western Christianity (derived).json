@@ -17,7 +17,7 @@
         {ty:"D",st:{mon:1,d:11},ttls:{"en":"No Longer New Year’s Day"}, urls:{"en":"https://nationaltoday.com/no-longer-new-years-day/"},mog:"✨"},
         {ty:"D",st:{mon:1,d:12},ttls:{"en":"Stick to Your New Year's Resolution Day"}, urls:{"en":"https://nationaltoday.com/stick-to-your-new-years-resolution-day/"},mog:"📝"},
         {ty:"D",st:{mon:1,d:17},ttls:{"en":"Ditch New Year’s Resolutions Day"},nts:{"en":"Ditch New Year’s Resolution Day\nNew Year’s Resolution Ditch Day"}, urls:{"en":"https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
-        {ty:"D",st:{mon:1,d:2},inh:"Happy Mew Year For CatsD"},
+        {ty:"D",st:{mon:1,d:2},inh:"HappyMewYForCatsD"},
         {ty:"D",st:{mon:1,d:26},inh:"NGreenJuiceD",fst:{era:1,y:2016}},
         {ty:"D",st:{mon:1,d:3},ttls:{"en":"National Fruitcake Toss Day"},nts:{"en":"Fruitcake Toss Day\nSome sources claim this observance happens on the first Saturday in January.\nCreated by Manitou Springs, Colorado"}, urls:{"en":"https://www.daysoftheyear.com/days/fruitcake-toss-day/"},mog:"🍰",fst:{era:1,y:1996}},
         {ty:"D",st:{mon:1,d:6},ttls:{"en":"National King Cake Day"}, urls:{"en":"https://www.checkiday.com/77fb0ac068baf6198239f6df1dffa5a7/national-king-cake-day"}},

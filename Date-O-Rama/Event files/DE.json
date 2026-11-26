@@ -53,7 +53,7 @@
         {ty:"D",st:{misc:"E",oD:-47},inh:"FasnachtD"},
         {ty:"D",st:{mon:1,d:9},inh:"AirForceD"},
         {ty:"D",st:{mon:10,d:1},inh:"NCoffeeD"},
-        {ty:"D",st:{mon:10,wkd:[1],nth:2},inh:"Grandmothers’D",fst:{era:1,y:2010}},
+        {ty:"D",st:{mon:10,wkd:[1],nth:2},inh:"GrandmothersD",fst:{era:1,y:2010}},
         {ty:"D",st:{mon:11,d:19},ttls:{"en":"National Soup Day"}},
         {ty:"D",st:{mon:2,d:10},ttls:{"en":"Children’s Hospice Day"},urls:{"en":"https://nationaltoday.com/childrens-hospice-day/"},mog:"👦👧"},
         {ty:"D",st:{mon:4,d:25},inh:"EMeetsWD",fst:{era:1,y:1945}},

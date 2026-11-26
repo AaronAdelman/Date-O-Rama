@@ -83,7 +83,7 @@
         {ty:"D",st:{mon:7,wkd:[1],nth:-1},inh:"NavyD",fst:{era:1,y:2013},urls:{"en":"https://en.wikipedia.org/wiki/Navy_Day_(Russia)"}},
         {ty:"D",st:{mon:8,d:1},ttls:{"en":"Day of Remembrance of Russian Soldiers Who Fell in World War I","ru":"День памяти российских воинов, погибших в Первой мировой войне 1914–1918 годов"},fst:{era:1,y:2013}},
         {ty:"D",st:{mon:8,d:12},inh:"AirForceD",fst:{era:1,y:2006}},
-        {ty:"D",st:{mon:8,d:14},inh:"Honey Feast of the Savior"},
+        {ty:"D",st:{mon:8,d:14},inh:"SaviorsHoneyFeast"},
         {ty:"D",st:{mon:8,d:19},urls:{"en":"https://nationaltoday.com/saviours-of-the-apple-feast-day/"},ttls:{"en":"Saviours of the Apple Feast Day"},mog:"🍎"},
         {ty:"D",st:{mon:8,d:2},inh:"ParatroopersD"},
         {ty:"D",st:{mon:8,d:22},inh:"NFlagD",urls:{"en":"https://nationaltoday.com/russia-national-flag-day/"}},

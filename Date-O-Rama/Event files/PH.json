@@ -63,7 +63,7 @@
         {ty:"D",st:{mon:10,d:17},inh:"CoastGuardD",ttls:{"en":"Philippine Coast Guard Day","fil":"Araw ng Tanod Baybabin ng Pilipinas"},fst:{era:1,y:1901}},
         {ty:"D",st:{mon:10,d:23},ttls:{"en":"Television Day","he":"יום הטלוויזיה","fil":"Araw ng Telebisyong Pilipino"},fst:{era:1,y:1953},mog:"📺"},
         {ty:"D",st:{mon:10,d:24},inh:"UND",fst:{era:1,y:1945}},
-        {ty:"D",st:{mon:10,d:24},inh:"FoundationAnniversaryOfTheBoyScoutsOfPH"},
+        {ty:"D",st:{mon:10,d:24},inh:"PHBoyScoutsFoundationAnniv"},
         {ty:"D",st:{mon:10,d:31},inh:"ReformationD"},
         {ty:"D",st:{mon:10,d:31},inh:"Halloween"},
         {ty:"D",st:{mon:11,d:17},ttls:{"en":"National Students’ Day","fil":"Pambansang Araw ng mga Mag-aaral"},fst:{era:1,y:2019},mog:"👨‍🎓👩‍🎓"},

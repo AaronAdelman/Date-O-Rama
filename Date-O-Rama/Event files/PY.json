@@ -8,7 +8,7 @@
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Paraguay"},
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
-        {ty:"D",st:{mon:3,d:1},inh:"Heroes’D",urls:{"en":"https://www.officeholidays.com/holidays/paraguay/day-of-heroes"}},
+        {ty:"D",st:{mon:3,d:1},inh:"HeroesD",urls:{"en":"https://www.officeholidays.com/holidays/paraguay/day-of-heroes"}},
         {ty:"D",st:{misc:"E",oD:-3},inh:"Maundy Thu"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},

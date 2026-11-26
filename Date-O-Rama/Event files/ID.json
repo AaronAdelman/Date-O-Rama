@@ -73,7 +73,7 @@
         {ty:"D",st:{mon:10,d:27},inh:"NElectricityD"},
         {inh:"NYouthD", ty:"D",st:{mon:10,d:28},ttls:{"en":"Youth Pledge Day","id":"Hari Sumpah Pemuda"},urls:{"en":"https://en.wikipedia.org/wiki/Youth_Pledge"}},
         {ty:"D",st:{mon:10,d:30},ttls:{"en":"Indonesian Finance Day","id":"Hari Oeang"},nts:{"id":"Hari Keuangan Republik Indonesia"},mog:"🏦"},
-        {inh:"Heroes’D", ty:"D",st:{mon:11,d:10}},
+        {inh:"HeroesD", ty:"D",st:{mon:11,d:10}},
         {inh:"FathersD", ty:"D",st:{mon:11,d:12},fst:{era:1,y:2006}},
         {ty:"D",st:{mon:11,d:12},inh:"NHealthD",fst:{era:1,y:1959}},
         {ty:"D",st:{mon:11,d:14},ttls:{"en":"Mobile Brigade Day","id":"Hari Brigade Mobil"},fst:{era:1,y:1946}},

@@ -41,7 +41,7 @@
         {ty:"D",st:{mon:1,d:1},inh:"NYD",urls:{"en":"https://www.fsofcabal.com/holydays/01-01-new-years-day"}},
         {ty:"D",st:{mon:1,d:1},ttls:{"en":"Bogey’s Day"},inh:"HDH"},
         {ty:"D",st:{mon:1,d:1},ttls:{"en":"Nude Year’s Day"},nts:{"en":"Whollyday\n1 Chaos"},inh:"EDH"},
-        {ty:"D",st:{mon:1,d:3},inh:"FestivalOfSleepD",urls:{"en":"https://www.fsofcabal.com/holydays/01-03-festival-of-sleep"}},
+        {ty:"D",st:{mon:1,d:3},inh:"SleepFestivalD",urls:{"en":"https://www.fsofcabal.com/holydays/01-03-festival-of-sleep"}},
         {ty:"D",st:{mon:1,d:5},ttls:{"en":"Carioca Lodge Day"},inh:"HDH"},
         {ty:"D",st:{mon:1,d:8},inh:"EmperorNortonsD",fst:{era:1,y:1880},urls:{"en":"https://www.fsofcabal.com/holydays/01-08-emperor-norton-day"}},
         {ty:"D",st:{mon:1,d:10},ttls:{"en":"Backwards Day, Reformed"},nts:{"en":"Whollyday\n10 Chaos"},inh:"EDH"},

@@ -17,7 +17,7 @@
             {ty:"D",st:{mon:12,d:21},inh:"HumbugD"},
             {ty:"D",st:{mon:12,d:29},ttls:{"en":"Tick Tock Day","he":"יום הטיק טק"},nts:{"en":"Still Need To Do Day"}},
             {ty:"D",st:{mon:12,d:30},inh:"FallingNeedlesFamilyFest"},
-            {ty:"D",st:{mon:1,d:2},inh:"Happy Mew Year For CatsD"},
+            {ty:"D",st:{mon:1,d:2},inh:"HappyMewYForCatsD"},
             {ty:"D",st:{mon:1,d:3},ttls:{"en":"Memento Mori"},nts:{"en":"Memento Mori “Remember You Die” Day"}},
             {ty:"D",st:{mon:1,d:4},ttls:{"en":"Dimpled Chad Day"}},
             {ty:"D",st:{mon:1,d:8},ttls:{"en":"Show & Tell Day at Work"},nts:{"en":"Show & Tell at Work Day\nShow and Tell at Work Day"}},
