@@ -11,22 +11,22 @@
         {ty:"D",st:{mon:1,d:2},urls:{"en":"https://www.officeholidays.com/holidays/romania/day-after-new-years-day"},inh:"DAfterNYD"},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany",fst:{era:1,y:2024}},
         {ty:"D",st:{mon:1,d:7},fst:{era:1,y:2024},inh:"SynaxisOfStJohnTheBaptist"},
-        {ty:"D",st:{era:1,y:2023,mon:1,d:23},urls:{"en":"https://www.officeholidays.com/holidays/romania/romania-unification-day"},inh:"Public Sector Holiday"},
+        {ty:"D",st:{era:1,y:2023,mon:1,d:23},urls:{"en":"https://www.officeholidays.com/holidays/romania/romania-unification-day"},inh:"Public SectorHol"},
         {ty:"D",st:{mon:1,d:24},ttls:{"ca":"Dia de la unificació dels principats romanesos","en":"Day of the Unification of the Romanian Principalities","ro":"Ziua Unirii Principatelor Române","uk":"День об’єднання дунайських князівств"},inh:"UnificationD",urls:{"en":"https://nationaltoday.com/unification-day/"},fst:{era:1,y:1859}},
         {ty:"D",st:{mon:3,d:1},inh:"Martisor",urls:{"en":"https://nationaltoday.com/martisor/"}},
         {ty:"D",st:{mon:5,d:1},inh:"LaborD"},
-        {ty:"D",st:{era:1,y:2024,mon:5,d:2},urls:{"en":"https://www.officeholidays.com/holidays/romania/labour-day"},inh:"Public Sector Holiday"},
+        {ty:"D",st:{era:1,y:2024,mon:5,d:2},urls:{"en":"https://www.officeholidays.com/holidays/romania/labour-day"},inh:"Public SectorHol"},
         {inh:"MothersD", ty:"D",st:{mon:5,wkd:[1],nth:1}},
         {inh:"FathersD", ty:"D",st:{mon:5,wkd:[1],nth:2}},
         {ty:"D",st:{mon:6,d:1},inh:"ChildrensD",fst:{era:1,y:2017}},
-        {inh:"Public Sector Holiday", ty:"D",st:{mon:6,d:2,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/romania/international-childrens-day"},fst:{era:1,y:2017}},
-        {ty:"D",st:{mon:8,d:14,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/romania/assumption-day"},inh:"Public Sector Holiday"},
+        {inh:"Public SectorHol", ty:"D",st:{mon:6,d:2,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/romania/international-childrens-day"},fst:{era:1,y:2017}},
+        {ty:"D",st:{mon:8,d:14,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/romania/assumption-day"},inh:"Public SectorHol"},
         {ty:"D",st:{mon:8,d:15},inh:"DormitionOfTheMotherOfGod"},
-        {ty:"D",st:{mon:8,d:16,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/romania/assumption-day"},inh:"Public Sector Holiday"},
+        {ty:"D",st:{mon:8,d:16,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/romania/assumption-day"},inh:"Public SectorHol"},
         {ty:"D",st:{mon:11,d:30},urls:{"en":"https://www.officeholidays.com/holidays/romania/st-andrews-day"},inh:"StAndrew"},
         {ty:"D",st:{mon:12,d:1},ttls:{"ca":"Dia nacional de Romania","da":"Rumæniens store unionsdag","en":"Great Union Day","es":"Día nacional de Rumania","gl":"Día nacional de Romanía","it":"Giornata della Grande Unione","kcg":"Mam A̱byin Romaniya","ms":"Hari Kesatuan","nl":"Nationale feestdag van Roemenië","pl":"Wielkie Zjednoczenie Rumunii","ro":"Ziua națională a României","sv":"Rumäniens stora unionsdag","th":"วันรวมชาติใหญ่","uk":"День Національного єднання Румунії","zh":"国家统一日"},nts:{"en":"Romania National Day\nNational Day of Romania","ro":"Ziua Marii Uniri"},inh:"ND",urls:{"en":"https://www.daysoftheyear.com/days/romania-national-day/"},fst:{era:1,y:1990}},
         {ty:"nD",st:{mon:12,d:25},end:{mon:12,d:26},inh:"Xmas"},
-        {ty:"D",st:{mon:12,d:27,wkd:[6]},inh:"Public Sector Holiday",urls:{"en":"https://www.officeholidays.com/holidays/romania/christmas-holiday"}},
+        {ty:"D",st:{mon:12,d:27,wkd:[6]},inh:"Public SectorHol",urls:{"en":"https://www.officeholidays.com/holidays/romania/christmas-holiday"}},
 
         {ty:"D",st:{mon:11,d:11},inh:"ArmisticeD",fst:{era:1,y:1919}},
         {ty:"D",st:{mon:9,d:14},inh:"EngineersD"},
@@ -153,6 +153,6 @@
 
    ],
     tpls:{
-        "Public Sector Holiday":{ty:"D",st:{era:1,y:2023,mon:1,d:23},ttls:{"en":"Public Sector Holiday"}},
+        "Public SectorHol":{ty:"D",st:{era:1,y:2023,mon:1,d:23},ttls:{"en":"Public Sector Holiday"}},
     }
 }

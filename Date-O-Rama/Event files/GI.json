@@ -17,7 +17,7 @@
         {ty:"D",st:{mon:5,d:1},inh:"MayD",urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
         {ty:"D",st:{mon:5,d:2,thruD:3,wkd:[2]},ttls:{"en":"May Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/labour-day"}},
         {ty:"D",st:{mon:5,d:8,y:2023},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/king-charles-iiis-coronation"},ttls:{"en":"Special King’s Coronation Bank Holiday"},inh:"BankHol"},
-        {ty:"D",st:{mon:5,wkd:[2],nth:-1},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/spring-bank-holiday"},inh:"Spring Bank Holiday"},
+        {ty:"D",st:{mon:5,wkd:[2],nth:-1},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/spring-bank-holiday"},inh:"SpringBankHol"},
         {ty:"D",st:{mon:6,wkd:[2],nth:3},inh:"King Charles’ Birthday",fst:{era:1,y:2023},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/king-charles-birthday"}},
         {ty:"D",st:{mon:8,wkd:[2],nth:-1},urls:{"en":"https://www.officeholidays.com/holidays/gibraltar/august-bank-holiday"},ttls:{"en":"Late Summer Bank Holiday"},inh:"BankHol"},
         {inh:"ND", ty:"D",st:{mon:9,d:10},urls:{"en":"https://nationaltoday.com/gibraltar-independence-day/"},fst:{era:1,y:1992}},

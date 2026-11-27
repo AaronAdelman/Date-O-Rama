@@ -6,14 +6,14 @@
     color:{name:"red"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_China"},
     evts:[
-        {ty:"D",st:{mon:12,d:-1},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
+        {ty:"D",st:{mon:12,d:-1},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
         {ty:"nD",st:{mon:1,d:1},end:{mon:1,d:3},inh:"ChineseNY"},
-        {ty:"D",st:{mon:1,d:2},inh:"Spring Festival Holiday",urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}},
-        {ty:"D",st:{mon:1,d:3},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
-        {ty:"D",st:{mon:1,d:4},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
-        {ty:"D",st:{mon:1,d:5,wkd:[1,3,4, 5, 7]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
-        {ty:"D",st:{mon:1,d:6,wkd:[1,2,4,5,6]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
-        {ty:"D",st:{mon:1,d:7,wkd:[2,3]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring Festival Holiday"},
+        {ty:"D",st:{mon:1,d:2},inh:"Spring FestivalHol",urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"}},
+        {ty:"D",st:{mon:1,d:3},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
+        {ty:"D",st:{mon:1,d:4},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
+        {ty:"D",st:{mon:1,d:5,wkd:[1,3,4, 5, 7]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
+        {ty:"D",st:{mon:1,d:6,wkd:[1,2,4,5,6]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
+        {ty:"D",st:{mon:1,d:7,wkd:[2,3]},urls:{"en":"https://www.officeholidays.com/holidays/china/chinese-new-year"},inh:"Spring FestivalHol"},
         {ty:"D",st:{mon:5,d:5},inh:"DragonBoatFestival"},
         {ty:"D",st:{mon:5,d:6,wkd:[1,6]},inh:"DragonBoatFestivalHol",urls:{"en":"https://www.officeholidays.com/holidays/china/dragon-boat-festival"}},
         {ty:"D",st:{mon:5,d:7,wkd:[2,7]},inh:"DragonBoatFestivalHol",urls:{"en":"https://www.officeholidays.com/holidays/china/dragon-boat-festival"}},
@@ -41,7 +41,7 @@
         {ty:"D",st:{mon:4,d:8},inh:"BuddhasBD"},
     ],
     tpls:{
-        "Dragon Boat Festival Holiday":{ty:"D",st:{mon:6,d:23},ttls:{"en":"Dragon Boat Festival Holiday"}},
-        "Spring Festival Holiday":{ty:"D",st:{mon:-1,d:-1},ttls:{"en":"Spring Festival Holiday"}},
+        "Dragon Boat FestivalHol":{ty:"D",st:{mon:6,d:23},ttls:{"en":"Dragon Boat Festival Holiday"}},
+        "Spring FestivalHol":{ty:"D",st:{mon:-1,d:-1},ttls:{"en":"Spring Festival Holiday"}},
     }
 }
