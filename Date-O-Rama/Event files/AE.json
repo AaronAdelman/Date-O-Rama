@@ -15,6 +15,6 @@
         {ty:"D",st:{mon:6,d:21},inh:"FathersD"},
         {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
         {ty:"D",st:{mon:11,d:20},inh:"ChildrensD"},
-        {ty:"D",st:{mon:8,d:28},inh:"Women’sD",urls:{"en":"https://nationaltoday.com/emirati-womens-day/"},fst:{era:1,y:2015}},
+        {ty:"D",st:{mon:8,d:28},inh:"WomensD",urls:{"en":"https://nationaltoday.com/emirati-womens-day/"},fst:{era:1,y:2015}},
     ]
 }

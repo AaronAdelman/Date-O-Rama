@@ -26,9 +26,9 @@
         {ty:"D",st:{mon:11,d:6,wkd:[2]},inh:"ConstitutionD (IL)",urls:{"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
         {ty:"D",st:{mon:11,d:7,wkd:[2]},inh:"ConstitutionD (IL)",urls:{"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
         {ty:"D",st:{mon:11,d:8,wkd:[2]},inh:"ConstitutionD (IL)",urls:{"en":"https://www.officeholidays.com/holidays/tonga/tonga-constitution-day"}},
-        {ty:"D",st:{mon:12,d:2,thruD:3,wkd:[2]},inh:"Tupou I Day (in lieu)",fst:{era:1,y:1797}},
+        {ty:"D",st:{mon:12,d:2,thruD:3,wkd:[2]},inh:"Tupou ID (IL)",fst:{era:1,y:1797}},
         {ty:"D",st:{mon:12,d:4},inh:"Tupou ID",fst:{era:1,y:1797}},
-        {ty:"D",st:{mon:12,d:5,thruD:8,wkd:[2]},inh:"Tupou I Day (in lieu)",fst:{era:1,y:1797}},
+        {ty:"D",st:{mon:12,d:5,thruD:8,wkd:[2]},inh:"Tupou ID (IL)",fst:{era:1,y:1797}},
         {ty:"D",st:{mon:12,d:25},inh:"Xmas"},
         {ty:"D",st:{mon:12,d:26},inh:"BoxingD"},
 
@@ -39,6 +39,6 @@
     ],
     tpls:{
         "Tupou ID":{ty:"D",st:{mon:12,d:4},urls:{"en":"https://nationaltoday.com/tupou-i-day-in-lieu/"},ttls:{"en":"Tupou I Day"}},
-        "Tupou I Day (in lieu)":{ty:"D",st:{mon:12,d:4,wkd:[2,3,4,5,6]},inh:"Tupou ID",ttls:{"en":"Tupou I Day (in lieu)"}},
+        "Tupou ID (IL)":{ty:"D",st:{mon:12,d:4,wkd:[2,3,4,5,6]},inh:"Tupou ID",ttls:{"en":"Tupou I Day (in lieu)"}},
     }
 }

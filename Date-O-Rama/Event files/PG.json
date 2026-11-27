@@ -9,9 +9,9 @@
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:1,d:2,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/international-new-years-day"},inh:"NYD (IL)"},
-        {ty:"D",st:{mon:2,d:24,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"},inh:"NRemembrance Day (in lieu)"},
+        {ty:"D",st:{mon:2,d:24,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"},inh:"NRemembranceD (IL)"},
         {ty:"D",st:{mon:2,d:26},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"},inh:"NRemembranceD"},
-        {ty:"D",st:{mon:2,d:28,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"},inh:"NRemembrance Day (in lieu)"},
+        {ty:"D",st:{mon:2,d:28,wkd:[2]},urls:{"en":"https://www.officeholidays.com/holidays/papua-new-guinea/national-remembrance-day-sir-michael-somare"},inh:"NRemembranceD (IL)"},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E",oD:-1},inh:"HolySat"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
@@ -36,6 +36,6 @@
         {ty:"D",st:{mon:9,d:29},inh:"NPoliceRemembranceD",fst:{era:1,y:1989}},
     ],
     tpls:{
-        "NRemembrance Day (in lieu)":{ty:"D",st:{mon:2,d:24,wkd:[6]},ttls:{"en":"National Remembrance Day (in lieu)"}},
+        "NRemembranceD (IL)":{ty:"D",st:{mon:2,d:24,wkd:[6]},ttls:{"en":"National Remembrance Day (in lieu)"}},
     }
 }

@@ -89,7 +89,7 @@
         {ty:"D",st:{mon:4,d:26},ttls:{"en":"Ordination Day"},urls:{"en":"https://www.fsofcabal.com/holydays/02-43-ordination-day"}},
         {ty:"D",st:{mon:4,d:26},ttls:{"en":"Universal Ordination Day"},nts:{"en":"Ordination Day\nWhollyday\n43 Discord"},urls:{"en":"https://www.fsofcabal.com/holydays/02-43-ordination-day"}},
         {ty:"D",st:{mon:4,d:29},ttls:{"en":"Duke’s Day"},inh:"HDH"},
-        {ty:"D",st:{mon:4,d:30},inh:"Walpurgis Nite",urls:{"en":"https://www.fsofcabal.com/holydays/02-47-walpurgisnacht"}},
+        {ty:"D",st:{mon:4,d:30},inh:"WalpurgisNite",urls:{"en":"https://www.fsofcabal.com/holydays/02-47-walpurgisnacht"}},
         {ty:"D",st:{mon:5,d:1},ttls:{"en":"Adam Weishaupt’s Day"},inh:"HDH"},
         {ty:"D",st:{mon:5,d:5},ttls:{"en":"Saint Gulik’s Day"},inh:"HDH"},
         {ty:"D",st:{mon:5,d:6},ttls:{"en":"Commemoration of Discordian Martyrs Day"},nts:{"en":"Whollyday\n53 Discord"}},

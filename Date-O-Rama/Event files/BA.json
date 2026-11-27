@@ -15,7 +15,7 @@
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
         {ty:"nD",st:{mon:5,d:1},end:{mon:5,d:2},inh:"LaborD"},
-        {ty:"D",st:{mon:5,d:9},inh:"Victory Day (May 9)"},
+        {ty:"D",st:{mon:5,d:9},inh:"VictoryD(9May)"},
         {ty:"D",st:{mon:6,d:28},inh:"StVitus"},
         {ty:"D",st:{mon:11,d:1},inh:"AllStsD"},
         {ty:"D",st:{mon:11,d:21},ttls:{"en":"General Framework Agreement Day","bs":"Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"},nts:{"en":"Dayton Agreement Day"},urls:{"en":"https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},

@@ -150,7 +150,7 @@
         {ty:"D",st:{mon:8,d:12},ttls:{"en":"Feast of Saint Jane Frances de Chantal"}},
         {ty:"D",st:{mon:8,d:13},ttls:{"en":"Feast of Saints Pontian and Hippolytus"}},
         {ty:"D",st:{mon:8,d:14},ttls:{"en":"Feast of Saint Maximilian Mary Kolbe","he":"החג של מקסימיליאן מריה קולבה הקדוש"},fst:{era:1,y:1982}},
-        {ty:"D",st:{mon:8,d:14},inh:"Vigil of AssumptionD"},
+        {ty:"D",st:{mon:8,d:14},inh:"AssumptionVigilD"},
         {ty:"D",st:{mon:8,d:15},inh:"Assumption"},
         {inh:"StStephenOfHungary", ty:"D",st:{mon:8,d:16}},
         {ty:"D",st:{mon:8,d:16},inh:"StRoch"},

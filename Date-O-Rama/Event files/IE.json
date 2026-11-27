@@ -9,8 +9,8 @@
     evts:[
         {ty:"D",st:{mon:1,d:1},inh:"NYD"},
         {ty:"D",st:{mon:2,d:1},inh:"Imbolc",urls:{"en":"https://www.daysoftheyear.com/days/st-brigids-day/"},fst:{era:1,y:2023}},
-        {ty:"D",st:{mon:2,d:2,thruD:3,wkd:[2]},inh:"Imbolc (in lieu)",fst:{era:1,y:2023}},
-        {ty:"D",st:{mon:2,d:5,thruD:7,wkd:[2]},inh:"Imbolc (in lieu)",fst:{era:1,y:2023}},
+        {ty:"D",st:{mon:2,d:2,thruD:3,wkd:[2]},inh:"Imbolc (IL)",fst:{era:1,y:2023}},
+        {ty:"D",st:{mon:2,d:5,thruD:7,wkd:[2]},inh:"Imbolc (IL)",fst:{era:1,y:2023}},
         {ty:"D",st:{mon:3,d:17},inh:"StPatrick"},
         {ty:"D",st:{misc:"E",oD:-21},inh:"MotheringSun",urls:{"en":"https://www.officeholidays.com/holidays/ireland/mothering-sunday"},nts:{"en":"Mother’s Day"}},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
@@ -57,6 +57,6 @@
         {ty:"D",st:{mon:5,d:22},ttls:{"en":"Irish Marriage Referendum"},fst:{era:1,y:2015}},
    ],
     tpls:{
-        "Imbolc (in lieu)":{ty:"D",st:{mon:2,d:2,thru: 3,wkd:[2]},ttls:{"en":"Imbolc (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"},nts:{"en":"Saint Brigid’s Day (in lieu)"}},
+        "Imbolc (IL)":{ty:"D",st:{mon:2,d:2,thru: 3,wkd:[2]},ttls:{"en":"Imbolc (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/ireland/st-brigids-day"},nts:{"en":"Saint Brigid’s Day (in lieu)"}},
     }
 }

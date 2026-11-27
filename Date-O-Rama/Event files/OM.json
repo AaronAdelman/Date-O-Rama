@@ -19,14 +19,14 @@
         {ty:"D",st:{mon:3,d:21},inh:"MothersD"},
 
         {ty:"D",st:{mon:11,d:30},inh:"ND (IL)",fst:{era:1,y:2022},urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {ty:"D",st:{mon:12,d:1},inh:"ND Holiday (in lieu)",fst:{era:1,y:2022}},
+        {ty:"D",st:{mon:12,d:1},inh:"ND Holiday (IL)",fst:{era:1,y:2022}},
 
         {ty:"D",st:{mon:11,d:19,thruD:22,wkd:[4]},inh:"ND (IL)",fst:{era:1,y:2023},urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
-        {ty:"D",st:{mon:11,d:20,thruD:23,wkd:[5]},inh:"ND Holiday (in lieu)",fst:{era:1,y:2023}},
+        {ty:"D",st:{mon:11,d:20,thruD:23,wkd:[5]},inh:"ND Holiday (IL)",fst:{era:1,y:2023}},
         
-        {ty:"D",st:{mon:10,d:23},inh:"Women’sD",fst:{era:1,y:2022}},
+        {ty:"D",st:{mon:10,d:23},inh:"WomensD",fst:{era:1,y:2022}},
    ],
     tpls:{
-        "ND Holiday (in lieu)":{ttls:{"en":"National Day Holiday (in lieu)"}, ty:"D",st:{mon:11,d:20,thruD:23,wkd:[5]},inh:"NDHol",urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
+        "ND Holiday (IL)":{ttls:{"en":"National Day Holiday (in lieu)"}, ty:"D",st:{mon:11,d:20,thruD:23,wkd:[5]},inh:"NDHol",urls:{"en":"https://www.officeholidays.com/holidays/oman/oman-national-day"}},
     }
 }

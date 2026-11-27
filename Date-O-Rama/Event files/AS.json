@@ -15,9 +15,9 @@
         {ty:"D",st:{mon:5,wkd:[2],nth:-1},inh:"MemorialD",urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/memorial-day"}},
         {ty:"D",st:{mon:6,d:19},inh:"Juneteenth",fst:{era:1,y:1886}},
         {ty:"D",st:{mon:7,d:4},inh:"ID",urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/usa-independence-day"}},
-        {ty:"D",st:{mon:7,d:15,wkd:[6]},inh:"Manu’a Cession Day (in lieu)",fst:{era:1,y:1983}},
+        {ty:"D",st:{mon:7,d:15,wkd:[6]},inh:"Manu’a CessionD (IL)",fst:{era:1,y:1983}},
         {ty:"D",st:{mon:7,d:16},ttls:{"en":"Manu’a Cession Day"},urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"},fst:{era:1,y:1983}},
-        {ty:"D",st:{mon:7,d:17,wkd:[2]},inh:"Manu’a Cession Day (in lieu)"},
+        {ty:"D",st:{mon:7,d:17,wkd:[2]},inh:"Manu’a CessionD (IL)"},
         {ty:"D",st:{mon:9,wkd:[2],inh:"LaborD",nth:1},urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/labor-day"}},
         {ty:"D",st:{mon:10,wkd:[1],nth:2},inh:"WhiteSun"},
         {ty:"D",st:{mon:10,wkd:[2],nth:2},inh:"ColumbusD",fst:{era:1,y:2004},urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/columbus-day"}},
@@ -29,6 +29,6 @@
         {inh:"ChildrensD", ty:"D",st:{misc:"E",oD:39}},
    ],
     tpls:{
-        "Manu’a Cession Day (in lieu)":{ty:"D",st:{mon:7,d:15,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"},ttls:{"en":"Manu’a Cession Day (in lieu)"}},
+        "Manu’a CessionD (IL)":{ty:"D",st:{mon:7,d:15,wkd:[6]},urls:{"en":"https://www.officeholidays.com/holidays/american-samoa/manua-cession-day"},ttls:{"en":"Manu’a Cession Day (in lieu)"}},
     }
 }

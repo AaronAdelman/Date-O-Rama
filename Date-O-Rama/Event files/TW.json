@@ -35,8 +35,8 @@
         {ty:"D",st:{mon:9,d:29,wkd:[2]},ttls:{"en":"Confucius’s Birthday (in lieu)"},inh:"Teacher’sD",urls:{"en":"https://www.officeholidays.com/holidays/taiwan/taiwan-teachers-day"}},
         {ty:"D",st:{mon:10,d:21},ttls:{"en":"Overseas Chinese Day","zh":"華僑節"}},
         {ty:"D",st:{mon:10,d:25},ttls:{"de":"Taiwan-Rückgabe-Tag","en":"Retrocession Day","es":"Adhesión de Taiwán a la República de China","fr":"Jour de la Rétrocession","id":"Hari Penyerahan Kembali","ja":"台湾光復節","ko":"대만광복절","ms":"Hari Penyerahan Kembali","si":"යටත්ව සිටීමෙන් මිදීමේ දිනය","uk":"День ретроцесії Тайваню","vi":"Ngày Tái Độc lập","yue":"臺灣光復節","zh":"臺灣光復節"},nts:{"en":"Taiwan Retrocession Day"},urls:{"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
-        {ty:"D",st:{mon:10,d:24,wkd:[6]},inh:"Retrocession Day (in lieu)"},
-        {ty:"D",st:{mon:10,d:26,wkd:[2]},inh:"Retrocession Day (in lieu)"},
+        {ty:"D",st:{mon:10,d:24,wkd:[6]},inh:"RetrocessionD (IL)"},
+        {ty:"D",st:{mon:10,d:26,wkd:[2]},inh:"RetrocessionD (IL)"},
         {ty:"D",st:{mon:11,d:12},ttls:{"en":"Sun Yat-sen’s Birthday","zh":"國父誕辰紀念日"},inh:"*BD*"},
         {ty:"D",st:{mon:12,d:25},inh:"ConstitutionD"},
 
@@ -50,6 +50,6 @@
         {ty:"D",st:{mon:4,wkd:[1],nth:2},inh:"BuddhasBD",urls:{"en":"https://www.officeholidays.com/holidays/south-korea/buddhas-birthday"}},
   ],
     tpls:{
-        "Retrocession Day (in lieu)":{ty:"D",st:{mon:10,d:24},ttls:{"en":"Retrocession Day (in lieu)"},nts:{"en":"Taiwan Retrocession Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
+        "RetrocessionD (IL)":{ty:"D",st:{mon:10,d:24},ttls:{"en":"Retrocession Day (in lieu)"},nts:{"en":"Taiwan Retrocession Day (in lieu)"},urls:{"en":"https://www.officeholidays.com/holidays/taiwan/retrocession-day-battle-of-guningtou"}},
     }
 }

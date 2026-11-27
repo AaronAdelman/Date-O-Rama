@@ -17,8 +17,8 @@
         {ty:"D",st:{mon:2,d:6},inh:"WaitangiD",fst:{era:1,y:1934}},
         {ty:"D",st:{mon:3,wkd:[2],nth:2},ttls:{"en":"Taranaki Anniversary Day"}, urls:{"en":"https://www.officeholidays.com/holidays/new-zealand/taranaki/taranaki-anniversary-day"},fst:{era:1,y:1981}},
         {ty:"D",st:{mon:3,d:23},ttls:{"en":"Otago Anniversary Day"}, urls:{"en":"https://nationaltoday.com/otago-anniversary-day/"},fst:{era:1,y:1981}},
-        {ty:"D",st:{mon:3,d:20,thruD:22,wkd:[2]},inh:"Otago Anniversary Day (in lieu)",fst:{era:1,y:1981}},
-        {ty:"D",st:{mon:3,d:24,thruD:26,wkd:[2]},inh:"Otago Anniversary Day (in lieu)",fst:{era:1,y:1981}},
+        {ty:"D",st:{mon:3,d:20,thruD:22,wkd:[2]},inh:"Otago AnniversaryD (IL)",fst:{era:1,y:1981}},
+        {ty:"D",st:{mon:3,d:24,thruD:26,wkd:[2]},inh:"Otago AnniversaryD (IL)",fst:{era:1,y:1981}},
         {ty:"D",st:{misc:"E",oD:-2},inh:"GoodFri"},
         {ty:"D",st:{misc:"E"},inh:"Easter"},
         {ty:"D",st:{misc:"E",oD:1},inh:"EasterMon"},
@@ -86,7 +86,7 @@
         {ty:"D",st:{mon:3,d:21},inh:"Race RelationsD", urls:{"en":"https://nationaltoday.com/race-relations-day/"},fst:{era:1,y:2003}},
         {ty:"D",st:{mon:3,d:5}, urls:{"en":"https://nationaltoday.com/arrival-of-the-first-missionaries/"},ttls:{"en":"Arrival of the First Missionaries"}},
         {ty:"D",st:{mon:4,d:18,thruD:24,wkd:[6]},ttls:{"en":"Poppy Day"}},
-        {ty:"D",st:{mon:4,wkd:[6],nth:1},inh:"Walk to WorkD",fst:{era:1,y:2004}},
+        {ty:"D",st:{mon:4,wkd:[6],nth:1},inh:"WalkToWorkD",fst:{era:1,y:2004}},
         {ty:"D",st:{mon:5,d:2},inh:"NAlpacaD",mog:"🦙"},
         {ty:"D",st:{mon:5,d:5},inh:"Sleep Apnea AwarenessD",fst:{era:1,y:2019},inh:"*MedAw*"},
         {ty:"D",st:{mon:5,wkd:[6],nth:3},inh:"PinkShirtD",fst:{era:1,y:2009}},
@@ -120,6 +120,6 @@
     tpls:{
         "Techweek":{ty:"W",st:{mon:5,fullWk:3,d1OfWk:2},ttls:{"en":"Techweek"}, urls:{"en":"https://techweek.co.nz/"},mog:"🥽"},
         "Matariki":{ty:"D",st:{mon:7,d:14}, urls:{"en":"https://www.daysoftheyear.com/days/matariki/"},ttls:{"ar":"ماتاريكي","bs":"Matariki","de":"Matariki","en":"Matariki","es":"Matariki","fa":"ماتاریکی","fr":"Matariki","hy":"Մատարիկի","id":"Matariki","it":"Matariki","mi":"Matariki","mk":"Матарики","ms":"Matariki","pt":"Matariki","ru":"Матарики","sr":"Матарики","sv":"Matariki","vi":"Matariki"},mog:"🌌"},
-        "Otago Anniversary Day (in lieu)":{ty:"D",st:{mon:3,d:20,thruD:22,wkd:[2]},ttls:{"en":"Otago Anniversary Day (in lieu)"}, urls:{"en":"https://nationaltoday.com/otago-anniversary-day/"}},
+        "Otago AnniversaryD (IL)":{ty:"D",st:{mon:3,d:20,thruD:22,wkd:[2]},ttls:{"en":"Otago Anniversary Day (in lieu)"}, urls:{"en":"https://nationaltoday.com/otago-anniversary-day/"}},
     }
 }
