@@ -3,13 +3,13 @@
 // Holy See, AKA Vatican City
     defLocale:"en",
     cal:"gre",
-    color:{r:1.00,g:0.88,b:0.000},
+    color:{name:"yellow"},
     urls:{"en":"https://en.wikipedia.org/wiki/Public_holidays_in_Vatican_City"},
     fst:{era:1,y:756},
     evts:[
-        {ty:"D",st:{mon:1,d:1},inh:"Solemnity of Mary"},
+        {ty:"D",st:{mon:1,d:1},inh:"SolemnityOfMary"},
         {ty:"D",st:{mon:1,d:6},inh:"Epiphany"},
-        {ty:"D",st:{mon:2,d:11},inh:"Lateran TreatyD",urls:{"en":"https://www.officeholidays.com/holidays/vatican-city/lateran-treaty-day"}},
+        {ty:"D",st:{mon:2,d:11},inh:"LateranTreatyD",urls:{"en":"https://www.officeholidays.com/holidays/vatican-city/lateran-treaty-day"}},
         {ty:"D",st:{mon:3,d:13},ttls:{"en":"Anniversary of the election of Pope Francis","it":"Anniversario dell’Elezione del Santo Padre"},urls:{"en":"https://www.officeholidays.com/holidays/vatican-city/pope-francis-election"},fst:{era:1,y:2013},end:{era:1,y:2024}},
         {ty:"D",st:{mon:5,d:8},ttls:{"en":"Anniversary of the Election of Pope Leo XIV","it":"Anniversario dell’Elezione del Santo Padre"},fst:{era:1,y:2025}},
         {ty:"D",st:{mon:3,d:19},inh:"StJoseph"},

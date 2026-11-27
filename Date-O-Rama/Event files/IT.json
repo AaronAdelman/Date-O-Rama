@@ -34,7 +34,7 @@
         {ty:"D",st:{mon:12,d:26},inh:"StStephen",fst:{era:1,y:1947}},
         
         {ty:"D",st:{mon:2,d:10},urls:{"en":"https://en.wikipedia.org/wiki/National_Memorial_Day_of_the_Exiles_and_Foibe"},ttls:{"en":"National Memorial Day of the Exiles and Foibe","it":"Giorno del ricordo"},fst:{era:1,y:2005}},
-        {ty:"D",st:{mon:2,d:11},inh:"Lateran TreatyD"},
+        {ty:"D",st:{mon:2,d:11},inh:"LateranTreatyD"},
         {ty:"D",st:{mon:9,d:9},ttls:{"en":"Day of Remembrance for Sailors Lost at Sea","it":"Giornata della memoria dei marinai scomparsi in mare"},fst:{era:1,y:2013}},
         {ty:"D",st:{mon:9,d:28},ttls:{"en":"Four Days of Naples Day","it":"Insurrezione popolare di Napoli contro i nazifascisti or Quattro giornate di Napoli"}},
         {ty:"D",st:{mon:10,d:4},ttls:{"en":"Feast of Saints Francis and Catherine","it":"San Francesco e Santa Caterina"},fst:{era:1,y:1958}},
@@ -76,7 +76,7 @@
         {ty:"D",st:{mon:6,d:15},inh:"EngineersD"},
         {ty:"D",st:{mon:11,d:20},inh:"WChildrensD",fst:{era:1,y:1997}},
         {ty:"D",st:{mon:6,d:10},inh:"NavyD"},
-        {ty:"D",st:{mon:11,d:11},inh:"Start of Fasching",fst:{era:1,y:1234}},
+        {ty:"D",st:{mon:11,d:11},inh:"FaschingStart",fst:{era:1,y:1234}},
         {ty:"D",st:{mon:3,d:25},urls:{"en":"https://nationaltoday.com/national-dante-day/"},ttls:{"en":"National Dante Day"},fst:{era:1,y:2020}},
         {inh:"NGrandparentsD", ty:"D",st:{mon:10,d:2},fst:{era:1,y:2005}},
         {ty:"D",st:{mon:10,d:9},ttls:{"en":"National Polenta Day"},urls:{"en":"https://www.visititaly.eu/food-and-flavours/9-october-national-polenta-day-history-facts-recipes"}},

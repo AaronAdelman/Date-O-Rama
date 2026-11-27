@@ -272,7 +272,7 @@
         {ty:"D",st:{mon:7,d:15},inh:"StVladimir"},
         {ty:"D",st:{mon:9,d:5},inh:"StTeresaOfCalcutta",fst:{era:1,y:2016}},
         {ty:"D",st:{mon:9,d:28},inh:"StWenceslas",fst:{era:1,y:935}},
-        {ty:"D",st:{mon:1,d:1},inh:"Solemnity of Mary"},
+        {ty:"D",st:{mon:1,d:1},inh:"SolemnityOfMary"},
         {ty:"D",st:{mon:3,d:17},ttls:{"en":"Saint Gertrude of Nivelles Day"},urls:{"en":"https://www.daysoftheyear.com/days/saint-gertrude-of-nivelles-day/"},fst:{era:1,y:1677}},
 
         {ty:"D",st:{misc:"E",oD:-63},ttls:{"br":"Sul al Lard","da":"Seksagesima","en":"Septuagesima","es":"Septuagésima","fi":"Septuagesima","id":"Septuagesima","it":"Domenica di Settuagesima","ko":"칠순 주일","ml":"സെപ്ത്വാജെസെമ","nb":"Vingårdsøndagen","nl":"Septuagesima","nn":"Vingardssundagen","pl":"Siedemdziesiątnica","pt":"Septuagésima","ru":"Семидесятница","sv":"Septuagesima","zh":"七旬齋"}},
